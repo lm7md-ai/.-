@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#0a111b" />
+  <meta name="description" content="مرصد عربي للذكاء الاصطناعي، التقنية، البرمجة، والمشاريع مفتوحة المصدر مع أفكار عملية جديدة كل يوم." />
+  <meta property="og:title" content="نَبض | مرصد التقنية والابتكار" />
+  <meta property="og:description" content="آخر أخبار الذكاء الاصطناعي والمشاريع مفتوحة المصدر؛ تحديث آلي كل ثلاث ساعات." />
+  <title>نَبض — مرصد التقنية والابتكار</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script defer src="./ideas.js"></script>
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="قائمة التنقل">
+      <a class="brand" href="#home" aria-label="الصفحة الرئيسية نبض">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M5 22h8l5-11 6 19 5-10h6" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="brand-text"><strong>نَبض<span>.</span></strong><small>TECH INTELLIGENCE</small></span>
+      </a>
+      <div class="menu-label">استكشف</div>
+      <nav class="nav-list">
+        <button class="nav-link active" data-nav="all" type="button"><span class="nav-symbol">▦</span><span>الرئيسية</span><span class="nav-dot"></span></button>
+        <button class="nav-link" data-nav="ذكاء اصطناعي" type="button"><span class="nav-symbol">✳</span><span>الذكاء الاصطناعي</span></button>
+        <button class="nav-link" data-nav="برمجة" type="button"><span class="nav-symbol">⌘</span><span>البرمجة و Python</span></button>
+        <button class="nav-link" data-nav="تقنيات" type="button"><span class="nav-symbol">◈</span><span>التقنيات والأجهزة</span></button>
+        <button class="nav-link" data-nav="أبحاث" type="button"><span class="nav-symbol">⌁</span><span>الأبحاث العلمية</span></button>
+        <button class="nav-link" data-nav="فرص" type="button"><span class="nav-symbol">◎</span><span>الفرص التقنية</span></button>
+        <button class="nav-link" data-nav="السعودية" type="button"><span class="nav-symbol">◍</span><span>السعودية</span></button>
+      </nav>
+      <div class="menu-label second">مساحة الابتكار</div>
+      <nav class="nav-list">
+        <button class="nav-link" data-nav="مفتوح المصدر" type="button"><span class="nav-symbol">⟐</span><span>مشاريع مفتوحة المصدر</span></button>
+        <button class="nav-link" data-nav="ideas" type="button"><span class="nav-symbol">✦</span><span>أفكار المشاريع</span><span class="tiny-pill">10+</span></button>
+        <button class="nav-link" data-nav="saved" type="button"><span class="nav-symbol">♡</span><span>المحفوظات</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="side-glow"><span>✦</span><b>من الخبر إلى المشروع.</b><p>لا تتابع التقنية فقط، ابتكر شيئًا جديدًا بها.</p><button id="exploreProjects" type="button">استكشف المشاريع <span>←</span></button></div>
+        <div class="sidebar-meta">صُنع بشغف للتقنية <span>•</span> إصدار 1.0</div>
+      </div>
+    </aside>
+
+    <main class="main" id="home">
+      <header class="topbar">
+        <div class="mobile-brand"><button class="icon-button" id="mobileMenu" aria-label="فتح القائمة" type="button">☰</button><b>نَبض<span>.</span></b></div>
+        <div class="breadcrumb"><span>المرصد</span><span class="chevron">/</span><b id="currentPage">نظرة عامة</b></div>
+        <div class="top-controls">
+          <span class="live-pill"><i></i> تحديث تلقائي</span>
+          <span class="clock" id="riyadhClock" aria-label="التوقيت المحلي السعودية"></span>
+          <button class="icon-button" id="refreshButton" aria-label="إعادة تحميل البيانات" title="إعادة تحميل البيانات" type="button">↻</button>
+        </div>
+      </header>
+
+      <div class="page-content">
+        <section class="hero" aria-labelledby="heroTitle">
+          <div class="hero-noise"></div><div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+          <div class="hero-copy">
+            <span class="hero-eyebrow"><span class="beam">✴</span> مستقبلك التقني يبدأ من هنا</span>
+            <h1 id="heroTitle">ابقَ في قلب <span>الابتكار.</span></h1>
+            <p>كل ما يهمك من عالم الذكاء الاصطناعي والتقنية والمصادر المفتوحة، في مكان واحد. اكتشف الخبر، افهم أثره، واصنع منه مشروعك القادم.</p>
+            <div class="hero-actions"><button class="primary-btn" id="latestButton" type="button">اكتشف أحدث الأخبار <span>↙</span></button><button class="outline-btn" id="ideasButton" type="button">استكشف الأفكار <span>✦</span></button></div>
+          </div>
+          <div class="hero-art" aria-hidden="true"><div class="orb-glow"></div><div class="orbit-ring ring-a"></div><div class="orbit-ring ring-b"></div><div class="orb-center"><div class="orb-heart">⌁</div></div><span class="orb-dot dot-a"></span><span class="orb-dot dot-b"></span><span class="orb-dot dot-c"></span><span class="orb-cross">+</span></div>
+          <div class="hero-bottom"><span><i class="circle-green"></i> المصدر المفتوح، دون ضجيج</span><span>تحديث كل 3 ساعات <b>↗</b></span></div>
+        </section>
+
+        <section class="stats" aria-label="إحصائيات المنصة">
+          <div class="stat"><span class="stat-icon icon-green">▤</span><div><b id="statNews">—</b><small>خبرًا وتقارير</small></div></div>
+          <div class="stat"><span class="stat-icon icon-purple">⌘</span><div><b id="statProjects">—</b><small>مشروع مفتوح المصدر</small></div></div>
+          <div class="stat"><span class="stat-icon icon-blue">✦</span><div><b id="statIdeas">—</b><small>فكرة تطوير ومشروع</small></div></div>
+          <div class="stat stat-last"><span class="stat-icon icon-orange">◷</span><div><b id="statUpdate">—</b><small>آخر تحديث للمحتوى</small></div></div>
+        </section>
+
+        <section class="digest" aria-labelledby="digestTitle">
+          <div class="section-heading compact"><div><span class="kicker">موجزك على مدار اليوم</span><h2 id="digestTitle">أربع محطات. صورة أوضح.</h2></div><span class="hint">بتوقيت السعودية (UTC+3)</span></div>
+          <div class="digest-slots" id="digestSlots" role="group" aria-label="تصفية النشرات حسب الفترة">
+            <button class="digest-slot" data-slot="0" type="button"><span class="slot-icon">☾</span><span><b>منتصف الليل</b><small>12 ص — 6 ص</small></span></button>
+            <button class="digest-slot" data-slot="1" type="button"><span class="slot-icon">☀</span><span><b>الصباح</b><small>6 ص — 12 م</small></span></button>
+            <button class="digest-slot" data-slot="2" type="button"><span class="slot-icon">◐</span><span><b>الظهيرة</b><small>12 م — 6 م</small></span></button>
+            <button class="digest-slot" data-slot="3" type="button"><span class="slot-icon">✴</span><span><b>المساء</b><small>6 م — 12 ص</small></span></button>
+          </div>
+        </section>
+
+        <section class="news-section" id="newsSection">
+          <div class="section-heading"><div><span class="kicker" id="sectionKicker">إشارات تستحق المتابعة</span><h2 id="sectionTitle">الأكثر رواجًا <span class="heading-star">✳</span></h2><p id="sectionDescription">أبرز المستجدات مرتبة بمؤشر شيوع تقديري، مع ربط الأخبار بمصادرها الأصلية.</p></div><div class="section-tools"><button class="toggle-sort selected" data-sort="popular" type="button">✦ الرائج</button><button class="toggle-sort" data-sort="latest" type="button">◷ الأحدث</button></div></div>
+          <div class="filter-row"><div class="filter-chips" id="chips"><button class="chip active" data-chip="all" type="button">الكل</button><button class="chip" data-chip="news" type="button">الأخبار</button><button class="chip" data-chip="project" type="button">المشاريع</button><button class="chip" data-chip="idea" type="button">الأفكار</button></div><label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="ابحث عن خبر أو مشروع..." autocomplete="off" aria-label="بحث في المحتوى" /><kbd> / </kbd></label></div>
+          <div class="feed-grid" id="feedGrid" aria-live="polite"><div class="loading">جارٍ تحميل الأخبار والمشاريع…</div></div>
+          <div class="load-row"><button id="loadMore" class="load-more" type="button">عرض المزيد <span>↓</span></button></div>
+        </section>
+
+        <section class="innovation-banner" aria-label="مشاريع مفتوحة المصدر">
+          <div><span class="kicker">من الاكتشاف إلى التنفيذ</span><h2>كل مشروع يفتح لك <em>20 فرصة جديدة.</em></h2><p>10 تطويرات للمشروع الأصلي، و10 مشاريع جديدة مستوحاة منه. أفكار أولية يمكنك تقييمها وتحويلها إلى تطبيقات.</p><button id="discoverIdeas" type="button">استكشف مساحة الابتكار ←</button></div><div class="innovation-art" aria-hidden="true"><span>10<span>+</span>10</span><small>IMPROVE / CREATE</small></div>
+        </section>
+        <footer class="footer"><span>نَبض © <span id="currentYear"></span> — الأخبار حقوق أصحابها. اقرأ المصدر الأصلي للتحقق.</span><span>جميع الأوقات بتوقيت السعودية <span class="footer-dot">•</span> ترتيب تقريبي وليس قياس زيارات</span></footer>
+      </div>
+    </main>
+  </div>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <div class="detail-wrap" id="detailWrap" hidden>
+    <section class="detail-panel" role="dialog" aria-modal="true" aria-labelledby="detailTitle" tabindex="-1">
+      <div class="detail-top"><span class="detail-eyebrow">نَبض / اكتشف التفاصيل</span><button class="detail-close" id="closeDetail" aria-label="إغلاق التفاصيل" type="button">✕</button></div>
+      <div id="detailContent"></div>
+    </section>
+  </div>
+  <noscript><p class="noscript">تحتاج هذه المنصة إلى تفعيل JavaScript لعرض الأخبار وتفاصيل المشاريع.</p></noscript>
+</body>
+</html>
