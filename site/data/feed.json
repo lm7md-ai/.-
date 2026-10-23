@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-23T19:03:19+00:00",
+  "generatedAt": "2026-10-23T23:36:44+00:00",
   "timezone": "Asia/Riyadh",
-  "newItems": 242,
+  "newItems": 28,
   "rankNote": "مؤشر تقريبي من تفاعل Hacker News ونجوم GitHub وحداثة التحديث؛ لا يمثل المشاهدات الفعلية.",
   "items": [
     {
@@ -14,11 +14,11 @@
       "source": "GitHub",
       "category": "مفتوح المصدر",
       "region": "عالمي",
-      "publishedAt": "2026-10-23T19:00:28+00:00",
-      "image": "https://raw.githubusercontent.com/morluto/rea/main/docs/assets/rea-showcases.png",
+      "publishedAt": "2026-10-23T23:36:47+00:00",
+      "image": "https://raw.githubusercontent.com/morluto/rea/main/docs/assets/rea-hopper-analysis.png",
       "avatar": "https://avatars.githubusercontent.com/u/76467478?v=4",
-      "stars": 372222,
-      "forks": 93190,
+      "stars": 373043,
+      "forks": 93330,
       "language": "TypeScript",
       "license": "MIT",
       "topics": [
@@ -35,11 +35,11 @@
       ],
       "repo": "morluto/rea",
       "ideaDomain": "devtools",
-      "metric": "372,222 نجمة GitHub",
+      "metric": "373,043 نجمة GitHub",
       "gallery": [
-        "https://raw.githubusercontent.com/morluto/rea/main/docs/assets/rea-showcases.png",
         "https://raw.githubusercontent.com/morluto/rea/main/docs/assets/rea-hopper-analysis.png",
-        "https://raw.githubusercontent.com/morluto/rea/main/docs/assets/discord.svg"
+        "https://raw.githubusercontent.com/morluto/rea/main/docs/assets/discord.svg",
+        "https://raw.githubusercontent.com/morluto/rea/main/docs/assets/rea-showcases.svg"
       ],
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
       "score": 99
@@ -54,11 +54,11 @@
       "source": "GitHub",
       "category": "مفتوح المصدر",
       "region": "عالمي",
-      "publishedAt": "2026-10-23T19:01:37+00:00",
+      "publishedAt": "2026-10-23T23:28:55+00:00",
       "image": "https://raw.githubusercontent.com/NousResearch/hermes-agent/main/assets/banner.png",
       "avatar": "https://avatars.githubusercontent.com/u/134168893?v=4",
-      "stars": 256497,
-      "forks": 56063,
+      "stars": 256525,
+      "forks": 56074,
       "language": "Python",
       "license": "MIT",
       "topics": [
@@ -75,12 +75,12 @@
       ],
       "repo": "NousResearch/hermes-agent",
       "ideaDomain": "agents",
-      "metric": "256,497 نجمة GitHub",
+      "metric": "256,525 نجمة GitHub",
       "gallery": [
         "https://raw.githubusercontent.com/NousResearch/hermes-agent/main/assets/banner.png"
       ],
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 97.0
+      "score": 96.96
     },
     {
       "id": "52e56654b91f24a09a",
@@ -92,11 +92,11 @@
       "source": "GitHub",
       "category": "مفتوح المصدر",
       "region": "عالمي",
-      "publishedAt": "2026-10-23T18:42:36+00:00",
+      "publishedAt": "2026-10-23T23:30:19+00:00",
       "image": "https://raw.githubusercontent.com/Significant-Gravitas/AutoGPT/master/docs/content/imgs/readme/experts-team.webp",
       "avatar": "https://avatars.githubusercontent.com/u/130738209?v=4",
       "stars": 187717,
-      "forks": 45903,
+      "forks": 45899,
       "language": "Python",
       "license": "NOASSERTION",
       "topics": [
@@ -118,37 +118,27 @@
         "https://raw.githubusercontent.com/Significant-Gravitas/AutoGPT/master/docs/content/imgs/readme/experts-team.webp"
       ],
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 95.23
+      "score": 95.34
     },
     {
-      "id": "890a56b0d2aff0c91c",
-      "kind": "project",
-      "title": "deepseek-harness",
-      "description": "DeepSeek Harness: Everything is a Plugin.",
-      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
-      "url": "https://github.com/deepseek-ai/deepseek-harness",
-      "source": "GitHub",
-      "category": "مفتوح المصدر",
+      "id": "bf44de9e544de4cbe9",
+      "kind": "news",
+      "title": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
+      "description": "موضوع تقني يحظى بنقاش على Hacker News. افتح المصدر الأساسي لمعرفة التفاصيل، ثم راجع النقاش لآراء المطورين.",
+      "impact": "مؤشر التفاعل هنا يعتمد على التصويتات والتعليقات الفعلية في Hacker News، وليس عدد المشاهدات.",
+      "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "source": "Hacker News",
+      "category": "تقنيات",
       "region": "عالمي",
-      "publishedAt": "2026-10-23T15:25:40+00:00",
+      "publishedAt": "2026-10-23T16:59:08+00:00",
       "image": "",
-      "avatar": "https://avatars.githubusercontent.com/u/148330874?v=4",
-      "stars": 259354,
-      "forks": 31310,
-      "language": "TypeScript",
-      "license": "MIT",
-      "topics": [
-        "ai-agents",
-        "cordis",
-        "dsh",
-        "dsh-plugin"
-      ],
-      "repo": "deepseek-ai/deepseek-harness",
-      "ideaDomain": "agents",
-      "metric": "259,354 نجمة GitHub",
-      "gallery": [],
+      "points": 649,
+      "comments": 411,
+      "hnUrl": "https://news.ycombinator.com/item?id=50212065",
+      "metric": "338 نقطة · 171 تعليق",
+      "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 94.76
+      "score": 95.0
     },
     {
       "id": "53d940334a2a5afd27",
@@ -160,11 +150,11 @@
       "source": "GitHub",
       "category": "مفتوح المصدر",
       "region": "عالمي",
-      "publishedAt": "2026-10-23T18:56:11+00:00",
+      "publishedAt": "2026-10-23T23:34:56+00:00",
       "image": "https://huggingface.co/datasets/huggingface/documentation-images/raw/main/transformers-logo-light.svg",
-      "score": 94.49,
-      "stars": 168036,
-      "forks": 34954,
+      "score": 94.53,
+      "stars": 168047,
+      "forks": 34955,
       "license": "Apache-2.0",
       "language": "Python",
       "topics": [
@@ -180,7 +170,7 @@
         "natural-language-processing"
       ],
       "ideaDomain": "inference",
-      "metric": "168,036 نجمة GitHub",
+      "metric": "168,047 نجمة GitHub",
       "avatar": "https://avatars.githubusercontent.com/u/25720743?v=4",
       "repo": "huggingface/transformers",
       "gallery": [
@@ -200,11 +190,11 @@
       "source": "GitHub",
       "category": "مفتوح المصدر",
       "region": "عالمي",
-      "publishedAt": "2026-10-23T18:05:24+00:00",
+      "publishedAt": "2026-10-23T23:24:59+00:00",
       "image": "https://raw.githubusercontent.com/firecrawl/firecrawl/main/img/open-source-cloud.png",
       "avatar": "https://avatars.githubusercontent.com/u/135057108?v=4",
-      "stars": 194613,
-      "forks": 10269,
+      "stars": 194678,
+      "forks": 10273,
       "language": "TypeScript",
       "license": "AGPL-3.0",
       "topics": [
@@ -221,13 +211,43 @@
       ],
       "repo": "firecrawl/firecrawl",
       "ideaDomain": "agents",
-      "metric": "194,613 نجمة GitHub",
+      "metric": "194,678 نجمة GitHub",
       "gallery": [
         "https://raw.githubusercontent.com/firecrawl/firecrawl/main/img/open-source-cloud.png",
         "https://raw.githubusercontent.com/firecrawl/firecrawl/main/img/firecrawl_logo.png"
       ],
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 93.18
+      "score": 93.51
+    },
+    {
+      "id": "890a56b0d2aff0c91c",
+      "kind": "project",
+      "title": "deepseek-harness",
+      "description": "DeepSeek Harness: Everything is a Plugin.",
+      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "source": "GitHub",
+      "category": "مفتوح المصدر",
+      "region": "عالمي",
+      "publishedAt": "2026-10-23T15:25:40+00:00",
+      "image": "",
+      "avatar": "https://avatars.githubusercontent.com/u/148330874?v=4",
+      "stars": 259428,
+      "forks": 31326,
+      "language": "TypeScript",
+      "license": "MIT",
+      "topics": [
+        "ai-agents",
+        "cordis",
+        "dsh",
+        "dsh-plugin"
+      ],
+      "repo": "deepseek-ai/deepseek-harness",
+      "ideaDomain": "agents",
+      "metric": "259,428 نجمة GitHub",
+      "gallery": [],
+      "firstSeenAt": "2026-10-23T19:03:19+00:00",
+      "score": 92.95
     },
     {
       "id": "6ee2c2a30826817dae",
@@ -239,11 +259,11 @@
       "source": "GitHub",
       "category": "مفتوح المصدر",
       "region": "عالمي",
-      "publishedAt": "2026-10-23T19:02:00+00:00",
+      "publishedAt": "2026-10-23T23:33:53+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/21003710?v=4",
-      "stars": 105006,
-      "forks": 32469,
+      "stars": 105020,
+      "forks": 32412,
       "language": "Python",
       "license": "NOASSERTION",
       "topics": [
@@ -258,9 +278,9 @@
       ],
       "repo": "pytorch/pytorch",
       "ideaDomain": "education",
-      "metric": "105,006 نجمة GitHub",
+      "metric": "105,020 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 92.37
+      "score": 92.35
     },
     {
       "id": "c5a32632e586ab2c7c",
@@ -272,10 +292,10 @@
       "source": "GitHub",
       "category": "مفتوح المصدر",
       "region": "عالمي",
-      "publishedAt": "2026-10-23T15:24:17+00:00",
+      "publishedAt": "2026-10-23T19:05:22+00:00",
       "image": "https://raw.githubusercontent.com/langchain-ai/langchain/master/.github/images/logo-dark.svg",
       "avatar": "https://avatars.githubusercontent.com/u/126733545?v=4",
-      "stars": 148324,
+      "stars": 148333,
       "forks": 24894,
       "language": "Python",
       "license": "MIT",
@@ -293,47 +313,12 @@
       ],
       "repo": "langchain-ai/langchain",
       "ideaDomain": "agents",
-      "metric": "148,324 نجمة GitHub",
+      "metric": "148,333 نجمة GitHub",
       "gallery": [
         "https://raw.githubusercontent.com/langchain-ai/langchain/master/.github/images/logo-dark.svg"
       ],
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 92.0
-    },
-    {
-      "id": "e23c298591bff98383",
-      "kind": "project",
-      "title": "graphify",
-      "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
-      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
-      "url": "https://github.com/Graphify-Labs/graphify",
-      "source": "GitHub",
-      "category": "مفتوح المصدر",
-      "region": "عالمي",
-      "publishedAt": "2026-10-23T17:59:28+00:00",
-      "image": "",
-      "avatar": "https://avatars.githubusercontent.com/u/297659074?v=4",
-      "stars": 133802,
-      "forks": 12780,
-      "language": "Python",
-      "license": "Apache-2.0",
-      "topics": [
-        "ai-agents",
-        "antigravity",
-        "ast",
-        "claude-code",
-        "code-analysis",
-        "code-search",
-        "codex",
-        "cursor",
-        "developer-tools",
-        "gemini"
-      ],
-      "repo": "Graphify-Labs/graphify",
-      "ideaDomain": "search",
-      "metric": "133,802 نجمة GitHub",
-      "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 91.77
+      "score": 91.64
     },
     {
       "id": "a5e43b1572bfaf36e2",
@@ -345,11 +330,11 @@
       "source": "GitHub",
       "category": "مفتوح المصدر",
       "region": "عالمي",
-      "publishedAt": "2026-10-23T18:59:02+00:00",
+      "publishedAt": "2026-10-23T23:31:21+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/264498616?v=4",
-      "stars": 106526,
-      "forks": 17707,
+      "stars": 106582,
+      "forks": 17718,
       "language": "TypeScript",
       "license": "MIT",
       "topics": [
@@ -366,9 +351,111 @@
       ],
       "repo": "paperclipai/paperclip",
       "ideaDomain": "agents",
-      "metric": "106,526 نجمة GitHub",
+      "metric": "106,582 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
       "score": 91.62
+    },
+    {
+      "id": "853c63f738f0cecf3b",
+      "kind": "project",
+      "title": "claude-mem",
+      "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "source": "GitHub",
+      "category": "مفتوح المصدر",
+      "region": "عالمي",
+      "publishedAt": "2026-10-23T23:31:47+00:00",
+      "image": "",
+      "avatar": "https://avatars.githubusercontent.com/u/683968?v=4",
+      "stars": 102557,
+      "forks": 9060,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "topics": [
+        "ai",
+        "ai-agents",
+        "ai-memory",
+        "anthropic",
+        "artificial-intelligence",
+        "chromadb",
+        "claude",
+        "claude-agent-sdk",
+        "claude-agents",
+        "claude-code"
+      ],
+      "repo": "thedotmack/claude-mem",
+      "ideaDomain": "search",
+      "metric": "102,557 نجمة GitHub",
+      "firstSeenAt": "2026-10-23T19:03:19+00:00",
+      "score": 90.58
+    },
+    {
+      "id": "24684c1ecca249c03e",
+      "kind": "project",
+      "title": "gemini-cli",
+      "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "source": "GitHub",
+      "category": "مفتوح المصدر",
+      "region": "عالمي",
+      "publishedAt": "2026-10-23T21:15:30+00:00",
+      "image": "",
+      "avatar": "https://avatars.githubusercontent.com/u/161781182?v=4",
+      "stars": 107563,
+      "forks": 14767,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "topics": [
+        "ai",
+        "ai-agents",
+        "cli",
+        "gemini",
+        "gemini-api",
+        "mcp-client",
+        "mcp-server"
+      ],
+      "repo": "google-gemini/gemini-cli",
+      "ideaDomain": "devtools",
+      "metric": "107,563 نجمة GitHub",
+      "firstSeenAt": "2026-10-23T19:03:19+00:00",
+      "score": 90.45
+    },
+    {
+      "id": "0a8884baa5f55aa660",
+      "kind": "project",
+      "title": "orca",
+      "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
+      "url": "https://github.com/stablyai/orca",
+      "source": "GitHub",
+      "category": "مفتوح المصدر",
+      "region": "عالمي",
+      "publishedAt": "2026-10-23T23:35:19+00:00",
+      "image": "",
+      "avatar": "https://avatars.githubusercontent.com/u/127256420?v=4",
+      "stars": 103827,
+      "forks": 6557,
+      "language": "TypeScript",
+      "license": "MIT",
+      "topics": [
+        "ade",
+        "agent-ide",
+        "ai-agents",
+        "automation",
+        "bot",
+        "claude-code",
+        "codex",
+        "ghostty",
+        "grok-bot",
+        "hermes-agent"
+      ],
+      "repo": "stablyai/orca",
+      "ideaDomain": "agents",
+      "metric": "103,827 نجمة GitHub",
+      "firstSeenAt": "2026-10-23T19:03:19+00:00",
+      "score": 90.24
     },
     {
       "id": "eaf6e95c99cc41352e",
@@ -388,163 +475,112 @@
       "metric": "789 نقطة · 320 تعليق",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 91.54
+      "score": 90.12
     },
     {
-      "id": "24684c1ecca249c03e",
+      "id": "16389f32495280ea98",
       "kind": "project",
-      "title": "gemini-cli",
-      "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+      "title": "deer-flow",
+      "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
       "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
-      "url": "https://github.com/google-gemini/gemini-cli",
+      "url": "https://github.com/bytedance/deer-flow",
       "source": "GitHub",
       "category": "مفتوح المصدر",
       "region": "عالمي",
-      "publishedAt": "2026-10-23T17:32:07+00:00",
+      "publishedAt": "2026-10-23T23:19:46+00:00",
       "image": "",
-      "avatar": "https://avatars.githubusercontent.com/u/161781182?v=4",
-      "stars": 107561,
-      "forks": 14768,
-      "language": "TypeScript",
-      "license": "Apache-2.0",
-      "topics": [
-        "ai",
-        "ai-agents",
-        "cli",
-        "gemini",
-        "gemini-api",
-        "mcp-client",
-        "mcp-server"
-      ],
-      "repo": "google-gemini/gemini-cli",
-      "ideaDomain": "devtools",
-      "metric": "107,561 نجمة GitHub",
-      "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 90.8
-    },
-    {
-      "id": "853c63f738f0cecf3b",
-      "kind": "project",
-      "title": "claude-mem",
-      "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
-      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
-      "url": "https://github.com/thedotmack/claude-mem",
-      "source": "GitHub",
-      "category": "مفتوح المصدر",
-      "region": "عالمي",
-      "publishedAt": "2026-10-23T19:00:24+00:00",
-      "image": "",
-      "avatar": "https://avatars.githubusercontent.com/u/683968?v=4",
-      "stars": 102511,
-      "forks": 9053,
-      "language": "TypeScript",
-      "license": "Apache-2.0",
-      "topics": [
-        "ai",
-        "ai-agents",
-        "ai-memory",
-        "anthropic",
-        "artificial-intelligence",
-        "chromadb",
-        "claude",
-        "claude-agent-sdk",
-        "claude-agents",
-        "claude-code"
-      ],
-      "repo": "thedotmack/claude-mem",
-      "ideaDomain": "search",
-      "metric": "102,511 نجمة GitHub",
-      "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 90.59
-    },
-    {
-      "id": "0a8884baa5f55aa660",
-      "kind": "project",
-      "title": "orca",
-      "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
-      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
-      "url": "https://github.com/stablyai/orca",
-      "source": "GitHub",
-      "category": "مفتوح المصدر",
-      "region": "عالمي",
-      "publishedAt": "2026-10-23T19:02:35+00:00",
-      "image": "",
-      "avatar": "https://avatars.githubusercontent.com/u/127256420?v=4",
-      "stars": 103640,
-      "forks": 6544,
-      "language": "TypeScript",
-      "license": "MIT",
-      "topics": [
-        "ade",
-        "agent-ide",
-        "ai-agents",
-        "automation",
-        "bot",
-        "claude-code",
-        "codex",
-        "ghostty",
-        "grok-bot",
-        "hermes-agent"
-      ],
-      "repo": "stablyai/orca",
-      "ideaDomain": "agents",
-      "metric": "103,640 نجمة GitHub",
-      "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 90.23
-    },
-    {
-      "id": "d9330c307f7dbfb63c",
-      "kind": "project",
-      "title": "OpenHands",
-      "description": "🙌 OpenHands: AI-Driven Development",
-      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
-      "url": "https://github.com/OpenHands/OpenHands",
-      "source": "GitHub",
-      "category": "مفتوح المصدر",
-      "region": "عالمي",
-      "publishedAt": "2026-10-23T17:53:56+00:00",
-      "image": "",
-      "avatar": "https://avatars.githubusercontent.com/u/225919603?v=4",
-      "stars": 91659,
-      "forks": 12160,
-      "language": "TypeScript",
+      "avatar": "https://avatars.githubusercontent.com/u/4158466?v=4",
+      "stars": 84341,
+      "forks": 11797,
+      "language": "Python",
       "license": "MIT",
       "topics": [
         "agent",
-        "artificial-intelligence",
-        "chatgpt",
-        "claude-ai",
-        "cli",
-        "developer-tools",
-        "gpt",
-        "llm",
-        "openai"
+        "agentic",
+        "agentic-framework",
+        "agentic-workflow",
+        "ai",
+        "ai-agents",
+        "deep-research",
+        "harness",
+        "langchain",
+        "langgraph"
       ],
-      "repo": "OpenHands/OpenHands",
-      "ideaDomain": "devtools",
-      "metric": "91,659 نجمة GitHub",
+      "repo": "bytedance/deer-flow",
+      "ideaDomain": "agents",
+      "metric": "84,341 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 90.0
+      "score": 89.97
     },
     {
-      "id": "bf44de9e544de4cbe9",
-      "kind": "news",
-      "title": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
-      "description": "موضوع تقني يحظى بنقاش على Hacker News. افتح المصدر الأساسي لمعرفة التفاصيل، ثم راجع النقاش لآراء المطورين.",
-      "impact": "مؤشر التفاعل هنا يعتمد على التصويتات والتعليقات الفعلية في Hacker News، وليس عدد المشاهدات.",
-      "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
-      "source": "Hacker News",
-      "category": "تقنيات",
+      "id": "e23c298591bff98383",
+      "kind": "project",
+      "title": "graphify",
+      "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "source": "GitHub",
+      "category": "مفتوح المصدر",
       "region": "عالمي",
-      "publishedAt": "2026-10-23T16:59:08+00:00",
+      "publishedAt": "2026-10-23T17:59:28+00:00",
       "image": "",
-      "points": 338,
-      "comments": 171,
-      "hnUrl": "https://news.ycombinator.com/item?id=50212065",
-      "metric": "338 نقطة · 171 تعليق",
-      "ideaDomain": "general",
+      "avatar": "https://avatars.githubusercontent.com/u/297659074?v=4",
+      "stars": 133893,
+      "forks": 12789,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "topics": [
+        "ai-agents",
+        "antigravity",
+        "ast",
+        "claude-code",
+        "code-analysis",
+        "code-search",
+        "codex",
+        "cursor",
+        "developer-tools",
+        "gemini"
+      ],
+      "repo": "Graphify-Labs/graphify",
+      "ideaDomain": "search",
+      "metric": "133,893 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 89.69
+      "score": 89.88
+    },
+    {
+      "id": "c60b77ce50fb891064",
+      "kind": "project",
+      "title": "ruflo",
+      "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
+      "url": "https://github.com/ruvnet/ruflo",
+      "source": "GitHub",
+      "category": "مفتوح المصدر",
+      "region": "عالمي",
+      "publishedAt": "2026-10-23T22:49:04+00:00",
+      "image": "",
+      "avatar": "https://avatars.githubusercontent.com/u/2934394?v=4",
+      "stars": 78774,
+      "forks": 9250,
+      "language": "TypeScript",
+      "license": "MIT",
+      "topics": [
+        "agentic-ai",
+        "agentic-framework",
+        "agentic-workflow",
+        "agents",
+        "ai-agents",
+        "ai-assistant",
+        "ai-skills",
+        "autonomous-agents",
+        "claude",
+        "codex"
+      ],
+      "repo": "ruvnet/ruflo",
+      "ideaDomain": "agents",
+      "metric": "78,774 نجمة GitHub",
+      "firstSeenAt": "2026-10-23T19:03:19+00:00",
+      "score": 89.13
     },
     {
       "id": "10b7f65af4f5070207",
@@ -556,7 +592,7 @@
       "source": "GitHub",
       "category": "مفتوح المصدر",
       "region": "عالمي",
-      "publishedAt": "2026-10-23T18:54:32+00:00",
+      "publishedAt": "2026-10-23T22:31:21+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/34455048?v=4",
       "stars": 64378,
@@ -577,42 +613,246 @@
       "ideaDomain": "education",
       "metric": "64,378 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 89.52
+      "score": 89.11
     },
     {
-      "id": "c60b77ce50fb891064",
+      "id": "6e18aa23e1f0d14413",
       "kind": "project",
-      "title": "ruflo",
-      "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+      "title": "hyperframes",
+      "description": "Write HTML. Render video. Built for agents.",
       "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
-      "url": "https://github.com/ruvnet/ruflo",
+      "url": "https://github.com/heygen-com/hyperframes",
       "source": "GitHub",
       "category": "مفتوح المصدر",
       "region": "عالمي",
-      "publishedAt": "2026-10-23T18:52:53+00:00",
+      "publishedAt": "2026-10-23T23:34:52+00:00",
       "image": "",
-      "avatar": "https://avatars.githubusercontent.com/u/2934394?v=4",
-      "stars": 78721,
-      "forks": 9247,
+      "avatar": "https://avatars.githubusercontent.com/u/65394575?v=4",
+      "stars": 70782,
+      "forks": 6399,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "topics": [
+        "ai",
+        "ai-agents",
+        "animation",
+        "claude-code",
+        "ffmpeg",
+        "framework",
+        "gsap",
+        "html",
+        "html-to-video",
+        "mcp"
+      ],
+      "repo": "heygen-com/hyperframes",
+      "ideaDomain": "agents",
+      "metric": "70,782 نجمة GitHub",
+      "firstSeenAt": "2026-10-23T19:03:19+00:00",
+      "score": 88.52
+    },
+    {
+      "id": "a90e1fa2514daead77",
+      "kind": "project",
+      "title": "oh-my-openagent",
+      "description": "OmO: Just type \"mass ulw\" keyword with your prompt. Now you are the master of graph engineering.",
+      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
+      "url": "https://github.com/code-yeongyu/oh-my-openagent",
+      "source": "GitHub",
+      "category": "مفتوح المصدر",
+      "region": "عالمي",
+      "publishedAt": "2026-10-23T23:34:10+00:00",
+      "image": "",
+      "avatar": "https://avatars.githubusercontent.com/u/11153873?v=4",
+      "stars": 70292,
+      "forks": 5780,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "topics": [
+        "ai",
+        "ai-agents",
+        "anthropic",
+        "chatgpt",
+        "claude",
+        "claude-skills",
+        "codex",
+        "cursor",
+        "gemini",
+        "ide"
+      ],
+      "repo": "code-yeongyu/oh-my-openagent",
+      "ideaDomain": "agents",
+      "metric": "70,292 نجمة GitHub",
+      "firstSeenAt": "2026-10-23T19:03:19+00:00",
+      "score": 88.35
+    },
+    {
+      "id": "e7ea3eff20f3f9ae98",
+      "kind": "project",
+      "title": "anything-llm",
+      "description": "Stop renting your intelligence. Own it with AnythingLLM. Everything you need for a powerful local-first agent experience",
+      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
+      "url": "https://github.com/Mintplex-Labs/anything-llm",
+      "source": "GitHub",
+      "category": "مفتوح المصدر",
+      "region": "عالمي",
+      "publishedAt": "2026-10-23T23:04:11+00:00",
+      "image": "",
+      "avatar": "https://avatars.githubusercontent.com/u/134426827?v=4",
+      "stars": 67492,
+      "forks": 7563,
+      "language": "JavaScript",
+      "license": "MIT",
+      "topics": [
+        "agent-computer",
+        "agent-harness",
+        "agent-orchestration",
+        "agentic-ai",
+        "agentic-workflow",
+        "ai-agents",
+        "computer-use",
+        "hermes-agent",
+        "llm",
+        "local-ai"
+      ],
+      "repo": "Mintplex-Labs/anything-llm",
+      "ideaDomain": "agents",
+      "metric": "67,492 نجمة GitHub",
+      "firstSeenAt": "2026-10-23T19:03:19+00:00",
+      "score": 88.3
+    },
+    {
+      "id": "ef64a947957b8d7fb5",
+      "kind": "project",
+      "title": "crewAI",
+      "description": "Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.",
+      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
+      "url": "https://github.com/crewAIInc/crewAI",
+      "source": "GitHub",
+      "category": "مفتوح المصدر",
+      "region": "عالمي",
+      "publishedAt": "2026-10-23T23:22:57+00:00",
+      "image": "",
+      "avatar": "https://avatars.githubusercontent.com/u/170677839?v=4",
+      "stars": 60042,
+      "forks": 8855,
+      "language": "Python",
+      "license": "MIT",
+      "topics": [
+        "agents",
+        "ai",
+        "ai-agents",
+        "aiagentframework",
+        "llms"
+      ],
+      "repo": "crewAIInc/crewAI",
+      "ideaDomain": "agents",
+      "metric": "60,042 نجمة GitHub",
+      "firstSeenAt": "2026-10-23T19:03:19+00:00",
+      "score": 88.13
+    },
+    {
+      "id": "d9330c307f7dbfb63c",
+      "kind": "project",
+      "title": "OpenHands",
+      "description": "🙌 OpenHands: AI-Driven Development",
+      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
+      "url": "https://github.com/OpenHands/OpenHands",
+      "source": "GitHub",
+      "category": "مفتوح المصدر",
+      "region": "عالمي",
+      "publishedAt": "2026-10-23T17:53:56+00:00",
+      "image": "",
+      "avatar": "https://avatars.githubusercontent.com/u/225919603?v=4",
+      "stars": 91678,
+      "forks": 12163,
       "language": "TypeScript",
       "license": "MIT",
       "topics": [
-        "agentic-ai",
-        "agentic-framework",
-        "agentic-workflow",
-        "agents",
-        "ai-agents",
-        "ai-assistant",
-        "ai-skills",
-        "autonomous-agents",
-        "claude",
-        "codex"
+        "agent",
+        "artificial-intelligence",
+        "chatgpt",
+        "claude-ai",
+        "cli",
+        "developer-tools",
+        "gpt",
+        "llm",
+        "openai"
       ],
-      "repo": "ruvnet/ruflo",
-      "ideaDomain": "agents",
-      "metric": "78,721 نجمة GitHub",
+      "repo": "OpenHands/OpenHands",
+      "ideaDomain": "devtools",
+      "metric": "91,678 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 89.4
+      "score": 88.11
+    },
+    {
+      "id": "88c3606113f4102a3a",
+      "kind": "project",
+      "title": "airflow",
+      "description": "Apache Airflow - A platform to programmatically author, schedule, and monitor workflows",
+      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
+      "url": "https://github.com/apache/airflow",
+      "source": "GitHub",
+      "category": "مفتوح المصدر",
+      "region": "عالمي",
+      "publishedAt": "2026-10-23T23:36:03+00:00",
+      "image": "",
+      "avatar": "https://avatars.githubusercontent.com/u/47359?v=4",
+      "stars": 47267,
+      "forks": 18115,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "topics": [
+        "airflow",
+        "apache",
+        "apache-airflow",
+        "automation",
+        "dag",
+        "data-engineering",
+        "data-integration",
+        "data-orchestrator",
+        "data-pipelines",
+        "data-science"
+      ],
+      "repo": "apache/airflow",
+      "ideaDomain": "agents",
+      "metric": "47,267 نجمة GitHub",
+      "firstSeenAt": "2026-10-23T19:03:19+00:00",
+      "score": 88.1
+    },
+    {
+      "id": "c7c9684abfb725296d",
+      "kind": "project",
+      "title": "strix",
+      "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
+      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
+      "url": "https://github.com/usestrix/strix",
+      "source": "GitHub",
+      "category": "مفتوح المصدر",
+      "region": "عالمي",
+      "publishedAt": "2026-10-23T21:31:46+00:00",
+      "image": "",
+      "avatar": "https://avatars.githubusercontent.com/u/187630752?v=4",
+      "stars": 71442,
+      "forks": 7962,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "topics": [
+        "agents",
+        "ai-hacking",
+        "ai-penetration-testing",
+        "ai-pentesting",
+        "ai-security",
+        "artificial-intelligence",
+        "bug-bounty",
+        "code-quality",
+        "ctf-tools",
+        "cybersecurity"
+      ],
+      "repo": "usestrix/strix",
+      "ideaDomain": "agents",
+      "metric": "71,442 نجمة GitHub",
+      "firstSeenAt": "2026-10-23T19:03:19+00:00",
+      "score": 87.96
     },
     {
       "id": "112ba4283cccf5b146",
@@ -624,7 +864,7 @@
       "source": "GitHub",
       "category": "مفتوح المصدر",
       "region": "عالمي",
-      "publishedAt": "2026-10-23T18:58:08+00:00",
+      "publishedAt": "2026-10-23T20:46:01+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/26833451?v=4",
       "stars": 62784,
@@ -647,112 +887,27 @@
       "ideaDomain": "vision",
       "metric": "62,784 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 88.77
+      "score": 87.59
     },
     {
-      "id": "16389f32495280ea98",
-      "kind": "project",
-      "title": "deer-flow",
-      "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
-      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
-      "url": "https://github.com/bytedance/deer-flow",
-      "source": "GitHub",
-      "category": "مفتوح المصدر",
+      "id": "a9526976eeebfbfe11",
+      "kind": "news",
+      "title": "Now Google says it might use your Gmail and Google Photos data to target ads",
+      "description": "Google has updated its privacy policy in a way that could mean you'll start seeing targeted ads based on your personal data if you're using personalized AI features. The update, spotted by Android Authority, adds an exception to its promise about not using your Drive, Gmail, or Google Photos for personalized ads. While the previous [...]",
+      "impact": "تحليل مبدئي: راجع المصدر لفهم الآثار التقنية والإعلان الكامل، فقد تختلف النتائج بحسب الاستخدام.",
+      "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
+      "source": "أخبار التقنية",
+      "category": "تقنيات",
       "region": "عالمي",
-      "publishedAt": "2026-10-23T15:56:44+00:00",
+      "publishedAt": "2026-10-23T16:52:55+00:00",
       "image": "",
-      "avatar": "https://avatars.githubusercontent.com/u/4158466?v=4",
-      "stars": 84337,
-      "forks": 11796,
-      "language": "Python",
-      "license": "MIT",
-      "topics": [
-        "agent",
-        "agentic",
-        "agentic-framework",
-        "agentic-workflow",
-        "ai",
-        "ai-agents",
-        "deep-research",
-        "harness",
-        "langchain",
-        "langgraph"
-      ],
-      "repo": "bytedance/deer-flow",
-      "ideaDomain": "agents",
-      "metric": "84,337 نجمة GitHub",
+      "points": 215,
+      "comments": 99,
+      "metric": "التقدير: حداثة ومصدر",
+      "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 88.77
-    },
-    {
-      "id": "6e18aa23e1f0d14413",
-      "kind": "project",
-      "title": "hyperframes",
-      "description": "Write HTML. Render video. Built for agents.",
-      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
-      "url": "https://github.com/heygen-com/hyperframes",
-      "source": "GitHub",
-      "category": "مفتوح المصدر",
-      "region": "عالمي",
-      "publishedAt": "2026-10-23T19:00:16+00:00",
-      "image": "",
-      "avatar": "https://avatars.githubusercontent.com/u/65394575?v=4",
-      "stars": 70656,
-      "forks": 6392,
-      "language": "TypeScript",
-      "license": "Apache-2.0",
-      "topics": [
-        "ai",
-        "ai-agents",
-        "animation",
-        "claude-code",
-        "ffmpeg",
-        "framework",
-        "gsap",
-        "html",
-        "html-to-video",
-        "mcp"
-      ],
-      "repo": "heygen-com/hyperframes",
-      "ideaDomain": "agents",
-      "metric": "70,656 نجمة GitHub",
-      "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 88.5
-    },
-    {
-      "id": "e7ea3eff20f3f9ae98",
-      "kind": "project",
-      "title": "anything-llm",
-      "description": "Stop renting your intelligence. Own it with AnythingLLM. Everything you need for a powerful local-first agent experience",
-      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
-      "url": "https://github.com/Mintplex-Labs/anything-llm",
-      "source": "GitHub",
-      "category": "مفتوح المصدر",
-      "region": "عالمي",
-      "publishedAt": "2026-10-23T18:50:09+00:00",
-      "image": "",
-      "avatar": "https://avatars.githubusercontent.com/u/134426827?v=4",
-      "stars": 67487,
-      "forks": 7563,
-      "language": "JavaScript",
-      "license": "MIT",
-      "topics": [
-        "agent-computer",
-        "agent-harness",
-        "agent-orchestration",
-        "agentic-ai",
-        "agentic-workflow",
-        "ai-agents",
-        "computer-use",
-        "hermes-agent",
-        "llm",
-        "local-ai"
-      ],
-      "repo": "Mintplex-Labs/anything-llm",
-      "ideaDomain": "agents",
-      "metric": "67,487 نجمة GitHub",
-      "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 88.44
+      "score": 86.95,
+      "hnUrl": "https://news.ycombinator.com/item?id=50214218"
     },
     {
       "id": "cddc9a2d075a51037b",
@@ -767,7 +922,7 @@
       "publishedAt": "2026-10-23T18:38:28+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/137054526?v=4",
-      "stars": 67707,
+      "stars": 67711,
       "forks": 7998,
       "language": "Python",
       "license": "Apache-2.0",
@@ -785,9 +940,9 @@
       ],
       "repo": "mem0ai/mem0",
       "ideaDomain": "agents",
-      "metric": "67,707 نجمة GitHub",
+      "metric": "67,711 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 88.44
+      "score": 86.53
     },
     {
       "id": "7b553354eb54440765",
@@ -802,8 +957,8 @@
       "publishedAt": "2026-10-23T16:14:21+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/48523873?v=4",
-      "stars": 72752,
-      "forks": 12783,
+      "stars": 72801,
+      "forks": 12786,
       "language": "Python",
       "license": "MIT",
       "topics": [
@@ -820,114 +975,9 @@
       ],
       "repo": "rohitg00/ai-engineering-from-scratch",
       "ideaDomain": "education",
-      "metric": "72,752 نجمة GitHub",
+      "metric": "72,801 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 88.34
-    },
-    {
-      "id": "a90e1fa2514daead77",
-      "kind": "project",
-      "title": "oh-my-openagent",
-      "description": "OmO: Just type \"mass ulw\" keyword with your prompt. Now you are the master of graph engineering.",
-      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
-      "url": "https://github.com/code-yeongyu/oh-my-openagent",
-      "source": "GitHub",
-      "category": "مفتوح المصدر",
-      "region": "عالمي",
-      "publishedAt": "2026-10-23T18:56:05+00:00",
-      "image": "",
-      "avatar": "https://avatars.githubusercontent.com/u/11153873?v=4",
-      "stars": 70291,
-      "forks": 5780,
-      "language": "TypeScript",
-      "license": "NOASSERTION",
-      "topics": [
-        "ai",
-        "ai-agents",
-        "anthropic",
-        "chatgpt",
-        "claude",
-        "claude-skills",
-        "codex",
-        "cursor",
-        "gemini",
-        "ide"
-      ],
-      "repo": "code-yeongyu/oh-my-openagent",
-      "ideaDomain": "agents",
-      "metric": "70,291 نجمة GitHub",
-      "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 88.31
-    },
-    {
-      "id": "88c3606113f4102a3a",
-      "kind": "project",
-      "title": "airflow",
-      "description": "Apache Airflow - A platform to programmatically author, schedule, and monitor workflows",
-      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
-      "url": "https://github.com/apache/airflow",
-      "source": "GitHub",
-      "category": "مفتوح المصدر",
-      "region": "عالمي",
-      "publishedAt": "2026-10-23T18:58:44+00:00",
-      "image": "",
-      "avatar": "https://avatars.githubusercontent.com/u/47359?v=4",
-      "stars": 47269,
-      "forks": 18115,
-      "language": "Python",
-      "license": "Apache-2.0",
-      "topics": [
-        "airflow",
-        "apache",
-        "apache-airflow",
-        "automation",
-        "dag",
-        "data-engineering",
-        "data-integration",
-        "data-orchestrator",
-        "data-pipelines",
-        "data-science"
-      ],
-      "repo": "apache/airflow",
-      "ideaDomain": "agents",
-      "metric": "47,269 نجمة GitHub",
-      "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 88.07
-    },
-    {
-      "id": "5ff4bf30ae94874f6d",
-      "kind": "project",
-      "title": "ragflow",
-      "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
-      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
-      "url": "https://github.com/infiniflow/ragflow",
-      "source": "GitHub",
-      "category": "مفتوح المصدر",
-      "region": "عالمي",
-      "publishedAt": "2026-10-23T13:13:29+00:00",
-      "image": "",
-      "avatar": "https://avatars.githubusercontent.com/u/69962740?v=4",
-      "stars": 92748,
-      "forks": 11091,
-      "language": "Go",
-      "license": "Apache-2.0",
-      "topics": [
-        "agent-harness",
-        "agentic-ai",
-        "agentic-nagive",
-        "agentic-retrieval",
-        "agentic-search",
-        "ai",
-        "ai-agents",
-        "context-engine",
-        "context-engineering",
-        "context-management"
-      ],
-      "repo": "infiniflow/ragflow",
-      "ideaDomain": "search",
-      "metric": "92,748 نجمة GitHub",
-      "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 88.0
+      "score": 86.51
     },
     {
       "id": "1643157b768c76e76e",
@@ -942,8 +992,8 @@
       "publishedAt": "2026-10-23T03:17:31+00:00",
       "image": "https://prompts.chat/logo.svg",
       "avatar": "https://avatars.githubusercontent.com/u/196477?v=4",
-      "stars": 174211,
-      "forks": 22261,
+      "stars": 174239,
+      "forks": 22266,
       "language": "HTML",
       "license": "NOASSERTION",
       "topics": [
@@ -960,14 +1010,84 @@
       ],
       "repo": "f/prompts.chat",
       "ideaDomain": "inference",
-      "metric": "174,211 نجمة GitHub",
+      "metric": "174,239 نجمة GitHub",
       "gallery": [
         "https://prompts.chat/logo.svg",
         "https://prompts.chat/promi.svg",
         "https://raw.githubusercontent.com/f/prompts.chat/main/public/sponsors/neon-dark.svg"
       ],
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 88.0
+      "score": 86.5
+    },
+    {
+      "id": "04aa3744e1ae44cec6",
+      "kind": "project",
+      "title": "supervision",
+      "description": "We write your reusable computer vision tools. 💜",
+      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
+      "url": "https://github.com/roboflow/supervision",
+      "source": "GitHub",
+      "category": "مفتوح المصدر",
+      "region": "عالمي",
+      "publishedAt": "2026-10-23T22:39:43+00:00",
+      "image": "",
+      "avatar": "https://avatars.githubusercontent.com/u/53104118?v=4",
+      "stars": 51320,
+      "forks": 4863,
+      "language": "Python",
+      "license": "MIT",
+      "topics": [
+        "classification",
+        "coco",
+        "computer-vision",
+        "deep-learning",
+        "hacktoberfest",
+        "image-processing",
+        "instance-segmentation",
+        "low-code",
+        "machine-learning",
+        "metrics"
+      ],
+      "repo": "roboflow/supervision",
+      "ideaDomain": "vision",
+      "metric": "51,320 نجمة GitHub",
+      "firstSeenAt": "2026-10-23T19:03:19+00:00",
+      "score": 86.35
+    },
+    {
+      "id": "5ff4bf30ae94874f6d",
+      "kind": "project",
+      "title": "ragflow",
+      "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
+      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
+      "url": "https://github.com/infiniflow/ragflow",
+      "source": "GitHub",
+      "category": "مفتوح المصدر",
+      "region": "عالمي",
+      "publishedAt": "2026-10-23T13:13:29+00:00",
+      "image": "",
+      "avatar": "https://avatars.githubusercontent.com/u/69962740?v=4",
+      "stars": 92762,
+      "forks": 11094,
+      "language": "Go",
+      "license": "Apache-2.0",
+      "topics": [
+        "agent-harness",
+        "agentic-ai",
+        "agentic-nagive",
+        "agentic-retrieval",
+        "agentic-search",
+        "ai",
+        "ai-agents",
+        "context-engine",
+        "context-engineering",
+        "context-management"
+      ],
+      "repo": "infiniflow/ragflow",
+      "ideaDomain": "search",
+      "metric": "92,762 نجمة GitHub",
+      "firstSeenAt": "2026-10-23T19:03:19+00:00",
+      "score": 86.24
     },
     {
       "id": "8e773aa72402b28ae1",
@@ -982,8 +1102,8 @@
       "publishedAt": "2026-10-23T13:36:07+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/365630?v=4",
-      "stars": 67877,
-      "forks": 27567,
+      "stars": 67884,
+      "forks": 27570,
       "language": "Python",
       "license": "BSD-3-Clause",
       "topics": [
@@ -995,39 +1115,9 @@
       ],
       "repo": "scikit-learn/scikit-learn",
       "ideaDomain": "education",
-      "metric": "67,877 نجمة GitHub",
+      "metric": "67,884 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 87.96
-    },
-    {
-      "id": "ef64a947957b8d7fb5",
-      "kind": "project",
-      "title": "crewAI",
-      "description": "Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.",
-      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
-      "url": "https://github.com/crewAIInc/crewAI",
-      "source": "GitHub",
-      "category": "مفتوح المصدر",
-      "region": "عالمي",
-      "publishedAt": "2026-10-23T17:35:27+00:00",
-      "image": "",
-      "avatar": "https://avatars.githubusercontent.com/u/170677839?v=4",
-      "stars": 60034,
-      "forks": 8854,
-      "language": "Python",
-      "license": "MIT",
-      "topics": [
-        "agents",
-        "ai",
-        "ai-agents",
-        "aiagentframework",
-        "llms"
-      ],
-      "repo": "crewAIInc/crewAI",
-      "ideaDomain": "agents",
-      "metric": "60,034 نجمة GitHub",
-      "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 87.59
+      "score": 86.19
     },
     {
       "id": "a6f998d4efb0307b47",
@@ -1039,10 +1129,10 @@
       "source": "GitHub",
       "category": "مفتوح المصدر",
       "region": "عالمي",
-      "publishedAt": "2026-10-23T19:00:27+00:00",
+      "publishedAt": "2026-10-23T19:53:34+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/118165258?v=4",
-      "stars": 49301,
+      "stars": 49304,
       "forks": 8672,
       "language": "Python",
       "license": "MIT",
@@ -1060,9 +1150,9 @@
       ],
       "repo": "HKUDS/nanobot",
       "ideaDomain": "inference",
-      "metric": "49,301 نجمة GitHub",
+      "metric": "49,304 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 87.31
+      "score": 85.75
     },
     {
       "id": "8ea7b5016269d351c8",
@@ -1077,8 +1167,8 @@
       "publishedAt": "2026-10-23T10:34:23+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/6154722?v=4",
-      "stars": 77760,
-      "forks": 25502,
+      "stars": 77764,
+      "forks": 25504,
       "language": "Jupyter Notebook",
       "license": "MIT",
       "topics": [
@@ -1095,44 +1185,9 @@
       ],
       "repo": "microsoft/ai-agents-for-beginners",
       "ideaDomain": "search",
-      "metric": "77,760 نجمة GitHub",
+      "metric": "77,764 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 87.27
-    },
-    {
-      "id": "c7c9684abfb725296d",
-      "kind": "project",
-      "title": "strix",
-      "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
-      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
-      "url": "https://github.com/usestrix/strix",
-      "source": "GitHub",
-      "category": "مفتوح المصدر",
-      "region": "عالمي",
-      "publishedAt": "2026-10-23T14:48:01+00:00",
-      "image": "",
-      "avatar": "https://avatars.githubusercontent.com/u/187630752?v=4",
-      "stars": 71391,
-      "forks": 7955,
-      "language": "Python",
-      "license": "Apache-2.0",
-      "topics": [
-        "agents",
-        "ai-hacking",
-        "ai-penetration-testing",
-        "ai-pentesting",
-        "ai-security",
-        "artificial-intelligence",
-        "bug-bounty",
-        "code-quality",
-        "ctf-tools",
-        "cybersecurity"
-      ],
-      "repo": "usestrix/strix",
-      "ideaDomain": "agents",
-      "metric": "71,391 نجمة GitHub",
-      "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 87.05
+      "score": 85.58
     },
     {
       "id": "716cf9e2237ac9dba9",
@@ -1147,8 +1202,8 @@
       "publishedAt": "2026-10-23T13:41:37+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/27446620?v=4",
-      "stars": 70108,
-      "forks": 11354,
+      "stars": 70113,
+      "forks": 11355,
       "language": "Python",
       "license": "CC0-1.0",
       "topics": [
@@ -1165,9 +1220,9 @@
       ],
       "repo": "asgeirtj/system_prompts_leaks",
       "ideaDomain": "agents",
-      "metric": "70,108 نجمة GitHub",
+      "metric": "70,113 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 86.98
+      "score": 85.21
     },
     {
       "id": "8782e21ebeda898af4",
@@ -1182,8 +1237,8 @@
       "publishedAt": "2026-10-23T17:43:37+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/271095942?v=4",
-      "stars": 55590,
-      "forks": 6430,
+      "stars": 55593,
+      "forks": 6433,
       "language": "Rust",
       "license": "Apache-2.0",
       "topics": [
@@ -1194,44 +1249,9 @@
       ],
       "repo": "aaif-goose/goose",
       "ideaDomain": "agents",
-      "metric": "55,590 نجمة GitHub",
+      "metric": "55,593 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 86.9
-    },
-    {
-      "id": "04aa3744e1ae44cec6",
-      "kind": "project",
-      "title": "supervision",
-      "description": "We write your reusable computer vision tools. 💜",
-      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
-      "url": "https://github.com/roboflow/supervision",
-      "source": "GitHub",
-      "category": "مفتوح المصدر",
-      "region": "عالمي",
-      "publishedAt": "2026-10-23T17:44:17+00:00",
-      "image": "",
-      "avatar": "https://avatars.githubusercontent.com/u/53104118?v=4",
-      "stars": 51314,
-      "forks": 4859,
-      "language": "Python",
-      "license": "MIT",
-      "topics": [
-        "classification",
-        "coco",
-        "computer-vision",
-        "deep-learning",
-        "hacktoberfest",
-        "image-processing",
-        "instance-segmentation",
-        "low-code",
-        "machine-learning",
-        "metrics"
-      ],
-      "repo": "roboflow/supervision",
-      "ideaDomain": "vision",
-      "metric": "51,314 نجمة GitHub",
-      "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 86.19
+      "score": 85.01
     },
     {
       "id": "f6a301346a05e615cd",
@@ -1251,7 +1271,7 @@
       "metric": "429 نقطة · 268 تعليق",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 85.91
+      "score": 84.51
     },
     {
       "id": "9874efc4c925cc500b",
@@ -1266,7 +1286,7 @@
       "publishedAt": "2026-10-23T18:16:33+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/45109972?v=4",
-      "stars": 46079,
+      "stars": 46085,
       "forks": 4428,
       "language": "Python",
       "license": "Apache-2.0",
@@ -1282,44 +1302,9 @@
       ],
       "repo": "streamlit/streamlit",
       "ideaDomain": "devtools",
-      "metric": "46,079 نجمة GitHub",
+      "metric": "46,085 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 85.82
-    },
-    {
-      "id": "c1af6b58492f9bf434",
-      "kind": "project",
-      "title": "browser-use",
-      "description": "Open-source Python library for AI browser agents, plus Browser Use Cloud: stealth browsers and a hosted agent API.",
-      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
-      "url": "https://github.com/browser-use/browser-use",
-      "source": "GitHub",
-      "category": "مفتوح المصدر",
-      "region": "عالمي",
-      "publishedAt": "2026-10-23T00:56:16+00:00",
-      "image": "",
-      "avatar": "https://avatars.githubusercontent.com/u/192012301?v=4",
-      "stars": 118970,
-      "forks": 13212,
-      "language": "Python",
-      "license": "MIT",
-      "topics": [
-        "ai-agents",
-        "ai-tools",
-        "browser-agent",
-        "browser-automation",
-        "browser-use",
-        "cdp",
-        "cloud-browser",
-        "computer-use",
-        "headless-browser",
-        "llm"
-      ],
-      "repo": "browser-use/browser-use",
-      "ideaDomain": "agents",
-      "metric": "118,970 نجمة GitHub",
-      "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 84.85
+      "score": 83.92
     },
     {
       "id": "940ec4695c1e241c2f",
@@ -1339,7 +1324,42 @@
       "metric": "482 نقطة · 206 تعليق",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 84.73
+      "score": 83.43
+    },
+    {
+      "id": "c1af6b58492f9bf434",
+      "kind": "project",
+      "title": "browser-use",
+      "description": "Open-source Python library for AI browser agents, plus Browser Use Cloud: stealth browsers and a hosted agent API.",
+      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
+      "url": "https://github.com/browser-use/browser-use",
+      "source": "GitHub",
+      "category": "مفتوح المصدر",
+      "region": "عالمي",
+      "publishedAt": "2026-10-23T00:56:16+00:00",
+      "image": "",
+      "avatar": "https://avatars.githubusercontent.com/u/192012301?v=4",
+      "stars": 118982,
+      "forks": 13215,
+      "language": "Python",
+      "license": "MIT",
+      "topics": [
+        "ai-agents",
+        "ai-tools",
+        "browser-agent",
+        "browser-automation",
+        "browser-use",
+        "cdp",
+        "cloud-browser",
+        "computer-use",
+        "headless-browser",
+        "llm"
+      ],
+      "repo": "browser-use/browser-use",
+      "ideaDomain": "agents",
+      "metric": "118,982 نجمة GitHub",
+      "firstSeenAt": "2026-10-23T19:03:19+00:00",
+      "score": 83.4
     },
     {
       "id": "010d1ccd570cd22892",
@@ -1359,7 +1379,7 @@
       "metric": "334 نقطة · 224 تعليق",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 84.12
+      "score": 82.67
     },
     {
       "id": "100e6a5a6a69719857",
@@ -1374,8 +1394,8 @@
       "publishedAt": "2026-10-23T04:09:16+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/320819803?v=4",
-      "stars": 80309,
-      "forks": 11717,
+      "stars": 80394,
+      "forks": 11736,
       "language": "TypeScript",
       "license": "MIT",
       "topics": [
@@ -1392,44 +1412,9 @@
       ],
       "repo": "cheaper-inference/OmniRoute",
       "ideaDomain": "inference",
-      "metric": "80,309 نجمة GitHub",
+      "metric": "80,394 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 84.06
-    },
-    {
-      "id": "beef7674765325310c",
-      "kind": "project",
-      "title": "claude-code-best-practice",
-      "description": "from vibe coding to agentic engineering - practice makes claude perfect",
-      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
-      "url": "https://github.com/shanraisshan/claude-code-best-practice",
-      "source": "GitHub",
-      "category": "مفتوح المصدر",
-      "region": "عالمي",
-      "publishedAt": "2026-10-23T06:34:17+00:00",
-      "image": "",
-      "avatar": "https://avatars.githubusercontent.com/u/11731897?v=4",
-      "stars": 67934,
-      "forks": 6759,
-      "language": "HTML",
-      "license": "MIT",
-      "topics": [
-        "agentic-ai",
-        "agentic-coding",
-        "agentic-engineering",
-        "agentic-workflow",
-        "ai",
-        "ai-agents",
-        "anthropic",
-        "best-practices",
-        "boris",
-        "claude"
-      ],
-      "repo": "shanraisshan/claude-code-best-practice",
-      "ideaDomain": "agents",
-      "metric": "67,934 نجمة GitHub",
-      "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 83.46
+      "score": 82.54
     },
     {
       "id": "26de699d3e5c651e05",
@@ -1444,8 +1429,8 @@
       "publishedAt": "2026-10-23T03:36:31+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/53142663?v=4",
-      "stars": 88244,
-      "forks": 5948,
+      "stars": 88282,
+      "forks": 5953,
       "language": "JavaScript",
       "license": "MIT",
       "topics": [
@@ -1462,9 +1447,64 @@
       ],
       "repo": "tt-a1i/archify",
       "ideaDomain": "agents",
-      "metric": "88,244 نجمة GitHub",
+      "metric": "88,282 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 83.4
+      "score": 81.89
+    },
+    {
+      "id": "beef7674765325310c",
+      "kind": "project",
+      "title": "claude-code-best-practice",
+      "description": "from vibe coding to agentic engineering - practice makes claude perfect",
+      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
+      "url": "https://github.com/shanraisshan/claude-code-best-practice",
+      "source": "GitHub",
+      "category": "مفتوح المصدر",
+      "region": "عالمي",
+      "publishedAt": "2026-10-23T06:34:17+00:00",
+      "image": "",
+      "avatar": "https://avatars.githubusercontent.com/u/11731897?v=4",
+      "stars": 67942,
+      "forks": 6760,
+      "language": "HTML",
+      "license": "MIT",
+      "topics": [
+        "agentic-ai",
+        "agentic-coding",
+        "agentic-engineering",
+        "agentic-workflow",
+        "ai",
+        "ai-agents",
+        "anthropic",
+        "best-practices",
+        "boris",
+        "claude"
+      ],
+      "repo": "shanraisshan/claude-code-best-practice",
+      "ideaDomain": "agents",
+      "metric": "67,942 نجمة GitHub",
+      "firstSeenAt": "2026-10-23T19:03:19+00:00",
+      "score": 81.88
+    },
+    {
+      "id": "b5cb20bfbe29ca4672",
+      "kind": "news",
+      "title": "Dessa: the most authentic full-duplex speech model ever built",
+      "description": "موضوع تقني يحظى بنقاش على Hacker News. افتح المصدر الأساسي لمعرفة التفاصيل، ثم راجع النقاش لآراء المطورين.",
+      "impact": "مؤشر التفاعل هنا يعتمد على التصويتات والتعليقات الفعلية في Hacker News، وليس عدد المشاهدات.",
+      "url": "https://block.xyz/dessa",
+      "source": "Hacker News",
+      "category": "تقنيات",
+      "region": "عالمي",
+      "publishedAt": "2026-10-23T19:09:54+00:00",
+      "image": "",
+      "points": 178,
+      "comments": 72,
+      "hnUrl": "https://news.ycombinator.com/item?id=50213925",
+      "metric": "178 نقطة · 72 تعليق",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-10-23T23:36:44+00:00",
+      "score": 81.67
     },
     {
       "id": "e8cd7111f3678ea8f9",
@@ -1479,8 +1519,8 @@
       "publishedAt": "2026-10-23T12:27:44+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/99562962?v=4",
-      "stars": 47026,
-      "forks": 3271,
+      "stars": 47029,
+      "forks": 3273,
       "language": "Python",
       "license": "GPL-3.0",
       "topics": [
@@ -1497,9 +1537,9 @@
       ],
       "repo": "paperless-ngx/paperless-ngx",
       "ideaDomain": "inference",
-      "metric": "47,026 نجمة GitHub",
+      "metric": "47,029 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 83.12
+      "score": 81.38
     },
     {
       "id": "80429efb6e1e2fd88f",
@@ -1514,7 +1554,7 @@
       "publishedAt": "2026-10-22T15:41:41+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/1267200?v=4",
-      "stars": 97180,
+      "stars": 97182,
       "forks": 14146,
       "language": "Python",
       "license": "AGPL-3.0",
@@ -1532,9 +1572,9 @@
       ],
       "repo": "hacksider/Deep-Live-Cam",
       "ideaDomain": "vision",
-      "metric": "97,180 نجمة GitHub",
+      "metric": "97,182 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 81.22
+      "score": 79.96
     },
     {
       "id": "d46d1480c37c463a90",
@@ -1549,8 +1589,8 @@
       "publishedAt": "2026-10-22T19:03:10+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/12494079?v=4",
-      "stars": 86115,
-      "forks": 8948,
+      "stars": 86114,
+      "forks": 8952,
       "language": "Python",
       "license": "Apache-2.0",
       "topics": [
@@ -1567,9 +1607,9 @@
       ],
       "repo": "unclecode/crawl4ai",
       "ideaDomain": "agents",
-      "metric": "86,115 نجمة GitHub",
+      "metric": "86,114 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 81.07
+      "score": 79.75
     },
     {
       "id": "ea4e4af2752cbf0f8d",
@@ -1584,8 +1624,8 @@
       "publishedAt": "2026-10-20T23:08:28+00:00",
       "image": "https://raw.githubusercontent.com/affaan-m/ECC/main/assets/hero.png",
       "avatar": "https://avatars.githubusercontent.com/u/124439313?v=4",
-      "stars": 287175,
-      "forks": 42589,
+      "stars": 287309,
+      "forks": 42605,
       "language": "JavaScript",
       "license": "MIT",
       "topics": [
@@ -1600,14 +1640,14 @@
       ],
       "repo": "affaan-m/ECC",
       "ideaDomain": "agents",
-      "metric": "287,175 نجمة GitHub",
+      "metric": "287,309 نجمة GitHub",
       "gallery": [
         "https://raw.githubusercontent.com/affaan-m/ECC/main/assets/hero.png",
         "https://raw.githubusercontent.com/affaan-m/ECC/main/assets/images/community/ecc-tools-mark.svg",
         "https://raw.githubusercontent.com/affaan-m/ECC/main/assets/images/community/heart.svg"
       ],
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 78.85
+      "score": 78.18
     },
     {
       "id": "8bf41c2345f4ad8045",
@@ -1622,8 +1662,8 @@
       "publishedAt": "2026-10-22T16:57:46+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/34802794?v=4",
-      "stars": 56211,
-      "forks": 8304,
+      "stars": 56239,
+      "forks": 8312,
       "language": "JavaScript",
       "license": "MIT",
       "topics": [
@@ -1640,44 +1680,29 @@
       ],
       "repo": "coreyhaines31/marketingskills",
       "ideaDomain": "agents",
-      "metric": "56,211 نجمة GitHub",
+      "metric": "56,239 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 78.48
+      "score": 77.2
     },
     {
-      "id": "c750f525fc3dfb26b9",
-      "kind": "project",
-      "title": "qlib",
-      "description": "Qlib is an AI-oriented Quant investment platform that aims to use AI tech to empower Quant Research, from exploring ideas to implementing productions. Qlib supports diverse ML modeling paradigms, including supervised learning, market dynamics modeling, and RL, and is now equipped with https://github.com/microsoft/RD-Agent to automate R&D process.",
-      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
-      "url": "https://github.com/microsoft/qlib",
-      "source": "GitHub",
-      "category": "مفتوح المصدر",
+      "id": "870947cc813e3918d8",
+      "kind": "news",
+      "title": "Can we replace a $150k Looker with a bucket of HTML files?",
+      "description": "موضوع تقني يحظى بنقاش على Hacker News. افتح المصدر الأساسي لمعرفة التفاصيل، ثم راجع النقاش لآراء المطورين.",
+      "impact": "مؤشر التفاعل هنا يعتمد على التصويتات والتعليقات الفعلية في Hacker News، وليس عدد المشاهدات.",
+      "url": "https://david.lequin.dev/blog/bi-software-is-dead/",
+      "source": "Hacker News",
+      "category": "تقنيات",
       "region": "عالمي",
-      "publishedAt": "2026-10-22T06:22:15+00:00",
+      "publishedAt": "2026-10-23T17:15:03+00:00",
       "image": "",
-      "avatar": "https://avatars.githubusercontent.com/u/6154722?v=4",
-      "stars": 49628,
-      "forks": 7841,
-      "language": "Python",
-      "license": "MIT",
-      "topics": [
-        "algorithmic-trading",
-        "auto-quant",
-        "deep-learning",
-        "finance",
-        "fintech",
-        "investment",
-        "machine-learning",
-        "paper",
-        "platform",
-        "python"
-      ],
-      "repo": "microsoft/qlib",
-      "ideaDomain": "agents",
-      "metric": "49,628 نجمة GitHub",
+      "points": 111,
+      "comments": 69,
+      "hnUrl": "https://news.ycombinator.com/item?id=50212320",
+      "metric": "41 نقطة · 25 تعليق",
+      "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 75.02
+      "score": 76.96
     },
     {
       "id": "d4316f8d5082c97897",
@@ -1712,7 +1737,62 @@
       "ideaDomain": "vision",
       "metric": "70,158 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 74.96
+      "score": 74.03
+    },
+    {
+      "id": "c750f525fc3dfb26b9",
+      "kind": "project",
+      "title": "qlib",
+      "description": "Qlib is an AI-oriented Quant investment platform that aims to use AI tech to empower Quant Research, from exploring ideas to implementing productions. Qlib supports diverse ML modeling paradigms, including supervised learning, market dynamics modeling, and RL, and is now equipped with https://github.com/microsoft/RD-Agent to automate R&D process.",
+      "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
+      "url": "https://github.com/microsoft/qlib",
+      "source": "GitHub",
+      "category": "مفتوح المصدر",
+      "region": "عالمي",
+      "publishedAt": "2026-10-22T06:22:15+00:00",
+      "image": "",
+      "avatar": "https://avatars.githubusercontent.com/u/6154722?v=4",
+      "stars": 49631,
+      "forks": 7840,
+      "language": "Python",
+      "license": "MIT",
+      "topics": [
+        "algorithmic-trading",
+        "auto-quant",
+        "deep-learning",
+        "finance",
+        "fintech",
+        "investment",
+        "machine-learning",
+        "paper",
+        "platform",
+        "python"
+      ],
+      "repo": "microsoft/qlib",
+      "ideaDomain": "agents",
+      "metric": "49,631 نجمة GitHub",
+      "firstSeenAt": "2026-10-23T19:03:19+00:00",
+      "score": 73.93
+    },
+    {
+      "id": "f8c156dba788682638",
+      "kind": "news",
+      "title": "Securing our frontier model training environment",
+      "description": "موضوع تقني يحظى بنقاش على Hacker News. افتح المصدر الأساسي لمعرفة التفاصيل، ثم راجع النقاش لآراء المطورين.",
+      "impact": "مؤشر التفاعل هنا يعتمد على التصويتات والتعليقات الفعلية في Hacker News، وليس عدد المشاهدات.",
+      "url": "https://openai.com/index/securing-our-frontier-model-training-environment/",
+      "source": "Hacker News",
+      "category": "تقنيات",
+      "region": "عالمي",
+      "publishedAt": "2026-10-23T19:50:56+00:00",
+      "image": "",
+      "points": 60,
+      "comments": 68,
+      "hnUrl": "https://news.ycombinator.com/item?id=50214416",
+      "metric": "60 نقطة · 68 تعليق",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-10-23T23:36:44+00:00",
+      "score": 73.0
     },
     {
       "id": "16453fadf716a18f7b",
@@ -1732,7 +1812,7 @@
       "metric": "185 نقطة · 70 تعليق",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 73.42
+      "score": 72.21
     },
     {
       "id": "7502ffe393ce17ad75",
@@ -1752,7 +1832,7 @@
       "metric": "176 نقطة · 74 تعليق",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 73.32
+      "score": 72.09
     },
     {
       "id": "708876349c232a6c74",
@@ -1767,8 +1847,8 @@
       "publishedAt": "2026-10-21T05:29:11+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/345951025?v=4",
-      "stars": 64025,
-      "forks": 19839,
+      "stars": 64089,
+      "forks": 19868,
       "language": "Python",
       "license": "MIT",
       "topics": [
@@ -1785,9 +1865,9 @@
       ],
       "repo": "ai-job-search-dev/ai-job-search",
       "ideaDomain": "agents",
-      "metric": "64,025 نجمة GitHub",
+      "metric": "64,089 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 72.26
+      "score": 71.53
     },
     {
       "id": "6364bcd43f460d20bb",
@@ -1802,8 +1882,8 @@
       "publishedAt": "2026-10-20T22:04:30+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/219127460?v=4",
-      "stars": 101551,
-      "forks": 6853,
+      "stars": 101612,
+      "forks": 6859,
       "language": "JavaScript",
       "license": "MIT",
       "topics": [
@@ -1820,29 +1900,29 @@
       ],
       "repo": "Leonxlnx/taste-skill",
       "ideaDomain": "agents",
-      "metric": "101,551 نجمة GitHub",
+      "metric": "101,612 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 71.74
+      "score": 71.09
     },
     {
-      "id": "870947cc813e3918d8",
+      "id": "137545da4da1bffd24",
       "kind": "news",
-      "title": "Can we replace a $150k Looker with a bucket of HTML files?",
+      "title": "Air Purifiers as White Noise Machines",
       "description": "موضوع تقني يحظى بنقاش على Hacker News. افتح المصدر الأساسي لمعرفة التفاصيل، ثم راجع النقاش لآراء المطورين.",
       "impact": "مؤشر التفاعل هنا يعتمد على التصويتات والتعليقات الفعلية في Hacker News، وليس عدد المشاهدات.",
-      "url": "https://david.lequin.dev/blog/bi-software-is-dead/",
+      "url": "https://www.jefftk.com/p/air-purifiers-as-white-noise-machines",
       "source": "Hacker News",
       "category": "تقنيات",
       "region": "عالمي",
-      "publishedAt": "2026-10-23T17:15:03+00:00",
+      "publishedAt": "2026-10-23T17:28:36+00:00",
       "image": "",
-      "points": 41,
-      "comments": 25,
-      "hnUrl": "https://news.ycombinator.com/item?id=50212320",
-      "metric": "41 نقطة · 25 تعليق",
+      "points": 43,
+      "comments": 62,
+      "hnUrl": "https://news.ycombinator.com/item?id=50212507",
+      "metric": "9 نقطة · 7 تعليق",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 68.71
+      "score": 69.17
     },
     {
       "id": "c9852d26a946ffbd0d",
@@ -1857,8 +1937,8 @@
       "publishedAt": "2026-10-18T01:55:14+00:00",
       "image": "https://raw.githubusercontent.com/DietrichGebert/ponytail/main/assets/logo.png",
       "avatar": "https://avatars.githubusercontent.com/u/137048761?v=4",
-      "stars": 174672,
-      "forks": 9512,
+      "stars": 174782,
+      "forks": 9515,
       "language": "JavaScript",
       "license": "MIT",
       "topics": [
@@ -1875,14 +1955,14 @@
       ],
       "repo": "DietrichGebert/ponytail",
       "ideaDomain": "agents",
-      "metric": "174,672 نجمة GitHub",
+      "metric": "174,782 نجمة GitHub",
       "gallery": [
         "https://raw.githubusercontent.com/DietrichGebert/ponytail/main/assets/logo.png",
         "https://raw.githubusercontent.com/DietrichGebert/ponytail/main/assets/stories-banner.png",
         "https://raw.githubusercontent.com/DietrichGebert/ponytail/main/assets/v5/hero.jpg"
       ],
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 68.3
+      "score": 68.08
     },
     {
       "id": "272ca529595ace68cc",
@@ -1902,7 +1982,7 @@
       "metric": "58 نقطة · 6 تعليق",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 67.69
+      "score": 65.89
     },
     {
       "id": "012cd304d8265ea55d",
@@ -1917,8 +1997,8 @@
       "publishedAt": "2026-10-18T20:30:02+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/328144346?v=4",
-      "stars": 74595,
-      "forks": 7753,
+      "stars": 74594,
+      "forks": 7754,
       "language": "Python",
       "license": "NOASSERTION",
       "topics": [
@@ -1935,9 +2015,9 @@
       ],
       "repo": "openbq-org/OpenBB",
       "ideaDomain": "agents",
-      "metric": "74,595 نجمة GitHub",
+      "metric": "74,594 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 65.4
+      "score": 65.1
     },
     {
       "id": "b37a6534812561ec2b",
@@ -1978,8 +2058,8 @@
       "publishedAt": "2026-10-02T14:55:52+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/5618407?v=4",
-      "stars": 107156,
-      "forks": 16499,
+      "stars": 107165,
+      "forks": 16500,
       "language": "Jupyter Notebook",
       "license": "NOASSERTION",
       "topics": [
@@ -1996,7 +2076,7 @@
       ],
       "repo": "rasbt/LLMs-from-scratch",
       "ideaDomain": "inference",
-      "metric": "107,156 نجمة GitHub",
+      "metric": "107,165 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
       "score": 63.6
     },
@@ -2013,8 +2093,8 @@
       "publishedAt": "2026-10-19T02:45:09+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/962416?v=4",
-      "stars": 44297,
-      "forks": 5237,
+      "stars": 44296,
+      "forks": 5238,
       "language": "Lua",
       "license": "Apache-2.0",
       "topics": [
@@ -2031,9 +2111,29 @@
       ],
       "repo": "Kong/kong",
       "ideaDomain": "inference",
-      "metric": "44,297 نجمة GitHub",
+      "metric": "44,296 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 63.05
+      "score": 62.72
+    },
+    {
+      "id": "5cc99ef91beee0160c",
+      "kind": "news",
+      "title": "No Source Code? No Problem",
+      "description": "موضوع تقني يحظى بنقاش على Hacker News. افتح المصدر الأساسي لمعرفة التفاصيل، ثم راجع النقاش لآراء المطورين.",
+      "impact": "مؤشر التفاعل هنا يعتمد على التصويتات والتعليقات الفعلية في Hacker News، وليس عدد المشاهدات.",
+      "url": "https://queue.acm.org/doi/10.1145/945131.945155",
+      "source": "Hacker News",
+      "category": "تقنيات",
+      "region": "عالمي",
+      "publishedAt": "2026-10-23T20:38:06+00:00",
+      "image": "",
+      "points": 23,
+      "comments": 14,
+      "hnUrl": "https://news.ycombinator.com/item?id=50214994",
+      "metric": "23 نقطة · 14 تعليق",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-10-23T23:36:44+00:00",
+      "score": 62.47
     },
     {
       "id": "29e0b324361fbc109f",
@@ -2048,8 +2148,8 @@
       "publishedAt": "2026-09-18T07:16:11+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/128464815?v=4",
-      "stars": 77757,
-      "forks": 9299,
+      "stars": 77769,
+      "forks": 9300,
       "language": "Python",
       "license": "غير محدد",
       "topics": [
@@ -2066,7 +2166,7 @@
       ],
       "repo": "ComposioHQ/awesome-claude-skills",
       "ideaDomain": "agents",
-      "metric": "77,757 نجمة GitHub",
+      "metric": "77,769 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
       "score": 61.43
     },
@@ -2096,6 +2196,26 @@
       "metric": "نجوم مستودع — بيانات تعريفية"
     },
     {
+      "id": "d82e7cc672e929a3b3",
+      "kind": "news",
+      "title": "A whirlwind tour of systemd-nspawn containers",
+      "description": "موضوع تقني يحظى بنقاش على Hacker News. افتح المصدر الأساسي لمعرفة التفاصيل، ثم راجع النقاش لآراء المطورين.",
+      "impact": "مؤشر التفاعل هنا يعتمد على التصويتات والتعليقات الفعلية في Hacker News، وليس عدد المشاهدات.",
+      "url": "https://quantum5.ca/2025/03/22/whirlwind-tour-of-systemd-nspawn-containers/",
+      "source": "Hacker News",
+      "category": "تقنيات",
+      "region": "عالمي",
+      "publishedAt": "2026-10-23T20:37:12+00:00",
+      "image": "",
+      "points": 21,
+      "comments": 3,
+      "hnUrl": "https://news.ycombinator.com/item?id=50214983",
+      "metric": "21 نقطة · 3 تعليق",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-10-23T23:36:44+00:00",
+      "score": 58.98
+    },
+    {
       "id": "be074fe101e39b9e92",
       "kind": "news",
       "title": "We have traits at home",
@@ -2113,27 +2233,178 @@
       "metric": "31 نقطة · 8 تعليق",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 57.63
+      "score": 56.21
     },
     {
-      "id": "137545da4da1bffd24",
+      "id": "585ea363f084ac1617",
       "kind": "news",
-      "title": "Air Purifiers as White Noise Machines",
-      "description": "موضوع تقني يحظى بنقاش على Hacker News. افتح المصدر الأساسي لمعرفة التفاصيل، ثم راجع النقاش لآراء المطورين.",
-      "impact": "مؤشر التفاعل هنا يعتمد على التصويتات والتعليقات الفعلية في Hacker News، وليس عدد المشاهدات.",
-      "url": "https://www.jefftk.com/p/air-purifiers-as-white-noise-machines",
-      "source": "Hacker News",
+      "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
+      "description": "OpenAI will cut frontier models off from the internet weeks after one of its engineers said that solution wouldn't work.",
+      "impact": "تحليل مبدئي: راجع المصدر لفهم الآثار التقنية والإعلان الكامل، فقد تختلف النتائج بحسب الاستخدام.",
+      "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+      "source": "تقارير الذكاء الاصطناعي",
+      "category": "ذكاء اصطناعي",
+      "region": "عالمي",
+      "publishedAt": "2026-10-23T23:05:49+00:00",
+      "image": "",
+      "points": 0,
+      "comments": 0,
+      "metric": "التقدير: حداثة ومصدر",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-10-23T23:36:44+00:00",
+      "score": 35.78
+    },
+    {
+      "id": "1e55c29e6e1a3d35fd",
+      "kind": "news",
+      "title": "Hottest toy for Christmas? Nvidia CEO plays with adorable Microduck robots, 20,000 sell",
+      "description": "The robots, stomping their little feet and making tiny R2-D2 noises, sat, fell down dead for a \"nap,\" and summersaulted on voice command.",
+      "impact": "تحليل مبدئي: راجع المصدر لفهم الآثار التقنية والإعلان الكامل، فقد تختلف النتائج بحسب الاستخدام.",
+      "url": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
+      "source": "تقارير الذكاء الاصطناعي",
+      "category": "ذكاء اصطناعي",
+      "region": "عالمي",
+      "publishedAt": "2026-10-23T21:59:19+00:00",
+      "image": "",
+      "points": 0,
+      "comments": 0,
+      "metric": "التقدير: حداثة ومصدر",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-10-23T23:36:44+00:00",
+      "score": 35.3
+    },
+    {
+      "id": "7bee3a3c9519ed80c3",
+      "kind": "news",
+      "title": "Xbox’s first chief operating officer is out after just a few months",
+      "description": "Xbox's first chief operating officer (COO) is leaving after the new role was created just a few months ago. Helen Chiang is leaving Microsoft today, according to an internal Xbox memo seen by The Verge. Chiang has been at Microsoft for 21 years, serving as the head of Minecraft before being promoted to Xbox chief [...]",
+      "impact": "تحليل مبدئي: راجع المصدر لفهم الآثار التقنية والإعلان الكامل، فقد تختلف النتائج بحسب الاستخدام.",
+      "url": "https://www.theverge.com/news/1018037/xbox-chief-operating-officer-helen-chiang-departure",
+      "source": "أخبار التقنية",
       "category": "تقنيات",
       "region": "عالمي",
-      "publishedAt": "2026-10-23T17:28:36+00:00",
+      "publishedAt": "2026-10-23T21:56:03+00:00",
       "image": "",
-      "points": 9,
-      "comments": 7,
-      "hnUrl": "https://news.ycombinator.com/item?id=50212507",
-      "metric": "9 نقطة · 7 تعليق",
+      "points": 0,
+      "comments": 0,
+      "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
-      "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 54.57
+      "firstSeenAt": "2026-10-23T23:36:44+00:00",
+      "score": 35.28
+    },
+    {
+      "id": "a6d2d5fdb7657f8a34",
+      "kind": "news",
+      "title": "OpenAI now trains its frontier AI models with no internet access",
+      "description": "OpenAI is now training its most advanced AI models without internet access following a string of rogue hacking incidents. In a blog post on Friday, OpenAI says it built an offline testing environment where AI models can interact with indexed and cached web content \"without risk of affecting external systems.\" OpenAI paused training its frontier [...]",
+      "impact": "تحليل مبدئي: راجع المصدر لفهم الآثار التقنية والإعلان الكامل، فقد تختلف النتائج بحسب الاستخدام.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet",
+      "source": "أخبار التقنية",
+      "category": "ذكاء اصطناعي",
+      "region": "عالمي",
+      "publishedAt": "2026-10-23T21:11:07+00:00",
+      "image": "",
+      "points": 0,
+      "comments": 0,
+      "metric": "التقدير: حداثة ومصدر",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-10-23T23:36:44+00:00",
+      "score": 34.96
+    },
+    {
+      "id": "0be7c88c90f7c18249",
+      "kind": "news",
+      "title": "طالبة بجامعة الطائف تدمج الابتكار وريادة الأعمال في مسيرة هندسية واعدة - https://alsaudi.news/",
+      "description": "طالبة بجامعة الطائف تدمج الابتكار وريادة الأعمال في مسيرة هندسية واعدة https://alsaudi.news/",
+      "impact": "تحليل مبدئي: راجع المصدر لفهم الآثار التقنية والإعلان الكامل، فقد تختلف النتائج بحسب الاستخدام.",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5rVFFiTE8ySFYzMzhlX25RZHk5cU5RZlprYjl3Mm1sdlB0ZkQ4TWNNLURFUUl5NVNSNnFoeVNDTm1wYUU2QnZtU2IwZV94eVVO?oc=5",
+      "source": "https://alsaudi.news/",
+      "category": "السعودية",
+      "region": "السعودية",
+      "publishedAt": "2026-10-23T21:00:26+00:00",
+      "image": "",
+      "points": 0,
+      "comments": 0,
+      "metric": "التقدير: حداثة ومصدر",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-10-23T23:36:44+00:00",
+      "score": 34.88
+    },
+    {
+      "id": "3be5f2059474b551ba",
+      "kind": "news",
+      "title": "Abandoned Popcorn Time apps had to be disabled to prevent a zombie army",
+      "description": "Remember Popcorn Time, the app that served as an easy-to-use front end for streaming torrents of movies and TV shows? Development of the MPAA's least-favorite app of the 2010s has been abandoned for years, but the \"Netflix of Piracy\" software is still installed on millions of devices that are just waiting to join a bot [...]",
+      "impact": "تحليل مبدئي: راجع المصدر لفهم الآثار التقنية والإعلان الكامل، فقد تختلف النتائج بحسب الاستخدام.",
+      "url": "https://www.theverge.com/tech/1017914/popcorn-time-piracy-botnet-avoided",
+      "source": "أخبار التقنية",
+      "category": "تقنيات",
+      "region": "عالمي",
+      "publishedAt": "2026-10-23T19:35:15+00:00",
+      "image": "",
+      "points": 0,
+      "comments": 0,
+      "metric": "التقدير: حداثة ومصدر",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-10-23T23:36:44+00:00",
+      "score": 34.29
+    },
+    {
+      "id": "60b56cc3037dbda3a9",
+      "kind": "news",
+      "title": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
+      "description": "Jack Dorsey's Block announced an AI model called Dessa that's trained \"from scratch on nothing but human conversation,\" and to show off the model, Block shared chats it has had with humans that can occasionally be a little awkward and uncanny. Take this one, for example, shared by Dessa lead Ragavan Thurairatnam. The conversation between [...]",
+      "impact": "تحليل مبدئي: راجع المصدر لفهم الآثار التقنية والإعلان الكامل، فقد تختلف النتائج بحسب الاستخدام.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
+      "source": "أخبار التقنية",
+      "category": "ذكاء اصطناعي",
+      "region": "عالمي",
+      "publishedAt": "2026-10-23T19:32:39+00:00",
+      "image": "",
+      "points": 0,
+      "comments": 0,
+      "metric": "التقدير: حداثة ومصدر",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-10-23T23:36:44+00:00",
+      "score": 34.28
+    },
+    {
+      "id": "ee2e831789272c82ec",
+      "kind": "news",
+      "title": "«ماستركارد»: الذكاء الاصطناعي يعيد تشكيل مستقبل المدفوعات والتجارة في السعودية - الشرق الأوسط",
+      "description": "«ماستركارد»: الذكاء الاصطناعي يعيد تشكيل مستقبل المدفوعات والتجارة في السعودية الشرق الأوسط",
+      "impact": "تحليل مبدئي: راجع المصدر لفهم الآثار التقنية والإعلان الكامل، فقد تختلف النتائج بحسب الاستخدام.",
+      "url": "https://news.google.com/rss/articles/CBMitwVBVV95cUxPT2FkR0xxeFVHdmN0T2RZc2FlM0cyeGFyRUlfZGJlWm9uaGtaS3RHdXJUTFRodnBjVVNfbHZ0dHRIb0Fxa0hYWWF0VnhSOWZHb1EtQlVqNnRJaWhfc01PWDhaUHNrNWtWcGJoSHo0TGVucWNVSWJzbWhVZ2NPS2M0Ym90ZGdhNm5iOGM2ZW5VNExHbUFhanN3QnN6VmFCa3N0Nm1CNUFTQzJtUXR3NmNMU0g0d0VuLTNaUmtsOWxQOGV3cEtROHAzRFRvai1iRWJIRFNITFdMVG1VbEw5bnhPWWpCblFZeHFYVUI0ZmZPSkJ6NTlKaXpSU3ZjTkhiUy1ncDhwa0djU04telJRblktSU1PLS14MkVlSThzaG5pNFlGenc3Q2w4b0dNQzZJLTEyME9sV09WQ1lHanFqNWJ1WEdUSWp1OUNKYUc5WGU1cnR2YlM2b0U3R2tuNzNlaFlGM3F0SVd0X1JsVFY5NXNYT0JCdGV6MmZjdjFUeWhKTkhIVV9hbW02UFBHbHBEUS1HOENIdmRtOUp5bENWci0tX3FLTU9QaG5iNDdlUHdXSzdWNl9QRnVkX3BBWkc4cGQzWi1lWGtjRkd6NGlrVlJNZmw2VTltemVuTHdVRHNTVnVlN0xSamtIcW9yQ0tDcWpDVVVmc0JsQVE5cnNHWXBPMFRydzRpUlNMa2lNVmEzUWhoc3pDdlY4d2RPbDE4NmYzcXF3YmVKcVZyRU9EZVVSQ0JJZWlpbHdRN19aejRfd3dLcnZzYjVUOVNnWm4yajVfNU43NGd1OE5fYlBnSVM2dDhkTl8wWEV3S0REWTlxX19fYkdOTWFkVEtvZU82dktfVkMxa1AybDRMZVAxZGhUd2otQ0JGS21BckIwQkl2WVlabG91TjFjQ080Z1lVMHBtZjRFV3FpSQ?oc=5",
+      "source": "الشرق الأوسط",
+      "category": "السعودية",
+      "region": "السعودية",
+      "publishedAt": "2026-10-23T19:19:57+00:00",
+      "image": "",
+      "points": 0,
+      "comments": 0,
+      "metric": "التقدير: حداثة ومصدر",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-10-23T23:36:44+00:00",
+      "score": 34.19
+    },
+    {
+      "id": "e8fbd857a8b6b0ff95",
+      "kind": "news",
+      "title": "From Toast to Bessemer: Who founders will hear from at TechCrunch Founder Summit 2026",
+      "description": "Hosted by TechCrunch in partnership with Fidelity Private Shares, the full-day event goes beyond fundraising and AI to explore the realities of finding customers, building teams, sharpening a pitch, developing founder leadership, and scaling companies both inside and outside traditional startup hubs.",
+      "impact": "تحليل مبدئي: راجع المصدر لفهم الآثار التقنية والإعلان الكامل، فقد تختلف النتائج بحسب الاستخدام.",
+      "url": "https://techcrunch.com/2026/10/23/from-toast-to-bessemer-who-founders-will-hear-from-at-techcrunch-founder-summit-2026/",
+      "source": "تقارير الذكاء الاصطناعي",
+      "category": "ذكاء اصطناعي",
+      "region": "عالمي",
+      "publishedAt": "2026-10-23T19:06:23+00:00",
+      "image": "",
+      "points": 0,
+      "comments": 0,
+      "metric": "التقدير: حداثة ومصدر",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-10-23T23:36:44+00:00",
+      "score": 34.1
     },
     {
       "id": "75c55b9c071dc270e1",
@@ -2152,7 +2423,46 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 35.86
+      "score": 33.94,
+      "hnUrl": ""
+    },
+    {
+      "id": "9550bc9bbf390daa01",
+      "kind": "news",
+      "title": "«فيزا»: الذكاء الاصطناعي يغيّر قواعد التسوق في السعودية - الشرق الأوسط",
+      "description": "«فيزا»: الذكاء الاصطناعي يغيّر قواعد التسوق في السعودية الشرق الأوسط",
+      "impact": "تحليل مبدئي: راجع المصدر لفهم الآثار التقنية والإعلان الكامل، فقد تختلف النتائج بحسب الاستخدام.",
+      "url": "https://news.google.com/rss/articles/CBMijARBVV95cUxQSGJySjZvellveXRJMWhOMWU2UjM4Y19VUURNbEpPVHoxc1hxdlpoMnA3TWhyTU8xZFFiTlRrRERVSnVQN0dNZzRlWVMwaTBJakRoY0xKbERkdDhOUnhyVnp1bjdWLTFtVGpmSHpwUWxlQVNLTHhNdUJLZlZjT2FOZjYyQWtwZzBZSGRabmpTZHpxT2FZMGxhNlpxM1NUMjhMbGlqVWZ6b21ZeUJSV3BKQTJzU1d3dVhKcmRPaWtKY0RVRGMxd2tDUnFRRXVSejdEWmd3MGh4UWhDcEdFczJCdFJXRE9peGVTY3ZsRE9QbEVKa0IzTm5tSWNxd25qUjZSai1IdnVVcFBaN296aEF2LTFpNk1nYWd5QklaVV9PY09Fc3FGbVpreXpNVGl1Q284eFpmaEV0M2pkdEN6bUZUWW4wckJwRlpTclZqVnJpSkFndVJVWlg5VVR0aFZuX1ZfRFREQ0luSkQxRmNJbDl4ZzMtRXQwaUtqOVR3X2RrOEdrSzh3MGtXSnAzSEp1QVBmSjNKc2h4LU01X1FmU0Z5S3hhVlBlcTA0Vk1sRHdmYkI3Y1NBUTdPZDNRYUVwU21OckhWTndBWWZvdDFpYlptTzA0MS1hODZwYTYzQzdnM0J2QUtJcXV5M3BYcXYyVTloc0NUMUxGR3BjUWRiQ09qY0E0Q0g4TGtEYThDWg?oc=5",
+      "source": "الشرق الأوسط",
+      "category": "السعودية",
+      "region": "السعودية",
+      "publishedAt": "2026-10-23T18:26:01+00:00",
+      "image": "",
+      "points": 0,
+      "comments": 0,
+      "metric": "التقدير: حداثة ومصدر",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-10-23T23:36:44+00:00",
+      "score": 33.82
+    },
+    {
+      "id": "d5df8878ad5e8b1cc9",
+      "kind": "news",
+      "title": "مبادرة وزارة الإعلام وهيئة الحكومة الرقمية لمواجهة المحتوى المضلل - صحيفة أحوال الإلكترونية",
+      "description": "مبادرة وزارة الإعلام وهيئة الحكومة الرقمية لمواجهة المحتوى المضلل صحيفة أحوال الإلكترونية",
+      "impact": "تحليل مبدئي: راجع المصدر لفهم الآثار التقنية والإعلان الكامل، فقد تختلف النتائج بحسب الاستخدام.",
+      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE41X2U4N2g3MDY1SmwzNl9yV0tOLW9acG9KMWdWU0U3MTlkb3FPVkg2Z216UlVIUU5lcUR1X3pIaWNsbkxZUzYw?oc=5",
+      "source": "صحيفة أحوال الإلكترونية",
+      "category": "السعودية",
+      "region": "السعودية",
+      "publishedAt": "2026-10-23T18:18:49+00:00",
+      "image": "",
+      "points": 0,
+      "comments": 0,
+      "metric": "التقدير: حداثة ومصدر",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-10-23T23:36:44+00:00",
+      "score": 33.78
     },
     {
       "id": "af25e18e067870e7ec",
@@ -2171,7 +2481,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 35.51
+      "score": 33.62,
+      "hnUrl": ""
     },
     {
       "id": "aa49bacb391d5f2a09",
@@ -2190,7 +2501,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 35.47
+      "score": 33.58,
+      "hnUrl": ""
     },
     {
       "id": "24c8b8c3e7a4bc871c",
@@ -2209,7 +2521,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 35.37
+      "score": 33.48,
+      "hnUrl": ""
     },
     {
       "id": "24257eb08dcdecc952",
@@ -2228,7 +2541,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 35.3
+      "score": 33.43
     },
     {
       "id": "78beb7d4f0fc9b713a",
@@ -2247,7 +2560,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 35.3
+      "score": 33.43,
+      "hnUrl": ""
     },
     {
       "id": "49ed1c1053b02f84e0",
@@ -2266,7 +2580,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 35.21
+      "score": 33.34
     },
     {
       "id": "1bb40ddffcb6c2abe1",
@@ -2285,26 +2599,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 35.12
-    },
-    {
-      "id": "a9526976eeebfbfe11",
-      "kind": "news",
-      "title": "Now Google says it might use your Gmail and Google Photos data to target ads",
-      "description": "Google has updated its privacy policy in a way that could mean you'll start seeing targeted ads based on your personal data if you're using personalized AI features. The update, spotted by Android Authority, adds an exception to its promise about not using your Drive, Gmail, or Google Photos for personalized ads. While the previous [...]",
-      "impact": "تحليل مبدئي: راجع المصدر لفهم الآثار التقنية والإعلان الكامل، فقد تختلف النتائج بحسب الاستخدام.",
-      "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
-      "source": "أخبار التقنية",
-      "category": "تقنيات",
-      "region": "عالمي",
-      "publishedAt": "2026-10-23T16:52:55+00:00",
-      "image": "",
-      "points": 0,
-      "comments": 0,
-      "metric": "التقدير: حداثة ومصدر",
-      "ideaDomain": "general",
-      "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 35.07
+      "score": 33.25,
+      "hnUrl": ""
     },
     {
       "id": "374a21eda7a60ae88f",
@@ -2323,7 +2619,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 35.04
+      "score": 33.19
     },
     {
       "id": "f8128debaf49fe448f",
@@ -2342,7 +2638,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 34.94
+      "score": 33.09
     },
     {
       "id": "5b6e1f63a4b17b170a",
@@ -2361,7 +2657,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 34.66
+      "score": 32.83,
+      "hnUrl": ""
     },
     {
       "id": "1c4c058fed23de14d2",
@@ -2380,7 +2677,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 34.6
+      "score": 32.77,
+      "hnUrl": ""
     },
     {
       "id": "1dbe5bcf48a5254135",
@@ -2399,7 +2697,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 34.32
+      "score": 32.51
     },
     {
       "id": "b2570b7e5d2e6953db",
@@ -2418,7 +2716,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 34.3
+      "score": 32.5,
+      "hnUrl": ""
     },
     {
       "id": "5ef49bc5a79bf96023",
@@ -2437,7 +2736,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 34.25
+      "score": 32.45
     },
     {
       "id": "7aa6acbd35f79e1aa6",
@@ -2456,7 +2755,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 34.2
+      "score": 32.4
     },
     {
       "id": "1882ee0b35404cb8c7",
@@ -2475,7 +2774,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 33.57
+      "score": 31.82
     },
     {
       "id": "8ec214f5ccf0457501",
@@ -2495,7 +2794,7 @@
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
       "hnUrl": "",
-      "score": 33.55
+      "score": 31.79
     },
     {
       "id": "a78322856824628d2e",
@@ -2514,7 +2813,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 33.47
+      "score": 31.72
     },
     {
       "id": "15f4ee47005eec90e6",
@@ -2533,7 +2832,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 33.2
+      "score": 31.46
     },
     {
       "id": "62bf0fe3902984be6b",
@@ -2552,7 +2851,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 33.16
+      "score": 31.43,
+      "hnUrl": ""
     },
     {
       "id": "3b9c66a4726867b902",
@@ -2571,7 +2871,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 32.99
+      "score": 31.27,
+      "hnUrl": ""
     },
     {
       "id": "0de8ea747a58d98be0",
@@ -2590,7 +2891,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 32.93
+      "score": 31.22,
+      "hnUrl": ""
     },
     {
       "id": "dcaaa123f85b6a7946",
@@ -2609,7 +2911,27 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 32.69
+      "score": 31.0,
+      "hnUrl": ""
+    },
+    {
+      "id": "5f200ae798dcb8ea7a",
+      "kind": "news",
+      "title": "\"دو\" تنال 9 جوائز في قمة \"تيليكوم ريفيو 2026\" - صحيفة الخليج",
+      "description": "\"دو\" تنال 9 جوائز في قمة \"تيليكوم ريفيو 2026\" صحيفة الخليج",
+      "impact": "تحليل مبدئي: راجع المصدر لفهم الآثار التقنية والإعلان الكامل، فقد تختلف النتائج بحسب الاستخدام.",
+      "url": "https://news.google.com/rss/articles/CBMi2gNBVV95cUxOaEdfWVJKNlprQUppS3ladGY4MS03Vk4xS3VqRE9SLWdQX2hqRXJ3anA4MTE4VHA1VzdFenlJSG9VWXdOUi15UkQ1a1J3VGZWRDVkWU9HVTJWd3VDTlVLQVBYVkFVUElWMDZoYTJESzItQzljMWwwZjJlODZNa21hcmd4c08xN0U4NmZRZmdwMXhWal9uYTRzYXNUZVg1TGVtcFpXUnVBZjRNVHRRNmpNdXlfRlByQ2JyTk1LaUFkM3FDYWhQSFNpRXNIUU1MZ3N2NVF1UWZEOEZtMks0d1licEpfRU5waHVKMDdCQUJiVzh4YXpLQ19vS0dxRFlMSEJqMkg5cVBEWkJVaUVhQzN2T1J2aS1mMlJTR2hKT05FOEt0NmJXZU1Rb0FTMWVCLUZITzlxSTJQZFktOHA3Ylp4WGN6OEFRWGh3cjVxanA5akllYjdPdGY1VDRZdTQ0aDZQbEJHQVQtVEVydEs3Y08zMURQbmxHSkRQa0hlZGhWVGJqVUhlRTVIbjVQN0Jjc1k1RHJzbHFPa0VpWVpyNkt4M29WakNUUU41dVBtSDNVbmIteGdpeWdadVlGSWY0OF83Wl9sNFd3M2VvWm4yc21nSDZwdmU5N2ZqZ3c?oc=5",
+      "source": "صحيفة الخليج",
+      "category": "فرص",
+      "region": "السعودية",
+      "publishedAt": "2026-10-23T10:25:39+00:00",
+      "image": "",
+      "points": 0,
+      "comments": 0,
+      "metric": "التقدير: حداثة ومصدر",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-10-23T23:36:44+00:00",
+      "score": 30.79
     },
     {
       "id": "d2f5a121c8cb5ca126",
@@ -2628,7 +2950,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 32.13
+      "score": 30.47,
+      "hnUrl": ""
     },
     {
       "id": "03e068836b9fa94d9f",
@@ -2647,7 +2970,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 32.11
+      "score": 30.46,
+      "hnUrl": ""
     },
     {
       "id": "9864efffed7421bc0f",
@@ -2666,7 +2990,26 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 31.77
+      "score": 30.13
+    },
+    {
+      "id": "9a13c4d369381aabb0",
+      "kind": "news",
+      "title": "وكلاء الذكاء الاصطناعي ينضمون إلى سباق البحث عن لقمة العيش - الشرق بلومبرغ",
+      "description": "وكلاء الذكاء الاصطناعي ينضمون إلى سباق البحث عن لقمة العيش الشرق بلومبرغ",
+      "impact": "تحليل مبدئي: راجع المصدر لفهم الآثار التقنية والإعلان الكامل، فقد تختلف النتائج بحسب الاستخدام.",
+      "url": "https://news.google.com/rss/articles/CBMi7gNBVV95cUxPb1ZsbncySS1mZ01HTFc2a3pzcW5YeU15M1JRQzg4N2l4a1AweFlPVkd4blMxak5qX0VDY0VPLWJJVTd4UUNuU3dXOUN5eWtaaDhyTEd4TXFOaFAzUlN3ZlVFcC1kTDhXS0hPVlhlUTB5WUhPUThMMFJJZk5MV3Y5dzhXWjUwZ0d1TTJHVC1IMHFqTUwtRHBNSFpFY3B4WV9vQ0YtbHM3dmd0aHZpZmtLbXFXYkN3SE5pRWxJRVpCZzNTNDNjNF9OcUVsa25XY2FSU05VTmpsdlVXQ1QwVmEyQy1sUHFhYVplSzV2b3dwY1d6Qm9SNV9ncGk2Rm5wR1dDS3FJTk5Pd0tBRXV1WVBRUHExY1hoalBjSDdsUVAzOElhXzVmdlZwc3JGdks0dlY5MjA0TjRJaVZKckxTT0N6Y19KbEZOQW9QSXRoZE1aeEhzR1IzTEI2Q3FsSjFUaERhbTQxU2l0YnpteUtzYWl5NXAxaTFFNjRVdDcwbUhfN29oNDgxb2V4dG8xU0phRjdtS2NTWkJCcm9WZzJuQW44QnpuaUNlaDJ6UjZHdUtVVnBieTZyeTZzMHVPajJJWW5jN3JrUU5OUHZwSkhZQ1drVGgzSWpveHhMZ2VBYnM4R2tTNXIxY01VRGRmaGlTZw?oc=5",
+      "source": "الشرق بلومبرغ",
+      "category": "السعودية",
+      "region": "السعودية",
+      "publishedAt": "2026-10-23T08:25:24+00:00",
+      "image": "",
+      "points": 0,
+      "comments": 0,
+      "metric": "التقدير: حداثة ومصدر",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-10-23T23:36:44+00:00",
+      "score": 30.08
     },
     {
       "id": "a2a3b32ad25f809208",
@@ -2685,7 +3028,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 31.28
+      "score": 29.68,
+      "hnUrl": ""
     },
     {
       "id": "a7accba60e26585f77",
@@ -2704,7 +3048,27 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 31.12
+      "score": 29.53,
+      "hnUrl": ""
+    },
+    {
+      "id": "77b067441e230f392a",
+      "kind": "news",
+      "title": "نائب الرئيس جبران يدعم تدريب الذكاء الاصطناعي والأمن السيبراني للطلاب - VOI.ID",
+      "description": "نائب الرئيس جبران يدعم تدريب الذكاء الاصطناعي والأمن السيبراني للطلاب VOI.ID",
+      "impact": "تحليل مبدئي: راجع المصدر لفهم الآثار التقنية والإعلان الكامل، فقد تختلف النتائج بحسب الاستخدام.",
+      "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9qU3pfeEkwSC1CTWZKc2lqOHB6LTRRZzV2RXBtVWt2MWg5bldPSF9OcmNQN2xOQWVEUWdpUWhQZUxRQTjSAUJBVV95cUxPUnhOeTdXdGJsRGx4cGF3cU5weTBZZ2N2LXVZSmZteXNjMmNRMTFJZkhBQWI3TUsyaVpSVmNBUGpqNHc?oc=5",
+      "source": "VOI.ID",
+      "category": "فرص",
+      "region": "السعودية",
+      "publishedAt": "2026-10-23T06:14:44+00:00",
+      "image": "",
+      "points": 0,
+      "comments": 0,
+      "metric": "التقدير: حداثة ومصدر",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-10-23T23:36:44+00:00",
+      "score": 29.35
     },
     {
       "id": "ad858d5150de79be8c",
@@ -2723,7 +3087,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "c35b3ef79c92279b18",
@@ -2742,7 +3107,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "f5ebfafb83c6121bc9",
@@ -2761,7 +3127,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "071ab93645637197f5",
@@ -2780,7 +3147,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "d8639c0b4eb9ace31e",
@@ -2799,7 +3167,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "50cf62209b129a401a",
@@ -2818,7 +3187,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "74655899d2c02f414a",
@@ -2837,7 +3207,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "15be2ff317bed24c0d",
@@ -2856,7 +3227,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "87880261304ab6a630",
@@ -2875,7 +3247,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "9050b7c4e37f6fb72c",
@@ -2894,7 +3267,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "cedb0cbac88c02cdee",
@@ -2913,7 +3287,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "ed9e613c992f87fccd",
@@ -2932,7 +3307,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "f991937645caaaa57d",
@@ -2951,7 +3327,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "7abf54d264835d444f",
@@ -2970,7 +3347,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "c33cf34840ad5759f7",
@@ -2989,7 +3367,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "c3015f7c250cd700fd",
@@ -3008,7 +3387,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "4de5b7368a607f9e9a",
@@ -3027,7 +3407,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "6838e85e8517e0afdc",
@@ -3046,7 +3427,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "4cd0d3a23be15a1e65",
@@ -3065,7 +3447,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "a6442d2eaa69aff011",
@@ -3084,7 +3467,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "07755911b2e46dc29e",
@@ -3103,7 +3487,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "ff02c0290aa26d0355",
@@ -3122,7 +3507,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "4db8131df544b50378",
@@ -3141,7 +3527,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "30c10e5d8ae6fce364",
@@ -3160,7 +3547,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "dccae9368aa1166cf3",
@@ -3179,7 +3567,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "cb8fedecbe8959e7e8",
@@ -3198,7 +3587,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "2ec9c99b92324431b5",
@@ -3217,7 +3607,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "63a341fd8a6543fc70",
@@ -3236,7 +3627,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "cbb7fb1851d2fdaa32",
@@ -3255,7 +3647,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "2017be142f7edddecd",
@@ -3274,7 +3667,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "8ae5cfb1a46e38dbde",
@@ -3293,7 +3687,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "84ff67f6a714b9092e",
@@ -3312,7 +3707,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "999578327a07cb5194",
@@ -3331,7 +3727,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "c36a7ebcd0bd12a0b2",
@@ -3350,7 +3747,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "25ead8f4a067714660",
@@ -3369,7 +3767,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "7070b65bc1783e04cf",
@@ -3388,7 +3787,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "e24e6f5d77b048f4b7",
@@ -3407,7 +3807,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "72ecbaa02ed9b66fd1",
@@ -3426,7 +3827,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "5c353291947b339709",
@@ -3445,7 +3847,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "369a9035e60f6c7362",
@@ -3464,7 +3867,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "64071f0b701f8c945e",
@@ -3483,7 +3887,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "e1fe9356232251923a",
@@ -3502,7 +3907,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "a6e4c169b714bb92ec",
@@ -3521,7 +3927,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "d84542ae98ef1c20e4",
@@ -3540,7 +3947,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "bc879166c461ea1e3d",
@@ -3559,7 +3967,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "4c8579c757eb87e175",
@@ -3578,7 +3987,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "c9b26c92a3fb75596e",
@@ -3597,7 +4007,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "a2fb8ff3e5ed26d8c4",
@@ -3616,7 +4027,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "daa95e5fc29234fe6b",
@@ -3635,7 +4047,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "1811d82a9e3f88c313",
@@ -3654,7 +4067,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "9df9c752e1cb17e9f8",
@@ -3673,7 +4087,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "32a2597d22fb8ceeef",
@@ -3692,7 +4107,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "0846446e81e0a9c520",
@@ -3711,7 +4127,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "cae638d30853341ecf",
@@ -3730,7 +4147,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "feca4440bb0a00bd07",
@@ -3749,7 +4167,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "32aa34137843a4b680",
@@ -3768,7 +4187,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "f0100e8b852032a4ec",
@@ -3787,7 +4207,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "483af999823ab94adc",
@@ -3806,7 +4227,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "3a4f7e733b8abac70e",
@@ -3825,7 +4247,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "fca390110ff2a97e5f",
@@ -3844,7 +4267,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "f2a06301db6dae986a",
@@ -3863,7 +4287,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "e5220d736a5c1487b7",
@@ -3882,7 +4307,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "f81a929a388461e024",
@@ -3901,7 +4327,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "ece75b7be05a90a1d0",
@@ -3920,7 +4347,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "166b6d7437be4dfdcd",
@@ -3939,7 +4367,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "64a5132b59899e293f",
@@ -3958,7 +4387,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "41efee3bf7a7ad1fa6",
@@ -3977,7 +4407,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "1848806b3d69f01b52",
@@ -3996,7 +4427,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "2b3099625e3ca3466b",
@@ -4015,7 +4447,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 30.13
+      "score": 28.61,
+      "hnUrl": ""
     },
     {
       "id": "fd25cd9d926cdad7a0",
@@ -4034,7 +4467,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 29.59
+      "score": 28.11,
+      "hnUrl": ""
     },
     {
       "id": "417801a0a19119b512",
@@ -4053,7 +4487,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 29.28
+      "score": 27.82,
+      "hnUrl": ""
     },
     {
       "id": "a6d2b02a9412fc6611",
@@ -4072,7 +4507,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 29.04
+      "score": 27.59,
+      "hnUrl": ""
     },
     {
       "id": "5d836c4aa8f684bd8e",
@@ -4091,7 +4527,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 28.23
+      "score": 26.84,
+      "hnUrl": ""
     },
     {
       "id": "b514b87bc64d3d9777",
@@ -4110,7 +4547,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 28.19
+      "score": 26.81,
+      "hnUrl": ""
     },
     {
       "id": "81acb21dd846e80475",
@@ -4129,7 +4567,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 28.12
+      "score": 26.73,
+      "hnUrl": ""
     },
     {
       "id": "addce266556e7af49b",
@@ -4148,7 +4587,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 27.96
+      "score": 26.59,
+      "hnUrl": ""
     },
     {
       "id": "c7e12a7218511ff6fb",
@@ -4168,7 +4608,26 @@
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
       "hnUrl": "",
-      "score": 27.95
+      "score": 26.58
+    },
+    {
+      "id": "38aa97942d3498cd16",
+      "kind": "news",
+      "title": "Rivian Automotive تستحوذ على Third Dimension AI لتعزيز تقنيات القيادة الذاتية - Investing.com",
+      "description": "Rivian Automotive تستحوذ على Third Dimension AI لتعزيز تقنيات القيادة الذاتية Investing.com",
+      "impact": "تحليل مبدئي: راجع المصدر لفهم الآثار التقنية والإعلان الكامل، فقد تختلف النتائج بحسب الاستخدام.",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE95VjdQUFZmdTJZSktrdjk0QXBhNVVudllOU2VqWjhIZGUyUVBGQ0R3YXkyRTViNldJMl94bjY3aTU1c29hVkF2RFppVFExRldOdEU5dzFtaV9jd3Frb2xxQjlkOTdidTdsdzFUR1o1LW4?oc=5",
+      "source": "Investing.com",
+      "category": "فرص",
+      "region": "السعودية",
+      "publishedAt": "2026-10-22T21:13:00+00:00",
+      "image": "",
+      "points": 0,
+      "comments": 0,
+      "metric": "التقدير: حداثة ومصدر",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-10-23T23:36:44+00:00",
+      "score": 26.54
     },
     {
       "id": "011f122a98f67e8ac4",
@@ -4187,7 +4646,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 27.7
+      "score": 26.34,
+      "hnUrl": ""
     },
     {
       "id": "662e68277c6361dd4b",
@@ -4206,7 +4666,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 27.26
+      "score": 25.94,
+      "hnUrl": ""
     },
     {
       "id": "bc877e349dd7871761",
@@ -4225,7 +4686,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 27.25
+      "score": 25.93,
+      "hnUrl": ""
     },
     {
       "id": "317abcdd1b20728a7e",
@@ -4244,7 +4706,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 27.23
+      "score": 25.91,
+      "hnUrl": ""
     },
     {
       "id": "575971a63ca3280440",
@@ -4263,7 +4726,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 27.23
+      "score": 25.91,
+      "hnUrl": ""
     },
     {
       "id": "d59b2eaa7e51da05f2",
@@ -4282,7 +4746,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 27.22
+      "score": 25.9,
+      "hnUrl": ""
     },
     {
       "id": "dedf2896ecdb4ab528",
@@ -4301,7 +4766,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 27.15
+      "score": 25.83,
+      "hnUrl": ""
     },
     {
       "id": "3c017e8efa2b292c99",
@@ -4321,7 +4787,7 @@
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
       "hnUrl": "",
-      "score": 26.93
+      "score": 25.63
     },
     {
       "id": "d471c6bb6bf40d1edb",
@@ -4340,7 +4806,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 26.79
+      "score": 25.5
     },
     {
       "id": "8cd0733fea934ee339",
@@ -4359,7 +4825,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 26.68
+      "score": 25.4,
+      "hnUrl": ""
     },
     {
       "id": "599ce531e5d078e669",
@@ -4378,7 +4845,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 26.62
+      "score": 25.34,
+      "hnUrl": ""
     },
     {
       "id": "4a3b6fc9b5d9ee7d57",
@@ -4397,7 +4865,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 26.58
+      "score": 25.3,
+      "hnUrl": ""
     },
     {
       "id": "d6886caf53962cb242",
@@ -4416,7 +4885,27 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 26.57
+      "score": 25.3,
+      "hnUrl": ""
+    },
+    {
+      "id": "cec27759a7073b03dc",
+      "kind": "news",
+      "title": "توقعات الذكاء الاصطناعي لمباراة الاتحاد ضد الدرعية في الدوري السعودي - شبكة تواصل الإخبارية",
+      "description": "توقعات الذكاء الاصطناعي لمباراة الاتحاد ضد الدرعية في الدوري السعودي شبكة تواصل الإخبارية",
+      "impact": "تحليل مبدئي: راجع المصدر لفهم الآثار التقنية والإعلان الكامل، فقد تختلف النتائج بحسب الاستخدام.",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5TZ2dBNW9IODl1QkJxeVdyOVFnS0tXYW5tTjNtZE91Y01ESUxpQ01NSzZJOXlGQlZNMzBMc09vRjhZTHdxU29HT2ZUQWNKME5JSUhB?oc=5",
+      "source": "شبكة تواصل الإخبارية",
+      "category": "السعودية",
+      "region": "السعودية",
+      "publishedAt": "2026-10-22T16:30:19+00:00",
+      "image": "",
+      "points": 0,
+      "comments": 0,
+      "metric": "التقدير: حداثة ومصدر",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-10-23T23:36:44+00:00",
+      "score": 25.22
     },
     {
       "id": "39a33fb977ec3f80a9",
@@ -4435,7 +4924,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 26.35
+      "score": 25.09,
+      "hnUrl": ""
     },
     {
       "id": "c27d18631a677ca76b",
@@ -4455,7 +4945,26 @@
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
       "hnUrl": "",
-      "score": 26.35
+      "score": 25.08
+    },
+    {
+      "id": "c679eddcd3fcc0cf1d",
+      "kind": "news",
+      "title": "نتيجة مباراة الهلال ضد القادسية.. الذكاء الاصطناعي يتوقع الفائز في قمة الدوري السعودي - 365Scores",
+      "description": "نتيجة مباراة الهلال ضد القادسية.. الذكاء الاصطناعي يتوقع الفائز في قمة الدوري السعودي 365Scores",
+      "impact": "تحليل مبدئي: راجع المصدر لفهم الآثار التقنية والإعلان الكامل، فقد تختلف النتائج بحسب الاستخدام.",
+      "url": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxNeXphRHpjOTFMVzlFQWtvYXNyQVc2MU9YQmhCT0hWVUJuSXR5UkFjRVRFcnZ1REJxODFIY19qQ3VNekFlSldvN3ZPY1I1WVZQT054UjFQSzI5anhRbEVXZUJIbGNZN2VpNmZBMEdMNklQZnJKendRaUNpem92Nm0yRjIyWnp2S2VMTXFBRkZoa3NFVmt4OThOZmdUYWR1UHRqTkF6Z0Q5OXY0NXpvUWg2OUdQOVdYVV9tTXpUdnZkT3JjSVpndWNZcWV1bGloNHpxUmhNVzV1OTk4MGVtZWJyeTloTXlKMEpIU0ZiaXZoTkNMWWtnb28wbXBwSS1JZGhaX1Z6RHZDQlV2R1ZCN0dqUmowelR5bGVDcmJrYUdVU1ZWc0s1a0RqYi16enN2UE5zVmJtNmxMV2lranJMRWFXVzFSSjlfaWQySldxU0E2WXhJWDBPUFRZNVFlcFFKUQ?oc=5",
+      "source": "365Scores",
+      "category": "السعودية",
+      "region": "السعودية",
+      "publishedAt": "2026-10-22T15:41:45+00:00",
+      "image": "",
+      "points": 0,
+      "comments": 0,
+      "metric": "التقدير: حداثة ومصدر",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-10-23T23:36:44+00:00",
+      "score": 25.01
     },
     {
       "id": "468f687a6a7ba14b55",
@@ -4474,7 +4983,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 26.21
+      "score": 24.96,
+      "hnUrl": ""
     },
     {
       "id": "ecbc490900eb69f7db",
@@ -4494,7 +5004,26 @@
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
       "hnUrl": "",
-      "score": 26.21
+      "score": 24.96
+    },
+    {
+      "id": "4a949b227c8618d1b9",
+      "kind": "news",
+      "title": "توقعات الذكاء الاصطناعي لنتيجة مباراة النصر ضد الفيصلي في الدوري السعودي - 365Scores",
+      "description": "توقعات الذكاء الاصطناعي لنتيجة مباراة النصر ضد الفيصلي في الدوري السعودي 365Scores",
+      "impact": "تحليل مبدئي: راجع المصدر لفهم الآثار التقنية والإعلان الكامل، فقد تختلف النتائج بحسب الاستخدام.",
+      "url": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxNaElhY2N1d2daT2o3dWpNeEc3Vkt4ZDg5N2NvXzI5LTJ2Sm1RWU1MNnBjTk1vRjNKb1ZWUXYyTkZpbEFncFVWeTYyc1pKTlloMC1qdkcyM2N5WHlIcDl1MVFNajdiTGtpZ2gxRC1HQ0NiWGNqQnI0elNQX0RlY1luM1RjTjFXWVNDb09NcVBVLXNFcTdFeWs3b2FHa2ZhdnFzMkN3ejgzQlVxOTBrMW5zQi0ydjVBQm9qeFlQNWpXaTRlMU5RVS1QLXRIVDM4YnVNZlg2dks0UHJQR193TTBIck5HSFhjR1FVMmlwcG1uVDNldEpoRjM5MkFBbU01VnBQMEQ5ZHB3TTFFUHhRUWpHdURkN2k2c18zbXhvUmN2YnUyUFpUTUV1TXZZUEh1dzZqWTdRdVVraENseDRPaHlybGlPNVA5bFQ2QTBMdFhVc2RNZWpCQTVqY0txVk9rMGRl?oc=5",
+      "source": "365Scores",
+      "category": "السعودية",
+      "region": "السعودية",
+      "publishedAt": "2026-10-22T15:21:55+00:00",
+      "image": "",
+      "points": 0,
+      "comments": 0,
+      "metric": "التقدير: حداثة ومصدر",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-10-23T23:36:44+00:00",
+      "score": 24.92
     },
     {
       "id": "2f32a876015ee666ac",
@@ -4513,7 +5042,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 26.08
+      "score": 24.84,
+      "hnUrl": ""
     },
     {
       "id": "f674cb3a2ea47ac113",
@@ -4532,7 +5062,27 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 25.75
+      "score": 24.53,
+      "hnUrl": ""
+    },
+    {
+      "id": "6cd07aeb343deedc70",
+      "kind": "news",
+      "title": "جلسات المعرض الزراعي السعودي تستعرض تقنيات لترشيد المياه وتعزيز الإنتاج والأمن الغذائي - جريدة الرياض",
+      "description": "جلسات المعرض الزراعي السعودي تستعرض تقنيات لترشيد المياه وتعزيز الإنتاج والأمن الغذائي جريدة الرياض",
+      "impact": "تحليل مبدئي: راجع المصدر لفهم الآثار التقنية والإعلان الكامل، فقد تختلف النتائج بحسب الاستخدام.",
+      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE83SWk4Ny1ackZlWkZXdGU5NTVBdUtWSUIyTWVLMzBxOXBwMkp6bnY0dXh0VnBGV0F0d0NaSXJ6dHY2WElENkdj?oc=5",
+      "source": "جريدة الرياض",
+      "category": "فرص",
+      "region": "السعودية",
+      "publishedAt": "2026-10-22T13:35:03+00:00",
+      "image": "",
+      "points": 0,
+      "comments": 0,
+      "metric": "التقدير: حداثة ومصدر",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-10-23T23:36:44+00:00",
+      "score": 24.45
     },
     {
       "id": "af6992a3f135680d7d",
@@ -4551,7 +5101,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 25.63
+      "score": 24.42,
+      "hnUrl": ""
     },
     {
       "id": "08e548f3b9dca3c138",
@@ -4570,7 +5121,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 25.63
+      "score": 24.42
     },
     {
       "id": "feacd6de002e3968f9",
@@ -4589,7 +5140,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 25.56
+      "score": 24.35,
+      "hnUrl": ""
     },
     {
       "id": "e7a03a6e1736dfe5dc",
@@ -4608,7 +5160,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 25.51
+      "score": 24.31,
+      "hnUrl": ""
     },
     {
       "id": "690aaab989de6a1d3d",
@@ -4627,7 +5180,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 25.47
+      "score": 24.27,
+      "hnUrl": ""
     },
     {
       "id": "57ae7ff366b70e125a",
@@ -4646,7 +5200,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 25.47
+      "score": 24.27,
+      "hnUrl": ""
     },
     {
       "id": "c2447e36b56e00e77b",
@@ -4665,7 +5220,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 25.4
+      "score": 24.21
     },
     {
       "id": "2d26befc9b9f83fc47",
@@ -4684,7 +5239,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 25.0
+      "score": 23.83
     },
     {
       "id": "fbf79c1f2cb7682839",
@@ -4703,7 +5258,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 24.95
+      "score": 23.79,
+      "hnUrl": ""
     },
     {
       "id": "8c1eaabc74f48a0c06",
@@ -4723,7 +5279,7 @@
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
       "hnUrl": "",
-      "score": 24.95
+      "score": 23.78
     },
     {
       "id": "65542b974c6a71c492",
@@ -4742,7 +5298,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 24.93
+      "score": 23.77,
+      "hnUrl": ""
     },
     {
       "id": "01815ba521bebc807a",
@@ -4761,7 +5318,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 24.88
+      "score": 23.72,
+      "hnUrl": ""
     },
     {
       "id": "e2721d5059282f2080",
@@ -4780,7 +5338,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 24.82
+      "score": 23.66,
+      "hnUrl": ""
     },
     {
       "id": "06a54d4be4c84ac563",
@@ -4799,7 +5358,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 24.69
+      "score": 23.54,
+      "hnUrl": ""
     },
     {
       "id": "ea831bb3419f5de328",
@@ -4818,7 +5378,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 24.67
+      "score": 23.53,
+      "hnUrl": ""
     },
     {
       "id": "24a75fd3a42268e519",
@@ -4837,7 +5398,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 24.61
+      "score": 23.47,
+      "hnUrl": ""
     },
     {
       "id": "c1749a11b32b5e339b",
@@ -4856,7 +5418,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 24.47
+      "score": 23.34,
+      "hnUrl": ""
     },
     {
       "id": "97a2df51f5f88b1a6b",
@@ -4875,7 +5438,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 24.39
+      "score": 23.26,
+      "hnUrl": ""
     },
     {
       "id": "ba687425bbbb05103d",
@@ -4894,7 +5458,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 24.31
+      "score": 23.19,
+      "hnUrl": ""
     },
     {
       "id": "fcb26af48522f4209c",
@@ -4914,7 +5479,7 @@
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
       "hnUrl": "",
-      "score": 24.19
+      "score": 23.07
     },
     {
       "id": "24dcfd9174c19f24bd",
@@ -4933,7 +5498,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 24.19
+      "score": 23.07,
+      "hnUrl": ""
     },
     {
       "id": "2daca0784ba823ff25",
@@ -4952,7 +5518,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 24.18
+      "score": 23.07
     },
     {
       "id": "f0cd4b976b2af9f081",
@@ -4971,7 +5537,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 24.02
+      "score": 22.92
     },
     {
       "id": "a957c592a2d3de1549",
@@ -4990,7 +5556,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 23.94
+      "score": 22.84,
+      "hnUrl": ""
     },
     {
       "id": "e099d11fa8b13d3de4",
@@ -5009,7 +5576,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 23.84
+      "score": 22.75,
+      "hnUrl": ""
     },
     {
       "id": "1a8d5247bb93f8582d",
@@ -5028,7 +5596,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 23.55
+      "score": 22.48,
+      "hnUrl": ""
     },
     {
       "id": "76745d67782c9f52f0",
@@ -5047,7 +5616,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 23.4
+      "score": 22.35,
+      "hnUrl": ""
     },
     {
       "id": "c8fc07204be57eb7a9",
@@ -5066,7 +5636,27 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 23.27
+      "score": 22.22,
+      "hnUrl": ""
+    },
+    {
+      "id": "9f28168e4580f4f8fa",
+      "kind": "news",
+      "title": "هيوماين وداتا فولت تعلنان اتفاقاً إطارياً مبدئياً مع نيبيوس بشأن مجمع عملاق للذكاء الاصطناعي في أوكساچون بنيوم - NEOM",
+      "description": "هيوماين وداتا فولت تعلنان اتفاقاً إطارياً مبدئياً مع نيبيوس بشأن مجمع عملاق للذكاء الاصطناعي في أوكساچون بنيوم NEOM",
+      "impact": "تحليل مبدئي: راجع المصدر لفهم الآثار التقنية والإعلان الكامل، فقد تختلف النتائج بحسب الاستخدام.",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxObzRHQWtxOFh1YjBxcDl4b0dHSHRNVjYyT3JXcHU3X0tDYWxDUi1LcHRkMm1Bd3hvLWVwa3Z1MFktSXNxT20tc3YySFFfNjhzc1lUSlA1NmJtZXhMN20ySjdHdF9YeUd0c1RrSGNaUk8xcFBFbXQ1TGo0SmtHSWxaYTR1RVh0OU5ubUh6VHl5ZVUwZWNtV3ZHU0hqdm8?oc=5",
+      "source": "NEOM",
+      "category": "السعودية",
+      "region": "السعودية",
+      "publishedAt": "2026-10-21T23:44:19+00:00",
+      "image": "",
+      "points": 0,
+      "comments": 0,
+      "metric": "التقدير: حداثة ومصدر",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-10-23T23:36:44+00:00",
+      "score": 21.25
     },
     {
       "id": "32f9877af281566a5f",
@@ -5085,7 +5675,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 22.04
+      "score": 21.07,
+      "hnUrl": ""
     },
     {
       "id": "e1e794379eb1a1ae8b",
@@ -5104,7 +5695,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 22.01
+      "score": 21.05,
+      "hnUrl": ""
     },
     {
       "id": "b896c0e0003f5acfff",
@@ -5123,7 +5715,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 21.69
+      "score": 20.75,
+      "hnUrl": ""
     },
     {
       "id": "367be8246006663a59",
@@ -5142,7 +5735,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 21.69
+      "score": 20.74,
+      "hnUrl": ""
     },
     {
       "id": "be6c96d2f6c5b5050e",
@@ -5161,7 +5755,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 21.55
+      "score": 20.62
     },
     {
       "id": "e9fc027fe2ea965dad",
@@ -5180,7 +5774,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 21.52
+      "score": 20.59
     },
     {
       "id": "90889353006589ef15",
@@ -5199,7 +5793,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 21.42
+      "score": 20.5
     },
     {
       "id": "e3a0a000b5d7bbe95a",
@@ -5218,7 +5812,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 21.37
+      "score": 20.45,
+      "hnUrl": ""
     },
     {
       "id": "298ab808d89166c7be",
@@ -5237,7 +5832,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 21.32
+      "score": 20.4
     },
     {
       "id": "88a88a4869cebdf9bd",
@@ -5256,7 +5851,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 21.29
+      "score": 20.37,
+      "hnUrl": ""
     },
     {
       "id": "818bb00dfd7afe4a85",
@@ -5275,7 +5871,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 21.25
+      "score": 20.34,
+      "hnUrl": ""
     },
     {
       "id": "65d1f116dfc0640151",
@@ -5294,7 +5891,26 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 21.01
+      "score": 20.11
+    },
+    {
+      "id": "775992cb6dc0145083",
+      "kind": "news",
+      "title": "علوم وتقنيات / \"موهبة\" تشارك في ملتقى القطاع غير الربحي في التعليم والتدريب وتوقّع اتفاقية تعاون - وكالة الأنباء السعودية",
+      "description": "علوم وتقنيات / \"موهبة\" تشارك في ملتقى القطاع غير الربحي في التعليم والتدريب وتوقّع اتفاقية تعاون وكالة الأنباء السعودية",
+      "impact": "تحليل مبدئي: راجع المصدر لفهم الآثار التقنية والإعلان الكامل، فقد تختلف النتائج بحسب الاستخدام.",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBla09CekpYOHdoMDlaN1kyd1ZQWDFsZWIyQmQ2eDNFYTB2U1BISm9nQWt0czFtYTZOREp6dnRUNG9rb2ZZNmc?oc=5",
+      "source": "وكالة الأنباء السعودية",
+      "category": "فرص",
+      "region": "السعودية",
+      "publishedAt": "2026-10-21T16:17:30+00:00",
+      "image": "",
+      "points": 0,
+      "comments": 0,
+      "metric": "التقدير: حداثة ومصدر",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-10-23T23:36:44+00:00",
+      "score": 19.8
     },
     {
       "id": "cffea184588a19dca1",
@@ -5313,7 +5929,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 20.56
+      "score": 19.69,
+      "hnUrl": ""
     },
     {
       "id": "2c6755597ba889b150",
@@ -5332,7 +5949,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 19.85
+      "score": 19.03,
+      "hnUrl": ""
     },
     {
       "id": "04f6b324599044a6a9",
@@ -5351,7 +5969,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 19.82
+      "score": 19.01
     },
     {
       "id": "dd344ce65f60395424",
@@ -5370,7 +5988,27 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 19.69
+      "score": 18.89,
+      "hnUrl": ""
+    },
+    {
+      "id": "4e92b50b0e28b4acbb",
+      "kind": "news",
+      "title": "حرب الملكية الفكرية بين أميركا والصين تصل إلى رأس المال الجريء - الشرق بلومبرغ",
+      "description": "حرب الملكية الفكرية بين أميركا والصين تصل إلى رأس المال الجريء الشرق بلومبرغ",
+      "impact": "تحليل مبدئي: راجع المصدر لفهم الآثار التقنية والإعلان الكامل، فقد تختلف النتائج بحسب الاستخدام.",
+      "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxPMEV5akF3NGNGNndoa1RYVXhoS1pqcjhPUGJES2NHbVdmc3VYUUwzaVRmZ3BJSjdicEFpT0Z0TGJ0ZEJ2T0Q0SHNqVDJwLVFkVGg5dGFhTkVidk1Fbk5yWlE5b2dnb2ZubHBMa1dvOC1mNHEyV0NKNlJwMU9PcW5vb2tyTy0xNldSWEVWOGZlcU9YSF8tYlhaamNkRUp2RFh4d3hsS2F6OFd0MTRYSnF6cXkwVllMOTJPdEd5SkltYk41UzZQNGNod19GWlVtTmF6Q2NBWkVMUzI4SFVfWHBQbGZCN3gxMW0ydEp5TkItZzJvNll4WTltWWdDMFB4ZjJ2MnUzc1VpWlFtTkYzMVVLUzRqNUNGazctNlNUTkw3bm01UzZkWnVTSmFhQ2lhVUJZZklRRWhyZmxyaU5kd3h2N293blE2OVM0WGVMY2RZRjAtcjg0R0YwXzl3cUZHZTg?oc=5",
+      "source": "الشرق بلومبرغ",
+      "category": "فرص",
+      "region": "السعودية",
+      "publishedAt": "2026-10-21T10:27:36+00:00",
+      "image": "",
+      "points": 0,
+      "comments": 0,
+      "metric": "التقدير: حداثة ومصدر",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-10-23T23:36:44+00:00",
+      "score": 18.77
     },
     {
       "id": "c0ff26e22f815bfb7b",
@@ -5389,7 +6027,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 19.44
+      "score": 18.65,
+      "hnUrl": ""
     },
     {
       "id": "d13a4e57cb600c7444",
@@ -5408,7 +6047,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 19.36
+      "score": 18.58
     },
     {
       "id": "a08af1ef9bf0387488",
@@ -5427,7 +6066,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 19.23
+      "score": 18.46,
+      "hnUrl": ""
     },
     {
       "id": "0edb7254c81a744ab6",
@@ -5446,7 +6086,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 19.03
+      "score": 18.27
     },
     {
       "id": "29cd002f6be911b889",
@@ -5465,7 +6105,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 18.32
+      "score": 17.61
     },
     {
       "id": "ce100b38897a4c3a84",
@@ -5484,7 +6124,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 18.15
+      "score": 17.45,
+      "hnUrl": ""
     },
     {
       "id": "18d1373f52cc8429b0",
@@ -5503,7 +6144,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 18.07
+      "score": 17.38,
+      "hnUrl": ""
     },
     {
       "id": "reuters-torchneuron-20261019",
@@ -5519,7 +6161,7 @@
       "image": "",
       "points": 0,
       "comments": 0,
-      "score": 14.05,
+      "score": 13.63,
       "ideaDomain": "general"
     }
   ]
