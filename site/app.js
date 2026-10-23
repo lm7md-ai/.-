@@ -2,7 +2,7 @@
 (() => {
   'use strict';
   const $ = (id) => document.getElementById(id);
-  const state = {items:[], filtered:[], view:'all', chip:'all', sort:'popular', q:'', period:null, shown:9, saved:new Set(), generatedAt:null, demo:false, lastActive:null};
+  const state = {items:[], filtered:[], view:'all', chip:'all', sort:'popular', q:'', period:null, imagesOnly:false, shown:9, saved:new Set(), generatedAt:null, demo:false, lastActive:null};
   const categoryMap = {'ذكاء اصطناعي':'ذكاء اصطناعي','برمجة':'برمجة','تقنيات':'تقنيات','أبحاث':'أبحاث','فرص':'فرص','السعودية':'السعودية','مفتوح المصدر':'مفتوح المصدر'};
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const safeUrl = (u) => {try{const x=new URL(u, location.href);return x.protocol==='https:'||x.origin===location.origin&&x.protocol==='http:'? x.href:''}catch{return ''}};
@@ -40,9 +40,13 @@
   function allItems(){const projects=state.items.filter(x=>x.kind==='project');return [...state.items,...makeIdeas(projects)]}
   function favoriteExists(id){return state.saved.has(id)}
   function getCover(item, full=false){
-    const link=safeUrl(item.image);
-    const image=link?`<img src="${esc(link)}" alt="صورة مرتبطة بـ ${esc(trimmed(item.title,65))}" loading="lazy" referrerpolicy="no-referrer" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="card-glyph" hidden>${glyph(item)}</span>`:`<span class="card-glyph">${glyph(item)}</span>`;
-    return full?`<div class="detail-picture">${image}</div>`:`<div class="card-image ${visualClass(item)}" data-open="${esc(item.id)}">${image}<div class="card-visual-overlay"></div><span class="card-badge">${esc(label(item))}</span><span class="card-rank">${item.kind==='project'?'★':'↗'} ${Math.round(item.score||0)}</span></div>`;
+    // A GitHub owner avatar is labelled as such; it is not a project screenshot.
+    const original=safeUrl(item.image);
+    const avatar=item.kind==='project'?safeUrl(item.avatar):'';
+    const link=original||avatar;
+    const image=link?`<img src="${esc(link)}" alt="${esc(original?'صورة من المصدر الأصلي': 'صورة حساب المشروع على GitHub')}" loading="lazy" decoding="async"><span class="card-glyph" hidden>${glyph(item)}</span>`:`<span class="card-glyph">${glyph(item)}</span>`;
+    const photoLabel=original?'صورة المصدر':avatar?'صورة الحساب':'لا توجد صورة موثقة';
+    return full?`<div class="detail-picture ${original?'has-photo':avatar?'has-avatar':'no-photo'}">${image}<span class="picture-caption">${photoLabel}</span></div>`:`<div class="card-image ${visualClass(item)} ${link?'has-photo':'no-photo'}" data-open="${esc(item.id)}">${image}<span class="picture-origin">${esc(photoLabel)}</span><div class="card-visual-overlay"></div><span class="card-badge">${esc(label(item))}</span><span class="card-rank">${item.kind==='project'?'★':'↗'} ${Math.round(item.score||0)}</span></div>`;
   }
   function renderCard(item){
     const project=item.kind==='project';
@@ -68,6 +72,7 @@
       return x.category===state.view || x.kind==='project' && (x.topics||[]).some(t=>state.view==='ذكاء اصطناعي'&&['ai','artificial-intelligence','llm','machine-learning'].some(z=>t.includes(z)) || state.view==='برمجة'&&t.includes('python'));
     });
     if(state.chip!=='all') items=items.filter(x=>x.kind===state.chip);
+    if(state.imagesOnly) items=items.filter(x=>Boolean(safeUrl(x.image)));
     if(state.period!==null){const today=dayKey(new Date().toISOString());items=items.filter(x=>dayKey(x.publishedAt)===today&&detectSlot(x.publishedAt)===state.period)}
     if(q) items=items.filter(x=>[x.title,x.description,x.source,x.repo,x.language,x.parentName].some(t=>String(t||'').toLocaleLowerCase('ar').includes(q)));
     items.sort((a,b)=>state.sort==='popular'?(b.score||0)-(a.score||0)||Date.parse(b.publishedAt)-Date.parse(a.publishedAt):Date.parse(b.publishedAt)-Date.parse(a.publishedAt)||(b.score||0)-(a.score||0));
@@ -83,6 +88,8 @@
     document.querySelectorAll('[data-slot]').forEach(b=>b.classList.toggle('selected',+b.dataset.slot===state.period));
     document.querySelectorAll('[data-chip]').forEach(b=>b.classList.toggle('active',b.dataset.chip===state.chip));
     document.querySelectorAll('[data-sort]').forEach(b=>b.classList.toggle('selected',b.dataset.sort===state.sort));
+    $('imageOnly')?.classList.toggle('active',state.imagesOnly);
+    $('imageOnly')?.setAttribute('aria-pressed',String(state.imagesOnly));
     const list=state.filtered.slice(0,state.shown);
     if(list.length){$('feedGrid').innerHTML=list.map(renderCard).join('')}
     else{
@@ -93,12 +100,26 @@
     const news=state.items.filter(x=>x.kind==='news').length,projects=state.items.filter(x=>x.kind==='project').length;
     $('statNews').textContent=arNumber(news);$('statProjects').textContent=arNumber(projects);$('statIdeas').textContent=arNumber(projects*20);
     $('statUpdate').textContent=state.generatedAt?new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Riyadh',hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date(state.generatedAt)):'—';
+    renderSpotlight();
     bindFeedActions();
+  }
+  function renderSpotlight(){
+    const section=$('spotlightSection'),target=$('spotlightGrid');
+    if(!section||!target)return;
+    section.hidden=state.view!=='all';
+    if(section.hidden)return;
+    // Latest source-backed news with publisher images first, then recent news with honest placeholders.
+    const news=state.items.filter(x=>x.kind==='news').sort((a,b)=>Date.parse(b.publishedAt)-Date.parse(a.publishedAt));
+    const pictured=news.filter(x=>safeUrl(x.image));
+    const featured=[...pictured.slice(0,3),...news.filter(x=>!pictured.slice(0,3).some(y=>y.id===x.id)).slice(0,3)].slice(0,3);
+    target.innerHTML=featured.map(item=>`<article class="spotlight-card">${getCover(item)}<div class="spotlight-copy"><span>${esc(item.source)} · ${esc(dateTime(item.publishedAt))}</span><h3>${esc(trimmed(item.title,108))}</h3><button type="button" data-open="${esc(item.id)}">عرض الخبر وتفاصيله ←</button></div></article>`).join('');
+    section.querySelector('.spotlight-note').textContent=pictured.length?`صور موثقة من مصادر الأخبار: ${pictured.length} خبرًا. بعض المصادر لا تتيح صورًا.`:'بعض المصادر لا توفر صورًا قابلة للعرض؛ نعرض بديلًا بصريًا دون اختلاق صور للأخبار.';
   }
   function bindFeedActions(){
     document.querySelectorAll('[data-open]').forEach(b=>b.addEventListener('click',()=>openDetail(b.dataset.open)));
+    document.querySelectorAll('.card-image img,.detail-picture img,.gallery-strip img').forEach(img=>img.addEventListener('error',()=>{img.hidden=true;const glyph=img.nextElementSibling;if(glyph?.classList.contains('card-glyph'))glyph.hidden=false;const label=img.closest('.card-image,.detail-picture')?.querySelector('.picture-origin,.picture-caption');if(label)label.textContent='تعذّر تحميل صورة المصدر';}));
     document.querySelectorAll('[data-save]').forEach(b=>b.addEventListener('click',()=>toggleSaved(b.dataset.save)));
-    $('clearFilters')?.addEventListener('click',()=>{state.view='all';state.chip='all';state.q='';state.period=null;$('searchInput').value='';render()});
+    $('clearFilters')?.addEventListener('click',()=>{state.view='all';state.chip='all';state.q='';state.period=null;state.imagesOnly=false;$('searchInput').value='';render()});
   }
   function toggleSaved(id){if(state.saved.has(id)){state.saved.delete(id);toast('أُزيل من المحفوظات')}else{state.saved.add(id);toast('تمت الإضافة إلى المحفوظات')}persistSaved();render()}
   function openDetail(id){
@@ -109,11 +130,13 @@
     const ideas=isProj||isIdea?window.TechPulseIdeas.forItem(item):null;
     const spec=isProj?`<div class="project-specs"><div><span>النجوم</span><b>★ ${arNumber(item.stars)}</b></div><div><span>لغة البرمجة</span><b>${esc(item.language||'غير محدد')}</b></div><div><span>الرخصة</span><b>${esc(item.license||'غير محدد')}</b></div></div>`:'';
     const gallery=(item.gallery||[]).map((url,i)=>safeUrl(url)?`<button type="button" data-gallery="${i}" aria-label="عرض صورة المشروع ${i+1}"><img src="${esc(safeUrl(url))}" loading="lazy" alt="معاينة ${i+1}"></button>`:'').join('');
+    const translation=!isProj&&!isIdea&&url?`<a class="translate-link" href="https://translate.google.com/translate?sl=auto&tl=ar&u=${encodeURIComponent(url)}" target="_blank" rel="noopener noreferrer">اقرأ المصدر بترجمة عربية آلية ↗</a>`:'';
     const lists=ideas?`<section class="detail-section"><h3>تطويرات للمشروع نفسه <span class="count">10</span></h3><p class="detail-note">هذه اقتراحات تنفيذية مبدئية مستندة إلى مجال المشروع، وليست ميزات مؤكدة أو تغييرات مضمونة في المستودع الأصلي.</p><ol class="idea-list">${ideas.improvements.map((s,i)=>`<li class="idea-line"><span class="idea-num">${i+1}</span><span>${esc(s)}</span></li>`).join('')}</ol></section>
     <section class="detail-section"><h3>مشاريع جديدة مستوحاة منه <span class="count purple">10</span></h3><p>عشر اتجاهات يمكن تحويل كل منها إلى مشروع مستقل، ويمكن فتح أي فكرة لاستعراض 20 اتجاهًا إضافيًا.</p><ol class="idea-list spin">${ideas.spinoffs.map((s,i)=>`<li class="idea-line"><span class="idea-num">${i+1}</span><span>${esc(s)}</span><button type="button" class="idea-open" data-idea-index="${i}">تفاصيل الفكرة ←</button></li>`).join('')}</ol></section>`:'';
-    $('detailContent').innerHTML=`<div class="detail-heading"><span class="detail-kind">${esc(label(item))}</span><h2 id="detailTitle">${esc(item.title)}</h2><div class="detail-submeta"><span>${esc(item.source)}</span><span>•</span><span>${esc(dateTime(item.publishedAt,true))}</span>${isProj?`<span>•</span><span>آخر نشاط للمستودع</span>`:''}</div><p>${esc(item.description)}</p></div>${getCover(item,true)}${gallery?`<div class="gallery-strip">${gallery}</div>`:''}${spec}<section class="detail-section"><h3>${isIdea?'لماذا يمكن بناء هذه الفكرة؟':'الأهمية والتأثير'}</h3><p>${esc(item.impact||'اقرأ المصدر الأصلي للتفاصيل الكاملة.')}</p></section><div class="detail-links">${url?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${isIdea?'افتح المشروع الملهم':isProj?'افتح المستودع على GitHub':'اقرأ الخبر من المصدر'} ↗</a>`:''}<button type="button" id="saveInside">${favoriteExists(item.id)?'♥ محفوظ':'♡ احفظ للقراءة لاحقًا'}</button></div>${lists}<p class="detail-disclaimer">${isIdea?'هذه فكرة مقترحة وليست منتجًا منشورًا.':'العناوين والأوصاف مأخوذة من مصادر عامة. '}المؤشر الرائج تقريبي، والصور تظهر فقط عند توفرها في المصادر، وليست ضمانًا لصورة المنتج أو المشروع.</p>`;
+    $('detailContent').innerHTML=`<div class="detail-heading"><span class="detail-kind">${esc(label(item))}</span><h2 id="detailTitle">${esc(item.title)}</h2><div class="detail-submeta"><span>${esc(item.source)}</span><span>•</span><span>${esc(dateTime(item.publishedAt,true))}</span>${isProj?`<span>•</span><span>آخر نشاط للمستودع</span>`:''}</div><p>${esc(item.description)}</p></div>${getCover(item,true)}${gallery?`<div class="gallery-strip">${gallery}</div>`:''}${spec}<section class="detail-section"><h3>${isIdea?'لماذا يمكن بناء هذه الفكرة؟':'الأهمية والتأثير'}</h3><p>${esc(item.impact||'اقرأ المصدر الأصلي للتفاصيل الكاملة.')}</p></section><div class="detail-links">${url?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${isIdea?'افتح المشروع الملهم':isProj?'افتح المستودع على GitHub':'اقرأ الخبر من المصدر'} ↗</a>`:''}${translation}<button type="button" id="saveInside">${favoriteExists(item.id)?'♥ محفوظ':'♡ احفظ للقراءة لاحقًا'}</button></div>${lists}<p class="detail-disclaimer">${isIdea?'هذه فكرة مقترحة وليست منتجًا منشورًا.':'العناوين والأوصاف مأخوذة من مصادر عامة. '}المؤشر الرائج تقريبي، والصور تظهر فقط عند توفرها في المصادر، وليست ضمانًا لصورة المنتج أو المشروع.</p>`;
     $('overlay').hidden=false;$('detailWrap').hidden=false;document.body.classList.add('body-locked');document.querySelector('.detail-panel')?.focus();
-    $('detailContent').querySelectorAll('[data-gallery]').forEach(b=>b.addEventListener('click',()=>{const img=$('detailContent').querySelector('.detail-picture img');if(img)img.src=safeUrl(item.gallery[+b.dataset.gallery])}));
+    $('detailContent').querySelectorAll('[data-gallery]').forEach(b=>b.addEventListener('click',()=>{const img=$('detailContent').querySelector('.detail-picture img');if(img){img.hidden=false;img.src=safeUrl(item.gallery[+b.dataset.gallery]);const caption=$('detailContent').querySelector('.picture-caption');if(caption)caption.textContent='صورة '+(+b.dataset.gallery+1)+' من README المشروع';}}));
+    $('detailContent').querySelectorAll('.detail-picture img,.gallery-strip img').forEach(img=>img.addEventListener('error',()=>{img.hidden=true;const glyph=img.nextElementSibling;if(glyph?.classList.contains('card-glyph'))glyph.hidden=false;}));
     $('saveInside').addEventListener('click',()=>{toggleSaved(item.id);$('saveInside').textContent=favoriteExists(item.id)?'♥ محفوظ':'♡ احفظ للقراءة لاحقًا'});
     $('detailContent').querySelectorAll('[data-idea-index]').forEach(b=>b.addEventListener('click',()=>{
       const idx=+b.dataset.ideaIndex;
@@ -148,6 +171,7 @@
     for(const id of ['ideasButton','discoverIdeas']) $(id).addEventListener('click',()=>setView('ideas'));
     $('exploreProjects').addEventListener('click',()=>setView('مفتوح المصدر'));
     $('refreshButton').addEventListener('click',()=>fetchFeed(true));
+    $('imageOnly')?.addEventListener('click',()=>{state.imagesOnly=!state.imagesOnly;state.shown=9;render()});
     $('overlay').addEventListener('click',()=>{closeDetail();$('sidebar').classList.remove('mobile-open')});
     $('closeDetail').addEventListener('click',()=>closeDetail());
     $('mobileMenu').addEventListener('click',()=>{$('sidebar').classList.toggle('mobile-open');$('overlay').hidden=!$('sidebar').classList.contains('mobile-open')});

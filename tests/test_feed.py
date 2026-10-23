@@ -58,6 +58,32 @@ class TestFeed(unittest.TestCase):
         self.assertTrue(data["items"])
         self.assertTrue(all(x["url"].startswith("https://") for x in data["items"]))
 
+class TestImages(unittest.TestCase):
+    def test_og_image_relative_url(self):
+        html_doc='''<html><head><meta property="og:image" content="/media/cover.webp"></head></html>'''
+        self.assertEqual(mod.picture_candidates(html_doc,'https://www.theverge.com/article')[0],
+                         'https://www.theverge.com/media/cover.webp')
+
+    def test_embedded_rss_image(self):
+        import xml.etree.ElementTree as ET
+        node=ET.fromstring('''<item><description><![CDATA[<p><img src="https://example.org/featured.jpg"></p>]]></description></item>''')
+        self.assertEqual(mod.rss_image(node), 'https://example.org/featured.jpg')
+
+    def test_media_rss_thumbnail(self):
+        import xml.etree.ElementTree as ET
+        node=ET.fromstring('''<item xmlns:m="http://search.yahoo.com/mrss/"><m:thumbnail url="https://example.org/hero.png" /></item>''')
+        self.assertEqual(mod.rss_image(node), 'https://example.org/hero.png')
+
+    def test_avoid_private_domains(self):
+        self.assertEqual(mod.article_image('https://localhost/secrets'), '')
+        self.assertEqual(mod.article_image('https://192.168.1.1/a'), '')
+
+    def test_old_image_retained_if_new_summary_has_none(self):
+        old=news('https://example.org/news'); old['image']='https://example.org/cover.png'
+        fresh=news('https://example.org/news',desc='updated story')
+        merged,_=mod.merge([fresh],[old])
+        self.assertEqual(merged[0]['image'], 'https://example.org/cover.png')
+
 if __name__ == "__main__": unittest.main()
 
 class TestHeadlines(unittest.TestCase):

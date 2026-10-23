@@ -38,6 +38,10 @@ DEFAULT_HEADERS = {"User-Agent": USER_AGENT, "Accept": "application/json, applic
 FEEDS = [
     ("تقارير الذكاء الاصطناعي", "https://techcrunch.com/category/artificial-intelligence/feed/", "ذكاء اصطناعي", "عالمي"),
     ("أخبار التقنية", "https://www.theverge.com/rss/index.xml", "تقنيات", "عالمي"),
+    ("تقنية BBC", "https://feeds.bbci.co.uk/news/technology/rss.xml", "تقنيات", "عالمي"),
+    ("Engadget", "https://www.engadget.com/rss.xml", "تقنيات", "عالمي"),
+    ("Wired", "https://www.wired.com/feed/rss", "تقنيات", "عالمي"),
+    ("Ars Technica", "https://feeds.arstechnica.com/arstechnica/index", "برمجة", "عالمي"),
     ("أبحاث الذكاء الاصطناعي", "https://export.arxiv.org/rss/cs.AI", "أبحاث", "عالمي"),
     ("أبحاث تعلّم الآلة", "https://export.arxiv.org/rss/cs.LG", "أبحاث", "عالمي"),
     ("أخبار التقنية السعودية", "https://news.google.com/rss/search?" + urlencode({"q": "الذكاء الاصطناعي OR التقنية السعودية when:2d", "hl": "ar", "gl": "SA", "ceid": "SA:ar"}), "السعودية", "السعودية"),
@@ -179,6 +183,106 @@ def node_text(parent, *names):
     return ""
 
 
+
+class PictureMetadata(HTMLParser):
+    """Read article image metadata without JavaScript or external dependencies."""
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.candidates = []
+
+    def handle_starttag(self, tag, attrs):
+        a = dict(attrs)
+        if tag.lower() == "meta":
+            key = (a.get("property") or a.get("name") or "").lower().strip()
+            if key in ("og:image", "og:image:url", "twitter:image", "twitter:image:src"):
+                self.candidates.append(a.get("content", ""))
+        elif tag.lower() == "link" and (a.get("rel") or "").lower() == "image_src":
+            self.candidates.append(a.get("href", ""))
+        elif tag.lower() == "img":
+            self.candidates.append(a.get("data-src") or a.get("src") or "")
+
+
+def picture_candidates(markup, base=""):
+    parser = PictureMetadata()
+    try:
+        parser.feed(markup or "")
+    except (ValueError, TypeError):
+        return []
+    selected = []
+    for src in parser.candidates:
+        src = html.unescape(str(src).strip())
+        if not src or src.startswith("data:") or src.startswith("blob:"):
+            continue
+        absolute = valid_url(urljoin(base, src))
+        if not absolute:
+            continue
+        path = urlparse(absolute).path.lower()
+        if any(t in path for t in ("tracking", "pixel", "beacon", "1x1", "favicon", "badge")):
+            continue
+        if absolute not in selected:
+            selected.append(absolute)
+    return selected
+
+
+ARTICLE_IMAGE_HOSTS = (
+    "theverge.com", "techcrunch.com", "engadget.com", "bbc.co.uk", "wired.com",
+    "arstechnica.com", "github.blog", "huggingface.co", "nvidia.com",
+    "openai.com", "anthropic.com", "python.org", "microsoft.com",
+)
+
+
+def article_image(url):
+    """Extract an official publisher image from known domains only."""
+    domain = (urlparse(url).hostname or "").lower()
+    if not domain or not any(domain == host or domain.endswith("." + host) for host in ARTICLE_IMAGE_HOSTS):
+        return ""
+    if urlparse(url).path.lower().endswith((".pdf", ".json", ".xml")):
+        return ""
+    try:
+        # Only read the first 320 KiB; most og:image tags appear in <head>.
+        req = Request(url, headers={**DEFAULT_HEADERS, "Accept":"text/html,application/xhtml+xml;q=0.9,*/*;q=0.8"})
+        with urlopen(req, timeout=7) as response:
+            content_type = response.headers.get("Content-Type", "").lower()
+            if "html" not in content_type:
+                return ""
+            base = response.geturl()
+            body = response.read(320_000).decode("utf-8", errors="replace")
+        # Favor og:image/twitter:image from <head>; do not treat arbitrary article illustrations as official.
+        parser = PictureMetadata()
+        parser.feed(body.split("</head>", 1)[0])
+        for candidate in parser.candidates:
+            absolute = valid_url(urljoin(base, html.unescape(str(candidate).strip())))
+            if absolute and not any(x in urlparse(absolute).path.lower() for x in ("favicon", "badge", "pixel", "1x1")):
+                return absolute
+    except Exception as exc:
+        logging.debug("Article image unavailable for %s: %s", domain, str(exc)[:90])
+    return ""
+
+
+def enrich_missing_news_images(fresh, old_items, limit=24):
+    """Best-effort enrichment. Stored results survive the next three-hour update."""
+    cached = {canonical(x.get("url", "")): x.get("image", "") for x in old_items if x.get("image")}
+    missing = sorted((x for x in fresh if x.get("kind") == "news" and not x.get("image")),
+                     key=lambda x: x.get("publishedAt", ""), reverse=True)
+    fetched = 0
+    for entry in missing:
+        cached_img = cached.get(canonical(entry["url"]))
+        if cached_img:
+            entry["image"] = cached_img
+            continue
+        domain = (urlparse(entry.get("url", "")).hostname or "").lower()
+        if domain in ("news.google.com", "arxiv.org", "export.arxiv.org"):
+            continue
+        if fetched >= limit:
+            break
+        fetched += 1
+        found = article_image(entry["url"])
+        if found:
+            entry["image"] = found
+            entry["imageSource"] = "صورة المصدر الأصلي"
+    logging.info("Publisher image metadata checked on %d articles", fetched)
+
+
 def rss_image(node):
     for child in node.iter():
         kind = local(child.tag)
@@ -189,7 +293,12 @@ def rss_image(node):
         if kind == "enclosure" and attrs.get("type", "").startswith("image/"):
             u = attrs.get("url")
             if valid_url(u): return u
-    # Do not present a logo as a project screenshot.
+    # Some RSS publishers embed article images inside CDATA descriptions.
+    for child in node:
+        if local(child.tag) in ("description", "summary", "encoded", "content") and child.text:
+            candidates = picture_candidates(child.text)
+            if candidates:
+                return candidates[0]
     return ""
 
 
@@ -316,7 +425,7 @@ def collect_repos():
             "metric": f"{r.get('stargazers_count') or 0:,} نجمة GitHub",
         })
     out.sort(key=lambda x: (x["stars"], x["publishedAt"]), reverse=True)
-    for entry in out[:10]:
+    for entry in out[:22]:
         repo = repos.get(entry["repo"].lower())
         if repo:
             entry["gallery"] = repo_images(repo, headers)
@@ -373,6 +482,7 @@ def main():
         try: old_data = json.loads(OUTPUT.read_text(encoding="utf-8"))
         except Exception: logging.warning("Existing JSON cannot be parsed; starting fresh")
     fresh = collect_rss() + collect_hn() + collect_repos()
+    enrich_missing_news_images(fresh, old_data.get("items", []))
     try: prior_seen=json.loads(SEEN.read_text(encoding="utf-8"))
     except (OSError, ValueError): prior_seen={}
     seen_ids=set(prior_seen.get("ids", []))

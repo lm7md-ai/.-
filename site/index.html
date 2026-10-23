@@ -87,9 +87,14 @@
           </div>
         </section>
 
+        <section class="spotlight" id="spotlightSection" aria-labelledby="spotlightTitle">
+          <div class="section-heading"><div><span class="kicker">المشهد الآن</span><h2 id="spotlightTitle">أبرز الأخبار والصور</h2><p class="spotlight-note">نستخدم صور الجهات الناشرة فقط عند توفرها.</p></div></div>
+          <div id="spotlightGrid" class="spotlight-grid"></div>
+        </section>
+
         <section class="news-section" id="newsSection">
           <div class="section-heading"><div><span class="kicker" id="sectionKicker">إشارات تستحق المتابعة</span><h2 id="sectionTitle">الأكثر رواجًا <span class="heading-star">✳</span></h2><p id="sectionDescription">أبرز المستجدات مرتبة بمؤشر شيوع تقديري، مع ربط الأخبار بمصادرها الأصلية.</p></div><div class="section-tools"><button class="toggle-sort selected" data-sort="popular" type="button">✦ الرائج</button><button class="toggle-sort" data-sort="latest" type="button">◷ الأحدث</button></div></div>
-          <div class="filter-row"><div class="filter-chips" id="chips"><button class="chip active" data-chip="all" type="button">الكل</button><button class="chip" data-chip="news" type="button">الأخبار</button><button class="chip" data-chip="project" type="button">المشاريع</button><button class="chip" data-chip="idea" type="button">الأفكار</button></div><label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="ابحث عن خبر أو مشروع..." autocomplete="off" aria-label="بحث في المحتوى" /><kbd> / </kbd></label></div>
+          <div class="filter-row"><div class="filter-chips" id="chips"><button class="chip active" data-chip="all" type="button">الكل</button><button class="chip" data-chip="news" type="button">الأخبار</button><button class="chip" data-chip="project" type="button">المشاريع</button><button class="chip" data-chip="idea" type="button">الأفكار</button><button class="chip" id="imageOnly" aria-pressed="false" type="button">▣ بصور فقط</button></div><label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="ابحث عن خبر أو مشروع..." autocomplete="off" aria-label="بحث في المحتوى" /><kbd> / </kbd></label></div>
           <div class="feed-grid" id="feedGrid" aria-live="polite"><div class="loading">جارٍ تحميل الأخبار والمشاريع…</div></div>
           <div class="load-row"><button id="loadMore" class="load-more" type="button">عرض المزيد <span>↓</span></button></div>
         </section>
