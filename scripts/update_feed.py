@@ -1,0 +1,405 @@
+#!/usr/bin/env python3
+"""Collect public tech news and OSS repositories for a static GitHub Pages site.
+No API keys required; GITHUB_TOKEN increases API reliability if present.
+Existing items are retained by stable ID instead of being reposted on each run.
+"""
+from __future__ import annotations
+
+import calendar
+import datetime as dt
+import hashlib
+import html
+import json
+import logging
+import math
+import os
+import re
+import sys
+import time
+import unicodedata
+from email.utils import parsedate_to_datetime
+from html.parser import HTMLParser
+from pathlib import Path
+from urllib.parse import quote, urlencode, urlparse, urlunparse, parse_qsl, urljoin
+from urllib.request import Request, urlopen
+from xml.etree import ElementTree as ET
+
+ROOT = Path(__file__).resolve().parent.parent
+OUTPUT = ROOT / "site" / "data" / "feed.json"
+SEEN = ROOT / "site" / "data" / "seen.json"
+UTC = dt.timezone.utc
+NOW = dt.datetime.now(UTC)
+USER_AGENT = "TechPulseArabic/1.0 (+https://github.com; public feeds; editorial project)"
+TIMEOUT = 16
+MAX_NEWS = 220
+MAX_PROJECTS = 55
+DEFAULT_HEADERS = {"User-Agent": USER_AGENT, "Accept": "application/json, application/rss+xml, application/atom+xml, */*"}
+
+FEEDS = [
+    ("تقارير الذكاء الاصطناعي", "https://techcrunch.com/category/artificial-intelligence/feed/", "ذكاء اصطناعي", "عالمي"),
+    ("أخبار التقنية", "https://www.theverge.com/rss/index.xml", "تقنيات", "عالمي"),
+    ("أبحاث الذكاء الاصطناعي", "https://export.arxiv.org/rss/cs.AI", "أبحاث", "عالمي"),
+    ("أبحاث تعلّم الآلة", "https://export.arxiv.org/rss/cs.LG", "أبحاث", "عالمي"),
+    ("أخبار التقنية السعودية", "https://news.google.com/rss/search?" + urlencode({"q": "الذكاء الاصطناعي OR التقنية السعودية when:2d", "hl": "ar", "gl": "SA", "ceid": "SA:ar"}), "السعودية", "السعودية"),
+    ("فرص وبرامج تقنية", "https://news.google.com/rss/search?" + urlencode({"q": "تدريب تقنية ذكاء اصطناعي طلاب السعودية OR سدايا when:3d", "hl": "ar", "gl": "SA", "ceid": "SA:ar"}), "فرص", "السعودية"),
+    ("برمجة بايثون", "https://news.google.com/rss/search?" + urlencode({"q": "Python developer tools release when:2d", "hl": "en", "gl": "US", "ceid": "US:en"}), "برمجة", "عالمي"),
+]
+SINCE = (NOW - dt.timedelta(days=45)).strftime("%Y-%m-%d")
+REPO_QUERIES = [
+    f"topic:artificial-intelligence stars:>150 pushed:>{SINCE} archived:false",
+    f"topic:ai-agents stars:>100 pushed:>{SINCE} archived:false",
+    f"language:Python topic:machine-learning stars:>150 pushed:>{SINCE} archived:false",
+]
+BLOCKED = {"youtube.com", "www.youtube.com", "tiktok.com"}
+TRACKING = {"utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "fbclid", "gclid", "ref", "ref_src"}
+KEYWORDS = {
+    "ذكاء اصطناعي": ["model", "openai", "anthropic", "gemini", "ai", "llm", "transformer", "chatgpt", "artificial intelligence", "ذكاء", "نماذج", "نموذج"],
+    "برمجة": ["python", "pytorch", "developer", "programming", "coding", "github", "code", "release", "rust", "framework", "بايثون", "مطور", "برمجة"],
+    "أبحاث": ["research", "paper", "arxiv", "study", "benchmark", "dataset", "علمي", "أبحاث", "بحث"],
+    "فرص": ["job", "internship", "scholarship", "training", "hackathon", "university", "students", "وظائف", "تدريب", "منحة", "طلاب", "هاكاثون"],
+    "تقنيات": ["device", "hardware", "processor", "chip", "phone", "robot", "app", "technology", "معالج", "هاتف", "تقنية", "تطبيق"],
+}
+PROJECT_DOMAINS = {
+    "agents": ["agent", "orchestration", "langgraph", "multiagent", "autonomous", "workflow"],
+    "vision": ["vision", "image", "diffusion", "stable-diffusion", "comfy", "video", "yolo"],
+    "speech": ["speech", "audio", "voice", "whisper", "tts", "asr"],
+    "data": ["dataset", "dataframe", "analytics", "etl", "database", "sql", "pandas"],
+    "devtools": ["developer", "package", "lint", "formatter", "compiler", "terminal", "cli", "uv", "ruff", "git"],
+    "search": ["rag", "retrieval", "embedding", "vector", "semantic", "search"],
+    "inference": ["llm", "inference", "transformer", "llama", "local", "ollama", "vllm", "model"],
+    "education": ["education", "learn", "course", "tutorial", "curriculum"],
+}
+
+
+class Stripper(HTMLParser):
+    def __init__(self):
+        super().__init__(); self.parts = []
+    def handle_data(self, data): self.parts.append(data)
+
+
+def clean_text(value, limit=650):
+    if not value: return ""
+    stripper = Stripper()
+    try: stripper.feed(str(value)); text = " ".join(stripper.parts)
+    except Exception: text = str(value)
+    text = unicodedata.normalize("NFKC", html.unescape(text))
+    text = re.sub(r"\s+", " ", text).strip()
+    return text[:limit].rstrip()
+
+
+def valid_url(u):
+    if not u or not isinstance(u, str): return ""
+    p = urlparse(u.strip())
+    if p.scheme != "https" or not p.netloc or p.hostname in BLOCKED: return ""
+    if p.username or p.password: return ""
+    return u.strip()
+
+
+def canonical(u):
+    try:
+        p = urlparse(u)
+        query = urlencode([(k, v) for k, v in parse_qsl(p.query) if k.lower() not in TRACKING])
+        return urlunparse((p.scheme.lower(), p.netloc.lower(), p.path.rstrip("/").lower(), "", query, ""))
+    except Exception: return u
+
+
+def stable_id(u): return hashlib.sha256(canonical(u).encode("utf-8")).hexdigest()[:18]
+
+
+def title_fingerprint(title):
+    value = clean_text(title, 220).casefold()
+    value = re.sub(r"\s+[-–|]\s+[^-–|]{2,35}$", "", value)
+    value = re.sub(r"[^\w\u0600-\u06ff]+", "", value)
+    return hashlib.sha256(value.encode("utf-8")).hexdigest()[:18] if len(value) >= 18 else ""
+
+
+def request_bytes(url, headers=None):
+    h = dict(DEFAULT_HEADERS)
+    if headers: h.update(headers)
+    req = Request(url, headers=h)
+    with urlopen(req, timeout=TIMEOUT) as resp:
+        if resp.status != 200: raise RuntimeError("HTTP " + str(resp.status))
+        body = resp.read(3_000_000 + 1)
+        if len(body) > 3_000_000: raise ValueError("feed too large")
+        return body
+
+
+def request_json(url, headers=None): return json.loads(request_bytes(url, headers).decode("utf-8"))
+
+
+def date_iso(text):
+    if not text: return NOW.isoformat(timespec="seconds")
+    try:
+        stamp = parsedate_to_datetime(str(text))
+    except Exception:
+        try: stamp = dt.datetime.fromisoformat(str(text).replace("Z", "+00:00"))
+        except Exception: return NOW.isoformat(timespec="seconds")
+    if stamp.tzinfo is None: stamp = stamp.replace(tzinfo=UTC)
+    return stamp.astimezone(UTC).isoformat(timespec="seconds")
+
+
+def age_hours(date):
+    try: return max(0, (NOW - dt.datetime.fromisoformat(date.replace("Z", "+00:00"))).total_seconds() / 3600)
+    except Exception: return 10000
+
+
+def category_for(text, initial="تقنيات"):
+    s = (text or "").lower()
+    scores = {key:sum(1 for term in terms if re.search(r"(?<![a-z])" + re.escape(term) + r"(?![a-z])", s)) for key, terms in KEYWORDS.items()}
+    best = max(scores, key=scores.get)
+    return best if scores[best] >= 2 else initial
+
+
+def repo_domain(repo):
+    hay = " ".join([repo.get("full_name", ""), repo.get("description") or "", *repo.get("topics", [])]).lower()
+    matches = {key: sum(1 for w in terms if w in hay) for key, terms in PROJECT_DOMAINS.items()}
+    best = max(matches, key=matches.get)
+    return best if matches[best] else "general"
+
+
+def score_item(item):
+    h = age_hours(item.get("publishedAt", ""))
+    recency = max(0, 28 * math.exp(-h / 64))
+    if item["kind"] == "project":
+        stars = max(0, item.get("stars") or 0)
+        forks = max(0, item.get("forks") or 0)
+        return round(min(99, 4.4 * math.log1p(stars) + 1.3 * math.log1p(forks) + recency), 2)
+    pts = max(0, item.get("points") or 0)
+    comments = max(0, item.get("comments") or 0)
+    source_signal = 8 if item.get("source") not in ("Google News", "Hacker News") else 4
+    return round(min(99, 8.2 * math.log1p(pts) + 2.1 * math.log1p(comments) + source_signal + recency), 2)
+
+
+def local(tag): return tag.rsplit("}", 1)[-1].lower()
+
+
+def node_text(parent, *names):
+    for child in parent:
+        if local(child.tag) in names and child.text: return child.text.strip()
+    return ""
+
+
+def rss_image(node):
+    for child in node.iter():
+        kind = local(child.tag)
+        attrs = child.attrib
+        if kind in ("thumbnail", "content"):
+            u = attrs.get("url")
+            if valid_url(u) and (kind == "thumbnail" or attrs.get("medium") == "image"): return u
+        if kind == "enclosure" and attrs.get("type", "").startswith("image/"):
+            u = attrs.get("url")
+            if valid_url(u): return u
+    # Do not present a logo as a project screenshot.
+    return ""
+
+
+def collect_rss():
+    out = []
+    for source, url, default_cat, region in FEEDS:
+        try:
+            raw = request_bytes(url)
+            tree = ET.fromstring(raw)
+            items = [node for node in tree.iter() if local(node.tag) in ("item", "entry")]
+            for item in items[:34]:
+                title = clean_text(node_text(item, "title"), 180)
+                link = node_text(item, "link")
+                if not link:
+                    for c in item:
+                        if local(c.tag) == "link" and c.attrib.get("href"):
+                            link = c.attrib["href"]; break
+                link = valid_url(link)
+                if not title or not link: continue
+                summary = clean_text(node_text(item, "description", "summary", "content", "encoded"), 800)
+                published = date_iso(node_text(item, "pubdate", "published", "updated", "date"))
+                if age_hours(published) > 24 * 21: continue
+                category = default_cat if default_cat in ("السعودية", "فرص", "أبحاث") else category_for(title + " " + summary, default_cat)
+                domain = urlparse(link).hostname or ""
+                detected_source = source
+                if "news.google.com" in domain:
+                    gsource = next((c.text for c in item if local(c.tag) == "source" and c.text), "")
+                    detected_source = clean_text(gsource, 55) or "Google News"
+                out.append({
+                    "id": stable_id(link), "kind": "news", "title": title,
+                    "description": summary or "تفاصيل الخبر في المصدر الأصلي؛ لم يتوفر ملخص موسّع في التغذية.",
+                    "impact": "تحليل مبدئي: راجع المصدر لفهم الآثار التقنية والإعلان الكامل، فقد تختلف النتائج بحسب الاستخدام.",
+                    "url": link, "source": detected_source, "category": category, "region": region,
+                    "publishedAt": published, "image": rss_image(item), "points": 0, "comments": 0,
+                    "metric": "التقدير: حداثة ومصدر", "ideaDomain": "general",
+                })
+        except Exception as exc: logging.warning("RSS %s failed: %s", source, exc)
+    return out
+
+
+def collect_hn():
+    url = "https://hn.algolia.com/api/v1/search?" + urlencode({"tags": "front_page", "hitsPerPage": "90"})
+    try: hits = request_json(url).get("hits", [])
+    except Exception as exc: logging.warning("Hacker News failed: %s", exc); return []
+    out = []
+    for hit in hits:
+        title = clean_text(hit.get("title") or "", 180)
+        s = (title + " " + str(hit.get("url", ""))).lower()
+        if not title or not any(w in s for w in ["ai", "llm", "python", "robot", "open source", "github", "research", "gpu", "chip", "software", "programming", "developer", "model", "code"]):
+            continue
+        link = valid_url(hit.get("url") or "")
+        if not link: continue
+        points, comments = hit.get("points") or 0, hit.get("num_comments") or 0
+        out.append({"id": stable_id(link), "kind": "news", "title": title,
+                    "description": "موضوع تقني يحظى بنقاش على Hacker News. افتح المصدر الأساسي لمعرفة التفاصيل، ثم راجع النقاش لآراء المطورين.",
+                    "impact": "مؤشر التفاعل هنا يعتمد على التصويتات والتعليقات الفعلية في Hacker News، وليس عدد المشاهدات.",
+                    "url": link, "source": "Hacker News", "category": category_for(title, "تقنيات"), "region": "عالمي",
+                    "publishedAt": date_iso(hit.get("created_at")), "image": "", "points": points,
+                    "comments": comments, "hnUrl": "https://news.ycombinator.com/item?id=" + str(hit.get("objectID", "")),
+                    "metric": f"{points} نقطة · {comments} تعليق", "ideaDomain": "general"})
+    return out
+
+
+
+
+def repo_images(repo, headers):
+    """Best-effort README screenshot extraction. Never treat avatar images as screenshots."""
+    full = repo.get("full_name", "")
+    branch = repo.get("default_branch") or "main"
+    if not re.fullmatch(r"[\w.\-]+/[\w.\-]+", full): return []
+    try:
+        raw = request_bytes("https://api.github.com/repos/" + full + "/readme", {**headers, "Accept":"application/vnd.github.raw+json"})
+        body = raw.decode("utf-8", errors="replace")[:70000]
+        candidates = re.findall(r"!\[[^]]{0,200}\]\(([^\s)]+)", body)
+        candidates += re.findall(r"<img[^>]+src=[\"']([^\"']+)", body, re.I)
+        output = []
+        for link in candidates:
+            link = html.unescape(link).strip('\"\'')
+            if any(x in link.lower() for x in ("shields.io", "badge", "travis", "workflow", "coverage", "github.com/actions/")): continue
+            if link.startswith("./"): link = link[2:]
+            if link.startswith("/" ) and not link.startswith("//"): link = link[1:]
+            if not re.match(r"https?://",link):
+                link = f"https://raw.githubusercontent.com/{full}/{branch}/{link}"
+            link = valid_url(link)
+            if link and link not in output and any(x in link.lower().split('?')[0] for x in (".png", ".jpg", ".jpeg", ".webp", ".gif", ".svg")):
+                output.append(link)
+            if len(output) >= 3: break
+        return output
+    except Exception as exc:
+        logging.info("README preview skipped for %s: %s", full, str(exc)[:70])
+        return []
+
+
+def collect_repos():
+    headers = {"Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28"}
+    if os.getenv("GITHUB_TOKEN"): headers["Authorization"] = "Bearer " + os.environ["GITHUB_TOKEN"]
+    repos = {}
+    for q in REPO_QUERIES:
+        try:
+            url = "https://api.github.com/search/repositories?" + urlencode({"q": q, "sort": "stars", "order": "desc", "per_page": 35})
+            result = request_json(url, headers)
+            for r in result.get("items", []): repos[r["full_name"].lower()] = r
+        except Exception as exc: logging.warning("GitHub search failed: %s", exc)
+        time.sleep(.22)
+    out = []
+    for r in repos.values():
+        if r.get("fork") or r.get("archived") or not r.get("html_url"): continue
+        desc = clean_text(r.get("description") or "", 380)
+        name = clean_text(r.get("name") or "", 100)
+        full = clean_text(r.get("full_name") or "", 180)
+        if not name or not full: continue
+        topics = [str(t)[:36] for t in (r.get("topics") or [])[:10]]
+        domain = repo_domain(r)
+        out.append({
+            "id": stable_id(r["html_url"]), "kind": "project", "title": name,
+            "description": desc or "مستودع برمجي مفتوح المصدر. اقرأ README الرسمي للمزيد من التفاصيل.",
+            "impact": "قد يفيد في التجارب العملية أو التعلّم أو دمجه في مشاريعك؛ راجع الترخيص والتوثيق قبل الاعتماد عليه.",
+            "url": r["html_url"], "source": "GitHub", "category": "مفتوح المصدر", "region": "عالمي",
+            "publishedAt": date_iso(r.get("pushed_at") or r.get("updated_at")),
+            "image": "", "avatar": valid_url((r.get("owner") or {}).get("avatar_url", "")),
+            "stars": r.get("stargazers_count") or 0, "forks": r.get("forks_count") or 0,
+            "language": r.get("language") or "غير محدد", "license": ((r.get("license") or {}).get("spdx_id") or "غير محدد"),
+            "topics": topics, "repo": full, "ideaDomain": domain,
+            "metric": f"{r.get('stargazers_count') or 0:,} نجمة GitHub",
+        })
+    out.sort(key=lambda x: (x["stars"], x["publishedAt"]), reverse=True)
+    for entry in out[:10]:
+        repo = repos.get(entry["repo"].lower())
+        if repo:
+            entry["gallery"] = repo_images(repo, headers)
+            entry["image"] = entry["gallery"][0] if entry["gallery"] else ""
+    return out[:MAX_PROJECTS]
+
+
+def merge(new_items, prior):
+    existing = {x.get("id"): x for x in prior if isinstance(x, dict) and x.get("id")}
+    key_to_id = {canonical(x.get("url", "")): x["id"] for x in existing.values() if x.get("url")}
+    title_to_id = {title_fingerprint(x.get("title", "")):x["id"] for x in existing.values() if x.get("kind")=="news" and title_fingerprint(x.get("title", ""))}
+    added = 0
+    for fresh in new_items:
+        u = canonical(fresh.get("url", ""))
+        finger = title_fingerprint(fresh.get("title", "")) if fresh.get("kind")=="news" else ""
+        prior_id = key_to_id.get(u) or (title_to_id.get(finger) if finger else None)
+        old = existing.get(prior_id or fresh["id"])
+        if old:
+            if fresh["kind"] == "project":
+                # Keep updated metrics, but retain initial discovery ID.
+                first_seen = old.get("firstSeenAt", NOW.isoformat(timespec="seconds"))
+                retained_images = old.get("gallery") or []
+                old.update(fresh); old["firstSeenAt"] = first_seen
+                if retained_images and not fresh.get("gallery"):
+                    old["gallery"] = retained_images
+                    old["image"] = retained_images[0]
+            else:
+                # Higher-quality RSS summary wins over generic HN text.
+                if len(fresh.get("description", "")) > len(old.get("description", "")):
+                    old["description"] = fresh["description"]
+                old["points"] = max(fresh.get("points", 0), old.get("points", 0))
+                old["comments"] = max(fresh.get("comments", 0), old.get("comments", 0))
+                old["hnUrl"] = fresh.get("hnUrl") or old.get("hnUrl", "")
+                if fresh.get("image") and not old.get("image"): old["image"] = fresh["image"]
+                # Prefer a verified publisher link over a Google News intermediate link.
+                if "news.google.com" in urlparse(old.get("url", "")).netloc and "news.google.com" not in urlparse(fresh.get("url", "")).netloc:
+                    old["url"] = fresh["url"]; old["source"] = fresh["source"]
+        else:
+            fresh["firstSeenAt"] = NOW.isoformat(timespec="seconds")
+            existing[fresh["id"]] = fresh; key_to_id[u] = fresh["id"]
+            if finger: title_to_id[finger] = fresh["id"]
+            added += 1
+    values = [v for v in existing.values() if v.get("kind") in ("project", "news") and valid_url(v.get("url", ""))]
+    for v in values: v["score"] = score_item(v)
+    news = sorted([x for x in values if x["kind"] == "news"], key=lambda x:x.get("publishedAt", ""), reverse=True)[:MAX_NEWS]
+    projects = sorted([x for x in values if x["kind"] == "project"], key=lambda x:x.get("score", 0), reverse=True)[:MAX_PROJECTS]
+    return sorted(news + projects, key=lambda x:(x["score"], x.get("publishedAt", "")), reverse=True), added
+
+
+def main():
+    logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
+    old_data = {}
+    if OUTPUT.exists():
+        try: old_data = json.loads(OUTPUT.read_text(encoding="utf-8"))
+        except Exception: logging.warning("Existing JSON cannot be parsed; starting fresh")
+    fresh = collect_rss() + collect_hn() + collect_repos()
+    try: prior_seen=json.loads(SEEN.read_text(encoding="utf-8"))
+    except (OSError, ValueError): prior_seen={}
+    seen_ids=set(prior_seen.get("ids", []))
+    seen_titles=set(prior_seen.get("titles", []))
+    active_ids={x.get("id") for x in old_data.get("items", [])}
+    active_titles={title_fingerprint(x.get("title", "")) for x in old_data.get("items", []) if x.get("kind")=="news"}
+    # Never re-introduce a previously archived article, even if it resurfaces in RSS.
+    candidate_news=[x for x in fresh if x.get("kind")=="news"]
+    news_filtered=[x for x in candidate_news if x["id"] not in seen_ids or x["id"] in active_ids]
+    news_filtered=[x for x in news_filtered if not title_fingerprint(x.get("title", "")) or title_fingerprint(x["title"]) not in seen_titles or title_fingerprint(x["title"]) in active_titles]
+    fresh=news_filtered+[x for x in fresh if x.get("kind")=="project"]
+    if not fresh:
+        logging.warning("All sources unavailable; preserving previous snapshot, no bogus new timestamp")
+        if old_data.get("items"): return 0
+        return 1
+    merged, added = merge(fresh, old_data.get("items", []))
+    payload = {"generatedAt": NOW.isoformat(timespec="seconds"), "timezone": "Asia/Riyadh",
+               "newItems": added, "rankNote": "مؤشر تقريبي من تفاعل Hacker News ونجوم GitHub وحداثة التحديث؛ لا يمثل المشاهدات الفعلية.",
+               "items": merged}
+    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+    OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    seen_ids.update(x["id"] for x in candidate_news)
+    seen_ids.update(x["id"] for x in merged if x["kind"]=="news")
+    seen_titles.update(title_fingerprint(x.get("title", "")) for x in candidate_news)
+    seen_titles.update(title_fingerprint(x.get("title", "")) for x in merged if x["kind"]=="news")
+    SEEN.write_text(json.dumps({"ids": sorted(seen_ids), "titles": sorted(t for t in seen_titles if t)}, ensure_ascii=False) + "\n", encoding="utf-8")
+    logging.info("Updated feed: %s items (%s newly discovered)", len(merged), added)
+    return 0
+
+if __name__ == "__main__": sys.exit(main())
