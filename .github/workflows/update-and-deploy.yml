@@ -1,0 +1,65 @@
+name: Refresh news and deploy Nabdh
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Every three hours (UTC). Local Saudi Arabia time: 03:17, 06:17, ...
+    - cron: '17 */3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: nabdh-pages
+  cancel-in-progress: false
+
+jobs:
+  refresh-and-publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out the default branch
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run offline tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Refresh public feeds
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update_feed.py
+
+      - name: Preserve history to prevent repeated posts
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add site/data/feed.json site/data/seen.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: refresh deduplicated technology feed'
+            git push origin HEAD:main
+          fi
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload static website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+      - name: Deploy static website
+        id: deployment
+        uses: actions/deploy-pages@v4
