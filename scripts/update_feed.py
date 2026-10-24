@@ -17,6 +17,8 @@ import re
 import sys
 import time
 import unicodedata
+from concurrent.futures import ThreadPoolExecutor
+from urllib.error import HTTPError, URLError
 from email.utils import parsedate_to_datetime
 from html.parser import HTMLParser
 from pathlib import Path
@@ -31,11 +33,20 @@ UTC = dt.timezone.utc
 NOW = dt.datetime.now(UTC)
 USER_AGENT = "TechPulseArabic/1.0 (+https://github.com; public feeds; editorial project)"
 TIMEOUT = 16
-MAX_NEWS = 220
-MAX_PROJECTS = 55
+MAX_NEWS = max(1, min(2000, int(os.getenv("NABDH_MAX_NEWS", "700"))))
+MAX_PROJECTS = max(1, min(250, int(os.getenv("NABDH_MAX_PROJECTS", "100"))))
+SOURCE_STATUS = []
+STATUS = ROOT / "site" / "data" / "status.json"
 DEFAULT_HEADERS = {"User-Agent": USER_AGENT, "Accept": "application/json, application/rss+xml, application/atom+xml, */*"}
 
 FEEDS = [
+    ("OpenAI — المصدر الرسمي", "https://openai.com/news/rss.xml", "ذكاء اصطناعي", "عالمي"),
+    ("Hugging Face", "https://huggingface.co/blog/feed.xml", "ذكاء اصطناعي", "عالمي"),
+    ("GitHub Blog", "https://github.blog/feed/", "برمجة", "عالمي"),
+    ("Python — المصدر الرسمي", "https://blog.python.org/feeds/posts/default?alt=rss", "برمجة", "عالمي"),
+    ("Microsoft Research", "https://www.microsoft.com/en-us/research/feed/", "أبحاث", "عالمي"),
+    ("البوابة العربية للأخبار التقنية", "https://aitnews.com/feed/", "تقنيات", "عالمي"),
+    ("عالم التقنية", "https://www.tech-wd.com/wd/feed/", "تقنيات", "عالمي"),
     ("تقارير الذكاء الاصطناعي", "https://techcrunch.com/category/artificial-intelligence/feed/", "ذكاء اصطناعي", "عالمي"),
     ("أخبار التقنية", "https://www.theverge.com/rss/index.xml", "تقنيات", "عالمي"),
     ("تقنية BBC", "https://feeds.bbci.co.uk/news/technology/rss.xml", "تقنيات", "عالمي"),
@@ -52,6 +63,10 @@ SINCE = (NOW - dt.timedelta(days=45)).strftime("%Y-%m-%d")
 REPO_QUERIES = [
     f"topic:artificial-intelligence stars:>150 pushed:>{SINCE} archived:false",
     f"topic:ai-agents stars:>100 pushed:>{SINCE} archived:false",
+    f"topic:developer-tools stars:>100 pushed:>{SINCE} archived:false",
+    f"topic:rag stars:>100 pushed:>{SINCE} archived:false",
+    f"topic:text-to-speech stars:>100 pushed:>{SINCE} archived:false",
+    f"topic:education stars:>100 pushed:>{SINCE} archived:false",
     f"language:Python topic:machine-learning stars:>150 pushed:>{SINCE} archived:false",
 ]
 BLOCKED = {"youtube.com", "www.youtube.com", "tiktok.com"}
@@ -103,7 +118,7 @@ def canonical(u):
     try:
         p = urlparse(u)
         query = urlencode([(k, v) for k, v in parse_qsl(p.query) if k.lower() not in TRACKING])
-        return urlunparse((p.scheme.lower(), p.netloc.lower(), p.path.rstrip("/").lower(), "", query, ""))
+        return urlunparse((p.scheme.lower(), p.netloc.lower(), p.path.rstrip("/"), "", query, ""))
     except Exception: return u
 
 
@@ -120,24 +135,33 @@ def title_fingerprint(title):
 def request_bytes(url, headers=None):
     h = dict(DEFAULT_HEADERS)
     if headers: h.update(headers)
-    req = Request(url, headers=h)
-    with urlopen(req, timeout=TIMEOUT) as resp:
-        if resp.status != 200: raise RuntimeError("HTTP " + str(resp.status))
-        body = resp.read(3_000_000 + 1)
-        if len(body) > 3_000_000: raise ValueError("feed too large")
-        return body
+    for attempt in range(3):
+        try:
+            req = Request(url, headers=h)
+            with urlopen(req, timeout=TIMEOUT) as resp:
+                if resp.status != 200: raise RuntimeError("HTTP " + str(resp.status))
+                body = resp.read(3_000_000 + 1)
+                if len(body) > 3_000_000: raise ValueError("feed too large")
+                return body
+        except HTTPError as exc:
+            if exc.code not in (429, 500, 502, 503, 504) or attempt == 2: raise
+            retry = exc.headers.get("Retry-After", "")
+            time.sleep(min(8, int(retry)) if retry.isdigit() else 2 ** attempt)
+        except (URLError, TimeoutError):
+            if attempt == 2: raise
+            time.sleep(2 ** attempt)
 
 
 def request_json(url, headers=None): return json.loads(request_bytes(url, headers).decode("utf-8"))
 
 
 def date_iso(text):
-    if not text: return NOW.isoformat(timespec="seconds")
+    if not text: return ""
     try:
         stamp = parsedate_to_datetime(str(text))
     except Exception:
         try: stamp = dt.datetime.fromisoformat(str(text).replace("Z", "+00:00"))
-        except Exception: return NOW.isoformat(timespec="seconds")
+        except Exception: return ""
     if stamp.tzinfo is None: stamp = stamp.replace(tzinfo=UTC)
     return stamp.astimezone(UTC).isoformat(timespec="seconds")
 
@@ -302,47 +326,60 @@ def rss_image(node):
     return ""
 
 
-def collect_rss():
+def collect_one_rss(feed):
+    source, url, default_cat, region = feed
     out = []
-    for source, url, default_cat, region in FEEDS:
-        try:
-            raw = request_bytes(url)
-            tree = ET.fromstring(raw)
-            items = [node for node in tree.iter() if local(node.tag) in ("item", "entry")]
-            for item in items[:34]:
-                title = clean_text(node_text(item, "title"), 180)
-                link = node_text(item, "link")
-                if not link:
-                    for c in item:
-                        if local(c.tag) == "link" and c.attrib.get("href"):
-                            link = c.attrib["href"]; break
-                link = valid_url(link)
-                if not title or not link: continue
-                summary = clean_text(node_text(item, "description", "summary", "content", "encoded"), 800)
-                published = date_iso(node_text(item, "pubdate", "published", "updated", "date"))
-                if age_hours(published) > 24 * 21: continue
-                category = default_cat if default_cat in ("السعودية", "فرص", "أبحاث") else category_for(title + " " + summary, default_cat)
-                domain = urlparse(link).hostname or ""
-                detected_source = source
-                if "news.google.com" in domain:
-                    gsource = next((c.text for c in item if local(c.tag) == "source" and c.text), "")
-                    detected_source = clean_text(gsource, 55) or "Google News"
-                out.append({
-                    "id": stable_id(link), "kind": "news", "title": title,
-                    "description": summary or "تفاصيل الخبر في المصدر الأصلي؛ لم يتوفر ملخص موسّع في التغذية.",
-                    "impact": "تحليل مبدئي: راجع المصدر لفهم الآثار التقنية والإعلان الكامل، فقد تختلف النتائج بحسب الاستخدام.",
-                    "url": link, "source": detected_source, "category": category, "region": region,
-                    "publishedAt": published, "image": rss_image(item), "points": 0, "comments": 0,
-                    "metric": "التقدير: حداثة ومصدر", "ideaDomain": "general",
-                })
-        except Exception as exc: logging.warning("RSS %s failed: %s", source, exc)
+    started = time.monotonic()
+    try:
+        raw = request_bytes(url)
+        tree = ET.fromstring(raw)
+        items = [node for node in tree.iter() if local(node.tag) in ("item", "entry")]
+        for item in items[:34]:
+            title = clean_text(node_text(item, "title"), 180)
+            link = node_text(item, "link")
+            if not link:
+                for c in item:
+                    if local(c.tag) == "link" and c.attrib.get("href") and c.attrib.get("rel", "alternate") == "alternate":
+                        link = c.attrib["href"]; break
+            link = valid_url(link)
+            if not title or not link: continue
+            summary = clean_text(node_text(item, "description", "summary", "content", "encoded"), 800)
+            published = date_iso(node_text(item, "pubdate", "published", "updated", "date"))
+            if not published or age_hours(published) > 24 * 21: continue
+            if dt.datetime.fromisoformat(published) > NOW + dt.timedelta(hours=24): continue
+            category = default_cat if default_cat in ("السعودية", "فرص", "أبحاث") else category_for(title + " " + summary, default_cat)
+            domain = urlparse(link).hostname or ""
+            detected_source = source
+            if "news.google.com" in domain:
+                gsource = next((c.text for c in item if local(c.tag) == "source" and c.text), "")
+                detected_source = clean_text(gsource, 55) or "Google News"
+            out.append({
+                "id": stable_id(link), "kind": "news", "title": title,
+                "description": summary or "تفاصيل الخبر في المصدر الأصلي؛ لم يتوفر ملخص موسّع في التغذية.",
+                "impact": "تحليل مبدئي: راجع المصدر لفهم الآثار التقنية والإعلان الكامل، فقد تختلف النتائج بحسب الاستخدام.",
+                "url": link, "source": detected_source, "category": category, "region": region,
+                "publishedAt": published, "image": rss_image(item), "points": 0, "comments": 0,
+                "metric": "التقدير: حداثة ومصدر", "ideaDomain": "general",
+            })
+        SOURCE_STATUS.append({"name": source, "url": url, "state": "ok" if out else "empty", "items": len(out), "checkedAt": NOW.isoformat(timespec="seconds"), "seconds": round(time.monotonic()-started, 2)})
+    except Exception as exc:
+        logging.warning("RSS %s failed: %s", source, exc)
+        SOURCE_STATUS.append({"name": source, "url": url, "state": "error", "items": 0, "checkedAt": NOW.isoformat(timespec="seconds"), "error": "HTTP " + str(exc.code) if isinstance(exc, HTTPError) else type(exc).__name__})
     return out
+
+
+def collect_rss():
+    with ThreadPoolExecutor(max_workers=5) as pool:
+        return [item for result in pool.map(collect_one_rss, FEEDS) for item in result]
 
 
 def collect_hn():
     url = "https://hn.algolia.com/api/v1/search?" + urlencode({"tags": "front_page", "hitsPerPage": "90"})
     try: hits = request_json(url).get("hits", [])
-    except Exception as exc: logging.warning("Hacker News failed: %s", exc); return []
+    except Exception as exc:
+        logging.warning("Hacker News failed: %s", exc)
+        SOURCE_STATUS.append({"name":"Hacker News", "state":"error", "items":0, "error":type(exc).__name__})
+        return []
     out = []
     for hit in hits:
         title = clean_text(hit.get("title") or "", 180)
@@ -359,9 +396,8 @@ def collect_hn():
                     "publishedAt": date_iso(hit.get("created_at")), "image": "", "points": points,
                     "comments": comments, "hnUrl": "https://news.ycombinator.com/item?id=" + str(hit.get("objectID", "")),
                     "metric": f"{points} نقطة · {comments} تعليق", "ideaDomain": "general"})
+    SOURCE_STATUS.append({"name":"Hacker News", "state":"ok" if out else "empty", "items":len(out)})
     return out
-
-
 
 
 def repo_images(repo, headers):
@@ -398,10 +434,13 @@ def collect_repos():
     repos = {}
     for q in REPO_QUERIES:
         try:
-            url = "https://api.github.com/search/repositories?" + urlencode({"q": q, "sort": "stars", "order": "desc", "per_page": 35})
+            url = "https://api.github.com/search/repositories?" + urlencode({"q": q, "sort": "stars", "order": "desc", "per_page": 25})
             result = request_json(url, headers)
             for r in result.get("items", []): repos[r["full_name"].lower()] = r
-        except Exception as exc: logging.warning("GitHub search failed: %s", exc)
+            SOURCE_STATUS.append({"name":"GitHub: " + q.split(" stars:")[0], "state":"ok" if result.get("items") else "empty", "items":len(result.get("items", []))})
+        except Exception as exc:
+            logging.warning("GitHub search failed: %s", exc)
+            SOURCE_STATUS.append({"name":"GitHub: " + q.split(" stars:")[0], "state":"error", "items":0, "error":type(exc).__name__})
         time.sleep(.22)
     out = []
     for r in repos.values():
@@ -430,7 +469,27 @@ def collect_repos():
         if repo:
             entry["gallery"] = repo_images(repo, headers)
             entry["image"] = entry["gallery"][0] if entry["gallery"] else ""
-    return out[:MAX_PROJECTS]
+    return diverse_selection(out, MAX_PROJECTS, "ideaDomain")
+
+
+def diverse_selection(items, limit, field):
+    """Round-robin across categories, preserving order within each category."""
+    groups = {}
+    for item in items: groups.setdefault(item.get(field, "general"), []).append(item)
+    selected = []
+    while groups and len(selected) < limit:
+        for key in list(groups):
+            selected.append(groups[key].pop(0))
+            if not groups[key]: del groups[key]
+            if len(selected) == limit: break
+    return selected
+
+
+def write_json(path, data):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temp = path.with_suffix(".tmp")
+    temp.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    temp.replace(path)
 
 
 def merge(new_items, prior):
@@ -448,7 +507,8 @@ def merge(new_items, prior):
                 # Keep updated metrics, but retain initial discovery ID.
                 first_seen = old.get("firstSeenAt", NOW.isoformat(timespec="seconds"))
                 retained_images = old.get("gallery") or []
-                old.update(fresh); old["firstSeenAt"] = first_seen
+                retained_id = old["id"]
+                old.update(fresh); old["firstSeenAt"] = first_seen; old["id"] = retained_id
                 if retained_images and not fresh.get("gallery"):
                     old["gallery"] = retained_images
                     old["image"] = retained_images[0]
@@ -470,8 +530,10 @@ def merge(new_items, prior):
             added += 1
     values = [v for v in existing.values() if v.get("kind") in ("project", "news") and valid_url(v.get("url", ""))]
     for v in values: v["score"] = score_item(v)
-    news = sorted([x for x in values if x["kind"] == "news"], key=lambda x:x.get("publishedAt", ""), reverse=True)[:MAX_NEWS]
-    projects = sorted([x for x in values if x["kind"] == "project"], key=lambda x:x.get("score", 0), reverse=True)[:MAX_PROJECTS]
+    news = sorted([x for x in values if x["kind"] == "news"], key=lambda x:x.get("publishedAt", ""), reverse=True)
+    news = diverse_selection(news, MAX_NEWS, "category")
+    projects = sorted([x for x in values if x["kind"] == "project"], key=lambda x:x.get("score", 0), reverse=True)
+    projects = diverse_selection(projects, MAX_PROJECTS, "ideaDomain")
     return sorted(news + projects, key=lambda x:(x["score"], x.get("publishedAt", "")), reverse=True), added
 
 
@@ -481,6 +543,7 @@ def main():
     if OUTPUT.exists():
         try: old_data = json.loads(OUTPUT.read_text(encoding="utf-8"))
         except Exception: logging.warning("Existing JSON cannot be parsed; starting fresh")
+    SOURCE_STATUS.clear()
     fresh = collect_rss() + collect_hn() + collect_repos()
     enrich_missing_news_images(fresh, old_data.get("items", []))
     try: prior_seen=json.loads(SEEN.read_text(encoding="utf-8"))
@@ -494,6 +557,12 @@ def main():
     news_filtered=[x for x in candidate_news if x["id"] not in seen_ids or x["id"] in active_ids]
     news_filtered=[x for x in news_filtered if not title_fingerprint(x.get("title", "")) or title_fingerprint(x["title"]) not in seen_titles or title_fingerprint(x["title"]) in active_titles]
     fresh=news_filtered+[x for x in fresh if x.get("kind")=="project"]
+    available = any(x["state"] in ("ok", "empty") for x in SOURCE_STATUS)
+    write_json(STATUS, {"lastAttemptAt": NOW.isoformat(timespec="seconds"),
+                       "lastSuccessfulAt": NOW.isoformat(timespec="seconds") if fresh else old_data.get("generatedAt"),
+                       "state": "partial" if fresh and any(x["state"] == "error" for x in SOURCE_STATUS) else "ok" if fresh else "empty" if available else "error",
+                       "sources": sorted(SOURCE_STATUS, key=lambda x:x["name"]),
+                       "collected": len(fresh)})
     if not fresh:
         logging.warning("All sources unavailable; preserving previous snapshot, no bogus new timestamp")
         if old_data.get("items"): return 0
@@ -503,7 +572,7 @@ def main():
                "newItems": added, "rankNote": "مؤشر تقريبي من تفاعل Hacker News ونجوم GitHub وحداثة التحديث؛ لا يمثل المشاهدات الفعلية.",
                "items": merged}
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    write_json(OUTPUT, payload)
     seen_ids.update(x["id"] for x in candidate_news)
     seen_ids.update(x["id"] for x in merged if x["kind"]=="news")
     seen_titles.update(title_fingerprint(x.get("title", "")) for x in candidate_news)
