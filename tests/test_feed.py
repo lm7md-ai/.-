@@ -48,6 +48,8 @@ class TestFeed(unittest.TestCase):
 
     def test_rss_parse_using_fake_response(self):
         rss=b'<rss><channel><item><title>New Python tool released</title><link>https://example.com/news</link><pubDate>Mon, 19 Oct 2026 12:00:00 GMT</pubDate><description>Great update</description></item></channel></rss>'
+        from email.utils import format_datetime
+        rss=rss.replace(b'Mon, 19 Oct 2026 12:00:00 GMT',format_datetime(mod.NOW).encode())
         with patch.object(mod,"FEEDS",[("Test","https://example.com/rss","برمجة","عالمي")]), patch.object(mod,"request_bytes",return_value=rss):
             result=mod.collect_rss()
         self.assertEqual(len(result),1)
@@ -84,7 +86,6 @@ class TestImages(unittest.TestCase):
         merged,_=mod.merge([fresh],[old])
         self.assertEqual(merged[0]['image'], 'https://example.org/cover.png')
 
-if __name__ == "__main__": unittest.main()
 
 class TestHeadlines(unittest.TestCase):
     def test_matching_headlines_different_links_coalesce(self):
@@ -95,3 +96,46 @@ class TestHeadlines(unittest.TestCase):
         merged,added=mod.merge([a,b],[])
         self.assertEqual(added,1)
         self.assertEqual(len(merged),1)
+
+class TestCollectionReliability(unittest.TestCase):
+    def setUp(self):
+        mod.SOURCE_STATUS.clear()
+
+    def test_url_paths_remain_case_sensitive(self):
+        self.assertNotEqual(mod.stable_id('https://example.org/News'),mod.stable_id('https://example.org/news'))
+
+    def test_unknown_dates_are_not_reported_as_fresh(self):
+        self.assertEqual(mod.date_iso(''), '')
+        self.assertEqual(mod.date_iso('not a date'), '')
+
+    def test_category_quota_preserves_minority_topics(self):
+        rows=[{'category':'major','id':str(i)} for i in range(20)]+[{'category':'minor','id':'last'}]
+        selected=mod.diverse_selection(rows,5,'category')
+        self.assertIn('last',[x['id'] for x in selected])
+        self.assertEqual(len(selected),5)
+
+    def test_source_failure_is_recorded(self):
+        with patch.object(mod,'request_bytes',side_effect=TimeoutError):
+            self.assertEqual(mod.collect_one_rss(('Source','https://example.org/feed','تقنيات','عالمي')),[])
+        self.assertEqual(mod.SOURCE_STATUS[0]['state'],'error')
+
+    def test_atom_prefers_alternate_link(self):
+        xml=b'<feed xmlns="http://www.w3.org/2005/Atom"><entry><title>Python release</title><link rel="self" href="https://example.org/api/1"/><link rel="alternate" href="https://example.org/news/1"/><updated>2026-10-23T12:00:00Z</updated></entry></feed>'
+        xml=xml.replace(b'2026-10-23T12:00:00Z',mod.NOW.isoformat().encode())
+        with patch.object(mod,'request_bytes',return_value=xml):
+            items=mod.collect_one_rss(('Source','https://example.org/feed','برمجة','عالمي'))
+        self.assertEqual(items[0]['url'],'https://example.org/news/1')
+
+    def test_full_outage_keeps_snapshot_timestamp(self):
+        import tempfile
+        from pathlib import Path
+        with tempfile.TemporaryDirectory() as d:
+            feed=Path(d)/'feed.json';status=Path(d)/'status.json';seen=Path(d)/'seen.json'
+            before=json.dumps({'generatedAt':'2026-01-01T00:00:00Z','items':[news('https://example.org/a')]})
+            feed.write_text(before)
+            with patch.object(mod,'OUTPUT',feed),patch.object(mod,'STATUS',status),patch.object(mod,'SEEN',seen),patch.object(mod,'collect_rss',return_value=[]),patch.object(mod,'collect_hn',return_value=[]),patch.object(mod,'collect_repos',return_value=[]),patch.object(mod,'enrich_missing_news_images'):
+                self.assertEqual(mod.main(),0)
+            self.assertEqual(feed.read_text(),before)
+            self.assertEqual(json.loads(status.read_text())['state'],'error')
+
+if __name__ == "__main__": unittest.main()
