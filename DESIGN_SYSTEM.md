@@ -1,35 +1,14 @@
-# Nabdh editorial reading system
+# Nabdh / Knowledge journal
 
-## Product and preserved foundations
-Arabic RTL technical news, open-source discovery, and practical proposals. Retain the static HTML/CSS/JavaScript stack, existing green identity, dark palette, data contracts, scheduling, and local saved IDs. No new runtime dependencies.
+This document supersedes the previous dark editorial direction. See docs/TRANSFORMATION.md for behavior, research evidence and limitations.
 
-## Research actually performed
-Fetched HTML and linked stylesheet references from Linear (https://linear.app/), Resend (https://resend.com/), and Godly (https://godly.design/). This was document inspection, not a comprehensive visual or interaction audit of those products. Adopt original implementations of restrained surfaces, clear hierarchy, and progressive disclosure. No third-party component source was copied.
-
-## Foundations
-- Background #090f18; panel #111b28; borders #2c3b4b; text #f3f7fc; secondary #a2b3c5; action #bbf77e. Color must not be the only state indicator.
-- IBM Plex Sans Arabic with system fallback; Inter for compact numeric metadata. Titles use automatic text direction; paragraphs preserve mixed text direction.
-- Base spacing unit 4px. Typical section gaps 24–32px, card padding 18px, reading rows 22–26px.
-- Radius 12px for content surfaces, 8px for groups and controls. No decorative glow or 3D objects in the reading flow.
-- Main text 13–15px, feed titles 17–19px, detail title 24–28px. Detail body line height 2.15 for Arabic technical content.
-
-## Components and behavior
-- Hero communicates the product in two lines. The daily brief is the main overview; remove the duplicate image spotlight from visual flow.
-- Two content densities: cards for discovery, list for sustained reading. Persist only layout preference, not content filters.
-- Source filter combines with date, region, language, reviewed status and search. Reset clears all filters, retaining the chosen section and density.
-- Empty results offer recovery. Source failures keep last loaded content and expose status. Enrichment labels distinguish source descriptions and custom editorial work.
-- Card titles and image areas are keyboard actionable. Bookmarks, detail close, and core mobile controls use at least 42–44px targets.
-- Dialog isolates background with native inert and traps keyboard focus. Slash shortcut does not steal focus from form controls or an open dialog. Escape and close restore focus.
-- Skip link goes to focusable content section; active navigation exposes aria-current; layout switches use aria-pressed.
-
-## Responsive and motion
-At 670px, navigation enters from the RTL inline start (right). Filters use two columns, controls remain usable, and empty image blocks are compact. Sidebar scrolls on short screens. Reading layout stays one column. Existing intermediate breakpoints remain.
-Use only brief hover/border feedback and menu transitions. Respect prefers-reduced-motion. No animation dependency.
-
-## Remaining work
-Historical project queue is not a published library; it requires durable data and routing integration. No new claims of content publication are made in this UI change. Full screen-reader and WCAG conformance audits remain separate from the automated browser checks.
-
-## Professional editorial refinement
-The home hero now includes a real news selection with source, date and article action. The five-item brief uses a lead story and supporting rows on desktop, becoming a single reading column below 800px. Typography, borders, secondary text, metadata, card spacing and dialog surfaces share the same muted green/ink identity in site/editorial.css. This optional visual layer loads after component styles and is embedded by the offline preview builder. No fabricated featured content or image assets are introduced. Scoped category pages hide the home hero and time digest to prioritize results.
-
-Verified at 320, 390, 768 and 1440 pixels; desktop and mobile screenshots reviewed. Existing local saved entries and editorial data are preserved.
+- Purpose: read technology with context, discover projects and turn ideas into work.
+- Foundations: warm paper #f4f2ec; ink #19272e; secondary #52646c; rule #d6d4ca; ultramarine action #2949d7; rust editorial accent #a54331.
+- Typography: IBM Plex Sans Arabic with system fallback; Inter for metrics. Headlines 27–66px according to hierarchy, articles 15px/2.1, feed summaries 13–14px/2. Source metadata remains subordinate and readable. Mixed text uses automatic direction.
+- Layout: maximum content width 1380px, masthead 1460px. News is a ruled article stream; projects use a two/three-column directory; ideas use compact work cards. Details use a centered 900px reader, full viewport on phones.
+- Components: square/near-square rules and surfaces, native selects, explicit active states and visible focus. No ornamental glass, background glow, false images, gratuitous motion or new UI dependencies.
+- Destinations: reading, projects, library, ideas, saved. Topic navigation is secondary and a mobile drawer. Primary destinations remain visible on mobile.
+- Breakpoints: 1100px compact masthead and two-column directory; 800px stacked hero/brief; 670px touch-first single column and full-screen reader. Verify 320px minimum.
+- Touch: important controls 42–44px. Skip link, aria-current and aria-pressed identify state. Detail background uses inert, dialog focus is trapped, Escape restores focus.
+- Motion: short border/menu feedback only, respects prefers-reduced-motion.
+- Implementation: styles.css supplies existing functional component foundations; editorial.css is the authoritative redesigned presentation layer. CSS embeds in the standalone preview. No framework migration.

@@ -69,10 +69,21 @@ def run():
             assert not page.evaluate('document.documentElement.scrollWidth>innerWidth')
             page.locator('#mobileMenu').click()
             assert page.locator('#mobileMenu').get_attribute('aria-expanded')=='true'
-            page.locator('[data-nav="ideas"]').click()
+            page.locator('#sidebar [data-nav="برمجة"]').click()
             assert page.locator('#mobileMenu').get_attribute('aria-expanded')=='false'
+            page.locator('[data-nav="ideas"]').click()
             page.locator('#reviewedFilter').check()
             page.locator('#resetFilters').click()
+            page.locator('[data-nav="library"]').click()
+            assert page.locator('#feedGrid .article-card').count()>0
+            page.locator('#feedGrid .title-open').first.click()
+            assert 'تاريخ فحص البيانات' in page.locator('.detail-submeta').inner_text()
+            assert page.locator('.study-entry').count()==0
+            library_link=page.url
+            page.reload(wait_until='networkidle')
+            assert page.locator('#detailTitle').is_visible()
+            page.locator('#closeDetail').click()
+            page.locator('[data-nav="ideas"]').click()
             # A failed refresh must not erase the last loaded feed.
             before=page.locator('.article-card').count()
             page.route('**/data/feed.json?*',lambda route:route.abort())

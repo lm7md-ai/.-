@@ -14,7 +14,7 @@ html=html.replace('  <script defer src="./ideas.js"></script>','')
 html=html.replace('  <script defer src="./app.js"></script>','')
 html=html.replace('href="./assets/favicon.svg"','href="data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 64 64\'%3E%3Crect width=\'64\' height=\'64\' rx=\'16\' fill=\'%230c1521\'/%3E%3C/svg%3E"')
 extras = ''
-for filename, tag in [('research','bootstrapResearch'),('editorial','bootstrapEditorial'),('status','bootstrapStatus')]:
+for filename, tag in [('research','bootstrapResearch'),('editorial','bootstrapEditorial'),('status','bootstrapStatus'),('library','bootstrapLibrary')]:
     path=ROOT/'site/data'/f'{filename}.json'
     if path.exists():
         data=path.read_text(encoding='utf8').replace('<','\\u003c').replace('>','\\u003e').replace('&','\\u0026')
