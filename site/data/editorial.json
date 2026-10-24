@@ -3986,6 +3986,530 @@
         }
       ],
       "religious": []
+    },
+    "c2ed162a157709f5cb": {
+      "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+      "titleAr": "Granite Speech 5.0: ثلاثة تحديثات من IBM للصوت",
+      "summaryAr": "أعلنت IBM نموذج granite-speech-5.0-2b الجديد للتفريغ والترجمة، وتحديث Turbo CTC الأصغر للسرعة، ونسخة 4.1 Plus لتحسين فصل المتحدثين والتوقيت. تقارن الشركة أداءها على مجموعات اختبار منشورة؛ النتائج ادعاءات الفريق وليست تجربة مستقلة.",
+      "whyItMatters": "تحليل: اختيار النموذج حسب اللغة والسرعة وعدد المتحدثين قد يكون أهم من اختيار الأكبر؛ مفيد لأرشفة المحاضرات والاجتماعات.",
+      "audience": "مطورو الصوت والأرشفة وباحثو ASR.",
+      "nextSteps": [
+        "افحص بطاقة النموذج واللغات المدعومة.",
+        "اختبر تسجيلًا مرخصًا واحسب معدل خطأ الكلمات WER."
+      ],
+      "limitations": "العربية ليست ضمن قائمة لغات نموذج 2B المعلنة؛ لا تفترض دعمها. ترخيص Apache-2.0 للنماذج المذكورة، ومتطلبات العتاد تختلف.",
+      "reviewedAt": "2026-10-24T20:47:22.118Z",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "المصدر الأصلي",
+          "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5"
+        }
+      ]
+    },
+    "91597643c193a9c7e9": {
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/",
+      "titleAr": "دليل GitHub لتعليم Copilot قواعد مشروعك",
+      "summaryAr": "يشرح GitHub أربعة أساليب لتخصيص Copilot: تعليمات المستودع والملفات، ومهارات Agent Skills، ووكلاء متخصصون، وربط أدوات MCP. المقال دليل منشور 12 أكتوبر وليس إطلاقًا جديدًا اليوم.",
+      "whyItMatters": "تحليل: يمكن تقليل تكرار شرح قواعد المشروع واختبار التزام الوكيل بالاختبارات بدل الاعتماد على جودة المطالبات فقط.",
+      "audience": "طلاب الحاسب ومطورو المشاريع.",
+      "nextSteps": [
+        "وثّق أوامر الاختبار وأسلوب الشيفرة في ملف تعليمات المشروع.",
+        "أنشئ مهارة فحص جودة وقارن النتائج قبلها وبعدها."
+      ],
+      "limitations": "توافر Copilot وMCP يعتمد على المنتج والخطة؛ التعليمات ليست ضمانًا لسلوك الوكيل، ولا تُشغّل أدوات غير موثوقة.",
+      "reviewedAt": "2026-10-24T20:47:22.118Z",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "المصدر الأصلي",
+          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/"
+        }
+      ]
+    },
+    "95dedf578de78f3ec2": {
+      "url": "https://openai.com/index/openai-models-google-cloud",
+      "titleAr": "OpenAI وGoogle Cloud تعلنان تكامل النماذج مع Model Garden",
+      "summaryAr": "أعلنت الشركتان في 21 أكتوبر خطة لإتاحة نماذج OpenAI وسير عمل Codex داخل Model Garden وMarketplace، مع إشارة إلى إتاحتها لاحقًا في Antigravity وGemini Agent. الإعلان عن تكامل قادم، وليس دليلًا على التوفر الفوري لكل نموذج.",
+      "whyItMatters": "تحليل: قد يسهل مقارنة مزودين ضمن بيئة سحابية واحدة، لكنه لا يلغي رسوم النماذج أو ضوابط الوصول.",
+      "audience": "مطورون وفرق سحابية ومؤسسات.",
+      "nextSteps": [
+        "افحص الكتالوج المتاح فعليًا لمنطقتك وحسابك.",
+        "قارن تسعير نموذج تجريبي وسياسات البيانات قبل التوسع."
+      ],
+      "limitations": "لا توجد في المقال قائمة نهائية بالأسعار والمناطق أو تاريخ طرح كل تكامل.",
+      "reviewedAt": "2026-10-24T20:47:22.118Z",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "المصدر الأصلي",
+          "url": "https://openai.com/index/openai-models-google-cloud"
+        }
+      ]
+    },
+    "7fc840bc9b29772d19": {
+      "url": "https://blog.python.org/2026/10/python-3160-alpha-1-is-now-available/",
+      "titleAr": "Python 3.16.0a1 متاحة للاختبار وليست للإنتاج",
+      "summaryAr": "أعلن فريق Python في 13 أكتوبر أول إصدار Alpha من 3.16 ضمن سبعة إصدارات Alpha مخططة. يمكن تغيير الميزات حتى مراحل لاحقة، والإصدار النهائي مخطط له في 5 أكتوبر 2027.",
+      "whyItMatters": "تحليل: فرصة لمطوري المكتبات لكشف عدم التوافق مبكرًا، لا لاستبدال النسخة المستقرة في التطبيقات اليومية.",
+      "audience": "مطورو Python وصائنو الحزم والطلاب المتقدمون.",
+      "nextSteps": [
+        "ثبّت النسخة التجريبية في بيئة منفصلة.",
+        "شغّل اختبارات مكتبتك وأبلغ عن الأعطال القابلة لإعادة الإنتاج."
+      ],
+      "limitations": "إصدار تجريبي غير مستقر وغير موصى به للإنتاج؛ المواعيد مستقبلية قابلة للتغيير.",
+      "reviewedAt": "2026-10-24T20:47:22.118Z",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "المصدر الأصلي",
+          "url": "https://blog.python.org/2026/10/python-3160-alpha-1-is-now-available/"
+        }
+      ]
+    },
+    "77ec6ad66af3dcc4f6": {
+      "url": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/",
+      "titleAr": "Microsoft Research تعلن حل حدسية KLS الرياضية",
+      "summaryAr": "تقول Microsoft Research إن باحثين حلّا حدسية Kannan–Lovász–Simonovits المطروحة منذ 1995، المتعلقة بالمقاطع الهندسية والتوزيعات الاحتمالية عالية الأبعاد. تذكر الشركة مراجعة مستقلة وتحققًا شكليًا؛ لم أراجع البرهان رياضيًا.",
+      "whyItMatters": "تحليل: للنتيجة أهمية نظرية في أخذ العينات والاحتمالات والتحسين، لكنها لا تعني تسريع تطبيقات بعينها تلقائيًا.",
+      "audience": "باحثو الرياضيات والخوارزميات وطلاب الاحتمالات.",
+      "nextSteps": [
+        "اقرأ الشرح الهندسي للمبدأ.",
+        "راجع الورقة الأصلية قبل الاستشهاد بنتيجة تقنية دقيقة."
+      ],
+      "limitations": "مراجعة هذه المادة اقتصرت على المقال البحثي التفسيري لا البرهان الكامل، والتطبيقات العملية ما تزال تحتاج دراسات.",
+      "reviewedAt": "2026-10-24T20:47:22.118Z",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "المصدر الأصلي",
+          "url": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/"
+        }
+      ]
+    },
+    "1dbe22633003a2af4f": {
+      "url": "https://openai.com/index/low-resource-programming-languages",
+      "titleAr": "تقييمات OpenAI لبرمجة اللغات قليلة البيانات وترحيل COBOL",
+      "summaryAr": "نشرت OpenAI تقييم MultiLangBench لبناء محرك متوافق مع SQLite عبر لغات متعددة، وتقييمًا لترحيل برامج COBOL مع الحفاظ على السلوك. الأرقام المعلنة تخص اختبارات الشركة ولا تعادل تحققًا مستقلًا على أنظمة إنتاجية.",
+      "whyItMatters": "تحليل: ينبغي قياس نجاح ترحيل البرامج القديمة باختبارات سلوك وحدود واضحة لا بمجرد ظهور شيفرة جديدة.",
+      "audience": "مطورو الأنظمة القديمة ومهندسو الاختبارات.",
+      "nextSteps": [
+        "ابنِ اختبارات سلوك لبرنامج تجريبي قبل الترحيل.",
+        "قارن النتائج والمدخلات الحدية بعد تحويله."
+      ],
+      "limitations": "لا تعمم نتائج الاختبار على أنظمة بنكية أو مؤسسية فعلية، ولا ترفع شيفرة حساسة لخدمة خارجية دون تصريح.",
+      "reviewedAt": "2026-10-24T20:47:22.118Z",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "المصدر الأصلي",
+          "url": "https://openai.com/index/low-resource-programming-languages"
+        }
+      ]
+    },
+    "39e60f901a735303e0": {
+      "url": "https://huggingface.co/blog/hf-torchtpu",
+      "titleAr": "TorchTPU يقرب تشغيل PyTorch من شرائح Google TPU",
+      "summaryAr": "يشرح Hugging Face خلفية TorchTPU لتشغيل عمليات PyTorch على TPU مع تكاملات Transformers وDiffusers. يقول الفريق إن 96.5% من الاختبارات التي شغّلها على TPU اجتازت، مع استمرار معالجة مشكلات توافق.",
+      "whyItMatters": "تحليل: قد يسهل نقل تجارب التعلم العميق، لكن التكلفة والأداء والتوافق تختلف باختلاف النموذج والعتاد.",
+      "audience": "باحثو التعلم العميق ومهندسو Google Cloud.",
+      "nextSteps": [
+        "راجع متطلبات TPU VM والتوافق.",
+        "اختبر نموذجًا صغيرًا وقارن الأداء والصحة ببيئة مرجعية."
+      ],
+      "limitations": "قد يتطلب عتاد TPU مدفوعًا؛ الأرقام من فريق المشروع وليست اختبارًا مستقلًا ولا تشمل جميع العمليات.",
+      "reviewedAt": "2026-10-24T20:47:22.118Z",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "المصدر الأصلي",
+          "url": "https://huggingface.co/blog/hf-torchtpu"
+        }
+      ]
+    },
+    "8566195c9f888e1fef": {
+      "url": "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/",
+      "titleAr": "GitHub: مراجعة نتائج الذكاء الاصطناعي ضرورية في البحث الأمني",
+      "summaryAr": "نشرت GitHub مقابلة مع باحث ضمن برنامج مكافآت الثغرات يؤكد أن الذكاء الاصطناعي يساعد على فهم الشيفرة، لكنه قد ينتج تنبيهات خاطئة. تركز المقالة على الأدلة القابلة لإعادة الإنتاج والمراجعة البشرية والالتزام بنطاق الاختبار المصرح.",
+      "whyItMatters": "تحليل: الدرس مهم حتى في مراجعات الشيفرة الدفاعية؛ لا تتعامل مع ادعاء نموذج بوجود خلل بوصفه دليلًا كافيًا.",
+      "audience": "مطورو البرمجيات وطلاب الأمن الدفاعي.",
+      "nextSteps": [
+        "راجع تنبيهات التحليل على مشروع تجريبي تملكه.",
+        "وثّق الدليل والمراجعة البشرية قبل تصنيف أي مشكلة."
+      ],
+      "limitations": "المقال مقابلة وليس قياسًا لدقة أدوات الذكاء الاصطناعي؛ لا تُجرِ فحصًا على أنظمة دون تصريح.",
+      "reviewedAt": "2026-10-24T20:47:22.118Z",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "المصدر الأصلي",
+          "url": "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/"
+        }
+      ]
+    },
+    "c1af6b58492f9bf434": {
+      "url": "https://github.com/browser-use/browser-use",
+      "titleAr": "Browser Use: وكلاء Python للتفاعل مع المتصفح",
+      "summaryAr": "مكتبة مفتوحة المصدر لأتمتة المتصفح بوكلاء لغة، مع خيارات متصفح محلي أو سحابي وخدمة وكيل مستضافة منفصلة.",
+      "whyItMatters": "التحليل: مناسبة لاختبار صفحات تملكها أو مهام ويب عامة؛ التشغيل المحلي للمتصفح لا يعني أن نموذج اللغة يعمل دون إنترنت.",
+      "audience": "مطورو Python واختبارات الويب.",
+      "nextSteps": [
+        "ابدأ بعينة محلية صغيرة وفق README.",
+        "راجع الترخيص والاعتماديات قبل الاستخدام."
+      ],
+      "limitations": "لم أشغّل المشروع. لا تُستخدم بيانات حسابات حقيقية في التجربة الأولى؛ التكاليف والمزايا السحابية قابلة للتغير ويجب احترام شروط المواقع.",
+      "reviewedAt": "2026-10-24T20:47:22.118Z",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "Browser Use README",
+          "url": "https://github.com/browser-use/browser-use"
+        },
+        {
+          "title": "Browser Use Docs",
+          "url": "https://docs.browser-use.com/open-source/introduction"
+        }
+      ],
+      "overview": "يتلقى Agent مهمة ونموذجًا ثم يستخدم متصفحًا لتنفيذ خطوات ويعيد سجلًا ونتيجة. يميز README بين Python Library وCLI وخدمة Hosted Agent، ويدعم تخصيص الأدوات والنماذج.",
+      "requirements": "Python 3.11+ ومكتبة browser-use ومتصفح مناسب؛ مثال README يستخدم uv وPython 3.12 ومفتاح نموذج. المكتبة MIT، أما Cloud API والنماذج فقد تكون مدفوعة؛ يختلف دعم التشغيل المحلي حسب النموذج والعتاد.",
+      "quickStart": "أنشئ مشروع Python 3.12 باستخدام uv، ثم `uv add browser-use`، واضبط مفتاح مزود النموذج في `.env`، وشغّل مثال Agent من README على صفحة عامة أو موقع تجريبي محلي باستخدام `uv run agent.py`.",
+      "improvements": [
+        {
+          "title": "بوابة موافقة قبل إرسال النماذج",
+          "problem": "الوكيل قد يرسل نموذجًا دون مراجعة المستخدم.",
+          "approach": "طبقة تطبيق خارجية تعرض ملخص الإرسال وتنتظر موافقة صريحة في موقع اختبار.",
+          "stack": "Python, Browser Use, SQLite",
+          "steps": [
+            "حدد إجراءات الإرسال الحساسة.",
+            "ابنِ نموذجًا تجريبيًا.",
+            "اعترض الإرسال وسجّل القرار.",
+            "اختبر 30 محاولة."
+          ],
+          "metric": "صفر إرسال بلا موافقة في 30 اختبارًا.",
+          "difficulty": "متوسطة؛ تقدير 4 أيام.",
+          "risks": "تغير واجهة الموقع قد يتجاوز الاعتراض؛ ليست حماية مضمونة.",
+          "sources": [
+            {
+              "title": "Browser Use README",
+              "url": "https://github.com/browser-use/browser-use"
+            },
+            {
+              "title": "Browser Use Docs",
+              "url": "https://docs.browser-use.com/open-source/introduction"
+            }
+          ]
+        },
+        {
+          "title": "مقياس تكرارية مهام المتصفح",
+          "problem": "نجاح محاولة واحدة لا يقيس الاعتمادية.",
+          "approach": "أداة تعيد تشغيل سيناريوهات مصرح بها وتجمع نسب النجاح والتكلفة.",
+          "stack": "Python, pytest, Browser Use",
+          "steps": [
+            "حدد عشر مهام على صفحات محلية.",
+            "أعد الحالة الابتدائية.",
+            "كرر كل مهمة خمس مرات.",
+            "احسب النجاح والتباين."
+          ],
+          "metric": "تقرير 50 تشغيلًا مع أسباب الفشل.",
+          "difficulty": "متوسطة؛ تقدير أسبوع.",
+          "risks": "تكلفة النماذج وتباين النتائج.",
+          "sources": [
+            {
+              "title": "Browser Use README",
+              "url": "https://github.com/browser-use/browser-use"
+            },
+            {
+              "title": "Browser Use Docs",
+              "url": "https://docs.browser-use.com/open-source/introduction"
+            }
+          ]
+        },
+        {
+          "title": "مدقق وصولية لتفاعل الوكلاء",
+          "problem": "بعض عناصر الويب غير المعنونة تسبب فشل التنقل.",
+          "approach": "اربط نتائج اختبارات الوصولية بفشل الوكيل في صفحات تجريبية.",
+          "stack": "Playwright, axe-core, Python",
+          "steps": [
+            "أنشئ صفحات بعناصر معنونة وغير معنونة.",
+            "شغّل فحص وصولية.",
+            "نفّذ مهام تنقل بسيطة.",
+            "قارن النتائج."
+          ],
+          "metric": "كشف 80% من حالات الفشل المرتبطة بالتسمية.",
+          "difficulty": "متوسطة؛ تقدير 5 أيام.",
+          "risks": "الارتباط لا يثبت السببية.",
+          "sources": [
+            {
+              "title": "Browser Use README",
+              "url": "https://github.com/browser-use/browser-use"
+            },
+            {
+              "title": "Browser Use Docs",
+              "url": "https://docs.browser-use.com/open-source/introduction"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مختبر اختبار مواقع الطلاب",
+          "problem": "طلاب الويب يحتاجون اختبار رحلات مستخدم متكررة.",
+          "approach": "خدمة محلية تختبر روابط ونماذج مواقع يملكها الطلاب.",
+          "stack": "Python, Browser Use, pytest",
+          "steps": [
+            "جهز موقعًا تجريبيًا.",
+            "حدد خمس رحلات.",
+            "نفّذها وسجّل الأخطاء.",
+            "قارنها بفحص يدوي."
+          ],
+          "metric": "اكتشاف 80% من الأخطاء المزروعة.",
+          "difficulty": "متوسطة؛ تقدير أسبوع.",
+          "risks": "اختبر المواقع المملوكة أو المصرح بها فقط.",
+          "sources": [
+            {
+              "title": "Browser Use README",
+              "url": "https://github.com/browser-use/browser-use"
+            },
+            {
+              "title": "Browser Use Docs",
+              "url": "https://docs.browser-use.com/open-source/introduction"
+            }
+          ]
+        },
+        {
+          "title": "مدقق روابط المقررات",
+          "problem": "روابط المصادر التعليمية تتعطل مع الوقت.",
+          "approach": "أداة تفحص روابط عامة وتحفظ تقريرًا بتاريخ التحقق.",
+          "stack": "Python, Browser Use, CSV",
+          "steps": [
+            "اجمع 30 رابطًا عامًا.",
+            "افحص الفتح والعنوان.",
+            "سجّل التعطل.",
+            "راجع الحالات المشكوك بها."
+          ],
+          "metric": "دقة 95% في عينة مرجعية.",
+          "difficulty": "سهلة؛ تقدير يومان.",
+          "risks": "حظر بعض المواقع للأتمتة.",
+          "sources": [
+            {
+              "title": "Browser Use README",
+              "url": "https://github.com/browser-use/browser-use"
+            },
+            {
+              "title": "Browser Use Docs",
+              "url": "https://docs.browser-use.com/open-source/introduction"
+            }
+          ]
+        },
+        {
+          "title": "مقارن تكلفة نماذج وكلاء التصفح",
+          "problem": "اختيار النموذج دون قياس قد يزيد التكلفة.",
+          "approach": "تجربة مقارنة على مهام ثابتة بحساب الزمن والنجاح والتكلفة.",
+          "stack": "Python, Browser Use, pandas",
+          "steps": [
+            "حدد خمس مهام آمنة.",
+            "شغّل ثلاثة نماذج.",
+            "اجمع الزمن والتكلفة.",
+            "اعرض حدود العينة."
+          ],
+          "metric": "تقرير قابل لإعادة الإنتاج لـ15 تجربة.",
+          "difficulty": "متوسطة؛ تقدير أسبوع.",
+          "risks": "الأسعار متغيرة والنتائج حساسة للبيئة.",
+          "sources": [
+            {
+              "title": "Browser Use README",
+              "url": "https://github.com/browser-use/browser-use"
+            },
+            {
+              "title": "Browser Use Docs",
+              "url": "https://docs.browser-use.com/open-source/introduction"
+            }
+          ]
+        }
+      ],
+      "religious": []
+    },
+    "b37a6534812561ec2b": {
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "titleAr": "ComfyUI: رسوم عقد لتوليد الصور والوسائط",
+      "summaryAr": "محرك مفتوح المصدر يربط عقد النماذج والمعالجة والإخراج في سير عمل بصري يمكن حفظه JSON وتشغيله محليًا أو عبر خدمات خارجية.",
+      "whyItMatters": "التحليل: مفيد لمن يريد التحكم في خطوات إنتاج الصور والوسائط وتكرار النتائج؛ حجم النموذج والعتاد يحددان الأداء.",
+      "audience": "مصممو الوسائط ومطورو أدوات الذكاء الاصطناعي.",
+      "nextSteps": [
+        "ابدأ بعينة محلية صغيرة وفق README.",
+        "راجع الترخيص والاعتماديات قبل الاستخدام."
+      ],
+      "limitations": "لم أشغّل المشروع. ادعاءات الأداء والذاكرة في README ليست ضمانًا لكل نموذج؛ التشغيل دون إنترنت يتطلب تنزيل الاعتماديات مسبقًا.",
+      "reviewedAt": "2026-10-24T20:47:22.118Z",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "ComfyUI README",
+          "url": "https://github.com/Comfy-Org/ComfyUI"
+        },
+        {
+          "title": "ComfyUI Docs",
+          "url": "https://docs.comfy.org/"
+        }
+      ],
+      "overview": "واجهة رسوم بيانية تدعم نماذج صور وفيديو وصوت ومهام رؤية، مع API وقوالب جاهزة وApp Mode موجود أصلًا. قد تستخدم بعض العقد خدمات خارجية بينما يمكن تشغيل وظائف أساسية محليًا بعد تنزيل النماذج.",
+      "requirements": "Windows وmacOS وLinux بطرق تثبيت مختلفة؛ تطبيق سطح المكتب أسهل للأنظمة المدعومة، والتثبيت اليدوي يتطلب Python وPyTorch وتعريف GPU مناسب. ترخيص المستودع GPL-3.0، وتراخيص النماذج والعقد قد تختلف. Comfy Cloud والعقد الشريكة قد تكون مدفوعة.",
+      "quickStart": "نزّل تطبيق سطح المكتب الرسمي أو اتبع تعليمات التثبيت اليدوي. افتح قالبًا من المكتبة، ثبّت نموذجًا مناسبًا لعتادك وترخيصك، وابدأ بدقة منخفضة. استخدم `--offline` بحسب توثيق المشروع لتقييد العقد السحابية الاختيارية.",
+      "improvements": [
+        {
+          "title": "ملف إعادة إنتاج العقد والنماذج",
+          "problem": "ملف الرسم لا يضمن وجود الاعتماديات نفسها لاحقًا.",
+          "approach": "ملحق يسجل إصدارات العقد وبصمات النماذج بجوار JSON.",
+          "stack": "Python, ComfyUI API, SHA256",
+          "steps": [
+            "استخرج العقد المستخدمة.",
+            "سجّل الإصدارات والبصمات.",
+            "قارن بيئتين.",
+            "اختبر رسمًا تجريبيًا."
+          ],
+          "metric": "إعادة تشغيل 8 من 10 رسوم دون فقد اعتماديات.",
+          "difficulty": "متوسطة؛ تقدير أسبوع.",
+          "risks": "قد لا تعلن العقد كل الإصدارات.",
+          "sources": [
+            {
+              "title": "ComfyUI README",
+              "url": "https://github.com/Comfy-Org/ComfyUI"
+            },
+            {
+              "title": "ComfyUI Docs",
+              "url": "https://docs.comfy.org/"
+            }
+          ]
+        },
+        {
+          "title": "مقياس الكتابة العربية في الصور",
+          "problem": "نماذج الصور قد تشوّه النص العربي.",
+          "approach": "حزمة تقييم عبارات عربية مع مراجعة بشرية ومقياس CER.",
+          "stack": "Python, ComfyUI API, OCR",
+          "steps": [
+            "جهز 50 عبارة مرخصة.",
+            "ولّد صورًا ببذور ثابتة.",
+            "راجع النصوص بشريًا.",
+            "احسب CER لكل نموذج."
+          ],
+          "metric": "مقياس خطأ موثق لـ50 عينة.",
+          "difficulty": "متوسطة؛ تقدير أسبوع.",
+          "risks": "أخطاء OCR قد تخلط نتائج التوليد.",
+          "sources": [
+            {
+              "title": "ComfyUI README",
+              "url": "https://github.com/Comfy-Org/ComfyUI"
+            },
+            {
+              "title": "ComfyUI Docs",
+              "url": "https://docs.comfy.org/"
+            }
+          ]
+        },
+        {
+          "title": "معاينة تكلفة العقد السحابية",
+          "problem": "قد يفاجأ المستخدم برسوم Partner Nodes.",
+          "approach": "أداة تقدير خارجية للأسعار المعلنة قبل التنفيذ.",
+          "stack": "TypeScript, JSON, ComfyUI API",
+          "steps": [
+            "حدد العقد الخارجية.",
+            "اجمع الأسعار الموثقة.",
+            "اعرض نطاق التكلفة.",
+            "قارن بالتكلفة الفعلية."
+          ],
+          "metric": "خطأ تقدير أقل من 20% في 10 تشغيلات.",
+          "difficulty": "متوسطة؛ تقدير 5 أيام.",
+          "risks": "الأسعار قد تتغير أو تكون غير معلنة.",
+          "sources": [
+            {
+              "title": "ComfyUI README",
+              "url": "https://github.com/Comfy-Org/ComfyUI"
+            },
+            {
+              "title": "ComfyUI Docs",
+              "url": "https://docs.comfy.org/"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "صانع رسوم تعليمية بمراجعة علمية",
+          "problem": "التوليد البصري قد ينتج رسومات علمية خاطئة.",
+          "approach": "توليد خلفيات ثم إضافة نصوص علمية بشرية كطبقات منفصلة.",
+          "stack": "ComfyUI, Python, SVG",
+          "steps": [
+            "اختر خمسة موضوعات.",
+            "ولّد خلفيات مناسبة.",
+            "أضف نصوصًا مدققة.",
+            "راجع كل رسم قبل النشر."
+          ],
+          "metric": "صفر أخطاء مفاهيمية غير مصححة في 20 رسمًا.",
+          "difficulty": "متوسطة؛ تقدير أسبوع.",
+          "risks": "يلزم تدقيق بشري للمخططات.",
+          "sources": [
+            {
+              "title": "ComfyUI README",
+              "url": "https://github.com/Comfy-Org/ComfyUI"
+            },
+            {
+              "title": "ComfyUI Docs",
+              "url": "https://docs.comfy.org/"
+            }
+          ]
+        },
+        {
+          "title": "مقارن نماذج الصور على عتاد محدود",
+          "problem": "اختيار نموذج دون قياس VRAM والوقت صعب.",
+          "approach": "لوحة اختبارات محلية لإعدادات ونماذج مختلفة.",
+          "stack": "Python, ComfyUI API, psutil",
+          "steps": [
+            "اختر نموذجين مرخصين.",
+            "ثبّت الدقة والبذرة.",
+            "اجمع الزمن والذاكرة.",
+            "اعرض النتائج والقيود."
+          ],
+          "metric": "تقرير 6 تجارب قابلة للإعادة.",
+          "difficulty": "متوسطة؛ تقدير 4 أيام.",
+          "risks": "النتائج خاصة بالعتاد والتعريفات.",
+          "sources": [
+            {
+              "title": "ComfyUI README",
+              "url": "https://github.com/Comfy-Org/ComfyUI"
+            },
+            {
+              "title": "ComfyUI Docs",
+              "url": "https://docs.comfy.org/"
+            }
+          ]
+        },
+        {
+          "title": "مولد خلفيات صور المنتجات",
+          "problem": "المتاجر تحتاج صورًا موحدة لمنتجات تملك صورها.",
+          "approach": "قص المنتج الأصلي وتركيبه على خلفيات مولدة دون تغيير خصائصه.",
+          "stack": "ComfyUI, Pillow, Python",
+          "steps": [
+            "جهز صور منتجات مملوكة.",
+            "افصل الخلفيات.",
+            "ولّد خلفيات جديدة.",
+            "راجع تطابق المنتج الحقيقي."
+          ],
+          "metric": "قبول 90% من 20 صورة بعد المراجعة.",
+          "difficulty": "متوسطة؛ تقدير أسبوع.",
+          "risks": "احتمال تحريف المنتج وحقوق الصور.",
+          "sources": [
+            {
+              "title": "ComfyUI README",
+              "url": "https://github.com/Comfy-Org/ComfyUI"
+            },
+            {
+              "title": "ComfyUI Docs",
+              "url": "https://docs.comfy.org/"
+            }
+          ]
+        }
+      ],
+      "religious": []
     }
   }
 }
