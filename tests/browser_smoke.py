@@ -46,6 +46,20 @@ def run():
             assert page.locator('.article-card').count()==0
             page.locator('#resetFilters').click()
             assert page.locator('.article-card').count()>0
+            page.locator('[data-layout="list"]').click()
+            assert page.locator('#feedGrid').evaluate("e=>e.classList.contains('reading-list')")
+            page.reload(wait_until='networkidle')
+            assert page.locator('[data-layout="list"]').get_attribute('aria-pressed')=='true'
+            source=page.locator('#sourceFilter option').nth(1).get_attribute('value')
+            page.locator('#sourceFilter').select_option(source)
+            assert page.locator('.article-card').count()>0
+            page.locator('#resetFilters').click()
+            assert page.locator('#sourceFilter').input_value()=='all'
+            page.locator('#feedGrid .title-open').first.focus()
+            page.keyboard.press('Enter')
+            assert page.locator('.app-shell').evaluate('e=>e.inert')
+            page.keyboard.press('Escape')
+            assert not page.locator('.app-shell').evaluate('e=>e.inert')
             page.locator('#dateFilter').select_option('7')
             page.locator('#regionFilter').select_option('السعودية')
             # Seed snapshots may contain no recent Saudi news; resetting must recover.
