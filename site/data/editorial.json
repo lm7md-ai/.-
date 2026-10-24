@@ -2986,6 +2986,492 @@
       ],
       "religious": [],
       "reviewedAt": "2026-10-24T11:44:09.152Z"
+    },
+    "de8f53606bd4f2390d": {
+      "url": "https://security.apple.com/research-device/",
+      "titleAr": "Apple تقبل طلبات أجهزة أبحاث أمن iOS حتى 30 أكتوبر",
+      "summaryAr": "أعلنت Apple استمرار استقبال طلبات برنامج Security Research Device حتى 30 أكتوبر 2026. تمنح المشاركين المقبولين هاتف iPhone بحثيًا بصلاحيات خاصة لدراسة أمن iOS، على سبيل الإعارة لمدة 12 شهرًا قابلة للتجديد. لا يشمل نطاق البحث Apple Pay أو تطبيقات الجهات الخارجية، والجهاز ليس للبيع أو للاستخدام اليومي.",
+      "whyItMatters": "يفيد في فهم كيف تدعم الشركات اكتشاف الثغرات والإفصاح المسؤول. تحليل: إتاحة أجهزة بحثية متخصصة لا تعني فتح البرنامج للجميع.",
+      "audience": "باحثو أمن الأنظمة والجامعات والفرق المؤهلة.",
+      "nextSteps": [
+        "اقرأ شروط البرنامج ونطاقه من المصدر الرسمي.",
+        "للتعلم العام راجع مبادئ الإفصاح المسؤول دون افتراض الحصول على الجهاز."
+      ],
+      "limitations": "يشترط بلوغ سن الرشد وخبرة سابقة وبلدًا مؤهلًا وموافقة Apple؛ لم نختبر الجهاز أو نراجع الأهلية الفردية.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Apple Security Research Device Program",
+          "url": "https://security.apple.com/research-device/"
+        }
+      ],
+      "reviewedAt": "2026-10-24T14:40:39+00:00"
+    },
+    "d5371389846a39097a": {
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZ1hydHp6Zm9tZktVS0w4TTZsY3pRUFVRcHlTZ0V0cklCeXp1aGpqdkVoQ3o4TFZjanI1ZmVTRVRoWUZ3LXZ3UFNhUmMyV0k5b0JUMTg5c2FLUHRRQ3UzX04xS1IyekFQX3VaRURhV1YxWHpVT1RLMHRmem1jeGdPaG5nalY?oc=5",
+      "titleAr": "LiteLLM تنشر تحقيقًا محدّثًا في اختراق إصدار 1.107.0",
+      "summaryAr": "في تقرير 23 أكتوبر 2026، شرحت LiteLLM أن إصدار 1.107.0 المتأثر وصل إلى PyPI وصور الحاويات يوم 21 أكتوبر قبل سحبه. ووفق تحقيق الشركة، كان أحد أسباب الحادث عدم إلغاء مفتاح سبق كشفه في مستودع عام، ثم إساءة استخدام صلاحيات مرتبطة بإصدار البرمجيات. صححت الشركة تفسيرًا أوليًا سابقًا بشأن مصدر رموز الوصول.",
+      "whyItMatters": "درس دفاعي: حذف مفتاح مكشوف من المستودع لا يلغي صلاحياته؛ فصل صلاحيات النشر وتدوير الأسرار مهمان. هذه استنتاجات من تقرير الشركة لا اختبار مستقل.",
+      "audience": "مطورو Python وفرق DevOps ومشغلو بوابات الذكاء الاصطناعي.",
+      "nextSteps": [
+        "تحقق من الإصدارات المستخدمة واتبع توجيهات الحادث الرسمية عند انطباقها.",
+        "راجع صلاحيات CI/CD ودوران المفاتيح والتحقق من سلامة الحزم."
+      ],
+      "limitations": "الرابط الأصلي في التغذية وسيط Google News؛ استخدمنا تحقيق LiteLLM الرسمي مصدرًا للمعلومات. لم نحقق في الحادث مستقلًا.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "LiteLLM incident investigation, 23 October",
+          "url": "https://docs.litellm.ai/blog/security-incident-oct-21-2026-attack-chain"
+        }
+      ],
+      "reviewedAt": "2026-10-24T14:40:39+00:00"
+    },
+    "ee4c22366ef7e7abd7": {
+      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "titleAr": "OpenAI تشرح كيف توسع تخزين تطبيقاتها عبر Azure Cosmos DB",
+      "summaryAr": "في الجزء الثاني من دراسة هندسية بتاريخ 23 أكتوبر، عرضت OpenAI تطور منصة Habitat لتخزين بيانات التطبيقات عالميًا. تناقش مشاكل المفاتيح الساخنة وتأثير الأحمال المتجاورة، ولماذا انتقل الفريق بين العزل والمشاركة قبل اعتماد مشاركة الموارد افتراضيًا مع آليات نقل البيانات وتحسين جودة الخدمة والتخزين المؤقت.",
+      "whyItMatters": "تقدم دروسًا عملية لمهندسي قواعد البيانات عن مفاتيح التقسيم وموازنة الأداء والكلفة. تحليل: يمكن اختبار المبادئ على أنظمة صغيرة دون نسخ معمارية ضخمة كما هي.",
+      "audience": "طلاب هندسة البرمجيات ومطورو الخلفيات وقواعد البيانات.",
+      "nextSteps": [
+        "قِس زمن الاستجابة وتوزيع الطلبات على المفاتيح قبل إعادة تصميم قاعدة البيانات.",
+        "جرّب مقارنة صغيرة بين مشاركة الأحمال وعزلها ببيانات اصطناعية."
+      ],
+      "limitations": "الأرقام المتعلقة بالحجم والمستخدمين من OpenAI وليست قياسات مستقلة؛ Azure Cosmos DB خدمة قد تترتب عليها رسوم.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "OpenAI Engineering: Storage at scale Part II",
+          "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two/"
+        }
+      ],
+      "reviewedAt": "2026-10-24T14:40:39+00:00"
+    },
+    "d82e7cc672e929a3b3": {
+      "url": "https://quantum5.ca/2025/03/22/whirlwind-tour-of-systemd-nspawn-containers/",
+      "titleAr": "دليل systemd-nspawn يوضح بديلًا لإدارة حاويات Linux",
+      "summaryAr": "مقال تقني نُشر في مارس 2025 وعاد للتداول في أكتوبر 2026، يشرح systemd-nspawn المبني على Linux namespaces، وكيف يختلف عن صور Docker من حيث استخدام نظام ملفات جذري قابل للكتابة. يعرض حالات استخدام مثل مشاركة GPU وتشغيل خدمات محلية وطرق عزل المستخدمين وإدارة الحاويات.",
+      "whyItMatters": "مفيد لمن يدير خدمات Linux ويريد فهم بدائل Docker. التحليل: الاختيار يعتمد على الصيانة ومتطلبات العزل لا على الشعبية.",
+      "audience": "مطورو Linux ومشغلو الخوادم المنزلية.",
+      "nextSteps": [
+        "اقرأ مقارنة الأداة مع Docker ومتطلبات rootfs.",
+        "وثّق النسخ الاحتياطي وحدود العزل قبل تغيير بيئة خدمة فعلية."
+      ],
+      "limitations": "هذا شرح قديم وليس إصدارًا جديدًا؛ أمثلته مرتبطة بصلاحيات Linux وتوزيعات محددة ولم ننفذها.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "systemd-nspawn guide, Quantum",
+          "url": "https://quantum5.ca/2025/03/22/whirlwind-tour-of-systemd-nspawn-containers/"
+        }
+      ],
+      "reviewedAt": "2026-10-24T14:40:39+00:00"
+    },
+    "ab84e19553c74c6e20": {
+      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "titleAr": "freeCodeCamp: تعليم برمجة مجاني بمشاريع عملية",
+      "summaryAr": "منصة تعليمية غير ربحية تقدم مسارات ذاتية الوتيرة في Python وJavaScript وقواعد البيانات وتطوير الويب، مع دروس ومختبرات ومشاريع وشهادات. يحتوي المستودع على شيفرة المنصة والمناهج، لكن حقوق المحتوى التعليمي ليست مطابقة بالضرورة لترخيص الشيفرة.",
+      "whyItMatters": "توفر انتقالًا عمليًا من المفاهيم إلى كتابة البرامج؛ المشاريع المستقلة ضرورية لترسيخ المهارة.",
+      "audience": "طلاب البرمجة ومبتدئو Python والويب.",
+      "nextSteps": [
+        "ابدأ بمسار Python وأنجز مشروعًا دون نسخ الحل.",
+        "راجع دليل المساهمة الرسمي إن أردت تشغيل المصدر محليًا."
+      ],
+      "limitations": "لم نشغّل المنصة أو نتحقق من جميع اعتماديات التطوير؛ محتوى curriculum له حقوق منفصلة عن شيفرة BSD-3-Clause.",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "freeCodeCamp README",
+          "url": "https://github.com/freeCodeCamp/freeCodeCamp/blob/main/README.md"
+        },
+        {
+          "title": "freeCodeCamp software license",
+          "url": "https://github.com/freeCodeCamp/freeCodeCamp/blob/main/LICENSE.md"
+        },
+        {
+          "title": "freeCodeCamp contribution guide",
+          "url": "https://contribute.freecodecamp.org/"
+        },
+        {
+          "title": "freeCodeCamp Python curriculum",
+          "url": "https://www.freecodecamp.org/learn/python-v9/"
+        }
+      ],
+      "overview": "منصة تعلم تفاعلي تضم دروسًا واختبارات ومختبرات ومشاريع وشهادات في تطوير الويب وPython وSQL. يشمل المستودع الشيفرة والمناهج ويقبل المساهمات عبر دليل منفصل.",
+      "requirements": "للتعلم متصفح واتصال إنترنت، وقد يلزم حساب لحفظ التقدم والشهادات. تشغيل المستودع محليًا يتطلب اتباع دليل المساهمة الحالي؛ لم نتحقق من إصدارات بيئة التطوير. الشيفرة BSD-3-Clause، ومواد curriculum تخضع لحقوق منفصلة.",
+      "quickStart": "افتح https://www.freecodecamp.org/learn/python-v9/ واختر درسًا ثم مختبرًا ومشروعًا. لتطوير المنصة محليًا اتبع https://contribute.freecodecamp.org/ ولا تفترض أوامر تثبيت غير موثقة.",
+      "improvements": [
+        {
+          "title": "تصنيف أخطاء Python بالعربية",
+          "problem": "يعرف المتعلم أن الاختبار فشل لكنه لا يفهم خطأه المفاهيمي.",
+          "approach": "طبقة مساعدة اختيارية تصنف أنماط الفشل دون تسليم الحل.",
+          "stack": "Python, TypeScript, tests",
+          "steps": [
+            "اختر عشر فئات أخطاء من تمارين Python.",
+            "اكتب حالات اختبار مرجعية لكل فئة.",
+            "اربط الفشل بشرح عربي قصير ومثال مستقل.",
+            "قارن نسبة حل تمرين مشابه بعد التفسير."
+          ],
+          "metric": "انخفاض تكرار الخطأ نفسه 20% في عينة تجريبية.",
+          "difficulty": "متوسطة؛ تقدير 2–4 أسابيع.",
+          "risks": "احتمال تصنيف خاطئ؛ مراجعة المحتوى ضرورية.",
+          "sources": [
+            {
+              "title": "freeCodeCamp README",
+              "url": "https://github.com/freeCodeCamp/freeCodeCamp/blob/main/README.md"
+            },
+            {
+              "title": "freeCodeCamp Python curriculum",
+              "url": "https://www.freecodecamp.org/learn/python-v9/"
+            }
+          ]
+        },
+        {
+          "title": "مراجعة SQL متباعدة",
+          "problem": "ينسى الطالب JOIN وGROUP BY بعد إكمال الدرس.",
+          "approach": "تمارين مراجعة أصلية اختيارية بعد 3 و10 و21 يومًا.",
+          "stack": "SQL, TypeScript, browser storage",
+          "steps": [
+            "حدّد المفاهيم من المسار الحالي.",
+            "صمّم ثلاثة تمارين جديدة لكل مفهوم.",
+            "أضف تذكيرًا اختياريًا مع زر إيقاف.",
+            "قِس اختبار الاحتفاظ بعد أسبوعين."
+          ],
+          "metric": "زيادة متوسط نتيجة اختبار الاحتفاظ مقارنة بمجموعة مرجعية.",
+          "difficulty": "متوسطة؛ تقدير 3–5 أسابيع.",
+          "risks": "لا تكرر الأسئلة المحمية ولا تجعل التذكير إلزاميًا.",
+          "sources": [
+            {
+              "title": "freeCodeCamp README",
+              "url": "https://github.com/freeCodeCamp/freeCodeCamp/blob/main/README.md"
+            },
+            {
+              "title": "Relational databases curriculum",
+              "url": "https://www.freecodecamp.org/learn/relational-databases-v9/"
+            }
+          ]
+        },
+        {
+          "title": "فحص وصولية صفحات RTL",
+          "problem": "قد تنجح صفحات HTML وظيفيًا لكنها تفشل في التنقل بالعربية ولوحة المفاتيح.",
+          "approach": "حزمة اختبارات إضافية لواجهات عربية تجريبية.",
+          "stack": "Playwright, axe-core, HTML, CSS",
+          "steps": [
+            "ابنِ صفحات RTL فيها أخطاء معروفة.",
+            "اختبر ترتيب التركيز والتباين واتجاه النص.",
+            "اعرض رسائل عربية للإصلاح.",
+            "راجع يدويًا الحالات التي لا يغطيها الفحص."
+          ],
+          "metric": "اكتشاف 90% من العيوب المزروعة في مجموعة الاختبار.",
+          "difficulty": "متوسطة؛ تقدير 2–3 أسابيع.",
+          "risks": "الفحص الآلي لا يغني عن مستخدمي التقنيات المساعدة.",
+          "sources": [
+            {
+              "title": "freeCodeCamp README",
+              "url": "https://github.com/freeCodeCamp/freeCodeCamp/blob/main/README.md"
+            },
+            {
+              "title": "WCAG 2.2",
+              "url": "https://www.w3.org/TR/WCAG22/"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مختبر SQL يعمل في المتصفح",
+          "problem": "يريد الطالب ممارسة الاستعلامات دون إعداد خادم.",
+          "approach": "موقع مستقل يستخدم SQLite WASM وقاعدة بيانات تدريبية.",
+          "stack": "SQLite WASM, TypeScript",
+          "steps": [
+            "أنشئ بيانات متجر اصطناعية.",
+            "ابنِ محرر استعلامات محدود الموارد.",
+            "أضف تحديات مع فحص النتائج.",
+            "اختبر التشغيل دون شبكة بعد تحميل الملفات."
+          ],
+          "metric": "إتمام 10 تمارين دون خادم بزمن أقل من ثانيتين في بيئة الاختبار.",
+          "difficulty": "متوسطة؛ تقدير 2–4 أسابيع.",
+          "risks": "اختلاف SQL بين SQLite وPostgreSQL.",
+          "sources": [
+            {
+              "title": "freeCodeCamp README",
+              "url": "https://github.com/freeCodeCamp/freeCodeCamp/blob/main/README.md"
+            },
+            {
+              "title": "SQLite WASM",
+              "url": "https://sqlite.org/wasm/doc/trunk/index.md"
+            }
+          ]
+        },
+        {
+          "title": "محاكي مقابلات Python باختبارات",
+          "problem": "يحتاج المتعلم إلى إثبات صحة الشيفرة بدل حفظ إجابات مقابلات.",
+          "approach": "موقع يقدم مسائل أصلية مع محرر محلي واختبارات قابلة للإعادة.",
+          "stack": "Python, Pyodide, React",
+          "steps": [
+            "أنشئ عشر مسائل ذات اختبارات مرجعية.",
+            "شغّل الاختبارات في بيئة متصفح معزولة.",
+            "اعرض أسباب فشل الاختبارات.",
+            "قارن نتائج ثلاث محاولات للمتعلم."
+          ],
+          "metric": "تحسن نسبة الاختبارات المجتازة بعد ثلاث محاولات.",
+          "difficulty": "متوسطة؛ تقدير 3–5 أسابيع.",
+          "risks": "يجب عزل التنفيذ وتجنب كشف الحل الكامل.",
+          "sources": [
+            {
+              "title": "freeCodeCamp Python curriculum",
+              "url": "https://www.freecodecamp.org/learn/python-v9/"
+            },
+            {
+              "title": "Pyodide documentation",
+              "url": "https://pyodide.org/en/stable/"
+            }
+          ]
+        },
+        {
+          "title": "تحليل بيانات الفيزياء ببايثون",
+          "problem": "يجد طالب العلوم صعوبة في تحويل القياسات إلى رسوم واستنتاجات.",
+          "approach": "مسار مستقل على بيانات فيزيائية اصطناعية مع التحقق من الوحدات.",
+          "stack": "Python, pandas, NumPy, Matplotlib",
+          "steps": [
+            "أنشئ ثلاث مجموعات قياس اصطناعية.",
+            "اكتب تمارين قراءة وتنظيف ورسم.",
+            "أضف اختبارات للتحقق من الوحدات.",
+            "قيّم تفسير الطلاب للرسوم والنتائج."
+          ],
+          "metric": "نجاح 80% في تفسير رسم ووحدة قياس دون تلميح.",
+          "difficulty": "متوسطة؛ تقدير 3–5 أسابيع.",
+          "risks": "لا تقدّم البيانات الاصطناعية بوصفها نتائج تجارب حقيقية.",
+          "sources": [
+            {
+              "title": "freeCodeCamp Python curriculum",
+              "url": "https://www.freecodecamp.org/learn/python-v9/"
+            },
+            {
+              "title": "pandas user guide",
+              "url": "https://pandas.pydata.org/docs/user_guide/index.html"
+            }
+          ]
+        }
+      ],
+      "religious": [],
+      "reviewedAt": "2026-10-24T14:40:39+00:00"
+    },
+    "7c94eb734f17ebfcce": {
+      "url": "https://github.com/open-webui/open-webui",
+      "titleAr": "Open WebUI: واجهة للنماذج المحلية والسحابية",
+      "summaryAr": "واجهة ذاتية الاستضافة تدعم Ollama وواجهات API المتوافقة مع OpenAI، وتضم RAG وإضافات وأدوات وإدارة مستخدمين. يمكن أن تعمل دون اتصال عندما تكون جميع النماذج والخدمات محلية، بينما الاعتماد على API أو بحث ويب يستلزم اتصالًا وربما رسومًا.",
+      "whyItMatters": "تساعد على جمع نماذج متعددة في واجهة واحدة مع التحكم في مكان معالجة البيانات. العمل محليًا ليس مضمونًا بمجرد تثبيت الواجهة.",
+      "audience": "مستخدمو النماذج المحلية والمطورون وفرق المعرفة.",
+      "nextSteps": [
+        "راجع README واختر pip أو Docker مع تخزين دائم.",
+        "جرّب ربط نموذج محلي قبل إضافة خدمات مدفوعة."
+      ],
+      "limitations": "لم نشغّل الخدمة؛ الترخيص Open WebUI License يتضمن شروط علامة تجارية لبعض حالات النشر والتعديل.",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "Open WebUI README",
+          "url": "https://github.com/open-webui/open-webui/blob/main/README.md"
+        },
+        {
+          "title": "Open WebUI documentation",
+          "url": "https://docs.openwebui.com/"
+        },
+        {
+          "title": "Open WebUI License",
+          "url": "https://github.com/open-webui/open-webui/blob/main/LICENSE"
+        },
+        {
+          "title": "Ollama repository",
+          "url": "https://github.com/ollama/ollama"
+        }
+      ],
+      "overview": "خادم ويب للمحادثات والمستخدمين والملفات والأدوات يتصل بالنماذج عبر Ollama وواجهات متوافقة. يدعم RAG وقواعد متجهات متعددة وتكاملات MCP والذاكرة وتحليلات الاستخدام؛ هذه مزايا قائمة وليست تحسينات مقترحة.",
+      "requirements": "يوصي README باستخدام Python 3.11 عند التثبيت عبر pip، أو Docker مع وحدة تخزين دائمة. النماذج المحلية تحتاج عتادًا حسب الحجم، والخدمات الخارجية قد تكون مدفوعة. راجع Open WebUI License وLICENSE_HISTORY قبل تعديل العلامة التجارية.",
+      "quickStart": "وفق README: pip install open-webui ثم open-webui serve للوصول إلى localhost:8080 في بيئة Python 3.11. أو اتبع مثال Docker الرسمي مع -v open-webui:/app/backend/data للحفاظ على البيانات.",
+      "improvements": [
+        {
+          "title": "كشف الاستشهادات القديمة بعد تحديث مستندات RAG",
+          "problem": "قد تستند إجابة إلى فقرة حُذفت أو تغيرت.",
+          "approach": "فحص بصمات المقاطع المستخدمة في الاستشهادات عند تحديث المصدر.",
+          "stack": "Python, hashes, vector DB",
+          "steps": [
+            "أنشئ مجموعة مستندات قابلة للتعديل.",
+            "سجّل بصمة كل مقطع مستشهد به.",
+            "غيّر عشر فقرات عمدًا.",
+            "قِس كشف الإحالات المنتهية دون حذف المحادثات."
+          ],
+          "metric": "كشف 95% من الاستشهادات القديمة في مجموعة اختبار.",
+          "difficulty": "متوسطة؛ تقدير 3–5 أسابيع.",
+          "risks": "التغييرات الشكلية قد تخلق إنذارات كاذبة.",
+          "sources": [
+            {
+              "title": "Open WebUI README",
+              "url": "https://github.com/open-webui/open-webui/blob/main/README.md"
+            },
+            {
+              "title": "Open WebUI documentation",
+              "url": "https://docs.openwebui.com/"
+            }
+          ]
+        },
+        {
+          "title": "مقارنة دقة OCR العربي قبل الفهرسة",
+          "problem": "تقل جودة RAG إذا كانت النصوص العربية المستخرجة من الصور مشوهة.",
+          "approach": "لوحة اختيارية تقارن نتائج محركين على عينة مرخصة.",
+          "stack": "Python, OCR, CER/WER",
+          "steps": [
+            "جهّز 40 صفحة عربية مرخصة مع نص مرجعي.",
+            "شغّل محركي OCR في بيئة اختبار.",
+            "احسب CER وWER لكل صفحة.",
+            "اعرض أفضل إعداد وحدود القياس."
+          ],
+          "metric": "خفض CER المستهدف 15% عن الإعداد الافتراضي في العينة.",
+          "difficulty": "متوسطة إلى عالية؛ تقدير 4–6 أسابيع.",
+          "risks": "ترخيص الصفحات ودقة التفريغ المرجعي.",
+          "sources": [
+            {
+              "title": "Open WebUI documentation",
+              "url": "https://docs.openwebui.com/"
+            },
+            {
+              "title": "Docling documentation",
+              "url": "https://docling-project.github.io/docling/"
+            }
+          ]
+        },
+        {
+          "title": "تقرير موارد النموذج المحلي",
+          "problem": "لا يستطيع المستخدم مقارنة استهلاك ذاكرة النماذج وزمنها بدقة.",
+          "approach": "تجربة معيارية محلية تعرض زمن الاستجابة والذاكرة والتشتت.",
+          "stack": "Python, psutil, Ollama API",
+          "steps": [
+            "جهّز ثلاث مهام نصية ثابتة.",
+            "شغّل كل مهمة خمس مرات لكل نموذج.",
+            "احسب الوسيط واستهلاك الذاكرة.",
+            "اعرض مقارنة مع مواصفات العتاد."
+          ],
+          "metric": "تكرارية زمن الاستجابة ضمن 15% على الجهاز نفسه.",
+          "difficulty": "متوسطة؛ تقدير 3–5 أسابيع.",
+          "risks": "قياس الطاقة لا يتوفر على كل الأجهزة.",
+          "sources": [
+            {
+              "title": "Open WebUI README",
+              "url": "https://github.com/open-webui/open-webui/blob/main/README.md"
+            },
+            {
+              "title": "Ollama repository",
+              "url": "https://github.com/ollama/ollama"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "فهرس محلي لأدلة الأجهزة المنزلية",
+          "problem": "يصعب البحث في ملفات PDF المتعددة عن تعليمات الأجهزة.",
+          "approach": "خدمة محلية تسترجع المقتطف والصفحة من أدلة يملكها المستخدم.",
+          "stack": "Open WebUI, Ollama, PDF extraction",
+          "steps": [
+            "اجمع خمسة أدلة مرخصة للاستخدام.",
+            "افهرس النص مع أرقام الصفحات.",
+            "أظهر المرجع مع كل إجابة.",
+            "اختبر 30 سؤالًا معروف الإجابة."
+          ],
+          "metric": "90% إجابات صحيحة موثقة في عينة الاختبار.",
+          "difficulty": "متوسطة؛ تقدير 2–4 أسابيع.",
+          "risks": "الأدلة القديمة قد لا تطابق الجهاز الحالي.",
+          "sources": [
+            {
+              "title": "Open WebUI README",
+              "url": "https://github.com/open-webui/open-webui/blob/main/README.md"
+            },
+            {
+              "title": "Ollama repository",
+              "url": "https://github.com/ollama/ollama"
+            }
+          ]
+        },
+        {
+          "title": "مساعد دراسة Python محلي",
+          "problem": "يريد الطالب مراجعة كوده دون إرسال الملفات إلى خدمة خارجية.",
+          "approach": "مساعد مستقل يشغّل اختبارات محدودة ويشرح الفشل بدل كتابة الحل عنه.",
+          "stack": "Python, pytest, local LLM",
+          "steps": [
+            "صمّم مسائل واختبارات مرجعية.",
+            "اعزل تنفيذ الكود داخل بيئة تجريبية.",
+            "أظهر تفسير الفشل دون تعديل المشروع تلقائيًا.",
+            "قِس تحسن النجاح عبر ثلاث محاولات."
+          ],
+          "metric": "ارتفاع نسبة الاختبارات المجتازة بعد المراجعة.",
+          "difficulty": "متوسطة؛ تقدير 4–6 أسابيع.",
+          "risks": "تشغيل شيفرة غير موثوقة يحتاج عزلاً صارمًا.",
+          "sources": [
+            {
+              "title": "Open WebUI README",
+              "url": "https://github.com/open-webui/open-webui/blob/main/README.md"
+            },
+            {
+              "title": "freeCodeCamp Python curriculum",
+              "url": "https://www.freecodecamp.org/learn/python-v9/"
+            }
+          ]
+        },
+        {
+          "title": "مقياس استرجاع الوثائق العربية",
+          "problem": "اختيار إعداد RAG يتم كثيرًا دون بيانات مقارنة.",
+          "approach": "تطبيق مستقل يقارن التجزئة والتضمين باستخدام أسئلة عربية مرخصة.",
+          "stack": "Python, vector search, evaluation fixtures",
+          "steps": [
+            "جهّز 100 سؤال وإجابة مع مصدر.",
+            "قارن إعدادين للتجزئة وإعدادين للتضمين.",
+            "احسب recall@5 وصحة الإحالات.",
+            "انشر التقرير مع العتاد والتكلفة."
+          ],
+          "metric": "تحسن recall@5 دون زيادة زمن الاستعلام أكثر من 25%.",
+          "difficulty": "متوسطة إلى عالية؛ تقدير 5–7 أسابيع.",
+          "risks": "انحياز البيانات والتفاوت بين الوثائق.",
+          "sources": [
+            {
+              "title": "Open WebUI documentation",
+              "url": "https://docs.openwebui.com/"
+            },
+            {
+              "title": "Open WebUI README",
+              "url": "https://github.com/open-webui/open-webui/blob/main/README.md"
+            }
+          ]
+        }
+      ],
+      "religious": [
+        {
+          "title": "فهرس وثائق الأوقاف مع إحالات",
+          "problem": "تحتاج الجهات المشرفة على الأوقاف إلى العثور على وثائقها دون اختلاق أحكام.",
+          "approach": "بحث محلي يعرض نصوص الوثائق المصرح بها ومراجع الصفحات دون إصدار فتوى.",
+          "stack": "Open WebUI, local OCR, retrieval, human review",
+          "steps": [
+            "تحقق من تراخيص الوثائق وصلاحيات الاطلاع.",
+            "افهرس النص مع الصفحة وتاريخ النسخة.",
+            "اشترط إحالة واضحة ورفض الإجابة دون مصدر.",
+            "اعرض المخرجات الشرعية والقانونية على مختص."
+          ],
+          "metric": "100% من النتائج المعروضة لها مرجع يمكن فتحه.",
+          "difficulty": "متوسطة إلى عالية؛ تقدير 5–8 أسابيع.",
+          "risks": "سرية الوثائق؛ لا يغني عن مراجعة مختص.",
+          "sources": [
+            {
+              "title": "Open WebUI README",
+              "url": "https://github.com/open-webui/open-webui/blob/main/README.md"
+            },
+            {
+              "title": "Open WebUI License",
+              "url": "https://github.com/open-webui/open-webui/blob/main/LICENSE"
+            }
+          ]
+        }
+      ],
+      "reviewedAt": "2026-10-24T14:40:39+00:00"
     }
   }
 }
