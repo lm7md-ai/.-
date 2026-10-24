@@ -1,0 +1,389 @@
+{
+  "version": 1,
+  "items": {
+    "54a84576b73959f5c0": {
+      "url": "https://dreamlabs.ai/research/dream-1/",
+      "titleAr": "Dream-1: نموذج للتحكم في روبوتات جديدة عبر API",
+      "summaryAr": "أعلنت Dream Labs عن World Action Model باسم Dream-1 يستقبل ملاحظات من روبوت ويرجع أوامر تحكم عبر API. تعرض الشركة تجارب على روبوتات ومهام لم تتطلب تدريبًا مخصصًا لكل روبوت، وتذكر أن سعر الخدمة يبدأ من 3 دولارات لكل ساعة. لا تعني هذه العروض أن جميع الروبوتات أو البيئات مدعومة.",
+      "whyItMatters": "المؤكد وجود إعلان وواجهة موثقة. التعميم على الروبوتات الجديدة نتيجة تدعيها الشركة ولم أختبرها. عمليًا قد يقلل زمن تجارب المختبرات لكنه يتطلب تحققًا مستقلًا من السلامة والاعتمادية.",
+      "audience": "باحثو الروبوتات والجامعات ومطورو التحكم.",
+      "nextSteps": [
+        "راجع أنواع الروبوتات المدعومة وطريقة ربط API.",
+        "ابدأ بمقارنة نتائج في محاكاة وبمقياس نجاح وفشل قبل أي تجربة واقعية."
+      ],
+      "limitations": "التكلفة المعلنة ابتدائية؛ يلزم عتاد متوافق واتصال بالخدمة. لم أشغّل النموذج أو الروبوتات ولا أؤكد نتائج الشركة.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Dream Labs: Introducing Dream-1",
+          "url": "https://dreamlabs.ai/research/dream-1/"
+        }
+      ],
+      "reviewedAt": "2026-10-24T23:51:00.905Z"
+    },
+    "003c34cec635b77197": {
+      "url": "https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/",
+      "titleAr": "LogSync: شريحة ترصد تزامن الإشارات بين مناطق الدماغ",
+      "summaryAr": "قدمت EPFL شريحة بحثية منخفضة الاستهلاك تستخرج مؤشرات قوة الإشارات العصبية وتزامنها بين مناطق متعددة، وتستخدم خوارزمية لتصنيف حالات معرفية وانفعالية وتوليد محفزات توقيت. جرى التقييم على تسجيلات بشرية من تجارب سابقة وتجارب على جرذان، وتذكر الجامعة استهلاكًا دون 200 ميكروواط.",
+      "whyItMatters": "الموثق نشر التصميم ونتائج بحثية، أما دقة التصنيف فهي من الفريق المطور. أهمية العمل هندسية في الجمع بين معالجة الإشارات والعتاد منخفض الطاقة، ولا تعني توفر علاج سريري.",
+      "audience": "باحثو الدوائر المتكاملة والإشارات الحيوية وطلاب التعلّم الآلي.",
+      "nextSteps": [
+        "راجع دراسة IEEE المرتبطة بمقال الجامعة.",
+        "قارن استخراج مؤشرات شبكة مناطق متعددة بتحليل منطقة واحدة على بيانات بحثية مرخصة."
+      ],
+      "limitations": "نموذج بحثي وليس جهازًا علاجيًا معتمدًا؛ لم أختبر الشريحة أو دقة النتائج ولا يمكن استنتاج فعالية سريرية منها.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "EPFL: Neural chip decodes interactions",
+          "url": "https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/"
+        }
+      ],
+      "reviewedAt": "2026-10-24T23:51:00.905Z"
+    },
+    "02e941dcb42029b302": {
+      "url": "https://arxiv.org/abs/2610.29162",
+      "titleAr": "لماذا يصعب فهم بعض نصوص الذكاء الاصطناعي؟",
+      "summaryAr": "يفحص بحث منشور في arXiv خصائص لغوية مرتبطة بصعوبة القراءة مثل التراكيب الطويلة والعبارات قليلة الشيوع. يذكر الملخص أن النماذج التسعة التي دُرست أظهرت بعض هذه السمات أكثر من النصوص البشرية، مع فروق بين النماذج. اختبر الباحثون فرضية أن الضغط نحو كثافة المعلومات قد يقلل وضوح اللغة.",
+      "whyItMatters": "هذه نتائج وردت في ملخص الباحثين، وليست تجربة مستقلة أجريتها. تحليل عملي: قياس فهم القارئ يجب أن يكون جزءًا من تقييم مساعد تعليمي عربي.",
+      "audience": "مطورو المساعدات التعليمية ومحررو المحتوى ومقيّمو النماذج.",
+      "nextSteps": [
+        "اختبر شروحًا عربية مع أسئلة فهم لدى قراء حقيقيين.",
+        "قارن نسخًا موجزة ومبسطة مع ثبات الدقة والمراجع."
+      ],
+      "limitations": "اطلعت على ملخص arXiv فقط ولم أراجع متن الورقة؛ لا يصح تعميم النتائج على العربية تلقائيًا.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv 2610.29162",
+          "url": "https://arxiv.org/abs/2610.29162"
+        }
+      ],
+      "reviewedAt": "2026-10-24T23:51:00.905Z"
+    },
+    "f991937645caaaa57d": {
+      "url": "https://arxiv.org/abs/2610.28909",
+      "titleAr": "DiffResearch: بحث عميق بنماذج انتشارية أسرع في اختبار الباحثين",
+      "summaryAr": "تقدم ورقة DiffResearch إطار بحث عميق متعدد الوكلاء يستخدم نموذج لغة انتشاريًا في التخطيط وجمع الأدلة وكتابة التقرير. يذكر الملخص تسريعًا يقارب ست مرات على 100 مهمة من Deep Research Bench عند تثبيت مكونات المقارنة، وتحسنًا وسيطًا بنحو 1.99 مرة في تفكيك الاستعلامات باستخدام dFast.",
+      "whyItMatters": "الأرقام من الباحثين وفي إعداد محدد وليست قياسًا مستقلًا لكل الخدمات. تحليلي: زمن التخطيط الأقل مفيد فقط مع الحفاظ على صحة الأدلة وجودة الاستشهادات.",
+      "audience": "مطورو RAG ووكلاء البحث والباحثون في نماذج اللغة.",
+      "nextSteps": [
+        "قارن نموذجًا انتشاريًا وتقليديًا على أسئلة عربية متطابقة.",
+        "قس زمن التنفيذ وصحة المصادر وجودة الإجابة وتكلفة الموارد."
+      ],
+      "limitations": "المراجعة مقتصرة على الملخص؛ لم أقرأ تفاصيل التقييم كاملة أو أشغّل النظام. قد تختلف السرعة بحسب النموذج والعتاد.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv 2610.28909",
+          "url": "https://arxiv.org/abs/2610.28909"
+        }
+      ],
+      "reviewedAt": "2026-10-24T23:51:00.905Z"
+    },
+    "8e773aa72402b28ae1": {
+      "url": "https://github.com/scikit-learn/scikit-learn",
+      "titleAr": "scikit-learn: مكتبة Python للتعلّم الآلي التقليدي",
+      "summaryAr": "مكتبة مفتوحة المصدر توفر التصنيف والانحدار والتجميع وتقليل الأبعاد والمعالجة المسبقة وPipelines والتحقق المتقاطع وتقييم النماذج. تناسب البيانات الجدولية والمشاريع الأكاديمية، ولا تستهدف تدريب نماذج اللغة العملاقة.",
+      "whyItMatters": "تمكّن طالب Python من بناء خط أساس ثم نموذج قابل للتقييم ببيانات منفصلة، وتوثيقها يحذر من تسرب بيانات الاختبار.",
+      "audience": "طلاب الذكاء الاصطناعي ومحللو البيانات ومطورو النماذج التقليدية.",
+      "nextSteps": [
+        "أنشئ بيئة Python افتراضية وثبت scikit-learn.",
+        "استخدم train_test_split وPipeline وقارن النموذج بخط أساس."
+      ],
+      "limitations": "راجعت README والترخيص والتوثيق ولم أشغّل المشروع. ترخيص BSD-3-Clause. متطلبات Python وNumPy/SciPy تتغير حسب الإصدار؛ CPU يكفي للبيانات الصغيرة، والبيانات الكبيرة قد تحتاج ذاكرة إضافية. لا يلزم مفتاح API للتشغيل المحلي؛ البدائل statsmodels للإحصاء وPyTorch للتعلّم العميق.",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "scikit-learn repository",
+          "url": "https://github.com/scikit-learn/scikit-learn"
+        },
+        {
+          "title": "scikit-learn pitfalls",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "scikit-learn install",
+          "url": "https://scikit-learn.org/stable/install.html"
+        }
+      ],
+      "overview": "يوحد واجهات fit/predict وأدوات تجهيز البيانات والتقييم في Python. يستخدم في التصنيف والتنبؤ والتجميع وكشف الشذوذ. يبدأ العمل بفصل بيانات الاختبار، ثم معالجة ضمن Pipeline ومقارنة الأداء بمقاييس مناسبة.",
+      "requirements": "Python 3 بالإصدار المدعوم وNumPy وSciPy وjoblib وthreadpoolctl؛ أمثلة الرسوم قد تحتاج Matplotlib. لا يلزم حساب أو API سحابي. ترخيص BSD-3-Clause، وتزداد متطلبات الذاكرة بحسب حجم البيانات.",
+      "quickStart": "python -m venv sklearn-env؛ فعّل البيئة حسب نظامك؛ pip install -U scikit-learn؛ تحقق عبر python -c \"import sklearn; sklearn.show_versions()\" ثم جرّب load_iris وtrain_test_split وmake_pipeline(StandardScaler(), LogisticRegression()).",
+      "improvements": [
+        {
+          "title": "مدقق تسرب بيانات التدريب",
+          "problem": "قد يطبق الطالب fit على البيانات قبل تقسيمها ويحصل على دقة مضللة.",
+          "approach": "أداة خارجية تفحص دفاتر Jupyter بحثًا عن ترتيب معالجة خاطئ.",
+          "stack": "Python, ast, nbformat",
+          "steps": [
+            "اجمع 10 أمثلة صحيحة وخاطئة.",
+            "افحص ترتيب split وfit وtransform.",
+            "اعرض تحذيرات مرتبطة بالخلايا.",
+            "اختبر الإنذارات الكاذبة."
+          ],
+          "metric": "اكتشاف 8 من 10 أخطاء اصطناعية مع ≤2 إنذار كاذب.",
+          "difficulty": "تقدير الجهد: أسبوع، متوسط",
+          "risks": "التحليل الساكن لا يفهم كل الأنماط الديناميكية؛ لا تدعي أن المكتبة تخلو من أدوات منع التسرب.",
+          "sources": [
+            {
+              "title": "scikit-learn repository",
+              "url": "https://github.com/scikit-learn/scikit-learn"
+            },
+            {
+              "title": "scikit-learn pitfalls",
+              "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+            },
+            {
+              "title": "scikit-learn install",
+              "url": "https://scikit-learn.org/stable/install.html"
+            }
+          ]
+        },
+        {
+          "title": "تقرير عربي لمقارنة خط الأساس",
+          "problem": "قد لا يعرف المبتدئ إن كان نموذجه أفضل من التخمين البسيط.",
+          "approach": "مولد تقرير يقارن DummyClassifier بنموذج فعلي على التقسيم نفسه.",
+          "stack": "Python, scikit-learn, Jinja2",
+          "steps": [
+            "حدد مقاييس مناسبة للمهمة.",
+            "شغّل النموذجين بالتقسيم نفسه.",
+            "اعرض الأرقام والقيود بالعربية.",
+            "راجع التقرير مقابل القيم الخام."
+          ],
+          "metric": "تطابق كل الأرقام في 20 حالة اختبار.",
+          "difficulty": "تقدير الجهد: 4–6 أيام، متوسط",
+          "risks": "اختيار مقياس غير مناسب قد يضلل القارئ.",
+          "sources": [
+            {
+              "title": "scikit-learn repository",
+              "url": "https://github.com/scikit-learn/scikit-learn"
+            },
+            {
+              "title": "scikit-learn pitfalls",
+              "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+            },
+            {
+              "title": "scikit-learn install",
+              "url": "https://scikit-learn.org/stable/install.html"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مختبر تعلم آلي عربي تفاعلي",
+          "problem": "طلاب Python يحتاجون إلى مشاريع عملية لا حفظ التعاريف.",
+          "approach": "واجهة تسمح بتغيير النموذج والمعالجة ومشاهدة أثر ذلك على نتائج اختبار حقيقي.",
+          "stack": "Python, scikit-learn, FastAPI, React",
+          "steps": [
+            "أنشئ بيانات اصطناعية.",
+            "اعرض إعدادات النموذج والتقسيم.",
+            "ارسم مصفوفة الالتباس.",
+            "قارن فهم الطلاب قبل النشاط وبعده."
+          ],
+          "metric": "تحسن متوسط اختبار فهم قصير 20% في عينة تجريبية.",
+          "difficulty": "تقدير الجهد: 2–3 أسابيع، متوسط",
+          "risks": "الأثر التعليمي يحتاج تجربة مضبوطة؛ لا تجمع بيانات الطلاب دون إذن.",
+          "sources": [
+            {
+              "title": "scikit-learn repository",
+              "url": "https://github.com/scikit-learn/scikit-learn"
+            },
+            {
+              "title": "scikit-learn pitfalls",
+              "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+            },
+            {
+              "title": "scikit-learn install",
+              "url": "https://scikit-learn.org/stable/install.html"
+            }
+          ]
+        },
+        {
+          "title": "مقارن استهلاك الكهرباء بالانحدار",
+          "problem": "يحتاج الطالب إلى مشكلة تنبؤ واقعية قابلة للقياس.",
+          "approach": "أداة تقارن انحدارًا خطيًا وشجريًا على بيانات عامة مرخصة.",
+          "stack": "Python, pandas, scikit-learn",
+          "steps": [
+            "اختر بيانات عامة مرخصة.",
+            "افصل البيانات زمنيًا.",
+            "درّب نموذجين وخط أساس.",
+            "اعرض MAE وزمن التدريب."
+          ],
+          "metric": "تقرير قابل للتكرار يقارن 3 طرق.",
+          "difficulty": "تقدير الجهد: أسبوع، متوسط",
+          "risks": "التغيرات الموسمية وتسرب الزمن قد يفسدان النتائج.",
+          "sources": [
+            {
+              "title": "scikit-learn repository",
+              "url": "https://github.com/scikit-learn/scikit-learn"
+            },
+            {
+              "title": "scikit-learn pitfalls",
+              "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+            },
+            {
+              "title": "scikit-learn install",
+              "url": "https://scikit-learn.org/stable/install.html"
+            }
+          ]
+        }
+      ],
+      "religious": [],
+      "reviewedAt": "2026-10-24T23:51:00.905Z"
+    },
+    "48c31e1ffa04c91de3": {
+      "url": "https://github.com/puppeteer/puppeteer",
+      "titleAr": "Puppeteer: أتمتة Chrome وFirefox باستخدام JavaScript",
+      "summaryAr": "مكتبة للتحكم في المتصفح عبر Chrome DevTools Protocol أو WebDriver BiDi؛ تدعم التنقل والتفاعل مع العناصر ولقطات الشاشة وفحوصات الواجهات. تثبيت puppeteer ينزل متصفحًا متوافقًا عادةً، بينما puppeteer-core لا ينزله ويتطلب إعداد المتصفح.",
+      "whyItMatters": "يمكن التحقق من ظهور محتوى نَبض داخل المتصفح بعد النشر بدل الاستدلال من نجاح GitHub Actions وحده.",
+      "audience": "مطورو الويب ومختبرو الجودة ومشرفو المواقع.",
+      "nextSteps": [
+        "ثبّت Node بالإصدار المدعوم ثم npm i puppeteer.",
+        "افتح صفحة اختبار محلية والتقط screenshot بعد ظهور عنصر محدد."
+      ],
+      "limitations": "راجعت README والترخيص والتوثيق دون تشغيل. متطلبات الإصدار الحالي Node 22.12+ وفق الوثائق، وقد يحتاج تنزيل Chrome إلى مئات الميغابايت. ترخيص Apache-2.0. لا يلزم API سحابي؛ البدائل Playwright وSelenium. يجب احترام سياسات المواقع.",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "Puppeteer repository",
+          "url": "https://github.com/puppeteer/puppeteer"
+        },
+        {
+          "title": "Puppeteer getting started",
+          "url": "https://pptr.dev/guides/getting-started"
+        },
+        {
+          "title": "Puppeteer requirements",
+          "url": "https://pptr.dev/guides/system-requirements"
+        }
+      ],
+      "overview": "يعالج الحاجة إلى اختبارات من منظور متصفح حقيقي عبر تشغيل جلسة وصفحات وتنقلات وقراءة عناصرها. يعمل headless افتراضيًا، ويتيح اختبارات smoke ولقطات شاشة وتوليد PDF، دون نموذج AI إلزامي.",
+      "requirements": "Node.js 22.12+ وفق صفحة المتطلبات، ونظام يدعم Chrome/Firefox ومكتباته ومساحة تنزيل وذاكرة. puppeteer-core يتطلب متصفحًا مثبتًا أو اتصالًا به. Apache-2.0، ولا يلزم حساب مدفوع للتشغيل المحلي.",
+      "quickStart": "npm init -y ثم npm i puppeteer. أنشئ ملف .mjs يستورد puppeteer، ثم await puppeteer.launch() وbrowser.newPage() وpage.goto('https://example.com') وpage.screenshot({path:'page.png'})، ثم browser.close(). عند فشل تنزيل المتصفح راجع npx puppeteer browsers install.",
+      "improvements": [
+        {
+          "title": "مقارن صور الواجهات العربية RTL",
+          "problem": "قد تتكسر محاذاة العربية دون خطأ JavaScript.",
+          "approach": "أداة مرافقة تقارن لقطات RTL مع مرجع وتبرز مناطق الاختلاف.",
+          "stack": "Node.js, Puppeteer, pixelmatch",
+          "steps": [
+            "أنشئ 3 صفحات RTL مرجعية.",
+            "التقط صورًا بأبعاد ثابتة.",
+            "أخف العناصر المتغيرة.",
+            "اختبر كشف 10 أخطاء مصطنعة."
+          ],
+          "metric": "كشف 9 من 10 أخطاء مع ≤1 إنذار كاذب.",
+          "difficulty": "تقدير الجهد: أسبوع، متوسط",
+          "risks": "اختلاف الخطوط يسبب إنذارات كاذبة؛ ليست ميزة أصلية مؤكدة الغياب.",
+          "sources": [
+            {
+              "title": "Puppeteer repository",
+              "url": "https://github.com/puppeteer/puppeteer"
+            },
+            {
+              "title": "Puppeteer getting started",
+              "url": "https://pptr.dev/guides/getting-started"
+            },
+            {
+              "title": "Puppeteer requirements",
+              "url": "https://pptr.dev/guides/system-requirements"
+            }
+          ]
+        },
+        {
+          "title": "مقياس تذبذب اختبارات المتصفح",
+          "problem": "الاختبارات ذات الانتظار الثابت قد تفشل عشوائيًا.",
+          "approach": "أداة تعيد السيناريو 20 مرة وتقارن طرق الانتظار.",
+          "stack": "Node.js, Puppeteer, CSV",
+          "steps": [
+            "جهز 5 سيناريوهات بتأخير اصطناعي.",
+            "كرر كل سيناريو 20 مرة.",
+            "سجل مدة الانتظار والفشل.",
+            "قارن نسبة الفشل بعد التحسين."
+          ],
+          "metric": "خفض الفشل العشوائي لأقل من 2% في الاختبارات.",
+          "difficulty": "تقدير الجهد: أسبوع، متوسط",
+          "risks": "نتائج الشبكات الحقيقية قد تختلف؛ إعادة المحاولة لا تصلح الخطأ الوظيفي.",
+          "sources": [
+            {
+              "title": "Puppeteer repository",
+              "url": "https://github.com/puppeteer/puppeteer"
+            },
+            {
+              "title": "Puppeteer getting started",
+              "url": "https://pptr.dev/guides/getting-started"
+            },
+            {
+              "title": "Puppeteer requirements",
+              "url": "https://pptr.dev/guides/system-requirements"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مراقب ظهور الإثراء المنشور في نَبض",
+          "problem": "نجاح CI لا يضمن وصول JSON أو ظهوره في تفاصيل الخبر.",
+          "approach": "أداة مستقلة تقرأ ملف الموقع المنشور وتفحص نص خبر ومشروع عبر المتصفح.",
+          "stack": "Node.js, Puppeteer, JSON",
+          "steps": [
+            "اقرأ editorial.json المنشور.",
+            "اختر معرف خبر ومشروع من التغذية.",
+            "افتح تفاصيل كل منهما وانتظر النص العربي.",
+            "احفظ تقريرًا ولقطة لكل فحص."
+          ],
+          "metric": "كشف جميع حالات اختفاء النص في 6 اختبارات مصطنعة.",
+          "difficulty": "تقدير الجهد: 3–5 أيام، متوسط",
+          "risks": "تأخر CDN قد يسبب إخفاقًا مؤقتًا؛ يجب التمييز بينه وبين الخطأ الدائم.",
+          "sources": [
+            {
+              "title": "Puppeteer repository",
+              "url": "https://github.com/puppeteer/puppeteer"
+            },
+            {
+              "title": "Puppeteer getting started",
+              "url": "https://pptr.dev/guides/getting-started"
+            },
+            {
+              "title": "Puppeteer requirements",
+              "url": "https://pptr.dev/guides/system-requirements"
+            }
+          ]
+        },
+        {
+          "title": "مولد دليل استخدام مصور",
+          "problem": "تتقادم أدلة المواقع بعد تغيير الواجهة.",
+          "approach": "أداة داخلية تلتقط صورًا مرقمة لمسار استخدام وتنتج Markdown قابلًا للتحرير.",
+          "stack": "Node.js, Puppeteer, Markdown",
+          "steps": [
+            "حدد سيناريو على صفحات عامة.",
+            "التقط صورة بعد كل انتقال.",
+            "اربط كل صورة بوصف قابل للمراجعة.",
+            "أعد التنفيذ بعد تغيير تجريبي."
+          ],
+          "metric": "دليل من 8 خطوات متطابق في 3 تشغيلات.",
+          "difficulty": "تقدير الجهد: أسبوع، متوسط",
+          "risks": "تغير المحددات قد يكسر التسجيل؛ لا تستخدم بيانات أشخاص حقيقيين.",
+          "sources": [
+            {
+              "title": "Puppeteer repository",
+              "url": "https://github.com/puppeteer/puppeteer"
+            },
+            {
+              "title": "Puppeteer getting started",
+              "url": "https://pptr.dev/guides/getting-started"
+            },
+            {
+              "title": "Puppeteer requirements",
+              "url": "https://pptr.dev/guides/system-requirements"
+            }
+          ]
+        }
+      ],
+      "religious": [],
+      "reviewedAt": "2026-10-24T23:51:00.905Z"
+    }
+  }
+}
