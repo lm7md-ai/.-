@@ -2,7 +2,7 @@
 (() => {
   'use strict';
   const $ = (id) => document.getElementById(id);
-  const state = {items:[], filtered:[], view:'all', chip:'all', sort:'popular', q:'', period:null, imagesOnly:false, shown:9, saved:new Set(), generatedAt:null, demo:false, lastActive:null};
+  const state = {items:[], filtered:[], view:'all', chip:'all', sort:'popular', q:'', period:null, imagesOnly:false, shown:9, saved:new Set(), generatedAt:null, demo:false, lastActive:null,research:null};
   const categoryMap = {'ذكاء اصطناعي':'ذكاء اصطناعي','برمجة':'برمجة','تقنيات':'تقنيات','أبحاث':'أبحاث','فرص':'فرص','السعودية':'السعودية','مفتوح المصدر':'مفتوح المصدر'};
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const safeUrl = (u) => {try{const x=new URL(u, location.href);return x.protocol==='https:'||x.origin===location.origin&&x.protocol==='http:'? x.href:''}catch{return ''}};
@@ -20,24 +20,54 @@
 
   function loadSaved(){try{state.saved=new Set(JSON.parse(localStorage.getItem('nabdh-saved')||'[]'))}catch{state.saved=new Set()}}
   function persistSaved(){try{localStorage.setItem('nabdh-saved',JSON.stringify([...state.saved].slice(0,700)))}catch{}}
+  const religiousLabels = {improvements:'تطوير المشروع الأصلي',spinoffs:'مشروع مستقل جديد',religious:'خدمة دينية باستخدام المشروع'};
+  function projectById(id){ return state.items.find(x=>x.kind==='project'&&x.id===id) }
+  function studyFor(project){
+    const audited=state.research?.reviewed?.[String(project.repo||'').toLowerCase()];
+    if(audited) return {...audited,reviewed:true};
+    const base=window.TechPulseIdeas.forItem(project);
+    const generic=state.research?.genericReligious||{};
+    const names=generic[project.ideaDomain]||generic.general||[];
+    const family=window.TechPulseIdeas.domainNames[project.ideaDomain]||'البرمجيات';
+    const make=(name,type,index)=>({
+      title:name,
+      problem:type==='improvements'?`يلزم التأكد من الحاجة إلى «${name}» داخل ${project.title} قبل تنفيذ تعديل في المستودع.`:`توجد فرصة محتملة لتوظيف مجال ${family} في «${name}»، لكنها لم تُختبر بعد على هذا المستودع.`,
+      approach:type==='religious'?'تجربة أولى باستخدام بيانات عامة موثقة وترخيص واضح، مع إحالات للمصدر ومراجعة بشرية لأي محتوى ديني.':type==='improvements'?'راجع README وIssues ثم أنشئ إثبات مفهوم محدودًا على فرع منفصل مع اختبارات قبل اقتراح الدمج.':'أنشئ منتجًا أوليًا يعالج وظيفة واحدة، ثم اختبر استخدامه على مجموعة صغيرة من البيانات المسموح بها.',
+      steps:state.research?.genericSteps?.[type]||['افحص وثائق المشروع ثم ابنِ اختبارًا أوليًا.'],
+      stack:`أدوات ${family} ولغة ${project.language||'مناسبة'} بعد التحقق من توافق API`,
+      difficulty:'غير محددة حتى فحص المتطلبات',
+      metric:'عرّف مجموعة اختبار حقيقية ومقياسًا قابلًا للقياس قبل اعتماد الفكرة.',
+      risks:type==='religious'?'يجب مراجعة المحتوى من مصدر شرعي موثوق وعدم توليد آيات أو أحكام أو تخريج حديث آليًا.':'قد تكون الوظيفة موجودة فعلًا أو تتعارض مع الترخيص؛ هذا مقترح بحثي يحتاج تحققًا.',
+      confidence:'استكشاف مبدئي مبني على مجال المشروع فقط؛ لم تتم مراجعة كوده أو اختبار جدوى هذا المقترح.',
+      sources:[{title:'صفحة المستودع: افحص README والترخيص',url:project.url},...(type==='religious'?[{title:'توثيق بيانات Quran Foundation',url:'https://api-docs.quran.com/'},{title:'Sunnah.com للمطورين',url:'https://sunnah.com/developers'}]:[])]
+    });
+    return {reviewed:false,summary:'المقترحات التالية مستوحاة من تصنيف المشروع فقط، ولم نتحقق من احتياج المستودع لكل واحدة.',verified:'غير مدقق على مستوى المستودع. اقرأ README وIssues وتراخيص البيانات قبل التنفيذ.',sources:[{title:'المستودع الأصلي',url:project.url}],
+      improvements:base.improvements.slice(0,10).map((x,i)=>make(x,'improvements',i)),
+      spinoffs:base.spinoffs.slice(0,10).map((x,i)=>make(x,'spinoffs',i)),
+      religious:names.slice(0,10).map((x,i)=>make(x,'religious',i))};
+  }
+  function availableIdeas(project,type){return studyFor(project)[type]||[]}
+  function makeReligionIdeas(projects){const out=[];for(const project of projects){
+    availableIdeas(project,'religious').forEach((idea,i)=>out.push({id:`religious:${project.id}:${i}`,kind:'idea',title:idea.title,description:idea.problem,
+      impact:idea.approach,source:'استخدامات دينية',category:'تطبيقات دينية',publishedAt:project.publishedAt,score:(project.score||0)-.3-i*.01,
+      parentName:project.title,parentId:project.id,parentUrl:project.url,proposalIndex:i,proposalType:'religious',url:project.url,ideaDomain:project.ideaDomain}));}
+    return out;
+  }
+  function proposalButtonText(){return 'فتح الدراسة والمواصفات ←'}
   function toast(text){document.querySelector('.toast')?.remove();const el=document.createElement('div');el.className='toast';el.textContent=text;document.body.appendChild(el);setTimeout(()=>el.remove(),2700)}
 
   function makeIdeas(projects){
     const ideas=[];
-    for(const project of projects.slice(0,15)){
-      const suggestions=window.TechPulseIdeas.forItem(project).spinoffs;
-      for(let i=0;i<suggestions.length;i++) ideas.push({
-        id:`idea:${project.id}:${i}`,kind:'idea',title:suggestions[i],
-        description:`فكرة مشروع مقترحة مستوحاة من «${project.title}» في مجال ${window.TechPulseIdeas.domainNames[project.ideaDomain] || 'البرمجيات'}. افتح التفاصيل للحصول على 10 تطويرات و10 أفكار متفرعة.` ,
-        impact:'مقترح ابتكاري قابل للتعديل، وليس منتجًا موجودًا أو مشروعًا منشورًا.',
-        url:project.url,parentUrl:project.url,parentName:project.title,
-        source:'مساحة الابتكار', category:'أفكار', region:'عالمي',
-        publishedAt:project.publishedAt,score:(project.score||0)-.5-i*.01, ideaDomain:project.ideaDomain,image:'',
-      });
+    for(const project of projects){
+      availableIdeas(project,'spinoffs').forEach((idea,i)=>ideas.push({
+        id:`idea:${project.id}:${i}`,kind:'idea',title:idea.title,description:idea.problem,
+        impact:idea.approach,url:project.url,parentUrl:project.url,parentName:project.title,parentId:project.id,
+        proposalType:'spinoffs',proposalIndex:i,source:'مساحة الابتكار',category:'أفكار',region:'عالمي',
+        publishedAt:project.publishedAt,score:(project.score||0)-.5-i*.01,ideaDomain:project.ideaDomain,image:''}));
     }
     return ideas;
   }
-  function allItems(){const projects=state.items.filter(x=>x.kind==='project');return [...state.items,...makeIdeas(projects)]}
+  function allItems(){const projects=state.items.filter(x=>x.kind==='project');return [...state.items,...makeIdeas(projects),...makeReligionIdeas(projects)]}
   function favoriteExists(id){return state.saved.has(id)}
   function getCover(item, full=false){
     // A GitHub owner avatar is labelled as such; it is not a project screenshot.
@@ -65,7 +95,8 @@
     let items=allItems();
     if(state.view==='all') items=items.filter(x=>x.kind!=='idea');
     if(state.view==='saved') items=items.filter(x=>favoriteExists(x.id));
-    else if(state.view==='ideas') items=items.filter(x=>x.kind==='idea');
+    else if(state.view==='ideas') items=items.filter(x=>x.kind==='idea' && x.proposalType==='spinoffs');
+    else if(state.view==='religious') items=items.filter(x=>x.kind==='idea' && x.proposalType==='religious');
     else if(state.view in categoryMap) items=items.filter(x=>{
       if(state.view==='مفتوح المصدر')return x.kind==='project';
       if(state.view==='السعودية')return x.region==='السعودية';
@@ -80,7 +111,7 @@
   }
   function render(){
     applyFilters();
-    const names={'all':['إشارات تستحق المتابعة','الأكثر رواجًا','أبرز المستجدات مرتبة بمؤشر شيوع تقديري، مع ربط الأخبار بمصادرها الأصلية.'],'saved':['قائمتك الخاصة','العناصر المحفوظة','كل ما حفظته لتعود إليه لاحقًا على هذا الجهاز.'],'ideas':['مساحة الابتكار','أفكار لمشاريع جديدة','أفكار عملية مستوحاة من مستودعات مفتوحة المصدر؛ اضغط أي فكرة للحصول على 10 تحسينات و10 مشاريع أخرى.']};
+    const names={'all':['إشارات تستحق المتابعة','الأكثر رواجًا','أبرز المستجدات مرتبة بمؤشر شيوع تقديري، مع ربط الأخبار بمصادرها الأصلية.'],'saved':['قائمتك الخاصة','العناصر المحفوظة','كل ما حفظته لتعود إليه لاحقًا على هذا الجهاز.'],'ideas':['مساحة الابتكار','مشاريع جديدة مدروسة','مشاريع مستقلة مستوحاة من المستودعات؛ افتح الدراسة لمعرفة نطاق التنفيذ والمخاطر.'], 'religious':['التقنية في خدمة العلم','استخدامات دينية','مقترحات مع إحالات للمصادر الأصلية ومراجعة بشرية؛ لا فتاوى آلية ولا نصوص دينية مُنشأة.']};
     const n=names[state.view] || ['متابعة مخصصة',state.view,'اكتشف أبرز الأخبار والمشاريع ضمن هذا التصنيف.'];
     $('sectionKicker').textContent=n[0]; $('sectionTitle').textContent=n[1];$('sectionDescription').textContent=n[2];
     $('currentPage').textContent=state.view==='all'?'نظرة عامة':n[1];
@@ -98,7 +129,7 @@
     }
     $('loadMore').hidden=state.filtered.length<=state.shown;
     const news=state.items.filter(x=>x.kind==='news').length,projects=state.items.filter(x=>x.kind==='project').length;
-    $('statNews').textContent=arNumber(news);$('statProjects').textContent=arNumber(projects);$('statIdeas').textContent=arNumber(projects*20);
+    $('statNews').textContent=arNumber(news);$('statProjects').textContent=arNumber(projects);$('statIdeas').textContent=arNumber(projects*30);
     $('statUpdate').textContent=state.generatedAt?new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Riyadh',hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date(state.generatedAt)):'—';
     renderSpotlight();
     bindFeedActions();
@@ -126,28 +157,56 @@
     const item=allItems().find(x=>x.id===id);
     if(!item)return;
     state.lastActive=document.activeElement;
+    if(item.kind==='idea' && item.parentId){const parent=projectById(item.parentId);if(parent){showProposal(parent,item.proposalType,item.proposalIndex);return;}}
     const isIdea=item.kind==='idea',isProj=item.kind==='project',url=safeUrl(item.url);
-    const ideas=isProj||isIdea?window.TechPulseIdeas.forItem(item):null;
+    const ideas=isProj?studyFor(item):null;
     const spec=isProj?`<div class="project-specs"><div><span>النجوم</span><b>★ ${arNumber(item.stars)}</b></div><div><span>لغة البرمجة</span><b>${esc(item.language||'غير محدد')}</b></div><div><span>الرخصة</span><b>${esc(item.license||'غير محدد')}</b></div></div>`:'';
     const gallery=(item.gallery||[]).map((url,i)=>safeUrl(url)?`<button type="button" data-gallery="${i}" aria-label="عرض صورة المشروع ${i+1}"><img src="${esc(safeUrl(url))}" loading="lazy" alt="معاينة ${i+1}"></button>`:'').join('');
     const translation=!isProj&&!isIdea&&url?`<a class="translate-link" href="https://translate.google.com/translate?sl=auto&tl=ar&u=${encodeURIComponent(url)}" target="_blank" rel="noopener noreferrer">اقرأ المصدر بترجمة عربية آلية ↗</a>`:'';
-    const lists=ideas?`<section class="detail-section"><h3>تطويرات للمشروع نفسه <span class="count">10</span></h3><p class="detail-note">هذه اقتراحات تنفيذية مبدئية مستندة إلى مجال المشروع، وليست ميزات مؤكدة أو تغييرات مضمونة في المستودع الأصلي.</p><ol class="idea-list">${ideas.improvements.map((s,i)=>`<li class="idea-line"><span class="idea-num">${i+1}</span><span>${esc(s)}</span></li>`).join('')}</ol></section>
-    <section class="detail-section"><h3>مشاريع جديدة مستوحاة منه <span class="count purple">10</span></h3><p>عشر اتجاهات يمكن تحويل كل منها إلى مشروع مستقل، ويمكن فتح أي فكرة لاستعراض 20 اتجاهًا إضافيًا.</p><ol class="idea-list spin">${ideas.spinoffs.map((s,i)=>`<li class="idea-line"><span class="idea-num">${i+1}</span><span>${esc(s)}</span><button type="button" class="idea-open" data-idea-index="${i}">تفاصيل الفكرة ←</button></li>`).join('')}</ol></section>`:'';
+    const lists=ideas?`<section class="research-context"><strong>${ideas.reviewed?'◉ مراجعة موثقة لـ README':'◌ مقترحات تحتاج تدقيق المستودع'}</strong><p>${esc(ideas.summary)}</p><small>${esc(ideas.verified)}</small></section>
+    ${[['improvements','10 تطويرات للمشروع نفسه'],['spinoffs','10 مشاريع جديدة مستقلة'],['religious','10 استخدامات دينية نافعة']].map(([type,heading])=>`<section class="detail-section" id="study-${type}"><h3>${heading} <span class="count">10</span></h3><p class="detail-note">${type==='religious'?'أي نقل ديني يحتاج مصدرًا معتمدًا ومراجعة بشرية، ولا يُولد النص الشرعي آليًا.':'كل بطاقة تفتح دراسة تنفيذ وتحقق بدل تكرار أفكار عامة.'}</p><div class="study-grid">${(ideas[type]||[]).map((idea,i)=>`<button type="button" class="study-entry" data-proposal-type="${type}" data-proposal-index="${i}"><span class="study-serial">${i+1}</span><span class="study-entry-copy"><b>${esc(idea.title)}</b><small>${esc(trimmed(idea.problem,125))}</small></span><span class="study-arrow">↗</span></button>`).join('')}</div></section>`).join('')}`:'';
     $('detailContent').innerHTML=`<div class="detail-heading"><span class="detail-kind">${esc(label(item))}</span><h2 id="detailTitle">${esc(item.title)}</h2><div class="detail-submeta"><span>${esc(item.source)}</span><span>•</span><span>${esc(dateTime(item.publishedAt,true))}</span>${isProj?`<span>•</span><span>آخر نشاط للمستودع</span>`:''}</div><p>${esc(item.description)}</p></div>${getCover(item,true)}${gallery?`<div class="gallery-strip">${gallery}</div>`:''}${spec}<section class="detail-section"><h3>${isIdea?'لماذا يمكن بناء هذه الفكرة؟':'الأهمية والتأثير'}</h3><p>${esc(item.impact||'اقرأ المصدر الأصلي للتفاصيل الكاملة.')}</p></section><div class="detail-links">${url?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${isIdea?'افتح المشروع الملهم':isProj?'افتح المستودع على GitHub':'اقرأ الخبر من المصدر'} ↗</a>`:''}${translation}<button type="button" id="saveInside">${favoriteExists(item.id)?'♥ محفوظ':'♡ احفظ للقراءة لاحقًا'}</button></div>${lists}<p class="detail-disclaimer">${isIdea?'هذه فكرة مقترحة وليست منتجًا منشورًا.':'العناوين والأوصاف مأخوذة من مصادر عامة. '}المؤشر الرائج تقريبي، والصور تظهر فقط عند توفرها في المصادر، وليست ضمانًا لصورة المنتج أو المشروع.</p>`;
     $('overlay').hidden=false;$('detailWrap').hidden=false;document.body.classList.add('body-locked');document.querySelector('.detail-panel')?.focus();
     $('detailContent').querySelectorAll('[data-gallery]').forEach(b=>b.addEventListener('click',()=>{const img=$('detailContent').querySelector('.detail-picture img');if(img){img.hidden=false;img.src=safeUrl(item.gallery[+b.dataset.gallery]);const caption=$('detailContent').querySelector('.picture-caption');if(caption)caption.textContent='صورة '+(+b.dataset.gallery+1)+' من README المشروع';}}));
     $('detailContent').querySelectorAll('.detail-picture img,.gallery-strip img').forEach(img=>img.addEventListener('error',()=>{img.hidden=true;const glyph=img.nextElementSibling;if(glyph?.classList.contains('card-glyph'))glyph.hidden=false;}));
     $('saveInside').addEventListener('click',()=>{toggleSaved(item.id);$('saveInside').textContent=favoriteExists(item.id)?'♥ محفوظ':'♡ احفظ للقراءة لاحقًا'});
-    $('detailContent').querySelectorAll('[data-idea-index]').forEach(b=>b.addEventListener('click',()=>{
-      const idx=+b.dataset.ideaIndex;
-      if(isIdea){const nestedId=`branch:${item.id}:${idx}`;const generated={...item,id:nestedId,title:ideas.spinoffs[idx],kind:'idea',parentName:item.title,description:`فكرة جديدة متفرعة من «${item.title}» قابلة للبناء كمشروع مستقل.`};state.items.push(generated);closeDetail(false);openDetail(nestedId)}
-      else{const ideaId=`idea:${item.id}:${idx}`;closeDetail(false);openDetail(ideaId)}
-    }));
+    $('detailContent').querySelectorAll('[data-proposal-type]').forEach(b=>b.addEventListener('click',()=>showProposal(item,b.dataset.proposalType,+b.dataset.proposalIndex)));
+
+  }
+  function showProposal(project,type,index){
+    const report=studyFor(project);const idea=(report[type]||[])[index];if(!idea)return;
+    const links=(idea.sources||[]).filter(x=>safeUrl(x.url)).map(x=>`<a href="${esc(safeUrl(x.url))}" target="_blank" rel="noopener noreferrer">${esc(x.title)} ↗</a>`).join('');
+    const steps=(idea.steps||[]).map((x,i)=>`<li><span>${i+1}</span><p>${esc(x)}</p></li>`).join('');
+    const proposalId=`proposal:${project.id}:${type}:${index}`;
+    const prevHtml=$('detailContent').innerHTML;
+    $('detailContent').innerHTML=`<div class="proposal-detail">
+      <button type="button" class="proposal-back" id="backToProject">← العودة إلى مشروع ${esc(project.title)}</button>
+      <div class="proposal-header"><span>${esc(religiousLabels[type])} · ${index+1}/10</span><h2 id="detailTitle">${esc(idea.title)}</h2><p>${esc(idea.problem)}</p></div>
+      <div class="proposal-status ${report.reviewed?'verified':'exploratory'}">${report.reviewed?'مبني على مراجعة توثيق المشروع':'دراسة استكشافية غير مدققة على مستوى الكود'}</div>
+      <div class="proposal-columns"><section class="proposal-box"><h3>المشكلة والمستخدم المستفيد</h3><p>${esc(idea.problem)}</p></section><section class="proposal-box"><h3>الحل والنسخة الأولية MVP</h3><p>${esc(idea.approach)}</p></section>
+      <section class="proposal-box"><h3>التقنيات والاعتماديات</h3><p>${esc(idea.stack)}</p></section><section class="proposal-box"><h3>مؤشر نجاح قابل للتحقق</h3><p>${esc(idea.metric)}</p></section>
+      <section class="proposal-box"><h3>الصعوبة وتقدير الجهد</h3><p>${esc(idea.difficulty)}</p></section><section class="proposal-box"><h3>المخاطر والقيود</h3><p>${esc(idea.risks)}</p></section></div>
+      <section class="proposal-steps"><h3>خطة بدء التنفيذ والاختبار</h3><ol>${steps}</ol></section>
+      <section class="proposal-evidence"><h3>ما الذي تحققنا منه؟</h3><p>${esc(idea.confidence||report.verified)}</p><div class="proposal-links">${links}</div></section>
+      ${type==='religious'?'<p class="religious-note">تنبيه: لا يُعد هذا المقترح فتوى، ولا يجوز اعتبار استنتاج نموذج ذكاء اصطناعي توثيقًا شرعيًا. اعرض النص الأصلي ومصدره وتحقق من حقوق استخدامه واستعن بمختص عند الحاجة.</p>':''}
+      <div class="proposal-bottom"><button type="button" id="saveProposal">${favoriteExists(proposalId)?'♥ الفكرة محفوظة':'♡ حفظ هذه الفكرة'}</button><a href="${esc(safeUrl(project.url))}" target="_blank" rel="noopener noreferrer">مستودع المشروع الملهم ↗</a></div></div>`;
+    $('overlay').hidden=false;$('detailWrap').hidden=false;document.body.classList.add('body-locked');
+    document.querySelector('.detail-panel').scrollTop=0;document.querySelector('.detail-panel').focus();
+    $('backToProject').addEventListener('click',()=>{openDetail(project.id);const el=$(`study-${type}`);el?.scrollIntoView({block:'nearest'});});
+    $('saveProposal').addEventListener('click',()=>{if(state.saved.has(proposalId))state.saved.delete(proposalId);else state.saved.add(proposalId);persistSaved();$('saveProposal').textContent=favoriteExists(proposalId)?'♥ الفكرة محفوظة':'♡ حفظ هذه الفكرة';toast('تم تحديث المحفوظات')});
   }
   function closeDetail(restore=true){$('overlay').hidden=true;$('detailWrap').hidden=true;document.body.classList.remove('body-locked');$('detailContent').innerHTML='';if(restore)state.lastActive?.focus?.()}
-  function setView(view){state.view=view;state.chip='all';state.period=null;state.shown=9;render();$('newsSection').scrollIntoView({behavior:'smooth',block:'start'});$('sidebar').classList.remove('mobile-open')}
+  function setView(view){state.view=view;state.chip='all';state.period=null;state.shown=9;render();$('newsSection').scrollIntoView({behavior:'smooth',block:'start'});$('sidebar').classList.remove('mobile-open');$('overlay').hidden=true}
   async function fetchFeed(notify=false){
     try{
+      if(!state.research){
+        const inlineResearch=document.getElementById('bootstrapResearch');
+        if(inlineResearch)state.research=JSON.parse(inlineResearch.textContent);
+      }
+      if(!state.research){
+        try{const rr=await fetch('./data/research.json?rev=3',{cache:'no-store'});if(!rr.ok)throw Error('Research data');state.research=await rr.json()}catch(error){console.warn('Research catalog unavailable, using draft concepts',error);state.research={}}
+      }
+
       const inline=document.getElementById('bootstrapData');
       let data;
       if(inline){data=JSON.parse(inline.textContent)}
@@ -172,7 +231,7 @@
     $('exploreProjects').addEventListener('click',()=>setView('مفتوح المصدر'));
     $('refreshButton').addEventListener('click',()=>fetchFeed(true));
     $('imageOnly')?.addEventListener('click',()=>{state.imagesOnly=!state.imagesOnly;state.shown=9;render()});
-    $('overlay').addEventListener('click',()=>{closeDetail();$('sidebar').classList.remove('mobile-open')});
+    $('overlay').addEventListener('click',()=>{closeDetail();$('sidebar').classList.remove('mobile-open');$('overlay').hidden=true});
     $('closeDetail').addEventListener('click',()=>closeDetail());
     $('mobileMenu').addEventListener('click',()=>{$('sidebar').classList.toggle('mobile-open');$('overlay').hidden=!$('sidebar').classList.contains('mobile-open')});
     document.addEventListener('keydown',e=>{
