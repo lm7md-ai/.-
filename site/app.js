@@ -2,17 +2,17 @@
 (() => {
   'use strict';
   const $ = (id) => document.getElementById(id);
-  const state = {items:[], filtered:[], view:'all', chip:'all', sort:'popular', q:'', period:null, imagesOnly:false, shown:9, saved:new Set(), generatedAt:null, demo:false, lastActive:null,research:null,editorial:{items:{}},health:null,days:'all',region:'all',language:'all',reviewedOnly:false};
+  const state = {items:[], filtered:[], view:'all', chip:'all', sort:'popular', q:'', period:null, imagesOnly:false, shown:9, saved:new Set(), generatedAt:null, demo:false, lastActive:null,research:null,editorial:{items:{}},health:null,days:'all',region:'all',language:'all',reviewedOnly:false,source:'all',layout:'grid',library:[]};
   const categoryMap = {'ذكاء اصطناعي':'ذكاء اصطناعي','برمجة':'برمجة','تقنيات':'تقنيات','أبحاث':'أبحاث','فرص':'فرص','السعودية':'السعودية','مفتوح المصدر':'مفتوح المصدر'};
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const safeUrl = (u) => {if(typeof u!=='string'||!u.trim())return '';try{const x=new URL(u, location.href);return x.protocol==='https:'||x.origin===location.origin&&x.protocol==='http:'? x.href:''}catch{return ''}};
   const arNumber = (n) => new Intl.NumberFormat('en-US').format(n||0);
   const compact = (n) => new Intl.NumberFormat('en-US',{notation:'compact',maximumFractionDigits:1}).format(n||0);
-  const dateTime = (iso, withTime=false) => {if(!iso)return 'تاريخ غير متاح';try{return new Intl.DateTimeFormat('ar-SA',{timeZone:'Asia/Riyadh',year:'numeric',month:'short',day:'numeric', ...(withTime?{hour:'2-digit',minute:'2-digit',hour12:true}:{})}).format(new Date(iso))}catch{return 'تاريخ غير محدد'}};
+  const dateTime = (iso, withTime=false) => {if(!iso)return 'تاريخ غير متاح';try{return new Intl.DateTimeFormat('ar-SA',{timeZone:'Asia/Riyadh',calendar:'gregory',year:'numeric',month:'short',day:'numeric', ...(withTime?{hour:'2-digit',minute:'2-digit',hour12:true}:{})}).format(new Date(iso))}catch{return 'تاريخ غير محدد'}};
   const dayKey = (iso) => {if(!iso)return '';try{return new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Riyadh',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(iso))}catch{return ''}};
   const hourKSA = (iso) => {if(!iso)return -1;try{return +new Intl.DateTimeFormat('en-US',{hour:'numeric',hourCycle:'h23',timeZone:'Asia/Riyadh'}).format(new Date(iso))}catch{return -1}};
   const detectSlot = iso => Math.floor(hourKSA(iso)/6);
-  const label = item => item.kind==='project'?'مفتوح المصدر': item.kind==='idea'?'فكرة مشروع':item.category||'تقنيات';
+  const label = item => item.library?(item.archived?'مكتبة · مؤرشف':'مكتبة المشاريع'):item.kind==='project'?'مفتوح المصدر': item.kind==='idea'?'فكرة مشروع':item.category||'تقنيات';
   const visualClass = item => item.kind==='project'?'visual-agent':item.kind==='idea'?'visual-idea':'visual-news';
   const glyph = item => item.kind==='project'?'⌘':item.kind==='idea'?'✦':item.category==='أبحاث'?'⌁':'✳';
   const trimmed=(text,size=160)=>String(text||'').length>size?String(text).slice(0,size).trim()+'…':String(text||'');
@@ -22,7 +22,7 @@
   const evidenceLabels = {metadata:'بيانات المصدر فقط',article:'قراءة المصدر',readme:'مراجعة التوثيق',code:'فحص شيفرة',tested:'تجربة تشغيل موثقة'};
   const studyCache=new Map();
   function editorialFor(item){const entry=state.editorial?.items?.[item.id];return entry&&entry.url===item.url?entry:null}
-  function resetFilters(){state.chip='all';state.q='';state.period=null;state.imagesOnly=false;state.days='all';state.region='all';state.language='all';state.reviewedOnly=false;state.shown=9;$('searchInput').value='';$('dateFilter').value='all';$('regionFilter').value='all';$('languageFilter').value='all';$('reviewedFilter').checked=false;render()}
+  function resetFilters(){state.chip='all';state.q='';state.period=null;state.imagesOnly=false;state.days='all';state.source='all';$('sourceFilter').value='all';state.region='all';state.language='all';state.reviewedOnly=false;state.shown=9;$('searchInput').value='';$('dateFilter').value='all';$('regionFilter').value='all';$('languageFilter').value='all';$('reviewedFilter').checked=false;render()}
   function researchCount(){return state.items.filter(x=>x.kind==='project').reduce((sum,x)=>{const report=studyFor(x);return sum+(report.reviewed?['improvements','spinoffs','religious'].reduce((n,k)=>n+(report[k]?.length||0),0):0)},0)}
   function renderHealth(){
     const age=state.generatedAt?(Date.now()-Date.parse(state.generatedAt))/3600000:Infinity;
@@ -35,12 +35,17 @@
     document.querySelector('.live-pill').textContent=state.demo?'بيانات أولية':age>8||status?.state==='error'?'المحتوى يحتاج تحديثًا':status?.state==='partial'?'بعض المصادر متعطلة':'آخر البيانات المنشورة';
   }
   function renderBrief(){
-    $('dailyBrief').hidden=state.view!=='all';if(state.view!=='all')return;
+    document.querySelector('.hero').hidden=state.view!=='all';
+    document.querySelector('.digest').hidden=state.view!=='all';
+    $('dailyBrief').hidden=state.view!=='all'||!!state.q;if($('dailyBrief').hidden)return;
     const news=state.items.filter(x=>x.kind==='news'&&Date.now()-Date.parse(x.publishedAt)<7*86400000).sort((a,b)=>(b.score||0)-(a.score||0));
     const selected=[],categories=new Set();
-    for(const item of news){if(!categories.has(item.category)){selected.push(item);categories.add(item.category)}if(selected.length===5)break}
-    for(const item of news){if(selected.length===5)break;if(!selected.includes(item))selected.push(item)}
-    $('briefItems').innerHTML=selected.length?selected.map((x,i)=>`<button type="button" class="brief-item" data-open="${esc(x.id)}"><span class="brief-number">0${i+1}</span><span><small>${esc(x.category)} · ${esc(x.source)}</small><b>${esc(x.title)}</b><p>${esc(trimmed(x.editorial?.whyItMatters||x.description,160))}</p></span><span aria-hidden="true">↗</span></button>`).join(''):'<p>لا توجد أخبار حديثة كافية؛ يمكنك تصفح المحتوى السابق أدناه.</p>';
+    for(const item of news){if(!categories.has(item.category)){selected.push(item);categories.add(item.category)}if(selected.length===6)break}
+    for(const item of news){if(selected.length===6)break;if(!selected.includes(item))selected.push(item)}
+    const lead=selected.find(x=>editorialFor(x))||selected[0];
+    const brief=selected.filter(x=>x!==lead).slice(0,5);
+    $('heroFeature').innerHTML=lead?`<div class="feature-eyebrow"><span>اختيار من المرصد</span><span>${esc(dateTime(lead.publishedAt))}</span></div><button type="button" class="feature-story" data-open="${esc(lead.id)}"><span class="feature-category">${esc(lead.category)}</span><h2 dir="auto">${esc(lead.title)}</h2><p>${esc(trimmed(lead.editorial?.whyItMatters||lead.description,190))}</p><span class="feature-footer"><span>${esc(lead.source)}</span><b>اقرأ التفاصيل ↗</b></span></button>`:'<p>تظهر هنا أحدث اختيارات المرصد عند توفر الأخبار.</p>';
+    $('briefItems').innerHTML=brief.length?brief.map((x,i)=>`<button type="button" class="brief-item" data-open="${esc(x.id)}"><span class="brief-number">${String(i+1).padStart(2,'0')}</span><span><small>${esc(x.category)} · ${esc(x.source)}</small><b>${esc(x.title)}</b><p>${esc(trimmed(x.editorial?.whyItMatters||x.description,160))}</p></span><span aria-hidden="true">↗</span></button>`).join(''):'<p>لا توجد أخبار حديثة كافية؛ يمكنك تصفح المحتوى السابق أدناه.</p>';
   }
   function renderEditorial(item){
     const e=editorialFor(item);if(!e)return '<p class="detail-note">هذا وصف من المصدر؛ لم يُضف شرح عربي خاص بهذا العنصر بعد.</p>';
@@ -49,8 +54,9 @@
   function loadSaved(){try{state.saved=new Set(JSON.parse(localStorage.getItem('nabdh-saved')||'[]'))}catch{state.saved=new Set()}}
   function persistSaved(){try{localStorage.setItem('nabdh-saved',JSON.stringify([...state.saved].slice(0,700)))}catch{}}
   const religiousLabels = {improvements:'تطوير المشروع الأصلي',spinoffs:'مشروع مستقل جديد',religious:'خدمة دينية باستخدام المشروع'};
-  function projectById(id){ return state.items.find(x=>x.kind==='project'&&x.id===id) }
+  function projectById(id){ return [...state.items,...state.library].find(x=>x.kind==='project'&&x.id===id) }
   function studyFor(project){
+    if(project.library)return {reviewed:false,summary:'بطاقة مرجعية من بيانات المستودع؛ ليست مراجعة README أو تجربة تشغيل.',verified:'تاريخ التقاط البيانات: '+dateTime(project.publishedAt,true),improvements:[],spinoffs:[],religious:[]};
     if(studyCache.has(project.id))return studyCache.get(project.id);
     const editorial=editorialFor(project);
     if(editorial&&['improvements','spinoffs','religious'].some(k=>Array.isArray(editorial[k]))){
@@ -101,7 +107,7 @@
     }
     return ideas;
   }
-  function allItems(){const projects=state.items.filter(x=>x.kind==='project');const items=[...state.items,...makeIdeas(projects),...makeReligionIdeas(projects)];
+  function allItems(){const projects=state.items.filter(x=>x.kind==='project');const items=[...state.items,...state.library,...makeIdeas(projects),...makeReligionIdeas(projects)];
     for(const id of state.saved){if(!id.startsWith('proposal:'))continue;const [,parentId,type,index]=id.split(':');const parent=projectById(parentId),idea=parent&&studyFor(parent)[type]?.[+index];if(idea)items.push({id,kind:'idea',title:idea.title,description:idea.problem,parentId,proposalType:type,proposalIndex:+index,url:parent.url,parentName:parent.title,publishedAt:parent.publishedAt,score:parent.score,source:'فكرة محفوظة'});}
     return items;
   }
@@ -113,7 +119,7 @@
     const link=original||avatar;
     const image=link?`<img src="${esc(link)}" alt="${esc(original?'صورة من المصدر الأصلي': 'صورة حساب المشروع على GitHub')}" loading="lazy" decoding="async"><span class="card-glyph" hidden>${glyph(item)}</span>`:`<span class="card-glyph">${glyph(item)}</span>`;
     const photoLabel=original?'صورة المصدر':avatar?'صورة الحساب':'لا توجد صورة موثقة';
-    return full?`<div class="detail-picture ${original?'has-photo':avatar?'has-avatar':'no-photo'}">${image}<span class="picture-caption">${photoLabel}</span></div>`:`<div class="card-image ${visualClass(item)} ${link?'has-photo':'no-photo'}" data-open="${esc(item.id)}">${image}<span class="picture-origin">${esc(photoLabel)}</span><div class="card-visual-overlay"></div><span class="card-badge">${esc(label(item))}</span><span class="card-rank">${item.kind==='project'?'★':'↗'} ${Math.round(item.score||0)}</span></div>`;
+    return full?`<div class="detail-picture ${original?'has-photo':avatar?'has-avatar':'no-photo'}">${image}<span class="picture-caption">${photoLabel}</span></div>`:`<div role="button" tabindex="0" aria-label="${esc(item.title)}" class="card-image ${visualClass(item)} ${link?'has-photo':'no-photo'}" data-open="${esc(item.id)}">${image}<span class="picture-origin">${esc(photoLabel)}</span><div class="card-visual-overlay"></div><span class="card-badge">${esc(label(item))}</span><span class="card-rank">${item.kind==='project'?'★':'↗'} ${Math.round(item.score||0)}</span></div>`;
   }
   function renderCard(item){
     const project=item.kind==='project';
@@ -121,7 +127,7 @@
       ${getCover(item)}
       <div class="card-content">
         <div class="card-meta"><i class="source-dot ${item.kind}"></i><span>${esc(trimmed(item.source,34))}</span><span class="meta-sep">•</span><span>${esc(dateTime(item.publishedAt))}</span></div>
-        <div class="quality-label">${item.kind==='idea'?(studyFor(projectById(item.parentId))?.reviewed?'مقترح خاص بالمشروع':'قالب استكشافي'):editorialFor(item)?'شرح عربي خاص':'وصف المصدر'}</div><h3 dir="auto">${esc(trimmed(item.title,135))}</h3>
+        <div class="quality-label">${item.kind==='idea'?(studyFor(projectById(item.parentId))?.reviewed?'مقترح خاص بالمشروع':'قالب استكشافي'):editorialFor(item)?'شرح عربي خاص':'وصف المصدر'}</div><h3 dir="auto"><button type="button" class="title-open" data-open="${esc(item.id)}">${esc(trimmed(item.title,135))}</button></h3>
         <p>${esc(trimmed(item.description,200))}</p>
         <div class="card-bottom"><div class="card-metric" title="${esc(getMetric(item))}">${esc(getMetric(item))}</div><div class="card-actions"><button type="button" class="bookmark ${favoriteExists(item.id)?'saved':''}" data-save="${esc(item.id)}" aria-label="${favoriteExists(item.id)?'إزالة من المحفوظات':'حفظ'}" aria-pressed="${favoriteExists(item.id)}">${favoriteExists(item.id)?'♥':'♡'}</button><button class="card-open" type="button" data-open="${esc(item.id)}">${project||item.kind==='idea'?'استكشف المشروع':'اقرأ التفاصيل'} ←</button></div></div>
       </div>
@@ -130,7 +136,8 @@
   function applyFilters(){
     const q=normalizeSearch(state.q).trim();
     let items=allItems();
-    if(state.view==='all') items=items.filter(x=>x.kind!=='idea');
+    if(state.view==='library')items=items.filter(x=>x.library);else if(state.view!=='saved')items=items.filter(x=>!x.library);
+    if(state.view==='all') items=items.filter(x=>x.kind==='news');
     if(state.view==='saved') items=items.filter(x=>favoriteExists(x.id));
     else if(state.view==='ideas') items=items.filter(x=>x.kind==='idea' && x.proposalType==='spinoffs');
     else if(state.view==='religious') items=items.filter(x=>x.kind==='idea' && x.proposalType==='religious');
@@ -140,6 +147,7 @@
       return x.category===state.view || x.kind==='project' && (x.topics||[]).some(t=>state.view==='ذكاء اصطناعي'&&['ai','artificial-intelligence','llm','machine-learning'].some(z=>t.includes(z)) || state.view==='برمجة'&&t.includes('python'));
     });
     if(state.chip!=='all') items=items.filter(x=>x.kind===state.chip);
+    if(state.source!=='all')items=items.filter(x=>(x.source||projectById(x.parentId)?.source)===state.source);
     if(state.imagesOnly) items=items.filter(x=>Boolean(safeUrl(x.image)));
     if(state.period!==null){const today=dayKey(new Date().toISOString());items=items.filter(x=>dayKey(x.publishedAt)===today&&detectSlot(x.publishedAt)===state.period)}
     if(state.days!=='all')items=items.filter(x=>Date.parse(x.publishedAt)>=Date.now()-Number(state.days)*86400000);
@@ -157,9 +165,16 @@
   }
   function render(){
     applyFilters();
-    const names={'all':['إشارات تستحق المتابعة',state.sort==='latest'?'آخر المستجدات':'أخبار ومشاريع تستحق المتابعة','ترتيب تقديري يوازن الأخبار والمشاريع؛ النجوم والتفاعل لا يقيسان جودة المحتوى.'],'saved':['قائمتك الخاصة','العناصر المحفوظة','كل ما حفظته لتعود إليه لاحقًا على هذا الجهاز.'],'ideas':['مساحة الابتكار','أفكار تبدأ منها','مقترحات خاصة بالمشاريع وقوالب استكشافية؛ فعّل تصفية الشرح الخاص لعرض المقترحات المخصصة فقط.'], 'religious':['التقنية في خدمة العلم','استخدامات دينية','مقترحات مع إحالات للمصادر الأصلية ومراجعة بشرية؛ لا فتاوى آلية ولا نصوص دينية مُنشأة.']};
+    $('feedGrid').classList.toggle('reading-list',state.layout==='list');
+    $('feedGrid').dataset.kind=state.view==='all'?'news':state.view==='ideas'||state.view==='religious'?'ideas':state.view==='library'||state.view==='مفتوح المصدر'?'projects':'mixed';
+    $('projectShelf').hidden=state.view!=='all'||!!state.q;
+    $('shelfItems').innerHTML=state.items.filter(x=>x.kind==='project').slice(0,3).map(x=>`<button type="button" data-open="${esc(x.id)}"><span class="shelf-monogram">${esc(x.title.slice(0,1).toUpperCase())}</span><span><b dir="auto">${esc(x.title)}</b><small>${esc(x.language||'مفتوح المصدر')} · ${compact(x.stars)} ★</small></span><span aria-hidden="true">↗</span></button>`).join('');
+    document.querySelectorAll('[data-layout]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.layout===state.layout)));
+    document.querySelectorAll('[data-nav]').forEach(b=>{if(b.dataset.nav===state.view)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});
+    const names={'all':['إشارات تستحق المتابعة',state.sort==='latest'?'آخر المستجدات':'دفتر الأخبار','أخبار المصادر الأصلية مع الشرح العربي المتوفر. مؤشر التفاعل تقديري ولا يقيس جودة المحتوى.'],'library':['ذاكرة المصدر المفتوح','مشاريع صنعت الفارق','مكتبة دائمة مستقلة عن دورة الأخبار. البيانات وصفية؛ النجوم تراكمية وليست رواج اليوم.'],'saved':['قائمتك الخاصة','العناصر المحفوظة','كل ما حفظته لتعود إليه لاحقًا على هذا الجهاز.'],'ideas':['مساحة الابتكار','أفكار تبدأ منها','مقترحات خاصة بالمشاريع وقوالب استكشافية؛ فعّل تصفية الشرح الخاص لعرض المقترحات المخصصة فقط.'], 'religious':['التقنية في خدمة العلم','استخدامات دينية','مقترحات مع إحالات للمصادر الأصلية ومراجعة بشرية؛ لا فتاوى آلية ولا نصوص دينية مُنشأة.']};
     const n=names[state.view] || ['متابعة مخصصة',state.view,'اكتشف أبرز الأخبار والمشاريع ضمن هذا التصنيف.'];
     $('sectionKicker').textContent=n[0]; $('sectionTitle').textContent=n[1];$('sectionDescription').textContent=n[2];
+    $('sectionDescription').textContent+=state.q?' · البحث: '+state.q:'';
     $('currentPage').textContent=state.view==='all'?'نظرة عامة':n[1];
     document.querySelectorAll('.nav-link').forEach(b=>b.classList.toggle('active',b.dataset.nav===state.view));
     document.querySelectorAll('[data-slot]').forEach(b=>b.classList.toggle('selected',+b.dataset.slot===state.period));
@@ -170,7 +185,7 @@
     const list=state.filtered.slice(0,state.shown);
     if(list.length){$('feedGrid').innerHTML=list.map(renderCard).join('')}
     else{
-      const msg=state.period!==null?'لم تُرصد عناصر منشورة في هذه الفترة اليوم. يمكنك عرض جميع الفترات أو مراجعة الأيام السابقة.':state.view==='saved'?'لم تحفظ أي خبر أو مشروع بعد. اضغط رمز القلب على أي بطاقة لتجده هنا.':'لا توجد عناصر تطابق هذا البحث أو التصنيف حاليًا.';
+      const msg=state.view==='library'?'لا توجد بطاقات مكتبة تطابق المرشحات. تواريخها تشير إلى فحص البيانات وليست تاريخ إصدار؛ جرّب مسح التصفية.':state.period!==null?'لم تُرصد عناصر منشورة في هذه الفترة اليوم. يمكنك عرض جميع الفترات أو مراجعة الأيام السابقة.':state.view==='saved'?'لم تحفظ أي خبر أو مشروع بعد. اضغط رمز القلب على أي بطاقة لتجده هنا.':'لا توجد عناصر تطابق هذا البحث أو التصنيف حاليًا.';
       $('feedGrid').innerHTML=`<div class="empty"><b>لا توجد نتائج حاليًا</b><p>${esc(msg)}</p><button type="button" id="clearFilters">عرض جميع الأخبار</button></div>`;
     }
     $('loadMore').hidden=state.filtered.length<=state.shown;
@@ -185,7 +200,7 @@
   function renderSpotlight(){
     const section=$('spotlightSection'),target=$('spotlightGrid');
     if(!section||!target)return;
-    section.hidden=state.view!=='all';
+    section.hidden=state.view!=='all'||!!state.q;
     if(section.hidden)return;
     // Latest source-backed news with publisher images first, then recent news with honest placeholders.
     const news=state.items.filter(x=>x.kind==='news').sort((a,b)=>Date.parse(b.publishedAt)-Date.parse(a.publishedAt));
@@ -195,7 +210,7 @@
     section.querySelector('.spotlight-note').textContent=pictured.length?`صور موثقة من مصادر الأخبار: ${pictured.length} خبرًا. بعض المصادر لا تتيح صورًا.`:'بعض المصادر لا توفر صورًا قابلة للعرض؛ نعرض بديلًا بصريًا دون اختلاق صور للأخبار.';
   }
   function bindFeedActions(){
-    document.querySelectorAll('[data-open]').forEach(b=>b.addEventListener('click',()=>openDetail(b.dataset.open)));
+    document.querySelectorAll('[data-open]').forEach(b=>{b.onclick=()=>openDetail(b.dataset.open);if(b.getAttribute('role')==='button')b.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openDetail(b.dataset.open)}}});
     document.querySelectorAll('.card-image img,.detail-picture img,.gallery-strip img').forEach(img=>img.addEventListener('error',()=>{img.hidden=true;const glyph=img.nextElementSibling;if(glyph?.classList.contains('card-glyph'))glyph.hidden=false;const label=img.closest('.card-image,.detail-picture')?.querySelector('.picture-origin,.picture-caption');if(label)label.textContent='تعذّر تحميل صورة المصدر';}));
     document.querySelectorAll('[data-save]').forEach(b=>b.addEventListener('click',()=>toggleSaved(b.dataset.save)));
     $('clearFilters')?.addEventListener('click',()=>{state.view='all';resetFilters()});
@@ -213,10 +228,10 @@
     const spec=isProj?`<div class="project-specs"><div><span>النجوم</span><b>★ ${arNumber(item.stars)}</b></div><div><span>لغة البرمجة</span><b>${esc(item.language||'غير محدد')}</b></div><div><span>الرخصة</span><b>${esc(item.license||'غير محدد')}</b></div></div>`:'';
     const gallery=(item.gallery||[]).map((url,i)=>safeUrl(url)?`<button type="button" data-gallery="${i}" aria-label="عرض صورة المشروع ${i+1}"><img src="${esc(safeUrl(url))}" loading="lazy" alt="معاينة ${i+1}"></button>`:'').join('');
     const translation=!isProj&&!isIdea&&url?`<a class="translate-link" href="https://translate.google.com/translate?sl=auto&tl=ar&u=${encodeURIComponent(url)}" target="_blank" rel="noopener noreferrer">اقرأ المصدر بترجمة عربية آلية ↗</a>`:'';
-    const lists=ideas?`<section class="research-context"><strong>${ideas.reviewed?'◉ مقترحات خاصة بالمشروع':'◌ مقترحات تحتاج تدقيق المستودع'}</strong><p>${esc(ideas.summary)}</p><small>${esc(ideas.verified)}</small></section>
+    const lists=ideas&&!item.library?`<section class="research-context"><strong>${ideas.reviewed?'◉ مقترحات خاصة بالمشروع':'◌ مقترحات تحتاج تدقيق المستودع'}</strong><p>${esc(ideas.summary)}</p><small>${esc(ideas.verified)}</small></section>
     ${[['improvements','تطويرات للمشروع نفسه'],['spinoffs','مشاريع جديدة مستقلة'],['religious','استخدامات دينية نافعة']].map(([type,heading])=>`<section class="detail-section" id="study-${type}"><h3>${heading} <span class="count">${ideas[type]?.length||0}</span></h3><p class="detail-note">${type==='religious'?'أي نقل ديني يحتاج مصدرًا معتمدًا ومراجعة بشرية، ولا يُولد النص الشرعي آليًا.':'افتح المقترح لقراءة الخطوات والمصادر وحدود المراجعة.'}</p><div class="study-grid">${(ideas[type]||[]).map((idea,i)=>`<button type="button" class="study-entry" data-proposal-type="${type}" data-proposal-index="${i}"><span class="study-serial">${i+1}</span><span class="study-entry-copy"><b>${esc(idea.title)}</b><small>${esc(trimmed(idea.problem,125))}</small></span><span class="study-arrow">↗</span></button>`).join('')}</div></section>`).join('')}`:'';
-    $('detailContent').innerHTML=`<div class="detail-heading"><span class="detail-kind">${esc(label(item))}</span><h2 id="detailTitle">${esc(item.title)}</h2><div class="detail-submeta"><span>${esc(item.source)}</span><span>•</span><span>${esc(dateTime(item.publishedAt,true))}</span>${isProj?`<span>•</span><span>آخر نشاط للمستودع</span>`:''}</div><p>${esc(item.description)}</p></div>${getCover(item,true)}${gallery?`<div class="gallery-strip">${gallery}</div>`:''}${spec}${renderEditorial(item)}<section class="detail-section"><h3>${isIdea?'لماذا يمكن بناء هذه الفكرة؟':'الأهمية والتأثير'}</h3><p>${esc(item.impact||'اقرأ المصدر الأصلي للتفاصيل الكاملة.')}</p></section><div class="detail-links">${url?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${isIdea?'افتح المشروع الملهم':isProj?'افتح المستودع على GitHub':'اقرأ الخبر من المصدر'} ↗</a>`:''}${translation}<button type="button" id="shareItem">نسخ رابط التفاصيل ↗</button><button type="button" id="saveInside">${favoriteExists(item.id)?'♥ محفوظ':'♡ احفظ للقراءة لاحقًا'}</button></div>${lists}<p class="detail-disclaimer">${isIdea?'هذه فكرة مقترحة وليست منتجًا منشورًا.':'العناوين والأوصاف مأخوذة من مصادر عامة. '}المؤشر الرائج تقريبي، والصور تظهر فقط عند توفرها في المصادر، وليست ضمانًا لصورة المنتج أو المشروع.</p>`;
-    $('overlay').hidden=false;$('detailWrap').hidden=false;document.body.classList.add('body-locked');document.querySelector('.detail-panel')?.focus();
+    $('detailContent').innerHTML=`<div class="detail-heading"><span class="detail-kind">${esc(label(item))}</span><h2 id="detailTitle">${esc(item.title)}</h2><div class="detail-submeta"><span>${esc(item.source)}</span><span>•</span><span>${esc(dateTime(item.publishedAt,true))}</span>${isProj?`<span>•</span><span>${item.library?'تاريخ فحص البيانات':'آخر نشاط للمستودع'}</span>`:''}</div><p>${esc(item.description)}</p></div>${getCover(item,true)}${gallery?`<div class="gallery-strip">${gallery}</div>`:''}${spec}${item.library?`<section class="editorial-context"><span class="quality-label">${item.archived?'مستودع مؤرشف':'بيانات وصفية'}</span><h3>لماذا يوجد في المكتبة؟</h3><p>${esc(item.description)}</p><h3>مسار استكشاف مقترح</h3><p>${esc(item.buildSuggestion)}</p><p>لم تُراجع تعليمات التشغيل أو الترخيص تفصيليًا. راجع المصدر الرسمي قبل الاستخدام. لا يُعد تاريخ فحص البيانات تاريخ إصدار أو نشاط للمشروع.</p></section>`:renderEditorial(item)}<section class="detail-section"><h3>${isIdea?'لماذا يمكن بناء هذه الفكرة؟':'الأهمية والتأثير'}</h3><p>${esc(item.impact||'اقرأ المصدر الأصلي للتفاصيل الكاملة.')}</p></section><div class="detail-links">${url?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${isIdea?'افتح المشروع الملهم':isProj?'افتح المستودع على GitHub':'اقرأ الخبر من المصدر'} ↗</a>`:''}${translation}<button type="button" id="shareItem">نسخ رابط التفاصيل ↗</button><button type="button" id="saveInside">${favoriteExists(item.id)?'♥ محفوظ':'♡ احفظ للقراءة لاحقًا'}</button></div>${lists}<p class="detail-disclaimer">${isIdea?'هذه فكرة مقترحة وليست منتجًا منشورًا.':'العناوين والأوصاف مأخوذة من مصادر عامة. '}المؤشر الرائج تقريبي، والصور تظهر فقط عند توفرها في المصادر، وليست ضمانًا لصورة المنتج أو المشروع.</p>`;
+    $('overlay').hidden=false;$('detailWrap').hidden=false;document.querySelector('.app-shell').inert=true;document.body.classList.add('body-locked');document.querySelector('.detail-panel')?.focus();
     $('detailContent').querySelectorAll('[data-gallery]').forEach(b=>b.addEventListener('click',()=>{const img=$('detailContent').querySelector('.detail-picture img');if(img){img.hidden=false;img.src=safeUrl(item.gallery[+b.dataset.gallery]);const caption=$('detailContent').querySelector('.picture-caption');if(caption)caption.textContent='صورة '+(+b.dataset.gallery+1)+' من README المشروع';}}));
     $('detailContent').querySelectorAll('.detail-picture img,.gallery-strip img').forEach(img=>img.addEventListener('error',()=>{img.hidden=true;const glyph=img.nextElementSibling;if(glyph?.classList.contains('card-glyph'))glyph.hidden=false;}));
     $('shareItem').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(location.href);toast('نُسخ رابط التفاصيل')}catch{toast('يمكنك نسخ الرابط من شريط العنوان')}});
@@ -241,19 +256,20 @@
       <section class="proposal-evidence"><h3>ما الذي تحققنا منه؟</h3><p>${esc(idea.confidence||report.verified)}</p><div class="proposal-links">${links}</div></section>
       ${type==='religious'?'<p class="religious-note">تنبيه: لا يُعد هذا المقترح فتوى، ولا يجوز اعتبار استنتاج نموذج ذكاء اصطناعي توثيقًا شرعيًا. اعرض النص الأصلي ومصدره وتحقق من حقوق استخدامه واستعن بمختص عند الحاجة.</p>':''}
       <div class="proposal-bottom"><button type="button" id="saveProposal">${favoriteExists(proposalId)?'♥ الفكرة محفوظة':'♡ حفظ هذه الفكرة'}</button><a href="${esc(safeUrl(project.url))}" target="_blank" rel="noopener noreferrer">مستودع المشروع الملهم ↗</a></div></div>`;
-    $('overlay').hidden=false;$('detailWrap').hidden=false;document.body.classList.add('body-locked');
+    $('overlay').hidden=false;$('detailWrap').hidden=false;document.querySelector('.app-shell').inert=true;document.body.classList.add('body-locked');
     document.querySelector('.detail-panel').scrollTop=0;document.querySelector('.detail-panel').focus();
     $('backToProject').addEventListener('click',()=>{openDetail(project.id);const el=$(`study-${type}`);el?.scrollIntoView({block:'nearest'});});
     $('saveProposal').addEventListener('click',()=>{if(state.saved.has(proposalId))state.saved.delete(proposalId);else state.saved.add(proposalId);persistSaved();$('saveProposal').textContent=favoriteExists(proposalId)?'♥ الفكرة محفوظة':'♡ حفظ هذه الفكرة';toast('تم تحديث المحفوظات')});
   }
-  function closeDetail(restore=true){history.replaceState(null,'',location.pathname+location.search); $('overlay').hidden=true;$('detailWrap').hidden=true;document.body.classList.remove('body-locked');$('detailContent').innerHTML='';if(restore)state.lastActive?.focus?.()}
-  function setView(view){state.view=view;state.chip='all';state.period=null;state.shown=9;render();$('newsSection').scrollIntoView({behavior:'smooth',block:'start'});$('sidebar').classList.remove('mobile-open');$('mobileMenu').setAttribute('aria-expanded','false');$('overlay').hidden=true}
+  function closeDetail(restore=true){history.replaceState(null,'',location.pathname+location.search); $('overlay').hidden=true;$('detailWrap').hidden=true;document.querySelector('.app-shell').inert=false;document.body.classList.remove('body-locked');$('detailContent').innerHTML='';if(restore)state.lastActive?.focus?.()}
+  function setView(view){state.view=view;state.chip='all';state.period=null;state.shown=9;render();$('newsSection').scrollIntoView({behavior:'smooth',block:'start'});$('sidebar').classList.remove('mobile-open');$('mobileMenu').setAttribute('aria-expanded','false');$('overlay').hidden=true;$('newsSection').focus({preventScroll:true})}
   let fetching=false;
   async function fetchFeed(notify=false){
     if(fetching)return;fetching=true;$('refreshButton').disabled=true;
     try{
-      async function optionalJson(file,fallback){const inline=document.getElementById({editorial:'bootstrapEditorial',status:'bootstrapStatus'}[file]);if(inline){try{return JSON.parse(inline.textContent)}catch{return fallback}}try{const r=await fetch('./data/'+file+'.json?fresh='+Date.now(),{cache:'no-store',signal:AbortSignal.timeout(15000)});if(!r.ok)return fallback;return await r.json()}catch{return fallback}}
-      const [editorial,health]=await Promise.all([optionalJson('editorial',state.editorial),optionalJson('status',state.health)]);
+      async function optionalJson(file,fallback){const inline=document.getElementById({editorial:'bootstrapEditorial',status:'bootstrapStatus',library:'bootstrapLibrary'}[file]);if(inline){try{return JSON.parse(inline.textContent)}catch{return fallback}}try{const r=await fetch('./data/'+file+'.json?fresh='+Date.now(),{cache:'no-store',signal:AbortSignal.timeout(15000)});if(!r.ok)return fallback;return await r.json()}catch{return fallback}}
+      const [editorial,health,library]=await Promise.all([optionalJson('editorial',state.editorial),optionalJson('status',state.health),optionalJson('library',{entries:[]})]);
+      state.library=(library.entries||[]).filter(x=>safeUrl(x.url)&&typeof x.repository==='string').map(x=>({id:'library:'+x.repository.toLowerCase(),kind:'project',library:true,title:x.repository.split('/').pop(),repo:x.repository,url:x.url,description:x.overviewShort||x.repository,buildSuggestion:x.proposedResearchOrBuild||'راجع التوثيق الرسمي',source:'مكتبة نبض',region:'عالمي',category:x.category,stars:x.starsMeasured||0,score:100-(x.priority||0),license:x.licenseApiValue==='NOASSERTION'?'يحتاج تحققًا':x.licenseApiValue,publishedAt:x.metricCapturedAt,image:'',archived:!!x.archived}));
       state.editorial=editorial;state.health=health;studyCache.clear();
 
       if(!state.research){
@@ -270,6 +286,7 @@
       else{const r=await fetch('./data/feed.json?fresh='+Date.now(),{cache:'no-store',signal:AbortSignal.timeout(15000)});if(!r.ok)throw Error('HTTP '+r.status);data=await r.json()}
       if(!Array.isArray(data.items))throw Error('bad feed');
       state.items=data.items.filter(x=>['news','project'].includes(x.kind) && x.id && safeUrl(x.url)).map(x=>{const e=editorialFor(x);return e?{...x,originalTitle:x.title,originalDescription:x.description,title:e.titleAr||x.title,description:e.summaryAr||x.description,editorial:e}:x});
+      const sources=[...new Set([...state.items,...state.library].map(x=>x.source).filter(Boolean))].sort();$('sourceFilter').innerHTML='<option value="all">جميع المصادر</option>'+sources.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');if(!sources.includes(state.source))state.source='all';$('sourceFilter').value=state.source;
       const languages=[...new Set(state.items.filter(x=>x.kind==='project').map(x=>x.language).filter(Boolean))].sort();
       $('languageFilter').innerHTML='<option value="all">كل اللغات</option>'+languages.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');$('languageFilter').value=state.language;
       state.generatedAt=data.generatedAt;state.demo=!!data.seedData;
@@ -279,7 +296,24 @@
       if(notify)toast(state.demo?'تم تحميل البيانات الأولية':'تم فحص آخر البيانات المنشورة');
     }catch(e){console.error('Feed load failed:',e);if(!state.items.length)$('feedGrid').innerHTML='<div class="empty"><b>تعذر تحميل المحتوى</b><p>راجع اتصالك أو أعد المحاولة.</p></div>';$('freshnessMessage').textContent='تعذر فحص التحديث؛ نحتفظ بآخر محتوى محمّل إن توفر.';toast('تعذّر تحديث الأخبار حاليًا')}finally{fetching=false;$('refreshButton').disabled=false;lastFetch=Date.now()}
   }
+  function applyDesign(design){
+    const classic=design==='classic';document.documentElement.dataset.design=classic?'classic':'modern';
+    $('editorialTheme').media=classic?'not all':'all';$('classicTheme').media=classic?'all':'not all';
+    document.documentElement.style.colorScheme=classic?'dark':'light';
+    document.querySelector('meta[name="theme-color"]').content=classic?'#090f18':'#f4f2ec';
+    const nav=document.querySelector('.primary-nav');
+    if(classic)$('sidebar').insertBefore(nav,$('sidebar').querySelector('.menu-label'));
+    else document.querySelector('.masthead').insertBefore(nav,document.querySelector('.masthead-edition'));
+    $('designSelect').value=classic?'classic':'modern';
+    try{localStorage.setItem('nabdh-design',classic?'classic':'modern')}catch{}
+  }
   function bind(){
+    applyDesign(document.documentElement.dataset.design);
+    $('designSelect').addEventListener('change',e=>applyDesign(e.target.value));
+    $('brandHome').addEventListener('click',e=>{e.preventDefault();setView('all');scrollTo({top:0,behavior:'smooth'})});
+    try{state.layout=localStorage.getItem('nabdh-layout')==='list'?'list':'grid'}catch{}
+    document.querySelectorAll('[data-layout]').forEach(b=>b.addEventListener('click',()=>{state.layout=b.dataset.layout;try{localStorage.setItem('nabdh-layout',state.layout)}catch{}render()}));
+    $('sourceFilter').addEventListener('change',e=>{state.source=e.target.value;state.shown=9;render()});
     $('resetFilters').addEventListener('click',resetFilters);
     for(const [id,key] of [['dateFilter','days'],['regionFilter','region'],['languageFilter','language']])$(id).addEventListener('change',e=>{state[key]=e.target.value;state.shown=9;render()});
     $('reviewedFilter').addEventListener('change',e=>{state.reviewedOnly=e.target.checked;state.shown=9;render()});
@@ -295,13 +329,13 @@
     $('exploreProjects').addEventListener('click',()=>setView('مفتوح المصدر'));
     $('refreshButton').addEventListener('click',()=>fetchFeed(true));
     $('imageOnly')?.addEventListener('click',()=>{state.imagesOnly=!state.imagesOnly;state.shown=9;render()});
-    $('overlay').addEventListener('click',()=>{closeDetail();$('sidebar').classList.remove('mobile-open');$('mobileMenu').setAttribute('aria-expanded','false');$('overlay').hidden=true});
+    $('overlay').addEventListener('click',()=>{closeDetail();$('sidebar').classList.remove('mobile-open');$('mobileMenu').setAttribute('aria-expanded','false');$('overlay').hidden=true;$('newsSection').focus({preventScroll:true})});
     $('closeDetail').addEventListener('click',()=>closeDetail());
     $('mobileMenu').addEventListener('click',()=>{$('sidebar').classList.toggle('mobile-open');$('overlay').hidden=!$('sidebar').classList.contains('mobile-open');$('mobileMenu').setAttribute('aria-expanded',String($('sidebar').classList.contains('mobile-open')))});
     document.addEventListener('keydown',e=>{
-      if(e.key==='Escape'){if(!$('detailWrap').hidden)closeDetail();else if($('sidebar').classList.contains('mobile-open')){$('sidebar').classList.remove('mobile-open');$('mobileMenu').setAttribute('aria-expanded','false');$('overlay').hidden=true}}
-      if(e.key==='/'&&e.target.tagName!=='INPUT'&&!e.ctrlKey&&!e.metaKey){e.preventDefault();$('searchInput').focus()}
-      if(e.key==='Tab'&&!$('detailWrap').hidden){const focusable=[...document.querySelectorAll('.detail-panel button,.detail-panel a[href]')].filter(x=>!x.hidden);if(!focusable.length)return;const first=focusable[0],last=focusable[focusable.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}
+      if(e.key==='Escape'){if(!$('detailWrap').hidden)closeDetail();else if($('sidebar').classList.contains('mobile-open')){$('sidebar').classList.remove('mobile-open');$('mobileMenu').setAttribute('aria-expanded','false');$('overlay').hidden=true;$('newsSection').focus({preventScroll:true})}}
+      if(e.key==='/'&&$('detailWrap').hidden&&!['INPUT','TEXTAREA','SELECT'].includes(e.target.tagName)&&!e.ctrlKey&&!e.metaKey){e.preventDefault();$('searchInput').focus()}
+      if(e.key==='Tab'&&!$('detailWrap').hidden){const focusable=[...document.querySelectorAll('.detail-panel button,.detail-panel a[href]')].filter(x=>!x.hidden);if(!focusable.length)return;const first=focusable[0],last=focusable[focusable.length-1];if(e.shiftKey&&(document.activeElement===first||document.activeElement===document.querySelector('.detail-panel'))){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}
     });
     document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'&&Date.now()-lastFetch>15*60*1000)wrappedFetch()});
   }

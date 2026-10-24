@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <meta name="color-scheme" content="dark" />
-  <meta name="theme-color" content="#0a111b" />
+  <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#f4f2ec" />
   <meta name="description" content="مرصد عربي للذكاء الاصطناعي، التقنية، البرمجة، والمشاريع مفتوحة المصدر مع أفكار عملية جديدة كل يوم." />
   <meta property="og:title" content="نَبض | مرصد التقنية والابتكار" />
   <meta property="og:description" content="آخر أخبار الذكاء الاصطناعي والمشاريع مفتوحة المصدر؛ تحديث آلي كل ثلاث ساعات." />
@@ -14,11 +14,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./editorial.css" id="editorialTheme" />
+  <link rel="stylesheet" href="./classic.css" id="classicTheme" media="not all" />
+  <script>
+    (()=>{let design='modern';try{if(localStorage.getItem('nabdh-design')==='classic')design='classic'}catch{}document.documentElement.dataset.design=design;document.getElementById('editorialTheme').media=design==='modern'?'all':'not all';document.getElementById('classicTheme').media=design==='classic'?'all':'not all';document.documentElement.style.colorScheme=design==='classic'?'dark':'light'})();
+  </script>
   <script defer src="./ideas.js"></script>
   <script defer src="./app.js"></script>
 </head>
 <body>
+  <a class="skip-link" href="#newsSection">انتقل إلى المحتوى</a>
   <div class="app-shell">
+    <header class="masthead"><a href="#home" class="masthead-brand" id="brandHome"><span class="masthead-mark">نَبض<span>•</span></span><small>التقنية. بفهمٍ أعمق.</small></a><nav class="primary-nav" aria-label="الوجهات الرئيسية"><button class="nav-link" data-nav="all" type="button">القراءة</button><button class="nav-link" data-nav="مفتوح المصدر" type="button">المشاريع</button><button class="nav-link" data-nav="library" type="button">المكتبة</button><button class="nav-link" data-nav="ideas" type="button">الأفكار</button><button class="nav-link" data-nav="saved" type="button">المحفوظات</button></nav><span class="masthead-edition">مرصد عربي مستقل<br><b>اكتشف · افهم · ابنِ</b></span></header>
     <aside class="sidebar" id="sidebar" aria-label="قائمة التنقل">
       <a class="brand" href="#home" aria-label="الصفحة الرئيسية نبض">
         <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M5 22h8l5-11 6 19 5-10h6" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
@@ -26,7 +33,7 @@
       </a>
       <div class="menu-label">استكشف</div>
       <nav class="nav-list">
-        <button class="nav-link active" data-nav="all" type="button"><span class="nav-symbol">▦</span><span>الرئيسية</span><span class="nav-dot"></span></button>
+
         <button class="nav-link" data-nav="ذكاء اصطناعي" type="button"><span class="nav-symbol">✳</span><span>الذكاء الاصطناعي</span></button>
         <button class="nav-link" data-nav="برمجة" type="button"><span class="nav-symbol">⌘</span><span>البرمجة و Python</span></button>
         <button class="nav-link" data-nav="تقنيات" type="button"><span class="nav-symbol">◈</span><span>التقنيات والأجهزة</span></button>
@@ -36,14 +43,14 @@
       </nav>
       <div class="menu-label second">مساحة الابتكار</div>
       <nav class="nav-list">
-        <button class="nav-link" data-nav="مفتوح المصدر" type="button"><span class="nav-symbol">⟐</span><span>مشاريع مفتوحة المصدر</span></button>
-        <button class="nav-link" data-nav="ideas" type="button"><span class="nav-symbol">✦</span><span>أفكار المشاريع</span><span class="tiny-pill">10+</span></button>
-        <button class="nav-link" data-nav="religious" type="button"><span class="nav-symbol">☾</span><span>خدمة الدين بالتقنية</span><span class="tiny-pill">10</span></button>
-        <button class="nav-link" data-nav="saved" type="button"><span class="nav-symbol">♡</span><span>المحفوظات</span></button>
+
+
+        <button class="nav-link" data-nav="religious" type="button"><span class="nav-symbol">☾</span><span>خدمة الدين بالتقنية</span></button>
+
       </nav>
       <div class="sidebar-bottom">
         <div class="side-glow"><span>✦</span><b>من الخبر إلى المشروع.</b><p>لا تتابع التقنية فقط، ابتكر شيئًا جديدًا بها.</p><button id="exploreProjects" type="button">استكشف المشاريع <span>←</span></button></div>
-        <div class="sidebar-meta">صُنع بشغف للتقنية <span>•</span> إصدار 3.0</div>
+        <div class="sidebar-meta">صُنع بشغف للتقنية <span>•</span> إصدار 3.1</div>
       </div>
     </aside>
 
@@ -52,6 +59,7 @@
         <div class="mobile-brand"><button class="icon-button" id="mobileMenu" aria-label="فتح القائمة" aria-expanded="false" aria-controls="sidebar" type="button">☰</button><b>نَبض<span>.</span></b></div>
         <div class="breadcrumb"><span>المرصد</span><span class="chevron">/</span><b id="currentPage">نظرة عامة</b></div>
         <div class="top-controls">
+          <label class="design-picker"><span>التصميم</span><select id="designSelect" aria-label="اختيار تصميم الموقع"><option value="modern">الجديد · فاتح</option><option value="classic">السابق · داكن</option></select></label>
           <span class="live-pill"><i></i> فحص البيانات</span>
           <span class="clock" id="riyadhClock" aria-label="التوقيت المحلي السعودية"></span>
           <button class="icon-button" id="refreshButton" aria-label="إعادة تحميل البيانات" title="إعادة تحميل البيانات" type="button">↻</button>
@@ -62,15 +70,16 @@
         <section class="hero" aria-labelledby="heroTitle">
           <div class="hero-noise"></div><div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
           <div class="hero-copy">
-            <span class="hero-eyebrow"><span class="beam">✴</span> مستقبلك التقني يبدأ من هنا</span>
-            <h1 id="heroTitle">ابقَ في قلب <span>الابتكار.</span></h1>
-            <p>كل ما يهمك من عالم الذكاء الاصطناعي والتقنية والمصادر المفتوحة، في مكان واحد. اكتشف الخبر، افهم أثره، واصنع منه مشروعك القادم.</p>
+            <span class="hero-eyebrow"><span class="beam">✴</span> مرصدك العربي للتقنية والابتكار</span>
+            <h1 id="heroTitle">خلف كل خبر،<br><span>فرصة تستحق الفهم.</span></h1>
+            <p>أخبار بمصادرها، ومشاريع بشرح عربي، وأفكار بخطوات تنفيذ. اختر ما يستحق وقتك وابدأ من حيث انتهى الآخرون.</p>
             <div class="hero-actions"><button class="primary-btn" id="latestButton" type="button">اكتشف أحدث الأخبار <span>↙</span></button><button class="outline-btn" id="ideasButton" type="button">استكشف الأفكار <span>✦</span></button></div>
           </div>
-          <div class="hero-art" aria-hidden="true"><div class="orb-glow"></div><div class="orbit-ring ring-a"></div><div class="orbit-ring ring-b"></div><div class="orb-center"><div class="orb-heart">⌁</div></div><span class="orb-dot dot-a"></span><span class="orb-dot dot-b"></span><span class="orb-dot dot-c"></span><span class="orb-cross">+</span></div>
+          <div class="hero-feature" id="heroFeature" aria-label="اختيار من الأخبار"></div>
           <div class="hero-bottom"><span><i class="circle-green"></i> المصدر المفتوح، دون ضجيج</span><span>تحديث كل 3 ساعات <b>↗</b></span></div>
         </section>
 
+        <section class="project-shelf" id="projectShelf"><div><span class="kicker">من المعرفة إلى التنفيذ</span><h2>أدوات تستحق التجربة</h2><p>ابدأ بمشروع مفتوح المصدر، ثم اكتشف ما يمكنك بناؤه.</p></div><div id="shelfItems"></div></section>
         <section class="stats" aria-label="إحصائيات المنصة">
           <div class="stat"><span class="stat-icon icon-green">▤</span><div><b id="statNews">—</b><small>خبرًا وتقارير</small></div></div>
           <div class="stat"><span class="stat-icon icon-purple">⌘</span><div><b id="statProjects">—</b><small>مشروع مفتوح المصدر</small></div></div>
@@ -83,11 +92,11 @@
           <details><summary>المصادر وحالة الجمع</summary><div id="sourceHealth">لم تتوفر حالة المصادر بعد.</div></details>
         </section>
         <section class="daily-brief" id="dailyBrief" aria-labelledby="briefTitle">
-          <div class="section-heading"><div><span class="kicker">ابدأ من هنا</span><h2 id="briefTitle">خمس إشارات تستحق وقتك</h2><p>اختيارات من مجالات مختلفة؛ افتح الخبر لفهمه والوصول إلى مصدره.</p></div></div>
+          <div class="section-heading"><div><span class="kicker">ابدأ من هنا</span><h2 id="briefTitle">ما يستحق انتباهك</h2><p>اختيارات من مجالات مختلفة؛ افتح الخبر لفهمه والوصول إلى مصدره.</p></div></div>
           <div id="briefItems" class="brief-items"></div>
         </section>
         <section class="digest" aria-labelledby="digestTitle">
-          <div class="section-heading compact"><div><span class="kicker">موجزك على مدار اليوم</span><h2 id="digestTitle">أربع محطات. صورة أوضح.</h2></div><span class="hint">بتوقيت السعودية (UTC+3)</span></div>
+          <div class="section-heading compact"><div><span class="kicker">موجزك على مدار اليوم</span><h2 id="digestTitle">اختر وقت نشرتك</h2></div><span class="hint">بتوقيت السعودية (UTC+3)</span></div>
           <div class="digest-slots" id="digestSlots" role="group" aria-label="تصفية النشرات حسب الفترة">
             <button class="digest-slot" data-slot="0" type="button"><span class="slot-icon">☾</span><span><b>منتصف الليل</b><small>12 ص — 6 ص</small></span></button>
             <button class="digest-slot" data-slot="1" type="button"><span class="slot-icon">☀</span><span><b>الصباح</b><small>6 ص — 12 م</small></span></button>
@@ -101,17 +110,18 @@
           <div id="spotlightGrid" class="spotlight-grid"></div>
         </section>
 
-        <section class="news-section" id="newsSection">
-          <div class="section-heading"><div><span class="kicker" id="sectionKicker">إشارات تستحق المتابعة</span><h2 id="sectionTitle">الأكثر رواجًا <span class="heading-star">✳</span></h2><p id="sectionDescription">أبرز المستجدات مرتبة بمؤشر شيوع تقديري، مع ربط الأخبار بمصادرها الأصلية.</p></div><div class="section-tools"><button class="toggle-sort selected" data-sort="popular" type="button">✦ الرائج</button><button class="toggle-sort" data-sort="latest" type="button">◷ الأحدث</button></div></div>
+        <section class="news-section" id="newsSection" tabindex="-1">
+          <div class="section-heading"><div><span class="kicker" id="sectionKicker">إشارات تستحق المتابعة</span><h2 id="sectionTitle">الأكثر رواجًا <span class="heading-star">✳</span></h2><p id="sectionDescription">أخبار المصادر الأصلية مع الشرح العربي المتوفر.</p></div><div class="section-tools"><button class="toggle-sort selected" data-sort="popular" type="button">✦ الرائج</button><button class="toggle-sort" data-sort="latest" type="button">◷ الأحدث</button></div></div>
           <div class="filter-row"><div class="filter-chips" id="chips"><button class="chip active" data-chip="all" type="button">الكل</button><button class="chip" data-chip="news" type="button">الأخبار</button><button class="chip" data-chip="project" type="button">المشاريع</button><button class="chip" data-chip="idea" type="button">الأفكار</button><button class="chip" id="imageOnly" aria-pressed="false" type="button">▣ بصور فقط</button></div><label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="ابحث عن خبر أو مشروع..." autocomplete="off" aria-label="بحث في المحتوى" /><kbd> / </kbd></label></div>
           <div class="advanced-filters" aria-label="تصفية متقدمة">
             <label>الفترة<select id="dateFilter"><option value="all">كل المحتوى</option><option value="1">آخر 24 ساعة</option><option value="7">آخر 7 أيام</option><option value="30">آخر 30 يومًا</option></select></label>
+            <label>المصدر<select id="sourceFilter"><option value="all">جميع المصادر</option></select></label>
             <label>النطاق<select id="regionFilter"><option value="all">جميع المناطق</option><option value="السعودية">السعودية</option><option value="عالمي">عالمي</option></select></label>
             <label>لغة المشروع<select id="languageFilter"><option value="all">كل اللغات</option></select></label>
             <label class="reviewed-filter"><input id="reviewedFilter" type="checkbox"> شرح خاص بالمحتوى فقط</label>
             <button type="button" id="resetFilters">مسح التصفية</button>
           </div>
-          <div class="result-summary" id="resultSummary" role="status"></div>
+          <div class="reading-toolbar"><div class="result-summary" id="resultSummary" role="status"></div><div class="display-switch" role="group" aria-label="طريقة العرض"><button type="button" data-layout="grid" aria-pressed="true">بطاقات</button><button type="button" data-layout="list" aria-pressed="false">قائمة للقراءة</button></div></div>
           <div class="feed-grid" id="feedGrid" aria-live="polite"><div class="loading">جارٍ تحميل الأخبار والمشاريع…</div></div>
           <div class="load-row"><button id="loadMore" class="load-more" type="button">عرض المزيد <span>↓</span></button></div>
         </section>

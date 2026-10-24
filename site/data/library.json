@@ -1,0 +1,796 @@
+{
+  "version": 1,
+  "compiledAt": "2026-10-24T10:38:36.869Z",
+  "note": "Research queue, not published website content. GitHub metadata checked October 24 2026; not independently tested or README audited. License values NOASSERTION do not imply no license. Stars are cumulative at measurement, not trending.",
+  "metricsWarning": "Do not label stars as today popularity; verify upstream licensing, actual release activity and maintenance before publishing a dossier.",
+  "statusSummary": {
+    "total": 31,
+    "archived": 2,
+    "inCurrentFeed": 4,
+    "notInFeed": 27
+  },
+  "developerIntegrationNotes": [
+    "Provide a separate historical projects catalog independent of the 45-day GitHub discovery window.",
+    "Keep durable canonical GitHub repository identity and documented status rather than using active feed IDs for out-of-feed projects.",
+    "Do not purge library dossiers when feed items rotate; maintain persistent links for bookmarks.",
+    "Show license and activity measurement timestamps and mark archived/mirror projects explicitly.",
+    "Do not use cumulative GitHub stars as current popularity."
+  ],
+  "entries": [
+    {
+      "priority": 1,
+      "repository": "torvalds/linux",
+      "url": "https://github.com/torvalds/linux",
+      "category": "أنظمة تشغيل",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 253324,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "NOASSERTION",
+      "licenseNeedsUpstreamVerification": true,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "نواة أنظمة Linux",
+      "proposedResearchOrBuild": "توثيق مسارات kernel/modules وتجارب محاكاة",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "not_visible_until_website_support_is_added",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/torvalds/linux"
+        }
+      ]
+    },
+    {
+      "priority": 2,
+      "repository": "microsoft/vscode",
+      "url": "https://github.com/microsoft/vscode",
+      "category": "أدوات تطوير",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 194261,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "MIT",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "محرر الشيفرة وإضافاته",
+      "proposedResearchOrBuild": "إضافة فحوص جودة مشاريع Python",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "not_visible_until_website_support_is_added",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/microsoft/vscode"
+        }
+      ]
+    },
+    {
+      "priority": 3,
+      "repository": "vuejs/core",
+      "url": "https://github.com/vuejs/core",
+      "category": "واجهات ويب",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 54798,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "MIT",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "واجهة تفاعلية للويب",
+      "proposedResearchOrBuild": "مكوّنات RTL وإمكانية الوصول",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "not_visible_until_website_support_is_added",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/vuejs/core"
+        }
+      ]
+    },
+    {
+      "priority": 4,
+      "repository": "nodejs/node",
+      "url": "https://github.com/nodejs/node",
+      "category": "بيئات JavaScript",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 123034,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "NOASSERTION",
+      "licenseNeedsUpstreamVerification": true,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "تشغيل JavaScript على الخوادم",
+      "proposedResearchOrBuild": "اختبار قياس الأداء للشبكات",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "not_visible_until_website_support_is_added",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/nodejs/node"
+        }
+      ]
+    },
+    {
+      "priority": 5,
+      "repository": "python/cpython",
+      "url": "https://github.com/python/cpython",
+      "category": "لغات برمجة",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 77751,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "NOASSERTION",
+      "licenseNeedsUpstreamVerification": true,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "المفسر المرجعي للغة Python",
+      "proposedResearchOrBuild": "تعلم الواجهات والـ C API وبناء أدوات تشخيص",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "not_visible_until_website_support_is_added",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/python/cpython"
+        }
+      ]
+    },
+    {
+      "priority": 6,
+      "repository": "rust-lang/rust",
+      "url": "https://github.com/rust-lang/rust",
+      "category": "لغات برمجة",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 120726,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "Apache-2.0",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "المترجم والبنية البرمجية للغة Rust",
+      "proposedResearchOrBuild": "فحوص أمان الذاكرة وقواعد lint",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "not_visible_until_website_support_is_added",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/rust-lang/rust"
+        }
+      ]
+    },
+    {
+      "priority": 7,
+      "repository": "golang/go",
+      "url": "https://github.com/golang/go",
+      "category": "لغات برمجة",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 139505,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "BSD-3-Clause",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "لغة Go وأدواتها",
+      "proposedResearchOrBuild": "أداة CLI لتتبع زمن تنفيذ المهام",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "not_visible_until_website_support_is_added",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/golang/go"
+        }
+      ]
+    },
+    {
+      "priority": 8,
+      "repository": "kubernetes/kubernetes",
+      "url": "https://github.com/kubernetes/kubernetes",
+      "category": "بنية سحابية",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 128601,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "Apache-2.0",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "تنسيق الحاويات والخدمات",
+      "proposedResearchOrBuild": "لوحة فحص موارد الحاويات",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "not_visible_until_website_support_is_added",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/kubernetes/kubernetes"
+        }
+      ]
+    },
+    {
+      "priority": 9,
+      "repository": "postgres/postgres",
+      "url": "https://github.com/postgres/postgres",
+      "category": "قواعد بيانات",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 22534,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "NOASSERTION",
+      "licenseNeedsUpstreamVerification": true,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "مرآة رسمية لشفرة PostgreSQL؛ المساهمات تُقدَّم عبر المشروع الأصلي",
+      "proposedResearchOrBuild": "أداة مقارنة خطط استعلامات SQL",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "not_visible_until_website_support_is_added",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/postgres/postgres"
+        }
+      ]
+    },
+    {
+      "priority": 10,
+      "repository": "tensorflow/tensorflow",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "category": "تعلم آلي",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 201212,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "Apache-2.0",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "إطار تعلم آلي",
+      "proposedResearchOrBuild": "تقييم خط سير تدريب على مجموعات بيانات صغيرة",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "not_visible_until_website_support_is_added",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/tensorflow/tensorflow"
+        }
+      ]
+    },
+    {
+      "priority": 11,
+      "repository": "pytorch/pytorch",
+      "url": "https://github.com/pytorch/pytorch",
+      "category": "تعلم عميق",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 105030,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "NOASSERTION",
+      "licenseNeedsUpstreamVerification": true,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "إطار موترات ونماذج تعلم عميق",
+      "proposedResearchOrBuild": "قياس استهلاك ذاكرة التدريب",
+      "inCurrentFeed": true,
+      "feedId": "6ee2c2a30826817dae",
+      "siteVisibility": "eligible_for_editorial_enrichment_only",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/pytorch/pytorch"
+        }
+      ]
+    },
+    {
+      "priority": 12,
+      "repository": "huggingface/transformers",
+      "url": "https://github.com/huggingface/transformers",
+      "category": "نماذج AI",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 168058,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "Apache-2.0",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "واجهة لتحميل وتدريب واستدلال النماذج",
+      "proposedResearchOrBuild": "لوحة مقارنة نماذج على عتاد متاح",
+      "inCurrentFeed": true,
+      "feedId": "53d940334a2a5afd27",
+      "siteVisibility": "eligible_for_editorial_enrichment_only",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/huggingface/transformers"
+        }
+      ]
+    },
+    {
+      "priority": 13,
+      "repository": "ollama/ollama",
+      "url": "https://github.com/ollama/ollama",
+      "category": "نماذج محلية",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 184591,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "MIT",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "تشغيل نماذج محلية بواجهات API",
+      "proposedResearchOrBuild": "مدير ذاكرة سياقات محلية",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "not_visible_until_website_support_is_added",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/ollama/ollama"
+        }
+      ]
+    },
+    {
+      "priority": 14,
+      "repository": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "category": "أتمتة",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 208466,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "NOASSERTION",
+      "licenseNeedsUpstreamVerification": true,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "بناء تدفقات أتمتة مرئية؛ شروط الترخيص تحتاج تدقيقًا",
+      "proposedResearchOrBuild": "مراقب تدفقات مع قياس فشل المهام",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "not_visible_until_website_support_is_added",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/n8n-io/n8n"
+        }
+      ]
+    },
+    {
+      "priority": 15,
+      "repository": "langchain-ai/langchain",
+      "url": "https://github.com/langchain-ai/langchain",
+      "category": "تطبيقات AI",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 148351,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "MIT",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "بناء تطبيقات وكلاء وربط أدوات",
+      "proposedResearchOrBuild": "مجموعة تقييم لاستخراج المصادر",
+      "inCurrentFeed": true,
+      "feedId": "c5a32632e586ab2c7c",
+      "siteVisibility": "eligible_for_editorial_enrichment_only",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/langchain-ai/langchain"
+        }
+      ]
+    },
+    {
+      "priority": 16,
+      "repository": "home-assistant/core",
+      "url": "https://github.com/home-assistant/core",
+      "category": "منزل ذكي",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 91691,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "Apache-2.0",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "أتمتة المنزل مع تركيز على التحكم المحلي",
+      "proposedResearchOrBuild": "لوحة قياس جودة الحساسات",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "not_visible_until_website_support_is_added",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/home-assistant/core"
+        }
+      ]
+    },
+    {
+      "priority": 17,
+      "repository": "obsproject/obs-studio",
+      "url": "https://github.com/obsproject/obs-studio",
+      "category": "بث وتسجيل",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 78048,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "GPL-2.0",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "تسجيل الشاشة والبث",
+      "proposedResearchOrBuild": "إضافة فهرسة تلقائية للمقاطع التعليمية",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "not_visible_until_website_support_is_added",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/obsproject/obs-studio"
+        }
+      ]
+    },
+    {
+      "priority": 18,
+      "repository": "blender/blender",
+      "url": "https://github.com/blender/blender",
+      "category": "ثلاثي أبعاد",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 21198,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "NOASSERTION",
+      "licenseNeedsUpstreamVerification": true,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "مرآة رسمية لتطبيق Blender",
+      "proposedResearchOrBuild": "مقارنة كلفة الرندر للمشاهد",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "not_visible_until_website_support_is_added",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/blender/blender"
+        }
+      ]
+    },
+    {
+      "priority": 19,
+      "repository": "jellyfin/jellyfin",
+      "url": "https://github.com/jellyfin/jellyfin",
+      "category": "وسائط",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 58491,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "GPL-2.0",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "خادم وسائط مفتوح",
+      "proposedResearchOrBuild": "فهرسة مكتبة محلية وإحصاء صيغ الملفات",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "not_visible_until_website_support_is_added",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/jellyfin/jellyfin"
+        }
+      ]
+    },
+    {
+      "priority": 20,
+      "repository": "immich-app/immich",
+      "url": "https://github.com/immich-app/immich",
+      "category": "صور",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 117062,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "AGPL-3.0",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "إدارة الصور والفيديوهات ذاتيًا",
+      "proposedResearchOrBuild": "اكتشاف النسخ المكررة بموافقة المستخدم",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "not_visible_until_website_support_is_added",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/immich-app/immich"
+        }
+      ]
+    },
+    {
+      "priority": 21,
+      "repository": "paperless-ngx/paperless-ngx",
+      "url": "https://github.com/paperless-ngx/paperless-ngx",
+      "category": "وثائق",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 47043,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "GPL-3.0",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "أرشفة وبحث المستندات الممسوحة",
+      "proposedResearchOrBuild": "استخراج حقول مستندات محليًا مع مراجعة بشرية",
+      "inCurrentFeed": true,
+      "feedId": "e8cd7111f3678ea8f9",
+      "siteVisibility": "eligible_for_editorial_enrichment_only",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/paperless-ngx/paperless-ngx"
+        }
+      ]
+    },
+    {
+      "priority": 22,
+      "repository": "grafana/grafana",
+      "url": "https://github.com/grafana/grafana",
+      "category": "مراقبة",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 77475,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "AGPL-3.0",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "لوحات زمنية وقياسات ونصوص سجلات",
+      "proposedResearchOrBuild": "لوحة مراقبة موارد خدمات AI",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "not_visible_until_website_support_is_added",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/grafana/grafana"
+        }
+      ]
+    },
+    {
+      "priority": 23,
+      "repository": "godotengine/godot",
+      "url": "https://github.com/godotengine/godot",
+      "category": "ألعاب",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 118993,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "MIT",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "محرك تطوير ألعاب 2D و3D",
+      "proposedResearchOrBuild": "أداة تعلم تفاعلية لأساسيات البرمجة",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "not_visible_until_website_support_is_added",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/godotengine/godot"
+        }
+      ]
+    },
+    {
+      "priority": 24,
+      "repository": "fastapi/fastapi",
+      "url": "https://github.com/fastapi/fastapi",
+      "category": "ويب Python",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 104068,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "MIT",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "إطار واجهات API بلغة Python",
+      "proposedResearchOrBuild": "قالب خدمة نماذج مع تحقق إدخال",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "not_visible_until_website_support_is_added",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/fastapi/fastapi"
+        }
+      ]
+    },
+    {
+      "priority": 25,
+      "repository": "sveltejs/svelte",
+      "url": "https://github.com/sveltejs/svelte",
+      "category": "واجهات ويب",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 88428,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "MIT",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "تطوير واجهات ويب مترجمة إلى JavaScript",
+      "proposedResearchOrBuild": "مكونات جدول أخبار قابلة للنفاذ",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "not_visible_until_website_support_is_added",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/sveltejs/svelte"
+        }
+      ]
+    },
+    {
+      "priority": 26,
+      "repository": "django/django",
+      "url": "https://github.com/django/django",
+      "category": "ويب Python",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 91575,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "BSD-3-Clause",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "إطار ويب متكامل",
+      "proposedResearchOrBuild": "لوحة إدارة مصادر بيانات تعليمية",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "not_visible_until_website_support_is_added",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/django/django"
+        }
+      ]
+    },
+    {
+      "priority": 27,
+      "repository": "neovim/neovim",
+      "url": "https://github.com/neovim/neovim",
+      "category": "محررات",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 103142,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "NOASSERTION",
+      "licenseNeedsUpstreamVerification": true,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "محرر extensible وخفيف",
+      "proposedResearchOrBuild": "واجهة إضافية لفحص نتائج اختبارات",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "not_visible_until_website_support_is_added",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/neovim/neovim"
+        }
+      ]
+    },
+    {
+      "priority": 28,
+      "repository": "FFmpeg/FFmpeg",
+      "url": "https://github.com/FFmpeg/FFmpeg",
+      "category": "وسائط",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 65628,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "NOASSERTION",
+      "licenseNeedsUpstreamVerification": true,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "مرآة شفرة إطار معالجة الصوت والفيديو",
+      "proposedResearchOrBuild": "أداة قياس حجم وصيغ الفيديو",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "not_visible_until_website_support_is_added",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/FFmpeg/FFmpeg"
+        }
+      ]
+    },
+    {
+      "priority": 29,
+      "repository": "atom/atom",
+      "url": "https://github.com/atom/atom",
+      "category": "مؤرشف",
+      "classification": "historical_archived",
+      "archived": true,
+      "starsMeasured": 60710,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "MIT",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "محرر مؤرشف، ذو قيمة تاريخية",
+      "proposedResearchOrBuild": "دراسة الهجرة إلى VS Code",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "not_visible_until_website_support_is_added",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/atom/atom"
+        }
+      ]
+    },
+    {
+      "priority": 30,
+      "repository": "angular/angular.js",
+      "url": "https://github.com/angular/angular.js",
+      "category": "مؤرشف",
+      "classification": "historical_archived",
+      "archived": true,
+      "starsMeasured": 58472,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "MIT",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "إطار AngularJS القديم والمؤرشف",
+      "proposedResearchOrBuild": "دليل هجرة تدريجي إلى أطر حديثة",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "not_visible_until_website_support_is_added",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/angular/angular.js"
+        }
+      ]
+    },
+    {
+      "priority": 31,
+      "repository": "microsoft/TypeScript",
+      "url": "https://github.com/microsoft/TypeScript",
+      "category": "لغات برمجة",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 111584,
+      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "licenseApiValue": "Apache-2.0",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "overviewShort": "لغة TypeScript ومترجمها",
+      "proposedResearchOrBuild": "مولد قوالب للتحقق من أنواع بيانات API",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "not_visible_until_website_support_is_added",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://github.com/microsoft/TypeScript"
+        }
+      ]
+    }
+  ]
+}

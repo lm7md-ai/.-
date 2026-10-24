@@ -25,8 +25,27 @@ def run():
             page.on('pageerror',lambda error:errors.append(str(error)))
             page.goto(origin,wait_until='networkidle')
             page.wait_for_selector('.article-card')
+            assert page.locator('#heroFeature [data-open]').count()==1
             assert not page.evaluate('document.documentElement.scrollWidth>innerWidth')
             assert page.locator('#sourceHealth').count()==1
+            for width in [1440,390]:
+                page.set_viewport_size({'width':width,'height':1000})
+                page.locator('#designSelect').select_option('classic')
+                assert page.locator('html').get_attribute('data-design')=='classic'
+                page.reload(wait_until='networkidle')
+                assert page.locator('#designSelect').input_value()=='classic'
+                assert page.locator('#sidebar .primary-nav').count()==1
+                assert not page.evaluate('document.documentElement.scrollWidth>innerWidth')
+                if width==390:page.locator('#mobileMenu').click()
+                page.locator('[data-nav="library"]').click()
+                assert page.locator('.article-card').count()>0
+                page.locator('#feedGrid .title-open').first.click()
+                page.locator('#closeDetail').click()
+                page.locator('#designSelect').select_option('modern')
+                assert page.locator('.masthead .primary-nav').count()==1
+                page.locator('[data-nav="all"]').click()
+                assert not page.evaluate('document.documentElement.scrollWidth>innerWidth')
+            page.set_viewport_size({'width':1440,'height':1000})
             page.locator('[data-nav="مفتوح المصدر"]').click()
             page.locator('#feedGrid .card-open').first.click()
             page.locator('[data-proposal-type="improvements"]').first.click()
@@ -46,6 +65,20 @@ def run():
             assert page.locator('.article-card').count()==0
             page.locator('#resetFilters').click()
             assert page.locator('.article-card').count()>0
+            page.locator('[data-layout="list"]').click()
+            assert page.locator('#feedGrid').evaluate("e=>e.classList.contains('reading-list')")
+            page.reload(wait_until='networkidle')
+            assert page.locator('[data-layout="list"]').get_attribute('aria-pressed')=='true'
+            source=page.locator('#sourceFilter option').nth(1).get_attribute('value')
+            page.locator('#sourceFilter').select_option(source)
+            assert page.locator('.article-card').count()>0
+            page.locator('#resetFilters').click()
+            assert page.locator('#sourceFilter').input_value()=='all'
+            page.locator('#feedGrid .title-open').first.focus()
+            page.keyboard.press('Enter')
+            assert page.locator('.app-shell').evaluate('e=>e.inert')
+            page.keyboard.press('Escape')
+            assert not page.locator('.app-shell').evaluate('e=>e.inert')
             page.locator('#dateFilter').select_option('7')
             page.locator('#regionFilter').select_option('السعودية')
             # Seed snapshots may contain no recent Saudi news; resetting must recover.
@@ -54,10 +87,21 @@ def run():
             assert not page.evaluate('document.documentElement.scrollWidth>innerWidth')
             page.locator('#mobileMenu').click()
             assert page.locator('#mobileMenu').get_attribute('aria-expanded')=='true'
-            page.locator('[data-nav="ideas"]').click()
+            page.locator('#sidebar [data-nav="برمجة"]').click()
             assert page.locator('#mobileMenu').get_attribute('aria-expanded')=='false'
+            page.locator('[data-nav="ideas"]').click()
             page.locator('#reviewedFilter').check()
             page.locator('#resetFilters').click()
+            page.locator('[data-nav="library"]').click()
+            assert page.locator('#feedGrid .article-card').count()>0
+            page.locator('#feedGrid .title-open').first.click()
+            assert 'تاريخ فحص البيانات' in page.locator('.detail-submeta').inner_text()
+            assert page.locator('.study-entry').count()==0
+            library_link=page.url
+            page.reload(wait_until='networkidle')
+            assert page.locator('#detailTitle').is_visible()
+            page.locator('#closeDetail').click()
+            page.locator('[data-nav="ideas"]').click()
             # A failed refresh must not erase the last loaded feed.
             before=page.locator('.article-card').count()
             page.route('**/data/feed.json?*',lambda route:route.abort())
