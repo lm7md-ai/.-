@@ -1,0 +1,808 @@
+{
+  "version": 1,
+  "items": {
+    "317abcdd1b20728a7e": {
+      "titleAr": "Canva تعلن Craft لتوليد صور يمكن تحويلها إلى تصاميم متعددة الطبقات",
+      "summaryAr": "نشرت TechCrunch أن Canva أطلقت نموذج Canva Craft الذي تخطط مرحلته الأولى لعلاقات العناصر والنصوص قبل توليد الصورة في المرحلة الثانية. تقول الشركة إنه ينتج حتى 2K بنسب أبعاد متنوعة، ويمكن تحويل الناتج إلى طبقات قابلة للتحرير. توفره المعلن عبر Dream Lab، مع خطط لتكامل API وMCP.",
+      "whyItMatters": "التحليل: تحرير النصوص والطبقات قد يفيد الملصقات والعروض أكثر من صورة مسطحة؛ لا يعني ذلك أن الدقة والتوفر مثبتان لجميع المستخدمين.",
+      "audience": "مصممو العروض والطلاب ومطورو أدوات التصميم.",
+      "nextSteps": [
+        "اختبر ملصقًا عربيًا وقارن دقة النص وإمكانية تحرير الطبقات.",
+        "تحقق من توفر الميزة وخطة حسابك قبل دمجها في مشروع."
+      ],
+      "limitations": "قرأت المقال ولم أجرب النموذج. دقة المخرجات ومرونة التحرير من ادعاءات الشركة؛ لا أجزم بتسعير API أو موعد دعم MCP.",
+      "reviewedAt": "2026-10-24T08:48:04.195Z",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "تقرير TechCrunch عن Canva Craft",
+          "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model"
+        }
+      ],
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/"
+    },
+    "662e68277c6361dd4b": {
+      "titleAr": "1Password تعرض تفويض دخول للوكلاء دون إظهار كلمات المرور",
+      "summaryAr": "وفق TechCrunch، أعلنت 1Password خدمة Agents تتيح لوكيل طلب تسجيل دخول، مع تأكيد هوية الوكيل وإرسال طلب موافقة للمستخدم، ثم إدخال بيانات الاعتماد بالنيابة عنه دون كشف كلمة المرور للوكيل.",
+      "whyItMatters": "التحليل: فصل كلمات المرور عن الوكلاء يقلل تعرض السر في سجلاتهم، لكنه لا يلغي خطر الأفعال التي ينفذها الوكيل بعد الدخول.",
+      "audience": "مستخدمو الوكلاء ومطورو أتمتة الحسابات.",
+      "nextSteps": [
+        "تحقق من دعم الوكيل والخدمة قبل الربط.",
+        "اختبر حسابًا غير حساس مع الموافقة على كل عملية مهمة."
+      ],
+      "limitations": "قرأت المقال فقط ولم أختبر الخدمة. التوفر والأسعار بحسب الحساب والمنطقة غير متحقق منها، والوكيل قد يظل قادرًا على إجراء تغييرات داخل الجلسة.",
+      "reviewedAt": "2026-10-24T08:48:04.195Z",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "تقرير TechCrunch عن 1Password for Agents",
+          "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password"
+        }
+      ],
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/"
+    },
+    "010d1ccd570cd22892": {
+      "titleAr": "نص تاريخي لديكسترا يحذر من افتراض أن اللغة الطبيعية تجعل البرمجة سهلة",
+      "summaryAr": "مقال EWD667 من 1978 يناقش أن استبدال الرموز الرسمية باللغة البشرية قد يزيد عبء التواصل والتحقق، وأن المشكلة ليست في صعوبة كتابة الرموز وحدها بل في دقة التعليمات.",
+      "whyItMatters": "التحليل المعاصر: تنطبق الفكرة على البرمجة بوكلاء الذكاء الاصطناعي؛ كتابة وصف جميل لا تغني عن المواصفات والاختبارات.",
+      "audience": "طلاب البرمجة ومهندسو المتطلبات.",
+      "nextSteps": [
+        "حوّل وصف مهمة إلى حالات اختبار وحدود صريحة.",
+        "قارن نتيجة الوكيل قبل إضافة الاختبارات وبعدها."
+      ],
+      "limitations": "هذه قراءة لمقال تاريخي من 1978 عاد للتداول؛ ليست خبر إطلاق جديدًا في 2026. الربط بالوكلاء تفسير تحليلي.",
+      "reviewedAt": "2026-10-24T08:48:04.195Z",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "نص Dijkstra التاريخي EWD667",
+          "url": "https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html"
+        }
+      ],
+      "url": "https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html"
+    },
+    "4cd0d3a23be15a1e65": {
+      "titleAr": "PerMIT تقترح بوابة ثقة للذاكرة الدائمة لدى الوكلاء",
+      "summaryAr": "يعرض الباحثون بنية تعتبر المعلومات المستمدة من البيئة غير موثوقة حتى تمر ببوابة تأكيد، مع براهين في Lean 4 وتجارب ضمن نموذج تهديد محدد.",
+      "whyItMatters": "التحليل: تقييد انتقال البيانات غير الموثوقة من الذاكرة إلى الأفعال الحساسة مهم للوكلاء متعددي الجلسات.",
+      "audience": "باحثو أمن الوكلاء والذاكرة.",
+      "nextSteps": [
+        "ضع مصدرًا ودرجة ثقة لكل معلومة مخزنة.",
+        "اختبر منع استخدام محتوى خارجي دون تأكيد."
+      ],
+      "limitations": "basis=metadata؛ قرأت الملخص لا كامل البرهان أو الشيفرة، ونتائج الأمان ادعاءات الباحثين في بيئتهم.",
+      "reviewedAt": "2026-10-24T08:48:04.195Z",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "ملخص ورقة arXiv 2610.28987",
+          "url": "https://arxiv.org/abs/2610.28987"
+        }
+      ],
+      "url": "https://arxiv.org/abs/2610.28987"
+    },
+    "a6442d2eaa69aff011": {
+      "titleAr": "AgentPolicyForge يقيس مخالفة سياسات الوكلاء عند استخدام الأدوات",
+      "summaryAr": "تقترح الورقة توليد سيناريوهات قابلة للتنفيذ لفحص سياسة الأدوات والمعاملات والموارد. يذكر الباحثون 698 حالة توليد و254 حالة اختبار وانخفاضًا نسبيًا في نجاح الهجمات ضمن إعدادهم.",
+      "whyItMatters": "التحليل: مجرد السماح بأداة لا يكفي؛ يجب اختبار وسائط الاستدعاء والملفات المتأثرة والسياق.",
+      "audience": "مطورو وكلاء البرمجة وأنظمة الاختبار.",
+      "nextSteps": [
+        "عرّف خمس سياسات لأدوات الملفات.",
+        "أنشئ حالات سماح ورفض وقس الإنذارات الخاطئة."
+      ],
+      "limitations": "basis=metadata؛ الملخص فقط، والأرقام لا تمثل اختبارًا مستقلًا أو ضمانًا لمنتجات أخرى.",
+      "reviewedAt": "2026-10-24T08:48:04.195Z",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "ملخص ورقة arXiv 2610.28989",
+          "url": "https://arxiv.org/abs/2610.28989"
+        }
+      ],
+      "url": "https://arxiv.org/abs/2610.28989"
+    },
+    "64071f0b701f8c945e": {
+      "titleAr": "دراسة استكشافية: أفضل أسلوب للبرومبت يختلف باختلاف مسألة البرمجة",
+      "summaryAr": "اختبرت الدراسة تسع صيغ مطالبة على GPT-5.5 عبر ثلاث مهام دقة ومسألتين لقياس السرعة. يشير الملخص إلى أن الأفضل يختلف بحسب نوع المهمة والمقياس، وأن المتوسط قد يتأثر بنتائج شاذة.",
+      "whyItMatters": "التحليل: قيّم المطالبات بمقاييس صحة وزمن وتباين على مهامك، لا بوصفة واحدة لجميع المشاريع.",
+      "audience": "طلاب الخوارزميات وهندسة المطالبات.",
+      "nextSteps": [
+        "اختبر ثلاث صيغ على عشر مسائل.",
+        "سجل النجاح والوسيط والزمن والانحراف."
+      ],
+      "limitations": "basis=metadata؛ عينة الدراسة محدودة جدًا ولا يجوز تعميمها على كل النماذج أو اعتبار مقارنة البشر مباشرة.",
+      "reviewedAt": "2026-10-24T08:48:04.195Z",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "ملخص ورقة arXiv 2610.30223",
+          "url": "https://arxiv.org/abs/2610.30223"
+        }
+      ],
+      "url": "https://arxiv.org/abs/2610.30223"
+    },
+    "c33cf34840ad5759f7": {
+      "titleAr": "D-Skill تنقل خبرة وكيل قوي إلى نموذج أصغر دون تحديث الأوزان",
+      "summaryAr": "تستخرج D-Skill دروسًا سلوكية من مسارات عمل معلم وطالب وتضعها في وثيقة مهارات قابلة للقراءة وقت الاستدلال. أبلغ الباحثون عن تقليص فجوة الأداء وتكاليف أقل في مهام محددة.",
+      "whyItMatters": "التحليل: المهارات النصية قابلة للفحص وقد تكون أرخص من إعادة تدريب نموذج، لكنها تحتاج تقييمًا خارج أمثلة التدريب.",
+      "audience": "مطورو الوكلاء ونماذج الطلاب.",
+      "nextSteps": [
+        "اجمع عشر حالات نجاح وفشل.",
+        "أنشئ مهارة واحدة واختبرها على حالات جديدة."
+      ],
+      "limitations": "basis=metadata؛ قرأت الملخص فقط، ونسب الأداء والكلفة تخص تجارب الباحثين.",
+      "reviewedAt": "2026-10-24T08:48:04.195Z",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "ملخص ورقة arXiv 2610.28914",
+          "url": "https://arxiv.org/abs/2610.28914"
+        }
+      ],
+      "url": "https://arxiv.org/abs/2610.28914"
+    },
+    "ff02c0290aa26d0355": {
+      "titleAr": "GenXR-Bench يقيس أداء وكلاء البرمجة في تطبيقات الواقع الممتد",
+      "summaryAr": "يعرض الباحثون 112 مهمة XR تشمل بناء تطبيقات وإصلاح أخطاء وإضافة ميزات، مع اختبارات بصرية وسلوكية. يذكر الملخص أن أقوى إعداد بلغ 50.9% Pass@1 ضمن التجارب.",
+      "whyItMatters": "التحليل: نجاح بناء الشيفرة لا يعني سلامة تفاعل المستخدم أو المستشعرات في التطبيقات ثلاثية الأبعاد.",
+      "audience": "مطورو XR ووكلاء إنشاء التطبيقات.",
+      "nextSteps": [
+        "صمم اختبار حركة وتفاعل ومستشعر.",
+        "شغّل الاختبار على جهاز مستهدف قبل اعتبار المشروع جاهزًا."
+      ],
+      "limitations": "basis=metadata؛ لم أشغّل المعيار أو أراجع كل تفاصيل الورقة، والأرقام خاصة بالإعداد المنشور.",
+      "reviewedAt": "2026-10-24T08:48:04.195Z",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "ملخص ورقة arXiv 2610.29014",
+          "url": "https://arxiv.org/abs/2610.29014"
+        }
+      ],
+      "url": "https://arxiv.org/abs/2610.29014"
+    },
+    "2017be142f7edddecd": {
+      "titleAr": "بحث يدرس اختيار تعديلات الوكيل قبل إنفاق تكلفة تقييمها",
+      "summaryAr": "تقارن ورقة Recursive Self-Improvement on a Budget طرائق انتقاء تعديلات مقترحة على هيكل وكيل باستخدام خصائص التغيير وسجل الأداء، ثم تقييم النتائج على مجموعات مسائل محددة.",
+      "whyItMatters": "التحليل: من المفيد فرز التغييرات حسب المخاطر المتوقعة قبل اختبارها، مع الاحتفاظ باختبار نهائي مستقل.",
+      "audience": "مطورو وكلاء كتابة الشيفرة.",
+      "nextSteps": [
+        "سجل خصائص كل diff قبل التنفيذ.",
+        "قارن نتيجة فرز المرشحين على مجموعة اختبار ثابتة."
+      ],
+      "limitations": "basis=metadata؛ الملخص فقط؛ الفروق العددية المعلنة مرتبطة بنماذج وعينات محددة.",
+      "reviewedAt": "2026-10-24T08:48:04.195Z",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "ملخص ورقة arXiv 2610.29121",
+          "url": "https://arxiv.org/abs/2610.29121"
+        }
+      ],
+      "url": "https://arxiv.org/abs/2610.29121"
+    },
+    "25ead8f4a067714660": {
+      "titleAr": "TeachBack: الإجابة الصحيحة لا تعني مسار تعليم جيدًا للنموذج الأصغر",
+      "summaryAr": "تبحث TeachBack في مشكلة اعتماد المعلم على حل مرجعي جاهز وإغفاله خطوات التحقق، وتقترح تعلم تفضيلات متبادلًا بين مسارات المعلم والطالب. تذكر نتائج إيجابية على مسائل منطقية ورياضية.",
+      "whyItMatters": "التحليل: جودة شرح نموذج تعليمي يجب قياسها بانتقال المهارة إلى مسألة جديدة لا بصحة الجواب وحدها.",
+      "audience": "باحثو تقطير النماذج والتعليم بالذكاء الاصطناعي.",
+      "nextSteps": [
+        "قارن شرحين للمسألة نفسها.",
+        "اختبر حل الطالب لمسألة جديدة بعد كل شرح."
+      ],
+      "limitations": "basis=metadata؛ الملخص فقط، ولا توجد هنا تجربة تربوية مستقلة أو ضمان تعميم.",
+      "reviewedAt": "2026-10-24T08:48:04.195Z",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "ملخص ورقة arXiv 2610.29167",
+          "url": "https://arxiv.org/abs/2610.29167"
+        }
+      ],
+      "url": "https://arxiv.org/abs/2610.29167"
+    },
+    "e1fe9356232251923a": {
+      "titleAr": "GANet نموذج رؤية خفيف لرصد أمراض النباتات على الأجهزة الصغيرة",
+      "summaryAr": "تصف الورقة نموذج GANet للتعرف على 38 نوعًا من أمراض النبات. يذكر المؤلفون نتائج على PlantVillage وسرعات تقارب 5 إطارات/ثانية على Raspberry Pi 4b و11 على Jetson Nano.",
+      "whyItMatters": "التحليل: هذا مسار مفيد للتجارب الزراعية قليلة الموارد، لكن صور المزرعة الحقيقية قد تختلف جذريًا عن بيانات المختبر.",
+      "audience": "طلاب الرؤية الحاسوبية والتقنية الزراعية.",
+      "nextSteps": [
+        "جهز صورًا حقيقية من بيئة التطبيق.",
+        "قارن الدقة والإنذارات الخاطئة والسرعة على الجهاز نفسه."
+      ],
+      "limitations": "basis=metadata؛ أرقام الدقة 99.99% والحجم والسرعة من ملخص الباحثين ولم أتحقق منها؛ ليست أداة تشخيص مضمونة.",
+      "reviewedAt": "2026-10-24T08:48:04.195Z",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "ملخص ورقة arXiv 2610.30225",
+          "url": "https://arxiv.org/abs/2610.30225"
+        }
+      ],
+      "url": "https://arxiv.org/abs/2610.30225"
+    },
+    "d84542ae98ef1c20e4": {
+      "titleAr": "بحث يقترح كشف خطر استنتاج وجود بيانات مريض في تدريب نموذج",
+      "summaryAr": "تناقش الورقة تسرب معلومة مشاركة سجل مريض في تدريب نموذج رغم عدم نشر البيانات الأصلية. درس الباحثون 7,789 نموذجًا على ست مجموعات سريرية واقترحوا فحصًا أوليًا للمخاطر باستخدام أربعة نماذج صغيرة.",
+      "whyItMatters": "التحليل: متوسط الخصوصية قد يخفي سجلات فردية أكثر تعرضًا؛ يجب قياس المخاطر قبل استخدام بيانات حساسة.",
+      "audience": "باحثو خصوصية البيانات وتعلم الآلة الطبي.",
+      "nextSteps": [
+        "صمم تقييم خصوصية على بيانات تجريبية مرخصة.",
+        "اعرض نتائج المخاطر على مختص قبل النشر."
+      ],
+      "limitations": "basis=metadata؛ لم أقرأ متن الورقة أو أشغّل أداة الفحص؛ ليست نتيجة تشخيصية أو توصية طبية.",
+      "reviewedAt": "2026-10-24T08:48:04.195Z",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "ملخص ورقة arXiv 2610.30229",
+          "url": "https://arxiv.org/abs/2610.30229"
+        }
+      ],
+      "url": "https://arxiv.org/abs/2610.30229"
+    },
+    "30e283a9b3f70e35d8": {
+      "titleAr": "uv — مدير مشاريع وحزم Python مكتوب بـRust",
+      "summaryAr": "يوحد إدارة إصدارات Python والبيئات الافتراضية والاعتماديات والسكربتات والأدوات، مع lockfile وcache مشترك وworkspaces.",
+      "whyItMatters": "التحليل: مناسب لبناء مختبرات Python قابلة للتكرار. أرقام السرعة 10–100x في README من قياسات الناشر ولم أتحقق منها.",
+      "audience": "طلاب Python ومطورو البرمجيات وفرق CI.",
+      "overview": "أداة CLI تستخدم محلل اعتماديات مبنيًا على PubGrub وتعمل محليًا على Windows وmacOS وLinux. تنزيل الحزم أو Python يحتاج اتصالًا أو cache سابقًا. البدائل بحسب الحاجة pip وpipx وPoetry وpyenv.",
+      "requirements": "يمكن تثبيتها بـpip install uv أو المثبت الرسمي. لا يلزم Rust للتوزيعات الجاهزة ولا مفتاح API عادة للحزم العامة. للمستودعات الخاصة قد تلزم اعتمادات. الترخيص MIT أو Apache-2.0. تكلفة الأداة صفر لكن CI والشبكة والتخزين قد تكون مدفوعة؛ الذاكرة تتوقف على مشروع Python.",
+      "quickStart": "وفق README: uv init example ثم cd example ثم uv add ruff ثم uv run ruff check؛ بعدها uv lock وuv sync. راجع المثبت قبل تشغيله؛ هذه الأوامر لم تُجرّب هنا.",
+      "limitations": "مراجعة README والتثبيت والترخيص فقط. المقترحات أدوات قياس وتكامل خارجية؛ لا أزعم أن ميزات lockfile أو cache أو التوثيق غائبة.",
+      "nextSteps": [
+        "ابدأ بمشروع صغير.",
+        "قارن وقت التثبيت وحجم البيئة.",
+        "اختبر إعادة الإنشاء من lockfile."
+      ],
+      "reviewedAt": "2026-10-24T08:48:04.195Z",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "README الرسمي لـ uv",
+          "url": "https://github.com/astral-sh/uv/blob/main/README.md"
+        },
+        {
+          "title": "توثيق تثبيت uv",
+          "url": "https://docs.astral.sh/uv/getting-started/installation/"
+        },
+        {
+          "title": "دليل إدارة مشاريع uv",
+          "url": "https://docs.astral.sh/uv/guides/projects/"
+        },
+        {
+          "title": "ترخيص uv MIT",
+          "url": "https://github.com/astral-sh/uv/blob/main/LICENSE-MIT"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "اختبار قابلية نقل ملفات القفل بين الأنظمة",
+          "problem": "فرق Python تفترض أن نجاح sync محليًا يكفي لجميع الأنظمة.",
+          "approach": "حزمة تحقق خارجية تستخدم uv lock وsync على Windows وLinux لمشروع نموذجي.",
+          "stack": "uv، Python، GitHub Actions.",
+          "steps": [
+            "جهز مشروعًا باعتماديات منصات مختلفة.",
+            "أنشئ ملف القفل.",
+            "شغّل sync والاختبارات على نظامين.",
+            "وثّق الفروق."
+          ],
+          "metric": "كشف 10 من 10 تعارضات مصطنعة.",
+          "difficulty": "متوسط؛ تقدير 5 أيام.",
+          "risks": "uv يدعم lockfiles متعددة المنصات أصلًا؛ المقترح فحص إضافي لا ميزة ناقصة.",
+          "sources": [
+            {
+              "title": "README الرسمي لـ uv",
+              "url": "https://github.com/astral-sh/uv/blob/main/README.md"
+            },
+            {
+              "title": "دليل إدارة مشاريع uv",
+              "url": "https://docs.astral.sh/uv/guides/projects/"
+            }
+          ]
+        },
+        {
+          "title": "دليل عربي لأخطاء حل اعتماديات uv",
+          "problem": "طلاب مبتدئون لا يفهمون بعض تعارضات إصدارات الحزم.",
+          "approach": "ملحق توثيقي خارجي لخمس رسائل خطأ واقعية وحلولها المدققة.",
+          "stack": "Python، Markdown، uv.",
+          "steps": [
+            "اجمع خمس حالات قابلة للتكرار.",
+            "راجع توثيق الإصلاح.",
+            "اكتب الشرح بالعربية.",
+            "اختبر الإصلاح على بيئة جديدة."
+          ],
+          "metric": "80% من 20 طالبًا يختارون الإصلاح الصحيح.",
+          "difficulty": "سهل؛ تقدير 3 أيام.",
+          "risks": "تتغير نصوص الأخطاء بين الإصدارات؛ لا تدّع غياب توثيق أصلي.",
+          "sources": [
+            {
+              "title": "README الرسمي لـ uv",
+              "url": "https://github.com/astral-sh/uv/blob/main/README.md"
+            },
+            {
+              "title": "دليل إدارة مشاريع uv",
+              "url": "https://docs.astral.sh/uv/guides/projects/"
+            }
+          ]
+        },
+        {
+          "title": "مقارنة زمن التثبيت مع وبدون ذاكرة cache",
+          "problem": "أرقام السرعة التسويقية لا توضح الأداء على مشروع الطالب.",
+          "approach": "حزمة قياس مستقلة لعشرة مشاريع مع cold/warm cache.",
+          "stack": "Python، uv، pytest، CSV.",
+          "steps": [
+            "اختر عشرة مشاريع مرخصة.",
+            "ثبت الإصدارات والأجهزة.",
+            "قِس cold/warm cache.",
+            "انشر الوسيط والنتائج الخام."
+          ],
+          "metric": "تكرار النتائج ضمن هامش 20% على الجهاز المرجعي.",
+          "difficulty": "متوسط؛ تقدير أسبوع.",
+          "risks": "تؤثر الشبكة والعتاد؛ لا تعمم نتائج جهاز واحد.",
+          "sources": [
+            {
+              "title": "README الرسمي لـ uv",
+              "url": "https://github.com/astral-sh/uv/blob/main/README.md"
+            },
+            {
+              "title": "دليل إدارة مشاريع uv",
+              "url": "https://docs.astral.sh/uv/guides/projects/"
+            }
+          ]
+        },
+        {
+          "title": "قائمة تحقق لترقية uv دون تعطيل مشروع",
+          "problem": "ترقية أداة الإدارة قد تغير بيئة فريق يعمل على مشروع ثابت.",
+          "approach": "قالب CI يفحص sync والاختبارات وفرق lockfile في فرع تجريبي.",
+          "stack": "uv، Git، pytest.",
+          "steps": [
+            "ثبت الإصدار القديم.",
+            "احفظ ملف القفل.",
+            "جرّب الترقية في فرع.",
+            "شغّل الاختبارات.",
+            "وثق التراجع."
+          ],
+          "metric": "إمكانية التراجع خلال 15 دقيقة في ثلاثة مشاريع تجريبية.",
+          "difficulty": "سهل؛ تقدير يومين.",
+          "risks": "لا تطبق التحديث على main دون مراجعة.",
+          "sources": [
+            {
+              "title": "README الرسمي لـ uv",
+              "url": "https://github.com/astral-sh/uv/blob/main/README.md"
+            },
+            {
+              "title": "دليل إدارة مشاريع uv",
+              "url": "https://docs.astral.sh/uv/guides/projects/"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مولد مختبرات Python قابلة للإعادة",
+          "problem": "الطلاب يواجهون بيئات غير متطابقة عند تبادل الواجبات.",
+          "approach": "CLI يبني قالب uv init واختبارات وملف قفل جاهز.",
+          "stack": "Python، Typer، uv، pytest.",
+          "steps": [
+            "أنشئ قالب مشروع.",
+            "أضف اختبارًا بسيطًا.",
+            "نفذ uv lock.",
+            "أعد البناء على جهاز آخر."
+          ],
+          "metric": "نجاح 9 من 10 مختبرات من الصفر.",
+          "difficulty": "متوسط؛ تقدير 4 أيام.",
+          "risks": "بعض الحزم تتطلب اتصالًا أو عتادًا إضافيًا.",
+          "sources": [
+            {
+              "title": "README الرسمي لـ uv",
+              "url": "https://github.com/astral-sh/uv/blob/main/README.md"
+            },
+            {
+              "title": "دليل إدارة مشاريع uv",
+              "url": "https://docs.astral.sh/uv/guides/projects/"
+            }
+          ]
+        },
+        {
+          "title": "مقياس مساحة بيئات الذكاء الاصطناعي",
+          "problem": "الطلاب لا يعرفون حجم الحزم قبل تثبيتها.",
+          "approach": "لوحة تقيس حجم بيئات Python المختلفة ومقدار إعادة استخدام cache.",
+          "stack": "Python، uv، pathlib، HTML.",
+          "steps": [
+            "حدد ثلاث مجموعات حزم.",
+            "أنشئ بيئات معزولة.",
+            "قِس الحجم والوقت.",
+            "اعرض النتائج بمصدرها."
+          ],
+          "metric": "تقرير قابل لإعادة القياس لثلاث مجموعات.",
+          "difficulty": "سهل؛ تقدير 3 أيام.",
+          "risks": "النتائج تختلف حسب نظام الملفات وcache.",
+          "sources": [
+            {
+              "title": "README الرسمي لـ uv",
+              "url": "https://github.com/astral-sh/uv/blob/main/README.md"
+            },
+            {
+              "title": "دليل إدارة مشاريع uv",
+              "url": "https://docs.astral.sh/uv/guides/projects/"
+            }
+          ]
+        },
+        {
+          "title": "فاحص اعتماديات السكربتات المنفردة",
+          "problem": "السكربت يعمل لدى مؤلفه ولا يعمل لدى الآخرين.",
+          "approach": "أداة تتحقق من metadata المضمنة وتجرب uv run داخل بيئة اختبار.",
+          "stack": "Python، AST، uv، pytest.",
+          "steps": [
+            "اجمع عشرة سكربتات مرخصة.",
+            "استخرج التبعيات المعلنة.",
+            "نفذها في عزل مناسب.",
+            "أصدر تقرير النواقص."
+          ],
+          "metric": "كشف جميع التبعيات المحذوفة عمدًا في مجموعة الاختبار.",
+          "difficulty": "متوسط؛ تقدير أسبوع.",
+          "risks": "لا تشغل سكربتات غير موثوقة على جهازك مباشرة.",
+          "sources": [
+            {
+              "title": "README الرسمي لـ uv",
+              "url": "https://github.com/astral-sh/uv/blob/main/README.md"
+            },
+            {
+              "title": "دليل إدارة مشاريع uv",
+              "url": "https://docs.astral.sh/uv/guides/projects/"
+            }
+          ]
+        },
+        {
+          "title": "حقيبة مختبرات AI تعمل دون GPU",
+          "problem": "بعض طلاب الذكاء الاصطناعي لا يملكون بطاقة رسومية.",
+          "approach": "مستودع مختبرات CPU صغيرة بتبعيات مثبتة بواسطة uv.",
+          "stack": "uv، NumPy، scikit-learn، Jupyter.",
+          "steps": [
+            "حدد ثلاث مهام صغيرة.",
+            "ثبت حزم CPU.",
+            "أضف بيانات مرخصة.",
+            "اختبر الذاكرة والزمن."
+          ],
+          "metric": "نجاح ثلاثة مختبرات على جهاز 8GB RAM.",
+          "difficulty": "متوسط؛ تقدير أسبوع.",
+          "risks": "حجم الذاكرة الفعلي يتغير حسب الإصدار والبيانات.",
+          "sources": [
+            {
+              "title": "README الرسمي لـ uv",
+              "url": "https://github.com/astral-sh/uv/blob/main/README.md"
+            },
+            {
+              "title": "دليل إدارة مشاريع uv",
+              "url": "https://docs.astral.sh/uv/guides/projects/"
+            }
+          ]
+        }
+      ],
+      "religious": [],
+      "url": "https://github.com/astral-sh/uv"
+    },
+    "e8cd7111f3678ea8f9": {
+      "titleAr": "Paperless-ngx — أرشيف وثائق قابل للبحث مع OCR",
+      "summaryAr": "يحول المستندات الممسوحة إلى أرشيف ويب يدعم OCR والوسوم والحقول وسير العمل والصلاحيات والبحث.",
+      "whyItMatters": "التحليل: يقلل تشتت الملفات، لكن النسخ الاحتياطي والخصوصية أهم من سهولة رفع الوثائق.",
+      "audience": "الأفراد والفرق الإدارية والمؤسسات الصغيرة.",
+      "overview": "يتكون من مستهلك يراقب مجلد الإدخال وخادم ويب لإدارة الملفات، ويستخدم OCRmyPDF وTesseract. توضح الوثائق Docker Compose ووسيط Redis/Valkey وقاعدة بيانات مثل PostgreSQL، مع SQLite أو MariaDB في إعدادات أخرى. يدعم API وmatching وworkflows.",
+      "requirements": "خادم موثوق ومساحة تخزين ونسخ احتياطية وDocker Compose للمسار الموصى به. OCR العربي يحتاج حزمة لغة واختبارًا. الترخيص GPL-3.0، والاستضافة الذاتية لا تتطلب خدمة سحابية لكن العتاد والتخزين مكلفان. README يحذر من التخزين دون تشفير مدمج وعدم استخدام مضيف غير موثوق.",
+      "quickStart": "اتبع docs/setup.md واختر Docker Compose، وافحص سكربت التثبيت قبل استخدامه؛ أنشئ مستخدمًا عاديًا وجرّب عشر وثائق غير حساسة. لم أُشغّل الخدمة.",
+      "limitations": "راجعت README والإعداد والاستخدام والإدارة والترخيص دون تجربة تشغيل. لا ترفع ملفات شخصية إلى نسخة العرض العامة؛ التحسينات المقترحة لا تعيد اختراع OCR أو النسخ الاحتياطي أو workflows الموجودة.",
+      "nextSteps": [
+        "جرّب وثائق وهمية.",
+        "قِس دقة OCR والاسترجاع.",
+        "اختبر استعادة النسخ الاحتياطية قبل استخدام بيانات مهمة."
+      ],
+      "reviewedAt": "2026-10-24T08:48:04.195Z",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "README الرسمي لـ Paperless-ngx",
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/main/README.md"
+        },
+        {
+          "title": "دليل تثبيت Paperless-ngx",
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/main/docs/setup.md"
+        },
+        {
+          "title": "دليل الاستخدام وOCR والصلاحيات",
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/main/docs/usage.md"
+        },
+        {
+          "title": "توثيق النسخ الاحتياطي والاستعادة",
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/main/docs/administration.md"
+        },
+        {
+          "title": "ترخيص Paperless-ngx GPL-3.0",
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/main/LICENSE"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "تقييم دقة OCR العربي في الأرشيف",
+          "problem": "الخطوط العربية والماسحات قد تقلل جودة البحث.",
+          "approach": "أداة تقييم خارجية لإعدادات OCR الموجودة بالفعل، على صفحات مرخصة.",
+          "stack": "Python، Tesseract Arabic، Paperless API.",
+          "steps": [
+            "جهز 30 صفحة بنص مرجعي.",
+            "اختبر إعدادات OCR.",
+            "احسب CER وWER.",
+            "انشر تقرير المقارنة."
+          ],
+          "metric": "تحسين CER بنسبة 15% على العينة.",
+          "difficulty": "متوسط؛ تقدير أسبوع.",
+          "risks": "OCR موجود أصلًا؛ التحسين تقييم متخصص لا إعادة بناء.",
+          "sources": [
+            {
+              "title": "README الرسمي لـ Paperless-ngx",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/blob/main/README.md"
+            },
+            {
+              "title": "دليل الاستخدام وOCR والصلاحيات",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/blob/main/docs/usage.md"
+            }
+          ]
+        },
+        {
+          "title": "تدقيق استعادة النسخ الاحتياطية",
+          "problem": "وجود ملف نسخة احتياطية لا يثبت إمكانية الاستعادة.",
+          "approach": "اختبار آلي يستخدم document exporter الرسمي ثم يقارن الملفات في بيئة منفصلة.",
+          "stack": "Docker، Python، SHA-256.",
+          "steps": [
+            "صدر 100 مستند اختبار.",
+            "أنشئ بيئة استعادة.",
+            "استورد الملفات.",
+            "قارن البصمات والعدد."
+          ],
+          "metric": "استعادة 100% من ملفات الاختبار.",
+          "difficulty": "متوسط؛ تقدير أسبوع.",
+          "risks": "قد تختلف صيغ التصدير بين الإصدارات.",
+          "sources": [
+            {
+              "title": "توثيق النسخ الاحتياطي والاستعادة",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/blob/main/docs/administration.md"
+            },
+            {
+              "title": "دليل تثبيت Paperless-ngx",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/blob/main/docs/setup.md"
+            }
+          ]
+        },
+        {
+          "title": "تقرير صلاحيات الوصول إلى الوثائق",
+          "problem": "المسؤول قد يمنح صلاحيات أوسع من اللازم.",
+          "approach": "لوحة تدقيق قراءة فقط عبر API تقارن الأدوار بسياسة المؤسسة.",
+          "stack": "Python، Paperless API، CSV.",
+          "steps": [
+            "أنشئ مستخدمين تجريبيين.",
+            "حدد سياسة صلاحيات.",
+            "استخرج الأذونات.",
+            "اعرض المخالفات دون تعديل."
+          ],
+          "metric": "كشف جميع المخالفات المصطنعة في 12 سيناريو.",
+          "difficulty": "متوسط؛ تقدير أسبوع.",
+          "risks": "الوثائق الحساسة لا تُرسل إلى خدمة خارجية.",
+          "sources": [
+            {
+              "title": "README الرسمي لـ Paperless-ngx",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/blob/main/README.md"
+            },
+            {
+              "title": "دليل الاستخدام وOCR والصلاحيات",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/blob/main/docs/usage.md"
+            }
+          ]
+        },
+        {
+          "title": "كشف تعارض التصنيفات الآلية",
+          "problem": "قد تتعارض الوسوم والحقول رغم وجود نظام مطابقة تلقائي.",
+          "approach": "طبقة مراجعة خارجية تسجل التعارضات وتعرضها للإنسان.",
+          "stack": "Python، Paperless API، قواعد تحقق.",
+          "steps": [
+            "حدد ثلاث قواعد تعارض.",
+            "أنشئ وثائق اختبار.",
+            "افحص نتائج التصنيف.",
+            "قِس الإنذارات الخاطئة."
+          ],
+          "metric": "استدعاء 90% من التعارضات المصطنعة.",
+          "difficulty": "متوسط؛ تقدير 5 أيام.",
+          "risks": "راجع workflows الموجودة أولًا؛ لا تفترض غياب هذه الوظائف.",
+          "sources": [
+            {
+              "title": "README الرسمي لـ Paperless-ngx",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/blob/main/README.md"
+            },
+            {
+              "title": "دليل الاستخدام وOCR والصلاحيات",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/blob/main/docs/usage.md"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مساعد متابعة ضمانات الأجهزة من الفواتير",
+          "problem": "الفواتير محفوظة لكن مواعيد انتهاء الضمان منسية.",
+          "approach": "تطبيق مستقل يقرأ تواريخ معتمدة ويصدر تذكيرات.",
+          "stack": "Python، Paperless API، iCal.",
+          "steps": [
+            "استورد فواتير اختبار.",
+            "راجع تواريخ الضمان يدويًا.",
+            "أنشئ تذكيرات.",
+            "اختبر مواعيد مختلفة."
+          ],
+          "metric": "صحة 90% من تواريخ عشرين فاتورة.",
+          "difficulty": "متوسط؛ تقدير أسبوع.",
+          "risks": "قد تكون التواريخ ملتبسة؛ لا ترسل فواتير شخصية خارجيًا.",
+          "sources": [
+            {
+              "title": "README الرسمي لـ Paperless-ngx",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/blob/main/README.md"
+            },
+            {
+              "title": "دليل الاستخدام وOCR والصلاحيات",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/blob/main/docs/usage.md"
+            }
+          ]
+        },
+        {
+          "title": "بوابة رفع مستندات دون كشف الأرشيف",
+          "problem": "الرافع لا ينبغي أن يرى مستندات غيره.",
+          "approach": "واجهة استقبال محدودة تعزل الملفات قبل إضافتها لمجلد الاستهلاك.",
+          "stack": "FastAPI، Paperless، عزل ملفات.",
+          "steps": [
+            "أنشئ واجهة تجريبية.",
+            "قيّد الحجم والأنواع.",
+            "أضف موافقة بشرية.",
+            "اختبر منع الاطلاع."
+          ],
+          "metric": "رفض 100% من محاولات الاطلاع غير المصرح بها في الاختبار.",
+          "difficulty": "صعب؛ تقدير أسبوعين.",
+          "risks": "يلزم فحص أمني مستقل قبل النشر العام.",
+          "sources": [
+            {
+              "title": "دليل تثبيت Paperless-ngx",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/blob/main/docs/setup.md"
+            },
+            {
+              "title": "دليل الاستخدام وOCR والصلاحيات",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/blob/main/docs/usage.md"
+            }
+          ]
+        },
+        {
+          "title": "سجل وثائق مشروع التخرج",
+          "problem": "الفرق الطلابية تفقد النسخ المعتمدة من المتطلبات.",
+          "approach": "واجهة تربط وثائق Paperless بمراحل المشروع وموافقات المشرف.",
+          "stack": "Python، Paperless API، Streamlit.",
+          "steps": [
+            "حدد حالات الوثيقة.",
+            "أدخل عشر نسخ اختبار.",
+            "سجل الموافقات.",
+            "اختبر الاسترجاع."
+          ],
+          "metric": "استرجاع النسخة المعتمدة في 10 من 10 حالات.",
+          "difficulty": "متوسط؛ تقدير أسبوع.",
+          "risks": "لا يستبدل Git لإدارة شيفرة المشروع.",
+          "sources": [
+            {
+              "title": "README الرسمي لـ Paperless-ngx",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/blob/main/README.md"
+            },
+            {
+              "title": "دليل الاستخدام وOCR والصلاحيات",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/blob/main/docs/usage.md"
+            }
+          ]
+        },
+        {
+          "title": "مراقب انتهاء العقود والتراخيص",
+          "problem": "قد تُنسى مواعيد تجديد وثائق المؤسسة.",
+          "approach": "خدمة قراءة دورية لتواريخ موثقة وتنبيه المسؤول.",
+          "stack": "Python، Paperless API، SQLite.",
+          "steps": [
+            "حدد الحقول المطلوبة.",
+            "أدخل عشر وثائق اختبار.",
+            "شغّل مهمة تنبيه.",
+            "تحقق من منع التكرار."
+          ],
+          "metric": "تذكير صحيح لجميع مواعيد الاختبار.",
+          "difficulty": "متوسط؛ تقدير 5 أيام.",
+          "risks": "لا يغني عن مراجعة المسؤول القانونية.",
+          "sources": [
+            {
+              "title": "README الرسمي لـ Paperless-ngx",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/blob/main/README.md"
+            },
+            {
+              "title": "دليل الاستخدام وOCR والصلاحيات",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/blob/main/docs/usage.md"
+            }
+          ]
+        }
+      ],
+      "religious": [
+        {
+          "title": "أرشيف وثائق الأوقاف الإداري",
+          "problem": "مسؤولو الوقف يحتاجون استرجاع العقود والفواتير دون كشف بيانات حساسة.",
+          "approach": "تصنيف وصلاحيات لوثائق تجريبية دون تفسير شرعي.",
+          "stack": "Paperless، OCR عربي، صلاحيات.",
+          "steps": [
+            "حدد الفئات مع المسؤول.",
+            "أنشئ وسومًا وحقولًا.",
+            "استورد وثائق تجريبية.",
+            "اختبر الصلاحيات."
+          ],
+          "metric": "استرجاع 18 من 20 وثيقة في 30 ثانية.",
+          "difficulty": "متوسط؛ تقدير أسبوع.",
+          "risks": "يتطلب مراجعة الجهة ومختص شرعي عند تفسير الأحكام؛ حقوق المستندات محفوظة.",
+          "sources": [
+            {
+              "title": "دليل الاستخدام وOCR والصلاحيات",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/blob/main/docs/usage.md"
+            },
+            {
+              "title": "توثيق النسخ الاحتياطي والاستعادة",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/blob/main/docs/administration.md"
+            }
+          ]
+        },
+        {
+          "title": "سجل صيانة المسجد المرتبط بالفواتير",
+          "problem": "فرق الصيانة تحتاج ربط الإصلاحات بإثباتاتها.",
+          "approach": "تطبيق إداري يربط مهام الصيانة بمعرفات وثائق مؤرشفة.",
+          "stack": "Paperless API، Python، SQLite.",
+          "steps": [
+            "حدد أنواع المهام.",
+            "استورد فواتير اختبار.",
+            "اربط المهام بالوثائق.",
+            "اعتمد النتائج بشريًا."
+          ],
+          "metric": "ربط 95% من الفواتير بمهمة صحيحة.",
+          "difficulty": "متوسط؛ تقدير أسبوع.",
+          "risks": "إدارة تشغيلية فقط، ولا يستنتج أحكامًا شرعية.",
+          "sources": [
+            {
+              "title": "README الرسمي لـ Paperless-ngx",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/blob/main/README.md"
+            },
+            {
+              "title": "دليل الاستخدام وOCR والصلاحيات",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/blob/main/docs/usage.md"
+            }
+          ]
+        },
+        {
+          "title": "مراجعة مستندات حملة خيرية مع إخفاء البيانات",
+          "problem": "تدقيق المصروفات يحتاج أدلة دون نشر بيانات المتبرعين.",
+          "approach": "واجهة تقارير تُخفي الحقول الشخصية في نسخ العرض.",
+          "stack": "Paperless، Python، قواعد إخفاء.",
+          "steps": [
+            "أنشئ بيانات اختبار وهمية.",
+            "حدد الحقول التي تُخفى.",
+            "اختبر صلاحيات المدقق.",
+            "أصدر تقرير نقص المستندات."
+          ],
+          "metric": "كشف جميع النواقص في 15 حالة دون إظهار بيانات شخصية.",
+          "difficulty": "صعب؛ تقدير أسبوعين.",
+          "risks": "مراجعة مالية وقانونية وشرعية عند تفسير مصارف الأموال؛ لا توليد فتاوى.",
+          "sources": [
+            {
+              "title": "دليل الاستخدام وOCR والصلاحيات",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/blob/main/docs/usage.md"
+            },
+            {
+              "title": "README الرسمي لـ Paperless-ngx",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/blob/main/README.md"
+            }
+          ]
+        }
+      ],
+      "url": "https://github.com/paperless-ngx/paperless-ngx"
+    }
+  }
+}
