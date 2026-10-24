@@ -28,6 +28,24 @@ def run():
             assert page.locator('#heroFeature [data-open]').count()==1
             assert not page.evaluate('document.documentElement.scrollWidth>innerWidth')
             assert page.locator('#sourceHealth').count()==1
+            for width in [1440,390]:
+                page.set_viewport_size({'width':width,'height':1000})
+                page.locator('#designSelect').select_option('classic')
+                assert page.locator('html').get_attribute('data-design')=='classic'
+                page.reload(wait_until='networkidle')
+                assert page.locator('#designSelect').input_value()=='classic'
+                assert page.locator('#sidebar .primary-nav').count()==1
+                assert not page.evaluate('document.documentElement.scrollWidth>innerWidth')
+                if width==390:page.locator('#mobileMenu').click()
+                page.locator('[data-nav="library"]').click()
+                assert page.locator('.article-card').count()>0
+                page.locator('#feedGrid .title-open').first.click()
+                page.locator('#closeDetail').click()
+                page.locator('#designSelect').select_option('modern')
+                assert page.locator('.masthead .primary-nav').count()==1
+                page.locator('[data-nav="all"]').click()
+                assert not page.evaluate('document.documentElement.scrollWidth>innerWidth')
+            page.set_viewport_size({'width':1440,'height':1000})
             page.locator('[data-nav="مفتوح المصدر"]').click()
             page.locator('#feedGrid .card-open').first.click()
             page.locator('[data-proposal-type="improvements"]').first.click()

@@ -14,7 +14,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles.css" />
-  <link rel="stylesheet" href="./editorial.css" />
+  <link rel="stylesheet" href="./editorial.css" id="editorialTheme" />
+  <link rel="stylesheet" href="./classic.css" id="classicTheme" media="not all" />
+  <script>
+    (()=>{let design='modern';try{if(localStorage.getItem('nabdh-design')==='classic')design='classic'}catch{}document.documentElement.dataset.design=design;document.getElementById('editorialTheme').media=design==='modern'?'all':'not all';document.getElementById('classicTheme').media=design==='classic'?'all':'not all';document.documentElement.style.colorScheme=design==='classic'?'dark':'light'})();
+  </script>
   <script defer src="./ideas.js"></script>
   <script defer src="./app.js"></script>
 </head>
@@ -55,6 +59,7 @@
         <div class="mobile-brand"><button class="icon-button" id="mobileMenu" aria-label="فتح القائمة" aria-expanded="false" aria-controls="sidebar" type="button">☰</button><b>نَبض<span>.</span></b></div>
         <div class="breadcrumb"><span>المرصد</span><span class="chevron">/</span><b id="currentPage">نظرة عامة</b></div>
         <div class="top-controls">
+          <label class="design-picker"><span>التصميم</span><select id="designSelect" aria-label="اختيار تصميم الموقع"><option value="modern">الجديد · فاتح</option><option value="classic">السابق · داكن</option></select></label>
           <span class="live-pill"><i></i> فحص البيانات</span>
           <span class="clock" id="riyadhClock" aria-label="التوقيت المحلي السعودية"></span>
           <button class="icon-button" id="refreshButton" aria-label="إعادة تحميل البيانات" title="إعادة تحميل البيانات" type="button">↻</button>

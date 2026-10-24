@@ -296,7 +296,20 @@
       if(notify)toast(state.demo?'تم تحميل البيانات الأولية':'تم فحص آخر البيانات المنشورة');
     }catch(e){console.error('Feed load failed:',e);if(!state.items.length)$('feedGrid').innerHTML='<div class="empty"><b>تعذر تحميل المحتوى</b><p>راجع اتصالك أو أعد المحاولة.</p></div>';$('freshnessMessage').textContent='تعذر فحص التحديث؛ نحتفظ بآخر محتوى محمّل إن توفر.';toast('تعذّر تحديث الأخبار حاليًا')}finally{fetching=false;$('refreshButton').disabled=false;lastFetch=Date.now()}
   }
+  function applyDesign(design){
+    const classic=design==='classic';document.documentElement.dataset.design=classic?'classic':'modern';
+    $('editorialTheme').media=classic?'not all':'all';$('classicTheme').media=classic?'all':'not all';
+    document.documentElement.style.colorScheme=classic?'dark':'light';
+    document.querySelector('meta[name="theme-color"]').content=classic?'#090f18':'#f4f2ec';
+    const nav=document.querySelector('.primary-nav');
+    if(classic)$('sidebar').insertBefore(nav,$('sidebar').querySelector('.menu-label'));
+    else document.querySelector('.masthead').insertBefore(nav,document.querySelector('.masthead-edition'));
+    $('designSelect').value=classic?'classic':'modern';
+    try{localStorage.setItem('nabdh-design',classic?'classic':'modern')}catch{}
+  }
   function bind(){
+    applyDesign(document.documentElement.dataset.design);
+    $('designSelect').addEventListener('change',e=>applyDesign(e.target.value));
     $('brandHome').addEventListener('click',e=>{e.preventDefault();setView('all');scrollTo({top:0,behavior:'smooth'})});
     try{state.layout=localStorage.getItem('nabdh-layout')==='list'?'list':'grid'}catch{}
     document.querySelectorAll('[data-layout]').forEach(b=>b.addEventListener('click',()=>{state.layout=b.dataset.layout;try{localStorage.setItem('nabdh-layout',state.layout)}catch{}render()}));

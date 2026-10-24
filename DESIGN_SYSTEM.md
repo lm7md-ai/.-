@@ -12,3 +12,6 @@ This document supersedes the previous dark editorial direction. See docs/TRANSFO
 - Touch: important controls 42–44px. Skip link, aria-current and aria-pressed identify state. Detail background uses inert, dialog focus is trapped, Escape restores focus.
 - Motion: short border/menu feedback only, respects prefers-reduced-motion.
 - Implementation: styles.css supplies existing functional component foundations; editorial.css is the authoritative redesigned presentation layer. CSS embeds in the standalone preview. No framework migration.
+
+## User-selectable presentation
+The header Design selector offers modern (default light journal) and classic (previous dark sidebar) presentations. `nabdh-design` persists locally. Both use the same DOM, content, saved IDs, filters and library; switching does not reload or reset these. Early head initialization selects stylesheet media before rendering. The primary navigation moves into the sidebar in classic mode and returns to the masthead in modern mode. Shared functions are maintained once. The standalone preview embeds both styles and supports the same choice.
