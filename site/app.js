@@ -16,7 +16,7 @@
   const visualClass = item => item.kind==='project'?'visual-agent':item.kind==='idea'?'visual-idea':'visual-news';
   const glyph = item => item.kind==='project'?'⌘':item.kind==='idea'?'✦':item.category==='أبحاث'?'⌁':'✳';
   const trimmed=(text,size=160)=>String(text||'').length>size?String(text).slice(0,size).trim()+'…':String(text||'');
-  const getMetric = item=>item.kind==='project'?`★ ${compact(item.stars)} نجمة`:item.kind==='idea'?'10 تحسينات + 10 أفكار':item.points?`▲ ${compact(item.points)} · ${compact(item.comments)} تعليق`:'مؤشر تقديري للشيوع';
+  const getMetric = item=>item.kind==='project'?`★ ${compact(item.stars)} نجمة`:item.kind==='idea'?'دراسة تنفيذ مخصصة':item.points?`▲ ${compact(item.points)} · ${compact(item.comments)} تعليق`:'مؤشر تقديري للشيوع';
 
   function loadSaved(){try{state.saved=new Set(JSON.parse(localStorage.getItem('nabdh-saved')||'[]'))}catch{state.saved=new Set()}}
   function persistSaved(){try{localStorage.setItem('nabdh-saved',JSON.stringify([...state.saved].slice(0,700)))}catch{}}
@@ -67,7 +67,20 @@
     }
     return ideas;
   }
-  function allItems(){const projects=state.items.filter(x=>x.kind==='project');return [...state.items,...makeIdeas(projects),...makeReligionIdeas(projects)]}
+  function allItems(){
+    const projects=state.items.filter(x=>x.kind==='project');
+    const stored=[];
+    for(const id of state.saved){
+      const match=/^proposal:([^:]+):(improvements|spinoffs|religious):(\d+)$/.exec(id);
+      if(!match)continue;
+      const parent=projectById(match[1]);if(!parent)continue;
+      const index=Number(match[3]),source=availableIdeas(parent,match[2])[index];if(!source)continue;
+      stored.push({id,kind:'idea',title:source.title,description:source.problem,impact:source.approach,url:parent.url,
+        parentId:parent.id,parentName:parent.title,proposalType:match[2],proposalIndex:index,
+        source:'مقترحات محفوظة',publishedAt:parent.publishedAt,score:parent.score,ideaDomain:parent.ideaDomain,category:'أفكار'});
+    }
+    return [...state.items,...makeIdeas(projects),...makeReligionIdeas(projects),...stored];
+  }
   function favoriteExists(id){return state.saved.has(id)}
   function getCover(item, full=false){
     // A GitHub owner avatar is labelled as such; it is not a project screenshot.
@@ -86,7 +99,7 @@
         <div class="card-meta"><i class="source-dot ${item.kind}"></i><span>${esc(trimmed(item.source,34))}</span><span class="meta-sep">•</span><span>${esc(dateTime(item.publishedAt))}</span></div>
         <h3>${esc(trimmed(item.title,135))}</h3>
         <p>${esc(trimmed(item.description,200))}</p>
-        <div class="card-bottom"><div class="card-metric" title="${esc(getMetric(item))}">${esc(getMetric(item))}</div><div class="card-actions"><button type="button" class="bookmark ${favoriteExists(item.id)?'saved':''}" data-save="${esc(item.id)}" aria-label="${favoriteExists(item.id)?'إزالة من المحفوظات':'حفظ'}" aria-pressed="${favoriteExists(item.id)}">${favoriteExists(item.id)?'♥':'♡'}</button><button class="card-open" type="button" data-open="${esc(item.id)}">${project||item.kind==='idea'?'استكشف المشروع':'اقرأ التفاصيل'} ←</button></div></div>
+        <div class="card-bottom"><div class="card-metric" title="${esc(getMetric(item))}">${esc(getMetric(item))}</div><div class="card-actions"><button type="button" class="bookmark ${favoriteExists(item.id)?'saved':''}" data-save="${esc(item.id)}" aria-label="${favoriteExists(item.id)?'إزالة من المحفوظات':'حفظ'}" aria-pressed="${favoriteExists(item.id)}">${favoriteExists(item.id)?'♥':'♡'}</button><button class="card-open" type="button" data-open="${esc(item.id)}">${project?'استكشف المشروع':item.kind==='idea'?'تفاصيل الفكرة':'اقرأ التفاصيل'} ←</button></div></div>
       </div>
     </article>`;
   }
