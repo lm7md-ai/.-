@@ -14,6 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./editorial.css" />
   <script defer src="./ideas.js"></script>
   <script defer src="./app.js"></script>
 </head>
@@ -44,7 +45,7 @@
       </nav>
       <div class="sidebar-bottom">
         <div class="side-glow"><span>✦</span><b>من الخبر إلى المشروع.</b><p>لا تتابع التقنية فقط، ابتكر شيئًا جديدًا بها.</p><button id="exploreProjects" type="button">استكشف المشاريع <span>←</span></button></div>
-        <div class="sidebar-meta">صُنع بشغف للتقنية <span>•</span> إصدار 3.0</div>
+        <div class="sidebar-meta">صُنع بشغف للتقنية <span>•</span> إصدار 3.1</div>
       </div>
     </aside>
 
@@ -63,12 +64,12 @@
         <section class="hero" aria-labelledby="heroTitle">
           <div class="hero-noise"></div><div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
           <div class="hero-copy">
-            <span class="hero-eyebrow"><span class="beam">✴</span> نَبض / معرفة تتحول إلى عمل</span>
-            <h1 id="heroTitle">افهم التقنية.<br><span>وابنِ بها شيئًا.</span></h1>
+            <span class="hero-eyebrow"><span class="beam">✴</span> مرصدك العربي للتقنية والابتكار</span>
+            <h1 id="heroTitle">المعرفة أولًا.<br><span>ثم الفكرة التالية.</span></h1>
             <p>أخبار بمصادرها، ومشاريع بشرح عربي، وأفكار بخطوات تنفيذ. اختر ما يستحق وقتك وابدأ من حيث انتهى الآخرون.</p>
             <div class="hero-actions"><button class="primary-btn" id="latestButton" type="button">اكتشف أحدث الأخبار <span>↙</span></button><button class="outline-btn" id="ideasButton" type="button">استكشف الأفكار <span>✦</span></button></div>
           </div>
-          <div class="hero-art" aria-hidden="true"><div class="orb-glow"></div><div class="orbit-ring ring-a"></div><div class="orbit-ring ring-b"></div><div class="orb-center"><div class="orb-heart">⌁</div></div><span class="orb-dot dot-a"></span><span class="orb-dot dot-b"></span><span class="orb-dot dot-c"></span><span class="orb-cross">+</span></div>
+          <div class="hero-feature" id="heroFeature" aria-label="اختيار من الأخبار"></div>
           <div class="hero-bottom"><span><i class="circle-green"></i> المصدر المفتوح، دون ضجيج</span><span>تحديث كل 3 ساعات <b>↗</b></span></div>
         </section>
 
@@ -84,11 +85,11 @@
           <details><summary>المصادر وحالة الجمع</summary><div id="sourceHealth">لم تتوفر حالة المصادر بعد.</div></details>
         </section>
         <section class="daily-brief" id="dailyBrief" aria-labelledby="briefTitle">
-          <div class="section-heading"><div><span class="kicker">ابدأ من هنا</span><h2 id="briefTitle">خمس إشارات تستحق وقتك</h2><p>اختيارات من مجالات مختلفة؛ افتح الخبر لفهمه والوصول إلى مصدره.</p></div></div>
+          <div class="section-heading"><div><span class="kicker">ابدأ من هنا</span><h2 id="briefTitle">ما يستحق انتباهك</h2><p>اختيارات من مجالات مختلفة؛ افتح الخبر لفهمه والوصول إلى مصدره.</p></div></div>
           <div id="briefItems" class="brief-items"></div>
         </section>
         <section class="digest" aria-labelledby="digestTitle">
-          <div class="section-heading compact"><div><span class="kicker">موجزك على مدار اليوم</span><h2 id="digestTitle">أربع محطات. صورة أوضح.</h2></div><span class="hint">بتوقيت السعودية (UTC+3)</span></div>
+          <div class="section-heading compact"><div><span class="kicker">موجزك على مدار اليوم</span><h2 id="digestTitle">اختر وقت نشرتك</h2></div><span class="hint">بتوقيت السعودية (UTC+3)</span></div>
           <div class="digest-slots" id="digestSlots" role="group" aria-label="تصفية النشرات حسب الفترة">
             <button class="digest-slot" data-slot="0" type="button"><span class="slot-icon">☾</span><span><b>منتصف الليل</b><small>12 ص — 6 ص</small></span></button>
             <button class="digest-slot" data-slot="1" type="button"><span class="slot-icon">☀</span><span><b>الصباح</b><small>6 ص — 12 م</small></span></button>

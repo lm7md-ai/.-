@@ -35,12 +35,16 @@
     document.querySelector('.live-pill').textContent=state.demo?'بيانات أولية':age>8||status?.state==='error'?'المحتوى يحتاج تحديثًا':status?.state==='partial'?'بعض المصادر متعطلة':'آخر البيانات المنشورة';
   }
   function renderBrief(){
+    document.querySelector('.hero').hidden=state.view!=='all';
+    document.querySelector('.digest').hidden=state.view!=='all';
     $('dailyBrief').hidden=state.view!=='all'||!!state.q;if($('dailyBrief').hidden)return;
     const news=state.items.filter(x=>x.kind==='news'&&Date.now()-Date.parse(x.publishedAt)<7*86400000).sort((a,b)=>(b.score||0)-(a.score||0));
     const selected=[],categories=new Set();
     for(const item of news){if(!categories.has(item.category)){selected.push(item);categories.add(item.category)}if(selected.length===5)break}
     for(const item of news){if(selected.length===5)break;if(!selected.includes(item))selected.push(item)}
-    $('briefItems').innerHTML=selected.length?selected.map((x,i)=>`<button type="button" class="brief-item" data-open="${esc(x.id)}"><span class="brief-number">0${i+1}</span><span><small>${esc(x.category)} · ${esc(x.source)}</small><b>${esc(x.title)}</b><p>${esc(trimmed(x.editorial?.whyItMatters||x.description,160))}</p></span><span aria-hidden="true">↗</span></button>`).join(''):'<p>لا توجد أخبار حديثة كافية؛ يمكنك تصفح المحتوى السابق أدناه.</p>';
+    const lead=selected.find(x=>editorialFor(x))||selected[0];
+    $('heroFeature').innerHTML=lead?`<div class="feature-eyebrow"><span>اختيار من المرصد</span><span>${esc(dateTime(lead.publishedAt))}</span></div><button type="button" class="feature-story" data-open="${esc(lead.id)}"><span class="feature-category">${esc(lead.category)}</span><h2 dir="auto">${esc(lead.title)}</h2><p>${esc(trimmed(lead.editorial?.whyItMatters||lead.description,190))}</p><span class="feature-footer"><span>${esc(lead.source)}</span><b>اقرأ التفاصيل ↗</b></span></button>`:'<p>تظهر هنا أحدث اختيارات المرصد عند توفر الأخبار.</p>';
+    $('briefItems').innerHTML=selected.length?selected.map((x,i)=>`<button type="button" class="brief-item" data-open="${esc(x.id)}"><span class="brief-number">${String(i+1).padStart(2,'0')}</span><span><small>${esc(x.category)} · ${esc(x.source)}</small><b>${esc(x.title)}</b><p>${esc(trimmed(x.editorial?.whyItMatters||x.description,160))}</p></span><span aria-hidden="true">↗</span></button>`).join(''):'<p>لا توجد أخبار حديثة كافية؛ يمكنك تصفح المحتوى السابق أدناه.</p>';
   }
   function renderEditorial(item){
     const e=editorialFor(item);if(!e)return '<p class="detail-note">هذا وصف من المصدر؛ لم يُضف شرح عربي خاص بهذا العنصر بعد.</p>';

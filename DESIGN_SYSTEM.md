@@ -28,3 +28,8 @@ Use only brief hover/border feedback and menu transitions. Respect prefers-reduc
 
 ## Remaining work
 Historical project queue is not a published library; it requires durable data and routing integration. No new claims of content publication are made in this UI change. Full screen-reader and WCAG conformance audits remain separate from the automated browser checks.
+
+## Professional editorial refinement
+The home hero now includes a real news selection with source, date and article action. The five-item brief uses a lead story and supporting rows on desktop, becoming a single reading column below 800px. Typography, borders, secondary text, metadata, card spacing and dialog surfaces share the same muted green/ink identity in site/editorial.css. This optional visual layer loads after component styles and is embedded by the offline preview builder. No fabricated featured content or image assets are introduced. Scoped category pages hide the home hero and time digest to prioritize results.
+
+Verified at 320, 390, 768 and 1440 pixels; desktop and mobile screenshots reviewed. Existing local saved entries and editorial data are preserved.

@@ -25,6 +25,7 @@ def run():
             page.on('pageerror',lambda error:errors.append(str(error)))
             page.goto(origin,wait_until='networkidle')
             page.wait_for_selector('.article-card')
+            assert page.locator('#heroFeature [data-open]').count()==1
             assert not page.evaluate('document.documentElement.scrollWidth>innerWidth')
             assert page.locator('#sourceHealth').count()==1
             page.locator('[data-nav="مفتوح المصدر"]').click()
