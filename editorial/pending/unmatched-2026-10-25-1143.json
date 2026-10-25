@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-25T11:43:56+03:00",
+  "feedGeneratedAt": "2026-10-25T05:45:41+00:00",
+  "incomingFilesChecked": 11,
+  "priorIncomingEntries": 96,
+  "alreadyImportedMatching": 93,
+  "matchingNotImported": 0,
+  "unmatched": 3,
+  "urlMismatch": 0,
+  "unmatchedEntries": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+      "status": "feed_id_absent"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "status": "feed_id_absent"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "status": "feed_id_absent"
+    }
+  ],
+  "note": "لا تولد هوية جديدة من العنوان؛ غياب العنصر من التغذية لا يعني إثبات انتهاء الخبر. كل السجلات المطابقة مستوردة سابقًا. تمت مراجعة عدادات أفكار Graphify وOrca وprompts.chat وAI Agents for Beginners وuv وPaperless-ngx وAutoGPT وGemini CLI دون تغييرها.",
+  "executionLimits": "تعذر استنساخ المستودع ببيئة Python بسبب DNS؛ المحقق الرسمي والاستيراد والاختبارات المحلية لم تُنفذ. ستُستخدم فحوص بنيوية عبر موصل GitHub وCI قبل أي دمج."
+}
