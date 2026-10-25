@@ -7954,6 +7954,466 @@
       ],
       "url": "https://github.com/k2-fsa/sherpa-onnx",
       "reviewedAt": "2026-10-25T20:45:46.407Z"
+    },
+    "7fdb639a795018181a": {
+      "url": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
+      "titleAr": "Agent Lightning 1.0: تدريب وكلاء البرمجة بالتعزيز داخل بيئاتهم الحقيقية",
+      "summaryAr": "قدمت Microsoft Research إطار Agent Lightning v1.0 الذي يسمح بالتعلم المعزز باستخدام بيئة الوكيل نفسها دون إعادة بناء الأدوات داخل التدريب. تصف الشركة طبقة تحكم بحوالي 3500 سطر ودعم Kubernetes، وتذكر تحسن Pass@1 في SWE-bench Verified لنموذج Qwen3.5-9B من 41.8% إلى 56.4% بنحو 6000 عينة؛ هذه نتائج فريقها لا اختبار مستقل.",
+      "whyItMatters": "التحليل: فصل التدريب عن بيئة الوكيل قد يقلل الازدواجية، لكنه يتطلب حوسبة وتقييمًا مضبوطًا قبل اعتماده.",
+      "audience": "باحثو التعلم المعزز ومطورو وكلاء البرمجة.",
+      "nextSteps": [
+        "اقرأ مخطط النظام والمستودع.",
+        "حدد مجموعة تقييم مستقلة قبل أي تدريب.",
+        "قدّر موارد التدريب وتكلفته."
+      ],
+      "limitations": "لم أشغّل التدريب أو أعيد إنتاج النتائج؛ النسب تخص إعداد الباحثين. نُشر المقال 7 أكتوبر 2026.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Microsoft Research: Agent Lightning v1.0",
+          "url": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/"
+        }
+      ],
+      "reviewedAt": "2026-10-25T23:48:46.161Z"
+    },
+    "1281d0f6e775784758": {
+      "url": "https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/",
+      "titleAr": "Evergreen من GitHub: مراجعة صلاحيات المتعاونين وأرشفة المستودعات الراكدة",
+      "summaryAr": "شرح فريق GitHub تطبيق Evergreen الداخلي الذي يراجع وصول المتعاونين الخارجيين كل ربع سنة، ويفتح Issues للموافقة ثم يلغي الوصول غير المجدد بعد مهلة. كما ينبه إلى المستودعات الراكدة قبل أرشفتها. يستخدم GitHub App وActions وwebhooks وملفات JSON للتدقيق، ولا يحذف المستودعات.",
+      "whyItMatters": "التحليل: سجل القرارات داخل Git يسهل التدقيق، لكن أتمتة سحب الصلاحيات تحتاج مسؤولًا وفترة سماح.",
+      "audience": "مسؤولو GitHub وفرق تطوير المستودعات المشتركة.",
+      "nextSteps": [
+        "راجع المتعاونين الخارجيين حاليًا.",
+        "ضع سياسة مراجعة مع مهلة وتنبيه.",
+        "اختبر السياسة يدويًا قبل الأتمتة."
+      ],
+      "limitations": "هذه تجربة GitHub الداخلية ولم أختبر التطبيق. لا تنقل سياسة إلغاء الصلاحيات دون موافقة المالك. نُشر 15 أكتوبر 2026.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "GitHub Engineering: Staying Evergreen",
+          "url": "https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/"
+        }
+      ],
+      "reviewedAt": "2026-10-25T23:48:46.161Z"
+    },
+    "de9db6f384cbc78877": {
+      "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+      "titleAr": "Patch the Planet: تنسيق إصلاح ثغرات PHP المكتشفة بمساعدة الذكاء الاصطناعي",
+      "summaryAr": "أعلنت OpenAI في 21 أكتوبر 2026 عن تنسيق عمل مع مشرفي PHP وشركاء أمنيين لإصلاح ثغرات خطيرة. تنسب الشركة جانبًا من الاكتشاف إلى بحث بمساعدة النماذج، وتذكر اكتشافًا مستقلاً من Wiz. قاد مشرفو PHP الإصلاحات والإصدارات، وتدعو الشركة المشغلين لمراجعة إصداراتهم وتحديثاتها.",
+      "whyItMatters": "التحليل: قيمة اكتشاف الثغرات تتوقف على الإصلاح والتحديث والتنسيق المسؤول، لا على إعلان اكتشافها وحده.",
+      "audience": "مطورو PHP ومسؤولو الخوادم وأمن التطبيقات.",
+      "nextSteps": [
+        "احصر إصدارات PHP المستخدمة.",
+        "راجع نشرات PHP الرسمية وتحديثات الاستضافة.",
+        "اختبر التوافق قبل تحديث بيئة إنتاجية."
+      ],
+      "limitations": "المصدر بيان OpenAI ولم أختبر الثغرات أو أتحقق من تأثر خادم معين. لا تتضمن المادة تفاصيل استغلال.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "OpenAI: Patch the Planet",
+          "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities"
+        },
+        {
+          "title": "PHP official website",
+          "url": "https://www.php.net/"
+        }
+      ],
+      "reviewedAt": "2026-10-25T23:48:46.161Z"
+    },
+    "c2b4b68d7e0027f0e4": {
+      "url": "https://huggingface.co/blog/mps-pytorch-2-15",
+      "titleAr": "PyTorch 2.15: تحسينات MPS وFP8 على أجهزة Apple Silicon",
+      "summaryAr": "شرح فريق PyTorch في Hugging Face دعم عمليات FP8 وتحسين فك ترميز نماذج MoE والمصفوفات والذاكرة على MPS. يعرض الفريق تسارعًا بين 5 و6.5 مرات في مثال محدد على M3 Ultra، وانخفاض ذروة ذاكرة فك ترميز فيديو Wan2.2 من 270 إلى نحو 8 GiB في إعداده. يتطلب MPS macOS 15 أو أحدث وPython 3.11 أو أحدث.",
+      "whyItMatters": "التحليل: قد تصبح التجارب المحلية على Mac أسهل، لكن الأرقام مرتبطة بعتاد ونماذج محددة ولا تنطبق على Android أو Windows.",
+      "audience": "مستخدمو Mac ومطورو PyTorch وتعلم الآلة.",
+      "nextSteps": [
+        "تحقق من توافق نظامك وإصدارات Python.",
+        "قارن الذاكرة والزمن على نموذج صغير.",
+        "اختبر الترقية في بيئة منفصلة."
+      ],
+      "limitations": "الأرقام من الفريق المطور ولم أكرر القياسات. المقال بتاريخ 20 أكتوبر 2026.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Hugging Face: MPS in PyTorch 2.15",
+          "url": "https://huggingface.co/blog/mps-pytorch-2-15"
+        }
+      ],
+      "reviewedAt": "2026-10-25T23:48:46.161Z"
+    },
+    "0acf196572ceb07e1c": {
+      "url": "https://github.com/JetBrains/thinkrail",
+      "titleAr": "ThinkRail من JetBrains: بيئة تطوير للوكلاء بمساحات Git منفصلة",
+      "summaryAr": "يقدم README مشروع ThinkRail بوصفه بيئة حول وكيل pi، تضم محررًا وطرفية ومراجعة diff ومساحات git worktree منفصلة. يذكر جلسات متعددة ومواصفات SPEC.md ومهارات قابلة لإعادة الاستخدام وتكامل GitHub PR وMCP. تتوفر أشكال سطح مكتب وCLI ويظهر ترخيص Apache-2.0.",
+      "whyItMatters": "التحليل: فصل مساحات عمل الوكلاء قد يسهل مراجعة التغييرات ويقلل تعارض الملفات، لكنه لا يضمن صحة الشيفرة.",
+      "audience": "مستخدمو وكلاء البرمجة وفرق تطوير التطبيقات.",
+      "nextSteps": [
+        "اقرأ متطلبات النظام والتثبيت.",
+        "ابدأ بمستودع تجريبي وworktree منفصل.",
+        "راجع الفروق والاختبارات قبل الدمج."
+      ],
+      "limitations": "راجعت README والترخيص ولم أثبت ThinkRail. ظهوره في التغذية لا يعني إطلاقًا جديدًا اليوم.",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "JetBrains ThinkRail README",
+          "url": "https://github.com/JetBrains/thinkrail/blob/main/README.md"
+        },
+        {
+          "title": "JetBrains ThinkRail license",
+          "url": "https://github.com/JetBrains/thinkrail/blob/main/LICENSE"
+        }
+      ],
+      "reviewedAt": "2026-10-25T23:48:46.161Z"
+    },
+    "a6d8deb6fb1b9abee7": {
+      "url": "https://unicode.org/reports/tr39/",
+      "titleAr": "Unicode UTS #39: حماية المعرّفات من المحارف المتشابهة بصريًا",
+      "summaryAr": "يوثق معيار Unicode Security Mechanisms آليات اكتشاف المحارف المتشابهة وخلط أنظمة الكتابة والأرقام في المعرّفات. النسخة المعروضة 18.0.0 مؤرخة 27 أغسطس 2026، وهو معيار قائم ظهر في النقاشات التقنية وليس إصدارًا صدر اليوم. يوفر ملفات بيانات وقواعد يمكن الاستفادة منها عند فحص أسماء المستخدمين والنطاقات.",
+      "whyItMatters": "التحليل: يقلل الالتباس والانتحال البصري، لكن منع جميع الأسماء متعددة اللغات قد يضر بالمستخدمين؛ يجب اختبار قواعد العربية.",
+      "audience": "مطورو أنظمة الحسابات والتحقق من الروابط والهوية.",
+      "nextSteps": [
+        "اقرأ قسم confusables وmixed-script.",
+        "حدد سياسة تحذير أو رفض تناسب المنتج.",
+        "اختبرها بأسماء عربية وإنجليزية."
+      ],
+      "limitations": "المعيار لا يضمن منع جميع أشكال انتحال الهوية. لم أختبر تنفيذًا برمجيًا له.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Unicode Technical Standard #39",
+          "url": "https://unicode.org/reports/tr39/"
+        }
+      ],
+      "reviewedAt": "2026-10-25T23:48:46.161Z"
+    },
+    "d07066251c23560c45": {
+      "titleAr": "RTK — تقليل ضجيج مخرجات الأوامر في سياق وكلاء البرمجة",
+      "summaryAr": "أداة Rust تختصر مخرجات أوامر shell مثل git وpytest وrg قبل وصولها إلى سياق وكيل البرمجة. يوضح README أن نسب التوفير تخص خرج الأوامر لا التكلفة الكلية للنموذج، وأن تقدير الرموز تقريب bytes/4.",
+      "whyItMatters": "التحليل: تقليل الضجيج قد يساعد الوكلاء في المهام الطويلة، لكن الاختصار قد يخفي دليل خطأ مهمًا ويجب تقييمه.",
+      "audience": "مطورو Codex وGemini CLI وAntigravity والوكلاء المعتمدين على الطرفية.",
+      "overview": "يعترض RTK بعض استدعاءات Bash عبر hooks أو يستعمل مباشرة من CLI؛ يجمع الأسطر ويزيل التكرار ويختصرها بحسب نوع الأمر. توجد نسخة كاملة مع محرك ضغط ونسخة rtk-oss بمرشحات دون المحرك.",
+      "requirements": "ملف تنفيذي لنظام مدعوم وأداة تدعم hooks أو أوامر CLI. الترخيص مختلط: أجزاء Apache-2.0 ومحرك/وكيل وسيط BUSL-1.1، فلا يصح وصف جميع المكونات بأنها Apache فقط. الأداة تعمل محليًا لكن خدمات نماذج الوكلاء قد تكون سحابية ومدفوعة.",
+      "quickStart": "اتبع دليل التثبيت الرسمي؛ يذكر README brew أو winget. تحقق بالأمرين rtk --version وrtk gain. لتكامل Codex يذكر rtk init -g --codex ولـ Antigravity يذكر rtk init --agent antigravity. اختبر مخرجات أمر واحد قبل تفعيل hook على نطاق واسع.",
+      "limitations": "لم أثبت RTK أو أختبر التوفير. نسبة حتى 90% من بعض مخرجات Bash ليست نسبة تخفيض الفاتورة. قد تخفي المخرجات المختصرة تفاصيل تشخيصية؛ راجع حدود BUSL قبل إعادة التوزيع.",
+      "nextSteps": [
+        "قارن ثلاثة أوامر متكررة قبل الضغط وبعده.",
+        "احتفظ بالمخرجات الأصلية عند تشخيص الأخطاء.",
+        "قِس جودة حل المهمة وحجم السياق لا الحجم فقط."
+      ],
+      "sources": [
+        {
+          "title": "RTK README",
+          "url": "https://github.com/rtk-ai/rtk/blob/master/README.md"
+        },
+        {
+          "title": "RTK quick start",
+          "url": "https://www.rtk-ai.app/docs/getting-started/quick-start/"
+        },
+        {
+          "title": "RTK editions and licensing",
+          "url": "https://www.rtk-ai.app/docs/resources/editions/"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "حفظ الأدلة التشخيصية عند ضغط الاختبارات",
+          "problem": "قد تختفي أسطر مهمة من سجل فشل طويل.",
+          "approach": "امتداد اختياري يحفظ traceback والمسارات وأرقام الأسطر مع رابط للخرج الأصلي.",
+          "stack": "Rust، pytest fixtures، snapshots",
+          "steps": [
+            "اجمع سجلات فشل اختبارية.",
+            "حدد الحقول التي لا يجوز حذفها.",
+            "نفذ مرشحًا محافظًا قابلًا للتعطيل.",
+            "قارن الأدلة مع النص الأصلي."
+          ],
+          "metric": "نسبة الاحتفاظ بمواضع الفشل وحجم الخرج.",
+          "difficulty": "متوسط — تقدير أسبوع.",
+          "risks": "تفاوت صيغ الاختبارات وتسرب أسرار في السجلات.",
+          "sources": [
+            {
+              "title": "RTK README",
+              "url": "https://github.com/rtk-ai/rtk/blob/master/README.md"
+            },
+            {
+              "title": "RTK quick start",
+              "url": "https://www.rtk-ai.app/docs/getting-started/quick-start/"
+            },
+            {
+              "title": "RTK editions and licensing",
+              "url": "https://www.rtk-ai.app/docs/resources/editions/"
+            }
+          ]
+        },
+        {
+          "title": "قياس توفير الرموز بمُرمِّز فعلي",
+          "problem": "تقريب bytes/4 قد يضلل مقارنة تكلفة السياق.",
+          "approach": "أداة تقييم تقارن خرج RTK قبل الضغط وبعده بعدادات رموز فعلية.",
+          "stack": "Python، tokenizer مفتوح، CSV",
+          "steps": [
+            "حدد مُرمِّزًا متاحًا.",
+            "اجمع مخرجات غير حساسة.",
+            "احسب عدد الرموز قبل الضغط وبعده.",
+            "قارن التقدير بالقيمة الفعلية."
+          ],
+          "metric": "متوسط خطأ تقدير الرموز والتوفير الفعلي.",
+          "difficulty": "سهل–متوسط — تقدير 4 أيام.",
+          "risks": "الاختلاف بين مُرمِّزات النماذج.",
+          "sources": [
+            {
+              "title": "RTK README",
+              "url": "https://github.com/rtk-ai/rtk/blob/master/README.md"
+            },
+            {
+              "title": "RTK quick start",
+              "url": "https://www.rtk-ai.app/docs/getting-started/quick-start/"
+            },
+            {
+              "title": "RTK editions and licensing",
+              "url": "https://www.rtk-ai.app/docs/resources/editions/"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مدقق فقد المعلومات في سجلات CI",
+          "problem": "اختصار سجلات CI قد يحذف قرائن لفشل البناء.",
+          "approach": "أداة تقارن النسخة الأصلية والمختصرة مقابل قائمة أدلة مرجعية.",
+          "stack": "Python، pytest، JSON",
+          "steps": [
+            "أنشئ سجلات اختبار اصطناعية.",
+            "حدد أدلة الفشل المرجعية.",
+            "طبّق سياسات اختصار متعددة.",
+            "احسب الأدلة الباقية وحجم المخرجات."
+          ],
+          "metric": "Recall لأدلة الفشل ونسبة تقليل الحجم.",
+          "difficulty": "متوسط — تقدير أسبوع.",
+          "risks": "الاعتماد على بيانات غير ممثلة أو كشف أسرار.",
+          "sources": [
+            {
+              "title": "RTK README",
+              "url": "https://github.com/rtk-ai/rtk/blob/master/README.md"
+            },
+            {
+              "title": "RTK quick start",
+              "url": "https://www.rtk-ai.app/docs/getting-started/quick-start/"
+            },
+            {
+              "title": "RTK editions and licensing",
+              "url": "https://www.rtk-ai.app/docs/resources/editions/"
+            }
+          ]
+        },
+        {
+          "title": "لوحة ميزانية سياق متعددة الوكلاء",
+          "problem": "يصعب تحديد الأدوات التي تستهلك أكبر قدر من سياق الوكلاء.",
+          "approach": "لوحة محلية تجمع أحجام المخرجات دون نصوصها وتعرض مقارنة يومية.",
+          "stack": "Python، SQLite، Streamlit",
+          "steps": [
+            "حدد سجل أحداث لا يحتوي نصوصًا خاصة.",
+            "اجمع أحجام خرج الأوامر حسب الأداة.",
+            "احسب تقديرات الرموز وهامش الخطأ.",
+            "اعرض الرسوم والتغير عبر الزمن."
+          ],
+          "metric": "نسبة أوامر الوكيل التي يمكن تفسير استهلاكها.",
+          "difficulty": "متوسط — تقدير أسبوع.",
+          "risks": "القياس الجزئي لا يساوي تكلفة API الكاملة.",
+          "sources": [
+            {
+              "title": "RTK README",
+              "url": "https://github.com/rtk-ai/rtk/blob/master/README.md"
+            },
+            {
+              "title": "RTK quick start",
+              "url": "https://www.rtk-ai.app/docs/getting-started/quick-start/"
+            },
+            {
+              "title": "RTK editions and licensing",
+              "url": "https://www.rtk-ai.app/docs/resources/editions/"
+            }
+          ]
+        }
+      ],
+      "url": "https://github.com/rtk-ai/rtk",
+      "reviewedAt": "2026-10-25T23:48:46.161Z",
+      "basis": "readme"
+    },
+    "6a5678e8e70f561dc7": {
+      "titleAr": "spaCy — خطوط معالجة اللغة الطبيعية في Python",
+      "summaryAr": "مكتبة Python وCython للتجزئة والتحليل اللغوي والتعرف على الكيانات وتصنيف النصوص والتدريب. يذكر README دعم التجزئة والتدريب لأكثر من 70 لغة، مع نماذج مدربة لبعضها.",
+      "whyItMatters": "التحليل: تسهل بناء تطبيقات تحليل نصوص قابلة للتقييم، لكن دعم اللغة لا يعني توفر نموذج جاهز عالي الدقة لها.",
+      "audience": "طلاب Python ومعالجة اللغة الطبيعية ومطورو البحث وتحليل المستندات.",
+      "overview": "تمرر spaCy النص عبر pipeline من مكونات قابلة للضبط، ويمكن تشغيلها على CPU محليًا، مع GPU اختياري باعتماديات مناسبة. تنزيل خطوط اللغة منفصل عن تثبيت المكتبة.",
+      "requirements": "بيئة Python متوافقة ويفضل افتراضية، وpip، ونموذج لغة عند الحاجة. تتطلب بعض وظائف GPU حزم CUDA/CuPy. المكتبة MIT لكن النماذج والبيانات لها تراخيص مستقلة؛ السحابة ليست إلزامية وتكلفتها اختيارية.",
+      "quickStart": "أنشئ بيئة افتراضية وثبت pip install -U spacy، ثم نزّل خطًا موثقًا مثل python -m spacy download en_core_web_sm. جرّب مثالًا من دليل spaCy 101. لا تفترض وجود خط عربي رسمي مدرب بمجرد دعم التجزئة العربية.",
+      "limitations": "لم أثبت spaCy أو أختبر دقتها. يجب قياس أداء العربية واللهجات على بيانات ممثلة؛ لا يحدد ترخيص المكتبة حقوق كل نموذج.",
+      "nextSteps": [
+        "حدد مهمة واحدة ومجموعة بيانات مرخصة.",
+        "ابدأ بخط بسيط وقارن بمراجع موسومة.",
+        "وثق F1 وزمن التنفيذ وإصدارات الحزم."
+      ],
+      "sources": [
+        {
+          "title": "spaCy README",
+          "url": "https://github.com/explosion/spaCy/blob/master/README.md"
+        },
+        {
+          "title": "spaCy installation",
+          "url": "https://spacy.io/usage"
+        },
+        {
+          "title": "spaCy models",
+          "url": "https://spacy.io/models"
+        },
+        {
+          "title": "spaCy license",
+          "url": "https://github.com/explosion/spaCy/blob/master/LICENSE"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "حزمة تقييم تجزئة العربية",
+          "problem": "قد لا تتوافق قواعد التجزئة مع كل اللواصق واللهجات.",
+          "approach": "إضافة تقييم تقارن حدود الكلمات بمرجع عربي موسوم.",
+          "stack": "Python، spaCy، pytest",
+          "steps": [
+            "اجمع عينات مرخصة.",
+            "حدد معيار تجزئة ثابتًا.",
+            "شغّل القواعد الأساسية.",
+            "قِس الأخطاء وجرّب تحسينات محدودة."
+          ],
+          "metric": "F1 لحدود الكلمات على اختبار مستقل.",
+          "difficulty": "متوسط — تقدير أسبوعين.",
+          "risks": "تباين معايير التجزئة واللهجات.",
+          "sources": [
+            {
+              "title": "spaCy README",
+              "url": "https://github.com/explosion/spaCy/blob/master/README.md"
+            },
+            {
+              "title": "spaCy installation",
+              "url": "https://spacy.io/usage"
+            },
+            {
+              "title": "spaCy models",
+              "url": "https://spacy.io/models"
+            },
+            {
+              "title": "spaCy license",
+              "url": "https://github.com/explosion/spaCy/blob/master/LICENSE"
+            }
+          ]
+        },
+        {
+          "title": "مراقب تغير توزيع الكيانات",
+          "problem": "قد يتغير نوع النصوص فتنخفض جودة NER دون ملاحظة.",
+          "approach": "لوحة مستقلة تقيس تغير توزيع الكيانات وتطلب مراجعة بشرية.",
+          "stack": "Python، spaCy، pandas",
+          "steps": [
+            "سجل توزيعًا مرجعيًا غير حساس.",
+            "احسب تغيرات الفئات دوريًا.",
+            "اعرض الإنذارات مع عينات مخفية الهوية.",
+            "تحقق من النتائج يدويًا."
+          ],
+          "metric": "كشف تغيرات مصطنعة مع انخفاض الإنذارات الكاذبة.",
+          "difficulty": "متوسط — تقدير أسبوع.",
+          "risks": "تغير الموضوع لا يعني بالضرورة تدهور الدقة.",
+          "sources": [
+            {
+              "title": "spaCy README",
+              "url": "https://github.com/explosion/spaCy/blob/master/README.md"
+            },
+            {
+              "title": "spaCy installation",
+              "url": "https://spacy.io/usage"
+            },
+            {
+              "title": "spaCy models",
+              "url": "https://spacy.io/models"
+            },
+            {
+              "title": "spaCy license",
+              "url": "https://github.com/explosion/spaCy/blob/master/LICENSE"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مستخرج مصطلحات المحاضرات ثنائي اللغة",
+          "problem": "تتكرر المصطلحات الإنجليزية والعربية عبر ملفات كثيرة.",
+          "approach": "أداة محلية تستخرج المرشحات وتربطها بصفحات المصادر للمراجعة.",
+          "stack": "Python، spaCy، PyMuPDF، SQLite",
+          "steps": [
+            "اجمع ملفات يملك المستخدم حق استخدامها.",
+            "استخرج النص وأرقام الصفحات.",
+            "حدد المصطلحات المرشحة.",
+            "اعرض سياقها للمراجعة.",
+            "قِس صحة الإحالات."
+          ],
+          "metric": "Precision@20 للمصطلحات ودقة الصفحات.",
+          "difficulty": "متوسط — تقدير أسبوعين.",
+          "risks": "أخطاء استخراج PDF وخلط اتجاه اللغات.",
+          "sources": [
+            {
+              "title": "spaCy README",
+              "url": "https://github.com/explosion/spaCy/blob/master/README.md"
+            },
+            {
+              "title": "spaCy installation",
+              "url": "https://spacy.io/usage"
+            },
+            {
+              "title": "spaCy models",
+              "url": "https://spacy.io/models"
+            },
+            {
+              "title": "spaCy license",
+              "url": "https://github.com/explosion/spaCy/blob/master/LICENSE"
+            }
+          ]
+        },
+        {
+          "title": "مساعد إخفاء البيانات الشخصية من المستندات",
+          "problem": "قد تكشف الملفات المشاركة معلومات لا يحتاجها المستلم.",
+          "approach": "أداة محلية تقترح حقولًا حساسة وتطلب تأكيد المستخدم قبل الإخفاء.",
+          "stack": "spaCy، Python، regex",
+          "steps": [
+            "حدد فئات البيانات الحساسة.",
+            "اختبر على مستندات اصطناعية.",
+            "اجمع القواعد مع NER حيث يتوفر.",
+            "اعرض معاينة وتأكيدًا يدويًا.",
+            "قِس التسرب بعد الإخفاء."
+          ],
+          "metric": "Recall للبيانات الحساسة مع قياس الإخفاء الخاطئ.",
+          "difficulty": "متوسط — تقدير أسبوعين.",
+          "risks": "عدم اكتشاف بعض البيانات؛ لا تعتمد على الأداة دون مراجعة.",
+          "sources": [
+            {
+              "title": "spaCy README",
+              "url": "https://github.com/explosion/spaCy/blob/master/README.md"
+            },
+            {
+              "title": "spaCy installation",
+              "url": "https://spacy.io/usage"
+            },
+            {
+              "title": "spaCy models",
+              "url": "https://spacy.io/models"
+            },
+            {
+              "title": "spaCy license",
+              "url": "https://github.com/explosion/spaCy/blob/master/LICENSE"
+            }
+          ]
+        }
+      ],
+      "url": "https://github.com/explosion/spaCy",
+      "reviewedAt": "2026-10-25T23:48:46.161Z",
+      "basis": "readme"
     }
   }
 }
