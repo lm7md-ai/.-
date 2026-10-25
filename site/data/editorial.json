@@ -6304,6 +6304,412 @@
         }
       ],
       "religious": []
+    },
+    "1ac9c976988acd153a": {
+      "url": "https://polygonjs.com/blog/why-i-rewrote-polygon-from-scratch",
+      "reviewedAt": "2026-10-25T14:42:11+03:00",
+      "titleAr": "إعادة بناء Polygon من الصفر بلغة Jai: درس في إدارة الذاكرة",
+      "summaryAr": "في تدوينة أصلية منشورة يوم 7 أغسطس 2026، يشرح مطوّر Polygonjs لماذا انتقل من TypeScript وthree.js إلى محرك جديد بلغة Jai بعد سنوات من بناء الرسوم الإجرائية. يذكر صعوبة معرفة ما إذا كانت الذاكرة تُحرّر فعلًا مع جامع القمامة، ومشكلات توقيت الإطارات والتكامل مع المكتبات الأصلية عبر Electron. بنى نظام عقد ومصيّرًا جديدًا مع WebGPU وWebAssembly وأطلق Polygon v2. هذه تجربة المطوّر وليست مقارنة أداء مستقلة.",
+      "whyItMatters": "تحليل: قد تبرر مشكلات الذاكرة والتوافق إعادة تصميم معماري، لكن إعادة كتابة مئات العقد ومصيّر كامل تكلفة عالية؛ قِس المشكلة قبل تغيير اللغة.",
+      "audience": "مطورو الرسوم ثلاثية الأبعاد والألعاب ومحركات العقد.",
+      "nextSteps": [
+        "سجل استهلاك الذاكرة وزمن الإطار قبل اتخاذ قرار إعادة الكتابة.",
+        "نفذ نموذجًا صغيرًا للمكوّن الأكثر استهلاكًا وقارن النتائج على العتاد نفسه."
+      ],
+      "limitations": "المقال أقدم من ظهوره في التغذية. ادعاءات تحسن الأداء وتقليل الأخطاء من الكاتب؛ لم أختبر Polygon أو Jai. ذكر الكاتب أن Jai لم تكن عامة وقت نشر مقاله.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "تدوينة المطور الأصلية",
+          "url": "https://polygonjs.com/blog/why-i-rewrote-polygon-from-scratch"
+        }
+      ]
+    },
+    "3d3a3797f36f72035e": {
+      "url": "https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html",
+      "reviewedAt": "2026-10-25T14:42:11+03:00",
+      "titleAr": "سحب جائزة تصوير مجهري بعد جدل حول استخدام الذكاء الاصطناعي",
+      "summaryAr": "يذكر تقرير TechSpot المنشور في 12 أكتوبر 2026 أن Nikon سحبت جائزة مسابقة Small World in Motion بعد تحقيق بشأن مشاركة أثارت ملاحظات علمية على أشكال مجهرية غير مألوفة. قال صاحب المشاركة إنه استخدم الذكاء الاصطناعي لتحسين تمثيل صور معالجة، لكنه نفى توليد الحركة نفسها. ينسب التقرير إلى Nikon قرار مخالفة القواعد ومنح المركز الأول لمشارك آخر.",
+      "whyItMatters": "تحليل: إبقاء البيانات الخام وسجل المعالجة وإفصاح استخدام الذكاء الاصطناعي مهم في التصوير العلمي؛ لا ينبغي اعتبار الشك البصري دليلًا حاسمًا بمفرده.",
+      "audience": "باحثو الصور العلمية ومختبرات الرؤية الحاسوبية ومنظمو المسابقات.",
+      "nextSteps": [
+        "احفظ الملفات الخام وإعدادات المعالجة إلى جانب النتائج.",
+        "اكتب سياسة تميز تحسين الرؤية عن توليد محتوى جديد."
+      ],
+      "limitations": "قرأت تقرير TechSpot لا تقرير التحقيق الكامل أو الفيديو الخام. لا أقدم حكمًا مستقلاً على كيفية إنتاج الفيديو، والخبر يعود إلى 12 أكتوبر.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "تقرير TechSpot الأصلي",
+          "url": "https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html"
+        }
+      ]
+    },
+    "d0eaca9f562278f8ee": {
+      "url": "https://catlikecoding.com/godot/procedural-gpu-patterns/09-tiling-noise/",
+      "reviewedAt": "2026-10-25T14:42:11+03:00",
+      "titleAr": "دليل Godot لصنع خامات ضوضاء إجرائية متكررة بلا فواصل",
+      "summaryAr": "الدرس التاسع من سلسلة Procedural GPU Patterns يشرح تكرار value noise على سطح طوروسي عبر لف إحداثيات lattice عند حدود UV. يعرض اختبار مناطق 3×3 ثم 5×5 ويوضح أن التنفيذ المبسط محدود بالنطاق، ويتطلب ترددات صحيحة، وترددات زوجية مع التحريك المستخدم. يضيف خيار tiling وإزاحة زمنية لا تتجاوز حدود التكرار.",
+      "whyItMatters": "تحليل: مفيد لخامات الألعاب والرسوم الإجرائية، والأهم أنه يوضح شروط نجاح الخوارزمية وحالات ظهور فواصل مرئية.",
+      "audience": "مطورو Godot وطلاب الرسوم الحاسوبية ومصممو الخامات.",
+      "nextSteps": [
+        "ابن مشهدًا صغيرًا بخامة متكررة وتردد صحيح.",
+        "قارن النتيجة مع تردد كسري وتحريك بتردد فردي لفهم القيود."
+      ],
+      "limitations": "هذا درس تعليمي وليس إصدارًا جديدًا. يشير النص إلى Godot 4.7؛ لم أنفذ shader أو أختبره على عتاد حقيقي.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "الدرس الأصلي — Tiling Noise",
+          "url": "https://catlikecoding.com/godot/procedural-gpu-patterns/09-tiling-noise/"
+        }
+      ]
+    },
+    "db6cc927887bf2ca4c": {
+      "url": "https://freedns.afraid.org/",
+      "reviewedAt": "2026-10-25T14:42:11+03:00",
+      "titleAr": "FreeDNS: خيارات DNS ديناميكي وثابت لأسماء النطاقات",
+      "summaryAr": "تصف الصفحة الرسمية لـFreeDNS استضافة سجلات DNS الثابتة والديناميكية، والنطاقات الفرعية وإعادة التوجيه، مع مثال على تحديث عنوان IP عبر رابط مزامنة. تعرض الخدمة خططًا مجانية ومدفوعة. هذا تعريف بخدمة موجودة وليس إعلان إصدار جديد.",
+      "whyItMatters": "تحليل: قد يفيد مطورًا يريد اسم نطاق تجريبيًا لخادم يتغير عنوانه، لكنه لا يحل مشكلة CGNAT ولا يضمن وصول الاتصالات من الإنترنت.",
+      "audience": "مطورو الشبكات والمشاريع المنزلية ومسؤولو DNS.",
+      "nextSteps": [
+        "تحقق من أن اتصال الإنترنت يسمح بالوصول إلى الخدمة المطلوبة من الخارج.",
+        "راجع شروط النطاقات والخطة قبل ربط خدمة مهمة."
+      ],
+      "limitations": "basis=metadata: قرأت صفحة التعريف فقط ولم أختبر الأداء أو شروط الاشتراك كاملة. الأسعار والتوافر قابلة للتغير؛ لا أؤكد أمان أو موثوقية الخدمة.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "صفحة FreeDNS الرسمية",
+          "url": "https://freedns.afraid.org/"
+        }
+      ]
+    },
+    "9563de7ec1221e077a": {
+      "url": "https://github.com/gradio-app/gradio",
+      "reviewedAt": "2026-10-25T14:42:11+03:00",
+      "titleAr": "Gradio — واجهات تفاعلية لنماذج Python دون بناء واجهة ويب من الصفر",
+      "summaryAr": "مكتبة Python مرخصة Apache-2.0 تتيح إنشاء عروض تفاعلية حول دوال Python والنماذج عبر Interface، وتخصيص التدفقات باستخدام Blocks، وبناء واجهات محادثة عبر ChatInterface. يشرح README التشغيل المحلي وإمكانية مشاركة رابط للعرض؛ هذه الميزة لا تجعل موارد النموذج أو الاستضافة مجانية تلقائيًا.",
+      "whyItMatters": "تساعد الطالب والباحث على تحويل تجربة تعلم آلي إلى عرض قابل للفحص والمقارنة بسرعة، مع بقاء الحاجة إلى قياس أداء النموذج نفسه.",
+      "audience": "طلاب Python والتعلم الآلي ومطورو النماذج الأولية.",
+      "nextSteps": [
+        "أنشئ بيئة افتراضية وثبت Gradio.",
+        "اعرض دالة بسيطة محليًا وتحقق من مدخلاتها قبل مشاركة أي رابط.",
+        "قِس زمن استجابة نموذجك واستهلاك ذاكرته."
+      ],
+      "limitations": "راجعت README والترخيص والتوثيق دون تشغيل. Python 3.10+ وفق README وقت المراجعة. مشاركة رابط عام قد تتيح وصول الآخرين، والاستضافة أو واجهات النماذج قد تكلف مالًا.",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "Gradio README",
+          "url": "https://github.com/gradio-app/gradio/blob/main/README.md"
+        },
+        {
+          "title": "Gradio license",
+          "url": "https://github.com/gradio-app/gradio/blob/main/LICENSE"
+        },
+        {
+          "title": "Gradio docs",
+          "url": "https://www.gradio.app/docs/"
+        }
+      ],
+      "overview": "تربط مكونات واجهة المتصفح بدوال Python على خادم Gradio. Interface للدوال البسيطة، Blocks للأحداث والتدفقات المركبة، وChatInterface للمحادثات. يعمل محليًا ويمكن نشره على استضافة مناسبة. بدائل محتملة: Streamlit للتطبيقات التحليلية، أو FastAPI مع واجهة مخصصة للتحكم الأكبر.",
+      "requirements": "Python 3.10 أو أحدث بحسب README وpip وبيئة افتراضية. CPU/GPU والذاكرة بحسب النموذج الخلفي. الشيفرة Apache-2.0؛ استضافة التطبيق والنماذج أو خدمات API قد تكون مدفوعة.",
+      "quickStart": "أنشئ بيئة افتراضية وشغّل `pip install --upgrade gradio`، ثم اكتب app.py يحوي دالة و`gr.Interface(fn=your_function, inputs='text', outputs='text').launch()` وشغّل `python app.py`. افتح العنوان المحلي الظاهر ولا تفعل المشاركة العامة قبل فحص البيانات.",
+      "improvements": [
+        {
+          "title": "أمثلة RTL عربية قابلة للفحص",
+          "problem": "تتكرر أخطاء اتجاه النص المختلط عند إعداد تجارب عربية.",
+          "approach": "أنشئ حزمة أمثلة مستقلة لمكونات النص والجداول والملفات مع اختبارات بصرية؛ MVP ثلاث واجهات.",
+          "stack": "Python, Gradio, Playwright",
+          "steps": [
+            "احصر مكونات شائعة تحتاج اختبار RTL.",
+            "ابن ثلاث واجهات عربية وإنجليزية مختلطة.",
+            "شغّل لقطات مقارنة للجوال والكمبيوتر.",
+            "وثّق الحالات غير المدعومة وقدم أمثلة إصلاح."
+          ],
+          "metric": "نجاح 95% من 20 حالة اتجاه ومحاذاة.",
+          "difficulty": "متوسطة؛ تقدير 3–5 أيام.",
+          "risks": "قد يتغير سلوك CSS أو تتحسن الميزة أصلًا.",
+          "sources": [
+            {
+              "title": "Gradio README",
+              "url": "https://github.com/gradio-app/gradio/blob/main/README.md"
+            },
+            {
+              "title": "Gradio license",
+              "url": "https://github.com/gradio-app/gradio/blob/main/LICENSE"
+            },
+            {
+              "title": "Gradio docs",
+              "url": "https://www.gradio.app/docs/"
+            }
+          ]
+        },
+        {
+          "title": "قالب قياس زمن الاستجابة للواجهات",
+          "problem": "يصعب مقارنة زمن استجابة النماذج من شكل العرض فقط.",
+          "approach": "مثال Gradio يلف الدالة بمؤقت ويعرض P50 وP95 واستهلاك الذاكرة؛ MVP نموذج واحد.",
+          "stack": "Python, Gradio, psutil",
+          "steps": [
+            "ثبت مجموعة مدخلات اختبار ثابتة.",
+            "أضف قياس الزمن والذاكرة لكل استدعاء.",
+            "كرر 30 مرة مع توثيق البيئة.",
+            "اعرض P50 وP95 وحدود المقارنة."
+          ],
+          "metric": "تقرير 30 تشغيلًا قابل لإعادة الإنتاج.",
+          "difficulty": "متوسطة؛ تقدير 2–4 أيام.",
+          "risks": "التحميل الخلفي وتغير العتاد يؤثران على القياس.",
+          "sources": [
+            {
+              "title": "Gradio README",
+              "url": "https://github.com/gradio-app/gradio/blob/main/README.md"
+            },
+            {
+              "title": "Gradio license",
+              "url": "https://github.com/gradio-app/gradio/blob/main/LICENSE"
+            },
+            {
+              "title": "Gradio docs",
+              "url": "https://www.gradio.app/docs/"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مختبر Python عربي تفاعلي",
+          "problem": "المفاهيم النظرية لا تتحول دائمًا إلى قدرة عملية.",
+          "approach": "خمس تجارب قصيرة بمدخلات محدودة وشرح نتائج مباشر دون تشغيل شيفرة غير موثوقة.",
+          "stack": "Python, Gradio, pytest",
+          "steps": [
+            "اختر خمس مفاهيم برمجية.",
+            "صمم دوال آمنة بمدخلات محددة.",
+            "اعرض تفسير النتيجة بالعربية.",
+            "قِس أداء عشر تجارب تعلم."
+          ],
+          "metric": "إكمال 80% من مهام التجربة دون مساعدة.",
+          "difficulty": "متوسطة؛ تقدير أسبوع.",
+          "risks": "سطحية التمارين إن لم تتدرج الصعوبة.",
+          "sources": [
+            {
+              "title": "Gradio README",
+              "url": "https://github.com/gradio-app/gradio/blob/main/README.md"
+            },
+            {
+              "title": "Gradio license",
+              "url": "https://github.com/gradio-app/gradio/blob/main/LICENSE"
+            },
+            {
+              "title": "Gradio docs",
+              "url": "https://www.gradio.app/docs/"
+            }
+          ]
+        },
+        {
+          "title": "مقارن OCR عربي مرخّص",
+          "problem": "نتائج OCR العربي تختلف باختلاف الخط والصورة.",
+          "approach": "واجهة تشغل محركي OCR وتقارن CER/WER مع نصوص مرجعية؛ MVP عشرون صورة مرخّصة.",
+          "stack": "Gradio, Python, jiwer",
+          "steps": [
+            "اجمع عشرين صورة مرخّصة مع نصوصها.",
+            "اربط محركي OCR.",
+            "احسب CER وWER لكل عينة.",
+            "انشر جدول الأخطاء والقيود."
+          ],
+          "metric": "جدول CER/WER قابل لإعادة الإنتاج لـ20 عينة.",
+          "difficulty": "متوسطة إلى عالية؛ تقدير 1–2 أسبوع.",
+          "risks": "حقوق الصور وعدم تمثيل جميع الخطوط.",
+          "sources": [
+            {
+              "title": "Gradio README",
+              "url": "https://github.com/gradio-app/gradio/blob/main/README.md"
+            },
+            {
+              "title": "Gradio license",
+              "url": "https://github.com/gradio-app/gradio/blob/main/LICENSE"
+            },
+            {
+              "title": "Gradio docs",
+              "url": "https://www.gradio.app/docs/"
+            }
+          ]
+        }
+      ],
+      "religious": []
+    },
+    "853c63f738f0cecf3b": {
+      "url": "https://github.com/thedotmack/claude-mem",
+      "reviewedAt": "2026-10-25T14:42:11+03:00",
+      "titleAr": "Claude-Mem — ذاكرة مستمرة لوكلاء البرمجة عبر الجلسات",
+      "summaryAr": "مشروع مفتوح المصدر تحت Apache-2.0 يجمع ملاحظات أدوات الوكيل عبر hooks، ويخزنها ويولد ملخصات قابلة للاسترجاع. يوضح التوثيق خدمة worker وقاعدة SQLite/FTS5 وChroma الاختيارية للبحث الدلالي. تتوفر تكاملات متعددة بحسب إصدار بيئة الوكيل، لكن الاسترجاع لا يضمن صحة كل ذكرى أو حداثتها.",
+      "whyItMatters": "قد يقلل تكرار شرح القرارات بين جلسات البرمجة، مع ضرورة مراجعة مصادر الذاكرة وتصحيح القرارات القديمة.",
+      "audience": "مطورو الوكلاء ومستخدمو Codex وClaude Code وأدوات البرمجة متعددة الجلسات.",
+      "nextSteps": [
+        "اختر مزود معالجة الذاكرة وافهم التكلفة والخصوصية قبل التثبيت.",
+        "جربه في مشروع غير حساس عبر جلستين.",
+        "قارن دقة تذكر القرارات مع سجل مرجعي."
+      ],
+      "limitations": "راجعت README والترخيص ودليل التثبيت والعمارة ولم أشغل المشروع. يقدم المثبت تجربة لخدمة مستضافة لمدة 30 يومًا وقد تتطلب اشتراكًا لاحقًا؛ بدائل API قد تستهلك رصيدًا. لا تخلط بين التخزين المحلي للبيانات ومعالجة محلية كاملة.",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "Claude-Mem README",
+          "url": "https://github.com/thedotmack/claude-mem/blob/main/README.md"
+        },
+        {
+          "title": "Claude-Mem installation",
+          "url": "https://docs.claude-mem.ai/installation"
+        },
+        {
+          "title": "Claude-Mem architecture",
+          "url": "https://docs.claude-mem.ai/architecture/overview"
+        },
+        {
+          "title": "Claude-Mem license",
+          "url": "https://github.com/thedotmack/claude-mem/blob/main/LICENSE"
+        }
+      ],
+      "overview": "تسجل hooks أحداث الجلسة وتخزن الملاحظات في SQLite؛ يعالج worker الملخصات بمزود نموذج مختار، ويتيح استرجاعًا عبر FTS5 وربما Chroma. تتوفر واجهة عرض محلية. بديل أبسط: سجل قرارات Markdown يدوي؛ وبديل أوسع: أنظمة ذاكرة وكلاء أخرى بعد فحص تراخيصها.",
+      "requirements": "Node.js 20+ وBun وuv بحسب دليل التثبيت، مع بيئة وكيل مدعومة ومزود معالجة. الترخيص Apache-2.0، لكن CMEM Pro أو مفاتيح مزود النماذج قد تكلف مالًا؛ راجع إعدادات التخزين والمشاركة.",
+      "quickStart": "اقرأ دليل التثبيت الرسمي، ثم شغّل `npx claude-mem install` في بيئة تجريبية واختر provider عن علم؛ يمكن استخدام `--provider claude` لاستخدام خطة Anthropic. شغّل `npx claude-mem doctor` وتحقق من hooks قبل تجربة جلستين. التثبيت العام `npm install -g claude-mem` وحده لا يهيئ hooks.",
+      "improvements": [
+        {
+          "title": "اختبار تقادم قرارات الذاكرة",
+          "problem": "قد تعيد الذاكرة قرارًا أُلغي في جلسة أحدث.",
+          "approach": "مجموعة عشر حالات تعارض بين قرار قديم وتصحيح لاحق مع قياس أولوية الأحدث.",
+          "stack": "TypeScript, Bun test, SQLite",
+          "steps": [
+            "أنشئ عشر جلسات اصطناعية بقرارات وتصحيحات.",
+            "استخرج ما يسترجعه النظام لكل حالة.",
+            "قارن المسترجع بالقرار الأخير.",
+            "وثّق حالات الفشل واقترح ترتيبًا زمنيًا."
+          ],
+          "metric": "9 من 10 حالات تسترجع القرار الأحدث.",
+          "difficulty": "متوسطة؛ تقدير 4–6 أيام.",
+          "risks": "قد يُخفى قرار تاريخي ما زال مهمًا.",
+          "sources": [
+            {
+              "title": "Claude-Mem README",
+              "url": "https://github.com/thedotmack/claude-mem/blob/main/README.md"
+            },
+            {
+              "title": "Claude-Mem installation",
+              "url": "https://docs.claude-mem.ai/installation"
+            },
+            {
+              "title": "Claude-Mem architecture",
+              "url": "https://docs.claude-mem.ai/architecture/overview"
+            },
+            {
+              "title": "Claude-Mem license",
+              "url": "https://github.com/thedotmack/claude-mem/blob/main/LICENSE"
+            }
+          ]
+        },
+        {
+          "title": "شفافية تكلفة معالجة الذاكرة",
+          "problem": "تختلف تكلفة الملخصات باختلاف المزود وعدد الجلسات.",
+          "approach": "تقرير اختياري محلي للتوكنات والزمن دون حفظ نصوص حساسة؛ MVP عشرون جلسة.",
+          "stack": "TypeScript, SQLite, CSV",
+          "steps": [
+            "حدد عدادات زمن وتوكنات لا تكشف النصوص.",
+            "سجل عشرين جلسة تجريبية.",
+            "احسب المتوسط وP95 والتكلفة التقديرية.",
+            "قارن مزودين مع بيان اختلاف الأسعار."
+          ],
+          "metric": "تقرير 20 جلسة بتقدير تكلفة قابل للتحديث.",
+          "difficulty": "متوسطة؛ تقدير 3–5 أيام.",
+          "risks": "اختلاف احتساب التوكنات والأسعار.",
+          "sources": [
+            {
+              "title": "Claude-Mem README",
+              "url": "https://github.com/thedotmack/claude-mem/blob/main/README.md"
+            },
+            {
+              "title": "Claude-Mem installation",
+              "url": "https://docs.claude-mem.ai/installation"
+            },
+            {
+              "title": "Claude-Mem architecture",
+              "url": "https://docs.claude-mem.ai/architecture/overview"
+            },
+            {
+              "title": "Claude-Mem license",
+              "url": "https://github.com/thedotmack/claude-mem/blob/main/LICENSE"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "معيار نقل سياق الوكلاء",
+          "problem": "قد تضيع قرارات المشروع عند الانتقال بين الأدوات.",
+          "approach": "اختبار مستقل يصدر عشر قرارات تجريبية ويقيس استرجاعها في بيئتين.",
+          "stack": "Python, JSON, pytest",
+          "steps": [
+            "أنشئ عشر قرارات غير حساسة.",
+            "صدّرها بصيغة موثقة.",
+            "اختبر استرجاعها في بيئتين.",
+            "احسب الدقة وزمن الإعداد."
+          ],
+          "metric": "استرجاع 8 من 10 قرارات صحيحة.",
+          "difficulty": "عالية؛ تقدير 1–2 أسبوع.",
+          "risks": "اختلاف تكاملات الأدوات.",
+          "sources": [
+            {
+              "title": "Claude-Mem README",
+              "url": "https://github.com/thedotmack/claude-mem/blob/main/README.md"
+            },
+            {
+              "title": "Claude-Mem installation",
+              "url": "https://docs.claude-mem.ai/installation"
+            },
+            {
+              "title": "Claude-Mem architecture",
+              "url": "https://docs.claude-mem.ai/architecture/overview"
+            },
+            {
+              "title": "Claude-Mem license",
+              "url": "https://github.com/thedotmack/claude-mem/blob/main/LICENSE"
+            }
+          ]
+        },
+        {
+          "title": "مراجع سياق المشروع قبل التسليم",
+          "problem": "قد ينسى تقرير التسليم أسباب تغييرات مهمة.",
+          "approach": "أداة تولد مسودة قرارات بمراجع وتطلب موافقة المطور؛ MVP مشروع تجريبي واحد.",
+          "stack": "TypeScript, Markdown, SQLite",
+          "steps": [
+            "حدد قالب تقرير التسليم.",
+            "استرجع القرارات مع تواريخها ومراجعها.",
+            "ولّد تقريرًا لا يخفي عدم اليقين.",
+            "قارنه بسجل تغييرات المشروع واعتمده يدويًا."
+          ],
+          "metric": "تغطية 90% من القرارات في قائمة مرجعية.",
+          "difficulty": "متوسطة؛ تقدير أسبوع.",
+          "risks": "قد تحتوي الذاكرة على قرارات قديمة أو حساسة.",
+          "sources": [
+            {
+              "title": "Claude-Mem README",
+              "url": "https://github.com/thedotmack/claude-mem/blob/main/README.md"
+            },
+            {
+              "title": "Claude-Mem installation",
+              "url": "https://docs.claude-mem.ai/installation"
+            },
+            {
+              "title": "Claude-Mem architecture",
+              "url": "https://docs.claude-mem.ai/architecture/overview"
+            },
+            {
+              "title": "Claude-Mem license",
+              "url": "https://github.com/thedotmack/claude-mem/blob/main/LICENSE"
+            }
+          ]
+        }
+      ],
+      "religious": []
     }
   }
 }
