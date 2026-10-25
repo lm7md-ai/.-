@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-25T20:38:36+03:00",
+  "baseMainSha": "f69cc4c26cce6d7bed73331e95d67ab5763611a9",
+  "feedGeneratedAt": "2026-10-25T16:14:01+00:00",
+  "incomingFilesChecked": 14,
+  "priorIncomingEntries": 116,
+  "alreadyImportedMatching": 113,
+  "matchingNotImported": 0,
+  "unmatched": 3,
+  "urlMismatch": 0,
+  "duplicateIdsAcrossBatches": 0,
+  "structuralIssuesFound": 0,
+  "classification": {
+    "imported_matching": 113,
+    "matching_pending_import": 0,
+    "feed_id_absent": 3,
+    "feed_url_mismatch": 0,
+    "expired_confirmed": 0,
+    "needs_manual_review": 3
+  },
+  "unmatchedEntries": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+      "status": "feed_id_absent",
+      "expired": false,
+      "action": "hold_original_identity"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "status": "feed_id_absent",
+      "expired": false,
+      "action": "hold_original_identity"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "status": "feed_id_absent",
+      "expired": false,
+      "action": "hold_original_identity"
+    }
+  ],
+  "notes": [
+    "لم يظهر أي تطابق حرفي في id أو url لهذه السجلات الثلاثة في لقطة التغذية الحالية؛ لم تولّد هويات بديلة.",
+    "غياب السجل من feed لا يثبت أن المادة منقضية أو غير صحيحة؛ الحالة تحتاج مراجعة تغذية مستقبلية.",
+    "الدفعات القديمة 14 ملفًا؛ جميع سجلاتها المطابقة موجودة في editorial.json بلا اختلاف حقول وفق مقارنة JSON بنيوية.",
+    "جرى فحص بنيوي مكافئ عبر موصل GitHub، ولم يُنفذ scripts/editorial.py validate/import محليًا أو python -m unittest محليًا لتعذر الوصول إلى المستودع من بيئة Python."
+  ],
+  "historicalLibrary": {
+    "path": "editorial/library/catalog-2026-10-24.json",
+    "entries": 31,
+    "archived": 2,
+    "feedMatched": 4,
+    "notInFeed": 27,
+    "metricsMeasuredAt": "2026-10-24T10:38:36.869Z",
+    "notPublishedToSite": 27,
+    "displayRequirementsForDeveloper": [
+      "قراءة catalog كبيانات بحث منفصلة لا خلطها مع feed.",
+      "تمييز حالة not_visible_until_website_support_is_added بوضوح.",
+      "عدم إنشاء id للعنصر غير الموجود في feed، وعدم الادعاء بنشره.",
+      "عرض تاريخ قياس النجوم ومصدر الترخيص وحالة الأرشفة.",
+      "إظهار البدائل الحديثة للمشاريع المؤرشفة بعد توثيقها."
+    ]
+  },
+  "previousEightProjectsReview": {
+    "count": 8,
+    "improvementsTotal": 18,
+    "spinoffsTotal": 18,
+    "religiousTotal": 0,
+    "decision": "preserved_existing_order_and_links; no padding added"
+  },
+  "newBatch": {
+    "path": "editorial/incoming/nabdh-editorial-2026-10-25-2038.json",
+    "news": 4,
+    "projects": 2,
+    "proposals": 8
+  },
+  "testStatus": {
+    "officialValidateEachIncoming": "not_run_locally",
+    "officialImport": "not_run_locally",
+    "pythonUnittest": "not_run_locally",
+    "structuralEquivalent": "passed",
+    "ci": "pending"
+  }
+}
