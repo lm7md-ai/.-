@@ -1,0 +1,569 @@
+{
+  "version": 1,
+  "items": {
+    "a54fd0e20dbb904635": {
+      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+      "titleAr": "تحليل Apollo: عوائد الذكاء الاصطناعي لم تظهر بوضوح خارج شركات التقنية الكبرى",
+      "summaryAr": "في تحليل اقتصادي نُشر 24 أكتوبر، يقارن كبير الاقتصاديين لدى Apollo بين شركات التقنية السبع الكبرى وبقية شركات S&P 500. يشير إلى ارتفاع الإيرادات للعامل وهوامش الأرباح لدى المجموعة الأولى، مقابل ركود نسبي لدى الشركات الـ493 الأخرى، وعدم ظهور تحسن واسع في الإنتاجية الكلية وفق الرسوم التي اختارها. هذه قراءة لبيانات اقتصادية، وليست إثباتًا أن جميع تطبيقات الذكاء الاصطناعي غير مجدية.",
+      "whyItMatters": "تحليل تحريري: قياس قيمة الذكاء الاصطناعي يحتاج أثرًا على الإيراد أو الوقت أو الجودة، لا عدد التوكنات المستهلكة أو عدد الموظفين الذين جرّبوا الأداة. يمكن أن تتأخر العوائد بسبب إعادة هندسة العمليات.",
+      "audience": "مديرو التقنية والمنتجات ورواد الأعمال والطلاب المهتمون باقتصاد الذكاء الاصطناعي.",
+      "nextSteps": [
+        "حدد عملية عمل واحدة قابلة للقياس قبل إدخال الذكاء الاصطناعي.",
+        "قارن تكلفة التشغيل والتدقيق البشري والنتيجة خلال فترة تجريبية.",
+        "افصل التوفير المحلي في مهمة عن الأثر على أرباح المؤسسة كلها."
+      ],
+      "limitations": "استنتاجات ورسوم Apollo من اختيار محللها وتخضع لافتراضات القياس؛ لا تثبت علاقة سببية، ولا تنفي مكاسب لدى شركات فردية. لا توجد تكلفة خدمة أو إطلاق منتج في هذا الخبر.",
+      "reviewedAt": "2026-10-25T02:54:12+00:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "تحليل Apollo الأصلي، 24 أكتوبر 2026",
+          "url": "https://www.apollo.com/institutional/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector"
+        }
+      ]
+    },
+    "c852cf262baca51dc3": {
+      "url": "https://blog.roku.com/developer/gitlab-move",
+      "titleAr": "Roku تنقل مستودعات المطورين من GitHub إلى GitLab",
+      "summaryAr": "أعلنت Roku في مدونة المطورين اكتمال نقل موارد التطوير المفتوحة إلى GitLab، بما فيها مستودعات التوثيق والأمثلة والأدوات. تقول الشركة إنها حدّثت الروابط في وثائقها، بينما يحتاج من حفظ روابط قديمة إلى تعديل إشاراته المحلية. يرتبط النقل كذلك باستعدادات SDK الجديد RSG 2.0 المبني حول TypeScript.",
+      "whyItMatters": "تحليل تحريري: تغيير مضيف المستودع قد يؤثر في الروابط داخل الوثائق، والاعتماديات المثبتة من Git، وعمليات CI الخاصة بالمساهمين؛ ينبغي التعامل معه كترحيل هوية لا مجرد تغيير رابط.",
+      "audience": "مطورو تطبيقات Roku، ومسؤولو CI/CD والمشاريع التي تستشهد بمستودعات roku-oss.",
+      "nextSteps": [
+        "ابحث عن روابط GitHub القديمة الخاصة بمشاريع Roku في ملفات مشروعك.",
+        "طابق المستودع المقابل في مساحة rokudev الرسمية على GitLab.",
+        "حدّث الروابط واختبر الاعتماديات والمهام الآلية بعد التغيير."
+      ],
+      "limitations": "اعتمدت على النص المنشور في فهرس مدونة Roku الرسمي؛ صفحة الخبر التفصيلية تطلب JavaScript ولم أقرأ نصها الكامل، لذلك basis=metadata. لا تفترض أن روابط إعادة التوجيه تعمل دائمًا. نقل المستودعات لا يغير تكلفة خدمات Roku تلقائيًا.",
+      "reviewedAt": "2026-10-25T02:54:12+00:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "مدونة Roku الرسمية: إعلان الترحيل",
+          "url": "https://blog.roku.com/developer"
+        },
+        {
+          "title": "رابط الخبر الأصلي في التغذية",
+          "url": "https://blog.roku.com/developer/gitlab-move"
+        }
+      ]
+    },
+    "0d165f484c2636ca4e": {
+      "url": "https://aardappel.github.io/goose/",
+      "titleAr": "لغة Goose تقترح برمجة أنظمة آمنة دون Heap أو جامع قمامة",
+      "summaryAr": "يعرض مطورو Goose لغة أنظمة تخزن القيم الديناميكية ضمن مكدسات بيانات يديرها المترجم، مع مراجع تتحقق من صلاحيتها دون تعليقات أعمار صريحة. توثق الصفحة أنواع المصفوفات، وبنى البيانات المضمنة، والتكامل مع C، وتوليد ملف C واحد. تدّعي اختبارات المشروع تفوقًا على C++ وRust في مجموعة قياسات خاصة؛ هذه ليست مقارنة عامة مستقلة.",
+      "whyItMatters": "تحليل تحريري: المشروع يفتح نقاشًا حول مفاضلات تخطيط الذاكرة والثبات المرجعي مقابل مرونة تخصيص الذاكرة العشوائي؛ مفيد لفهم تصميم لغات الأنظمة حتى إن لم تُعتمد اللغة في الإنتاج.",
+      "audience": "طلاب المترجمات وهندسة الأنظمة ومطورو Rust وC++ المهتمون بنماذج الذاكرة.",
+      "nextSteps": [
+        "اقرأ شرح نموذج المكدسات وقواعد المراجع في التوثيق.",
+        "قارن بنية بيانات صغيرة في Goose ولغة مألوفة باستخدام نفس المدخلات.",
+        "راجع منهجية الاختبارات والقيود قبل تعميم أرقام الأداء."
+      ],
+      "limitations": "المقاييس منشورة من فريق اللغة وعلى حالات محددة، ولم أعد تشغيلها. النضج والتوافق مع المكتبات والمنصات يحتاجان فحصًا مستقلًا. الاستخدام الأساسي محلي بعد تثبيت الأدوات، والتكلفة ليست اشتراكًا معلنًا في الصفحة.",
+      "reviewedAt": "2026-10-25T02:54:12+00:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "الصفحة الرسمية للغة Goose",
+          "url": "https://aardappel.github.io/goose/"
+        },
+        {
+          "title": "المقاييس المنشورة من المشروع",
+          "url": "https://aardappel.github.io/goose/benchmarks/"
+        }
+      ]
+    },
+    "b5d56d5ca530cabccc": {
+      "url": "https://terrytao.wordpress.com/2026/10/24/oai-math-revised-a-community-hub-for-revising-openais-math-write-ups/",
+      "titleAr": "مبادرة مجتمعية لمراجعة شروح الرياضيات المنشورة من OpenAI",
+      "summaryAr": "استضافت مدونة عالم الرياضيات تيرينس تاو تدوينة ضيف في 24 أكتوبر تدعو باحثين وطلابًا إلى تحسين وضوح مذكرات رياضية منشورة في مستودع OpenAI، وتدقيق الإحالات الناقصة. أنشأ المنظمون مستودعًا مستقلًا للمراجعات وطلبوا متطوعين لمراجعة مجالات اختصاصهم. الإعلان دعوة للمشاركة، وليس تصديقًا لصحة كل برهان.",
+      "whyItMatters": "تحليل تحريري: يُظهر أهمية مراجعة الأقران والتحرير الرياضي بعد توليد النتائج؛ سهولة كتابة نص رياضي لا تعني اكتمال البرهان أو صحة المراجع.",
+      "audience": "طلاب الرياضيات والباحثون والمحررون العلميون ومطورو أدوات التحقق من البراهين.",
+      "nextSteps": [
+        "اختر مذكرة واحدة واقرأ تعريفاتها والنتائج المشار إليها.",
+        "تحقق من مراجعها ومن خطوات الاستدلال قبل اقتراح تعديل.",
+        "إن أردت المساهمة، اتبع إرشادات المستودع المستقل للمراجعة."
+      ],
+      "limitations": "المبادرة مستقلة عن نشر النتائج الأصلية ولا تمثل حكمًا جماعيًا على صحتها. المشاركة تطوعية، ولا توجد رسوم أو إتاحة جغرافية مذكورة في إعلانها. لم أفحص البراهين رياضيًا.",
+      "reviewedAt": "2026-10-25T02:54:12+00:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "تدوينة الضيف في مدونة تيرينس تاو",
+          "url": "https://terrytao.wordpress.com/2026/10/24/oai-math-revised-a-community-hub-for-revising-openais-math-write-ups/"
+        },
+        {
+          "title": "مستودع المراجعات المجتمعي",
+          "url": "https://github.com/mathcommunity/oai-math-revised"
+        }
+      ]
+    },
+    "08ab153fd915aa89f4": {
+      "url": "https://torrentfreak.com/ai-assisted-paper-on-z-library-cites-a-torrentfreak-article-that-doesnt-exist/",
+      "titleAr": "تقرير يكشف إحالات أكاديمية غير موجودة في بحث استعان بأدوات ذكاء اصطناعي",
+      "summaryAr": "راجع موقع TorrentFreak قائمة مراجع ورقة أكاديمية عن المكتبات الرقمية، وذكر أنه لم يجد مقالًا نُسب إليه بعنوان محدد، ولا عدة مراجع أخرى في الأعداد والمجلات المذكورة. أقر مؤلفو الورقة باستخدام أدوات ذكاء اصطناعي في البحث والتحرير، لكن التقرير لا يثبت أن هذه الأدوات هي التي أنشأت الإحالات الخاطئة. قالت الجهة الناشرة إنها أحالت الملاحظات لفريق النزاهة للنظر فيها.",
+      "whyItMatters": "تحليل تحريري: مرجع يبدو أكاديميًا قد يكون غير موجود أصلًا؛ لا يكفي أن يقترح نموذج اسم مؤلف ومجلة وسنة. يجب التحقق من DOI أو صفحة الناشر ومطابقة العنوان والصفحات.",
+      "audience": "طلاب الجامعات والباحثون ومحررو النشرات ومطورو مساعدات البحث.",
+      "nextSteps": [
+        "استخرج قائمة المراجع من أي تقرير تولده أداة ذكاء اصطناعي.",
+        "طابق كل عنوان ومؤلف وسنة ورقم DOI مع موقع الناشر.",
+        "ضع إشارة «غير متحقق» أمام أي مرجع لا تجد له سجلًا موثوقًا."
+      ],
+      "limitations": "هذا تحقيق صحفي عن مراجع ورقة محددة وليس حكمًا على جميع الأبحاث أو إثباتًا لسبب الأخطاء. نتائج أدوات كشف النصوص المولدة ليست دليلًا قاطعًا. لا نورد روابط وصول غير مرخص إلى الكتب.",
+      "reviewedAt": "2026-10-25T02:54:12+00:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "تحقيق TorrentFreak الأصلي",
+          "url": "https://torrentfreak.com/ai-assisted-paper-on-z-library-cites-a-torrentfreak-article-that-doesnt-exist/"
+        }
+      ]
+    },
+    "1f6056f34e61a5ea93": {
+      "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
+      "titleAr": "تحليل وظائف الإعلام والفنون في أمريكا: تراجع كبير لكن نسبة أثر الذكاء الاصطناعي غير محسومة",
+      "summaryAr": "يعرض الاقتصادي جوزيف بوليتانو بيانات توظيف تشير إلى فقدان أكثر من 200 ألف وظيفة أمريكية في قطاعات إبداعية خلال أربع سنوات، منها خسائر كبيرة في السينما والنشر. يناقش تزامن الانخفاض مع انتشار أدوات التوليد، لكنه يوضح أن أثر الذكاء الاصطناعي يصعب فصله عن تغيرات البث والمنصات والتعهيد وتحولات نماذج الأعمال. تاريخ نشر المقال الأصلي 27 سبتمبر 2026، وإن ظهر حديثًا في التغذية.",
+      "whyItMatters": "تحليل تحريري: ينبغي عدم تحويل التزامن بين إطلاق نماذج الذكاء الاصطناعي وتراجع الوظائف إلى علاقة سببية دون دراسة؛ وفي المقابل تستحق التحولات في مهارات سوق العمل المتابعة.",
+      "audience": "طلاب التقنية والتصميم وصناع المحتوى والباحثون في سوق العمل.",
+      "nextSteps": [
+        "اقرأ السلاسل الزمنية ومصادر بيانات الوظائف قبل تداول الأرقام.",
+        "قارن اتجاهات كل قطاع على حدة بدل تعميمها على كل المهن.",
+        "قيّم المهارات المطلوبة في وظائف فعلية بدل افتراض اختفاء تخصص كامل."
+      ],
+      "limitations": "العدد تقدير تحليلي لقطاعات أمريكية محددة وليس رقم وظائف أزالها الذكاء الاصطناعي وحده. المقال أقدم من تاريخ دخوله تغذية Hacker News، ولا يتضمن إطلاق خدمة أو سعرًا.",
+      "reviewedAt": "2026-10-25T02:54:12+00:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "تحليل Apricitas الأصلي",
+          "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class"
+        }
+      ]
+    },
+    "0ccf055fe1d013fe6e": {
+      "url": "https://github.com/ray-project/ray",
+      "titleAr": "Ray — تشغيل تطبيقات Python والذكاء الاصطناعي على أجهزة متعددة",
+      "summaryAr": "Ray إطار مفتوح المصدر لتوزيع مهام Python عبر العمليات والعقد. يقدم Ray Core دوالًا بعيدة Tasks وعمالًا بحالة Actors وكائنات موزعة، وتضيف مكتبات Ray Data وTrain وTune وServe وRLlib أدوات للبيانات والتدريب والبحث عن المعاملات وخدمة النماذج. يفيد حين يتجاوز عبء العمل جهازًا واحدًا، لكنه يضيف تعقيد تشغيل وتتبّع.",
+      "whyItMatters": "تحليل تحريري: يسمح Ray بنقل تجارب Python من حاسوب شخصي إلى عنقود مع الإبقاء على جزء من منطق التطبيق؛ لا يضمن تسريع كل مهمة، وقد يكون multiprocessing أبسط للمشروعات الصغيرة.",
+      "audience": "مطورو Python والتعلم الآلي ومهندسو أنظمة الوكلاء وخدمة النماذج.",
+      "overview": "يعتمد Ray Core على جدولة مهام موزعة وعمال يحتفظون بالحالة ومرجعيات لكائنات البيانات؛ تستهلك المهام موارد CPU/GPU وفق التهيئة. تتولى مكتبات أعلى مستوى التدريب والتقييم والنشر. يمكن تشغيله محليًا على جهاز واحد أو على خوادم وعنقود Kubernetes أو سحابة، وتختلف الكلفة تبعًا للبنية التي تختارها.",
+      "requirements": "Python وبيئة معزولة وموارد CPU/RAM مناسبة؛ التثبيت الأساسي موثق بأمر pip install ray. قد تتطلب مكتبات ML وGPU اعتماديات إضافية وعتادًا مناسبًا. شيفرة Ray مرخصة Apache-2.0؛ تشغيل الخوادم والسحابة والنماذج ليس مجانيًا بالضرورة.",
+      "quickStart": "أنشئ بيئة Python معزولة وثبّت ray وفق دليل التثبيت الرسمي، ثم جرّب مثال Tasks محليًا من Ray Core. قس زمن المهمة المتسلسلة والموزعة مع تضمين وقت التشغيل والنقل. بعد نجاح تجربة صغيرة اقرأ دليل Dashboard وServe قبل الانتقال إلى عنقود.",
+      "nextSteps": [
+        "ابدأ بمهمة مستقلة وقابلة للتكرار على جهاز واحد.",
+        "قارن زمن التنفيذ واستهلاك الذاكرة مع Python العادي.",
+        "استخدم Dashboard لرصد فشل المهام قبل زيادة عدد العمال."
+      ],
+      "limitations": "المراجعة شملت README والترخيص والوثائق المرتبطة ولم تشمل تشغيل Ray أو قراءة كامل الشيفرة. التوزيع يضيف نقل بيانات وجدولة قد يلغي مكاسب السرعة للمهام الصغيرة. لا يمكن ضمان دعم كل بيئة أو GPU دون الرجوع لمصفوفة التوافق.",
+      "reviewedAt": "2026-10-25T02:54:12+00:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "Ray README",
+          "url": "https://github.com/ray-project/ray/blob/master/README.rst"
+        },
+        {
+          "title": "Ray Core documentation",
+          "url": "https://docs.ray.io/en/latest/ray-core/walkthrough.html"
+        },
+        {
+          "title": "Ray Serve documentation",
+          "url": "https://docs.ray.io/en/latest/serve/index.html"
+        },
+        {
+          "title": "Apache-2.0 license",
+          "url": "https://github.com/ray-project/ray/blob/master/LICENSE"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "لوحة تكلفة المهمة الموزعة",
+          "problem": "قد يصعب ربط زمن Ray الفعلي بتكلفة تشغيل كل مهمة في تجربة صغيرة.",
+          "approach": "طبقة خارجية تسجل زمن CPU/GPU وحجم البيانات لكل Task، ثم تضربها في أسعار يحددها المستخدم؛ MVP على جهاز واحد دون فواتير سحابية.",
+          "stack": "Python, Ray State API, SQLite, Streamlit",
+          "steps": [
+            "اختر تطبيق Ray صغيرًا مع ثلاثة أنواع مهام.",
+            "اجمع توقيت البدء والنهاية والموارد المحجوزة لكل مهمة.",
+            "أضف ملف أسعار يدويًا بدل افتراض أسعار مزود سحابي.",
+            "اعرض تكلفة تقديرية للمهمة وتقرير مقارنة."
+          ],
+          "metric": "تغطية >=95% من المهام التجريبية بسجلات تكلفة، مع فصل التكلفة المقدرة عن الفعلية.",
+          "difficulty": "متوسط؛ تقدير 4–7 أيام لتجربة أولية.",
+          "risks": "الموارد المحجوزة ليست استهلاكًا فعليًا، وأسعار السحابة متغيرة.",
+          "sources": [
+            {
+              "title": "Ray README",
+              "url": "https://github.com/ray-project/ray/blob/master/README.rst"
+            },
+            {
+              "title": "Ray Core documentation",
+              "url": "https://docs.ray.io/en/latest/ray-core/walkthrough.html"
+            },
+            {
+              "title": "Ray Serve documentation",
+              "url": "https://docs.ray.io/en/latest/serve/index.html"
+            }
+          ]
+        },
+        {
+          "title": "كاشف المهام التي لا تستفيد من التوزيع",
+          "problem": "التوزيع قد يزيد زمن العمليات القصيرة بسبب التسلسل والنقل.",
+          "approach": "MVP يقارن نسخة محلية ونسخة Ray لمجموعة مهام معيارية ويقترح عتبة عملية قبل استخدام Ray.",
+          "stack": "Python, Ray, pytest-benchmark, pandas",
+          "steps": [
+            "جهز مهام CPU قصيرة ومتوسطة وطويلة بمدخلات ثابتة.",
+            "شغّل كل مهمة محليًا ثم عبر Ray عدة مرات.",
+            "احسب زمن النقل والجدولة والتسارع مع التباين.",
+            "أخرج توصية مشروطة بحجم العمل لا حكمًا مطلقًا."
+          ],
+          "metric": "جدول يحدد نقطة التعادل في ثلاث فئات مهام مع انحراف معياري موثق.",
+          "difficulty": "متوسط؛ تقدير 3–5 أيام.",
+          "risks": "نتائج العتبة تختلف حسب الجهاز والإصدار؛ لا تعممها.",
+          "sources": [
+            {
+              "title": "Ray README",
+              "url": "https://github.com/ray-project/ray/blob/master/README.rst"
+            },
+            {
+              "title": "Ray Core documentation",
+              "url": "https://docs.ray.io/en/latest/ray-core/walkthrough.html"
+            },
+            {
+              "title": "Ray Serve documentation",
+              "url": "https://docs.ray.io/en/latest/serve/index.html"
+            }
+          ]
+        },
+        {
+          "title": "حزمة إعادة إنتاج تجارب Ray",
+          "problem": "قد يصعب تكرار نتائج عنقود تغيرت إعداداته أو اعتمادياته.",
+          "approach": "إضافة اختيارية تحفظ بصمة الاعتماديات وإعدادات Ray وبذور العشوائية وملخص الموارد مع كل تشغيل.",
+          "stack": "Python, Ray, pip freeze, JSON Schema",
+          "steps": [
+            "حدد الحقول الضرورية لإعادة الإنتاج دون أسرار.",
+            "سجل الإصدارات وإعدادات الموارد عند بدء التجربة.",
+            "اربط البصمة بمخرجات التجربة في ملف JSON.",
+            "اختبر كشف اختلاف الاعتماديات عند إعادة التشغيل."
+          ],
+          "metric": "اكتشاف 100% من تغييرات الاعتماديات المزروعة في خمس تجارب.",
+          "difficulty": "متوسط؛ تقدير 4–6 أيام.",
+          "risks": "قد لا تضمن البصمة إعادة إنتاج سلوك GPU غير الحتمي؛ تجنب تسجيل الأسرار.",
+          "sources": [
+            {
+              "title": "Ray README",
+              "url": "https://github.com/ray-project/ray/blob/master/README.rst"
+            },
+            {
+              "title": "Ray Core documentation",
+              "url": "https://docs.ray.io/en/latest/ray-core/walkthrough.html"
+            },
+            {
+              "title": "Ray Serve documentation",
+              "url": "https://docs.ray.io/en/latest/serve/index.html"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مختبر Python لتجربة توزيع المعالجة",
+          "problem": "يصعب على الطالب إدراك متى يفيد تشغيل Python على عدة أنوية.",
+          "approach": "تطبيق تعليمي مستقل يقارن التنفيذ المتسلسل وRay ويعرض الرسم الزمني لكل مهمة.",
+          "stack": "Python, Ray, Plotly, FastAPI",
+          "steps": [
+            "ابن ثلاث مهام حسابية واضحة المخرجات.",
+            "نفذ كل مهمة محليًا وموزعًا.",
+            "اعرض جدول التسارع والزمن الكلي.",
+            "أضف أسئلة تفسيرية مرتبطة بنتائج الجهاز."
+          ],
+          "metric": "تحسن دقة توقع الطلاب للحالة الأسرع في اختبار قبلي/بعدي.",
+          "difficulty": "متوسط؛ تقدير أسبوع.",
+          "risks": "الأجهزة الضعيفة قد لا تظهر تسارعًا؛ اجعل ذلك جزءًا من الدرس.",
+          "sources": [
+            {
+              "title": "Ray README",
+              "url": "https://github.com/ray-project/ray/blob/master/README.rst"
+            },
+            {
+              "title": "Ray Core documentation",
+              "url": "https://docs.ray.io/en/latest/ray-core/walkthrough.html"
+            },
+            {
+              "title": "Ray Serve documentation",
+              "url": "https://docs.ray.io/en/latest/serve/index.html"
+            }
+          ]
+        },
+        {
+          "title": "مقيّم استقرار خدمة نماذج محلية",
+          "problem": "نجاح استجابة واحدة لا يكشف استقرار الخدمة تحت الضغط.",
+          "approach": "خدمة اختبار مستقلة ترسل أحمالًا متدرجة إلى Ray Serve وتقيس زمن الاستجابة والفشل.",
+          "stack": "Python, Ray Serve, Locust, Prometheus",
+          "steps": [
+            "انشر نموذجًا تجريبيًا صغيرًا محليًا.",
+            "عرّف ثلاث مستويات طلبات ثابتة.",
+            "اجمع P50 وP95 ونسب الخطأ.",
+            "اكتب تقريرًا يحدد عتبة الاستقرار والتكلفة."
+          ],
+          "metric": "تقرير P95 ونسبة الخطأ عند ثلاث درجات حمل قابل لإعادة التشغيل.",
+          "difficulty": "متوسط إلى مرتفع؛ تقدير 1–2 أسبوع.",
+          "risks": "التحميل قد يستنزف الموارد؛ اختبر في بيئة معزولة وبحدود واضحة.",
+          "sources": [
+            {
+              "title": "Ray README",
+              "url": "https://github.com/ray-project/ray/blob/master/README.rst"
+            },
+            {
+              "title": "Ray Core documentation",
+              "url": "https://docs.ray.io/en/latest/ray-core/walkthrough.html"
+            },
+            {
+              "title": "Ray Serve documentation",
+              "url": "https://docs.ray.io/en/latest/serve/index.html"
+            }
+          ]
+        },
+        {
+          "title": "مجدول دفعات أبحاث طلابية",
+          "problem": "تشغيل تجارب متعددة يدويًا يضيع وقتًا ويصعب توثيقه.",
+          "approach": "واجهة بسيطة تستقبل ملف تجارب وتوزعها على Ray مع حفظ النتائج وتاريخ التشغيل.",
+          "stack": "Python, Ray, SQLite, Typer",
+          "steps": [
+            "حدد صيغة JSON لمدخلات التجارب.",
+            "نفذ طابور مهام مع حد موارد لكل تجربة.",
+            "خزن حالة النجاح والفشل والمدة.",
+            "أضف أمرًا لإعادة المحاولات الفاشلة فقط."
+          ],
+          "metric": "إنهاء 20 تجربة مستقلة مع سجل نتائج قابل للتدقيق دون فقد بيانات.",
+          "difficulty": "متوسط؛ تقدير 5–8 أيام.",
+          "risks": "قد تختلف النتائج باختلاف الإصدارات؛ لا تحفظ مفاتيح الوصول.",
+          "sources": [
+            {
+              "title": "Ray README",
+              "url": "https://github.com/ray-project/ray/blob/master/README.rst"
+            },
+            {
+              "title": "Ray Core documentation",
+              "url": "https://docs.ray.io/en/latest/ray-core/walkthrough.html"
+            },
+            {
+              "title": "Ray Serve documentation",
+              "url": "https://docs.ray.io/en/latest/serve/index.html"
+            }
+          ]
+        }
+      ],
+      "religious": []
+    },
+    "04aa3744e1ae44cec6": {
+      "url": "https://github.com/roboflow/supervision",
+      "titleAr": "supervision — أدوات Python لتجهيز وعرض نتائج الرؤية الحاسوبية",
+      "summaryAr": "مكتبة supervision من Roboflow توفر نوع بيانات موحدًا للكشوف Detections، ووسائل لرسم المربعات والأقنعة، والتعامل مع مجموعات بيانات الرؤية الحاسوبية، وعمليات تتبع وعدّ مرتبطة بالتطبيق. تعمل فوق نماذج كشف أو تقسيم تختارها ولا تمثل بحد ذاتها نموذجًا مدربًا يكتشف الأشياء.",
+      "whyItMatters": "تحليل تحريري: تفصل معالجة نتائج النموذج عن اختيار النموذج نفسه، فتقل الشيفرة المكررة بين تجارب Ultralytics وغيرها؛ الجودة النهائية تعتمد على النموذج والبيانات وظروف التصوير.",
+      "audience": "طلاب الرؤية الحاسوبية ومطورو تطبيقات الفيديو وتحليل الصور.",
+      "overview": "تستقبل المكتبة مخرجات نماذج كشف/تقسيم وتحوّلها إلى Detections قابلة للفلترة والقياس والعرض. تضم Annotators لرسوم النتائج وواجهات تحميل وتحويل مجموعات بيانات مثل COCO وYOLO وPascal VOC. تعمل محليًا في Python؛ بعض الأمثلة تستخدم نماذج أو خدمات منفصلة قد تحتاج GPU أو مفاتيح API.",
+      "requirements": "Python 3.10 أو أحدث وفق README، والتثبيت pip install supervision. يتطلب تشغيل نماذج الرؤية نفسها اعتماديات وأوزانًا وترخيصًا منفصلًا؛ بعض أمثلة Roboflow Inference تحتاج مفتاح API. ترخيص مكتبة supervision هو MIT.",
+      "quickStart": "أنشئ بيئة Python 3.10+، وثبّت supervision، ثم افتح دليل Detections واستخدم مثال صورة محفوظة مع نتائج كشف من نموذج تملكه. جرّب BoxAnnotator على نسخة من الصورة وقارن الإحداثيات بالمخرجات الخام. لا تفترض أن تثبيت المكتبة يثبت نموذج كشف.",
+      "nextSteps": [
+        "جرّب رسم Detections على صورة اختبار غير حساسة.",
+        "قارن صيغة بيانات نموذجين عبر موصلات المكتبة.",
+        "اختبر تصدير مجموعة بيانات صغيرة ومراجعة الإحداثيات يدويًا."
+      ],
+      "limitations": "المراجعة اقتصرت على README والترخيص والتوثيق ولم تشمل تثبيت الحزمة أو اختبار النماذج. جودة التتبع والتعرف تعتمد على الكاشف وجودة البيانات؛ توثيق الأمثلة لا يعني توفر نماذج أو خدمات خارجية مجانًا. راجع حقوق الصور والخصوصية قبل تحليل فيديو أشخاص.",
+      "reviewedAt": "2026-10-25T02:54:12+00:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "supervision README",
+          "url": "https://github.com/roboflow/supervision/blob/develop/README.md"
+        },
+        {
+          "title": "supervision documentation",
+          "url": "https://supervision.roboflow.com/"
+        },
+        {
+          "title": "supervision MIT license",
+          "url": "https://github.com/roboflow/supervision/blob/develop/LICENSE.md"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "مدقق تحويل إحداثيات التعليقات",
+          "problem": "قد تنقلب إحداثيات الصناديق أو الفئات عند تحويل مجموعات البيانات بين الصيغ.",
+          "approach": "أداة تحقق خارجية تولد صور مقارنة قبل/بعد تحويل COCO وYOLO وPascal VOC مع تقرير فروق هندسية.",
+          "stack": "Python, supervision, OpenCV, pytest",
+          "steps": [
+            "اجمع عينة مرجعية صغيرة بثلاث صيغ.",
+            "حوّل البيانات عبر أدوات supervision الموثقة.",
+            "قارن إحداثيات كل صندوق وحدود الصورة والفئات.",
+            "صدّر تقرير اختلافات وصورًا للمراجعة."
+          ],
+          "metric": "اكتشاف جميع أخطاء تبديل المحاور أو تحجيم الصناديق المزروعة في 20 عينة.",
+          "difficulty": "متوسط؛ تقدير 4–6 أيام.",
+          "risks": "قد توجد فروق تقريب بين الصيغ؛ اضبط سماحية رقمية موثقة.",
+          "sources": [
+            {
+              "title": "supervision README",
+              "url": "https://github.com/roboflow/supervision/blob/develop/README.md"
+            },
+            {
+              "title": "supervision documentation",
+              "url": "https://supervision.roboflow.com/"
+            },
+            {
+              "title": "supervision MIT license",
+              "url": "https://github.com/roboflow/supervision/blob/develop/LICENSE.md"
+            }
+          ]
+        },
+        {
+          "title": "تقرير ثقة مناطق الصورة",
+          "problem": "المتوسط العام لدقة الكاشف يخفي مناطق ضعيفة في الصورة.",
+          "approach": "طبقة تحليل تقسم الصور إلى شبكة وتجمع نسب الكشوف والأخطاء حسب المنطقة، دون ادعاء أن المكتبة تفتقد هذه الوظيفة.",
+          "stack": "Python, supervision, NumPy, matplotlib",
+          "steps": [
+            "حدد شبكة 3×3 وبيانات موسومة مرجعية.",
+            "اجمع Detections وتطابقها مع الحقيقة المرجعية.",
+            "احسب precision وrecall لكل خلية.",
+            "اعرض خريطة حرارية وحدود حجم العينة."
+          ],
+          "metric": "تقرير مكاني مع عدد عينات ومقاييس لكل خلية في مجموعة مرجعية.",
+          "difficulty": "متوسط؛ تقدير 5–7 أيام.",
+          "risks": "قلة العينات قد تجعل النتائج مضللة؛ أظهر فترات الثقة.",
+          "sources": [
+            {
+              "title": "supervision README",
+              "url": "https://github.com/roboflow/supervision/blob/develop/README.md"
+            },
+            {
+              "title": "supervision documentation",
+              "url": "https://supervision.roboflow.com/"
+            },
+            {
+              "title": "supervision MIT license",
+              "url": "https://github.com/roboflow/supervision/blob/develop/LICENSE.md"
+            }
+          ]
+        },
+        {
+          "title": "طبقة كتابة عربية لنتائج الكشف",
+          "problem": "رسم أسماء الفئات العربية على الصور قد يواجه مشاكل اتجاه الخط والتشكيل.",
+          "approach": "مكوّن اختياري يحول أسماء الفئات إلى نص عربي مضبوط الاتجاه ثم يركبه على نتائج Annotator.",
+          "stack": "Python, supervision, Pillow, arabic-reshaper",
+          "steps": [
+            "أنشئ قائمة فئات عربية متنوعة الأرقام والتشكيل.",
+            "ارسم المربعات بواسطة Annotator موثق.",
+            "أضف طبقة نص عربي منفصلة بخط مرخّص.",
+            "قارن صور الاختبار بصريًا على أكثر من دقة."
+          ],
+          "metric": "نجاح 95% من حالات النص العربية المحددة في مراجعة بشرية عمياء.",
+          "difficulty": "منخفض إلى متوسط؛ تقدير 3–5 أيام.",
+          "risks": "اختلاف الخطوط واتجاه النص قد يسبب قصًا؛ راجع ترخيص الخط.",
+          "sources": [
+            {
+              "title": "supervision README",
+              "url": "https://github.com/roboflow/supervision/blob/develop/README.md"
+            },
+            {
+              "title": "supervision documentation",
+              "url": "https://supervision.roboflow.com/"
+            },
+            {
+              "title": "supervision MIT license",
+              "url": "https://github.com/roboflow/supervision/blob/develop/LICENSE.md"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مختبر قياس أخطاء كشف الأجسام",
+          "problem": "المبتدئ يرى مربعات الكشف ولا يعرف لماذا أخطأ النموذج.",
+          "approach": "تطبيق تعليمي يعرض IoU وprecision وrecall على صور موسومة مع تغيير عتبة الثقة.",
+          "stack": "Python, supervision, Gradio, NumPy",
+          "steps": [
+            "اختر مجموعة صور مرخّصة ذات تعليقات مرجعية.",
+            "اجلب نتائج كاشف محدد دون تغيير النموذج.",
+            "احسب IoU ومصفوفة الالتباس لعتبات مختلفة.",
+            "اعرض أثر العتبة مع الحالات الخاطئة."
+          ],
+          "metric": "قدرة المستخدم على تفسير 8 من 10 حالات false positive/negative بعد التدريب.",
+          "difficulty": "متوسط؛ تقدير أسبوع.",
+          "risks": "التعليقات المرجعية نفسها قد تخطئ؛ لا تعرض المقياس وحده حكمًا مطلقًا.",
+          "sources": [
+            {
+              "title": "supervision README",
+              "url": "https://github.com/roboflow/supervision/blob/develop/README.md"
+            },
+            {
+              "title": "supervision documentation",
+              "url": "https://supervision.roboflow.com/"
+            },
+            {
+              "title": "supervision MIT license",
+              "url": "https://github.com/roboflow/supervision/blob/develop/LICENSE.md"
+            }
+          ]
+        },
+        {
+          "title": "عداد مركبات لبيانات مرور مصرح بها",
+          "problem": "يحتاج باحث النقل إلى إحصاء مرور تقريبي دون الاحتفاظ بوجوه أو لوحات.",
+          "approach": "أداة محلية تستخدم كاشفًا مرخّصًا وsupervision لحساب العبور عبر خط في فيديو تجريبي مصرح به.",
+          "stack": "Python, supervision, OpenCV, CSV",
+          "steps": [
+            "احصل على فيديو اختبار مصرح باستخدامه.",
+            "أنتج Detections من نموذج كشف مناسب.",
+            "طبق عدّ العبور عبر خط مع منع العد المكرر.",
+            "قارن العدد بتسجيل يدوي مرجعي."
+          ],
+          "metric": "خطأ عدّ أقل من 10% في مجموعة الاختبار المحددة.",
+          "difficulty": "متوسط؛ تقدير 6–9 أيام.",
+          "risks": "الازدحام وزوايا التصوير تؤثر في الدقة؛ لا تستخدمه للمراقبة الفردية.",
+          "sources": [
+            {
+              "title": "supervision README",
+              "url": "https://github.com/roboflow/supervision/blob/develop/README.md"
+            },
+            {
+              "title": "supervision documentation",
+              "url": "https://supervision.roboflow.com/"
+            },
+            {
+              "title": "supervision MIT license",
+              "url": "https://github.com/roboflow/supervision/blob/develop/LICENSE.md"
+            }
+          ]
+        },
+        {
+          "title": "مراجع جودة مجموعات بيانات الصور",
+          "problem": "الأخطاء في التعليقات والفئات تنتقل إلى تدريب النماذج.",
+          "approach": "أداة مستقلة تفحص أحجام الصور والصناديق والفئات النادرة والتكرارات وتصدر تقريرًا قبل التدريب.",
+          "stack": "Python, supervision, pandas, imagehash",
+          "steps": [
+            "حمّل مجموعة مرخّصة بصيغة COCO أو YOLO.",
+            "احسب توزيع الفئات وأحجام الصناديق.",
+            "اكتشف الصناديق خارج الحدود والصور المكررة.",
+            "ولّد تقريرًا بالأمثلة المرشحة للمراجعة البشرية."
+          ],
+          "metric": "اكتشاف 100% من الصناديق خارج الحدود المزروعة في 100 صورة اختبار.",
+          "difficulty": "متوسط؛ تقدير 5–8 أيام.",
+          "risks": "التشابه البصري ليس إثبات تكرار؛ تجنب حذف البيانات آليًا.",
+          "sources": [
+            {
+              "title": "supervision README",
+              "url": "https://github.com/roboflow/supervision/blob/develop/README.md"
+            },
+            {
+              "title": "supervision documentation",
+              "url": "https://supervision.roboflow.com/"
+            },
+            {
+              "title": "supervision MIT license",
+              "url": "https://github.com/roboflow/supervision/blob/develop/LICENSE.md"
+            }
+          ]
+        }
+      ],
+      "religious": []
+    }
+  }
+}
