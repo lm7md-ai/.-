@@ -1,0 +1,359 @@
+{
+  "version": 1,
+  "items": {
+    "4f518f178a0999f4d6": {
+      "url": "https://xingjianbai.com/reactive-optimizers/",
+      "titleAr": "محسّنات تفاعلية: وكيل يغير قواعد تدريب الشبكات أثناء التشغيل",
+      "summaryAr": "يعرض الباحثون OPAL، وهو وكيل يراقب الخسارة والتدرجات ويعدّل قواعد تحديث الأوزان أثناء التدريب. أبلغ الفريق عن تعامل أفضل مع طفرات الخسارة وفرط التكيّف في تجارب محددة، وعن زيادة زمنية 1.01–1.14 ضعف عند عدم إيقاف التدريب أثناء تفكير الوكيل.",
+      "whyItMatters": "التحليل: قد يقلل ضبط المعلمات يدويًا عند تجربة بنى جديدة، لكنه يزيد تكلفة الاستدلال وعدم اليقين في إعادة الإنتاج.",
+      "audience": "باحثو التعلم العميق ومهندسو تدريب النماذج.",
+      "nextSteps": [
+        "اقرأ التجارب وحدودها.",
+        "قارن OPAL بخط أساس مضبوط على بيانات صغيرة.",
+        "وثّق زمن GPU وتكلفة API والتباين بين التشغيلات."
+      ],
+      "limitations": "قرأت المقال الأصلي؛ معظم التجارب أجريت مرة واحدة وبعضها ثلاث مرات. الأرقام من الباحثين ولم أشغّل الكود. يتطلب النموذج موارد حوسبة وقد لا يلائم التدريب الموزع حاليًا.",
+      "basis": "article",
+      "reviewedAt": "2026-10-25T11:43:56+03:00",
+      "sources": [
+        {
+          "title": "المقال الأصلي",
+          "url": "https://xingjianbai.com/reactive-optimizers/"
+        }
+      ]
+    },
+    "1024a71bf3a321de9f": {
+      "url": "https://www.engadget.com/2296218/capcom-confirms-data-breach-that-affected-117-million-users/",
+      "titleAr": "Capcom تؤكد وصولًا غير مصرح به إلى 11.77 مليون سجل CAPCOM ID",
+      "summaryAr": "بحسب بيان Capcom في 22 أكتوبر 2026، تأثر 11,774,247 سجلًا تضم بريدًا إلكترونيًا ومعرّفات نظامية. تضمنت 43 حالة بيانات إضافية وتغيرت كلمات مرور 196 حسابًا دون إذن وأُعيد تعيينها. قالت الشركة إن معلومات بطاقات الائتمان لم تتأثر وإنها لم تؤكد كشف كلمات المرور الأصلية.",
+      "whyItMatters": "التحليل: قد تُستخدم عناوين البريد في رسائل تصيد تنتحل صفة الشركة حتى دون تسرب كلمة المرور.",
+      "audience": "مستخدمو CAPCOM ID وفرق أمن الحسابات.",
+      "nextSteps": [
+        "اقرأ إشعارات Capcom الرسمية مباشرة.",
+        "تجنب روابط الرسائل المشبوهة.",
+        "راجع نشاط الحساب ووسائل حمايته."
+      ],
+      "limitations": "الأرقام والتفاصيل وفق بيان الشركة حتى 22 أكتوبر، وليست تحقيقًا مستقلًا. قرأت بيان Capcom والتغطية الصحفية ولم أختبر أنظمتها.",
+      "basis": "article",
+      "reviewedAt": "2026-10-25T11:43:56+03:00",
+      "sources": [
+        {
+          "title": "بيان Capcom",
+          "url": "https://www.capcom.co.jp/ir/english/news/html/e261022.html"
+        },
+        {
+          "title": "Engadget",
+          "url": "https://www.engadget.com/2296218/capcom-confirms-data-breach-that-affected-117-million-users/"
+        }
+      ]
+    },
+    "72085d2e5a95917680": {
+      "url": "https://www.engadget.com/2296237/steam-rolls-out-personal-calendar-feature-that-constantly-updates-recommended-games/",
+      "titleAr": "Steam تقدم تقويمًا شخصيًا لاكتشاف الألعاب",
+      "summaryAr": "أطلقت Valve ميزة Personal Calendar لاقتراح ألعاب بناء على وقت اللعب وقوائم الأمنيات وأنماط مستخدمين متشابهين. ذكرت تغطية Engadget أن التوصيات تُحدّث يوميًا، لكن ذلك لا يعني تغيّرها بالكامل كل يوم.",
+      "whyItMatters": "التحليل: مثال مفيد على محركات توصية تجمع السلوك مع توقيت الإصدارات.",
+      "audience": "اللاعبون ومطورو أنظمة التوصية.",
+      "nextSteps": [
+        "افتح متجر Steam وتحقق من الميزة.",
+        "قارن الاقتراحات بقائمة الأمنيات.",
+        "راقب تنوع التوصيات على مدى أسابيع."
+      ],
+      "limitations": "قرأت Engadget لكن رابط الإعلان الرسمي لم يعرض متنًا قابلًا للقراءة؛ لم أختبر توفر الميزة في كل بلد.",
+      "basis": "article",
+      "reviewedAt": "2026-10-25T11:43:56+03:00",
+      "sources": [
+        {
+          "title": "Engadget",
+          "url": "https://www.engadget.com/2296237/steam-rolls-out-personal-calendar-feature-that-constantly-updates-recommended-games/"
+        },
+        {
+          "title": "إعلان Steam",
+          "url": "https://store.steampowered.com/news/app/593110/view/710037059469839718"
+        }
+      ]
+    },
+    "402510afde2d9adf5a": {
+      "url": "https://github.com/astroautomata/PySR",
+      "titleAr": "PySR يستنتج معادلات رياضية قابلة للتفسير من البيانات",
+      "summaryAr": "يقدم PySR انحدارًا رمزيًا يبحث عن معادلة مناسبة للبيانات عبر واجهة Python ومحرك SymbolicRegression.jl. يوضح README التثبيت وتجربة تولد معادلات تتضمن دوال مثل جيب التمام، وتعرض خسارة وتعقيد كل مرشح.",
+      "whyItMatters": "التحليل: مفيد في التعليم والنمذجة العلمية عندما تكون قابلية تفسير المعادلة مهمة.",
+      "audience": "طلاب الرياضيات والفيزياء والذكاء الاصطناعي.",
+      "nextSteps": [
+        "راجع README والتوثيق.",
+        "جرّب بيانات صغيرة قليلة المتغيرات.",
+        "قارن المعادلات ببيانات اختبار مستقلة."
+      ],
+      "limitations": "راجعت README لا تنفيذًا فعليًا؛ يعتمد على Julia وقد يحتاج إعداد مكتبات نظام. لم أختبر الأداء أو الدقة.",
+      "basis": "readme",
+      "reviewedAt": "2026-10-25T11:43:56+03:00",
+      "sources": [
+        {
+          "title": "PySR README",
+          "url": "https://github.com/astroautomata/PySR"
+        },
+        {
+          "title": "التوثيق",
+          "url": "https://pysr.ai/"
+        }
+      ]
+    },
+    "4d243cef998a0bb0c8": {
+      "url": "https://github.com/deepspeedai/DeepSpeed",
+      "titleAr": "DeepSpeed: تدريب نماذج كبيرة بتقسيم الذاكرة والتوازي",
+      "summaryAr": "DeepSpeed مكتبة مفتوحة المصدر تتكامل مع PyTorch وتوفر ZeRO لتقسيم حالات المُحسّن والتدرجات والمعاملات، إضافة إلى تقنيات توازٍ ونقل أجزاء من حالة التدريب بين الموارد.",
+      "whyItMatters": "التحليل: تساعد في تجارب التدريب الكبيرة لكنها لا تلغي تكلفة GPU أو صعوبة توافق البيئة.",
+      "audience": "باحثو النماذج الكبيرة ومهندسو PyTorch.",
+      "nextSteps": [
+        "راجع دليل التثبيت والتوافق.",
+        "ابدأ بمثال رسمي صغير.",
+        "قارن الذاكرة وزمن الخطوة بخط أساس."
+      ],
+      "limitations": "قرأت README والترخيص ولم أشغّل تدريبًا؛ تكاليف GPU السحابية وتوافق الأجهزة متغيرة.",
+      "basis": "readme",
+      "reviewedAt": "2026-10-25T11:43:56+03:00",
+      "sources": [
+        {
+          "title": "README",
+          "url": "https://github.com/deepspeedai/DeepSpeed"
+        },
+        {
+          "title": "الترخيص",
+          "url": "https://github.com/deepspeedai/DeepSpeed/blob/master/LICENSE"
+        },
+        {
+          "title": "دليل البدء",
+          "url": "https://www.deepspeed.ai/getting-started/"
+        }
+      ],
+      "overview": "محرك تدريب متكامل مع PyTorch يستخدم إعدادات ZeRO والتوازي ونقل الحالات؛ يعمل محليًا أو على عنقود سحابي. بدائله PyTorch FSDP وAccelerate.",
+      "requirements": "Python وPyTorch متوافقان مع العتاد وأدوات GPU عند الحاجة. Apache-2.0؛ البرمجية مجانية لكن استئجار GPU قد يكلف مالًا، وترخيص أوزان النماذج مستقل.",
+      "quickStart": "راجع https://www.deepspeed.ai/getting-started/ وأنشئ بيئة Python معزولة وثبّت deepspeed وفق متطلبات الجهاز، ثم جرّب مثالًا رسميًا بإعداد ZeRO صغير.",
+      "improvements": [
+        {
+          "title": "مقارن إعدادات ZeRO",
+          "problem": "يصعب اختيار إعداد يوفر الذاكرة دون إبطاء التدريب.",
+          "approach": "أداة خارجية تقارن ثلاث تهيئات على نموذج ثابت.",
+          "stack": "Python، PyTorch، DeepSpeed",
+          "steps": [
+            "ثبّت البيانات والبذرة.",
+            "شغّل ثلاث تهيئات على الجهاز نفسه.",
+            "سجّل peak VRAM وزمن الخطوة.",
+            "اعرض جدول مفاضلات."
+          ],
+          "metric": "ثلاث تجارب بفارق إعادة أقل من 10%.",
+          "difficulty": "متوسط؛ 3–5 أيام.",
+          "risks": "تفاوت العتاد قد يجعل النتائج غير قابلة للتعميم.",
+          "sources": [
+            {
+              "title": "DeepSpeed",
+              "url": "https://github.com/deepspeedai/DeepSpeed"
+            }
+          ]
+        },
+        {
+          "title": "مدقق إعدادات قبل حجز GPU",
+          "problem": "قد تظهر أخطاء التوافق بعد بدء تشغيل مكلف.",
+          "approach": "MVP يفحص الإصدارات ومسارات البيانات وإعداد ZeRO دون تدريب.",
+          "stack": "Python، JSON",
+          "steps": [
+            "اجمع متطلبات المثال.",
+            "اقرأ الإصدارات والإعداد.",
+            "اعرض تقرير الأخطاء.",
+            "اختبر 20 حالة."
+          ],
+          "metric": "كشف 90% من أخطاء التهيئة المصطنعة.",
+          "difficulty": "متوسط؛ 4 أيام.",
+          "risks": "الفحص الساكن لا يضمن نجاح التدريب.",
+          "sources": [
+            {
+              "title": "DeepSpeed",
+              "url": "https://github.com/deepspeedai/DeepSpeed"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مختبر بصري لمراحل ZeRO",
+          "problem": "التوازي وتقسيم الذاكرة مفاهيم صعبة.",
+          "approach": "محاكاة تعليمية لتوزيع المعاملات على بطاقات افتراضية.",
+          "stack": "Streamlit، Python",
+          "steps": [
+            "نمذج حالة تدريب صغيرة.",
+            "أضف اختيار مرحلة ZeRO.",
+            "ارسم توزيع الذاكرة.",
+            "اختبر الفهم."
+          ],
+          "metric": "80% من 15 طالبًا يميزون المراحل.",
+          "difficulty": "متوسط؛ أسبوع.",
+          "risks": "التقدير النظري ليس استهلاكًا فعليًا.",
+          "sources": [
+            {
+              "title": "DeepSpeed",
+              "url": "https://github.com/deepspeedai/DeepSpeed"
+            },
+            {
+              "title": "Streamlit",
+              "url": "https://github.com/streamlit/streamlit"
+            }
+          ]
+        },
+        {
+          "title": "حاسبة ميزانية GPU",
+          "problem": "يصعب تقدير تكلفة التجارب مسبقًا.",
+          "approach": "أداة تدخل لها ساعات GPU وسعر الساعة وتعرض سيناريوهات.",
+          "stack": "Python، Streamlit",
+          "steps": [
+            "حدد المدخلات.",
+            "احسب ثلاثة سيناريوهات.",
+            "اعرض الافتراضات.",
+            "قارن بتجارب فعلية."
+          ],
+          "metric": "تقدير تكلفة خمس تجارب بهامش خطأ موثق.",
+          "difficulty": "سهل؛ 3 أيام.",
+          "risks": "الأسعار والأداء يتغيران.",
+          "sources": [
+            {
+              "title": "DeepSpeed",
+              "url": "https://github.com/deepspeedai/DeepSpeed"
+            }
+          ]
+        }
+      ],
+      "religious": []
+    },
+    "9874efc4c925cc500b": {
+      "url": "https://github.com/streamlit/streamlit",
+      "titleAr": "Streamlit: إنشاء تطبيقات بيانات تفاعلية بلغة Python",
+      "summaryAr": "Streamlit إطار مفتوح المصدر يحول سكربتات Python إلى لوحات بيانات وعناصر تحكم ومحادثات تفاعلية. يوضح README تشغيل streamlit hello ومثال منزلق، وخيار Community Cloud للنشر.",
+      "whyItMatters": "التحليل: يسرّع النماذج الأولية لكنه ليس بديلًا عن جميع أطر الويب.",
+      "audience": "طلاب Python ومحللو البيانات.",
+      "nextSteps": [
+        "ثبّت الحزمة في بيئة معزولة.",
+        "شغّل streamlit hello.",
+        "جرّب مثال منزلق محليًا."
+      ],
+      "limitations": "قرأت README والترخيص ولم أشغّل التطبيق؛ شروط وحصص Community Cloud قد تتغير.",
+      "basis": "readme",
+      "reviewedAt": "2026-10-25T11:43:56+03:00",
+      "sources": [
+        {
+          "title": "README",
+          "url": "https://github.com/streamlit/streamlit"
+        },
+        {
+          "title": "الترخيص",
+          "url": "https://github.com/streamlit/streamlit/blob/develop/LICENSE"
+        },
+        {
+          "title": "التوثيق",
+          "url": "https://docs.streamlit.io/get-started"
+        }
+      ],
+      "overview": "يعرّف تطبيق Python واجهته عبر st.*، مع حالة وتخزين مؤقت؛ يعمل محليًا أو ينشر عبر خدمة خارجية. بدائل محتملة: Gradio وDash.",
+      "requirements": "Python بإصدار مدعوم وpip ومتصفح. Apache-2.0؛ استضافة التطبيق أو واجهات النماذج الخارجية قد تكون مدفوعة.",
+      "quickStart": "pip install streamlit ثم streamlit hello. أنشئ streamlit_app.py باستخدام st.slider وst.write، وشغّله بـ streamlit run streamlit_app.py.",
+      "improvements": [
+        {
+          "title": "فاحص RTL للتطبيقات العربية",
+          "problem": "قد تتعارض مكونات خارجية مع اتجاه النص.",
+          "approach": "فحوص بصرية لواجهات عربية على عدة شاشات.",
+          "stack": "Python، Streamlit، Playwright",
+          "steps": [
+            "أنشئ نماذج عربية.",
+            "التقط لقطات مرجعية.",
+            "قارن بعد التحديثات.",
+            "وثّق الأخطاء."
+          ],
+          "metric": "تغطية 15 مكونًا على 3 أحجام شاشة.",
+          "difficulty": "متوسط؛ أسبوع.",
+          "risks": "اختلاف الخطوط قد يسبب إنذارات كاذبة.",
+          "sources": [
+            {
+              "title": "Streamlit",
+              "url": "https://github.com/streamlit/streamlit"
+            }
+          ]
+        },
+        {
+          "title": "مراجع زمن التفاعل",
+          "problem": "قد تصبح الواجهة بطيئة مع البيانات.",
+          "approach": "قياس المقاطع الثقيلة ومقارنة التحسينات.",
+          "stack": "Python، Streamlit",
+          "steps": [
+            "أنشئ مثالًا بطيئًا.",
+            "قس المقاطع.",
+            "جرّب التخزين المؤقت.",
+            "قارن الزمن."
+          ],
+          "metric": "خفض زمن التفاعل 30% في مثالين.",
+          "difficulty": "متوسط؛ 4 أيام.",
+          "risks": "أداة القياس نفسها تستهلك وقتًا.",
+          "sources": [
+            {
+              "title": "Streamlit",
+              "url": "https://github.com/streamlit/streamlit"
+            },
+            {
+              "title": "توثيق caching",
+              "url": "https://docs.streamlit.io/develop/concepts/architecture/caching"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مختبر Python تفاعلي عربي",
+          "problem": "المعرفة النظرية تحتاج تجارب عملية.",
+          "approach": "تطبيق لمفاهيم القوائم والدوال بتغذية راجعة.",
+          "stack": "Python، Streamlit",
+          "steps": [
+            "اختر خمس مهارات.",
+            "أنشئ تجارب مرئية.",
+            "أضف تقييمًا.",
+            "قس تقدم المتعلمين."
+          ],
+          "metric": "تحسن 20 طالبًا بمقدار 20 نقطة مئوية.",
+          "difficulty": "متوسط؛ أسبوعان.",
+          "risks": "تنفيذ شيفرة غير موثوقة يحتاج عزلًا.",
+          "sources": [
+            {
+              "title": "Streamlit",
+              "url": "https://github.com/streamlit/streamlit"
+            },
+            {
+              "title": "Python",
+              "url": "https://docs.python.org/3/tutorial/"
+            }
+          ]
+        },
+        {
+          "title": "لوحة تدقيق جودة مصادر الأخبار",
+          "problem": "يصعب رؤية السجلات ناقصة المصادر.",
+          "approach": "أداة مستقلة للقراءة فقط تفحص حقول JSON والمراجع.",
+          "stack": "Streamlit، JSON",
+          "steps": [
+            "اقرأ ملفات JSON.",
+            "تحقق من الحقول.",
+            "اعرض تقريرًا.",
+            "صدّر سجل انتظار."
+          ],
+          "metric": "كشف كل النواقص البنيوية في 50 سجل اختبار.",
+          "difficulty": "متوسط؛ 4 أيام.",
+          "risks": "الفحص البنيوي لا يثبت صحة الأخبار.",
+          "sources": [
+            {
+              "title": "Streamlit",
+              "url": "https://github.com/streamlit/streamlit"
+            },
+            {
+              "title": "GitHub Actions",
+              "url": "https://docs.github.com/en/actions"
+            }
+          ]
+        }
+      ],
+      "religious": []
+    }
+  }
+}
