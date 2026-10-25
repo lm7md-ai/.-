@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-25T23:48:46.161Z",
+  "feedGeneratedAt": "2026-10-25T23:15:08+00:00",
+  "feedItems": 699,
+  "incomingFilesChecked": 16,
+  "incomingRecordsChecked": 128,
+  "previouslyImportedAndMatching": 125,
+  "matchingNotImported": 0,
+  "unmatched": 3,
+  "urlMismatch": 0,
+  "expired": 0,
+  "needsCorrection": 0,
+  "items": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+      "state": "not_in_feed"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "state": "not_in_feed"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "state": "not_in_feed"
+    }
+  ],
+  "action": "Preserve original id and url. Do not import until both match a future feed.",
+  "verification": "Equivalent in-memory structural checks; official Python validate/import and unittest were not executed locally. Require GitHub CI validation before merge."
+}
