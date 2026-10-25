@@ -1,0 +1,397 @@
+{
+  "version": 1,
+  "items": {
+    "6400feb681472530a6": {
+      "url": "https://openai.com/index/forward-deployed-engineering-means",
+      "titleAr": "OpenAI توضح دور مهندسي النشر المباشر في تحويل النماذج إلى تطبيقات إنتاجية",
+      "summaryAr": "نشرت الشركة في 22 أكتوبر شرحًا لعمل فريق FDE: يبدأ بتحديد نتيجة قابلة للقياس، ثم اختبار سير العمل مع العميل وتعميم الأدوات بعد نجاحها. تستشهد بحالات من تصنيع الرقائق وخدمة العملاء والمحاسبة.",
+      "whyItMatters": "التحليل: نجاح الوكيل يحتاج اختبارات قبول وقياس تكرار النتائج والتكلفة، لا عرضًا واحدًا.",
+      "audience": "مطورو الوكلاء والمهندسون.",
+      "limitations": "نسب التحسن من حالات أعلنتها الشركة وليست نتائج اختبار مستقل؛ لم يحدد المقال أسعارًا موحدة أو توافرًا في جميع البلدان.",
+      "nextSteps": [
+        "اقرأ المصدر الأصلي والتفاصيل الفنية.",
+        "حدد أثره على مشروعك وقارن الادعاءات بقياسات مستقلة.",
+        "راجع القيود والتكلفة قبل الاعتماد عليه."
+      ],
+      "basis": "article",
+      "sources": [
+        {
+          "title": "المصدر الأصلي المقروء",
+          "url": "https://openai.com/index/forward-deployed-engineering-means"
+        }
+      ],
+      "reviewedAt": "2026-10-25T14:48:42.242Z"
+    },
+    "3f1a11956436b16738": {
+      "url": "https://openai.com/index/broad-access-through-consistent-standards",
+      "titleAr": "OpenAI تعلن مواءمة معايير السلامة وتحديث سياسة الاستخدام",
+      "summaryAr": "أعلنت الشركة في 21 أكتوبر تنسيق ضوابط وصول النماذج عبر شركائها، وقالت إن سياسة استخدام محدثة تسري في 20 نوفمبر 2026 وتتضمن متطلبات مراجعة لبعض خدمات الوصول المباشر مثل بوابات النماذج.",
+      "whyItMatters": "التحليل: يجب فحص شروط توزيع الوصول إلى النماذج قبل بناء بوابة عامة.",
+      "audience": "مطورو بوابات النماذج والشركات.",
+      "limitations": "سياسة الشركة لا تعني حكمًا قانونيًا عامًا أو إلزامًا مماثلًا لكل الاستخدامات الشخصية؛ راجع الشروط عند سريانها.",
+      "nextSteps": [
+        "اقرأ المصدر الأصلي والتفاصيل الفنية.",
+        "حدد أثره على مشروعك وقارن الادعاءات بقياسات مستقلة.",
+        "راجع القيود والتكلفة قبل الاعتماد عليه."
+      ],
+      "basis": "article",
+      "sources": [
+        {
+          "title": "المصدر الأصلي المقروء",
+          "url": "https://openai.com/index/broad-access-through-consistent-standards"
+        }
+      ],
+      "reviewedAt": "2026-10-25T14:48:42.242Z"
+    },
+    "94a5f6526eada9bc0f": {
+      "url": "https://huggingface.co/blog/nvidia/kumo-relational",
+      "titleAr": "NVIDIA تقدم Kumo Relational للتنبؤ من قواعد البيانات العلائقية",
+      "summaryAr": "عرضت NVIDIA نموذجًا مدربًا مسبقًا يستفيد من علاقات الجداول والمفاتيح والتواريخ للتنبؤ من أمثلة سياقية. تدعي الشركة تفوقًا في مقارنات تشمل 41 مهمة ضمن 15 قاعدة بيانات، ونشرت شيفرة وأوزانًا.",
+      "whyItMatters": "التحليل: قد يقلل هندسة الميزات، لكنه لا يغني عن اختبار زمني مستقل وخط أساس بسيط.",
+      "audience": "طلاب تعلم الآلة ومهندسو البيانات.",
+      "limitations": "النتائج من المطور ولم نكررها؛ يتطلب GPU، وترخيص الأوزان OpenMDW 1.1 يختلف عن Apache-2.0 للشيفرة، ولم نتحقق من أسعار NIM.",
+      "nextSteps": [
+        "اقرأ المصدر الأصلي والتفاصيل الفنية.",
+        "حدد أثره على مشروعك وقارن الادعاءات بقياسات مستقلة.",
+        "راجع القيود والتكلفة قبل الاعتماد عليه."
+      ],
+      "basis": "article",
+      "sources": [
+        {
+          "title": "المصدر الأصلي المقروء",
+          "url": "https://huggingface.co/blog/nvidia/kumo-relational"
+        }
+      ],
+      "reviewedAt": "2026-10-25T14:48:42.242Z"
+    },
+    "40a01666d562060bfd": {
+      "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
+      "titleAr": "VocabX: تخصيص مفردات النماذج الصغيرة لتقليل تكلفة الاستدلال",
+      "summaryAr": "عرض فريق Dharma-AI طريقة لاختيار رموز النص وفق تكلفة الإخراج والإدخال. يذكر الفريق انخفاضًا مقاسًا قدره 77% في تكلفة استدلال مقيم مقالات برتغالية باستخدام Qwen3-4B مع تقليل رموز الإجابة.",
+      "whyItMatters": "التحليل: تخصيص tokenizer قد يخفض التكلفة في المهام المتكررة بشرط الحفاظ على جودة القرار.",
+      "audience": "باحثو النماذج الصغيرة ومهندسو الاستدلال.",
+      "limitations": "النتيجة تخص RTX 5090 وvLLM ومهمة واحدة؛ الورقة الكاملة كانت قيد الإعداد ولم تُختبر النتيجة على العربية.",
+      "nextSteps": [
+        "اقرأ المصدر الأصلي والتفاصيل الفنية.",
+        "حدد أثره على مشروعك وقارن الادعاءات بقياسات مستقلة.",
+        "راجع القيود والتكلفة قبل الاعتماد عليه."
+      ],
+      "basis": "article",
+      "sources": [
+        {
+          "title": "المصدر الأصلي المقروء",
+          "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization"
+        }
+      ],
+      "reviewedAt": "2026-10-25T14:48:42.242Z"
+    },
+    "8c56e44a24b1f6b86b": {
+      "url": "https://arstechnica.com/ai/2026/10/intel-gets-waiver-after-worries-fuzzy-us-ban-on-foreign-made-robots-may-hit-fabs/",
+      "titleAr": "Intel تحصل على إعفاء مؤقت لاستخدام مركبات روبوتية في مصانع الرقائق",
+      "summaryAr": "ذكرت Ars Technica أن FCC منحت Intel في 22 أكتوبر إعفاءً لمدة عام لمركبات موجهة آليًا بسبب غموض انطباق قيود الروبوتات الأجنبية عليها. تفاصيل بعض المعدات غير علنية.",
+      "whyItMatters": "التحليل: الغموض التنظيمي قد يؤثر على صيانة خطوط إنتاج الرقائق المعتمدة على معدات متخصصة.",
+      "audience": "مهندسو المصانع وسلاسل الإمداد.",
+      "limitations": "هذا إعفاء محدد لا يعني إلغاء القيود، والتقرير الصحفي يستند إلى قرار تنظيمي وتصريحات الشركة.",
+      "nextSteps": [
+        "اقرأ المصدر الأصلي والتفاصيل الفنية.",
+        "حدد أثره على مشروعك وقارن الادعاءات بقياسات مستقلة.",
+        "راجع القيود والتكلفة قبل الاعتماد عليه."
+      ],
+      "basis": "article",
+      "sources": [
+        {
+          "title": "المصدر الأصلي المقروء",
+          "url": "https://arstechnica.com/ai/2026/10/intel-gets-waiver-after-worries-fuzzy-us-ban-on-foreign-made-robots-may-hit-fabs/"
+        }
+      ],
+      "reviewedAt": "2026-10-25T14:48:42.242Z"
+    },
+    "ffa902d0d6a1e02169": {
+      "url": "https://arstechnica.com/security/2026/10/disgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle/",
+      "titleAr": "eMudhra تنسحب من شهادات TLS العالمية بعد كشف مفاتيح وسيطة ضعيفة",
+      "summaryAr": "نقلت Ars Technica إعلان eMudhra الخروج من نشاط SSL/TLS العالمي بعد اكتشاف شهادات وسيطة بمفاتيح ضعيفة. أرجعت الشركة المشكلة مبدئيًا إلى خلل في توليد ونقل المفاتيح وأخطاء مراجعة.",
+      "whyItMatters": "التحليل: سلامة HTTPS تعتمد على إدارة المفاتيح والتدقيق العملي لا قوة الخوارزمية وحدها.",
+      "audience": "مهندسو الأمن والبنية التحتية.",
+      "limitations": "التحقيق في السبب النهائي لم يكتمل وقت التقرير؛ لم نفحص شهادات أو أجهزة، وقد تتأخر بعض الأنظمة في تطبيق الحظر.",
+      "nextSteps": [
+        "اقرأ المصدر الأصلي والتفاصيل الفنية.",
+        "حدد أثره على مشروعك وقارن الادعاءات بقياسات مستقلة.",
+        "راجع القيود والتكلفة قبل الاعتماد عليه."
+      ],
+      "basis": "article",
+      "sources": [
+        {
+          "title": "المصدر الأصلي المقروء",
+          "url": "https://arstechnica.com/security/2026/10/disgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle/"
+        }
+      ],
+      "reviewedAt": "2026-10-25T14:48:42.242Z"
+    },
+    "112ba4283cccf5b146": {
+      "url": "https://github.com/ultralytics/ultralytics",
+      "titleAr": "Ultralytics: مكتبة Python للكشف والتصنيف والتتبع",
+      "summaryAr": "توفر Ultralytics نماذج YOLO وواجهات Python وCLI للكشف والتقسيم والتصنيف والوضعيات والتتبع، مع توثيق التدريب والتقييم والتصدير.",
+      "whyItMatters": "التحليل: أداة عملية لتعلم الرؤية الحاسوبية بشرط تقييم الدقة على صور البيئة المستهدفة.",
+      "audience": "طلاب Python ومطورو الرؤية الحاسوبية.",
+      "overview": "تعتمد المكتبة PyTorch وتوحد التنبؤ والتدريب والتقييم والتصدير. يمكن تشغيلها محليًا على CPU أو GPU أو في السحابة بتكلفة عتاد منفصلة. البدائل Detectron2 وMMDetection وOpenCV حسب المهمة.",
+      "requirements": "بحسب الدليل: Python 3.8+ وPyTorch 1.8+ مع أوزان واعتماديات. يتطلب تنزيل الأوزان اتصالًا أوليًا. الشيفرة AGPL-3.0 أو ترخيص Enterprise منفصل، ويجب مراجعة تراخيص البيانات والأوزان.",
+      "quickStart": "أنشئ بيئة افتراضية ثم نفذ pip install -U ultralytics، وبعدها yolo predict model=yolo26n.pt على صور العينة؛ راجع المخرجات قبل اختبار صور مرخصة.",
+      "nextSteps": [
+        "اختر صورًا مرخصة ووسومًا مرجعية.",
+        "قِس الدقة والزمن.",
+        "راجع شروط الترخيص."
+      ],
+      "limitations": "مراجعة README ودليل التثبيت والترخيص دون تشغيل؛ YOLO27 مذكور كإصدار قادم وقت المراجعة، والسرعة تعتمد على العتاد.",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "README الرسمي",
+          "url": "https://github.com/ultralytics/ultralytics"
+        },
+        {
+          "title": "دليل التثبيت",
+          "url": "https://docs.ultralytics.com/quickstart"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "تقرير دقة حسب ظروف التصوير",
+          "problem": "المتوسط يخفي ضعف الأداء في ظروف محددة.",
+          "approach": "أداة تقيس mAP والاسترجاع لكل شريحة تصوير وتصدر تقريرًا.",
+          "stack": "Python, Ultralytics, pandas",
+          "steps": [
+            "وسم ظروف صور مرخصة.",
+            "تشغيل التنبؤ.",
+            "حساب المقاييس لكل شريحة.",
+            "تصدير التقرير."
+          ],
+          "metric": "فارق mAP بين الشرائح.",
+          "difficulty": "متوسط؛ 3–5 أيام تقديرية.",
+          "risks": "العينات الصغيرة قد تضلل النتائج.",
+          "sources": [
+            {
+              "title": "README الرسمي",
+              "url": "https://github.com/ultralytics/ultralytics"
+            },
+            {
+              "title": "دليل التثبيت",
+              "url": "https://docs.ultralytics.com/quickstart"
+            }
+          ]
+        },
+        {
+          "title": "مقارن تكلفة استدلال CPU وGPU",
+          "problem": "السرعة لا تكشف تكلفة التشغيل.",
+          "approach": "قياس الإحماء وزمن p95 والذاكرة مع تكلفة تقديرية.",
+          "stack": "Python, Ultralytics, psutil",
+          "steps": [
+            "تثبيت الأوزان والإصدارات.",
+            "اختيار عينات ثابتة.",
+            "تكرار التنبؤ.",
+            "حساب p95 والذاكرة."
+          ],
+          "metric": "زمن p95 على كل جهاز.",
+          "difficulty": "متوسط؛ 2–4 أيام تقديرية.",
+          "risks": "الحمل الخلفي وأسعار العتاد تؤثر على القياس.",
+          "sources": [
+            {
+              "title": "README الرسمي",
+              "url": "https://github.com/ultralytics/ultralytics"
+            },
+            {
+              "title": "دليل التثبيت",
+              "url": "https://docs.ultralytics.com/quickstart"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مختبر ثبات تتبع الأجسام",
+          "problem": "يصعب التفريق بين الكشف وثبات هوية الجسم.",
+          "approach": "مقارنة إعدادين على فيديوهات مرخصة.",
+          "stack": "Python, Ultralytics, OpenCV",
+          "steps": [
+            "اختيار فيديوهات مرخصة.",
+            "تشغيل إعدادين.",
+            "حساب تبدل الهوية.",
+            "عرض الفروق."
+          ],
+          "metric": "تبدلات الهوية لكل ألف إطار.",
+          "difficulty": "متوسط؛ 4–6 أيام تقديرية.",
+          "risks": "تجنب بيانات الأشخاص دون موافقة.",
+          "sources": [
+            {
+              "title": "README الرسمي",
+              "url": "https://github.com/ultralytics/ultralytics"
+            },
+            {
+              "title": "دليل التثبيت",
+              "url": "https://docs.ultralytics.com/quickstart"
+            }
+          ]
+        },
+        {
+          "title": "مدقق وسوم صور YOLO",
+          "problem": "أخطاء الوسوم تفسد التدريب.",
+          "approach": "CLI يفحص الإحداثيات والملفات المفقودة.",
+          "stack": "Python, Pillow, pytest",
+          "steps": [
+            "قراءة الوسوم.",
+            "فحص النطاقات.",
+            "اكتشاف المفقود.",
+            "تصدير تقرير."
+          ],
+          "metric": "نسبة الأخطاء المكتشفة في بيانات اختبار مصطنعة.",
+          "difficulty": "سهل إلى متوسط؛ يومان تقديريًا.",
+          "risks": "صيغ الوسوم تختلف بحسب المهمة.",
+          "sources": [
+            {
+              "title": "README الرسمي",
+              "url": "https://github.com/ultralytics/ultralytics"
+            },
+            {
+              "title": "دليل التثبيت",
+              "url": "https://docs.ultralytics.com/quickstart"
+            }
+          ]
+        }
+      ],
+      "religious": [],
+      "reviewedAt": "2026-10-25T14:48:42.242Z"
+    },
+    "0604d6a7a7d7afd211": {
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "titleAr": "MoneyPrinterTurbo: أتمتة إنتاج فيديوهات قصيرة باستخدام AI",
+      "summaryAr": "مشروع Python ينسق كتابة النص وجلب الوسائط والصوت والترجمة الزمنية وتركيب فيديو قصير عبر WebUI وCLI وAPI، مع احتمال استخدام خدمات سحابية.",
+      "whyItMatters": "التحليل: نموذج تطبيقي لربط خدمات AI في سير عمل، لكنه يحتاج مراجعة الحقائق وحقوق المحتوى.",
+      "audience": "طلاب Python ومطورو الأتمتة ومنتجو المحتوى التعليمي.",
+      "overview": "يقدم WebUI وAPI وCLI مع config.toml لاختيار خدمات النص والصوت والمواد، ثم تركيب الفيديو. يعمل محليًا باستخدام pip أو uv أو Docker، لكن بعض المزودين سحابيون ومدفوعون. البدائل FFmpeg والتحرير اليدوي.",
+      "requirements": "Python 3.11+ وFFmpeg للتركيب وفق README، وقد تحتاج الخدمات مفاتيح API مدفوعة. ترخيص الشيفرة MIT لا يمنح حق استخدام صور أو موسيقى أو خطوط طرف ثالث.",
+      "quickStart": "أنشئ بيئة Python 3.11 ثم نفذ python -m pip install mpt وبعدها mpt webui؛ اضبط config.toml حسب الخدمات. خيار Docker موثق عبر docker compose -f docker-compose.release.yml up.",
+      "nextSteps": [
+        "حدد موضوعًا ومواد مرخصة.",
+        "أنتج مقطعًا تجريبيًا وراجعه.",
+        "قِس تكلفة الخدمات وزمن التنفيذ."
+      ],
+      "limitations": "تمت مراجعة README والترخيص دون تشغيل. جودة العربية غير مضمونة، وبعض الخدمات مدفوعة وحقوق الوسائط تحتاج مراجعة.",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "README الرسمي",
+          "url": "https://github.com/harry0703/MoneyPrinterTurbo"
+        },
+        {
+          "title": "README الإنجليزي",
+          "url": "https://github.com/harry0703/MoneyPrinterTurbo/blob/main/README-en.md"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "تدقيق ترجمة الفيديو العربية",
+          "problem": "قد تظهر مشاكل اتجاه RTL أو توقيت السطور.",
+          "approach": "معاينة قبل التصدير تفحص الاتجاه وطول السطر والتوقيت.",
+          "stack": "Python, FFmpeg, Pillow",
+          "steps": [
+            "جمع عينات مرخصة.",
+            "توليد معاينة.",
+            "فحص النص والتوقيت.",
+            "إصدار تقرير."
+          ],
+          "metric": "نسبة أخطاء العرض المكتشفة.",
+          "difficulty": "متوسط؛ 4–6 أيام تقديرية.",
+          "risks": "اختلاف الخطوط والمشغلات يحتاج مراجعة بشرية.",
+          "sources": [
+            {
+              "title": "README الرسمي",
+              "url": "https://github.com/harry0703/MoneyPrinterTurbo"
+            },
+            {
+              "title": "README الإنجليزي",
+              "url": "https://github.com/harry0703/MoneyPrinterTurbo/blob/main/README-en.md"
+            }
+          ]
+        },
+        {
+          "title": "سجل حقوق الوسائط",
+          "problem": "تضيع مصادر الصور والموسيقى أثناء الإنتاج.",
+          "approach": "Manifest يسجل مصدر كل أصل وترخيصه واعتماد المحرر.",
+          "stack": "Python, JSON, Streamlit",
+          "steps": [
+            "تحديد حقول الترخيص.",
+            "جمع مصادر الأصول.",
+            "التحقق من الحقول.",
+            "حفظ التقرير مع الفيديو."
+          ],
+          "metric": "نسبة الأصول ذات ترخيص موثق.",
+          "difficulty": "متوسط؛ 3–4 أيام تقديرية.",
+          "risks": "التوثيق لا يغني عن إذن صاحب الحقوق.",
+          "sources": [
+            {
+              "title": "README الرسمي",
+              "url": "https://github.com/harry0703/MoneyPrinterTurbo"
+            },
+            {
+              "title": "README الإنجليزي",
+              "url": "https://github.com/harry0703/MoneyPrinterTurbo/blob/main/README-en.md"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مولد شروحات Python القصيرة",
+          "problem": "إعداد فيديو لكل مفهوم برمجي يستغرق وقتًا.",
+          "approach": "تحويل مثال Python مجرب إلى سيناريو ومقطع يراجعه معلم.",
+          "stack": "Python, pytest, MoneyPrinterTurbo",
+          "steps": [
+            "اختيار مثال مرخص.",
+            "تشغيله والتحقق من نتيجته.",
+            "إنشاء السيناريو.",
+            "مراجعة المقطع."
+          ],
+          "metric": "نسبة المقاطع الخالية من أخطاء برمجية.",
+          "difficulty": "متوسط؛ أسبوع تقديري.",
+          "risks": "قد يفسر النموذج الكود خطأ.",
+          "sources": [
+            {
+              "title": "README الرسمي",
+              "url": "https://github.com/harry0703/MoneyPrinterTurbo"
+            },
+            {
+              "title": "README الإنجليزي",
+              "url": "https://github.com/harry0703/MoneyPrinterTurbo/blob/main/README-en.md"
+            }
+          ]
+        },
+        {
+          "title": "مراجع ادعاءات الفيديو التعليمي",
+          "problem": "قد تحتوي المقاطع المولدة معلومات بلا مصادر.",
+          "approach": "ربط ادعاءات السيناريو بمراجع أصلية قبل الاعتماد.",
+          "stack": "Python, JSON, واجهة مراجعة",
+          "steps": [
+            "استخراج الادعاءات.",
+            "ربطها بمصادر.",
+            "تمييز غير المؤكد.",
+            "طلب اعتماد المحرر."
+          ],
+          "metric": "نسبة الادعاءات ذات مصادر مناسبة.",
+          "difficulty": "مرتفع؛ 1–2 أسبوع تقديري.",
+          "risks": "وجود رابط لا يثبت صحة المعلومة.",
+          "sources": [
+            {
+              "title": "README الرسمي",
+              "url": "https://github.com/harry0703/MoneyPrinterTurbo"
+            },
+            {
+              "title": "README الإنجليزي",
+              "url": "https://github.com/harry0703/MoneyPrinterTurbo/blob/main/README-en.md"
+            }
+          ]
+        }
+      ],
+      "religious": [],
+      "reviewedAt": "2026-10-25T14:48:42.242Z"
+    }
+  }
+}
