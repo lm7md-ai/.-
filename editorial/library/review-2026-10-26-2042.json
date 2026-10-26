@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-26T20:42:41+03:00",
+  "publicationStatus": "research_library_only_not_in_feed_not_published_as_cards",
+  "sourceCatalog": "editorial/library/catalog-2026-10-24.json",
+  "metricMeasurementAt": "2026-10-26T20:42:41+03:00",
+  "method": "GitHub API repository metadata plus original README and license text; no installation, benchmarks or runtime tests",
+  "entries": [
+    {
+      "repository": "python/cpython",
+      "canonicalUrl": "https://github.com/python/cpython",
+      "catalogPriority": 5,
+      "classification": "established_active",
+      "archived": false,
+      "inFeedAtReview": false,
+      "starsMeasured": 77774,
+      "pushedAt": "2026-10-26T17:26:50Z",
+      "licenseApiValue": "NOASSERTION",
+      "verifiedLicense": "Python Software Foundation License Version 2; bundled third-party components may have distinct terms",
+      "licenseEvidence": "https://github.com/python/cpython/blob/main/LICENSE",
+      "officialReadme": "https://github.com/python/cpython/blob/main/README.rst",
+      "officialDocs": "https://devguide.python.org/",
+      "overview": "CPython is the reference Python implementation and source tree, not a third-party Python learning package. The checked main README labels itself Python 3.16 alpha development; that is not a stable-release recommendation.",
+      "requirements": "To build on Unix-like systems, consult the official Developer Guide for platform-specific dependencies, a C toolchain and optional libraries. On Windows use PCbuild instructions. End users normally install official stable binaries rather than compiling main.",
+      "quickStart": "For source exploration read README.rst and Developer Guide, clone a tagged stable release only if a local build is required, then follow platform build instructions and test. No commands executed.",
+      "costAndDeployment": "Source available without licensing fee. Builds run locally; compute and maintenance cost depend on platform. No hosted API is required to read or compile the source.",
+      "alternatives": [
+        "PyPy for a different Python implementation",
+        "Official prebuilt CPython releases for users who do not need source builds"
+      ],
+      "limitations": "Main development README may change daily. GitHub license API NOASSERTION does not mean absence of license. Activity and stars are a timestamped API snapshot, not a popularity trend.",
+      "researchIdeas": [
+        "Map how parser/compiler/runtime stages connect with evidence from official source files.",
+        "Build a compatibility matrix of language changes against stable Python releases."
+      ],
+      "sources": [
+        {
+          "title": "CPython README",
+          "url": "https://github.com/python/cpython/blob/main/README.rst"
+        },
+        {
+          "title": "CPython LICENSE",
+          "url": "https://github.com/python/cpython/blob/main/LICENSE"
+        },
+        {
+          "title": "Python Developer Guide",
+          "url": "https://devguide.python.org/"
+        }
+      ]
+    },
+    {
+      "repository": "godotengine/godot",
+      "canonicalUrl": "https://github.com/godotengine/godot",
+      "catalogPriority": 23,
+      "classification": "established_active",
+      "archived": false,
+      "inFeedAtReview": false,
+      "starsMeasured": 119108,
+      "pushedAt": "2026-10-26T16:23:00Z",
+      "licenseApiValue": "MIT",
+      "verifiedLicense": "MIT",
+      "licenseEvidence": "https://github.com/godotengine/godot/blob/master/LICENSE.txt",
+      "officialReadme": "https://github.com/godotengine/godot/blob/master/README.md",
+      "officialDocs": "https://docs.godotengine.org/",
+      "overview": "Godot is an open-source 2D/3D game engine with an editor and export options for desktop, mobile and web. Console distribution has additional platform requirements and should not be assumed to be a one-click public export.",
+      "requirements": "For ordinary use download the official editor and suitable export templates. Building the engine from source requires platform-specific dependencies documented by the Godot maintainers.",
+      "quickStart": "Download the editor from the official site, read the beginner documentation and open an official demo project. For engine development follow the compilation guide. No commands executed.",
+      "costAndDeployment": "MIT-licensed engine with no engine royalties. Platform distribution, hardware, asset licensing, and console access can still have separate costs and conditions. Can run locally without a hosted AI service.",
+      "alternatives": [
+        "Unity for another game-engine workflow",
+        "Unreal Engine for another 3D engine workflow"
+      ],
+      "limitations": "Stars and last push are metadata snapshots only. The core engine MIT license does not automatically license all third-party assets, demos or platform SDKs.",
+      "researchIdeas": [
+        "Compare Godot 3D scene performance on a fixed public demo across supported renderers.",
+        "Create a verified 3D car interaction tutorial using licensed reference images and tested controls."
+      ],
+      "sources": [
+        {
+          "title": "Godot README",
+          "url": "https://github.com/godotengine/godot/blob/master/README.md"
+        },
+        {
+          "title": "Godot LICENSE",
+          "url": "https://github.com/godotengine/godot/blob/master/LICENSE.txt"
+        },
+        {
+          "title": "Godot documentation",
+          "url": "https://docs.godotengine.org/"
+        }
+      ]
+    }
+  ],
+  "developerDisplayRequirements": [
+    "Expose a historical-library route separate from active feed, with clear 'research only / not published as a feed item' badge.",
+    "Show canonical repository, license evidence, archived status, measured star count and timestamp; never label stars as today's growth.",
+    "Keep historical dossier links stable if projects leave the rotating feed.",
+    "Provide source citations and do not display proposed research ideas as completed or tested features."
+  ]
+}

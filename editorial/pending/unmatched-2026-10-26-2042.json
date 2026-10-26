@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-26T20:42:41+03:00",
+  "baseMainSha": "60c63977c5acc650955d370ddbc2d9aa2ffae086",
+  "feedGeneratedAt": "2026-10-26T14:49:09+00:00",
+  "checkedIncomingFiles": 22,
+  "audit": {
+    "previousBatchRecords": 166,
+    "alreadyImportedAndMatching": 156,
+    "matchingNotImported": 0,
+    "notInFeedNotImported": 3,
+    "previouslyImportedOutOfFeed": 7,
+    "urlMismatches": 0,
+    "expiredConfirmed": 0,
+    "needsStructuralCorrection": 0,
+    "importedFromBacklog": 0,
+    "newRecordsPrepared": 5,
+    "existingRecordsPreserved": 166,
+    "mergedRecordCount": 171,
+    "structuralNote": "All 22 prior incoming files were parsed as JSON and their id/url pairs compared literally with current feed and imported editorial. Official per-file Python validate/import and local unittest were not executed because repository execution was unavailable; equivalent JS validation covered incoming and complete merged editorial. CI must validate merged output before merge."
+  },
+  "unmatched": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+      "classification": "not_in_current_feed_not_imported",
+      "action": "wait for original id and url; do not remap by title"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "classification": "not_in_current_feed_not_imported",
+      "action": "wait for original id and url; do not remap by title"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "classification": "not_in_current_feed_not_imported",
+      "action": "wait for original id and url; do not remap by title"
+    },
+    {
+      "id": "30e283a9b3f70e35d8",
+      "url": "https://github.com/astral-sh/uv",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve imported editorial unchanged; await same original id and url"
+    },
+    {
+      "id": "84d5e70408465cd957",
+      "url": "https://www.infoq.com/news/2026/10/tornadovm-7-gpu/",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-2043.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve imported editorial unchanged; await same original id and url"
+    },
+    {
+      "id": "f6a301346a05e615cd",
+      "url": "https://www.anthropic.com/research/formal-verification",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve imported editorial unchanged; await same original id and url"
+    },
+    {
+      "id": "4f518f178a0999f4d6",
+      "url": "https://xingjianbai.com/reactive-optimizers/",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-25-1143.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve imported editorial unchanged; await same original id and url"
+    },
+    {
+      "id": "402510afde2d9adf5a",
+      "url": "https://github.com/astroautomata/PySR",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-25-1143.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve imported editorial unchanged; await same original id and url"
+    },
+    {
+      "id": "1ac9c976988acd153a",
+      "url": "https://polygonjs.com/blog/why-i-rewrote-polygon-from-scratch",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-25-1442.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve imported editorial unchanged; await same original id and url"
+    },
+    {
+      "id": "d0eaca9f562278f8ee",
+      "url": "https://catlikecoding.com/godot/procedural-gpu-patterns/09-tiling-noise/",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-25-1442.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve imported editorial unchanged; await same original id and url"
+    }
+  ],
+  "priorProjectsReview": {
+    "checkedAt": "2026-10-26T20:42:41+03:00",
+    "method": "GitHub repository metadata, not runtime testing",
+    "repositories": [
+      "gradio-app/gradio",
+      "thedotmack/claude-mem",
+      "ultralytics/ultralytics",
+      "harry0703/MoneyPrinterTurbo",
+      "microsoft/AI-For-Beginners",
+      "usebruno/bruno",
+      "keras-team/keras",
+      "k2-fsa/sherpa-onnx"
+    ],
+    "allNonArchived": true,
+    "ideasOrderPreserved": true
+  },
+  "developerDisplayRequirements": [
+    "Keep library records separate from feed and editorial; do not show unpublished library dossiers as feed cards.",
+    "Show canonical repository link, archived/active status, license provenance, and measurement timestamp.",
+    "Persist durable historical dossier links even when active feed rotates.",
+    "Distinguish untested editorial proposals from implemented and tested features."
+  ]
+}
