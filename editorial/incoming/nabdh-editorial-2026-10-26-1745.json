@@ -1,0 +1,495 @@
+{
+  "version": 1,
+  "items": {
+    "929adda0efb128e5cb": {
+      "url": "https://arxiv.org/abs/2610.31846",
+      "titleAr": "Self-Direction: كيف يحوّل وكيل الذكاء الاصطناعي أخطاءه إلى دروس قابلة لإعادة الاستخدام؟",
+      "summaryAr": "تقترح ورقة Self-Direction أن يراجع الوكيل مسار المهمة الفاشلة ثم يدرّب محوّل LoRA صغيرًا يمثل درسًا خاصًا بهذا الخطأ، ويخزنه في مكتبة قابلة للاستدعاء عند ظهور مهام مشابهة. أبقى الباحثون أوزان النموذج الأساسية مجمّدة، وذكروا أن المحوّل يضيف نحو 0.02% من معاملات النموذج. وفق تجاربهم على GAIA وClaw-Eval وTerminal-Bench 2.1، تحسنت معدلات النجاح بين 8.9 و17.0 نقطة مئوية بحسب التقييم؛ هذه نتائج مؤلفي الدراسة وليست اختبارًا مستقلًا.",
+      "whyItMatters": "تحليل تحريري: ذاكرة الوكيل النصية قد لا تكفي لمنع تكرار الأخطاء. تقترح الدراسة آلية قابلة للقياس لتخزين التصحيح في معاملات إضافية، لكن تكلفة تدريب المحولات وصلاحيتها للمهام الجديدة قد تحد من فائدتها في التطبيقات الشخصية.",
+      "audience": "باحثو الوكلاء، مطورو أنظمة الذاكرة، فرق تقييم البرمجة الآلية",
+      "nextSteps": [
+        "قارن في اختبار ثابت تكرار الخطأ بين وكيل بذاكرة نصية وآخر بآلية تصحيح قابلة لإعادة الاستخدام.",
+        "وثّق تكلفة تدريب المحوّل ونسبة استدعائه الصحيح وأثره على مهام لم يرها من قبل."
+      ],
+      "limitations": "ورقة بحثية؛ النتائج مرتبطة بنماذج Qwen ومجموعات الاختبار وإعدادات المؤلفين. لم ندرّب محولات أو نكرر القياسات، ولا يثبت تجميد النموذج الأساسي عدم ظهور آثار جانبية في كل الحالات.",
+      "reviewedAt": "2026-10-26T14:48:03.372Z",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Full research paper",
+          "url": "https://arxiv.org/html/2610.31846v1"
+        },
+        {
+          "title": "Original arXiv record",
+          "url": "https://arxiv.org/abs/2610.31846"
+        }
+      ]
+    },
+    "31654d812ef6de5e97": {
+      "url": "https://arxiv.org/abs/2610.31971",
+      "titleAr": "TASMAN: لماذا لا يكفي أن يعرف الوكيل مَن يثق به للوصول إلى اتفاق؟",
+      "summaryAr": "اختبر باحثون تفاوضًا متكررًا بين عدة وكلاء لغويين، مع مشارك يحاول تعطيل الاتفاق. يقيس TASMAN الثقة من السلوك السابق، ثم يقارن ما يحدث عندما يعرف الوكيل درجة الثقة فقط، أو يتلقى إرشادًا صريحًا لاستخدامها عند التصويت والاقتراح. وجد الباحثون فجوة بين التعرف على الطرف المعرقل وبين تحسين نتيجة التفاوض؛ في بعض إعداداتهم زادت معدلات الاتفاق حتى 23 نقطة مئوية عند توجيه الوكلاء لاستخدام الثقة بوضوح.",
+      "whyItMatters": "تحليل تحريري: لا يكفي بناء «نظام سمعة» للوكلاء ثم افتراض أنهم سيستخدمونه تلقائيًا. يجب اختبار أثر بيانات الثقة على القرار النهائي والإنصاف وجودة الاتفاق، لا دقة تصنيف الأطراف فقط.",
+      "audience": "مطورو أنظمة الوكلاء المتعاونين، فرق المشتريات الرقمية، باحثو التفاوض متعدد الأطراف",
+      "nextSteps": [
+        "صمم سيناريو تفاوض اصطناعي مع مقياس اتفاق واضح وقارن سياسة تتجاهل الثقة بأخرى تستخدمها صراحة.",
+        "راقب حالات الاتفاق غير العادل أو استبعاد طرف بسبب درجة ثقة غير دقيقة."
+      ],
+      "limitations": "النتائج تخص ألعاب تفاوض محاكاة ومقاييسها، ولا تعني تحسنًا مضمونًا في التفاوض الحقيقي. لم نجرِ تجارب على البشر أو نكرر التجارب المنشورة.",
+      "reviewedAt": "2026-10-26T14:48:03.372Z",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Full TASMAN research paper",
+          "url": "https://arxiv.org/html/2610.31971v1"
+        },
+        {
+          "title": "Original arXiv record",
+          "url": "https://arxiv.org/abs/2610.31971"
+        }
+      ]
+    },
+    "027c5bc38fca14b7ca": {
+      "url": "https://arxiv.org/abs/2610.32127",
+      "titleAr": "MPQ: ضغط أوزان النماذج عبر تمرير الاحتمالات قبل اختيار قيم التكميم",
+      "summaryAr": "تعرض ورقة Message-Passing Quantization طريقة للتكميم بعد التدريب (PTQ) تُبقي عدة اختيارات محتملة لقيم الأوزان أثناء المعالجة بدل تثبيت كل كتلة فورًا على قيمة واحدة. تجمع الطريقة بين Vector Approximate Message Passing وتنقيح لاحق ببحث محلي. يعلن الباحثون تحسنًا في الحيرة (perplexity) وبعض اختبارات الصفر-shot مقارنة بخوارزميات اتخاذ القرار المبكر، على نماذج Llama وQwen وMistral وتكميم 2 و3 و4 بت ضمن إعداداتهم.",
+      "whyItMatters": "تحليل تحريري: التكميم قد يساعد على تشغيل نماذج كبيرة بذاكرة أقل، خصوصًا على الأجهزة الشخصية، لكن جودة النموذج بعد الضغط وسرعة التكميم واستهلاك الذاكرة أثناء المعالجة يجب قياسها معًا.",
+      "audience": "مهندسو الاستدلال المحلي، باحثو ضغط النماذج، مطورو تطبيقات الذكاء الاصطناعي على الأجهزة",
+      "nextSteps": [
+        "ابدأ بنموذج صغير وبيانات تقييم معلومة، وقارن الجودة والذاكرة وزمن التحويل بين MPQ وخط أساس معروف.",
+        "افصل قياس زمن التكميم عن سرعة الاستدلال بعد التكميم، ولا تفترض تحسن الاثنين معًا."
+      ],
+      "limitations": "هذه نتائج بحثية من المؤلفين على إعدادات محددة، وليست ضمانًا بأن MPQ أسرع أو أفضل على كل جهاز أو نموذج. لم ننفذ الكود أو نقس أداءه.",
+      "reviewedAt": "2026-10-26T14:48:03.372Z",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Full MPQ research paper",
+          "url": "https://arxiv.org/html/2610.32127v1"
+        },
+        {
+          "title": "Research code referenced by authors",
+          "url": "https://github.com/poseidonchan/MPQ"
+        }
+      ]
+    },
+    "07c54f2501b84418ad": {
+      "url": "https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118/",
+      "titleAr": "تحديثات أمنية عاجلة لخمسة فروع من Python بسبب شهادات eMudhra",
+      "summaryAr": "أعلن فريق Python في 26 أكتوبر 2026 إصدارات 3.15.2 و3.14.10 و3.13.18 و3.12.16 و3.11.18 لمعالجة شهادات وسيطة مخترقة لدى eMudhra عبر وحدة ssl. تتضمن الدفعة إصلاحات إضافية في tarfile.tar_filter وhttp.cookiejar، وتتوفر حزم تثبيت ثنائية لفرعي 3.15 و3.14، بينما الإصدارات الثلاثة الأقدم في هذه الدفعة مصدرية فقط. هذه تفاصيل من إعلان الفريق الرسمي وليست نتيجة اختبار تثبيت أجريناه.",
+      "whyItMatters": "خبر مؤكد من فريق الإصدار: التحديث يقلل المخاطر المرتبطة بالثقة في الشهادات المخترقة ويهم مستخدمي pip ومطوري بيئات Python. تحليل تحريري: حدّث نسخ التشغيل المدعومة بعد اختبار توافق الحزم، ولا تتعامل مع ترقية Python باعتبارها بديلًا عن تحديث بقية الاعتماديات.",
+      "audience": "مطور Python، مسؤولو الخوادم، فرق إدارة بيئات التطوير وCI",
+      "nextSteps": [
+        "تحقق من إصدار Python الفعلي في البيئات الافتراضية والخوادم وخطوط CI.",
+        "راجع إعلان الإصدار الرسمي وحدّث إلى نسخة مصححة مدعومة، ثم شغّل اختبارات المشروع قبل النشر."
+      ],
+      "limitations": "اطلعت على نص الإعلان الرسمي المنشور، لكن لم أنزّل الحزم أو أتحقق عمليًا من شهادات TLS أو توافق كل مكتبة. بعض الإصدارات المصدرية تحتاج آلية بناء خاصة.",
+      "reviewedAt": "2026-10-26T14:48:03.372Z",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Python Insider official security release announcement",
+          "url": "https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118/"
+        },
+        {
+          "title": "Official Python release downloads",
+          "url": "https://www.python.org/getit/"
+        }
+      ]
+    },
+    "291d5eb46511b79f06": {
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "titleAr": "Taste Skill — توجيه وكلاء البرمجة لتصميم واجهات ذات هوية واضحة",
+      "summaryAr": "مهارة مفتوحة المصدر تضيف لوكلاء البرمجة منهجًا للتوجيه الفني، والبحث عن صور مرخصة، ثم فحص الواجهة في متصفح حقيقي على أحجام متعددة. لا تنشئ المهارة نموذج ذكاء اصطناعي جديدًا؛ بل تنظّم خطوات الوكيل وتطلب منه مراجعة لقطات الشاشة وإصلاح العيوب. README يصف دعم صفحات الهبوط ولوحات التحكم وشاشات التطبيقات.",
+      "whyItMatters": "تحليل تحريري: تفيد عندما تنتج أدوات البرمجة واجهات متشابهة أو غير متوازنة، لأنها تحول «التصميم الجيد» إلى خطوات مراجعة قابلة للملاحظة. يجب ألا تحل الأحكام البصرية محل اختبارات الوصول والأداء وسلامة المحتوى.",
+      "audience": "مطورو الواجهات، مستخدمو Codex وClaude Code، مصممو المنتجات الرقمية",
+      "overview": "يقرأ الوكيل وصف المنتج، ويختار اتجاهًا بصريًا من مرجعيات بحثية، ويستخدم صورًا موثقة الترخيص، ويبني الواجهة، ثم يفحصها عبر متصفح على ثلاث مقاسات. يتضمن مسارًا منفصلًا لشاشات التطبيقات ولوحات المعلومات. الشيفرة والمهارة متاحتان بترخيص MIT؛ تراخيص الصور تظل مستقلة.",
+      "requirements": "Node.js 22 أو أحدث ومتصفح Chrome أو Edge أو Chromium مثبت، ووكيل برمجة يدعم تحميل المهارات. تحتاج مرحلة البحث عن الصور إلى الإنترنت. لا تطلب المهارة مفتاح API بذاتها، لكن استهلاك نموذج الوكيل قد يكون مدفوعًا حسب المزود والخطة. راجع صلاحيات تشغيل سكربتات الطرفية قبل التثبيت.",
+      "quickStart": "وفق README: افحص متطلبات Node والمتصفح، ثم نفذ npx skills add https://github.com/Leonxlnx/taste-skill --skill \"design-taste-frontend\" في بيئة تطوير موثوقة. بديل Codex موثق عبر codex plugin marketplace add Leonxlnx/taste-skill ثم codex plugin add taste-skill@taste-skill، مع بدء جلسة جديدة. جرّب على نسخة من مشروع تجريبي وقارن لقطات ما قبل وما بعد.",
+      "limitations": "لم نثبت المهارة ولم نجرّب متصفحها. مدة التنفيذ والنتائج المرئية المعلنة في README تقديرات الناشر. صور الطرف الثالث تحتاج مراجعة حقوق منفصلة؛ دعم الإطار البرمجي لا يضمن جودة النتيجة أو إمكانية الوصول. البدائل: دليل تصميم يدوي واختبارات Playwright أو مهارات واجهات أخرى.",
+      "reviewedAt": "2026-10-26T14:48:03.372Z",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "Taste Skill README",
+          "url": "https://github.com/Leonxlnx/taste-skill/blob/main/README.md"
+        },
+        {
+          "title": "Taste Skill MIT LICENSE",
+          "url": "https://github.com/Leonxlnx/taste-skill/blob/main/LICENSE"
+        }
+      ],
+      "nextSteps": [
+        "اقرأ README وملف LICENSE قبل التثبيت، وحدد صفحة واحدة للتجربة.",
+        "احتفظ بلقطات ثلاث مقاسات وقائمة أخطاء واضحة، ثم راجع الوصول والأداء مستقلًا."
+      ],
+      "improvements": [
+        {
+          "title": "بوابة تدقيق وصول قبل قبول التصميم",
+          "problem": "قد تبدو الصفحة جذابة بينما تفتقر إلى تباين كاف أو تنقل بلوحة المفاتيح.",
+          "approach": "أضف قائمة فحوص وصول مستقلة إلى تقرير المعاينة دون إخفاء نتائج الفحص البصري.",
+          "stack": "Node.js, Playwright, axe-core, WCAG",
+          "steps": [
+            "حدد عناصر الصفحة الحرجة وأحجام الشاشات المستهدفة.",
+            "اجمع نتائج التباين والتركيز والتنقل باللوحة في تقرير منفصل.",
+            "قارن عدد العيوب قبل كل جولة تصميم وبعدها.",
+            "امنع وصف الصفحة بأنها جاهزة إذا بقيت عيوب حرجة."
+          ],
+          "metric": "عدد عيوب الوصول الحرجة قبل/بعد ونسبة الصفحات التي اجتازت الاختبار.",
+          "difficulty": "متوسط — تقدير 2–4 أيام لبناء نسخة أولية.",
+          "risks": "اختبارات الوصول الآلية لا تكشف كل عيوب الاستخدام.",
+          "sources": [
+            {
+              "title": "Taste Skill README",
+              "url": "https://github.com/Leonxlnx/taste-skill/blob/main/README.md"
+            },
+            {
+              "title": "Taste Skill MIT LICENSE",
+              "url": "https://github.com/Leonxlnx/taste-skill/blob/main/LICENSE"
+            },
+            {
+              "title": "WCAG 2.2 standard",
+              "url": "https://www.w3.org/TR/WCAG22/"
+            }
+          ]
+        },
+        {
+          "title": "مقارنة قابلة للإعادة للقطات التصميم",
+          "problem": "الانطباعات الذاتية عن تحسن التصميم يصعب تدقيقها عند تغيير المتصفح أو المحتوى.",
+          "approach": "ثبّت المحتوى والنافذة والخطوط ثم خزّن لقطات قبل/بعد مع سجل قرارات الوكيل.",
+          "stack": "Playwright, Node.js, JSON, image diff",
+          "steps": [
+            "اختر ثلاث صفحات تجريبية ثابتة.",
+            "ثبّت دقة العرض والمحتوى ووقت التحميل.",
+            "التقط قبل/بعد واحفظ سجل تغييرات CSS.",
+            "صنف الاختلافات البصرية الكبيرة للمراجعة البشرية."
+          ],
+          "metric": "نسبة إعادة إنتاج اللقطات وعدد الاختلافات غير المقصودة.",
+          "difficulty": "متوسط — تقدير 2–3 أيام.",
+          "risks": "اختلاف الخطوط والرسوم المتحركة قد يسبب فروقات زائفة.",
+          "sources": [
+            {
+              "title": "Taste Skill README",
+              "url": "https://github.com/Leonxlnx/taste-skill/blob/main/README.md"
+            },
+            {
+              "title": "Taste Skill MIT LICENSE",
+              "url": "https://github.com/Leonxlnx/taste-skill/blob/main/LICENSE"
+            }
+          ]
+        },
+        {
+          "title": "تقرير مصادر الصور والتراخيص",
+          "problem": "قد تنتهي صور جميلة في الإنتاج دون معرفة مصدرها أو متطلبات نسبها.",
+          "approach": "أنشئ سجلًا آليًا للصور المستخدمة وروابط الترخيص والاعتماد المطلوب.",
+          "stack": "Node.js, JSON, Markdown",
+          "steps": [
+            "استخرج مسارات الصور من المخرجات.",
+            "اربط كل صورة بسجل المصدر والترخيص.",
+            "حدد الصور غير الموثقة للمراجعة.",
+            "ولّد ملف اعتمادات قبل النشر."
+          ],
+          "metric": "نسبة الصور ذات المصدر والترخيص الموثقين.",
+          "difficulty": "سهل إلى متوسط — تقدير يومين.",
+          "risks": "بعض الصور تفتقر إلى بيانات حقوق واضحة ويجب استبعادها.",
+          "sources": [
+            {
+              "title": "Taste Skill README",
+              "url": "https://github.com/Leonxlnx/taste-skill/blob/main/README.md"
+            },
+            {
+              "title": "Taste Skill MIT LICENSE",
+              "url": "https://github.com/Leonxlnx/taste-skill/blob/main/LICENSE"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مختبر عربي لمقارنة تصميم الوكلاء",
+          "problem": "يصعب على المبتدئين فهم الفرق بين تحسين بصري حقيقي وتغيير زخرفي.",
+          "approach": "موقع تعليمي يعرض لقطات موحدة من نسخ واجهات متعددة مع معايير تقييم معلنة.",
+          "stack": "React, Playwright, SQLite",
+          "steps": [
+            "حدد خمس مهام واجهة متكافئة.",
+            "شغّل كل إعداد على نفس المتطلبات والبيانات.",
+            "اجمع لقطات ثلاث مقاسات وتقييم وصول.",
+            "اعرض النتائج مع تكلفة الزمن والتوكنات."
+          ],
+          "metric": "اتفاق المقيمين ومعدل العيوب لكل تصميم.",
+          "difficulty": "متوسط — تقدير أسبوع.",
+          "risks": "التحيز البصري وتغير النماذج يؤثران على المقارنة.",
+          "sources": [
+            {
+              "title": "Taste Skill README",
+              "url": "https://github.com/Leonxlnx/taste-skill/blob/main/README.md"
+            },
+            {
+              "title": "Taste Skill MIT LICENSE",
+              "url": "https://github.com/Leonxlnx/taste-skill/blob/main/LICENSE"
+            }
+          ]
+        },
+        {
+          "title": "مدقق واجهات RTL تلقائي",
+          "problem": "تعاني الواجهات العربية من قص النصوص واتجاهات غير صحيحة لا تظهر في لقطات الإنجليزية.",
+          "approach": "أداة تصفح تملأ الواجهة بنصوص عربية طويلة وتكتشف القص والتمرير الأفقي.",
+          "stack": "Playwright, TypeScript, CSS",
+          "steps": [
+            "أنشئ حالات نص عربي قصير وطويل.",
+            "اختبر المكونات في أحجام هاتف ولوحي وسطح مكتب.",
+            "اكتشف العناصر الخارجة عن الحاوية والتمرير الأفقي.",
+            "أخرج تقريرًا بالعنصر واللقطة والخطوة المقترحة."
+          ],
+          "metric": "عدد أخطاء RTL المكتشفة على مجموعة صفحات مرجعية.",
+          "difficulty": "متوسط — تقدير 4–6 أيام.",
+          "risks": "الفحوص الهندسية لا تحكم وحدها على جودة الخط العربي.",
+          "sources": [
+            {
+              "title": "Taste Skill README",
+              "url": "https://github.com/Leonxlnx/taste-skill/blob/main/README.md"
+            },
+            {
+              "title": "Taste Skill MIT LICENSE",
+              "url": "https://github.com/Leonxlnx/taste-skill/blob/main/LICENSE"
+            }
+          ]
+        },
+        {
+          "title": "مساعد مراجعة لوحات البيانات",
+          "problem": "قد ينتج الوكيل لوحات جميلة لكن أرقامها أو محاورها مضللة.",
+          "approach": "مراجع يطابق الرسوم البيانية مع بيانات مصدر ثابتة ويرصد اختلال المحاور والوحدات.",
+          "stack": "Python, Playwright, Pandas",
+          "steps": [
+            "جهز لوحات اختبار ببيانات معروفة.",
+            "استخرج قيم الجداول والمحاور.",
+            "قارن القيم مع المصدر الأصلي.",
+            "ولّد قائمة مراجعة بشرية للرسوم الملتبسة."
+          ],
+          "metric": "نسبة اكتشاف الرسوم ذات القيم غير المتطابقة.",
+          "difficulty": "متوسط إلى مرتفع — تقدير 1–2 أسبوع.",
+          "risks": "استخراج الأرقام من Canvas قد يحتاج موصلًا خاصًا.",
+          "sources": [
+            {
+              "title": "Taste Skill README",
+              "url": "https://github.com/Leonxlnx/taste-skill/blob/main/README.md"
+            },
+            {
+              "title": "Taste Skill MIT LICENSE",
+              "url": "https://github.com/Leonxlnx/taste-skill/blob/main/LICENSE"
+            }
+          ]
+        }
+      ]
+    },
+    "92c9b5cfe3d8601484": {
+      "url": "https://github.com/microsoft/semantic-kernel",
+      "titleAr": "Semantic Kernel — إطار مايكروسوفت للوكلاء مع مسار انتقال إلى Agent Framework",
+      "summaryAr": "مكتبة SDK مفتوحة المصدر لتوصيل النماذج بالأدوات والمهام وسير العمل، وتدعم Python و.NET وJava. تنبه وثائقها الحالية إلى أن Microsoft Agent Framework 1.0 هو الخلف الإنتاجي الأحدث، ولذلك يجب تقييم مسار الترحيل قبل بدء مشروع جديد كبير باستخدام Semantic Kernel.",
+      "whyItMatters": "تحليل تحريري: توفر SDK منظمة بدل بناء تكامل النماذج والأدوات من الصفر، لكن اختيار إطار ينتقل إلى خليفة أحدث يتطلب حساب تكلفة الترحيل والاستقرار. يجب التمييز بين ترخيص المكتبة المجاني وتكاليف النماذج السحابية.",
+      "audience": "مطورو Python و.NET، فرق بناء الوكلاء، المهتمون بتكامل الأدوات وMCP",
+      "overview": "يقدم Semantic Kernel طبقة لإدارة استدعاء نماذج اللغة، الوظائف الإضافية (plugins)، الأدوات، ومهام الوكلاء المتعاونين. README يذكر موصلات لمزودين سحابيين ومحليين ودعم قواعد بيانات متجهية. المشروع بترخيص MIT، لكن README يوصي بمراجعة Microsoft Agent Framework بوصفه الخلف الأحدث.",
+      "requirements": "Python 3.10+ أو .NET 10+ أو JDK 17+ بحسب المسار، على Windows أو macOS أو Linux. قد تحتاج مفتاح مزود API للخدمات السحابية، أو نموذجًا محليًا وذاكرة/عتادًا مناسبين. المكتبة مجانية بموجب MIT؛ الاستدلال المدفوع وتخزين المتجهات والاستضافة تكاليف منفصلة. بدائل البحث: Microsoft Agent Framework الأحدث، أو تنسيق مباشر للمهام البسيطة.",
+      "quickStart": "ابدأ بمراجعة دليل الترحيل الرسمي قبل اختيار إطار مشروع جديد. لتجربة Python كما في README أنشئ بيئة Python 3.10+ ونفذ pip install semantic-kernel، ثم اضبط متغير البيئة لمزود نموذج تملكه أو موصلًا محليًا مدعومًا. جرّب مثال ChatCompletionAgent الموثق على مهمة صغيرة، مع تسجيل الاستدعاءات والتكلفة؛ لم نشغله في هذه المراجعة.",
+      "limitations": "لم نختبر الإطار أو التوافق بين الإصدارات. بعض أمثلة README تستخدم Azure/OpenAI وتحتاج إعدادات ومفاتيح منفصلة. عبارة الإنتاجية والإمكانات المؤسسية في README وصف الناشر، ويجب تقييم حالة المشروع وخليفته الحالية قبل تبنيه.",
+      "reviewedAt": "2026-10-26T14:48:03.372Z",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "Semantic Kernel README",
+          "url": "https://github.com/microsoft/semantic-kernel/blob/main/README.md"
+        },
+        {
+          "title": "Semantic Kernel MIT LICENSE",
+          "url": "https://github.com/microsoft/semantic-kernel/blob/main/LICENSE"
+        },
+        {
+          "title": "Microsoft Agent Framework migration guide",
+          "url": "https://learn.microsoft.com/en-us/agent-framework/migration-guide/from-semantic-kernel"
+        }
+      ],
+      "nextSteps": [
+        "اقرأ مقارنة Semantic Kernel مع Microsoft Agent Framework ودليل الترحيل.",
+        "ابنِ نموذجًا أوليًا محدودًا بمزود محلي أو سحابي مصرح به، وقس زمن الاستجابة والتكلفة."
+      ],
+      "improvements": [
+        {
+          "title": "مدقق جاهزية الانتقال إلى Agent Framework",
+          "problem": "يصعب معرفة مدى تعقيد نقل وكلاء مبنيين على Semantic Kernel.",
+          "approach": "أداة تقرأ اعتماديات المشروع واستدعاءات API وتصدر قائمة ترحيل دون تعديل تلقائي.",
+          "stack": "Python, AST, JSON, Git",
+          "steps": [
+            "حدد واجهات Semantic Kernel المستخدمة في عينة مشاريع.",
+            "قارنها بمسارات الترحيل الموثقة.",
+            "حلل ملفات Python والاعتماديات دون تنفيذها.",
+            "ولّد تقريرًا بالمخاطر وخطوات الترحيل."
+          ],
+          "metric": "نسبة اكتشاف واجهات الترحيل المعروفة ودقة التقرير.",
+          "difficulty": "متوسط — تقدير أسبوع.",
+          "risks": "اختلاف نسخ المكتبة قد ينتج تحذيرات زائفة.",
+          "sources": [
+            {
+              "title": "Semantic Kernel README",
+              "url": "https://github.com/microsoft/semantic-kernel/blob/main/README.md"
+            },
+            {
+              "title": "Semantic Kernel MIT LICENSE",
+              "url": "https://github.com/microsoft/semantic-kernel/blob/main/LICENSE"
+            },
+            {
+              "title": "Microsoft Agent Framework migration guide",
+              "url": "https://learn.microsoft.com/en-us/agent-framework/migration-guide/from-semantic-kernel"
+            }
+          ]
+        },
+        {
+          "title": "حاسبة تكلفة تشغيل الوكلاء حسب المزود",
+          "problem": "قد يخفي استخدام الإطار فروق استهلاك التوكنات والتكلفة بين الموصلات.",
+          "approach": "طبقة قياس محلية تسجل عدد الطلبات والتوكنات والأسعار المدخلة يدويًا.",
+          "stack": "Python, SQLite, CSV",
+          "steps": [
+            "أنشئ سجلًا موحدًا لكل استدعاء نموذج.",
+            "اسمح بإدخال أسعار المزود وتاريخها.",
+            "احسب التكلفة التقريبية لكل مهمة.",
+            "قارن تكلفة ثلاث سياسات استدعاء على نفس البيانات."
+          ],
+          "metric": "الفرق بين التكلفة المقدرة والفاتورة الحقيقية عند توفرها.",
+          "difficulty": "متوسط — تقدير 3–5 أيام.",
+          "risks": "قد لا تعيد بعض الموصلات إحصاءات توكنات كاملة.",
+          "sources": [
+            {
+              "title": "Semantic Kernel README",
+              "url": "https://github.com/microsoft/semantic-kernel/blob/main/README.md"
+            },
+            {
+              "title": "Semantic Kernel MIT LICENSE",
+              "url": "https://github.com/microsoft/semantic-kernel/blob/main/LICENSE"
+            },
+            {
+              "title": "Microsoft Agent Framework migration guide",
+              "url": "https://learn.microsoft.com/en-us/agent-framework/migration-guide/from-semantic-kernel"
+            }
+          ]
+        },
+        {
+          "title": "سجل قرارات استدعاء الأدوات",
+          "problem": "يصعب تتبع سبب اختيار الوكيل لأداة معينة عند فشل مهمة متعددة الخطوات.",
+          "approach": "أضف تتبعًا يربط طلب المستخدم بقرار الأداة ونتيجتها وموافقة المشرف.",
+          "stack": "Python, OpenTelemetry, JSONL",
+          "steps": [
+            "حدد الأحداث الأساسية دون تسجيل أسرار.",
+            "أضف معرف ارتباط لكل خطوة.",
+            "اربط استدعاء الأداة بنتيجة النجاح أو الخطأ.",
+            "اعرض مسارًا مختصرًا قابلًا للمراجعة."
+          ],
+          "metric": "نسبة الأخطاء التي يمكن تعقبها إلى خطوة محددة.",
+          "difficulty": "متوسط — تقدير أسبوع.",
+          "risks": "التتبع المفرط قد يكشف بيانات حساسة أو يرفع تكلفة التخزين.",
+          "sources": [
+            {
+              "title": "Semantic Kernel README",
+              "url": "https://github.com/microsoft/semantic-kernel/blob/main/README.md"
+            },
+            {
+              "title": "Semantic Kernel MIT LICENSE",
+              "url": "https://github.com/microsoft/semantic-kernel/blob/main/LICENSE"
+            },
+            {
+              "title": "Microsoft Agent Framework migration guide",
+              "url": "https://learn.microsoft.com/en-us/agent-framework/migration-guide/from-semantic-kernel"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مختبر عربي لتعلم الوكلاء متعددة الأدوات",
+          "problem": "يصعب على الطلاب التمييز بين نموذج محادثة ووكيل يختار أدوات.",
+          "approach": "بيئة تعليمية تتيح تجربة أدوات حساب وبحث محلي مع سجل استدعاءات مرئي.",
+          "stack": "Python, Streamlit, SQLite",
+          "steps": [
+            "حدد ثلاث مهام متدرجة.",
+            "أنشئ أدوات محلية لا تنفذ أوامر خطرة.",
+            "اعرض خطة الوكيل ونتيجة كل أداة.",
+            "أضف اختبارًا عمليًا لقياس الفهم."
+          ],
+          "metric": "نسبة الطلاب الذين يحددون سبب استدعاء الأداة الصحيح.",
+          "difficulty": "متوسط — تقدير أسبوع.",
+          "risks": "يجب عزل الأدوات التعليمية ومنع صلاحيات غير ضرورية.",
+          "sources": [
+            {
+              "title": "Semantic Kernel README",
+              "url": "https://github.com/microsoft/semantic-kernel/blob/main/README.md"
+            },
+            {
+              "title": "Semantic Kernel MIT LICENSE",
+              "url": "https://github.com/microsoft/semantic-kernel/blob/main/LICENSE"
+            },
+            {
+              "title": "Microsoft Agent Framework migration guide",
+              "url": "https://learn.microsoft.com/en-us/agent-framework/migration-guide/from-semantic-kernel"
+            }
+          ]
+        },
+        {
+          "title": "مقارن الوكلاء المحليين والسحابيين",
+          "problem": "تختلف الجودة والتكلفة والخصوصية بين الموصلات ويصعب قياسها بعدل.",
+          "approach": "منصة تجارب ثابتة تقارن نفس المهام عبر موصلات ونماذج مختلفة.",
+          "stack": "Python, Pandas, SQLite",
+          "steps": [
+            "اختر مهام ذات إجابات قابلة للتحقق.",
+            "ثبّت إعدادات التوليد والعتاد.",
+            "شغّل كل حالة عدة مرات.",
+            "قارن الدقة والزمن والتكلفة وحدود كل موصل."
+          ],
+          "metric": "معدل نجاح المهام وزمن p95 والتكلفة لكل نجاح.",
+          "difficulty": "متوسط إلى مرتفع — تقدير 1–2 أسبوع.",
+          "risks": "اختلاف حجم النماذج وقيود API قد يجعل المقارنة غير متكافئة.",
+          "sources": [
+            {
+              "title": "Semantic Kernel README",
+              "url": "https://github.com/microsoft/semantic-kernel/blob/main/README.md"
+            },
+            {
+              "title": "Semantic Kernel MIT LICENSE",
+              "url": "https://github.com/microsoft/semantic-kernel/blob/main/LICENSE"
+            },
+            {
+              "title": "Microsoft Agent Framework migration guide",
+              "url": "https://learn.microsoft.com/en-us/agent-framework/migration-guide/from-semantic-kernel"
+            }
+          ]
+        },
+        {
+          "title": "حارس تغييرات الوكلاء في Git",
+          "problem": "قد يكتب وكيلان على الملفات نفسها دون إدراك تعارض التعديلات.",
+          "approach": "خدمة محلية تسجل بصمات الملفات قبل مهمة الوكيل وتطلب مراجعة عند التعارض.",
+          "stack": "Python, Git, SQLite",
+          "steps": [
+            "احفظ SHA الملفات قبل تنفيذ كل مهمة.",
+            "راقب التغييرات من جلسات متعددة.",
+            "ارفض الاستبدال الصامت للملفات المتغيرة.",
+            "أنشئ تقرير تعارض قبل السماح بالدمج."
+          ],
+          "metric": "عدد التعارضات المكتشفة قبل فقدان التغييرات.",
+          "difficulty": "متوسط — تقدير 5–8 أيام.",
+          "risks": "بصمة الملف وحدها لا تحل التعارض الدلالي وتحتاج مراجعة بشرية.",
+          "sources": [
+            {
+              "title": "Semantic Kernel README",
+              "url": "https://github.com/microsoft/semantic-kernel/blob/main/README.md"
+            },
+            {
+              "title": "Semantic Kernel MIT LICENSE",
+              "url": "https://github.com/microsoft/semantic-kernel/blob/main/LICENSE"
+            },
+            {
+              "title": "Microsoft Agent Framework migration guide",
+              "url": "https://learn.microsoft.com/en-us/agent-framework/migration-guide/from-semantic-kernel"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
