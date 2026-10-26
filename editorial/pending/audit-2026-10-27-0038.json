@@ -21,7 +21,11 @@
     "activeEditorialNewsBefore": 113,
     "activeEditorialProjectsBefore": 50,
     "newRecordsPrepared": 8,
-    "structuralNote": "قورنت أزواج id/url حرفيًا. 182 سجلًا واردًا موجودة بالإثراء، منها 160 ما زالت في التغذية و22 خرجت منها؛ ثلاثة سجلات فقط ليست في التغذية ولم تُستورد. حُفظت السجلات القديمة."
+    "structuralNote": "قورنت أزواج id/url حرفيًا. 182 سجلًا واردًا موجودة بالإثراء، منها 160 ما زالت في التغذية و22 خرجت منها؛ ثلاثة سجلات فقط ليست في التغذية ولم تُستورد. حُفظت السجلات القديمة.",
+    "mergedRecordCount": 193,
+    "activeEditorialMatchesAfter": 171,
+    "activeEditorialNewsAfter": 119,
+    "activeEditorialProjectsAfter": 52
   },
   "incomingFiles": [
     {
@@ -428,5 +432,6 @@
     "اعرض الرابط الأصلي وحالة النشاط والترخيص ووقت القياس.",
     "احتفظ بروابط المكتبة بعد خروج العناصر من التغذية.",
     "ميّز المقترحات عن الميزات المنفذة والمختبرة."
-  ]
+  ],
+  "validationPlan": "التحقق البنيوي للدفعة اجتاز في مرحلة التحرير. لم تُشغّل الأوامر محليًا؛ ينتظر PR نجاح CI الرسمي الذي يشغّل unittest وscripts/editorial.py validate وفحص JavaScript."
 }
