@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-26T05:40:53+00:00",
+  "baseBranch": "main",
+  "method": "Exact id and url comparison against feed and editorial. No title-based reassignment.",
+  "incomingFilesReviewed": 18,
+  "previousIncomingEntries": 143,
+  "previousImportedAndFeedMatched": 139,
+  "previousMatchedAwaitingImport": 0,
+  "previousOutOfFeed": 4,
+  "previousUrlMismatches": 0,
+  "previousStructuralErrorsDetected": 0,
+  "pending": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "origin": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+      "classification": "not_in_current_feed_unimported",
+      "action": "Wait for identical id and url in feed; do not reassign by title."
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "origin": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "classification": "not_in_current_feed_unimported",
+      "action": "Wait for identical id and url in feed; do not reassign by title."
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "origin": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "classification": "not_in_current_feed_unimported",
+      "action": "Wait for identical id and url in feed; do not reassign by title."
+    },
+    {
+      "id": "30e283a9b3f70e35d8",
+      "url": "https://github.com/astral-sh/uv",
+      "origin": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "classification": "imported_but_rotated_out_of_feed",
+      "action": "Retain existing editorial record; no invented replacement identity."
+    }
+  ],
+  "historicalLibrary": {
+    "file": "editorial/library/catalog-2026-10-24.json",
+    "total": 31,
+    "archived": 2,
+    "inFeedAtCatalogCapture": 4,
+    "outOfFeedAtCatalogCapture": 27,
+    "publishedViaSite": false,
+    "note": "Counts are from the October 24 catalog snapshot, not a new re-audit of all 31 projects."
+  },
+  "previousEightProjectReview": {
+    "reviewedAt": "2026-10-26T05:40:53+00:00",
+    "method": "GitHub repository metadata, not runtime tests",
+    "projects": [
+      {
+        "repository": "gradio-app/gradio",
+        "archived": false,
+        "licenseApiValue": "Apache-2.0",
+        "lastPushedAt": "2026-10-23T22:37:21Z"
+      },
+      {
+        "repository": "thedotmack/claude-mem",
+        "archived": false,
+        "licenseApiValue": "Apache-2.0",
+        "lastPushedAt": "2026-10-25T21:00:05Z"
+      },
+      {
+        "repository": "ultralytics/ultralytics",
+        "archived": false,
+        "licenseApiValue": "AGPL-3.0",
+        "lastPushedAt": "2026-10-25T21:24:13Z"
+      },
+      {
+        "repository": "harry0703/MoneyPrinterTurbo",
+        "archived": false,
+        "licenseApiValue": "MIT",
+        "lastPushedAt": "2026-10-25T11:11:41Z"
+      },
+      {
+        "repository": "microsoft/AI-For-Beginners",
+        "archived": false,
+        "licenseApiValue": "MIT",
+        "lastPushedAt": "2026-10-23T23:55:14Z"
+      },
+      {
+        "repository": "usebruno/bruno",
+        "archived": false,
+        "licenseApiValue": "MIT",
+        "lastPushedAt": "2026-10-24T10:20:09Z"
+      },
+      {
+        "repository": "keras-team/keras",
+        "archived": false,
+        "licenseApiValue": "Apache-2.0",
+        "lastPushedAt": "2026-10-23T22:31:21Z"
+      },
+      {
+        "repository": "k2-fsa/sherpa-onnx",
+        "archived": false,
+        "licenseApiValue": "Apache-2.0",
+        "lastPushedAt": "2026-10-26T04:27:43Z"
+      }
+    ],
+    "ideaOrder": "Preserved, no existing proposals reordered or overwritten."
+  },
+  "developerRequirements": [
+    "Show historical library entries separately from feed projects, clearly labeled not published.",
+    "Keep canonical repository identity and permanent links independently of the rolling feed.",
+    "Show license verification status, archived status and metrics captured timestamp.",
+    "Do not use cumulative star counts as daily popularity."
+  ],
+  "commandsNotRunLocally": [
+    "python scripts/editorial.py validate <incoming>",
+    "python scripts/editorial.py import <incoming>",
+    "python -m unittest discover -s tests -v"
+  ],
+  "note": "Official validator and Python tests must be checked in GitHub Actions. Structural equivalence is performed before branch import."
+}
