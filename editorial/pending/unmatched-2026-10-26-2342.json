@@ -1,0 +1,242 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-26T23:42:00+03:00",
+  "auditBasis": {
+    "mainSha": "cc1d79bb806af7ce08bf474f1beb36e053d3e939",
+    "feedGeneratedAt": "2026-10-26T20:28:38+00:00",
+    "feedCount": 800,
+    "editorialCountBefore": 171,
+    "incomingFilesChecked": 23,
+    "incomingRecordsChecked": 171
+  },
+  "counts": {
+    "importedAndExactMatch": 147,
+    "importedButOutOfFeed": 21,
+    "notInFeedAndNotImported": 3,
+    "matchingButNotImported": 0,
+    "idOrUrlMismatches": 0,
+    "exactUrlCollisionsUnderDifferentIds": 0,
+    "confirmedExpiredByAge": 1,
+    "rotatedOrOutOfFeedNotProvenExpired": 20
+  },
+  "rule": "Exact ID and URL only. No title-based identity substitution. Already-imported records outside the current feed are preserved and not deleted.",
+  "missing": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "titleAr": "OpenShell من NVIDIA: بيئات معزولة للوكلاء بصلاحيات قابلة للمراجعة",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+      "reason": "Exact ID and exact URL are absent from current feed and editorial; held pending."
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "titleAr": "Canva تعلن Craft لتوليد صور يمكن تحويلها إلى تصاميم متعددة الطبقات",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "reason": "Exact ID and exact URL are absent from current feed and editorial; held pending."
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "titleAr": "1Password تعرض تفويض دخول للوكلاء دون إظهار كلمات المرور",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "reason": "Exact ID and exact URL are absent from current feed and editorial; held pending."
+    }
+  ],
+  "importedOutOfFeed": [
+    {
+      "id": "272ca529595ace68cc",
+      "titleAr": "ThinkingCap تدّعي خفض توكنات التفكير في Gemma 4 بنحو 39%",
+      "url": "https://bottlecapai.com/post/thinkingcap-gemma-4-26b/",
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+      "status": "already_imported_but_out_of_feed",
+      "expiredByAge": false,
+      "reason": "Exact ID is already imported; it is absent from the current feed. Preserve the record and do not delete it."
+    },
+    {
+      "id": "be074fe101e39b9e92",
+      "titleAr": "مقال تقني: بناء عقود شبيهة بـ Traits في Zig دون ميزة لغة مخصصة",
+      "url": "https://www.axelmagn.com/blog/202610-zig-traits/",
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+      "status": "already_imported_but_out_of_feed",
+      "expiredByAge": false,
+      "reason": "Exact ID is already imported; it is absent from the current feed. Preserve the record and do not delete it."
+    },
+    {
+      "id": "eaf6e95c99cc41352e",
+      "titleAr": "مقال تقني يشرح لماذا حاويات Docker ليست آلات افتراضية",
+      "url": "https://codeandcake.dev/posts/2026-10-22-docker-is-weird",
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-0840.json",
+      "status": "already_imported_but_out_of_feed",
+      "expiredByAge": false,
+      "reason": "Exact ID is already imported; it is absent from the current feed. Preserve the record and do not delete it."
+    },
+    {
+      "id": "b5cb20bfbe29ca4672",
+      "titleAr": "Block تكشف نموذج Dessa للمحادثة الصوتية المتزامنة",
+      "url": "https://block.xyz/dessa",
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-0840.json",
+      "status": "already_imported_but_out_of_feed",
+      "expiredByAge": false,
+      "reason": "Exact ID is already imported; it is absent from the current feed. Preserve the record and do not delete it."
+    },
+    {
+      "id": "870947cc813e3918d8",
+      "titleAr": "تجربة فريق بيانات: لوحات HTML مولّدة تقلل الاعتماد على Looker",
+      "url": "https://david.lequin.dev/blog/bi-software-is-dead/",
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-0840.json",
+      "status": "already_imported_but_out_of_feed",
+      "expiredByAge": false,
+      "reason": "Exact ID is already imported; it is absent from the current feed. Preserve the record and do not delete it."
+    },
+    {
+      "id": "010d1ccd570cd22892",
+      "titleAr": "نص تاريخي لديكسترا يحذر من افتراض أن اللغة الطبيعية تجعل البرمجة سهلة",
+      "url": "https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html",
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "status": "already_imported_but_out_of_feed",
+      "expiredByAge": false,
+      "reason": "Exact ID is already imported; it is absent from the current feed. Preserve the record and do not delete it."
+    },
+    {
+      "id": "30e283a9b3f70e35d8",
+      "titleAr": "uv — مدير مشاريع وحزم Python مكتوب بـRust",
+      "url": "https://github.com/astral-sh/uv",
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "status": "already_imported_but_out_of_feed",
+      "expiredByAge": false,
+      "reason": "Exact ID is already imported; it is absent from the current feed. Preserve the record and do not delete it."
+    },
+    {
+      "id": "4906ded72c396dea87",
+      "titleAr": "OBS Studio 33 يغيّر نظام الإضافات ويحدّث مكوّن المتصفح",
+      "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.0",
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-1439.json",
+      "status": "already_imported_but_out_of_feed",
+      "expiredByAge": false,
+      "reason": "Exact ID is already imported; it is absent from the current feed. Preserve the record and do not delete it."
+    },
+    {
+      "id": "cbb045dba06decd7ef",
+      "titleAr": "تحذير أمني: خلل Brotli قد يمتد إلى حزم Python وNode.js وخدمات HTTP",
+      "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-1439.json",
+      "status": "already_imported_but_out_of_feed",
+      "expiredByAge": false,
+      "reason": "Exact ID is already imported; it is absent from the current feed. Preserve the record and do not delete it."
+    },
+    {
+      "id": "906857cd0f7118cafb",
+      "titleAr": "ThinkRail يتيح تشغيل وكلاء البرمجة في مساحات Git worktree معزولة",
+      "url": "https://thinkrail.ai/",
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-1439.json",
+      "status": "already_imported_but_out_of_feed",
+      "expiredByAge": false,
+      "reason": "Exact ID is already imported; it is absent from the current feed. Preserve the record and do not delete it."
+    },
+    {
+      "id": "de8f53606bd4f2390d",
+      "titleAr": "Apple تقبل طلبات أجهزة أبحاث أمن iOS حتى 30 أكتوبر",
+      "url": "https://security.apple.com/research-device/",
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-1740.json",
+      "status": "already_imported_but_out_of_feed",
+      "expiredByAge": false,
+      "reason": "Exact ID is already imported; it is absent from the current feed. Preserve the record and do not delete it."
+    },
+    {
+      "id": "d82e7cc672e929a3b3",
+      "titleAr": "دليل systemd-nspawn يوضح بديلًا لإدارة حاويات Linux",
+      "url": "https://quantum5.ca/2025/03/22/whirlwind-tour-of-systemd-nspawn-containers/",
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-1740.json",
+      "status": "already_imported_but_out_of_feed",
+      "expiredByAge": true,
+      "reason": "Source URL dates to 2025-03-22, older than the 21-day RSS window."
+    },
+    {
+      "id": "84d5e70408465cd957",
+      "titleAr": "TornadoVM 7.3 يوسع تسريع Java على GPU",
+      "url": "https://www.infoq.com/news/2026/10/tornadovm-7-gpu/",
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-2043.json",
+      "status": "already_imported_but_out_of_feed",
+      "expiredByAge": false,
+      "reason": "Exact ID is already imported; it is absent from the current feed. Preserve the record and do not delete it."
+    },
+    {
+      "id": "f6a301346a05e615cd",
+      "titleAr": "Anthropic تعرض استخدام Claude لإنتاج براهين رياضية على سلامة أجزاء من برامج مفتوحة المصدر",
+      "url": "https://www.anthropic.com/research/formal-verification",
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24.json",
+      "status": "already_imported_but_out_of_feed",
+      "expiredByAge": false,
+      "reason": "Exact ID is already imported; it is absent from the current feed. Preserve the record and do not delete it."
+    },
+    {
+      "id": "f8c156dba788682638",
+      "titleAr": "OpenAI تفصل ضوابط عزل بيئة تدريب نماذجها المتقدمة",
+      "url": "https://openai.com/index/securing-our-frontier-model-training-environment/",
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24.json",
+      "status": "already_imported_but_out_of_feed",
+      "expiredByAge": false,
+      "reason": "Exact ID is already imported; it is absent from the current feed. Preserve the record and do not delete it."
+    },
+    {
+      "id": "bf44de9e544de4cbe9",
+      "titleAr": "Kimi تعلن K3.1 Pro ونسخة أسرع مع سياق حتى مليون توكن",
+      "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24.json",
+      "status": "already_imported_but_out_of_feed",
+      "expiredByAge": false,
+      "reason": "Exact ID is already imported; it is absent from the current feed. Preserve the record and do not delete it."
+    },
+    {
+      "id": "a9526976eeebfbfe11",
+      "titleAr": "تحديث توضيحات Google حول استخدام بيانات التطبيقات المرتبطة لتخصيص الإعلانات",
+      "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24.json",
+      "status": "already_imported_but_out_of_feed",
+      "expiredByAge": false,
+      "reason": "Exact ID is already imported; it is absent from the current feed. Preserve the record and do not delete it."
+    },
+    {
+      "id": "4f518f178a0999f4d6",
+      "titleAr": "محسّنات تفاعلية: وكيل يغير قواعد تدريب الشبكات أثناء التشغيل",
+      "url": "https://xingjianbai.com/reactive-optimizers/",
+      "file": "editorial/incoming/nabdh-editorial-2026-10-25-1143.json",
+      "status": "already_imported_but_out_of_feed",
+      "expiredByAge": false,
+      "reason": "Exact ID is already imported; it is absent from the current feed. Preserve the record and do not delete it."
+    },
+    {
+      "id": "402510afde2d9adf5a",
+      "titleAr": "PySR يستنتج معادلات رياضية قابلة للتفسير من البيانات",
+      "url": "https://github.com/astroautomata/PySR",
+      "file": "editorial/incoming/nabdh-editorial-2026-10-25-1143.json",
+      "status": "already_imported_but_out_of_feed",
+      "expiredByAge": false,
+      "reason": "Exact ID is already imported; it is absent from the current feed. Preserve the record and do not delete it."
+    },
+    {
+      "id": "1ac9c976988acd153a",
+      "titleAr": "إعادة بناء Polygon من الصفر بلغة Jai: درس في إدارة الذاكرة",
+      "url": "https://polygonjs.com/blog/why-i-rewrote-polygon-from-scratch",
+      "file": "editorial/incoming/nabdh-editorial-2026-10-25-1442.json",
+      "status": "already_imported_but_out_of_feed",
+      "expiredByAge": false,
+      "reason": "Exact ID is already imported; it is absent from the current feed. Preserve the record and do not delete it."
+    },
+    {
+      "id": "d0eaca9f562278f8ee",
+      "titleAr": "دليل Godot لصنع خامات ضوضاء إجرائية متكررة بلا فواصل",
+      "url": "https://catlikecoding.com/godot/procedural-gpu-patterns/09-tiling-noise/",
+      "file": "editorial/incoming/nabdh-editorial-2026-10-25-1442.json",
+      "status": "already_imported_but_out_of_feed",
+      "expiredByAge": false,
+      "reason": "Exact ID is already imported; it is absent from the current feed. Preserve the record and do not delete it."
+    }
+  ],
+  "validationNotes": [
+    "All 23 editorial/incoming files were reviewed and compared by exact id and url against the current feed and editorial store.",
+    "Exact URL collisions under a different feed id: 0 across all 23 files.",
+    "No record from this pending report was imported in this run."
+  ]
+}
