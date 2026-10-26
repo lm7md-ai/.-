@@ -1,0 +1,536 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-27T02:40:59+03:00",
+  "baseMainSha": "e71af93f8c9d27ff690cb56e24f39c1f052f6a1b",
+  "feedGeneratedAt": "2026-10-26T21:50:27+00:00",
+  "checkedIncomingFiles": 25,
+  "audit": {
+    "incomingRecords": 193,
+    "alreadyImportedExact": 190,
+    "matchingNotImported": 0,
+    "activeFeedExact": 166,
+    "previouslyImportedOutOfFeed": 24,
+    "notInFeedNotImported": 3,
+    "urlMismatches": 0,
+    "needsStructuralCorrection": 0,
+    "currentFeedItems": 800,
+    "currentNews": 700,
+    "currentProjects": 100,
+    "existingEditorialRecords": 193,
+    "activeEditorialMatchesBefore": 169,
+    "activeEditorialNewsBefore": 117,
+    "activeEditorialProjectsBefore": 52,
+    "newRecordsPrepared": 5,
+    "mergedRecordCount": 198,
+    "activeEditorialMatchesAfter": 174,
+    "activeEditorialNewsAfter": 120,
+    "activeEditorialProjectsAfter": 54,
+    "preservedOldRecords": 193,
+    "oldRecordValueChanges": 0,
+    "note": "قورنت كل أزواج id/url حرفيًا. تم التحقق بنيويًا من كل ملف وارد؛ لا تُستخدم العناوين لتوليد معرفات. السجلات خارج التغذية محفوظة دون حذف."
+  },
+  "incomingFiles": [
+    {
+      "file": "nabdh-editorial-2026-10-24-0542.json",
+      "sha": "5cbbde735820d3fbbd6ffc5e8726ba8010d66dbe",
+      "records": 10,
+      "importedExact": 9,
+      "activeExact": 7,
+      "expired": 2,
+      "notImported": 1
+    },
+    {
+      "file": "nabdh-editorial-2026-10-24-0840.json",
+      "sha": "68b728fa673c7d5b2198b00b0c5fcc1b9a0bbc18",
+      "records": 7,
+      "importedExact": 7,
+      "activeExact": 4,
+      "expired": 3,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-24-1143.json",
+      "sha": "b1aaf887300d600d15b9cd66b51321604d8da139",
+      "records": 14,
+      "importedExact": 12,
+      "activeExact": 10,
+      "expired": 2,
+      "notImported": 2
+    },
+    {
+      "file": "nabdh-editorial-2026-10-24-1439.json",
+      "sha": "88a0f1efaa8699b1e31a83ac541daba264885113",
+      "records": 9,
+      "importedExact": 9,
+      "activeExact": 6,
+      "expired": 3,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-24-1740.json",
+      "sha": "d6fa64cfea40876a5e88aeea44c2525064fcf9fd",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 4,
+      "expired": 2,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-24-2043.json",
+      "sha": "9651fed60f2c1a32e58d95af66cd0fb4f3ab29ae",
+      "records": 10,
+      "importedExact": 10,
+      "activeExact": 9,
+      "expired": 1,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-24-2342.json",
+      "sha": "2f172ad8645bce9232ae1e07f17e5b3cc9f2f94c",
+      "records": 10,
+      "importedExact": 10,
+      "activeExact": 10,
+      "expired": 0,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-24.json",
+      "sha": "5d09a1a8bf7f1f0d6ca500296d9707c7dba95fd3",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 2,
+      "expired": 4,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-25-0250.json",
+      "sha": "6ca9be0501cea58c97733db77363c38d1fb4ebb6",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 6,
+      "expired": 0,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-25-0554.json",
+      "sha": "0af481e73f1c598c09e347febdbb0843c81c6741",
+      "records": 8,
+      "importedExact": 8,
+      "activeExact": 7,
+      "expired": 1,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-25-0845.json",
+      "sha": "6ec634639d38f8884a4a9fb03fd9699457390da3",
+      "records": 10,
+      "importedExact": 10,
+      "activeExact": 9,
+      "expired": 1,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-25-1143.json",
+      "sha": "42a3f5335cf768033ca7a1f596078f38eb2029bf",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 4,
+      "expired": 2,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-25-1442.json",
+      "sha": "99ce95d76b905597078eb53082a1c4685082b02e",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 4,
+      "expired": 2,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-25-1742.json",
+      "sha": "7b49c3322083612bc034791c03e8e7868e5710cc",
+      "records": 8,
+      "importedExact": 8,
+      "activeExact": 8,
+      "expired": 0,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-25-2038.json",
+      "sha": "f20fd110855271a58eb750962ec67abd2a880b8f",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 6,
+      "expired": 0,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-25-2342.json",
+      "sha": "67a086dc877cc360518d3027ad4a14e9e84a7858",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 5,
+      "expired": 1,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-26-0250.json",
+      "sha": "ca50fd0bec339642cfe1f0b4945253c62e6d4a7d",
+      "records": 8,
+      "importedExact": 8,
+      "activeExact": 8,
+      "expired": 0,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-26-0545.json",
+      "sha": "8aaf21148bebff0b1420b4c6dd3862e8829849b5",
+      "records": 7,
+      "importedExact": 7,
+      "activeExact": 7,
+      "expired": 0,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-26-0840.json",
+      "sha": "bcf33df52194b01060e5a4b3b777561b88c969cb",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 6,
+      "expired": 0,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-26-1152.json",
+      "sha": "c06cebf6b7957dc55c8bee28ca267c512e5ea42f",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 6,
+      "expired": 0,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-26-1445.json",
+      "sha": "c7fe44ccbf051bc85b89164ce2d1acd3aa57de64",
+      "records": 5,
+      "importedExact": 5,
+      "activeExact": 5,
+      "expired": 0,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-26-1745.json",
+      "sha": "7c112aa8f7b5b7056c2819a5897c0848e0e7fdcb",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 6,
+      "expired": 0,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-26-2042.json",
+      "sha": "3137089d6e6a7b08845462514f354f129456e8e9",
+      "records": 5,
+      "importedExact": 5,
+      "activeExact": 5,
+      "expired": 0,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-26-2342.json",
+      "sha": "97d56c54768f6ce8112b2c14b0ff42bdb5144c66",
+      "records": 14,
+      "importedExact": 14,
+      "activeExact": 14,
+      "expired": 0,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-27-0038.json",
+      "sha": "7a9edf47ccb48c8960073c9fc6eb4bdb0540ca44",
+      "records": 8,
+      "importedExact": 8,
+      "activeExact": 8,
+      "expired": 0,
+      "notImported": 0
+    }
+  ],
+  "unmatched": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+      "classification": "not_in_current_feed_not_imported",
+      "currentFeedMatch": false,
+      "editorialMatch": false,
+      "action": "ابقه في الانتظار حتى يظهر المعرف والرابط نفسيهما في التغذية"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "classification": "not_in_current_feed_not_imported",
+      "currentFeedMatch": false,
+      "editorialMatch": false,
+      "action": "ابقه في الانتظار حتى يظهر المعرف والرابط نفسيهما في التغذية"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "classification": "not_in_current_feed_not_imported",
+      "currentFeedMatch": false,
+      "editorialMatch": false,
+      "action": "ابقه في الانتظار حتى يظهر المعرف والرابط نفسيهما في التغذية"
+    }
+  ],
+  "expired": [
+    {
+      "sourceBatch": "nabdh-editorial-2026-10-24-0542.json",
+      "count": 2,
+      "action": "preserve without deletion"
+    },
+    {
+      "sourceBatch": "nabdh-editorial-2026-10-24-0840.json",
+      "count": 3,
+      "action": "preserve without deletion"
+    },
+    {
+      "sourceBatch": "nabdh-editorial-2026-10-24-1143.json",
+      "count": 2,
+      "action": "preserve without deletion"
+    },
+    {
+      "sourceBatch": "nabdh-editorial-2026-10-24-1439.json",
+      "count": 3,
+      "action": "preserve without deletion"
+    },
+    {
+      "sourceBatch": "nabdh-editorial-2026-10-24-1740.json",
+      "count": 2,
+      "action": "preserve without deletion"
+    },
+    {
+      "sourceBatch": "nabdh-editorial-2026-10-24-2043.json",
+      "count": 1,
+      "action": "preserve without deletion"
+    },
+    {
+      "sourceBatch": "nabdh-editorial-2026-10-24.json",
+      "count": 4,
+      "action": "preserve without deletion"
+    },
+    {
+      "sourceBatch": "nabdh-editorial-2026-10-25-0554.json",
+      "count": 1,
+      "action": "preserve without deletion"
+    },
+    {
+      "sourceBatch": "nabdh-editorial-2026-10-25-0845.json",
+      "count": 1,
+      "action": "preserve without deletion"
+    },
+    {
+      "sourceBatch": "nabdh-editorial-2026-10-25-1143.json",
+      "count": 2,
+      "action": "preserve without deletion"
+    },
+    {
+      "sourceBatch": "nabdh-editorial-2026-10-25-1442.json",
+      "count": 2,
+      "action": "preserve without deletion"
+    },
+    {
+      "sourceBatch": "nabdh-editorial-2026-10-25-2342.json",
+      "count": 1,
+      "action": "preserve without deletion"
+    }
+  ],
+  "targetRecheck": {
+    "checkedAt": "2026-10-27T02:40:59+03:00",
+    "items": [
+      "940ec4695c1e241c2f",
+      "317abcdd1b20728a7e",
+      "662e68277c6361dd4b"
+    ],
+    "result": "all three remain absent from both current feed and editorial; no import"
+  },
+  "sourceSnapshot": {
+    "lastAttemptAt": "2026-10-26T21:50:27+00:00",
+    "lastSuccessfulAt": "2026-10-26T21:50:27+00:00",
+    "state": "ok",
+    "sourceCount": 26,
+    "states": {
+      "ok": 25,
+      "empty": 1
+    },
+    "nonOk": [
+      {
+        "name": "أبحاث تعلّم الآلة",
+        "state": "empty",
+        "items": 0,
+        "url": "https://export.arxiv.org/rss/cs.LG"
+      }
+    ]
+  },
+  "previousProjects": {
+    "checkedAt": "2026-10-27T00:49:07+03:00",
+    "result": "eight previous project records were rechecked against current feed and preserved editorial IDs; all remain active and enriched, with prior idea ordering preserved",
+    "repositories": [
+      {
+        "repository": "gradio-app/gradio",
+        "feedId": "9563de7ec1221e077a",
+        "archived": false,
+        "inFeed": true,
+        "editorialPresent": true
+      },
+      {
+        "repository": "thedotmack/claude-mem",
+        "feedId": "853c63f738f0cecf3b",
+        "archived": false,
+        "inFeed": true,
+        "editorialPresent": true
+      },
+      {
+        "repository": "ultralytics/ultralytics",
+        "feedId": "112ba4283cccf5b146",
+        "archived": false,
+        "inFeed": true,
+        "editorialPresent": true
+      },
+      {
+        "repository": "harry0703/MoneyPrinterTurbo",
+        "feedId": "0604d6a7a7d7afd211",
+        "archived": false,
+        "inFeed": true,
+        "editorialPresent": true
+      },
+      {
+        "repository": "microsoft/AI-For-Beginners",
+        "feedId": "d4316f8d5082c97897",
+        "archived": false,
+        "inFeed": true,
+        "editorialPresent": true
+      },
+      {
+        "repository": "usebruno/bruno",
+        "feedId": "6c62a31152244eb967",
+        "archived": false,
+        "inFeed": true,
+        "editorialPresent": true
+      },
+      {
+        "repository": "keras-team/keras",
+        "feedId": "10b7f65af4f5070207",
+        "archived": false,
+        "inFeed": true,
+        "editorialPresent": true
+      },
+      {
+        "repository": "k2-fsa/sherpa-onnx",
+        "feedId": "8d397f7a7077f1abc0",
+        "archived": false,
+        "inFeed": true,
+        "editorialPresent": true
+      }
+    ]
+  },
+  "historicalLibrary": {
+    "total": 31,
+    "archived": 2,
+    "inCurrentFeed": 4,
+    "notInFeed": 27,
+    "latestReview": "editorial/library/review-2026-10-27-0038.json",
+    "latestReviewAt": "2026-10-27T00:49:07+03:00",
+    "note": "لم تُضف مشاريع غير منشورة إلى المكتبة في هذه الدورة لأن المشروعين الجديدين موجودان في التغذية وتم إثراؤهما بمعرفيهما الأصليين."
+  },
+  "newItems": [
+    {
+      "id": "35e334c198740f7416",
+      "url": "https://openai.com/index/introducing-gpt-6-1-terra",
+      "basis": "article",
+      "kind": "news",
+      "titleAr": "OpenAI تطلق GPT‑6.1 Terra مع تركيز على فهم الواجهات والتحكم بالحاسوب"
+    },
+    {
+      "id": "b83204b7e9c12d9e6e",
+      "url": "https://lynchlab.net/llm-skin-cancer",
+      "basis": "article",
+      "kind": "news",
+      "titleAr": "تجربة محدودة: شبكة CNN متخصصة تتفوق على نموذجين لغويين في مجموعة صور جلدية"
+    },
+    {
+      "id": "e42e3d9560a5e038b6",
+      "url": "https://shraiwi.com/blog/simd-fast-esp32s3/",
+      "basis": "article",
+      "kind": "news",
+      "titleAr": "تسريع رؤية حاسوبية على ESP32‑S3 باستخدام تعليمات SIMD"
+    },
+    {
+      "id": "edb3a626875732de5c",
+      "url": "https://github.com/affaan-m/ECC",
+      "basis": "readme",
+      "kind": "project",
+      "titleAr": "ECC — مهارات وقواعد وخطافات لتنظيم سير عمل وكلاء البرمجة"
+    },
+    {
+      "id": "e7f1aab302e1f0371e",
+      "url": "https://github.com/run-llama/llama_index",
+      "basis": "readme",
+      "kind": "project",
+      "titleAr": "LlamaIndex — إطار Python لفهرسة المستندات وبناء تطبيقات RAG ووكلاء المستندات"
+    }
+  ],
+  "localCommandsNotExecuted": [
+    "python scripts/editorial.py validate /tmp/nabdh-editorial-2026-10-27-0240.json",
+    "python scripts/editorial.py import /tmp/nabdh-editorial-2026-10-27-0240.json",
+    "python -m unittest discover -s tests -v"
+  ],
+  "validationPlan": {
+    "equivalentStructuralValidation": "passed for all five incoming records: required fields, HTTPS sources, timezone-aware reviewedAt, allowed basis, proposal counts and steps; all five IDs and URLs exactly match current feed",
+    "oldRecordPreservation": "passed: all 193 existing item objects retained unchanged before adding five new IDs",
+    "officialCI": "the existing pull_request workflow will run unittest, scripts/editorial.py validate on merged editorial.json, and JavaScript syntax checks",
+    "importCommand": "not run locally; merged editorial file was constructed with the same merge semantics while preserving all previous records and fields"
+  },
+  "workflowSnapshot": {
+    "latestMainSha": "e71af93f8c9d27ff690cb56e24f39c1f052f6a1b",
+    "latestFeedWorkflowRun": 40407676946,
+    "latestFeedWorkflowConclusion": "success",
+    "latestFeedWorkflowUrl": "https://github.com/lm7md-ai/.-/actions/runs/40407676946",
+    "priorValidationRun": 40407598217,
+    "priorValidationConclusion": "success",
+    "pr1": {
+      "state": "closed",
+      "merged": true,
+      "mergedAt": "2026-10-24T10:21:47Z"
+    },
+    "pr2": {
+      "state": "closed",
+      "merged": true,
+      "mergedAt": "2026-10-24T10:07:54Z"
+    },
+    "pr24": {
+      "state": "closed",
+      "merged": true,
+      "mergedAt": "2026-10-26T21:50:16Z",
+      "changedFiles": [
+        "editorial/incoming/nabdh-editorial-2026-10-27-0038.json",
+        "editorial/library/review-2026-10-27-0038.json",
+        "editorial/pending/audit-2026-10-27-0038.json",
+        "site/data/editorial.json"
+      ]
+    }
+  },
+  "publicSiteVerification": {
+    "attempted": true,
+    "publicEditorialJson": "not verified: browser fetch returned DisabledError and direct download failed",
+    "action": "after merge, verify the deployment workflow; do not claim the public JSON or detail cards were visually confirmed unless direct access succeeds"
+  },
+  "developerDisplayRequirements": [
+    "لا تعدل شيفرة الموقع أو التصميم أو workflows أو إعدادات النشر.",
+    "بعد النشر، تحقق من أن تفاصيل العناصر الخمسة تعرض titleAr وsummaryAr وwhyItMatters وaudience وnextSteps وlimitations والمصادر.",
+    "في بطاقات المشاريع، اعرض overview وrequirements وquickStart وقوائم improvements وspinoffs وreligious الموجودة فقط؛ لا تملأ القوائم بقوالب حشو.",
+    "ميّز المقترحات عن الميزات المنفذة، ولا تعرض testEvidence غير موجود."
+  ]
+}
