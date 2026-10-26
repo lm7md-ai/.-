@@ -1,0 +1,437 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-27T00:49:07+03:00",
+  "baseMainSha": "1b9c0f524eaa208757e61955cbbb5730ef31d214",
+  "feedGeneratedAt": "2026-10-26T21:04:59+00:00",
+  "checkedIncomingFiles": 24,
+  "audit": {
+    "incomingRecords": 185,
+    "alreadyImportedExact": 182,
+    "matchingNotImported": 0,
+    "activeFeedExact": 160,
+    "previouslyImportedOutOfFeed": 22,
+    "notInFeedNotImported": 3,
+    "urlMismatches": 0,
+    "needsStructuralCorrection": 0,
+    "currentFeedItems": 800,
+    "currentNews": 700,
+    "currentProjects": 100,
+    "existingEditorialRecords": 185,
+    "activeEditorialMatchesBefore": 163,
+    "activeEditorialNewsBefore": 113,
+    "activeEditorialProjectsBefore": 50,
+    "newRecordsPrepared": 8,
+    "structuralNote": "قورنت أزواج id/url حرفيًا. 182 سجلًا واردًا موجودة بالإثراء، منها 160 ما زالت في التغذية و22 خرجت منها؛ ثلاثة سجلات فقط ليست في التغذية ولم تُستورد. حُفظت السجلات القديمة.",
+    "mergedRecordCount": 193,
+    "activeEditorialMatchesAfter": 171,
+    "activeEditorialNewsAfter": 119,
+    "activeEditorialProjectsAfter": 52
+  },
+  "incomingFiles": [
+    {
+      "file": "nabdh-editorial-2026-10-24-0542.json",
+      "records": 10,
+      "importedExact": 9,
+      "activeExact": 7,
+      "expired": 2,
+      "notImported": 1
+    },
+    {
+      "file": "nabdh-editorial-2026-10-24-0840.json",
+      "records": 7,
+      "importedExact": 7,
+      "activeExact": 4,
+      "expired": 3,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-24-1143.json",
+      "records": 14,
+      "importedExact": 12,
+      "activeExact": 10,
+      "expired": 2,
+      "notImported": 2
+    },
+    {
+      "file": "nabdh-editorial-2026-10-24-1439.json",
+      "records": 9,
+      "importedExact": 9,
+      "activeExact": 6,
+      "expired": 3,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-24-1740.json",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 4,
+      "expired": 2,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-24-2043.json",
+      "records": 10,
+      "importedExact": 10,
+      "activeExact": 9,
+      "expired": 1,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-24-2342.json",
+      "records": 10,
+      "importedExact": 10,
+      "activeExact": 10,
+      "expired": 0,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-24.json",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 2,
+      "expired": 4,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-25-0250.json",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 6,
+      "expired": 0,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-25-0554.json",
+      "records": 8,
+      "importedExact": 8,
+      "activeExact": 8,
+      "expired": 0,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-25-0845.json",
+      "records": 10,
+      "importedExact": 10,
+      "activeExact": 10,
+      "expired": 0,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-25-1143.json",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 4,
+      "expired": 2,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-25-1442.json",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 4,
+      "expired": 2,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-25-1742.json",
+      "records": 8,
+      "importedExact": 8,
+      "activeExact": 8,
+      "expired": 0,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-25-2038.json",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 6,
+      "expired": 0,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-25-2342.json",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 5,
+      "expired": 1,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-26-0250.json",
+      "records": 8,
+      "importedExact": 8,
+      "activeExact": 8,
+      "expired": 0,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-26-0545.json",
+      "records": 7,
+      "importedExact": 7,
+      "activeExact": 7,
+      "expired": 0,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-26-0840.json",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 6,
+      "expired": 0,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-26-1152.json",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 6,
+      "expired": 0,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-26-1445.json",
+      "records": 5,
+      "importedExact": 5,
+      "activeExact": 5,
+      "expired": 0,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-26-1745.json",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 6,
+      "expired": 0,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-26-2042.json",
+      "records": 5,
+      "importedExact": 5,
+      "activeExact": 5,
+      "expired": 0,
+      "notImported": 0
+    },
+    {
+      "file": "nabdh-editorial-2026-10-26-2342.json",
+      "records": 14,
+      "importedExact": 14,
+      "activeExact": 14,
+      "expired": 0,
+      "notImported": 0
+    }
+  ],
+  "unmatched": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+      "classification": "not_in_current_feed_not_imported"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "classification": "not_in_current_feed_not_imported"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "classification": "not_in_current_feed_not_imported"
+    }
+  ],
+  "expired": [
+    {
+      "id": "272ca529595ace68cc",
+      "url": "https://bottlecapai.com/post/thinkingcap-gemma-4-26b/",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve without deletion"
+    },
+    {
+      "id": "be074fe101e39b9e92",
+      "url": "https://www.axelmagn.com/blog/202610-zig-traits/",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve without deletion"
+    },
+    {
+      "id": "eaf6e95c99cc41352e",
+      "url": "https://codeandcake.dev/posts/2026-10-22-docker-is-weird",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-0840.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve without deletion"
+    },
+    {
+      "id": "b5cb20bfbe29ca4672",
+      "url": "https://block.xyz/dessa",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-0840.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve without deletion"
+    },
+    {
+      "id": "870947cc813e3918d8",
+      "url": "https://david.lequin.dev/blog/bi-software-is-dead/",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-0840.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve without deletion"
+    },
+    {
+      "id": "010d1ccd570cd22892",
+      "url": "https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve without deletion"
+    },
+    {
+      "id": "30e283a9b3f70e35d8",
+      "url": "https://github.com/astral-sh/uv",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve without deletion"
+    },
+    {
+      "id": "4906ded72c396dea87",
+      "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.0",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-1439.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve without deletion"
+    },
+    {
+      "id": "cbb045dba06decd7ef",
+      "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-1439.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve without deletion"
+    },
+    {
+      "id": "906857cd0f7118cafb",
+      "url": "https://thinkrail.ai/",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-1439.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve without deletion"
+    },
+    {
+      "id": "de8f53606bd4f2390d",
+      "url": "https://security.apple.com/research-device/",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-1740.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve without deletion"
+    },
+    {
+      "id": "d82e7cc672e929a3b3",
+      "url": "https://quantum5.ca/2025/03/22/whirlwind-tour-of-systemd-nspawn-containers/",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-1740.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve without deletion"
+    },
+    {
+      "id": "84d5e70408465cd957",
+      "url": "https://www.infoq.com/news/2026/10/tornadovm-7-gpu/",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-2043.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve without deletion"
+    },
+    {
+      "id": "f6a301346a05e615cd",
+      "url": "https://www.anthropic.com/research/formal-verification",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve without deletion"
+    },
+    {
+      "id": "f8c156dba788682638",
+      "url": "https://openai.com/index/securing-our-frontier-model-training-environment/",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve without deletion"
+    },
+    {
+      "id": "bf44de9e544de4cbe9",
+      "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve without deletion"
+    },
+    {
+      "id": "a9526976eeebfbfe11",
+      "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve without deletion"
+    },
+    {
+      "id": "4f518f178a0999f4d6",
+      "url": "https://xingjianbai.com/reactive-optimizers/",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-25-1143.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve without deletion"
+    },
+    {
+      "id": "402510afde2d9adf5a",
+      "url": "https://github.com/astroautomata/PySR",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-25-1143.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve without deletion"
+    },
+    {
+      "id": "1ac9c976988acd153a",
+      "url": "https://polygonjs.com/blog/why-i-rewrote-polygon-from-scratch",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-25-1442.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve without deletion"
+    },
+    {
+      "id": "d0eaca9f562278f8ee",
+      "url": "https://catlikecoding.com/godot/procedural-gpu-patterns/09-tiling-noise/",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-25-1442.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve without deletion"
+    },
+    {
+      "id": "64455b0e03b14f4232",
+      "url": "https://www.engadget.com/2296124/meta-delaying-controversial-business-terms-scraping-concerns/",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-25-2342.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve without deletion"
+    }
+  ],
+  "targetRecheck": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "inCurrentFeed": false,
+      "inEditorial": false
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "inCurrentFeed": false,
+      "inEditorial": false
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "inCurrentFeed": false,
+      "inEditorial": false
+    }
+  ],
+  "localCommandsNotExecuted": [
+    "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-10-27-0038.json",
+    "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-10-27-0038.json",
+    "python -m unittest discover -s tests -v"
+  ],
+  "statusSnapshot": {
+    "lastSuccessfulAt": "2026-10-26T21:04:59+00:00",
+    "lastAttemptAt": "2026-10-26T21:04:59+00:00",
+    "state": "ok"
+  },
+  "developerDisplayRequirements": [
+    "لا تعرض المكتبة التاريخية غير المنشورة كبطاقات أخبار.",
+    "اعرض الرابط الأصلي وحالة النشاط والترخيص ووقت القياس.",
+    "احتفظ بروابط المكتبة بعد خروج العناصر من التغذية.",
+    "ميّز المقترحات عن الميزات المنفذة والمختبرة."
+  ],
+  "validationPlan": "التحقق البنيوي للدفعة اجتاز في مرحلة التحرير. لم تُشغّل الأوامر محليًا؛ ينتظر PR نجاح CI الرسمي الذي يشغّل unittest وscripts/editorial.py validate وفحص JavaScript."
+}
