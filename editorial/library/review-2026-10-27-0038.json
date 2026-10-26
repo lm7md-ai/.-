@@ -1,0 +1,987 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-27T00:49:07+03:00",
+  "sourceSnapshot": "GitHub REST metadata and official license files where API returned NOASSERTION",
+  "feedGeneratedAt": "2026-10-26T21:04:59+00:00",
+  "metricsWarning": "Stars and forks are cumulative snapshots from this run, not daily growth or current popularity rankings.",
+  "statusSummary": {
+    "total": 31,
+    "archived": 2,
+    "inCurrentFeed": 4,
+    "notInFeed": 27,
+    "sourceAvailableRestricted": 1,
+    "conditionalBuildLicenses": 1
+  },
+  "entries": [
+    {
+      "repository": "torvalds/linux",
+      "url": "https://github.com/torvalds/linux",
+      "category": "أنظمة تشغيل",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 253579,
+      "forksMeasured": 67402,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2026-10-26T19:18:49Z",
+      "defaultBranch": "master",
+      "license": "GPL-2.0 WITH Linux-syscall-note; other licenses may apply",
+      "licenseEvidenceUrl": "https://github.com/torvalds/linux/blob/master/COPYING",
+      "licenseStatus": "verified_with_exception",
+      "inCurrentFeed": false,
+      "siteVisibility": "research-only; not published as a feed card",
+      "suggestedAlternatives": [],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/torvalds/linux"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/torvalds/linux/blob/master/COPYING"
+        }
+      ]
+    },
+    {
+      "repository": "microsoft/vscode",
+      "url": "https://github.com/microsoft/vscode",
+      "category": "أدوات تطوير",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 194342,
+      "forksMeasured": 44867,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2026-10-26T21:37:03Z",
+      "defaultBranch": "main",
+      "license": "MIT",
+      "licenseEvidenceUrl": "https://github.com/microsoft/vscode",
+      "licenseStatus": "verified",
+      "inCurrentFeed": false,
+      "siteVisibility": "research-only; not published as a feed card",
+      "suggestedAlternatives": [],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/microsoft/vscode"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/microsoft/vscode"
+        }
+      ]
+    },
+    {
+      "repository": "vuejs/core",
+      "url": "https://github.com/vuejs/core",
+      "category": "واجهات ويب",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 54897,
+      "forksMeasured": 9271,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2026-10-26T20:05:33Z",
+      "defaultBranch": "main",
+      "license": "MIT",
+      "licenseEvidenceUrl": "https://github.com/vuejs/core",
+      "licenseStatus": "verified",
+      "inCurrentFeed": false,
+      "siteVisibility": "research-only; not published as a feed card",
+      "suggestedAlternatives": [],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/vuejs/core"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/vuejs/core"
+        }
+      ]
+    },
+    {
+      "repository": "nodejs/node",
+      "url": "https://github.com/nodejs/node",
+      "category": "بيئات JavaScript",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 123118,
+      "forksMeasured": 39239,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2026-10-26T21:25:41Z",
+      "defaultBranch": "main",
+      "license": "MIT plus third-party component licenses",
+      "licenseEvidenceUrl": "https://github.com/nodejs/node/blob/main/LICENSE",
+      "licenseStatus": "verified_with_component_caveat",
+      "inCurrentFeed": false,
+      "siteVisibility": "research-only; not published as a feed card",
+      "suggestedAlternatives": [],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/nodejs/node"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/nodejs/node/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "repository": "python/cpython",
+      "url": "https://github.com/python/cpython",
+      "category": "لغات برمجة",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 77774,
+      "forksMeasured": 37624,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2026-10-26T19:49:48Z",
+      "defaultBranch": "main",
+      "license": "Python Software Foundation License; bundled components may differ",
+      "licenseEvidenceUrl": "https://github.com/python/cpython/blob/main/LICENSE",
+      "licenseStatus": "verified_with_component_caveat",
+      "inCurrentFeed": false,
+      "siteVisibility": "research-only; not published as a feed card",
+      "suggestedAlternatives": [],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/python/cpython"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/python/cpython/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "repository": "rust-lang/rust",
+      "url": "https://github.com/rust-lang/rust",
+      "category": "لغات برمجة",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 120848,
+      "forksMeasured": 17995,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2026-10-26T19:40:28Z",
+      "defaultBranch": "master",
+      "license": "Apache-2.0 OR MIT",
+      "licenseEvidenceUrl": "https://github.com/rust-lang/rust",
+      "licenseStatus": "verified_dual_license",
+      "inCurrentFeed": false,
+      "siteVisibility": "research-only; not published as a feed card",
+      "suggestedAlternatives": [],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/rust-lang/rust"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/rust-lang/rust"
+        }
+      ]
+    },
+    {
+      "repository": "golang/go",
+      "url": "https://github.com/golang/go",
+      "category": "لغات برمجة",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 139616,
+      "forksMeasured": 21552,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2026-10-26T21:25:24Z",
+      "defaultBranch": "master",
+      "license": "BSD-3-Clause",
+      "licenseEvidenceUrl": "https://github.com/golang/go",
+      "licenseStatus": "verified",
+      "inCurrentFeed": false,
+      "siteVisibility": "research-only; not published as a feed card",
+      "suggestedAlternatives": [],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/golang/go"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/golang/go"
+        }
+      ]
+    },
+    {
+      "repository": "kubernetes/kubernetes",
+      "url": "https://github.com/kubernetes/kubernetes",
+      "category": "بنية سحابية",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 128713,
+      "forksMeasured": 46360,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2026-10-26T19:17:03Z",
+      "defaultBranch": "master",
+      "license": "Apache-2.0",
+      "licenseEvidenceUrl": "https://github.com/kubernetes/kubernetes",
+      "licenseStatus": "verified",
+      "inCurrentFeed": false,
+      "siteVisibility": "research-only; not published as a feed card",
+      "suggestedAlternatives": [],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/kubernetes/kubernetes"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/kubernetes/kubernetes"
+        }
+      ]
+    },
+    {
+      "repository": "postgres/postgres",
+      "url": "https://github.com/postgres/postgres",
+      "category": "قواعد بيانات",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 22584,
+      "forksMeasured": 6014,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2026-10-26T21:15:47Z",
+      "defaultBranch": "master",
+      "license": "PostgreSQL License",
+      "licenseEvidenceUrl": "https://github.com/postgres/postgres/blob/master/COPYRIGHT",
+      "licenseStatus": "verified",
+      "inCurrentFeed": false,
+      "siteVisibility": "research-only; not published as a feed card",
+      "suggestedAlternatives": [],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/postgres/postgres"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/postgres/postgres/blob/master/COPYRIGHT"
+        }
+      ]
+    },
+    {
+      "repository": "tensorflow/tensorflow",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "category": "تعلم آلي",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 201273,
+      "forksMeasured": 78702,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2026-10-26T21:34:56Z",
+      "defaultBranch": "master",
+      "license": "Apache-2.0",
+      "licenseEvidenceUrl": "https://github.com/tensorflow/tensorflow",
+      "licenseStatus": "verified",
+      "inCurrentFeed": false,
+      "siteVisibility": "research-only; not published as a feed card",
+      "suggestedAlternatives": [],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/tensorflow/tensorflow"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/tensorflow/tensorflow"
+        }
+      ]
+    },
+    {
+      "repository": "pytorch/pytorch",
+      "url": "https://github.com/pytorch/pytorch",
+      "category": "تعلم عميق",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 105096,
+      "forksMeasured": 31793,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2026-10-26T21:32:58Z",
+      "defaultBranch": "main",
+      "license": "BSD-style; review bundled components",
+      "licenseEvidenceUrl": "https://github.com/pytorch/pytorch/blob/main/LICENSE",
+      "licenseStatus": "verified_with_component_caveat",
+      "inCurrentFeed": true,
+      "siteVisibility": "feed-visible; keep original id",
+      "suggestedAlternatives": [],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/pytorch/pytorch"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/pytorch/pytorch/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "repository": "huggingface/transformers",
+      "url": "https://github.com/huggingface/transformers",
+      "category": "نماذج AI",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 168204,
+      "forksMeasured": 34998,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2026-10-26T19:47:39Z",
+      "defaultBranch": "main",
+      "license": "Apache-2.0",
+      "licenseEvidenceUrl": "https://github.com/huggingface/transformers",
+      "licenseStatus": "verified",
+      "inCurrentFeed": true,
+      "siteVisibility": "feed-visible; keep original id",
+      "suggestedAlternatives": [],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/huggingface/transformers"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/huggingface/transformers"
+        }
+      ]
+    },
+    {
+      "repository": "ollama/ollama",
+      "url": "https://github.com/ollama/ollama",
+      "category": "نماذج محلية",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 184890,
+      "forksMeasured": 18612,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2026-10-26T21:22:28Z",
+      "defaultBranch": "main",
+      "license": "MIT",
+      "licenseEvidenceUrl": "https://github.com/ollama/ollama",
+      "licenseStatus": "verified",
+      "inCurrentFeed": false,
+      "siteVisibility": "research-only; not published as a feed card",
+      "suggestedAlternatives": [],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/ollama/ollama"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/ollama/ollama"
+        }
+      ]
+    },
+    {
+      "repository": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "category": "أتمتة",
+      "classification": "source_available_restricted",
+      "archived": false,
+      "starsMeasured": 208663,
+      "forksMeasured": 61256,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2026-10-26T21:20:59Z",
+      "defaultBranch": "master",
+      "license": "Sustainable Use License; .ee files require Enterprise License",
+      "licenseEvidenceUrl": "https://github.com/n8n-io/n8n/blob/master/LICENSE.md",
+      "licenseStatus": "source_available_restricted",
+      "inCurrentFeed": false,
+      "siteVisibility": "research-only; not published as a feed card",
+      "suggestedAlternatives": [],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/n8n-io/n8n"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/n8n-io/n8n/blob/master/LICENSE.md"
+        }
+      ]
+    },
+    {
+      "repository": "langchain-ai/langchain",
+      "url": "https://github.com/langchain-ai/langchain",
+      "category": "تطبيقات AI",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 148510,
+      "forksMeasured": 24929,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2026-10-26T20:02:46Z",
+      "defaultBranch": "master",
+      "license": "MIT",
+      "licenseEvidenceUrl": "https://github.com/langchain-ai/langchain",
+      "licenseStatus": "verified",
+      "inCurrentFeed": true,
+      "siteVisibility": "feed-visible; keep original id",
+      "suggestedAlternatives": [],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/langchain-ai/langchain"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/langchain-ai/langchain"
+        }
+      ]
+    },
+    {
+      "repository": "home-assistant/core",
+      "url": "https://github.com/home-assistant/core",
+      "category": "منزل ذكي",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 91746,
+      "forksMeasured": 39026,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2026-10-26T21:27:15Z",
+      "defaultBranch": "dev",
+      "license": "Apache-2.0",
+      "licenseEvidenceUrl": "https://github.com/home-assistant/core",
+      "licenseStatus": "verified",
+      "inCurrentFeed": false,
+      "siteVisibility": "research-only; not published as a feed card",
+      "suggestedAlternatives": [],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/home-assistant/core"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/home-assistant/core"
+        }
+      ]
+    },
+    {
+      "repository": "obsproject/obs-studio",
+      "url": "https://github.com/obsproject/obs-studio",
+      "category": "بث وتسجيل",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 78277,
+      "forksMeasured": 10883,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2026-10-23T20:48:25Z",
+      "defaultBranch": "master",
+      "license": "GPL-2.0",
+      "licenseEvidenceUrl": "https://github.com/obsproject/obs-studio",
+      "licenseStatus": "verified",
+      "inCurrentFeed": false,
+      "siteVisibility": "research-only; not published as a feed card",
+      "suggestedAlternatives": [],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/obsproject/obs-studio"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/obsproject/obs-studio"
+        }
+      ]
+    },
+    {
+      "repository": "blender/blender",
+      "url": "https://github.com/blender/blender",
+      "category": "ثلاثي أبعاد",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 21293,
+      "forksMeasured": 3436,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2026-10-26T21:03:50Z",
+      "defaultBranch": "main",
+      "license": "GNU GPL; full terms referenced from COPYING",
+      "licenseEvidenceUrl": "https://github.com/blender/blender/blob/main/COPYING",
+      "licenseStatus": "verified",
+      "inCurrentFeed": false,
+      "siteVisibility": "research-only; not published as a feed card",
+      "suggestedAlternatives": [],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/blender/blender"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/blender/blender/blob/main/COPYING"
+        }
+      ]
+    },
+    {
+      "repository": "jellyfin/jellyfin",
+      "url": "https://github.com/jellyfin/jellyfin",
+      "category": "وسائط",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 58645,
+      "forksMeasured": 5719,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2026-10-26T20:49:54Z",
+      "defaultBranch": "master",
+      "license": "GPL-2.0",
+      "licenseEvidenceUrl": "https://github.com/jellyfin/jellyfin",
+      "licenseStatus": "verified",
+      "inCurrentFeed": false,
+      "siteVisibility": "research-only; not published as a feed card",
+      "suggestedAlternatives": [],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/jellyfin/jellyfin"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/jellyfin/jellyfin"
+        }
+      ]
+    },
+    {
+      "repository": "immich-app/immich",
+      "url": "https://github.com/immich-app/immich",
+      "category": "صور",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 117311,
+      "forksMeasured": 7364,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2026-10-26T19:29:35Z",
+      "defaultBranch": "main",
+      "license": "AGPL-3.0",
+      "licenseEvidenceUrl": "https://github.com/immich-app/immich",
+      "licenseStatus": "verified",
+      "inCurrentFeed": false,
+      "siteVisibility": "research-only; not published as a feed card",
+      "suggestedAlternatives": [],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/immich-app/immich"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/immich-app/immich"
+        }
+      ]
+    },
+    {
+      "repository": "paperless-ngx/paperless-ngx",
+      "url": "https://github.com/paperless-ngx/paperless-ngx",
+      "category": "وثائق",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 47118,
+      "forksMeasured": 3280,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2026-10-26T15:12:50Z",
+      "defaultBranch": "dev",
+      "license": "GPL-3.0",
+      "licenseEvidenceUrl": "https://github.com/paperless-ngx/paperless-ngx",
+      "licenseStatus": "verified",
+      "inCurrentFeed": true,
+      "siteVisibility": "feed-visible; keep original id",
+      "suggestedAlternatives": [],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/paperless-ngx/paperless-ngx"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/paperless-ngx/paperless-ngx"
+        }
+      ]
+    },
+    {
+      "repository": "grafana/grafana",
+      "url": "https://github.com/grafana/grafana",
+      "category": "مراقبة",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 77523,
+      "forksMeasured": 14866,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2026-10-26T21:31:25Z",
+      "defaultBranch": "main",
+      "license": "AGPL-3.0",
+      "licenseEvidenceUrl": "https://github.com/grafana/grafana",
+      "licenseStatus": "verified",
+      "inCurrentFeed": false,
+      "siteVisibility": "research-only; not published as a feed card",
+      "suggestedAlternatives": [],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/grafana/grafana"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/grafana/grafana"
+        }
+      ]
+    },
+    {
+      "repository": "godotengine/godot",
+      "url": "https://github.com/godotengine/godot",
+      "category": "ألعاب",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 119119,
+      "forksMeasured": 27213,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2026-10-26T16:23:00Z",
+      "defaultBranch": "master",
+      "license": "MIT",
+      "licenseEvidenceUrl": "https://github.com/godotengine/godot",
+      "licenseStatus": "verified",
+      "inCurrentFeed": false,
+      "siteVisibility": "research-only; not published as a feed card",
+      "suggestedAlternatives": [],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/godotengine/godot"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/godotengine/godot"
+        }
+      ]
+    },
+    {
+      "repository": "fastapi/fastapi",
+      "url": "https://github.com/fastapi/fastapi",
+      "category": "ويب Python",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 104223,
+      "forksMeasured": 10131,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2026-10-26T20:54:19Z",
+      "defaultBranch": "master",
+      "license": "MIT",
+      "licenseEvidenceUrl": "https://github.com/fastapi/fastapi",
+      "licenseStatus": "verified",
+      "inCurrentFeed": false,
+      "siteVisibility": "research-only; not published as a feed card",
+      "suggestedAlternatives": [],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/fastapi/fastapi"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/fastapi/fastapi"
+        }
+      ]
+    },
+    {
+      "repository": "sveltejs/svelte",
+      "url": "https://github.com/sveltejs/svelte",
+      "category": "واجهات ويب",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 88473,
+      "forksMeasured": 7411,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2026-10-26T20:16:25Z",
+      "defaultBranch": "main",
+      "license": "MIT",
+      "licenseEvidenceUrl": "https://github.com/sveltejs/svelte",
+      "licenseStatus": "verified",
+      "inCurrentFeed": false,
+      "siteVisibility": "research-only; not published as a feed card",
+      "suggestedAlternatives": [],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/sveltejs/svelte"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/sveltejs/svelte"
+        }
+      ]
+    },
+    {
+      "repository": "django/django",
+      "url": "https://github.com/django/django",
+      "category": "ويب Python",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 91667,
+      "forksMeasured": 36496,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2026-10-26T19:58:25Z",
+      "defaultBranch": "main",
+      "license": "BSD-3-Clause",
+      "licenseEvidenceUrl": "https://github.com/django/django",
+      "licenseStatus": "verified",
+      "inCurrentFeed": false,
+      "siteVisibility": "research-only; not published as a feed card",
+      "suggestedAlternatives": [],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/django/django"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/django/django"
+        }
+      ]
+    },
+    {
+      "repository": "neovim/neovim",
+      "url": "https://github.com/neovim/neovim",
+      "category": "محررات",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 103187,
+      "forksMeasured": 7250,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2026-10-26T12:25:47Z",
+      "defaultBranch": "master",
+      "license": "Apache-2.0 except Vim-licensed parts",
+      "licenseEvidenceUrl": "https://github.com/neovim/neovim/blob/master/LICENSE.txt",
+      "licenseStatus": "verified_with_component_caveat",
+      "inCurrentFeed": false,
+      "siteVisibility": "research-only; not published as a feed card",
+      "suggestedAlternatives": [],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/neovim/neovim"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/neovim/neovim/blob/master/LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "repository": "FFmpeg/FFmpeg",
+      "url": "https://github.com/FFmpeg/FFmpeg",
+      "category": "وسائط",
+      "classification": "established_non_archived_conditional_license",
+      "archived": false,
+      "starsMeasured": 65808,
+      "forksMeasured": 14424,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2026-10-26T19:25:21Z",
+      "defaultBranch": "master",
+      "license": "LGPL-2.1-or-later by default; GPL may apply with GPL components",
+      "licenseEvidenceUrl": "https://github.com/FFmpeg/FFmpeg/blob/master/COPYING.LGPLv2.1",
+      "licenseStatus": "conditional_by_build",
+      "inCurrentFeed": false,
+      "siteVisibility": "research-only; not published as a feed card",
+      "suggestedAlternatives": [],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/FFmpeg/FFmpeg"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/FFmpeg/FFmpeg/blob/master/COPYING.LGPLv2.1"
+        }
+      ]
+    },
+    {
+      "repository": "atom/atom",
+      "url": "https://github.com/atom/atom",
+      "category": "مؤرشف",
+      "classification": "historical_archived",
+      "archived": true,
+      "starsMeasured": 60710,
+      "forksMeasured": 17160,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2023-01-03T10:49:48Z",
+      "defaultBranch": "master",
+      "license": "MIT",
+      "licenseEvidenceUrl": "https://github.com/atom/atom",
+      "licenseStatus": "archived",
+      "inCurrentFeed": false,
+      "siteVisibility": "research-only; not published as a feed card",
+      "suggestedAlternatives": [
+        "https://github.com/microsoft/vscode",
+        "https://github.com/neovim/neovim"
+      ],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/atom/atom"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/atom/atom"
+        }
+      ]
+    },
+    {
+      "repository": "angular/angular.js",
+      "url": "https://github.com/angular/angular.js",
+      "category": "مؤرشف",
+      "classification": "historical_archived",
+      "archived": true,
+      "starsMeasured": 58471,
+      "forksMeasured": 26929,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2024-04-12T17:43:16Z",
+      "defaultBranch": "master",
+      "license": "MIT",
+      "licenseEvidenceUrl": "https://github.com/angular/angular.js",
+      "licenseStatus": "archived",
+      "inCurrentFeed": false,
+      "siteVisibility": "research-only; not published as a feed card",
+      "suggestedAlternatives": [
+        "https://github.com/angular/angular",
+        "https://github.com/vuejs/core",
+        "https://github.com/sveltejs/svelte"
+      ],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/angular/angular.js"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/angular/angular.js"
+        }
+      ]
+    },
+    {
+      "repository": "microsoft/TypeScript",
+      "url": "https://github.com/microsoft/TypeScript",
+      "category": "لغات برمجة",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 111623,
+      "forksMeasured": 16014,
+      "metricCapturedAt": "2026-10-27T00:49:07+03:00",
+      "pushedAt": "2026-10-26T16:20:06Z",
+      "defaultBranch": "main",
+      "license": "Apache-2.0",
+      "licenseEvidenceUrl": "https://github.com/microsoft/TypeScript",
+      "licenseStatus": "verified",
+      "inCurrentFeed": false,
+      "siteVisibility": "research-only; not published as a feed card",
+      "suggestedAlternatives": [],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/microsoft/TypeScript"
+        },
+        {
+          "title": "Official license evidence",
+          "url": "https://github.com/microsoft/TypeScript"
+        }
+      ]
+    }
+  ],
+  "previousProjectReview": {
+    "checkedAt": "2026-10-27T00:49:07+03:00",
+    "method": "GitHub repository metadata and license fields; no runtime tests. README files were not re-read this pass, so prior editorial research was preserved.",
+    "allNonArchived": true,
+    "ideasOrderPreserved": true,
+    "repositories": [
+      {
+        "repository": "gradio-app/gradio",
+        "feedId": "9563de7ec1221e077a",
+        "archived": false,
+        "stars": 43901,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-26T21:28:07Z",
+        "inFeed": true,
+        "editorialPresent": true
+      },
+      {
+        "repository": "thedotmack/claude-mem",
+        "feedId": "853c63f738f0cecf3b",
+        "archived": false,
+        "stars": 103386,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-26T21:34:19Z",
+        "inFeed": true,
+        "editorialPresent": true
+      },
+      {
+        "repository": "ultralytics/ultralytics",
+        "feedId": "112ba4283cccf5b146",
+        "archived": false,
+        "stars": 62864,
+        "license": "AGPL-3.0",
+        "pushedAt": "2026-10-26T18:59:38Z",
+        "inFeed": true,
+        "editorialPresent": true
+      },
+      {
+        "repository": "harry0703/MoneyPrinterTurbo",
+        "feedId": "0604d6a7a7d7afd211",
+        "archived": false,
+        "stars": 135435,
+        "license": "MIT",
+        "pushedAt": "2026-10-26T14:01:14Z",
+        "inFeed": true,
+        "editorialPresent": true
+      },
+      {
+        "repository": "microsoft/AI-For-Beginners",
+        "feedId": "d4316f8d5082c97897",
+        "archived": false,
+        "stars": 70275,
+        "license": "MIT",
+        "pushedAt": "2026-10-23T23:55:14Z",
+        "inFeed": true,
+        "editorialPresent": true
+      },
+      {
+        "repository": "usebruno/bruno",
+        "feedId": "6c62a31152244eb967",
+        "archived": false,
+        "stars": 47856,
+        "license": "MIT",
+        "pushedAt": "2026-10-26T16:45:02Z",
+        "inFeed": true,
+        "editorialPresent": true
+      },
+      {
+        "repository": "keras-team/keras",
+        "feedId": "10b7f65af4f5070207",
+        "archived": false,
+        "stars": 64390,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-26T20:40:53Z",
+        "inFeed": true,
+        "editorialPresent": true
+      },
+      {
+        "repository": "k2-fsa/sherpa-onnx",
+        "feedId": "8d397f7a7077f1abc0",
+        "archived": false,
+        "stars": 15528,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-26T15:20:53Z",
+        "inFeed": true,
+        "editorialPresent": true
+      }
+    ]
+  },
+  "developerDisplayRequirements": [
+    "Keep the historical catalog separate from feed/editorial; never display unpublished records as feed cards.",
+    "Show canonical URL, archived status, license evidence, and metricCapturedAt.",
+    "Label source-available and conditional-build licenses clearly.",
+    "Keep dossier links after projects leave the active feed.",
+    "Distinguish proposals from implemented and tested features."
+  ]
+}
