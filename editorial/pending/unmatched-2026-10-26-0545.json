@@ -1,0 +1,118 @@
+{
+  "reviewedAt": "2026-10-26T05:45:27+03:00",
+  "sourceBranch": "main",
+  "feedGeneratedAt": "2026-10-25T23:50:00+00:00",
+  "matchingRule": "Exact item id AND exact original URL; never match by title",
+  "incomingFilesBeforeBatch": 17,
+  "incomingRecordsBeforeBatch": 136,
+  "alreadyImportedBeforeBatch": 133,
+  "importableBeforeBatch": 0,
+  "unmatchedBeforeBatch": 3,
+  "incomingFilesAfterBatch": 18,
+  "incomingRecordsAfterBatch": 143,
+  "matchedAndImportedAfterBatch": 140,
+  "unmatchedAfterBatch": 3,
+  "expiredOrURLMismatch": 0,
+  "needsStructuralCorrection": 0,
+  "unmatched": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+      "status": "not_in_current_feed",
+      "action": "hold original id and URL; recheck feed on next cycle"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "status": "not_in_current_feed",
+      "action": "hold original id and URL; recheck feed on next cycle"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "status": "not_in_current_feed",
+      "action": "hold original id and URL; recheck feed on next cycle"
+    }
+  ],
+  "validation": {
+    "performed": "Equivalent in-memory JSON schema, id/URL, existing-entry preservation checks",
+    "notPerformed": [
+      "python scripts/editorial.py validate <batch>",
+      "python scripts/editorial.py import <batch>",
+      "python -m unittest discover -s tests -v"
+    ],
+    "reason": "The execution container cannot resolve github.com; GitHub connector supports file read/write but not remote command execution. Existing PR CI will run repository tests and validator."
+  },
+  "previousEightProjectsReviewed": [
+    {
+      "repository": "gradio-app/gradio",
+      "archived": false,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-10-23T22:37:21Z"
+    },
+    {
+      "repository": "thedotmack/claude-mem",
+      "archived": false,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-10-25T21:00:05Z"
+    },
+    {
+      "repository": "ultralytics/ultralytics",
+      "archived": false,
+      "license": "AGPL-3.0",
+      "pushedAt": "2026-10-25T21:24:13Z"
+    },
+    {
+      "repository": "harry0703/MoneyPrinterTurbo",
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-10-25T11:11:41Z"
+    },
+    {
+      "repository": "microsoft/AI-For-Beginners",
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-10-23T23:55:14Z"
+    },
+    {
+      "repository": "usebruno/bruno",
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-10-24T10:20:09Z"
+    },
+    {
+      "repository": "keras-team/keras",
+      "archived": false,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-10-23T22:31:21Z"
+    },
+    {
+      "repository": "k2-fsa/sherpa-onnx",
+      "archived": false,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-10-25T04:20:55Z"
+    }
+  ],
+  "historicalLibrary": {
+    "file": "editorial/library/catalog-2026-10-24.json",
+    "total": 31,
+    "archived": 2,
+    "inFeedAtLastCatalogMeasurement": 4,
+    "notInFeedAtLastCatalogMeasurement": 27,
+    "publication": "Research-only; not a site feed; timestamps and licenses need periodic review",
+    "developerRequirements": [
+      "Keep research catalog independent from the 45-day feed window.",
+      "Display source and measurement timestamp, archived status, and license verification flags.",
+      "Do not imply research-only entries are published in the site.",
+      "Preserve canonical repository URL and durable library identity."
+    ]
+  },
+  "sourceAuditLimitations": [
+    "The structural checks do not prove article truth or software execution.",
+    "No source or license claims based on running code.",
+    "The site data is not considered live-published until direct public JSON verification succeeds."
+  ]
+}
