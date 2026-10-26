@@ -8414,6 +8414,388 @@
       "url": "https://github.com/explosion/spaCy",
       "reviewedAt": "2026-10-25T23:48:46.161Z",
       "basis": "readme"
+    },
+    "240888442444abd5f7": {
+      "url": "https://minimaxir.com/2026/10/cheap-llms/",
+      "titleAr": "تحليل تخفيض أسعار نماذج اللغة وأثر تكلفة الكاش",
+      "summaryAr": "عرض ماكس وولف بتاريخ 25 أكتوبر 2026 تغير أسعار نماذج OpenAI وAnthropic ومنافسة مقدمي الاستدلال والنماذج المفتوحة، مع تفسير محتمل لدور الذاكرة المؤقتة وسهولة تغيير المزود. فرضية المنافسة تحليل للكاتب لا تصريح رسمي من الشركات.",
+      "whyItMatters": "مقارنة تكلفة وكلاء البرمجة تستلزم احتساب الإدخال والإخراج والكاش والمحاولات الناجحة، لا سعر التوكن المجرد.",
+      "audience": "مطورو الوكلاء ومستخدمو API والمهتمون بتكاليف النماذج.",
+      "nextSteps": [
+        "راجع المصدر الأصلي وتاريخ النشر قبل إعادة استخدام المعلومات.",
+        "طبّق الفكرة على عينة صغيرة وقِس النتائج بدل تعميم ادعاءات المصدر."
+      ],
+      "limitations": "الأسعار مؤقتة وقد تتغير، وتوقعات المنافسة والاكتتاب آراء؛ لم أختبر الفواتير فعليًا.",
+      "reviewedAt": "2026-10-26T05:45:27+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Max Woolf — Cheap LLMs",
+          "url": "https://minimaxir.com/2026/10/cheap-llms/"
+        }
+      ]
+    },
+    "a74a41ef6e7686ae04": {
+      "url": "https://www.wired.com/story/apple-carplay-and-android-auto-make-your-phone-hot-heres-how-to-keep-it-cool/",
+      "titleAr": "كيف تقلل حرارة الهاتف مع Android Auto وCarPlay؟",
+      "summaryAr": "شرح WIRED أن الملاحة وعرض واجهة السيارة والاتصال اللاسلكي والشحن المتزامن قد تزيد حرارة الهاتف؛ يقترح إبعاد الجهاز عن الشمس، وتقليل الشحن اللاسلكي، وتنزيل الخرائط مسبقًا.",
+      "whyItMatters": "قد تساعد إدارة الحرارة على استقرار الملاحة وعمر البطارية، لكن النتيجة تختلف بحسب الجهاز والجو.",
+      "audience": "السائقون ومستخدمو أنظمة السيارة المتصلة بالهاتف.",
+      "nextSteps": [
+        "راجع المصدر الأصلي وتاريخ النشر قبل إعادة استخدام المعلومات.",
+        "طبّق الفكرة على عينة صغيرة وقِس النتائج بدل تعميم ادعاءات المصدر."
+      ],
+      "limitations": "نصائح صحفية لا اختبار مخبري لكل الأجهزة؛ لا تغيّر إعدادات الهاتف أثناء القيادة.",
+      "reviewedAt": "2026-10-26T05:45:27+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "WIRED — Phone heat in cars",
+          "url": "https://www.wired.com/story/apple-carplay-and-android-auto-make-your-phone-hot-heres-how-to-keep-it-cool/"
+        }
+      ]
+    },
+    "5fd461d590ffe6bd9f": {
+      "url": "https://www.wired.com/story/what-the-us-anti-data-center-movement-can-learn-from-everywhere-else/",
+      "titleAr": "مراكز البيانات: تحديات الطاقة والمياه والتوسع",
+      "summaryAr": "ناقشت مقابلة WIRED مع باريس ماركس أمثلة من أيرلندا ودول أخرى عن تأثير نمو مراكز البيانات في الشبكات الكهربائية والموارد والمجتمعات، مع رؤية نقدية لحجم الاستثمار.",
+      "whyItMatters": "الاستدامة والقدرة الكهربائية والتكلفة المحلية عناصر أساسية في تخطيط بنية الذكاء الاصطناعي.",
+      "audience": "مهندسو السحابة وباحثو الاستدامة وطلاب الحوسبة.",
+      "nextSteps": [
+        "راجع المصدر الأصلي وتاريخ النشر قبل إعادة استخدام المعلومات.",
+        "طبّق الفكرة على عينة صغيرة وقِس النتائج بدل تعميم ادعاءات المصدر."
+      ],
+      "limitations": "المادة مقابلة رأي لا تدقيق مستقل لكل مشروع، وبعض الأرقام من تصريحات الضيف.",
+      "reviewedAt": "2026-10-26T05:45:27+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "WIRED — Data center interview",
+          "url": "https://www.wired.com/story/what-the-us-anti-data-center-movement-can-learn-from-everywhere-else/"
+        }
+      ]
+    },
+    "1224eab7439ee9c543": {
+      "url": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/",
+      "titleAr": "تحديث سياسة Google يثير نقاشًا حول ربط البيانات والإعلانات",
+      "summaryAr": "حلل Ars Technica توضيح سياسة الخصوصية المتعلقة بـPersonal Intelligence. قالت Google إن ربط التطبيقات اختياري وإن الإعلانات لا تعتمد مباشرة على صندوق Gmail أو الصور؛ يدرس التقرير أثر السياق المشترك في خدمات البحث الذكية.",
+      "whyItMatters": "تساعد المراجعة على فهم أذونات ربط التطبيقات بدل افتراض أن كل بريد يستخدم مباشرة للإعلانات.",
+      "audience": "مستخدمو Google ومطورو التطبيقات المتصلة بالحسابات.",
+      "nextSteps": [
+        "راجع المصدر الأصلي وتاريخ النشر قبل إعادة استخدام المعلومات.",
+        "طبّق الفكرة على عينة صغيرة وقِس النتائج بدل تعميم ادعاءات المصدر."
+      ],
+      "limitations": "المقال يناقش احتمالًا غير مباشر؛ نقل نفي Google لاستهداف الإعلانات مباشرة من البريد والصور.",
+      "reviewedAt": "2026-10-26T05:45:27+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Ars Technica — Google privacy",
+          "url": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/"
+        },
+        {
+          "title": "Google Privacy Policy",
+          "url": "https://policies.google.com/privacy"
+        }
+      ]
+    },
+    "2b2e6bd3436f403154": {
+      "url": "https://github.com/slee-persis/GVS5H",
+      "titleAr": "GVS5H: تحسين حل مسائل البرمجة بتنسيق محاولات متعددة",
+      "summaryAr": "يعرض README تجربة تنسيق عدة نسخ من نموذج واحد عبر خطة وملفات سياق مشتركة. يدّعي الباحثون تحسنًا يصل إلى 25.6 نقطة مئوية في بعض إعدادات LiveCodeBench، ويذكرون أن التحسن ليس عامًا.",
+      "whyItMatters": "يمكن قياس أثر تنظيم عمل الوكلاء مستقلًا عن مجرد زيادة حجم النموذج، بشرط ميزانية عادلة.",
+      "audience": "باحثو النماذج ومطورو وكلاء البرمجة.",
+      "nextSteps": [
+        "راجع المصدر الأصلي وتاريخ النشر قبل إعادة استخدام المعلومات.",
+        "طبّق الفكرة على عينة صغيرة وقِس النتائج بدل تعميم ادعاءات المصدر."
+      ],
+      "limitations": "قرأت README ولم أقرأ الورقة كاملة أو أشغّل التجربة؛ النتائج ادعاءات الفريق، وقد تختلف شروط المقارنة.",
+      "reviewedAt": "2026-10-26T05:45:27+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "GVS5H README",
+          "url": "https://github.com/slee-persis/GVS5H"
+        },
+        {
+          "title": "GVS5H notices",
+          "url": "https://github.com/slee-persis/GVS5H/blob/master/NOTICE.md"
+        }
+      ]
+    },
+    "55c5e35b9bbd92d15c": {
+      "url": "https://github.com/VectifyAI/PageIndex",
+      "titleAr": "PageIndex — استرجاع الوثائق بفهرس شجري بدل قاعدة متجهات",
+      "summaryAr": "مكتبة Python تولد فهرسًا هرميًا للأقسام ثم تستخدم استدلال نموذج لغة للانتقال إلى النص المناسب والإجابة بإحالات. وفق README، يدعم SDK فهرسة محلية لملفات PDF النصية وخدمة سحابية لملفات أكثر تعقيدًا.",
+      "whyItMatters": "تتيح مقارنة RAG شجري مع RAG متجهي على المحاضرات والتقارير الطويلة، مع التركيز على صحة الإحالات وتكلفة الاستدلال.",
+      "audience": "مطورو Python وRAG والطلاب والباحثون.",
+      "overview": "يفصل PageIndex بين بناء شجرة الوثيقة والبحث الاستدلالي داخلها. رخصة الشيفرة MIT. أرقام الدقة والكلفة الواردة في README قياسات الفريق لا نتائج اختبارات مستقلة.",
+      "requirements": "Python وpip وPDF نصي ومفتاح API لمزود نموذج للوضع المحلي؛ قد تنشأ رسوم توكنات. الوضع السحابي يحتاج مفتاح PageIndex Cloud وقد تكون له رسوم معالجة وتخزين، ويدعم وفق التوثيق OCR والوثائق المصورة.",
+      "quickStart": "أنشئ بيئة Python ونفّذ pip install -U pageindex، واضبط مفتاح مزود النموذج في متغير بيئة، ثم أنشئ PageIndexClient(index=...,chat=...) واستخدم submit_document('report.pdf') وclient.chat(question,doc_id=...). راجع أمثلة README.",
+      "nextSteps": [
+        "اختبر PDF نصيًا غير حساس.",
+        "تحقق يدويًا من إجابات 30 سؤالًا وإحالاتها.",
+        "قارن الزمن وتكلفة API مع RAG متجهي."
+      ],
+      "limitations": "لم أشغّل المشروع؛ التشغيل المحلي قد يستدعي API سحابيًا ولا يعني العمل دون شبكة. البدائل تشمل Haystack وLlamaIndex والاسترجاع الهجين.",
+      "reviewedAt": "2026-10-26T05:45:27+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "PageIndex README",
+          "url": "https://github.com/VectifyAI/PageIndex"
+        },
+        {
+          "title": "PageIndex documentation",
+          "url": "https://docs.pageindex.ai"
+        },
+        {
+          "title": "PageIndex MIT license",
+          "url": "https://github.com/VectifyAI/PageIndex/blob/main/LICENSE"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "تدقيق إحالات النص العربي",
+          "problem": "قد لا تدعم الصفحة المشار إليها الإجابة.",
+          "approach": "طابق الاستشهاد بمقطع عربي في PDF وأظهر نتيجة التحقق.",
+          "stack": "Python، PageIndex، pypdf، pytest",
+          "steps": [
+            "جهّز وثائق عربية مرخصة.",
+            "استخرج صفحات الإجابة.",
+            "قارن المقاطع بعد تطبيع محدود.",
+            "راجع 100 إحالة يدويًا."
+          ],
+          "metric": "نسبة الإحالات المدعومة والإنذارات الخاطئة.",
+          "difficulty": "متوسطة؛ تقدير أسبوع.",
+          "risks": "OCR واختلاف أرقام الصفحات قد يسببان نتائج خاطئة.",
+          "sources": [
+            {
+              "title": "PageIndex README",
+              "url": "https://github.com/VectifyAI/PageIndex"
+            },
+            {
+              "title": "PageIndex documentation",
+              "url": "https://docs.pageindex.ai"
+            }
+          ]
+        },
+        {
+          "title": "مقارنة استرجاع شجري ومتجهي",
+          "problem": "لا تصلح نتائج التسويق لاتخاذ قرار على ملفات مختلفة.",
+          "approach": "اختبر الطريقتين على الأسئلة والنماذج والميزانية نفسها.",
+          "stack": "Python، PageIndex، FAISS، pandas",
+          "steps": [
+            "جهّز أسئلة مرجعية.",
+            "ثبّت إعدادات النماذج.",
+            "شغّل الطريقتين.",
+            "قارن الدقة والكلفة والزمن."
+          ],
+          "metric": "صحة الإجابة والإحالة لكل دولار.",
+          "difficulty": "متقدمة؛ تقدير أسبوعين.",
+          "risks": "الضبط غير العادل يفسد المقارنة.",
+          "sources": [
+            {
+              "title": "PageIndex README",
+              "url": "https://github.com/VectifyAI/PageIndex"
+            },
+            {
+              "title": "PageIndex documentation",
+              "url": "https://docs.pageindex.ai"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مساعد محاضرات بإحالات السلايد",
+          "problem": "يحتاج الطلاب إجابات قابلة للتتبع إلى الملفات.",
+          "approach": "ابنِ واجهة سؤال وجواب تعرض الصفحة والنص الداعم.",
+          "stack": "Python، PageIndex، Gradio",
+          "steps": [
+            "ارفع محاضرات مسموحًا بها.",
+            "ابنِ فهرسًا لكل ملف.",
+            "اعرض الإجابة والإحالة.",
+            "راجع 50 سؤالًا يدويًا."
+          ],
+          "metric": "نسبة الإجابات المدعومة بإحالة صحيحة.",
+          "difficulty": "متوسطة؛ تقدير أسبوع.",
+          "risks": "قد يخطئ النموذج أو يرسل ملفًا خاصًا إلى API.",
+          "sources": [
+            {
+              "title": "PageIndex README",
+              "url": "https://github.com/VectifyAI/PageIndex"
+            },
+            {
+              "title": "PageIndex documentation",
+              "url": "https://docs.pageindex.ai"
+            }
+          ]
+        },
+        {
+          "title": "مقارن تغييرات السياسات",
+          "problem": "تتغير بنود الوثائق بين النسخ دون تنبيه واضح.",
+          "approach": "قارن الأقسام المتناظرة وقدم قائمة تغييرات مع الصفحات.",
+          "stack": "Python، PageIndex، difflib",
+          "steps": [
+            "اجمع نسختين علنيتين.",
+            "طابق الأقسام.",
+            "استخرج البنود المتغيرة.",
+            "راجع نتائج التغييرات يدويًا."
+          ],
+          "metric": "استرجاع التغييرات الحقيقية ومعدل الإنذارات الخاطئة.",
+          "difficulty": "متوسطة؛ تقدير 1–2 أسبوع.",
+          "risks": "تغيير التنسيق قد يبدو تغييرًا في المعنى.",
+          "sources": [
+            {
+              "title": "PageIndex README",
+              "url": "https://github.com/VectifyAI/PageIndex"
+            },
+            {
+              "title": "PageIndex documentation",
+              "url": "https://docs.pageindex.ai"
+            }
+          ]
+        }
+      ],
+      "religious": []
+    },
+    "6b3f89f9ece2636a5e": {
+      "url": "https://github.com/CorentinTh/it-tools",
+      "titleAr": "IT Tools — أدوات مطورين قابلة للاستضافة الذاتية",
+      "summaryAr": "تطبيق ويب مبني بـVue وTypeScript يضم أدوات صغيرة للمطورين. يتيح README التشغيل الذاتي بحاوية Docker أو تطوير المصدر باستخدام pnpm واختبارات Vitest.",
+      "whyItMatters": "يقدم مثالًا عمليًا لتجميع أدوات متخصصة في واجهة واضحة، مع إمكانية تشغيلها محليًا.",
+      "audience": "مطورو الويب وطلاب البرمجة ومشرفو الخوادم المنزلية.",
+      "overview": "واجهة أدوات متعددة مع استضافة Docker وطرق للمساهمة. المشروع تحت GPL-3.0؛ يجب مراعاة الالتزامات عند توزيع تعديلات.",
+      "requirements": "لتشغيل جاهز: Docker ومنفذ 8080 متاح. لتطوير المصدر: Node.js متوافق مع .nvmrc وpnpm وVue وTypeScript. الكود متاح مجانًا لكن الخادم والتشغيل قد يكلفان، وبعض الأدوات قد تعتمد على الشبكة.",
+      "quickStart": "بحسب README: docker run -d --name it-tools --restart unless-stopped -p 8080:80 corentinth/it-tools:latest ثم افتح localhost:8080. للتطوير: pnpm install وpnpm dev؛ للاختبار pnpm test.",
+      "nextSteps": [
+        "جرّب نسخة محلية دون إدخال أسرار.",
+        "راجع Issues قبل اقتراح أدوات جديدة.",
+        "تحقق من GPL-3.0 قبل توزيع نسخة معدلة."
+      ],
+      "limitations": "لم أشغّل Docker أو الاختبارات. لا أؤكد أن كل أداة تعالج البيانات محليًا دون فحص شيفرتها. البدائل أدوات CLI المتخصصة.",
+      "reviewedAt": "2026-10-26T05:45:27+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "IT Tools README",
+          "url": "https://github.com/CorentinTh/it-tools"
+        },
+        {
+          "title": "IT Tools issues",
+          "url": "https://github.com/CorentinTh/it-tools/issues"
+        },
+        {
+          "title": "IT Tools GPL-3.0",
+          "url": "https://github.com/CorentinTh/it-tools/blob/main/LICENSE"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "تقرير خصوصية لكل أداة",
+          "problem": "لا يعرف المستخدم هل ترسل الأداة بيانات للخارج.",
+          "approach": "راجع طلبات الشبكة وأظهر شارة معالجة محلية أو خارجية.",
+          "stack": "Vue، TypeScript، Playwright",
+          "steps": [
+            "احصر الأدوات.",
+            "راقب طلبات الشبكة.",
+            "صنّف سلوك كل أداة.",
+            "اختبر صحة الشارات."
+          ],
+          "metric": "نسبة الأدوات المصنفة دون ادعاءات غير مثبتة.",
+          "difficulty": "متوسطة؛ تقدير أسبوع.",
+          "risks": "قد يتغير السلوك بتحديث المكتبات.",
+          "sources": [
+            {
+              "title": "IT Tools README",
+              "url": "https://github.com/CorentinTh/it-tools"
+            },
+            {
+              "title": "IT Tools issues",
+              "url": "https://github.com/CorentinTh/it-tools/issues"
+            }
+          ]
+        },
+        {
+          "title": "اختبارات Unicode عربية",
+          "problem": "بعض المحولات قد لا تعالج التشكيل والاتجاه بشكل صحيح.",
+          "approach": "أضف اختبارات عربية لأدوات النص والترميز.",
+          "stack": "TypeScript، Vitest، Playwright",
+          "steps": [
+            "اجمع عينات عربية.",
+            "حدد الأدوات النصية.",
+            "أضف اختبارات RTL والتشكيل.",
+            "راجع الإخفاقات بعد التحديث."
+          ],
+          "metric": "نجاح حالات Unicode وانخفاض الانحدارات.",
+          "difficulty": "متوسطة؛ تقدير 5 أيام.",
+          "risks": "التطبيع غير الصحيح يغيّر النص.",
+          "sources": [
+            {
+              "title": "IT Tools README",
+              "url": "https://github.com/CorentinTh/it-tools"
+            },
+            {
+              "title": "IT Tools issues",
+              "url": "https://github.com/CorentinTh/it-tools/issues"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "حقيبة أدوات عربية دون اتصال",
+          "problem": "يحتاج الطلاب أدوات بسيطة مع شرح عربي.",
+          "approach": "أنشئ PWA بخمس أدوات تعمل في المتصفح.",
+          "stack": "Vue، TypeScript، PWA",
+          "steps": [
+            "اختر خمس أدوات محلية.",
+            "أضف أمثلة عربية.",
+            "فعّل تخزين الأصول.",
+            "اختبر دون شبكة."
+          ],
+          "metric": "نجاح 95% من سيناريوهات العمل دون اتصال.",
+          "difficulty": "متوسطة؛ تقدير أسبوعين.",
+          "risks": "التخزين المؤقت قد يحتفظ بنسخة قديمة.",
+          "sources": [
+            {
+              "title": "IT Tools README",
+              "url": "https://github.com/CorentinTh/it-tools"
+            },
+            {
+              "title": "IT Tools issues",
+              "url": "https://github.com/CorentinTh/it-tools/issues"
+            }
+          ]
+        },
+        {
+          "title": "مولد بيانات اختبار صناعية",
+          "problem": "استخدام بيانات حقيقية في الاختبار يعرّض الخصوصية.",
+          "approach": "أنشئ مولد بيانات وهمية ببذرة ثابتة وتصدير JSON.",
+          "stack": "TypeScript، Faker، Vitest",
+          "steps": [
+            "حدد مخططات البيانات.",
+            "ولّد بيانات ببذرة ثابتة.",
+            "أضف تصدير JSON.",
+            "اختبر إعادة إنتاج النتائج."
+          ],
+          "metric": "تطابق 100% عند إعادة نفس البذرة.",
+          "difficulty": "سهلة إلى متوسطة؛ تقدير 4 أيام.",
+          "risks": "قد تشبه البيانات أشخاصًا حقيقيين؛ يجب وسمها وهمية.",
+          "sources": [
+            {
+              "title": "IT Tools README",
+              "url": "https://github.com/CorentinTh/it-tools"
+            },
+            {
+              "title": "IT Tools issues",
+              "url": "https://github.com/CorentinTh/it-tools/issues"
+            }
+          ]
+        }
+      ],
+      "religious": []
     }
   }
 }
