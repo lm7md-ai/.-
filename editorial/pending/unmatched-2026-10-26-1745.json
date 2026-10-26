@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-26T14:48:03.372Z",
+  "baseMainSha": "92ae4012e7997565d3830372c9451a6eab800287",
+  "feedGeneratedAt": "2026-10-26T12:57:12+00:00",
+  "checkedIncomingFiles": 21,
+  "audit": {
+    "previousBatchRecords": 160,
+    "alreadyImportedAndMatching": 156,
+    "matchingNotImported": 0,
+    "unknownOrInactive": 4,
+    "urlMismatches": 0,
+    "oldRecordsPreserved": 160,
+    "importedFromBacklog": 0,
+    "expiredConfirmed": 0,
+    "needsStructuralCorrection": 0,
+    "structuralNote": "Each incoming file was JSON-parsed and all id/url pairs compared literally to current feed and editorial. Official per-file Python validation was not executed in this environment; CI validates the resulting editorial.json."
+  },
+  "unmatched": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+      "classification": "not_in_current_feed_not_imported",
+      "action": "wait_for_original_id_and_url_to_reappear; do not remap by title"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "classification": "not_in_current_feed_not_imported",
+      "action": "wait_for_original_id_and_url_to_reappear; do not remap by title"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "classification": "not_in_current_feed_not_imported",
+      "action": "wait_for_original_id_and_url_to_reappear; do not remap by title"
+    },
+    {
+      "id": "30e283a9b3f70e35d8",
+      "url": "https://github.com/astral-sh/uv",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "classification": "previously_imported_but_out_of_feed",
+      "action": "preserve existing editorial record; no substitute identity"
+    }
+  ],
+  "previousProjectsReview": {
+    "checkedAt": "2026-10-26T14:48:03.372Z",
+    "metricSnapshotAt": "2026-10-26T14:48:03.372Z",
+    "method": "GitHub repository metadata; no runtime tests",
+    "items": [
+      {
+        "repo": "gradio-app/gradio",
+        "archived": false,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-26T14:00:27Z"
+      },
+      {
+        "repo": "thedotmack/claude-mem",
+        "archived": false,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-26T11:34:44Z"
+      },
+      {
+        "repo": "ultralytics/ultralytics",
+        "archived": false,
+        "license": "AGPL-3.0",
+        "pushedAt": "2026-10-26T14:40:19Z"
+      },
+      {
+        "repo": "harry0703/MoneyPrinterTurbo",
+        "archived": false,
+        "license": "MIT",
+        "pushedAt": "2026-10-26T14:01:14Z"
+      },
+      {
+        "repo": "microsoft/AI-For-Beginners",
+        "archived": false,
+        "license": "MIT",
+        "pushedAt": "2026-10-23T23:55:14Z"
+      },
+      {
+        "repo": "usebruno/bruno",
+        "archived": false,
+        "license": "MIT",
+        "pushedAt": "2026-10-26T14:15:52Z"
+      },
+      {
+        "repo": "keras-team/keras",
+        "archived": false,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-23T22:31:21Z"
+      },
+      {
+        "repo": "k2-fsa/sherpa-onnx",
+        "archived": false,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-26T13:50:16Z"
+      }
+    ],
+    "proposalPreservation": "All existing editorial records and proposal arrays preserved byte-equivalent at JSON value level; no reordering."
+  },
+  "historicalLibrary": {
+    "catalog": "editorial/library/catalog-2026-10-24.json",
+    "total": 31,
+    "archived": 2,
+    "inFeedAsOfCatalog": 4,
+    "notInFeedAsOfCatalog": 27,
+    "changedThisRun": false,
+    "publicationStatus": "research_only_unpublished"
+  },
+  "developerDisplayRequirements": [
+    "Mark historical catalog records not in feed as research-only and do not route them to feed item details.",
+    "Show license provenance, archived/current status and metric measuredAt; label unavailable fields unknown.",
+    "Keep historical project links separate from current feed cards; do not fabricate feed ids."
+  ],
+  "limitations": [
+    "No local repository clone: official scripts/editorial.py validate/import and unittest were not executed locally.",
+    "No direct browser access to GitHub Pages JSON in this runtime (DisabledError).",
+    "No execution or performance tests for the reviewed projects."
+  ]
+}
