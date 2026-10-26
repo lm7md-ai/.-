@@ -1,0 +1,172 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-26T11:52:28+03:00",
+  "feedGeneratedAt": "2026-10-26T05:45:58+00:00",
+  "matchingRule": "Exact original ID and URL; no title-derived IDs",
+  "counts": {
+    "files": 19,
+    "records": 149,
+    "importedMatching": 145,
+    "matchingNotImported": 0,
+    "notInFeed": 4,
+    "urlMismatch": 0
+  },
+  "pending": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "status": "notInFeed",
+      "alreadyImported": false,
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "status": "notInFeed",
+      "alreadyImported": false,
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "status": "notInFeed",
+      "alreadyImported": false,
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json"
+    },
+    {
+      "id": "30e283a9b3f70e35d8",
+      "url": "https://github.com/astral-sh/uv",
+      "status": "notInFeed",
+      "alreadyImported": true,
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json"
+    }
+  ],
+  "files": [
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+      "records": 10,
+      "importedMatching": 9,
+      "notInFeed": 1
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-0840.json",
+      "records": 7,
+      "importedMatching": 7,
+      "notInFeed": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "records": 14,
+      "importedMatching": 11,
+      "notInFeed": 3
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-1439.json",
+      "records": 9,
+      "importedMatching": 9,
+      "notInFeed": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-1740.json",
+      "records": 6,
+      "importedMatching": 6,
+      "notInFeed": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-2043.json",
+      "records": 10,
+      "importedMatching": 10,
+      "notInFeed": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-2342.json",
+      "records": 10,
+      "importedMatching": 10,
+      "notInFeed": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24.json",
+      "records": 6,
+      "importedMatching": 6,
+      "notInFeed": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-25-0250.json",
+      "records": 6,
+      "importedMatching": 6,
+      "notInFeed": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-25-0554.json",
+      "records": 8,
+      "importedMatching": 8,
+      "notInFeed": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-25-0845.json",
+      "records": 10,
+      "importedMatching": 10,
+      "notInFeed": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-25-1143.json",
+      "records": 6,
+      "importedMatching": 6,
+      "notInFeed": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-25-1442.json",
+      "records": 6,
+      "importedMatching": 6,
+      "notInFeed": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-25-1742.json",
+      "records": 8,
+      "importedMatching": 8,
+      "notInFeed": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-25-2038.json",
+      "records": 6,
+      "importedMatching": 6,
+      "notInFeed": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-25-2342.json",
+      "records": 6,
+      "importedMatching": 6,
+      "notInFeed": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-26-0250.json",
+      "records": 8,
+      "importedMatching": 8,
+      "notInFeed": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-26-0545.json",
+      "records": 7,
+      "importedMatching": 7,
+      "notInFeed": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-26-0840.json",
+      "records": 6,
+      "importedMatching": 6,
+      "notInFeed": 0
+    }
+  ],
+  "editorialOrphans": [
+    {
+      "id": "30e283a9b3f70e35d8",
+      "url": "https://github.com/astral-sh/uv",
+      "alreadyImported": true
+    }
+  ],
+  "notes": [
+    "Backlog checked before selecting new content.",
+    "No out-of-feed records were remapped or imported.",
+    "Local GitHub clone failed due DNS; Python validate/import/unittest were not run locally. CI will validate merged output."
+  ]
+}

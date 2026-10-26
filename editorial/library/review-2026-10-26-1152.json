@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-26T11:52:28+03:00",
+  "published": false,
+  "catalog": "editorial/library/catalog-2026-10-24.json",
+  "entries": [
+    {
+      "repository": "torvalds/linux",
+      "url": "https://github.com/torvalds/linux",
+      "classification": "active_established",
+      "archived": false,
+      "pushedAt": "2026-10-26T04:05:09Z",
+      "starsMeasured": 253521,
+      "metricCapturedAt": "2026-10-26T11:52:28+03:00",
+      "licenseApiValue": "NOASSERTION",
+      "verifiedLicense": "GPL-2.0-only WITH Linux-syscall-note; some components carry other licenses",
+      "overview": "نواة Linux نشطة؛ لا تعني NOASSERTION غياب الترخيص.",
+      "requirements": "متطلبات البناء حسب المعمارية؛ راجع Documentation/process/changes.rst.",
+      "quickStart": "ابدأ بقراءة README ودليل بناء نواة تجريبية؛ لا تستبدل نواة جهازك الأساسي دون خطة رجوع.",
+      "costLocalCloud": "المصدر متاح، لكن البناء والاختبارات يحتاجان موارد؛ ليس خدمة سحابية.",
+      "alternatives": [
+        "FreeBSD kernel — نظام مختلف وليس بديلًا مباشرًا"
+      ],
+      "sources": [
+        {
+          "title": "Linux README",
+          "url": "https://github.com/torvalds/linux/blob/master/README"
+        },
+        {
+          "title": "Linux COPYING",
+          "url": "https://github.com/torvalds/linux/blob/master/COPYING"
+        },
+        {
+          "title": "Kernel documentation",
+          "url": "https://www.kernel.org/doc/html/latest/"
+        }
+      ],
+      "limitations": "لم أبنِ النواة؛ المؤشرات لقطة بتاريخ القياس."
+    },
+    {
+      "repository": "microsoft/vscode",
+      "url": "https://github.com/microsoft/vscode",
+      "classification": "active_established",
+      "archived": false,
+      "pushedAt": "2026-10-26T08:51:50Z",
+      "starsMeasured": 194315,
+      "metricCapturedAt": "2026-10-26T11:52:28+03:00",
+      "licenseApiValue": "MIT",
+      "verifiedLicense": "Code - OSS source is MIT; Microsoft VS Code distribution uses separate product license",
+      "overview": "مستودع Code - OSS نشط؛ الترخيص يختلف عن بعض توزيعات المنتج.",
+      "requirements": "اتبع وثائق بناء المشروع لتحديد متطلبات Node.js والمنصة.",
+      "quickStart": "اقرأ README وContributing قبل المساهمة أو بناء نسخة محلية.",
+      "costLocalCloud": "المصدر MIT، والإضافات والخدمات السحابية قد تحمل شروطًا أو رسومًا مستقلة.",
+      "alternatives": [
+        "VSCodium",
+        "Zed",
+        "Neovim"
+      ],
+      "sources": [
+        {
+          "title": "Code - OSS README",
+          "url": "https://github.com/microsoft/vscode/blob/main/README.md"
+        },
+        {
+          "title": "Code - OSS LICENSE",
+          "url": "https://github.com/microsoft/vscode/blob/main/LICENSE.txt"
+        },
+        {
+          "title": "VS Code product license",
+          "url": "https://code.visualstudio.com/License/"
+        }
+      ],
+      "limitations": "لم أختبر بناء الشيفرة؛ مؤشرات GitHub لقطة زمنية."
+    }
+  ],
+  "developerDisplayRequirements": [
+    "Keep historical library separate from 45-day feed.",
+    "Label research-only dossiers not published.",
+    "Show canonical URL, license caveats, archived state, pushedAt and metricCapturedAt.",
+    "Never infer an active feed ID from a title."
+  ]
+}
