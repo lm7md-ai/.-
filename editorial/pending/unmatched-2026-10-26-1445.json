@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-26T14:45:39+03:00",
+  "mainAtAudit": "e9aac2be4e807f5eadcbaca9b8c6dae9b413426c",
+  "scope": "editorial/incoming files existing before this run; strict byte-for-byte id and URL comparison against feed and editorial; no title-based remapping",
+  "previousBatchFiles": 20,
+  "previousBatchEntries": 155,
+  "previousResults": {
+    "importedAndActive": 151,
+    "matchingAwaitingImport": 0,
+    "missingFromFeedAndNotImported": 3,
+    "importedButRotatedOutOfFeed": 1,
+    "urlMismatches": 0,
+    "structuralCorrectionsIdentified": 0
+  },
+  "thisRun": {
+    "newBatch": "editorial/incoming/nabdh-editorial-2026-10-26-1445.json",
+    "newEntries": 5,
+    "previousStored": 155,
+    "expectedStoredAfterMerge": 160
+  },
+  "pending": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "title": "NVIDIA OpenShell",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+      "classification": "not_in_current_feed_not_imported",
+      "action": "hold; do not generate alternative id or match by title"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "title": "Canva Craft",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "classification": "not_in_current_feed_not_imported",
+      "action": "hold; await exact id and URL reappearance"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "title": "1Password agent sign-in",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "classification": "not_in_current_feed_not_imported",
+      "action": "hold; no alternate identity"
+    },
+    {
+      "id": "30e283a9b3f70e35d8",
+      "url": "https://github.com/astral-sh/uv",
+      "title": "uv",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "classification": "already_imported_but_no_longer_in_current_feed",
+      "action": "retain prior enrichment unchanged; not presently visible via feed"
+    }
+  ],
+  "limitations": [
+    "Official Python validator and import command could not run in this environment because repository cloning is unavailable; structural checks were performed in JavaScript and official CI checks must pass before merge.",
+    "The status 'out of feed' is not proof that a news story has expired or is factually wrong.",
+    "This report is editorial metadata, not a change to feed.json, seen.json, site code or deployment workflows."
+  ],
+  "developerDisplayRequirements": [
+    "Show historical library as a separate non-published research source until explicitly integrated.",
+    "Use durable canonical repository identity and preserve links independently from ephemeral feed IDs.",
+    "Display status, archived state, license verification and metric-capture timestamps.",
+    "Never imply a historical research record is a visible site card without a matching feed item."
+  ]
+}
