@@ -1,0 +1,241 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-27T20:40:00+03:00",
+  "purpose": "تقرير تدقيق التراكم قبل وبعد دورة تحريرية؛ ملف بحثي داخلي وليس محتوى منشورًا بحد ذاته.",
+  "sourceSnapshot": {
+    "mainCommit": "b1e1ff631f92db2bdb5211e8669dbbae672999ec",
+    "feedGeneratedAt": "2026-10-27T15:20:24+00:00",
+    "feedItems": 800,
+    "editorialBefore": 262,
+    "editorialAfter": 274,
+    "status": "ok",
+    "statusLastSuccessfulAt": "2026-10-27T15:20:24+00:00",
+    "feedBlobSha": "b3791e6c771dacc93f663d714eb06c0b4633cb03",
+    "editorialBlobSha": "9a8df0e4585af73d99147edea43104d0d0b1a520"
+  },
+  "priorPullRequests": [
+    {
+      "number": 1,
+      "merged": true,
+      "url": "https://github.com/lm7md-ai/.-/pull/1"
+    },
+    {
+      "number": 2,
+      "merged": true,
+      "url": "https://github.com/lm7md-ai/.-/pull/2"
+    },
+    {
+      "number": 30,
+      "merged": true,
+      "mergeCommit": "813b586a1ae8cc038129883b794b810ac8d7c38e",
+      "url": "https://github.com/lm7md-ai/.-/pull/30"
+    }
+  ],
+  "incomingAuditBeforeNewBatch": {
+    "files": 31,
+    "rows": 263,
+    "uniqueIds": 262,
+    "duplicateIdentityCount": 1,
+    "exactImportedRows": 260,
+    "exactImportedUniqueIds": 259,
+    "exactCurrentFeedMatchRows": 192,
+    "exactCurrentFeedMatchUniqueIds": 191,
+    "importedButOutOfFeedRows": 68,
+    "unimportedMissingFromFeedAndEditorial": 3,
+    "idUrlMismatches": 0,
+    "unimportedExactFeedMatches": 0,
+    "confirmedExpired": 0,
+    "notes": "تمت مقارنة كل id وurl حرفيًا؛ غياب السجل من feed لا يثبت انتهاء صلاحيته. لم يُنشأ أي معرف بديل."
+  },
+  "incomingAuditAfterNewBatch": {
+    "files": 32,
+    "rows": 275,
+    "uniqueIds": 274,
+    "duplicateIdentityCount": 1,
+    "exactImportedRows": 272,
+    "exactImportedUniqueIds": 271,
+    "exactCurrentFeedMatchRows": 204,
+    "exactCurrentFeedMatchUniqueIds": 203,
+    "importedButOutOfFeedRows": 68,
+    "unimportedMissingFromFeedAndEditorial": 3,
+    "idUrlMismatches": 0,
+    "unimportedExactFeedMatches": 0,
+    "confirmedExpired": 0
+  },
+  "incomingFilesBefore": [
+    "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+    "editorial/incoming/nabdh-editorial-2026-10-24-0840.json",
+    "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+    "editorial/incoming/nabdh-editorial-2026-10-24-1439.json",
+    "editorial/incoming/nabdh-editorial-2026-10-24-1740.json",
+    "editorial/incoming/nabdh-editorial-2026-10-24-2043.json",
+    "editorial/incoming/nabdh-editorial-2026-10-24-2342.json",
+    "editorial/incoming/nabdh-editorial-2026-10-24.json",
+    "editorial/incoming/nabdh-editorial-2026-10-25-0250.json",
+    "editorial/incoming/nabdh-editorial-2026-10-25-0554.json",
+    "editorial/incoming/nabdh-editorial-2026-10-25-0845.json",
+    "editorial/incoming/nabdh-editorial-2026-10-25-1143.json",
+    "editorial/incoming/nabdh-editorial-2026-10-25-1442.json",
+    "editorial/incoming/nabdh-editorial-2026-10-25-1742.json",
+    "editorial/incoming/nabdh-editorial-2026-10-25-2038.json",
+    "editorial/incoming/nabdh-editorial-2026-10-25-2342.json",
+    "editorial/incoming/nabdh-editorial-2026-10-26-0250.json",
+    "editorial/incoming/nabdh-editorial-2026-10-26-0545.json",
+    "editorial/incoming/nabdh-editorial-2026-10-26-0840.json",
+    "editorial/incoming/nabdh-editorial-2026-10-26-1152.json",
+    "editorial/incoming/nabdh-editorial-2026-10-26-1445.json",
+    "editorial/incoming/nabdh-editorial-2026-10-26-1745.json",
+    "editorial/incoming/nabdh-editorial-2026-10-26-2042.json",
+    "editorial/incoming/nabdh-editorial-2026-10-26-2342.json",
+    "editorial/incoming/nabdh-editorial-2026-10-27-0038.json",
+    "editorial/incoming/nabdh-editorial-2026-10-27-0240.json",
+    "editorial/incoming/nabdh-editorial-2026-10-27-0549.json",
+    "editorial/incoming/nabdh-editorial-2026-10-27-0619.json",
+    "editorial/incoming/nabdh-editorial-2026-10-27-0847.json",
+    "editorial/incoming/nabdh-editorial-2026-10-27-1141.json",
+    "editorial/incoming/nabdh-editorial-2026-10-27-1443.json"
+  ],
+  "pendingRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "title": "NVIDIA OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "status": "not_in_current_feed_or_editorial",
+      "action": "تعليق؛ لا استيراد حتى تطابق المعرف والرابط الأصليين في feed"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "title": "Canva Craft",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "status": "not_in_current_feed_or_editorial",
+      "action": "تعليق؛ لا تُستبدل الهوية بعنوان مشابه"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "title": "1Password agent sign-in",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "status": "not_in_current_feed_or_editorial",
+      "action": "تعليق؛ لا تُستبدل الهوية بعنوان مشابه"
+    }
+  ],
+  "newBatch": {
+    "path": "editorial/incoming/nabdh-editorial-2026-10-27-2045.json",
+    "news": 10,
+    "projects": 2,
+    "total": 12,
+    "items": [
+      "0d0017ddc37fa6207f",
+      "c5cb552382053679be",
+      "c9f08b7f37026212ca",
+      "70d96e780ce1c42f6d",
+      "0fa71fcc03f57574cd",
+      "dc291fa0a78ddf3b23",
+      "1630e683256dee46dd",
+      "24cb75fce9a1e4226a",
+      "5ccf108650cec446d9",
+      "f93d4d5cf699810a39",
+      "d8145bb67a0001adeb",
+      "0cd4e25205e9e68806"
+    ],
+    "basisCounts": {
+      "article": 7,
+      "metadata": 2,
+      "readme": 3
+    },
+    "proposalCounts": {
+      "improvements": 4,
+      "spinoffs": 4,
+      "religious": 0
+    },
+    "testEvidenceClaims": 0,
+    "structuralEquivalentValidation": "passed"
+  },
+  "projectLibrary": {
+    "catalogPath": "editorial/library/catalog-2026-10-24.json",
+    "total": 31,
+    "archived": 2,
+    "inCurrentFeed": 4,
+    "notInFeed": 27,
+    "compiledAt": "2026-10-24T10:38:36.869Z",
+    "note": "لم يُحدّث قياس النجوم والتفرعات لكل المشاريع الـ31 في هذا التشغيل. أُعيد التحقق من حالة الأرشفة والنشاط لثمانية مشاريع سابقة عبر المستودعات الرسمية؛ المشاريع الجديدة المختارة موجودة في feed ولذلك أُثريت بمعرفاتها الأصلية ولم تُكرر في المكتبة."
+  },
+  "reviewedPreviousProjects": [
+    {
+      "repository": "gradio-app/gradio",
+      "archived": false,
+      "license": "Apache-2.0",
+      "latestCommit": "b3c050c7d445a9d3d9ae5fd76adef8d5e6052874",
+      "url": "https://github.com/gradio-app/gradio"
+    },
+    {
+      "repository": "thedotmack/claude-mem",
+      "archived": false,
+      "license": "Apache-2.0",
+      "latestCommit": "35f2ec0eb5b2b1e745564db4ce1ecec58eb331e7",
+      "url": "https://github.com/thedotmack/claude-mem"
+    },
+    {
+      "repository": "ultralytics/ultralytics",
+      "archived": false,
+      "license": "AGPL-3.0; enterprise license also offered",
+      "latestCommit": "5ddda0faa178e53888382019db2965c5be5b94c1",
+      "url": "https://github.com/ultralytics/ultralytics"
+    },
+    {
+      "repository": "harry0703/MoneyPrinterTurbo",
+      "archived": false,
+      "license": "MIT",
+      "latestCommit": "950ba89899d3b6ef080c18ad5791e7c9ead0ac66",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo"
+    },
+    {
+      "repository": "microsoft/AI-For-Beginners",
+      "archived": false,
+      "license": "MIT",
+      "latestCommit": "392d0df1b2647cbee104942390551f1ed9e072c8",
+      "url": "https://github.com/microsoft/AI-For-Beginners"
+    },
+    {
+      "repository": "usebruno/bruno",
+      "archived": false,
+      "license": "MIT (README confirms; LICENSE path returned 404)",
+      "latestCommit": "874ac540a14eb1883ab359b4438487add41b8b03",
+      "url": "https://github.com/usebruno/bruno"
+    },
+    {
+      "repository": "keras-team/keras",
+      "archived": false,
+      "license": "Apache-2.0",
+      "latestCommit": "3f6cb4874c440d27580bf9bc1919114c19ec02a4",
+      "url": "https://github.com/keras-team/keras"
+    },
+    {
+      "repository": "k2-fsa/sherpa-onnx",
+      "archived": false,
+      "license": "Apache-2.0 for framework; model licenses may differ",
+      "latestCommit": "8183d88b6308da6eeb945f6a335757481b402600",
+      "url": "https://github.com/k2-fsa/sherpa-onnx"
+    }
+  ],
+  "protectedPaths": [
+    "site/app.js",
+    "site/ideas.js",
+    "site/style.css",
+    ".github/workflows/**",
+    "site/data/feed.json",
+    "site/data/seen.json",
+    "site/data/status.json"
+  ],
+  "intendedChanges": [
+    "site/data/editorial.json",
+    "editorial/incoming/nabdh-editorial-2026-10-27-2045.json",
+    "editorial/pending/recheck-2026-10-27-2045.json"
+  ],
+  "execution": {
+    "localPythonAvailable": false,
+    "officialValidateIncomingCommandRun": false,
+    "officialUnitTestsRunLocally": false,
+    "structuralEquivalentValidation": "passed for 12 incoming entries; official CI validation and tests required before merge",
+    "noCodeOrWorkflowChanges": true
+  }
+}
