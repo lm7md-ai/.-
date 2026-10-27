@@ -1,0 +1,360 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-27T05:49:14+03:00",
+  "baseMainSha": "38f0a36bfca347761cdfd4bb673eb3bb611211fb",
+  "branch": "editorial/nabdh-20261027-0549",
+  "feedGeneratedAt": "2026-10-27T00:24:54+00:00",
+  "auditBeforeNewBatch": {
+    "incomingFiles": 26,
+    "incomingRecords": 198,
+    "alreadyImportedExact": 195,
+    "activeFeedExact": 163,
+    "previouslyImportedOutOfFeed": 32,
+    "notInFeedNotImported": 3,
+    "urlMismatches": 0,
+    "needsStructuralCorrection": 0,
+    "currentFeedItems": 800,
+    "currentNews": 700,
+    "currentProjects": 100,
+    "editorialRecordsBefore": 198
+  },
+  "branchState": {
+    "incomingFiles": 27,
+    "incomingRecords": 206,
+    "alreadyImportedExact": 203,
+    "activeFeedExact": 171,
+    "previouslyImportedOutOfFeed": 32,
+    "notInFeedNotImported": 3,
+    "urlMismatches": 0,
+    "needsStructuralCorrection": 0,
+    "editorialRecords": 206,
+    "activeEditorialMatches": 174,
+    "activeEditorialNews": 119,
+    "activeEditorialProjects": 55,
+    "preservedOldRecords": 198,
+    "oldRecordValueChanges": 0
+  },
+  "newBatch": {
+    "file": "editorial/incoming/nabdh-editorial-2026-10-27-0549.json",
+    "records": 8,
+    "news": 7,
+    "projects": 1,
+    "structurallyValid": 8,
+    "exactFeedIdUrlMatches": 8,
+    "idsAlreadyInEditorial": 0,
+    "sourceBasisCounts": {
+      "article": 6,
+      "metadata": 1,
+      "readme": 1
+    },
+    "proposalTotals": {
+      "improvements": 3,
+      "spinoffs": 3,
+      "religious": 0
+    },
+    "note": "لا يوجد testEvidence لأن المحتوى لم يُختبر عمليًا."
+  },
+  "incomingFiles": [
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+      "records": 10,
+      "importedExact": 9,
+      "activeExact": 7,
+      "expired": 2,
+      "notImported": 1,
+      "structuralErrors": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-0840.json",
+      "records": 7,
+      "importedExact": 7,
+      "activeExact": 4,
+      "expired": 3,
+      "notImported": 0,
+      "structuralErrors": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "records": 14,
+      "importedExact": 12,
+      "activeExact": 10,
+      "expired": 2,
+      "notImported": 2,
+      "structuralErrors": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-1439.json",
+      "records": 9,
+      "importedExact": 9,
+      "activeExact": 6,
+      "expired": 3,
+      "notImported": 0,
+      "structuralErrors": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-1740.json",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 4,
+      "expired": 2,
+      "notImported": 0,
+      "structuralErrors": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-2043.json",
+      "records": 10,
+      "importedExact": 10,
+      "activeExact": 9,
+      "expired": 1,
+      "notImported": 0,
+      "structuralErrors": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-2342.json",
+      "records": 10,
+      "importedExact": 10,
+      "activeExact": 10,
+      "expired": 0,
+      "notImported": 0,
+      "structuralErrors": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24.json",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 2,
+      "expired": 4,
+      "notImported": 0,
+      "structuralErrors": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-25-0250.json",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 3,
+      "expired": 3,
+      "notImported": 0,
+      "structuralErrors": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-25-0554.json",
+      "records": 8,
+      "importedExact": 8,
+      "activeExact": 5,
+      "expired": 3,
+      "notImported": 0,
+      "structuralErrors": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-25-0845.json",
+      "records": 10,
+      "importedExact": 10,
+      "activeExact": 9,
+      "expired": 1,
+      "notImported": 0,
+      "structuralErrors": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-25-1143.json",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 2,
+      "expired": 4,
+      "notImported": 0,
+      "structuralErrors": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-25-1442.json",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 3,
+      "expired": 3,
+      "notImported": 0,
+      "structuralErrors": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-25-1742.json",
+      "records": 8,
+      "importedExact": 8,
+      "activeExact": 8,
+      "expired": 0,
+      "notImported": 0,
+      "structuralErrors": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-25-2038.json",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 6,
+      "expired": 0,
+      "notImported": 0,
+      "structuralErrors": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-25-2342.json",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 5,
+      "expired": 1,
+      "notImported": 0,
+      "structuralErrors": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-26-0250.json",
+      "records": 8,
+      "importedExact": 8,
+      "activeExact": 8,
+      "expired": 0,
+      "notImported": 0,
+      "structuralErrors": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-26-0545.json",
+      "records": 7,
+      "importedExact": 7,
+      "activeExact": 7,
+      "expired": 0,
+      "notImported": 0,
+      "structuralErrors": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-26-0840.json",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 6,
+      "expired": 0,
+      "notImported": 0,
+      "structuralErrors": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-26-1152.json",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 6,
+      "expired": 0,
+      "notImported": 0,
+      "structuralErrors": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-26-1445.json",
+      "records": 5,
+      "importedExact": 5,
+      "activeExact": 5,
+      "expired": 0,
+      "notImported": 0,
+      "structuralErrors": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-26-1745.json",
+      "records": 6,
+      "importedExact": 6,
+      "activeExact": 6,
+      "expired": 0,
+      "notImported": 0,
+      "structuralErrors": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-26-2042.json",
+      "records": 5,
+      "importedExact": 5,
+      "activeExact": 5,
+      "expired": 0,
+      "notImported": 0,
+      "structuralErrors": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-26-2342.json",
+      "records": 14,
+      "importedExact": 14,
+      "activeExact": 14,
+      "expired": 0,
+      "notImported": 0,
+      "structuralErrors": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-27-0038.json",
+      "records": 8,
+      "importedExact": 8,
+      "activeExact": 8,
+      "expired": 0,
+      "notImported": 0,
+      "structuralErrors": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-27-0240.json",
+      "records": 5,
+      "importedExact": 5,
+      "activeExact": 5,
+      "expired": 0,
+      "notImported": 0,
+      "structuralErrors": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-27-0549.json",
+      "records": 8,
+      "importedExact": 8,
+      "activeExact": 8,
+      "expired": 0,
+      "notImported": 0,
+      "structuralErrors": 0
+    }
+  ],
+  "pending": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+      "sourceStatus": "المستودع الرسمي موجود ومتاح",
+      "currentFeedMatch": false,
+      "alreadyImported": false,
+      "reason": "المعرف والرابط الأصليان غير موجودين في التغذية الحالية؛ يبقى السجل معلقًا ولا يُنشأ معرف بديل."
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "sourceStatus": "مقال TechCrunch عن Canva Craft موجود بتاريخ 22 أكتوبر 2026",
+      "currentFeedMatch": false,
+      "alreadyImported": false,
+      "reason": "المقال الأصلي متاح لكن الزوج id/url غير موجود في التغذية الحالية؛ لا يُستورد حتى يظهر الزوج نفسه."
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "sourceStatus": "مقال TechCrunch عن 1Password for Agents موجود بتاريخ 22 أكتوبر 2026",
+      "currentFeedMatch": false,
+      "alreadyImported": false,
+      "reason": "المقال الأصلي متاح لكن الزوج id/url غير موجود في التغذية الحالية؛ لا يُستورد حتى يظهر الزوج نفسه."
+    }
+  ],
+  "structuralValidation": {
+    "method": "فحص بنيوي مكافئ لمخطط scripts/editorial.py على الملفات الواردة: version/items، HTTPS، الحقول النصية، sources، reviewedAt، basis، nextSteps، والاقتراحات",
+    "officialValidatorRunLocally": false,
+    "officialImportRunLocally": false,
+    "localUnitTestsRun": false,
+    "localEnvironmentError": "git ls-remote failed: Could not resolve host: github.com",
+    "commandsNotRun": [
+      "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-10-27-0549.json",
+      "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-10-27-0549.json",
+      "python -m unittest discover -s tests -v"
+    ],
+    "ciExpectedCommands": [
+      "python -m unittest discover -s tests -v",
+      "python scripts/editorial.py validate",
+      "node --check site/app.js && node --check site/ideas.js"
+    ],
+    "ciScopeNote": "الـ workflow الحالي يتحقق من site/data/editorial.json المدمج؛ لم يُعدّل workflow للتحقق من ملف incoming منفرد."
+  },
+  "historicalLibrary": {
+    "total": 31,
+    "archived": 2,
+    "inCurrentFeed": 4,
+    "notInFeed": 27,
+    "fullLibraryMetricsLastReviewedAt": "2026-10-27T00:49:07+03:00",
+    "eightProjectReviewUpdatedAt": "2026-10-27T05:49:14+03:00"
+  },
+  "publicationStatus": "prepared_in_branch; awaiting PR validation and merge",
+  "sitePublicJsonVerified": false,
+  "sitePublicJsonNote": "تعذر جلب ملف Pages العام مباشرة خلال هذه الدورة؛ يجب التحقق بعد نجاح النشر."
+}
