@@ -1,0 +1,734 @@
+{
+  "version": 1,
+  "items": {
+    "64295c3ae779f4acba": {
+      "url": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/",
+      "titleAr": "OpenAI تعلن برهانًا ينقض فرضية الزمن الأسي؛ والمراجعة العلمية المستقلة ما زالت جارية",
+      "summaryAr": "تقول OpenAI إن نظامها أنتج نقضًا لفرضية الزمن الأسي (ETH) ثم جرى تمثيله رسميًا في Lean، وأعلنت مجموعة أكاديميين لفحص النتيجة. ETH افتراض استُخدم لاشتقاق حدود صعوبة حسابية في أبحاث كثيرة. لا يعني الإعلان حل P مقابل NP، ولا يثبت وحده أن الخوارزميات العملية أو التشفير الحالي أصبح قابلًا للكسر؛ الأثر التطبيقي يحتاج إلى فهم البرهان وتطوير خوارزميات مناسبة.",
+      "whyItMatters": "إذا ثبتت النتيجة بعد الفحص المستقل، فقد تتغير افتراضات نظرية استندت إليها أبحاث في الخوارزميات وتحليل التعقيد. القيمة الآن هي إتاحة البرهان للمراجعة، لا تحويل إعلان مختبري إلى نتيجة تطبيقية مؤكدة.",
+      "audience": "طلاب علوم الحاسوب والرياضيات والباحثون في الخوارزميات والتعقيد الحسابي",
+      "nextSteps": [
+        "اقرأ البرهان الرسمي في Lean ونطاق ما يثبته.",
+        "تابع تقرير مجموعة الأكاديميين المستقلة.",
+        "افصل بين صحة النتيجة النظرية ووجود خوارزمية عملية أسرع.",
+        "لا تستنتج أن التشفير أو جميع مسائل SAT أصبحت قابلة للكسر."
+      ],
+      "limitations": "هذا ادعاء بحثي أعلنته OpenAI وتناولته TechCrunch. وجود formalization لا يغني عن مراجعة المجتمع العلمي للنطاق والافتراضات والآثار؛ لم أجرِ تحققًا رياضيًا مستقلًا.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — تغطية خبر فرضية الزمن الأسي",
+          "url": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/"
+        },
+        {
+          "title": "OpenAI — Working with academic communities",
+          "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/"
+        },
+        {
+          "title": "OpenAI Math — Lean formalization",
+          "url": "https://github.com/openai/math/blob/main/lean/docs/378.md"
+        }
+      ],
+      "reviewedAt": "2026-10-27T21:13:00+03:00"
+    },
+    "133651b428e97fdac2": {
+      "url": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
+      "titleAr": "تقرير جديد عن Genie 4 يصف محاكاة عوالم أكثر واقعية مع الصوت والتحكم اللحظي",
+      "summaryAr": "تتناول التغطية إعلان Google DeepMind عن Genie 4 لمحاكاة عوالم تفاعلية، وتصف إضافات تشمل الصوت وشخصيات وفيزياء أكثر واقعية والتحكم اللحظي. لم أتمكن من فحص النص الكامل للصفحة الرسمية في هذه الدورة، لذلك لا أنقل أرقام أداء أو شروط إتاحة لم أتحقق منها.",
+      "whyItMatters": "نماذج العالم قد تساعد في توليد بيئات تدريب واختبار للروبوتات والوكلاء والألعاب، لكن المظهر الواقعي لا يثبت أن المحاكاة تطابق العالم الحقيقي أو تصلح وحدها لتقييم أنظمة حساسة.",
+      "audience": "باحثو المحاكاة والروبوتات والألعاب والذكاء الاصطناعي متعدد الوسائط",
+      "nextSteps": [
+        "راجع التوثيق الرسمي لمعرفة نطاق التوليد والتحكم.",
+        "ابحث عن تقييمات مستقلة للثبات الفيزيائي واستمرارية العالم.",
+        "لا تستخدم المحاكاة وحدها لإثبات سلامة نظام حقيقي."
+      ],
+      "limitations": "الأساس بيانات وصفية وتغطية صحفية مع رابط رسمي؛ لم تُقرأ الصفحة الرسمية كاملة ولا توجد اختبارات مستقلة هنا.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "TechCrunch — Genie 4 world model",
+          "url": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/"
+        },
+        {
+          "title": "Google DeepMind — Genie 4",
+          "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
+        }
+      ],
+      "reviewedAt": "2026-10-27T21:13:00+03:00"
+    },
+    "f59f0aae63f2919880": {
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPWnEtSkpTZlNVT1laRWQyUjNqTk81VHVMdTdVTUF2TEFuVnFqSVMybFdJQW9iMldFUnI2Um5DcllLcW9kRXFrN3V1OUpXdHlTdHg5UWZJNnltN0FCLXpxbk9PajFsYlNDYVByRFVHeklrMlZUeS1fcVdWMm0xUHpFalQ0WFk0WWtUZjNZc3pQc2VUREV6SEFPeGtaNnFsc0R4NWVaQWlXdmFwN2M?oc=5",
+      "titleAr": "استطلاع Meta لـPython 2026: نقص معلومات الأنواع وتعدد المدققات أبرز التحديات",
+      "summaryAr": "جمع استطلاع Meta السنوي 1,794 إجابة. أفاد 65.1% من 1,486 مجيبًا بأن نقص معلومات الأنواع في المكتبات الخارجية أكبر صعوبة، واختار 49.9% من المشاركين في سؤال المدققات اثنين أو أكثر مقابل 46.0% في 2025. وقال 42.5% من 1,517 مجيبًا إن أدوات الذكاء الاصطناعي كتبت تلميحات أنواع لهم، و61.0% إنهم استخدموا الذكاء الاصطناعي في نشاط واحد على الأقل من أنشطة الأنواع الأربعة. هذه نتائج استطلاع اختياري وليست تعدادًا ممثلًا لكل مطوري Python.",
+      "whyItMatters": "جودة type hints والتوافق بين المدققات يؤثران في موثوقية صيانة المشاريع، خصوصًا عندما يكتب وكيل برمجي شيفرة ويحتاج إلى مدقق لاكتشاف الأخطاء.",
+      "audience": "مطورو Python وفرق المكتبات ومطورو أدوات البرمجة بالذكاء الاصطناعي",
+      "nextSteps": [
+        "فعّل مدقق أنواع على الملفات الأكثر تغيرًا.",
+        "تحقق من جودة stubs للمكتبات التي تستخدمها.",
+        "قارن Pyright وMypy وPyrefly على قاعدة الشيفرة نفسها.",
+        "لا تعمم نسب الاستطلاع على جميع مطوري Python."
+      ],
+      "limitations": "المصدر استطلاع Meta ويعكس من أجابوا عنه؛ يمكن للمجيب اختيار أكثر من مدقق، والنتائج وصفية لا تثبت علاقة سببية بالإنتاجية.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Engineering at Meta — Python Typing Survey 2026",
+          "url": "https://engineering.fb.com/2026/10/27/developer-tools/python-typing-survey-2026-ai-tools-checker-landscape/"
+        }
+      ],
+      "reviewedAt": "2026-10-27T21:13:00+03:00"
+    },
+    "991356d9e9385200ab": {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms",
+      "titleAr": "Firefox يضيف تعبئة نماذج بمساعدة الذكاء الاصطناعي ومراقبة صفحات الويب في Smart Window",
+      "summaryAr": "تقول Mozilla إن Smart Window يقترح تعبئة حقول النماذج من صفحات يختارها المستخدم، ويمكنه مراقبة صفحات والتنبيه عند تغير يطابق الوصف. ترسل ميزة التعبئة محتوى الصفحات المختارة إلى Gemini 3.1 Flash Lite؛ أما بيانات التعبئة التلقائية المحفوظة مثل الاسم والعنوان فتبقى على الجهاز. مراقبة الصفحات تعمل والمتصفح مفتوح، والنسخة التجريبية محدودة بالإنجليزية في الولايات المتحدة وكندا.",
+      "whyItMatters": "تختصر الميزة نسخ المعلومات بين الصفحات، لكنها تذكّر بأن «الذكاء الاصطناعي داخل المتصفح» لا يعني أن كل البيانات تبقى محلية.",
+      "audience": "مستخدمو Firefox والطلاب والباحثون ومطورو إضافات المتصفح",
+      "nextSteps": [
+        "راجع الصفحات المختارة قبل مشاركة بيانات حساسة.",
+        "افحص الاقتراحات يدويًا قبل إرسال النموذج.",
+        "لا تعتمد على مراقبة الصفحات والمتصفح مغلق.",
+        "تحقق من إعدادات الخصوصية ونطاق الإتاحة."
+      ],
+      "limitations": "المعلومات من إعلان Mozilla عن نسخة تجريبية؛ قد تخطئ الاقتراحات والإتاحة الجغرافية واللغوية محدودة وقت الإعلان.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Mozilla — Smart Window",
+          "url": "https://blog.mozilla.org/en/firefox/skip-the-busywork-with-smart-window/"
+        },
+        {
+          "title": "Firefox Support — Smart Form Fill",
+          "url": "https://support.mozilla.org/en-US/kb/smart-form-fill"
+        }
+      ],
+      "reviewedAt": "2026-10-27T21:13:00+03:00"
+    },
+    "7a45cda287ebe3ac33": {
+      "url": "https://www.formal.ai/blog/cloud-agents-oidc-infrastructure/",
+      "titleAr": "Formal تشرح منح وكلاء البرمجة السحابيين وصولًا مقيدًا عبر OIDC بدل الأسرار طويلة العمر",
+      "summaryAr": "تشرح Formal كيف تستخدم رموز OIDC قصيرة العمر لإثبات هوية بيئة الوكيل ثم تمرير الطلب عبر سياسات وصول قابلة للتدقيق. وتقول الشركة إنها منحت وكلاء سحابيين وصولًا للقراءة فقط إلى بيانات إنتاج، مع ربط الجلسة بالمستودع وبالشخص الذي بدأها. لكن هوية الإنسان تعتمد على ما يصرح به مزود الوكيل الذي تثق به المؤسسة، وليست حقيقة مستقلة يثبتها OIDC وحده.",
+      "whyItMatters": "إعطاء الوكلاء مفاتيح ثابتة يوسع أثر تسربها. الهوية قصيرة العمر والنطاق المحدود وسجل التدقيق تقلل المخاطر، لكنها لا تغني عن مراجعة المطالبات والسياسات وعزل بيئة التنفيذ.",
+      "audience": "مهندسو المنصات والأمن وفرق DevOps",
+      "nextSteps": [
+        "استخدم رموزًا قصيرة العمر ومقيدة بـaudience.",
+        "ابدأ بصلاحيات قراءة فقط واطلب موافقة للكتابة.",
+        "تحقق من جهة إصدار الرمز والمطالبات.",
+        "راجع سجلات الوصول واختبر إلغاء الصلاحيات."
+      ],
+      "limitations": "وصف من مزود تجاري لتصميمه واستخدامه الداخلي، وليس تدقيقًا أمنيًا مستقلًا. لم أراجع كل أقسام التدوينة.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "Formal — Cloud agents with OIDC",
+          "url": "https://www.formal.ai/blog/cloud-agents-oidc-infrastructure/"
+        },
+        {
+          "title": "OpenID Foundation — OpenID Connect Core",
+          "url": "https://openid.net/specs/openid-connect-core-1_0.html"
+        }
+      ],
+      "reviewedAt": "2026-10-27T21:13:00+03:00"
+    },
+    "686594bf9559f6d73c": {
+      "url": "https://www.theverge.com/tech/1017664/apple-macbook-pro-m6-processor-upgrade",
+      "titleAr": "Apple تعلن MacBook Pro مقاس 14 بوصة بشريحة M6 مع تركيز على الذكاء الاصطناعي المحلي",
+      "summaryAr": "أعلنت Apple في 27 أكتوبر عن MacBook Pro جديد مقاس 14 بوصة بشريحة M6 وCPU/GPU من 12 نواة. وتقول الشركة إن الرسوميات أسرع حتى 30% وأعباء الذكاء الاصطناعي على الجهاز حتى 25% مقارنةً بـM5، وبطارية تصل إلى 24 ساعة وذاكرة موحدة تبدأ من 16GB ويمكن تهيئتها حتى 32GB. يبدأ الطلب المسبق في 28 أكتوبر والتوفر في 6 نوفمبر؛ هذه مقارنات الشركة وليست قياسًا مستقلًا.",
+      "whyItMatters": "تشغيل النماذج محليًا يعتمد على الذاكرة وتوافق الأطر وحجم النموذج والحرارة أكثر من رقم أداء واحد؛ قارن التكلفة المحلية بتكلفة الاستدلال السحابي.",
+      "audience": "طلاب الذكاء الاصطناعي ومطورو النماذج المحلية ومشترو أجهزة Mac",
+      "nextSteps": [
+        "قارن سعة الذاكرة المطلوبة للنموذج قبل الشراء.",
+        "انتظر اختبارات مستقلة لأعباء Python وPyTorch وLLM.",
+        "تحقق من الأسعار المحلية وخيارات الذاكرة والتخزين.",
+        "قارن تكلفة الجهاز بتكلفة الاستخدام السحابي."
+      ],
+      "limitations": "الأرقام من Apple وتختلف حسب التطبيق والإعدادات. لم تُجرَ اختبارات مستقلة، ولا تعني تحسينات M6 أن كل النماذج الكبيرة ستعمل على الجهاز.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "Apple — MacBook Pro with M6",
+          "url": "https://www.apple.com/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/"
+        },
+        {
+          "title": "The Verge — MacBook Pro M6",
+          "url": "https://www.theverge.com/tech/1017664/apple-macbook-pro-m6-processor-upgrade"
+        }
+      ],
+      "reviewedAt": "2026-10-27T21:13:00+03:00"
+    },
+    "c93e44d7e4d2716a67": {
+      "url": "https://cloudsleuth.io/blog/php2shell-litellm-gitlab-find-what-you-run/",
+      "titleAr": "مراجعة أمنية تجمع تحديثات PHP2Shell وLiteLLM وGitLab؛ لا تكتفِ بنجاح أمر التحديث",
+      "summaryAr": "عنوان Cloud Sleuth يجمع عدة حوادث وتحديثات أمنية في أكتوبر. لم أتمكن من قراءة نص المقال كاملًا، لذا لا أنسب إليه تفاصيل لم أتحقق منها. تؤكد النشرة الرسمية لـPHP أن الإصدارات 8.5.12 و8.4.27 و8.3.36 و8.2.35 أصلحت ثغرتين حرجتين قد تسمحان بتنفيذ شيفرة عن بُعد دون مصادقة. كما نشر LiteLLM تحليلًا رسميًا لسلسلة اختراق إصدار 1.107.0 يوضح أن إصدارًا مخترقًا نُشر في 21 أكتوبر.",
+      "whyItMatters": "في حوادث سلسلة التوريد لا يكفي نجاح أمر التحديث؛ قد تبقى حاوية أو عامل خدمة أو بيئة CI على نسخة قديمة. يلزم جرد الإصدارات وتدوير الأسرار عند الاشتباه.",
+      "audience": "مسؤولو الأنظمة ومطورو الخدمات وفرق DevSecOps",
+      "nextSteps": [
+        "تحقق من إصدار PHP الفعلي على كل مضيف وحاوية.",
+        "إذا استُخدم litellm==1.107.0 خلال نافذة الحادثة فاتبع إرشادات LiteLLM الرسمية.",
+        "راجع النشرات الرسمية لإصدارات GitLab المتأثرة.",
+        "لا تفحص أنظمة لا تملكها أو لا تملك تصريحًا لاختبارها."
+      ],
+      "limitations": "أساس البطاقة بيانات وصفية للمقال التجميعي مع الرجوع إلى النشرات الرسمية لـPHP وLiteLLM؛ لم أقرأ مقال Cloud Sleuth كاملًا ولا أؤكد أن كل العناصر لها السبب نفسه.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "Cloud Sleuth — PHP2Shell, LiteLLM, GitLab",
+          "url": "https://cloudsleuth.io/blog/php2shell-litellm-gitlab-find-what-you-run/"
+        },
+        {
+          "title": "PHP — Security archive",
+          "url": "https://www.php.net/archive/2026.php#2026-10-21-5"
+        },
+        {
+          "title": "LiteLLM — Root-cause analysis",
+          "url": "https://docs.litellm.ai/blog/security-incident-oct-21-2026-attack-chain"
+        }
+      ],
+      "reviewedAt": "2026-10-27T21:13:00+03:00"
+    },
+    "d8989963e8e03233d5": {
+      "url": "https://www.liquid.ai/blog/lfm3",
+      "titleAr": "Liquid AI تعلن LFM3 بوصفه عائلة نماذج متعددة الوسائط للمهام المتخصصة",
+      "summaryAr": "أضافت التغذية إعلان Liquid AI بعنوان «Introducing LFM3: Every Modality for Specialized Intelligence» مع صفحة موازية في Hugging Face. لم أتمكن من قراءة نص الإعلان الأصلي كاملًا، لذلك لا أؤكد أحجام النماذج أو نتائج المقارنة أو الإتاحة أو الترخيص من العنوان وحده. يلزم الرجوع إلى بطاقات النماذج والتوثيق الرسمي للتحقق من المدخلات والمخرجات المدعومة.",
+      "whyItMatters": "النماذج المتخصصة قد تكون أنسب من نموذج عام لبعض المهام، لكن اختيارها يحتاج قياسًا على بيانات المهمة وفحص الترخيص ومتطلبات الذاكرة لا الاعتماد على وصف تسويقي.",
+      "audience": "مطورو تطبيقات الذكاء الاصطناعي المحلي ومتخصصو النماذج متعددة الوسائط",
+      "nextSteps": [
+        "افتح بطاقة كل نموذج وتحقق من الترخيص وحدود الاستخدام.",
+        "اختبر النموذج على عينة ممثلة وقارن الدقة والكمون والذاكرة.",
+        "لا تنقل ادعاءات الأداء دون توثيق ظروف القياس."
+      ],
+      "limitations": "هذه بطاقة مبنية على العنوان والبيانات المتاحة وروابط الإعلان؛ لم يُقرأ النص الأصلي كاملًا ولا تتضمن أرقامًا أو حكمًا مستقلًا على الأداء.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "Liquid AI — Introducing LFM3",
+          "url": "https://www.liquid.ai/blog/lfm3"
+        },
+        {
+          "title": "Hugging Face — LFM3",
+          "url": "https://huggingface.co/blog/LiquidAI/lfm3"
+        }
+      ],
+      "reviewedAt": "2026-10-27T21:13:00+03:00"
+    },
+    "1d6c5c59e46e52b936": {
+      "url": "https://huggingface.co/blog/allenai/novelty-bench",
+      "titleAr": "Benchmark جديد يسأل إن كانت نماذج اللغة قادرة على الحكم بثبات على جدة الأفكار البحثية",
+      "summaryAr": "تعلن صفحة Hugging Face عن معيار من Ai2 لاختبار موثوقية نماذج اللغة عندما تحكم على جدة فكرة بحثية. لم أتمكن من قراءة الصفحة الأصلية كاملة، لذلك لا أنقل الأرقام التفصيلية الواردة في تغطية ثانوية ولا أتعامل معها كأنها تحققت هنا. السؤال المهم هو ما إذا كان تغيير صياغة التعليمات يغير الحكم على الفكرة نفسها، وهل توجد تسميات بشرية مستقلة كافية لقياس الدقة.",
+      "whyItMatters": "إذا اختار وكيل بحث أفكارًا بناءً على درجة الجدة فقد يتغير ترتيب المرشحين بسبب صياغة prompt لا بسبب قيمة علمية حقيقية. يجب اختبار الثبات ومعرفة حدود معيار التقييم قبل تحويل النتيجة إلى قرار.",
+      "audience": "باحثو الذكاء الاصطناعي والجامعات وفرق تقييم الوكلاء البحثيين",
+      "nextSteps": [
+        "راجع الورقة والبيانات والكود الأصلي قبل استخدام أي رقم.",
+        "اختبر الفكرة نفسها عبر عدة صيغ prompts ونماذج.",
+        "استخدم مراجعة خبراء وأدلة أدبية مستقلة بدل درجة LLM منفردة."
+      ],
+      "limitations": "لم أتمكن من قراءة منشور Hugging Face الأصلي كاملًا؛ هذه بطاقة وصفية وليست نقلًا لنتائج رقمية أو تحققًا من benchmark. التغطية الثانوية ليست بديلًا عن مراجعة الورقة والبيانات.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "Hugging Face — Novelty Bench",
+          "url": "https://huggingface.co/blog/allenai/novelty-bench"
+        },
+        {
+          "title": "Mindverse — تغطية ثانوية",
+          "url": "https://www.mind-verse.de/news/llm-neuheitspruefung-forschungsideen-1d6c5c59e46e"
+        },
+        {
+          "title": "arXiv — Can LLMs Generate Novel Research Ideas?",
+          "url": "https://arxiv.org/abs/2409.04109"
+        }
+      ],
+      "reviewedAt": "2026-10-27T21:13:00+03:00"
+    },
+    "0aa74c9bc7e541fdf1": {
+      "url": "https://arxiv.org/abs/2610.31778",
+      "titleAr": "دراسة على arXiv تحذر من أن ضغط سياق الوكلاء قد يحذف قيود المهمة وتعليمات العمل",
+      "summaryAr": "ملخص ورقة «Benchmarks Are Surprisingly Compaction-Friendly» يدرس خمس استراتيجيات لضغط سياق الوكلاء في مهام طويلة. يقول الباحثون إن ملخص الضغط الأول أسقط في المتوسط نحو ثلث قواعد منع الغش في ProgramBench، وإن تعليمات كيفية العمل وما يجب تجنبه في جلسات SWE-chat كانت أكثر عرضة للسقوط بنحو ست مرات من مواصفات ما ينبغي بناؤه. هذه نتائج الملخص المنشور، ولم أراجع الورقة الكاملة أو أعد الاختبارات.",
+      "whyItMatters": "قد ينجز الوكيل المهمة الظاهرة لكنه ينسى قيودًا مثل عدم تعديل ملفات محددة أو عدم استخدام مصادر معينة. حفظ التعليمات الحرجة خارج نافذة السياق ومراجعتها بعد كل ضغط قد يكون أهم من زيادة طول السياق وحدها.",
+      "audience": "مطورو وكلاء البرمجة وباحثو الذاكرة والسياق وتقييم الأنظمة طويلة الأمد",
+      "nextSteps": [
+        "احتفظ بقيود المهمة في ملف حالة دائم يمكن استرجاعه بعد الضغط.",
+        "قارن التعليمات قبل الضغط وبعده في اختبارات طويلة.",
+        "أضف اختبارًا يفشل إذا اختفت قيود السلامة من الملخص.",
+        "راجع النص الكامل قبل اعتماد الاستنتاجات في الإنتاج."
+      ],
+      "limitations": "المراجعة مبنية على ملخص arXiv لا على الورقة ذات الصفحات الـ25 كاملة. النتائج تخص إعدادات وbenchmarks محددة ولا تثبت أن جميع الوكلاء يتصرفون بالطريقة نفسها.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — Benchmarks Are Surprisingly Compaction-Friendly",
+          "url": "https://arxiv.org/abs/2610.31778"
+        }
+      ],
+      "reviewedAt": "2026-10-27T21:13:00+03:00"
+    },
+    "16389f32495280ea98": {
+      "url": "https://github.com/bytedance/deer-flow",
+      "titleAr": "DeerFlow 2.0 — إطار مفتوح المصدر لتنسيق وكلاء البحث والبرمجة طويلَي الأمد",
+      "summaryAr": "DeerFlow 2.0 إطار لتنسيق وكيل رئيسي ووكلاء فرعيين وذاكرة وأدوات وبيئات sandbox ومهارات قابلة للتوسعة. يذكر README أنه إعادة كتابة جذرية عن الإصدار 1.x، وأن التطوير النشط انتقل إلى 2.0. يدعم مزودي نماذج متوافقين مع OpenAI API ويقدم إعدادًا عبر Docker ومسار تطوير محلي.",
+      "whyItMatters": "يفيد في بناء سير عمل بحث أو برمجة متعدد الخطوات، لكنه يمنح الوكيل أدوات وملفات وبيئة تنفيذ؛ لذا يجب فصل الصلاحيات والحد من الآثار الجانبية وتسجيل التكلفة.",
+      "audience": "مطورو الوكلاء ومهندسو أدوات التطوير والباحثون",
+      "overview": "المستودع يجمع تنسيق الوكلاء الفرعيين والذاكرة والبحث والأدوات وبيئات sandbox والتحكم بالمتصفح وRAG. الترخيص MIT. بيانات GitHub عند القياس: غير مؤرشف، الفرع الافتراضي main، وآخر دفع مسجل 2026-10-27T14:19:34Z؛ النجوم والتفرعات مؤشرات تراكمية لا مقياس جودة.",
+      "requirements": "Python 3.12+ وNode.js 22+ وأدوات المشروع مثل uv وpnpm؛ يوصي دليل التثبيت بمسار Docker إن كان متاحًا. يلزم config.yaml ومفتاح لمزود نموذج واحد على الأقل، وقد تحتاج أدوات البحث إلى مفاتيح إضافية. استخدام API قد يفرض رسومًا حسب المزود؛ الاستضافة المحلية تحتاج CPU/RAM وتخزينًا، والسحابة تضيف تكلفة الخادم والنماذج. احمِ لوحة الإدارة واعزل sandbox.",
+      "quickStart": "ابدأ من المستودع الرسمي: git clone https://github.com/bytedance/deer-flow.git ثم cd deer-flow. إذا كان Docker متاحًا، نفّذ make config ثم make docker-init، وبعد مراجعة config.yaml وتحديد مزود النموذج نفّذ make docker-start. للتطوير المحلي يوصي Install.md بـ make check ثم make install ثم make dev إذا اجتازت المتطلبات. هذه خطوات توثيقية لم تُشغّل هنا.",
+      "nextSteps": [
+        "ابدأ بمهمة قراءة فقط على بيانات اختبار غير حساسة.",
+        "حدد سقفًا للوقت والتكلفة وعدد الوكلاء الفرعيين.",
+        "افحص sandbox وأذونات الأدوات قبل تمكين الكتابة أو الوصول الخارجي.",
+        "قارن النتائج مع LangGraph أو OpenHands قبل اعتماد الإطار."
+      ],
+      "limitations": "لم أشغّل DeerFlow في بيئة فعلية. تعتمد النتائج والتكاليف على مزود النموذج والإعدادات والمهارات؛ يجب التعامل مع صلاحيات الإدارة وتنفيذ الشيفرة بحذر.",
+      "sources": [
+        {
+          "title": "DeerFlow — المستودع الرسمي",
+          "url": "https://github.com/bytedance/deer-flow"
+        },
+        {
+          "title": "DeerFlow — Install.md",
+          "url": "https://github.com/bytedance/deer-flow/blob/main/Install.md"
+        },
+        {
+          "title": "DeerFlow — LICENSE",
+          "url": "https://github.com/bytedance/deer-flow/blob/main/LICENSE"
+        },
+        {
+          "title": "DeerFlow — configuration docs",
+          "url": "https://github.com/bytedance/deer-flow/blob/main/backend/docs/CONFIGURATION.md"
+        }
+      ],
+      "reviewedAt": "2026-10-27T21:13:00+03:00",
+      "basis": "readme",
+      "improvements": [
+        {
+          "title": "ميزانية وتكلفة لكل تشغيل",
+          "problem": "يصعب معرفة أي وكيل أو خطوة يستهلك الرموز والوقت أكثر.",
+          "approach": "سجّل الاستخدام لكل استدعاء وأضف حدًا للتكلفة والوقت وإيقافًا آمنًا عند تجاوزه.",
+          "stack": "Python, SQLite, provider usage metadata",
+          "steps": [
+            "اجمع بيانات الرموز والمدة من كل استدعاء.",
+            "اربط السجلات بمعرّف التشغيل والوكيل الفرعي.",
+            "أضف إعداد budget_limit ووقتًا أقصى.",
+            "اختبر الإيقاف على مهام وهمية طويلة."
+          ],
+          "metric": "95% من التشغيلات التجريبية تتوقف عند السقف المحدد مع تقرير تكلفة لكل خطوة.",
+          "difficulty": "متوسطة — تقدير 3–5 أيام",
+          "risks": "قد تختلف بيانات الاستخدام بين المزودين؛ اعرض القيم المفقودة كتقديرات لا كتكلفة مؤكدة.",
+          "sources": [
+            {
+              "title": "DeerFlow repository",
+              "url": "https://github.com/bytedance/deer-flow"
+            },
+            {
+              "title": "DeerFlow Install.md",
+              "url": "https://github.com/bytedance/deer-flow/blob/main/Install.md"
+            },
+            {
+              "title": "DeerFlow configuration docs",
+              "url": "https://github.com/bytedance/deer-flow/blob/main/backend/docs/CONFIGURATION.md"
+            }
+          ]
+        },
+        {
+          "title": "إعادة تشغيل آمنة للخطوات القابلة للتكرار",
+          "problem": "يصعب تشخيص اختلاف النتائج عند تغير النماذج أو الأدوات بين تشغيل وآخر.",
+          "approach": "احفظ إعدادات المهمة ومخرجات الأدوات غير الجانبية ومعرفات الإصدارات، ووفّر replay لا يعيد تنفيذ إجراءات خارجية تلقائيًا.",
+          "stack": "Python, JSONL, SQLite, content hashes",
+          "steps": [
+            "عرّف الأدوات المسموح بإعادة تشغيلها.",
+            "احفظ المدخلات والمخرجات مع hash.",
+            "أضف replay في وضع dry-run.",
+            "قارن المخرجات وسجل نقاط الاختلاف."
+          ],
+          "metric": "إعادة إنتاج 90% من خطوات القراءة في مجموعة اختبار ثابتة دون آثار جانبية.",
+          "difficulty": "متوسطة — تقدير 4–6 أيام",
+          "risks": "قد تحتوي السجلات على بيانات حساسة؛ أخفِ الأسرار وحدد سياسة احتفاظ.",
+          "sources": [
+            {
+              "title": "DeerFlow repository",
+              "url": "https://github.com/bytedance/deer-flow"
+            },
+            {
+              "title": "DeerFlow Install.md",
+              "url": "https://github.com/bytedance/deer-flow/blob/main/Install.md"
+            },
+            {
+              "title": "DeerFlow configuration docs",
+              "url": "https://github.com/bytedance/deer-flow/blob/main/backend/docs/CONFIGURATION.md"
+            }
+          ]
+        },
+        {
+          "title": "تحقق من المصادر قبل تسليم تقرير البحث",
+          "problem": "قد يخلط الوكيل بين الادعاء والمعلومة أو يفقد الرابط الأصلي.",
+          "approach": "اربط كل ادعاء بمصدر مباشر ووسم الاستنتاجات، وارفض البطاقة إذا كانت الروابط غير صالحة.",
+          "stack": "Python, Pydantic, URL checks, SQLite",
+          "steps": [
+            "استخرج الادعاءات والروابط من المسودة.",
+            "تحقق من HTTPS وإتاحة الروابط.",
+            "اربط كل ادعاء بمصدر محدد.",
+            "أظهر الادعاءات غير المسندة للمراجع."
+          ],
+          "metric": "90% من الادعاءات القابلة للتحقق مرتبطة بمصدر مباشر في عينة مراجعة.",
+          "difficulty": "متوسطة — تقدير 4–7 أيام",
+          "risks": "قد لا يثبت المصدر الادعاء دلاليًا؛ يلزم فحص بشري للادعاءات المهمة.",
+          "sources": [
+            {
+              "title": "DeerFlow repository",
+              "url": "https://github.com/bytedance/deer-flow"
+            },
+            {
+              "title": "DeerFlow Install.md",
+              "url": "https://github.com/bytedance/deer-flow/blob/main/Install.md"
+            },
+            {
+              "title": "DeerFlow configuration docs",
+              "url": "https://github.com/bytedance/deer-flow/blob/main/backend/docs/CONFIGURATION.md"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مساعد بحث جامعي يسلم دفتر مصادر بدل مقال جاهز",
+          "problem": "يحتاج الطالب جمع مصادر منظمة والتمييز بين الاقتباس والتحليل.",
+          "approach": "اجمع أوراقًا ومقالات رسمية وأخرج قائمة مراجع وتعليقات مرتبطة بالمصدر مع مراجعة بشرية.",
+          "stack": "DeerFlow, Python, SQLite, citation parser",
+          "steps": [
+            "حدد موضوعًا ونطاقًا زمنيًا.",
+            "اجمع المصادر الأولية في الجولة الأولى.",
+            "أنشئ بطاقة لكل مصدر مع الملاحظات.",
+            "راجع كل رابط وادعاء قبل التصدير."
+          ],
+          "metric": "100% من المراجع في العينة تفتح وتطابق المصدر المذكور.",
+          "difficulty": "متوسطة — تقدير 4–6 أيام",
+          "risks": "قد ينتج الوكيل اقتباسًا غير دقيق؛ لا تسلّم المخرجات دون مراجعة المصدر.",
+          "sources": [
+            {
+              "title": "DeerFlow repository",
+              "url": "https://github.com/bytedance/deer-flow"
+            },
+            {
+              "title": "DeerFlow Install.md",
+              "url": "https://github.com/bytedance/deer-flow/blob/main/Install.md"
+            },
+            {
+              "title": "DeerFlow configuration docs",
+              "url": "https://github.com/bytedance/deer-flow/blob/main/backend/docs/CONFIGURATION.md"
+            }
+          ]
+        },
+        {
+          "title": "وكيل توثيق لمستودعات Python داخل sandbox",
+          "problem": "يتأخر التوثيق عن تغييرات الشيفرة وقد يختلط الوصف الفعلي بالتخمين.",
+          "approach": "اجعل الوكيل يقرأ الشيفرة والاختبارات ويقترح تغييرات README منفصلة لا تُدمج إلا بعد المراجعة.",
+          "stack": "DeerFlow, Python, pytest, Markdown",
+          "steps": [
+            "حدد مجلدات القراءة والملفات المحظورة.",
+            "شغّل الاختبارات الموجودة دون تغييرها.",
+            "اربط كل فقرة بمصدر شيفرة أو اختبار.",
+            "أنشئ patch منفصلًا للمراجعة."
+          ],
+          "metric": "80% من تغييرات التوثيق المقبولة بعد مراجعة المطور من أول دورة.",
+          "difficulty": "متوسطة — تقدير 3–5 أيام",
+          "risks": "قد تستدعي الاختبارات أوامر ذات آثار جانبية؛ استخدم بيئة معزولة وبيانات تجريبية.",
+          "sources": [
+            {
+              "title": "DeerFlow repository",
+              "url": "https://github.com/bytedance/deer-flow"
+            },
+            {
+              "title": "DeerFlow Install.md",
+              "url": "https://github.com/bytedance/deer-flow/blob/main/Install.md"
+            },
+            {
+              "title": "DeerFlow configuration docs",
+              "url": "https://github.com/bytedance/deer-flow/blob/main/backend/docs/CONFIGURATION.md"
+            }
+          ]
+        },
+        {
+          "title": "مراقب تغييرات للمستودعات مع موافقات بشرية",
+          "problem": "تحتاج الفرق تلخيص التغييرات دون منح وكيل صلاحية الدمج أو تعديل الفروع.",
+          "approach": "راقب commits وPRs ولخص الملفات المتغيرة والمخاطر، واترك النشر والدمج لمراجع بشري.",
+          "stack": "DeerFlow, GitHub API, Python, notifications",
+          "steps": [
+            "حدد مستودعات للقراءة فقط.",
+            "اجمع metadata للـ commits وPRs الجديدة.",
+            "لخص أثر التغيير مع روابط الفروق.",
+            "أرسل التقرير دون صلاحية merge."
+          ],
+          "metric": "زمن إعداد التقرير أقل من 5 دقائق مع صفر عمليات كتابة تلقائية.",
+          "difficulty": "متوسطة — تقدير 3–5 أيام",
+          "risks": "قد يخطئ التلخيص في تقدير الأثر؛ احتفظ بروابط الفروق الأصلية ومراجعة بشرية.",
+          "sources": [
+            {
+              "title": "DeerFlow repository",
+              "url": "https://github.com/bytedance/deer-flow"
+            },
+            {
+              "title": "DeerFlow Install.md",
+              "url": "https://github.com/bytedance/deer-flow/blob/main/Install.md"
+            },
+            {
+              "title": "DeerFlow configuration docs",
+              "url": "https://github.com/bytedance/deer-flow/blob/main/backend/docs/CONFIGURATION.md"
+            }
+          ]
+        }
+      ]
+    },
+    "137ebc899af74dcede": {
+      "url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "titleAr": "PaddleOCR — مجموعة أدوات مفتوحة لاستخراج النصوص وتحويل المستندات إلى بيانات منظمة",
+      "summaryAr": "PaddleOCR يحول الصور وملفات PDF إلى نصوص وبيانات منظمة، مع مسارات للتعرف الضوئي على الحروف وتحليل بنية المستند والجداول والتصدير إلى Markdown أو JSON. يذكر README دعم لغات كثيرة ومحركات استدلال متعددة ويعرض نتائج benchmark يعلنها المشروع؛ ينبغي قياسها على مستنداتك قبل اعتمادها.",
+      "whyItMatters": "يمكن استخدامه لبناء بحث داخل ملفات المحاضرات والفواتير والمستندات المصورة. لكن جودة OCR تتغير مع اللغة والخط وجودة الصورة والتخطيط، لذا يلزم الاحتفاظ بصورة الأصل ومراجعة النص المستخرج.",
+      "audience": "مطورو Python والباحثون في معالجة المستندات وبناء أنظمة RAG والأرشفة",
+      "overview": "المستودع يضم OCR للصور والمستندات ومسارات document parsing واستخراج المعلومات والترجمة. الترخيص Apache-2.0 وفق LICENSE. بيانات GitHub عند القياس: غير مؤرشف، الفرع الافتراضي main، وآخر دفع مسجل 2026-09-16T03:31:50Z؛ الأرقام التراكمية ليست مؤشرًا على نمو يومي. نتائج benchmark في README معلنة من المشروع وتحتاج تحققًا مستقلًا.",
+      "requirements": "يدعم توزيع paddleocr الأساسي Python 3.8+، لكن مجموعات مثل doc-parser وie وtrans تتطلب Python 3.9+ وفق التوثيق. اختر محرك الاستدلال وثبت نسخة CPU/GPU المطابقة للنظام وCUDA. الاستخدام المحلي لا يفرض رسوم API بحد ذاته لكنه يحتاج تنزيل النماذج وموارد CPU/RAM أو GPU؛ النشر السحابي يضيف تكلفة الحوسبة والتخزين. ابدأ بأقل مجموعة لازمة بدل [all].",
+      "quickStart": "أنشئ بيئة Python نظيفة. لتشغيل المحرك المحلي PaddlePaddle على CPU، اتبع دليل التثبيت الرسمي وثبت النسخة المتوافقة (التوثيق الحالي يعرض paddlepaddle==3.2.0)، ثم نفّذ python -m pip install paddleocr. للميزات الموسعة استخدم python -m pip install \"paddleocr[all]\" بعد مراجعة متطلبات كل مجموعة. بعد تنزيل صورة اختبار محلية، استخدم paddleocr ocr -i ./sample.png --use_doc_orientation_classify False --use_doc_unwarping False --use_textline_orientation False --save_path ./output --device cpu. هذا مسار توثيقي لم يُنفذ هنا.",
+      "nextSteps": [
+        "ابدأ بعينة صغيرة من مستنداتك مع نص مرجعي يدوي.",
+        "قِس معدل خطأ الحروف العربية ودقة الجداول قبل التوسع.",
+        "احتفظ بالأصل ورقم الصفحة ومربعات النص لتدقيق النتائج.",
+        "قارن مع Tesseract أو docTR إذا اختلفت شروط الترخيص أو الموارد."
+      ],
+      "limitations": "لم أشغّل PaddleOCR على عينة فعلية. قد تختلف الدقة للخطوط العربية والوثائق الرديئة أو الجداول المعقدة، وقد يخطئ OCR في الأرقام والهمزات والتشكيل وترتيب RTL.",
+      "sources": [
+        {
+          "title": "PaddleOCR — المستودع الرسمي",
+          "url": "https://github.com/PaddlePaddle/PaddleOCR"
+        },
+        {
+          "title": "PaddleOCR — دليل التثبيت",
+          "url": "https://www.paddleocr.ai/latest/en/version3.x/installation.html"
+        },
+        {
+          "title": "PaddleOCR — دليل البدء السريع",
+          "url": "https://www.paddleocr.ai/main/en/quick_start.html"
+        },
+        {
+          "title": "PaddleOCR — LICENSE",
+          "url": "https://github.com/PaddlePaddle/PaddleOCR/blob/main/LICENSE"
+        }
+      ],
+      "reviewedAt": "2026-10-27T21:13:00+03:00",
+      "basis": "readme",
+      "improvements": [
+        {
+          "title": "مجموعة تقييم عربية معلّمة للمستندات",
+          "problem": "لا تكفي نتائج benchmark العامة لمعرفة أداء OCR على ملفات عربية جامعية أو نماذج محلية.",
+          "approach": "أنشئ مجموعة اختبار بموافقة أصحاب البيانات، مع نص مرجعي ومربعات مواقع، ثم قس CER وWER.",
+          "stack": "PaddleOCR, Python, pandas, Label Studio",
+          "steps": [
+            "حدد أنواع المستندات واللغات.",
+            "اختر عينة متنوعة واطمس البيانات الحساسة.",
+            "أنشئ نصًا مرجعيًا بمراجعين اثنين.",
+            "شغّل الإعدادات وقارن CER وWER.",
+            "انشر النتائج مع حجم العينة وشروطها."
+          ],
+          "metric": "قياس CER وWER لكل فئة مع اتفاق مراجعين موثق لا يقل عن 98%.",
+          "difficulty": "متوسطة — تقدير 4–7 أيام",
+          "risks": "قد تحتوي الصور على بيانات شخصية أو حقوق نشر؛ يلزم إذن وطمس الهوية قبل المشاركة.",
+          "sources": [
+            {
+              "title": "PaddleOCR repository",
+              "url": "https://github.com/PaddlePaddle/PaddleOCR"
+            },
+            {
+              "title": "PaddleOCR installation docs",
+              "url": "https://www.paddleocr.ai/latest/en/version3.x/installation.html"
+            },
+            {
+              "title": "PaddleOCR quick start",
+              "url": "https://www.paddleocr.ai/main/en/quick_start.html"
+            }
+          ]
+        },
+        {
+          "title": "طابور مراجعة بشرية للنصوص منخفضة الثقة",
+          "problem": "قد تدخل أخطاء OCR إلى البحث أو قواعد البيانات دون ملاحظة.",
+          "approach": "احتفظ بالصورة ومربعات النص ودرجات الثقة إن توفرت، ثم وجّه الصفحات منخفضة الجودة إلى واجهة مراجعة.",
+          "stack": "PaddleOCR, FastAPI, SQLite, web UI",
+          "steps": [
+            "احفظ كل نتيجة مع رقم الصفحة ومربعها.",
+            "عرّف قواعد فرز الصفحات للمراجعة.",
+            "اعرض النص والصورة جنبًا إلى جنب.",
+            "سجل التعديل البشري وتاريخه.",
+            "أعد حساب الدقة بعد المراجعة."
+          ],
+          "metric": "تقليل أخطاء الحقول الحرجة 50% في عينة قبل/بعد المراجعة.",
+          "difficulty": "متوسطة — تقدير 4–6 أيام",
+          "risks": "قد لا تعكس درجات الثقة احتمال الخطأ الحقيقي؛ عاير العتبات على بيانات موسومة.",
+          "sources": [
+            {
+              "title": "PaddleOCR repository",
+              "url": "https://github.com/PaddlePaddle/PaddleOCR"
+            },
+            {
+              "title": "PaddleOCR installation docs",
+              "url": "https://www.paddleocr.ai/latest/en/version3.x/installation.html"
+            },
+            {
+              "title": "PaddleOCR quick start",
+              "url": "https://www.paddleocr.ai/main/en/quick_start.html"
+            }
+          ]
+        },
+        {
+          "title": "معالجة PDF على دفعات مع تخزين مؤقت للصفحات",
+          "problem": "إعادة معالجة ملف طويل بعد تعديل صفحة واحدة تستهلك الوقت والذاكرة.",
+          "approach": "قسّم المستند إلى صفحات ذات بصمة محتوى واحفظ النتائج الناجحة وأعد تشغيل الصفحات المتغيرة أو الفاشلة فقط.",
+          "stack": "Python, PaddleOCR, SQLite, PDF tooling",
+          "steps": [
+            "استخرج الصفحات بمعرّف ثابت.",
+            "احسب hash للصورة بعد التطبيع.",
+            "خزن نتيجة OCR وإصدار النموذج لكل صفحة.",
+            "أعد محاولة الصفحات الفاشلة وحدها.",
+            "قِس throughput والذاكرة وزمن الإعادة."
+          ],
+          "metric": "خفض زمن إعادة معالجة ملف معدل جزئيًا 60% على مجموعة ثابتة.",
+          "difficulty": "متوسطة — تقدير 3–6 أيام",
+          "risks": "تغيير preprocessing أو النموذج يبطل التخزين القديم؛ أدرج الإصدارات في مفتاح cache.",
+          "sources": [
+            {
+              "title": "PaddleOCR repository",
+              "url": "https://github.com/PaddlePaddle/PaddleOCR"
+            },
+            {
+              "title": "PaddleOCR installation docs",
+              "url": "https://www.paddleocr.ai/latest/en/version3.x/installation.html"
+            },
+            {
+              "title": "PaddleOCR quick start",
+              "url": "https://www.paddleocr.ai/main/en/quick_start.html"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "أرشيف محاضرات جامعي قابل للبحث",
+          "problem": "الشرائح وملفات PDF المصورة يصعب البحث داخلها وقد يضيع معها رقم الصفحة.",
+          "approach": "استخرج النص من ملفات مسموح بها واحفظه مع اسم الملف والصفحة ورابط العودة للصورة ثم أضف بحثًا نصيًا.",
+          "stack": "PaddleOCR, Python, SQLite/FTS, FastAPI",
+          "steps": [
+            "اجمع ملفات يملك المستخدم حق معالجتها.",
+            "استخرج النص صفحة بصفحة مع الإحداثيات.",
+            "اربط كل فقرة بالصفحة الأصلية.",
+            "أضف بحثًا يعيد النص ورابط الصورة.",
+            "راجع عينة من النتائج يدويًا."
+          ],
+          "metric": "90% من نتائج البحث التجريبية تشير إلى الصفحة الصحيحة في عينة موسومة.",
+          "difficulty": "متوسطة — تقدير 4–7 أيام",
+          "risks": "حقوق المواد وخصوصية الأسماء؛ اجعل التخزين خاصًا ولا تنشر الملفات دون إذن.",
+          "sources": [
+            {
+              "title": "PaddleOCR repository",
+              "url": "https://github.com/PaddlePaddle/PaddleOCR"
+            },
+            {
+              "title": "PaddleOCR installation docs",
+              "url": "https://www.paddleocr.ai/latest/en/version3.x/installation.html"
+            },
+            {
+              "title": "PaddleOCR quick start",
+              "url": "https://www.paddleocr.ai/main/en/quick_start.html"
+            }
+          ]
+        },
+        {
+          "title": "مستخرج فواتير وإيصالات محلي مع مراجعة الحقول",
+          "problem": "إدخال مبالغ وتواريخ الفواتير يدويًا بطيء ومعرض للأخطاء.",
+          "approach": "استخرج النص والحقول محليًا ثم اعرض المبلغ والتاريخ والضريبة مع الصورة للمراجعة قبل التصدير.",
+          "stack": "PaddleOCR, Python, Pydantic, SQLite",
+          "steps": [
+            "حدد قالبًا واحدًا من الفواتير.",
+            "استخرج النص ومربعاته من الصورة.",
+            "حوّل المرشحات إلى حقول مع درجات ثقة.",
+            "اطلب موافقة المستخدم على المبلغ والتاريخ.",
+            "صدر CSV بعد التأكيد فقط."
+          ],
+          "metric": "دقة 98% للمبالغ والتواريخ بعد المراجعة البشرية على عينة اختبار.",
+          "difficulty": "متوسطة — تقدير 3–5 أيام",
+          "risks": "قد يخطئ في الفواصل العشرية أو العملة؛ لا تعتمد القيم المالية دون تأكيد.",
+          "sources": [
+            {
+              "title": "PaddleOCR repository",
+              "url": "https://github.com/PaddlePaddle/PaddleOCR"
+            },
+            {
+              "title": "PaddleOCR installation docs",
+              "url": "https://www.paddleocr.ai/latest/en/version3.x/installation.html"
+            },
+            {
+              "title": "PaddleOCR quick start",
+              "url": "https://www.paddleocr.ai/main/en/quick_start.html"
+            }
+          ]
+        },
+        {
+          "title": "قارئ مستندات ميسر مع تحويل النص إلى صوت",
+          "problem": "المستندات المصورة قد تكون غير قابلة للاستخدام مع قارئات الشاشة.",
+          "approach": "استخدم OCR لإنتاج نص منظم مع ترتيب قراءة ومؤشر صفحة ثم مرره إلى TTS مع إظهار النص المتزامن.",
+          "stack": "PaddleOCR, Python, TTS engine, accessible web UI",
+          "steps": [
+            "استخرج النص ومواقع الفقرات.",
+            "رتب الكتل وفق تخطيط الصفحة واللغة.",
+            "أضف تشغيلًا صوتيًا لكل فقرة مع تمييز النص.",
+            "اختبر لوحة المفاتيح وقارئ الشاشة.",
+            "اجمع ملاحظات مستخدمين بموافقتهم."
+          ],
+          "metric": "إكمال 90% من مهام القراءة في اختبار قابلية استخدام صغير مع توثيق الأخطاء.",
+          "difficulty": "متوسطة — تقدير 4–7 أيام",
+          "risks": "قد يخطئ ترتيب القراءة أو الأسماء؛ أظهر النص الأصلي دائمًا وإمكانية التصحيح.",
+          "sources": [
+            {
+              "title": "PaddleOCR repository",
+              "url": "https://github.com/PaddlePaddle/PaddleOCR"
+            },
+            {
+              "title": "PaddleOCR installation docs",
+              "url": "https://www.paddleocr.ai/latest/en/version3.x/installation.html"
+            },
+            {
+              "title": "PaddleOCR quick start",
+              "url": "https://www.paddleocr.ai/main/en/quick_start.html"
+            }
+          ]
+        }
+      ],
+      "religious": [
+        {
+          "title": "فهرسة صور مخطوطات ومصاحف مع تحقق بشري مزدوج",
+          "problem": "يمكن أن تساعد OCR في العثور على مواضع النصوص داخل صور كثيرة، لكن أي خطأ حرفي أو في التشكيل قد يغير المعنى.",
+          "approach": "استخدم OCR للفهرسة الأولية وربط كل مقطع بالصورة والإحداثيات، ولا تنشر نصًا مستخرجًا باعتباره نسخة معتمدة قبل مراجعة بشرية مزدوجة.",
+          "stack": "PaddleOCR, Python, image viewer, human review workflow",
+          "steps": [
+            "استخدم صورًا مصرحًا بها وحدد طبعة أو مخطوط كل مجموعة.",
+            "استخرج النص مع الإحداثيات دون حذف الأصل.",
+            "اعرض كل مقطع للمراجعين مع الصورة المقابلة.",
+            "اطلب مراجعة شخصين مستقلين قبل الاعتماد.",
+            "سجل الخلافات والتصحيحات وأبقِ غير المعتمد موسومًا."
+          ],
+          "metric": "100% من المقاطع المنشورة تمر بمراجعتين موثقتين مع قياس CER على عينة مرجعية.",
+          "difficulty": "مرتفعة — تقدير 1–3 أسابيع",
+          "risks": "الخلط في الحروف أو التشكيل أو ترتيب الأسطر قد يغير النص؛ لا يستخدم OCR وحده لإثبات النص أو نشره، وتبقى الصورة الأصلية المرجع.",
+          "sources": [
+            {
+              "title": "PaddleOCR repository",
+              "url": "https://github.com/PaddlePaddle/PaddleOCR"
+            },
+            {
+              "title": "PaddleOCR installation docs",
+              "url": "https://www.paddleocr.ai/latest/en/version3.x/installation.html"
+            },
+            {
+              "title": "PaddleOCR quick start",
+              "url": "https://www.paddleocr.ai/main/en/quick_start.html"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
