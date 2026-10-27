@@ -1,0 +1,280 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-27T06:19:28+03:00",
+  "baseMainSha": "dc4a658431f01624feaa9b0165d28d24dffbfd81",
+  "feedBlobSha": "ae6a0458023570d3401094a0ae3abb50246bf932",
+  "editorialBlobSha": "4c3afb2d067d532256465c81cd3877bf9297b8f2",
+  "feedGeneratedAt": "2026-10-27T03:00:09+00:00",
+  "auditBeforeNewBatch": {
+    "incomingFiles": 27,
+    "incomingRecords": 206,
+    "alreadyImportedExact": 203,
+    "activeFeedExact": 170,
+    "previouslyImportedOutOfFeed": 33,
+    "notInFeedNotImported": 3,
+    "urlMismatches": 0,
+    "needsStructuralCorrection": 0,
+    "currentFeedItems": 800,
+    "currentNews": 700,
+    "currentProjects": 100,
+    "editorialRecordsBefore": 206,
+    "activeEditorialMatches": 173,
+    "activeEditorialNews": 118,
+    "activeEditorialProjects": 55,
+    "unEnrichedNews": 582,
+    "unEnrichedProjects": 45
+  },
+  "incomingFilesChecked": [
+    "nabdh-editorial-2026-10-24-0542.json",
+    "nabdh-editorial-2026-10-24-0840.json",
+    "nabdh-editorial-2026-10-24-1143.json",
+    "nabdh-editorial-2026-10-24-1439.json",
+    "nabdh-editorial-2026-10-24-1740.json",
+    "nabdh-editorial-2026-10-24-2043.json",
+    "nabdh-editorial-2026-10-24-2342.json",
+    "nabdh-editorial-2026-10-24.json",
+    "nabdh-editorial-2026-10-25-0250.json",
+    "nabdh-editorial-2026-10-25-0554.json",
+    "nabdh-editorial-2026-10-25-0845.json",
+    "nabdh-editorial-2026-10-25-1143.json",
+    "nabdh-editorial-2026-10-25-1442.json",
+    "nabdh-editorial-2026-10-25-1742.json",
+    "nabdh-editorial-2026-10-25-2038.json",
+    "nabdh-editorial-2026-10-25-2342.json",
+    "nabdh-editorial-2026-10-26-0250.json",
+    "nabdh-editorial-2026-10-26-0545.json",
+    "nabdh-editorial-2026-10-26-0840.json",
+    "nabdh-editorial-2026-10-26-1152.json",
+    "nabdh-editorial-2026-10-26-1445.json",
+    "nabdh-editorial-2026-10-26-1745.json",
+    "nabdh-editorial-2026-10-26-2042.json",
+    "nabdh-editorial-2026-10-26-2342.json",
+    "nabdh-editorial-2026-10-27-0038.json",
+    "nabdh-editorial-2026-10-27-0240.json",
+    "nabdh-editorial-2026-10-27-0549.json"
+  ],
+  "targetRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "title": "OpenShell من NVIDIA: بيئات معزولة للوكلاء بصلاحيات قابلة للمراجعة",
+      "editorialImported": false,
+      "feedIdPresent": false,
+      "feedUrlExact": false,
+      "urlPresentUnderDifferentId": false,
+      "decision": "remain_pending_not_imported",
+      "reason": "The exact original id/url pair is absent from the current feed; no alternate identity generated."
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "url": null,
+      "title": null,
+      "editorialImported": false,
+      "feedIdPresent": false,
+      "feedUrlExact": false,
+      "urlPresentUnderDifferentId": false,
+      "decision": "remain_pending_not_imported",
+      "reason": "The exact original id/url pair is absent from the current feed; no alternate identity generated."
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "url": null,
+      "title": null,
+      "editorialImported": false,
+      "feedIdPresent": false,
+      "feedUrlExact": false,
+      "urlPresentUnderDifferentId": false,
+      "decision": "remain_pending_not_imported",
+      "reason": "The exact original id/url pair is absent from the current feed; no alternate identity generated."
+    }
+  ],
+  "newBatch": {
+    "path": "editorial/incoming/nabdh-editorial-2026-10-27-0619.json",
+    "records": 15,
+    "newNews": 12,
+    "newProjects": 2,
+    "existingProjectRefreshes": 1,
+    "ids": [
+      "c6bba90d60fe388368",
+      "6e162aff655bfd4cea",
+      "b555ce2afa55383d5d",
+      "27334100e818b98514",
+      "7d972df501d01ba1f6",
+      "092e8ceea2bd79fc97",
+      "bb157bb6b3d38a630d",
+      "899345890ca2652c1a",
+      "2b3f616d26d343fed7",
+      "0e5fad3ca5f8a881ac",
+      "7070b65bc1783e04cf",
+      "64ddfb139fec8a1cb4",
+      "f92165981694a1285c",
+      "047dfb5b10d52e5eb6",
+      "853c63f738f0cecf3b"
+    ],
+    "basisCounts": {
+      "article": 8,
+      "metadata": 4,
+      "readme": 3
+    }
+  },
+  "expectedAfterMerge": {
+    "editorialRecords": 220,
+    "activeEditorialMatches": 188,
+    "activeEditorialNews": 130,
+    "activeEditorialProjects": 57,
+    "unEnrichedNews": 570,
+    "unEnrichedProjects": 43,
+    "existingRecordsPreserved": true,
+    "changedExistingIds": [
+      "853c63f738f0cecf3b"
+    ]
+  },
+  "previousProjectsReview": {
+    "checkedAt": "2026-10-27T06:19:28+03:00",
+    "allEightActiveInFeed": true,
+    "allEightReposNonArchived": true,
+    "metricNote": "Stars are cumulative GitHub snapshots, not daily growth.",
+    "entries": [
+      {
+        "name": "Gradio",
+        "url": "https://github.com/gradio-app/gradio",
+        "active": true,
+        "archived": false,
+        "license": "Apache-2.0",
+        "stars": 43912,
+        "pushedAt": "2026-10-27T00:23:21Z",
+        "readmeReviewed": true,
+        "change": "No content change required; current README includes hot reload and optional coding-agent skill."
+      },
+      {
+        "name": "Claude-Mem",
+        "url": "https://github.com/thedotmack/claude-mem",
+        "active": true,
+        "archived": false,
+        "license": "Apache-2.0",
+        "stars": 103465,
+        "pushedAt": "2026-10-26T23:57:05Z",
+        "readmeReviewed": true,
+        "change": "Updated provider/sign-in/local-mode guidance; previous suggestions preserved in order."
+      },
+      {
+        "name": "Ultralytics",
+        "url": "https://github.com/ultralytics/ultralytics",
+        "active": true,
+        "archived": false,
+        "license": "AGPL-3.0",
+        "stars": 62872,
+        "pushedAt": "2026-10-26T18:59:38Z",
+        "readmeReviewed": true,
+        "change": "Kept current Python/PyTorch requirement and AGPL/Enterprise license warning."
+      },
+      {
+        "name": "MoneyPrinterTurbo",
+        "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+        "active": true,
+        "archived": false,
+        "license": "MIT",
+        "stars": 135519,
+        "pushedAt": "2026-10-27T00:13:33Z",
+        "readmeReviewed": true,
+        "change": "Current README confirms Python 3.11 and Docker/FFmpeg paths; existing card remains accurate."
+      },
+      {
+        "name": "AI-For-Beginners",
+        "url": "https://github.com/microsoft/AI-For-Beginners",
+        "active": true,
+        "archived": false,
+        "license": "MIT",
+        "stars": 70277,
+        "pushedAt": "2026-10-23T23:55:14Z",
+        "readmeReviewed": true,
+        "change": "No material correction required."
+      },
+      {
+        "name": "Bruno",
+        "url": "https://github.com/usebruno/bruno",
+        "active": true,
+        "archived": false,
+        "license": "MIT",
+        "stars": 47859,
+        "pushedAt": "2026-10-26T16:45:02Z",
+        "readmeReviewed": true,
+        "change": "Current lowercase readme.md confirms offline-only collections and no cloud sync plan."
+      },
+      {
+        "name": "Keras",
+        "url": "https://github.com/keras-team/keras",
+        "active": true,
+        "archived": false,
+        "license": "Apache-2.0",
+        "stars": 64391,
+        "pushedAt": "2026-10-26T20:40:53Z",
+        "readmeReviewed": true,
+        "change": "Current README confirms a separate backend package is required."
+      },
+      {
+        "name": "sherpa-onnx",
+        "url": "https://github.com/k2-fsa/sherpa-onnx",
+        "active": true,
+        "archived": false,
+        "license": "Apache-2.0",
+        "stars": 15531,
+        "pushedAt": "2026-10-26T15:20:53Z",
+        "readmeReviewed": true,
+        "change": "Current README retains local/offline speech support; model licenses remain separate."
+      }
+    ]
+  },
+  "historicalLibrary": {
+    "path": "editorial/library/review-2026-10-27-0038.json",
+    "total": 31,
+    "archived": 2,
+    "inCurrentFeed": 4,
+    "notInFeed": 27,
+    "lastReviewedAt": "2026-10-27T00:49:07+03:00",
+    "note": "No separate library record added for the two new projects because both already exist in feed and are enriched by original IDs."
+  },
+  "newProjectResearch": [
+    {
+      "id": "f92165981694a1285c",
+      "url": "https://github.com/labmlai/annotated_deep_learning_paper_implementations",
+      "license": "MIT",
+      "archived": false,
+      "starsMeasured": 67601,
+      "metricCapturedAt": "2026-10-27T06:19:28+03:00",
+      "pushedAt": "2026-10-25T17:01:15Z",
+      "basis": "README, license, requirements.txt, setup.py"
+    },
+    {
+      "id": "047dfb5b10d52e5eb6",
+      "url": "https://github.com/espnet/espnet",
+      "license": "Apache-2.0",
+      "archived": false,
+      "starsMeasured": 9995,
+      "metricCapturedAt": "2026-10-27T06:19:28+03:00",
+      "pushedAt": "2026-10-26T15:52:50Z",
+      "basis": "README, LICENSE, pyproject.toml, doc/installation.md"
+    }
+  ],
+  "sourceReviewLimitations": [
+    "The full SEC S-1 page was too large to open directly; the Anthropic energy summary relies on The Verge's article and links to the official filing.",
+    "The Hugging Face Granite blog route was inaccessible; the official IBM model card was reviewed instead and basis=metadata is used.",
+    "Three arXiv entries were reviewed at abstract/metadata level only; basis=metadata.",
+    "The OpenAI biological-data article was read, but its linked bioRxiv paper returned 403; the paper itself was not read."
+  ],
+  "localExecution": {
+    "repositoryMounted": false,
+    "officialValidateIncomingRun": false,
+    "officialImportRun": false,
+    "localUnitTestsRun": false,
+    "commandsNotRun": [
+      "python scripts/editorial.py validate /tmp/nabdh-editorial.json",
+      "python scripts/editorial.py import /tmp/nabdh-editorial.json",
+      "python -m unittest discover -s tests -v"
+    ],
+    "reason": "No local Git repository is mounted in the execution container. Equivalent structural validation and exact current-feed id/url checks were performed before preparing the data-only PR; GitHub Actions will run the official repository tests and validator."
+  },
+  "publicationStatusAtSnapshot": "not_yet_submitted",
+  "sitePublicJsonVerified": false,
+  "sitePublicJsonNote": "Public GitHub Pages JSON and detail-page rendering must be checked after merge; a commit or successful Actions run alone is not proof of visible publication."
+}
