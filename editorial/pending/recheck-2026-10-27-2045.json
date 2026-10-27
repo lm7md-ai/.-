@@ -138,8 +138,8 @@
       "0cd4e25205e9e68806"
     ],
     "basisCounts": {
-      "article": 7,
-      "metadata": 2,
+      "article": 4,
+      "metadata": 5,
       "readme": 3
     },
     "proposalCounts": {
@@ -148,7 +148,8 @@
       "religious": 0
     },
     "testEvidenceClaims": 0,
-    "structuralEquivalentValidation": "passed"
+    "structuralEquivalentValidation": "passed",
+    "note": "صُححت basis إلى metadata للمواد الصحفية التي تعذر الوصول إلى نصها الكامل، واستُبدل رابط تحليل LiteLLM الأولي بالرابط الرسمي المعتمد مع الاحتفاظ بالتقرير الأولي بوصفه سجلًا تاريخيًا."
   },
   "projectLibrary": {
     "catalogPath": "editorial/library/catalog-2026-10-24.json",
