@@ -198,9 +198,10 @@
     {
       "repository": "usebruno/bruno",
       "archived": false,
-      "license": "MIT (README confirms; LICENSE path returned 404)",
+      "license": "MIT was reported previously; current LICENSE path returned 404 and README license was not verified in this recheck.",
       "latestCommit": "874ac540a14eb1883ab359b4438487add41b8b03",
-      "url": "https://github.com/usebruno/bruno"
+      "url": "https://github.com/usebruno/bruno",
+      "licenseNeedsUpstreamVerification": true
     },
     {
       "repository": "keras-team/keras",
@@ -237,5 +238,27 @@
     "officialUnitTestsRunLocally": false,
     "structuralEquivalentValidation": "passed for 12 incoming entries; official CI validation and tests required before merge",
     "noCodeOrWorkflowChanges": true
-  }
+  },
+  "postRefreshAudit": {
+    "sourceMainCommit": "f712f698c69b4b42389604e5ef2bd5f302f846a4",
+    "feedGeneratedAt": "2026-10-27T17:59:31+00:00",
+    "feedItems": 800,
+    "editorialEntries": 274,
+    "editorialExactFeedMatches": 198,
+    "editorialUrlMismatches": 0,
+    "editorialOutOfFeed": 76,
+    "incomingFiles": 32,
+    "incomingRows": 275,
+    "incomingUniqueIds": 274,
+    "importedExactRows": 272,
+    "importedExactUniqueIds": 271,
+    "currentFeedMatchRows": 196,
+    "currentFeedMatchUniqueIds": 195,
+    "importedButOutOfFeedRows": 76,
+    "missingFromFeedAndEditorial": 3,
+    "idUrlMismatches": 0,
+    "confirmedExpired": 0,
+    "note": "إعادة مطابقة بعد التحديث الآلي اللاحق لدمج PR #31؛ لا تُعد السجلات خارج feed منتهية تلقائيًا."
+  },
+  "reportNote": "sourceSnapshot and incomingAuditAfterNewBatch above preserve the pre-refresh snapshot at feedGeneratedAt 2026-10-27T15:20:24Z; postRefreshAudit records the later automatic feed refresh."
 }
