@@ -1,0 +1,496 @@
+{
+  "version": 1,
+  "items": {
+    "9a3764356b202945ed": {
+      "titleAr": "بنك أوف أمريكا يحذّر من مشاركة بيانات الدخول مع وكلاء الذكاء الاصطناعي",
+      "summaryAr": "ينقل TechCrunch أن بنك أوف أمريكا طلب عدم مشاركة اسم المستخدم وكلمة المرور مع وكيل ذكاء اصطناعي يعمل نيابة عن العميل، بسبب مخاطر العمليات غير المقصودة أو تسرب بيانات الاعتماد. هذا تحذير وقائي وليس إثباتًا على وقوع اختراق محدد.",
+      "whyItMatters": "عندما ينتقل المساعد إلى تنفيذ الأفعال تصبح الصلاحيات جزءًا من سطح المخاطر؛ الأفضل تكامل رسمي محدود الصلاحيات وموافقة بشرية بدل تسليم كلمة المرور الأساسية.",
+      "audience": "مستخدمو الخدمات المالية ومطورو الوكلاء وفرق الأمن.",
+      "nextSteps": [
+        "لا تضع كلمة مرور مصرفية داخل محادثة أو ملف إعدادات لوكيل.",
+        "تحقق من أي تكامل عبر موقع البنك الرسمي.",
+        "راجع سجل العمليات واطلب تأكيدًا بشريًا قبل إجراء مالي."
+      ],
+      "limitations": "قُرئ تقرير TechCrunch؛ ينقل تحذيرًا من البنك ولا يثبت وقوع اختراق أو عدد حوادث.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — Bank of America warns against sharing credentials",
+          "url": "https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant/"
+        }
+      ],
+      "reviewedAt": "2026-10-27T23:44:00+00:00",
+      "url": "https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant/"
+    },
+    "f74f3a0c358e9a1dab": {
+      "titleAr": "هيكل حوكمة Anthropic يوزع النفوذ بين المؤسسين وصندوق المنفعة العامة",
+      "summaryAr": "يشرح تقرير TechCrunch بنية حوكمة Anthropic في سياق طرحها العام: شركة منفعة عامة، وصندوق طويل الأجل يختار أغلبية من أعضاء المجلس، وفئة أسهم خاصة تمنح المؤسسين مجتمعين 50.1% من قوة التصويت وفق التقرير. هذه تفاصيل من تغطية صحفية للإفصاحات وليست توقعًا لسلوك الإدارة مستقبلًا.",
+      "whyItMatters": "الحوكمة تحدد من يراقب قرارات السلامة ومن يستطيع مساءلة الإدارة، وهي مهمة بقدر التصريحات العامة عن الرسالة.",
+      "audience": "متابعو حوكمة الذكاء الاصطناعي والباحثون في السلامة والسياسات المؤسسية.",
+      "nextSteps": [
+        "اقرأ الإفصاح الأصلي عند توفره.",
+        "ميّز بين الملكية الاقتصادية وقوة التصويت وحقوق تعيين المجلس.",
+        "تابع تغيّر عضوية الصندوق والمجلس."
+      ],
+      "limitations": "قُرئ تقرير TechCrunch؛ لا يمكن التنبؤ بتأثير الهيكل عمليًا قبل اختبار قراراته عبر الزمن. ليست نصيحة استثمارية.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — Who’s really in charge at Anthropic after the IPO?",
+          "url": "https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo/"
+        }
+      ],
+      "reviewedAt": "2026-10-27T23:44:00+00:00",
+      "url": "https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo/"
+    },
+    "7d96db2af61bf089b0": {
+      "titleAr": "Hex تعلن Hex 4.0 وجولة تمويل بقيمة 100 مليون دولار",
+      "summaryAr": "أعلنت Hex عن إعادة بناء منصتها للتحليلات تحت اسم Hex 4.0 وجولة تمويل بقيمة 100 مليون دولار عند تقييم معلن قدره 1.2 مليار دولار. تصف الشركة التوجه بأنه بيئة عمل للتحليلات تعتمد على الكود والوكلاء مع ضوابط وسياق للنتائج؛ التمويل ومزايا المنتج كما أعلنتها الشركة.",
+      "whyItMatters": "كلما زاد اعتماد التحليل على الوكلاء ازدادت أهمية تتبع مصدر البيانات والصلاحيات وإمكانية إعادة إنتاج التقارير.",
+      "audience": "محللو البيانات ومهندسو التحليلات وفرق ذكاء الأعمال.",
+      "nextSteps": [
+        "تحقق من الميزات المتاحة فعليًا في الخطة التي تستخدمها.",
+        "اختبر سير عمل على بيانات غير حساسة.",
+        "قيّم الصلاحيات ومصدر البيانات وإمكانية مراجعة الكود الناتج."
+      ],
+      "limitations": "المصدر إعلان الشركة؛ لا يقدم مقارنة مستقلة تثبت تفوق المنتج على البدائل.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Hex — A new era for Hex; Hex 4.0 and $100M financing",
+          "url": "https://hex.tech/blog/hex-new-era/"
+        }
+      ],
+      "reviewedAt": "2026-10-27T23:44:00+00:00",
+      "url": "https://hex.tech/blog/hex-new-era/"
+    },
+    "b65c14d25885807af4": {
+      "titleAr": "مشروع CFSG يعرض صياغة رسمية لتصنيف الزمر البسيطة المنتهية بلغة Lean",
+      "summaryAr": "تعرض صفحة CFSG in Lean صياغة برهان تصنيف الزمر البسيطة المنتهية داخل Lean كي يتحقق النظام من الخطوات المنطقية، مع خريطة للبرهان ومراجع مرتبطة به. الفائدة جعل البرهان قابلًا للفحص الآلي، لا إلغاء الحاجة إلى فهم السياق الرياضي ومراجعة المجتمع.",
+      "whyItMatters": "البرهان الرسمي يساعد على كشف الفجوات المنطقية ويجعل النتائج الكبيرة قابلة للتتبع، لكنه يتطلب مهارات في البرهان التفاعلي.",
+      "audience": "طلاب الرياضيات وLean وباحثو المنطق والطرق الرسمية.",
+      "nextSteps": [
+        "استكشف خريطة البرهان قبل فتح الملفات الكبيرة.",
+        "تعلّم قراءة التعريفات واللمّات عبر أمثلة صغيرة.",
+        "ارجع إلى الأوراق لفهم النطاق والحدود."
+      ],
+      "limitations": "قُرئت صفحة المشروع وخريطة البرهان؛ أرقام الحجم لقطة قد تتغير، ولم أنفذ Lean محليًا.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "CFSG in Lean — official project overview",
+          "url": "https://cfsg.axiommath.ai/"
+        },
+        {
+          "title": "CFSG in Lean — proof map",
+          "url": "https://cfsg.axiommath.ai/proof-map"
+        }
+      ],
+      "reviewedAt": "2026-10-27T23:44:00+00:00",
+      "url": "https://cfsg.axiommath.ai/"
+    },
+    "7111ef88cef63a4359": {
+      "titleAr": "ثغرة في EDK II قد تؤثر في بعض بيئات الإقلاع الشبكي لخوادم UEFI",
+      "summaryAr": "يصف تقرير Ars Technica ثغرة CVE-2026-97631 في مكوّن من EDK II يُستخدم أثناء الإقلاع الشبكي، وقد تسبب تلفًا في الذاكرة قبل تحميل نظام التشغيل. لا يعني العنوان أن كل خادم معرض؛ يرتبط الخطر بإصدارات وتكوينات تستخدم المكوّن ووظائف PXE.",
+      "whyItMatters": "قد تتطلب معالجة ثغرات البرامج الثابتة تحديثًا من مصنّع الجهاز، وقد يستغرق تحديث أسطول خوادم وقتًا أطول من تحديث تطبيق.",
+      "audience": "مسؤولو الأنظمة ومراكز البيانات وفرق أمن الأجهزة.",
+      "nextSteps": [
+        "تحقق من تنبيه مصنّع الخادم وإصدار UEFI.",
+        "حدد الأجهزة التي تستخدم الإقلاع الشبكي.",
+        "طبّق تحديثات المورّد أو التخفيفات الموصى بها بعد تقييم الأثر."
+      ],
+      "limitations": "قُرئ تقرير Ars Technica؛ تختلف قابلية التأثر حسب التنفيذ والتهيئة. لم أختبر جهازًا أو أراجع كل نشرات المورّدين.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Ars Technica — Code-execution flaw in UEFI firmware",
+          "url": "https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/"
+        },
+        {
+          "title": "TianoCore EDK II — official repository",
+          "url": "https://github.com/tianocore/edk2"
+        }
+      ],
+      "reviewedAt": "2026-10-27T23:44:00+00:00",
+      "url": "https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/"
+    },
+    "09eadcf287390aefab": {
+      "titleAr": "تجربة إنتاجية مع Dioxus تكشف مكاسب Rust وتكلفة بناء WebAssembly",
+      "summaryAr": "يصف مطوّر سنة من استخدام Dioxus في منتجات حقيقية: مشاركة الأنواع والمنطق عبر Rust مع بناء منفصل للخادم وWebAssembly في المتصفح. ويذكر زمن بناء طويلًا في CI لديه وبعض الحاجة إلى JavaScript وأدوات إضافية. الأرقام تجربة مشروع واحد وليست معيارًا عامًا للإطار.",
+      "whyItMatters": "اختيار إطار واجهة لا يتعلق بسرعة أول شاشة فقط؛ زمن البناء وذاكرة CI وتعقيد الأدوات جزء من التكلفة الكلية.",
+      "audience": "مطورو Rust وفرق الويب ومن يقيّم WebAssembly.",
+      "nextSteps": [
+        "أنشئ نموذجًا صغيرًا يقيس زمن البناء محليًا وفي CI.",
+        "احسب أهداف البناء والأدوات الإضافية.",
+        "قارن الصيانة ببديل ويب على الميزة نفسها."
+      ],
+      "limitations": "قُرئت التدوينة الأصلية، لكنها تجربة فريق واحد؛ لا تعمم أزمنة البناء على كل مشروع.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "OXIDT — One year of Dioxus fullstack in production",
+          "url": "https://oxidt.com/blog/one-year-of-dioxus-fullstack-in-production-the-good-the-painful"
+        }
+      ],
+      "reviewedAt": "2026-10-27T23:44:00+00:00",
+      "url": "https://oxidt.com/blog/one-year-of-dioxus-fullstack-in-production-the-good-the-painful"
+    },
+    "578f4a1cc2a6a4ecc1": {
+      "titleAr": "جدل حول إتاحة نتائج OpenAI البحثية للتحقق المستقل",
+      "summaryAr": "تصف تغطية The Verge اختلاف طريقة نشر نتائج أعلنتها OpenAI في الرياضيات وعلوم الحاسوب والفيزياء، وتذكر انتقاد باحثين لإتاحة بعض المواد لمجموعة محدودة بدل نشر ما يكفي للتدقيق العام. لم أقرأ المقال كاملًا؛ لذا أعرض ذلك بوصفه خلاصة التغطية لا حكمًا مستقلًا على صحة النتائج.",
+      "whyItMatters": "قيمة الاكتشاف العلمي تعتمد على إمكان التحقق وإعادة الإنتاج، خصوصًا حين يصعب فحص النتائج يدويًا.",
+      "audience": "الباحثون وطلاب الدراسات العليا ومتابعو النشر العلمي.",
+      "nextSteps": [
+        "افصل بين إعلان النتيجة وإتاحة البرهان والبيانات.",
+        "ابحث عن ورقة أو برهان رسمي قابل للمراجعة.",
+        "لا تعتبر الإعلان أو النقد الصحفي بديلًا عن التحقق."
+      ],
+      "limitations": "basis=metadata: اعتمدت على بيانات المقال وملخص التغطية المتاح، ولم أقرأ نص The Verge كاملًا.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "The Verge — Researchers are getting tired of OpenAI gatekeeping its breakthroughs",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics"
+        },
+        {
+          "title": "OpenAI — Building scientific understanding with academic communities",
+          "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/"
+        }
+      ],
+      "reviewedAt": "2026-10-27T23:44:00+00:00",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics"
+    },
+    "ebfe71ec9852c66d30": {
+      "titleAr": "Tailscale تنشر تحديثًا بشأن مراجعة ثغرات SSH وإصلاحاتها",
+      "summaryAr": "يشير رابط Tailscale الرسمي في التغذية إلى تحديث تحقيق ومعالجة متعلق بميزة Tailscale SSH. ويذكر تقرير الباحث الذي نشر تفاصيل Tailworm عدة نتائج أمنية وإصلاحات قيد الإعداد وقت تحديث التقرير. لم أتمكن من فتح نص صفحة Tailscale الأصلية مباشرة، لذلك لا أؤكد رقم إصدار مُصلح أو حالة الإصدار النهائية.",
+      "whyItMatters": "الوصول البعيد يحتاج إلى متابعة الإعلانات الرسمية وتحديث العميل ومراجعة الصلاحيات؛ وجود شبكة خاصة لا يلغي كل المخاطر.",
+      "audience": "مسؤولو الأنظمة ومستخدمو Tailscale SSH وفرق أمن البنية التحتية.",
+      "nextSteps": [
+        "تحقق من أحدث إصدار ونطاق التأثر في إعلان Tailscale الرسمي.",
+        "راجع قواعد الوصول وصلاحيات SSH.",
+        "اتبع إرشادات المورّد ووثّق الأجهزة التي تحتاج معالجة."
+      ],
+      "limitations": "basis=metadata: تعذر فتح صفحة Tailscale الأصلية؛ استُخدم تقرير الباحث كمصدر ثانوي ولا تؤكد البطاقة تأثر جميع التكوينات.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "Tailscale — SSH investigation and remediation update",
+          "url": "https://tailscale.com/ssh-investigation-update"
+        },
+        {
+          "title": "Tailworm — researcher report",
+          "url": "https://tailworm.com/"
+        }
+      ],
+      "reviewedAt": "2026-10-27T23:44:00+00:00",
+      "url": "https://tailscale.com/ssh-investigation-update"
+    },
+    "e72043cebfe32fc44f": {
+      "titleAr": "رسائل «الرقم الخاطئ» قد تكون مدخلًا للاحتيال عبر الرسائل النصية",
+      "summaryAr": "عنوان Engadget ووصف التغذية يتناولان رسائل تبدأ كأن المرسل أخطأ الرقم ثم يحاول مواصلة الحديث. لم أتمكن من فتح المقال الأصلي؛ وتوضح لجنة التجارة الفيدرالية أن بعض الرسائل غير المتوقعة تُستخدم لجذب الرد أو دفع المستلم إلى فتح رابط. النصائح هنا مستندة إلى الإرشاد الرسمي لا إلى ادعاء قراءة المقال كاملًا.",
+      "whyItMatters": "قد يؤكد الرد على رسالة مجهولة أن الرقم نشط ويفتح بابًا لمحاولة لاحقة؛ وقد تقود الروابط إلى صفحات تطلب بيانات شخصية أو مالية.",
+      "audience": "مستخدمو الهواتف والطلاب والأسر والمهتمون بالسلامة الرقمية.",
+      "nextSteps": [
+        "لا ترد على الرسائل المفاجئة ولا تفتح روابطها.",
+        "تحقق من الادعاءات عبر موقع أو رقم تعرفه مسبقًا.",
+        "أبلغ عن الرسائل المزعجة عبر جهازك أو مزود الخدمة."
+      ],
+      "limitations": "basis=metadata: لم يُقرأ نص Engadget الأصلي؛ الإرشادات العامة مستندة إلى FTC ولا تحدد معدل انتشار هذا النوع.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "Engadget — What are wrong number text scams?",
+          "url": "https://www.engadget.com/2296048/wrong-number-text-scams-how-avoid/"
+        },
+        {
+          "title": "FTC Consumer Advice — Unexpected text scam",
+          "url": "https://consumer.ftc.gov/consumer-alerts/2025/04/unexpected-text-scam"
+        }
+      ],
+      "reviewedAt": "2026-10-27T23:44:00+00:00",
+      "url": "https://www.engadget.com/2296048/wrong-number-text-scams-how-avoid/"
+    },
+    "92022b258211b4ce35": {
+      "titleAr": "InvokeAI — بيئة محلية لتوليد الصور وتحريرها",
+      "summaryAr": "InvokeAI مشروع مفتوح المصدر بواجهة ويب محلية لتوليد الصور وتحريرها، وCanvas موحدة وإدارة للنماذج والمعرض وسير العمل بالعُقد. ترخيص التطبيق Apache-2.0، لكن تراخيص الأوزان والنماذج يجب فحصها منفصلة، وبعض النماذج تتطلب API خارجيًا.",
+      "whyItMatters": "يجمع التوليد والتحرير وإعادة استخدام سير العمل؛ يمكن تشغيل مسارات محلية لكن السرعة والذاكرة تختلف باختلاف النموذج والعتاد.",
+      "audience": "المصممون ومطورو الوسائط وطلاب الذكاء الاصطناعي.",
+      "overview": "خادم محلي بواجهة ويب مع Canvas للتحرير وإدارة النماذج والمعرض ومحرر workflows بالعُقد. يدعم عدة عائلات نماذج، وبعضها API-only.",
+      "requirements": "نزّل Launcher الرسمي. يلزم جهاز متوافق ومساحة للنماذج؛ احتياج GPU/VRAM يعتمد على النموذج. المحلي يستهلك التخزين والطاقة، والسحابي يضيف تكلفة متغيرة. ترخيص التطبيق Apache-2.0 لكن الأوزان قد تختلف. بدائل للمقارنة: ComfyUI وAUTOMATIC1111.",
+      "quickStart": "1) نزّل Launcher الرسمي المناسب لنظامك. 2) ثبّت التطبيق وشغّل الواجهة المحلية. 3) نزّل نموذجًا تسمح رخصته باستخدامك. 4) أنشئ صورة تجريبية. 5) جرّب Canvas على صورة تملك حق استخدامها. 6) احفظ الإعدادات وراجع شروط توزيع النتائج.",
+      "limitations": "راجعت README وLICENSE والتوثيق ولم أشغّل البرنامج. تختلف متطلبات الذاكرة والسرعة بين النماذج؛ وفتح المصدر لا يعني أن كل الأوزان أو خدمات API مجانية.",
+      "nextSteps": [
+        "ابدأ بنموذج مرخص ومهمة صغيرة.",
+        "سجل اسم النموذج وإصداره وإعداداته.",
+        "راجع رخصة الأوزان قبل إعادة التوزيع."
+      ],
+      "reviewedAt": "2026-10-27T23:44:00+00:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "InvokeAI README",
+          "url": "https://github.com/invoke-ai/InvokeAI"
+        },
+        {
+          "title": "InvokeAI documentation",
+          "url": "https://docs.invoke.ai/"
+        },
+        {
+          "title": "InvokeAI LICENSE",
+          "url": "https://github.com/invoke-ai/InvokeAI/blob/main/LICENSE"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "سجل ترخيص لكل نموذج",
+          "problem": "قد يختلط ترخيص التطبيق بترخيص الأوزان.",
+          "approach": "اربط كل نموذج بإصداره ومصدره ورخصته.",
+          "stack": "Python, JSON Schema",
+          "steps": [
+            "حدد الحقول المطلوبة.",
+            "أضف مدققًا للترخيص والإصدار.",
+            "صدّر البيان مع سير العمل."
+          ],
+          "metric": "نسبة النماذج ذات بيانات ترخيص مكتملة",
+          "difficulty": "متوسط — 3–5 أيام",
+          "risks": "تختلف رخص النماذج؛ لا تستنتج السماح التجاري من اسم العائلة.",
+          "sources": [
+            {
+              "title": "InvokeAI README",
+              "url": "https://github.com/invoke-ai/InvokeAI"
+            },
+            {
+              "title": "InvokeAI docs",
+              "url": "https://docs.invoke.ai/"
+            }
+          ]
+        },
+        {
+          "title": "تصدير سير عمل قابل لإعادة الإنتاج",
+          "problem": "قد تضيع الإعدادات ومصدر النموذج مع الصورة.",
+          "approach": "احفظ النموذج والبذرة والإعدادات وإصدار التطبيق مع النتيجة.",
+          "stack": "Python, JSON",
+          "steps": [
+            "حدد أقل إعدادات لازمة.",
+            "أضف تصديرًا بجانب النتيجة.",
+            "أعد تشغيل عينة وقارنها."
+          ],
+          "metric": "نسبة النتائج القابلة لإعادة إنتاج إعداداتها",
+          "difficulty": "متوسط — 4–6 أيام",
+          "risks": "قد تتغير النتائج بين إصدارات النماذج.",
+          "sources": [
+            {
+              "title": "InvokeAI README",
+              "url": "https://github.com/invoke-ai/InvokeAI"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مختبر مقارنة نماذج صور محلية",
+          "problem": "المقارنات قد تستخدم إعدادات غير متسقة.",
+          "approach": "شغّل الأوصاف نفسها على نماذج مرخصة وقارن الجودة والزمن.",
+          "stack": "Python, InvokeAI, CSV",
+          "steps": [
+            "اختر ثلاثة نماذج مرخصة.",
+            "ثبت الأوصاف والإعدادات.",
+            "سجل الزمن وتقييمًا بشريًا."
+          ],
+          "metric": "جدول مقارنة قابل لإعادة الإنتاج",
+          "difficulty": "متوسط — 3–6 أيام",
+          "risks": "المقارنة غير عادلة إذا اختلفت الإعدادات أو التراخيص.",
+          "sources": [
+            {
+              "title": "InvokeAI README",
+              "url": "https://github.com/invoke-ai/InvokeAI"
+            }
+          ]
+        },
+        {
+          "title": "مولد خلفيات تعليمية مع طبقة نص منفصلة",
+          "problem": "النص داخل الصور المولدة قد يكون مشوهًا.",
+          "approach": "ولّد الخلفية ثم أضف العناوين بنص HTML/SVG.",
+          "stack": "InvokeAI, SVG, HTML",
+          "steps": [
+            "حدد قالبًا خاليًا من النص.",
+            "ولّد الخلفية واحفظ المصدر.",
+            "أضف النص يدويًا وراجعه."
+          ],
+          "metric": "نسبة البطاقات المجتازة لمراجعة النص والمصدر",
+          "difficulty": "متوسط — 3–5 أيام",
+          "risks": "راجع الخلفية قبل الاستخدام التعليمي.",
+          "sources": [
+            {
+              "title": "InvokeAI README",
+              "url": "https://github.com/invoke-ai/InvokeAI"
+            },
+            {
+              "title": "InvokeAI docs",
+              "url": "https://docs.invoke.ai/"
+            }
+          ]
+        }
+      ],
+      "url": "https://github.com/invoke-ai/InvokeAI"
+    },
+    "7c423a3fdda80e9dca": {
+      "titleAr": "p5.js — مكتبة JavaScript للرسم التفاعلي والفن التوليدي في المتصفح",
+      "summaryAr": "p5.js مكتبة مفتوحة المصدر لإنشاء رسومات وحركة وصوت وتفاعلات. يقدم README أمثلة ودليلًا رسميًا ويركز على سهولة الوصول. ترخيص المكتبة LGPL-2.1؛ راجع شروطه عند إعادة توزيعها أو تعديلها.",
+      "whyItMatters": "تحول المفاهيم الرياضية والعلمية إلى تجارب مرئية في المتصفح دون خادم أو API مدفوع، وهي مناسبة للتعليم والنماذج الأولية.",
+      "audience": "المتعلمون والمدرسون والمصممون ومطورو التجارب التفاعلية.",
+      "overview": "تعمل المكتبة داخل المتصفح باستخدام JavaScript وCanvas؛ يبدأ النمط الشائع بـsetup() للتهيئة وdraw() للتحديث المتكرر. يمكن البدء من محرر الويب أو تنزيل المكتبة وربطها بصفحة HTML.",
+      "requirements": "يكفي متصفح حديث ومحرر p5.js عبر الويب للبداية؛ محليًا استخدم HTML وsketch.js وخادمًا محليًا أو نسخة المكتبة. لا توجد رسوم خدمة للنواة، لكن المحرر عبر الإنترنت يحتاج اتصالًا وقد تكلف الاستضافة. الترخيص LGPL-2.1؛ البدائل Processing وThree.js وPixiJS حسب نوع الرسم.",
+      "quickStart": "1) افتح محرر p5.js وأنشئ مشروعًا. 2) ابدأ بـsetup() وcreateCanvas() ثم draw(). 3) أضف دائرة تستجيب إلى mouseX وmouseY. 4) احفظ المشروع وغيّر الأبعاد. 5) محليًا اربط إصدارًا محددًا من المكتبة وsketch.js. 6) اختبر الوصول بلوحة المفاتيح وشاشة اللمس.",
+      "limitations": "راجعت README وlicense.txt ودليل البدء ولم أشغّل مشروعًا محليًا. الأداء يعتمد على المتصفح والجهاز وقد تتطلب بعض الإضافات فحص التوافق.",
+      "nextSteps": [
+        "ابدأ بمثال صغير.",
+        "ثبّت إصدار المكتبة في المشروع المنشور.",
+        "اختبر لوحة المفاتيح وشاشة اللمس."
+      ],
+      "reviewedAt": "2026-10-27T23:44:00+00:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "p5.js README",
+          "url": "https://github.com/processing/p5.js"
+        },
+        {
+          "title": "p5.js getting started",
+          "url": "https://p5js.org/tutorials/get-started/"
+        },
+        {
+          "title": "p5.js license.txt",
+          "url": "https://github.com/processing/p5.js/blob/main/license.txt"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "قوالب عربية ميسّرة",
+          "problem": "قد تكون الأمثلة الأولى أقل وضوحًا لمن يفضل الشرح العربي.",
+          "approach": "أنشئ أمثلة وتعليقات عربية مع إبقاء الكود صالحًا.",
+          "stack": "JavaScript, p5.js, HTML",
+          "steps": [
+            "اختر خمسة أمثلة.",
+            "أضف شرحًا دون تغيير أسماء الدوال.",
+            "اختبرها مع مبتدئين."
+          ],
+          "metric": "نسبة المتعلمين القادرين على تعديل المثال",
+          "difficulty": "سهل إلى متوسط — 3–5 أيام",
+          "risks": "لا تترجم أسماء الدوال أو تكسر الكود.",
+          "sources": [
+            {
+              "title": "p5.js README",
+              "url": "https://github.com/processing/p5.js"
+            },
+            {
+              "title": "p5.js tutorials",
+              "url": "https://p5js.org/tutorials/"
+            }
+          ]
+        },
+        {
+          "title": "قياس أداء الرسم على أجهزة مختلفة",
+          "problem": "قد تتراجع الرسوم على هواتف أضعف.",
+          "approach": "قِس معدل الإطارات وزمن الإطار على أجهزة معلنة.",
+          "stack": "JavaScript, p5.js, Performance API",
+          "steps": [
+            "حدد مشاهد ثابتة.",
+            "سجل الأداء بأحجام شاشة مختلفة.",
+            "انشر النتائج والقيود."
+          ],
+          "metric": "معدل الإطارات الوسيط على مجموعة أجهزة",
+          "difficulty": "متوسط — 3–6 أيام",
+          "risks": "تختلف النتائج حسب المتصفح والطاقة.",
+          "sources": [
+            {
+              "title": "p5.js README",
+              "url": "https://github.com/processing/p5.js"
+            },
+            {
+              "title": "p5.js reference",
+              "url": "https://p5js.org/reference/"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مختبر بصري للرياضيات والفيزياء",
+          "problem": "يصعب تخيل بعض المفاهيم من المعادلات وحدها.",
+          "approach": "اربط المتغيرات برسوم تفاعلية وشرح منفصل.",
+          "stack": "JavaScript, p5.js",
+          "steps": [
+            "اختر مفهومًا واحدًا.",
+            "اربط عناصر التحكم بالمتغيرات.",
+            "قارن المخرجات بمراجع."
+          ],
+          "metric": "دقة المخرجات وسهولة الفهم",
+          "difficulty": "متوسط — 4–7 أيام",
+          "risks": "أظهر الوحدات والمقياس لتجنب التضليل.",
+          "sources": [
+            {
+              "title": "p5.js tutorials",
+              "url": "https://p5js.org/tutorials/"
+            },
+            {
+              "title": "p5.js reference",
+              "url": "https://p5js.org/reference/"
+            }
+          ]
+        },
+        {
+          "title": "معرض فن توليدي قابل للوصول",
+          "problem": "قد يصعب استخدام الرسوم دون فأرة أو رؤية كاملة.",
+          "approach": "أضف وصفًا نصيًا وتحكمًا بلوحة المفاتيح ووضع حركة مخففة.",
+          "stack": "p5.js, HTML, CSS",
+          "steps": [
+            "اختر أعمالًا مرخصة.",
+            "أضف وصفًا وأزرار تشغيل وإيقاف.",
+            "اختبر التنقل وتقليل الحركة."
+          ],
+          "metric": "نسبة الأعمال التي تجتاز فحص الوصول",
+          "difficulty": "متوسط — 4–6 أيام",
+          "risks": "الوصف النصي لا يعوض كل التفاصيل؛ اطلب مراجعة مستخدمين.",
+          "sources": [
+            {
+              "title": "p5.js accessibility",
+              "url": "https://p5js.org/contribute/access"
+            },
+            {
+              "title": "p5.js README",
+              "url": "https://github.com/processing/p5.js"
+            }
+          ]
+        }
+      ],
+      "religious": [
+        {
+          "title": "عارض تعليمي للزخارف الهندسية في العمارة الإسلامية",
+          "problem": "تحتاج الدروس إلى شرح التناظر دون توليد نصوص دينية غير دقيقة.",
+          "approach": "ارسم أنماطًا هندسية غير نصية مع شرح التحويلات والمراجع؛ لا تولّد آيات أو أحاديث.",
+          "stack": "JavaScript, p5.js, SVG",
+          "steps": [
+            "حدد نمطًا ومصدره.",
+            "نمذج التكرار والتحويلات.",
+            "أضف مراجع راجعها إنسان ثم اختبر الهاتف."
+          ],
+          "metric": "صحة التحويلات وقابلية فهم الشرح",
+          "difficulty": "متوسط — 4–7 أيام",
+          "risks": "لا تنسب نمطًا لحقبة دون مصدر ولا تولّد نصوصًا مقدسة.",
+          "sources": [
+            {
+              "title": "p5.js tutorials",
+              "url": "https://p5js.org/tutorials/"
+            },
+            {
+              "title": "Wolfram MathWorld — Wallpaper Groups",
+              "url": "https://mathworld.wolfram.com/WallpaperGroup.html"
+            }
+          ]
+        }
+      ],
+      "url": "https://github.com/processing/p5.js"
+    }
+  }
+}
