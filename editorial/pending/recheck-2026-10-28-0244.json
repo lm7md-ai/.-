@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-27T23:44:00Z",
+  "baseMain": "e11fba4c30a091fbeb0a7c9d9373e46311360c83",
+  "scope": "إعادة فحص editorial/incoming قبل إنتاج دفعة جديدة، بمطابقة id وurl حرفيًا مع feed وeditorial وseen؛ لم تُعدّل feed.json أو seen.json.",
+  "incoming": {
+    "files": 34,
+    "rows": 301,
+    "uniqueIds": 300,
+    "knownDuplicate": {
+      "id": "853c63f738f0cecf3b",
+      "occurrences": 2,
+      "note": "معرّف مكرر معروف في تقارير التدقيق السابقة؛ لم تُنشأ هوية بديلة."
+    }
+  },
+  "classification": {
+    "exactCurrentFeedRows": 212,
+    "exactCurrentFeedRowsAlreadyImported": 212,
+    "exactCurrentFeedRowsMissingEditorial": 0,
+    "historicalRowsNotInCurrentFeedButAlreadyInEditorial": 86,
+    "seenButAbsentFromCurrentFeedAndEditorial": 3,
+    "unmatchedNotSeenAndNotImported": 0,
+    "idUrlMismatches": 0,
+    "urlMatchingDifferentId": 0,
+    "calendarExpiryConfirmed": 0,
+    "note": "الـ86 صفًا موجودة في الإثراء لكن معرفاتها خارج لقطة التغذية الحالية؛ لم تُحذف ولم تُصنّف منقضية بالتاريخ دون دليل. السجلات الثلاثة أدناه موجودة في seen وفي incoming لكنها خارج feed/editorial الحاليين."
+  },
+  "pending": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "title": "NVIDIA OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "inIncoming": true,
+      "inSeen": true,
+      "inFeed": false,
+      "inEditorial": false,
+      "decision": "لا استيراد؛ يلزم أن تعيد التغذية الرسمية هذا المعرف والرابط قبل validate/import."
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "title": "Canva Craft",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "inIncoming": true,
+      "inSeen": true,
+      "inFeed": false,
+      "inEditorial": false,
+      "decision": "لا استيراد؛ لا تُنشأ هوية بديلة ولا يُغيّر الرابط."
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "title": "1Password agent sign-in",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "inIncoming": true,
+      "inSeen": true,
+      "inFeed": false,
+      "inEditorial": false,
+      "decision": "لا استيراد؛ لا تُنشأ هوية بديلة ولا يُغيّر الرابط."
+    }
+  ],
+  "newBatch": {
+    "file": "editorial/incoming/nabdh-editorial-2026-10-28-0244.json",
+    "news": 9,
+    "projects": 2,
+    "total": 11,
+    "basis": {
+      "article": 6,
+      "metadata": 3,
+      "readme": 2
+    },
+    "exactFeedIdUrlMatches": 11,
+    "duplicateIds": 0,
+    "proposals": {
+      "improvements": 4,
+      "spinoffs": 4,
+      "religious": 1,
+      "testEvidenceClaims": 0
+    }
+  },
+  "commands": {
+    "officialValidate": "لم يُنفذ محليًا لعدم توفر نسخة مستودع محلية قابلة للتشغيل؛ سيُنفذ في PR CI على site/data/editorial.json.",
+    "officialImport": "لم يُنفذ محليًا؛ أُنشئ دمج بنيوي مكافئ يحافظ على كل السجلات والحقول القديمة، ثم يجب أن يمر عبر check.yml.",
+    "unitTests": "python -m unittest discover -s tests -v لم يُنفذ محليًا؛ بانتظار PR CI.",
+    "feedAndSeenChangedInThisPR": false
+  },
+  "publication": {
+    "state": "branch-only; pending PR validation/merge/deploy",
+    "note": "لا تُعد السجلات منشورة اعتمادًا على commit وحده. يلزم نجاح check.yml، الدمج، ثم التحقق من حزمة Pages والاستجابة العامة."
+  }
+}
