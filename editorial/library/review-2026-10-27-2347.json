@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-27T20:47:00+00:00",
+  "measuredAt": "2026-10-27T20:47:00+00:00",
+  "published": false,
+  "purpose": "لقطة بحثية تراكمية مستقلة؛ لا يستهلكها الموقع مباشرة ولا تعدّل تصميمه أو شيفرته.",
+  "measurementMethod": "GitHub REST repository metadata; stars/forks تراكمية وليست نموًا يوميًا. أُخذت اللقطة في 2026-10-27T20:47:00Z.",
+  "historicalCatalog": {
+    "path": "site/data/library.json",
+    "entries": 31,
+    "archivedKnown": [
+      "atom/atom",
+      "angular/angular.js"
+    ],
+    "note": "لم أعد كتابة الكتالوج التاريخي؛ أُضيفت هذه اللقطة للمراجعة فقط."
+  },
+  "previousEight": [
+    {
+      "name": "Gradio",
+      "repo": "gradio-app/gradio",
+      "url": "https://github.com/gradio-app/gradio",
+      "stars": 43915,
+      "forks": 3650,
+      "license": "Apache-2.0",
+      "defaultBranch": "main",
+      "archived": false,
+      "pushedAt": "2026-10-27T19:13:01Z",
+      "status": "مستمر",
+      "alternatives": [
+        "Streamlit",
+        "Chainlit",
+        "Panel"
+      ]
+    },
+    {
+      "name": "Claude-Mem",
+      "repo": "thedotmack/claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "stars": 103682,
+      "forks": 9149,
+      "license": "Apache-2.0",
+      "defaultBranch": "main",
+      "archived": false,
+      "pushedAt": "2026-10-27T20:15:45Z",
+      "status": "مستمر",
+      "alternatives": [
+        "Letta",
+        "Mem0",
+        "Zep"
+      ]
+    },
+    {
+      "name": "Ultralytics",
+      "repo": "ultralytics/ultralytics",
+      "url": "https://github.com/ultralytics/ultralytics",
+      "stars": 62909,
+      "forks": 11923,
+      "license": "AGPL-3.0",
+      "defaultBranch": "main",
+      "archived": false,
+      "pushedAt": "2026-10-27T19:16:39Z",
+      "status": "مستمر؛ راجع أثر AGPL قبل التوزيع",
+      "alternatives": [
+        "MMDetection",
+        "Detectron2",
+        "torchvision"
+      ]
+    },
+    {
+      "name": "MoneyPrinterTurbo",
+      "repo": "harry0703/MoneyPrinterTurbo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "stars": 135804,
+      "forks": 21558,
+      "license": "MIT",
+      "defaultBranch": "main",
+      "archived": false,
+      "pushedAt": "2026-10-27T10:13:32Z",
+      "status": "مستمر",
+      "alternatives": [
+        "خط FFmpeg/TTS مخصص",
+        "Remotion",
+        "أدوات فيديو مفتوحة المصدر"
+      ]
+    },
+    {
+      "name": "AI-For-Beginners",
+      "repo": "microsoft/AI-For-Beginners",
+      "url": "https://github.com/microsoft/AI-For-Beginners",
+      "stars": 70298,
+      "forks": 13654,
+      "license": "MIT",
+      "defaultBranch": "main",
+      "archived": false,
+      "pushedAt": "2026-10-23T23:55:14Z",
+      "status": "مستمر؛ آخر دفع أقدم من بقية المشاريع في هذه اللقطة",
+      "alternatives": [
+        "fast.ai",
+        "Dive into Deep Learning",
+        "Hugging Face course"
+      ]
+    },
+    {
+      "name": "Bruno",
+      "repo": "usebruno/bruno",
+      "url": "https://github.com/usebruno/bruno",
+      "stars": 47878,
+      "forks": 3037,
+      "license": "MIT",
+      "defaultBranch": "main",
+      "archived": false,
+      "pushedAt": "2026-10-27T16:18:41Z",
+      "status": "مستمر",
+      "alternatives": [
+        "Postman",
+        "Insomnia",
+        "HTTPie"
+      ]
+    },
+    {
+      "name": "Keras",
+      "repo": "keras-team/keras",
+      "url": "https://github.com/keras-team/keras",
+      "stars": 64392,
+      "forks": 19807,
+      "license": "Apache-2.0",
+      "defaultBranch": "master",
+      "archived": false,
+      "pushedAt": "2026-10-27T17:38:38Z",
+      "status": "مستمر",
+      "alternatives": [
+        "PyTorch",
+        "JAX",
+        "TensorFlow Core"
+      ]
+    },
+    {
+      "name": "sherpa-onnx",
+      "repo": "k2-fsa/sherpa-onnx",
+      "url": "https://github.com/k2-fsa/sherpa-onnx",
+      "stars": 15550,
+      "forks": 1820,
+      "license": "Apache-2.0",
+      "defaultBranch": "master",
+      "archived": false,
+      "pushedAt": "2026-10-27T12:50:50Z",
+      "status": "مستمر",
+      "alternatives": [
+        "whisper.cpp",
+        "Vosk",
+        "ONNX Runtime pipelines"
+      ]
+    }
+  ],
+  "newlyEnrichedProjects": [
+    {
+      "name": "LightRAG",
+      "repo": "HKUDS/LightRAG",
+      "url": "https://github.com/HKUDS/LightRAG",
+      "stars": 40370,
+      "forks": 5735,
+      "license": "MIT",
+      "defaultBranch": "main",
+      "archived": false,
+      "pushedAt": "2026-10-27T18:08:12Z",
+      "status": "مستمر",
+      "alternatives": [
+        "Microsoft GraphRAG",
+        "Haystack",
+        "LlamaIndex"
+      ],
+      "researchBasis": "README وpyproject.toml وLICENSE وDockerDeployment.md وOfflineDeployment.md وenv.example"
+    },
+    {
+      "name": "Vercel AI SDK",
+      "repo": "vercel/ai",
+      "url": "https://github.com/vercel/ai",
+      "stars": 27546,
+      "forks": 5451,
+      "license": "Apache-2.0 لحزمة packages/ai؛ حقل الترخيص على مستوى المستودع NOASSERTION في API",
+      "defaultBranch": "main",
+      "archived": false,
+      "pushedAt": "2026-10-27T20:44:54Z",
+      "status": "مستمر",
+      "alternatives": [
+        "LangChain.js",
+        "Genkit",
+        "SDKs مباشرة من مزودي النماذج"
+      ],
+      "researchBasis": "packages/ai/README.md وpackage.json وLICENSE وAI SDK Core docs"
+    }
+  ],
+  "completeness": {
+    "Gradio": {
+      "id": "9563de7ec1221e077a",
+      "improvements": 2,
+      "spinoffs": 2,
+      "religious": 0,
+      "found": true
+    },
+    "Claude-Mem": {
+      "id": "853c63f738f0cecf3b",
+      "improvements": 2,
+      "spinoffs": 2,
+      "religious": 0,
+      "found": true
+    },
+    "Ultralytics": {
+      "id": "112ba4283cccf5b146",
+      "improvements": 2,
+      "spinoffs": 2,
+      "religious": 0,
+      "found": true
+    },
+    "MoneyPrinterTurbo": {
+      "id": "0604d6a7a7d7afd211",
+      "improvements": 2,
+      "spinoffs": 2,
+      "religious": 0,
+      "found": true
+    },
+    "AI-For-Beginners": {
+      "id": "d4316f8d5082c97897",
+      "improvements": 2,
+      "spinoffs": 2,
+      "religious": 0,
+      "found": true
+    },
+    "Bruno": {
+      "id": "6c62a31152244eb967",
+      "improvements": 2,
+      "spinoffs": 2,
+      "religious": 0,
+      "found": true
+    },
+    "Keras": {
+      "id": "10b7f65af4f5070207",
+      "improvements": 3,
+      "spinoffs": 3,
+      "religious": 0,
+      "found": true
+    },
+    "sherpa-onnx": {
+      "id": "8d397f7a7077f1abc0",
+      "improvements": 3,
+      "spinoffs": 3,
+      "religious": 0,
+      "found": true
+    }
+  },
+  "displayRequirements": [
+    "عرض overview وrequirements وquickStart بوضوح مع إظهار أن basis=readme.",
+    "عرض improvements وspinoffs وreligious في أقسام منفصلة؛ كل بطاقة تعرض title/problem/approach/stack/steps/metric/difficulty/risks/sources.",
+    "لا تعرض المقترحات كميزات موجودة في المشروع، ولا تضع testEvidence ما لم توجد تجربة حقيقية.",
+    "حافظ على ترتيب المقترحات وروابطها، وأظهر حالة الأرشفة والترخيص وتاريخ قياس النجوم والتفرعات.",
+    "هذه متطلبات عرض لمساعد التطوير فقط؛ لم تُجرَ أي تغييرات في الواجهة أو الشيفرة."
+  ]
+}

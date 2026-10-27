@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-27T20:47:00+00:00",
+  "mainSha": "4e4cb64d16c835de29e2f4a1aae690cbe1b0ada7",
+  "audit": {
+    "incomingFileCount": 33,
+    "incomingRows": 287,
+    "uniqueIncomingIds": 286,
+    "duplicateRows": 1,
+    "duplicateId": "853c63f738f0cecf3b",
+    "currentFeedItems": 800,
+    "currentEditorialEntries": 286,
+    "rowsMatchingCurrentFeedAndExactUrl": 207,
+    "rowsImportedButOutsideCurrentFeed": 77,
+    "rowsMissingFromBothFeedAndEditorial": 3,
+    "idUrlMismatches": 0,
+    "confirmedExpired": 0,
+    "needsCorrection": 0,
+    "structuralValidation": {
+      "status": "passed-equivalent-structural-check",
+      "files": 33,
+      "rows": 287,
+      "errors": 0,
+      "officialPythonCliRunLocally": false
+    },
+    "note": "الـ77 خارج التغذية الحالية لكنها موجودة في الإثراء؛ غيابها لا يثبت انتهاء صلاحيتها. لم أوسم أي سجل منقضيًا دون دليل تاريخي مباشر."
+  },
+  "pendingRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "title": "NVIDIA OpenShell",
+      "incomingUrl": "https://github.com/NVIDIA/OpenShell",
+      "presentInFeed": false,
+      "presentInEditorial": false,
+      "action": "لا تستورد؛ انتظر ظهور المعرف والرابط نفسيهما في التغذية أو تصحيح سجل التغذية."
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "title": "Canva Craft",
+      "incomingUrl": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "presentInFeed": false,
+      "presentInEditorial": false,
+      "action": "لا تستورد؛ لا تنشئ هوية بديلة من العنوان."
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "title": "1Password agent sign-in",
+      "incomingUrl": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "presentInFeed": false,
+      "presentInEditorial": false,
+      "action": "لا تستورد؛ لا تنشئ هوية بديلة من العنوان."
+    }
+  ],
+  "latestPublishState": {
+    "lastSuccessfulAt": "2026-10-27T18:31:58+00:00",
+    "lastSuccessfulRun": 40560816677,
+    "latestFailedRun": 40561303189,
+    "failure": "scripts/update_feed.py:537 — TypeError: '<' not supported between instances of 'str' and 'NoneType'",
+    "effect": "اختبارات Python والتحقق وNode نجحت في التشغيل الفاشل، لكن Refresh public feeds فشل وتخطي تجهيز ونشر GitHub Pages؛ لا تعديل للشيفرة أو workflow."
+  },
+  "plannedContent": {
+    "news": 12,
+    "projects": 2,
+    "entries": 14,
+    "allExactFeedIdsAndUrls": true,
+    "oldEditorialRecordsPreserved": true,
+    "feedJsonModified": false,
+    "seenJsonModified": false,
+    "siteCodeOrDesignOrWorkflowModified": false
+  },
+  "officialCommands": {
+    "validate": "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-10-27-2347.json",
+    "import": "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-10-27-2347.json",
+    "tests": "python -m unittest discover -s tests -v",
+    "locallyExecuted": false,
+    "note": "لم تتوفر بيئة Python محلية؛ سيتم اعتماد التحقق الرسمي في CI على ملف editorial.json النهائي، مع فحص بنيوي مكافئ للدفعة الواردة. لا يُدّعى تنفيذ الأوامر محليًا."
+  }
+}
