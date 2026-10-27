@@ -1,0 +1,637 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-27T08:47:37+03:00",
+  "sourceSnapshot": {
+    "mainCommit": "7f343b62dfe1a46aeeb2d9cf63b167444d2471d8",
+    "feedBlobSha": "575afefd3be02eaeb7c8438dc8bc7e5ac62a3ed1",
+    "editorialBlobSha": "93187df4dc1906e9c3b7feafa1c1c317ccaed848",
+    "feedGeneratedAt": "2026-10-27T03:30:52+00:00",
+    "feedItems": 800,
+    "feedNews": 700,
+    "feedProjects": 100,
+    "status": {
+      "lastAttemptAt": "2026-10-27T03:30:52+00:00",
+      "lastSuccessfulAt": "2026-10-27T03:30:52+00:00",
+      "state": "ok",
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://feeds.arstechnica.com/arstechnica/index",
+          "state": "ok",
+          "items": 20,
+          "checkedAt": "2026-10-27T03:30:52+00:00",
+          "seconds": 0.13
+        },
+        {
+          "name": "Engadget",
+          "url": "https://www.engadget.com/rss.xml",
+          "state": "ok",
+          "items": 20,
+          "checkedAt": "2026-10-27T03:30:52+00:00",
+          "seconds": 0.14
+        },
+        {
+          "name": "GitHub Blog",
+          "url": "https://github.blog/feed/",
+          "state": "ok",
+          "items": 10,
+          "checkedAt": "2026-10-27T03:30:52+00:00",
+          "seconds": 0.64
+        },
+        {
+          "name": "GitHub: language:Python topic:machine-learning",
+          "state": "ok",
+          "items": 25
+        },
+        {
+          "name": "GitHub: topic:ai-agents",
+          "state": "ok",
+          "items": 25
+        },
+        {
+          "name": "GitHub: topic:artificial-intelligence",
+          "state": "ok",
+          "items": 25
+        },
+        {
+          "name": "GitHub: topic:developer-tools",
+          "state": "ok",
+          "items": 25
+        },
+        {
+          "name": "GitHub: topic:education",
+          "state": "ok",
+          "items": 25
+        },
+        {
+          "name": "GitHub: topic:rag",
+          "state": "ok",
+          "items": 25
+        },
+        {
+          "name": "GitHub: topic:text-to-speech",
+          "state": "ok",
+          "items": 25
+        },
+        {
+          "name": "Hacker News",
+          "state": "ok",
+          "items": 12
+        },
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/feed.xml",
+          "state": "ok",
+          "items": 19,
+          "checkedAt": "2026-10-27T03:30:52+00:00",
+          "seconds": 0.28
+        },
+        {
+          "name": "Microsoft Research",
+          "url": "https://www.microsoft.com/en-us/research/feed/",
+          "state": "ok",
+          "items": 7,
+          "checkedAt": "2026-10-27T03:30:52+00:00",
+          "seconds": 0.8
+        },
+        {
+          "name": "OpenAI — المصدر الرسمي",
+          "url": "https://openai.com/news/rss.xml",
+          "state": "ok",
+          "items": 34,
+          "checkedAt": "2026-10-27T03:30:52+00:00",
+          "seconds": 0.2
+        },
+        {
+          "name": "Python — المصدر الرسمي",
+          "url": "https://blog.python.org/feeds/posts/default?alt=rss",
+          "state": "ok",
+          "items": 4,
+          "checkedAt": "2026-10-27T03:30:52+00:00",
+          "seconds": 0.13
+        },
+        {
+          "name": "Wired",
+          "url": "https://www.wired.com/feed/rss",
+          "state": "ok",
+          "items": 34,
+          "checkedAt": "2026-10-27T03:30:52+00:00",
+          "seconds": 0.11
+        },
+        {
+          "name": "أبحاث الذكاء الاصطناعي",
+          "url": "https://export.arxiv.org/rss/cs.AI",
+          "state": "ok",
+          "items": 34,
+          "checkedAt": "2026-10-27T03:30:52+00:00",
+          "seconds": 0.16
+        },
+        {
+          "name": "أبحاث تعلّم الآلة",
+          "url": "https://export.arxiv.org/rss/cs.LG",
+          "state": "empty",
+          "items": 0,
+          "checkedAt": "2026-10-27T03:30:52+00:00",
+          "seconds": 0.1
+        },
+        {
+          "name": "أخبار التقنية",
+          "url": "https://www.theverge.com/rss/index.xml",
+          "state": "ok",
+          "items": 10,
+          "checkedAt": "2026-10-27T03:30:52+00:00",
+          "seconds": 0.09
+        },
+        {
+          "name": "أخبار التقنية السعودية",
+          "url": "https://news.google.com/rss/search?q=%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1+%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A+OR+%D8%A7%D9%84%D8%AA%D9%82%D9%86%D9%8A%D8%A9+%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9+when%3A2d&hl=ar&gl=SA&ceid=SA%3Aar",
+          "state": "ok",
+          "items": 27,
+          "checkedAt": "2026-10-27T03:30:52+00:00",
+          "seconds": 0.34
+        },
+        {
+          "name": "البوابة العربية للأخبار التقنية",
+          "url": "https://aitnews.com/feed/",
+          "state": "ok",
+          "items": 10,
+          "checkedAt": "2026-10-27T03:30:52+00:00",
+          "seconds": 0.73
+        },
+        {
+          "name": "برمجة بايثون",
+          "url": "https://news.google.com/rss/search?q=Python+developer+tools+release+when%3A2d&hl=en&gl=US&ceid=US%3Aen",
+          "state": "ok",
+          "items": 11,
+          "checkedAt": "2026-10-27T03:30:52+00:00",
+          "seconds": 0.31
+        },
+        {
+          "name": "تقارير الذكاء الاصطناعي",
+          "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+          "state": "ok",
+          "items": 20,
+          "checkedAt": "2026-10-27T03:30:52+00:00",
+          "seconds": 0.05
+        },
+        {
+          "name": "تقنية BBC",
+          "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
+          "state": "ok",
+          "items": 16,
+          "checkedAt": "2026-10-27T03:30:52+00:00",
+          "seconds": 0.29
+        },
+        {
+          "name": "عالم التقنية",
+          "url": "https://www.tech-wd.com/wd/feed/",
+          "state": "ok",
+          "items": 15,
+          "checkedAt": "2026-10-27T03:30:52+00:00",
+          "seconds": 1.28
+        },
+        {
+          "name": "فرص وبرامج تقنية",
+          "url": "https://news.google.com/rss/search?q=%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8+%D8%AA%D9%82%D9%86%D9%8A%D8%A9+%D8%B0%D9%83%D8%A7%D8%A1+%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A+%D8%B7%D9%84%D8%A7%D8%A8+%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9+OR+%D8%B3%D8%AF%D8%A7%D9%8A%D8%A7+when%3A3d&hl=ar&gl=SA&ceid=SA%3Aar",
+          "state": "ok",
+          "items": 34,
+          "checkedAt": "2026-10-27T03:30:52+00:00",
+          "seconds": 0.47
+        }
+      ],
+      "collected": 401
+    }
+  },
+  "incomingAudit": {
+    "filesChecked": 28,
+    "files": [
+      "nabdh-editorial-2026-10-24-0542.json",
+      "nabdh-editorial-2026-10-24-0840.json",
+      "nabdh-editorial-2026-10-24-1143.json",
+      "nabdh-editorial-2026-10-24-1439.json",
+      "nabdh-editorial-2026-10-24-1740.json",
+      "nabdh-editorial-2026-10-24-2043.json",
+      "nabdh-editorial-2026-10-24-2342.json",
+      "nabdh-editorial-2026-10-24.json",
+      "nabdh-editorial-2026-10-25-0250.json",
+      "nabdh-editorial-2026-10-25-0554.json",
+      "nabdh-editorial-2026-10-25-0845.json",
+      "nabdh-editorial-2026-10-25-1143.json",
+      "nabdh-editorial-2026-10-25-1442.json",
+      "nabdh-editorial-2026-10-25-1742.json",
+      "nabdh-editorial-2026-10-25-2038.json",
+      "nabdh-editorial-2026-10-25-2342.json",
+      "nabdh-editorial-2026-10-26-0250.json",
+      "nabdh-editorial-2026-10-26-0545.json",
+      "nabdh-editorial-2026-10-26-0840.json",
+      "nabdh-editorial-2026-10-26-1152.json",
+      "nabdh-editorial-2026-10-26-1445.json",
+      "nabdh-editorial-2026-10-26-1745.json",
+      "nabdh-editorial-2026-10-26-2042.json",
+      "nabdh-editorial-2026-10-26-2342.json",
+      "nabdh-editorial-2026-10-27-0038.json",
+      "nabdh-editorial-2026-10-27-0240.json",
+      "nabdh-editorial-2026-10-27-0549.json",
+      "nabdh-editorial-2026-10-27-0619.json"
+    ],
+    "totalRows": 221,
+    "uniqueIds": 220,
+    "duplicateRows": 1,
+    "duplicateId": "853c63f738f0cecf3b",
+    "duplicateReason": "تحديث Claude-Mem يعيد استخدام الهوية والرابط الأصليين",
+    "importedExactUnique": 217,
+    "activeExactUnique": 183,
+    "importedButNowOutOfFeed": 34,
+    "notImportedAndAbsentFromFeed": 3,
+    "urlMismatches": 0,
+    "needsStructuralCorrection": 0,
+    "validation": "اجتازت الملفات الـ28 تحققًا بنيويًا مكافئًا لقواعد scripts/editorial.py؛ لم يُشغّل السكربت محليًا.",
+    "classifications": {
+      "activeExact": 183,
+      "expiredOrOutOfFeed": 34,
+      "notImported": 3,
+      "urlMismatch": 0,
+      "needsCorrection": 0
+    }
+  },
+  "preservedOutOfFeedRecords": [
+    {
+      "id": "272ca529595ace68cc",
+      "url": "https://bottlecapai.com/post/thinkingcap-gemma-4-26b/",
+      "titleAr": "ThinkingCap تدّعي خفض توكنات التفكير في Gemma 4 بنحو 39%",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "be074fe101e39b9e92",
+      "url": "https://www.axelmagn.com/blog/202610-zig-traits/",
+      "titleAr": "مقال تقني: بناء عقود شبيهة بـ Traits في Zig دون ميزة لغة مخصصة",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "eaf6e95c99cc41352e",
+      "url": "https://codeandcake.dev/posts/2026-10-22-docker-is-weird",
+      "titleAr": "مقال تقني يشرح لماذا حاويات Docker ليست آلات افتراضية",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "b5cb20bfbe29ca4672",
+      "url": "https://block.xyz/dessa",
+      "titleAr": "Block تكشف نموذج Dessa للمحادثة الصوتية المتزامنة",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "870947cc813e3918d8",
+      "url": "https://david.lequin.dev/blog/bi-software-is-dead/",
+      "titleAr": "تجربة فريق بيانات: لوحات HTML مولّدة تقلل الاعتماد على Looker",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "010d1ccd570cd22892",
+      "url": "https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html",
+      "titleAr": "نص تاريخي لديكسترا يحذر من افتراض أن اللغة الطبيعية تجعل البرمجة سهلة",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "30e283a9b3f70e35d8",
+      "url": "https://github.com/astral-sh/uv",
+      "titleAr": "uv — مدير مشاريع وحزم Python مكتوب بـRust",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "f6a301346a05e615cd",
+      "url": "https://www.anthropic.com/research/formal-verification",
+      "titleAr": "Anthropic تعرض استخدام Claude لإنتاج براهين رياضية على سلامة أجزاء من برامج مفتوحة المصدر",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "f8c156dba788682638",
+      "url": "https://openai.com/index/securing-our-frontier-model-training-environment/",
+      "titleAr": "OpenAI تفصل ضوابط عزل بيئة تدريب نماذجها المتقدمة",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "bf44de9e544de4cbe9",
+      "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "titleAr": "Kimi تعلن K3.1 Pro ونسخة أسرع مع سياق حتى مليون توكن",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "a9526976eeebfbfe11",
+      "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
+      "titleAr": "تحديث توضيحات Google حول استخدام بيانات التطبيقات المرتبطة لتخصيص الإعلانات",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "4906ded72c396dea87",
+      "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.0",
+      "titleAr": "OBS Studio 33 يغيّر نظام الإضافات ويحدّث مكوّن المتصفح",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "cbb045dba06decd7ef",
+      "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
+      "titleAr": "تحذير أمني: خلل Brotli قد يمتد إلى حزم Python وNode.js وخدمات HTTP",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "906857cd0f7118cafb",
+      "url": "https://thinkrail.ai/",
+      "titleAr": "ThinkRail يتيح تشغيل وكلاء البرمجة في مساحات Git worktree معزولة",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "de8f53606bd4f2390d",
+      "url": "https://security.apple.com/research-device/",
+      "titleAr": "Apple تقبل طلبات أجهزة أبحاث أمن iOS حتى 30 أكتوبر",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "d82e7cc672e929a3b3",
+      "url": "https://quantum5.ca/2025/03/22/whirlwind-tour-of-systemd-nspawn-containers/",
+      "titleAr": "دليل systemd-nspawn يوضح بديلًا لإدارة حاويات Linux",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "84d5e70408465cd957",
+      "url": "https://www.infoq.com/news/2026/10/tornadovm-7-gpu/",
+      "titleAr": "TornadoVM 7.3 يوسع تسريع Java على GPU",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "54a84576b73959f5c0",
+      "url": "https://dreamlabs.ai/research/dream-1/",
+      "titleAr": "Dream-1: نموذج للتحكم في روبوتات جديدة عبر API",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "003c34cec635b77197",
+      "url": "https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/",
+      "titleAr": "LogSync: شريحة ترصد تزامن الإشارات بين مناطق الدماغ",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "02e941dcb42029b302",
+      "url": "https://arxiv.org/abs/2610.29162",
+      "titleAr": "لماذا يصعب فهم بعض نصوص الذكاء الاصطناعي؟",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "a54fd0e20dbb904635",
+      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+      "titleAr": "تحليل Apollo: عوائد الذكاء الاصطناعي لم تظهر بوضوح خارج شركات التقنية الكبرى",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "0d165f484c2636ca4e",
+      "url": "https://aardappel.github.io/goose/",
+      "titleAr": "لغة Goose تقترح برمجة أنظمة آمنة دون Heap أو جامع قمامة",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "b5d56d5ca530cabccc",
+      "url": "https://terrytao.wordpress.com/2026/10/24/oai-math-revised-a-community-hub-for-revising-openais-math-write-ups/",
+      "titleAr": "مبادرة مجتمعية لمراجعة شروح الرياضيات المنشورة من OpenAI",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "08ab153fd915aa89f4",
+      "url": "https://torrentfreak.com/ai-assisted-paper-on-z-library-cites-a-torrentfreak-article-that-doesnt-exist/",
+      "titleAr": "تقرير يكشف إحالات أكاديمية غير موجودة في بحث استعان بأدوات ذكاء اصطناعي",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "1edb80b635d46123cf",
+      "url": "https://www.wired.com/story/kernel-panic-the-php-meltdown-shows-how-ai-makes-bugs-more-exploitable/",
+      "titleAr": "ثغرات PHP القديمة تكشف أثر الذكاء الاصطناعي على تسارع البحث الأمني",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "4f518f178a0999f4d6",
+      "url": "https://xingjianbai.com/reactive-optimizers/",
+      "titleAr": "محسّنات تفاعلية: وكيل يغير قواعد تدريب الشبكات أثناء التشغيل",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "1024a71bf3a321de9f",
+      "url": "https://www.engadget.com/2296218/capcom-confirms-data-breach-that-affected-117-million-users/",
+      "titleAr": "Capcom تؤكد وصولًا غير مصرح به إلى 11.77 مليون سجل CAPCOM ID",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "72085d2e5a95917680",
+      "url": "https://www.engadget.com/2296237/steam-rolls-out-personal-calendar-feature-that-constantly-updates-recommended-games/",
+      "titleAr": "Steam تقدم تقويمًا شخصيًا لاكتشاف الألعاب",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "402510afde2d9adf5a",
+      "url": "https://github.com/astroautomata/PySR",
+      "titleAr": "PySR يستنتج معادلات رياضية قابلة للتفسير من البيانات",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "1ac9c976988acd153a",
+      "url": "https://polygonjs.com/blog/why-i-rewrote-polygon-from-scratch",
+      "titleAr": "إعادة بناء Polygon من الصفر بلغة Jai: درس في إدارة الذاكرة",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "d0eaca9f562278f8ee",
+      "url": "https://catlikecoding.com/godot/procedural-gpu-patterns/09-tiling-noise/",
+      "titleAr": "دليل Godot لصنع خامات ضوضاء إجرائية متكررة بلا فواصل",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "db6cc927887bf2ca4c",
+      "url": "https://freedns.afraid.org/",
+      "titleAr": "FreeDNS: خيارات DNS ديناميكي وثابت لأسماء النطاقات",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "25ee6a576e795dceeb",
+      "url": "https://danluu.com/ambitious/",
+      "titleAr": "دان لو: بناء برمجيات أكثر طموحًا ممكن، لكن التحقق أصعب",
+      "classification": "preserved_editorial_not_in_current_feed"
+    },
+    {
+      "id": "64455b0e03b14f4232",
+      "url": "https://www.engadget.com/2296124/meta-delaying-controversial-business-terms-scraping-concerns/",
+      "titleAr": "Meta تؤجل سريان شروطها التجارية الجديدة وسط اعتراضات الناشرين",
+      "classification": "preserved_editorial_not_in_current_feed"
+    }
+  ],
+  "pendingRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "reason": "المعرف والرابط غير موجودين في feed.json الحالي ولا في editorial.json؛ لم يُنشأ بديل بالعنوان."
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "reason": "المعرف والرابط غير موجودين في feed.json الحالي ولا في editorial.json؛ لم يُنشأ بديل بالعنوان."
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "reason": "المعرف والرابط غير موجودين في feed.json الحالي ولا في editorial.json؛ لم يُنشأ بديل بالعنوان."
+    }
+  ],
+  "currentEditorialSummary": {
+    "records": 220,
+    "activeExact": 186,
+    "outOfFeed": 34,
+    "urlMismatches": 0,
+    "oldRecordsDeleted": 0
+  },
+  "newBatch": {
+    "path": "editorial/incoming/nabdh-editorial-2026-10-27-0847.json",
+    "news": 12,
+    "projects": 2,
+    "total": 14,
+    "exactFeedPairs": 14,
+    "alreadyPresentBeforeMerge": 0,
+    "basisCounts": {
+      "article": 3,
+      "metadata": 9,
+      "readme": 2
+    },
+    "structuralValidation": "passed"
+  },
+  "previousProjectsReview": {
+    "reviewedAt": "2026-10-27T08:47:37+03:00",
+    "entries": [
+      {
+        "name": "Gradio",
+        "repository": "gradio-app/gradio",
+        "archived": false,
+        "stars": 43912,
+        "forks": 3652,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-27T00:23:21Z",
+        "readmeReviewed": true,
+        "metricCapturedAt": "2026-10-27T08:47:37+03:00",
+        "activityChecked": true
+      },
+      {
+        "name": "Claude-Mem",
+        "repository": "thedotmack/claude-mem",
+        "archived": false,
+        "stars": 103498,
+        "forks": 9134,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-26T23:57:05Z",
+        "readmeReviewed": true,
+        "metricCapturedAt": "2026-10-27T08:47:37+03:00",
+        "activityChecked": true
+      },
+      {
+        "name": "Ultralytics",
+        "repository": "ultralytics/ultralytics",
+        "archived": false,
+        "stars": 62877,
+        "forks": 11917,
+        "license": "AGPL-3.0",
+        "pushedAt": "2026-10-27T04:02:59Z",
+        "readmeReviewed": true,
+        "metricCapturedAt": "2026-10-27T08:47:37+03:00",
+        "activityChecked": true
+      },
+      {
+        "name": "MoneyPrinterTurbo",
+        "repository": "harry0703/MoneyPrinterTurbo",
+        "archived": false,
+        "stars": 135559,
+        "forks": 21506,
+        "license": "MIT",
+        "pushedAt": "2026-10-27T03:27:17Z",
+        "readmeReviewed": true,
+        "metricCapturedAt": "2026-10-27T08:47:37+03:00",
+        "activityChecked": true
+      },
+      {
+        "name": "AI-For-Beginners",
+        "repository": "microsoft/AI-For-Beginners",
+        "archived": false,
+        "stars": 70280,
+        "forks": 13653,
+        "license": "MIT",
+        "pushedAt": "2026-10-23T23:55:14Z",
+        "readmeReviewed": true,
+        "metricCapturedAt": "2026-10-27T08:47:37+03:00",
+        "activityChecked": true
+      },
+      {
+        "name": "Bruno",
+        "repository": "usebruno/bruno",
+        "archived": false,
+        "stars": 47862,
+        "forks": 3035,
+        "license": "MIT",
+        "pushedAt": "2026-10-26T16:45:02Z",
+        "readmeReviewed": true,
+        "metricCapturedAt": "2026-10-27T08:47:37+03:00",
+        "activityChecked": true
+      },
+      {
+        "name": "Keras",
+        "repository": "keras-team/keras",
+        "archived": false,
+        "stars": 64391,
+        "forks": 19803,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-26T20:40:53Z",
+        "readmeReviewed": true,
+        "metricCapturedAt": "2026-10-27T08:47:37+03:00",
+        "activityChecked": true
+      },
+      {
+        "name": "sherpa-onnx",
+        "repository": "k2-fsa/sherpa-onnx",
+        "archived": false,
+        "stars": 15532,
+        "forks": 1816,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-26T15:20:53Z",
+        "readmeReviewed": true,
+        "metricCapturedAt": "2026-10-27T08:47:37+03:00",
+        "activityChecked": true
+      }
+    ],
+    "summary": "الثمانية غير مؤرشفة وقت القياس؛ تمت مراجعة README والبيانات الوصفية والترخيص. المقاييس لقطات تراكمية وليست نموًا يوميًا."
+  },
+  "historicalLibrary": {
+    "path": "editorial/library/review-2026-10-27-0038.json",
+    "entries": 31,
+    "archived": 2,
+    "currentlyFeedCards": 4,
+    "researchOnly": 27,
+    "lastMetricSnapshot": "2026-10-27T00:49:07+03:00",
+    "refreshedThisRun": false
+  },
+  "protectedPaths": {
+    "feedJsonModified": false,
+    "seenJsonModified": false,
+    "siteCodeModified": false,
+    "designModified": false,
+    "workflowsModified": false,
+    "publishSettingsModified": false
+  },
+  "localCommands": {
+    "validate": "not run locally; no local checkout",
+    "import": "not run locally; merge semantics preserved old object entries",
+    "unittest": "python -m unittest discover -s tests -v not run locally",
+    "nodeCheck": "not run locally"
+  },
+  "priorDeployment": {
+    "runId": 40444568574,
+    "conclusion": "success",
+    "artifactId": 12707253684,
+    "artifactSizeBytes": 562176,
+    "artifactContentVerified": true,
+    "publicUrlDirectFetch": "unavailable in this runtime"
+  }
+}
