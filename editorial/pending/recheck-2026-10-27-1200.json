@@ -1,0 +1,427 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-27T12:00:39.606+03:00",
+  "purpose": "Backlog-first editorial audit, exact-id/url reconciliation, and content cycle; this report is a research/audit artifact and is not a public site card.",
+  "sourceSnapshot": {
+    "mainCommit": "9024683b04c97515287ca7cb98e2dd01abbe59a2",
+    "mainCommitMessage": "data: refresh deduplicated technology feed",
+    "feedBlobSha": "e7b1af7aa503cdac8f39019c4ebe0defb85f6b58",
+    "editorialBlobShaBeforeImport": "36d366c3c9daaedef4a340c268705ed4c619d056",
+    "statusBlobSha": "b92082546fbdb18fa80f2d80831d73443d081548",
+    "feedGeneratedAt": "2026-10-27T08:56:46+00:00",
+    "feedItems": 800,
+    "feedNews": 700,
+    "feedProjects": 100,
+    "statusState": "ok",
+    "statusLastSuccessfulAt": "2026-10-27T08:56:46+00:00",
+    "statusCollected": 417,
+    "editorialRecordsBeforeImport": 234
+  },
+  "priorPullRequests": [
+    {
+      "number": 1,
+      "url": "https://github.com/lm7md-ai/.-/pull/1",
+      "state": "closed",
+      "merged": true,
+      "mergedAt": "2026-10-24T10:21:47Z",
+      "mergeCommit": "e88edb7d3c90895972b4cf28977405dea9831578"
+    },
+    {
+      "number": 2,
+      "url": "https://github.com/lm7md-ai/.-/pull/2",
+      "state": "closed",
+      "merged": true,
+      "mergedAt": "2026-10-24T10:07:54Z",
+      "mergeCommit": "480e56e19518fc994c6626cdef8d57dbbbbc7a51"
+    }
+  ],
+  "incomingAudit": {
+    "directory": "editorial/incoming",
+    "filesChecked": 29,
+    "totalRows": 235,
+    "uniqueIds": 234,
+    "duplicateId": "853c63f738f0cecf3b",
+    "duplicateClassification": "same original id and URL repeated; retain the original identity and do not generate an alias",
+    "structuralErrors": 0,
+    "activeExactRows": 179,
+    "activeExactUniqueIds": 178,
+    "alreadyImportedExactRows": 232,
+    "alreadyImportedExactUniqueIds": 231,
+    "importedExactButNoLongerInCurrentFeed": 53,
+    "matchingCurrentFeedAwaitingImport": 0,
+    "notInCurrentFeedAndNotImported": 3,
+    "idUrlMismatches": 0,
+    "confirmedExpiredByAge": 0,
+    "note": "Out-of-feed records are retained as historical editorial entries; absence from the 800-item current feed does not by itself prove date-expiry. The 53 out-of-feed imported entries were not deleted or rewritten.",
+    "files": [
+      {
+        "file": "nabdh-editorial-2026-10-24-0542.json",
+        "sha": "5cbbde735820d3fbbd6ffc5e8726ba8010d66dbe",
+        "rows": 10,
+        "activeRows": 7,
+        "importedRows": 9,
+        "outOfFeedImportedRows": 2,
+        "pendingRows": 1
+      },
+      {
+        "file": "nabdh-editorial-2026-10-24-0840.json",
+        "sha": "68b728fa673c7d5b2198b00b0c5fcc1b9a0bbc18",
+        "rows": 7,
+        "activeRows": 3,
+        "importedRows": 7,
+        "outOfFeedImportedRows": 4,
+        "pendingRows": 0
+      },
+      {
+        "file": "nabdh-editorial-2026-10-24-1143.json",
+        "sha": "b1aaf887300d600d15b9cd66b51321604d8da139",
+        "rows": 14,
+        "activeRows": 7,
+        "importedRows": 12,
+        "outOfFeedImportedRows": 5,
+        "pendingRows": 2
+      },
+      {
+        "file": "nabdh-editorial-2026-10-24-1439.json",
+        "sha": "88a0f1efaa8699b1e31a83ac541daba264885113",
+        "rows": 9,
+        "activeRows": 6,
+        "importedRows": 9,
+        "outOfFeedImportedRows": 3,
+        "pendingRows": 0
+      },
+      {
+        "file": "nabdh-editorial-2026-10-24-1740.json",
+        "sha": "d6fa64cfea40876a5e88aeea44c2525064fcf9fd",
+        "rows": 6,
+        "activeRows": 4,
+        "importedRows": 6,
+        "outOfFeedImportedRows": 2,
+        "pendingRows": 0
+      },
+      {
+        "file": "nabdh-editorial-2026-10-24-2043.json",
+        "sha": "9651fed60f2c1a32e58d95af66cd0fb4f3ab29ae",
+        "rows": 10,
+        "activeRows": 7,
+        "importedRows": 10,
+        "outOfFeedImportedRows": 3,
+        "pendingRows": 0
+      },
+      {
+        "file": "nabdh-editorial-2026-10-24-2342.json",
+        "sha": "2f172ad8645bce9232ae1e07f17e5b3cc9f2f94c",
+        "rows": 10,
+        "activeRows": 9,
+        "importedRows": 10,
+        "outOfFeedImportedRows": 1,
+        "pendingRows": 0
+      },
+      {
+        "file": "nabdh-editorial-2026-10-24.json",
+        "sha": "5d09a1a8bf7f1f0d6ca500296d9707c7dba95fd3",
+        "rows": 6,
+        "activeRows": 2,
+        "importedRows": 6,
+        "outOfFeedImportedRows": 4,
+        "pendingRows": 0
+      },
+      {
+        "file": "nabdh-editorial-2026-10-25-0250.json",
+        "sha": "6ca9be0501cea58c97733db77363c38d1fb4ebb6",
+        "rows": 6,
+        "activeRows": 3,
+        "importedRows": 6,
+        "outOfFeedImportedRows": 3,
+        "pendingRows": 0
+      },
+      {
+        "file": "nabdh-editorial-2026-10-25-0554.json",
+        "sha": "0af481e73f1c598c09e347febdbb0843c81c6741",
+        "rows": 8,
+        "activeRows": 3,
+        "importedRows": 8,
+        "outOfFeedImportedRows": 5,
+        "pendingRows": 0
+      },
+      {
+        "file": "nabdh-editorial-2026-10-25-0845.json",
+        "sha": "6ec634639d38f8884a4a9fb03fd9699457390da3",
+        "rows": 10,
+        "activeRows": 7,
+        "importedRows": 10,
+        "outOfFeedImportedRows": 3,
+        "pendingRows": 0
+      },
+      {
+        "file": "nabdh-editorial-2026-10-25-1143.json",
+        "sha": "42a3f5335cf768033ca7a1f596078f38eb2029bf",
+        "rows": 6,
+        "activeRows": 2,
+        "importedRows": 6,
+        "outOfFeedImportedRows": 4,
+        "pendingRows": 0
+      },
+      {
+        "file": "nabdh-editorial-2026-10-25-1442.json",
+        "sha": "99ce95d76b905597078eb53082a1c4685082b02e",
+        "rows": 6,
+        "activeRows": 2,
+        "importedRows": 6,
+        "outOfFeedImportedRows": 4,
+        "pendingRows": 0
+      },
+      {
+        "file": "nabdh-editorial-2026-10-25-1742.json",
+        "sha": "7b49c3322083612bc034791c03e8e7868e5710cc",
+        "rows": 8,
+        "activeRows": 8,
+        "importedRows": 8,
+        "outOfFeedImportedRows": 0,
+        "pendingRows": 0
+      },
+      {
+        "file": "nabdh-editorial-2026-10-25-2038.json",
+        "sha": "f20fd110855271a58eb750962ec67abd2a880b8f",
+        "rows": 6,
+        "activeRows": 2,
+        "importedRows": 6,
+        "outOfFeedImportedRows": 4,
+        "pendingRows": 0
+      },
+      {
+        "file": "nabdh-editorial-2026-10-25-2342.json",
+        "sha": "67a086dc877cc360518d3027ad4a14e9e84a7858",
+        "rows": 6,
+        "activeRows": 5,
+        "importedRows": 6,
+        "outOfFeedImportedRows": 1,
+        "pendingRows": 0
+      },
+      {
+        "file": "nabdh-editorial-2026-10-26-0250.json",
+        "sha": "ca50fd0bec339642cfe1f0b4945253c62e6d4a7d",
+        "rows": 8,
+        "activeRows": 7,
+        "importedRows": 8,
+        "outOfFeedImportedRows": 1,
+        "pendingRows": 0
+      },
+      {
+        "file": "nabdh-editorial-2026-10-26-0545.json",
+        "sha": "8aaf21148bebff0b1420b4c6dd3862e8829849b5",
+        "rows": 7,
+        "activeRows": 4,
+        "importedRows": 7,
+        "outOfFeedImportedRows": 3,
+        "pendingRows": 0
+      },
+      {
+        "file": "nabdh-editorial-2026-10-26-0840.json",
+        "sha": "bcf33df52194b01060e5a4b3b777561b88c969cb",
+        "rows": 6,
+        "activeRows": 5,
+        "importedRows": 6,
+        "outOfFeedImportedRows": 1,
+        "pendingRows": 0
+      },
+      {
+        "file": "nabdh-editorial-2026-10-26-1152.json",
+        "sha": "c06cebf6b7957dc55c8bee28ca267c512e5ea42f",
+        "rows": 6,
+        "activeRows": 6,
+        "importedRows": 6,
+        "outOfFeedImportedRows": 0,
+        "pendingRows": 0
+      },
+      {
+        "file": "nabdh-editorial-2026-10-26-1445.json",
+        "sha": "c7fe44ccbf051bc85b89164ce2d1acd3aa57de64",
+        "rows": 5,
+        "activeRows": 5,
+        "importedRows": 5,
+        "outOfFeedImportedRows": 0,
+        "pendingRows": 0
+      },
+      {
+        "file": "nabdh-editorial-2026-10-26-1745.json",
+        "sha": "7c112aa8f7b5b7056c2819a5897c0848e0e7fdcb",
+        "rows": 6,
+        "activeRows": 6,
+        "importedRows": 6,
+        "outOfFeedImportedRows": 0,
+        "pendingRows": 0
+      },
+      {
+        "file": "nabdh-editorial-2026-10-26-2042.json",
+        "sha": "3137089d6e6a7b08845462514f354f129456e8e9",
+        "rows": 5,
+        "activeRows": 5,
+        "importedRows": 5,
+        "outOfFeedImportedRows": 0,
+        "pendingRows": 0
+      },
+      {
+        "file": "nabdh-editorial-2026-10-26-2342.json",
+        "sha": "97d56c54768f6ce8112b2c14b0ff42bdb5144c66",
+        "rows": 14,
+        "activeRows": 14,
+        "importedRows": 14,
+        "outOfFeedImportedRows": 0,
+        "pendingRows": 0
+      },
+      {
+        "file": "nabdh-editorial-2026-10-27-0038.json",
+        "sha": "7a9edf47ccb48c8960073c9fc6eb4bdb0540ca44",
+        "rows": 8,
+        "activeRows": 8,
+        "importedRows": 8,
+        "outOfFeedImportedRows": 0,
+        "pendingRows": 0
+      },
+      {
+        "file": "nabdh-editorial-2026-10-27-0240.json",
+        "sha": "27e9663b2cb55cda16f2fb70ca1a718d0f35ef7a",
+        "rows": 5,
+        "activeRows": 5,
+        "importedRows": 5,
+        "outOfFeedImportedRows": 0,
+        "pendingRows": 0
+      },
+      {
+        "file": "nabdh-editorial-2026-10-27-0549.json",
+        "sha": "679a308b144483ef53b094394e1217538bf1978b",
+        "rows": 8,
+        "activeRows": 8,
+        "importedRows": 8,
+        "outOfFeedImportedRows": 0,
+        "pendingRows": 0
+      },
+      {
+        "file": "nabdh-editorial-2026-10-27-0619.json",
+        "sha": "d5228abb39972066b739155b4fb7a8179993455f",
+        "rows": 15,
+        "activeRows": 15,
+        "importedRows": 15,
+        "outOfFeedImportedRows": 0,
+        "pendingRows": 0
+      },
+      {
+        "file": "nabdh-editorial-2026-10-27-0847.json",
+        "sha": "9d686fb606509755601618cf886ac3bd0e5b49f9",
+        "rows": 14,
+        "activeRows": 14,
+        "importedRows": 14,
+        "outOfFeedImportedRows": 0,
+        "pendingRows": 0
+      }
+    ]
+  },
+  "pendingRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "titleAr": "OpenShell من NVIDIA: بيئات معزولة للوكلاء بصلاحيات قابلة للمراجعة",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+      "currentFeedMatch": false,
+      "alreadyImported": false,
+      "classification": "absent_from_current_feed_and_editorial",
+      "decision": "keep pending; do not import; do not derive a replacement identity from the title"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "titleAr": "Canva تعلن Craft لتوليد صور يمكن تحويلها إلى تصاميم متعددة الطبقات",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "currentFeedMatch": false,
+      "alreadyImported": false,
+      "classification": "absent_from_current_feed_and_editorial",
+      "decision": "keep pending; do not import; do not substitute another URL or identity"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "titleAr": "1Password تعرض تفويض دخول للوكلاء دون إظهار كلمات المرور",
+      "sourceBatch": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "currentFeedMatch": false,
+      "alreadyImported": false,
+      "classification": "absent_from_current_feed_and_editorial",
+      "decision": "keep pending; do not import; do not substitute another URL or identity"
+    }
+  ],
+  "currentEditorialSummary": {
+    "recordsBeforeImport": 234,
+    "exactCurrentFeedPairs": 181,
+    "importedButNotInCurrentFeed": 53,
+    "urlMismatches": 0,
+    "currentIncomingIdsImportedExact": 231,
+    "otherExistingEditorialRecordsPreserved": 3
+  },
+  "newBatch": {
+    "file": "editorial/incoming/nabdh-editorial-2026-10-27-1141.json",
+    "entries": 14,
+    "news": 12,
+    "projects": 2,
+    "allExactFeedIdUrlPairs": true,
+    "allWereAbsentFromEditorialBeforeImport": true,
+    "editorialRecordsAfterImport": 248,
+    "basisCounts": {
+      "article": 11,
+      "metadata": 1,
+      "readme": 2
+    },
+    "ideas": {
+      "improvements": 4,
+      "spinoffs": 4,
+      "religious": 1,
+      "total": 9
+    },
+    "testEvidenceClaims": 0,
+    "importedBy": "equivalent of scripts/editorial.py merge_documents: validate existing and incoming, require each id and exact URL in current feed, copy existing items, then append the 14 new entries",
+    "currentFeedSha": "e7b1af7aa503cdac8f39019c4ebe0defb85f6b58",
+    "currentEditorialAfterImportSha": "33e3dcb794fbe22d9bced269654a2329021af170"
+  },
+  "projectLibrary": {
+    "file": "editorial/library/review-2026-10-27-0038.json",
+    "previousCount": 31,
+    "currentCount": 33,
+    "archived": 2,
+    "inCurrentFeed": 6,
+    "researchOnlyNotInFeed": 27,
+    "currentFeedProjectsAlreadyEnrichedBeforeThisBatch": 4,
+    "newProjectsEnrichedThisBatch": 2,
+    "historicalMetricsPolicy": "Retained original metricCapturedAt timestamps for the previous 31 projects; did not pretend to remeasure their stars/forks.",
+    "newProjectMetricsCapturedAt": "2026-10-27T08:56:46+00:00",
+    "licenseNotes": [
+      "rasbt/LLMs-from-scratch: LICENSE.txt says Apache-2.0; GitHub API metadata returned NOASSERTION, so the file itself is the evidence.",
+      "HKUDS/nanobot: LICENSE says MIT; repository is not archived and latest observed commit is 2026-10-27T08:22:33Z."
+    ]
+  },
+  "execution": {
+    "localCommandExecutionAvailable": false,
+    "officialCommandsNotExecuted": [
+      "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-10-27-1141.json",
+      "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-10-27-1141.json",
+      "python -m unittest discover -s tests -v"
+    ],
+    "equivalentValidation": "Passed schema-equivalent checks on 14 incoming records and the 248-record merged editorial document; all 14 IDs and URLs matched the current feed exactly; no testEvidence claims were added.",
+    "tests": "pending GitHub Actions for the pull request; not claimed as run yet",
+    "deployment": "not yet merged or verified on the public site at report creation time"
+  },
+  "protectedPaths": [
+    "site/data/feed.json",
+    "site/data/seen.json",
+    "scripts/",
+    "tests/",
+    "site/ source and design files",
+    "site/assets/",
+    " .github/workflows/",
+    "deployment settings"
+  ],
+  "notes": [
+    "The latest main refresh commit 9024683 changed feed.json, seen.json and status.json before this branch was created; this cycle does not edit feed.json or seen.json.",
+    "The earlier eight-project review remains preserved in the library file; current feed membership was refreshed using exact project URLs, and all four previously current library projects were already enriched under their original feed IDs.",
+    "The current status.json reports state=ok and lastSuccessfulAt=2026-10-27T08:56:46Z with 417 collected items. The exact workflow run ID for that latest refresh was not exposed by the available connector, so it is not asserted.",
+    "No claim is made that this report or the new content is published until PR checks, merge, Actions deployment, and live-site verification are confirmed."
+  ]
+}
