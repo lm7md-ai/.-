@@ -279,10 +279,32 @@
     "commandsNotRun": [
       "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-10-27-2113.json",
       "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-10-27-2113.json",
-      "python -m unittest discover -s tests -v"
+      "python -m unittest discover -s tests -v locally"
     ],
     "ciStatus": "pending PR",
-    "deploymentStatus": "pending PR merge and existing GitHub Actions run"
+    "deploymentStatus": "success",
+    "officialValidateCI": "passed — python scripts/editorial.py validate on merged editorial.json",
+    "unitTestsCI": "passed — python -m unittest discover -s tests -v",
+    "browserSyntaxChecksCI": "passed — node --check site/app.js && node --check site/ideas.js",
+    "refreshFeedCI": "passed",
+    "pagesDeployCI": "passed",
+    "ciRunId": 40560816677,
+    "ciRunUrl": "https://github.com/lm7md-ai/.-/actions/runs/40560816677",
+    "mergedPR": 34,
+    "mergedPRUrl": "https://github.com/lm7md-ai/.-/pull/34",
+    "mergeCommit": "ac17c9c33334158d7f572790fbd275828291b4e4",
+    "mainAfterRefresh": "2f1ae1cedd96a4c07a35161a2a1fdd6f6313439a",
+    "deployedArtifact": {
+      "id": 12761955183,
+      "name": "github-pages",
+      "sizeBytes": 640624,
+      "verified": true,
+      "containsEditorialEntries": 286,
+      "containsFeedItems": 800,
+      "newSelectedRecordsPresent": 12
+    },
+    "publicUrlDirectFetch": "not_verified — web browser tool returned DisabledError for GitHub Pages URL; do not claim direct live-URL fetch succeeded",
+    "detailPagesOpenedInBrowser": false
   },
   "developerDisplayRequirements": [
     "اعرض overview وrequirements وquickStart وlimitations والمصادر الرسمية والترخيص لكل مشروع.",
@@ -290,5 +312,21 @@
     "لا تعرض testEvidence لأنه غير موجود؛ لا ادعاء باختبار تشغيل.",
     "اعرض حالة النشاط والترخيص ووقت قياس النجوم والتفرعات في المكتبة البحثية فقط.",
     "لا تعديل للواجهة في هذه الدورة."
-  ]
+  ],
+  "postMergeVerification": {
+    "verifiedAt": "2026-10-27T18:32:51Z",
+    "mergeCommit": "ac17c9c33334158d7f572790fbd275828291b4e4",
+    "latestMainAtVerification": "2f1ae1cedd96a4c07a35161a2a1fdd6f6313439a",
+    "feedBlobSha": "0e1f1c3d5b2705d35073b98856ad3212c4e060cb",
+    "editorialBlobSha": "61443995128d7c5c5bb62eebeed4021a8b2836e0",
+    "feedGeneratedAt": "2026-10-27T18:31:58+00:00",
+    "feedCount": 800,
+    "editorialCount": 286,
+    "status": "ok",
+    "statusLastSuccessfulAt": "2026-10-27T18:31:58+00:00",
+    "artifactContainsAll12SelectedIds": true,
+    "publicUrlDirectFetchAttempted": true,
+    "publicUrlDirectFetchResult": "DisabledError",
+    "artifactInspection": "github-pages artifact ZIP contained artifact.tar; its data/editorial.json had 286 records, data/feed.json had 800 records, data/status.json state ok; all 12 new IDs were present in the artifact."
+  }
 }
