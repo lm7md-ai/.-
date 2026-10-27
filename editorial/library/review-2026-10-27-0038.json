@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "reviewedAt": "2026-10-27T00:49:07+03:00",
+  "reviewedAt": "2026-10-27T12:00:39.606+03:00",
   "sourceSnapshot": "GitHub REST metadata and official license files where API returned NOASSERTION",
-  "feedGeneratedAt": "2026-10-26T21:04:59+00:00",
+  "feedGeneratedAt": "2026-10-27T08:56:46+00:00",
   "metricsWarning": "Stars and forks are cumulative snapshots from this run, not daily growth or current popularity rankings.",
   "statusSummary": {
-    "total": 31,
+    "total": 33,
     "archived": 2,
-    "inCurrentFeed": 4,
+    "inCurrentFeed": 6,
     "notInFeed": 27,
     "sourceAvailableRestricted": 1,
     "conditionalBuildLicenses": 1
@@ -28,7 +28,7 @@
       "licenseEvidenceUrl": "https://github.com/torvalds/linux/blob/master/COPYING",
       "licenseStatus": "verified_with_exception",
       "inCurrentFeed": false,
-      "siteVisibility": "research-only; not published as a feed card",
+      "siteVisibility": "research-only; not published as a feed card in the latest feed snapshot",
       "suggestedAlternatives": [],
       "sources": [
         {
@@ -56,7 +56,7 @@
       "licenseEvidenceUrl": "https://github.com/microsoft/vscode",
       "licenseStatus": "verified",
       "inCurrentFeed": false,
-      "siteVisibility": "research-only; not published as a feed card",
+      "siteVisibility": "research-only; not published as a feed card in the latest feed snapshot",
       "suggestedAlternatives": [],
       "sources": [
         {
@@ -84,7 +84,7 @@
       "licenseEvidenceUrl": "https://github.com/vuejs/core",
       "licenseStatus": "verified",
       "inCurrentFeed": false,
-      "siteVisibility": "research-only; not published as a feed card",
+      "siteVisibility": "research-only; not published as a feed card in the latest feed snapshot",
       "suggestedAlternatives": [],
       "sources": [
         {
@@ -112,7 +112,7 @@
       "licenseEvidenceUrl": "https://github.com/nodejs/node/blob/main/LICENSE",
       "licenseStatus": "verified_with_component_caveat",
       "inCurrentFeed": false,
-      "siteVisibility": "research-only; not published as a feed card",
+      "siteVisibility": "research-only; not published as a feed card in the latest feed snapshot",
       "suggestedAlternatives": [],
       "sources": [
         {
@@ -140,7 +140,7 @@
       "licenseEvidenceUrl": "https://github.com/python/cpython/blob/main/LICENSE",
       "licenseStatus": "verified_with_component_caveat",
       "inCurrentFeed": false,
-      "siteVisibility": "research-only; not published as a feed card",
+      "siteVisibility": "research-only; not published as a feed card in the latest feed snapshot",
       "suggestedAlternatives": [],
       "sources": [
         {
@@ -168,7 +168,7 @@
       "licenseEvidenceUrl": "https://github.com/rust-lang/rust",
       "licenseStatus": "verified_dual_license",
       "inCurrentFeed": false,
-      "siteVisibility": "research-only; not published as a feed card",
+      "siteVisibility": "research-only; not published as a feed card in the latest feed snapshot",
       "suggestedAlternatives": [],
       "sources": [
         {
@@ -196,7 +196,7 @@
       "licenseEvidenceUrl": "https://github.com/golang/go",
       "licenseStatus": "verified",
       "inCurrentFeed": false,
-      "siteVisibility": "research-only; not published as a feed card",
+      "siteVisibility": "research-only; not published as a feed card in the latest feed snapshot",
       "suggestedAlternatives": [],
       "sources": [
         {
@@ -224,7 +224,7 @@
       "licenseEvidenceUrl": "https://github.com/kubernetes/kubernetes",
       "licenseStatus": "verified",
       "inCurrentFeed": false,
-      "siteVisibility": "research-only; not published as a feed card",
+      "siteVisibility": "research-only; not published as a feed card in the latest feed snapshot",
       "suggestedAlternatives": [],
       "sources": [
         {
@@ -252,7 +252,7 @@
       "licenseEvidenceUrl": "https://github.com/postgres/postgres/blob/master/COPYRIGHT",
       "licenseStatus": "verified",
       "inCurrentFeed": false,
-      "siteVisibility": "research-only; not published as a feed card",
+      "siteVisibility": "research-only; not published as a feed card in the latest feed snapshot",
       "suggestedAlternatives": [],
       "sources": [
         {
@@ -280,7 +280,7 @@
       "licenseEvidenceUrl": "https://github.com/tensorflow/tensorflow",
       "licenseStatus": "verified",
       "inCurrentFeed": false,
-      "siteVisibility": "research-only; not published as a feed card",
+      "siteVisibility": "research-only; not published as a feed card in the latest feed snapshot",
       "suggestedAlternatives": [],
       "sources": [
         {
@@ -308,7 +308,7 @@
       "licenseEvidenceUrl": "https://github.com/pytorch/pytorch/blob/main/LICENSE",
       "licenseStatus": "verified_with_component_caveat",
       "inCurrentFeed": true,
-      "siteVisibility": "feed-visible; keep original id",
+      "siteVisibility": "current feed card; exact-id editorial enrichment verified; library entry is supplemental research only",
       "suggestedAlternatives": [],
       "sources": [
         {
@@ -336,7 +336,7 @@
       "licenseEvidenceUrl": "https://github.com/huggingface/transformers",
       "licenseStatus": "verified",
       "inCurrentFeed": true,
-      "siteVisibility": "feed-visible; keep original id",
+      "siteVisibility": "current feed card; exact-id editorial enrichment verified; library entry is supplemental research only",
       "suggestedAlternatives": [],
       "sources": [
         {
@@ -364,7 +364,7 @@
       "licenseEvidenceUrl": "https://github.com/ollama/ollama",
       "licenseStatus": "verified",
       "inCurrentFeed": false,
-      "siteVisibility": "research-only; not published as a feed card",
+      "siteVisibility": "research-only; not published as a feed card in the latest feed snapshot",
       "suggestedAlternatives": [],
       "sources": [
         {
@@ -392,7 +392,7 @@
       "licenseEvidenceUrl": "https://github.com/n8n-io/n8n/blob/master/LICENSE.md",
       "licenseStatus": "source_available_restricted",
       "inCurrentFeed": false,
-      "siteVisibility": "research-only; not published as a feed card",
+      "siteVisibility": "research-only; not published as a feed card in the latest feed snapshot",
       "suggestedAlternatives": [],
       "sources": [
         {
@@ -420,7 +420,7 @@
       "licenseEvidenceUrl": "https://github.com/langchain-ai/langchain",
       "licenseStatus": "verified",
       "inCurrentFeed": true,
-      "siteVisibility": "feed-visible; keep original id",
+      "siteVisibility": "current feed card; exact-id editorial enrichment verified; library entry is supplemental research only",
       "suggestedAlternatives": [],
       "sources": [
         {
@@ -448,7 +448,7 @@
       "licenseEvidenceUrl": "https://github.com/home-assistant/core",
       "licenseStatus": "verified",
       "inCurrentFeed": false,
-      "siteVisibility": "research-only; not published as a feed card",
+      "siteVisibility": "research-only; not published as a feed card in the latest feed snapshot",
       "suggestedAlternatives": [],
       "sources": [
         {
@@ -476,7 +476,7 @@
       "licenseEvidenceUrl": "https://github.com/obsproject/obs-studio",
       "licenseStatus": "verified",
       "inCurrentFeed": false,
-      "siteVisibility": "research-only; not published as a feed card",
+      "siteVisibility": "research-only; not published as a feed card in the latest feed snapshot",
       "suggestedAlternatives": [],
       "sources": [
         {
@@ -504,7 +504,7 @@
       "licenseEvidenceUrl": "https://github.com/blender/blender/blob/main/COPYING",
       "licenseStatus": "verified",
       "inCurrentFeed": false,
-      "siteVisibility": "research-only; not published as a feed card",
+      "siteVisibility": "research-only; not published as a feed card in the latest feed snapshot",
       "suggestedAlternatives": [],
       "sources": [
         {
@@ -532,7 +532,7 @@
       "licenseEvidenceUrl": "https://github.com/jellyfin/jellyfin",
       "licenseStatus": "verified",
       "inCurrentFeed": false,
-      "siteVisibility": "research-only; not published as a feed card",
+      "siteVisibility": "research-only; not published as a feed card in the latest feed snapshot",
       "suggestedAlternatives": [],
       "sources": [
         {
@@ -560,7 +560,7 @@
       "licenseEvidenceUrl": "https://github.com/immich-app/immich",
       "licenseStatus": "verified",
       "inCurrentFeed": false,
-      "siteVisibility": "research-only; not published as a feed card",
+      "siteVisibility": "research-only; not published as a feed card in the latest feed snapshot",
       "suggestedAlternatives": [],
       "sources": [
         {
@@ -588,7 +588,7 @@
       "licenseEvidenceUrl": "https://github.com/paperless-ngx/paperless-ngx",
       "licenseStatus": "verified",
       "inCurrentFeed": true,
-      "siteVisibility": "feed-visible; keep original id",
+      "siteVisibility": "current feed card; exact-id editorial enrichment verified; library entry is supplemental research only",
       "suggestedAlternatives": [],
       "sources": [
         {
@@ -616,7 +616,7 @@
       "licenseEvidenceUrl": "https://github.com/grafana/grafana",
       "licenseStatus": "verified",
       "inCurrentFeed": false,
-      "siteVisibility": "research-only; not published as a feed card",
+      "siteVisibility": "research-only; not published as a feed card in the latest feed snapshot",
       "suggestedAlternatives": [],
       "sources": [
         {
@@ -644,7 +644,7 @@
       "licenseEvidenceUrl": "https://github.com/godotengine/godot",
       "licenseStatus": "verified",
       "inCurrentFeed": false,
-      "siteVisibility": "research-only; not published as a feed card",
+      "siteVisibility": "research-only; not published as a feed card in the latest feed snapshot",
       "suggestedAlternatives": [],
       "sources": [
         {
@@ -672,7 +672,7 @@
       "licenseEvidenceUrl": "https://github.com/fastapi/fastapi",
       "licenseStatus": "verified",
       "inCurrentFeed": false,
-      "siteVisibility": "research-only; not published as a feed card",
+      "siteVisibility": "research-only; not published as a feed card in the latest feed snapshot",
       "suggestedAlternatives": [],
       "sources": [
         {
@@ -700,7 +700,7 @@
       "licenseEvidenceUrl": "https://github.com/sveltejs/svelte",
       "licenseStatus": "verified",
       "inCurrentFeed": false,
-      "siteVisibility": "research-only; not published as a feed card",
+      "siteVisibility": "research-only; not published as a feed card in the latest feed snapshot",
       "suggestedAlternatives": [],
       "sources": [
         {
@@ -728,7 +728,7 @@
       "licenseEvidenceUrl": "https://github.com/django/django",
       "licenseStatus": "verified",
       "inCurrentFeed": false,
-      "siteVisibility": "research-only; not published as a feed card",
+      "siteVisibility": "research-only; not published as a feed card in the latest feed snapshot",
       "suggestedAlternatives": [],
       "sources": [
         {
@@ -756,7 +756,7 @@
       "licenseEvidenceUrl": "https://github.com/neovim/neovim/blob/master/LICENSE.txt",
       "licenseStatus": "verified_with_component_caveat",
       "inCurrentFeed": false,
-      "siteVisibility": "research-only; not published as a feed card",
+      "siteVisibility": "research-only; not published as a feed card in the latest feed snapshot",
       "suggestedAlternatives": [],
       "sources": [
         {
@@ -784,7 +784,7 @@
       "licenseEvidenceUrl": "https://github.com/FFmpeg/FFmpeg/blob/master/COPYING.LGPLv2.1",
       "licenseStatus": "conditional_by_build",
       "inCurrentFeed": false,
-      "siteVisibility": "research-only; not published as a feed card",
+      "siteVisibility": "research-only; not published as a feed card in the latest feed snapshot",
       "suggestedAlternatives": [],
       "sources": [
         {
@@ -812,7 +812,7 @@
       "licenseEvidenceUrl": "https://github.com/atom/atom",
       "licenseStatus": "archived",
       "inCurrentFeed": false,
-      "siteVisibility": "research-only; not published as a feed card",
+      "siteVisibility": "research-only; not published as a feed card in the latest feed snapshot",
       "suggestedAlternatives": [
         "https://github.com/microsoft/vscode",
         "https://github.com/neovim/neovim"
@@ -843,7 +843,7 @@
       "licenseEvidenceUrl": "https://github.com/angular/angular.js",
       "licenseStatus": "archived",
       "inCurrentFeed": false,
-      "siteVisibility": "research-only; not published as a feed card",
+      "siteVisibility": "research-only; not published as a feed card in the latest feed snapshot",
       "suggestedAlternatives": [
         "https://github.com/angular/angular",
         "https://github.com/vuejs/core",
@@ -875,7 +875,7 @@
       "licenseEvidenceUrl": "https://github.com/microsoft/TypeScript",
       "licenseStatus": "verified",
       "inCurrentFeed": false,
-      "siteVisibility": "research-only; not published as a feed card",
+      "siteVisibility": "research-only; not published as a feed card in the latest feed snapshot",
       "suggestedAlternatives": [],
       "sources": [
         {
@@ -885,6 +885,102 @@
         {
           "title": "Official license evidence",
           "url": "https://github.com/microsoft/TypeScript"
+        }
+      ]
+    },
+    {
+      "repository": "rasbt/LLMs-from-scratch",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "category": "تعليم نماذج اللغة",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 107381,
+      "forksMeasured": 16548,
+      "metricCapturedAt": "2026-10-27T08:56:46+00:00",
+      "pushedAt": "2026-10-02T14:55:52Z",
+      "defaultBranch": "main",
+      "license": "Apache-2.0 (LICENSE.txt; GitHub API metadata returned NOASSERTION)",
+      "licenseEvidenceUrl": "https://github.com/rasbt/LLMs-from-scratch/blob/main/LICENSE.txt",
+      "licenseStatus": "verified_from_license_file",
+      "activityStatus": "not_archived; latest observed commit 2026-10-02T14:55:52Z",
+      "inCurrentFeed": true,
+      "siteVisibility": "current feed card; exact-id editorial enrichment added in this cycle; library entry is supplemental research, not a separate public card",
+      "suggestedAlternatives": [
+        "microsoft/AI-For-Beginners",
+        "karpathy/llm.c"
+      ],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/rasbt/LLMs-from-scratch"
+        },
+        {
+          "title": "Official license file",
+          "url": "https://github.com/rasbt/LLMs-from-scratch/blob/main/LICENSE.txt"
+        },
+        {
+          "title": "Setup guide",
+          "url": "https://github.com/rasbt/LLMs-from-scratch/blob/main/setup/README.md"
+        },
+        {
+          "title": "Requirements",
+          "url": "https://github.com/rasbt/LLMs-from-scratch/blob/main/requirements.txt"
+        },
+        {
+          "title": "Alternative: Microsoft AI-For-Beginners",
+          "url": "https://github.com/microsoft/AI-For-Beginners"
+        },
+        {
+          "title": "Alternative: llm.c",
+          "url": "https://github.com/karpathy/llm.c"
+        }
+      ]
+    },
+    {
+      "repository": "HKUDS/nanobot",
+      "url": "https://github.com/HKUDS/nanobot",
+      "category": "وكلاء الذكاء الاصطناعي",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 49319,
+      "forksMeasured": 8672,
+      "metricCapturedAt": "2026-10-27T08:56:46+00:00",
+      "pushedAt": "2026-10-27T08:22:33Z",
+      "defaultBranch": "main",
+      "license": "MIT",
+      "licenseEvidenceUrl": "https://github.com/HKUDS/nanobot/blob/main/LICENSE",
+      "licenseStatus": "verified",
+      "activityStatus": "not_archived; latest observed commit 2026-10-27T08:22:33Z",
+      "inCurrentFeed": true,
+      "siteVisibility": "current feed card; exact-id editorial enrichment added in this cycle; library entry is supplemental research, not a separate public card",
+      "suggestedAlternatives": [
+        "OpenHands/OpenHands",
+        "browser-use/browser-use"
+      ],
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/HKUDS/nanobot"
+        },
+        {
+          "title": "Official license file",
+          "url": "https://github.com/HKUDS/nanobot/blob/main/LICENSE"
+        },
+        {
+          "title": "Model providers guide",
+          "url": "https://github.com/HKUDS/nanobot/blob/main/docs/providers.md"
+        },
+        {
+          "title": "Deployment guide",
+          "url": "https://github.com/HKUDS/nanobot/blob/main/docs/deployment.md"
+        },
+        {
+          "title": "Alternative: OpenHands",
+          "url": "https://github.com/OpenHands/OpenHands"
+        },
+        {
+          "title": "Alternative: browser-use",
+          "url": "https://github.com/browser-use/browser-use"
         }
       ]
     }
@@ -1049,5 +1145,15 @@
     "Label source-available and conditional-build licenses clearly.",
     "Keep dossier links after projects leave the active feed.",
     "Distinguish proposals from implemented and tested features."
-  ]
+  ],
+  "currentMembershipRefresh": {
+    "checkedAt": "2026-10-27T12:00:39.606+03:00",
+    "feedGeneratedAt": "2026-10-27T08:56:46+00:00",
+    "feedBlobSha": "e7b1af7aa503cdac8f39019c4ebe0defb85f6b58",
+    "method": "Exact project URL comparison against current feed; exact original feed id/url checked against editorial.json.",
+    "metricsPolicy": "Historical 31 entries retain their original metricCapturedAt values; their stars/forks were not remeasured in this refresh.",
+    "inCurrentFeed": 6,
+    "notInFeed": 27,
+    "enrichedCurrentFeedProjects": 6
+  }
 }
