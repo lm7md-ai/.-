@@ -1,0 +1,709 @@
+{
+  "version": 1,
+  "items": {
+    "c3b76b15cb0ef91ef6": {
+      "titleAr": "سحب PEP 836 يوقف مسار اعتماد JIT تجريبي في CPython مؤقتًا",
+      "summaryAr": "الواقعة: يبيّن سجل PEP 836 الرسمي أنه سُحب في 19 أكتوبر 2026. ويشرح تقرير InfoWorld أن الخلاف تركز على نموذج الصيانة والتوافق وأدوات التصحيح وقياس المكاسب، لا على أن كل أشكال JIT انتهت. التحليل: هذا يرفع معيار الإثبات قبل إدخال مترجم تجريبي إلى CPython الرئيسي.",
+      "whyItMatters": "لمطوري Python، القرار يذكّر بأن تحسين الأداء يحتاج قياسات قابلة لإعادة الإنتاج وتكلفة صيانة واضحة. لا يعني أن تطبيقات Python الحالية ستتوقف أو أن PyPy والبدائل المستقلة اختفت.",
+      "audience": "مطورو Python، ومساهمو CPython، وفرق الأداء والاختبار.",
+      "nextSteps": [
+        "راجع حالة PEP 836 الرسمية قبل اتخاذ قرار تقني.",
+        "قِس برامجك الفعلية على إصدار Python المستخدم بدل الاعتماد على عنوان الخبر.",
+        "قارن أي بديل مثل PyPy على التوافق مع مكتبات C التي يحتاجها مشروعك."
+      ],
+      "limitations": "قُرئ تقرير InfoWorld وسجل PEP الرسمي. لا يثبت سحب المقترح أن كل أبحاث JIT توقفت، ولا أن نتائج الأداء واحدة لكل برنامج.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "InfoWorld — Python jettisons the native JIT",
+          "url": "https://www.infoworld.com/article/4241003/python-jettisons-the-native-jit-at-least-for-now.html"
+        },
+        {
+          "title": "PEP 836 — الحالة الرسمية",
+          "url": "https://peps.python.org/pep-0836/"
+        },
+        {
+          "title": "مناقشة سحب PEP 836",
+          "url": "https://discuss.python.org/t/pep-836-jit-go-brrr-the-path-to-a-supported-jit-compiler-for-cpython/108010/57"
+        }
+      ],
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxORlRKeUtRVlZqYmNmUEx0VkVjbTN3ZGJFdFJoSkRaWjRHV3JnMkF0S09aaG9PSGs2ZjVhYTNYWmhhZ3g0X1BiNDNEOUFaNmhrQTRndThIeEhrbFZaa2NwRmNUcllTSlA0MTNObTlTWlNaYnNnS252ajRubzZ5WFBSbU1CUWptMGx5X1hwUExpOEtfeV9jUzN5dzEtVQ?oc=5",
+      "reviewedAt": "2026-10-27T20:47:00+00:00"
+    },
+    "b7bdac3bb4ce8ed246": {
+      "titleAr": "تقرير عن استخدام الذكاء الاصطناعي لتحديد سلوك مريب لدى السائقين",
+      "summaryAr": "العنوان المتاح في التغذية ينسب إلى Gizmodo تقريرًا عن استخدام أنظمة ذكاء اصطناعي لتحديد سلوك يوصف بأنه مريب أثناء القيادة. لم أتمكن من قراءة نص المقال الأصلي في هذه الدورة، لذلك لا أؤكد الجهة المستخدمة أو حجم التطبيق أو دقة النظام.",
+      "whyItMatters": "إذا استُخدمت مؤشرات آلية لتوجيه توقيفات الشرطة، تصبح الشفافية ومعدلات الخطأ وإمكانية الاعتراض عوامل أساسية؛ فالتصنيف الخاطئ قد يؤثر في أشخاص لم يرتكبوا مخالفة.",
+      "audience": "المهتمون بالذكاء الاصطناعي المسؤول، والخصوصية، والسياسات العامة، وأنظمة النقل.",
+      "nextSteps": [
+        "اطلب تفاصيل موثقة عن البيانات والمعايير التي يعتمد عليها النظام.",
+        "ابحث عن تدقيق مستقل لمعدلات الإيجابيات الكاذبة والانحياز.",
+        "ميّز بين إشارة آلية أولية والدليل الذي يبرر إجراءً قانونيًا."
+      ],
+      "limitations": "basis=metadata: لم يُقرأ نص Gizmodo الأصلي؛ المتاح هنا عنوان المقال ورابطه فقط، فلا تُعامل تفاصيل الاستخدام أو دقته كحقائق متحققة.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "Gizmodo — Police Are Using AI to Pull over Drivers for Suspicious Behavior",
+          "url": "https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220"
+        }
+      ],
+      "url": "https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220",
+      "reviewedAt": "2026-10-27T20:47:00+00:00"
+    },
+    "6729758e65093d31d9": {
+      "titleAr": "WIRED يبرز مخاطر إمدادات الغاز مع توسع مراكز بيانات الذكاء الاصطناعي",
+      "summaryAr": "عنوان WIRED ووصف التغذية يربطان توسع مراكز البيانات بمخاطر الاعتماد على إمدادات الغاز والبنية التحتية للطاقة. هذه زاوية مخاطر وتوقعات في تقرير عن إفصاحات Anthropic، وليست قياسًا مستقلًا أجريناه أو نتيجة مؤكدة بأن الأسعار سترتفع حتمًا.",
+      "whyItMatters": "توسّع الذكاء الاصطناعي يعتمد على الكهرباء والشبكات والتبريد والوقود بقدر اعتماده على الشرائح. قد تؤثر قيود الطاقة في تكلفة الحوسبة ومواقع مراكز البيانات وخطط الاستدامة.",
+      "audience": "مهندسو البنية التحتية، وفرق الاستدامة، ومتابعو اقتصاد الذكاء الاصطناعي.",
+      "nextSteps": [
+        "اقرأ الإفصاح الأصلي عند إتاحته وقارن ما هو خطر معلن بما هو توقع صحفي.",
+        "تابع مؤشرات سعة الشبكة وتوافر الطاقة بدل الاعتماد على عنوان منفرد.",
+        "قارن خيارات الطاقة والكفاءة وموقع مركز البيانات عند تقدير التكلفة."
+      ],
+      "limitations": "basis=metadata: لم أتمكن من فتح نص WIRED الكامل؛ اعتمدت على عنوان التغذية ووصفها ومقتطف ثانوي. لم أدرج أرقامًا غير متحققة من النص الأصلي.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "WIRED — Anthropic Flags Gas Supply as One of Its Biggest Near-Term Risks",
+          "url": "https://www.wired.com/story/anthropic-ipo-identifies-gas-supply-as-big-near-term-risks/"
+        },
+        {
+          "title": "مقتطف ثانوي من التقرير مع إحالة إلى WIRED",
+          "url": "https://www.instantaneas.org.bo/2026/10/27/economia/anthropic-riesgo-gas-opi-centros-datos"
+        }
+      ],
+      "url": "https://www.wired.com/story/anthropic-ipo-identifies-gas-supply-as-big-near-term-risks/",
+      "reviewedAt": "2026-10-27T20:47:00+00:00"
+    },
+    "1c5b51464767c2ad29": {
+      "titleAr": "Liquid AI تطلق عائلة LFM3 متعددة الوسائط",
+      "summaryAr": "أعلنت Liquid AI عائلة LFM3 بقاعدة مشتركة ومسارات متخصصة للنص والصورة والصوت والمهام متعددة الوسائط. وتذكر الشركة أن النموذج الأساسي LFM3-1.7B دُرّب على 22 تريليون رمز ويدعم نافذة سياق 256 ألف رمز؛ كما تنسب إلى اختباراتِها مكاسب في السرعة والذاكرة. هذه أرقام معلنة من الشركة وليست تقييمًا مستقلًا.",
+      "whyItMatters": "قد تتيح النماذج الأصغر والمتخصصة تجارب محلية بزمن استجابة وذاكرة أقل، لكن اختيارها يجب أن يعتمد على جودة المهمة العربية الفعلية وتكلفة الضبط والاستدلال، لا على عدد المعلمات وحده.",
+      "audience": "مطورو تطبيقات النماذج المحلية، وباحثو النماذج متعددة الوسائط، وفرق Edge AI.",
+      "nextSteps": [
+        "راجع بطاقات النماذج والترخيص لكل checkpoint قبل التوزيع.",
+        "اختبر مجموعة عربية صغيرة تغطي النص والصورة والصوت حسب استخدامك.",
+        "قارن الجودة والذاكرة وزمن الاستجابة على الجهاز نفسه مع بديلين على الأقل."
+      ],
+      "limitations": "قُرئ إعلان Liquid AI الرسمي. معظم أرقام الأداء والتفوق الواردة فيه تقارير الشركة عن اختبارات داخلية؛ لم أعد تشغيل النماذج أو أتحقق مستقلًا من بروتوكولات القياس.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Liquid AI — Introducing LFM3",
+          "url": "https://www.liquid.ai/blog/lfm3"
+        },
+        {
+          "title": "Hugging Face — Build specialized multimodal models with LFM3",
+          "url": "https://huggingface.co/blog/LiquidAI/lfm3"
+        }
+      ],
+      "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+      "reviewedAt": "2026-10-27T20:47:00+00:00"
+    },
+    "bb9f02a56d8cd14e98": {
+      "titleAr": "The Verge يناقش حماية التزامات السلامة لدى Anthropic مع احتمال الطرح العام",
+      "summaryAr": "المقتطف المتاح من The Verge يصوّر معضلة Anthropic بين الوصول إلى أسواق رأس المال والإبقاء على التزاماتها المعلنة بشأن سلامة الذكاء الاصطناعي، في وقت قد يزيد فيه تطور النماذج مخاطرها وتضغط فيه توقعات المستثمرين نحو النمو. هذا عرض صحفي للتوتر المحتمل، وليس دليلًا بحد ذاته على أن الضمانات فعالة أو غير فعالة.",
+      "whyItMatters": "عند انتقال شركة ذكاء اصطناعي إلى ملكية عامة، تصبح الحوكمة والإفصاح واستقلالية مراجعات السلامة وآليات المساءلة عوامل يمكن مراقبتها، بدل الاكتفاء بوعود عامة.",
+      "audience": "متابعو حوكمة الذكاء الاصطناعي، والباحثون في السلامة، ومهتمو سياسات الشركات التقنية.",
+      "nextSteps": [
+        "راجع النص الكامل وأي إفصاحات رسمية مرتبطة به قبل الاستشهاد بالتفاصيل.",
+        "افصل بين التعهدات الطوعية والالتزامات القانونية أو المؤسسية الملزمة.",
+        "تابع ما إذا كانت الشركة تنشر مقاييس سلامة قابلة للمراجعة المستقلة."
+      ],
+      "limitations": "basis=metadata: راجعت مقتطف التغذية فقط، ولم أقرأ المقال الكامل. ما ورد عن ضغوط المستثمرين هو إطار المقال وتحليله وليس نتيجة مستقلة مثبتة هنا.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "The Verge — Anthropic’s elaborate plan to keep Wall Street at bay",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety"
+        }
+      ],
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety",
+      "reviewedAt": "2026-10-27T20:47:00+00:00"
+    },
+    "017293dd2454d4e4f8": {
+      "titleAr": "تقرير عربي يعلن iMac بمعالج M6؛ المواصفات تحتاج تأكيدًا رسميًا مستقلًا",
+      "summaryAr": "تقول البوابة العربية للأخبار التقنية إن Apple حدّثت iMac بمعالج M6 مع تركيز على معالجة مهام الذكاء الاصطناعي محليًا، وتورد مواصفات وأسعارًا تفصيلية. لم أعثر في بحث هذه الدورة على بيان Apple Newsroom مستقل يؤكد إطلاق iMac M6 تحديدًا؛ لذلك تُنسب المواصفات والأرقام إلى التقرير العربي ولا ينبغي عرضها كحقيقة مؤكدة من Apple.",
+      "whyItMatters": "إذا تأكدت المواصفات، فسيهم المطورين والطلاب أداء الاستدلال المحلي والذاكرة والتكلفة. لكن قرار الشراء أو المقارنة يحتاج صفحة منتج رسمية واختبارات مستقلة على أحمال فعلية.",
+      "audience": "متابعو أجهزة الحوسبة المحلية، ومطورو التطبيقات، وطلاب التقنية.",
+      "nextSteps": [
+        "تحقق من صفحة Apple الرسمية قبل اعتماد موعد التوفر أو المواصفات.",
+        "انتظر اختبارات مستقلة للذاكرة والأداء الحراري وأحمال AI المحلية.",
+        "قارن التكلفة الكلية والذاكرة والتخزين بما يتطلبه استخدامك الفعلي."
+      ],
+      "limitations": "قُرئ نص التقرير المتاح عبر نتيجة البحث، لكن الصفحة الأصلية أعادت 403 ولم يظهر بيان رسمي مستقل عن iMac M6 في البحث. جميع المواصفات والأسعار هنا منسوبة إلى الناشر وليست تأكيدًا من Apple.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "البوابة العربية للأخبار التقنية — تقرير iMac M6",
+          "url": "https://aitnews.com/2026/10/27/%d8%a2%d8%a8%d9%84-%d8%aa%d8%b7%d9%84%d9%82-%d8%ad%d8%a7%d8%b3%d9%88%d8%a8%d9%87%d8%a7-%d8%a7%d9%84%d9%85%d9%83%d8%aa%d8%a8%d9%8a-imac-%d8%a8%d9%85%d8%b9%d8%a7%d9%84%d8%ac-m6-%d9%82%d9%81%d8%b2/"
+        },
+        {
+          "title": "Apple Newsroom — إعلان Mac mini M6 (للسياق فقط، لا يؤكد iMac)",
+          "url": "https://www.apple.com/sa/newsroom/2026/08/apple-unveils-powerful-mac-mini-with-m6-and-m5-pro/"
+        }
+      ],
+      "url": "https://aitnews.com/2026/10/27/%d8%a2%d8%a8%d9%84-%d8%aa%d8%b7%d9%84%d9%82-%d8%ad%d8%a7%d8%b3%d9%88%d8%a8%d9%87%d8%a7-%d8%a7%d9%84%d9%85%d9%83%d8%aa%d8%a8%d9%8a-imac-%d8%a8%d9%85%d8%b9%d8%a7%d9%84%d8%ac-m6-%d9%82%d9%81%d8%b2/",
+      "reviewedAt": "2026-10-27T20:47:00+00:00"
+    },
+    "8eed34676e1b2dfdb0": {
+      "titleAr": "غوغل توسّع إتاحة كاشف SynthID لفحص علامات مائية في الوسائط",
+      "summaryAr": "تقول Google إن SynthID Detector أصبح متاحًا عالميًا بالإنجليزية لفحص الصور والفيديو والصوت بحثًا عن علامات SynthID المدعومة، بما فيها علامات شركاء مثل OpenAI وNVIDIA وKakao، مع خطط لإضافة Apple. ويذكر تقرير Ars Technica أن الاستخدام يتطلب تسجيل دخول وله حدود؛ كما يوضح أن الأداة لا تكشف كل محتوى الذكاء الاصطناعي إذا لم يحمل علامة مدعومة.",
+      "whyItMatters": "أدوات التحقق تساعد على إضافة سياق للمحتوى، لكنها ليست كاشفًا شاملًا ولا بديلًا عن التحقق من المصدر وسياق النشر وبيانات المنشأ.",
+      "audience": "الصحفيون، ومراجعو المحتوى، والمعلمون، ومطورو أدوات التحقق من الوسائط.",
+      "nextSteps": [
+        "استخدم الكاشف فقط كإشارة عن العلامات التي يدعمها.",
+        "لا تستنتج أن ملفًا من صنع إنسان لمجرد عدم اكتشاف علامة.",
+        "اجمع بين بيانات المنشأ والمصدر الأصلي والتحقق البشري."
+      ],
+      "limitations": "قُرئ إعلان Google الرسمي ومراجعة Ars Technica، لا النص الكامل لرابط Google News الوسيط إلى الشرق الأوسط. غياب علامة SynthID لا يثبت أن الوسائط بشرية أو أصلية.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Google — توسعة SynthID Detector",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/"
+        },
+        {
+          "title": "Ars Technica — SynthID detector available globally",
+          "url": "https://arstechnica.com/ai/2026/10/google-rolls-out-improved-synthid-ai-content-detector-now-available-globally/"
+        },
+        {
+          "title": "رابط التغذية إلى تقرير الشرق الأوسط",
+          "url": "https://news.google.com/rss/articles/CBMihgRBVV95cUxPeXh5ODM2SG1QNy1rMm9fa1RJYWFhWUdiM05MN3F4N1E3X3lPYjJDUFFWVlFxUFVXTnNMZ1l4dVlsS3laZXBJaXBKR3hMVVMyWklNX3c2TkRYbmM3Slh2eHMzS2c3d1V4ZFhDdzVJeW1ELWRxUk5Vam55SzFmcE5rUUgyYUFkbTRNN0VJUVZpdjh0YWY4RlBaRXlBWTNqdnBNM19zVk8xcXl0WHUyT0drQ2pxeU14QU50cTFUN3A2X1lseEZ0R1JMUFlDQnB5ekE1b2dKRHMtaTBhRXhGa0xmX3RaQ09ER1k4WFJOQWtpeGRldzlCOVBmQkc3aU9Bd1FXd0kzS2NHUkNieUtMMFpOWm5SOHYxbDJoZjhaYXdhUm1OYVhJUy11cXdkUWZka29ILXNIQVhvd3p1SWRMSXViWlpVbWRfc2ZXZkZkNEE3cEJHZnFRQXdkR0puVG53S3VOQlotb0FoVTBBc0o5QmFkTjZMYk1GOXpXS1VQdHBlT3ktNkwyakJKYXZJNzVhOFRMNTdhcVo2RzhDQUVrbGdMUFRxXzd6QktzVGtiV05CX2w1WmtVSWFGZ3hlVGxFMHpURU1jMERYR2R6T3JyMndwRjY1a0NzUFZLU3JTUGdtQjhuRzl6VXNnRjNmU0JaWVM5RnE5SzJjdVk0OTNGVFpaUjkwUQ?oc=5"
+        }
+      ],
+      "url": "https://news.google.com/rss/articles/CBMihgRBVV95cUxPeXh5ODM2SG1QNy1rMm9fa1RJYWFhWUdiM05MN3F4N1E3X3lPYjJDUFFWVlFxUFVXTnNMZ1l4dVlsS3laZXBJaXBKR3hMVVMyWklNX3c2TkRYbmM3Slh2eHMzS2c3d1V4ZFhDdzVJeW1ELWRxUk5Vam55SzFmcE5rUUgyYUFkbTRNN0VJUVZpdjh0YWY4RlBaRXlBWTNqdnBNM19zVk8xcW8xcXl0WHUyT0drQ2pxeU14QU50cTFUN3A2X1lseEZ0R1JMUFlDQnB5ekE1b2dKRHMtaTBhRXhGa0xmX3RaQ09ER1k4WFJOQWtpeGRldzlCOVBmQkc3aU9Bd1FXd0kzS2NHUkNieUtMMFpOWm5SOHYxbDJoZjhaYXdhUm1OYVhJUy11cXdkUWZka29ILXNIQVhvd3p1SWRMSXViWlpVbWRfc2ZXZkZkNEE3cEJHZnFRQXdkR0puVG53S3VOQlotb0FoVTBBc0o5QmFkTjZMYk1GOXpXS1VQdHBlT3ktNkwyakJKYXZJNzVhOFRMNTdhcVo2RzhDQUVrbGdMUFRxXzd6QktzVGtiV05CX2w1WmtVSWFGZ3hlVGxFMHpURU1jMERYR2R6T3JyMndwRjY1a0NzUFZLU3JTUGdtQjhuRzl6VXNnRjNmU0JaWVM5RnE5SzJjdVk0OTNGVFpaUjkwUQ?oc=5",
+      "reviewedAt": "2026-10-27T20:47:00+00:00"
+    },
+    "4d9f0dca455088c32b": {
+      "titleAr": "تجربة صحفية تختبر وكلاء ذكاء اصطناعي لتنفيذ مهام متعددة الخطوات",
+      "summaryAr": "يروي Brian X. Chen في الشرق الأوسط تجربة على مدى أسبوعين لوكيلين هما Muse من Meta وDots من OpenAI، ويصف مهامًا مثل حجز مطعم والتقديم لوظائف وتخطيط وجبات. يوضح المقال أن الوكيل يستخدم متصفحًا وحسابات متصلة، ويحذر من منح صلاحيات واسعة أو ربط حساب شخصي حساس. هذه تجربة صحفية وليست اختبارًا معياريًا لجميع المستخدمين.",
+      "whyItMatters": "الانتقال من الدردشة إلى تنفيذ الأفعال يزيد الفائدة لكنه يزيد أيضًا أثر الأخطاء ومخاطر الخصوصية. الحسابات المخصصة والمراجعة قبل إرسال أو شراء أو حجز خطوات أساسية لتقليل الضرر.",
+      "audience": "مستخدمو وكلاء الذكاء الاصطناعي، ومطورو الأتمتة، وفرق الخصوصية وتجربة المستخدم.",
+      "nextSteps": [
+        "ابدأ بمهمة منخفضة المخاطر وتحقق من النتيجة يدويًا.",
+        "استخدم حسابًا مخصصًا وصلاحيات محدودة بدل ربط البريد أو الملفات الشخصية كلها.",
+        "اطلب موافقة بشرية قبل إرسال طلبات أو رسائل أو حجوزات نهائية."
+      ],
+      "limitations": "قُرئ المقال الأصلي في الشرق الأوسط. نتائجه تجربة مستخدم واحدة على مهام محددة؛ قد تختلف الدقة والتوفر والأسعار والسياسات بحسب المنتج والبلد.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "الشرق الأوسط — تجربة وكلاء الذكاء الاصطناعي",
+          "url": "https://aawsat.com/%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A7/5334284-%D9%88%D8%B8%D9%91%D9%90%D9%81-%D9%88%D9%83%D9%84%D8%A7%D8%A1-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%D9%84%D8%AF%D9%8A%D9%83-%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0-%D9%87%D8%B0%D9%87-%D8%A7%D9%84%D9%85%D9%87%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D8%AE%D9%85%D8%B3-%D8%A7%D9%84%D9%85%D9%87%D9%85%D8%A9"
+        },
+        {
+          "title": "رابط التغذية إلى تقرير الشرق الأوسط",
+          "url": "https://news.google.com/rss/articles/CBMi1gRBVV95cUxQdnZLRzlGS29xYzZZSVphZS1TZGw1TjQ0WUQ5eU5pWE1wSmRFcnVBcWFIVWUwUk1SV2hSNGVCNE54ZlR4aEVvVVJ3V1ItaDFTX0hTZ3oxZi1JVG5HLTJzVzRnY0hGUXRhSmtad1ZicXNBNTh0bnRJZ2NjSjZkREJMem9xQ0c5Uk9wV2liWHdiNXhwaGFiRDNOa2VSdUV3Ul8wNlU1ems2QlQwZGVoRk0tUVV5Y3hXM1B4M1RaOTJFMHl6dk52eXlmR3h4UEx2OGNkcXUxX29kY3dhYjBzblNhbm03RHRjdVl6SmpFS2oxTHFlUDF4VFFHTzNEakt1MWEyV0FpSlFnTXdHUDZzMDhtem5SNWdDeVN5WW9BSHFmTEhGazZOMW1VZFo5THBqd2JFNmpEX2d1SUttaFVZdGNCQk5TZXZPUXdOaFRrT0gxUE55VzAwRTdwalRqaFkyb2hMaEgyZTVQMk0yOWJQRG1jU0wyQkJNZXFvVHFBbWhWVkhLOW5mMWtSenNVdEdYbVpNVDg4VV9xS0lGNDBEaHdxUkJJYWFySUpnRW5mN0pRaWt4MGZaWTQ3d09pVEUxWmszVXM1bUVUeGRtcHV1RjVub3dvbkxjck5hc0tDakpiUnRjcHR0Z19LTWhMUGZmZzByY1hYdW5RTzVLZTQyaXk1eWpFblNXRzAyUHBkcGc2QnF2aExSR0FsNjFYMndxMWZfdU5MVHhUbTJlZE1Vd2hYckhiTVFqak5qUjFKRzZrTU1DU2JNY1VBa3ZRS3FVeC1RM2R2MG1B?oc=5"
+        }
+      ],
+      "url": "https://news.google.com/rss/articles/CBMi1gRBVV95cUxQdnZLRzlGS29xYzZZSVphZS1TZGw1TjQ0WUQ5eU5pWE1wSmRFcnVBcWFIVWUwUk1SV2hSNGVCNE54ZlR4aEVvVVJ3V1ItaDFTX0hTZ3oxZi1JVG5HLTJzVzRnY0hGUXRhSmtad1ZicXNBNTh0bnRJZ2NjSjZkREJMem9xQ0c5Uk9wV2liWHdiNXhwaGFiRDNOa2VSdUV3Ul8wNlU1ems2QlQwZGVoRk0tUVV5Y3hXM1B4M1RaOTJFMHl6dk52eXlmR3h4UEx2OGNkcXUxX29kY3dhYjBzblNhbm03RHRjdVl6SmpFS2oxTHFlUDF4VFFHTzNEakt1MWEyV0FpSlFnTXdHUDZzMDhtem5SNWdDeVN5WW9BSHFmTEhGazZOMW1VZFo5THBqd2JFNmpEX2d1SUttaFVZdGNCQk5TZXZPUXdOaFRrT0gxUE55VzAwRTdwalRqaFkyb2hMaEgyZTVQMk0yOWJQRG1jU0wyQkJNZXFvVHFBbWhWVkhLOW5mMWtSenNVdEdYbVpNVDg4VV9xS0lGNDBEaHdxUkJJYWFySUpnRW5mN0pRaWt4MGZaWTQ3d09pVEUxWmszVXM1bUVUeGRtcHV1RjVub3dvbkxjck5hc0tDakpiUnRjcHR0Z19LTWhMUGZmZzByY1hYdW5RTzVLZTQyaXk1eWpFblNXRzAyUHBkcGc2QnF2aExSR0FsNjFYMndxMWZfdU5MVHhUbTJlZE1Vd2hYckhiTVFqak5qUjFKRzZrTU1DU2JNY1VBa3ZRS3FVeC1RM2R2MG1B?oc=5",
+      "reviewedAt": "2026-10-27T20:47:00+00:00"
+    },
+    "7902623a7409394d76": {
+      "titleAr": "تقرير عن أمر قضائي بقيمة 25 مليار دولار ضد Meta يفتح نقاشًا حول المساءلة",
+      "summaryAr": "المقتطف المتاح من تغطية The Verge يقول إن قاضيًا في نيو مكسيكو أمر Meta بدفع 25 مليار دولار على خلفية ادعاءات تتصل بتضليل المستخدمين في قضية Cambridge Analytica وحوادث مرتبطة بها. يذكر المقتطف أن بقاء الأمر يتوقف على الطعون القانونية؛ لذلك لا ينبغي عرضه كتسوية نهائية محسومة.",
+      "whyItMatters": "القضايا الكبيرة المتعلقة بالبيانات والمنصات قد تؤثر في معايير الحماية والإفصاح والمسؤولية القانونية. المهم متابعة نص الحكم ومسار الطعن، لا رقم العنوان وحده.",
+      "audience": "المهتمون بخصوصية البيانات، وسياسات المنصات، والمسؤولية القانونية للتقنية.",
+      "nextSteps": [
+        "راجع نص الحكم الأصلي وأي بيان رسمي عن الاستئناف قبل نشر أرقام نهائية.",
+        "ميّز بين أمر قضائي أولي وتسوية نهائية أو مبلغ تم دفعه بالفعل.",
+        "تابع أثر القضية على سياسات الخصوصية وحماية المستخدمين."
+      ],
+      "limitations": "basis=metadata: قرأت مقتطفًا من نسخة مرخّصة/مجمّعة تحيل إلى The Verge، لا المقال الأصلي كاملًا أو ملف المحكمة. المبلغ والنتيجة القانونية منسوبان إلى التقرير وقد يتغيران بالطعون.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "The Verge — Meta’s $25 billion legal loss",
+          "url": "https://www.theverge.com/policy/1019604/new-mexico-meta-cambridge-analytica-kids-safety-settlement"
+        },
+        {
+          "title": "مقتطف مجمّع يحيل إلى The Verge",
+          "url": "https://babnews.org/articles/49999"
+        }
+      ],
+      "url": "https://www.theverge.com/policy/1019604/new-mexico-meta-cambridge-analytica-kids-safety-settlement",
+      "reviewedAt": "2026-10-27T20:47:00+00:00"
+    },
+    "77387043f69a853ed6": {
+      "titleAr": "تقرير: مساعد ذكاء اصطناعي يصل إلى Pages وKeynote وNumbers",
+      "summaryAr": "يقول مقتطف The Verge إن Apple تضيف مساعدًا إلى تطبيقات Pages وKeynote وNumbers، مع نماذج من Apple وOpenAI وقدرة مزعومة على فهم سياق المستند والمساعدة في صياغة النصوص وإعادة تنظيم العروض. لم أقرأ المقال الكامل في هذه الدورة، لذا أتعامل مع التفاصيل باعتبارها ما أورده المقتطف لا تقييمًا مستقلًا للميزة.",
+      "whyItMatters": "إذا تأكد التكامل، فقد يغيّر طريقة إعداد المستندات والعروض، لكنه يثير أسئلة حول مكان معالجة الملفات، وبيانات المؤسسة، وإمكانية مراجعة المخرجات قبل مشاركتها.",
+      "audience": "الطلاب، وصنّاع العروض، وفرق العمل التي تستخدم حزم الإنتاجية.",
+      "nextSteps": [
+        "اقرأ سياسة الخصوصية وشروط المعالجة قبل استخدام مستندات حساسة.",
+        "اختبر دقة المخرجات على نسخة غير حساسة من ملفك.",
+        "راجع النصوص والأرقام والمراجع يدويًا قبل تسليم العرض أو مشاركته."
+      ],
+      "limitations": "basis=metadata: المراجعة مبنية على مقتطف التغذية وعنوان The Verge؛ لم أقرأ النص الكامل أو وثائق Apple الرسمية الخاصة بالميزة في هذه الدورة.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "The Verge — Apple is adding an AI chatbot to Pages, Keynote, and Numbers",
+          "url": "https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update"
+        }
+      ],
+      "url": "https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update",
+      "reviewedAt": "2026-10-27T20:47:00+00:00"
+    },
+    "c7cc848b2884e07731": {
+      "titleAr": "DeepMind تعرض Genie 4 لتوليد عوالم تفاعلية أكثر واقعية وصوت",
+      "summaryAr": "بحسب Ars Technica، ينشئ Genie 4 بيئات تفاعلية تتغير أثناء الاستكشاف، ويضيف صوتًا أصليًا وتحسينات تدّعي Google أنها تخص الفيزياء وحركة الشخصيات. ويذكر التقرير أن اتساق العالم يظل محدودًا إلى بضع دقائق، وأن الإتاحة ستتوسع تدريجيًا دون موعد عام محدد؛ لذا ما زال المشروع أقرب إلى بحث ومنتج تجريبي من محاكاة طويلة موثوقة.",
+      "whyItMatters": "نماذج العالم قد تفيد التدريب والمحاكاة والنمذجة الأولية، لكنها تحتاج تقييمًا لثبات الحالة والفيزياء والتحكم والتكلفة قبل الاعتماد عليها في محاكاة حساسة أو طويلة.",
+      "audience": "باحثو الروبوتات والمحاكاة، ومطورو الألعاب، ومهندسو النماذج متعددة الوسائط.",
+      "nextSteps": [
+        "تابع وثائق الإتاحة الرسمية بدل افتراض توفر عام.",
+        "قيّم ثبات الحالة الفيزيائية عبر جلسات طويلة لا عبر لقطة فيديو قصيرة فقط.",
+        "افصل بين جودة العرض البصري وصحة المحاكاة القابلة للقياس."
+      ],
+      "limitations": "قُرئ تقرير Ars Technica؛ معظم قدرات النموذج وأدائه منسوبة إلى Google. لم أختبر Genie 4، والوصول والأسعار والتوفر العام لم تكن محددة بالكامل في التقرير.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Ars Technica — DeepMind’s Genie 4 world model",
+          "url": "https://arstechnica.com/google/2026/10/deepminds-genie-4-world-model-adds-audio-and-more-realistic-people-to-simulations/"
+        }
+      ],
+      "url": "https://arstechnica.com/google/2026/10/deepminds-genie-4-world-model-adds-audio-and-more-realistic-people-to-simulations/",
+      "reviewedAt": "2026-10-27T20:47:00+00:00"
+    },
+    "9866bf72e87f85c819": {
+      "titleAr": "نائبة بريطانية تلاحق xAI قضائيًا بشأن إساءة استخدام صورتها",
+      "summaryAr": "في مقابلة WIRED، تقول النائبة Jess Asato إنها بدأت إجراءً قانونيًا ضد xAI بعد تداول صور ومقاطع مولّدة بالذكاء الاصطناعي تستخدم صورتها دون موافقتها. وتطرح القضية أسئلة عن الموافقة والخصوصية ومسؤولية المنصات عن مخرجات أدواتها؛ وهي مطالبة قانونية قيد النظر وليست حكمًا قضائيًا نهائيًا.",
+      "whyItMatters": "تُظهر القضية أن إساءة استخدام الشبه الرقمي ليست مسألة تقنية فقط؛ بل تمس الموافقة وسبل الإبلاغ وواجبات المنصات وحقوق المتضررين. التصميم الوقائي والاستجابة السريعة قد يقللان الضرر قبل وصول النزاع إلى المحاكم.",
+      "audience": "مطورو أدوات الصور، وفرق الثقة والسلامة، وصانعو السياسات، والمهتمون بحقوق الخصوصية.",
+      "nextSteps": [
+        "تابع المستندات العامة للقضية بدل استنتاج النتيجة من المقابلة وحدها.",
+        "عند بناء أداة صور، ضع منعًا افتراضيًا للمحتوى غير الموافق عليه ومسار بلاغات واضحًا.",
+        "لا تعِد نشر صور مسيئة أو مزيفة؛ أبلغ المنصة واحتفظ بالمعلومات اللازمة للتبليغ بأمان."
+      ],
+      "limitations": "قُرئت مقابلة WIRED. الرواية الأساسية منسوبة إلى Asato، والقضية لم تكن محسومة في المقال؛ وذكر التقرير أن xAI لم ترد فورًا على طلب التعليق.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "WIRED — UK Politician Jess Asato Got Deepfaked. Now She’s Taking xAI to Court",
+          "url": "https://www.wired.com/story/the-big-interview-podcast-jess-asato/"
+        }
+      ],
+      "url": "https://www.wired.com/story/the-big-interview-podcast-jess-asato/",
+      "reviewedAt": "2026-10-27T20:47:00+00:00"
+    },
+    "134916e26204392cdb": {
+      "url": "https://github.com/HKUDS/LightRAG",
+      "titleAr": "LightRAG: استرجاع معزز بالمعرفة يجمع الرسم البياني والمتجهات",
+      "summaryAr": "LightRAG إطار RAG خفيف يدمج رسمًا بيانيًا للكيانات والعلاقات مع التضمينات المتجهية، ويقدم أوضاع استرجاع مثل local وglobal وhybrid وmix. يوصي README بمخازن أقوى مثل PostgreSQL للإنتاج، ويحذر من أن التخزين الافتراضي المحلي مناسب للاختبار الصغير لا للنشر الإنتاجي.",
+      "whyItMatters": "يمكن أن يساعد في ربط الأسئلة بمفاهيم وعلاقات عبر مجموعات مستندات كبيرة، لكنه يضيف تعقيد استخراج الكيانات والفهرسة والتكلفة. القيمة الفعلية تقاس بدقة الإجابة وإسنادها وزمنها على بيانات المجال المطلوب.",
+      "audience": "مطورو RAG، وفرق البحث المعرفي، والجامعات التي تبني بحثًا موثقًا في المستندات.",
+      "overview": "LightRAG إطار Python مفتوح المصدر للاسترجاع المعزز بالتوليد يجمع بين رسم معرفة وبيانات متجهية. يدعم عدة مخازن خلفية، وخيارات تشغيل محلي أو Docker، وأنماط استرجاع مختلفة. لا يضمن وجود الرسم البياني صحة الإجابة؛ تبقى جودة الاستخراج والتضمين والنموذج والبيانات حاسمة.",
+      "requirements": "Python 3.10 أو أحدث، ويفضل uv لإدارة الحزم. يحتاج إعداد LLM وembedding provider في ملف البيئة؛ يمكن استخدام خدمات API مدفوعة أو إعداد محلي متوافق مع العتاد. Docker Compose خيار للنشر. التخزين الافتراضي بملفات محلية مناسب للتجربة الصغيرة فقط؛ وثائق المشروع توصي بمخازن إنتاجية مثل PostgreSQL. لا تعرض الخدمة على الشبكة قبل تفعيل المصادقة؛ README يحذر من أن الربط على 0.0.0.0 بلا مصادقة يجعل المستندات ونقاط النهاية مكشوفة.",
+      "quickStart": "1) اقرأ README وdocs/DockerDeployment.md. 2) استنسخ المستودع وانسخ env.example إلى .env. 3) اضبط LLM_MODEL وEMBEDDING_MODEL ومفاتيح المزود، وفعّل LIGHTRAG_API_KEY أو إعداد مصادقة موثق. 4) شغّل docker compose up -d وفق دليل النشر. 5) ابدأ بمجموعة مستندات غير حساسة، ثم قارن أوضاع local وhybrid وmix على أسئلة مرجعية قبل التوسع. لم أشغّل المشروع في هذه الدورة.",
+      "limitations": "راجعت README وpyproject.toml وLICENSE وDockerDeployment.md وOfflineDeployment.md وenv.example. الترخيص MIT. لم أنفذ تثبيتًا أو تشغيلًا؛ تكاليف النموذج والتضمين والاستضافة تختلف حسب المزود والحمولة. دعم العمل دون إنترنت يتطلب تجهيز الحزم والذاكرة المؤقتة مسبقًا، وبعض محركات الاستخراج والنماذج الثقيلة خارج مسار التثبيت غير المتصل الموثق.",
+      "nextSteps": [
+        "أنشئ مجموعة أسئلة مرجعية من بيانات تملك حق استخدامها.",
+        "قارن دقة الإسناد وجودة الاسترجاع والزمن والتكلفة بين الأوضاع.",
+        "اختبر المصادقة والنسخ الاحتياطي واستعادة الفهرس قبل أي نشر مشترك."
+      ],
+      "reviewedAt": "2026-10-27T20:47:00+00:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "LightRAG README",
+          "url": "https://github.com/HKUDS/LightRAG/blob/main/README.md"
+        },
+        {
+          "title": "LightRAG Docker deployment",
+          "url": "https://github.com/HKUDS/LightRAG/blob/main/docs/DockerDeployment.md"
+        },
+        {
+          "title": "LightRAG offline deployment",
+          "url": "https://github.com/HKUDS/LightRAG/blob/main/docs/OfflineDeployment.md"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "مجموعة تقييم عربية قابلة لإعادة الإنتاج",
+          "problem": "لا توجد نتيجة موحدة تقيس دقة الاسترجاع والاستشهادات على مستندات عربية ممثلة.",
+          "approach": "أنشئ مجموعة أسئلة وإجابات مرجعية، وشغّل أوضاع الاسترجاع المختلفة، واحسب دقة المصادر قبل مقارنة النماذج.",
+          "stack": "Python، pytest، pandas، LightRAG API",
+          "steps": [
+            "اختر مجموعة مستندات مرخصة ومتنوعة.",
+            "اكتب 100 سؤال مع إجابات ومقاطع مرجعية يراجعها شخصان.",
+            "شغّل local وhybrid وmix على الإعداد نفسه.",
+            "احسب دقة الاستشهادات وRecall@k والزمن والتكلفة.",
+            "انشر النتائج مع إصدار البيانات والإعدادات."
+          ],
+          "metric": "هدف أولي: ≥90% من الإجابات المدققة ترتبط بمقطع صحيح؛ يعاد ضبط الهدف بعد خط أساس.",
+          "difficulty": "تقدير 4–7 أيام",
+          "risks": "قد تكون العينة متحيزة أو صغيرة؛ لا تنشر نصوصًا محمية دون إذن.",
+          "sources": [
+            {
+              "title": "LightRAG README",
+              "url": "https://github.com/HKUDS/LightRAG/blob/main/README.md"
+            },
+            {
+              "title": "LightRAG Docker deployment",
+              "url": "https://github.com/HKUDS/LightRAG/blob/main/docs/DockerDeployment.md"
+            }
+          ]
+        },
+        {
+          "title": "لوحة تكلفة وزمن لكل استعلام",
+          "problem": "تتوزع التكلفة بين استخراج الكيانات والتضمين وإعادة الترتيب والتوليد، فيصعب تحديد مصدر البطء.",
+          "approach": "أضف قياسات زمنية وعدد استدعاءات وتقدير رموز وتكلفة لكل مرحلة، مع لوحة تقارن p50 وp95.",
+          "stack": "Python، OpenTelemetry، Prometheus، PostgreSQL",
+          "steps": [
+            "حدد المراحل التي يمكن قياسها دون تسجيل محتوى المستند.",
+            "أضف معرّف تتبع واحدًا لكل استعلام.",
+            "سجّل الزمن وعدد الاستدعاءات والرموز والتكلفة المقدرة.",
+            "اعرض p50 وp95 والتكلفة لكل 100 استعلام.",
+            "اختبر أن السجلات لا تحتوي مفاتيح أو نصوصًا حساسة."
+          ],
+          "metric": "تغطية 100% من مراحل الاستعلام بقياس زمن واضح، مع تقدير تكلفة لكل طلب.",
+          "difficulty": "تقدير 5–8 أيام",
+          "risks": "التكلفة المقدرة قد تختلف عن فاتورة المزود؛ السجلات قد تكشف بيانات إن لم تُنقح.",
+          "sources": [
+            {
+              "title": "LightRAG README",
+              "url": "https://github.com/HKUDS/LightRAG/blob/main/README.md"
+            },
+            {
+              "title": "LightRAG Docker deployment",
+              "url": "https://github.com/HKUDS/LightRAG/blob/main/docs/DockerDeployment.md"
+            }
+          ]
+        },
+        {
+          "title": "إصدار مصدر ثابت لكل مقطع مسترجع",
+          "problem": "قد يصبح الاستشهاد غير قابل للتحقق بعد إعادة فهرسة المستند أو تغير تقسيم المقاطع.",
+          "approach": "احفظ معرّف المستند وإصداره والصفحة/المقطع وبصمة المحتوى مع كل نتيجة.",
+          "stack": "Python، SQLite أو PostgreSQL، hash IDs",
+          "steps": [
+            "صمّم مخططًا ثابتًا لمصدر المستند والمقطع.",
+            "احسب بصمة لكل إصدار مستند ومقطع.",
+            "أرفق المعرّفات بالإجابات والاستشهادات.",
+            "اختبر إعادة الفهرسة وتغير ترتيب المقاطع.",
+            "أضف رابطًا يفتح المقطع الأصلي عند السماح بذلك."
+          ],
+          "metric": "نسبة إجابات يمكن تتبع كل استشهاد فيها إلى إصدار ومقطع محددين.",
+          "difficulty": "تقدير 4–6 أيام",
+          "risks": "تغيّر بنية المستندات قد يكسر الروابط؛ راعِ حقوق الوصول للمصادر.",
+          "sources": [
+            {
+              "title": "LightRAG README",
+              "url": "https://github.com/HKUDS/LightRAG/blob/main/README.md"
+            },
+            {
+              "title": "LightRAG offline deployment",
+              "url": "https://github.com/HKUDS/LightRAG/blob/main/docs/OfflineDeployment.md"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مساعد بحث لمقررات الجامعة",
+          "problem": "تتوزع شرائح المحاضرات والمراجع على ملفات كثيرة ويصعب العثور على العلاقة بين المفاهيم.",
+          "approach": "فهرس ملفات مصرح بها مع روابط الصفحات والإجابات المقتبسة من المصدر بدل إجابات بلا دليل.",
+          "stack": "LightRAG، Python، PDF/DOCX parsers، واجهة ويب",
+          "steps": [
+            "حدد مقررًا واحدًا وملفات يملك المستخدم حق استخدامها.",
+            "استخرج النص مع رقم الصفحة والعنوان.",
+            "أنشئ أسئلة مرجعية من المنهج.",
+            "اختبر دقة الاسترجاع والإسناد مع طالب ومراجع.",
+            "اعرض رابط الصفحة مع كل إجابة."
+          ],
+          "metric": "≥90% من الإجابات التجريبية تتضمن مرجع صفحة صحيحًا، كهدف أولي.",
+          "difficulty": "تقدير 1–2 أسبوع",
+          "risks": "قد تحتوي الملفات على بيانات شخصية أو مواد محمية؛ لا تسمح بتوليد إجابات امتحان مضللة.",
+          "sources": [
+            {
+              "title": "LightRAG README",
+              "url": "https://github.com/HKUDS/LightRAG/blob/main/README.md"
+            },
+            {
+              "title": "LightRAG offline deployment",
+              "url": "https://github.com/HKUDS/LightRAG/blob/main/docs/OfflineDeployment.md"
+            }
+          ]
+        },
+        {
+          "title": "باحث أوراق عربية مع شبكة مفاهيم",
+          "problem": "البحث بالكلمات وحدها قد يفوّت علاقات بين المصطلحات العربية والإنجليزية في الأوراق العلمية.",
+          "approach": "استخرج المصطلحات والعلاقات من ملخصات وأوراق مرخصة، ثم اعرض مسار الاستدلال مع المقاطع الأصلية.",
+          "stack": "LightRAG، arXiv metadata، Python، واجهة بحث",
+          "steps": [
+            "ابدأ بمجال واحد ومجموعة بيانات مسموح بها.",
+            "وحّد المصطلحات العربية والإنجليزية دون حذف النص الأصلي.",
+            "أنشئ فهرسًا ورسم علاقات مع مصدر كل علاقة.",
+            "قارن النتائج بخط أساس بحث نصي.",
+            "أظهر المقاطع والمراجع مع الإجابة."
+          ],
+          "metric": "تحسن قابل للقياس في Recall@10 مقابل البحث النصي على مجموعة اختبار.",
+          "difficulty": "تقدير 1–2 أسبوع",
+          "risks": "استخراج علاقة خاطئة قد يضلل الباحث؛ لا تنسب نتائج غير موجودة للورقة.",
+          "sources": [
+            {
+              "title": "LightRAG README",
+              "url": "https://github.com/HKUDS/LightRAG/blob/main/README.md"
+            }
+          ]
+        },
+        {
+          "title": "مساعد بحث للسياسات والخدمات السعودية",
+          "problem": "تتوزع اللوائح والإرشادات على صفحات ووثائق رسمية، وقد تُنتج إجابة قديمة إذا لم يُحفظ تاريخ المصدر.",
+          "approach": "ابنِ فهرسًا لمصادر حكومية علنية مع تاريخ النفاذ ورابط المصدر وإظهار التعارض بين الإصدارات.",
+          "stack": "LightRAG، Python، PostgreSQL، crawler محدود",
+          "steps": [
+            "اختر جهة ومجموعة وثائق علنية محددة.",
+            "سجّل تاريخ النشر والنفاذ والرابط الرسمي.",
+            "فهرس النصوص مع الإصدارات والتغييرات.",
+            "اختبر أسئلة بإجابات مرجعية راجعها مختص.",
+            "أظهر تاريخ الوثيقة وتحذيرًا عند غياب نص نافذ واضح."
+          ],
+          "metric": "كل إجابة تعرض المصدر وتاريخ الوثيقة، مع ≥95% صحة على مجموعة التحقق الأولية.",
+          "difficulty": "تقدير 2–3 أسابيع",
+          "risks": "لا يقدم استشارة قانونية؛ قد تكون الصفحات قديمة أو غير مكتملة.",
+          "sources": [
+            {
+              "title": "LightRAG README",
+              "url": "https://github.com/HKUDS/LightRAG/blob/main/README.md"
+            },
+            {
+              "title": "LightRAG offline deployment",
+              "url": "https://github.com/HKUDS/LightRAG/blob/main/docs/OfflineDeployment.md"
+            }
+          ]
+        }
+      ],
+      "religious": [
+        {
+          "title": "فهرس بحث موثق للقرآن والحديث دون إصدار فتاوى",
+          "problem": "قد يخلط البحث الدلالي بين آيات وأحاديث متشابهة أو يسقط رقم المرجع ودرجة الحديث.",
+          "approach": "ابنِ استرجاعًا يعيد النص من مصدر موثق مع اسم السورة ورقم الآية أو مجموعة الحديث ورقمه ودرجته عند توفرها، ويمنع صياغة أحكام شرعية جديدة.",
+          "stack": "LightRAG، Quran Foundation Content API، Sunnah.com API، PostgreSQL",
+          "steps": [
+            "استخدم مصادر مرخصة ووثّق شروط إعادة النشر قبل إدخال النصوص.",
+            "خزّن كل نص مع المرجع الأصلي والطبعة/الإصدار والحقوق.",
+            "اجعل الاسترجاع يعيد الاقتباس والمصدر فقط قبل أي شرح.",
+            "راجع عينة يدويًا مع مختصين في النصوص والحديث.",
+            "أضف تنبيهًا واضحًا أن النظام أداة بحث لا فتوى."
+          ],
+          "metric": "100% من النتائج المعروضة تحمل مرجعًا دقيقًا؛ الهدف ألا يظهر نص بلا إسناد قابل للمراجعة.",
+          "difficulty": "تقدير 2–4 أسابيع",
+          "risks": "خطر التحريف أو اختلاف الروايات أو حقوق الترجمة؛ لا يولّد نصًا شرعيًا ولا أحكامًا، ويحتاج مراجعة بشرية.",
+          "sources": [
+            {
+              "title": "Quran Foundation Content API docs",
+              "url": "https://api-docs.quran.foundation/docs/category/content-apis"
+            },
+            {
+              "title": "Sunnah.com Developers",
+              "url": "https://sunnah.com/developers"
+            },
+            {
+              "title": "Sunnah.com API specification",
+              "url": "https://github.com/sunnah-com/api/blob/master/spec.v1.yml"
+            }
+          ]
+        }
+      ]
+    },
+    "fdc98e4e70aebb2dde": {
+      "url": "https://github.com/vercel/ai",
+      "titleAr": "Vercel AI SDK: طبقة TypeScript موحدة لبناء تطبيقات ووكلاء ذكاء اصطناعي",
+      "summaryAr": "AI SDK مكتبة TypeScript محايدة تجاه مزود النموذج، وتقدم واجهات موحدة لتوليد النصوص والمخرجات المنظمة واستدعاء الأدوات والبث المتدفق، مع تكاملات لواجهات React وغيرها. README يذكر Node.js 22+ وتثبيت الحزمة ai؛ يمكن استخدام AI Gateway أو حزم المزود مباشرة.",
+      "whyItMatters": "توحيد واجهات المزودين يقلل الارتباط بمزود واحد ويسهّل بناء تطبيقات تفاعلية، لكنه لا يلغي اختلاف الأسعار والحدود والسلوك بين النماذج، ولا يغني عن ضبط الأدوات والصلاحيات.",
+      "audience": "مطورو TypeScript وNext.js وتطبيقات الدردشة والوكلاء الذين يحتاجون إلى تبديل مزودي النماذج.",
+      "overview": "مجموعة أدوات مفتوحة المصدر من Vercel لبناء تطبيقات مولدة بالذكاء الاصطناعي ووكلاء باستخدام واجهات مشتركة. تشمل وظائف لتوليد النصوص والبث والمخرجات المنظمة واستخدام الأدوات، إضافة إلى تكاملات واجهة المستخدم. الحزمة ai مرخصة Apache-2.0؛ حقل الترخيص في بيانات المستودع العامة غير مصرح به، لذلك يجب التحقق من الترخيص على مستوى الحزمة التي ستوزعها.",
+      "requirements": "Node.js 22+ ومدير حزم مثل npm أو pnpm. تحتاج إلى اختيار مزود نموذج وضبط مفتاحه أو استخدام Vercel AI Gateway؛ رسوم الاستخدام تأتي من المزود أو البوابة وفق النموذج والرموز وحجم الطلبات. لا تضع مفاتيح API في كود المتصفح، واستخدم حدودًا زمنية ومعدلات طلبات ومراجعة للأدوات التي تنفذ أفعالًا.",
+      "quickStart": "1) ثبّت Node.js 22+. 2) نفّذ npm install ai، وثبّت حزمة المزود المطلوبة مثل @ai-sdk/openai إذا أردت الاتصال المباشر. 3) أنشئ نقطة نهاية خادمية تستخدم generateText أو streamText. 4) خزّن المفتاح في متغير بيئة خادمي. 5) أضف واجهة عبر @ai-sdk/react أو إطارك المفضل، ثم اختبر حالات فشل المزود وحدود الاستخدام. لم أنفذ التطبيق في هذه الدورة.",
+      "limitations": "راجعت README الخاص بالحزمة packages/ai، وpackage.json، وLICENSE، ووثائق AI SDK Core. متطلبات الحزمة Node.js 22+ وترخيصها Apache-2.0. لم أنفذ تثبيتًا أو اختبارًا؛ التكلفة تتوقف على مزود النموذج والبوابة، كما أن الواجهة الموحدة لا تضمن تماثل الجودة أو الأمان بين المزودين.",
+      "nextSteps": [
+        "ابدأ بنقطة نهاية خادمية واحدة مع نموذج ومجموعة اختبار صغيرة.",
+        "أضف تحققًا من المخرجات المنظمة وحدودًا لاستدعاء الأدوات.",
+        "سجّل زمن الاستجابة والرموز والتكلفة المقدرة مع إخفاء الأسرار."
+      ],
+      "reviewedAt": "2026-10-27T20:47:00+00:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "AI SDK package README",
+          "url": "https://github.com/vercel/ai/blob/main/packages/ai/README.md"
+        },
+        {
+          "title": "AI SDK Core overview",
+          "url": "https://ai-sdk.dev/docs/ai-sdk-core"
+        },
+        {
+          "title": "Providers and models",
+          "url": "https://ai-sdk.dev/docs/foundations/providers-and-models"
+        },
+        {
+          "title": "Vercel AI SDK license",
+          "url": "https://github.com/vercel/ai/blob/main/LICENSE"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "سجل تكلفة واستخدام لكل مزود",
+          "problem": "تتوزع الطلبات على نماذج ومزودين مختلفين، ويصعب تحديد سبب ارتفاع التكلفة أو زمن الاستجابة.",
+          "approach": "أضف middleware يسجل معرف الطلب والمزود والنموذج والرموز والزمن والتكلفة المقدرة دون حفظ محتوى حساس.",
+          "stack": "TypeScript، AI SDK hooks، OpenTelemetry، SQLite/PostgreSQL",
+          "steps": [
+            "حدد حقول القياس المسموح بتسجيلها.",
+            "أضف معرفًا لكل طلب واسم المزود والنموذج.",
+            "احسب تقدير التكلفة من جدول أسعار مؤرخ.",
+            "اعرض التكلفة وp95 حسب النموذج وحالة النجاح.",
+            "اختبر إخفاء المفاتيح والنصوص الخاصة من السجلات."
+          ],
+          "metric": "تغطية 100% من الطلبات بقياس زمن وتكلفة مقدرة مع توثيق تاريخ الأسعار.",
+          "difficulty": "تقدير 3–6 أيام",
+          "risks": "الأسعار تتغير وقد تختلف الفاتورة؛ السجلات قد تسرب معلومات إن لم تُنقح.",
+          "sources": [
+            {
+              "title": "AI SDK package README",
+              "url": "https://github.com/vercel/ai/blob/main/packages/ai/README.md"
+            },
+            {
+              "title": "AI SDK Core overview",
+              "url": "https://ai-sdk.dev/docs/ai-sdk-core"
+            }
+          ]
+        },
+        {
+          "title": "مجموعة تقييم لاستدعاء الأدوات والمخرجات المنظمة",
+          "problem": "قد تنجح المحادثة ظاهريًا بينما تفشل الأداة أو تنتج حقولًا غير صالحة.",
+          "approach": "أنشئ مجموعة حالات اختبار ثابتة تقيس صحة JSON ونجاح استدعاء الأدوات والتعامل مع الأخطاء عبر مزودين.",
+          "stack": "TypeScript، Vitest، Zod، AI SDK tools",
+          "steps": [
+            "اكتب 50 حالة من مهام آمنة ومحددة.",
+            "عرّف schema واضحًا لكل مخرج.",
+            "شغّل الحالات على المزودين والإصدارات المطلوبة.",
+            "سجّل نجاح الأداة وصحة البنية والزمن والتكلفة.",
+            "أوقف التغيير إذا تراجع مقياس حرج."
+          ],
+          "metric": "≥95% صحة بنيوية على مجموعة الاختبار الأولية؛ النجاح الفعلي للأداة يقاس منفصلًا.",
+          "difficulty": "تقدير 4–7 أيام",
+          "risks": "تغير النماذج قد يجعل النتائج غير حتمية؛ لا تعتبر نجاح البنية دليلًا على صحة المعنى.",
+          "sources": [
+            {
+              "title": "AI SDK package README",
+              "url": "https://github.com/vercel/ai/blob/main/packages/ai/README.md"
+            },
+            {
+              "title": "AI SDK Core — structured data",
+              "url": "https://ai-sdk.dev/docs/ai-sdk-core/generating-structured-data"
+            }
+          ]
+        },
+        {
+          "title": "قاطع أعطال وتحويل مضبوط بين المزودين",
+          "problem": "قد يفشل المزود أو يتجاوز حد الطلبات، ما يوقف التطبيق أو يكرر الطلبات المكلفة.",
+          "approach": "أضف مهلات وإعادة محاولة محدودة وقاطع دائرة وتحويلًا إلى مزود بديل مع تسجيل سبب التحويل.",
+          "stack": "TypeScript، AI SDK providers، retry/circuit breaker",
+          "steps": [
+            "حدد أخطاء قابلة لإعادة المحاولة وأخرى لا.",
+            "ضع حدًا للوقت والمحاولات والتكلفة.",
+            "عرّف بديلًا متوافقًا مع نفس المخرجات.",
+            "اختبر انقطاع المزود وحدود المعدل ومحاولات متكررة.",
+            "أظهر للمستخدم حالة الفشل دون تكرار فعل خارجي."
+          ],
+          "metric": "تقليل فشل الطلبات بسبب انقطاع مؤقت مع عدم تجاوز سقف المحاولات المحدد.",
+          "difficulty": "تقدير 3–5 أيام",
+          "risks": "قد تختلف الإجابات بين المزودين؛ التحويل قد يضاعف التكلفة أو يكرر أثر أداة خارجية.",
+          "sources": [
+            {
+              "title": "AI SDK package README",
+              "url": "https://github.com/vercel/ai/blob/main/packages/ai/README.md"
+            },
+            {
+              "title": "Providers and models",
+              "url": "https://ai-sdk.dev/docs/foundations/providers-and-models"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مساعد مذاكرة عربي مع مخرجات قابلة للتحقق",
+          "problem": "تحتاج أدوات المذاكرة إلى تلخيص وأسئلة منظمة مع تدفق استجابة واضح وإمكانية تبديل النموذج.",
+          "approach": "استخدم streamText للشرح المتدفق ومخرجات منظمة لتوليد أسئلة، مع حفظ روابط الصفحات التي يستند إليها الجواب.",
+          "stack": "TypeScript، AI SDK، React، Zod، تخزين محلي",
+          "steps": [
+            "حدد نوع ملف ومقرر واحد كبداية.",
+            "استخرج النص مع أرقام الصفحات.",
+            "أنشئ مخططًا لملخص وأسئلة مع مراجع.",
+            "اختبر الإجابات مقابل مجموعة يراجعها طالب أو مدرس.",
+            "اعرض المصدر وحدود الموثوقية مع كل نتيجة."
+          ],
+          "metric": "≥90% من أسئلة التحقق ترتبط بمصدر صفحة صحيح؛ هدف أولي قابل للتعديل.",
+          "difficulty": "تقدير 1–2 أسبوع",
+          "risks": "قد يختلق النموذج إجابة؛ لا تستخدم الناتج بدل مراجعة المادة أو لتقديم إجابة امتحان مضللة.",
+          "sources": [
+            {
+              "title": "AI SDK package README",
+              "url": "https://github.com/vercel/ai/blob/main/packages/ai/README.md"
+            },
+            {
+              "title": "AI SDK UI chatbot",
+              "url": "https://ai-sdk.dev/docs/ai-sdk-ui/chatbot"
+            }
+          ]
+        },
+        {
+          "title": "مختبر مقارنة نماذج متعدد المزودين",
+          "problem": "يصعب مقارنة النماذج إذا اختلفت التعليمات أو تنسيق المخرجات أو إعدادات التوليد.",
+          "approach": "ابنِ واجهة تشغل مجموعة prompts ثابتة على عدة مزودين وتعرض الجودة والزمن والتكلفة مع تاريخ القياس.",
+          "stack": "TypeScript، AI SDK providers، SQLite، Vitest",
+          "steps": [
+            "جهّز مجموعة مهام آمنة ومحددة.",
+            "وحّد المدخلات والمخرجات والإعدادات الممكنة.",
+            "شغّل كل نموذج على المجموعة نفسها.",
+            "سجّل الزمن والرموز والتكلفة والأخطاء.",
+            "اعرض النتائج مع تنبيه أن العينات ليست معيارًا عامًا."
+          ],
+          "metric": "قابلية إعادة تشغيل 100% من الحالات مع حفظ الإعدادات ووقت القياس.",
+          "difficulty": "تقدير 4–6 أيام",
+          "risks": "اختلاف حدود المزودين والأسعار يضعف المقارنة؛ لا تعرض ترتيبًا عامًا من عينة صغيرة.",
+          "sources": [
+            {
+              "title": "AI SDK package README",
+              "url": "https://github.com/vercel/ai/blob/main/packages/ai/README.md"
+            },
+            {
+              "title": "Providers and models",
+              "url": "https://ai-sdk.dev/docs/foundations/providers-and-models"
+            }
+          ]
+        },
+        {
+          "title": "بحث مستندات مع استشهادات قابلة للنقر",
+          "problem": "تطبيقات الدردشة قد تلخص المستندات دون إظهار المقطع الذي يدعم كل ادعاء.",
+          "approach": "اجمع استرجاعًا موثقًا مع توليد جواب قصير يعيد معرفات المقاطع وروابط الصفحات ويطلب توضيحًا عند غياب دليل.",
+          "stack": "TypeScript، AI SDK، Zod، مخزن متجهات",
+          "steps": [
+            "حوّل المستندات إلى مقاطع تحمل رقم الصفحة.",
+            "استرجع أفضل المقاطع قبل التوليد.",
+            "اشترط أن يشير كل ادعاء إلى معرف مقطع.",
+            "تحقق من أن المراجع موجودة قبل عرض الجواب.",
+            "اختبر أسئلة لا توجد لها إجابة في المجموعة."
+          ],
+          "metric": "كل جواب معروض يحمل مصدرًا قابلًا للفتح أو يصرح بعدم كفاية الأدلة.",
+          "difficulty": "تقدير 1–2 أسبوع",
+          "risks": "قد يظل الاستشهاد غير كافٍ لتبرير الادعاء؛ يلزم فحص بشري للمخرجات الحساسة.",
+          "sources": [
+            {
+              "title": "AI SDK package README",
+              "url": "https://github.com/vercel/ai/blob/main/packages/ai/README.md"
+            },
+            {
+              "title": "AI SDK Core — tool calling",
+              "url": "https://ai-sdk.dev/docs/ai-sdk-core/tools-and-tool-calling"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
