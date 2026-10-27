@@ -1,0 +1,294 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-27T21:31:01+03:00",
+  "purpose": "تدقيق التراكم الوارد ثم إثراء العناصر غير المحررة من التغذية الحالية، مع حماية البيانات والشيفرة.",
+  "sourceSnapshot": {
+    "mainCommit": "f268f82e62baed05824b22f481887cc49779b019",
+    "feedBlobSha": "8de63e58972bde0a8d60e033617bd0f53663fc77",
+    "editorialBlobSha": "f871ce2eae501684357bdedf559fe6225dd16d04",
+    "feedGeneratedAt": "2026-10-27T18:06:18+00:00",
+    "feedItems": 800,
+    "editorialEntriesBefore": 274,
+    "statusLastSuccessfulAt": "2026-10-27T18:06:18+00:00"
+  },
+  "priorPullRequests": [
+    {
+      "number": 1,
+      "merged": true,
+      "url": "https://github.com/lm7md-ai/.-/pull/1"
+    },
+    {
+      "number": 2,
+      "merged": true,
+      "url": "https://github.com/lm7md-ai/.-/pull/2"
+    },
+    {
+      "number": 31,
+      "merged": true,
+      "url": "https://github.com/lm7md-ai/.-/pull/31"
+    },
+    {
+      "number": 32,
+      "merged": true,
+      "url": "https://github.com/lm7md-ai/.-/pull/32"
+    },
+    {
+      "number": 33,
+      "merged": true,
+      "url": "https://github.com/lm7md-ai/.-/pull/33"
+    }
+  ],
+  "incomingAudit": {
+    "incomingFiles": 32,
+    "incomingRows": 275,
+    "uniqueIncomingIds": 274,
+    "duplicateId": "853c63f738f0cecf3b",
+    "duplicateLocations": [
+      "editorial/incoming/nabdh-editorial-2026-10-25-1442.json",
+      "editorial/incoming/nabdh-editorial-2026-10-27-0619.json"
+    ],
+    "exactImportedAndFeedRows": 195,
+    "exactImportedAndFeedUniqueIds": 194,
+    "importedOutOfCurrentFeedRows": 77,
+    "missingFromFeedAndEditorialRows": 3,
+    "idUrlMismatches": 0,
+    "feedExactNotImportedRows": 0,
+    "confirmedExpiredRows": 0,
+    "unverifiedOutOfFeedRows": 77,
+    "note": "قورنت id وurl حرفيًا في ملفات incoming الـ32. غياب السجل من feed لا يثبت انتهاء صلاحيته؛ لم تُحذف سجلات خارج التغذية."
+  },
+  "pendingRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "name": "NVIDIA OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "inFeed": false,
+      "inEditorial": false,
+      "classification": "missing_from_feed_and_editorial"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "name": "Canva Craft",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "inFeed": false,
+      "inEditorial": false,
+      "classification": "missing_from_feed_and_editorial"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "name": "1Password agent sign-in",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "inFeed": false,
+      "inEditorial": false,
+      "classification": "missing_from_feed_and_editorial"
+    }
+  ],
+  "currentSnapshotComparison": {
+    "feedItems": 800,
+    "editorialEntriesBefore": 274,
+    "editorialIdsPresentInFeedBefore": 197,
+    "feedItemsWithoutEditorialBefore": 603,
+    "selectedItems": 12,
+    "editorialEntriesAfterMergeExpected": 286,
+    "editorialIdsPresentInFeedAfterMergeExpected": 209,
+    "feedItemsWithoutEditorialAfterMergeExpected": 591,
+    "selectedItemsAllCurrentFeedExact": true,
+    "selectedItemsPreviouslyUnenriched": true
+  },
+  "newBatch": {
+    "path": "editorial/incoming/nabdh-editorial-2026-10-27-2113.json",
+    "rows": 12,
+    "news": 10,
+    "projects": 2,
+    "basisCounts": {
+      "article": 3,
+      "metadata": 7,
+      "readme": 2
+    },
+    "proposalCounts": {
+      "improvements": 6,
+      "spinoffs": 6,
+      "religious": 1
+    },
+    "testEvidenceClaims": 0,
+    "sourceReviewNote": "الأساس metadata يصرح بعدم قراءة النص الكامل؛ لم تُنقل أرقام من مصادر لم تُراجع."
+  },
+  "projectLibrary": {
+    "catalogPath": "editorial/library/catalog-2026-10-24.json",
+    "historicalCatalogEntries": 31,
+    "archived": 2,
+    "catalogMetricsCapturedAt": "2026-10-24T10:38:36.869Z",
+    "note": "لم تُضف DeerFlow أو PaddleOCR إلى المكتبة التاريخية لأنهما موجودان في feed وأُثريا بمعرفيهما الأصليين. ملف المراجعة المستقل يسجل قياسات المشاريع الثمانية السابقة."
+  },
+  "reviewedPreviousProjects": [
+    {
+      "repository": "gradio-app/gradio",
+      "url": "https://github.com/gradio-app/gradio",
+      "archived": false,
+      "defaultBranch": "main",
+      "license": "Apache-2.0",
+      "licenseEvidence": "LICENSE",
+      "starsMeasured": 43913,
+      "forksMeasured": 3649,
+      "pushedAt": "2026-10-27T17:59:59Z",
+      "updatedAt": "2026-10-27T17:30:35Z",
+      "metricCapturedAt": "2026-10-27T18:31:01.760Z",
+      "classification": "non_archived",
+      "testEvidence": null,
+      "siteVisibility": "feed_and_editorial; not a separate library dossier"
+    },
+    {
+      "repository": "thedotmack/claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "archived": false,
+      "defaultBranch": "main",
+      "license": "Apache-2.0",
+      "licenseEvidence": "LICENSE",
+      "starsMeasured": 103658,
+      "forksMeasured": 9147,
+      "pushedAt": "2026-10-27T09:27:47Z",
+      "updatedAt": "2026-10-27T18:30:19Z",
+      "metricCapturedAt": "2026-10-27T18:31:01.760Z",
+      "classification": "non_archived",
+      "testEvidence": null,
+      "siteVisibility": "feed_and_editorial; not a separate library dossier"
+    },
+    {
+      "repository": "ultralytics/ultralytics",
+      "url": "https://github.com/ultralytics/ultralytics",
+      "archived": false,
+      "defaultBranch": "main",
+      "license": "AGPL-3.0",
+      "licenseEvidence": "LICENSE",
+      "starsMeasured": 62905,
+      "forksMeasured": 11922,
+      "pushedAt": "2026-10-27T17:52:28Z",
+      "updatedAt": "2026-10-27T18:08:58Z",
+      "metricCapturedAt": "2026-10-27T18:31:01.760Z",
+      "classification": "non_archived",
+      "testEvidence": null,
+      "siteVisibility": "feed_and_editorial; not a separate library dossier"
+    },
+    {
+      "repository": "harry0703/MoneyPrinterTurbo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "archived": false,
+      "defaultBranch": "main",
+      "license": "MIT",
+      "licenseEvidence": "LICENSE",
+      "starsMeasured": 135765,
+      "forksMeasured": 21554,
+      "pushedAt": "2026-10-27T10:13:32Z",
+      "updatedAt": "2026-10-27T18:28:18Z",
+      "metricCapturedAt": "2026-10-27T18:31:01.760Z",
+      "classification": "non_archived",
+      "testEvidence": null,
+      "siteVisibility": "feed_and_editorial; not a separate library dossier"
+    },
+    {
+      "repository": "microsoft/AI-For-Beginners",
+      "url": "https://github.com/microsoft/AI-For-Beginners",
+      "archived": false,
+      "defaultBranch": "main",
+      "license": "MIT",
+      "licenseEvidence": "LICENSE",
+      "starsMeasured": 70293,
+      "forksMeasured": 13653,
+      "pushedAt": "2026-10-23T23:55:14Z",
+      "updatedAt": "2026-10-27T17:18:55Z",
+      "metricCapturedAt": "2026-10-27T18:31:01.760Z",
+      "classification": "non_archived",
+      "testEvidence": null,
+      "siteVisibility": "feed_and_editorial; not a separate library dossier"
+    },
+    {
+      "repository": "usebruno/bruno",
+      "url": "https://github.com/usebruno/bruno",
+      "archived": false,
+      "defaultBranch": "main",
+      "license": "MIT",
+      "licenseEvidence": "license.md",
+      "starsMeasured": 47876,
+      "forksMeasured": 3037,
+      "pushedAt": "2026-10-27T16:18:41Z",
+      "updatedAt": "2026-10-27T18:12:40Z",
+      "metricCapturedAt": "2026-10-27T18:31:01.760Z",
+      "classification": "non_archived",
+      "testEvidence": null,
+      "siteVisibility": "feed_and_editorial; not a separate library dossier"
+    },
+    {
+      "repository": "keras-team/keras",
+      "url": "https://github.com/keras-team/keras",
+      "archived": false,
+      "defaultBranch": "master",
+      "license": "Apache-2.0",
+      "licenseEvidence": "LICENSE",
+      "starsMeasured": 64391,
+      "forksMeasured": 19806,
+      "pushedAt": "2026-10-27T17:38:38Z",
+      "updatedAt": "2026-10-27T17:39:37Z",
+      "metricCapturedAt": "2026-10-27T18:31:01.760Z",
+      "classification": "non_archived",
+      "testEvidence": null,
+      "siteVisibility": "feed_and_editorial; not a separate library dossier"
+    },
+    {
+      "repository": "k2-fsa/sherpa-onnx",
+      "url": "https://github.com/k2-fsa/sherpa-onnx",
+      "archived": false,
+      "defaultBranch": "master",
+      "license": "Apache-2.0",
+      "licenseEvidence": "LICENSE",
+      "starsMeasured": 15550,
+      "forksMeasured": 1820,
+      "pushedAt": "2026-10-27T12:50:50Z",
+      "updatedAt": "2026-10-27T18:15:26Z",
+      "metricCapturedAt": "2026-10-27T18:31:01.760Z",
+      "classification": "non_archived",
+      "testEvidence": null,
+      "siteVisibility": "feed_and_editorial; not a separate library dossier"
+    }
+  ],
+  "protectedPaths": {
+    "notChanged": [
+      "README.md",
+      "docs/CONTENT_GUIDE.md",
+      "docs/SCHEDULED_EDITOR_PROMPT.md",
+      "scripts/editorial.py",
+      "site/data/feed.json",
+      "site/data/seen.json",
+      "site/app.js",
+      "site/ideas.js",
+      "site/style.css",
+      ".github/workflows/**"
+    ],
+    "changed": [
+      "site/data/editorial.json",
+      "editorial/incoming/nabdh-editorial-2026-10-27-2113.json",
+      "editorial/pending/recheck-2026-10-27-2113.json",
+      "editorial/library/review-2026-10-27-2113.json"
+    ]
+  },
+  "execution": {
+    "structuralEquivalentValidation": "passed",
+    "existingRecordsPreserved": true,
+    "officialValidateLocal": "not_run_no_local_repo_execution",
+    "officialImportLocal": "not_run_no_local_repo_execution",
+    "unitTestsLocal": "not_run_no_local_repo_execution",
+    "commandsNotRun": [
+      "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-10-27-2113.json",
+      "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-10-27-2113.json",
+      "python -m unittest discover -s tests -v"
+    ],
+    "ciStatus": "pending PR",
+    "deploymentStatus": "pending PR merge and existing GitHub Actions run"
+  },
+  "developerDisplayRequirements": [
+    "اعرض overview وrequirements وquickStart وlimitations والمصادر الرسمية والترخيص لكل مشروع.",
+    "اعرض improvements وspinoffs وreligious عند وجودها مع كل حقول الاقتراح.",
+    "لا تعرض testEvidence لأنه غير موجود؛ لا ادعاء باختبار تشغيل.",
+    "اعرض حالة النشاط والترخيص ووقت قياس النجوم والتفرعات في المكتبة البحثية فقط.",
+    "لا تعديل للواجهة في هذه الدورة."
+  ]
+}
