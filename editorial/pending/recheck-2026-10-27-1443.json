@@ -1,0 +1,224 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-27T14:43:00+03:00",
+  "purpose": "تقرير تدقيق التراكم قبل دورة محتوى جديدة؛ ملف بحثي داخلي وليس بطاقة منشورة في الموقع.",
+  "sourceSnapshot": {
+    "mainCommit": "b611075f2b1b1b13305c1d764cde86709aafa50a",
+    "mainCommitMessage": "data: refresh deduplicated technology feed",
+    "feedGeneratedAt": "2026-10-27T09:02:30+00:00",
+    "feedItems": 800,
+    "feedNews": 700,
+    "feedProjects": 100,
+    "statusState": "ok",
+    "statusLastSuccessfulAt": "2026-10-27T09:02:30+00:00",
+    "statusCollected": 423,
+    "editorialRecordsBeforeImport": 248
+  },
+  "priorPullRequests": [
+    {
+      "number": 1,
+      "url": "https://github.com/lm7md-ai/.-/pull/1",
+      "merged": true,
+      "mergeCommit": "e88edb7d3c90895972b4cf28977405dea9831578"
+    },
+    {
+      "number": 2,
+      "url": "https://github.com/lm7md-ai/.-/pull/2",
+      "merged": true,
+      "mergeCommit": "480e56e19518fc994c6626cdef8d57dbbbbc7a51"
+    },
+    {
+      "number": 29,
+      "url": "https://github.com/lm7md-ai/.-/pull/29",
+      "merged": true,
+      "mergeCommit": "433aec4cf73339dce3f0b5958b92b443b04a527f"
+    }
+  ],
+  "incomingAuditBeforeNewBatch": {
+    "filesChecked": 30,
+    "totalRows": 249,
+    "uniqueIds": 248,
+    "duplicateId": "853c63f738f0cecf3b",
+    "duplicateClassification": "تكرار للهوية الأصلية؛ لا يُنشأ alias ولا تُولّد هوية من العنوان.",
+    "structuralErrors": 0,
+    "activeExactRows": 192,
+    "activeExactUniqueIds": 191,
+    "alreadyImportedExactRows": 246,
+    "alreadyImportedExactUniqueIds": 245,
+    "importedExactButNoLongerInCurrentFeed": 54,
+    "matchingCurrentFeedAwaitingImport": 0,
+    "notInCurrentFeedAndNotImported": 3,
+    "idUrlMismatches": 0,
+    "confirmedExpiredByAge": 0,
+    "note": "غياب سجل مستورد عن التغذية الحالية لا يثبت انتهاءه زمنيًا. لم تُحذف السجلات التاريخية الـ54 ولم تُعدّل هويتها."
+  },
+  "pendingRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "titleAr": "OpenShell من NVIDIA: بيئات معزولة للوكلاء بصلاحيات قابلة للمراجعة",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+      "status": "pending_not_in_feed_or_editorial",
+      "reason": "الهوية والرابط غائبان عن أحدث feed.json وeditorial.json؛ import الرسمي سيرفضهما إلى أن يعود الزوج نفسه في التغذية."
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "titleAr": "Canva تعلن Craft لتوليد صور يمكن تحويلها إلى تصاميم متعددة الطبقات",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "status": "pending_not_in_feed_or_editorial",
+      "reason": "الهوية والرابط غائبان عن أحدث feed.json وeditorial.json؛ لا يُستبدل المعرف بعنوان أو رابط مشابه."
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "titleAr": "1Password تعرض تفويض دخول للوكلاء دون إظهار كلمات المرور",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "status": "pending_not_in_feed_or_editorial",
+      "reason": "الهوية والرابط غائبان عن أحدث feed.json وeditorial.json؛ لا يُنشأ alias ولا تُستورد مادة يتيمة."
+    }
+  ],
+  "currentEditorialSummary": {
+    "before": 248,
+    "preparedNewEntries": 14,
+    "projectedAfterMerge": 262
+  },
+  "newBatch": {
+    "incomingFile": "editorial/incoming/nabdh-editorial-2026-10-27-1443.json",
+    "newsCount": 12,
+    "projectCount": 2,
+    "ids": [
+      "f431ca66941a9e4169",
+      "73b57aa1707559fe12",
+      "51cae7d2eea867a76e",
+      "a20cd64cf5bc43cf57",
+      "92b2804ba06016ecd8",
+      "e3b2d0f3070b503578",
+      "5abda68f8093525813",
+      "c631c0ad77c4e5d4dd",
+      "ad8d95b7fd5b952da6",
+      "0fe50b845bb6b845af",
+      "3ccc752c6d1636dc06",
+      "7784fd671386cc9f60",
+      "b03e856411c0697d16",
+      "f9fc592ad5493e6831"
+    ],
+    "basisCounts": {
+      "article": 3,
+      "metadata": 9,
+      "readme": 2
+    },
+    "proposalCounts": {
+      "improvements": 4,
+      "spinoffs": 4,
+      "religious": 0
+    },
+    "statusAtReportCreation": "prepared_and_structurally_validated; official CI and merge pending"
+  },
+  "projectLibrary": {
+    "historicalEntries": 33,
+    "archived": 2,
+    "inCurrentFeed": 6,
+    "notInFeed": 27,
+    "previouslyReviewedProjects": 8,
+    "recheckedCurrentFeedAndEditorialMembership": 8,
+    "repositoryMetadataRefreshed": 8,
+    "readmeShaUnchanged": 7,
+    "readmeRefreshUnavailable": 1,
+    "runtimeTests": 0,
+    "latestProjectRefresh": [
+      {
+        "repo": "gradio-app/gradio",
+        "stars": 43915,
+        "forks": 3650,
+        "pushedAt": "2026-10-27T00:23:21Z",
+        "license": "Apache-2.0",
+        "readmeShaStatus": "unchanged"
+      },
+      {
+        "repo": "thedotmack/claude-mem",
+        "stars": 103561,
+        "forks": 9138,
+        "pushedAt": "2026-10-27T09:27:47Z",
+        "license": "Apache-2.0",
+        "readmeShaStatus": "unchanged"
+      },
+      {
+        "repo": "ultralytics/ultralytics",
+        "stars": 62891,
+        "forks": 11921,
+        "pushedAt": "2026-10-27T11:50:14Z",
+        "license": "AGPL-3.0",
+        "readmeShaStatus": "unchanged"
+      },
+      {
+        "repo": "harry0703/MoneyPrinterTurbo",
+        "stars": 135654,
+        "forks": 21533,
+        "pushedAt": "2026-10-27T10:13:32Z",
+        "license": "MIT",
+        "readmeShaStatus": "unchanged"
+      },
+      {
+        "repo": "microsoft/AI-For-Beginners",
+        "stars": 70285,
+        "forks": 13652,
+        "pushedAt": "2026-10-23T23:55:14Z",
+        "license": "MIT",
+        "readmeShaStatus": "unchanged"
+      },
+      {
+        "repo": "usebruno/bruno",
+        "stars": 47869,
+        "forks": 3035,
+        "pushedAt": "2026-10-27T11:48:25Z",
+        "license": "MIT",
+        "readmeShaStatus": "unavailable_this_run"
+      },
+      {
+        "repo": "keras-team/keras",
+        "stars": 64391,
+        "forks": 19803,
+        "pushedAt": "2026-10-27T11:15:37Z",
+        "license": "Apache-2.0",
+        "readmeShaStatus": "unchanged"
+      },
+      {
+        "repo": "k2-fsa/sherpa-onnx",
+        "stars": 15545,
+        "forks": 1818,
+        "pushedAt": "2026-10-26T15:20:53Z",
+        "license": "Apache-2.0",
+        "readmeShaStatus": "unchanged"
+      }
+    ]
+  },
+  "execution": {
+    "structuralValidation": "passed",
+    "exactIdUrlValidation": "passed against current feed for all 14 new records",
+    "localOfficialCommandsExecuted": false,
+    "commandsNotExecutedLocally": [
+      "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-10-27-1443.json",
+      "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-10-27-1443.json",
+      "python -m unittest discover -s tests -v"
+    ],
+    "note": "لم تتوفر بيئة تنفيذ محلية للمستودع. سيُعتمد على GitHub Actions للتحقق الرسمي واختبارات الوحدة، ولن يُدّعى تنفيذ الأوامر محليًا."
+  },
+  "protectedPaths": {
+    "untouchedByThisChange": [
+      "site/data/feed.json",
+      "site/data/seen.json",
+      "scripts/",
+      "docs/",
+      "site/app.js",
+      "site/ideas.js",
+      "site/styles.css",
+      ".github/workflows/"
+    ],
+    "intendedChanges": [
+      "site/data/editorial.json",
+      "editorial/incoming/nabdh-editorial-2026-10-27-1443.json",
+      "editorial/pending/recheck-2026-10-27-1443.json"
+    ]
+  }
+}
