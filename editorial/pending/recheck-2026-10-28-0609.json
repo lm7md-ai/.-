@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-28T03:09:39Z",
+  "purpose": "تقرير تدقيق التراكم قبل الدفعة الجديدة؛ لا يُعدّل feed.json أو seen.json.",
+  "baseMain": {
+    "sha": "0d83d06c28dc98d0c3750baede20cf37575fd676",
+    "committedAt": "2026-10-28T03:04:09Z"
+  },
+  "snapshots": {
+    "feed": {
+      "sha": "1021383a2bd5cfbc228fdd0fc8f40125e0ce7064",
+      "generatedAt": "2026-10-28T03:03:50+00:00",
+      "items": 800
+    },
+    "editorial": {
+      "sha": "aff12949f7c8c4c882ae10278ecbae9eabb7cd62",
+      "entriesBeforeThisBatch": 325
+    },
+    "status": {
+      "sha": "5ace8b6d706a83c68dd6c0d1e1c9dfc43eb5b226",
+      "state": "ok",
+      "lastSuccessfulAt": "2026-10-28T03:03:50+00:00"
+    }
+  },
+  "incomingAuditBeforeThisBatch": {
+    "files": 36,
+    "rows": 326,
+    "uniqueIds": 325,
+    "duplicateRows": 1,
+    "duplicateId": "853c63f738f0cecf3b",
+    "duplicateUrlMatch": true,
+    "activeExactFeedRows": 233,
+    "activeExactAndImportedRows": 233,
+    "outOfFeedRows": 93,
+    "outOfFeedAlreadyImportedRows": 90,
+    "seenOnlyMissingRows": 3,
+    "idUrlMismatches": 0,
+    "confirmedExpiredRows": 0,
+    "requiresCorrectionRows": 0,
+    "structuralRequiredFieldErrorsObserved": 0,
+    "structuralValidationMethod": "JSON parsing, version/items shape, required text, HTTPS URL, source presence, basis and timezone-aware reviewedAt checked equivalently. The prior 35-file report recorded 0 structural errors; current 36th file was checked in this run. This is not a claim that the official Python command ran locally.",
+    "note": "The 93 rows absent from current feed are not automatically expired: 90 already exist in editorial; 3 are seen-only pending. No alternate IDs were created from titles."
+  },
+  "pendingRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "name": "NVIDIA OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "decision": "pending; do not import until exact ID+URL reappears in feed"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "name": "Canva Craft",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "decision": "pending; do not import until exact ID+URL reappears in feed"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "name": "1Password agent sign-in",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "decision": "pending; do not import until exact ID+URL reappears in feed"
+    }
+  ],
+  "newBatch": {
+    "path": "editorial/incoming/nabdh-editorial-2026-10-28-0609.json",
+    "news": 12,
+    "projects": 2,
+    "total": 14,
+    "basisCounts": {
+      "article": 9,
+      "metadata": 3,
+      "readme": 2
+    },
+    "feedIdsAndUrlsVerifiedExactly": true,
+    "alreadyEnrichedBeforeMerge": 0,
+    "proposals": {
+      "improvements": 6,
+      "spinoffs": 6,
+      "religious": 0
+    },
+    "testEvidenceClaims": 0
+  },
+  "mergePlan": {
+    "existingEditorialEntriesPreserved": 325,
+    "newEntries": 14,
+    "expectedEditorialCount": 339,
+    "overwritesOfExistingIds": 0,
+    "feedJsonManuallyChanged": false,
+    "seenJsonManuallyChanged": false,
+    "siteCodeChanged": false,
+    "designChanged": false,
+    "workflowsChanged": false
+  },
+  "validation": {
+    "officialPythonCommandsExecutedLocally": [],
+    "notExecuted": [
+      "python -m unittest discover -s tests -v",
+      "python scripts/editorial.py validate",
+      "python scripts/editorial.py import"
+    ],
+    "reason": "No local checkout/runtime; GitHub clone access was unavailable. Structural-equivalent preflight was used. Existing PR CI will run the official validator and unit tests against the merged editorial JSON.",
+    "statusAtSnapshot": "pending PR CI and deployment"
+  },
+  "publicationVerification": {
+    "liveSiteFetch": "DisabledError from browser tool; not claimed as directly fetched",
+    "latestAvailablePagesArtifactRun": 40624503796,
+    "artifactVerifiedBeforeThisBatch": {
+      "editorialEntries": 325,
+      "feedItems": 800,
+      "previousProjects": [
+        "92022b258211b4ce35",
+        "7c423a3fdda80e9dca"
+      ]
+    },
+    "newBatchPublication": "pending"
+  }
+}
