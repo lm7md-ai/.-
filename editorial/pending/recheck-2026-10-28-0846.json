@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-28T05:46:00Z",
+  "generatedAt": "2026-10-28T05:46:00Z",
+  "publishedToSite": false,
+  "purpose": "تقرير تدقيق مستقل للتراكم؛ لا يغيّر التغذية أو seen ولا يُستهلك في الواجهة.",
+  "baseMainSha": "6ff3f6b758052673e2b8b4e00b6ea71625d6ed74",
+  "baseFeedBlobSha": "b68a2a9bca626039bdad564becab8c9d0cd26cf6",
+  "baseEditorialBlobSha": "0c94540295daec93680f5bb12f823af973b73f4d",
+  "currentSnapshot": {
+    "mainSha": "6ff3f6b758052673e2b8b4e00b6ea71625d6ed74",
+    "feedGeneratedAt": "2026-10-28T05:38:41+00:00",
+    "feedItems": 800,
+    "editorialEntriesBefore": 339,
+    "seenIds": 1505,
+    "seenTitles": 1379,
+    "lastSuccessfulAt": "2026-10-28T05:38:41+00:00",
+    "latestScheduledRefreshRun": {
+      "id": 40639174132,
+      "state": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/lm7md-ai/.-/actions/runs/40639174132"
+    }
+  },
+  "incomingAudit": {
+    "files": 37,
+    "rows": 340,
+    "uniqueIds": 339,
+    "duplicateRows": 1,
+    "duplicateDetails": {
+      "id": "853c63f738f0cecf3b",
+      "sameUrl": true,
+      "status": "imported_active"
+    },
+    "rowCounts": {
+      "importedActiveExactIdUrl": 213,
+      "importedOutsideCurrentFeedButAlreadyInEditorial": 124,
+      "seenOnlyAbsentFromFeedAndEditorial": 3,
+      "idUrlMismatches": 0,
+      "activeExactFeedMatchNotImported": 0,
+      "editorialUrlMismatches": 0
+    },
+    "uniqueIdCounts": {
+      "importedActiveExactIdUrl": 212,
+      "importedOutsideCurrentFeedButAlreadyInEditorial": 124,
+      "seenOnlyAbsentFromFeedAndEditorial": 3
+    },
+    "newlyOutsideFeedSincePreviousSnapshot": 34,
+    "previousSnapshotCounts": {
+      "importedActiveExactIdUrl": 247,
+      "importedOutsideCurrentFeed": 90,
+      "pendingSeenOnly": 3
+    },
+    "confirmedExpired": 0,
+    "needsCorrection": 0,
+    "interpretation": "غياب عنصر عن التغذية الحالية لا يثبت انتهاء صلاحيته؛ 34 سجلًا انتقلت من المطابقة النشطة إلى خارج التغذية بعد تحديثها، مع بقاء إثرائها التاريخي. لم يُنشأ أي معرف بديل بالعنوان."
+  },
+  "incomingFilesBeforeCycle": [
+    "nabdh-editorial-2026-10-24-0542.json",
+    "nabdh-editorial-2026-10-24-0840.json",
+    "nabdh-editorial-2026-10-24-1143.json",
+    "nabdh-editorial-2026-10-24-1439.json",
+    "nabdh-editorial-2026-10-24-1740.json",
+    "nabdh-editorial-2026-10-24-2043.json",
+    "nabdh-editorial-2026-10-24-2342.json",
+    "nabdh-editorial-2026-10-24.json",
+    "nabdh-editorial-2026-10-25-0250.json",
+    "nabdh-editorial-2026-10-25-0554.json",
+    "nabdh-editorial-2026-10-25-0845.json",
+    "nabdh-editorial-2026-10-25-1143.json",
+    "nabdh-editorial-2026-10-25-1442.json",
+    "nabdh-editorial-2026-10-25-1742.json",
+    "nabdh-editorial-2026-10-25-2038.json",
+    "nabdh-editorial-2026-10-25-2342.json",
+    "nabdh-editorial-2026-10-26-0250.json",
+    "nabdh-editorial-2026-10-26-0545.json",
+    "nabdh-editorial-2026-10-26-0840.json",
+    "nabdh-editorial-2026-10-26-1152.json",
+    "nabdh-editorial-2026-10-26-1445.json",
+    "nabdh-editorial-2026-10-26-1745.json",
+    "nabdh-editorial-2026-10-26-2042.json",
+    "nabdh-editorial-2026-10-26-2342.json",
+    "nabdh-editorial-2026-10-27-0038.json",
+    "nabdh-editorial-2026-10-27-0240.json",
+    "nabdh-editorial-2026-10-27-0549.json",
+    "nabdh-editorial-2026-10-27-0619.json",
+    "nabdh-editorial-2026-10-27-0847.json",
+    "nabdh-editorial-2026-10-27-1141.json",
+    "nabdh-editorial-2026-10-27-1443.json",
+    "nabdh-editorial-2026-10-27-2045.json",
+    "nabdh-editorial-2026-10-27-2113.json",
+    "nabdh-editorial-2026-10-27-2347.json",
+    "nabdh-editorial-2026-10-28-0244.json",
+    "nabdh-editorial-2026-10-28-0555.json",
+    "nabdh-editorial-2026-10-28-0609.json"
+  ],
+  "pendingRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "title": "NVIDIA OpenShell",
+      "seen": true,
+      "feedPresent": false,
+      "editorialPresent": false,
+      "classification": "pending_seen_only",
+      "action": "عدم الاستيراد حتى يعود المعرف والرابط الأصليان إلى التغذية الحالية أو يثبت تطابقهما؛ لا توليد هوية بديلة."
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "title": "Canva Craft",
+      "seen": true,
+      "feedPresent": false,
+      "editorialPresent": false,
+      "classification": "pending_seen_only",
+      "action": "عدم الاستيراد حتى يعود المعرف والرابط الأصليان إلى التغذية الحالية أو يثبت تطابقهما؛ لا توليد هوية بديلة."
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "title": "1Password agent sign-in",
+      "seen": true,
+      "feedPresent": false,
+      "editorialPresent": false,
+      "classification": "pending_seen_only",
+      "action": "عدم الاستيراد حتى يعود المعرف والرابط الأصليان إلى التغذية الحالية أو يثبت تطابقهما؛ لا توليد هوية بديلة."
+    }
+  ],
+  "activeQueueBefore": {
+    "total": 585,
+    "news": 552,
+    "projects": 33
+  },
+  "newBatch": {
+    "path": "editorial/incoming/nabdh-editorial-2026-10-28-0846.json",
+    "entries": 14,
+    "news": 12,
+    "projects": 2,
+    "ids": [
+      "dcad83d827337ce853",
+      "3680aedf70659ea795",
+      "79ffda0a470cc0fd1c",
+      "6d883a1f3620138ca1",
+      "18559cb38b762050d8",
+      "c08a0a2ef6db74bc04",
+      "a2ad1e8fe785e24b8c",
+      "71cf58516c356f0141",
+      "6c5e6a6d85af5893fe",
+      "8b75540f94518f9a33",
+      "035f71ec0325679b7f",
+      "243077946363d39c76",
+      "1400546783020ebaf6",
+      "85839b0d6555a00982"
+    ],
+    "allExactCurrentFeedIdUrl": true,
+    "allAbsentFromEditorialBefore": true,
+    "basisCounts": {
+      "article": 3,
+      "metadata": 9,
+      "readme": 2
+    }
+  },
+  "afterPlannedMerge": {
+    "incomingFiles": 38,
+    "incomingRows": 354,
+    "incomingUniqueIds": 353,
+    "editorialEntries": 353,
+    "activeQueueEstimated": {
+      "total": 571,
+      "news": 540,
+      "projects": 31
+    }
+  },
+  "validation": {
+    "localOfficialCommandsExecuted": false,
+    "structuralEquivalentPrecheck": "pass",
+    "commandsNotExecutedLocally": [
+      "python scripts/editorial.py validate /tmp/nabdh-editorial.json",
+      "python scripts/editorial.py import /tmp/nabdh-editorial.json",
+      "python -m unittest discover -s tests -v"
+    ],
+    "ciValidationAtReportCreation": "pending PR checks; do not infer success from commit alone",
+    "filesToRunInCI": [
+      "python scripts/editorial.py validate",
+      "python -m unittest discover -s tests -v"
+    ]
+  },
+  "priorReports": [
+    "editorial/pending/recheck-2026-10-28-0555.json",
+    "editorial/pending/recheck-2026-10-28-0609.json"
+  ],
+  "protectedPaths": [
+    "site/data/feed.json",
+    "site/data/seen.json",
+    "site/index.html",
+    "site/styles.css",
+    "site/app.js",
+    "site/ideas.js",
+    ".github/workflows/update-and-deploy.yml"
+  ]
+}
