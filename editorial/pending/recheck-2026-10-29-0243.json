@@ -1,0 +1,148 @@
+{
+  "version": 1,
+  "reportType": "editorial-backlog-recheck",
+  "reviewedAt": "2026-10-29T02:43:57+03:00",
+  "mainHeadBefore": "4d2825a3b4e2b01a6727f701d10f609a2a65964a",
+  "pullRequests1and2": [
+    {
+      "number": 1,
+      "state": "closed",
+      "merged": true,
+      "url": "https://github.com/lm7md-ai/.-/pull/1"
+    },
+    {
+      "number": 2,
+      "state": "closed",
+      "merged": true,
+      "url": "https://github.com/lm7md-ai/.-/pull/2"
+    }
+  ],
+  "currentState": {
+    "feedGeneratedAt": "2026-10-28T20:56:12+00:00",
+    "feedItems": 800,
+    "feedNewItems": 25,
+    "editorialEntriesBefore": 409,
+    "seenIds": 1654,
+    "seenTitles": 1525,
+    "statusLastSuccessfulAt": "2026-10-28T20:56:12+00:00",
+    "statusState": "partial",
+    "statusCollected": 400,
+    "activeEditorialExactIdUrl": 250,
+    "editorialOutsideCurrentFeed": 159,
+    "editorialUrlMismatches": 0,
+    "unEnrichedFeedBefore": 550,
+    "unEnrichedKindsBefore": {
+      "news": 526,
+      "project": 24
+    },
+    "editorialEntriesAfter": 423
+  },
+  "incomingAudit": {
+    "filesChecked": 42,
+    "rowsChecked": 410,
+    "uniqueIds": 409,
+    "duplicateRows": 1,
+    "duplicate": {
+      "id": "853c63f738f0cecf3b",
+      "urlsIdentical": true,
+      "decision": "retain; no alternate identity generated"
+    },
+    "importedExactRows": 407,
+    "importedExactUniqueIds": 406,
+    "activeFeedExactRows": 248,
+    "importedOutOfFeedRows": 159,
+    "seenOnlyRows": 3,
+    "idUrlMismatches": 0,
+    "editorialUrlMismatches": 0,
+    "invalidRows": 0,
+    "confirmedExpired": 0,
+    "needingCorrection": 0,
+    "note": "تمت مراجعة ملفات الوارد على دفعات بمقارنة id وurl الأصليين. السجلات خارج التغذية الحالية تُصنف تاريخية/غير مؤكدة ولا تسمى منقضية دون دليل."
+  },
+  "pendingRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "name": "NVIDIA OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "seen": true,
+      "feedPresent": false,
+      "editorialPresent": false,
+      "decision": "pending; exact id/url absent from current feed"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "name": "Canva Craft",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "seen": true,
+      "feedPresent": false,
+      "editorialPresent": false,
+      "decision": "pending; exact id/url absent from current feed"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "name": "1Password agent sign-in",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "seen": true,
+      "feedPresent": false,
+      "editorialPresent": false,
+      "decision": "pending; exact id/url absent from current feed"
+    }
+  ],
+  "newBatch": {
+    "file": "editorial/incoming/nabdh-editorial-2026-10-29-0243.json",
+    "items": 14,
+    "news": 12,
+    "projects": 2,
+    "ids": [
+      "7b5653451a244c2d34",
+      "59f92a9af33d778722",
+      "bc75ed686e56f0828c",
+      "ec733f799e1aaee3d1",
+      "090274bcc4740a7076",
+      "2c5fcb5691316a2892",
+      "6eab8d16980c4265f6",
+      "4a1c830da2c5bc9ffd",
+      "a395c7da350b5086cc",
+      "00f2dc4067e9328e4f",
+      "7ce2c248469b55d0c6",
+      "3a0e6f223eff99ed17",
+      "c7d21c81942f9a6ade",
+      "3f2a46287c0578a69b"
+    ],
+    "structuralValidation": "passed in runtime; exact active feed id/url and schema checks applied; official Python CLI unavailable locally; PR CI will provide official validation"
+  },
+  "postMergeExpected": {
+    "editorialEntries": 423,
+    "oldEntriesPreserved": 409,
+    "addedEntries": 14,
+    "feedJsonChanged": false,
+    "seenJsonChanged": false,
+    "libraryJsonChanged": false
+  },
+  "historicalLibrary": {
+    "entries": 31,
+    "archived": 2,
+    "nonArchived": 29,
+    "currentFeedMatches": 4,
+    "outsideCurrentFeed": 27,
+    "catalogCompiledAt": "2026-10-24T10:38:36.869Z",
+    "metricsCapturedAt": "2026-10-28T23:43:57Z"
+  },
+  "protectedPathsUnchangedByDesign": [
+    "scripts/editorial.py",
+    "site/app.js",
+    "site/ideas.js",
+    "site/style.css",
+    "index.html",
+    "site/data/feed.json",
+    "site/data/seen.json",
+    "site/data/library.json",
+    ".github/workflows/*"
+  ],
+  "localCommandsNotExecuted": [
+    "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-10-29-0243.json",
+    "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-10-29-0243.json",
+    "python -m unittest discover -s tests -v"
+  ],
+  "publishStatus": "not yet verified; wait for PR CI and subsequent Pages check"
+}
