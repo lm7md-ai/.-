@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-28T06:59:06Z",
+  "measuredAt": "2026-10-28T06:59:06Z",
+  "publishedToSite": false,
+  "purpose": "مكتبة بحثية تراكمية منفصلة غير منشورة؛ توثق الكتالوج التاريخي وتراجع المشاريع الثمانية السابقة ومتطلبات العرض. لا تعدّل site/data/library.json أو تصميم الموقع.",
+  "measurementMethod": "لقطة من GitHub REST؛ النجوم والتفرعات أعداد تراكمية لا معدلات نمو. قيس النشاط والترخيص ووقت القياس كما هو مذكور؛ لم تُشغّل المشاريع الجديدة.",
+  "historicalCatalog": {
+    "path": "site/data/library.json",
+    "entries": 31,
+    "compiledAt": "2026-10-24T10:38:36.869Z",
+    "archived": 2,
+    "inCurrentFeed": 4,
+    "notInFeed": 27,
+    "archivedKnown": [
+      "atom/atom",
+      "angular/angular.js"
+    ],
+    "note": "لم يُعدّل الكتالوج المنشور؛ بقي عند 31 مشروعًا."
+  },
+  "previousEight": [
+    {
+      "name": "Gradio",
+      "repo": "gradio-app/gradio",
+      "url": "https://github.com/gradio-app/gradio",
+      "stars": 43926,
+      "forks": 3650,
+      "license": "Apache-2.0",
+      "defaultBranch": "main",
+      "archived": false,
+      "pushedAt": "2026-10-28T04:43:53Z",
+      "status": "مستمر حسب بيانات المستودع",
+      "alternatives": [
+        "Streamlit",
+        "Chainlit",
+        "Panel"
+      ],
+      "measuredAt": "2026-10-28T06:59:06Z"
+    },
+    {
+      "name": "Claude-Mem",
+      "repo": "thedotmack/claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "stars": 103798,
+      "forks": 9162,
+      "license": "Apache-2.0",
+      "defaultBranch": "main",
+      "archived": false,
+      "pushedAt": "2026-10-28T05:41:16Z",
+      "status": "مستمر حسب بيانات المستودع",
+      "alternatives": [
+        "Letta",
+        "Mem0",
+        "Zep"
+      ],
+      "measuredAt": "2026-10-28T06:59:06Z"
+    },
+    {
+      "name": "Ultralytics",
+      "repo": "ultralytics/ultralytics",
+      "url": "https://github.com/ultralytics/ultralytics",
+      "stars": 62919,
+      "forks": 11925,
+      "license": "AGPL-3.0",
+      "defaultBranch": "main",
+      "archived": false,
+      "pushedAt": "2026-10-28T06:39:19Z",
+      "status": "مستمر حسب بيانات المستودع",
+      "latestCommit": {
+        "sha": "bb3e1550dbb819bd9846d4c99f368aebe8792a0e",
+        "date": "2026-10-27T22:47:32Z",
+        "url": "https://github.com/ultralytics/ultralytics/commit/bb3e1550dbb819bd9846d4c99f368aebe8792a0e"
+      },
+      "alternatives": [
+        "MMDetection",
+        "Detectron2",
+        "torchvision"
+      ],
+      "measuredAt": "2026-10-28T06:59:06Z"
+    },
+    {
+      "name": "MoneyPrinterTurbo",
+      "repo": "harry0703/MoneyPrinterTurbo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "stars": 135931,
+      "forks": 21590,
+      "license": "MIT",
+      "defaultBranch": "main",
+      "archived": false,
+      "pushedAt": "2026-10-28T03:38:17Z",
+      "status": "مستمر حسب بيانات المستودع",
+      "alternatives": [
+        "خط FFmpeg/TTS مخصص",
+        "Remotion",
+        "أدوات فيديو مفتوحة المصدر"
+      ],
+      "measuredAt": "2026-10-28T06:59:06Z"
+    },
+    {
+      "name": "AI-For-Beginners",
+      "repo": "microsoft/AI-For-Beginners",
+      "url": "https://github.com/microsoft/AI-For-Beginners",
+      "stars": 70308,
+      "forks": 13656,
+      "license": "MIT",
+      "defaultBranch": "main",
+      "archived": false,
+      "pushedAt": "2026-10-23T23:55:14Z",
+      "status": "مستمر؛ نشاطه أبطأ نسبيًا وقت القياس، وليس مؤرشفًا",
+      "alternatives": [
+        "fast.ai",
+        "Dive into Deep Learning",
+        "Kaggle Learn"
+      ],
+      "measuredAt": "2026-10-28T06:59:06Z"
+    },
+    {
+      "name": "Bruno",
+      "repo": "usebruno/bruno",
+      "url": "https://github.com/usebruno/bruno",
+      "stars": 47884,
+      "forks": 3037,
+      "license": "MIT",
+      "defaultBranch": "main",
+      "archived": false,
+      "pushedAt": "2026-10-28T06:48:34Z",
+      "status": "مستمر",
+      "latestCommit": {
+        "sha": "e7208037de9126aa3b0d44ec98867e9f82057999",
+        "date": "2026-10-28T06:48:33Z",
+        "url": "https://github.com/usebruno/bruno/commit/e7208037de9126aa3b0d44ec98867e9f82057999"
+      },
+      "alternatives": [
+        "Postman",
+        "Insomnia",
+        "Hoppscotch"
+      ],
+      "measuredAt": "2026-10-28T06:59:06Z"
+    },
+    {
+      "name": "Keras",
+      "repo": "keras-team/keras",
+      "url": "https://github.com/keras-team/keras",
+      "stars": 64392,
+      "forks": 19807,
+      "license": "Apache-2.0",
+      "defaultBranch": "master",
+      "archived": false,
+      "pushedAt": "2026-10-27T23:29:20Z",
+      "status": "مستمر حسب بيانات المستودع",
+      "alternatives": [
+        "PyTorch",
+        "JAX",
+        "TensorFlow low-level APIs"
+      ],
+      "measuredAt": "2026-10-28T06:59:06Z"
+    },
+    {
+      "name": "sherpa-onnx",
+      "repo": "k2-fsa/sherpa-onnx",
+      "url": "https://github.com/k2-fsa/sherpa-onnx",
+      "stars": 15558,
+      "forks": 1823,
+      "license": "Apache-2.0",
+      "defaultBranch": "master",
+      "archived": false,
+      "pushedAt": "2026-10-28T06:18:16Z",
+      "status": "مستمر حسب بيانات المستودع",
+      "alternatives": [
+        "whisper.cpp",
+        "Vosk",
+        "ONNX Runtime integrations"
+      ],
+      "measuredAt": "2026-10-28T06:59:06Z"
+    }
+  ],
+  "newProjects": [
+    {
+      "name": "Files",
+      "repo": "files-community/Files",
+      "url": "https://github.com/files-community/Files",
+      "id": "d97790555bfbf345e7",
+      "feedUrl": "https://github.com/files-community/Files",
+      "stars": 46263,
+      "forks": 2989,
+      "license": "MIT + MPL-2.0 components",
+      "archived": false,
+      "defaultBranch": "main",
+      "pushedAt": "2026-10-28T04:26:59Z",
+      "measuredAt": "2026-10-28T06:59:06Z",
+      "overview": "Files مدير ملفات لويندوز يركز على تجربة حديثة وتعدد المهام والوسوم والتكاملات. يذكر المستودع وجود رخص MIT وMPL-2.0 في أجزاء مختلفة، لذا راجع رخصة كل جزء قبل إعادة الاستخدام. عند القياس: 46,263 نجمة و2,989 fork؛ آخر دفع معلن 2026-10-28T04:26:59Z، والمستودع غير مؤرشف.",
+      "requirements": "للمستخدم: Windows 10 إصدار 19041 أو أحدث وفق إعدادات البناء. للبناء: global.json يثبت .NET SDK 10.0.102؛ ويحدد Directory.Build.props إطار net10.0-windows10.0.26100.0 وحدًا أدنى Windows 10.0.19041.0 وحزمة Windows SDK 10.0.26100.67-preview. يلزم Windows ومكونات Visual Studio/.NET/Windows SDK المناسبة. لا يحتاج إلى نموذج AI أو API سحابي.",
+      "quickStart": "للاستخدام، ثبّت الإصدار المستقر من Microsoft Store أو المثبّت الرسمي. للبناء، اقرأ دليل البناء، ثبّت .NET SDK 10.0.102 ومكونات Windows SDK، استنسخ المستودع وافتح Files.slnx ثم نفّذ الاستعادة والبناء وفق الدليل. لم أنفذ البناء.",
+      "alternatives": [
+        "Windows File Explorer",
+        "OneCommander",
+        "Directory Opus"
+      ],
+      "publishedToSite": true,
+      "tested": false
+    },
+    {
+      "name": "Carbon",
+      "repo": "carbon-app/carbon",
+      "url": "https://github.com/carbon-app/carbon",
+      "id": "6ac7d177869c8f2b1f",
+      "feedUrl": "https://github.com/carbon-app/carbon",
+      "stars": 36122,
+      "forks": 1972,
+      "license": "MIT",
+      "archived": false,
+      "defaultBranch": "main",
+      "pushedAt": "2026-10-27T01:26:22Z",
+      "measuredAt": "2026-10-28T06:59:06Z",
+      "overview": "Carbon مشروع مفتوح المصدر لتحويل الشيفرة إلى صور مع التحكم في ألوان الصياغة والخط والخلفية والهوامش. README يذكر التصدير إلى PNG وSVG والروابط المحفوظة والتضمين وPWA. عند القياس: 36,122 نجمة و1,972 fork، رخصة MIT، آخر دفع معلن 2026-10-27T01:26:22Z، والمستودع غير مؤرشف.",
+      "requirements": "للاستخدام عبر الموقع يكفي متصفح حديث ولا يحتاج مفتاح API لنموذج AI. حفظ المقتطفات يحتاج تسجيل دخول. للبناء الذاتي: يستخدم المستودع Next.js وReact وyarn.lock ويضم Cypress، لذلك يلزم Node.js وYarn متوافقان مع ملفات المشروع. لم يحدد README الذي راجعته رقم Node ثابتًا؛ تحقق من إعدادات CI قبل البناء.",
+      "quickStart": "افتح carbon.now.sh، الصق الشيفرة أو اسحب ملفًا أو افتح GitHub Gist، ثم اختر السمة والخط والخلفية والهوامش وصدّر PNG أو SVG. للبناء الذاتي: استنسخ المستودع وثبّت الاعتماديات باستخدام Yarn ثم شغّل yarn dev. لم أنفذ البناء أو اختبارات المتصفح.",
+      "alternatives": [
+        "ray.so",
+        "Snappify",
+        "محرر صور شيفرة محلي"
+      ],
+      "publishedToSite": true,
+      "tested": false
+    }
+  ],
+  "ideaCounts": {
+    "Files": {
+      "improvements": 4,
+      "spinoffs": 4,
+      "religious": 0
+    },
+    "Carbon": {
+      "improvements": 4,
+      "spinoffs": 4,
+      "religious": 0
+    },
+    "total": 16
+  },
+  "developerDisplayRequirements": [
+    "اعرض overview وrequirements وquickStart وlimitations بوضوح.",
+    "اعرض حالة النشاط والترخيص ووقت قياس stars/forks بجانب المصدر الرسمي.",
+    "احفظ ترتيب الاقتراحات وروابطها الأصلية؛ لا تولد هويات بديلة.",
+    "اعرض title وproblem وapproach وstack وsteps وmetric وdifficulty وrisks وsources لكل اقتراح.",
+    "لا تعرض testEvidence دون دليل اختبار فعلي؛ المشروعان غير مختبرين.",
+    "هذه متطلبات محتوى فقط ولا تتطلب تغيير الواجهة أو الشيفرة."
+  ],
+  "notes": "AI-For-Beginners أبطأ نشاطًا نسبيًا لكنه غير مؤرشف. أُثري Files وCarbon بمعرفيهما الأصليين؛ لم يُشغّل أي منهما."
+}

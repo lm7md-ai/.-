@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-28T06:59:06Z",
+  "generatedAt": "2026-10-28T06:59:06Z",
+  "publishedToSite": false,
+  "purpose": "تقرير تدقيق تراكمي غير منشور: مقارنة حرفية للمعرفات والروابط وفصل السجلات غير المطابقة.",
+  "baseMainSha": "403aa349e04c287dfbd0c50d456e2af40bac19d8",
+  "currentSnapshot": {
+    "mainSha": "403aa349e04c287dfbd0c50d456e2af40bac19d8",
+    "feedGeneratedAt": "2026-10-28T06:34:35+00:00",
+    "feedItems": 800,
+    "editorialEntriesBefore": 367,
+    "editorialEntriesAfter": 381,
+    "seenIds": 1514,
+    "seenTitles": 1386
+  },
+  "incomingAudit": {
+    "filesBefore": 39,
+    "rowsBefore": 368,
+    "uniqueIdsBefore": 367,
+    "duplicateRows": 1,
+    "duplicateDetails": {
+      "id": "853c63f738f0cecf3b",
+      "sameUrl": true,
+      "status": "imported_active"
+    },
+    "rowCounts": {
+      "alreadyImportedRows": 365,
+      "uniqueImportedIds": 364,
+      "activeExactUniqueIds": 239,
+      "outsideCurrentFeedButAlreadyEditorial": 125,
+      "seenOnlyAbsentFromFeedAndEditorial": 3,
+      "idUrlMismatches": 0,
+      "editorialUrlMismatches": 0
+    },
+    "confirmedExpired": 0,
+    "needsCorrection": 0,
+    "interpretation": "أُعيد فحص جميع ملفات الوارد الـ39 ومطابقة id/url حرفيًا. لا توجد اختلافات هوية؛ لا يصح اعتبار السجلات خارج feed منقضية لمجرد غيابها."
+  },
+  "pendingRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "title": "NVIDIA OpenShell",
+      "seen": true,
+      "feedPresent": false,
+      "editorialPresent": false,
+      "classification": "pending_seen_only",
+      "reason": "المعرف والرابط الأصليان غائبان عن feed.json وeditorial.json الحالية؛ لا تُنشأ هوية بديلة."
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "title": "Canva Craft",
+      "seen": true,
+      "feedPresent": false,
+      "editorialPresent": false,
+      "classification": "pending_seen_only",
+      "reason": "المعرف والرابط الأصليان غائبان عن feed.json وeditorial.json الحالية؛ لا تُنشأ هوية بديلة."
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "title": "1Password agent sign-in",
+      "seen": true,
+      "feedPresent": false,
+      "editorialPresent": false,
+      "classification": "pending_seen_only",
+      "reason": "المعرف والرابط الأصليان غائبان عن feed.json وeditorial.json الحالية؛ لا تُنشأ هوية بديلة."
+    }
+  ],
+  "newBatch": {
+    "path": "editorial/incoming/nabdh-editorial-2026-10-28-0943.json",
+    "entries": 14,
+    "news": 12,
+    "projects": 2,
+    "allExactCurrentFeedIdUrl": true,
+    "allAbsentFromEditorialBeforeThisBatch": true,
+    "basisCounts": {
+      "article": 2,
+      "readme": 3,
+      "metadata": 9
+    },
+    "testEvidence": "لا توجد ادعاءات تشغيل أو اختبار للمشروعات."
+  },
+  "afterPlannedMerge": {
+    "incomingFiles": 40,
+    "incomingRows": 382,
+    "incomingUniqueIds": 381,
+    "editorialEntries": 381,
+    "activeExactFeedEditorialUniqueIdsAfter": 253,
+    "outsideFeedEditorial": 125,
+    "seenOnlyPending": 3,
+    "activeUrlMismatches": 0,
+    "all14ExactMatchAfterMerge": true
+  },
+  "validation": {
+    "localOfficialCommandsExecuted": false,
+    "structuralEquivalentPrecheck": "pass",
+    "commandsNotExecutedLocally": [
+      "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-10-28-0943.json",
+      "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-10-28-0943.json",
+      "python -m unittest discover -s tests -v"
+    ],
+    "reason": "لا توجد بيئة تشغيل محلية للمستودع في هذا السياق؛ طُبق تحقق بنيوي مكافئ قبل تجهيز الدمج، ويجب أن تؤكد GitHub Actions التحقق الرسمي والاختبارات."
+  },
+  "protectedPaths": [
+    "site/data/feed.json",
+    "site/data/seen.json",
+    "site/index.html",
+    "site/styles.css",
+    "site/app.js",
+    "site/ideas.js",
+    ".github/workflows/update-and-deploy.yml"
+  ],
+  "note": "التقرير غير منشور. لم تُعدّل feed.json أو seen.json يدويًا."
+}

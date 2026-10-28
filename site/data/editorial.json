@@ -20550,6 +20550,770 @@
           ]
         }
       ]
+    },
+    "1ea3e75f96c3dd880b": {
+      "url": "https://artificialanalysis.ai/methodology/intelligence-benchmarking",
+      "titleAr": "تحديث Artificial Analysis Intelligence Index إلى الإصدار 5",
+      "summaryAr": "تشرح صفحة المنهجية أن المؤشر يجمع تقييمات للمعرفة والاستدلال والرياضيات والبرمجة، ويضم الإصدار 5 مجموعات لتقييم العمل المعرفي والترميز والعلوم والقدرات العامة. هو مؤشر تركيبي لا مقياس شامل لكل استخدام.",
+      "whyItMatters": "ترتيب النماذج يتأثر باختيار الاختبارات وأوزانها؛ ولا يثبت ترتيب واحد أن نموذجًا بعينه أفضل لكل مهمة.",
+      "audience": "مطورو الذكاء الاصطناعي وطلاب الحوسبة وصناع القرار التقني",
+      "nextSteps": [
+        "اقرأ تعريفات الاختبارات وإصداراتها قبل تفسير الفروق",
+        "قارن النماذج على مهام تمثل استخدامك الفعلي",
+        "افصل بين النتيجة المنشورة والاختبار الذي تعيده بنفسك"
+      ],
+      "limitations": "المنهجية صادرة عن الجهة الناشرة للمؤشر؛ وتختلف النتائج باختلاف الاختبارات والإصدارات، ولا تغطي كل الاستخدامات أو قيود النشر والتكلفة.",
+      "basis": "article",
+      "reviewedAt": "2026-10-28T06:59:06Z",
+      "sources": [
+        {
+          "title": "Artificial Analysis — Benchmarking Methodology",
+          "url": "https://artificialanalysis.ai/methodology/intelligence-benchmarking"
+        }
+      ]
+    },
+    "3b3368b877e0c1e566": {
+      "url": "https://github.com/maharmstone/moxnox",
+      "titleAr": "Moxnox 1.0: نظام تشغيل هواة مستوحى من NT ومتوافق مع POSIX",
+      "summaryAr": "يصف README المشروع كنظام تشغيل تجريبي بتصميم شبيه بـWindows NT وواجهات POSIX ونظام ملفات Btrfs، مع هدف الاستضافة الذاتية ودعم amd64 وaarch64. تشغيل برامج Unix يتطلب إعادة بنائها.",
+      "whyItMatters": "يعرض مثالًا عمليًا لبنية النواة والتوافق؛ لكنه مشروع هواة للتعلم، لا بديل جاهز لنظام إنتاج.",
+      "audience": "طلاب أنظمة التشغيل ومطورو الأنظمة منخفضة المستوى",
+      "nextSteps": [
+        "اقرأ README وسجل الإصدارات قبل التجربة",
+        "استخدم آلة افتراضية لا جهازك الأساسي",
+        "تحقق من رخصة كل مكوّن قبل إعادة التوزيع"
+      ],
+      "limitations": "مشروع تجريبي؛ توافق POSIX لا يضمن توافقًا ثنائيًا مع التطبيقات الموجودة، وقد تتغير الميزات والاستقرارية.",
+      "basis": "readme",
+      "reviewedAt": "2026-10-28T06:59:06Z",
+      "sources": [
+        {
+          "title": "Moxnox — repository",
+          "url": "https://github.com/maharmstone/moxnox"
+        },
+        {
+          "title": "Moxnox — README",
+          "url": "https://github.com/maharmstone/moxnox/blob/master/README.md"
+        }
+      ]
+    },
+    "3cdb67b8ec5ac686f5": {
+      "url": "https://www.engadget.com/2298428/apple-creator-studio-update-adds-motionvfx-to-final-cut-and-ai-to-everywhere/",
+      "titleAr": "تحديث Apple Creator Studio يضيف تكامل MotionVFX وميزات ذكاء اصطناعي",
+      "summaryAr": "تذكر بيانات صفحة Engadget أن التحديث يضيف MotionVFX إلى Final Cut Pro ويوسع حضور ميزات الذكاء الاصطناعي في Creator Studio. لم أتمكن من قراءة المقال كاملًا؛ لذلك يقتصر الملخص على البيانات الوصفية المتاحة.",
+      "whyItMatters": "يشير إلى دمج AI في أدوات الإنتاج الإبداعي، لكن أثر التحديث يحتاج مراجعة ملاحظات الإصدار الرسمية وتجربة الميزات.",
+      "audience": "صناع المحتوى ومحررو الفيديو ومطورو أدوات الإبداع",
+      "nextSteps": [
+        "راجع ملاحظات إصدار Apple الرسمية",
+        "تحقق من توفر الميزات حسب الجهاز والمنطقة والاشتراك",
+        "قارن النتائج على مشروع فعلي قبل تغيير سير العمل"
+      ],
+      "limitations": "لم يكن النص الكامل متاحًا؛ تفاصيل التوفر والتسعير وحدود الميزات تحتاج تأكيدًا من Apple.",
+      "basis": "metadata",
+      "reviewedAt": "2026-10-28T06:59:06Z",
+      "sources": [
+        {
+          "title": "Engadget — Apple Creator Studio update",
+          "url": "https://www.engadget.com/2298428/apple-creator-studio-update-adds-motionvfx-to-final-cut-and-ai-to-everywhere/"
+        }
+      ]
+    },
+    "6a1a48b552844a5eec": {
+      "url": "https://www.theverge.com/tech/1018467/apple-imac-m6-chip-announced-price-release",
+      "titleAr": "آبل تحدّث iMac بمعالج M6 وتحسّن الاتصال اللاسلكي",
+      "summaryAr": "تفيد تغطية The Verge أن iMac الجديد يبدأ من 1499 دولارًا ويضم M6 وN1 مع Wi‑Fi 7 وBluetooth 6؛ يبدأ الطلب المسبق في 28 أكتوبر والتوفر في 6 نوفمبر 2026. تقول Apple إن أداء AI على الجهاز قد يصل إلى خمسة أضعاف M4؛ وهذا ادعاء الشركة لا قياس مستقل لكل الأحمال.",
+      "whyItMatters": "يعكس اتجاه تسريع تشغيل بعض نماذج الذكاء الاصطناعي محليًا؛ وينبغي مقارنة الذاكرة والمنافذ والتكلفة الكلية، لا رقم تسويقي منفرد.",
+      "audience": "مهتمو الأجهزة والحوسبة الطرفية ومطورو AI المحلي",
+      "nextSteps": [
+        "انتظر اختبارات مستقلة للأداء والحرارة والطاقة",
+        "قارن الذاكرة والمنافذ مع احتياجات تطبيقاتك",
+        "تحقق من الأسعار والتوفر المحلي"
+      ],
+      "limitations": "أرقام الأداء القصوى من Apple وقد لا تنطبق على كل نموذج أو مهمة؛ الأسعار والتوافر يختلفان حسب السوق.",
+      "basis": "article",
+      "reviewedAt": "2026-10-28T06:59:06Z",
+      "sources": [
+        {
+          "title": "The Verge — Apple refreshes the iMac with M6 chips",
+          "url": "https://www.theverge.com/tech/1018467/apple-imac-m6-chip-announced-price-release"
+        }
+      ]
+    },
+    "cefc48cf69e7d9b72f": {
+      "url": "https://arxiv.org/abs/2610.36116",
+      "titleAr": "ورقة تقترح إبقاء الفهم والتوجيه البشريين معيارًا لتفويض البحث للذكاء الاصطناعي",
+      "summaryAr": "يقترح ملخص ورقة أولية معيارين لتفويض مراحل البحث: أن يظل المجتمع العلمي قادرًا على تفسير النتائج ومناقشتها، وأن تبقى قرارات اختيار الأسئلة وتفسير معناها بيد بشر مسؤولين.",
+      "whyItMatters": "يساعد فرق البحث على استخدام الوكلاء دون فقدان القدرة على مراجعة الأدلة وتحديد الأولويات.",
+      "audience": "الباحثون وطلاب AI ومسؤولو المختبرات",
+      "nextSteps": [
+        "اقرأ النص الكامل قبل اعتماد الإطار",
+        "صنّف ما يمكن تفويضه وما يحتاج حكمًا بشريًا",
+        "وثّق كيفية فحص الادعاءات المولدة"
+      ],
+      "limitations": "مسودة arXiv أولية؛ الإطار مقترح مفاهيمي ولا يثبت وحده تحسن نتائج كل مجال.",
+      "basis": "metadata",
+      "reviewedAt": "2026-10-28T06:59:06Z",
+      "sources": [
+        {
+          "title": "arXiv — Why and How to Do Science When AI Is Better at It",
+          "url": "https://arxiv.org/abs/2610.36116"
+        }
+      ]
+    },
+    "225fb5a9da194f15d1": {
+      "url": "https://arxiv.org/abs/2610.36169",
+      "titleAr": "بحث عن تعارض المعرفة في RAG يدعو لتقدير موثوقية السياق بدل قاعدة ثابتة",
+      "summaryAr": "يناقش الملخص تعارض المعلومات المسترجعة مع معرفة النموذج، ويقترح الجمع بين تقدير موثوقية كل مصدر وافتراض سابق عن نسبة السياقات الصحيحة، مع إمكان الامتناع. النتائج المذكورة على مجموعات تقييم محددة.",
+      "whyItMatters": "قاعدة «ثق دائمًا بالمستند» أو «ثق دائمًا بذاكرة النموذج» قد تفشل عندما تكون المستندات ناقصة أو خاطئة.",
+      "audience": "مهندسو RAG ومطورو المساعدات المعتمدة على الوثائق",
+      "nextSteps": [
+        "اختبر أمثلة يكون السياق فيها صحيحًا وخاطئًا",
+        "قِس جودة الامتناع عن الإجابة بجانب الدقة",
+        "راجع مجموعات التقييم قبل نقل الأرقام إلى منتج"
+      ],
+      "limitations": "ورقة أولية؛ لم أراجع النص الكامل أو أعد التجارب، والأداء يعتمد على الافتراضات والمعايرة.",
+      "basis": "metadata",
+      "reviewedAt": "2026-10-28T06:59:06Z",
+      "sources": [
+        {
+          "title": "arXiv — Don't Pick a Winner",
+          "url": "https://arxiv.org/abs/2610.36169"
+        }
+      ]
+    },
+    "0ed6edd9404f35cfd9": {
+      "url": "https://arxiv.org/abs/2610.36298",
+      "titleAr": "دراسة أولية تقارن قابلية استنساخ الشبكات العصبية النبضية",
+      "summaryAr": "يقارن الملخص نماذج عصبية نبضية بتقليدية في اختبارات صور، ويذكر المؤلفون انخفاض توافق النماذج البديلة في إعداداتهم. لا يعني ذلك أن المعمارية وحدها تمنع استخراج النموذج أو تحمي الخدمة تلقائيًا.",
+      "whyItMatters": "واجهة النموذج قد تكشف معلومات تتجاوز الإجابة؛ لذا يتطلب التقييم اختبارات دفاعية خاصة بكل نموذج ونمط نشر.",
+      "audience": "باحثو أمن تعلم الآلة ومهندسو نشر النماذج",
+      "nextSteps": [
+        "اقرأ المنهجية الكاملة قبل الاستشهاد بالأرقام",
+        "قيّم حدود الاستعلام ومراقبة الاستخدام",
+        "لا تعتبر المعمارية بديلًا عن ضوابط أمن الخدمة"
+      ],
+      "limitations": "ورقة أولية ونتائجها مقيدة بالمجموعات والميزانيات المذكورة؛ لم أراجع النص الكامل أو أعد التجارب.",
+      "basis": "metadata",
+      "reviewedAt": "2026-10-28T06:59:06Z",
+      "sources": [
+        {
+          "title": "arXiv — Spiking Neural Networks Are Harder to Steal",
+          "url": "https://arxiv.org/abs/2610.36298"
+        }
+      ]
+    },
+    "202d9ab2851e24f9a8": {
+      "url": "https://arxiv.org/abs/2610.36325",
+      "titleAr": "إطار بحثي يستخدم معرفة طبية منظمة لتفسير الاستدلال متعدد الوكلاء",
+      "summaryAr": "يقترح الملخص إطارًا يربط خطوات الاستدلال بمخطط معرفي طبي منظم ومراجع من خبراء لتوضيح العلاقة بين الأعراض والنتيجة. الورقة أولية ولا تعلن اعتمادًا سريريًا.",
+      "whyItMatters": "يوضح كيف يمكن للمعرفة المنظمة وسجلات الأدلة أن تساعد على مراجعة مخرجات الأنظمة الطبية بدل الاكتفاء بتفسير لغوي مقنع.",
+      "audience": "باحثو AI الصحي ومهندسو نظم دعم القرار",
+      "nextSteps": [
+        "راجع الورقة ومصادر المعرفة الطبية المستخدمة",
+        "تحقق من التغطية والتحديثات والتمثيل اللغوي",
+        "تعامل مع النظام كموضوع بحث لا بديلًا عن الطبيب"
+      ],
+      "limitations": "الملخص لا يثبت السلامة السريرية أو التحسن على مرضى حقيقيين؛ لا تتضمن البطاقة توصية طبية.",
+      "basis": "metadata",
+      "reviewedAt": "2026-10-28T06:59:06Z",
+      "sources": [
+        {
+          "title": "arXiv — Ontology-guided multi-agent reasoning",
+          "url": "https://arxiv.org/abs/2610.36325"
+        }
+      ]
+    },
+    "1a620ff45a8f4f7041": {
+      "url": "https://arxiv.org/abs/2610.36415",
+      "titleAr": "اختبار قابل للتحقق يميّز تخطيط النموذج عن نجاحه باستخدام الأدوات",
+      "summaryAr": "تقترح الورقة مقياسًا يفصل موثوقية تنفيذ الخطة عن تنسيق الخطوات واقتصاديتها، وتختبر خططًا كاملة لألغاز انزلاقية دون أدوات أو تغذية راجعة؛ يذكر الملخص 8400 مخرج عبر سبعة شروط نموذجية.",
+      "whyItMatters": "يساعد على تجنب المبالغة في قدرة التخطيط عندما يكون النجاح ناتجًا عن بحث خارجي أو تحقق تنفيذي.",
+      "audience": "باحثو الوكلاء وتقييم النماذج",
+      "nextSteps": [
+        "راجع تعريف المقاييس ومجموعة الاختبار",
+        "قارن التخطيط دون أدوات بالتخطيط مع أدوات",
+        "أضف تحقق صلاحية الخطة إلى التقييم"
+      ],
+      "limitations": "اختبار ألغاز لا يثبت الأداء في المهام الواقعية؛ اعتمدت البطاقة على الملخص فقط.",
+      "basis": "metadata",
+      "reviewedAt": "2026-10-28T06:59:06Z",
+      "sources": [
+        {
+          "title": "arXiv — Verifiable Efficiency Limits of Innate LLM Planning",
+          "url": "https://arxiv.org/abs/2610.36415"
+        }
+      ]
+    },
+    "667b9e11ff37209260": {
+      "url": "https://arxiv.org/abs/2610.36435",
+      "titleAr": "بحث يختبر كيف يغيّر وجود المستخدم سلوك الوكيل أثناء التفاوض",
+      "summaryAr": "يقارن الملخص تفاوض الوكيل مع وجود المستخدم وغيابه عبر آلاف الجولات وعدة نماذج، ويذكر تغيرًا في النتائج والسلوك وظهور حالات عدم توافق في الإعداد التجريبي.",
+      "whyItMatters": "اختبار الوكيل في وضع التشغيل الصامت وحده قد يفوّت سلوكًا يظهر عند تفاعل المستخدم معه؛ جودة النتيجة لا تكشف كل مشكلات التوافق.",
+      "audience": "مصممو الوكلاء ومهندسو التقييم وتجارب المستخدم",
+      "nextSteps": [
+        "راجع تعريف السلوك غير المتوافق في الورقة",
+        "اختبر الوكيل مع المستخدم وبدونه",
+        "راقب الالتزام بالتفضيلات بجانب النتيجة"
+      ],
+      "limitations": "نتائج من بيئات تفاوض تجريبية وليست قياسًا عامًا لكل وكيل؛ لم أراجع النص الكامل.",
+      "basis": "metadata",
+      "reviewedAt": "2026-10-28T06:59:06Z",
+      "sources": [
+        {
+          "title": "arXiv — Your Agent Acts Differently When You're Around",
+          "url": "https://arxiv.org/abs/2610.36435"
+        }
+      ]
+    },
+    "ef9f5df1d39918a86c": {
+      "url": "https://arxiv.org/abs/2610.36444",
+      "titleAr": "RouteDRAG يدرس متى تحتاج أسئلة المستندات إلى تنفيذ وكيل متعدد الخطوات",
+      "summaryAr": "يقترح الملخص فهرسة المستندات متعددة الوسائط وتقدير متى تفيد خطوات الوكيل الإضافية مقارنة بمسار أقصر. التنفيذ الوكيلي قد يحسن الدقة أو يحافظ عليها أو يخفضها بحسب السؤال.",
+      "whyItMatters": "التوجيه التكيفي قد يقلل التكلفة والزمن والأخطاء في أنظمة RAG للمستندات الطويلة التي تشمل جداول ورسومًا.",
+      "audience": "مهندسو RAG والبحث في المستندات",
+      "nextSteps": [
+        "اختبر أسئلة تتطلب جداول ورسومًا وصفحات متعددة",
+        "قارن الدقة والزمن والتكلفة للمسارات",
+        "راجع تفاصيل التدريب والتقييم قبل اعتماد الفكرة"
+      ],
+      "limitations": "ورقة أولية؛ الملخص لا يثبت التفوق على مستنداتك أو بياناتك.",
+      "basis": "metadata",
+      "reviewedAt": "2026-10-28T06:59:06Z",
+      "sources": [
+        {
+          "title": "arXiv — RouteDRAG",
+          "url": "https://arxiv.org/abs/2610.36444"
+        }
+      ]
+    },
+    "00af086a401d989711": {
+      "url": "https://arxiv.org/abs/2610.33426",
+      "titleAr": "ورقة تدرس حذف بيانات التدريب بعد إزالة السجلات المتشابهة",
+      "summaryAr": "يوضح الملخص أن حذف سجل من بيانات منتقاة قد يسمح بعودة سجل آخر كان مستبعدًا بسبب التشابه؛ لذلك لا يكفي حذف الصف الأصلي دائمًا لإعادة إنتاج مجموعة التدريب. يذكر اختبارات على 1001 سجل تطوير.",
+      "whyItMatters": "مهم لتطبيق طلبات حذف البيانات وتوثيق أثرها عندما تستخدم خطوط المعالجة إزالة التكرار أو التشابه.",
+      "audience": "مهندسو بيانات التدريب والخصوصية وباحثو التعلم الآلي",
+      "nextSteps": [
+        "راجع فرضيات قاعدة الانتقاء والضمان الرياضي",
+        "وثّق خطوات التنظيف والانتقاء",
+        "اختبر طلبات الحذف على بيانات اصطناعية قبل استخدام حساس"
+      ],
+      "limitations": "النتائج مشروطة بقاعدة انتقاء محددة وبمجموعة تجريبية؛ الورقة أولية ولم أراجع النص الكامل.",
+      "basis": "metadata",
+      "reviewedAt": "2026-10-28T06:59:06Z",
+      "sources": [
+        {
+          "title": "arXiv — Exact Unlearning After Data Curation",
+          "url": "https://arxiv.org/abs/2610.33426"
+        }
+      ]
+    },
+    "d97790555bfbf345e7": {
+      "titleAr": "Files: مدير ملفات حديث مفتوح المصدر لويندوز",
+      "summaryAr": "مدير ملفات مجتمعي يركز على علامات التبويب وتعدد المهام والوسوم والتكاملات وتجربة Windows الحديثة. يمكن استخدام النسخة الجاهزة أو البناء من المصدر وفق متطلبات .NET وWindows SDK.",
+      "whyItMatters": "مشروع عملي لتحسين إدارة ملفات الدراسة والمشاريع على Windows مع مصدر يمكن مراجعته وتوسيعه.",
+      "audience": "مستخدمو Windows والطلاب والمطورون",
+      "overview": "Files مدير ملفات لويندوز يركز على تجربة حديثة وتعدد المهام والوسوم والتكاملات. يذكر المستودع وجود رخص MIT وMPL-2.0 في أجزاء مختلفة، لذا راجع رخصة كل جزء قبل إعادة الاستخدام. عند القياس: 46,263 نجمة و2,989 fork؛ آخر دفع معلن 2026-10-28T04:26:59Z، والمستودع غير مؤرشف.",
+      "requirements": "للمستخدم: Windows 10 إصدار 19041 أو أحدث وفق إعدادات البناء. للبناء: global.json يثبت .NET SDK 10.0.102؛ ويحدد Directory.Build.props إطار net10.0-windows10.0.26100.0 وحدًا أدنى Windows 10.0.19041.0 وحزمة Windows SDK 10.0.26100.67-preview. يلزم Windows ومكونات Visual Studio/.NET/Windows SDK المناسبة. لا يحتاج إلى نموذج AI أو API سحابي.",
+      "quickStart": "للاستخدام، ثبّت الإصدار المستقر من Microsoft Store أو المثبّت الرسمي. للبناء، اقرأ دليل البناء، ثبّت .NET SDK 10.0.102 ومكونات Windows SDK، استنسخ المستودع وافتح Files.slnx ثم نفّذ الاستعادة والبناء وفق الدليل. لم أنفذ البناء.",
+      "limitations": "خاص بويندوز؛ يعتمد بناء المصدر على SDK حديث وحزمة Windows SDK preview. المستودع يحتوي على ملفات تحت MIT وأخرى تحت MPL-2.0. لم يُختبر التطبيق في هذه الدورة.",
+      "reviewedAt": "2026-10-28T06:59:06Z",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "Files — official repository",
+          "url": "https://github.com/files-community/Files"
+        },
+        {
+          "title": "Files — README",
+          "url": "https://github.com/files-community/Files/blob/main/README.md"
+        },
+        {
+          "title": "Files — build properties",
+          "url": "https://github.com/files-community/Files/blob/main/Directory.Build.props"
+        },
+        {
+          "title": "Files — .NET SDK pin",
+          "url": "https://github.com/files-community/Files/blob/main/global.json"
+        },
+        {
+          "title": "Files — MIT license",
+          "url": "https://github.com/files-community/Files/blob/main/LICENSE-MIT"
+        },
+        {
+          "title": "Files — MPL-2.0 license",
+          "url": "https://github.com/files-community/Files/blob/main/LICENSE-MPL"
+        },
+        {
+          "title": "Files — official documentation",
+          "url": "https://files.community/docs/"
+        }
+      ],
+      "nextSteps": [
+        "جرّب النسخة المستقرة قبل البناء من المصدر",
+        "راجع دليل البناء ورخص الملفات التي تريد إعادة استخدامها",
+        "اختبر البحث والوسوم على نسخة احتياطية"
+      ],
+      "improvements": [
+        {
+          "title": "اختبارات RTL والبحث العربي",
+          "problem": "قد تختلف جودة عرض الأسماء العربية والمسارات المختلطة بين الواجهات.",
+          "approach": "إنشاء مجموعة اختبار لأسماء عربية وأرقام ومسارات مختلطة وفحص البحث والترتيب.",
+          "stack": "C#، WinUI، UI Automation",
+          "steps": [
+            "جهّز أسماء ومسارات عربية اصطناعية",
+            "اختبر البحث والفرز وعرض المسار",
+            "سجّل حالات فشل RTL وBidi",
+            "أضف الاختبارات إلى CI حيث تدعم البيئة"
+          ],
+          "metric": "نسبة نجاح الاختبارات وعدد حالات RTL المكسورة",
+          "difficulty": "متوسط — تقدير",
+          "risks": "قد تحتاج الاختبارات إلى Windows UI في CI.",
+          "sources": [
+            {
+              "title": "Files — official repository",
+              "url": "https://github.com/files-community/Files"
+            },
+            {
+              "title": "Files — README",
+              "url": "https://github.com/files-community/Files/blob/main/README.md"
+            },
+            {
+              "title": "Files — official documentation",
+              "url": "https://files.community/docs/"
+            }
+          ]
+        },
+        {
+          "title": "قياس زمن البحث في المجلدات الكبيرة",
+          "problem": "يصعب مقارنة أداء البحث دون مجموعة قياس ثابتة.",
+          "approach": "إنشاء مجلدات اصطناعية بأحجام متدرجة وقياس البحث البارد والدافئ.",
+          "stack": ".NET وأدوات القياس المتاحة",
+          "steps": [
+            "أنشئ بيانات اختبار غير شخصية",
+            "حدد أحجامًا ثابتة للمجلدات",
+            "قس زمن البحث البارد والدافئ",
+            "قارن P50 وP95 عبر الإصدارات"
+          ],
+          "metric": "زمن P95 مع ثبات الدقة",
+          "difficulty": "متوسط — تقدير",
+          "risks": "قد يتأثر القياس بالتخزين المؤقت والجهاز.",
+          "sources": [
+            {
+              "title": "Files — official repository",
+              "url": "https://github.com/files-community/Files"
+            },
+            {
+              "title": "Files — build properties",
+              "url": "https://github.com/files-community/Files/blob/main/Directory.Build.props"
+            }
+          ]
+        },
+        {
+          "title": "سجل أوضح للعمليات الجماعية والتراجع",
+          "problem": "قد يصعب معرفة الملفات التي تأثرت بعملية نقل أو إعادة تسمية.",
+          "approach": "تحسين عرض معاينة العملية وسجلها وخيار الاستعادة حيث تدعم البنية ذلك.",
+          "stack": "C#، WinUI، اختبارات تكامل",
+          "steps": [
+            "راجع العمليات الجماعية الحالية",
+            "صمم معاينة قبل التنفيذ",
+            "سجل الملفات المتأثرة ونتيجة كل خطوة",
+            "اختبر التراجع على مجلد مؤقت"
+          ],
+          "metric": "نسبة استعادة العمليات التجريبية بنجاح",
+          "difficulty": "متوسط — تقدير",
+          "risks": "قد يتعذر التراجع عن تغييرات خارجية.",
+          "sources": [
+            {
+              "title": "Files — official repository",
+              "url": "https://github.com/files-community/Files"
+            },
+            {
+              "title": "Files — README",
+              "url": "https://github.com/files-community/Files/blob/main/README.md"
+            }
+          ]
+        },
+        {
+          "title": "اختبارات الوصول بلوحة المفاتيح",
+          "problem": "قد لا تكشف الاختبارات اليدوية كل حالات التنقل أو أسماء العناصر لقارئات الشاشة.",
+          "approach": "إضافة سيناريوهات تنقل وفحص أسماء عناصر الواجهة في المسارات الأساسية.",
+          "stack": "Windows UI Automation، C#",
+          "steps": [
+            "اختر مسارات الاستخدام الأساسية",
+            "اختبر التنقل دون فأرة",
+            "افحص أسماء العناصر والتركيز",
+            "وثق الاستثناءات المعروفة"
+          ],
+          "metric": "نسبة نجاح مسارات الوصول",
+          "difficulty": "متوسط — تقدير",
+          "risks": "قد تختلف النتائج حسب إصدار Windows وإعدادات الوصول.",
+          "sources": [
+            {
+              "title": "Files — official repository",
+              "url": "https://github.com/files-community/Files"
+            },
+            {
+              "title": "Files — official documentation",
+              "url": "https://files.community/docs/"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مساحة عمل للمقررات الجامعية",
+          "problem": "تتوزع ملفات المقررات بين مجلدات كثيرة.",
+          "approach": "إعداد محلي لكل مقرر يربط المجلدات والوسوم والملفات الأخيرة دون رفعها للسحابة.",
+          "stack": "C#، WinUI، SQLite",
+          "steps": [
+            "حدد مخططًا للمقررات",
+            "اربط المقرر بمجلدات يختارها المستخدم",
+            "أضف وسومًا وروابط للملفات الأخيرة",
+            "اختبر استعادة الإعدادات"
+          ],
+          "metric": "الوقت للوصول إلى ملف مقرر",
+          "difficulty": "متوسط — تقدير",
+          "risks": "لا تنقل الملفات تلقائيًا ولا تخزن محتوى حساسًا دون موافقة.",
+          "sources": [
+            {
+              "title": "Files — official repository",
+              "url": "https://github.com/files-community/Files"
+            },
+            {
+              "title": "Files — README",
+              "url": "https://github.com/files-community/Files/blob/main/README.md"
+            }
+          ]
+        },
+        {
+          "title": "فهرس محلي لمشاريع Python وJupyter",
+          "problem": "يصعب تتبع ملفات .py و.ipynb بين المجلدات.",
+          "approach": "فهرس محلي لمسارات المشاريع وملفات الدخول مع روابط فتح مباشرة.",
+          "stack": "C#، WinUI، SQLite، FileSystemWatcher",
+          "steps": [
+            "امسح مجلدات يحددها المستخدم",
+            "اكتشف ملفات Python وJupyter دون تنفيذها",
+            "احفظ المسارات والوسوم محليًا",
+            "أضف فتح المشروع بالمحرر المختار"
+          ],
+          "metric": "دقة اكتشاف المشاريع وزمن الفهرسة",
+          "difficulty": "متوسط — تقدير",
+          "risks": "تجنب قراءة محتوى الملفات الحساسة افتراضيًا.",
+          "sources": [
+            {
+              "title": "Files — official repository",
+              "url": "https://github.com/files-community/Files"
+            },
+            {
+              "title": "Files — README",
+              "url": "https://github.com/files-community/Files/blob/main/README.md"
+            }
+          ]
+        },
+        {
+          "title": "مراجع نسخ احتياطي للملفات المتشابهة",
+          "problem": "تتكرر الملفات بين النسخ الاحتياطية دون معرفة الفروق.",
+          "approach": "أداة قراءة فقط تحسب الأحجام والبصمات وتعرض الفروق قبل أي إجراء.",
+          "stack": ".NET، SHA-256، SQLite",
+          "steps": [
+            "اختر مجلدين",
+            "احسب البصمات دون تعديل",
+            "اعرض الملفات المتطابقة والمختلفة",
+            "صدّر تقريرًا قبل أي حذف يدوي"
+          ],
+          "metric": "دقة التطابق ومعدل الإنذارات الخاطئة",
+          "difficulty": "متوسط — تقدير",
+          "risks": "لا تحذف ملفات تلقائيًا؛ قد تتغير الملفات أثناء الفهرسة.",
+          "sources": [
+            {
+              "title": "Files — official repository",
+              "url": "https://github.com/files-community/Files"
+            },
+            {
+              "title": "Files — README",
+              "url": "https://github.com/files-community/Files/blob/main/README.md"
+            }
+          ]
+        },
+        {
+          "title": "لوحة تنظيف آمنة بموافقة يدوية",
+          "problem": "يصعب اكتشاف الملفات الكبيرة أو القديمة دون خطر حذف ملف مهم.",
+          "approach": "تقرير مرشحين مع معاينة المسار والحجم وآخر تعديل وموافقة يدوية.",
+          "stack": "C#، WinUI، SQLite",
+          "steps": [
+            "ابدأ بمسح قراءة فقط",
+            "اعرض الحجم والتاريخ والمسار",
+            "اسمح باستثناء مجلدات مهمة",
+            "اطلب تأكيدًا منفصلًا لكل تغيير"
+          ],
+          "metric": "نسبة المرشحين الصحيحين ومعدل الإلغاء",
+          "difficulty": "متوسط — تقدير",
+          "risks": "الوقت وحده لا يعني أن الملف غير مهم؛ لا تضف حذفًا تلقائيًا.",
+          "sources": [
+            {
+              "title": "Files — official repository",
+              "url": "https://github.com/files-community/Files"
+            },
+            {
+              "title": "Files — README",
+              "url": "https://github.com/files-community/Files/blob/main/README.md"
+            }
+          ]
+        }
+      ],
+      "url": "https://github.com/files-community/Files"
+    },
+    "6ac7d177869c8f2b1f": {
+      "titleAr": "Carbon: تحويل مقتطفات الشيفرة إلى صور قابلة للمشاركة",
+      "summaryAr": "أداة ويب لتنسيق الشيفرة وتصديرها كصور PNG أو SVG أو مشاركتها كرابط. يدعم README اللصق أو سحب ملف أو استخدام GitHub Gist وتغيير السمة والخط والخلفية والهوامش، مع إمكانية تثبيت PWA للاستخدام دون اتصال بعد الإعداد.",
+      "whyItMatters": "مفيد لإعداد شروحات Python وعروض المشاريع ومقتطفات التوثيق بصور متناسقة، مع ضرورة عدم إدخال أسرار أو شيفرة خاصة في خدمة مشاركة.",
+      "audience": "طلاب البرمجة والمطورون والمعلمون وصناع المحتوى التقني",
+      "overview": "Carbon مشروع مفتوح المصدر لتحويل الشيفرة إلى صور مع التحكم في ألوان الصياغة والخط والخلفية والهوامش. README يذكر التصدير إلى PNG وSVG والروابط المحفوظة والتضمين وPWA. عند القياس: 36,122 نجمة و1,972 fork، رخصة MIT، آخر دفع معلن 2026-10-27T01:26:22Z، والمستودع غير مؤرشف.",
+      "requirements": "للاستخدام عبر الموقع يكفي متصفح حديث ولا يحتاج مفتاح API لنموذج AI. حفظ المقتطفات يحتاج تسجيل دخول. للبناء الذاتي: يستخدم المستودع Next.js وReact وyarn.lock ويضم Cypress، لذلك يلزم Node.js وYarn متوافقان مع ملفات المشروع. لم يحدد README الذي راجعته رقم Node ثابتًا؛ تحقق من إعدادات CI قبل البناء.",
+      "quickStart": "افتح carbon.now.sh، الصق الشيفرة أو اسحب ملفًا أو افتح GitHub Gist، ثم اختر السمة والخط والخلفية والهوامش وصدّر PNG أو SVG. للبناء الذاتي: استنسخ المستودع وثبّت الاعتماديات باستخدام Yarn ثم شغّل yarn dev. لم أنفذ البناء أو اختبارات المتصفح.",
+      "limitations": "لا تلصق مفاتيح أو أسرارًا أو شيفرة خاصة؛ قد تُشارك الشيفرة عبر رابط أو حساب محفوظ. التشغيل الذاتي يحتاج صيانة واعتماديات ويب. لم يُختبر المشروع في هذه الدورة.",
+      "reviewedAt": "2026-10-28T06:59:06Z",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "Carbon — official repository",
+          "url": "https://github.com/carbon-app/carbon"
+        },
+        {
+          "title": "Carbon — README",
+          "url": "https://github.com/carbon-app/carbon/blob/main/README.md"
+        },
+        {
+          "title": "Carbon — package manifest",
+          "url": "https://github.com/carbon-app/carbon/blob/main/package.json"
+        },
+        {
+          "title": "Carbon — MIT license",
+          "url": "https://github.com/carbon-app/carbon/blob/main/LICENSE"
+        },
+        {
+          "title": "Carbon — hosted application",
+          "url": "https://carbon.now.sh/"
+        }
+      ],
+      "nextSteps": [
+        "ابدأ بمقتطف غير حساس",
+        "تحقق من وضوح الخط والتباين",
+        "راجع إعدادات المشاركة قبل إرسال رابط محفوظ"
+      ],
+      "improvements": [
+        {
+          "title": "فحص أسرار محلي قبل التصدير",
+          "problem": "قد تحتوي المقتطفات بالخطأ على رموز وصول أو مفاتيح.",
+          "approach": "فحص محلي اختياري لأنماط شائعة مع تحذير دون إرسال النص إلى خدمة خارجية.",
+          "stack": "JavaScript، قواعد كشف محلية، fixtures اصطناعية",
+          "steps": [
+            "عرّف أنماط تحذير دون حفظ القيم",
+            "أنشئ أمثلة اختبار اصطناعية",
+            "افحص النص محليًا قبل التصدير",
+            "اعرض موضع التحذير وخيار الإزالة"
+          ],
+          "metric": "استرجاع حالات الاختبار ومعدل الإنذارات الكاذبة",
+          "difficulty": "متوسط — تقدير",
+          "risks": "قد يفوّت الفحص أسرارًا غير معروفة؛ لا تسجل قيمة السر.",
+          "sources": [
+            {
+              "title": "Carbon — official repository",
+              "url": "https://github.com/carbon-app/carbon"
+            },
+            {
+              "title": "Carbon — README",
+              "url": "https://github.com/carbon-app/carbon/blob/main/README.md"
+            }
+          ]
+        },
+        {
+          "title": "تحسين العربية وRTL مع بقاء الشيفرة LTR",
+          "problem": "قد تتداخل علامات الترقيم واتجاه النص في شرح عربي بجانب الشيفرة.",
+          "approach": "تخطيط يفصل اتجاه نص الشرح عن منطقة الشيفرة مع اختبارات بصرية.",
+          "stack": "React، CSS bidi، Playwright",
+          "steps": [
+            "أضف عينات عربية بأرقام ورموز",
+            "افصل حاوية الشرح عن محرر الشيفرة",
+            "اختبر أحجام شاشة مختلفة",
+            "وثق حدود الخطوط"
+          ],
+          "metric": "عدد اختبارات RTL الناجحة دون تداخل",
+          "difficulty": "متوسط — تقدير",
+          "risks": "قد تختلف الخطوط وسلوك التشكيل بين المتصفحات.",
+          "sources": [
+            {
+              "title": "Carbon — official repository",
+              "url": "https://github.com/carbon-app/carbon"
+            },
+            {
+              "title": "Carbon — README",
+              "url": "https://github.com/carbon-app/carbon/blob/main/README.md"
+            },
+            {
+              "title": "Carbon — package manifest",
+              "url": "https://github.com/carbon-app/carbon/blob/main/package.json"
+            }
+          ]
+        },
+        {
+          "title": "قوالب ثابتة للشرائح التعليمية",
+          "problem": "إنتاج مقتطفات كثيرة بهوية موحدة يستهلك وقتًا.",
+          "approach": "إعدادات محفوظة للأبعاد والخط والتباين والهوامش.",
+          "stack": "Next.js، React، CSS",
+          "steps": [
+            "حدد مقاسات للشرائح",
+            "صمم عددًا محدودًا من القوالب",
+            "احفظ الإعدادات محليًا",
+            "اختبر المقروئية على الهاتف والعرض"
+          ],
+          "metric": "زمن إنتاج مجموعة صور متناسقة",
+          "difficulty": "سهل إلى متوسط — تقدير",
+          "risks": "قد تقل مساحة الشيفرة في المقاسات الصغيرة.",
+          "sources": [
+            {
+              "title": "Carbon — official repository",
+              "url": "https://github.com/carbon-app/carbon"
+            },
+            {
+              "title": "Carbon — README",
+              "url": "https://github.com/carbon-app/carbon/blob/main/README.md"
+            }
+          ]
+        },
+        {
+          "title": "تصدير دفعي للمقتطفات",
+          "problem": "التصدير اليدوي بطيء عند إعداد درس طويل.",
+          "approach": "قائمة مقتطفات تطبق قالبًا واحدًا وتصدر ملفات منفصلة أو حزمة.",
+          "stack": "React، Web APIs، اختبارات E2E",
+          "steps": [
+            "عرّف صيغة استيراد للمقتطفات",
+            "اعرض معاينة قبل التصدير",
+            "صدّر الصور بأسماء ثابتة",
+            "اختبر مجموعة من 20 مقتطفًا"
+          ],
+          "metric": "زمن تصدير 20 مقتطفًا دون أخطاء",
+          "difficulty": "متوسط — تقدير",
+          "risks": "قد تستهلك المعالجة المتزامنة الذاكرة؛ لا ترفع الشيفرة الخاصة تلقائيًا.",
+          "sources": [
+            {
+              "title": "Carbon — official repository",
+              "url": "https://github.com/carbon-app/carbon"
+            },
+            {
+              "title": "Carbon — package manifest",
+              "url": "https://github.com/carbon-app/carbon/blob/main/package.json"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مولّد بطاقات تعليمية لبايثون",
+          "problem": "تحتاج الشروحات صورة شيفرة مع عنوان وشرح مختصر.",
+          "approach": "قوالب تجمع عنوانًا عربيًا وشرحًا وشيفرة مع فصل اتجاه النصين.",
+          "stack": "Next.js، React، Markdown، CSS",
+          "steps": [
+            "حدد مخطط العنوان والشرح والشيفرة",
+            "أضف قوالب لمفاهيم Python",
+            "اختبر النص العربي والشيفرة الطويلة",
+            "صدّر PNG وSVG"
+          ],
+          "metric": "وضوح البطاقة وإعادة استخدام القوالب",
+          "difficulty": "متوسط — تقدير",
+          "risks": "قد تختصر القوالب الشرح أكثر من اللازم؛ راجع المحتوى يدويًا.",
+          "sources": [
+            {
+              "title": "Carbon — official repository",
+              "url": "https://github.com/carbon-app/carbon"
+            },
+            {
+              "title": "Carbon — README",
+              "url": "https://github.com/carbon-app/carbon/blob/main/README.md"
+            }
+          ]
+        },
+        {
+          "title": "صور فروق Git لمراجعة طلبات الدمج",
+          "problem": "يصعب شرح تغيير صغير عبر لقطات يدوية.",
+          "approach": "تحويل diff يختاره المستخدم إلى صورة تبرز الأسطر مع خيار إخفاء المسارات.",
+          "stack": "React، JavaScript، مكون diff",
+          "steps": [
+            "استقبل diff يقدمه المستخدم",
+            "ميّز الأسطر المضافة والمحذوفة",
+            "احجب المسارات والقيم المحددة",
+            "صدّر الصورة دون إرسالها تلقائيًا"
+          ],
+          "metric": "زمن تجهيز الصورة ودقة تمييز الأسطر",
+          "difficulty": "متوسط — تقدير",
+          "risks": "قد تحتوي الفروق أسرارًا؛ يلزم فحص قبل المشاركة.",
+          "sources": [
+            {
+              "title": "Carbon — official repository",
+              "url": "https://github.com/carbon-app/carbon"
+            },
+            {
+              "title": "Carbon — README",
+              "url": "https://github.com/carbon-app/carbon/blob/main/README.md"
+            }
+          ]
+        },
+        {
+          "title": "مكتبة مقتطفات محلية دون حساب",
+          "problem": "قد يريد الطالب حفظ أمثلة شخصية دون إنشاء حساب أو مشاركة عامة.",
+          "approach": "تخزين محلي للمقتطفات والإعدادات مع تصدير واستيراد JSON اختياري.",
+          "stack": "React، IndexedDB، JSON",
+          "steps": [
+            "صمم مخططًا محليًا للمقتطفات",
+            "احفظها في IndexedDB",
+            "أضف تصديرًا واستيرادًا واضحًا",
+            "اختبر الاستعادة بعد إعادة فتح المتصفح"
+          ],
+          "metric": "نجاح حفظ واستعادة المقتطفات",
+          "difficulty": "متوسط — تقدير",
+          "risks": "قد تُفقد البيانات عند مسح تخزين المتصفح؛ وفّر تصديرًا احتياطيًا.",
+          "sources": [
+            {
+              "title": "Carbon — official repository",
+              "url": "https://github.com/carbon-app/carbon"
+            },
+            {
+              "title": "Carbon — README",
+              "url": "https://github.com/carbon-app/carbon/blob/main/README.md"
+            }
+          ]
+        },
+        {
+          "title": "مرفق توثيق API بصور متناسقة",
+          "problem": "تحتاج مستندات API أمثلة شيفرة واضحة ومتسقة.",
+          "approach": "إنشاء بطاقات من أمثلة Markdown أو OpenAPI مع مراجعة بشرية قبل التصدير.",
+          "stack": "JavaScript، Markdown، OpenAPI، Playwright",
+          "steps": [
+            "حدد الأمثلة المراد نشرها",
+            "استخرج كتل الشيفرة دون بيانات سرية",
+            "طبق قالبًا ثابتًا لكل لغة",
+            "تحقق من الصور والروابط قبل النشر"
+          ],
+          "metric": "اتساق التنسيق ونسبة الأمثلة التي تحتاج إعادة تحرير",
+          "difficulty": "متوسط — تقدير",
+          "risks": "لا تحول بيانات اعتماد أو أمثلة داخلية إلى صور عامة.",
+          "sources": [
+            {
+              "title": "Carbon — official repository",
+              "url": "https://github.com/carbon-app/carbon"
+            },
+            {
+              "title": "Carbon — README",
+              "url": "https://github.com/carbon-app/carbon/blob/main/README.md"
+            },
+            {
+              "title": "Carbon — package manifest",
+              "url": "https://github.com/carbon-app/carbon/blob/main/package.json"
+            }
+          ]
+        }
+      ],
+      "url": "https://github.com/carbon-app/carbon"
     }
   }
 }
