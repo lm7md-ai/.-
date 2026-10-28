@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "reportType": "editorial-backlog-recheck",
+  "reviewedAt": "2026-10-28T20:45:00Z",
+  "mainHeadBefore": "99879b0d0e1d236a7f260525bf7ffe225186d9b8",
+  "currentState": {
+    "feedGeneratedAt": "2026-10-28T20:15:17+00:00",
+    "feedItems": 800,
+    "feedNewItems": 98,
+    "editorialEntriesBefore": 395,
+    "seenIds": 1642,
+    "statusLastSuccessfulAt": "2026-10-28T20:15:17+00:00",
+    "statusState": "ok",
+    "statusCollected": 436,
+    "activeEditorialExactIdUrl": 241,
+    "editorialOutsideCurrentFeed": 154,
+    "editorialUrlMismatches": 0,
+    "unEnrichedFeedBefore": 559,
+    "unEnrichedKindsBefore": {
+      "news": 533,
+      "project": 26
+    },
+    "editorialEntriesAfter": 409
+  },
+  "incomingAudit": {
+    "filesChecked": 41,
+    "rowsChecked": 396,
+    "uniqueIds": 395,
+    "duplicateRows": 1,
+    "duplicate": {
+      "id": "853c63f738f0cecf3b",
+      "urlsIdentical": true,
+      "decision": "retain; no alternate identity generated"
+    },
+    "importedExactRows": 393,
+    "importedExactUniqueIds": 392,
+    "seenOnlyRows": 3,
+    "idUrlMismatches": 0,
+    "editorialUrlMismatches": 0,
+    "invalidRows": 0,
+    "confirmedExpired": 0,
+    "needingCorrection": 0,
+    "note": "Outside-current-feed entries are historical/unconfirmed, not declared expired without evidence. All 41 incoming files were compared against current feed/editorial/seen by exact id and URL."
+  },
+  "pendingRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "name": "NVIDIA OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "seen": true,
+      "feedPresent": false,
+      "editorialPresent": false,
+      "decision": "pending; exact id/url absent from current feed"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "name": "Canva Craft",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model",
+      "seen": true,
+      "feedPresent": false,
+      "editorialPresent": false,
+      "decision": "pending; exact id/url absent from current feed"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "name": "1Password agent sign-in",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password",
+      "seen": true,
+      "feedPresent": false,
+      "editorialPresent": false,
+      "decision": "pending; exact id/url absent from current feed"
+    }
+  ],
+  "newBatch": {
+    "path": "editorial/incoming/nabdh-editorial-2026-10-28-2045.json",
+    "entries": 14,
+    "news": 12,
+    "projects": 2,
+    "exactCurrentFeedIdUrlMatches": 14,
+    "allAbsentFromEditorialBeforeBatch": true,
+    "incomingOfficialCommandExecuted": false,
+    "structuralValidation": "passed in this run; official CI validation and tests still required",
+    "commitEditorial": "53161b3bb11fe7e187fd0bb5ebd5ca63b2fa9348",
+    "commitIncoming": "bdf0cb4154eb83327df8483d9591cba2eaa80511"
+  },
+  "postMergeExpected": {
+    "editorialEntries": 409,
+    "incomingFiles": 42,
+    "incomingRows": 410,
+    "incomingUniqueIds": 409,
+    "activeEditorialExactIdUrl": 255,
+    "editorialOutsideCurrentFeed": 154,
+    "editorialUrlMismatches": 0,
+    "unEnrichedFeedItems": 545,
+    "unEnrichedKinds": {
+      "news": 521,
+      "project": 24
+    }
+  },
+  "historicalLibrary": {
+    "path": "site/data/library.json",
+    "publishedCatalogEntries": 31,
+    "archivedEntries": 2,
+    "currentFeedUrlMatches": 4,
+    "outsideCurrentFeed": 27,
+    "compiledAt": "2026-10-24T10:38:36.869Z",
+    "metricsWarning": "Do not label stars as today popularity; verify upstream licensing, actual release activity and maintenance before publishing a dossier.",
+    "note": "site/data/library.json was not modified. The historical catalog remains a separate, already-published research queue."
+  },
+  "protectedPathsUnchangedByDesign": [
+    "site/data/feed.json",
+    "site/data/seen.json",
+    "site/app.js",
+    "site/ideas.js",
+    ".github/workflows/*",
+    "docs/*",
+    "scripts/*"
+  ],
+  "localCommandsNotExecuted": [
+    "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-10-28-2045.json",
+    "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-10-28-2045.json",
+    "python -m unittest discover -s tests -v"
+  ],
+  "publishStatus": "not yet verified; wait for PR CI and subsequent Pages check"
+}
