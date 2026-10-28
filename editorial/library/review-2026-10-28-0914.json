@@ -1,0 +1,829 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-28T06:14:13Z",
+  "measuredAt": "2026-10-28T06:14:13Z",
+  "publishedToSite": false,
+  "purpose": "لقطة بحثية تراكمية مستقلة؛ لا يستهلكها الموقع مباشرة ولا تعدّل التصميم أو الشيفرة. ترتيب previousEight محفوظ.",
+  "measurementMethod": "GitHub REST repository metadata and latest commit endpoint; stars/forks are cumulative snapshots, not growth rates. Snapshot measured at 2026-10-28T03:09:39Z. The official license files for the previous eight were inspected in the prior review at 2026-10-28T02:59:48Z; current SPDX metadata was rechecked. New project README, docs, LICENSE, package metadata, activity and default branch were read from official repositories. Current cycle: repository metadata and latest-commit endpoints rechecked at 2026-10-28T06:14:13Z. The API returned a sherpa-onnx push/commit timestamp 06:18:16Z, after this run's cutoff; the prior confirmed snapshot was retained and the anomaly recorded.",
+  "historicalCatalog": {
+    "path": "site/data/library.json",
+    "entries": 31,
+    "compiledAt": "2026-10-24T10:38:36.869Z",
+    "archived": 2,
+    "inCurrentFeed": 4,
+    "notInFeed": 27,
+    "archivedKnown": [
+      "atom/atom",
+      "angular/angular.js"
+    ],
+    "note": "لم يُعدّل site/data/library.json؛ بقي الكتالوج التاريخي 31 مشروعًا، 4 منها في التغذية الحالية و27 خارجها وقت القياس. أُثريت Repomix وSpeech-to-Speech بمعرفيهما الأصليين في التغذية؛ لم يُنشأ لهما معرف بديل."
+  },
+  "previousEight": [
+    {
+      "name": "Gradio",
+      "repo": "gradio-app/gradio",
+      "url": "https://github.com/gradio-app/gradio",
+      "stars": 43924,
+      "forks": 3650,
+      "license": "Apache-2.0",
+      "defaultBranch": "main",
+      "archived": false,
+      "pushedAt": "2026-10-28T04:43:53Z",
+      "status": "غير مؤرشف؛ آخر commit موثق 2026-10-28T03:27:38Z.",
+      "alternatives": [
+        "Streamlit",
+        "Chainlit",
+        "Panel"
+      ],
+      "measuredAt": "2026-10-28T06:14:13Z",
+      "activityCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommit": {
+        "sha": "07341609c68bb98701e7db9ba9e2ad6c0fb2acb4",
+        "date": "2026-10-28T03:27:38Z",
+        "url": "https://github.com/gradio-app/gradio/commit/07341609c68bb98701e7db9ba9e2ad6c0fb2acb4"
+      },
+      "licenseVerifiedAt": "2026-10-28T02:59:48Z",
+      "licenseVerification": "Verified against the repository's official license file; prior stars/forks measurement timestamp retained.",
+      "licenseMetadataCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommitCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommitDetailsRefreshed": true
+    },
+    {
+      "name": "Claude-Mem",
+      "repo": "thedotmack/claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "stars": 103792,
+      "forks": 9160,
+      "license": "Apache-2.0",
+      "defaultBranch": "main",
+      "archived": false,
+      "pushedAt": "2026-10-28T05:41:16Z",
+      "status": "غير مؤرشف؛ آخر commit موثق 2026-10-28T05:41:16Z.",
+      "alternatives": [
+        "Letta",
+        "Mem0",
+        "Zep"
+      ],
+      "measuredAt": "2026-10-28T06:14:13Z",
+      "activityCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommit": {
+        "sha": "8e91e3abb0f4536d374095193c18d72fa9d92b05",
+        "date": "2026-10-28T05:41:16Z",
+        "url": "https://github.com/thedotmack/claude-mem/commit/8e91e3abb0f4536d374095193c18d72fa9d92b05"
+      },
+      "licenseVerifiedAt": "2026-10-28T02:59:48Z",
+      "licenseVerification": "Verified against the repository's official license file; prior stars/forks measurement timestamp retained.",
+      "licenseMetadataCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommitCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommitDetailsRefreshed": true
+    },
+    {
+      "name": "Ultralytics",
+      "repo": "ultralytics/ultralytics",
+      "url": "https://github.com/ultralytics/ultralytics",
+      "stars": 62920,
+      "forks": 11925,
+      "license": "AGPL-3.0",
+      "defaultBranch": "main",
+      "archived": false,
+      "pushedAt": "2026-10-28T03:28:01Z",
+      "status": "غير مؤرشف؛ آخر commit موثق 2026-10-27T22:47:32Z.",
+      "alternatives": [
+        "MMDetection",
+        "Detectron2",
+        "torchvision"
+      ],
+      "measuredAt": "2026-10-28T06:14:13Z",
+      "activityCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommit": {
+        "sha": "bb3e1550dbb819bd9846d4c99f368aebe8792a0e",
+        "date": "2026-10-27T22:47:32Z",
+        "url": "https://github.com/ultralytics/ultralytics/commit/bb3e1550dbb819bd9846d4c99f368aebe8792a0e"
+      },
+      "licenseVerifiedAt": "2026-10-28T02:59:48Z",
+      "licenseVerification": "Verified against the repository's official license file; prior stars/forks measurement timestamp retained.",
+      "licenseMetadataCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommitCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommitDetailsRefreshed": true
+    },
+    {
+      "name": "MoneyPrinterTurbo",
+      "repo": "harry0703/MoneyPrinterTurbo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "stars": 135923,
+      "forks": 21587,
+      "license": "MIT",
+      "defaultBranch": "main",
+      "archived": false,
+      "pushedAt": "2026-10-28T03:38:17Z",
+      "status": "غير مؤرشف؛ آخر commit موثق 2026-10-28T03:38:17Z.",
+      "alternatives": [
+        "خط FFmpeg/TTS مخصص",
+        "Remotion",
+        "أدوات فيديو مفتوحة المصدر"
+      ],
+      "measuredAt": "2026-10-28T06:14:13Z",
+      "activityCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommit": {
+        "sha": "dd5ee71a0fbbb2c06401a7a4401bc83830a7c4d1",
+        "date": "2026-10-28T03:38:17Z",
+        "url": "https://github.com/harry0703/MoneyPrinterTurbo/commit/dd5ee71a0fbbb2c06401a7a4401bc83830a7c4d1"
+      },
+      "licenseVerifiedAt": "2026-10-28T02:59:48Z",
+      "licenseVerification": "Verified against the repository's official license file; prior stars/forks measurement timestamp retained.",
+      "licenseMetadataCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommitCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommitDetailsRefreshed": true
+    },
+    {
+      "name": "AI-For-Beginners",
+      "repo": "microsoft/AI-For-Beginners",
+      "url": "https://github.com/microsoft/AI-For-Beginners",
+      "stars": 70307,
+      "forks": 13656,
+      "license": "MIT",
+      "defaultBranch": "main",
+      "archived": false,
+      "pushedAt": "2026-10-23T23:55:14Z",
+      "status": "غير مؤرشف؛ آخر commit ظاهر 2026-09-04 مع pushedAt metadata أحدث 2026-10-23؛ اختلاف يستحق متابعة لا تصنيفًا بالأرشفة.",
+      "alternatives": [
+        "fast.ai",
+        "Dive into Deep Learning",
+        "Hugging Face course"
+      ],
+      "measuredAt": "2026-10-28T06:14:13Z",
+      "activityCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommit": {
+        "sha": "392d0df1b2647cbee104942390551f1ed9e072c8",
+        "date": "2026-09-04T15:24:51Z",
+        "url": "https://github.com/microsoft/AI-For-Beginners/commit/392d0df1b2647cbee104942390551f1ed9e072c8"
+      },
+      "licenseVerifiedAt": "2026-10-28T02:59:48Z",
+      "licenseVerification": "Verified against the repository's official license file; prior stars/forks measurement timestamp retained.",
+      "licenseMetadataCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommitCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommitDetailsRefreshed": true,
+      "activityAnomaly": "pushedAt=2026-10-23 أحدث من latest commit endpoint=2026-09-04؛ لم يُفسر التناقض على أنه commit جديد."
+    },
+    {
+      "name": "Bruno",
+      "repo": "usebruno/bruno",
+      "url": "https://github.com/usebruno/bruno",
+      "stars": 47883,
+      "forks": 3037,
+      "license": "MIT",
+      "defaultBranch": "main",
+      "archived": false,
+      "pushedAt": "2026-10-27T16:18:41Z",
+      "status": "غير مؤرشف؛ آخر commit موثق 2026-10-27T16:18:40Z.",
+      "alternatives": [
+        "Postman",
+        "Insomnia",
+        "HTTPie"
+      ],
+      "measuredAt": "2026-10-28T06:14:13Z",
+      "activityCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommit": {
+        "sha": "874ac540a14eb1883ab359b4438487add41b8b03",
+        "date": "2026-10-27T16:18:40Z",
+        "url": "https://github.com/usebruno/bruno/commit/874ac540a14eb1883ab359b4438487add41b8b03"
+      },
+      "licenseVerifiedAt": "2026-10-28T02:59:48Z",
+      "licenseVerification": "Verified against the repository's official license file; prior stars/forks measurement timestamp retained.",
+      "licenseMetadataCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommitCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommitDetailsRefreshed": true
+    },
+    {
+      "name": "Keras",
+      "repo": "keras-team/keras",
+      "url": "https://github.com/keras-team/keras",
+      "stars": 64392,
+      "forks": 19807,
+      "license": "Apache-2.0",
+      "defaultBranch": "master",
+      "archived": false,
+      "pushedAt": "2026-10-27T23:29:20Z",
+      "status": "غير مؤرشف؛ آخر commit موثق 2026-10-27T23:29:19Z.",
+      "alternatives": [
+        "PyTorch",
+        "JAX",
+        "TensorFlow Core"
+      ],
+      "measuredAt": "2026-10-28T06:14:13Z",
+      "activityCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommit": {
+        "sha": "7efab4a60f5930fa81b0db15ed4ec6e4925e0c45",
+        "date": "2026-10-27T23:29:19Z",
+        "url": "https://github.com/keras-team/keras/commit/7efab4a60f5930fa81b0db15ed4ec6e4925e0c45"
+      },
+      "licenseVerifiedAt": "2026-10-28T02:59:48Z",
+      "licenseVerification": "Verified against the repository's official license file; prior stars/forks measurement timestamp retained.",
+      "licenseMetadataCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommitCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommitDetailsRefreshed": true
+    },
+    {
+      "name": "sherpa-onnx",
+      "repo": "k2-fsa/sherpa-onnx",
+      "url": "https://github.com/k2-fsa/sherpa-onnx",
+      "stars": 15556,
+      "forks": 1822,
+      "license": "Apache-2.0",
+      "defaultBranch": "master",
+      "archived": false,
+      "pushedAt": "2026-10-28T01:41:55Z",
+      "status": "غير مؤرشف حسب آخر metadata موثوق؛ أحدث timestamps التي أعادها API تجاوزت وقت هذا التشغيل، لذلك احتُفظ بآخر commit وقياس نجوم مؤكدين.",
+      "alternatives": [
+        "whisper.cpp",
+        "Vosk",
+        "ONNX Runtime pipelines"
+      ],
+      "measuredAt": "2026-10-28T05:46:00Z",
+      "activityCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommit": {
+        "sha": "2505cca5d7d5806bf3bdbd1db717100123fac005",
+        "date": "2026-10-28T01:41:55Z",
+        "url": "https://github.com/k2-fsa/sherpa-onnx/commit/2505cca5d7d5806bf3bdbd1db717100123fac005"
+      },
+      "licenseVerifiedAt": "2026-10-28T02:59:48Z",
+      "licenseVerification": "Verified against the repository's official license file; prior stars/forks measurement timestamp retained.",
+      "licenseMetadataCheckedAt": "2026-10-28T05:46:00Z",
+      "latestCommitCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommitDetailsRefreshed": false,
+      "activityAnomaly": {
+        "apiPushedAt": "2026-10-28T06:18:16Z",
+        "apiLatestCommitAt": "2026-10-28T06:18:16Z",
+        "cutoff": "2026-10-28T06:14:13Z",
+        "note": "API timestamps are after this run's cutoff; retained prior confirmed activity and metric snapshot."
+      }
+    }
+  ],
+  "newlyEnrichedProjects": [
+    {
+      "id": "92022b258211b4ce35",
+      "name": "InvokeAI",
+      "repo": "invoke-ai/InvokeAI",
+      "url": "https://github.com/invoke-ai/InvokeAI",
+      "stars": 28889,
+      "forks": 3083,
+      "license": "Apache-2.0",
+      "archived": false,
+      "status": "مستمر في لقطة GitHub",
+      "measuredAt": "2026-10-27T22:10:57Z",
+      "state": "مُدمج في PR #37؛ وجوده في حزمة GitHub Pages تحقق في run 40624503796، دون اختبار تشغيل المشروع."
+    },
+    {
+      "id": "7c423a3fdda80e9dca",
+      "name": "p5.js",
+      "repo": "processing/p5.js",
+      "url": "https://github.com/processing/p5.js",
+      "stars": 24218,
+      "forks": 3884,
+      "license": "LGPL-2.1",
+      "archived": false,
+      "status": "مستمر في لقطة التغذية؛ metadata API أعاد pushed_at لاحقًا من وقت هذه الدورة، لذلك لم يُستخدم ذلك timestamp",
+      "measuredAt": "2026-10-27T22:10:57Z",
+      "state": "مُدمج في PR #37؛ وجوده في حزمة GitHub Pages تحقق في run 40624503796، دون اختبار تشغيل المشروع."
+    },
+    {
+      "id": "668711a6e10728221d",
+      "name": "Headroom",
+      "repo": "headroomlabs-ai/headroom",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "stars": 78056,
+      "forks": 6074,
+      "license": "Apache-2.0",
+      "licenseSource": "https://github.com/headroomlabs-ai/headroom/blob/main/LICENSE",
+      "defaultBranch": "main",
+      "archived": false,
+      "pushedAt": "2026-10-28T01:21:13Z",
+      "latestCommit": {
+        "sha": "f10725e6b9940d8bc2fcde950c86f8ac97543cb6",
+        "date": "2026-10-28T00:28:43Z",
+        "url": "https://github.com/headroomlabs-ai/headroom/commit/f10725e6b9940d8bc2fcde950c86f8ac97543cb6"
+      },
+      "requirements": "Python >=3.10; quickstart recommends Python 3.13 with uv; Node.js for TypeScript SDK; model-provider fees may apply.",
+      "alternatives": [
+        "Native prompt/context trimming",
+        "Provider-side context caching"
+      ],
+      "measuredAt": "2026-10-28T03:09:39Z",
+      "status": "مستمر حسب GitHub API",
+      "state": "إثراء بالمعرف الأصلي ضمن الدفعة الحالية؛ لم يُدّعَ اختبار التشغيل.",
+      "sources": [
+        {
+          "title": "Headroom README and license",
+          "url": "https://github.com/headroomlabs-ai/headroom"
+        },
+        {
+          "title": "Headroom Quickstart",
+          "url": "https://docs.headroomlabs.ai/docs/quickstart"
+        }
+      ]
+    },
+    {
+      "id": "890a56b0d2aff0c91c",
+      "name": "DeepSeek Harness",
+      "repo": "deepseek-ai/deepseek-harness",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "stars": 263846,
+      "forks": 31929,
+      "license": "MIT",
+      "licenseSource": "https://github.com/deepseek-ai/deepseek-harness/blob/master/LICENSE",
+      "defaultBranch": "master",
+      "archived": false,
+      "pushedAt": "2026-10-28T02:48:17Z",
+      "latestCommit": {
+        "sha": "f3803c96974ad4a94195fb97e5c637e9c2a3afe3",
+        "date": "2026-10-27T18:17:58Z",
+        "url": "https://github.com/deepseek-ai/deepseek-harness/commit/f3803c96974ad4a94195fb97e5c637e9c2a3afe3"
+      },
+      "requirements": "Node.js >=24.9.0; pnpm 11.28.5 for source build; provider API key or compatible endpoint for model inference.",
+      "alternatives": [
+        "A restricted read-only agent CLI",
+        "A small custom plugin harness with explicit allowlists"
+      ],
+      "measuredAt": "2026-10-28T03:09:39Z",
+      "status": "مستمر حسب GitHub API",
+      "state": "إثراء بالمعرف الأصلي ضمن الدفعة الحالية؛ لم يُدّعَ اختبار التشغيل.",
+      "sources": [
+        {
+          "title": "DeepSeek Harness README and license",
+          "url": "https://github.com/deepseek-ai/deepseek-harness"
+        },
+        {
+          "title": "DeepSeek Harness safety notice",
+          "url": "https://github.com/deepseek-ai/deepseek-harness/blob/master/SAFETY.md"
+        }
+      ]
+    },
+    {
+      "name": "Argmax Open-Source SDK",
+      "repo": "argmaxinc/argmax-oss-swift",
+      "id": "1400546783020ebaf6",
+      "url": "https://github.com/argmaxinc/argmax-oss-swift",
+      "basis": "readme",
+      "stars": 6428,
+      "forks": 623,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-27T23:59:52Z",
+      "defaultBranchLatestCommitAt": "2026-10-11T01:10:21Z",
+      "measuredAt": "2026-10-28T05:46:00Z"
+    },
+    {
+      "name": "vit-pytorch",
+      "repo": "lucidrains/vit-pytorch",
+      "id": "85839b0d6555a00982",
+      "url": "https://github.com/lucidrains/vit-pytorch",
+      "officialUpstream": "https://codeberg.org/lucidrains/vit-pytorch",
+      "basis": "readme",
+      "stars": 25555,
+      "forks": 3497,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-25T17:44:25Z",
+      "latestCommitAt": "2026-10-25T17:44:19Z",
+      "measuredAt": "2026-10-28T05:46:00Z"
+    },
+    {
+      "name": "Repomix",
+      "repo": "yamadashy/repomix",
+      "id": "4a925ee01de978814d",
+      "url": "https://github.com/yamadashy/repomix",
+      "stars": 29052,
+      "forks": 1603,
+      "license": "MIT",
+      "licenseSource": "https://github.com/yamadashy/repomix/blob/main/LICENSE",
+      "defaultBranch": "main",
+      "archived": false,
+      "pushedAt": "2026-10-25T15:48:10Z",
+      "latestCommit": {
+        "sha": "a835271f41701245ee24b3c8ba162c5abb3d6f12",
+        "date": "2026-10-25T15:46:24Z",
+        "url": "https://github.com/yamadashy/repomix/commit/a835271f41701245ee24b3c8ba162c5abb3d6f12"
+      },
+      "requirements": "Node.js >=22; local CLI; no API fee to pack files, but a downstream hosted model may cost money. MIT.",
+      "alternatives": [
+        "https://github.com/cyclotruc/gitingest"
+      ],
+      "measuredAt": "2026-10-28T06:14:13Z",
+      "status": "maintained_active",
+      "state": "maintained_active",
+      "sources": [
+        {
+          "title": "README",
+          "url": "https://raw.githubusercontent.com/yamadashy/repomix/main/README.md"
+        },
+        {
+          "title": "package.json",
+          "url": "https://raw.githubusercontent.com/yamadashy/repomix/main/package.json"
+        },
+        {
+          "title": "LICENSE",
+          "url": "https://github.com/yamadashy/repomix/blob/main/LICENSE"
+        }
+      ],
+      "siteEditorialStatus": "enriched by original feed id; awaiting PR merge and publication verification"
+    },
+    {
+      "name": "Speech-to-Speech",
+      "repo": "huggingface/speech-to-speech",
+      "id": "9207e699adc3a415c8",
+      "url": "https://github.com/huggingface/speech-to-speech",
+      "stars": 13583,
+      "forks": 1675,
+      "license": "Apache-2.0",
+      "licenseSource": "https://github.com/huggingface/speech-to-speech/blob/main/LICENSE",
+      "defaultBranch": "main",
+      "archived": false,
+      "pushedAt": "2026-10-26T19:59:02Z",
+      "latestCommit": {
+        "sha": "bf39b6c38231f2961406d8c2e91c40e174dc5cbd",
+        "date": "2026-10-26T19:59:02Z",
+        "url": "https://github.com/huggingface/speech-to-speech/commit/bf39b6c38231f2961406d8c2e91c40e174dc5cbd"
+      },
+      "requirements": "Python 3.11–3.14; local models need substantial memory; hosted inference may incur provider charges. Apache-2.0.",
+      "alternatives": [
+        "https://github.com/k2-fsa/sherpa-onnx",
+        "https://github.com/ggml-org/whisper.cpp",
+        "https://github.com/livekit/agents"
+      ],
+      "measuredAt": "2026-10-28T06:14:13Z",
+      "status": "maintained_active",
+      "state": "maintained_active",
+      "sources": [
+        {
+          "title": "README",
+          "url": "https://raw.githubusercontent.com/huggingface/speech-to-speech/main/README.md"
+        },
+        {
+          "title": "pyproject.toml",
+          "url": "https://raw.githubusercontent.com/huggingface/speech-to-speech/main/pyproject.toml"
+        },
+        {
+          "title": "LICENSE",
+          "url": "https://github.com/huggingface/speech-to-speech/blob/main/LICENSE"
+        },
+        {
+          "title": "Configuration docs",
+          "url": "https://github.com/huggingface/speech-to-speech/blob/main/docs/configuration.md"
+        }
+      ],
+      "siteEditorialStatus": "enriched by original feed id; awaiting PR merge and publication verification"
+    }
+  ],
+  "alternativesAndClassification": {
+    "continue": {
+      "repo": "continuedev/continue",
+      "status": "README يصرّح أن المستودع read-only وغير مُصان بنشاط؛ لا أصفه مؤرشفًا رسميًا من GitHub API.",
+      "alternatives": [
+        "Cline",
+        "Aider",
+        "Roo Code"
+      ],
+      "note": "تحتاج حالة البدائل إلى مراجعة مستقلة قبل أي توصية نهائية."
+    },
+    "historicalArchived": [
+      "atom/atom",
+      "angular/angular.js"
+    ],
+    "activePreviousEight": "المستودعات الثمانية غير مؤرشفة حسب GitHub API عند 2026-10-28T03:09:39Z؛ سبعة منها لديها نشاط دفع حديث في 27–28 أكتوبر، بينما AI-For-Beginners آخر commit ظاهر له في 2026-09-04 ويصنّف أبطأ نشاطًا لا مؤرشفًا."
+  },
+  "displayRequirements": {
+    "publishedToSite": false,
+    "forDevelopmentAssistant": [
+      "لا تغيّر الشيفرة أو التصميم ضمن هذه المهمة.",
+      "اعرض overview وrequirements وquickStart وlimitations وsources بوضوح.",
+      "أظهر ترخيص التطبيق منفصلًا عن تراخيص النماذج أو المكونات الإضافية.",
+      "اعرض وقت قياس النجوم/التفرعات ووقت آخر commit منفصلين.",
+      "اعرض testEvidence فقط عند وجود دليل اختبار فعلي؛ لا تولّده تلقائيًا.",
+      "احفظ ترتيب improvements وspinoffs وreligious، ولا تعِد ترتيب الأفكار القديمة."
+    ]
+  },
+  "generatedAt": "2026-10-28T06:14:13Z",
+  "activityCheckedAt": "2026-10-28T06:14:13Z",
+  "catalogSnapshot": {
+    "total": 31,
+    "archived": 2,
+    "inCurrentFeed": 4,
+    "notInFeed": 27,
+    "metricCapturedAt": "2026-10-28T06:14:13Z",
+    "note": "Historical catalog metrics were not relabeled as current; existing measurement timestamp retained."
+  },
+  "newProjects": [
+    {
+      "name": "MLX-Audio",
+      "repository": "Blaizzy/mlx-audio",
+      "url": "https://github.com/Blaizzy/mlx-audio",
+      "starsDisplayed": "8.1k",
+      "forksDisplayed": "776",
+      "metricsMeasuredAt": "2026-10-28T02:59:48Z",
+      "license": "MIT",
+      "licenseSource": "https://github.com/Blaizzy/mlx-audio/blob/main/LICENSE",
+      "latestCommit": {
+        "sha": "6ce7283be6f15f0cba37e839e73bfa4a08bbf040",
+        "date": "2026-10-27T22:36:18Z",
+        "url": "https://github.com/Blaizzy/mlx-audio/commit/6ce7283be6f15f0cba37e839e73bfa4a08bbf040"
+      },
+      "classification": "maintained_active",
+      "requirements": "Python >=3.10; best-supported path is Apple Silicon/macOS with MLX; model-specific weights and language support vary.",
+      "alternatives": [
+        "whisper.cpp",
+        "eSpeak NG",
+        "Piper"
+      ],
+      "publishedToSite": false
+    },
+    {
+      "name": "eSpeak NG",
+      "repository": "espeak-ng/espeak-ng",
+      "url": "https://github.com/espeak-ng/espeak-ng",
+      "starsDisplayed": "7.0k",
+      "forksDisplayed": "1.3k",
+      "metricsMeasuredAt": "2026-10-28T02:59:48Z",
+      "license": "GPL-3.0-or-later for core, with additional license files for bundled components",
+      "licenseSource": "https://github.com/espeak-ng/espeak-ng/blob/master/COPYING",
+      "latestCommit": {
+        "sha": "ba90c8e9f440ad544f674a790bb5f53878b6ffc5",
+        "date": "2026-09-22T10:55:14Z",
+        "url": "https://github.com/espeak-ng/espeak-ng/commit/ba90c8e9f440ad544f674a790bb5f53878b6ffc5"
+      },
+      "classification": "maintained_recent_activity_slower_not_archived",
+      "requirements": "Local TTS; no API key. Arabic voice documentation specifies fully diacritized text; build-from-source uses CMake/compiler.",
+      "alternatives": [
+        "Piper",
+        "OS-native TTS",
+        "MLX-Audio on Apple Silicon"
+      ],
+      "publishedToSite": false
+    },
+    {
+      "name": "Argmax Open-Source SDK",
+      "repo": "argmaxinc/argmax-oss-swift",
+      "feedId": "1400546783020ebaf6",
+      "url": "https://github.com/argmaxinc/argmax-oss-swift",
+      "stars": 6428,
+      "forks": 623,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-27T23:59:52Z",
+      "latestDefaultBranchCommitAt": "2026-10-11T01:10:21Z",
+      "measuredAt": "2026-10-28T05:46:00Z",
+      "requirements": "macOS 14+ and Xcode 16+; component-specific minimums differ; TTSKit requires macOS 15+/iOS 18+.",
+      "costModel": "Local inference after model download; no inference API fee in the open-source path; storage/device compute required; Android is not supported by this open-source package.",
+      "alternatives": [
+        "k2-fsa/sherpa-onnx",
+        "ggml-org/whisper.cpp"
+      ]
+    },
+    {
+      "name": "vit-pytorch",
+      "repo": "lucidrains/vit-pytorch",
+      "feedId": "85839b0d6555a00982",
+      "url": "https://github.com/lucidrains/vit-pytorch",
+      "officialUpstream": "https://codeberg.org/lucidrains/vit-pytorch",
+      "stars": 25555,
+      "forks": 3497,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-25T17:44:25Z",
+      "latestCommitAt": "2026-10-25T17:44:19Z",
+      "measuredAt": "2026-10-28T05:46:00Z",
+      "requirements": "Python >=3.8, torch >=2.5, torchvision, einops >=0.8.2.",
+      "costModel": "No API fee; local compute is possible, while larger training may need GPU/cloud resources.",
+      "alternatives": [
+        "huggingface/pytorch-image-models (timm)",
+        "google-research/vision_transformer",
+        "torchvision.models"
+      ]
+    },
+    {
+      "name": "Repomix",
+      "repository": "yamadashy/repomix",
+      "id": "4a925ee01de978814d",
+      "url": "https://github.com/yamadashy/repomix",
+      "starsDisplayed": "29,052",
+      "forksDisplayed": "1,603",
+      "metricsMeasuredAt": "2026-10-28T06:14:13Z",
+      "license": "MIT",
+      "licenseSource": "https://github.com/yamadashy/repomix/blob/main/LICENSE",
+      "latestCommit": {
+        "sha": "a835271f41701245ee24b3c8ba162c5abb3d6f12",
+        "date": "2026-10-25T15:46:24Z",
+        "url": "https://github.com/yamadashy/repomix/commit/a835271f41701245ee24b3c8ba162c5abb3d6f12"
+      },
+      "classification": "maintained_active",
+      "requirements": "Node.js >=22; local CLI; no API fee to pack files, but a downstream hosted model may cost money. MIT.",
+      "alternatives": [
+        "https://github.com/cyclotruc/gitingest"
+      ],
+      "publishedToSite": false,
+      "siteEditorialStatus": "enriched by original feed id; awaiting PR merge and publication verification"
+    },
+    {
+      "name": "Speech-to-Speech",
+      "repository": "huggingface/speech-to-speech",
+      "id": "9207e699adc3a415c8",
+      "url": "https://github.com/huggingface/speech-to-speech",
+      "starsDisplayed": "13,583",
+      "forksDisplayed": "1,675",
+      "metricsMeasuredAt": "2026-10-28T06:14:13Z",
+      "license": "Apache-2.0",
+      "licenseSource": "https://github.com/huggingface/speech-to-speech/blob/main/LICENSE",
+      "latestCommit": {
+        "sha": "bf39b6c38231f2961406d8c2e91c40e174dc5cbd",
+        "date": "2026-10-26T19:59:02Z",
+        "url": "https://github.com/huggingface/speech-to-speech/commit/bf39b6c38231f2961406d8c2e91c40e174dc5cbd"
+      },
+      "classification": "maintained_active",
+      "requirements": "Python 3.11–3.14; local models need substantial memory; hosted inference may incur provider charges. Apache-2.0.",
+      "alternatives": [
+        "https://github.com/k2-fsa/sherpa-onnx",
+        "https://github.com/ggml-org/whisper.cpp",
+        "https://github.com/livekit/agents"
+      ],
+      "publishedToSite": false,
+      "siteEditorialStatus": "enriched by original feed id; awaiting PR merge and publication verification"
+    }
+  ],
+  "reviewNotes": [
+    "تم تحديث النجوم والتفرعات وآخر دفع وآخر commit للمشاريع الثمانية السابقة عبر GitHub REST عند 2026-10-28T03:09:39Z مع الحفاظ على ترتيب previousEight.",
+    "تأكدت حالة archived=false للمشاريع الثمانية؛ AI-For-Beginners أبطأ نشاطًا وآخر commit له في 2026-09-04، دون تصنيفه مؤرشفًا.",
+    "license metadata أعيد فحصه عبر API عند 03:09:39Z؛ ملفات الترخيص الرسمية كانت قد فُحصت في اللقطة السابقة عند 02:59:48Z.",
+    "قُرئ README والتوثيق والترخيص ومتطلبات التشغيل لـHeadroom وDeepSeek Harness من المستودعات الرسمية؛ لم يتم تشغيل أي مشروع، لذلك لا يوجد testEvidence.",
+    "DeepSeek Harness في developer preview ولم يخضع لتدقيق أمني حسب SAFETY.md؛ يجب عزله في بيئة مؤقتة وتجنب الأسرار.",
+    "Headroom يشغّل الضغط محليًا، لكن استدعاء نموذج سحابي يبقى خاضعًا لسياسة ورسوم مزود النموذج.",
+    "هذه اللقطة البحثية مستقلة وغير منشورة؛ لم يُعدّل site/data/library.json أو واجهة الموقع.",
+    "في 2026-10-28T05:46:00Z أُعيد فحص metadata للمشاريع الثمانية السابقة: كل المستودعات غير مؤرشفة؛ حُدثت النجوم والتفرعات وSPDX وpushedAt. تفاصيل SHA لآخر commit بقيت مرجعة إلى اللقطة السابقة 03:09:39Z ولم تُعرض كأنها محدثة.",
+    "Argmax OSS SDK: README وPackage.swift وMIT License قُرئت من المصدر الرسمي. المستودع غير مؤرشف وpushedAt=2026-10-27T23:59:52Z، لكن latest commit على main بتاريخ 2026-10-11؛ هذا الاختلاف موثق بدل افتراض أن main تغير في تاريخ push.",
+    "vit-pytorch: README وpyproject.toml وMIT License قُرئت. ملف pyproject يعلن Codeberg كمستودع upstream؛ نجوم GitHub هي لقطة للمرآة/صفحة GitHub ولا تعبر بالضرورة عن نشاط upstream.",
+    "لم يُشغّل أي من المشروعين. اقتراحات improvements/spinoffs/religious هي تصاميم أولية لا تحمل testEvidence.",
+    "لم يُعدّل site/data/library.json؛ هذا التقرير لقطة بحثية مستقلة غير منشورة للموقع، ويحتفظ بترتيب المشاريع الثمانية السابقة.",
+    "في 2026-10-28T06:14:13Z أُعيد فحص metadata وآخر commit للمشاريع الثمانية السابقة مع الحفاظ على ترتيب previousEight؛ كل المستودعات غير مؤرشفة حسب API.",
+    "AI-For-Beginners: آخر commit ظاهر 2026-09-04 مع pushedAt metadata في 2026-10-23؛ سُجل التباين ولم يصنف المشروع مؤرشفًا.",
+    "sherpa-onnx: API أعاد pushedAt/latest commit بتاريخ 06:18:16Z بعد cutoff هذا التشغيل؛ احتُفظ بلقطة commit/نجوم سابقة موثقة لحين إعادة القياس.",
+    "Repomix: README وpackage.json وLICENSE الرسمية قُرئت؛ MIT، Node.js >=22، CLI محلي؛ لم يُشغّل.",
+    "Speech-to-Speech: README وpyproject.toml ودليل الإعداد وLICENSE قُرئت؛ Apache-2.0 وPython 3.11–3.14؛ لم يُشغّل.",
+    "الاقتراحات للمشروعين تصميمات أولية؛ لم يجر اختبارها ولم يُضف testEvidence."
+  ],
+  "currentCycle": {
+    "reviewedAt": "2026-10-28T06:14:13Z",
+    "newsReviewed": 12,
+    "projectsReviewed": 2,
+    "newsBasis": {
+      "article": 4,
+      "metadata": 8
+    },
+    "projectBasis": "readme",
+    "siteEditorialEntriesBefore": 353,
+    "siteEditorialEntriesAfter": 367,
+    "activeFeedItems": 800,
+    "activeMissingEditorialBefore": 572,
+    "activeMissingEditorialAfter": 558,
+    "siteLibraryJsonModified": false,
+    "newsIds": [
+      "df65cd12f346a5f252",
+      "b1e376bba5838b3f73",
+      "c725efb1b2c45b8089",
+      "198e3bc9eac789a630",
+      "ff390db43c3b5faf08",
+      "7955caaf89147e7bcd",
+      "8eb088ec74f3ec5eb4",
+      "4b87f2ecf88f8d9f86",
+      "10a0df171a06e25d1d",
+      "1cd33358fa8ed608be",
+      "8046d94113f2842475",
+      "d329f44d35f8e89d82"
+    ],
+    "projectIds": [
+      "4a925ee01de978814d",
+      "9207e699adc3a415c8"
+    ],
+    "sourceReadNotes": "أربعة أخبار أساسها article، خبر WIRED القضائي وسبعة أبحاث arXiv أساسها metadata، ومشروعان أساسهما readme. لا يوجد testEvidence لأن أي مشروع لم يُشغّل."
+  },
+  "currentResearchAppendix": {
+    "catalogExistingEntries": 31,
+    "catalogCompiledAt": "2026-10-24T10:38:36.869Z",
+    "newProjectResearchEntries": 4,
+    "totalResearchReferences": 35,
+    "siteDataLibraryModified": false,
+    "notPublishedToSite": true,
+    "projects": [
+      {
+        "name": "Argmax Open-Source SDK",
+        "id": "1400546783020ebaf6",
+        "url": "https://github.com/argmaxinc/argmax-oss-swift",
+        "stars": 6428,
+        "forks": 623,
+        "license": "MIT",
+        "archived": false,
+        "pushedAt": "2026-10-27T23:59:52Z",
+        "latestMainCommitAt": "2026-10-11T01:10:21Z",
+        "alternatives": [
+          "https://github.com/k2-fsa/sherpa-onnx",
+          "https://github.com/ggml-org/whisper.cpp"
+        ],
+        "sources": [
+          "https://github.com/argmaxinc/argmax-oss-swift/blob/main/README.md",
+          "https://github.com/argmaxinc/argmax-oss-swift/blob/main/LICENSE",
+          "https://github.com/argmaxinc/argmax-oss-swift/blob/main/Package.swift"
+        ]
+      },
+      {
+        "name": "vit-pytorch",
+        "id": "85839b0d6555a00982",
+        "url": "https://github.com/lucidrains/vit-pytorch",
+        "officialUpstream": "https://codeberg.org/lucidrains/vit-pytorch",
+        "stars": 25555,
+        "forks": 3497,
+        "license": "MIT",
+        "archived": false,
+        "pushedAt": "2026-10-25T17:44:25Z",
+        "latestCommitAt": "2026-10-25T17:44:19Z",
+        "alternatives": [
+          "https://github.com/huggingface/pytorch-image-models",
+          "https://github.com/google-research/vision_transformer",
+          "https://pytorch.org/vision/stable/models.html"
+        ],
+        "sources": [
+          "https://github.com/lucidrains/vit-pytorch",
+          "https://codeberg.org/lucidrains/vit-pytorch",
+          "https://github.com/lucidrains/vit-pytorch/blob/main/LICENSE",
+          "https://github.com/lucidrains/vit-pytorch/blob/main/pyproject.toml"
+        ]
+      },
+      {
+        "name": "Repomix",
+        "id": "4a925ee01de978814d",
+        "repo": "yamadashy/repomix",
+        "url": "https://github.com/yamadashy/repomix",
+        "stars": 29052,
+        "forks": 1603,
+        "license": "MIT",
+        "archived": false,
+        "pushedAt": "2026-10-25T15:48:10Z",
+        "latestMainCommitAt": "2026-10-25T15:46:24Z",
+        "alternatives": [
+          "https://github.com/cyclotruc/gitingest"
+        ],
+        "measuredAt": "2026-10-28T06:14:13Z",
+        "sources": [
+          {
+            "title": "README",
+            "url": "https://raw.githubusercontent.com/yamadashy/repomix/main/README.md"
+          },
+          {
+            "title": "package.json",
+            "url": "https://raw.githubusercontent.com/yamadashy/repomix/main/package.json"
+          },
+          {
+            "title": "LICENSE",
+            "url": "https://github.com/yamadashy/repomix/blob/main/LICENSE"
+          }
+        ],
+        "notPublishedToSite": true,
+        "siteEditorialStatus": "enriched by original feed id; awaiting PR merge and publication verification"
+      },
+      {
+        "name": "Speech-to-Speech",
+        "id": "9207e699adc3a415c8",
+        "repo": "huggingface/speech-to-speech",
+        "url": "https://github.com/huggingface/speech-to-speech",
+        "stars": 13583,
+        "forks": 1675,
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushedAt": "2026-10-26T19:59:02Z",
+        "latestMainCommitAt": "2026-10-26T19:59:02Z",
+        "alternatives": [
+          "https://github.com/k2-fsa/sherpa-onnx",
+          "https://github.com/ggml-org/whisper.cpp",
+          "https://github.com/livekit/agents"
+        ],
+        "measuredAt": "2026-10-28T06:14:13Z",
+        "sources": [
+          {
+            "title": "README",
+            "url": "https://raw.githubusercontent.com/huggingface/speech-to-speech/main/README.md"
+          },
+          {
+            "title": "pyproject.toml",
+            "url": "https://raw.githubusercontent.com/huggingface/speech-to-speech/main/pyproject.toml"
+          },
+          {
+            "title": "LICENSE",
+            "url": "https://github.com/huggingface/speech-to-speech/blob/main/LICENSE"
+          },
+          {
+            "title": "Configuration docs",
+            "url": "https://github.com/huggingface/speech-to-speech/blob/main/docs/configuration.md"
+          }
+        ],
+        "notPublishedToSite": true,
+        "siteEditorialStatus": "enriched by original feed id; awaiting PR merge and publication verification"
+      }
+    ]
+  }
+}
