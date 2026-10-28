@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-28T02:59:48Z",
+  "baseMainSha": "cfb66c3582920381af680f54ed8d5aa6c0234689",
+  "auditMethod": "Fetched every listed incoming JSON from main; compared id and url literally with the current feed and editorial blobs; checked seen ids; applied a structural equivalent of scripts/editorial.py validate. Official Python commands are reserved for CI because the repository is not cloned locally.",
+  "currentSnapshot": {
+    "feedItems": 800,
+    "editorialEntriesBefore": 311,
+    "seenIds": 420,
+    "lastSuccessfulAt": "2026-10-27T23:59:07Z",
+    "lastSuccessfulWorkflowRun": 40605756190
+  },
+  "incomingAudit": {
+    "files": 35,
+    "rows": 312,
+    "uniqueIds": 311,
+    "duplicateRows": 1,
+    "duplicate": {
+      "id": "853c63f738f0cecf3b",
+      "occurrences": 2,
+      "sameUrl": true
+    },
+    "exactFeedAndEditorial": 222,
+    "importedOutOfCurrentFeed": 87,
+    "seenOnlyMissingFromFeedAndEditorial": 3,
+    "idUrlMismatches": 0,
+    "urlMatchedDifferentId": 0,
+    "exactFeedMissingEditorial": 0,
+    "structuralErrors": 0,
+    "confirmedExpired": 0
+  },
+  "incomingFiles": [
+    "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+    "editorial/incoming/nabdh-editorial-2026-10-24-0840.json",
+    "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+    "editorial/incoming/nabdh-editorial-2026-10-24-1439.json",
+    "editorial/incoming/nabdh-editorial-2026-10-24-1740.json",
+    "editorial/incoming/nabdh-editorial-2026-10-24-2043.json",
+    "editorial/incoming/nabdh-editorial-2026-10-24-2342.json",
+    "editorial/incoming/nabdh-editorial-2026-10-24.json",
+    "editorial/incoming/nabdh-editorial-2026-10-25-0250.json",
+    "editorial/incoming/nabdh-editorial-2026-10-25-0554.json",
+    "editorial/incoming/nabdh-editorial-2026-10-25-0845.json",
+    "editorial/incoming/nabdh-editorial-2026-10-25-1143.json",
+    "editorial/incoming/nabdh-editorial-2026-10-25-1442.json",
+    "editorial/incoming/nabdh-editorial-2026-10-25-1742.json",
+    "editorial/incoming/nabdh-editorial-2026-10-25-2038.json",
+    "editorial/incoming/nabdh-editorial-2026-10-25-2342.json",
+    "editorial/incoming/nabdh-editorial-2026-10-26-0250.json",
+    "editorial/incoming/nabdh-editorial-2026-10-26-0545.json",
+    "editorial/incoming/nabdh-editorial-2026-10-26-0840.json",
+    "editorial/incoming/nabdh-editorial-2026-10-26-1152.json",
+    "editorial/incoming/nabdh-editorial-2026-10-26-1445.json",
+    "editorial/incoming/nabdh-editorial-2026-10-26-1745.json",
+    "editorial/incoming/nabdh-editorial-2026-10-26-2042.json",
+    "editorial/incoming/nabdh-editorial-2026-10-26-2342.json",
+    "editorial/incoming/nabdh-editorial-2026-10-27-0038.json",
+    "editorial/incoming/nabdh-editorial-2026-10-27-0240.json",
+    "editorial/incoming/nabdh-editorial-2026-10-27-0549.json",
+    "editorial/incoming/nabdh-editorial-2026-10-27-0619.json",
+    "editorial/incoming/nabdh-editorial-2026-10-27-0847.json",
+    "editorial/incoming/nabdh-editorial-2026-10-27-1141.json",
+    "editorial/incoming/nabdh-editorial-2026-10-27-1443.json",
+    "editorial/incoming/nabdh-editorial-2026-10-27-2045.json",
+    "editorial/incoming/nabdh-editorial-2026-10-27-2113.json",
+    "editorial/incoming/nabdh-editorial-2026-10-27-2347.json",
+    "editorial/incoming/nabdh-editorial-2026-10-28-0244.json"
+  ],
+  "pendingRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "name": "NVIDIA OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "reason": "seen id remains absent from current feed and editorial; no identity substitution"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "name": "Canva Craft",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "reason": "seen id remains absent from current feed and editorial; no identity substitution"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "name": "1Password agent sign-in",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "reason": "seen id remains absent from current feed and editorial; no identity substitution"
+    }
+  ],
+  "newBatch": {
+    "path": "editorial/incoming/nabdh-editorial-2026-10-28-0555.json",
+    "news": 12,
+    "projects": 2,
+    "total": 14,
+    "ids": [
+      "f3e020b4efe873953e",
+      "11b65591c0394c280a",
+      "de6edf7c4f4573522a",
+      "b1215e1aefc04c61e2",
+      "1d470e86547e8f6f5b",
+      "a17260832688704e9f",
+      "a660049bd369894dbf",
+      "433e6cf33c878b2009",
+      "0986b691bd7840fce2",
+      "33692ed4183c3a99c0",
+      "e734c0e90ec1424e9c",
+      "3b51b179c05070f41b",
+      "95e9f2df49c850fa37",
+      "0c0f874561d298dc51"
+    ],
+    "allIdsPresentInCurrentFeed": true,
+    "allUrlsExact": true,
+    "allPreviouslyAbsentFromEditorial": true,
+    "structuralErrors": 0
+  },
+  "importPlan": "Merge 14 entries by original id into site/data/editorial.json while preserving all existing entries and fields. Do not change feed.json or seen.json.",
+  "notes": [
+    "The 87 historical rows were retained; absence from the current feed alone does not prove expiration.",
+    "The three seen-only records remain pending until the exact id/url appears in the current feed.",
+    "No replacement identity was generated from a title."
+  ]
+}
