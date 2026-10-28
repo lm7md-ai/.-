@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "reviewedAt": "2026-10-28T06:14:13Z",
-  "measuredAt": "2026-10-28T06:14:13Z",
+  "reviewedAt": "2026-10-28T06:33:32.479Z",
+  "measuredAt": "2026-10-28T06:33:32.479Z",
   "publishedToSite": false,
   "purpose": "لقطة بحثية تراكمية مستقلة؛ لا يستهلكها الموقع مباشرة ولا تعدّل التصميم أو الشيفرة. ترتيب previousEight محفوظ.",
-  "measurementMethod": "GitHub REST repository metadata and latest commit endpoint; stars/forks are cumulative snapshots, not growth rates. Snapshot measured at 2026-10-28T03:09:39Z. The official license files for the previous eight were inspected in the prior review at 2026-10-28T02:59:48Z; current SPDX metadata was rechecked. New project README, docs, LICENSE, package metadata, activity and default branch were read from official repositories. Current cycle: repository metadata and latest-commit endpoints rechecked at 2026-10-28T06:14:13Z. The API returned a sherpa-onnx push/commit timestamp 06:18:16Z, after this run's cutoff; the prior confirmed snapshot was retained and the anomaly recorded.",
+  "measurementMethod": "GitHub REST repository metadata and latest commit endpoints; stars/forks are cumulative snapshots, not growth rates. Historical catalog star metrics retain their original measurement timestamp. Previous eight projects were rechecked during this cycle; this report timestamp records finalization, while per-project pushedAt and commit dates are preserved separately.",
   "historicalCatalog": {
     "path": "site/data/library.json",
     "entries": 31,
@@ -16,7 +16,7 @@
       "atom/atom",
       "angular/angular.js"
     ],
-    "note": "لم يُعدّل site/data/library.json؛ بقي الكتالوج التاريخي 31 مشروعًا، 4 منها في التغذية الحالية و27 خارجها وقت القياس. أُثريت Repomix وSpeech-to-Speech بمعرفيهما الأصليين في التغذية؛ لم يُنشأ لهما معرف بديل."
+    "note": "لم يُعدّل site/data/library.json؛ بقي الكتالوج التاريخي 31 مشروعًا، 4 منها في التغذية الحالية و27 خارجها وقت إعادة فحص التداخل 2026-10-28T06:33:32.479Z. أُثريت Repomix وSpeech-to-Speech بمعرفيهما الأصليين؛ لم يُنشأ لهما معرف بديل."
   },
   "previousEight": [
     {
@@ -35,8 +35,8 @@
         "Chainlit",
         "Panel"
       ],
-      "measuredAt": "2026-10-28T06:14:13Z",
-      "activityCheckedAt": "2026-10-28T06:14:13Z",
+      "measuredAt": "2026-10-28T06:33:32.479Z",
+      "activityCheckedAt": "2026-10-28T06:33:32.479Z",
       "latestCommit": {
         "sha": "07341609c68bb98701e7db9ba9e2ad6c0fb2acb4",
         "date": "2026-10-28T03:27:38Z",
@@ -45,7 +45,7 @@
       "licenseVerifiedAt": "2026-10-28T02:59:48Z",
       "licenseVerification": "Verified against the repository's official license file; prior stars/forks measurement timestamp retained.",
       "licenseMetadataCheckedAt": "2026-10-28T06:14:13Z",
-      "latestCommitCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommitCheckedAt": "2026-10-28T06:33:32.479Z",
       "latestCommitDetailsRefreshed": true
     },
     {
@@ -64,8 +64,8 @@
         "Mem0",
         "Zep"
       ],
-      "measuredAt": "2026-10-28T06:14:13Z",
-      "activityCheckedAt": "2026-10-28T06:14:13Z",
+      "measuredAt": "2026-10-28T06:33:32.479Z",
+      "activityCheckedAt": "2026-10-28T06:33:32.479Z",
       "latestCommit": {
         "sha": "8e91e3abb0f4536d374095193c18d72fa9d92b05",
         "date": "2026-10-28T05:41:16Z",
@@ -74,7 +74,7 @@
       "licenseVerifiedAt": "2026-10-28T02:59:48Z",
       "licenseVerification": "Verified against the repository's official license file; prior stars/forks measurement timestamp retained.",
       "licenseMetadataCheckedAt": "2026-10-28T06:14:13Z",
-      "latestCommitCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommitCheckedAt": "2026-10-28T06:33:32.479Z",
       "latestCommitDetailsRefreshed": true
     },
     {
@@ -93,8 +93,8 @@
         "Detectron2",
         "torchvision"
       ],
-      "measuredAt": "2026-10-28T06:14:13Z",
-      "activityCheckedAt": "2026-10-28T06:14:13Z",
+      "measuredAt": "2026-10-28T06:33:32.479Z",
+      "activityCheckedAt": "2026-10-28T06:33:32.479Z",
       "latestCommit": {
         "sha": "bb3e1550dbb819bd9846d4c99f368aebe8792a0e",
         "date": "2026-10-27T22:47:32Z",
@@ -103,7 +103,7 @@
       "licenseVerifiedAt": "2026-10-28T02:59:48Z",
       "licenseVerification": "Verified against the repository's official license file; prior stars/forks measurement timestamp retained.",
       "licenseMetadataCheckedAt": "2026-10-28T06:14:13Z",
-      "latestCommitCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommitCheckedAt": "2026-10-28T06:33:32.479Z",
       "latestCommitDetailsRefreshed": true
     },
     {
@@ -122,8 +122,8 @@
         "Remotion",
         "أدوات فيديو مفتوحة المصدر"
       ],
-      "measuredAt": "2026-10-28T06:14:13Z",
-      "activityCheckedAt": "2026-10-28T06:14:13Z",
+      "measuredAt": "2026-10-28T06:33:32.479Z",
+      "activityCheckedAt": "2026-10-28T06:33:32.479Z",
       "latestCommit": {
         "sha": "dd5ee71a0fbbb2c06401a7a4401bc83830a7c4d1",
         "date": "2026-10-28T03:38:17Z",
@@ -132,7 +132,7 @@
       "licenseVerifiedAt": "2026-10-28T02:59:48Z",
       "licenseVerification": "Verified against the repository's official license file; prior stars/forks measurement timestamp retained.",
       "licenseMetadataCheckedAt": "2026-10-28T06:14:13Z",
-      "latestCommitCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommitCheckedAt": "2026-10-28T06:33:32.479Z",
       "latestCommitDetailsRefreshed": true
     },
     {
@@ -151,8 +151,8 @@
         "Dive into Deep Learning",
         "Hugging Face course"
       ],
-      "measuredAt": "2026-10-28T06:14:13Z",
-      "activityCheckedAt": "2026-10-28T06:14:13Z",
+      "measuredAt": "2026-10-28T06:33:32.479Z",
+      "activityCheckedAt": "2026-10-28T06:33:32.479Z",
       "latestCommit": {
         "sha": "392d0df1b2647cbee104942390551f1ed9e072c8",
         "date": "2026-09-04T15:24:51Z",
@@ -161,7 +161,7 @@
       "licenseVerifiedAt": "2026-10-28T02:59:48Z",
       "licenseVerification": "Verified against the repository's official license file; prior stars/forks measurement timestamp retained.",
       "licenseMetadataCheckedAt": "2026-10-28T06:14:13Z",
-      "latestCommitCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommitCheckedAt": "2026-10-28T06:33:32.479Z",
       "latestCommitDetailsRefreshed": true,
       "activityAnomaly": "pushedAt=2026-10-23 أحدث من latest commit endpoint=2026-09-04؛ لم يُفسر التناقض على أنه commit جديد."
     },
@@ -181,8 +181,8 @@
         "Insomnia",
         "HTTPie"
       ],
-      "measuredAt": "2026-10-28T06:14:13Z",
-      "activityCheckedAt": "2026-10-28T06:14:13Z",
+      "measuredAt": "2026-10-28T06:33:32.479Z",
+      "activityCheckedAt": "2026-10-28T06:33:32.479Z",
       "latestCommit": {
         "sha": "874ac540a14eb1883ab359b4438487add41b8b03",
         "date": "2026-10-27T16:18:40Z",
@@ -191,7 +191,7 @@
       "licenseVerifiedAt": "2026-10-28T02:59:48Z",
       "licenseVerification": "Verified against the repository's official license file; prior stars/forks measurement timestamp retained.",
       "licenseMetadataCheckedAt": "2026-10-28T06:14:13Z",
-      "latestCommitCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommitCheckedAt": "2026-10-28T06:33:32.479Z",
       "latestCommitDetailsRefreshed": true
     },
     {
@@ -210,8 +210,8 @@
         "JAX",
         "TensorFlow Core"
       ],
-      "measuredAt": "2026-10-28T06:14:13Z",
-      "activityCheckedAt": "2026-10-28T06:14:13Z",
+      "measuredAt": "2026-10-28T06:33:32.479Z",
+      "activityCheckedAt": "2026-10-28T06:33:32.479Z",
       "latestCommit": {
         "sha": "7efab4a60f5930fa81b0db15ed4ec6e4925e0c45",
         "date": "2026-10-27T23:29:19Z",
@@ -220,43 +220,37 @@
       "licenseVerifiedAt": "2026-10-28T02:59:48Z",
       "licenseVerification": "Verified against the repository's official license file; prior stars/forks measurement timestamp retained.",
       "licenseMetadataCheckedAt": "2026-10-28T06:14:13Z",
-      "latestCommitCheckedAt": "2026-10-28T06:14:13Z",
+      "latestCommitCheckedAt": "2026-10-28T06:33:32.479Z",
       "latestCommitDetailsRefreshed": true
     },
     {
       "name": "sherpa-onnx",
       "repo": "k2-fsa/sherpa-onnx",
       "url": "https://github.com/k2-fsa/sherpa-onnx",
-      "stars": 15556,
-      "forks": 1822,
+      "stars": 15557,
+      "forks": 1823,
       "license": "Apache-2.0",
       "defaultBranch": "master",
       "archived": false,
-      "pushedAt": "2026-10-28T01:41:55Z",
-      "status": "غير مؤرشف حسب آخر metadata موثوق؛ أحدث timestamps التي أعادها API تجاوزت وقت هذا التشغيل، لذلك احتُفظ بآخر commit وقياس نجوم مؤكدين.",
+      "pushedAt": "2026-10-28T06:18:16Z",
+      "status": "غير مؤرشف؛ آخر commit موثق 2026-10-28T06:18:16Z.",
       "alternatives": [
         "whisper.cpp",
         "Vosk",
         "ONNX Runtime pipelines"
       ],
-      "measuredAt": "2026-10-28T05:46:00Z",
-      "activityCheckedAt": "2026-10-28T06:14:13Z",
+      "measuredAt": "2026-10-28T06:33:32.479Z",
+      "activityCheckedAt": "2026-10-28T06:33:32.479Z",
       "latestCommit": {
-        "sha": "2505cca5d7d5806bf3bdbd1db717100123fac005",
-        "date": "2026-10-28T01:41:55Z",
-        "url": "https://github.com/k2-fsa/sherpa-onnx/commit/2505cca5d7d5806bf3bdbd1db717100123fac005"
+        "sha": "bfbc6ec2306a3cffd1817a32d165f9b4eb78a284",
+        "date": "2026-10-28T06:18:16Z",
+        "url": "https://github.com/k2-fsa/sherpa-onnx/commit/bfbc6ec2306a3cffd1817a32d165f9b4eb78a284"
       },
       "licenseVerifiedAt": "2026-10-28T02:59:48Z",
       "licenseVerification": "Verified against the repository's official license file; prior stars/forks measurement timestamp retained.",
       "licenseMetadataCheckedAt": "2026-10-28T05:46:00Z",
-      "latestCommitCheckedAt": "2026-10-28T06:14:13Z",
-      "latestCommitDetailsRefreshed": false,
-      "activityAnomaly": {
-        "apiPushedAt": "2026-10-28T06:18:16Z",
-        "apiLatestCommitAt": "2026-10-28T06:18:16Z",
-        "cutoff": "2026-10-28T06:14:13Z",
-        "note": "API timestamps are after this run's cutoff; retained prior confirmed activity and metric snapshot."
-      }
+      "latestCommitCheckedAt": "2026-10-28T06:33:32.479Z",
+      "latestCommitDetailsRefreshed": true
     }
   ],
   "newlyEnrichedProjects": [
@@ -408,7 +402,7 @@
       "alternatives": [
         "https://github.com/cyclotruc/gitingest"
       ],
-      "measuredAt": "2026-10-28T06:14:13Z",
+      "measuredAt": "2026-10-28T06:33:32.479Z",
       "status": "maintained_active",
       "state": "maintained_active",
       "sources": [
@@ -450,7 +444,7 @@
         "https://github.com/ggml-org/whisper.cpp",
         "https://github.com/livekit/agents"
       ],
-      "measuredAt": "2026-10-28T06:14:13Z",
+      "measuredAt": "2026-10-28T06:33:32.479Z",
       "status": "maintained_active",
       "state": "maintained_active",
       "sources": [
@@ -502,15 +496,16 @@
       "احفظ ترتيب improvements وspinoffs وreligious، ولا تعِد ترتيب الأفكار القديمة."
     ]
   },
-  "generatedAt": "2026-10-28T06:14:13Z",
-  "activityCheckedAt": "2026-10-28T06:14:13Z",
+  "generatedAt": "2026-10-28T06:33:32.479Z",
+  "activityCheckedAt": "2026-10-28T06:33:32.479Z",
   "catalogSnapshot": {
     "total": 31,
     "archived": 2,
     "inCurrentFeed": 4,
     "notInFeed": 27,
-    "metricCapturedAt": "2026-10-28T06:14:13Z",
-    "note": "Historical catalog metrics were not relabeled as current; existing measurement timestamp retained."
+    "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+    "note": "Historical catalog star/fork metrics retain the original 2026-10-24 timestamp; only overlap with the current feed was recalculated in this cycle.",
+    "feedOverlapCheckedAt": "2026-10-28T06:33:32.479Z"
   },
   "newProjects": [
     {
@@ -606,7 +601,7 @@
       "url": "https://github.com/yamadashy/repomix",
       "starsDisplayed": "29,052",
       "forksDisplayed": "1,603",
-      "metricsMeasuredAt": "2026-10-28T06:14:13Z",
+      "metricsMeasuredAt": "2026-10-28T06:33:32.479Z",
       "license": "MIT",
       "licenseSource": "https://github.com/yamadashy/repomix/blob/main/LICENSE",
       "latestCommit": {
@@ -629,7 +624,7 @@
       "url": "https://github.com/huggingface/speech-to-speech",
       "starsDisplayed": "13,583",
       "forksDisplayed": "1,675",
-      "metricsMeasuredAt": "2026-10-28T06:14:13Z",
+      "metricsMeasuredAt": "2026-10-28T06:33:32.479Z",
       "license": "Apache-2.0",
       "licenseSource": "https://github.com/huggingface/speech-to-speech/blob/main/LICENSE",
       "latestCommit": {
@@ -663,13 +658,14 @@
     "لم يُعدّل site/data/library.json؛ هذا التقرير لقطة بحثية مستقلة غير منشورة للموقع، ويحتفظ بترتيب المشاريع الثمانية السابقة.",
     "في 2026-10-28T06:14:13Z أُعيد فحص metadata وآخر commit للمشاريع الثمانية السابقة مع الحفاظ على ترتيب previousEight؛ كل المستودعات غير مؤرشفة حسب API.",
     "AI-For-Beginners: آخر commit ظاهر 2026-09-04 مع pushedAt metadata في 2026-10-23؛ سُجل التباين ولم يصنف المشروع مؤرشفًا.",
-    "sherpa-onnx: API أعاد pushedAt/latest commit بتاريخ 06:18:16Z بعد cutoff هذا التشغيل؛ احتُفظ بلقطة commit/نجوم سابقة موثقة لحين إعادة القياس.",
     "Repomix: README وpackage.json وLICENSE الرسمية قُرئت؛ MIT، Node.js >=22، CLI محلي؛ لم يُشغّل.",
     "Speech-to-Speech: README وpyproject.toml ودليل الإعداد وLICENSE قُرئت؛ Apache-2.0 وPython 3.11–3.14؛ لم يُشغّل.",
-    "الاقتراحات للمشروعين تصميمات أولية؛ لم يجر اختبارها ولم يُضف testEvidence."
+    "الاقتراحات للمشروعين تصميمات أولية؛ لم يجر اختبارها ولم يُضف testEvidence.",
+    "أُعيد قياس بيانات المشاريع وتحديث التقرير عند 2026-10-28T06:33:32.479Z; النجوم والتفرعات أرقام تراكمية وليست نموًا يوميًا.",
+    "sherpa-onnx: أُعيد التحقق بعد timestamp الخاص بآخر commit 06:18:16Z؛ المستودع غير مؤرشف والترخيص Apache-2.0."
   ],
   "currentCycle": {
-    "reviewedAt": "2026-10-28T06:14:13Z",
+    "reviewedAt": "2026-10-28T06:33:32.479Z",
     "newsReviewed": 12,
     "projectsReviewed": 2,
     "newsBasis": {
@@ -768,7 +764,7 @@
         "alternatives": [
           "https://github.com/cyclotruc/gitingest"
         ],
-        "measuredAt": "2026-10-28T06:14:13Z",
+        "measuredAt": "2026-10-28T06:33:32.479Z",
         "sources": [
           {
             "title": "README",
@@ -802,7 +798,7 @@
           "https://github.com/ggml-org/whisper.cpp",
           "https://github.com/livekit/agents"
         ],
-        "measuredAt": "2026-10-28T06:14:13Z",
+        "measuredAt": "2026-10-28T06:33:32.479Z",
         "sources": [
           {
             "title": "README",
