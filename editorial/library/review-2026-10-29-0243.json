@@ -1,0 +1,633 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-29T02:43:57+03:00",
+  "publishedToSite": false,
+  "purpose": "مراجعة بحثية غير منشورة؛ لا تعدل شيفرة الموقع أو تصميمه أو workflows أو site/data/library.json. البيانات من واجهة GitHub الرسمية وليست اختبارات تشغيل.",
+  "historicalCatalog": {
+    "catalogPath": "editorial/library/catalog-2026-10-24.json",
+    "entries": [
+      {
+        "repository": "torvalds/linux",
+        "url": "https://github.com/torvalds/linux",
+        "archived": false,
+        "stars": 253780,
+        "forks": 67461,
+        "license": "NOASSERTION",
+        "pushedAt": "2026-10-28T18:09:17Z",
+        "updatedAt": "2026-10-28T23:47:30Z",
+        "defaultBranch": "master",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z",
+        "licenseNote": "GitHub API did not resolve an SPDX license; inspect the upstream LICENSE before relying on this field."
+      },
+      {
+        "repository": "microsoft/vscode",
+        "url": "https://github.com/microsoft/vscode",
+        "archived": false,
+        "stars": 194397,
+        "forks": 44897,
+        "license": "MIT",
+        "pushedAt": "2026-10-28T23:47:44Z",
+        "updatedAt": "2026-10-28T23:36:37Z",
+        "defaultBranch": "main",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      },
+      {
+        "repository": "vuejs/core",
+        "url": "https://github.com/vuejs/core",
+        "archived": false,
+        "stars": 54804,
+        "forks": 9268,
+        "license": "MIT",
+        "pushedAt": "2026-10-28T21:35:09Z",
+        "updatedAt": "2026-10-28T22:26:50Z",
+        "defaultBranch": "main",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      },
+      {
+        "repository": "nodejs/node",
+        "url": "https://github.com/nodejs/node",
+        "archived": false,
+        "stars": 123160,
+        "forks": 39282,
+        "license": "NOASSERTION",
+        "pushedAt": "2026-10-28T23:17:29Z",
+        "updatedAt": "2026-10-28T23:21:01Z",
+        "defaultBranch": "main",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z",
+        "licenseNote": "GitHub API did not resolve an SPDX license; inspect the upstream LICENSE before relying on this field."
+      },
+      {
+        "repository": "python/cpython",
+        "url": "https://github.com/python/cpython",
+        "archived": false,
+        "stars": 77750,
+        "forks": 37676,
+        "license": "NOASSERTION",
+        "pushedAt": "2026-10-28T22:51:07Z",
+        "updatedAt": "2026-10-28T22:53:03Z",
+        "defaultBranch": "main",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z",
+        "licenseNote": "GitHub API did not resolve an SPDX license; inspect the upstream LICENSE before relying on this field."
+      },
+      {
+        "repository": "rust-lang/rust",
+        "url": "https://github.com/rust-lang/rust",
+        "archived": false,
+        "stars": 120888,
+        "forks": 17999,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-28T23:28:30Z",
+        "updatedAt": "2026-10-28T23:44:09Z",
+        "defaultBranch": "main",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      },
+      {
+        "repository": "golang/go",
+        "url": "https://github.com/golang/go",
+        "archived": false,
+        "stars": 139494,
+        "forks": 21591,
+        "license": "BSD-3-Clause",
+        "pushedAt": "2026-10-28T20:25:52Z",
+        "updatedAt": "2026-10-28T22:31:16Z",
+        "defaultBranch": "master",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      },
+      {
+        "repository": "kubernetes/kubernetes",
+        "url": "https://github.com/kubernetes/kubernetes",
+        "archived": false,
+        "stars": 128594,
+        "forks": 46381,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-28T21:53:55Z",
+        "updatedAt": "2026-10-28T22:14:29Z",
+        "defaultBranch": "master",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      },
+      {
+        "repository": "postgres/postgres",
+        "url": "https://github.com/postgres/postgres",
+        "archived": false,
+        "stars": 22632,
+        "forks": 6050,
+        "license": "NOASSERTION",
+        "pushedAt": "2026-10-28T19:33:09Z",
+        "updatedAt": "2026-10-28T23:12:53Z",
+        "defaultBranch": "master",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z",
+        "licenseNote": "GitHub API did not resolve an SPDX license; inspect the upstream LICENSE before relying on this field."
+      },
+      {
+        "repository": "tensorflow/tensorflow",
+        "url": "https://github.com/tensorflow/tensorflow",
+        "archived": false,
+        "stars": 201284,
+        "forks": 78731,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-28T23:39:41Z",
+        "updatedAt": "2026-10-28T23:39:59Z",
+        "defaultBranch": "master",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      },
+      {
+        "repository": "pytorch/pytorch",
+        "url": "https://github.com/pytorch/pytorch",
+        "archived": false,
+        "stars": 105153,
+        "forks": 31847,
+        "license": "NOASSERTION",
+        "pushedAt": "2026-10-28T23:47:51Z",
+        "updatedAt": "2026-10-28T23:29:05Z",
+        "defaultBranch": "main",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z",
+        "licenseNote": "GitHub API did not resolve an SPDX license; inspect the upstream LICENSE before relying on this field."
+      },
+      {
+        "repository": "huggingface/transformers",
+        "url": "https://github.com/huggingface/transformers",
+        "archived": false,
+        "stars": 168302,
+        "forks": 35017,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-28T23:26:30Z",
+        "updatedAt": "2026-10-28T23:45:00Z",
+        "defaultBranch": "main",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      },
+      {
+        "repository": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "archived": false,
+        "stars": 185140,
+        "forks": 18701,
+        "license": "MIT",
+        "pushedAt": "2026-10-28T23:44:29Z",
+        "updatedAt": "2026-10-28T23:44:35Z",
+        "defaultBranch": "main",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      },
+      {
+        "repository": "n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "archived": false,
+        "stars": 208914,
+        "forks": 61287,
+        "license": "NOASSERTION",
+        "pushedAt": "2026-10-28T23:46:14Z",
+        "updatedAt": "2026-10-28T23:34:48Z",
+        "defaultBranch": "master",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z",
+        "licenseNote": "GitHub API did not resolve an SPDX license; inspect the upstream LICENSE before relying on this field."
+      },
+      {
+        "repository": "langchain-ai/langchain",
+        "url": "https://github.com/langchain-ai/langchain",
+        "archived": false,
+        "stars": 148641,
+        "forks": 24957,
+        "license": "MIT",
+        "pushedAt": "2026-10-28T23:44:21Z",
+        "updatedAt": "2026-10-28T23:48:46Z",
+        "defaultBranch": "master",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      },
+      {
+        "repository": "home-assistant/core",
+        "url": "https://github.com/home-assistant/core",
+        "archived": false,
+        "stars": 91801,
+        "forks": 39095,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-28T22:55:56Z",
+        "updatedAt": "2026-10-28T23:37:13Z",
+        "defaultBranch": "dev",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      },
+      {
+        "repository": "obsproject/obs-studio",
+        "url": "https://github.com/obsproject/obs-studio",
+        "archived": false,
+        "stars": 78485,
+        "forks": 10931,
+        "license": "GPL-2.0",
+        "pushedAt": "2026-10-28T21:26:44Z",
+        "updatedAt": "2026-10-28T23:39:18Z",
+        "defaultBranch": "master",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      },
+      {
+        "repository": "blender/blender",
+        "url": "https://github.com/blender/blender",
+        "archived": false,
+        "stars": 21393,
+        "forks": 3453,
+        "license": "NOASSERTION",
+        "pushedAt": "2026-10-28T23:27:49Z",
+        "updatedAt": "2026-10-28T23:28:03Z",
+        "defaultBranch": "main",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z",
+        "licenseNote": "GitHub API did not resolve an SPDX license; inspect the upstream LICENSE before relying on this field."
+      },
+      {
+        "repository": "jellyfin/jellyfin",
+        "url": "https://github.com/jellyfin/jellyfin",
+        "archived": false,
+        "stars": 58755,
+        "forks": 5733,
+        "license": "GPL-2.0",
+        "pushedAt": "2026-10-28T18:39:16Z",
+        "updatedAt": "2026-10-28T23:06:13Z",
+        "defaultBranch": "master",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      },
+      {
+        "repository": "immich-app/immich",
+        "url": "https://github.com/immich-app/immich",
+        "archived": false,
+        "stars": 117528,
+        "forks": 7391,
+        "license": "AGPL-3.0",
+        "pushedAt": "2026-10-28T22:51:36Z",
+        "updatedAt": "2026-10-28T23:39:47Z",
+        "defaultBranch": "main",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      },
+      {
+        "repository": "paperless-ngx/paperless-ngx",
+        "url": "https://github.com/paperless-ngx/paperless-ngx",
+        "archived": false,
+        "stars": 47233,
+        "forks": 3283,
+        "license": "GPL-3.0",
+        "pushedAt": "2026-10-28T23:00:56Z",
+        "updatedAt": "2026-10-28T23:48:41Z",
+        "defaultBranch": "dev",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      },
+      {
+        "repository": "grafana/grafana",
+        "url": "https://github.com/grafana/grafana",
+        "archived": false,
+        "stars": 77575,
+        "forks": 14879,
+        "license": "AGPL-3.0",
+        "pushedAt": "2026-10-28T23:43:25Z",
+        "updatedAt": "2026-10-28T22:54:49Z",
+        "defaultBranch": "main",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      },
+      {
+        "repository": "godotengine/godot",
+        "url": "https://github.com/godotengine/godot",
+        "archived": false,
+        "stars": 119235,
+        "forks": 27256,
+        "license": "MIT",
+        "pushedAt": "2026-10-28T01:19:52Z",
+        "updatedAt": "2026-10-28T23:47:21Z",
+        "defaultBranch": "master",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      },
+      {
+        "repository": "fastapi/fastapi",
+        "url": "https://github.com/fastapi/fastapi",
+        "archived": false,
+        "stars": 104259,
+        "forks": 10140,
+        "license": "MIT",
+        "pushedAt": "2026-10-27T04:56:28Z",
+        "updatedAt": "2026-10-28T22:53:29Z",
+        "defaultBranch": "master",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      },
+      {
+        "repository": "sveltejs/svelte",
+        "url": "https://github.com/sveltejs/svelte",
+        "archived": false,
+        "stars": 88514,
+        "forks": 7447,
+        "license": "MIT",
+        "pushedAt": "2026-10-28T23:23:39Z",
+        "updatedAt": "2026-10-28T23:21:46Z",
+        "defaultBranch": "main",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      },
+      {
+        "repository": "django/django",
+        "url": "https://github.com/django/django",
+        "archived": false,
+        "stars": 91537,
+        "forks": 36535,
+        "license": "BSD-3-Clause",
+        "pushedAt": "2026-10-28T12:53:14Z",
+        "updatedAt": "2026-10-28T23:32:38Z",
+        "defaultBranch": "main",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      },
+      {
+        "repository": "neovim/neovim",
+        "url": "https://github.com/neovim/neovim",
+        "archived": false,
+        "stars": 103241,
+        "forks": 7299,
+        "license": "NOASSERTION",
+        "pushedAt": "2026-10-28T13:57:43Z",
+        "updatedAt": "2026-10-28T23:27:06Z",
+        "defaultBranch": "master",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z",
+        "licenseNote": "GitHub API did not resolve an SPDX license; inspect the upstream LICENSE before relying on this field."
+      },
+      {
+        "repository": "FFmpeg/FFmpeg",
+        "url": "https://github.com/FFmpeg/FFmpeg",
+        "archived": false,
+        "stars": 65980,
+        "forks": 14448,
+        "license": "NOASSERTION",
+        "pushedAt": "2026-10-28T22:41:15Z",
+        "updatedAt": "2026-10-28T23:16:06Z",
+        "defaultBranch": "master",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z",
+        "licenseNote": "GitHub API did not resolve an SPDX license; inspect the upstream LICENSE before relying on this field."
+      },
+      {
+        "repository": "atom/atom",
+        "url": "https://github.com/atom/atom",
+        "archived": true,
+        "stars": 60711,
+        "forks": 17164,
+        "license": "MIT",
+        "pushedAt": "2023-01-03T10:49:48Z",
+        "updatedAt": "2026-10-28T23:33:12Z",
+        "defaultBranch": "master",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      },
+      {
+        "repository": "angular/angular.js",
+        "url": "https://github.com/angular/angular.js",
+        "archived": true,
+        "stars": 58467,
+        "forks": 26929,
+        "license": "MIT",
+        "pushedAt": "2024-04-12T17:43:16Z",
+        "updatedAt": "2026-10-28T19:12:52Z",
+        "defaultBranch": "master",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      },
+      {
+        "repository": "microsoft/TypeScript",
+        "url": "https://github.com/microsoft/TypeScript",
+        "archived": false,
+        "stars": 111655,
+        "forks": 16044,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-28T21:55:08Z",
+        "updatedAt": "2026-10-28T23:04:11Z",
+        "defaultBranch": "main",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      }
+    ],
+    "archived": 2,
+    "nonArchived": 29,
+    "inCurrentFeed": 4,
+    "outsideCurrentFeed": 27,
+    "previousCatalogCompiledAt": "2026-10-24T10:38:36.869Z",
+    "metricsCapturedAt": "2026-10-28T23:43:57Z",
+    "metricsWarning": "النجوم وforks أعداد تراكمية في لحظة القياس، لا تقيس النمو ولا الجودة. NOASSERTION لا تعني أن المشروع بلا ترخيص؛ يجب قراءة LICENSE الأصلي.",
+    "alternativesForArchived": [
+      {
+        "repository": "atom/atom",
+        "status": "archived",
+        "lastPushAt": "2023-01-03T10:49:48Z",
+        "license": "MIT",
+        "alternatives": [
+          {
+            "name": "Visual Studio Code",
+            "url": "https://github.com/microsoft/vscode",
+            "status": "non-archived"
+          },
+          {
+            "name": "Neovim",
+            "url": "https://github.com/neovim/neovim",
+            "status": "non-archived"
+          }
+        ]
+      },
+      {
+        "repository": "angular/angular.js",
+        "status": "archived",
+        "lastPushAt": "2024-04-12T17:43:16Z",
+        "license": "MIT",
+        "alternatives": [
+          {
+            "name": "Angular",
+            "url": "https://github.com/angular/angular",
+            "status": "non-archived",
+            "stars": 101091,
+            "forks": 29583,
+            "license": "MIT",
+            "pushedAt": "2026-10-28T23:46:03Z"
+          },
+          {
+            "name": "Vue",
+            "url": "https://github.com/vuejs/core",
+            "status": "non-archived"
+          },
+          {
+            "name": "Svelte",
+            "url": "https://github.com/sveltejs/svelte",
+            "status": "non-archived"
+          }
+        ]
+      }
+    ]
+  },
+  "previousEightRecheck": {
+    "checkedAt": "2026-10-29T02:43:57+03:00",
+    "repositoryMetadataMeasuredAt": "2026-10-28T23:43:57Z",
+    "repositories": [
+      {
+        "name": "Gradio",
+        "repository": "gradio-app/gradio",
+        "url": "https://github.com/gradio-app/gradio",
+        "archived": false,
+        "license": "Apache-2.0",
+        "stars": 43940,
+        "forks": 3649,
+        "pushedAt": "2026-10-28T23:14:02Z",
+        "updatedAt": "2026-10-28T23:13:10Z",
+        "defaultBranch": "main",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      },
+      {
+        "name": "Claude-Mem",
+        "repository": "thedotmack/claude-mem",
+        "url": "https://github.com/thedotmack/claude-mem",
+        "archived": false,
+        "license": "Apache-2.0",
+        "stars": 104030,
+        "forks": 9180,
+        "pushedAt": "2026-10-28T23:44:44Z",
+        "updatedAt": "2026-10-28T23:38:55Z",
+        "defaultBranch": "main",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      },
+      {
+        "name": "Ultralytics",
+        "repository": "ultralytics/ultralytics",
+        "url": "https://github.com/ultralytics/ultralytics",
+        "archived": false,
+        "license": "AGPL-3.0",
+        "stars": 62940,
+        "forks": 11931,
+        "pushedAt": "2026-10-28T23:46:27Z",
+        "updatedAt": "2026-10-28T23:47:02Z",
+        "defaultBranch": "main",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      },
+      {
+        "name": "MoneyPrinterTurbo",
+        "repository": "harry0703/MoneyPrinterTurbo",
+        "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+        "archived": false,
+        "license": "MIT",
+        "stars": 136129,
+        "forks": 21635,
+        "pushedAt": "2026-10-28T13:40:40Z",
+        "updatedAt": "2026-10-28T23:35:25Z",
+        "defaultBranch": "main",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      },
+      {
+        "name": "AI-For-Beginners",
+        "repository": "microsoft/AI-For-Beginners",
+        "url": "https://github.com/microsoft/AI-For-Beginners",
+        "archived": false,
+        "license": "MIT",
+        "stars": 70329,
+        "forks": 13667,
+        "pushedAt": "2026-10-23T23:55:14Z",
+        "updatedAt": "2026-10-28T23:35:46Z",
+        "defaultBranch": "main",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      },
+      {
+        "name": "Bruno",
+        "repository": "usebruno/bruno",
+        "url": "https://github.com/usebruno/bruno",
+        "archived": false,
+        "license": "MIT",
+        "stars": 47909,
+        "forks": 3047,
+        "pushedAt": "2026-10-28T14:45:36Z",
+        "updatedAt": "2026-10-28T20:16:11Z",
+        "defaultBranch": "main",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      },
+      {
+        "name": "Keras",
+        "repository": "keras-team/keras",
+        "url": "https://github.com/keras-team/keras",
+        "archived": false,
+        "license": "Apache-2.0",
+        "stars": 64393,
+        "forks": 19806,
+        "pushedAt": "2026-10-27T23:29:20Z",
+        "updatedAt": "2026-10-28T18:05:34Z",
+        "defaultBranch": "master",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      },
+      {
+        "name": "sherpa-onnx",
+        "repository": "k2-fsa/sherpa-onnx",
+        "url": "https://github.com/k2-fsa/sherpa-onnx",
+        "archived": false,
+        "license": "Apache-2.0",
+        "stars": 15572,
+        "forks": 1824,
+        "pushedAt": "2026-10-28T15:21:31Z",
+        "updatedAt": "2026-10-28T22:40:37Z",
+        "defaultBranch": "master",
+        "metricsCapturedAt": "2026-10-28T23:43:57Z"
+      }
+    ],
+    "note": "الثمانية غير مؤرشفة وقت القياس. ترخيص AGPL-3.0 في Ultralytics يختلف عن MIT وApache-2.0؛ راجع الالتزامات قبل إعادة الاستخدام."
+  },
+  "projects": [
+    {
+      "name": "Yazi",
+      "id": "c7d21c81942f9a6ade",
+      "url": "https://github.com/sxyazi/yazi",
+      "archived": false,
+      "license": "MIT",
+      "stars": 43091,
+      "forks": 1051,
+      "pushedAt": "2026-10-28T14:14:09Z",
+      "updatedAt": "2026-10-28T21:40:20Z",
+      "metricsCapturedAt": "2026-10-28T23:43:57Z",
+      "readmeReviewed": true,
+      "installationDocsReviewed": true,
+      "licenseReviewed": true,
+      "overviewInEditorial": true,
+      "requirementsInEditorial": true,
+      "quickStartInEditorial": true,
+      "tested": false,
+      "sourceLinks": [
+        "https://github.com/sxyazi/yazi",
+        "https://yazi-rs.github.io/docs/installation/",
+        "https://yazi-rs.github.io/docs/quick-start/",
+        "https://github.com/sxyazi/yazi/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "Resume-Matcher",
+      "id": "3f2a46287c0578a69b",
+      "url": "https://github.com/srbhr/Resume-Matcher",
+      "archived": false,
+      "license": "Apache-2.0",
+      "stars": 28916,
+      "forks": 5102,
+      "pushedAt": "2026-10-23T03:24:09Z",
+      "updatedAt": "2026-10-28T23:45:00Z",
+      "metricsCapturedAt": "2026-10-28T23:43:57Z",
+      "readmeReviewed": true,
+      "setupDocsReviewed": true,
+      "licenseReviewed": true,
+      "overviewInEditorial": true,
+      "requirementsInEditorial": true,
+      "quickStartInEditorial": true,
+      "tested": false,
+      "sourceLinks": [
+        "https://github.com/srbhr/Resume-Matcher",
+        "https://github.com/srbhr/Resume-Matcher/blob/main/SETUP.md",
+        "https://resumematcher.fyi/docs/installation/",
+        "https://github.com/srbhr/Resume-Matcher/blob/main/LICENSE"
+      ]
+    }
+  ],
+  "displayRequirementsForDevelopmentAssistant": [
+    "عرض overview وrequirements وquickStart في أقسام منفصلة مع روابط المصدر والترخيص.",
+    "إظهار archived وlicense وlast push ووقت قياس stars/forks؛ لا تستخدم النجوم بوصفها مؤشر جودة.",
+    "عرض التحسينات والمشاريع المشتقة كاقتراحات مستقبلية، لا كميزات منفذة.",
+    "إظهار testEvidence فقط عندما يوجد دليل اختبار حقيقي؛ المشروعان أعلاه لم يُشغّلا في هذه الدورة.",
+    "عدم عرض مكتبة البحث التاريخية باعتبارها منشورة؛ الملف الحالي تقرير بحثي مستقل."
+  ],
+  "topThreeSuggestions": [
+    {
+      "title": "ربط كل جملة مولدة في Resume Matcher بدليل من السيرة الأصلية",
+      "project": "Resume-Matcher",
+      "reason": "يقلل احتمال إدخال خبرات أو أرقام غير مدعومة ويجعل المراجعة قابلة للتدقيق."
+    },
+    {
+      "title": "فاحص تبعيات المعاينة عند أول تشغيل",
+      "project": "Yazi",
+      "reason": "يساعد المستخدم على تشخيص غياب أدوات PDF/الفيديو دون تثبيت تلقائي أو تعديل إعدادات."
+    },
+    {
+      "title": "لوحة واضحة لمسار البيانات والخصوصية",
+      "project": "Resume-Matcher",
+      "reason": "تميّز المعالجة المحلية من الإرسال إلى مزود سحابي قبل مشاركة بيانات السيرة الذاتية."
+    }
+  ]
+}
