@@ -1,0 +1,351 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-27T23:44:00Z",
+  "measuredAt": "2026-10-27T23:44:00Z",
+  "publishedToSite": false,
+  "purpose": "لقطة بحثية تراكمية مستقلة؛ لا يستهلكها الموقع مباشرة ولا تعدّل التصميم أو الشيفرة. ترتيب previousEight محفوظ.",
+  "measurementMethod": "GitHub REST repository metadata؛ stars/forks تراكمية وليست نموًا يوميًا. قيس النشاط والترخيص والفرع الافتراضي في 2026-10-27T23:44Z. أرقام المشاريع الجديدة مأخوذة من لقطة feed عند 2026-10-27T22:10:57Z؛ لم أستخدم timestamp مستقبلي أعادته API لمستودع p5.js.",
+  "historicalCatalog": {
+    "path": "site/data/library.json",
+    "entries": 31,
+    "compiledAt": "2026-10-24T10:38:36.869Z",
+    "archived": 2,
+    "inCurrentFeed": 4,
+    "notInFeed": 27,
+    "archivedKnown": [
+      "atom/atom",
+      "angular/angular.js"
+    ],
+    "note": "لم يُعدّل library.json؛ اللقطة الأصلية أقدم من هذه المراجعة."
+  },
+  "previousEight": [
+    {
+      "name": "Gradio",
+      "repo": "gradio-app/gradio",
+      "url": "https://github.com/gradio-app/gradio",
+      "stars": 43921,
+      "forks": 3650,
+      "license": "Apache-2.0",
+      "defaultBranch": "main",
+      "archived": false,
+      "pushedAt": "2026-10-27T23:35:44Z",
+      "status": "مستمر حسب بيانات المستودع",
+      "alternatives": [
+        "Streamlit",
+        "Chainlit",
+        "Panel"
+      ],
+      "measuredAt": "2026-10-27T23:44:00Z",
+      "activityCheckedAt": "2026-10-28T02:59:48Z",
+      "latestCommit": {
+        "sha": "56f0f8d9be57b0737b1f967fb90eed336e647212",
+        "date": "2026-10-27T23:33:03Z",
+        "url": "https://github.com/gradio-app/gradio/commit/56f0f8d9be57b0737b1f967fb90eed336e647212"
+      },
+      "licenseVerifiedAt": "2026-10-28T02:59:48Z",
+      "licenseVerification": "Verified against the repository's official license file; prior stars/forks measurement timestamp retained."
+    },
+    {
+      "name": "Claude-Mem",
+      "repo": "thedotmack/claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "stars": 103722,
+      "forks": 9152,
+      "license": "Apache-2.0",
+      "defaultBranch": "main",
+      "archived": false,
+      "pushedAt": "2026-10-27T20:58:16Z",
+      "status": "مستمر حسب بيانات المستودع",
+      "alternatives": [
+        "Letta",
+        "Mem0",
+        "Zep"
+      ],
+      "measuredAt": "2026-10-27T23:44:00Z",
+      "activityCheckedAt": "2026-10-28T02:59:48Z",
+      "latestCommit": {
+        "sha": "3e52e1de5dcbcce07bc5a3783cd489bf98466790",
+        "date": "2026-10-28T02:09:33Z",
+        "url": "https://github.com/thedotmack/claude-mem/commit/3e52e1de5dcbcce07bc5a3783cd489bf98466790"
+      },
+      "licenseVerifiedAt": "2026-10-28T02:59:48Z",
+      "licenseVerification": "Verified against the repository's official license file; prior stars/forks measurement timestamp retained."
+    },
+    {
+      "name": "Ultralytics",
+      "repo": "ultralytics/ultralytics",
+      "url": "https://github.com/ultralytics/ultralytics",
+      "stars": 62910,
+      "forks": 11923,
+      "license": "AGPL-3.0",
+      "defaultBranch": "main",
+      "archived": false,
+      "pushedAt": "2026-10-27T22:47:36Z",
+      "status": "مستمر حسب بيانات المستودع",
+      "alternatives": [
+        "MMDetection",
+        "Detectron2",
+        "torchvision"
+      ],
+      "measuredAt": "2026-10-27T23:44:00Z",
+      "activityCheckedAt": "2026-10-28T02:59:48Z",
+      "latestCommit": {
+        "sha": "bb3e1550dbb819bd9846d4c99f368aebe8792a0e",
+        "date": "2026-10-27T22:47:32Z",
+        "url": "https://github.com/ultralytics/ultralytics/commit/bb3e1550dbb819bd9846d4c99f368aebe8792a0e"
+      },
+      "licenseVerifiedAt": "2026-10-28T02:59:48Z",
+      "licenseVerification": "Verified against the repository's official license file; prior stars/forks measurement timestamp retained."
+    },
+    {
+      "name": "MoneyPrinterTurbo",
+      "repo": "harry0703/MoneyPrinterTurbo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "stars": 135837,
+      "forks": 21563,
+      "license": "MIT",
+      "defaultBranch": "main",
+      "archived": false,
+      "pushedAt": "2026-10-27T10:13:32Z",
+      "status": "مستمر حسب بيانات المستودع",
+      "alternatives": [
+        "خط FFmpeg/TTS مخصص",
+        "Remotion",
+        "أدوات فيديو مفتوحة المصدر"
+      ],
+      "measuredAt": "2026-10-27T23:44:00Z",
+      "activityCheckedAt": "2026-10-28T02:59:48Z",
+      "latestCommit": {
+        "sha": "bcc108bbc7c0f04f87678bd6c7f74de774d7a8fc",
+        "date": "2026-10-28T02:30:01Z",
+        "url": "https://github.com/harry0703/MoneyPrinterTurbo/commit/bcc108bbc7c0f04f87678bd6c7f74de774d7a8fc"
+      },
+      "licenseVerifiedAt": "2026-10-28T02:59:48Z",
+      "licenseVerification": "Verified against the repository's official license file; prior stars/forks measurement timestamp retained."
+    },
+    {
+      "name": "AI-For-Beginners",
+      "repo": "microsoft/AI-For-Beginners",
+      "url": "https://github.com/microsoft/AI-For-Beginners",
+      "stars": 70301,
+      "forks": 13654,
+      "license": "MIT",
+      "defaultBranch": "main",
+      "archived": false,
+      "pushedAt": "2026-10-23T23:55:14Z",
+      "status": "مستمر حسب بيانات المستودع",
+      "alternatives": [
+        "fast.ai",
+        "Dive into Deep Learning",
+        "Hugging Face course"
+      ],
+      "measuredAt": "2026-10-27T23:44:00Z",
+      "activityCheckedAt": "2026-10-28T02:59:48Z",
+      "latestCommit": {
+        "sha": "392d0df1b2647cbee104942390551f1ed9e072c8",
+        "date": "2026-09-04T15:24:51Z",
+        "url": "https://github.com/microsoft/AI-For-Beginners/commit/392d0df1b2647cbee104942390551f1ed9e072c8"
+      },
+      "licenseVerifiedAt": "2026-10-28T02:59:48Z",
+      "licenseVerification": "Verified against the repository's official license file; prior stars/forks measurement timestamp retained."
+    },
+    {
+      "name": "Bruno",
+      "repo": "usebruno/bruno",
+      "url": "https://github.com/usebruno/bruno",
+      "stars": 47879,
+      "forks": 3037,
+      "license": "MIT",
+      "defaultBranch": "main",
+      "archived": false,
+      "pushedAt": "2026-10-27T16:18:41Z",
+      "status": "مستمر حسب بيانات المستودع",
+      "alternatives": [
+        "Postman",
+        "Insomnia",
+        "HTTPie"
+      ],
+      "measuredAt": "2026-10-27T23:44:00Z",
+      "activityCheckedAt": "2026-10-28T02:59:48Z",
+      "latestCommit": {
+        "sha": "874ac540a14eb1883ab359b4438487add41b8b03",
+        "date": "2026-10-27T16:18:40Z",
+        "url": "https://github.com/usebruno/bruno/commit/874ac540a14eb1883ab359b4438487add41b8b03"
+      },
+      "licenseVerifiedAt": "2026-10-28T02:59:48Z",
+      "licenseVerification": "Verified against the repository's official license file; prior stars/forks measurement timestamp retained."
+    },
+    {
+      "name": "Keras",
+      "repo": "keras-team/keras",
+      "url": "https://github.com/keras-team/keras",
+      "stars": 64392,
+      "forks": 19807,
+      "license": "Apache-2.0",
+      "defaultBranch": "master",
+      "archived": false,
+      "pushedAt": "2026-10-27T23:29:20Z",
+      "status": "مستمر حسب بيانات المستودع",
+      "alternatives": [
+        "PyTorch",
+        "JAX",
+        "TensorFlow Core"
+      ],
+      "measuredAt": "2026-10-27T23:44:00Z",
+      "activityCheckedAt": "2026-10-28T02:59:48Z",
+      "latestCommit": {
+        "sha": "7efab4a60f5930fa81b0db15ed4ec6e4925e0c45",
+        "date": "2026-10-27T23:29:19Z",
+        "url": "https://github.com/keras-team/keras/commit/7efab4a60f5930fa81b0db15ed4ec6e4925e0c45"
+      },
+      "licenseVerifiedAt": "2026-10-28T02:59:48Z",
+      "licenseVerification": "Verified against the repository's official license file; prior stars/forks measurement timestamp retained."
+    },
+    {
+      "name": "sherpa-onnx",
+      "repo": "k2-fsa/sherpa-onnx",
+      "url": "https://github.com/k2-fsa/sherpa-onnx",
+      "stars": 15550,
+      "forks": 1820,
+      "license": "Apache-2.0",
+      "defaultBranch": "master",
+      "archived": false,
+      "pushedAt": "2026-10-27T12:50:50Z",
+      "status": "مستمر حسب بيانات المستودع",
+      "alternatives": [
+        "whisper.cpp",
+        "Vosk",
+        "ONNX Runtime pipelines"
+      ],
+      "measuredAt": "2026-10-27T23:44:00Z",
+      "activityCheckedAt": "2026-10-28T02:59:48Z",
+      "latestCommit": {
+        "sha": "2505cca5d7d5806bf3bdbd1db717100123fac005",
+        "date": "2026-10-28T01:41:55Z",
+        "url": "https://github.com/k2-fsa/sherpa-onnx/commit/2505cca5d7d5806bf3bdbd1db717100123fac005"
+      },
+      "licenseVerifiedAt": "2026-10-28T02:59:48Z",
+      "licenseVerification": "Verified against the repository's official license file; prior stars/forks measurement timestamp retained."
+    }
+  ],
+  "newlyEnrichedProjects": [
+    {
+      "id": "92022b258211b4ce35",
+      "name": "InvokeAI",
+      "repo": "invoke-ai/InvokeAI",
+      "url": "https://github.com/invoke-ai/InvokeAI",
+      "stars": 28889,
+      "forks": 3083,
+      "license": "Apache-2.0",
+      "archived": false,
+      "status": "مستمر في لقطة GitHub",
+      "measuredAt": "2026-10-27T22:10:57Z",
+      "state": "إثراء معد على الفرع؛ لم يُنشر بعد"
+    },
+    {
+      "id": "7c423a3fdda80e9dca",
+      "name": "p5.js",
+      "repo": "processing/p5.js",
+      "url": "https://github.com/processing/p5.js",
+      "stars": 24218,
+      "forks": 3884,
+      "license": "LGPL-2.1",
+      "archived": false,
+      "status": "مستمر في لقطة التغذية؛ metadata API أعاد pushed_at لاحقًا من وقت هذه الدورة، لذلك لم يُستخدم ذلك timestamp",
+      "measuredAt": "2026-10-27T22:10:57Z",
+      "state": "إثراء معد على الفرع؛ لم يُنشر بعد"
+    }
+  ],
+  "alternativesAndClassification": {
+    "continue": {
+      "repo": "continuedev/continue",
+      "status": "README يصرّح أن المستودع read-only وغير مُصان بنشاط؛ لا أصفه مؤرشفًا رسميًا من GitHub API.",
+      "alternatives": [
+        "Cline",
+        "Aider",
+        "Roo Code"
+      ],
+      "note": "تحتاج حالة البدائل إلى مراجعة مستقلة قبل أي توصية نهائية."
+    },
+    "historicalArchived": [
+      "atom/atom",
+      "angular/angular.js"
+    ],
+    "activePreviousEight": "كل المستودعات الثمانية في previousEight تعيد archived=false ولديها pushed_at حديث نسبيًا."
+  },
+  "displayRequirements": {
+    "publishedToSite": false,
+    "forDevelopmentAssistant": [
+      "لا تغيّر الشيفرة أو التصميم ضمن هذه المهمة.",
+      "اعرض overview وrequirements وquickStart وlimitations وsources بوضوح.",
+      "أظهر ترخيص التطبيق منفصلًا عن تراخيص النماذج أو المكونات الإضافية.",
+      "اعرض وقت قياس النجوم/التفرعات ووقت آخر commit منفصلين.",
+      "اعرض testEvidence فقط عند وجود دليل اختبار فعلي؛ لا تولّده تلقائيًا.",
+      "احفظ ترتيب improvements وspinoffs وreligious، ولا تعِد ترتيب الأفكار القديمة."
+    ]
+  },
+  "generatedAt": "2026-10-28T02:59:48Z",
+  "activityCheckedAt": "2026-10-28T02:59:48Z",
+  "catalogSnapshot": {
+    "total": 31,
+    "archived": 2,
+    "inCurrentFeed": 4,
+    "notInFeed": 27,
+    "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+    "note": "Historical catalog metrics were not relabeled as current; existing measurement timestamp retained."
+  },
+  "newProjects": [
+    {
+      "name": "MLX-Audio",
+      "repository": "Blaizzy/mlx-audio",
+      "url": "https://github.com/Blaizzy/mlx-audio",
+      "starsDisplayed": "8.1k",
+      "forksDisplayed": "776",
+      "metricsMeasuredAt": "2026-10-28T02:59:48Z",
+      "license": "MIT",
+      "licenseSource": "https://github.com/Blaizzy/mlx-audio/blob/main/LICENSE",
+      "latestCommit": {
+        "sha": "6ce7283be6f15f0cba37e839e73bfa4a08bbf040",
+        "date": "2026-10-27T22:36:18Z",
+        "url": "https://github.com/Blaizzy/mlx-audio/commit/6ce7283be6f15f0cba37e839e73bfa4a08bbf040"
+      },
+      "classification": "maintained_active",
+      "requirements": "Python >=3.10; best-supported path is Apple Silicon/macOS with MLX; model-specific weights and language support vary.",
+      "alternatives": [
+        "whisper.cpp",
+        "eSpeak NG",
+        "Piper"
+      ],
+      "publishedToSite": false
+    },
+    {
+      "name": "eSpeak NG",
+      "repository": "espeak-ng/espeak-ng",
+      "url": "https://github.com/espeak-ng/espeak-ng",
+      "starsDisplayed": "7.0k",
+      "forksDisplayed": "1.3k",
+      "metricsMeasuredAt": "2026-10-28T02:59:48Z",
+      "license": "GPL-3.0-or-later for core, with additional license files for bundled components",
+      "licenseSource": "https://github.com/espeak-ng/espeak-ng/blob/master/COPYING",
+      "latestCommit": {
+        "sha": "ba90c8e9f440ad544f674a790bb5f53878b6ffc5",
+        "date": "2026-09-22T10:55:14Z",
+        "url": "https://github.com/espeak-ng/espeak-ng/commit/ba90c8e9f440ad544f674a790bb5f53878b6ffc5"
+      },
+      "classification": "maintained_recent_activity_slower_not_archived",
+      "requirements": "Local TTS; no API key. Arabic voice documentation specifies fully diacritized text; build-from-source uses CMake/compiler.",
+      "alternatives": [
+        "Piper",
+        "OS-native TTS",
+        "MLX-Audio on Apple Silicon"
+      ],
+      "publishedToSite": false
+    }
+  ],
+  "reviewNotes": [
+    "تمت مراجعة حالة المستودعات الثمانية السابقة عبر أحدث commit ظاهر وملف الترخيص الرسمي؛ لم تُشغّل المشاريع.",
+    "AI-For-Beginners لم يظهر له commit أحدث من 2026-09-04؛ غير مصنف مؤرشفًا، لكن نشاطه أبطأ من بقية القائمة.",
+    "مقاييس النجوم/التفرعات للمشاريع الثمانية السابقة تبقى بتاريخها السابق 2026-10-27T23:44:00Z؛ لم تُحدّث أرقامها بلا قياس موثوق.",
+    "المشروعان الجديدان موجودان في feed ويُثرَيان بمعرفيهما الأصليين؛ هذه اللقطة البحثية منفصلة وغير منشورة."
+  ]
+}
