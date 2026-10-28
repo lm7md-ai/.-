@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-28T11:51:00Z",
+  "measuredAt": "2026-10-28T11:51:00Z",
+  "publishedToSite": false,
+  "purpose": "مراجعة بحثية غير منشورة للمشاريع الثمانية السابقة ومشروعين جديدين.",
+  "historicalCatalog": {
+    "path": "site/data/library.json",
+    "entries": 31,
+    "compiledAt": "2026-10-24T10:38:36.869Z",
+    "archived": 2,
+    "inCurrentFeed": 4,
+    "notInFeed": 27,
+    "archivedKnown": [
+      "atom/atom",
+      "angular/angular.js"
+    ],
+    "note": "لم يُعدّل الكتالوج المنشور."
+  },
+  "previousEight": [
+    {
+      "name": "Gradio",
+      "url": "https://github.com/gradio-app/gradio",
+      "stars": 43927,
+      "forks": 3650,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-28T04:43:53Z",
+      "alternatives": [
+        "Streamlit",
+        "Chainlit",
+        "Panel"
+      ]
+    },
+    {
+      "name": "Claude-Mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "stars": 103868,
+      "forks": 9166,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-28T05:41:16Z",
+      "alternatives": [
+        "Letta",
+        "Mem0",
+        "Zep"
+      ]
+    },
+    {
+      "name": "Ultralytics",
+      "url": "https://github.com/ultralytics/ultralytics",
+      "stars": 62931,
+      "forks": 11928,
+      "license": "AGPL-3.0",
+      "archived": false,
+      "pushedAt": "2026-10-28T09:44:55Z",
+      "alternatives": [
+        "MMDetection",
+        "Detectron2",
+        "torchvision"
+      ]
+    },
+    {
+      "name": "MoneyPrinterTurbo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "stars": 136006,
+      "forks": 21596,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-28T03:38:17Z",
+      "alternatives": [
+        "FFmpeg/TTS pipeline",
+        "Remotion"
+      ]
+    },
+    {
+      "name": "AI-For-Beginners",
+      "url": "https://github.com/microsoft/AI-For-Beginners",
+      "stars": 70316,
+      "forks": 13660,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-23T23:55:14Z",
+      "status": "أبطأ نشاطًا نسبيًا لكنه غير مؤرشف",
+      "alternatives": [
+        "fast.ai",
+        "Dive into Deep Learning",
+        "Kaggle Learn"
+      ]
+    },
+    {
+      "name": "Bruno",
+      "url": "https://github.com/usebruno/bruno",
+      "stars": 47896,
+      "forks": 3038,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-28T10:31:23Z",
+      "alternatives": [
+        "Postman",
+        "Insomnia",
+        "Hoppscotch"
+      ]
+    },
+    {
+      "name": "Keras",
+      "url": "https://github.com/keras-team/keras",
+      "stars": 64391,
+      "forks": 19808,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-27T23:29:20Z",
+      "alternatives": [
+        "PyTorch",
+        "JAX",
+        "TensorFlow low-level APIs"
+      ]
+    },
+    {
+      "name": "sherpa-onnx",
+      "url": "https://github.com/k2-fsa/sherpa-onnx",
+      "stars": 15567,
+      "forks": 1823,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-28T08:18:03Z",
+      "alternatives": [
+        "whisper.cpp",
+        "Vosk",
+        "ONNX Runtime integrations"
+      ]
+    }
+  ],
+  "newProjects": [
+    {
+      "name": "REA",
+      "url": "https://github.com/morluto/rea",
+      "id": "458c04cd04ca960bc3",
+      "stars": 399927,
+      "forks": 100327,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-28T11:46:46Z",
+      "reviewedFiles": [
+        "README.md",
+        "docs/installation.md",
+        "DISCLAIMER.md",
+        "LICENSE",
+        "package.json"
+      ],
+      "overview": "تحليل محلي عبر MCP وCLI مع أدلة وقيود؛ استخدام مزدوج ويقتصر على البرامج المملوكة أو المصرح بها.",
+      "requirements": "Node.js مدعوم وnpm؛ محرك أصلي اختياري؛ مزود الوكيل أو Hopper قد يضيف تكلفة.",
+      "quickStart": "npx rea-agents setup مع مراجعة تغييرات الإعدادات؛ لم يُشغّل.",
+      "alternatives": [
+        "Ghidra",
+        "IDA",
+        "Hopper"
+      ],
+      "testEvidence": null
+    },
+    {
+      "name": "VoiceStudio",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "id": "da8ac24508773f981b",
+      "stars": 92229,
+      "forks": 10205,
+      "license": "AGPL-3.0",
+      "archived": false,
+      "pushedAt": "2026-10-28T11:48:09Z",
+      "reviewedFiles": [
+        "README.md",
+        "LICENSE",
+        "docs/install/linux.md",
+        "docs/install/script.md",
+        "docs/performance.md",
+        "docs/engines/README.md"
+      ],
+      "overview": "استوديو صوت محلي للتوليد والدبلجة والتفريغ؛ النماذج تستهلك مساحة وحوسبة ولا يلزم سحاب للمسار الأساسي.",
+      "requirements": "Linux x86_64 وواجهة رسومية ونحو 10GB مساحة حرة وفق الدليل؛ CPU أبطأ؛ تراخيص منفصلة لبعض النماذج.",
+      "quickStart": "نزّل إصدارًا رسميًا وتحقق من SHA256SUMS؛ استخدم صوتًا مأذونًا به؛ لم يُشغّل.",
+      "alternatives": [
+        "محركات TTS محلية",
+        "Whisper.cpp وFFmpeg",
+        "خدمات سحابية اختيارية"
+      ],
+      "testEvidence": null
+    }
+  ],
+  "ideaCounts": {
+    "REA": {
+      "improvements": 2,
+      "spinoffs": 2,
+      "religious": 0
+    },
+    "VoiceStudio": {
+      "improvements": 2,
+      "spinoffs": 2,
+      "religious": 0
+    },
+    "total": 8
+  },
+  "developerDisplayRequirements": [
+    "اعرض overview وrequirements وquickStart وlimitations دون تعديل الواجهة.",
+    "اعرض الترخيص وحالة الأرشفة ووقت القياس.",
+    "احفظ معرفات feed الأصلية وروابطها.",
+    "اعرض كل حقول الاقتراحات كاملة؛ لا تعرض testEvidence لأن المشروعين لم يُشغّلا.",
+    "استخدم REA فقط ضمن صلاحية واضحة وVoiceStudio مع أصوات مأذون بها؛ لا تغييرات على الشيفرة أو workflows."
+  ]
+}
