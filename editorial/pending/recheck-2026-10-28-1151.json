@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-28T11:51:00Z",
+  "publishedToSite": false,
+  "baseMainSha": "43032ee466e1bbb304aeea45e1d2c41c2a097dd0",
+  "currentSnapshot": {
+    "feedGeneratedAt": "2026-10-28T07:04:04+00:00",
+    "feedItems": 800,
+    "editorialEntriesBefore": 381,
+    "editorialEntriesAfter": 395,
+    "seenIds": 1517,
+    "editorialActiveExact": 255,
+    "editorialOutsideFeed": 126,
+    "editorialUrlMismatches": 0
+  },
+  "incomingAudit": {
+    "filesBefore": 40,
+    "rowsBefore": 382,
+    "uniqueIdsBefore": 381,
+    "duplicateRows": 1,
+    "duplicateDetails": {
+      "id": "853c63f738f0cecf3b",
+      "sameUrl": true,
+      "status": "imported"
+    },
+    "uniqueImportedIds": 378,
+    "alreadyImportedRows": 379,
+    "seenOnlyAbsentFromFeedAndEditorial": 3,
+    "idUrlMismatches": 0,
+    "editorialUrlMismatches": 0,
+    "confirmedExpired": 0,
+    "needsCorrection": 0
+  },
+  "pendingRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "title": "NVIDIA OpenShell",
+      "seen": true,
+      "feedPresent": false,
+      "editorialPresent": false,
+      "classification": "pending_seen_only"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "title": "Canva Craft",
+      "seen": true,
+      "feedPresent": false,
+      "editorialPresent": false,
+      "classification": "pending_seen_only"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "title": "1Password agent sign-in",
+      "seen": true,
+      "feedPresent": false,
+      "editorialPresent": false,
+      "classification": "pending_seen_only"
+    }
+  ],
+  "newBatch": {
+    "path": "editorial/incoming/nabdh-editorial-2026-10-28-1151.json",
+    "entries": 14,
+    "news": 12,
+    "projects": 2,
+    "allExactCurrentFeedIdUrl": true,
+    "allAbsentFromEditorialBeforeBatch": true,
+    "basisCounts": {
+      "article": 1,
+      "metadata": 11,
+      "readme": 2
+    },
+    "testEvidence": "لم تُشغّل المشاريع."
+  },
+  "afterPlannedMerge": {
+    "incomingFiles": 41,
+    "incomingRows": 396,
+    "incomingUniqueIds": 395,
+    "editorialEntries": 395,
+    "activeEditorialExactCurrentFeed": 269,
+    "outsideFeedEditorial": 126,
+    "seenOnlyPending": 3,
+    "activeUrlMismatches": 0
+  },
+  "validation": {
+    "localOfficialCommandsExecuted": false,
+    "structuralEquivalentPrecheck": "pass",
+    "commandsNotExecutedLocally": [
+      "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-10-28-1151.json",
+      "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-10-28-1151.json",
+      "python -m unittest discover -s tests -v"
+    ],
+    "reason": "لا توجد نسخة ملفات محلية قابلة للتنفيذ؛ جرى فحص blobs بنيويًا. يلزم انتظار CI الرسمي."
+  },
+  "protectedPaths": [
+    "site/data/feed.json",
+    "site/data/seen.json",
+    "site/index.html",
+    "site/styles.css",
+    "site/app.js",
+    "site/ideas.js",
+    ".github/workflows/check.yml",
+    ".github/workflows/update-and-deploy.yml"
+  ],
+  "note": "ملفات incoming/pending/library توثيق بحثي غير معروض بالموقع؛ التغيير في بيانات الموقع يقتصر على editorial.json مع الحفاظ على السجلات القديمة."
+}
