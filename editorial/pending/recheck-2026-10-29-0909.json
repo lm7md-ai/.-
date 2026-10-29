@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-29T06:09:35Z",
+  "generatedAtRiyadh": "2026-10-29T09:09:35+03:00",
+  "published": false,
+  "siteContent": false,
+  "purpose": "تدقيق متابعة بعد تحديث main والنشر الآلي؛ لا يحتوي على مادة تحريرية جديدة ولا يغير بيانات الموقع.",
+  "repositorySnapshot": {
+    "mainSha": "343d71a000841df93b6ebb4486fda18a9d5c1258",
+    "mainCommit": "data: refresh deduplicated technology feed",
+    "mainCommittedAt": "2026-10-29T06:07:28Z",
+    "priorEditorialPR": 53,
+    "priorEditorialMergeSha": "9a842003b1422d76f07e728fc880f37c7428b9f8",
+    "priorEditorialMergedAt": "2026-10-29T06:06:54Z",
+    "workflowRun": 40827274470,
+    "workflowRunUrl": "https://github.com/lm7md-ai/.-/actions/runs/40827274470",
+    "workflowConclusion": "success"
+  },
+  "currentData": {
+    "feedPath": "site/data/feed.json",
+    "feedGeneratedAt": "2026-10-29T06:07:08+00:00",
+    "feedItems": 800,
+    "feedNews": 700,
+    "feedProjects": 100,
+    "feedNewItems": 29,
+    "editorialPath": "site/data/editorial.json",
+    "editorialEntries": 462,
+    "exactActiveEditorialEntries": 282,
+    "editorialEntriesOutsideCurrentFeed": 180,
+    "currentFeedItemsWithoutExactEditorial": 518,
+    "statusPath": "site/data/status.json",
+    "status": "ok",
+    "lastSuccessfulAt": "2026-10-29T06:07:08+00:00",
+    "seenPath": "site/data/seen.json",
+    "seenWasNotModifiedByThisAudit": true
+  },
+  "incomingAudit": {
+    "directory": "editorial/incoming",
+    "directorySnapshotSha": "343d71a000841df93b6ebb4486fda18a9d5c1258",
+    "files": 46,
+    "rowOccurrences": 463,
+    "uniqueIds": 462,
+    "duplicateRows": 1,
+    "duplicate": {
+      "id": "853c63f738f0cecf3b",
+      "occurrences": 2,
+      "urlsIdentical": true,
+      "state": "مستورد ومطابق؛ احتُفظ بالهوية الأصلية"
+    },
+    "classification": {
+      "exactCurrentFeedIdAndUrlRows": 280,
+      "alreadyInEditorialExactIdAndUrlRows": 460,
+      "historicalEditorialRowsOutsideCurrentFeedWithoutConfirmedIdentityCollision": 179,
+      "currentFeedUrlUnderDifferentIncomingIdRows": 1,
+      "absentFromCurrentFeedAndEditorialRows": 3,
+      "eligibleUnimportedRows": 0,
+      "confirmedExpiredNews": 0,
+      "historicalRowsNotConfirmedExpired": 179
+    },
+    "identityCollision": {
+      "incomingId": "7a99eca9b2ce14d9f5",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "currentFeedIdForSameUrl": "e0cbbf211a55e79f34",
+      "oldEditorialEntryExistsAtIncomingId": true,
+      "currentEditorialEntryExistsAtCurrentFeedId": true,
+      "decision": "لا استيراد ولا توليد هوية بديلة؛ الإبقاء على السجلين الحاليين وتوثيق التعارض لمراجعة مستقلة"
+    },
+    "structurallyChecked": {
+      "jsonParsedRows": 463,
+      "missingRequiredEditorialFields": 0,
+      "invalidHttpsSourceReferences": 0,
+      "note": "هذا فحص بنيوي مكافئ جزئيًا للملفات التاريخية: JSON والحقول الأساسية ومراجع HTTPS. لم تُنفذ نسخة محلية من validator على كل ملف تاريخي؛ المحتوى المدمج الحالي اجتاز validator الرسمي في GitHub Actions."
+    }
+  },
+  "pendingRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "title": "OpenShell من NVIDIA: بيئات معزولة للوكلاء بصلاحيات قابلة للمراجعة",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "seenIdPresent": true,
+      "currentFeedPresent": false,
+      "currentEditorialPresent": false,
+      "decision": "معلق؛ لا تستورد حتى يظهر id وurl نفسيهما في التغذية الحالية."
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "title": "Canva Craft",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "seenIdPresent": true,
+      "currentFeedPresent": false,
+      "currentEditorialPresent": false,
+      "decision": "معلق؛ لا تنشئ معرفًا بديلًا بالعنوان أو الرابط."
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "title": "1Password agent sign-in",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "seenIdPresent": true,
+      "currentFeedPresent": false,
+      "currentEditorialPresent": false,
+      "decision": "معلق؛ أعد فحصه فقط بعد ظهوره بالهوية الأصلية في التغذية."
+    }
+  ],
+  "resolvedCheck": {
+    "id": "d9330c307f7dbfb63c",
+    "title": "OpenHands Agent Canvas",
+    "url": "https://github.com/OpenHands/OpenHands",
+    "currentFeedPresent": true,
+    "currentEditorialPresent": true,
+    "exactIdUrlMatch": true,
+    "decision": "ليس سجلًا مفقودًا؛ لا تكرر استيراده."
+  },
+  "latestContentCycle": {
+    "incomingFile": "editorial/incoming/nabdh-editorial-2026-10-29-0855.json",
+    "rows": 12,
+    "news": 10,
+    "projects": 2,
+    "allRowsExactInCurrentFeedAndEditorial": true,
+    "proposalCounts": {
+      "improvements": 6,
+      "spinoffs": 4,
+      "religious": 2,
+      "total": 12
+    },
+    "noAdditionalContentThisRun": true,
+    "reason": "كل عناصر الوارد المؤهلة مستوردة بالفعل، ولا توجد صفوف جديدة غير مستوردة تطابق id وurl حرفيًا."
+  },
+  "researchLibrary": {
+    "path": "editorial/library/catalog-2026-10-29-0559.json",
+    "projects": 31,
+    "nonArchived": 29,
+    "archived": 2,
+    "previousEightReviewedInLatestEditorialCycle": true,
+    "latestReviewPath": "editorial/library/review-2026-10-29-0855.json",
+    "published": false,
+    "testEvidence": null
+  },
+  "validation": {
+    "localPythonAvailable": false,
+    "localCommandExecuted": false,
+    "unittestCommand": "python -m unittest discover -s tests -v",
+    "unittestResult": "GitHub Actions: 30 tests passed; Ran 30 tests in 0.053s; OK",
+    "officialEditorialValidation": "GitHub Actions reported Validated 462 editorial entries",
+    "javascriptSyntaxChecks": "success",
+    "deployStep": "success",
+    "importCommand": "python scripts/editorial.py import",
+    "importExecutedThisRun": false,
+    "importReason": "لا توجد أي سجلات مؤهلة جديدة للاستيراد؛ تجنب الاستيراد الذي قد يستبدل بطاقات موجودة."
+  },
+  "liveVerification": {
+    "publicEditorialJsonUrl": "https://lm7md-ai.github.io/.-/data/editorial.json",
+    "publicSiteUrl": "https://lm7md-ai.github.io/.-/",
+    "browserResult": "تعذر الجلب عبر أداة المتصفح برسالة DisabledError",
+    "liveJsonConfirmed": false,
+    "detailPagesConfirmed": false,
+    "note": "نجاح GitHub Actions يثبت نجاح خطوة النشر الآلية، لكنه لا يثبت وحده ظهور كل سجل في واجهة الموقع."
+  },
+  "changeGuard": {
+    "thisAuditChangesOnlyThisReport": true,
+    "siteCodeUntouched": true,
+    "siteDesignUntouched": true,
+    "workflowsUntouched": true,
+    "deploymentSettingsUntouched": true,
+    "feedJsonNotEditedByThisAudit": true,
+    "seenJsonNotEditedByThisAudit": true,
+    "editorialJsonNotEditedByThisAudit": true
+  },
+  "sourceLinks": [
+    {
+      "title": "Latest main commit",
+      "url": "https://github.com/lm7md-ai/.-/commit/343d71a000841df93b6ebb4486fda18a9d5c1258"
+    },
+    {
+      "title": "PR #53 — latest content cycle",
+      "url": "https://github.com/lm7md-ai/.-/pull/53"
+    },
+    {
+      "title": "PR #1",
+      "url": "https://github.com/lm7md-ai/.-/pull/1"
+    },
+    {
+      "title": "PR #2",
+      "url": "https://github.com/lm7md-ai/.-/pull/2"
+    },
+    {
+      "title": "Current editorial data",
+      "url": "https://github.com/lm7md-ai/.-/blob/main/site/data/editorial.json"
+    },
+    {
+      "title": "Current feed data",
+      "url": "https://github.com/lm7md-ai/.-/blob/main/site/data/feed.json"
+    },
+    {
+      "title": "Existing pending report",
+      "url": "https://github.com/lm7md-ai/.-/blob/main/editorial/pending/recheck-2026-10-29-0855.json"
+    }
+  ]
+}
