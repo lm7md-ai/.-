@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "reportType": "editorial-backlog-recheck",
+  "reviewedAt": "2026-10-29T03:19:26+03:00",
+  "mainHeadBefore": "b2169b123321ec1251df9679a589e93d5afa55d1",
+  "currentState": {
+    "feedGeneratedAt": "2026-10-29T00:07:23+00:00",
+    "feedItems": 800,
+    "feedNews": 700,
+    "feedProjects": 100,
+    "feedNewItems": 12,
+    "editorialEntriesBefore": 423,
+    "seenIds": 1686,
+    "statusLastAttemptAt": "2026-10-29T00:07:23+00:00",
+    "statusLastSuccessfulAt": "2026-10-29T00:07:23+00:00",
+    "statusState": "ok",
+    "statusCollected": 395,
+    "activeEditorialExactIdUrl": 252,
+    "editorialOutsideCurrentFeed": 171,
+    "editorialUrlMismatches": 0,
+    "unEnrichedFeedBefore": 548,
+    "unEnrichedKindsBefore": {
+      "news": 526,
+      "project": 22
+    }
+  },
+  "incomingAudit": {
+    "filesChecked": 43,
+    "rowsChecked": 424,
+    "uniqueIds": 423,
+    "duplicateRows": 1,
+    "duplicate": {
+      "id": "853c63f738f0cecf3b",
+      "urlsIdentical": true,
+      "decision": "retain; no alternate identity generated"
+    },
+    "rowsMatchingExistingEditorialExactIdUrl": 421,
+    "uniqueIdsAlreadyInEditorial": 420,
+    "seenOnlyRecords": 3,
+    "urlMismatches": 0,
+    "invalidRows": 1,
+    "confirmedExpired": 0,
+    "needsCorrection": 1,
+    "note": "NVIDIA OpenShell has no entry-level url field; its source list contains a candidate URL but cannot replace the canonical url field. Canva Craft and 1Password have entry URLs but their exact IDs and URLs are absent from the current feed. No alternate IDs were generated."
+  },
+  "pendingRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "name": "NVIDIA OpenShell",
+      "candidateUrlFromSource": "https://github.com/NVIDIA/OpenShell",
+      "entryUrlFieldPresent": false,
+      "seen": true,
+      "feedIdPresent": false,
+      "exactUrlPresent": false,
+      "editorialPresent": false,
+      "classification": "needs-correction-and-out-of-feed",
+      "decision": "Keep pending; repair canonical entry url and recheck against a fresh feed before import."
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "name": "Canva Craft",
+      "entryUrl": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "entryUrlFieldPresent": true,
+      "seen": true,
+      "feedIdPresent": false,
+      "exactUrlPresent": false,
+      "editorialPresent": false,
+      "classification": "out-of-feed-unverified-expiry",
+      "decision": "Keep pending; do not import while exact id/url is absent from the current feed."
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "name": "1Password agent sign-in",
+      "entryUrl": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "entryUrlFieldPresent": true,
+      "seen": true,
+      "feedIdPresent": false,
+      "exactUrlPresent": false,
+      "editorialPresent": false,
+      "classification": "out-of-feed-unverified-expiry",
+      "decision": "Keep pending; do not import while exact id/url is absent from the current feed."
+    }
+  ],
+  "newBatch": {
+    "path": "editorial/incoming/nabdh-editorial-2026-10-29-0319.json",
+    "entries": 14,
+    "news": 12,
+    "projects": 2,
+    "exactCurrentFeedIdUrlMatches": 14,
+    "allAbsentFromEditorialBeforeBatch": true,
+    "structuralValidation": "passed in authoring runtime; official CI validation and tests still required",
+    "officialValidateLocallyExecuted": false,
+    "officialImportLocallyExecuted": false
+  },
+  "postMergeExpected": {
+    "editorialEntries": 437,
+    "incomingFiles": 44,
+    "incomingRows": 438,
+    "incomingUniqueIds": 437,
+    "activeEditorialExactIdUrl": 266,
+    "editorialOutsideCurrentFeed": 171,
+    "editorialUrlMismatches": 0,
+    "unEnrichedFeedItems": 534
+  },
+  "historicalLibrary": {
+    "path": "site/data/library.json",
+    "publishedCatalogEntries": 31,
+    "archivedEntries": 2,
+    "currentFeedUrlMatches": 4,
+    "outsideCurrentFeed": 27,
+    "compiledAt": "2026-10-24T10:38:36.869Z",
+    "metricsNotRefreshedForAll31": true,
+    "note": "The published catalog was left unchanged; this run records a separate research review and does not claim fresh metrics for all catalog entries."
+  },
+  "protectedPathsUnchangedByDesign": [
+    "site/data/feed.json",
+    "site/data/seen.json",
+    "site/data/library.json",
+    "site/app.js",
+    "site/ideas.js",
+    ".github/workflows/*",
+    "docs/*",
+    "scripts/*"
+  ],
+  "localCommandsNotExecuted": [
+    "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-10-29-0319.json",
+    "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-10-29-0319.json",
+    "python -m unittest discover -s tests -v"
+  ],
+  "publishStatus": "pending PR CI; GitHub Pages direct fetch was unavailable in this runtime, so live publication must be checked separately."
+}
