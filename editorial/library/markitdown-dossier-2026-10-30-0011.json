@@ -1,0 +1,236 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-30T00:11:07+03:00",
+  "published": false,
+  "siteVisible": false,
+  "status": "research-only; not published",
+  "project": {
+    "name": "MarkItDown",
+    "repository": "https://github.com/microsoft/markitdown",
+    "officialDocs": "https://github.com/microsoft/markitdown/blob/main/packages/markitdown/README.md",
+    "inCurrentFeed": false,
+    "feedId": null
+  },
+  "officialStatus": {
+    "archived": false,
+    "disabled": false,
+    "license": "MIT",
+    "defaultBranch": "main",
+    "stars": 192881,
+    "forks": 14429,
+    "openIssues": 767,
+    "pushedAt": "2026-10-28T15:33:14Z",
+    "updatedAt": "2026-10-29T21:14:05Z",
+    "metricsMeasuredAt": "2026-10-30T00:11:07+03:00",
+    "measurementSource": "GitHub repository API"
+  },
+  "overview": "أداة Python وسطر أوامر لتحويل ملفات PDF وWord وPowerPoint وExcel والصور والصوت وHTML وCSV وJSON وXML وZIP وEPUB وبعض الرسائل ومصادر الفيديو إلى Markdown. الهدف تجهيز المحتوى للفهرسة والتحليل ومسارات LLM، لا إعادة إنتاج التنسيق المرئي بدقة مطبعية.",
+  "requirements": "Python >=3.10 و<3.15 وفق pyproject.toml. يمكن تثبيت extras محددة مثل pdf وdocx وpptx بدل [all]. التحويل الأساسي محلي ولا يتطلب مفتاح نموذج؛ بعض الميزات الاختيارية تحتاج أدوات أو خدمات خارجية.",
+  "quickStart": "أنشئ بيئة افتراضية، فعّلها، ثم نفّذ: python -m pip install 'markitdown[pdf,docx,pptx]'؛ وبعدها markitdown sample.pdf -o sample.md. هذه خطوات من التوثيق ولم تُنفذ في هذه الدورة.",
+  "costModel": "الترخيص MIT والتحويل الأساسي محلي ومجاني. تثبيت [all] يزيد حجم الاعتمادات. ميزات Azure Document Intelligence أو LLM/OCR أو التفريغ الصوتي والفيديو قد تتطلب اتصالًا ومفاتيح ومصاريف مزود خارجي.",
+  "licenseReview": "ملف LICENSE الجذري يعلن MIT؛ هذه مراجعة أولية وليست استشارة قانونية. راجع تراخيص الإضافات والاعتمادات والعلامات التجارية منفصلة.",
+  "alternatives": [
+    {
+      "name": "Pandoc",
+      "url": "https://pandoc.org/",
+      "note": "تحويل مستندات وصيغ markup."
+    },
+    {
+      "name": "PyMuPDF",
+      "url": "https://pymupdf.readthedocs.io/en/latest/",
+      "note": "استخراج PDF والتحكم في الصفحات والنص."
+    },
+    {
+      "name": "python-docx",
+      "url": "https://python-docx.readthedocs.io/en/latest/",
+      "note": "معالجة DOCX برمجيًا."
+    }
+  ],
+  "limitations": "المخرجات موجهة للتحليل وليس للتحويل عالي الدقة؛ الجداول والصور والمعادلات واتجاه RTL قد تفقد بعض البنية. الأداة تعمل بصلاحيات العملية الحالية؛ افحص الملفات غير الموثوقة وعطّل الإضافات غير اللازمة. لم أختبر المشروع.",
+  "improvements": [
+    {
+      "title": "مجموعة اختبار لجودة المستندات العربية",
+      "problem": "قد تتشوّه الجداول واتجاه RTL والمعادلات عند التحويل إلى Markdown دون قياس ثابت.",
+      "approach": "إنشاء مجموعة ملفات مرخصة تشمل PDF وDOCX وXLSX بالعربية، مع مخرجات مرجعية ومقاييس لبنية العناوين والجداول والروابط.",
+      "stack": "Python، pytest، MarkItDown، PyMuPDF.",
+      "steps": [
+        "اجمع ملفات عامة مرخصة ومتوازنة بين الصيغ.",
+        "عرّف مخرجات Markdown مرجعية لكل ملف.",
+        "احسب دقة العناوين والخلايا والروابط واتجاه النص.",
+        "شغّل الاختبارات مع كل إصدار واحتفظ بتقرير فروق."
+      ],
+      "metric": "نسبة الاحتفاظ بالعناوين والخلايا والروابط ومعدل الانحدار لكل إصدار.",
+      "difficulty": "متوسط؛ تقدير تحريري.",
+      "risks": "حقوق الملفات المرجعية وصعوبة تقييم التنسيق الدلالي تلقائيًا.",
+      "sources": [
+        {
+          "title": "MarkItDown الرسمي",
+          "url": "https://github.com/microsoft/markitdown"
+        },
+        {
+          "title": "متطلبات الحزمة",
+          "url": "https://github.com/microsoft/markitdown/blob/main/packages/markitdown/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "title": "تحويل دفعي محلي مع سجل تدقيق",
+      "problem": "تحويل مجلدات كاملة قد يخفي الملفات الفاشلة أو يخلط المخرجات بالمدخلات.",
+      "approach": "غلاف محلي يكتب manifest لكل ملف يتضمن SHA-256 ونوعه ووقت التحويل والتحذيرات ومسار المخرج، دون رفع الملفات إلى السحابة.",
+      "stack": "Python، pathlib، hashlib، SQLite اختياري، MarkItDown.",
+      "steps": [
+        "حدد مجلدي إدخال وإخراج منفصلين.",
+        "احسب بصمة كل ملف وسجل نوعه قبل التحويل.",
+        "عالج أخطاء كل ملف على حدة.",
+        "أصدر تقرير نجاح وفشل قابلًا لإعادة التشغيل."
+      ],
+      "metric": "نسبة الملفات ذات سجل نتيجة ومعدل الفشل الصامت.",
+      "difficulty": "متوسط؛ تقدير تحريري.",
+      "risks": "قراءة ملفات غير موثوقة بصلاحيات المستخدم وتسرب بيانات حساسة عبر السجلات.",
+      "sources": [
+        {
+          "title": "دليل MarkItDown",
+          "url": "https://github.com/microsoft/markitdown/blob/main/packages/markitdown/README.md"
+        },
+        {
+          "title": "سياسة الأمان",
+          "url": "https://github.com/microsoft/markitdown/blob/main/SECURITY.md"
+        }
+      ]
+    },
+    {
+      "title": "مقياس جودة للجداول والمعادلات",
+      "problem": "وجود ملف Markdown لا يعني أن القيم العددية أو الجداول بقيت صحيحة.",
+      "approach": "مقارنة الصفوف والخلايا والرموز الرياضية بين النص المستخرج والمرجع مع مراجعة بشرية لعينة.",
+      "stack": "Python، pandas، pytest، MarkItDown.",
+      "steps": [
+        "اختر ملفات اختبار عامة تتضمن جداول ومعادلات.",
+        "استخرج Markdown وسجل التحذيرات.",
+        "قارن الصفوف والخلايا والقيم الرقمية بالمرجع.",
+        "انشر تقريرًا يوضح الصيغ التي تحتاج مسارًا بديلًا."
+      ],
+      "metric": "دقة القيم والخلايا ومعدل الحالات التي تحتاج مراجعة بشرية.",
+      "difficulty": "متوسط إلى مرتفع؛ تقدير تحريري.",
+      "risks": "قد تعطي المطابقة النصية انطباعًا زائفًا بالصحة الدلالية.",
+      "sources": [
+        {
+          "title": "MarkItDown",
+          "url": "https://github.com/microsoft/markitdown"
+        },
+        {
+          "title": "PyMuPDF docs",
+          "url": "https://pymupdf.readthedocs.io/en/latest/"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "منظم محاضرات محلي إلى Markdown",
+      "problem": "يصعب البحث في ملفات المحاضرات المتعددة إذا بقيت موزعة بين صيغ مختلفة.",
+      "approach": "تحويل محلي إلى Markdown مع مجلد لكل مقرر وسجل مصدر لكل ملف.",
+      "stack": "Python، MarkItDown، pathlib.",
+      "steps": [
+        "حدد مجلدًا لكل مقرر.",
+        "حوّل كل ملف إلى مخرج مستقل باسم آمن.",
+        "احتفظ باسم المصدر وبصمته وتاريخ التحويل.",
+        "راجع الجداول والمعادلات يدويًا قبل الاعتماد على النص."
+      ],
+      "metric": "نسبة الملفات القابلة للبحث مع رابط واضح للمصدر.",
+      "difficulty": "منخفض إلى متوسط؛ تقدير تحريري.",
+      "risks": "أخطاء استخراج النص؛ لا تحذف الأصول.",
+      "sources": [
+        {
+          "title": "MarkItDown",
+          "url": "https://github.com/microsoft/markitdown"
+        },
+        {
+          "title": "دليل الحزمة",
+          "url": "https://github.com/microsoft/markitdown/blob/main/packages/markitdown/README.md"
+        }
+      ]
+    },
+    {
+      "title": "معيار عربي مفتوح لتحويل المستندات",
+      "problem": "تفتقر المقارنات بين المحولات إلى مجموعة عربية موحدة قابلة لإعادة الاختبار.",
+      "approach": "قياس التحويل والاتجاه والجداول والروابط عبر MarkItDown وPandoc وأدوات متخصصة.",
+      "stack": "Python، pytest، Pandoc، MarkItDown.",
+      "steps": [
+        "اجمع ملفات مرخصة متنوعة الصيغ.",
+        "وثّق المرجع الصحيح لكل ملف.",
+        "شغّل كل محول بإعداداته الموثقة.",
+        "انشر النتائج والقيود دون ترتيب مطلق مضلل."
+      ],
+      "metric": "تغطية الصيغ ودقة البنية ووقت التحويل وعدد الإخفاقات.",
+      "difficulty": "متوسط؛ تقدير تحريري.",
+      "risks": "انحياز مجموعة الاختبار واختلاف التراخيص.",
+      "sources": [
+        {
+          "title": "MarkItDown",
+          "url": "https://github.com/microsoft/markitdown"
+        },
+        {
+          "title": "Pandoc",
+          "url": "https://pandoc.org/"
+        }
+      ]
+    },
+    {
+      "title": "خط تجهيز مستندات مع روابط للمصدر",
+      "problem": "قد تفقد أنظمة البحث الرابط بين المقطع المستخرج والملف الأصلي.",
+      "approach": "حفظ Markdown مع بيانات وصفية ومؤشرات للصفحات أو الشرائح حيث تسمح الصيغة.",
+      "stack": "Python، MarkItDown، SQLite، JSONL، SHA-256.",
+      "steps": [
+        "حوّل الملف محليًا.",
+        "احفظ المصدر وبصمته ووقت التحويل وإصدار الأداة.",
+        "أرفق مؤشرات الصفحات أو الأقسام عند توفرها.",
+        "تحقق بعينة بشرية من إمكانية الرجوع إلى الأصل."
+      ],
+      "metric": "نسبة المقاطع القابلة للإرجاع إلى المصدر ومعدل الروابط المفقودة.",
+      "difficulty": "متوسط إلى مرتفع؛ تقدير تحريري.",
+      "risks": "المؤشرات لا تتوفر بالتساوي لكل الصيغ.",
+      "sources": [
+        {
+          "title": "MarkItDown",
+          "url": "https://github.com/microsoft/markitdown"
+        },
+        {
+          "title": "PyMuPDF",
+          "url": "https://pymupdf.readthedocs.io/en/latest/"
+        }
+      ]
+    }
+  ],
+  "sourceReview": {
+    "readme": true,
+    "license": true,
+    "pyproject": true,
+    "securityPolicy": true,
+    "quickStartDocs": true,
+    "measuredAt": "2026-10-30T00:11:07+03:00"
+  },
+  "sources": [
+    {
+      "title": "المستودع الرسمي",
+      "url": "https://github.com/microsoft/markitdown"
+    },
+    {
+      "title": "README الحزمة",
+      "url": "https://github.com/microsoft/markitdown/blob/main/packages/markitdown/README.md"
+    },
+    {
+      "title": "الترخيص",
+      "url": "https://github.com/microsoft/markitdown/blob/main/LICENSE"
+    },
+    {
+      "title": "المتطلبات",
+      "url": "https://github.com/microsoft/markitdown/blob/main/packages/markitdown/pyproject.toml"
+    },
+    {
+      "title": "سياسة الأمان",
+      "url": "https://github.com/microsoft/markitdown/blob/main/SECURITY.md"
+    }
+  ],
+  "developerDisplayRequirements": "هذا الملف بحثي فقط وغير منشور. إن عُرض لاحقًا، أظهر حالة عدم النشر، المستودع والترخيص ووقت قياس المؤشرات والمتطلبات والبدء والتكلفة المحلية/السحابية والبدائل والقيود والأفكار. لا تدمجه تلقائيًا في site/data/editorial.json ولا تزعم اختباره.",
+  "testEvidence": null
+}
