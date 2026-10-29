@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "auditedAt": "2026-10-29T17:45:30Z",
-  "baseMainSha": "aec6f2e75cf3e1814b496c026089b37f48562449",
+  "auditedAt": "2026-10-29T18:06:39Z",
+  "baseMainSha": "92aeb1e6f681639c32b0ce1b5441fbad96a7cbe3",
   "scope": {
     "filesRead": [
       "README.md",
@@ -24,28 +24,31 @@
     "feedItems": 800,
     "news": 700,
     "projects": 100,
-    "editorialEntries": 493,
-    "activeExactEditorial": 296,
+    "editorialEntries": 505,
+    "activeExactEditorial": 298,
     "unenrichedNews": 494,
-    "unenrichedProjects": 10,
-    "seenIds": 1795,
-    "lastFeedSuccessAt": "2026-10-29T15:14:34Z",
+    "unenrichedProjects": 8,
+    "seenIds": 1833,
+    "lastFeedSuccessAt": "2026-10-29T18:02:26Z",
     "sourceStates": {
       "ok": 24,
       "empty": 2
     },
-    "editorialStructuralEquivalent": "pass; 0 invalid entries"
+    "editorialStructuralEquivalent": "pass; 0 invalid entries",
+    "feedBlobSha": "addbeeaec66719ee43ba22c3ee6c61ba6560cdef",
+    "editorialBlobSha": "1088fac941e5ff52d19a3f6401f738c02c13376e",
+    "seenBlobSha": "4af16bb5788fe9dca2114ced31d1cde8d2cb2465"
   },
   "incomingAudit": {
-    "files": 49,
-    "rows": 494,
-    "uniqueIds": 493,
+    "files": 50,
+    "rows": 506,
+    "uniqueIds": 505,
     "duplicateRows": 1,
     "duplicateId": "853c63f738f0cecf3b",
-    "rowsAlreadyPresentInEditorialExactIdUrl": 491,
-    "activeFeedAndEditorialExactRows": 294,
-    "activeFeedAndEditorialExactUniqueIds": 293,
-    "historicalEditorialExactOutsideFeed": 197,
+    "rowsAlreadyPresentInEditorialExactIdUrl": 503,
+    "activeFeedAndEditorialExactRows": 296,
+    "activeFeedAndEditorialExactUniqueIds": 296,
+    "historicalEditorialExactOutsideFeed": 207,
     "activeFeedExactButUnenriched": 0,
     "absentFromFeedAndEditorial": [
       {
@@ -78,18 +81,18 @@
       "decision": "retain both historical and current IDs; do not generate an alternate ID"
     },
     "structuralEquivalent": {
-      "filesChecked": 49,
-      "filesParsed": 49,
-      "validFiles": 48,
+      "filesChecked": 50,
+      "filesParsed": 50,
+      "validFiles": 49,
       "invalidFiles": 1,
       "invalidRecord": {
         "file": "editorial/incoming/nabdh-editorial-2026-10-29-1755.json",
         "id": "ff1ebca6f559787f35",
         "field": "sources",
-        "issue": "one null source element; official validator would reject the incoming file"
-      },
-      "note": "The current editorial entry is structurally valid; the malformed null exists in the archived incoming batch. Official scripts were not run locally."
-    }
+        "issue": "one null source element; current editorial entry is valid; archived incoming batch remains malformed"
+      }
+    },
+    "historicalEditorialExactOutsideFeedUniqueIds": 206
   },
   "newBatch": {
     "path": "editorial/incoming/nabdh-editorial-2026-10-29-2045.json",
@@ -101,7 +104,10 @@
     "duplicateIds": 0,
     "structuralEquivalentValidation": "pass",
     "testEvidenceClaims": 0,
-    "decision": "merge by original IDs into the existing editorial.items map; do not replace old entries"
+    "decision": "merge by original IDs into the existing editorial.items map; do not replace old entries",
+    "merged": true,
+    "mergedPR": 58,
+    "basisCorrectionsMergedPR": 59
   },
   "mergePlan": {
     "editorialEntriesBefore": 493,
@@ -110,7 +116,11 @@
     "expectedActiveExactAfter": 308,
     "expectedUnenrichedNewsAfter": 484,
     "expectedUnenrichedProjectsAfter": 8,
-    "existingRecordsPreserved": true
+    "existingRecordsPreserved": true,
+    "editorialEntriesAfter": 505,
+    "activeExactEditorialAfterConcurrentFeedRefresh": 298,
+    "expectedUnenrichedNewsAfterConcurrentFeedRefresh": 494,
+    "expectedUnenrichedProjectsAfterConcurrentFeedRefresh": 8
   },
   "officialValidator": {
     "localPythonAvailable": false,
@@ -119,11 +129,36 @@
       "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-10-29-2045.json",
       "python -m unittest discover -s tests -v"
     ],
-    "reason": "No local checkout/runtime of the repository was available; an in-memory structural equivalent was used. CI results must be checked before merging."
+    "reason": "No local checkout/runtime of the repository was available; an in-memory structural equivalent was used. CI results must be checked before merging.",
+    "ci": {
+      "pr58": {
+        "runId": 40926398635,
+        "conclusion": "success",
+        "steps": [
+          "python -m unittest discover -s tests -v",
+          "python scripts/editorial.py validate",
+          "node --check site/app.js && node --check site/ideas.js"
+        ]
+      },
+      "pr59": {
+        "runId": 40926905542,
+        "conclusion": "success",
+        "steps": [
+          "python -m unittest discover -s tests -v",
+          "python scripts/editorial.py validate",
+          "node --check site/app.js && node --check site/ideas.js"
+        ]
+      }
+    },
+    "importCommandExecutedLocally": false,
+    "mergeMethod": "equivalent in-memory merge preserving all existing editorial items; exact ID/URL check against current feed"
   },
   "publicationVerification": {
-    "status": "pending",
-    "note": "No claim of publication until PR checks, merge, and the live /data/editorial.json are verified."
+    "status": "live_unverified",
+    "githubMainDataVerified": true,
+    "liveEditorialJson": "fetch blocked with DisabledError",
+    "newsAndProjectDetailPages": "not accessible through browser tool",
+    "note": "Main contains 505 entries and all 12 new IDs with exact current feed URLs. This is not proof that GitHub Pages has served the updated file."
   },
   "catalog": {
     "path": "editorial/library/catalog-2026-10-29-0559.json",
@@ -135,5 +170,85 @@
     "licenseNeedsUpstreamVerification": 7,
     "metricsCapturedAt": "2026-10-29T02:57:09.360Z",
     "catalogUpdatedThisRun": false
+  },
+  "postMergeRecheck": {
+    "recheckedAt": "2026-10-29T18:06:39Z",
+    "latestMainSha": "92aeb1e6f681639c32b0ce1b5441fbad96a7cbe3",
+    "feedBlobSha": "addbeeaec66719ee43ba22c3ee6c61ba6560cdef",
+    "editorialBlobSha": "1088fac941e5ff52d19a3f6401f738c02c13376e",
+    "seenBlobSha": "4af16bb5788fe9dca2114ced31d1cde8d2cb2465",
+    "feedGeneratedAt": "2026-10-29T18:02:26+00:00",
+    "currentFeedItems": 800,
+    "currentNews": 700,
+    "currentProjects": 100,
+    "currentEditorialEntries": 505,
+    "activeExactEditorial": 298,
+    "unenrichedNews": 494,
+    "unenrichedProjects": 8,
+    "seenIds": 1833,
+    "sourceStates": {
+      "ok": 24,
+      "empty": 2
+    },
+    "otherAutomationChange": "بعد PR #59 حدّثت عملية التغذية القائمة feed.json وstatus.json عند 18:02:26Z؛ بقي seen.json كما هو في هذا التحديث. فرز الوارد الخمسين أُعيد مقابل هذه اللقطة، ولم تُستبدل تغييرات الأتمتة.",
+    "incomingAuditAfterRefresh": {
+      "files": 50,
+      "rows": 506,
+      "uniqueIds": 505,
+      "duplicateRows": 1,
+      "duplicateId": "853c63f738f0cecf3b",
+      "rowsAlreadyPresentInEditorialExactIdUrl": 503,
+      "uniqueIdsAlreadyPresentExact": 502,
+      "activeFeedAndEditorialExactRows": 296,
+      "activeFeedAndEditorialExactUniqueIds": 296,
+      "historicalEditorialExactOutsideFeedRows": 207,
+      "historicalEditorialExactOutsideFeedUniqueIds": 206,
+      "absentFromFeedAndEditorialIds": [
+        "940ec4695c1e241c2f",
+        "317abcdd1b20728a7e",
+        "662e68277c6361dd4b"
+      ],
+      "idUrlMismatches": 0,
+      "confirmedExpiredNews": 0,
+      "activeFeedExactButUnenriched": 0
+    },
+    "newBatchAfterRefresh": {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-29-2045.json",
+      "items": 12,
+      "news": 10,
+      "projects": 2,
+      "all12ActiveExactIdUrlMatches": true,
+      "all12PresentInEditorial": true,
+      "basisCorrections": {
+        "metadata": [
+          "aa4816021a4d6953d2",
+          "408e59e473ab3bc682",
+          "3a644431de131a7405"
+        ]
+      }
+    },
+    "mergedPRs": [
+      {
+        "number": 58,
+        "mergeCommitSha": "1e593c4035b718b7f99736d3a7fc3cf2c133a380",
+        "mergedAt": "2026-10-29T17:59:01Z",
+        "ciRunId": 40926398635,
+        "ciConclusion": "success"
+      },
+      {
+        "number": 59,
+        "mergeCommitSha": "62d93a293cf9c429f89fb15884082e739efdebac",
+        "mergedAt": "2026-10-29T18:02:04Z",
+        "ciRunId": 40926905542,
+        "ciConclusion": "success"
+      }
+    ],
+    "publicationVerification": {
+      "status": "live_unverified",
+      "githubMainDataVerified": true,
+      "liveEditorialJson": "fetch blocked with DisabledError",
+      "newsAndProjectDetailPages": "not accessible through browser tool",
+      "note": "Main contains 505 entries and all 12 new IDs with exact current feed URLs. This is not proof that GitHub Pages has served the updated file."
+    }
   }
 }
