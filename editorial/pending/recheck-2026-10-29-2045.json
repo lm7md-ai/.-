@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "auditedAt": "2026-10-29T18:04:22Z",
-  "baseMainSha": "62d93a293cf9c429f89fb15884082e739efdebac",
+  "auditedAt": "2026-10-29T18:06:39Z",
+  "baseMainSha": "92aeb1e6f681639c32b0ce1b5441fbad96a7cbe3",
   "scope": {
     "filesRead": [
       "README.md",
@@ -29,13 +29,13 @@
     "unenrichedNews": 494,
     "unenrichedProjects": 8,
     "seenIds": 1833,
-    "lastFeedSuccessAt": "2026-10-29T17:59:13Z",
+    "lastFeedSuccessAt": "2026-10-29T18:02:26Z",
     "sourceStates": {
       "ok": 24,
       "empty": 2
     },
     "editorialStructuralEquivalent": "pass; 0 invalid entries",
-    "feedBlobSha": "22d7d8764be9e4f75e49e5caf8c5317bca4acd83",
+    "feedBlobSha": "addbeeaec66719ee43ba22c3ee6c61ba6560cdef",
     "editorialBlobSha": "1088fac941e5ff52d19a3f6401f738c02c13376e",
     "seenBlobSha": "4af16bb5788fe9dca2114ced31d1cde8d2cb2465"
   },
@@ -154,8 +154,11 @@
     "mergeMethod": "equivalent in-memory merge preserving all existing editorial items; exact ID/URL check against current feed"
   },
   "publicationVerification": {
-    "status": "pending",
-    "note": "No claim of publication until PR checks, merge, and the live /data/editorial.json are verified."
+    "status": "live_unverified",
+    "githubMainDataVerified": true,
+    "liveEditorialJson": "fetch blocked with DisabledError",
+    "newsAndProjectDetailPages": "not accessible through browser tool",
+    "note": "Main contains 505 entries and all 12 new IDs with exact current feed URLs. This is not proof that GitHub Pages has served the updated file."
   },
   "catalog": {
     "path": "editorial/library/catalog-2026-10-29-0559.json",
@@ -169,12 +172,12 @@
     "catalogUpdatedThisRun": false
   },
   "postMergeRecheck": {
-    "recheckedAt": "2026-10-29T18:04:22Z",
-    "latestMainSha": "62d93a293cf9c429f89fb15884082e739efdebac",
-    "feedBlobSha": "22d7d8764be9e4f75e49e5caf8c5317bca4acd83",
+    "recheckedAt": "2026-10-29T18:06:39Z",
+    "latestMainSha": "92aeb1e6f681639c32b0ce1b5441fbad96a7cbe3",
+    "feedBlobSha": "addbeeaec66719ee43ba22c3ee6c61ba6560cdef",
     "editorialBlobSha": "1088fac941e5ff52d19a3f6401f738c02c13376e",
     "seenBlobSha": "4af16bb5788fe9dca2114ced31d1cde8d2cb2465",
-    "feedGeneratedAt": "2026-10-29T17:59:13+00:00",
+    "feedGeneratedAt": "2026-10-29T18:02:26+00:00",
     "currentFeedItems": 800,
     "currentNews": 700,
     "currentProjects": 100,
@@ -187,7 +190,7 @@
       "ok": 24,
       "empty": 2
     },
-    "otherAutomationChange": "بين دمج PR #58 وPR #59 حدّثت عملية التغذية القائمة feed.json وseen.json؛ احتفظ PR #59 بهذه التغييرات ولم يستبدلهما. لم تعدّل PR #58 أو PR #59 هذين الملفين.",
+    "otherAutomationChange": "بعد PR #59 حدّثت عملية التغذية القائمة feed.json وstatus.json عند 18:02:26Z؛ بقي seen.json كما هو في هذا التحديث. فرز الوارد الخمسين أُعيد مقابل هذه اللقطة، ولم تُستبدل تغييرات الأتمتة.",
     "incomingAuditAfterRefresh": {
       "files": 50,
       "rows": 506,
