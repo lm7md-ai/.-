@@ -70,10 +70,7 @@
           "title": "Dream Research — التقرير الأصلي",
           "url": "https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers"
         },
-        {
-          "title": "Dream Research — صفحة الأبحاث",
-          "url": "https://dreamgroup.com/research-and-news"
-        }
+        null
       ]
     },
     "79ed3fc0032bcaa4bf": {
@@ -133,17 +130,13 @@
         "راقب ما إذا كانت الرحلة تؤكد التحسينات على المعزز.",
         "ميّز بين وصف العطل والسبب الجذري النهائي غير المعلن."
       ],
-      "limitations": "موعد الإطلاق مشروط بموافقة المدى وقد يتغير. تقرير Ars هو مصدر موعد العودة؛ بيان ULA المرتبط يوثق رحلة سابقة ولا يؤكد وحده التاريخ الحالي.",
+      "limitations": "موعد الإطلاق مشروط بموافقة المدى وقد يتغير؛ تقرير Ars هو مصدر الموعد الحالي، ولم يذكر المقال أن السبب الجذري النهائي أُعلن.",
       "reviewedAt": "2026-10-29T14:50:00Z",
       "basis": "article",
       "sources": [
         {
           "title": "Ars Technica — تقرير العودة إلى الطيران",
           "url": "https://arstechnica.com/space/2026/10/ulas-vulcan-rocket-is-set-to-return-to-flight-on-friday-the-13th/"
-        },
-        {
-          "title": "ULA — بيان رحلة Vulcan السابقة",
-          "url": "https://newsroom.ulalaunch.com/releases/ula-vulcan-rocket-successfully-launches-the-future-of-defense"
         }
       ]
     },
@@ -297,12 +290,12 @@
           "url": "https://surrealdb.com/license"
         },
         {
-          "title": "SurrealDB — الاستضافة الذاتية",
-          "url": "https://surrealdb.com/docs/manage/self-hosted"
-        },
-        {
           "title": "SurrealDB Python SDK — README",
           "url": "https://github.com/surrealdb/surrealdb.py"
+        },
+        {
+          "title": "SurrealDB — تشغيل Docker",
+          "url": "https://surrealdb.com/docs/running/docker"
         }
       ],
       "improvements": [
@@ -327,8 +320,8 @@
               "url": "https://surrealdb.com/docs"
             },
             {
-              "title": "SurrealDB Self-hosted",
-              "url": "https://surrealdb.com/docs/manage/self-hosted"
+              "title": "SurrealDB — تشغيل Docker",
+              "url": "https://surrealdb.com/docs/running/docker"
             }
           ]
         },
@@ -349,8 +342,8 @@
           "risks": "تفاصيل الترحيل تختلف بين الإصدارات ومحركات التخزين.",
           "sources": [
             {
-              "title": "SurrealDB Self-hosted",
-              "url": "https://surrealdb.com/docs/manage/self-hosted"
+              "title": "SurrealDB — تشغيل Docker",
+              "url": "https://surrealdb.com/docs/running/docker"
             },
             {
               "title": "SurrealDB Python SDK",
@@ -381,8 +374,8 @@
               "url": "https://surrealdb.com/docs"
             },
             {
-              "title": "SurrealDB Self-hosted",
-              "url": "https://surrealdb.com/docs/manage/self-hosted"
+              "title": "SurrealDB — تشغيل Docker",
+              "url": "https://surrealdb.com/docs/running/docker"
             }
           ]
         }
