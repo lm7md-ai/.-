@@ -1,0 +1,220 @@
+{
+  "version": 1,
+  "compiledAt": "2026-10-29T17:45:30Z",
+  "published": false,
+  "siteContent": false,
+  "note": "مراجعة بحثية منفصلة عن واجهة الموقع. تم إثراء مشروعين موجودين في التغذية بمعرفيهما الأصليين؛ لم يضف الكتالوج التاريخي أي نسخة مكررة. لم يُشغّل أي مشروع ولا توجد testEvidence.",
+  "cumulativeCatalog": {
+    "path": "editorial/library/catalog-2026-10-29-0559.json",
+    "totalProjects": 31,
+    "archived": 2,
+    "nonArchived": 29,
+    "inCurrentFeed": 4,
+    "notInFeed": 27,
+    "licenseNeedsUpstreamVerification": 7,
+    "metricsCapturedAt": "2026-10-29T02:57:09.360Z",
+    "notRefreshedThisRun": true,
+    "note": "أعداد النجوم والفروع في الكتالوج تاريخية ولا تمثل قياسًا لحظيًا."
+  },
+  "previousEight": {
+    "count": 8,
+    "activityCheckedAt": "2026-10-29T17:45:30Z",
+    "starsForksMeasuredAt": "2026-10-29T12:25:42Z",
+    "projects": [
+      {
+        "repository": "gradio-app/gradio",
+        "url": "https://github.com/gradio-app/gradio",
+        "license": "Apache-2.0 verified from LICENSE",
+        "archived": false,
+        "lastCommitAt": "2026-10-28T22:48:29Z",
+        "lastCommit": "211e8027c74e24429ddf91949c6371cbe69aee09",
+        "readmeAndLicenseReadThisRun": true,
+        "executed": false,
+        "testEvidence": null,
+        "note": "نشاط حديث؛ README يشرح بناء واجهات لتطبيقات الذكاء الاصطناعي."
+      },
+      {
+        "repository": "thedotmack/claude-mem",
+        "url": "https://github.com/thedotmack/claude-mem",
+        "license": "Apache-2.0 verified from LICENSE",
+        "archived": false,
+        "lastCommitAt": "2026-10-29T17:01:42Z",
+        "lastCommit": "7b45644019c22585e121a93fcc35e7c2d6ff5e28",
+        "readmeAndLicenseReadThisRun": true,
+        "executed": false,
+        "testEvidence": null,
+        "note": "نشاط حديث؛ راجع حدود المكونات التجارية والتبعيات قبل الاستخدام."
+      },
+      {
+        "repository": "ultralytics/ultralytics",
+        "url": "https://github.com/ultralytics/ultralytics",
+        "license": "AGPL-3.0 verified from LICENSE",
+        "archived": false,
+        "lastCommitAt": "2026-10-29T11:10:44Z",
+        "lastCommit": "80c34c050921abd29970d8e3d2a2a41ec6538c98",
+        "readmeAndLicenseReadThisRun": true,
+        "executed": false,
+        "testEvidence": null,
+        "note": "نشط؛ ترخيص AGPL-3.0 يستلزم مراجعة أثره على المنتج قبل الدمج."
+      },
+      {
+        "repository": "harry0703/MoneyPrinterTurbo",
+        "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+        "license": "MIT verified from LICENSE",
+        "archived": false,
+        "lastCommitAt": "2026-10-29T12:42:40Z",
+        "lastCommit": "04f16047fc13e3d8911694ed80373b65050738e2",
+        "readmeAndLicenseReadThisRun": true,
+        "executed": false,
+        "testEvidence": null,
+        "note": "نشاط حديث؛ راجع حقوق الوسائط وتكاليف مزودي النماذج."
+      },
+      {
+        "repository": "microsoft/AI-For-Beginners",
+        "url": "https://github.com/microsoft/AI-For-Beginners",
+        "license": "MIT verified from LICENSE",
+        "archived": false,
+        "lastCommitAt": "2026-09-04T15:24:51Z",
+        "lastCommit": "392d0df1b2647cbee104942390551f1ed9e072c8",
+        "readmeAndLicenseReadThisRun": true,
+        "executed": false,
+        "testEvidence": null,
+        "note": "لا يظهر commit أحدث في نتيجة البحث الحالية؛ المستودع غير مؤرشف، وموارده التعليمية تحتاج التحقق من متطلبات كل درس."
+      },
+      {
+        "repository": "usebruno/bruno",
+        "url": "https://github.com/usebruno/bruno",
+        "license": "not reverified this run; previous snapshot listed MIT",
+        "archived": false,
+        "lastCommitAt": "2026-10-29T14:30:38Z",
+        "lastCommit": "b569a7288a6ca38377f23878d9ab43da7dc3d511",
+        "readmeAndLicenseReadThisRun": false,
+        "executed": false,
+        "testEvidence": null,
+        "note": "تأكد النشاط من commit حديث، لكن fetch_file أعاد 404 لملفي README.md وLICENSE؛ لا تعتبر الترخيص الحالي متحققًا في هذه الدورة."
+      },
+      {
+        "repository": "keras-team/keras",
+        "url": "https://github.com/keras-team/keras",
+        "license": "Apache-2.0 verified from LICENSE",
+        "archived": false,
+        "lastCommitAt": "2026-10-27T23:29:19Z",
+        "lastCommit": "7efab4a60f5930fa81b0db15ed4ec6e4925e0c45",
+        "readmeAndLicenseReadThisRun": true,
+        "executed": false,
+        "testEvidence": null,
+        "note": "نشط؛ اختيار backend والتبعيات جزء من إعداد التشغيل."
+      },
+      {
+        "repository": "k2-fsa/sherpa-onnx",
+        "url": "https://github.com/k2-fsa/sherpa-onnx",
+        "license": "Apache-2.0 verified from LICENSE",
+        "archived": false,
+        "lastCommitAt": "2026-10-29T12:00:57Z",
+        "lastCommit": "935e5ded3d949a8b557ac44ef4dad03a7d2038e7",
+        "readmeAndLicenseReadThisRun": true,
+        "executed": false,
+        "testEvidence": null,
+        "note": "نشط؛ يدعم وظائف صوت محلية متعددة، لكن يجب اختيار نموذج متوافق مع اللغة والمنصة."
+      }
+    ],
+    "executed": false,
+    "testEvidence": null
+  },
+  "newFeedProjects": [
+    {
+      "repository": "ruvnet/ruflo",
+      "url": "https://github.com/ruvnet/ruflo",
+      "feedId": "c60b77ce50fb891064",
+      "license": "MIT verified from LICENSE",
+      "archived": false,
+      "lastCommitAt": "2026-10-29T14:18:38Z",
+      "lastCommit": "7f6fb3345b7f4ea1d7acc4905ea88bad29136066",
+      "metadataCapturedAt": "2026-10-29T15:14:34Z",
+      "readmePackageLicenseReviewed": true,
+      "executed": false,
+      "testEvidence": null,
+      "decision": "enrich original feed ID; do not add duplicate catalog entry",
+      "caution": "README describes an illustrative download counter; package.json uses the name claude-flow while the repository is Ruflo."
+    },
+    {
+      "repository": "jianchang512/pyvideotrans",
+      "url": "https://github.com/jianchang512/pyvideotrans",
+      "feedId": "b98f0560cd5ec2475d",
+      "license": "GPL-3.0 verified from LICENSE",
+      "archived": false,
+      "lastCommitAt": "2026-10-26T12:23:22Z",
+      "lastCommit": "069403080ea15748aefd008460fc2342c517b83e",
+      "metadataCapturedAt": "2026-10-29T15:14:34Z",
+      "readmeProjectLicenseRequirementsReviewed": true,
+      "executed": false,
+      "testEvidence": null,
+      "decision": "enrich original feed ID; do not add duplicate catalog entry",
+      "caution": "pyproject.toml requires Python >=3.10,<3.11; README says Python 3.10+ more broadly."
+    }
+  ],
+  "topThreeSuggestions": [
+    {
+      "rank": 1,
+      "title": "Ruflo: فاحص صلاحيات MCP قبل التشغيل",
+      "projectId": "c60b77ce50fb891064",
+      "reason": "يكشف الصلاحيات الواسعة قبل منح الإضافات إمكانية الوصول إلى الملفات أو الشبكة."
+    },
+    {
+      "rank": 2,
+      "title": "pyVideoTrans: مصفوفة خصوصية لكل قناة معالجة",
+      "projectId": "b98f0560cd5ec2475d",
+      "reason": "يوضح للمستخدم ما إذا كان الصوت أو النص يغادر الجهاز وما إذا كانت هناك تكلفة API."
+    },
+    {
+      "rank": 3,
+      "title": "pyVideoTrans: مجموعة تقييم للترجمة العربية وتوقيت الترجمة",
+      "projectId": "b98f0560cd5ec2475d",
+      "reason": "تقيس أخطاء التفريغ والمحاذاة بدل الاكتفاء بانطباع أن الترجمة مفهومة."
+    }
+  ],
+  "proposalCount": 9,
+  "allProposalsStructurallyComplete": true,
+  "executionStatus": {
+    "projectsExecuted": false,
+    "testEvidence": null,
+    "notes": "تمت مراجعة README وLICENSE وpackage.json/pyproject.toml والوثائق المتاحة؛ لم يُنفذ تثبيت أو تشغيل. مقاييس النجوم والفروع بقيت على طابعها السابق."
+  },
+  "developerIntegrationNotes": [
+    "اعرض overview وrequirements وquickStart في أقسام مستقلة قابلة للفتح.",
+    "أظهر الترخيص والحالة ونمط التشغيل المحلي/السحابي والتكلفة المحتملة.",
+    "لكل فكرة اعرض problem وapproach وstack وsteps وmetric وdifficulty وrisks وsources.",
+    "أظهر «لم يُختبر التشغيل» ما لم توجد testEvidence فعلية.",
+    "حافظ على ترتيب الأفكار والروابط السابقة عند إضافة مقترحات."
+  ],
+  "sources": [
+    {
+      "title": "الكتالوج التاريخي",
+      "url": "https://github.com/lm7md-ai/.-/blob/main/editorial/library/catalog-2026-10-29-0559.json"
+    },
+    {
+      "title": "المراجعة السابقة للمشاريع الثمانية",
+      "url": "https://github.com/lm7md-ai/.-/blob/main/editorial/library/review-2026-10-29-1755.json"
+    },
+    {
+      "title": "Ruflo README",
+      "url": "https://github.com/ruvnet/ruflo/blob/main/README.md"
+    },
+    {
+      "title": "Ruflo LICENSE",
+      "url": "https://github.com/ruvnet/ruflo/blob/main/LICENSE"
+    },
+    {
+      "title": "pyVideoTrans README",
+      "url": "https://github.com/jianchang512/pyvideotrans/blob/main/README.md"
+    },
+    {
+      "title": "pyVideoTrans LICENSE",
+      "url": "https://github.com/jianchang512/pyvideotrans/blob/main/LICENSE"
+    },
+    {
+      "title": "pyVideoTrans pyproject.toml",
+      "url": "https://github.com/jianchang512/pyvideotrans/blob/main/pyproject.toml"
+    }
+  ]
+}
