@@ -1,0 +1,277 @@
+{
+  "version": 1,
+  "compiledAt": "2026-10-29T14:50:00Z",
+  "published": false,
+  "siteContent": false,
+  "note": "مراجعة بحثية تراكمية منفصلة عن واجهة الموقع؛ لم يُشغّل أي مشروع ولا توجد testEvidence. المشروعان الجديدان موجودان أصلًا في التغذية، لذلك أُثريا بمعرفيهما الأصليين ولم يُنشأ لهما سجل مكرر في الكتالوج التاريخي.",
+  "cumulativeCatalog": {
+    "path": "editorial/library/catalog-2026-10-29-0559.json",
+    "totalProjects": 31,
+    "archived": 2,
+    "nonArchived": 29,
+    "inCurrentFeed": 4,
+    "notInFeed": 27,
+    "licenseNeedsUpstreamVerification": 7,
+    "metricsCapturedAt": "2026-10-29T02:57:09.360Z",
+    "notRefreshedInThisRun": true,
+    "note": "أُبقيت مقاييس النجوم والتفرعات التاريخية بطوابعها الأصلية؛ لا توصف بأنها قياسات لحظة هذا التشغيل."
+  },
+  "previousEight": {
+    "count": 8,
+    "metadataMeasuredAt": "2026-10-29T12:25:42Z",
+    "readmeLicenseQuickStartLastReviewedAt": "2026-10-29T05:54:30Z",
+    "projects": [
+      {
+        "repository": "gradio-app/gradio",
+        "url": "https://github.com/gradio-app/gradio",
+        "stars": 43940,
+        "forks": 3651,
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushedAt": "2026-10-29T10:06:32Z",
+        "updatedAt": "2026-10-29T12:10:20Z",
+        "language": "Python",
+        "measuredAt": "2026-10-29T12:25:42Z",
+        "dossierReviewedAt": "2026-10-29T05:54:30Z",
+        "executed": false,
+        "testEvidence": null,
+        "reviewNote": "Apache-2.0؛ المستودع الرسمي نشط في القياس السابق. افصل العرض المحلي عن الاستضافة العامة، ولا ترفع بيانات خاصة إلى Spaces عامة."
+      },
+      {
+        "repository": "thedotmack/claude-mem",
+        "url": "https://github.com/thedotmack/claude-mem",
+        "stars": 104228,
+        "forks": 9194,
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushedAt": "2026-10-29T00:48:27Z",
+        "updatedAt": "2026-10-29T12:21:04Z",
+        "language": "TypeScript",
+        "measuredAt": "2026-10-29T12:25:42Z",
+        "dossierReviewedAt": "2026-10-29T05:54:30Z",
+        "executed": false,
+        "testEvidence": null,
+        "reviewNote": "Apache-2.0 للنواة المفتوحة؛ راجع حدود المكونات التجارية والتبعيات قبل إدخاله في بيئة عمل."
+      },
+      {
+        "repository": "ultralytics/ultralytics",
+        "url": "https://github.com/ultralytics/ultralytics",
+        "stars": 62962,
+        "forks": 11931,
+        "license": "AGPL-3.0",
+        "archived": false,
+        "pushedAt": "2026-10-29T12:00:40Z",
+        "updatedAt": "2026-10-29T11:55:12Z",
+        "language": "Python",
+        "measuredAt": "2026-10-29T12:25:42Z",
+        "dossierReviewedAt": "2026-10-29T05:54:30Z",
+        "executed": false,
+        "testEvidence": null,
+        "reviewNote": "AGPL-3.0؛ راجع أثر الترخيص أو الترخيص التجاري قبل دمجه في منتج مغلق."
+      },
+      {
+        "repository": "harry0703/MoneyPrinterTurbo",
+        "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+        "stars": 136235,
+        "forks": 21666,
+        "license": "MIT",
+        "archived": false,
+        "pushedAt": "2026-10-29T10:55:15Z",
+        "updatedAt": "2026-10-29T12:18:18Z",
+        "language": "Python",
+        "measuredAt": "2026-10-29T12:25:42Z",
+        "dossierReviewedAt": "2026-10-29T05:54:30Z",
+        "executed": false,
+        "testEvidence": null,
+        "reviewNote": "MIT؛ راجع التبعيات ومزودي النماذج وتكاليفهم وحقوق المواد المولدة قبل الاستخدام."
+      },
+      {
+        "repository": "microsoft/AI-For-Beginners",
+        "url": "https://github.com/microsoft/AI-For-Beginners",
+        "stars": 70347,
+        "forks": 13674,
+        "license": "MIT",
+        "archived": false,
+        "pushedAt": "2026-10-23T23:55:14Z",
+        "updatedAt": "2026-10-29T12:18:13Z",
+        "language": "Jupyter Notebook",
+        "measuredAt": "2026-10-29T12:25:42Z",
+        "dossierReviewedAt": "2026-10-29T05:54:30Z",
+        "executed": false,
+        "testEvidence": null,
+        "reviewNote": "MIT؛ منهج من 12 أسبوعًا و24 درسًا، مع دفاتر ومتطلبات يجب تثبيتها لكل درس."
+      },
+      {
+        "repository": "usebruno/bruno",
+        "url": "https://github.com/usebruno/bruno",
+        "stars": 47922,
+        "forks": 3052,
+        "license": "MIT",
+        "archived": false,
+        "pushedAt": "2026-10-29T12:16:47Z",
+        "updatedAt": "2026-10-29T12:19:31Z",
+        "language": "JavaScript",
+        "measuredAt": "2026-10-29T12:25:42Z",
+        "dossierReviewedAt": "2026-10-29T05:54:30Z",
+        "executed": false,
+        "testEvidence": null,
+        "reviewNote": "MIT؛ عميل API محلي الحفظ؛ لا تشارك ملفات مجموعات تحتوي أسرارًا أو رموز دخول."
+      },
+      {
+        "repository": "keras-team/keras",
+        "url": "https://github.com/keras-team/keras",
+        "stars": 64397,
+        "forks": 19803,
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushedAt": "2026-10-27T23:29:20Z",
+        "updatedAt": "2026-10-29T09:52:13Z",
+        "language": "Python",
+        "measuredAt": "2026-10-29T12:25:42Z",
+        "dossierReviewedAt": "2026-10-29T05:54:30Z",
+        "executed": false,
+        "testEvidence": null,
+        "reviewNote": "Apache-2.0؛ يدعم TensorFlow وJAX وPyTorch وOpenVINO للاستدلال، ويجب ضبط backend قبل الاستيراد."
+      },
+      {
+        "repository": "k2-fsa/sherpa-onnx",
+        "url": "https://github.com/k2-fsa/sherpa-onnx",
+        "stars": 15589,
+        "forks": 1825,
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushedAt": "2026-10-29T12:00:57Z",
+        "updatedAt": "2026-10-29T12:18:59Z",
+        "language": "C++",
+        "measuredAt": "2026-10-29T12:25:42Z",
+        "dossierReviewedAt": "2026-10-29T05:54:30Z",
+        "executed": false,
+        "testEvidence": null,
+        "reviewNote": "Apache-2.0؛ يدعم الصوت محليًا في منصات متعددة، لكن يجب اختيار نموذج ولغة متوافقين."
+      }
+    ],
+    "reviewThisRun": "أُعيدت قراءة المراجعة السابقة، وقورنت بعض صفحات GitHub الرسمية والتراخيص والوثائق المتاحة. لم أعد قياس النجوم أو pushedAt لكل المستودعات الثمانية في هذا التشغيل؛ الأوقات أعلاه هي وقت القياس المسجل، لا وقت التقرير الحالي."
+  },
+  "newFeedProjects": {
+    "count": 2,
+    "metricsCapturedAt": "2026-10-29T12:51:16+00:00",
+    "projects": [
+      {
+        "repository": "sonic-pi-net/sonic-pi",
+        "url": "https://github.com/sonic-pi-net/sonic-pi",
+        "feedId": "2760bd7db91994609a",
+        "stars": 12236,
+        "forks": 1002,
+        "feedUpdatedAt": "2026-10-23T19:51:34+00:00",
+        "license": "MIT للتطبيق الأساسي؛ التزامات GPLv3 للحزم الثنائية ومكونات ويب/صوت AGPL-3.0-or-later",
+        "archived": false,
+        "activityCheckedAt": "2026-10-29T14:50:00Z",
+        "readmeReviewed": true,
+        "docsReviewed": true,
+        "licenseReviewed": true,
+        "requirementsReviewed": true,
+        "quickStartReviewed": true,
+        "executed": false,
+        "testEvidence": null,
+        "decision": "إثراء معرف التغذية الأصلي، وعدم إنشاء نسخة في الكتالوج التاريخي",
+        "sources": [
+          "https://github.com/sonic-pi-net/sonic-pi/blob/dev/README.md",
+          "https://github.com/sonic-pi-net/sonic-pi/blob/dev/LICENSE.md",
+          "https://sonic-pi.net/tutorial.html"
+        ]
+      },
+      {
+        "repository": "surrealdb/surrealdb",
+        "url": "https://github.com/surrealdb/surrealdb",
+        "feedId": "71bc413007f9080adc",
+        "stars": 33238,
+        "forks": 1398,
+        "feedUpdatedAt": "2026-10-19T09:13:46+00:00",
+        "license": "BSL 1.1 للنواة؛ تراخيص مستقلة مثل MIT/Apache-2.0 لبعض SDKs والمكونات",
+        "archived": false,
+        "activityCheckedAt": "2026-10-29T14:50:00Z",
+        "readmeReviewed": true,
+        "docsReviewed": true,
+        "licenseReviewed": true,
+        "requirementsReviewed": true,
+        "quickStartReviewed": true,
+        "executed": false,
+        "testEvidence": null,
+        "decision": "إثراء معرف التغذية الأصلي، وعدم إنشاء نسخة في الكتالوج التاريخي",
+        "sources": [
+          "https://github.com/surrealdb/surrealdb",
+          "https://surrealdb.com/docs",
+          "https://surrealdb.com/license",
+          "https://github.com/surrealdb/surrealdb.py"
+        ]
+      }
+    ]
+  },
+  "topThreeSuggestions": [
+    {
+      "rank": 1,
+      "title": "SurrealDB: فهرس عربي للمراجع التقنية مع إحالات قابلة للتدقيق",
+      "projectId": "71bc413007f9080adc",
+      "reason": "يربط كل نتيجة بالمصدر والبصمة ويتيح قياس Precision@5 بدل إجابات بلا إحالات."
+    },
+    {
+      "rank": 2,
+      "title": "Sonic Pi: خريطة مرئية للتوقيت والتزامن",
+      "projectId": "2760bd7db91994609a",
+      "reason": "تحوّل مفاهيم الحلقات والتوقيت إلى تصور يمكن تقييمه مع التشغيل الفعلي."
+    },
+    {
+      "rank": 3,
+      "title": "SurrealDB: مصفوفة مقارنة مع PostgreSQL وpgvector",
+      "projectId": "71bc413007f9080adc",
+      "reason": "تدعم اختيار قاعدة البيانات بقياسات موثقة بدل الانطباع أو عدد النجوم."
+    }
+  ],
+  "proposalCount": 7,
+  "executionStatus": {
+    "projectsExecuted": false,
+    "testEvidence": null,
+    "notes": "تمت مراجعة README/التوثيق/الترخيص والمتطلبات وطريقة البدء من المصادر الرسمية للمشروعين الجديدين؛ لم يحدث تثبيت أو تشغيل. النجوم من لقطة التغذية عند 2026-10-29T12:51:16Z."
+  },
+  "developerIntegrationNotes": [
+    "اعرض overview وrequirements وquickStart في أقسام مستقلة قابلة للفتح.",
+    "أظهر الترخيص والحالة ونمط التشغيل المحلي/السحابي والتكلفة المحتملة.",
+    "لكل فكرة اعرض problem وapproach وstack وsteps وmetric وdifficulty وrisks وsources.",
+    "أظهر «لم يُختبر التشغيل» ما لم توجد testEvidence فعلية.",
+    "لا تغيّر ترتيب الأفكار السابقة أو الروابط المحفوظة عند إضافة مقترحات."
+  ],
+  "sources": [
+    {
+      "title": "الكتالوج التاريخي",
+      "url": "https://github.com/lm7md-ai/.-/blob/main/editorial/library/catalog-2026-10-29-0559.json"
+    },
+    {
+      "title": "المراجعة السابقة للمشاريع الثمانية",
+      "url": "https://github.com/lm7md-ai/.-/blob/main/editorial/library/review-2026-10-29-1525.json"
+    },
+    {
+      "title": "Sonic Pi README",
+      "url": "https://github.com/sonic-pi-net/sonic-pi/blob/dev/README.md"
+    },
+    {
+      "title": "Sonic Pi LICENSE",
+      "url": "https://github.com/sonic-pi-net/sonic-pi/blob/dev/LICENSE.md"
+    },
+    {
+      "title": "Sonic Pi Tutorial",
+      "url": "https://sonic-pi.net/tutorial.html"
+    },
+    {
+      "title": "SurrealDB Docs",
+      "url": "https://surrealdb.com/docs"
+    },
+    {
+      "title": "SurrealDB license FAQ",
+      "url": "https://surrealdb.com/license"
+    },
+    {
+      "title": "SurrealDB Python SDK README",
+      "url": "https://github.com/surrealdb/surrealdb.py"
+    }
+  ]
+}
