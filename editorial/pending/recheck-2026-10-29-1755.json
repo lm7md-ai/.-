@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "auditedAt": "2026-10-29T14:50:00Z",
+  "baseMainSha": "87351c217009b79034d256702e6d6e05a2262222",
+  "currentState": {
+    "feedGeneratedAt": "2026-10-29T12:51:16+00:00",
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialEntries": 493,
+    "activeExactEditorial": 304,
+    "unenrichedNews": 486,
+    "unenrichedProjects": 10,
+    "seenIds": 1763,
+    "status": {
+      "lastAttemptAt": "2026-10-29T12:51:16+00:00",
+      "lastSuccessfulAt": "2026-10-29T12:51:16+00:00",
+      "state": "ok",
+      "collected": 317,
+      "sourceStates": {
+        "ok": 24,
+        "empty": 2
+      }
+    }
+  },
+  "incomingAudit": {
+    "files": 48,
+    "rows": 486,
+    "uniqueIds": 485,
+    "duplicateRows": 1,
+    "duplicateId": "853c63f738f0cecf3b",
+    "rowsAlreadyPresentInEditorialExactIdUrl": 483,
+    "activeFeedAndEditorialExactRows": 294,
+    "activeFeedAndEditorialExactUniqueIds": 293,
+    "historicalEditorialExactOutsideFeed": 189,
+    "seenOnlyMissing": [
+      {
+        "id": "940ec4695c1e241c2f",
+        "topic": "NVIDIA OpenShell",
+        "feedPresent": false,
+        "editorialPresent": false,
+        "seenPresent": true,
+        "decision": "انتظار؛ لا تُنشأ هوية بديلة"
+      },
+      {
+        "id": "317abcdd1b20728a7e",
+        "topic": "Canva Craft",
+        "feedPresent": false,
+        "editorialPresent": false,
+        "seenPresent": true,
+        "decision": "انتظار؛ لا تُنشأ هوية بديلة"
+      },
+      {
+        "id": "662e68277c6361dd4b",
+        "topic": "1Password agent sign-in",
+        "feedPresent": false,
+        "editorialPresent": false,
+        "seenPresent": true,
+        "decision": "انتظار؛ لا تُنشأ هوية بديلة"
+      }
+    ],
+    "activeFeedExactButUnenrichedWithinIncoming": 0,
+    "confirmedExpiredNews": 0,
+    "expiryNote": "لا أصف السجلات بأنها منقضية لمجرد خروجها من التغذية؛ لا تتوفر تواريخ نشر موثوقة لكل السجلات التاريخية.",
+    "crossIdSameUrlCollision": {
+      "count": 1,
+      "oldId": "7a99eca9b2ce14d9f5",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "currentFeedId": "e0cbbf211a55e79f34",
+      "decision": "الاحتفاظ بالسجلين وعدم استبدال الهوية تلقائيًا"
+    },
+    "latestBatch1525": {
+      "items": 11,
+      "alreadyPresentExact": true,
+      "decision": "عدم إعادة الاستيراد"
+    }
+  },
+  "newBatch": {
+    "path": "editorial/incoming/nabdh-editorial-2026-10-29-1755.json",
+    "items": 8,
+    "news": 6,
+    "projects": 2,
+    "proposalCount": 7,
+    "ids": [
+      "6394645bd5105adc54",
+      "562ada87341186dc7d",
+      "ff1ebca6f559787f35",
+      "79ed3fc0032bcaa4bf",
+      "4a8ea927af4e20675b",
+      "046096613a73da1b4b",
+      "2760bd7db91994609a",
+      "71bc413007f9080adc"
+    ],
+    "basisCounts": {
+      "article": 6,
+      "readme": 2
+    }
+  },
+  "mergePlan": {
+    "oldEditorialEntries": 485,
+    "newEntries": 8,
+    "expectedEditorialEntries": 493,
+    "activeExactAfterMerge": 304,
+    "unenrichedAfterMerge": 496,
+    "oldEntriesPreserved": true,
+    "feedChanged": false,
+    "seenChanged": false,
+    "codeOrWorkflowChanged": false
+  },
+  "structuralValidation": {
+    "result": "passed",
+    "rules": [
+      "المعرفات والروابط الثمانية تطابق التغذية حرفيًا",
+      "المعرفات غير موجودة في الإثراء السابق قبل الدمج",
+      "الحقول المطلوبة والمصادر HTTPS وreviewedAt محددة",
+      "كل اقتراح مكتمل وله 3–12 خطوة",
+      "حُفظت السجلات القديمة وحقولها دون تعديل"
+    ],
+    "localPythonAvailable": false,
+    "commandsNotRun": [
+      "python scripts/editorial.py validate /tmp/nabdh-editorial-2026-10-29-1755.json",
+      "python scripts/editorial.py import /tmp/nabdh-editorial-2026-10-29-1755.json",
+      "python -m unittest discover -s tests -v"
+    ],
+    "note": "تحقق بنيوي مكافئ فقط؛ يجب أن ينجح المحقق الرسمي والاختبارات في GitHub Actions قبل الدمج."
+  },
+  "publicationVerification": {
+    "state": "pending",
+    "note": "لا يُستنتج النشر من commit وحده؛ يلزم نجاح فحص PR ثم تشغيل النشر والتحقق من الملف العام."
+  }
+}
