@@ -1,0 +1,269 @@
+{
+  "version": 1,
+  "compiledAt": "2026-10-29T11:45:39Z",
+  "statusAtCreation": "proposed branch; PR and publication not yet verified",
+  "siteContent": {
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialEntriesBefore": 462,
+    "editorialEntriesAfterProposed": 474,
+    "matchedFeedBefore": 278,
+    "matchedFeedAfterProposed": 290,
+    "unenrichedBefore": 522,
+    "unenrichedAfterProposed": 510
+  },
+  "cumulativeCatalog": {
+    "path": "editorial/library/catalog-2026-10-29-0559.json",
+    "totalProjects": 31,
+    "archived": 2,
+    "nonArchived": 29,
+    "decision": "kept separate and unchanged; new projects are already in feed and enriched by their original IDs"
+  },
+  "previousEight": {
+    "count": 8,
+    "measuredAt": "2026-10-29T11:45:39Z",
+    "notes": "README, LICENSE and quick-start sections were reviewed in the previous run; this run rechecked GitHub API activity, archive state, SPDX metadata and exact feed IDs. No project was executed. Stars/forks are cumulative, not trending metrics.",
+    "projects": [
+      {
+        "repository": "gradio-app/gradio",
+        "url": "https://github.com/gradio-app/gradio",
+        "feedId": "9563de7ec1221e077a",
+        "stars": 43940,
+        "forks": 3651,
+        "archived": false,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-29T10:06:32Z",
+        "updatedAt": "2026-10-29T11:01:02Z",
+        "defaultBranch": "main",
+        "language": "Python",
+        "editorialEnriched": true,
+        "activity": "active_recent_push",
+        "licenseFileReviewedPreviously": true,
+        "executed": false,
+        "testEvidence": null
+      },
+      {
+        "repository": "thedotmack/claude-mem",
+        "url": "https://github.com/thedotmack/claude-mem",
+        "feedId": "853c63f738f0cecf3b",
+        "stars": 104197,
+        "forks": 9192,
+        "archived": false,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-29T00:48:27Z",
+        "updatedAt": "2026-10-29T11:51:45Z",
+        "defaultBranch": "main",
+        "language": "TypeScript",
+        "editorialEnriched": true,
+        "activity": "active_recent_push",
+        "licenseFileReviewedPreviously": true,
+        "executed": false,
+        "testEvidence": null,
+        "notes": "canonical repository confirmed; historical duplicate row with same ID/URL remains only once in editorial data"
+      },
+      {
+        "repository": "ultralytics/ultralytics",
+        "url": "https://github.com/ultralytics/ultralytics",
+        "feedId": "112ba4283cccf5b146",
+        "stars": 62961,
+        "forks": 11931,
+        "archived": false,
+        "license": "AGPL-3.0",
+        "pushedAt": "2026-10-29T11:22:13Z",
+        "updatedAt": "2026-10-29T11:24:53Z",
+        "defaultBranch": "main",
+        "language": "Python",
+        "editorialEnriched": true,
+        "activity": "active_recent_push",
+        "licenseFileReviewedPreviously": true,
+        "executed": false,
+        "testEvidence": null,
+        "licenseCaution": "AGPL-3.0; review obligations before incorporating into a closed-source product"
+      },
+      {
+        "repository": "harry0703/MoneyPrinterTurbo",
+        "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+        "feedId": "0604d6a7a7d7afd211",
+        "stars": 136233,
+        "forks": 21666,
+        "archived": false,
+        "license": "MIT",
+        "pushedAt": "2026-10-29T10:55:15Z",
+        "updatedAt": "2026-10-29T11:52:49Z",
+        "defaultBranch": "main",
+        "language": "Python",
+        "editorialEnriched": true,
+        "activity": "active_recent_push",
+        "licenseFileReviewedPreviously": true,
+        "executed": false,
+        "testEvidence": null
+      },
+      {
+        "repository": "microsoft/AI-For-Beginners",
+        "url": "https://github.com/microsoft/AI-For-Beginners",
+        "feedId": "d4316f8d5082c97897",
+        "stars": 70347,
+        "forks": 13674,
+        "archived": false,
+        "license": "MIT",
+        "pushedAt": "2026-10-23T23:55:14Z",
+        "updatedAt": "2026-10-29T11:45:51Z",
+        "defaultBranch": "main",
+        "language": "Jupyter Notebook",
+        "editorialEnriched": true,
+        "activity": "recent_content_update",
+        "licenseFileReviewedPreviously": true,
+        "executed": false,
+        "testEvidence": null
+      },
+      {
+        "repository": "usebruno/bruno",
+        "url": "https://github.com/usebruno/bruno",
+        "feedId": "6c62a31152244eb967",
+        "stars": 47921,
+        "forks": 3052,
+        "archived": false,
+        "license": "MIT",
+        "pushedAt": "2026-10-29T11:43:18Z",
+        "updatedAt": "2026-10-29T11:43:43Z",
+        "defaultBranch": "main",
+        "language": "JavaScript",
+        "editorialEnriched": true,
+        "activity": "active_recent_push",
+        "licenseApiCheckedThisRun": true,
+        "licenseFileReviewedPreviously": true,
+        "executed": false,
+        "testEvidence": null
+      },
+      {
+        "repository": "keras-team/keras",
+        "url": "https://github.com/keras-team/keras",
+        "feedId": "10b7f65af4f5070207",
+        "stars": 64397,
+        "forks": 19803,
+        "archived": false,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-27T23:29:20Z",
+        "updatedAt": "2026-10-29T09:52:13Z",
+        "defaultBranch": "master",
+        "language": "Python",
+        "editorialEnriched": true,
+        "activity": "active_recent_push",
+        "licenseFileReviewedPreviously": true,
+        "executed": false,
+        "testEvidence": null
+      },
+      {
+        "repository": "k2-fsa/sherpa-onnx",
+        "url": "https://github.com/k2-fsa/sherpa-onnx",
+        "feedId": "8d397f7a7077f1abc0",
+        "stars": 15589,
+        "forks": 1825,
+        "archived": false,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-29T07:01:37Z",
+        "updatedAt": "2026-10-29T11:53:03Z",
+        "defaultBranch": "master",
+        "language": "C++",
+        "editorialEnriched": true,
+        "activity": "active_recent_push",
+        "licenseFileReviewedPreviously": true,
+        "executed": false,
+        "testEvidence": null
+      }
+    ]
+  },
+  "newFeedProjects": {
+    "count": 2,
+    "projects": [
+      {
+        "repository": "pathwaycom/serviette",
+        "url": "https://github.com/pathwaycom/serviette",
+        "feedId": "ae21dd5e42d6ab53ce",
+        "stars": 58756,
+        "forks": 1532,
+        "archived": false,
+        "license": "MIT",
+        "pushedAt": "2026-10-16T10:31:14Z",
+        "updatedAt": "2026-10-29T08:43:06Z",
+        "defaultBranch": "main",
+        "language": "Python",
+        "readmeReviewed": true,
+        "licenseFileReviewed": true,
+        "requirementsReviewed": true,
+        "quickStartReviewed": true,
+        "executed": false,
+        "testEvidence": null,
+        "decision": "enrich original feed ID; no duplicate library dossier",
+        "limitations": "requires free Pathway license key; optional model API has usage costs; no built-in conversation memory or hosted service"
+      },
+      {
+        "repository": "OpenBMB/VoxCPM",
+        "url": "https://github.com/OpenBMB/VoxCPM",
+        "feedId": "8cf5140931d8ef20d8",
+        "stars": 40810,
+        "forks": 4641,
+        "archived": false,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-08T03:26:41Z",
+        "updatedAt": "2026-10-29T11:38:04Z",
+        "defaultBranch": "main",
+        "language": "Python",
+        "readmeReviewed": true,
+        "licenseFileReviewed": true,
+        "requirementsReviewed": true,
+        "quickStartReviewed": true,
+        "executed": false,
+        "testEvidence": null,
+        "decision": "enrich original feed ID; no duplicate library dossier",
+        "limitations": "alpha project; Python 3.10–<3.13, PyTorch 2.5+, CUDA 12+; 2B model; voice generation must be consent-based and clearly labeled"
+      }
+    ]
+  },
+  "topThreeSuggestions": [
+    {
+      "rank": 1,
+      "title": "Serviette: تقييم استرجاع عربي/إنجليزي",
+      "reason": "قياس Recall@10 وMRR وNDCG@10 بدل افتراض أن الإجابات تبدو صحيحة؛ صعوبة متوسطة تقديرية."
+    },
+    {
+      "rank": 2,
+      "title": "VoxCPM2: مجموعة تقييم للنطق العربي واللهجات",
+      "reason": "اختبار CER/WER وتقييم بشري على عينة ثابتة؛ يميز دعم العربية المعلن عن الجودة الفعلية."
+    },
+    {
+      "rank": 3,
+      "title": "Serviette: مساعد بحث لمذكرات الجامعة مع استشهادات",
+      "reason": "قيمة تعليمية مباشرة مع استرجاع محلي وتنبيه عند غياب المصدر؛ يتطلب حماية ملفات المستخدم."
+    }
+  ],
+  "executionStatus": {
+    "localPythonAvailable": false,
+    "commandsNotRun": [
+      "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-10-29-1145.json",
+      "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-10-29-1145.json",
+      "python -m unittest discover -s tests -v"
+    ],
+    "structuralValidation": "12/12 new records passed JS structural checks; all IDs and URLs matched feed; old 462 entries were byte-for-byte equivalent at object level in the merged document; CI official validation pending",
+    "testEvidence": null
+  },
+  "sources": [
+    {
+      "title": "Current feed snapshot",
+      "url": "https://github.com/lm7md-ai/.-/blob/main/site/data/feed.json"
+    },
+    {
+      "title": "Serviette README and license",
+      "url": "https://github.com/pathwaycom/serviette"
+    },
+    {
+      "title": "VoxCPM README and license",
+      "url": "https://github.com/OpenBMB/VoxCPM"
+    },
+    {
+      "title": "Previous eight-project review",
+      "url": "https://github.com/lm7md-ai/.-/blob/main/editorial/library/review-2026-10-29-0855.json"
+    }
+  ]
+}
