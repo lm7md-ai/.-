@@ -1,0 +1,246 @@
+{
+  "version": 1,
+  "compiledAt": "2026-10-29T12:25:42Z",
+  "published": false,
+  "siteContent": false,
+  "note": "مراجعة بحثية مستقلة غير منشورة؛ لم يُشغّل أي مشروع ولا توجد testEvidence. المشاريع الموجودة في التغذية تُثرى بمعرفاتها الأصلية ولا تُضاف كنسخ مكررة إلى الكتالوج التاريخي.",
+  "cumulativeCatalog": {
+    "path": "editorial/library/catalog-2026-10-29-0559.json",
+    "totalProjects": 31,
+    "archived": 2,
+    "nonArchived": 29,
+    "catalogMetricsCapturedAt": "2026-10-29T02:57:09.360Z",
+    "notRefreshedInThisRun": true,
+    "note": "الكتالوج التاريخي بقي كما هو مع طوابع قياسه القديمة؛ أُعيد قياس metadata للمشاريع الثمانية السابقة ومشروعي التغذية الجديدين."
+  },
+  "previousEight": {
+    "count": 8,
+    "projects": [
+      {
+        "repository": "gradio-app/gradio",
+        "url": "https://github.com/gradio-app/gradio",
+        "stars": 43940,
+        "forks": 3651,
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushedAt": "2026-10-29T10:06:32Z",
+        "updatedAt": "2026-10-29T12:10:20Z",
+        "language": "Python",
+        "measuredAt": "2026-10-29T12:25:42Z",
+        "readmeLicenseQuickStartLastReviewedAt": "2026-10-29T05:54:30Z",
+        "executed": false,
+        "testEvidence": null
+      },
+      {
+        "repository": "thedotmack/claude-mem",
+        "url": "https://github.com/thedotmack/claude-mem",
+        "stars": 104228,
+        "forks": 9194,
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushedAt": "2026-10-29T00:48:27Z",
+        "updatedAt": "2026-10-29T12:21:04Z",
+        "language": "TypeScript",
+        "measuredAt": "2026-10-29T12:25:42Z",
+        "readmeLicenseQuickStartLastReviewedAt": "2026-10-29T05:54:30Z",
+        "executed": false,
+        "testEvidence": null
+      },
+      {
+        "repository": "ultralytics/ultralytics",
+        "url": "https://github.com/ultralytics/ultralytics",
+        "stars": 62962,
+        "forks": 11931,
+        "license": "AGPL-3.0",
+        "archived": false,
+        "pushedAt": "2026-10-29T12:00:40Z",
+        "updatedAt": "2026-10-29T11:55:12Z",
+        "language": "Python",
+        "measuredAt": "2026-10-29T12:25:42Z",
+        "readmeLicenseQuickStartLastReviewedAt": "2026-10-29T05:54:30Z",
+        "executed": false,
+        "testEvidence": null
+      },
+      {
+        "repository": "harry0703/MoneyPrinterTurbo",
+        "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+        "stars": 136235,
+        "forks": 21666,
+        "license": "MIT",
+        "archived": false,
+        "pushedAt": "2026-10-29T10:55:15Z",
+        "updatedAt": "2026-10-29T12:18:18Z",
+        "language": "Python",
+        "measuredAt": "2026-10-29T12:25:42Z",
+        "readmeLicenseQuickStartLastReviewedAt": "2026-10-29T05:54:30Z",
+        "executed": false,
+        "testEvidence": null
+      },
+      {
+        "repository": "microsoft/AI-For-Beginners",
+        "url": "https://github.com/microsoft/AI-For-Beginners",
+        "stars": 70347,
+        "forks": 13674,
+        "license": "MIT",
+        "archived": false,
+        "pushedAt": "2026-10-23T23:55:14Z",
+        "updatedAt": "2026-10-29T12:18:13Z",
+        "language": "Jupyter Notebook",
+        "measuredAt": "2026-10-29T12:25:42Z",
+        "readmeLicenseQuickStartLastReviewedAt": "2026-10-29T05:54:30Z",
+        "executed": false,
+        "testEvidence": null
+      },
+      {
+        "repository": "usebruno/bruno",
+        "url": "https://github.com/usebruno/bruno",
+        "stars": 47922,
+        "forks": 3052,
+        "license": "MIT",
+        "archived": false,
+        "pushedAt": "2026-10-29T12:16:47Z",
+        "updatedAt": "2026-10-29T12:19:31Z",
+        "language": "JavaScript",
+        "measuredAt": "2026-10-29T12:25:42Z",
+        "readmeLicenseQuickStartLastReviewedAt": "2026-10-29T05:54:30Z",
+        "executed": false,
+        "testEvidence": null
+      },
+      {
+        "repository": "keras-team/keras",
+        "url": "https://github.com/keras-team/keras",
+        "stars": 64397,
+        "forks": 19803,
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushedAt": "2026-10-27T23:29:20Z",
+        "updatedAt": "2026-10-29T09:52:13Z",
+        "language": "Python",
+        "measuredAt": "2026-10-29T12:25:42Z",
+        "readmeLicenseQuickStartLastReviewedAt": "2026-10-29T05:54:30Z",
+        "executed": false,
+        "testEvidence": null
+      },
+      {
+        "repository": "k2-fsa/sherpa-onnx",
+        "url": "https://github.com/k2-fsa/sherpa-onnx",
+        "stars": 15589,
+        "forks": 1825,
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushedAt": "2026-10-29T12:00:57Z",
+        "updatedAt": "2026-10-29T12:18:59Z",
+        "language": "C++",
+        "measuredAt": "2026-10-29T12:25:42Z",
+        "readmeLicenseQuickStartLastReviewedAt": "2026-10-29T05:54:30Z",
+        "executed": false,
+        "testEvidence": null
+      }
+    ],
+    "readmeLicenseQuickStartLastReviewedAt": "2026-10-29T05:54:30Z",
+    "metadataMeasuredAt": "2026-10-29T12:25:42Z"
+  },
+  "newFeedProjects": {
+    "count": 2,
+    "projects": [
+      {
+        "repository": "Chalarangelo/30-seconds-of-code",
+        "url": "https://github.com/Chalarangelo/30-seconds-of-code",
+        "feedId": "9e59b2d01cdf2c5068",
+        "stars": 129364,
+        "forks": 12495,
+        "archived": false,
+        "license": "CC-BY-4.0 for snippets; package code lists MIT; README restricts reuse of other site material",
+        "pushedAt": "2026-10-26T16:14:24Z",
+        "updatedAt": "2026-10-29T10:38:40Z",
+        "defaultBranch": "master",
+        "language": "JavaScript",
+        "measuredAt": "2026-10-29T12:25:42Z",
+        "readmeReviewed": true,
+        "licenseFileReviewed": true,
+        "quickStartReviewed": true,
+        "executed": false,
+        "testEvidence": null,
+        "decision": "enrich original feed ID; no duplicate catalog entry",
+        "licenseCaution": "Do not assume website source, text, images or logos are reusable."
+      },
+      {
+        "repository": "denizsafak/abogen",
+        "url": "https://github.com/denizsafak/abogen",
+        "feedId": "db3066dd1047827371",
+        "stars": 6174,
+        "forks": 495,
+        "archived": false,
+        "license": "MIT",
+        "pushedAt": "2026-10-25T21:50:32Z",
+        "updatedAt": "2026-10-29T06:54:41Z",
+        "defaultBranch": "main",
+        "language": "Python",
+        "measuredAt": "2026-10-29T12:25:42Z",
+        "readmeReviewed": true,
+        "licenseFileReviewed": true,
+        "quickStartReviewed": true,
+        "executed": false,
+        "testEvidence": null,
+        "decision": "enrich original feed ID; no duplicate catalog entry",
+        "licenseCaution": "pyproject says Python <3.13 while README mentions Python 3.13 for some Apple Silicon installs; verify packaging."
+      }
+    ]
+  },
+  "topThreeSuggestions": [
+    {
+      "rank": 1,
+      "title": "Abogen: قاموس نطق عربي قابل للمراجعة",
+      "projectId": "db3066dd1047827371",
+      "reason": "يعالج أخطاء النطق بقياس بشري بدل ادعاء جودة عامة."
+    },
+    {
+      "rank": 2,
+      "title": "30 Seconds of Code: توسيع اختبارات المقتطفات",
+      "projectId": "9e59b2d01cdf2c5068",
+      "reason": "يرفع موثوقية الأمثلة ويكشف التقادم مع عزل التنفيذ والترخيص."
+    },
+    {
+      "rank": 3,
+      "title": "Abogen: مؤشر خصوصية للوضع المحلي ونقاط LLM",
+      "projectId": "db3066dd1047827371",
+      "reason": "يوضح هل يغادر النص الجهاز مع اختبار offline قابل للقياس."
+    }
+  ],
+  "proposalCount": 9,
+  "executionStatus": {
+    "projectsExecuted": false,
+    "testEvidence": null,
+    "notes": "تمت مراجعة README وLICENSE والمتطلبات وخطوات البدء للمشروعين الجديدين؛ لم يُنفذ تثبيت أو تشغيل. المشاريع الثمانية السابقة لها مراجعة موثقة صباح اليوم وأعيد قياس metadata."
+  },
+  "sources": [
+    {
+      "title": "Cumulative 31-project catalog",
+      "url": "https://github.com/lm7md-ai/.-/blob/main/editorial/library/catalog-2026-10-29-0559.json"
+    },
+    {
+      "title": "30 Seconds of Code README",
+      "url": "https://github.com/Chalarangelo/30-seconds-of-code/blob/master/README.md"
+    },
+    {
+      "title": "30 Seconds of Code package.json",
+      "url": "https://github.com/Chalarangelo/30-seconds-of-code/blob/master/package.json"
+    },
+    {
+      "title": "30 Seconds of Code LICENSE",
+      "url": "https://github.com/Chalarangelo/30-seconds-of-code/blob/master/LICENSE"
+    },
+    {
+      "title": "Abogen README",
+      "url": "https://github.com/denizsafak/abogen/blob/main/README.md"
+    },
+    {
+      "title": "Abogen LICENSE",
+      "url": "https://github.com/denizsafak/abogen/blob/main/LICENSE"
+    },
+    {
+      "title": "Abogen pyproject.toml",
+      "url": "https://github.com/denizsafak/abogen/blob/main/pyproject.toml"
+    }
+  ]
+}

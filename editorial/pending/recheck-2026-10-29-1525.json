@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "auditedAt": "2026-10-29T12:25:42Z",
+  "baseMainSha": "7393e502ec1f2941f15330fc0abd6e04662d5906",
+  "currentState": {
+    "feedGeneratedAt": "2026-10-29T12:05:21+00:00",
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialEntries": 474,
+    "activeExactEditorial": 286,
+    "unenrichedNews": 500,
+    "unenrichedProjects": 14,
+    "seenIds": 1756,
+    "status": {
+      "lastAttemptAt": "2026-10-29T12:05:21+00:00",
+      "lastSuccessfulAt": "2026-10-29T12:05:21+00:00",
+      "state": "ok",
+      "sourceStates": {
+        "ok": 24,
+        "empty": 2,
+        "failed": 0
+      },
+      "collected": 317
+    }
+  },
+  "incomingAudit": {
+    "filesBeforeBatch": 47,
+    "rowsBeforeBatch": 475,
+    "uniqueIdsBeforeBatch": 474,
+    "duplicateRows": 1,
+    "duplicateId": "853c63f738f0cecf3b",
+    "rowsAlreadyPresentInEditorialExactIdUrl": 472,
+    "activeFeedAndEditorialExactRows": 284,
+    "historicalEditorialExactOutsideFeed": 187,
+    "crossIdSameUrlCollision": {
+      "count": 1,
+      "id": "7a99eca9b2ce14d9f5",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "currentFeedId": "e0cbbf211a55e79f34",
+      "decision": "keep both identities; no automatic replacement"
+    },
+    "seenOnlyMissing": [
+      {
+        "id": "940ec4695c1e241c2f",
+        "topic": "NVIDIA OpenShell"
+      },
+      {
+        "id": "317abcdd1b20728a7e",
+        "topic": "Canva Craft"
+      },
+      {
+        "id": "662e68277c6361dd4b",
+        "topic": "1Password agent sign-in"
+      }
+    ],
+    "activeFeedExactButUnenriched": 0,
+    "confirmedExpiredNews": 0,
+    "expiryNote": "No record declared expired solely because it is outside feed; some historical rows lack reliable publication dates.",
+    "latestBatch1145": {
+      "items": 12,
+      "alreadyPresentExact": true,
+      "decision": "do not re-import"
+    }
+  },
+  "newBatch": {
+    "path": "editorial/incoming/nabdh-editorial-2026-10-29-1525.json",
+    "items": 11,
+    "news": 9,
+    "projects": 2,
+    "proposalCount": 9,
+    "ids": [
+      "ee7bc266ca0de39106",
+      "d62a8f09dced3dd919",
+      "84bb9b072076a8f839",
+      "7b13a13aa99910ae3a",
+      "350861c2ac740fd57c",
+      "84605754ff747e95c4",
+      "eaf59681171967dd58",
+      "6ad224e2a089ce4ff5",
+      "b784365e0fea45f615",
+      "9e59b2d01cdf2c5068",
+      "db3066dd1047827371"
+    ],
+    "basisCounts": {
+      "article": 4,
+      "metadata": 5,
+      "readme": 2
+    }
+  },
+  "mergePlan": {
+    "oldEditorialEntries": 474,
+    "newEntries": 11,
+    "expectedEditorialEntries": 485,
+    "activeExactAfterMerge": 297,
+    "unenrichedAfterMerge": 503,
+    "oldEntriesPreserved": true,
+    "feedChanged": false,
+    "seenChanged": false,
+    "workflowOrCodeChanged": false
+  },
+  "structuralValidation": {
+    "result": "passed",
+    "rules": [
+      "11 IDs and URLs match current feed",
+      "new IDs absent from existing editorial",
+      "HTTPS sources and required fields",
+      "reviewedAt timezone and honest basis",
+      "9 proposals complete with 3–12 steps",
+      "all 474 old records preserved"
+    ],
+    "localPythonAvailable": false,
+    "commandsNotRun": [
+      "python scripts/editorial.py validate /tmp/nabdh-editorial-2026-10-29-1525.json",
+      "python scripts/editorial.py import /tmp/nabdh-editorial-2026-10-29-1525.json",
+      "python -m unittest discover -s tests -v"
+    ],
+    "note": "Equivalent structural validation performed; official CI must pass before merge."
+  },
+  "publicationVerification": {
+    "state": "pending",
+    "note": "Verify live JSON and detail links after deployment; do not infer from commit alone."
+  }
+}
