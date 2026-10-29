@@ -1,0 +1,167 @@
+{
+  "version": 1,
+  "researchedAt": "2026-10-29T23:43:00+03:00",
+  "published": false,
+  "siteContent": false,
+  "status": "research_only_not_published",
+  "identity": {
+    "incomingRecordId": "940ec4695c1e241c2f",
+    "feedId": null,
+    "editorialId": null,
+    "officialRepository": "https://github.com/NVIDIA/OpenShell",
+    "officialDocs": "https://docs.nvidia.com/openshell/latest/"
+  },
+  "officialStatus": {
+    "exists": true,
+    "archived": false,
+    "license": "Apache-2.0",
+    "stars": 20683,
+    "forks": 2029,
+    "openIssues": 606,
+    "updatedAt": "2026-10-29T20:38:45Z",
+    "measuredAt": "2026-10-29T23:43:00+03:00",
+    "readmeBlobSha": "cdbe4562391d4ed14d4f8bcce62f4b7c355a862d",
+    "licenseBlobSha": "f13d24c3fa482d61605d600e5ac1248799bd4107"
+  },
+  "overview": "OpenShell هو runtime لعزل وكلاء الذكاء الاصطناعي داخل sandboxes مع سياسات وصول للملفات ونداءات النظام والشبكة. يصف README تطبيقًا للسياسة وقت التشغيل وفحصًا رسميًا لبعض تغييرات السياسة قبل اعتمادها؛ هذه ادعاءات المشروع وليست مراجعة أمنية مستقلة.",
+  "requirements": "Linux أو macOS على Apple Silicon أو Windows عبر WSL 2 (تجريبي)، مع Docker أو Podman أو افتراضية مضيفة. يذكر pyproject.toml Python >=3.11، ويحدد Cargo.toml Rust 1.94. دعم الأنظمة والميزات يختلف حسب مصفوفة الدعم الرسمية.",
+  "quickStart": [
+    "راجع install.sh وملفات الوثائق قبل تشغيل المثبت.",
+    "ثبّت CLI والبوابة المحلية من المسار الرسمي بعد مراجعة السكربت.",
+    "أنشئ sandbox تجريبيًا باسم demo.",
+    "اتبع دليل Run Your First Agent على بيانات غير حساسة.",
+    "اختبر سياسة السماح والمنع قبل ربط أي اعتماد أو حساب حقيقي."
+  ],
+  "localCloudCost": "المسار الأساسي مصمم لبوابة محلية وsandbox؛ لا يلزم تشغيل خدمة سحابية لإثبات الفكرة الأساسية. استخدام نماذج أو APIs خارجية قد يضيف تكاليف مزودين، كما أن الافتراضية والعتاد يستهلكان موارد محلية.",
+  "alternatives": "بدائل البنية تشمل Docker أو Podman مع طبقة سياسات مخصصة، لكنها ليست مكافئة تلقائيًا لميزات OpenShell. قارن threat model وتغطية الشبكة والاعتمادات قبل اختيار بديل.",
+  "improvements": [
+    {
+      "title": "عارض فروق السياسات بالعربية",
+      "problem": "قد يصعب على المطور فهم أثر تعديل سياسة الوصول قبل اعتماده.",
+      "approach": "عرض فرق قبل/بعد يوضح صلاحيات الملفات والشبكة والاعتمادات الجديدة مع طلب مراجعة بشرية.",
+      "stack": "Python, FastAPI, React, OpenShell policy schema",
+      "steps": [
+        "اقرأ سياسات اصطناعية فقط.",
+        "حوّل القواعد إلى نموذج موحد.",
+        "اعرض الصلاحيات الجديدة والمزالة.",
+        "صدّر تقريرًا محليًا يخفي القيم الحساسة."
+      ],
+      "metric": "نسبة تغييرات السياسة التي تظهر بوضوح ووقت المراجعة لكل تغيير.",
+      "difficulty": "متوسط (تقديري)",
+      "risks": "قد يكشف التقرير مسارات أو مضيفين حساسين؛ اجعله محليًا مع تنقيح القيم.",
+      "sources": [
+        {
+          "title": "OpenShell README",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        },
+        {
+          "title": "OpenShell architecture",
+          "url": "https://docs.nvidia.com/openshell/latest/about/architecture"
+        }
+      ]
+    },
+    {
+      "title": "اختبارات تراجع لعزل الوكلاء",
+      "problem": "قد توسع تغييرات السياسة الوصول دون اكتشاف ذلك.",
+      "approach": "اختبارات سماح/منع على ملفات اصطناعية ونقاط نهاية تجريبية مع تقرير فرق.",
+      "stack": "Python, pytest, OpenShell CLI, JSONL",
+      "steps": [
+        "عرّف حالات وصول اصطناعية.",
+        "شغّلها على السياسة الأساسية.",
+        "أعد التشغيل بعد تعديل السياسة.",
+        "قارن النتائج المتوقعة بالفعلية."
+      ],
+      "metric": "تغطية قواعد السياسة وعدد حالات الوصول غير المقصودة المكتشفة.",
+      "difficulty": "متوسط (تقديري)",
+      "risks": "التغطية الجزئية قد توحي بأمان غير مكتمل؛ اختبر منصات متعددة.",
+      "sources": [
+        {
+          "title": "OpenShell tests",
+          "url": "https://github.com/NVIDIA/OpenShell/tree/main/tests"
+        },
+        {
+          "title": "OpenShell architecture",
+          "url": "https://docs.nvidia.com/openshell/latest/about/architecture"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "مختبر محلي لتجارب الوكلاء الطلابية",
+      "problem": "تشغيل وكيل على ملفات مشروع طالب قد يوسع الوصول أكثر مما يحتاجه.",
+      "approach": "قوالب sandbox محلية مع ملفات اصطناعية وسياسات وصول ضيقة ومنع تمرير أسرار.",
+      "stack": "OpenShell, Python, local model endpoint optional",
+      "steps": [
+        "جهّز مشروعًا اصطناعيًا.",
+        "أنشئ سياسة قراءة/كتابة محدودة.",
+        "شغّل مهمة غير حساسة وسجّل محاولات الوصول.",
+        "قارن السلوك قبل توسيع السياسة."
+      ],
+      "metric": "نسبة المهام المكتملة دون منح وصول واسع للمضيف.",
+      "difficulty": "مرتفع (تقديري)",
+      "risks": "استهلاك موارد محلية وشعور زائف بالأمان إذا لم تُختبر السياسة.",
+      "sources": [
+        {
+          "title": "NVIDIA OpenShell",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        },
+        {
+          "title": "Support matrix",
+          "url": "https://docs.nvidia.com/openshell/latest/about/support-matrix"
+        }
+      ]
+    },
+    {
+      "title": "مراجع سياسة في Pull Request",
+      "problem": "قد تفتقر تغييرات السياسات إلى ملخص مفهوم للمراجع.",
+      "approach": "إرفاق تقرير آلي يوضح الصلاحيات الجديدة والمخاطر دون تضمين أسرار أو قيم حساسة.",
+      "stack": "Python, GitHub Actions, OpenShell policy parser",
+      "steps": [
+        "حلل فرق السياسة في بيئة CI.",
+        "صنّف الملفات والشبكة والاعتمادات المتغيرة.",
+        "أنشئ تعليقًا مختصرًا مع الروابط للمصدر.",
+        "احجب المسارات الحساسة واختبر الصلاحيات."
+      ],
+      "metric": "زمن مراجعة السياسة ونسبة التغييرات التي تحتاج توضيحًا يدويًا.",
+      "difficulty": "متوسط (تقديري)",
+      "risks": "قد يكشف تعليق CI معلومات حساسة؛ يجب التنقيح وضبط صلاحيات المستودع.",
+      "sources": [
+        {
+          "title": "OpenShell repository",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        },
+        {
+          "title": "GitHub Actions documentation",
+          "url": "https://docs.github.com/actions"
+        }
+      ]
+    }
+  ],
+  "religious": [],
+  "sources": [
+    {
+      "title": "NVIDIA OpenShell — official repository and README",
+      "url": "https://github.com/NVIDIA/OpenShell"
+    },
+    {
+      "title": "NVIDIA OpenShell — Apache 2.0 license",
+      "url": "https://github.com/NVIDIA/OpenShell/blob/main/LICENSE"
+    },
+    {
+      "title": "OpenShell architecture",
+      "url": "https://docs.nvidia.com/openshell/latest/about/architecture"
+    },
+    {
+      "title": "OpenShell support matrix",
+      "url": "https://docs.nvidia.com/openshell/latest/about/support-matrix"
+    },
+    {
+      "title": "Run Your First Agent",
+      "url": "https://docs.nvidia.com/openshell/latest/about/run-your-first-agent"
+    }
+  ],
+  "testEvidence": null,
+  "tested": false,
+  "developerDisplayRequirements": "هذا الملف بحثي فقط ولا يُعرض على الموقع العام. عند بناء واجهة مستقبلية، اعرض overview وrequirements وquickStart والتكاليف والمحلي/السحابي والترخيص والنشاط وتاريخ القياس، ثم improvements/spinoffs كأقسام قابلة للطي. اعرض difficulty كتقدير وrisks وsources، ولا تدّعِ الاختبار ما دام testEvidence فارغًا. لم يتم إجراء تطوير."
+}
