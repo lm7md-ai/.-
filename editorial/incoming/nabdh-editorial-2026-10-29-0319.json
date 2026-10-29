@@ -1,0 +1,726 @@
+{
+  "version": 1,
+  "items": {
+    "29f0d4517b8b3b856d": {
+      "url": "https://www.cartesia.ai/blog/from-tokens-to-bytes-part-1",
+      "reviewedAt": "2026-10-29T03:19:26+03:00",
+      "titleAr": "Cartesia تختبر شبكات هرمية تتعلم تجزئة البايتات داخل النموذج",
+      "summaryAr": "تعرض Cartesia بنية H-Net التي تتعلم تجميع البايتات داخل النموذج بدل الاعتماد الكامل على مُجزّئ نصوص مصمم يدويًا. يذكر ملخص البحث مكاسب في كفاءة الحوسبة، لكنها نتائج تنسبها الشركة إلى تجاربها ولا تمثل تحققًا مستقلًا.",
+      "whyItMatters": "قد تؤثر طريقة تمثيل النص في كلفة التدريب والتعميم، لا حجم النموذج وحده. الفكرة تستحق المتابعة، لكن الأرقام المعلنة لا تثبت تفوقًا عامًا في التطبيقات العملية.",
+      "audience": "باحثو تعلم الآلة ومهندسو تدريب النماذج اللغوية.",
+      "nextSteps": [
+        "راجع إعدادات H-Net وخط الأساس والبيانات ومقياس compute-to-loss عند توفر النص الأصلي.",
+        "لا تستخدم أرقام الكفاءة في مقارنة إنتاجية قبل مراجعة المنهجية أو إعادة التجربة."
+      ],
+      "limitations": "تعذر فتح تدوينة Cartesia كاملة؛ بُني الملخص على بيانات الصفحة وملخص فهرسة ثانوي. الأرقام ادعاءات من المطور وليست نتائج اختبرناها.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "Cartesia — From Tokens to Bytes I",
+          "url": "https://www.cartesia.ai/blog/from-tokens-to-bytes-part-1"
+        },
+        {
+          "title": "ملخص فهرسة ثانوي",
+          "url": "https://forck.live/items/28892-from-tokens-to-bytes-i-scaling-hierarchical-networks"
+        }
+      ]
+    },
+    "e19bd8c686545cca7a": {
+      "url": "https://www.bbc.co.uk/news/articles/cq8jzkpjr28vo?at_medium=RSS&at_campaign=rss",
+      "reviewedAt": "2026-10-29T03:19:26+03:00",
+      "titleAr": "تقرير عن تسريب سجلات موظفين ومتعاقدين بجهات أمنية أمريكية يثير مخاطر انتحال الهوية",
+      "summaryAr": "يشير عنوان BBC وتغطية ثانوية إلى تسريب سجلات تخص أكثر من 41 ألف موظف ومتعاقد في وزارة الأمن الداخلي الأمريكية. قد تساعد بيانات الهيكل الوظيفي وعلاقات الوصول المهاجمين على صياغة رسائل تصيد أكثر إقناعًا؛ لا يتضمن هذا الملخص أسماء أو بيانات شخصية.",
+      "whyItMatters": "توضح الحادثة أن أدلة الموظفين والبيانات الوصفية حساسة أمنيًا حتى دون تسريب كلمات المرور. يلزم الجمع بين تقليل الصلاحيات ومراقبة التصدير وخطط إخطار واضحة.",
+      "audience": "فرق الأمن السيبراني والهوية والوصول والخصوصية.",
+      "nextSteps": [
+        "انتظر تأكيد الجهة المتأثرة ومزود الهوية قبل الجزم بمسار الاختراق.",
+        "راجع صلاحيات تصدير الأدلة الوظيفية ومراقبة التنزيلات الكبيرة."
+      ],
+      "limitations": "تعذر الوصول إلى نص BBC الكامل؛ بعض تفاصيل النطاق مستندة إلى تغطية ثانوية. لا ننشر أسماء أو بيانات شخصية، ولم نتحقق من كامل مجموعة البيانات.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "BBC — تقرير التسريب",
+          "url": "https://www.bbc.co.uk/news/articles/cq8jzkpjr28vo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "Wired — تغطية ثانوية",
+          "url": "https://www.wired.com/story/massive-leak-exposes-41000-homeland-security-workers-including-undercover-ice-agents"
+        }
+      ]
+    },
+    "3b64f2126ca310fc1a": {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity",
+      "reviewedAt": "2026-10-29T03:19:26+03:00",
+      "titleAr": "رئيس Instagram يتوقع تصاعد القلق من الذكاء الاصطناعي بين المبدعين",
+      "summaryAr": "في مقابلة نقلتها The Verge، قال آدم موسيري إن المخاوف تشمل ملكية المحتوى المستخدم في التدريب والسلامة وإزاحة الوظائف. وأشار إلى توسع وسم الحسابات المولدة بالذكاء الاصطناعي، مع استمرار صعوبة التعامل مع المحتوى المضلل والتزييف.",
+      "whyItMatters": "هذه تصريحات مدير منصة وليست قياسًا للرأي العام، لكنها تبين أن الشفافية وحقوق المبدعين وسياسات الوسم أصبحت مسائل تصميم منتج وثقة.",
+      "audience": "مطورو المنصات الاجتماعية وصناع المحتوى وفرق الثقة والسلامة.",
+      "nextSteps": [
+        "ميّز بين وسم المحتوى وتوثيق مصدره، مع مسار للإبلاغ والتصحيح.",
+        "اختبر فهم المستخدمين للوسوم بدل افتراض أن العلامة وحدها تحل المشكلة."
+      ],
+      "limitations": "التوقعات آراء من مقابلة وليست نتيجة دراسة ممثلة؛ لا يقدم المقال قياسًا مستقلًا لفعالية الوسوم.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "The Verge — Adam Mosseri on AI negativity",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity"
+        }
+      ]
+    },
+    "c58119c56acec6390e": {
+      "url": "https://www.wired.com/story/the-2000-nit-oled-in-apples-new-macbook-pro-is-a-big-deal/",
+      "reviewedAt": "2026-10-29T03:19:26+03:00",
+      "titleAr": "Apple تعلن شاشة Tandem OLED بسطوع يصل إلى 2000 شمعة في MacBook Pro الجديد",
+      "summaryAr": "وفق إعلان Apple الرسمي، يأتي MacBook Pro الجديد بشاشة Tandem OLED تسوّقها الشركة باسم PROLED XDR، وسطوع ذروة معلن يصل إلى 2000 شمعة وتباين 10,000,000:1 ومعدل تحديث 120Hz. ويضيف الإعلان اللمس إلى Mac للمرة الأولى بحسب الشركة.",
+      "whyItMatters": "قد يهم المصممين ومحرري الفيديو، لكن الأرقام المعلنة لا تغني عن اختبارات مستقلة لعمر البطارية والسطوع المستمر ودقة الألوان.",
+      "audience": "مصممو الجرافيك والفيديو ومطورو تطبيقات Mac.",
+      "nextSteps": [
+        "قارن قياسات مراجعات مستقلة للسطوع المستمر ودقة الألوان وعمر البطارية.",
+        "تحقق من السعر والتوفر المحليين قبل اتخاذ قرار شراء."
+      ],
+      "limitations": "تعذر فتح مقال Wired كاملًا؛ استند الملخص إلى إعلان Apple الرسمي، فالمواصفات ادعاءات الشركة وليست اختبارًا مستقلًا.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "Apple Newsroom — MacBook Pro",
+          "url": "https://www.apple.com/newsroom/2026/10/apple-unveils-groundbreaking-macbook-pro-with-proled-xdr-display/"
+        },
+        {
+          "title": "Wired — OLED MacBook Pro",
+          "url": "https://www.wired.com/story/the-2000-nit-oled-in-apples-new-macbook-pro-is-a-big-deal/"
+        }
+      ]
+    },
+    "52cf4d98c3bcf391c8": {
+      "url": "https://arstechnica.com/gadgets/2026/10/as-us-ties-fray-europe-plans-first-undersea-cable-link-to-greenland/",
+      "reviewedAt": "2026-10-29T03:19:26+03:00",
+      "titleAr": "الاتحاد الأوروبي يدرس كابلًا بحريًا عبر غرينلاند لتعزيز مرونة الاتصالات",
+      "summaryAr": "تقول Euronews، استنادًا إلى مسودة استراتيجية للقطب الشمالي، إن الاتحاد الأوروبي يدرس كابلًا يصل غرينلاند بأوروبا مع طموح لامتداد محتمل عبر كندا نحو اليابان وكوريا الجنوبية. الهدف تنويع مسارات البيانات وتقليل الاعتماد على بنية قد تتعطل في الأزمات.",
+      "whyItMatters": "تنويع الكابلات البحرية قد يحسن مرونة الاتصالات الدولية، لكن المشروع يحتاج تمويلًا وتعاونًا دوليًا وتقييمًا للجدوى الفنية والتجارية.",
+      "audience": "مهندسو الشبكات وصناع السياسات الرقمية ومهتمو أمن البنية التحتية.",
+      "nextSteps": [
+        "تابع وثائق الاتحاد الأوروبي لمعرفة ما إذا تحولت الفكرة إلى خطة ممولة ومسار محدد.",
+        "ميّز بين نية سياسية وبين عقد إنشاء وجدول تنفيذ نهائي."
+      ],
+      "limitations": "المقترح لا يحدد مسارًا نهائيًا أو ميزانية أو جدول بناء؛ الامتداد إلى آسيا طموح وليس التزامًا مكتملًا.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Ars Technica — كابل إلى غرينلاند",
+          "url": "https://arstechnica.com/gadgets/2026/10/as-us-ties-fray-europe-plans-first-undersea-cable-link-to-greenland/"
+        },
+        {
+          "title": "Euronews — EU eyes Arctic cable",
+          "url": "https://www.euronews.com/2026/10/19/eu-eyes-arctic-cable-linking-greenland-to-europe-amid-growing-security-threats"
+        }
+      ]
+    },
+    "8ec589c6a498791f1a": {
+      "url": "https://aitnews.com/2026/10/29/%d8%a3%d9%85%d8%a7%d8%b2%d9%88%d9%86-%d8%aa%d9%83%d8%b4%d9%81-%d8%b9%d9%86-5-%d8%a3%d8%ac%d9%87%d8%b2%d8%a9-%d8%ac%d8%af%d9%8a%d8%af%d8%a9-%d9%85%d9%86-%d8%a3%d9%84%d9%8a%d9%83%d8%b3%d8%a7-%d8%a5/",
+      "reviewedAt": "2026-10-29T03:19:26+03:00",
+      "titleAr": "Amazon تعلن خمسة أجهزة Alexa جديدة مع توسع المعالجة الذكية داخل المنزل",
+      "summaryAr": "أعلنت Amazon أجهزة منزلية جديدة منها Echo Show 16 وEcho Dot وEcho Studio بكاميرا منزلية وEcho Time وإطار صور Alexa. وتقول الشركة إن بعض الأجهزة تستخدم شريحة AZ3 ومسرّع ذكاء اصطناعي على الجهاز؛ قد تتطلب ميزات أخرى اشتراكًا أو اتصالًا سحابيًا.",
+      "whyItMatters": "يتجه المساعد الصوتي إلى تفاعل متعدد الخطوات مع أجهزة المنزل، ما يزيد أهمية فهم المعالجة المحلية والسحابية وضبط الكاميرا والميكروفون والبيانات.",
+      "audience": "مستخدمو المنزل الذكي ومطورو إنترنت الأشياء ومهتمو المساعدات الصوتية.",
+      "nextSteps": [
+        "راجع إعدادات الخصوصية والكاميرا والميكروفون قبل الربط.",
+        "تحقق من توفر الأجهزة والأسعار واشتراطات Alexa+ في بلدك."
+      ],
+      "limitations": "المصدر الأساسي إعلان Amazon التسويقي؛ ادعاءات الأداء من الشركة، والأسعار والتوفر قد يخصان السوق الأمريكية.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "About Amazon — new Alexa devices",
+          "url": "https://www.aboutamazon.com/news/devices/new-alexa-devices-2026"
+        },
+        {
+          "title": "البوابة العربية للأخبار التقنية",
+          "url": "https://aitnews.com/2026/10/29/%d8%a3%d9%85%d8%a7%d8%b2%d9%88%d9%86-%d8%aa%d9%83%d8%b4%d9%81-%d8%b9%d9%86-5-%d8%a3%d8%ac%d9%87%d8%b2%d8%a9-%d8%ac%d8%af%d9%8a%d8%af%d8%a9-%d9%85%d9%86-%d8%a3%d9%84%d9%8a%d9%83%d8%b3%d8%a7-%d8%a5/"
+        }
+      ]
+    },
+    "3801bfeec8403796ab": {
+      "url": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
+      "reviewedAt": "2026-10-29T03:19:26+03:00",
+      "titleAr": "Microsoft تكشف إيرادات Azure الفصلية: 33.2 مليار دولار ونمو سنوي 48%",
+      "summaryAr": "أعلنت Microsoft نتائج ربعها المنتهي في 30 سبتمبر 2026، وذكرت التغطية أن Azure حققت نحو 33.2 مليار دولار، بزيادة 48% سنويًا. الإفصاح بالدولار يساعد على المقارنة، لكنه لا يعني أن كل الإيرادات جاءت من الذكاء الاصطناعي.",
+      "whyItMatters": "الأرقام الفعلية تفيد في تقييم سوق السحابة؛ ينبغي فصل الخدمات التقليدية عن أحمال الذكاء الاصطناعي ومقارنة النمو والتكلفة والالتزامات معًا.",
+      "audience": "مطورو السحابة وطلاب الحاسب ومحللو التقنية.",
+      "nextSteps": [
+        "قارن الإيراد بنمو Google Cloud وAWS مع مراعاة اختلاف تعريف القطاعات.",
+        "استخدم أسعار الخدمة الفعلية لتقدير تكلفة مشروع AI بدل استنتاجها من نمو الإيرادات."
+      ],
+      "limitations": "الأرقام من إفصاح الشركة؛ تقسيم الإيرادات لا يحدد ما يعود إلى الذكاء الاصطناعي وحده، كما تختلف تعريفات القطاعات بين الشركات.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Microsoft Investor Relations — FY27 Q1",
+          "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast"
+        },
+        {
+          "title": "TechCrunch — Azure revenue",
+          "url": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/"
+        }
+      ]
+    },
+    "14bd5a3a69122b7bb7": {
+      "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
+      "reviewedAt": "2026-10-29T03:19:26+03:00",
+      "titleAr": "Google توسّع الإعلانات داخل AI Mode إلى عشرة أسواق جديدة",
+      "summaryAr": "قالت Google في إعلان رسمي إنها توسع الإعلانات في AI Mode إلى عشرة أسواق، مع خطط لأسواق إضافية في الربع الرابع، وأعلنت إعلانات متعددة الأدوار في الولايات المتحدة. وتقول الشركة إن المواضع ستُوسم بوضوح.",
+      "whyItMatters": "يتحول تحقيق الدخل من البحث الحواري إلى سياق متابعة سؤال المستخدم، ما يهم الناشرين والمعلنين وشفافية تجربة البحث.",
+      "audience": "المعلنون ومطورو البحث والناشرون ومهتمو الخصوصية.",
+      "nextSteps": [
+        "اختبر ما إذا كانت الإعلانات تظل مميزة داخل محادثة طويلة.",
+        "راقب التوفر الفعلي في كل سوق؛ لا تفترض أن الميزة وصلت إلى السعودية."
+      ],
+      "limitations": "بيانات الأداء التي تذكرها Google داخلية وليست تقييمًا مستقلًا؛ التوسع لا يشمل كل الدول.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Google Ads & Commerce Blog — ads in AI Mode",
+          "url": "https://blog.google/products/ads-commerce/ads-in-ai-mode-global/"
+        },
+        {
+          "title": "TechCrunch — Google expands AI Search ads",
+          "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/"
+        }
+      ]
+    },
+    "cf0b445a13fca74cd4": {
+      "url": "https://www.theverge.com/gadgets/1021405/akai-open-source-mpc-sample-key",
+      "reviewedAt": "2026-10-29T03:19:26+03:00",
+      "titleAr": "Akai تفتح المجال لتعديلات مفتوحة المصدر على جهاز MPC موسيقي جديد",
+      "summaryAr": "تقول The Verge إن Akai تمنح مطورين وصولًا مبكرًا إلى MPC Sample Key، وتخطط لإتاحة برمجيات ثابتة مفتوحة المصدر وSDK لبعض التعديلات. الجهاز لم يكن قد أُعلن رسميًا بالكامل وقت التقرير.",
+      "whyItMatters": "قد يحول فتح برمجيات الأجهزة منتجًا مغلقًا إلى منصة قابلة للتخصيص، لكن ينبغي انتظار الترخيص وSDK الرسميين قبل بناء منتجات تعتمد عليهما.",
+      "audience": "مطورو البرمجيات المضمنة ومهندسو الصوت ومجتمع الأجهزة مفتوحة المصدر.",
+      "nextSteps": [
+        "انتظر نشر المستودع والترخيص وSDK الرسمي قبل الاعتماد على التعديلات.",
+        "تحقق من حدود الضمان والتحديثات قبل استخدام برمجيات غير رسمية."
+      ],
+      "limitations": "نطاق ما سيصبح مفتوح المصدر غير محدد نهائيًا؛ الأمثلة الأولية لا تثبت جودة أو استقرار البرمجيات.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "The Verge — Akai open-source MPC",
+          "url": "https://www.theverge.com/gadgets/1021405/akai-open-source-mpc-sample-key"
+        }
+      ]
+    },
+    "46f7ddde3368be4c94": {
+      "url": "https://news.google.com/rss/articles/CBMixARBVV95cUxQZVAzaC1EbEQxNlU3b1JhYnk0SzNfQUYxalV2aUVkVU9vbGoxTzZUSUItWXl0YVFmbTlDMkc4WE5OQ0RTSUZ4RWV2cnc2bGtCV2tlMzZfRTFhaWwtR0VIN2VrWTUxX09UVVI0TnRVS01Ed0pxT3ZYbXpKbkhpRklQb1ktVmZmZE1QUUtzX2lLdzBjM05ocXNjdFpWWVZJOW16em9UbDV1aVRFeFBubHJQZjl2eGEyNFVpSHlNNUJpOXNCZ1dCd2U0ZkdYNHQzeUMxZHBMak8wem1VMHJUSE5uVU9nS0Rhci1Pa1N3VDFwcnVIOEdDdUloWFYybS1NM3BOSGpiVlJnSU03ZTRwckFNWnBvS0xNRDViWXdIdGRNcWRSTGJRSVpsbWE2aVRMelI2ZktDVncyeHc4NVBvVUhBSlZfZTN4YVFodkhod2NJQU51ZHRVUExlSFhWQWg5WHItaFNWeDNDekNGR29zUnVjX3NkYkJEN1dXWlVBUzZJcEpXMy1aSlpVQmpPdUNScnZ2c0xuSGc2ajE3a2ZaanNVNHFxLVl1QmxaYUhtTG11LTZ1b09TRkpxclJraURHcmlPcTFIS3Z6QU9WdzdxQUJYZzRJSUlsNHkxSDVxOWdyWVNMUm9fWmFTU3lpcEE2dEJ4V3FlMjJTWW0yaldGa193YzU1Q0Rka0lQdU1OYXF6bFc2RG5ZZGVUTVNzbDBza2V0dnpRRGlPMjRwSUNDdFhQQ0JtYnAtN096WUJKMUJ6cmZJajdx?oc=5",
+      "reviewedAt": "2026-10-29T03:19:26+03:00",
+      "titleAr": "Snowflake تعلن استثمارًا متوقعًا بقيمة 300 مليون دولار في السعودية حتى 2030",
+      "summaryAr": "بحسب إعلان الشركة المنشور عبر تغطية صحفية، تخطط Snowflake لاستثمار نحو 300 مليون دولار في عملياتها السعودية حتى 2030 بالتعاون مع وزارة الاتصالات وتقنية المعلومات، وبرنامج مهارات يستهدف حتى 25 ألف متعلم، وخطة معلنة لمنطقتي سحابة إضافيتين في النصف الثاني من 2026.",
+      "whyItMatters": "إذا نُفذت الخطط فقد توسع خيارات إقامة البيانات والتدريب على هندسة البيانات والذكاء الاصطناعي داخل المملكة؛ الأثر الفعلي يتوقف على التنفيذ والأسعار والامتثال.",
+      "audience": "طلاب التقنية في السعودية ومهندسو البيانات والسحابة ومسؤولو التحول الرقمي.",
+      "nextSteps": [
+        "تابع إعلان Snowflake وMCIT لتأكيد مراحل التنفيذ وموعد تفعيل المناطق الجديدة.",
+        "قارن إقامة البيانات والحوكمة وتكلفة نقل البيانات وتوافر الخدمات عند تقييم المنصة."
+      ],
+      "limitations": "قيمة الاستثمار وتواريخ المناطق وبرنامج التدريب توقعات معلنة؛ لم تُتحقق نتائج التنفيذ أو السعة التشغيلية. صفحة التغذية وسيط تجميعي، لذلك أُرفقت تغطية لإعلان الشركة.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Snowflake investment announcement — reproduced release",
+          "url": "https://uaenews247.com/2026/10/27/snowflake-to-invest-300-million-in-saudi-arabias-ai-data-cloud/"
+        },
+        {
+          "title": "TradingView / Zawya — Snowflake Saudi investment",
+          "url": "https://www.tradingview.com/news/reuters.com%2C2026-10-27%3Anewsml_Zaw76yVqb%3A0-zawya-snowflake-announces-300mln-investment-in-saudi-arabia/"
+        }
+      ]
+    },
+    "9fb777e852af104669": {
+      "url": "https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai/",
+      "reviewedAt": "2026-10-29T03:19:26+03:00",
+      "titleAr": "جامعة كنتاكي تمنح موظفًا إعفاءً من الاستخدام الشخصي للذكاء الاصطناعي لأسباب ضميرية",
+      "summaryAr": "بحسب Religion News Service، وافقت جامعة كنتاكي على طلب موظف بشؤون البحث للحصول على تسهيلات تعفيه من استخدام أدوات الذكاء الاصطناعي في مهامه الشخصية، استنادًا إلى معتقداته الإنسانية. وقد يظل مطالبًا بحضور اجتماعات أو التعامل مع أنظمة يستخدمها زملاؤه.",
+      "whyItMatters": "توضح الحالة التوتر بين فرض أدوات إنتاجية جديدة وحرية الضمير وتقييم طلبات التسهيلات في العمل؛ لا تعني أن كل اعتراض على AI يندرج قانونيًا ضمن إعفاء ديني.",
+      "audience": "مسؤولو الموارد البشرية والسياسات الجامعية والباحثون ومهتمو الحوكمة.",
+      "nextSteps": [
+        "حدّد المهام التي تتطلب AI فعلًا ووفّر مسارًا موثقًا لطلبات التسهيلات.",
+        "افصل بين وصف الحالة الصحفية والاستشارة القانونية المحلية."
+      ],
+      "limitations": "حالة أمريكية واحدة وفق تقرير صحفي، وليست حكمًا عامًا أو سابقة ملزمة لكل مؤسسة.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Religion News Service — humanist AI exemption",
+          "url": "https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai/"
+        }
+      ]
+    },
+    "353dd9ae4406521804": {
+      "url": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/",
+      "reviewedAt": "2026-10-29T03:19:26+03:00",
+      "titleAr": "Microsoft تسجل 10 مليارات دولار من إيرادات ترتبط باتفاقاتها التجارية مع OpenAI في ربع واحد",
+      "summaryAr": "نقلت TechCrunch عن إفصاح تنظيمي أن ترتيبات Microsoft التجارية مع OpenAI جلبت 10 مليارات دولار في الربع المنتهي في 30 سبتمبر 2026، أي نحو 11% من إيرادات Microsoft الفصلية البالغة 92.3 مليار دولار. وأشار التقرير إلى أن الذمم المستحقة ليست إيرادًا إضافيًا، وأن تقسيم المبلغ بين مشاركة الإيرادات وخدمات Azure غير واضح.",
+      "whyItMatters": "تكشف الأرقام عن الترابط المالي بين مزود سحابة ومختبر ذكاء اصطناعي؛ ينبغي فصل الإيراد المحقق عن المستحقات والالتزامات المستقبلية.",
+      "audience": "مهندسو السحابة والذكاء الاصطناعي ومتابعو اقتصاد التقنية.",
+      "nextSteps": [
+        "اقرأ الإفصاح التنظيمي الأصلي قبل اقتباس الأرقام في تحليل مالي.",
+        "ميّز بين مشاركة الإيرادات واستهلاك Azure والاستثمارات المحاسبية."
+      ],
+      "limitations": "لا يحدد التقرير حصة مشاركة الإيرادات مقابل خدمات السحابة بدقة؛ لا تُعامل النسب المتداولة كحقيقة محسومة من الطرفين.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — Microsoft recorded $10B from OpenAI",
+          "url": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/"
+        },
+        {
+          "title": "Microsoft Investor Relations — FY27 Q1",
+          "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast"
+        },
+        {
+          "title": "SEC filing linked from the report",
+          "url": "https://www.sec.gov/ix?doc=%2FArchives%2Fedgar%2Fdata%2F0000789019%2F000119312526436133%2Fmsft-20260930.htm"
+        }
+      ]
+    },
+    "38c3408d933af173aa": {
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "reviewedAt": "2026-10-29T03:19:26+03:00",
+      "titleAr": "Ponytail: مهارات لوكلاء البرمجة لتقليل الكود غير الضروري دون التضحية بالاختبارات",
+      "summaryAr": "حزمة قواعد ومهارات لوكلاء البرمجة تشجع إعادة استخدام الموجود واختيار أبسط حل مناسب ومراجعة التغييرات. تختلف التكاملات حسب المضيف؛ بعضها يستخدم hooks وبعضها ملفات قواعد أو skills.",
+      "whyItMatters": "قد تساعد مستخدمي Codex ووكلاء مشابهين على تقليل التغييرات غير الضرورية وإدخال مراجعة الاختبارات ضمن سير العمل. نتائج README المعيارية من المؤلف وليست ضمانًا مستقلًا.",
+      "audience": "مطورو البرمجيات وطلاب الحاسب ومستخدمو وكلاء البرمجة.",
+      "overview": "إضافات وقواعد ومهارات لمضيفات وكلاء البرمجة، مع أوامر للمراجعة والتدقيق وتسجيل الاختصارات المقصودة ولوحة محلية للجلسات والتكلفة والاختبارات بحسب README. لم تُختبر هذه الميزات في هذه الدورة.",
+      "requirements": "الترخيص MIT. يلزم مضيف يدعم skills أو قواعد الوكيل؛ بعض hooks تحتاج Node.js على PATH. تكلفة النموذج منفصلة وتعتمد على اشتراك المضيف أو API. البيانات في اللوحة محلية افتراضيًا بحسب README. بديل أخف هو استخدام AGENTS.md أو skill فقط دون hooks.",
+      "quickStart": "لـ Codex CLI: `codex plugin marketplace add DietrichGebert/ponytail` ثم `codex plugin add ponytail@ponytail`. راجع `/hooks` وصلاحياتها قبل الوثوق بها، وجرّبها على فرع تجريبي. لم تُنفذ الأوامر هنا.",
+      "limitations": "لم يُشغّل المستودع أو اختباراته. أرقام الأداء في README من المؤلف وتحتاج إعادة إنتاج مستقلة؛ وظائف اللوحة والأوامر تختلف حسب المضيف والإصدار.",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "Ponytail README",
+          "url": "https://github.com/DietrichGebert/ponytail/blob/main/README.md"
+        },
+        {
+          "title": "Ponytail install guide",
+          "url": "https://github.com/DietrichGebert/ponytail/blob/main/INSTALL.md"
+        },
+        {
+          "title": "Ponytail MIT license",
+          "url": "https://github.com/DietrichGebert/ponytail/blob/main/LICENSE"
+        },
+        {
+          "title": "Ponytail package scripts",
+          "url": "https://github.com/DietrichGebert/ponytail/blob/main/package.json"
+        }
+      ],
+      "localVsCloud": "ملفات القواعد واللوحة محلية بحسب README؛ نموذج الوكيل قد يكون سحابيًا ويخضع للتكلفة.",
+      "costs": "البرنامج MIT بلا رسم ترخيص؛ تكلفة استدعاءات النموذج منفصلة.",
+      "alternatives": [
+        "نسخ AGENTS.md أو تثبيت skill دون hooks",
+        "استخدام قواعد المضيف الأصلية لكل وكيل"
+      ],
+      "improvements": [
+        {
+          "title": "مصفوفة توافق قابلة للتشغيل لكل مضيف",
+          "problem": "قد تنجح ملفات القواعد بينما تتعطل hooks بين إصدارات المضيفات.",
+          "approach": "اختبار التثبيت والاستدعاء والتراجع داخل بيئات معزولة لكل مضيف وإصدار.",
+          "stack": "Node.js، fixtures، GitHub Actions",
+          "steps": [
+            "حدد المضيفات والإصدارات المدعومة.",
+            "أنشئ مشروع اختبار صغيرًا لكل مضيف.",
+            "اختبر التثبيت والاستدعاء والتراجع.",
+            "انشر جدول نتائج مع الإصدار."
+          ],
+          "metric": "نسبة المضيفات التي تجتاز الاختبارات.",
+          "difficulty": "متوسطة (تقدير)",
+          "risks": "تغير واجهات المضيفات سريع؛ اعزل الأسرار ولا تشغّل hooks على مشاريع الإنتاج.",
+          "sources": [
+            {
+              "title": "Ponytail README",
+              "url": "https://github.com/DietrichGebert/ponytail/blob/main/README.md"
+            },
+            {
+              "title": "Ponytail package scripts",
+              "url": "https://github.com/DietrichGebert/ponytail/blob/main/package.json"
+            }
+          ]
+        },
+        {
+          "title": "معيار أداء قابل لإعادة الإنتاج",
+          "problem": "نسب التوفير المعلنة تحتاج إلى بيانات تشغيل تسمح بإعادة التجربة.",
+          "approach": "نشر مهام غير حساسة وإصدارات النماذج والنتائج الخام والتكاليف مع عدد المحاولات.",
+          "stack": "Python، JSONL، Markdown",
+          "steps": [
+            "حدد مهام ممثلة وغير حساسة.",
+            "ثبت الإصدارات والإعدادات.",
+            "شغّل المقارنة عدة مرات.",
+            "احفظ النتائج والتكاليف الخام.",
+            "وثق المهام التي لم تتحسن."
+          ],
+          "metric": "إمكانية إعادة إنتاج النتائج ضمن هامش معلن.",
+          "difficulty": "متوسطة (تقدير)",
+          "risks": "قد تتغير النماذج السحابية؛ لا تنشر بيانات خاصة ضمن الاختبار.",
+          "sources": [
+            {
+              "title": "Ponytail README",
+              "url": "https://github.com/DietrichGebert/ponytail/blob/main/README.md"
+            },
+            {
+              "title": "Ponytail package scripts",
+              "url": "https://github.com/DietrichGebert/ponytail/blob/main/package.json"
+            }
+          ]
+        },
+        {
+          "title": "معاينة صلاحيات hooks قبل التثبيت",
+          "problem": "قد لا يفهم المستخدم الملفات والإعدادات التي سيعدلها hook.",
+          "approach": "وضع dry-run يعرض التغييرات وخيار التراجع قبل التطبيق.",
+          "stack": "Node.js، JSON Schema، CLI",
+          "steps": [
+            "احصر الملفات التي يكتبها كل hook.",
+            "أضف معاينة لا تغير الملفات.",
+            "اعرض المسارات والصلاحيات.",
+            "أضف rollback للتغييرات المسجلة.",
+            "اختبر عدم استبدال إعدادات المستخدم."
+          ],
+          "metric": "نجاح المعاينة والتراجع دون فقد ملفات.",
+          "difficulty": "متوسطة (تقدير)",
+          "risks": "قد تفشل الاستعادة إذا عدّل المستخدم الملفات بعد التثبيت؛ احفظ نسخة احتياطية.",
+          "sources": [
+            {
+              "title": "Ponytail install guide",
+              "url": "https://github.com/DietrichGebert/ponytail/blob/main/INSTALL.md"
+            },
+            {
+              "title": "Ponytail package scripts",
+              "url": "https://github.com/DietrichGebert/ponytail/blob/main/package.json"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مراجع شيفرة عربي يستند إلى أدلة التغيير",
+          "problem": "قد تكون تقارير الوكلاء غامضة أو لا تربط الملاحظة بسطر قابل للتحقق.",
+          "approach": "تقرير عربي يربط كل ملاحظة بمسار وسطر واختبار دون تعديل تلقائي افتراضي.",
+          "stack": "Python، Git diff، JSON",
+          "steps": [
+            "اقرأ diff من فرع تجريبي.",
+            "صنف الملاحظات حسب الخطر.",
+            "أرفق دليلًا لكل ملاحظة.",
+            "ولّد تقريرًا عربيًا.",
+            "اترك الإصلاح للمطور."
+          ],
+          "metric": "نسبة الملاحظات القابلة للتحقق ومعدل الإنذارات الكاذبة.",
+          "difficulty": "متوسطة (تقدير)",
+          "risks": "قد يفوت التقرير سياقًا معماريًا؛ يلزم مراجع بشري.",
+          "sources": [
+            {
+              "title": "Ponytail README",
+              "url": "https://github.com/DietrichGebert/ponytail/blob/main/README.md"
+            },
+            {
+              "title": "Ponytail install guide",
+              "url": "https://github.com/DietrichGebert/ponytail/blob/main/INSTALL.md"
+            }
+          ]
+        },
+        {
+          "title": "مستكشف إعادة الاستخدام قبل إضافة مكتبة",
+          "problem": "قد يضيف الوكيل اعتماديات جديدة مع وجود مكون مناسب بالفعل.",
+          "approach": "فحص المستودع والمكتبة القياسية قبل اقتراح اعتماد جديد.",
+          "stack": "Python AST، ripgrep، package metadata",
+          "steps": [
+            "حدد متطلبات الميزة.",
+            "ابحث عن مكونات مشابهة.",
+            "افحص المكتبات الحالية والقياسية.",
+            "اعرض البدائل والمخاطر.",
+            "سجل قرار المطور."
+          ],
+          "metric": "انخفاض الاعتماديات غير الضرورية مع بقاء الاختبارات ناجحة.",
+          "difficulty": "متوسطة (تقدير)",
+          "risks": "قد يقترح مكونًا غير مناسب؛ لا تفرض القرار آليًا.",
+          "sources": [
+            {
+              "title": "Ponytail README",
+              "url": "https://github.com/DietrichGebert/ponytail/blob/main/README.md"
+            },
+            {
+              "title": "Ponytail install guide",
+              "url": "https://github.com/DietrichGebert/ponytail/blob/main/INSTALL.md"
+            }
+          ]
+        },
+        {
+          "title": "دفتر محلي للدين الهندسي",
+          "problem": "قد تُنسى الاختصارات المتعمدة وتتحول إلى عيوب غير متابعة.",
+          "approach": "سجل محلي يربط كل اختصار بسبب وتاريخ وشرط مراجعة.",
+          "stack": "Node.js، Markdown، JSON",
+          "steps": [
+            "حدد صيغة تعليق واضحة.",
+            "اجمع التعليقات ومساراتها.",
+            "أضف سبب التأجيل وتاريخ المراجعة.",
+            "اربط العنصر باختبار متابعة.",
+            "أعد فحص المسارات قبل التصدير."
+          ],
+          "metric": "نسبة العناصر المغلقة بقرار موثق.",
+          "difficulty": "سهلة إلى متوسطة (تقدير)",
+          "risks": "قد يصبح السجل قديمًا؛ لا تخزن أسرارًا أو بيانات شخصية.",
+          "sources": [
+            {
+              "title": "Ponytail README",
+              "url": "https://github.com/DietrichGebert/ponytail/blob/main/README.md"
+            },
+            {
+              "title": "Ponytail install guide",
+              "url": "https://github.com/DietrichGebert/ponytail/blob/main/INSTALL.md"
+            }
+          ]
+        }
+      ]
+    },
+    "6d3bd03b499863301f": {
+      "url": "https://github.com/calesthio/OpenMontage",
+      "reviewedAt": "2026-10-29T03:19:26+03:00",
+      "titleAr": "OpenMontage: نظام إنتاج فيديو مفتوح المصدر ينسق البحث والسيناريو والأصول والمونتاج",
+      "summaryAr": "ينسق OpenMontage البحث والسيناريو وتخطيط المشاهد وتوليد الأصول والصوت والترجمة ثم تركيب الفيديو باستخدام أدوات مثل Remotion وFFmpeg، مع لوحة محلية Backlot. المستودع مرخص AGPL-3.0.",
+      "whyItMatters": "قد يختصر تنسيق أدوات الفيديو في مسار قابل للمراجعة، لكنه ليس مجانيًا بالكامل؛ التكلفة والجودة تعتمدان على مزودي النماذج والمفاتيح والعتاد والتراخيص.",
+      "audience": "صناع المحتوى ومطورو الوسائط وفرق التسويق وطلاب التقنية.",
+      "overview": "نظام إنتاج فيديو موجّه بالوكيل ينسق البحث والسرد والمشاهد والأصول والصوت والترجمة والتركيب النهائي. الأمثلة والنتائج في README من ناشر المشروع ولم تُعاد تجربتها هنا.",
+      "requirements": "يتطلب Python 3.10+ وNode.js 18+ وFFmpeg ومكتبات requirements.txt وتثبيت npm في remotion-composer. بعض المسارات تحتاج مفاتيح API برسوم متغيرة؛ البدائل المحلية قد تحتاج GPU. الترخيص AGPL-3.0، ويجب مراجعة التزامات النسخة المعدلة عند تشغيلها كخدمة شبكية وتراخيص الأصول والمخرجات.",
+      "quickStart": "على جهاز تجريبي: `git clone https://github.com/calesthio/OpenMontage.git` ثم `cd OpenMontage` و`make setup`. انسخ `.env.example` إلى `.env` وأضف مفتاح المزود المطلوب فقط. يذكر README محاكاة محلية عبر `python scripts/backlot_simulate_run.py` ثم فتح اللوحة بـ`python -m backlot open`. لم تُنفذ الأوامر هنا.",
+      "limitations": "لم يُشغّل المشروع ولم تُختبر جودة الفيديو أو التكلفة. توفر مفتاح API لا يضمن رصيدًا أو حق استخدام كل نموذج؛ راجع AGPL-3.0 وتراخيص الأصول قبل الاستخدام التجاري.",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "OpenMontage README",
+          "url": "https://github.com/calesthio/OpenMontage"
+        },
+        {
+          "title": "OpenMontage requirements",
+          "url": "https://github.com/calesthio/OpenMontage/blob/main/requirements.txt"
+        },
+        {
+          "title": "OpenMontage AGPL-3.0 license",
+          "url": "https://github.com/calesthio/OpenMontage/blob/main/LICENSE"
+        },
+        {
+          "title": "OpenMontage provider guide",
+          "url": "https://github.com/calesthio/OpenMontage/blob/main/docs/PROVIDERS.md"
+        },
+        {
+          "title": "OpenMontage environment template",
+          "url": "https://github.com/calesthio/OpenMontage/blob/main/.env.example"
+        },
+        {
+          "title": "OpenMontage Agent Guide",
+          "url": "https://github.com/calesthio/OpenMontage/blob/main/AGENT_GUIDE.md"
+        },
+        {
+          "title": "Remotion documentation",
+          "url": "https://www.remotion.dev/docs/"
+        },
+        {
+          "title": "FFmpeg documentation",
+          "url": "https://ffmpeg.org/documentation.html"
+        },
+        {
+          "title": "Blender official site",
+          "url": "https://www.blender.org/"
+        }
+      ],
+      "localVsCloud": "التنسيق واللوحة يمكن أن يكونا محليين؛ توليد الصور والفيديو والصوت غالبًا عبر APIs سحابية. بعض النماذج المحلية تحتاج GPU.",
+      "costs": "الشيفرة مفتوحة؛ تكلفة التوليد متغيرة حسب المزود وعدد الأصول ومددها. المحلي يقلل رسوم API لكنه يستهلك العتاد والكهرباء.",
+      "alternatives": [
+        "تنسيق يدوي باستخدام Remotion وFFmpeg: تحكم أكبر ومزيد من العمل اليدوي.",
+        "Blender للمشاهد ثلاثية الأبعاد: تحكم فني أعلى لكنه لا يجمع وحده مسار البحث والصوت والأصول."
+      ],
+      "improvements": [
+        {
+          "title": "سقف تكلفة قبل بدء التوليد",
+          "problem": "قد تتجاوز إعادة التوليد الميزانية إذا كانت الأسعار والتكاليف غير مجمعة.",
+          "approach": "ميزانية قصوى وتكلفة فعلية بعد كل استدعاء مع توقف يتطلب موافقة.",
+          "stack": "Python، provider adapters، JSON",
+          "steps": [
+            "اجمع أسعار المزودين وتاريخها.",
+            "احسب تقديرًا قبل التوليد.",
+            "اعرض هامش عدم اليقين.",
+            "سجل التكلفة الفعلية.",
+            "أوقف المسار عند السقف."
+          ],
+          "metric": "الفرق بين التكلفة المقدرة والفعلية.",
+          "difficulty": "متوسطة إلى صعبة (تقدير)",
+          "risks": "تتغير الأسعار حسب الحساب؛ اعرض السعر المجهول بدل تخمينه.",
+          "sources": [
+            {
+              "title": "OpenMontage provider guide",
+              "url": "https://github.com/calesthio/OpenMontage/blob/main/docs/PROVIDERS.md"
+            },
+            {
+              "title": "OpenMontage environment template",
+              "url": "https://github.com/calesthio/OpenMontage/blob/main/.env.example"
+            }
+          ]
+        },
+        {
+          "title": "سجل مصدر وترخيص لكل أصل",
+          "problem": "قد تختلط الأصول المولدة والمخزنة دون معرفة المصدر وشروط الاستخدام.",
+          "approach": "manifest لكل صورة ومقطع وصوت مع المصدر والترخيص وبصمة الملف وموافقة المراجع.",
+          "stack": "Python، JSON Schema، SHA-256",
+          "steps": [
+            "أنشئ سجلًا لكل أصل.",
+            "احفظ الرابط والترخيص والتاريخ.",
+            "احسب بصمة الملف.",
+            "أوقف الرندر إذا غاب مصدر مطلوب.",
+            "أصدر تقرير تراخيص."
+          ],
+          "metric": "نسبة الأصول الموثقة قبل الرندر.",
+          "difficulty": "متوسطة (تقدير)",
+          "risks": "قد تتغير التراخيص والروابط؛ يلزم فحص دوري.",
+          "sources": [
+            {
+              "title": "OpenMontage README",
+              "url": "https://github.com/calesthio/OpenMontage"
+            },
+            {
+              "title": "OpenMontage provider guide",
+              "url": "https://github.com/calesthio/OpenMontage/blob/main/docs/PROVIDERS.md"
+            }
+          ]
+        },
+        {
+          "title": "مسار تجريبي دون مفاتيح API",
+          "problem": "قد يصعب فهم سير العمل قبل إدخال مفاتيح مدفوعة أو إعداد GPU.",
+          "approach": "مزودات وهمية بأصول ثابتة لاختبار الترتيب واللوحة محليًا.",
+          "stack": "Python، pytest، fixtures، FFmpeg",
+          "steps": [
+            "حدد واجهة موحدة للمزودات.",
+            "أضف مزودًا وهميًا بأصول مرخصة.",
+            "شغّل مسارًا كاملًا تجريبيًا.",
+            "تحقق من حفظ المراحل.",
+            "افصل نتائج المحاكاة عن الإنتاج."
+          ],
+          "metric": "نجاح المسار دون شبكة أو مفاتيح.",
+          "difficulty": "متوسطة (تقدير)",
+          "risks": "المحاكاة لا تثبت سلوك المزود الحقيقي؛ ميّز نتائجها بوضوح.",
+          "sources": [
+            {
+              "title": "OpenMontage README",
+              "url": "https://github.com/calesthio/OpenMontage"
+            },
+            {
+              "title": "OpenMontage requirements",
+              "url": "https://github.com/calesthio/OpenMontage/blob/main/requirements.txt"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "استوديو فيديو تعليمي عربي للمشاريع الجامعية",
+          "problem": "إنتاج شرح مرئي من تقرير يتطلب تنسيقًا يدويًا للسيناريو والرسوم والترجمة.",
+          "approach": "تحويل التقرير الموافق عليه إلى مشاهد عربية مع مصادر ومراجعة بشرية قبل الرندر.",
+          "stack": "OpenMontage، Python، FFmpeg، TTS عربي",
+          "steps": [
+            "اقرأ تقريرًا يختاره الطالب.",
+            "استخرج المصطلحات والرسوم.",
+            "أنشئ مخطط مشاهد بمصادر.",
+            "اطلب اعتماد النص والرسوم.",
+            "ركّب فيديو بترجمة ومراجع."
+          ],
+          "metric": "نسبة الادعاءات ذات المصدر وعدد التصحيحات.",
+          "difficulty": "متوسطة (تقدير)",
+          "risks": "قد يختصر النموذج معلومات أو يسيء النطق؛ راجع النص والصوت.",
+          "sources": [
+            {
+              "title": "OpenMontage README",
+              "url": "https://github.com/calesthio/OpenMontage"
+            },
+            {
+              "title": "OpenMontage provider guide",
+              "url": "https://github.com/calesthio/OpenMontage/blob/main/docs/PROVIDERS.md"
+            }
+          ]
+        },
+        {
+          "title": "مولّد فيديوهات عرض منتج من وثائق موثقة",
+          "problem": "قد تختلف معلومات الفيديو عن الوثائق الحالية للمنتج.",
+          "approach": "اربط كل مشهد بميزة موثقة وأصدر نسخًا متعددة مع رقم إصدار للمصدر.",
+          "stack": "OpenMontage، Markdown، Remotion، FFmpeg",
+          "steps": [
+            "حدد إصدار الوثائق.",
+            "استخرج الميزات وروابطها.",
+            "أنشئ مخططًا واطلب الموافقة.",
+            "أنتج نسختين من الأصول نفسها.",
+            "أرفق تاريخ المراجعة."
+          ],
+          "metric": "نسبة المشاهد المطابقة للوثائق.",
+          "difficulty": "متوسطة (تقدير)",
+          "risks": "قد تصبح الوثائق قديمة؛ راجع الفيديو عند كل إصدار.",
+          "sources": [
+            {
+              "title": "OpenMontage README",
+              "url": "https://github.com/calesthio/OpenMontage"
+            },
+            {
+              "title": "OpenMontage Agent Guide",
+              "url": "https://github.com/calesthio/OpenMontage/blob/main/AGENT_GUIDE.md"
+            }
+          ]
+        },
+        {
+          "title": "خط إنتاج شروح بحثية بمراجع قابلة للتدقيق",
+          "problem": "قد تعرض الفيديوهات أرقامًا دون فصل الحقيقة عن التحليل.",
+          "approach": "اربط كل ادعاء ومشهد بمصدر وتاريخ واطلب موافقة بشرية قبل التصدير.",
+          "stack": "OpenMontage، Python، JSON، Remotion",
+          "steps": [
+            "اجمع المصادر الأصلية.",
+            "صنف الجمل حقيقة أو ادعاء أو تحليلًا.",
+            "اربط كل مشهد بمصدر.",
+            "اعرض المراجع للمراجع البشري.",
+            "صدّر بعد الموافقة."
+          ],
+          "metric": "نسبة الادعاءات ذات المصادر الصحيحة.",
+          "difficulty": "متوسطة إلى صعبة (تقدير)",
+          "risks": "الرابط لا يضمن صحة المصدر؛ تلزم مراجعة المحتوى.",
+          "sources": [
+            {
+              "title": "OpenMontage README",
+              "url": "https://github.com/calesthio/OpenMontage"
+            },
+            {
+              "title": "OpenMontage provider guide",
+              "url": "https://github.com/calesthio/OpenMontage/blob/main/docs/PROVIDERS.md"
+            }
+          ]
+        }
+      ],
+      "religious": [
+        {
+          "title": "مقاطع تعليمية دينية بنص معتمد ومراجعة بشرية",
+          "problem": "قد تغيّر أدوات التوليد نصًا دينيًا أو تنسب شرحًا إلى مصدر غير صحيح.",
+          "approach": "استخدم نصًا يختاره محرر مختص من مصدر موثوق، ولا تسمح بإعادة صياغة الاقتباسات؛ أضف المصدر ومراجعة بشرية إلزامية.",
+          "stack": "OpenMontage، نص عربي معتمد، FFmpeg، سجل مصادر",
+          "steps": [
+            "يحدد المحرر النص والمصدر.",
+            "تُقفل الاقتباسات وتُحفظ بصمتها.",
+            "يُنشأ مخطط مشاهد للشرح المراجع.",
+            "يراجع مختص النص والنطق والمراجع.",
+            "لا يصدر الفيديو قبل الموافقة."
+          ],
+          "metric": "صفر تغييرات غير معتمدة في النص المرجعي وتغطية مصادر 100%.",
+          "difficulty": "متوسطة (تقدير)",
+          "risks": "خطر التحريف أو الاقتطاع خارج السياق وحقوق الصوت؛ يلزم اعتماد بشري وترخيص واضح.",
+          "sources": [
+            {
+              "title": "Quran.com — النص المرجعي",
+              "url": "https://quran.com/"
+            },
+            {
+              "title": "OpenMontage README",
+              "url": "https://github.com/calesthio/OpenMontage"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
