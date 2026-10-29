@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "auditedAt": "2026-10-29T02:59:51.886Z",
+  "repository": "https://github.com/lm7md-ai/.-",
+  "mainCommit": "9aadbe51f22c66246473ac3a963c04ee4f2ac82d",
+  "sourceFiles": {
+    "site/data/feed.json": "cbc11ca83fbbf1eb3ec4388f8e9e96c78bc6049e",
+    "site/data/editorial.json": "eac88dcf193b2cb2d5877b895cbfd7a4970c5ca6",
+    "site/data/seen.json": "09d2976ca3585af008eb27ab865a69656e050684",
+    "site/data/status.json": "4e2359c568426f5beae3b0c6b317f05d0af346a0"
+  },
+  "feedSnapshot": {
+    "generatedAt": "2026-10-29T00:53:52+00:00",
+    "items": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialEntriesBefore": 437,
+    "exactFeedEditorialMatchesBefore": 263,
+    "unenrichedBefore": 537,
+    "unenrichedNewsBefore": 517,
+    "unenrichedProjectsBefore": 20
+  },
+  "incomingAudit": {
+    "files": 44,
+    "rows": 438,
+    "uniqueIds": 437,
+    "duplicateRows": 1,
+    "duplicate": {
+      "id": "853c63f738f0cecf3b",
+      "occurrences": 2,
+      "urlsIdentical": true,
+      "decision": "retain the original ID; do not create an alternate identity"
+    },
+    "classifications": [
+      {
+        "category": "feed_and_editorial_exact_match",
+        "rows": 261,
+        "uniqueIds": 260,
+        "decision": "already imported; no re-import"
+      },
+      {
+        "category": "editorial_exists_but_not_in_current_feed",
+        "rows": 174,
+        "uniqueIds": 174,
+        "decision": "retain historical enrichment; do not add it to the current feed manually"
+      },
+      {
+        "category": "absent_from_feed_and_editorial",
+        "rows": 3,
+        "uniqueIds": 3,
+        "decision": "unmatched; hold for exact feed reappearance"
+      }
+    ],
+    "eligibleExactNotImported": 0,
+    "idUrlMismatches": 0,
+    "editorialUrlMismatches": 0,
+    "expiredNewsOlderThan21Days": 0,
+    "olderProjectRowsStillInFeed": [
+      {
+        "id": "137ebc899af74dcede",
+        "title": "PaddleOCR",
+        "publishedAt": "2026-09-16T03:31:50+00:00",
+        "feedPresent": true,
+        "editorialPresent": true,
+        "classification": "old project record, not an expired RSS news item"
+      },
+      {
+        "id": "e0cbbf211a55e79f34",
+        "title": "LLMs-from-scratch",
+        "publishedAt": "2026-10-02T14:55:52+00:00",
+        "feedPresent": true,
+        "editorialPresent": true,
+        "classification": "old project record, not an expired RSS news item"
+      }
+    ]
+  },
+  "unmatchedSpecialRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "title": "NVIDIA OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "seenPresent": true,
+      "feedPresent": false,
+      "editorialPresent": false,
+      "decision": "hold; exact URL exists in incoming, but there is no matching current feed record"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "title": "Canva Craft",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "seenPresent": true,
+      "feedPresent": false,
+      "editorialPresent": false,
+      "decision": "hold; do not synthesize a replacement ID from title"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "title": "1Password agent sign-in",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "seenPresent": true,
+      "feedPresent": false,
+      "editorialPresent": false,
+      "decision": "hold; do not synthesize a replacement ID from title"
+    }
+  ],
+  "newBatch": {
+    "news": 11,
+    "projects": 2,
+    "total": 13,
+    "proposalCounts": {
+      "improvements": 6,
+      "spinoffs": 6,
+      "religious": 2,
+      "total": 14
+    },
+    "basisCounts": {
+      "article": 7,
+      "metadata": 4,
+      "readme": 2
+    },
+    "afterMerge": {
+      "editorialEntries": 450,
+      "exactFeedEditorialMatches": 276,
+      "unenrichedItems": 524,
+      "unenrichedNews": 506,
+      "unenrichedProjects": 18
+    }
+  },
+  "execution": {
+    "officialPythonValidate": "not run locally; equivalent structural/schema and exact feed id/url checks performed in JavaScript; CI validation still required",
+    "officialPythonImport": "not run locally; merged by preserving all 437 existing entries and adding 13 previously absent IDs; no existing ID overwritten",
+    "unitTests": "not run locally; CI test suite required before merge",
+    "feedJsonModifiedByEditor": false,
+    "seenJsonModifiedByEditor": false,
+    "codeDesignWorkflowOrDeploymentConfigModified": false
+  },
+  "publication": {
+    "state": "pending CI and live verification",
+    "liveEditorialJsonVerified": false,
+    "detailPagesVerified": false
+  }
+}

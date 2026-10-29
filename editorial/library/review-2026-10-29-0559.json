@@ -1,0 +1,203 @@
+{
+  "version": 1,
+  "compiledAt": "2026-10-29T02:59:23.147Z",
+  "published": false,
+  "siteContent": false,
+  "note": "Research-only review; this file is not consumed by the website. Project activity metrics were captured over the run window and are cumulative, not trending. README/license/docs were reviewed for the two newly enriched projects; no project was executed and no testEvidence is claimed.",
+  "measurementWindow": {
+    "start": "2026-10-29T02:42:19Z",
+    "end": "2026-10-29T02:59:23.147Z"
+  },
+  "previousEight": {
+    "count": 8,
+    "allArchived": false,
+    "projects": [
+      {
+        "repository": "gradio-app/gradio",
+        "stars": 43941,
+        "forks": 3649,
+        "archived": false,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-28T23:14:02Z",
+        "defaultBranch": "main",
+        "measuredAt": "2026-10-29T02:42:19Z",
+        "url": "https://github.com/gradio-app/gradio"
+      },
+      {
+        "repository": "thedotmack/claude-mem",
+        "stars": 104061,
+        "forks": 9181,
+        "archived": false,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-29T00:48:27Z",
+        "defaultBranch": "main",
+        "measuredAt": "2026-10-29T02:42:19Z",
+        "url": "https://github.com/thedotmack/claude-mem"
+      },
+      {
+        "repository": "ultralytics/ultralytics",
+        "stars": 62944,
+        "forks": 11931,
+        "archived": false,
+        "license": "AGPL-3.0",
+        "pushedAt": "2026-10-28T23:46:27Z",
+        "defaultBranch": "main",
+        "measuredAt": "2026-10-29T02:42:19Z",
+        "url": "https://github.com/ultralytics/ultralytics"
+      },
+      {
+        "repository": "harry0703/MoneyPrinterTurbo",
+        "stars": 136153,
+        "forks": 21648,
+        "archived": false,
+        "license": "MIT",
+        "pushedAt": "2026-10-28T13:40:40Z",
+        "defaultBranch": "main",
+        "measuredAt": "2026-10-29T02:42:19Z",
+        "url": "https://github.com/harry0703/MoneyPrinterTurbo"
+      },
+      {
+        "repository": "microsoft/AI-For-Beginners",
+        "stars": 70335,
+        "forks": 13668,
+        "archived": false,
+        "license": "MIT",
+        "pushedAt": "2026-10-23T23:55:14Z",
+        "defaultBranch": "main",
+        "measuredAt": "2026-10-29T02:42:19Z",
+        "url": "https://github.com/microsoft/AI-For-Beginners"
+      },
+      {
+        "repository": "usebruno/bruno",
+        "stars": 47912,
+        "forks": 3048,
+        "archived": false,
+        "license": "MIT",
+        "pushedAt": "2026-10-28T14:45:36Z",
+        "defaultBranch": "main",
+        "measuredAt": "2026-10-29T02:42:19Z",
+        "url": "https://github.com/usebruno/bruno"
+      },
+      {
+        "repository": "keras-team/keras",
+        "stars": 64395,
+        "forks": 19806,
+        "archived": false,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-27T23:29:20Z",
+        "defaultBranch": "master",
+        "measuredAt": "2026-10-29T02:42:19Z",
+        "url": "https://github.com/keras-team/keras"
+      },
+      {
+        "repository": "k2-fsa/sherpa-onnx",
+        "stars": 15575,
+        "forks": 1824,
+        "archived": false,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-29T02:30:19Z",
+        "defaultBranch": "master",
+        "measuredAt": "2026-10-29T02:42:19Z",
+        "url": "https://github.com/k2-fsa/sherpa-onnx"
+      }
+    ]
+  },
+  "newProjects": {
+    "count": 2,
+    "projects": [
+      {
+        "repository": "herdrdev/herdr",
+        "feedId": "576c6507cbdd1cf31f",
+        "url": "https://github.com/herdrdev/herdr",
+        "stars": 46388,
+        "forks": 3715,
+        "archived": false,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-28T19:45:39Z",
+        "updatedAt": "2026-10-29T02:57:25Z",
+        "defaultBranch": "master",
+        "measuredAt": "2026-10-29T02:57:27.208Z",
+        "readmeReviewed": true,
+        "licenseFileReviewed": true,
+        "quickStartReviewed": true,
+        "executionTested": false,
+        "decision": "enrich original feed ID; no duplicate library record",
+        "alternatives": [
+          "https://github.com/tmux/tmux",
+          "https://github.com/zellij-org/zellij"
+        ]
+      },
+      {
+        "repository": "The-Vibe-Company/quivr",
+        "feedId": "a09988d0fb58ce67b6",
+        "url": "https://github.com/The-Vibe-Company/quivr",
+        "stars": 39613,
+        "forks": 3732,
+        "archived": false,
+        "license": "MIT",
+        "pushedAt": "2026-10-28T16:47:21Z",
+        "updatedAt": "2026-10-29T02:34:59Z",
+        "defaultBranch": "main",
+        "measuredAt": "2026-10-29T02:57:27.208Z",
+        "readmeReviewed": true,
+        "licenseFileReviewed": true,
+        "quickStartReviewed": true,
+        "executionTested": false,
+        "decision": "enrich original feed ID; evaluation stage, not production-ready",
+        "alternatives": [
+          "https://github.com/deepset-ai/haystack",
+          "https://github.com/langgenius/dify",
+          "https://github.com/infiniflow/ragflow",
+          "https://github.com/run-llama/llama_index"
+        ]
+      }
+    ]
+  },
+  "topThreeSuggestions": [
+    {
+      "rank": 1,
+      "title": "Herdr: فحص خصوصية قبل تفعيل سجل الشاشة",
+      "reason": "تقليل خطر حفظ أسرار الطرفية مع قياس الإنذارات الكاذبة",
+      "projectId": "576c6507cbdd1cf31f"
+    },
+    {
+      "rank": 2,
+      "title": "Herdr: لوحة صحة تكاملات الوكلاء",
+      "reason": "تمييز الجلسات القابلة للاستئناف من المراجع المفقودة قبل إعادة التشغيل",
+      "projectId": "576c6507cbdd1cf31f"
+    },
+    {
+      "rank": 3,
+      "title": "Quivr: مجموعة تقييم عربية وإنجليزية للبحث الهجين",
+      "reason": "قياس Recall@10 وNDCG@10 بدل افتراض جودة البحث العربي من نتائج لغات أخرى",
+      "projectId": "a09988d0fb58ce67b6"
+    }
+  ],
+  "executionStatus": {
+    "herdr": "not run; README/docs review only",
+    "quivr": "not run; README/docs/license review only",
+    "testEvidence": null
+  },
+  "sources": [
+    {
+      "title": "Herdr README",
+      "url": "https://github.com/herdrdev/herdr/blob/master/README.md"
+    },
+    {
+      "title": "Herdr License",
+      "url": "https://github.com/herdrdev/herdr/blob/master/LICENSE"
+    },
+    {
+      "title": "Quivr README",
+      "url": "https://github.com/The-Vibe-Company/quivr/blob/main/README.md"
+    },
+    {
+      "title": "Quivr License",
+      "url": "https://github.com/The-Vibe-Company/quivr/blob/main/LICENSE"
+    },
+    {
+      "title": "Quivr remaining limits",
+      "url": "https://github.com/The-Vibe-Company/quivr/blob/main/docs/quivr-v2-remaining-limits.md"
+    }
+  ]
+}
