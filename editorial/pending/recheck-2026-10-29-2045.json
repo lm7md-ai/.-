@@ -83,16 +83,21 @@
     "structuralEquivalent": {
       "filesChecked": 50,
       "filesParsed": 50,
-      "validFiles": 49,
-      "invalidFiles": 1,
-      "invalidRecord": {
+      "validFiles": 50,
+      "invalidFiles": 0,
+      "invalidRecord": null,
+      "repairedRecord": {
         "file": "editorial/incoming/nabdh-editorial-2026-10-29-1755.json",
         "id": "ff1ebca6f559787f35",
         "field": "sources",
-        "issue": "one null source element; current editorial entry is valid; archived incoming batch remains malformed"
+        "action": "removed one null element; retained the existing valid source object",
+        "identityUnchanged": true,
+        "urlUnchanged": true,
+        "matchedCurrentEditorialRecord": true
       }
     },
-    "historicalEditorialExactOutsideFeedUniqueIds": 206
+    "historicalEditorialExactOutsideFeedUniqueIds": 206,
+    "repairNote": "تم إصلاح المصدر الفارغ في الدفعة التاريخية بعد التأكد من تطابق id وurl مع السجل الموجود في editorial.json؛ لم تُضف مصادر أو هوية جديدة."
   },
   "newBatch": {
     "path": "editorial/incoming/nabdh-editorial-2026-10-29-2045.json",
@@ -249,6 +254,8 @@
       "liveEditorialJson": "fetch blocked with DisabledError",
       "newsAndProjectDetailPages": "not accessible through browser tool",
       "note": "Main contains 505 entries and all 12 new IDs with exact current feed URLs. This is not proof that GitHub Pages has served the updated file."
-    }
+    },
+    "reportUpdatedOnMainSha": "ff7044408ba8ab5d9f979a38829a3188a26c788a",
+    "note": "لقطة التدقيق الأساسية من main 92aeb1e6…؛ بعد دمج تقرير التدقيق في ff704440… لم تتغير feed/editorial/seen، والإصلاح الحالي يخص ملف الوارد التاريخي فقط."
   }
 }
