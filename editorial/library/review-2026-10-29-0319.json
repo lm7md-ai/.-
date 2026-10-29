@@ -1,0 +1,201 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-29T03:19:26+03:00",
+  "publishedToSite": false,
+  "purpose": "مراجعة بحثية غير منشورة؛ لا تعدل شيفرة الموقع أو التصميم أو workflows أو site/data/library.json. بيانات المستودعات من GitHub API الرسمي ومحتوى المشروع من README/INSTALL/LICENSE/requirements/PROVIDERS. لم تُنفذ اختبارات تشغيل.",
+  "historicalCatalog": {
+    "catalogPath": "editorial/library/catalog-2026-10-24.json",
+    "entries": 31,
+    "archived": 2,
+    "currentFeedUrlMatches": 4,
+    "outsideCurrentFeed": 27,
+    "catalogCompiledAt": "2026-10-24T10:38:36.869Z",
+    "previousMetricsSnapshotAt": "2026-10-28T23:52:51Z",
+    "metricsNotRefreshedForAll31": true,
+    "metricsWarning": "لا تعرض النجوم القديمة بوصفها شعبية حالية؛ تحقق من الأرشفة والترخيص والنشاط ووقت قياس المؤشرات."
+  },
+  "previousEightRecheck": {
+    "checkedAt": "2026-10-29T03:19:26+03:00",
+    "metricsCapturedAt": "2026-10-29T00:19:26Z",
+    "allArchived": false,
+    "repositories": [
+      {
+        "name": "Gradio",
+        "repository": "gradio-app/gradio",
+        "url": "https://github.com/gradio-app/gradio",
+        "archived": false,
+        "stars": 43940,
+        "forks": 3649,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-28T23:14:02Z",
+        "updatedAt": "2026-10-28T23:13:10Z",
+        "defaultBranch": "main",
+        "metricsCapturedAt": "2026-10-29T00:19:26Z"
+      },
+      {
+        "name": "Claude-Mem",
+        "repository": "thedotmack/claude-mem",
+        "url": "https://github.com/thedotmack/claude-mem",
+        "archived": false,
+        "stars": 104035,
+        "forks": 9180,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-29T00:15:46Z",
+        "updatedAt": "2026-10-29T00:06:27Z",
+        "defaultBranch": "main",
+        "metricsCapturedAt": "2026-10-29T00:19:26Z"
+      },
+      {
+        "name": "Ultralytics",
+        "repository": "ultralytics/ultralytics",
+        "url": "https://github.com/ultralytics/ultralytics",
+        "archived": false,
+        "stars": 62940,
+        "forks": 11931,
+        "license": "AGPL-3.0",
+        "pushedAt": "2026-10-28T23:46:27Z",
+        "updatedAt": "2026-10-28T23:47:02Z",
+        "defaultBranch": "main",
+        "metricsCapturedAt": "2026-10-29T00:19:26Z"
+      },
+      {
+        "name": "MoneyPrinterTurbo",
+        "repository": "harry0703/MoneyPrinterTurbo",
+        "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+        "archived": false,
+        "stars": 136131,
+        "forks": 21635,
+        "license": "MIT",
+        "pushedAt": "2026-10-28T13:40:40Z",
+        "updatedAt": "2026-10-29T00:18:17Z",
+        "defaultBranch": "main",
+        "metricsCapturedAt": "2026-10-29T00:19:26Z"
+      },
+      {
+        "name": "AI-For-Beginners",
+        "repository": "microsoft/AI-For-Beginners",
+        "url": "https://github.com/microsoft/AI-For-Beginners",
+        "archived": false,
+        "stars": 70329,
+        "forks": 13667,
+        "license": "MIT",
+        "pushedAt": "2026-10-23T23:55:14Z",
+        "updatedAt": "2026-10-28T23:35:46Z",
+        "defaultBranch": "main",
+        "metricsCapturedAt": "2026-10-29T00:19:26Z"
+      },
+      {
+        "name": "Bruno",
+        "repository": "usebruno/bruno",
+        "url": "https://github.com/usebruno/bruno",
+        "archived": false,
+        "stars": 47909,
+        "forks": 3047,
+        "license": "MIT",
+        "pushedAt": "2026-10-28T14:45:36Z",
+        "updatedAt": "2026-10-28T20:16:11Z",
+        "defaultBranch": "main",
+        "metricsCapturedAt": "2026-10-29T00:19:26Z"
+      },
+      {
+        "name": "Keras",
+        "repository": "keras-team/keras",
+        "url": "https://github.com/keras-team/keras",
+        "archived": false,
+        "stars": 64393,
+        "forks": 19806,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-27T23:29:20Z",
+        "updatedAt": "2026-10-28T18:05:34Z",
+        "defaultBranch": "master",
+        "metricsCapturedAt": "2026-10-29T00:19:26Z"
+      },
+      {
+        "name": "sherpa-onnx",
+        "repository": "k2-fsa/sherpa-onnx",
+        "url": "https://github.com/k2-fsa/sherpa-onnx",
+        "archived": false,
+        "stars": 15573,
+        "forks": 1824,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-28T15:21:31Z",
+        "updatedAt": "2026-10-28T23:57:25Z",
+        "defaultBranch": "master",
+        "metricsCapturedAt": "2026-10-29T00:19:26Z"
+      }
+    ],
+    "note": "أعيد فحص بيانات المستودعات الرسمية؛ كل الثمانية غير مؤرشفة وقت القياس. النجوم والتفرعات لقطة وليست مؤشرًا على الجودة."
+  },
+  "projects": [
+    {
+      "name": "Ponytail",
+      "repository": "DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "archived": false,
+      "stars": 179181,
+      "forks": 9817,
+      "license": "MIT",
+      "pushedAt": "2026-10-29T00:00:56Z",
+      "updatedAt": "2026-10-29T00:16:28Z",
+      "metricsCapturedAt": "2026-10-29T00:19:26Z",
+      "readmeReviewed": true,
+      "installReviewed": true,
+      "licenseReviewed": true,
+      "requirementsReviewed": true,
+      "testExecuted": false,
+      "cost": "البرنامج مجاني بترخيص MIT؛ استدعاءات الوكيل تخضع لخطة المضيف أو API.",
+      "localCloud": "الملفات واللوحة محلية بحسب README؛ نموذج الوكيل قد يكون سحابيًا.",
+      "alternatives": [
+        "نسخ AGENTS.md أو تثبيت skill دون hooks",
+        "قواعد المضيف الأصلية لكل وكيل"
+      ],
+      "testEvidence": null
+    },
+    {
+      "name": "OpenMontage",
+      "repository": "calesthio/OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "archived": false,
+      "stars": 72735,
+      "forks": 9495,
+      "license": "AGPL-3.0",
+      "pushedAt": "2026-10-28T21:46:02Z",
+      "updatedAt": "2026-10-29T00:17:44Z",
+      "metricsCapturedAt": "2026-10-29T00:19:26Z",
+      "readmeReviewed": true,
+      "requirementsReviewed": true,
+      "licenseReviewed": true,
+      "providerGuideReviewed": true,
+      "testExecuted": false,
+      "cost": "الشيفرة مفتوحة؛ توليد الصور والفيديو والصوت قد يفرض رسوم API، والتوليد المحلي يحتاج عتادًا.",
+      "localCloud": "التنسيق واللوحة محليان؛ مزودات كثيرة سحابية، وبعض البدائل المحلية تحتاج GPU.",
+      "alternatives": [
+        "Remotion + FFmpeg بتنسيق يدوي",
+        "Blender للمشاهد ثلاثية الأبعاد"
+      ],
+      "testEvidence": null
+    }
+  ],
+  "displayRequirementsForDevelopmentAssistant": [
+    "أظهر المشاريع حسب معرف التغذية الأصلي دون توليد معرفات من العنوان.",
+    "اعرض overview وrequirements وquickStart والتكلفة والمحلي/السحابي والبدائل والترخيص وحالة النشاط مع وقت القياس.",
+    "اعرض improvements وspinoffs وreligious بترتيب ثابت، وكل اقتراح مع steps وmetric وdifficulty وrisks وsources.",
+    "لا تعرض ادعاء اختبار ما لم يوجد testEvidence؛ ميّز البحث غير المنشور عن المحتوى المنشور.",
+    "لا تغيّر التصميم أو الشيفرة أو workflows."
+  ],
+  "topThreeSuggestions": [
+    {
+      "project": "Ponytail",
+      "title": "مصفوفة توافق قابلة للتشغيل لكل مضيف"
+    },
+    {
+      "project": "OpenMontage",
+      "title": "سقف تكلفة قبل بدء التوليد"
+    },
+    {
+      "project": "OpenMontage",
+      "title": "سجل مصدر وترخيص لكل أصل"
+    }
+  ],
+  "metricsCaptureNote": "لقطة GitHub API بتاريخ 2026-10-29T00:19:26Z; حالة الأرشفة والترخيص والنشاط مقاسة من بيانات المستودع وليست اختبارات تشغيل. لم يُحدّث site/data/library.json."
+}
