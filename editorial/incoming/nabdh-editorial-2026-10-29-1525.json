@@ -1,0 +1,515 @@
+{
+  "version": 1,
+  "items": {
+    "ee7bc266ca0de39106": {
+      "url": "https://www.wired.com/story/ai-made-decades-of-computer-science-research-irrelevant/",
+      "titleAr": "OpenAI تقول إنها نقضت فرضية ETH؛ والتحقق المستقل ما زال مهمًا",
+      "summaryAr": "تشرح WIRED ادعاءً بحثيًا في التعقيد الحسابي: تقول OpenAI إن نماذجها أنتجت حجة لنقض فرضية الزمن الأسي (ETH)، ثم صيغت الحجة في Lean. هذه دعوى بحثية محددة وليست إعلانًا عن حل P مقابل NP.",
+      "whyItMatters": "المؤكد هو نشر OpenAI للحجة ودعوتها إلى مراجعتها؛ قبول النتيجة وآثارها على الأبحاث المبنية على ETH يحتاجان تدقيقًا مستقلًا. التحليل: إذا ثبت البرهان فقد تتغير افتراضات في أبحاث الخوارزميات، لكن لا يعني ذلك أن كل مسائل الحوسبة أصبحت سهلة أو أن التشفير انكسر.",
+      "audience": "طلاب علوم الحاسب وباحثو الخوارزميات والتعقيد.",
+      "nextSteps": [
+        "اقرأ الورقة ومستودع Lean المرتبطين بإعلان OpenAI.",
+        "تابع المراجعات المستقلة قبل اعتماد النتيجة.",
+        "ميّز بين البرهان النظري وأثره العملي."
+      ],
+      "limitations": "المصادر تصف ادعاء OpenAI وخطة المراجعة؛ لم يظهر حكم نهائي من مراجعين مستقلين. لا يعني الادعاء حل P مقابل NP ولا كسر التشفير عمومًا.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "WIRED — AI and computer-science research",
+          "url": "https://www.wired.com/story/ai-made-decades-of-computer-science-research-irrelevant/"
+        },
+        {
+          "title": "OpenAI — Building scientific understanding",
+          "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/"
+        }
+      ],
+      "reviewedAt": "2026-10-29T15:25:42+03:00"
+    },
+    "d62a8f09dced3dd919": {
+      "url": "https://www.theverge.com/cs/features/1016650/arizona-water-data-center-tsmc",
+      "titleAr": "توسّع مراكز البيانات في أريزونا يفتح نقاشًا حادًا حول المياه",
+      "summaryAr": "تتتبع The Verge الجدل حول مشاريع مراكز بيانات في أريزونا، حيث تتنافس احتياجات الماء والطاقة والأرض مع مخاوف السكان من الجفاف، وتقارن المادة بين مصانع الرقائق ومشاريع مراكز البيانات.",
+      "whyItMatters": "البنية التحتية للحوسبة تعتمد على موارد محلية ملموسة. التحليل: ينبغي تقييم توسع الذكاء الاصطناعي بمقارنة الماء والطاقة ومصادرهما وإعادة الاستخدام، لا بسعة الحوسبة وحدها.",
+      "audience": "مهتمو الذكاء الاصطناعي والبنية التحتية والبيئة والطلاب.",
+      "nextSteps": [
+        "قارن بيانات الماء والطاقة لكل منشأة.",
+        "ابحث عن خطط إعادة استخدام المياه ومصدرها.",
+        "افصل بين مصانع الرقائق ومراكز البيانات."
+      ],
+      "limitations": "تقرير ميداني عن حالات محددة في أريزونا وليس ميزانية مائية شاملة للصناعة؛ تختلف الأرقام حسب الموقع والتبريد.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "The Verge — AI has come for Arizona’s water",
+          "url": "https://www.theverge.com/cs/features/1016650/arizona-water-data-center-tsmc"
+        }
+      ],
+      "reviewedAt": "2026-10-29T15:25:42+03:00"
+    },
+    "84bb9b072076a8f839": {
+      "url": "https://www.engadget.com/2300690/apple-google-fined-south-korea-app-store-violations/",
+      "titleAr": "كوريا الجنوبية تفرض غرامات على Apple وGoogle بسبب أنظمة الدفع داخل المتاجر",
+      "summaryAr": "ذكرت Reuters أن لجنة الإعلام والاتصالات في كوريا الجنوبية فرضت غرامة 42.9 مليار وون على Google و20.8 مليار وون على Apple، وأمرت بإجراءات تصحيحية بسبب تقييد أنظمة الدفع داخل متاجر التطبيقات. قالت Apple إنها لا توافق على القرار وتدرس خياراتها القانونية.",
+      "whyItMatters": "القرار يوضح أثر قواعد الدفع داخل متاجر التطبيقات على المنافسة ورسوم المطورين. التحليل: قد يتغير السوق الكوري بعد التنفيذ أو الطعون، لكن لا ينبغي تعميم القرار على دول أخرى.",
+      "audience": "مطورو تطبيقات الهواتف وأصحاب المنتجات الرقمية ومهتمو تنظيم المنصات.",
+      "nextSteps": [
+        "تابع نص القرار وأي طعن لاحق.",
+        "راجع قواعد الدفع في السوق التي توزع فيها التطبيق.",
+        "لا تفترض أن القواعد واحدة في كل الأسواق."
+      ],
+      "limitations": "قرار يخص كوريا الجنوبية بتاريخ 28 أكتوبر 2026؛ مواقف الشركات ونتيجة أي طعن قد تتغير.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Reuters — South Korea fines Google and Apple",
+          "url": "https://www.reuters.com/world/south-korea-media-commission-fines-google-apple-over-app-payment-systems-2026-10-28/"
+        },
+        {
+          "title": "Engadget — App store violations",
+          "url": "https://www.engadget.com/2300690/apple-google-fined-south-korea-app-store-violations/"
+        }
+      ],
+      "reviewedAt": "2026-10-29T15:25:42+03:00"
+    },
+    "7b13a13aa99910ae3a": {
+      "url": "https://www.theverge.com/business/1021981/doordash-instacart-acquisition-announcement",
+      "titleAr": "DoorDash تعلن صفقة للاستحواذ على Instacart بقيمة تقارب 17 مليار دولار",
+      "summaryAr": "بحسب Reuters، وافقت DoorDash على شراء Instacart في صفقة تقدر بنحو 17 مليار دولار. يتوقع التقرير إغلاقها في أواخر 2027 أو النصف الأول من 2028، وأشار إلى خطة لإنهاء نشاط عربات Caper Cart في 2027.",
+      "whyItMatters": "الصفقة المقترحة تجمع منصتين كبيرتين في توصيل البقالة وقد تؤثر في المنافسة وعلاقات المنصات بالمتاجر. التحليل: حجم الصفقة لا يثبت وحده ارتفاع الأسعار أو تحسن الخدمة؛ ذلك يعتمد على الموافقات والتنفيذ.",
+      "audience": "مهتمو منصات الخدمات الرقمية والتجارة الإلكترونية وسلاسل الإمداد.",
+      "nextSteps": [
+        "تابع الموافقات التنظيمية بدل وصف الصفقة بأنها مكتملة.",
+        "راقب تغييرات الرسوم والخدمة بعد الإغلاق.",
+        "افصل بين شروط الصفقة والآثار السوقية المتوقعة."
+      ],
+      "limitations": "الصفقة لم تُغلق وقت التقرير والموعد المتوقع قابل للتغير.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Reuters — DoorDash/Instacart deal",
+          "url": "https://www.reuters.com/legal/transactional/doordash-strikes-17-billion-deal-us-rival-instacart-bets-grocery-delivery-2026-10-29/"
+        },
+        {
+          "title": "The Verge — DoorDash acquiring Instacart",
+          "url": "https://www.theverge.com/business/1021981/doordash-instacart-acquisition-announcement"
+        }
+      ],
+      "reviewedAt": "2026-10-29T15:25:42+03:00"
+    },
+    "350861c2ac740fd57c": {
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE12bXBISV8yRmxFZHl5bl9teGJHNVNZUEFQeFI2MkJySEJDRnotZmQya2JEdkJSSkpab1ptQzVUSjBkaXRSWERpa2ZzQVBmazJCT0dR0gFTQVVfeXFMTXZtcEhJXzJGbEVkeXluX214Ykc1U1lQQVB4UjYyQnJIQkNGei1mZDJrYkR2QlJKSlpvWm1DNVRKMGRpdFJYRGlrZnNBUGZrMkJPR1E?oc=5",
+      "titleAr": "مؤتمر سعودي للحوسبة عالية الأداء والذكاء الاصطناعي يجمع نحو 400 مشارك",
+      "summaryAr": "يشير الملخص الرسمي المتاح من KAUST إلى انعقاد المؤتمر السعودي الثالث عشر للحوسبة عالية الأداء والذكاء الاصطناعي بين 26 و28 أكتوبر 2026، بمشاركة تقارب 400 باحث وخبير وممثل للقطاعين الصناعي والحكومي، مع عروض لتطبيقات الحاسوب العملاق Shaheen III.",
+      "whyItMatters": "يشير الحدث إلى استمرار بناء مجتمع بحثي محلي للحوسبة المتقدمة. التحليل: يمكن للطلاب متابعة الأوراق والفرق المشاركة، لكن عدد الحضور وحده لا يقيس جودة النتائج أو فرص التدريب.",
+      "audience": "طلاب الحاسب والذكاء الاصطناعي في السعودية والباحثون والجامعات.",
+      "nextSteps": [
+        "راجع برنامج المؤتمر والمواد المنشورة على KAUST.",
+        "ابحث عن مجموعات البحث والفرص الرسمية.",
+        "تحقق من شروط الفرص لدى الجهة المنظمة."
+      ],
+      "limitations": "تعذر فتح صفحة الخبر الرسمية كاملة؛ الملخص مبني على النص الرسمي الظاهر في نتائج البحث وصفحة المؤتمر. الأرقام من الجهة المنظمة.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "KAUST — Saudi HPC-AI Conference",
+          "url": "https://www.kaust.edu.sa/en/news/kaust-hosts-the-13th-saudi-hpc-ai-conference"
+        },
+        {
+          "title": "KAUST HPC — Conference 2026",
+          "url": "https://www.hpc.kaust.edu.sa/content/saudi-hpcai-conference-2026"
+        }
+      ],
+      "reviewedAt": "2026-10-29T15:25:42+03:00"
+    },
+    "84605754ff747e95c4": {
+      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE1jUEx4ZWlBUWpGZnU4d2l1UGpEWW1RNW4zRl9NNWh5aGxuY1NhaHQ2TlpnVGprWE81cjFodE5sT09Yc0pL?oc=5",
+      "titleAr": "تقرير: Saviynt تطرح استضافة محلية لخدمات حماية الهوية داخل السعودية",
+      "summaryAr": "يفيد ملخص Arabian Reseller بأن Saviynt تتيح خدمة لإدارة وحماية الهوية مستضافة في منطقة Google Cloud بالدمام، مع الإشارة إلى إبقاء بيانات الهوية والسجلات والبيانات الوصفية داخل المملكة. هذه تفاصيل منقولة عن التقرير والشركة وليست تحققًا مستقلًا من كل مسارات البيانات.",
+      "whyItMatters": "توطين البيانات قد يساعد المؤسسات المنظمة على تقييم متطلبات الإقامة والحوكمة، لكنه لا يثبت الامتثال وحده. التحليل: يجب فحص النسخ الاحتياطية والسجلات ومفاتيح التشفير والوصول عبر الحدود.",
+      "audience": "فرق الأمن السيبراني والهوية الرقمية ومهندسو السحابة في السعودية.",
+      "nextSteps": [
+        "اطلب وثيقة تدفق البيانات ومواقع النسخ الاحتياطية.",
+        "تحقق من الشهادات والنطاق التنظيمي في الوثائق الرسمية.",
+        "قارن الإقامة المحلية بضوابط الوصول والتشفير."
+      ],
+      "limitations": "تعذر فتح نص Arabian Reseller كاملًا ولم أعثر على إعلان رسمي مفصل يؤكد كل التفاصيل؛ الأساس metadata والادعاءات منسوبة للتقرير/الشركة.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "Arabian Reseller — Saviynt Saudi data residency",
+          "url": "https://arabianreseller.com/2026/10/29/saviynt-launches-local-data-residency-solution-in-saudi-arabia/"
+        }
+      ],
+      "reviewedAt": "2026-10-29T15:25:42+03:00"
+    },
+    "eaf59681171967dd58": {
+      "url": "https://www.wired.com/story/i-did-push-ups-with-snaps-chunky-ar-glasses/",
+      "titleAr": "مراجعة WIRED تثير سؤال الراحة اليومية في نظارات Snap للواقع المعزز",
+      "summaryAr": "تصف مادة WIRED المرتبطة في التغذية نظارات Snap Specs بأنها كبيرة الحجم وثقيلة نسبيًا، مع سعر معلن يقارب 2,195 دولارًا. لم أتمكن من قراءة المراجعة كاملة، لذا أقتصر على الوصف المتاح ولا أتعامل معه كاختبار شامل.",
+      "whyItMatters": "الراحة والوزن والخصوصية والبطارية وتوفر التطبيقات عوامل تحدد الاستخدام اليومي. التحليل: السعر المرتفع يضع عبء إثبات القيمة على منظومة التطبيقات لا على العتاد وحده.",
+      "audience": "مهتمو الأجهزة القابلة للارتداء والواقع المعزز ومطورو التطبيقات.",
+      "nextSteps": [
+        "راجع المواصفات الرسمية وسياسة تسجيل الكاميرا.",
+        "قارن الوزن والبطارية في مراجعات مستقلة.",
+        "تعامل مع السعر كمدخل تقييم لا كدليل جودة."
+      ],
+      "limitations": "الأساس metadata لأن نص المراجعة الكامل لم يكن متاحًا؛ لم أجر تجربة للجهاز وقد يختلف التوفر حسب السوق.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "WIRED — Snap’s Chunky AR Glasses",
+          "url": "https://www.wired.com/story/i-did-push-ups-with-snaps-chunky-ar-glasses/"
+        },
+        {
+          "title": "WIRED — Snap Specs price overview",
+          "url": "https://www.wired.com/story/snaps-new-ar-specs-cost-2195"
+        }
+      ],
+      "reviewedAt": "2026-10-29T15:25:42+03:00"
+    },
+    "6ad224e2a089ce4ff5": {
+      "url": "https://arxiv.org/abs/2610.33379",
+      "titleAr": "بحث يقترح أسلوبًا لتسريع توليد النص بمسودات انتشارية",
+      "summaryAr": "تقترح ورقة One Call Ahead أسلوب Packed Self-Speculative Decoding يستخدم مسودات مبنية على diffusion لتقليل زمن التوليد. يذكر الملخص أن تجاربًا على نماذج محددة حققت إنتاجية أعلى ومتوسط زمن أقل من خطوط أساس مقارنة ضمن greedy decoding.",
+      "whyItMatters": "تقليل زمن الاستدلال قد يخفض تكلفة الخدمة ويحسن الاستجابة. التحليل: النتيجة تعتمد على العتاد وحجم النموذج ومعدل رفض المسودات؛ لا تكفي نتيجة الملخص لإثبات تحسن عام.",
+      "audience": "باحثو النماذج اللغوية ومهندسو الاستدلال وطلاب تعلم الآلة.",
+      "nextSteps": [
+        "راجع إعدادات التجربة ومقاييس throughput وlatency.",
+        "قارن بخط أساس مطابق على العتاد نفسه.",
+        "اختبر جودة النص ومعدل الرفض مع السرعة."
+      ],
+      "limitations": "راجعت صفحة الملخص فقط، لا جميع التجارب أو الشيفرة؛ الأرقام ادعاءات المؤلفين ولا تعني تحسنًا على كل النماذج.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — One Call Ahead",
+          "url": "https://arxiv.org/abs/2610.33379"
+        }
+      ],
+      "reviewedAt": "2026-10-29T15:25:42+03:00"
+    },
+    "b784365e0fea45f615": {
+      "url": "https://arxiv.org/abs/2610.33333",
+      "titleAr": "ورقة تبحث تقريبًا غاوسيًا لحساب تراكم الخصوصية التفاضلية",
+      "summaryAr": "تبحث الورقة في تقريب غاوسي لتوزيع خسارة الخصوصية عند تركيب آليات الخصوصية التفاضلية وأخذ عينات فرعية منها. يطرح الملخص حدودًا تحليلية قد تكون أدق في بعض الإعدادات، لكن صلاحيتها تعتمد على فروض النظرية ونوع الآلية.",
+      "whyItMatters": "حساب ميزانية الخصوصية أساسي عند تدريب نماذج أو تحليل بيانات حساسة. التحليل: لا ينبغي نقل حد نظري إلى الإنتاج دون مطابقة افتراضاته مع آلية التدريب الفعلية.",
+      "audience": "باحثو الخصوصية وتعلم الآلة ومهندسو البيانات.",
+      "nextSteps": [
+        "اقرأ فروض النظرية في النص الكامل.",
+        "قارن الحد المقترح بأدوات حساب الخصوصية في مشروعك.",
+        "وثّق آلية التدريب والميزانية والافتراضات."
+      ],
+      "limitations": "راجعت الملخص فقط ولم أتحقق من البراهين أو إعادة الإنتاج؛ النتيجة مشروطة بالآليات والافتراضات المدروسة.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — Gaussian Approximation for Differential Privacy",
+          "url": "https://arxiv.org/abs/2610.33333"
+        }
+      ],
+      "reviewedAt": "2026-10-29T15:25:42+03:00"
+    },
+    "9e59b2d01cdf2c5068": {
+      "url": "https://github.com/Chalarangelo/30-seconds-of-code",
+      "titleAr": "30 Seconds of Code — مكتبة أمثلة ومقتطفات برمجية قصيرة",
+      "summaryAr": "مكتبة تعليمية تضم مقالات ومقتطفات برمجية مع شرح وأمثلة ومجموعات يمكن البحث فيها بحسب الاسم والوسوم واللغة والوصف. README يذكر أن المساهمات الجديدة للمحتوى غير مفتوحة حاليًا.",
+      "whyItMatters": "تفيد كمرجع سريع للمطورين والطلاب. التحليل: فائدتها تعتمد على حداثة المثال وسياقه وفهم ترخيصه.",
+      "audience": "طلاب البرمجة والمطورون.",
+      "nextSteps": [
+        "ابحث بحسب اللغة والوسوم.",
+        "اقرأ الشرح قبل استخدام المقتطف.",
+        "تحقق من ترخيص المقتطف بعينه."
+      ],
+      "limitations": "راجعت README وpackage.json وLICENSE ولم أشغّل البناء. يتطلب التطوير Node.js >=22.14.0. README يذكر CC BY 4.0 للمقتطفات، بينما package.json يذكر MIT لكود المشروع؛ ومواد الموقع والنصوص والصور والشعارات ليست قابلة لإعادة الاستخدام تلقائيًا.",
+      "reviewedAt": "2026-10-29T15:25:42+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "30 Seconds of Code README",
+          "url": "https://github.com/Chalarangelo/30-seconds-of-code/blob/master/README.md"
+        },
+        {
+          "title": "30 Seconds of Code package.json",
+          "url": "https://github.com/Chalarangelo/30-seconds-of-code/blob/master/package.json"
+        },
+        {
+          "title": "30 Seconds of Code LICENSE",
+          "url": "https://github.com/Chalarangelo/30-seconds-of-code/blob/master/LICENSE"
+        }
+      ],
+      "overview": "مكتبة مقالات ومقتطفات تعليمية قصيرة مع شروح وأمثلة ومجموعات قابلة للبحث. يمكن تصفح الموقع أو تشغيل نسخة التطوير المبنية بـ Astro. ترخيص المقتطفات يختلف عن ترخيص كود الموقع والمواد المرئية.",
+      "requirements": "للتصفح: متصفح حديث. للتطوير المحلي: Node.js >=22.14.0 وnpm واعتماديات Astro وVitest. لا يلزم مفتاح API. التشغيل المحلي مجاني؛ الاستضافة المخصصة قد تتطلب خدمة استضافة.",
+      "quickStart": "استنسخ المستودع، ثم npm install، ثم npm run dev وافتح http://localhost:8000. استخدم npm run test لتشغيل Vitest وnpm run build للبناء. لم أنفذ الأوامر.",
+      "improvements": [
+        {
+          "title": "توسيع اختبارات المقتطفات",
+          "problem": "قد تصبح الأمثلة قديمة مع تغير إصدارات JavaScript وNode.",
+          "approach": "تصنيف الأمثلة حسب بيئة التشغيل وإضافة اختبارات معزولة للمقتطفات الآمنة.",
+          "stack": "Node.js، Vitest، GitHub Actions",
+          "steps": [
+            "جرد المقتطفات القابلة للتنفيذ.",
+            "اختيار أمثلة آمنة وإضافة اختبارات.",
+            "تشغيل الاختبارات على إصدارات Node المدعومة.",
+            "نشر نسبة التغطية والاستثناءات."
+          ],
+          "metric": "نجاح 90% من اختبارات العينة.",
+          "difficulty": "متوسط — تقدير 1–2 أسبوع",
+          "risks": "قد تسبب المقتطفات غير الموثوقة آثارًا جانبية.",
+          "sources": [
+            {
+              "title": "package.json",
+              "url": "https://github.com/Chalarangelo/30-seconds-of-code/blob/master/package.json"
+            },
+            {
+              "title": "Vitest Guide",
+              "url": "https://vitest.dev/guide/"
+            }
+          ]
+        },
+        {
+          "title": "مسار عربي بمصطلحات موحدة",
+          "problem": "قد يصعب الانتقال بين المصطلح العربي والإنجليزي.",
+          "approach": "إضافة ترجمة مستقلة للمحتوى المسموح ترخيصه وقاموس مصطلحات ومراجعة بشرية.",
+          "stack": "Astro i18n، Markdown، JSON",
+          "steps": [
+            "اختيار أمثلة ذات ترخيص واضح.",
+            "إنشاء قاموس للمصطلحات.",
+            "إضافة شرح عربي مع إبقاء الكود كما هو.",
+            "مراجعة الأمثلة والمصادر."
+          ],
+          "metric": "100 مثال مترجم ومراجع.",
+          "difficulty": "متوسط — تقدير 2–3 أسابيع",
+          "risks": "قد تنحرف الترجمة أو يُعاد استخدام محتوى غير مرخص.",
+          "sources": [
+            {
+              "title": "README",
+              "url": "https://github.com/Chalarangelo/30-seconds-of-code/blob/master/README.md"
+            },
+            {
+              "title": "Astro i18n",
+              "url": "https://docs.astro.build/en/guides/internationalization/"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مكتبة عربية مستقلة لمقتطفات Python",
+          "problem": "يحتاج المتعلم أمثلة قصيرة موثقة بالعربية.",
+          "approach": "إنشاء مستودع مستقل بأمثلة أصلية مع شرح واختبارات.",
+          "stack": "Python، pytest، MkDocs",
+          "steps": [
+            "تحديد موضوعات Python.",
+            "كتابة أمثلة أصلية.",
+            "إضافة اختبار لكل مثال.",
+            "نشر وفهرسة الأمثلة."
+          ],
+          "metric": "كل مثال له اختبار ناجح.",
+          "difficulty": "متوسط — تقدير 2–3 أسابيع",
+          "risks": "الانزلاق إلى نسخ محتوى الغير أو أمثلة ناقصة.",
+          "sources": [
+            {
+              "title": "Python Documentation",
+              "url": "https://docs.python.org/3/"
+            },
+            {
+              "title": "30 Seconds of Code",
+              "url": "https://github.com/Chalarangelo/30-seconds-of-code"
+            }
+          ]
+        },
+        {
+          "title": "بطاقات خوارزميات مع تحليل التعقيد",
+          "problem": "قد تفصل قوائم المقابلات الحل عن الحالات الحدية.",
+          "approach": "بناء بطاقات مستقلة تشرح التعقيد وتعرض اختبارات لكل حل.",
+          "stack": "Python، pytest، Markdown",
+          "steps": [
+            "اختيار مسائل أصلية أو مرخصة.",
+            "كتابة حل وتحليل التعقيد.",
+            "إنشاء اختبارات للحالات الحدية.",
+            "مراجعة الحلول ونشرها."
+          ],
+          "metric": "100% من المسائل لها حالات حدية واختبارات.",
+          "difficulty": "متوسط — تقدير أسبوعين",
+          "risks": "قد تختلف التعقيدات حسب التنفيذ؛ وثّق المصادر.",
+          "sources": [
+            {
+              "title": "Python Documentation",
+              "url": "https://docs.python.org/3/"
+            },
+            {
+              "title": "Vitest Guide",
+              "url": "https://vitest.dev/guide/"
+            }
+          ]
+        }
+      ],
+      "religious": []
+    },
+    "db3066dd1047827371": {
+      "url": "https://github.com/denizsafak/abogen",
+      "titleAr": "Abogen — تحويل EPUB وPDF والنصوص إلى كتب صوتية مع تسميات متزامنة",
+      "summaryAr": "يوفر Abogen واجهة سطح مكتب بـ PyQt6 وواجهة ويب بـ Flask لتحويل EPUB وPDF والنصوص وMarkdown والترجمات إلى صوت مع تسميات متزامنة باستخدام نماذج TTS مثل Kokoro. وتقدم واجهة الويب ميزات إضافية مثل تطبيع النص بمساعدة نموذج لغوي وتكامل Audiobookshelf.",
+      "whyItMatters": "يمكن أن يدعم الوصول إلى مواد الدراسة والقراءة المسموعة محليًا إذا ضُبط دون اتصال. التحليل: جودة الصوت العربي وسلامة النطق وخصوصية النصوص تعتمد على النموذج والإعدادات.",
+      "audience": "الطلاب والمعلمون وصناع المحتوى ومهتمو الوصول الرقمي.",
+      "nextSteps": [
+        "ابدأ بملف قصير تملك حق استخدامه وافحص محاذاة الصوت والتسميات.",
+        "اختر تثبيتًا متوافقًا مع Python والعتاد.",
+        "تحقق من عدم إرسال النص إلى نقطة نهاية خارجية إذا كانت الملفات خاصة."
+      ],
+      "limitations": "راجعت README وLICENSE وpyproject.toml ولم أشغّل البرنامج. يتطلب eSpeak NG واعتماديات صوتية كبيرة؛ CPU أبطأ وAMD GPU يحتاج Linux/ROCm. يوجد اختلاف بين pyproject الذي يحدد Python <3.13 وبين جزء من README الذي يذكر Python 3.13 لبعض أجهزة Mac؛ تحقق من الإصدار. ميزة LLM قد تتصل بنقطة نهاية محلية أو بعيدة.",
+      "reviewedAt": "2026-10-29T15:25:42+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "Abogen README",
+          "url": "https://github.com/denizsafak/abogen/blob/main/README.md"
+        },
+        {
+          "title": "Abogen LICENSE",
+          "url": "https://github.com/denizsafak/abogen/blob/main/LICENSE"
+        },
+        {
+          "title": "Abogen pyproject.toml",
+          "url": "https://github.com/denizsafak/abogen/blob/main/pyproject.toml"
+        }
+      ],
+      "overview": "أداة لتحويل EPUB وPDF والنص وMarkdown والترجمات إلى كتب صوتية مع تسميات متزامنة وعلامات فصول. تقدم واجهة سطح مكتب PyQt6 وواجهة ويب Flask، ويمكن تنزيل النماذج والأصوات مسبقًا للعمل دون اتصال.",
+      "requirements": "يحدد pyproject.toml Python >=3.10 و<3.13 ويعتمد على Kokoro وPyMuPDF وebooklib وspaCy وPyQt6 وFlask. يتطلب eSpeak NG. يدعم Windows/Linux/macOS؛ تسريع NVIDIA/CUDA اختياري وAMD GPU يتطلب Linux/ROCm. لا يلزم نموذج سحابي للتحويل الأساسي؛ تطبيع LLM اختياري وقد يحتاج API key لخدمة بعيدة أو endpoint محلي مثل Ollama.",
+      "quickStart": "على Linux: ثبّت eSpeak NG وuv، ثم uv tool install --python 3.12 abogen، وشغّل abogen لواجهة سطح المكتب. لواجهة الويب شغّل abogen-web وافتح http://localhost:8808 وفق README. نزّل النماذج والأصوات مسبقًا للعمل دون اتصال. لم أنفذ الأوامر.",
+      "improvements": [
+        {
+          "title": "قاموس نطق عربي قابل للمراجعة",
+          "problem": "قد تُنطق الأسماء والمصطلحات العربية بصورة غير مستقرة.",
+          "approach": "إضافة قاموس اختياري مع أمثلة مرجعية ومراجعة بشرية.",
+          "stack": "Python، JSON، واجهة مراجعة، pytest",
+          "steps": [
+            "إنشاء مجموعة اختبار عربية مرخصة.",
+            "تسجيل الكلمات التي يختلف نطقها.",
+            "إضافة قواعد موثقة وقابلة للتعطيل.",
+            "مقارنة المخرجات بمراجعة بشرية."
+          ],
+          "metric": "انخفاض أخطاء النطق في مجموعة اختبار موثقة.",
+          "difficulty": "متوسط/مرتفع — تقدير 2–4 أسابيع",
+          "risks": "التطبيع الخاطئ قد يغير المعنى؛ النص الديني والعلمي يحتاج مراجعة.",
+          "sources": [
+            {
+              "title": "Abogen README",
+              "url": "https://github.com/denizsafak/abogen/blob/main/README.md"
+            },
+            {
+              "title": "Abogen pyproject",
+              "url": "https://github.com/denizsafak/abogen/blob/main/pyproject.toml"
+            }
+          ]
+        },
+        {
+          "title": "استئناف المعالجة من مستوى الفصل",
+          "problem": "قد يضطر المستخدم لإعادة معالجة كتاب كامل بعد انقطاع المهمة.",
+          "approach": "حفظ حالة كل فصل وبصمة المدخلات ونسخة النموذج واستئناف غير المكتمل.",
+          "stack": "Python، SQLite، pytest",
+          "steps": [
+            "تحديد وحدة العمل على مستوى الفصل.",
+            "حفظ حالة النجاح والفشل وبصمة المدخلات.",
+            "استئناف دون إعادة الفصول المكتملة.",
+            "اختبار إيقاف المهمة واستعادتها."
+          ],
+          "metric": "99% من اختبارات الاستئناف تحفظ الفصول المكتملة.",
+          "difficulty": "متوسط — تقدير 1–2 أسبوع",
+          "risks": "تغير النموذج أو الإعدادات قد يمنع الاستئناف المتوافق.",
+          "sources": [
+            {
+              "title": "Abogen README — Queue Mode",
+              "url": "https://github.com/denizsafak/abogen/blob/main/README.md"
+            },
+            {
+              "title": "Abogen repository",
+              "url": "https://github.com/denizsafak/abogen"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "محوّل محلي لمحاضرات الجامعة إلى صوت وتسميات",
+          "problem": "يحتاج الطالب للاستماع إلى مواد المقرر مع متابعة النص دون رفع الملفات إلى خدمة خارجية.",
+          "approach": "تطبيق يستورد ملفات مصرحًا بها ويقسمها إلى فصول ويخرج صوتًا وتسميات.",
+          "stack": "Python، SQLite، SRT/VTT",
+          "steps": [
+            "تحديد صيغ الإدخال والمخرجات.",
+            "بناء تجربة على ملفات مصرح بها.",
+            "إضافة علامات الفصول وتوقيت المقاطع.",
+            "قياس التزامن على عينة مراجعة."
+          ],
+          "metric": "95% من المقاطع ضمن حد التزامن.",
+          "difficulty": "متوسط — تقدير 2–3 أسابيع",
+          "risks": "حقوق نشر الملفات وأخطاء النطق وتفاوت الأداء.",
+          "sources": [
+            {
+              "title": "Abogen README",
+              "url": "https://github.com/denizsafak/abogen/blob/main/README.md"
+            },
+            {
+              "title": "Abogen LICENSE",
+              "url": "https://github.com/denizsafak/abogen/blob/main/LICENSE"
+            }
+          ]
+        },
+        {
+          "title": "قارئ EPUB/PDF ميسر مع علامات فصول",
+          "problem": "قد يحتاج المستمع إلى صوت مرتبط بموضع النص.",
+          "approach": "قارئ مستقل يحتفظ بعلامات الفصول ويصدر صوتًا وتسميات متزامنة.",
+          "stack": "Python، PyMuPDF، ebooklib، SRT/VTT",
+          "steps": [
+            "اختيار ملفات اختبار مرخصة.",
+            "استخراج الفصول مع حفظ ترتيبها.",
+            "توليد الصوت والتسميات وربطها بالنص.",
+            "اختبار التنقل واستعادة الموضع."
+          ],
+          "metric": "استعادة موضع القراءة الصحيح في 95% من الاختبارات.",
+          "difficulty": "متوسط — تقدير 3 أسابيع",
+          "risks": "قد يفقد PDF ترتيب الأعمدة؛ يلزم اختبار وصولية.",
+          "sources": [
+            {
+              "title": "Abogen README",
+              "url": "https://github.com/denizsafak/abogen/blob/main/README.md"
+            },
+            {
+              "title": "PyMuPDF Documentation",
+              "url": "https://pymupdf.readthedocs.io/en/latest/"
+            }
+          ]
+        }
+      ],
+      "religious": [
+        {
+          "title": "مكتبة صوتية للكتب والدروس الدينية المرخّصة",
+          "problem": "قد تُنشر ملفات صوتية دون وضوح الترخيص أو بيانات الطبعة أو مراجعة النطق.",
+          "approach": "مسار تحويل للمحتوى المصرح به فقط مع بيان للمؤلف والطبعة والترخيص ومراجعة بشرية؛ لا يولّد نصوصًا شرعية أو فتاوى.",
+          "stack": "Abogen، JSON manifest، تحقق تراخيص، مراجعة بشرية",
+          "steps": [
+            "اختيار مواد بإذن واضح.",
+            "حفظ المؤلف والطبعة والمصدر والترخيص.",
+            "تحويل عينة ومراجعة النطق مع مختص.",
+            "نشر الملفات بعد مراجعة الحقوق والمحتوى.",
+            "توفير سجل مصدر وإصدار لكل ملف."
+          ],
+          "metric": "100% من الملفات لها مصدر وترخيص ومراجعة موثقة.",
+          "difficulty": "متوسط — تقدير 2–4 أسابيع",
+          "risks": "حقوق النشر وأخطاء النطق؛ لا توحِ بصحة فتوى أو تفسير.",
+          "sources": [
+            {
+              "title": "Abogen README",
+              "url": "https://github.com/denizsafak/abogen/blob/main/README.md"
+            },
+            {
+              "title": "Creative Commons license guidance",
+              "url": "https://creativecommons.org/share-your-work/cclicenses/"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
