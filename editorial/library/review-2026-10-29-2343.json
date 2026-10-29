@@ -1,0 +1,458 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-29T23:43:00+03:00",
+  "published": false,
+  "siteContent": false,
+  "purpose": "Research-only review; no project UI or code was changed.",
+  "historicalLibrary": {
+    "catalogPath": "editorial/library/catalog-2026-10-29-2343.json",
+    "historicalProjects": 31,
+    "activeNotArchived": 29,
+    "archived": 2,
+    "licenseMetadataNoAssertion": 9,
+    "projectDossiersAdded": 1
+  },
+  "previousEight": [
+    {
+      "repo": "gradio-app/gradio",
+      "stars": 43925,
+      "forks": 3654,
+      "openIssues": 118,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-10-29T18:56:21Z",
+      "updatedAt": "2026-10-29T20:31:22Z",
+      "requirements": "Python؛ راجع إصدار Python المدعوم في الوثائق الحالية.",
+      "quickStart": "pip install gradio؛ أنشئ app.py بواجهة Interface/Blocks ثم شغّل python app.py.",
+      "localCloudCost": "محليًا مجاني؛ الاستضافة السحابية اختيارية وقد تكون مدفوعة حسب الاستخدام.",
+      "alternatives": [
+        "https://github.com/streamlit/streamlit",
+        "https://github.com/holoviz/panel"
+      ],
+      "risks": "مشاركة الواجهة قد تكشف بيانات إذا أُرسلت إلى رابط عام؛ افصل بيانات التجربة عن البيانات الحساسة.",
+      "measuredAt": "2026-10-29T23:43:00+03:00",
+      "archived": false,
+      "officialRepository": "https://github.com/gradio-app/gradio",
+      "licenseEvidence": "README and LICENSE text reviewed; SPDX metadata returned by GitHub API",
+      "feedStatus": {
+        "present": true,
+        "kind": "project",
+        "id": "9563de7ec1221e077a",
+        "url": "https://github.com/gradio-app/gradio",
+        "editorialExact": true
+      },
+      "tested": false,
+      "testEvidence": null,
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/gradio-app/gradio"
+        },
+        {
+          "title": "License file",
+          "url": "https://github.com/gradio-app/gradio/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "repo": "thedotmack/claude-mem",
+      "stars": 104633,
+      "forks": 9233,
+      "openIssues": 122,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-10-29T20:52:08Z",
+      "updatedAt": "2026-10-29T20:55:24Z",
+      "requirements": "بيئة Node.js وأداة ترميز وكيلة مدعومة؛ راجع قائمة التوافق في README.",
+      "quickStart": "استخدم المثبّت الرسمي في README، وتحقق من موضع تخزين الذاكرة ومزوّدها قبل التفعيل.",
+      "localCloudCost": "قد يعمل محليًا بحسب إعداد المزود؛ الخدمات السحابية أو الخطط الإضافية قد تكلف. لا تفترض أن الذاكرة محلية تلقائيًا.",
+      "alternatives": [
+        "https://github.com/mem0ai/mem0",
+        "https://github.com/letta-ai/letta"
+      ],
+      "risks": "قد تُحفظ مقتطفات حساسة من جلسات البرمجة؛ افحص سياسات التخزين والحذف قبل استخدامه على مستودعات خاصة.",
+      "measuredAt": "2026-10-29T23:43:00+03:00",
+      "archived": false,
+      "officialRepository": "https://github.com/thedotmack/claude-mem",
+      "licenseEvidence": "README and LICENSE text reviewed; SPDX metadata returned by GitHub API",
+      "feedStatus": {
+        "present": true,
+        "kind": "project",
+        "id": "853c63f738f0cecf3b",
+        "url": "https://github.com/thedotmack/claude-mem",
+        "editorialExact": true
+      },
+      "tested": false,
+      "testEvidence": null,
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/thedotmack/claude-mem"
+        },
+        {
+          "title": "License file",
+          "url": "https://github.com/thedotmack/claude-mem/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "repo": "ultralytics/ultralytics",
+      "stars": 62973,
+      "forks": 11933,
+      "openIssues": 103,
+      "license": "AGPL-3.0",
+      "pushedAt": "2026-10-29T19:33:22Z",
+      "updatedAt": "2026-10-29T18:51:39Z",
+      "requirements": "Python وPyTorch؛ GPU اختياري ويعتمد على حجم النموذج والحمل.",
+      "quickStart": "pip install ultralytics؛ نفّذ مثال predict موثقًا على صورة اختبار محلية، ثم افحص نتائج النموذج يدويًا.",
+      "localCloudCost": "محليًا مجاني مع العتاد المتاح؛ التدريب السحابي قد يكلف. راجع AGPL-3.0 قبل دمجه في منتج مغلق المصدر.",
+      "alternatives": [
+        "https://github.com/open-mmlab/mmdetection",
+        "https://github.com/facebookresearch/detectron2"
+      ],
+      "risks": "الترخيص AGPL-3.0 قد يؤثر على التوزيع التجاري؛ نتائج الكشف تعتمد على البيانات والتحيز وظروف التصوير.",
+      "measuredAt": "2026-10-29T23:43:00+03:00",
+      "archived": false,
+      "officialRepository": "https://github.com/ultralytics/ultralytics",
+      "licenseEvidence": "README and LICENSE text reviewed; SPDX metadata returned by GitHub API",
+      "feedStatus": {
+        "present": true,
+        "kind": "project",
+        "id": "112ba4283cccf5b146",
+        "url": "https://github.com/ultralytics/ultralytics",
+        "editorialExact": true
+      },
+      "tested": false,
+      "testEvidence": null,
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/ultralytics/ultralytics"
+        },
+        {
+          "title": "License file",
+          "url": "https://github.com/ultralytics/ultralytics/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "repo": "harry0703/MoneyPrinterTurbo",
+      "stars": 136287,
+      "forks": 21690,
+      "openIssues": 80,
+      "license": "MIT",
+      "pushedAt": "2026-10-29T12:42:40Z",
+      "updatedAt": "2026-10-29T20:45:21Z",
+      "requirements": "Python وإعدادات مزودي النص والصوت والوسائط حسب المسار المستخدم.",
+      "quickStart": "اتبع خطوات README لتثبيت المتطلبات، واضبط فقط مفاتيح المزودين الذين ستستخدمهم ثم شغّل الواجهة محليًا.",
+      "localCloudCost": "التجميع المحلي ممكن؛ استدعاءات نماذج أو TTS أو مكتبات وسائط خارجية قد تفرض تكاليف منفصلة.",
+      "alternatives": [
+        "https://github.com/Zulko/moviepy",
+        "https://ffmpeg.org/"
+      ],
+      "risks": "تحقق من حقوق الصور والموسيقى والصوت وصدق المحتوى قبل النشر؛ لا تدّعِ اختبار المشروع في هذه المراجعة.",
+      "measuredAt": "2026-10-29T23:43:00+03:00",
+      "archived": false,
+      "officialRepository": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "licenseEvidence": "README and LICENSE text reviewed; SPDX metadata returned by GitHub API",
+      "feedStatus": {
+        "present": true,
+        "kind": "project",
+        "id": "0604d6a7a7d7afd211",
+        "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+        "editorialExact": true
+      },
+      "tested": false,
+      "testEvidence": null,
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/harry0703/MoneyPrinterTurbo"
+        },
+        {
+          "title": "License file",
+          "url": "https://github.com/harry0703/MoneyPrinterTurbo/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "repo": "microsoft/AI-For-Beginners",
+      "stars": 70359,
+      "forks": 13680,
+      "openIssues": 28,
+      "license": "MIT",
+      "pushedAt": "2026-10-23T23:55:14Z",
+      "updatedAt": "2026-10-29T18:31:49Z",
+      "requirements": "متصفح أو بيئة Python/Jupyter لبعض الدروس؛ متطلبات كل درس موضحة في ملفاته.",
+      "quickStart": "ابدأ بمسار الدروس والدفاتر المحدد في README؛ نفّذ درسًا واحدًا محليًا أو في بيئة دفتر سحابية.",
+      "localCloudCost": "المحتوى مجاني؛ التشغيل المحلي بلا تكلفة سحابية، والدفاتر السحابية قد تفرض حدودًا أو رسومًا.",
+      "alternatives": [
+        "https://github.com/fastai/fastbook",
+        "https://developers.google.com/machine-learning/crash-course"
+      ],
+      "risks": "المحتوى تعليمي ولا يغني عن فحص توافق المكتبات وتحديثات الإصدارات.",
+      "measuredAt": "2026-10-29T23:43:00+03:00",
+      "archived": false,
+      "officialRepository": "https://github.com/microsoft/AI-For-Beginners",
+      "licenseEvidence": "README and LICENSE text reviewed; SPDX metadata returned by GitHub API",
+      "feedStatus": {
+        "present": true,
+        "kind": "project",
+        "id": "d4316f8d5082c97897",
+        "url": "https://github.com/microsoft/AI-For-Beginners",
+        "editorialExact": true
+      },
+      "tested": false,
+      "testEvidence": null,
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/microsoft/AI-For-Beginners"
+        },
+        {
+          "title": "License file",
+          "url": "https://github.com/microsoft/AI-For-Beginners/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "repo": "usebruno/bruno",
+      "stars": 47930,
+      "forks": 3053,
+      "openIssues": 1968,
+      "license": "MIT",
+      "pushedAt": "2026-10-29T14:30:38Z",
+      "updatedAt": "2026-10-29T20:45:51Z",
+      "requirements": "تطبيق سطح مكتب؛ Node.js/npm مطلوبان لاستخدام CLI أو التطوير.",
+      "quickStart": "أنشئ مجموعة طلبات محلية؛ للـ CLI استخدم npm install -g @usebruno/cli ثم bru run folder --env Local.",
+      "localCloudCost": "مصمم للعمل دون مزامنة سحابية؛ التشغيل المحلي مجاني، وبيئات CI لها تكلفة تشغيلها المعتادة.",
+      "alternatives": [
+        "https://github.com/Kong/insomnia",
+        "https://github.com/hoppscotch/hoppscotch"
+      ],
+      "risks": "راجع الأسرار في ملفات البيئة والمجموعات قبل حفظها أو مشاركتها عبر Git.",
+      "measuredAt": "2026-10-29T23:43:00+03:00",
+      "archived": false,
+      "officialRepository": "https://github.com/usebruno/bruno",
+      "licenseEvidence": "README and LICENSE text reviewed; SPDX metadata returned by GitHub API",
+      "feedStatus": {
+        "present": true,
+        "kind": "project",
+        "id": "6c62a31152244eb967",
+        "url": "https://github.com/usebruno/bruno",
+        "editorialExact": true
+      },
+      "tested": false,
+      "testEvidence": null,
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/usebruno/bruno"
+        },
+        {
+          "title": "License file",
+          "url": "https://github.com/usebruno/bruno/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "repo": "keras-team/keras",
+      "stars": 64397,
+      "forks": 19805,
+      "openIssues": 272,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-10-29T20:21:36Z",
+      "updatedAt": "2026-10-29T20:21:50Z",
+      "requirements": "Python وإحدى واجهات الخلفية المدعومة مثل TensorFlow أو JAX أو PyTorch.",
+      "quickStart": "pip install keras ثم ثبّت backend واحدًا متوافقًا وشغّل مثالًا صغيرًا قبل الانتقال إلى بيانات حقيقية.",
+      "localCloudCost": "محليًا مجاني؛ GPU سحابي اختياري وقد يكلّف.",
+      "alternatives": [
+        "https://github.com/pytorch/pytorch",
+        "https://github.com/jax-ml/jax"
+      ],
+      "risks": "تأكد من توافق backend والإصدارات؛ نتائج التدريب تحتاج تقييمًا على بيانات محجوبة.",
+      "measuredAt": "2026-10-29T23:43:00+03:00",
+      "archived": false,
+      "officialRepository": "https://github.com/keras-team/keras",
+      "licenseEvidence": "README and LICENSE text reviewed; SPDX metadata returned by GitHub API",
+      "feedStatus": {
+        "present": true,
+        "kind": "project",
+        "id": "10b7f65af4f5070207",
+        "url": "https://github.com/keras-team/keras",
+        "editorialExact": true
+      },
+      "tested": false,
+      "testEvidence": null,
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/keras-team/keras"
+        },
+        {
+          "title": "License file",
+          "url": "https://github.com/keras-team/keras/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "repo": "k2-fsa/sherpa-onnx",
+      "stars": 15600,
+      "forks": 1828,
+      "openIssues": 634,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-10-29T12:00:57Z",
+      "updatedAt": "2026-10-29T20:32:47Z",
+      "requirements": "ملف نموذج متوافق وثنائية أو مكتبة تناسب النظام والمعمارية المستهدفة.",
+      "quickStart": "نزّل نموذجًا موثقًا وثنائية رسمية، ثم شغّل مثال التعرف على الكلام دون اتصال قبل ربطه بتطبيق.",
+      "localCloudCost": "مصمم للتشغيل المحلي/المضمن؛ لا يلزم cloud للمسار الأساسي، لكن تنزيل النماذج والعتاد لهما كلفة.",
+      "alternatives": [
+        "https://github.com/ggml-org/whisper.cpp",
+        "https://github.com/alphacep/vosk-api",
+        "https://github.com/rhasspy/piper"
+      ],
+      "risks": "الجودة تعتمد على اللغة والنموذج والعتاد؛ افحص شروط أوزان النماذج وبيانات الصوت.",
+      "measuredAt": "2026-10-29T23:43:00+03:00",
+      "archived": false,
+      "officialRepository": "https://github.com/k2-fsa/sherpa-onnx",
+      "licenseEvidence": "README and LICENSE text reviewed; SPDX metadata returned by GitHub API",
+      "feedStatus": {
+        "present": true,
+        "kind": "project",
+        "id": "8d397f7a7077f1abc0",
+        "url": "https://github.com/k2-fsa/sherpa-onnx",
+        "editorialExact": true
+      },
+      "tested": false,
+      "testEvidence": null,
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/k2-fsa/sherpa-onnx"
+        },
+        {
+          "title": "License file",
+          "url": "https://github.com/k2-fsa/sherpa-onnx/blob/main/LICENSE"
+        }
+      ]
+    }
+  ],
+  "topThreeSuggestions": [
+    {
+      "title": "عارض فروق السياسات لـOpenShell",
+      "problem": "مراجعة تغييرات صلاحيات الملفات والشبكة والاعتمادات يدويًا قد تكون صعبة.",
+      "approach": "إظهار فرق واضح قبل/بعد السياسة مع تمييز الصلاحيات الجديدة وطلب موافقة بشرية محلية.",
+      "stack": "Python, FastAPI, React, OpenShell policy schema",
+      "steps": [
+        "اقرأ ملفات سياسة اصطناعية فقط.",
+        "حوّل القواعد إلى نموذج موحد للملفات والشبكة والاعتمادات.",
+        "اعرض الفرق مع تصنيف السماح والمنع.",
+        "أضف تصدير تقرير محليًا دون إرسال السياسات إلى خدمة خارجية."
+      ],
+      "metric": "نسبة تغييرات السياسة التي تظهر في التقرير ووقت المراجعة لكل تغيير.",
+      "difficulty": "متوسط (تقديري)",
+      "risks": "قد يكشف التقرير أسماء مسارات أو مضيفين؛ يجب أن يعمل محليًا ويخفي القيم الحساسة.",
+      "sources": [
+        {
+          "title": "NVIDIA OpenShell README",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        },
+        {
+          "title": "OpenShell policy documentation",
+          "url": "https://docs.nvidia.com/openshell/latest/"
+        }
+      ]
+    },
+    {
+      "title": "اختبارات تراجع لعزل وكلاء OpenShell",
+      "problem": "قد توسع تعديلات السياسة الوصول دون اكتشاف ذلك قبل الاستخدام.",
+      "approach": "إنشاء اختبارات سماح/منع على ملفات اصطناعية ونقاط نهاية تجريبية مع حفظ النتائج كدليل.",
+      "stack": "Python, pytest, OpenShell CLI, JSONL",
+      "steps": [
+        "عرّف حالات وصول مسموحة ومرفوضة ببيانات اصطناعية.",
+        "شغّل الحالات قبل تعديل السياسة وبعده.",
+        "قارن النتيجة المتوقعة بالفعلية.",
+        "أصدر تقريرًا عن الاختبارات الفاشلة دون تشغيل مهام على بيانات حقيقية."
+      ],
+      "metric": "تغطية قواعد السياسة وعدد حالات الوصول غير المقصودة المكتشفة في CI.",
+      "difficulty": "متوسط (تقديري)",
+      "risks": "قد تمنح الاختبارات ثقة زائدة إذا كانت التغطية ناقصة؛ يلزم اختبار منصات متعددة.",
+      "sources": [
+        {
+          "title": "OpenShell testing and security documentation",
+          "url": "https://github.com/NVIDIA/OpenShell/tree/main/tests"
+        },
+        {
+          "title": "OpenShell architecture",
+          "url": "https://docs.nvidia.com/openshell/latest/about/architecture"
+        }
+      ]
+    },
+    {
+      "title": "بوابة CI لميزانية تخصيص الذاكرة في Go",
+      "problem": "قد تعود تخصيصات heap غير المتوقعة إلى مسارات حساسة للأداء دون أن يلاحظها الفريق.",
+      "approach": "تشغيل noalloc على مسارات محددة ومقارنة النتائج بميزانية متفق عليها مع السماح باستثناءات موثقة.",
+      "stack": "Go, noalloc, GitHub Actions",
+      "steps": [
+        "اختر دوالًا حرجة ذات benchmark معروف.",
+        "شغّل الفحص على فرع baseline وسجل النتائج.",
+        "أضف خطوة CI للمسارات المختارة فقط.",
+        "وثّق الاستثناءات وراجعها عند تحديث Go أو المكتبة."
+      ],
+      "metric": "عدد تراجعات التخصيص غير الموثقة لكل إصدار وزمن CI الإضافي.",
+      "difficulty": "متوسط (تقديري)",
+      "risks": "قد تنتج إنذارات كاذبة أو تشجع تحسينات مبكرة؛ لا تعمم القاعدة على كامل المشروع بلا قياس.",
+      "sources": [
+        {
+          "title": "noalloc repository",
+          "url": "https://github.com/theconsensuslabs/noalloc"
+        },
+        {
+          "title": "Go documentation",
+          "url": "https://go.dev/doc/"
+        }
+      ]
+    }
+  ],
+  "archivedAlternatives": [
+    {
+      "repo": "atom/atom",
+      "status": "archived",
+      "alternatives": [
+        {
+          "repo": "microsoft/vscode",
+          "url": "https://github.com/microsoft/vscode"
+        },
+        {
+          "repo": "zed-industries/zed",
+          "url": "https://github.com/zed-industries/zed"
+        }
+      ]
+    },
+    {
+      "repo": "angular/angular.js",
+      "status": "archived",
+      "alternatives": [
+        {
+          "repo": "angular/angular",
+          "url": "https://github.com/angular/angular"
+        },
+        {
+          "repo": "vuejs/core",
+          "url": "https://github.com/vuejs/core"
+        },
+        {
+          "repo": "sveltejs/svelte",
+          "url": "https://github.com/sveltejs/svelte"
+        }
+      ]
+    }
+  ],
+  "developerIntegrationNotes": [
+    "اعرض overview وrequirements وquickStart في أقسام واضحة قابلة للطي.",
+    "اعرض improvements وspinoffs وreligious في بطاقات منفصلة؛ كل بطاقة تعرض problem وapproach وstack وsteps وmetric وdifficulty كتقدير وrisks وsources.",
+    "إذا كان testEvidence غائبًا، اعرض «لم يُختبر» ولا تعرض شارة نجاح.",
+    "لا تعرض ملفات research-only على الموقع العام؛ يلزم published:true ووجود معرف/رابط مطابق في feed قبل النشر.",
+    "لا تُجر أي تطوير أو تعديل على الشيفرة ضمن هذه المراجعة."
+  ],
+  "testEvidence": null,
+  "metricsNote": "Metrics are point-in-time GitHub API values captured for this cycle; raw pushedAt/updatedAt values are preserved. Some API timestamps were later than the supplied run clock, so do not treat those values as proof of activity before measurement."
+}
