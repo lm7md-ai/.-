@@ -1,0 +1,406 @@
+{
+  "version": 1,
+  "runAt": "2026-10-29T05:54:30Z",
+  "published": false,
+  "siteContent": false,
+  "note": "لقطة تدقيق قبل الدمج؛ لا يثبت هذا الملف وحده ظهور المحتوى على الموقع الحي.",
+  "repository": {
+    "mainSha": "645ccfd6c88fa0dba67db878b80a1eadb92c509b",
+    "pr1": {
+      "number": 1,
+      "merged": true,
+      "mergeCommit": "e88edb7d3c90895972b4cf28977405dea9831578"
+    },
+    "pr2": {
+      "number": 2,
+      "merged": true,
+      "mergeCommit": "480e56e19518fc994c6626cdef8d57dbbbbc7a51"
+    },
+    "previousEditorialPR": {
+      "number": 52,
+      "merged": true,
+      "mergeCommit": "55d2be8ddeb1c34c2c91af0fba0341d0a54c597d"
+    }
+  },
+  "audit": {
+    "checkedAt": "2026-10-29T05:54:30Z",
+    "incomingFiles": [
+      {
+        "name": "nabdh-editorial-2026-10-24-0542.json",
+        "sha": "5cbbde735820d3fbbd6ffc5e8726ba8010d66dbe",
+        "size": 54158
+      },
+      {
+        "name": "nabdh-editorial-2026-10-24-0840.json",
+        "sha": "68b728fa673c7d5b2198b00b0c5fcc1b9a0bbc18",
+        "size": 41549
+      },
+      {
+        "name": "nabdh-editorial-2026-10-24-1143.json",
+        "sha": "b1aaf887300d600d15b9cd66b51321604d8da139",
+        "size": 48908
+      },
+      {
+        "name": "nabdh-editorial-2026-10-24-1439.json",
+        "sha": "88a0f1efaa8699b1e31a83ac541daba264885113",
+        "size": 31855
+      },
+      {
+        "name": "nabdh-editorial-2026-10-24-1740.json",
+        "sha": "d6fa64cfea40876a5e88aeea44c2525064fcf9fd",
+        "size": 31309
+      },
+      {
+        "name": "nabdh-editorial-2026-10-24-2043.json",
+        "sha": "9651fed60f2c1a32e58d95af66cd0fb4f3ab29ae",
+        "size": 35970
+      },
+      {
+        "name": "nabdh-editorial-2026-10-24-2342.json",
+        "sha": "2f172ad8645bce9232ae1e07f17e5b3cc9f2f94c",
+        "size": 31607
+      },
+      {
+        "name": "nabdh-editorial-2026-10-24.json",
+        "sha": "5d09a1a8bf7f1f0d6ca500296d9707c7dba95fd3",
+        "size": 40127
+      },
+      {
+        "name": "nabdh-editorial-2026-10-25-0250.json",
+        "sha": "6ca9be0501cea58c97733db77363c38d1fb4ebb6",
+        "size": 25312
+      },
+      {
+        "name": "nabdh-editorial-2026-10-25-0554.json",
+        "sha": "0af481e73f1c598c09e347febdbb0843c81c6741",
+        "size": 42722
+      },
+      {
+        "name": "nabdh-editorial-2026-10-25-0845.json",
+        "sha": "6ec634639d38f8884a4a9fb03fd9699457390da3",
+        "size": 33021
+      },
+      {
+        "name": "nabdh-editorial-2026-10-25-1143.json",
+        "sha": "42a3f5335cf768033ca7a1f596078f38eb2029bf",
+        "size": 19699
+      },
+      {
+        "name": "nabdh-editorial-2026-10-25-1442.json",
+        "sha": "99ce95d76b905597078eb53082a1c4685082b02e",
+        "size": 26934
+      },
+      {
+        "name": "nabdh-editorial-2026-10-25-1742.json",
+        "sha": "7b49c3322083612bc034791c03e8e7868e5710cc",
+        "size": 23895
+      },
+      {
+        "name": "nabdh-editorial-2026-10-25-2038.json",
+        "sha": "f20fd110855271a58eb750962ec67abd2a880b8f",
+        "size": 22349
+      },
+      {
+        "name": "nabdh-editorial-2026-10-25-2342.json",
+        "sha": "67a086dc877cc360518d3027ad4a14e9e84a7858",
+        "size": 37381
+      },
+      {
+        "name": "nabdh-editorial-2026-10-26-0250.json",
+        "sha": "ca50fd0bec339642cfe1f0b4945253c62e6d4a7d",
+        "size": 28763
+      },
+      {
+        "name": "nabdh-editorial-2026-10-26-0545.json",
+        "sha": "8aaf21148bebff0b1420b4c6dd3862e8829849b5",
+        "size": 23176
+      },
+      {
+        "name": "nabdh-editorial-2026-10-26-0840.json",
+        "sha": "bcf33df52194b01060e5a4b3b777561b88c969cb",
+        "size": 21312
+      },
+      {
+        "name": "nabdh-editorial-2026-10-26-1152.json",
+        "sha": "c06cebf6b7957dc55c8bee28ca267c512e5ea42f",
+        "size": 33709
+      },
+      {
+        "name": "nabdh-editorial-2026-10-26-1445.json",
+        "sha": "c7fe44ccbf051bc85b89164ce2d1acd3aa57de64",
+        "size": 25617
+      },
+      {
+        "name": "nabdh-editorial-2026-10-26-1745.json",
+        "sha": "7c112aa8f7b5b7056c2819a5897c0848e0e7fdcb",
+        "size": 37234
+      },
+      {
+        "name": "nabdh-editorial-2026-10-26-2042.json",
+        "sha": "3137089d6e6a7b08845462514f354f129456e8e9",
+        "size": 33865
+      },
+      {
+        "name": "nabdh-editorial-2026-10-26-2342.json",
+        "sha": "97d56c54768f6ce8112b2c14b0ff42bdb5144c66",
+        "size": 54423
+      },
+      {
+        "name": "nabdh-editorial-2026-10-27-0038.json",
+        "sha": "7a9edf47ccb48c8960073c9fc6eb4bdb0540ca44",
+        "size": 40868
+      },
+      {
+        "name": "nabdh-editorial-2026-10-27-0240.json",
+        "sha": "27e9663b2cb55cda16f2fb70ca1a718d0f35ef7a",
+        "size": 37107
+      },
+      {
+        "name": "nabdh-editorial-2026-10-27-0549.json",
+        "sha": "679a308b144483ef53b094394e1217538bf1978b",
+        "size": 33231
+      },
+      {
+        "name": "nabdh-editorial-2026-10-27-0619.json",
+        "sha": "d5228abb39972066b739155b4fb7a8179993455f",
+        "size": 65720
+      },
+      {
+        "name": "nabdh-editorial-2026-10-27-0847.json",
+        "sha": "9d686fb606509755601618cf886ac3bd0e5b49f9",
+        "size": 50644
+      },
+      {
+        "name": "nabdh-editorial-2026-10-27-1141.json",
+        "sha": "fa48ff89641ec45430471ddce4df8783c228ce04",
+        "size": 53787
+      },
+      {
+        "name": "nabdh-editorial-2026-10-27-1443.json",
+        "sha": "c67141c5c3a0e451aff2cd6a8dd0c002e61b3006",
+        "size": 53978
+      },
+      {
+        "name": "nabdh-editorial-2026-10-27-2045.json",
+        "sha": "f0229a44ce7581db7d8957319a023faea189541e",
+        "size": 46084
+      },
+      {
+        "name": "nabdh-editorial-2026-10-27-2113.json",
+        "sha": "92821d67483f60c53e823a0b023ff9cfb5c3a525",
+        "size": 56996
+      },
+      {
+        "name": "nabdh-editorial-2026-10-27-2347.json",
+        "sha": "70e44c66c3cf9cfa1e44b09b05a28a70c378c6e7",
+        "size": 64559
+      },
+      {
+        "name": "nabdh-editorial-2026-10-28-0244.json",
+        "sha": "ed1e1cc5291d476c1ccacf7d21d73abb77552b7b",
+        "size": 33903
+      },
+      {
+        "name": "nabdh-editorial-2026-10-28-0555.json",
+        "sha": "315100dfa8a90ff92c9ae5b538ff050167f2f14a",
+        "size": 47838
+      },
+      {
+        "name": "nabdh-editorial-2026-10-28-0609.json",
+        "sha": "8efa1fd9599d7862b8e61f4ac22ed4a161bb4d2f",
+        "size": 54895
+      },
+      {
+        "name": "nabdh-editorial-2026-10-28-0846.json",
+        "sha": "f999d75789553ce5c87dec9463e023433a7126ca",
+        "size": 56750
+      },
+      {
+        "name": "nabdh-editorial-2026-10-28-0914.json",
+        "sha": "2f3eaa2d7e45d67c2e44f94da0da1f944925b2a3",
+        "size": 57082
+      },
+      {
+        "name": "nabdh-editorial-2026-10-28-0943.json",
+        "sha": "01bf866ffc7eab47fd6b4eda85d42d0026213be7",
+        "size": 48993
+      },
+      {
+        "name": "nabdh-editorial-2026-10-28-1151.json",
+        "sha": "468747a84ca58368696cdf5b1bcf200e9416a034",
+        "size": 37058
+      },
+      {
+        "name": "nabdh-editorial-2026-10-28-2045.json",
+        "sha": "c664e39c49ecdb1f5516350dcc75449b8a7f5fda",
+        "size": 52024
+      },
+      {
+        "name": "nabdh-editorial-2026-10-29-0243.json",
+        "sha": "e9f31a6099279e9c860307533f43b7eb8d8711e0",
+        "size": 51005
+      },
+      {
+        "name": "nabdh-editorial-2026-10-29-0319.json",
+        "sha": "bb0a8184c06d575a27c778d6063d51571dead582",
+        "size": 53508
+      },
+      {
+        "name": "nabdh-editorial-2026-10-29-0559.json",
+        "sha": "da75de9a6dca73741dad5daa1b32b7a67053b651",
+        "size": 62436
+      }
+    ],
+    "incomingFileCount": 45,
+    "rows": 451,
+    "uniqueIds": 450,
+    "duplicateRows": 1,
+    "duplicate": {
+      "id": "853c63f738f0cecf3b",
+      "occurrences": 2,
+      "urlsIdentical": true,
+      "status": "imported and active; original identity retained"
+    },
+    "classification": {
+      "activeExactRows": 273,
+      "activeExactUniqueIds": 272,
+      "historicalExactRows": 175,
+      "historicalExactUniqueIds": 175,
+      "absentFromFeedAndEditorialRows": 3,
+      "absentFromFeedAndEditorialIds": [
+        "940ec4695c1e241c2f",
+        "317abcdd1b20728a7e",
+        "662e68277c6361dd4b"
+      ],
+      "idUrlMismatches": 0,
+      "missingOrInvalidUrls": 0,
+      "eligibleButNotImported": 0,
+      "confirmedExpiredNews": 0,
+      "historicalOutOfFeedNotConfirmedExpired": 175
+    },
+    "currentFeed": {
+      "generatedAt": "2026-10-29T03:01:16+00:00",
+      "total": 800,
+      "news": 700,
+      "projects": 100,
+      "newItems": 15
+    },
+    "currentEditorial": {
+      "entries": 450,
+      "exactActiveEntries": 275,
+      "outsideCurrentFeed": 175,
+      "unenrichedCurrentFeedItems": 525
+    },
+    "lastIncomingBatch": {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-29-0559.json",
+      "rows": 13,
+      "all13ExactCurrentAndImported": true
+    },
+    "specialRecords": [
+      {
+        "id": "940ec4695c1e241c2f",
+        "name": "NVIDIA OpenShell",
+        "seenPresent": true,
+        "feedPresent": false,
+        "editorialPresent": false,
+        "decision": "pending; no alternate ID"
+      },
+      {
+        "id": "317abcdd1b20728a7e",
+        "name": "Canva Craft",
+        "seenPresent": true,
+        "feedPresent": false,
+        "editorialPresent": false,
+        "decision": "pending; no alternate ID"
+      },
+      {
+        "id": "662e68277c6361dd4b",
+        "name": "1Password agent sign-in",
+        "seenPresent": true,
+        "feedPresent": false,
+        "editorialPresent": false,
+        "decision": "pending; no alternate ID"
+      }
+    ],
+    "expiryNote": "لم يثبت انقضاء أي خبر؛ السجلات التاريخية خارج التغذية لا تحتوي دائمًا على publishedAt كافٍ، لذلك لم تصنف منقضية بلا دليل."
+  },
+  "thisRun": {
+    "incomingFile": "editorial/incoming/nabdh-editorial-2026-10-29-0855.json",
+    "newNews": 10,
+    "newProjects": 2,
+    "newItems": [
+      "e2ed7680c50ae3f074",
+      "67c6b18b0a76451db8",
+      "83a93c348b55de5892",
+      "0be62ab48dd3b97d57",
+      "b6ad05727112179f34",
+      "b0b0b86290ad206022",
+      "4f9cf693308117251e",
+      "9232acc89b16c2bf91",
+      "3d38a13bd8637b2d74",
+      "caf12f62a861c6575d",
+      "55f45778dbc81d6a27",
+      "00a13632669d98d0bc"
+    ],
+    "proposalCounts": {
+      "improvements": 6,
+      "spinoffs": 4,
+      "religious": 2,
+      "total": 12
+    },
+    "topThreeSuggestions": [
+      "Leon: أقل صلاحية لأدوات المتصفح والطرفية",
+      "Leon: تقييم استرجاع الذاكرة العربية",
+      "Awesome Prompt Engineering: فاحص حداثة الروابط"
+    ]
+  },
+  "expectedAfterMerge": {
+    "incomingFiles": 46,
+    "incomingRows": 463,
+    "uniqueIncomingIds": 462,
+    "editorialEntries": 462,
+    "exactActiveEditorialEntries": 287,
+    "outsideCurrentFeed": 175,
+    "unenrichedCurrentFeedItems": 513
+  },
+  "library": {
+    "catalogPath": "editorial/library/catalog-2026-10-29-0559.json",
+    "historicalProjectCount": 31,
+    "refreshedPreviousProjects": 8,
+    "newCatalogEntries": 0,
+    "metricsForOther23EntriesRemainAt": "2026-10-29T02:57:09.360Z",
+    "reviewPath": "editorial/library/review-2026-10-29-0855.json",
+    "published": false
+  },
+  "validation": {
+    "structuralEquivalent": "passed",
+    "allNewIdsExistInCurrentFeed": true,
+    "allNewUrlsMatchFeedExactly": true,
+    "noExistingEditorialEntriesChanged": true,
+    "pythonValidate": "not executed locally; CI validation pending",
+    "pythonImport": "not executed locally; merge semantics reproduced structurally",
+    "unittest": "not executed locally; CI result pending",
+    "projectExecution": "not run; no testEvidence claimed"
+  },
+  "changeGuard": {
+    "modified": [
+      "site/data/editorial.json",
+      "editorial/incoming/nabdh-editorial-2026-10-29-0855.json",
+      "editorial/pending/recheck-2026-10-29-0855.json",
+      "editorial/library/review-2026-10-29-0855.json"
+    ],
+    "untouched": [
+      "site/data/feed.json",
+      "site/data/seen.json",
+      "site/data/status.json",
+      "scripts/editorial.py",
+      "README.md",
+      "docs/CONTENT_GUIDE.md",
+      "docs/SCHEDULED_EDITOR_PROMPT.md",
+      "site code",
+      "site design",
+      "workflows",
+      "deployment settings"
+    ]
+  }
+}
