@@ -1,0 +1,139 @@
+{
+  "version": 1,
+  "auditedAt": "2026-10-29T17:45:30Z",
+  "baseMainSha": "aec6f2e75cf3e1814b496c026089b37f48562449",
+  "scope": {
+    "filesRead": [
+      "README.md",
+      "docs/CONTENT_GUIDE.md",
+      "docs/SCHEDULED_EDITOR_PROMPT.md",
+      "scripts/editorial.py",
+      "site/data/feed.json",
+      "site/data/editorial.json",
+      "site/data/status.json",
+      "site/data/seen.json"
+    ],
+    "pullRequests": {
+      "1": "merged",
+      "2": "merged"
+    },
+    "protectedPathsUntouched": true,
+    "feedAndSeenUntouched": true
+  },
+  "currentState": {
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialEntries": 493,
+    "activeExactEditorial": 296,
+    "unenrichedNews": 494,
+    "unenrichedProjects": 10,
+    "seenIds": 1795,
+    "lastFeedSuccessAt": "2026-10-29T15:14:34Z",
+    "sourceStates": {
+      "ok": 24,
+      "empty": 2
+    },
+    "editorialStructuralEquivalent": "pass; 0 invalid entries"
+  },
+  "incomingAudit": {
+    "files": 49,
+    "rows": 494,
+    "uniqueIds": 493,
+    "duplicateRows": 1,
+    "duplicateId": "853c63f738f0cecf3b",
+    "rowsAlreadyPresentInEditorialExactIdUrl": 491,
+    "activeFeedAndEditorialExactRows": 294,
+    "activeFeedAndEditorialExactUniqueIds": 293,
+    "historicalEditorialExactOutsideFeed": 197,
+    "activeFeedExactButUnenriched": 0,
+    "absentFromFeedAndEditorial": [
+      {
+        "id": "940ec4695c1e241c2f",
+        "topic": "NVIDIA OpenShell",
+        "seenPresent": true,
+        "decision": "pending; no alternate identity"
+      },
+      {
+        "id": "317abcdd1b20728a7e",
+        "topic": "Canva Craft",
+        "seenPresent": true,
+        "decision": "pending; no alternate identity"
+      },
+      {
+        "id": "662e68277c6361dd4b",
+        "topic": "1Password agent sign-in",
+        "seenPresent": true,
+        "decision": "pending; no alternate identity"
+      }
+    ],
+    "idUrlMismatches": 0,
+    "confirmedExpiredNews": 0,
+    "expiryNote": "Absence from the current feed is not sufficient evidence that a story is expired.",
+    "crossIdSameUrlCollision": {
+      "count": 1,
+      "oldId": "7a99eca9b2ce14d9f5",
+      "currentFeedId": "e0cbbf211a55e79f34",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "decision": "retain both historical and current IDs; do not generate an alternate ID"
+    },
+    "structuralEquivalent": {
+      "filesChecked": 49,
+      "filesParsed": 49,
+      "validFiles": 48,
+      "invalidFiles": 1,
+      "invalidRecord": {
+        "file": "editorial/incoming/nabdh-editorial-2026-10-29-1755.json",
+        "id": "ff1ebca6f559787f35",
+        "field": "sources",
+        "issue": "one null source element; official validator would reject the incoming file"
+      },
+      "note": "The current editorial entry is structurally valid; the malformed null exists in the archived incoming batch. Official scripts were not run locally."
+    }
+  },
+  "newBatch": {
+    "path": "editorial/incoming/nabdh-editorial-2026-10-29-2045.json",
+    "items": 12,
+    "news": 10,
+    "projects": 2,
+    "exactIdUrlMatches": 12,
+    "alreadyPresentBefore": 0,
+    "duplicateIds": 0,
+    "structuralEquivalentValidation": "pass",
+    "testEvidenceClaims": 0,
+    "decision": "merge by original IDs into the existing editorial.items map; do not replace old entries"
+  },
+  "mergePlan": {
+    "editorialEntriesBefore": 493,
+    "added": 12,
+    "expectedEditorialEntriesAfter": 505,
+    "expectedActiveExactAfter": 308,
+    "expectedUnenrichedNewsAfter": 484,
+    "expectedUnenrichedProjectsAfter": 8,
+    "existingRecordsPreserved": true
+  },
+  "officialValidator": {
+    "localPythonAvailable": false,
+    "commandsNotRun": [
+      "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-10-29-2045.json",
+      "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-10-29-2045.json",
+      "python -m unittest discover -s tests -v"
+    ],
+    "reason": "No local checkout/runtime of the repository was available; an in-memory structural equivalent was used. CI results must be checked before merging."
+  },
+  "publicationVerification": {
+    "status": "pending",
+    "note": "No claim of publication until PR checks, merge, and the live /data/editorial.json are verified."
+  },
+  "catalog": {
+    "path": "editorial/library/catalog-2026-10-29-0559.json",
+    "totalProjects": 31,
+    "archived": 2,
+    "nonArchived": 29,
+    "inCurrentFeed": 4,
+    "notInFeed": 27,
+    "licenseNeedsUpstreamVerification": 7,
+    "metricsCapturedAt": "2026-10-29T02:57:09.360Z",
+    "catalogUpdatedThisRun": false
+  }
+}
