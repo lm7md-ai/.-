@@ -1,0 +1,258 @@
+{
+  "version": 1,
+  "compiledAt": "2026-10-29T05:54:30Z",
+  "published": false,
+  "siteContent": false,
+  "note": "مراجعة بحثية مستقلة غير منشورة. أُعيد فحص README وLICENSE وتعليمات البدء والبيانات الرسمية للمشاريع الثمانية السابقة؛ لم يُشغّل أي مشروع ولا توجد testEvidence.",
+  "cumulativeCatalog": {
+    "path": "editorial/library/catalog-2026-10-29-0559.json",
+    "totalProjects": 31,
+    "archived": 2,
+    "nonArchived": 29,
+    "metricsFor23NotRequeriedThisRun": "2026-10-29T02:57:09.360Z",
+    "note": "بقيت المكتبة التاريخية مستقلة؛ لم تُضف مشاريع التغذية الحالية إلى الكتالوج لتجنب التكرار."
+  },
+  "previousEight": {
+    "count": 8,
+    "projects": [
+      {
+        "repository": "gradio-app/gradio",
+        "url": "https://github.com/gradio-app/gradio",
+        "stars": 43939,
+        "forks": 3650,
+        "archived": false,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-28T23:14:02Z",
+        "updatedAt": "2026-10-29T04:50:21Z",
+        "defaultBranch": "main",
+        "language": "Python",
+        "measuredAt": "2026-10-29T05:54:30Z",
+        "readmeReviewed": true,
+        "licenseFileReviewed": true,
+        "quickStartReviewed": true,
+        "executed": false,
+        "testEvidence": null
+      },
+      {
+        "repository": "thedotmack/claude-mem",
+        "url": "https://github.com/thedotmack/claude-mem",
+        "stars": 104098,
+        "forks": 9182,
+        "archived": false,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-29T00:48:27Z",
+        "updatedAt": "2026-10-29T05:47:34Z",
+        "defaultBranch": "main",
+        "language": "TypeScript",
+        "measuredAt": "2026-10-29T05:54:30Z",
+        "readmeReviewed": true,
+        "licenseFileReviewed": true,
+        "quickStartReviewed": true,
+        "executed": false,
+        "testEvidence": null
+      },
+      {
+        "repository": "ultralytics/ultralytics",
+        "url": "https://github.com/ultralytics/ultralytics",
+        "stars": 62947,
+        "forks": 11931,
+        "archived": false,
+        "license": "AGPL-3.0",
+        "pushedAt": "2026-10-29T05:39:12Z",
+        "updatedAt": "2026-10-29T05:40:00Z",
+        "defaultBranch": "main",
+        "language": "Python",
+        "measuredAt": "2026-10-29T05:54:30Z",
+        "readmeReviewed": true,
+        "licenseFileReviewed": true,
+        "quickStartReviewed": true,
+        "executed": false,
+        "testEvidence": null
+      },
+      {
+        "repository": "harry0703/MoneyPrinterTurbo",
+        "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+        "stars": 136176,
+        "forks": 21652,
+        "archived": false,
+        "license": "MIT",
+        "pushedAt": "2026-10-28T13:40:40Z",
+        "updatedAt": "2026-10-29T05:51:00Z",
+        "defaultBranch": "main",
+        "language": "Python",
+        "measuredAt": "2026-10-29T05:54:30Z",
+        "readmeReviewed": true,
+        "licenseFileReviewed": true,
+        "quickStartReviewed": true,
+        "executed": false,
+        "testEvidence": null
+      },
+      {
+        "repository": "microsoft/AI-For-Beginners",
+        "url": "https://github.com/microsoft/AI-For-Beginners",
+        "stars": 70340,
+        "forks": 13669,
+        "archived": false,
+        "license": "MIT",
+        "pushedAt": "2026-10-23T23:55:14Z",
+        "updatedAt": "2026-10-29T05:13:36Z",
+        "defaultBranch": "main",
+        "language": "Jupyter Notebook",
+        "measuredAt": "2026-10-29T05:54:30Z",
+        "readmeReviewed": true,
+        "licenseFileReviewed": true,
+        "quickStartReviewed": true,
+        "executed": false,
+        "testEvidence": null
+      },
+      {
+        "repository": "usebruno/bruno",
+        "url": "https://github.com/usebruno/bruno",
+        "stars": 47912,
+        "forks": 3048,
+        "archived": false,
+        "license": "MIT",
+        "pushedAt": "2026-10-28T14:45:36Z",
+        "updatedAt": "2026-10-29T05:53:31Z",
+        "defaultBranch": "main",
+        "language": "JavaScript",
+        "measuredAt": "2026-10-29T05:54:30Z",
+        "readmeReviewed": true,
+        "licenseFileReviewed": true,
+        "quickStartReviewed": true,
+        "executed": false,
+        "testEvidence": null
+      },
+      {
+        "repository": "keras-team/keras",
+        "url": "https://github.com/keras-team/keras",
+        "stars": 64395,
+        "forks": 19803,
+        "archived": false,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-27T23:29:20Z",
+        "updatedAt": "2026-10-29T02:32:02Z",
+        "defaultBranch": "master",
+        "language": "Python",
+        "measuredAt": "2026-10-29T05:54:30Z",
+        "readmeReviewed": true,
+        "licenseFileReviewed": true,
+        "quickStartReviewed": true,
+        "executed": false,
+        "testEvidence": null
+      },
+      {
+        "repository": "k2-fsa/sherpa-onnx",
+        "url": "https://github.com/k2-fsa/sherpa-onnx",
+        "stars": 15577,
+        "forks": 1825,
+        "archived": false,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-29T05:42:10Z",
+        "updatedAt": "2026-10-29T05:42:16Z",
+        "defaultBranch": "master",
+        "language": "C++",
+        "measuredAt": "2026-10-29T05:54:30Z",
+        "readmeReviewed": true,
+        "licenseFileReviewed": true,
+        "quickStartReviewed": true,
+        "executed": false,
+        "testEvidence": null
+      }
+    ],
+    "allArchived": false,
+    "licenseCautions": [
+      "Ultralytics يستخدم AGPL-3.0؛ راجع أثر الترخيص قبل الدمج في منتج مغلق المصدر.",
+      "البيانات من GitHub API وملفات README/LICENSE؛ لم تُجر مراجعة قانونية."
+    ]
+  },
+  "newFeedProjects": {
+    "count": 2,
+    "projects": [
+      {
+        "repository": "leon-ai/leon",
+        "url": "https://github.com/leon-ai/leon",
+        "stars": 17619,
+        "forks": 1477,
+        "archived": false,
+        "license": "MIT",
+        "pushedAt": "2026-10-28T14:05:39Z",
+        "updatedAt": "2026-10-29T02:17:17Z",
+        "defaultBranch": "develop",
+        "measuredAt": "2026-10-29T05:54:30Z",
+        "readmeReviewed": true,
+        "licenseFileReviewed": true,
+        "quickStartReviewed": true,
+        "executed": false,
+        "feedId": "55f45778dbc81d6a27",
+        "decision": "enrich original feed ID; not added as duplicate catalog entry"
+      },
+      {
+        "repository": "promptslab/Awesome-Prompt-Engineering",
+        "url": "https://github.com/promptslab/Awesome-Prompt-Engineering",
+        "stars": 6420,
+        "forks": 797,
+        "archived": false,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-10-28T12:34:51Z",
+        "updatedAt": "2026-10-28T19:10:20Z",
+        "defaultBranch": "main",
+        "measuredAt": "2026-10-29T05:54:30Z",
+        "readmeReviewed": true,
+        "licenseFileReviewed": true,
+        "quickStartReviewed": true,
+        "executed": false,
+        "feedId": "00a13632669d98d0bc",
+        "decision": "enrich original feed ID; README update badge says February 2026, content freshness needs separate check"
+      }
+    ]
+  },
+  "topThreeSuggestions": [
+    {
+      "rank": 1,
+      "title": "Leon: أقل صلاحية لأدوات المتصفح والطرفية",
+      "projectId": "55f45778dbc81d6a27",
+      "reason": "تقليل الأفعال خارج نطاق المهمة وقياس الرفض الصحيح."
+    },
+    {
+      "rank": 2,
+      "title": "Leon: تقييم استرجاع الذاكرة العربية",
+      "projectId": "55f45778dbc81d6a27",
+      "reason": "قياس Recall@5 وMRR بدل افتراض جودة الاسترجاع."
+    },
+    {
+      "rank": 3,
+      "title": "Awesome Prompt Engineering: فاحص حداثة الروابط",
+      "projectId": "00a13632669d98d0bc",
+      "reason": "كشف الروابط القديمة بتقرير مراجعة بدل الحذف الآلي."
+    }
+  ],
+  "executionStatus": {
+    "leon": "README, LICENSE.md, package.json and architecture context reviewed; not run",
+    "awesomePromptEngineering": "README and Apache-2.0 LICENSE reviewed; external links not individually tested",
+    "previousEight": "README and license files inspected; install/quick-start sections checked; projects not run",
+    "testEvidence": null
+  },
+  "sources": [
+    {
+      "title": "Cumulative research catalog",
+      "url": "https://github.com/lm7md-ai/.-/blob/main/editorial/library/catalog-2026-10-29-0559.json"
+    },
+    {
+      "title": "Leon README",
+      "url": "https://github.com/leon-ai/leon/blob/develop/README.md"
+    },
+    {
+      "title": "Leon LICENSE",
+      "url": "https://github.com/leon-ai/leon/blob/develop/LICENSE.md"
+    },
+    {
+      "title": "Awesome-Prompt-Engineering README",
+      "url": "https://github.com/promptslab/Awesome-Prompt-Engineering/blob/main/README.md"
+    },
+    {
+      "title": "Awesome-Prompt-Engineering LICENSE",
+      "url": "https://github.com/promptslab/Awesome-Prompt-Engineering/blob/main/LICENSE"
+    }
+  ]
+}
