@@ -27825,6 +27825,281 @@
           ]
         }
       ]
+    },
+    "d948735545c20cf307": {
+      "titleAr": "OpenAI وRopes & Gray يطوّران أداة للفرز الأولي في العناية الواجبة للصفقات",
+      "summaryAr": "تصف OpenAI أداة تطورها شركة المحاماة Ropes & Gray لفرز آلاف صفحات غرفة البيانات، وتجميع الوثائق بحسب الموضوع والمخاطر، ثم إعداد ملخصات وتقرير أولي بصيغة المكتب. يقارن المحامون المخرجات بتقارير بشرية لصفقات سابقة ويواصلون فحص المستندات قبل تسليم أي رأي للعميل.",
+      "whyItMatters": "القيمة ليست استبدال الحكم القانوني، بل إنشاء طبقة فرز قابلة للتتبع تقلل العمل المتكرر وتترك التقييم النهائي للمحامي. هذا وصف لحالة استخدام من الجهة المطورة وليس تقييمًا مستقلًا.",
+      "audience": "فرق المنتجات القانونية، مطورو أدوات المؤسسات، والطلاب المهتمون بحوكمة الذكاء الاصطناعي.",
+      "nextSteps": [
+        "اختبروا الأداة على وثائق مرخصة مع تقرير مرجعي بشري.",
+        "قيسوا دقة العثور على المستندات والمخاطر مع تسجيل ما فات النظام.",
+        "اشترطوا ربط كل استنتاج بمصدره ومراجعة بشرية قبل التسليم."
+      ],
+      "limitations": "حالة استخدام منشورة من OpenAI وRopes & Gray؛ لا توجد نتائج مستقلة لمعدل الخطأ أو تكلفة التشغيل. تظل المراجعة البشرية شرطًا قبل الاستخدام المهني.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "OpenAI — How Ropes & Gray is developing AI for transactional diligence",
+          "url": "https://openai.com/index/ropes-gray-ai-diligence/"
+        }
+      ],
+      "url": "https://openai.com/index/ropes-gray-ai-diligence",
+      "reviewedAt": "2026-10-29T23:43:00+03:00"
+    },
+    "4890bdcdc5181b9ee6": {
+      "titleAr": "SkyPilot تشرح أثر الجدولة الواعية بطوبولوجيا GPU في السعة والأداء",
+      "summaryAr": "يشرح المقال أن أنظمة NVL72 تربط 72 وحدة GPU داخل الرف عبر NVLink، لكن توزيع العمل على رفوف متعددة قد يعيد عنق الزجاجة إلى InfiniBand. تعرض SkyPilot تقسيم الأحمال إلى شرائح من 16 عقدة مع عقدتين احتياطيتين لكل رف، والتعافي داخل الرف وإزالة تجزئة الموارد. وفي تجربة وصفتها الشركة على 512 وحدة GB300 لتدريب GR00T N1.7، زاد معدل الإنجاز 14.4% عند حصر الحمل في 8 رفوف.",
+      "whyItMatters": "يبرز أن مكان وضع المهام والتعافي من الأعطال قد يؤثران في الاستفادة من العتاد بقدر عدد وحدات GPU. نسبة 14.4% تخص تجربة محددة؛ و27% في العنوان تقدير للسعة القابلة للاستخدام ضمن نموذج سعة آخر.",
+      "audience": "مهندسو البنية التحتية للذكاء الاصطناعي والحوسبة عالية الأداء ومشغلو عناقيد GPU.",
+      "nextSteps": [
+        "سجلوا موضع كل مهمة ومعدل الإنجاز ووقت الانتظار.",
+        "قارنوا الجدولة الواعية بالطوبولوجيا بخط أساس على حمل متكافئ.",
+        "اختبروا التعافي باستخدام نقاط حفظ قبل السماح بإيقاف أحمال قائمة."
+      ],
+      "limitations": "النتائج منشورة من مزود الحل وليست تقييمًا مستقلًا. تعتمد على بنية NVL72/GB300 ولا تعمم تلقائيًا على كل عنقود.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "SkyPilot — Grace Blackwell needs a new scheduler",
+          "url": "https://skypilot.ai/blog/grace-blackwell-needs-a-new-scheduler"
+        }
+      ],
+      "url": "https://skypilot.ai/blog/grace-blackwell-needs-a-new-scheduler",
+      "reviewedAt": "2026-10-29T23:43:00+03:00"
+    },
+    "ac8e8f57e6764ba4f8": {
+      "titleAr": "Keplearn تعرض محركًا بـRust للانحدار الرمزي واكتشاف معادلات من البيانات",
+      "summaryAr": "يصف README أداة symbolic regression مكتوبة بـRust تستقبل بيانات CSV أو TSV وتعيد معادلات مرشحة بصيغة JSON. الغرض هو البحث عن علاقة رياضية مختصرة تفسر البيانات بدل الاكتفاء بنموذج تنبؤ أسود الصندوق؛ والأمثلة المنشورة توضيحية وليست تقييمًا مستقلًا واسعًا.",
+      "whyItMatters": "قد يساعد الانحدار الرمزي على توليد فرضيات قابلة للفحص، لكنه لا يثبت أن المعادلة المكتشفة قانون سببي أو أنها ستعمم خارج بيانات التدريب.",
+      "audience": "طلاب الرياضيات والفيزياء وعلوم البيانات ومطورو Rust.",
+      "nextSteps": [
+        "ابدأوا ببيانات اصطناعية ذات علاقة معروفة.",
+        "افصلوا مجموعة تحقق قبل اختيار المعادلة.",
+        "قارنوا الخطأ على بيانات محجوبة بخط أساس بسيط.",
+        "راجعوا الوحدات والضوضاء والقيم الشاذة قبل التفسير العلمي."
+      ],
+      "limitations": "المعلومات مبنية على README والمستودع حديث نسبيًا؛ لم يُنفذ اختبار أداء مستقل ولم تُثبت صلاحية المعادلات على بيانات واقعية متنوعة.",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "Keplearn — repository and README",
+          "url": "https://github.com/owls-on-wires/keplearn"
+        },
+        {
+          "title": "Keplearn — MIT license",
+          "url": "https://github.com/owls-on-wires/keplearn/blob/main/LICENSE"
+        }
+      ],
+      "url": "https://github.com/owls-on-wires/keplearn",
+      "reviewedAt": "2026-10-29T23:43:00+03:00"
+    },
+    "deea08fa2c3edd0346": {
+      "titleAr": "noalloc: أدوات Go لرصد ومنع تخصيصات heap في مسارات محددة",
+      "summaryAr": "يصف مستودع noalloc أدوات ومكتبات Go تساعد على فرض شرط عدم تخصيص ذاكرة heap في أجزاء محددة من التطبيق. قد يفيد ذلك المسارات الحساسة للكمون، لكنه لا يعني أن التطبيق كله بلا تخصيصات أو أن الأداء يتحسن تلقائيًا.",
+      "whyItMatters": "يحوّل هدف الأداء إلى شرط قابل للفحص في CI بدل الاعتماد على الانطباع؛ ويجب قياس النتيجة مع benchmark يمثل الحمل الحقيقي.",
+      "audience": "مطورو Go ومهندسو الأداء والأنظمة المضمنة.",
+      "nextSteps": [
+        "حددوا مسارًا حرجًا صغيرًا قبل تعميم القاعدة.",
+        "قيسوا الأداء والتخصيصات قبل التغيير وبعده.",
+        "أضيفوا الفحص إلى CI مع استثناءات موثقة.",
+        "راقبوا الإيجابيات الكاذبة وتغير السلوك مع تحديثات Go."
+      ],
+      "limitations": "المستودع حديث وصغير ولا يظهر في README معيار مستقل يثبت مكاسب أداء عامة. يلزم التحقق من القيود قبل فرضه على قاعدة شيفرة كبيرة.",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "noalloc — repository and README",
+          "url": "https://github.com/theconsensuslabs/noalloc"
+        },
+        {
+          "title": "noalloc — MIT license",
+          "url": "https://github.com/theconsensuslabs/noalloc/blob/main/LICENSE"
+        }
+      ],
+      "url": "https://github.com/theconsensuslabs/noalloc",
+      "reviewedAt": "2026-10-29T23:43:00+03:00"
+    },
+    "80d75e247383a8c1d4": {
+      "titleAr": "Cresta تعلن مسار خدمة ذاتية للمطورين لبناء وكلاء خدمة العملاء",
+      "summaryAr": "تقول Cresta إنها فتحت منصة لبناء وكلاء خدمة العملاء واختبارهم ونشرهم من المستودعات وخطوط CI/CD. وتذكر مواد الإعلان مراجعة الصلاحيات، وضبط الإصدارات، واختبارات A/B، والتراجع عن الإصدارات، وSDK بلغة Python. لم أتمكن من قراءة البيان الأصلي كاملًا؛ لذلك أنقل هذه الميزات بوصفها ادعاءات الشركة كما وردت في التغطية المتاحة.",
+      "whyItMatters": "يربط بناء الوكلاء بممارسات هندسة البرمجيات المعتادة—المراجعة والاختبار والنشر القابل للتراجع—بدل إبقائهم في واجهة تجريبية منفصلة.",
+      "audience": "مهندسو المنصات ومطورو وكلاء المؤسسات وفرق تجربة العملاء.",
+      "nextSteps": [
+        "تحققوا من مواضع تخزين البيانات وصلاحيات الوكيل قبل التبني.",
+        "اختبروا التراجع عن إصدار فاشل في بيئة تجريبية.",
+        "قيسوا تكلفة المحادثة ومعدل التحويل إلى موظف بشري.",
+        "راجعوا شروط الخدمة والخصوصية قبل إدخال بيانات عملاء."
+      ],
+      "limitations": "لم يتوفر البيان الأصلي كاملًا في هذه المراجعة؛ التفاصيل مبنية على قائمة PR Newswire وتغطية ثانوية. الادعاءات التجارية لم تُتحقق بصورة مستقلة والخدمة تجارية.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "PR Newswire — AI news list showing the Cresta announcement",
+          "url": "https://www.prnewswire.com/news-releases/consumer-technology-latest-news/artificial-intelligence-list/"
+        },
+        {
+          "title": "RuntimeWire — Cresta opens its AI agent platform to customer developers",
+          "url": "https://runtimewire.com/article/cresta-opens-ai-agent-platform-self-service-developers"
+        }
+      ],
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNYjlkUHhkUy1sZGxxRGJrVUJFOGJTTjdsZWNiZzZNUDVDNEgydzJOVUY2M0gzZldRYnBTZGZ0ZkdESkZhYjdvSGJveWtXQkU2eUdVVnBUcGtwSXRIWWFJVElVZ3BGTjhQQU9ucTkzTmIzY1FWbjlhNHBnLURIak1xdnF5ZHFCOHVjSE9aczV0cFNoYzNUbVN2aGxkODRXRC1VdXlRVU9OSVZrTEt5bXdDZ2o0UU51M2t0OWlmZ1A4bE9mTTdEN2dtZzZXMEh0Q28?oc=5",
+      "reviewedAt": "2026-10-29T23:43:00+03:00"
+    },
+    "18323cc187376d3a13": {
+      "titleAr": "Amazon توسّع مهام Alexa لإدارة قوائم التسوق والاشتراكات والتعليمات المرتبطة بالطلبات",
+      "summaryAr": "بحسب الوصف المتاح من TechCrunch، أضافت Amazon قدرات تسوق إلى Alexa تشمل إنشاء القوائم وتعديلها، وإدارة بعض الاشتراكات، وتحديث تعليمات التسليم. يركز الخبر على انتقال المساعد من الإجابة الصوتية إلى تنفيذ إجراءات مرتبطة بحساب المستخدم وطلباته.",
+      "whyItMatters": "كلما انتقل المساعد إلى تغيير بيانات أو طلبات، أصبحت الموافقة قبل التنفيذ وسجل التدقيق وإمكانية التراجع ضرورية لتقليل الأوامر غير المقصودة.",
+      "audience": "مطورو المساعدات الصوتية وفرق التجارة الإلكترونية وتجربة المستخدم.",
+      "nextSteps": [
+        "اطلبوا تأكيدًا واضحًا قبل تغيير عنوان أو اشتراك.",
+        "اعرضوا ملخصًا قابلًا للمراجعة قبل تنفيذ إجراء مؤثر.",
+        "وفّروا سجلًا للعملية وإمكانية إلغاء أو تراجع.",
+        "اختبروا أخطاء التعرف الصوتي والأوامر الملتبسة."
+      ],
+      "limitations": "لم أقرأ المقال الكامل؛ الملخص مبني على بياناته الوصفية والتغطية المتاحة. لا توجد بيانات مستقلة عن دقة المهام أو الإتاحة في كل بلد.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "TechCrunch — Amazon updates Alexa to help manage shopping lists, subscriptions and delivery instructions",
+          "url": "https://techcrunch.com/2026/10/29/amazon-updates-alexa-to-help-you-manage-shopping-lists-subscriptions-and-update-delivery-instructions/"
+        }
+      ],
+      "url": "https://techcrunch.com/2026/10/29/amazon-updates-alexa-to-help-you-manage-shopping-lists-subscriptions-and-update-delivery-instructions/",
+      "reviewedAt": "2026-10-29T23:43:00+03:00"
+    },
+    "815e9f76383a90122a": {
+      "titleAr": "Martin Fowler يناقش أثر القوالب الأسلوبية المتشابهة في نصوص النماذج اللغوية",
+      "summaryAr": "تتناول تدوينة LLM Voice ظاهرة تشابه بعض النصوص المولدة في النبرة والتركيب، وتطرح سؤالًا حول الفرق بين صوت تحريري حقيقي وعبارات عامة متكررة. لم يتوفر النص الكامل عبر المتصفح في هذه المراجعة، لذا يقتصر الملخص على العنوان والمعاينة المتاحة.",
+      "whyItMatters": "المراجعة الجيدة تهتم بالدقة والأمثلة والمصادر وملاءمة الجمهور، لا فقط بكشف أسلوب يبدو آليًا. ولا ينبغي استخدام كاشف آلي وحده لإثبات مصدر النص.",
+      "audience": "المحررون والطلاب وكتّاب التقنية ومطورو أدوات الكتابة.",
+      "nextSteps": [
+        "راجعوا الادعاءات العامة بحثًا عن مصادر وأمثلة محددة.",
+        "أضيفوا خبرة مباشرة وسياقًا يناسب القارئ.",
+        "استخدموا مراجعين بشريين ومعايير معلنة للجودة.",
+        "لا تتعاملوا مع كاشف AI وحده كدليل على التأليف."
+      ],
+      "limitations": "مقال رأي، ولم يتوفر نصه الكامل في هذه المراجعة؛ لا يقدم هذا السجل دليلًا على كاشف جديد أو اختبار علمي.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "Martin Fowler — LLM Voice",
+          "url": "https://martinfowler.com/bliki/LLM-Voice.html"
+        }
+      ],
+      "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+      "reviewedAt": "2026-10-29T23:43:00+03:00"
+    },
+    "94430ceaa839cbc65b": {
+      "titleAr": "مطور ينشر ملاحظة غير مستقلة عن كلفة رموز إضافية في Claude Code",
+      "summaryAr": "ينسب GitHub Gist إلى مؤلفه تقديرًا بأن تحديث ملخص حالة لوكلاء الخلفية قد يستهلك 15–20% من الرموز في نطاق إصدارات محدد على Linux. لم أتحقق من القياس عمليًا، ولا يقدمه المصدر بوصفه نتيجة رسمية من Anthropic.",
+      "whyItMatters": "تذكير لمطوري الوكلاء بقياس تكلفة المهام المساعدة والعمليات الخلفية، لا تكلفة الرد النهائي فقط.",
+      "audience": "مستخدمو أدوات الترميز الوكيلة ومهندسو منصات المطورين.",
+      "nextSteps": [
+        "سجلوا نسخة الأداة واستهلاك الرموز في تشغيل تجريبي مصرح به.",
+        "قارنوا قياسات متكافئة مع توثيق إعدادات التشغيل.",
+        "أعيدوا القياس بعد التحديثات بدل افتراض ثبات السلوك.",
+        "لا تثبتوا تعديلات runtime غير موثقة في بيئة إنتاج."
+      ],
+      "limitations": "مزعم فردي من Gist لا يمثل تصريحًا رسميًا؛ لا توجد بيانات مستقلة قابلة لإعادة التحقق هنا، ولم يُنفذ اختبار من جانبنا.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "GitHub Gist — reported Claude Code status-line token overhead",
+          "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce"
+        }
+      ],
+      "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+      "reviewedAt": "2026-10-29T23:43:00+03:00"
+    },
+    "e3c3fbc59798cc170c": {
+      "titleAr": "كاوست تستضيف المؤتمر السعودي الثالث عشر للحوسبة عالية الأداء والذكاء الاصطناعي",
+      "summaryAr": "تؤكد صفحات كاوست الرسمية أن المؤتمر السعودي للحوسبة عالية الأداء والذكاء الاصطناعي انعقد بين 26 و28 أكتوبر 2026. ويجمع الحدث باحثين وخبراء صناعة لمناقشة دور HPC والذكاء الاصطناعي في البحث والابتكار؛ لم أتحقق من عدد المشاركين أو من نشر وقائع علمية كاملة.",
+      "whyItMatters": "يعطي طلاب الحوسبة والذكاء الاصطناعي مؤشرًا إلى مجالات التعاون البحثي المحلية، ويمكن أن يساعدهم على اختيار موضوعات لمشاريع التخرج والبحث.",
+      "audience": "طلاب AI وعلوم الحاسب، باحثو HPC، والمهتمون بالبحث والتطوير في السعودية.",
+      "nextSteps": [
+        "راجعوا برنامج المؤتمر والأوراق أو الجلسات المنشورة عند توفرها.",
+        "اربطوا موضوعات الطاقة أو الصحة أو الصناعة بمشروع جامعي قابل للقياس.",
+        "تابعوا مختبرات كاوست وبرامج الطلاب عبر القنوات الرسمية."
+      ],
+      "limitations": "هذا السجل مبني على صفحات الحدث والفهرس الرسمي؛ لم أتحقق من جميع المخرجات أو من رقم المشاركين الوارد في التغطيات الثانوية.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "KAUST — Latest News",
+          "url": "https://www.kaust.edu.sa/en/news"
+        },
+        {
+          "title": "KAUST Information Science Lab — HPC topic and Saudi HPC/AI Conference 2026",
+          "url": "https://isl.kaust.edu.sa/topics/hpc"
+        }
+      ],
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9CUF9PUmZBeF9oal91bWtkNlJpV0xrQzVQNmc4MGIzOUphNWJwNU1tU1gwaU9MMDVZdU5oZ3JRalRwTmRmT1hkNEZjSHZ1X1N1VFRV?oc=5",
+      "reviewedAt": "2026-10-29T23:43:00+03:00"
+    },
+    "9c955f8061904d7d05": {
+      "titleAr": "تقرير: MacBook Pro جديد يجمع شاشة OLED مع إدخال باللمس",
+      "summaryAr": "يفيد تقرير Ars Technica بأن MacBook Pro الجديد يضيف شاشة OLED تعمل باللمس إلى تصميم macOS التقليدي بدل جهاز يتحول إلى لوحي. ويصف التقرير الشاشة بأنها التغيير الأبرز، مع اختلاف المواصفات والأسعار حسب قياس الشاشة والتكوين.",
+      "whyItMatters": "قد يدفع اللمس مطوري تطبيقات macOS إلى اختبار أحجام الأهداف والمسافات والتفاعلات، لكنه لا يعني تلقائيًا أن الواجهات الحالية مناسبة للمس دون تعديل.",
+      "audience": "مطورو macOS ومصممو الواجهات والمهتمون بأجهزة المطورين.",
+      "nextSteps": [
+        "اختبروا أهداف اللمس والمسافات في واجهات التطبيقات.",
+        "قارنوا سيناريوهات اللمس ولوحة التتبع على المهام نفسها.",
+        "انتظروا مراجعات مستقلة طويلة المدى للشاشة والأداء قبل الاستنتاج."
+      ],
+      "limitations": "تقرير تقني عن إعلان وتجربة أولية؛ لم نختبر الجهاز، وقد تختلف الأسعار والمواصفات حسب السوق والتكوين.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Ars Technica — Apple announces touchscreen MacBook Pro with OLED display",
+          "url": "https://arstechnica.com/apple/2026/10/apple-announces-touchscreen-macbook-pro-with-oled-display/"
+        }
+      ],
+      "url": "https://arstechnica.com/apple/2026/10/apple-announces-touchscreen-macbook-pro-with-oled-display/",
+      "reviewedAt": "2026-10-29T23:43:00+03:00"
+    },
+    "a3c11a8c410550c219": {
+      "titleAr": "تقرير محلي عن دليل من سدايا لاستخدام الذكاء الاصطناعي في تطوير البرمجيات",
+      "summaryAr": "ينقل عنوان أخبار 24 عبر موجز Google News إعلانًا عن دليل وطني من سدايا لتوظيف الذكاء الاصطناعي في البرمجيات. لم أتمكن من الوصول إلى النص الأصلي أو نسخة الدليل الرسمية، لذلك لا أؤكد نطاقه أو إلزاميته أو تاريخ تطبيقه.",
+      "whyItMatters": "إذا تأكدت النسخة الرسمية فقد تساعد فرق التطوير على توحيد ممارسات الاستخدام المسؤول؛ لكن لا ينبغي تغيير السياسات اعتمادًا على عنوان موجز وحده.",
+      "audience": "مطورو البرمجيات في السعودية وفرق التقنية والحوكمة.",
+      "nextSteps": [
+        "تحققوا من صفحة سدايا أو منصة حكومية رسمية للحصول على النسخة الأصلية.",
+        "افحصوا نطاق التطبيق والإصدار والجهات المستهدفة قبل تلخيص التوصيات.",
+        "لا تعتمدوا على عنوان خبر وحده لتغيير سياسات مؤسسة."
+      ],
+      "limitations": "بيانات وصفية فقط؛ المصدر الأصلي للدليل لم يُحلّ في هذه الدورة، لذلك لا يُعد هذا السجل تأكيدًا لمحتوى الدليل.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "رابط الخبر في موجز Google News؛ لم يُحلّ إلى المقال الأصلي",
+          "url": "https://news.google.com/rss/articles/CBMilARBVV95cUxOTnVQZjBPWGwxWHp3ZEFoS0FSMXctRzNoRG9JVXR5VHJjM1I5M3g4VURJbVRXd2FuaDE5TkowLWNQb1hURklXMG1tOEVFTGlqTjdLeGIzalBBZUpHV1dEM3djT3h3Q0hJNjZnMUszclh0WHhZVnpqajhPNFVCbnhJZ05GT0trVExWcUM5bjNpc0VNLTRlVDBDaUpBTXlKdlJDTTJDX1AtV040azJfN3FaV0MzYTExLWtfR1ZjZVJNd2sxSzBESDYxV0pNNERDNWt6TWc4dnFNMW5vTkdBb3F1bnhRN3FRVHhxQmMwM1BwU2VLb1d0WnNHRjlNbURKREhNaTVINzdJQ2ZKaFZNRVpGVmZaU1pVaFFnVm1ldmxvWTZyRDRWcDROVVByWUxtal9tR3FjbTIzSklTX1NHLXlyRmtpZUgySk9vbVlzZjRYOGFIQjlQOHRwTFJJb2xCVlY0MmVjVXVJLU5pWmpaaC0xNmFJeDNwTC1JWlJIeG8xS3pEcmFGbjNPZHpsTG5jd1NTWXdyWHgyZXVmeGF3WXFwbEdka3RQUFNtRS14ZDBqcHJSd1NLZk93M0hqZ3oyS2N0WmJMWlBOd2ZGVE5mWkhoeHM3M0NUd1Zzek1BUHJYdHZiQzJZTWNoaE5jdFh5NkRxb0hpcXRzcHNOcHdqRFZPUzZKZ1dfQTdHTGZ1a1l1WlBNOG5S?oc=5"
+        }
+      ],
+      "url": "https://news.google.com/rss/articles/CBMilARBVV95cUxOTnVQZjBPWGwxWHp3ZEFoS0FSMXctRzNoRG9JVXR5VHJjM1I5M3g4VURJbVRXd2FuaDE5TkowLWNQb1hURklXMG1tOEVFTGlqTjdLeGIzalBBZUpHV1dEM3djT3h3Q0hJNjZnMUszclh0WHhZVnpqajhPNFVCbnhJZ05GT0trVExWcUM5bjNpc0VNLTRlVDBDaUpBTXlKdlJDTTJDX1AtV040azJfN3FaV0MzYTExLWtfR1ZjZVJNd2sxSzBESDYxV0pNNERDNWt6TWc4dnFNMW5vTkdBb3F1bnhRN3FRVHhxQmMwM1BwU2VLb1d0WnNHRjlNbURKREhNaTVINzdJQ2ZKaFZNRVpGVmZaU1pVaFFnVm1ldmxvWTZyRDRWcDROVVByWUxtal9tR3FjbTIzSklTX1NHLXlyRmtpZUgySk9vbVlzZjRYOGFIQjlQOHRwTFJJb2xCVlY0MmVjVXVJLU5pWmpaaC0xNmFJeDNwTC1JWlJIeG8xS3pEcmFGbjNPZHpsTG5jd1NTWXdyWHgyZXVmeGF3WXFwbEdka3RQUFNtRS14ZDBqcHJSd1NLZk93M0hqZ3oyS2N0WmJMWlBOd2ZGVE5mWkhoeHM3M0NUd1Zzek1BUHJYdHZiQzJZTWNoaE5jdFh5NkRxb0hpcXRzcHNOcHdqRFZPUzZKZ1dfQTdHTGZ1a1l1WlBNOG5S?oc=5",
+      "reviewedAt": "2026-10-29T23:43:00+03:00"
+    },
+    "a1f8d24a51e36d4629": {
+      "titleAr": "Trakkr تطرح بحثًا عن مصادر الأرقام التي تكررها إجابات الذكاء الاصطناعي",
+      "summaryAr": "تشير صفحة البحث بعنوان Zombie stats: Where the numbers AI quotes come from إلى مشكلة تتبع أصل الإحصاءات التي تعيد النماذج اقتباسها. تعذر تحميل النص الكامل للبحث في هذه المراجعة، لذا لا أنسب إليه نتائج كمية أو منهجية محددة.",
+      "whyItMatters": "قد يتكرر رقم في إجابات كثيرة مع أنه يعود إلى مصدر قديم أو غير واضح؛ لذلك ينبغي توثيق المصدر الأصلي وتاريخه وسياقه بدل الاستشهاد بتكرار الإجابة.",
+      "audience": "الباحثون والصحفيون والمحللون ومطورو أنظمة RAG.",
+      "nextSteps": [
+        "اطلبوا المصدر الأولي لكل رقم.",
+        "تحققوا من تاريخ النشر والعينة وتعريف المؤشر.",
+        "سجلوا ما إذا كان الرقم قياسًا أم تقديرًا.",
+        "ضعوا علامة غير متحقق عند تعذر الرجوع للمصدر."
+      ],
+      "limitations": "لم يُقرأ البحث كاملًا بسبب تعذر الوصول؛ الملخص يقتصر على العنوان ولا يؤكد نتائج أو أرقامًا.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "Trakkr Research — Zombie stats: Where the numbers AI quotes come from",
+          "url": "https://trakkr.ai/trakkr-research/zombie-stats"
+        }
+      ],
+      "url": "https://trakkr.ai/trakkr-research/zombie-stats",
+      "reviewedAt": "2026-10-29T23:43:00+03:00"
     }
   }
 }
