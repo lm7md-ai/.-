@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "auditedAt": "2026-10-30T00:11:07+03:00",
+  "baseMainSha": "49a4dc38f5ac7f7e9108eeed17eba6532028c4ef",
+  "published": false,
+  "scope": "Exact id/url comparison of all current editorial/incoming files against feed and editorial data.",
+  "currentState": {
+    "feedGeneratedAt": "2026-10-29T21:08:35+00:00",
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialEntriesBefore": 536,
+    "activeExactEditorialBefore": 319,
+    "unEnrichedNewsBefore": 480,
+    "unEnrichedProjectsBefore": 1,
+    "seenIds": 1876,
+    "editorialEntriesAfter": 548,
+    "activeExactEditorialAfter": 331,
+    "unEnrichedNewsAfter": 468,
+    "unEnrichedProjectsAfter": 1
+  },
+  "incomingAudit": {
+    "files": 50,
+    "rows": 506,
+    "uniqueIds": 505,
+    "duplicateRows": 1,
+    "duplicateId": "853c63f738f0cecf3b",
+    "exactIdUrlRowsAlreadyInEditorial": 503,
+    "activeFeedAndEditorialExactRows": 286,
+    "activeFeedAndEditorialExactUniqueIds": 285,
+    "editorialExactButOutsideCurrentFeedRows": 217,
+    "unmatchedRows": 3,
+    "urlMismatches": 0,
+    "internalIdUrlConflicts": 0,
+    "importCandidates": 0,
+    "reviewedDirectory": "editorial/incoming/",
+    "previousAudit": "editorial/pending/recheck-2026-10-29-2343.json",
+    "classification": {
+      "alreadyImported": "503 rows exact id+url already present",
+      "activeExact": "286 rows (285 unique IDs) match current feed and editorial",
+      "outOfFeed": "217 rows remain historically enriched but outside current feed; not proof of expiry",
+      "pending": "3 rows absent from feed/editorial but still in seen; no alternate IDs created"
+    }
+  },
+  "unmatchedRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "title": "NVIDIA OpenShell",
+      "status": "incoming present; feed/editorial absent; seen=true; wait for exact reappearance or documented correction"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "title": "Canva Craft",
+      "status": "incoming present; feed/editorial absent; seen=true; wait for exact reappearance or documented correction"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "title": "1Password agent sign-in",
+      "status": "incoming present; feed/editorial absent; seen=true; wait for exact reappearance or documented correction"
+    }
+  ],
+  "identityCollisions": [
+    {
+      "type": "same-url-different-id",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "olderEditorialId": "7a99eca9b2ce14d9f5",
+      "currentFeedAndEditorialId": "e0cbbf211a55e79f34",
+      "action": "preserved both; active entry keeps its original feed ID; no title-derived ID"
+    }
+  ],
+  "cycle": {
+    "newsPrepared": 12,
+    "newsSavedInEditorial": 12,
+    "siteProjectEnrichments": 0,
+    "researchOnlyDossiersAdded": 1,
+    "projectHold": "The remaining unenriched project was withheld under the safety policy; no identifying name, link or usage steps are included."
+  },
+  "commands": {
+    "officialValidate": "not executed locally; no repository shell; structural preflight passed and PR CI will be checked",
+    "officialImport": "not executed; merged data preserves all old records and adds only exact active IDs/URLs",
+    "unitTests": "python -m unittest discover -s tests -v not executed locally; merge gated on CI"
+  },
+  "deployment": {
+    "lastSuccessfulRunId": 40955190695,
+    "lastSuccessfulRunUrl": "https://github.com/lm7md-ai/.-/actions/runs/40955190695",
+    "steps": "feed refresh, history preservation, Pages setup, upload and deploy succeeded in latest observed run",
+    "livePayloadVerification": "not directly verified; deploy success alone is not proof that the new JSON is visible"
+  },
+  "pr1and2": {
+    "pr1": {
+      "number": 1,
+      "state": "closed",
+      "merged": true,
+      "mergedAt": "2026-10-24T10:21:47Z"
+    },
+    "pr2": {
+      "number": 2,
+      "state": "closed",
+      "merged": true,
+      "mergedAt": "2026-10-24T10:07:54Z"
+    }
+  },
+  "limitations": "All 50 incoming files were compared in five batches. Official scripts and unit tests were not executed locally; no local test pass is claimed."
+}

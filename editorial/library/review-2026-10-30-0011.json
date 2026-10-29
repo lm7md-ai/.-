@@ -1,0 +1,195 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-30T00:11:07+03:00",
+  "published": false,
+  "siteContent": false,
+  "baseMainSha": "49a4dc38f5ac7f7e9108eeed17eba6532028c4ef",
+  "historicalLibrary": {
+    "catalogPath": "editorial/library/catalog-2026-10-29-2343.json",
+    "catalogCount": 31,
+    "catalogMeasuredAt": "2026-10-29T23:43:00+03:00",
+    "researchOnlyDossiers": [
+      "editorial/library/nvidia-openshell-dossier-2026-10-29.json",
+      "editorial/library/markitdown-dossier-2026-10-30-0011.json"
+    ],
+    "note": "المؤشرات التاريخية تبقى مؤرخة بوقت قياسها؛ لا تُعامل النجوم التراكمية على أنها نمو يومي."
+  },
+  "previousEight": [
+    {
+      "repo": "gradio-app/gradio",
+      "stars": 43925,
+      "forks": 3654,
+      "openIssues": 118,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-29T18:56:21Z",
+      "updatedAt": "2026-10-29T20:31:22Z",
+      "metricsMeasuredAt": "2026-10-30T00:11:07+03:00",
+      "officialUrl": "https://github.com/gradio-app/gradio"
+    },
+    {
+      "repo": "thedotmack/claude-mem",
+      "stars": 104657,
+      "forks": 9235,
+      "openIssues": 117,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-29T21:16:54Z",
+      "updatedAt": "2026-10-29T21:19:02Z",
+      "metricsMeasuredAt": "2026-10-30T00:11:07+03:00",
+      "officialUrl": "https://github.com/thedotmack/claude-mem"
+    },
+    {
+      "repo": "ultralytics/ultralytics",
+      "stars": 62973,
+      "forks": 11933,
+      "openIssues": 103,
+      "license": "AGPL-3.0",
+      "archived": false,
+      "pushedAt": "2026-10-29T19:33:22Z",
+      "updatedAt": "2026-10-29T18:51:39Z",
+      "metricsMeasuredAt": "2026-10-30T00:11:07+03:00",
+      "officialUrl": "https://github.com/ultralytics/ultralytics"
+    },
+    {
+      "repo": "harry0703/MoneyPrinterTurbo",
+      "stars": 136290,
+      "forks": 21690,
+      "openIssues": 80,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-29T12:42:40Z",
+      "updatedAt": "2026-10-29T21:13:09Z",
+      "metricsMeasuredAt": "2026-10-30T00:11:07+03:00",
+      "officialUrl": "https://github.com/harry0703/MoneyPrinterTurbo"
+    },
+    {
+      "repo": "microsoft/AI-For-Beginners",
+      "stars": 70359,
+      "forks": 13680,
+      "openIssues": 28,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-23T23:55:14Z",
+      "updatedAt": "2026-10-29T18:31:49Z",
+      "metricsMeasuredAt": "2026-10-30T00:11:07+03:00",
+      "officialUrl": "https://github.com/microsoft/AI-For-Beginners"
+    },
+    {
+      "repo": "usebruno/bruno",
+      "stars": 47930,
+      "forks": 3053,
+      "openIssues": 1968,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-29T14:30:38Z",
+      "updatedAt": "2026-10-29T20:45:51Z",
+      "metricsMeasuredAt": "2026-10-30T00:11:07+03:00",
+      "officialUrl": "https://github.com/usebruno/bruno"
+    },
+    {
+      "repo": "keras-team/keras",
+      "stars": 64397,
+      "forks": 19805,
+      "openIssues": 272,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-29T20:21:36Z",
+      "updatedAt": "2026-10-29T20:21:50Z",
+      "metricsMeasuredAt": "2026-10-30T00:11:07+03:00",
+      "officialUrl": "https://github.com/keras-team/keras"
+    },
+    {
+      "repo": "k2-fsa/sherpa-onnx",
+      "stars": 15600,
+      "forks": 1828,
+      "openIssues": 634,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-29T12:00:57Z",
+      "updatedAt": "2026-10-29T20:32:47Z",
+      "metricsMeasuredAt": "2026-10-30T00:11:07+03:00",
+      "officialUrl": "https://github.com/k2-fsa/sherpa-onnx"
+    }
+  ],
+  "topThreeSuggestions": [
+    {
+      "title": "مجموعة اختبار لجودة المستندات العربية",
+      "problem": "قد تتشوّه الجداول واتجاه RTL والمعادلات عند التحويل إلى Markdown دون قياس ثابت.",
+      "approach": "إنشاء مجموعة ملفات مرخصة تشمل PDF وDOCX وXLSX بالعربية، مع مخرجات مرجعية ومقاييس لبنية العناوين والجداول والروابط.",
+      "stack": "Python، pytest، MarkItDown، PyMuPDF.",
+      "steps": [
+        "اجمع ملفات عامة مرخصة ومتوازنة بين الصيغ.",
+        "عرّف مخرجات Markdown مرجعية لكل ملف.",
+        "احسب دقة العناوين والخلايا والروابط واتجاه النص.",
+        "شغّل الاختبارات مع كل إصدار واحتفظ بتقرير فروق."
+      ],
+      "metric": "نسبة الاحتفاظ بالعناوين والخلايا والروابط ومعدل الانحدار لكل إصدار.",
+      "difficulty": "متوسط؛ تقدير تحريري.",
+      "risks": "حقوق الملفات المرجعية وصعوبة تقييم التنسيق الدلالي تلقائيًا.",
+      "sources": [
+        {
+          "title": "MarkItDown الرسمي",
+          "url": "https://github.com/microsoft/markitdown"
+        },
+        {
+          "title": "متطلبات الحزمة",
+          "url": "https://github.com/microsoft/markitdown/blob/main/packages/markitdown/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "title": "تحويل دفعي محلي مع سجل تدقيق",
+      "problem": "تحويل مجلدات كاملة قد يخفي الملفات الفاشلة أو يخلط المخرجات بالمدخلات.",
+      "approach": "غلاف محلي يكتب manifest لكل ملف يتضمن SHA-256 ونوعه ووقت التحويل والتحذيرات ومسار المخرج، دون رفع الملفات إلى السحابة.",
+      "stack": "Python، pathlib، hashlib، SQLite اختياري، MarkItDown.",
+      "steps": [
+        "حدد مجلدي إدخال وإخراج منفصلين.",
+        "احسب بصمة كل ملف وسجل نوعه قبل التحويل.",
+        "عالج أخطاء كل ملف على حدة.",
+        "أصدر تقرير نجاح وفشل قابلًا لإعادة التشغيل."
+      ],
+      "metric": "نسبة الملفات ذات سجل نتيجة ومعدل الفشل الصامت.",
+      "difficulty": "متوسط؛ تقدير تحريري.",
+      "risks": "قراءة ملفات غير موثوقة بصلاحيات المستخدم وتسرب بيانات حساسة عبر السجلات.",
+      "sources": [
+        {
+          "title": "دليل MarkItDown",
+          "url": "https://github.com/microsoft/markitdown/blob/main/packages/markitdown/README.md"
+        },
+        {
+          "title": "سياسة الأمان",
+          "url": "https://github.com/microsoft/markitdown/blob/main/SECURITY.md"
+        }
+      ]
+    },
+    {
+      "title": "مقياس جودة للجداول والمعادلات",
+      "problem": "وجود ملف Markdown لا يعني أن القيم العددية أو الجداول بقيت صحيحة.",
+      "approach": "مقارنة الصفوف والخلايا والرموز الرياضية بين النص المستخرج والمرجع مع مراجعة بشرية لعينة.",
+      "stack": "Python، pandas، pytest، MarkItDown.",
+      "steps": [
+        "اختر ملفات اختبار عامة تتضمن جداول ومعادلات.",
+        "استخرج Markdown وسجل التحذيرات.",
+        "قارن الصفوف والخلايا والقيم الرقمية بالمرجع.",
+        "انشر تقريرًا يوضح الصيغ التي تحتاج مسارًا بديلًا."
+      ],
+      "metric": "دقة القيم والخلايا ومعدل الحالات التي تحتاج مراجعة بشرية.",
+      "difficulty": "متوسط إلى مرتفع؛ تقدير تحريري.",
+      "risks": "قد تعطي المطابقة النصية انطباعًا زائفًا بالصحة الدلالية.",
+      "sources": [
+        {
+          "title": "MarkItDown",
+          "url": "https://github.com/microsoft/markitdown"
+        },
+        {
+          "title": "PyMuPDF docs",
+          "url": "https://pymupdf.readthedocs.io/en/latest/"
+        }
+      ]
+    }
+  ],
+  "archivedAlternatives": "احتُفظ بتصنيف المشاريع المؤرشفة والبدائل السابقة كما في catalog-2026-10-29-2343.json؛ لم أعد ترتيب الأفكار القديمة.",
+  "developerIntegrationNotes": "لا تغييرات في الشيفرة أو التصميم أو workflows أو feed.json أو seen.json. ملف MarkItDown بحثي وغير ظاهر على الموقع.",
+  "testEvidence": null
+}
