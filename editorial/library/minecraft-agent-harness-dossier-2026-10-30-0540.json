@@ -1,0 +1,204 @@
+{
+  "version": 1,
+  "repository": "yc-software/minecraft-agent-harness",
+  "url": "https://github.com/yc-software/minecraft-agent-harness",
+  "titleAr": "Minecraft Agent Harness — بيئة لتجربة وكلاء لغويين داخل Minecraft",
+  "reviewedAt": "2026-10-30T05:40:49+03:00",
+  "basis": "readme",
+  "overview": "مشروع JavaScript/Node.js يربط نموذجًا لغويًا بعالم Minecraft عبر Mineflayer، ويضيف جلسات مستمرة وأدوات إدراك وحركة وبناء وتواصل، مع وضع فرق متعددة الوكلاء وبيئة shell منفصلة لكل وكيل. يستخدم Pi لإدارة جلسة النموذج، ويمكنه العمل مع مزودين مختلفين أو نقطة نهاية متوافقة مع OpenAI Responses API. هو إطار تجريبي لوكلاء داخل لعبة، وليس مساعدًا عامًا أو معيارًا علميًا جاهزًا.",
+  "requirements": "Node.js 22.19 أو أحدث؛ Minecraft Java 1.21.6 وPaper؛ Java 21 لتشغيل خادم التطوير المرفق؛ مفتاح API لمزود نموذج عند استخدام نموذج مستضاف؛ Docker موصى به لعزل shell. يمكن استخدام E2B كساحة سحابية اختيارية بمفتاح مستقل، أو إعداد مزود محلي مثل Ollama/LM Studio عبر ملف نماذج مخصص. الخادم المحلي وDocker لا يحتاجان اشتراكًا سحابيًا، لكن تشغيل النموذج عبر API قد يترتب عليه استهلاك مدفوع.",
+  "quickStart": "1) ثبّت Node.js 22.19+ وJava 21 وDocker. 2) استنسخ المستودع ثم نفّذ npm ci. 3) انسخ .env.example إلى .env وأضف مفتاح مزود النموذج محليًا فقط، ولا ترفعه إلى Git. 4) فعّل AGENT_SANDBOX=docker صراحةً وتأكد من عمل Docker. 5) شغّل npm run server لإنشاء Paper 1.21.6 محليًا. 6) في طرفية ثانية شغّل npm start -- --objective \"Build a small shelter near spawn\". 7) أوقف الجلسة بـCtrl+C وراجع مجلد .agent-state. هذه خطوات من README وليست تجربة نفذتها.",
+  "costs": "لا توجد رسوم ترخيص للمشروع (MIT). كلفة الاستدلال تعتمد على مزود النموذج وعدد الطلبات والسياق؛ E2B خيار سحابي منفصل قد تكون له رسوم؛ Docker وخادم Paper المحليان لا يضيفان رسوم خدمة سحابية لكنهما يستهلكان موارد الجهاز. يمكن إعداد نموذج محلي، لكن ذلك يتطلب موارد CPU/GPU وذاكرة مناسبة. لم أقدّر مبلغًا ثابتًا لأن الأسعار والاستهلاك يعتمدان على المزود والإعداد.",
+  "localVsCloud": "محليًا: Paper على localhost مع Docker sandbox؛ ويمكن إعداد نموذج محلي عبر custom models file إذا توافرت الموارد. سحابيًا: مزود نموذج مستضاف وE2B sandbox اختياري. يوضح التوثيق أن sandbox الافتراضي قد ينتهي إلى local إذا لم يتوفر Docker أو E2B، وأن local ينفذ الأوامر بصلاحيات المستخدم؛ لذلك ينبغي اختيار Docker صراحةً وعدم تشغيله على جهاز يحوي ملفات أو أسرارًا مهمة.",
+  "alternatives": [
+    {
+      "name": "Mineflayer",
+      "url": "https://github.com/PrismarineJS/mineflayer",
+      "role": "مكتبة JavaScript منخفضة المستوى لبناء bots؛ أساس تقني لهذا المشروع وليست بديلًا مطابقًا لإدارة جلسات LLM والفرق."
+    },
+    {
+      "name": "Voyager",
+      "url": "https://github.com/MineDojo/Voyager",
+      "role": "مشروع بحثي سابق لوكيل مفتوح المهام في Minecraft؛ مفيد للمقارنة البحثية، لكن آخر push ظاهر في 2024-04-03."
+    }
+  ],
+  "limitations": "المستودع جديد جدًا (أُنشئ في 29 أكتوبر 2026) ومؤشراته صغيرة وقت القياس؛ لا تكفي لاعتباره منتجًا ناضجًا. الرؤية التجريبية اختيارية، والتوافق المعلن مركز على Paper/Minecraft 1.21.6. توجد patches لتبعيات خارجية ويجب قراءة THIRD_PARTY_NOTICES. التشغيل قد يستهلك API مدفوعًا. التحذير الأهم: وضع local يشغّل أوامر shell تحت حساب المستخدم؛ لا تستخدمه افتراضيًا على جهازك الأساسي، ولا تضع مفاتيح أو ملفات شخصية داخل بيئة الوكيل. لم أشغّل npm ci أو الاختبارات أو خادم اللعبة.",
+  "improvements": [
+    {
+      "title": "اجعل عزل shell اختيارًا صريحًا وآمنًا",
+      "problem": "قد ينتهي الإعداد الافتراضي إلى local عندما لا يتوفر Docker أو E2B، وهذا ينفذ أوامر الوكيل تحت حساب المستخدم.",
+      "approach": "إظهار تحذير واضح وإلزام المستخدم بتأكيد local صراحةً، مع تفضيل Docker في الإعداد الأولي وتوثيق حدود mounts والشبكة.",
+      "stack": "Node.js / Docker / CLI validation / node:test",
+      "steps": [
+        "راجع مسار اختيار sandbox والرسائل الحالية.",
+        "أضف تأكيدًا صريحًا قبل اختيار local.",
+        "اختبر أن الإعداد الافتراضي لا ينفذ shell على المضيف دون موافقة.",
+        "وثّق حدود volumes والشبكة والصلاحيات."
+      ],
+      "metric": "صفر جلسات local غير مقصودة في اختبارات بدء التشغيل.",
+      "difficulty": "متوسطة — تقدير بحثي، لا يعني أن التغيير مطلوب قبل مراجعة Issues.",
+      "risks": "قد يزيد خطوات الإعداد للمطورين الذين يريدون تشغيلًا محليًا سريعًا؛ افحص الاختبارات الحالية أولًا.",
+      "sources": [
+        {
+          "title": "Configuration — Sandbox",
+          "url": "https://github.com/yc-software/minecraft-agent-harness/blob/main/docs/configuration.md"
+        },
+        {
+          "title": "Architecture — The sandbox",
+          "url": "https://github.com/yc-software/minecraft-agent-harness/blob/main/docs/architecture.md"
+        }
+      ]
+    },
+    {
+      "title": "ميزانية جلسة ومؤشرات تكلفة اختيارية",
+      "problem": "تتكرر جلسات الوكلاء وقد تتعدد الرسائل والطلبات؛ يحتاج المشغّل رؤية موحدة للاستهلاك والمدة دون تسجيل نصوص حساسة.",
+      "approach": "إضافة ملخص محلي اختياري للمدة وعدد استدعاءات النموذج والرموز المقدرة وحالة الإيقاف، مع إخفاء prompts والردود افتراضيًا.",
+      "stack": "Node.js / JSONL telemetry / provider usage metadata / node:test",
+      "steps": [
+        "راجع telemetry الحالية وواجهات مزودي النماذج.",
+        "حدد حقولًا غير حساسة وموحدة بين المزودين.",
+        "أضف حدًا اختياريًا للمدة أو عدد الاستدعاءات.",
+        "اختبر عدم تسجيل مفاتيح API أو محتوى المحادثة."
+      ],
+      "metric": "نسبة الجلسات التي تعرض مدة واستهلاكًا قابلًا للمراجعة دون تسريب المحتوى.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد تختلف بيانات usage بين المزودين أو تكون غير متاحة؛ لا تعرض تقديرًا كفاتورة دقيقة.",
+      "sources": [
+        {
+          "title": "README",
+          "url": "https://github.com/yc-software/minecraft-agent-harness/blob/main/README.md"
+        },
+        {
+          "title": "Configuration — Model",
+          "url": "https://github.com/yc-software/minecraft-agent-harness/blob/main/docs/configuration.md"
+        }
+      ]
+    },
+    {
+      "title": "إعادة تشغيل سيناريوهات التنسيق من سجلات منقحة",
+      "problem": "نتائج الوكلاء متعددة الأطراف يصعب مقارنتها إذا اختلف العالم والبداية والأحداث بين كل تشغيل.",
+      "approach": "توفير سيناريوهات اختبار صغيرة مع إعداد عالم ثابت وتسجيل أحداث منقح وإعادة تشغيلها لقياس التعاون وتعارض الأدوار.",
+      "stack": "Node.js / Paper test worlds / JSONL / node:test",
+      "steps": [
+        "اختر 3 أهداف لعب تعاونية محدودة.",
+        "ثبّت نسخة العالم وإعدادات الخادم.",
+        "سجل الأوامر والأحداث غير الحساسة بترتيب زمني.",
+        "أعد التشغيل وقارن إنجاز الهدف والرسائل والتعارضات."
+      ],
+      "metric": "قابلية إعادة إنتاج نتائج السيناريو ومعدل إكمال الهدف عبر عدة تشغيلات.",
+      "difficulty": "مرتفعة — تقدير بحثي.",
+      "risks": "العالم والمحاكاة قد لا يكونان حتميين تمامًا؛ لا تصف النتائج بأنها benchmark عام.",
+      "sources": [
+        {
+          "title": "Architecture — The loop",
+          "url": "https://github.com/yc-software/minecraft-agent-harness/blob/main/docs/architecture.md"
+        },
+        {
+          "title": "Y Combinator Labs — Agents in Games",
+          "url": "https://labs.ycombinator.com/projects/games/index.html"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "مختبر مصغر لتنسيق الوكلاء",
+      "problem": "يصعب تدريس الذاكرة المشتركة وتوزيع المهام عبر أمثلة نظرية فقط.",
+      "approach": "عالم لعبة محلي صغير بثلاثة وكلاء وأهداف محددة ولوحة تعرض الرسائل والموارد والمهام.",
+      "stack": "Node.js / Mineflayer / Paper / JSONL dashboard",
+      "steps": [
+        "حدد هدفًا تعاونيًا واحدًا.",
+        "شغّل 3 وكلاء في عالم محلي معزول.",
+        "سجل الرسائل والموارد والمهام.",
+        "اعرض أين تكرر العمل أو تعارضت القرارات.",
+        "قارن إعدادين لتوزيع الأدوار."
+      ],
+      "metric": "زمن إنجاز الهدف ونسبة المهام المكررة وتكلفة الاستدعاءات.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد تتأثر النتائج بإصدار اللعبة والنموذج؛ لا تعممها خارج بيئة المحاكاة.",
+      "sources": [
+        {
+          "title": "Minecraft Agent Harness",
+          "url": "https://github.com/yc-software/minecraft-agent-harness"
+        },
+        {
+          "title": "Mineflayer",
+          "url": "https://github.com/PrismarineJS/mineflayer"
+        }
+      ]
+    },
+    {
+      "title": "منهج تعليمي آمن لوكلاء الألعاب",
+      "problem": "يحتاج الطلاب إلى فهم agent loop والأدوات والذاكرة دون ربطها بحسابات أو خوادم عامة.",
+      "approach": "حزمة دروس تعمل على خادم Paper محلي ووكيل واحد أولًا، ثم تضيف فريقًا صغيرًا ومقاييس واضحة.",
+      "stack": "Node.js / Paper / Docker / Markdown / node:test",
+      "steps": [
+        "جهز عالمًا محليًا غير متصل بالإنترنت.",
+        "ابدأ بمهمة رصد بسيطة بلا تنفيذ shell.",
+        "أضف أداة حركة واحدة ثم ذاكرة جلسة.",
+        "قارن وكيلًا واحدًا بثلاثة وكلاء.",
+        "اطلب تقريرًا يشرح الأخطاء والقيود."
+      ],
+      "metric": "قدرة الطالب على شرح observation/action/memory وتكرار تجربة محلية.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "يلزم ضبط وقت اللعب واستهلاك النموذج، وتجنب نشر الخادم أو الأسرار.",
+      "sources": [
+        {
+          "title": "README — Quickstart",
+          "url": "https://github.com/yc-software/minecraft-agent-harness/blob/main/README.md"
+        },
+        {
+          "title": "Configuration",
+          "url": "https://github.com/yc-software/minecraft-agent-harness/blob/main/docs/configuration.md"
+        }
+      ]
+    },
+    {
+      "title": "اختبار مقاومة تعليمات العالم غير الموثوقة",
+      "problem": "النصوص التي يراها الوكيل داخل اللعبة قد تتضمن رسائل أو لافتات تحاول تغيير هدفه.",
+      "approach": "إنشاء عالم اختبار اصطناعي يحتوي تعليمات benign متعارضة وقياس ما إذا كان الوكيل يميز بيانات العالم عن تعليمات النظام.",
+      "stack": "Node.js / Mineflayer / synthetic fixtures / node:test",
+      "steps": [
+        "اكتب حالات اختبار نصية غير ضارة.",
+        "ضعها في لافتات ورسائل داخل عالم محلي.",
+        "سجل قرار الوكيل والأداة التي اختارها.",
+        "اختبر احترام حدود الصلاحيات وإيقاف التنفيذ عند الغموض.",
+        "انشر نتائج الاختبار دون بيانات حسابات أو خوادم عامة."
+      ],
+      "metric": "معدل رفض التعليمات غير الموثوقة مع بقاء إنجاز المهام السليمة.",
+      "difficulty": "متوسطة إلى مرتفعة — تقدير بحثي.",
+      "risks": "اختبارات المحاكاة لا تثبت مقاومة كل أشكال prompt injection؛ يجب ألا تستخدم على خوادم عامة.",
+      "sources": [
+        {
+          "title": "Tool reference",
+          "url": "https://github.com/yc-software/minecraft-agent-harness/blob/main/docs/tools.md"
+        },
+        {
+          "title": "Architecture",
+          "url": "https://github.com/yc-software/minecraft-agent-harness/blob/main/docs/architecture.md"
+        }
+      ]
+    }
+  ],
+  "religious": [],
+  "repositoryMetrics": {
+    "stars": 21,
+    "forks": 1,
+    "openIssues": 0,
+    "license": "MIT",
+    "archived": false,
+    "createdAt": "2026-10-29T05:21:45Z",
+    "updatedAt": "2026-10-30T02:16:00Z",
+    "pushedAt": "2026-10-29T20:30:45Z",
+    "measuredAt": "2026-10-30T05:40:49+03:00",
+    "source": "https://api.github.com/repos/yc-software/minecraft-agent-harness"
+  },
+  "testStatus": "not_run",
+  "developerIntegrationNotes": [
+    "ملف بحث مستقل غير منشور؛ لا يوجد feed id لهذا المستودع.",
+    "لا تنشئ عنصر feed أو editorial جديدًا لهذا البحث ما لم يظهر المستودع لاحقًا في feed بمعرفه ورابطه الأصليين.",
+    "اعرض شارة «بحث مستقل — غير منشور» وتاريخ قياس النجوم والترخيص والنشاط.",
+    "لا تعرض quickStart كأنه نُفذ؛ الاختبارات والتشغيل غير منفذة.",
+    "أبرز تحذير sandbox المحلي الذي ينفذ أوامر بصلاحيات المستخدم."
+  ]
+}
