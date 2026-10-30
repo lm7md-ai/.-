@@ -1,0 +1,230 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-30T02:55:46+03:00",
+  "repository": "googleapis/python-genai",
+  "title": "Google Gen AI Python SDK",
+  "published": false,
+  "siteVisible": false,
+  "feedMatch": false,
+  "status": "active",
+  "archived": false,
+  "license": "Apache-2.0",
+  "metrics": {
+    "stars": 4049,
+    "forks": 1051,
+    "openIssues": 379,
+    "measuredAt": "2026-10-30T02:55:46+03:00",
+    "pushedAt": "2026-10-29T21:33:09Z",
+    "updatedAt": "2026-10-29T21:32:45Z"
+  },
+  "basis": "readme",
+  "overview": "مكتبة Python الرسمية للتعامل مع Gemini Developer API وGemini Enterprise Agent Platform. توفر عميلًا متزامنًا وغير متزامن، توليد المحتوى، الأنواع المعرّفة، استدعاء الدوال وإعدادات الأمان. هي SDK شبكية؛ لا تشغّل أوزان النماذج محليًا.",
+  "requirements": "Python 3.11 فأعلى وفق إعدادات الإصدار الحالي؛ pip أو uv؛ مفتاح GEMINI_API_KEY أو GOOGLE_API_KEY للـ Developer API، أو مشروع Google Cloud وموقع ومصادقة مناسبة لـ Gemini Enterprise Agent Platform. تتضمن الاعتماديات httpx وgoogle-auth وpydantic ومكونات اتصال أخرى. راجع pyproject.toml قبل تثبيت إصدار محدد.",
+  "quickStart": "إنشاء بيئة افتراضية، ثم pip install google-genai، وتعيين GEMINI_API_KEY في متغير بيئة محلي غير مرفوع إلى Git، ثم استخدام from google import genai؛ client=genai.Client()؛ response=client.models.generate_content(model='gemini-flash-latest', contents='...')؛ قراءة response.text ثم إغلاق client. هذا وصف لخطوات README ولم يتم تشغيله في هذه الدورة.",
+  "costs": "الحزمة نفسها مفتوحة المصدر بترخيص Apache-2.0 ولا تفرض رسوم SDK. تكلفة الاستخدام تأتي من API والنموذج المختار أو خدمات Google Cloud؛ لم أدرج أسعارًا لأنها تتغير حسب النموذج والمنطقة وحجم الاستخدام.",
+  "localVsCloud": "يمكن تشغيل تطبيق Python والعميل محليًا، لكن الاستدلال يرسل الطلبات إلى خدمات Google عبر HTTPS؛ هذا ليس تشغيلًا محليًا للنموذج ولا يعمل دون خدمة API. للاستدلال المحلي يلزم runtime ونموذج محلي منفصلان مثل Ollama أو vLLM.",
+  "alternatives": "LiteLLM لطبقة موحدة متعددة المزودين؛ Ollama أو vLLM للاستدلال المحلي؛ أو استخدام REST مع httpx إذا كان المطلوب عددًا محدودًا من العمليات ولا تحتاج نماذج SDK والأنواع الجاهزة.",
+  "sources": [
+    {
+      "title": "Google Gen AI Python SDK — README",
+      "url": "https://github.com/googleapis/python-genai/blob/main/README.md"
+    },
+    {
+      "title": "Google Gen AI Python SDK — Documentation",
+      "url": "https://googleapis.github.io/python-genai/"
+    },
+    {
+      "title": "Google Gen AI Python SDK — pyproject.toml",
+      "url": "https://github.com/googleapis/python-genai/blob/main/pyproject.toml"
+    },
+    {
+      "title": "Google Gen AI Python SDK — LICENSE",
+      "url": "https://github.com/googleapis/python-genai/blob/main/LICENSE"
+    },
+    {
+      "title": "Google Gen AI Python SDK — PR #3182",
+      "url": "https://github.com/googleapis/python-genai/pull/3182"
+    },
+    {
+      "title": "Google Gen AI Python SDK — Release 2.34.0",
+      "url": "https://github.com/googleapis/python-genai/releases/tag/v2.34.0"
+    }
+  ],
+  "improvements": [
+    {
+      "title": "مصفوفة ترحيل Python والإصدارات",
+      "problem": "قد يفاجأ المستخدمون بتغير الحد الأدنى لإصدار Python أو اختلاف واجهات beta وv1.",
+      "approach": "إضافة جدول توافق لكل إصدار وأمثلة ترحيل واختبارات تثبيت نظيف على إصدارات Python المدعومة.",
+      "stack": "Python / pytest / tox أو nox / GitHub Actions",
+      "steps": [
+        "جمع تغييرات الحد الأدنى من Python بين الإصدارات.",
+        "بناء بيئات تثبيت نظيف لكل إصدار مدعوم.",
+        "اختبار أمثلة sync وasync على beta وv1.",
+        "نشر جدول توافق وتغييرات كاسرة مع كل إصدار."
+      ],
+      "metric": "نسبة نجاح التثبيت والأمثلة على مصفوفة الإصدارات المعلنة.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد تتكرر تغطية موجودة في CI؛ يجب مراجعة ملفات الاختبار وIssues قبل اقتراح PR.",
+      "sources": [
+        {
+          "title": "Google Gen AI Python SDK — README",
+          "url": "https://github.com/googleapis/python-genai/blob/main/README.md"
+        },
+        {
+          "title": "Google Gen AI Python SDK — pyproject.toml",
+          "url": "https://github.com/googleapis/python-genai/blob/main/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "title": "قياس استخدام دون تسجيل محتوى المحادثة",
+      "problem": "يصعب على الفرق تقدير زمن الاستجابة والاستهلاك دون تسجيل prompts أو بيانات حساسة.",
+      "approach": "إضافة مثال middleware اختياري يسجل model وrequest id والمدة وعدد tokens وحالة retry، مع حجب prompt/response افتراضيًا.",
+      "stack": "Python / logging / OpenTelemetry / google-genai",
+      "steps": [
+        "تحديد الحقول غير الحساسة التي يمكن تسجيلها.",
+        "إضافة مثال wrapper حول استدعاءات العميل.",
+        "حجب المحتوى والحقول السرية افتراضيًا.",
+        "اختبار عدم ظهور المفاتيح أو نصوص المستخدم في السجلات."
+      ],
+      "metric": "نسبة الطلبات التي لها قياس latency واستهلاك دون تسريب للمحتوى في عينة الاختبار.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد يضيف عبئًا على مسار الطلب؛ يلزم اختبار الأداء ومراجعة الخصوصية.",
+      "sources": [
+        {
+          "title": "Google Gen AI Python SDK — Documentation",
+          "url": "https://googleapis.github.io/python-genai/"
+        },
+        {
+          "title": "OpenTelemetry Python",
+          "url": "https://opentelemetry.io/docs/languages/python/"
+        }
+      ]
+    },
+    {
+      "title": "دليل واضح لعزل إعدادات كل طلب",
+      "problem": "قد يخلط المطورون بين إعدادات العميل الافتراضية وترويسات الطلب المفرد.",
+      "approach": "إضافة أمثلة توضح نطاق إعدادات http_options والمهل والترويسات في sync وasync، مع الإحالة إلى اختبارات regression المضافة.",
+      "stack": "Python / pytest / httpx / google-genai",
+      "steps": [
+        "توثيق إعدادات العميل وإعدادات الطلب المنفرد.",
+        "كتابة مثالين متتابعين بإعدادات مختلفة.",
+        "إظهار كيفية إعادة استخدام العميل دون مشاركة حالة الطلب.",
+        "ربط الدليل باختبارات regression الحالية."
+      ],
+      "metric": "انخفاض تقارير أخطاء تداخل الإعدادات وتغطية الأمثلة بحالات اختبار.",
+      "difficulty": "منخفضة إلى متوسطة — تقدير بحثي.",
+      "risks": "قد تكون بعض الأمثلة موجودة بالفعل؛ يجب مراجعة التوثيق قبل تنفيذ أي إضافة.",
+      "sources": [
+        {
+          "title": "Google Gen AI Python SDK — PR #3182",
+          "url": "https://github.com/googleapis/python-genai/pull/3182"
+        },
+        {
+          "title": "Google Gen AI Python SDK — Documentation",
+          "url": "https://googleapis.github.io/python-genai/"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "مختبر تعليمي لتجربة Gemini Python SDK",
+      "problem": "يصعب على المبتدئ فهم الفرق بين إنشاء العميل والاستدعاء المتزامن وغير المتزامن.",
+      "approach": "واجهة محلية تعليمية تعرض أمثلة صغيرة وتطلب إدخال المفتاح في متغير بيئة محلي، مع حد إنفاق يضبطه المستخدم خارج التطبيق.",
+      "stack": "Python / Streamlit أو Gradio / google-genai",
+      "steps": [
+        "بناء شاشة إعداد تشرح الفرق بين Developer API وEnterprise.",
+        "إضافة مثال توليد نص متزامن.",
+        "إضافة مثال async مع إغلاق العميل.",
+        "إظهار عدد tokens إن توفر دون حفظ نص الطلب.",
+        "إضافة تحذير تكلفة وإخفاء المفتاح من السجلات."
+      ],
+      "metric": "نسبة إكمال أمثلة البدء دون تسريب مفاتيح أو فشل اتصال.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "أي استدعاء API قد يترتب عليه تكلفة؛ يجب وضع حدود وعدم تخزين المفاتيح أو prompts.",
+      "sources": [
+        {
+          "title": "Google Gen AI Python SDK — Documentation",
+          "url": "https://googleapis.github.io/python-genai/"
+        },
+        {
+          "title": "Gradio",
+          "url": "https://www.gradio.app/docs"
+        }
+      ]
+    },
+    {
+      "title": "مراجع توافق إصدارات SDK",
+      "problem": "قد يتعطل مشروع عند ترقية SDK أو الحد الأدنى من Python.",
+      "approach": "أداة تقرأ pyproject.toml وlockfile وتقارنها بمتطلبات الإصدار وملاحظات التغيير.",
+      "stack": "Python / tomllib / packaging / JSON",
+      "steps": [
+        "قراءة نسخة google-genai من lockfile.",
+        "استخراج Python requirement من المشروع.",
+        "مقارنة القيود ببيانات الإصدار الرسمية.",
+        "إصدار تقرير ترقية مع تحذيرات لا تعدّل الملفات تلقائيًا."
+      ],
+      "metric": "دقة اكتشاف تعارضات الإصدارات في مجموعة مشاريع اختبارية.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد تكون قيود الإصدارات غير مباشرة أو تأتي من حزم إضافية؛ التقرير يجب أن يوضح عدم اليقين.",
+      "sources": [
+        {
+          "title": "Google Gen AI Python SDK — pyproject.toml",
+          "url": "https://github.com/googleapis/python-genai/blob/main/pyproject.toml"
+        },
+        {
+          "title": "Python packaging — Version specifiers",
+          "url": "https://packaging.python.org/en/latest/specifications/version-specifiers/"
+        }
+      ]
+    },
+    {
+      "title": "سجل طلبات محمي للمشاريع التعليمية",
+      "problem": "تحتاج الفرق معرفة الأعطال والمدة دون الاحتفاظ بمحتوى المستخدم.",
+      "approach": "سجل محلي محدود يحفظ request id والنموذج والمدة وحالة الخطأ فقط مع تنقيح الأسرار.",
+      "stack": "Python / SQLite / logging / google-genai",
+      "steps": [
+        "تعريف مخطط لا يحتوي نص prompts أو responses.",
+        "إضافة request id ووقت البدء والانتهاء.",
+        "تنقيح المفاتيح والترويسات الحساسة.",
+        "إضافة مدة احتفاظ قصيرة وخيار حذف السجل.",
+        "اختبار السجل بعينات وهمية."
+      ],
+      "metric": "صفر أسرار أو نصوص محادثات في سجلات الاختبار.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد تكشف رسائل الخطأ معلومات حساسة؛ يلزم تنقيحها ومراجعة الوصول للسجل.",
+      "sources": [
+        {
+          "title": "Google Gen AI Python SDK — Documentation",
+          "url": "https://googleapis.github.io/python-genai/"
+        },
+        {
+          "title": "Python logging",
+          "url": "https://docs.python.org/3/library/logging.html"
+        }
+      ]
+    }
+  ],
+  "developerHandoff": {
+    "statusBadge": "بحث مكتبي — غير منشور",
+    "showOnSite": false,
+    "displaySections": [
+      "overview",
+      "requirements",
+      "quickStart",
+      "costs",
+      "localVsCloud",
+      "alternatives",
+      "improvements",
+      "spinoffs",
+      "metrics",
+      "license",
+      "sources"
+    ],
+    "metricsMustShowMeasuredAt": true,
+    "neverClaimTested": true,
+    "ifLaterInFeed": "اربطه بالمعرف والرابط الأصليين فقط؛ لا تنشئ هوية بديلة بالعنوان.",
+    "noCodeOrDesignChangesRequested": true
+  }
+}
