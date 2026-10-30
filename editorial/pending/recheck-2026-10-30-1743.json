@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "auditedAt": "2026-10-30T17:43:43+03:00",
+  "baseMainSha": "a1402d35ecbe582e6884e366e7bf6e1ca26a688f",
+  "incomingFiles": 55,
+  "incomingRows": 538,
+  "currentFeedItems": 800,
+  "currentEditorialRecords": 577,
+  "classification": {
+    "exactIdAndUrlInCurrentFeedAndEditorial": 298,
+    "alreadyImportedButOutsideCurrentFeed": 237,
+    "notImportedAndOutsideCurrentFeed": 3,
+    "idUrlMismatches": 0,
+    "rowBasedClassification": true,
+    "structuralValidation": {
+      "files": 55,
+      "rows": 538,
+      "validFiles": 55,
+      "errors": 0,
+      "method": "54 files passed equivalent structural audit in prior cycle; latest file rechecked against scripts/editorial.py rules. All 538 rows compared by exact ID and URL."
+    }
+  },
+  "expiryAssessment": "لا توجد تواريخ موحدة كافية لإثبات أن الصفوف التاريخية منقضية؛ صُنفت خارج التغذية الحالية فقط. السجلات الثلاثة غير المستوردة ما تزال خارج feed وeditorial.",
+  "held": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "title": "NVIDIA OpenShell",
+      "seen": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "libraryFile": "editorial/library/nvidia-openshell-dossier-2026-10-30-1146.json",
+      "status": "research-only; no feed item"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "title": "Canva Craft",
+      "seen": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "libraryFile": null,
+      "status": "held; exact feed identity unavailable"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "title": "1Password agent sign-in",
+      "seen": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "libraryFile": null,
+      "status": "held; exact feed identity unavailable"
+    }
+  ],
+  "importDecision": "لم يُعد استيراد التراكم القديم: 535 صفًا مصنفًا كموجود في editorial بالفعل (298 ما زالت في التغذية و237 تاريخية خارجها)، وثلاثة سجلات غير موجودة في التغذية أو editorial. أضيفت 11 مادة جديدة فقط لأنها تطابق IDs وURLs الحالية حرفيًا.",
+  "untouchedFiles": [
+    "site/data/feed.json",
+    "site/data/seen.json"
+  ],
+  "newCycle": {
+    "newsPrepared": 11,
+    "newsAlreadyInEditorial": 0,
+    "newsExactFeedMatches": 11,
+    "projectDossiersResearchOnly": 1
+  }
+}
