@@ -1,0 +1,334 @@
+{
+  "version": 1,
+  "repository": "astral-sh/uv",
+  "url": "https://github.com/astral-sh/uv",
+  "titleAr": "uv — مدير سريع لمشاريع Python والحزم والبيئات",
+  "summaryAr": "أداة سطر أوامر مفتوحة المصدر مكتوبة بلغة Rust لإدارة إصدارات Python، والاعتماديات، والبيئات الافتراضية، وملفات القفل، ومساحات العمل، وتشغيل الأدوات والبرامج النصية.",
+  "whyItMatters": "يجمع مهامًا كانت موزعة عادة بين pip وvenv وأدوات قفل الاعتماديات وإدارة إصدارات Python. وجود pyproject.toml وuv.lock وبيئة قابلة لإعادة الإنشاء يجعل إعداد مشاريع الدراسة والبحث وفرق التطوير أكثر اتساقًا. هذه مراجعة توثيقية وليست تجربة أداء مستقلة.",
+  "audience": "مطور Python، وطلاب الذكاء الاصطناعي وعلوم البيانات، وفرق التطوير، ومشغلو CI.",
+  "overview": "uv مدير حزم ومشاريع Python يعمل من الطرفية. يوفر إنشاء المشاريع، وإضافة الاعتماديات، وحل الإصدارات، وإنشاء البيئات الافتراضية ومزامنتها، وملف قفل، ومساحات عمل متعددة الحزم، وإدارة إصدارات Python، وتشغيل أدوات CLI والبرامج النصية. الأداة نفسها مكتوبة بـRust ويمكن تثبيتها دون تثبيت Python أو Rust مسبقًا. لا تحتوي على نموذج ذكاء اصطناعي أو خدمة استضافة؛ هي أداة لإدارة بيئة التطوير.",
+  "requirements": "يدعم macOS وLinux وWindows. يمكن تثبيت الملف التنفيذي عبر المثبّت الرسمي أو pip أو مديري الحزم المدعومين؛ لا يلزم وجود Python أو Rust مسبقًا لتثبيت uv نفسه. يحدد المشروع إصدار Python ومتطلباته في pyproject.toml و/أو .python-version. يحتاج حل الاعتماديات وتنزيلها إلى اتصال بمستودع الحزم في أول مرة؛ ويمكن العمل دون اتصال بالاعتماد على cache سبق تعبئته. قد تحتاج الحزم ذات الامتدادات الأصلية إلى أدوات بناء أو wheels مناسبة لنظام التشغيل.",
+  "quickStart": "1) ثبّت uv من طريقة التثبيت الرسمية. 2) نفّذ: uv init my-project. 3) انتقل إلى المجلد: cd my-project. 4) أضف اعتمادًا: uv add requests. 5) شغّل داخل البيئة المُدارة: uv run python -c \"import requests; print(requests.__version__)\". 6) ثبّت الحل في ملف القفل: uv lock. 7) أعد مزامنة البيئة من القفل: uv sync. راجع دليل المشاريع لمعرفة إدارة الإصدارات ومساحات العمل والبناء والنشر.",
+  "requirementsNotes": "لا يحتاج المشروع إلى خدمة مدفوعة أو مفتاح API. تنزيل الحزم يستهلك اتصال الإنترنت ومساحة التخزين. استخدامه داخل CI يعتمد على تكلفة دقائق تشغيل المنصة وذاكرة التخزين المؤقت الخاصة بها، لا على اشتراك uv.",
+  "costs": "محليًا: الأداة مفتوحة المصدر ومجانية؛ التكلفة العملية هي التنزيلات ومساحة cache وموارد الجهاز. سحابيًا: يمكن تشغيلها على GitHub Actions أو منصات CI أخرى؛ لا توجد رسوم uv منفصلة، لكن دقائق التشغيل والتخزين أو مستودعات الحزم الخاصة قد تكون مدفوعة وفق مزود الخدمة.",
+  "alternatives": "pip مع venv مناسب لمسار بسيط وتقليدي؛ Poetry وPDM وHatch بدائل لإدارة المشاريع والحزم؛ Conda مناسب عند الحاجة إلى إدارة بيئات علمية واعتماديات غير Python. الاختيار يعتمد على سير العمل، ولا يلزم استبدال الأدوات الحالية إذا كانت مستقرة.",
+  "limitations": "uv أداة إدارة بيئة واعتماديات وليست ضمانًا لصحة البرنامج أو أمان كل حزمة. ملف القفل يحسن قابلية إعادة الإنشاء لكنه لا يضمن توافق الحزم الأصلية على كل منصة ولا يمنع الثغرات في الاعتماديات. الانتقال من أدوات أخرى قد يحتاج مراجعة علامات الإصدارات والمصادر الخاصة والاعتماديات ذات الروابط المباشرة. لم أُشغّل المشروع أو أقس أداءه.",
+  "reviewedAt": "2026-10-30T18:11:06+03:00",
+  "basis": "readme",
+  "siteVisibility": "research-only; not published in feed",
+  "feedId": null,
+  "metrics": {
+    "stars": 91400,
+    "forks": 3700,
+    "openIssues": 2400,
+    "watchers": 195,
+    "displayedPrecision": "rounded as displayed on official GitHub repository page (91.4k stars, 3.7k forks, 2.4k open issues)",
+    "measuredAt": "2026-10-30T18:11:06+03:00",
+    "source": "https://github.com/astral-sh/uv"
+  },
+  "activity": {
+    "archived": false,
+    "visibility": "public",
+    "defaultBranch": "main",
+    "commitCountDisplayed": 11284,
+    "latestCommitSha": "58283797f644cf4917591785eb61743e65d53a88",
+    "latestCommitMessage": "Escape literal paths when adding workspace members (#23008)",
+    "latestCommitTimestamp": "not returned by the available GitHub connector response",
+    "measuredAt": "2026-10-30T18:11:06+03:00"
+  },
+  "license": {
+    "status": "verified from upstream files",
+    "options": [
+      "Apache-2.0",
+      "MIT"
+    ],
+    "evidence": [
+      "README license section",
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ],
+    "note": "Dual-licensed; verify obligations for the chosen distribution and dependencies."
+  },
+  "improvements": [
+    {
+      "title": "مدقق قابلية إعادة إنتاج بيئات Python",
+      "problem": "تختلف البيئات بين جهاز الطالب وCI بسبب اختلاف إصدار Python أو عدم تحديث ملف القفل.",
+      "approach": "أداة تقرأ pyproject.toml و.python-version وuv.lock وتنتج تقريرًا عن اختلافات الإصدارات والمنصات قبل الدمج.",
+      "stack": "Python, uv CLI, tomllib, JSON, GitHub Actions",
+      "steps": [
+        "قراءة ملفات تعريف المشروع والقفل.",
+        "استخراج إصدار Python ومصادر الحزم.",
+        "التحقق من وجود ملف القفل واتساقه مع التعريفات.",
+        "تشغيل مزامنة مقيدة في CI عند توفر البيئة.",
+        "إنتاج تقرير فروق قابل للمراجعة."
+      ],
+      "metric": "نسبة المشاريع التي تعيد إنشاء البيئة دون اختلافات غير مقصودة.",
+      "difficulty": "متوسطة (تقدير)",
+      "risks": "قد تختلف wheels والاعتماديات الأصلية بين أنظمة التشغيل؛ لا ينبغي اعتبار تطابق القفل ضمانًا لتطابق وقت التشغيل.",
+      "sources": [
+        {
+          "title": "المستودع الرسمي وREADME",
+          "url": "https://github.com/astral-sh/uv"
+        },
+        {
+          "title": "دليل إدارة المشاريع",
+          "url": "https://docs.astral.sh/uv/guides/projects/"
+        },
+        {
+          "title": "دليل التثبيت الرسمي",
+          "url": "https://docs.astral.sh/uv/getting-started/installation/"
+        }
+      ]
+    },
+    {
+      "title": "مساعد انتقال تدريجي من requirements.txt إلى uv",
+      "problem": "قد يؤدي النقل المباشر إلى فقد علامات الإصدارات أو extras أو الروابط المباشرة.",
+      "approach": "محلل يقرأ ملفات requirements ويقترح pyproject.toml ثم يقارن الحل الجديد بقائمة الحزم السابقة قبل اعتماد النقل.",
+      "stack": "Python, uv, tomllib, Typer, pytest",
+      "steps": [
+        "جمع ملفات requirements وقيود Python.",
+        "تحليل markers وextras والروابط المباشرة.",
+        "توليد مسودة pyproject.toml.",
+        "إنشاء uv.lock في نسخة مؤقتة.",
+        "مقارنة الإصدارات المحلولة مع البيئة الحالية.",
+        "إصدار تقرير بالعناصر التي تحتاج قرارًا بشريًا."
+      ],
+      "metric": "نسبة الاعتماديات التي تنتقل دون تغيير غير مقصود في الإصدار أو العلامات.",
+      "difficulty": "متوسطة إلى مرتفعة (تقدير)",
+      "risks": "بعض ملفات المتطلبات تستخدم خيارات خاصة أو مصادر داخلية يصعب تحويلها آليًا.",
+      "sources": [
+        {
+          "title": "المستودع الرسمي وREADME",
+          "url": "https://github.com/astral-sh/uv"
+        },
+        {
+          "title": "دليل إدارة المشاريع",
+          "url": "https://docs.astral.sh/uv/guides/projects/"
+        },
+        {
+          "title": "دليل التثبيت الرسمي",
+          "url": "https://docs.astral.sh/uv/getting-started/installation/"
+        }
+      ]
+    },
+    {
+      "title": "لوحة قياس cache في بيئات CI",
+      "problem": "قد تتكرر تنزيلات الاعتماديات في كل تشغيل رغم وجود cache، ولا يعرف الفريق أثر ذلك على الزمن والحجم.",
+      "approach": "تجميع مؤشرات زمن الحل والتنزيل وحجم cache لكل نظام تشغيل ومشروع وإظهار اتجاهها عبر الزمن.",
+      "stack": "Python, uv, GitHub Actions, SQLite, JSON",
+      "steps": [
+        "تحديد قياسات أساسية قبل تفعيل cache.",
+        "جمع مدة حل الاعتماديات والتنزيل.",
+        "تسجيل حجم cache ومفتاحه ونظام التشغيل.",
+        "مقارنة تشغيلات cache-hit وcache-miss.",
+        "عرض اتجاه الزمن والحجم دون تخزين أسرار."
+      ],
+      "metric": "الزمن والبايتات التي تم توفيرها لكل تشغيل CI.",
+      "difficulty": "متوسطة (تقدير)",
+      "risks": "قد تكون القياسات غير قابلة للمقارنة إذا تغير runner أو cache key أو مصدر الحزم.",
+      "sources": [
+        {
+          "title": "المستودع الرسمي وREADME",
+          "url": "https://github.com/astral-sh/uv"
+        },
+        {
+          "title": "دليل إدارة المشاريع",
+          "url": "https://docs.astral.sh/uv/guides/projects/"
+        },
+        {
+          "title": "دليل التثبيت الرسمي",
+          "url": "https://docs.astral.sh/uv/getting-started/installation/"
+        }
+      ]
+    },
+    {
+      "title": "سياسة موحدة لمصادر الحزم وملفات القفل",
+      "problem": "قد تختلط مصادر الحزم العامة والخاصة أو تُحدّث الاعتماديات دون مراجعة واضحة.",
+      "approach": "قالب سياسة للمستودعات يحدد الفهارس المسموحة ومراجعة تغييرات uv.lock وفحص الاعتماديات قبل الدمج.",
+      "stack": "uv, Python, GitHub Actions, dependency audit tooling",
+      "steps": [
+        "حصر فهارس الحزم المستخدمة.",
+        "تعريف مصادر موثوقة لكل مشروع.",
+        "إلزام مراجعة تغييرات uv.lock في طلبات الدمج.",
+        "تشغيل فحص اعتماديات آلي.",
+        "توثيق الاستثناءات ومراجعتها دوريًا."
+      ],
+      "metric": "نسبة الاعتماديات التي مصدرها معروف وموافق عليه.",
+      "difficulty": "مرتفعة (تقدير)",
+      "risks": "السياسات الصارمة قد تمنع حزمًا داخلية سليمة أو تؤخر تحديثات أمنية عاجلة.",
+      "sources": [
+        {
+          "title": "المستودع الرسمي وREADME",
+          "url": "https://github.com/astral-sh/uv"
+        },
+        {
+          "title": "دليل إدارة المشاريع",
+          "url": "https://docs.astral.sh/uv/guides/projects/"
+        },
+        {
+          "title": "دليل التثبيت الرسمي",
+          "url": "https://docs.astral.sh/uv/getting-started/installation/"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "قالب مشروع Python أكاديمي جاهز",
+      "problem": "يبدأ الطلاب كل مشروع بإعداد يدوي متكرر وقد ينسون الاختبارات أو تثبيت الإصدارات.",
+      "approach": "مولّد مشروع يجهز pyproject.toml وuv.lock وهيكل src/tests وREADME وCI اختياريًا.",
+      "stack": "Python, uv, pytest, Ruff, GitHub Actions",
+      "steps": [
+        "اختيار نوع المشروع: script أو package أو notebook.",
+        "إنشاء الهيكل الأساسي والملفات.",
+        "تحديد requires-python والاعتماديات.",
+        "توليد ملف القفل.",
+        "إضافة اختبارات ابتدائية وREADME.",
+        "عرض أوامر التشغيل والتحقق."
+      ],
+      "metric": "الوقت اللازم للوصول إلى مشروع قابل للتشغيل والاختبار.",
+      "difficulty": "منخفضة إلى متوسطة (تقدير)",
+      "risks": "القوالب العامة قد لا تناسب احتياجات كل مقرر أو مكتبة علمية.",
+      "sources": [
+        {
+          "title": "المستودع الرسمي وREADME",
+          "url": "https://github.com/astral-sh/uv"
+        },
+        {
+          "title": "دليل إدارة المشاريع",
+          "url": "https://docs.astral.sh/uv/guides/projects/"
+        },
+        {
+          "title": "دليل التثبيت الرسمي",
+          "url": "https://docs.astral.sh/uv/getting-started/installation/"
+        }
+      ]
+    },
+    {
+      "title": "حزمة بيئة Python محلية لمعامل الذكاء الاصطناعي",
+      "problem": "تحتاج المعامل إلى إعداد متكرر للحزم وقد تتأثر باتصال الإنترنت أو اختلاف الأجهزة.",
+      "approach": "ملف تعريف وقفل موحدان مع cache محلي للحزم المستخدمة في تمارين Python وعلوم البيانات.",
+      "stack": "uv, Python, NumPy, pandas, Jupyter",
+      "steps": [
+        "حصر الحزم التعليمية المعتمدة.",
+        "اختيار إصدارات متوافقة مع أجهزة المعمل.",
+        "إنشاء مشروع وملف قفل.",
+        "تعبئة cache من مصدر موثوق.",
+        "اختبار الاستعادة على جهاز نظيف.",
+        "توثيق التحديث الدوري."
+      ],
+      "metric": "نسبة الأجهزة التي تستعيد البيئة نفسها بنجاح.",
+      "difficulty": "متوسطة (تقدير)",
+      "risks": "الحزم الكبيرة أو المعتمدة على GPU قد تحتاج ملفات مختلفة حسب الجهاز.",
+      "sources": [
+        {
+          "title": "المستودع الرسمي وREADME",
+          "url": "https://github.com/astral-sh/uv"
+        },
+        {
+          "title": "دليل إدارة المشاريع",
+          "url": "https://docs.astral.sh/uv/guides/projects/"
+        },
+        {
+          "title": "دليل التثبيت الرسمي",
+          "url": "https://docs.astral.sh/uv/getting-started/installation/"
+        }
+      ]
+    },
+    {
+      "title": "عدة CI صغيرة لمستودعات Python",
+      "problem": "تختلف خطوات التثبيت والاختبار والفحص بين المستودعات الصغيرة.",
+      "approach": "قالب قابل لإعادة الاستخدام يثبت Python عبر uv ثم يزامن القفل ويشغل الاختبارات والفحوص.",
+      "stack": "uv, GitHub Actions, pytest, Ruff",
+      "steps": [
+        "إنشاء قالب workflow اختياري خارج المشروع الأصلي.",
+        "تحديد مصفوفة إصدارات Python.",
+        "تفعيل cache بمفاتيح واضحة.",
+        "تشغيل uv sync من ملف القفل.",
+        "تشغيل الاختبارات والفحوص.",
+        "توثيق طريقة تخصيص القالب."
+      ],
+      "metric": "زمن إعداد CI ونسبة نجاحه عبر مستودعات متعددة.",
+      "difficulty": "متوسطة (تقدير)",
+      "risks": "تغير واجهات CI أو اختلاف متطلبات الحزم بين الأنظمة.",
+      "sources": [
+        {
+          "title": "المستودع الرسمي وREADME",
+          "url": "https://github.com/astral-sh/uv"
+        },
+        {
+          "title": "دليل إدارة المشاريع",
+          "url": "https://docs.astral.sh/uv/guides/projects/"
+        },
+        {
+          "title": "دليل التثبيت الرسمي",
+          "url": "https://docs.astral.sh/uv/getting-started/installation/"
+        }
+      ]
+    },
+    {
+      "title": "دليل عربي تفاعلي لإدارة مشاريع Python",
+      "problem": "تخلط الدروس بين تثبيت Python وإدارة الحزم والبيئات وملفات القفل.",
+      "approach": "مادة تعليمية قصيرة تشرح المفاهيم عبر مشروع واحد يتطور من ملف بسيط إلى package قابل للاختبار.",
+      "stack": "Arabic Markdown, uv, Python, pytest",
+      "steps": [
+        "شرح الفرق بين interpreter وpackage manager وvirtual environment.",
+        "إنشاء مشروع صغير خطوة بخطوة.",
+        "إضافة اعتماديات وقفلها.",
+        "إضافة اختبار وتشغيله عبر uv.",
+        "عرض أخطاء شائعة وكيفية تشخيصها.",
+        "توفير ملفات تدريب قابلة لإعادة الاستخدام."
+      ],
+      "metric": "نسبة المتعلمين الذين يستطيعون إنشاء بيئة قابلة لإعادة الإنشاء دون مساعدة.",
+      "difficulty": "منخفضة إلى متوسطة (تقدير)",
+      "risks": "قد تتغير الأوامر أو السلوك بين الإصدارات؛ يجب ربط الدليل بإصدار موثق.",
+      "sources": [
+        {
+          "title": "المستودع الرسمي وREADME",
+          "url": "https://github.com/astral-sh/uv"
+        },
+        {
+          "title": "دليل إدارة المشاريع",
+          "url": "https://docs.astral.sh/uv/guides/projects/"
+        },
+        {
+          "title": "دليل التثبيت الرسمي",
+          "url": "https://docs.astral.sh/uv/getting-started/installation/"
+        }
+      ]
+    }
+  ],
+  "religious": [],
+  "sources": [
+    {
+      "title": "المستودع الرسمي وREADME",
+      "url": "https://github.com/astral-sh/uv"
+    },
+    {
+      "title": "التوثيق الرسمي",
+      "url": "https://docs.astral.sh/uv/"
+    },
+    {
+      "title": "دليل إدارة المشاريع",
+      "url": "https://docs.astral.sh/uv/guides/projects/"
+    },
+    {
+      "title": "دليل التثبيت الرسمي",
+      "url": "https://docs.astral.sh/uv/getting-started/installation/"
+    },
+    {
+      "title": "بنية المشروع وملف القفل",
+      "url": "https://docs.astral.sh/uv/concepts/projects/layout/"
+    },
+    {
+      "title": "ترخيص Apache-2.0",
+      "url": "https://github.com/astral-sh/uv/blob/main/LICENSE-APACHE"
+    },
+    {
+      "title": "ترخيص MIT",
+      "url": "https://github.com/astral-sh/uv/blob/main/LICENSE-MIT"
+    }
+  ],
+  "testStatus": "not_tested",
+  "testEvidence": "لم يتم تثبيت uv أو تشغيل أمثلته أو قياس أدائه؛ تمت مراجعة README والتوثيق وملفي الترخيص وبيانات المستودع فقط."
+}
