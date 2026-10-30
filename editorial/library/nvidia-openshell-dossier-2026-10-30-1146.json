@@ -1,0 +1,279 @@
+{
+  "version": 1,
+  "repository": "NVIDIA/OpenShell",
+  "url": "https://github.com/NVIDIA/OpenShell",
+  "titleAr": "NVIDIA OpenShell — بيئة تشغيل معزولة لوكلاء الذكاء الاصطناعي",
+  "summaryAr": "مشروع مفتوح المصدر من NVIDIA لتشغيل الوكلاء داخل بيئات معزولة، مع سياسات للملفات والشبكة والعمليات وإدارة بيانات اعتماد مزودي النماذج.",
+  "whyItMatters": "يساعد على تقليل الصلاحيات التي يحصل عليها الوكيل وفصل بيانات الاعتماد عن عملية الوكيل، لكنه ليس ضمانًا مطلقًا للأمان.",
+  "audience": "مطورو الوكلاء، فرق المنصات والأمن، ومشغلو بيئات التطوير.",
+  "overview": "OpenShell طبقة تشغيل وإدارة وليست نموذجًا لغويًا. يوفر CLI وGateway وSandbox Runtime ويحوّل سياسة YAML إلى حدود للملفات والمستخدم والشبكة. الاتصالات الصادرة من sandbox مرفوضة افتراضيًا ما لم تسمح بها قاعدة. تحتفظ provider profiles ببيانات الاعتماد خارج عملية الوكيل. يدعم Docker وPodman وMicroVM، وله مسار Kubernetes يعتمد على Agent Sandbox وNetworkPolicy.",
+  "requirements": "Debian/Ubuntu x86_64 وARM64، وmacOS Apple Silicon عبر Docker Desktop؛ Windows عبر WSL2 تجريبي. يتطلب Docker Engine/Desktop 28+ أو Podman 5.x مع cgroups v2، أو افتراضية مضيف لمسار MicroVM. Kubernetes يحتاج 1.29+ وHelm 3 وAgent Sandbox controller/CRDs وCNI يفرض NetworkPolicy فعليًا. بناء Rust من المصدر يتطلب Rust 1.94، وPython SDK يتطلب Python 3.11+. الترخيص Apache-2.0؛ البرنامج بلا رسوم ترخيص، لكن موارد الجهاز/cluster واستدعاءات مزود النموذج السحابي تحاسب منفصلة.",
+  "quickStart": "اختر إصدار Stable ونظامًا مدعومًا. راجع install.sh وتحقق من checksums المنشورة قبل التثبيت. بعد تثبيت CLI والبوابة نفّذ openshell status. استورد provider profile مناسبًا وخزن المفتاح في مخزن بيانات الاعتماد، لا في prompt أو صورة الحاوية. اختر صورة sandbox وسياسة ملفات وشبكة ضيقة، ثم شغّل مهمة غير حساسة وراجع السياسة الفعالة وسجل القرارات ومحاولات الوصول المرفوضة.",
+  "limitations": "لم يتم تثبيت OpenShell أو تشغيل sandbox أو تنفيذ اختبارات Rust/Python/E2E؛ لا توجد testEvidence تشغيلية. المشروع Alpha وفق pyproject. دعم Windows تجريبي، ونجاح Kubernetes يعتمد على CNI يفرض NetworkPolicy. العزل يقلل مساحة الوصول ولا يثبت انعدام المخاطر.",
+  "nextSteps": [
+    "راجع Support Matrix واختر Runtime مدعومًا.",
+    "ابدأ بتجربة محلية لا تحتوي أسرارًا أو ملفات شخصية.",
+    "قارن السياسة الأساسية بالسياسة الفعالة بعد إرفاق provider.",
+    "اختبر حالات السماح والمنع وسجلها."
+  ],
+  "reviewedAt": "2026-10-30T11:46:47+03:00",
+  "basis": "readme",
+  "sources": [
+    {
+      "title": "README",
+      "url": "https://github.com/NVIDIA/OpenShell/blob/main/README.md"
+    },
+    {
+      "title": "LICENSE",
+      "url": "https://github.com/NVIDIA/OpenShell/blob/main/LICENSE"
+    },
+    {
+      "title": "Support Matrix",
+      "url": "https://docs.nvidia.com/openshell/latest/about/support-matrix"
+    },
+    {
+      "title": "Installation",
+      "url": "https://docs.nvidia.com/openshell/latest/about/installation"
+    },
+    {
+      "title": "First Agent",
+      "url": "https://docs.nvidia.com/openshell/latest/about/run-your-first-agent"
+    },
+    {
+      "title": "Policies",
+      "url": "https://docs.nvidia.com/openshell/latest/how-it-works/policies/overview"
+    },
+    {
+      "title": "Providers",
+      "url": "https://docs.nvidia.com/openshell/latest/how-it-works/providers/overview"
+    },
+    {
+      "title": "Kubernetes Setup",
+      "url": "https://docs.nvidia.com/openshell/latest/kubernetes/setup"
+    },
+    {
+      "title": "TESTING.md",
+      "url": "https://github.com/NVIDIA/OpenShell/blob/main/TESTING.md"
+    },
+    {
+      "title": "Cargo.toml",
+      "url": "https://github.com/NVIDIA/OpenShell/blob/main/Cargo.toml"
+    },
+    {
+      "title": "pyproject.toml",
+      "url": "https://github.com/NVIDIA/OpenShell/blob/main/pyproject.toml"
+    }
+  ],
+  "improvements": [
+    {
+      "title": "مصفوفة توافق قابلة لإعادة الإنتاج لحدود العزل",
+      "problem": "نجاح اختبار على Runtime واحد لا يثبت تماثل سلوك الملفات والشبكة عبر Docker وPodman وMicroVM وKubernetes.",
+      "approach": "توحيد سيناريوهات سماح/منع ثابتة وتسجيل نتيجة كل Runtime وإصداره.",
+      "stack": "Rust / Python / Docker / Podman / MicroVM / Kubernetes / pytest",
+      "steps": [
+        "حدد مجموعة طلبات ملفات وشبكة غير حساسة.",
+        "ثبت صور sandbox وإصدارات runtimes.",
+        "شغّل الحالات نفسها على كل Runtime مدعوم.",
+        "سجل السماح والمنع والسبب دون أسرار.",
+        "انشر جدول توافق يوضح الحالات غير المغطاة."
+      ],
+      "metric": "نسبة حالات الحدود ذات النتائج الموثقة والمتكررة لكل Runtime.",
+      "difficulty": "مرتفعة — تقدير بحثي.",
+      "risks": "اختلاف الأنظمة وCNI قد يجعل المقارنة غير متجانسة؛ لا تصف اختبارًا محدودًا بأنه ضمان شامل.",
+      "sources": [
+        {
+          "title": "OpenShell Support Matrix",
+          "url": "https://docs.nvidia.com/openshell/latest/about/support-matrix"
+        },
+        {
+          "title": "OpenShell TESTING.md",
+          "url": "https://github.com/NVIDIA/OpenShell/blob/main/TESTING.md"
+        }
+      ]
+    },
+    {
+      "title": "تفسير قرار السياسة لكل طلب محجوب",
+      "problem": "يحتاج المشغل ربط الرفض بالقاعدة ومصدرها دون فتح سجلات متفرقة.",
+      "approach": "إضافة عرض تشخيصي اختياري يوضح نوع الطلب والبرنامج والوجهة وقاعدة المنع مع تنقيح القيم الحساسة.",
+      "stack": "Rust / tracing / policy prover / JSONL",
+      "steps": [
+        "راجع سجلات الرفض الحالية لتجنب تكرار ميزة موجودة.",
+        "حدد مخطط حدث لا يحتوي مفاتيح أو محتوى المستخدم.",
+        "اربط الحدث بمعرف sandbox ومصدر السياسة.",
+        "أضف أمرًا يشرح الحدث محليًا.",
+        "اختبر عدم كشف credentials أو محتوى الملفات."
+      ],
+      "metric": "نسبة حالات الرفض القابلة للتفسير من سجل واحد دون أسرار.",
+      "difficulty": "متوسطة إلى مرتفعة — تقدير بحثي.",
+      "risks": "زيادة حجم السجلات أو تسريب metadata؛ يلزم ضبط الاحتفاظ والتنقيح.",
+      "sources": [
+        {
+          "title": "OpenShell Sandbox Policies",
+          "url": "https://docs.nvidia.com/openshell/latest/how-it-works/policies/overview"
+        },
+        {
+          "title": "OpenShell Providers",
+          "url": "https://docs.nvidia.com/openshell/latest/how-it-works/providers/overview"
+        }
+      ]
+    },
+    {
+      "title": "ميزانيات موارد لكل جلسة وكيل",
+      "problem": "قد تستمر جلسة وكيل أو تستهلك CPU/RAM/وقتًا أكثر من المتوقع رغم تقييد الملفات والشبكة.",
+      "approach": "توحيد عرض حدود الموارد وإضافة تحذير أو إيقاف اختياري عند تجاوز ميزانية يحددها المشغل.",
+      "stack": "Rust / Docker / Podman / Kubernetes ResourceQuota / Prometheus",
+      "steps": [
+        "جرد حدود الموارد المتاحة في كل Runtime.",
+        "حدد ميزانية للمدة والذاكرة والمعالج.",
+        "أضف أحداث تحذير وإيقاف قابلة للمراجعة.",
+        "اختبر السلوك عند الحدود وإعادة التشغيل.",
+        "وثق اختلاف الدعم بين runtimes."
+      ],
+      "metric": "نسبة الجلسات ضمن الميزانية وعدد الإيقافات الخاطئة.",
+      "difficulty": "مرتفعة — تقدير بحثي.",
+      "risks": "قد تقطع الحدود مهامًا صحيحة أو تختلف دلالتها بين الأنظمة.",
+      "sources": [
+        {
+          "title": "OpenShell Support Matrix",
+          "url": "https://docs.nvidia.com/openshell/latest/about/support-matrix"
+        },
+        {
+          "title": "Kubernetes Resource Management",
+          "url": "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "محرر مرئي عربي لسياسات OpenShell",
+      "problem": "قد تكون YAML وسياسات الشبكة صعبة على المطورين الجدد.",
+      "approach": "واجهة محلية تقرأ schema الرسمي وتعرض الملفات والوجهات المسموحة ثم تصدر YAML بعد التحقق.",
+      "stack": "TypeScript / React / YAML schema",
+      "steps": [
+        "اقرأ schema الرسمي وحدد الحقول.",
+        "اعرض filesystem وprocess وnetwork policies.",
+        "أضف تحققًا محليًا قبل التصدير.",
+        "اعرض diff بين السياسة الأساسية والفعالة.",
+        "اختبر ملفات صحيحة وخاطئة دون بوابة حقيقية."
+      ],
+      "metric": "نسبة ملفات السياسات التي تجتاز schema validation.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد تخفي الواجهة تفاصيل مهمة؛ أبقِ YAML والتحذيرات متاحة.",
+      "sources": [
+        {
+          "title": "OpenShell Policy Schema",
+          "url": "https://docs.nvidia.com/openshell/latest/how-it-works/policies/schema"
+        },
+        {
+          "title": "OpenShell Manage Policies",
+          "url": "https://docs.nvidia.com/openshell/latest/how-it-works/policies/manage-policies"
+        }
+      ]
+    },
+    {
+      "title": "مختبر قياس عزل وكلاء البرمجة محليًا",
+      "problem": "يصعب مقارنة ما يستطيع الوكيل الوصول إليه قبل وبعد تقييد السياسة.",
+      "approach": "مهام غير حساسة داخل sandbox مع ملفات وهمية ووجهات اختبار ونتائج سماح/منع واضحة.",
+      "stack": "Python / OpenShell / Docker / pytest / JSONL",
+      "steps": [
+        "أنشئ صورة لا تحتوي أسرارًا أو ملفات شخصية.",
+        "جهز مهام قراءة وكتابة واتصال وهمية.",
+        "شغل كل مهمة بسياسة ضيقة.",
+        "سجل النتيجة والسبب دون محتوى حساس.",
+        "اعرض تقرير مقارنة لأثر كل قاعدة."
+      ],
+      "metric": "عدد سيناريوهات الحدود القابلة لإعادة التشغيل ووضوح أسبابها.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "المختبر لا يمثل كل الهجمات الواقعية؛ يجب توضيح حدوده.",
+      "sources": [
+        {
+          "title": "OpenShell Run Your First Agent",
+          "url": "https://docs.nvidia.com/openshell/latest/about/run-your-first-agent"
+        },
+        {
+          "title": "OpenShell Sandbox Policies",
+          "url": "https://docs.nvidia.com/openshell/latest/how-it-works/policies/overview"
+        }
+      ]
+    },
+    {
+      "title": "صور تعليمية لوكلاء Python دون أسرار",
+      "problem": "تعلم الوكلاء يحتاج بيئة لا تمنح وصولًا تلقائيًا إلى ملفات الجهاز أو مفاتيح الخدمات.",
+      "approach": "صور sandbox تعليمية فيها Python وأدوات محلية وبيانات وهمية وسياسة شبكة مغلقة افتراضيًا.",
+      "stack": "Python / Docker / OpenShell / pytest / Jupyter",
+      "steps": [
+        "حدد تمارين لا تحتاج اتصالًا خارجيًا.",
+        "أنشئ صورًا صغيرة مثبتة الإصدارات.",
+        "اقصر سياسة الملفات على مجلد التمرين.",
+        "عطل الشبكة أو اسمح بخدمة محلية محددة.",
+        "اختبر عدم الوصول لمسارات خارج التمرين."
+      ],
+      "metric": "نسبة التمارين التي تعمل دون أسرار أو صلاحيات مضيف إضافية.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد تحتاج بعض الحزم تنزيلًا؛ افصل تجهيز الصورة عن تشغيل الوكيل.",
+      "sources": [
+        {
+          "title": "OpenShell Installation",
+          "url": "https://docs.nvidia.com/openshell/latest/about/installation"
+        },
+        {
+          "title": "OpenShell Support Matrix",
+          "url": "https://docs.nvidia.com/openshell/latest/about/support-matrix"
+        }
+      ]
+    }
+  ],
+  "religious": [],
+  "alternatives": [
+    {
+      "name": "Docker/Podman بإعداد يدوي",
+      "tradeoff": "يتطلب تركيب سياسات الملفات والشبكة وإدارة بيانات الاعتماد يدويًا.",
+      "sources": [
+        {
+          "title": "Docker Engine",
+          "url": "https://github.com/moby/moby"
+        },
+        {
+          "title": "Podman",
+          "url": "https://github.com/containers/podman"
+        }
+      ]
+    },
+    {
+      "name": "Kubernetes Agent Sandbox",
+      "tradeoff": "يحتاج CNI يفرض NetworkPolicy فعليًا.",
+      "sources": [
+        {
+          "title": "Agent Sandbox",
+          "url": "https://github.com/kubernetes-sigs/agent-sandbox"
+        },
+        {
+          "title": "Kubernetes NetworkPolicy",
+          "url": "https://kubernetes.io/docs/concepts/services-networking/network-policies/"
+        }
+      ]
+    }
+  ],
+  "deploymentModes": {
+    "local": "Gateway محلي مع Docker/Podman أو MicroVM؛ لا رسوم ترخيص، لكن موارد الجهاز واستهلاك النموذج منفصلان.",
+    "cloud": "Kubernetes أو بنية سحابية لها كلفة cluster والتخزين والشبكة؛ API model يحاسب حسب المزود."
+  },
+  "researchOnly": true,
+  "published": false,
+  "relatedIncomingId": "940ec4695c1e241c2f",
+  "feedId": null,
+  "displayRequirements": "اعرض شارة «بحث فقط — غير منشور»، تاريخ القياس والترخيص والأنظمة المدعومة والتكلفة المحلية/السحابية والبدائل والقيود؛ لا تنشئ feed ID أو زر تشغيل/نشر.",
+  "metricSnapshot": {
+    "stars": 20718,
+    "forks": 2030,
+    "openIssues": 588,
+    "license": "Apache-2.0",
+    "archived": false,
+    "lastPushedAt": "2026-10-30T07:13:12Z",
+    "lastUpdatedAt": "2026-10-30T08:38:34Z",
+    "measuredAt": "2026-10-30T11:46:47+03:00",
+    "source": "https://api.github.com/repos/NVIDIA/OpenShell"
+  },
+  "runtimeValidation": "لم يتم تشغيل المشروع أو اختبار Runtime."
+}

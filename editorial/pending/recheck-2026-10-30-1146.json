@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-30T11:46:47+03:00",
+  "baseMainSha": "d81de27c6472bedc467386a37f2cbe2b988ecfd4",
+  "scope": {
+    "filesBefore": 53,
+    "rowsBefore": 531,
+    "inventoryReference": "editorial/pending/recheck-2026-10-30-0839.json",
+    "comparison": "مطابقة حرفية لكل id وurl مع feed.json وeditorial.json؛ لا إنشاء هويات من العناوين."
+  },
+  "summary": {
+    "incomingRows": 531,
+    "alreadyImportedExact": 528,
+    "activeFeedExact": 305,
+    "historicalEditorialExact": 223,
+    "urlMismatches": 0,
+    "unmatched": 3,
+    "confirmedExpired": 0,
+    "needsCorrection": 0,
+    "eligibleForImport": 0,
+    "seenMatchesForSpecialCases": 3,
+    "structurallyValidFiles": 53,
+    "structurallyInvalidFiles": 0
+  },
+  "classification": {
+    "imported": "528 صفًا لها سجل editorial بنفس id وurl؛ 305 ما زالت في feed و223 تاريخية محفوظة.",
+    "unmatched": "3 صفوف خارج feed وeditorial، وجميعها في seen.json الحالي.",
+    "mismatched": "لا اختلافات URL تحت المعرف نفسه.",
+    "expired": "لا دليل كافٍ لتصنيف أي منها منقضيًا بالعمر؛ خبرَا 22 أكتوبر عمرهما 8 أيام والمشروع نشط.",
+    "needsCorrection": "لم يظهر خلل بنيوي في 53 ملفًا وفق القواعد المكافئة للمحقق."
+  },
+  "specialRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "title": "NVIDIA OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "incoming": true,
+      "feedExact": false,
+      "editorialExact": false,
+      "seen": true,
+      "decision": "خارج feed؛ أضيف dossier بحثي مستقل غير منشور."
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "title": "Canva Craft",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "incoming": true,
+      "feedExact": false,
+      "editorialExact": false,
+      "seen": true,
+      "sourcePublishedAt": "2026-10-22",
+      "sourceAgeDays": 8,
+      "expiredByAge": false,
+      "decision": "معلّق؛ خارج feed وeditorial لكنه في seen، ولا يُستورد."
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "title": "1Password agent sign-in",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "incoming": true,
+      "feedExact": false,
+      "editorialExact": false,
+      "seen": true,
+      "sourcePublishedAt": "2026-10-22",
+      "sourceAgeDays": 8,
+      "expiredByAge": false,
+      "decision": "معلّق؛ خارج feed وeditorial لكنه في seen، ولا يُستورد."
+    }
+  ],
+  "staleFeedCandidates": [
+    {
+      "id": "6a84c2bc8ae3ccfa6b",
+      "title": "تعاون سعودي-باكستاني في الأمن السيبراني",
+      "feedPublishedAt": "2026-10-29",
+      "originalPublishedAt": "2026-09-01",
+      "decision": "مؤجل؛ تاريخ RSS لا يطابق المقال الأصلي."
+    },
+    {
+      "id": "eca06df8037c884ddc",
+      "title": "مقابلة سدايا حول صياغة معايير الذكاء الاصطناعي",
+      "feedPublishedAt": "2026-10-29",
+      "originalPublishedAt": "2026-09-13",
+      "decision": "مؤجل؛ تاريخ RSS لا يطابق المقال الأصلي."
+    }
+  ],
+  "newCycle": {
+    "file": "editorial/incoming/nabdh-editorial-2026-10-30-1146.json",
+    "rows": 6,
+    "newIds": 6,
+    "refreshedExistingIds": 0,
+    "ids": [
+      "127c220681f02cbc87",
+      "a3b32976cb6ed88f46",
+      "f0a0ac62b2cdaf97df",
+      "8730dc35da783e3d8b",
+      "2fa2c9ea33362800af",
+      "a888836bd8b4c3e892"
+    ],
+    "structuralValidation": "نجاح تحقق بنيوي مكافئ؛ CLI الرسمي لم يُشغّل."
+  },
+  "currentMainSnapshot": {
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialRecordsBefore": 570,
+    "editorialRecordsAfter": 576,
+    "exactFeedMatchesBefore": 343,
+    "exactFeedMatchesAfter": 349,
+    "newsExactMatchesBefore": 244,
+    "newsExactMatchesAfter": 250,
+    "projectExactMatches": 99,
+    "newsWithoutExactEditorialBefore": 456,
+    "newsWithoutExactEditorialAfter": 450,
+    "projectsWithoutExactEditorial": 1
+  },
+  "statusSnapshot": {
+    "state": "ok",
+    "collected": 316,
+    "lastAttemptAt": "2026-10-30T06:15:26Z",
+    "emptySources": [
+      "أبحاث الذكاء الاصطناعي",
+      "أبحاث تعلّم الآلة"
+    ],
+    "errorSources": []
+  },
+  "projectResearch": {
+    "repository": "NVIDIA/OpenShell",
+    "dossierPath": "editorial/library/nvidia-openshell-dossier-2026-10-30-1146.json",
+    "published": false,
+    "feedMatch": false,
+    "relatedIncomingId": "940ec4695c1e241c2f",
+    "metrics": {
+      "stars": 20718,
+      "forks": 2030,
+      "openIssues": 588,
+      "license": "Apache-2.0",
+      "archived": false,
+      "measuredAt": "2026-10-30T11:46:47+03:00"
+    }
+  },
+  "projectHold": {
+    "count": 1,
+    "reason": "بقي عنصر مشروع واحد دون إثراء تشغيلي لحين استكمال مراجعة توثيقه وترخيصه."
+  },
+  "notes": [
+    "التقرير السابق عند 08:39 سجل seen=false؛ الفحص الحالي وجد السجلات الثلاثة في seen.json.",
+    "لا توجد سجلات قديمة مؤهلة للاستيراد؛ كل غير مطابق يفتقد عنصرًا نشطًا مطابقًا في feed.",
+    "لا تغيير في feed.json أو seen.json أو status.json أو شيفرة الموقع أو التصميم أو workflows."
+  ]
+}
