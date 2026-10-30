@@ -1,0 +1,441 @@
+{
+  "version": 1,
+  "visibility": "research-only — غير منشور في الموقع",
+  "project": {
+    "name": "Pydantic AI",
+    "repository": "pydantic/pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai",
+    "officialWebsite": "https://pydantic.dev/docs/ai/",
+    "inCurrentFeed": false,
+    "feedId": null,
+    "measuredAt": "2026-10-30T14:42:19+03:00",
+    "metrics": {
+      "stars": 20955,
+      "forks": 3067,
+      "openIssues": 1630,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "language": "Python",
+      "defaultBranch": "main",
+      "pushedAt": "2026-10-30T11:35:30Z",
+      "updatedAt": "2026-10-30T10:57:28Z",
+      "sourceApiUrl": "https://api.github.com/repos/pydantic/pydantic-ai"
+    },
+    "licenseEvidence": "قرأت ملف LICENSE الرسمي؛ MIT، وتطابق مع قيمة SPDX في GitHub API.",
+    "activityStatus": "active_recent_push"
+  },
+  "overview": "حزمة SDK لـ Python لبناء وكلاء ذات واجهات ومخرجات typed. يربط Agent بين التعليمات والأدوات والاعتماديات ونوع المخرج، ويوفر تكاملات لمزودين متعددين وMCP والتقييمات. هو إطار لبناء التطبيق وليس نموذجًا لغويًا أو خدمة استضافة للنموذج.",
+  "requirements": "يتطلب Python 3.11 أو أحدث وفق دليل التثبيت. يمكن التثبيت عبر pip أو uv، ثم اختيار مزود نموذج ومكتباته الاختيارية. للتشغيل المحلي يدعم توصيل Ollama محليًا؛ أما مزود النموذج السحابي فيحتاج مفتاح API وتكلفة استخدام حسب المزود. توصي وثائق الاختبار باستخدام pytest وTestModel أو FunctionModel لمنع استدعاءات نموذج حقيقية أثناء اختبارات الوحدة.",
+  "quickStart": "أنشئ بيئة افتراضية على Python 3.11+ وثبّت pydantic-ai عبر pip أو uv. عرّف Agent مع مزود تختاره، وأضف أداة عبر @agent.tool مع type hints ووصف واضح، وحدد output_type بمخطط Pydantic، ثم شغّل تجربة محدودة. للتجربة المحلية اقرأ دليل Ollama واضبط endpoint محليًا. هذا مسار بدء موثق، ولم يُنفذ في هذه المراجعة.",
+  "costs": {
+    "core": "المكتبة مفتوحة المصدر بترخيص MIT ولا تفرض رسوم ترخيص على استخدامها.",
+    "cloud": "تكلفة الاستدلال ورسوم الطلبات تعتمد على مزود النموذج والطراز وحجم الاستخدام؛ مفاتيح API والخدمات الاختيارية لها شروطها وأسعارها الخاصة.",
+    "local": "Ollama محلي يمكنه تجنب رسوم API لكل طلب، لكن يحتاج موارد الجهاز وتخزين النماذج والطاقة، وقد تكون قدرات النموذج المحلي أقل من بعض الخدمات السحابية.",
+    "observability": "Logfire له مستوى مجاني وفق وثائق التثبيت، وقد تكون للخطط أو الخدمات الإضافية حدود ورسوم منفصلة؛ لم نشترِ أو نفعّل أي خدمة."
+  },
+  "localVsCloud": {
+    "local": "يدعم Ollama عبر خادم محلي أو بعيد. يبقى النموذج وموارده على الجهاز أو الخادم الذي تديره، مع مسؤولية تحديثه وتأمينه.",
+    "cloud": "تتصل بمزود النموذج عبر API؛ أسهل في البدء عادةً لكنه يعتمد على الإنترنت ومفتاح وصول وتكلفة متغيرة.",
+    "note": "لا تتضمن الحزمة أوزان النماذج؛ تثبيت SDK وحده لا يعني أن الاستدلال محلي أو مجاني."
+  },
+  "alternatives": [
+    {
+      "name": "LangGraph",
+      "difference": "ملائم عندما يكون تمثيل تدفق الوكيل كحالة/رسم بياني صريح هو محور التصميم.",
+      "url": "https://github.com/langchain-ai/langgraph"
+    },
+    {
+      "name": "LlamaIndex",
+      "difference": "يركز بقوة على ربط البيانات والاسترجاع وبناء تطبيقات المعرفة.",
+      "url": "https://github.com/run-llama/llama_index"
+    },
+    {
+      "name": "واجهات المزود المباشرة",
+      "difference": "تقلل طبقة التجريد عندما يحتاج التطبيق ميزة خاصة بمزود واحد، لكنها تزيد العمل عند التبديل بين المزودين.",
+      "url": "https://pydantic.dev/docs/ai/models/overview/"
+    }
+  ],
+  "limitations": "Pydantic AI لا يضمن صحة مخرجات النموذج؛ التحقق البنيوي لا يثبت صحة المحتوى. تتفاوت خصائص الأدوات والمخرجات المنظمة بين المزودين، وتتغير واجهاتهم. أدوات الوكيل تحتاج صلاحيات محدودة ومراجعة، وMCP لا يجعل الخادم موثوقًا تلقائيًا. التقييمات لا تختزل جودة الوكيل في رقم واحد.",
+  "improvements": [
+    {
+      "title": "ميزانية استخدام وتكلفة لكل تشغيل",
+      "problem": "يصعب مقارنة تكلفة الوكيل بين مزودين إذا لم توحّد سجلات الاستخدام والاستجابة.",
+      "approach": "سجل بيانات الاستخدام التي يتيحها كل مزود في مخطط موحد، ثم أضف ميزانية وتحذيرًا قبل تجاوز حد يحدده المشغل.",
+      "stack": "Python / Pydantic / SQLite / pytest / provider usage metadata",
+      "steps": [
+        "عرّف سجلًا موحدًا لكل استدعاء مع اسم المزود والطراز دون حفظ المفاتيح.",
+        "اجمع حقول الاستخدام المتاحة من استجابة المزود.",
+        "اربط الأسعار بمصدر مؤرخ وقابل للتحديث، ولا تفترض توافرها لكل مزود.",
+        "أضف حدًا اختياريًا وتحذيرًا قبل إكمال التشغيل.",
+        "اختبر حالات غياب بيانات الاستخدام وتغير الأسعار."
+      ],
+      "metric": "نسبة التشغيلات ذات سجل استخدام مكتمل، وفارق تقدير التكلفة عن الفاتورة الفعلية.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد لا يعيد بعض المزودين بيانات استخدام كاملة، وتتغير الأسعار؛ لا تعرض تقديرًا على أنه فاتورة نهائية.",
+      "sources": [
+        {
+          "title": "المستودع الرسمي وREADME",
+          "url": "https://github.com/pydantic/pydantic-ai"
+        },
+        {
+          "title": "دليل التثبيت الرسمي",
+          "url": "https://pydantic.dev/docs/ai/overview/install/"
+        },
+        {
+          "title": "مفاهيم الوكلاء",
+          "url": "https://pydantic.dev/docs/ai/core-concepts/agent/"
+        }
+      ]
+    },
+    {
+      "title": "صلاحيات دقيقة لأدوات الوكيل مع موافقة بشرية",
+      "problem": "قد يستدعي الوكيل أداة ذات أثر خارجي رغم أن المهمة تحتاج قراءة فقط.",
+      "approach": "ضع طبقة سياسات تصف صلاحيات كل أداة، وتطلب موافقة صريحة قبل الكتابة أو الإرسال أو الحذف.",
+      "stack": "Python / Pydantic / MCP / audit log / pytest",
+      "steps": [
+        "صنّف الأدوات إلى قراءة وكتابة واتصال خارجي.",
+        "أضف مخطط صلاحية لكل أداة ومدخلاتها المسموحة.",
+        "اجعل الأفعال ذات الأثر الخارجي تتطلب موافقة منفصلة.",
+        "سجل القرار والنتيجة دون تخزين الأسرار.",
+        "اختبر رفض الأدوات خارج النطاق."
+      ],
+      "metric": "عدد محاولات الأداة خارج الصلاحية التي تم منعها، مع معدل الرفض الخاطئ.",
+      "difficulty": "مرتفعة — تقدير بحثي.",
+      "risks": "سياسة صارمة قد تعطل مهام سليمة؛ والسجل نفسه يحتاج تنقيحًا حتى لا يكشف بيانات خاصة.",
+      "sources": [
+        {
+          "title": "مفاهيم الوكلاء",
+          "url": "https://pydantic.dev/docs/ai/core-concepts/agent/"
+        },
+        {
+          "title": "أدوات الوكيل",
+          "url": "https://pydantic.dev/docs/ai/tools-toolsets/tools/"
+        },
+        {
+          "title": "اختبار الوكلاء",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/testing.md"
+        }
+      ]
+    },
+    {
+      "title": "مجموعة تقييم عربية قابلة لإعادة الإنتاج",
+      "problem": "قد تبدو إجابات الوكيل سليمة لغويًا بينما تفشل في صحة المعلومة أو الالتزام بالمصدر.",
+      "approach": "أنشئ مجموعة أسئلة عربية مع إجابات مرجعية ومعايير منفصلة للصحة والإسناد وسلامة استدعاء الأدوات.",
+      "stack": "Python / Pydantic Evals / pytest / JSONL",
+      "steps": [
+        "اختر نطاقًا ضيقًا ومصادر موثوقة قابلة للمراجعة.",
+        "اكتب أمثلة نجاح وفشل وحالات لا تكفيها المصادر.",
+        "حدد مقاييس منفصلة للصحة والاستشهاد والامتناع المناسب.",
+        "شغّل التقييم على أكثر من إعداد ومزود.",
+        "احفظ النتائج مع نسخة البيانات وإصدار النموذج."
+      ],
+      "metric": "تغير درجات الصحة والإسناد بين الإصدارات، ومعدل الحالات التي تحتاج مراجعة بشرية.",
+      "difficulty": "متوسطة إلى مرتفعة — تقدير بحثي.",
+      "risks": "قد تنحاز مجموعة صغيرة إلى لهجة أو مجال واحد؛ ومقيّم النموذج قد يخطئ أيضًا.",
+      "sources": [
+        {
+          "title": "اختبار الوكلاء",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/testing.md"
+        },
+        {
+          "title": "Pydantic Evals",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/evals.md"
+        }
+      ]
+    },
+    {
+      "title": "مصفوفة توافق بين النماذج والمزودين",
+      "problem": "اختلاف دعم الأدوات والمخرجات المنظمة والبث يجعل نقل الوكيل بين المزودين غير مضمون.",
+      "approach": "اختبر القدرات الأساسية بعقد موحد وسجل الفروق المعروفة لكل إصدار.",
+      "stack": "Python / Pydantic / pytest / CI",
+      "steps": [
+        "حدد حالات اختبار موحدة للمخرجات المنظمة والأدوات والبث.",
+        "اختر مجموعة صغيرة من المزودين المدعومين رسميًا.",
+        "شغّل الاختبارات دون استدعاءات مدفوعة حيث تسمح النماذج الاختبارية.",
+        "نفّذ فحصًا محدودًا منفصلًا عند الحاجة إلى اختبار تكامل حقيقي.",
+        "انشر مصفوفة بتاريخ قياس وإصدارات واضحة."
+      ],
+      "metric": "نسبة الحالات التي تنجح على كل مزود، وعدد الاختلافات الموثقة.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "تتغير واجهات المزودين وقد تختلف النتيجة باختلاف الطراز وإعداداته.",
+      "sources": [
+        {
+          "title": "دليل التثبيت الرسمي",
+          "url": "https://pydantic.dev/docs/ai/overview/install/"
+        },
+        {
+          "title": "مفاهيم الوكلاء",
+          "url": "https://pydantic.dev/docs/ai/core-concepts/agent/"
+        },
+        {
+          "title": "أدوات الوكيل",
+          "url": "https://pydantic.dev/docs/ai/tools-toolsets/tools/"
+        },
+        {
+          "title": "اختبار الوكلاء",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/testing.md"
+        }
+      ]
+    },
+    {
+      "title": "تتبع مصدر كل إجابة مسترجعة وشروطه",
+      "problem": "قد يعيد وكيل RAG مقطعًا بلا رابط أو ينقل نصًا دون تسجيل ترخيصه.",
+      "approach": "اربط كل مقطع مسترجع بمعرف المصدر ورابطه وبيانات الترخيص، وأظهر الإسناد في المخرج المنظم.",
+      "stack": "Python / Pydantic / RAG connector / SQLite",
+      "steps": [
+        "حدد حقول المصدر والرابط والترخيص وتاريخ الجلب.",
+        "أعد كل أداة استرجاع مقاطع مع مراجع ثابتة.",
+        "ارفض المخرجات التي تحتوي ادعاءات مصدرية بلا مرجع.",
+        "اعرض الاقتباس المسموح والإسناد دون نسخ زائد.",
+        "اختبر الروابط المنتهية وتعارض شروط التراخيص."
+      ],
+      "metric": "نسبة الادعاءات المدعومة برابط مصدر صالح ومعدل المراجع المفقودة.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "الترخيص قد يختلف بين صفحات المصدر ومحتواها؛ يلزم تحقق بشري في الحالات الملتبسة.",
+      "sources": [
+        {
+          "title": "مفاهيم الوكلاء",
+          "url": "https://pydantic.dev/docs/ai/core-concepts/agent/"
+        },
+        {
+          "title": "أدوات الوكيل",
+          "url": "https://pydantic.dev/docs/ai/tools-toolsets/tools/"
+        },
+        {
+          "title": "اختبار الوكلاء",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/testing.md"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "مدرب Python تفاعلي قائم على التلميح",
+      "problem": "المتعلم يحتاج تشخيص خطأه وفهم السبب لا تلقي حل جاهز.",
+      "approach": "وكيل يعرض تلميحات متدرجة، ويطلب من المتعلم تعديل الحل ثم يقيّمه باختبارات صغيرة.",
+      "stack": "Python / Pydantic AI / pytest / sandbox محلي",
+      "steps": [
+        "حدد مهارة واحدة في كل درس.",
+        "اكتب أمثلة صحيحة وخاطئة واختبارات مرجعية.",
+        "اجعل الوكيل يبدأ بتلميح لا بالحل الكامل.",
+        "اعرض سبب فشل الاختبار بعد محاولة المتعلم.",
+        "قِس التحسن على مسائل جديدة لا على حفظ الإجابات."
+      ],
+      "metric": "نسبة إكمال التمرين باستقلالية وعدد التلميحات قبل الحل.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد يعطي الوكيل تلميحًا مضللًا؛ يجب أن تكون الاختبارات المرجعية هي مصدر التحقق.",
+      "sources": [
+        {
+          "title": "مفاهيم الوكلاء",
+          "url": "https://pydantic.dev/docs/ai/core-concepts/agent/"
+        },
+        {
+          "title": "أدوات الوكيل",
+          "url": "https://pydantic.dev/docs/ai/tools-toolsets/tools/"
+        },
+        {
+          "title": "اختبار الوكلاء",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/testing.md"
+        },
+        {
+          "title": "Pydantic Evals",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/evals.md"
+        }
+      ]
+    },
+    {
+      "title": "مساعد بحث تقني عربي موثق",
+      "problem": "تتشتت المصادر التقنية بين التوثيق والأبحاث والإعلانات.",
+      "approach": "وكيل يجمع مصادر محددة ويخرج ملخصًا عربيًا مع فصل الحقائق عن ادعاءات الناشر والتحليل.",
+      "stack": "Python / Pydantic AI / MCP / Pydantic Evals",
+      "steps": [
+        "حدد قائمة مصادر مسموح بها وموضوعًا ضيقًا.",
+        "اجلب الصفحات مع رابط وتاريخ مراجعة.",
+        "اطلب مخرجًا منظمًا يتضمن الادعاء ومصدره وحدوده.",
+        "ارفض أي فقرة لا ترتبط بمصدر.",
+        "راجع عينة بشرية قبل اعتماد التقرير."
+      ],
+      "metric": "نسبة الجمل ذات الإسناد الصحيح ومعدل الأخطاء المصدرية.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد تتعذر قراءة بعض الصفحات أو تكون المصادر متحيزة؛ الملخص لا يغني عن المصدر الأصلي.",
+      "sources": [
+        {
+          "title": "المستودع الرسمي وREADME",
+          "url": "https://github.com/pydantic/pydantic-ai"
+        },
+        {
+          "title": "دليل التثبيت الرسمي",
+          "url": "https://pydantic.dev/docs/ai/overview/install/"
+        },
+        {
+          "title": "مفاهيم الوكلاء",
+          "url": "https://pydantic.dev/docs/ai/core-concepts/agent/"
+        },
+        {
+          "title": "أدوات الوكيل",
+          "url": "https://pydantic.dev/docs/ai/tools-toolsets/tools/"
+        },
+        {
+          "title": "اختبار الوكلاء",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/testing.md"
+        },
+        {
+          "title": "Pydantic Evals",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/evals.md"
+        }
+      ]
+    },
+    {
+      "title": "مساعد توثيق API مع إحالات",
+      "problem": "يصعب العثور على موضع القاعدة في توثيق طويل أو إصدار محدد.",
+      "approach": "وكيل يجيب من ملفات توثيق محلية ويعيد عنوان الصفحة والفقرة أو رقم السطر.",
+      "stack": "Python / Pydantic AI / MCP / local index",
+      "steps": [
+        "استورد مجموعة توثيق ذات ترخيص واضح.",
+        "قسّم الصفحات مع الاحتفاظ بالعناوين والروابط.",
+        "أعد المقاطع المسترجعة مع بيانات موقعها.",
+        "تحقق من أن كل إجابة تستند إلى مقطع فعلي.",
+        "أضف اختبارًا لأسئلة خارج نطاق التوثيق."
+      ],
+      "metric": "دقة الإحالة إلى الصفحة والفقرة ومعدل الإجابات التي تمتنع عند غياب المصدر.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد تتغير الوثائق بين الإصدارات؛ يلزم إظهار رقم الإصدار وتاريخ الفهرسة.",
+      "sources": [
+        {
+          "title": "مفاهيم الوكلاء",
+          "url": "https://pydantic.dev/docs/ai/core-concepts/agent/"
+        },
+        {
+          "title": "أدوات الوكيل",
+          "url": "https://pydantic.dev/docs/ai/tools-toolsets/tools/"
+        },
+        {
+          "title": "اختبار الوكلاء",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/testing.md"
+        }
+      ]
+    },
+    {
+      "title": "مساعد معرفة محلي للملفات",
+      "problem": "قد لا يرغب المستخدم في إرسال مستنداته إلى خدمة نموذج سحابية.",
+      "approach": "وكيل محلي يستخدم Ollama ومجموعة ملفات محلية مع إرجاع روابط إلى أسماء الملفات والمواضع.",
+      "stack": "Python / Pydantic AI / Ollama / SQLite",
+      "steps": [
+        "حدد مجلدًا تجريبيًا غير حساس.",
+        "افهرس الملفات محليًا مع الاحتفاظ بمساراتها.",
+        "صل الوكيل بخادم Ollama محلي.",
+        "اجعل الإجابة تتضمن مواضع الاستشهاد من الملفات.",
+        "اختبر عدم خروج طلبات إلى الشبكة خارج الإعداد المقصود."
+      ],
+      "metric": "نسبة الإجابات المرتبطة بموضع صحيح وزمن الاستجابة واستهلاك الذاكرة.",
+      "difficulty": "متوسطة إلى مرتفعة — تقدير بحثي.",
+      "risks": "قد لا تتوفر ذاكرة أو سرعة كافية؛ ووجود نموذج محلي لا يضمن دقة الإجابات.",
+      "sources": [
+        {
+          "title": "دليل التثبيت الرسمي",
+          "url": "https://pydantic.dev/docs/ai/overview/install/"
+        },
+        {
+          "title": "مفاهيم الوكلاء",
+          "url": "https://pydantic.dev/docs/ai/core-concepts/agent/"
+        },
+        {
+          "title": "أدوات الوكيل",
+          "url": "https://pydantic.dev/docs/ai/tools-toolsets/tools/"
+        },
+        {
+          "title": "اختبار الوكلاء",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/testing.md"
+        },
+        {
+          "title": "Pydantic Evals",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/evals.md"
+        },
+        {
+          "title": "تشغيل Ollama محليًا",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/models/ollama.md"
+        }
+      ]
+    },
+    {
+      "title": "مراجع جودة ملفات CSV وJSON",
+      "problem": "تحتاج البيانات قبل التحليل إلى فحص أنواع وقيم ومشكلات قابلة للتفسير.",
+      "approach": "وكيل يستدعي أدوات تحقق حتمية ويشرح النتائج في تقرير منظم دون تعديل الملف الأصلي.",
+      "stack": "Python / Pydantic / pandas / Pydantic AI",
+      "steps": [
+        "حدد مخطط البيانات المتوقع.",
+        "اكتب فحوصًا حتمية للأنواع والقيم المفقودة والتكرار.",
+        "أعد نتائج الفحص إلى الوكيل عبر أداة قراءة فقط.",
+        "اطلب تقريرًا يربط كل مشكلة بالصف والعمود.",
+        "احتفظ بالملف الأصلي واطلب موافقة قبل أي تحويل."
+      ],
+      "metric": "نسبة المشكلات المكتشفة التي يمكن إعادة إنتاجها وعدد التعديلات الخاطئة.",
+      "difficulty": "منخفضة إلى متوسطة — تقدير بحثي.",
+      "risks": "قد يصنف الوكيل القيم الصحيحة على أنها شاذة؛ قرار التعديل يجب أن يبقى للمستخدم.",
+      "sources": [
+        {
+          "title": "مفاهيم الوكلاء",
+          "url": "https://pydantic.dev/docs/ai/core-concepts/agent/"
+        },
+        {
+          "title": "أدوات الوكيل",
+          "url": "https://pydantic.dev/docs/ai/tools-toolsets/tools/"
+        },
+        {
+          "title": "اختبار الوكلاء",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/testing.md"
+        }
+      ]
+    }
+  ],
+  "religious": [],
+  "developerDisplayRequirements": [
+    "اعرض شارة «بحث فقط — غير منشور» بوضوح.",
+    "لا تنشئ feedId أو رابط بطاقة عامة بديلًا.",
+    "لا تعرض أزرار تشغيل أو نشر من صفحة المكتبة.",
+    "أظهر الترخيص MIT وتاريخ قياس النجوم والفروع والقضايا المفتوحة.",
+    "اعرض Python 3.11+ ومتطلبات مزود النموذج، وافصل تكلفة API عن كلفة التشغيل المحلي.",
+    "اعرض البدائل والقيود، ولا تعرض README badges كاختبارات أجراها نَبض."
+  ],
+  "reviewedAt": "2026-10-30T14:42:19+03:00",
+  "testEvidence": "لم يتم تثبيت المشروع أو تشغيل أمثلة أو اختبارات؛ هذه مراجعة README والتوثيق وLICENSE وبيانات GitHub الرسمية فقط.",
+  "sources": [
+    {
+      "title": "المستودع الرسمي وREADME",
+      "url": "https://github.com/pydantic/pydantic-ai"
+    },
+    {
+      "title": "دليل التثبيت الرسمي",
+      "url": "https://pydantic.dev/docs/ai/overview/install/"
+    },
+    {
+      "title": "مفاهيم الوكلاء",
+      "url": "https://pydantic.dev/docs/ai/core-concepts/agent/"
+    },
+    {
+      "title": "أدوات الوكيل",
+      "url": "https://pydantic.dev/docs/ai/tools-toolsets/tools/"
+    },
+    {
+      "title": "اختبار الوكلاء",
+      "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/testing.md"
+    },
+    {
+      "title": "Pydantic Evals",
+      "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/evals.md"
+    },
+    {
+      "title": "تشغيل Ollama محليًا",
+      "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/models/ollama.md"
+    },
+    {
+      "title": "تكامل MCP",
+      "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/mcp/overview.md"
+    },
+    {
+      "title": "حقن الاعتماديات",
+      "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/dependencies.md"
+    }
+  ]
+}
