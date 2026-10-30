@@ -1,0 +1,225 @@
+{
+  "version": 1,
+  "repository": "Millillion/lasm",
+  "url": "https://github.com/Millillion/lasm",
+  "titleAr": "Lasm: مترجم Lean 4 إلى WebAssembly لتطبيقات الويب والحافة",
+  "reviewedAt": "2026-10-30T08:39:48+03:00",
+  "status": "research-only-not-published",
+  "relatedNewsId": "b5636e2775ac4bb7c9",
+  "overview": "Lasm سلسلة أدوات تترجم برامج Lean 4 مسبقًا إلى WebAssembly وتوفر أهدافًا لـ Node.js وBun وDeno والمتصفح وWASI وبيئات الحافة. يضم المشروع طبقة تكامل JavaScript ومكتبات HTTP وواجهة مستخدم، ويذكر أن براهين Lean تُفحص أثناء البناء. المشروع حديث وصغير نسبيًا؛ لا ينبغي مساواة كثرة الأهداف المعلنة بنضج متساوٍ لكل منصة.",
+  "requirements": "يتطلب مسار البناء Node.js 24 أو أحدث، ويستخدم Lean 4.35.0 الذي تقول الوثائق إن أداة npm تديره تلقائيًا دون تثبيت elan يدويًا. تذكر الوثائق اختبار Bun 1.4.4 وDeno 2.9.6. لخوادم Node توصي الوثائق بذاكرة لا تقل عن 512 MB (و1 GB لحركة فعلية)، وبناء Linux المناسب للمعمارية؛ أما أهداف edge والمتصفح فتعمل في بيئات أحادية الخيط بلا sockets أو processes، ولا تتيح الملفات إلا عبر WASI. بعض أمثلة التكامل تحتاج حزم npm إضافية.",
+  "quickStart": "للتجربة المحلية وفق README وdocs/AI.md: npm create @lasm@latest my-app -- --template hono ثم cd my-app وnpm install ثم npm run dev. للبناء الإنتاجي استخدم npx lasm build Main.lean أو أمر البناء المحدد في قالب المشروع. أهداف Workers وWASI تتطلب اختيار --target المناسب، ثم استخدام CLI الخاص بمزود الاستضافة يدويًا؛ Lasm يبني الملفات ولا ينفذ النشر نيابة عن المطور.",
+  "cost": "الشفرة بترخيص MIT ولا يتطلب المترجم API مدفوعًا للذكاء الاصطناعي. البناء المحلي يستهلك موارد الجهاز وتنزيلات toolchain. تكلفة الاستضافة السحابية منفصلة وتتبع مزود التشغيل الذي تختاره؛ لا تتضمن الوثائق سعرًا موحدًا. حزم npm الخارجية أو خدمات قواعد البيانات قد تفرض تكاليف مستقلة.",
+  "localVsCloud": "يمكن بناء وتشغيل أهداف Node وWASI محليًا، وتجربة بعض أهداف edge باستخدام محاكيات محلية مثل wrangler dev أو Viceroy بحسب المنصة. النشر إلى Cloudflare أو Fastly أو Vercel أو غيرها يتطلب حسابًا وأدوات المزود، وقد يترتب عليه رسوم. أهداف edge ذات قيود وقت التشغيل والذاكرة والملفات تختلف عن خادم Node كامل.",
+  "alternatives": [
+    {
+      "repository": "leanprover/lean4",
+      "url": "https://github.com/leanprover/lean4",
+      "role": "المترجم الأصلي لـ Lean؛ مناسب للبناء والتنفيذ الأصليين، وليس بديلًا مباشرًا لأهداف Lasm متعددة المنصات إلى WebAssembly."
+    },
+    {
+      "repository": "AssemblyScript/assemblyscript",
+      "url": "https://github.com/AssemblyScript/assemblyscript",
+      "role": "مسار TypeScript-like إلى WebAssembly عندما لا تكون براهين Lean أو منظومة Lean مطلوبة."
+    },
+    {
+      "repository": "bytecodealliance/wasmtime",
+      "url": "https://github.com/bytecodealliance/wasmtime",
+      "role": "وقت تشغيل WASI لتشغيل وحدات WebAssembly؛ مكمل أو بديل في طبقة التشغيل، لا مترجم Lean."
+    },
+    {
+      "repository": "rust-lang/rust",
+      "url": "https://github.com/rust-lang/rust",
+      "role": "لغة ومترجم ببيئة WebAssembly ناضجة نسبيًا عندما تكون الأولوية للنظام البيئي Rust بدل Lean."
+    }
+  ],
+  "activity": {
+    "stars": 45,
+    "forks": 3,
+    "openIssues": 1,
+    "archived": false,
+    "createdAt": "2026-09-23T00:00:00Z",
+    "pushedAt": "2026-10-29T01:41:21Z",
+    "updatedAt": "2026-10-30T05:43:50Z",
+    "defaultBranch": "main",
+    "languageReportedByGitHub": "C",
+    "measuredAt": "2026-10-30T08:39:48+03:00",
+    "source": "https://api.github.com/repos/Millillion/lasm"
+  },
+  "license": {
+    "spdx": "MIT",
+    "licenseFileInspected": true,
+    "notes": "LICENSE نص MIT. README يذكر أن القوالب والأمثلة تتضمن MIT-0؛ راجع ترخيص كل مثال واعتماد خارجي قبل إعادة التوزيع."
+  },
+  "improvements": [
+    {
+      "title": "توليد روابط JavaScript موثقة من تعريفات TypeScript",
+      "problem": "تتطلب وثائق JS_BINDINGS كتابة تصريحات @[js] يدويًا، وقد تنحرف أسماء exports أو الأنواع عن الحزم الفعلية.",
+      "approach": "أداة اختيارية تقرأ TypeScript declaration files وتنتج مسودة bindings مع إبقاء المراجعة والاختبار البشريين إلزاميين.",
+      "stack": "Lean 4.35 / Node.js 24+ / TypeScript compiler API / JSON schema",
+      "steps": [
+        "حدد مجموعة صغيرة من صيغ TypeScript المدعومة.",
+        "حلل أسماء exports والأنواع القابلة للتحويل فقط.",
+        "ولّد ملف bindings مع مصدر كل تصريح.",
+        "أضف اختبارات مطابقة على حزم npm صغيرة.",
+        "وثّق الحالات غير المدعومة بدل توليد تصريح تخميني."
+      ],
+      "metric": "نسبة bindings التي تجتاز البناء واختبارات المطابقة دون تعديل يدوي.",
+      "difficulty": "متوسطة — تقدير بحثي، لم يُختبر.",
+      "risks": "أنواع TypeScript المتقدمة وgenerics قد لا تقابل أنواع Lean مباشرة؛ التوليد الخاطئ أخطر من رفض الحالة.",
+      "sources": [
+        {
+          "title": "Lasm JavaScript bindings guide",
+          "url": "https://github.com/Millillion/lasm/blob/main/docs/JS_BINDINGS.md"
+        },
+        {
+          "title": "TypeScript compiler API",
+          "url": "https://github.com/microsoft/TypeScript"
+        }
+      ]
+    },
+    {
+      "title": "مصفوفة توافق قابلة لإعادة الإنتاج لأهداف WebAssembly",
+      "problem": "تعدد أهداف Node وBun وDeno وWorkers وWASI يجعل مقارنة حدود كل هدف ونتائج CI صعبة على المستخدم الجديد.",
+      "approach": "إنشاء أمثلة صغيرة موحدة ونتائج آلية لكل runtime، مع فصل القياسات المقاسة عن الأهداف المخطط لها.",
+      "stack": "Lean / Node.js / Bun / Deno / wasmtime / wrangler / GitHub Actions",
+      "steps": [
+        "اختر أمثلة HTTP وملفات وعمليات غير متاحة على كل هدف.",
+        "ثبت إصدارات runtimes وأدوات البناء.",
+        "شغّل الأمثلة في CI لكل هدف مدعوم.",
+        "انشر جدول نجاح وفشل وقيودًا لكل ميزة.",
+        "أعد القياس عند تغيير Lean أو runtime."
+      ],
+      "metric": "تغطية الأهداف باختبارات ناجحة قابلة لإعادة الإنتاج، مع صفر ادعاءات دعم غير موثقة.",
+      "difficulty": "مرتفعة — تقدير بحثي، لم يُختبر.",
+      "risks": "تكلفة CI وتغير runtimes؛ لا يجوز تحويل نجاح مثال صغير إلى ضمان إنتاجي.",
+      "sources": [
+        {
+          "title": "Lasm edge targets and measurements",
+          "url": "https://github.com/Millillion/lasm/blob/main/docs/EDGE.md"
+        },
+        {
+          "title": "Lasm WASI guide",
+          "url": "https://github.com/Millillion/lasm/blob/main/docs/WASI.md"
+        }
+      ]
+    },
+    {
+      "title": "قوالب تحقق لواجهات API مع أمثلة عربية",
+      "problem": "قد يصعب على مطور الويب فهم أين تفيد براهين Lean عمليًا مقارنة بالاختبارات التقليدية.",
+      "approach": "مثال تعليمي صغير يثبت invariants لمدخلات API ومخزن بيانات نموذجي، ثم يقارن البرهان باختبارات التكامل.",
+      "stack": "Lean 4 / Lasm / Hono / Node.js / Vitest",
+      "steps": [
+        "اختر invariant محدودًا مثل عدم تكرار معرف مورد.",
+        "صغ نموذج Store صغيرًا في Lean.",
+        "اكتب handler يستعمل النموذج وتحقق من proof.",
+        "أضف اختبارات HTTP للمسار الفعلي.",
+        "اشرح الفرق بين برهان النموذج واختبار النظام المتكامل."
+      ],
+      "metric": "عدد invariants الموثقة التي تربط نموذج Lean باختبارات HTTP قابلة للتكرار.",
+      "difficulty": "مرتفعة — تقدير بحثي، لم يُختبر.",
+      "risks": "قد يبالغ القارئ في تعميم البرهان من النموذج إلى runtime؛ يجب توضيح حدود النموذج.",
+      "sources": [
+        {
+          "title": "Lasm Conduit example and proofs",
+          "url": "https://github.com/Millillion/lasm/tree/main/examples/conduit"
+        },
+        {
+          "title": "Lasm AI guidance",
+          "url": "https://github.com/Millillion/lasm/blob/main/docs/AI.md"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "مختبر تفاعلي Lean-to-Wasm للطلاب",
+      "problem": "يصعب رؤية كيف يتحول برنامج Lean صغير إلى ملف WebAssembly وما القيود التي يفرضها runtime.",
+      "approach": "مقرر مصغر يعرض المصدر والبناء وحجم الناتج ونتيجة التشغيل محليًا، مع أمثلة آمنة لا تحتاج حسابًا سحابيًا.",
+      "stack": "Lean / Lasm / Node.js / WebAssembly / static documentation",
+      "steps": [
+        "ابدأ بأمثلة حسابية خالصة.",
+        "أضف مثال HTTP محليًا.",
+        "اعرض حجم Wasm وزمن البدء مع توضيح ظروف القياس.",
+        "قارن Node وWASI وedge من حيث القدرات.",
+        "أضف تمارين تفسير أخطاء البناء دون أسئلة حفظ تقليدية."
+      ],
+      "metric": "إكمال المتعلم لمثالين قابلين للبناء وفهمه لقيود كل هدف.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد تتغير واجهات Lasm بسرعة؛ ثبّت نسخة كل درس وأظهر تاريخها.",
+      "sources": [
+        {
+          "title": "Lasm README",
+          "url": "https://github.com/Millillion/lasm"
+        },
+        {
+          "title": "Lasm WASI quick start",
+          "url": "https://github.com/Millillion/lasm/blob/main/docs/WASI.md"
+        }
+      ]
+    },
+    {
+      "title": "قالب API عربي مع تحقق من invariants",
+      "problem": "يحتاج المتعلم العربي مثالًا يربط API واقعيًا بالتحقق الشكلي دون إخفاء متطلبات التشغيل.",
+      "approach": "قالب تعليمي صغير يشرح بالعربية نموذج البيانات والبرهان وحدود الاختبارات والتشغيل المحلي.",
+      "stack": "Lean 4 / Lasm / Hono / SQLite (اختياري) / Vitest",
+      "steps": [
+        "حدد موردًا بسيطًا وسيناريو CRUD محليًا.",
+        "اكتب نموذج invariants في Lean.",
+        "اربط handlers عبر Lasm.",
+        "أضف اختبارات HTTP وبيانات تجريبية.",
+        "وثّق ما يثبته البرهان وما لا يثبته."
+      ],
+      "metric": "قابلية بناء القالب محليًا واجتياز اختبارات API مع شرح عربي واضح.",
+      "difficulty": "مرتفعة — تقدير بحثي.",
+      "risks": "إضافة قاعدة بيانات قد تشتت الهدف التعليمي؛ ابدأ بذاكرة محلية ثم وسّع لاحقًا.",
+      "sources": [
+        {
+          "title": "Lasm Getting Started",
+          "url": "https://github.com/Millillion/lasm/blob/main/docs/GETTING_STARTED.md"
+        },
+        {
+          "title": "Lasm Conduit proofs",
+          "url": "https://github.com/Millillion/lasm/blob/main/examples/conduit/PROOFS.md"
+        }
+      ]
+    }
+  ],
+  "limitations": "المشروع حديث وصغير (45 نجمة وقت القياس)، ولم أشغّل البناء أو الأمثلة أو اختبارات CI بنفسي. بعض تفاصيل EDGE تصف مراحل prototype وقياسات خاصة ببيئة محددة؛ لا تعممها على كل مزود أو حركة إنتاجية. وثائق المشروع نفسها تنبه إلى قيود أحادية الخيط وغياب sockets/processes في عدة أهداف.",
+  "basis": "readme",
+  "sources": [
+    {
+      "title": "Lasm README",
+      "url": "https://github.com/Millillion/lasm/blob/main/README.md"
+    },
+    {
+      "title": "Lasm LICENSE",
+      "url": "https://github.com/Millillion/lasm/blob/main/LICENSE"
+    },
+    {
+      "title": "Lasm AI guide",
+      "url": "https://github.com/Millillion/lasm/blob/main/docs/AI.md"
+    },
+    {
+      "title": "Lasm Edge guide",
+      "url": "https://github.com/Millillion/lasm/blob/main/docs/EDGE.md"
+    },
+    {
+      "title": "Lasm WASI guide",
+      "url": "https://github.com/Millillion/lasm/blob/main/docs/WASI.md"
+    },
+    {
+      "title": "Lasm JavaScript bindings",
+      "url": "https://github.com/Millillion/lasm/blob/main/docs/JS_BINDINGS.md"
+    },
+    {
+      "title": "Lasm deployment guide",
+      "url": "https://github.com/Millillion/lasm/blob/main/docs/deploy/README.md"
+    },
+    {
+      "title": "Lasm package.json",
+      "url": "https://github.com/Millillion/lasm/blob/main/package.json"
+    }
+  ],
+  "developerIntegrationNotes": "بحث مستقل غير منشور؛ لا تنشئ feed item أو معرفًا بديلًا. إذا أضيفت واجهة مكتبة لاحقًا، اعرض شارة «بحث فقط — غير منشور»، تاريخ قياس المؤشرات، الترخيص، المتطلبات، quickStart، حدود التشغيل المحلي/السحابي، والبدائل. لا تعرضه كخبر/مشروع ظاهر في الموقع ولا تضف زر تشغيل أو نشر تلقائي."
+}
