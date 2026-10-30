@@ -1,0 +1,379 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-30T11:46:47+03:00",
+  "baseMainSha": "d81de27c6472bedc467386a37f2cbe2b988ecfd4",
+  "sitePublished": {
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialRecordsBefore": 570,
+    "editorialRecordsAfter": 576,
+    "exactFeedMatchesBefore": 343,
+    "exactFeedMatchesAfter": 349,
+    "newsExactMatchesBefore": 244,
+    "newsExactMatchesAfter": 250,
+    "projectExactMatches": 99,
+    "newsWithoutExactEditorialBefore": 456,
+    "newsWithoutExactEditorialAfter": 450,
+    "projectsWithoutExactEditorial": 1,
+    "statusJsonState": "ok",
+    "collected": 316,
+    "deploymentState": "awaiting PR checks and independent Pages verification"
+  },
+  "historicalLibrary": {
+    "total": 34,
+    "activeNotArchived": 32,
+    "archived": 2,
+    "spdxDetected": 25,
+    "manualLicenseReviewCount": 9,
+    "existingEntriesCarriedForward": 33,
+    "newEntry": "NVIDIA/OpenShell"
+  },
+  "previousEight": [
+    {
+      "repository": "gradio-app/gradio",
+      "stars": 43928,
+      "forks": 3655,
+      "openIssues": 120,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-30T08:53:58Z",
+      "updatedAt": "2026-10-30T08:18:42Z",
+      "measuredAt": "2026-10-30T11:46:47+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/gradio-app/gradio"
+    },
+    {
+      "repository": "thedotmack/claude-mem",
+      "stars": 105157,
+      "forks": 9266,
+      "openIssues": 122,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-30T03:07:33Z",
+      "updatedAt": "2026-10-30T08:56:24Z",
+      "measuredAt": "2026-10-30T11:46:47+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/thedotmack/claude-mem"
+    },
+    {
+      "repository": "ultralytics/ultralytics",
+      "stars": 62983,
+      "forks": 11937,
+      "openIssues": 79,
+      "license": "AGPL-3.0",
+      "archived": false,
+      "pushedAt": "2026-10-30T08:47:53Z",
+      "updatedAt": "2026-10-30T08:38:02Z",
+      "measuredAt": "2026-10-30T11:46:47+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/ultralytics/ultralytics"
+    },
+    {
+      "repository": "harry0703/MoneyPrinterTurbo",
+      "stars": 136393,
+      "forks": 21712,
+      "openIssues": 79,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-30T03:00:50Z",
+      "updatedAt": "2026-10-30T08:53:34Z",
+      "measuredAt": "2026-10-30T11:46:47+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/harry0703/MoneyPrinterTurbo"
+    },
+    {
+      "repository": "microsoft/AI-For-Beginners",
+      "stars": 70377,
+      "forks": 13682,
+      "openIssues": 28,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-23T23:55:14Z",
+      "updatedAt": "2026-10-30T08:34:05Z",
+      "measuredAt": "2026-10-30T11:46:47+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/microsoft/AI-For-Beginners"
+    },
+    {
+      "repository": "usebruno/bruno",
+      "stars": 47939,
+      "forks": 3056,
+      "openIssues": 1976,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-30T07:42:30Z",
+      "updatedAt": "2026-10-30T08:22:18Z",
+      "measuredAt": "2026-10-30T11:46:47+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/usebruno/bruno"
+    },
+    {
+      "repository": "keras-team/keras",
+      "stars": 64398,
+      "forks": 19809,
+      "openIssues": 273,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-30T03:04:56Z",
+      "updatedAt": "2026-10-30T05:59:33Z",
+      "measuredAt": "2026-10-30T11:46:47+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/keras-team/keras"
+    },
+    {
+      "repository": "k2-fsa/sherpa-onnx",
+      "stars": 15619,
+      "forks": 1829,
+      "openIssues": 633,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-29T12:00:57Z",
+      "updatedAt": "2026-10-30T08:16:35Z",
+      "measuredAt": "2026-10-30T11:46:47+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/k2-fsa/sherpa-onnx"
+    }
+  ],
+  "previousTopThreeSuggestions": [
+    {
+      "title": "مصفوفة ترحيل Python والإصدارات",
+      "problem": "قد يفاجأ المستخدمون بتغير الحد الأدنى لإصدار Python أو اختلاف واجهات beta وv1.",
+      "approach": "إضافة جدول توافق لكل إصدار وأمثلة ترحيل واختبارات تثبيت نظيف على إصدارات Python المدعومة.",
+      "stack": "Python / pytest / tox أو nox / GitHub Actions",
+      "steps": [
+        "جمع تغييرات الحد الأدنى من Python بين الإصدارات.",
+        "بناء بيئات تثبيت نظيف لكل إصدار مدعوم.",
+        "اختبار أمثلة sync وasync على beta وv1.",
+        "نشر جدول توافق وتغييرات كاسرة مع كل إصدار."
+      ],
+      "metric": "نسبة نجاح التثبيت والأمثلة على مصفوفة الإصدارات المعلنة.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد تتكرر تغطية موجودة في CI؛ يجب مراجعة ملفات الاختبار وIssues قبل اقتراح PR.",
+      "sources": [
+        {
+          "title": "Google Gen AI Python SDK — README",
+          "url": "https://github.com/googleapis/python-genai/blob/main/README.md"
+        },
+        {
+          "title": "Google Gen AI Python SDK — pyproject.toml",
+          "url": "https://github.com/googleapis/python-genai/blob/main/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "title": "قياس استخدام دون تسجيل محتوى المحادثة",
+      "problem": "يصعب على الفرق تقدير زمن الاستجابة والاستهلاك دون تسجيل prompts أو بيانات حساسة.",
+      "approach": "إضافة مثال middleware اختياري يسجل model وrequest id والمدة وعدد tokens وحالة retry، مع حجب prompt/response افتراضيًا.",
+      "stack": "Python / logging / OpenTelemetry / google-genai",
+      "steps": [
+        "تحديد الحقول غير الحساسة التي يمكن تسجيلها.",
+        "إضافة مثال wrapper حول استدعاءات العميل.",
+        "حجب المحتوى والحقول السرية افتراضيًا.",
+        "اختبار عدم ظهور المفاتيح أو نصوص المستخدم في السجلات."
+      ],
+      "metric": "نسبة الطلبات التي لها قياس latency واستهلاك دون تسريب للمحتوى في عينة الاختبار.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد يضيف عبئًا على مسار الطلب؛ يلزم اختبار الأداء ومراجعة الخصوصية.",
+      "sources": [
+        {
+          "title": "Google Gen AI Python SDK — Documentation",
+          "url": "https://googleapis.github.io/python-genai/"
+        },
+        {
+          "title": "OpenTelemetry Python",
+          "url": "https://opentelemetry.io/docs/languages/python/"
+        }
+      ]
+    },
+    {
+      "title": "دليل واضح لعزل إعدادات كل طلب",
+      "problem": "قد يخلط المطورون بين إعدادات العميل الافتراضية وترويسات الطلب المفرد.",
+      "approach": "إضافة أمثلة توضح نطاق إعدادات http_options والمهل والترويسات في sync وasync، مع الإحالة إلى اختبارات regression المضافة.",
+      "stack": "Python / pytest / httpx / google-genai",
+      "steps": [
+        "توثيق إعدادات العميل وإعدادات الطلب المنفرد.",
+        "كتابة مثالين متتابعين بإعدادات مختلفة.",
+        "إظهار كيفية إعادة استخدام العميل دون مشاركة حالة الطلب.",
+        "ربط الدليل باختبارات regression الحالية."
+      ],
+      "metric": "انخفاض تقارير أخطاء تداخل الإعدادات وتغطية الأمثلة بحالات اختبار.",
+      "difficulty": "منخفضة إلى متوسطة — تقدير بحثي.",
+      "risks": "قد تكون بعض الأمثلة موجودة بالفعل؛ يجب مراجعة التوثيق قبل تنفيذ أي إضافة.",
+      "sources": [
+        {
+          "title": "Google Gen AI Python SDK — PR #3182",
+          "url": "https://github.com/googleapis/python-genai/pull/3182"
+        },
+        {
+          "title": "Google Gen AI Python SDK — Documentation",
+          "url": "https://googleapis.github.io/python-genai/"
+        }
+      ]
+    }
+  ],
+  "topThreeSuggestions": [
+    {
+      "title": "مصفوفة توافق قابلة لإعادة الإنتاج لحدود العزل",
+      "problem": "نجاح اختبار على Runtime واحد لا يثبت تماثل سلوك الملفات والشبكة عبر Docker وPodman وMicroVM وKubernetes.",
+      "approach": "توحيد سيناريوهات سماح/منع ثابتة وتسجيل نتيجة كل Runtime وإصداره.",
+      "stack": "Rust / Python / Docker / Podman / MicroVM / Kubernetes / pytest",
+      "steps": [
+        "حدد مجموعة طلبات ملفات وشبكة غير حساسة.",
+        "ثبت صور sandbox وإصدارات runtimes.",
+        "شغّل الحالات نفسها على كل Runtime مدعوم.",
+        "سجل السماح والمنع والسبب دون أسرار.",
+        "انشر جدول توافق يوضح الحالات غير المغطاة."
+      ],
+      "metric": "نسبة حالات الحدود ذات النتائج الموثقة والمتكررة لكل Runtime.",
+      "difficulty": "مرتفعة — تقدير بحثي.",
+      "risks": "اختلاف الأنظمة وCNI قد يجعل المقارنة غير متجانسة؛ لا تصف اختبارًا محدودًا بأنه ضمان شامل.",
+      "sources": [
+        {
+          "title": "OpenShell Support Matrix",
+          "url": "https://docs.nvidia.com/openshell/latest/about/support-matrix"
+        },
+        {
+          "title": "OpenShell TESTING.md",
+          "url": "https://github.com/NVIDIA/OpenShell/blob/main/TESTING.md"
+        }
+      ]
+    },
+    {
+      "title": "تفسير قرار السياسة لكل طلب محجوب",
+      "problem": "يحتاج المشغل ربط الرفض بالقاعدة ومصدرها دون فتح سجلات متفرقة.",
+      "approach": "إضافة عرض تشخيصي اختياري يوضح نوع الطلب والبرنامج والوجهة وقاعدة المنع مع تنقيح القيم الحساسة.",
+      "stack": "Rust / tracing / policy prover / JSONL",
+      "steps": [
+        "راجع سجلات الرفض الحالية لتجنب تكرار ميزة موجودة.",
+        "حدد مخطط حدث لا يحتوي مفاتيح أو محتوى المستخدم.",
+        "اربط الحدث بمعرف sandbox ومصدر السياسة.",
+        "أضف أمرًا يشرح الحدث محليًا.",
+        "اختبر عدم كشف credentials أو محتوى الملفات."
+      ],
+      "metric": "نسبة حالات الرفض القابلة للتفسير من سجل واحد دون أسرار.",
+      "difficulty": "متوسطة إلى مرتفعة — تقدير بحثي.",
+      "risks": "زيادة حجم السجلات أو تسريب metadata؛ يلزم ضبط الاحتفاظ والتنقيح.",
+      "sources": [
+        {
+          "title": "OpenShell Sandbox Policies",
+          "url": "https://docs.nvidia.com/openshell/latest/how-it-works/policies/overview"
+        },
+        {
+          "title": "OpenShell Providers",
+          "url": "https://docs.nvidia.com/openshell/latest/how-it-works/providers/overview"
+        }
+      ]
+    },
+    {
+      "title": "ميزانيات موارد لكل جلسة وكيل",
+      "problem": "قد تستمر جلسة وكيل أو تستهلك CPU/RAM/وقتًا أكثر من المتوقع رغم تقييد الملفات والشبكة.",
+      "approach": "توحيد عرض حدود الموارد وإضافة تحذير أو إيقاف اختياري عند تجاوز ميزانية يحددها المشغل.",
+      "stack": "Rust / Docker / Podman / Kubernetes ResourceQuota / Prometheus",
+      "steps": [
+        "جرد حدود الموارد المتاحة في كل Runtime.",
+        "حدد ميزانية للمدة والذاكرة والمعالج.",
+        "أضف أحداث تحذير وإيقاف قابلة للمراجعة.",
+        "اختبر السلوك عند الحدود وإعادة التشغيل.",
+        "وثق اختلاف الدعم بين runtimes."
+      ],
+      "metric": "نسبة الجلسات ضمن الميزانية وعدد الإيقافات الخاطئة.",
+      "difficulty": "مرتفعة — تقدير بحثي.",
+      "risks": "قد تقطع الحدود مهامًا صحيحة أو تختلف دلالتها بين الأنظمة.",
+      "sources": [
+        {
+          "title": "OpenShell Support Matrix",
+          "url": "https://docs.nvidia.com/openshell/latest/about/support-matrix"
+        },
+        {
+          "title": "Kubernetes Resource Management",
+          "url": "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/"
+        }
+      ]
+    }
+  ],
+  "newResearchOnlyProject": {
+    "repository": "NVIDIA/OpenShell",
+    "license": "Apache-2.0",
+    "status": "active_recent_push",
+    "feedMatch": false,
+    "published": false,
+    "dossierPath": "editorial/library/nvidia-openshell-dossier-2026-10-30-1146.json",
+    "metrics": {
+      "stars": 20718,
+      "forks": 2030,
+      "openIssues": 588,
+      "measuredAt": "2026-10-30T11:46:47+03:00"
+    }
+  },
+  "priorResearchOnlyDossiers": [
+    "editorial/library/google-genai-sdk-dossier-2026-10-30-0255.json",
+    {
+      "repository": "yc-software/minecraft-agent-harness",
+      "license": "MIT",
+      "status": "active_new_repo",
+      "feedMatch": false,
+      "published": false,
+      "dossierPath": "editorial/library/minecraft-agent-harness-dossier-2026-10-30-0540.json",
+      "metrics": {
+        "stars": 21,
+        "forks": 1,
+        "openIssues": 0,
+        "license": "MIT",
+        "archived": false,
+        "createdAt": "2026-10-29T05:21:45Z",
+        "updatedAt": "2026-10-30T02:16:00Z",
+        "pushedAt": "2026-10-29T20:30:45Z",
+        "measuredAt": "2026-10-30T05:40:49+03:00",
+        "source": "https://api.github.com/repos/yc-software/minecraft-agent-harness"
+      }
+    },
+    {
+      "repository": "Millillion/lasm",
+      "dossierPath": "editorial/library/lasm-dossier-2026-10-30-0839.json",
+      "published": false
+    },
+    {
+      "repository": "NVIDIA/OpenShell",
+      "dossierPath": "editorial/library/nvidia-openshell-dossier-2026-10-30-1146.json",
+      "published": false
+    }
+  ],
+  "developerIntegrationNotes": "لا تغيّر شيفرة الموقع أو التصميم. NVIDIA/OpenShell بحث مستقل غير منشور؛ إذا أضيفت واجهة مكتبة مستقبلًا فاعرض شارة «بحث فقط — غير منشور»، تاريخ القياس والترخيص والمتطلبات والتكلفة المحلية/السحابية والبدائل والقيود. لا تنشئ feed item أو معرفًا بديلًا ولا تضف زر تشغيل أو نشر.",
+  "testEvidence": {
+    "backlogStructuralValidation": {
+      "method": "JavaScript equivalent of scripts/editorial.py validate",
+      "files": 53,
+      "rows": 531,
+      "validFiles": 53,
+      "invalidFiles": 0,
+      "officialCliRun": false
+    },
+    "newBatchStructuralValidation": {
+      "method": "same structural rules plus exact feed id/url",
+      "records": 6,
+      "valid": true,
+      "officialCliRun": false
+    },
+    "mergeIntegrity": {
+      "previousEditorialRecords": 570,
+      "finalEditorialRecords": 576,
+      "allPreviousIdsPreserved": true,
+      "allPreviousRecordsUnchanged": true,
+      "newIds": 6,
+      "refreshedExistingIds": 0
+    },
+    "officialValidate": {
+      "command": "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-10-30-1146.json",
+      "result": "not run: no shell execution"
+    },
+    "officialImport": {
+      "command": "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-10-30-1146.json",
+      "result": "not run: equivalent merge performed in data object"
+    },
+    "unitTests": {
+      "command": "python -m unittest discover -s tests -v",
+      "result": "pending GitHub Actions PR checks",
+      "localRun": false
+    },
+    "openShellRuntime": {
+      "result": "not run; no testEvidence claim"
+    }
+  },
+  "heldProjectEnrichment": {
+    "count": 1,
+    "reason": "one current feed project remains un-enriched pending separate documentation verification; no operational quick-start added."
+  }
+}
