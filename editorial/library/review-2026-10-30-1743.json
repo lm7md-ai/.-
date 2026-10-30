@@ -1,0 +1,311 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-30T17:43:43+03:00",
+  "baseMainSha": "a1402d35ecbe582e6884e366e7bf6e1ca26a688f",
+  "previousEight": [
+    {
+      "repository": "gradio-app/gradio",
+      "stars": 43933,
+      "forks": 3656,
+      "openIssues": 122,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-30T12:44:12Z",
+      "updatedAt": "2026-10-30T14:38:30Z",
+      "measuredAt": "2026-10-30T17:43:43+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/gradio-app/gradio"
+    },
+    {
+      "repository": "thedotmack/claude-mem",
+      "stars": 105579,
+      "forks": 9302,
+      "openIssues": 126,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-30T03:07:33Z",
+      "updatedAt": "2026-10-30T14:47:42Z",
+      "measuredAt": "2026-10-30T17:43:43+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/thedotmack/claude-mem"
+    },
+    {
+      "repository": "ultralytics/ultralytics",
+      "stars": 62987,
+      "forks": 11939,
+      "openIssues": 84,
+      "license": "AGPL-3.0",
+      "archived": false,
+      "pushedAt": "2026-10-30T10:57:37Z",
+      "updatedAt": "2026-10-30T13:54:21Z",
+      "measuredAt": "2026-10-30T17:43:43+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/ultralytics/ultralytics"
+    },
+    {
+      "repository": "harry0703/MoneyPrinterTurbo",
+      "stars": 136467,
+      "forks": 21723,
+      "openIssues": 84,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-30T03:00:50Z",
+      "updatedAt": "2026-10-30T14:46:36Z",
+      "measuredAt": "2026-10-30T17:43:43+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/harry0703/MoneyPrinterTurbo"
+    },
+    {
+      "repository": "microsoft/AI-For-Beginners",
+      "stars": 70381,
+      "forks": 13682,
+      "openIssues": 28,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-23T23:55:14Z",
+      "updatedAt": "2026-10-30T14:23:58Z",
+      "measuredAt": "2026-10-30T17:43:43+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/microsoft/AI-For-Beginners"
+    },
+    {
+      "repository": "usebruno/bruno",
+      "stars": 47948,
+      "forks": 3058,
+      "openIssues": 1970,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-30T14:12:34Z",
+      "updatedAt": "2026-10-30T14:12:49Z",
+      "measuredAt": "2026-10-30T17:43:43+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/usebruno/bruno"
+    },
+    {
+      "repository": "keras-team/keras",
+      "stars": 64395,
+      "forks": 19808,
+      "openIssues": 270,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-30T03:04:56Z",
+      "updatedAt": "2026-10-30T14:11:05Z",
+      "measuredAt": "2026-10-30T17:43:43+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/keras-team/keras"
+    },
+    {
+      "repository": "k2-fsa/sherpa-onnx",
+      "stars": 15626,
+      "forks": 1831,
+      "openIssues": 635,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-29T12:00:57Z",
+      "updatedAt": "2026-10-30T13:26:10Z",
+      "measuredAt": "2026-10-30T17:43:43+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/k2-fsa/sherpa-onnx"
+    }
+  ],
+  "previousEightSummary": {
+    "total": 8,
+    "activeNotArchived": 8,
+    "archived": 0,
+    "licenseFlags": [
+      "AGPL-3.0 for Ultralytics; check distribution obligations"
+    ],
+    "note": "GitHub API snapshots measured during this run; metrics are not quality rankings. SPDX values are repository metadata, not legal advice."
+  },
+  "historicalLibrary": {
+    "total": 36,
+    "archived": 2,
+    "nonArchived": 34,
+    "inCurrentFeed": 4,
+    "notInFeed": 32,
+    "licenseNeedsUpstreamVerification": 7,
+    "measuredAt": "2026-10-30T17:43:43+03:00"
+  },
+  "researchOnlyAddition": {
+    "repository": "langchain-ai/langgraph",
+    "file": "editorial/library/langgraph-dossier-2026-10-30-1743.json",
+    "published": false,
+    "feedId": null,
+    "stars": 44164,
+    "forks": 7600,
+    "openIssues": 515,
+    "license": "MIT",
+    "archived": false,
+    "pushedAt": "2026-10-29T19:10:23Z",
+    "measuredAt": "2026-10-30T17:43:43+03:00"
+  },
+  "topThreeSuggestions": [
+    {
+      "title": "بوابة موافقة بشرية قبل الأدوات ذات الأثر",
+      "problem": "قد ينفذ الوكيل إرسالًا أو كتابة أو حذفًا قبل أن يراجع الإنسان الأثر النهائي.",
+      "approach": "استخدم interrupt مع checkpointer دائم وصنّف الأدوات حسب أثرها، ولا تسمح بالفعل الخارجي إلا بعد موافقة مرتبطة بالطلب نفسه.",
+      "stack": "Python / LangGraph / SQLite أو PostgreSQL / pytest",
+      "steps": [
+        "صنّف الأدوات إلى قراءة وكتابة وأفعال خارجية.",
+        "أضف نقاط توقف قبل الأفعال ذات الأثر.",
+        "اعرض المدخلات والنتيجة المتوقعة للمراجع.",
+        "احفظ الموافقة مع thread_id ونسخة الطلب.",
+        "اختبر الرفض والموافقة وانتهاء صلاحية الموافقة."
+      ],
+      "metric": "عدد الأفعال الخارجية التي مُنعت دون موافقة ومعدل رفض الموافقات الصحيحة.",
+      "difficulty": "متوسطة إلى مرتفعة — تقدير بحثي.",
+      "risks": "قد تسبب الموافقات المتكررة إرهاقًا؛ ويجب منع إعادة استخدام موافقة قديمة لطلب مختلف.",
+      "sources": [
+        {
+          "title": "LangGraph Interrupts",
+          "url": "https://docs.langchain.com/oss/python/langgraph/interrupts"
+        },
+        {
+          "title": "LangGraph Persistence",
+          "url": "https://docs.langchain.com/oss/python/langgraph/persistence"
+        }
+      ]
+    },
+    {
+      "title": "سياسة احتفاظ واستعادة للـ checkpoints",
+      "problem": "تراكم نقاط الحفظ يزيد التخزين وزمن الاستعادة، بينما حذفها عشوائيًا قد يفقد سياقًا مطلوبًا.",
+      "approach": "افصل الذاكرة قصيرة الأجل عن المعرفة طويلة الأجل، وأضف TTL وأرشفة قابلة للمراجعة.",
+      "stack": "Python / SQLite أو PostgreSQL / LangGraph Checkpointers / pytest",
+      "steps": [
+        "قس حجم checkpoints لكل thread.",
+        "حدد سياسة احتفاظ حسب المهمة.",
+        "افصل المعرفة طويلة الأجل في Store.",
+        "أضف تنظيفًا دوريًا مع سجل حذف.",
+        "اختبر الاستعادة بعد التنظيف والانقطاع."
+      ],
+      "metric": "حجم التخزين لكل thread وزمن الاستعادة ونسبة الاستئناف الناجح.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "الاحتفاظ القصير قد يحذف سياقًا لازمًا؛ والطويل يزيد التكلفة والبيانات المخزنة.",
+      "sources": [
+        {
+          "title": "LangGraph Persistence",
+          "url": "https://docs.langchain.com/oss/python/langgraph/persistence"
+        },
+        {
+          "title": "LangGraph overview",
+          "url": "https://docs.langchain.com/oss/python/langgraph/overview"
+        }
+      ]
+    },
+    {
+      "title": "قياس التكلفة والزمن لكل مسار في الرسم",
+      "problem": "يصعب تحديد العقدة التي ترفع التكلفة أو زمن الاستجابة في سير عمل متفرع.",
+      "approach": "سجل زمن كل عقدة وعدد استدعاءات النموذج وبيانات الاستخدام التي يعيدها المزود، مع تنقيح المدخلات الحساسة.",
+      "stack": "Python / OpenTelemetry / LangGraph / SQLite أو Prometheus",
+      "steps": [
+        "أضف trace ID لكل تشغيل.",
+        "قِس زمن كل عقدة وعدد المحاولات.",
+        "اجمع usage metadata عندما يوفرها المزود.",
+        "احسب تكلفة تقديرية من جدول أسعار مؤرخ.",
+        "اعرض p50 وp95 والتنبيهات دون حفظ الأسرار."
+      ],
+      "metric": "p95 latency والتكلفة المقدرة لكل مهمة مكتملة ونسبة التشغيلات ذات بيانات استخدام مكتملة.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد تختلف بيانات الاستخدام والأسعار بين المزودين؛ ويلزم تنقيح traces قبل التخزين.",
+      "sources": [
+        {
+          "title": "LangGraph overview",
+          "url": "https://docs.langchain.com/oss/python/langgraph/overview"
+        },
+        {
+          "title": "LangSmith pricing",
+          "url": "https://www.langchain.com/pricing"
+        }
+      ]
+    }
+  ],
+  "incomingAudit": {
+    "version": 1,
+    "auditedAt": "2026-10-30T17:43:43+03:00",
+    "baseMainSha": "a1402d35ecbe582e6884e366e7bf6e1ca26a688f",
+    "incomingFiles": 55,
+    "incomingRows": 538,
+    "currentFeedItems": 800,
+    "currentEditorialRecords": 577,
+    "classification": {
+      "exactIdAndUrlInCurrentFeedAndEditorial": 298,
+      "alreadyImportedButOutsideCurrentFeed": 237,
+      "notImportedAndOutsideCurrentFeed": 3,
+      "idUrlMismatches": 0,
+      "rowBasedClassification": true,
+      "structuralValidation": {
+        "files": 55,
+        "rows": 538,
+        "validFiles": 55,
+        "errors": 0,
+        "method": "54 files passed equivalent structural audit in prior cycle; latest file rechecked against scripts/editorial.py rules. All 538 rows compared by exact ID and URL."
+      }
+    },
+    "expiryAssessment": "لا توجد تواريخ موحدة كافية لإثبات أن الصفوف التاريخية منقضية؛ صُنفت خارج التغذية الحالية فقط. السجلات الثلاثة غير المستوردة ما تزال خارج feed وeditorial.",
+    "held": [
+      {
+        "id": "940ec4695c1e241c2f",
+        "title": "NVIDIA OpenShell",
+        "seen": true,
+        "inCurrentFeed": false,
+        "inEditorial": false,
+        "libraryFile": "editorial/library/nvidia-openshell-dossier-2026-10-30-1146.json",
+        "status": "research-only; no feed item"
+      },
+      {
+        "id": "317abcdd1b20728a7e",
+        "title": "Canva Craft",
+        "seen": true,
+        "inCurrentFeed": false,
+        "inEditorial": false,
+        "libraryFile": null,
+        "status": "held; exact feed identity unavailable"
+      },
+      {
+        "id": "662e68277c6361dd4b",
+        "title": "1Password agent sign-in",
+        "seen": true,
+        "inCurrentFeed": false,
+        "inEditorial": false,
+        "libraryFile": null,
+        "status": "held; exact feed identity unavailable"
+      }
+    ],
+    "importDecision": "لم يُعد استيراد التراكم القديم: 535 صفًا مصنفًا كموجود في editorial بالفعل (298 ما زالت في التغذية و237 تاريخية خارجها)، وثلاثة سجلات غير موجودة في التغذية أو editorial. أضيفت 11 مادة جديدة فقط لأنها تطابق IDs وURLs الحالية حرفيًا.",
+    "untouchedFiles": [
+      "site/data/feed.json",
+      "site/data/seen.json"
+    ],
+    "newCycle": {
+      "newsPrepared": 11,
+      "newsAlreadyInEditorial": 0,
+      "newsExactFeedMatches": 11,
+      "projectDossiersResearchOnly": 1
+    }
+  },
+  "feedEditorialSnapshot": {
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialRecordsOnMain": 577,
+    "activeNewsEnriched": 239,
+    "activeProjectsEnriched": 99,
+    "newsUnenriched": 461,
+    "projectsUnenriched": 1,
+    "seenIds": 1966
+  },
+  "publicationBaseline": {
+    "workflowRun": 41051897366,
+    "artifactId": 12975036714,
+    "headSha": "57b6f688a751e1d220d36600f40c0bf4b61ae29c",
+    "artifactEditorialRecords": 577,
+    "artifactFeedItems": 800,
+    "artifactDownloadedAndInspected": true,
+    "liveHttpCheck": "DisabledError; Pages artifact inspected instead"
+  },
+  "validation": {
+    "localCliExecuted": false,
+    "unexecutedCommands": [
+      "python scripts/editorial.py validate incoming.json",
+      "python scripts/editorial.py import incoming.json",
+      "python -m unittest discover -s tests -v"
+    ],
+    "structuralEquivalent": "54 existing incoming files passed in prior audit; latest incoming file and all 11 new records checked against scripts/editorial.py rules; exact ID+URL comparison completed",
+    "ciStatus": "pending PR checks",
+    "officialValidator": "CI check.yml runs python scripts/editorial.py validate"
+  },
+  "deploymentConstraint": "No merge/deploy performed: the only existing Pages workflow runs scripts/update_feed.py and commits feed.json, seen.json, and status.json on every push. No deploy-only workflow exists. Merging would conflict with the explicit instruction not to modify feed.json or seen.json.",
+  "testEvidence": "LangGraph repository code was not installed or executed; dossier is documentation/README/metadata research only. Nabdh tests will be executed by the existing PR validation workflow."
+}
