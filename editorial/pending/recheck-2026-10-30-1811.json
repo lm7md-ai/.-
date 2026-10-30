@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "auditedAt": "2026-10-30T18:11:06+03:00",
+  "currentMainSha": "a1402d35ecbe582e6884e366e7bf6e1ca26a688f",
+  "previousAudit": "editorial/pending/recheck-2026-10-30-1442.json",
+  "previousAuditBaseMainSha": "8b369795c4ce48e7cd1b53e11760ed3c84edff3b",
+  "incomingBeforeThisRun": {
+    "files": 55,
+    "rows": 538
+  },
+  "currentBatch": {
+    "file": "editorial/incoming/nabdh-editorial-2026-10-30-1811.json",
+    "files": 1,
+    "rows": 3
+  },
+  "incomingAfterThisRun": {
+    "files": 56,
+    "rows": 541
+  },
+  "currentFeedItems": 800,
+  "currentEditorialRecordsBeforeThisRun": 577,
+  "currentEditorialRecordsAfterThisRun": 580,
+  "classification": {
+    "exactIdAndUrlInCurrentFeedAndEditorialAfterThisRun": 308,
+    "alreadyImportedButOutsideCurrentFeed": 230,
+    "notImportedAndOutsideCurrentFeed": 3,
+    "idUrlMismatches": 0,
+    "structuralValidation": {
+      "inheritedFiles": 54,
+      "inheritedRows": 537,
+      "inheritedValidFiles": 54,
+      "inheritedErrors": 0,
+      "previousAuditMethod": "Equivalent structural validation recorded in recheck-2026-10-30-1442.json.",
+      "additionalPreviouslyMergedFile": {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-30-1442.json",
+        "rows": 1,
+        "exactFeedAndEditorialMatch": true
+      },
+      "currentBatchFile": {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-30-1811.json",
+        "rows": 3,
+        "validRows": 3,
+        "errors": 0
+      },
+      "totalFilesCovered": 56,
+      "totalRowsCovered": 541,
+      "method": "Inherited validation for the prior 54 files, plus exact ID/URL and structural checks for the 14:42 one-row file and this three-row batch. JSON shape, HTTPS URLs, required text, timezone-aware reviewedAt, basis, sources and nextSteps checked."
+    }
+  },
+  "expiryAssessment": "لا يمكن إثبات انقضاء جميع السجلات الـ230 خارج التغذية دون تاريخ نشر موحد موثوق؛ لم أضع وسم منقضي دون دليل. لا توجد اختلافات ID/URL تستدعي تصحيحًا.",
+  "held": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "title": "NVIDIA OpenShell",
+      "seen": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "libraryFile": "editorial/library/nvidia-openshell-dossier-2026-10-30-1146.json",
+      "status": "research-only; no feed item; dossier still exists"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "title": "Canva Craft",
+      "seen": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "libraryFile": null,
+      "status": "held; exact feed identity unavailable"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "title": "1Password agent sign-in",
+      "seen": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "libraryFile": null,
+      "status": "held; exact feed identity unavailable"
+    }
+  ],
+  "importDecision": "لم يُعد استيراد السجلات القديمة: 305 سجلات كانت مطابقة ومستوردة قبل هذه الدفعة، و230 سجلًا تاريخيًا موجود أصلًا خارج التغذية، وثلاثة سجلات بقيت معلّقة لغياب تطابق التغذية. أضيفت ثلاثة أخبار فقط بعد التحقق الحرفي من ID وURL، فصار عدد المطابق الحالي 308.",
+  "importedThisRun": [
+    {
+      "id": "e16ff3762c5343d164",
+      "url": "https://www.engadget.com/2301972/waymo-toyota-soon-start-testing-bz4x-robotaxis-japan/",
+      "basis": "article"
+    },
+    {
+      "id": "ccb2c51972ca2287c9",
+      "url": "https://www.engadget.com/2301968/senators-looking-into-serious-privacy-risks-with-meta-ai-glasses/",
+      "basis": "article"
+    },
+    {
+      "id": "6fe1940ca9611c0c55",
+      "url": "https://news.google.com/rss/articles/CBMi8gZBVV95cUxOcEdRRkxMZ2QtQjU0dDFTcmJTRHh5aXExREVtRkRrMGhZakdkRkdVVFhPU1JqMnRQYUxDNmZxc2d6S3pFdTFwMlp1MFp5LTJ0VFQ0bmdPZE92Q1BJREVjanFFWGxXOGxBVVJ5MXI3dkZVMDZ3UTB4anRPYkxRNFI1cmFTMUE2MGdMWkZob0dGRFc1N2JiRTBBQkJtbmRnSXJhbG9QYjA4SU4xUmtNQy00eXRzQlpwenMyTnFvYkJiN3VaUnc5MU5PUW1zcGxkdkFPVTFWV3dVRDR0RHQ3aGg0R0hySDU2Z01Ub1ktc0x4ZTdUemZjUHhpTHI0XzJCMUhicllRZXZ2UE5aWExRRHR1T1kyLWRfaW14LVBoNlEzek53X2VJRjRPYnM5Q2QtZU5hT3R1Q3hteWhVdW4xenNJNVlKbzJIemRIMWp3SEpjY0MwU0t1TnVGMnp3SEpqVXBUc1dkcXlRbFhJVnhQa1Qtc2JpS1Fwd0FqbUZDTkNZcVpXNUFJZGt0OEM3Vi1SenBndmg1TFBTVC0zdTgzVDlCZnZpamdjLWJNTHNkc2ZVS3VjNG8tVXJFZ1M4VTZMVy11UklsME8yZGJERTg5VmdLS3pQWXllRER4Um81ZGhWaUJzME92Q3BwalV6cFRiV3JuNUU0N0F0VmVuTWkwR0lpSlNhbFVvMFZ0ckZ2ZVAteWNkYXlyeDhBc25iVE9kSExZYjFMRzFoNjhGa2Q0bEg0bUdPSnloNFNpN0VrVWNPdEtzVlM0Qm1vdlhlNmljNGpHV2FKQVhRQlRZRjJmRlJzU2Z3bndEUkJHTFdtMmY1ME9kTlFwQU5lSTdYWmRwZW1rbXU3TVZFa3FsRFcyT1k1TWxuWmxRV1h3RUUzVEhLVVVhTVdna0xJSG5tdVVwMWJoNnJvcGdHR0FRdVh2bXZhMnBmYXdQZWJnOWNvNUo0OVM2em5aeW9maFV1ZGNXTkw5ekl5QlVMckd0S1dFRGdzVExuWW9PS1NvWEY4d2RLWUhjRF9uU0daSk1qYzY1N3pveUdFdW1zZjZhQlJ5aFpBMTJNT0tLNnpac3ZaUkl2RTlFc1MtR2lQdzIxLUJpSng5MjFBTTdpakNmTkZnYm1jV0Q4ZFN0NHBPQlFSaVF3VFZ2R3BkT3BGdU10VTVsRTZJT2c?oc=5",
+      "basis": "article"
+    }
+  ],
+  "untouchedFiles": [
+    "site/data/feed.json",
+    "site/data/seen.json"
+  ],
+  "cliCommandsNotRunLocally": [
+    "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-10-30-1811.json",
+    "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-10-30-1811.json",
+    "python -m unittest discover -s tests -v"
+  ],
+  "validationNote": "لا توجد نسخة checkout محلية لتنفيذ أوامر Python. أُجري تحقق بنيوي مكافئ للدفعة والدمج، ويجب انتظار CI لتأكيد المحقق الرسمي والاختبارات قبل الدمج.",
+  "note": "لم تُنشأ هويات بديلة من العناوين، ولم تُحذف سجلات أو حقول قديمة، ولم تُعدّل feed.json أو seen.json."
+}
