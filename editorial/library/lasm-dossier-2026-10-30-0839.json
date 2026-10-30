@@ -134,53 +134,61 @@
   "spinoffs": [
     {
       "title": "مختبر تفاعلي Lean-to-Wasm للطلاب",
-      "problem": "يصعب رؤية كيف يتحول برنامج Lean صغير إلى ملف WebAssembly وما القيود التي يفرضها runtime.",
-      "approach": "مقرر مصغر يعرض المصدر والبناء وحجم الناتج ونتيجة التشغيل محليًا، مع أمثلة آمنة لا تحتاج حسابًا سحابيًا.",
-      "stack": "Lean / Lasm / Node.js / WebAssembly / static documentation",
+      "problem": "يصعب على المتعلم رؤية الصلة بين كتابة برنامج Lean وفحص برهانه ثم تشغيل الناتج في WebAssembly، كما أن إعداد toolchain متعدد الأهداف قد يكون ثقيلًا على تجربة تعليمية أولى.",
+      "approach": "مختبر تعليمي محدود بأمثلة ثابتة يشرح مسار المصدر والبناء والتحقق ومخرجات التشغيل، ويعرض قيود كل runtime بدل السماح بتنفيذ شيفرة عشوائية غير معزولة.",
+      "stack": "Lean 4.35 / Lasm CLI / TypeScript / Vite / WebAssembly",
       "steps": [
-        "ابدأ بأمثلة حسابية خالصة.",
-        "أضف مثال HTTP محليًا.",
-        "اعرض حجم Wasm وزمن البدء مع توضيح ظروف القياس.",
-        "قارن Node وWASI وedge من حيث القدرات.",
-        "أضف تمارين تفسير أخطاء البناء دون أسئلة حفظ تقليدية."
+        "اختر ثلاثة أمثلة صغيرة موثقة تغطي دالة نقية وواجهة HTTP ومكوّن متصفح.",
+        "ثبّت إصدارات Lean وNode وLasm في إعداد قابل لإعادة الإنتاج.",
+        "ابنِ الأمثلة مسبقًا واعرض مصدر Lean ونتيجة البناء ومخرجات التشغيل.",
+        "أظهر بوضوح ما الذي يثبته البرهان وما الذي لا يغطيه اختبار runtime.",
+        "اختبر المختبر في المتصفحات المستهدفة وسجّل حجم الملفات ووقت التحميل."
       ],
-      "metric": "إكمال المتعلم لمثالين قابلين للبناء وفهمه لقيود كل هدف.",
-      "difficulty": "متوسطة — تقدير بحثي.",
-      "risks": "قد تتغير واجهات Lasm بسرعة؛ ثبّت نسخة كل درس وأظهر تاريخها.",
+      "metric": "نسبة الأمثلة التي تُبنى وتعمل من جلسة نظيفة، مع قياس حجم الحزمة ووقت بدء التشغيل.",
+      "difficulty": "مرتفعة — تقدير بحثي، ولم يُنفّذ النموذج الأولي.",
+      "risks": "حجم toolchain قد يبطئ المتصفح؛ نجاح برهان النموذج لا يثبت تلقائيًا سلامة كل تكامل JavaScript أو بيئة التشغيل.",
       "sources": [
         {
           "title": "Lasm README",
-          "url": "https://github.com/Millillion/lasm"
+          "url": "https://github.com/Millillion/lasm/blob/main/README.md"
         },
         {
-          "title": "Lasm WASI quick start",
-          "url": "https://github.com/Millillion/lasm/blob/main/docs/WASI.md"
+          "title": "Lasm AI guide",
+          "url": "https://github.com/Millillion/lasm/blob/main/docs/AI.md"
+        },
+        {
+          "title": "Lean 4 reference",
+          "url": "https://lean-lang.org/doc/reference/latest/"
         }
       ]
     },
     {
-      "title": "قالب API عربي مع تحقق من invariants",
-      "problem": "يحتاج المتعلم العربي مثالًا يربط API واقعيًا بالتحقق الشكلي دون إخفاء متطلبات التشغيل.",
-      "approach": "قالب تعليمي صغير يشرح بالعربية نموذج البيانات والبرهان وحدود الاختبارات والتشغيل المحلي.",
-      "stack": "Lean 4 / Lasm / Hono / SQLite (اختياري) / Vitest",
+      "title": "قالب API عربي مع invariants موثقة",
+      "problem": "قد يختلط على مطور الويب الفرق بين إثبات خاصية في نموذج Lean وبين اختبار endpoint الفعلي، كما أن أمثلة الربط بينهما قليلة بالعربية.",
+      "approach": "قالب Hono صغير يربط نموذجًا محدودًا في Lean بانتقالات حالة API، ويضيف اختبارات HTTP مستقلة ويشرح حدود كل طبقة.",
+      "stack": "Lean 4.35 / Lasm / Hono / Node.js 24+ / Vitest",
       "steps": [
-        "حدد موردًا بسيطًا وسيناريو CRUD محليًا.",
-        "اكتب نموذج invariants في Lean.",
-        "اربط handlers عبر Lasm.",
-        "أضف اختبارات HTTP وبيانات تجريبية.",
-        "وثّق ما يثبته البرهان وما لا يثبته."
+        "اختر invariant واحدًا محدودًا مثل منع تكرار معرف المورد أو انتقال الحالة غير المسموح.",
+        "صغ نموذج الحالة والخاصية في Lean مع أمثلة صحيحة وخاطئة.",
+        "اربط النموذج بمسار Hono واضح عبر واجهات Lasm الموثقة.",
+        "اكتب اختبارات HTTP تغطي الحالات الطبيعية والحدية والفشل.",
+        "وثّق صراحةً الفرق بين صحة النموذج ونتائج اختبار التطبيق المتكامل."
       ],
-      "metric": "قابلية بناء القالب محليًا واجتياز اختبارات API مع شرح عربي واضح.",
-      "difficulty": "مرتفعة — تقدير بحثي.",
-      "risks": "إضافة قاعدة بيانات قد تشتت الهدف التعليمي؛ ابدأ بذاكرة محلية ثم وسّع لاحقًا.",
+      "metric": "عدد الخصائص التي لها برهان في النموذج واختبار HTTP مستقل قابل لإعادة التشغيل.",
+      "difficulty": "متوسطة إلى مرتفعة — تقدير بحثي، ولم يُختبر القالب.",
+      "risks": "قد يبالغ المستخدم في تعميم البرهان على التطبيق كله؛ يجب إبقاء النموذج صغيرًا وتوضيح حدود التغطية.",
       "sources": [
         {
-          "title": "Lasm Getting Started",
-          "url": "https://github.com/Millillion/lasm/blob/main/docs/GETTING_STARTED.md"
+          "title": "Lasm Conduit example",
+          "url": "https://github.com/Millillion/lasm/tree/main/examples/conduit"
         },
         {
-          "title": "Lasm Conduit proofs",
-          "url": "https://github.com/Millillion/lasm/blob/main/examples/conduit/PROOFS.md"
+          "title": "Lasm AI guide",
+          "url": "https://github.com/Millillion/lasm/blob/main/docs/AI.md"
+        },
+        {
+          "title": "Hono documentation",
+          "url": "https://hono.dev/docs/"
         }
       ]
     }
