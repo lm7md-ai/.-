@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "auditedAt": "2026-10-30T14:42:19+03:00",
+  "baseMainSha": "8b369795c4ce48e7cd1b53e11760ed3c84edff3b",
+  "incomingFiles": 54,
+  "incomingRows": 537,
+  "currentFeedItems": 800,
+  "currentEditorialRecords": 576,
+  "classification": {
+    "exactIdAndUrlInCurrentFeedAndEditorial": 304,
+    "alreadyImportedButOutsideCurrentFeed": 230,
+    "notImportedAndOutsideCurrentFeed": 3,
+    "idUrlMismatches": 0,
+    "structuralValidation": {
+      "files": 54,
+      "rows": 537,
+      "validFiles": 54,
+      "errors": 0,
+      "method": "equivalent structural check; JSON shape, HTTPS URLs, required fields, timestamps, basis, sources and proposal structure"
+    }
+  },
+  "expiryAssessment": "لا يمكن إثبات الانقضاء زمنيًا لكل الصفوف خارج التغذية لأن ملفات الوارد لا توفر تاريخ نشر موحدًا يمكن تطبيق حد 21 يومًا عليه؛ لم أضع وسم منقضي دون دليل.",
+  "held": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "title": "OpenShell من NVIDIA: بيئات معزولة للوكلاء بصلاحيات قابلة للمراجعة",
+      "seen": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "libraryFile": "editorial/library/nvidia-openshell-dossier-2026-10-30-1146.json",
+      "status": "research-only; no feed item"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "title": "Canva تعلن Craft لتوليد صور يمكن تحويلها إلى تصاميم متعددة الطبقات",
+      "seen": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "libraryFile": null,
+      "status": "held; exact feed identity unavailable"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "title": "1Password تعرض تفويض دخول للوكلاء دون إظهار كلمات المرور",
+      "seen": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "libraryFile": null,
+      "status": "held; exact feed identity unavailable"
+    }
+  ],
+  "importDecision": "لم يُستورد أي صف من التراكم القديم لأن 534 صفًا مطابقًا موجودة أصلًا في editorial.json، و3 سجلات لا تطابق التغذية الحالية. أضيف خبر واحد جديد فقط لأنه يطابق ID وURL الحاليين حرفيًا.",
+  "untouchedFiles": [
+    "site/data/feed.json",
+    "site/data/seen.json"
+  ],
+  "note": "لم تُنشأ هويات بديلة من العناوين. لم يُحذف أو يُستبدل أي سجل قديم."
+}
