@@ -1,0 +1,189 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-30T02:55:46+03:00",
+  "published": false,
+  "baseMainSha": "1e1cf1c211b1ad0da7cae7cdc05fc82d00175f27",
+  "historicalLibrary": {
+    "catalogEntries": 31,
+    "publicLibraryEntries": 31,
+    "siteFeedProjects": 100,
+    "feedProjectsWithExactEditorial": 99,
+    "unEnrichedFeedProjects": 1,
+    "newResearchOnlyDossiers": 1,
+    "note": "الكتالوج العام لم يتغير؛ أضيف ملف بحث مستقل غير منشور."
+  },
+  "previousEight": [
+    {
+      "repository": "gradio-app/gradio",
+      "stars": 43926,
+      "forks": 3654,
+      "openIssues": 118,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-29T22:17:00Z",
+      "updatedAt": "2026-10-29T21:28:46Z"
+    },
+    {
+      "repository": "thedotmack/claude-mem",
+      "stars": 104753,
+      "forks": 9239,
+      "openIssues": 114,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-29T21:45:20Z",
+      "updatedAt": "2026-10-29T23:55:49Z"
+    },
+    {
+      "repository": "ultralytics/ultralytics",
+      "stars": 62973,
+      "forks": 11934,
+      "openIssues": 78,
+      "license": "AGPL-3.0",
+      "archived": false,
+      "pushedAt": "2026-10-29T23:48:25Z",
+      "updatedAt": "2026-10-29T23:48:32Z"
+    },
+    {
+      "repository": "harry0703/MoneyPrinterTurbo",
+      "stars": 136305,
+      "forks": 21693,
+      "openIssues": 81,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-29T12:42:40Z",
+      "updatedAt": "2026-10-29T23:48:23Z"
+    },
+    {
+      "repository": "microsoft/AI-For-Beginners",
+      "stars": 70361,
+      "forks": 13681,
+      "openIssues": 28,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-23T23:55:14Z",
+      "updatedAt": "2026-10-29T23:29:15Z"
+    },
+    {
+      "repository": "usebruno/bruno",
+      "stars": 47931,
+      "forks": 3053,
+      "openIssues": 1969,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-29T14:30:38Z",
+      "updatedAt": "2026-10-29T23:48:51Z"
+    },
+    {
+      "repository": "keras-team/keras",
+      "stars": 64397,
+      "forks": 19805,
+      "openIssues": 275,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-29T20:21:36Z",
+      "updatedAt": "2026-10-29T20:21:50Z"
+    },
+    {
+      "repository": "k2-fsa/sherpa-onnx",
+      "stars": 15603,
+      "forks": 1828,
+      "openIssues": 635,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-29T12:00:57Z",
+      "updatedAt": "2026-10-29T23:24:20Z"
+    }
+  ],
+  "topThreeSuggestions": [
+    {
+      "title": "مصفوفة ترحيل Python والإصدارات",
+      "problem": "قد يفاجأ المستخدمون بتغير الحد الأدنى لإصدار Python أو اختلاف واجهات beta وv1.",
+      "approach": "إضافة جدول توافق لكل إصدار وأمثلة ترحيل واختبارات تثبيت نظيف على إصدارات Python المدعومة.",
+      "stack": "Python / pytest / tox أو nox / GitHub Actions",
+      "steps": [
+        "جمع تغييرات الحد الأدنى من Python بين الإصدارات.",
+        "بناء بيئات تثبيت نظيف لكل إصدار مدعوم.",
+        "اختبار أمثلة sync وasync على beta وv1.",
+        "نشر جدول توافق وتغييرات كاسرة مع كل إصدار."
+      ],
+      "metric": "نسبة نجاح التثبيت والأمثلة على مصفوفة الإصدارات المعلنة.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد تتكرر تغطية موجودة في CI؛ يجب مراجعة ملفات الاختبار وIssues قبل اقتراح PR.",
+      "sources": [
+        {
+          "title": "Google Gen AI Python SDK — README",
+          "url": "https://github.com/googleapis/python-genai/blob/main/README.md"
+        },
+        {
+          "title": "Google Gen AI Python SDK — pyproject.toml",
+          "url": "https://github.com/googleapis/python-genai/blob/main/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "title": "قياس استخدام دون تسجيل محتوى المحادثة",
+      "problem": "يصعب على الفرق تقدير زمن الاستجابة والاستهلاك دون تسجيل prompts أو بيانات حساسة.",
+      "approach": "إضافة مثال middleware اختياري يسجل model وrequest id والمدة وعدد tokens وحالة retry، مع حجب prompt/response افتراضيًا.",
+      "stack": "Python / logging / OpenTelemetry / google-genai",
+      "steps": [
+        "تحديد الحقول غير الحساسة التي يمكن تسجيلها.",
+        "إضافة مثال wrapper حول استدعاءات العميل.",
+        "حجب المحتوى والحقول السرية افتراضيًا.",
+        "اختبار عدم ظهور المفاتيح أو نصوص المستخدم في السجلات."
+      ],
+      "metric": "نسبة الطلبات التي لها قياس latency واستهلاك دون تسريب للمحتوى في عينة الاختبار.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد يضيف عبئًا على مسار الطلب؛ يلزم اختبار الأداء ومراجعة الخصوصية.",
+      "sources": [
+        {
+          "title": "Google Gen AI Python SDK — Documentation",
+          "url": "https://googleapis.github.io/python-genai/"
+        },
+        {
+          "title": "OpenTelemetry Python",
+          "url": "https://opentelemetry.io/docs/languages/python/"
+        }
+      ]
+    },
+    {
+      "title": "دليل واضح لعزل إعدادات كل طلب",
+      "problem": "قد يخلط المطورون بين إعدادات العميل الافتراضية وترويسات الطلب المفرد.",
+      "approach": "إضافة أمثلة توضح نطاق إعدادات http_options والمهل والترويسات في sync وasync، مع الإحالة إلى اختبارات regression المضافة.",
+      "stack": "Python / pytest / httpx / google-genai",
+      "steps": [
+        "توثيق إعدادات العميل وإعدادات الطلب المنفرد.",
+        "كتابة مثالين متتابعين بإعدادات مختلفة.",
+        "إظهار كيفية إعادة استخدام العميل دون مشاركة حالة الطلب.",
+        "ربط الدليل باختبارات regression الحالية."
+      ],
+      "metric": "انخفاض تقارير أخطاء تداخل الإعدادات وتغطية الأمثلة بحالات اختبار.",
+      "difficulty": "منخفضة إلى متوسطة — تقدير بحثي.",
+      "risks": "قد تكون بعض الأمثلة موجودة بالفعل؛ يجب مراجعة التوثيق قبل تنفيذ أي إضافة.",
+      "sources": [
+        {
+          "title": "Google Gen AI Python SDK — PR #3182",
+          "url": "https://github.com/googleapis/python-genai/pull/3182"
+        },
+        {
+          "title": "Google Gen AI Python SDK — Documentation",
+          "url": "https://googleapis.github.io/python-genai/"
+        }
+      ]
+    }
+  ],
+  "newResearchOnlyProject": {
+    "repository": "googleapis/python-genai",
+    "license": "Apache-2.0",
+    "status": "active",
+    "feedMatch": false,
+    "published": false,
+    "dossierPath": "editorial/library/google-genai-sdk-dossier-2026-10-30-0255.json"
+  },
+  "developerIntegrationNotes": [
+    "لا تعرض الملف الجديد في الموقع؛ هو بحث مكتبي غير منشور.",
+    "إذا ظهر المشروع لاحقًا في feed، استخدم معرفه ورابطه الأصليين.",
+    "اعرض وقت قياس النجوم والشوكات والقضايا والترخيص.",
+    "لا تعرض quickStart كأنه نُفذ أو اختُبر."
+  ],
+  "testEvidence": "لم أشغّل المشروع أو اختبارات مستودعه؛ تمت قراءة README وdocs/source/index.rst وpyproject.toml وLICENSE وسجل الإصدار وPR."
+}
