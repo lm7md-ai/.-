@@ -1,0 +1,319 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-30T05:40:49+03:00",
+  "baseMainSha": "8820c0f8da830f82164f4b06a4b7d05951bb24dd",
+  "sitePublished": false,
+  "historicalLibrary": {
+    "catalogEntries": 32,
+    "publicLibraryEntries": 32,
+    "activeNotArchived": 30,
+    "archived": 2,
+    "previousEightRefreshed": 8,
+    "newResearchOnlyDossiers": 4,
+    "siteFeedProjects": 100,
+    "feedProjectsWithExactEditorial": 99,
+    "unEnrichedFeedProjects": 1,
+    "deferredProjectCount": 1,
+    "note": "المشروع غير المثرى الوحيد في feed ذو وظيفة تداول آلي؛ لم تُنشأ له تعليمات تشغيل أو استخدام."
+  },
+  "previousEight": [
+    {
+      "repository": "gradio-app/gradio",
+      "stars": 43926,
+      "forks": 3654,
+      "openIssues": 118,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-29T22:17:00Z",
+      "updatedAt": "2026-10-29T21:28:46Z",
+      "defaultBranch": "main",
+      "measuredAt": "2026-10-30T05:40:49+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/gradio-app/gradio"
+    },
+    {
+      "repository": "thedotmack/claude-mem",
+      "stars": 104886,
+      "forks": 9249,
+      "openIssues": 115,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-30T02:44:56Z",
+      "updatedAt": "2026-10-30T02:45:41Z",
+      "defaultBranch": "main",
+      "measuredAt": "2026-10-30T05:40:49+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/thedotmack/claude-mem"
+    },
+    {
+      "repository": "ultralytics/ultralytics",
+      "stars": 62975,
+      "forks": 11935,
+      "openIssues": 75,
+      "license": "AGPL-3.0",
+      "archived": false,
+      "pushedAt": "2026-10-30T02:39:33Z",
+      "updatedAt": "2026-10-30T02:40:26Z",
+      "defaultBranch": "main",
+      "measuredAt": "2026-10-30T05:40:49+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/ultralytics/ultralytics"
+    },
+    {
+      "repository": "harry0703/MoneyPrinterTurbo",
+      "stars": 136323,
+      "forks": 21699,
+      "openIssues": 79,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-30T02:15:19Z",
+      "updatedAt": "2026-10-30T02:44:20Z",
+      "defaultBranch": "main",
+      "measuredAt": "2026-10-30T05:40:49+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/harry0703/MoneyPrinterTurbo"
+    },
+    {
+      "repository": "microsoft/AI-For-Beginners",
+      "stars": 70366,
+      "forks": 13681,
+      "openIssues": 28,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-23T23:55:14Z",
+      "updatedAt": "2026-10-30T02:42:53Z",
+      "defaultBranch": "main",
+      "measuredAt": "2026-10-30T05:40:49+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/microsoft/AI-For-Beginners"
+    },
+    {
+      "repository": "usebruno/bruno",
+      "stars": 47931,
+      "forks": 3053,
+      "openIssues": 1969,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-29T14:30:38Z",
+      "updatedAt": "2026-10-30T02:41:38Z",
+      "defaultBranch": "main",
+      "measuredAt": "2026-10-30T05:40:49+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/usebruno/bruno"
+    },
+    {
+      "repository": "keras-team/keras",
+      "stars": 64397,
+      "forks": 19805,
+      "openIssues": 274,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-30T00:12:13Z",
+      "updatedAt": "2026-10-30T00:13:25Z",
+      "defaultBranch": "master",
+      "measuredAt": "2026-10-30T05:40:49+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/keras-team/keras"
+    },
+    {
+      "repository": "k2-fsa/sherpa-onnx",
+      "stars": 15607,
+      "forks": 1828,
+      "openIssues": 634,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-29T12:00:57Z",
+      "updatedAt": "2026-10-30T02:44:56Z",
+      "defaultBranch": "master",
+      "measuredAt": "2026-10-30T05:40:49+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/k2-fsa/sherpa-onnx"
+    }
+  ],
+  "previousTopThreeSuggestions": [
+    {
+      "title": "مصفوفة ترحيل Python والإصدارات",
+      "problem": "قد يفاجأ المستخدمون بتغير الحد الأدنى لإصدار Python أو اختلاف واجهات beta وv1.",
+      "approach": "إضافة جدول توافق لكل إصدار وأمثلة ترحيل واختبارات تثبيت نظيف على إصدارات Python المدعومة.",
+      "stack": "Python / pytest / tox أو nox / GitHub Actions",
+      "steps": [
+        "جمع تغييرات الحد الأدنى من Python بين الإصدارات.",
+        "بناء بيئات تثبيت نظيف لكل إصدار مدعوم.",
+        "اختبار أمثلة sync وasync على beta وv1.",
+        "نشر جدول توافق وتغييرات كاسرة مع كل إصدار."
+      ],
+      "metric": "نسبة نجاح التثبيت والأمثلة على مصفوفة الإصدارات المعلنة.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد تتكرر تغطية موجودة في CI؛ يجب مراجعة ملفات الاختبار وIssues قبل اقتراح PR.",
+      "sources": [
+        {
+          "title": "Google Gen AI Python SDK — README",
+          "url": "https://github.com/googleapis/python-genai/blob/main/README.md"
+        },
+        {
+          "title": "Google Gen AI Python SDK — pyproject.toml",
+          "url": "https://github.com/googleapis/python-genai/blob/main/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "title": "قياس استخدام دون تسجيل محتوى المحادثة",
+      "problem": "يصعب على الفرق تقدير زمن الاستجابة والاستهلاك دون تسجيل prompts أو بيانات حساسة.",
+      "approach": "إضافة مثال middleware اختياري يسجل model وrequest id والمدة وعدد tokens وحالة retry، مع حجب prompt/response افتراضيًا.",
+      "stack": "Python / logging / OpenTelemetry / google-genai",
+      "steps": [
+        "تحديد الحقول غير الحساسة التي يمكن تسجيلها.",
+        "إضافة مثال wrapper حول استدعاءات العميل.",
+        "حجب المحتوى والحقول السرية افتراضيًا.",
+        "اختبار عدم ظهور المفاتيح أو نصوص المستخدم في السجلات."
+      ],
+      "metric": "نسبة الطلبات التي لها قياس latency واستهلاك دون تسريب للمحتوى في عينة الاختبار.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد يضيف عبئًا على مسار الطلب؛ يلزم اختبار الأداء ومراجعة الخصوصية.",
+      "sources": [
+        {
+          "title": "Google Gen AI Python SDK — Documentation",
+          "url": "https://googleapis.github.io/python-genai/"
+        },
+        {
+          "title": "OpenTelemetry Python",
+          "url": "https://opentelemetry.io/docs/languages/python/"
+        }
+      ]
+    },
+    {
+      "title": "دليل واضح لعزل إعدادات كل طلب",
+      "problem": "قد يخلط المطورون بين إعدادات العميل الافتراضية وترويسات الطلب المفرد.",
+      "approach": "إضافة أمثلة توضح نطاق إعدادات http_options والمهل والترويسات في sync وasync، مع الإحالة إلى اختبارات regression المضافة.",
+      "stack": "Python / pytest / httpx / google-genai",
+      "steps": [
+        "توثيق إعدادات العميل وإعدادات الطلب المنفرد.",
+        "كتابة مثالين متتابعين بإعدادات مختلفة.",
+        "إظهار كيفية إعادة استخدام العميل دون مشاركة حالة الطلب.",
+        "ربط الدليل باختبارات regression الحالية."
+      ],
+      "metric": "انخفاض تقارير أخطاء تداخل الإعدادات وتغطية الأمثلة بحالات اختبار.",
+      "difficulty": "منخفضة إلى متوسطة — تقدير بحثي.",
+      "risks": "قد تكون بعض الأمثلة موجودة بالفعل؛ يجب مراجعة التوثيق قبل تنفيذ أي إضافة.",
+      "sources": [
+        {
+          "title": "Google Gen AI Python SDK — PR #3182",
+          "url": "https://github.com/googleapis/python-genai/pull/3182"
+        },
+        {
+          "title": "Google Gen AI Python SDK — Documentation",
+          "url": "https://googleapis.github.io/python-genai/"
+        }
+      ]
+    }
+  ],
+  "topThreeSuggestions": [
+    {
+      "title": "اجعل عزل shell اختيارًا صريحًا وآمنًا",
+      "problem": "قد ينتهي الإعداد الافتراضي إلى local عندما لا يتوفر Docker أو E2B، وهذا ينفذ أوامر الوكيل تحت حساب المستخدم.",
+      "approach": "إظهار تحذير واضح وإلزام المستخدم بتأكيد local صراحةً، مع تفضيل Docker في الإعداد الأولي وتوثيق حدود mounts والشبكة.",
+      "stack": "Node.js / Docker / CLI validation / node:test",
+      "steps": [
+        "راجع مسار اختيار sandbox والرسائل الحالية.",
+        "أضف تأكيدًا صريحًا قبل اختيار local.",
+        "اختبر أن الإعداد الافتراضي لا ينفذ shell على المضيف دون موافقة.",
+        "وثّق حدود volumes والشبكة والصلاحيات."
+      ],
+      "metric": "صفر جلسات local غير مقصودة في اختبارات بدء التشغيل.",
+      "difficulty": "متوسطة — تقدير بحثي، لا يعني أن التغيير مطلوب قبل مراجعة Issues.",
+      "risks": "قد يزيد خطوات الإعداد للمطورين الذين يريدون تشغيلًا محليًا سريعًا؛ افحص الاختبارات الحالية أولًا.",
+      "sources": [
+        {
+          "title": "Configuration — Sandbox",
+          "url": "https://github.com/yc-software/minecraft-agent-harness/blob/main/docs/configuration.md"
+        },
+        {
+          "title": "Architecture — The sandbox",
+          "url": "https://github.com/yc-software/minecraft-agent-harness/blob/main/docs/architecture.md"
+        }
+      ]
+    },
+    {
+      "title": "ميزانية جلسة ومؤشرات تكلفة اختيارية",
+      "problem": "تتكرر جلسات الوكلاء وقد تتعدد الرسائل والطلبات؛ يحتاج المشغّل رؤية موحدة للاستهلاك والمدة دون تسجيل نصوص حساسة.",
+      "approach": "إضافة ملخص محلي اختياري للمدة وعدد استدعاءات النموذج والرموز المقدرة وحالة الإيقاف، مع إخفاء prompts والردود افتراضيًا.",
+      "stack": "Node.js / JSONL telemetry / provider usage metadata / node:test",
+      "steps": [
+        "راجع telemetry الحالية وواجهات مزودي النماذج.",
+        "حدد حقولًا غير حساسة وموحدة بين المزودين.",
+        "أضف حدًا اختياريًا للمدة أو عدد الاستدعاءات.",
+        "اختبر عدم تسجيل مفاتيح API أو محتوى المحادثة."
+      ],
+      "metric": "نسبة الجلسات التي تعرض مدة واستهلاكًا قابلًا للمراجعة دون تسريب المحتوى.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد تختلف بيانات usage بين المزودين أو تكون غير متاحة؛ لا تعرض تقديرًا كفاتورة دقيقة.",
+      "sources": [
+        {
+          "title": "README",
+          "url": "https://github.com/yc-software/minecraft-agent-harness/blob/main/README.md"
+        },
+        {
+          "title": "Configuration — Model",
+          "url": "https://github.com/yc-software/minecraft-agent-harness/blob/main/docs/configuration.md"
+        }
+      ]
+    },
+    {
+      "title": "إعادة تشغيل سيناريوهات التنسيق من سجلات منقحة",
+      "problem": "نتائج الوكلاء متعددة الأطراف يصعب مقارنتها إذا اختلف العالم والبداية والأحداث بين كل تشغيل.",
+      "approach": "توفير سيناريوهات اختبار صغيرة مع إعداد عالم ثابت وتسجيل أحداث منقح وإعادة تشغيلها لقياس التعاون وتعارض الأدوار.",
+      "stack": "Node.js / Paper test worlds / JSONL / node:test",
+      "steps": [
+        "اختر 3 أهداف لعب تعاونية محدودة.",
+        "ثبّت نسخة العالم وإعدادات الخادم.",
+        "سجل الأوامر والأحداث غير الحساسة بترتيب زمني.",
+        "أعد التشغيل وقارن إنجاز الهدف والرسائل والتعارضات."
+      ],
+      "metric": "قابلية إعادة إنتاج نتائج السيناريو ومعدل إكمال الهدف عبر عدة تشغيلات.",
+      "difficulty": "مرتفعة — تقدير بحثي.",
+      "risks": "العالم والمحاكاة قد لا يكونان حتميين تمامًا؛ لا تصف النتائج بأنها benchmark عام.",
+      "sources": [
+        {
+          "title": "Architecture — The loop",
+          "url": "https://github.com/yc-software/minecraft-agent-harness/blob/main/docs/architecture.md"
+        },
+        {
+          "title": "Y Combinator Labs — Agents in Games",
+          "url": "https://labs.ycombinator.com/projects/games/index.html"
+        }
+      ]
+    }
+  ],
+  "newResearchOnlyProject": {
+    "repository": "yc-software/minecraft-agent-harness",
+    "license": "MIT",
+    "status": "active_new_repo",
+    "feedMatch": false,
+    "published": false,
+    "dossierPath": "editorial/library/minecraft-agent-harness-dossier-2026-10-30-0540.json",
+    "metrics": {
+      "stars": 21,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "MIT",
+      "archived": false,
+      "createdAt": "2026-10-29T05:21:45Z",
+      "updatedAt": "2026-10-30T02:16:00Z",
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "measuredAt": "2026-10-30T05:40:49+03:00",
+      "source": "https://api.github.com/repos/yc-software/minecraft-agent-harness"
+    }
+  },
+  "priorResearchOnlyDossiers": [
+    "editorial/library/google-genai-sdk-dossier-2026-10-30-0255.json"
+  ],
+  "developerIntegrationNotes": [
+    "اعرض كتالوج المشاريع البحثي مستقلًا عن عناصر feed.",
+    "أظهر حالة النشاط والترخيص وتاريخ قياس المؤشرات بجانب كل مشروع.",
+    "ضع شارة «بحث مستقل — غير منشور» للمشروع الجديد ولا تمنحه معرف feed بديلًا.",
+    "لا تعرض quickStart أو مقترحات المشروع كأنها مختبرة.",
+    "حافظ على ترتيب المقترحات السابقة وروابطها؛ حُفظت في previousTopThreeSuggestions بالترتيب نفسه."
+  ],
+  "testEvidence": {
+    "status": "not_run",
+    "commandsNotRun": [
+      "npm ci",
+      "npm run check",
+      "npm run server",
+      "npm start"
+    ],
+    "reason": "تمت قراءة README والتوثيق والترخيص وملفات المتطلبات فقط؛ لم يتم تشغيل المشروع أو خادم Minecraft."
+  }
+}
