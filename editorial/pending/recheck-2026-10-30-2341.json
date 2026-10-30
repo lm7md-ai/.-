@@ -207,7 +207,8 @@
       "python scripts/editorial.py import /tmp/nabdh-editorial-2026-10-30-2341.json",
       "python -m unittest discover -s tests -v"
     ],
-    "reason": "لا توجد نسخة عمل محلية للمستودع أو بيئة تشغيل للبرنامج؛ أُجري تحقق بنيوي مكافئ على الملف الجديد وحُفظ الدمج تزايديًا. سيشغّل PR workflow الفحوص الرسمية على site/data/editorial.json."
+    "reason": "لا توجد نسخة عمل محلية للمستودع أو بيئة تشغيل للبرنامج؛ أُجري تحقق بنيوي مكافئ على الملف الجديد وحُفظ الدمج تزايديًا. سيشغّل PR workflow الفحوص الرسمية على site/data/editorial.json.",
+    "note": "7 سجلات أخبار أُسندت إلى article بعد قراءة المصدر؛ سجل حالة GitHub بقي metadata لأن صفحة الحادثة لم تُقرأ بالكامل."
   },
   "priorCi": {
     "runNumber": 107,
@@ -224,9 +225,23 @@
     "pagesArtifactFeedItems": 800
   },
   "publicationVerification": {
-    "directLiveBrowserFetch": "disabled by web tool",
+    "directLiveBrowserFetch": "تعذر بسبب Cache miss في أداة المتصفح",
     "preCyclePagesArtifactVerified": true,
-    "postCycleDeployment": "pending PR and deployment"
+    "postCycleDeployment": {
+      "runNumber": 108,
+      "runId": 41127489556,
+      "conclusion": "success",
+      "artifactId": 13011940952,
+      "deployedCommit": "6341ee1d6e0a262febaded98a3d274d4cc10cd7b",
+      "editorialEntries": 596,
+      "feedItems": 800,
+      "feedNews": 700,
+      "feedProjects": 100,
+      "feedGeneratedAt": "2026-10-30T20:59:25+00:00",
+      "allEightNewNewsIdsPresent": true,
+      "allEightNewNewsUrlsMatchFeed": true,
+      "maineUpdatedRecordPresent": true
+    }
   },
   "changes": {
     "filesToChange": [
@@ -246,5 +261,13 @@
       "site/styles.css",
       ".github/workflows/update-and-deploy.yml"
     ]
+  },
+  "sourceReadQuality": {
+    "articleReadCount": 7,
+    "metadataOnlyCount": 1,
+    "metadataOnlyIds": [
+      "f0f5eb0ba9f7724c42"
+    ],
+    "reason": "تعذر تحميل صفحة الحادثة الرسمية نفسها؛ استُخدمت حالة GitHub العامة فقط، لذلك صُنّف السجل metadata ولم تُنسب إليه تفاصيل زمنية أو سبب جذري."
   }
 }
