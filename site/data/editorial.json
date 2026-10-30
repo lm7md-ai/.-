@@ -29801,25 +29801,25 @@
     },
     "f0f5eb0ba9f7724c42": {
       "url": "https://www.githubstatus.com/incidents/pwxsjgnvrk6b",
-      "titleAr": "GitHub تعلن تعافي Actions وPages وWebhooks بعد تدهور في الخدمات",
-      "summaryAr": "وفق صفحة حالة GitHub، بدأت الشركة التحقيق في تدهور Actions وWebhooks عند 17:50 UTC يوم 30 أكتوبر، ثم أضافت Pages عند 18:00. أعلنت عند 18:32 أن الخدمات المتأثرة تعافت وبدأت المراقبة، ثم سجلت الحادثة كمحلولة عند 19:23 UTC. بقي السبب الجذري قيد التحقيق في التحديث المنشور.",
-      "whyItMatters": "تعطل خدمات CI والنشر قد يؤخر اختبارات المشروع ووصول الموقع حتى لو كانت الشيفرة سليمة. لذلك يجب التحقق من نجاح الـworkflow ومن وجود الملفات المنشورة فعلًا، لا الاكتفاء بوجود commit.",
+      "titleAr": "سجل حالة GitHub يشير إلى حادثة تخص Actions وPages وWebhooks",
+      "summaryAr": "تحتوي التغذية الحالية على سجل بعنوان Incident with Actions, Pages, and Webhooks يشير إلى حادثة تتعلق بخدمات GitHub Actions وPages وWebhooks. صفحة الحالة العامة التي أمكن فتحها تعرض حاليًا أن جميع الأنظمة تعمل؛ تعذر تحميل صفحة الحادثة نفسها في هذه المراجعة.",
+      "whyItMatters": "تأخر خدمات التكامل المستمر والنشر قد يمنع وصول التغييرات إلى الموقع حتى لو كانت ملفات المشروع سليمة. لذلك ينبغي التحقق من نجاح workflow ومن وجود الملفات المنشورة فعلًا، لا الاكتفاء بوجود commit.",
       "audience": "مطورون، مسؤولو CI/CD، أصحاب مواقع GitHub Pages، وفرق المشاريع المفتوحة.",
       "nextSteps": [
-        "افحص صفحة الحالة عند تأخر Actions أو Pages.",
-        "احتفظ بخطة إعادة المحاولة وتجنب تكرار الكتابة اليدوية للبيانات.",
-        "بعد النشر تحقق من ملفات البيانات المنشورة والروابط العميقة."
+        "افحص صفحة الحالة الرسمية عند تأخر Actions أو Pages.",
+        "بعد نجاح workflow تحقق من وجود ملف البيانات في artifact المنشور.",
+        "احتفظ بخطة إعادة المحاولة ولا تكرر تعديلات البيانات يدويًا أثناء العطل."
       ],
-      "limitations": "صفحة الحالة الرسمية تؤكد التعافي لكنها لم تعرض تحليل السبب الجذري عند وقت المراجعة؛ نطاق التأثير الدقيق يظل وفق تحديثات GitHub.",
+      "limitations": "لم تُقرأ صفحة الحادثة الأصلية بالكامل؛ لذلك لا نثبت وقت البداية أو النهاية أو السبب الجذري أو نطاق التأثير. الملخص مبني على عنوان سجل التغذية وحالة صفحة GitHub العامة وقت المراجعة.",
       "reviewedAt": "2026-10-30T23:41:24+03:00",
-      "basis": "article",
+      "basis": "metadata",
       "sources": [
         {
-          "title": "GitHub Status: Incident with Actions, Pages, and Webhooks",
+          "title": "GitHub Status incident: Incident with Actions, Pages, and Webhooks",
           "url": "https://www.githubstatus.com/incidents/pwxsjgnvrk6b"
         },
         {
-          "title": "GitHub Status",
+          "title": "GitHub Status — current component status",
           "url": "https://www.githubstatus.com/"
         }
       ]
