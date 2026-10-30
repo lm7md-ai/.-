@@ -1,0 +1,273 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-30T21:12:00+03:00",
+  "baseMainSha": "8d6032946309cd2bae599f67f0d3b7a18f558374",
+  "feedGeneratedAt": "2026-10-30T18:04:46+00:00",
+  "counts": {
+    "incomingFilesBeforeCurrentBatch": 56,
+    "incomingRowsBeforeCurrentBatch": 541,
+    "currentBatchFiles": 1,
+    "currentBatchRows": 8,
+    "incomingFilesAfterCurrentBatch": 57,
+    "incomingRowsAfterCurrentBatch": 549,
+    "currentFeedItems": 800,
+    "currentFeedNews": 700,
+    "currentFeedProjects": 100,
+    "editorialBefore": 580,
+    "editorialAfter": 588,
+    "seenIds": 2041,
+    "seenTitles": 1911,
+    "alreadyImportedExactCurrentFeed": 280,
+    "alreadyImportedExactOutsideCurrentFeed": 258,
+    "seenOnlyNotInFeedOrEditorial": 3,
+    "exactFeedUnimported": 0,
+    "idUrlMismatches": 0,
+    "urlUnderDifferentId": 1,
+    "editorialUrlMismatches": 0,
+    "notInFeedNotSeen": 0,
+    "structuralValidationErrors": 0,
+    "legacyNextStepsGaps": 8,
+    "legacyNextStepsPatchedCurrentFeed": 5,
+    "legacyNextStepsHeldHistorical": 3
+  },
+  "filesReviewed": [
+    "nabdh-editorial-2026-10-24-0542.json",
+    "nabdh-editorial-2026-10-24-0840.json",
+    "nabdh-editorial-2026-10-24-1143.json",
+    "nabdh-editorial-2026-10-24-1439.json",
+    "nabdh-editorial-2026-10-24-1740.json",
+    "nabdh-editorial-2026-10-24-2043.json",
+    "nabdh-editorial-2026-10-24-2342.json",
+    "nabdh-editorial-2026-10-24.json",
+    "nabdh-editorial-2026-10-25-0250.json",
+    "nabdh-editorial-2026-10-25-0554.json",
+    "nabdh-editorial-2026-10-25-0845.json",
+    "nabdh-editorial-2026-10-25-1143.json",
+    "nabdh-editorial-2026-10-25-1442.json",
+    "nabdh-editorial-2026-10-25-1742.json",
+    "nabdh-editorial-2026-10-25-2038.json",
+    "nabdh-editorial-2026-10-25-2342.json",
+    "nabdh-editorial-2026-10-26-0250.json",
+    "nabdh-editorial-2026-10-26-0545.json",
+    "nabdh-editorial-2026-10-26-0840.json",
+    "nabdh-editorial-2026-10-26-1152.json",
+    "nabdh-editorial-2026-10-26-1445.json",
+    "nabdh-editorial-2026-10-26-1745.json",
+    "nabdh-editorial-2026-10-26-2042.json",
+    "nabdh-editorial-2026-10-26-2342.json",
+    "nabdh-editorial-2026-10-27-0038.json",
+    "nabdh-editorial-2026-10-27-0240.json",
+    "nabdh-editorial-2026-10-27-0549.json",
+    "nabdh-editorial-2026-10-27-0619.json",
+    "nabdh-editorial-2026-10-27-0847.json",
+    "nabdh-editorial-2026-10-27-1141.json",
+    "nabdh-editorial-2026-10-27-1443.json",
+    "nabdh-editorial-2026-10-27-2045.json",
+    "nabdh-editorial-2026-10-27-2113.json",
+    "nabdh-editorial-2026-10-27-2347.json",
+    "nabdh-editorial-2026-10-28-0244.json",
+    "nabdh-editorial-2026-10-28-0555.json",
+    "nabdh-editorial-2026-10-28-0609.json",
+    "nabdh-editorial-2026-10-28-0846.json",
+    "nabdh-editorial-2026-10-28-0914.json",
+    "nabdh-editorial-2026-10-28-0943.json",
+    "nabdh-editorial-2026-10-28-1151.json",
+    "nabdh-editorial-2026-10-28-2045.json",
+    "nabdh-editorial-2026-10-29-0243.json",
+    "nabdh-editorial-2026-10-29-0319.json",
+    "nabdh-editorial-2026-10-29-0559.json",
+    "nabdh-editorial-2026-10-29-0855.json",
+    "nabdh-editorial-2026-10-29-1145.json",
+    "nabdh-editorial-2026-10-29-1525.json",
+    "nabdh-editorial-2026-10-29-1755.json",
+    "nabdh-editorial-2026-10-29-2045.json",
+    "nabdh-editorial-2026-10-30-0255.json",
+    "nabdh-editorial-2026-10-30-0540.json",
+    "nabdh-editorial-2026-10-30-0839.json",
+    "nabdh-editorial-2026-10-30-1146.json",
+    "nabdh-editorial-2026-10-30-1442.json",
+    "nabdh-editorial-2026-10-30-1811.json"
+  ],
+  "classificationNotes": [
+    "قورنت مفاتيح id وروابط url حرفيًا؛ لم تُنشأ هوية بديلة من العنوان.",
+    "من 541 سجلًا في 56 ملفًا سابقًا، 538 موجودة مسبقًا في editorial بنفس id وurl؛ منها 280 تطابق التغذية الحالية و258 خارج التغذية الحالية.",
+    "3 سجلات موجودة في seen فقط ولا توجد في feed أو editorial؛ لم تُستورد وتحتاج إعادة دخولها إلى التغذية.",
+    "يوجد تعارض URL واحد: سجل rasbt/LLMs-from-scratch بالمعرف 7a99eca9b2ce14d9f5 محفوظ تاريخيًا، بينما يظهر الرابط نفسه في feed تحت المعرف e0cbbf211a55e79f34؛ لم يُنشأ معرف بديل ولم يُدمج السجلان.",
+    "لا توجد سجلات مطابقة للتغذية وغير مستوردة ضمن التراكم التاريخي.",
+    "دفعة PR الحالية تضيف 7 أخبار ومشروعًا واحدًا؛ جميع المعرفات والروابط الثمانية تطابق feed الحالي حرفيًا."
+  ],
+  "specialRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "label": "NVIDIA OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "inSeen": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "researchDossierPresent": true,
+      "status": "seen_only_pending_reentry"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "label": "Canva Craft",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "inSeen": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "researchDossierPresent": false,
+      "status": "seen_only_pending_reentry"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "label": "1Password agent sign-in",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "inSeen": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "researchDossierPresent": false,
+      "status": "seen_only_pending_reentry"
+    }
+  ],
+  "legacyNextStepsGaps": [
+    {
+      "id": "7a99eca9b2ce14d9f5",
+      "repository": "rasbt/LLMs-from-scratch",
+      "inCurrentFeed": false,
+      "action": "historical; URL now appears in feed under e0cbbf211a55e79f34; keep original editorial ID, do not re-import or merge by title pending manual identity review."
+    },
+    {
+      "id": "a6f998d4efb0307b47",
+      "repository": "HKUDS/nanobot",
+      "inCurrentFeed": false,
+      "action": "historical; unchanged"
+    },
+    {
+      "id": "38c3408d933af173aa",
+      "repository": "DietrichGebert/ponytail",
+      "inCurrentFeed": true,
+      "action": "nextSteps added"
+    },
+    {
+      "id": "6d3bd03b499863301f",
+      "repository": "calesthio/OpenMontage",
+      "inCurrentFeed": true,
+      "action": "nextSteps added"
+    },
+    {
+      "id": "55f45778dbc81d6a27",
+      "repository": "leon-ai/leon",
+      "inCurrentFeed": true,
+      "action": "nextSteps added"
+    },
+    {
+      "id": "00a13632669d98d0bc",
+      "repository": "promptslab/Awesome-Prompt-Engineering",
+      "inCurrentFeed": true,
+      "action": "nextSteps added"
+    },
+    {
+      "id": "c60b77ce50fb891064",
+      "repository": "ruvnet/ruflo",
+      "inCurrentFeed": false,
+      "action": "historical; unchanged"
+    },
+    {
+      "id": "b98f0560cd5ec2475d",
+      "repository": "jianchang512/pyVideoTrans",
+      "inCurrentFeed": true,
+      "action": "nextSteps added"
+    }
+  ],
+  "validation": {
+    "officialScriptPath": "scripts/editorial.py",
+    "officialCommandsNotRunLocally": [
+      "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-10-30-2044.json",
+      "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-10-30-2044.json",
+      "python -m unittest discover -s tests -v"
+    ],
+    "reason": "تعذر إنشاء checkout محلي لأن الاتصال بـgithub.com من بيئة التنفيذ غير متاح؛ طُبق تحقق بنيوي مكافئ لقواعد validate على incoming والملف المدمج. سيشغّل workflow الفحص الرسمي اختبارات الوحدة وvalidate على editorial.json بعد تحديث PR.",
+    "newIncomingStructuralErrors": 0,
+    "allIncomingStructuralErrors": 0,
+    "mergedEditorialStructuralErrors": 0,
+    "checks": [
+      "version=1/items object",
+      "HTTPS URL without credentials",
+      "titleAr/summaryAr/whyItMatters",
+      "sources 1-20 HTTPS",
+      "reviewedAt timezone and not >10 minutes future",
+      "basis enum and testEvidence when tested",
+      "optional text fields",
+      "nextSteps 1-10 when present",
+      "proposal schema and 3-12 steps"
+    ],
+    "importMethod": "دمج تزايدي مكافئ لمنطق merge_documents: الاحتفاظ بجميع السجلات القديمة، تحديث خمس بطاقات نشطة بإضافة nextSteps فقط، وإضافة ثمانية معرفات جديدة بعد مطابقة id/url. لم يُستبدل editorial.json بملف incoming.",
+    "ciWorkflow": "check.yml runs python -m unittest discover -s tests -v; python scripts/editorial.py validate; node --check site/app.js && node --check site/ideas.js",
+    "ciStatusBeforeRevision": "success on prior PR head; final revised head awaits its own run."
+  },
+  "changes": {
+    "newNews": 7,
+    "newFeedProjects": 1,
+    "newEditorialIds": 8,
+    "activeExistingCardsPatched": [
+      "38c3408d933af173aa",
+      "6d3bd03b499863301f",
+      "55f45778dbc81d6a27",
+      "00a13632669d98d0bc",
+      "b98f0560cd5ec2475d"
+    ],
+    "feedJsonChanged": false,
+    "seenJsonChanged": false,
+    "statusJsonChanged": false,
+    "siteCodeChanged": false,
+    "designChanged": false,
+    "workflowsChanged": false,
+    "publicationSettingsChanged": false,
+    "paidServicesUsed": false
+  },
+  "expiryAssessment": {
+    "confirmedExpired": 0,
+    "outOfFeedHistorical": 258,
+    "note": "غياب السجل عن feed لا يثبت انقضاءه. لم تُصنّف السجلات التاريخية على أنها منقضية دون تاريخ نشر موثوق لكل عنصر."
+  },
+  "currentBatch": {
+    "file": "editorial/incoming/nabdh-editorial-2026-10-30-2044.json",
+    "records": 8,
+    "news": 7,
+    "projects": 1,
+    "exactFeedIdUrlMatches": 8,
+    "newEditorialIds": 8,
+    "editorialBefore": 580,
+    "editorialAfter": 588,
+    "status": "prepared_in_PR_73_before_merge",
+    "reviewedAt": "2026-10-30T21:12:00+03:00",
+    "basisCounts": {
+      "article": 5,
+      "metadata": 2,
+      "readme": 1
+    }
+  },
+  "postMergeExpected": {
+    "incomingFiles": 57,
+    "incomingRows": 549,
+    "editorialEntries": 588,
+    "historicalProjectCatalogEntries": 37
+  },
+  "qualityExclusions": [
+    {
+      "candidate": "AI Isn't Replacing SREs. It's Deskilling Them.",
+      "reason": "المصدر الأصلي مؤرخ 28 فبراير 2026، لا 30 أكتوبر كما قد يوحي سياق التغذية؛ استُبعد من دفعة الأخبار الحالية."
+    },
+    {
+      "candidate": "Zest AI restaurant discovery/booking",
+      "reason": "تعذر فتح رابط المصدر الأصلي في هذه الدورة؛ لم يُعتمد ملخص metadata وحده."
+    },
+    {
+      "candidate": "GitHub Status incident pwxsjgnvrk6b",
+      "reason": "تعذر التحقق من صفحة الحادثة؛ صفحة الحالة الرسمية الحالية تعرض الخدمات الأساسية على أنها Operational، لذلك لم يُنشر كحادث مؤكد."
+    },
+    {
+      "candidate": "ادعاءات أكاديمية سعودية/شراكة Adobe-HUMAIN",
+      "reason": "لم يُعثر في هذه الدورة على بيان أولي رسمي يثبت التفاصيل المعلنة؛ لم تُنشر."
+    }
+  ]
+}
