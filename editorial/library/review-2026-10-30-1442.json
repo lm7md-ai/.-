@@ -1,0 +1,249 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-30T14:42:19+03:00",
+  "baseMainSha": "8b369795c4ce48e7cd1b53e11760ed3c84edff3b",
+  "previousEight": [
+    {
+      "repository": "gradio-app/gradio",
+      "stars": 43930,
+      "forks": 3655,
+      "openIssues": 122,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-30T11:32:10Z",
+      "updatedAt": "2026-10-30T10:06:32Z",
+      "measuredAt": "2026-10-30T14:42:19+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/gradio-app/gradio"
+    },
+    {
+      "repository": "thedotmack/claude-mem",
+      "stars": 105323,
+      "forks": 9287,
+      "openIssues": 124,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-30T03:07:33Z",
+      "updatedAt": "2026-10-30T11:47:03Z",
+      "measuredAt": "2026-10-30T14:42:19+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/thedotmack/claude-mem"
+    },
+    {
+      "repository": "ultralytics/ultralytics",
+      "stars": 62984,
+      "forks": 11937,
+      "openIssues": 82,
+      "license": "AGPL-3.0",
+      "archived": false,
+      "pushedAt": "2026-10-30T10:57:37Z",
+      "updatedAt": "2026-10-30T10:57:57Z",
+      "measuredAt": "2026-10-30T14:42:19+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/ultralytics/ultralytics"
+    },
+    {
+      "repository": "harry0703/MoneyPrinterTurbo",
+      "stars": 136428,
+      "forks": 21717,
+      "openIssues": 79,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-30T03:00:50Z",
+      "updatedAt": "2026-10-30T11:47:58Z",
+      "measuredAt": "2026-10-30T14:42:19+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/harry0703/MoneyPrinterTurbo"
+    },
+    {
+      "repository": "microsoft/AI-For-Beginners",
+      "stars": 70379,
+      "forks": 13682,
+      "openIssues": 28,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-23T23:55:14Z",
+      "updatedAt": "2026-10-30T11:15:06Z",
+      "measuredAt": "2026-10-30T14:42:19+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/microsoft/AI-For-Beginners"
+    },
+    {
+      "repository": "usebruno/bruno",
+      "stars": 47946,
+      "forks": 3058,
+      "openIssues": 1969,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-30T10:42:08Z",
+      "updatedAt": "2026-10-30T10:42:20Z",
+      "measuredAt": "2026-10-30T14:42:19+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/usebruno/bruno"
+    },
+    {
+      "repository": "keras-team/keras",
+      "stars": 64397,
+      "forks": 19809,
+      "openIssues": 272,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-30T03:04:56Z",
+      "updatedAt": "2026-10-30T09:48:43Z",
+      "measuredAt": "2026-10-30T14:42:19+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/keras-team/keras"
+    },
+    {
+      "repository": "k2-fsa/sherpa-onnx",
+      "stars": 15622,
+      "forks": 1830,
+      "openIssues": 634,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-29T12:00:57Z",
+      "updatedAt": "2026-10-30T11:44:12Z",
+      "measuredAt": "2026-10-30T14:42:19+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/k2-fsa/sherpa-onnx"
+    }
+  ],
+  "previousEightSummary": {
+    "total": 8,
+    "activeNotArchived": 8,
+    "archived": 0,
+    "licenseFlags": [
+      "AGPL-3.0 for Ultralytics; check intended distribution obligations"
+    ],
+    "note": "Counts are GitHub API snapshots, not quality rankings; licenses are metadata values, not legal advice."
+  },
+  "historicalLibrary": {
+    "total": 35,
+    "archived": 2,
+    "nonArchived": 33,
+    "inCurrentFeed": 4,
+    "notInFeed": 31,
+    "licenseNeedsUpstreamVerification": 7,
+    "measuredAt": "2026-10-30T14:42:19+03:00"
+  },
+  "researchOnlyAddition": {
+    "repository": "pydantic/pydantic-ai",
+    "file": "editorial/library/pydantic-ai-dossier-2026-10-30-1442.json",
+    "published": false,
+    "feedId": null,
+    "stars": 20955,
+    "forks": 3067,
+    "openIssues": 1630,
+    "license": "MIT",
+    "measuredAt": "2026-10-30T14:42:19+03:00"
+  },
+  "topThreeSuggestions": [
+    {
+      "title": "ميزانية استخدام وتكلفة لكل تشغيل",
+      "problem": "يصعب مقارنة تكلفة الوكيل بين مزودين إذا لم توحّد سجلات الاستخدام والاستجابة.",
+      "approach": "سجل بيانات الاستخدام التي يتيحها كل مزود في مخطط موحد، ثم أضف ميزانية وتحذيرًا قبل تجاوز حد يحدده المشغل.",
+      "stack": "Python / Pydantic / SQLite / pytest / provider usage metadata",
+      "steps": [
+        "عرّف سجلًا موحدًا لكل استدعاء مع اسم المزود والطراز دون حفظ المفاتيح.",
+        "اجمع حقول الاستخدام المتاحة من استجابة المزود.",
+        "اربط الأسعار بمصدر مؤرخ وقابل للتحديث، ولا تفترض توافرها لكل مزود.",
+        "أضف حدًا اختياريًا وتحذيرًا قبل إكمال التشغيل.",
+        "اختبر حالات غياب بيانات الاستخدام وتغير الأسعار."
+      ],
+      "metric": "نسبة التشغيلات ذات سجل استخدام مكتمل، وفارق تقدير التكلفة عن الفاتورة الفعلية.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد لا يعيد بعض المزودين بيانات استخدام كاملة، وتتغير الأسعار؛ لا تعرض تقديرًا على أنه فاتورة نهائية.",
+      "sources": [
+        {
+          "title": "المستودع الرسمي وREADME",
+          "url": "https://github.com/pydantic/pydantic-ai"
+        },
+        {
+          "title": "دليل التثبيت الرسمي",
+          "url": "https://pydantic.dev/docs/ai/overview/install/"
+        },
+        {
+          "title": "مفاهيم الوكلاء",
+          "url": "https://pydantic.dev/docs/ai/core-concepts/agent/"
+        }
+      ]
+    },
+    {
+      "title": "صلاحيات دقيقة لأدوات الوكيل مع موافقة بشرية",
+      "problem": "قد يستدعي الوكيل أداة ذات أثر خارجي رغم أن المهمة تحتاج قراءة فقط.",
+      "approach": "ضع طبقة سياسات تصف صلاحيات كل أداة، وتطلب موافقة صريحة قبل الكتابة أو الإرسال أو الحذف.",
+      "stack": "Python / Pydantic / MCP / audit log / pytest",
+      "steps": [
+        "صنّف الأدوات إلى قراءة وكتابة واتصال خارجي.",
+        "أضف مخطط صلاحية لكل أداة ومدخلاتها المسموحة.",
+        "اجعل الأفعال ذات الأثر الخارجي تتطلب موافقة منفصلة.",
+        "سجل القرار والنتيجة دون تخزين الأسرار.",
+        "اختبر رفض الأدوات خارج النطاق."
+      ],
+      "metric": "عدد محاولات الأداة خارج الصلاحية التي تم منعها، مع معدل الرفض الخاطئ.",
+      "difficulty": "مرتفعة — تقدير بحثي.",
+      "risks": "سياسة صارمة قد تعطل مهام سليمة؛ والسجل نفسه يحتاج تنقيحًا حتى لا يكشف بيانات خاصة.",
+      "sources": [
+        {
+          "title": "مفاهيم الوكلاء",
+          "url": "https://pydantic.dev/docs/ai/core-concepts/agent/"
+        },
+        {
+          "title": "أدوات الوكيل",
+          "url": "https://pydantic.dev/docs/ai/tools-toolsets/tools/"
+        },
+        {
+          "title": "اختبار الوكلاء",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/testing.md"
+        }
+      ]
+    },
+    {
+      "title": "مجموعة تقييم عربية قابلة لإعادة الإنتاج",
+      "problem": "قد تبدو إجابات الوكيل سليمة لغويًا بينما تفشل في صحة المعلومة أو الالتزام بالمصدر.",
+      "approach": "أنشئ مجموعة أسئلة عربية مع إجابات مرجعية ومعايير منفصلة للصحة والإسناد وسلامة استدعاء الأدوات.",
+      "stack": "Python / Pydantic Evals / pytest / JSONL",
+      "steps": [
+        "اختر نطاقًا ضيقًا ومصادر موثوقة قابلة للمراجعة.",
+        "اكتب أمثلة نجاح وفشل وحالات لا تكفيها المصادر.",
+        "حدد مقاييس منفصلة للصحة والاستشهاد والامتناع المناسب.",
+        "شغّل التقييم على أكثر من إعداد ومزود.",
+        "احفظ النتائج مع نسخة البيانات وإصدار النموذج."
+      ],
+      "metric": "تغير درجات الصحة والإسناد بين الإصدارات، ومعدل الحالات التي تحتاج مراجعة بشرية.",
+      "difficulty": "متوسطة إلى مرتفعة — تقدير بحثي.",
+      "risks": "قد تنحاز مجموعة صغيرة إلى لهجة أو مجال واحد؛ ومقيّم النموذج قد يخطئ أيضًا.",
+      "sources": [
+        {
+          "title": "اختبار الوكلاء",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/testing.md"
+        },
+        {
+          "title": "Pydantic Evals",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/evals.md"
+        }
+      ]
+    }
+  ],
+  "incomingAudit": {
+    "files": 54,
+    "rows": 537,
+    "exactFeedAndEditorial": 304,
+    "alreadyImportedHistoricalOutOfFeed": 230,
+    "unmatchedNotImported": 3,
+    "idUrlMismatches": 0,
+    "structurallyValidFiles": 54,
+    "structuralErrors": 0
+  },
+  "publicationBaseline": {
+    "workflowRun": 41037202539,
+    "artifactId": 12968467413,
+    "headSha": "4832ed88eb694a514265d825986a5b3ab72991a7",
+    "artifactEditorialRecords": 576,
+    "artifactFeedItems": 800,
+    "artifactDownloadedAndInspected": true,
+    "liveHttpCheck": "not available from this execution environment"
+  },
+  "validation": {
+    "ciRun": 41037202539,
+    "unitTestCommand": "python -m unittest discover -s tests -v",
+    "unitTests": 30,
+    "unitTestResult": "OK",
+    "officialEditorialValidator": "python scripts/editorial.py validate",
+    "validatedEntries": 576,
+    "localCliExecuted": false
+  },
+  "testEvidence": "No Pydantic AI code was installed or executed; documentation-only research. The repository's CI test result above applies to Nabdh, not to Pydantic AI."
+}
