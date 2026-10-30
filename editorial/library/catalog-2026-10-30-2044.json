@@ -1,30 +1,19 @@
 {
   "version": 1,
-  "compiledAt": "2026-10-30T20:44:18+03:00",
-  "note": "مكتبة بحثية تراكمية مستقلة عن نافذة اكتشاف GitHub؛ 34 مشروعًا، مع فصل العناصر الموجودة في التغذية عن ملفات البحث المستقلة.",
-  "metricsWarning": "لا تقارن النجوم أو issues بين مستودعات بقياسات من أوقات مختلفة كأنها متزامنة؛ راجع metricCapturedAt وcurrentSnapshot.measuredAt لكل سجل.",
-  "measurementWindow": "2026-10-30T20:44:18+03:00",
+  "compiledAt": "2026-10-30T21:12:00+03:00",
+  "note": "Cumulative research-only catalog; 36 entries. Existing order and historical entries are retained; uv is appended as priority 36.",
+  "metricsWarning": "GitHub stars/forks/issues are snapshots, not quality measures. Existing entries retain their own capture dates unless a newer timestamp is explicitly recorded.",
+  "measurementWindow": "2026-10-30T21:12:00+03:00 for AI Engineering Hub and the eight previous projects; older historical entries retain their own measuredAt values.",
   "statusSummary": {
-    "total": 34,
+    "total": 37,
     "archived": 2,
-    "nonArchived": 32,
+    "nonArchived": 35,
     "inCurrentFeed": 5,
-    "notInFeed": 29,
+    "notInFeed": 32,
     "licenseNeedsUpstreamVerification": 7,
     "enrichedInCurrentFeed": 5
   },
-  "developerIntegrationNotes": [
-    "Provide a separate historical projects catalog independent of the 45-day GitHub discovery window.",
-    "Keep durable canonical GitHub repository identity and documented status rather than using active feed IDs for out-of-feed projects.",
-    "Do not purge library dossiers when feed items rotate; maintain persistent links for bookmarks.",
-    "Show license and activity measurement timestamps and mark archived/mirror projects explicitly.",
-    "Do not use cumulative GitHub stars as current popularity.",
-    "اعرض المستودعات البحثية غير الموجودة في feed بوضوح على أنها research-only؛ لا تنشئ معرفات feed بديلة.",
-    "أظهر measuredAt لكل لقطة، ولا تقارن مؤشرات التوقيتات المختلفة كأنها متزامنة.",
-    "AI Engineering Hub مجموعة مشاريع متعددة؛ اعرض متطلبات كل مجلد على حدة ولا توحّدها في أمر تثبيت واحد.",
-    "uv أداة إدارة Python مستقلة غير موجودة في التغذية الحالية؛ احتفظ بها في المكتبة البحثية دون اختراع Feed ID.",
-    "المشاريع غير الموجودة في feed تبقى research-only مع روابطها الأصلية ووقت قياس المؤشرات."
-  ],
+  "developerIntegrationNotes": "Provide a separate historical projects catalog independent of the 45-day GitHub discovery window.,Keep durable canonical GitHub repository identity and documented status rather than using active feed IDs for out-of-feed projects.,Do not purge library dossiers when feed items rotate; maintain persistent links for bookmarks.,Show license and activity measurement timestamps and mark archived/mirror projects explicitly.,Do not use cumulative GitHub stars as current popularity.,اعرض المستودعات البحثية غير الموجودة في feed بوضوح على أنها research-only؛ لا تنشئ معرفات feed بديلة.,أظهر measuredAt لكل لقطة، ولا تقارن مؤشرات التوقيتات المختلفة كأنها متزامنة. Lasm is research-only and not in the project feed; do not add it to public project cards without a later explicit editorial review. NVIDIA/OpenShell is research-only and absent from feed. Future library UI should show «بحث فقط — غير منشور», measuredAt, Apache-2.0, supported platforms, requirements, local/cloud costs, alternatives and limitations; no feed ID or run/publish button. Show Pydantic AI as research-only, not in feed; display Python 3.11+, MIT, measuredAt, local Ollama vs cloud API costs, alternatives and limitations; no feed ID or run/publish button. Show uv as research-only, not in feed; display MIT OR Apache-2.0, measuredAt, standalone install, local versus CI costs, quickStart and alternatives. Do not assign a feed ID or show run/publish actions. Show AI Engineering Hub with its exact feed ID fe0e6bfdbdd5822139. Detail view should label it as a collection of independent tutorials, show per-folder requirements and quickStart, local/cloud cost, license caveats, alternatives, limitations, and the 4 improvements plus 4 spinoffs in preserved order. Do not show a tested badge or run action; testStatus is not_run.",
   "entries": [
     {
       "priority": 1,
@@ -1827,163 +1816,380 @@
     },
     {
       "priority": 33,
-      "repository": "patchy631/ai-engineering-hub",
-      "url": "https://github.com/patchy631/ai-engineering-hub",
-      "category": "تعليم وهندسة الذكاء الاصطناعي",
-      "classification": "active_educational_repository",
+      "repository": "Millillion/lasm",
+      "url": "https://github.com/Millillion/lasm",
+      "category": "أدوات Lean وWebAssembly والتحقق الشكلي",
+      "classification": "experimental_new_repo",
       "archived": false,
-      "starsMeasured": 38479,
-      "metricCapturedAt": "2026-10-30T20:44:18+03:00",
+      "starsMeasured": 45,
+      "metricCapturedAt": "2026-10-30T05:39:48Z",
       "licenseApiValue": "MIT",
       "licenseNeedsUpstreamVerification": false,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "Official GitHub API metadata, README and upstream license files inspected; no code execution. Metrics are a dated snapshot.",
-      "overviewShort": "مجموعة تعليمية لمشاريع LLM وRAG والوكلاء وMCP؛ متطلبات كل مجلد مستقلة.",
-      "proposedResearchOrBuild": "إضافة قفل اعتماديات واختبارات smoke ومصفوفة خصوصية وتكلفة لكل مثال.",
-      "inCurrentFeed": true,
-      "feedId": "fe0e6bfdbdd5822139",
-      "siteVisibility": "in feed; editorial enriched by exact ID and URL",
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "Official GitHub metadata and README, AI, Edge, WASI, JS bindings, deployment docs, package.json and LICENSE inspected; no code execution.",
+      "overviewShort": "سلسلة أدوات تترجم Lean 4 مسبقًا إلى WebAssembly لأهداف Node وBun وDeno والمتصفح وWASI وبيئات edge.",
+      "proposedResearchOrBuild": "قالب تعليمي محلي يربط Lean proofs بواجهات HTTP مع بيان دقيق لحدود كل runtime.",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "relatedNewsId": "b5636e2775ac4bb7c9",
+      "siteVisibility": "research-only; not published; related feed item is a news item, not a project card",
       "sources": [
         {
+          "title": "GitHub repository metadata",
+          "url": "https://api.github.com/repos/Millillion/lasm"
+        },
+        {
           "title": "README",
-          "url": "https://github.com/patchy631/ai-engineering-hub/blob/main/README.md"
+          "url": "https://github.com/Millillion/lasm/blob/main/README.md"
         },
         {
           "title": "LICENSE",
-          "url": "https://github.com/patchy631/ai-engineering-hub/blob/main/LICENSE"
+          "url": "https://github.com/Millillion/lasm/blob/main/LICENSE"
         },
         {
-          "title": "AI Engineering Roadmap",
-          "url": "https://github.com/patchy631/ai-engineering-hub/blob/main/ai-engineering-roadmap/README.md"
+          "title": "Edge guide",
+          "url": "https://github.com/Millillion/lasm/blob/main/docs/EDGE.md"
+        },
+        {
+          "title": "WASI guide",
+          "url": "https://github.com/Millillion/lasm/blob/main/docs/WASI.md"
         }
       ],
       "disabled": false,
-      "forksMeasured": 6341,
-      "metricsCaptureWindow": "2026-10-30T17:44:18Z",
-      "lastPushedAt": "2026-10-30T12:36:39Z",
-      "lastUpdatedAt": "2026-10-30T17:48:43Z",
+      "forksMeasured": 3,
+      "openIssuesMeasured": 1,
+      "metricsCaptureWindow": "2026-10-30T05:39:48Z",
+      "lastPushedAt": "2026-10-29T01:41:21Z",
+      "lastUpdatedAt": "2026-10-30T05:43:50Z",
       "defaultBranch": "main",
-      "language": "Jupyter Notebook",
+      "language": "C",
       "licenseName": "MIT License",
-      "licenseSummary": "MIT في LICENSE الجذر؛ تراخيص النماذج والبيانات والاعتماديات الفرعية تحتاج مراجعة مستقلة.",
-      "licenseEvidence": "LICENSE الرسمي في جذر المستودع قُرئ؛ لم تُراجع تراخيص كل نموذج أو أصل فرعي.",
-      "activityStatus": "active_recent_push",
+      "licenseSummary": "MIT; README notes that templates/examples include MIT-0; third-party dependency licenses require separate review.",
+      "licenseEvidence": "Official LICENSE text inspected; README license notes inspected; no legal advice.",
+      "activityStatus": "active_recent_push_new_repository",
       "alternativeProjects": [
         {
-          "repository": "run-llama/llama_index",
-          "url": "https://github.com/run-llama/llama_index",
-          "status": "active_framework"
+          "repository": "leanprover/lean4",
+          "url": "https://github.com/leanprover/lean4",
+          "status": "native_Lean_compiler_adjacent_alternative"
         },
         {
-          "repository": "langchain-ai/langchain",
-          "url": "https://github.com/langchain-ai/langchain",
-          "status": "active_framework"
+          "repository": "AssemblyScript/assemblyscript",
+          "url": "https://github.com/AssemblyScript/assemblyscript",
+          "status": "WebAssembly_language_alternative"
+        },
+        {
+          "repository": "bytecodealliance/wasmtime",
+          "url": "https://github.com/bytecodealliance/wasmtime",
+          "status": "WASI_runtime_adjacent_alternative"
+        },
+        {
+          "repository": "rust-lang/rust",
+          "url": "https://github.com/rust-lang/rust",
+          "status": "systems_language_WebAssembly_alternative"
         }
       ],
-      "metricSource": "https://api.github.com/repos/patchy631/ai-engineering-hub",
-      "editorialEnriched": true,
-      "editorialUrlMatches": true,
+      "metricSource": "https://api.github.com/repos/Millillion/lasm",
+      "editorialEnriched": false,
+      "editorialUrlMatches": false,
       "currentSnapshot": {
-        "stars": 38479,
-        "forks": 6341,
-        "openIssues": 130,
+        "stars": 45,
+        "forks": 3,
+        "openIssues": 1,
         "archived": false,
         "disabled": false,
         "licenseSpdx": "MIT",
-        "pushedAt": "2026-10-30T12:36:39Z",
-        "updatedAt": "2026-10-30T17:48:43Z",
+        "pushedAt": "2026-10-29T01:41:21Z",
+        "updatedAt": "2026-10-30T05:43:50Z",
         "defaultBranch": "main",
-        "measuredAt": "2026-10-30T20:44:18+03:00",
-        "sourceApiUrl": "https://api.github.com/repos/patchy631/ai-engineering-hub"
+        "measuredAt": "2026-10-30T08:39:48+03:00",
+        "sourceApiUrl": "https://api.github.com/repos/Millillion/lasm"
       },
       "currentStatus": "active_not_archived",
-      "currentLicenseStatus": "SPDX_detected_full_text_inspected"
+      "currentLicenseStatus": "license_text_inspected"
     },
     {
       "priority": 34,
-      "repository": "astral-sh/uv",
-      "url": "https://github.com/astral-sh/uv",
-      "category": "أدوات Python",
+      "repository": "NVIDIA/OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "category": "أمن وكلاء الذكاء الاصطناعي وعزل التنفيذ",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 91366,
-      "metricCapturedAt": "2026-10-30T20:44:18+03:00",
+      "starsMeasured": 20718,
+      "forksMeasured": 2030,
+      "openIssuesMeasured": 588,
+      "metricCapturedAt": "2026-10-30T08:46:47Z",
       "licenseApiValue": "Apache-2.0",
       "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub API plus README, LICENSE, Cargo.toml, pyproject.toml, TESTING.md and official docs inspected; no code execution.",
+      "overviewShort": "بيئة تشغيل لوكلاء الذكاء الاصطناعي داخل sandboxes مع سياسات للملفات والشبكة والعمليات.",
+      "proposedResearchOrBuild": "مختبر محلي لتجربة سياسات عزل وكلاء البرمجة عبر runtimes.",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "research-only; no current feed item",
+      "sources": [
+        {
+          "title": "GitHub API",
+          "url": "https://api.github.com/repos/NVIDIA/OpenShell"
+        },
+        {
+          "title": "README",
+          "url": "https://github.com/NVIDIA/OpenShell/blob/main/README.md"
+        },
+        {
+          "title": "LICENSE",
+          "url": "https://github.com/NVIDIA/OpenShell/blob/main/LICENSE"
+        },
+        {
+          "title": "Support Matrix",
+          "url": "https://docs.nvidia.com/openshell/latest/about/support-matrix"
+        }
+      ],
+      "disabled": false,
+      "lastPushedAt": "2026-10-30T07:13:12Z",
+      "lastUpdatedAt": "2026-10-30T08:38:34Z",
+      "defaultBranch": "main",
+      "language": "Rust",
+      "licenseName": "Apache License 2.0",
+      "activityStatus": "active_recent_push",
+      "currentSnapshot": {
+        "stars": 20718,
+        "forks": 2030,
+        "openIssues": 588,
+        "archived": false,
+        "licenseSpdx": "Apache-2.0",
+        "pushedAt": "2026-10-30T07:13:12Z",
+        "updatedAt": "2026-10-30T08:38:34Z",
+        "measuredAt": "2026-10-30T11:46:47+03:00"
+      }
+    },
+    {
+      "priority": 35,
+      "repository": "pydantic/pydantic-ai",
+      "url": "https://github.com/pydantic/pydantic-ai",
+      "category": "أطر وكلاء Python",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 20955,
+      "metricCapturedAt": "2026-10-30T11:42:19Z",
+      "licenseApiValue": "MIT",
+      "licenseNeedsUpstreamVerification": false,
       "pushedActivityMustBeChecked": true,
-      "reviewBasis": "Official GitHub API metadata, README and upstream license files inspected; no code execution. Metrics are a dated snapshot.",
-      "overviewShort": "مدير مشاريع واعتماديات Python سريع يدير البيئات والإصدارات وملفات القفل.",
-      "proposedResearchOrBuild": "قوالب Python قابلة لإعادة الإنتاج ومدقق بيئات وقياس cache في CI.",
+      "reviewBasis": "Official GitHub metadata captured; README, installation, agents, tools, testing, evals, MCP, Ollama and LICENSE inspected. No repository code was executed.",
+      "overviewShort": "Python SDK لبناء وكلاء typed يربط الأدوات والاعتماديات والمخرجات المنظمة وتقييم السلوك.",
+      "proposedResearchOrBuild": "مساعد بحث عربي أو مدرب Python يستخدم أدوات محدودة ومخرجات منظمة وتقييمًا قابلًا لإعادة الإنتاج.",
       "inCurrentFeed": false,
       "feedId": null,
       "siteVisibility": "research-only; no current feed item",
       "sources": [
         {
           "title": "المستودع الرسمي",
-          "url": "https://github.com/astral-sh/uv"
+          "url": "https://github.com/pydantic/pydantic-ai"
         },
         {
-          "title": "LICENSE-APACHE",
-          "url": "https://github.com/astral-sh/uv/blob/main/LICENSE-APACHE"
-        },
-        {
-          "title": "LICENSE-MIT",
-          "url": "https://github.com/astral-sh/uv/blob/main/LICENSE-MIT"
-        },
-        {
-          "title": "دليل المشاريع",
-          "url": "https://docs.astral.sh/uv/guides/projects/"
+          "title": "التوثيق الرسمي",
+          "url": "https://pydantic.dev/docs/ai/"
         }
       ],
       "disabled": false,
-      "forksMeasured": 3727,
-      "metricsCaptureWindow": "2026-10-30T17:44:18Z",
-      "lastPushedAt": "2026-10-30T17:42:06Z",
-      "lastUpdatedAt": "2026-10-30T17:46:23Z",
+      "forksMeasured": 3067,
+      "metricsCaptureWindow": "2026-10-30T11:42:19Z",
+      "lastPushedAt": "2026-10-30T11:35:30Z",
+      "lastUpdatedAt": "2026-10-30T10:57:28Z",
       "defaultBranch": "main",
-      "language": "Rust",
-      "licenseName": "Apache-2.0 أو MIT",
-      "licenseSummary": "Dual-licensed under Apache-2.0 or MIT.",
-      "licenseEvidence": "README وLICENSE-APACHE وLICENSE-MIT الرسمية فُحصت.",
+      "language": "Python",
+      "licenseName": "MIT License",
+      "licenseSummary": "MIT; ملف LICENSE الرسمي تمت مراجعته.",
+      "licenseEvidence": "GitHub API SPDX=MIT وتحقق نص ملف LICENSE في المستودع.",
       "activityStatus": "active_recent_push",
       "alternativeProjects": [
         {
-          "repository": "python-poetry/poetry",
-          "url": "https://github.com/python-poetry/poetry",
-          "status": "active_alternative"
+          "repo": "langchain-ai/langgraph",
+          "url": "https://github.com/langchain-ai/langgraph"
         },
         {
-          "repository": "pdm-project/pdm",
-          "url": "https://github.com/pdm-project/pdm",
-          "status": "active_alternative"
+          "repo": "run-llama/llama_index",
+          "url": "https://github.com/run-llama/llama_index"
         }
       ],
-      "metricSource": "https://api.github.com/repos/astral-sh/uv",
+      "metricSource": "https://api.github.com/repos/pydantic/pydantic-ai",
       "editorialEnriched": false,
       "editorialUrlMatches": false,
       "currentSnapshot": {
-        "stars": 91366,
-        "forks": 3727,
-        "openIssues": 3012,
+        "stars": 20955,
+        "forks": 3067,
+        "openIssues": 1630,
         "archived": false,
         "disabled": false,
-        "licenseSpdx": "Apache-2.0",
-        "pushedAt": "2026-10-30T17:42:06Z",
-        "updatedAt": "2026-10-30T17:46:23Z",
+        "licenseSpdx": "MIT",
+        "pushedAt": "2026-10-30T11:35:30Z",
+        "updatedAt": "2026-10-30T10:57:28Z",
         "defaultBranch": "main",
-        "measuredAt": "2026-10-30T20:44:18+03:00",
-        "sourceApiUrl": "https://api.github.com/repos/astral-sh/uv"
+        "measuredAt": "2026-10-30T14:42:19+03:00",
+        "sourceApiUrl": "https://api.github.com/repos/pydantic/pydantic-ai"
       },
       "currentStatus": "active_not_archived",
       "currentLicenseStatus": "SPDX_detected_full_text_inspected"
+    },
+    {
+      "priority": 36,
+      "repository": "astral-sh/uv",
+      "url": "https://github.com/astral-sh/uv",
+      "category": "أدوات Python وإدارة المشاريع",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 91400,
+      "forksMeasured": 3700,
+      "openIssuesMeasured": 2400,
+      "watchersMeasured": 195,
+      "metricCapturedAt": "2026-10-30T15:11:06Z",
+      "metricPrecision": "rounded as displayed on official GitHub repository page",
+      "licenseApiValue": "Apache-2.0; MIT (dual-licensed)",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "Official GitHub repository page and connector metadata; README, official docs, LICENSE-APACHE and LICENSE-MIT inspected. No code execution. Latest commit SHA captured, but its timestamp was not exposed by the connector.",
+      "overviewShort": "مدير مشاريع وحزم Python مكتوب بـRust، يوفر البيئات وملفات القفل وإدارة إصدارات Python وتشغيل الأدوات.",
+      "proposedResearchOrBuild": "قالب مشاريع Python قابلة لإعادة الإنشاء للطلاب والفرق، مع فحص اتساق pyproject.toml وuv.lock وبيئات CI.",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "research-only; no current feed item",
+      "sources": [
+        {
+          "title": "GitHub repository page and metadata",
+          "url": "https://github.com/astral-sh/uv"
+        },
+        {
+          "title": "Official documentation",
+          "url": "https://docs.astral.sh/uv/"
+        },
+        {
+          "title": "Project guide",
+          "url": "https://docs.astral.sh/uv/guides/projects/"
+        },
+        {
+          "title": "Apache-2.0 license",
+          "url": "https://github.com/astral-sh/uv/blob/main/LICENSE-APACHE"
+        },
+        {
+          "title": "MIT license",
+          "url": "https://github.com/astral-sh/uv/blob/main/LICENSE-MIT"
+        }
+      ],
+      "disabled": false,
+      "defaultBranch": "main",
+      "language": "Rust",
+      "licenseName": "Apache-2.0 OR MIT",
+      "licenseSummary": "Dual-licensed; the README and both upstream license files were inspected.",
+      "activityStatus": "public and not archived; latest commit SHA retrieved; commit timestamp unavailable from the connector response.",
+      "latestCommitSha": "58283797f644cf4917591785eb61743e65d53a88",
+      "latestCommitMessage": "Escape literal paths when adding workspace members (#23008)",
+      "currentSnapshot": {
+        "stars": 91400,
+        "forks": 3700,
+        "openIssues": 2400,
+        "watchers": 195,
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "main",
+        "license": "Apache-2.0 OR MIT",
+        "latestCommitSha": "58283797f644cf4917591785eb61743e65d53a88",
+        "measuredAt": "2026-10-30T18:11:06+03:00",
+        "source": "https://github.com/astral-sh/uv"
+      }
+    },
+    {
+      "priority": 37,
+      "repository": "patchy631/ai-engineering-hub",
+      "url": "https://github.com/patchy631/ai-engineering-hub",
+      "category": "تعلم هندسة الذكاء الاصطناعي",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 38483,
+      "metricCapturedAt": "2026-10-30T18:12:00Z",
+      "licenseApiValue": "MIT",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub API metadata; README, AI Engineering Roadmap, root LICENSE, simple-rag-workflow README, workflow.py and .env.example inspected. No code execution.",
+      "overviewShort": "مجموعة تعليمية تضم مشاريع ودفاتر حول Python وLLMs وRAG ووكلاء الذكاء الاصطناعي وMCP؛ ليست حزمة واحدة.",
+      "proposedResearchOrBuild": "توحيد متطلبات كل مثال وإضافة اختبارات smoke وقياسات تقييم RAG قابلة لإعادة الإنتاج.",
+      "inCurrentFeed": true,
+      "feedId": "fe0e6bfdbdd5822139",
+      "siteVisibility": "current feed; exact original feed ID retained",
+      "sources": [
+        {
+          "title": "المستودع الرسمي",
+          "url": "https://github.com/patchy631/ai-engineering-hub"
+        },
+        {
+          "title": "README",
+          "url": "https://github.com/patchy631/ai-engineering-hub/blob/main/README.md"
+        },
+        {
+          "title": "AI Engineering Roadmap",
+          "url": "https://github.com/patchy631/ai-engineering-hub/blob/main/ai-engineering-roadmap/README.md"
+        },
+        {
+          "title": "LICENSE",
+          "url": "https://github.com/patchy631/ai-engineering-hub/blob/main/LICENSE"
+        }
+      ],
+      "disabled": false,
+      "forksMeasured": 6341,
+      "openIssuesMeasured": 130,
+      "metricsCaptureWindow": "2026-10-30T18:12:00Z",
+      "lastPushedAt": "2026-10-30T12:36:39Z",
+      "lastUpdatedAt": "2026-10-30T18:21:20Z",
+      "defaultBranch": "main",
+      "language": "Jupyter Notebook",
+      "licenseName": "MIT License",
+      "licenseSummary": "ترخيص الجذر MIT؛ لا يغطي تلقائيًا تراخيص النماذج والأوزان والبيانات والأصول والاعتماديات الخارجية.",
+      "licenseEvidence": "ملف LICENSE في الجذر قُرئ؛ يلزم فحص ترخيص كل نموذج وبيانات واعتماد خارجي قبل إعادة التوزيع.",
+      "activityStatus": "active_recent_push",
+      "alternativeProjects": [
+        {
+          "repository": "microsoft/AI-For-Beginners",
+          "url": "https://github.com/microsoft/AI-For-Beginners",
+          "status": "educational_path_alternative"
+        },
+        {
+          "repository": "run-llama/llama_index",
+          "url": "https://github.com/run-llama/llama_index",
+          "status": "RAG_framework_alternative"
+        },
+        {
+          "repository": "langchain-ai/langgraph",
+          "url": "https://github.com/langchain-ai/langgraph",
+          "status": "agent_workflow_framework_alternative"
+        }
+      ],
+      "metricSource": "https://api.github.com/repos/patchy631/ai-engineering-hub",
+      "editorialEnriched": true,
+      "editorialUrlMatches": true,
+      "currentSnapshot": {
+        "stars": 38483,
+        "forks": 6341,
+        "openIssues": 130,
+        "archived": false,
+        "disabled": false,
+        "licenseSpdx": "MIT",
+        "pushedAt": "2026-10-30T12:36:39Z",
+        "updatedAt": "2026-10-30T18:21:20Z",
+        "defaultBranch": "main",
+        "measuredAt": "2026-10-30T21:12:00+03:00",
+        "sourceApiUrl": "https://api.github.com/repos/patchy631/ai-engineering-hub"
+      },
+      "currentStatus": "active_not_archived",
+      "currentLicenseStatus": "root_license_inspected; per-example dependencies and model/data assets need separate review",
+      "dossierPath": "editorial/library/ai-engineering-hub-dossier-2026-10-30-2044.json"
     }
   ],
   "currentSnapshotSummary": {
-    "measuredAt": "2026-10-30T20:44:18+03:00",
-    "total": 34,
-    "activeNotArchived": 32,
+    "measuredAt": "2026-10-30T21:12:00+03:00",
+    "total": 37,
+    "activeNotArchived": 35,
     "archived": 2,
-    "spdxDetected": 25,
+    "spdxDetected": 28,
     "licenseNeedsManualReview": [
       "torvalds/linux",
       "nodejs/node",
@@ -1993,9 +2199,9 @@
       "neovim/neovim",
       "FFmpeg/FFmpeg"
     ],
-    "source": "GitHub REST repository metadata; 8 prior projects refreshed at 2026-10-30T17:44:18Z and 2 new projects added; remaining entries retain their earlier measurement timestamps."
+    "source": "36 prior historical entries preserved from the 2026-10-30 18:11 catalog; AI Engineering Hub measured and appended. The eight previous projects were remeasured separately at 21:12 Asia/Riyadh."
   },
-  "measurementNote": "المؤشرات لقطة زمنية وليست اتجاهًا أو شعبية حالية. جرى تحديث بيانات GitHub API لثمانية مشاريع سابقة وإضافة مشروعين عند 2026-10-30T17:44:18Z؛ بقية السجلات تحتفظ بأوقات قياسها السابقة. النجوم والشوكات تراكمية، وSPDX لا يغني عن مراجعة LICENSE وNOTICE. لم يُشغّل أي مشروع في هذه الدورة.",
+  "measurementNote": "GitHub metrics are timestamped snapshots, not daily growth. README, roadmap, LICENSE and a representative Simple RAG example were inspected for AI Engineering Hub; no code was executed. Eight previous projects were rechecked for visibility, archive status, license SPDX and current stars/forks/issues at the timestamp in the companion review file.",
   "archivedAlternatives": [
     {
       "repo": "atom/atom",
@@ -2029,5 +2235,14 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "total": 37,
+    "archived": 2,
+    "nonArchived": 35,
+    "inCurrentFeed": 5,
+    "notInFeed": 32,
+    "licenseNeedsUpstreamVerification": 7,
+    "enrichedInCurrentFeed": 5
+  }
 }

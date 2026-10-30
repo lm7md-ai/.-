@@ -1,23 +1,28 @@
 {
   "version": 1,
-  "reviewedAt": "2026-10-30T20:44:18+03:00",
-  "baseMainSha": "045b994636f38d47f1d5acf505d034cda38117f6",
-  "feedGeneratedAt": "2026-10-30T15:25:36+00:00",
+  "reviewedAt": "2026-10-30T21:12:00+03:00",
+  "baseMainSha": "8d6032946309cd2bae599f67f0d3b7a18f558374",
+  "feedGeneratedAt": "2026-10-30T18:04:46+00:00",
   "counts": {
-    "incomingFiles": 56,
-    "incomingRows": 541,
+    "incomingFilesBeforeCurrentBatch": 56,
+    "incomingRowsBeforeCurrentBatch": 541,
+    "currentBatchFiles": 1,
+    "currentBatchRows": 8,
+    "incomingFilesAfterCurrentBatch": 57,
+    "incomingRowsAfterCurrentBatch": 549,
     "currentFeedItems": 800,
     "currentFeedNews": 700,
     "currentFeedProjects": 100,
     "editorialBefore": 580,
     "editorialAfter": 588,
-    "seenIds": 2007,
-    "alreadyImportedExactCurrentFeed": 292,
-    "alreadyImportedExactOutsideCurrentFeed": 246,
+    "seenIds": 2041,
+    "seenTitles": 1911,
+    "alreadyImportedExactCurrentFeed": 280,
+    "alreadyImportedExactOutsideCurrentFeed": 258,
     "seenOnlyNotInFeedOrEditorial": 3,
     "exactFeedUnimported": 0,
     "idUrlMismatches": 0,
-    "urlUnderDifferentId": 0,
+    "urlUnderDifferentId": 1,
     "editorialUrlMismatches": 0,
     "notInFeedNotSeen": 0,
     "structuralValidationErrors": 0,
@@ -85,9 +90,11 @@
   ],
   "classificationNotes": [
     "قورنت مفاتيح id وروابط url حرفيًا؛ لم تُنشأ هوية بديلة من العنوان.",
-    "246 سجلًا موجودة بالفعل في editorial بنفس id وurl لكنها خارج feed الحالي؛ لا يعني غيابها وحده أن الخبر منقضٍ.",
-    "3 سجلات موجودة في seen فقط ولا توجد في feed أو editorial؛ لم تُستورد.",
-    "لم يظهر أي سجل جديد مطابق للتغذية وغير موجود في editorial ضمن التراكم الحالي."
+    "من 541 سجلًا في 56 ملفًا سابقًا، 538 موجودة مسبقًا في editorial بنفس id وurl؛ منها 280 تطابق التغذية الحالية و258 خارج التغذية الحالية.",
+    "3 سجلات موجودة في seen فقط ولا توجد في feed أو editorial؛ لم تُستورد وتحتاج إعادة دخولها إلى التغذية.",
+    "يوجد تعارض URL واحد: سجل rasbt/LLMs-from-scratch بالمعرف 7a99eca9b2ce14d9f5 محفوظ تاريخيًا، بينما يظهر الرابط نفسه في feed تحت المعرف e0cbbf211a55e79f34؛ لم يُنشأ معرف بديل ولم يُدمج السجلان.",
+    "لا توجد سجلات مطابقة للتغذية وغير مستوردة ضمن التراكم التاريخي.",
+    "دفعة PR الحالية تضيف 7 أخبار ومشروعًا واحدًا؛ جميع المعرفات والروابط الثمانية تطابق feed الحالي حرفيًا."
   ],
   "specialRecords": [
     {
@@ -97,6 +104,7 @@
       "inSeen": true,
       "inCurrentFeed": false,
       "inEditorial": false,
+      "researchDossierPresent": true,
       "status": "seen_only_pending_reentry"
     },
     {
@@ -106,6 +114,7 @@
       "inSeen": true,
       "inCurrentFeed": false,
       "inEditorial": false,
+      "researchDossierPresent": false,
       "status": "seen_only_pending_reentry"
     },
     {
@@ -115,6 +124,7 @@
       "inSeen": true,
       "inCurrentFeed": false,
       "inEditorial": false,
+      "researchDossierPresent": false,
       "status": "seen_only_pending_reentry"
     }
   ],
@@ -123,7 +133,7 @@
       "id": "7a99eca9b2ce14d9f5",
       "repository": "rasbt/LLMs-from-scratch",
       "inCurrentFeed": false,
-      "action": "historical; unchanged"
+      "action": "historical; URL now appears in feed under e0cbbf211a55e79f34; keep original editorial ID, do not re-import or merge by title pending manual identity review."
     },
     {
       "id": "a6f998d4efb0307b47",
@@ -170,14 +180,15 @@
   ],
   "validation": {
     "officialScriptPath": "scripts/editorial.py",
-    "officialCommandsNotRun": [
+    "officialCommandsNotRunLocally": [
       "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-10-30-2044.json",
       "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-10-30-2044.json",
       "python -m unittest discover -s tests -v"
     ],
-    "reason": "لا توجد نسخة checkout محلية قابلة لتشغيل البرنامج؛ طُبق تحقق بنيوي مكافئ لقواعد validate على ملفات incoming والدفعة الجديدة. ستشغّل GitHub Actions الاختبارات والمحقق الرسمي على editorial.json بعد إنشاء PR.",
+    "reason": "تعذر إنشاء checkout محلي لأن الاتصال بـgithub.com من بيئة التنفيذ غير متاح؛ طُبق تحقق بنيوي مكافئ لقواعد validate على incoming والملف المدمج. سيشغّل workflow الفحص الرسمي اختبارات الوحدة وvalidate على editorial.json بعد تحديث PR.",
     "newIncomingStructuralErrors": 0,
     "allIncomingStructuralErrors": 0,
+    "mergedEditorialStructuralErrors": 0,
     "checks": [
       "version=1/items object",
       "HTTPS URL without credentials",
@@ -189,7 +200,9 @@
       "nextSteps 1-10 when present",
       "proposal schema and 3-12 steps"
     ],
-    "importMethod": "تعديل تزايدي محفوظ للبطاقات الجديدة مع الاحتفاظ بكامل items القديمة؛ لم تُستبدل editorial.json بملف incoming."
+    "importMethod": "دمج تزايدي مكافئ لمنطق merge_documents: الاحتفاظ بجميع السجلات القديمة، تحديث خمس بطاقات نشطة بإضافة nextSteps فقط، وإضافة ثمانية معرفات جديدة بعد مطابقة id/url. لم يُستبدل editorial.json بملف incoming.",
+    "ciWorkflow": "check.yml runs python -m unittest discover -s tests -v; python scripts/editorial.py validate; node --check site/app.js && node --check site/ideas.js",
+    "ciStatusBeforeRevision": "success on prior PR head; final revised head awaits its own run."
   },
   "changes": {
     "newNews": 7,
@@ -210,5 +223,51 @@
     "workflowsChanged": false,
     "publicationSettingsChanged": false,
     "paidServicesUsed": false
-  }
+  },
+  "expiryAssessment": {
+    "confirmedExpired": 0,
+    "outOfFeedHistorical": 258,
+    "note": "غياب السجل عن feed لا يثبت انقضاءه. لم تُصنّف السجلات التاريخية على أنها منقضية دون تاريخ نشر موثوق لكل عنصر."
+  },
+  "currentBatch": {
+    "file": "editorial/incoming/nabdh-editorial-2026-10-30-2044.json",
+    "records": 8,
+    "news": 7,
+    "projects": 1,
+    "exactFeedIdUrlMatches": 8,
+    "newEditorialIds": 8,
+    "editorialBefore": 580,
+    "editorialAfter": 588,
+    "status": "prepared_in_PR_73_before_merge",
+    "reviewedAt": "2026-10-30T21:12:00+03:00",
+    "basisCounts": {
+      "article": 5,
+      "metadata": 2,
+      "readme": 1
+    }
+  },
+  "postMergeExpected": {
+    "incomingFiles": 57,
+    "incomingRows": 549,
+    "editorialEntries": 588,
+    "historicalProjectCatalogEntries": 37
+  },
+  "qualityExclusions": [
+    {
+      "candidate": "AI Isn't Replacing SREs. It's Deskilling Them.",
+      "reason": "المصدر الأصلي مؤرخ 28 فبراير 2026، لا 30 أكتوبر كما قد يوحي سياق التغذية؛ استُبعد من دفعة الأخبار الحالية."
+    },
+    {
+      "candidate": "Zest AI restaurant discovery/booking",
+      "reason": "تعذر فتح رابط المصدر الأصلي في هذه الدورة؛ لم يُعتمد ملخص metadata وحده."
+    },
+    {
+      "candidate": "GitHub Status incident pwxsjgnvrk6b",
+      "reason": "تعذر التحقق من صفحة الحادثة؛ صفحة الحالة الرسمية الحالية تعرض الخدمات الأساسية على أنها Operational، لذلك لم يُنشر كحادث مؤكد."
+    },
+    {
+      "candidate": "ادعاءات أكاديمية سعودية/شراكة Adobe-HUMAIN",
+      "reason": "لم يُعثر في هذه الدورة على بيان أولي رسمي يثبت التفاصيل المعلنة؛ لم تُنشر."
+    }
+  ]
 }
