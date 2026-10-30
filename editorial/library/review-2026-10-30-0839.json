@@ -1,0 +1,374 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-30T08:39:48+03:00",
+  "baseMainSha": "8832a8d952f8840f84b6911421a7a6743a89e474",
+  "sitePublished": {
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialRecordsBefore": 564,
+    "editorialRecordsAfterLocalImport": 570,
+    "exactFeedMatchesAfterImport": 346,
+    "newsExactMatches": 247,
+    "projectExactMatches": 99,
+    "newsWithoutExactEditorial": 453,
+    "projectsWithoutExactEditorial": 1,
+    "state": "deployment-pending",
+    "statusJsonState": "partial",
+    "collected": 303
+  },
+  "historicalLibrary": {
+    "total": 33,
+    "activeNotArchived": 31,
+    "archived": 2,
+    "spdxDetected": 24,
+    "manualLicenseReviewCount": 9,
+    "existingEntriesCarriedForward": 32,
+    "newEntry": "Millillion/lasm"
+  },
+  "previousEight": [
+    {
+      "repository": "gradio-app/gradio",
+      "stars": 43928,
+      "forks": 3655,
+      "openIssues": 120,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-30T05:21:30Z",
+      "updatedAt": "2026-10-30T05:21:54Z",
+      "defaultBranch": "main",
+      "measuredAt": "2026-10-30T08:39:48+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/gradio-app/gradio"
+    },
+    {
+      "repository": "thedotmack/claude-mem",
+      "stars": 105014,
+      "forks": 9257,
+      "openIssues": 118,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-30T03:07:14Z",
+      "updatedAt": "2026-10-30T03:08:02Z",
+      "defaultBranch": "main",
+      "measuredAt": "2026-10-30T08:39:48+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/thedotmack/claude-mem"
+    },
+    {
+      "repository": "ultralytics/ultralytics",
+      "stars": 62980,
+      "forks": 11936,
+      "openIssues": 77,
+      "license": "AGPL-3.0",
+      "archived": false,
+      "pushedAt": "2026-10-30T02:49:05Z",
+      "updatedAt": "2026-10-30T02:50:17Z",
+      "defaultBranch": "main",
+      "measuredAt": "2026-10-30T08:39:48+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/ultralytics/ultralytics"
+    },
+    {
+      "repository": "harry0703/MoneyPrinterTurbo",
+      "stars": 136355,
+      "forks": 21704,
+      "openIssues": 79,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-30T03:00:12Z",
+      "updatedAt": "2026-10-30T03:00:29Z",
+      "defaultBranch": "main",
+      "measuredAt": "2026-10-30T08:39:48+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/harry0703/MoneyPrinterTurbo"
+    },
+    {
+      "repository": "microsoft/AI-For-Beginners",
+      "stars": 70371,
+      "forks": 13683,
+      "openIssues": 28,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-23T23:55:14Z",
+      "updatedAt": "2026-10-30T03:07:01Z",
+      "defaultBranch": "main",
+      "measuredAt": "2026-10-30T08:39:48+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/microsoft/AI-For-Beginners"
+    },
+    {
+      "repository": "usebruno/bruno",
+      "stars": 47935,
+      "forks": 3054,
+      "openIssues": 1971,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-29T14:30:38Z",
+      "updatedAt": "2026-10-30T03:04:02Z",
+      "defaultBranch": "main",
+      "measuredAt": "2026-10-30T08:39:48+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/usebruno/bruno"
+    },
+    {
+      "repository": "keras-team/keras",
+      "stars": 64398,
+      "forks": 19807,
+      "openIssues": 273,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-30T03:04:23Z",
+      "updatedAt": "2026-10-30T03:05:14Z",
+      "defaultBranch": "master",
+      "measuredAt": "2026-10-30T08:39:48+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/keras-team/keras"
+    },
+    {
+      "repository": "k2-fsa/sherpa-onnx",
+      "stars": 15612,
+      "forks": 1828,
+      "openIssues": 633,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-29T12:00:57Z",
+      "updatedAt": "2026-10-30T03:10:14Z",
+      "defaultBranch": "master",
+      "measuredAt": "2026-10-30T08:39:48+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/k2-fsa/sherpa-onnx"
+    }
+  ],
+  "previousTopThreeSuggestions": [
+    {
+      "title": "مصفوفة ترحيل Python والإصدارات",
+      "problem": "قد يفاجأ المستخدمون بتغير الحد الأدنى لإصدار Python أو اختلاف واجهات beta وv1.",
+      "approach": "إضافة جدول توافق لكل إصدار وأمثلة ترحيل واختبارات تثبيت نظيف على إصدارات Python المدعومة.",
+      "stack": "Python / pytest / tox أو nox / GitHub Actions",
+      "steps": [
+        "جمع تغييرات الحد الأدنى من Python بين الإصدارات.",
+        "بناء بيئات تثبيت نظيف لكل إصدار مدعوم.",
+        "اختبار أمثلة sync وasync على beta وv1.",
+        "نشر جدول توافق وتغييرات كاسرة مع كل إصدار."
+      ],
+      "metric": "نسبة نجاح التثبيت والأمثلة على مصفوفة الإصدارات المعلنة.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد تتكرر تغطية موجودة في CI؛ يجب مراجعة ملفات الاختبار وIssues قبل اقتراح PR.",
+      "sources": [
+        {
+          "title": "Google Gen AI Python SDK — README",
+          "url": "https://github.com/googleapis/python-genai/blob/main/README.md"
+        },
+        {
+          "title": "Google Gen AI Python SDK — pyproject.toml",
+          "url": "https://github.com/googleapis/python-genai/blob/main/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "title": "قياس استخدام دون تسجيل محتوى المحادثة",
+      "problem": "يصعب على الفرق تقدير زمن الاستجابة والاستهلاك دون تسجيل prompts أو بيانات حساسة.",
+      "approach": "إضافة مثال middleware اختياري يسجل model وrequest id والمدة وعدد tokens وحالة retry، مع حجب prompt/response افتراضيًا.",
+      "stack": "Python / logging / OpenTelemetry / google-genai",
+      "steps": [
+        "تحديد الحقول غير الحساسة التي يمكن تسجيلها.",
+        "إضافة مثال wrapper حول استدعاءات العميل.",
+        "حجب المحتوى والحقول السرية افتراضيًا.",
+        "اختبار عدم ظهور المفاتيح أو نصوص المستخدم في السجلات."
+      ],
+      "metric": "نسبة الطلبات التي لها قياس latency واستهلاك دون تسريب للمحتوى في عينة الاختبار.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد يضيف عبئًا على مسار الطلب؛ يلزم اختبار الأداء ومراجعة الخصوصية.",
+      "sources": [
+        {
+          "title": "Google Gen AI Python SDK — Documentation",
+          "url": "https://googleapis.github.io/python-genai/"
+        },
+        {
+          "title": "OpenTelemetry Python",
+          "url": "https://opentelemetry.io/docs/languages/python/"
+        }
+      ]
+    },
+    {
+      "title": "دليل واضح لعزل إعدادات كل طلب",
+      "problem": "قد يخلط المطورون بين إعدادات العميل الافتراضية وترويسات الطلب المفرد.",
+      "approach": "إضافة أمثلة توضح نطاق إعدادات http_options والمهل والترويسات في sync وasync، مع الإحالة إلى اختبارات regression المضافة.",
+      "stack": "Python / pytest / httpx / google-genai",
+      "steps": [
+        "توثيق إعدادات العميل وإعدادات الطلب المنفرد.",
+        "كتابة مثالين متتابعين بإعدادات مختلفة.",
+        "إظهار كيفية إعادة استخدام العميل دون مشاركة حالة الطلب.",
+        "ربط الدليل باختبارات regression الحالية."
+      ],
+      "metric": "انخفاض تقارير أخطاء تداخل الإعدادات وتغطية الأمثلة بحالات اختبار.",
+      "difficulty": "منخفضة إلى متوسطة — تقدير بحثي.",
+      "risks": "قد تكون بعض الأمثلة موجودة بالفعل؛ يجب مراجعة التوثيق قبل تنفيذ أي إضافة.",
+      "sources": [
+        {
+          "title": "Google Gen AI Python SDK — PR #3182",
+          "url": "https://github.com/googleapis/python-genai/pull/3182"
+        },
+        {
+          "title": "Google Gen AI Python SDK — Documentation",
+          "url": "https://googleapis.github.io/python-genai/"
+        }
+      ]
+    }
+  ],
+  "topThreeSuggestions": [
+    {
+      "title": "توليد روابط JavaScript موثقة من تعريفات TypeScript",
+      "problem": "تتطلب وثائق JS_BINDINGS كتابة تصريحات @[js] يدويًا، وقد تنحرف أسماء exports أو الأنواع عن الحزم الفعلية.",
+      "approach": "أداة اختيارية تقرأ TypeScript declaration files وتنتج مسودة bindings مع إبقاء المراجعة والاختبار البشريين إلزاميين.",
+      "stack": "Lean 4.35 / Node.js 24+ / TypeScript compiler API / JSON schema",
+      "steps": [
+        "حدد مجموعة صغيرة من صيغ TypeScript المدعومة.",
+        "حلل أسماء exports والأنواع القابلة للتحويل فقط.",
+        "ولّد ملف bindings مع مصدر كل تصريح.",
+        "أضف اختبارات مطابقة على حزم npm صغيرة.",
+        "وثّق الحالات غير المدعومة بدل توليد تصريح تخميني."
+      ],
+      "metric": "نسبة bindings التي تجتاز البناء واختبارات المطابقة دون تعديل يدوي.",
+      "difficulty": "متوسطة — تقدير بحثي، لم يُختبر.",
+      "risks": "أنواع TypeScript المتقدمة وgenerics قد لا تقابل أنواع Lean مباشرة؛ التوليد الخاطئ أخطر من رفض الحالة.",
+      "sources": [
+        {
+          "title": "Lasm JavaScript bindings guide",
+          "url": "https://github.com/Millillion/lasm/blob/main/docs/JS_BINDINGS.md"
+        },
+        {
+          "title": "TypeScript compiler API",
+          "url": "https://github.com/microsoft/TypeScript"
+        }
+      ]
+    },
+    {
+      "title": "مصفوفة توافق قابلة لإعادة الإنتاج لأهداف WebAssembly",
+      "problem": "تعدد أهداف Node وBun وDeno وWorkers وWASI يجعل مقارنة حدود كل هدف ونتائج CI صعبة على المستخدم الجديد.",
+      "approach": "إنشاء أمثلة صغيرة موحدة ونتائج آلية لكل runtime، مع فصل القياسات المقاسة عن الأهداف المخطط لها.",
+      "stack": "Lean / Node.js / Bun / Deno / wasmtime / wrangler / GitHub Actions",
+      "steps": [
+        "اختر أمثلة HTTP وملفات وعمليات غير متاحة على كل هدف.",
+        "ثبت إصدارات runtimes وأدوات البناء.",
+        "شغّل الأمثلة في CI لكل هدف مدعوم.",
+        "انشر جدول نجاح وفشل وقيودًا لكل ميزة.",
+        "أعد القياس عند تغيير Lean أو runtime."
+      ],
+      "metric": "تغطية الأهداف باختبارات ناجحة قابلة لإعادة الإنتاج، مع صفر ادعاءات دعم غير موثقة.",
+      "difficulty": "مرتفعة — تقدير بحثي، لم يُختبر.",
+      "risks": "تكلفة CI وتغير runtimes؛ لا يجوز تحويل نجاح مثال صغير إلى ضمان إنتاجي.",
+      "sources": [
+        {
+          "title": "Lasm edge targets and measurements",
+          "url": "https://github.com/Millillion/lasm/blob/main/docs/EDGE.md"
+        },
+        {
+          "title": "Lasm WASI guide",
+          "url": "https://github.com/Millillion/lasm/blob/main/docs/WASI.md"
+        }
+      ]
+    },
+    {
+      "title": "قوالب تحقق لواجهات API مع أمثلة عربية",
+      "problem": "قد يصعب على مطور الويب فهم أين تفيد براهين Lean عمليًا مقارنة بالاختبارات التقليدية.",
+      "approach": "مثال تعليمي صغير يثبت invariants لمدخلات API ومخزن بيانات نموذجي، ثم يقارن البرهان باختبارات التكامل.",
+      "stack": "Lean 4 / Lasm / Hono / Node.js / Vitest",
+      "steps": [
+        "اختر invariant محدودًا مثل عدم تكرار معرف مورد.",
+        "صغ نموذج Store صغيرًا في Lean.",
+        "اكتب handler يستعمل النموذج وتحقق من proof.",
+        "أضف اختبارات HTTP للمسار الفعلي.",
+        "اشرح الفرق بين برهان النموذج واختبار النظام المتكامل."
+      ],
+      "metric": "عدد invariants الموثقة التي تربط نموذج Lean باختبارات HTTP قابلة للتكرار.",
+      "difficulty": "مرتفعة — تقدير بحثي، لم يُختبر.",
+      "risks": "قد يبالغ القارئ في تعميم البرهان من النموذج إلى runtime؛ يجب توضيح حدود النموذج.",
+      "sources": [
+        {
+          "title": "Lasm Conduit example and proofs",
+          "url": "https://github.com/Millillion/lasm/tree/main/examples/conduit"
+        },
+        {
+          "title": "Lasm AI guidance",
+          "url": "https://github.com/Millillion/lasm/blob/main/docs/AI.md"
+        }
+      ]
+    }
+  ],
+  "newResearchOnlyProject": {
+    "repository": "Millillion/lasm",
+    "license": "MIT",
+    "status": "active_new_repo",
+    "feedMatch": false,
+    "relatedNewsId": "b5636e2775ac4bb7c9",
+    "published": false,
+    "dossierPath": "editorial/library/lasm-dossier-2026-10-30-0839.json",
+    "metrics": {
+      "stars": 45,
+      "forks": 3,
+      "openIssues": 1,
+      "license": "MIT",
+      "archived": false,
+      "createdAt": "2026-09-23T00:00:00Z",
+      "updatedAt": "2026-10-30T05:43:50Z",
+      "pushedAt": "2026-10-29T01:41:21Z",
+      "measuredAt": "2026-10-30T08:39:48+03:00",
+      "source": "https://api.github.com/repos/Millillion/lasm"
+    }
+  },
+  "priorResearchOnlyDossiers": [
+    "editorial/library/google-genai-sdk-dossier-2026-10-30-0255.json",
+    {
+      "repository": "yc-software/minecraft-agent-harness",
+      "license": "MIT",
+      "status": "active_new_repo",
+      "feedMatch": false,
+      "published": false,
+      "dossierPath": "editorial/library/minecraft-agent-harness-dossier-2026-10-30-0540.json",
+      "metrics": {
+        "stars": 21,
+        "forks": 1,
+        "openIssues": 0,
+        "license": "MIT",
+        "archived": false,
+        "createdAt": "2026-10-29T05:21:45Z",
+        "updatedAt": "2026-10-30T02:16:00Z",
+        "pushedAt": "2026-10-29T20:30:45Z",
+        "measuredAt": "2026-10-30T05:40:49+03:00",
+        "source": "https://api.github.com/repos/yc-software/minecraft-agent-harness"
+      }
+    },
+    {
+      "repository": "Millillion/lasm",
+      "dossierPath": "editorial/library/lasm-dossier-2026-10-30-0839.json",
+      "published": false
+    }
+  ],
+  "developerIntegrationNotes": "لا تغيّر شيفرة الموقع أو التصميم. Lasm بحث مستقل غير منشور؛ إذا أضيفت واجهة مكتبة مستقبلًا فاعرض شارة «بحث فقط — غير منشور»، تاريخ القياس والترخيص والمتطلبات والتكلفة والبدائل وحدود التشغيل. لا تنشئ feed item أو معرفًا بديلًا ولا تضف زر تشغيل أو نشر.",
+  "testEvidence": {
+    "editorialValidator": {
+      "command": "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-10-30-0839.json",
+      "result": "passed",
+      "exitCode": 0,
+      "runLocation": "isolated local copy",
+      "scriptBlobSha": "5996ca5c8eae1b25950c349336d4d0f48067fe8c",
+      "records": 9
+    },
+    "editorialImporter": {
+      "command": "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-10-30-0839.json",
+      "result": "passed",
+      "exitCode": 0,
+      "runLocation": "isolated local copy",
+      "added": 6,
+      "refreshed": 3,
+      "oldRecordsPreserved": true,
+      "oldSourcesPreserved": true
+    },
+    "unitTests": {
+      "command": "python -m unittest discover -s tests -v",
+      "result": "pending GitHub Actions pull_request workflow",
+      "localRun": false
+    },
+    "lasmRuntime": {
+      "result": "not run; no runtime/testEvidence claim"
+    }
+  },
+  "heldProjectEnrichment": {
+    "count": 1,
+    "reason": "financial-trading automation project; no public quick-start or usage instructions were added in this cycle"
+  }
+}
