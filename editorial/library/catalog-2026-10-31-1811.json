@@ -1,15 +1,15 @@
 {
   "version": 1,
-  "compiledAt": "2026-10-31T18:11:52+03:00",
+  "compiledAt": "2026-10-31T18:41:48+03:00",
   "note": "Cumulative research-only catalog: 38 known projects. Existing priority order and URLs retained; LangGraph appended as priority 38 because it has no exact item in the current feed. WeKnora, edge-tts, and Web-Dev-For-Beginners are current feed items and are enriched by their original IDs, not duplicated in this research-only catalog.",
   "metricsWarning": "Stars, forks, open issues, and push timestamps are GitHub API snapshots measured at 2026-10-31T18:11:52+03:00; they are not quality rankings or daily growth.",
   "measurementWindow": "2026-10-30T21:12:00+03:00 for AI Engineering Hub and the eight previous projects; older historical entries retain their own measuredAt values.",
   "statusSummary": {
-    "total": 38,
+    "total": 40,
     "archived": 2,
-    "nonArchived": 36,
+    "nonArchived": 38,
     "inCurrentFeed": 5,
-    "notInFeed": 33,
+    "notInFeed": 35,
     "licenseNeedsUpstreamVerification": 7,
     "enrichedInCurrentFeed": 5
   },
@@ -1743,8 +1743,8 @@
       "category": "وكلاء الذكاء الاصطناعي والمحاكاة",
       "classification": "experimental_new_repo",
       "archived": false,
-      "starsMeasured": 75,
-      "metricCapturedAt": "2026-10-31T18:11:52+03:00",
+      "starsMeasured": 76,
+      "metricCapturedAt": "2026-10-31T18:41:48+03:00",
       "licenseApiValue": "MIT",
       "licenseNeedsUpstreamVerification": false,
       "pushedActivityMustBeChecked": true,
@@ -1774,9 +1774,9 @@
       ],
       "disabled": false,
       "forksMeasured": 6,
-      "metricsCaptureWindow": "2026-10-30T02:40:49Z",
+      "metricsCaptureWindow": "2026-10-31T15:41:48Z",
       "lastPushedAt": "2026-10-29T20:30:45Z",
-      "lastUpdatedAt": "2026-10-31T15:09:36Z",
+      "lastUpdatedAt": "2026-10-31T15:34:49Z",
       "defaultBranch": "main",
       "language": "JavaScript",
       "licenseName": "MIT License",
@@ -1799,16 +1799,16 @@
       "editorialEnriched": false,
       "editorialUrlMatches": false,
       "currentSnapshot": {
-        "stars": 75,
+        "stars": 76,
         "forks": 6,
         "openIssues": 1,
         "archived": false,
         "licenseSpdx": "MIT",
         "pushedAt": "2026-10-29T20:30:45Z",
-        "updatedAt": "2026-10-31T15:09:36Z",
+        "updatedAt": "2026-10-31T15:34:49Z",
         "defaultBranch": "main",
         "language": "JavaScript",
-        "measuredAt": "2026-10-31T18:11:52+03:00",
+        "measuredAt": "2026-10-31T18:41:48+03:00",
         "sourceApiUrl": "https://api.github.com/repos/yc-software/minecraft-agent-harness"
       },
       "currentStatus": "active_not_archived",
@@ -1823,7 +1823,7 @@
       "classification": "experimental_new_repo",
       "archived": false,
       "starsMeasured": 87,
-      "metricCapturedAt": "2026-10-31T18:11:52+03:00",
+      "metricCapturedAt": "2026-10-31T18:41:48+03:00",
       "licenseApiValue": "MIT",
       "licenseNeedsUpstreamVerification": false,
       "pushedActivityMustBeChecked": false,
@@ -1859,7 +1859,7 @@
       "disabled": false,
       "forksMeasured": 5,
       "openIssuesMeasured": 1,
-      "metricsCaptureWindow": "2026-10-30T05:39:48Z",
+      "metricsCaptureWindow": "2026-10-31T15:41:48Z",
       "lastPushedAt": "2026-10-29T01:41:21Z",
       "lastUpdatedAt": "2026-10-31T13:08:32Z",
       "defaultBranch": "main",
@@ -1903,7 +1903,7 @@
         "updatedAt": "2026-10-31T13:08:32Z",
         "defaultBranch": "main",
         "language": "C",
-        "measuredAt": "2026-10-31T18:11:52+03:00",
+        "measuredAt": "2026-10-31T18:41:48+03:00",
         "sourceApiUrl": "https://api.github.com/repos/Millillion/lasm"
       },
       "currentStatus": "active_not_archived",
@@ -1916,10 +1916,10 @@
       "category": "أمن وكلاء الذكاء الاصطناعي وعزل التنفيذ",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 20819,
+      "starsMeasured": 20821,
       "forksMeasured": 2043,
       "openIssuesMeasured": 576,
-      "metricCapturedAt": "2026-10-31T18:11:52+03:00",
+      "metricCapturedAt": "2026-10-31T18:41:48+03:00",
       "licenseApiValue": "Apache-2.0",
       "licenseNeedsUpstreamVerification": false,
       "pushedActivityMustBeChecked": false,
@@ -1949,24 +1949,26 @@
       ],
       "disabled": false,
       "lastPushedAt": "2026-10-31T04:40:14Z",
-      "lastUpdatedAt": "2026-10-31T15:15:37Z",
+      "lastUpdatedAt": "2026-10-31T15:41:04Z",
       "defaultBranch": "main",
       "language": "Rust",
       "licenseName": "Apache License 2.0",
       "activityStatus": "active_not_archived",
       "currentSnapshot": {
-        "stars": 20819,
+        "stars": 20821,
         "forks": 2043,
         "openIssues": 576,
         "archived": false,
         "licenseSpdx": "Apache-2.0",
         "pushedAt": "2026-10-31T04:40:14Z",
-        "updatedAt": "2026-10-31T15:15:37Z",
+        "updatedAt": "2026-10-31T15:41:04Z",
         "defaultBranch": "main",
         "language": "Rust",
-        "measuredAt": "2026-10-31T18:11:52+03:00",
+        "measuredAt": "2026-10-31T18:41:48+03:00",
         "sourceApiUrl": "https://api.github.com/repos/NVIDIA/OpenShell"
-      }
+      },
+      "metricsCaptureWindow": "2026-10-31T15:41:48Z",
+      "metricSource": "https://api.github.com/repos/NVIDIA/OpenShell"
     },
     {
       "priority": 35,
@@ -1975,8 +1977,8 @@
       "category": "أطر وكلاء Python",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 20968,
-      "metricCapturedAt": "2026-10-31T18:11:52+03:00",
+      "starsMeasured": 20967,
+      "metricCapturedAt": "2026-10-31T18:41:48+03:00",
       "licenseApiValue": "MIT",
       "licenseNeedsUpstreamVerification": false,
       "pushedActivityMustBeChecked": true,
@@ -1997,10 +1999,10 @@
         }
       ],
       "disabled": false,
-      "forksMeasured": 3073,
-      "metricsCaptureWindow": "2026-10-30T11:42:19Z",
+      "forksMeasured": 3074,
+      "metricsCaptureWindow": "2026-10-31T15:41:48Z",
       "lastPushedAt": "2026-10-31T14:56:57Z",
-      "lastUpdatedAt": "2026-10-31T14:48:37Z",
+      "lastUpdatedAt": "2026-10-31T15:32:10Z",
       "defaultBranch": "main",
       "language": "Python",
       "licenseName": "MIT License",
@@ -2021,21 +2023,21 @@
       "editorialEnriched": false,
       "editorialUrlMatches": false,
       "currentSnapshot": {
-        "stars": 20968,
-        "forks": 3073,
-        "openIssues": 1716,
+        "stars": 20967,
+        "forks": 3074,
+        "openIssues": 1717,
         "archived": false,
         "licenseSpdx": "MIT",
         "pushedAt": "2026-10-31T14:56:57Z",
-        "updatedAt": "2026-10-31T14:48:37Z",
+        "updatedAt": "2026-10-31T15:32:10Z",
         "defaultBranch": "main",
         "language": "Python",
-        "measuredAt": "2026-10-31T18:11:52+03:00",
+        "measuredAt": "2026-10-31T18:41:48+03:00",
         "sourceApiUrl": "https://api.github.com/repos/pydantic/pydantic-ai"
       },
       "currentStatus": "active_not_archived",
       "currentLicenseStatus": "SPDX_detected_full_text_inspected",
-      "openIssuesMeasured": 1716
+      "openIssuesMeasured": 1717
     },
     {
       "priority": 36,
@@ -2044,13 +2046,13 @@
       "category": "أدوات Python وإدارة المشاريع",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 91390,
+      "starsMeasured": 91391,
       "forksMeasured": 3736,
       "openIssuesMeasured": 3014,
       "watchersMeasured": 195,
-      "metricCapturedAt": "2026-10-31T18:11:52+03:00",
+      "metricCapturedAt": "2026-10-31T18:41:48+03:00",
       "metricPrecision": "rounded as displayed on official GitHub repository page",
-      "licenseApiValue": "Apache-2.0",
+      "licenseApiValue": "Apache-2.0 OR MIT",
       "licenseNeedsUpstreamVerification": false,
       "pushedActivityMustBeChecked": true,
       "reviewBasis": "Official GitHub repository page and connector metadata; README, official docs, LICENSE-APACHE and LICENSE-MIT inspected. No code execution. Latest commit SHA captured, but its timestamp was not exposed by the connector.",
@@ -2090,20 +2092,22 @@
       "latestCommitSha": "58283797f644cf4917591785eb61743e65d53a88",
       "latestCommitMessage": "Escape literal paths when adding workspace members (#23008)",
       "currentSnapshot": {
-        "stars": 91390,
+        "stars": 91391,
         "forks": 3736,
         "openIssues": 3014,
         "archived": false,
-        "licenseSpdx": "Apache-2.0",
+        "licenseSpdx": "Apache-2.0 OR MIT",
         "pushedAt": "2026-10-31T04:59:10Z",
-        "updatedAt": "2026-10-31T15:16:23Z",
+        "updatedAt": "2026-10-31T15:19:39Z",
         "defaultBranch": "main",
         "language": "Rust",
-        "measuredAt": "2026-10-31T18:11:52+03:00",
+        "measuredAt": "2026-10-31T18:41:48+03:00",
         "sourceApiUrl": "https://api.github.com/repos/astral-sh/uv"
       },
       "lastPushedAt": "2026-10-31T04:59:10Z",
-      "lastUpdatedAt": "2026-10-31T15:16:23Z"
+      "lastUpdatedAt": "2026-10-31T15:19:39Z",
+      "metricsCaptureWindow": "2026-10-31T15:41:48Z",
+      "metricSource": "https://api.github.com/repos/astral-sh/uv"
     },
     {
       "priority": 37,
@@ -2112,8 +2116,8 @@
       "category": "تعلم هندسة الذكاء الاصطناعي",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 38566,
-      "metricCapturedAt": "2026-10-31T18:11:52+03:00",
+      "starsMeasured": 38570,
+      "metricCapturedAt": "2026-10-31T18:41:48+03:00",
       "licenseApiValue": "MIT",
       "licenseNeedsUpstreamVerification": false,
       "pushedActivityMustBeChecked": false,
@@ -2144,9 +2148,9 @@
       "disabled": false,
       "forksMeasured": 6347,
       "openIssuesMeasured": 131,
-      "metricsCaptureWindow": "2026-10-30T18:12:00Z",
+      "metricsCaptureWindow": "2026-10-31T15:41:48Z",
       "lastPushedAt": "2026-10-30T12:36:39Z",
-      "lastUpdatedAt": "2026-10-31T15:07:07Z",
+      "lastUpdatedAt": "2026-10-31T15:42:16Z",
       "defaultBranch": "main",
       "language": "Jupyter Notebook",
       "licenseName": "MIT License",
@@ -2174,16 +2178,16 @@
       "editorialEnriched": true,
       "editorialUrlMatches": true,
       "currentSnapshot": {
-        "stars": 38566,
+        "stars": 38570,
         "forks": 6347,
         "openIssues": 131,
         "archived": false,
         "licenseSpdx": "MIT",
         "pushedAt": "2026-10-30T12:36:39Z",
-        "updatedAt": "2026-10-31T15:07:07Z",
+        "updatedAt": "2026-10-31T15:42:16Z",
         "defaultBranch": "main",
         "language": "Jupyter Notebook",
-        "measuredAt": "2026-10-31T18:11:52+03:00",
+        "measuredAt": "2026-10-31T18:41:48+03:00",
         "sourceApiUrl": "https://api.github.com/repos/patchy631/ai-engineering-hub"
       },
       "currentStatus": "active_not_archived",
@@ -2248,6 +2252,183 @@
       "currentStatus": "active_not_archived",
       "currentLicenseStatus": "SPDX_detected_full_text_inspected",
       "openIssuesMeasured": 466
+    },
+    {
+      "priority": 39,
+      "repository": "googleapis/python-genai",
+      "url": "https://github.com/googleapis/python-genai",
+      "category": "واجهات Python لنماذج Gemini",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 4049,
+      "forksMeasured": 1052,
+      "openIssuesMeasured": 371,
+      "metricCapturedAt": "2026-10-31T18:41:48+03:00",
+      "licenseApiValue": "Apache-2.0",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub API snapshot plus README, LICENSE, pyproject.toml and requirements.txt inspected; no code execution.",
+      "overviewShort": "SDK رسمي لـPython يربط التطبيقات بـGemini Developer API وGemini Enterprise Agent Platform؛ لا يستضيف النماذج بنفسه.",
+      "proposedResearchOrBuild": "طبقة تقييم تقارن استجابات النماذج والإصدارات مع تسجيل زمن الاستجابة واستخدام الرموز وتكلفة المزود.",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "research-only; no current feed project item",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://api.github.com/repos/googleapis/python-genai"
+        },
+        {
+          "title": "README",
+          "url": "https://github.com/googleapis/python-genai/blob/main/README.md"
+        },
+        {
+          "title": "LICENSE",
+          "url": "https://github.com/googleapis/python-genai/blob/main/LICENSE"
+        },
+        {
+          "title": "Python package configuration",
+          "url": "https://github.com/googleapis/python-genai/blob/main/pyproject.toml"
+        },
+        {
+          "title": "Official SDK documentation",
+          "url": "https://googleapis.github.io/python-genai/"
+        },
+        {
+          "title": "Gemini Developer API",
+          "url": "https://ai.google.dev/gemini-api/docs"
+        }
+      ],
+      "disabled": false,
+      "defaultBranch": "main",
+      "language": "Python",
+      "licenseName": "Apache License 2.0",
+      "licenseSummary": "Apache-2.0 وفق GitHub وpyproject.toml وملف LICENSE الرسمي.",
+      "licenseEvidence": "تمت مراجعة ملف LICENSE وبيانات المشروع؛ لا يشمل الترخيص تكاليف خدمات Gemini أو شروط استخدام النماذج.",
+      "activityStatus": "active_not_archived",
+      "alternativeProjects": [
+        {
+          "repository": "pydantic/pydantic-ai",
+          "url": "https://github.com/pydantic/pydantic-ai",
+          "status": "multi_provider_agent_sdk"
+        },
+        {
+          "repository": "googleapis/js-genai",
+          "url": "https://github.com/googleapis/js-genai",
+          "status": "official_google_genai_sdk_for_javascript"
+        },
+        {
+          "repository": "openai/openai-python",
+          "url": "https://github.com/openai/openai-python",
+          "status": "alternative_provider_sdk"
+        }
+      ],
+      "metricSource": "https://api.github.com/repos/googleapis/python-genai",
+      "editorialEnriched": false,
+      "editorialUrlMatches": false,
+      "currentSnapshot": {
+        "stars": 4049,
+        "forks": 1052,
+        "openIssues": 371,
+        "archived": false,
+        "licenseSpdx": "Apache-2.0",
+        "pushedAt": "2026-10-31T00:34:25Z",
+        "updatedAt": "2026-10-31T15:37:41Z",
+        "defaultBranch": "main",
+        "language": "Python",
+        "measuredAt": "2026-10-31T18:41:48+03:00",
+        "sourceApiUrl": "https://api.github.com/repos/googleapis/python-genai"
+      },
+      "currentStatus": "active_not_archived",
+      "currentLicenseStatus": "SPDX_detected_full_text_inspected"
+    },
+    {
+      "priority": 40,
+      "repository": "microsoft/markitdown",
+      "url": "https://github.com/microsoft/markitdown",
+      "category": "تحويل المستندات إلى Markdown",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 193195,
+      "forksMeasured": 14469,
+      "openIssuesMeasured": 775,
+      "metricCapturedAt": "2026-10-31T18:41:48+03:00",
+      "licenseApiValue": "MIT",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub API snapshot plus README, LICENSE, package pyproject.toml and Dockerfile inspected; no code execution.",
+      "overviewShort": "أداة Python لتحويل ملفات Office وPDF وصيغ متعددة إلى Markdown مناسب للفهرسة والتحليل؛ ليست أداة تحويل بصري عالي الدقة.",
+      "proposedResearchOrBuild": "خط تجهيز مستندات عربي محلي يحفظ بنية العناوين والجداول ويقيس فقد النص قبل إدخال المحتوى إلى RAG.",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "research-only; no current feed project item",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://api.github.com/repos/microsoft/markitdown"
+        },
+        {
+          "title": "README",
+          "url": "https://github.com/microsoft/markitdown/blob/main/README.md"
+        },
+        {
+          "title": "LICENSE",
+          "url": "https://github.com/microsoft/markitdown/blob/main/LICENSE"
+        },
+        {
+          "title": "Package configuration",
+          "url": "https://github.com/microsoft/markitdown/blob/main/packages/markitdown/pyproject.toml"
+        },
+        {
+          "title": "Dockerfile",
+          "url": "https://github.com/microsoft/markitdown/blob/main/Dockerfile"
+        },
+        {
+          "title": "Docling alternative",
+          "url": "https://github.com/docling-project/docling"
+        },
+        {
+          "title": "Unstructured alternative",
+          "url": "https://github.com/Unstructured-IO/unstructured"
+        }
+      ],
+      "disabled": false,
+      "defaultBranch": "main",
+      "language": "Python",
+      "licenseName": "MIT License",
+      "licenseSummary": "MIT وفق GitHub وملف LICENSE الرسمي.",
+      "licenseEvidence": "تمت مراجعة ملف LICENSE؛ الإضافات والموصلات الخارجية وخدمات Azure لها شروط وتكاليف مستقلة.",
+      "activityStatus": "active_not_archived",
+      "alternativeProjects": [
+        {
+          "repository": "docling-project/docling",
+          "url": "https://github.com/docling-project/docling",
+          "status": "document_parsing_and_layout_alternative"
+        },
+        {
+          "repository": "Unstructured-IO/unstructured",
+          "url": "https://github.com/Unstructured-IO/unstructured",
+          "status": "document_ingestion_pipeline_alternative"
+        }
+      ],
+      "metricSource": "https://api.github.com/repos/microsoft/markitdown",
+      "editorialEnriched": false,
+      "editorialUrlMatches": false,
+      "currentSnapshot": {
+        "stars": 193195,
+        "forks": 14469,
+        "openIssues": 775,
+        "archived": false,
+        "licenseSpdx": "MIT",
+        "pushedAt": "2026-10-28T15:33:14Z",
+        "updatedAt": "2026-10-31T15:34:36Z",
+        "defaultBranch": "main",
+        "language": "Python",
+        "measuredAt": "2026-10-31T18:41:48+03:00",
+        "sourceApiUrl": "https://api.github.com/repos/microsoft/markitdown"
+      },
+      "currentStatus": "active_not_archived",
+      "currentLicenseStatus": "SPDX_detected_full_text_inspected"
     }
   ],
   "currentSnapshotSummary": {
@@ -2267,7 +2448,7 @@
     ],
     "source": "36 prior historical entries preserved from the 2026-10-30 18:11 catalog; AI Engineering Hub measured and appended. The eight previous projects were remeasured separately at 21:12 Asia/Riyadh."
   },
-  "measurementNote": "GitHub metrics are timestamped snapshots, not daily growth. README, roadmap, LICENSE and a representative Simple RAG example were inspected for AI Engineering Hub; no code was executed. Eight previous projects were rechecked for visibility, archive status, license SPDX and current stars/forks/issues at the timestamp in the companion review file.",
+  "measurementNote": "GitHub API counters are cumulative snapshots measured at compiledAt; they are not quality scores or daily growth. Repository README/license/configuration review is distinct from executing the project.",
   "archivedAlternatives": [
     {
       "repo": "atom/atom",
@@ -2303,11 +2484,11 @@
     }
   ],
   "summary": {
-    "total": 37,
+    "total": 40,
     "archived": 2,
-    "nonArchived": 35,
+    "nonArchived": 38,
     "inCurrentFeed": 5,
-    "notInFeed": 32,
+    "notInFeed": 35,
     "licenseNeedsUpstreamVerification": 7,
     "enrichedInCurrentFeed": 5
   }
