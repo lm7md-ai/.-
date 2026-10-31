@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "items": {
+    "8db759a7708af25195": {
+      "url": "https://www.tomshardware.com/tech-industry/big-tech/cisco-gives-27-year-old-engineer-unlimited-ai-tokens-to-rewrite-98-percent-of-the-companys-legacy-code-in-24-months-president-plucks-former-startup-founder-telling-him-to-go-nuts",
+      "titleAr": "Cisco تراهن على فريق صغير لإعادة هيكلة معظم شيفرتها القديمة بمساعدة الذكاء الاصطناعي",
+      "summaryAr": "بحسب تقرير Fortune الذي نقلته Tom’s Hardware، كُلّف المهندس Padmanabhan Krishnamurthy بإثبات جدوى نهج لإعادة هيكلة الشيفرة القديمة في Cisco خلال أربعة أسابيع، مع هدف معلن لإعادة هيكلة 98% منها خلال 24 شهرًا بفريق صغير. هذه خطة طموحة وليست نتيجة مكتملة أو نسبة إنجاز مثبتة.",
+      "whyItMatters": "يعرض المثال استخدام الذكاء الاصطناعي في تحديث قواعد شيفرة مؤسسية كبيرة، لكنه يوضح أن سرعة توليد الشيفرة ليست معيار النجاح وحدها؛ التوافق والاختبارات والأمان وقابلية الصيانة هي ما يحدد قيمة إعادة الهيكلة.",
+      "audience": "طلاب علوم الحاسب ومطورو البرمجيات وفرق هندسة الأنظمة وقادة التقنية.",
+      "nextSteps": [
+        "اقرأ تقرير Fortune الأصلي وميّز تصريحات الإدارة عن النتائج المنجزة.",
+        "قيّم أي إعادة هيكلة باختبارات سلوكية ومقاييس regression قبل وبعد التغيير.",
+        "أبقِ مراجعة بشرية للتغييرات الحساسة في البيانات والأمن والواجهات.",
+        "تابع نتائج إثبات المفهوم بعد أربعة أسابيع قبل التعامل مع هدف 98% كإنجاز."
+      ],
+      "limitations": "الأرقام والمهلة تعكسان خطة وتصريحات منسوبة إلى رئيس Cisco نقلتها Fortune؛ لا توجد نتائج تثبت إتمام إعادة كتابة 98% أو جودة الناتج، كما لا ينشر التقرير نطاق الشيفرة أو معايير القبول التفصيلية.",
+      "reviewedAt": "2026-10-31T02:47:46+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Tom’s Hardware — Cisco engineer AI refactoring plan",
+          "url": "https://www.tomshardware.com/tech-industry/big-tech/cisco-gives-27-year-old-engineer-unlimited-ai-tokens-to-rewrite-98-percent-of-the-companys-legacy-code-in-24-months-president-plucks-former-startup-founder-telling-him-to-go-nuts"
+        },
+        {
+          "title": "Fortune — Cisco chief found a 27-year-old ex-founder rewriting 98% of its code",
+          "url": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/"
+        }
+      ]
+    },
+    "c8804a79ad56c280f7": {
+      "url": "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job/",
+      "titleAr": "استقالة مسؤول جامعي بعد تحقيق خلص إلى عدم الإفصاح عن استخدامه للذكاء الاصطناعي في كتابات منشورة",
+      "summaryAr": "خلصت لجنة أكاديمية في Dartmouth إلى أن نائب الرئيس الأكاديمي Santiago Schnell استخدم الذكاء الاصطناعي لتغيير أعمال منشورة بصورة جوهرية، ولم يفصح عن ذلك وفق متطلبات ناشرين في حالتين على الأقل. وبعد نشر نتائج المراجعة أعلن رحيله. وذكر التقرير أن المراجعة ركزت على عينة محددة ولم تشمل كل كتاباته.",
+      "whyItMatters": "القضية تتعلق بالشفافية والالتزام بسياسات الناشرين، لا بمجرد استخدام أداة تحرير. وهي تبرز أهمية الإفصاح عن المساعدة الجوهرية، والتحقق من المخرجات، وتحمل المؤلف مسؤولية النص والبحث.",
+      "audience": "الطلاب والباحثون وأعضاء هيئة التدريس والمحررون والجامعات.",
+      "nextSteps": [
+        "راجع سياسة المقرر أو المجلة قبل استخدام أدوات الذكاء الاصطناعي.",
+        "افصح عن المساعدة التي تتطلبها السياسة، وميّز التحرير اللغوي عن التعديل الجوهري.",
+        "احتفظ بمسودات العمل وسجل التعديلات والمراجع التي تحققت منها.",
+        "تحقق بنفسك من النتائج والاقتباسات والكود والأشكال قبل التسليم."
+      ],
+      "limitations": "تقرير اللجنة يوضح أن المراجعة كانت مستهدفة ومحدودة بسبب ضيق الوقت ونقص بعض السجلات الشخصية؛ لذلك لا يثبت أن كل استخدام للذكاء الاصطناعي في الكتابة مخالف، ولا يجعل كواشف النصوص وحدها دليلًا حاسمًا.",
+      "reviewedAt": "2026-10-31T02:47:46+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Ars Technica — Dartmouth provost AI disclosure investigation",
+          "url": "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job/"
+        },
+        {
+          "title": "Dartmouth — Advisory Committee Report to the President",
+          "url": "https://president.dartmouth.edu/sites/president/files/2026-10/Advisory%20Committee%20Report%20to%20President%202026-10-27.pdf"
+        },
+        {
+          "title": "Dartmouth President — An Update on the Provost Review",
+          "url": "https://president.dartmouth.edu/news/2026/10/update-provost-review"
+        }
+      ]
+    },
+    "abc5566bda42b5a9b5": {
+      "url": "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/",
+      "titleAr": "DoorDash تقول إن الطلبات التي أنجزتها وكلاء الذكاء الاصطناعي الخارجيون ما تزال بالمئات فقط",
+      "summaryAr": "قال الرئيس التنفيذي لـDoorDash في مكالمة نتائج الربع الثالث إن الوكلاء الخارجيين أنجزوا «عدة مئات» من الطلبات إجمالًا منذ بدء تشغيلهم، بينما ما يزال معظم العملاء يستخدمون تطبيق الشركة مباشرة. وتصف التغطية المجال بأنه استخدام مبكر، مع استمرار الشركة في استكشاف الربط مع وكلاء آخرين.",
+      "whyItMatters": "توضح الأرقام الفجوة بين الحديث عن وكلاء يشترون وينفذون المهام تلقائيًا وبين الاستخدام الفعلي في خدمة واسعة النطاق. يحتاج هذا النوع من المنتجات إلى موافقة واضحة من المستخدم وربط موثوق وتأكيد للطلب ومعالجة سليمة للأخطاء.",
+      "audience": "مطورو الوكلاء ومنتجات التجارة الإلكترونية ومديرو المنتجات وطلاب التقنية.",
+      "nextSteps": [
+        "افصل في القياس بين استخدام وكلاء الشركة الداخليين وطلبات الوكلاء الخارجيين.",
+        "صمّم موافقات صريحة قبل إرسال الطلب أو إتمام الدفع.",
+        "قِس نجاح إتمام المهمة والأخطاء والإلغاء والاسترداد، لا عدد المحادثات فقط.",
+        "لا تعمم رقم شركة واحدة على كل التجارة أو كل منصات الوكلاء."
+      ],
+      "limitations": "رقم «عدة مئات» تقريبي ومعلن شفهيًا بوصفه إجماليًا منذ بدء التشغيل، من دون فترة قياس محددة أو تفصيل مستقل؛ لذلك لا يصح تحويله إلى معدل ربع سنوي أو تعميمه على بقية السوق.",
+      "reviewedAt": "2026-10-31T02:47:46+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Ars Technica — DoorDash says outside AI agents have only led to hundreds of orders",
+          "url": "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/"
+        },
+        {
+          "title": "TechCrunch — DoorDash said it has only seen several hundred orders from AI agents",
+          "url": "https://techcrunch.com/2026/10/30/doordash-said-its-only-seen-several-hundreds-of-orders-from-ai-agents/"
+        },
+        {
+          "title": "DoorDash Investor Relations — Q3 2026 financial results",
+          "url": "https://ir.doordash.com/news/news-details/2026/DoorDash-Releases-Third-Quarter-2026-Financial-Results/default.aspx"
+        }
+      ]
+    },
+    "7a24eca35f77e86d87": {
+      "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+      "titleAr": "شركات ذكاء اصطناعي تتجه إلى إشارة موحدة داخل robots.txt لتفضيلات استخدام المحتوى",
+      "summaryAr": "ذكرت The Verge أن OpenAI وGoogle وMicrosoft وAnthropic أعلنت دعمها لإشارة policy token مقترحة داخل robots.txt لتوحيد تفضيلات الناشرين بشأن استخدام المحتوى في تدريب النماذج. تقول Anthropic إنها تبنت الإشارة بالفعل، بينما أعلنت الشركات الأخرى جداول دعم مستقبلية. النص الحالي مسودة Internet-Draft فردية لدى IETF، وليس معيارًا معتمدًا.",
+      "whyItMatters": "قد تقلل الإشارة الموحدة الحاجة إلى إعداد تفضيلات منفصلة لكل مزود، وتمنح الناشرين طريقة أوضح للتعبير عن رغباتهم. لكن robots.txt لا يفرض الامتثال تقنيًا؛ فالنتيجة تعتمد على احترام كل crawler للإشارة.",
+      "audience": "أصحاب المواقع والناشرون ومطورو الزواحف وأنظمة الذكاء الاصطناعي ومهتمو حوكمة البيانات.",
+      "nextSteps": [
+        "اقرأ مسودة IETF نفسها قبل وصفها بأنها معيار.",
+        "ميّز بين استخدام المحتوى للتدريب وبين grounding أو الظهور في البحث.",
+        "راجع robots.txt وسياسات الزحف في موقعك مع توثيق التغييرات.",
+        "تابع إصدارات المسودة وإعلانات التنفيذ الفعلية من كل مزود."
+      ],
+      "limitations": "المقترح Internet-Draft غير معتمد رسميًا من IETF ولا يحمل صفة RFC؛ تصريحات الدعم لا تثبت أن جميع الأنظمة تطبقه الآن، كما أن robots.txt إشارة تفضيل وليست حاجزًا يمنع الجهات غير الملتزمة من الوصول.",
+      "reviewedAt": "2026-10-31T02:47:46+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "The Verge — The biggest names in AI are backing a new way to opt out of scraping",
+          "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out"
+        },
+        {
+          "title": "IETF Datatracker — Machine-Readable Training Preference Signal draft-00",
+          "url": "https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/"
+        }
+      ]
+    },
+    "1abfdb6dc9802b6f4d": {
+      "url": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
+      "titleAr": "تقرير يتوقع تصنيفًا ائتمانيًا مضاربيًا لـAnthropic بعد طرحها المحتمل",
+      "summaryAr": "نقلت TechCrunch عن Financial Times أن Blackstone أبلغ مستثمري صفقة تمويل شرائح Anthropic بتوقعه حصول الشركة على تصنيف ضمن فئة BB عالية العائد بعد اكتتاب محتمل، بعدما كانت توقعات سابقة تشير إلى تصنيف استثماري. وذكرت TechCrunch أن Anthropic وBlackstone لم يعلقا على التقرير.",
+      "whyItMatters": "الإنفاق على الحوسبة والشرائح ومراكز البيانات يتطلب تمويلًا ضخمًا؛ وتكلفة الاقتراض المحتملة قد تؤثر في خطط التوسع. لكن التوقع المنقول ليس تصنيفًا صادرًا عن وكالة ولا دليلًا على تعثر الشركة.",
+      "audience": "طلاب الاقتصاد والتقنية ومتابعو أعمال شركات الذكاء الاصطناعي.",
+      "nextSteps": [
+        "ميّز بين توقع مستثمر وتصنيف رسمي صادر عن وكالة ائتمان.",
+        "ابحث عن إفصاحات أو تقارير رسمية لاحقة قبل اعتماد أي تغيير في التصنيف.",
+        "تابع العلاقة بين الإنفاق الرأسمالي والتمويل وتوسّع البنية التحتية.",
+        "تعامل مع الخبر بوصفه تحليلًا ماليًا صحفيًا لا توصية استثمارية."
+      ],
+      "limitations": "المعلومة توقع منسوب إلى Blackstone عبر تقرير Financial Times؛ لم أتمكن من قراءة نص FT كاملًا بسبب حاجز الاشتراك، لذلك أعتمد على نقل TechCrunch. لا يوجد في المادة تصنيف نهائي منشور من وكالة ائتمان.",
+      "reviewedAt": "2026-10-31T02:47:46+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — Anthropic expected to receive high junk rating following IPO, FT report says",
+          "url": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/"
+        },
+        {
+          "title": "Financial Times — report cited by TechCrunch",
+          "url": "https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f"
+        }
+      ]
+    },
+    "05a1378ae455d54de0": {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
+      "titleAr": "سام ألتمان يدافع عن تركيز الذاكرة في مراكز البيانات وسط نقص DRAM",
+      "summaryAr": "قال سام ألتمان في بودكاست Cheeky Pint إن استخدام مراكز البيانات للذاكرة قد يرفع الاستفادة من DRAM مقارنة بأجهزة شخصية لا تستخدم كامل ذاكرتها طوال الوقت. يضع تقرير The Verge التصريح ضمن ضغط الطلب طويل الأمد على الذاكرة من شركات الحوسبة السحابية ومشروعات البنية التحتية للذكاء الاصطناعي.",
+      "whyItMatters": "النقاش يمس تكلفة الأجهزة وتشغيل النماذج محليًا مقابل السحابة. الكفاءة الاقتصادية ليست العامل الوحيد؛ الخصوصية والكمون والاتصال والاعتماد على المزود تظل أسبابًا مهمة عند اختيار مكان تشغيل النموذج.",
+      "audience": "مطورو الذكاء الاصطناعي ومهتمو التشغيل المحلي ومتابعو عتاد الحاسب وسلاسل الإمداد.",
+      "nextSteps": [
+        "قارن احتياج الذاكرة للنماذج التي تريد تشغيلها محليًا قبل اختيار العتاد.",
+        "وازن بين الكلفة والخصوصية والكمون والاتصال عند المقارنة مع السحابة.",
+        "تابع بيانات موردي الذاكرة بدل الاعتماد على تصريح واحد.",
+        "تعامل مع رأي ألتمان بوصفه وجهة نظر طرف مستفيد من توسع مراكز البيانات."
+      ],
+      "limitations": "هذا موقف لرئيس شركة تستثمر بكثافة في مراكز البيانات وليس دراسة اقتصادية محايدة؛ المقال لا يقدم تقديرًا كميًا لمقدار الذاكرة المحجوزة أو أثر ذلك وحده على أسعار الأجهزة.",
+      "reviewedAt": "2026-10-31T02:47:46+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "The Verge — Sam Altman says it is better for RAM to be in a data center than on your desk",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers"
+        }
+      ]
+    },
+    "8ada096505f97960e7": {
+      "url": "https://www.engadget.com/2302374/the-wikimedia-foundation-weighs-in-on-the-nyts-case-against-openai/",
+      "titleAr": "مؤسسة ويكيميديا تطلب موازنة حقوق النشر مع استمرار المعرفة المفتوحة في قضية NYT ضد OpenAI",
+      "summaryAr": "قدمت مؤسسة ويكيميديا مذكرة صديق للمحكمة تدعو إلى عدم تبني تفسير شامل أو شديد التقييد للاستخدام العادل. ترى المؤسسة أن بعض استخدامات المحتوى في تدريب النماذج قد تكون عادلة عندما تنتج شيئًا مختلفًا عن الأصل، لكنها تطالب باحترام تراخيص الناشرين عند استخدام RAG أو تقنيات grounding لإعادة تقديم المحتوى، مع الإسناد.",
+      "whyItMatters": "قد يؤثر النقاش القضائي في طريقة بناء أنظمة RAG ومصادر المعرفة العامة واستدامة المواقع التي توفر البيانات. موقف ويكيميديا رأي طرف مشارك في النقاش وليس حكمًا قضائيًا.",
+      "audience": "مطورو أنظمة RAG والناشرون والباحثون ومهتمو المصادر المفتوحة وحقوق المحتوى.",
+      "nextSteps": [
+        "اقرأ مذكرة ويكيميديا الأصلية بدل الاكتفاء بعناوين التغطية.",
+        "احتفظ بمصدر كل مقطع مسترجع وأظهر الإسناد للمستخدم.",
+        "احترم تراخيص المحتوى وشروط API وحدود الاستخدام.",
+        "تابع مسار القضية ولا تعرض موقف المؤسسة كأنه نتيجة قضائية نهائية."
+      ],
+      "limitations": "المذكرة موقف قانوني تقدمه مؤسسة ويكيميديا وليست حكمًا أو إجماعًا قانونيًا؛ لا تحسم القضية ولا تثبت أن كل حالات التدريب أو RAG متشابهة في التحليل القانوني.",
+      "reviewedAt": "2026-10-31T02:47:46+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Engadget — The Wikimedia Foundation weighs in on the NYT case against OpenAI",
+          "url": "https://www.engadget.com/2302374/the-wikimedia-foundation-weighs-in-on-the-nyts-case-against-openai/"
+        },
+        {
+          "title": "Wikimedia Foundation — amicus brief in New York Times v. OpenAI",
+          "url": "https://wikimediafoundation.org/news/2026/10/30/wikimedia-foundation-amicus-brief-new-york-times-v-open-ai-case/"
+        },
+        {
+          "title": "Wikimedia Diff — Why Wikimedia is speaking up in a major AI copyright case",
+          "url": "https://diff.wikimedia.org/2026/10/30/why-wikimedia-is-speaking-up-in-a-major-ai-copyright-case/"
+        }
+      ]
+    },
+    "037154e824aaff256e": {
+      "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
+      "titleAr": "عرض من NVIDIA يدمج نماذج Nemotron في منزل تفاعلي يعمل محليًا",
+      "summaryAr": "يعرض مهندس في NVIDIA مشروع MonsterHouse كتجربة تفاعلية تستمع للزوار وترد صوتيًا باستخدام Nemotron ASR وNemotron 3.5 Bolt E4B وMagpie TTS وAudio2Face-3D. يذكر الكاتب تشغيل المنظومة على محطة عمل ببطاقتي RTX PRO، ومتوسطًا قدره 1.70 ثانية للرد الصوتي و0.72 ثانية للردود المخزنة في إعداده.",
+      "whyItMatters": "يوضح المشروع كيف تُركّب نماذج صغيرة نسبيًا مع التعرف على الكلام وتوليده وتحريك شخصية ثلاثية الأبعاد في تطبيق واحد. كما يوضح أن وصف النظام بأنه محلي لا يعني أن كامل المنظومة رخيصة أو أن النموذج وحده يحقق الأداء.",
+      "audience": "مطورو الأنظمة متعددة الوسائط والوكلاء الصوتيين وتجارب التفاعل والوسائط الإبداعية.",
+      "nextSteps": [
+        "افحص مكونات المنظومة وتراخيص النماذج والأدوات كلًا على حدة.",
+        "اختبر زمن الاستجابة على عتاد مختلف بدل نقل أرقام الكاتب مباشرة.",
+        "قس زمن الرحلة كاملة من التقاط الصوت حتى إخراج الرد والتحريك.",
+        "ضع موافقة واضحة وسياسة احتفاظ للميكروفون والكاميرا عند التعامل مع الزوار."
+      ],
+      "limitations": "هذا عرض تجريبي كتبه موظف في NVIDIA وليس معيار أداء مستقلًا؛ الأرقام تخص إعداد الكاتب وعتادًا متقدمًا ومكونات متعددة، ولا تثبت أن النموذج وحده يحقق هذه السرعة أو أن التشغيل متاح على أي جهاز.",
+      "reviewedAt": "2026-10-31T02:47:46+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Hugging Face — Building a Haunted House with NVIDIA Nemotron Open Models",
+          "url": "https://huggingface.co/blog/nvidia/nemotron-halloween"
+        },
+        {
+          "title": "NVIDIA Nemotron Voice Agent repository",
+          "url": "https://github.com/NVIDIA-AI-Blueprints/nemotron-voice-agent"
+        },
+        {
+          "title": "NVIDIA Audio2Face-3D repository",
+          "url": "https://github.com/NVIDIA/Audio2Face-3D"
+        }
+      ]
+    },
+    "ec733f799e1aaee3d1": {
+      "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+      "titleAr": "NVIDIA تطلق Nemotron 3.5 Transcribe وبيانات Granary v2 لتفريغ الصوت متعدد اللغات",
+      "summaryAr": "تقدم NVIDIA نموذجًا مفتوح الأوزان لمعالجة التسجيلات الصوتية: يدعم التفريغ في 40 لغة، والترجمة من وإلى الإنجليزية في 31 لغة، وإسناد المتحدثين في 13 لغة، وتسجيلات تصل إلى ساعة وثمانية متحدثين. وتنشر معه Granary v2، وهي بيانات وملفات وصفية وخط تجهيز قابل لإعادة الاستخدام؛ يذكر الإعلان أن ملفات البيان تغطي 463,062 ساعة عبر 48 لغة و16 مجموعة مصدرية، لا أنها تمثل وحدها كامل بيانات تدريب النموذج.",
+      "whyItMatters": "الخبر: يجمع إصدارًا صوتيًا متعدد المهام مع بيانات وخطوات تكييف مفتوحة. التحليل: قد يفيد بناء أدوات تفريغ للمحاضرات والاجتماعات ومعالجة التسجيلات محليًا، لكن الدعم يختلف حسب اللغة والمهمة، كما أن حجم النموذج وعتاده المطلوب يجعلان التشغيل المحلي على الأجهزة الصغيرة غير عملي.",
+      "audience": "مطورو تطبيقات الصوت، باحثو التعرف الآلي على الكلام، وفرق أدوات الاجتماعات والتعليم.",
+      "nextSteps": [
+        "راجع مصفوفة اللغات في بطاقة النموذج؛ العربية مدعومة للتفريغ والترجمة وإسناد المتحدثين لكن مستوى الجودة مصنف Supported لا Leading.",
+        "قيّم عينة صوتية مرخصة من المجال واللهجة المستهدفين، وقِس WER وDER والزمن والذاكرة قبل اعتماد النموذج.",
+        "تحقق من ترخيص OpenMDW-1.1 للنموذج ومن شروط كل مجموعة مصدرية قبل استخدام بيانات Granary v2 أو إعادة توزيع مشتقاتها."
+      ],
+      "limitations": "المقال منشور على Hugging Face بواسطة مساهمين من NVIDIA؛ أرقام الأداء والسرعة والمقارنات الواردة فيه من الجهة المطورة أو من لوحات تقييم يستشهد بها، ولم يجر نَبض اختبارًا مستقلًا. النموذج مخصص للتسجيلات لا للبث الحي، كما أن مهام الإجابة عن الصوت والاستدلال قيّمت بالإنجليزية فقط وفق بطاقة النموذج. بطاقة النموذج تذكر إعداد تشغيل موصى به على H100 بذاكرة 80GB؛ لا ينبغي تعميم النتائج على هاتف أو عتاد استهلاكي. ترخيص النموذج OpenMDW-1.1، بينما تحتفظ مجموعات البيانات المصدرية بشروطها الخاصة.",
+      "reviewedAt": "2026-10-31T05:44:21+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "المقال الأصلي من فريق NVIDIA على Hugging Face",
+          "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+        },
+        {
+          "title": "بطاقة NVIDIA Nemotron 3.5 Transcribe الرسمية",
+          "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B"
+        }
+      ]
+    }
+  }
+}

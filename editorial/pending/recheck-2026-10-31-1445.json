@@ -1,0 +1,330 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-31T14:45:49+03:00",
+  "baseMain": {
+    "sha": "cd0fc69f854481353f0d7359e21c08749cd6cfab",
+    "requiredFilesRead": {
+      "README.md": "b65d4ccb0b7e96f0072101addf05785992044c58",
+      "docs/CONTENT_GUIDE.md": "4056fc047fdedd1f34967935fd083165ba99841d",
+      "docs/SCHEDULED_EDITOR_PROMPT.md": "fe21144e4cb54b98f5e15828e0d9e7af14fdd902",
+      "scripts/editorial.py": "5996ca5c8eae1b25950c349336d4d0f48067fe8c",
+      "site/data/feed.json": "6e7b19db3a983f3771272bdd9f8f47e07ee121a8",
+      "site/data/editorial.json": "37c89df6023c9b14a8f7f05f73ce0877a37ab956",
+      "site/data/status.json": "337f82fcf148e70922d2b7225696f1c33cb88f82"
+    },
+    "latestMainRefresh": {
+      "sha": "cd0fc69f854481353f0d7359e21c08749cd6cfab",
+      "parent": "bc1390f049f82717aa74271238137814ce1d8e9a",
+      "message": "data: refresh deduplicated technology feed",
+      "changedFiles": [
+        "site/data/feed.json",
+        "site/data/seen.json",
+        "site/data/status.json"
+      ],
+      "incomingUnchanged": true
+    },
+    "pr1": {
+      "state": "closed",
+      "merged": true,
+      "mergeCommit": "e88edb7d3c90895972b4cf28977405dea9831578"
+    },
+    "pr2": {
+      "state": "closed",
+      "merged": true,
+      "mergeCommit": "480e56e19518fc994c6626cdef8d57dbbbbc7a51"
+    }
+  },
+  "incomingAudit": {
+    "mainFiles": 58,
+    "mainRows": 558,
+    "uniqueIdUrlPairsFromPriorExactAudit": 554,
+    "duplicateRowsFromPriorExactAudit": 4,
+    "structuralEquivalentValidation": {
+      "filesFetchedAndParsed": 58,
+      "entriesChecked": 558,
+      "errors": 0,
+      "note": "تم فحص بنية كل ملف وارد في main: version/items، حقول النص، HTTPS، reviewedAt، basis، المصادر، nextSteps، وبنية المقترحات."
+    },
+    "priorExactAudit": {
+      "report": "editorial/pending/recheck-2026-10-31-0247.json",
+      "baseMainSha": "bc1390f049f82717aa74271238137814ce1d8e9a",
+      "importedExactRows": 555,
+      "importedUniquePairs": 551,
+      "currentFeedMatchedNotImported": 0,
+      "urlMatchedUnderDifferentId": 1,
+      "seenOnlyNotInFeedOrEditorial": 3,
+      "confirmedExpired": 0,
+      "needsCorrection": 0
+    },
+    "currentRecheckLimitation": "لم أُعد حساب المطابقة الحرفية لكل الصفوف الـ558 على لقطة feed الجديدة؛ تحديث main cd0fc69 غيّر feed.json وseen.json وstatus.json فقط. لذلك تبقى أرقام المطابقة التاريخية من التقرير السابق ولا تُعرض على أنها مقارنة جديدة مع لقطة 2026-10-31 الحالية."
+  },
+  "publishedArtifact": {
+    "workflowRun": 41173282453,
+    "workflowRunNumber": 111,
+    "artifactId": 13032630036,
+    "downloadedAndInspected": true,
+    "generatedAt": "2026-10-31T05:36:41+00:00",
+    "feedItems": 800,
+    "feedNews": 700,
+    "feedProjects": 100,
+    "editorialEntries": 596,
+    "exactFeedEditorialMatches": 302,
+    "exactNewsMatches": 205,
+    "exactProjectMatches": 97,
+    "orphanEditorialEntries": 294,
+    "urlMismatchesAmongFeedIds": 0,
+    "status": "ok",
+    "directLiveBrowserFetch": "DisabledError"
+  },
+  "specialRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "label": "NVIDIA OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "inSeen": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "dossier": "editorial/library/nvidia-openshell-dossier-2026-10-30-1146.json",
+      "status": "research_only_not_published"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "label": "Canva Craft",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "inSeen": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "status": "seen_only_pending_exact_reentry"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "label": "1Password agent sign-in",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "inSeen": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "status": "seen_only_pending_exact_reentry"
+    }
+  ],
+  "pr76": {
+    "url": "https://github.com/lm7md-ai/.-/pull/76",
+    "state": "open",
+    "merged": false,
+    "headBranch": "nabdh/editorial-2026-10-31-0247",
+    "headSha": "e304c060f3f3d89b304df31d539b353560c9b9d7",
+    "aheadBy": 10,
+    "behindBy": 1,
+    "mergeable": true,
+    "files": 7,
+    "editorial": {
+      "baseEntries": 596,
+      "resultingEntries": 604,
+      "newNewsEntries": 8,
+      "refreshedNewsEntries": 1
+    },
+    "incoming": {
+      "files": 2,
+      "rows": 11,
+      "news": 9,
+      "exactFeedPairs": 9,
+      "projects": 2,
+      "exactFeedProjectPairs": 2,
+      "projectRecordsImported": 0,
+      "projectRecordsEligible": 2,
+      "structuralErrors": 0
+    },
+    "ci": {
+      "runId": 41186165115,
+      "runNumber": 92,
+      "conclusion": "success",
+      "unitTests": "success",
+      "officialEditorialValidate": "success",
+      "javascriptChecks": "success"
+    }
+  },
+  "pr71": {
+    "url": "https://github.com/lm7md-ai/.-/pull/71",
+    "state": "open",
+    "merged": false,
+    "headBranch": "editorial/2026-10-30-1743",
+    "headSha": "5b56be9c09a65d5841b16f94a2e26c534e775697",
+    "aheadBy": 6,
+    "behindBy": 18,
+    "mergeable": true,
+    "files": 6,
+    "incomingNews": 11,
+    "exactCurrentFeedPairs": 10,
+    "alreadyEnrichedInCurrentMain": 3,
+    "newEligibleNews": 7,
+    "absentFromCurrentFeed": 1,
+    "structuralErrors": 0,
+    "ci": {
+      "runId": 41077366560,
+      "conclusion": "success",
+      "note": "الاختبار نجح على رأس الفرع القديم، لكن الفرع متأخر 18 commit عن main."
+    },
+    "mergeDecision": "do_not_merge_stale_branch; rebase/re-export the 7 eligible records onto latest main and revalidate"
+  },
+  "projectResearch": {
+    "previousEightReviewedInPriorCycle": true,
+    "catalogInPR76": {
+      "total": 37,
+      "active": 35,
+      "archived": 2,
+      "licensesNeedManualReview": 7
+    },
+    "publishedSiteLibraryEntries": 31,
+    "feedProjects": 100,
+    "exactEnrichedProjects": 97,
+    "newProjectsResearched": [
+      {
+        "id": "b4484a96aa90c3f23e",
+        "name": "Tencent/WeKnora",
+        "url": "https://github.com/Tencent/WeKnora",
+        "exactFeedPair": true,
+        "imported": false
+      },
+      {
+        "id": "fb7d8c0c8a030338b7",
+        "name": "rany2/edge-tts",
+        "url": "https://github.com/rany2/edge-tts",
+        "exactFeedPair": true,
+        "imported": false
+      }
+    ],
+    "proposalTotals": {
+      "improvements": 33,
+      "spinoffs": 30,
+      "religious": 1,
+      "total": 64
+    },
+    "newProposalTotals": {
+      "improvements": 5,
+      "spinoffs": 3,
+      "religious": 1,
+      "total": 9
+    },
+    "bestThreeNewSuggestions": [
+      "مجموعة تقييم عربية لاسترجاع المستندات والإحالات في WeKnora",
+      "نسخ احتياطي قابل للتحقق لنسخة WeKnora Lite",
+      "واجهة TTS موحدة مع بديل محلي عند انقطاع الشبكة"
+    ],
+    "runtimeTests": 0,
+    "testEvidenceClaimed": false,
+    "currentMetadata": {
+      "measuredAt": "2026-10-31T14:45:49+03:00",
+      "note": "GitHub repository metadata fetched during this run; cumulative stars are not daily popularity. No runtime tests were performed.",
+      "projects": [
+        {
+          "repository": "Tencent/WeKnora",
+          "url": "https://github.com/Tencent/WeKnora",
+          "archived": false,
+          "stars": 36104,
+          "forks": 4905,
+          "pushedAt": "2026-10-30T13:53:32Z",
+          "updatedAt": "2026-10-31T11:53:20Z",
+          "defaultBranch": "main",
+          "apiLicense": "NOASSERTION",
+          "licenseReview": "README says MIT; LICENSE file says MIT except listed third-party components, which retain original licenses. Review the component list before redistribution.",
+          "reviewedFiles": [
+            "README.md",
+            "LICENSE",
+            ".env.lite.example",
+            "docker-compose.yml"
+          ],
+          "operatingModes": {
+            "standard": "Docker Compose; multi-service stack, with optional Neo4j, MinIO and Langfuse profiles; model provider and storage configured by environment.",
+            "lite": "Single-binary/local mode using SQLite FTS5 + sqlite-vec, local file storage and in-memory queue; Ollama is the default local model endpoint.",
+            "cloud": "Can connect to cloud model providers and external storage/vector backends; service/API usage and hosting may incur separate costs.",
+            "desktop": "README describes a macOS desktop build path but says no installer is published yet."
+          },
+          "quickStart": [
+            "git clone https://github.com/Tencent/WeKnora.git",
+            "cd WeKnora",
+            "cp .env.example .env",
+            "edit model/storage settings",
+            "docker compose pull",
+            "docker compose up -d",
+            "open http://localhost and follow onboarding"
+          ],
+          "limitations": "No runtime test was performed. Hardware needs vary with model, embedding, reranker, document parsing and database choices; do not treat a single CPU/RAM figure as universal."
+        },
+        {
+          "repository": "rany2/edge-tts",
+          "url": "https://github.com/rany2/edge-tts",
+          "archived": false,
+          "stars": 12425,
+          "forks": 1168,
+          "pushedAt": "2026-10-14T09:30:53Z",
+          "updatedAt": "2026-10-31T10:18:44Z",
+          "defaultBranch": "master",
+          "apiLicense": "NOASSERTION",
+          "licenseReview": "LICENSE states MIT applies only to src/edge_tts/srt_composer.py; all remaining files are LGPLv3.",
+          "reviewedFiles": [
+            "README.md",
+            "LICENSE",
+            "setup.py",
+            "setup.cfg"
+          ],
+          "requirements": "Python >=3.7; aiohttp >=3.8,<4; certifi; tabulate; typing-extensions. edge-playback requires mpv except on Windows.",
+          "operatingModes": {
+            "local": "The Python package and CLI run locally, but speech synthesis itself calls Microsoft's online Edge TTS service and requires internet.",
+            "cloud": "No separate paid cloud key is required by the README; the remote service remains an external dependency and availability/terms are outside this repository."
+          },
+          "quickStart": [
+            "python -m pip install edge-tts",
+            "edge-tts --list-voices",
+            "edge-tts --voice ar-EG-SalmaNeural --text \"مرحبا\" --write-media hello.mp3"
+          ],
+          "limitations": "No runtime test was performed; service availability, voice catalogue and terms can change. Check the per-file license split before redistribution."
+        }
+      ]
+    }
+  },
+  "newsCycle": {
+    "pr76NewNews": 8,
+    "pr76ExistingNewsRefreshed": 1,
+    "pr71NewEligibleNews": 7,
+    "pr71AlreadyEnriched": 3,
+    "pr71AbsentFromFeed": 1,
+    "newNewsGeneratedThisRun": 0,
+    "decision": "prioritize integrating/revalidating pending eligible content before creating another news batch"
+  },
+  "validation": {
+    "localCheckoutAvailable": false,
+    "localCommandsNotRun": [
+      "python scripts/editorial.py validate <incoming-file>",
+      "python scripts/editorial.py import <incoming-file>",
+      "python -m unittest discover -s tests -v"
+    ],
+    "structuralEquivalent": "all 58 main incoming files and all 3 pending-PR incoming files parsed and passed the schema-equivalent checks",
+    "officialCI": {
+      "pr76Run": 41186165115,
+      "pr71Run": 41077366560,
+      "unitTests": "passed",
+      "officialEditorialValidate": "passed on each PR branch's site/data/editorial.json",
+      "note": "CI does not run the importer on standalone incoming files."
+    },
+    "importerExecuted": false
+  },
+  "publication": {
+    "latestMainPagesRun": 41173282453,
+    "conclusion": "success",
+    "pagesArtifactInspected": true,
+    "pr76Published": false,
+    "pr71Published": false,
+    "reasonNotMerged": "update-and-deploy.yml runs scripts/update_feed.py and can write feed.json, seen.json, and status.json after any push to main. The user prohibited changes to feed.json and seen.json, and workflows may not be modified.",
+    "noWorkflowChanges": true
+  },
+  "guardrails": {
+    "changedSiteCode": false,
+    "changedDesign": false,
+    "changedWorkflows": false,
+    "changedPublicationSettings": false,
+    "changedFeed": false,
+    "changedSeen": false,
+    "changedStatus": false,
+    "paidServicesUsed": false,
+    "merged": false
+  }
+}

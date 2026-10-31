@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "auditedAt": "2026-10-31T18:11:52+03:00",
+  "baseMainSha": "2eb730e2bbbc731ead7b7a6b0f50d0291bf72bf7",
+  "currentFeed": {
+    "generatedAt": "2026-10-31T12:23:17+00:00",
+    "items": 800,
+    "news": 700,
+    "projects": 100
+  },
+  "mainIncoming": {
+    "files": 58,
+    "rows": 558,
+    "uniqueIdUrlPairs": 554,
+    "duplicateRows": 4,
+    "exactIdUrlInCurrentFeedAndEditorial": 285,
+    "exactIdUrlInEditorialOutsideCurrentFeed": 265,
+    "sameUrlDifferentId": 1,
+    "seenOnlyNotInFeedOrEditorial": 3,
+    "confirmedExpired": 0,
+    "eligibleBacklogImports": 0,
+    "needsCorrection": 1,
+    "expiryNote": "لا تُصنف السجلات بأنها منقضية لمجرد خروجها من التغذية؛ لا توجد تواريخ نشر موحدة موثوقة لكل الصفوف التاريخية."
+  },
+  "mismatchIdentity": {
+    "incomingId": "7a99eca9b2ce14d9f5",
+    "incomingUrl": "https://github.com/rasbt/LLMs-from-scratch",
+    "currentFeedId": "e0cbbf211a55e79f34",
+    "decision": "hold; preserve both identities; no remapping by title or URL"
+  },
+  "specialRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "title": "NVIDIA OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "seen": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "researchDossier": "editorial/library/nvidia-openshell-dossier-2026-10-30-1146.json",
+      "decision": "research-only; retain original ID and URL"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "title": "Canva Craft",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "seen": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "researchDossier": null,
+      "decision": "hold; no exact active feed identity"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "title": "1Password agent sign-in",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "seen": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "researchDossier": null,
+      "decision": "hold; no exact active feed identity"
+    }
+  ],
+  "pr76Incoming": {
+    "files": 2,
+    "rows": 11,
+    "exactFeedMatches": 11,
+    "newNews": 8,
+    "updatedNews": 1,
+    "newProjects": 2,
+    "importedToBranch": true
+  },
+  "pr71Incoming": {
+    "rows": 11,
+    "alreadyInEditorial": 3,
+    "exactFeedMatches": 10,
+    "newEligibleNews": 7,
+    "selectedNews": 4,
+    "deferredNews": 3,
+    "notInCurrentFeed": 1,
+    "selectedIds": [
+      "87d27a9f8a0972f507",
+      "65eeab64fed21e0b54",
+      "d38e7d27f17d2a9394",
+      "819cf1c9b153cbd6b2"
+    ],
+    "deferred": [
+      {
+        "id": "0a4f535604978bdcd4",
+        "title": "دراسة: الدروس التي يكتبها الوكيل بعد فشل عابر قد تنقل أثر الحظ إلى قراراته التالية"
+      },
+      {
+        "id": "df16325e0e51567772",
+        "title": "بحث PAI-KNN يكيّف أولوية الفئات وقت الاستدلال لمواجهة تغير البيانات واختلال التوازن"
+      },
+      {
+        "id": "fc2bba52b1b0c3e82b",
+        "title": "Apple تنشر موارد للمطورين لبناء واجهات Mac تدعم اللمس وتعلن جلسات إرشادية في نوفمبر"
+      }
+    ],
+    "notInFeedId": "19409de9d962cd4ff4",
+    "decision": "three eligible stories held for the next cycle; one item absent from current feed remains held without identity substitution"
+  },
+  "currentCycle": {
+    "newNews": 12,
+    "updatedNews": 1,
+    "newProjects": 3,
+    "exactIdUrlMatches": 16,
+    "editorialRecordsAfter": 611,
+    "activeExactNewsAfter": 209,
+    "activeExactProjectsAfter": 99,
+    "allActiveExactAfter": 308
+  },
+  "untouched": [
+    "site/data/feed.json",
+    "site/data/seen.json",
+    "site/data/status.json",
+    "site/** source code",
+    "site/styles.css",
+    "site/app.js",
+    "site/ideas.js",
+    ".github/workflows/**",
+    "deployment settings"
+  ],
+  "testEvidence": "No project runtime tests claimed; local Python commands were unavailable."
+}
