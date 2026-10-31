@@ -1,0 +1,387 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-31T18:11:52+03:00",
+  "baseMainSha": "2eb730e2bbbc731ead7b7a6b0f50d0291bf72bf7",
+  "pr76HeadBefore": "aea92e3aa74390aaa627c0e8aea1f386031273d0",
+  "newsCycle": {
+    "newNews": 12,
+    "updatedNews": 1,
+    "basisArticle": 11,
+    "basisMetadata": 2,
+    "newProjects": 3,
+    "newNewsIds": [
+      "8db759a7708af25195",
+      "c8804a79ad56c280f7",
+      "abc5566bda42b5a9b5",
+      "7a24eca35f77e86d87",
+      "1abfdb6dc9802b6f4d",
+      "05a1378ae455d54de0",
+      "8ada096505f97960e7",
+      "037154e824aaff256e",
+      "87d27a9f8a0972f507",
+      "65eeab64fed21e0b54",
+      "d38e7d27f17d2a9394",
+      "819cf1c9b153cbd6b2"
+    ],
+    "updatedNewsIds": [
+      "ec733f799e1aaee3d1"
+    ],
+    "newProjectIds": [
+      "b4484a96aa90c3f23e",
+      "fb7d8c0c8a030338b7",
+      "e4dd7c24fff16ee320"
+    ],
+    "incomingFiles": [
+      "editorial/incoming/nabdh-editorial-2026-10-31-0247.json",
+      "editorial/incoming/nabdh-editorial-2026-10-31-0840.json",
+      "editorial/incoming/nabdh-editorial-2026-10-31-1811.json"
+    ]
+  },
+  "previousEightProjects": [
+    {
+      "repository": "patchy631/ai-engineering-hub",
+      "stars": 38566,
+      "forks": 6347,
+      "openIssues": 131,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-10-30T12:36:39Z",
+      "updatedAt": "2026-10-31T15:07:07Z",
+      "defaultBranch": "main",
+      "language": "Jupyter Notebook",
+      "measuredAt": "2026-10-31T18:11:52+03:00",
+      "status": "active_not_archived",
+      "testEvidence": "not_run",
+      "sourceApiUrl": "https://api.github.com/repos/patchy631/ai-engineering-hub"
+    },
+    {
+      "repository": "googleapis/python-genai",
+      "stars": 4049,
+      "forks": 1052,
+      "openIssues": 371,
+      "archived": false,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-10-31T00:34:25Z",
+      "updatedAt": "2026-10-30T23:58:08Z",
+      "defaultBranch": "main",
+      "language": "Python",
+      "measuredAt": "2026-10-31T18:11:52+03:00",
+      "status": "active_not_archived",
+      "testEvidence": "not_run",
+      "sourceApiUrl": "https://api.github.com/repos/googleapis/python-genai"
+    },
+    {
+      "repository": "Millillion/lasm",
+      "stars": 87,
+      "forks": 5,
+      "openIssues": 1,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-10-29T01:41:21Z",
+      "updatedAt": "2026-10-31T13:08:32Z",
+      "defaultBranch": "main",
+      "language": "C",
+      "measuredAt": "2026-10-31T18:11:52+03:00",
+      "status": "active_not_archived",
+      "testEvidence": "not_run",
+      "sourceApiUrl": "https://api.github.com/repos/Millillion/lasm"
+    },
+    {
+      "repository": "microsoft/markitdown",
+      "stars": 193190,
+      "forks": 14469,
+      "openIssues": 775,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-10-28T15:33:14Z",
+      "updatedAt": "2026-10-31T15:06:39Z",
+      "defaultBranch": "main",
+      "language": "Python",
+      "measuredAt": "2026-10-31T18:11:52+03:00",
+      "status": "active_not_archived",
+      "testEvidence": "not_run",
+      "sourceApiUrl": "https://api.github.com/repos/microsoft/markitdown"
+    },
+    {
+      "repository": "yc-software/minecraft-agent-harness",
+      "stars": 75,
+      "forks": 6,
+      "openIssues": 1,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "updatedAt": "2026-10-31T15:09:36Z",
+      "defaultBranch": "main",
+      "language": "JavaScript",
+      "measuredAt": "2026-10-31T18:11:52+03:00",
+      "status": "active_not_archived",
+      "testEvidence": "not_run",
+      "sourceApiUrl": "https://api.github.com/repos/yc-software/minecraft-agent-harness"
+    },
+    {
+      "repository": "NVIDIA/OpenShell",
+      "stars": 20819,
+      "forks": 2043,
+      "openIssues": 576,
+      "archived": false,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-10-31T04:40:14Z",
+      "updatedAt": "2026-10-31T15:15:37Z",
+      "defaultBranch": "main",
+      "language": "Rust",
+      "measuredAt": "2026-10-31T18:11:52+03:00",
+      "status": "active_not_archived",
+      "testEvidence": "not_run",
+      "sourceApiUrl": "https://api.github.com/repos/NVIDIA/OpenShell"
+    },
+    {
+      "repository": "pydantic/pydantic-ai",
+      "stars": 20968,
+      "forks": 3073,
+      "openIssues": 1716,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-10-31T14:56:57Z",
+      "updatedAt": "2026-10-31T14:48:37Z",
+      "defaultBranch": "main",
+      "language": "Python",
+      "measuredAt": "2026-10-31T18:11:52+03:00",
+      "status": "active_not_archived",
+      "testEvidence": "not_run",
+      "sourceApiUrl": "https://api.github.com/repos/pydantic/pydantic-ai"
+    },
+    {
+      "repository": "astral-sh/uv",
+      "stars": 91390,
+      "forks": 3736,
+      "openIssues": 3014,
+      "archived": false,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-10-31T04:59:10Z",
+      "updatedAt": "2026-10-31T15:16:23Z",
+      "defaultBranch": "main",
+      "language": "Rust",
+      "measuredAt": "2026-10-31T18:11:52+03:00",
+      "status": "active_not_archived",
+      "testEvidence": "not_run",
+      "sourceApiUrl": "https://api.github.com/repos/astral-sh/uv"
+    }
+  ],
+  "newProjects": [
+    {
+      "repository": "Tencent/WeKnora",
+      "id": "b4484a96aa90c3f23e",
+      "stars": 36111,
+      "forks": 4908,
+      "openIssues": 748,
+      "archived": false,
+      "license": "NOASSERTION (README MIT; third-party components retain their own terms)",
+      "pushedAt": "2026-10-30T13:53:32Z",
+      "updatedAt": "2026-10-31T15:16:25Z",
+      "defaultBranch": "main",
+      "language": "Go",
+      "basis": "readme",
+      "testEvidence": "not_run",
+      "measuredAt": "2026-10-31T18:11:52+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/Tencent/WeKnora"
+    },
+    {
+      "repository": "rany2/edge-tts",
+      "id": "fb7d8c0c8a030338b7",
+      "stars": 12425,
+      "forks": 1168,
+      "openIssues": 8,
+      "archived": false,
+      "license": "NOASSERTION (LGPLv3 for most files; MIT only for srt_composer.py)",
+      "pushedAt": "2026-10-14T09:30:53Z",
+      "updatedAt": "2026-10-31T10:18:44Z",
+      "defaultBranch": "master",
+      "language": "Python",
+      "basis": "readme",
+      "testEvidence": "not_run",
+      "measuredAt": "2026-10-31T18:11:52+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/rany2/edge-tts"
+    },
+    {
+      "repository": "microsoft/Web-Dev-For-Beginners",
+      "id": "e4dd7c24fff16ee320",
+      "stars": 97054,
+      "forks": 16097,
+      "openIssues": 147,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-10-20T21:43:35Z",
+      "updatedAt": "2026-10-31T15:21:46Z",
+      "defaultBranch": "main",
+      "language": "JavaScript",
+      "basis": "readme",
+      "testEvidence": "not_run",
+      "measuredAt": "2026-10-31T18:11:52+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/microsoft/Web-Dev-For-Beginners"
+    }
+  ],
+  "researchOnlyAddition": {
+    "repository": "langchain-ai/langgraph",
+    "file": "editorial/library/langgraph-dossier-2026-10-31-1811.json",
+    "published": false,
+    "feedId": null,
+    "stars": 44217,
+    "forks": 7608,
+    "openIssues": 466,
+    "license": "MIT",
+    "archived": false,
+    "pushedAt": "2026-10-31T07:41:00Z",
+    "measuredAt": "2026-10-31T18:11:52+03:00"
+  },
+  "projectLibrary": {
+    "historicalResearchCatalog": 38,
+    "activeNotArchived": 36,
+    "archived": 2,
+    "licenseNeedsManualReview": 7,
+    "currentFeedProjects": 100,
+    "exactlyEnrichedProjectsBefore": 96,
+    "exactlyEnrichedProjectsAfter": 99,
+    "newProjectsAdded": 3,
+    "remainingUnenrichedProjects": 1
+  },
+  "ideaCompleteness": {
+    "previousEight": {
+      "improvements": 28,
+      "spinoffs": 27,
+      "religious": 0
+    },
+    "newProjects": {
+      "improvements": 8,
+      "spinoffs": 5,
+      "religious": 1
+    },
+    "publicTotal": {
+      "improvements": 36,
+      "spinoffs": 32,
+      "religious": 1,
+      "completeProposals": 69,
+      "incompleteProposals": 0
+    },
+    "researchOnlyLangGraph": {
+      "improvements": 5,
+      "spinoffs": 5,
+      "religious": 0,
+      "completeProposals": 10
+    },
+    "knownTotalIncludingResearchOnly": 79
+  },
+  "bestThreeSuggestions": [
+    {
+      "title": "مجموعة تقييم عربية للاسترجاع والإحالات",
+      "problem": "وجود إجابة سلسة لا يثبت أن المقاطع المسترجعة تدعمها، خصوصًا مع PDF عربي ممسوح أو جداول واتجاه RTL.",
+      "approach": "إنشاء مجموعة أسئلة مرجعية ومستندات مرخصة، ثم قياس الاسترجاع ودقة الإحالة والامتناع عند غياب الدليل عبر API قبل تغيير إعدادات الإنتاج.",
+      "stack": "Python، WeKnora REST API، pytest، JSONL، Ragas أو مقاييس استرجاع بسيطة.",
+      "steps": [
+        "اجمع مستندات عربية عامة مرخصة ومتنوعة.",
+        "أنشئ أسئلة مرجعية وحدد المقطع الصحيح لكل سؤال.",
+        "شغّل الاسترجاع بإعدادات chunking وembedding مختلفة.",
+        "احسب Recall@k ودقة الإحالة ومعدل الامتناع الصحيح.",
+        "انشر تقريرًا يوضح نوع المستند والأخطاء دون تخزين بيانات حساسة."
+      ],
+      "metric": "Recall@5، نسبة الإحالات التي تشير إلى المقطع الداعم، ومعدل الامتناع الصحيح.",
+      "difficulty": "متوسط — تقدير؛ يحتاج إعداد مجموعة مرجعية بشرية.",
+      "risks": "تحيز مجموعة صغيرة، واختلاف جودة OCR بين المستندات، واحتمال تسرب محتوى خاص إن لم تستخدم بيانات عامة.",
+      "sources": [
+        {
+          "title": "WeKnora retrieval engines documentation",
+          "url": "https://github.com/Tencent/WeKnora/blob/main/website-docs/03-features/05-retrieval-engines.md"
+        },
+        {
+          "title": "Ragas documentation",
+          "url": "https://docs.ragas.io/"
+        }
+      ]
+    },
+    {
+      "title": "نسخ احتياطي قابل للتحقق لنسخة Lite",
+      "problem": "النسخة المحلية تجمع قاعدة SQLite وملفات المستندات؛ نسخ أحدهما دون الآخر قد ينتج استعادة ناقصة.",
+      "approach": "إضافة أمر تصدير/تحقق يلتقط قاعدة البيانات والملفات والبيانات الوصفية في حزمة واحدة مع manifest وبصمات checksums، ثم يختبر الاستعادة في مجلد منفصل.",
+      "stack": "Go، SQLite، SHA-256، tar، اختبارات تكامل.",
+      "steps": [
+        "حدد جميع مسارات قاعدة البيانات والملفات والإعدادات غير السرية.",
+        "أنشئ manifest بإصدارات المخطط وعدد الملفات وأحجامها وبصماتها.",
+        "أوقف الكتابة أو استخدم snapshot آمنًا لقاعدة SQLite.",
+        "أنشئ الحزمة مع استثناء الأسرار والملفات المؤقتة.",
+        "استعد إلى مجلد جديد وتحقق من البصمات وعدد السجلات.",
+        "وثّق توافق الإصدارات وخطوات التراجع."
+      ],
+      "metric": "نسبة نجاح الاستعادة، وعدد الملفات المطابقة، وزمن النسخ والاستعادة.",
+      "difficulty": "متوسط إلى مرتفع — تقدير؛ يتطلب فهم دورة حياة التخزين والترحيلات.",
+      "risks": "نسخ بيانات اعتماد مشفرة دون مفاتيحها يجعلها غير قابلة للاستعادة؛ ونسخ قاعدة نشطة بطريقة غير متسقة قد يفسد snapshot.",
+      "sources": [
+        {
+          "title": "WeKnora Lite storage and configuration guide",
+          "url": "https://github.com/Tencent/WeKnora/blob/main/docs/LITE.md"
+        },
+        {
+          "title": "SQLite backup API",
+          "url": "https://www.sqlite.org/backup.html"
+        }
+      ]
+    },
+    {
+      "title": "واجهة موحدة لمزودي TTS مع وضع محلي احتياطي",
+      "problem": "الاعتماد على endpoint واحد عبر الإنترنت يجعل التطبيق يتوقف عند انقطاع الشبكة أو تغير الخدمة.",
+      "approach": "تعريف واجهة موحدة للتوليد، مع موصل edge-tts وموصل محلي اختياري لـPiper، وإظهار مزود الصوت المستخدم لكل ملف.",
+      "stack": "Python، Protocol/ABC، edge-tts، Piper، pytest، JSON metadata.",
+      "steps": [
+        "عرّف واجهة generate(text, voice, output_path).",
+        "اكتب محولًا لـedge-tts يحافظ على إعداداته المدعومة.",
+        "أضف محولًا لـPiper مع تنزيل النموذج منفصلًا.",
+        "حدد سياسة اختيار المزود دون إرسال النص تلقائيًا إلى السحابة.",
+        "اختبر فشل الشبكة والتحول المحلي على نصوص عامة.",
+        "وثّق اختلاف الأصوات والتراخيص وجودة المخرجات."
+      ],
+      "metric": "نسبة نجاح التوليد عند انقطاع الإنترنت، وزمن التوليد، ونسبة الملفات ذات metadata مكتملة.",
+      "difficulty": "متوسط — تقدير.",
+      "risks": "تختلف جودة الأصوات وتنسيقات المخرجات؛ نماذج Piper لها تراخيص مستقلة عن ترخيص المحرك.",
+      "sources": [
+        {
+          "title": "edge-tts",
+          "url": "https://github.com/rany2/edge-tts"
+        },
+        {
+          "title": "Piper local TTS",
+          "url": "https://github.com/OHF-Voice/piper1-gpl"
+        }
+      ]
+    }
+  ],
+  "sourceReadQuality": {
+    "articleRecordsRead": 11,
+    "metadataOnlyRecords": 2,
+    "projectReadmeReviews": 3,
+    "licenseFilesReviewed": 3,
+    "notes": [
+      "The Verge URL for the Binance story was inaccessible; the Associated Press report was read and used instead.",
+      "QViD and All-in-One remain basis=metadata because the complete papers and appendices were not fully reviewed.",
+      "No project was installed or executed; no testEvidence is claimed."
+    ]
+  },
+  "validation": {
+    "incomingRecordsStructurallyValidated": 16,
+    "pr76NewsFileRecords": 9,
+    "pr76ProjectFileRecords": 2,
+    "newIncomingFileRecords": 5,
+    "finalEditorialRecords": 611,
+    "existingEditorialRecordsPreserved": 596,
+    "addedEditorialRecords": 15,
+    "updatedEditorialCards": 1,
+    "structuralEquivalent": "passed",
+    "officialValidateCommand": "not run locally; PR CI will validate final site/data/editorial.json",
+    "officialImportCommand": "not run locally; merge semantics reproduced while retaining the existing items object",
+    "unitTestCommand": "not run locally; awaiting PR CI",
+    "testEvidenceClaimed": false
+  },
+  "deployment": {
+    "merged": false,
+    "published": false,
+    "reason": "The existing push-to-main Pages workflow runs scripts/update_feed.py and commits feed.json, seen.json, and status.json. The explicit no-touch constraint prevents merging this PR without allowing those files to be rewritten.",
+    "liveBrowserCheck": "DisabledError; current public data not independently opened in browser."
+  }
+}

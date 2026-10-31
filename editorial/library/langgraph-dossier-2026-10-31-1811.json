@@ -1,0 +1,380 @@
+{
+  "version": 1,
+  "repository": "langchain-ai/langgraph",
+  "url": "https://github.com/langchain-ai/langgraph",
+  "titleAr": "LangGraph — إطار منخفض المستوى لتنسيق الوكلاء وسير العمل ذي الحالة",
+  "overview": "LangGraph مكتبة مفتوحة المصدر وبيئة تشغيل منخفضة المستوى لبناء سير عمل ووكلاء طويلَي التشغيل يحتفظان بالحالة. يُمثَّل التنفيذ كرسم بياني من عقد وحواف؛ ويمكن مزج خطوات حتمية مكتوبة يدويًا مع خطوات تعتمد على نموذج لغوي. يوفر Graph API وFunctional API، والاستمرارية عبر checkpointers، والذاكرة العابرة للخيوط عبر stores، والبث، وإيقاف التنفيذ لطلب موافقة بشرية. يمكن استخدامه مستقلًا عن LangChain، لكنه يتكامل مع منظومتها.",
+  "requirements": "يتطلب Python 3.10 أو أحدث. تعتمد حزمة langgraph على langchain-core وlanggraph-checkpoint وlanggraph-sdk وlanggraph-prebuilt وxxhash وPydantic. لبناء وكيل يستخدم نموذجًا مستضافًا تحتاج حزمة تكامل للمزود ومفتاح API منفصل؛ وللتشغيل المحلي يمكن ربط Ollama عبر langchain-ollama مع تحمل الجهاز كلفة الذاكرة والحوسبة والطاقة. InMemorySaver مناسب للتجارب لكنه يفقد الحالة عند إعادة تشغيل العملية؛ للإنتاج يلزم checkpointer دائم مثل SQLite أو PostgreSQL مع سياسة احتفاظ. المكتبة نفسها MIT ولا تتطلب LangSmith.",
+  "quickStart": "التثبيت: pip install -U langgraph. ابدأ برسم بسيط: عرّف StateGraph لحالة TypedDict، أضف دالة كعقدة، اربط START بالعقدة ثم العقدة بـ END، نفّذ compile() ثم invoke(). عند إضافة نموذج وأدوات، ثبّت تكامل المزود واضبط بيانات اعتماده في متغير بيئة؛ وللنموذج المحلي ثبّت langchain-ollama وشغّل نموذجًا محليًا ثم مرّر ChatOllama إلى عقدة النموذج. أضف checkpointer وthread_id عندما تحتاج استئناف الجلسة بعد انقطاع. لا تستخدم InMemorySaver وحده لحفظ بيانات إنتاجية.",
+  "limitations": "LangGraph ليس نموذجًا لغويًا ولا يقدم جودة استدلال بمفرده؛ إنه طبقة orchestration منخفضة المستوى، ولذلك يتطلب تصميم الحالة والأدوات والتقييم. ذاكرة checkpoints قد تنمو وتزيد زمن الاستجابة والتخزين إذا لم توضع سياسة احتفاظ. النموذج المستضاف وخدمات السحابة والبنية التحتية قد تكون مدفوعة؛ ويمكن تشغيله محليًا مع نموذج محلي على حساب موارد الجهاز. LangSmith خدمة اختيارية منفصلة وأسعارها تتغير؛ لم تُستخدم أي خدمة مدفوعة في هذه المراجعة. البدائل: LangChain create_agent أعلى مستوى للبدء الأسرع، وPydantic AI للمخرجات المنظمة وعقود Python، وLlamaIndex عندما يكون محور التطبيق البيانات والاسترجاع. لا توجد استخدامات دينية مناسبة أستطيع توثيقها دون تحويل النظام إلى مصدر أحكام؛ لذلك لم أضف مقترحات دينية.",
+  "reviewedAt": "2026-10-31T18:11:52+03:00",
+  "basis": "readme",
+  "sources": [
+    {
+      "title": "LangGraph — المستودع وREADME",
+      "url": "https://github.com/langchain-ai/langgraph"
+    },
+    {
+      "title": "LangGraph — التوثيق العام",
+      "url": "https://docs.langchain.com/oss/python/langgraph/overview"
+    },
+    {
+      "title": "LangGraph — Quickstart",
+      "url": "https://docs.langchain.com/oss/python/langgraph/quickstart"
+    },
+    {
+      "title": "LangGraph — Persistence",
+      "url": "https://docs.langchain.com/oss/python/langgraph/persistence"
+    },
+    {
+      "title": "LangGraph — Interrupts",
+      "url": "https://docs.langchain.com/oss/python/langgraph/interrupts"
+    },
+    {
+      "title": "LangGraph — متطلبات الحزمة pyproject.toml",
+      "url": "https://github.com/langchain-ai/langgraph/blob/main/libs/langgraph/pyproject.toml"
+    },
+    {
+      "title": "LangGraph — ملف MIT LICENSE",
+      "url": "https://github.com/langchain-ai/langgraph/blob/main/LICENSE"
+    },
+    {
+      "title": "LangChain — تكامل Ollama المحلي",
+      "url": "https://docs.langchain.com/oss/python/integrations/chat/ollama"
+    },
+    {
+      "title": "LangSmith — الأسعار والخطط الاختيارية",
+      "url": "https://www.langchain.com/pricing"
+    },
+    {
+      "title": "Pydantic AI — بديل typed agents",
+      "url": "https://github.com/pydantic/pydantic-ai"
+    },
+    {
+      "title": "LlamaIndex — بديل يركز على البيانات والاسترجاع",
+      "url": "https://github.com/run-llama/llama_index"
+    }
+  ],
+  "metrics": {
+    "stars": 44217,
+    "forks": 7608,
+    "openIssues": 466,
+    "archived": false,
+    "licenseSpdx": "MIT",
+    "pushedAt": "2026-10-31T07:41:00Z",
+    "updatedAt": "2026-10-31T15:11:27Z",
+    "measuredAt": "2026-10-31T18:11:52+03:00",
+    "sourceApiUrl": "https://api.github.com/repos/langchain-ai/langgraph"
+  },
+  "license": {
+    "name": "MIT License",
+    "spdx": "MIT",
+    "evidence": "تم فحص ملف LICENSE الرسمي؛ GitHub API يعرض SPDX=MIT."
+  },
+  "status": {
+    "classification": "established_non_archived",
+    "activity": "active_recent_push",
+    "inCurrentFeed": false,
+    "feedId": null,
+    "published": false,
+    "siteVisibility": "research-only; no current feed item",
+    "currentStatus": "active_not_archived",
+    "activityStatus": "active_recent_push",
+    "currentLicenseStatus": "SPDX_detected_full_text_inspected",
+    "currentSnapshot": {
+      "stars": 44217,
+      "forks": 7608,
+      "openIssues": 466,
+      "archived": false,
+      "disabled": false,
+      "licenseSpdx": "MIT",
+      "pushedAt": "2026-10-31T07:41:00Z",
+      "updatedAt": "2026-10-31T15:11:27Z",
+      "defaultBranch": "main",
+      "measuredAt": "2026-10-31T18:11:52+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/langchain-ai/langgraph"
+    }
+  },
+  "alternatives": [
+    {
+      "repository": "langchain-ai/langchain",
+      "url": "https://github.com/langchain-ai/langchain",
+      "fit": "طبقة أعلى مستوى لبدء agent loop بسرعة."
+    },
+    {
+      "repository": "pydantic/pydantic-ai",
+      "url": "https://github.com/pydantic/pydantic-ai",
+      "fit": "وكلاء Python typed ومخرجات منظمة."
+    },
+    {
+      "repository": "run-llama/llama_index",
+      "url": "https://github.com/run-llama/llama_index",
+      "fit": "تطبيقات تتمحور حول البيانات والاسترجاع."
+    }
+  ],
+  "improvements": [
+    {
+      "title": "عقود حالة typed والتحقق عند حدود العقد",
+      "problem": "قد تنتج عقدة حقلًا ناقصًا أو نوعًا غير متوقع، فيظهر الخلل بعد عدة انتقالات.",
+      "approach": "عرّف مخطط حالة واضحًا، ثم تحقق من مدخلات ومخرجات العقد الحساسة وسجل إصدار المخطط مع الحالة المحفوظة.",
+      "stack": "Python / TypedDict / Pydantic / LangGraph / pytest",
+      "steps": [
+        "عرّف State schema لكل رسم.",
+        "حدد الحقول الإلزامية والاختيارية والقيود.",
+        "أضف عقدة تحقق عند الحدود الخارجية.",
+        "اختبر القيم الناقصة والأنواع غير الصحيحة.",
+        "اربط نسخة المخطط بسجلات checkpoint."
+      ],
+      "metric": "نسبة انتقالات الحالة غير الصالحة المكتشفة قبل وصولها إلى العقد اللاحقة.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "التحقق الصارم قد يرفض مدخلات صحيحة غير متوقعة؛ وتغييرات المخطط تحتاج ترحيلًا للحالات القديمة.",
+      "sources": [
+        {
+          "title": "LangGraph Quickstart",
+          "url": "https://docs.langchain.com/oss/python/langgraph/quickstart"
+        },
+        {
+          "title": "متطلبات LangGraph",
+          "url": "https://github.com/langchain-ai/langgraph/blob/main/libs/langgraph/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "title": "بوابة موافقة بشرية قبل الأدوات ذات الأثر",
+      "problem": "قد ينفذ الوكيل إرسالًا أو كتابة أو حذفًا قبل أن يراجع الإنسان الأثر النهائي.",
+      "approach": "استخدم interrupt مع checkpointer دائم، وصنّف الأدوات حسب أثرها، ولا تسمح بالفعل الخارجي إلا بعد موافقة مرتبطة بالطلب نفسه.",
+      "stack": "Python / LangGraph Interrupts / SQLite أو PostgreSQL / pytest",
+      "steps": [
+        "صنّف الأدوات إلى قراءة وكتابة وأفعال خارجية.",
+        "حدد نقاط التوقف قبل الأفعال ذات الأثر.",
+        "اعرض للمراجع المدخلات والنتيجة المتوقعة.",
+        "احفظ قرار الموافقة مع thread_id ونسخة الطلب.",
+        "اختبر الرفض والموافقة وانتهاء صلاحية الموافقة."
+      ],
+      "metric": "عدد الأفعال الخارجية التي مُنعت دون موافقة، ومعدل رفض الموافقات الصحيحة.",
+      "difficulty": "متوسطة إلى مرتفعة — تقدير بحثي.",
+      "risks": "قد تسبب الموافقات المتكررة إرهاقًا للمراجع؛ كما يجب منع إعادة استخدام موافقة قديمة لطلب مختلف.",
+      "sources": [
+        {
+          "title": "LangGraph Interrupts",
+          "url": "https://docs.langchain.com/oss/python/langgraph/interrupts"
+        },
+        {
+          "title": "LangGraph Persistence",
+          "url": "https://docs.langchain.com/oss/python/langgraph/persistence"
+        }
+      ]
+    },
+    {
+      "title": "سياسة احتفاظ واستعادة للـ checkpoints",
+      "problem": "تراكم نقاط الحفظ قد يزيد حجم التخزين وزمن الاستعادة، بينما حذفها عشوائيًا قد يفقد سياقًا مطلوبًا.",
+      "approach": "افصل ذاكرة المحادثة قصيرة الأجل عن المعرفة طويلة الأجل، وأضف TTL وترحيلًا وأرشفة قابلة للمراجعة.",
+      "stack": "Python / SQLite أو PostgreSQL / LangGraph Checkpointers / pytest",
+      "steps": [
+        "قس حجم checkpoints لكل thread.",
+        "حدد سياسة احتفاظ حسب نوع المهمة.",
+        "انقل الحقائق طويلة الأجل إلى Store منفصل.",
+        "أضف عملية تنظيف دورية مع سجل حذف.",
+        "اختبر الاستعادة بعد التنظيف والانقطاع."
+      ],
+      "metric": "حجم التخزين لكل thread وزمن الاستعادة ونسبة الاستئناف الناجح.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "سياسة احتفاظ قصيرة قد تحذف سياقًا يحتاجه المستخدم؛ وسياسة طويلة تزيد التكلفة والبيانات المحتفظ بها.",
+      "sources": [
+        {
+          "title": "LangGraph Persistence",
+          "url": "https://docs.langchain.com/oss/python/langgraph/persistence"
+        },
+        {
+          "title": "LangGraph overview",
+          "url": "https://docs.langchain.com/oss/python/langgraph/overview"
+        }
+      ]
+    },
+    {
+      "title": "قياس التكلفة والزمن لكل مسار في الرسم",
+      "problem": "يصعب تحديد العقدة التي ترفع التكلفة أو زمن الاستجابة في سير عمل متفرع.",
+      "approach": "سجل زمن كل عقدة وعدد استدعاءات النموذج وبيانات الاستخدام التي يعيدها المزود، مع تنقيح المدخلات الحساسة.",
+      "stack": "Python / OpenTelemetry / LangGraph / SQLite أو Prometheus",
+      "steps": [
+        "أضف trace ID موحدًا لكل تشغيل.",
+        "قِس زمن كل عقدة وعدد المحاولات.",
+        "اجمع usage metadata عندما يوفرها المزود.",
+        "احسب تكلفة تقديرية من جدول أسعار مؤرخ.",
+        "اعرض p50 وp95 والتنبيهات دون حفظ الأسرار."
+      ],
+      "metric": "p95 latency والتكلفة المقدرة لكل مهمة مكتملة ونسبة التشغيلات ذات بيانات استخدام مكتملة.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد تختلف حقول الاستخدام بين المزودين وتتغير الأسعار؛ ويجب تنقيح traces قبل التخزين.",
+      "sources": [
+        {
+          "title": "LangGraph overview",
+          "url": "https://docs.langchain.com/oss/python/langgraph/overview"
+        },
+        {
+          "title": "LangSmith pricing",
+          "url": "https://www.langchain.com/pricing"
+        }
+      ]
+    },
+    {
+      "title": "اختبارات إعادة تشغيل لمسارات الرسم",
+      "problem": "تغييرات العقد أو التوجيه قد تكسر مسارًا سابقًا دون أن يظهر ذلك في اختبار المخرجات النهائي فقط.",
+      "approach": "أنشئ مجموعة traces مرجعية واستخدم نماذج وهمية وأدوات حتمية للتحقق من ترتيب العقد والانتقالات والنتائج.",
+      "stack": "Python / pytest / LangGraph / fake model adapters",
+      "steps": [
+        "اجمع حالات إدخال تمثل المسارات الأساسية والاستثنائية.",
+        "استبدل النموذج بمحول وهمي ثابت في اختبارات الوحدة.",
+        "تحقق من العقد التي نُفذت والحالة بعد كل انتقال.",
+        "أضف اختبارات انقطاع واستئناف وموافقة بشرية.",
+        "شغّل المجموعة عند كل تغيير في الرسم."
+      ],
+      "metric": "نسبة المسارات المرجعية التي تبقى صحيحة ومعدل الانحدارات المكتشفة قبل الدمج.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد لا تغطي fixtures حالات الواقع المتغيرة؛ ويجب فصل اختبارات النموذج الحقيقية عن اختبارات الرسم الحتمية.",
+      "sources": [
+        {
+          "title": "LangGraph Quickstart",
+          "url": "https://docs.langchain.com/oss/python/langgraph/quickstart"
+        },
+        {
+          "title": "LangGraph Interrupts",
+          "url": "https://docs.langchain.com/oss/python/langgraph/interrupts"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "مدرب Python تكيفي بالعربية",
+      "problem": "المتعلم يحتاج مسارًا يحدد نقطة التعثر ويختار شرحًا وتدريبًا مناسبين بدل تسلسل ثابت.",
+      "approach": "قسّم الجلسة إلى تشخيص وشرح وتطبيق ومراجعة، ثم حدّث حالة التعلم مع سجل للأدلة.",
+      "stack": "Python / LangGraph / Pydantic / SQLite / pytest",
+      "steps": [
+        "عرّف حالة للمفاهيم ومستوى الثقة.",
+        "أضف عقدة تشخيص من إجابات قصيرة أو كود آمن.",
+        "اختر شرحًا ومثالًا مناسبين للمفهوم.",
+        "اطلب من المتعلم تعديل مثال أو تفسيره.",
+        "سجل التقدم بعد مراجعة واضحة."
+      ],
+      "metric": "تحسن أداء المتعلم في مهام جديدة مع انخفاض تكرار الأخطاء نفسها.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد يبالغ النموذج في تقدير الفهم؛ ويجب ألا تُحفظ بيانات شخصية غير لازمة.",
+      "sources": [
+        {
+          "title": "LangGraph Quickstart",
+          "url": "https://docs.langchain.com/oss/python/langgraph/quickstart"
+        },
+        {
+          "title": "LangGraph Persistence",
+          "url": "https://docs.langchain.com/oss/python/langgraph/persistence"
+        }
+      ]
+    },
+    {
+      "title": "مراجع مستودعات للقراءة فقط",
+      "problem": "قراءة README والترخيص والاختبارات يدويًا لكل مستودع تستهلك وقتًا، وقد تختلط الحقائق بالاستنتاجات.",
+      "approach": "أنشئ تدفقًا يقرأ الملفات المسموحة، يستخرج الادعاءات مع مواضعها، ثم يطلب مراجعة بشرية قبل حفظ التقرير؛ لا تمنحه صلاحية الكتابة على المستودع.",
+      "stack": "Python / LangGraph / GitHub API / Pydantic / pytest",
+      "steps": [
+        "حدد قائمة الملفات المسموح قراءتها.",
+        "استخرج معلومات الترخيص والمتطلبات وطريقة البدء.",
+        "اربط كل ادعاء بمصدر أو مسار ملف.",
+        "افصل المعلومة المنقولة عن التحليل.",
+        "اعرض التقرير للمراجعة دون تعديل المستودع."
+      ],
+      "metric": "نسبة الادعاءات التي لها مصدر قابل للتحقق ومعدل التصحيحات بعد المراجعة.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد تحتوي ملفات المستودع على تعليمات مضللة؛ يجب التعامل معها كبيانات غير موثوقة ومنع أي تنفيذ تلقائي.",
+      "sources": [
+        {
+          "title": "LangGraph overview",
+          "url": "https://docs.langchain.com/oss/python/langgraph/overview"
+        },
+        {
+          "title": "LangGraph Interrupts",
+          "url": "https://docs.langchain.com/oss/python/langgraph/interrupts"
+        }
+      ]
+    },
+    {
+      "title": "محرر أخبار عربي قائم على الأدلة",
+      "problem": "الموجز الآلي قد يختصر الخبر دون فصل الوقائع عن تصريحات الشركات والتحليل.",
+      "approach": "اربط مراحل جلب المصدر واستخراج الادعاءات والتحقق من التناقضات وصياغة الملخص ومراجعة الإنسان في رسم قابل للتتبع.",
+      "stack": "Python / LangGraph / RSS / Pydantic / SQLite / pytest",
+      "steps": [
+        "اجلب رابط المصدر الأصلي وتاريخ النشر.",
+        "استخرج الوقائع والتصريحات والأرقام منفصلة.",
+        "قارن الادعاءات بالمصادر الأولية.",
+        "اكتب ملخصًا عربيًا مع القيود والمصادر.",
+        "أوقف النشر حتى موافقة المحرر."
+      ],
+      "metric": "نسبة الادعاءات ذات مصدر أولي ومعدل التعديلات التحريرية بعد النشر.",
+      "difficulty": "متوسطة إلى مرتفعة — تقدير بحثي.",
+      "risks": "المصادر قد تكون متحيزة أو متناقضة؛ ويجب عدم نشر ادعاء غير محسوم كحقيقة.",
+      "sources": [
+        {
+          "title": "LangGraph Interrupts",
+          "url": "https://docs.langchain.com/oss/python/langgraph/interrupts"
+        },
+        {
+          "title": "LangGraph Persistence",
+          "url": "https://docs.langchain.com/oss/python/langgraph/persistence"
+        }
+      ]
+    },
+    {
+      "title": "مساعد مراجعة أوراق علمية مع حدود واضحة",
+      "problem": "تلخيص الملخص وحده قد يتحول إلى ادعاء بقراءة الورقة كاملة أو اختبار نتائجها.",
+      "approach": "أنشئ مسارًا يحدد ما قُرئ فعلًا، ويفصل بيانات arXiv عن المنهج والنتائج والقيود، ثم يخرج تقريرًا بمستوى الدليل.",
+      "stack": "Python / LangGraph / arXiv API / Pydantic / SQLite",
+      "steps": [
+        "اجلب بيانات الورقة ورابط النص الكامل إن توفر.",
+        "سجل الأجزاء المقروءة فعلًا.",
+        "استخرج المنهج والنتائج والقيود كلًا على حدة.",
+        "اربط كل نتيجة بموضعها في المصدر.",
+        "وسم التقرير metadata إذا لم يُقرأ النص الكامل."
+      ],
+      "metric": "نسبة النتائج المنسوبة إلى موضع صحيح ومعدل الادعاءات غير المدعومة.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد لا تتاح بعض الأوراق كاملة؛ ولا يجوز اعتبار الملخص إثباتًا مستقلًا للنتائج.",
+      "sources": [
+        {
+          "title": "LangGraph overview",
+          "url": "https://docs.langchain.com/oss/python/langgraph/overview"
+        },
+        {
+          "title": "LangGraph Quickstart",
+          "url": "https://docs.langchain.com/oss/python/langgraph/quickstart"
+        }
+      ]
+    },
+    {
+      "title": "خط مراجعة جودة بيانات تعلم الآلة بموافقة",
+      "problem": "تنظيف البيانات قد يحذف سجلات صحيحة إذا طُبق القرار آليًا دون تفسير أو سجل تغييرات.",
+      "approach": "قسّم العمل إلى فحص واقتراح تصحيح ومقارنة قبل/بعد وموافقة بشرية ثم تصدير نسخة جديدة قابلة للتراجع.",
+      "stack": "Python / pandas / Pydantic / LangGraph / pytest",
+      "steps": [
+        "عرّف قواعد جودة قابلة للقياس.",
+        "افحص السجلات وحدد الشذوذ دون حذفها.",
+        "اقترح التصحيح مع سبب ومصدر.",
+        "اطلب موافقة قبل تعديل النسخة النهائية.",
+        "احفظ تقريرًا يتيح التراجع والمقارنة."
+      ],
+      "metric": "نسبة الشذوذ المكتشف بدقة ومعدل التراجع عن تصحيحات خاطئة.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "قد تتسبب قواعد عامة في حذف حالات نادرة صحيحة؛ ويجب حفظ الأصل وعدم استبداله مباشرة.",
+      "sources": [
+        {
+          "title": "LangGraph Interrupts",
+          "url": "https://docs.langchain.com/oss/python/langgraph/interrupts"
+        },
+        {
+          "title": "LangGraph Persistence",
+          "url": "https://docs.langchain.com/oss/python/langgraph/persistence"
+        }
+      ]
+    }
+  ],
+  "religious": []
+}

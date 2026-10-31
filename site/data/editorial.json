@@ -22527,25 +22527,26 @@
       "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/"
     },
     "ec733f799e1aaee3d1": {
-      "titleAr": "NVIDIA تعرض Nemotron 3.5 Transcribe وبيانات Granary v2 للصوت متعدد اللغات",
-      "summaryAr": "يعرض منشور NVIDIA على Hugging Face نموذجًا مفتوح الأوزان للتفريغ الصوتي يدعم 40 لغة بحسب الشركة، مع إسناد الكلام إلى المتحدثين والترجمة والإجابة عن أسئلة حول التسجيلات، إضافة إلى بيانات Granary v2 وخط تجهيزها. يذكر المنشور أن النموذج مخصص للتسجيلات لا للبث الحي، وأن التخصيص قد يلزم للمصطلحات المتخصصة.",
-      "whyItMatters": "الخبر: يجمع المسار بين نموذج صوتي وبيانات قابلة للتكييف. التحليل: قد يفيد بناء أدوات تفريغ اجتماعات أو مواد تعليمية، لكن الأداء يعتمد على اللغة واللهجة والضوضاء والعتاد وترخيص البيانات.",
-      "audience": "مطورو تطبيقات الصوت، طلاب الذكاء الاصطناعي، وباحثو التعرف على الكلام.",
+      "titleAr": "NVIDIA تطلق Nemotron 3.5 Transcribe وبيانات Granary v2 لتفريغ الصوت متعدد اللغات",
+      "summaryAr": "تقدم NVIDIA نموذجًا مفتوح الأوزان لمعالجة التسجيلات الصوتية: يدعم التفريغ في 40 لغة، والترجمة من وإلى الإنجليزية في 31 لغة، وإسناد المتحدثين في 13 لغة، وتسجيلات تصل إلى ساعة وثمانية متحدثين. وتنشر معه Granary v2، وهي بيانات وملفات وصفية وخط تجهيز قابل لإعادة الاستخدام؛ يذكر الإعلان أن ملفات البيان تغطي 463,062 ساعة عبر 48 لغة و16 مجموعة مصدرية، لا أنها تمثل وحدها كامل بيانات تدريب النموذج.",
+      "whyItMatters": "الخبر: يجمع إصدارًا صوتيًا متعدد المهام مع بيانات وخطوات تكييف مفتوحة. التحليل: قد يفيد بناء أدوات تفريغ للمحاضرات والاجتماعات ومعالجة التسجيلات محليًا، لكن الدعم يختلف حسب اللغة والمهمة، كما أن حجم النموذج وعتاده المطلوب يجعلان التشغيل المحلي على الأجهزة الصغيرة غير عملي.",
+      "audience": "مطورو تطبيقات الصوت، باحثو التعرف الآلي على الكلام، وفرق أدوات الاجتماعات والتعليم.",
       "nextSteps": [
-        "راجع بطاقة النموذج وترخيص مجموعة البيانات قبل تنزيلهما أو إعادة توزيعهما.",
-        "قيّم عينة مرخصة من تسجيلاتك على اللغة واللهجة المستهدفتين، وسجّل معدل الخطأ والذاكرة والزمن."
+        "راجع مصفوفة اللغات في بطاقة النموذج؛ العربية مدعومة للتفريغ والترجمة وإسناد المتحدثين لكن مستوى الجودة مصنف Supported لا Leading.",
+        "قيّم عينة صوتية مرخصة من المجال واللهجة المستهدفين، وقِس WER وDER والزمن والذاكرة قبل اعتماد النموذج.",
+        "تحقق من ترخيص OpenMDW-1.1 للنموذج ومن شروط كل مجموعة مصدرية قبل استخدام بيانات Granary v2 أو إعادة توزيع مشتقاتها."
       ],
-      "limitations": "تعذر فتح صفحة Hugging Face مباشرة بسبب تحديد معدل الطلبات؛ بُني هذا الملخص على النص المتاح من الصفحة الأصلية. أرقام الدقة والسرعة منشورة من NVIDIA ولم يختبرها نَبض.",
-      "reviewedAt": "2026-10-29T00:06:26Z",
-      "basis": "metadata",
+      "limitations": "المقال منشور على Hugging Face بواسطة مساهمين من NVIDIA؛ أرقام الأداء والسرعة والمقارنات الواردة فيه من الجهة المطورة أو من لوحات تقييم يستشهد بها، ولم يجر نَبض اختبارًا مستقلًا. النموذج مخصص للتسجيلات لا للبث الحي، كما أن مهام الإجابة عن الصوت والاستدلال قيّمت بالإنجليزية فقط وفق بطاقة النموذج. بطاقة النموذج تذكر إعداد تشغيل موصى به على H100 بذاكرة 80GB؛ لا ينبغي تعميم النتائج على هاتف أو عتاد استهلاكي. ترخيص النموذج OpenMDW-1.1، بينما تحتفظ مجموعات البيانات المصدرية بشروطها الخاصة.",
+      "reviewedAt": "2026-10-31T18:11:52+03:00",
+      "basis": "article",
       "sources": [
         {
-          "title": "منشور NVIDIA على Hugging Face",
+          "title": "المقال الأصلي من فريق NVIDIA على Hugging Face",
           "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
         },
         {
-          "title": "تغطية TechCrunch للنموذج الصوتي",
-          "url": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/"
+          "title": "بطاقة NVIDIA Nemotron 3.5 Transcribe الرسمية",
+          "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B"
         }
       ],
       "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
@@ -29823,6 +29824,823 @@
           "url": "https://www.githubstatus.com/"
         }
       ]
+    },
+    "8db759a7708af25195": {
+      "url": "https://www.tomshardware.com/tech-industry/big-tech/cisco-gives-27-year-old-engineer-unlimited-ai-tokens-to-rewrite-98-percent-of-the-companys-legacy-code-in-24-months-president-plucks-former-startup-founder-telling-him-to-go-nuts",
+      "titleAr": "Cisco تراهن على فريق صغير لإعادة هيكلة معظم شيفرتها القديمة بمساعدة الذكاء الاصطناعي",
+      "summaryAr": "بحسب تقرير Fortune الذي نقلته Tom’s Hardware، كُلّف المهندس Padmanabhan Krishnamurthy بإثبات جدوى نهج لإعادة هيكلة الشيفرة القديمة في Cisco خلال أربعة أسابيع، مع هدف معلن لإعادة هيكلة 98% منها خلال 24 شهرًا بفريق صغير. هذه خطة طموحة وليست نتيجة مكتملة أو نسبة إنجاز مثبتة.",
+      "whyItMatters": "يعرض المثال استخدام الذكاء الاصطناعي في تحديث قواعد شيفرة مؤسسية كبيرة، لكنه يوضح أن سرعة توليد الشيفرة ليست معيار النجاح وحدها؛ التوافق والاختبارات والأمان وقابلية الصيانة هي ما يحدد قيمة إعادة الهيكلة.",
+      "audience": "طلاب علوم الحاسب ومطورو البرمجيات وفرق هندسة الأنظمة وقادة التقنية.",
+      "nextSteps": [
+        "اقرأ تقرير Fortune الأصلي وميّز تصريحات الإدارة عن النتائج المنجزة.",
+        "قيّم أي إعادة هيكلة باختبارات سلوكية ومقاييس regression قبل وبعد التغيير.",
+        "أبقِ مراجعة بشرية للتغييرات الحساسة في البيانات والأمن والواجهات.",
+        "تابع نتائج إثبات المفهوم بعد أربعة أسابيع قبل التعامل مع هدف 98% كإنجاز."
+      ],
+      "limitations": "الأرقام والمهلة تعكسان خطة وتصريحات منسوبة إلى رئيس Cisco نقلتها Fortune؛ لا توجد نتائج تثبت إتمام إعادة كتابة 98% أو جودة الناتج، كما لا ينشر التقرير نطاق الشيفرة أو معايير القبول التفصيلية.",
+      "reviewedAt": "2026-10-31T18:11:52+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Tom’s Hardware — Cisco engineer AI refactoring plan",
+          "url": "https://www.tomshardware.com/tech-industry/big-tech/cisco-gives-27-year-old-engineer-unlimited-ai-tokens-to-rewrite-98-percent-of-the-companys-legacy-code-in-24-months-president-plucks-former-startup-founder-telling-him-to-go-nuts"
+        },
+        {
+          "title": "Fortune — Cisco chief found a 27-year-old ex-founder rewriting 98% of its code",
+          "url": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/"
+        }
+      ]
+    },
+    "c8804a79ad56c280f7": {
+      "url": "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job/",
+      "titleAr": "استقالة مسؤول جامعي بعد تحقيق خلص إلى عدم الإفصاح عن استخدامه للذكاء الاصطناعي في كتابات منشورة",
+      "summaryAr": "خلصت لجنة أكاديمية في Dartmouth إلى أن نائب الرئيس الأكاديمي Santiago Schnell استخدم الذكاء الاصطناعي لتغيير أعمال منشورة بصورة جوهرية، ولم يفصح عن ذلك وفق متطلبات ناشرين في حالتين على الأقل. وبعد نشر نتائج المراجعة أعلن رحيله. وذكر التقرير أن المراجعة ركزت على عينة محددة ولم تشمل كل كتاباته.",
+      "whyItMatters": "القضية تتعلق بالشفافية والالتزام بسياسات الناشرين، لا بمجرد استخدام أداة تحرير. وهي تبرز أهمية الإفصاح عن المساعدة الجوهرية، والتحقق من المخرجات، وتحمل المؤلف مسؤولية النص والبحث.",
+      "audience": "الطلاب والباحثون وأعضاء هيئة التدريس والمحررون والجامعات.",
+      "nextSteps": [
+        "راجع سياسة المقرر أو المجلة قبل استخدام أدوات الذكاء الاصطناعي.",
+        "افصح عن المساعدة التي تتطلبها السياسة، وميّز التحرير اللغوي عن التعديل الجوهري.",
+        "احتفظ بمسودات العمل وسجل التعديلات والمراجع التي تحققت منها.",
+        "تحقق بنفسك من النتائج والاقتباسات والكود والأشكال قبل التسليم."
+      ],
+      "limitations": "تقرير اللجنة يوضح أن المراجعة كانت مستهدفة ومحدودة بسبب ضيق الوقت ونقص بعض السجلات الشخصية؛ لذلك لا يثبت أن كل استخدام للذكاء الاصطناعي في الكتابة مخالف، ولا يجعل كواشف النصوص وحدها دليلًا حاسمًا.",
+      "reviewedAt": "2026-10-31T18:11:52+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Ars Technica — Dartmouth provost AI disclosure investigation",
+          "url": "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job/"
+        },
+        {
+          "title": "Dartmouth — Advisory Committee Report to the President",
+          "url": "https://president.dartmouth.edu/sites/president/files/2026-10/Advisory%20Committee%20Report%20to%20President%202026-10-27.pdf"
+        },
+        {
+          "title": "Dartmouth President — An Update on the Provost Review",
+          "url": "https://president.dartmouth.edu/news/2026/10/update-provost-review"
+        }
+      ]
+    },
+    "abc5566bda42b5a9b5": {
+      "url": "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/",
+      "titleAr": "DoorDash تقول إن الطلبات التي أنجزتها وكلاء الذكاء الاصطناعي الخارجيون ما تزال بالمئات فقط",
+      "summaryAr": "قال الرئيس التنفيذي لـDoorDash في مكالمة نتائج الربع الثالث إن الوكلاء الخارجيين أنجزوا «عدة مئات» من الطلبات إجمالًا منذ بدء تشغيلهم، بينما ما يزال معظم العملاء يستخدمون تطبيق الشركة مباشرة. وتصف التغطية المجال بأنه استخدام مبكر، مع استمرار الشركة في استكشاف الربط مع وكلاء آخرين.",
+      "whyItMatters": "توضح الأرقام الفجوة بين الحديث عن وكلاء يشترون وينفذون المهام تلقائيًا وبين الاستخدام الفعلي في خدمة واسعة النطاق. يحتاج هذا النوع من المنتجات إلى موافقة واضحة من المستخدم وربط موثوق وتأكيد للطلب ومعالجة سليمة للأخطاء.",
+      "audience": "مطورو الوكلاء ومنتجات التجارة الإلكترونية ومديرو المنتجات وطلاب التقنية.",
+      "nextSteps": [
+        "افصل في القياس بين استخدام وكلاء الشركة الداخليين وطلبات الوكلاء الخارجيين.",
+        "صمّم موافقات صريحة قبل إرسال الطلب أو إتمام الدفع.",
+        "قِس نجاح إتمام المهمة والأخطاء والإلغاء والاسترداد، لا عدد المحادثات فقط.",
+        "لا تعمم رقم شركة واحدة على كل التجارة أو كل منصات الوكلاء."
+      ],
+      "limitations": "رقم «عدة مئات» تقريبي ومعلن شفهيًا بوصفه إجماليًا منذ بدء التشغيل، من دون فترة قياس محددة أو تفصيل مستقل؛ لذلك لا يصح تحويله إلى معدل ربع سنوي أو تعميمه على بقية السوق.",
+      "reviewedAt": "2026-10-31T18:11:52+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Ars Technica — DoorDash says outside AI agents have only led to hundreds of orders",
+          "url": "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/"
+        },
+        {
+          "title": "TechCrunch — DoorDash said it has only seen several hundred orders from AI agents",
+          "url": "https://techcrunch.com/2026/10/30/doordash-said-its-only-seen-several-hundreds-of-orders-from-ai-agents/"
+        },
+        {
+          "title": "DoorDash Investor Relations — Q3 2026 financial results",
+          "url": "https://ir.doordash.com/news/news-details/2026/DoorDash-Releases-Third-Quarter-2026-Financial-Results/default.aspx"
+        }
+      ]
+    },
+    "7a24eca35f77e86d87": {
+      "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+      "titleAr": "شركات ذكاء اصطناعي تتجه إلى إشارة موحدة داخل robots.txt لتفضيلات استخدام المحتوى",
+      "summaryAr": "ذكرت The Verge أن OpenAI وGoogle وMicrosoft وAnthropic أعلنت دعمها لإشارة policy token مقترحة داخل robots.txt لتوحيد تفضيلات الناشرين بشأن استخدام المحتوى في تدريب النماذج. تقول Anthropic إنها تبنت الإشارة بالفعل، بينما أعلنت الشركات الأخرى جداول دعم مستقبلية. النص الحالي مسودة Internet-Draft فردية لدى IETF، وليس معيارًا معتمدًا.",
+      "whyItMatters": "قد تقلل الإشارة الموحدة الحاجة إلى إعداد تفضيلات منفصلة لكل مزود، وتمنح الناشرين طريقة أوضح للتعبير عن رغباتهم. لكن robots.txt لا يفرض الامتثال تقنيًا؛ فالنتيجة تعتمد على احترام كل crawler للإشارة.",
+      "audience": "أصحاب المواقع والناشرون ومطورو الزواحف وأنظمة الذكاء الاصطناعي ومهتمو حوكمة البيانات.",
+      "nextSteps": [
+        "اقرأ مسودة IETF نفسها قبل وصفها بأنها معيار.",
+        "ميّز بين استخدام المحتوى للتدريب وبين grounding أو الظهور في البحث.",
+        "راجع robots.txt وسياسات الزحف في موقعك مع توثيق التغييرات.",
+        "تابع إصدارات المسودة وإعلانات التنفيذ الفعلية من كل مزود."
+      ],
+      "limitations": "المقترح Internet-Draft غير معتمد رسميًا من IETF ولا يحمل صفة RFC؛ تصريحات الدعم لا تثبت أن جميع الأنظمة تطبقه الآن، كما أن robots.txt إشارة تفضيل وليست حاجزًا يمنع الجهات غير الملتزمة من الوصول.",
+      "reviewedAt": "2026-10-31T18:11:52+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "The Verge — The biggest names in AI are backing a new way to opt out of scraping",
+          "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out"
+        },
+        {
+          "title": "IETF Datatracker — Machine-Readable Training Preference Signal draft-00",
+          "url": "https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/"
+        }
+      ]
+    },
+    "1abfdb6dc9802b6f4d": {
+      "url": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
+      "titleAr": "تقرير يتوقع تصنيفًا ائتمانيًا مضاربيًا لـAnthropic بعد طرحها المحتمل",
+      "summaryAr": "نقلت TechCrunch عن Financial Times أن Blackstone أبلغ مستثمري صفقة تمويل شرائح Anthropic بتوقعه حصول الشركة على تصنيف ضمن فئة BB عالية العائد بعد اكتتاب محتمل، بعدما كانت توقعات سابقة تشير إلى تصنيف استثماري. وذكرت TechCrunch أن Anthropic وBlackstone لم يعلقا على التقرير.",
+      "whyItMatters": "الإنفاق على الحوسبة والشرائح ومراكز البيانات يتطلب تمويلًا ضخمًا؛ وتكلفة الاقتراض المحتملة قد تؤثر في خطط التوسع. لكن التوقع المنقول ليس تصنيفًا صادرًا عن وكالة ولا دليلًا على تعثر الشركة.",
+      "audience": "طلاب الاقتصاد والتقنية ومتابعو أعمال شركات الذكاء الاصطناعي.",
+      "nextSteps": [
+        "ميّز بين توقع مستثمر وتصنيف رسمي صادر عن وكالة ائتمان.",
+        "ابحث عن إفصاحات أو تقارير رسمية لاحقة قبل اعتماد أي تغيير في التصنيف.",
+        "تابع العلاقة بين الإنفاق الرأسمالي والتمويل وتوسّع البنية التحتية.",
+        "تعامل مع الخبر بوصفه تحليلًا ماليًا صحفيًا لا توصية استثمارية."
+      ],
+      "limitations": "المعلومة توقع منسوب إلى Blackstone عبر تقرير Financial Times؛ لم أتمكن من قراءة نص FT كاملًا بسبب حاجز الاشتراك، لذلك أعتمد على نقل TechCrunch. لا يوجد في المادة تصنيف نهائي منشور من وكالة ائتمان.",
+      "reviewedAt": "2026-10-31T18:11:52+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — Anthropic expected to receive high junk rating following IPO, FT report says",
+          "url": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/"
+        },
+        {
+          "title": "Financial Times — report cited by TechCrunch",
+          "url": "https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f"
+        }
+      ]
+    },
+    "05a1378ae455d54de0": {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
+      "titleAr": "سام ألتمان يدافع عن تركيز الذاكرة في مراكز البيانات وسط نقص DRAM",
+      "summaryAr": "قال سام ألتمان في بودكاست Cheeky Pint إن استخدام مراكز البيانات للذاكرة قد يرفع الاستفادة من DRAM مقارنة بأجهزة شخصية لا تستخدم كامل ذاكرتها طوال الوقت. يضع تقرير The Verge التصريح ضمن ضغط الطلب طويل الأمد على الذاكرة من شركات الحوسبة السحابية ومشروعات البنية التحتية للذكاء الاصطناعي.",
+      "whyItMatters": "النقاش يمس تكلفة الأجهزة وتشغيل النماذج محليًا مقابل السحابة. الكفاءة الاقتصادية ليست العامل الوحيد؛ الخصوصية والكمون والاتصال والاعتماد على المزود تظل أسبابًا مهمة عند اختيار مكان تشغيل النموذج.",
+      "audience": "مطورو الذكاء الاصطناعي ومهتمو التشغيل المحلي ومتابعو عتاد الحاسب وسلاسل الإمداد.",
+      "nextSteps": [
+        "قارن احتياج الذاكرة للنماذج التي تريد تشغيلها محليًا قبل اختيار العتاد.",
+        "وازن بين الكلفة والخصوصية والكمون والاتصال عند المقارنة مع السحابة.",
+        "تابع بيانات موردي الذاكرة بدل الاعتماد على تصريح واحد.",
+        "تعامل مع رأي ألتمان بوصفه وجهة نظر طرف مستفيد من توسع مراكز البيانات."
+      ],
+      "limitations": "هذا موقف لرئيس شركة تستثمر بكثافة في مراكز البيانات وليس دراسة اقتصادية محايدة؛ المقال لا يقدم تقديرًا كميًا لمقدار الذاكرة المحجوزة أو أثر ذلك وحده على أسعار الأجهزة.",
+      "reviewedAt": "2026-10-31T18:11:52+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "The Verge — Sam Altman says it is better for RAM to be in a data center than on your desk",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers"
+        }
+      ]
+    },
+    "8ada096505f97960e7": {
+      "url": "https://www.engadget.com/2302374/the-wikimedia-foundation-weighs-in-on-the-nyts-case-against-openai/",
+      "titleAr": "مؤسسة ويكيميديا تطلب موازنة حقوق النشر مع استمرار المعرفة المفتوحة في قضية NYT ضد OpenAI",
+      "summaryAr": "قدمت مؤسسة ويكيميديا مذكرة صديق للمحكمة تدعو إلى عدم تبني تفسير شامل أو شديد التقييد للاستخدام العادل. ترى المؤسسة أن بعض استخدامات المحتوى في تدريب النماذج قد تكون عادلة عندما تنتج شيئًا مختلفًا عن الأصل، لكنها تطالب باحترام تراخيص الناشرين عند استخدام RAG أو تقنيات grounding لإعادة تقديم المحتوى، مع الإسناد.",
+      "whyItMatters": "قد يؤثر النقاش القضائي في طريقة بناء أنظمة RAG ومصادر المعرفة العامة واستدامة المواقع التي توفر البيانات. موقف ويكيميديا رأي طرف مشارك في النقاش وليس حكمًا قضائيًا.",
+      "audience": "مطورو أنظمة RAG والناشرون والباحثون ومهتمو المصادر المفتوحة وحقوق المحتوى.",
+      "nextSteps": [
+        "اقرأ مذكرة ويكيميديا الأصلية بدل الاكتفاء بعناوين التغطية.",
+        "احتفظ بمصدر كل مقطع مسترجع وأظهر الإسناد للمستخدم.",
+        "احترم تراخيص المحتوى وشروط API وحدود الاستخدام.",
+        "تابع مسار القضية ولا تعرض موقف المؤسسة كأنه نتيجة قضائية نهائية."
+      ],
+      "limitations": "المذكرة موقف قانوني تقدمه مؤسسة ويكيميديا وليست حكمًا أو إجماعًا قانونيًا؛ لا تحسم القضية ولا تثبت أن كل حالات التدريب أو RAG متشابهة في التحليل القانوني.",
+      "reviewedAt": "2026-10-31T18:11:52+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Engadget — The Wikimedia Foundation weighs in on the NYT case against OpenAI",
+          "url": "https://www.engadget.com/2302374/the-wikimedia-foundation-weighs-in-on-the-nyts-case-against-openai/"
+        },
+        {
+          "title": "Wikimedia Foundation — amicus brief in New York Times v. OpenAI",
+          "url": "https://wikimediafoundation.org/news/2026/10/30/wikimedia-foundation-amicus-brief-new-york-times-v-open-ai-case/"
+        },
+        {
+          "title": "Wikimedia Diff — Why Wikimedia is speaking up in a major AI copyright case",
+          "url": "https://diff.wikimedia.org/2026/10/30/why-wikimedia-is-speaking-up-in-a-major-ai-copyright-case/"
+        }
+      ]
+    },
+    "037154e824aaff256e": {
+      "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
+      "titleAr": "عرض من NVIDIA يدمج نماذج Nemotron في منزل تفاعلي يعمل محليًا",
+      "summaryAr": "يعرض مهندس في NVIDIA مشروع MonsterHouse كتجربة تفاعلية تستمع للزوار وترد صوتيًا باستخدام Nemotron ASR وNemotron 3.5 Bolt E4B وMagpie TTS وAudio2Face-3D. يذكر الكاتب تشغيل المنظومة على محطة عمل ببطاقتي RTX PRO، ومتوسطًا قدره 1.70 ثانية للرد الصوتي و0.72 ثانية للردود المخزنة في إعداده.",
+      "whyItMatters": "يوضح المشروع كيف تُركّب نماذج صغيرة نسبيًا مع التعرف على الكلام وتوليده وتحريك شخصية ثلاثية الأبعاد في تطبيق واحد. كما يوضح أن وصف النظام بأنه محلي لا يعني أن كامل المنظومة رخيصة أو أن النموذج وحده يحقق الأداء.",
+      "audience": "مطورو الأنظمة متعددة الوسائط والوكلاء الصوتيين وتجارب التفاعل والوسائط الإبداعية.",
+      "nextSteps": [
+        "افحص مكونات المنظومة وتراخيص النماذج والأدوات كلًا على حدة.",
+        "اختبر زمن الاستجابة على عتاد مختلف بدل نقل أرقام الكاتب مباشرة.",
+        "قس زمن الرحلة كاملة من التقاط الصوت حتى إخراج الرد والتحريك.",
+        "ضع موافقة واضحة وسياسة احتفاظ للميكروفون والكاميرا عند التعامل مع الزوار."
+      ],
+      "limitations": "هذا عرض تجريبي كتبه موظف في NVIDIA وليس معيار أداء مستقلًا؛ الأرقام تخص إعداد الكاتب وعتادًا متقدمًا ومكونات متعددة، ولا تثبت أن النموذج وحده يحقق هذه السرعة أو أن التشغيل متاح على أي جهاز.",
+      "reviewedAt": "2026-10-31T18:11:52+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Hugging Face — Building a Haunted House with NVIDIA Nemotron Open Models",
+          "url": "https://huggingface.co/blog/nvidia/nemotron-halloween"
+        },
+        {
+          "title": "NVIDIA Nemotron Voice Agent repository",
+          "url": "https://github.com/NVIDIA-AI-Blueprints/nemotron-voice-agent"
+        },
+        {
+          "title": "NVIDIA Audio2Face-3D repository",
+          "url": "https://github.com/NVIDIA/Audio2Face-3D"
+        }
+      ]
+    },
+    "b4484a96aa90c3f23e": {
+      "url": "https://github.com/Tencent/WeKnora",
+      "titleAr": "WeKnora: منصة معرفة مفتوحة المصدر تجمع RAG والوكلاء والويكي",
+      "summaryAr": "WeKnora إطار لإدارة المعرفة المؤسسية: يستورد المستندات ومصادرها، ويتيح البحث الهجين وإجابات مرتبطة بمقاطعها، ووكلاء ينفذون مهامًا متعددة الخطوات، وويكيًا يمكن تحديثه. يوفر نسخة Lite محلية تعتمد SQLite وطابورًا في الذاكرة، ونسخة قياسية متعددة الخدمات عبر Docker Compose أو Helm.",
+      "whyItMatters": "يجمع طبقة المعرفة والاسترجاع والوكيل وإدارة المصادر في نظام واحد، مع خيار Lite محلي بدل فرض بنية مؤسسية كاملة. قد يفيد الفرق والطلاب الذين يحتاجون البحث في مجموعات وثائق مع إبقاء الإحالات إلى الأصل. هذا تقييم للقدرات الموثقة في README والإصدارة v0.9.0، وليس إثباتًا لجودة الإجابات أو أمان النشر.",
+      "audience": "فرق البحث والمعرفة، المطورون الذين يبنون RAG ووكلاء، والمؤسسات التي تحتاج إدارة وثائق متعددة المصادر. للاستخدام الفردي المحلي، ابدأ بتقييم Lite؛ أما التعاون متعدد المساحات فيحتاج النسخة القياسية.",
+      "nextSteps": [
+        "حدد هل تحتاج Lite محليًا أم النسخة القياسية متعددة المستخدمين قبل اختيار البنية.",
+        "اختر نموذج محادثة ونموذج embeddings؛ يمكن توصيل Ollama محليًا أو مزود متوافق مع OpenAI.",
+        "اختبر الاسترجاع على مجموعة صغيرة من مستندات عامة، وراجع الإحالات يدويًا قبل الاعتماد.",
+        "قدّر RAM والتخزين وتكاليف النماذج أو خدمات parsing السحابية قبل نشره لفريق."
+      ],
+      "limitations": "قراءة README والتوثيق والترخيص فقط؛ لم أقم بتثبيت المشروع أو تشغيله. توصي وثائق Docker Compose القياسي بنحو 4 أنوية و8GB RAM كبداية، ولا يشمل ذلك أوزان نماذج Ollama. النسخة القياسية تتطلب PostgreSQL/ParadeDB وRedis وdocreader وخدمات إضافية بحسب الميزات. Lite أبسط ويستخدم SQLite وذاكرة العملية، لكن بعض قدرات التعاون والتحليل المتقدم تختلف. README يذكر MIT للمشروع مع استثناءات ومكونات طرف ثالث لها تراخيصها الأصلية؛ وواجهة GitHub تعرض NOASSERTION، لذا لا تختزل ترخيص جميع الاعتماديات في MIT. لا يوجد سعر موحد: التشغيل المحلي يستهلك موارد الجهاز، واستدعاءات API أو خدمات parsing المستضافة قد تكون مدفوعة. تطبيق سطح المكتب لا يملك مثبت Release منشورًا وفق دليل التثبيت. لا تستخدمه على شبكة عامة دون إعداد المصادقة والشبكة والمفاتيح.",
+      "reviewedAt": "2026-10-31T18:11:52+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "README الرسمي وميزات WeKnora v0.9.0",
+          "url": "https://github.com/Tencent/WeKnora"
+        },
+        {
+          "title": "ملف الترخيص والاستثناءات ومكونات الطرف الثالث",
+          "url": "https://github.com/Tencent/WeKnora/blob/main/LICENSE"
+        },
+        {
+          "title": "دليل التثبيت الرسمي: Compose وHelm وLite ومتطلبات الموارد",
+          "url": "https://github.com/Tencent/WeKnora/blob/main/website-docs/01-getting-started/02-installation.md"
+        },
+        {
+          "title": "دليل البدء السريع الرسمي",
+          "url": "https://github.com/Tencent/WeKnora/blob/main/website-docs/01-getting-started/03-quickstart.md"
+        },
+        {
+          "title": "الفروق بين Lite والنسخة القياسية",
+          "url": "https://github.com/Tencent/WeKnora/blob/main/docs/LITE.md"
+        },
+        {
+          "title": "توثيق Ollama الرسمي للتشغيل المحلي",
+          "url": "https://docs.ollama.com/"
+        }
+      ],
+      "overview": "منصة معرفة مفتوحة المصدر من Tencent بثلاث طبقات مترابطة: RAG للبحث والإجابات ذات الإحالات، Agent لتنفيذ مهام متعددة الخطوات باستخدام الأدوات والمهارات وMCP، وWiki لتنظيم المعرفة. تدعم مصادر مستندات متعددة، موفري نماذج متنوعين، وتخزينًا محليًا أو كائنيًا. إصدار v0.9.0 أضاف مساعد WeKnora وتعاون الوكلاء والأتمتة وصلاحيات التنفيذ.",
+      "requirements": "النسخة القياسية: Docker Engine 20.10+ وDocker Compose v2؛ توصي وثائق التثبيت بنحو 4 أنوية CPU و8GB RAM كبداية، مع مساحة تخزين تتناسب مع المستندات. تشمل الخدمات الأساسية ParadeDB/PostgreSQL وRedis وdocreader، ويمكن إضافة Neo4j وMinIO وLangfuse. يلزم نموذج محادثة ونموذج embeddings؛ يمكن استخدام Ollama محليًا أو API متوافقًا. بناء المصدر يتطلب Go 1.26 وNode/npm للواجهة وPython 3.10 مع uv لخدمة parsing. Helm يتطلب Kubernetes 1.25+. Lite يبسط التشغيل إلى SQLite FTS5/sqlite-vec وطابور داخل الذاكرة، لكنه لا يقدم كل قدرات النسخة القياسية. لا يوجد سعر ترخيص للبرنامج وفق MIT؛ تكلفة النماذج السحابية والاستضافة والتخزين منفصلة.",
+      "quickStart": "المسار الموثق عبر Docker Compose: 1) استنسخ https://github.com/Tencent/WeKnora وانتقل إلى مجلده. 2) انسخ .env.example إلى .env واملأ DB_USER وDB_PASSWORD وDB_NAME وREDIS_PASSWORD وJWT_SECRET وSYSTEM_AES_KEY بقيم خاصة بك، واحتفظ بالمفاتيح خارج Git. 3) نفّذ docker compose pull ثم docker compose up -d. 4) انتظر حتى تصبح الخدمات الأساسية healthy وافتح http://localhost. 5) أضف مزود محادثة ونموذج embeddings؛ إذا استخدمت Ollama محليًا فتأكد من أن الحاوية تصل إلى عنوانه. 6) أنشئ مساحة معرفة وارفع مستندات غير حساسة، ثم اختبر سؤالًا وتحقق من المقطع المصدر. هذا مسار README/التوثيق ولم يُنفذ في هذه المراجعة.",
+      "improvements": [
+        {
+          "title": "مجموعة تقييم عربية للاسترجاع والإحالات",
+          "problem": "وجود إجابة سلسة لا يثبت أن المقاطع المسترجعة تدعمها، خصوصًا مع PDF عربي ممسوح أو جداول واتجاه RTL.",
+          "approach": "إنشاء مجموعة أسئلة مرجعية ومستندات مرخصة، ثم قياس الاسترجاع ودقة الإحالة والامتناع عند غياب الدليل عبر API قبل تغيير إعدادات الإنتاج.",
+          "stack": "Python، WeKnora REST API، pytest، JSONL، Ragas أو مقاييس استرجاع بسيطة.",
+          "steps": [
+            "اجمع مستندات عربية عامة مرخصة ومتنوعة.",
+            "أنشئ أسئلة مرجعية وحدد المقطع الصحيح لكل سؤال.",
+            "شغّل الاسترجاع بإعدادات chunking وembedding مختلفة.",
+            "احسب Recall@k ودقة الإحالة ومعدل الامتناع الصحيح.",
+            "انشر تقريرًا يوضح نوع المستند والأخطاء دون تخزين بيانات حساسة."
+          ],
+          "metric": "Recall@5، نسبة الإحالات التي تشير إلى المقطع الداعم، ومعدل الامتناع الصحيح.",
+          "difficulty": "متوسط — تقدير؛ يحتاج إعداد مجموعة مرجعية بشرية.",
+          "risks": "تحيز مجموعة صغيرة، واختلاف جودة OCR بين المستندات، واحتمال تسرب محتوى خاص إن لم تستخدم بيانات عامة.",
+          "sources": [
+            {
+              "title": "WeKnora retrieval engines documentation",
+              "url": "https://github.com/Tencent/WeKnora/blob/main/website-docs/03-features/05-retrieval-engines.md"
+            },
+            {
+              "title": "Ragas documentation",
+              "url": "https://docs.ragas.io/"
+            }
+          ]
+        },
+        {
+          "title": "نسخ احتياطي قابل للتحقق لنسخة Lite",
+          "problem": "النسخة المحلية تجمع قاعدة SQLite وملفات المستندات؛ نسخ أحدهما دون الآخر قد ينتج استعادة ناقصة.",
+          "approach": "إضافة أمر تصدير/تحقق يلتقط قاعدة البيانات والملفات والبيانات الوصفية في حزمة واحدة مع manifest وبصمات checksums، ثم يختبر الاستعادة في مجلد منفصل.",
+          "stack": "Go، SQLite، SHA-256، tar، اختبارات تكامل.",
+          "steps": [
+            "حدد جميع مسارات قاعدة البيانات والملفات والإعدادات غير السرية.",
+            "أنشئ manifest بإصدارات المخطط وعدد الملفات وأحجامها وبصماتها.",
+            "أوقف الكتابة أو استخدم snapshot آمنًا لقاعدة SQLite.",
+            "أنشئ الحزمة مع استثناء الأسرار والملفات المؤقتة.",
+            "استعد إلى مجلد جديد وتحقق من البصمات وعدد السجلات.",
+            "وثّق توافق الإصدارات وخطوات التراجع."
+          ],
+          "metric": "نسبة نجاح الاستعادة، وعدد الملفات المطابقة، وزمن النسخ والاستعادة.",
+          "difficulty": "متوسط إلى مرتفع — تقدير؛ يتطلب فهم دورة حياة التخزين والترحيلات.",
+          "risks": "نسخ بيانات اعتماد مشفرة دون مفاتيحها يجعلها غير قابلة للاستعادة؛ ونسخ قاعدة نشطة بطريقة غير متسقة قد يفسد snapshot.",
+          "sources": [
+            {
+              "title": "WeKnora Lite storage and configuration guide",
+              "url": "https://github.com/Tencent/WeKnora/blob/main/docs/LITE.md"
+            },
+            {
+              "title": "SQLite backup API",
+              "url": "https://www.sqlite.org/backup.html"
+            }
+          ]
+        },
+        {
+          "title": "حدود استخدام وتكلفة لكل موفر نموذج",
+          "problem": "التتبع يوضح استهلاك الرموز، لكن الفرق تحتاج حدودًا وتنبيهات قبل تجاوز ميزانية مزود API.",
+          "approach": "إضافة سياسات ميزانية لكل مساحة ومزود، مع تنبيه تدريجي وإيقاف اختياري للمهام غير الحرجة عند بلوغ الحد.",
+          "stack": "Go، PostgreSQL، Langfuse traces، Prometheus metrics، واجهة الإدارة.",
+          "steps": [
+            "حدد وحدات القياس المدعومة لكل موفر ولا تخمّن سعرًا عند غياب بياناته.",
+            "اجمع token usage والتكلفة المعلنة من استجابة المزود.",
+            "أضف حدًا يوميًا وشهريًا لكل مساحة.",
+            "أرسل تنبيهًا عند 70% و90% من الحد.",
+            "وفّر وضع مراقبة فقط قبل تفعيل الإيقاف.",
+            "اختبر اختلاف العملات وتحديث جداول الأسعار."
+          ],
+          "metric": "دقة تقدير التكلفة مقارنة بفواتير المزود، وعدد التجاوزات غير المتوقعة.",
+          "difficulty": "متوسط — تقدير.",
+          "risks": "تغير أسعار المزودين واختلاف احتساب tokens، واحتمال إيقاف مهمة مهمة بسبب بيانات تكلفة ناقصة.",
+          "sources": [
+            {
+              "title": "WeKnora observability documentation",
+              "url": "https://github.com/Tencent/WeKnora/blob/main/website-docs/03-features/16-observability.md"
+            },
+            {
+              "title": "Langfuse documentation",
+              "url": "https://langfuse.com/docs"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مكتبة مقررات جامعية محلية بإحالات",
+          "problem": "تتوزع مذكرات المقرر والشرائح والمراجع بين ملفات كثيرة، ويصعب التحقق من مصدر كل إجابة.",
+          "approach": "تطبيق Lite محليًا لكل مقرر، مع فهرسة الملفات وتوليد إجابات تستشهد بالصفحة والمقطع بدل الاكتفاء بإجابة عامة.",
+          "stack": "WeKnora Lite، Ollama، SQLite، PDF، واجهة ويب محلية.",
+          "steps": [
+            "أنشئ مساحة منفصلة لكل مقرر.",
+            "أضف ملفات يملك الطالب حق استخدامها.",
+            "اضبط نموذج embedding ومحادثة محليين.",
+            "اختبر أسئلة ذات إجابات معروفة.",
+            "اعرض المقطع والصفحة مع كل إجابة.",
+            "أضف زرًا للإبلاغ عن إحالة غير دقيقة."
+          ],
+          "metric": "نسبة الإجابات ذات إحالة صحيحة، وزمن العثور على معلومة في ملفات المقرر.",
+          "difficulty": "متوسط — تقدير.",
+          "risks": "الـ OCR قد يخطئ في المعادلات والجداول؛ لا ينبغي اعتماد الإجابة بدل الرجوع إلى ملف المقرر.",
+          "sources": [
+            {
+              "title": "WeKnora Lite guide",
+              "url": "https://github.com/Tencent/WeKnora/blob/main/docs/LITE.md"
+            },
+            {
+              "title": "WeKnora quickstart",
+              "url": "https://github.com/Tencent/WeKnora/blob/main/website-docs/01-getting-started/03-quickstart.md"
+            }
+          ]
+        },
+        {
+          "title": "فهرس بحث للمواصفات التقنية وإصداراتها",
+          "problem": "تتغير وثائق APIs والإصدارات، وقد يخلط البحث بين تعليمات إصدار قديم وآخر حديث.",
+          "approach": "استيراد الوثائق الرسمية مع رقم الإصدار وتاريخ الالتقاط، وإظهار المصدر والإصدار بجوار كل نتيجة.",
+          "stack": "WeKnora، Git sync، SQLite/PostgreSQL، metadata schema، scheduled ingestion.",
+          "steps": [
+            "اختر مشاريع ووثائق تسمح تراخيصها بالفهرسة.",
+            "احفظ الإصدار والفرع وتاريخ الالتقاط لكل وثيقة.",
+            "أعد الفهرسة عند إصدار نسخة جديدة بدل الكتابة فوق القديمة.",
+            "اربط كل إجابة برقم الإصدار والمقطع الأصلي.",
+            "قارن الإجابات بين إصدارين قبل اعتماد ترقية."
+          ],
+          "metric": "نسبة الإجابات التي تشير إلى الإصدار الصحيح، ومعدل النتائج القديمة.",
+          "difficulty": "متوسط — تقدير.",
+          "risks": "قد تمنع بعض المواقع إعادة الفهرسة أو تتغير روابطها؛ يجب احترام تراخيص الوثائق.",
+          "sources": [
+            {
+              "title": "WeKnora datasource documentation",
+              "url": "https://github.com/Tencent/WeKnora/blob/main/website-docs/03-features/10-datasource.md"
+            },
+            {
+              "title": "WeKnora knowledge base documentation",
+              "url": "https://github.com/Tencent/WeKnora/blob/main/website-docs/03-features/02-knowledge-base.md"
+            }
+          ]
+        }
+      ],
+      "religious": [
+        {
+          "title": "فهرس بحثي للنصوص الشرعية الموثقة دون إصدار أحكام",
+          "problem": "قد تختلط نتائج البحث بين نص أصلي وشرح أو نقل غير موثق، كما قد تعرض أنظمة التوليد اقتباسًا غير دقيق.",
+          "approach": "فهرسة مصادر محددة ونسخ موثقة مع بيانات الكتاب والباب والطبعة، وإظهار النص الأصلي ومصدره فقط؛ يمنع النظام إنشاء فتوى أو نسبة نص غير موجود، ويحال التفسير إلى مختص.",
+          "stack": "WeKnora Lite، SQLite، مصادر رقمية موثوقة، metadata validation، مراجعة بشرية.",
+          "steps": [
+            "حدد مجموعة مصادر مسموحًا بفهرستها وتحقق من حقوق استخدامها.",
+            "سجل بيانات الطبعة والكتاب والباب ورقم النص.",
+            "اختبر الاسترجاع بأسئلة مرجعية راجعها مختصون.",
+            "اعرض النص الأصلي وبياناته دون إعادة صياغته كحكم.",
+            "امنع إجابات الفتوى والتخريج الآلي غير الموثق.",
+            "راجع التحديثات والنسخ دوريًا."
+          ],
+          "metric": "دقة مطابقة النص للمصدر، واكتمال بيانات الإحالة، ومعدل الاقتباسات غير المدعومة.",
+          "difficulty": "مرتفع — تقدير؛ يحتاج مراجعة علمية ومصدرية متخصصة.",
+          "risks": "خطأ في النص أو النسبة قد يضلل المستخدم؛ لا يجوز تقديمه كمرجع فتوى أو بديل عن أهل الاختصاص.",
+          "sources": [
+            {
+              "title": "Quran.com",
+              "url": "https://quran.com/"
+            },
+            {
+              "title": "Sunnah.com",
+              "url": "https://sunnah.com/"
+            }
+          ]
+        }
+      ]
+    },
+    "fb7d8c0c8a030338b7": {
+      "url": "https://github.com/rany2/edge-tts",
+      "titleAr": "edge-tts: تحويل النص إلى كلام عبر خدمة Edge من Python",
+      "summaryAr": "مكتبة Python وأداتا سطر أوامر تستخدمان خدمة تحويل النص إلى كلام عبر الإنترنت التي يستعملها Microsoft Edge. لا تتطلب تثبيت متصفح Edge أو Windows أو مفتاح API؛ وتسمح باختيار الصوت والسرعة والنبرة وحفظ الصوت والترجمة النصية SRT. يدعم README مثالًا لصوت عربي.",
+      "whyItMatters": "توفر مسارًا سريعًا لإضافة قراءة صوتية إلى تطبيق Python أو مواد تعليمية، مع دعم أصوات متعددة ولغة عربية في قائمة الأصوات. لكنها عميل غير رسمي لخدمة عبر الإنترنت، وليست محركًا محليًا ولا واجهة Microsoft SDK مضمونة؛ لذلك تناسب النماذج الأولية والمهام غير الحساسة أكثر من خدمة إنتاج حرجة.",
+      "audience": "مطورو Python الذين يحتاجون توليدًا صوتيًا سريعًا، ومطورو أدوات الوصول والقراءة التعليمية. من يحتاج تشغيلًا دون إنترنت أو ضمان خدمة ينبغي أن يدرس محركًا محليًا مثل Piper أو خدمة TTS رسمية بعقد واضح.",
+      "nextSteps": [
+        "تحقق من توفر الصوت المطلوب باستخدام edge-tts --list-voices.",
+        "اختبر نطق العربية والأسماء والأرقام وعلامات الترقيم على عينة قصيرة غير حساسة.",
+        "احتفظ بالنص وملف SRT مع الصوت لمراجعة التوقيت والنطق.",
+        "لا ترسل مستندات خاصة أو بيانات شخصية إلى الخدمة الخارجية."
+      ],
+      "limitations": "قرأت README وLICENSE وsetup.cfg وسجل الإصدار؛ لم أثبت الحزمة أو أنشئ ملفًا صوتيًا. تعتمد المكتبة على خدمة Edge عبر الإنترنت، ولا توفر تشغيلًا محليًا أو ضمان SLA أو سعرًا رسميًا منشورًا في المستودع. عدم الحاجة إلى API key لا يعني أن الخدمة واجهة عامة مستقرة أو أن شروطها لا تتغير. معظم ملفات المشروع مرخصة LGPLv3، بينما ملف srt_composer.py فقط MIT؛ لذلك تعرض GitHub API الترخيص NOASSERTION ولا يصح وصف المستودع كله بأنه MIT. أزيل دعم SSML مخصص لأن الخدمة تقيد ما تقبله. Python 3.7+ وفق setup.cfg، والاعتماديات تشمل aiohttp وcertifi وtabulate وtyping-extensions. بديل محلي: Piper، لكنه GPL-3.0 ويتطلب تنزيل نموذج صوتي منفصل والتحقق من ترخيص ذلك النموذج.",
+      "reviewedAt": "2026-10-31T18:11:52+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "README الرسمي وطرق الاستخدام",
+          "url": "https://github.com/rany2/edge-tts"
+        },
+        {
+          "title": "ملف الترخيص: LGPLv3 لمعظم الملفات وMIT لملف SRT المحدد",
+          "url": "https://github.com/rany2/edge-tts/blob/master/LICENSE"
+        },
+        {
+          "title": "الإصدار الرسمي 7.3.1 بتاريخ 13 أكتوبر 2026",
+          "url": "https://github.com/rany2/edge-tts/releases/tag/7.3.1"
+        },
+        {
+          "title": "إعدادات الحزمة وإصدار Python والاعتماديات",
+          "url": "https://github.com/rany2/edge-tts/blob/master/setup.cfg"
+        },
+        {
+          "title": "Piper: بديل محلي مفتوح المصدر بترخيص GPL-3.0",
+          "url": "https://github.com/OHF-Voice/piper1-gpl"
+        }
+      ],
+      "overview": "عميل Python لخدمة Microsoft Edge online text-to-speech، يوفر مكتبة Communicate وأمر edge-tts لتوليد الصوت وأمر edge-playback للتشغيل. يدعم اختيار الصوت والسرعة والحجم والنبرة وحفظ MP3 وملفات SRT، ويعرض README مثالًا للصوت ar-EG-SalmaNeural. لا يشغّل نموذج TTS محليًا؛ يرسل النص إلى خدمة الإنترنت.",
+      "requirements": "Python 3.7+ وفق setup.cfg، واتصال إنترنت بخدمة Edge. الاعتماديات: aiohttp >=3.8,<4، certifi، tabulate >=0.4.4,<1، typing-extensions >=4.1,<5. التثبيت عبر pip install edge-tts أو pipx install edge-tts. لا يحتاج مفتاح API وفق README. edge-playback يحتاج mpv في معظم الأنظمة باستثناء Windows. الترخيص مختلط: LGPLv3 لمعظم الملفات وMIT لملف src/edge_tts/srt_composer.py فقط. لا توجد تكلفة API منشورة أو SLA في المستودع؛ الخدمة الخارجية قد تفرض حدودًا أو تغيّر آلية الاتصال.",
+      "quickStart": "1) أنشئ بيئة افتراضية Python. 2) ثبّت الحزمة: pip install edge-tts. 3) اعرض الأصوات: edge-tts --list-voices. 4) جرّب صوتًا عربيًا متاحًا: edge-tts --voice ar-EG-SalmaNeural --text \"مرحبا كيف حالك؟\" --write-media hello.mp3 --write-subtitles hello.srt. 5) راجع الصوت وملف SRT يدويًا قبل استخدامهما. 6) لا تستخدم نصوصًا خاصة أو حساسة؛ النص يرسل إلى خدمة عبر الإنترنت. هذه خطوات README ولم تُنفذ في هذه المراجعة.",
+      "improvements": [
+        {
+          "title": "اختبارات انحدار لجودة الأصوات العربية",
+          "problem": "توفر الصوت في القائمة لا يثبت جودة نطق الأسماء والأرقام والاختصارات العربية أو ثبات التوقيت.",
+          "approach": "إنشاء مجموعة نصوص قصيرة عامة ومراجعة بشرية لعينات الصوت وملفات SRT عند تحديث الحزمة أو تغير الخدمة.",
+          "stack": "Python، pytest، edge-tts، ملفات نصية عامة، تقييم بشري.",
+          "steps": [
+            "اختر نصوصًا عامة قصيرة تشمل الأرقام والأسماء والتشكيل.",
+            "سجل قائمة الأصوات المتاحة وقت الاختبار.",
+            "ولّد ملفات صوت وSRT لعينة ثابتة.",
+            "راجع النطق والتوقيت بواسطة مقيّمين اثنين.",
+            "سجل التغيرات دون الاحتفاظ بمحتوى شخصي."
+          ],
+          "metric": "نسبة الكلمات المنطوقة بصورة صحيحة، وانحراف توقيت SRT، وتوفر الصوت.",
+          "difficulty": "متوسط — تقدير؛ يتطلب تقييمًا بشريًا للصوت.",
+          "risks": "الخدمة الخارجية غير ثابتة وقد تتغير الأصوات أو الاستجابة دون إصدار جديد للحزمة.",
+          "sources": [
+            {
+              "title": "edge-tts README and Arabic voice example",
+              "url": "https://github.com/rany2/edge-tts"
+            },
+            {
+              "title": "edge-tts releases",
+              "url": "https://github.com/rany2/edge-tts/releases"
+            }
+          ]
+        },
+        {
+          "title": "واجهة موحدة لمزودي TTS مع وضع محلي احتياطي",
+          "problem": "الاعتماد على endpoint واحد عبر الإنترنت يجعل التطبيق يتوقف عند انقطاع الشبكة أو تغير الخدمة.",
+          "approach": "تعريف واجهة موحدة للتوليد، مع موصل edge-tts وموصل محلي اختياري لـPiper، وإظهار مزود الصوت المستخدم لكل ملف.",
+          "stack": "Python، Protocol/ABC، edge-tts، Piper، pytest، JSON metadata.",
+          "steps": [
+            "عرّف واجهة generate(text, voice, output_path).",
+            "اكتب محولًا لـedge-tts يحافظ على إعداداته المدعومة.",
+            "أضف محولًا لـPiper مع تنزيل النموذج منفصلًا.",
+            "حدد سياسة اختيار المزود دون إرسال النص تلقائيًا إلى السحابة.",
+            "اختبر فشل الشبكة والتحول المحلي على نصوص عامة.",
+            "وثّق اختلاف الأصوات والتراخيص وجودة المخرجات."
+          ],
+          "metric": "نسبة نجاح التوليد عند انقطاع الإنترنت، وزمن التوليد، ونسبة الملفات ذات metadata مكتملة.",
+          "difficulty": "متوسط — تقدير.",
+          "risks": "تختلف جودة الأصوات وتنسيقات المخرجات؛ نماذج Piper لها تراخيص مستقلة عن ترخيص المحرك.",
+          "sources": [
+            {
+              "title": "edge-tts",
+              "url": "https://github.com/rany2/edge-tts"
+            },
+            {
+              "title": "Piper local TTS",
+              "url": "https://github.com/OHF-Voice/piper1-gpl"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مولّد قراءة صوتية للمذكرات العربية مع SRT",
+          "problem": "تحويل المذكرات النصية إلى صوت مع توقيت الجمل يدويًا يستغرق وقتًا ويصعب مراجعته.",
+          "approach": "أداة CLI تقسم النص إلى مقاطع آمنة، تولد الصوت، تحفظ SRT، وتتيح مراجعة كل مقطع قبل دمج الملف النهائي.",
+          "stack": "Python، edge-tts، pathlib، SRT، ffmpeg اختياري.",
+          "steps": [
+            "اقرأ ملفات نصية يملك المستخدم حق استخدامها.",
+            "نظّف المسافات والرموز وقسّم النص دون قطع الكلمات.",
+            "اختر الصوت بعد معاينة قائمة الأصوات.",
+            "ولّد MP3 وSRT لكل مقطع.",
+            "ادمج المقاطع مع حفظ ترتيبها وملفات التوقيت.",
+            "اعرض تحذيرًا قبل إرسال النص إلى خدمة الإنترنت."
+          ],
+          "metric": "نسبة المقاطع المكتملة، وعدد أخطاء التوقيت، ووقت تجهيز ساعة صوت.",
+          "difficulty": "سهل إلى متوسط — تقدير.",
+          "risks": "النطق الآلي قد يخطئ في المصطلحات العربية؛ لا ترسل بيانات حساسة، وراجع النص والصوت قبل النشر.",
+          "sources": [
+            {
+              "title": "edge-tts README",
+              "url": "https://github.com/rany2/edge-tts"
+            },
+            {
+              "title": "edge-tts examples",
+              "url": "https://github.com/rany2/edge-tts/tree/master/examples"
+            }
+          ]
+        }
+      ]
+    },
+    "87d27a9f8a0972f507": {
+      "url": "https://www.theverge.com/tech/1023021/binance-hack-billions-biggest-crypto-heist",
+      "titleAr": "Binance تحقق في حادث أمني قدّر أثره بنحو 6.3 مليارات دولار",
+      "summaryAr": "قالت Binance إنها تحقق في مشكلة أمنية محتملة وقدّرت الأثر بنحو 6.3 مليارات دولار. وذكرت Associated Press أن الشركة لم تكن قد أكدت حينها أن الأموال سُرقت فعليًا. قالت الشركة إن نحو 3 مليارات من الأصول المتأثرة جُمّدت، وإن التحقيق الأولي يشير إلى احتمال اختراق حاسوب أحد مهندسي DevOps والوصول إلى حاوية خدمة وإرسال معاملات سحب غير مصرّح بها. وأضافت أنها لم تجد دليلًا على تسرب مفاتيح المحافظ. هذه معلومات أولية وليست تقريرًا فنيًا نهائيًا.",
+      "whyItMatters": "الرقم المتأثر لا يساوي تلقائيًا المبلغ المسروق؛ والتمييز بينهما أساسي. الحادث يبرز أهمية حماية أجهزة الموظفين، وتقليل صلاحيات DevOps، ومراقبة العمليات الحساسة، وخطط الاستجابة والتجميد.",
+      "audience": "فرق الأمن السيبراني وDevOps وSRE ومهتمو حماية الأنظمة المالية الرقمية.",
+      "nextSteps": [
+        "تابع التقرير الفني النهائي وتحديثات الشركة والجهات المستقلة قبل اعتماد حجم الخسائر.",
+        "طبّق مبدأ أقل صلاحية ومراجعة متعددة للعمليات الحساسة في الأنظمة التي تدير أصولًا أو بيانات."
+      ],
+      "limitations": "تعذر فتح رابط The Verge الأصلي في هذه المراجعة؛ اعتمد الملخص على تقرير Associated Press. قالت الشركة إن الأثر المقدر لا يساوي بالضرورة مبلغًا مسروقًا، ولم تكن قد أكدت سرقة الأموال وقت التقرير. التحقيق أولي ولم يثبت إسناد الحادث إلى جهة بعينها.",
+      "reviewedAt": "2026-10-31T18:11:52+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Associated Press — Binance flags potential security issue; estimated impact and frozen assets",
+          "url": "https://apnews.com/article/binance-cryptocurrency-security-39cda8ceb8095e036334a18549d3d20d"
+        }
+      ]
+    },
+    "65eeab64fed21e0b54": {
+      "url": "https://www.engadget.com/2301934/general-motors-220-million-settle-multi-state-data-privacy-lawsuit/",
+      "titleAr": "تسوية بقيمة 220 مليون دولار تلزم GM بالحصول على موافقة واضحة قبل مشاركة بيانات القيادة",
+      "summaryAr": "أعلنت وزارة العدل في ولاية Oregon في 29 أكتوبر أن General Motors ستدفع 220 مليون دولار لتسوية ادعاءات بأنها باعت بيانات سلوك القيادة والموقع إلى وسطاء بيانات ثم وصلت إلى شركات تأمين. قادت Oregon وWashington ائتلافًا ضم 36 مدعيًا عامًا. وبموجب التسوية، يتعين على GM الحصول على موافقة صريحة قبل جمع بيانات القيادة والموقع أو مشاركتها، إلى جانب ضوابط وتقييمات لبرنامج الخصوصية.",
+      "whyItMatters": "السيارات المتصلة تجمع بيانات عن الرحلات والموقع وسلوك القيادة؛ وقد تتحول هذه البيانات إلى قرارات خارج سياق تحسين السلامة. يهم ذلك مطوري أنظمة المركبات والتليماتكس عند تصميم الموافقة والاحتفاظ ومشاركة البيانات.",
+      "audience": "مطورو المركبات المتصلة والتليماتكس، ومهندسو الخصوصية، وفرق المنتجات والامتثال.",
+      "nextSteps": [
+        "راجع أذونات جمع ومشاركة بيانات المركبات في التطبيقات والخدمات المتصلة.",
+        "افصل موافقة خدمات الاتصال عن موافقة مشاركة البيانات مع جهات خارجية، واجعل الإلغاء واضحًا."
+      ],
+      "limitations": "تسوية أمريكية تخص GM وادعاءات محددة وشروطًا متعددة الولايات؛ لا تُعمم تلقائيًا على شركات أخرى أو قوانين دول أخرى. اعتمدت الوقائع القانونية على بيان وزارة العدل في Oregon، لا على استنتاج مستقل من نَبض.",
+      "reviewedAt": "2026-10-31T18:11:52+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Oregon Department of Justice — البيان الأصلي للتسوية وشروط الموافقة",
+          "url": "https://www.doj.state.or.us/media-home/news-media-releases/ag-rayfield-leads-states-in-220m-settlement-w-gm-over-drivers-private-data/"
+        }
+      ]
+    },
+    "d38e7d27f17d2a9394": {
+      "url": "https://arxiv.org/abs/2610.33215",
+      "titleAr": "بحث QViD يستهدف رموز الصورة الأكثر صلة بالسؤال لتقليل حمل نماذج الرؤية واللغة",
+      "summaryAr": "يقترح الباحثون طريقة QViD لاختيار الرموز البصرية الأكثر صلة بسؤال المستخدم عبر استغلال بنية منخفضة الرتبة في تفاعل السؤال مع الصورة. ويصف الملخص أسلوبًا لا يحتاج تدريبًا إضافيًا ويعتمد على أنماط التفاعل بدل الاعتماد المباشر على أوزان الانتباه وحدها. يذكر المؤلفون تحسنًا على مهام فهم الصور والفيديو عند تثبيت ميزانية الرموز، خصوصًا مع الضغط الشديد.",
+      "whyItMatters": "إذا أعيد إنتاج النتائج على نماذج ومجموعات بيانات متنوعة، فقد يقل زمن الاستدلال واستهلاك الذاكرة في النماذج متعددة الوسائط. لكن خفض الرموز لا يكفي وحده؛ يجب قياس ما إذا كانت التفاصيل المهمة للسؤال ما تزال محفوظة.",
+      "audience": "باحثو نماذج الرؤية واللغة ومهندسو الاستدلال متعدد الوسائط والذكاء الاصطناعي الطرفي.",
+      "nextSteps": [
+        "قارن نتائج QViD بخطوط أساس تقليم الرموز تحت ميزانية موحدة.",
+        "اختبر أثر الضغط على الدقة في أنواع مختلفة من الصور والفيديو قبل اعتماد الطريقة."
+      ],
+      "limitations": "راجعت الملخص والمقدمة فقط، لا النص الكامل وجداول التجارب أو إعادة التنفيذ. النتائج الواردة هي ادعاءات مؤلفي ورقة arXiv أولية ولم يتحقق نَبض منها مستقلًا.",
+      "reviewedAt": "2026-10-31T18:11:52+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — الملخص والورقة الأولية QViD",
+          "url": "https://arxiv.org/abs/2610.33215"
+        }
+      ]
+    },
+    "819cf1c9b153cbd6b2": {
+      "url": "https://arxiv.org/abs/2610.33298",
+      "titleAr": "بحث يحذر من أن تحويلات النماذج قد تغيّر سلوكها الأمني بعد اجتياز الفحص الأولي",
+      "summaryAr": "تدرس ورقة أولية إطارًا بحثيًا لهجمات قابلة للتركيب قد تظهر آثارها بعد تحويل النموذج، مثل التكميم أو التقليم أو دمج النماذج، رغم أن النسخة السابقة للتحويل اجتازت فحوص السلامة. الرسالة الدفاعية الأساسية هي أن فحص النموذج قبل التحويل لا يكفي؛ بل يجب تقييم النسخة النهائية بعد كل خطوة تجهيز للنشر. لا يتضمن هذا الملخص خطوات تنفيذ للهجوم.",
+      "whyItMatters": "خط أنابيب النشر قد يغيّر سلوك النموذج؛ لذا يجب ربط نتائج التقييم ببصمة النسخة النهائية، وإعادة فحوص السلامة بعد التكميم أو التقليم أو الدمج، مع حفظ مصدر الأوزان وسجل التحويلات.",
+      "audience": "فرق أمن النماذج ومهندسو نشر النماذج ومراجعو السلامة.",
+      "nextSteps": [
+        "أعد اختبارات السلامة على ملف النموذج النهائي بعد كل تحويل.",
+        "اربط تقارير التقييم ببصمة الأوزان وإصدارات أدوات التحويل."
+      ],
+      "limitations": "راجعت الملخص والمقدمة وبعض وصف المنهج والنتائج العامة، لا جميع التفاصيل والملحقات أو إعادة التنفيذ. الورقة أولية؛ لا تثبت وحدها أن كل تحويل يسبب تراجعًا أمنيًا، ولم تُدرج تفاصيل تشغيلية للهجوم.",
+      "reviewedAt": "2026-10-31T18:11:52+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — الملخص والورقة الأولية All-in-One",
+          "url": "https://arxiv.org/abs/2610.33298"
+        }
+      ]
+    },
+    "e4dd7c24fff16ee320": {
+      "url": "https://github.com/microsoft/Web-Dev-For-Beginners",
+      "titleAr": "Web-Dev-For-Beginners: منهج عملي لتعلم تطوير الويب عبر 24 درسًا",
+      "summaryAr": "منهج مفتوح من Microsoft Cloud Advocates يمتد 12 أسبوعًا ويضم 24 درسًا في HTML وCSS وJavaScript، مع أنشطة واختبارات قصيرة ومشاريع تطبيقية مثل حوض نباتات افتراضي ولعبة كتابة وإضافة متصفح ولعبة فضاء. يتضمن ترجمات عديدة بينها العربية، ويمكن دراسته محليًا أو عبر Codespaces.",
+      "whyItMatters": "ينقل المتعلم من قراءة المفاهيم إلى بناء مشاريع صغيرة متدرجة، ويمنح مسارًا منظمًا لتأسيس HTML وCSS وJavaScript قبل الانتقال إلى أطر العمل. وجود ترجمة عربية يقلل حاجز اللغة، بينما تبقى المشاريع العملية معيارًا أفضل من إكمال الاختبارات وحدها.",
+      "audience": "المبتدئون في تطوير الويب، وطلاب المدارس والجامعات، والمدرسون الذين يحتاجون منهجًا عمليًا قابلًا للتقسيم.",
+      "overview": "منهج تعليمي مفتوح من Microsoft Cloud Advocates يركز على أساسيات HTML وCSS وJavaScript دون إدخال أطر JavaScript مبكرًا. يتكون من 24 درسًا خلال 12 أسبوعًا، ويجمع شرحًا وأنشطة ومشاريع واختبارات قبل الدرس وبعده. من أمثلته terrarium وtyping game وbrowser extension وspace game ومشروع مصرفي تعليمي. يوفر مجلد translations/ar وبيئة devcontainer، ويقترح Codespaces أو محررًا محليًا ومتصفحًا وسطر أوامر. بدائل ومكملات مناسبة: MDN Learning Area للتوثيق المرجعي وfreeCodeCamp للتدريب الموسع؛ المنهج ليس بديلًا عن توثيق الويب الرسمي.",
+      "requirements": "لا يحتاج تشغيل الدروس الأساسية إلى خادم أو مفتاح API: متصفح حديث، محرر نصوص مثل VS Code، وسطر أوامر كافية. يمكن فتح المستودع في GitHub Codespaces دون تثبيت محلي، لكن استخدام Codespaces يخضع للحصص والتسعير بحسب الحساب؛ التشغيل المحلي مجاني عدا الجهاز والاتصال. package.json الجذري يضم docsify-to-pdf لتوليد نسخة PDF، وليس اعتمادًا مطلوبًا لكل درس. بعض المشاريع الفرعية قد تتطلب أدوات إضافية حسب الدرس. لا توجد حاجة إلى نموذج سحابي؛ ويمكن دراسة الدروس محليًا بعد تنزيلها. بدائل/مكملات: MDN وfreeCodeCamp.",
+      "quickStart": "1) أنشئ نسخة من المستودع باستخدام Use this template أو fork ثم clone. 2) افتح translations/ar/README.md إن رغبت في الشرح العربي. 3) ابدأ بدرس Introduction to Programming Languages and Modern Developer Tools. 4) نفّذ اختبار ما قبل الدرس، ثم اقرأ الشرح وشغّل النشاط في المتصفح. 5) ابنِ المشروع الصغير بنفسك ولا تنسخ الحل مباشرة؛ افتح مجلد solutions بعد المحاولة. 6) نفّذ اختبار ما بعد الدرس وسجل ما لم تفهمه. 7) تابع الدروس بالترتيب أو اختر مشروعًا مناسبًا. لم يُشغّل أي مشروع من المنهج في هذه المراجعة.",
+      "limitations": "المنهج عام لتأسيس الويب وليس مسارًا متخصصًا في Python أو الذكاء الاصطناعي. يعتمد على اختبارات قصيرة متكررة قد لا تناسب كل أساليب التعلم، ويحتاج المتعلم إلى تنفيذ المشاريع بنفسه بدل الاكتفاء بالإجابات. بعض الروابط الخارجية أو بيئة Codespaces قد تتطلب حسابًا أو تخضع لحصص استخدام. لم تُنفذ اختبارات الدروس أو مشاريعها في هذه المراجعة.",
+      "nextSteps": [
+        "اختر مشروعًا واحدًا من الدروس وابدأ به دون نسخ الحل.",
+        "احتفظ بنسخة من كل مشروع مع README يشرح ما بنيته وما تعلمته.",
+        "استخدم MDN مرجعًا عند اختلاف سلوك المتصفح أو نقص الشرح."
+      ],
+      "reviewedAt": "2026-10-31T18:11:52+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "Microsoft Web-Dev-For-Beginners — المستودع وREADME",
+          "url": "https://github.com/microsoft/Web-Dev-For-Beginners"
+        },
+        {
+          "title": "Microsoft Web-Dev-For-Beginners — ملف MIT LICENSE",
+          "url": "https://github.com/microsoft/Web-Dev-For-Beginners/blob/main/LICENSE"
+        },
+        {
+          "title": "Microsoft Web-Dev-For-Beginners — بيئة التطوير المهيأة",
+          "url": "https://github.com/microsoft/Web-Dev-For-Beginners/blob/main/.devcontainer/devcontainer.json"
+        },
+        {
+          "title": "MDN — مسار تعلم تطوير الويب",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development"
+        },
+        {
+          "title": "GitHub Pages — التوثيق الرسمي",
+          "url": "https://docs.github.com/en/pages"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "اختبارات متصفح صغيرة لكل مشروع تعليمي",
+          "problem": "قد تتعطل أمثلة الدروس مع تحديث المتصفحات أو الاعتماديات دون أن يلاحظ المحرر ذلك.",
+          "approach": "أضف اختبارات smoke محدودة للمشاريع الأساسية، وشغّلها على HTML/CSS/JS ثابتة مع بيانات محلية، ثم اعرض حالة الاختبار وتاريخ تشغيله.",
+          "stack": "HTML, CSS, JavaScript, Playwright, GitHub Actions",
+          "steps": [
+            "اختر مشروعًا واحدًا من كل مجموعة دروس.",
+            "حدد مسارات الاستخدام الأساسية التي يجب أن تعمل.",
+            "اكتب اختبارات Playwright لا تعتمد على خدمات خارجية.",
+            "شغّل الاختبارات عند تحديث ملفات المشروع.",
+            "وثّق الحالات التي تحتاج تفاعلًا يدويًا أو متصفحًا محددًا."
+          ],
+          "metric": "نسبة المشاريع الأساسية التي تمر باختبارات smoke، وعدد الأعطال المكتشفة قبل النشر.",
+          "difficulty": "متوسط — تقدير بحثي.",
+          "risks": "قد تسبب تغييرات الواجهة اختبارات هشة؛ استخدم محددات مستقرة وبيانات اختبار محلية.",
+          "sources": [
+            {
+              "title": "المستودع التعليمي",
+              "url": "https://github.com/microsoft/Web-Dev-For-Beginners"
+            },
+            {
+              "title": "Playwright documentation",
+              "url": "https://playwright.dev/docs/intro"
+            }
+          ]
+        },
+        {
+          "title": "مراجعة عربية RTL وإمكانية الوصول",
+          "problem": "وجود ترجمة عربية لا يضمن اتساق اتجاه الصفحة أو قابلية استخدام الأمثلة بلوحة المفاتيح وقارئات الشاشة.",
+          "approach": "أنشئ قائمة تحقق لكل درس للاتجاه RTL والنص البديل والتباين والتنقل بلوحة المفاتيح، وافحص الأمثلة بأداة آلية مع مراجعة بشرية.",
+          "stack": "HTML, CSS logical properties, axe-core, Playwright",
+          "steps": [
+            "جرد صفحات الترجمة العربية والمشاريع المرتبطة بها.",
+            "افحص اتجاه النص والمحاذاة والرموز البرمجية ثنائية الاتجاه.",
+            "أضف نصوصًا بديلة وروابط واضحة وتسميات للنماذج.",
+            "شغّل فحص axe-core على صفحات المشاريع.",
+            "راجع النتائج يدويًا مع قارئ شاشة ولوحة مفاتيح."
+          ],
+          "metric": "عدد مخالفات WCAG الحرجة لكل مشروع، ونسبة الدروس التي تجتاز قائمة التحقق.",
+          "difficulty": "متوسط — تقدير بحثي.",
+          "risks": "قد لا تلتقط الأدوات الآلية مشكلات اللغة أو ترتيب القراءة؛ يلزم اختبار بشري.",
+          "sources": [
+            {
+              "title": "Arabic translation",
+              "url": "https://github.com/microsoft/Web-Dev-For-Beginners/tree/main/translations/ar"
+            },
+            {
+              "title": "W3C WCAG 2.2",
+              "url": "https://www.w3.org/TR/WCAG22/"
+            }
+          ]
+        },
+        {
+          "title": "مسار اختياري حديث لأدوات البناء والنشر",
+          "problem": "يركز المنهج على الأساسيات ويتجنب الأطر، لكن المتعلم قد لا يعرف كيف يحول مشروعه إلى تطبيق منظم قابل للنشر.",
+          "approach": "أضف وحدة اختيارية قصيرة بعد الدروس الأساسية عن Git وnpm وVite والنشر الثابت، مع إبقاء المنهج الأصلي دون تغيير.",
+          "stack": "JavaScript, Git, npm, Vite, GitHub Pages",
+          "steps": [
+            "حدد المفاهيم التي يحتاجها المتعلم بعد إكمال الأساسيات.",
+            "ابنِ قالب مشروع صغيرًا مع package.json واضح.",
+            "اشرح الفرق بين التطوير والبناء والنشر.",
+            "أضف خطوة نشر إلى GitHub Pages.",
+            "اختبر أن المشروع يعمل محليًا وبعد النشر."
+          ],
+          "metric": "نسبة المتعلمين الذين ينشرون مشروعًا مستقلًا يعمل برابط عام دون خطوات غير موثقة.",
+          "difficulty": "متوسط — تقدير بحثي.",
+          "risks": "قد تشتت الأدوات الإضافية المبتدئ؛ اجعل المسار اختياريًا وبعد إتقان الأساسيات.",
+          "sources": [
+            {
+              "title": "المستودع التعليمي",
+              "url": "https://github.com/microsoft/Web-Dev-For-Beginners"
+            },
+            {
+              "title": "Vite Guide",
+              "url": "https://vite.dev/guide/"
+            },
+            {
+              "title": "GitHub Pages",
+              "url": "https://docs.github.com/en/pages"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مختبر مشاريع ويب عربية صغيرة",
+          "problem": "قد ينهي المتعلم الدروس دون امتلاك مجموعة أعمال مترابطة تعرض ما يستطيع بناءه.",
+          "approach": "أنشئ مسارًا مستقلًا من ثلاثة مشاريع RTL صغيرة، لكل مشروع متطلبات ومهام واختبار قبول ومعيار وصول، مع نشرها كصفحة شخصية.",
+          "stack": "HTML, CSS, JavaScript, localStorage, GitHub Pages",
+          "steps": [
+            "اختر ثلاثة مشاريع بسيطة ذات أهداف مختلفة.",
+            "اكتب مواصفات واضحة لكل مشروع قبل البرمجة.",
+            "ابنِ الواجهات باتجاه RTL ودعم لوحة المفاتيح.",
+            "أضف حفظًا محليًا عند الحاجة دون خادم.",
+            "اكتب README وصورًا توضح القرارات.",
+            "انشر كل مشروع واختبر الرابط من جهاز آخر."
+          ],
+          "metric": "عدد المشاريع المنشورة التي تجتاز قائمة قبول الوظائف وإمكانية الوصول.",
+          "difficulty": "متوسط — تقدير بحثي.",
+          "risks": "قد يتحول المختبر إلى نسخ للحلول؛ اجعل التقييم قائمًا على تفسير القرارات وتعديل المتطلبات.",
+          "sources": [
+            {
+              "title": "المستودع التعليمي",
+              "url": "https://github.com/microsoft/Web-Dev-For-Beginners"
+            },
+            {
+              "title": "GitHub Pages",
+              "url": "https://docs.github.com/en/pages"
+            }
+          ]
+        },
+        {
+          "title": "مسار تطبيقات ويب تعمل دون اتصال",
+          "problem": "تعتمد بعض مشاريع المبتدئين على اتصال مستمر رغم إمكانية تعلم التخزين المحلي والعمل دون شبكة.",
+          "approach": "ابنِ منهجًا صغيرًا لتطبيق ملاحظات وقائمة مهام يعملان دون اتصال باستخدام Service Worker وIndexedDB مع توضيح حدود التخزين.",
+          "stack": "JavaScript, Service Worker, IndexedDB, Vite",
+          "steps": [
+            "حدد وظائف تعمل بالكامل دون شبكة.",
+            "صمم مخطط بيانات صغيرًا في IndexedDB.",
+            "أضف Service Worker لتخزين الملفات الأساسية.",
+            "اختبر إعادة التحميل ووضع الطيران.",
+            "أضف تصديرًا واستيرادًا احتياطيًا للبيانات.",
+            "وثّق حدود المساحة وإزالة بيانات المتصفح."
+          ],
+          "metric": "نجاح الوظائف الأساسية في وضع عدم الاتصال، ومعدل استعادة البيانات بعد إعادة فتح المتصفح.",
+          "difficulty": "متوسط إلى مرتفع — تقدير بحثي.",
+          "risks": "قد يحذف المستخدم بيانات المتصفح؛ وضح النسخ الاحتياطي ولا تخزن بيانات حساسة.",
+          "sources": [
+            {
+              "title": "MDN Service Worker API",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API"
+            },
+            {
+              "title": "MDN IndexedDB",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API"
+            }
+          ]
+        }
+      ],
+      "religious": []
     }
   }
 }
