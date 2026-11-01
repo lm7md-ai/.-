@@ -1,0 +1,136 @@
+{
+  "runAt": "2026-11-01T11:58:00+03:00",
+  "repository": "https://github.com/lm7md-ai/.-",
+  "summary": {
+    "projectsReviewed": 8,
+    "publicProjectCards": 1,
+    "researchOnlyProjects": 7,
+    "archived": 0,
+    "codeExecution": 0,
+    "metricsMeasuredAt": "2026-11-01T11:58:00+03:00",
+    "existingPublicIdeasPreserved": true
+  },
+  "measurementNote": "GitHub API counters were captured at the stated time. Stars and forks are cumulative snapshots, not daily growth. Several updated_at values and one pushed_at value were later than the current UTC clock (08:58Z); those future timestamps are flagged rather than treated as verified activity.",
+  "projects": [
+    {
+      "repository": "patchy631/ai-engineering-hub",
+      "publishedProjectCard": true,
+      "feedId": "fe0e6bfdbdd5822139",
+      "status": "active_not_archived",
+      "license": "MIT",
+      "archived": false,
+      "stars": 39624,
+      "forks": 6433,
+      "openIssues": 133,
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "updatedAt": "2026-11-01T09:54:51Z",
+      "timestampAnomaly": "updatedAt is later than the run clock"
+    },
+    {
+      "repository": "googleapis/python-genai",
+      "publishedProjectCard": false,
+      "feedId": null,
+      "status": "research_only_active",
+      "license": "Apache-2.0",
+      "archived": false,
+      "stars": 4051,
+      "forks": 1052,
+      "openIssues": 370,
+      "pushedAt": "2026-10-31T00:34:25Z",
+      "updatedAt": "2026-11-01T02:13:35Z"
+    },
+    {
+      "repository": "Millillion/lasm",
+      "publishedProjectCard": false,
+      "feedId": null,
+      "status": "research_only_active",
+      "license": "MIT",
+      "archived": false,
+      "stars": 87,
+      "forks": 5,
+      "openIssues": 5,
+      "pushedAt": "2026-11-01T02:32:07Z",
+      "updatedAt": "2026-11-01T02:32:11Z"
+    },
+    {
+      "repository": "microsoft/markitdown",
+      "publishedProjectCard": false,
+      "feedId": null,
+      "status": "research_only_active",
+      "license": "MIT",
+      "archived": false,
+      "stars": 193300,
+      "forks": 14485,
+      "openIssues": 779,
+      "pushedAt": "2026-10-28T15:33:14Z",
+      "updatedAt": "2026-11-01T09:51:40Z",
+      "timestampAnomaly": "updatedAt is later than the run clock"
+    },
+    {
+      "repository": "yc-software/minecraft-agent-harness",
+      "publishedProjectCard": false,
+      "feedId": null,
+      "status": "research_only_active",
+      "license": "MIT",
+      "archived": false,
+      "stars": 82,
+      "forks": 6,
+      "openIssues": 1,
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "updatedAt": "2026-11-01T00:45:25Z"
+    },
+    {
+      "repository": "NVIDIA/OpenShell",
+      "publishedProjectCard": false,
+      "feedId": null,
+      "status": "research_only_active",
+      "license": "Apache-2.0",
+      "archived": false,
+      "stars": 20860,
+      "forks": 2046,
+      "openIssues": 564,
+      "pushedAt": "2026-11-01T02:47:51Z",
+      "updatedAt": "2026-11-01T09:46:53Z",
+      "timestampAnomaly": "updatedAt is later than the run clock"
+    },
+    {
+      "repository": "pydantic/pydantic-ai",
+      "publishedProjectCard": false,
+      "feedId": null,
+      "status": "research_only_active",
+      "license": "MIT",
+      "archived": false,
+      "stars": 20975,
+      "forks": 3077,
+      "openIssues": 1723,
+      "pushedAt": "2026-11-01T09:20:43Z",
+      "updatedAt": "2026-11-01T07:42:41Z",
+      "timestampAnomaly": "pushedAt is later than the run clock"
+    },
+    {
+      "repository": "astral-sh/uv",
+      "publishedProjectCard": false,
+      "feedId": null,
+      "status": "research_only_active",
+      "license": "Apache-2.0",
+      "archived": false,
+      "stars": 91410,
+      "forks": 3739,
+      "openIssues": 3019,
+      "pushedAt": "2026-11-01T00:37:56Z",
+      "updatedAt": "2026-11-01T05:57:17Z"
+    }
+  ],
+  "totals": {
+    "notArchived": 8,
+    "archived": 0,
+    "licenses": {
+      "MIT": 5,
+      "Apache-2.0": 3
+    },
+    "publicCards": 1,
+    "researchOnly": 7
+  },
+  "codeExecution": "not_run",
+  "ordering": "Existing order and links preserved; no project or idea reordered."
+}

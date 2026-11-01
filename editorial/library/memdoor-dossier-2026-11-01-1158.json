@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "runAt": "2026-11-01T11:58:00+03:00",
+  "repository": "https://github.com/guregodevo/memdoor",
+  "project": "Memdoor",
+  "status": "research_only",
+  "feedNewsId": "6725a773cbcfd0fd91",
+  "feedNewsUrl": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
+  "publicProjectCard": false,
+  "overview": "Memdoor تطبيق CLI/TUI وممرّ للوكلاء يعمل على جهاز المستخدم أو بوابة يملكها. يجمع إدارة مزودي النماذج وتوجيهها، أدوات البرمجة، خوادم MCP، وسير عمل متعدد الخطوات على هيئة DAG. مثال team-solve يوزّع حل مسألة برمجية على مخطّط ومولّدَي أفكار ومحلّل ومراجع وعامل إصلاح، ويتبادل الوكلاء الأدلة عبر ملفات على القرص؛ وتحدد اختبارات العينة نجاح المهمة بدل الاكتفاء بادعاء النموذج.",
+  "requirements": "يتطلب بناء الشيفرة من المصدر Go 1.25.0 بحسب go.mod؛ وتتوفر مثبتات مسبقة البناء لـmacOS وLinux وWindows 64-bit. لا يحتاج CLI الأساسي إلى Docker أو Python أو مدير حزم. أما مثال team-solve فيحتاج Python 3 وbash وdiff وملف task.md واختبارات tests/*.in وtests/*.out. يوصي README بنافذة سياق 32K على الأقل للمثال؛ وقد يحتاج النموذج المحلي إلى ذاكرة وحوسبة مناسبة.",
+  "quickStart": [
+    "اقرأ README وGETTING_STARTED وملفي SECURITY وAGENT_SANDBOX_SECURITY قبل تشغيل وكيل قادر على تعديل الملفات أو تنفيذ الأوامر.",
+    "استخدم مجلدًا تجريبيًا منفصلًا لا يحتوي أسرارًا أو ملفات شخصية، وراجع مثبت الإصدار الرسمي والتحقق من SHA-256 قبل التثبيت.",
+    "ابدأ بمزوّد محلي مدعوم مثل Ollama أو llama.cpp أو vLLM أو LM Studio لتقليل إرسال الشيفرة إلى مزود خارجي؛ تحقق من إعدادات الاتصال قبل إدخال بيانات حقيقية.",
+    "انسخ مثال examples/workflows/team-solve إلى مجلد workflows الخاص بالمستخدم، وأنشئ task.md واختبارات إدخال/إخراج صغيرة.",
+    "شغّل سير العمل على مسألة تعليمية اصطناعية فقط، ثم افحص solution.py وملفات الخطة والسجل ونتائج الاختبار النهائية يدويًا."
+  ],
+  "costLocalCloud": {
+    "local": "الـCLI مفتوح المصدر ولا يتطلب خدمة مدفوعة لتشغيله. الاستدلال المحلي عبر Ollama أو llama.cpp أو vLLM أو LM Studio يتطلب عتادًا مناسبًا واستهلاك طاقة/ذاكرة، لكنه قد يتجنب رسوم API إذا بقيت كل طلبات النموذج محلية. لا تفترض أن كل ميزات التحكم عن بعد محلية.",
+    "cloud": "عند استخدام مزود API تُحسب التكلفة حسب النموذج والرموز والطلبات؛ يذكر مؤلفو team-solve وسيطًا يقارب 0.39 دولار للتشغيل ومدته 40 دقيقة في إعدادهم، و35.79 دولارًا لخمسين تشغيلًا. هذه أرقام تجربة المؤلفين وليست سعرًا عامًا. يذكر التوثيق أن بعض ميزات التحكم/الحالة المستضافة ضمن Pro، لكن لم أجد سعرًا منشورًا يمكن تأكيده.",
+    "notes": "لم تُحسب تكلفة تشغيل محلي أو سحابي في هذه المراجعة، ولم يُشغّل المشروع."
+  },
+  "license": {
+    "spdx": "Apache-2.0",
+    "file": "LICENSE",
+    "verifiedFrom": "GitHub repository metadata and LICENSE file",
+    "scope": "ترخيص المستودع؛ نماذج الجهات الخارجية وبياناتها ومكونات MCP لها شروطها الخاصة."
+  },
+  "activity": {
+    "stars": 76,
+    "forks": 10,
+    "openIssues": 0,
+    "archived": false,
+    "language": "Go",
+    "defaultBranch": "main",
+    "pushedAtReportedByGitHub": "2026-11-01T09:44:54Z",
+    "measuredAt": "2026-11-01T11:58:00+03:00",
+    "clockAnomaly": "وقت pushed_at المبلغ عنه يتقدم بنحو 46 دقيقة على UTC الحالي وقت القياس (08:58Z)، لذلك لا أستخدمه كدليل على نشاط حدث قبل المراجعة. النجوم والفروع والأرشفة لقطة API وقت القياس."
+  },
+  "alternatives": [
+    {
+      "name": "OpenHands",
+      "url": "https://github.com/All-Hands-AI/OpenHands",
+      "difference": "وكيل تطوير برمجيات أوسع مع واجهة وتجربة تشغيل مختلفة."
+    },
+    {
+      "name": "SWE-agent",
+      "url": "https://github.com/SWE-agent/SWE-agent",
+      "difference": "يركز على حل مشكلات المستودعات وإصلاحها ضمن مسار بحثي/هندسي."
+    },
+    {
+      "name": "Aider",
+      "url": "https://github.com/Aider-AI/aider",
+      "difference": "مساعد برمجة طرفي يركز على التحرير التعاوني المباشر أكثر من تنسيق DAG متعدد الوكلاء."
+    }
+  ],
+  "limitations": [
+    "التوثيق الأمني يصرح بأنه لا يوجد container أو VM أو seccomp؛ تعمل أدوات الوكيل ضمن عملية البوابة وبصلاحيات المستخدم. حدود الكتابة إلى مجلد العمل لا تعني أن أوامر shell عاجزة عن قراءة ملفات أخرى؛ لا تشغله قرب أسرار أو ملفات حساسة.",
+    "بيانات المقارنة في team-solve تخص عشر مسائل وخمس محاولات ونموذجًا واحدًا على OpenRouter؛ لا تثبت تفوقًا عامًا، كما أن مقارنة Fable 5 ذات استدعاء واحد ليست مقارنة متكافئة مع فريق وكلاء.",
+    "قد يرسل مزود النموذج السحابي الموجّهات والمقتطفات التي اختارها الوكيل؛ اختيار وضع محلي لا يغني عن مراجعة بقية الاتصالات والميزات المستضافة.",
+    "لم أنفذ تثبيتًا أو تشغيلًا أو اختبارًا للمشروع، ولم أتحقق من الأسعار الفعلية لمزودات النماذج أو خطة Pro."
+  ],
+  "improvements": [
+    {
+      "title": "سقف تكلفة تراكمي لكل سير عمل",
+      "problem": "تحديد max_tokens أو مهلة لكل مهمة لا يضمن وحده سقفًا ماليًا واضحًا عبر عدة وكلاء ومحاولات إصلاح.",
+      "approach": "أضف ميزانية إجمالية تجمع usage الفعلي من كل مرحلة، وتوقف قبل طلب جديد عند بلوغ السقف، مع إظهار الحالات التي لا يوفر فيها المزود بيانات تكلفة.",
+      "stack": "Go، SQLite، provider usage metadata، اختبارات تكامل.",
+      "steps": [
+        "عرّف ميزانية اختيارية على مستوى workflow.",
+        "اجمع الرموز والتكلفة الفعلية لكل provider call.",
+        "احسب مجموع المراحل وإعادات المحاولة.",
+        "أوقف التنفيذ قبل الطلب التالي عند بلوغ الحد.",
+        "أصدر تقريرًا يوضح التكلفة المؤكدة والبيانات المفقودة."
+      ],
+      "metric": "نسبة التشغيلات التي بقيت ضمن السقف، والتكلفة لكل مهمة مقبولة، وعدد مرات الإيقاف الوقائي.",
+      "difficulty": "متوسطة إلى مرتفعة (تقدير 3–5 أسابيع).",
+      "risks": "اختلاف بيانات الفوترة بين المزودين؛ لا يجوز تقدير سعر غير متاح على أنه تكلفة فعلية.",
+      "sources": [
+        {
+          "title": "Memdoor workflows",
+          "url": "https://github.com/guregodevo/memdoor/blob/main/docs/features/WORKFLOWS.md"
+        },
+        {
+          "title": "Memdoor team-solve benchmark",
+          "url": "https://github.com/guregodevo/memdoor/blob/main/examples/workflows/team-solve/README.md"
+        }
+      ]
+    },
+    {
+      "title": "مراجعة تغييرات الملفات قبل اعتمادها",
+      "problem": "يمكن لوكيل البرمجة أن يكتب ملفات متعددة؛ وجود write root لا يوفر وحده موافقة بشرية مفهومة على كل تغيير.",
+      "approach": "أنشئ manifest للملفات المعدلة مع diff مختصر وبصمات قبل/بعد، واجعل اعتماد التغييرات خطوة منفصلة قابلة للإلغاء.",
+      "stack": "Go، git diff، SHA-256، واجهة TUI.",
+      "steps": [
+        "سجّل كل مسار قرأه أو عدّله الوكيل.",
+        "أنشئ diff وبصمة قبل/بعد لكل ملف.",
+        "اعرض ملخصًا قابلًا للمراجعة قبل اعتماد workflow.",
+        "أضف رفضًا واستعادة للنسخة السابقة في مجلد تجريبي.",
+        "اختبر المسارات المحذوفة والمنقولة والملفات الثنائية."
+      ],
+      "metric": "نسبة التغييرات التي راجعها المستخدم، وعدد الاستعادات الناجحة، ومعدل التغييرات غير المقصودة.",
+      "difficulty": "متوسطة (تقدير 2–4 أسابيع).",
+      "risks": "قد لا تكون الاستعادة آمنة إذا غيّر المستخدم الملف بالتزامن؛ يلزم كشف التعارض قبل الكتابة.",
+      "sources": [
+        {
+          "title": "Memdoor agent sandbox security",
+          "url": "https://github.com/guregodevo/memdoor/blob/main/docs/architecture/AGENT_SANDBOX_SECURITY.md"
+        },
+        {
+          "title": "Memdoor workflows",
+          "url": "https://github.com/guregodevo/memdoor/blob/main/docs/features/WORKFLOWS.md"
+        }
+      ]
+    },
+    {
+      "title": "مانيفست قابل لإعادة إنتاج لنتائج benchmark",
+      "problem": "قد يصعب مقارنة نتائج الوكلاء إذا لم تحفظ نسخة النموذج والموجّهات والإعدادات ونتائج كل تشغيل معًا.",
+      "approach": "أصدر manifest ثابتًا لكل تشغيل يتضمن model id وprompt hashes وإصدار grader والمهلة والرموز والتكلفة والنتيجة.",
+      "stack": "Go، JSONL، SHA-256، Python للمعالجة اللاحقة.",
+      "steps": [
+        "عرّف schema موحدًا لبيانات التشغيل.",
+        "احفظ بصمة الموجّه وإصدار النموذج والمقيّم.",
+        "اربط كل نتيجة بملفات الإدخال والمخرجات والاختبارات.",
+        "أصدر تقريرًا يميز نتيجة المؤلفين عن إعادة الإنتاج المستقلة.",
+        "أضف مقارنة بين تشغيلين مع كشف اختلاف الإعدادات."
+      ],
+      "metric": "نسبة التشغيلات التي يمكن إعادة إنتاجها، واكتمال metadata، وتطابق النتائج.",
+      "difficulty": "متوسطة (تقدير 2–3 أسابيع).",
+      "risks": "قد تتغير النماذج المستضافة دون ثبات كامل؛ يجب تسجيل معرف الإصدار والوقت وعدم ادعاء تطابق غير مضمون.",
+      "sources": [
+        {
+          "title": "Memdoor team-solve benchmark",
+          "url": "https://github.com/guregodevo/memdoor/blob/main/examples/workflows/team-solve/README.md"
+        },
+        {
+          "title": "Memdoor README",
+          "url": "https://github.com/guregodevo/memdoor/blob/main/README.md"
+        }
+      ]
+    },
+    {
+      "title": "تأكيد وضع محلي صارم قبل إرسال أي طلب خارجي",
+      "problem": "قد يختار المستخدم نموذجًا محليًا بينما تظل بعض وظائف الفهرسة أو التحكم أو البحث متصلة بخدمات أخرى.",
+      "approach": "أضف وضعًا يرفض أي اتصال خارج allowlist محلية، ويعرض تقرير egress واضحًا قبل بدء الجلسة.",
+      "stack": "Go، اختبارات egress، إعدادات provider، سجل اتصالات.",
+      "steps": [
+        "عرّف وضع local-only مستقلًا عن اختيار النموذج فقط.",
+        "احصر كل الوجهات التي قد يتصل بها البرنامج.",
+        "ارفض أي host غير محلي أثناء وضع local-only.",
+        "أضف اختبارًا يفشل عند ظهور وجهة جديدة غير مصرح بها.",
+        "اعرض للمستخدم تقرير الاتصالات التي ستظل مفعلة."
+      ],
+      "metric": "عدد الاتصالات الخارجية غير المتوقعة في الاختبار، ونسبة التغطية لاختبارات egress.",
+      "difficulty": "مرتفعة (تقدير 4–6 أسابيع).",
+      "risks": "قد تكسر الميزة تسجيل الدخول أو التحديثات أو التحكم عن بعد؛ يجب فصل الوظائف الاختيارية بوضوح.",
+      "sources": [
+        {
+          "title": "Memdoor security",
+          "url": "https://github.com/guregodevo/memdoor/blob/main/docs/SECURITY.md"
+        },
+        {
+          "title": "Memdoor sandbox security",
+          "url": "https://github.com/guregodevo/memdoor/blob/main/docs/architecture/AGENT_SANDBOX_SECURITY.md"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "مجموعة تقييم عربية لوكلاء البرمجة",
+      "problem": "لا توجد مجموعة عربية ثابتة تقيس قدرة الوكلاء على فهم تعليمات برمجية وملفات Python واختبارات عربية دون الاعتماد على أمثلة محفوظة في التدريب.",
+      "approach": "أنشئ مهامًا اصطناعية مرخصة مع اختبارات hidden وقياس نجاح متعدد المحاولات.",
+      "stack": "Python، pytest، JSONL، Go workflow runner.",
+      "steps": [
+        "اكتب مهام Python أصلية بمستويات صعوبة مختلفة.",
+        "أنشئ اختبارات عامة ومخفية لكل مهمة.",
+        "شغّل أكثر من workflow بإعدادات ثابتة.",
+        "احفظ الموجّهات والبصمات والنتائج والتكلفة.",
+        "انشر تقريرًا يوضح حدود العينة والتلوث المحتمل."
+      ],
+      "metric": "نسبة اجتياز الاختبارات المخفية، وعدد المحاولات، والتكلفة لكل حل صحيح.",
+      "difficulty": "متوسطة (تقدير 3–4 أسابيع).",
+      "risks": "تلوث بيانات التدريب، وتسرب الاختبارات، وانحياز اللهجة أو صياغة السؤال.",
+      "sources": [
+        {
+          "title": "Memdoor team-solve example",
+          "url": "https://github.com/guregodevo/memdoor/blob/main/examples/workflows/team-solve/README.md"
+        },
+        {
+          "title": "LiveCodeBench",
+          "url": "https://livecodebench.github.io/"
+        }
+      ]
+    },
+    {
+      "title": "لوحة موثوقية وتكلفة لسير العمل متعدد الوكلاء",
+      "problem": "تتوزع حالات الفشل والتكلفة والوقت على عدة مراحل، ما يصعب معرفة سبب تراجع جودة workflow.",
+      "approach": "اجمع زمن كل مرحلة، ومحاولاتها، وأخطاء الأدوات، والرموز، والنتيجة النهائية في لوحة محلية.",
+      "stack": "Go، SQLite، JSONL، واجهة HTML ثابتة.",
+      "steps": [
+        "حدد event schema لكل مرحلة.",
+        "سجل start/end والنتيجة وعدد المحاولات.",
+        "استورد بيانات الاستخدام الفعلية فقط.",
+        "اعرض p50 وp95 والتكلفة المؤكدة لكل workflow.",
+        "أضف تصدير CSV/JSON للمراجعة."
+      ],
+      "metric": "اكتمال الأحداث، ودقة حساب التكلفة، وزمن تحديد سبب الفشل.",
+      "difficulty": "متوسطة (تقدير 2–4 أسابيع).",
+      "risks": "الخصوصية إذا احتوت السجلات على مقتطفات ملفات؛ يجب حذف المحتوى والاكتفاء بالبيانات الوصفية.",
+      "sources": [
+        {
+          "title": "Memdoor workflows",
+          "url": "https://github.com/guregodevo/memdoor/blob/main/docs/features/WORKFLOWS.md"
+        },
+        {
+          "title": "Memdoor security",
+          "url": "https://github.com/guregodevo/memdoor/blob/main/docs/SECURITY.md"
+        }
+      ]
+    },
+    {
+      "title": "مدرّب Python غير متصل يعتمد على الاختبارات",
+      "problem": "المتعلم يحتاج إلى ممارسة وحل مشكلات متدرجة مع تغذية راجعة دون تحويل كل خطوة إلى اختيار من متعدد أو كشف الحل فورًا.",
+      "approach": "استخدم workflow لتوليد تلميحات متدرجة، وتشغيل اختبارات محلية، وطلب تفسير الطالب قبل عرض الحل المرجعي.",
+      "stack": "Python، pytest، SQLite، Memdoor local runtime.",
+      "steps": [
+        "أنشئ تمارين أصلية مع اختبارات مخفية محلية.",
+        "افصل دور التلميح عن دور مراجعة الحل.",
+        "لا تعرض الحل الكامل قبل محاولات موثقة.",
+        "اطلب تفسيرًا قصيرًا لسبب نجاح الاختبار.",
+        "قِس انتقال المتعلم إلى مسألة جديدة دون مساعدة."
+      ],
+      "metric": "نسبة حل المسألة الجديدة استقلاليًا، وعدد التلميحات، وثبات الفهم عبر جلسات لاحقة.",
+      "difficulty": "متوسطة إلى مرتفعة (تقدير 3–5 أسابيع).",
+      "risks": "قد يكشف النموذج إجابة الاختبار أو يقدم تلميحًا خاطئًا؛ يجب أن تكون الاختبارات المرجعية هي الحكم.",
+      "sources": [
+        {
+          "title": "Memdoor team-solve example",
+          "url": "https://github.com/guregodevo/memdoor/blob/main/examples/workflows/team-solve/README.md"
+        },
+        {
+          "title": "Python documentation",
+          "url": "https://docs.python.org/3/"
+        }
+      ]
+    }
+  ],
+  "religious": [],
+  "executionStatus": "not_run",
+  "sources": [
+    {
+      "title": "Memdoor README",
+      "url": "https://github.com/guregodevo/memdoor/blob/main/README.md"
+    },
+    {
+      "title": "Memdoor Getting Started",
+      "url": "https://github.com/guregodevo/memdoor/blob/main/GETTING_STARTED.md"
+    },
+    {
+      "title": "Memdoor Apache-2.0 License",
+      "url": "https://github.com/guregodevo/memdoor/blob/main/LICENSE"
+    },
+    {
+      "title": "Memdoor security model",
+      "url": "https://github.com/guregodevo/memdoor/blob/main/docs/SECURITY.md"
+    },
+    {
+      "title": "Memdoor agent sandbox architecture",
+      "url": "https://github.com/guregodevo/memdoor/blob/main/docs/architecture/AGENT_SANDBOX_SECURITY.md"
+    },
+    {
+      "title": "Memdoor workflows documentation",
+      "url": "https://github.com/guregodevo/memdoor/blob/main/docs/features/WORKFLOWS.md"
+    },
+    {
+      "title": "Memdoor team-solve example",
+      "url": "https://github.com/guregodevo/memdoor/blob/main/examples/workflows/team-solve/README.md"
+    }
+  ]
+}
