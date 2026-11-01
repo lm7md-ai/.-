@@ -1,0 +1,232 @@
+{
+  "runAt": "2026-11-01T11:58:00+03:00",
+  "repository": "https://github.com/lm7md-ai/.-",
+  "main": {
+    "sha": "536dc53fb131b5ee88bc41f53c56cf5848cb6e49",
+    "feedGeneratedAt": "2026-11-01T05:58:42+00:00",
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialCount": 621,
+    "activeEditorialExact": 294,
+    "activeNewsEditorial": 195,
+    "activeProjectEditorial": 99
+  },
+  "pullRequests": {
+    "pr1": {
+      "state": "closed",
+      "merged": true
+    },
+    "pr2": {
+      "state": "closed",
+      "merged": true
+    },
+    "pr76": {
+      "state": "closed",
+      "merged": true,
+      "mergeCommit": "679fd2ae16f51f548f4d3147c2706ba91b62af09"
+    },
+    "pr71": {
+      "state": "open",
+      "aheadBy": 6,
+      "behindBy": 24,
+      "status": "diverged",
+      "mergeable": false,
+      "decision": "ترك دون تعديل أو دمج احترامًا لتغييرات صاحبه."
+    }
+  },
+  "incomingAudit": {
+    "files": 62,
+    "rows": 586,
+    "editorialExactRows": 581,
+    "currentFeedAndEditorialExactRows": 268,
+    "historicalEditorialOutsideCurrentFeedRows": 313,
+    "seenOnlyRows": 5,
+    "feedOnlyRows": 0,
+    "unmatchedRows": 0,
+    "sameIdDifferentUrl": 0,
+    "explicitExpired": 0,
+    "structuralErrors": 0,
+    "structuralMethod": "تحقق بنيوي مكافئ لقواعد scripts/editorial.py على الحقول والنصوص وHTTPS والمنطقة الزمنية والمصادر والخطوات والمقترحات؛ لم يُشغّل Python محليًا.",
+    "rowCountsAreOccurrences": true,
+    "deduplicationNote": "تقرير 58 ملفًا السابق سجل 4 صفوف مكررة و554 زوج ID/URL فريدًا. لم أعد حساب التفرد العالمي عبر حدود مجموعات الملفات الـ62 في هذه الدورة؛ لذلك لا أقدّم رقمًا فريدًا إجماليًا جديدًا.",
+    "decision": "كل صف إما مطابق حرفيًا لسجل editorial موجود، أو موجود في seen فقط. لا توجد سجلات نشطة في feed تنتظر الاستيراد من هذه الدفعات القديمة. لا تُعدّ السجلات التاريخية منتهية لمجرد غيابها عن feed."
+  },
+  "pendingRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "title": "OpenShell من NVIDIA: بيئات معزولة للوكلاء بصلاحيات قابلة للمراجعة",
+      "state": "seen_only",
+      "inFeed": false,
+      "inEditorial": false,
+      "reason": "موجود في seen وincoming فقط؛ لا توجد هوية نشطة في feed أو editorial الحاليين."
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "title": "Canva تعلن Craft لتوليد صور يمكن تحويلها إلى تصاميم متعددة الطبقات",
+      "state": "seen_only",
+      "inFeed": false,
+      "inEditorial": false,
+      "reason": "موجود في seen وincoming فقط؛ لا توجد هوية نشطة في feed أو editorial الحاليين."
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "title": "1Password تعرض تفويض دخول للوكلاء دون إظهار كلمات المرور",
+      "state": "seen_only",
+      "inFeed": false,
+      "inEditorial": false,
+      "reason": "موجود في seen وincoming فقط؛ لا توجد هوية نشطة في feed أو editorial الحاليين."
+    },
+    {
+      "id": "87d27a9f8a0972f507",
+      "url": "https://www.theverge.com/tech/1023021/binance-hack-billions-biggest-crypto-heist",
+      "title": "Binance تحقق في حادث أمني قدّر أثره بنحو 6.3 مليارات دولار",
+      "state": "seen_only",
+      "inFeed": false,
+      "inEditorial": false,
+      "reason": "موجود في seen وincoming فقط؛ لم يعد الرابط ضمن التغذية الحالية ولا يجوز إعادة توليد هويته من العنوان."
+    },
+    {
+      "id": "65eeab64fed21e0b54",
+      "url": "https://www.engadget.com/2301934/general-motors-220-million-settle-multi-state-data-privacy-lawsuit/",
+      "title": "تسوية بقيمة 220 مليون دولار تلزم GM بالحصول على موافقة واضحة قبل مشاركة بيانات القيادة",
+      "state": "seen_only",
+      "inFeed": false,
+      "inEditorial": false,
+      "reason": "موجود في seen وincoming فقط؛ لم يعد الرابط ضمن التغذية الحالية ولا توجد هوية نشطة للاستيراد."
+    }
+  ],
+  "identityCollision": {
+    "historicalId": "7a99eca9b2ce14d9f5",
+    "currentFeedId": "e0cbbf211a55e79f34",
+    "url": "https://github.com/rasbt/LLMs-from-scratch",
+    "decision": "الرابط نفسه تحت هويتين تاريخية وحالية؛ الاحتفاظ بالهويتين وعدم دمجهما أو توليد ID من العنوان."
+  },
+  "specialChecks": {
+    "NVIDIA_OpenShell": "seen_only; no feed/editorial match",
+    "Canva_Craft": "seen_only; no feed/editorial match",
+    "OnePassword_agent_sign_in": "seen_only; no feed/editorial match"
+  },
+  "newCycle": {
+    "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-01-1158.json",
+    "newsPrepared": 6,
+    "projectsResearched": 1,
+    "newPublicProjectCards": 0,
+    "basisCounts": {
+      "article": 5,
+      "readme": 1
+    },
+    "ids": [
+      "1c640f88e053cb517a",
+      "c0588a787514ce7470",
+      "4ea2bbfbe1de5d96de",
+      "953a21482a7a6994f9",
+      "6725a773cbcfd0fd91",
+      "d004c37dd3b3195c7a"
+    ],
+    "structuralValidation": "6/6 passed; all six IDs and URLs match current feed exactly and are absent from existing editorial."
+  },
+  "mergeSimulation": {
+    "existingRecords": 621,
+    "newRecords": 6,
+    "updatedExistingRecords": 0,
+    "preservedExistingRecords": 621,
+    "resultingRecords": 627,
+    "activeEditorialExactAfter": 300,
+    "activeNewsAfter": 201,
+    "activeProjectsAfter": 99,
+    "method": "محاكاة merge_documents: نسخ items القديمة ثم إضافة المعرفات الستة بعد مطابقة ID/URL مع feed؛ لم يُستبدل editorial.json بسجلات incoming."
+  },
+  "library": {
+    "catalogEntries": 42,
+    "archived": 2,
+    "nonArchived": 40,
+    "inCurrentFeed": 6,
+    "notInFeed": 36,
+    "licenseNeedsUpstreamVerification": 7,
+    "previousEightReviewed": 8,
+    "memdoorDossier": "editorial/library/memdoor-dossier-2026-11-01-1158.json",
+    "catalogDiscrepancy": "note says 38 while entries and statusSummary say 42; separate reconciliation report created."
+  },
+  "sourceReview": {
+    "readFullOriginals": [
+      "Parameter security report",
+      "Cisco Talos VOLTA report",
+      "OpenAI Help Center usage limits",
+      "KNPR/NPR report, TRM analysis and Reuters Nov 1 follow-up",
+      "ACM CHI 2025 paper PDF",
+      "Memdoor README, Getting Started, LICENSE, SECURITY, sandbox architecture, providers/workflows docs and team-solve README"
+    ],
+    "deferred": [
+      "X-only claim about Anthropic: insufficient independent corroboration.",
+      "SRE deskilling essay: original article is from February 2026, not a new event.",
+      "French data-traffic tax claim: no matching official parliamentary text verified in this pass.",
+      "WSJ funding report: full article inaccessible; not promoted from metadata to article.",
+      "Watermarking opinion: older commentary, not prioritized as fresh news.",
+      "Other inaccessible or weakly sourced items were left unenriched rather than given invented details."
+    ]
+  },
+  "execution": {
+    "localCommandsNotRun": [
+      "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-11-01-1158.json",
+      "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-11-01-1158.json",
+      "python -m unittest discover -s tests -v"
+    ],
+    "officialCi": "pending on PR",
+    "structuralEquivalent": "passed for 586 incoming rows and 6 new records; final merged document preserves all 621 existing entries."
+  },
+  "publication": {
+    "latestSuccessfulRun": 41278942396,
+    "artifactId": 13071974069,
+    "artifactEditorialCount": 621,
+    "artifactFeedItems": 800,
+    "artifactStatus": "partial",
+    "statusLastAttempt": "2026-11-01T05:58:42Z",
+    "sourceCount": 26,
+    "sourceStates": {
+      "ok": 23,
+      "empty": 2,
+      "error": 1
+    },
+    "nonOkSources": [
+      {
+        "name": "أبحاث الذكاء الاصطناعي",
+        "state": "empty",
+        "items": 0
+      },
+      {
+        "name": "أبحاث تعلّم الآلة",
+        "state": "empty",
+        "items": 0
+      },
+      {
+        "name": "البوابة العربية للأخبار التقنية",
+        "state": "error",
+        "items": 0,
+        "error": "HTTP 403"
+      }
+    ],
+    "pagesDirectFetch": "DisabledError",
+    "detailPageBrowserOpen": "DisabledError",
+    "artifactDownloadedAndParsed": true,
+    "newContentPublished": false
+  },
+  "workflowSafety": {
+    "checkWorkflow": "pull_request only; runs unittest, editorial validate and JavaScript syntax checks; no write/deploy permission.",
+    "publishWorkflow": "push to main triggers update-and-deploy; it runs update_feed.py then stages feed.json, seen.json and status.json before Pages deploy.",
+    "decision": "لم أدمج PR في هذه الدورة؛ الدمج سيطلق workflow الموجود الذي قد يغيّر feed.json وseen.json تلقائيًا، خلاف القيد الصريح. لم أعدّل workflow أو أستخدم خدمة نشر بديلة."
+  },
+  "unchangedFiles": [
+    "site/data/feed.json",
+    "site/data/seen.json",
+    "site/data/status.json",
+    "site/app.js",
+    "site/ideas.js",
+    "site/styles.css",
+    ".github/workflows/check.yml",
+    ".github/workflows/update-and-deploy.yml"
+  ]
+}

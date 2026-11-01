@@ -1,0 +1,31 @@
+{
+  "runAt": "2026-11-01T11:58:00+03:00",
+  "catalogPath": "editorial/library/catalog-2026-11-01-0542.json",
+  "entries": 42,
+  "statusSummary": {
+    "total": 42,
+    "archived": 2,
+    "nonArchived": 40,
+    "inCurrentFeed": 6,
+    "notInFeed": 36,
+    "licenseNeedsUpstreamVerification": 7
+  },
+  "computed": {
+    "entries": 42,
+    "archived": 2,
+    "nonArchived": 40,
+    "inCurrentFeed": 6,
+    "notInFeed": 36,
+    "licenseNeedsUpstreamVerification": 7,
+    "measuredAtMissing": 0,
+    "classification": {
+      "established_non_archived": 37,
+      "archived_with_modern_alternatives": 2,
+      "experimental_new_repo": 2,
+      "emerging_alpha_research_codebase": 1
+    }
+  },
+  "discrepancy": "حقل note داخل الكتالوج يقول 38 known projects بينما entries وstatusSummary يثبتان 42. الأرقام البنيوية متسقة عند 42؛ النص الوصفي فقط قديم.",
+  "decision": "لم أعد ترتيب أي مشروع أو أغيّر رابطًا أو أحذف سجلًا. ملف Memdoor dossier مرفق منفصلًا بوصفه بحثًا مرتبطًا بخبر في feed، ولا يُضاف إلى عدّاد بطاقات المشاريع العامة في هذه المراجعة.",
+  "licenseFollowUp": "سبعة سجلات ما زالت تحتاج تحققًا من ملف الترخيص الأصلي؛ لا أستنتج الترخيص من اسم المستودع أو وصف GitHub وحده."
+}
