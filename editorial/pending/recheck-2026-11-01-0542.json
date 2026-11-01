@@ -1,0 +1,318 @@
+{
+  "runAt": "2026-11-01T05:42:38+03:00",
+  "repository": "https://github.com/lm7md-ai/.-",
+  "main": {
+    "sha": "18d5a15428d95566d9323d33fae3f9f5d870c229",
+    "feedGeneratedAt": "2026-11-01T00:06:41+00:00",
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialCount": 596
+  },
+  "pullRequests": {
+    "pr1": "merged",
+    "pr2": "merged",
+    "pr76": {
+      "state": "open",
+      "headBefore": "f5d76128d15c1ea0563317b96de4ee102f84816d",
+      "baseBefore": "f784b3113683a03ff2e3afab6722dd0be6c4cd12",
+      "rebasedOntoMain": "18d5a15428d95566d9323d33fae3f9f5d870c229"
+    }
+  },
+  "incomingAudit": {
+    "files": 58,
+    "rows": 558,
+    "uniqueIdUrlPairs": 554,
+    "duplicateRows": 4,
+    "exactInEditorialRows": 555,
+    "exactInCurrentFeedAndEditorialRows": 246,
+    "historicalEditorialOutsideCurrentFeedRows": 309,
+    "seenOnlyRows": 3,
+    "confirmedExpired": 0,
+    "confirmedSameIdDifferentUrl": 0,
+    "crossIdSameUrlCollisions": 1,
+    "classificationNote": "Row counts include repeated rows. Absence from current feed is not proof of expiry. The 3 seen-only records remain pending re-entry into the feed; no title-derived ID was created.",
+    "specialRecords": [
+      {
+        "file": "2026-10-24-0542",
+        "id": "940ec4695c1e241c2f",
+        "url": "https://github.com/NVIDIA/OpenShell",
+        "title": "OpenShell من NVIDIA: بيئات معزولة للوكلاء بصلاحيات قابلة للمراجعة",
+        "seen": true,
+        "inFeed": false,
+        "inEditorial": false
+      },
+      {
+        "file": "2026-10-24-1143",
+        "id": "317abcdd1b20728a7e",
+        "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+        "title": "Canva تعلن Craft لتوليد صور يمكن تحويلها إلى تصاميم متعددة الطبقات",
+        "seen": true,
+        "inFeed": false,
+        "inEditorial": false
+      },
+      {
+        "file": "2026-10-24-1143",
+        "id": "662e68277c6361dd4b",
+        "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+        "title": "1Password تعرض تفويض دخول للوكلاء دون إظهار كلمات المرور",
+        "seen": true,
+        "inFeed": false,
+        "inEditorial": false
+      }
+    ],
+    "crossIdSameUrlCollision": {
+      "historicalId": "7a99eca9b2ce14d9f5",
+      "currentFeedId": "e0cbbf211a55e79f34",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "decision": "retain both identities; no automatic replacement"
+    }
+  },
+  "priorPr76Reconciliation": {
+    "incomingRows": 16,
+    "currentFeedExactRows": 14,
+    "newActiveNews": 10,
+    "updatedExistingNews": 1,
+    "newProjects": 3,
+    "inactiveNewEditorialRemoved": [
+      {
+        "id": "87d27a9f8a0972f507",
+        "url": "https://www.theverge.com/tech/1023021/binance-hack-billions-biggest-crypto-heist",
+        "title": "Binance تحقق في حادث أمني قدّر أثره بنحو 6.3 مليارات دولار",
+        "reason": "new to the PR branch but no longer in the current feed"
+      }
+    ],
+    "pendingNotImported": [
+      {
+        "id": "65eeab64fed21e0b54",
+        "url": "https://www.engadget.com/2301934/general-motors-220-million-settle-multi-state-data-privacy-lawsuit/",
+        "reason": "not present in current feed"
+      }
+    ],
+    "existingFieldsLost": 0,
+    "updatedExistingIds": [
+      "ec733f799e1aaee3d1"
+    ]
+  },
+  "currentCycle": {
+    "news": 11,
+    "projects": 1,
+    "basisCounts": {
+      "article": 6,
+      "metadata": 5,
+      "readme": 1
+    },
+    "ids": [
+      "574dbaf7fc8731e405",
+      "cbcd682a693800b605",
+      "b57691e750415c605a",
+      "c361ea6e6eba35fb9e",
+      "003075a6de38fa1cd4",
+      "0a6bb401f7946833b1",
+      "0b73660e31921f56d4",
+      "362d7951270f22867c",
+      "3c3bf5def99117d45a",
+      "e0560c89dba7252fc3",
+      "e69fe7979e96d896fd",
+      "a9abd087c6f01b95b0"
+    ],
+    "newIncomingFile": "editorial/incoming/nabdh-editorial-2026-11-01-0542.json"
+  },
+  "finalEditorial": {
+    "beforePrReconcile": 610,
+    "afterRemovingInactivePrOnlyRecord": 609,
+    "addedThisCycle": 12,
+    "finalCount": 621,
+    "mainRecordsPreserved": 596,
+    "activeNews": 199,
+    "activeProjects": 99,
+    "activeTotal": 298,
+    "mainActiveNews": 178,
+    "mainActiveProjects": 95,
+    "priorPrNewActiveNews": 10,
+    "priorPrNewActiveProjects": 3,
+    "updatedExistingRecords": 1
+  },
+  "projectReview": {
+    "previousEightReview": "editorial/library/previous-eight-review-2026-10-31-1841.json",
+    "reviewedProjects": 8,
+    "publicCardsInPreviousReview": 1,
+    "researchOnlyInPreviousReview": 7,
+    "newPublicProject": "getify/You-Dont-Know-JS",
+    "feedId": "a9abd087c6f01b95b0",
+    "license": "CC BY-NC-ND 4.0 confirmed in README and LICENSE.txt; GitHub API NOASSERTION",
+    "metrics": {
+      "stars": 184841,
+      "forks": 33358,
+      "openIssues": 2,
+      "archived": false,
+      "licenseSpdx": "NOASSERTION",
+      "pushedAt": "2026-10-31T16:14:40Z",
+      "updatedAt": "2026-11-01T01:57:44Z",
+      "defaultBranch": "2nd-ed",
+      "language": null,
+      "measuredAt": "2026-11-01T05:42:38+03:00"
+    },
+    "executionStatus": "not_run",
+    "researchOnlyAdded": "china-qijizhifeng/Web-Anything",
+    "researchOnlyDossier": "editorial/library/webanything-dossier-2026-11-01-0542.json",
+    "feedNewsId": "0b73660e31921f56d4",
+    "feedProjectId": null,
+    "publicProjectCard": false,
+    "webAnythingLicense": "MIT for authored code only; third-party source-site content and media remain separately licensed",
+    "webAnythingMetrics": {
+      "stars": 3,
+      "forks": 1,
+      "openIssues": 9,
+      "archived": false,
+      "pushedAt": "2026-10-30T04:28:28Z",
+      "updatedAt": "2026-10-31T04:54:38Z",
+      "measuredAt": "2026-11-01T05:42:38+03:00"
+    },
+    "webAnythingExecutionStatus": "not_run"
+  },
+  "library": {
+    "previousCount": 41,
+    "newCount": 42,
+    "archived": 2,
+    "nonArchived": 40,
+    "inCurrentFeed": 6,
+    "notInFeed": 36,
+    "licenseNeedsUpstreamVerification": 7,
+    "appendedPriority": 42
+  },
+  "topThreeProposals": [
+    {
+      "title": "Benchmark عربي لمواقع الوثائق العامة",
+      "problem": "تحتاج تقييمات وكلاء الويب إلى مهام عربية قابلة للتكرار بدل الاعتماد على مواقع حية متغيرة.",
+      "approach": "بناء مواقع وثائق اصطناعية عربية بترخيص واضح، ومهام ثابتة، ومدقق مستقل.",
+      "stack": "Python وPlaywright وFlask وJSONL.",
+      "steps": [
+        "حدد مهام بحث وتنقل لا تتطلب تسجيل دخول.",
+        "أنشئ صفحات عربية اصطناعية وروابط ثابتة.",
+        "عرّف الحالات المتوقعة ومصادر الإجابة.",
+        "أضف reset ومدققًا يقرأ حالة البيئة مباشرة.",
+        "انشر manifest ونتائج قابلة لإعادة الإنتاج."
+      ],
+      "metric": "نجاح المهام، ودقة الوصول إلى الصفحة الصحيحة، وقابلية إعادة التكرار.",
+      "difficulty": "متوسطة (تقدير؛ 3–4 أسابيع).",
+      "risks": "حقوق المحتوى والتحيز اللغوي؛ استخدم نصوصًا أصلية وبيانات اصطناعية فقط.",
+      "sources": [
+        {
+          "title": "WebAnything paper",
+          "url": "https://arxiv.org/abs/2610.37786"
+        },
+        {
+          "title": "WebAnything architecture",
+          "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/docs/architecture.md"
+        }
+      ]
+    },
+    {
+      "title": "ميزانية تكلفة وزمن لكل تشغيل لوكلاء الويب",
+      "problem": "استخدام API في Builder وVerifier يجعل تكلفة المهمة ومحاولات الإصلاح غير واضحة.",
+      "approach": "تسجيل usage والمدة والمحاولات لكل مرحلة وإضافة سقف اختياري للميزانية.",
+      "stack": "Python وSQLite وJSONL وواجهات usage للمزود.",
+      "steps": [
+        "حدد حقول token usage والمدة لكل مرحلة.",
+        "سجل التكلفة الفعلية عندما يوفر المزود بيانات موثوقة.",
+        "أضف سقفًا وتحذيرًا قبل الإيقاف.",
+        "قارن تكلفة JIT وFull على مواقع مصرح بها.",
+        "وثق الحالات التي لا يعرض فيها المزود بيانات فوترة."
+      ],
+      "metric": "التكلفة لكل مهمة مقبولة، زمن الإنجاز، وعدد تجاوزات الميزانية.",
+      "difficulty": "متوسطة (تقدير؛ 2–4 أسابيع).",
+      "risks": "اختلاف المزودين في بيانات الاستخدام؛ لا تخمّن التكلفة عند غياب بيانات موثوقة.",
+      "sources": [
+        {
+          "title": "WebAnything README",
+          "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/README.md"
+        },
+        {
+          "title": "WebAnything pyproject",
+          "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "title": "مختبر أمثلة JavaScript أصلية مع اختبارات",
+      "problem": "القراءة وحدها لا تكشف دائمًا الفروق بين النطاقات والوعود والأنواع وسلوك وقت التشغيل.",
+      "approach": "بناء أمثلة أصلية واختبارات مستقلة تقارن السلوك بين Node.js ومتصفح حديث.",
+      "stack": "Node.js وVitest وPlaywright وJavaScript.",
+      "steps": [
+        "اختر مفهومًا واحدًا وأنشئ مثالًا أصليًا.",
+        "اكتب اختبارًا يثبت النتيجة دون نسخ أمثلة الكتاب.",
+        "شغّل الاختبارات في Node.js ومتصفح حديث.",
+        "سجل اختلافات البيئة والإصدارات.",
+        "انشر تقريرًا يربط النتائج بتوثيق MDN."
+      ],
+      "metric": "نسبة نجاح الاختبارات واتساق النتائج بين البيئات.",
+      "difficulty": "متوسطة (تقدير؛ 2–3 أسابيع).",
+      "risks": "اختلاف إصدارات المحركات؛ يجب توثيق البيئة وعدم إعادة نشر محتوى الكتاب.",
+      "sources": [
+        {
+          "title": "YDKJS README",
+          "url": "https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/README.md"
+        },
+        {
+          "title": "Node.js docs",
+          "url": "https://nodejs.org/docs/latest/api/"
+        }
+      ]
+    }
+  ],
+  "sourcesAndLimitations": {
+    "fullOriginalsRead": [
+      "Google Project Suncatcher",
+      "xAI court order and TechCrunch report",
+      "OpenAI funding TechCrunch report",
+      "SDAIA synthetic data press release",
+      "Apple CEO WIRED interview",
+      "Bolt Graphics Engadget report"
+    ],
+    "metadataOnly": [
+      "OpenAI fair-use page (selected portions only)",
+      "Verification Learning Theory preprint abstract",
+      "WebAnything preprint abstract",
+      "BBC cost-fears report (original page inaccessible)",
+      "SDAIA Vibe Coding recap (secondary recap; official PDF not fully reviewed)"
+    ],
+    "exclusions": [
+      "Security incident articles with operational exploit/malware detail were not selected for this teen-facing content batch.",
+      "The SRE deskilling essay was excluded because its original publication date is older than the feed discovery date."
+    ],
+    "projectDossiersRead": [
+      "You-Dont-Know-JS README, Get Started, LICENSE.txt and CONTRIBUTING.md",
+      "WebAnything README, pyproject.toml, LICENSE, architecture, limitations, getting-started, simple-interface, reproducibility, evidence-contract and release-status"
+    ],
+    "webAnythingEvidenceBoundary": "README says 244 historical site artifacts are a manifest; source trees and third-party media are external and not bundled. Reproducibility guide says 113 sites received deeper review and 131 remained at basic observation. No code execution or tests were performed for this dossier."
+  },
+  "execution": {
+    "localCommandsNotRun": [
+      "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-11-01-0542.json",
+      "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-11-01-0542.json",
+      "python -m unittest discover -s tests -v"
+    ],
+    "structuralEquivalent": "passed for all 12 new records; exact ID/URL checked against current main feed; final document checked for HTTPS URLs, required text, basis, timezone, sources, nextSteps, proposal steps, and preservation of all 596 main records.",
+    "officialCi": "pending after PR branch update",
+    "noCodeOrWorkflowChanges": true,
+    "forbiddenFilesUnchanged": [
+      "site/data/feed.json",
+      "site/data/seen.json",
+      "site/data/status.json"
+    ]
+  },
+  "publication": {
+    "latestSuccessfulMainRun": 41255278238,
+    "artifactId": 13063110402,
+    "artifactCreatedAt": "2026-11-01T00:07:05Z",
+    "artifactEditorialCount": 596,
+    "artifactFeedItems": 800,
+    "artifactNews": 700,
+    "artifactProjects": 100,
+    "artifactVerifiedByDownload": true,
+    "pagesDirectFetch": "DisabledError",
+    "newEditorialPublished": false
+  },
+  "note": "This report supersedes the earlier 2026-11-01 02:43 report's incoming classification and PR #76 active counts. It preserves all main editorial records and removes only the inactive Binance row introduced by the old PR branch; the GM row remains pending. WebAnything is stored as research-only priority 42 because its feed record is a news item about the paper, not a project card; no public project card was created. Its MIT license applies to authored code, not third-party site content."
+}

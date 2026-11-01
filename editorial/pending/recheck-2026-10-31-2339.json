@@ -1,0 +1,175 @@
+{
+  "version": 1,
+  "auditedAt": "2026-10-31T23:39:44+03:00",
+  "baseMainSha": "f784b3113683a03ff2e3afab6722dd0be6c4cd12",
+  "currentMain": {
+    "feedGeneratedAt": "2026-10-31T19:16:40+00:00",
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "newItems": 62,
+    "editorialRecords": 596,
+    "exactActiveEditorial": 278,
+    "outsideCurrentFeed": 318,
+    "statusState": "ok",
+    "statusLastSuccessfulAt": "2026-10-31T19:16:40+00:00"
+  },
+  "historicalIncoming": {
+    "files": 58,
+    "rows": 558,
+    "uniqueIdUrlPairs": 554,
+    "duplicateRows": 4,
+    "exactIdUrlInCurrentFeedAndEditorial": 251,
+    "exactIdUrlInEditorialOutsideCurrentFeed": 304,
+    "seenOnlyNotInFeedOrEditorial": 3,
+    "sameUrlDifferentId": 1,
+    "identityConflict": {
+      "incomingId": "7a99eca9b2ce14d9f5",
+      "currentFeedId": "e0cbbf211a55e79f34",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "decision": "preserve both IDs; do not remap by title or URL"
+    },
+    "confirmedExpired": 0,
+    "eligibleBacklogImports": 0,
+    "structuralEquivalentErrors": 0,
+    "classificationNote": "251 rows are exact and already imported against the latest feed; 304 rows are already imported historically but outside the latest feed; 3 IDs remain seen-only. Four duplicate rows do not create new identities."
+  },
+  "specialRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "title": "NVIDIA OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "seenIdPresent": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "libraryFile": "editorial/library/nvidia-openshell-dossier-2026-10-30-1146.json",
+      "decision": "research-only; not a public feed card"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "title": "Canva Craft",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "seenIdPresent": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "decision": "hold; no exact active ID/URL"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "title": "1Password agent sign-in",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "seenIdPresent": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "decision": "hold; no exact active ID/URL"
+    }
+  ],
+  "currentCycle": {
+    "incomingFiles": 3,
+    "rows": 16,
+    "structuralErrors": 0,
+    "activeExactRows": 15,
+    "heldRows": 1,
+    "newNewsActive": 11,
+    "updatedNews": 1,
+    "newProjects": 3,
+    "newEditorialRecords": 14,
+    "updatedEditorialRecords": 1,
+    "held": {
+      "id": "65eeab64fed21e0b54",
+      "url": "https://www.engadget.com/2301934/general-motors-220-million-settle-multi-state-data-privacy-lawsuit/",
+      "titleAr": "تسوية بقيمة 220 مليون دولار تلزم GM بالحصول على موافقة واضحة قبل مشاركة بيانات القيادة",
+      "reason": "id_not_in_latest_feed"
+    },
+    "oldEditorialRecordsPreserved": 596,
+    "finalEditorialRecords": 610,
+    "finalExactActiveEditorial": 292,
+    "removedOldRecords": 0,
+    "changedOldRecords": 1,
+    "removedFieldsFromUpdatedRecord": 0,
+    "acceptedIds": [
+      "8db759a7708af25195",
+      "c8804a79ad56c280f7",
+      "abc5566bda42b5a9b5",
+      "7a24eca35f77e86d87",
+      "1abfdb6dc9802b6f4d",
+      "05a1378ae455d54de0",
+      "8ada096505f97960e7",
+      "037154e824aaff256e",
+      "ec733f799e1aaee3d1",
+      "b4484a96aa90c3f23e",
+      "fb7d8c0c8a030338b7",
+      "87d27a9f8a0972f507",
+      "d38e7d27f17d2a9394",
+      "819cf1c9b153cbd6b2",
+      "e4dd7c24fff16ee320"
+    ],
+    "updatedIds": [
+      "ec733f799e1aaee3d1"
+    ],
+    "heldIds": [
+      "65eeab64fed21e0b54"
+    ],
+    "sourceReadQuality": {
+      "article": 11,
+      "metadata": 2,
+      "readmeProjects": 3,
+      "projectLicenseFilesReviewed": 3,
+      "projectExecution": "not run",
+      "testEvidenceClaimed": false
+    }
+  },
+  "researchLibrary": {
+    "catalogFile": "editorial/library/catalog-2026-10-31-1811.json",
+    "projects": 40,
+    "activeNotArchived": 38,
+    "archived": 2,
+    "licenseNeedsManualUpstreamVerification": 7,
+    "previousEightReviewed": 8,
+    "newPublicProjectCards": 3,
+    "newResearchOnlyEntries": [
+      "googleapis/python-genai",
+      "microsoft/markitdown",
+      "langchain-ai/langgraph"
+    ],
+    "publicCompleteProposals": 69,
+    "langgraphResearchOnlyProposals": 10,
+    "previousEightResearchProposals": 14,
+    "bestThreeSuggestions": [
+      "مجموعة تقييم عربية للاسترجاع والإحالات",
+      "نسخ احتياطي قابل للتحقق لنسخة Lite",
+      "واجهة موحدة لمزودي TTS مع وضع محلي احتياطي"
+    ]
+  },
+  "validation": {
+    "method": "structural-equivalent to scripts/editorial.py validate + merge_documents; exact active ID/URL check applied before merge",
+    "incomingFilesValidated": 3,
+    "incomingRowsValidated": 16,
+    "acceptedActiveRows": 15,
+    "heldInactiveRows": 1,
+    "mergedEditorialValidationErrors": 0,
+    "oldRecordsRemoved": 0,
+    "oldFieldsRemovedFromUpdatedRecord": 0,
+    "localCommandsExecuted": false,
+    "unexecuted": [
+      "python scripts/editorial.py validate <incoming>",
+      "python scripts/editorial.py import <incoming>",
+      "python -m unittest discover -s tests -v"
+    ],
+    "officialCiExpected": "PR validation workflow will run after branch update; do not claim until completed"
+  },
+  "deployment": {
+    "latestMainRun": 41233431211,
+    "conclusion": "success",
+    "artifactId": 13053999963,
+    "artifactCreatedAt": "2026-10-31T19:17:02Z",
+    "artifactFeedItems": 800,
+    "artifactEditorialRecords": 596,
+    "artifactStatus": "ok",
+    "artifactGeneratedAt": "2026-10-31T19:16:40+00:00",
+    "merged": false,
+    "published": false,
+    "liveBrowserCheck": "DisabledError",
+    "mergeGuard": "Do not merge while the only push-to-main Pages workflow runs scripts/update_feed.py and commits feed.json, seen.json, status.json; this conflicts with the no-touch constraint."
+  }
+}

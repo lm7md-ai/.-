@@ -1,0 +1,251 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-01T02:43:07+03:00",
+  "baseMainSha": "f784b3113683a03ff2e3afab6722dd0be6c4cd12",
+  "currentMain": {
+    "feedGeneratedAt": "2026-10-31T19:16:40+00:00",
+    "feedItems": 800,
+    "feedNews": 700,
+    "feedProjects": 100,
+    "editorialEntries": 596,
+    "exactActiveEditorial": {
+      "total": 278,
+      "news": 183,
+      "projects": 95
+    },
+    "status": "ok",
+    "lastSuccessfulAt": "2026-10-31T19:16:40+00:00"
+  },
+  "incomingAudit": {
+    "files": 58,
+    "rows": 558,
+    "uniqueIdUrlPairs": 554,
+    "duplicateRows": 4,
+    "rowClassificationCountsIncludingDuplicateOccurrences": {
+      "exactCurrentFeedAndEditorial": 251,
+      "exactHistoricalEditorialOutsideFeed": 304,
+      "seenOnlyNotInFeedOrEditorial": 3
+    },
+    "exactFeedNotImported": 0,
+    "idUrlMismatches": 0,
+    "notInFeedEditorialOrSeen": 0,
+    "confirmedExpired": 0,
+    "crossIdSameUrlCollision": {
+      "count": 1,
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "historicalEditorialId": "7a99eca9b2ce14d9f5",
+      "currentFeedAndEditorialId": "e0cbbf211a55e79f34",
+      "decision": "Keep both original identities; do not merge or derive an ID from the title."
+    },
+    "note": "Classification counts are row occurrences and include duplicate occurrences; the four duplicate rows and the one cross-ID/same-URL collision are separately flagged."
+  },
+  "structuralValidation": {
+    "filesChecked": 58,
+    "filesPassed": 58,
+    "rowsChecked": 558,
+    "errors": 0,
+    "method": "Structural equivalent of scripts/editorial.py validate applied to each incoming JSON file: version/items, HTTPS URLs, required Arabic fields, 1–20 HTTPS sources, timezone-aware reviewedAt, basis enum, optional fields, nextSteps and proposal schemas.",
+    "officialPerFileValidatorExecuted": false,
+    "commandsNotExecutedLocally": [
+      "python scripts/editorial.py validate <each editorial/incoming file>",
+      "python scripts/editorial.py import <approved incoming file>",
+      "python -m unittest discover -s tests -v"
+    ],
+    "reason": "Local checkout/command execution was unavailable because GitHub DNS resolution failed in the execution container. The PR validation workflow did run the official unit tests and scripts/editorial.py validate against the final editorial.json."
+  },
+  "specialRecords": [
+    {
+      "label": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "inSeen": true,
+      "inFeed": false,
+      "inEditorial": false,
+      "researchDossierPresent": true,
+      "decision": "Research-only; wait for exact same ID and URL to reappear in feed."
+    },
+    {
+      "label": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "inSeen": true,
+      "inFeed": false,
+      "inEditorial": false,
+      "researchDossierPresent": false,
+      "decision": "Seen-only; do not create a replacement identity."
+    },
+    {
+      "label": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "inSeen": true,
+      "inFeed": false,
+      "inEditorial": false,
+      "researchDossierPresent": false,
+      "decision": "Seen-only; do not create a replacement identity."
+    }
+  ],
+  "pr76": {
+    "number": 76,
+    "branch": "nabdh/editorial-2026-10-31-0247",
+    "state": "open",
+    "mergeable": true,
+    "baseSha": "f784b3113683a03ff2e3afab6722dd0be6c4cd12",
+    "headBeforeThisReport": "83e2fbcccf12484ff48109ebdf239b61716c3522",
+    "incomingFiles": 3,
+    "incomingRecords": 16,
+    "exactCurrentFeedMatches": 15,
+    "heldNonmatchingRecords": 1,
+    "heldRecord": {
+      "id": "65eeab64fed21e0b54",
+      "url": "https://www.engadget.com/2301934/general-motors-220-million-settle-multi-state-data-privacy-lawsuit/",
+      "reason": "ID is absent from the current feed; keep in pending report, do not import or generate a new ID."
+    },
+    "editorialBefore": 596,
+    "editorialAfter": 610,
+    "newIds": 14,
+    "updatedRecords": 1,
+    "deletedOldRecords": 0,
+    "newNews": 11,
+    "updatedNews": 1,
+    "newProjects": 3,
+    "exactActiveNews": 12,
+    "exactActiveProjects": 3,
+    "activeEditorialAfter": {
+      "total": 292,
+      "news": 194,
+      "projects": 98
+    },
+    "newsBasisCounts": {
+      "article": 10,
+      "metadata": 2
+    },
+    "projectBasisCounts": {
+      "readme": 3
+    }
+  },
+  "projects": {
+    "publicCards": [
+      {
+        "id": "b4484a96aa90c3f23e",
+        "name": "WeKnora",
+        "improvements": 3,
+        "spinoffs": 2,
+        "religious": 1
+      },
+      {
+        "id": "fb7d8c0c8a030338b7",
+        "name": "edge-tts",
+        "improvements": 2,
+        "spinoffs": 1,
+        "religious": 0
+      },
+      {
+        "id": "e4dd7c24fff16ee320",
+        "name": "Web-Dev-For-Beginners",
+        "improvements": 3,
+        "spinoffs": 2,
+        "religious": 0
+      }
+    ],
+    "proposalTotals": {
+      "improvements": 8,
+      "spinoffs": 5,
+      "religious": 1,
+      "completeProposals": 14,
+      "incompleteProposals": 0
+    },
+    "researchCatalog": {
+      "total": 40,
+      "nonArchived": 38,
+      "archived": 2,
+      "inCurrentFeed": 5,
+      "researchOnly": 35,
+      "licenseNeedsUpstreamVerification": 7
+    },
+    "previousEight": {
+      "reviewed": 8,
+      "publicCards": 1,
+      "researchOnly": 7,
+      "executed": 0
+    }
+  },
+  "sourceReview": {
+    "newsItems": 12,
+    "newNews": 11,
+    "updatedNews": 1,
+    "limitations": [
+      "Two arXiv entries remain basis=metadata; the abstracts/metadata do not justify claiming a full-paper review.",
+      "The Verge pages were inaccessible to direct page retrieval in this run; the machine-readable IETF draft and alternate reporting were checked where available.",
+      "The AP article page was inaccessible; no claim is made that it was directly read in this run."
+    ],
+    "sourcesReadOrChecked": [
+      "https://www.tomshardware.com/tech-industry/big-tech/cisco-gives-27-year-old-engineer-unlimited-ai-tokens-to-rewrite-98-percent-of-the-companys-legacy-code-in-24-months-president-plucks-former-startup-founder-telling-him-to-go-nuts",
+      "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job/",
+      "https://president.dartmouth.edu/sites/president/files/2026-10/Advisory%20Committee%20Report%20to%20President%202026-10-27.pdf",
+      "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/",
+      "https://ir.doordash.com/news/news-details/2026/DoorDash-Releases-Third-Quarter-2026-Financial-Results/default.aspx",
+      "https://www.fool.com/earnings/call-transcripts/2026/10/29/doordash-dash-q3-2026-earnings-call-transcript/",
+      "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
+      "https://wikimediafoundation.org/news/2026/10/30/wikimedia-foundation-amicus-brief-new-york-times-v-open-ai-case/",
+      "https://huggingface.co/blog/nvidia/nemotron-halloween",
+      "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+      "https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/",
+      "https://arxiv.org/abs/2610.33298"
+    ],
+    "notes": "Claims about forecasts, corporate targets and AI-agent order counts remain attributed to the reporting source or company executive; the IETF document is an individual Internet-Draft, not an endorsed standard."
+  },
+  "projectSources": {
+    "WeKnora": [
+      "https://github.com/Tencent/WeKnora",
+      "https://github.com/Tencent/WeKnora/blob/main/LICENSE",
+      "https://github.com/Tencent/WeKnora/blob/main/website-docs/01-getting-started/02-installation.md",
+      "https://github.com/Tencent/WeKnora/blob/main/website-docs/01-getting-started/03-quickstart.md",
+      "https://github.com/Tencent/WeKnora/blob/main/docs/LITE.md"
+    ],
+    "edgeTts": [
+      "https://github.com/rany2/edge-tts",
+      "https://github.com/rany2/edge-tts/blob/master/LICENSE",
+      "https://github.com/rany2/edge-tts/blob/master/setup.cfg"
+    ],
+    "webDevForBeginners": [
+      "https://github.com/microsoft/Web-Dev-For-Beginners",
+      "https://github.com/microsoft/Web-Dev-For-Beginners/blob/main/LICENSE",
+      "https://github.com/microsoft/Web-Dev-For-Beginners/blob/main/README.md"
+    ]
+  },
+  "topThreeSuggestions": [
+    "WeKnora: Arabic retrieval/evidence benchmark measuring Recall@5, citation precision and correct abstention.",
+    "WeKnora Lite: backup and restore verification with manifests and SHA-256 checksums.",
+    "edge-tts: provider-neutral TTS adapter with a local Piper fallback and offline-success metric."
+  ],
+  "ci": {
+    "runId": 41240536086,
+    "headSha": "83e2fbcccf12484ff48109ebdf239b61716c3522",
+    "conclusion": "success",
+    "stepsPassed": [
+      "python -m unittest discover -s tests -v",
+      "python scripts/editorial.py validate",
+      "node --check site/app.js",
+      "node --check site/ideas.js"
+    ]
+  },
+  "publication": {
+    "mainWorkflowRunId": 41233431211,
+    "conclusion": "success",
+    "artifactId": 13053999963,
+    "artifactInspected": true,
+    "artifactFeedItems": 800,
+    "artifactEditorialEntries": 596,
+    "artifactStatus": "ok",
+    "artifactLastSuccessfulAt": "2026-10-31T19:16:40+00:00",
+    "directLivePagesFetch": "unavailable: web retrieval DisabledError and container DNS resolution failure",
+    "note": "Artifact proves the static website bundle uploaded by the successful Pages workflow contained 596 editorial entries; it does not prove a direct live-page fetch in this run."
+  },
+  "mergeDecision": {
+    "merged": false,
+    "reason": "The existing workflow triggers on push to main, runs scripts/update_feed.py, then stages and may commit site/data/feed.json, site/data/seen.json and site/data/status.json. Merging this PR could therefore modify feed.json and seen.json, which the user explicitly prohibited.",
+    "noCodeOrDesignOrWorkflowOrPublicationSettingsChanges": true,
+    "noFeedOrSeenOrStatusChangesMade": true
+  }
+}
