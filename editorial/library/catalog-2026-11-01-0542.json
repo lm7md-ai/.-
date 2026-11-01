@@ -2677,12 +2677,16 @@
     }
   ],
   "summary": {
-    "total": 40,
+    "total": 42,
     "archived": 2,
-    "nonArchived": 38,
-    "inCurrentFeed": 5,
-    "notInFeed": 35,
+    "nonArchived": 40,
+    "inCurrentFeed": 6,
+    "notInFeed": 36,
     "licenseNeedsUpstreamVerification": 7,
-    "enrichedInCurrentFeed": 5
+    "enrichedInCurrentFeed": 6
+  },
+  "reconciliation": {
+    "checkedAt": "2026-11-02T00:11:37+03:00",
+    "note": "تمت مطابقة summary مع statusSummary وعدد entries الفعلي (42). لم تتغير أي بطاقة أو مؤشرات؛ أوقات القياس الأصلية محفوظة، و7 تراخيص ما زالت تحتاج تحققًا من المصدر upstream."
   }
 }
