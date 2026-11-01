@@ -1,0 +1,203 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-31T11:41:55+03:00",
+  "baseMainSha": "cd0fc69f854481353f0d7359e21c08749cd6cfab",
+  "mainRefreshCommit": {
+    "sha": "cd0fc69f854481353f0d7359e21c08749cd6cfab",
+    "changedFiles": [
+      "site/data/feed.json",
+      "site/data/seen.json",
+      "site/data/status.json"
+    ],
+    "editorialIncomingUnchanged": true
+  },
+  "publishedArtifact": {
+    "workflowRun": 41173282453,
+    "workflowRunNumber": 111,
+    "artifactId": 13032630036,
+    "artifactDownloadedAndInspected": true,
+    "generatedAt": "2026-10-31T05:36:41+00:00",
+    "feedItems": 800,
+    "feedNews": 700,
+    "feedProjects": 100,
+    "editorialEntries": 596,
+    "exactFeedEditorialMatches": 302,
+    "exactNewsMatches": 205,
+    "exactProjectMatches": 97,
+    "status": "ok"
+  },
+  "historicalIncomingAudit": {
+    "sourceReport": "editorial/pending/recheck-2026-10-31-0247.json",
+    "sourceBaseMainSha": "bc1390f049f82717aa74271238137814ce1d8e9a",
+    "mainIncomingFiles": 58,
+    "mainIncomingRows": 558,
+    "uniqueIdUrlPairs": 554,
+    "duplicateRows": 4,
+    "importedExactRows": 555,
+    "importedUniquePairs": 551,
+    "matchedCurrentFeedNotImported": 0,
+    "urlMatchedUnderDifferentId": 1,
+    "seenOnlyNotInFeedOrEditorial": 3,
+    "confirmedExpired": 0,
+    "needsCorrection": 0,
+    "note": "تحديث main cd0fc69 غيّر feed.json وseen.json وstatus.json فقط ولم يغيّر editorial/incoming؛ لذلك بقي جرد الملفات والصفوف ثابتًا. تصنيف النشاط مقابل التغذية أعيد التحقق منه مباشرةً للدفعتين الجديدتين أدناه، لا لكل الصفوف التاريخية."
+  },
+  "prIncomingBatches": {
+    "files": 2,
+    "rows": 11,
+    "mainPlusPrIncomingFiles": 60,
+    "mainPlusPrIncomingRows": 569,
+    "batches": [
+      {
+        "file": "editorial/incoming/nabdh-editorial-2026-10-31-0247.json",
+        "records": 9,
+        "newNews": 8,
+        "refreshedExistingNews": 1,
+        "exactCurrentFeedIdUrlMatches": 9,
+        "basis": "article"
+      },
+      {
+        "file": "editorial/incoming/nabdh-editorial-2026-10-31-0840.json",
+        "records": 2,
+        "newProjects": 2,
+        "exactCurrentFeedIdUrlMatches": 2,
+        "basis": "readme",
+        "proposalCounts": {
+          "improvements": 5,
+          "spinoffs": 3,
+          "religious": 1,
+          "total": 9
+        }
+      }
+    ],
+    "structuralEquivalentValidation": {
+      "recordsChecked": 11,
+      "exactFeedPairs": 11,
+      "errors": 0
+    },
+    "editorialImportState": {
+      "mainEditorialEntries": 596,
+      "prAddsNewsRecords": 8,
+      "prRefreshesNemotronRecord": true,
+      "prProjectRecordsImported": 0,
+      "remainingEligibleProjectImports": 2
+    }
+  },
+  "specialRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "label": "NVIDIA OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "inSeen": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "researchDossier": "editorial/library/nvidia-openshell-dossier-2026-10-30-1146.json",
+      "status": "research_only_not_published"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "label": "Canva Craft",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "inSeen": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "status": "seen_only_pending_exact_reentry"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "label": "1Password agent sign-in",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "inSeen": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "status": "seen_only_pending_exact_reentry"
+    }
+  ],
+  "identityCollision": {
+    "editorialId": "7a99eca9b2ce14d9f5",
+    "feedId": "e0cbbf211a55e79f34",
+    "url": "https://github.com/rasbt/LLMs-from-scratch",
+    "decision": "keep both identities unchanged; no remap by URL or title"
+  },
+  "projectReview": {
+    "previousEight": [
+      "patchy631/ai-engineering-hub",
+      "googleapis/python-genai",
+      "Millillion/lasm",
+      "microsoft/markitdown",
+      "yc-software/minecraft-agent-harness",
+      "NVIDIA/OpenShell",
+      "pydantic/pydantic-ai",
+      "astral-sh/uv"
+    ],
+    "researchCatalog": {
+      "total": 37,
+      "active": 35,
+      "archived": 2,
+      "licenseNeedsManualReview": 7
+    },
+    "publishedSiteLibraryEntries": 31,
+    "currentFeedProjects": 100,
+    "exactEnrichedProjects": 97,
+    "excludedBySuitabilityGate": 1,
+    "newProjectsResearched": [
+      "Tencent/WeKnora",
+      "rany2/edge-tts"
+    ],
+    "newProposalTotals": {
+      "improvements": 5,
+      "spinoffs": 3,
+      "religious": 1,
+      "total": 9
+    },
+    "previousProposalTotals": {
+      "improvements": 28,
+      "spinoffs": 27,
+      "religious": 0,
+      "total": 55
+    },
+    "combinedReviewedProposalTotals": {
+      "improvements": 33,
+      "spinoffs": 30,
+      "religious": 1,
+      "total": 64
+    },
+    "runtimeTests": 0,
+    "testEvidenceClaimed": false
+  },
+  "bestThreeNewSuggestions": [
+    "مجموعة تقييم عربية لاسترجاع المستندات والإحالات في WeKnora",
+    "نسخ احتياطي قابل للتحقق لنسخة WeKnora Lite",
+    "واجهة TTS موحدة مع بديل محلي عند انقطاع الشبكة"
+  ],
+  "validation": {
+    "officialCiRun": 41174349582,
+    "officialCiRunNumber": 91,
+    "conclusion": "success",
+    "unitTests": 30,
+    "editorialValidate": "passed on PR site/data/editorial.json",
+    "incomingOfficialValidateLocally": false,
+    "incomingOfficialImportLocally": false,
+    "localUnitTests": false,
+    "reason": "لا يوجد checkout محلي كامل؛ محاولة git clone فشلت بسبب تعذر DNS لـgithub.com. جرى فحص JSON والبنية والحقول والمصادر ومطابقة id/url للدفعتين الجديدتين بنجاح. workflow CI يتحقق من editorial.json ولا يمرر ملفات incoming منفردة إلى validator."
+  },
+  "publication": {
+    "lastInspectedPagesRun": 41173282453,
+    "lastInspectedPagesRunNumber": 111,
+    "conclusion": "success",
+    "artifactContainsMainEditorialOnly": true,
+    "prContentPublished": false,
+    "directLiveBrowserFetch": "DisabledError"
+  },
+  "guardrails": {
+    "thisRunChangedSiteCode": false,
+    "thisRunChangedDesign": false,
+    "thisRunChangedWorkflows": false,
+    "thisRunChangedPublicationSettings": false,
+    "thisRunChangedFeed": false,
+    "thisRunChangedSeen": false,
+    "thisRunChangedStatus": false,
+    "paidServicesUsed": false,
+    "merged": false
+  }
+}

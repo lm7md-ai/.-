@@ -1,0 +1,160 @@
+{
+  "version": 1,
+  "auditedAt": "2026-10-31T18:41:48+03:00",
+  "baseMainSha": "2eb730e2bbbc731ead7b7a6b0f50d0291bf72bf7",
+  "currentMain": {
+    "feedGeneratedAt": "2026-10-31T12:23:17+00:00",
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialRecords": 596,
+    "seenIds": 2180,
+    "statusState": "ok",
+    "statusLastSuccessfulAt": "2026-10-31T12:23:17+00:00"
+  },
+  "mainIncoming": {
+    "files": 58,
+    "rows": 558,
+    "uniqueIdUrlPairs": 554,
+    "duplicateRows": 4,
+    "exactIdUrlInCurrentFeedAndEditorial": 285,
+    "exactIdUrlInEditorialOutsideCurrentFeed": 265,
+    "sameUrlDifferentId": 1,
+    "seenOnlyNotInFeedOrEditorial": 3,
+    "confirmedExpired": 0,
+    "eligibleBacklogImports": 0,
+    "needsCorrection": 1,
+    "classificationNote": "غياب العنصر عن التغذية لا يثبت انتهاء صلاحيته. الأعداد التفصيلية من مقارنة id/url الحرفية؛ 4 صفوف تكرار لا تُنشئ هويات جديدة.",
+    "mismatchIdentity": {
+      "incomingId": "7a99eca9b2ce14d9f5",
+      "incomingUrl": "https://github.com/rasbt/LLMs-from-scratch",
+      "currentFeedId": "e0cbbf211a55e79f34",
+      "decision": "hold; preserve both identities; no remapping by title or URL"
+    },
+    "structuralEquivalent": {
+      "files": 58,
+      "rows": 558,
+      "errors": 0,
+      "method": "Parsed every incoming JSON file and checked version/items, HTTPS source URLs, required text fields, reviewedAt timezone, basis, nextSteps, and proposal fields/step counts/source URLs against scripts/editorial.py rules."
+    }
+  },
+  "specialRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "title": "NVIDIA OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "seen": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "libraryFile": "editorial/library/nvidia-openshell-dossier-2026-10-30-1146.json",
+      "decision": "research-only; keep original identity"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "title": "Canva Craft",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "seen": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "decision": "hold; no exact active feed identity"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "title": "1Password agent sign-in",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "seen": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "decision": "hold; no exact active feed identity"
+    }
+  ],
+  "pr76": {
+    "state": "open",
+    "mergeable": true,
+    "head": "nabdh/editorial-2026-10-31-0247",
+    "headSha": "2c5a75664c68124379912b14bc5c84c46aadf643",
+    "incomingFiles": 3,
+    "incomingRecords": 16,
+    "structuralErrors": 0,
+    "exactFeedIdUrlMatches": 16,
+    "newNews": 12,
+    "updatedNews": 1,
+    "newProjects": 3,
+    "editorialRecords": 611,
+    "oldEditorialRecordsPreserved": 596,
+    "newEditorialRecords": 15,
+    "updatedEditorialRecords": 1,
+    "activeExactNewsAfter": 209,
+    "activeExactProjectsAfter": 99,
+    "allActiveExactAfter": 308
+  },
+  "pr71": {
+    "state": "open",
+    "mergeable": false,
+    "rows": 11,
+    "alreadyInEditorial": 3,
+    "exactFeedMatches": 10,
+    "newEligibleNews": 7,
+    "selectedAndIncludedInPr76": 4,
+    "deferredForNextCycle": 3,
+    "notInCurrentFeed": 1,
+    "deferredIds": [
+      "0a4f535604978bdcd4",
+      "df16325e0e51567772",
+      "fc2bba52b1b0c3e82b"
+    ],
+    "notInFeedId": "19409de9d962cd4ff4"
+  },
+  "projectLibrary": {
+    "entries": 40,
+    "activeNotArchived": 38,
+    "archived": 2,
+    "licenseNeedsUpstreamVerification": 7,
+    "measuredAt": "2026-10-31T18:41:48+03:00",
+    "previousEightReviewed": 8,
+    "newLibraryEntries": 2,
+    "projectCardsInCurrentFeedAmongPreviousEight": 1
+  },
+  "ideas": {
+    "publicCompleteProposals": 69,
+    "researchOnlyLangGraphProposals": 10,
+    "previousEightNewResearchProposals": 14,
+    "allNewResearchProposalsNotPublic": 14
+  },
+  "untouched": [
+    "site/data/feed.json",
+    "site/data/seen.json",
+    "site/data/status.json",
+    "site/** source code",
+    "site/styles.css",
+    "site/app.js",
+    "site/ideas.js",
+    ".github/workflows/**",
+    "deployment settings"
+  ],
+  "deployment": {
+    "lastMainWorkflowRun": 41200861956,
+    "conclusion": "success",
+    "artifactId": 13042442205,
+    "artifactCreatedAt": "2026-10-31T12:23:38Z",
+    "artifactFeedItems": 800,
+    "artifactEditorialRecords": 596,
+    "artifactExactVisibleEditorial": 293,
+    "liveHttpCheck": "DisabledError; deployed GitHub Pages artifact downloaded and inspected instead"
+  },
+  "validation": {
+    "incomingStructuralEquivalent": "passed 58/58 files, 558/558 rows",
+    "pr76IncomingStructuralEquivalent": "passed 16/16",
+    "officialCiRun": 41215172747,
+    "officialCiConclusion": "success",
+    "officialUnitTests": "success in PR CI",
+    "officialEditorialValidate": "success in PR CI",
+    "localCommands": [
+      "python scripts/editorial.py validate",
+      "python scripts/editorial.py import <incoming>",
+      "python -m unittest discover -s tests -v"
+    ],
+    "localCommandsExecuted": false
+  },
+  "mergeDecision": "Do not merge in this run: the only push-to-main Pages workflow executes scripts/update_feed.py and commits feed.json, seen.json, and status.json. This conflicts with the explicit no-touch constraint. PR remains reviewable and CI-verified, not published."
+}

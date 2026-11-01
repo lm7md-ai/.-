@@ -1,0 +1,187 @@
+{
+  "version": 1,
+  "repository": "getify/You-Dont-Know-JS",
+  "feedId": "a9abd087c6f01b95b0",
+  "url": "https://github.com/getify/You-Dont-Know-JS",
+  "siteVisibility": "public project card; exact original feed identity",
+  "overview": "You Don’t Know JS Yet مشروع كتب تقنية للمؤلف Kyle Simpson. المستودع يجمع فصولًا وكتبًا بصيغة Markdown، ويبدأ بدليل Get Started ثم يتدرج إلى موضوعات مثل Scope & Closures وObjects & Classes وTypes & Grammar وAsync & Performance. ليس SDK ولا إطار عمل ولا تطبيقًا جاهزًا؛ قيمته الأساسية في الشرح المنهجي والأمثلة. README يصف السلسلة بأنها مكتملة، كما يطلب دليل المساهمة عدم فتح مساهمات جديدة في هذه المرحلة.",
+  "requirements": "لا توجد متطلبات تشغيل أو API أو GPU. يكفي متصفح لقراءة النسخة المنشورة أو قارئ Markdown عند استنساخ المستودع. يفيد امتلاك أساسيات المتغيرات والدوال وكتابة أمثلة صغيرة؛ ويمكن تشغيل الأمثلة باستخدام متصفح حديث أو Node.js. لا توجد تبعيات مشروع موحدة لأن المستودع كتب تعليمية لا حزمة تنفيذية.",
+  "quickStart": "1. افتح README واقرأ قسم Get Started لتحديد نقطة البداية.\n2. ابدأ بموضوع Scope & Closures ثم انتقل إلى Objects & Classes وTypes & Grammar.\n3. بعد كل مفهوم، اكتب مثالًا أصليًا قصيرًا وشغّله في المتصفح أو Node.js بدل الاكتفاء بالقراءة.\n4. استخدم MDN أو توثيق Node.js للتحقق من السلوك الحالي عند وجود اختلاف بين المثال والبيئة.\n5. سجّل المفاهيم التي تحتاج مراجعة، ولا تنسخ نصوص الكتاب في مشروع مشتق.",
+  "costLocalCloud": {
+    "local": "القراءة المحلية لملفات Markdown مجانية ولا تحتاج CPU/GPU أو خدمات خارجية؛ تشغيل الأمثلة يحتاج متصفحًا أو Node.js فقط.",
+    "cloud": "لا توجد خدمة سحابية مطلوبة أو تكلفة استضافة للتعلم. قد تكون بعض نسخ الكتب الإلكترونية أو المطبوعة المدفوعة متاحة عبر متاجر المؤلف."
+  },
+  "licenseDetails": "README وLICENSE.txt يحددان CC BY-NC-ND 4.0 لمحتوى الكتب. GitHub API يعرض Other/NOASSERTION، لذلك لا يصح وصف المستودع بأنه MIT أو Apache. هذا ترخيص محتوى مع قيود على الاشتقاق والاستخدام التجاري، وليس ترخيص حزمة برمجية.",
+  "limitations": "السلسلة التعليمية مكتملة بحسب README والمستودع غير مفتوح لمساهمات جديدة وفق CONTRIBUTING.md. محتوى الكتب مرخص CC BY-NC-ND 4.0؛ لا ينبغي إعادة نشر نسخ معدلة أو تجارية منه. يعرض GitHub API الترخيص بصيغة Other/NOASSERTION، لكن README وLICENSE.txt يحددان ترخيص المحتوى. لا يتضمن المستودع منصة تمارين أو قياس تقدم؛ وأي مرافق مقترح يجب أن يكون مستقلًا بمحتوى أصلي.",
+  "alternatives": [
+    {
+      "name": "MDN JavaScript Guide",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+      "note": "مرجع رسمي محدث للغة وواجهات الويب."
+    },
+    {
+      "name": "The Modern JavaScript Tutorial",
+      "url": "https://javascript.info/",
+      "note": "شرح تدريجي مع أمثلة وتمارين."
+    },
+    {
+      "name": "Eloquent JavaScript",
+      "url": "https://eloquentjavascript.net/",
+      "note": "كتاب مجاني يركز على البرمجة والمشاريع العملية."
+    }
+  ],
+  "metrics": {
+    "stars": 184841,
+    "forks": 33358,
+    "openIssues": 2,
+    "archived": false,
+    "licenseSpdx": "NOASSERTION",
+    "pushedAt": "2026-10-31T16:14:40Z",
+    "updatedAt": "2026-11-01T01:57:44Z",
+    "defaultBranch": "2nd-ed",
+    "language": null,
+    "measuredAt": "2026-11-01T05:42:38+03:00"
+  },
+  "reviewedAt": "2026-11-01T05:42:38+03:00",
+  "basis": "readme",
+  "executionStatus": "not_run",
+  "improvements": [
+    {
+      "title": "مرافق تقدم مستقل لقراءة JavaScript",
+      "problem": "المستودع كتب Markdown ولا يوفر تتبعًا موحدًا للتقدم أو ملاحظات شخصية.",
+      "approach": "إنشاء تطبيق محلي مستقل يربط عناوين الفصول بملاحظات المتعلم وحالة المراجعة، دون نسخ نصوص الكتب أو إعادة توزيعها.",
+      "stack": "HTML وCSS وJavaScript وJSON وlocalStorage.",
+      "steps": [
+        "أنشئ قائمة فصول وروابط إلى الصفحات الأصلية فقط.",
+        "أضف حالة قراءة ومراجعة وملاحظات يكتبها المستخدم بنفسه.",
+        "احفظ التقدم محليًا مع تصدير JSON اختياري.",
+        "اختبر الروابط واستعادة التقدم بعد إغلاق المتصفح."
+      ],
+      "metric": "نسبة استعادة التقدم بنجاح، وعدد الروابط الصحيحة، واكتمال مسار القراءة.",
+      "difficulty": "منخفضة إلى متوسطة (تقدير؛ 1–2 أسبوع).",
+      "risks": "تغير روابط الفصول أو تجاوز حدود الترخيص إذا أُعيد نسخ نصوص الكتاب؛ يجب الاكتفاء بالروابط والملاحظات الأصلية.",
+      "sources": [
+        {
+          "title": "YDKJS README",
+          "url": "https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/README.md"
+        },
+        {
+          "title": "Creative Commons BY-NC-ND 4.0",
+          "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ]
+    },
+    {
+      "title": "مختبر أمثلة JavaScript أصلية مع اختبارات",
+      "problem": "القراءة وحدها لا تكشف دائمًا الفروق بين النطاقات والوعود والأنواع وسلوك وقت التشغيل.",
+      "approach": "بناء أمثلة قصيرة أصلية واختبارات آلية مستقلة تقارن السلوك بين Node.js ومتصفح حديث.",
+      "stack": "Node.js وVitest وPlaywright وJavaScript.",
+      "steps": [
+        "اختر مفهومًا واحدًا وأنشئ مثالًا أصليًا صغيرًا.",
+        "اكتب اختبارًا يثبت النتيجة المتوقعة دون نسخ مثال الكتاب.",
+        "شغّل الاختبارات في Node.js ومتصفح واحد على الأقل.",
+        "سجل الفروق الناتجة عن البيئة أو إصدار المحرك.",
+        "انشر النتائج مع روابط توثيق MDN."
+      ],
+      "metric": "نسبة نجاح الاختبارات واتساق النتائج بين البيئات وعدد الحالات المفسرة.",
+      "difficulty": "متوسطة (تقدير؛ 2–3 أسابيع).",
+      "risks": "اختلاف إصدارات المحركات قد يسبب نتائج غير متطابقة؛ يجب توثيق إصدار كل بيئة وعدم تقديم الأمثلة كبديل عن المرجع.",
+      "sources": [
+        {
+          "title": "Node.js documentation",
+          "url": "https://nodejs.org/docs/latest/api/"
+        },
+        {
+          "title": "MDN JavaScript Guide",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "خريطة مفاهيم JavaScript بالعربية",
+      "problem": "قد يصعب على المتعلم رؤية العلاقات بين النطاقات والإغلاقات والأنواع والوعود.",
+      "approach": "إنشاء خريطة مفاهيم أصلية بالعربية تربط المفاهيم بروابط مرجعية وأمثلة يكتبها الفريق بنفسه.",
+      "stack": "Mermaid وMarkdown وHTML وJavaScript.",
+      "steps": [
+        "حدد المفاهيم الأساسية من مواصفات ECMAScript وMDN.",
+        "ارسم العلاقات والاعتماديات بين المفاهيم.",
+        "اكتب شرحًا عربيًا أصليًا لكل عقدة.",
+        "اربط كل عقدة بمثال قابل للتشغيل ومصدر رسمي.",
+        "راجع الخريطة مع متعلمين واختبر وضوحها."
+      ],
+      "metric": "نسبة إكمال المسار وقدرة المتعلم على شرح العلاقات في اختبار عملي مستقل.",
+      "difficulty": "متوسطة (تقدير؛ 2–4 أسابيع).",
+      "risks": "احتمال تبسيط مفاهيم معقدة أكثر من اللازم أو نسخ صياغة محمية؛ يلزم محتوى أصلي ومراجعة فنية.",
+      "sources": [
+        {
+          "title": "ECMAScript specification",
+          "url": "https://tc39.es/ecma262/"
+        },
+        {
+          "title": "MDN JavaScript Guide",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+        }
+      ]
+    },
+    {
+      "title": "مقارن سلوك JavaScript بين Node.js والمتصفحات",
+      "problem": "بعض السلوكيات تختلف بسبب واجهات البيئة لا بسبب قواعد اللغة نفسها، ما يربك التشخيص.",
+      "approach": "تجميع أمثلة أصلية وتشغيلها في محركات متعددة مع تسجيل البيئة والنتيجة.",
+      "stack": "Node.js وPlaywright وVite وJSON.",
+      "steps": [
+        "اختر حالات من اللغة لا تعتمد على بيانات شخصية أو خدمات خارجية.",
+        "اكتب أمثلة واختبارات أصلية لكل حالة.",
+        "شغّلها في Node.js ومتصفحين حديثين.",
+        "قارن النتائج وسجل إصدار المحرك وواجهات البيئة.",
+        "انشر تقريرًا يميز قواعد اللغة عن واجهات المتصفح."
+      ],
+      "metric": "عدد الحالات القابلة لإعادة الإنتاج ونسبة النتائج المتطابقة أو المفسرة.",
+      "difficulty": "متوسطة إلى مرتفعة (تقدير؛ 3–5 أسابيع).",
+      "risks": "تغير الإصدارات أو إعدادات المتصفح قد يؤثر في النتائج؛ يلزم تثبيت نسخ الاختبار وتوثيقها.",
+      "sources": [
+        {
+          "title": "Node.js documentation",
+          "url": "https://nodejs.org/docs/latest/api/"
+        },
+        {
+          "title": "MDN JavaScript reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        }
+      ]
+    }
+  ],
+  "religious": [],
+  "sources": [
+    {
+      "title": "GitHub repository",
+      "url": "https://github.com/getify/You-Dont-Know-JS"
+    },
+    {
+      "title": "README — second edition",
+      "url": "https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/README.md"
+    },
+    {
+      "title": "Get Started guide",
+      "url": "https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/get-started/README.md"
+    },
+    {
+      "title": "LICENSE.txt",
+      "url": "https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/LICENSE.txt"
+    },
+    {
+      "title": "CONTRIBUTING.md",
+      "url": "https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/CONTRIBUTING.md"
+    },
+    {
+      "title": "MDN JavaScript guide",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+    },
+    {
+      "title": "Node.js documentation",
+      "url": "https://nodejs.org/docs/latest/api/"
+    }
+  ],
+  "researchNotes": "README, Get Started, LICENSE.txt and CONTRIBUTING.md inspected. Content license is CC BY-NC-ND 4.0; GitHub API reports NOASSERTION. Book series complete and contributions closed. No execution performed."
+}
