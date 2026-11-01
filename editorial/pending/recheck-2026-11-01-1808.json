@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-11-01T23:44:11+03:00",
+  "runAt": "2026-11-02T00:11:37+03:00",
   "repository": "lm7md-ai/.-",
   "mainSha": "37f9e517bae3773506fd20b83351fc99107a41ad",
   "incoming": {
@@ -9,19 +9,36 @@
     "structuralValidation": {
       "filesPassed": 63,
       "filesFailed": 0,
-      "method": "schema-equivalent structural check against scripts/editorial.py; Python runtime unavailable locally"
-    }
+      "recordsParsed": 592,
+      "method": "JSON/schema-equivalent check; accepted basis values metadata/article/readme/code/tested; exact id/url matching performed separately"
+    },
+    "currentFeedSnapshotAt": "2026-11-01T19:38:16+00:00"
   },
   "classification": {
-    "alreadyImportedAndActiveExactIdUrl": 261,
-    "alreadyImportedHistoricalOutOfFeedExactIdUrl": 326,
+    "alreadyImportedAndActiveExactIdUrl": 254,
+    "alreadyImportedHistoricalOutOfFeedExactIdUrl": 333,
     "seenOnly": 5,
     "activeExactUnimported": 0,
     "idUrlMismatches": 0,
     "unknown": 0,
     "needsCorrection": 0,
     "confirmedExpired": 0,
-    "outOfFeedNotProvenExpired": 331
+    "outOfFeedNotProvenExpired": 338,
+    "previousFeedSnapshot": {
+      "generatedAt": "2026-11-01T13:18:34+00:00",
+      "activeOccurrences": 261,
+      "historicalOccurrences": 326,
+      "seenOnly": 5
+    },
+    "currentFeedRefreshDelta": {
+      "generatedAt": "2026-11-01T19:38:16+00:00",
+      "activeOccurrences": 254,
+      "historicalOccurrences": 333,
+      "seenOnly": 5,
+      "itemsMovedOutOfActive": 8,
+      "itemsMovedIntoActive": 1,
+      "netActiveReduction": 7
+    }
   },
   "namedRecords": [
     {
@@ -87,7 +104,7 @@
     "workflowChanged": false
   },
   "pr78Correction": {
-    "checkedAt": "2026-11-01T23:44:11+03:00",
+    "checkedAt": "2026-11-02T00:11:37+03:00",
     "previousBaseSha": "66bb63403fb9926347ba195215f832fb22bff05e",
     "currentMainSha": "37f9e517bae3773506fd20b83351fc99107a41ad",
     "currentMainCommitChangedPaths": [
@@ -118,22 +135,24 @@
       "editorialDecision": "amendment adopted in a budget debate, not yet an enacted tax"
     },
     "incomingBeforeFinalCorrection": 8,
-    "incomingAfterFinalCorrection": 8,
-    "exactFeedMatchesAfterFinalCorrection": 8,
+    "incomingAfterFinalCorrection": 11,
+    "exactFeedMatchesAfterFinalCorrection": 11,
     "idUrlMismatchesAfterFinalCorrection": 0,
     "editorialMainRecordsPreserved": 627,
     "editorialMainRecordsMissing": 0,
     "editorialMainRecordsChanged": 0,
-    "editorialBranchTotalAfterCorrection": 635,
+    "editorialBranchTotalAfterCorrection": 638,
     "basisCounts": {
-      "article": 7,
+      "article": 10,
       "metadata": 1
     },
     "localValidateImport": "not run; no local repository checkout/Python execution environment",
-    "officialPRValidation": "previous head passed; rerun requested automatically for the corrected/rebased head"
+    "officialPRValidation": "updated head will be checked by the existing pull-request workflow; previous head passed",
+    "currentMainFeedGeneratedAt": "2026-11-01T19:38:16+00:00",
+    "notes": "أضيفت ثلاثة سجلات جديدة بعد مراجعة النصوص المتاحة: تقرير Meta/Fourier مع قيد Reuters، مقال أمان vibe coding مع توضيح مصدر أرقام Apiiro، وخبر الكويت تبرمج 6 من الراي. لم تُضف سجلات seen-only أو موضوعات مكررة."
   },
   "projectReview": {
-    "checkedAt": "2026-11-01T23:44:11+03:00",
+    "checkedAt": "2026-11-02T00:11:37+03:00",
     "measurementAt": "2026-11-01T20:50:00Z",
     "projectsReviewed": 8,
     "allActive": true,
@@ -152,6 +171,33 @@
     "researchFile": "editorial/library/previous-eight-dossiers-2026-11-01-2344.json",
     "testsRun": 0,
     "testEvidence": null,
-    "note": "تم فحص README والتوثيق والترخيص ومتطلبات التشغيل وطريقة البدء والتكاليف المحلية/السحابية والبدائل للمشاريع الثمانية. السبعة غير الموجودة في feed محفوظة في ملف بحثي غير منشور؛ لم يجر تشغيل أي مشروع."
-  }
+    "note": "ملف الدراسات البحثية يحتوي 7 مشاريع غير منشورة، ولكل منها تحسين ومشروع مشتق؛ حُولت خطوات المقترحات إلى مصفوفات منفصلة من 3–5 خطوات. لم تُشغّل المشاريع.",
+    "catalogStatusSummary": {
+      "total": 42,
+      "archived": 2,
+      "nonArchived": 40,
+      "inCurrentFeed": 6,
+      "notInFeed": 36,
+      "licenseNeedsUpstreamVerification": 7,
+      "enrichedInCurrentFeed": 6
+    },
+    "proposals": 14,
+    "proposalStepsWithin3To12": true
+  },
+  "feedRefreshMovedIds": [
+    "68dfb7cd14f88c587a",
+    "408e59e473ab3bc682",
+    "6fe1940ca9611c0c55",
+    "256174e04f2a657aa0",
+    "8789b25f4f928a029c",
+    "f0f5eb0ba9f7724c42",
+    "fb7d8c0c8a030338b7",
+    "cbcd682a693800b605"
+  ],
+  "feedRefreshMovedIntoActive": [
+    {
+      "id": "e7f1aab302e1f0371e",
+      "url": "https://github.com/run-llama/llama_index"
+    }
+  ]
 }
