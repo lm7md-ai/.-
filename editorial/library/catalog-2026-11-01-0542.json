@@ -1,19 +1,19 @@
 {
   "version": 1,
   "compiledAt": "2026-11-01T05:42:38+03:00",
-  "note": "Cumulative research-only catalog: 38 known projects. Existing priority order and URLs retained; LangGraph appended as priority 38 because it has no exact item in the current feed. WeKnora, edge-tts, and Web-Dev-For-Beginners are current feed items and are enriched by their original IDs, not duplicated in this research-only catalog. New snapshot 2026-11-01 appends priority 41 getify/You-Dont-Know-JS without reordering prior entries; the feed item is enriched by its original ID. GitHub reports NOASSERTION, while README and LICENSE.txt specify CC BY-NC-ND 4.0 for book content.",
+  "note": "Cumulative research-only catalog: 38 known projects. Existing priority order and URLs retained; LangGraph appended as priority 38 because it has no exact item in the current feed. WeKnora, edge-tts, and Web-Dev-For-Beginners are current feed items and are enriched by their original IDs, not duplicated in this research-only catalog. New snapshot 2026-11-01 appends priority 41 getify/You-Dont-Know-JS without reordering prior entries; the feed item is enriched by its original ID. GitHub reports NOASSERTION, while README and LICENSE.txt specify CC BY-NC-ND 4.0 for book content. New priority 42 WebAnything is research-only: the feed contains its paper as a news item, not a project card; no public project card or synthetic ID was created. README/docs and MIT scope were reviewed; no execution was performed.",
   "metricsWarning": "Stars, forks, open issues, and push timestamps are GitHub API snapshots measured at 2026-10-31T18:11:52+03:00; they are not quality rankings or daily growth.",
   "measurementWindow": "2026-10-30T21:12:00+03:00 for AI Engineering Hub and the eight previous projects; older historical entries retain their own measuredAt values.",
   "statusSummary": {
-    "total": 41,
+    "total": 42,
     "archived": 2,
-    "nonArchived": 39,
+    "nonArchived": 40,
     "inCurrentFeed": 6,
-    "notInFeed": 35,
+    "notInFeed": 36,
     "licenseNeedsUpstreamVerification": 7,
     "enrichedInCurrentFeed": 6
   },
-  "developerIntegrationNotes": "Provide a separate historical projects catalog independent of the 45-day GitHub discovery window.,Keep durable canonical GitHub repository identity and documented status rather than using active feed IDs for out-of-feed projects.,Do not purge library dossiers when feed items rotate; maintain persistent links for bookmarks.,Show license and activity measurement timestamps and mark archived/mirror projects explicitly.,Do not use cumulative GitHub stars as current popularity.,اعرض المستودعات البحثية غير الموجودة في feed بوضوح على أنها research-only؛ لا تنشئ معرفات feed بديلة.,أظهر measuredAt لكل لقطة، ولا تقارن مؤشرات التوقيتات المختلفة كأنها متزامنة. Lasm is research-only and not in the project feed; do not add it to public project cards without a later explicit editorial review. NVIDIA/OpenShell is research-only and absent from feed. Future library UI should show «بحث فقط — غير منشور», measuredAt, Apache-2.0, supported platforms, requirements, local/cloud costs, alternatives and limitations; no feed ID or run/publish button. Show Pydantic AI as research-only, not in feed; display Python 3.11+, MIT, measuredAt, local Ollama vs cloud API costs, alternatives and limitations; no feed ID or run/publish button. Show uv as research-only, not in feed; display MIT OR Apache-2.0, measuredAt, standalone install, local versus CI costs, quickStart and alternatives. Do not assign a feed ID or show run/publish actions. Show AI Engineering Hub with its exact feed ID fe0e6bfdbdd5822139. Detail view should label it as a collection of independent tutorials, show per-folder requirements and quickStart, local/cloud cost, license caveats, alternatives, limitations, and the 4 improvements plus 4 spinoffs in preserved order. Do not show a tested badge or run action; testStatus is not_run. For getify/You-Dont-Know-JS, show it as an educational book series (not an executable package), display the CC BY-NC-ND 4.0 restriction and completion/closed-contributions status, and do not offer an install/run action.",
+  "developerIntegrationNotes": "Provide a separate historical projects catalog independent of the 45-day GitHub discovery window.,Keep durable canonical GitHub repository identity and documented status rather than using active feed IDs for out-of-feed projects.,Do not purge library dossiers when feed items rotate; maintain persistent links for bookmarks.,Show license and activity measurement timestamps and mark archived/mirror projects explicitly.,Do not use cumulative GitHub stars as current popularity.,اعرض المستودعات البحثية غير الموجودة في feed بوضوح على أنها research-only؛ لا تنشئ معرفات feed بديلة.,أظهر measuredAt لكل لقطة، ولا تقارن مؤشرات التوقيتات المختلفة كأنها متزامنة. Lasm is research-only and not in the project feed; do not add it to public project cards without a later explicit editorial review. NVIDIA/OpenShell is research-only and absent from feed. Future library UI should show «بحث فقط — غير منشور», measuredAt, Apache-2.0, supported platforms, requirements, local/cloud costs, alternatives and limitations; no feed ID or run/publish button. Show Pydantic AI as research-only, not in feed; display Python 3.11+, MIT, measuredAt, local Ollama vs cloud API costs, alternatives and limitations; no feed ID or run/publish button. Show uv as research-only, not in feed; display MIT OR Apache-2.0, measuredAt, standalone install, local versus CI costs, quickStart and alternatives. Do not assign a feed ID or show run/publish actions. Show AI Engineering Hub with its exact feed ID fe0e6bfdbdd5822139. Detail view should label it as a collection of independent tutorials, show per-folder requirements and quickStart, local/cloud cost, license caveats, alternatives, limitations, and the 4 improvements plus 4 spinoffs in preserved order. Do not show a tested badge or run action; testStatus is not_run. For getify/You-Dont-Know-JS, show it as an educational book series (not an executable package), display the CC BY-NC-ND 4.0 restriction and completion/closed-contributions status, and do not offer an install/run action. WebAnything must remain research-only in the catalog; its feed reference is a news item, not a project card. If surfaced in research UI, show alpha status, MIT-for-code-only scope, external 244-site artifact store, provider API cost, access/ToS limits, and absence of full corpus.",
   "entries": [
     {
       "priority": 1,
@@ -2518,6 +2518,110 @@
       },
       "currentStatus": "active_not_archived; book series complete; contributions closed",
       "currentLicenseStatus": "README_and_LICENSE_txt_confirm_CC_BY_NC_ND_4.0"
+    },
+    {
+      "priority": 42,
+      "repository": "china-qijizhifeng/Web-Anything",
+      "url": "https://github.com/china-qijizhifeng/Web-Anything",
+      "category": "بيئات تقييم وكلاء الويب",
+      "classification": "emerging_alpha_research_codebase",
+      "archived": false,
+      "starsMeasured": 3,
+      "forksMeasured": 1,
+      "openIssuesMeasured": 9,
+      "metricCapturedAt": "2026-11-01T05:42:38+03:00",
+      "licenseApiValue": "MIT",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "README, pyproject.toml, LICENSE, architecture, limitations, getting-started, simple-interface, reproducibility, evidence-contract and release-status docs inspected; no code execution.",
+      "overviewShort": "خط Python بحثي لبناء بيئات وكلاء ويب قابلة لإعادة الضبط والتحقق؛ alpha ولا يضم كامل أشجار المواقع التاريخية.",
+      "proposedResearchOrBuild": "حزمة fixtures عربية اصطناعية مرخصة وميزانية تكلفة/زمن لكل تشغيل، مع إبقاء الموقع الأصلي خارج النطاق ما لم يوجد إذن.",
+      "inCurrentFeed": false,
+      "feedNewsId": "0b73660e31921f56d4",
+      "feedProjectId": null,
+      "researchOnly": true,
+      "siteVisibility": "research only; no public project card",
+      "sources": [
+        {
+          "title": "Repository",
+          "url": "https://github.com/china-qijizhifeng/Web-Anything"
+        },
+        {
+          "title": "README and quick start",
+          "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/README.md"
+        },
+        {
+          "title": "pyproject.toml",
+          "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/pyproject.toml"
+        },
+        {
+          "title": "MIT LICENSE",
+          "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/LICENSE"
+        },
+        {
+          "title": "Architecture",
+          "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/docs/architecture.md"
+        },
+        {
+          "title": "Known limitations",
+          "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/docs/limitations.md"
+        },
+        {
+          "title": "Getting started",
+          "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/docs/getting-started.md"
+        },
+        {
+          "title": "Simple interface",
+          "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/docs/simple-interface.md"
+        },
+        {
+          "title": "Reproducibility guide",
+          "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/docs/REPRODUCIBILITY.md"
+        },
+        {
+          "title": "Evidence contract",
+          "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/docs/evidence-contract.md"
+        }
+      ],
+      "disabled": false,
+      "defaultBranch": "main",
+      "language": "Python",
+      "licenseName": "MIT (WebAnything-authored code)",
+      "licenseSummary": "MIT للشفرة المؤلفة؛ لا يغطي محتوى المواقع الخارجية أو الوسائط أو الخطوط أو العلامات التجارية.",
+      "licenseEvidence": "LICENSE وpyproject.toml وREADME تؤكد MIT للشفرة مع تنبيه صريح إلى حقوق الطرف الثالث.",
+      "activityStatus": "alpha_active",
+      "alternativeProjects": [
+        {
+          "repository": "web-arena-x/webarena",
+          "url": "https://github.com/web-arena-x/webarena",
+          "license": "Apache-2.0",
+          "status": "active_benchmark_alternative"
+        },
+        {
+          "repository": "ServiceNow/BrowserGym",
+          "url": "https://github.com/ServiceNow/BrowserGym",
+          "license": "NOASSERTION",
+          "status": "active_environment_suite_alternative"
+        }
+      ],
+      "metricSource": "https://api.github.com/repos/china-qijizhifeng/Web-Anything",
+      "editorialEnriched": false,
+      "editorialUrlMatches": false,
+      "currentSnapshot": {
+        "stars": 3,
+        "forks": 1,
+        "openIssues": 9,
+        "archived": false,
+        "licenseSpdx": "MIT",
+        "createdAt": "2026-10-16T03:32:29Z",
+        "updatedAt": "2026-10-31T04:54:38Z",
+        "pushedAt": "2026-10-30T04:28:28Z",
+        "defaultBranch": "main",
+        "language": "Python",
+        "measuredAt": "2026-11-01T05:42:38+03:00"
+      },
+      "currentStatus": "active_alpha; repository created 2026-10-16; last push 2026-10-30",
+      "currentLicenseStatus": "MIT for authored code; third-party site content rights separate"
     }
   ],
   "currentSnapshotSummary": {

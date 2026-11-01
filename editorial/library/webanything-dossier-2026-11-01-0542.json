@@ -1,0 +1,274 @@
+{
+  "version": 1,
+  "repository": "china-qijizhifeng/Web-Anything",
+  "url": "https://github.com/china-qijizhifeng/Web-Anything",
+  "feedNewsId": "0b73660e31921f56d4",
+  "feedProjectId": null,
+  "siteVisibility": "research-only; no public project card because the feed item is a research news item, not a project card",
+  "classification": "emerging_alpha_research_codebase",
+  "archived": false,
+  "metrics": {
+    "stars": 3,
+    "forks": 1,
+    "openIssues": 9,
+    "archived": false,
+    "licenseSpdx": "MIT",
+    "createdAt": "2026-10-16T03:32:29Z",
+    "updatedAt": "2026-10-31T04:54:38Z",
+    "pushedAt": "2026-10-30T04:28:28Z",
+    "defaultBranch": "main",
+    "language": "Python",
+    "measuredAt": "2026-11-01T05:42:38+03:00"
+  },
+  "reviewedAt": "2026-11-01T05:42:38+03:00",
+  "basis": "readme",
+  "executionStatus": "not_run",
+  "titleAr": "WebAnything — خط بحثي لبناء بيئات وكلاء ويب قابلة لإعادة الضبط والتحقق",
+  "summaryAr": "مستودع Python بحثي يحول أدلة مواقع الويب المصرح بها إلى بيئات قابلة للتنفيذ وإعادة الضبط، مع Builder وVerifier مستقلين وبوابة إصدار مرتبطة ببصمة المرشح. المستودع في مرحلة alpha ولا يحتوي أشجار المواقع الـ244 أو وسائطها كاملة.",
+  "overview": "WebAnything مشروع بحثي لبناء بيئات قابلة للتنفيذ لوكلاء الويب من أدلة مصدرية يلتقطها المتصفح. يضم CLI باسم webanything وخط اكتشاف/عقد/بناء/تحقق/إصلاح/إصدار، إضافة إلى manifest تاريخي لـ244 موقعًا وثلاثة عروض محدودة. معماريًا يفصل Builder الذي يعمل في مساحة معزولة عن Verifier للقراءة فقط، ويشترط أن تكون نتيجة الإصدار مرتبطة بهوية المرشح وبصمته لا بمجرد ظهور صفحة. المستودع alpha؛ README يوضح أن Explorer وContract compiler لم يصبحا بعد مرحلتين مستقلتين متصلتين بالكامل، وأن Builder ما زال موجهًا جزئيًا إلى WebHarbor/Flask.",
+  "requirements": "Python 3.11+، Node.js 18+، uv، Chromium مع Playwright، npm، ومساحة تخزين للـruns. يحتاج البناء الفعلي إلى endpoint متوافق مع Responses API ومعرّف نموذج ومفتاح API؛ كما يحتاج الـagent إلى صلاحية terminal محلية. إضافات pyproject تفصل browser وvisual وbuilder وdev، وE2B اختياري. لا يذكر المشروع حدًا أدنى موحدًا للذاكرة أو GPU؛ تشغيل المتصفح والبناء محليًا يستهلك CPU وذاكرة بحسب الموقع وحجم العمل.",
+  "quickStart": "1. ثبّت Python 3.11+ وNode.js 18+ وuv وChromium.\n2. من جذر المستودع نفّذ: uv sync --locked --extra dev --extra browser --extra visual --extra builder.\n3. نفّذ: uv run python -m playwright install chromium، ثم npm --prefix tools/codex-mirror-trace ci.\n4. شغّل uv run webanything setup وأدخل عنوان Responses API ومعرّف النموذج والمفتاح في المطالبة المخفية؛ لا تحفظ المفتاح في المستودع أو run directory.\n5. جرّب مهمة محدودة على موقع عام تسمح شروطه بذلك: uv run webanything create https://example.org/ --mode jit --task 'Find the second example and open it'.\n6. افحص النتيجة محليًا باستخدام uv run webanything preview <run-dir>، ولا تعتبر ظهور الصفحة نجاحًا قبل قراءة نتيجة Verifier وبوابة الإصدار.",
+  "limitations": "إصدار alpha وليس خطًا مستقلًا عن مزود النموذج أو صالحًا لكل المواقع. README وdocs/limitations يذكران أن Explorer وContract compiler غير موصولين بعد كمراحل تنفيذية مستقلة، وأن Builder موجه إلى WebHarbor/Flask. لا يتجاوز المشروع robots أو WAF أو المصادقة أو قيود الوصول؛ تغطية full محدودة بالمسارات والعناصر القابلة للاكتشاف، ولا تشمل أسطحًا مخفية أو تدفقات غير محدودة. واجهة E2B الحالية تتحقق من صحة البوابة ووجود المعرض والصفحات الرئيسية فقط، بينما إعادة تشغيل التفاعلات بعد النشر الكامل ما زالت مخططة. مخزون 244 موقعًا هو manifest وبيانات وصفية: أشجار المواقع والوسائط الخارجية ليست ضمن المستودع؛ ويذكر دليل reproducibility أن 113 موقعًا فقط خضعت لمراجعة أعمق و131 بقيت عند ملاحظة أساسية. MIT يغطي كود WebAnything المؤلف فقط، ولا يمنح حق إعادة توزيع محتوى المواقع أو الصور أو الخطوط أو العلامات التجارية.",
+  "licenseDetails": "MIT للشفرة المؤلفة داخل المستودع وفق LICENSE وpyproject.toml. تراخيص محتوى المواقع الخارجية والصور والخطوط والشعارات والعلامات التجارية مستقلة، ويطلب README مراجعة شروط المصدر وحقوق الأصول قبل المشاركة أو النشر.",
+  "costLocalCloud": {
+    "local": "تشغيل CLI والمتصفح وPlaywright وpreview محليًا؛ لا يذكر المشروع GPU إلزاميًا. يحتاج Python وNode وChromium وuv ومساحة تخزين للـruns. Docker متاح لبعض العروض.",
+    "cloud": "البناء يحتاج خدمة نموذج متوافقة مع Responses API؛ التكلفة تعتمد على المزود وعدد الرموز/المحاولات ولا ينشر المشروع تقديرًا ثابتًا. يمكن استخدام endpoint مستضاف ذاتيًا متوافقًا لتقليل الاعتماد على خدمة مدفوعة، مع تحمل كلفة العتاد والتشغيل. E2B تكامل اختياري وقد تكون له تكلفة مستقلة."
+  },
+  "alternatives": [
+    {
+      "name": "WebArena",
+      "url": "https://github.com/web-arena-x/webarena",
+      "license": "Apache-2.0",
+      "note": "Benchmark بمهام وبيئات ويب محددة مسبقًا؛ بديل للمقارنة والتقييم وليس خط إعادة بناء عام من أي موقع."
+    },
+    {
+      "name": "BrowserGym",
+      "url": "https://github.com/ServiceNow/BrowserGym",
+      "license": "GitHub API NOASSERTION",
+      "note": "مجموعة بيئات Gym لوكلاء المتصفح؛ تحقق من تراخيص المكونات والبيئات قبل إعادة الاستخدام."
+    },
+    {
+      "name": "Playwright",
+      "url": "https://playwright.dev/",
+      "license": "Apache-2.0",
+      "note": "أداة أتمتة متصفح واختبار؛ ليست وحدها benchmark أو خط بناء بيئات."
+    }
+  ],
+  "nextSteps": [
+    "ابدأ بعرض USWDS المضمّن قبل توجيه CLI إلى موقع خارجي.",
+    "نفّذ doctor وقراءة release-gate-result في تجربة مصرح بها؛ لا تعتمد على اكتمال عملية Builder وحدها.",
+    "راجع تراخيص محتوى المصدر وبيانات الالتقاط قبل نشر أي ناتج.",
+    "لا تستخدم بيانات دخول شخصية أو مواقع لا تملك إذن اختبارها."
+  ],
+  "sources": [
+    {
+      "title": "Repository",
+      "url": "https://github.com/china-qijizhifeng/Web-Anything"
+    },
+    {
+      "title": "README and quick start",
+      "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/README.md"
+    },
+    {
+      "title": "pyproject.toml",
+      "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/pyproject.toml"
+    },
+    {
+      "title": "MIT LICENSE",
+      "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/LICENSE"
+    },
+    {
+      "title": "Architecture",
+      "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/docs/architecture.md"
+    },
+    {
+      "title": "Known limitations",
+      "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/docs/limitations.md"
+    },
+    {
+      "title": "Getting started",
+      "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/docs/getting-started.md"
+    },
+    {
+      "title": "Simple interface",
+      "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/docs/simple-interface.md"
+    },
+    {
+      "title": "Reproducibility guide",
+      "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/docs/REPRODUCIBILITY.md"
+    },
+    {
+      "title": "Evidence contract",
+      "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/docs/evidence-contract.md"
+    },
+    {
+      "title": "Release status",
+      "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/docs/release-status.md"
+    },
+    {
+      "title": "Research paper",
+      "url": "https://arxiv.org/abs/2610.37786"
+    }
+  ],
+  "improvements": [
+    {
+      "title": "ميزانية تكلفة وزمن لكل تشغيل",
+      "problem": "اعتماد Builder وVerifier على API يجعل تكلفة المهمة وعدد محاولات الإصلاح غير واضحين قبل التشغيل.",
+      "approach": "تسجيل usage والمدة والمحاولات لكل مرحلة، وإضافة سقف اختياري يوقف العمل قبل تجاوز الميزانية.",
+      "stack": "Python وSQLite وJSONL وواجهات usage الخاصة بالمزود.",
+      "steps": [
+        "حدد حقول token usage والمدة لكل مرحلة.",
+        "سجل التكلفة الفعلية عندما يوفر المزود بياناتها.",
+        "أضف سقف ميزانية وتحذيرًا قبل الإيقاف.",
+        "قارن تكلفة JIT وFull على مجموعة مواقع مصرح بها.",
+        "انشر تقريرًا يوضح الحالات التي لا يقدم فيها المزود usage."
+      ],
+      "metric": "التكلفة لكل مهمة مقبولة، زمن الإنجاز، وعدد مرات تجاوز الميزانية.",
+      "difficulty": "متوسطة (تقدير؛ 2–4 أسابيع).",
+      "risks": "اختلاف مزودي API في بيانات الفوترة؛ لا ينبغي تخمين تكلفة عند غياب usage موثوق.",
+      "sources": [
+        {
+          "title": "WebAnything pyproject and README",
+          "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/README.md"
+        },
+        {
+          "title": "Responses API documentation",
+          "url": "https://platform.openai.com/docs/api-reference/responses"
+        }
+      ]
+    },
+    {
+      "title": "حزمة fixtures محلية مرخصة وقابلة لإعادة التشغيل",
+      "problem": "المخزون التاريخي لا يتضمن أشجار المواقع والوسائط الكاملة، وإعادة البناء الحي تتأثر بتغير المصدر.",
+      "approach": "إنشاء مواقع اصطناعية صغيرة ببيانات ووسائط أصلية أو مرخصة، مع بصمات ثابتة وحالات reset معلنة.",
+      "stack": "Flask وSQLite وPlaywright وDocker وSHA-256.",
+      "steps": [
+        "اختر حالات اختبار اصطناعية لا تحتوي بيانات مستخدمين.",
+        "أنشئ صفحات ومسارات محلية بوسائط مرخصة.",
+        "ثبت حالة قاعدة البيانات ومعرفات العناصر والوقت.",
+        "أضف reset endpoint واختبارات hash قبل وبعد التحقق.",
+        "انشر manifest يوضح الترخيص وحدود كل fixture."
+      ],
+      "metric": "نجاح إعادة الضبط وتطابق البصمات وقابلية إعادة إنتاج المهمة.",
+      "difficulty": "متوسطة إلى مرتفعة (تقدير؛ 3–5 أسابيع).",
+      "risks": "تسرب أصول غير مرخصة أو الخلط بين fixture اصطناعي ومصدر حي؛ يلزم provenance واضح.",
+      "sources": [
+        {
+          "title": "WebAnything reproducibility guide",
+          "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/docs/REPRODUCIBILITY.md"
+        },
+        {
+          "title": "WebAnything evidence contract",
+          "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/docs/evidence-contract.md"
+        }
+      ]
+    },
+    {
+      "title": "لوحة تغطية واضحة لنطاق Full وJIT",
+      "problem": "نجاح التحقق يثبت نطاقًا مجمدًا فقط ولا يعني اكتشاف كل المسارات أو الأسطح المخفية.",
+      "approach": "عرض graph للمسارات والعناصر المكتشفة والمستثناة مع سبب الاستثناء ومستوى الدليل.",
+      "stack": "Python وJSON Schema وPlaywright وواجهة SVG.",
+      "steps": [
+        "استخرج route/control IDs من Site Contract.",
+        "صنف كل عنصر إلى مكتشف أو مستثنى أو غير محسوم.",
+        "اربط كل قرار بدليل المصدر وتاريخ الالتقاط.",
+        "اعرض نسبة التغطية حسب النطاق لا كنسبة عامة مضللة.",
+        "اختبر أن manifest لا يعلن اكتمالًا عند وجود عناصر غير محسومة."
+      ],
+      "metric": "تغطية المسارات والعناصر داخل النطاق، وعدد الاستثناءات غير المبررة.",
+      "difficulty": "مرتفعة (تقدير؛ 4–6 أسابيع).",
+      "risks": "قد توحي نسبة التغطية باكتمال الموقع كله؛ يجب إبقاء حدود النطاق مرئية.",
+      "sources": [
+        {
+          "title": "WebAnything limitations",
+          "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/docs/limitations.md"
+        },
+        {
+          "title": "WebAnything architecture",
+          "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/docs/architecture.md"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "Benchmark عربي لمواقع الوثائق العامة",
+      "problem": "تفتقر تقييمات وكلاء الويب إلى مجموعة عربية موحدة من مهام البحث والتنقل في وثائق عامة.",
+      "approach": "إنشاء مواقع وثائق اصطناعية عربية بترخيص واضح ومهام ثابتة ومدقق مستقل.",
+      "stack": "Python وPlaywright وFlask وJSONL.",
+      "steps": [
+        "حدد مهام قراءة وبحث لا تتطلب تسجيل دخول.",
+        "أنشئ صفحات عربية اصطناعية وروابط ثابتة.",
+        "عرّف expected states ومقاييس الإجابة.",
+        "أضف reset وتحققًا مستقلًا لكل مهمة.",
+        "انشر النتائج مع manifest وlicense."
+      ],
+      "metric": "نجاح المهام ودقة الاستشهاد بالصفحة الصحيحة وقابلية التكرار.",
+      "difficulty": "متوسطة (تقدير؛ 3–4 أسابيع).",
+      "risks": "التحيز اللغوي أو تشابه المحتوى مع مصادر محمية؛ استخدم نصوصًا أصلية.",
+      "sources": [
+        {
+          "title": "WebAnything paper",
+          "url": "https://arxiv.org/abs/2610.37786"
+        },
+        {
+          "title": "BrowserGym",
+          "url": "https://github.com/ServiceNow/BrowserGym"
+        }
+      ]
+    },
+    {
+      "title": "بيئة تدريب اصطناعية لخدمات جامعية",
+      "problem": "تحتاج اختبارات الوكلاء إلى تدفقات متعددة الخطوات دون استخدام حسابات طلاب أو بيانات جامعية حقيقية.",
+      "approach": "بناء بوابة محلية خيالية ببيانات اصطناعية لمسارات جدول ومحاضرات وإعلانات، مع صلاحيات اختبار واضحة.",
+      "stack": "Flask وSQLite وPlaywright وDocker.",
+      "steps": [
+        "صمم بيانات جامعية خيالية بالكامل.",
+        "أنشئ صفحات محلية وتدفقات غير حساسة.",
+        "حدد حالات بدء ونهاية قابلة لإعادة الضبط.",
+        "أضف verifier يقرأ الحالة مباشرة لا نص الصفحة فقط.",
+        "قِس نجاح المسارات وإعادة الضبط."
+      ],
+      "metric": "نجاح المهام وتطابق حالة قاعدة البيانات بعد التنفيذ وإعادة الضبط.",
+      "difficulty": "متوسطة (تقدير؛ 2–4 أسابيع).",
+      "risks": "أي تشابه مع بوابة حقيقية أو بيانات شخصية قد يسبب لبسًا؛ استخدم أسماء ومحتوى خياليًا.",
+      "sources": [
+        {
+          "title": "WebAnything architecture",
+          "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/docs/architecture.md"
+        },
+        {
+          "title": "Playwright docs",
+          "url": "https://playwright.dev/docs/intro"
+        }
+      ]
+    },
+    {
+      "title": "مقارنة مستقلة بين استراتيجيات Verifier",
+      "problem": "قد تختلف نتائج التحقق باختلاف طريقة قياس التفاعل والخصوصية وثبات المرشح.",
+      "approach": "تشغيل عدة مدققات على fixtures ثابتة ومقارنة نتائجها مع oracle مستقل.",
+      "stack": "Python وpytest وJSON Schema وPlaywright.",
+      "steps": [
+        "أنشئ مجموعة fixtures مرخصة ثابتة.",
+        "عرّف oracle مستقلًا لكل مهمة.",
+        "شغّل المدققات بإعدادات موثقة.",
+        "قارن false positives وfalse negatives.",
+        "انشر نتائج قابلة لإعادة الإنتاج."
+      ],
+      "metric": "معدل الخطأ في التحقق واتساق النتائج بين الإصدارات.",
+      "difficulty": "مرتفعة (تقدير؛ 4–6 أسابيع).",
+      "risks": "تسرب oracle إلى المدقق أو overfitting على مجموعة صغيرة؛ افصل بيانات التطوير عن التقييم.",
+      "sources": [
+        {
+          "title": "WebAnything evidence contract",
+          "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/docs/evidence-contract.md"
+        },
+        {
+          "title": "WebArena repository",
+          "url": "https://github.com/web-arena-x/webarena"
+        }
+      ]
+    }
+  ],
+  "religious": []
+}

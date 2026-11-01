@@ -153,19 +153,87 @@
       "language": null,
       "measuredAt": "2026-11-01T05:42:38+03:00"
     },
-    "executionStatus": "not_run"
+    "executionStatus": "not_run",
+    "researchOnlyAdded": "china-qijizhifeng/Web-Anything",
+    "researchOnlyDossier": "editorial/library/webanything-dossier-2026-11-01-0542.json",
+    "feedNewsId": "0b73660e31921f56d4",
+    "feedProjectId": null,
+    "publicProjectCard": false,
+    "webAnythingLicense": "MIT for authored code only; third-party source-site content and media remain separately licensed",
+    "webAnythingMetrics": {
+      "stars": 3,
+      "forks": 1,
+      "openIssues": 9,
+      "archived": false,
+      "pushedAt": "2026-10-30T04:28:28Z",
+      "updatedAt": "2026-10-31T04:54:38Z",
+      "measuredAt": "2026-11-01T05:42:38+03:00"
+    },
+    "webAnythingExecutionStatus": "not_run"
   },
   "library": {
-    "previousCount": 40,
-    "newCount": 41,
+    "previousCount": 41,
+    "newCount": 42,
     "archived": 2,
-    "nonArchived": 39,
+    "nonArchived": 40,
     "inCurrentFeed": 6,
-    "notInFeed": 35,
+    "notInFeed": 36,
     "licenseNeedsUpstreamVerification": 7,
-    "appendedPriority": 41
+    "appendedPriority": 42
   },
   "topThreeProposals": [
+    {
+      "title": "Benchmark عربي لمواقع الوثائق العامة",
+      "problem": "تحتاج تقييمات وكلاء الويب إلى مهام عربية قابلة للتكرار بدل الاعتماد على مواقع حية متغيرة.",
+      "approach": "بناء مواقع وثائق اصطناعية عربية بترخيص واضح، ومهام ثابتة، ومدقق مستقل.",
+      "stack": "Python وPlaywright وFlask وJSONL.",
+      "steps": [
+        "حدد مهام بحث وتنقل لا تتطلب تسجيل دخول.",
+        "أنشئ صفحات عربية اصطناعية وروابط ثابتة.",
+        "عرّف الحالات المتوقعة ومصادر الإجابة.",
+        "أضف reset ومدققًا يقرأ حالة البيئة مباشرة.",
+        "انشر manifest ونتائج قابلة لإعادة الإنتاج."
+      ],
+      "metric": "نجاح المهام، ودقة الوصول إلى الصفحة الصحيحة، وقابلية إعادة التكرار.",
+      "difficulty": "متوسطة (تقدير؛ 3–4 أسابيع).",
+      "risks": "حقوق المحتوى والتحيز اللغوي؛ استخدم نصوصًا أصلية وبيانات اصطناعية فقط.",
+      "sources": [
+        {
+          "title": "WebAnything paper",
+          "url": "https://arxiv.org/abs/2610.37786"
+        },
+        {
+          "title": "WebAnything architecture",
+          "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/docs/architecture.md"
+        }
+      ]
+    },
+    {
+      "title": "ميزانية تكلفة وزمن لكل تشغيل لوكلاء الويب",
+      "problem": "استخدام API في Builder وVerifier يجعل تكلفة المهمة ومحاولات الإصلاح غير واضحة.",
+      "approach": "تسجيل usage والمدة والمحاولات لكل مرحلة وإضافة سقف اختياري للميزانية.",
+      "stack": "Python وSQLite وJSONL وواجهات usage للمزود.",
+      "steps": [
+        "حدد حقول token usage والمدة لكل مرحلة.",
+        "سجل التكلفة الفعلية عندما يوفر المزود بيانات موثوقة.",
+        "أضف سقفًا وتحذيرًا قبل الإيقاف.",
+        "قارن تكلفة JIT وFull على مواقع مصرح بها.",
+        "وثق الحالات التي لا يعرض فيها المزود بيانات فوترة."
+      ],
+      "metric": "التكلفة لكل مهمة مقبولة، زمن الإنجاز، وعدد تجاوزات الميزانية.",
+      "difficulty": "متوسطة (تقدير؛ 2–4 أسابيع).",
+      "risks": "اختلاف المزودين في بيانات الاستخدام؛ لا تخمّن التكلفة عند غياب بيانات موثوقة.",
+      "sources": [
+        {
+          "title": "WebAnything README",
+          "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/README.md"
+        },
+        {
+          "title": "WebAnything pyproject",
+          "url": "https://github.com/china-qijizhifeng/Web-Anything/blob/main/pyproject.toml"
+        }
+      ]
+    },
     {
       "title": "مختبر أمثلة JavaScript أصلية مع اختبارات",
       "problem": "القراءة وحدها لا تكشف دائمًا الفروق بين النطاقات والوعود والأنواع وسلوك وقت التشغيل.",
@@ -191,58 +259,6 @@
           "url": "https://nodejs.org/docs/latest/api/"
         }
       ]
-    },
-    {
-      "title": "مقياس جودة وخصوصية للبيانات المصطنعة العربية",
-      "problem": "قد تحسن البيانات المصطنعة وفرة التدريب لكنها لا تضمن وحدها الخصوصية أو تمثيل اللهجات والفئات.",
-      "approach": "بناء مجموعة تقييم مرخصة تقيس المنفعة الإحصائية ومخاطر إعادة التعرف والتحيز قبل الاستخدام.",
-      "stack": "Python وpandas وSDV وscikit-learn وJupyter.",
-      "steps": [
-        "حدد حالة استخدام وبيانات عامة أو مصطنعة مرخصة.",
-        "أنشئ مجموعة مرجعية لا تحتوي بيانات شخصية حقيقية.",
-        "قِس الفروق الإحصائية والمنفعة للمهمة.",
-        "نفذ تقييمًا مستقلًا لمخاطر إعادة التعرف والتحيز.",
-        "وثق حدود البيانات ومصدرها وقرار استخدامها."
-      ],
-      "metric": "فجوة المنفعة، ومعدل نجاح اختبارات الخصوصية، وفروق الأداء بين الفئات.",
-      "difficulty": "مرتفعة (تقدير؛ 4–6 أسابيع).",
-      "risks": "قد توحي المقاييس بأمان زائف؛ يلزم تجنب البيانات الحساسة ومراجعة مختص خصوصية.",
-      "sources": [
-        {
-          "title": "SDAIA synthetic data study",
-          "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/synthetic-data.pdf"
-        },
-        {
-          "title": "SDV documentation",
-          "url": "https://docs.sdv.dev/sdv/"
-        }
-      ]
-    },
-    {
-      "title": "بيئة تقييم قابلة لإعادة الضبط لوكلاء الويب",
-      "problem": "نتائج وكلاء الويب يصعب تكرارها عندما تتغير المواقع وحالة الجلسة والبيانات.",
-      "approach": "إنشاء بيئات محلية مصرح بها مع حالات ابتدائية ثابتة ومدقق مستقل يقارن السلوك بالمصدر.",
-      "stack": "Python وPlaywright وDocker وJSONL.",
-      "steps": [
-        "اختر موقعًا عامًا تسمح شروطه بالاختبار.",
-        "وثق الحالات الابتدائية والتفاعلات المسموح بها.",
-        "أنشئ نسخة اختبار محلية ببيانات اصطناعية.",
-        "أضف زر إعادة ضبط ومدققًا مستقلًا.",
-        "قارن قابلية التكرار ودقة المهمة مع خط أساس."
-      ],
-      "metric": "نجاح إعادة الضبط، وقابلية تكرار المهام، ودقة التحقق من المصدر.",
-      "difficulty": "مرتفعة (تقدير؛ 4–8 أسابيع).",
-      "risks": "شروط المواقع والخصوصية؛ يجب عدم جمع بيانات خاصة أو تجاوز ضوابط الدخول.",
-      "sources": [
-        {
-          "title": "WebAnything preprint",
-          "url": "https://arxiv.org/abs/2610.37786"
-        },
-        {
-          "title": "Playwright documentation",
-          "url": "https://playwright.dev/docs/intro"
-        }
-      ]
     }
   ],
   "sourcesAndLimitations": {
@@ -264,7 +280,12 @@
     "exclusions": [
       "Security incident articles with operational exploit/malware detail were not selected for this teen-facing content batch.",
       "The SRE deskilling essay was excluded because its original publication date is older than the feed discovery date."
-    ]
+    ],
+    "projectDossiersRead": [
+      "You-Dont-Know-JS README, Get Started, LICENSE.txt and CONTRIBUTING.md",
+      "WebAnything README, pyproject.toml, LICENSE, architecture, limitations, getting-started, simple-interface, reproducibility, evidence-contract and release-status"
+    ],
+    "webAnythingEvidenceBoundary": "README says 244 historical site artifacts are a manifest; source trees and third-party media are external and not bundled. Reproducibility guide says 113 sites received deeper review and 131 remained at basic observation. No code execution or tests were performed for this dossier."
   },
   "execution": {
     "localCommandsNotRun": [
@@ -293,5 +314,5 @@
     "pagesDirectFetch": "DisabledError",
     "newEditorialPublished": false
   },
-  "note": "This report supersedes the earlier 2026-11-01 02:43 report's incoming classification and PR #76 active counts. It preserves all main editorial records and removes only the inactive Binance row introduced by the old PR branch; the GM row remains pending."
+  "note": "This report supersedes the earlier 2026-11-01 02:43 report's incoming classification and PR #76 active counts. It preserves all main editorial records and removes only the inactive Binance row introduced by the old PR branch; the GM row remains pending. WebAnything is stored as research-only priority 42 because its feed record is a news item about the paper, not a project card; no public project card was created. Its MIT license applies to authored code, not third-party site content."
 }
