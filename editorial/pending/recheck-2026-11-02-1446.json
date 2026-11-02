@@ -144,12 +144,28 @@
     "officialImport": "not_run",
     "localUnitTests": "not_run",
     "structuralEquivalent": "passed for 10 entries and exact current feed IDs/URLs",
-    "officialCI": "pending after PR creation"
+    "officialCI": {
+      "state": "success",
+      "runId": 41441610042,
+      "jobId": 125264586533,
+      "unitTests": 30,
+      "editorialEntriesValidated": 637,
+      "javascriptSyntax": "passed",
+      "scope": "Validates site/data/editorial.json on PR merge ref; not the incoming file directly."
+    }
   },
   "publication": {
     "newContentPublished": false,
     "mergeAllowed": false,
-    "reason": "الدمج على main يشغّل workflow النشر القائم الذي يستدعي update_feed.py ويكتب feed.json وseen.json وstatus.json؛ لم يُدمج حفاظًا على القيد."
+    "reason": "الدمج على main يشغّل workflow النشر القائم الذي يستدعي update_feed.py ويكتب feed.json وseen.json وstatus.json؛ لم يُدمج حفاظًا على القيد.",
+    "latestSuccessfulScheduledRun": 41433056990,
+    "artifactId": 13135741085,
+    "artifactCreatedAt": "2026-11-02T10:59:18Z",
+    "artifactFeedItems": 800,
+    "artifactEditorialEntries": 627,
+    "pr79NewIdsPresentInArtifact": 0,
+    "directPagesFetch": "DisabledError",
+    "detailPagesOpened": false
   },
   "workflowSafety": {
     "checkWorkflow": "pull_request only; unittest, scripts/editorial.py validate, JavaScript syntax checks; no deploy/write",
@@ -165,5 +181,62 @@
     "site/styles.css",
     ".github/workflows/check.yml",
     ".github/workflows/update-and-deploy.yml"
-  ]
+  ],
+  "runUpdate": {
+    "checkedAt": "2026-11-02T20:53:37+03:00",
+    "mainSha": "012536731c6d6d82d430fca40517e9ada31034f7",
+    "incomingReaudit": {
+      "files": 63,
+      "occurrences": 592,
+      "activeExactAndAlreadyImported": 237,
+      "historicalImportedOutsideFeed": 350,
+      "seenOnlyPending": 5,
+      "feedUrlMismatches": 0,
+      "editorialUrlMismatches": 0,
+      "confirmedExpired": 0
+    },
+    "incomingStructuralCheck": {
+      "entries": 10,
+      "news": 9,
+      "projects": 1,
+      "errors": 0,
+      "exactFeedIdUrlMismatches": 0,
+      "oldMainEditorialRecordsLost": 0,
+      "oldMainEditorialRecordsAltered": 0,
+      "officialCliValidate": "not_run",
+      "officialCliImport": "not_run"
+    },
+    "officialPullRequestCI": {
+      "runId": 41441610042,
+      "jobId": 125264586533,
+      "state": "success",
+      "unitTests": 30,
+      "editorialEntriesValidated": 637,
+      "javascriptSyntax": "passed",
+      "scope": "CI validated site/data/editorial.json; it did not invoke validate against the incoming file itself."
+    },
+    "publishedArtifact": {
+      "scheduledRunId": 41433056990,
+      "artifactId": 13135741085,
+      "artifactCreatedAt": "2026-11-02T10:59:18Z",
+      "feedItems": 800,
+      "editorialEntries": 627,
+      "newPR79IdsPresent": 0,
+      "sourceStatus": "partial",
+      "directPagesFetch": "DisabledError",
+      "detailPagesOpened": false
+    },
+    "decision": "PR79 remains open and unmerged. Merging to main triggers the existing publish workflow, which runs update_feed.py and stages feed.json, seen.json, and status.json; those protected files must remain untouched."
+  },
+  "libraryRefresh": {
+    "status": "separate research-only update on existing PR #78 branch",
+    "path": "editorial/library/previous-eight-refresh-2026-11-02-2053.json",
+    "measurementAt": "2026-11-02T17:53:37Z",
+    "projectsReviewed": 8,
+    "active": 8,
+    "archived": 0,
+    "feedMatches": 1,
+    "researchOnly": 7,
+    "testEvidenceCount": 0
+  }
 }
