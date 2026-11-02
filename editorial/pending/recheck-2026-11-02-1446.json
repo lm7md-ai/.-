@@ -238,5 +238,47 @@
     "feedMatches": 1,
     "researchOnly": 7,
     "testEvidenceCount": 0
+  },
+  "crossPRReconciliation": {
+    "checkedAt": "2026-11-02T20:53:37+03:00",
+    "pr78": {
+      "number": 78,
+      "branch": "content/nabdh-2026-11-01-1808",
+      "baseSha": "37f9e517bae3773506fd20b83351fc99107a41ad",
+      "editorialCount": 645,
+      "newIdsVsMain": 18,
+      "incomingFiles": 4,
+      "incomingOccurrences": 22,
+      "oldRecordsLost": 0,
+      "oldRecordsAltered": 0
+    },
+    "pr79": {
+      "number": 79,
+      "branch": "content/nabdh-2026-11-02-1446",
+      "baseSha": "012536731c6d6d82d430fca40517e9ada31034f7",
+      "editorialCount": 637,
+      "newIdsVsMain": 10,
+      "oldRecordsLost": 0,
+      "oldRecordsAltered": 0
+    },
+    "sameIdsInBothEditorialChanges": [
+      "d674dea922625d0be8",
+      "967be99077d13f07b2"
+    ],
+    "sharedIncomingIds": [
+      "a99fcf66497304880d",
+      "3a06dd8071d8d58746",
+      "a15f337ab2515f14de",
+      "170fecee8f048681f1",
+      "d674dea922625d0be8",
+      "967be99077d13f07b2"
+    ],
+    "pr78IncomingNotInPr78EditorialButIncludedInPr79": [
+      "a99fcf66497304880d",
+      "3a06dd8071d8d58746",
+      "a15f337ab2515f14de",
+      "170fecee8f048681f1"
+    ],
+    "decision": "لا تدمج PR78 وPR79 معًا دون مصالحة IDs. سجلا d674... و967... موجودان بالفعل في editorial.json لفرع PR78 ويعاد إضافتهما في PR79؛ والأربعة الأخرى المشتركة من incoming PR78 لم تكن مستوردة هناك وأُضيفت في PR79. لم تُحذف سجلات أو تُبدّل هويات؛ أبقي الطلبين مفتوحين إلى حين حل تعارض الدمج وحماية ملفات feed/seen/status."
   }
 }
