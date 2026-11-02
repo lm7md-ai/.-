@@ -1,0 +1,331 @@
+{
+  "version": 1,
+  "kind": "github_repository_metadata_refresh",
+  "title": "تحديث قياسات المشاريع الثمانية السابقة",
+  "publicationStatus": "unpublished_research_only",
+  "published": false,
+  "siteVisible": false,
+  "runAt": "2026-11-02T20:53:37+03:00",
+  "measurementAt": "2026-11-02T17:53:37Z",
+  "repository": "https://github.com/lm7md-ai/.-",
+  "mainSha": "012536731c6d6d82d430fca40517e9ada31034f7",
+  "pr78BaseSha": "37f9e517bae3773506fd20b83351fc99107a41ad",
+  "source": "GitHub REST API repository metadata, measured 2026-11-02T17:53:37Z",
+  "methodology": {
+    "starsForksOpenIssues": "قيم تراكمية وقت القياس؛ لا تمثل نموًا يوميًا ولا مقياسًا للجودة.",
+    "activitySignal": "pushedAt هو الإشارة الأساسية للنشاط البرمجي؛ updatedAt ثانوي وقد يتغير بسبب Issues أو metadata.",
+    "license": "license.spdx_id هو تصنيف GitHub المكتشف؛ لا يغني عن قراءة ملفات الترخيص الأصلية.",
+    "futureTimestamps": "قورنت أوقات API بوقت القياس الحالي؛ أي timestamp لاحق للقياس يعامل كشذوذ ولا يُستخدم كدليل نشاط."
+  },
+  "libraryState": {
+    "catalogPath": "editorial/library/catalog-2026-11-01-0542.json",
+    "catalogEntries": 42,
+    "archived": 2,
+    "nonArchived": 40,
+    "licenseNeedsUpstreamVerification": 7,
+    "previousEightReviewed": 8,
+    "previousEightActive": 8,
+    "previousEightArchived": 0,
+    "previousEightInCurrentFeed": 1,
+    "previousEightResearchOnly": 7,
+    "improvementsAndSpinoffs": 14,
+    "testEvidenceCount": 0,
+    "newCatalogProjectsAdded": 0,
+    "reasonNoNewCatalogEntries": "المكتبة البحثية الحالية تضم 42 مشروعًا، أي تتجاوز الهدف التقريبي 30. لم أضف أسماء جديدة دون قراءة README والترخيص والتوثيق بما يكفي لتكوين بطاقة بحثية مستقلة."
+  },
+  "projects": [
+    {
+      "repository": "patchy631/ai-engineering-hub",
+      "priority": 1,
+      "status": "active_not_archived",
+      "archived": false,
+      "license": "MIT",
+      "metrics": {
+        "stars": 40908,
+        "forks": 6538,
+        "openIssues": 135,
+        "pushedAt": "2026-11-01T04:39:16Z",
+        "updatedAt": "2026-11-02T17:47:27Z"
+      },
+      "publicationStatus": "published_existing_card",
+      "feedId": "fe0e6bfdbdd5822139",
+      "url": "https://github.com/patchy631/ai-engineering-hub",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://api.github.com/repos/patchy631/ai-engineering-hub"
+        },
+        {
+          "title": "README",
+          "url": "https://github.com/patchy631/ai-engineering-hub/blob/main/README.md"
+        },
+        {
+          "title": "MIT license",
+          "url": "https://github.com/patchy631/ai-engineering-hub/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "repository": "googleapis/python-genai",
+      "priority": 1,
+      "status": "active_not_archived",
+      "archived": false,
+      "license": "Apache-2.0",
+      "metrics": {
+        "stars": 4054,
+        "forks": 1056,
+        "openIssues": 370,
+        "pushedAt": "2026-10-31T00:34:25Z",
+        "updatedAt": "2026-11-02T03:57:35Z"
+      },
+      "publicationStatus": "research_only_not_in_feed",
+      "feedId": null,
+      "url": "https://github.com/googleapis/python-genai",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://api.github.com/repos/googleapis/python-genai"
+        },
+        {
+          "title": "Official SDK documentation",
+          "url": "https://googleapis.github.io/python-genai/"
+        },
+        {
+          "title": "README",
+          "url": "https://github.com/googleapis/python-genai/blob/main/README.md"
+        },
+        {
+          "title": "Apache-2.0 license",
+          "url": "https://github.com/googleapis/python-genai/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "repository": "Millillion/lasm",
+      "priority": 6,
+      "status": "active_not_archived",
+      "archived": false,
+      "license": "MIT",
+      "licenseNote": "starter templates/examples include MIT-0; review the relevant subdirectory license before redistributing templates.",
+      "metrics": {
+        "stars": 89,
+        "forks": 6,
+        "openIssues": 13,
+        "pushedAt": "2026-11-02T17:52:02Z",
+        "updatedAt": "2026-11-02T17:51:21Z"
+      },
+      "publicationStatus": "research_only_not_in_feed",
+      "feedId": null,
+      "url": "https://github.com/Millillion/lasm",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://api.github.com/repos/Millillion/lasm"
+        },
+        {
+          "title": "README",
+          "url": "https://github.com/Millillion/lasm/blob/main/README.md"
+        },
+        {
+          "title": "License audit",
+          "url": "https://github.com/Millillion/lasm/blob/main/docs/LICENSE_AUDIT.md"
+        },
+        {
+          "title": "MIT license",
+          "url": "https://github.com/Millillion/lasm/blob/main/LICENSE"
+        },
+        {
+          "title": "MIT-0 starter license",
+          "url": "https://github.com/Millillion/lasm/blob/main/LICENSE-MIT-0"
+        }
+      ]
+    },
+    {
+      "repository": "microsoft/markitdown",
+      "priority": 4,
+      "status": "active_not_archived",
+      "archived": false,
+      "license": "MIT",
+      "metrics": {
+        "stars": 193548,
+        "forks": 14519,
+        "openIssues": 787,
+        "pushedAt": "2026-10-28T15:33:14Z",
+        "updatedAt": "2026-11-02T17:44:48Z"
+      },
+      "publicationStatus": "research_only_not_in_feed",
+      "feedId": null,
+      "url": "https://github.com/microsoft/markitdown",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://api.github.com/repos/microsoft/markitdown"
+        },
+        {
+          "title": "README",
+          "url": "https://github.com/microsoft/markitdown/blob/main/README.md"
+        },
+        {
+          "title": "Python package requirements",
+          "url": "https://github.com/microsoft/markitdown/blob/main/packages/markitdown/pyproject.toml"
+        },
+        {
+          "title": "MIT license",
+          "url": "https://github.com/microsoft/markitdown/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "repository": "yc-software/minecraft-agent-harness",
+      "priority": 7,
+      "status": "active_not_archived",
+      "archived": false,
+      "license": "MIT",
+      "metrics": {
+        "stars": 112,
+        "forks": 9,
+        "openIssues": 1,
+        "pushedAt": "2026-10-29T20:30:45Z",
+        "updatedAt": "2026-11-02T17:33:26Z"
+      },
+      "publicationStatus": "research_only_not_in_feed",
+      "feedId": null,
+      "url": "https://github.com/yc-software/minecraft-agent-harness",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://api.github.com/repos/yc-software/minecraft-agent-harness"
+        },
+        {
+          "title": "README",
+          "url": "https://github.com/yc-software/minecraft-agent-harness/blob/main/README.md"
+        },
+        {
+          "title": "MIT license",
+          "url": "https://github.com/yc-software/minecraft-agent-harness/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "repository": "NVIDIA/OpenShell",
+      "priority": 2,
+      "status": "active_not_archived",
+      "archived": false,
+      "license": "Apache-2.0",
+      "metrics": {
+        "stars": 20963,
+        "forks": 2057,
+        "openIssues": 578,
+        "pushedAt": "2026-11-02T17:43:29Z",
+        "updatedAt": "2026-11-02T17:51:54Z"
+      },
+      "docsVersion": "v0.1.6",
+      "platformNote": "Windows WSL2 path is experimental in the v0.1.6 support matrix; do not generalize it to full native Windows support.",
+      "publicationStatus": "research_only_not_in_feed",
+      "feedId": null,
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://api.github.com/repos/NVIDIA/OpenShell"
+        },
+        {
+          "title": "Official v0.1.6 support matrix",
+          "url": "https://docs.nvidia.com/openshell/v0.1.6/about/support-matrix"
+        },
+        {
+          "title": "Official architecture",
+          "url": "https://docs.nvidia.com/openshell/v0.1.6/about/architecture"
+        },
+        {
+          "title": "Apache-2.0 license",
+          "url": "https://github.com/NVIDIA/OpenShell/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "repository": "pydantic/pydantic-ai",
+      "priority": 3,
+      "status": "active_not_archived",
+      "archived": false,
+      "license": "MIT",
+      "metrics": {
+        "stars": 20997,
+        "forks": 3081,
+        "openIssues": 1758,
+        "pushedAt": "2026-11-02T17:53:23Z",
+        "updatedAt": "2026-11-02T17:53:25Z"
+      },
+      "publicationStatus": "research_only_not_in_feed",
+      "feedId": null,
+      "url": "https://github.com/pydantic/pydantic-ai",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://api.github.com/repos/pydantic/pydantic-ai"
+        },
+        {
+          "title": "Official documentation",
+          "url": "https://pydantic.dev/docs/ai/"
+        },
+        {
+          "title": "README",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/README.md"
+        },
+        {
+          "title": "MIT license",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "repository": "astral-sh/uv",
+      "priority": 5,
+      "status": "active_not_archived",
+      "archived": false,
+      "license": "MIT OR Apache-2.0",
+      "apiDetectedLicense": "Apache-2.0",
+      "licenseNote": "Repository offers both MIT and Apache-2.0 license files; do not reduce the dual-license statement to the single API-detected SPDX value.",
+      "metrics": {
+        "stars": 91467,
+        "forks": 3744,
+        "openIssues": 3041,
+        "pushedAt": "2026-11-02T16:31:10Z",
+        "updatedAt": "2026-11-02T17:48:29Z"
+      },
+      "publicationStatus": "research_only_not_in_feed",
+      "feedId": null,
+      "url": "https://github.com/astral-sh/uv",
+      "sources": [
+        {
+          "title": "GitHub repository metadata",
+          "url": "https://api.github.com/repos/astral-sh/uv"
+        },
+        {
+          "title": "README",
+          "url": "https://github.com/astral-sh/uv/blob/main/README.md"
+        },
+        {
+          "title": "Official documentation",
+          "url": "https://docs.astral.sh/uv/"
+        },
+        {
+          "title": "MIT license",
+          "url": "https://github.com/astral-sh/uv/blob/main/LICENSE-MIT"
+        },
+        {
+          "title": "Apache-2.0 license",
+          "url": "https://github.com/astral-sh/uv/blob/main/LICENSE-APACHE"
+        }
+      ]
+    }
+  ],
+  "topThreeResearchPriorities": [
+    "NVIDIA/OpenShell",
+    "googleapis/python-genai",
+    "pydantic/pydantic-ai"
+  ],
+  "interpretation": "هذه اللقطة لا تضيف بطاقات عامة ولا تثبت جودة المشاريع. سبعة من المشاريع الثمانية ليست في feed الحالي، ولذلك بقيت أبحاثًا غير منشورة. المشروع الوحيد في feed هو ai-engineering-hub وقد احتُفظ بمعرفه الأصلي.",
+  "testEvidence": null,
+  "note": "لم تُشغّل المشاريع أو اختبارات مقترحاتها؛ لا توجد testEvidence. هذا تحديث بيانات GitHub فقط، مع الاعتماد على المراجعة السابقة لقراءة README والتوثيق والتراخيص."
+}

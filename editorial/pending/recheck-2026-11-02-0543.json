@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "runAt": "2026-11-02T05:43:13+03:00",
+  "mainCommit": "8c07e63504542cc55df47725898611e2fa336093",
+  "snapshots": {
+    "feedGeneratedAt": "2026-11-02T00:42:44+00:00",
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialMainEntries": 627,
+    "seenIds": 2434,
+    "statusState": "partial",
+    "lastSuccessfulAt": "2026-11-02T00:42:44+00:00"
+  },
+  "incomingAudit": {
+    "distinctFilesFetched": 63,
+    "recordOccurrences": 592,
+    "classificationBasis": "literal id and url comparison against current main feed and editorial records; counts are occurrences, not unique ids",
+    "counts": {
+      "importedActiveExact": 250,
+      "importedHistoricalExactOutsideFeed": 337,
+      "seenOnly": 5,
+      "eligibleActiveUnimported": 0,
+      "idUrlMismatch": 0,
+      "unmatchedUnknown": 0,
+      "confirmedExpired": 0
+    },
+    "note": "Historical/outside-feed does not by itself mean expired. The latest feed refresh changed 23 items in and 23 out; four incoming appearances moved from active to historical."
+  },
+  "collisions": [
+    {
+      "type": "same_url_different_ids",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "feedId": "e0cbbf211a55e79f34",
+      "historicalEditorialId": "7a99eca9b2ce14d9f5",
+      "action": "preserve both original IDs; do not remap by title"
+    }
+  ],
+  "seenOnly": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "name": "NVIDIA OpenShell",
+      "inFeed": false,
+      "inEditorial": false,
+      "inSeen": true
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "name": "Canva Craft",
+      "inFeed": false,
+      "inEditorial": false,
+      "inSeen": true
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "name": "1Password agent sign-in",
+      "inFeed": false,
+      "inEditorial": false,
+      "inSeen": true
+    },
+    {
+      "id": "87d27a9f8a0972f507",
+      "name": "additional seen-only record 1",
+      "inFeed": false,
+      "inEditorial": false,
+      "inSeen": true
+    },
+    {
+      "id": "65eeab64fed21e0b54",
+      "name": "additional seen-only record 2",
+      "inFeed": false,
+      "inEditorial": false,
+      "inSeen": true
+    }
+  ],
+  "pendingCorrections": [
+    {
+      "id": "0b6a53f2b9c6737c60",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026",
+      "reason": "present in PR #78 editorial branch but absent from current feed after the 2026-11-02 00:42 refresh; preserve the historical record, do not treat as active or delete it"
+    }
+  ],
+  "newEditorialBatch": {
+    "file": "editorial/incoming/nabdh-editorial-2026-11-02-0543.json",
+    "records": [
+      "e621a5b384ce839c8a",
+      "3e4cd1e3871dc6c4ca",
+      "4c7805da92c2787a7f",
+      "dd8ec44c2a87c5d046",
+      "b305dc8ef62c91cd94",
+      "d96aaad619c6c987be",
+      "6b9e2ec2904e020bf0"
+    ],
+    "basis": "article",
+    "count": 7
+  },
+  "projectReview": {
+    "previousEightReviewed": 8,
+    "publishedDossiers": 1,
+    "researchOnlyDossiers": 7,
+    "libraryProjects": 42,
+    "active": 40,
+    "archived": 2,
+    "inFeed": 6,
+    "outsideFeed": 36,
+    "licenseNeedsUpstreamVerification": 7,
+    "proposals": 14,
+    "testEvidenceCount": 0,
+    "newPublicProjectCards": 0,
+    "reasonNoNewCard": "the only un-enriched feed project is an automated financial-trading engine; not promoted to a teen-facing project card"
+  },
+  "workflow": {
+    "name": "Refresh news and deploy Nabdh",
+    "pushToMain": true,
+    "scheduled": true,
+    "dispatch": true,
+    "tests": "python -m unittest discover -s tests -v",
+    "editorialValidation": "python scripts/editorial.py validate",
+    "refreshesAndCommits": [
+      "site/data/feed.json",
+      "site/data/seen.json",
+      "site/data/status.json"
+    ],
+    "deploysPages": true,
+    "mergeDecision": "not merged because the existing main workflow would refresh protected feed/seen/status files on push"
+  },
+  "executionLimits": {
+    "localPythonAvailable": false,
+    "commandsNotRun": [
+      "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-11-02-0543.json",
+      "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-11-02-0543.json",
+      "python -m unittest discover -s tests -v"
+    ],
+    "equivalentChecks": "JSON/schema/HTTPS/timezone and literal feed identity checks performed in JavaScript; official PR CI still required"
+  },
+  "deployment": {
+    "pagesFileCheck": "not yet verified in this run",
+    "publishedDetailPages": "not yet verified in this run",
+    "noClaimOfPublication": true
+  },
+  "protectedFilesUntouched": [
+    "site/data/feed.json",
+    "site/data/seen.json",
+    "site/data/status.json",
+    ".github/workflows/update-and-deploy.yml",
+    "site/app.js",
+    "site/styles.css",
+    "site/index.html"
+  ]
+}

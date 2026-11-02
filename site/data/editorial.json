@@ -31174,6 +31174,411 @@
           "url": "https://doi.org/10.1145/3706598.3713778"
         }
       ]
+    },
+    "967be99077d13f07b2": {
+      "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+      "titleAr": "تجربة تقيس تكلفة بناء تطبيق ويب بوكلاء البرمجة عبر 12 إطار JavaScript",
+      "summaryAr": "اختبر المطور Nolan Lawson بناء تطبيق Pokémon صغيرًا يركز على المحتوى والبحث باستخدام 12 إطارًا أو أسلوبًا للويب. كرر معظم التجارب خمس مرات، بينما استخدم ثلاثًا لـAngular بعد فشل محاولتين. تراوحت كلفة التشغيل النظرية وفق أسعار API التي سجلها بين 2.67 دولار لـHono+htmx و4.97 دولار لـAngular، وكانت درجات الأداء وإمكانية الوصول متقاربة عمومًا. أشار الكاتب إلى تباين ملحوظ بين تشغيلات الوكيل وقياسات Lighthouse.",
+      "whyItMatters": "ينقل اختيار إطار الويب عند استخدام وكلاء البرمجة من الانطباعات إلى قياس التكلفة والوقت والجودة؛ لكنه لا يثبت أن إطارًا واحدًا هو الأفضل لكل التطبيقات.",
+      "audience": "مطورو الويب وفرق التطوير والطلاب الذين يقارنون أطر JavaScript مع وكلاء البرمجة.",
+      "nextSteps": [
+        "كرر المقارنة على تطبيقك ومواصفاتك بدل نقل ترتيب هذه التجربة حرفيًا.",
+        "سجل التكلفة الفعلية والوقت والأخطاء وإمكانية الوصول مع أكثر من تشغيل قبل اعتماد إطار لمشروع طويل الأمد."
+      ],
+      "limitations": "تجربة شخصية لمؤلف واحد على تطبيق محتوى بسيط؛ معظم النتائج وسيط 3–5 تشغيلات؛ التكلفة محسوبة وفق أسعار API وليست المبلغ المدفوع فعليًا؛ والنتائج لا تعمم على تطبيقات تفاعلية أو كبيرة.",
+      "reviewedAt": "2026-11-01T18:08:48+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Nolan Lawson — The AI cost of JavaScript frameworks",
+          "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/"
+        }
+      ]
+    },
+    "2af6b0db11cc663cdd": {
+      "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxQckRFMWpmaXJtRUV0eEdvZ2NJenJvTGJpV29pajN3NGgxTzN1bGxoV0VHb2w3cFZGU1paeWtRYV9fNG91Ym9DVE5rM0tVWENvdy1mbTl2VldZczVJWUN0bEV6azFEaUpLVVRHSGE2NjNNaFNhaUt3UjNWajA4RWpKbWNUYUExOWlfaWhXSDNlbHl0Z3pPOVJaeTNyS2QwT3NFTGFwamJGdmNvTVdVOW5XcGh2cEpNNHpfUDlldU16NEFSNFBBbnNZelVrbmljaW1STmhMUjVUMXAwRTFBa1dqd0xnWG1ScUM5aGxkeVdyVHIxSmU3Z2J5UmJxc2NoT2lEWWM1SHIyU3Fya0Y5ZGtNUndTaGFyYTFWR2ZQMU5jVHRaWWxOTkVMVjV3S3Y?oc=5",
+      "titleAr": "أرامكو وصندوق الاستثمارات يعلنان إغلاق صفقة هيوماين: 49% لأرامكو و51% للصندوق",
+      "summaryAr": "أعلنت أرامكو في 1 نوفمبر 2026 إغلاق صفقة تستحوذ بموجبها، عبر شركة تابعة، على 49% من هيوماين مع احتفاظ صندوق الاستثمارات العامة بنسبة 51%. وقالت أرامكو إن مساهمتها تشمل أصولًا للذكاء الاصطناعي والحوسبة والبيانات، ونحو 9.9 مليارات ريال نقدًا خلال 2026. كما عرض البيان هدفًا مخططًا للوصول إلى 3 غيغاواط من سعة مراكز بيانات الذكاء الاصطناعي بحلول 2030.",
+      "whyItMatters": "قد يؤثر تجميع أصول الحوسبة والبيانات والنماذج ضمن كيان واحد في توافر بنية الذكاء الاصطناعي والخدمات في المنطقة؛ لكن الأثر الفعلي يتوقف على التنفيذ والجدول الزمني.",
+      "audience": "المهتمون ببنية الذكاء الاصطناعي في السعودية، والمطورون والباحثون وصناع السياسات.",
+      "nextSteps": [
+        "تابع إعلانات السعة التشغيلية والخدمات والشراكات الفعلية خلال السنوات المقبلة.",
+        "ميّز بين هدف 3 غيغاواط المعلن وسعة مراكز البيانات التي دخلت الخدمة بالفعل."
+      ],
+      "limitations": "التفاصيل والأهداف من بيان الأطراف المشاركة في الصفقة؛ لا تمثل تحققًا مستقلًا من الإنفاق أو من تنفيذ السعة المخطط لها.",
+      "reviewedAt": "2026-11-01T18:08:48+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Aramco — PIF and Aramco close HUMAIN transaction",
+          "url": "https://www.aramco.com/en/news-media/news/2026/pif-and-aramco-close-humain-transaction-to-accelerate-humains-global-growth"
+        }
+      ]
+    },
+    "e8fb18855e1db6097f": {
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9mSE5qWm42WE9vX2Q2TkVRUE5Cb3hSNkZVVW5lNXh3dEo2bmZfUXZJYjUwa2EwWnp2bENvc19Yc3lQZWYzbVBTeUN6UmppZHU1anNhNkRsRC1oalhRczdz0gFfQVVfeXFMT2ZITmpabjZYT29fZDZORVFQTkJveFI2RlVVbmU1eHd0SjZuZl9RdkliNTBrYTBaenZsQ29zX1hzeVBlZjNtUFN5Q3pSamlkdTVqc2E2RGxELWhqWFFzN3M?oc=5",
+      "titleAr": "ويكيميديا تقدّم مذكرة للمحكمة في قضية حقوق النشر ضد OpenAI وMicrosoft",
+      "summaryAr": "قالت مؤسسة ويكيميديا إنها قدمت في 30 أكتوبر مذكرة صديق للمحكمة في دعوى حقوق النشر المجمعة أمام محكمة نيويورك الفيدرالية. تعرض المذكرة موقفًا يميز بين استخدام المحتوى لتدريب نماذج جديدة، وبين استرجاع المقالات والأعمال وإعادتها للمستخدمين عبر أنظمة RAG؛ وتقول المؤسسة إن تطبيقات الاسترجاع ينبغي أن تحترم شروط ترخيص الناشرين. هذا موقف قانوني للمنظمة وليس حكمًا قضائيًا.",
+      "whyItMatters": "قد يؤثر التمييز بين التدريب والاسترجاع في تصميم أنظمة RAG ومصادر المعرفة وتراخيص المحتوى، كما يوضح أن النزاع القانوني ما زال قيد النظر.",
+      "audience": "مطورو الذكاء الاصطناعي وRAG وفرق البيانات والناشرون والباحثون في السياسات الرقمية.",
+      "nextSteps": [
+        "وثّق مصدر كل مجموعة بيانات ورخصتها قبل استخدامها في التدريب أو الاسترجاع.",
+        "افصل في التصميم بين بيانات التدريب ومصادر الاسترجاع، وراقب الأحكام اللاحقة بدل التعامل مع المذكرة كحكم نهائي."
+      ],
+      "limitations": "المصدر بيان المؤسسة عن مذكرتها وحججها؛ لا يمثل قرار المحكمة ولا يحسم تفسير الاستخدام العادل أو نتيجة الدعاوى.",
+      "reviewedAt": "2026-11-01T18:08:48+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Wikimedia Foundation — The Wikimedia Foundation files to protect open knowledge in New York Times v OpenAI case",
+          "url": "https://wikimediafoundation.org/news/2026/10/30/wikimedia-foundation-amicus-brief-new-york-times-v-open-ai-case/"
+        }
+      ]
+    },
+    "d674dea922625d0be8": {
+      "url": "https://noyb.eu/en/noyb-win-french-electronics-retailer-fnac-darty-fined-eu7-million",
+      "titleAr": "CNIL تفرض غرامة 7 ملايين يورو على شركتي Fnac Darty بسبب تتبع داخل التطبيق دون موافقة",
+      "summaryAr": "قالت هيئة حماية البيانات الفرنسية CNIL إن لجنتها المقيدة فرضت في 22 أكتوبر 2026 غرامة إجمالية قدرها 7 ملايين يورو: 6 ملايين على FNAC DARTY PARTICIPATIONS ومليون على FNAC DIRECT. ووجدت الهيئة متتبعًا داخل التطبيق جمع معرّف المستخدم وسجل التصفح لأغراض توصيات المنتجات وتدريب خوارزمية التوصية دون موافقة مسبقة. كما ألزمت الشركتين بإثبات فاعلية أداة الموافقة الجديدة خلال شهر، مع غرامة تهديدية قدرها 10 آلاف يورو يوميًا عند التأخر.",
+      "whyItMatters": "يوضح القرار أن التحليلات والتخصيص داخل تطبيقات الهاتف قد يتطلبان موافقة صريحة عندما لا يكون التتبع ضروريًا لتقديم الخدمة، حتى إن استُخدمت البيانات لتحسين التوصيات.",
+      "audience": "مطورو تطبيقات الهاتف ومديرو المنتجات ومسؤولو الخصوصية والامتثال.",
+      "nextSteps": [
+        "راجع حزم SDK والمتتبعات قبل الموافقة، واختبر أن رفضها يمنع إرسال البيانات غير الضرورية.",
+        "وثّق غرض كل حقل بيانات ومدة الاحتفاظ به وآلية سحب الموافقة."
+      ],
+      "limitations": "القرار يستند إلى المادة 82 من القانون الفرنسي لحماية البيانات؛ هذا ملخص للقرار المنشور وليس استشارة قانونية عامة أو حكمًا على جميع تطبيقات التجارة الإلكترونية.",
+      "reviewedAt": "2026-11-01T18:08:48+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "CNIL — Cookies and mobile application: 7 million euros fine against FNAC DARTY",
+          "url": "https://www.cnil.fr/en/sanction-app-cookies-fnac"
+        },
+        {
+          "title": "noyb — Fnac Darty fined €7 million",
+          "url": "https://noyb.eu/en/noyb-win-french-electronics-retailer-fnac-darty-fined-eu7-million"
+        }
+      ]
+    },
+    "6fbccef548743a779f": {
+      "url": "https://www.wired.com/story/what-democrats-can-learn-new-york-data-center-moratorium/",
+      "titleAr": "نيويورك تكشف التحدي السياسي والبيئي لتوسّع مراكز البيانات",
+      "summaryAr": "تشرح WIRED كيف أدى قرار نيويورك بتجميد بعض مشاريع مراكز البيانات لمدة عام إلى نقاش حول التوازن بين الاستثمار والوظائف من جهة، واستهلاك الطاقة والمياه والضوضاء والأثر المحلي من جهة أخرى. تذكر المقالة أن الحاكمة أصدرت أمرًا تنفيذيًا في يوليو، بينما بقي مشروع تشريعي أشد قيد النظر عند نشر المقال؛ لذلك لا يصح وصفه بأنه قانون نهائي شامل.",
+      "whyItMatters": "توسع الحوسبة المطلوبة للذكاء الاصطناعي يعتمد على قبول المجتمعات وسعة الشبكة والمياه والطاقة، وليس على توفر الشرائح وحده.",
+      "audience": "مهندسو البنية التحتية السحابية وصناع السياسات ومختصو الاستدامة ومطورو مراكز البيانات.",
+      "nextSteps": [
+        "قارن خطط الطاقة والمياه والتبريد وتقييم الأثر المحلي عند دراسة أي مشروع مركز بيانات.",
+        "تابع حالة الأمر التنفيذي والتشريع في نيويورك بدل الخلط بينهما."
+      ],
+      "limitations": "مقال تحليلي يركز على نيويورك والسياق السياسي الأمريكي؛ لا يمثل دراسة بيئية مستقلة أو حكمًا عامًا على جميع مراكز البيانات.",
+      "reviewedAt": "2026-11-01T18:08:48+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "WIRED — What Democrats Can Learn From New York’s Data Center Moratorium",
+          "url": "https://www.wired.com/story/what-democrats-can-learn-new-york-data-center-moratorium/"
+        }
+      ]
+    },
+    "ff0962dfe1ee74d3f2": {
+      "url": "https://www.wired.com/story/google-vids-free-video-editor-inside-google-drive/",
+      "titleAr": "Google توسّع الوصول المجاني إلى Google Vids لإنشاء فيديوهات عالية الدقة باستخدام Gemini Omni 1.1 Flash",
+      "summaryAr": "في إعلان رسمي بتاريخ 23 سبتمبر 2026، قالت Google إن أصحاب حسابات Google وGoogle Workspace يستطيعون إنشاء فيديوهات بلا رسوم عبر Google Vids باستخدام Gemini Omni 1.1 Flash. تشمل الأدوات تمديد المشاهد وضبط مدة المقطع وإنتاج فيديو بدقة 1080p، وتذكر الشركة أن المقاطع المولدة تتضمن علامة مائية رقمية. ظهرت تغطية WIRED في 1 نوفمبر، لكن إعلان الإتاحة المجانية أقدم من ذلك.",
+      "whyItMatters": "يخفض ذلك حاجز إنتاج الفيديو للطلاب والفرق الصغيرة، لكنه لا يلغي ضرورة مراجعة حقوق المواد والخصوصية والعلامة المائية قبل النشر.",
+      "audience": "الطلاب والمعلمون وصناع المحتوى والفرق الصغيرة.",
+      "nextSteps": [
+        "تحقق من توافر الميزة في حسابك ومن حدود الخطة والمنطقة قبل بناء سير عمل يعتمد عليها.",
+        "راجع حقوق المواد المدخلة والعلامة المائية الرقمية قبل نشر الفيديو."
+      ],
+      "limitations": "اعتمد هذا الإثراء على إعلان Google الرسمي المؤرخ 23 سبتمبر، لا على مراجعة WIRED نفسها؛ وقد تختلف الإتاحة والحدود بحسب الحساب والمنطقة والخطة.",
+      "reviewedAt": "2026-11-01T18:08:48+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Google — Anyone can make stunning HD videos with Gemini Omni in Google Vids",
+          "url": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-in-google-vids/"
+        }
+      ]
+    },
+    "f6bc805804f2cb148e": {
+      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFAxdVM2T2h0RWF5bHVSQXpZVGg5Rk9VSUtjeEhTQ2YwWDNGcENpX1ZJdEp5ZkY3dlVnVjU4aUZiTk5ZUTdnR244?oc=5",
+      "titleAr": "جامعة طيبة تستضيف مؤتمر MCAIT 2026 للذكاء الاصطناعي في المدينة المنورة",
+      "summaryAr": "تشير صفحة جامعة طيبة الرسمية إلى عقد مؤتمر MCAIT 2026 في المدينة المنورة من 3 إلى 5 نوفمبر، بالتعاون مع جامعة كبانغسان ماليزيا (UKM) وبرعاية تقنية من IEEE، مع محاور تشمل الذكاء الاصطناعي والرؤية الحاسوبية والتعلم الآلي وتقنيات البيانات. عنوان الخلاصة الصحفية يذكر 142 بحثًا، لكن المقتطف الرسمي الذي أمكن التحقق منه لا يؤكد هذا العدد.",
+      "whyItMatters": "يمثل المؤتمر فرصة محلية لتبادل الأبحاث والتعاون الدولي في الذكاء الاصطناعي، مع ضرورة التمييز بين بيانات الجهة المنظمة وما تنقله التغطيات الصحفية.",
+      "audience": "طلاب الحاسب والذكاء الاصطناعي والباحثون وأعضاء هيئة التدريس في السعودية.",
+      "nextSteps": [
+        "راجع البرنامج النهائي ومواعيد التسجيل من صفحة المؤتمر الرسمية قبل التخطيط للحضور.",
+        "تحقق من عدد الأوراق المقبولة من برنامج المؤتمر أو وقائعه، لا من عنوان الخبر وحده."
+      ],
+      "limitations": "تعذر تحميل صفحة الجامعة كاملة في أداة القراءة؛ اعتمد هذا السجل على بياناتها الوصفية والمقتطف الرسمي. لم أتحقق من رقم 142 بحثًا.",
+      "reviewedAt": "2026-11-01T18:08:48+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "جامعة طيبة — مؤتمر MCAIT 2026",
+          "url": "https://www.taibahu.edu.sa/college-of-computer-science-and-engineering-in-al-madinah-al-munawwarah-/media-center/announcements/mcait-2026"
+        }
+      ]
+    },
+    "0b6a53f2b9c6737c60": {
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026",
+      "titleAr": "الجمعية الوطنية الفرنسية تقرّ تعديلًا يقترح ضريبة على تدفق البيانات الرقمية",
+      "summaryAr": "في 30 أكتوبر 2026، أقرّت الجمعية الوطنية الفرنسية في مناقشة مشروع قانون المالية لعام 2027 التعديل I-1358، الذي يقترح ضريبة قدرها 0.055 يورو لكل غيغابايت من البيانات التي يرسلها مزودو المحتوى إلى مشتركي الإنترنت في فرنسا. يضع النص سقفًا يعادل 15% من رقم الأعمال المحقق في فرنسا أو 2% من رقم الأعمال الإجمالي، ويكلف مزودي الإنترنت بجمع أحجام البيانات بصورة مجمعة ومجهولة تحت إشراف ARCEP وDGFiP، مع منع طلب محتوى البيانات أو وجهتها. أظهر محضر الجلسة 11 صوتًا مؤيدًا مقابل 10 معارضة و14 امتناعًا. هذا إقرار تعديل ضمن مسار الميزانية، وليس قانونًا نافذًا أو ضريبة مطبقة حاليًا على المشتركين.",
+      "whyItMatters": "إذا بقي التعديل في النص النهائي فقد يؤثر في اقتصاديات توزيع المحتوى وشبكات CDN والبث والمنصات الرقمية، كما يفتح نقاشًا حول قياس حركة البيانات والخصوصية وحياد الشبكة. لكن التصويت في مرحلة مناقشة الميزانية لا يعني أن الضريبة أصبحت نافذة، ولا يثبت أن كلفتها ستنتقل إلى المستخدمين.",
+      "audience": "شركات الاتصالات ومراكز البيانات وشبكات CDN ومنصات المحتوى والبث، ومتابعو السياسات الرقمية والضرائب.",
+      "nextSteps": [
+        "تابع بقية مراحل مشروع قانون المالية لعام 2027 وما إذا كان التعديل سيبقى في النص النهائي أو يتغير أو يُحذف.",
+        "راجع آلية قياس أحجام البيانات وتعريف الجهة المصدرة ومعالجة شبكات CDN قبل تقدير الأثر على الشركات.",
+        "افصل تقدير العائد البالغ 10 مليارات يورو الذي طرحه أصحاب التعديل عن الإيرادات الفعلية أو التقدير المستقل.",
+        "لا تفترض زيادة رسوم الإنترنت أو انتقال الضريبة إلى المشتركين قبل صدور نص نهائي وتحليل أثره."
+      ],
+      "limitations": "قرأت نص التعديل I-1358 ومحضر الجلسة الرسمية. صفحة سجل التعديل تعرض حالة إجرائية غير محدثة مقارنة بمحضر الجلسة؛ لذلك اعتمدت محضر 30 أكتوبر لإثبات التصويت. تقدير 10 مليارات يورو ورد في مبررات مقدمي التعديل، وليس إيرادًا محققًا أو تقديرًا مستقلًا. الحكومة والمقرر العام أبديا رأيًا سلبيًا، وطرحا مخاوف حول القياس واحتمال تحميل جزء من العبء لموردي محتوى أصغر. لم يصبح التعديل قانونًا نافذًا عند المراجعة.",
+      "reviewedAt": "2026-11-01T23:44:11+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Assemblée nationale — Texte de l’amendement I-1358 (0,055 €/Go et plafonds)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/1358"
+        },
+        {
+          "title": "Assemblée nationale — Compte rendu officiel de la séance du 30 octobre 2026, débat et scrutin sur l’amendement I-1358",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2026-2027/premiere-seance-du-vendredi-30-octobre-2026"
+        }
+      ]
+    },
+    "df13fb83bb115c2553": {
+      "url": "https://www.engadget.com/2303434/meta-reportedly-built-a-humanoid-robot-prototype-that-can-do-household-chores/",
+      "titleAr": "Meta تطور نموذجًا أوليًا لروبوت منزلي بالتعاون مع Fourier وفق تقارير صحفية",
+      "summaryAr": "أفاد تقرير The Information، كما نقلته Engadget وReuters، بأن Meta أنجزت نموذجًا أوليًا بالتعاون مع شركة Fourier خلال نحو ثلاثة أشهر وتعمل على نسخة ثانية. وتورد Engadget تفاصيل منسوبة إلى التقرير، منها شاشة تعبيرية ومكبر صوت وأيدٍ لالتقاط أشياء صغيرة ومعالج NVIDIA Jetson Thor. لا يوجد موعد معلن لإطلاق نسخة استهلاكية، وقالت Reuters إنها لم تتمكن من التحقق من التقرير بشكل مستقل.",
+      "whyItMatters": "يشير الخبر إلى انتقال استثمارات شركات الذكاء الاصطناعي من البرمجيات إلى الروبوتات المنزلية. لكن القيمة العملية ستتحدد بقدرة الروبوت على تنفيذ مهام حقيقية بأمان وموثوقية، وبكلفة مقبولة، مع معالجة خصوصية الكاميرات والميكروفونات داخل المنازل. هذا تحليل لاتجاه السوق وليس إثباتًا لمنتج جاهز.",
+      "audience": "متابعو الروبوتات والذكاء الاصطناعي، ومطورو الأنظمة المضمنة، والمهتمون بأجهزة المنزل الذكية.",
+      "nextSteps": [
+        "تابع أي تأكيد أو عرض تقني رسمي من Meta وFourier قبل التعامل مع تفاصيل النموذج كحقائق نهائية.",
+        "ميّز بين تصميم اليدين والقدرات المقصودة وبين مهام منزلية ثبت تنفيذها في عرض مستقل.",
+        "راقب ما إذا كانت النسخة التالية تقدم اختبارات موثقة للسلامة والخصوصية والتعامل مع الأشخاص والأغراض المنزلية."
+      ],
+      "limitations": "التفاصيل الأساسية منسوبة إلى تقرير The Information ومصادر مطلعة؛ Reuters قالت إنها لم تتمكن من التحقق منه بشكل مستقل. لم يُعرض اختبار مستقل يثبت تنفيذ الأعمال المنزلية، ولا يوجد موعد إطلاق استهلاكي معلن.",
+      "reviewedAt": "2026-11-02T00:11:37+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Engadget — Meta reportedly built a humanoid robot prototype that can do household chores",
+          "url": "https://www.engadget.com/2303434/meta-reportedly-built-a-humanoid-robot-prototype-that-can-do-household-chores/"
+        },
+        {
+          "title": "Reuters — Meta builds humanoid robot with Chinese startup Fourier, The Information says",
+          "url": "https://www.reuters.com/world/china/meta-builds-humanoid-robot-with-chinese-startup-fourier-information-says-2026-10-31/"
+        },
+        {
+          "title": "Engadget article syndicated by Yahoo Tech (full text)",
+          "url": "https://tech.yahoo.com/home/articles/meta-reportedly-built-humanoid-robot-171742356.html"
+        }
+      ]
+    },
+    "4f542121304cb3c695": {
+      "url": "https://www.engadget.com/2302658/vibe-coding-safety-practices/",
+      "titleAr": "خمس ممارسات أمان للبرمجة بمساعدة الذكاء الاصطناعي",
+      "summaryAr": "توصي المقالة بتحديد المتطلبات وحدود الأمان في تعليمات ثابتة، وعدم إدخال المفاتيح أو كلمات المرور في المحادثات أو الشيفرة، وحماية البيانات باستعلامات مهيأة وسياسات وصول مناسبة، وتطبيق تحديد المعدل، ثم مراجعة الناتج واختباره. وتستشهد المقالة بتحليل Apiiro؛ لكن صفحة الشركة الأصلية تصف 3–4 أضعاف عدد commits و10 أضعاف النتائج الأمنية في عينتها، لا مقياسًا عامًا لإنتاجية كل مطور.",
+      "whyItMatters": "تسريع توليد الشيفرة لا يلغي مسؤولية مراجعتها. هذه الممارسات مناسبة خصوصًا للمشاريع الطلابية والنماذج الأولية التي قد تحتوي أسرارًا أو بيانات مستخدمين؛ ويجب أن تسبق المراجعةُ النشرَ بدل الاعتماد على أن النموذج سيختار الإعداد الآمن تلقائيًا.",
+      "audience": "الطلاب والمطورون الذين يستخدمون وكلاء البرمجة، وفرق تطوير التطبيقات الصغيرة، والمشرفون على مشاريع الذكاء الاصطناعي.",
+      "nextSteps": [
+        "احتفظ بالمفاتيح وكلمات المرور في مخزن أسرار أو متغيرات بيئة، ولا تضعها في prompt أو المستودع.",
+        "راجع كل تغيير مولّد، واختبر الصلاحيات والتحقق من المدخلات والتبعيات قبل النشر.",
+        "ضع حدودًا للطلبات والتكلفة، واطلب مراجعة بشرية لأي تغيير يمس المصادقة أو بيانات المستخدمين."
+      ],
+      "limitations": "قُرئت نسخة المقال المنشورة عبر Yahoo Tech والمُعاد نشرها عن Engadget؛ تعذر فتح صفحة Engadget مباشرة في المتصفح. أرقام 4×/10× مرتبطة بدراسة Apiiro التجارية المنشورة في 2025، وتختلف صياغة المقال عن وصف Apiiro الأصلي؛ لا تمثل قياسًا مستقلًا أو قاعدة عامة لكل المطورين.",
+      "reviewedAt": "2026-11-02T00:11:37+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Engadget — 5 safety practices to know before vibe coding",
+          "url": "https://www.engadget.com/2302658/vibe-coding-safety-practices/"
+        },
+        {
+          "title": "Engadget article syndicated by Yahoo Tech (full text)",
+          "url": "https://tech.yahoo.com/cybersecurity/articles/5-safety-practices-know-vibe-180000387.html"
+        },
+        {
+          "title": "Apiiro — 4x Velocity, 10x Vulnerabilities: AI Coding Assistants Are Shipping More Risks",
+          "url": "https://apiiro.ai/blog/4x-velocity-10x-vulnerabilities-ai-coding-assistants-are-shipping-more-risks/"
+        }
+      ]
+    },
+    "60506285f7f3d32157": {
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0ycGFuRzdXUUVwUkRyTFRReHNyYXdyajd1bng5Nk1iQWdId0tFaHFHVk1hY0FwVGlPM0w3cFljVlRnTUNLbGJRSWpvUk16Q0xPTGxF?oc=5",
+      "titleAr": "مبادرة «الكويت تبرمج 6» تختتم موسمها بقبول 1,078 طالبًا وطالبة",
+      "summaryAr": "ذكرت صحيفة الراي في 1 نوفمبر أن أكاديمية CODED اختتمت النسخة السادسة من مبادرة «الكويت تبرمج» بعد قبول 1,078 طالبًا وطالبة من المرحلة الثانوية والصف التاسع مجانًا، ليتجاوز إجمالي المقبولين منذ انطلاق المبادرة 5,500. وذكرت أن مسارات الموسم شملت الأمن السيبراني وبايثون مع الذكاء الاصطناعي وتطوير المواقع، ضمن شراكات محلية واستضافة الجامعة الأمريكية في الكويت.",
+      "whyItMatters": "يوضح الخبر اتساع مبادرات التدريب التقني المبكر في الخليج وتعاون الأكاديميات والشركات والجامعات. لكن عدد المقبولين لا يقيس وحده إتقان المهارات أو الأثر الوظيفي؛ القيمة التعليمية تحتاج متابعة نتائج المشاريع والتخرج وفرص الاستمرار.",
+      "audience": "طلاب المرحلة الثانوية وأولياء الأمور والمعلمون والجامعات ومؤسسات التدريب التقني في الكويت والخليج.",
+      "nextSteps": [
+        "تابع إعلان النسخة المقبلة عبر أكاديمية CODED والجهات الشريكة بدل افتراض أن التسجيل مفتوح حاليًا.",
+        "تحقق من شروط الصف والعمر والمواعيد والرسوم عند صدور أي إعلان جديد.",
+        "قارن المناهج العملية ومشاريع التخرج في البرامج المشابهة، لا أعداد المقبولين فقط."
+      ],
+      "limitations": "الأعداد والمعلومات من بيانات المبادرة والجهات المشاركة كما نقلتها صحيفة الراي، ولم أجد تدقيقًا مستقلًا لنتائج التعلم أو التوظيف. اختتمت النسخة السادسة؛ الخبر لا يعني أن التسجيل مفتوح الآن.",
+      "reviewedAt": "2026-11-02T00:11:37+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "صحيفة الراي — «كودد» تختتم «الكويت تبرمج 6» بقبول 1078 طالباً وطالبة",
+          "url": "https://www.alraimedia.com/article/1784722/%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF/%D9%83%D9%88%D8%AF%D8%AF-%D8%AA%D8%AE%D8%AA%D8%AA%D9%85-%D8%A7%D9%84%D9%83%D9%88%D9%8A%D8%AA-%D8%AA%D8%A8%D8%B1%D9%85%D8%AC-6-%D8%A8%D9%82%D8%A8%D9%88%D9%84-1078-%D8%B7%D8%A7%D9%84%D8%A8%D8%A7-%D9%88%D8%B7%D8%A7%D9%84%D8%A8%D8%A9"
+        }
+      ]
+    },
+    "e621a5b384ce839c8a": {
+      "titleAr": "OpenAI تدرس تسمية مراكز البيانات «مجمعات حوسبة للذكاء الاصطناعي»",
+      "summaryAr": "نقل Axios عن كريس ليهان، مسؤول الشؤون العالمية في OpenAI، أن الشركة تجهّز حزمة مقترحات للتأثير في النقاش الأميركي حول الذكاء الاصطناعي بعد انتخابات منتصف المدة. تشمل المقترحات ضوابط للأنظمة الأقوى، وتعهدات ومنافع أوضح للمجتمعات المضيفة لمراكز البيانات، ودعم التدريب والفرص الاقتصادية، والتعاون على معايير دولية. ومن بين الرسائل المقترحة وصف مراكز البيانات بأنها «مجمعات حوسبة للذكاء الاصطناعي»؛ وهذا طرح اتصالي قيد الإعداد، لا تغيير رسمي مطبّق للاسم.",
+      "whyItMatters": "يوضح الخبر أن توسع الحوسبة لا يتوقف عند الرقائق والنماذج؛ بل يرتبط بالطاقة والمياه والشبكات والفواتير والوظائف وموافقة المجتمعات المحلية. تغيير المصطلح وحده لا يثبت تحسن الأثر، لذلك ينبغي تقييم الالتزامات القابلة للقياس والشفافية.",
+      "audience": "مطورو الذكاء الاصطناعي، وطلاب التقنية، وصناع السياسات، والمجتمعات التي تستضيف مراكز البيانات.",
+      "nextSteps": [
+        "قارن أي تعهدات مستقبلية من الشركة بإفصاحات الطاقة والمياه والتوظيف الفعلية.",
+        "ميّز بين مقترح العلاقات العامة وبين سياسة أو مشروع حصل على موافقات وتنفيذ."
+      ],
+      "limitations": "المعلومات من تقرير Axios ومقابلة مع مسؤول في OpenAI؛ الخطة كانت قيد الإعداد وقت النشر. لا يثبت التقرير اعتماد الاسم رسميًا أو تحقق منافع محلية محددة.",
+      "reviewedAt": "2026-11-02T05:43:13+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Axios — Behind the Curtain: OpenAI's post-election power play",
+          "url": "https://www.axios.com/2026/11/01/scoop-openai-post-midterm-policy"
+        },
+        {
+          "title": "TechCrunch — OpenAI might rebrand its data centers as ‘AI compute campuses’",
+          "url": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/"
+        }
+      ],
+      "url": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/"
+    },
+    "3e4cd1e3871dc6c4ca": {
+      "titleAr": "GitHub تعلن Game Off 2026 بموضوع SHIFT وموعد تسليم في 1 ديسمبر",
+      "summaryAr": "أعلنت GitHub النسخة الرابعة عشرة من تحدي Game Off السنوي، وموضوعها SHIFT، على أن يبني المشاركون لعبة خلال نوفمبر بصورة فردية أو ضمن فريق وبأي لغة أو محرك ألعاب. يشترط وجود مستودع عام للعبة وإرسال المشاركة على itch.io قبل 1 ديسمبر 2026 الساعة 13:37 بتوقيت PST؛ رفع الشيفرة إلى GitHub وحده لا يُكمل التقديم. تسمح القواعد بالمساعدة بالذكاء الاصطناعي مع الإفصاح عن استخدامها عند التقديم.",
+      "whyItMatters": "يوفر التحدي إطارًا زمنيًا واضحًا لبناء مشروع ألعاب صغير قابل للعرض، ويشجع على ضبط النطاق والعمل الجماعي ومراجعة أعمال الآخرين. أهم تفصيل عملي هو الفصل بين نشر المستودع وإرسال المشاركة رسميًا.",
+      "audience": "طلاب البرمجة، ومطورو الألعاب المستقلون، والمبتدئون الذين يريدون مشروعًا عمليًا لمحفظة أعمالهم.",
+      "nextSteps": [
+        "اقرأ قواعد Game Off وصفحة التقديم قبل البدء.",
+        "اختر فكرة صغيرة قابلة للإنجاز، وأنشئ مستودعًا عامًا، ثم أكمل إرسال اللعبة على itch.io قبل الموعد مع مراعاة المنطقة الزمنية."
+      ],
+      "limitations": "الخبر يعلن التحدي وقواعده العامة، لكنه لا يفصل كل شروط العمر أو الإقامة في النص المنشور. لا يَعِد بجائزة مالية؛ التصويت والتقييم المجتمعي جزء من المسابقة.",
+      "reviewedAt": "2026-11-02T05:43:13+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "GitHub Blog — Game Off 2026: The theme is SHIFT",
+          "url": "https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/"
+        }
+      ],
+      "url": "https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/"
+    },
+    "4c7805da92c2787a7f": {
+      "titleAr": "مدن أميركية تواجه صعوبة في إنهاء عقود كاميرات المراقبة من Flock",
+      "summaryAr": "ذكر The Verge أن مجلس مدينة بليموث في مينيسوتا صوّت لإنهاء عقده مع Flock Safety، لكن الكاميرات بقيت لأكثر من شهر دون استجابة للشكاوى، ما دفع رئيس الشرطة إلى فصل الطاقة عنها. وفي دايتون المجاورة، قالت المدينة إن كاميرتين أُعيدتا إلى الخدمة رغم طلبها تعليق البرنامج وعدم تنفيذ أعمال صيانة. ونقل التقرير رد الشركة بأنها تحترم قرار بليموث وتعمل على إزالة الكاميرات.",
+      "whyItMatters": "تُظهر الحالة أن حوكمة تقنيات المراقبة لا تتعلق بقرار الشراء فقط؛ بل تشمل صلاحية الإلغاء، وإزالة الأجهزة، وسجلات الوصول، والاحتفاظ ببيانات لوحات المركبات وحذفها. وجود بند إنهاء واضح وآلية تدقيق مهم بقدر دقة التقنية نفسها.",
+      "audience": "البلديات، ومسؤولو المشتريات التقنية، ومختصو الخصوصية، والمهتمون بالحقوق الرقمية.",
+      "nextSteps": [
+        "عند تقييم أنظمة مراقبة عامة، راجع بنود الإلغاء وإزالة الأجهزة وحذف البيانات وسجلات الوصول.",
+        "اطلب توثيقًا واضحًا لمسؤولية الجهة المتعاقدة والمورّد عند تعليق الخدمة أو إنهائها."
+      ],
+      "limitations": "التقرير يعرض حالتين محليتين وتصريحات الأطراف، ولا يمثل حكمًا قضائيًا أو إثباتًا بأن جميع عقود الشركة تتصرف بالطريقة نفسها. أُدرج رد الشركة كما أورده الناشر.",
+      "reviewedAt": "2026-11-02T05:43:13+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "The Verge — Flock keeps ignoring requests to cancel its contracts",
+          "url": "https://www.theverge.com/tech/1024232/flock-ignoring-cancel-contracts"
+        }
+      ],
+      "url": "https://www.theverge.com/tech/1024232/flock-ignoring-cancel-contracts"
+    },
+    "dd8ec44c2a87c5d046": {
+      "titleAr": "NASA تطلب مقترحات تجارية لإطالة عمر تلسكوب هابل",
+      "summaryAr": "أعلنت NASA في 29 أكتوبر 2026 طلب معلومات من الشركات حول إمكانات خدمة تلسكوب هابل في المدار، بما في ذلك رفع مداره لإطالة عمره العلمي أو صيانته أو التخطيط لإنهاء آمن للمهمة. تقول الوكالة إن السحب الجوي يخفض المدار تدريجيًا، وإن عودة هابل إلى الغلاف الجوي قد تقع في 2033–2034 إذا لم يُرفع مداره، ولذلك تتصور الحاجة إلى مهمة قبل 2032. يستمر استقبال الردود حتى 30 نوفمبر 2026 الساعة 3 مساءً بتوقيت الساحل الشرقي.",
+      "whyItMatters": "الطلب يعكس توسع دور الشركات التجارية في صيانة الأقمار الصناعية والأصول العلمية الموجودة، وقد يحافظ على قدرة رصد مهمة بدل الاعتماد على استبدالها. كما يختبر نضج تقنيات الالتقاء المداري والخدمة في الفضاء.",
+      "audience": "طلاب الفضاء والهندسة، والمهتمون بعلوم الفلك، وشركات خدمات الأقمار الصناعية.",
+      "nextSteps": [
+        "تابع وثائق طلب المعلومات لدى NASA وSAM.gov حتى الموعد المحدد.",
+        "ميّز بين جمع معلومات السوق وبين اعتماد مهمة أو اختيار شركة لتنفيذها."
+      ],
+      "limitations": "هذا طلب معلومات وليس عقدًا ممنوحًا أو قرارًا نهائيًا بتمويل مهمة إنقاذ. إطار 2033–2034 توقع تحليلي لدى NASA وليس موعدًا مضمونًا.",
+      "reviewedAt": "2026-11-02T05:43:13+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "NASA Science — NASA Explores Potential Commercial Servicing for Hubble Telescope",
+          "url": "https://science.nasa.gov/missions/hubble/nasa-explores-potential-commercial-servicing-for-hubble-telescope/"
+        },
+        {
+          "title": "The Verge — NASA hopes the commercial space industry can help save Hubble",
+          "url": "https://www.theverge.com/science/1024239/nasa-commercial-space-save-hubble"
+        }
+      ],
+      "url": "https://www.theverge.com/science/1024239/nasa-commercial-space-save-hubble"
+    },
+    "b305dc8ef62c91cd94": {
+      "titleAr": "Anthropic تشدد توجيه Claude لتجنب إعادة إنشاء ألعاب فيديو بعينها",
+      "summaryAr": "أفاد Engadget بأن Anthropic حدّثت توجيهًا داخليًا لـClaude يطلب إنشاء ألعاب أصلية أو ألعاب تنتمي إلى نوع عام أو تعتمد على تصميمات وأصول يملكها المستخدم، ويمنع إعادة إنشاء لعبة محددة موجودة حتى لو أُعيدت تسميتها. ونقل التقرير تأكيدًا من موظف تقني في Anthropic بأن الغرض هو الحد من استخدام النموذج لانتهاك حقوق الملكية الفكرية، مع بقاء تصميم الألعاب الأصلية متاحًا.",
+      "whyItMatters": "الخبر يوضح الحد الفاصل بين الاستلهام من نوع فني وبين استنساخ عمل محدد. ومع انتشار أدوات بناء الألعاب بالموجهات، تصبح أصالة التصميم وترخيص الأصول وتوثيق مصادرها جزءًا من سير العمل، لا خطوة قانونية لاحقة فقط.",
+      "audience": "مطورو الألعاب، ومستخدمو أدوات البرمجة التوليدية، وفرق المنتجات، والمهتمون بحقوق النشر.",
+      "nextSteps": [
+        "استخدم أفكارًا وتصميمات وأصولًا أصلية أو مرخصة بوضوح.",
+        "صف النوع والآليات العامة بدل طلب استنساخ لعبة بعينها، واحتفظ بسجل لمصادر الأصول."
+      ],
+      "limitations": "المراجعة مبنية على تقرير Engadget؛ تعذر فتح منشور X المشار إليه مباشرة في هذه الجولة. لا يعني التغيير حظر إنشاء الألعاب عمومًا، وليس حكمًا قانونيًا على كل حالة.",
+      "reviewedAt": "2026-11-02T05:43:13+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Engadget — Anthropic updates Claude to stop it from recreating existing video games",
+          "url": "https://www.engadget.com/2303469/anthropic-updates-claude-to-stop-it-from-recreating-existing-video-games/"
+        }
+      ],
+      "url": "https://www.engadget.com/2303469/anthropic-updates-claude-to-stop-it-from-recreating-existing-video-games/"
+    },
+    "d96aaad619c6c987be": {
+      "titleAr": "المدينة المنورة تطلق هاكثونًا عالميًا للذكاء الاصطناعي الأخلاقي",
+      "summaryAr": "أفادت وكالة الأنباء السعودية بأن هيئة تطوير منطقة المدينة المنورة، بالتعاون مع أكاديمية كاوست، أطلقت هاكثونًا للذكاء الاصطناعي الأخلاقي ضمن مبادرات «المنورة تبتكر». تبدأ المنافسة عن بُعد عبر Kaggle ويستمر التسجيل حتى 14 نوفمبر 2026، ثم تتأهل ثمانية فرق إلى مرحلة حضورية في المدينة المنورة مدتها ثلاثة أيام. وتبلغ الجوائز الإجمالية 150 ألف ريال، مع تركيز معلن على الخصوصية والعدالة وتجنب التحيز والشفافية ومنع الضرر.",
+      "whyItMatters": "يجمع الإعلان بين فرصة تقنية محلية وبين تصور عملي للذكاء الاصطناعي المسؤول؛ إذ لا يقتصر تقييم الحلول على الأداء، بل يذكر الخصوصية والإنصاف والشفافية واحتياجات المجتمع. كما يربط البحث والتطوير بتحديات المدينة الذكية.",
+      "audience": "المطورون والباحثون والفرق الطلابية والشركات الناشئة المهتمة بالذكاء الاصطناعي المسؤول.",
+      "nextSteps": [
+        "اقرأ إعلان SPA وشروط المسابقة الرسمية قبل اتخاذ قرار التسجيل.",
+        "تحقق من شروط العمر وتكوين الفرق ومتطلبات البيانات والسفر والحضور النهائي؛ لا تفترض الأهلية من الإعلان العام وحده."
+      ],
+      "limitations": "إعلان SPA لا يحدد في النص المنشور حدود العمر أو كل شروط المشاركة. تعذر فتح صفحة Kaggle مباشرة عبر المتصفح في هذه الجولة، لذلك لم أتحقق مستقلًا من تفاصيل التحدي أو شروط الأهلية.",
+      "reviewedAt": "2026-11-02T05:43:13+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "وكالة الأنباء السعودية — هيئة تطوير المدينة المنورة تطلق هاكثون الذكاء الاصطناعي الأخلاقي بمشاركة عالمية",
+          "url": "https://www.spa.gov.sa/N2715498"
+        },
+        {
+          "title": "صفحة المسابقة على Kaggle (الرابط الوارد في إعلان SPA)",
+          "url": "https://www.kaggle.com/competitions/MDA-Ethical-AI-KAUST-Academy"
+        }
+      ],
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5PUngtZ0lUMlZQaG5UeXVkNno1Y05CaG1HUXp3S3g4RVB0anhVdmVoUVZJWTQ0VGZhRmFQWXQzanpRTWJjcU1tMktQcUp5OHhU?oc=5"
+    },
+    "6b9e2ec2904e020bf0": {
+      "titleAr": "رئيس هيئة الملكية الفكرية السعودية يقدّر أثرها الاقتصادي بنحو 8%",
+      "summaryAr": "في مقابلة مع CNBC عربية، قال الرئيس التنفيذي للهيئة السعودية للملكية الفكرية إن 2026 عام محوري لتطوير تشريعات الملكية الفكرية، وذكر انضمام المملكة إلى ثلاث اتفاقيات دولية خلال 18 شهرًا واعتماد ستة أنظمة. كما قدّر الأصول غير الملموسة في الشركات المدرجة بنحو 65% من قيمة السوق السعودي، وقال إن الأثر المباشر للملكية الفكرية يقترب من 8% في الاقتصادات المعتمدة عليها، مشيرًا إلى أن الهيئة أصدرت أدوات إرشادية مرتبطة بحقوق الذكاء الاصطناعي.",
+      "whyItMatters": "مع اتساع استخدام الذكاء الاصطناعي في البرمجيات والتصميم والإنتاج، تزداد أهمية معرفة صاحب الحق، وترخيص البيانات والأصول، وتوثيق المساهمة البشرية. كما يلفت الخبر إلى أن الملكية الفكرية أصبحت ملفًا اقتصاديًا وتنظيميًا محليًا، لا موضوعًا قانونيًا هامشيًا.",
+      "audience": "المطورون والمصممون ورواد الأعمال والباحثون والمهتمون بالسياسات التقنية والملكية الفكرية في السعودية.",
+      "nextSteps": [
+        "راجع الأدلة والموارد المنشورة لدى الهيئة السعودية للملكية الفكرية بدل الاعتماد على ملخص المقابلة وحده.",
+        "وثّق تراخيص المكتبات والبيانات والصور ومصادر الأصول المستخدمة في المشاريع التقنية."
+      ],
+      "limitations": "نسبتا 65% و8% تصريحات من الرئيس التنفيذي كما نقلتها المقابلة؛ الصفحة لا تعرض منهجية الحساب أو تعريف المؤشر أو الفترة المرجعية كاملة، لذلك لا تُعرضان كإحصاء مستقل جرى التحقق منه.",
+      "reviewedAt": "2026-11-02T05:43:13+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "CNBC عربية — مقابلة الرئيس التنفيذي للهيئة السعودية للملكية الفكرية",
+          "url": "https://www.cnbcarabia.com/episode/17425/الرئيس-التنفيذي-للهيئة-السعودية-للملكية-الفكرية-لـ-CNBC-عربية:-الأثر-المباشر-للملكية-بالمملكة-يقترب-من-8--في-الاقتصاديات-المعتمدة-عليها-والفجوة-ضيقة-بين-الإبداع-البشري-ونظيره-المتعلق-بالذكاء-الاصطناعي"
+        },
+        {
+          "title": "الهيئة السعودية للملكية الفكرية — الأدلة الإرشادية",
+          "url": "https://www.saip.gov.sa/ar/resources/ip-information/guidelines"
+        }
+      ],
+      "url": "https://news.google.com/rss/articles/CBMiqgtBVV95cUxPT3hZUGYxSS1HdmFyV1ZKLXZ4Y0lCVV8wUHB5M0VPYTgtWWliT2NlWlBfVkJSVXE1X3ZyTFh5c1lZQmdCRWVzZDYwbFhIY1c2SWVSUnhRSjlmN0VoTGtqQkE0UFBhakEzWkFqcGg3M1ZiR2czdGt4aVZ1aXBrSXhrempJTzlLcWJqU2dwR1FUUlQ2UTZCcGRCam43ZlpaMTdRT0VxZGlPSU10STVvMXkxZXpuY2lUZHVtbzhGek9LMEROaTRheFRvLTVQUnVFR1pNTjdPWTJHM0lVZHgweGtuNVU1c1hQVU52Sm9uRnVHN3dHZkNxS1ItTzBlb1M3MVZzYUx4bHNfY1BCYlY3REdvX2ZKVzh4UC1EX3VKcVdFOXk3Wm5Nb2Rrc1Vma0o4T1dab0JNUmVHZDBYZU5vWVF3cjJjejlHbVZhQWtsSG44NXNfbUtsYmMwcnFaUFRKYmJrNnY3bFFJWV9iOXJoaWRSbXZzYkhONzMwM2RKQ2x4MmVSUWphbHY2SHZsbHdpWWpqV2VuRHUtcjJnaGw2UFNKY05pWE02aWhUN1FFVks3NFNrN0NQWk5TWUN5QmpvV1hkc05XRy1ZVmh3T3Rna2ZsUk9tMG9WUmNOT2dOSVpYUnFROE1yR3g5djFIS1lGVlk0eDV1VHNsRE5RUEhJYU5ONXhUZDhZUVVtTkZLYldXcDdSeEF6Z3dTNmpCT2NJa1BhOUJ1bDdTWmE3Z0UyQUVoVmlYTWhPSmNlWDlPRjMxTkdPLUtxeHF5a1pqMTBYR0NNbV82b01OaUhRcC1ocFFNOGVxSi1SQVlLRkEwa2pRc2VSQS1XbGFtWk42eWNVWUJZTkZJZk9wajEzd3lGOTI0eDNabHJZN3pCdHpkMURiQU5zNk5EcGZyenR4QjVGZk5xN1dsc1A0cmJpQ2o1ZnJNeVNHWGJiUWx0VmUxZnBtS2VCR2NUUEVyQkRWZlliVVJfTFpzdWlUdW5BUC15bFdleC1mS2pVaTEtWjhIUUpURU1HU1JuNlBqekwxZDRZV2ltemNkVUZhVEo5VHBhdnBMX1ROZjhhRzdpT2lDYTNJeFFrMGQ3QmFCVmd0R0VmWGpFUWVpOHBLMlFYZ19DMnBKNG4zQmlpck1aN0JkNW90NFF6VnkzeERXZzFTSUtSLW1HRzhhbUJaUkZFZmplSm1KQndIdWdFdDJyMjNSV0x0ZTBCSFM1d2JUdEgtRi1VbzBkd1JoNjVpX2tOQV9vdXlNQ2t1bGR0amx3MW1fbUVoMjVUT1J1eFNLQXBiN3Q5aks3dnF4ZmRtUUtRSnpCZjVBV2pGZUE1TlJfbExFdkJ1WEp5WHJHZEx1VE1RRFhVRVVIUTV3ZDg2M3dkaGlOdEpDc3hmekM3TzhGSEVVUDRYd1dkVWNrZEdMeGF5bXRRM2hsZnJOMlRZdy1Gbkp4V3p6Vy04ZVdNYkpUZGNTY2FpNlJ6UXZGVGVYVzJOenhkeUNfSVpLYWlzYkI4NTFjdndvVS1QSkpLd0w2SEl3OFpMbkh3Qm4xOGFRSW9mWGtmWjc0aWhDQlhCQnhvT2ZzdmszeGx3M01CbVJoOUZsX211XzlFRTJxSmpaTjFqWGtrUl81elNMZThnN0lGeVBxLWlqdEtiY0tDT0VSV3pjX3BKMkNQNU1xREdjSFhucHZxaDhidy1KRUNIOVJPMEVLMGVPV3h6dmMyRzlhdDI3RUpJaUVuUmY4Y2dQV1k0QmRoM2lxaXgzMTNjc24tclZBSkNTVXYzOTFvdFp1Z091Q2R2cWxKaVh6UmFHUFBGREtja3gySk9pWURaVUJMbHJvYjVzcmpmTmhsbld3cXA3MnFUWjhfVmFnMXJTYlJQWkFxaGlhc0dEMWZ0MmVUTVQ1OG9xODR2cGwxQm1Bcjd6WFZ5aDMxYlpjb29lSkRR?oc=5"
     }
   }
 }

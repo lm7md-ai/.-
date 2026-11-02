@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "runAt": "2026-11-02T08:45:44+03:00",
+  "repository": "NVIDIA/OpenShell",
+  "incomingId": "940ec4695c1e241c2f",
+  "feedId": null,
+  "url": "https://github.com/NVIDIA/OpenShell",
+  "publicationStatus": "research_only_not_published",
+  "repositoryStatus": "active_not_archived",
+  "license": "Apache-2.0",
+  "githubSnapshot": {
+    "stars": 20926,
+    "forks": 2051,
+    "openIssues": 562,
+    "pushedAt": "2026-11-02T04:19:40Z",
+    "updatedAt": "2026-11-02T05:26:28Z",
+    "measuredAt": "2026-11-02T08:45:44+03:00"
+  },
+  "latestOfficialDocs": "v0.1.6",
+  "supportedPlatforms": [
+    "Linux Debian/Ubuntu x86_64 supported",
+    "Linux Debian/Ubuntu ARM64 supported",
+    "macOS Docker Desktop on Apple Silicon supported",
+    "Windows WSL2 plus Docker Desktop experimental"
+  ],
+  "releaseNote": "Official support matrix distinguishes dev, pre-release and stable builds and recommends stable releases for production.",
+  "reviewCorrection": "The incoming entry's broad runtime claims should be checked against the current v0.1.6 support matrix; do not generalize Windows support beyond the experimental WSL2 path shown there.",
+  "sources": [
+    {
+      "title": "NVIDIA OpenShell repository and Apache-2.0 license",
+      "url": "https://github.com/NVIDIA/OpenShell"
+    },
+    {
+      "title": "Official OpenShell support matrix, latest v0.1.6",
+      "url": "https://docs.nvidia.com/openshell/latest/about/support-matrix"
+    },
+    {
+      "title": "Official OpenShell architecture",
+      "url": "https://docs.nvidia.com/openshell/latest/about/architecture"
+    },
+    {
+      "title": "Official sandbox policy overview",
+      "url": "https://docs.nvidia.com/openshell/latest/how-it-works/policies/overview"
+    }
+  ],
+  "testEvidence": null
+}

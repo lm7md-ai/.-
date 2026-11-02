@@ -1,0 +1,57 @@
+{
+  "runAt": "2026-11-02T08:45:44+03:00",
+  "catalogPath": "editorial/library/catalog-2026-11-01-0542.json",
+  "sourceCompiledAt": "2026-11-01T05:42:38+03:00",
+  "countsComputedFromEntries": {
+    "total": 42,
+    "activeNotArchived": 40,
+    "archived": 2,
+    "inCurrentFeed": 6,
+    "notInFeed": 36,
+    "licenseNeedsUpstreamVerification": 7
+  },
+  "staleSummaryField": {
+    "total": 40,
+    "nonArchived": 38,
+    "archived": 2,
+    "inCurrentFeed": 5,
+    "notInFeed": 35
+  },
+  "decision": "Keep all 42 entries and per-entry measuredAt values. This reconciliation corrects counts only; it does not claim a fresh metrics measurement for all 42 projects.",
+  "archivedAlternatives": [
+    {
+      "repository": "atom/atom",
+      "status": "archived",
+      "alternatives": [
+        {
+          "repository": "microsoft/vscode",
+          "url": "https://github.com/microsoft/vscode"
+        },
+        {
+          "repository": "zed-industries/zed",
+          "url": "https://github.com/zed-industries/zed"
+        }
+      ]
+    },
+    {
+      "repository": "angular/angular.js",
+      "status": "archived",
+      "alternatives": [
+        {
+          "repository": "angular/angular",
+          "url": "https://github.com/angular/angular"
+        },
+        {
+          "repository": "vuejs/core",
+          "url": "https://github.com/vuejs/core"
+        },
+        {
+          "repository": "sveltejs/svelte",
+          "url": "https://github.com/sveltejs/svelte"
+        }
+      ]
+    }
+  ],
+  "licenseFollowUp": "Seven catalog entries still require upstream LICENSE verification; do not infer a license from repository name or GitHub description.",
+  "measurementPolicy": "Keep each entry's metricCapturedAt; do not compare snapshots with different measurement times as simultaneous."
+}
