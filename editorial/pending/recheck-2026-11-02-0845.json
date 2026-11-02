@@ -1,0 +1,243 @@
+{
+  "version": 1,
+  "runAt": "2026-11-02T08:45:44+03:00",
+  "mainCommit": "8c07e63504542cc55df47725898611e2fa336093",
+  "pr78": {
+    "state": "open",
+    "draft": true,
+    "mergeable": true,
+    "head": "content/nabdh-2026-11-01-1808",
+    "headShaBeforeThisRun": "15e827d7b637815dcc37b7ebef0d4e584c8a3187",
+    "existingEditorialEntries": 645,
+    "officialCiRun": 41380306452,
+    "officialCiConclusion": "success",
+    "ciMergeRef": "f86bb9a",
+    "ciBaseMainSha": "8c07e63504542cc55df47725898611e2fa336093"
+  },
+  "snapshots": {
+    "feedGeneratedAt": "2026-11-02T00:42:44+00:00",
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "mainEditorialEntries": 627,
+    "seenIds": 2434,
+    "statusState": "partial",
+    "lastSuccessfulAt": "2026-11-02T00:42:44+00:00"
+  },
+  "incomingAudit": {
+    "distinctFilesFetched": 63,
+    "recordOccurrences": 592,
+    "classificationBasis": "literal ID and URL comparison against current main feed and main editorial; counts are record appearances across files, not unique IDs",
+    "structuralEquivalent": {
+      "method": "JavaScript structural replica of scripts/editorial.py validation rules; JSON parsing, required fields, HTTPS sources, reviewedAt timezone, basis, steps and proposal structure",
+      "filesChecked": 63,
+      "recordsChecked": 592,
+      "invalidFiles": 0,
+      "officialCliRun": false
+    },
+    "counts": {
+      "importedActiveExact": 250,
+      "importedHistoricalExactOutsideFeed": 337,
+      "unmatchedSeenRecordsPresentInIncoming": 5,
+      "eligibleActiveUnimported": 0,
+      "sameIdUrlMismatch": 0,
+      "unknownIds": 0,
+      "confirmedExpired": 0
+    },
+    "note": "The 5 unmatched records are present in incoming files and in seen.json; they are not 'seen-only' in the sense of being absent from incoming. None is eligible for import because none has an exact current feed ID+URL match. Historical/outside-feed does not by itself mean expired."
+  },
+  "unmatchedSeenRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "title": "NVIDIA OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inPr78Editorial": false,
+      "inSeen": true,
+      "status": "incoming_record_but_not_current_feed; do_not_import"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "title": "Canva Craft",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inPr78Editorial": false,
+      "inSeen": true,
+      "status": "incoming_record_but_not_current_feed; do_not_import"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "title": "1Password for Agents",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inPr78Editorial": false,
+      "inSeen": true,
+      "status": "incoming_record_but_not_current_feed; do_not_import"
+    },
+    {
+      "id": "87d27a9f8a0972f507",
+      "title": "Binance security incident coverage",
+      "url": "https://www.theverge.com/tech/1023021/binance-hack-billions-biggest-crypto-heist",
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-10-31-1811.json",
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inPr78Editorial": false,
+      "inSeen": true,
+      "status": "incoming_record_but_not_current_feed; do_not_import"
+    },
+    {
+      "id": "65eeab64fed21e0b54",
+      "title": "General Motors data privacy settlement coverage",
+      "url": "https://www.engadget.com/2301934/general-motors-220-million-settle-multi-state-data-privacy-lawsuit/",
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-10-31-1811.json",
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inPr78Editorial": false,
+      "inSeen": true,
+      "status": "incoming_record_but_not_current_feed; do_not_import"
+    }
+  ],
+  "specialVerification": {
+    "nvidiaOpenShell": {
+      "id": "940ec4695c1e241c2f",
+      "currentFeed": false,
+      "currentEditorial": false,
+      "officialRepoActive": true,
+      "license": "Apache-2.0",
+      "stars": 20926,
+      "forks": 2051,
+      "pushedAt": "2026-11-02T04:19:40Z",
+      "latestDocsVersion": "v0.1.6",
+      "platforms": [
+        "Linux Debian/Ubuntu x86_64 and ARM64 supported",
+        "macOS Docker Desktop Apple Silicon supported",
+        "Windows WSL2 + Docker Desktop experimental"
+      ],
+      "sources": [
+        "https://github.com/NVIDIA/OpenShell",
+        "https://docs.nvidia.com/openshell/latest/about/support-matrix"
+      ],
+      "existingDossier": "editorial/library/nvidia-openshell-dossier-2026-10-30-1146.json",
+      "publicationStatus": "research_only_not_published"
+    },
+    "canvaCraft": {
+      "id": "317abcdd1b20728a7e",
+      "currentFeed": false,
+      "currentEditorial": false,
+      "officialPage": "https://www.canva.com/newsroom/news/canva-craft/",
+      "verifiedClaims": [
+        "Canva says Craft is its first image generation model",
+        "Canva says it is available in Canva and through a public API",
+        "Canva describes a two-stage composition planning and rendering architecture",
+        "Canva says output reaches 2K and more than 30 aspect ratios",
+        "DesignArena rankings are vendor-reported claims"
+      ],
+      "publicationStatus": "not_importable_not_published"
+    },
+    "onePasswordAgents": {
+      "id": "662e68277c6361dd4b",
+      "currentFeed": false,
+      "currentEditorial": false,
+      "officialAnnouncementDate": "2026-10-22",
+      "officialSources": [
+        "https://1password.com/blog/1password-for-ai-agents",
+        "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents"
+      ],
+      "verifiedClaims": [
+        "Agent requests a credential through a unique digital key",
+        "User approves on their own device",
+        "1Password fills the sign-in form without sending the password to the agent",
+        "Integration availability differs by agent; ChatGPT Work and dots were described as coming soon on the announcement page"
+      ],
+      "publicationStatus": "not_importable_not_published"
+    }
+  },
+  "prBranchIncoming": {
+    "files": 3,
+    "recordOccurrences": 18,
+    "exactCurrentFeed": 17,
+    "historicalOutsideCurrentFeed": 1,
+    "editorialEntries": 645,
+    "historicalRecordId": "0b6a53f2b9c6737c60",
+    "action": "preserve historical entry; do not present as active or delete"
+  },
+  "collisions": [
+    {
+      "type": "same_url_different_ids",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "currentFeedId": "e0cbbf211a55e79f34",
+      "historicalIncomingId": "7a99eca9b2ce14d9f5",
+      "action": "preserve both IDs; no remapping by title"
+    }
+  ],
+  "expiredReview": {
+    "confirmedExpiredOpportunities": 0,
+    "possibleDatePatternFalsePositive": "A date in the Capcom incident summary describes the reporting cutoff, not an application deadline."
+  },
+  "newBatch": {
+    "file": "editorial/incoming/nabdh-editorial-2026-11-02-0845.json",
+    "records": 4,
+    "ids": [
+      "a99fcf66497304880d",
+      "3a06dd8071d8d58746",
+      "a15f337ab2515f14de",
+      "170fecee8f048681f1"
+    ],
+    "allExactCurrentFeedIdsAndUrls": true,
+    "structurallyEquivalentValidation": "passed",
+    "officialCliValidate": false,
+    "officialImport": false,
+    "imported": false,
+    "published": false
+  },
+  "projectCoverage": {
+    "feedProjects": 100,
+    "exactEditorialRecords": 99,
+    "un_enriched": 1,
+    "publicCardsAdded": 0,
+    "reason": "The remaining item was not selected for a new project card in this cycle."
+  },
+  "library": {
+    "catalogEntries": 42,
+    "active": 40,
+    "archived": 2,
+    "inCurrentFeed": 6,
+    "researchOnlyOutsideFeed": 36,
+    "licenseNeedsUpstreamVerification": 7,
+    "previousEightReviewed": 8,
+    "previousEightActive": 8,
+    "previousEightArchived": 0,
+    "previousEightPublishedCards": 1,
+    "previousEightResearchOnly": 7,
+    "previousEightProposalCount": 14,
+    "projectTestEvidenceCount": 0,
+    "summaryFieldStale": true
+  },
+  "publish": {
+    "mainWorkflowRun": 41368600475,
+    "mainWorkflowConclusion": "success",
+    "mainCommit": "8c07e63504542cc55df47725898611e2fa336093",
+    "mainCommitFiles": [
+      "site/data/feed.json",
+      "site/data/seen.json",
+      "site/data/status.json"
+    ],
+    "mainPagesDeployStep": "success",
+    "publicEditorialFetch": "not_verifiable_in_this_session"
+  },
+  "commandsNotExecuted": [
+    "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-11-02-0845.json",
+    "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-11-02-0845.json",
+    "python -m unittest discover -s tests -v locally"
+  ],
+  "notes": [
+    "No code, design, workflow, deployment setting, feed.json, seen.json, status.json or editorial.json change was made in this cycle.",
+    "GitHub Actions PR run #114 did run the official validator against the existing 645-entry editorial.json and the Python test suite; it did not validate or import this new incoming file."
+  ]
+}
