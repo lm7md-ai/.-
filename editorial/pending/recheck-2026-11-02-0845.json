@@ -159,13 +159,19 @@
     }
   },
   "prBranchIncoming": {
-    "files": 3,
-    "recordOccurrences": 18,
-    "exactCurrentFeed": 17,
+    "filesBeforeThisRun": 3,
+    "recordOccurrencesBeforeThisRun": 18,
+    "activeExactBeforeThisRun": 17,
     "historicalOutsideCurrentFeed": 1,
+    "additionalFilesThisRun": 1,
+    "additionalActiveExactPendingNotImported": 4,
+    "filesAfterThisRun": 4,
+    "recordOccurrencesAfterThisRun": 22,
+    "activeExactAfterThisRun": 21,
+    "historicalAfterThisRun": 1,
     "editorialEntries": 645,
     "historicalRecordId": "0b6a53f2b9c6737c60",
-    "action": "preserve historical entry; do not present as active or delete"
+    "action": "preserve historical entry; new four active candidates remain in incoming only until official validate/import is available"
   },
   "collisions": [
     {
