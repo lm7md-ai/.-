@@ -1,0 +1,667 @@
+{
+  "version": 1,
+  "reportType": "current_recheck_and_pending_hold",
+  "runAt": "2026-11-03T02:45:00+03:00",
+  "repository": "https://github.com/lm7md-ai/.-",
+  "main": {
+    "sha": "9df2b746e1f8acf2ac692857f97ae696a608cfa9",
+    "feedGeneratedAt": "2026-11-02T21:41:46+00:00",
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialCount": 627,
+    "status": "partial",
+    "sourceCounts": {
+      "ok": 24,
+      "empty": 1,
+      "error": 1
+    }
+  },
+  "mainChangesSincePriorFullAudit": {
+    "from": "012536731c6d6d82d430fca40517e9ada31034f7",
+    "to": "9df2b746e1f8acf2ac692857f97ae696a608cfa9",
+    "files": [
+      "site/data/feed.json",
+      "site/data/seen.json",
+      "site/data/status.json"
+    ],
+    "incomingAndEditorialUnchanged": true
+  },
+  "priorFullIncomingAudit": {
+    "runAt": "2026-11-02T14:46:32+03:00",
+    "files": 63,
+    "occurrences": 592,
+    "countsAreOccurrences": true,
+    "activeAlreadyImported": 237,
+    "historicalImportedOutsideFeed": 349,
+    "seenOnly": 5,
+    "sameIdDifferentUrl": 0,
+    "sameUrlDifferentId": 1,
+    "confirmedExpired": 0,
+    "scopeNote": "هذه أرقام لقطة التدقيق السابقة قبل تحديث التغذية؛ لم يُعاد تنزيل كل 592 ظهورًا ومطابقتها بعد تحديث main الأخير."
+  },
+  "currentPR79Cycle": {
+    "incomingFiles": [
+      "editorial/incoming/nabdh-editorial-2026-11-02-1446.json",
+      "editorial/incoming/nabdh-editorial-2026-11-02-2347.json"
+    ],
+    "total": 14,
+    "news": 13,
+    "projects": 1,
+    "activeExactMatches": 12,
+    "staleNotInFeed": 2,
+    "alreadyImportedInMain": 0,
+    "structuralEquivalentValidation": {
+      "status": "passed",
+      "entries": 14,
+      "errors": 0,
+      "basisCounts": {
+        "article": 11,
+        "readme": 1,
+        "metadata": 2
+      }
+    },
+    "records": [
+      {
+        "id": "a99fcf66497304880d",
+        "url": "https://news.google.com/rss/articles/CBMilwVBVV95cUxPbGx0alRuMmhVQWYwNDJBMjFURTRxTHBYVlJlcVduNG5jTHM4emp4V2ZpcGR5ZjMxNkpFV1d5R0VzT2thY2M5eE5TYnlid2VlX2o2Q0VuU0haeXk3ZEVCaFpjazNiWlVDSFZTRnU0dlJQdVVXSFJLaE1uc0h2NURWa3B1TE5qZC1Pd1g3alJ6bHMtR1h0MXpKWmJzVzJ0UnJ1OGlST1FEYndpeWRsRlZrVF9pN3JuaHpJRkpLcHJXRmcxcVlUeWljUklCaDlVRGpmLXBON0JrTmNsaF9Eb0lIemFVckQ0b0FRaXE5d29EU3BwSXllUUFHYUpZdEdvcDRtQVUxTlJ0UjlHSUQ5VV9JdWU5UUt4ekhXTFZ5TDdfQVBYdnpMcmQxUUVUNWNFTjZudmtidjhTWTRRbERHYkZrSlpUOFBxamFyRUs3M25iSWlZSHFQaHJNZ2oya1hIaHhPTWZvWHJDcjNadjhab1dRUGJZUW5Kclg2NmstcExncDdhQUlFa3A2T29SNUdvWlVwNXB0Y2tWUXlTWVBOa21GTWFBcVhmZDRkTktKbF9NeUUtSU9ILXZ5WmNBYTBqYmtseWdzZS1yakl0ZkItdDgycnBjMDdZalNTZGNJb2xLbGRJSXlaRHRvMnlYRHZJbHd1cGtsY0NHMXJ4NWZUU2RLWlVYWkZaTUI4QlUtMTFPdjQxSzZ3dTNseUV1OVN6d3R5VXlTMjZmZ2I3SkJndVhjZGpidkVPN3VPOXZiRmx0OVRMSFA4UlpoNzBYWWJQNHViTnNaQWlheWRhcXE3VHlMZUtHYWlZZVFLb0t3ZHlIbnFQR1FrN2NpLTNBTGIwVS1DeWp5aENZM19RemUxSm5RY2N1Qndfa1E?oc=5",
+        "titleAr": "سدايا تصدر دليلًا للبرمجة التوليدية يركز على الكفاءة والموثوقية والأمن",
+        "kind": "news",
+        "basis": "article",
+        "reviewedAt": "2026-11-02T08:45:44+03:00",
+        "currentFeedMatch": "exact_id_and_url_match",
+        "alreadyImportedInMain": false,
+        "officialCliValidate": "not_run",
+        "officialImport": "not_run",
+        "sourceUrls": [
+          "https://www.spa.gov.sa/N2713503",
+          "https://www.spa.gov.sa/en/N2713576",
+          "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/VibeCoding-ar.pdf"
+        ],
+        "proposalCounts": {
+          "improvements": 0,
+          "spinoffs": 0,
+          "religious": 0
+        }
+      },
+      {
+        "id": "3a06dd8071d8d58746",
+        "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9vR05jckZqUVVIdFFLbVM5czB6RHhRUjZLY1poZE9mTG9rWGlFM0JoS0JsN0lNVVpMX1dOWDREWnJ6a3hrMUE?oc=5",
+        "titleAr": "دراسة سدايا: البيانات المصطنعة توسع تدريب الذكاء الاصطناعي مع ضوابط للخصوصية",
+        "kind": "news",
+        "basis": "article",
+        "reviewedAt": "2026-11-02T08:45:44+03:00",
+        "currentFeedMatch": "exact_id_and_url_match",
+        "alreadyImportedInMain": false,
+        "officialCliValidate": "not_run",
+        "officialImport": "not_run",
+        "sourceUrls": [
+          "https://www.spa.gov.sa/N2714718",
+          "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/synthetic-data.pdf"
+        ],
+        "proposalCounts": {
+          "improvements": 0,
+          "spinoffs": 0,
+          "religious": 0
+        }
+      },
+      {
+        "id": "a15f337ab2515f14de",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1OZXNQZVpoZFhVYU9sTVFIT2xQcW9UOWxKVnpaV0xwQTNCRVc5d2piUVRtXzJXbXhpX0ZWQThIb0N3X3dyb2t0Y3ptYk12aW8xNnU4?oc=5",
+        "titleAr": "مسابقة الموهبة والابتكارات بجازان تفتح تسعة مسارات تقنية وإبداعية",
+        "kind": "news",
+        "basis": "article",
+        "reviewedAt": "2026-11-02T08:45:44+03:00",
+        "currentFeedMatch": "exact_id_and_url_match",
+        "alreadyImportedInMain": false,
+        "officialCliValidate": "not_run",
+        "officialImport": "not_run",
+        "sourceUrls": [
+          "https://spa.gov.sa/N2715514"
+        ],
+        "proposalCounts": {
+          "improvements": 0,
+          "spinoffs": 0,
+          "religious": 0
+        }
+      },
+      {
+        "id": "170fecee8f048681f1",
+        "url": "https://www.engadget.com/2303462/judge-says-xai-must-face-naacp-lawsuit-on-data-center-pollution/",
+        "titleAr": "قاضٍ أمريكي يسمح بمواصلة دعوى NAACP بشأن محطة طاقة تغذي مركز بيانات xAI",
+        "kind": "news",
+        "basis": "article",
+        "reviewedAt": "2026-11-02T14:46:32+03:00",
+        "currentFeedMatch": "exact_id_and_url_match",
+        "alreadyImportedInMain": false,
+        "officialCliValidate": "not_run",
+        "officialImport": "not_run",
+        "sourceUrls": [
+          "https://www.engadget.com/2303462/judge-says-xai-must-face-naacp-lawsuit-on-data-center-pollution/",
+          "https://earthjustice.org/wp-content/uploads/2026/10/10313375508_6407.pdf"
+        ],
+        "proposalCounts": {
+          "improvements": 0,
+          "spinoffs": 0,
+          "religious": 0
+        }
+      },
+      {
+        "id": "022bb01d12c65be1c8",
+        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9IMHpfM2JDZmdMWnRGa0h3Y1prSUNiWTM1bzN1VkRzMHprWG1tMEZERG11eDVrVDJ0ODFLa1FDV0NrRzU0NjA2MmRmRlAyNS1iaEtTemxn0gFaQVVfeXFMUHJrUWJXV1lSd3JCclE2UGh4MzVzOTBieGVXZmNYdXFyOUdDdndnaVZkMEU3c2c3dG9IVS1YNnJseFEteEtBNVVEeFR1T3ZWNVp1VVItbUQ5RHFB?oc=5",
+        "titleAr": "أرامكو تستحوذ على 49% من هيوماين ضمن صفقة لتوسيع البنية التحتية للذكاء الاصطناعي",
+        "kind": "news",
+        "basis": "article",
+        "reviewedAt": "2026-11-02T14:46:32+03:00",
+        "currentFeedMatch": "exact_id_and_url_match",
+        "alreadyImportedInMain": false,
+        "officialCliValidate": "not_run",
+        "officialImport": "not_run",
+        "sourceUrls": [
+          "https://www.aramco.com/en/news-media/news/2026/pif-and-aramco-close-humain-transaction-to-accelerate-humains-global-growth",
+          "https://www.spa.gov.sa/en/N2715118",
+          "https://www.aramco.com/ar/news-media/news/2026/pif-and-aramco-close-humain-transaction-to-accelerate-humains-global-growth"
+        ],
+        "proposalCounts": {
+          "improvements": 0,
+          "spinoffs": 0,
+          "religious": 0
+        }
+      },
+      {
+        "id": "370385b074fdc7b199",
+        "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE0zREt5Y0hSUVM5ZWtHWExNZXYxOWJnT1FjekZXemx0d3hzLXpSbjZqQy1vdFc3RzlIZXhBbFpYd0ZXYm1j?oc=5",
+        "titleAr": "Tencent Cloud وOmniOps تعلنان شراكة لتوسيع بنية الذكاء الاصطناعي المؤسسي في السعودية",
+        "kind": "news",
+        "basis": "article",
+        "reviewedAt": "2026-11-02T14:46:32+03:00",
+        "currentFeedMatch": "exact_id_and_url_match",
+        "alreadyImportedInMain": false,
+        "officialCliValidate": "not_run",
+        "officialImport": "not_run",
+        "sourceUrls": [
+          "https://en.prnasia.com/releases/apac/tencent-cloud-and-omniops-partner-to-advance-enterprise-ai-development-in-saudi-arabia-554174.shtml"
+        ],
+        "proposalCounts": {
+          "improvements": 0,
+          "spinoffs": 0,
+          "religious": 0
+        }
+      },
+      {
+        "id": "d674dea922625d0be8",
+        "url": "https://noyb.eu/en/noyb-win-french-electronics-retailer-fnac-darty-fined-eu7-million",
+        "titleAr": "هيئة حماية البيانات الفرنسية تفرض غرامة 7 ملايين يورو بسبب تتبع مستخدمي تطبيق Fnac دون موافقة",
+        "kind": "news",
+        "basis": "article",
+        "reviewedAt": "2026-11-02T14:46:32+03:00",
+        "currentFeedMatch": "not_in_current_feed",
+        "alreadyImportedInMain": false,
+        "officialCliValidate": "not_run",
+        "officialImport": "not_run",
+        "sourceUrls": [
+          "https://cnil.fr/en/sanction-app-cookies-fnac",
+          "https://noyb.eu/en/noyb-win-french-electronics-retailer-fnac-darty-fined-eu7-million"
+        ],
+        "proposalCounts": {
+          "improvements": 0,
+          "spinoffs": 0,
+          "religious": 0
+        }
+      },
+      {
+        "id": "967be99077d13f07b2",
+        "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+        "titleAr": "اختبار يقارن تكلفة بناء تطبيق واحد بوكلاء البرمجة عبر 12 إطار JavaScript",
+        "kind": "news",
+        "basis": "article",
+        "reviewedAt": "2026-11-02T14:46:32+03:00",
+        "currentFeedMatch": "not_in_current_feed",
+        "alreadyImportedInMain": false,
+        "officialCliValidate": "not_run",
+        "officialImport": "not_run",
+        "sourceUrls": [
+          "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/"
+        ],
+        "proposalCounts": {
+          "improvements": 0,
+          "spinoffs": 0,
+          "religious": 0
+        }
+      },
+      {
+        "id": "12d49b8b188050a756",
+        "url": "https://arxiv.org/abs/2610.41014",
+        "titleAr": "بحث من Redwood Research يرصد سعي بعض النماذج إلى درجات التقييم حتى عند تعارضها مع تعليمات المستخدم",
+        "kind": "news",
+        "basis": "article",
+        "reviewedAt": "2026-11-02T14:46:32+03:00",
+        "currentFeedMatch": "exact_id_and_url_match",
+        "alreadyImportedInMain": false,
+        "officialCliValidate": "not_run",
+        "officialImport": "not_run",
+        "sourceUrls": [
+          "https://arxiv.org/abs/2610.41014",
+          "https://arxiv.org/pdf/2610.41014"
+        ],
+        "proposalCounts": {
+          "improvements": 0,
+          "spinoffs": 0,
+          "religious": 0
+        }
+      },
+      {
+        "id": "2e2562d0bda4e0975e",
+        "url": "https://github.com/bojieli/ai-agent-book",
+        "titleAr": "كتاب مفتوح ومختبرات عملية لفهم وكلاء الذكاء الاصطناعي",
+        "kind": "project",
+        "basis": "readme",
+        "reviewedAt": "2026-11-02T14:46:32+03:00",
+        "currentFeedMatch": "exact_id_and_url_match",
+        "alreadyImportedInMain": false,
+        "officialCliValidate": "not_run",
+        "officialImport": "not_run",
+        "sourceUrls": [
+          "https://github.com/bojieli/ai-agent-book",
+          "https://github.com/bojieli/ai-agent-book/blob/main/docs/ar/README.md",
+          "https://github.com/bojieli/ai-agent-book/blob/main/chapter1/web-search-agent/README.md",
+          "https://github.com/bojieli/ai-agent-book/blob/main/LICENSE"
+        ],
+        "proposalCounts": {
+          "improvements": 3,
+          "spinoffs": 3,
+          "religious": 0
+        }
+      },
+      {
+        "id": "de34c77e9b40391662",
+        "url": "https://arxiv.org/abs/2610.40700",
+        "titleAr": "بحث يختبر قوة الخطوط الأساسية البسيطة آليًا قبل الحكم على تفوق التعلم العميق",
+        "kind": "news",
+        "basis": "article",
+        "reviewedAt": "2026-11-02T20:45:00Z",
+        "currentFeedMatch": "exact_id_and_url_match",
+        "alreadyImportedInMain": false,
+        "officialCliValidate": "not_run",
+        "officialImport": "not_run",
+        "sourceUrls": [
+          "https://arxiv.org/abs/2610.40700",
+          "https://arxiv.org/pdf/2610.40700"
+        ],
+        "proposalCounts": {
+          "improvements": 0,
+          "spinoffs": 0,
+          "religious": 0
+        }
+      },
+      {
+        "id": "4b574d09afc136bbaa",
+        "url": "https://arxiv.org/abs/2610.40901",
+        "titleAr": "TSFLab يبني بيئة عمل مشتركة لوكلاء البرمجة لتكرار أبحاث التنبؤ بالسلاسل الزمنية",
+        "kind": "news",
+        "basis": "article",
+        "reviewedAt": "2026-11-02T20:45:00Z",
+        "currentFeedMatch": "exact_id_and_url_match",
+        "alreadyImportedInMain": false,
+        "officialCliValidate": "not_run",
+        "officialImport": "not_run",
+        "sourceUrls": [
+          "https://arxiv.org/abs/2610.40901",
+          "https://arxiv.org/pdf/2610.40901",
+          "https://github.com/D2I-Group/TSFLab",
+          "https://github.com/D2I-Group/TSFLab/blob/main/README.md",
+          "https://github.com/D2I-Group/TSFLab/tree/main/docs/en",
+          "https://github.com/D2I-Group/TSFLab/blob/main/LICENSE"
+        ],
+        "proposalCounts": {
+          "improvements": 0,
+          "spinoffs": 0,
+          "religious": 0
+        }
+      },
+      {
+        "id": "50a265312cccb0d6fa",
+        "url": "https://news.google.com/rss/articles/CBMihAZBVV95cUxNYzU3LUhubkxaSm9MbWIycktaRlI3aVpNMzBORGM0aW9saDhlMF9uR1VDN2E5djJRWGFRZDBGUEJGLWM0Vlg3d095NFlyWWMyQkl3SnhadjcyWExMbWxQYTlwQ09hSmN6NHB0X3lyd2ViWnlZYjQ0a2pSUXllU0VhN0hxRUtPeF9NMGQ3dlFmMmZsazBTTzNkdUo4RGdBRHhSWkJ0UDZKdTVQMEVkRlVfUlk0dnphU2Y5Z3JlcVc5NGJQY1hnSE81X0VhM1l5WlhlVERhMkhLSU5va3ZNRUU1YVkzQUhqLTB2Rlk1RmUybjQ4NkotNjFmRzN5dlJkLXZiejNTbnJOb2thR203c1VyR2hLZkhQMV92R0dUN2dJZ3EzT1llRnJab25DR0F2QllRWVNxU3JmZDl3a2N3S3hoUWhCaW9CNUhtQWpwVzRnSHdqN0pUdU1yWG5OcnFCMmNNaGFLVnVvNzRkSktsaTgxTTdKblNVTzRKaU5hOGpfNzhOZ01uSG9YME5hWU9hNjIwbnhKaVhzdDJpTEI1eWlJTjlMZmU2dTRLWWV5TzhfSjhnRXRiT2hIUTctS0d0dVZyWjNFX3VxZnlpLUZPWGltLS1BZzRtZ2FHbndObjBWajZkQlpUNTV6MHRTTFk3VzlSRzkxRTFUWFNCVVFjeG1BcmRsLVFPZVEwRGw0ZkRIN0xZOWVqTWgwREtkaVdKRldpYXBWYWZVWmktTXdSTjFwVTdJS1dOelI4dVllX2FvczVlZlZZRDJpSzVfeEl1VlEzN08zZms1UUVFWEY3aWJ5eUR3bVQ4ZDB0UFJjMUFGMjBfY0o1cmlOZ1V1YjZYUkJ0WHZXeDlDVGNqVnNPLWI3ZDh5Q2x0eGwyZTF1V0NSNjN0eGsya2pNazI2dGRKVnd6dGVRTjhGYlo3NnZJcm9SRFhGUlA2bVRzUWYwX3ZHaDdJV09ENDd3ZUdFOG5EWmY1OGRMMlhuSlczLUFjOFNJOTlTQnZoSmlsX3ByR2YwS2RtUGNG0gFTQVVfeXFMTXUzM0xHYjNwaDB5UjlVLWdzR1pPZEZsa1RFRDVZanhYS2s4eUhTbzk2WmNWVmxpQ1BSZWNxSTBTMnZqV3JyZUZ5ZnBJSXJhbzFNOEk?oc=5",
+        "titleAr": "معايير سعودية تضبط أدوار وكلاء الذكاء الاصطناعي في الإرشاد والقرار التعليمي",
+        "kind": "news",
+        "basis": "metadata",
+        "reviewedAt": "2026-11-02T20:45:00Z",
+        "currentFeedMatch": "exact_id_and_url_match",
+        "alreadyImportedInMain": false,
+        "officialCliValidate": "not_run",
+        "officialImport": "not_run",
+        "sourceUrls": [
+          "https://news.google.com/rss/articles/CBMihAZBVV95cUxNYzU3LUhubkxaSm9MbWIycktaRlI3aVpNMzBORGM0aW9saDhlMF9uR1VDN2E5djJRWGFRZDBGUEJGLWM0Vlg3d095NFlyWWMyQkl3SnhadjcyWExMbWxQYTlwQ09hSmN6NHB0X3lyd2ViWnlZYjQ0a2pSUXllU0VhN0hxRUtPeF9NMGQ3dlFmMmZsazBTTzNkdUo4RGdBRHhSWkJ0UDZKdTVQMEVkRlVfUlk0dnphU2Y5Z3JlcVc5NGJQY1hnSE81X0VhM1l5WlhlVERhMkhLSU5va3ZNRUU1YVkzQUhqLTB2Rlk1RmUybjQ4NkotNjFmRzN5dlJkLXZiejNTbnJOb2thR203c1VyR2hLZkhQMV92R0dUN2dJZ3EzT1llRnJab25DR0F2QllRWVNxU3JmZDl3a2N3S3hoUWhCaW9CNUhtQWpwVzRnSHdqN0pUdU1yWG5OcnFCMmNNaGFLVnVvNzRkSktsaTgxTTdKblNVTzRKaU5hOGpfNzhOZ01uSG9YME5hWU9hNjIwbnhKaVhzdDJpTEI1eWlJTjlMZmU2dTRLWWV5TzhfSjhnRXRiT2hIUTctS0d0dVZyWjNFX3VxZnlpLUZPWGltLS1BZzRtZ2FHbndObjBWajZkQlpUNTV6MHRTTFk3VzlSRzkxRTFUWFNCVVFjeG1BcmRsLVFPZVEwRGw0ZkRIN0xZOWVqTWgwREtkaVdKRldpYXBWYWZVWmktTXdSTjFwVTdJS1dOelI4dVllX2FvczVlZlZZRDJpSzVfeEl1VlEzN08zZms1UUVFWEY3aWJ5eUR3bVQ4ZDB0UFJjMUFGMjBfY0o1cmlOZ1V1YjZYUkJ0WHZXeDlDVGNqVnNPLWI3ZDh5Q2x0eGwyZTF1V0NSNjN0eGsya2pNazI2dGRKVnd6dGVRTjhGYlo3NnZJcm9SRFhGUlA2bVRzUWYwX3ZHaDdJV09ENDd3ZUdFOG5EWmY1OGRMMlhuSlczLUFjOFNJOTlTQnZoSmlsX3ByR2YwS2RtUGNG0gFTQVVfeXFMTXUzM0xHYjNwaDB5UjlVLWdzR1pPZEZsa1RFRDVZanhYS2s4eUhTbzk2WmNWVmxpQ1BSZWNxSTBTMnZqV3JyZUZ5ZnBJSXJhbzFNOEk?oc=5",
+          "https://storage.googleapis.com/futurexcms/AI_Agent_Standards_English_f785128d0c/AI_Agent_Standards_English_f785128d0c.pdf",
+          "https://nelc.gov.sa/"
+        ],
+        "proposalCounts": {
+          "improvements": 0,
+          "spinoffs": 0,
+          "religious": 0
+        }
+      },
+      {
+        "id": "97fc819f73dad80e77",
+        "url": "https://news.google.com/rss/articles/CBMi0gNBVV95cUxNVkVCVGJwd0dUS0JlY3V4MFFFSVM5d2c3S3JLZnFfbTZ6N0RzTVpGbE1fN0NiYXN6bnhHb2lmLXVHMkpXUFplMEdCRGNTLWJFMFV3UW9hcE16QkNhaFQxeWt6d2lFSVl5MzhwZGxGdTdmalRVTHNjRWdDU09wSXdBR0djVWFWXzI3M3hQTlljQll2TmZGdUdyV29nUFZOMlpsaW85YnVQajYySlJ4ajV0WFdLVnhZNVNFMjVyVl9JVWNfTFpuVlFpQVRBNV91bGV3OXBwdHgzSHBJbGFnWTNGT2VBMWpCb2tUNElqVzFaQWlWcS14M3dNR0dUaXU2TlZDZGxTS01hcW4tQ3h1aDNlQ2trZUxLd2hWQnVFVkZsUXF5dElCNmg5ZlNRRHVjcG01eWZmLUVhVEVCdjdzb3JYR0RhXzRZa0M1dllzNmxWWktRdnlmR1RWYktqSzRFS1pSWXlybGRJb2RWUXA5cDBkdmNTc1ZlNnRQY2FUNXdjZE1NZ1VWZ0xESXFpOW0tYXRscDJOSGR5YlhKWUNTRHpfTTcwdUZjQ2pFb1NlRnBqQWlmTXhQeXBIdGJZMlUyNDVPSHVQU2JkaE94UDh5dDVwc2dn?oc=5",
+        "titleAr": "DeepSeek تنشر نموذجًا أوليًا لوكيل برمجي يتابع مهام GitHub",
+        "kind": "news",
+        "basis": "metadata",
+        "reviewedAt": "2026-11-02T20:45:00Z",
+        "currentFeedMatch": "exact_id_and_url_match",
+        "alreadyImportedInMain": false,
+        "officialCliValidate": "not_run",
+        "officialImport": "not_run",
+        "sourceUrls": [
+          "https://news.google.com/rss/articles/CBMi0gNBVV95cUxNVkVCVGJwd0dUS0JlY3V4MFFFSVM5d2c3S3JLZnFfbTZ6N0RzTVpGbE1fN0NiYXN6bnhHb2lmLXVHMkpXUFplMEdCRGNTLWJFMFV3UW9hcE16QkNhaFQxeWt6d2lFSVl5MzhwZGxGdTdmalRVTHNjRWdDU09wSXdBR0djVWFWXzI3M3hQTlljQll2TmZGdUdyV29nUFZOMlpsaW85YnVQajYySlJ4ajV0WFdLVnhZNVNFMjVyVl9JVWNfTFpuVlFpQVRBNV91bGV3OXBwdHgzSHBJbGFnWTNGT2VBMWpCb2tUNElqVzFaQWlWcS14M3dNR0dUaXU2TlZDZGxTS01hcW4tQ3h1aDNlQ2trZUxLd2hWQnVFVkZsUXF5dElCNmg5ZlNRRHVjcG01eWZmLUVhVEVCdjdzb3JYR0RhXzRZa0M1dllzNmxWWktRdnlmR1RWYktqSzRFS1pSWXlybGRJb2RWUXA5cDBkdmNTc1ZlNnRQY2FUNXdjZE1NZ1VWZ0xESXFpOW0tYXRscDJOSGR5YlhKWUNTRHpfTTcwdUZjQ2pFb1NlRnBqQWlmTXhQeXBIdGJZMlUyNDVPSHVQU2JkaE94UDh5dDVwc2dn?oc=5",
+          "https://github.com/deepseek-ai/dsh-superagent-prototype",
+          "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/README.md",
+          "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/002-authorization.md",
+          "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/006-deployment.md"
+        ],
+        "proposalCounts": {
+          "improvements": 0,
+          "spinoffs": 0,
+          "religious": 0
+        }
+      }
+    ]
+  },
+  "pendingNonMatchingRecords": [
+    {
+      "id": "d674dea922625d0be8",
+      "url": "https://noyb.eu/en/noyb-win-french-electronics-retailer-fnac-darty-fined-eu7-million",
+      "titleAr": "هيئة حماية البيانات الفرنسية تفرض غرامة 7 ملايين يورو بسبب تتبع مستخدمي تطبيق Fnac دون موافقة",
+      "reason": "المعرف غير موجود في feed.json المنشور حاليًا؛ لا تُستبدل الهوية بعنوان مشابه ولا يُستورد."
+    },
+    {
+      "id": "967be99077d13f07b2",
+      "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+      "titleAr": "اختبار يقارن تكلفة بناء تطبيق واحد بوكلاء البرمجة عبر 12 إطار JavaScript",
+      "reason": "المعرف غير موجود في feed.json المنشور حاليًا؛ لا تُستبدل الهوية بعنوان مشابه ولا يُستورد."
+    }
+  ],
+  "specialChecks": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "state": "seen_only",
+      "inFeed": false,
+      "inEditorial": false,
+      "inSeen": true,
+      "additionalNote": "المشروع موجود في مراجعة المشاريع الثمانية كبحث فقط؛ توثيق NVIDIA الحالي يصف الإصدار v0.1.6 بأنه alpha ويحذر من استخدامه في الإنتاج."
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "state": "seen_only",
+      "inFeed": false,
+      "inEditorial": false,
+      "inSeen": true,
+      "additionalNote": "إعلان Canva الرسمي يذكر 2K وAPI ومخرجات قابلة للتحرير؛ ترتيب DesignArena ادعاء من Canva نفسها."
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "state": "seen_only",
+      "inFeed": false,
+      "inEditorial": false,
+      "inSeen": true,
+      "additionalNote": "إعلان 1Password الرسمي يصف موافقة المستخدم على الجهاز وعدم كشف بيانات الاعتماد للوكيل."
+    }
+  ],
+  "identityCollision": {
+    "historicalId": "7a99eca9b2ce14d9f5",
+    "currentFeedId": "e0cbbf211a55e79f34",
+    "url": "https://github.com/rasbt/LLMs-from-scratch",
+    "decision": "عدم دمج الهويتين وعدم توليد معرف بديل."
+  },
+  "projectReview": {
+    "previousEight": 8,
+    "feedVisible": 1,
+    "researchOnly": 7,
+    "improvements": 8,
+    "spinoffs": 8,
+    "religious": 1,
+    "testEvidence": 0,
+    "topThreeSuggestions": [
+      {
+        "title": "عارض فروقات سياسات OpenShell قبل التنفيذ",
+        "problem": "قد يصعب اكتشاف اتساع صلاحيات الملفات أو الشبكة في ملفات السياسات الطويلة.",
+        "approach": "واجهة تقارن السياسة الحالية والمقترحة وتشرح أثر كل قاعدة مع موافقة بشرية.",
+        "stack": "TypeScript + JSON Schema + OpenShell policy API",
+        "steps": [
+          "قراءة schema الرسمية للسياسات.",
+          "تطبيع القواعد وعرض الفروقات.",
+          "إظهار الملفات والوجهات التي ستتأثر.",
+          "إضافة اختبار deny-by-default قبل الموافقة."
+        ],
+        "metric": "عدد الصلاحيات الواسعة المكتشفة قبل التشغيل ونسبة القواعد التي لها تفسير.",
+        "difficulty": "مرتفع (تقدير: 1–2 أسبوع)",
+        "risks": "تفسير خاطئ لقاعدة قد يعطي ثقة زائفة.",
+        "sources": [
+          {
+            "title": "المستودع الرسمي",
+            "url": "https://github.com/NVIDIA/OpenShell"
+          },
+          {
+            "title": "مصفوفة الدعم الرسمية",
+            "url": "https://docs.nvidia.com/openshell/v0.1.6/about/support-matrix"
+          },
+          {
+            "title": "Cargo.toml",
+            "url": "https://github.com/NVIDIA/OpenShell/blob/main/Cargo.toml"
+          },
+          {
+            "title": "Apache-2.0 License",
+            "url": "https://github.com/NVIDIA/OpenShell/blob/main/LICENSE"
+          }
+        ]
+      },
+      {
+        "title": "حزمة تقييم typed لوكلاء Pydantic AI",
+        "problem": "قد ينتج الوكيل مخرجات غير صحيحة أو يستدعي أداة غير مناسبة رغم نجاح طلب النموذج.",
+        "approach": "مجموعة حالات ثابتة تقيس schema correctness ومسارات الأدوات والامتناع والتكلفة والزمن.",
+        "stack": "Python + Pydantic Evals + pytest + JSONL",
+        "steps": [
+          "تعريف مهام مرجعية ومدخلات ثابتة.",
+          "إنشاء expected outputs ومسارات أدوات.",
+          "اختبار حالات الفشل والامتناع وتجاوز الوقت.",
+          "تصدير تقرير مقارنة بين إصدارات النموذج."
+        ],
+        "metric": "دقة المخرجات المنظمة ونسبة استدعاءات الأدوات الصحيحة.",
+        "difficulty": "متوسط إلى مرتفع (تقدير: أسبوع)",
+        "risks": "قد تتغير النتائج بسبب عدم حتمية النماذج.",
+        "sources": [
+          {
+            "title": "المستودع الرسمي",
+            "url": "https://github.com/pydantic/pydantic-ai"
+          },
+          {
+            "title": "التوثيق الرسمي",
+            "url": "https://pydantic.dev/docs/ai/"
+          },
+          {
+            "title": "pyproject.toml",
+            "url": "https://github.com/pydantic/pydantic-ai/blob/main/pyproject.toml"
+          },
+          {
+            "title": "MIT License",
+            "url": "https://github.com/pydantic/pydantic-ai/blob/main/LICENSE"
+          }
+        ]
+      },
+      {
+        "title": "مصفوفة توافق Google GenAI SDK",
+        "problem": "تغير واجهات SDK ومزايا API قد يكسر أمثلة قديمة عند الترقية.",
+        "approach": "اختبارات contract تغطي إصدارات Python والواجهات العامة والـ deprecations باستخدام fixtures دون API حي.",
+        "stack": "Python + pytest + GitHub Actions + JSON fixtures",
+        "steps": [
+          "حصر الواجهات العامة المستخدمة.",
+          "إنشاء fixtures لاستجابات ثابتة.",
+          "تشغيل مصفوفة Python وإصدارات SDK.",
+          "نشر تقرير deprecations لكل إصدار."
+        ],
+        "metric": "عدد regressions المكتشفة قبل الإصدار ونسبة نجاح المصفوفة.",
+        "difficulty": "متوسط (تقدير: 5–7 أيام)",
+        "risks": "قد لا تمثل fixtures كل تغيرات الخدمة الحية.",
+        "sources": [
+          {
+            "title": "المستودع الرسمي",
+            "url": "https://github.com/googleapis/python-genai"
+          },
+          {
+            "title": "التوثيق الرسمي",
+            "url": "https://googleapis.github.io/python-genai/"
+          },
+          {
+            "title": "pyproject.toml",
+            "url": "https://github.com/googleapis/python-genai/blob/main/pyproject.toml"
+          },
+          {
+            "title": "Apache-2.0 License",
+            "url": "https://github.com/googleapis/python-genai/blob/main/LICENSE"
+          }
+        ]
+      }
+    ]
+  },
+  "newResearchOnlyProjects": [
+    {
+      "repository": "deepseek-ai/dsh-superagent-prototype",
+      "name": "DeepSeek Super-Agent Prototype",
+      "publicationStatus": "unpublished_research_only_not_in_project_feed",
+      "siteVisible": false,
+      "license": "MIT وفق LICENSE وpackage.json؛ README يصف المشروع بأنه نموذج بحثي مرجعي لا منتج جاهز.",
+      "stars": 12817,
+      "forks": 1329,
+      "lastPushedAt": "2026-10-31T12:05:51Z",
+      "metricsMeasuredAt": "2026-11-02T20:47:39Z",
+      "requirements": "Node.js 22.19+ أو 24، pnpm 11.7، Git 2.32+، Python 3.8+، tmux، GitHub CLI 2.48+، إصدار DeepSeek Harness المتوافق، وحساب GitHub منفصل للمراجعة. تكامل Feishu اختياري. يحتاج مزود نموذج أو endpoint متوافق؛ لا توجد كلفة ثابتة معلنة من المستودع.",
+      "quickStart": "للمراجعة فقط: اقرأ README وSETUP وملفات authorization وexecution وdeployment، ثم قيّم المشروع في بيئة اختبار معزولة وحساب تجريبي ومستودع غير مهم. ابدأ بالمراقبة فقط، واستخدم أقل صلاحيات ممكنة، ولا تفعّل الدمج التلقائي أو تربط أسرارًا شخصية.",
+      "improvements": 3,
+      "spinoffs": 3,
+      "religious": 0,
+      "testEvidence": null
+    },
+    {
+      "repository": "D2I-Group/TSFLab",
+      "name": "TSFLab",
+      "publicationStatus": "unpublished_research_only_not_in_project_feed",
+      "siteVisible": false,
+      "license": "ملف LICENSE نصه MIT؛ واجهة GitHub API أعادت NOASSERTION وقت القياس، لذا يلزم توثيق اختلاف الكشف.",
+      "stars": 65,
+      "forks": 8,
+      "lastPushedAt": "2026-11-02T05:08:15Z",
+      "metricsMeasuredAt": "2026-11-02T20:47:39Z",
+      "requirements": "Python >=3.12، uv، PyTorch 2.14.1 وفق pyproject، واعتمادات اختيارية للبيانات والنماذج والتجارب. يمكن استخدام CPU للتجارب الصغيرة، بينما تتطلب التجارب الأكبر GPU أو موارد حوسبة. وكيل البرمجة ومزود النموذج ليسا خدمة مضمّنة في المستودع.",
+      "quickStart": "اقرأ README ودليل التشغيل، جهّز بيئة Python 3.12 عبر uv مع الإضافات اللازمة، اعرض الفهرس بأمر tsf catalog، ثم نفّذ run_single_data.toml بوضع dry-run. ابدأ ببيانات عامة صغيرة مثل ETTh1 أو Weather، وثبّت seed وsplit والمقياس قبل المقارنة.",
+      "improvements": 3,
+      "spinoffs": 3,
+      "religious": 0,
+      "testEvidence": null
+    }
+  ],
+  "cumulativeLibrary": {
+    "mainSiteLibrary": {
+      "total": 31,
+      "active": 29,
+      "archived": 2,
+      "inCurrentFeed": 4,
+      "notInFeed": 27,
+      "compiledAt": "2026-10-24T10:38:36.869Z",
+      "warning": "metadata قديم نسبيًا ولم يُختبر كل مشروع أو تُراجع كل تراخيصه"
+    },
+    "openPR78Catalog": {
+      "total": 42,
+      "active": 40,
+      "archived": 2,
+      "inCurrentFeed": 6,
+      "researchOnly": 36,
+      "licenseVerificationFollowups": 7,
+      "metricsMeasuredAt": "2026-11-02T14:46:32+03:00",
+      "published": false
+    }
+  },
+  "aiAgentBookVerification": {
+    "feedId": "2e2562d0bda4e0975e",
+    "officialLicense": "Apache-2.0",
+    "readmeClaims": {
+      "chapters": 10,
+      "experiments": 109,
+      "languages": 15,
+      "python": "3.11–3.13"
+    },
+    "quickStart": "uv sync --locked --extra ch1",
+    "costNote": "الكتاب مجاني؛ بعض التجارب تحتاج مزود نموذج/API، بينما يمكن تشغيل تجارب لا تحتاج خدمة خارجية محليًا.",
+    "testEvidence": null
+  },
+  "execution": {
+    "localEnvironmentAvailable": false,
+    "officialIncomingValidate": "not_run",
+    "officialImport": "not_run",
+    "localUnitTests": "not_run",
+    "commandsNotExecuted": [
+      "python scripts/editorial.py validate /tmp/nabdh-editorial.json",
+      "python scripts/editorial.py import /tmp/nabdh-editorial.json",
+      "python -m unittest discover -s tests -v"
+    ],
+    "note": "التحقق البنيوي المكافئ للـ14 سجلًا مرّ؛ هذا لا يحل محل CLI الرسمي ولا يثبت الاستيراد."
+  },
+  "ci": {
+    "pr79RunId": 41526122613,
+    "state": "success",
+    "unitTests": 30,
+    "officialEditorialValidate": "passed for site/data/editorial.json on PR branch (641 records)",
+    "javascriptSyntax": "passed",
+    "scopeNote": "لم يشغّل CI validate على ملفي incoming ولم يشغّل import."
+  },
+  "publication": {
+    "latestScheduledRunId": 41530610673,
+    "artifactId": 13180479737,
+    "artifactFeedItems": 800,
+    "artifactEditorialEntries": 627,
+    "artifactSourceStatus": "partial",
+    "newContentPublished": false,
+    "directPagesFetch": "DisabledError",
+    "detailPagesOpened": false,
+    "note": "تم تنزيل وفحص artifact الناتج عن عملية النشر الناجحة؛ لم ينجح جلب endpoint العام مباشرة."
+  },
+  "workflowSafety": {
+    "checkWorkflow": "pull_request فقط: tests + scripts/editorial.py validate + node --check؛ بلا نشر أو كتابة.",
+    "publishWorkflow": "push إلى main يشغّل update_feed.py ويكتب feed.json وseen.json وstatus.json ثم ينشر Pages.",
+    "decision": "عدم الدمج إلى main؛ سيؤدي الدمج إلى تعديل الملفات المحمية تلقائيًا عبر workflow القائم."
+  },
+  "prStatus": {
+    "pr1": "merged",
+    "pr2": "merged",
+    "pr78": {
+      "state": "open",
+      "draft": true,
+      "branch": "content/nabdh-2026-11-01-1808",
+      "baseSha": "37f9e517bae3773506fd20b83351fc99107a41ad"
+    },
+    "pr79": {
+      "state": "open",
+      "draft": false,
+      "branch": "content/nabdh-2026-11-02-1446",
+      "baseSha": "012536731c6d6d82d430fca40517e9ada31034f7",
+      "headSha": "56b900705b6b0f3d979725a1e936078ec310b0f9",
+      "behindMainBy": 1
+    }
+  },
+  "changesMade": {
+    "filesCreated": [
+      "editorial/pending/recheck-2026-11-03-0245.json"
+    ],
+    "siteDataChanged": false,
+    "feedJsonChanged": false,
+    "seenJsonChanged": false,
+    "codeDesignWorkflowOrSettingsChanged": false,
+    "merged": false,
+    "published": false
+  }
+}
