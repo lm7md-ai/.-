@@ -17,7 +17,7 @@
     "pr2": "merged",
     "pr71": "open_non_mergeable",
     "pr78": "open_draft_stale_base",
-    "pr79": "open_mergeable_before_this_update"
+    "pr79": "open_mergeable_after_content_update"
   },
   "incomingAudit": {
     "incomingFiles": 63,
@@ -122,12 +122,20 @@
     "feedIds": null
   },
   "tests": {
-    "officialValidateCommand": "not run locally",
-    "officialImportCommand": "not run locally",
-    "pythonUnitTests": "not run locally",
+    "officialValidateCommand": "not run locally; GitHub Actions ran python scripts/editorial.py validate successfully against site/data/editorial.json",
+    "officialImportCommand": "not run locally; records were structurally merged into the PR branch while preserving all 637 existing entries",
+    "pythonUnitTests": "not run locally; GitHub Actions ran python -m unittest discover -s tests -v successfully",
     "structuralValidation": "passed for 4 incoming news and 2 research-only project dossiers",
     "priorPR79CI": "30 tests passed; editorial validate passed; JS syntax passed",
-    "priorPR78CI": "30 tests passed; editorial validate passed; JS syntax passed"
+    "priorPR78CI": "30 tests passed; editorial validate passed; JS syntax passed",
+    "currentPR79CI": {
+      "runId": 41525891881,
+      "conclusion": "success",
+      "unitTests": "success",
+      "editorialValidate": "success",
+      "javascriptSyntax": "success",
+      "note": "GitHub Actions validated the merged site/data/editorial.json; incoming JSON was structurally validated separately."
+    }
   },
   "publication": {
     "lastSuccessfulPagesRun": 41433056990,
@@ -136,7 +144,9 @@
     "artifactEditorialEntries": 627,
     "newPR79EntriesInArtifact": 0,
     "directPagesFetch": "DisabledError",
-    "newContentPublished": false
+    "newContentPublished": false,
+    "branchEditorialEntriesAfter": 641,
+    "newContentInLastPublishedArtifact": 0
   },
   "protectedFiles": {
     "feedJsonChanged": false,
@@ -147,5 +157,7 @@
     "designChanged": false,
     "scheduleChanged": false
   },
-  "mergeDecision": "do not merge while the existing publish workflow would rewrite feed.json, seen.json and status.json; no workflow change is permitted"
+  "mergeDecision": "do not merge while the existing publish workflow would rewrite feed.json, seen.json and status.json; no workflow change is permitted",
+  "branchEditorialEntriesAfter": 641,
+  "contentCommit": "574f6ffc0d4007df289452abe9a82979024b8cc3"
 }
