@@ -156,8 +156,7 @@
       ],
       "publicationStatus": "not_importable_not_published",
       "sources": [
-        "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents",
-        "https://1password.com/blog/1password-for-ai-agents"
+        "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents"
       ]
     }
   },
@@ -168,13 +167,15 @@
     "historicalOutsideCurrentFeed": 1,
     "additionalFilesThisRun": 1,
     "additionalActiveExactPendingNotImported": 4,
-    "filesAfterThisRun": 4,
     "recordOccurrencesAfterThisRun": 22,
     "activeExactAfterThisRun": 21,
     "historicalAfterThisRun": 1,
     "editorialEntries": 645,
     "historicalRecordId": "0b6a53f2b9c6737c60",
-    "action": "preserve historical entry; new four active candidates remain in incoming only until official validate/import is available"
+    "action": "preserve historical entry; new four active candidates remain in incoming only until official validate/import is available",
+    "branchSpecificFilesAfterThisRun": 4,
+    "branchIncomingTotalFiles": 67,
+    "branchSpecificRecordOccurrencesAfterThisRun": 22
   },
   "collisions": [
     {
@@ -226,7 +227,26 @@
     "previousEightResearchOnly": 7,
     "previousEightProposalCount": 14,
     "projectTestEvidenceCount": 0,
-    "summaryFieldStale": true
+    "summaryFieldStale": true,
+    "catalogCompiledAt": "2026-11-01T05:42:38+03:00",
+    "catalogSummary": {
+      "total": 40,
+      "archived": 2,
+      "nonArchived": 38,
+      "inCurrentFeed": 5,
+      "notInFeed": 35,
+      "licenseNeedsUpstreamVerification": 7,
+      "enrichedInCurrentFeed": 5
+    },
+    "catalogStatusSummary": {
+      "total": 42,
+      "archived": 2,
+      "nonArchived": 40,
+      "inCurrentFeed": 6,
+      "notInFeed": 36,
+      "licenseNeedsUpstreamVerification": 7,
+      "enrichedInCurrentFeed": 6
+    }
   },
   "publish": {
     "mainWorkflowRun": 41368600475,
