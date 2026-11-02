@@ -150,12 +150,15 @@
         "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents"
       ],
       "verifiedClaims": [
-        "Agent requests a credential through a unique digital key",
-        "User approves on their own device",
-        "1Password fills the sign-in form without sending the password to the agent",
-        "Integration availability differs by agent; ChatGPT Work and dots were described as coming soon on the announcement page"
+        "The person sees which credential is requested and why, then approves on their own device.",
+        "1Password fills the sign-in form without sending the password to the agent.",
+        "The official 2026-10-22 press release explicitly lists ChatGPT Work and dots among agent integrations that work with 1Password; actual rollout and account availability were not independently tested."
       ],
-      "publicationStatus": "not_importable_not_published"
+      "publicationStatus": "not_importable_not_published",
+      "sources": [
+        "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents",
+        "https://1password.com/blog/1password-for-ai-agents"
+      ]
     }
   },
   "prBranchIncoming": {
