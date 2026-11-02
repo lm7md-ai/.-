@@ -31569,6 +31569,142 @@
           ]
         }
       ]
+    },
+    "de34c77e9b40391662": {
+      "url": "https://arxiv.org/abs/2610.40700",
+      "titleAr": "بحث يختبر قوة الخطوط الأساسية البسيطة آليًا قبل الحكم على تفوق التعلم العميق",
+      "summaryAr": "اختبر باحثون إنشاء خطوط أساس تنبؤية بسيطة بمساعدة نموذج لغوي على 36 مهمة تصنيف وانحدار مأخوذة من دراسات منشورة في دوريات Nature وScience وCell. ووفق نتائج الورقة، استعادت هذه الخطوط وسيطًا قدره 95.5% من الفجوة بين المتنبئ البسيط جدًا ونتيجة نموذج التعلم العميق المنشورة، وبلغت أو تجاوزت النتيجة المنشورة في 12 مهمة. استخدم الباحثون Claude Opus 5 في التجارب.",
+      "whyItMatters": "النتيجة تذكّر بأن المقارنة العادلة تبدأ بخط أساس قوي؛ وقد تكشف أن بعض التحسن المنسوب إلى نموذج أعقد يمكن تفسيره بإعداد أبسط.",
+      "audience": "طلاب وباحثو تعلم الآلة، فرق البحث العلمي، ومطورو النماذج والتقييم.",
+      "nextSteps": [
+        "أعد تشغيل خط أساس بسيط على تقسيم البيانات نفسه قبل اعتماد نتيجة نموذج جديد.",
+        "وثّق المقياس وتقسيم البيانات والبذرة ومصدر نتيجة المقارنة.",
+        "قارن النماذج بميزانية حسابية متقاربة، لا بأفضل رقم منفرد.",
+        "افحص تسرب البيانات واحتمال اطلاع النموذج على النتائج المنشورة."
+      ],
+      "limitations": "الورقة preprint وليست حكمًا نهائيًا على التعلم العميق. اقتصرت على 36 مهمة supervised ونموذج لغوي واحد، واستخدمت طية تقييم واحدة لكل مهمة، كما قارنت بنتائج منشورة بدل إعادة تشغيل كل نماذج التعلم العميق على ميزانية موحدة. يذكر المؤلفون أن اختيار خط الأساس البسيط وطبيعة كل مهمة يؤثران في النتيجة.",
+      "reviewedAt": "2026-11-02T20:45:00Z",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "الورقة الأصلية على arXiv",
+          "url": "https://arxiv.org/abs/2610.40700"
+        },
+        {
+          "title": "النص الكامل للورقة",
+          "url": "https://arxiv.org/pdf/2610.40700"
+        }
+      ]
+    },
+    "4b574d09afc136bbaa": {
+      "url": "https://arxiv.org/abs/2610.40901",
+      "titleAr": "TSFLab يبني بيئة عمل مشتركة لوكلاء البرمجة لتكرار أبحاث التنبؤ بالسلاسل الزمنية",
+      "summaryAr": "تقدم الورقة TSFLab بوصفه بيئة عمل تجمع إرشادات المجال وفهرسًا للمناهج والبيانات ووحدات قابلة لإعادة الاستخدام ومشغل تجارب موحدًا. ويقول المؤلفون إن البيئة حسّنت إكمال مهام التكرار والتطوير وخفضت استخدام الرموز الجديدة مقارنة بخطوط أساس محددة، مع تصميم يسمح باستخدام وكلاء برمجة مختلفين دون تغيير بروتوكول التجربة.",
+      "whyItMatters": "يساعد على إعادة استخدام التجارب ومقارنة المناهج وفق بروتوكول ثابت، بدل أن يعيد كل وكيل بناء محمل البيانات والتدريب والتقييم بطريقته.",
+      "audience": "طلاب وباحثو تعلم الآلة، فرق التنبؤ بالسلاسل الزمنية، ومطورو أدوات البحث ووكلاء البرمجة.",
+      "nextSteps": [
+        "راجع بروتوكول تقسيم البيانات والتقييم قبل تشغيل أي تجربة.",
+        "ابدأ ببيانات عامة صغيرة مثل ETTh1 أو Weather مع وضع dry-run.",
+        "قارن النتائج مع TSLib وTFB باستخدام التقسيم والمقياس والعتاد نفسها.",
+        "سجل إصدار الكود والبيانات والبذور وتكلفة النموذج لكل تشغيل."
+      ],
+      "limitations": "الورقة preprint ونتائجها تجارب المؤلفين وليست تحققًا مستقلًا. يركز العمل على التنبؤ بالسلاسل الزمنية، ويذكر المؤلفون أن التجارب لم تنتج حتى الآن طريقة جديدة تتفوق بوضوح على جميع النماذج الرائدة. تختلف الكلفة بحسب مزود الوكيل والعتاد، كما تختلف تراخيص مجموعات البيانات والنماذج.",
+      "reviewedAt": "2026-11-02T20:45:00Z",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "الورقة الأصلية على arXiv",
+          "url": "https://arxiv.org/abs/2610.40901"
+        },
+        {
+          "title": "النص الكامل للورقة",
+          "url": "https://arxiv.org/pdf/2610.40901"
+        },
+        {
+          "title": "مستودع TSFLab الرسمي",
+          "url": "https://github.com/D2I-Group/TSFLab"
+        },
+        {
+          "title": "README الرسمي",
+          "url": "https://github.com/D2I-Group/TSFLab/blob/main/README.md"
+        },
+        {
+          "title": "دليل TSFLab",
+          "url": "https://github.com/D2I-Group/TSFLab/tree/main/docs/en"
+        },
+        {
+          "title": "ملف الترخيص",
+          "url": "https://github.com/D2I-Group/TSFLab/blob/main/LICENSE"
+        }
+      ]
+    },
+    "50a265312cccb0d6fa": {
+      "url": "https://news.google.com/rss/articles/CBMihAZBVV95cUxNYzU3LUhubkxaSm9MbWIycktaRlI3aVpNMzBORGM0aW9saDhlMF9uR1VDN2E5djJRWGFRZDBGUEJGLWM0Vlg3d095NFlyWWMyQkl3SnhadjcyWExMbWxQYTlwQ09hSmN6NHB0X3lyd2ViWnlZYjQ0a2pSUXllU0VhN0hxRUtPeF9NMGQ3dlFmMmZsazBTTzNkdUo4RGdBRHhSWkJ0UDZKdTVQMEVkRlVfUlk0dnphU2Y5Z3JlcVc5NGJQY1hnSE81X0VhM1l5WlhlVERhMkhLSU5va3ZNRUU1YVkzQUhqLTB2Rlk1RmUybjQ4NkotNjFmRzN5dlJkLXZiejNTbnJOb2thR203c1VyR2hLZkhQMV92R0dUN2dJZ3EzT1llRnJab25DR0F2QllRWVNxU3JmZDl3a2N3S3hoUWhCaW9CNUhtQWpwVzRnSHdqN0pUdU1yWG5OcnFCMmNNaGFLVnVvNzRkSktsaTgxTTdKblNVTzRKaU5hOGpfNzhOZ01uSG9YME5hWU9hNjIwbnhKaVhzdDJpTEI1eWlJTjlMZmU2dTRLWWV5TzhfSjhnRXRiT2hIUTctS0d0dVZyWjNFX3VxZnlpLUZPWGltLS1BZzRtZ2FHbndObjBWajZkQlpUNTV6MHRTTFk3VzlSRzkxRTFUWFNCVVFjeG1BcmRsLVFPZVEwRGw0ZkRIN0xZOWVqTWgwREtkaVdKRldpYXBWYWZVWmktTXdSTjFwVTdJS1dOelI4dVllX2FvczVlZlZZRDJpSzVfeEl1VlEzN08zZms1UUVFWEY3aWJ5eUR3bVQ4ZDB0UFJjMUFGMjBfY0o1cmlOZ1V1YjZYUkJ0WHZXeDlDVGNqVnNPLWI3ZDh5Q2x0eGwyZTF1V0NSNjN0eGsya2pNazI2dGRKVnd6dGVRTjhGYlo3NnZJcm9SRFhGUlA2bVRzUWYwX3ZHaDdJV09ENDd3ZUdFOG5EWmY1OGRMMlhuSlczLUFjOFNJOTlTQnZoSmlsX3ByR2YwS2RtUGNG0gFTQVVfeXFMTXUzM0xHYjNwaDB5UjlVLWdzR1pPZEZsa1RFRDVZanhYS2s4eUhTbzk2WmNWVmxpQ1BSZWNxSTBTMnZqV3JyZUZ5ZnBJSXJhbzFNOEk?oc=5",
+      "titleAr": "معايير سعودية تضبط أدوار وكلاء الذكاء الاصطناعي في الإرشاد والقرار التعليمي",
+      "summaryAr": "توضح المادة المنشورة في صحيفة اليوم، استنادًا إلى وثيقة المركز الوطني للتعليم الإلكتروني، مجالات لاستخدام الوكلاء في الإرشاد الأكاديمي والمهني والبحث العلمي والخدمات الإدارية ودعم القرار. وتشير المادة إلى أهمية حداثة البيانات وقابلية مراجعة التوصيات وبقاء القرارات المؤثرة لدى المختصين، وعدم تحويل التوصية الآلية إلى اعتراف رسمي بالمؤهلات أو ضمان وظيفة.",
+      "whyItMatters": "إدخال الوكلاء إلى التعليم يحتاج حوكمة وصلاحيات ومسؤولية بشرية واضحة، لا مجرد إضافة روبوت محادثة إلى منصة تعليمية.",
+      "audience": "طلاب الجامعات والمدارس، المعلمون، إدارات التعليم، ومطورو حلول EdTech.",
+      "nextSteps": [
+        "راجع وثيقة المعايير الرسمية كاملة قبل اعتماد أي منتج تعليمي.",
+        "حدد البيانات التي يستخدمها الوكيل ومصدر تحديثها ومدة الاحتفاظ بها.",
+        "اجعل التوصيات قابلة للتفسير والمراجعة مع مسار تصحيح واضح.",
+        "أبقِ قرارات القبول والتقييم والاعتراف بالمؤهلات لدى المختصين."
+      ],
+      "limitations": "اعتمدت المراجعة على مقتطف صحيفة اليوم والمنشور الرسمي للمركز ورابط ملف PDF الرسمي؛ تعذر فتح النص الكامل للوثيقة بسبب مهلة جلب، لذلك لم أتحقق من جميع المعايير أو تفاصيل المجالات. لهذا استُخدم basis=metadata.",
+      "reviewedAt": "2026-11-02T20:45:00Z",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "مادة صحيفة اليوم كما وردت في التغذية",
+          "url": "https://news.google.com/rss/articles/CBMihAZBVV95cUxNYzU3LUhubkxaSm9MbWIycktaRlI3aVpNMzBORGM0aW9saDhlMF9uR1VDN2E5djJRWGFRZDBGUEJGLWM0Vlg3d095NFlyWWMyQkl3SnhadjcyWExMbWxQYTlwQ09hSmN6NHB0X3lyd2ViWnlZYjQ0a2pSUXllU0VhN0hxRUtPeF9NMGQ3dlFmMmZsazBTTzNkdUo4RGdBRHhSWkJ0UDZKdTVQMEVkRlVfUlk0dnphU2Y5Z3JlcVc5NGJQY1hnSE81X0VhM1l5WlhlVERhMkhLSU5va3ZNRUU1YVkzQUhqLTB2Rlk1RmUybjQ4NkotNjFmRzN5dlJkLXZiejNTbnJOb2thR203c1VyR2hLZkhQMV92R0dUN2dJZ3EzT1llRnJab25DR0F2QllRWVNxU3JmZDl3a2N3S3hoUWhCaW9CNUhtQWpwVzRnSHdqN0pUdU1yWG5OcnFCMmNNaGFLVnVvNzRkSktsaTgxTTdKblNVTzRKaU5hOGpfNzhOZ01uSG9YME5hWU9hNjIwbnhKaVhzdDJpTEI1eWlJTjlMZmU2dTRLWWV5TzhfSjhnRXRiT2hIUTctS0d0dVZyWjNFX3VxZnlpLUZPWGltLS1BZzRtZ2FHbndObjBWajZkQlpUNTV6MHRTTFk3VzlSRzkxRTFUWFNCVVFjeG1BcmRsLVFPZVEwRGw0ZkRIN0xZOWVqTWgwREtkaVdKRldpYXBWYWZVWmktTXdSTjFwVTdJS1dOelI4dVllX2FvczVlZlZZRDJpSzVfeEl1VlEzN08zZms1UUVFWEY3aWJ5eUR3bVQ4ZDB0UFJjMUFGMjBfY0o1cmlOZ1V1YjZYUkJ0WHZXeDlDVGNqVnNPLWI3ZDh5Q2x0eGwyZTF1V0NSNjN0eGsya2pNazI2dGRKVnd6dGVRTjhGYlo3NnZJcm9SRFhGUlA2bVRzUWYwX3ZHaDdJV09ENDd3ZUdFOG5EWmY1OGRMMlhuSlczLUFjOFNJOTlTQnZoSmlsX3ByR2YwS2RtUGNG0gFTQVVfeXFMTXUzM0xHYjNwaDB5UjlVLWdzR1pPZEZsa1RFRDVZanhYS2s4eUhTbzk2WmNWVmxpQ1BSZWNxSTBTMnZqV3JyZUZ5ZnBJSXJhbzFNOEk?oc=5"
+        },
+        {
+          "title": "وثيقة معايير وكلاء الذكاء الاصطناعي المنشورة عبر المركز الوطني للتعليم الإلكتروني",
+          "url": "https://storage.googleapis.com/futurexcms/AI_Agent_Standards_English_f785128d0c/AI_Agent_Standards_English_f785128d0c.pdf"
+        },
+        {
+          "title": "المركز الوطني للتعليم الإلكتروني",
+          "url": "https://nelc.gov.sa/"
+        }
+      ]
+    },
+    "97fc819f73dad80e77": {
+      "url": "https://news.google.com/rss/articles/CBMi0gNBVV95cUxNVkVCVGJwd0dUS0JlY3V4MFFFSVM5d2c3S3JLZnFfbTZ6N0RzTVpGbE1fN0NiYXN6bnhHb2lmLXVHMkpXUFplMEdCRGNTLWJFMFV3UW9hcE16QkNhaFQxeWt6d2lFSVl5MzhwZGxGdTdmalRVTHNjRWdDU09wSXdBR0djVWFWXzI3M3hQTlljQll2TmZGdUdyV29nUFZOMlpsaW85YnVQajYySlJ4ajV0WFdLVnhZNVNFMjVyVl9JVWNfTFpuVlFpQVRBNV91bGV3OXBwdHgzSHBJbGFnWTNGT2VBMWpCb2tUNElqVzFaQWlWcS14M3dNR0dUaXU2TlZDZGxTS01hcW4tQ3h1aDNlQ2trZUxLd2hWQnVFVkZsUXF5dElCNmg5ZlNRRHVjcG01eWZmLUVhVEVCdjdzb3JYR0RhXzRZa0M1dllzNmxWWktRdnlmR1RWYktqSzRFS1pSWXlybGRJb2RWUXA5cDBkdmNTc1ZlNnRQY2FUNXdjZE1NZ1VWZ0xESXFpOW0tYXRscDJOSGR5YlhKWUNTRHpfTTcwdUZjQ2pFb1NlRnBqQWlmTXhQeXBIdGJZMlUyNDVPSHVQU2JkaE94UDh5dDVwc2dn?oc=5",
+      "titleAr": "DeepSeek تنشر نموذجًا أوليًا لوكيل برمجي يتابع مهام GitHub",
+      "summaryAr": "يشير سجل الخبر إلى نموذج DeepSeek المسمى Super-Agent، بينما يوضح المستودع الرسمي dsh-superagent-prototype أنه نموذج بحثي يربط GitHub ويحوّل الطلبات المصرح بها إلى مهام وجلسات تنفيذ منفصلة ثم يعيد النتائج إلى المحادثة. يصف README المشروع بأنه مرجعي وتجريبي، وليس منتجًا جاهزًا للإنتاج، ويحذر من اختلاف النسخة المنشورة عن بعض التصاميم الداخلية الموصوفة.",
+      "whyItMatters": "ينقل الوكلاء من توليد مقطع كود إلى تنسيق دورة عمل كاملة؛ لكن معيار النجاح الحقيقي هو حدود الصلاحيات والتدقيق والمراجعة البشرية.",
+      "audience": "مطورو البرمجيات، مسؤولو المستودعات، وفرق هندسة الوكلاء.",
+      "nextSteps": [
+        "اقرأ README وملفات التفويض والتنفيذ والنشر قبل تقييم المشروع.",
+        "قيّم الفكرة في مستودع تجريبي منفصل وبصلاحيات محدودة.",
+        "ابدأ بالمراقبة فقط ولا تسمح بالدمج التلقائي.",
+        "راجع سجل القرارات والمهام قبل منح أي صلاحية كتابة."
+      ],
+      "limitations": "لم يكن رابط المقال الأصلي في قناة المملكة متاحًا للفتح المباشر في هذه الجولة؛ لذلك يعتمد هذا السجل على بيانات التغذية وREADME والتوثيق الرسمي للمستودع. المستودع نفسه يصف العمل بأنه prototype بحثي غير جاهز للإنتاج. وهو مشروع منفصل عن DeepSeek Harness الأساسي، ولا ينبغي الخلط بين المستودعين.",
+      "reviewedAt": "2026-11-02T20:45:00Z",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "رابط الخبر كما ورد في التغذية عبر Google News",
+          "url": "https://news.google.com/rss/articles/CBMi0gNBVV95cUxNVkVCVGJwd0dUS0JlY3V4MFFFSVM5d2c3S3JLZnFfbTZ6N0RzTVpGbE1fN0NiYXN6bnhHb2lmLXVHMkpXUFplMEdCRGNTLWJFMFV3UW9hcE16QkNhaFQxeWt6d2lFSVl5MzhwZGxGdTdmalRVTHNjRWdDU09wSXdBR0djVWFWXzI3M3hQTlljQll2TmZGdUdyV29nUFZOMlpsaW85YnVQajYySlJ4ajV0WFdLVnhZNVNFMjVyVl9JVWNfTFpuVlFpQVRBNV91bGV3OXBwdHgzSHBJbGFnWTNGT2VBMWpCb2tUNElqVzFaQWlWcS14M3dNR0dUaXU2TlZDZGxTS01hcW4tQ3h1aDNlQ2trZUxLd2hWQnVFVkZsUXF5dElCNmg5ZlNRRHVjcG01eWZmLUVhVEVCdjdzb3JYR0RhXzRZa0M1dllzNmxWWktRdnlmR1RWYktqSzRFS1pSWXlybGRJb2RWUXA5cDBkdmNTc1ZlNnRQY2FUNXdjZE1NZ1VWZ0xESXFpOW0tYXRscDJOSGR5YlhKWUNTRHpfTTcwdUZjQ2pFb1NlRnBqQWlmTXhQeXBIdGJZMlUyNDVPSHVQU2JkaE94UDh5dDVwc2dn?oc=5"
+        },
+        {
+          "title": "المستودع الرسمي للنموذج البحثي",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype"
+        },
+        {
+          "title": "README الرسمي",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/README.md"
+        },
+        {
+          "title": "دليل التفويض والصلاحيات",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/002-authorization.md"
+        },
+        {
+          "title": "دليل النشر",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/006-deployment.md"
+        }
+      ]
     }
   }
 }

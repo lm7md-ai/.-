@@ -1,0 +1,151 @@
+{
+  "version": 1,
+  "runAt": "2026-11-02T20:45:00Z",
+  "repository": "lm7md-ai/.-",
+  "main": {
+    "sha": "012536731c6d6d82d430fca40517e9ada31034f7",
+    "feedItems": 800,
+    "newsItems": 700,
+    "projectItems": 100,
+    "editorialEntries": 627,
+    "libraryEntries": 31,
+    "libraryArchived": 2,
+    "libraryActive": 29
+  },
+  "pullRequests": {
+    "pr1": "merged",
+    "pr2": "merged",
+    "pr71": "open_non_mergeable",
+    "pr78": "open_draft_stale_base",
+    "pr79": "open_mergeable_before_this_update"
+  },
+  "incomingAudit": {
+    "incomingFiles": 63,
+    "appearances": 592,
+    "activeExactAlreadyImported": 237,
+    "historicalExactEditorialOutsideFeed": 349,
+    "sameUrlDifferentId": 1,
+    "seenOnlyUnimported": 5,
+    "confirmedExpired": 0,
+    "sameIdDifferentUrl": 0,
+    "unmatchedActivePending": 0
+  },
+  "specialChecks": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "state": "seen_only",
+      "inFeed": false,
+      "inEditorial": false,
+      "decision": "hold; no replacement identity"
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "state": "seen_only",
+      "inFeed": false,
+      "inEditorial": false,
+      "decision": "hold; verify current official product record before import"
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "state": "seen_only",
+      "inFeed": false,
+      "inEditorial": false,
+      "decision": "hold; verify current official product record before import"
+    }
+  ],
+  "identityMismatch": {
+    "oldId": "7a99eca9b2ce14d9f5",
+    "currentFeedId": "e0cbbf211a55e79f34",
+    "url": "https://github.com/rasbt/LLMs-from-scratch",
+    "oldEditorialEntryExists": true,
+    "currentFeedEntryExists": true,
+    "sameUrl": true,
+    "decision": "manual identity reconciliation required; no ID rewrite and no title-based replacement"
+  },
+  "newsBatch": {
+    "count": 4,
+    "entries": [
+      {
+        "id": "de34c77e9b40391662",
+        "titleAr": "بحث يختبر قوة الخطوط الأساسية البسيطة آليًا قبل الحكم على تفوق التعلم العميق",
+        "url": "https://arxiv.org/abs/2610.40700",
+        "basis": "article",
+        "sources": 2
+      },
+      {
+        "id": "4b574d09afc136bbaa",
+        "titleAr": "TSFLab يبني بيئة عمل مشتركة لوكلاء البرمجة لتكرار أبحاث التنبؤ بالسلاسل الزمنية",
+        "url": "https://arxiv.org/abs/2610.40901",
+        "basis": "article",
+        "sources": 6
+      },
+      {
+        "id": "50a265312cccb0d6fa",
+        "titleAr": "معايير سعودية تضبط أدوار وكلاء الذكاء الاصطناعي في الإرشاد والقرار التعليمي",
+        "url": "https://news.google.com/rss/articles/CBMihAZBVV95cUxNYzU3LUhubkxaSm9MbWIycktaRlI3aVpNMzBORGM0aW9saDhlMF9uR1VDN2E5djJRWGFRZDBGUEJGLWM0Vlg3d095NFlyWWMyQkl3SnhadjcyWExMbWxQYTlwQ09hSmN6NHB0X3lyd2ViWnlZYjQ0a2pSUXllU0VhN0hxRUtPeF9NMGQ3dlFmMmZsazBTTzNkdUo4RGdBRHhSWkJ0UDZKdTVQMEVkRlVfUlk0dnphU2Y5Z3JlcVc5NGJQY1hnSE81X0VhM1l5WlhlVERhMkhLSU5va3ZNRUU1YVkzQUhqLTB2Rlk1RmUybjQ4NkotNjFmRzN5dlJkLXZiejNTbnJOb2thR203c1VyR2hLZkhQMV92R0dUN2dJZ3EzT1llRnJab25DR0F2QllRWVNxU3JmZDl3a2N3S3hoUWhCaW9CNUhtQWpwVzRnSHdqN0pUdU1yWG5OcnFCMmNNaGFLVnVvNzRkSktsaTgxTTdKblNVTzRKaU5hOGpfNzhOZ01uSG9YME5hWU9hNjIwbnhKaVhzdDJpTEI1eWlJTjlMZmU2dTRLWWV5TzhfSjhnRXRiT2hIUTctS0d0dVZyWjNFX3VxZnlpLUZPWGltLS1BZzRtZ2FHbndObjBWajZkQlpUNTV6MHRTTFk3VzlSRzkxRTFUWFNCVVFjeG1BcmRsLVFPZVEwRGw0ZkRIN0xZOWVqTWgwREtkaVdKRldpYXBWYWZVWmktTXdSTjFwVTdJS1dOelI4dVllX2FvczVlZlZZRDJpSzVfeEl1VlEzN08zZms1UUVFWEY3aWJ5eUR3bVQ4ZDB0UFJjMUFGMjBfY0o1cmlOZ1V1YjZYUkJ0WHZXeDlDVGNqVnNPLWI3ZDh5Q2x0eGwyZTF1V0NSNjN0eGsya2pNazI2dGRKVnd6dGVRTjhGYlo3NnZJcm9SRFhGUlA2bVRzUWYwX3ZHaDdJV09ENDd3ZUdFOG5EWmY1OGRMMlhuSlczLUFjOFNJOTlTQnZoSmlsX3ByR2YwS2RtUGNG0gFTQVVfeXFMTXUzM0xHYjNwaDB5UjlVLWdzR1pPZEZsa1RFRDVZanhYS2s4eUhTbzk2WmNWVmxpQ1BSZWNxSTBTMnZqV3JyZUZ5ZnBJSXJhbzFNOEk?oc=5",
+        "basis": "metadata",
+        "sources": 3
+      },
+      {
+        "id": "97fc819f73dad80e77",
+        "titleAr": "DeepSeek تنشر نموذجًا أوليًا لوكيل برمجي يتابع مهام GitHub",
+        "url": "https://news.google.com/rss/articles/CBMi0gNBVV95cUxNVkVCVGJwd0dUS0JlY3V4MFFFSVM5d2c3S3JLZnFfbTZ6N0RzTVpGbE1fN0NiYXN6bnhHb2lmLXVHMkpXUFplMEdCRGNTLWJFMFV3UW9hcE16QkNhaFQxeWt6d2lFSVl5MzhwZGxGdTdmalRVTHNjRWdDU09wSXdBR0djVWFWXzI3M3hQTlljQll2TmZGdUdyV29nUFZOMlpsaW85YnVQajYySlJ4ajV0WFdLVnhZNVNFMjVyVl9JVWNfTFpuVlFpQVRBNV91bGV3OXBwdHgzSHBJbGFnWTNGT2VBMWpCb2tUNElqVzFaQWlWcS14M3dNR0dUaXU2TlZDZGxTS01hcW4tQ3h1aDNlQ2trZUxLd2hWQnVFVkZsUXF5dElCNmg5ZlNRRHVjcG01eWZmLUVhVEVCdjdzb3JYR0RhXzRZa0M1dllzNmxWWktRdnlmR1RWYktqSzRFS1pSWXlybGRJb2RWUXA5cDBkdmNTc1ZlNnRQY2FUNXdjZE1NZ1VWZ0xESXFpOW0tYXRscDJOSGR5YlhKWUNTRHpfTTcwdUZjQ2pFb1NlRnBqQWlmTXhQeXBIdGJZMlUyNDVPSHVQU2JkaE94UDh5dDVwc2dn?oc=5",
+        "basis": "metadata",
+        "sources": 5
+      }
+    ]
+  },
+  "projectReview": {
+    "previousEightReviewed": 8,
+    "mainPublishedLibraryEntries": 31,
+    "pr78ResearchCatalogEntries": 42,
+    "pr78Archived": 2,
+    "pr78Active": 40,
+    "pr78LicenseFollowUps": 7,
+    "previousEightFeedCards": 1,
+    "previousEightResearchOnly": 7,
+    "previousEightImprovements": 8,
+    "previousEightSpinoffs": 8,
+    "religiousIdeas": 1,
+    "testEvidence": 0
+  },
+  "newResearchOnlyProjects": {
+    "count": 2,
+    "projects": [
+      "deepseek-ai/dsh-superagent-prototype",
+      "D2I-Group/TSFLab"
+    ],
+    "siteVisible": false,
+    "feedIds": null
+  },
+  "tests": {
+    "officialValidateCommand": "not run locally",
+    "officialImportCommand": "not run locally",
+    "pythonUnitTests": "not run locally",
+    "structuralValidation": "passed for 4 incoming news and 2 research-only project dossiers",
+    "priorPR79CI": "30 tests passed; editorial validate passed; JS syntax passed",
+    "priorPR78CI": "30 tests passed; editorial validate passed; JS syntax passed"
+  },
+  "publication": {
+    "lastSuccessfulPagesRun": 41433056990,
+    "artifactId": 13135741085,
+    "artifactFeedItems": 800,
+    "artifactEditorialEntries": 627,
+    "newPR79EntriesInArtifact": 0,
+    "directPagesFetch": "DisabledError",
+    "newContentPublished": false
+  },
+  "protectedFiles": {
+    "feedJsonChanged": false,
+    "seenJsonChanged": false,
+    "statusJsonChanged": false,
+    "workflowsChanged": false,
+    "siteCodeChanged": false,
+    "designChanged": false,
+    "scheduleChanged": false
+  },
+  "mergeDecision": "do not merge while the existing publish workflow would rewrite feed.json, seen.json and status.json; no workflow change is permitted"
+}

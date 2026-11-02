@@ -1,0 +1,1038 @@
+{
+  "version": 1,
+  "type": "previous_eight_project_review",
+  "publicationStatus": "unpublished_research_only",
+  "reviewedAt": "2026-11-02T20:45:00Z",
+  "metricsMeasuredAt": "2026-11-02T17:53:37Z",
+  "catalogContext": {
+    "mainPublishedLibraryEntries": 31,
+    "mainArchived": 2,
+    "mainActive": 29,
+    "pr78ResearchCatalogEntries": 42,
+    "pr78Archived": 2,
+    "pr78Active": 40,
+    "pr78LicenseFollowUps": 7,
+    "previousEight": 8,
+    "existingFeedCards": 1,
+    "researchOnlyNotInFeed": 7,
+    "improvements": 8,
+    "spinoffs": 8,
+    "religiousProposals": 1,
+    "testEvidence": 0
+  },
+  "projects": [
+    {
+      "repository": "patchy631/ai-engineering-hub",
+      "name": "AI Engineering Hub",
+      "feedId": "fe0e6bfdbdd5822139",
+      "publicationStatus": "published_existing_card",
+      "siteVisible": true,
+      "basis": "readme",
+      "reviewedAt": "2026-11-02T20:45:00Z",
+      "license": "MIT على مستوى المستودع؛ يجب مراجعة تراخيص كل مشروع فرعي وبياناته بصورة مستقلة.",
+      "activity": {
+        "stars": 40908,
+        "forks": 6538,
+        "openIssues": 135,
+        "lastPushedAt": "2026-11-01T04:39:16Z",
+        "measuredAt": "2026-11-02T17:53:37Z"
+      },
+      "overview": "مستودع تعليمي يجمع مسارًا من أساسيات Python والرياضيات إلى فهم LLMs والوكلاء والتطبيقات العملية، مع مشروعات مصنفة حسب الصعوبة. هو مكتبة تعلم ومراجع، وليس تطبيقًا واحدًا له أمر تثبيت موحد.",
+      "requirements": "لا توجد بيئة واحدة لكل المستودع. لكل مشروع فرعي متطلباته وإصدارات Python ومفاتيح المزودين والبيانات والتراخيص الخاصة به. رخصة MIT للمستودع لا تلغي شروط المشاريع أو البيانات الخارجية.",
+      "quickStart": "اختر مشروعًا واحدًا من مستوى مناسب، اقرأ README الخاص به ومتطلباته، أنشئ بيئة معزولة، ثبّت اعتماداته وحدها، ثم نفّذ المثال والاختبارات قبل الانتقال إلى مشروع آخر. لا تثبّت كل الأمثلة دفعة واحدة.",
+      "costs": "المستودع نفسه مجاني؛ قد تتطلب بعض الأمثلة مزود نماذج أو استضافة مدفوعة. يمكن اختيار مسارات محلية أو محاكاة بحسب المشروع، لذلك لا توجد تكلفة موحدة.",
+      "localCloud": "محتوى المستودع محلي القراءة والتنفيذ؛ بعض المشاريع تعمل محليًا وبعضها يعتمد على APIs أو خدمات سحابية يحددها كل مشروع. لا توجد منصة SaaS موحدة.",
+      "alternatives": [
+        "Microsoft AI Agents for Beginners كمسار تعليمي منظم.",
+        "توثيق المزود الرسمي عند تعلم SDK محدد."
+      ],
+      "sources": [
+        {
+          "title": "المستودع الرسمي",
+          "url": "https://github.com/patchy631/ai-engineering-hub"
+        },
+        {
+          "title": "خارطة تعلم هندسة الذكاء الاصطناعي",
+          "url": "https://github.com/patchy631/ai-engineering-hub/tree/main/ai-engineering-roadmap"
+        },
+        {
+          "title": "MIT License",
+          "url": "https://github.com/patchy631/ai-engineering-hub/blob/main/LICENSE"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "بيان اعتماد موحد لكل مشروع فرعي",
+          "problem": "يصعب معرفة إصدار Python والمفاتيح والتكلفة والترخيص قبل فتح كل مجلد.",
+          "approach": "إضافة manifest صغير لكل مشروع يصف المتطلبات والتكلفة وطريقة التشغيل المحلية والسحابية ومصدر البيانات.",
+          "stack": "Markdown + JSON Schema + GitHub Actions",
+          "steps": [
+            "جرد المشاريع والمجلدات القابلة للتشغيل.",
+            "تعريف schema للمتطلبات والترخيص ومفاتيح البيئة والتكلفة.",
+            "إضافة manifest للمشاريع ذات الأولوية.",
+            "التحقق آليًا من وجود README وLICENSE وأمر smoke test."
+          ],
+          "metric": "نسبة المشاريع التي يمكن إعدادها دون تخمين، وعدد manifests الصحيحة.",
+          "difficulty": "متوسط (تقدير: 4–6 أيام)",
+          "risks": "قد تتقادم الإصدارات أو يختلف ترخيص أصل خارجي عن رخصة المستودع.",
+          "sources": [
+            {
+              "title": "المستودع الرسمي",
+              "url": "https://github.com/patchy631/ai-engineering-hub"
+            },
+            {
+              "title": "خارطة تعلم هندسة الذكاء الاصطناعي",
+              "url": "https://github.com/patchy631/ai-engineering-hub/tree/main/ai-engineering-roadmap"
+            },
+            {
+              "title": "MIT License",
+              "url": "https://github.com/patchy631/ai-engineering-hub/blob/main/LICENSE"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مسار عربي عملي لهندسة الذكاء الاصطناعي محلي أولًا",
+          "problem": "قد تتطلب أمثلة التعلم مفاتيح API أو تكاليف قبل أن يفهم الطالب الفكرة.",
+          "approach": "تحويل مجموعة مختارة إلى وحدات صغيرة مع بدائل Mock وبيانات عامة وتعليمات عربية واضحة.",
+          "stack": "Python + Jupyter + uv + JSON fixtures",
+          "steps": [
+            "اختيار 6 وحدات أساسية من Python وLLMs والوكلاء.",
+            "توفير استجابة Mock لكل مثال يعتمد على API.",
+            "إضافة شرح عربي للمخرجات والأخطاء.",
+            "قياس اكتمال كل وحدة دون حساب سحابي."
+          ],
+          "metric": "عدد الوحدات التي تعمل محليًا بالكامل ونسبة إكمالها.",
+          "difficulty": "متوسط (تقدير: أسبوع)",
+          "risks": "قد لا تمثل الاستجابات الوهمية سلوك المزود الحقيقي.",
+          "sources": [
+            {
+              "title": "المستودع الرسمي",
+              "url": "https://github.com/patchy631/ai-engineering-hub"
+            },
+            {
+              "title": "خارطة تعلم هندسة الذكاء الاصطناعي",
+              "url": "https://github.com/patchy631/ai-engineering-hub/tree/main/ai-engineering-roadmap"
+            },
+            {
+              "title": "MIT License",
+              "url": "https://github.com/patchy631/ai-engineering-hub/blob/main/LICENSE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "googleapis/python-genai",
+      "name": "Google Gen AI Python SDK",
+      "feedId": null,
+      "publicationStatus": "research_only_not_in_feed",
+      "siteVisible": false,
+      "basis": "readme",
+      "reviewedAt": "2026-11-02T20:45:00Z",
+      "license": "Apache-2.0",
+      "activity": {
+        "stars": 4054,
+        "forks": 1056,
+        "openIssues": 370,
+        "lastPushedAt": "2026-10-31T00:34:25Z",
+        "measuredAt": "2026-11-02T17:53:37Z"
+      },
+      "overview": "SDK رسمي لـ Python للتعامل مع Gemini Developer API وGemini Enterprise Agent Platform، ويوفر واجهات متزامنة وغير متزامنة وتوليدًا متدفقًا ووسائط متعددة وأدوات محادثة.",
+      "requirements": "Python >=3.11، تثبيت حزمة google-genai، ومفتاح API للمطور أو مشروع Google Cloud وإعداد هوية/منطقة للمنصة المؤسسية. بعض الميزات تتطلب extras اختيارية.",
+      "quickStart": "ثبّت google-genai في بيئة افتراضية، اضبط بيانات الاعتماد المناسبة، أنشئ Client، نفّذ طلب generate_content على مثال غير حساس، ثم أغلق العميل وسجّل إصدار SDK والنموذج المستخدم.",
+      "costs": "الحزمة مجانية برخصة Apache-2.0؛ تكلفة الاستدلال والوسائط تحسب وفق نموذج وخطة المزود. لا يتضمن SDK تشغيل نموذج محليًا بذاته.",
+      "localCloud": "كود Python يعمل محليًا، بينما الاستدلال المعتاد يذهب إلى خدمة Google السحابية. يمكن اختبار الواجهات عبر mocks دون إرسال طلبات مدفوعة.",
+      "alternatives": [
+        "OpenAI Python SDK عند استخدام واجهات OpenAI.",
+        "Anthropic Python SDK عند استخدام Claude.",
+        "Pydantic AI عندما تكون طبقة الوكلاء والتحقق من المخرجات أهم من عميل مزود منفرد."
+      ],
+      "sources": [
+        {
+          "title": "المستودع الرسمي",
+          "url": "https://github.com/googleapis/python-genai"
+        },
+        {
+          "title": "التوثيق الرسمي",
+          "url": "https://googleapis.github.io/python-genai/"
+        },
+        {
+          "title": "pyproject.toml",
+          "url": "https://github.com/googleapis/python-genai/blob/main/pyproject.toml"
+        },
+        {
+          "title": "Apache-2.0 License",
+          "url": "https://github.com/googleapis/python-genai/blob/main/LICENSE"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "مصفوفة توافق للإصدارات والميزات",
+          "problem": "تتغير واجهات SDK ومزايا API وقد تتسبب ترقية الحزمة في كسر أمثلة قديمة.",
+          "approach": "بناء اختبارات contract تغطي Python 3.11–3.15 وأهم واجهات النص والوسائط والأدوات مع fixtures ثابتة.",
+          "stack": "Python + pytest + GitHub Actions + JSON fixtures",
+          "steps": [
+            "حصر الواجهات العامة المستخدمة في الأمثلة.",
+            "إنشاء fixtures لاستجابات ثابتة دون استدعاء API.",
+            "تشغيل مصفوفة إصدارات Python وإصدارات SDK المدعومة.",
+            "نشر تقرير تغييرات وdeprecations لكل إصدار."
+          ],
+          "metric": "عدد regressions المكتشفة قبل الإصدار ونسبة نجاح المصفوفة.",
+          "difficulty": "متوسط (تقدير: 5–7 أيام)",
+          "risks": "قد لا تمثل fixtures كل تغيرات الخدمة الحية.",
+          "sources": [
+            {
+              "title": "المستودع الرسمي",
+              "url": "https://github.com/googleapis/python-genai"
+            },
+            {
+              "title": "التوثيق الرسمي",
+              "url": "https://googleapis.github.io/python-genai/"
+            },
+            {
+              "title": "pyproject.toml",
+              "url": "https://github.com/googleapis/python-genai/blob/main/pyproject.toml"
+            },
+            {
+              "title": "Apache-2.0 License",
+              "url": "https://github.com/googleapis/python-genai/blob/main/LICENSE"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مختبر تعليمي لـ Gemini مع وضع Mock وميزانية",
+          "problem": "قد يمنع غياب مفتاح API الطالب من فهم دورة الطلب والاستجابة، وقد يصعب تقدير التكلفة.",
+          "approach": "واجهة تعليمية تعرض payload والاستجابة والرموز التقديرية وتوفر Mock افتراضيًا قبل الاتصال الحقيقي.",
+          "stack": "Python + google-genai + Streamlit + pytest",
+          "steps": [
+            "تصميم دروس قصيرة لعميل SDK والرسائل.",
+            "توفير استجابات Mock محفوظة لكل درس.",
+            "إضافة عداد تقديري للرموز وحد طلبات.",
+            "إتاحة تجربة حية اختيارية بعد توضيح التكلفة."
+          ],
+          "metric": "نسبة الدروس المكتملة دون استدعاء API وتطابق أمثلة SDK.",
+          "difficulty": "متوسط (تقدير: أسبوع)",
+          "risks": "تقدير الرموز لا يساوي فاتورة المزود الفعلية.",
+          "sources": [
+            {
+              "title": "المستودع الرسمي",
+              "url": "https://github.com/googleapis/python-genai"
+            },
+            {
+              "title": "التوثيق الرسمي",
+              "url": "https://googleapis.github.io/python-genai/"
+            },
+            {
+              "title": "pyproject.toml",
+              "url": "https://github.com/googleapis/python-genai/blob/main/pyproject.toml"
+            },
+            {
+              "title": "Apache-2.0 License",
+              "url": "https://github.com/googleapis/python-genai/blob/main/LICENSE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "Millillion/lasm",
+      "name": "Lasm",
+      "feedId": null,
+      "publicationStatus": "research_only_not_in_feed",
+      "siteVisible": false,
+      "basis": "readme",
+      "reviewedAt": "2026-11-02T20:45:00Z",
+      "license": "MIT",
+      "activity": {
+        "stars": 89,
+        "forks": 6,
+        "openIssues": 13,
+        "lastPushedAt": "2026-11-02T17:52:02Z",
+        "measuredAt": "2026-11-02T17:53:37Z"
+      },
+      "overview": "مترجم يربط Lean 4 بتطبيقات WebAssembly، مع مضيف JavaScript وملفات بناء لأهداف Node وBun وDeno وبعض بيئات Edge. يوضح دليل Edge ما تم قياسه وما هو مخطط.",
+      "requirements": "Lean 4.35، Node.js 24+ لأدوات البناء، مدير حزم JS، وبيئة WASM. لكل Edge runtime حدود مختلفة في الذاكرة والـ APIs؛ لا تفترض أن ميزات Node متاحة في Workers.",
+      "quickStart": "ابدأ بالقالب الرسمي Hono عبر npm create @lasm@latest، شغّل مثال Node محليًا، ثم جرّب build target واحدًا بعد قراءة دليل Edge ومصفوفة القيود. اختبر على runtime المستهدف قبل النشر.",
+      "costs": "الترخيص MIT ولا توجد رسوم للمترجم؛ قد تترتب تكاليف على حساب الاستضافة أو طلبات Edge بحسب المزود.",
+      "localCloud": "يمكن البناء والتجربة محليًا على Node/Bun/Deno؛ النشر على Cloudflare أو Vercel أو Netlify أو Deno Deploy يتم عبر حساب المستخدم ولا توجد خدمة استضافة مرفقة.",
+      "alternatives": [
+        "wasm-pack عند بناء وحدات Rust إلى WebAssembly.",
+        "AssemblyScript عند كتابة TypeScript-like code لـ WASM.",
+        "حلول WebAssembly التقليدية التي لا تستهدف Lean."
+      ],
+      "sources": [
+        {
+          "title": "المستودع الرسمي",
+          "url": "https://github.com/Millillion/lasm"
+        },
+        {
+          "title": "دليل Edge الرسمي",
+          "url": "https://github.com/Millillion/lasm/blob/main/docs/EDGE.md"
+        },
+        {
+          "title": "MIT License",
+          "url": "https://github.com/Millillion/lasm/blob/main/LICENSE"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "مصفوفة توافق موحدة لأهداف Edge",
+          "problem": "تختلف قيود الذاكرة وواجهات الشبكة وJSPI وAsyncify بين بيئات النشر.",
+          "approach": "توليد تقرير من CI يربط كل target بالميزات المدعومة والقياسات وحدود الحجم.",
+          "stack": "Lean 4 + WASM + Node/Deno/Bun + GitHub Actions",
+          "steps": [
+            "حصر أهداف التشغيل والميزات المطلوبة.",
+            "تعريف أمثلة صغيرة لكل API مهم.",
+            "تشغيل الأمثلة على كل runtime بإصدارات مثبتة.",
+            "نشر جدول قياسات وقيود قابل للتحديث."
+          ],
+          "metric": "عدد الأهداف التي تجتاز نفس مجموعة الاختبارات وحجم الحزمة لكل هدف.",
+          "difficulty": "مرتفع (تقدير: 1–2 أسبوع)",
+          "risks": "تغير runtimes قد يجعل القياسات قديمة أو يسبب نتائج متذبذبة.",
+          "sources": [
+            {
+              "title": "المستودع الرسمي",
+              "url": "https://github.com/Millillion/lasm"
+            },
+            {
+              "title": "دليل Edge الرسمي",
+              "url": "https://github.com/Millillion/lasm/blob/main/docs/EDGE.md"
+            },
+            {
+              "title": "MIT License",
+              "url": "https://github.com/Millillion/lasm/blob/main/LICENSE"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "قالب API تعليمي موثّق بـ Lean إلى WASM",
+          "problem": "يصعب على المتعلم رؤية الصلة بين دوال Lean ومسارات HTTP في JavaScript.",
+          "approach": "قالب صغير يشرح التحويل خطوة بخطوة مع اختبارات للمدخلات والمخرجات على Node ثم Edge.",
+          "stack": "Lean 4 + Hono + WebAssembly + TypeScript",
+          "steps": [
+            "اختيار 3 مسارات HTTP بسيطة.",
+            "كتابة منطقها في Lean مع أنواع واضحة.",
+            "توليد المضيف واختبارات التكامل.",
+            "عرض فروق Node وEdge في وثيقة واحدة."
+          ],
+          "metric": "نجاح الأمثلة على هدفين على الأقل دون تغيير منطق Lean.",
+          "difficulty": "متوسط (تقدير: أسبوع)",
+          "risks": "اختلاف واجهات المضيف قد يربك المبتدئ.",
+          "sources": [
+            {
+              "title": "المستودع الرسمي",
+              "url": "https://github.com/Millillion/lasm"
+            },
+            {
+              "title": "دليل Edge الرسمي",
+              "url": "https://github.com/Millillion/lasm/blob/main/docs/EDGE.md"
+            },
+            {
+              "title": "MIT License",
+              "url": "https://github.com/Millillion/lasm/blob/main/LICENSE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "microsoft/markitdown",
+      "name": "MarkItDown",
+      "feedId": null,
+      "publicationStatus": "research_only_not_in_feed",
+      "siteVisible": false,
+      "basis": "readme",
+      "reviewedAt": "2026-11-02T20:45:00Z",
+      "license": "MIT",
+      "activity": {
+        "stars": 193548,
+        "forks": 14519,
+        "openIssues": 787,
+        "lastPushedAt": "2026-10-28T15:33:14Z",
+        "measuredAt": "2026-11-02T17:53:37Z"
+      },
+      "overview": "أداة Python لتحويل ملفات متنوعة إلى Markdown لاستخدامها في البحث وتحليل النصوص وخطوط RAG. تركّز على حفظ العناوين والقوائم والجداول والروابط أكثر من إعادة إنتاج الشكل البصري الأصلي.",
+      "requirements": "Python 3.10–3.14. التثبيت الأساسي يغطي التحويلات الشائعة، بينما PDF وDOCX وPPTX وXLSX والصوت وميزات Azure تحتاج extras منفصلة. يتطلب بعض التحويل السحابي بيانات اعتماد Azure.",
+      "quickStart": "ثبّت markitdown أو extras المطلوبة فقط، مرّر ملفًا محليًا إلى CLI أو Python API، ثم راجع الناتج يدويًا خصوصًا الجداول والصفحات الممسوحة قبل إدخاله إلى فهرس بحث.",
+      "costs": "التحويل المحلي مجاني برخصة MIT؛ ميزات Azure Document Intelligence وContent Understanding قد تكون مدفوعة، وتكاليف أي نموذج خارجي منفصلة.",
+      "localCloud": "التحويل الأساسي محلي. إضافات Azure اختيارية وترسل المستند إلى خدمة خارجية، لذا يجب توضيح ذلك قبل معالجة ملفات حساسة.",
+      "alternatives": [
+        "Docling للتحويل مع بنية وثائق ومعالجة أعمق.",
+        "Unstructured لخطوط ingestion متعددة الصيغ.",
+        "Apache Tika لاستخراج النص والبيانات الوصفية."
+      ],
+      "sources": [
+        {
+          "title": "المستودع الرسمي",
+          "url": "https://github.com/microsoft/markitdown"
+        },
+        {
+          "title": "pyproject.toml",
+          "url": "https://github.com/microsoft/markitdown/blob/main/packages/markitdown/pyproject.toml"
+        },
+        {
+          "title": "MIT License",
+          "url": "https://github.com/microsoft/markitdown/blob/main/LICENSE"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "مجموعة قياس جودة للمستندات العربية",
+          "problem": "قد تختفي أعمدة الجداول أو اتجاه RTL أو أرقام الصفحات أثناء التحويل إلى Markdown.",
+          "approach": "إنشاء corpus مرخص ومجهول يحتوي PDF/DOCX/XLSX عربية مع gold output وقياس بنيوي.",
+          "stack": "Python + pytest + Markdown AST + OCR fixtures",
+          "steps": [
+            "جمع عينات مرخصة من مستندات عربية متنوعة.",
+            "تعريف مخرجات مرجعية للعناوين والجداول والصفحات.",
+            "قياس فقد الأعمدة والروابط وترتيب النص.",
+            "إضافة regressions للإصدارات الجديدة."
+          ],
+          "metric": "دقة حفظ الجداول والعناوين وأرقام الصفحات لكل صيغة.",
+          "difficulty": "متوسط (تقدير: 5–8 أيام)",
+          "risks": "قد لا تمثل العينات جميع الخطوط والماسحات، ويجب احترام حقوق الملفات.",
+          "sources": [
+            {
+              "title": "المستودع الرسمي",
+              "url": "https://github.com/microsoft/markitdown"
+            },
+            {
+              "title": "pyproject.toml",
+              "url": "https://github.com/microsoft/markitdown/blob/main/packages/markitdown/pyproject.toml"
+            },
+            {
+              "title": "MIT License",
+              "url": "https://github.com/microsoft/markitdown/blob/main/LICENSE"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "محول عربي يحفظ إحالات الصفحة والمصدر",
+          "problem": "قد ينتج التحويل نصًا بلا موضع مرجعي يصعب تدقيقه لاحقًا.",
+          "approach": "طبقة تحويل تضيف معرف المستند والصفحة والعنوان إلى كل مقطع وتصدر Markdown وJSONL.",
+          "stack": "Python + MarkItDown + SQLite FTS + JSONL",
+          "steps": [
+            "تحديد صيغ الملفات المرخصة.",
+            "توسيع مخرجات التحويل ببيانات الصفحة والمصدر.",
+            "بناء فهرس محلي قابل للبحث.",
+            "اختبار استرجاع المقطع إلى الصفحة الأصلية."
+          ],
+          "metric": "نسبة المقاطع التي يمكن إرجاعها إلى صفحة المصدر بدقة.",
+          "difficulty": "متوسط (تقدير: أسبوع)",
+          "risks": "أخطاء OCR قد تنسب فقرة إلى صفحة غير صحيحة.",
+          "sources": [
+            {
+              "title": "المستودع الرسمي",
+              "url": "https://github.com/microsoft/markitdown"
+            },
+            {
+              "title": "pyproject.toml",
+              "url": "https://github.com/microsoft/markitdown/blob/main/packages/markitdown/pyproject.toml"
+            },
+            {
+              "title": "MIT License",
+              "url": "https://github.com/microsoft/markitdown/blob/main/LICENSE"
+            }
+          ]
+        }
+      ],
+      "religious": [
+        {
+          "title": "فهرسة مراجع شرعية مرخصة مع حفظ أرقام الصفحات",
+          "problem": "تحويل ملفات المراجع قد يفقد بيانات الطبعة والصفحة ويصعب مراجعة الاقتباس.",
+          "approach": "استخدام التحويل للفهرسة فقط مع حفظ بيانات الناشر والطبعة والصفحة ومراجعة بشرية؛ لا يولّد أحكامًا أو فتاوى.",
+          "stack": "Python + MarkItDown + SQLite + JSONL",
+          "steps": [
+            "استخدام مصادر مصرح بها أو متاحة بترخيص مناسب.",
+            "تسجيل الطبعة والناشر ورقم الصفحة قبل التحويل.",
+            "مراجعة عينة من الاقتباسات يدويًا مقابل PDF.",
+            "إتاحة البحث مع رابط إلى الصفحة الأصلية دون توليد إجابات شرعية."
+          ],
+          "metric": "نسبة الإحالات التي تطابق الصفحة الأصلية في عينة مراجعة.",
+          "difficulty": "متوسط (تقدير: أسبوع)",
+          "risks": "حقوق النشر وأخطاء OCR واحتمال بتر النص أو تغيير المعنى.",
+          "sources": [
+            {
+              "title": "المستودع الرسمي",
+              "url": "https://github.com/microsoft/markitdown"
+            },
+            {
+              "title": "pyproject.toml",
+              "url": "https://github.com/microsoft/markitdown/blob/main/packages/markitdown/pyproject.toml"
+            },
+            {
+              "title": "MIT License",
+              "url": "https://github.com/microsoft/markitdown/blob/main/LICENSE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "yc-software/minecraft-agent-harness",
+      "name": "Minecraft Agent Harness",
+      "feedId": null,
+      "publicationStatus": "research_only_not_in_feed",
+      "siteVisible": false,
+      "basis": "readme",
+      "reviewedAt": "2026-11-02T20:45:00Z",
+      "license": "MIT",
+      "activity": {
+        "stars": 112,
+        "forks": 9,
+        "openIssues": 1,
+        "lastPushedAt": "2026-10-29T20:30:45Z",
+        "measuredAt": "2026-11-02T17:53:37Z"
+      },
+      "overview": "إطار Node.js لوكيل يتعامل مع عالم Minecraft عبر Mineflayer وأدوات مخصصة وملاحظة دورية للحالة. يوضح دليل المعمارية حلقة ملاحظة ثم أدوات، مع جلسات مستمرة وطبقة shell sandbox اختيارية.",
+      "requirements": "Node.js 22.19+، خادم Minecraft، مفتاح مزود نموذج، وإعداد بيئة تشغيل. قد تحتاج بعض أوضاع shell إلى Docker أو E2B؛ تشغيل الخادم المستضاف يضيف تكلفة مستقلة.",
+      "quickStart": "ابدأ بعالم خاص أو خادم تجريبي، اضبط عنوان الخادم ومزود النموذج في ملف البيئة، شغّل الوكيل بمهمة غير مدمرة، وراقب سجل الأدوات والحالة قبل السماح بمهام أوسع.",
+      "costs": "الترخيص MIT؛ استخدام النموذج قد يستهلك API مدفوعًا، واستضافة الخادم اختيارية بحسب مكان تشغيل العالم.",
+      "localCloud": "يمكن تشغيل الوكيل والخادم محليًا أو على خادم خاص. لا توجد خدمة وكيل مستضافة مرفقة بالمستودع.",
+      "alternatives": [
+        "Mineflayer مع وكيل مخصص لمن يريد بناء الحلقة بنفسه.",
+        "أطر وكلاء Minecraft البحثية الأخرى، لكنها ليست بالضرورة متوافقة في الأدوات أو الجلسات."
+      ],
+      "sources": [
+        {
+          "title": "المستودع الرسمي",
+          "url": "https://github.com/yc-software/minecraft-agent-harness"
+        },
+        {
+          "title": "دليل المعمارية",
+          "url": "https://github.com/yc-software/minecraft-agent-harness/blob/main/docs/architecture.md"
+        },
+        {
+          "title": "MIT License",
+          "url": "https://github.com/yc-software/minecraft-agent-harness/blob/main/LICENSE"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "اختبارات سيناريو حتمية وحدود أدوات",
+          "problem": "قد تختلف نتائج الوكيل مع تغير النموذج ويصعب تمييز خطأ الأداة عن خطأ التخطيط.",
+          "approach": "بناء عالم اختبار خاص ومهام قصيرة متكررة مع assertions على الحالة النهائية وحدود زمنية.",
+          "stack": "Node.js + Mineflayer + node:test + fixtures",
+          "steps": [
+            "اختيار مهام بناء واستكشاف غير مدمرة.",
+            "تثبيت نسخة الخادم والعالم والاعتمادات.",
+            "تسجيل الملاحظات واستدعاءات الأدوات والنتيجة.",
+            "إضافة حالات فشل وانقطاع وإلغاء."
+          ],
+          "metric": "نسبة تكرار النتيجة نفسها عبر 20 تشغيلًا في بيئة ثابتة.",
+          "difficulty": "متوسط (تقدير: 5–7 أيام)",
+          "risks": "تغير إصدار اللعبة أو سلوك النموذج قد يبطل fixtures.",
+          "sources": [
+            {
+              "title": "المستودع الرسمي",
+              "url": "https://github.com/yc-software/minecraft-agent-harness"
+            },
+            {
+              "title": "دليل المعمارية",
+              "url": "https://github.com/yc-software/minecraft-agent-harness/blob/main/docs/architecture.md"
+            },
+            {
+              "title": "MIT License",
+              "url": "https://github.com/yc-software/minecraft-agent-harness/blob/main/LICENSE"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مساعد بناء تعليمي داخل عالم خاص",
+          "problem": "قد يحتاج الطلاب إلى شرح خطوات البناء والتخطيط دون العبث بعوالم عامة.",
+          "approach": "وضع تعليمي محدود يشرح المهمة ويقترح الخطوات وينفذ فقط في عالم خاص بموافقة المعلم.",
+          "stack": "Node.js + Mineflayer + task templates + event log",
+          "steps": [
+            "إعداد عالم تعليمي منفصل.",
+            "تعريف مهام بناء ذات أهداف قابلة للقياس.",
+            "تقييد الأدوات إلى الحركة والبناء المسموح.",
+            "تقييم النتيجة مع سجل قابل للمراجعة."
+          ],
+          "metric": "عدد المهام التعليمية المكتملة دون أوامر خارج النطاق.",
+          "difficulty": "متوسط (تقدير: أسبوع)",
+          "risks": "قد يتسبب خطأ في الأداة بإتلاف عالم التجربة إذا غابت النسخ الاحتياطية.",
+          "sources": [
+            {
+              "title": "المستودع الرسمي",
+              "url": "https://github.com/yc-software/minecraft-agent-harness"
+            },
+            {
+              "title": "دليل المعمارية",
+              "url": "https://github.com/yc-software/minecraft-agent-harness/blob/main/docs/architecture.md"
+            },
+            {
+              "title": "MIT License",
+              "url": "https://github.com/yc-software/minecraft-agent-harness/blob/main/LICENSE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "NVIDIA/OpenShell",
+      "name": "NVIDIA OpenShell",
+      "feedId": null,
+      "publicationStatus": "research_only_not_in_feed",
+      "siteVisible": false,
+      "basis": "readme",
+      "reviewedAt": "2026-11-02T20:45:00Z",
+      "license": "Apache-2.0",
+      "activity": {
+        "stars": 20963,
+        "forks": 2057,
+        "openIssues": 578,
+        "lastPushedAt": "2026-11-02T17:43:29Z",
+        "measuredAt": "2026-11-02T17:53:37Z"
+      },
+      "overview": "بيئة تشغيل لوكلاء الذكاء الاصطناعي تضيف عزلًا وسياسات وصول ومراقبة للملفات والشبكة والاعتمادات. الهدف أن تمر أعمال الوكيل عبر sandbox بسياسات قابلة للمراجعة بدل إعطائه صلاحيات المضيف مباشرة.",
+      "requirements": "المنصة المدعومة تختلف حسب الإصدار: Linux وmacOS Apple Silicon، وWindows عبر WSL2 تجريبي. يحتاج runtime إلى بيئة افتراضية أو Docker/Podman، ويتطلب بناء المصدر Rust 1.94 وفق Cargo.toml. راجع مصفوفة الدعم قبل التثبيت.",
+      "quickStart": "ابدأ بقراءة مصفوفة الدعم ومعمارية الإصدار، ثم جرّب sandbox بملفات غير حساسة وسياسة ضيقة، وراجع قرارات السماح والمنع قبل ربط أي وكيل أو بيانات اعتماد حقيقية.",
+      "costs": "المشروع Apache-2.0 بلا رسوم ترخيص؛ تكاليف الحوسبة والنماذج والبنية التحتية السحابية منفصلة.",
+      "localCloud": "يمكن تشغيله محليًا، كما توجد مسارات نشر على بنية المستخدم؛ لا توجد خدمة SaaS عامة مضمونة من المستودع.",
+      "alternatives": [
+        "gVisor وFirecracker مكونات عزل قريبة لكنهما ليسا بديلين مباشرين لنظام سياسات الوكلاء.",
+        "Docker sandbox قد يناسب حالات أبسط مع ضمانات مختلفة."
+      ],
+      "sources": [
+        {
+          "title": "المستودع الرسمي",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        },
+        {
+          "title": "مصفوفة الدعم الرسمية",
+          "url": "https://docs.nvidia.com/openshell/v0.1.6/about/support-matrix"
+        },
+        {
+          "title": "Cargo.toml",
+          "url": "https://github.com/NVIDIA/OpenShell/blob/main/Cargo.toml"
+        },
+        {
+          "title": "Apache-2.0 License",
+          "url": "https://github.com/NVIDIA/OpenShell/blob/main/LICENSE"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "عارض فروقات سياسات قبل التنفيذ",
+          "problem": "قد يصعب اكتشاف اتساع صلاحيات الملفات أو الشبكة في ملفات السياسات الطويلة.",
+          "approach": "إنشاء واجهة تقارن السياسة الحالية والمقترحة وتشرح أثر كل قاعدة مع موافقة بشرية.",
+          "stack": "TypeScript + JSON Schema + OpenShell policy API",
+          "steps": [
+            "قراءة schema الرسمية للسياسات.",
+            "تطبيع القواعد وعرض الفروقات.",
+            "إظهار الملفات والوجهات التي ستتأثر.",
+            "إضافة اختبار deny-by-default قبل الموافقة."
+          ],
+          "metric": "عدد الصلاحيات الواسعة المكتشفة قبل التشغيل ونسبة القواعد التي لها تفسير.",
+          "difficulty": "مرتفع (تقدير: 1–2 أسبوع)",
+          "risks": "تفسير خاطئ لقاعدة قد يعطي ثقة زائفة أو يحجب وصولًا لازمًا.",
+          "sources": [
+            {
+              "title": "المستودع الرسمي",
+              "url": "https://github.com/NVIDIA/OpenShell"
+            },
+            {
+              "title": "مصفوفة الدعم الرسمية",
+              "url": "https://docs.nvidia.com/openshell/v0.1.6/about/support-matrix"
+            },
+            {
+              "title": "Cargo.toml",
+              "url": "https://github.com/NVIDIA/OpenShell/blob/main/Cargo.toml"
+            },
+            {
+              "title": "Apache-2.0 License",
+              "url": "https://github.com/NVIDIA/OpenShell/blob/main/LICENSE"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مختبر جامعي لوكلاء ببيانات قراءة فقط",
+          "problem": "يحتاج الطلاب إلى تجربة الوكلاء دون منحهم وصولًا عامًا إلى ملفات الجهاز أو الشبكة.",
+          "approach": "حزمة مهام جاهزة داخل sandbox مع ملفات اصطناعية وقيود قراءة فقط وسجل واضح.",
+          "stack": "OpenShell + Python + JSON policies + test fixtures",
+          "steps": [
+            "إعداد ملفات تجريبية غير حساسة.",
+            "تعريف سياسات قراءة فقط لكل مهمة.",
+            "اختبار محاولات الخروج من النطاق.",
+            "عرض تقرير يشرح كل سماح ومنع."
+          ],
+          "metric": "صفر عمليات كتابة أو اتصال غير مصرح بها في مجموعة اختبارات سلبية.",
+          "difficulty": "مرتفع (تقدير: 1–2 أسبوع)",
+          "risks": "الخطأ في إعداد العزل أو تحديث runtime قد يضعف الضمانات.",
+          "sources": [
+            {
+              "title": "المستودع الرسمي",
+              "url": "https://github.com/NVIDIA/OpenShell"
+            },
+            {
+              "title": "مصفوفة الدعم الرسمية",
+              "url": "https://docs.nvidia.com/openshell/v0.1.6/about/support-matrix"
+            },
+            {
+              "title": "Cargo.toml",
+              "url": "https://github.com/NVIDIA/OpenShell/blob/main/Cargo.toml"
+            },
+            {
+              "title": "Apache-2.0 License",
+              "url": "https://github.com/NVIDIA/OpenShell/blob/main/LICENSE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "pydantic/pydantic-ai",
+      "name": "Pydantic AI",
+      "feedId": null,
+      "publicationStatus": "research_only_not_in_feed",
+      "siteVisible": false,
+      "basis": "readme",
+      "reviewedAt": "2026-11-02T20:45:00Z",
+      "license": "MIT",
+      "activity": {
+        "stars": 20997,
+        "forks": 3081,
+        "openIssues": 1758,
+        "lastPushedAt": "2026-11-02T17:53:23Z",
+        "measuredAt": "2026-11-02T17:53:37Z"
+      },
+      "overview": "إطار Python لبناء وكلاء typed مع نماذج مخرجات Pydantic وأدوات وتكاملات لمزودين متعددين، إضافة إلى أدوات تقييم وتتبع وتدفقات تنفيذ أكثر تنظيمًا.",
+      "requirements": "Python >=3.11، تثبيت pydantic-ai أو الحزمة slim مع extras المطلوبة، ومفتاح أو endpoint لمزود النموذج. تختلف الاعتمادات الإضافية حسب التكامل.",
+      "quickStart": "أنشئ بيئة Python، ثبّت الحزمة الأساسية أو extra محددًا، عرّف Agent ومخطط Pydantic للمخرجات، ثم اختبر نتيجة واحدة وأضف تقييمًا لحالات النجاح والفشل قبل ربط أدوات حقيقية.",
+      "costs": "الإطار MIT ومجاني؛ تكلفة النموذج والبحث والخدمات الخارجية تعتمد على المزود. يمكن استخدام endpoint محلي متوافق دون الاعتماد على API سحابي.",
+      "localCloud": "الكود يعمل محليًا، بينما يمكن ربطه بمزود سحابي أو نموذج محلي متوافق. لا توجد منصة استضافة إلزامية.",
+      "alternatives": [
+        "LangGraph للتدفقات والحالات متعددة الخطوات.",
+        "smolagents لوكلاء خفيفين مع أدوات.",
+        "LlamaIndex Workflows لتطبيقات تعتمد على استرجاع البيانات."
+      ],
+      "sources": [
+        {
+          "title": "المستودع الرسمي",
+          "url": "https://github.com/pydantic/pydantic-ai"
+        },
+        {
+          "title": "التوثيق الرسمي",
+          "url": "https://pydantic.dev/docs/ai/"
+        },
+        {
+          "title": "pyproject.toml",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/pyproject.toml"
+        },
+        {
+          "title": "MIT License",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/LICENSE"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "حزمة تقييم للمخرجات والأدوات",
+          "problem": "قد ينجح الوكيل في استدعاء النموذج لكنه ينتج JSON غير صحيح أو يستدعي أداة غير مناسبة.",
+          "approach": "إنشاء مجموعة حالات ثابتة تقيس schema correctness ومسارات الأدوات والامتناع والتكلفة والزمن.",
+          "stack": "Python + Pydantic Evals + pytest + JSONL",
+          "steps": [
+            "تعريف مهام مرجعية ومدخلات ثابتة.",
+            "إنشاء expected outputs ومسارات أدوات.",
+            "اختبار حالات الفشل والامتناع وتجاوز الوقت.",
+            "تصدير تقرير مقارنة بين إصدارات النموذج."
+          ],
+          "metric": "دقة المخرجات المنظمة ونسبة استدعاءات الأدوات الصحيحة لكل إصدار.",
+          "difficulty": "متوسط إلى مرتفع (تقدير: أسبوع)",
+          "risks": "قد تتغير النتائج بسبب عدم حتمية النماذج أو انحياز بيانات التقييم.",
+          "sources": [
+            {
+              "title": "المستودع الرسمي",
+              "url": "https://github.com/pydantic/pydantic-ai"
+            },
+            {
+              "title": "التوثيق الرسمي",
+              "url": "https://pydantic.dev/docs/ai/"
+            },
+            {
+              "title": "pyproject.toml",
+              "url": "https://github.com/pydantic/pydantic-ai/blob/main/pyproject.toml"
+            },
+            {
+              "title": "MIT License",
+              "url": "https://github.com/pydantic/pydantic-ai/blob/main/LICENSE"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مساعد دراسة عربي typed مع إحالات مصدرية",
+          "problem": "قد تنتج المساعدات التعليمية إجابات غير منظمة أو بلا مصدر يمكن مراجعته.",
+          "approach": "وكيل يجيب من مجموعة وثائق رسمية محددة ويعيد جوابًا ومراجع وصفحات ضمن schema ثابت.",
+          "stack": "Python + Pydantic AI + SQLite FTS + Pydantic",
+          "steps": [
+            "اختيار مجموعة وثائق عامة ومصرح بها.",
+            "تعريف schema للإجابة والمراجع وحدود عدم اليقين.",
+            "إضافة أدوات بحث للقراءة فقط.",
+            "تقييم دقة الإحالات على أسئلة مرجعية."
+          ],
+          "metric": "نسبة الإجابات ذات إحالات صحيحة ومعدل الادعاءات غير المدعومة.",
+          "difficulty": "متوسط (تقدير: أسبوع)",
+          "risks": "قد لا تحتوي الوثائق على إجابة أو تتغير نسخها.",
+          "sources": [
+            {
+              "title": "المستودع الرسمي",
+              "url": "https://github.com/pydantic/pydantic-ai"
+            },
+            {
+              "title": "التوثيق الرسمي",
+              "url": "https://pydantic.dev/docs/ai/"
+            },
+            {
+              "title": "pyproject.toml",
+              "url": "https://github.com/pydantic/pydantic-ai/blob/main/pyproject.toml"
+            },
+            {
+              "title": "MIT License",
+              "url": "https://github.com/pydantic/pydantic-ai/blob/main/LICENSE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "astral-sh/uv",
+      "name": "uv",
+      "feedId": null,
+      "publicationStatus": "research_only_not_in_feed",
+      "siteVisible": false,
+      "basis": "readme",
+      "reviewedAt": "2026-11-02T20:45:00Z",
+      "license": "MIT OR Apache-2.0",
+      "activity": {
+        "stars": 91467,
+        "forks": 3744,
+        "openIssues": 3041,
+        "lastPushedAt": "2026-11-02T16:31:10Z",
+        "measuredAt": "2026-11-02T17:53:37Z"
+      },
+      "overview": "أداة Rust لإدارة مشاريع Python والحزم والبيئات الافتراضية وملفات القفل وتثبيت أدوات CLI. تجمع أوامر كانت موزعة بين pip وvenv وpip-tools وأدوات إدارة المشاريع.",
+      "requirements": "تتوفر ملفات تشغيل لأنظمة Windows وmacOS وLinux، ولا يتطلب تثبيت Python مسبقًا لتثبيت uv. بناء المصدر يتطلب Rust 1.97 وفق Cargo.toml.",
+      "quickStart": "ثبّت uv بالطريقة الرسمية، نفّذ uv init لإنشاء مشروع، uv add لإضافة الاعتمادات، uv run لتشغيل الأوامر، ثم uv lock وuv sync للحفاظ على بيئة قابلة لإعادة الإنتاج.",
+      "costs": "مجاني برخصة مزدوجة MIT أو Apache-2.0؛ يعمل محليًا ولا يتطلب خدمة مدفوعة.",
+      "localCloud": "أداة CLI محلية تتصل بمستودعات الحزم عند الحاجة، ولا تقدم خدمة سحابية لإدارة المشاريع.",
+      "alternatives": [
+        "Poetry لإدارة المشاريع والحزم.",
+        "PDM لإدارة بيئات ومشاريع Python.",
+        "pip-tools لتثبيت الاعتمادات وإنتاج ملفات قفل."
+      ],
+      "sources": [
+        {
+          "title": "المستودع الرسمي",
+          "url": "https://github.com/astral-sh/uv"
+        },
+        {
+          "title": "التوثيق الرسمي",
+          "url": "https://docs.astral.sh/uv/"
+        },
+        {
+          "title": "Cargo.toml",
+          "url": "https://github.com/astral-sh/uv/blob/main/Cargo.toml"
+        },
+        {
+          "title": "MIT License",
+          "url": "https://github.com/astral-sh/uv/blob/main/LICENSE-MIT"
+        },
+        {
+          "title": "Apache-2.0 License",
+          "url": "https://github.com/astral-sh/uv/blob/main/LICENSE-APACHE"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "مدقق صحة lockfile وبيئة المشروع",
+          "problem": "قد تتباعد نسخة Python أو الاعتمادات بين جهاز الطالب وCI رغم وجود ملف قفل.",
+          "approach": "إضافة تقرير يربط إصدار Python وuv وlockfile والمنصة ويقترح أمر إصلاح واضحًا.",
+          "stack": "Rust + uv CLI + JSON report + GitHub Actions",
+          "steps": [
+            "تحديد الحالات الشائعة لاختلاف البيئات.",
+            "استخراج metadata من pyproject وuv.lock.",
+            "مقارنة البيئة الفعلية مع الملف المقفل.",
+            "إنتاج تقرير قابل للاستخدام في CI."
+          ],
+          "metric": "نسبة اختلافات البيئة المكتشفة قبل تشغيل المشروع.",
+          "difficulty": "متوسط (تقدير: 5–8 أيام)",
+          "risks": "قد تختلف الحلول بين المنصات أو مصادر الحزم الخاصة.",
+          "sources": [
+            {
+              "title": "المستودع الرسمي",
+              "url": "https://github.com/astral-sh/uv"
+            },
+            {
+              "title": "التوثيق الرسمي",
+              "url": "https://docs.astral.sh/uv/"
+            },
+            {
+              "title": "Cargo.toml",
+              "url": "https://github.com/astral-sh/uv/blob/main/Cargo.toml"
+            },
+            {
+              "title": "MIT License",
+              "url": "https://github.com/astral-sh/uv/blob/main/LICENSE-MIT"
+            },
+            {
+              "title": "Apache-2.0 License",
+              "url": "https://github.com/astral-sh/uv/blob/main/LICENSE-APACHE"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مدير بيئات مقررات جامعية قابلة لإعادة الإنتاج",
+          "problem": "قد تختلف بيئات المختبرات والواجبات بين أجهزة الطلاب وتضيع ساعات في حل التعارضات.",
+          "approach": "قوالب مقررات تحتوي pyproject وuv.lock وتعليمات تشغيل ونسخة Python محددة مع cache اختياري.",
+          "stack": "uv + Python + GitHub Classroom + offline cache",
+          "steps": [
+            "اختيار مقرر تجريبي ومجموعة واجبات.",
+            "تثبيت نسخ Python والاعتمادات.",
+            "إعداد lockfile لكل نظام مدعوم.",
+            "اختبار تعليمات التثبيت على بيئة نظيفة."
+          ],
+          "metric": "نسبة الطلاب الذين يجهزون البيئة دون تدخل دعم.",
+          "difficulty": "متوسط (تقدير: أسبوع)",
+          "risks": "قد تتطلب بعض الحزم أدوات نظام أو إنترنت غير متاح.",
+          "sources": [
+            {
+              "title": "المستودع الرسمي",
+              "url": "https://github.com/astral-sh/uv"
+            },
+            {
+              "title": "التوثيق الرسمي",
+              "url": "https://docs.astral.sh/uv/"
+            },
+            {
+              "title": "Cargo.toml",
+              "url": "https://github.com/astral-sh/uv/blob/main/Cargo.toml"
+            },
+            {
+              "title": "MIT License",
+              "url": "https://github.com/astral-sh/uv/blob/main/LICENSE-MIT"
+            },
+            {
+              "title": "Apache-2.0 License",
+              "url": "https://github.com/astral-sh/uv/blob/main/LICENSE-APACHE"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "bestThreeProposals": [
+    {
+      "title": "عارض فروقات سياسات OpenShell قبل التنفيذ",
+      "problem": "قد يصعب اكتشاف اتساع صلاحيات الملفات أو الشبكة في ملفات السياسات الطويلة.",
+      "approach": "واجهة تقارن السياسة الحالية والمقترحة وتشرح أثر كل قاعدة مع موافقة بشرية.",
+      "stack": "TypeScript + JSON Schema + OpenShell policy API",
+      "steps": [
+        "قراءة schema الرسمية للسياسات.",
+        "تطبيع القواعد وعرض الفروقات.",
+        "إظهار الملفات والوجهات التي ستتأثر.",
+        "إضافة اختبار deny-by-default قبل الموافقة."
+      ],
+      "metric": "عدد الصلاحيات الواسعة المكتشفة قبل التشغيل ونسبة القواعد التي لها تفسير.",
+      "difficulty": "مرتفع (تقدير: 1–2 أسبوع)",
+      "risks": "تفسير خاطئ لقاعدة قد يعطي ثقة زائفة.",
+      "sources": [
+        {
+          "title": "المستودع الرسمي",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        },
+        {
+          "title": "مصفوفة الدعم الرسمية",
+          "url": "https://docs.nvidia.com/openshell/v0.1.6/about/support-matrix"
+        },
+        {
+          "title": "Cargo.toml",
+          "url": "https://github.com/NVIDIA/OpenShell/blob/main/Cargo.toml"
+        },
+        {
+          "title": "Apache-2.0 License",
+          "url": "https://github.com/NVIDIA/OpenShell/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "title": "حزمة تقييم typed لوكلاء Pydantic AI",
+      "problem": "قد ينتج الوكيل مخرجات غير صحيحة أو يستدعي أداة غير مناسبة رغم نجاح طلب النموذج.",
+      "approach": "مجموعة حالات ثابتة تقيس schema correctness ومسارات الأدوات والامتناع والتكلفة والزمن.",
+      "stack": "Python + Pydantic Evals + pytest + JSONL",
+      "steps": [
+        "تعريف مهام مرجعية ومدخلات ثابتة.",
+        "إنشاء expected outputs ومسارات أدوات.",
+        "اختبار حالات الفشل والامتناع وتجاوز الوقت.",
+        "تصدير تقرير مقارنة بين إصدارات النموذج."
+      ],
+      "metric": "دقة المخرجات المنظمة ونسبة استدعاءات الأدوات الصحيحة.",
+      "difficulty": "متوسط إلى مرتفع (تقدير: أسبوع)",
+      "risks": "قد تتغير النتائج بسبب عدم حتمية النماذج.",
+      "sources": [
+        {
+          "title": "المستودع الرسمي",
+          "url": "https://github.com/pydantic/pydantic-ai"
+        },
+        {
+          "title": "التوثيق الرسمي",
+          "url": "https://pydantic.dev/docs/ai/"
+        },
+        {
+          "title": "pyproject.toml",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/pyproject.toml"
+        },
+        {
+          "title": "MIT License",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "title": "مصفوفة توافق Google GenAI SDK",
+      "problem": "تغير واجهات SDK ومزايا API قد يكسر أمثلة قديمة عند الترقية.",
+      "approach": "اختبارات contract تغطي إصدارات Python والواجهات العامة والـ deprecations باستخدام fixtures دون API حي.",
+      "stack": "Python + pytest + GitHub Actions + JSON fixtures",
+      "steps": [
+        "حصر الواجهات العامة المستخدمة.",
+        "إنشاء fixtures لاستجابات ثابتة.",
+        "تشغيل مصفوفة Python وإصدارات SDK.",
+        "نشر تقرير deprecations لكل إصدار."
+      ],
+      "metric": "عدد regressions المكتشفة قبل الإصدار ونسبة نجاح المصفوفة.",
+      "difficulty": "متوسط (تقدير: 5–7 أيام)",
+      "risks": "قد لا تمثل fixtures كل تغيرات الخدمة الحية.",
+      "sources": [
+        {
+          "title": "المستودع الرسمي",
+          "url": "https://github.com/googleapis/python-genai"
+        },
+        {
+          "title": "التوثيق الرسمي",
+          "url": "https://googleapis.github.io/python-genai/"
+        },
+        {
+          "title": "pyproject.toml",
+          "url": "https://github.com/googleapis/python-genai/blob/main/pyproject.toml"
+        },
+        {
+          "title": "Apache-2.0 License",
+          "url": "https://github.com/googleapis/python-genai/blob/main/LICENSE"
+        }
+      ]
+    }
+  ]
+}

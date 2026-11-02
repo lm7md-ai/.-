@@ -19,11 +19,13 @@
     "rowCountsAreOccurrences": true,
     "activeFeedExactOccurrences": 237,
     "activeAlreadyImportedActiveOccurrences": 237,
-    "historicalEditorialOutsideCurrentFeedOccurrences": 350,
+    "historicalEditorialOutsideCurrentFeedOccurrences": 349,
     "seenOnlyUnmatchedOccurrences": 5,
     "sameIdDifferentUrlOccurrences": 0,
     "confirmedExpired": 0,
-    "expiryNote": "لا يصنّف غياب سجل عن التغذية كمنقضٍ؛ لم يظهر تاريخ انتهاء مؤكد في السجلات الخمسة غير المطابقة. تُراجع المواعيد فقط من مصدرها الأصلي عند الحاجة."
+    "expiryNote": "لا يصنّف غياب سجل عن التغذية كمنقضٍ؛ لم يظهر تاريخ انتهاء مؤكد في السجلات الخمسة غير المطابقة. تُراجع المواعيد فقط من مصدرها الأصلي عند الحاجة.",
+    "sameUrlDifferentIdOccurrences": 1,
+    "sameUrlDifferentId": 1
   },
   "pendingRecords": [
     {
@@ -193,7 +195,9 @@
       "seenOnlyPending": 5,
       "feedUrlMismatches": 0,
       "editorialUrlMismatches": 0,
-      "confirmedExpired": 0
+      "confirmedExpired": 0,
+      "historicalExactEditorialOutsideFeed": 349,
+      "sameUrlDifferentIdOccurrences": 1
     },
     "incomingStructuralCheck": {
       "entries": 10,
