@@ -1,0 +1,169 @@
+{
+  "version": 1,
+  "runAt": "2026-11-02T14:46:32+03:00",
+  "repository": "https://github.com/lm7md-ai/.-",
+  "main": {
+    "sha": "012536731c6d6d82d430fca40517e9ada31034f7",
+    "feedGeneratedAt": "2026-11-02T10:58:55+00:00",
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialCount": 627,
+    "activeEditorialExact": 261,
+    "activeNewsEditorial": 163,
+    "activeProjectEditorial": 98
+  },
+  "incomingAudit": {
+    "files": 63,
+    "rows": 592,
+    "rowCountsAreOccurrences": true,
+    "activeFeedExactOccurrences": 237,
+    "activeAlreadyImportedActiveOccurrences": 237,
+    "historicalEditorialOutsideCurrentFeedOccurrences": 350,
+    "seenOnlyUnmatchedOccurrences": 5,
+    "sameIdDifferentUrlOccurrences": 0,
+    "confirmedExpired": 0,
+    "expiryNote": "لا يصنّف غياب سجل عن التغذية كمنقضٍ؛ لم يظهر تاريخ انتهاء مؤكد في السجلات الخمسة غير المطابقة. تُراجع المواعيد فقط من مصدرها الأصلي عند الحاجة."
+  },
+  "pendingRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "title": "NVIDIA OpenShell",
+      "state": "seen_only",
+      "inFeed": false,
+      "inEditorial": false,
+      "action": "إبقاء السجل انتظارًا؛ لا يُعاد توليد هويته."
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "title": "Canva Craft",
+      "state": "seen_only",
+      "inFeed": false,
+      "inEditorial": false,
+      "action": "إبقاء السجل انتظارًا؛ لا يُربط بخبر Canva آخر."
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "title": "1Password agent sign-in",
+      "state": "seen_only",
+      "inFeed": false,
+      "inEditorial": false,
+      "action": "إبقاء السجل انتظارًا؛ لا يُعاد توليد هويته."
+    },
+    {
+      "id": "87d27a9f8a0972f507",
+      "url": "https://www.theverge.com/tech/1023021/binance-hack-billions-biggest-crypto-heist",
+      "title": "Binance security incident",
+      "state": "seen_only",
+      "inFeed": false,
+      "inEditorial": false,
+      "action": "إبقاء السجل انتظارًا؛ الرابط الأصلي غير موجود في التغذية الحالية."
+    },
+    {
+      "id": "65eeab64fed21e0b54",
+      "url": "https://www.engadget.com/2301934/general-motors-220-million-settle-multi-state-data-privacy-lawsuit/",
+      "title": "GM privacy settlement",
+      "state": "seen_only",
+      "inFeed": false,
+      "inEditorial": false,
+      "action": "إبقاء السجل انتظارًا؛ الرابط الأصلي غير موجود في التغذية الحالية."
+    }
+  ],
+  "identityCollision": {
+    "historicalId": "7a99eca9b2ce14d9f5",
+    "currentFeedId": "e0cbbf211a55e79f34",
+    "url": "https://github.com/rasbt/LLMs-from-scratch",
+    "decision": "عدم دمج الهويتين وعدم توليد معرف بديل."
+  },
+  "specialChecks": {
+    "NVIDIA_OpenShell": "still seen_only; not in current feed/editorial",
+    "Canva_Craft": "still seen_only; not in current feed/editorial",
+    "OnePassword_agent_sign_in": "still seen_only; not in current feed/editorial"
+  },
+  "newCycle": {
+    "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-02-1446.json",
+    "newsPrepared": 9,
+    "projectsEnriched": 1,
+    "newsIds": [
+      "a99fcf66497304880d",
+      "3a06dd8071d8d58746",
+      "a15f337ab2515f14de",
+      "170fecee8f048681f1",
+      "022bb01d12c65be1c8",
+      "370385b074fdc7b199",
+      "d674dea922625d0be8",
+      "967be99077d13f07b2",
+      "12d49b8b188050a756"
+    ],
+    "projectIds": [
+      "2e2562d0bda4e0975e"
+    ],
+    "basisCounts": {
+      "article": 9,
+      "readme": 1
+    },
+    "sourcesRead": [
+      "SPA/SDAIA announcements and SPA competition notice",
+      "U.S. District Court opinion/order on xAI",
+      "Aramco official announcement and SPA",
+      "Tencent Cloud release via PR Newswire",
+      "CNIL official sanction notice",
+      "Nolan Lawson original benchmark article",
+      "arXiv full PDF for score-seeking paper",
+      "AI Agent Book README, Arabic index, chapter README and LICENSE"
+    ]
+  },
+  "mergeSimulation": {
+    "existingRecords": 627,
+    "newRecords": 10,
+    "updatedExistingRecords": 0,
+    "preservedExistingRecords": 627,
+    "resultingRecords": 637,
+    "activeEditorialExactAfter": 271,
+    "activeNewsAfter": 172,
+    "activeProjectsAfter": 99,
+    "method": "نسخ جميع السجلات القديمة ثم إضافة 10 IDs جديدة بعد مطابقة id/url حرفيًا مع feed الحالي؛ لا حذف ولا استبدال لسجل قديم."
+  },
+  "library": {
+    "catalogEntries": 42,
+    "archived": 2,
+    "nonArchived": 40,
+    "inCurrentFeed": 6,
+    "notInFeed": 36,
+    "licenseNeedsUpstreamVerification": 7,
+    "previousEightReviewed": 8,
+    "previousEightCurrentStatus": "8/8 غير مؤرشفة؛ 5 MIT و3 Apache-2.0 وفق metadata للمستودعات عند القياس.",
+    "metricsMeasuredAt": "2026-11-02T14:46:32+03:00",
+    "metricsCaveat": "توقيت تحديث markitdown وminecraft-agent-harness ظهر لاحقًا بدقائق من وقت القياس؛ لم يُستخدم وحده كدليل نشاط."
+  },
+  "execution": {
+    "officialIncomingValidate": "not_run",
+    "officialImport": "not_run",
+    "localUnitTests": "not_run",
+    "structuralEquivalent": "passed for 10 entries and exact current feed IDs/URLs",
+    "officialCI": "pending after PR creation"
+  },
+  "publication": {
+    "newContentPublished": false,
+    "mergeAllowed": false,
+    "reason": "الدمج على main يشغّل workflow النشر القائم الذي يستدعي update_feed.py ويكتب feed.json وseen.json وstatus.json؛ لم يُدمج حفاظًا على القيد."
+  },
+  "workflowSafety": {
+    "checkWorkflow": "pull_request only; unittest, scripts/editorial.py validate, JavaScript syntax checks; no deploy/write",
+    "publishWorkflow": "push to main triggers update-and-deploy and update_feed.py then stages feed.json, seen.json and status.json",
+    "decision": "إنشاء PR بيانات فقط وانتظار CI؛ لا تعديل workflow ولا merge إلى main."
+  },
+  "unchangedFiles": [
+    "site/data/feed.json",
+    "site/data/seen.json",
+    "site/data/status.json",
+    "site/app.js",
+    "site/ideas.js",
+    "site/styles.css",
+    ".github/workflows/check.yml",
+    ".github/workflows/update-and-deploy.yml"
+  ]
+}
