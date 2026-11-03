@@ -1,0 +1,194 @@
+{
+  "version": 1,
+  "type": "research_only_metrics_snapshot",
+  "publicationStatus": "unpublished_research_only",
+  "measuredAt": "2026-11-03T08:38:31Z",
+  "catalog": {
+    "entries": 42,
+    "active": 40,
+    "archived": 2,
+    "licenseUpstreamFollowUps": 7,
+    "sourceCatalogPath": "editorial/library/catalog-2026-11-01-0542.json",
+    "selectedProjectsCount": 10,
+    "catalogNote": "المصدر التراكمي يحتوي 42 سجلًا فعليًا (40 غير مؤرشف و2 مؤرشفان)؛ مصفوفة projects في هذا الملف عينة قياسات من 10 مشاريع وليست الكتالوج كاملًا. يوجد اختلاف وصفي قديم في summary.total داخل الملف التاريخي، بينما entries وstatusSummary يثبتان 42."
+  },
+  "previousEightReview": {
+    "projects": 8,
+    "improvements": 8,
+    "spinoffs": 8,
+    "religious": 1,
+    "testEvidence": 0
+  },
+  "feedCoverage": {
+    "projectItems": 100,
+    "enriched": 99,
+    "notEnriched": 1
+  },
+  "projects": [
+    {
+      "repository": "patchy631/ai-engineering-hub",
+      "stars": 40996,
+      "forks": 6548,
+      "openIssues": 135,
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "archived": false,
+      "license": "MIT",
+      "status": "previous_eight_review"
+    },
+    {
+      "repository": "googleapis/python-genai",
+      "stars": 4054,
+      "forks": 1056,
+      "openIssues": 368,
+      "pushedAt": "2026-11-03T06:52:28Z",
+      "archived": false,
+      "license": "Apache-2.0",
+      "status": "research_only_not_in_feed"
+    },
+    {
+      "repository": "Millillion/lasm",
+      "stars": 89,
+      "forks": 6,
+      "openIssues": 6,
+      "pushedAt": "2026-11-03T08:41:07Z",
+      "archived": false,
+      "license": "MIT",
+      "status": "research_only_not_in_feed"
+    },
+    {
+      "repository": "microsoft/markitdown",
+      "stars": 193646,
+      "forks": 14530,
+      "openIssues": 794,
+      "pushedAt": "2026-10-28T15:33:14Z",
+      "archived": false,
+      "license": "MIT",
+      "status": "research_only_not_in_feed"
+    },
+    {
+      "repository": "yc-software/minecraft-agent-harness",
+      "stars": 122,
+      "forks": 9,
+      "openIssues": 1,
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "archived": false,
+      "license": "MIT",
+      "status": "research_only_not_in_feed"
+    },
+    {
+      "repository": "NVIDIA/OpenShell",
+      "stars": 21009,
+      "forks": 2056,
+      "openIssues": 604,
+      "pushedAt": "2026-11-03T06:55:07Z",
+      "archived": false,
+      "license": "Apache-2.0",
+      "status": "research_only_not_in_feed"
+    },
+    {
+      "repository": "pydantic/pydantic-ai",
+      "stars": 21003,
+      "forks": 3082,
+      "openIssues": 1796,
+      "pushedAt": "2026-11-03T08:36:06Z",
+      "archived": false,
+      "license": "MIT",
+      "status": "research_only_not_in_feed"
+    },
+    {
+      "repository": "astral-sh/uv",
+      "stars": 91491,
+      "forks": 3749,
+      "openIssues": 3034,
+      "pushedAt": "2026-11-03T03:52:24Z",
+      "archived": false,
+      "license": "Apache-2.0",
+      "status": "research_only_not_in_feed"
+    },
+    {
+      "repository": "deepseek-ai/dsh-superagent-prototype",
+      "stars": 14981,
+      "forks": 1609,
+      "openIssues": 0,
+      "pushedAt": "2026-10-31T12:05:51Z",
+      "archived": false,
+      "license": "MIT",
+      "status": "research_only_not_in_feed"
+    },
+    {
+      "repository": "D2I-Group/TSFLab",
+      "stars": 65,
+      "forks": 8,
+      "openIssues": 0,
+      "pushedAt": "2026-11-03T05:12:48Z",
+      "archived": false,
+      "license": "NOASSERTION",
+      "licenseFile": "MIT text",
+      "status": "research_only_not_in_feed",
+      "note": "GitHub API license detection conflicts with LICENSE file; retain follow-up."
+    }
+  ],
+  "topThreeSuggestions": [
+    {
+      "project": "patchy631/ai-engineering-hub",
+      "title": "بيان اعتماد موحد لكل مشروع فرعي",
+      "metric": "نسبة المشاريع التي يمكن إعدادها دون تخمين",
+      "difficulty": "متوسط، تقدير 4–6 أيام"
+    },
+    {
+      "project": "Millillion/lasm",
+      "title": "مصفوفة توافق موحدة لأهداف Edge",
+      "metric": "عدد الأهداف التي تجتاز مجموعة الاختبارات وحجم الحزمة",
+      "difficulty": "مرتفع، تقدير 1–2 أسبوع"
+    },
+    {
+      "project": "microsoft/markitdown",
+      "title": "مجموعة قياس جودة للمستندات العربية",
+      "metric": "دقة حفظ الجداول والعناوين وأرقام الصفحات",
+      "difficulty": "متوسط، تقدير 5–8 أيام"
+    }
+  ],
+  "sources": [
+    {
+      "title": "ai-engineering-hub",
+      "url": "https://github.com/patchy631/ai-engineering-hub"
+    },
+    {
+      "title": "Google Gen AI Python SDK",
+      "url": "https://github.com/googleapis/python-genai"
+    },
+    {
+      "title": "Lasm",
+      "url": "https://github.com/Millillion/lasm"
+    },
+    {
+      "title": "MarkItDown",
+      "url": "https://github.com/microsoft/markitdown"
+    },
+    {
+      "title": "Minecraft Agent Harness",
+      "url": "https://github.com/yc-software/minecraft-agent-harness"
+    },
+    {
+      "title": "NVIDIA OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell"
+    },
+    {
+      "title": "Pydantic AI",
+      "url": "https://github.com/pydantic/pydantic-ai"
+    },
+    {
+      "title": "uv",
+      "url": "https://github.com/astral-sh/uv"
+    },
+    {
+      "title": "DeepSeek Super-Agent Prototype",
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype"
+    },
+    {
+      "title": "TSFLab",
+      "url": "https://github.com/D2I-Group/TSFLab"
+    }
+  ],
+  "note": "لقطة بحثية غير منشورة. الأرقام لقطات وقت القياس وليست ترتيبًا للجودة. الكتالوج الكامل: editorial/library/catalog-2026-11-01-0542.json (42 مشروعًا: 40 نشطًا/غير مؤرشف و2 مؤرشفان). هذا الملف يعرض عينة من 10 مشاريع فقط. لم تُنفذ اختبارات على المشاريع."
+}

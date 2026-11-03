@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "generatedAt": "2026-11-03T20:39:34+03:00",
+  "feedGeneratedAt": "2026-11-03T17:00:40+00:00",
+  "incomingAudit": {
+    "files": 65,
+    "recordAppearances": 606,
+    "uniqueIds": 602,
+    "duplicateAppearances": 4,
+    "alreadyInEditorialExact": 595,
+    "seenOnly": 7,
+    "newEligibleFromMainIncoming": 0,
+    "idUrlMismatches": 0,
+    "confirmedExpired": 0,
+    "needsCorrection": 0
+  },
+  "prBacklog": {
+    "sourceIncomingFiles": 2,
+    "total": 22,
+    "activeExact": 19,
+    "notInCurrentFeed": 3,
+    "urlMismatches": 0,
+    "importedThisRun": 19,
+    "pending": [
+      {
+        "id": "519265604034657396",
+        "entry": {
+          "url": "https://deploymentsafety.openai.com/gpt-rosalind-6",
+          "titleAr": "OpenAI تنشر ملحق بطاقة أمان GPT‑Rosalind‑6 وتوضح قصره على الوصول الموثوق",
+          "summaryAr": "توضح OpenAI أن GPT‑Rosalind‑6 موجه لأبحاث علوم الحياة والطب، ويستخدم أوزان GPT‑6 Astra نفسها دون تدريب إضافي لهذا الإصدار. تصنف الشركة قدرته الحيوية والكيميائية عند مستوى High وتصفه بأنه Critical في الأمن السيبراني وفق إطارها، وتتيح الوصول فقط لمؤسسات وعملاء معتمدين بعد مراجعة الاستخدام والحوكمة والضوابط.",
+          "whyItMatters": "الطرح يبرز أن نشر نموذج عالي القدرة في مجال حساس لا يعتمد على القدرات وحدها؛ بل على آلية وصول مقيدة، ومراجعة مؤسسية، ومراقبة واستخدام مسؤول. كما يوضح أن بطاقة النظام جزء أساسي من تقييم النماذج المتخصصة.",
+          "audience": "باحثو علوم الحياة، مسؤولو السلامة والحوكمة، ومهندسو تقييم النماذج.",
+          "nextSteps": [
+            "اقرأ قسم الوصول الموثوق والضمانات قبل أي استنتاج عن الإتاحة.",
+            "قارن مستويات القدرة مع بطاقة GPT‑6 Astra الأساسية.",
+            "تابع التحديثات لأن التقييمات وحدود الوصول قد تتغير."
+          ],
+          "limitations": "التقييمات والضوابط معروضة من OpenAI في بطاقة نظامها وليست تدقيقًا مستقلًا؛ الوصول مقيد للمؤسسات المعتمدة، ولا يعني الإعلان إتاحة عامة.",
+          "reviewedAt": "2026-11-03T11:38:31+03:00",
+          "basis": "article",
+          "sources": [
+            {
+              "title": "OpenAI Deployment Safety Hub — GPT-Rosalind-6 System Card Addendum",
+              "url": "https://deploymentsafety.openai.com/gpt-rosalind-6"
+            }
+          ]
+        },
+        "reason": "id_not_in_current_feed",
+        "feedGeneratedAt": "2026-11-03T17:00:40+00:00"
+      },
+      {
+        "id": "0cf35570dae36863c2",
+        "entry": {
+          "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/",
+          "titleAr": "الصين تطرح قيودًا مقترحة على تصدير 23 تقنية ذكاء اصطناعي وتبدأ تسجيلًا مؤقتًا",
+          "summaryAr": "أعلنت وزارتا التجارة والعلوم والتكنولوجيا الصينيتان في 16 أكتوبر 2026 مقترح تعديل قائمة تقنيات التصدير المحظورة أو المقيدة، ضمن 40 تقنية في مجالات متعددة، منها 23 في الذكاء الاصطناعي. تنص الوثيقة على تلقي الملاحظات من 16 أكتوبر إلى 15 نوفمبر، وبالتوازي على تسجيل مسبق مؤقت قبل تصدير التقنيات المحددة إلى حين اعتماد القائمة النهائية.",
+          "whyItMatters": "التمييز بين مسودة القائمة ومتطلب التسجيل المؤقت مهم للشركات والباحثين؛ فالقرار قد يؤثر في نقل النماذج والمعرفة الفنية عبر الحدود. يجب قراءة النص الرسمي لا الاكتفاء بالملخصات الإعلامية.",
+          "audience": "شركات الذكاء الاصطناعي، فرق الامتثال، الباحثون، ومتابعو سياسات التقنية الدولية.",
+          "nextSteps": [
+            "راجع الإعلان الرسمي والملاحق لتحديد نطاق التقنيات بدقة.",
+            "انتبه إلى أن فترة التعليقات تنتهي 15 نوفمبر 2026.",
+            "اطلب استشارة قانونية متخصصة قبل اتخاذ قرار تصدير أو ترخيص."
+          ],
+          "limitations": "المصدر الرسمي يصف المقترح ومتطلبات التسجيل المؤقت؛ لا ينبغي عرض قائمة التقنيات المقترحة كقانون نهائي. تفسير الأثر القانوني على حالة معينة يتطلب مختصًا.",
+          "reviewedAt": "2026-11-03T11:38:31+03:00",
+          "basis": "article",
+          "sources": [
+            {
+              "title": "وزارة التجارة الصينية — الإعلان رقم 48 لعام 2026",
+              "url": "https://www.mofcom.gov.cn/zfxxgk/fdzdgknr/ztfl/blgg/art/2026/art_718071a95e6948cdb652e2f08f422673.html"
+            },
+            {
+              "title": "Cloud Security Alliance — China’s First Frontier AI Export Controls",
+              "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/"
+            }
+          ]
+        },
+        "reason": "id_not_in_current_feed",
+        "feedGeneratedAt": "2026-11-03T17:00:40+00:00"
+      },
+      {
+        "id": "f9c3fac38f3a5cac98",
+        "entry": {
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQZ3VlMEVEN0dGa0NkV1BvcTlkTW1mN1FIWm10NHJWZFBLdEJrSnprLUR3OEVEQkZBRjNObVY0UXBFZHpESEJtOU55LWk1R1lCV2xJWUxJZnBOb0xSbURlNnhGcWcwMk9ZRi15ZkUydWFfUFZ5OFJ5ZHhIcW1BVUVfMTBkUHRQajcyYUpLTjJtWGFLd2h1OFIyWkNQS3ViWTN4XzRkSNIBqgFBVV95cUxPbS1VTmhITTFzbEFpYU5JUHo4dU5sb3lreWhudFhXdGpYb09zeko2bnl5b2J2WTBubkZtaHlnc09FQWVBRFVleGR2cnFQblhZQ3NEeXo2cTJKTVlEMkswTWxkLUNBZHVXOWhsSGJ1T09JSVhtb18tUWVLWVBoRm9xRURqZ194dkp4TnFZQkl4Vi1FQkI5Tkd0UW1vNjZHdUVodlFrQUt0bzR1dw?oc=5",
+          "titleAr": "نقابة الممثلين اليابانية تصدر إرشادات للموافقة وحماية بيانات الصوت المستخدم في الذكاء الاصطناعي",
+          "summaryAr": "أصدرت نقابة الممثلين اليابانية في 15 أكتوبر 2026 إرشادات لاستخدام الذكاء الاصطناعي التوليدي للصوت. تركز الوثيقة على الإشعار والموافقة المحددة قبل مراحل التدريب والتوليد والنشر والاستخدام، والتحكم في البيانات وسجلاتها، وتعويض منفصل عن استخدام الصوت. وتؤكد أولوية الأداء البشري وتضع قيودًا مشددة على إعادة إنتاج أصوات المتوفين. ويذكر تقرير ITmedia أن الإرشادات ليست ملزمة قانونيًا بذاتها في الوقت الحالي.",
+          "whyItMatters": "توضح القضية أن الصوت هوية وأداء مهني، وليس مجرد ملف تدريب. لمطوري TTS والمنتجات الصوتية، توثيق مصدر البيانات والموافقة ونطاق الاستخدام والتعويض عناصر أساسية للثقة والامتثال.",
+          "audience": "مطورو الصوت الاصطناعي وفرق المنتجات الإعلامية والحقوقيون والمهتمون بأخلاقيات الذكاء الاصطناعي.",
+          "nextSteps": [
+            "اقرأ نص الإرشادات الأصلي قبل اعتماد سياسة لاستخدام أصوات المؤدين.",
+            "وثّق الموافقة لكل غرض ومدة ونطاق استخدام، ووفّر آلية واضحة لسحبها وإدارة البيانات."
+          ],
+          "limitations": "الوثيقة إرشادات صادرة عن اتحاد مهني وليست قانونًا نافذًا بذاتها؛ أثرها العملي يعتمد على تبني الجهات والعقود والتشريعات المحلية.",
+          "reviewedAt": "2026-11-03T17:45:42+03:00",
+          "basis": "article",
+          "sources": [
+            {
+              "title": "ITmedia — Japanese Actors Union guidelines for generative AI voice use",
+              "url": "https://www.itmedia.co.jp/aiplus/article/2610/16/2000002320/"
+            },
+            {
+              "title": "Japan Actors Union — Generative AI Voice Use Guidelines (PDF)",
+              "url": "https://www.nippairen.com/wp-content/uploads/2026/10/4822a6ac69f21b4538064352be62abab.pdf"
+            }
+          ]
+        },
+        "reason": "id_not_in_current_feed",
+        "feedGeneratedAt": "2026-11-03T17:00:40+00:00"
+      }
+    ]
+  },
+  "seenOnly": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "label": "NVIDIA OpenShell",
+      "reason": "seen_only; not in current feed/editorial"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "label": "Canva Craft",
+      "reason": "seen_only; not in current feed/editorial"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "label": "1Password agent sign-in",
+      "reason": "seen_only; not in current feed/editorial"
+    },
+    {
+      "id": "87d27a9f8a0972f507",
+      "label": "digital-assets security incident",
+      "reason": "seen_only; not in current feed/editorial"
+    },
+    {
+      "id": "65eeab64fed21e0b54",
+      "label": "GM driver-data privacy settlement",
+      "reason": "seen_only; not in current feed/editorial"
+    },
+    {
+      "id": "d674dea922625d0be8",
+      "label": "Fnac Darty fine",
+      "reason": "seen_only; not in current feed/editorial"
+    },
+    {
+      "id": "967be99077d13f07b2",
+      "label": "JavaScript framework cost comparison",
+      "reason": "seen_only; not in current feed/editorial"
+    }
+  ],
+  "decision": "Do not import pending records until their original id and URL appear in the current feed. Never derive replacement IDs from titles."
+}

@@ -1,0 +1,163 @@
+{
+  "version": 1,
+  "runAt": "2026-11-03T11:38:31+03:00",
+  "mainCommit": "154dd4753029b02ca91b614c1b8ba2adb4d97040",
+  "feedGeneratedAt": "2026-11-03T06:43:54+00:00",
+  "counts": {
+    "incomingFiles": 65,
+    "incomingRows": 606,
+    "structuralEquivalentValidation": {
+      "filesPassed": 65,
+      "recordsChecked": 606,
+      "errors": 0,
+      "officialCliExecuted": false
+    },
+    "exactImportedIdUrlRows": 599,
+    "activeFeedAndEditorialExactRows": 202,
+    "historicalEditorialExactRowsOutsideCurrentFeed": 397,
+    "seenOnlyNotInFeedOrEditorial": 7,
+    "idUrlMismatches": 0,
+    "activeExactButNotImported": 0,
+    "sameUrlDifferentIds": 1,
+    "confirmedExpired": 0,
+    "recordsNeedingCorrection": 0
+  },
+  "unmatched": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "label": "NVIDIA OpenShell",
+      "state": "seen_only_not_in_feed_or_editorial",
+      "note": "له ملف بحث مستقل غير منشور ضمن مراجعة المشاريع الثمانية؛ المستودع الرسمي نشط وترخيصه Apache-2.0."
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "label": "Canva Craft",
+      "state": "seen_only_not_in_feed_or_editorial",
+      "note": "له سجل seen-only فقط؛ إعلان Canva الرسمي يؤكد إطلاق Craft ووجود Public API. لا توجد هوية مشروع GitHub في feed؛ يبقى خارج الاستيراد."
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "label": "1Password agent sign-in",
+      "state": "seen_only_not_in_feed_or_editorial",
+      "note": "له سجل seen-only فقط. بيان الإطلاق يذكر ChatGPT Work/dots كشركاء، لكن صفحة الدعم الحالية لا تسردهما ضمن التطبيقات المدعومة؛ لا تنشأ هوية بديلة ويُسجل توفر التكامل على أنه متفاوت/غير مؤكد لكل حساب."
+    },
+    {
+      "id": "87d27a9f8a0972f507",
+      "label": "خبر حادث أمني في منصة أصول رقمية",
+      "state": "seen_only_not_in_feed_or_editorial",
+      "note": "خارج التغذية الحالية؛ لا يُعاد إدخاله أو إعادة تعريف هويته."
+    },
+    {
+      "id": "65eeab64fed21e0b54",
+      "label": "تسوية خصوصية بيانات قيادة السيارات",
+      "state": "seen_only_not_in_feed_or_editorial",
+      "note": "خارج التغذية الحالية؛ المصدر التنظيمي الأصلي محفوظ في السجل."
+    },
+    {
+      "id": "d674dea922625d0be8",
+      "label": "غرامة CNIL على Fnac Darty",
+      "state": "seen_only_not_in_feed_or_editorial",
+      "note": "سجل في دفعة 2 نوفمبر لكنه غير موجود في feed الحالي؛ لا يُستورد."
+    },
+    {
+      "id": "967be99077d13f07b2",
+      "label": "مقارنة تكلفة بناء تطبيق عبر أطر JavaScript",
+      "state": "seen_only_not_in_feed_or_editorial",
+      "note": "سجل في دفعة 2 نوفمبر لكنه غير موجود في feed الحالي؛ لا يُستورد."
+    }
+  ],
+  "collision": {
+    "incomingId": "7a99eca9b2ce14d9f5",
+    "feedId": "e0cbbf211a55e79f34",
+    "url": "https://github.com/rasbt/LLMs-from-scratch",
+    "state": "same_url_two_ids_both_have_editorial_records_no_remap"
+  },
+  "specialChecks": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "name": "NVIDIA OpenShell",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "researchOnlyDossier": true,
+      "officialStatus": "المستودع الرسمي غير مؤرشف وغير معطل؛ ترخيص Apache-2.0؛ README يصف العزل عبر sandbox وسياسات ملفات/شبكة والتحقق الرسمي. وثائق v0.1.6: Linux amd64/arm64 وmacOS Apple Silicon مدعومة، وWindows WSL2 تجريبي.",
+      "metrics": {
+        "stars": 21010,
+        "forks": 2056,
+        "openIssues": 604,
+        "pushedAt": "2026-11-03T06:55:07Z",
+        "measuredAt": "2026-11-03T12:06:34+03:00"
+      },
+      "sources": [
+        {
+          "title": "NVIDIA OpenShell repository",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        },
+        {
+          "title": "NVIDIA OpenShell LICENSE",
+          "url": "https://github.com/NVIDIA/OpenShell/blob/main/LICENSE"
+        },
+        {
+          "title": "OpenShell v0.1.6 Support Matrix",
+          "url": "https://docs.nvidia.com/openshell/v0.1.6/about/support-matrix"
+        }
+      ]
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "name": "Canva Craft",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "officialStatus": "صفحة Canva الرسمية تعلن Craft كنموذج صور أولي من Canva Research، متاحًا عالميًا داخل Canva وعبر Public API، حتى 2K وأكثر من 30 نسبة أبعاد. ترتيب DesignArena وأرقام الأداء ادعاءات Canva وليست قياسًا مستقلًا. لا يوجد عنصر مشروع GitHub مطابق في feed.",
+      "sources": [
+        {
+          "title": "Canva — Introducing Canva Craft",
+          "url": "https://www.canva.com/newsroom/news/canva-craft/"
+        },
+        {
+          "title": "Canva — Developer Platform API update",
+          "url": "https://www.canva.com/newsroom/news/new-apis-data-connectors/"
+        }
+      ]
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "name": "1Password for Agents",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "officialStatus": "بيان 1Password الرسمي يذكر ChatGPT Work وdots ضمن تكاملات الشركاء ويشرح موافقة المستخدم على جهازه وعدم كشف كلمة المرور للنموذج. لكن صفحة الدعم الحالية تسرد Grok Bot وInstinct وMuse وTown كالتطبيقات المدعومة ولا تسرد ChatGPT Work/dots؛ لذلك لا يُفترض أن التكامل متاح لكل حساب أو منطقة. الخدمة اختيارية، وتتطلب حساب Individual/Family وتطبيق 1Password 8.12.42+؛ الموافقة قد تستمر حتى 30 يومًا.",
+      "sources": [
+        {
+          "title": "1Password — Launch announcement",
+          "url": "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents"
+        },
+        {
+          "title": "1Password Support — Supported agents and setup",
+          "url": "https://support.1password.com/1password-for-agents/"
+        },
+        {
+          "title": "1Password — Agent integrations",
+          "url": "https://1password.com/personal-ai-agent-integrations"
+        }
+      ]
+    }
+  ],
+  "currentSnapshot": {
+    "feedItems": 800,
+    "editorialItems": 639,
+    "seenIds": 2674,
+    "seenTitles": 2527,
+    "status": "partial",
+    "statusErrors": [
+      "البوابة العربية للأخبار التقنية: HTTP 403",
+      "عالم التقنية: HTTP 526"
+    ],
+    "emptySources": [
+      "أبحاث تعلّم الآلة: 0 items"
+    ]
+  },
+  "importDecision": "No backlog import: every active exact id+url pair already exists in editorial; seven seen-only records remain unimported because they are absent from current feed.",
+  "verifiedAt": "2026-11-03T12:06:34+03:00"
+}

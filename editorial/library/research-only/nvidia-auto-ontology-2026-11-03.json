@@ -1,0 +1,271 @@
+{
+  "version": 1,
+  "type": "project-dossier",
+  "publicationStatus": "research-only",
+  "published": false,
+  "siteVisible": false,
+  "name": "NVIDIA Auto Ontology",
+  "repository": "NVIDIA/auto-ontology",
+  "url": "https://github.com/NVIDIA/auto-ontology",
+  "relatedFeedItem": {
+    "id": "834f867a452076917a",
+    "kind": "news",
+    "url": "https://github.com/NVIDIA/auto-ontology",
+    "note": "Related feed record is kind=news, not kind=project; this dossier is research-only, not a public project card."
+  },
+  "reviewedAt": "2026-11-03T20:39:34+03:00",
+  "metricsMeasuredAt": "2026-11-03T20:39:34+03:00",
+  "overview": "إطار مفتوح من NVIDIA لبناء طبقة دلالية ورسوم معرفية فوق بيانات المؤسسات. يربط تعريفات المقاييس والكيانات بمصادرها، ويولّد استعلامات SQL بلغة طبيعية مع إمكانية إظهار النسب إلى المصدر، ثم يعرّض السياق للوكلاء عبر MCP وCLI وAPI. يتكامل مع النماذج التي يملكها المستخدم ولا يُعد بديلًا تلقائيًا عن مستودع البيانات أو طبقة الحوكمة القائمة.",
+  "requirements": "الترخيص الأساسي Apache-2.0. يتطلب الخادم Python >=3.12 و<3.14 وفق pyproject.toml، كما يتضمن واجهة Next.js 16 وReact 19 وTypeScript. النشر المحلي يتطلب Docker مع Docker Compose v2، وPostgreSQL مع pgvector، واتصالًا بمصدر بيانات مثل PostgreSQL أو Databricks أو Snowflake أو DuckDB، ومفتاح NVIDIA NIM للواجهات المستضافة أو نقطة نهاية NIM مستضافة ذاتيًا. HashiCorp Vault اختياري لحفظ بيانات الاتصال. يلزم ضبط AUTH_SECRET وAPP_URL وبيانات PostgreSQL وDEFAULT_MODELS_API_KEY وCONNECTION_STRINGS.",
+  "quickStart": "1) استنسخ https://github.com/NVIDIA/auto-ontology. 2) انسخ .env.example إلى .env. 3) اضبط AUTH_SECRET وAPP_URL وبيانات PostgreSQL ومفتاح NIM واتصالات قواعد البيانات. 4) شغّل docker compose up -d --build. 5) افتح الواجهة على http://localhost:3000؛ الواجهة الخلفية على :3001 وpgAdmin على :5050. هذه خطوات موثقة وليست تجربة تشغيل منفذة في هذه الدورة.",
+  "costs": "الشيفرة الأساسية Apache-2.0 ومفتوحة المصدر؛ لا توجد تكلفة ترخيص للمستودع نفسه. التكلفة الفعلية تعتمد على استخدام واجهات NVIDIA NIM أو تشغيل النماذج ذاتيًا، وأجهزة GPU، وقاعدة البيانات والتخزين، وخدمات Kubernetes إن استُخدمت. لم أجد تسعيرًا موحدًا داخل المستودع؛ يجب حساب التكلفة من مزود الاستدلال والبنية المختارة.",
+  "localCloud": "محليًا: Docker Compose يشغّل PostgreSQL/pgvector وpgAdmin والخادم وخدمة ingestion والواجهة. سحابيًا: Helm chart وصور منشورة في NVIDIA NGC على Kubernetes. يمكن توجيه الاستدلال إلى NVIDIA API catalog أو NIM مستضاف ذاتيًا. خادم MCP منفصل يتصل بواجهة Auto Ontology المنشورة عبر HTTPS ولا يحتفظ ببيانات اعتماد قاعدة البيانات أو إعدادات النموذج الخاصة به.",
+  "alternatives": [
+    {
+      "name": "LangGraph",
+      "scope": "تنسيق الوكلاء والحالات؛ ليس بديلًا مباشرًا عن كتالوج دلالي.",
+      "url": "https://docs.langchain.com/oss/python/langgraph/overview"
+    },
+    {
+      "name": "LlamaIndex",
+      "scope": "فهرسة واسترجاع وربط بيانات؛ يتقاطع في grounding وRAG لكنه لا يطابق جميع وظائف المشروع.",
+      "url": "https://docs.llamaindex.ai/en/stable/"
+    },
+    {
+      "name": "dbt Semantic Layer",
+      "scope": "تعريف مركزي للمقاييس ونماذج الأعمال.",
+      "url": "https://docs.getdbt.com/docs/use-dbt-semantic-layer/dbt-sl"
+    },
+    {
+      "name": "Cube",
+      "scope": "طبقة دلالية وواجهات تحليلية.",
+      "url": "https://cube.dev/docs/product/introduction"
+    }
+  ],
+  "improvements": [
+    {
+      "title": "حزمة تقييم عربية لتعريفات المقاييس وText-to-SQL",
+      "problem": "لا تظهر في الوثائق التي راجعتها مجموعة تقييم عربية جاهزة تقيس اختلاف أسماء المقاييس والمرادفات والسياق المؤسسي.",
+      "approach": "إنشاء مجموعة بيانات اصطناعية مرخصة من مخططات وقواميس عربية، مع أسئلة معيارية وإجابات SQL معتمدة ومراجعة بشرية.",
+      "stack": "Python 3.12, PostgreSQL, pgvector, pytest, Arabic normalization",
+      "steps": [
+        "اختر مخططًا اصطناعيًا صغيرًا للمبيعات والمخزون.",
+        "أنشئ قاموسًا عربيًا للمقاييس والكيانات والمرادفات.",
+        "اكتب أسئلة عربية ولهجات شائعة مرتبطة بكل تعريف.",
+        "اربط كل سؤال باستعلام SQL معتمد وسبب اختيار المقياس.",
+        "شغّل التقييم على الاستعلامات الناتجة وقارن النتائج والصفوف.",
+        "وثّق الأخطاء بحسب الغموض والترجمة والربط الدلالي."
+      ],
+      "metric": "نسبة تطابق النتائج المنفذة مع الاستعلامات المرجعية، مع قياس أخطاء اختيار المقياس.",
+      "difficulty": "متوسط إلى مرتفع (تقدير)",
+      "risks": "قد تعكس البيانات الاصطناعية نطاقًا ضيقًا؛ لا تستخدم بيانات مؤسسية حقيقية أو أسرارًا.",
+      "sources": [
+        {
+          "title": "NVIDIA Auto Ontology README",
+          "url": "https://github.com/NVIDIA/auto-ontology"
+        },
+        {
+          "title": "NVIDIA Auto Ontology deployment guide",
+          "url": "https://github.com/NVIDIA/auto-ontology/blob/main/DEPLOYMENT.md"
+        }
+      ]
+    },
+    {
+      "title": "لوحة تدقيق لنسب SQL إلى المصدر",
+      "problem": "قد يحصل المستخدم على إجابة صحيحة ظاهريًا دون فهم مصدر كل عمود أو تعريف أو تحويل.",
+      "approach": "عرض مسار الاستدلال من السؤال إلى المقياس المعتمد ثم SQL والجدول والعمود، مع سجل مراجعة للتغييرات.",
+      "stack": "FastAPI, PostgreSQL, Next.js, OpenTelemetry, SQL parser",
+      "steps": [
+        "حدد مخططًا موحدًا لعناصر provenance.",
+        "اربط كل تعريف دلالي بمصدره وإصدار التعريف.",
+        "سجّل SQL الناتج والتحويلات دون تخزين بيانات حساسة.",
+        "اعرض المصدر والمالك وتاريخ آخر اعتماد.",
+        "أضف اختبارًا يمنع الإجابات التي تفتقد provenance.",
+        "قِس نسبة الإجابات التي يمكن تتبعها حتى المصدر."
+      ],
+      "metric": "نسبة الإجابات التي تحتوي سلسلة نسب كاملة وقابلة للمراجعة.",
+      "difficulty": "مرتفع (تقدير)",
+      "risks": "تخزين الاستعلامات قد يكشف أسماء جداول أو معلومات داخلية؛ يلزم التحكم في الوصول والاحتفاظ.",
+      "sources": [
+        {
+          "title": "NVIDIA Auto Ontology README",
+          "url": "https://github.com/NVIDIA/auto-ontology"
+        },
+        {
+          "title": "NVIDIA Auto Ontology deployment guide",
+          "url": "https://github.com/NVIDIA/auto-ontology/blob/main/DEPLOYMENT.md"
+        }
+      ]
+    },
+    {
+      "title": "ميزانية تكلفة وحدود تشغيل لنقاط NIM",
+      "problem": "استخدام LLM والتضمين وإعادة الترتيب قد يرفع التكلفة دون ظهور واضح للمستخدم أو مسؤول النظام.",
+      "approach": "إضافة ميزانية لكل مهمة وقياس الطلبات والرموز وزمن الاستجابة مع حدود قابلة للضبط واختيار نموذج بديل عند تجاوز الحد.",
+      "stack": "Python, FastAPI, Prometheus, PostgreSQL, NVIDIA NIM endpoints",
+      "steps": [
+        "حدد نقاط القياس لكل دور نموذج.",
+        "سجّل الاستهلاك والزمن والتكلفة المقدرة بحسب مزود الخدمة.",
+        "أضف سقفًا يوميًا لكل مساحة عمل.",
+        "وفّر وضعًا تجريبيًا يستخدم بيانات اصطناعية.",
+        "اختبر سلوك الإيقاف عند تجاوز الميزانية.",
+        "اعرض تقريرًا يقارن الاستدلال المستضاف والمحلي."
+      ],
+      "metric": "تكلفة كل إجابة صحيحة أو استعلام ناجح، مع عدد مرات تجاوز السقف.",
+      "difficulty": "متوسط (تقدير)",
+      "risks": "قد تختلف أسعار المزودين وتتغير؛ يجب وصف القيم كتقديرات لا فواتير نهائية.",
+      "sources": [
+        {
+          "title": "NVIDIA Auto Ontology README",
+          "url": "https://github.com/NVIDIA/auto-ontology"
+        },
+        {
+          "title": "NVIDIA Auto Ontology deployment guide",
+          "url": "https://github.com/NVIDIA/auto-ontology/blob/main/DEPLOYMENT.md"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "قاموس مؤشرات عربي للشركات الصغيرة",
+      "problem": "تختلف تسمية مؤشرات المبيعات والمخزون بين الأنظمة والموظفين.",
+      "approach": "بناء طبقة دلالية عربية تربط أسماء المؤشرات والمرادفات بالاستعلامات والمصادر.",
+      "stack": "Python, PostgreSQL, pgvector, Auto Ontology, Arabic normalization",
+      "steps": [
+        "اجمع مخططًا تجريبيًا غير حساس.",
+        "عرّف 20 مؤشرًا تجاريًا مع مالك وتعريف.",
+        "أضف مرادفات عربية وإنجليزية.",
+        "اربط كل مؤشر باستعلام مرجعي.",
+        "اختبر الأسئلة العربية على بيانات اصطناعية."
+      ],
+      "metric": "نسبة الأسئلة التي تصل إلى المقياس الصحيح دون تدخل.",
+      "difficulty": "متوسط (تقدير)",
+      "risks": "اختلاف تعريف المؤشر بين الشركات؛ يلزم توثيق مصدر التعريف.",
+      "sources": [
+        {
+          "title": "NVIDIA Auto Ontology README",
+          "url": "https://github.com/NVIDIA/auto-ontology"
+        },
+        {
+          "title": "NVIDIA Auto Ontology deployment guide",
+          "url": "https://github.com/NVIDIA/auto-ontology/blob/main/DEPLOYMENT.md"
+        }
+      ]
+    },
+    {
+      "title": "مساعد محلي لاستكشاف مجموعات البيانات الجامعية",
+      "problem": "يحتاج الطلاب إلى فهم الجداول والعلاقات قبل تحليل قواعد البيانات.",
+      "approach": "نشر محلي على DuckDB/Postgres مع قاموس أعمدة وأسئلة طبيعية لا تتصل ببيانات خارجية.",
+      "stack": "DuckDB, PostgreSQL, Python, MCP, Auto Ontology",
+      "steps": [
+        "اختر مجموعة بيانات تعليمية مرخصة.",
+        "أنشئ قاموسًا للأعمدة والعلاقات.",
+        "شغّل الخدمة محليًا على Docker Compose.",
+        "اربط عميل MCP للقراءة فقط.",
+        "قارن الإجابات باستعلامات SQL مرجعية."
+      ],
+      "metric": "دقة الإجابات ونسبة الأسئلة التي يمكن تتبعها إلى العمود المصدر.",
+      "difficulty": "متوسط (تقدير)",
+      "risks": "قد تحتوي مجموعات البيانات على معلومات شخصية؛ استخدم بيانات عامة أو اصطناعية.",
+      "sources": [
+        {
+          "title": "NVIDIA Auto Ontology README",
+          "url": "https://github.com/NVIDIA/auto-ontology"
+        },
+        {
+          "title": "NVIDIA Auto Ontology deployment guide",
+          "url": "https://github.com/NVIDIA/auto-ontology/blob/main/DEPLOYMENT.md"
+        }
+      ]
+    },
+    {
+      "title": "بوابة تحقق قبل تنفيذ SQL المولّد",
+      "problem": "قد ينتج الوكيل استعلامًا مكلفًا أو خارج نطاق صلاحياته حتى لو بدا صحيحًا.",
+      "approach": "إضافة فحص للقراءة فقط، وحدود الصفوف والزمن، والتحقق من الجداول والأعمدة المسموح بها قبل التنفيذ.",
+      "stack": "Python, SQLGlot, PostgreSQL roles, FastAPI, pytest",
+      "steps": [
+        "حدد قائمة الجداول والأعمدة المسموحة.",
+        "حلل SQL قبل التنفيذ.",
+        "ارفض أوامر التعديل والعبارات غير المعروفة.",
+        "ضع حدًا للصفوف والزمن.",
+        "نفّذ على حساب قراءة فقط.",
+        "سجّل أسباب الرفض وقِسها."
+      ],
+      "metric": "نسبة الاستعلامات غير الآمنة أو خارج النطاق التي تُمنع قبل التنفيذ.",
+      "difficulty": "مرتفع (تقدير)",
+      "risks": "التحقق السطحي قد يفوّت استعلامات ملتفة؛ يلزم اختبار أمني ومراجعة خبراء قواعد البيانات.",
+      "sources": [
+        {
+          "title": "NVIDIA Auto Ontology README",
+          "url": "https://github.com/NVIDIA/auto-ontology"
+        },
+        {
+          "title": "NVIDIA Auto Ontology deployment guide",
+          "url": "https://github.com/NVIDIA/auto-ontology/blob/main/DEPLOYMENT.md"
+        }
+      ]
+    }
+  ],
+  "religious": [],
+  "sources": [
+    {
+      "title": "NVIDIA Auto Ontology repository and README",
+      "url": "https://github.com/NVIDIA/auto-ontology"
+    },
+    {
+      "title": "Apache-2.0 LICENSE",
+      "url": "https://github.com/NVIDIA/auto-ontology/blob/main/LICENSE"
+    },
+    {
+      "title": "Python dependencies",
+      "url": "https://github.com/NVIDIA/auto-ontology/blob/main/pyproject.toml"
+    },
+    {
+      "title": "Deployment guide",
+      "url": "https://github.com/NVIDIA/auto-ontology/blob/main/DEPLOYMENT.md"
+    },
+    {
+      "title": "Docker Compose stack",
+      "url": "https://github.com/NVIDIA/auto-ontology/blob/main/docker-compose.yml"
+    },
+    {
+      "title": "MCP server documentation",
+      "url": "https://github.com/NVIDIA/auto-ontology/blob/main/docs/mcp.md"
+    },
+    {
+      "title": "Third-party notices",
+      "url": "https://github.com/NVIDIA/auto-ontology/blob/main/THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "title": "LangGraph overview",
+      "url": "https://docs.langchain.com/oss/python/langgraph/overview"
+    },
+    {
+      "title": "LlamaIndex documentation",
+      "url": "https://docs.llamaindex.ai/en/stable/"
+    },
+    {
+      "title": "dbt Semantic Layer documentation",
+      "url": "https://docs.getdbt.com/docs/use-dbt-semantic-layer/dbt-sl"
+    },
+    {
+      "title": "Cube documentation",
+      "url": "https://cube.dev/docs/product/introduction"
+    }
+  ],
+  "metrics": {
+    "starsDisplay": "2.0k",
+    "starsApproximate": true,
+    "forks": 149,
+    "openIssues": 22,
+    "openPullRequestsObserved": "10–11 بحسب صفحتي GitHub اللتين ظهرتا أثناء القياس",
+    "commits": 1354,
+    "defaultBranch": "main",
+    "archived": false,
+    "license": "Apache-2.0",
+    "pushedAt": "not verified",
+    "measuredAt": "2026-11-03T20:39:34+03:00"
+  },
+  "executionStatus": "not_run",
+  "testEvidence": "لم يتم تشغيل Auto Ontology أو تنفيذ اختبارات المستودع؛ تمت مراجعة README وpyproject.toml وLICENSE وDEPLOYMENT.md وdocker-compose.yml وdocs/mcp.md وTHIRD_PARTY_NOTICES فقط."
+}
