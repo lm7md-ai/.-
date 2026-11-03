@@ -1,0 +1,439 @@
+{
+  "version": 1,
+  "type": "research_only_project_dossiers",
+  "publicationStatus": "unpublished_research_only",
+  "published": false,
+  "siteVisible": false,
+  "reviewedAt": "2026-11-02T20:45:00Z",
+  "metricsMeasuredAt": "2026-11-02T20:47:39Z",
+  "projects": [
+    {
+      "repository": "deepseek-ai/dsh-superagent-prototype",
+      "name": "DeepSeek Super-Agent Prototype",
+      "feedId": null,
+      "publicationStatus": "unpublished_research_only_not_in_project_feed",
+      "siteVisible": false,
+      "basis": "readme",
+      "reviewedAt": "2026-11-02T20:45:00Z",
+      "license": "MIT وفق LICENSE وpackage.json؛ README يصف المشروع بأنه نموذج بحثي مرجعي لا منتج جاهز.",
+      "activity": {
+        "stars": 12817,
+        "forks": 1329,
+        "openIssues": 0,
+        "lastPushedAt": "2026-10-31T12:05:51Z",
+        "measuredAt": "2026-11-02T20:47:39Z",
+        "archived": false
+      },
+      "overview": "حزمة بحثية لوكيل يتابع مستودع GitHub، ويحوّل الطلبات المصرح بها إلى مهام وجلسات عمل منفصلة ثم يعيد النتائج إلى المحادثة. تعتمد على DeepSeek Harness كبيئة مضيفة، ويمكن أن تتصل بقنوات محادثة إضافية. README يحذر صراحة من اعتبارها منتجًا إنتاجيًا أو نسخة مطابقة لكل التصميم الداخلي.",
+      "requirements": "Node.js 22.19+ أو 24، pnpm 11.7، Git 2.32+، Python 3.8+، tmux، GitHub CLI 2.48+، إصدار DeepSeek Harness المتوافق، وحساب GitHub منفصل للمراجعة. تكامل Feishu اختياري. يحتاج مزود نموذج أو endpoint متوافق؛ لا توجد كلفة ثابتة معلنة من المستودع.",
+      "quickStart": "للمراجعة فقط: اقرأ README وSETUP وملفات authorization وexecution وdeployment، ثم قيّم المشروع في بيئة اختبار معزولة وحساب تجريبي ومستودع غير مهم. ابدأ بالمراقبة فقط، واستخدم أقل صلاحيات ممكنة، ولا تفعّل الدمج التلقائي أو تربط أسرارًا شخصية.",
+      "costs": "لا توجد رسوم ترخيص للمصدر MIT؛ قد توجد تكاليف لمزود النموذج والحوسبة والخادم وFeishu إن استُخدم. لا يعلن المستودع عن خدمة سحابية مُدارة أو أسعار ثابتة.",
+      "localCloud": "التصميم موصوف كتطبيق محلي على المضيف ولوحة محلية، وليس SaaS. يمكن استضافة المضيف ذاتيًا على آلة منفصلة، لكن الوثائق لا تقدم خدمة سحابية جاهزة. لا يُنصح بتشغيل preset واسع الصلاحيات على جهاز شخصي.",
+      "alternatives": [
+        "DeepSeek Harness هو runtime المضيف المطلوب وليس بديلًا مباشرًا.",
+        "OpenHands وDeerFlow منصات أوسع لوكلاء البرمجة وسير العمل، لكنها ليست بدائل مطابقة لآلية GitHub ticket orchestration هنا."
+      ],
+      "limitations": "نموذج بحثي لا منتج إنتاجي. توثيق التنفيذ يصف presets بصلاحيات danger-full-access في بعض المسارات، ويمكن للعامل الوصول إلى ملفات حساب التشغيل؛ لذا لا يمثل worktree وحده حدًا أمنيًا. لا توجد نتائج اختبار من هذه الجولة، ولا تسعير رسمي لخدمات النماذج أو الاستضافة.",
+      "sources": [
+        {
+          "title": "المستودع الرسمي",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype"
+        },
+        {
+          "title": "README",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/README.md"
+        },
+        {
+          "title": "دليل الإعداد",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/SETUP.md"
+        },
+        {
+          "title": "دليل التفويض والصلاحيات",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/002-authorization.md"
+        },
+        {
+          "title": "دليل التنفيذ",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/003-execution.md"
+        },
+        {
+          "title": "دليل النشر",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/006-deployment.md"
+        },
+        {
+          "title": "LICENSE",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/LICENSE"
+        },
+        {
+          "title": "package.json",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/package.json"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "عزل عامل التنفيذ بأقل صلاحيات",
+          "problem": "بعض presets موصوفة بصلاحيات واسعة ويمكن أن تصل إلى ملفات حساب التشغيل.",
+          "approach": "تشغيل العامل بحساب منفصل وcontainer policy deny-by-default مع موافقة بشرية للكتابة والشبكة.",
+          "stack": "TypeScript + Docker/Podman + Git worktrees + policy rules",
+          "steps": [
+            "حصر الملفات والوجهات التي يحتاجها كل نوع مهمة.",
+            "تعريف حساب تشغيل منفصل بلا أسرار شخصية.",
+            "تطبيق عزل الملفات والشبكة افتراضيًا.",
+            "اختبار محاولات الخروج من النطاق قبل أي تجربة حقيقية."
+          ],
+          "metric": "صفر عمليات وصول غير مصرح بها في مجموعة اختبارات سلبية.",
+          "difficulty": "مرتفع (تقدير: 1–2 أسبوع)",
+          "risks": "سوء إعداد العزل قد يترك صلاحيات غير متوقعة؛ يجب تدقيقه مستقلًا.",
+          "sources": [
+            {
+              "title": "دليل التفويض",
+              "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/002-authorization.md"
+            },
+            {
+              "title": "دليل التنفيذ",
+              "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/003-execution.md"
+            }
+          ]
+        },
+        {
+          "title": "سجل أحداث قابل لإعادة التشغيل",
+          "problem": "قد يصعب تتبع سبب تكرار مهمة أو تغيير حالتها عند إعادة المحاولة.",
+          "approach": "إضافة event log بمعرفات ثابتة وحالة قبل/بعد وقرار السياسة ونتيجة كل خطوة مع تنقيح الأسرار.",
+          "stack": "TypeScript + SQLite + JSONL + Vitest",
+          "steps": [
+            "تعريف مخطط أحداث موحد.",
+            "إضافة trace ID لكل مهمة وجلسة.",
+            "حفظ قرارات السياسة والتحولات مع تنقيح الأسرار.",
+            "إنشاء اختبارات replay لحالات الفشل وإعادة المحاولة."
+          ],
+          "metric": "نسبة انتقالات الحالة التي يمكن إعادة بنائها بالكامل.",
+          "difficulty": "متوسط إلى مرتفع (تقدير: 1 أسبوع)",
+          "risks": "قد تحتوي السجلات على بيانات حساسة إذا لم تُنقح.",
+          "sources": [
+            {
+              "title": "دليل المعمارية",
+              "url": "https://github.com/deepseek-ai/dsh-superagent-prototype"
+            },
+            {
+              "title": "دليل التنفيذ",
+              "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/003-execution.md"
+            }
+          ]
+        },
+        {
+          "title": "حزمة اختبارات لقبول طلبات GitHub",
+          "problem": "قد تسمح قواعد قبول الطلبات بمسارات غير مقصودة أو ترفض طلبات سليمة.",
+          "approach": "إنشاء fixtures لأحداث GitHub واختبارات سياسة تغطي المرسل والمستودع والموضوع وإعادة المحاولة.",
+          "stack": "TypeScript + Vitest + GitHub event fixtures",
+          "steps": [
+            "تعريف مصفوفة للطلبات المسموحة والمرفوضة.",
+            "إنشاء أحداث اصطناعية تغطي الحالات الحدية.",
+            "اختبار أن الرفض لا ينشئ جلسة تنفيذ.",
+            "نشر تقرير تغطية لقرارات السياسة."
+          ],
+          "metric": "تغطية 100% للحالات المحددة في مصفوفة السياسة.",
+          "difficulty": "متوسط (تقدير: 4–6 أيام)",
+          "risks": "قد تختلف fixtures عن سلوك GitHub الفعلي بعد تحديثات API.",
+          "sources": [
+            {
+              "title": "دليل التفويض",
+              "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/002-authorization.md"
+            },
+            {
+              "title": "README",
+              "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/README.md"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مساعد فرز Issues للقراءة فقط",
+          "problem": "تحتاج الفرق إلى تلخيص وفرز الطلبات دون منح الوكيل حق تعديل الشيفرة.",
+          "approach": "نسخة تقرأ Issues وتلخصها وتصنفها وتقترح ردًا، مع منع الكتابة أو إنشاء PR.",
+          "stack": "TypeScript + GitHub API read-only + SQLite",
+          "steps": [
+            "حصر صلاحيات التطبيق في القراءة.",
+            "تعريف تصنيفات وملخصات ثابتة.",
+            "تسجيل المصدر والروابط لكل استنتاج.",
+            "مراجعة بشرية قبل نشر أي رد."
+          ],
+          "metric": "دقة التصنيف وزمن الفرز دون أي عمليات كتابة.",
+          "difficulty": "متوسط (تقدير: أسبوع)",
+          "risks": "قد يسيء التصنيف أو يكشف بيانات خاصة بالمستودع.",
+          "sources": [
+            {
+              "title": "المستودع",
+              "url": "https://github.com/deepseek-ai/dsh-superagent-prototype"
+            },
+            {
+              "title": "دليل التفويض",
+              "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/002-authorization.md"
+            }
+          ]
+        },
+        {
+          "title": "مراجع Pull Requests يكتب مسودات فقط",
+          "problem": "قد يضيع وقت المراجعين في تلخيص الفروقات واكتشاف الاختبارات ذات الصلة.",
+          "approach": "وكيل يقرأ diff ونتائج CI ويعد ملاحظات قابلة للمراجعة دون دفع commits أو الدمج.",
+          "stack": "TypeScript + GitHub API + AST parser + CI artifacts",
+          "steps": [
+            "قراءة diff وملفات الاختبار فقط.",
+            "ربط الملاحظات بأسطر محددة.",
+            "إنتاج مسودة review comments محلية.",
+            "اشتراط موافقة بشرية قبل الإرسال."
+          ],
+          "metric": "نسبة الملاحظات المدعومة بدليل من diff أو الاختبارات.",
+          "difficulty": "متوسط إلى مرتفع (تقدير: 1 أسبوع)",
+          "risks": "الإنذارات الكاذبة قد تزعج المراجعين.",
+          "sources": [
+            {
+              "title": "المستودع",
+              "url": "https://github.com/deepseek-ai/dsh-superagent-prototype"
+            },
+            {
+              "title": "دليل النشر",
+              "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/006-deployment.md"
+            }
+          ]
+        },
+        {
+          "title": "مساعد شرح مستودعات للطلاب دون كتابة",
+          "problem": "يصعب على الطالب فهم بنية مشروع كبير دون أن يغيره الوكيل بالخطأ.",
+          "approach": "مساعد يشرح الملفات ومسارات التنفيذ ويقترح أسئلة متابعة مع وضع قراءة فقط.",
+          "stack": "Python/TypeScript + GitHub API read-only + local embeddings",
+          "steps": [
+            "اختيار مستودعات تعليمية عامة.",
+            "فهرسة README والبنية والملفات المرجعية.",
+            "ربط كل شرح بمسار ملف وسطر.",
+            "منع أدوات الكتابة والتنفيذ في النسخة التعليمية."
+          ],
+          "metric": "نسبة الشروحات التي تشير إلى ملفات صحيحة ومراجعة بشرية.",
+          "difficulty": "متوسط (تقدير: أسبوع)",
+          "risks": "قد تصبح الفهرسة قديمة بعد تحديث المستودع.",
+          "sources": [
+            {
+              "title": "README",
+              "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/README.md"
+            },
+            {
+              "title": "دليل التفويض",
+              "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/002-authorization.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "D2I-Group/TSFLab",
+      "name": "TSFLab",
+      "feedId": null,
+      "publicationStatus": "unpublished_research_only_not_in_project_feed",
+      "siteVisible": false,
+      "basis": "readme",
+      "reviewedAt": "2026-11-02T20:45:00Z",
+      "license": "ملف LICENSE نصه MIT؛ واجهة GitHub API أعادت NOASSERTION وقت القياس، لذا يلزم توثيق اختلاف الكشف.",
+      "activity": {
+        "stars": 65,
+        "forks": 8,
+        "openIssues": 0,
+        "lastPushedAt": "2026-11-02T05:08:15Z",
+        "measuredAt": "2026-11-02T20:47:39Z",
+        "archived": false
+      },
+      "overview": "بيئة عمل بحثية للتنبؤ بالسلاسل الزمنية تجمع فهرس المناهج والبيانات والوحدات ومشغل تجارب موحدًا، وتهدف إلى جعل وكلاء البرمجة قادرين على إعادة تشغيل التجارب وتوثيقها بدل كتابة خطوط أنابيب مختلفة كل مرة.",
+      "requirements": "Python >=3.12، uv، PyTorch 2.14.1 وفق pyproject، واعتمادات اختيارية للبيانات والنماذج والتجارب. يمكن استخدام CPU للتجارب الصغيرة، بينما تتطلب التجارب الأكبر GPU أو موارد حوسبة. وكيل البرمجة ومزود النموذج ليسا خدمة مضمّنة في المستودع.",
+      "quickStart": "اقرأ README ودليل التشغيل، جهّز بيئة Python 3.12 عبر uv مع الإضافات اللازمة، اعرض الفهرس بأمر tsf catalog، ثم نفّذ run_single_data.toml بوضع dry-run. ابدأ ببيانات عامة صغيرة مثل ETTh1 أو Weather، وثبّت seed وsplit والمقياس قبل المقارنة.",
+      "costs": "المصدر MIT ولا توجد رسوم ترخيص؛ تكلفة GPU أو الحوسبة السحابية منفصلة، وأي استخدام لوكيل برمجة يعتمد على سعر مزوده. لا يقدم المشروع خدمة SaaS مستضافة.",
+      "localCloud": "يعمل محليًا على CPU/GPU ويمكن ربطه بعناقيد بحثية أو SLURM وفق إعدادات المستخدم؛ يتضمن مسارات للتعامل مع Hub، لكنه لا يوفر منصة تشغيل سحابية مُدارة.",
+      "alternatives": [
+        "Time-Series-Library (TSLib) لمكتبة تجارب تنبؤ بالسلاسل الزمنية.",
+        "Time Series Forecasting Benchmark (TFB) لمقارنة النماذج والبروتوكولات."
+      ],
+      "limitations": "الورقة preprint والنتائج المنشورة تجارب المؤلفين لا إعادة إنتاج مستقلة. النطاق هو التنبؤ بالسلاسل الزمنية، ولا يثبت أن وكيلًا يضمن نتائج أفضل أو أقل تكلفة في كل مهمة. تراخيص مجموعات البيانات والنماذج upstream يجب فحصها منفردة.",
+      "sources": [
+        {
+          "title": "المستودع الرسمي",
+          "url": "https://github.com/D2I-Group/TSFLab"
+        },
+        {
+          "title": "README",
+          "url": "https://github.com/D2I-Group/TSFLab/blob/main/README.md"
+        },
+        {
+          "title": "دليل الاستخدام",
+          "url": "https://github.com/D2I-Group/TSFLab/tree/main/docs/en"
+        },
+        {
+          "title": "pyproject.toml",
+          "url": "https://github.com/D2I-Group/TSFLab/blob/main/pyproject.toml"
+        },
+        {
+          "title": "LICENSE",
+          "url": "https://github.com/D2I-Group/TSFLab/blob/main/LICENSE"
+        },
+        {
+          "title": "الورقة الأصلية",
+          "url": "https://arxiv.org/abs/2610.40901"
+        },
+        {
+          "title": "النص الكامل للورقة",
+          "url": "https://arxiv.org/pdf/2610.40901"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "ملف تشغيل قابل لإعادة الإنتاج لكل تجربة",
+          "problem": "قد تختلف نتائج التجارب بسبب seed أو تقسيم البيانات أو إصدار الاعتمادات والعتاد.",
+          "approach": "توحيد metadata لكل run مع commit وdataset revision وsplit وseed وhardware ومقياس التقييم.",
+          "stack": "Python + JSON Schema + uv + JSONL",
+          "steps": [
+            "تعريف schema لبيانات كل تجربة.",
+            "تسجيل commit وdataset revision وseed والعتاد.",
+            "رفض مقارنة نتائج ناقصة metadata.",
+            "تصدير تقرير reproducibility."
+          ],
+          "metric": "نسبة التجارب التي تحتوي جميع حقول إعادة الإنتاج المطلوبة.",
+          "difficulty": "متوسط (تقدير: 5–7 أيام)",
+          "risks": "زيادة metadata قد تثقل التجارب الصغيرة أو لا تغطي اختلافات البيئة.",
+          "sources": [
+            {
+              "title": "README",
+              "url": "https://github.com/D2I-Group/TSFLab/blob/main/README.md"
+            },
+            {
+              "title": "pyproject.toml",
+              "url": "https://github.com/D2I-Group/TSFLab/blob/main/pyproject.toml"
+            }
+          ]
+        },
+        {
+          "title": "حارس تسرب بيانات للتقسيمات الزمنية",
+          "problem": "قد تتسرب معلومات المستقبل إلى التدريب عند تقسيم سلسلة زمنية بطريقة غير صحيحة.",
+          "approach": "اختبارات تحقق من حدود الزمن والتحويلات وعمليات feature engineering قبل التدريب.",
+          "stack": "Python + pytest + pandas + NumPy",
+          "steps": [
+            "تحديد قواعد split زمني لكل dataset.",
+            "إضافة assertions على حدود train/validation/test.",
+            "اختبار scaler وfeatures على بيانات التدريب فقط.",
+            "إنشاء حالات سلبية تتعمد إدخال المستقبل."
+          ],
+          "metric": "عدد حالات التسرب التي تكتشفها الاختبارات قبل تشغيل النموذج.",
+          "difficulty": "مرتفع (تقدير: 1 أسبوع)",
+          "risks": "قد تفشل بعض مجموعات البيانات ذات التقويمات غير المنتظمة وتحتاج قواعد خاصة.",
+          "sources": [
+            {
+              "title": "الورقة",
+              "url": "https://arxiv.org/abs/2610.40901"
+            },
+            {
+              "title": "دليل الاستخدام",
+              "url": "https://github.com/D2I-Group/TSFLab/tree/main/docs/en"
+            }
+          ]
+        },
+        {
+          "title": "ملف CPU/GPU واضح ومقارن",
+          "problem": "قد يصعب على الباحث معرفة ما إذا كانت التجربة قابلة للتشغيل على جهازه قبل تثبيت اعتماديات ثقيلة.",
+          "approach": "توفير profiles مثبتة للـ CPU وCUDA مع تقدير الذاكرة وحجم البيانات وزمن dry-run.",
+          "stack": "uv + PyTorch + TOML configs + CI",
+          "steps": [
+            "تحديد تجربة مرجعية صغيرة.",
+            "إعداد profile CPU وprofile GPU.",
+            "تسجيل الذاكرة والزمن على عتاد معروف.",
+            "إظهار تحذير قبل تحميل إعداد يتجاوز الموارد."
+          ],
+          "metric": "نجاح quickstart على CPU وCUDA مع تسجيل الذاكرة والزمن.",
+          "difficulty": "متوسط إلى مرتفع (تقدير: 1 أسبوع)",
+          "risks": "تتغير القياسات حسب العتاد وإصدارات PyTorch.",
+          "sources": [
+            {
+              "title": "pyproject.toml",
+              "url": "https://github.com/D2I-Group/TSFLab/blob/main/pyproject.toml"
+            },
+            {
+              "title": "دليل التشغيل",
+              "url": "https://github.com/D2I-Group/TSFLab/tree/main/docs/en"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مختبر تنبؤ للطاقة والمياه",
+          "problem": "تحتاج فرق تعليمية إلى أمثلة زمنية ذات أثر واضح دون إعداد بنية بحثية كاملة.",
+          "approach": "تطبيق صغير يقارن نماذج على بيانات طاقة أو استهلاك مياه عامة مع توثيق split والنتائج.",
+          "stack": "Python + TSFLab + DuckDB + Streamlit",
+          "steps": [
+            "اختيار بيانات عامة مرخصة.",
+            "تجهيز pipeline تنظيف موحد.",
+            "تشغيل نماذج مرجعية على split ثابت.",
+            "عرض MAE وRMSE مع بيانات التشغيل."
+          ],
+          "metric": "تحسن MAE/RMSE مع إمكانية إعادة تشغيل التجربة.",
+          "difficulty": "متوسط (تقدير: أسبوع)",
+          "risks": "قد تحتوي البيانات على فجوات أو تغيرات موسمية غير ممثلة.",
+          "sources": [
+            {
+              "title": "المستودع",
+              "url": "https://github.com/D2I-Group/TSFLab"
+            },
+            {
+              "title": "الورقة",
+              "url": "https://arxiv.org/abs/2610.40901"
+            }
+          ]
+        },
+        {
+          "title": "مقارنة تنبؤ الطقس والمرور للطلاب",
+          "problem": "تحتاج الدروس إلى مثال يوضح أثر اختيار النافذة الزمنية والمقياس دون بنية معقدة.",
+          "approach": "دفتر Jupyter يقارن نماذج بسيطة ومتقدمة على بيانات عامة مع تفسير أثر horizon وseasonality.",
+          "stack": "Python + Jupyter + TSFLab + pandas",
+          "steps": [
+            "اختيار مجموعتي بيانات عامة للطقس والمرور.",
+            "توحيد تقسيم train/validation/test.",
+            "تشغيل baseline ونموذجين إضافيين.",
+            "تفسير أثر horizon والموسمية على الخطأ."
+          ],
+          "metric": "نسبة التجارب التي يمكن إعادة إنتاج نتائجها من notebook نظيف.",
+          "difficulty": "متوسط (تقدير: 4–6 أيام)",
+          "risks": "قد تختلف تعريفات القياس بين مجموعات البيانات.",
+          "sources": [
+            {
+              "title": "README",
+              "url": "https://github.com/D2I-Group/TSFLab/blob/main/README.md"
+            },
+            {
+              "title": "الورقة",
+              "url": "https://arxiv.org/abs/2610.40901"
+            }
+          ]
+        },
+        {
+          "title": "مسار تعليمي لتكرار أبحاث السلاسل الزمنية",
+          "problem": "قد يجد الطالب صعوبة في الانتقال من قراءة الورقة إلى تجربة قابلة للمقارنة.",
+          "approach": "دليل تفاعلي يربط كل ورقة بإعداد تشغيل ومجموعة بيانات ومقياس وحدود إعادة الإنتاج.",
+          "stack": "Jupyter + Python + TSFLab + Markdown",
+          "steps": [
+            "اختيار ثلاث أوراق مفتوحة الكود.",
+            "تلخيص المنهج والبيانات والمقياس.",
+            "ربط كل ورقة بإعداد تشغيل موثق.",
+            "تسجيل الفروقات بين النتيجة المنشورة وإعادة التشغيل."
+          ],
+          "metric": "عدد التجارب التي يمكن للطالب إعادتها مع تفسير الفروقات.",
+          "difficulty": "متوسط (تقدير: أسبوع)",
+          "risks": "قد لا تتوفر الأوزان أو البيانات الأصلية لكل ورقة.",
+          "sources": [
+            {
+              "title": "الورقة",
+              "url": "https://arxiv.org/abs/2610.40901"
+            },
+            {
+              "title": "دليل الاستخدام",
+              "url": "https://github.com/D2I-Group/TSFLab/tree/main/docs/en"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
