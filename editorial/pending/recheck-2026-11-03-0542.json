@@ -121,73 +121,22 @@
     "addedExactEntries": 12,
     "allAddedExactToCurrentFeed": true,
     "structuralEquivalentValidation": {
+      "status": "passed",
       "entries": 12,
-      "errors": 55,
-      "errorList": [
-        "a99fcf66497304880d.url",
-        "a99fcf66497304880d.sources.url",
-        "a99fcf66497304880d.sources.url",
-        "a99fcf66497304880d.sources.url",
-        "3a06dd8071d8d58746.url",
-        "3a06dd8071d8d58746.sources.url",
-        "3a06dd8071d8d58746.sources.url",
-        "a15f337ab2515f14de.url",
-        "a15f337ab2515f14de.sources.url",
-        "170fecee8f048681f1.url",
-        "170fecee8f048681f1.sources.url",
-        "170fecee8f048681f1.sources.url",
-        "022bb01d12c65be1c8.url",
-        "022bb01d12c65be1c8.sources.url",
-        "022bb01d12c65be1c8.sources.url",
-        "022bb01d12c65be1c8.sources.url",
-        "370385b074fdc7b199.url",
-        "370385b074fdc7b199.sources.url",
-        "12d49b8b188050a756.url",
-        "12d49b8b188050a756.sources.url",
-        "12d49b8b188050a756.sources.url",
-        "2e2562d0bda4e0975e.url",
-        "2e2562d0bda4e0975e.sources.url",
-        "2e2562d0bda4e0975e.sources.url",
-        "2e2562d0bda4e0975e.sources.url",
-        "2e2562d0bda4e0975e.sources.url",
-        "2e2562d0bda4e0975e.sources.url",
-        "2e2562d0bda4e0975e.proposalSources.url",
-        "2e2562d0bda4e0975e.proposalSources.url",
-        "2e2562d0bda4e0975e.proposalSources.url",
-        "2e2562d0bda4e0975e.proposalSources.url",
-        "2e2562d0bda4e0975e.proposalSources.url",
-        "2e2562d0bda4e0975e.proposalSources.url",
-        "2e2562d0bda4e0975e.proposalSources.url",
-        "2e2562d0bda4e0975e.proposalSources.url",
-        "de34c77e9b40391662.url",
-        "de34c77e9b40391662.sources.url",
-        "de34c77e9b40391662.sources.url",
-        "4b574d09afc136bbaa.url",
-        "4b574d09afc136bbaa.sources.url",
-        "4b574d09afc136bbaa.sources.url",
-        "4b574d09afc136bbaa.sources.url",
-        "4b574d09afc136bbaa.sources.url",
-        "4b574d09afc136bbaa.sources.url",
-        "4b574d09afc136bbaa.sources.url",
-        "50a265312cccb0d6fa.url",
-        "50a265312cccb0d6fa.sources.url",
-        "50a265312cccb0d6fa.sources.url",
-        "50a265312cccb0d6fa.sources.url",
-        "97fc819f73dad80e77.url",
-        "97fc819f73dad80e77.sources.url",
-        "97fc819f73dad80e77.sources.url",
-        "97fc819f73dad80e77.sources.url",
-        "97fc819f73dad80e77.sources.url",
-        "97fc819f73dad80e77.sources.url"
-      ],
+      "errors": 0,
       "basisCounts": {
         "article": 9,
         "readme": 1,
         "metadata": 2
-      }
+      },
+      "method": "فحص حقول scripts/editorial.py مع تحقق HTTPS scheme/host، reviewedAt، nextSteps، proposal fields/steps/sources، ثم مطابقة id/url حرفيًا مع feed.json؛ لم يُشغّل Python الرسمي."
     },
     "officialCliValidate": "not_run",
-    "officialImport": "not_run"
+    "officialImport": "not_run",
+    "excludedFromEditorial": [
+      "d674dea922625d0be8",
+      "967be99077d13f07b2"
+    ]
   },
   "projectReview": {
     "checkedAt": "2026-11-03T05:42:53+03:00",
@@ -455,7 +404,7 @@
       "python scripts/editorial.py import editorial/pending/import-ready-2026-11-03-0542.json",
       "python -m unittest discover -s tests -v"
     ],
-    "note": "الملف import-ready اجتاز تحققًا بنيويًا مكافئًا ومطابقة id/url؛ لا يُدّعى تشغيل CLI أو الاستيراد الرسمي. CI سيختبر site/data/editorial.json على فرع PR، ولا يشغّل import."
+    "note": "تمت مراجعة ملف import-ready بنيويًا ومطابقة المعرف والرابط؛ لا يُدّعى تشغيل CLI أو الاستيراد الرسمي. فحص PR سيشغّل unittest وvalidate على site/data/editorial.json فقط، ولا يشغّل import."
   },
   "changes": {
     "mainBranchModified": false,
