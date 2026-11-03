@@ -1,0 +1,147 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-03T21:36:52+03:00",
+  "baseMainSha": "5aac82531304993f35e8b67a52af9b1d849d0524",
+  "branchHeadBefore": "6c394a1446adb377d9300cbb239a69b59d2f386a",
+  "feedGeneratedAt": "2026-11-03T17:00:40+00:00",
+  "incomingBacklogAudit": {
+    "mainIncomingFiles": 65,
+    "branchIncomingFilesBefore": 66,
+    "mainFilesUnchangedOnPRBranch": 65,
+    "oldFilesReport": {
+      "appearances": 606,
+      "uniqueIds": 602,
+      "duplicateAppearances": 4,
+      "alreadyImportedExact": 595,
+      "seenOnly": 7,
+      "eligibleNewFromOldFiles": 0,
+      "idUrlMismatches": 0,
+      "confirmedExpired": 0,
+      "needsCorrection": 0
+    }
+  },
+  "previousImportAudit": {
+    "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+    "records": 29,
+    "exactFeedIdAndUrl": 29,
+    "mismatches": 0,
+    "branchEditorialBefore": 668,
+    "mainEditorialBefore": 639,
+    "mainRecordsPreserved": 639
+  },
+  "newBatch": {
+    "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-03-2136.json",
+    "records": 7,
+    "newNews": 6,
+    "existingRecordUpdated": 1,
+    "exactFeedIdAndUrl": 7,
+    "mismatches": 0,
+    "articleBasis": 5,
+    "metadataBasis": 2
+  },
+  "specialSeenOnlyIds": [
+    "940ec4695c1e241c2f",
+    "317abcdd1b20728a7e",
+    "662e68277c6361dd4b"
+  ],
+  "sourcesRead": [
+    {
+      "id": "5f4b9fdfeb2042b971",
+      "basis": "article",
+      "sources": [
+        "https://www.theverge.com/1024807/google-botnet-android-tv-shut-down",
+        "https://cloud.google.com/blog/topics/threat-intelligence/shutting-the-door-on-the-xcpe-botnet"
+      ],
+      "note": "The Verge full article and Google Cloud primary source read."
+    },
+    {
+      "id": "2451814cc9423add84",
+      "basis": "article",
+      "sources": [
+        "https://science.nasa.gov/blogs/swift/2026/11/02/nasas-swift-observatory-to-re-enter-atmosphere/"
+      ],
+      "note": "NASA primary article read; The Verge article page used for feed identity."
+    },
+    {
+      "id": "f6417c66c0228f42d3",
+      "basis": "metadata",
+      "sources": [
+        "https://developers.meta.com/vr/blog/meta-quest-2-quest-pro-end-of-feature-development-what-to-know/"
+      ],
+      "note": "Official Meta search result metadata/snippet only; full page unreadable."
+    },
+    {
+      "id": "a6f54d325d31634f89",
+      "basis": "metadata",
+      "sources": [
+        "https://huggingface.co/blog/transformers-mic"
+      ],
+      "note": "Hugging Face indexed metadata/snippet only; full page unreadable."
+    },
+    {
+      "id": "fc87a45dcfbf03d417",
+      "basis": "article",
+      "sources": [
+        "https://openai.com/index/heimstaden/"
+      ],
+      "note": "OpenAI primary customer story read; metrics attributed to the vendor/customer."
+    },
+    {
+      "id": "002b7cee771ca9e347",
+      "basis": "article",
+      "sources": [
+        "https://blogs.windows.com/windowsexperience/2026/11/03/raising-the-bar-for-8-gb-windows-11-pcs-whats-improved-and-how-to-get-it/"
+      ],
+      "note": "Microsoft Windows Experience primary article and The Verge report read."
+    },
+    {
+      "id": "c01265aacc1a10af6e",
+      "basis": "article",
+      "sources": [
+        "https://blog.google/products-and-platforms/products/education/ai-learning-era-updates-2026/",
+        "https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/"
+      ],
+      "note": "Google primary article and TechCrunch full report read; Search-impact nuance attributed to reporting."
+    }
+  ],
+  "corrections": [
+    {
+      "id": "c01265aacc1a10af6e",
+      "basisBefore": "metadata",
+      "basisAfter": "article",
+      "reason": "Google official education post and TechCrunch full article were read; source list and limitations updated."
+    }
+  ],
+  "validation": {
+    "method": "structural_equivalent",
+    "records": 7,
+    "allFeedIdsExact": true,
+    "allFeedUrlsExact": true,
+    "requiredFieldsComplete": true
+  },
+  "preservation": {
+    "mainEditorialRecords": 639,
+    "mainRecordsUnchanged": 639,
+    "branchEditorialBefore": 668,
+    "branchEditorialAfter": 674,
+    "deletedRecords": 0,
+    "feedJsonModified": false,
+    "seenJsonModified": false,
+    "statusJsonModified": false
+  },
+  "projectLibrary": {
+    "catalogProjects": 43,
+    "archived": 2,
+    "nonArchived": 41,
+    "licenseFollowups": 7,
+    "newResearchOnlyDossier": "NVIDIA Auto Ontology",
+    "publicProjectCardsAdded": 0,
+    "previousEightReviewed": 8,
+    "newImprovementIdeas": 7,
+    "newSpinoffs": 7,
+    "projectsWithNoNewIdeas": [
+      "patchy631/ai-engineering-hub"
+    ],
+    "testEvidenceClaims": 0
+  }
+}
