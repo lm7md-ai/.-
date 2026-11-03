@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-03T21:07:20+03:00",
+  "branch": "content/nabdh-2026-11-03-1138",
+  "baseMain": "5aac82531304993f35e8b67a52af9b1d849d0524",
+  "corrections": [
+    {
+      "id": "03ad66ba1fba612587",
+      "titleAr": "Apple توسّع رهانها التجاري على الذكاء الاصطناعي عبر أجهزتها وتطبيقات الشركاء",
+      "basisBefore": "article",
+      "basisAfter": "metadata",
+      "reviewedAt": "2026-11-03T21:07:20+03:00",
+      "reason": "The Verge full text unavailable; Apple Newsroom release read for financial facts.",
+      "sources": [
+        "https://www.theverge.com/ai-artificial-intelligence/1025245/apple-earnings-q4-ai",
+        "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/"
+      ]
+    },
+    {
+      "id": "4d3938441f216409a8",
+      "titleAr": "IBM Research تعرض Palette لتدريب نموذج صغير على أسلوب تصميم العروض التقديمية",
+      "basisBefore": "article",
+      "basisAfter": "metadata",
+      "reviewedAt": "2026-11-03T21:07:20+03:00",
+      "reason": "Hugging Face article full text unavailable; indexed page metadata only.",
+      "sources": [
+        "https://huggingface.co/blog/ibm-research/palette-deck-building"
+      ]
+    },
+    {
+      "id": "c01265aacc1a10af6e",
+      "titleAr": "Google تجعل أدوات الذكاء الاصطناعي المدرسية متوقفة افتراضيًا حتى يفعّلها المشرف",
+      "basisBefore": "article",
+      "basisAfter": "metadata",
+      "reviewedAt": "2026-11-03T21:07:20+03:00",
+      "reason": "The Verge full text unavailable; Google official URL from prior draft not verified and removed.",
+      "sources": [
+        "https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features"
+      ]
+    }
+  ],
+  "sourcesRead": [
+    {
+      "id": "0db7b6f459a78855c3",
+      "basis": "article",
+      "source": "Business Insider full article",
+      "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11"
+    },
+    {
+      "id": "e2d2bf508ced1caa08",
+      "basis": "article",
+      "source": "The Verge full article",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1025242/openai-quietly-renames-data-centers-as-compute-campuses"
+    },
+    {
+      "id": "20ff7d9385ef646db5",
+      "basis": "article",
+      "source": "GitHub Blog full article",
+      "url": "https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/"
+    },
+    {
+      "id": "9cae37a2789cc9b1de",
+      "basis": "article",
+      "source": "Saudi Press Agency release text in indexed official result",
+      "url": "https://www.spa.gov.sa/N2717297"
+    },
+    {
+      "id": "3e8a8aa6133203ad02",
+      "basis": "article",
+      "source": "Momentic founders Launch HN post and benchmark details",
+      "url": "https://news.ycombinator.com/item?id=50339913"
+    },
+    {
+      "id": "834f867a452076917a",
+      "basis": "readme",
+      "source": "NVIDIA Auto Ontology README, LICENSE, pyproject.toml, DEPLOYMENT.md, docker-compose.yml, docs/mcp.md and THIRD_PARTY_NOTICES.md",
+      "url": "https://github.com/NVIDIA/auto-ontology"
+    },
+    {
+      "id": "6b6c7100781c3e9dc6",
+      "basis": "metadata",
+      "source": "BBC feed metadata only; full BBC article not opened",
+      "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o"
+    }
+  ],
+  "notes": [
+    "No claim of code execution or project test.",
+    "No changes to feed.json, seen.json, status.json, website code, design, workflows, or deployment settings.",
+    "Original 639 editorial entries retained unchanged; corrections apply only to three newly added IDs."
+  ]
+}
