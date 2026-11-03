@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "recordedAt": "2026-11-03T21:36:52+03:00",
+  "baseMainSha": "5aac82531304993f35e8b67a52af9b1d849d0524",
+  "prHeadBefore": "c619ea329141a526801b85832f2e848f78ca413c",
+  "catalog": {
+    "total": 43,
+    "archived": 2,
+    "nonArchived": 41,
+    "licenseNeedsUpstreamVerification": 7,
+    "existingEntriesRetained": 42,
+    "newResearchOnlyDossiers": 1,
+    "otherEntriesRemeasured": false
+  },
+  "publicLibrary": {
+    "siteDataLibraryEntries": 31,
+    "publicProjectCardsAddedThisRun": 0
+  },
+  "feed": {
+    "totalProjects": 100,
+    "projectsEnriched": 100,
+    "projectsMissingEditorial": 0,
+    "totalNews": 700,
+    "newsEnrichedAfterThisRun": 151,
+    "newsStillWithoutEditorial": 549,
+    "editorialBranchTotal": 674,
+    "mainEditorialBaseline": 639
+  },
+  "incoming": {
+    "mainFiles": 65,
+    "branchFilesBeforeThisRun": 66,
+    "branchFilesAfterThisRun": 67,
+    "oldFileAuditAppearances": 606,
+    "oldFileAuditUniqueIds": 602,
+    "duplicateAppearances": 4,
+    "alreadyImportedExact": 595,
+    "seenOnly": 7,
+    "mismatches": 0,
+    "expired": 0,
+    "corrections": 0,
+    "previousBatchRecords": 29,
+    "previousBatchExact": 29,
+    "currentBatchRecords": 7,
+    "currentBatchExact": 7,
+    "newNews": 6,
+    "existingRecordUpdated": 1
+  },
+  "previousEight": {
+    "detailedReviewFile": "editorial/library/previous-eight-review-2026-10-31-1841.json",
+    "detailedImprovements": 7,
+    "detailedSpinoffs": 7,
+    "detailedReligious": 0,
+    "metricsSnapshot2039": {
+      "improvements": 8,
+      "spinoffs": 8,
+      "religious": 1
+    },
+    "discrepancy": true,
+    "testsExecuted": 0
+  },
+  "newProject": {
+    "name": "NVIDIA Auto Ontology",
+    "publicationStatus": "research-only",
+    "siteVisible": false,
+    "repository": "https://github.com/NVIDIA/auto-ontology",
+    "metricsMeasuredAt": "2026-11-03T21:36:52+03:00",
+    "stars": 2448,
+    "forks": 188,
+    "openIssuesAndPullRequests": 33,
+    "archived": false,
+    "license": "Apache-2.0",
+    "pushedAt": "2026-11-03T18:42:17Z",
+    "updatedAt": "2026-11-03T18:53:03Z",
+    "lastPushVerified": false,
+    "timestampAnomaly": true,
+    "testEvidence": false,
+    "requirements": "Python >=3.12,<3.14; Next.js 16/React 19; Docker Compose v2; PostgreSQL/pgvector; data source; hosted NVIDIA NIM or self-hosted NIM endpoint; optional Vault.",
+    "localCloud": "Local Docker Compose; cloud Helm/NGC/Kubernetes; MCP server connects to deployed API over HTTPS.",
+    "costNote": "Repository Apache-2.0; inference, GPU, database and cloud costs depend on selected provider; no single official flat price found.",
+    "alternatives": [
+      "LangGraph",
+      "LlamaIndex",
+      "dbt Semantic Layer",
+      "Cube"
+    ]
+  },
+  "bestThreeSuggestions": [
+    {
+      "title": "مجموعة تقييم عربية للاسترجاع والإحالات",
+      "repository": "Tencent/WeKnora",
+      "difficulty": "متوسط (تقدير)",
+      "sources": [
+        "https://github.com/Tencent/WeKnora/blob/main/website-docs/03-features/05-retrieval-engines.md",
+        "https://docs.ragas.io/"
+      ]
+    },
+    {
+      "title": "نسخ احتياطي قابل للتحقق لنسخة WeKnora Lite",
+      "repository": "Tencent/WeKnora",
+      "difficulty": "متوسط إلى مرتفع (تقدير)",
+      "sources": [
+        "https://github.com/Tencent/WeKnora/blob/main/docs/LITE.md",
+        "https://www.sqlite.org/backup.html"
+      ]
+    },
+    {
+      "title": "واجهة موحدة لمزودي TTS مع وضع محلي احتياطي",
+      "repository": "rany2/edge-tts",
+      "difficulty": "متوسط (تقدير)",
+      "sources": [
+        "https://github.com/rany2/edge-tts",
+        "https://github.com/OHF-Voice/piper1-gpl"
+      ]
+    }
+  ],
+  "measurementNote": "GitHub API snapshot captured during this run; pushed_at/updated_at were future-dated relative to the run clock, so activity is not treated as verified. No project code was executed."
+}

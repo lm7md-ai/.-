@@ -14,7 +14,7 @@
     "note": "Related feed record is kind=news, not kind=project; this dossier is research-only, not a public project card."
   },
   "reviewedAt": "2026-11-03T20:39:34+03:00",
-  "metricsMeasuredAt": "2026-11-03T20:39:34+03:00",
+  "metricsMeasuredAt": "2026-11-03T21:36:52+03:00",
   "overview": "إطار مفتوح من NVIDIA لبناء طبقة دلالية ورسوم معرفية فوق بيانات المؤسسات. يربط تعريفات المقاييس والكيانات بمصادرها، ويولّد استعلامات SQL بلغة طبيعية مع إمكانية إظهار النسب إلى المصدر، ثم يعرّض السياق للوكلاء عبر MCP وCLI وAPI. يتكامل مع النماذج التي يملكها المستخدم ولا يُعد بديلًا تلقائيًا عن مستودع البيانات أو طبقة الحوكمة القائمة.",
   "requirements": "الترخيص الأساسي Apache-2.0. يتطلب الخادم Python >=3.12 و<3.14 وفق pyproject.toml، كما يتضمن واجهة Next.js 16 وReact 19 وTypeScript. النشر المحلي يتطلب Docker مع Docker Compose v2، وPostgreSQL مع pgvector، واتصالًا بمصدر بيانات مثل PostgreSQL أو Databricks أو Snowflake أو DuckDB، ومفتاح NVIDIA NIM للواجهات المستضافة أو نقطة نهاية NIM مستضافة ذاتيًا. HashiCorp Vault اختياري لحفظ بيانات الاتصال. يلزم ضبط AUTH_SECRET وAPP_URL وبيانات PostgreSQL وDEFAULT_MODELS_API_KEY وCONNECTION_STRINGS.",
   "quickStart": "1) استنسخ https://github.com/NVIDIA/auto-ontology. 2) انسخ .env.example إلى .env. 3) اضبط AUTH_SECRET وAPP_URL وبيانات PostgreSQL ومفتاح NIM واتصالات قواعد البيانات. 4) شغّل docker compose up -d --build. 5) افتح الواجهة على http://localhost:3000؛ الواجهة الخلفية على :3001 وpgAdmin على :5050. هذه خطوات موثقة وليست تجربة تشغيل منفذة في هذه الدورة.",
@@ -254,17 +254,36 @@
     }
   ],
   "metrics": {
-    "starsDisplay": "2.0k",
-    "starsApproximate": true,
-    "forks": 149,
-    "openIssues": 22,
-    "openPullRequestsObserved": "10–11 بحسب صفحتي GitHub اللتين ظهرتا أثناء القياس",
+    "starsDisplay": "2.4k",
+    "starsApproximate": false,
+    "forks": 188,
+    "openIssues": 33,
+    "openPullRequestsObserved": "not separately measured",
     "commits": 1354,
     "defaultBranch": "main",
     "archived": false,
     "license": "Apache-2.0",
-    "pushedAt": "not verified",
-    "measuredAt": "2026-11-03T20:39:34+03:00"
+    "pushedAt": "2026-11-03T18:42:17Z",
+    "measuredAt": "2026-11-03T21:36:52+03:00",
+    "stars": 2448,
+    "openIssuesAndPullRequests": 33,
+    "updatedAt": "2026-11-03T18:53:03Z",
+    "lastPushVerified": false,
+    "timestampAnomaly": true,
+    "previousSnapshot": {
+      "starsDisplay": "2.0k",
+      "starsApproximate": true,
+      "forks": 149,
+      "openIssues": 22,
+      "openPullRequestsObserved": "10–11 بحسب صفحتي GitHub اللتين ظهرتا أثناء القياس",
+      "commits": 1354,
+      "defaultBranch": "main",
+      "archived": false,
+      "license": "Apache-2.0",
+      "pushedAt": "not verified",
+      "measuredAt": "2026-11-03T20:39:34+03:00"
+    },
+    "measurementNote": "GitHub API returned pushed_at 2026-11-03T18:42:17Z and updated_at 2026-11-03T18:53:03Z, both later than this run clock 2026-11-03T18:36:52Z; raw values retained but activity not treated as verified. open_issues_count includes issues and pull requests."
   },
   "executionStatus": "not_run",
   "testEvidence": "لم يتم تشغيل Auto Ontology أو تنفيذ اختبارات المستودع؛ تمت مراجعة README وpyproject.toml وLICENSE وDEPLOYMENT.md وdocker-compose.yml وdocs/mcp.md وTHIRD_PARTY_NOTICES فقط."
