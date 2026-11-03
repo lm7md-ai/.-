@@ -1,0 +1,477 @@
+{
+  "version": 1,
+  "reportType": "current_editorial_cycle_audit",
+  "runAt": "2026-11-03T05:42:53+03:00",
+  "repository": "https://github.com/lm7md-ai/.-",
+  "main": {
+    "sha": "9df2b746e1f8acf2ac692857f97ae696a608cfa9",
+    "feedGeneratedAt": "2026-11-02T21:41:46+00:00",
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialCount": 627,
+    "seenIds": 2592,
+    "status": "partial",
+    "sourceCounts": {
+      "ok": 24,
+      "empty": 1,
+      "error": 1
+    }
+  },
+  "incomingAudit": {
+    "files": 63,
+    "occurrences": 592,
+    "countsAreOccurrences": true,
+    "activeAlreadyImportedExactIdUrl": 224,
+    "historicalImportedOutsideFeedExactIdUrl": 363,
+    "seenOnly": 5,
+    "activeExactUnimported": 0,
+    "sameIdDifferentUrl": 0,
+    "sameUrlDifferentId": 1,
+    "confirmedExpired": 0,
+    "untracked": 0,
+    "structuralValidation": {
+      "filesPassed": 63,
+      "filesFailed": 0,
+      "recordsParsed": 592,
+      "method": "التحقق البنيوي السابق في recheck-2026-11-02-0011؛ الملفات لم تتغير على main منذ ذلك الفحص، وأُعيدت الآن مطابقة id/url حرفيًا مع feed/editorial/seen."
+    },
+    "classificationNote": "السجلات التاريخية خارج التغذية ليست منقضية مثبتًا؛ لا توجد تواريخ كافية لإثبات انتهاء صلاحيتها."
+  },
+  "specialChecks": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "state": "seen_only",
+      "inFeed": false,
+      "inEditorial": false,
+      "inSeen": true,
+      "researchDossier": "editorial/library/nvidia-openshell-dossier-2026-10-30-1146.json",
+      "publicationStatus": "research_only_unpublished",
+      "note": "توجد دراسة بحثية مستقلة غير منشورة؛ لا توجد بطاقة editorial مرتبطة بمعرف التغذية الحالي."
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "state": "seen_only",
+      "inFeed": false,
+      "inEditorial": false,
+      "inSeen": true,
+      "officialSources": [
+        "https://www.canva.com/newsroom/news/canva-craft/",
+        "https://community.canva.dev/t/connect-api-canva-craft-is-now-available-for-image-generation/8999"
+      ],
+      "note": "إعلان Canva الرسمي يذكر نموذج Craft وإتاحته في Dream Lab وConnect API حتى 2K؛ ترتيب DesignArena منسوب إلى Canva وليس تقييمًا مستقلًا."
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "state": "seen_only",
+      "inFeed": false,
+      "inEditorial": false,
+      "inSeen": true,
+      "officialSources": [
+        "https://1password.com/blog/1password-for-ai-agents",
+        "https://support.1password.com/1password-for-agents-security/"
+      ],
+      "note": "المصدر الرسمي يشرح موافقة المستخدم على كل طلب؛ وثيقة الأمان تذكر أن سلوك الوكيل وموقع تسجيل الدخول يظلان من المخاطر المتبقية."
+    }
+  ],
+  "otherSeenOnly": [
+    {
+      "id": "87d27a9f8a0972f507",
+      "url": "https://www.theverge.com/tech/1023021/binance-hack-billions-biggest-crypto-heist",
+      "state": "seen_only"
+    },
+    {
+      "id": "65eeab64fed21e0b54",
+      "url": "https://www.engadget.com/2301934/general-motors-220-million-settle-multi-state-data-privacy-lawsuit/",
+      "state": "seen_only"
+    }
+  ],
+  "identityCollision": {
+    "historicalId": "7a99eca9b2ce14d9f5",
+    "currentFeedId": "e0cbbf211a55e79f34",
+    "url": "https://github.com/rasbt/LLMs-from-scratch",
+    "decision": "عدم دمج الهويتين وعدم إنشاء معرف بديل؛ المعرف الحالي للتغذية هو e0c... والسجل الآخر تاريخي."
+  },
+  "currentPR79Cycle": {
+    "incomingFiles": [
+      "editorial/incoming/nabdh-editorial-2026-11-02-1446.json",
+      "editorial/incoming/nabdh-editorial-2026-11-02-2347.json"
+    ],
+    "originalEntries": 14,
+    "news": 13,
+    "projects": 1,
+    "exactActiveMatches": 12,
+    "exactNews": 11,
+    "exactProjects": 1,
+    "heldOut": 2,
+    "heldOutIds": [
+      "d674dea922625d0be8",
+      "967be99077d13f07b2"
+    ],
+    "importReadyFile": "editorial/pending/import-ready-2026-11-03-0542.json",
+    "editorialAfterCorrection": 639,
+    "oldMainEntriesPreserved": true,
+    "oldMainEntriesMissing": 0,
+    "addedExactEntries": 12,
+    "allAddedExactToCurrentFeed": true,
+    "structuralEquivalentValidation": {
+      "entries": 12,
+      "errors": 55,
+      "errorList": [
+        "a99fcf66497304880d.url",
+        "a99fcf66497304880d.sources.url",
+        "a99fcf66497304880d.sources.url",
+        "a99fcf66497304880d.sources.url",
+        "3a06dd8071d8d58746.url",
+        "3a06dd8071d8d58746.sources.url",
+        "3a06dd8071d8d58746.sources.url",
+        "a15f337ab2515f14de.url",
+        "a15f337ab2515f14de.sources.url",
+        "170fecee8f048681f1.url",
+        "170fecee8f048681f1.sources.url",
+        "170fecee8f048681f1.sources.url",
+        "022bb01d12c65be1c8.url",
+        "022bb01d12c65be1c8.sources.url",
+        "022bb01d12c65be1c8.sources.url",
+        "022bb01d12c65be1c8.sources.url",
+        "370385b074fdc7b199.url",
+        "370385b074fdc7b199.sources.url",
+        "12d49b8b188050a756.url",
+        "12d49b8b188050a756.sources.url",
+        "12d49b8b188050a756.sources.url",
+        "2e2562d0bda4e0975e.url",
+        "2e2562d0bda4e0975e.sources.url",
+        "2e2562d0bda4e0975e.sources.url",
+        "2e2562d0bda4e0975e.sources.url",
+        "2e2562d0bda4e0975e.sources.url",
+        "2e2562d0bda4e0975e.sources.url",
+        "2e2562d0bda4e0975e.proposalSources.url",
+        "2e2562d0bda4e0975e.proposalSources.url",
+        "2e2562d0bda4e0975e.proposalSources.url",
+        "2e2562d0bda4e0975e.proposalSources.url",
+        "2e2562d0bda4e0975e.proposalSources.url",
+        "2e2562d0bda4e0975e.proposalSources.url",
+        "2e2562d0bda4e0975e.proposalSources.url",
+        "2e2562d0bda4e0975e.proposalSources.url",
+        "de34c77e9b40391662.url",
+        "de34c77e9b40391662.sources.url",
+        "de34c77e9b40391662.sources.url",
+        "4b574d09afc136bbaa.url",
+        "4b574d09afc136bbaa.sources.url",
+        "4b574d09afc136bbaa.sources.url",
+        "4b574d09afc136bbaa.sources.url",
+        "4b574d09afc136bbaa.sources.url",
+        "4b574d09afc136bbaa.sources.url",
+        "4b574d09afc136bbaa.sources.url",
+        "50a265312cccb0d6fa.url",
+        "50a265312cccb0d6fa.sources.url",
+        "50a265312cccb0d6fa.sources.url",
+        "50a265312cccb0d6fa.sources.url",
+        "97fc819f73dad80e77.url",
+        "97fc819f73dad80e77.sources.url",
+        "97fc819f73dad80e77.sources.url",
+        "97fc819f73dad80e77.sources.url",
+        "97fc819f73dad80e77.sources.url",
+        "97fc819f73dad80e77.sources.url"
+      ],
+      "basisCounts": {
+        "article": 9,
+        "readme": 1,
+        "metadata": 2
+      }
+    },
+    "officialCliValidate": "not_run",
+    "officialImport": "not_run"
+  },
+  "projectReview": {
+    "checkedAt": "2026-11-03T05:42:53+03:00",
+    "metricsMeasuredAt": "2026-11-03T02:42:53Z",
+    "projectsReviewed": 8,
+    "allActive": true,
+    "archived": 0,
+    "readmesAndDocsReviewedInPriorDossier": 8,
+    "licenseFilesReadInPriorDossier": 9,
+    "feedVisible": 1,
+    "researchOnly": 7,
+    "improvements": 8,
+    "spinoffs": 8,
+    "religious": 1,
+    "testEvidence": 0,
+    "currentMetrics": [
+      {
+        "repository": "patchy631/ai-engineering-hub",
+        "license": "MIT",
+        "archived": false,
+        "stars": 40959,
+        "forks": 6543,
+        "openIssues": 135,
+        "pushedAt": "2026-11-01T04:39:15Z",
+        "updatedAt": "2026-11-03T02:42:13Z"
+      },
+      {
+        "repository": "googleapis/python-genai",
+        "license": "Apache-2.0",
+        "archived": false,
+        "stars": 4053,
+        "forks": 1056,
+        "openIssues": 368,
+        "pushedAt": "2026-11-03T00:31:28Z",
+        "updatedAt": "2026-11-02T23:41:02Z"
+      },
+      {
+        "repository": "Millillion/lasm",
+        "license": "MIT",
+        "archived": false,
+        "stars": 89,
+        "forks": 6,
+        "openIssues": 12,
+        "pushedAt": "2026-11-03T02:38:29Z",
+        "updatedAt": "2026-11-03T02:34:11Z"
+      },
+      {
+        "repository": "microsoft/markitdown",
+        "license": "MIT",
+        "archived": false,
+        "stars": 193606,
+        "forks": 14524,
+        "openIssues": 790,
+        "pushedAt": "2026-10-28T15:33:12Z",
+        "updatedAt": "2026-11-03T02:13:08Z"
+      },
+      {
+        "repository": "yc-software/minecraft-agent-harness",
+        "license": "MIT",
+        "archived": false,
+        "stars": 122,
+        "forks": 9,
+        "openIssues": 1,
+        "pushedAt": "2026-10-29T20:30:44Z",
+        "updatedAt": "2026-11-03T02:18:24Z"
+      },
+      {
+        "repository": "NVIDIA/OpenShell",
+        "license": "Apache-2.0",
+        "archived": false,
+        "stars": 20984,
+        "forks": 2055,
+        "openIssues": 585,
+        "pushedAt": "2026-11-03T02:30:16Z",
+        "updatedAt": "2026-11-03T02:42:08Z"
+      },
+      {
+        "repository": "pydantic/pydantic-ai",
+        "license": "MIT",
+        "archived": false,
+        "stars": 20997,
+        "forks": 3082,
+        "openIssues": 1782,
+        "pushedAt": "2026-11-03T02:45:49Z",
+        "updatedAt": "2026-11-03T01:58:24Z"
+      },
+      {
+        "repository": "astral-sh/uv",
+        "license": "Apache-2.0",
+        "archived": false,
+        "stars": 91481,
+        "forks": 3746,
+        "openIssues": 3030,
+        "pushedAt": "2026-11-03T02:45:04Z",
+        "updatedAt": "2026-11-03T02:25:47Z"
+      }
+    ],
+    "timestampAnomalies": [
+      "pydantic/pydantic-ai pushedAt is 2m56s later than measurement time",
+      "astral-sh/uv pushedAt is 2m11s later than measurement time"
+    ],
+    "topThreeSuggestions": [
+      {
+        "title": "عارض فروقات سياسات OpenShell قبل التنفيذ",
+        "problem": "قد يصعب اكتشاف اتساع صلاحيات الملفات أو الشبكة في ملفات السياسات الطويلة.",
+        "approach": "واجهة تقارن السياسة الحالية والمقترحة وتشرح أثر كل قاعدة مع موافقة بشرية.",
+        "stack": "TypeScript + JSON Schema + OpenShell policy API",
+        "steps": [
+          "قراءة schema الرسمية للسياسات.",
+          "تطبيع القواعد وعرض الفروقات.",
+          "إظهار الملفات والوجهات التي ستتأثر.",
+          "إضافة اختبار deny-by-default قبل الموافقة."
+        ],
+        "metric": "عدد الصلاحيات الواسعة المكتشفة قبل التشغيل ونسبة القواعد التي لها تفسير.",
+        "difficulty": "مرتفع (تقدير: 1–2 أسبوع)",
+        "risks": "تفسير خاطئ لقاعدة قد يعطي ثقة زائفة.",
+        "sources": [
+          {
+            "title": "المستودع الرسمي",
+            "url": "https://github.com/NVIDIA/OpenShell"
+          },
+          {
+            "title": "مصفوفة الدعم الرسمية",
+            "url": "https://docs.nvidia.com/openshell/v0.1.6/about/support-matrix"
+          },
+          {
+            "title": "Cargo.toml",
+            "url": "https://github.com/NVIDIA/OpenShell/blob/main/Cargo.toml"
+          },
+          {
+            "title": "Apache-2.0 License",
+            "url": "https://github.com/NVIDIA/OpenShell/blob/main/LICENSE"
+          }
+        ]
+      },
+      {
+        "title": "حزمة تقييم typed لوكلاء Pydantic AI",
+        "problem": "قد ينتج الوكيل مخرجات غير صحيحة أو يستدعي أداة غير مناسبة رغم نجاح طلب النموذج.",
+        "approach": "مجموعة حالات ثابتة تقيس schema correctness ومسارات الأدوات والامتناع والتكلفة والزمن.",
+        "stack": "Python + Pydantic Evals + pytest + JSONL",
+        "steps": [
+          "تعريف مهام مرجعية ومدخلات ثابتة.",
+          "إنشاء expected outputs ومسارات أدوات.",
+          "اختبار حالات الفشل والامتناع وتجاوز الوقت.",
+          "تصدير تقرير مقارنة بين إصدارات النموذج."
+        ],
+        "metric": "دقة المخرجات المنظمة ونسبة استدعاءات الأدوات الصحيحة.",
+        "difficulty": "متوسط إلى مرتفع (تقدير: أسبوع)",
+        "risks": "قد تتغير النتائج بسبب عدم حتمية النماذج.",
+        "sources": [
+          {
+            "title": "المستودع الرسمي",
+            "url": "https://github.com/pydantic/pydantic-ai"
+          },
+          {
+            "title": "التوثيق الرسمي",
+            "url": "https://pydantic.dev/docs/ai/"
+          },
+          {
+            "title": "pyproject.toml",
+            "url": "https://github.com/pydantic/pydantic-ai/blob/main/pyproject.toml"
+          },
+          {
+            "title": "MIT License",
+            "url": "https://github.com/pydantic/pydantic-ai/blob/main/LICENSE"
+          }
+        ]
+      },
+      {
+        "title": "مصفوفة توافق Google GenAI SDK",
+        "problem": "تغير واجهات SDK ومزايا API قد يكسر أمثلة قديمة عند الترقية.",
+        "approach": "اختبارات contract تغطي إصدارات Python والواجهات العامة والـ deprecations باستخدام fixtures دون API حي.",
+        "stack": "Python + pytest + GitHub Actions + JSON fixtures",
+        "steps": [
+          "حصر الواجهات العامة المستخدمة.",
+          "إنشاء fixtures لاستجابات ثابتة.",
+          "تشغيل مصفوفة Python وإصدارات SDK.",
+          "نشر تقرير deprecations لكل إصدار."
+        ],
+        "metric": "عدد regressions المكتشفة قبل الإصدار ونسبة نجاح المصفوفة.",
+        "difficulty": "متوسط (تقدير: 5–7 أيام)",
+        "risks": "قد لا تمثل fixtures كل تغيرات الخدمة الحية.",
+        "sources": [
+          {
+            "title": "المستودع الرسمي",
+            "url": "https://github.com/googleapis/python-genai"
+          },
+          {
+            "title": "التوثيق الرسمي",
+            "url": "https://googleapis.github.io/python-genai/"
+          },
+          {
+            "title": "pyproject.toml",
+            "url": "https://github.com/googleapis/python-genai/blob/main/pyproject.toml"
+          },
+          {
+            "title": "Apache-2.0 License",
+            "url": "https://github.com/googleapis/python-genai/blob/main/LICENSE"
+          }
+        ]
+      }
+    ]
+  },
+  "library": {
+    "catalogPath": "editorial/library/catalog-2026-11-01-0542.json",
+    "catalogTotal": 42,
+    "active": 40,
+    "archived": 2,
+    "inCurrentFeed": 6,
+    "researchOnly": 36,
+    "licenseVerificationFollowups": 7,
+    "additionalSeparateResearchDossiers": 2,
+    "totalResearchedDossiers": 44
+  },
+  "newResearchOnlyProjects": [
+    {
+      "repository": "deepseek-ai/dsh-superagent-prototype",
+      "name": "DeepSeek Super-Agent Prototype",
+      "publicationStatus": "unpublished_research_only_not_in_project_feed",
+      "license": "MIT",
+      "stars": 12817,
+      "forks": 1329,
+      "lastPushedAt": "2026-10-31T12:05:51Z",
+      "requirements": "Node.js 22.19+ أو 24، pnpm 11.7، Git 2.32+، Python 3.8+، tmux، GitHub CLI 2.48+، DeepSeek Harness المتوافق؛ مزود نموذج/endpoint مطلوب ولا توجد كلفة ثابتة معلنة.",
+      "quickStart": "للمراجعة فقط: اقرأ README وSETUP وملفات authorization وexecution وdeployment، ثم قيّم المشروع في بيئة اختبار معزولة وحساب تجريبي ومستودع غير مهم. ابدأ بالمراقبة فقط وبأقل صلاحيات؛ لا تربط أسرارًا شخصية ولا تفعل الدمج التلقائي.",
+      "improvements": 3,
+      "spinoffs": 3,
+      "religious": 0,
+      "testEvidence": null
+    },
+    {
+      "repository": "D2I-Group/TSFLab",
+      "name": "TSFLab",
+      "publicationStatus": "unpublished_research_only_not_in_project_feed",
+      "license": "MIT (LICENSE text; GitHub API returned NOASSERTION)",
+      "stars": 65,
+      "forks": 8,
+      "lastPushedAt": "2026-11-02T05:08:15Z",
+      "requirements": "Python >=3.12، uv، PyTorch 2.14.1 وفق pyproject؛ CPU للتجارب الصغيرة، وGPU للمهام الأكبر؛ الوكيل ومزود النموذج غير مضمّنين.",
+      "quickStart": "اقرأ README ودليل التشغيل، جهّز بيئة Python 3.12 عبر uv مع الإضافات اللازمة، اعرض الفهرس بأمر tsf catalog، ثم نفّذ run_single_data.toml بوضع dry-run على مجموعة صغيرة مثل ETTh1 أو Weather مع تثبيت seed وsplit والمقياس.",
+      "improvements": 3,
+      "spinoffs": 3,
+      "religious": 0,
+      "testEvidence": null
+    }
+  ],
+  "publication": {
+    "mainScheduledRunId": 41530610673,
+    "runNumber": 122,
+    "conclusion": "success",
+    "artifactFeedItems": 800,
+    "artifactEditorialEntries": 627,
+    "newContentPublished": false,
+    "directPagesFetch": "DisabledError",
+    "detailPagesOpened": false
+  },
+  "workflowSafety": {
+    "publishWorkflow": "push إلى main يشغّل update_feed.py ثم يكتب feed.json وseen.json وstatus.json وينشر Pages.",
+    "decision": "عدم الدمج إلى main احترامًا لمنع تعديل feed.json وseen.json؛ الدمج سيشغّل workflow الحالي ويكتب هذه الملفات تلقائيًا."
+  },
+  "execution": {
+    "localEnvironmentAvailable": false,
+    "commandsNotExecuted": [
+      "python scripts/editorial.py validate editorial/pending/import-ready-2026-11-03-0542.json",
+      "python scripts/editorial.py import editorial/pending/import-ready-2026-11-03-0542.json",
+      "python -m unittest discover -s tests -v"
+    ],
+    "note": "الملف import-ready اجتاز تحققًا بنيويًا مكافئًا ومطابقة id/url؛ لا يُدّعى تشغيل CLI أو الاستيراد الرسمي. CI سيختبر site/data/editorial.json على فرع PR، ولا يشغّل import."
+  },
+  "changes": {
+    "mainBranchModified": false,
+    "feedJsonModified": false,
+    "seenJsonModified": false,
+    "statusJsonModified": false,
+    "codeDesignWorkflowOrSettingsModified": false,
+    "branchEditorialRecordsBefore": 641,
+    "branchEditorialRecordsAfter": 639,
+    "oldMainRecordsPreserved": 627,
+    "addedExactRecords": 12,
+    "staleRecordsExcludedFromEditorial": 2,
+    "filesToAdd": [
+      "editorial/pending/import-ready-2026-11-03-0542.json",
+      "editorial/pending/recheck-2026-11-03-0542.json",
+      "editorial/pending/development-handoff-2026-11-03-0542.md"
+    ]
+  }
+}
