@@ -251,5 +251,30 @@
       "status": "لا feed ID مطابق؛ بيان الإطلاق يذكر ChatGPT Work وdots، لكن صفحة الدعم لا تسردهما ضمن التطبيقات المدعومة حاليًا؛ لا يعمم التوفر."
     }
   ],
-  "importDecision": "أُضيفت 47 بطاقة خبرية مطابقة حرفيًا إلى editorial على فرع PR، إضافة إلى بطاقة مشروع واحدة بمعرفها الأصلي. بقيت 11 بطاقة غير مطابقة خارج editorial في pending، كما بقيت السجلات السبعة seen-only خارج الاستيراد. لم تتغير feed.json أو seen.json أو status.json."
+  "importDecision": "أُضيفت 47 بطاقة خبرية مطابقة حرفيًا إلى editorial على فرع PR، إضافة إلى بطاقة مشروع واحدة بمعرفها الأصلي. بقيت 11 بطاقة غير مطابقة خارج editorial في pending، كما بقيت السجلات السبعة seen-only خارج الاستيراد. لم تتغير feed.json أو seen.json أو status.json.",
+  "ciRun": {
+    "id": 41742622089,
+    "headSha": "ec7b8e0044e8406928c8da466519839d047eb5af",
+    "status": "completed",
+    "conclusion": "success",
+    "officialChecks": [
+      "python -m unittest discover -s tests -v",
+      "python scripts/editorial.py validate",
+      "node --check site/app.js",
+      "node --check site/ideas.js"
+    ],
+    "note": "validate شمل site/data/editorial.json المدمج؛ لم يشمل ملف incoming منفردًا."
+  },
+  "localCommandsNotRun": [
+    "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-11-04-0238.json",
+    "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-11-04-0238.json",
+    "python -m unittest discover -s tests -v"
+  ],
+  "publicationVerification": {
+    "mainWorkflowRun": 41738294978,
+    "workflowConclusion": "success",
+    "deployStep": "success",
+    "liveEndpointVerification": "unavailable_browser_disabled_error",
+    "confirmedPublished": false
+  }
 }
