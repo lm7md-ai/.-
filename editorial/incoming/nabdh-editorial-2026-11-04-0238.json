@@ -1,0 +1,208 @@
+{
+  "version": 1,
+  "items": {
+    "c9a7e4fb7976ab0a77": {
+      "url": "https://github.com/Neywa-Labs/mlx-audio",
+      "titleAr": "MLX-Audio — مكتبة صوت محلية على أجهزة Apple Silicon",
+      "summaryAr": "مكتبة Python مبنية على MLX تجمع تحويل النص إلى كلام (TTS)، والتعرّف على الكلام (STT)، والتحويل بين الكلام (STS)، وتوليد الموسيقى. توفر واجهة سطر أوامر وواجهة Python وخادم API متوافقًا مع واجهات OpenAI الصوتية، مع تنفيذ الاستدلال محليًا على أجهزة Apple Silicon.",
+      "whyItMatters": "تختصر تعدد أدوات الصوت في واجهة واحدة، وتتيح معالجة الملفات محليًا بدل إرسالها تلقائيًا إلى خدمة سحابية. قيمتها تعتمد على اختيار النموذج وقياس جودة اللغة وزمن الاستجابة والذاكرة؛ وجود المكتبة لا يعني أن كل نموذج يدعم العربية أو أن جودة النطق متساوية.",
+      "audience": "مطورو Python والباحثون ومطورو تطبيقات الصوت الذين يملكون جهاز Mac بمعالج Apple Silicon ويريدون تجربة نماذج TTS وSTT محليًا أو تقديمها عبر API محلي.",
+      "nextSteps": [
+        "حدد المهمة المطلوبة: تحويل نص إلى كلام أو تفريغ صوت أو معالجة كلام.",
+        "راجع صفحة النموذج المختار وتأكد من دعمه للغة المطلوبة، خصوصًا العربية واللهجات.",
+        "ثبّت الحزمة على جهاز Apple Silicon وابدأ بنموذج صغير أو نسخة مكمّمة.",
+        "جرّب عينة قصيرة مرخّصة وسجّل زمن التحميل والتوليد واستهلاك الذاكرة وجودة الناتج.",
+        "إذا احتجت API محليًا، اختبر الخادم مع تقييد الوصول وعدم فتحه للإنترنت دون مصادقة."
+      ],
+      "limitations": "يتطلب جهاز Mac بمعالج Apple Silicon؛ لا يعمل مباشرة على Android أو Windows x86. يتطلب Python 3.10+ وإطار MLX، ويثبت pyproject.toml الإصدار mlx==0.32.4. تنزيل أوزان النماذج يحتاج اتصالًا ومساحة تخزين، وتختلف اللغات والجودة والذاكرة حسب checkpoint؛ تراخيص الأوزان قد تختلف عن ترخيص الشيفرة MIT ولم تُراجع جميعها. ffmpeg مطلوب لصيغ MP3 وFLAC وOGG وOpus وVorbis، بينما WAV لا يحتاجه. لا توجد خدمة استضافة سحابية مُدارة ضمن المشروع؛ الاستدلال موثق محليًا، وأي استضافة بعيدة تتطلب مضيف Apple Silicon وإعدادًا أمنيًا مستقلًا. لم يُشغّل المشروع في هذه المراجعة. لا ينبغي استخدام TTS الآلي بديلًا عن التلاوة الدينية المضبوطة أو تسجيل أصوات أشخاص دون موافقتهم.",
+      "reviewedAt": "2026-11-04T02:38:40+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "المستودع الرسمي وREADME",
+          "url": "https://github.com/Neywa-Labs/mlx-audio"
+        },
+        {
+          "title": "دليل التثبيت الرسمي",
+          "url": "https://github.com/Neywa-Labs/mlx-audio/blob/main/docs/getting-started/installation.md"
+        },
+        {
+          "title": "دليل البدء عبر CLI",
+          "url": "https://github.com/Neywa-Labs/mlx-audio/blob/main/docs/getting-started/quickstart-cli.md"
+        },
+        {
+          "title": "دليل البدء عبر Python",
+          "url": "https://github.com/Neywa-Labs/mlx-audio/blob/main/docs/getting-started/quickstart-python.md"
+        },
+        {
+          "title": "تعريف الاعتماديات والمتطلبات",
+          "url": "https://github.com/Neywa-Labs/mlx-audio/blob/main/pyproject.toml"
+        },
+        {
+          "title": "ترخيص MIT للشيفرة",
+          "url": "https://github.com/Neywa-Labs/mlx-audio/blob/main/LICENSE"
+        }
+      ],
+      "overview": "طبقة تشغيل موحدة لنماذج الصوت على MLX. تتضمن TTS وSTT وSTS والموسيقى، ومحوّلات لعدد كبير من checkpoints، وواجهات CLI وPython. كما توفر خادم FastAPI وواجهة Studio اختيارية ونقاط API صوتية متوافقة مع نمط OpenAI. تُحمّل أوزان النماذج من مستودعاتها أو من مسارات محلية ثم يجري الاستدلال على الجهاز؛ لذلك لا يحتاج الاستخدام المحلي إلى مفتاح API أو فاتورة استدلال سحابية، لكنه يستهلك موارد الجهاز ومساحة التخزين.",
+      "requirements": "المتطلبات الرسمية: Mac بمعالج Apple Silicon من عائلة M، وPython 3.10 أو أحدث، وإطار MLX. يحدد pyproject.toml الاعتماد الأساسي mlx==0.32.4 إلى جانب numpy وscipy وtransformers ومكتبات الصوت. توجد مجموعات اختيارية مثل tts وstt وsts وserver وall. يحتاج ffmpeg إلى صيغ MP3/FLAC/OGG/Opus/Vorbis؛ WAV يعمل بدونه. لم يحدد README حدًا أدنى موحدًا للذاكرة؛ اختر checkpoint ودرجة quantization وفق ذاكرة الجهاز. محليًا لا توجد رسوم API لكل طلب، لكن توجد كلفة الجهاز والكهرباء والتخزين وتنزيل الأوزان. المشروع ليس خدمة سحابية مُدارة؛ تشغيله بعيدًا يتطلب مضيف Apple Silicon ومراقبة ومصادقة وحماية للشبكة. بدائل حسب المهمة: whisper.cpp أو faster-whisper للتفريغ، وPiper لتحويل النص إلى كلام على منصات أخرى؛ لكنها ليست بديلًا موحدًا لكل وظائف MLX-Audio.",
+      "quickStart": "python -m venv .venv\nsource .venv/bin/activate\npython -m pip install -U pip\npip install -U mlx-audio\nmlx_audio.tts.generate --model mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit --text 'Hello, world!' --voice Vivian --lang_code English\npython -m mlx_audio.stt.generate --model mlx-community/whisper-large-v3-turbo-asr-fp16 --audio audio.wav --output-path output --format json --verbose\nقد ينزّل أول تشغيل أوزان النموذج؛ راجع ترخيص checkpoint وحجمه ودعم اللغة قبل الاستخدام.",
+      "improvements": [
+        {
+          "title": "Benchmark عربي قابل لإعادة الإنتاج لـ TTS وSTT",
+          "problem": "تختلف جودة العربية واللهجات بين checkpoints ولا تكفي قائمة اللغات العامة لمقارنة النماذج.",
+          "approach": "مجموعة تقييم اختيارية بملفات صوت مرخّصة ونصوص مرجعية موثقة مع قياس WER/CER وRTF وزمن التحميل وتقييم استماع بشري.",
+          "stack": "Python، MLX-Audio، jiwer، pandas، pytest، وmanifest JSON.",
+          "steps": [
+            "حدد نطاقًا محدودًا من العربية الفصحى ولهجتين مع بيانات مرخّصة.",
+            "أنشئ تفريغات مرجعية يراجعها محررون وسجل مصدر كل ملف.",
+            "شغّل نماذج STT على الجهاز نفسه وبالإعدادات المعلنة.",
+            "احسب WER وCER وزمن المعالجة نسبة إلى مدة الصوت.",
+            "أضف تقييم TTS أعمى وانشر القيود وحجم العينة."
+          ],
+          "metric": "WER/CER لكل مجموعة، وRTF، وزمن أول مقطع، وتقييم وضوح بشري مع حجم عينة معلن.",
+          "difficulty": "متوسطة إلى مرتفعة — تقدير 2–3 أسابيع.",
+          "risks": "تحيز اللهجات وحقوق التسجيلات وتفاوت الميكروفونات وعدم صلاحية رقم واحد لترتيب جودة كل الاستخدامات.",
+          "sources": [
+            {
+              "title": "MLX-Audio repository",
+              "url": "https://github.com/Neywa-Labs/mlx-audio"
+            },
+            {
+              "title": "jiwer word error rate utilities",
+              "url": "https://github.com/jitsi/jiwer"
+            }
+          ]
+        },
+        {
+          "title": "مصفوفة قياس الذاكرة والسرعة حسب checkpoint وquantization",
+          "problem": "قد ينجح نموذج في التحميل لكنه يستهلك ذاكرة كبيرة أو يتأخر عند أول طلب.",
+          "approach": "أداة قياس تسجل زمن التحميل البارد والدافئ وRTF والذاكرة القصوى وحجم الأوزان وإعدادات quantization في JSON.",
+          "stack": "Python، MLX، psutil، JSON، pandas، pytest.",
+          "steps": [
+            "حدد checkpoints وأحجامًا معلنة للاختبار.",
+            "نفذ warm-up موحدًا ثم عدة تشغيلات على الجهاز نفسه.",
+            "سجل زمن التحميل والتوليد والذاكرة وإصدار MLX.",
+            "احفظ النتائج مع طراز الجهاز وإعدادات quantization.",
+            "امنع مقارنة نتائج أجهزة مختلفة دون توثيق."
+          ],
+          "metric": "الذاكرة القصوى، وزمن التحميل، وRTF، وتباين النتائج بين التشغيلات.",
+          "difficulty": "متوسطة — تقدير أسبوع إلى أسبوعين.",
+          "risks": "قياس الذاكرة الموحدة قد يختلف عن الأدوات التقليدية وتتأثر النتائج بالحرارة والعمليات الخلفية.",
+          "sources": [
+            {
+              "title": "MLX-Audio repository",
+              "url": "https://github.com/Neywa-Labs/mlx-audio"
+            },
+            {
+              "title": "Apple MLX documentation",
+              "url": "https://ml-explore.github.io/mlx/build/html/index.html"
+            }
+          ]
+        },
+        {
+          "title": "تقوية خادم الصوت المحلي بحدود وصول افتراضية آمنة",
+          "problem": "API محلي متوافق يحتاج مصادقة وحدود طلبات وتقييدًا للأصول وحجم الملفات عند توسيع الوصول الشبكي.",
+          "approach": "إعدادات اختيارية للمصادقة وحدود حجم ومدة الصوت وقائمة نماذج مسموحة ومحدد معدل وسجل تدقيق لا يحتوي الصوت افتراضيًا.",
+          "stack": "FastAPI، Pydantic، middleware للمصادقة وتحديد المعدل، pytest.",
+          "steps": [
+            "أبق وضع localhost هو الافتراضي.",
+            "أضف مصادقة اختيارية عند تغيير host إلى عنوان شبكي.",
+            "ضع حدودًا لحجم الملفات والمدة والطلبات المتزامنة.",
+            "اسمح بقائمة checkpoints يحددها المشغل.",
+            "اختبر الرفض وسجلات التدقيق وعدم حفظ الصوت دون إعداد صريح."
+          ],
+          "metric": "نسبة رفض الطلبات غير المصرح بها وحدود استهلاك الذاكرة وزمن الاستجابة تحت الحمل.",
+          "difficulty": "متوسطة — تقدير 1–2 أسبوع.",
+          "risks": "قد تؤثر الحدود الصارمة في البث والملفات الطويلة؛ يلزم توثيق إعدادات الشبكة وعدم تسجيل بيانات حساسة.",
+          "sources": [
+            {
+              "title": "MLX-Audio API server guide",
+              "url": "https://github.com/Neywa-Labs/mlx-audio/blob/main/docs/guides/web-ui-api-server.md"
+            },
+            {
+              "title": "FastAPI security documentation",
+              "url": "https://fastapi.tiangolo.com/tutorial/security/"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "دفتر محاضرات صوتي محلي مع طوابع زمنية",
+          "problem": "يحتاج الطالب إلى تحويل تسجيل يملك حق استخدامه إلى نص قابل للبحث دون رفعه إلى خدمة خارجية.",
+          "approach": "تطبيق سطح مكتب يستعمل STT محليًا ويقسم التفريغ إلى مقاطع زمنية ويصدر Markdown وSRT وJSON مع مراجعة بشرية.",
+          "stack": "Python، MLX-Audio، SQLite، PySide أو واجهة ويب محلية.",
+          "steps": [
+            "استورد ملفًا صوتيًا محليًا مع إظهار حجمه ومدته.",
+            "اختر نموذج STT يدعم اللغة المطلوبة.",
+            "ولّد التفريغ والطوابع الزمنية محليًا.",
+            "أتح تصحيح النص وربط الفقرات بموضعها الصوتي.",
+            "صدّر Markdown وSRT وJSON مع حفظ المصدر."
+          ],
+          "metric": "نسبة الكلمات المصححة بعد المراجعة وزمن التفريغ ونسبة نجاح الاستعادة.",
+          "difficulty": "متوسطة — تقدير 2–3 أسابيع.",
+          "risks": "جودة العربية تتغير حسب النموذج واللهجة؛ يجب حماية التسجيلات والحصول على إذن أصحابها.",
+          "sources": [
+            {
+              "title": "MLX-Audio Python quickstart",
+              "url": "https://github.com/Neywa-Labs/mlx-audio/blob/main/docs/getting-started/quickstart-python.md"
+            }
+          ]
+        },
+        {
+          "title": "قارئ صوتي محلي للمستندات التعليمية",
+          "problem": "قد يحتاج بعض المستخدمين إلى الاستماع إلى نصوص تعليمية يملكونها بدل قراءتها على الشاشة.",
+          "approach": "أداة تستخرج نصًا من مستندات مسموح بها وتقسمه إلى فقرات ثم تولد ملفات صوتية محلية مع قائمة تحقق للنطق والأسماء.",
+          "stack": "Python، MLX-Audio TTS، MarkItDown، واجهة محلية، JSON.",
+          "steps": [
+            "استورد مستندًا يملك المستخدم حق معالجته.",
+            "استخرج النص وقسمه إلى فقرات قصيرة.",
+            "اختر checkpoint يدعم اللغة والصوت المطلوبين.",
+            "ولّد الصوت واحفظه محليًا مع ربطه بالنص.",
+            "أتح مراجعة بشرية قبل مشاركة الملفات."
+          ],
+          "metric": "نسبة الفقرات المولدة بنجاح ووضوح النطق في عينة مراجعة.",
+          "difficulty": "متوسطة — تقدير أسبوعين.",
+          "risks": "أخطاء النطق والأسماء وتراخيص المستندات والأوزان؛ لا يناسب النصوص التي تتطلب ضبطًا حرفيًا متخصصًا.",
+          "sources": [
+            {
+              "title": "MLX-Audio TTS quickstart",
+              "url": "https://github.com/Neywa-Labs/mlx-audio/blob/main/docs/getting-started/quickstart-cli.md"
+            },
+            {
+              "title": "Microsoft MarkItDown",
+              "url": "https://github.com/microsoft/markitdown"
+            }
+          ]
+        },
+        {
+          "title": "ورشة محلية لمراجعة تفريغ البودكاست والترجمة",
+          "problem": "تتوزع عملية تحويل الحلقة إلى نص وترجمة ومقاطع على أدوات متعددة ويصعب تتبع تعديلات المحرر.",
+          "approach": "واجهة محلية تجمع التفريغ والطوابع الزمنية وتحرير النص وتصدير SRT مع سجل تغييرات ومراجعة قبل النشر.",
+          "stack": "Python، MLX-Audio STT، SQLite، SRT، pytest.",
+          "steps": [
+            "أدخل ملفًا صوتيًا مرخصًا وحدد لغة التفريغ.",
+            "أنشئ التفريغ والطوابع الزمنية.",
+            "قسم النص إلى مقاطع قابلة للتحرير.",
+            "أضف ترجمة يراجعها محرر بشري.",
+            "صدّر SRT ونسخة نصية مع سجل التعديلات."
+          ],
+          "metric": "زمن التحرير لكل دقيقة صوت ونسبة أخطاء التوقيت بعد المراجعة.",
+          "difficulty": "متوسطة — تقدير 2–4 أسابيع.",
+          "risks": "التعرف على المتحدثين قد يخطئ والترجمة تحتاج مراجعة ولا تستخدم أصوات أشخاص دون موافقتهم.",
+          "sources": [
+            {
+              "title": "MLX-Audio repository",
+              "url": "https://github.com/Neywa-Labs/mlx-audio"
+            },
+            {
+              "title": "MLX-Audio streaming STT guide",
+              "url": "https://github.com/Neywa-Labs/mlx-audio/blob/main/docs/guides/streaming-stt.md"
+            }
+          ]
+        }
+      ],
+      "religious": []
+    }
+  }
+}

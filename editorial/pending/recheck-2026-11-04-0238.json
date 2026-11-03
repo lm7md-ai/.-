@@ -1,0 +1,255 @@
+{
+  "version": 1,
+  "runAt": "2026-11-04T02:38:40+03:00",
+  "mainCommit": "96afdfd9b08440c26a958021db08d3941b48911f",
+  "feedGeneratedAt": "2026-11-03T23:20:11+00:00",
+  "feedSha": "43a94131f9cd5b63d4e42f8125800c5065df68f8",
+  "editorialSha": "94f3046b68f8d3cbe259a5d55592c1a53019aaac",
+  "pr80HeadBefore": "9d4d660cc25ae5c2a928da6607d026bec18c4b91",
+  "counts": {
+    "legacyIncomingFiles": 65,
+    "legacyIncomingRows": 606,
+    "legacyAuditReference": "editorial/pending/recheck-2026-11-03-1138.json",
+    "legacyAuditMainCommit": "154dd4753029b02ca91b614c1b8ba2adb4d97040",
+    "legacyAuditNote": "أعيد استخدام التدقيق البنيوي السابق لـ65 ملفًا؛ لم تُنزّل الملفات الـ65 كلها مجددًا. أُعيدت مطابقة السجلات السبعة غير المطابقة السابقة والسجلات الثلاثة الخاصة مع feed/editorial الحالي، وما زالت غائبة.",
+    "legacyImportedExactRows": 599,
+    "legacySeenOnlyStillAbsent": 7,
+    "legacyIdUrlMismatches": 0,
+    "legacyConfirmedExpired": 0,
+    "newPrIncomingFiles": 4,
+    "newPrIncomingAppearances": 59,
+    "newPrIncomingUniqueIds": 58,
+    "duplicateAppearances": 1,
+    "exactCurrentFeedUniqueIds": 47,
+    "notInCurrentFeed": 11,
+    "urlMismatches": 0,
+    "structuralErrors": 0,
+    "newActiveNewsImportedToPr": 47,
+    "newProjectCardsImportedToPr": 1,
+    "mainEditorialBefore": 639,
+    "branchEditorialAfter": 687,
+    "oldEditorialRecordsPreservedExactly": 639,
+    "oldEditorialRecordsChanged": 0,
+    "oldEditorialRecordsDeleted": 0,
+    "historicalLibraryBefore": 43,
+    "historicalLibraryAfter": 44,
+    "historicalLibraryArchived": 2,
+    "historicalLibraryNonArchived": 42,
+    "historicalLibraryInCurrentFeed": 7,
+    "historicalLibraryResearchOnly": 37,
+    "licensesNeedingUpstreamVerification": 7,
+    "previousEightProjectsReviewed": 8,
+    "previousEightActive": 8,
+    "previousEightArchived": 0
+  },
+  "legacyUnmatchedIds": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "label": "NVIDIA OpenShell",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "label": "Canva Craft",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "label": "1Password agent sign-in",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    },
+    {
+      "id": "87d27a9f8a0972f507",
+      "label": "خبر حادث أمني في منصة أصول رقمية",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    },
+    {
+      "id": "65eeab64fed21e0b54",
+      "label": "تسوية خصوصية بيانات قيادة السيارات",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    },
+    {
+      "id": "d674dea922625d0be8",
+      "label": "غرامة CNIL على Fnac Darty",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    },
+    {
+      "id": "967be99077d13f07b2",
+      "label": "مقارنة تكلفة بناء تطبيق عبر أطر JavaScript",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    }
+  ],
+  "newUnmatched": [
+    {
+      "id": "32b3bf2b225f3d4c44",
+      "title": "تجربة MIT لبرمجة أوزان الشبكات العصبية مباشرة بواسطة نموذج لغوي",
+      "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+      "file": "2039",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "state": "not_in_current_feed",
+      "decision": "pending_not_imported",
+      "reason": "المعرف غير موجود في feed.json الحالي؛ لم يُنشأ معرف بديل ولم يُستورد السجل."
+    },
+    {
+      "id": "5010fb296f767bbc9b",
+      "title": "مقال Terry Tao عن الرياضيات في عصر الذكاء الاصطناعي",
+      "url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/",
+      "file": "2039",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "state": "not_in_current_feed",
+      "decision": "pending_not_imported",
+      "reason": "المعرف غير موجود في feed.json الحالي؛ لم يُنشأ معرف بديل ولم يُستورد السجل."
+    },
+    {
+      "id": "327e862bb29c2bb4f7",
+      "title": "Meituan LongCat-2.5 متعدد الوسائط",
+      "url": "https://longcat.ai/blog/longcat-2.5/",
+      "file": "2039",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "state": "not_in_current_feed",
+      "decision": "pending_not_imported",
+      "reason": "المعرف غير موجود في feed.json الحالي؛ لم يُنشأ معرف بديل ولم يُستورد السجل."
+    },
+    {
+      "id": "dc7eb9e8885fba4465",
+      "title": "ورقة عن زرع سلوك خفي في الوكلاء",
+      "url": "https://arxiv.org/abs/2610.37741",
+      "file": "2039",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "state": "not_in_current_feed",
+      "decision": "pending_not_imported",
+      "reason": "المعرف غير موجود في feed.json الحالي؛ لم يُنشأ معرف بديل ولم يُستورد السجل."
+    },
+    {
+      "id": "56a1a96015a9777801",
+      "title": "Polyend Tracker",
+      "url": "https://polyend.com/whats-up/tracker-the-biggest-update-yet/",
+      "file": "2039",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "state": "not_in_current_feed",
+      "decision": "pending_not_imported",
+      "reason": "المعرف غير موجود في feed.json الحالي؛ لم يُنشأ معرف بديل ولم يُستورد السجل."
+    },
+    {
+      "id": "cb87f0ba6d1c74466f",
+      "title": "Docker agent collaboration",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxObHNVY2RGNWxZajhMalAxVDRBVXVZRF95ZEV6eUM3QTlOMkl3bGpZUlNSaVZZUmxqcVAtVDVpRThIXzc4eExtcmdEdDlZYWt1SXR3aC1qR0JURUxtTVQxb3JGRDNOSkRCZXhna1cxMC1aeFRPekZaTWNJZVJoNHlWOA?oc=5",
+      "file": "2039",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "state": "not_in_current_feed",
+      "decision": "pending_not_imported",
+      "reason": "المعرف غير موجود في feed.json الحالي؛ لم يُنشأ معرف بديل ولم يُستورد السجل."
+    },
+    {
+      "id": "5b9f2f37879a136ac2",
+      "title": "حادث أمني يؤثر في أنظمة تبريد متاجر أوروبية",
+      "url": "https://www.bbc.co.uk/news/articles/ckpqg8lve73go?at_medium=RSS&at_campaign=rss",
+      "file": "2039",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "state": "not_in_current_feed",
+      "decision": "pending_not_imported",
+      "reason": "المعرف غير موجود في feed.json الحالي؛ لم يُنشأ معرف بديل ولم يُستورد السجل."
+    },
+    {
+      "id": "3e8a8aa6133203ad02",
+      "title": "Momentic Mo testing agent",
+      "url": "https://momentic.ai/",
+      "file": "2039",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "state": "not_in_current_feed",
+      "decision": "pending_not_imported",
+      "reason": "المعرف غير موجود في feed.json الحالي؛ لم يُنشأ معرف بديل ولم يُستورد السجل."
+    },
+    {
+      "id": "5f4b9fdfeb2042b971",
+      "title": "Google XCPE Android botnet",
+      "url": "https://www.theverge.com/1024807/google-botnet-android-tv-shut-down",
+      "file": "2136",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2136.json",
+      "state": "not_in_current_feed",
+      "decision": "pending_not_imported",
+      "reason": "المعرف غير موجود في feed.json الحالي؛ لم يُنشأ معرف بديل ولم يُستورد السجل."
+    },
+    {
+      "id": "f6417c66c0228f42d3",
+      "title": "Meta Quest 2/Pro feature updates",
+      "url": "https://www.theverge.com/tech/1024835/meta-vr-quest-2-pro-os-end-updates",
+      "file": "2136",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2136.json",
+      "state": "not_in_current_feed",
+      "decision": "pending_not_imported",
+      "reason": "المعرف غير موجود في feed.json الحالي؛ لم يُنشأ معرف بديل ولم يُستورد السجل."
+    },
+    {
+      "id": "1263ce4e09302da828",
+      "title": "Oracle $20B financing",
+      "url": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
+      "file": "2342",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2342.json",
+      "state": "not_in_current_feed",
+      "decision": "pending_not_imported",
+      "reason": "المعرف غير موجود في feed.json الحالي؛ لم يُنشأ معرف بديل ولم يُستورد السجل."
+    }
+  ],
+  "duplicateIncoming": [
+    {
+      "id": "c01265aacc1a10af6e",
+      "files": [
+        "2039",
+        "2136"
+      ],
+      "decision": "احتُفظ ببطاقة واحدة من النسخة الأحدث في 2136؛ لم يتغير id أو url."
+    }
+  ],
+  "specialChecks": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "name": "NVIDIA OpenShell",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "officialRepository": "https://github.com/NVIDIA/OpenShell",
+      "status": "نشط وغير مؤرشف؛ Apache-2.0؛ وثائق v0.1.6 تقيد Windows إلى WSL2 تجريبي. لقطة GitHub: 21,045 stars و2,059 forks و609 open_issues_count؛ pushedAt لاحق بدقيقتين لوقت القياس فلا يستخدم كدليل نشاط مؤكد."
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "name": "Canva Craft",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "officialSources": [
+        "https://www.canva.com/newsroom/news/canva-craft/",
+        "https://www.canva.com/newsroom/news/new-apis-data-connectors/"
+      ],
+      "status": "لا feed ID مطابق؛ يبقى seen-only ولا تنشأ هوية بديلة. أرقام DesignArena ادعاءات Canva وليست قياسًا مستقلًا."
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "name": "1Password agent sign-in",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "officialSources": [
+        "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents",
+        "https://support.1password.com/1password-for-agents/",
+        "https://1password.com/personal-ai-agent-integrations"
+      ],
+      "status": "لا feed ID مطابق؛ بيان الإطلاق يذكر ChatGPT Work وdots، لكن صفحة الدعم لا تسردهما ضمن التطبيقات المدعومة حاليًا؛ لا يعمم التوفر."
+    }
+  ],
+  "importDecision": "أُضيفت 47 بطاقة خبرية مطابقة حرفيًا إلى editorial على فرع PR، إضافة إلى بطاقة مشروع واحدة بمعرفها الأصلي. بقيت 11 بطاقة غير مطابقة خارج editorial في pending، كما بقيت السجلات السبعة seen-only خارج الاستيراد. لم تتغير feed.json أو seen.json أو status.json."
+}

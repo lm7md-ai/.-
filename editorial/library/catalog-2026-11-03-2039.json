@@ -1,19 +1,19 @@
 {
   "version": 1,
-  "compiledAt": "2026-11-03T20:39:34+03:00",
-  "note": "Cumulative research snapshot. Existing 42 entries and their original order are preserved; NVIDIA Auto Ontology is appended as research-only because its feed record is kind=news, not kind=project.",
-  "metricsWarning": "Metrics are snapshots, not quality rankings. Entries 1–42 retain their prior measurement dates; entry 43 was measured on 2026-11-03 and its last-push timestamp was not verified.",
-  "measurementWindow": "Entries 1–42 retain their original measurement windows; entry 43 measured 2026-11-03T20:39:34+03:00.",
+  "compiledAt": "2026-11-04T02:38:40+03:00",
+  "note": "Cumulative research snapshot. Existing 42 entries and their original order are preserved; NVIDIA Auto Ontology is appended as research-only because its feed record is kind=news, not kind=project. New entry 44 is MLX-Audio, enriched with its original feed ID; no test run is claimed.",
+  "metricsWarning": "Metrics are snapshots, not quality rankings. Entries 1–42 retain prior measurement dates; entry 43 was measured 2026-11-03; entry 44 measured 2026-11-04. Do not infer daily growth.",
+  "measurementWindow": "Entries 1–42 retain prior measurement windows; entry 43 measured 2026-11-03T20:39:34+03:00; entry 44 measured 2026-11-04T02:38:40+03:00.",
   "statusSummary": {
-    "total": 43,
+    "total": 44,
     "archived": 2,
-    "nonArchived": 41,
-    "inCurrentFeed": 6,
+    "nonArchived": 42,
+    "inCurrentFeed": 7,
     "notInFeed": 37,
     "licenseNeedsUpstreamVerification": 7,
-    "enrichedInCurrentFeed": 6
+    "enrichedInCurrentFeed": 7
   },
-  "developerIntegrationNotes": "Provide a separate historical projects catalog independent of the 45-day GitHub discovery window.,Keep durable canonical GitHub repository identity and documented status rather than using active feed IDs for out-of-feed projects.,Do not purge library dossiers when feed items rotate; maintain persistent links for bookmarks.,Show license and activity measurement timestamps and mark archived/mirror projects explicitly.,Do not use cumulative GitHub stars as current popularity.,اعرض المستودعات البحثية غير الموجودة في feed بوضوح على أنها research-only؛ لا تنشئ معرفات feed بديلة.,أظهر measuredAt لكل لقطة، ولا تقارن مؤشرات التوقيتات المختلفة كأنها متزامنة. Lasm is research-only and not in the project feed; do not add it to public project cards without a later explicit editorial review. NVIDIA/OpenShell is research-only and absent from feed. Future library UI should show «بحث فقط — غير منشور», measuredAt, Apache-2.0, supported platforms, requirements, local/cloud costs, alternatives and limitations; no feed ID or run/publish button. Show Pydantic AI as research-only, not in feed; display Python 3.11+, MIT, measuredAt, local Ollama vs cloud API costs, alternatives and limitations; no feed ID or run/publish button. Show uv as research-only, not in feed; display MIT OR Apache-2.0, measuredAt, standalone install, local versus CI costs, quickStart and alternatives. Do not assign a feed ID or show run/publish actions. Show AI Engineering Hub with its exact feed ID fe0e6bfdbdd5822139. Detail view should label it as a collection of independent tutorials, show per-folder requirements and quickStart, local/cloud cost, license caveats, alternatives, limitations, and the 4 improvements plus 4 spinoffs in preserved order. Do not show a tested badge or run action; testStatus is not_run. For getify/You-Dont-Know-JS, show it as an educational book series (not an executable package), display the CC BY-NC-ND 4.0 restriction and completion/closed-contributions status, and do not offer an install/run action. WebAnything must remain research-only in the catalog; its feed reference is a news item, not a project card. If surfaced in research UI, show alpha status, MIT-for-code-only scope, external 244-site artifact store, provider API cost, access/ToS limits, and absence of full corpus.",
+  "developerIntegrationNotes": "Provide a separate historical projects catalog independent of the 45-day GitHub discovery window.,Keep durable canonical GitHub repository identity and documented status rather than using active feed IDs for out-of-feed projects.,Do not purge library dossiers when feed items rotate; maintain persistent links for bookmarks.,Show license and activity measurement timestamps and mark archived/mirror projects explicitly.,Do not use cumulative GitHub stars as current popularity.,اعرض المستودعات البحثية غير الموجودة في feed بوضوح على أنها research-only؛ لا تنشئ معرفات feed بديلة.,أظهر measuredAt لكل لقطة، ولا تقارن مؤشرات التوقيتات المختلفة كأنها متزامنة. Lasm is research-only and not in the project feed; do not add it to public project cards without a later explicit editorial review. NVIDIA/OpenShell is research-only and absent from feed. Future library UI should show «بحث فقط — غير منشور», measuredAt, Apache-2.0, supported platforms, requirements, local/cloud costs, alternatives and limitations; no feed ID or run/publish button. Show Pydantic AI as research-only, not in feed; display Python 3.11+, MIT, measuredAt, local Ollama vs cloud API costs, alternatives and limitations; no feed ID or run/publish button. Show uv as research-only, not in feed; display MIT OR Apache-2.0, measuredAt, standalone install, local versus CI costs, quickStart and alternatives. Do not assign a feed ID or show run/publish actions. Show AI Engineering Hub with its exact feed ID fe0e6bfdbdd5822139. Detail view should label it as a collection of independent tutorials, show per-folder requirements and quickStart, local/cloud cost, license caveats, alternatives, limitations, and the 4 improvements plus 4 spinoffs in preserved order. Do not show a tested badge or run action; testStatus is not_run. For getify/You-Dont-Know-JS, show it as an educational book series (not an executable package), display the CC BY-NC-ND 4.0 restriction and completion/closed-contributions status, and do not offer an install/run action. WebAnything must remain research-only in the catalog; its feed reference is a news item, not a project card. If surfaced in research UI, show alpha status, MIT-for-code-only scope, external 244-site artifact store, provider API cost, access/ToS limits, and absence of full corpus.\nFor Neywa-Labs/mlx-audio show exact feed ID c9a7e4fb7976ab0a77, Apple-Silicon-only requirement, Python 3.10+, MIT for repository code, optional ffmpeg, local inference, model-specific language support and separate model-weight licenses. Do not show a tested badge; no testEvidence exists.",
   "entries": [
     {
       "priority": 1,
@@ -2707,10 +2707,83 @@
       },
       "currentStatus": "active_non_archived; last push timestamp not verified",
       "currentLicenseStatus": "Apache-2.0 for repository-authored code; third-party notices must be reviewed separately"
+    },
+    {
+      "priority": 44,
+      "repository": "Neywa-Labs/mlx-audio",
+      "url": "https://github.com/Neywa-Labs/mlx-audio",
+      "category": "معالجة الصوت والذكاء الاصطناعي المحلي",
+      "classification": "active_non_archived",
+      "archived": false,
+      "starsMeasured": 8192,
+      "metricCapturedAt": "2026-11-04T02:38:40+03:00",
+      "licenseApiValue": "MIT",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "README وملفات التثبيت والبدء وخادم API وpyproject.toml وLICENSE تمت مراجعتها؛ لم ينفذ الكود أو تراجع كل تراخيص أوزان النماذج.",
+      "overviewShort": "مكتبة Python موحدة لـTTS وSTT وSTS والموسيقى على Apple Silicon باستخدام MLX، مع CLI وPython API وخادم محلي.",
+      "proposedResearchOrBuild": "Benchmark عربي قابل لإعادة الإنتاج لقياس WER/CER وRTF وجودة TTS على checkpoints مرخصة.",
+      "inCurrentFeed": true,
+      "feedId": "c9a7e4fb7976ab0a77",
+      "siteVisibility": "public project card; exact feed ID and URL match",
+      "sources": [
+        {
+          "title": "GitHub repository metadata and README",
+          "url": "https://github.com/Neywa-Labs/mlx-audio"
+        },
+        {
+          "title": "Installation guide",
+          "url": "https://github.com/Neywa-Labs/mlx-audio/blob/main/docs/getting-started/installation.md"
+        },
+        {
+          "title": "pyproject.toml",
+          "url": "https://github.com/Neywa-Labs/mlx-audio/blob/main/pyproject.toml"
+        },
+        {
+          "title": "MIT LICENSE",
+          "url": "https://github.com/Neywa-Labs/mlx-audio/blob/main/LICENSE"
+        }
+      ],
+      "disabled": false,
+      "forksMeasured": 783,
+      "openIssuesMeasured": 101,
+      "metricsCaptureWindow": "2026-11-04T02:38:40+03:00 (single GitHub metadata snapshot)",
+      "lastPushedAt": "2026-11-03T20:21:58Z",
+      "lastUpdatedAt": "2026-11-03T20:27:21Z",
+      "defaultBranch": "main",
+      "language": "Python",
+      "licenseName": "MIT License",
+      "licenseSummary": "MIT للشيفرة الأصلية؛ أوزان النماذج الخارجية قد تحمل تراخيص منفصلة.",
+      "licenseEvidence": "LICENSE الرسمي قُرئ وتأكد MIT؛ تراخيص checkpoints يجب فحصها منفردة.",
+      "activityStatus": "active_recent_push",
+      "alternativeProjects": [
+        "ggml-org/whisper.cpp",
+        "SYSTRAN/faster-whisper",
+        "rhasspy/piper"
+      ],
+      "metricSource": "https://github.com/Neywa-Labs/mlx-audio",
+      "editorialEnriched": true,
+      "editorialUrlMatches": true,
+      "currentSnapshot": {
+        "stars": 8192,
+        "forks": 783,
+        "openIssues": 101,
+        "archived": false,
+        "disabled": false,
+        "licenseSpdx": "MIT",
+        "pushedAt": "2026-11-03T20:21:58Z",
+        "updatedAt": "2026-11-03T20:27:21Z",
+        "defaultBranch": "main",
+        "language": "Python",
+        "measuredAt": "2026-11-04T02:38:40+03:00",
+        "sourceApiUrl": "https://github.com/Neywa-Labs/mlx-audio"
+      },
+      "currentStatus": "active_not_archived",
+      "currentLicenseStatus": "MIT repository code confirmed; model-weight licenses vary and need per-checkpoint review"
     }
   ],
-  "currentSnapshotSummary": "43 projects in the cumulative research catalog; 2 archived, 41 non-archived. Six project entries match the current project feed; Auto Ontology is research-only because the related feed record is news-kind.",
-  "measurementNote": "No bulk refresh of all 43 GitHub metrics was performed. Entries 1–42 retain their recorded measurement dates; the new entry records a current page snapshot and explicitly leaves last-push time unverified.",
+  "currentSnapshotSummary": "44 projects in the cumulative research catalog; 2 archived and 42 non-archived. Seven project entries match the current project feed; NVIDIA Auto Ontology remains research-only because its related feed record is news-kind.",
+  "measurementNote": "No bulk refresh of all 44 GitHub metrics was performed. Entries 1–42 retain their recorded measurement dates; entry 43 retains its 2026-11-03 snapshot; entry 44 records a 2026-11-04 snapshot. Last-push timestamps are not inferred where unverified.",
   "archivedAlternatives": [
     {
       "repo": "atom/atom",
@@ -2746,12 +2819,12 @@
     }
   ],
   "summary": {
-    "total": 43,
+    "total": 44,
     "archived": 2,
-    "nonArchived": 41,
-    "inCurrentFeed": 6,
+    "nonArchived": 42,
+    "inCurrentFeed": 7,
     "notInFeed": 37,
     "licenseNeedsUpstreamVerification": 7,
-    "enrichedInCurrentFeed": 6
+    "enrichedInCurrentFeed": 7
   }
 }
