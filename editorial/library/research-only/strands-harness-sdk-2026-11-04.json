@@ -1,0 +1,264 @@
+{
+  "version": 1,
+  "repository": "strands-agents/harness-sdk",
+  "canonicalUrl": "https://github.com/strands-agents/harness-sdk",
+  "titleAr": "Strands Harness SDK — إطار لبناء وكلاء Python وTypeScript",
+  "visibility": "research-only — held; current feed membership could not be verified, so no feed ID is assigned",
+  "measuredAt": "2026-11-04T17:38:56+03:00",
+  "repositoryState": {
+    "visibility": "public",
+    "defaultBranch": "main",
+    "archived": false,
+    "latestCommit": {
+      "sha": "a70987973243fc80a9c0e7d9b09f1932877f89ef",
+      "committedAt": "2026-10-30T19:28:08Z",
+      "url": "https://github.com/strands-agents/harness-sdk/commit/a70987973243fc80a9c0e7d9b09f1932877f89ef"
+    },
+    "stars": null,
+    "forks": null,
+    "openIssues": null,
+    "metricsNote": "لم تُرجع أداة GitHub المتاحة عدادات النجوم أو forks أو القضايا في هذا التشغيل؛ لم تُستبدل بأرقام من مواقع وسيطة."
+  },
+  "license": {
+    "repository": "Apache-2.0",
+    "evidence": "LICENSE.APACHE",
+    "pythonPackage": "Apache-2.0",
+    "typescriptPackage": "Apache-2.0",
+    "note": "الترخيص واضح في ملف LICENSE.APACHE وبيانات الحزم. راجع NOTICE وأي تراخيص مستقلة للأدوات أو النماذج أو الأوزان."
+  },
+  "basis": "readme",
+  "overview": "مستودع monorepo مفتوح المصدر من فريق AWS يجمع Strands Agents SDK وطبقة Harness جاهزة. يوفر Python وTypeScript، وحلقة وكيل قابلة للتخصيص، وأدوات وMCP ومخرجات منظمة وتعدد الوكلاء والذاكرة والجلسات والتتبع والتقييم. حزمة Harness تبني وكيلًا جاهزًا عبر create_harness() أو createHarness() وتعيد كائن Agent يمكن تعديل مكوناته. يعمل الوكيل داخل عملية التطبيق ولا يحتاج إلى control plane مستضاف من Strands، لكن مزود النموذج قد يكون سحابيًا ومدفوعًا.",
+  "requirements": {
+    "python": "Python 3.10+ لحزمة harness-py. المتطلبات الأساسية المعلنة تشمل strands-agents[otel]>=1.57.2,<2.0.0 وpydantic-monty==0.0.23 وpydantic>=2.5,<3.",
+    "typescript": "Node.js >=22 وفق engines في harness-ts/package.json، مع @strands-agents/sdk كـ peer dependency. صفحة quickstart المنشورة تذكر Node 20+؛ يوجد اختلاف توثيقي، لذا اعتمد قيد الحزمة 22+ إلى أن يُحسم.",
+    "providers": "مزودات Bedrock وAnthropic وOpenAI وGoogle، مع Ollama محليًا في مسار Python. تثبّت الإضافات الاختيارية حسب المزود مثل [ollama] أو [openai] أو [gemini].",
+    "local": "مسار Ollama يحتاج تشغيل الخدمة محليًا وسحب نموذج يدعم tool calling إذا ستستخدم الأدوات. لا يحتاج مفتاح API أو حسابًا سحابيًا، لكنه يستهلك موارد الجهاز والكهرباء والتخزين.",
+    "cloud": "Bedrock هو الافتراضي في Harness ويتطلب AWS credentials وصلاحية InvokeModel؛ استخدام Bedrock أو OpenAI أو Anthropic أو Gemini قد يترتب عليه رسوم بحسب النموذج والاستهلاك.",
+    "permissions": "الافتراضات تتضمن shell وfile tools وweb access وبعض إمكانات MCP؛ يجب تضييق الأدوات والمسارات والوجهات، واستخدام موافقة بشرية قبل الكتابة أو العمليات الخارجية."
+  },
+  "quickStart": {
+    "pythonLocal": [
+      "أنشئ بيئة Python افتراضية وثبّت Ollama.",
+      "ثبّت الحزمة: pip install \"strands-harness[ollama]\"",
+      "شغّل: ollama serve",
+      "اسحب نموذجًا يدعم الأدوات: ollama pull llama3.1",
+      "أنشئ ملف agent.py بالكود أدناه ثم شغّله: python agent.py"
+    ],
+    "pythonCode": "from strands_harness import create_harness\n\nagent = create_harness(model=\"ollama/llama3.1\")\nprint(agent(\"لخّص بنية هذا المستودع دون تعديل أي ملف.\"))\n",
+    "typescriptCloud": [
+      "أنشئ مشروع ESM باستخدام Node.js 22+.",
+      "ثبّت @strands-agents/harness وpeer dependency @strands-agents/sdk، ثم حزمة المزود التي اخترتها.",
+      "اضبط بيانات اعتماد المزود، وحدد model صراحة بدل الاعتماد على Bedrock الافتراضي."
+    ],
+    "typescriptCode": "import { createHarness } from '@strands-agents/harness'\n\nconst agent = await createHarness({ model: 'google/gemini-2.5-flash' })\nawait agent.invoke('اشرح بنية هذا المستودع دون تعديل ملفاته.')\n"
+  },
+  "costs": {
+    "software": "لا توجد رسوم ترخيص للمستودع وفق Apache-2.0.",
+    "local": "Ollama لا يفرض رسوم API؛ التكلفة العملية هي موارد الجهاز والكهرباء والتخزين. دعم Ollama الرسمي موثق لمسار Python.",
+    "cloud": "الإعداد الافتراضي في Harness يستخدم Amazon Bedrock/Claude Opus 5؛ يتطلب حساب AWS واستهلاكًا مدفوعًا. مزودات OpenAI وAnthropic وGoogle لها تسعيرها الخاص.",
+    "deployment": "النشر الذاتي أو على AWS يحتاج موارد تشغيل ومراقبة وتخزين؛ لا يوجد سعر موحد يمكن إثباته من README."
+  },
+  "alternatives": [
+    {
+      "name": "Pydantic AI",
+      "url": "https://github.com/pydantic/pydantic-ai",
+      "fit": "إطار Python مع تركيز قوي على الأنواع والتحقق والتقييم."
+    },
+    {
+      "name": "LangGraph",
+      "url": "https://github.com/langchain-ai/langgraph",
+      "fit": "أنسب عندما يكون تدفق العمل الرسم البياني والحالة طويلة الأمد محور التصميم."
+    },
+    {
+      "name": "OpenAI Agents SDK",
+      "url": "https://github.com/openai/openai-agents-python",
+      "fit": "خيار Python أخف عندما تكون بيئة OpenAI وأدواتها هي المقصودة."
+    }
+  ],
+  "limitations": [
+    "المستودع واسع ويجمع SDK وHarness وCLI وMCP؛ يجب اختيار الحزمة المناسبة بدل تثبيت monorepo كاملًا.",
+    "Bedrock الافتراضي قد يسبب تكلفة غير مقصودة إن لم يُحدد مزود محلي صراحة.",
+    "أدوات shell والملفات والويب توسّع أثر الوكيل؛ لا تمنحها صلاحيات كتابة عامة في أول تجربة.",
+    "Ollama موثق لمسار Python؛ لا تفترض تكافؤ الدعم المحلي في TypeScript.",
+    "يوجد اختلاف بين Node 20 في صفحة quickstart وNode >=22 في package.json؛ اعتمد package.json حاليًا.",
+    "لم يُبنَ المشروع أو يُشغّل في هذه المراجعة."
+  ],
+  "improvements": [
+    {
+      "title": "ملف تشغيل محلي مغلق على Ollama",
+      "problem": "قد يبدأ المستخدم بالإعداد الافتراضي السحابي ثم يتكبد رسومًا قبل أن ينتبه إلى المزود المختار.",
+      "approach": "إضافة preset محلي يفرض Ollama صراحة، ويتوقف برسالة واضحة إذا لم يكن الخادم أو النموذج متاحًا، دون fallback سحابي تلقائي.",
+      "stack": "Python + Strands Harness + Ollama + pytest",
+      "steps": [
+        "إضافة إعداد local_only موثق.",
+        "التحقق من عنوان Ollama والنموذج قبل إنشاء الوكيل.",
+        "رفض أي provider غير محلي عند تفعيل الوضع.",
+        "اختبار انقطاع Ollama واسم النموذج غير الموجود.",
+        "إظهار تنبيه بأن الموارد محلية وليست مجانية بلا تكلفة."
+      ],
+      "metric": "نسبة الجلسات التي تبقى محلية، وعدد حالات التحويل السحابي غير المقصود التي يمنعها الوضع.",
+      "difficulty": "متوسط — تقدير 4–6 أيام.",
+      "risks": "اختلاف دعم tool calling بين النماذج المحلية قد يقلل نجاح الأدوات.",
+      "sources": [
+        {
+          "title": "Strands harness quickstart",
+          "url": "https://strandsagents.com/docs/user-guide/harness/quickstart/"
+        },
+        {
+          "title": "Ollama provider",
+          "url": "https://strandsagents.com/docs/user-guide/sdk/model-providers/ollama/"
+        }
+      ]
+    },
+    {
+      "title": "بوابة صلاحيات وموافقة لأدوات الوكيل",
+      "problem": "وجود shell وfile tools وMCP في مساحة واحدة يجعل خطأ prompt أو اختيار أداة ذا أثر أكبر من مجرد إجابة نصية.",
+      "approach": "ملف سياسة deny-by-default يحدد مسارات القراءة والكتابة والوجهات الشبكية، ويطلب موافقة قبل الكتابة أو تنفيذ أفعال خارجية، مع سجل قرار قابل للمراجعة.",
+      "stack": "Python + Strands Interventions + MCP + JSON Schema",
+      "steps": [
+        "حصر الأدوات والعمليات الحساسة.",
+        "تعريف allowlist للمسارات والوجهات.",
+        "إضافة قرار confirm للكتابة والعمليات الخارجية.",
+        "تسجيل سبب السماح أو الرفض دون حفظ أسرار.",
+        "إنشاء اختبارات لحالات الرفض والموافقة."
+      ],
+      "metric": "عدد العمليات غير المصرح بها التي تُمنع قبل التنفيذ، ومعدل الموافقات الخاطئة.",
+      "difficulty": "مرتفع — تقدير 1–2 أسبوع.",
+      "risks": "سياسة ضيقة جدًا قد تعطل مهام مشروعة؛ وسياسة واسعة تعيد المشكلة.",
+      "sources": [
+        {
+          "title": "Strands interventions",
+          "url": "https://strandsagents.com/docs/user-guide/sdk/agents/interventions/"
+        },
+        {
+          "title": "Secure for production",
+          "url": "https://strandsagents.com/docs/user-guide/sdk/safety-security/"
+        }
+      ]
+    },
+    {
+      "title": "مصفوفة توافق بين مزودي النماذج",
+      "problem": "تبديل النموذج بين Ollama وBedrock وOpenAI وGoogle قد يغير استدعاء الأدوات والمخرجات المنظمة وسلوك التوقف.",
+      "approach": "مجموعة حالات contract ثابتة تشغل المهمة نفسها عبر مزودات متعددة وتصدر فروقات البنية والأدوات والزمن والتكلفة المقدرة.",
+      "stack": "Python + pytest + Strands Evals + JSONL",
+      "steps": [
+        "اختيار 10 مهام مرجعية صغيرة.",
+        "تعريف مخرجات منظمة وحالات tool calling متوقعة.",
+        "تشغيل الاختبارات على مزود محلي ومزود سحابي عند توفرهما.",
+        "قياس النجاح والزمن واستهلاك الرموز.",
+        "نشر تقرير فروقات قبل تحديث SDK أو المزود."
+      ],
+      "metric": "عدد regressions المكتشفة قبل الترقية ودقة المخرجات المنظمة عبر المزودات.",
+      "difficulty": "متوسط إلى مرتفع — تقدير 5–8 أيام.",
+      "risks": "النماذج احتمالية وقد تنتج فروقات غير مرتبطة بتغيير الكود؛ يلزم tolerance واضح.",
+      "sources": [
+        {
+          "title": "Model providers",
+          "url": "https://strandsagents.com/docs/user-guide/sdk/model-providers/"
+        },
+        {
+          "title": "Strands Evals",
+          "url": "https://strandsagents.com/docs/user-guide/evals-sdk/quickstart/"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "محلل مستودعات عربي يعمل محليًا وبوضع قراءة فقط",
+      "problem": "يحتاج الطالب أو المطور إلى فهم مستودع كبير دون إرسال الشيفرة إلى خدمة سحابية أو السماح بتعديلها.",
+      "approach": "وكيل Python يستخدم Ollama وأدوات قراءة محددة، ويخرج خريطة ملفات وتبعيات وشرحًا عربيًا مع مسارات الأدلة، دون أدوات كتابة أو shell عامة.",
+      "stack": "Python + Strands Harness + Ollama + GitPython + Markdown",
+      "steps": [
+        "إنشاء واجهة اختيار مجلد محلي.",
+        "تفعيل أدوات القراءة المحددة فقط.",
+        "فهرسة README والملفات التعريفية أولًا.",
+        "طلب إجابات مرتبطة بمسارات الملفات.",
+        "تصدير تقرير عربي مع حدود الثقة."
+      ],
+      "metric": "نسبة الادعاءات المرتبطة بمسار ملف صحيح، وعدد محاولات الكتابة التي تبقى صفرًا.",
+      "difficulty": "متوسط — تقدير أسبوع.",
+      "risks": "قد يسيء النموذج تفسير ملفات غير مفهرسة أو يولد مسارًا غير موجود.",
+      "sources": [
+        {
+          "title": "Strands harness README",
+          "url": "https://github.com/strands-agents/harness-sdk"
+        },
+        {
+          "title": "Ollama provider",
+          "url": "https://strandsagents.com/docs/user-guide/sdk/model-providers/ollama/"
+        }
+      ]
+    },
+    {
+      "title": "لوحة تكلفة وصلاحيات لوكلاء التطوير",
+      "problem": "يصعب ربط تكلفة النموذج بزمن المهمة واستدعاءات الأدوات والعمليات التي احتاجت موافقة.",
+      "approach": "جمع traces وmetrics مع سجل موافقات محلي، وعرض تكلفة تقريبية لكل جلسة ومزود وأداة.",
+      "stack": "Python + OpenTelemetry + SQLite + FastAPI",
+      "steps": [
+        "تعريف أحداث موحدة للمزود والأداة والجلسة.",
+        "تسجيل زمن التنفيذ وعدد الاستدعاءات.",
+        "إضافة سجل موافقات ورفض.",
+        "إخفاء المفاتيح والبيانات الحساسة من traces.",
+        "إنشاء لوحة مقارنة محلية."
+      ],
+      "metric": "اكتمال تتبع التكلفة لكل جلسة ونسبة العمليات الحساسة المسجلة.",
+      "difficulty": "متوسط إلى مرتفع — تقدير 1–2 أسبوع.",
+      "risks": "قد تحتوي traces على بيانات شخصية أو مقتطفات من المستودعات؛ يلزم تقليل البيانات وفحصها.",
+      "sources": [
+        {
+          "title": "Strands observability",
+          "url": "https://strandsagents.com/docs/user-guide/observability-evaluation/observability/"
+        },
+        {
+          "title": "Secure for production",
+          "url": "https://strandsagents.com/docs/user-guide/sdk/safety-security/"
+        }
+      ]
+    }
+  ],
+  "religious": [],
+  "testEvidence": null,
+  "sources": [
+    {
+      "title": "Official repository README",
+      "url": "https://github.com/strands-agents/harness-sdk"
+    },
+    {
+      "title": "Apache-2.0 license",
+      "url": "https://github.com/strands-agents/harness-sdk/blob/main/LICENSE.APACHE"
+    },
+    {
+      "title": "Python harness package requirements",
+      "url": "https://github.com/strands-agents/harness-sdk/blob/main/harness-py/pyproject.toml"
+    },
+    {
+      "title": "TypeScript harness package requirements",
+      "url": "https://github.com/strands-agents/harness-sdk/blob/main/harness-ts/package.json"
+    },
+    {
+      "title": "Official harness quickstart",
+      "url": "https://strandsagents.com/docs/user-guide/harness/quickstart/"
+    },
+    {
+      "title": "Official Python quickstart",
+      "url": "https://strandsagents.com/docs/user-guide/sdk/quickstart/python/"
+    },
+    {
+      "title": "Official Ollama provider guide",
+      "url": "https://strandsagents.com/docs/user-guide/sdk/model-providers/ollama/"
+    },
+    {
+      "title": "Official production security guide",
+      "url": "https://strandsagents.com/docs/user-guide/sdk/safety-security/"
+    },
+    {
+      "title": "Pydantic AI alternative",
+      "url": "https://github.com/pydantic/pydantic-ai"
+    },
+    {
+      "title": "LangGraph alternative",
+      "url": "https://github.com/langchain-ai/langgraph"
+    }
+  ]
+}
