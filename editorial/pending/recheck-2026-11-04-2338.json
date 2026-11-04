@@ -1,0 +1,210 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-04T23:38:15+03:00",
+  "main": {
+    "sha": "7c8dbef79c331cb9e848dbaacf893fa059cbc80e",
+    "feed": {
+      "generatedAt": "2026-11-04T14:34:56+00:00",
+      "items": 800,
+      "news": 700,
+      "projects": 100,
+      "state": "partial"
+    },
+    "editorial": {
+      "items": 639
+    },
+    "seen": {
+      "ids": 2921
+    }
+  },
+  "mainIncomingAudit": {
+    "files": 65,
+    "recordOccurrences": 606,
+    "alreadyImportedAndActiveOccurrences": 171,
+    "alreadyImportedHistoricalOccurrences": 428,
+    "seenOnlyOccurrences": 7,
+    "activeExactNotYetImportedOccurrences": 0,
+    "urlMismatchesObserved": 0,
+    "structuralErrors": 0,
+    "classificationNote": "Counts are file-record occurrences, not unique IDs. The 428 historical occurrences are outside the current feed but already in editorial; this does not prove their source pages or opportunities expired.",
+    "seenOnly": [
+      {
+        "id": "940ec4695c1e241c2f",
+        "title": "NVIDIA OpenShell",
+        "url": "https://github.com/NVIDIA/OpenShell"
+      },
+      {
+        "id": "317abcdd1b20728a7e",
+        "title": "Canva Craft",
+        "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/"
+      },
+      {
+        "id": "662e68277c6361dd4b",
+        "title": "1Password agent sign-in",
+        "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/"
+      },
+      {
+        "id": "87d27a9f8a0972f507",
+        "title": "Binance security incident",
+        "url": "https://www.theverge.com/tech/1023021/binance-hack-billions-biggest-crypto-heist"
+      },
+      {
+        "id": "65eeab64fed21e0b54",
+        "title": "GM data-privacy settlement",
+        "url": "https://www.engadget.com/2301934/general-motors-220-million-settle-multi-state-data-privacy-lawsuit/"
+      },
+      {
+        "id": "d674dea922625d0be8",
+        "title": "CNIL fine concerning Fnac/Darty app tracking",
+        "url": "https://noyb.eu/en/noyb-win-french-electronics-retailer-fnac-darty-fined-eu7-million"
+      },
+      {
+        "id": "967be99077d13f07b2",
+        "title": "AI cost of JavaScript frameworks",
+        "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/"
+      }
+    ]
+  },
+  "specialRecords": {
+    "nvidiaOpenShell": {
+      "id": "940ec4695c1e241c2f",
+      "seen": true,
+      "inFeed": false,
+      "inEditorial": false,
+      "catalogEntry": true,
+      "separateDossierPathVerified": false
+    },
+    "canvaCraft": {
+      "id": "317abcdd1b20728a7e",
+      "seen": true,
+      "inFeed": false,
+      "inEditorial": false
+    },
+    "onePasswordAgentSignIn": {
+      "id": "662e68277c6361dd4b",
+      "seen": true,
+      "inFeed": false,
+      "inEditorial": false
+    }
+  },
+  "pr80": {
+    "url": "https://github.com/lm7md-ai/.-/pull/80",
+    "headBeforeThisRun": "3003f981ca2b872ac468bbd402abe0c762e185f4",
+    "incomingFilesBeforeNewProject": 8,
+    "occurrencesBeforeNewProject": 93,
+    "uniqueIdsBeforeNewProject": 92,
+    "duplicate": {
+      "id": "c01265aacc1a10af6e",
+      "sameUrl": true
+    },
+    "exactFeedMatchesBeforeNewProject": 79,
+    "seenOnlyBeforeNewProject": 13,
+    "editorialBeforeThisRun": 718,
+    "mainRecordsPreservedExactly": 639,
+    "existingNewExactMatches": 79,
+    "existingNewByKind": {
+      "news": 78,
+      "project": 1
+    },
+    "newProject": {
+      "id": "fae31da6c227cfdebd",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "kind": "project",
+      "exactFeedMatch": true,
+      "basis": "readme",
+      "testEvidence": null
+    },
+    "expectedAfterNewProject": {
+      "incomingFiles": 9,
+      "occurrences": 94,
+      "uniqueIds": 93,
+      "duplicateIds": 1,
+      "editorialItems": 719,
+      "oldMainRecordsPreserved": 639,
+      "newExactFeedMatches": 80,
+      "newExactByKind": {
+        "news": 78,
+        "projects": 2
+      }
+    },
+    "mismatchedIdUrlPairs": 0,
+    "seenOnlyPendingIds": [
+      "32b3bf2b225f3d4c44",
+      "5010fb296f767bbc9b",
+      "327e862bb29c2bb4f7",
+      "dc7eb9e8885fba4465",
+      "56a1a96015a9777801",
+      "841e05fd699259e83c",
+      "cb87f0ba6d1c74466f",
+      "5b9f2f37879a136ac2",
+      "3e8a8aa6133203ad02",
+      "834f867a452076917a",
+      "5f4b9fdfeb2042b971",
+      "f6417c66c0228f42d3",
+      "1263ce4e09302da828"
+    ],
+    "officialImportCommandExecuted": false,
+    "structuralMergePreservedAll718ExistingRecords": true
+  },
+  "projects": {
+    "previousEightReviewed": 8,
+    "confirmedNotArchived": 8,
+    "defaultBranchMain": 8,
+    "licenses": {
+      "MIT": 5,
+      "Apache-2.0": 3
+    },
+    "metricsMeasuredAt": "2026-11-04T11:39:44Z",
+    "metricsAreCumulativeNotDaily": true,
+    "feedVisibleBeforeThisRun": 1,
+    "researchOnlyBeforeThisRun": 7,
+    "newFeedProjectsReviewed": [
+      "Neywa-Labs/mlx-audio",
+      "Shubhamsaboo/awesome-llm-apps"
+    ],
+    "newFeedProjectIds": [
+      "c9a7e4fb7976ab0a77",
+      "fae31da6c227cfdebd"
+    ]
+  },
+  "library": {
+    "entries": 48,
+    "archived": 2,
+    "notArchived": 46,
+    "notMaintainedButNotArchived": 1,
+    "feedVisible": 8,
+    "outsideCurrentFeed": 39,
+    "feedMembershipUnverified": 1,
+    "licensesNeedUpstreamVerification": 7,
+    "previousCatalogEntryCount": 47,
+    "previousSummaryTotal": 46,
+    "accountingCorrectedInNewSnapshot": true
+  },
+  "tests": {
+    "prCiRun": 41882495480,
+    "runNumber": 173,
+    "headSha": "3003f981ca2b872ac468bbd402abe0c762e185f4",
+    "conclusion": "success",
+    "steps": [
+      "python -m unittest discover -s tests -v",
+      "python scripts/editorial.py validate",
+      "node --check site/app.js && node --check site/ideas.js"
+    ],
+    "localCloneAttempt": "failed: container could not resolve github.com",
+    "localValidate": "not run",
+    "localImport": "not run",
+    "localUnitTests": "not run"
+  },
+  "deployment": {
+    "runId": 41848959706,
+    "runNumber": 128,
+    "conclusion": "success",
+    "artifactId": 13331393822,
+    "artifactCreatedAt": "2026-11-04T14:35:41Z",
+    "artifactFeedItems": 800,
+    "artifactEditorialItems": 639,
+    "artifactGitBlobShaMatchesMain": true,
+    "pagesDirectFetch": "DisabledError"
+  },
+  "decision": "No main merge: update-and-deploy.yml runs on push to main, refreshes public feeds, and writes feed.json, seen.json, and status.json. Those files are explicitly protected. Keep PR open; publish status remains unchanged."
+}
