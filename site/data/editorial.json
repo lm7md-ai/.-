@@ -33232,6 +33232,313 @@
         }
       ],
       "reviewedAt": "2026-11-04T08:41:20+03:00"
+    },
+    "210b26f029f33a3ef7": {
+      "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+      "titleAr": "Postman تراجع تثبيت إضافات الوكلاء تلقائيًا بعد بلاغ عن تغييرات في إعدادات المطورين",
+      "summaryAr": "يوثق بلاغ GitHub لمستخدمي macOS أن تحديث Postman Desktop ثبّت CLI وإضافتي Claude Code وCodex لمستخدمين قدامى، وأضاف إعدادات سوق وإضافة وخطاف بدء جلسة. ردّ ممثل Postman في 3 نوفمبر بأن الشركة ستجعل الموافقة أوضح وتراجع سلوك اعتماد الخطاف. هذه بلاغات مستخدمين وردّ من الشركة، وليست إثباتًا على تسريب بيانات API.",
+      "whyItMatters": "التحليل: تثبيت تكاملات في أدوات تطوير أخرى دون موافقة منفصلة واضحة يوسّع سطح الثقة، خصوصًا إذا غيّر إعدادات الوكيل أو صلاحيات الخطافات.",
+      "audience": "مطورو البرمجيات ومسؤولو الأمن وفرق الأدوات.",
+      "nextSteps": [
+        "راجع تغييرات إعدادات الوكلاء بعد تحديثات الأدوات.",
+        "اطلب موافقة صريحة قبل إضافة تكاملات أو خطافات بدء جلسة.",
+        "تابع رد Postman وإصدار المعالجة."
+      ],
+      "limitations": "بلاغات مستخدمين وليست اختبارًا مستقلًا على تثبيت نظيف. لا يثبت النص إرسال بيانات API إلى جهة أخرى.",
+      "reviewedAt": "2026-11-04T11:43:40+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Postman issue #14370",
+          "url": "https://github.com/postmanlabs/postman-app-support/issues/14370"
+        },
+        {
+          "title": "Pinned session-start hook",
+          "url": "https://github.com/postmanlabs/postman-plugin/blob/6c8e452e0f4237f4bcc0901cb1ac442dec707e49/hooks/session-start-context.md"
+        }
+      ]
+    },
+    "35eaf0d06c77e9ddf3": {
+      "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
+      "titleAr": "جدل حول ربط سياسات المدارس تجاه أدوات Google AI بإمكانية الوصول إلى البحث",
+      "summaryAr": "عنوان مقال نيويورك تايمز يشير إلى أن المدارس التي تحظر أدوات Google للذكاء الاصطناعي قد تفقد وصول الطلاب إلى محرك البحث. تعذر الوصول إلى النص الكامل، لذلك لا يمكن تحديد الشروط أو نطاق المدارس أو طبيعة العلاقة التقنية من العنوان وحده.",
+      "whyItMatters": "تحليل مشروط: إذا كان الربط قائمًا على سياسات حسابات التعليم أو إعدادات الإدارة، فقد يثير أسئلة حول فصل سياسات الذكاء الاصطناعي عن خدمات البحث الأساسية؛ لا يمكن تأكيد ذلك دون النص الكامل.",
+      "audience": "المدارس والطلاب وأولياء الأمور ومسؤولو التقنية التعليمية.",
+      "nextSteps": [
+        "راجع نص المقال وبيانات Google for Education قبل اتخاذ موقف.",
+        "تحقق من إعدادات المشرف وسياسات الحسابات التعليمية."
+      ],
+      "limitations": "basis=metadata؛ لم يُقرأ المقال الكامل، ولا تتوفر أدلة كافية لتأكيد آلية الحظر أو عدد المدارس.",
+      "reviewedAt": "2026-11-04T11:43:40+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "The New York Times — Schools, Google AI and Search",
+          "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html"
+        }
+      ]
+    },
+    "b5cba0d011349b3bc5": {
+      "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+      "titleAr": "تجربة تعرض قدرة Qwen 3.8 27B على استنتاج سلوك شبكة من أوزانها",
+      "summaryAr": "اختبر Simon Willison نموذج Qwen 3.8 27B على أوزان شبكات صغيرة دُرّبت لألعاب مبسطة، وذكر أن النموذج خمّن بعض الألعاب من الأوزان دون تنفيذ كود؛ استغرق اختبار Pac-Man نحو 46 دقيقة وبلغت الثقة المعلنة 72%. الورقة الأصلية تفصل بين تفسير الأوزان وبين تعديل النماذج باستخدام أدوات.",
+      "whyItMatters": "التحليل: إذا تكررت النتيجة على شبكات أوسع فقد تساعد في فهم التمثيلات الداخلية؛ لكنها لا تعني أن النماذج تفسر أوزان أي شبكة بشكل موثوق.",
+      "audience": "باحثو تعلم الآلة ومطورو النماذج.",
+      "nextSteps": [
+        "اقرأ الورقة ومجموعة prompts والأوزان الأصلية.",
+        "أعد الاختبار على شبكات متعددة بمقاييس ثابتة.",
+        "افصل النتائج دون أدوات عن التجارب التي تستخدم أدوات."
+      ],
+      "limitations": "تجربة شخصية على شبكات ألعاب مبسطة وليست benchmark عامًا؛ تفسير بعض التجارب محل نقاش.",
+      "reviewedAt": "2026-11-04T11:43:40+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Simon Willison — Qwen 3.8 27B",
+          "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/"
+        },
+        {
+          "title": "Weight Space Programming",
+          "url": "https://rikiyat.github.io/blog/weight-space-programming/"
+        },
+        {
+          "title": "Experimental prompts and weights",
+          "url": "https://github.com/RikiyaT/lm_understand-logs"
+        }
+      ]
+    },
+    "519582846479e28ed3": {
+      "url": "https://neufangled.com/",
+      "titleAr": "Stringman يعرض روبوت كابلات يغطي مساحة غرفة بأربعة محركات",
+      "summaryAr": "تصف Neufangled روبوتًا كابليًا بأربعة محركات ومساحة عمل معلنة 7×7×3 أمتار وحمولة متوسطة 1.9 كجم في سيناريو محدد. تنشر الشركة التصميم والبرمجيات وتقول إن التشغيل المحلي المعزول ممكن، مع إدارة بعيدة اختيارية.",
+      "whyItMatters": "التحليل: الروبوتات الكابلية قد توفر مجال حركة كبيرًا، لكنها تنقل التعقيد إلى هندسة الكابلات والمعايرة والسلامة والقيود المكانية.",
+      "audience": "باحثو الروبوتات والمختبرات التعليمية ومطورو التحكم.",
+      "nextSteps": [
+        "اقرأ المواصفات وقيود المساحة والحمولة.",
+        "قارن الأداء بقياسات مستقلة.",
+        "راجع متطلبات السلامة والتركيب مع مختص."
+      ],
+      "limitations": "الأرقام من الشركة ولا توجد مقارنة مستقلة في الصفحة؛ يحتاج مساحة مهيأة وتثبيتًا هيكليًا.",
+      "reviewedAt": "2026-11-04T11:43:40+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Neufangled — Stringman",
+          "url": "https://neufangled.com/"
+        },
+        {
+          "title": "Stringman firmware repository",
+          "url": "https://github.com/nhnifong/cranebot3-firmware"
+        }
+      ]
+    },
+    "01b1e45f222dec5edc": {
+      "url": "https://arxiv.org/abs/2605.29713",
+      "titleAr": "كتاب تمهيدي رياضي على arXiv يربط الجبر الخطي بطرق الذكاء الاصطناعي التوليدي",
+      "summaryAr": "يعرض سجل arXiv نسخة محدثة من The Little Book of Generative AI Foundations، مع فهرس يغطي PCA وAutoencoders وVAE وDiffusion وNormalizing Flows والنماذج ذاتية الانحدار وGANs. تمت مراجعة السجل والفهرس فقط، لا متن الفصول كاملًا.",
+      "whyItMatters": "التحليل: قد يساعد ترتيب الموضوعات الطلاب على ربط المفاهيم الرياضية بالمعماريات التوليدية بدل حفظ أسماء النماذج منفصلة.",
+      "audience": "طلاب الذكاء الاصطناعي والرياضيات ومهندسو تعلم الآلة.",
+      "nextSteps": [
+        "افحص الفصول التي تناسب مستواك الرياضي.",
+        "تحقق من الأمثلة قبل اعتماده مرجعًا وحيدًا.",
+        "اربط كل فصل بتطبيق بعد فهم الاشتقاقات."
+      ],
+      "limitations": "basis=metadata؛ تمت مراجعة سجل arXiv والفهرس لا النص الكامل. المستند preprint.",
+      "reviewedAt": "2026-11-04T11:43:40+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — The Little Book of Generative AI Foundations",
+          "url": "https://arxiv.org/abs/2605.29713"
+        },
+        {
+          "title": "arXiv HTML — table of contents",
+          "url": "https://arxiv.org/html/2605.29713v2"
+        }
+      ]
+    },
+    "b967640c7e4eb7b35e": {
+      "url": "https://andreasfertig.com/blog/2026/11/cpp26-dis-failed-how-does-cpp-survive/",
+      "titleAr": "نقاش حول المقترحات التي لم تدخل معيار C++26",
+      "summaryAr": "عنوان مقال Andreas Fertig «C++26 Disapproved» يشير إلى مقترحات لم تُعتمد في مسار C++26. لم يكن نص المقال متاحًا أثناء المراجعة، لذلك لا نحدد المقترحات أو أسباب الرفض أو أثرها التفصيلي.",
+      "whyItMatters": "التحليل: متابعة ما يدخل المعيار وما يؤجل مهمة لمطوري المكتبات والمترجمات؛ لكن لا يمكن استنتاج تغيير تقني من العنوان وحده.",
+      "audience": "مطورو C++ ومؤلفو المكتبات ومهندسو المترجمات.",
+      "nextSteps": [
+        "اقرأ المقال الكامل عند توفره.",
+        "قارن المقترحات بمستندات WG21 الرسمية.",
+        "لا تغيّر الشيفرة بناءً على العنوان وحده."
+      ],
+      "limitations": "basis=metadata؛ لم يُقرأ المقال كاملًا ولم يتم التحقق من قائمة المقترحات أو أسباب عدم اعتمادها.",
+      "reviewedAt": "2026-11-04T11:43:40+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "Andreas Fertig — C++26 Disapproved",
+          "url": "https://andreasfertig.com/blog/2026/11/cpp26-dis-failed-how-does-cpp-survive/"
+        },
+        {
+          "title": "WG21 — C++ standards committee papers",
+          "url": "https://www.open-std.org/jtc1/sc22/wg21/"
+        }
+      ]
+    },
+    "ae61902e2afada6e8c": {
+      "url": "https://ben.stolovitz.com/posts/how-use-ai-oct-2026/",
+      "titleAr": "مهندس بحثي يصف انتقال عمله إلى إدارة عدة وكلاء ومراجعة نتائجهم",
+      "summaryAr": "في مراجعة شخصية لاستخدامه للذكاء الاصطناعي في أكتوبر 2026، يقول Ben Stolovitz إنه يدير عادة 5–6 وكلاء برمجة في worktrees منفصلة ويستخدمها للبحث والتلخيص والصوت والكتابة. يؤكد أن الوكلاء ما زالوا يحتاجون مراجعة بشرية، خصوصًا في المعمارية وجودة المخرجات.",
+      "whyItMatters": "التحليل: القيمة لا تأتي من تفويض كل شيء، بل من تنظيم العمل والتقسيم والعزل والتحقق. تجربة شخص واحد لا تمثل إنتاجية كل الفرق.",
+      "audience": "المطورون والطلاب والباحثون ومديرو فرق البرمجيات.",
+      "nextSteps": [
+        "قسّم المهام إلى وحدات مستقلة مع worktrees.",
+        "ضع اختبارات ومعايير قبول قبل التفويض.",
+        "احتفظ بمراجعة بشرية للمعمارية والأمان."
+      ],
+      "limitations": "مقال رأي وتجربة شخصية؛ الأرقام تقديرات الكاتب وليست دراسة مستقلة.",
+      "reviewedAt": "2026-11-04T11:43:40+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Ben Stolovitz — How I use AI (Oct 2026)",
+          "url": "https://ben.stolovitz.com/posts/how-use-ai-oct-2026/"
+        }
+      ]
+    },
+    "f1213d42ab134c3258": {
+      "url": "https://github.com/finic-ai/kairos",
+      "titleAr": "Kairos ينشر منصة مفتوحة لاتخاذ قرارات مخاطر الاحتيال مع تجارب نماذج يقودها الوكلاء",
+      "summaryAr": "يعرض مستودع Finic منصة TypeScript تجمع أحداث الحسابات والجلسات والكيانات لتعيد approve أو step_up أو review أو block مع درجة مخاطر وأسباب. يوفر SDKs لـ TypeScript وPython وHTTP API وMCP واستضافة ذاتية عبر Docker، لكنه يعتمد على Grayson API خارجي ولا يعمل بالكامل دون اتصال.",
+      "whyItMatters": "التحليل: قد تساعد السجلات والقرارات وتجارب النماذج على بناء مسارات قابلة للتدقيق؛ لكن القرارات ذات الأثر المالي تتطلب تقييمًا مستقلًا وضوابط خصوصية وامتثال.",
+      "audience": "مهندسو البرمجيات وباحثو تعلم الآلة وفرق مكافحة الاحتيال.",
+      "nextSteps": [
+        "استخدم بيانات اصطناعية فقط في أي تقييم تعليمي.",
+        "راجع الترخيص والتوثيق والتكلفة وسياسة الاحتفاظ.",
+        "قارن النتائج بخط أساس مستقل مع مراجعة بشرية."
+      ],
+      "limitations": "المستودع حديث وأمثلة الأداء من المؤلفين وليست تقييمًا مستقلًا. الاستضافة الذاتية تتطلب مفتاح Grayson واتصالًا خارجيًا؛ الخدمة تجارية. لم نشغله أو ننشئ حسابًا أو نستخدم خدمة مدفوعة.",
+      "reviewedAt": "2026-11-04T11:43:40+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "Finic Kairos — repository and README",
+          "url": "https://github.com/finic-ai/kairos"
+        },
+        {
+          "title": "Kairos — self-hosting documentation",
+          "url": "https://github.com/finic-ai/kairos/blob/main/docs/deployment/self-hosting.md"
+        },
+        {
+          "title": "Kairos — API reference",
+          "url": "https://github.com/finic-ai/kairos/blob/main/docs/reference/api.md"
+        },
+        {
+          "title": "Finic — pricing overview",
+          "url": "https://finic.ai/"
+        },
+        {
+          "title": "Finic — Master Services Agreement",
+          "url": "https://finic.ai/policies/msa"
+        }
+      ]
+    },
+    "e3bc71be0e917360f6": {
+      "url": "https://dilshan.github.io/tiny-basic/",
+      "titleAr": "Tiny Basic يتيح كتابة برامج BASIC مباشرة على لوحات Arduino",
+      "summaryAr": "مشروع مفتوح يضيف مفسر BASIC ومحررًا داخل العتاد مع دوال للرياضيات والإدخال والإخراج والعمليات البتية. يذكر المستودع دعم Arduino Due افتراضيًا، مع توثيق لمنصات أخرى؛ ويتطلب البناء Python 3 وPlatformIO وbison/yacc وأدوات C/C++.",
+      "whyItMatters": "التحليل: واجهة BASIC على المتحكم قد تسهّل تعليم البرمجة المضمنة، لكنها لا تعني أن كل لوحة Arduino مدعومة تلقائيًا.",
+      "audience": "طلاب الإلكترونيات والبرمجة المضمنة والمدارس التقنية.",
+      "nextSteps": [
+        "راجع قائمة اللوحات المدعومة قبل اختيار العتاد.",
+        "استخدم وضع native لاختبار parser فقط؛ وظائف العتاد غير منفذة فيه.",
+        "تحقق من ترخيص BSD-3-Clause ومتطلبات البناء."
+      ],
+      "limitations": "دعم اللوحات محدود بما هو موثق؛ وضع native لا ينفذ وظائف العتاد.",
+      "reviewedAt": "2026-11-04T11:43:40+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "Tiny Basic for Arduino — official project page",
+          "url": "https://dilshan.github.io/tiny-basic/"
+        },
+        {
+          "title": "dilshan/tiny-basic — README and BSD-3-Clause license",
+          "url": "https://github.com/dilshan/tiny-basic"
+        }
+      ]
+    },
+    "fb02c93fd281f7df67": {
+      "url": "https://www.quili.ai/",
+      "titleAr": "حملة Quili.AI تستبدل الرد الآلي بمتطوعين لتسليط الضوء على استهلاك المياه",
+      "summaryAr": "في مبادرة توعوية في Quilicura بتشيلي، رد نحو 50 من السكان على أكثر من 25 ألف طلب خلال 12 ساعة عبر موقع يشبه chatbot لكنه يعمل بالبشر. قالت المنظمات إن الهدف إظهار البصمة المائية لمراكز البيانات واستخدامات الذكاء الاصطناعي، لا تقديم بديل تقني دائم.",
+      "whyItMatters": "التحليل: يوضح المشروع أن أثر الذكاء الاصطناعي يمتد إلى المياه والطاقة والبنية المحلية.",
+      "audience": "طلاب الذكاء الاصطناعي والبيئة وصناع السياسات.",
+      "nextSteps": [
+        "اقرأ تغطية AP والسياق المحلي.",
+        "قارن استهلاك مراكز البيانات بحسب الموقع والتبريد.",
+        "لا تحوّل عدد الطلبات إلى استهلاك ماء لكل طلب دون قياس."
+      ],
+      "limitations": "الأرقام من المنظمين وتغطية AP؛ الحملة فعالية مؤقتة ولا تقدم قياسًا مباشرًا للمياه لكل طلب.",
+      "reviewedAt": "2026-11-04T11:43:40+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Quili.AI — official campaign page",
+          "url": "https://www.quili.ai/"
+        },
+        {
+          "title": "Associated Press — human-powered chatbot in Chile",
+          "url": "https://apnews.com/article/ai-human-chatbot-chile-quiliai-data-centers-water-a798d7d1ae3b2fd7646ec5dbfc8a18dd"
+        }
+      ]
+    },
+    "f7f87a71fb4a7970c7": {
+      "url": "https://www.theverge.com/tech/1026148/amd-earnings-q3-2026-data-center-pc",
+      "titleAr": "AMD تسجل إيرادات فصلية قياسية مع صعود قطاع مراكز البيانات",
+      "summaryAr": "أعلنت AMD إيرادات 13.377 مليار دولار في الربع الثالث 2026، بزيادة 45% سنويًا، وبلغت إيرادات قطاع مراكز البيانات 8.5 مليار دولار (+97%)، بينما تراجعت إيرادات الألعاب إلى 773 مليون دولار (-40%). الأرقام واردة في البيان المالي للشركة.",
+      "whyItMatters": "التحليل: يبرز نمو البنية التحتية للذكاء الاصطناعي في مزيج إيرادات AMD، مع تباين واضح بين مراكز البيانات والألعاب؛ لا يثبت الربع الواحد اتجاهًا دائمًا.",
+      "audience": "مطورو الذكاء الاصطناعي ومتابعو أشباه الموصلات والأسواق التقنية.",
+      "nextSteps": [
+        "راجع البيان المالي وميّز بين GAAP وnon-GAAP.",
+        "تابع مزيج الإيرادات في الأرباع القادمة.",
+        "قارن نمو مركز البيانات بتكاليف الطاقة وسلاسل الإمداد."
+      ],
+      "limitations": "الأرقام من AMD؛ توقعات الإدارة تقديرات مستقبلية. لا يعني نمو مركز البيانات أن كل نمو الشركة ناتج عن AI وحده.",
+      "reviewedAt": "2026-11-04T11:43:40+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "AMD — Q3 2026 financial results",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results"
+        },
+        {
+          "title": "The Verge — AMD Q3 2026 results",
+          "url": "https://www.theverge.com/tech/1026148/amd-earnings-q3-2026-data-center-pc"
+        }
+      ]
+    },
+    "cf03bdbe3edb09ea56": {
+      "url": "https://openathena.ai/blog/there-is-no-posttraining-data-commons/",
+      "titleAr": "Open Athena تجادل بأن تدريب ما بعد التدريب يفتقر إلى مشاع بيانات تشبه بيانات ما قبل التدريب",
+      "summaryAr": "يشرح David Hall أن ما قبل التدريب استفاد من موارد عامة مثل Common Crawl وWikipedia وarXiv، بينما يتطلب post-training بيانات مهام وتفاعلات يصعب جمعها وإعادة استخدامها. المقال يطرح ذلك بوصفه حجة حول فجوة البنية التحتية للبيانات، لا نتيجة قياس شاملة متفقًا عليها.",
+      "whyItMatters": "التحليل: تطور الوكلاء قد يعتمد على توفر بيانات مهام واقعية ومرخصة وقابلة لإعادة التقييم، وليس على زيادة الحوسبة فقط.",
+      "audience": "باحثو الذكاء الاصطناعي ومهندسو الوكلاء ومؤسسات البيانات المفتوحة.",
+      "nextSteps": [
+        "حدد نوع المهمة والبيانات اللازمة لتقييمها.",
+        "راجع الحقوق والموافقات والخصوصية قبل جمع التفاعلات.",
+        "صمم مجموعات بيانات قابلة لإعادة الإنتاج دون بيانات حساسة."
+      ],
+      "limitations": "المقال من جهة تعمل في المجال ويعرض وجهة نظرها؛ تعريف مشاع بيانات post-training وحجم النقص يحتاجان أدلة إضافية.",
+      "reviewedAt": "2026-11-04T11:43:40+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Open Athena — There is no posttraining data commons",
+          "url": "https://openathena.ai/blog/there-is-no-posttraining-data-commons/"
+        },
+        {
+          "title": "Common Crawl — official project",
+          "url": "https://commoncrawl.org/"
+        }
+      ]
     }
   }
 }
