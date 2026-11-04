@@ -108,22 +108,11 @@
     "incomingOccurrences": 93,
     "stagedInPrEditorialOccurrences": 82,
     "unmatchedAgainstMainFeedAndEditorialOccurrences": 11,
-    "editorialItems": 720,
+    "editorialItems": 718,
     "mainRecordsPreservedExactly": 639,
-    "newUniqueEditorialIds": 81,
+    "newUniqueEditorialIds": 79,
     "exactCurrentFeedMatches": 79,
-    "nonmatchingEditorialEntries": [
-      {
-        "id": "841e05fd699259e83c",
-        "title": "SLAC altermagnetism in MnTe",
-        "url": "https://www6.slac.stanford.edu/news/2026-10-29-slac-researchers-find-proof-altermagnetism-new-magnetic-phase"
-      },
-      {
-        "id": "834f867a452076917a",
-        "title": "NVIDIA Auto Ontology",
-        "url": "https://github.com/NVIDIA/auto-ontology"
-      }
-    ],
+    "nonmatchingEditorialEntries": [],
     "exactNewEntriesByKind": {
       "news": 78,
       "projects": 1
@@ -136,7 +125,26 @@
       "validator": "python scripts/editorial.py validate",
       "validatorScope": "PR branch site/data/editorial.json only; not individual incoming files"
     },
-    "officialImportCommandExecuted": false
+    "officialImportCommandExecuted": false,
+    "filteredOutAndHeldInIncoming": [
+      {
+        "id": "841e05fd699259e83c",
+        "title": "SLAC altermagnetism in MnTe"
+      },
+      {
+        "id": "834f867a452076917a",
+        "title": "NVIDIA Auto Ontology"
+      }
+    ],
+    "structuralMerge": {
+      "commit": "34f3b449feb16046a6fa0be74e20f3eb6d1b186e",
+      "mergedCount": 718,
+      "oldMainRecordsPreservedExactly": 639,
+      "newExactFeedMatches": 79,
+      "removedNonmatchingFromEditorial": 2,
+      "validation": "equivalent structural validation passed",
+      "officialCliImport": false
+    }
   },
   "pr80IncomingUnmatchedIds": [
     "32b3bf2b225f3d4c44",
@@ -225,5 +233,5 @@
     "ciUnitTests": "passed in PR CI run 41851660547",
     "ciValidate": "passed on PR branch site/data/editorial.json; incoming files not individually validated by CLI"
   },
-  "decision": "Do not merge PR #80: the existing push-to-main workflow runs update_feed.py and commits feed.json, seen.json, and status.json. That would violate the explicit no-modification constraint. Do not claim PR content is published."
+  "decision": "A structural merge-equivalent was applied to the PR branch: 639 existing main records were preserved byte-semantically, 79 exact ID+URL feed matches retained, and two feed-missing records removed from editorial while remaining in incoming and the hold report. No main merge or publish because the main workflow writes protected feed/seen/status files."
 }
