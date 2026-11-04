@@ -102,7 +102,7 @@
     "mergeable": true,
     "head": "content/nabdh-2026-11-03-1138",
     "headSha": "f78c29f5e5e4156904015760e06cc5402b5c3f82",
-    "aheadBy": 47,
+    "aheadBy": 52,
     "behindBy": 3,
     "incomingFiles": 8,
     "incomingOccurrences": 93,
@@ -144,7 +144,18 @@
       "removedNonmatchingFromEditorial": 2,
       "validation": "equivalent structural validation passed",
       "officialCliImport": false
-    }
+    },
+    "headShaAtInitialAudit": "f78c29f5e5e4156904015760e06cc5402b5c3f82",
+    "latestHeadBeforeReportRefresh": "cf85aec65d9bfca3ed9d2072595291ebf1825686",
+    "mergeableAtFinalCheck": false,
+    "latestCi": {
+      "runId": 41881832126,
+      "runNumber": 172,
+      "conclusion": "success",
+      "headSha": "988fc0d6e0c282338a11385ac70f2a6e9bc8ecca",
+      "scope": "720-entry PR editorial before exact-match filtering; does not validate the later 718-entry file"
+    },
+    "ciCoversFilteredEditorial": false
   },
   "pr80IncomingUnmatchedIds": [
     "32b3bf2b225f3d4c44",
