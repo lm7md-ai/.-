@@ -2016,7 +2016,7 @@
       "licenseName": "MIT License",
       "licenseSummary": "MIT; ملف LICENSE الرسمي تمت مراجعته.",
       "licenseEvidence": "GitHub API SPDX=MIT وتحقق نص ملف LICENSE في المستودع.",
-      "activityStatus": "active_recent_push",
+      "activityStatus": "timestamp_anomaly_no_new_push_claim",
       "alternativeProjects": [
         {
           "repo": "langchain-ai/langgraph",
@@ -3118,7 +3118,7 @@
     }
   ],
   "currentSnapshotSummary": "45 projects: 2 archived, 43 non-archived (1 explicitly not maintained), 7 exact project-feed matches, 38 research-only.",
-  "measurementNote": "All 9 selected repositories were re-read from GitHub REST API at 2026-11-04T11:39:44Z. 1 future timestamp anomaly was retained as an anomaly and not treated as proof of activity. Seven catalog entries still require upstream license verification.",
+  "measurementNote": "Nine live GitHub REST snapshots captured at 2026-11-04T11:39:44Z. Two API timestamps are later than the measurement time (MarkItDown updatedAt; Pydantic AI pushedAt) and are flagged, not treated as proof of activity. Seven catalog entries still require upstream license verification.",
   "archivedAlternatives": [
     {
       "repo": "atom/atom",
@@ -3171,7 +3171,13 @@
       "repo": "microsoft/markitdown",
       "field": "updatedAt",
       "value": "2026-11-04T11:47:03Z",
-      "reason": "later than measurement time; not used as activity evidence"
+      "reason": "7m19s later than measurement time; not used as activity evidence"
+    },
+    {
+      "repo": "pydantic/pydantic-ai",
+      "field": "pushedAt",
+      "value": "2026-11-04T11:50:32Z",
+      "reason": "10m48s later than measurement time; not used as activity evidence"
     }
   ]
 }
