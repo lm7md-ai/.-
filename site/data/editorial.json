@@ -33539,6 +33539,255 @@
           "url": "https://commoncrawl.org/"
         }
       ]
+    },
+    "64e891378c13ac062e": {
+      "url": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
+      "titleAr": "Fal تجمع 1.3 مليار دولار وتصل قيمتها المعلنة إلى 16 مليارًا لتوسيع خدمات استدلال النماذج",
+      "summaryAr": "أعلنت Fal جولتي Series E وSeries F؛ قالت الشركة إن Series E قادتها Sequoia، وإن Series F قادتها Bessemer Venture Partners مع استمرار مشاركة NVIDIA. وتذكر TechCrunch أن الجولة الأخيرة بلغت 1.3 مليار دولار وأن التقييم وصل إلى 16 مليار دولار، كما نقلت عن Bloomberg أن الإيراد السنوي المحسوب تجاوز 800 مليون دولار. بيان Fal الرسمي يؤكد الجولتين والمستثمرين ولا ينشر كل الأرقام المالية الواردة في التغطية.",
+      "whyItMatters": "التحليل: الطلب على تشغيل النماذج بعد تدريبها يدفع شركات الاستدلال إلى جذب تمويل كبير. لكن نمو الاستخدام والتقييم لا يثبتان الربحية؛ شراء أو استئجار GPU والطاقة والشبكات قد يضغط على الهوامش.",
+      "audience": "مطورو تطبيقات الصور والفيديو والصوت، ومتابعو بنية الذكاء الاصطناعي التحتية والشركات الناشئة.",
+      "nextSteps": [
+        "قارن تكلفة الاستدلال عبر API مع الاستضافة الذاتية عند حجم استخدام متوقع.",
+        "راجع حدود الاستخدام والاحتفاظ بالبيانات وحقوق المخرجات قبل اختيار مزود.",
+        "تابع الهوامش وتكاليف الحوسبة، لا التقييم والتمويل وحدهما."
+      ],
+      "limitations": "أرقام 1.3 مليار و16 مليار و800 مليون من تغطية TechCrunch التي تنقل عن Bloomberg؛ إعلان Fal الرسمي يؤكد الجولتين والمستثمرين ولا يفصل كل الأرقام. لا توجد قوائم مالية مدققة مستقلة ضمن الإعلان.",
+      "reviewedAt": "2026-11-04T12:22:22+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — Fal doubles its valuation to $16B",
+          "url": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/"
+        },
+        {
+          "title": "Fal — Series E and F announcement",
+          "url": "https://fal.ai/blog/series-e-f"
+        }
+      ]
+    },
+    "56d477bb7172cb5d5d": {
+      "url": "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/",
+      "titleAr": "إفصاح Anthropic يوضح أن الحوسبة تستهلك حصة كبيرة من الإيرادات رغم تسارع النمو",
+      "summaryAr": "تقول TechCrunch إن تحديث S-1/A الذي أودعته Anthropic في 2 نوفمبر يضيف نتائج حتى 30 سبتمبر 2026: إيراد الربع بلغ 17 مليار دولار مقابل 11.5 مليارًا في الربع السابق، وارتفعت حصة الحوسبة من الإيراد إلى 58% مقابل 48%. وتذكر التغطية أن فاتورة الحوسبة للربع قاربت 10 مليارات دولار، منها 5 مليارات التزامات قصيرة الأجل أعلى كلفة. وفي جدول الأشهر التسعة داخل الإيداع، بلغت مصروفات الحوسبة والبنية التحتية 18.808 مليار دولار؛ هذا رقم لفترة تسعة أشهر لا للربع وحده.",
+      "whyItMatters": "التحليل: نمو إيرادات شركات النماذج لا يكفي للحكم على اقتصادياتها؛ فتوافر الحوسبة وأسعار الالتزامات القصيرة والطويلة قد يغيران الهوامش بسرعة. هذه نقطة مهمة عند مقارنة مزودي النماذج والخدمات السحابية.",
+      "audience": "باحثو الذكاء الاصطناعي، ومهندسو البنية التحتية، ومتابعو اقتصاديات شركات التقنية.",
+      "nextSteps": [
+        "افصل بين الإيراد الربع سنوي ومصروفات الأشهر التسعة عند قراءة الإيداع.",
+        "تابع نسبة تكلفة الحوسبة إلى الإيراد في الإفصاحات القادمة.",
+        "قارن الالتزامات القصيرة الأجل بالعقود متعددة السنوات قبل استنتاج اتجاه الربحية."
+      ],
+      "limitations": "الأرقام مستمدة من إفصاح الشركة كما نقلته TechCrunch؛ نسب التكاليف لا تساوي صافي الخسارة. يجب عدم خلط رقم الربع مع رقم الأشهر التسعة في الجداول الرسمية.",
+      "reviewedAt": "2026-11-04T12:22:22+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — Anthropic and the economics of compute",
+          "url": "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/"
+        },
+        {
+          "title": "SEC — Anthropic S-1/A filed November 2, 2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm"
+        }
+      ]
+    },
+    "d05cff2b935d0ed4bf": {
+      "url": "https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/",
+      "titleAr": "Netflix تبدأ اختبار AI Discover لاكتشاف المحتوى بحسب الحالة والموضوع",
+      "summaryAr": "أعلنت Netflix في 3 نوفمبر عن تبويب AI Discover داخل تطبيق التلفاز، يبدأ اختباره مع مجموعة صغيرة من المشتركين في الولايات المتحدة ممن يستخدمون الخدمة بالإنجليزية على أجهزة تلفاز مدعومة. تبدأ التجربة بموضوعات مثل مشاهدة خفيفة أو ليلة عائلية أو محتوى قصير، ثم تعرض اقتراحات أكثر تحديدًا مع أدوات لضبط التوصيات أو إخفاء ما لا يناسب المستخدم.",
+      "whyItMatters": "التحليل: تنتقل واجهات التوصية من القوائم الثابتة إلى استكشاف تفاعلي يعتمد على ما يصفه المستخدم بأنه يناسب وقته أو مزاجه. نجاح ذلك يعتمد على جودة التوصية ووضوح التحكم في التخصيص.",
+      "audience": "مصممو المنتجات، ومهندسو أنظمة التوصية، ومتابعو تطبيقات الترفيه والذكاء الاصطناعي.",
+      "nextSteps": [
+        "راقب الفرق بين التصفح بالموضوعات والبحث التقليدي عن عنوان محدد.",
+        "تحقق من أدوات تعديل التوصيات وإخفاء الاقتراحات غير المرغوبة.",
+        "لا تعمم نتائج الاختبار الأمريكي على بقية المناطق أو الأجهزة."
+      ],
+      "limitations": "الإعلان يصف اختبارًا محدودًا في الولايات المتحدة وبالإنجليزية على أجهزة تلفاز مدعومة؛ لم تنشر Netflix قياسًا مستقلًا لتحسن الاكتشاف أو رضا المستخدمين.",
+      "reviewedAt": "2026-11-04T12:22:22+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Netflix — Introducing AI Discover",
+          "url": "https://about.netflix.com/en/news/introducing-ai-discover"
+        },
+        {
+          "title": "TechCrunch — Netflix AI Discover tab",
+          "url": "https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/"
+        }
+      ]
+    },
+    "92c50f67a507db6c80": {
+      "url": "https://www.theverge.com/games/1026085/nexus-mods-ai-disclosures",
+      "titleAr": "Nexus Mods تلزم ناشري الإضافات الجديدة بالإفصاح عن استخدام الذكاء الاصطناعي",
+      "summaryAr": "أعلنت Nexus Mods إلزام رافعي الإضافات الجديدة بالتصريح عما إذا استُخدم الذكاء الاصطناعي في صنعها. وتتطلب الإضافات المصنفة AI-assisted شرحًا علنيًا لكيفية استخدامه ومكانه، مع إبراز الوسوم وإتاحة أدوات لإخفاء المحتوى المولّد بالذكاء الاصطناعي. لا تفرض المنصة حظرًا شاملًا، وتقول في بيانها إنها لن تستخدم الإضافات لتدريب نماذجها أو تبيعها لهذا الغرض.",
+      "whyItMatters": "التحليل: تتحول شفافية استخدام الذكاء الاصطناعي في المحتوى الإبداعي إلى سياسة نشر وواجهة اكتشاف، مع موازنة بين حق اللاعب في الاختيار وحق المؤلف في الإفصاح عن طريقة العمل.",
+      "audience": "مطورو إضافات الألعاب، واللاعبون، ومنصات المحتوى الرقمي.",
+      "nextSteps": [
+        "اقرأ سياسة المنصة قبل رفع إضافة جديدة.",
+        "اشرح مواضع استخدام الذكاء الاصطناعي إذا كانت الإضافة AI-assisted.",
+        "اختبر أدوات إخفاء المحتوى والوسوم من منظور المستخدم."
+      ],
+      "limitations": "السياسة تخص Nexus Mods ولا تمثل معيارًا موحدًا لكل المنصات. مهلة الستين يومًا وموعد 2 يناير 2027 وردا في تغطية The Verge؛ تفاصيل التنفيذ قد تتغير.",
+      "reviewedAt": "2026-11-04T12:22:22+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "The Verge — Nexus Mods AI disclosures",
+          "url": "https://www.theverge.com/games/1026085/nexus-mods-ai-disclosures"
+        },
+        {
+          "title": "Nexus Mods — AI-Generated Content on Nexus Mods",
+          "url": "https://www.nexusmods.com/news/15654"
+        }
+      ]
+    },
+    "b3b7fa6c1f3dcbf6ed": {
+      "url": "https://arstechnica.com/ai/2026/11/google-will-let-schools-skip-ai-tools-but-they-have-to-give-up-search-too/",
+      "titleAr": "Google تضيف Guided Learning إلى البحث والتعليم مع جدل حول فصل البحث عن أدوات الذكاء الاصطناعي",
+      "summaryAr": "تقول Google إنها ستجرب Guided Learning في Search لحسابات الطلاب في مدارس أمريكية مختارة لاحقًا هذا الشهر، بحيث يوجه الطالب خطوة بخطوة بدل تقديم الإجابة مباشرة. وتذكر Ars Technica، نقلًا عن مسؤول Google للتعليم، أن المدارس التي تختار تعطيل أدوات الذكاء الاصطناعي قد تفقد أيضًا وصول الطلاب إلى Search لأن الشركة ترى أن البحث والذكاء الاصطناعي مترابطان في المنتج.",
+      "whyItMatters": "التحليل: يضع هذا القرار المدارس أمام سؤال حوكمة عملي: هل يمكن تعطيل ميزات الذكاء الاصطناعي مع الاحتفاظ بخدمة البحث الأساسية؟ كما يفتح نقاشًا حول تصميم أدوات تعليمية تساعد على التفكير دون أن تصبح مصدر إجابات جاهزة.",
+      "audience": "المعلمون والطلاب وأولياء الأمور ومسؤولو تقنية التعليم.",
+      "nextSteps": [
+        "راجع إعدادات المشرف وسياسات حسابات الطلاب قبل تغييرها.",
+        "اختبر بدائل البحث التي تسمح بفصل ميزات الذكاء الاصطناعي.",
+        "قيّم Guided Learning مع المعلمين ولا تعتبره دليلًا على تحسن التعلم قبل وجود نتائج."
+      ],
+      "limitations": "Google تصف تجربة أولية في مدارس أمريكية مختارة، ولم تنشر نتائج تعليمية مستقلة. الربط بين تعطيل AI وفقدان Search ورد في تقرير Ars ونقل عن مسؤول Google، وليس اختبارًا مستقلًا لكل إعدادات المدارس.",
+      "reviewedAt": "2026-11-04T12:22:22+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Ars Technica — Google, schools, AI and Search",
+          "url": "https://arstechnica.com/ai/2026/11/google-will-let-schools-skip-ai-tools-but-they-have-to-give-up-search-too/"
+        },
+        {
+          "title": "Google — AI learning era updates",
+          "url": "https://blog.google/products-and-platforms/products/education/ai-learning-era-updates-2026/"
+        }
+      ]
+    },
+    "9e7de89de633f2bc73": {
+      "url": "https://arstechnica.com/google/2026/11/google-dismantles-botnet-secretly-running-on-1-3-million-android-tv-boxes/",
+      "titleAr": "Google تقول إنها عطلت شبكة XCPE التي ضمت أكثر من 1.3 مليون جهاز تلفاز يعمل بنظام Android",
+      "summaryAr": "قالت مجموعة Google Threat Intelligence إنها شاركت جهات أخرى في تعطيل XCPE، وهي شبكة خلفية استُخدمت على أكثر من 1.3 مليون جهاز استقبال تلفاز. وتقول Google إن الأجهزة كانت معتمدة للوصول إلى خدماتها، وإنها أنهت علاقتها بالشركة المصنّعة Videostrong واتخذت إجراءات لإغلاق نطاقات وخوادم التشغيل. وتشير Ars إلى أن بعض الأجهزة المتأثرة قد تبقى عليها مكونات خاملة وأن Play Protect كان معطلًا في بعض الحالات.",
+      "whyItMatters": "التحليل: اعتماد الجهاز من مزود منصة لا يضمن وحده سلامة سلسلة التوريد أو تحديثات ما بعد البيع. الحادث يبرز أهمية مصدر الشراء، وتحديثات البرامج الثابتة، وقدرة الشركة المصنّعة على معالجة الأجهزة بعد البيع.",
+      "audience": "مستخدمو أجهزة Android TV، ومصنعو الأجهزة، وفرق أمن إنترنت الأشياء.",
+      "nextSteps": [
+        "تحقق من طراز الجهاز ومصدره وإشعارات الشركة المصنّعة.",
+        "ثبت تحديثات النظام الرسمية واتبع إرشادات الدعم الخاصة بالطراز.",
+        "تجنب الأجهزة مجهولة المصدر التي لا تتلقى تحديثات أمنية."
+      ],
+      "limitations": "عدد الأجهزة تقدير من Google، وتذكر Ars أن قياس Trend Micro كان أعلى قليلًا. لا يعني الخبر أن جميع أجهزة Android TV متأثرة، وقد لا تتوفر طريقة سهلة لإزالة كل المكونات من بعض الطرز.",
+      "reviewedAt": "2026-11-04T12:22:22+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Ars Technica — Google dismantles the XCPE botnet",
+          "url": "https://arstechnica.com/google/2026/11/google-dismantles-botnet-secretly-running-on-1-3-million-android-tv-boxes/"
+        },
+        {
+          "title": "Google Cloud — Shutting the Door on the XCPE Botnet",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/shutting-the-door-on-the-xcpe-botnet/"
+        }
+      ]
+    },
+    "8d86676710497099b1": {
+      "url": "https://huggingface.co/blog/allenai/statebench",
+      "titleAr": "Allen AI تقدم StateBench لقياس قدرة النماذج على تتبع تغيّر المعلومات عبر مستندات طويلة",
+      "summaryAr": "تقدم StateBench معيارًا لأربع درجات من تتبع الحالة: استرجاع قيمة ثابتة، ثم التعامل مع إعادة التعيين، ثم التحديثات التي تعتمد على القيمة السابقة، وأخيرًا العلاقات بين متغيرات تتغير بمرور السياق. تقول الورقة إن النماذج المدرّبة على هذه المهام تختلف بحسب المعمارية، وإن النماذج المدربة مسبقًا التي اختُبرت لم تحل بصورة موثوقة حتى بعض الحالات المتوسطة من تتبع الحالة.",
+      "whyItMatters": "التحليل: اختبارات السياق الطويل لا ينبغي أن تقيس استرجاع المعلومة فقط؛ على وكلاء البرمجة أيضًا متابعة تغيّر المتغيرات والقرارات عبر سلسلة من التحديثات. يوفر المعيار طريقة أكثر تحديدًا لاختبار هذا النوع من الذاكرة.",
+      "audience": "باحثو النماذج اللغوية، ومطورو الوكلاء، وطلاب تعلم الآلة.",
+      "nextSteps": [
+        "اقرأ الورقة ومجموعة البيانات قبل مقارنة النماذج.",
+        "شغّل المعيار بإعدادات ثابتة إذا توفرت بيئة مناسبة.",
+        "افصل بين نتائج النماذج المدربة مباشرة على المهام ونتائج النماذج الجاهزة."
+      ],
+      "limitations": "المعيار بحثي ومصمم لفئات محددة من تتبع الحالة؛ لا يمثل ترتيبًا عامًا لجودة النماذج ولا يثبت الأداء في كل التطبيقات الواقعية. النتائج تخص إصدارات وتجارب الورقة.",
+      "reviewedAt": "2026-11-04T12:22:22+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Hugging Face — StateBench",
+          "url": "https://huggingface.co/blog/allenai/statebench"
+        },
+        {
+          "title": "arXiv — State tracking benchmark",
+          "url": "https://arxiv.org/abs/2611.03094"
+        },
+        {
+          "title": "AllenAI — StateBench code",
+          "url": "https://github.com/allenai/state-bench"
+        },
+        {
+          "title": "Hugging Face — StateBench dataset",
+          "url": "https://huggingface.co/datasets/allenai/state-bench"
+        }
+      ]
+    },
+    "c6e1d560bbcd5c3ad9": {
+      "url": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxNdzJRUWVISTdVblpoclRXTTRmMkxsdHBlZmFKUmdISmotS2VHWWc2RGZNRHI5OE1PamppTlNTaGtaZzVsNWpXWUQ3UW00RnB1TmpETVRXMWhPeFY4TVU4LVRhODFUd0tMV1hWUFNRZjhwN3RFbGFzNEE5MW5YX3NhVDY3S0x3dUl1Y2JRVDFnaG9PU0dZOFdVbGN0TVRzMENxWENYWWwyM082SFFxTVlKX1h2ZmYxNXhIdDRLNXVrNEhCRDRlRlA0NGV1c1RmNEJ1QTk1MWpFdGdxYnE5VU00d1U5R2Z3a3Zyalo2TE91b2lQUTRlVzJsT3R5dEJQdTROQk4yWWliQTNqa3c2S2k3TDl2RUNRTWxBX3RQcjBhV2draUlTbjRXRlQ2ZkhzZlVXRTJZU0NhTTlhZTM2Ykhvd1BR?oc=5",
+      "titleAr": "وزارة الاتصالات تعلن النسخة الثانية من برنامج AI Bridge لتطوير الكفاءات التقنية السعودية",
+      "summaryAr": "يشير عنوان وكالة الأنباء السعودية إلى إطلاق النسخة الثانية من برنامج AI Bridge لتطوير الكفاءات التقنية السعودية، بينما تعرض خلاصة التغذية خبر فتح التسجيل. لم أتمكن من استخراج نص صفحة SPA الكامل في هذه المراجعة؛ لذلك لا أؤكد شروط القبول أو المدن أو المواعيد أو استمرار التسجيل.",
+      "whyItMatters": "التحليل: وجود برامج وطنية متخصصة يوسع مسارات تطوير المهارات التقنية، لكن قيمة الفرصة تعتمد على شروط القبول الفعلية وملاءمتها للفئة المستهدفة، لا على عنوان الإعلان وحده.",
+      "audience": "الكفاءات التقنية السعودية وفرق تطوير المواهب والجهات التعليمية التي تتابع برامج التدريب المهني.",
+      "nextSteps": [
+        "راجع صفحة SPA والجهة المنظمة للحصول على شروط القبول والموعد النهائي.",
+        "تحقق من الفئة المستهدفة والخبرة المطلوبة والموقع والتكاليف قبل اعتبارها فرصة مناسبة.",
+        "لا تعتمد على رابط تجميعي وحده لإثبات أن التسجيل ما زال مفتوحًا."
+      ],
+      "limitations": "basis=metadata؛ تعذر الوصول إلى نص SPA الكامل. لا توجد أدلة كافية لتأكيد الخبرة المطلوبة أو المدن أو تاريخ الإغلاق، ولا أصف البرنامج بأنه فرصة متاحة للطلاب عمومًا.",
+      "reviewedAt": "2026-11-04T12:22:22+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "Saudi Press Agency — MCIT AI Bridge second edition",
+          "url": "https://www.spa.gov.sa/en/N2717327"
+        },
+        {
+          "title": "Google News feed item — AI Bridge registration coverage",
+          "url": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxNdzJRUWVISTdVblpoclRXTTRmMkxsdHBlZmFKUmdISmotS2VHWWc2RGZNRHI5OE1PamppTlNTaGtaZzVsNWpXWUQ3UW00RnB1TmpETVRXMWhPeFY4TVU4LVRhODFUd0tMV1hWUFNRZjhwN3RFbGFzNEE5MW5YX3NhVDY3S0x3dUl1Y2JRVDFnaG9PU0dZOFdVbGN0TVRzMENxWENYWWwyM082SFFxTVlKX1h2ZmYxNXhIdDRLNXVrNEhCRDRlRlA0NGV1c1RmNEJ1QTk1MWpFdGdxYnE5VU00d1U5R2Z3a3Zyalo2TE91b2lQUTRlVzJsT3R5dEJQdTROQk4yWWliQTNqa3c2S2k3TDl2RUNRTWxBX3RQcjBhV2draUlTbjRXRlQ2ZkhzZlVXRTJZU0NhTTlhZTM2Ykhvd1BR?oc=5"
+        }
+      ]
+    },
+    "954fbd2e34ab1eb99f": {
+      "url": "https://github.com/Muvon/octomind",
+      "titleAr": "Octomind يقدم إطارًا مفتوحًا لوكلاء البرمجة يعمل عبر CLI وMCP مع سياسات TOML ومشرف للتحقق",
+      "summaryAr": "يعرض مستودع Octomind أداة Rust واحدة لتشغيل وكيل برمجي تفاعلي أو عبر stdin أو daemon أو WebSocket أو ACP. يتيح استخدام مزودين مختلفين، وأدوات MCP، وسياسات guardrails في TOML، ونموذجًا مشرفًا للتخطيط والتحقق، وذاكرة تعلم بين الجلسات وضغطًا للسياق. يذكر المؤلفون benchmark من 25 مهمة إصلاح برمجية حقق فيه Octomind 24/25 مقابل 19/25 لـOpenCode مع النموذج نفسه؛ هذه نتائج منشورة من المشروع وليست تقييمًا مستقلاً.",
+      "whyItMatters": "التحليل: يركز المشروع على جعل وكيل البرمجة قابلًا للتشغيل في CI والمهام الخلفية، مع فصل السياسات عن مطالبات الموافقة. قيمته العملية تعتمد على حدود التنفيذ الفعلية وضبط التكاليف ووضوح تدفق البيانات، لا على benchmark واحدة.",
+      "audience": "مطورو البرمجيات، وباحثو الوكلاء، وفرق أدوات المطورين التي تقارن أطر تشغيل الوكلاء.",
+      "nextSteps": [
+        "اقرأ دليل guardrails وحدود sandbox قبل تشغيل وكيل على مستودع مهم.",
+        "قارن مسار Ollama المحلي مع OctoHub أو مفاتيح المزودين واضبط النماذج الثلاثة: main وsupervisor وcompression.",
+        "اختبره في نسخة تجريبية منفصلة مع اختبارات ونسخ احتياطية، ولا تعتمد benchmark المؤلفين دون إعادة إنتاجه."
+      ],
+      "limitations": "basis=readme؛ لم يُبنَ المشروع أو يُشغّل هنا. نتائج benchmark منشورة من المؤلفين على 25 مهمة فقط. توضح الوثائق أن guardrails ليست عزلًا كاملًا للعمليات أو الملفات؛ sandbox يعتمد Landlock على Linux وSeatbelt على macOS. التكلفة تعتمد على مزود النموذج.",
+      "reviewedAt": "2026-11-04T12:22:22+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "Muvon/Octomind — repository and README",
+          "url": "https://github.com/Muvon/octomind"
+        },
+        {
+          "title": "Octomind — configuration guide",
+          "url": "https://github.com/Muvon/octomind/blob/master/doc/usage/03-configuration.md"
+        },
+        {
+          "title": "Octomind — guardrails and validators",
+          "url": "https://github.com/Muvon/octomind/blob/master/doc/usage/18-guardrails.md"
+        },
+        {
+          "title": "Octomind — supervisor",
+          "url": "https://github.com/Muvon/octomind/blob/master/doc/usage/14-supervisor.md"
+        },
+        {
+          "title": "Octomind — providers and local models",
+          "url": "https://github.com/Muvon/octomind/blob/master/doc/usage/04-providers.md"
+        },
+        {
+          "title": "Octobench",
+          "url": "https://github.com/Muvon/octobench"
+        }
+      ]
     }
   }
 }

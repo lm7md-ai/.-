@@ -1,0 +1,528 @@
+{
+  "version": 1,
+  "runAt": "2026-11-04T12:22:22+03:00",
+  "mainCommit": "2f8a39ec0b84ab5564e5572a2929e3c2393ed1bb",
+  "mainSnapshot": {
+    "feedGeneratedAt": "2026-11-04T06:15:09+00:00",
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialItems": 639,
+    "status": "partial",
+    "collected": 318
+  },
+  "mainIncoming": {
+    "files": 65,
+    "rowAppearances": 606,
+    "uniqueIds": 602,
+    "exactImportedRowAppearances": 599,
+    "currentFeedExactUniqueIds": 171,
+    "historicalImportedOutsideCurrentFeed": 424,
+    "seenOnly": 7,
+    "duplicateAppearances": 4,
+    "exactIdUrlMismatches": 0,
+    "activeExactNotImported": 0,
+    "needsCorrection": 0,
+    "confirmedExpired": 0,
+    "sameUrlDifferentIdsCollisionCount": 1,
+    "structuralValidation": "65 JSON files parsed; literal id/url comparisons repeated against current feed/editorial/seen. Official CLI not executed locally."
+  },
+  "mainIncomingManifest": [
+    {
+      "name": "nabdh-editorial-2026-10-24-0542.json",
+      "sha": "5cbbde735820d3fbbd6ffc5e8726ba8010d66dbe",
+      "size": 54158
+    },
+    {
+      "name": "nabdh-editorial-2026-10-24-0840.json",
+      "sha": "68b728fa673c7d5b2198b00b0c5fcc1b9a0bbc18",
+      "size": 41549
+    },
+    {
+      "name": "nabdh-editorial-2026-10-24-1143.json",
+      "sha": "b1aaf887300d600d15b9cd66b51321604d8da139",
+      "size": 48908
+    },
+    {
+      "name": "nabdh-editorial-2026-10-24-1439.json",
+      "sha": "88a0f1efaa8699b1e31a83ac541daba264885113",
+      "size": 31855
+    },
+    {
+      "name": "nabdh-editorial-2026-10-24-1740.json",
+      "sha": "d6fa64cfea40876a5e88aeea44c2525064fcf9fd",
+      "size": 31309
+    },
+    {
+      "name": "nabdh-editorial-2026-10-24-2043.json",
+      "sha": "9651fed60f2c1a32e58d95af66cd0fb4f3ab29ae",
+      "size": 35970
+    },
+    {
+      "name": "nabdh-editorial-2026-10-24-2342.json",
+      "sha": "2f172ad8645bce9232ae1e07f17e5b3cc9f2f94c",
+      "size": 31607
+    },
+    {
+      "name": "nabdh-editorial-2026-10-24.json",
+      "sha": "5d09a1a8bf7f1f0d6ca500296d9707c7dba95fd3",
+      "size": 40127
+    },
+    {
+      "name": "nabdh-editorial-2026-10-25-0250.json",
+      "sha": "6ca9be0501cea58c97733db77363c38d1fb4ebb6",
+      "size": 25312
+    },
+    {
+      "name": "nabdh-editorial-2026-10-25-0554.json",
+      "sha": "0af481e73f1c598c09e347febdbb0843c81c6741",
+      "size": 42722
+    },
+    {
+      "name": "nabdh-editorial-2026-10-25-0845.json",
+      "sha": "6ec634639d38f8884a4a9fb03fd9699457390da3",
+      "size": 33021
+    },
+    {
+      "name": "nabdh-editorial-2026-10-25-1143.json",
+      "sha": "42a3f5335cf768033ca7a1f596078f38eb2029bf",
+      "size": 19699
+    },
+    {
+      "name": "nabdh-editorial-2026-10-25-1442.json",
+      "sha": "99ce95d76b905597078eb53082a1c4685082b02e",
+      "size": 26934
+    },
+    {
+      "name": "nabdh-editorial-2026-10-25-1742.json",
+      "sha": "7b49c3322083612bc034791c03e8e7868e5710cc",
+      "size": 23895
+    },
+    {
+      "name": "nabdh-editorial-2026-10-25-2038.json",
+      "sha": "f20fd110855271a58eb750962ec67abd2a880b8f",
+      "size": 22349
+    },
+    {
+      "name": "nabdh-editorial-2026-10-25-2342.json",
+      "sha": "67a086dc877cc360518d3027ad4a14e9e84a7858",
+      "size": 37381
+    },
+    {
+      "name": "nabdh-editorial-2026-10-26-0250.json",
+      "sha": "ca50fd0bec339642cfe1f0b4945253c62e6d4a7d",
+      "size": 28763
+    },
+    {
+      "name": "nabdh-editorial-2026-10-26-0545.json",
+      "sha": "8aaf21148bebff0b1420b4c6dd3862e8829849b5",
+      "size": 23176
+    },
+    {
+      "name": "nabdh-editorial-2026-10-26-0840.json",
+      "sha": "bcf33df52194b01060e5a4b3b777561b88c969cb",
+      "size": 21312
+    },
+    {
+      "name": "nabdh-editorial-2026-10-26-1152.json",
+      "sha": "c06cebf6b7957dc55c8bee28ca267c512e5ea42f",
+      "size": 33709
+    },
+    {
+      "name": "nabdh-editorial-2026-10-26-1445.json",
+      "sha": "c7fe44ccbf051bc85b89164ce2d1acd3aa57de64",
+      "size": 25617
+    },
+    {
+      "name": "nabdh-editorial-2026-10-26-1745.json",
+      "sha": "7c112aa8f7b5b7056c2819a5897c0848e0e7fdcb",
+      "size": 37234
+    },
+    {
+      "name": "nabdh-editorial-2026-10-26-2042.json",
+      "sha": "3137089d6e6a7b08845462514f354f129456e8e9",
+      "size": 33865
+    },
+    {
+      "name": "nabdh-editorial-2026-10-26-2342.json",
+      "sha": "97d56c54768f6ce8112b2c14b0ff42bdb5144c66",
+      "size": 54423
+    },
+    {
+      "name": "nabdh-editorial-2026-10-27-0038.json",
+      "sha": "7a9edf47ccb48c8960073c9fc6eb4bdb0540ca44",
+      "size": 40868
+    },
+    {
+      "name": "nabdh-editorial-2026-10-27-0240.json",
+      "sha": "27e9663b2cb55cda16f2fb70ca1a718d0f35ef7a",
+      "size": 37107
+    },
+    {
+      "name": "nabdh-editorial-2026-10-27-0549.json",
+      "sha": "679a308b144483ef53b094394e1217538bf1978b",
+      "size": 33231
+    },
+    {
+      "name": "nabdh-editorial-2026-10-27-0619.json",
+      "sha": "d5228abb39972066b739155b4fb7a8179993455f",
+      "size": 65720
+    },
+    {
+      "name": "nabdh-editorial-2026-10-27-0847.json",
+      "sha": "9d686fb606509755601618cf886ac3bd0e5b49f9",
+      "size": 50644
+    },
+    {
+      "name": "nabdh-editorial-2026-10-27-1141.json",
+      "sha": "fa48ff89641ec45430471ddce4df8783c228ce04",
+      "size": 53787
+    },
+    {
+      "name": "nabdh-editorial-2026-10-27-1443.json",
+      "sha": "c67141c5c3a0e451aff2cd6a8dd0c002e61b3006",
+      "size": 53978
+    },
+    {
+      "name": "nabdh-editorial-2026-10-27-2045.json",
+      "sha": "f0229a44ce7581db7d8957319a023faea189541e",
+      "size": 46084
+    },
+    {
+      "name": "nabdh-editorial-2026-10-27-2113.json",
+      "sha": "92821d67483f60c53e823a0b023ff9cfb5c3a525",
+      "size": 56996
+    },
+    {
+      "name": "nabdh-editorial-2026-10-27-2347.json",
+      "sha": "70e44c66c3cf9cfa1e44b09b05a28a70c378c6e7",
+      "size": 64559
+    },
+    {
+      "name": "nabdh-editorial-2026-10-28-0244.json",
+      "sha": "ed1e1cc5291d476c1ccacf7d21d73abb77552b7b",
+      "size": 33903
+    },
+    {
+      "name": "nabdh-editorial-2026-10-28-0555.json",
+      "sha": "315100dfa8a90ff92c9ae5b538ff050167f2f14a",
+      "size": 47838
+    },
+    {
+      "name": "nabdh-editorial-2026-10-28-0609.json",
+      "sha": "8efa1fd9599d7862b8e61f4ac22ed4a161bb4d2f",
+      "size": 54895
+    },
+    {
+      "name": "nabdh-editorial-2026-10-28-0846.json",
+      "sha": "f999d75789553ce5c87dec9463e023433a7126ca",
+      "size": 56750
+    },
+    {
+      "name": "nabdh-editorial-2026-10-28-0914.json",
+      "sha": "2f3eaa2d7e45d67c2e44f94da0da1f944925b2a3",
+      "size": 57082
+    },
+    {
+      "name": "nabdh-editorial-2026-10-28-0943.json",
+      "sha": "01bf866ffc7eab47fd6b4eda85d42d0026213be7",
+      "size": 48993
+    },
+    {
+      "name": "nabdh-editorial-2026-10-28-1151.json",
+      "sha": "468747a84ca58368696cdf5b1bcf200e9416a034",
+      "size": 37058
+    },
+    {
+      "name": "nabdh-editorial-2026-10-28-2045.json",
+      "sha": "c664e39c49ecdb1f5516350dcc75449b8a7f5fda",
+      "size": 52024
+    },
+    {
+      "name": "nabdh-editorial-2026-10-29-0243.json",
+      "sha": "e9f31a6099279e9c860307533f43b7eb8d8711e0",
+      "size": 51005
+    },
+    {
+      "name": "nabdh-editorial-2026-10-29-0319.json",
+      "sha": "bb0a8184c06d575a27c778d6063d51571dead582",
+      "size": 53508
+    },
+    {
+      "name": "nabdh-editorial-2026-10-29-0559.json",
+      "sha": "da75de9a6dca73741dad5daa1b32b7a67053b651",
+      "size": 62436
+    },
+    {
+      "name": "nabdh-editorial-2026-10-29-0855.json",
+      "sha": "fadf854386415a468b99248200c1a205f12df103",
+      "size": 51587
+    },
+    {
+      "name": "nabdh-editorial-2026-10-29-1145.json",
+      "sha": "de7ea61f9e14b81f983faaf21b5c9c6e1fdddd98",
+      "size": 51141
+    },
+    {
+      "name": "nabdh-editorial-2026-10-29-1525.json",
+      "sha": "521e147455824f99cbc7caafe9366bf7a15104ac",
+      "size": 37365
+    },
+    {
+      "name": "nabdh-editorial-2026-10-29-1755.json",
+      "sha": "fc9d508649f75610244bbc423cf38cfe78962257",
+      "size": 31017
+    },
+    {
+      "name": "nabdh-editorial-2026-10-29-2045.json",
+      "sha": "891780f93c96511e5140b5df7a0dd41b8f5cce7c",
+      "size": 54251
+    },
+    {
+      "name": "nabdh-editorial-2026-10-30-0255.json",
+      "sha": "fdf800d02b5012f31fcdb6f9d43f79766028b65c",
+      "size": 29937
+    },
+    {
+      "name": "nabdh-editorial-2026-10-30-0540.json",
+      "sha": "06b5195b44e0c58ac1aac07ad25f63d6c8d45c5d",
+      "size": 16377
+    },
+    {
+      "name": "nabdh-editorial-2026-10-30-0839.json",
+      "sha": "1f7e377a69c0f490c325dc80718dce33a714f43d",
+      "size": 24177
+    },
+    {
+      "name": "nabdh-editorial-2026-10-30-1146.json",
+      "sha": "a96b8c20d2b44f2e27fcf2c08bfe446667dbb7b5",
+      "size": 15698
+    },
+    {
+      "name": "nabdh-editorial-2026-10-30-1442.json",
+      "sha": "7cdb583309843dbefd5d93f63d47a2e15da1df5f",
+      "size": 3392
+    },
+    {
+      "name": "nabdh-editorial-2026-10-30-1811.json",
+      "sha": "2fe4f53352f2c556b9eb87175b363874c390484d",
+      "size": 14029
+    },
+    {
+      "name": "nabdh-editorial-2026-10-30-2044.json",
+      "sha": "19b5b936609bc7ebffd6c4a8c372765c923fd902",
+      "size": 40611
+    },
+    {
+      "name": "nabdh-editorial-2026-10-30-2341.json",
+      "sha": "8988d2c951f97cb8beb7abd1edbcd3994d660f07",
+      "size": 22624
+    },
+    {
+      "name": "nabdh-editorial-2026-10-31-0247.json",
+      "sha": "e53fd6cb756bbed9813c6396e803a32e09acf3a7",
+      "size": 26987
+    },
+    {
+      "name": "nabdh-editorial-2026-10-31-0840.json",
+      "sha": "7dbe21502bd54c6d62ef20d1a3514957cae856c3",
+      "size": 31009
+    },
+    {
+      "name": "nabdh-editorial-2026-10-31-1811.json",
+      "sha": "9f530e0e81a5a102b85805837487ecea1404c372",
+      "size": 25322
+    },
+    {
+      "name": "nabdh-editorial-2026-11-01-0542.json",
+      "sha": "14222b7b3eedcedfb7122b2ca2cefed57cdb4d86",
+      "size": 40337
+    },
+    {
+      "name": "nabdh-editorial-2026-11-01-1158.json",
+      "sha": "a3e61b621e31d1b30089da07a0f8015bf83760e6",
+      "size": 18550
+    },
+    {
+      "name": "nabdh-editorial-2026-11-02-1446.json",
+      "sha": "405120544206256f853fe5a7545787a63451678e",
+      "size": 40747
+    },
+    {
+      "name": "nabdh-editorial-2026-11-02-2347.json",
+      "sha": "41155826ae5385d9efbdec284da0dd6030e238cc",
+      "size": 15680
+    }
+  ],
+  "mainSeenOnly": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "label": "NVIDIA OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "label": "Canva Craft",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "label": "1Password agent sign-in",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    },
+    {
+      "id": "87d27a9f8a0972f507",
+      "url": "https://www.theverge.com/tech/1023021/binance-hack-billions-biggest-crypto-heist",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    },
+    {
+      "id": "65eeab64fed21e0b54",
+      "url": "https://www.engadget.com/2301934/general-motors-220-million-settle-multi-state-data-privacy-lawsuit/",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    },
+    {
+      "id": "d674dea922625d0be8",
+      "url": "https://noyb.eu/en/noyb-win-french-electronics-retailer-fnac-darty-fined-eu7-million",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    },
+    {
+      "id": "967be99077d13f07b2",
+      "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    }
+  ],
+  "pRIncoming": {
+    "files": 7,
+    "filesList": [
+      "nabdh-editorial-2026-11-03-2039.json",
+      "nabdh-editorial-2026-11-03-2136.json",
+      "nabdh-editorial-2026-11-03-2222.json",
+      "nabdh-editorial-2026-11-03-2342.json",
+      "nabdh-editorial-2026-11-04-0238.json",
+      "nabdh-editorial-2026-11-04-0841.json",
+      "nabdh-editorial-2026-11-04-1143.json"
+    ],
+    "rowAppearances": 84,
+    "uniqueIds": 83,
+    "currentFeedExactUniqueIds": 70,
+    "editorialImported": 72,
+    "historicalImported": 2,
+    "seenOnlyUnimported": 11,
+    "duplicateId": "c01265aacc1a10af6e",
+    "duplicateIn": [
+      "nabdh-editorial-2026-11-03-2039.json",
+      "nabdh-editorial-2026-11-03-2136.json"
+    ],
+    "idUrlMismatches": 0,
+    "activeExactNotImported": 0,
+    "structuralValidation": "84 records structurally checked in JS against editorial.py constraints; zero errors. Official CLI not executed."
+  },
+  "pending": [
+    {
+      "id": "32b3bf2b225f3d4c44",
+      "title": "MIT weight-space programming",
+      "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+      "reason": "seen-only; absent from current feed/editorial"
+    },
+    {
+      "id": "5010fb296f767bbc9b",
+      "title": "Terry Tao: mathematics in AI era",
+      "url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/",
+      "reason": "seen-only; absent from current feed/editorial"
+    },
+    {
+      "id": "327e862bb29c2bb4f7",
+      "title": "Meituan LongCat-2.5",
+      "url": "https://longcat.ai/blog/longcat-2.5/",
+      "reason": "seen-only; absent from current feed/editorial"
+    },
+    {
+      "id": "dc7eb9e8885fba4465",
+      "title": "Hidden behavior in agents research",
+      "url": "https://arxiv.org/abs/2610.37741",
+      "reason": "seen-only; absent from current feed/editorial"
+    },
+    {
+      "id": "56a1a96015a9777801",
+      "title": "Polyend Tracker update",
+      "url": "https://polyend.com/whats-up/tracker-the-biggest-update-yet/",
+      "reason": "seen-only; absent from current feed/editorial"
+    },
+    {
+      "id": "cb87f0ba6d1c74466f",
+      "title": "Docker Agent Collaboration",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxObHNVY2RGNWxZajhMalAxVDRBVXVZRF95ZEV6eUM3QTlOMkl3bGpZUlNSaVZZUmxqcVAtVDVpRThIXzc4eExtcmdEdDlZYWt1SXR3bHN0aC1qR0JURUxtTVQxb3JGRDNOSkRCZXhna1cxMC1aeFRPekZaTWNJZVJoNHlWOA?oc=5",
+      "reason": "seen-only; absent from current feed/editorial"
+    },
+    {
+      "id": "5b9f2f37879a136ac2",
+      "title": "European retail cooling systems incident",
+      "url": "https://www.bbc.co.uk/news/articles/ckpqg8lve73go?at_medium=RSS&at_campaign=rss",
+      "reason": "seen-only; absent from current feed/editorial"
+    },
+    {
+      "id": "3e8a8aa6133203ad02",
+      "title": "Momentic Mo",
+      "url": "https://momentic.ai/",
+      "reason": "seen-only; absent from current feed/editorial"
+    },
+    {
+      "id": "5f4b9fdfeb2042b971",
+      "title": "Google XCPE botnet coverage",
+      "url": "https://www.theverge.com/1024807/google-botnet-android-tv-shut-down",
+      "reason": "seen-only; distinct URL/ID from the current Ars Technica XCPE item; no substitution"
+    },
+    {
+      "id": "f6417c66c0228f42d3",
+      "title": "Meta Quest 2/Pro updates",
+      "url": "https://www.theverge.com/tech/1024835/meta-vr-quest-2-pro-os-end-updates",
+      "reason": "seen-only; absent from current feed/editorial"
+    },
+    {
+      "id": "1263ce4e09302da828",
+      "title": "Oracle financing for AI buildout",
+      "url": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
+      "reason": "seen-only; absent from current feed/editorial"
+    }
+  ],
+  "historicalRetained": [
+    {
+      "id": "841e05fd699259e83c",
+      "title": "SLAC Altermagnetism",
+      "url": "https://www6.slac.stanford.edu/news/2026-10-29-slac-researchers-find-proof-altermagnetism-new-magnetic-phase",
+      "status": "retained; absent from current feed; not classified expired"
+    },
+    {
+      "id": "834f867a452076917a",
+      "title": "NVIDIA Auto Ontology",
+      "url": "https://github.com/NVIDIA/auto-ontology",
+      "status": "retained; absent from current feed; not classified expired"
+    }
+  ],
+  "newBatch": {
+    "file": "editorial/incoming/nabdh-editorial-2026-11-04-1222.json",
+    "records": 9,
+    "exactFeedIdUrlMatches": 9,
+    "structuralErrors": 0,
+    "importedIntoBranchEditorial": 9
+  },
+  "specialDecision": "NVIDIA OpenShell, Canva Craft and 1Password agent sign-in remain seen-only. No replacement IDs generated. The Verge XCPE record remains pending; the Ars XCPE story was enriched only under its own feed ID/URL.",
+  "decision": "Preserve historical editorial; import only exact current feed id/url pairs; hold 11 nonmatching records."
+}

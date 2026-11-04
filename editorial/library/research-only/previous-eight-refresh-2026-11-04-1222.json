@@ -1,0 +1,209 @@
+{
+  "version": 1,
+  "runAt": "2026-11-04T12:22:22+03:00",
+  "scope": "Refresh metrics for eight previously reviewed projects; preserve order and existing ideas.",
+  "metricsMeasuredAt": "2026-11-04T09:11:09Z",
+  "metricSource": "GitHub REST API; counters are cumulative snapshots, not daily gains.",
+  "projectsReviewed": 8,
+  "nonArchived": 8,
+  "archived": 0,
+  "feedVisible": 1,
+  "researchOnly": 7,
+  "licenses": {
+    "MIT": 5,
+    "Apache-2.0": 3
+  },
+  "metrics": [
+    {
+      "repository": "patchy631/ai-engineering-hub",
+      "stars": 41088,
+      "forks": 6560,
+      "openIssues": 136,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "updatedAt": "2026-11-04T09:07:43Z",
+      "defaultBranch": "main",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "repository": "googleapis/python-genai",
+      "stars": 4055,
+      "forks": 1057,
+      "openIssues": 363,
+      "archived": false,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-04T05:52:35Z",
+      "updatedAt": "2026-11-04T06:07:48Z",
+      "defaultBranch": "main",
+      "language": "Python"
+    },
+    {
+      "repository": "Millillion/lasm",
+      "stars": 96,
+      "forks": 7,
+      "openIssues": 5,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-11-04T08:45:41Z",
+      "updatedAt": "2026-11-04T08:45:45Z",
+      "defaultBranch": "main",
+      "language": "C"
+    },
+    {
+      "repository": "microsoft/markitdown",
+      "stars": 193800,
+      "forks": 14548,
+      "openIssues": 800,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-10-28T15:33:14Z",
+      "updatedAt": "2026-11-04T09:15:51Z",
+      "defaultBranch": "main",
+      "language": "Python"
+    },
+    {
+      "repository": "yc-software/minecraft-agent-harness",
+      "stars": 130,
+      "forks": 10,
+      "openIssues": 1,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "updatedAt": "2026-11-04T06:59:03Z",
+      "defaultBranch": "main",
+      "language": "JavaScript"
+    },
+    {
+      "repository": "NVIDIA/OpenShell",
+      "stars": 21062,
+      "forks": 2061,
+      "openIssues": 609,
+      "archived": false,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-04T09:07:10Z",
+      "updatedAt": "2026-11-04T09:19:44Z",
+      "defaultBranch": "main",
+      "language": "Rust"
+    },
+    {
+      "repository": "pydantic/pydantic-ai",
+      "stars": 21021,
+      "forks": 3097,
+      "openIssues": 1794,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-11-04T09:19:07Z",
+      "updatedAt": "2026-11-04T08:21:05Z",
+      "defaultBranch": "main",
+      "language": "Python"
+    },
+    {
+      "repository": "astral-sh/uv",
+      "stars": 91527,
+      "forks": 3745,
+      "openIssues": 3039,
+      "archived": false,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-04T00:27:10Z",
+      "updatedAt": "2026-11-04T07:51:24Z",
+      "defaultBranch": "main",
+      "language": "Rust"
+    }
+  ],
+  "timestampAnomalies": [
+    {
+      "repo": "microsoft/markitdown",
+      "field": "updatedAt",
+      "value": "2026-11-04T09:15:51Z",
+      "reason": "later than metricsMeasuredAt"
+    },
+    {
+      "repo": "NVIDIA/OpenShell",
+      "field": "updatedAt",
+      "value": "2026-11-04T09:19:44Z",
+      "reason": "later than metricsMeasuredAt"
+    },
+    {
+      "repo": "pydantic/pydantic-ai",
+      "field": "pushedAt",
+      "value": "2026-11-04T09:19:07Z",
+      "reason": "later than metricsMeasuredAt"
+    }
+  ],
+  "bestThree": [
+    {
+      "title": "عارض فروقات سياسات OpenShell قبل التنفيذ",
+      "problem": "يصعب اكتشاف اتساع صلاحيات الملفات أو الشبكة في ملفات السياسات الطويلة.",
+      "approach": "واجهة تقارن السياسة الحالية والمقترحة وتشرح أثر كل قاعدة مع موافقة بشرية.",
+      "stack": "TypeScript + JSON Schema + OpenShell policy API",
+      "steps": [
+        "قراءة schema الرسمية.",
+        "تطبيع القواعد وعرض الفروقات.",
+        "إظهار الملفات والوجهات المتأثرة.",
+        "إضافة اختبار deny-by-default."
+      ],
+      "metric": "الصلاحيات الواسعة المكتشفة قبل التشغيل.",
+      "difficulty": "مرتفع، تقدير 1–2 أسبوع",
+      "risks": "تفسير خاطئ لقاعدة قد يعطي ثقة زائفة.",
+      "sources": [
+        {
+          "title": "OpenShell",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        }
+      ]
+    },
+    {
+      "title": "حزمة تقييم typed لوكلاء Pydantic AI",
+      "problem": "قد ينتج الوكيل مخرجات غير صحيحة أو يستدعي أداة غير مناسبة.",
+      "approach": "حالات ثابتة تقيس schema ومسارات الأدوات والامتناع والتكلفة والزمن.",
+      "stack": "Python + Pydantic Evals + pytest + JSONL",
+      "steps": [
+        "تعريف مهام مرجعية.",
+        "إنشاء expected outputs.",
+        "اختبار الفشل والامتناع.",
+        "تصدير مقارنة إصدارات."
+      ],
+      "metric": "دقة المخرجات المنظمة وصحة استدعاءات الأدوات.",
+      "difficulty": "متوسط إلى مرتفع، تقدير أسبوع",
+      "risks": "عدم حتمية النماذج.",
+      "sources": [
+        {
+          "title": "Pydantic AI",
+          "url": "https://github.com/pydantic/pydantic-ai"
+        },
+        {
+          "title": "Docs",
+          "url": "https://pydantic.dev/docs/ai/"
+        }
+      ]
+    },
+    {
+      "title": "مصفوفة توافق Google GenAI SDK",
+      "problem": "تغير واجهات SDK قد يكسر أمثلة قديمة عند الترقية.",
+      "approach": "اختبارات contract لواجهات Python وإصدارات SDK باستخدام fixtures.",
+      "stack": "Python + pytest + GitHub Actions + JSON fixtures",
+      "steps": [
+        "حصر الواجهات المستخدمة.",
+        "إنشاء fixtures ثابتة.",
+        "تشغيل مصفوفة Python وSDK.",
+        "نشر تقرير deprecations."
+      ],
+      "metric": "عدد regressions المكتشفة قبل الإصدار.",
+      "difficulty": "متوسط، تقدير 5–7 أيام",
+      "risks": "fixtures لا تمثل كل تغيرات الخدمة الحية.",
+      "sources": [
+        {
+          "title": "Google GenAI SDK",
+          "url": "https://github.com/googleapis/python-genai"
+        },
+        {
+          "title": "Docs",
+          "url": "https://googleapis.github.io/python-genai/"
+        }
+      ]
+    }
+  ],
+  "testEvidence": null,
+  "note": "All eight remain unarchived in GitHub metadata. One is visible in feed (AI Engineering Hub); seven remain research-only. Future timestamps flagged, not used as proof of activity."
+}
