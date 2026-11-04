@@ -118,12 +118,51 @@
     "python scripts/editorial.py import": "not run locally",
     "python -m unittest discover -s tests -v": "not run locally",
     "structuralEquivalent": "passed for all 8 PR80 incoming files; 0 errors",
-    "lastKnownPrCiRun": 41824606474,
-    "lastKnownPrCiConclusion": "success on prior HEAD 5df85e9281d04a19c14e856e534e2be5b600c2cb; new commits require fresh CI"
+    "lastKnownPrCiRun": 41851380305,
+    "lastKnownPrCiConclusion": "success",
+    "testedCommit": "ca804be2dc0e138dbbedcc7ab9b11ca17bc9b375",
+    "testedRunNumber": 170,
+    "testedSteps": [
+      "python -m unittest discover -s tests -v: success",
+      "python scripts/editorial.py validate: success",
+      "node --check site/app.js && node --check site/ideas.js: success"
+    ],
+    "mainDeploymentRun": 41784265386,
+    "mainDeploymentConclusion": "success",
+    "mainDeploymentSteps": [
+      "Run offline tests: success",
+      "Validate editorial content: success",
+      "Check browser scripts: success",
+      "Refresh public feeds: success",
+      "Preserve history: success",
+      "Configure GitHub Pages: success",
+      "Upload static website: success",
+      "Deploy static website: success"
+    ],
+    "localCommandsStillNotRun": true
   },
   "workflowSafety": {
     "prCheck": "check.yml runs unit tests, editorial validator, and JS syntax checks on pull_request.",
     "mainWorkflow": "update-and-deploy.yml runs on push to main, schedule, and manual dispatch; after tests it executes scripts/update_feed.py, stages feed.json/seen.json/status.json, pushes any changes, then deploys Pages.",
     "mergeDecision": "do not merge PR80 in this run because its push-to-main trigger can rewrite feed.json and seen.json, explicitly prohibited. PR78 and PR71 remain open and also modify editorial.json; do not modify them."
+  },
+  "pullRequest": {
+    "number": 80,
+    "state": "open",
+    "merged": false,
+    "mergeable": true,
+    "head": "content/nabdh-2026-11-03-1138",
+    "headSha": "ca804be2dc0e138dbbedcc7ab9b11ca17bc9b375",
+    "aheadBy": 45,
+    "behindBy": 3,
+    "changedFiles": 56,
+    "additions": 26097,
+    "deletions": 0,
+    "protectedPathsChanged": [],
+    "otherOpenPrs": [
+      78,
+      71
+    ],
+    "decision": "not merged: push-to-main workflow writes feed.json and seen.json, both explicitly protected"
   }
 }
