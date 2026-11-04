@@ -31685,31 +31685,6 @@
         }
       ]
     },
-    "841e05fd699259e83c": {
-      "url": "https://www6.slac.stanford.edu/news/2026-10-29-slac-researchers-find-proof-altermagnetism-new-magnetic-phase",
-      "titleAr": "فريق SLAC يقدم دليلًا تجريبيًا على طور مغناطيسي ثالث في مادة MnTe",
-      "summaryAr": "تقول SLAC إن فريقًا بقيادة المختبر رصد خاصية chirality في مادة manganese telluride، بما يقدم دليلًا تجريبيًا على altermagnetism، وهي فئة مغناطيسية تختلف عن التصنيفين التقليديين ferromagnetism وantiferromagnetism. وتشير المؤسسة إلى تطبيقات محتملة في الذاكرة والإلكترونيات وتقنيات الكم.",
-      "whyItMatters": "قد توسع النتيجة فهم المواد المغناطيسية وتفتح مسارات بحثية لمكونات إلكترونية متقدمة. لكن الأثر الصناعي بعيد؛ القيمة الحالية في إثبات الخاصية وتوجيه أبحاث المواد.",
-      "audience": "طلاب الفيزياء وعلوم المواد، الباحثون، والمهتمون بتقنيات الذاكرة والكم.",
-      "nextSteps": [
-        "اقرأ الورقة المنشورة في Science لتفاصيل القياس.",
-        "تابع تكرار النتيجة على مواد أخرى.",
-        "ميّز بين إثبات الطور المغناطيسي والتطبيق التجاري المحتمل."
-      ],
-      "limitations": "النتيجة تتعلق بمادة MnTe وتجربة محددة؛ التطبيقات في الذاكرة ومراكز البيانات احتمالات بحثية وليست منتجات جاهزة.",
-      "reviewedAt": "2026-11-03T11:38:31+03:00",
-      "basis": "article",
-      "sources": [
-        {
-          "title": "SLAC National Accelerator Laboratory — Proof of altermagnetism",
-          "url": "https://www6.slac.stanford.edu/news/2026-10-29-slac-researchers-find-proof-altermagnetism-new-magnetic-phase"
-        },
-        {
-          "title": "Science — Research paper DOI",
-          "url": "https://doi.org/10.1126/science.adv3196"
-        }
-      ]
-    },
     "bca108e4c77bd86b23": {
       "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
       "titleAr": "OpenAI توسع مكافآت برنامج الإفصاح المسؤول عن الثغرات",
@@ -32073,44 +32048,6 @@
         {
           "title": "وزارة الاتصالات — نموذج التسجيل الرسمي",
           "url": "https://futureskills.mcit.gov.sa/ar/form/brnamj-aksntshr-fy-aldhkaa"
-        }
-      ]
-    },
-    "834f867a452076917a": {
-      "url": "https://github.com/NVIDIA/auto-ontology",
-      "titleAr": "NVIDIA تطرح Auto Ontology لبناء طبقة دلالية موثوقة لوكلاء تحليل البيانات",
-      "summaryAr": "يصف المستودع الرسمي Auto Ontology بوصفه إطارًا مفتوحًا لبناء طبقة دلالية ورسوم معرفية فوق بيانات المؤسسات، وربط تعريفات المقاييس والكيانات بمصادرها، ثم إتاحة هذا السياق للوكلاء عبر MCP وCLI وAPI. يدعم الاستعلام باللغة الطبيعية وتحويله إلى SQL مع إظهار المصدر، ويعتمد على PostgreSQL وpgvector وواجهات NVIDIA NIM، مع نشر محلي عبر Docker Compose أو على Kubernetes عبر Helm.",
-      "whyItMatters": "يعالج المشروع مشكلة شائعة في وكلاء البيانات: الإجابة السريعة قد تكون خاطئة إذا لم يفهم الوكيل معنى المقياس ومصدره وعلاقته ببقية البيانات. طبقة التعريفات والنسب إلى المصدر قد تجعل النتائج أكثر قابلية للتدقيق.",
-      "audience": "مهندسو البيانات والذكاء الاصطناعي، فرق التحليلات المؤسسية، ومطورو وكلاء MCP.",
-      "nextSteps": [
-        "اقرأ متطلبات Python وPostgreSQL وNIM قبل تقدير سهولة النشر.",
-        "اختبره على قاعدة بيانات تجريبية غير حساسة وقارن SQL الناتج بتعريفات موثوقة.",
-        "احسب تكلفة الاستدلال والتضمين وإعادة الترتيب قبل اختيار واجهة NIM مستضافة أو مستضافة ذاتيًا.",
-        "راجع LICENSE وTHIRD_PARTY_NOTICES قبل دمجه في منتج."
-      ],
-      "limitations": "المستودع يطلب مفتاح NVIDIA NIM أو نقطة نهاية مستضافة ذاتيًا، إضافة إلى قاعدة بيانات مصدر. الترخيص الأساسي Apache-2.0 لكن مكونات الطرف الثالث لها تراخيصها الخاصة، كما يذكر المشروع أنه لا يقبل مساهمات خارجية حاليًا. لم نشغّل المشروع.",
-      "reviewedAt": "2026-11-03T20:39:34+03:00",
-      "basis": "readme",
-      "sources": [
-        {
-          "title": "NVIDIA Auto Ontology repository and README",
-          "url": "https://github.com/NVIDIA/auto-ontology"
-        },
-        {
-          "title": "Apache-2.0 LICENSE",
-          "url": "https://github.com/NVIDIA/auto-ontology/blob/main/LICENSE"
-        },
-        {
-          "title": "Python dependencies",
-          "url": "https://github.com/NVIDIA/auto-ontology/blob/main/pyproject.toml"
-        },
-        {
-          "title": "Deployment guide",
-          "url": "https://github.com/NVIDIA/auto-ontology/blob/main/DEPLOYMENT.md"
-        },
-        {
-          "title": "MCP server documentation",
-          "url": "https://github.com/NVIDIA/auto-ontology/blob/main/docs/mcp.md"
         }
       ]
     },
