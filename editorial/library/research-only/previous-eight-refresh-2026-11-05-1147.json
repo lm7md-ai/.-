@@ -1,0 +1,187 @@
+{
+  "version": 1,
+  "runAt": "2026-11-05T12:00:45.409+03:00",
+  "scope": "Refresh metrics for the eight previously reviewed projects; preserve original order and existing idea order.",
+  "metricsMeasuredAt": "2026-11-05T08:47:13.711Z",
+  "metricSource": "GitHub REST API repository metadata; cumulative counters, not daily gains.",
+  "projectsReviewed": 8,
+  "nonArchived": 8,
+  "archived": 0,
+  "feedVisible": 1,
+  "researchOnly": 7,
+  "metrics": [
+    {
+      "repository": "patchy631/ai-engineering-hub",
+      "stars": 41132,
+      "forks": 6566,
+      "openIssues": 136,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "updatedAt": "2026-11-05T08:46:48Z",
+      "defaultBranch": "main",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "repository": "googleapis/python-genai",
+      "stars": 4055,
+      "forks": 1057,
+      "openIssues": 368,
+      "archived": false,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-05T06:10:47Z",
+      "updatedAt": "2026-11-05T06:10:24Z",
+      "defaultBranch": "main",
+      "language": "Python"
+    },
+    {
+      "repository": "Millillion/lasm",
+      "stars": 99,
+      "forks": 7,
+      "openIssues": 7,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-11-05T06:06:13Z",
+      "updatedAt": "2026-11-05T06:06:17Z",
+      "defaultBranch": "main",
+      "language": "C"
+    },
+    {
+      "repository": "microsoft/markitdown",
+      "stars": 193951,
+      "forks": 14569,
+      "openIssues": 801,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-10-28T15:33:14Z",
+      "updatedAt": "2026-11-05T08:24:52Z",
+      "defaultBranch": "main",
+      "language": "Python"
+    },
+    {
+      "repository": "yc-software/minecraft-agent-harness",
+      "stars": 137,
+      "forks": 11,
+      "openIssues": 1,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "updatedAt": "2026-11-05T08:30:52Z",
+      "defaultBranch": "main",
+      "language": "JavaScript"
+    },
+    {
+      "repository": "NVIDIA/OpenShell",
+      "stars": 21115,
+      "forks": 2063,
+      "openIssues": 630,
+      "archived": false,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-05T08:32:41Z",
+      "updatedAt": "2026-11-05T08:36:05Z",
+      "defaultBranch": "main",
+      "language": "Rust"
+    },
+    {
+      "repository": "pydantic/pydantic-ai",
+      "stars": 21034,
+      "forks": 3102,
+      "openIssues": 1766,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-11-05T08:43:20Z",
+      "updatedAt": "2026-11-05T07:59:57Z",
+      "defaultBranch": "main",
+      "language": "Python"
+    },
+    {
+      "repository": "astral-sh/uv",
+      "stars": 91559,
+      "forks": 3746,
+      "openIssues": 3048,
+      "archived": false,
+      "license": "Apache-2.0 OR MIT",
+      "pushedAt": "2026-11-05T02:44:47Z",
+      "updatedAt": "2026-11-05T08:29:48Z",
+      "defaultBranch": "main",
+      "language": "Rust"
+    }
+  ],
+  "licenseEvidence": "GitHub REST API SPDX metadata captured at metricsMeasuredAt; this snapshot does not replace a full upstream license-text review.",
+  "timestampAnomalies": [],
+  "bestThree": [
+    {
+      "title": "عارض فروقات سياسات OpenShell قبل التنفيذ",
+      "problem": "يصعب اكتشاف اتساع صلاحيات الملفات أو الشبكة في ملفات السياسات الطويلة.",
+      "approach": "واجهة تقارن السياسة الحالية والمقترحة وتشرح أثر كل قاعدة مع موافقة بشرية.",
+      "stack": "TypeScript + JSON Schema + OpenShell policy API",
+      "steps": [
+        "قراءة schema الرسمية.",
+        "تطبيع القواعد وعرض الفروقات.",
+        "إظهار الملفات والوجهات المتأثرة.",
+        "إضافة اختبار deny-by-default."
+      ],
+      "metric": "الصلاحيات الواسعة المكتشفة قبل التشغيل.",
+      "difficulty": "مرتفع، تقدير 1–2 أسبوع",
+      "risks": "تفسير خاطئ لقاعدة قد يعطي ثقة زائفة.",
+      "sources": [
+        {
+          "title": "OpenShell",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        }
+      ]
+    },
+    {
+      "title": "حزمة تقييم typed لوكلاء Pydantic AI",
+      "problem": "قد ينتج الوكيل مخرجات غير صحيحة أو يستدعي أداة غير مناسبة.",
+      "approach": "حالات ثابتة تقيس schema ومسارات الأدوات والامتناع والتكلفة والزمن.",
+      "stack": "Python + Pydantic Evals + pytest + JSONL",
+      "steps": [
+        "تعريف مهام مرجعية.",
+        "إنشاء expected outputs.",
+        "اختبار الفشل والامتناع.",
+        "تصدير مقارنة إصدارات."
+      ],
+      "metric": "دقة المخرجات المنظمة وصحة استدعاءات الأدوات.",
+      "difficulty": "متوسط إلى مرتفع، تقدير أسبوع",
+      "risks": "عدم حتمية النماذج.",
+      "sources": [
+        {
+          "title": "Pydantic AI",
+          "url": "https://github.com/pydantic/pydantic-ai"
+        },
+        {
+          "title": "Docs",
+          "url": "https://pydantic.dev/docs/ai/"
+        }
+      ]
+    },
+    {
+      "title": "مصفوفة توافق Google GenAI SDK",
+      "problem": "تغير واجهات SDK قد يكسر أمثلة قديمة عند الترقية.",
+      "approach": "اختبارات contract لواجهات Python وإصدارات SDK باستخدام fixtures.",
+      "stack": "Python + pytest + GitHub Actions + JSON fixtures",
+      "steps": [
+        "حصر الواجهات المستخدمة.",
+        "إنشاء fixtures ثابتة.",
+        "تشغيل مصفوفة Python وSDK.",
+        "نشر تقرير deprecations."
+      ],
+      "metric": "عدد regressions المكتشفة قبل الإصدار.",
+      "difficulty": "متوسط، تقدير 5–7 أيام",
+      "risks": "fixtures لا تمثل كل تغيرات الخدمة الحية.",
+      "sources": [
+        {
+          "title": "Google GenAI SDK",
+          "url": "https://github.com/googleapis/python-genai"
+        },
+        {
+          "title": "Docs",
+          "url": "https://googleapis.github.io/python-genai/"
+        }
+      ]
+    }
+  ],
+  "testEvidence": null,
+  "note": "All eight remain non-archived. AI Engineering Hub is the only exact project URL present in the deployed feed; seven remain research-only. Counters are cumulative and were not interpreted as daily growth. No project code was executed."
+}
