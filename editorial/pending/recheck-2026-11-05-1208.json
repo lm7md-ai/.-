@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "runAt": "2026-11-05T12:08:12+03:00",
+  "mainSha": "8fde25b387497c93bf7edf986865b1f26196eaff",
+  "incoming": {
+    "files": 76,
+    "appearances": 794,
+    "activeExactAppearances": 298,
+    "expiredAppearances": 496,
+    "exactEditorialAppearances": 758,
+    "notInEditorialAppearances": 36,
+    "idUrlMismatches": 0,
+    "activeCandidatesMissingEditorial": 0,
+    "repeatedAppearancesWithinBatches": 37
+  },
+  "currentData": {
+    "feed": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialBefore": 724,
+    "activeEditorialExact": 243,
+    "historicalOrInactive": 481,
+    "activeFeedMissingEditorial": 557,
+    "activeNewsMissingEditorial": 557,
+    "activeProjectsMissingEditorial": 0
+  },
+  "seenOnly": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "title": "NVIDIA OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "seen": true,
+      "feed": false,
+      "editorial": false
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "title": "Canva Craft",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "seen": true,
+      "feed": false,
+      "editorial": false
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "title": "1Password agent sign-in",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "seen": true,
+      "feed": false,
+      "editorial": false
+    }
+  ],
+  "waiting": {
+    "activeMismatches": [],
+    "expiredNotImported": 33,
+    "seenOnly": 3
+  },
+  "newBatch": {
+    "entries": 12,
+    "news": 12,
+    "projects": 0,
+    "basis": {
+      "article": 11,
+      "metadata": 1
+    },
+    "allIdUrlsExact": true
+  },
+  "projects": {
+    "feedTotal": 100,
+    "feedEnriched": 100,
+    "libraryTotal": 50,
+    "libraryActive": 48,
+    "libraryArchived": 2,
+    "libraryInFeed": 8,
+    "libraryOutsideFeed": 41,
+    "membershipUnverified": 1,
+    "licensesNeedUpstreamCheck": 7,
+    "newProjectCards": 0
+  }
+}
