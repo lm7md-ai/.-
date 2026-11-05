@@ -1,0 +1,173 @@
+{
+  "version": 1,
+  "runAt": "2026-11-05T12:08:12+03:00",
+  "metricsMeasuredAt": "2026-11-05T09:08:12Z",
+  "metricSource": "GitHub REST API GET /repos/{owner}/{repo}",
+  "projectsReviewed": 8,
+  "nonArchived": 8,
+  "archived": 0,
+  "feedVisible": 1,
+  "researchOnly": 7,
+  "metrics": [
+    {
+      "repository": "patchy631/ai-engineering-hub",
+      "stars": 41133,
+      "forks": 6566,
+      "openIssues": 136,
+      "archived": false,
+      "license": "MIT",
+      "inCurrentFeed": true,
+      "feedId": "fe0e6bfdbdd5822139",
+      "pushedAt": "2026-11-01T04:39:16Z"
+    },
+    {
+      "repository": "googleapis/python-genai",
+      "stars": 4056,
+      "forks": 1057,
+      "openIssues": 372,
+      "archived": false,
+      "license": "Apache-2.0",
+      "inCurrentFeed": false,
+      "pushedAt": "2026-11-05T06:10:47Z"
+    },
+    {
+      "repository": "Millillion/lasm",
+      "stars": 99,
+      "forks": 7,
+      "openIssues": 7,
+      "archived": false,
+      "license": "MIT",
+      "inCurrentFeed": false,
+      "pushedAt": "2026-11-05T06:06:13Z"
+    },
+    {
+      "repository": "microsoft/markitdown",
+      "stars": 193953,
+      "forks": 14569,
+      "openIssues": 801,
+      "archived": false,
+      "license": "MIT",
+      "inCurrentFeed": false,
+      "pushedAt": "2026-10-28T15:33:14Z"
+    },
+    {
+      "repository": "yc-software/minecraft-agent-harness",
+      "stars": 137,
+      "forks": 11,
+      "openIssues": 1,
+      "archived": false,
+      "license": "MIT",
+      "inCurrentFeed": false,
+      "pushedAt": "2026-10-29T20:30:45Z"
+    },
+    {
+      "repository": "NVIDIA/OpenShell",
+      "stars": 21116,
+      "forks": 2063,
+      "openIssues": 629,
+      "archived": false,
+      "license": "Apache-2.0",
+      "inCurrentFeed": false,
+      "pushedAt": "2026-11-05T09:00:42Z"
+    },
+    {
+      "repository": "pydantic/pydantic-ai",
+      "stars": 21034,
+      "forks": 3102,
+      "openIssues": 1766,
+      "archived": false,
+      "license": "MIT",
+      "inCurrentFeed": false,
+      "pushedAt": "2026-11-05T09:13:11Z"
+    },
+    {
+      "repository": "astral-sh/uv",
+      "stars": 91559,
+      "forks": 3747,
+      "openIssues": 3049,
+      "archived": false,
+      "license": "Apache-2.0 (API)",
+      "inCurrentFeed": false,
+      "pushedAt": "2026-11-05T02:44:47Z"
+    }
+  ],
+  "timestampAnomalies": [
+    "updatedAt لثلاثة مستودعات وpushedAt لـpydantic-ai لاحقة لوقت القياس المعلن؛ لا تستخدم هذه الطوابع دليل نشاط قبل وقت القياس."
+  ],
+  "licenseEvidence": "قيم SPDX من GitHub API؛ لم تُعد مراجعة نصوص جميع ملفات LICENSE في هذه الدورة.",
+  "bestThree": [
+    {
+      "title": "عارض فروقات سياسات OpenShell قبل التنفيذ",
+      "problem": "يصعب اكتشاف اتساع صلاحيات الملفات أو الشبكة في ملفات السياسات الطويلة.",
+      "approach": "واجهة تقارن السياسة الحالية والمقترحة وتشرح أثر كل قاعدة مع موافقة بشرية.",
+      "stack": "TypeScript + JSON Schema + OpenShell policy API",
+      "steps": [
+        "قراءة schema الرسمية.",
+        "تطبيع القواعد وعرض الفروقات.",
+        "إظهار الملفات والوجهات المتأثرة.",
+        "إضافة اختبار deny-by-default."
+      ],
+      "metric": "الصلاحيات الواسعة المكتشفة قبل التشغيل.",
+      "difficulty": "مرتفع، تقدير 1–2 أسبوع",
+      "risks": "تفسير خاطئ لقاعدة قد يعطي ثقة زائفة.",
+      "sources": [
+        {
+          "title": "OpenShell",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        }
+      ]
+    },
+    {
+      "title": "حزمة تقييم typed لوكلاء Pydantic AI",
+      "problem": "قد ينتج الوكيل مخرجات غير صحيحة أو يستدعي أداة غير مناسبة.",
+      "approach": "حالات ثابتة تقيس schema ومسارات الأدوات والامتناع والتكلفة والزمن.",
+      "stack": "Python + Pydantic Evals + pytest + JSONL",
+      "steps": [
+        "تعريف مهام مرجعية.",
+        "إنشاء expected outputs.",
+        "اختبار الفشل والامتناع.",
+        "تصدير مقارنة إصدارات."
+      ],
+      "metric": "دقة المخرجات المنظمة وصحة استدعاءات الأدوات.",
+      "difficulty": "متوسط إلى مرتفع، تقدير أسبوع",
+      "risks": "عدم حتمية النماذج.",
+      "sources": [
+        {
+          "title": "Pydantic AI",
+          "url": "https://github.com/pydantic/pydantic-ai"
+        },
+        {
+          "title": "Docs",
+          "url": "https://pydantic.dev/docs/ai/"
+        }
+      ]
+    },
+    {
+      "title": "مصفوفة توافق Google GenAI SDK",
+      "problem": "تغير واجهات SDK قد يكسر أمثلة قديمة عند الترقية.",
+      "approach": "اختبارات contract لواجهات Python وإصدارات SDK باستخدام fixtures.",
+      "stack": "Python + pytest + GitHub Actions + JSON fixtures",
+      "steps": [
+        "حصر الواجهات المستخدمة.",
+        "إنشاء fixtures ثابتة.",
+        "تشغيل مصفوفة Python وSDK.",
+        "نشر تقرير deprecations."
+      ],
+      "metric": "عدد regressions المكتشفة قبل الإصدار.",
+      "difficulty": "متوسط، تقدير 5–7 أيام",
+      "risks": "fixtures لا تمثل كل تغيرات الخدمة الحية.",
+      "sources": [
+        {
+          "title": "Google GenAI SDK",
+          "url": "https://github.com/googleapis/python-genai"
+        },
+        {
+          "title": "Docs",
+          "url": "https://googleapis.github.io/python-genai/"
+        }
+      ]
+    }
+  ],
+  "testEvidence": null,
+  "note": "قياس API فقط؛ لم تُشغّل المشاريع أو اختبارات عملية. حُفظ ترتيب أفضل ثلاثة اقتراحات كما في الدورة السابقة."
+}
