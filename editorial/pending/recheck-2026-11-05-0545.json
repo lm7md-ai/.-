@@ -1,0 +1,201 @@
+{
+  "version": 1,
+  "runAt": "2026-11-05T05:45:06+03:00",
+  "repository": "lm7md-ai/.-",
+  "mainSha": "b092a7f8e3123a078b6a2478c65fd9b7265b4960",
+  "main": {
+    "feedGeneratedAt": "2026-11-04T21:18:59Z",
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialItems": 639,
+    "seenIds": 3004,
+    "status": "partial",
+    "sources": 26,
+    "sourceStates": {
+      "ok": 24,
+      "empty": 1,
+      "error": 1
+    },
+    "sourceErrors": [
+      {
+        "name": "البوابة العربية للأخبار التقنية",
+        "state": "error",
+        "error": "HTTP 403"
+      },
+      {
+        "name": "أبحاث الذكاء الاصطناعي",
+        "state": "empty",
+        "items": 0
+      }
+    ]
+  },
+  "pullRequests": {
+    "pr1": "merged",
+    "pr2": "merged",
+    "pr80": {
+      "state": "open",
+      "head": "9158a46cfc4edb6cc407fe62a1483b359f65e7b3",
+      "branch": "content/nabdh-2026-11-03-1138",
+      "mergeable": true,
+      "aheadBy": 65,
+      "behindBy": 4,
+      "editorialItemsInBranch": 714,
+      "editorialItemsOnMain": 639,
+      "netAddedEditorialRecords": 75,
+      "latestCheck": {
+        "run": 181,
+        "conclusion": "success",
+        "url": "https://github.com/lm7md-ai/.-/actions/runs/41948101896"
+      },
+      "note": "The branch is four commits behind current main. The newest 11 records (9 news, 2 projects) were checked against the deployed feed by literal ID and URL. The other prior additions require a fresh full join audit before merge."
+    }
+  },
+  "incomingAudit": {
+    "files": 65,
+    "occurrences": 606,
+    "uniqueIds": 602,
+    "duplicateOccurrences": 4,
+    "currentFeedExact": 160,
+    "historicalImported": 439,
+    "seenOnly": 7,
+    "idUrlMismatches": 0,
+    "activeMatchingAwaitingImport": 0,
+    "structuralErrors": 0,
+    "structuralMethod": "JavaScript structural equivalent of scripts/editorial.py validate, applied to every item in all 65 incoming JSON files; official Python CLI not available locally.",
+    "decision": "No new main-incoming item is eligible to import; all 160 active exact matches already exist in main editorial, 439 are historical, and 7 are seen-only."
+  },
+  "seenOnly": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "title": "NVIDIA OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "action": "hold; do not synthesize an ID"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "title": "Canva Craft",
+      "url": "https://www.canva.com/",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "action": "hold; do not synthesize an ID"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "title": "1Password agent sign-in",
+      "url": "https://1password.com/",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "action": "hold; do not synthesize an ID"
+    },
+    {
+      "id": "87d27a9f8a0972f507",
+      "title": "Binance security incident coverage",
+      "url": "https://www.theverge.com/tech/1023021/binance-hack-billions-biggest-crypto-heist",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "action": "hold; historical/seen-only"
+    },
+    {
+      "id": "65eeab64fed21e0b54",
+      "title": "GM driver-data privacy settlement",
+      "url": "https://www.engadget.com/2301934/general-motors-220-million-settle-multi-state-data-privacy-lawsuit/",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "action": "hold; historical/seen-only"
+    },
+    {
+      "id": "d674dea922625d0be8",
+      "title": "CNIL/Fnac tracking fine",
+      "url": "https://noyb.eu/en/noyb-win-french-electronics-retailer-fnac-darty-fined-eu7-million",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "action": "hold; historical/seen-only"
+    },
+    {
+      "id": "967be99077d13f07b2",
+      "title": "JavaScript framework agent-cost experiment",
+      "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "action": "hold; historical/seen-only"
+    }
+  ],
+  "pr80NewItems": {
+    "incomingFiles": 10,
+    "occurrences": 103,
+    "structuralErrors": 0,
+    "newNews": 9,
+    "newProjects": 2,
+    "verifiedExactFeedMatches": 11,
+    "ids": [
+      "857e942cc1110bf466",
+      "23d5cc8219ef6b655f",
+      "f4a904d03d800a16a7",
+      "96fe654d833fe36f85",
+      "43862ef771dfba655e",
+      "1be4fdd8e6ca80f0ec",
+      "2f7abd088fe66e28f4",
+      "8449c6b4be71ae8e8f",
+      "3a41f9480808b68557",
+      "c9a7e4fb7976ab0a77",
+      "fae31da6c227cfdebd"
+    ],
+    "note": "All 11 newest IDs and URLs were found in the deployed feed artifact and match literally. They are absent from main editorial.json and are already present in PR #80's editorial branch; no duplicate incoming import was made."
+  },
+  "projectReview": {
+    "previousEightReviewed": 8,
+    "nonArchived": 8,
+    "archived": 0,
+    "feedVisible": 1,
+    "researchOnly": 7,
+    "metricsMeasuredAt": "2026-11-05T02:45:06Z",
+    "newResearchOnlyProjects": 2,
+    "libraryCatalogBefore": 48,
+    "libraryCatalogAfter": 50,
+    "publicLibraryEntries": 31,
+    "publicLibraryArchived": 2,
+    "publicLibraryInFeed": 4,
+    "projectCardsInFeed": 100,
+    "allResearchDossiersNotExecuted": true
+  },
+  "publication": {
+    "latestRun": 41914897455,
+    "conclusion": "success",
+    "url": "https://github.com/lm7md-ai/.-/actions/runs/41914897455",
+    "artifactId": 13363812697,
+    "artifactCreatedAt": "2026-11-04T21:19:27Z",
+    "artifactVerified": true,
+    "artifactFeedItems": 800,
+    "artifactEditorialItems": 639,
+    "artifactNewest11PresentInFeed": true,
+    "artifactNewest11PresentInEditorial": false,
+    "livePagesBrowserOpen": "DisabledError; artifact inspected instead"
+  },
+  "execution": {
+    "localClone": "failed: DNS resolution unavailable",
+    "officialLocalCommandsNotRun": [
+      "python scripts/editorial.py validate",
+      "python scripts/editorial.py import",
+      "python -m unittest discover -s tests -v"
+    ],
+    "officialCIRun": "PR check #181 succeeded on HEAD 9158a46; main has since advanced and PR is four commits behind, so rerun CI on an updated merge context before merging.",
+    "officialDeployRun": "Run #129 succeeded and its artifact was downloaded and inspected."
+  },
+  "mergeDecision": "Do not merge in this run: push to main triggers the existing update-and-deploy workflow, which runs scripts/update_feed.py and stages feed.json, seen.json, and status.json. This conflicts with the explicit no-edit requirement for feed.json and seen.json. No workflow or settings were changed.",
+  "notes": [
+    "The 7 seen-only IDs remain held; do not create alternate IDs from titles.",
+    "No new record was imported into main because there were zero active unmatched records in main incoming.",
+    "The 9 news and 2 projects are prepared/saved in PR #80, not merged or published as editorial entries.",
+    "No project code or test suite was executed; all project dossiers are research-only."
+  ]
+}
