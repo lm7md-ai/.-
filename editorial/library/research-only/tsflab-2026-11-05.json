@@ -1,0 +1,240 @@
+{
+  "version": 1,
+  "repository": "D2I-Group/TSFLab",
+  "url": "https://github.com/D2I-Group/TSFLab",
+  "titleAr": "TSFLab: منصة بحثية مفتوحة لتجارب التنبؤ بالسلاسل الزمنية",
+  "summaryAr": "Workbench موجّه لوكلاء البرمجة والباحثين يضم كتالوجًا مسطحًا للنماذج والمكونات والبيانات، ومشغّل تجارب موحدًا وبطاقات معرفة وبروتوكولات مقارنة. يذكر README إصدارًا يضم 326 نموذجًا و72 مكونًا و93 إعداد بيانات؛ هذه أرقام المشروع وليست تدقيقًا مستقلًا لكل نموذج.",
+  "whyItMatters": "يساعد على تقليل اختلاف إعدادات التجارب وتسرب البيانات وتكرار العمل في أبحاث التنبؤ، لكنه يحتاج Python وPyTorch وموارد حسابية مناسبة، كما أن شروط البيانات والنماذج التابعة يجب مراجعتها منفصلة.",
+  "audience": "طلاب وباحثو تعلم الآلة والتنبؤ الزمني، ومطورو أدوات تقييم النماذج؛ مناسب لمن يعرف Python وبيئة PyTorch.",
+  "overview": "يقدم أربعة أجزاء: دليل مجال TSF، كتالوج معرفة للنماذج والمكونات ومجموعات البيانات، Experiment Workflower لتشغيل التجارب والـsweeps، وRecursive Improver لمراجعة وإضافة النماذج. يدعم تشغيل CPU أو CUDA محليًا، وجدولة GPU محلية، واستئناف التجارب، ومصادر realtime اختيارية. لا يتضمن وكيلًا أو نموذجًا لغويًا خاصًا به؛ يستخدم وكيل البرمجة الذي يختاره المستخدم.",
+  "requirements": "Python 3.12+ وuv وPyTorch 2.14.1 مع backend مناسب. ملف pyproject يضم numpy وpandas وscikit-learn وscipy وpydantic وeinops وfvcore وJupyterLab وغيرها. يدعم CPU، أما CUDA فيحتاج تعريفًا مناسبًا؛ وثائق التثبيت تذكر cuda130 لتعريف >=580 وcuda126 لتعريف >=560. الإضافات data/models/experiments/hub/realtime اختيارية بحسب الاستخدام. التجارب الكبيرة تحتاج GPU وذاكرة وتخزينًا.",
+  "quickStart": "البدء الموثق: تثبيت uv وPython 3.12 ثم تثبيت TSFLab من GitHub أو استنساخ المستودع، تشغيل tsf catalog، ثم تنفيذ `uv run tsf run configs/runs/run_single_data.toml --dry-run` قبل التشغيل. يمكن بدء مشروع مستقل بـ`tsf init` وتنزيل ETTh1 ثم تشغيل مثال. استخدم CPU profile للتجارب الصغيرة، وافحص `tsf env doctor` و`tsf env audit` قبل تشغيل نماذج كبيرة.",
+  "limitations": "ترخيص الجذر MIT حسب LICENSE، لكن النماذج والأوزان والبيانات والاعتماديات قد تحمل تراخيص وشروطًا منفصلة؛ THIRD_PARTY_NOTICES يطلب الرجوع إلى بطاقة كل نموذج ومصدره. بعض مسارات realtime لها شروط أو تتطلب حسابًا؛ Open-Meteo المجاني غير تجاري، وPeMS يتطلب حسابًا اختياريًا للتحديثات، وأسعار ERCOT الأعمق خارج الإعداد الافتراضي. نتائج المقارنة الواردة في README من تجارب المؤلفين وبإعدادات محددة وليست إعادة تحقق مستقلة. لم يُشغّل المشروع في هذه الدورة.",
+  "nextSteps": [
+    "ابدأ ببيئة CPU صغيرة وراجع `tsf env doctor` و`tsf env audit`.",
+    "نفّذ dry-run على إعداد ETTh1 قبل تنزيل بيانات أو تشغيل GPU.",
+    "اقرأ بطاقة النموذج وبطاقة البيانات وشروط المصدر قبل المقارنة أو النشر.",
+    "لا تعتبر أرقام المقارنة المنشورة ضمانًا لنتائج جهازك أو بياناتك."
+  ],
+  "reviewedAt": "2026-11-05T05:45:06+03:00",
+  "basis": "readme",
+  "sources": [
+    {
+      "title": "Official TSFLab repository and README",
+      "url": "https://github.com/D2I-Group/TSFLab"
+    },
+    {
+      "title": "Documentation index and installation",
+      "url": "https://github.com/D2I-Group/TSFLab/blob/main/docs/en/README.md"
+    },
+    {
+      "title": "Workflows and architecture",
+      "url": "https://github.com/D2I-Group/TSFLab/blob/main/docs/en/workflows.md"
+    },
+    {
+      "title": "Execution, budgets and GPU scheduling",
+      "url": "https://github.com/D2I-Group/TSFLab/blob/main/docs/en/execution.md"
+    },
+    {
+      "title": "Realtime data tracks and terms",
+      "url": "https://github.com/D2I-Group/TSFLab/blob/main/docs/en/realtime.md"
+    },
+    {
+      "title": "Root MIT license",
+      "url": "https://github.com/D2I-Group/TSFLab/blob/main/LICENSE"
+    },
+    {
+      "title": "Third-party notices",
+      "url": "https://github.com/D2I-Group/TSFLab/blob/main/THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "title": "Python requirements and extras",
+      "url": "https://github.com/D2I-Group/TSFLab/blob/main/pyproject.toml"
+    }
+  ],
+  "improvements": [
+    {
+      "title": "تقدير ذاكرة ووقت التشغيل قبل تدريب النموذج",
+      "problem": "يشير دليل التنفيذ إلى أن فحص البيئة لا يثبت أن كل نموذج سيتسع في الذاكرة؛ قد يبدأ المستخدم تجربة ثقيلة ثم يفشل بسبب نفاد RAM أو VRAM.",
+      "approach": "إضافة تقدير محافظ مبني على طول التسلسل وعدد القنوات وحجم النموذج والدفعة والدقة، مع توضيح أنه تقدير لا ضمان.",
+      "stack": "Python، PyTorch metadata، psutil، TOML config validation",
+      "steps": [
+        "جمع خصائص النموذج والبيانات والإعدادات المطلوبة.",
+        "تقدير الذاكرة للمعاملات والتفعيلات والدفعات.",
+        "قراءة الذاكرة المتاحة وVRAM من البيئة دون تغيير التعريفات.",
+        "إظهار تحذير أو اقتراح CPU profile أو batch أصغر.",
+        "مقارنة التقدير بنتائج تشغيل صغيرة موثقة."
+      ],
+      "metric": "نسبة حالات OOM التي يُسبقها تحذير مفيد في مجموعة اختبارات ثابتة.",
+      "difficulty": "متوسط إلى مرتفع — تقدير 1–2 أسبوع.",
+      "risks": "تختلف الذاكرة الفعلية باختلاف kernels وCUDA وإصدارات المكتبات؛ التقدير ليس ضمانًا.",
+      "sources": [
+        {
+          "title": "Execution, budgets and GPU scheduling",
+          "url": "https://github.com/D2I-Group/TSFLab/blob/main/docs/en/execution.md"
+        },
+        {
+          "title": "Workflows and architecture",
+          "url": "https://github.com/D2I-Group/TSFLab/blob/main/docs/en/workflows.md"
+        }
+      ]
+    },
+    {
+      "title": "فاحص تراخيص ومصدر بيانات لكل Dataset وRealtime Track",
+      "problem": "تختلف شروط إعادة توزيع البيانات؛ بعض المسارات تمنع إعادة التوزيع أو تتطلب نسبة المصدر أو حسابًا خارجيًا.",
+      "approach": "إضافة حقول مصدر وترخيص وشروط استخدام وقيود نشر إلزامية، مع تقرير يميز البيانات المحلية عن البيانات التي يمكن رفعها إلى Hub.",
+      "stack": "Python، Pydantic schemas، TOML cards، license metadata",
+      "steps": [
+        "حصر كل dataset preset وrealtime track.",
+        "ربط كل مصدر برابط شروط الاستخدام وتاريخ المراجعة.",
+        "تمييز download وlocal-only وredistributable وhosted.",
+        "إيقاف نشر البيانات التي لا تسمح شروطها بذلك.",
+        "إنتاج تقرير آلي للمصادر الناقصة أو المتعارضة."
+      ],
+      "metric": "نسبة مجموعات البيانات التي لها مصدر وشروط استخدام موثقة قبل التنزيل أو النشر.",
+      "difficulty": "متوسط — تقدير أسبوع.",
+      "risks": "قد تتغير شروط مزود البيانات؛ يلزم تاريخ مراجعة وتنبيه انتهاء صلاحية.",
+      "sources": [
+        {
+          "title": "Root MIT license",
+          "url": "https://github.com/D2I-Group/TSFLab/blob/main/LICENSE"
+        },
+        {
+          "title": "Third-party notices",
+          "url": "https://github.com/D2I-Group/TSFLab/blob/main/THIRD_PARTY_NOTICES.md"
+        },
+        {
+          "title": "Realtime data tracks and terms",
+          "url": "https://github.com/D2I-Group/TSFLab/blob/main/docs/en/realtime.md"
+        }
+      ]
+    },
+    {
+      "title": "حزمة نشر قابلة للمشاركة لتجربة Forecasting",
+      "problem": "وجود fingerprints وملفات نتائج محلية لا يجعل مشاركة تجربة كاملة سهلة على طالب أو مراجع خارجي.",
+      "approach": "تصدير حزمة صغيرة تضم TOML والـseed وبصمة البيانات وإصدارات الحزم وملخص النتائج وروابط المصادر دون تضمين بيانات غير مرخصة.",
+      "stack": "Python، JSON manifest، SHA-256، TOML، Markdown report",
+      "steps": [
+        "تحديد الحقول اللازمة لإعادة بناء التجربة.",
+        "تصدير config وseed وبصمة البيانات وإصدارات الأدوات.",
+        "إرفاق المقاييس والقيود ومصدر البيانات وترخيصها.",
+        "فحص الحزمة بحثًا عن أسرار أو بيانات ممنوعة.",
+        "إعادة تشغيل smoke test على fixture صغير قبل النشر."
+      ],
+      "metric": "نسبة الحزم التي يمكن إعادة تشغيل smoke test منها دون تعديل يدوي.",
+      "difficulty": "متوسط — تقدير 5–8 أيام.",
+      "risks": "بصمة البيانات لا تضمن توفر المصدر لاحقًا؛ يجب توضيح حدود إعادة الإنتاج.",
+      "sources": [
+        {
+          "title": "Workflows and architecture",
+          "url": "https://github.com/D2I-Group/TSFLab/blob/main/docs/en/workflows.md"
+        },
+        {
+          "title": "Execution, budgets and GPU scheduling",
+          "url": "https://github.com/D2I-Group/TSFLab/blob/main/docs/en/execution.md"
+        },
+        {
+          "title": "Root MIT license",
+          "url": "https://github.com/D2I-Group/TSFLab/blob/main/LICENSE"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "حزمة بيانات سعودية مرخصة للتنبؤ بالطقس والطاقة والمرور",
+      "problem": "تحتاج مشاريع الطلاب إلى بيانات محلية موثقة وبروتوكولات مقارنة ثابتة بدل خلط مصادر وتواريخ وتقسيمات مختلفة.",
+      "approach": "كتالوج datasets يضم فقط بيانات عامة أو مرخصة بوضوح، مع metadata عربية وبروتوكول train/validation/test زمني.",
+      "stack": "Python، Parquet، TOML، pandas، TSFLab dataset cards",
+      "steps": [
+        "اختيار مصدر عام موثق لكل مجال والتحقق من شروطه.",
+        "حفظ metadata والمنطقة الزمنية والوحدات ومصدر التنزيل.",
+        "إنشاء splits زمنية تمنع تسرب المستقبل.",
+        "إضافة baseline ومقاييس ثابتة لكل dataset.",
+        "نشر cards وملفات صغيرة قابلة للتنزيل مع بصمات."
+      ],
+      "metric": "عدد datasets التي تجتاز فحص الترخيص والبصمة والتقسيم الزمني.",
+      "difficulty": "مرتفع — تقدير 2–3 أسابيع.",
+      "risks": "قد تتغير واجهات البيانات أو شروطها؛ تجنب أي بيانات شخصية أو غير مرخصة.",
+      "sources": [
+        {
+          "title": "Realtime data tracks and terms",
+          "url": "https://github.com/D2I-Group/TSFLab/blob/main/docs/en/realtime.md"
+        },
+        {
+          "title": "Workflows and architecture",
+          "url": "https://github.com/D2I-Group/TSFLab/blob/main/docs/en/workflows.md"
+        }
+      ]
+    },
+    {
+      "title": "مختبر جامعي عربي لتجارب التنبؤ القابلة لإعادة الإنتاج",
+      "problem": "يجد المبتدئ صعوبة في فهم الفرق بين اختيار النموذج والتقسيم الزمني والمقاييس والتجربة العادلة.",
+      "approach": "واجهة تعليمية فوق إعدادات TSFLab تعرض خطوات تجربة صغيرة على CPU وتشرح كل قرار مع روابط إلى بطاقات النماذج.",
+      "stack": "Python، TSFLab، Jupyter، Markdown Arabic docs",
+      "steps": [
+        "اختيار مجموعة بيانات صغيرة مرخصة.",
+        "تجهيز config بسيط مع seed وتقسيم زمني ثابت.",
+        "عرض baseline ثم نموذج واحد مع dry-run.",
+        "شرح MAE وMSE ومخاطر data leakage.",
+        "تصدير تقرير عربي يضم الإعدادات والنتائج والقيود."
+      ],
+      "metric": "نسبة الطلاب الذين يعيدون تشغيل التجربة ويحصلون على نتائج متقاربة ضمن tolerance معلن.",
+      "difficulty": "متوسط — تقدير 1–2 أسبوع.",
+      "risks": "الواجهة التعليمية قد تبسط تفاصيل بحثية مهمة؛ يجب إبقاء الإعداد الأصلي قابلًا للفحص.",
+      "sources": [
+        {
+          "title": "Official TSFLab repository and README",
+          "url": "https://github.com/D2I-Group/TSFLab"
+        },
+        {
+          "title": "Documentation index and installation",
+          "url": "https://github.com/D2I-Group/TSFLab/blob/main/docs/en/README.md"
+        },
+        {
+          "title": "Execution, budgets and GPU scheduling",
+          "url": "https://github.com/D2I-Group/TSFLab/blob/main/docs/en/execution.md"
+        }
+      ]
+    }
+  ],
+  "religious": 0,
+  "alternatives": "بدائل مقارنة مذكورة في README تشمل Time-Series-Library (TSLib) وTFB؛ ويمكن دراسة Darts كإطار Python أوسع للتنبؤ، مع اختلاف نطاق الكتالوج والبروتوكولات.",
+  "deploymentModes": {
+    "local": "التشغيل المحلي CPU أو NVIDIA CUDA؛ لا يحتاج daemon أو خدمة تتبع خارجية. ملفات التجارب والنتائج تحفظ محليًا.",
+    "cloud": "يمكن استخدام Hugging Face Hub لنشر بعض artifacts والبيانات المسموح بها، وW&B online اختياري؛ مزود وكيل البرمجة أو GPU السحابي قد يضيف تكلفة منفصلة."
+  },
+  "researchOnly": true,
+  "published": false,
+  "relatedIncomingId": null,
+  "feedId": null,
+  "displayRequirements": [
+    "اعرضه «بحث فقط — غير منشور»؛ لا تنشئ feed ID أو زر تشغيل مباشر.",
+    "أظهر Python 3.12+ وuv وPyTorch 2.14.1 مع خيار CPU/CUDA ومتطلبات التعريف.",
+    "ميّز ترخيص المشروع MIT عن تراخيص النماذج والبيانات والاعتماديات الخارجية.",
+    "اعرض أن أرقام README نتائج المؤلفين وليست اختبارًا مستقلًا من نَبض.",
+    "لا تعرض شارة اختبار؛ لم تنفذ تجربة تشغيل في هذه المراجعة."
+  ],
+  "metricSnapshot": {
+    "repository": "D2I-Group/TSFLab",
+    "stars": 66,
+    "forks": 8,
+    "openIssues": 0,
+    "archived": false,
+    "disabled": false,
+    "licenseApiValue": "Other",
+    "licenseFile": "MIT (root project code)",
+    "pushedAt": "2026-11-03T05:12:48Z",
+    "updatedAt": "2026-11-04T07:43:51Z",
+    "defaultBranch": "main",
+    "language": "Python",
+    "measuredAt": "2026-11-05T02:45:06Z",
+    "source": "GitHub REST API",
+    "notes": "Third-party model/data/dependency licenses remain separate."
+  },
+  "runtimeValidation": {
+    "status": "not_run",
+    "testEvidence": null,
+    "note": "تمت قراءة README والوثائق وLICENSE وTHIRD_PARTY_NOTICES وpyproject.toml فقط؛ لم تُنفذ تثبيتات أو تجارب."
+  }
+}
