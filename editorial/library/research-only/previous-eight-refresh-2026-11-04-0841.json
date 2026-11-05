@@ -1,0 +1,218 @@
+{
+  "version": 1,
+  "runAt": "2026-11-04T08:41:20+03:00",
+  "scope": "تحديث لقطة المشاريع الثمانية السابقة",
+  "metricsMeasuredAt": "2026-11-04T08:41:20+03:00",
+  "metricsMeasuredAtUtc": "2026-11-04T05:41:20Z",
+  "metricSource": "GitHub REST metadata snapshot",
+  "projectsReviewed": 8,
+  "nonArchived": 8,
+  "archived": 0,
+  "feedVisible": 1,
+  "researchOnly": 7,
+  "licenses": {
+    "MIT": 5,
+    "Apache-2.0": 3
+  },
+  "testEvidence": null,
+  "readmeAndLicenseNote": "README والتوثيق وLICENSE للمشاريع الثمانية تمت مراجعتها في التدقيق السابق؛ هذا التشغيل حدّث metadata فقط ولم ينفذ أي مشروع.",
+  "metrics": [
+    {
+      "repository": "patchy631/ai-engineering-hub",
+      "archived": false,
+      "license": "MIT",
+      "stars": 41077,
+      "forks": 6559,
+      "openIssues": 136,
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "updatedAt": "2026-11-04T05:53:02Z",
+      "pushedAtFuture": false,
+      "updatedAtFuture": true
+    },
+    {
+      "repository": "googleapis/python-genai",
+      "archived": false,
+      "license": "Apache-2.0",
+      "stars": 4054,
+      "forks": 1057,
+      "openIssues": 363,
+      "pushedAt": "2026-11-04T05:52:35Z",
+      "updatedAt": "2026-11-04T01:44:01Z",
+      "pushedAtFuture": true,
+      "updatedAtFuture": false
+    },
+    {
+      "repository": "Millillion/lasm",
+      "archived": false,
+      "license": "MIT",
+      "stars": 94,
+      "forks": 6,
+      "openIssues": 5,
+      "pushedAt": "2026-11-04T05:05:04Z",
+      "updatedAt": "2026-11-04T05:05:08Z",
+      "pushedAtFuture": false,
+      "updatedAtFuture": false
+    },
+    {
+      "repository": "microsoft/markitdown",
+      "archived": false,
+      "license": "MIT",
+      "stars": 193779,
+      "forks": 14545,
+      "openIssues": 797,
+      "pushedAt": "2026-10-28T15:33:14Z",
+      "updatedAt": "2026-11-04T05:45:26Z",
+      "pushedAtFuture": false,
+      "updatedAtFuture": true
+    },
+    {
+      "repository": "yc-software/minecraft-agent-harness",
+      "archived": false,
+      "license": "MIT",
+      "stars": 129,
+      "forks": 10,
+      "openIssues": 1,
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "updatedAt": "2026-11-04T02:26:43Z",
+      "pushedAtFuture": false,
+      "updatedAtFuture": false
+    },
+    {
+      "repository": "NVIDIA/OpenShell",
+      "archived": false,
+      "license": "Apache-2.0",
+      "stars": 21058,
+      "forks": 2062,
+      "openIssues": 612,
+      "pushedAt": "2026-11-04T05:30:21Z",
+      "updatedAt": "2026-11-04T05:26:08Z",
+      "pushedAtFuture": false,
+      "updatedAtFuture": false
+    },
+    {
+      "repository": "pydantic/pydantic-ai",
+      "archived": false,
+      "license": "MIT",
+      "stars": 21020,
+      "forks": 3097,
+      "openIssues": 1786,
+      "pushedAt": "2026-11-04T05:43:00Z",
+      "updatedAt": "2026-11-04T04:16:20Z",
+      "pushedAtFuture": true,
+      "updatedAtFuture": false
+    },
+    {
+      "repository": "astral-sh/uv",
+      "archived": false,
+      "license": "Apache-2.0",
+      "stars": 91524,
+      "forks": 3745,
+      "openIssues": 3039,
+      "pushedAt": "2026-11-04T00:27:10Z",
+      "updatedAt": "2026-11-04T05:52:23Z",
+      "pushedAtFuture": false,
+      "updatedAtFuture": true
+    }
+  ],
+  "timestampAnomalies": [
+    {
+      "repo": "googleapis/python-genai",
+      "field": "pushedAt",
+      "value": "2026-11-04T05:52:35Z"
+    },
+    {
+      "repo": "pydantic/pydantic-ai",
+      "field": "pushedAt",
+      "value": "2026-11-04T05:43:00Z"
+    },
+    {
+      "repo": "patchy631/ai-engineering-hub",
+      "field": "updatedAt",
+      "value": "2026-11-04T05:53:02Z"
+    },
+    {
+      "repo": "microsoft/markitdown",
+      "field": "updatedAt",
+      "value": "2026-11-04T05:45:26Z"
+    },
+    {
+      "repo": "astral-sh/uv",
+      "field": "updatedAt",
+      "value": "2026-11-04T05:52:23Z"
+    }
+  ],
+  "bestThree": [
+    {
+      "title": "عارض فروقات سياسات OpenShell قبل التنفيذ",
+      "problem": "يصعب اكتشاف اتساع صلاحيات الملفات أو الشبكة في ملفات السياسات الطويلة.",
+      "approach": "واجهة تقارن السياسة الحالية والمقترحة وتشرح أثر كل قاعدة مع موافقة بشرية.",
+      "stack": "TypeScript + JSON Schema + OpenShell policy API",
+      "steps": [
+        "قراءة schema الرسمية.",
+        "تطبيع القواعد وعرض الفروقات.",
+        "إظهار الملفات والوجهات المتأثرة.",
+        "إضافة اختبار deny-by-default."
+      ],
+      "metric": "الصلاحيات الواسعة المكتشفة قبل التشغيل.",
+      "difficulty": "مرتفع، تقدير 1–2 أسبوع",
+      "risks": "تفسير خاطئ لقاعدة قد يعطي ثقة زائفة.",
+      "sources": [
+        {
+          "title": "OpenShell",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        }
+      ]
+    },
+    {
+      "title": "حزمة تقييم typed لوكلاء Pydantic AI",
+      "problem": "قد ينتج الوكيل مخرجات غير صحيحة أو يستدعي أداة غير مناسبة.",
+      "approach": "حالات ثابتة تقيس schema ومسارات الأدوات والامتناع والتكلفة والزمن.",
+      "stack": "Python + Pydantic Evals + pytest + JSONL",
+      "steps": [
+        "تعريف مهام مرجعية.",
+        "إنشاء expected outputs.",
+        "اختبار الفشل والامتناع.",
+        "تصدير مقارنة إصدارات."
+      ],
+      "metric": "دقة المخرجات المنظمة وصحة استدعاءات الأدوات.",
+      "difficulty": "متوسط إلى مرتفع، تقدير أسبوع",
+      "risks": "عدم حتمية النماذج.",
+      "sources": [
+        {
+          "title": "Pydantic AI",
+          "url": "https://github.com/pydantic/pydantic-ai"
+        },
+        {
+          "title": "Docs",
+          "url": "https://pydantic.dev/docs/ai/"
+        }
+      ]
+    },
+    {
+      "title": "مصفوفة توافق Google GenAI SDK",
+      "problem": "تغير واجهات SDK قد يكسر أمثلة قديمة عند الترقية.",
+      "approach": "اختبارات contract لواجهات Python وإصدارات SDK باستخدام fixtures.",
+      "stack": "Python + pytest + GitHub Actions + JSON fixtures",
+      "steps": [
+        "حصر الواجهات المستخدمة.",
+        "إنشاء fixtures ثابتة.",
+        "تشغيل مصفوفة Python وSDK.",
+        "نشر تقرير deprecations."
+      ],
+      "metric": "عدد regressions المكتشفة قبل الإصدار.",
+      "difficulty": "متوسط، تقدير 5–7 أيام",
+      "risks": "fixtures لا تمثل كل تغيرات الخدمة الحية.",
+      "sources": [
+        {
+          "title": "Google GenAI SDK",
+          "url": "https://github.com/googleapis/python-genai"
+        },
+        {
+          "title": "Docs",
+          "url": "https://googleapis.github.io/python-genai/"
+        }
+      ]
+    }
+  ],
+  "note": "المؤشرات لقطات وليست ترتيب جودة. التوقيتات المستقبلية لا تستخدم دليلًا على النشاط."
+}

@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "runAt": "2026-11-04T09:08:36+03:00",
+  "baseMainCommit": "2f8a39ec0b84ab5564e5572a2929e3c2393ed1bb",
+  "feedGeneratedAt": "2026-11-04T06:15:09+00:00",
+  "sourceReviewMethod": "راجعت صفحات المصادر الأصلية أو محتواها المنشور مباشرة عبر نتائج المصدر الأصلي؛ لا أعتبر مقتطفًا من ناشر ثانوي قراءة كاملة للمصدر. جميع السجلات الاثني عشر basis=article لأن النص الأصلي أو الصفحة الرسمية تمت مراجعتها. أرقام الشركات والجهات المنظمة موسومة بوصفها منسوبة إليها وليست تدقيقًا مستقلًا.",
+  "items": [
+    {
+      "id": "e7a1033d90db68004b",
+      "titleAr": "تحقيق في سرقة أصول رقمية يسلط الضوء على مخاطر استهداف المطورين",
+      "basis": "article",
+      "sourceRead": "The Verge original article read",
+      "sources": [
+        "https://www.theverge.com/news/1025576/binance-cyrpto-theft-explained"
+      ],
+      "factNotes": "تفاصيل الحادث منسوبة إلى تقرير Binance؛ 2.85 مليار دولار مجمدة أو معترضة و98% مستردة أرقام الشركة، لا تدقيق مستقل.",
+      "limitations": "دور الأداة الداخلية غير مفصل بالكامل."
+    },
+    {
+      "id": "24451983265f0dda44",
+      "titleAr": "جامعة طيبة تستضيف مؤتمرًا دوليًا للذكاء الاصطناعي بمشاركة 37 دولة",
+      "basis": "article",
+      "sourceRead": "SPA official Arabic and English pages reviewed",
+      "sources": [
+        "https://www.spa.gov.sa/N2717101",
+        "https://www.spa.gov.sa/N2715156",
+        "https://www.spa.gov.sa/en/N2717642"
+      ],
+      "factNotes": "الأعداد من وكالة الأنباء السعودية والجهات المنظمة؛ 142 بحثًا و98 جامعة و37 دولة.",
+      "limitations": "عدد الأبحاث لا يثبت جودتها أو أثرها."
+    },
+    {
+      "id": "6d687a1c0bed37bc4c",
+      "titleAr": "ميزات ذكاء صوتي تجريبية تصل إلى Apple Watch Series 12 وUltra 4",
+      "basis": "article",
+      "sourceRead": "The Verge hands-on article read",
+      "sources": [
+        "https://www.theverge.com/tech/1025835/audio-intelligence-live-rewind-siri-recap-apple-watch"
+      ],
+      "factNotes": "Live Rewind يعرض آخر 15 ثانية وSiri Recap يلخص المحادثة؛ الميزات اختيارية في نسخة المطورين.",
+      "limitations": "اختبار أولي محدود في بيئة هادئة؛ التفريغ قد يخطئ."
+    },
+    {
+      "id": "a7ad5cb79be9dee2de",
+      "titleAr": "NVIDIA توسّع DLSS 5 إلى RTX Remix لإعادة تقديم الألعاب القديمة",
+      "basis": "article",
+      "sourceRead": "Engadget original article read",
+      "sources": [
+        "https://www.engadget.com/2306095/nvidia-dlss-5-update-rtx-remix-enhance-older-games/"
+      ],
+      "factNotes": "إضافة DLSS 5 إلى RTX Remix وتغيير المظهر الفني بحسب مراجعة Engadget.",
+      "limitations": "نتائج الأداء خاصة بأجهزة وتجارب الكاتب."
+    },
+    {
+      "id": "62f8da800170149a19",
+      "titleAr": "Canva تعيد هيكلة فرقها وتعلن تغييرات تمس 1,271 موظفًا",
+      "basis": "article",
+      "sourceRead": "The Verge original article read",
+      "sources": [
+        "https://www.theverge.com/tech/1025971/canva-changes-layoffs"
+      ],
+      "factNotes": "الرقم 1,271 و22% من رسالة الرئيسة التنفيذية كما نقلتها The Verge؛ ليس جميع المتأثرين تسريحًا.",
+      "limitations": "لا يوجد توزيع مستقل للأدوار المتغيرة والانتقال وإنهاء الوظائف."
+    },
+    {
+      "id": "55abff36c12aab805b",
+      "titleAr": "إطلاق هاكاثون AgentX في الرياض لبناء حلول ذكاء اصطناعي للأعمال",
+      "basis": "article",
+      "sourceRead": "SPA official announcement pages reviewed",
+      "sources": [
+        "https://www.spa.gov.sa/en/N2717479",
+        "https://www.spa.gov.sa/N2717399"
+      ],
+      "factNotes": "انطلاق الهاكاثون والشراكة والأنشطة من إعلان SPA.",
+      "limitations": "شروط التسجيل والعمر والمقاعد لم تُثبت؛ لا يعرض كباب تسجيل مفتوح."
+    },
+    {
+      "id": "e5e05ccc87c5adfe89",
+      "titleAr": "Meta تحدد نهاية تطوير الميزات لسماعتَي Quest 2 وQuest Pro",
+      "basis": "article",
+      "sourceRead": "Meta official developer announcement and Engadget coverage reviewed",
+      "sources": [
+        "https://www.engadget.com/2306079/meta-quest-2-and-quest-pro-reach-end-of-feature-development/",
+        "https://developers.meta.com/vr/blog/meta-quest-2-quest-pro-end-of-feature-development-what-to-know/"
+      ],
+      "factNotes": "مواعيد مارس 2027 وديسمبر 2027 من إعلان Meta كما نقلته التغطية.",
+      "limitations": "توقف الميزات لا يعني توقف إصلاحات الأمن أو إغلاق المتجر فورًا."
+    },
+    {
+      "id": "fa00b4f66d246a49cb",
+      "titleAr": "Anthropic تنشر FlashProve لإثبات أن استجابة النموذج صدرت من أوزان محددة",
+      "basis": "article",
+      "sourceRead": "Anthropic original research page read; repository README and license also reviewed",
+      "sources": [
+        "https://www.anthropic.com/research/provable-inference",
+        "https://github.com/anthropics/FlashProve"
+      ],
+      "factNotes": "الأرقام 110 tokens/s وقرابة 19MB و70–95x من قياسات Anthropic المنشورة بشروطها.",
+      "limitations": "النموذج الأولي غير مُصان؛ قياس محدود بسياق 1,024 رمزًا وبيئة H100؛ لا يعتمد إنتاجيًا دون تدقيق مستقل."
+    },
+    {
+      "id": "dd0993e5b6bc89054d",
+      "titleAr": "Valve تقول إن مراجعة ألعاب Steam قد تستغرق 12 يوم عمل بسبب زيادة الطلبات",
+      "basis": "article",
+      "sourceRead": "The Verge original article and linked Steamworks announcement reviewed",
+      "sources": [
+        "https://www.theverge.com/games/1025722/valve-steam-game-increase-submissions",
+        "https://steamcommunity.com/groups/steamworks/announcements/detail/696528162820984746"
+      ],
+      "factNotes": "حتى 12 يوم عمل سقف معلن؛ المعتاد السابق 3–5 أيام.",
+      "limitations": "لا يعني أن كل لعبة ستستغرق 12 يومًا."
+    },
+    {
+      "id": "f8fc168ace4ee0391f",
+      "titleAr": "Sonos تفتح الوصول المبكر لمساعدها الصوتي 27voice في الولايات المتحدة",
+      "basis": "article",
+      "sourceRead": "The Verge coverage and Sonos official support article reviewed",
+      "sources": [
+        "https://www.theverge.com/tech/1025903/sonos-presets-27voice-ai-early-access",
+        "https://support.sonos.com/en-us/article/control-sonos-with-sonos-27voice"
+      ],
+      "factNotes": "Sonos تؤكد Early Access في الولايات المتحدة وبالإنجليزية الأمريكية؛ تواريخ الانتظار من التغطية الصحفية.",
+      "limitations": "لا دليل على دعم العربية أو توفره في السعودية."
+    },
+    {
+      "id": "32c42b1a9bd9b90f7d",
+      "titleAr": "مراكز بيانات الذكاء الاصطناعي تلجأ إلى محركات طائرات قديمة لتوليد الكهرباء",
+      "basis": "article",
+      "sourceRead": "TechCrunch original article read",
+      "sources": [
+        "https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows/"
+      ],
+      "factNotes": "المقال ينقل تحقيق NYT وتصريحات محللين عن زمن الربط والتوربينات.",
+      "limitations": "أمثلة محددة لا تعمم على كل مراكز البيانات؛ كفاءة وانبعاثات تختلف."
+    },
+    {
+      "id": "e529e3957e845009c4",
+      "titleAr": "إيرادات Palantir تقفز 96% لكن نمو العقود التجارية يحمل إشارة تباطؤ",
+      "basis": "article",
+      "sourceRead": "TechCrunch original article and cited company earnings coverage reviewed",
+      "sources": [
+        "https://techcrunch.com/2026/11/03/hiding-inside-palantirs-skyrocketing-quarter-is-a-foreboding-signal/",
+        "https://www.reuters.com/technology/palantir-tops-third-quarter-revenue-estimates-strong-ai-software-demand-2026-11-02/"
+      ],
+      "factNotes": "الإيرادات 2.31 مليار دولار و96% سنويًا؛ العقود ليست مساوية لإيراد محقق.",
+      "limitations": "ربع واحد لا يثبت اتجاهًا طويل الأجل."
+    }
+  ]
+}

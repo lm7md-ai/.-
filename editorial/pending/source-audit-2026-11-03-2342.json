@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-03T23:41:00+03:00",
+  "baseMainSha": "5aac82531304993f35e8b67a52af9b1d849d0524",
+  "batchFile": "editorial/incoming/nabdh-editorial-2026-11-03-2342.json",
+  "records": [
+    {
+      "id": "5d33ed0c66ace544e6",
+      "basis": "article",
+      "sources": [
+        "https://openai.com/index/grid-protectors-program/"
+      ],
+      "note": "OpenAI primary announcement read; US future campuses and site-specific arrangements; no independent operating results."
+    },
+    {
+      "id": "d9c7a4169daa71511a",
+      "basis": "article",
+      "sources": [
+        "https://techcrunch.com/2026/11/02/omen-ai-adds-liquid-know-how-in-16-million-aquatic-labs-acquisition/"
+      ],
+      "note": "Full TechCrunch report read; future sensor integration and capacity targets attributed to company statements."
+    },
+    {
+      "id": "e4c907cf61584e2017",
+      "basis": "article",
+      "sources": [
+        "https://en.prnasia.com/releases/apac/tencent-cloud-and-omniops-partner-to-advance-enterprise-ai-development-in-saudi-arabia-554174.shtml"
+      ],
+      "note": "Tencent Cloud press release read; claims about sovereign inference and platform capabilities attributed to issuer; no independent performance data."
+    },
+    {
+      "id": "ab39265a5d0863e4d3",
+      "basis": "article",
+      "sources": [
+        "https://www.kfshrc.edu.sa/en/news/2026/11/02/12/10/kfsh-launches-nursing-hackathon-to-enhance-patient-safety-through-ai-and-innovation"
+      ],
+      "note": "KFSH official announcement read; SPA feed page was not text-readable. Unverified judging date was removed; no clinical efficacy claim."
+    },
+    {
+      "id": "dc101bf128590792a3",
+      "basis": "article",
+      "sources": [
+        "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/"
+      ],
+      "note": "Full TechCrunch report read; details attributed to email sent to selected users, not treated as a universal rollout or official public release."
+    },
+    {
+      "id": "1263ce4e09302da828",
+      "basis": "article",
+      "sources": [
+        "https://www.reuters.com/business/oracle-offer-10-billion-bonds-2026-11-02/"
+      ],
+      "note": "Full Reuters report read; the company said proceeds have general corporate uses, so the full $20B is not described as AI-only funding."
+    },
+    {
+      "id": "e8fb18855e1db6097f",
+      "basis": "article",
+      "sources": [
+        "https://wikimediafoundation.org/news/2026/10/30/wikimedia-foundation-amicus-brief-new-york-times-v-open-ai-case/"
+      ],
+      "note": "Wikimedia Foundation statement read; legal position distinguished from a court ruling."
+    },
+    {
+      "id": "3e4cd1e3871dc6c4ca",
+      "basis": "article",
+      "sources": [
+        "https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/"
+      ],
+      "note": "GitHub official rules read; submission deadline and itch.io submission step retained; age eligibility not inferred."
+    },
+    {
+      "id": "60506285f7f3d32157",
+      "basis": "article",
+      "sources": [
+        "https://www.alraimedia.com/article/1784722/%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF/%D9%83%D9%88%D8%AF%D8%AF-%D8%AA%D8%AE%D8%AA%D8%AA%D9%85-%D8%A7%D9%84%D9%83%D9%88%D9%8A%D8%AA-%D8%AA%D8%A8%D8%B1%D9%85%D8%AC-6-%D8%A8%D9%82%D8%A8%D9%88%D9%84-1078-%D8%B7%D8%A7%D9%84%D8%A8%D8%A7-%D9%88%D8%B7%D8%A7%D9%84%D8%A8%D8%A9"
+      ],
+      "note": "Full Al Rai report read; cohort is completed, so no claim that registration is open."
+    },
+    {
+      "id": "6b9e2ec2904e020bf0",
+      "basis": "metadata",
+      "sources": [
+        "https://www.cnbcarabia.com/episode/17425/"
+      ],
+      "note": "CNBC page title and accompanying text read; full video/transcript not reviewed, and the quoted economic percentages remain attributed claims."
+    },
+    {
+      "id": "e621a5b384ce839c8a",
+      "basis": "article",
+      "sources": [
+        "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/"
+      ],
+      "note": "Full TechCrunch report read; proposal/communications discussion, not an adopted official rename."
+    }
+  ],
+  "basisCounts": {
+    "article": 10,
+    "metadata": 1
+  },
+  "excludedOrDeferred": [
+    {
+      "topic": "HUMAIN/CNTXT joining announcement",
+      "reason": "press-release page was not fully readable; no full article basis claimed."
+    },
+    {
+      "topic": "Vibe-coding safety article",
+      "reason": "full mirror returned HTTP 403 during this run; deferred rather than claiming a fresh full read."
+    },
+    {
+      "topic": "Apple Mac touch developer resources",
+      "reason": "metadata-only and lower priority than selected items."
+    }
+  ]
+}

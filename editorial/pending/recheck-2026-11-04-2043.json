@@ -1,0 +1,248 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-04T20:43:13+03:00",
+  "main": {
+    "sha": "7c8dbef79c331cb9e848dbaacf893fa059cbc80e",
+    "feed": {
+      "generatedAt": "2026-11-04T14:34:56+00:00",
+      "items": 800,
+      "news": 700,
+      "projects": 100,
+      "state": "partial"
+    },
+    "editorial": {
+      "items": 639,
+      "activeExact": 196,
+      "historicalOutsideFeed": 443,
+      "urlMismatches": 0
+    },
+    "seen": {
+      "ids": 2921,
+      "unmatchedIncomingIdsPresent": 7
+    }
+  },
+  "mainIncomingAudit": {
+    "files": 65,
+    "recordOccurrences": 606,
+    "alreadyImportedAndActiveOccurrences": 171,
+    "alreadyImportedHistoricalOccurrences": 428,
+    "notInFeedOrEditorialOccurrences": 7,
+    "activeExactNotYetImportedOccurrences": 0,
+    "urlMismatchesObserved": 0,
+    "unmatched": [
+      {
+        "id": "940ec4695c1e241c2f",
+        "title": "NVIDIA OpenShell",
+        "url": "https://github.com/NVIDIA/OpenShell",
+        "state": "seen_only"
+      },
+      {
+        "id": "317abcdd1b20728a7e",
+        "title": "Canva Craft",
+        "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+        "state": "seen_only"
+      },
+      {
+        "id": "662e68277c6361dd4b",
+        "title": "1Password agent sign-in",
+        "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+        "state": "seen_only"
+      },
+      {
+        "id": "87d27a9f8a0972f507",
+        "title": "Binance security incident",
+        "url": "https://www.theverge.com/tech/1023021/binance-hack-billions-biggest-crypto-heist",
+        "state": "seen_only"
+      },
+      {
+        "id": "65eeab64fed21e0b54",
+        "title": "GM data-privacy settlement",
+        "url": "https://www.engadget.com/2301934/general-motors-220-million-settle-multi-state-data-privacy-lawsuit/",
+        "state": "seen_only"
+      },
+      {
+        "id": "d674dea922625d0be8",
+        "title": "CNIL fine concerning Fnac/Darty app tracking",
+        "url": "https://noyb.eu/en/noyb-win-french-electronics-retailer-fnac-darty-fined-eu7-million",
+        "state": "seen_only"
+      },
+      {
+        "id": "967be99077d13f07b2",
+        "title": "AI cost of JavaScript frameworks",
+        "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+        "state": "seen_only"
+      }
+    ],
+    "decision": "No import: all active exact occurrences are already in main editorial; seven records are seen-only and absent from both current feed and editorial. Keep original IDs and URLs; do not substitute by title."
+  },
+  "specialRecords": {
+    "NVIDIA OpenShell": {
+      "id": "940ec4695c1e241c2f",
+      "seen": true,
+      "inFeed": false,
+      "inEditorial": false,
+      "researchDossierPresent": true
+    },
+    "Canva Craft": {
+      "id": "317abcdd1b20728a7e",
+      "seen": true,
+      "inFeed": false,
+      "inEditorial": false
+    },
+    "1Password agent sign-in": {
+      "id": "662e68277c6361dd4b",
+      "seen": true,
+      "inFeed": false,
+      "inEditorial": false
+    }
+  },
+  "pr80": {
+    "url": "https://github.com/lm7md-ai/.-/pull/80",
+    "state": "open",
+    "mergeable": true,
+    "head": "content/nabdh-2026-11-03-1138",
+    "headSha": "f78c29f5e5e4156904015760e06cc5402b5c3f82",
+    "aheadBy": 52,
+    "behindBy": 3,
+    "incomingFiles": 8,
+    "incomingOccurrences": 93,
+    "stagedInPrEditorialOccurrences": 82,
+    "unmatchedAgainstMainFeedAndEditorialOccurrences": 11,
+    "editorialItems": 718,
+    "mainRecordsPreservedExactly": 639,
+    "newUniqueEditorialIds": 79,
+    "exactCurrentFeedMatches": 79,
+    "nonmatchingEditorialEntries": [],
+    "exactNewEntriesByKind": {
+      "news": 78,
+      "projects": 1
+    },
+    "branchCi": {
+      "runId": 41851660547,
+      "runNumber": 171,
+      "conclusion": "success",
+      "tests": "python -m unittest discover -s tests -v",
+      "validator": "python scripts/editorial.py validate",
+      "validatorScope": "PR branch site/data/editorial.json only; not individual incoming files"
+    },
+    "officialImportCommandExecuted": false,
+    "filteredOutAndHeldInIncoming": [
+      {
+        "id": "841e05fd699259e83c",
+        "title": "SLAC altermagnetism in MnTe"
+      },
+      {
+        "id": "834f867a452076917a",
+        "title": "NVIDIA Auto Ontology"
+      }
+    ],
+    "structuralMerge": {
+      "commit": "34f3b449feb16046a6fa0be74e20f3eb6d1b186e",
+      "mergedCount": 718,
+      "oldMainRecordsPreservedExactly": 639,
+      "newExactFeedMatches": 79,
+      "removedNonmatchingFromEditorial": 2,
+      "validation": "equivalent structural validation passed",
+      "officialCliImport": false
+    },
+    "headShaAtInitialAudit": "f78c29f5e5e4156904015760e06cc5402b5c3f82",
+    "latestHeadBeforeReportRefresh": "cf85aec65d9bfca3ed9d2072595291ebf1825686",
+    "mergeableAtFinalCheck": false,
+    "latestCi": {
+      "runId": 41881832126,
+      "runNumber": 172,
+      "conclusion": "success",
+      "headSha": "988fc0d6e0c282338a11385ac70f2a6e9bc8ecca",
+      "scope": "720-entry PR editorial before exact-match filtering; does not validate the later 718-entry file"
+    },
+    "ciCoversFilteredEditorial": false
+  },
+  "pr80IncomingUnmatchedIds": [
+    "32b3bf2b225f3d4c44",
+    "5010fb296f767bbc9b",
+    "327e862bb29c2bb4f7",
+    "dc7eb9e8885fba4465",
+    "56a1a96015a9777801",
+    "cb87f0ba6d1c74466f",
+    "5b9f2f37879a136ac2",
+    "3e8a8aa6133203ad02",
+    "5f4b9fdfeb2042b971",
+    "f6417c66c0228f42d3",
+    "1263ce4e09302da828"
+  ],
+  "library": {
+    "mainCatalog": {
+      "entries": 42,
+      "summaryTotal": 40,
+      "statusSummaryTotal": 42
+    },
+    "pr80LatestCatalog": {
+      "entries": 46,
+      "summaryTotal": 46,
+      "statusSummaryTotal": 47,
+      "feedMembershipUnverified": 1,
+      "archived": 2,
+      "nonArchivedConfirmed": 44,
+      "feedVisible": 7,
+      "researchOnly": 39,
+      "licenseNeedsUpstreamVerification": 7,
+      "notMaintained": 1
+    },
+    "previousEightReview": {
+      "projectsReviewed": 8,
+      "nonArchived": 8,
+      "archived": 0,
+      "feedVisible": 1,
+      "researchOnly": 7,
+      "licenses": {
+        "MIT": 5,
+        "Apache-2.0": 3
+      },
+      "metricsMeasuredAt": "2026-11-04T09:11:09Z",
+      "testEvidence": null
+    },
+    "researchOnlyDossiersAddedInPr80": [
+      "Strands Harness SDK",
+      "Octomind",
+      "FlashProve",
+      "NVIDIA Auto Ontology"
+    ],
+    "bestThreeIdeas": [
+      "عارض فروقات سياسات OpenShell قبل التنفيذ مع موافقة بشرية",
+      "حزمة تقييم typed لوكلاء Pydantic AI",
+      "مصفوفة توافق واختبارات contract لـ Google GenAI SDK"
+    ]
+  },
+  "publishedArtifact": {
+    "runId": 41848959706,
+    "runNumber": 128,
+    "artifactId": 13331393822,
+    "createdAt": "2026-11-04T14:35:41Z",
+    "conclusion": "success",
+    "feedItems": 800,
+    "editorialItems": 639,
+    "feedBlobSha": "45b87bbc41638acd80ae4ea2dc16b3d5c8105408",
+    "editorialBlobSha": "94f3046b68f8d3cbe259a5d55592c1a53019aaac",
+    "artifactMatchesMainBlobs": true,
+    "pr80NewEntriesPresent": false,
+    "directPagesBrowser": "DisabledError"
+  },
+  "protectedPathsUnchanged": [
+    "site/data/feed.json",
+    "site/data/seen.json",
+    "site/data/status.json",
+    "scripts/**",
+    ".github/workflows/**",
+    "site/**/*.js",
+    "site/**/*.css",
+    "site/index.html"
+  ],
+  "commands": {
+    "localValidate": "not run; no repository checkout/local Python environment",
+    "localImport": "not run",
+    "localUnitTests": "not run",
+    "ciUnitTests": "passed in PR CI run 41851660547",
+    "ciValidate": "passed on PR branch site/data/editorial.json; incoming files not individually validated by CLI"
+  },
+  "decision": "A structural merge-equivalent was applied to the PR branch: 639 existing main records were preserved byte-semantically, 79 exact ID+URL feed matches retained, and two feed-missing records removed from editorial while remaining in incoming and the hold report. No main merge or publish because the main workflow writes protected feed/seen/status files."
+}

@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "generatedAt": "2026-11-03T23:42:00+03:00",
+  "baseMainSha": "5aac82531304993f35e8b67a52af9b1d849d0524",
+  "pr80HeadBeforeReport": "b819589e5492d3b047c7b18540d15d7ad04cc326",
+  "feedGeneratedAt": "2026-11-03T17:00:40+00:00",
+  "mainIncomingAudit": {
+    "files": 65,
+    "recordAppearances": 606,
+    "uniqueIds": 602,
+    "duplicateAppearances": 4,
+    "alreadyInEditorialExact": 595,
+    "seenOnly": 7,
+    "newEligibleFromMainIncoming": 0,
+    "idUrlMismatches": 0,
+    "confirmedExpired": 0,
+    "needsCorrection": 0
+  },
+  "pr80PriorIncoming": {
+    "files": 3,
+    "recordAppearances": 48,
+    "uniqueIds": 47,
+    "exactFeedIdAndUrl": 47,
+    "mismatches": 0,
+    "alreadyImportedToPrEditorial": 47,
+    "composition": {
+      "previousBacklogImported": 19,
+      "newsAddedInEarlierBatches": 28
+    }
+  },
+  "currentBatch": {
+    "file": "editorial/incoming/nabdh-editorial-2026-11-03-2342.json",
+    "records": 11,
+    "exactFeedIdAndUrl": 11,
+    "mismatches": 0,
+    "alreadyPresentBeforeBatch": 0,
+    "articleBasis": 10,
+    "metadataBasis": 1,
+    "importedToPrEditorial": 11
+  },
+  "otherOpenPrIncoming": {
+    "prs": [
+      78,
+      71
+    ],
+    "files": 5,
+    "recordAppearances": 33,
+    "exactFeedIdAndUrlAppearances": 13,
+    "notInCurrentFeed": 20,
+    "urlMismatches": 0,
+    "uniqueActiveExactNotInPr80": 9,
+    "selectedAndAddedToPr80": 5,
+    "remainingActiveExactNotImported": 4,
+    "remainingDecision": {
+      "duplicateEventCoverage": 2,
+      "sourceUnavailable": 1,
+      "metadataOnlyLowerPriority": 1
+    }
+  },
+  "pendingRecordsNotInFeed": [
+    {
+      "id": "519265604034657396",
+      "topic": "GPT-Rosalind-6 system card",
+      "reason": "id_not_in_current_feed"
+    },
+    {
+      "id": "0cf35570dae36863c2",
+      "topic": "China AI export-control proposal",
+      "reason": "id_not_in_current_feed"
+    },
+    {
+      "id": "f9c3fac38f3a5cac98",
+      "topic": "Japanese actors union voice-AI guidelines",
+      "reason": "id_not_in_current_feed"
+    }
+  ],
+  "seenOnly": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "label": "NVIDIA OpenShell"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "label": "Canva Craft"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "label": "1Password agent sign-in"
+    },
+    {
+      "id": "87d27a9f8a0972f507",
+      "label": "digital-assets security incident"
+    },
+    {
+      "id": "65eeab64fed21e0b54",
+      "label": "GM driver-data privacy settlement"
+    },
+    {
+      "id": "d674dea922625d0be8",
+      "label": "Fnac Darty fine"
+    },
+    {
+      "id": "967be99077d13f07b2",
+      "label": "JavaScript framework cost comparison"
+    }
+  ],
+  "decision": "Do not synthesize IDs or URLs. Keep absent-feed records pending; preserve seen-only records without importing. Do not alter feed.json or seen.json.",
+  "finalEditorial": {
+    "main": 639,
+    "pr80": 697,
+    "netAdditions": 58,
+    "mainRecordsPreservedExactly": 639,
+    "mainRecordsMissing": 0,
+    "mainRecordsAltered": 0,
+    "feedNews": 700,
+    "feedProjects": 100,
+    "enrichedNews": 174,
+    "enrichedProjects": 100
+  },
+  "projectLibrary": {
+    "total": 43,
+    "nonArchived": 41,
+    "archived": 2,
+    "licenseFollowups": 7,
+    "inCurrentFeed": 6,
+    "notInFeed": 37
+  },
+  "previousEightReview": {
+    "projects": 8,
+    "improvementsReportedInDetailedDossier": 8,
+    "spinoffsReportedInDetailedDossier": 8,
+    "religiousReportedInDetailedDossier": 1,
+    "alternateRunSummary": {
+      "improvements": 7,
+      "spinoffs": 7,
+      "religious": 0
+    },
+    "testEvidenceClaims": 0,
+    "discrepancy": "The detailed dossier and later run summary disagree; counts were not silently reconciled."
+  },
+  "actions": {
+    "pr80RunId": 41716877682,
+    "runNumber": 149,
+    "conclusion": "success",
+    "head": "b819589e5492d3b047c7b18540d15d7ad04cc326"
+  },
+  "publication": {
+    "merged": false,
+    "publishedVerified": false,
+    "pagesCheck": "DisabledError",
+    "reason": "Merging triggers the existing update/deploy workflow, which can rewrite feed.json and seen.json; direct Pages retrieval was blocked."
+  },
+  "constraints": {
+    "feedJsonModified": false,
+    "seenJsonModified": false,
+    "statusJsonModified": false,
+    "siteCodeModified": false,
+    "designModified": false,
+    "workflowsModified": false,
+    "publishSettingsModified": false
+  }
+}

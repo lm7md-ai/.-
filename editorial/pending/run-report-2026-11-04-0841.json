@@ -1,0 +1,238 @@
+{
+  "version": 1,
+  "runAt": "2026-11-04T08:41:20+03:00",
+  "repository": "lm7md-ai/.-",
+  "main": {
+    "sha": "96afdfd9b08440c26a958021db08d3941b48911f",
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialEntries": 639
+  },
+  "pullRequests": {
+    "1": "merged",
+    "2": "merged",
+    "80": {
+      "state": "open",
+      "headBefore": "a96c59db16bfc5d40734f9a311a9c0c8c7144798",
+      "branch": "content/nabdh-2026-11-03-1138"
+    }
+  },
+  "incomingAudit": {
+    "mainIncoming": {
+      "files": 65,
+      "occurrences": 606,
+      "importedExact": 599,
+      "seenOnly": 7,
+      "idUrlMismatches": 0,
+      "sameUrlDifferentId": 1,
+      "confirmedExpired": 0,
+      "allFilesReparsed": true
+    },
+    "pr80Incoming": {
+      "files": 5,
+      "occurrences": 60,
+      "uniqueIds": 59,
+      "exactFeedOccurrences": 49,
+      "exactFeedUniqueIds": 48,
+      "notInFeed": 11,
+      "duplicate": {
+        "id": "c01265aacc1a10af6e",
+        "files": [
+          "2039",
+          "2136"
+        ],
+        "keep": "2136"
+      },
+      "urlMismatches": 0,
+      "confirmedExpired": 0
+    },
+    "legacySeenOnly": [
+      {
+        "id": "940ec4695c1e241c2f",
+        "name": "NVIDIA OpenShell"
+      },
+      {
+        "id": "317abcdd1b20728a7e",
+        "name": "Canva Craft"
+      },
+      {
+        "id": "662e68277c6361dd4b",
+        "name": "1Password agent sign-in"
+      },
+      {
+        "id": "87d27a9f8a0972f507",
+        "name": "حادث أمني في منصة أصول رقمية"
+      },
+      {
+        "id": "65eeab64fed21e0b54",
+        "name": "تسوية خصوصية بيانات قيادة السيارات"
+      },
+      {
+        "id": "d674dea922625d0be8",
+        "name": "غرامة CNIL على Fnac Darty"
+      },
+      {
+        "id": "967be99077d13f07b2",
+        "name": "مقارنة تكلفة بناء تطبيق عبر أطر JavaScript"
+      }
+    ],
+    "newPending": [
+      {
+        "id": "32b3bf2b225f3d4c44",
+        "title": "تجربة MIT لبرمجة أوزان الشبكات العصبية",
+        "file": "2039"
+      },
+      {
+        "id": "5010fb296f767bbc9b",
+        "title": "مقال Terry Tao عن الرياضيات والذكاء الاصطناعي",
+        "file": "2039"
+      },
+      {
+        "id": "327e862bb29c2bb4f7",
+        "title": "Meituan LongCat-2.5",
+        "file": "2039"
+      },
+      {
+        "id": "dc7eb9e8885fba4465",
+        "title": "ورقة زرع سلوك خفي في الوكلاء",
+        "file": "2039"
+      },
+      {
+        "id": "56a1a96015a9777801",
+        "title": "Polyend Tracker",
+        "file": "2039"
+      },
+      {
+        "id": "cb87f0ba6d1c74466f",
+        "title": "Docker agent collaboration",
+        "file": "2039"
+      },
+      {
+        "id": "5b9f2f37879a136ac2",
+        "title": "حادث أنظمة تبريد متاجر أوروبية",
+        "file": "2039"
+      },
+      {
+        "id": "3e8a8aa6133203ad02",
+        "title": "Momentic Mo testing agent",
+        "file": "2039"
+      },
+      {
+        "id": "5f4b9fdfeb2042b971",
+        "title": "Google XCPE Android botnet",
+        "file": "2136"
+      },
+      {
+        "id": "f6417c66c0228f42d3",
+        "title": "Meta Quest 2/Pro feature updates",
+        "file": "2136"
+      },
+      {
+        "id": "1263ce4e09302da828",
+        "title": "Oracle $20B financing",
+        "file": "2342"
+      }
+    ],
+    "specialChecks": [
+      {
+        "name": "NVIDIA OpenShell",
+        "id": "940ec4695c1e241c2f",
+        "feed": false,
+        "editorial": false,
+        "seen": true
+      },
+      {
+        "name": "Canva Craft",
+        "id": "317abcdd1b20728a7e",
+        "feed": false,
+        "editorial": false,
+        "seen": true
+      },
+      {
+        "name": "1Password agent sign-in",
+        "id": "662e68277c6361dd4b",
+        "feed": false,
+        "editorial": false,
+        "seen": true
+      }
+    ],
+    "identityCollision": "حالة واحدة لرابط تاريخي واحد بمعرفين؛ حفظ المعرفين دون دمج أو توليد ID بالعنوان."
+  },
+  "newCycle": {
+    "newsPrepared": 12,
+    "savedToIncoming": 12,
+    "exactFeedIdUrl": 12,
+    "alreadyInBranchEditorial": 0,
+    "basisArticle": 12,
+    "metadata": 0,
+    "imported": 0,
+    "merged": 0,
+    "publishedVerified": 0
+  },
+  "projects": {
+    "feedProjects": 100,
+    "mainUnenriched": 1,
+    "pr80BranchEnriched": 100,
+    "libraryBefore": 44,
+    "libraryAfter": 45,
+    "newFeedProjects": 0,
+    "newResearchOnly": 1,
+    "previousEightReviewed": 8,
+    "previousEightArchived": 0,
+    "previousEightFeedVisible": 1,
+    "previousEightResearchOnly": 7
+  },
+  "flashProve": {
+    "status": "research-only unpublished; not maintained; not archived",
+    "license": "Apache-2.0",
+    "improvements": 3,
+    "spinoffs": 3,
+    "religious": 0,
+    "testEvidence": null,
+    "alternatives": [
+      "VerInf",
+      "DeepProve"
+    ]
+  },
+  "validation": {
+    "structuralEquivalent": "passed",
+    "entries": 12,
+    "errors": 0,
+    "officialValidateIncoming": "not_run",
+    "officialImport": "not_run",
+    "localUnittest": "not_run"
+  },
+  "commandsNotExecuted": [
+    "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-11-04-0841.json",
+    "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-11-04-0841.json",
+    "python -m unittest discover -s tests -v (local)"
+  ],
+  "publication": {
+    "mainRun": 41738294978,
+    "mainWorkflow": "success",
+    "deployStep": "success",
+    "liveEditorialVerified": false,
+    "browserError": "DisabledError",
+    "mergeDecision": "not merged: push workflow writes feed.json, seen.json, status.json"
+  },
+  "changes": {
+    "mainModified": false,
+    "feedJson": false,
+    "seenJson": false,
+    "statusJson": false,
+    "editorialJsonThisRun": false,
+    "codeDesignWorkflowSettings": false,
+    "branchOnly": true
+  },
+  "bestThree": [
+    "عارض فروقات سياسات OpenShell قبل التنفيذ",
+    "حزمة تقييم typed لوكلاء Pydantic AI",
+    "مصفوفة توافق Google GenAI SDK"
+  ],
+  "developmentHandoff": [
+    "اعرض basis وreviewedAt وwhyItMatters وaudience وnextSteps وlimitations وsources.",
+    "ميّز البحث التاريخي غير المنشور عن بطاقات feed.",
+    "لا تعرض شارة tested أو زر تشغيل دون testEvidence."
+  ]
+}

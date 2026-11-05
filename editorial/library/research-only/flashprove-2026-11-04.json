@@ -1,0 +1,191 @@
+{
+  "version": 1,
+  "project": "anthropics/FlashProve",
+  "url": "https://github.com/anthropics/FlashProve",
+  "classification": "research_prototype_not_maintained",
+  "siteVisibility": "research-only; unpublished; not in current feed; no feed ID",
+  "measuredAt": "2026-11-04T08:41:20+03:00",
+  "repositoryStatus": {
+    "ownerMarkedNotMaintained": true,
+    "archived": false,
+    "stars": null,
+    "forks": null,
+    "openIssues": 2,
+    "lastPushedAt": "2026-10-30T21:00:23Z",
+    "metricsWarning": "GitHub HTML/API disagreed on stars and forks; counts omitted. Updated timestamp appeared later than the runtime clock and was not used as proof of activity."
+  },
+  "license": {
+    "repository": "Apache-2.0",
+    "evidence": "LICENSE and NOTICE read",
+    "caveat": "Third-party files, dependencies and Llama weights have separate terms; verify each before redistribution."
+  },
+  "overview": "FlashProve يربط استجابة الاستدلال ببصمة مجموعة أوزان محددة باستخدام zkSNARK دون كشف الأوزان. يركز على Llama 4 Maverick MoE، وهو نموذج بحثي وليس خدمة إنتاجية.",
+  "requirements": {
+    "verifier": "Linux x86-64, bash, g++ 13+, Python 3, under 2 GB RAM; build verifier/build.sh then verify stored synthetic example.",
+    "toy": "Route 2 additionally requires make and Python 3; approximately 1.5 GB RAM.",
+    "gpuProver": "x86-64 Linux, CPU SHA extensions, NVIDIA H100 80 GB, CUDA 13.2 Update 2, gcc/g++ 13, binutils, flock and Python 3.",
+    "fullModel": "Llama 4 Maverick route requires Python 3.13, curl, a calibration set, about 245 GB disk, 330 GB host RAM and a 232 GB public 4-bit weight conversion.",
+    "requirementsFileNote": "requirements.txt pins PyTorch CUDA 12.8 while the documented prover stack requires CUDA 13.2 Update 2; resolve this mismatch before building."
+  },
+  "quickStart": "For a safe first look only: clone the repository, read AGENTS.md, build the CPU verifier with verifier/build.sh, then check the stored synthetic example using bin/cp_verify. The toy proof route uses blocks/first_look.sh. No commands were executed in this review.",
+  "costModel": "No managed service or official price. CPU verifier is relatively light; GPU prover requires H100 time, substantial RAM, storage and power. Cloud use means self-managed H100 rental, not a SaaS offering.",
+  "localVsCloud": "Verifier and toy route can be explored on a Linux x86-64 machine. Full prover is unsuitable for ordinary laptops and phones. A cloud H100 is technically possible but requires a compatible CUDA environment, 330 GB host RAM for the full model and significant storage.",
+  "alternatives": [
+    {
+      "name": "VerInf",
+      "url": "https://github.com/JamesPetrie/VerInf",
+      "status": "research alternative; MIT; repository not archived"
+    },
+    {
+      "name": "DeepProve",
+      "url": "https://eprint.iacr.org/2026/1112",
+      "status": "research paper, not a ready-to-run product"
+    }
+  ],
+  "limitations": "The README explicitly says the project is not maintained and is not accepting contributions. The reported evaluation uses a 1,024-token context and an MoE model. Proof generation is costly; the C++ implementation does not carry the same formal guarantee as the Lean specification. No tests or binaries were executed in this review.",
+  "improvements": [
+    {
+      "title": "Reproducible proof-performance benchmark",
+      "problem": "Comparing proof latency, proof size and memory use across setups is difficult.",
+      "approach": "Create a harness that records hardware, compiler/CUDA versions, proof time, verification time and artifact size.",
+      "stack": "Python 3.13, JSONL, pandas, C++, CUDA",
+      "steps": [
+        "Pin the repository commit and environment.",
+        "Select repeatable synthetic examples.",
+        "Record prover and verifier timings.",
+        "Capture peak memory and proof size.",
+        "Attach every result to hardware and version metadata.",
+        "Publish a dated comparison."
+      ],
+      "metric": "Variance across repeated runs and percentage of reproducible runs.",
+      "difficulty": "High; estimated 2–3 weeks.",
+      "risks": "H100 rental cost and hardware variation.",
+      "sources": [
+        "https://github.com/anthropics/FlashProve/blob/main/README.md",
+        "https://github.com/anthropics/FlashProve/blob/main/guide/performance.md"
+      ]
+    },
+    {
+      "title": "Differential tests between Lean and C++ verifiers",
+      "problem": "A Lean theorem does not automatically prove that the optimized C++ implementation behaves identically.",
+      "approach": "Use fixed vectors and generated edge cases to compare accept/reject decisions.",
+      "stack": "Lean 4, C++, Python, pytest",
+      "steps": [
+        "Document the input formats.",
+        "Create valid and invalid test vectors.",
+        "Run both implementations on identical cases.",
+        "Generate boundary and malformed inputs.",
+        "Store divergences as regression tests.",
+        "Review whether the test corpus covers the protocol surface."
+      ],
+      "metric": "Number of divergent decisions and boundary-case coverage.",
+      "difficulty": "High; estimated 3–4 weeks.",
+      "risks": "Testing cannot prove full equivalence.",
+      "sources": [
+        "https://github.com/anthropics/FlashProve/blob/main/lean/THEOREM.md",
+        "https://github.com/anthropics/FlashProve/blob/main/docs/limits.md"
+      ]
+    },
+    {
+      "title": "Independent verifier package",
+      "problem": "Consumers need a narrow parser and reproducible verifier build.",
+      "approach": "Package the verification path separately with strict input limits and documented artifacts.",
+      "stack": "Rust, C++, Lean, reproducible builds",
+      "steps": [
+        "Specify proof-file formats.",
+        "Implement a bounded parser.",
+        "Test missing, malformed and oversized inputs.",
+        "Pin compiler versions.",
+        "Sign release artifacts.",
+        "Request an independent security review."
+      ],
+      "metric": "Malformed-input rejection and build reproducibility.",
+      "difficulty": "Very high; estimated 4–6 weeks.",
+      "risks": "A standalone package can create false confidence without independent audit.",
+      "sources": [
+        "https://github.com/anthropics/FlashProve",
+        "https://github.com/anthropics/FlashProve/blob/main/SECURITY.md"
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "Interactive zkML learning lab",
+      "problem": "Commitments and proofs are difficult to understand from papers alone.",
+      "approach": "Use a tiny synthetic model to demonstrate commitment, proof generation and CPU verification.",
+      "stack": "Python, Lean 4, Jupyter, TypeScript",
+      "steps": [
+        "Choose a tiny synthetic network.",
+        "Generate a model commitment.",
+        "Create a small proof.",
+        "Verify it on CPU.",
+        "Show accepted and rejected examples.",
+        "Explain which properties the toy example does not establish."
+      ],
+      "metric": "Completion rate and comprehension of verification outcomes.",
+      "difficulty": "Medium; estimated 2 weeks.",
+      "risks": "Toy examples can understate real-model cost.",
+      "sources": [
+        "https://github.com/anthropics/FlashProve/blob/main/README.md"
+      ]
+    },
+    {
+      "title": "Inference-model audit ledger",
+      "problem": "A service user may not know whether the response came from the agreed model weights.",
+      "approach": "Bind request IDs to a trusted commitment, proof artifact and independent verification result.",
+      "stack": "Python API, Rust verifier, PostgreSQL",
+      "steps": [
+        "Define a request schema.",
+        "Register a trusted commitment.",
+        "Attach proof artifacts to requests.",
+        "Verify in a separate process.",
+        "Store only non-sensitive audit metadata.",
+        "Export a verifiable report."
+      ],
+      "metric": "Share of requests with valid proofs and verification latency.",
+      "difficulty": "High; estimated 3–5 weeks.",
+      "risks": "Proof cost and prototype limitations.",
+      "sources": [
+        "https://github.com/anthropics/FlashProve",
+        "https://eprint.iacr.org/2026/1112"
+      ]
+    },
+    {
+      "title": "Comparative research matrix for inference proofs",
+      "problem": "Results from different papers and prototypes are not directly comparable.",
+      "approach": "Separate published claims from independently reproduced tests and normalize hardware/context metadata.",
+      "stack": "Python, pandas, notebooks",
+      "steps": [
+        "Collect FlashProve, VerInf and DeepProve sources.",
+        "Extract model, context, hardware and proof assumptions.",
+        "Label published versus reproduced measurements.",
+        "Normalize units without mixing incompatible runs.",
+        "Document limitations.",
+        "Publish a dated evidence matrix."
+      ],
+      "metric": "Share of comparison rows with primary sources and complete conditions.",
+      "difficulty": "Medium-high; estimated 2–3 weeks.",
+      "risks": "Metrics may remain incomparable across protocols.",
+      "sources": [
+        "https://github.com/anthropics/FlashProve",
+        "https://github.com/JamesPetrie/VerInf",
+        "https://eprint.iacr.org/2026/1112"
+      ]
+    }
+  ],
+  "religious": [],
+  "testEvidence": null,
+  "sources": [
+    "https://github.com/anthropics/FlashProve",
+    "https://github.com/anthropics/FlashProve/blob/main/README.md",
+    "https://github.com/anthropics/FlashProve/blob/main/LICENSE",
+    "https://github.com/anthropics/FlashProve/blob/main/requirements.txt",
+    "https://github.com/anthropics/FlashProve/blob/main/docs/quickstart.md",
+    "https://github.com/anthropics/FlashProve/blob/main/guide/getting-started.md",
+    "https://github.com/anthropics/FlashProve/blob/main/guide/performance.md",
+    "https://github.com/anthropics/FlashProve/blob/main/AGENTS.md",
+    "https://www.anthropic.com/research/provable-inference",
+    "https://github.com/JamesPetrie/VerInf",
+    "https://eprint.iacr.org/2026/1112"
+  ]
+}

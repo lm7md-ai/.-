@@ -1,0 +1,231 @@
+{
+  "version": 1,
+  "repository": "deepseek-ai/dsh-superagent-prototype",
+  "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+  "titleAr": "dsh-superagent: نموذج بحثي لوكيل برمجة يتابع مستودع GitHub",
+  "summaryAr": "نموذج أولي لوكيل استباقي يعمل كحزمة لـDeepSeek Harness؛ يراقب مستودعًا واحدًا، ويحوّل الطلبات المصرح بها إلى تذاكر عمل، وينفذ كل تذكرة في جلسة ومجلد مستقلين ثم قد يفتح Pull Request. يصرح README بأنه نموذج بحثي مرجعي وليس منتجًا رسميًا جاهزًا للإنتاج.",
+  "whyItMatters": "يعرض تصميمًا عمليًا لتفويض مهام المستودع لوكيل، لكنه يكشف أيضًا أهمية حدود الصلاحيات والعزل والمراجعة البشرية قبل منح الوكيل وصولًا إلى ملفات أو حسابات حقيقية.",
+  "audience": "باحثو وكلاء البرمجة وفرق التطوير التي تدرس أتمتة GitHub؛ ليس توصية لتشغيله على جهاز شخصي أو مستودع إنتاجي دون عزل ومراجعة.",
+  "overview": "يستقبل الطلبات من GitHub، ويمكن إضافة Feishu، ثم يقيّم المرسل وسياسة المصدر قبل إنشاء Ticket. لكل Ticket جلسة Executor ومجلد عمل، ويمكن أن ينتهي العمل بتقرير أو Pull Request. لوحة الويب تعرض التذاكر التي تحتاج تدخلًا بشريًا. يصف README المشروع بأنه research prototype وأن النسخة المنشورة لا تطابق التنفيذ الداخلي أو جميع التصاميم الواردة في الورقة. ليس منتجًا رسميًا من DeepSeek.",
+  "requirements": "Node.js 22.19+ أو 24+، pnpm 11.7.0، Git 2.32+، Python 3.8+، tmux، GitHub CLI 2.48+، وDeepSeek Harness بإصدار يطابق engines.dsh في package.json. يلزم مستودع GitHub وحساب وكيل منفصل وصلاحية مناسبة، ومزود نموذج مهيأ داخل Harness. Feishu اختياري ويحتاج bot وlark-cli. لا يحدد المشروع سعرًا ثابتًا؛ تكلفة النموذج تتبع المزود والاستخدام.",
+  "quickStart": "المسار الموثق يبدأ بقراءة SETUP.md وdocs/000-philosophy.md، ثم فحص الإصدارات والحسابات قبل التنفيذ. يتبع ذلك تثبيت DeepSeek Harness، تثبيت الاعتماديات وبناء الحزمة، ثم إعداد ملف تعريف مستقل وحساب وكيل مخصص وقائمة سماح محدودة. ينبغي أن يكون أول اختبار على مستودع تجريبي غير حساس، مع إبقاء الدمج يدويًا. لا تُدخل أسرارًا في المحادثة أو ملفات المستودع.",
+  "limitations": "README يصفه صراحة بأنه نموذج بحثي غير جاهز للإنتاج وليس منتجًا رسميًا من DeepSeek. يذكر دليل النشر أن worker وrouter يستخدمان danger-full-access كمستخدم النظام ويمكن للعامل قراءة مجلد المنزل؛ حظر أسماء أوامر لا يشكل حدًا أمنيًا لأن البرنامج قد يُستدعى بمسار مطلق. يعتمد على مزود نموذج خارجي أو محلي يهيئه المستخدم، ولا يفرض حد فوترة أو ميزانية رموز داخل المكتبة. لم يُشغّل المشروع في هذه الدورة.",
+  "nextSteps": [
+    "مراجعة SETUP.md والوثائق المرقمة قبل أي تجربة.",
+    "قصر التجربة على مستودع اختباري وحساب وكيل منفصل.",
+    "تقييم العزل والصلاحيات على نظام تشغيل منفصل قبل التفكير في أي استخدام حقيقي.",
+    "عدم تفعيل الدمج التلقائي، والإبقاء على موافقة بشرية لكل PR."
+  ],
+  "reviewedAt": "2026-11-05T05:45:06+03:00",
+  "basis": "readme",
+  "sources": [
+    {
+      "title": "Official repository README",
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype"
+    },
+    {
+      "title": "SETUP guide",
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/SETUP.md"
+    },
+    {
+      "title": "Authorization model",
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/002-authorization.md"
+    },
+    {
+      "title": "Execution model",
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/003-execution.md"
+    },
+    {
+      "title": "Deployment and prerequisites",
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/006-deployment.md"
+    },
+    {
+      "title": "Package requirements",
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/package.json"
+    },
+    {
+      "title": "MIT license",
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/LICENSE"
+    }
+  ],
+  "improvements": [
+    {
+      "title": "عزل نظام التشغيل لكل تذكرة",
+      "problem": "يوضح التوثيق أن العمال يعملون بصلاحية danger-full-access كمستخدم النظام نفسه ويمكنهم قراءة مجلد المنزل؛ قوائم الأوامر المحظورة ليست حدًا أمنيًا.",
+      "approach": "إضافة مشغّل اختياري لكل تذكرة داخل حاوية أو VM مؤقتة، بمجلد عمل محدود وشبكة افتراضية مغلقة افتراضيًا.",
+      "stack": "Podman أو Docker، seccomp/AppArmor، Node.js worker adapter، سجل تدقيق JSONL",
+      "steps": [
+        "تحديد نموذج تهديد يوضح الملفات والمقابس والوجهات المحظورة.",
+        "إنشاء واجهة runner قابلة للتبديل بين المضيف والحاوية.",
+        "تركيب worktree الخاص بالتذكرة فقط دون مجلد المنزل أو مفاتيح المستخدم.",
+        "تقييد الشبكة الصادرة والموارد والمدة الافتراضية.",
+        "اختبار حالات السماح والمنع على مستودع تجريبي غير حساس.",
+        "إظهار نوع العزل وحدوده بوضوح في لوحة التذكرة."
+      ],
+      "metric": "عدد اختبارات الوصول خارج worktree التي تُمنع بنجاح؛ الهدف صفر وصول غير مصرح به.",
+      "difficulty": "مرتفع — تقدير 2–4 أسابيع.",
+      "risks": "قد تختلف الحماية بين أنظمة التشغيل؛ الحاويات ليست ضمانًا ضد كل أشكال الهروب.",
+      "sources": [
+        {
+          "title": "Deployment and prerequisites",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/006-deployment.md"
+        },
+        {
+          "title": "Execution model",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/003-execution.md"
+        }
+      ]
+    },
+    {
+      "title": "ميزانية استخدام وتكلفة لكل تذكرة",
+      "problem": "يعتمد المشروع على مزود النموذج المهيأ في DeepSeek Harness ولا يفرض حدًا محاسبيًا للفوترة أو الرموز داخل المكتبة.",
+      "approach": "إضافة حدود اختيارية للوقت والطلبات والرموز المقدرة لكل Ticket مع تنبيه وموافقة بشرية قبل تجاوز السقف.",
+      "stack": "TypeScript، provider usage adapters، SQLite، JSONL metrics، لوحة الإعدادات",
+      "steps": [
+        "حصر بيانات الاستخدام التي يتيحها كل مزود دون افتراض دعم موحد.",
+        "تعريف ميزانية مستقلة لكل Ticket وميزانية يومية للمستودع.",
+        "إظهار تقدير غير مؤكد قبل التنفيذ ثم الاستهلاك الفعلي عند توفره.",
+        "إيقاف العمل أو طلب موافقة عند بلوغ حد مضبوط.",
+        "تسجيل سبب الإيقاف والتكلفة المقدرة في تقرير التذكرة."
+      ],
+      "metric": "نسبة التذاكر التي تتجاوز الميزانية دون موافقة؛ الهدف صفر.",
+      "difficulty": "متوسط إلى مرتفع — تقدير 1–2 أسبوع.",
+      "risks": "بعض المزودين لا يعيدون بيانات تكلفة دقيقة؛ التقديرات قد تختلف عن الفاتورة.",
+      "sources": [
+        {
+          "title": "Official repository README",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype"
+        },
+        {
+          "title": "Package requirements",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/package.json"
+        }
+      ]
+    },
+    {
+      "title": "سجل قابل للتدقيق لقرارات السياسة وأفعال الوكيل",
+      "problem": "تتوزع قرارات القبول والاشتراكات وأحداث التنفيذ والتسليم على عدة أجزاء، ما يصعّب مراجعة سبب كل إجراء بعد انتهاء التذكرة.",
+      "approach": "تجميع أحداث موحدة وموقعة محليًا تربط قرار السياسة بالمصدر والتذكرة والأدوات والملفات وطلب الدمج.",
+      "stack": "SQLite، JSONL، TypeScript، hashes، واجهة Timeline",
+      "steps": [
+        "تحديد مخطط أحداث ثابت مع إخفاء الأسرار.",
+        "تسجيل نتيجة Eval والقاعدة التي سمحت أو رفضت الطلب.",
+        "ربط كل تنفيذ بأوامره ومخرجاته وملفات التغيير دون تخزين مفاتيح.",
+        "إضافة تصدير تقرير لكل Ticket مع معرفات PR وCI.",
+        "اختبار اكتمال السجل عند فشل الشبكة وإعادة التشغيل."
+      ],
+      "metric": "نسبة التذاكر التي يمكن إعادة بناء تسلسل قراراتها من السجل؛ الهدف 100%.",
+      "difficulty": "متوسط — تقدير 1–2 أسبوع.",
+      "risks": "السجل قد يكشف بيانات مستودع حساسة؛ يلزم تنقيح وصلاحيات احتفاظ.",
+      "sources": [
+        {
+          "title": "Authorization model",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/002-authorization.md"
+        },
+        {
+          "title": "Execution model",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/003-execution.md"
+        },
+        {
+          "title": "Deployment and prerequisites",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/006-deployment.md"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "مساعد فرز GitHub للقراءة فقط",
+      "problem": "تحتاج الفرق الصغيرة إلى تلخيص Issues وتصنيفها دون منح وكيل صلاحية تعديل المستودع.",
+      "approach": "خدمة محلية تقرأ Issues وPRs المسموح بها وتنتج ملخصات واقتراح labels دون كتابة أو تنفيذ أوامر.",
+      "stack": "TypeScript، GitHub CLI read-only، SQLite، واجهة ويب محلية",
+      "steps": [
+        "تحديد صلاحيات قراءة فقط لمستودع تجريبي.",
+        "جمع Issues وPRs المسموح بها مع روابطها.",
+        "تلخيص المشكلة والمعلومات الناقصة مع مصادر داخل GitHub.",
+        "اقتراح labels دون تطبيقها تلقائيًا.",
+        "قياس دقة التصنيف بمراجعة بشرية لعينة."
+      ],
+      "metric": "دقة التصنيف ونسبة الاقتراحات المقبولة بعد مراجعة بشرية.",
+      "difficulty": "متوسط — تقدير 5–7 أيام.",
+      "risks": "قد يخطئ التلخيص في فهم السياق أو يكرر بيانات خاصة.",
+      "sources": [
+        {
+          "title": "Official repository README",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype"
+        },
+        {
+          "title": "Authorization model",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/002-authorization.md"
+        }
+      ]
+    },
+    {
+      "title": "مختبر مراجعة PRs داخل مستودع تجريبي معزول",
+      "problem": "يريد المطورون تقييم وكلاء البرمجة دون تعريض مستودعاتهم الفعلية أو حساباتهم الشخصية للخطر.",
+      "approach": "بيئة تعليمية بمستودعات وهمية ومهام محددة، تعرض التغييرات والاختبارات قبل أي دمج بشري.",
+      "stack": "GitHub sandbox repository، Node.js، containers، CI test fixtures",
+      "steps": [
+        "إنشاء مستودع تجريبي بمهام صغيرة وبيانات اصطناعية.",
+        "تعريف حساب وكيل محدود الصلاحيات.",
+        "تشغيل تذكرة واحدة مع منع الوصول إلى المستودعات الأخرى.",
+        "مراجعة diff والاختبارات وسجل الأفعال يدويًا.",
+        "مقارنة جودة PRs بين مهام ثابتة."
+      ],
+      "metric": "نسبة التغييرات الصحيحة التي تجتاز الاختبارات دون تجاوز نطاق المستودع.",
+      "difficulty": "متوسط — تقدير أسبوع.",
+      "risks": "نتائج المختبر لا تثبت سلامة الوكيل على مستودع إنتاجي.",
+      "sources": [
+        {
+          "title": "Execution model",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/003-execution.md"
+        },
+        {
+          "title": "Deployment and prerequisites",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/006-deployment.md"
+        }
+      ]
+    }
+  ],
+  "religious": 0,
+  "alternatives": "بدائل جزئية لدراسة وكلاء البرمجة تشمل OpenHands وSWE-agent؛ ليست بدائل مطابقة لأن بنية التفويض والصلاحيات وتكامل DeepSeek Harness مختلفة.",
+  "deploymentModes": {
+    "local": "التنفيذ المحلي على جهاز أو VM يشغّل DeepSeek Harness وtmux وGitHub CLI؛ يوصى بحساب نظام مستقل وبيئة معزولة.",
+    "cloud": "لا يقدم المشروع خدمة مستضافة جاهزة. قد يكون مزود النموذج سحابيًا بحسب إعداد Harness، كما يتصل GitHub وFeishu خارجيًا. لا توجد أسعار موحدة موثقة داخل المستودع."
+  },
+  "researchOnly": true,
+  "published": false,
+  "relatedIncomingId": null,
+  "feedId": null,
+  "displayRequirements": [
+    "اعرضه في المكتبة بوسم «بحث فقط — غير منشور»؛ لا تنشئ feed ID ولا زر تشغيل.",
+    "أظهر تحذير README: نموذج بحثي مرجعي وليس منتجًا رسميًا أو جاهزًا للإنتاج.",
+    "أبرز متطلبات Node/pnpm/Git/Python/tmux/GitHub CLI واشتراط حساب وكيل منفصل.",
+    "اعرض تحذير danger-full-access وإمكانية قراءة مجلد المنزل وعدم وجود حد فوترة داخلي.",
+    "لا تعرض شارة اختبار؛ لم ينفذ أي تشغيل أو اختبار في هذه المراجعة."
+  ],
+  "metricSnapshot": {
+    "repository": "deepseek-ai/dsh-superagent-prototype",
+    "stars": 18698,
+    "forks": 2095,
+    "openIssues": 0,
+    "archived": false,
+    "disabled": false,
+    "licenseApiValue": "MIT License",
+    "licenseFile": "MIT",
+    "pushedAt": "2026-11-03T09:29:14Z",
+    "updatedAt": "2026-11-05T02:56:46Z",
+    "defaultBranch": "main",
+    "language": "TypeScript",
+    "measuredAt": "2026-11-05T02:45:06Z",
+    "source": "GitHub REST API",
+    "timestampAnomalies": [
+      "updatedAt 2026-11-05T02:56:46Z لاحق لوقت القياس 02:45:06Z؛ لا يستخدم دليلًا على النشاط وقت القياس."
+    ]
+  },
+  "runtimeValidation": {
+    "status": "not_run",
+    "testEvidence": null,
+    "note": "تمت قراءة README وSETUP والوثائق وLICENSE وpackage.json فقط؛ لم تُنفذ أوامر تثبيت أو تشغيل أو اختبارات."
+  }
+}

@@ -1,0 +1,387 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-05T12:00:45.409+03:00",
+  "mainReference": "fd6fce75b4f8f277ca69f9558f2d525db197ea0d",
+  "feedGeneratedAt": "2026-11-05T06:42:16+00:00",
+  "status": "hold_only_not_imported",
+  "policy": "Exact ID and URL matching only. No title-based identity substitution. No feed.json or seen.json edits by the editorial merge.",
+  "counts": {
+    "mainIncomingFiles": 65,
+    "mainIncomingOccurrences": 606,
+    "mainIncomingUniqueIds": 602,
+    "mainIncomingDuplicateOccurrences": 4,
+    "mainIncomingImportedUnique": 595,
+    "mainIncomingSeenOnly": 7,
+    "mainIncomingIdUrlMismatches": 0,
+    "prIncomingFiles": 10,
+    "prIncomingOccurrences": 103,
+    "prIncomingUniqueIds": 102,
+    "prIncomingDuplicateOccurrences": 1,
+    "prIncomingActiveUnique": 73,
+    "prIncomingExpired": 29,
+    "prIncomingIdUrlMismatches": 0
+  },
+  "expiredRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "title": "NVIDIA OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+      "group": "main",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "title": "Canva Craft",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "group": "main",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "title": "1Password agent sign-in",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "group": "main",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "87d27a9f8a0972f507",
+      "title": "Binance security incident coverage",
+      "url": "https://www.theverge.com/tech/1023021/binance-hack-billions-biggest-crypto-heist",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-31-1811.json",
+      "group": "main",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "65eeab64fed21e0b54",
+      "title": "GM driver-data privacy settlement",
+      "url": "https://www.engadget.com/2301934/general-motors-220-million-settle-multi-state-data-privacy-lawsuit/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-31-1811.json",
+      "group": "main",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "d674dea922625d0be8",
+      "title": "CNIL/Fnac tracking fine",
+      "url": "https://noyb.eu/en/noyb-win-french-electronics-retailer-fnac-darty-fined-eu7-million",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-02-1446.json",
+      "group": "main",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "967be99077d13f07b2",
+      "title": "JavaScript framework agent-cost experiment",
+      "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-02-1446.json",
+      "group": "main",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "32b3bf2b225f3d4c44",
+      "title": "MIT weight-space programming experiment",
+      "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "group": "pr",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "5010fb296f767bbc9b",
+      "title": "Egoless mathematics in the AI era",
+      "url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "group": "pr",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "327e862bb29c2bb4f7",
+      "title": "LongCat-2.5",
+      "url": "https://longcat.ai/blog/longcat-2.5/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "group": "pr",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "dc7eb9e8885fba4465",
+      "title": "Hidden-behavior risk in agent pretraining",
+      "url": "https://arxiv.org/abs/2610.37741",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "group": "pr",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "56a1a96015a9777801",
+      "title": "Polyend Tracker update",
+      "url": "https://polyend.com/whats-up/tracker-the-biggest-update-yet/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "group": "pr",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "841e05fd699259e83c",
+      "title": "SLAC altermagnetism result",
+      "url": "https://www6.slac.stanford.edu/news/2026-10-29-slac-researchers-find-proof-altermagnetism-new-magnetic-phase",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "group": "pr",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "cb87f0ba6d1c74466f",
+      "title": "Docker agent workspace package",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxObHNVY2RGNWxZajhMalAxVDRBVXVZRF95ZEV6eUM3QTlOMkl3bGpZUlNSaVZZUmxqcVAtVDVpRThIXzc4eExtcmdEdDlZYWt1SXR3bHN0aC1qR0JURUxtTVQxb3JGRDNOSkRCZXhna1cxMC1aeFRPekZaTWNJZVJoNHlWOA?oc=5",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "group": "pr",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "5b9f2f37879a136ac2",
+      "title": "Cyber incident affecting European retail cooling systems",
+      "url": "https://www.bbc.co.uk/news/articles/ckpqg8lve73go?at_medium=RSS&at_campaign=rss",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "group": "pr",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "03ad66ba1fba612587",
+      "title": "Apple earnings and AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1025245/apple-earnings-q4-ai",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "group": "pr",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "e2d2bf508ced1caa08",
+      "title": "OpenAI compute campuses",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1025242/openai-quietly-renames-data-centers-as-compute-campuses",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "group": "pr",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "3e8a8aa6133203ad02",
+      "title": "Momentic Mo testing agent",
+      "url": "https://momentic.ai/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "group": "pr",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "834f867a452076917a",
+      "title": "NVIDIA Auto Ontology",
+      "url": "https://github.com/NVIDIA/auto-ontology",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "group": "pr",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "6b6c7100781c3e9dc6",
+      "title": "Binance fake recruitment warning",
+      "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "group": "pr",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "5f4b9fdfeb2042b971",
+      "title": "Google Android TV botnet takedown",
+      "url": "https://www.theverge.com/1024807/google-botnet-android-tv-shut-down",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2136.json",
+      "group": "pr",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "2451814cc9423add84",
+      "title": "NASA Swift reentry forecast",
+      "url": "https://www.theverge.com/science/1025227/nasa-swift-observatory-falling-to-earth",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2136.json",
+      "group": "pr",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "f6417c66c0228f42d3",
+      "title": "Meta Quest feature update end date",
+      "url": "https://www.theverge.com/tech/1024835/meta-vr-quest-2-pro-os-end-updates",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2136.json",
+      "group": "pr",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "002b7cee771ca9e347",
+      "title": "Windows 11 memory improvements",
+      "url": "https://www.theverge.com/news/1025142/windows-11-8gb-ram-memory-improvements-speed-performance",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2136.json",
+      "group": "pr",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "1263ce4e09302da828",
+      "title": "Oracle AI infrastructure financing",
+      "url": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2342.json",
+      "group": "pr",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "210b26f029f33a3ef7",
+      "title": "Postman agent extension rollback",
+      "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "group": "pr",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "35eaf0d06c77e9ddf3",
+      "title": "Google Search school AI restrictions",
+      "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "group": "pr",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "b5cba0d011349b3bc5",
+      "title": "Qwen weight interpretation experiment",
+      "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "group": "pr",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "519582846479e28ed3",
+      "title": "Stringman cable robot",
+      "url": "https://neufangled.com/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "group": "pr",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "01b1e45f222dec5edc",
+      "title": "Linear algebra and generative AI primer",
+      "url": "https://arxiv.org/abs/2605.29713",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "group": "pr",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "ae61902e2afada6e8c",
+      "title": "Research engineer's multi-agent workflow",
+      "url": "https://ben.stolovitz.com/posts/how-use-ai-oct-2026/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "group": "pr",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "f1213d42ab134c3258",
+      "title": "Finic Kairos",
+      "url": "https://github.com/finic-ai/kairos",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "group": "pr",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "e3bc71be0e917360f6",
+      "title": "Tiny BASIC for Arduino",
+      "url": "https://dilshan.github.io/tiny-basic/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "group": "pr",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "fb02c93fd281f7df67",
+      "title": "Quili.AI volunteer campaign",
+      "url": "https://www.quili.ai/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "group": "pr",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "cf03bdbe3edb09ea56",
+      "title": "Open Athena post-training data commons",
+      "url": "https://openathena.ai/blog/there-is-no-posttraining-data-commons/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "group": "pr",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    },
+    {
+      "id": "954fbd2e34ab1eb99f",
+      "title": "Muvon Octomind",
+      "url": "https://github.com/Muvon/octomind",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-04-1222.json",
+      "group": "pr",
+      "reason": "seen_only_not_in_current_feed_or_editorial",
+      "action": "Do not import. Reconsider only if the exact original ID and URL reappear together in a future feed."
+    }
+  ],
+  "staleEditorialAdditions": [
+    {
+      "id": "01b1e45f222dec5edc",
+      "url": "https://arxiv.org/abs/2605.29713",
+      "titleAr": "كتاب تمهيدي رياضي على arXiv يربط الجبر الخطي بطرق الذكاء الاصطناعي التوليدي",
+      "reason": "Included in the old PR editorial but absent from the current main feed; removed from the new merge."
+    },
+    {
+      "id": "f1213d42ab134c3258",
+      "url": "https://github.com/finic-ai/kairos",
+      "titleAr": "Kairos ينشر منصة مفتوحة لاتخاذ قرارات مخاطر الاحتيال مع تجارب نماذج يقودها الوكلاء",
+      "reason": "Included in the old PR editorial but absent from the current main feed; removed from the new merge."
+    }
+  ],
+  "exactChecks": {
+    "nvidiaOpenShell": {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "inSeen": true
+    },
+    "canvaCraft": {
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "inSeen": true
+    },
+    "onePasswordAgentSignIn": {
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "inSeen": true
+    }
+  }
+}

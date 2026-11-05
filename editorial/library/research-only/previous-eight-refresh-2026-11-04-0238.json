@@ -1,0 +1,182 @@
+{
+  "version": 1,
+  "kind": "github_repository_metadata_refresh",
+  "title": "تحديث قياسات المشاريع الثمانية السابقة — 4 نوفمبر 2026",
+  "publicationStatus": "unpublished_research_only",
+  "published": false,
+  "siteVisible": false,
+  "runAt": "2026-11-04T02:38:40+03:00",
+  "measurementAt": "2026-11-03T23:38:40Z",
+  "measurementSource": "GitHub repository metadata via official repository pages; snapshot, not quality ranking.",
+  "methodology": {
+    "starsForksOpenIssues": "قيم تراكمية وقت القياس؛ open_issues_count قد يشمل pull requests، ولا تمثل جودة المشروع.",
+    "activitySignal": "pushedAt إشارة النشاط الأساسية؛ لا يعتمد updatedAt منفردًا.",
+    "timestampAnomalies": "أي timestamp لاحق لوقت القياس عُلّم كشذوذ ولم يستخدم كدليل نشاط.",
+    "license": "SPDX من GitHub؛ لا يغني عن مراجعة كل ملف ترخيص أو تراخيص المكونات الفرعية."
+  },
+  "libraryState": {
+    "catalogEntriesBefore": 43,
+    "catalogEntriesAfter": 44,
+    "archived": 2,
+    "nonArchived": 42,
+    "licenseNeedsUpstreamVerification": 7,
+    "previousEightReviewed": 8,
+    "previousEightActive": 8,
+    "previousEightArchived": 0,
+    "previousEightInCurrentFeed": 1,
+    "previousEightResearchOnly": 7,
+    "testEvidenceCount": 0,
+    "newHistoricalCatalogEntries": 1
+  },
+  "projects": [
+    {
+      "repository": "patchy631/ai-engineering-hub",
+      "priority": 1,
+      "status": "active_not_archived",
+      "archived": false,
+      "license": "MIT",
+      "metrics": {
+        "stars": 41061,
+        "forks": 6557,
+        "openIssues": 136,
+        "pushedAt": "2026-11-01T04:39:16Z",
+        "updatedAt": "2026-11-03T22:39:00Z"
+      },
+      "publicationStatus": "published_existing_card",
+      "feedId": "fe0e6bfdbdd5822139",
+      "url": "https://github.com/patchy631/ai-engineering-hub"
+    },
+    {
+      "repository": "googleapis/python-genai",
+      "priority": 2,
+      "status": "active_not_archived",
+      "archived": false,
+      "license": "Apache-2.0",
+      "metrics": {
+        "stars": 4054,
+        "forks": 1056,
+        "openIssues": 370,
+        "pushedAt": "2026-11-03T23:05:38Z",
+        "updatedAt": "2026-11-03T15:20:26Z"
+      },
+      "timestampAnomaly": "pushedAt لاحق لـ updatedAt؛ احتفظ بالقيمتين.",
+      "publicationStatus": "research_only_not_in_feed",
+      "url": "https://github.com/googleapis/python-genai"
+    },
+    {
+      "repository": "Millillion/lasm",
+      "priority": 3,
+      "status": "active_not_archived_timestamp_unverified",
+      "archived": false,
+      "license": "MIT",
+      "metrics": {
+        "stars": 93,
+        "forks": 6,
+        "openIssues": 9,
+        "pushedAt": "2026-11-03T23:42:05Z",
+        "updatedAt": "2026-11-03T23:41:54Z"
+      },
+      "timestampAnomaly": "القيمتان لاحقتان لوقت القياس؛ لا يستدل بهما على نشاط مؤكد.",
+      "publicationStatus": "research_only_not_in_feed",
+      "url": "https://github.com/Millillion/lasm"
+    },
+    {
+      "repository": "microsoft/markitdown",
+      "priority": 4,
+      "status": "active_not_archived",
+      "archived": false,
+      "license": "MIT",
+      "metrics": {
+        "stars": 193735,
+        "forks": 14541,
+        "openIssues": 797,
+        "pushedAt": "2026-10-28T15:33:14Z",
+        "updatedAt": "2026-11-03T23:20:34Z"
+      },
+      "publicationStatus": "research_only_not_in_feed",
+      "url": "https://github.com/microsoft/markitdown"
+    },
+    {
+      "repository": "yc-software/minecraft-agent-harness",
+      "priority": 5,
+      "status": "active_not_archived",
+      "archived": false,
+      "license": "MIT",
+      "metrics": {
+        "stars": 128,
+        "forks": 10,
+        "openIssues": 1,
+        "pushedAt": "2026-10-29T20:30:45Z",
+        "updatedAt": "2026-11-03T20:58:12Z"
+      },
+      "publicationStatus": "research_only_not_in_feed",
+      "url": "https://github.com/yc-software/minecraft-agent-harness"
+    },
+    {
+      "repository": "NVIDIA/OpenShell",
+      "priority": 6,
+      "status": "active_not_archived_timestamp_unverified",
+      "archived": false,
+      "license": "Apache-2.0",
+      "metrics": {
+        "stars": 21045,
+        "forks": 2059,
+        "openIssues": 609,
+        "pushedAt": "2026-11-03T23:40:00Z",
+        "updatedAt": "2026-11-03T23:14:33Z"
+      },
+      "timestampAnomaly": "pushedAt لاحق بدقيقتين لوقت القياس؛ لا يستخدم كدليل نشاط مؤكد.",
+      "publicationStatus": "research_only_not_in_feed",
+      "url": "https://github.com/NVIDIA/OpenShell"
+    },
+    {
+      "repository": "pydantic/pydantic-ai",
+      "priority": 7,
+      "status": "active_not_archived_timestamp_unverified",
+      "archived": false,
+      "license": "MIT",
+      "metrics": {
+        "stars": 21016,
+        "forks": 3093,
+        "openIssues": 1739,
+        "pushedAt": "2026-11-03T23:42:53Z",
+        "updatedAt": "2026-11-03T23:39:57Z"
+      },
+      "timestampAnomaly": "pushedAt وupdatedAt لاحقان لوقت القياس؛ لا يستخدمان كدليل نشاط مؤكد.",
+      "publicationStatus": "research_only_not_in_feed",
+      "url": "https://github.com/pydantic/pydantic-ai"
+    },
+    {
+      "repository": "astral-sh/uv",
+      "priority": 8,
+      "status": "active_not_archived",
+      "archived": false,
+      "license": "Apache-2.0",
+      "metrics": {
+        "stars": 91516,
+        "forks": 3744,
+        "openIssues": 3038,
+        "pushedAt": "2026-11-03T23:07:21Z",
+        "updatedAt": "2026-11-03T23:07:36Z"
+      },
+      "publicationStatus": "research_only_not_in_feed",
+      "url": "https://github.com/astral-sh/uv"
+    }
+  ],
+  "topThreeResearchPriorities": [
+    {
+      "repository": "patchy631/ai-engineering-hub",
+      "reason": "أولوية تعليمية؛ له بطاقة منشورة ويحتاج الحفاظ على تفاصيل التراخيص لكل مجلد."
+    },
+    {
+      "repository": "NVIDIA/OpenShell",
+      "reason": "أهمية بنية تشغيل الوكلاء؛ يبقى بحثًا فقط لأن feed لا يحتوي هوية مشروع مطابقة، مع تحذير WSL2 التجريبي."
+    },
+    {
+      "repository": "pydantic/pydantic-ai",
+      "reason": "إطار Python متعدد النماذج؛ يبقى بحثًا فقط دون اختراع feed ID، وطوابع النشاط تحتاج إعادة قياس."
+    }
+  ],
+  "testEvidenceCount": 0,
+  "note": "لم تُنفذ المشاريع أو اختبارات تشغيلها. المقاييس snapshots لا تعني نموًا يوميًا أو ترتيب جودة."
+}

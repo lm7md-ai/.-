@@ -1,0 +1,168 @@
+{
+  "version": 1,
+  "runAt": "2026-11-04T17:38:56+03:00",
+  "repository": "https://github.com/lm7md-ai/.-",
+  "mainCommit": "7c8dbef79c331cb9e848dbaacf893fa059cbc80e",
+  "sourceBlobs": {
+    "README.md": "b65d4ccb0b7e96f0072101addf05785992044c58",
+    "docs/CONTENT_GUIDE.md": "4056fc047fdedd1f34967935fd083165ba99841d",
+    "docs/SCHEDULED_EDITOR_PROMPT.md": "fe21144e4cb54b98f5e15828e0d9e7af14fdd902",
+    "scripts/editorial.py": "5996ca5c8eae1b25950c349336d4d0f48067fe8c",
+    "site/data/feed.json": "45b87bbc41638acd80ae4ea2dc16b3d5c8105408",
+    "site/data/editorial.json": "94f3046b68f8d3cbe259a5d55592c1a53019aaac",
+    "site/data/seen.json": "bce42c244602e2cb0d19590b2dbc9db3034f00f0",
+    "site/data/status.json": "af6a6bc631f60d5094f4a272b019f0821126608b"
+  },
+  "mainRefresh": {
+    "commit": "7c8dbef79c331cb9e848dbaacf893fa059cbc80e",
+    "committedAt": "2026-11-04T14:35:38Z",
+    "changedFiles": [
+      "site/data/feed.json",
+      "site/data/seen.json",
+      "site/data/status.json"
+    ],
+    "feedChanges": {
+      "additions": 3804,
+      "deletions": 3782
+    },
+    "seenChanges": {
+      "additions": 1,
+      "deletions": 1
+    },
+    "status": {
+      "lastAttemptAt": "2026-11-04T14:34:56+00:00",
+      "lastSuccessfulAt": "2026-11-04T14:34:56+00:00",
+      "state": "partial",
+      "collected": 324
+    },
+    "limitation": "GitHub Contents API returned an empty content field for the current feed blob (large file); exact active ID/URL membership cannot be re-read through the available connector. editorial.json is also too large for this fetch path."
+  },
+  "priorMainAudit": {
+    "report": "editorial/pending/recheck-2026-11-04-1222.json",
+    "snapshotAt": "2026-11-04T12:22:22+03:00",
+    "files": 65,
+    "rowAppearances": 606,
+    "uniqueIds": 602,
+    "exactImportedAppearances": 599,
+    "currentFeedExactUniqueIds": 171,
+    "historicalImportedOutsideFeed": 424,
+    "seenOnly": 7,
+    "duplicateAppearances": 4,
+    "idUrlMismatches": 0,
+    "activeExactNotImported": 0,
+    "needsCorrection": 0,
+    "confirmedExpired": 0,
+    "status": "historical baseline only; stale after main feed refresh at 14:34:56Z"
+  },
+  "pr80Incoming": {
+    "branch": "content/nabdh-2026-11-03-1138",
+    "files": 8,
+    "rowAppearances": 93,
+    "uniqueIds": 92,
+    "duplicateAppearances": 1,
+    "duplicateId": "c01265aacc1a10af6e",
+    "duplicateUrl": "https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features",
+    "structuralValidation": "equivalent JavaScript structural validation of all 8 JSON files; 0 errors",
+    "seenMembership": {
+      "present": 91,
+      "notPresent": 1,
+      "notPresentId": "c9a7e4fb7976ab0a77",
+      "notPresentRecord": "Neywa-Labs/mlx-audio project; seen.json records news IDs, so absence is expected for a project"
+    },
+    "lastKnownFeedAuditAt": "2026-11-04T12:22:22+03:00",
+    "lastKnownFeedClassification": {
+      "activeExact": 79,
+      "historicalPreserved": 2,
+      "seenOnlyPending": 11,
+      "idUrlMismatches": 0
+    },
+    "currentFeedClassification": "not reasserted: main feed changed after the last audit and the current large blob could not be read. Do not import until exact current id/url membership is verified."
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "seen": true,
+      "mainEditorial": false,
+      "currentFeedPresence": "unverified",
+      "decision": "hold; no remapping"
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "url": "https://www.canva.com/",
+      "seen": true,
+      "mainEditorial": false,
+      "currentFeedPresence": "unverified",
+      "decision": "hold; no remapping"
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "url": "https://1password.com/",
+      "seen": true,
+      "mainEditorial": false,
+      "currentFeedPresence": "unverified",
+      "decision": "hold; no remapping"
+    }
+  ],
+  "importDecision": "0 records imported this run. The current feed changed after the previous exact audit and its blob content was unavailable; importing from a stale snapshot would violate exact ID/URL verification.",
+  "commandsNotRunLocally": [
+    "python scripts/editorial.py validate",
+    "python scripts/editorial.py import",
+    "python -m unittest discover -s tests -v"
+  ],
+  "checks": {
+    "python scripts/editorial.py validate": "not run locally",
+    "python scripts/editorial.py import": "not run locally",
+    "python -m unittest discover -s tests -v": "not run locally",
+    "structuralEquivalent": "passed for all 8 PR80 incoming files; 0 errors",
+    "lastKnownPrCiRun": 41851380305,
+    "lastKnownPrCiConclusion": "success",
+    "testedCommit": "ca804be2dc0e138dbbedcc7ab9b11ca17bc9b375",
+    "testedRunNumber": 170,
+    "testedSteps": [
+      "python -m unittest discover -s tests -v: success",
+      "python scripts/editorial.py validate: success",
+      "node --check site/app.js && node --check site/ideas.js: success"
+    ],
+    "mainDeploymentRun": 41784265386,
+    "mainDeploymentConclusion": "success",
+    "mainDeploymentSteps": [
+      "Run offline tests: success",
+      "Validate editorial content: success",
+      "Check browser scripts: success",
+      "Refresh public feeds: success",
+      "Preserve history: success",
+      "Configure GitHub Pages: success",
+      "Upload static website: success",
+      "Deploy static website: success"
+    ],
+    "localCommandsStillNotRun": true
+  },
+  "workflowSafety": {
+    "prCheck": "check.yml runs unit tests, editorial validator, and JS syntax checks on pull_request.",
+    "mainWorkflow": "update-and-deploy.yml runs on push to main, schedule, and manual dispatch; after tests it executes scripts/update_feed.py, stages feed.json/seen.json/status.json, pushes any changes, then deploys Pages.",
+    "mergeDecision": "do not merge PR80 in this run because its push-to-main trigger can rewrite feed.json and seen.json, explicitly prohibited. PR78 and PR71 remain open and also modify editorial.json; do not modify them."
+  },
+  "pullRequest": {
+    "number": 80,
+    "state": "open",
+    "merged": false,
+    "mergeable": true,
+    "head": "content/nabdh-2026-11-03-1138",
+    "headSha": "ca804be2dc0e138dbbedcc7ab9b11ca17bc9b375",
+    "aheadBy": 45,
+    "behindBy": 3,
+    "changedFiles": 56,
+    "additions": 26097,
+    "deletions": 0,
+    "protectedPathsChanged": [],
+    "otherOpenPrs": [
+      78,
+      71
+    ],
+    "decision": "not merged: push-to-main workflow writes feed.json and seen.json, both explicitly protected"
+  }
+}

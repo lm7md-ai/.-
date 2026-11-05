@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-04T02:38:40+03:00",
+  "baseMainSha": "96afdfd9b08440c26a958021db08d3941b48911f",
+  "projectId": "c9a7e4fb7976ab0a77",
+  "url": "https://github.com/Neywa-Labs/mlx-audio",
+  "basis": "readme",
+  "filesRead": [
+    "README.md",
+    "docs/getting-started/installation.md",
+    "docs/getting-started/quickstart-cli.md",
+    "docs/getting-started/quickstart-python.md",
+    "docs/guides/web-ui-api-server.md",
+    "pyproject.toml",
+    "LICENSE"
+  ],
+  "findings": {
+    "license": "MIT للشيفرة الأصلية؛ تراخيص أوزان النماذج منفصلة ولم تراجع كلها.",
+    "requirements": "Python >=3.10؛ Apple Silicon Mac؛ MLX مثبت على 0.32.4؛ ffmpeg اختياري للصيغ غير WAV.",
+    "localCloud": "الاستدلال المحلي هو المسار الموثق؛ لا توجد خدمة سحابية مُدارة. الاستضافة البعيدة تحتاج Apple Silicon وإعدادًا أمنيًا مستقلًا.",
+    "alternatives": [
+      "https://github.com/ggml-org/whisper.cpp",
+      "https://github.com/SYSTRAN/faster-whisper",
+      "https://github.com/rhasspy/piper"
+    ],
+    "activitySnapshot": {
+      "stars": 8192,
+      "forks": 783,
+      "openIssuesCount": 101,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-11-03T20:21:58Z",
+      "updatedAt": "2026-11-03T20:27:21Z",
+      "measuredAt": "2026-11-04T02:38:40+03:00"
+    }
+  },
+  "limitations": "لم يشغّل الكود أو تُنزّل أوزان النماذج. لم تُقَس جودة العربية أو الذاكرة أو السرعة. لا تعمم تراخيص الشيفرة على أوزان النماذج."
+}

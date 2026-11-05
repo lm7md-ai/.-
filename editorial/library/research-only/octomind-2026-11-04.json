@@ -1,0 +1,295 @@
+{
+  "version": 1,
+  "runAt": "2026-11-04T12:22:22+03:00",
+  "repository": "Muvon/octomind",
+  "url": "https://github.com/Muvon/octomind",
+  "feedProjectId": null,
+  "feedNewsReferenceId": "954fbd2e34ab1eb99f",
+  "siteVisibility": "research-only / غير منشور كمشروع؛ يوجد رابط المستودع في feed كخبر لا كبطاقة project.",
+  "status": "active_non_archived",
+  "archived": false,
+  "defaultBranch": "master",
+  "language": "Rust",
+  "metrics": {
+    "repository": "Muvon/octomind",
+    "stars": 422,
+    "forks": 65,
+    "openIssues": 26,
+    "archived": false,
+    "disabled": false,
+    "license": "Apache-2.0",
+    "pushedAt": "2026-11-04T07:06:53Z",
+    "updatedAt": "2026-11-04T09:19:53Z",
+    "defaultBranch": "master",
+    "language": "Rust",
+    "measuredAt": "2026-11-04T09:11:09Z",
+    "source": "GitHub REST API"
+  },
+  "basis": "readme",
+  "overview": "إطار Rust لوكلاء البرمجة يجمع CLI تفاعليًا وstdin وdaemon وWebSocket وACP في ملف تنفيذي واحد. يربط النماذج بأدوات MCP وملفات AGENTS.md والمهارات، ويضع السياسات في TOML guardrails مع hooks وvalidators. يضيف نموذجًا مشرفًا للتخطيط والتحقق وضغط السياق وتعلمًا بين الجلسات. تمت مراجعة README والتوثيق والترخيص والاعتماديات؛ لم يُبنَ أو يُشغّل.",
+  "requirements": "تتوفر binaries لـLinux x86_64/ARM64 وmacOS Intel/Apple Silicon وWindows x86_64/ARM64. البناء من المصدر يتطلب Rust 1.95+ وprotoc حسب دليل البناء. يحتاج مزود نموذج: OctoHub/Cloud أو مفتاح مزود، ويمكن استخدام Ollama أو endpoint محلي. يجب ضبط main وsupervisor وcompression جميعًا للمسار المحلي. حل tap قد يحتاج الشبكة وقد يثبت اعتماديات عند أول تشغيل. sandbox يعتمد Landlock على Linux وSeatbelt على macOS؛ guardrails ليست عزلًا كاملًا. README يذكر telemetry مجهولًا مفعّلًا افتراضيًا في المثال ويمكن إيقافه.",
+  "quickStart": "راجع LICENSE وقيود النظام. ثبّت binary من GitHub Releases أو دليل التثبيت؛ لم أنفذ التثبيت. اختر نموذجًا محليًا أو مزودًا تملك وصولًا إليه؛ سعر Octomind Cloud لم أتحقق منه. لمسار محلي اضبط endpoint Ollama الصحيح والنماذج الثلاثة main/supervisor/compression. عطّل telemetry إذا تطلبت سياسة البيئة. ابدأ في مستودع تجريبي منفصل، واختبر guardrails وsandbox، ثم نفّذ مهمة قراءة قبل السماح بالتعديل. راجع diff والاختبارات يدويًا.",
+  "costModel": {
+    "license": "Apache-2.0 للمشروع؛ تراخيص الاعتماديات والأوزان منفصلة.",
+    "local": "لا توجد رسوم API عند استخدام نموذج محلي، لكن هناك استهلاك موارد وطاقة وتنزيل أوزان.",
+    "cloud": "OctoHub/Octomind Cloud أو مزود API قد يفرض رسومًا؛ السعر الحالي غير متحقق. ميزانيات الطلب والجلسة ليست سقفًا لفاتورة المزود.",
+    "noPaidServicesUsed": true
+  },
+  "alternatives": [
+    {
+      "name": "OpenCode",
+      "url": "https://github.com/anomalyco/opencode",
+      "note": "مقارن مباشر في benchmark المؤلفين."
+    },
+    {
+      "name": "Aider",
+      "url": "https://github.com/Aider-AI/aider",
+      "note": "بديل مفتوح لوكلاء البرمجة في الطرفية."
+    }
+  ],
+  "benchmark": {
+    "claim": "README يذكر 24/25 لـOctomind مقابل 19/25 لـOpenCode على 25 مهمة من PRs مدمجة.",
+    "date": "2026-07-30",
+    "authorPublished": true,
+    "independentReplication": false,
+    "limitation": "عينة صغيرة ومختارة لا تمثل جميع المستودعات والنماذج."
+  },
+  "improvements": [
+    {
+      "title": "فحص حدود العزل قبل السماح للوكيل بالكتابة",
+      "problem": "guardrails ليست عزلًا كاملًا، ودعم sandbox يختلف حسب نظام التشغيل.",
+      "approach": "فحص preflight يعلن آلية العزل ويجرب كتابة آمنة خارج workspace في مجلد مؤقت.",
+      "stack": "Rust + Landlock + Seatbelt + TOML + integration tests",
+      "steps": [
+        "حصر المنصات المدعومة.",
+        "إضافة فحص preflight.",
+        "تنفيذ اختبار كتابة آمن في مجلد مؤقت.",
+        "إظهار النتيجة والقيود.",
+        "منع وصف التشغيل بأنه معزول عند فشل الاختبار."
+      ],
+      "metric": "نسبة محاولات الكتابة خارج workspace التي تُمنع لكل منصة.",
+      "difficulty": "مرتفع، 1–2 أسبوع تقديرًا",
+      "risks": "اختلاف أنظمة التشغيل قد ينتج نتائج كاذبة؛ الاختبار ليس ضمانًا أمنيًا كاملًا.",
+      "sources": [
+        {
+          "title": "Guardrails guide",
+          "url": "https://github.com/Muvon/octomind/blob/master/doc/usage/18-guardrails.md"
+        },
+        {
+          "title": "Sandbox use case",
+          "url": "https://github.com/Muvon/octomind/blob/master/doc/use-cases/10-safe-agent-sandbox-and-guardrails.md"
+        }
+      ]
+    },
+    {
+      "title": "خريطة لتدفق البيانات والقياس عن بُعد",
+      "problem": "قد تبقى أدوار المشرف والضغط على مزود سحابي حتى بعد ضبط النموذج الرئيسي محليًا.",
+      "approach": "تقرير محلي منقح يعرض مزود كل دور ونقطة النهاية وحالة telemetry دون كشف المفاتيح.",
+      "stack": "Rust + TOML parser + redacted JSON + TypeScript",
+      "steps": [
+        "قراءة الإعدادات دون أسرار.",
+        "تمييز endpoints المحلية والسحابية.",
+        "عرض حالة telemetry.",
+        "تحذير عند اختلاف مزود supervisor/compression.",
+        "تصدير تقرير منقح."
+      ],
+      "metric": "حالات المزود غير المقصود المكتشفة قبل الجلسة.",
+      "difficulty": "متوسط، 5–8 أيام تقديرًا",
+      "risks": "تقارير التشخيص قد تكشف مسارات أو بيانات حساسة إن لم تنقح.",
+      "sources": [
+        {
+          "title": "Providers and local models",
+          "url": "https://github.com/Muvon/octomind/blob/master/doc/usage/04-providers.md"
+        },
+        {
+          "title": "Environment variables and telemetry",
+          "url": "https://github.com/Muvon/octomind/blob/master/doc/reference/04-environment-variables.md"
+        }
+      ]
+    },
+    {
+      "title": "Benchmark مستقل قابل لإعادة الإنتاج",
+      "problem": "نتائج 25 مهمة منشورة من المؤلفين لا تكفي لتعميم الأداء.",
+      "approach": "حزمة مهام مرخصة وإصدارات مثبتة واختبارات held-out تسجل التكلفة والزمن والتغييرات الجانبية.",
+      "stack": "Python + JSONL + Git worktrees + pytest + SQLite",
+      "steps": [
+        "اختيار مهام عامة مرخصة.",
+        "تثبيت الإصدارات والنماذج.",
+        "تشغيل كل حالة بتكرارات مضبوطة.",
+        "فحص الاختبارات والتغييرات الجانبية.",
+        "حساب التكلفة والزمن.",
+        "نشر ملفات النتائج وطريقة الإعادة."
+      ],
+      "metric": "إمكانية إعادة الإنتاج وتباين النجاح والتكلفة.",
+      "difficulty": "مرتفع، 2–3 أسابيع تقديرًا",
+      "risks": "تكلفة النماذج وتغير APIs والتحيز في اختيار المهام.",
+      "sources": [
+        {
+          "title": "Octomind benchmark",
+          "url": "https://github.com/Muvon/octomind#benchmarks"
+        },
+        {
+          "title": "Octobench",
+          "url": "https://github.com/Muvon/octobench"
+        }
+      ]
+    },
+    {
+      "title": "تقرير ميزانية لكل طلب وجلسة",
+      "problem": "تتوزع التكلفة بين النموذج الرئيسي والمشرف والضغط؛ الحدود ليست سقف فاتورة المزود.",
+      "approach": "تقرير يربط كل استدعاء بدور النموذج ويقارن التكلفة المتراكمة بالحدود مع توضيح أنها تقديرات.",
+      "stack": "Rust + provider usage metadata + JSONL + Python",
+      "steps": [
+        "جمع بيانات الاستخدام لكل دور.",
+        "تمييز التكلفة المقاسة عن المقدرة.",
+        "إضافة تنبيه قبل تجاوز الحدود.",
+        "تصدير تقرير منقح.",
+        "اختبار غياب بيانات التسعير."
+      ],
+      "metric": "نسبة الجلسات ذات توزيع تكلفة واضح.",
+      "difficulty": "متوسط، 1–2 أسبوع تقديرًا",
+      "risks": "اختلاف الأسعار وبيانات cache قد يجعل التقدير غير مطابق للفواتير.",
+      "sources": [
+        {
+          "title": "Predictable spend use case",
+          "url": "https://github.com/Muvon/octomind/blob/master/doc/use-cases/11-keep-ai-spend-predictable.md"
+        },
+        {
+          "title": "Token efficiency",
+          "url": "https://github.com/Muvon/octomind/blob/master/doc/usage/16-token-efficiency.md"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "سجل عربي قابل للمراجعة لتنفيذ الوكيل",
+      "problem": "يصعب تتبع الأوامر والتغييرات والاختبارات عبر الجلسات.",
+      "approach": "واجهة محلية تربط سجل الأدوات وgit diff ونتائج الاختبارات دون رفع المشروع.",
+      "stack": "Rust JSONL + Python + SQLite + RTL UI",
+      "steps": [
+        "تعريف سجل منقح.",
+        "تسجيل الأدوات وحالة الخروج.",
+        "ربط كل تعديل بـdiff.",
+        "إضافة نتائج الاختبارات.",
+        "عرض التسلسل بالعربية."
+      ],
+      "metric": "نسبة تغييرات الوكيل المرتبطة بطلب واختبار ومراجعة.",
+      "difficulty": "متوسط، 1–2 أسبوع",
+      "risks": "قد تتضمن السجلات مسارات أو مقتطفات حساسة.",
+      "sources": [
+        {
+          "title": "Octomind CLI docs",
+          "url": "https://github.com/Muvon/octomind/blob/master/doc/reference/01-cli-reference.md"
+        }
+      ]
+    },
+    {
+      "title": "مساعد محلي لفهم مستودعات Python",
+      "problem": "يريد المتعلم شرحًا لبنية مشروع دون رفع الشيفرة إلى خدمة سحابية.",
+      "approach": "دور read-only يقرأ ملفات محددة ويستخدم Ollama محليًا مع مراجع للملفات.",
+      "stack": "Python + Ollama + local endpoint + Octomind role",
+      "steps": [
+        "تحديد مجلدات القراءة.",
+        "ضبط main/supervisor/compression محليًا.",
+        "تعطيل telemetry حسب السياسة.",
+        "إنشاء دور read-only.",
+        "اختبار على مشروع تدريبي.",
+        "مراجعة المراجع يدويًا."
+      ],
+      "metric": "دقة الإشارات للملفات والأسطر وصفر تعديلات غير مطلوبة.",
+      "difficulty": "متوسط، أسبوع تقديرًا",
+      "risks": "قد يهلوس النموذج المحلي أو يفوّت اعتماديات.",
+      "sources": [
+        {
+          "title": "Private code with local models",
+          "url": "https://github.com/Muvon/octomind/blob/master/doc/use-cases/18-private-code-with-local-models.md"
+        },
+        {
+          "title": "Ollama",
+          "url": "https://ollama.com/"
+        }
+      ]
+    },
+    {
+      "title": "مقارن محايد لأطر وكلاء البرمجة",
+      "problem": "تختلف الأطر في الصلاحيات والتكلفة ولا تكفي عروض التسويق للمقارنة.",
+      "approach": "مهام ثابتة تقارن Octomind وOpenCode وAider على مستودعات موحدة.",
+      "stack": "Python + Git worktrees + pytest + SQLite",
+      "steps": [
+        "اختيار مهام مرخصة.",
+        "تثبيت commits.",
+        "توحيد النموذج وحدود الرموز.",
+        "تشغيل المهام في worktrees منفصلة.",
+        "تقييم diff والاختبارات والتكلفة.",
+        "نشر النتائج والقيود."
+      ],
+      "metric": "قابلية تكرار المقارنة وتغطية حالات الفشل.",
+      "difficulty": "مرتفع، 2–3 أسابيع",
+      "risks": "لا يمكن إزالة كل اختلافات الأدوات والمطالبات.",
+      "sources": [
+        {
+          "title": "OpenCode",
+          "url": "https://github.com/anomalyco/opencode"
+        },
+        {
+          "title": "Aider",
+          "url": "https://github.com/Aider-AI/aider"
+        },
+        {
+          "title": "Octobench",
+          "url": "https://github.com/Muvon/octobench"
+        }
+      ]
+    }
+  ],
+  "religious": [],
+  "limitations": "لم يُشغّل المشروع أو تُختبر أوامر التثبيت والعزل. benchmark من المؤلفين على 25 مهمة. guardrails ليست sandbox كاملًا. sandbox موثق لـLinux/macOS. telemetry بحسب README لا يرسل الكود أو prompts أو مسارات الملفات، لكن يلزم مراجعة الإعداد. أسعار Cloud غير متحققة.",
+  "testEvidence": null,
+  "sources": [
+    {
+      "title": "Repository and README",
+      "url": "https://github.com/Muvon/octomind"
+    },
+    {
+      "title": "Cargo.toml",
+      "url": "https://github.com/Muvon/octomind/blob/master/Cargo.toml"
+    },
+    {
+      "title": "Apache-2.0 LICENSE",
+      "url": "https://github.com/Muvon/octomind/blob/master/LICENSE"
+    },
+    {
+      "title": "Installation",
+      "url": "https://github.com/Muvon/octomind/blob/master/doc/usage/01-installation.md"
+    },
+    {
+      "title": "Quickstart",
+      "url": "https://github.com/Muvon/octomind/blob/master/doc/usage/02-quickstart.md"
+    },
+    {
+      "title": "Providers and local models",
+      "url": "https://github.com/Muvon/octomind/blob/master/doc/usage/04-providers.md"
+    },
+    {
+      "title": "Guardrails",
+      "url": "https://github.com/Muvon/octomind/blob/master/doc/usage/18-guardrails.md"
+    },
+    {
+      "title": "Supervisor",
+      "url": "https://github.com/Muvon/octomind/blob/master/doc/usage/14-supervisor.md"
+    },
+    {
+      "title": "Learning",
+      "url": "https://github.com/Muvon/octomind/blob/master/doc/usage/13-learning.md"
+    },
+    {
+      "title": "Environment variables and telemetry",
+      "url": "https://github.com/Muvon/octomind/blob/master/doc/reference/04-environment-variables.md"
+    },
+    {
+      "title": "Octobench",
+      "url": "https://github.com/Muvon/octobench"
+    }
+  ]
+}

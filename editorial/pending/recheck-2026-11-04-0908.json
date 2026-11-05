@@ -1,0 +1,186 @@
+{
+  "version": 1,
+  "runAt": "2026-11-04T09:08:36+03:00",
+  "mainCommit": "2f8a39ec0b84ab5564e5572a2929e3c2393ed1bb",
+  "mainSnapshot": {
+    "feedGeneratedAt": "2026-11-04T06:15:09+00:00",
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialEntries": 639,
+    "seenIds": 2887
+  },
+  "mainIncoming": {
+    "files": 65,
+    "rowAppearances": 606,
+    "exactImportedRowAppearances": 599,
+    "seenOnlyRows": 7,
+    "duplicateAppearances": 4,
+    "exactIdUrlMismatches": 0,
+    "activeExactNotImported": 0,
+    "recordsNeedingCorrection": 0,
+    "confirmedExpired": 0,
+    "currentlyFeedExactRows": 171,
+    "historicalImportedOutsideCurrentFeed": 424,
+    "sameUrlDifferentIdsCollisionCount": 1,
+    "structuralValidation": "all 65 JSON files parsed; 606 records checked structurally and compared by literal id/url against current feed, editorial and seen; no CLI execution"
+  },
+  "mainSeenOnly": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "label": "NVIDIA OpenShell",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "label": "Canva Craft",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "label": "1Password agent sign-in",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    },
+    {
+      "id": "87d27a9f8a0972f507",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    },
+    {
+      "id": "65eeab64fed21e0b54",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    },
+    {
+      "id": "d674dea922625d0be8",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    },
+    {
+      "id": "967be99077d13f07b2",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    }
+  ],
+  "pr80Incoming": {
+    "files": 6,
+    "rowAppearances": 72,
+    "uniqueIds": 71,
+    "duplicateId": "c01265aacc1a10af6e",
+    "duplicateIn": [
+      "nabdh-editorial-2026-11-03-2039.json",
+      "nabdh-editorial-2026-11-03-2136.json"
+    ],
+    "currentlyFeedExactUniqueIds": 58,
+    "editorialImportedUniqueIds": 60,
+    "importedButNowHistorical": 2,
+    "seenOnlyUnimported": 11,
+    "exactIdUrlMismatches": 0,
+    "activeExactUnimported": 0
+  },
+  "historicalRetained": [
+    {
+      "id": "841e05fd699259e83c",
+      "titleAr": "فريق SLAC يقدم دليلًا تجريبيًا على طور مغناطيسي ثالث في مادة MnTe",
+      "url": "https://www6.slac.stanford.edu/news/2026-10-29-slac-researchers-find-proof-altermagnetism-new-magnetic-phase",
+      "status": "already in branch editorial; no longer in current feed; retained as historical, not treated as expired"
+    },
+    {
+      "id": "834f867a452076917a",
+      "titleAr": "NVIDIA تطرح Auto Ontology لبناء طبقة دلالية موثوقة لوكلاء تحليل البيانات",
+      "url": "https://github.com/NVIDIA/auto-ontology",
+      "status": "already in branch editorial; no longer in current feed; retained as historical, not treated as expired"
+    }
+  ],
+  "pending": [
+    {
+      "id": "32b3bf2b225f3d4c44",
+      "titleAr": "تجربة من MIT تعرض برمجة أوزان الشبكات العصبية مباشرة بواسطة نموذج لغوي",
+      "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+      "file": "nabdh-editorial-2026-11-03-2039.json",
+      "reason": "seen-only; id absent from current feed and editorial"
+    },
+    {
+      "id": "5010fb296f767bbc9b",
+      "titleAr": "مقال رأي يناقش قيمة الرياضيات في عصر الذكاء الاصطناعي بعيدًا عن سباق الإنتاجية",
+      "url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/",
+      "file": "nabdh-editorial-2026-11-03-2039.json",
+      "reason": "seen-only; id absent from current feed and editorial"
+    },
+    {
+      "id": "327e862bb29c2bb4f7",
+      "titleAr": "Meituan تطلق LongCat‑2.5 متعدد الوسائط للمهام الوكيلة طويلة الأفق",
+      "url": "https://longcat.ai/blog/longcat-2.5/",
+      "file": "nabdh-editorial-2026-11-03-2039.json",
+      "reason": "seen-only; id absent from current feed and editorial"
+    },
+    {
+      "id": "dc7eb9e8885fba4465",
+      "titleAr": "ورقة على arXiv تبحث مخاطر زرع سلوك خفي في الوكلاء عبر بيانات ما قبل التدريب",
+      "url": "https://arxiv.org/abs/2610.37741",
+      "file": "nabdh-editorial-2026-11-03-2039.json",
+      "reason": "seen-only; id absent from current feed and editorial"
+    },
+    {
+      "id": "56a1a96015a9777801",
+      "titleAr": "Polyend تفتح مصدر برنامج Tracker وتضيف مسار استعادة لتقليل تعطل الأجهزة",
+      "url": "https://polyend.com/whats-up/tracker-the-biggest-update-yet/",
+      "file": "nabdh-editorial-2026-11-03-2039.json",
+      "reason": "seen-only; id absent from current feed and editorial"
+    },
+    {
+      "id": "cb87f0ba6d1c74466f",
+      "titleAr": "Docker تعرض حزمة لتعاون الوكلاء مع إبقاء وكيل مساحة العمل داخل بيئة معزولة",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxObHNVY2RGNWxZajhMalAxVDRBVXVZRF95ZEV6eUM3QTlOMkl3bGpZUlNSaVZZUmxqcVAtVDVpRThIXzc4eExtcmdEdDlZYWt1SXR3bHN0aC1qR0JURUxtTVQxb3JGRDNOSkRCZXhna1cxMC1aeFRPekZaTWNJZVJoNHlWOA?oc=5",
+      "file": "nabdh-editorial-2026-11-03-2039.json",
+      "reason": "seen-only; id absent from current feed and editorial"
+    },
+    {
+      "id": "5b9f2f37879a136ac2",
+      "titleAr": "هجوم إلكتروني يؤثر في أنظمة تبريد متاجر أوروبية يسلط الضوء على أمن الأجهزة المتصلة",
+      "url": "https://www.bbc.co.uk/news/articles/ckpqg8lve73go?at_medium=RSS&at_campaign=rss",
+      "file": "nabdh-editorial-2026-11-03-2039.json",
+      "reason": "seen-only; id absent from current feed and editorial"
+    },
+    {
+      "id": "3e8a8aa6133203ad02",
+      "titleAr": "Momentic تعرض وكيل Mo لاستكشاف تدفقات التطبيقات واكتشاف أخطاء الاختبار",
+      "url": "https://momentic.ai/",
+      "file": "nabdh-editorial-2026-11-03-2039.json",
+      "reason": "seen-only; id absent from current feed and editorial"
+    },
+    {
+      "id": "5f4b9fdfeb2042b971",
+      "titleAr": "Google تفكك شبكة XCPE التي ضمّت أكثر من 1.3 مليون جهاز Android",
+      "url": "https://www.theverge.com/1024807/google-botnet-android-tv-shut-down",
+      "file": "nabdh-editorial-2026-11-03-2136.json",
+      "reason": "seen-only; id absent from current feed and editorial"
+    },
+    {
+      "id": "f6417c66c0228f42d3",
+      "titleAr": "Meta تحدد مارس 2027 نهاية تحديثات الميزات لـ Quest 2 وQuest Pro",
+      "url": "https://www.theverge.com/tech/1024835/meta-vr-quest-2-pro-os-end-updates",
+      "file": "nabdh-editorial-2026-11-03-2136.json",
+      "reason": "seen-only; id absent from current feed and editorial"
+    },
+    {
+      "id": "1263ce4e09302da828",
+      "titleAr": "Oracle تعتزم جمع 20 مليار دولار من الأسهم والسندات لتمويل توسعها في الذكاء الاصطناعي",
+      "url": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
+      "file": "nabdh-editorial-2026-11-03-2342.json",
+      "reason": "seen-only; id absent from current feed and editorial"
+    }
+  ],
+  "specialChecks": "لا تُنشأ هويات بديلة بالعنوان. السجلات السبعة seen-only تبقى خارج editorial حتى تظهر هوية مطابقة في feed.",
+  "decision": "Import only the 12 current exact matches from the 0841 batch. Keep the 11 seen-only PR80 records pending. Preserve the two already-imported historical records and all prior editorial fields."
+}
