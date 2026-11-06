@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "runAt": "2026-11-06T11:46:50+03:00",
+  "feed": {
+    "generatedAt": "2026-11-06T06:38:55+00:00",
+    "itemCount": 800,
+    "sha": "f2473e124b41ac64a1869cba62e0dd3001aaf15a"
+  },
+  "editorialBefore": {
+    "count": 784,
+    "sha": "1bb55eed1347bcd72628d154aa1428df05144241"
+  },
+  "incomingAudit": {
+    "filesReviewed": 81,
+    "occurrences": 854,
+    "distinctIdUrlPairs": 817,
+    "duplicateOccurrences": 37,
+    "exactImportedPairs": 781,
+    "expiredOrSeenOnlyPairs": 36,
+    "activeExactAwaitingImport": 0,
+    "idUrlMismatches": 0,
+    "structuralFilesPassed": 81,
+    "structuralFilesFailed": 0
+  },
+  "specialRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "name": "NVIDIA OpenShell",
+      "state": "seen-only",
+      "inSeen": true,
+      "inFeed": false,
+      "inEditorial": false,
+      "decision": "لا يُستورد حتى يظهر تطابق حرفي للمعرف والرابط في التغذية."
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "name": "Canva Craft",
+      "state": "seen-only",
+      "inSeen": true,
+      "inFeed": false,
+      "inEditorial": false,
+      "decision": "لا يُستورد حتى يظهر تطابق حرفي للمعرف والرابط في التغذية."
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "name": "1Password agent sign-in",
+      "state": "seen-only",
+      "inSeen": true,
+      "inFeed": false,
+      "inEditorial": false,
+      "decision": "لا يُستورد حتى يظهر تطابق حرفي للمعرف والرابط في التغذية."
+    }
+  ],
+  "expiredCount": 33,
+  "expiredDecision": "السجلات التاريخية الغائبة عن التغذية الحالية والسجلات التحريرية لم تُستورد؛ لم تُنشأ هويات بديلة بالعنوان.",
+  "newNews": {
+    "count": 12,
+    "ids": [
+      "a83a56374fd6aa91bf",
+      "5f2083e6ffbe03886e",
+      "f66d8f2942889cef95",
+      "8b33f1382f19de19bb",
+      "6fe93af902ebdc3251",
+      "c65c7708e93995ca45",
+      "e9e54c3d98570018f3",
+      "5c98dbce3abbdadf89",
+      "975fa8e739b5760d69",
+      "2173f7bc6c09b49ce1",
+      "c96e5195afc57b531a",
+      "f145415baaf53e5064"
+    ],
+    "allExactFeedMatches": true,
+    "allNewToEditorial": true,
+    "basisCounts": {
+      "article": 9,
+      "metadata": 3
+    }
+  },
+  "projectReview": {
+    "previousEightReviewedAt": "2026-11-06T09:09:18+03:00",
+    "projectsReviewed": 8,
+    "ideasPreserved": 55,
+    "ideaSchemaComplete": 55,
+    "archivedAmongEight": 0,
+    "currentFeedUnenrichedProjects": 0,
+    "catalogProjects": 53,
+    "decision": "لا توجد بطاقات مشروع غير مثراة في التغذية الحالية، والمكتبة البحثية تتجاوز الهدف التقريبي؛ لم تُنشأ بطاقة مشروع بهوية خبر."
+  },
+  "notes": [
+    "تمت مطابقة المعرف والرابط حرفيًا؛ لم يُستخدم العنوان لتوليد هوية.",
+    "التحقق البنيوي من 81 ملف incoming مكافئ قدر الإمكان؛ لم تُنفذ أوامر Python الرسمية محليًا لعدم توفر checkout/بيئة تشغيل.",
+    "لم تُعدّل feed.json أو seen.json."
+  ]
+}
