@@ -1,0 +1,264 @@
+{
+  "version": 1,
+  "runAt": "2026-11-06T14:58:11+03:00",
+  "metricsMeasuredAt": "2026-11-06T11:58:11Z",
+  "measurementSource": "GitHub REST repository metadata; README.md and root license files checked. Metrics are a point-in-time snapshot, not a popularity ranking.",
+  "publicationStatus": "research-only; not connected to site/data/feed.json or site/data/editorial.json",
+  "priorSnapshotPath": "editorial/library/research-only/previous-eight-refresh-2026-11-06-0909.json",
+  "cumulativeCatalogPath": "editorial/library/catalog-2026-11-06-0909.json",
+  "projectsReviewed": 8,
+  "projects": [
+    {
+      "repository": "patchy631/ai-engineering-hub",
+      "stars": 41193,
+      "forks": 6574,
+      "openIssues": 136,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "language": "Jupyter Notebook",
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "updatedAt": "2026-11-06T11:50:28Z",
+      "siteVisibility": "one exact feed project card",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "documentationNotes": "README is the primary learning map; no separate docs tree was relied on in this refresh.",
+      "requirementsAndQuickStart": "Existing dossier retains overview, requirements, quickStart, costs, localVsCloud and alternatives.",
+      "testEvidence": null
+    },
+    {
+      "repository": "googleapis/python-genai",
+      "stars": 4057,
+      "forks": 1059,
+      "openIssues": 386,
+      "archived": false,
+      "disabled": false,
+      "license": "Apache-2.0",
+      "language": "Python",
+      "pushedAt": "2026-11-06T02:02:15Z",
+      "updatedAt": "2026-11-06T02:02:07Z",
+      "siteVisibility": "research-only",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "documentationNotes": "README points to the official SDK documentation and quick-start; the repository pyproject requirements were previously recorded in the dossier.",
+      "requirementsAndQuickStart": "Existing dossier retains overview, requirements, quickStart, costs, localVsCloud and alternatives.",
+      "testEvidence": null
+    },
+    {
+      "repository": "Millillion/lasm",
+      "stars": 100,
+      "forks": 7,
+      "openIssues": 6,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "language": "C",
+      "pushedAt": "2026-11-05T18:31:22Z",
+      "updatedAt": "2026-11-06T06:15:53Z",
+      "siteVisibility": "research-only",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "documentationNotes": "README is the main build and usage guide; no independent runtime test was performed.",
+      "requirementsAndQuickStart": "Existing dossier retains overview, requirements, quickStart, cost, localVsCloud and alternatives.",
+      "testEvidence": null
+    },
+    {
+      "repository": "microsoft/markitdown",
+      "stars": 194131,
+      "forks": 14594,
+      "openIssues": 806,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "language": "Python",
+      "pushedAt": "2026-10-28T15:33:14Z",
+      "updatedAt": "2026-11-06T11:50:37Z",
+      "siteVisibility": "research-only",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "documentationNotes": "README and project documentation entry points reviewed; pay attention to format-specific dependencies and conversion limitations.",
+      "requirementsAndQuickStart": "Existing dossier retains overview, requirements, quickStart, costModel and alternatives.",
+      "testEvidence": null
+    },
+    {
+      "repository": "yc-software/minecraft-agent-harness",
+      "stars": 149,
+      "forks": 13,
+      "openIssues": 1,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "language": "JavaScript",
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "updatedAt": "2026-11-06T10:55:35Z",
+      "siteVisibility": "research-only",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "documentationNotes": "README and documentation entry points for configuration, tools and multi-agent use reviewed; no runtime test performed.",
+      "requirementsAndQuickStart": "Existing dossier retains overview, requirements, quickStart, costs, localVsCloud, alternatives and religious ideas where applicable.",
+      "testEvidence": null
+    },
+    {
+      "repository": "NVIDIA/OpenShell",
+      "stars": 21196,
+      "forks": 2075,
+      "openIssues": 638,
+      "archived": false,
+      "disabled": false,
+      "license": "Apache-2.0",
+      "language": "Rust",
+      "pushedAt": "2026-11-06T07:34:46Z",
+      "updatedAt": "2026-11-06T11:16:00Z",
+      "siteVisibility": "research-only",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "documentationNotes": "README and official policy/support documentation entry points reviewed; the incoming news item is stale, while the research dossier remains current as a separate project study.",
+      "requirementsAndQuickStart": "Existing dossier retains overview, requirements, quickStart, alternatives, deploymentModes and display requirements; detailed cost/local-cloud comparison remains a documented limitation.",
+      "testEvidence": null
+    },
+    {
+      "repository": "pydantic/pydantic-ai",
+      "stars": 21055,
+      "forks": 3114,
+      "openIssues": 1780,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "language": "Python",
+      "pushedAt": "2026-11-06T11:57:41Z",
+      "updatedAt": "2026-11-06T11:52:02Z",
+      "siteVisibility": "research-only",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "documentationNotes": "README and official evaluation documentation entry point reviewed; repository activity timestamp is close to measurement time.",
+      "requirementsAndQuickStart": "Existing dossier retains overview, requirements, quickStart, costs, localVsCloud, alternatives and developer display requirements.",
+      "testEvidence": "لم يتم تثبيت المشروع أو تشغيل أمثلة أو اختبارات؛ هذه مراجعة README والتوثيق وLICENSE وبيانات GitHub الرسمية فقط."
+    },
+    {
+      "repository": "astral-sh/uv",
+      "stars": 91619,
+      "forks": 3755,
+      "openIssues": 3045,
+      "archived": false,
+      "disabled": false,
+      "license": "Apache-2.0",
+      "language": "Rust",
+      "pushedAt": "2026-11-06T11:56:03Z",
+      "updatedAt": "2026-11-06T11:52:31Z",
+      "siteVisibility": "research-only",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "documentationNotes": "README, official getting-started documentation entry point, LICENSE-APACHE and LICENSE-MIT checked.",
+      "requirementsAndQuickStart": "Existing dossier retains overview, requirements, quickStart, costs, alternatives and setup notes; local/cloud detail remains a documented limitation.",
+      "testEvidence": "لم يتم تثبيت uv أو تشغيل أمثلته أو قياس أدائه؛ تمت مراجعة README والتوثيق وملفي الترخيص وبيانات المستودع فقط."
+    }
+  ],
+  "librarySummary": {
+    "cumulativeProjects": 54,
+    "activeOrMaintained": 52,
+    "archived": 2,
+    "feedExactMatches": 8,
+    "researchOnly": 45,
+    "feedMembershipUnverified": 1,
+    "archivedAlternativesTracked": 2
+  },
+  "projectFeedAudit": {
+    "currentProjectCards": 100,
+    "exactEditorialMatches": 100,
+    "missingProjectEditorial": 0,
+    "newProjectsAdded": 0,
+    "reason": "كل بطاقات المشاريع الحالية في feed لها سجل تحريري مطابق بالمعرف والرابط، والمكتبة التراكمية تتجاوز هدف نحو 30 مشروعًا؛ لا توجد إضافة جديدة تبرر حشوًا."
+  },
+  "ideaAudit": {
+    "projectsReviewed": 8,
+    "projectsArchived": 0,
+    "improvementsAndSpinoffsPreserved": 55,
+    "ideaSchemaComplete": 55,
+    "testEvidence": null,
+    "note": "حُفظ ترتيب الأفكار وروابطها السابقة كما هي؛ لم تُضف ادعاءات اختبار أو نتائج تشغيل."
+  },
+  "topThree": [
+    {
+      "title": "محرر مرئي عربي لسياسات NVIDIA OpenShell",
+      "problem": "ملفات YAML وسياسات الملفات والشبكة صعبة المراجعة على غير المتخصصين.",
+      "approach": "واجهة تقرأ المخطط الرسمي وتعرض السياسات والتحذيرات مع إبقاء YAML الخام قابلًا للتحرير.",
+      "stack": "TypeScript + React + YAML Schema",
+      "steps": [
+        "قراءة schema الرسمي.",
+        "عرض سياسات الملفات والعمليات والشبكة.",
+        "التحقق محليًا قبل التصدير.",
+        "إظهار الفروقات والتحذيرات مع YAML الخام."
+      ],
+      "metric": "نسبة ملفات السياسات التي تجتاز التحقق دون إخفاء حقول.",
+      "difficulty": "متوسط تقديرًا.",
+      "risks": "قد تخفي الواجهة تفاصيل دقيقة؛ يجب ألا تستبدل مراجعة YAML الأصلية.",
+      "sources": [
+        {
+          "title": "OpenShell policy schema",
+          "url": "https://docs.nvidia.com/openshell/latest/how-it-works/policies/schema"
+        },
+        {
+          "title": "OpenShell policy management",
+          "url": "https://docs.nvidia.com/openshell/latest/how-it-works/policies/manage-policies"
+        }
+      ]
+    },
+    {
+      "title": "مجموعة تقييم عربية قابلة لإعادة الإنتاج لوكلاء Pydantic AI",
+      "problem": "قد تبدو إجابة الوكيل سليمة لغويًا لكنها خاطئة أو غير مدعومة بمصدر.",
+      "approach": "مجموعة أسئلة عربية ذات إجابات مرجعية تقيس الصحة والإسناد واستخدام الأدوات والامتناع.",
+      "stack": "Python + Pydantic Evals + pytest + JSONL",
+      "steps": [
+        "اختيار مجال ومصادر موثوقة.",
+        "كتابة حالات نجاح وفشل ونقص معلومات.",
+        "تعريف مقاييس الصحة والاستشهاد والامتناع.",
+        "تشغيل المقارنة على إصدارات مختلفة.",
+        "حفظ النتائج مع إصدارات البيانات والنموذج."
+      ],
+      "metric": "درجات الصحة والإسناد والامتناع عبر الإصدارات.",
+      "difficulty": "متوسط إلى مرتفع تقديرًا.",
+      "risks": "تحيز اللهجات أو مجموعة الأسئلة وتحيز المقيم نفسه.",
+      "sources": [
+        {
+          "title": "Pydantic AI evaluation docs",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/evals.md"
+        },
+        {
+          "title": "Pydantic AI repository",
+          "url": "https://github.com/pydantic/pydantic-ai"
+        }
+      ]
+    },
+    {
+      "title": "مراجع توافق إصدارات Google Gen AI Python SDK",
+      "problem": "قد يتعطل المشروع بعد ترقية SDK أو تغيير الحد الأدنى لإصدار Python.",
+      "approach": "أداة تقرأ pyproject.toml وقيود الاعتماديات وتقارنها بمتطلبات الإصدار دون تعديل الملفات تلقائيًا.",
+      "stack": "Python + tomllib + packaging + JSON",
+      "steps": [
+        "قراءة نسخة SDK المثبتة.",
+        "استخراج متطلبات Python والاعتماديات.",
+        "مقارنة القيود بملف pyproject الرسمي.",
+        "إصدار تقرير تعارضات وتحذيرات."
+      ],
+      "metric": "دقة اكتشاف تعارضات الإصدارات قبل الترقية.",
+      "difficulty": "متوسط تقديرًا.",
+      "risks": "الاعتماديات غير المباشرة وتغيرات API قد لا تظهر في قيود النسخ وحدها.",
+      "sources": [
+        {
+          "title": "Google Gen AI Python SDK pyproject",
+          "url": "https://github.com/googleapis/python-genai/blob/main/pyproject.toml"
+        },
+        {
+          "title": "Google Gen AI Python SDK",
+          "url": "https://github.com/googleapis/python-genai"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "المؤشرات لقطة وقتية من GitHub API وليست ترتيبًا للجودة.",
+    "لم تُشغّل المشاريع أو أمثلتها؛ لم تُضف testEvidence جديدًا.",
+    "بعض ملفات الدوسيه السابقة تذكر حدودًا في مقارنة التكلفة أو النشر المحلي/السحابي، ولم تُخف هذه الحدود.",
+    "ملف المكتبة بحثي غير منشور على واجهة الموقع."
+  ]
+}

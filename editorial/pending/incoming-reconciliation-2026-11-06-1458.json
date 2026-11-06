@@ -1,0 +1,633 @@
+{
+  "version": 1,
+  "runAt": "2026-11-06T14:58:11+03:00",
+  "summary": {
+    "incomingFilesScanned": 83,
+    "incomingRecordOccurrences": 878,
+    "alreadyImportedExactOccurrences": 842,
+    "activeExactOccurrences": 308,
+    "staleOccurrences": 570,
+    "notImportedOccurrences": 36,
+    "notImportedStaleOccurrences": 36,
+    "feedItems": 800,
+    "editorialItemsBefore": 808,
+    "currentFeedExactEditorialBefore": 268,
+    "staleEditorialBefore": 540,
+    "missingCurrentFeedEditorialBefore": 532,
+    "interpretation": "الأعداد في incoming هي مرات ظهور للسجل عبر الملفات وقد تتكرر بين الدفعات؛ لا تمثل عدد IDs فريدًا. لم يُستورد أي سجل من هذه المجموعة لأن المعرف والرابط الأصليين لم يعودا مطابقين للتغذية الحالية."
+  },
+  "records": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "titleAr": "OpenShell من NVIDIA: بيئات معزولة للوكلاء بصلاحيات قابلة للمراجعة",
+      "basis": "readme",
+      "reviewedAt": "2026-10-24T05:41:31+03:00",
+      "sourceTitles": [
+        "README OpenShell",
+        "مصفوفة الدعم",
+        "معمارية OpenShell"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "titleAr": "Canva تعلن Craft لتوليد صور يمكن تحويلها إلى تصاميم متعددة الطبقات",
+      "basis": "article",
+      "reviewedAt": "2026-10-24T08:48:04.195Z",
+      "sourceTitles": [
+        "تقرير TechCrunch عن Canva Craft"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "titleAr": "1Password تعرض تفويض دخول للوكلاء دون إظهار كلمات المرور",
+      "basis": "article",
+      "reviewedAt": "2026-10-24T08:48:04.195Z",
+      "sourceTitles": [
+        "تقرير TechCrunch عن 1Password for Agents"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "87d27a9f8a0972f507",
+      "url": "https://www.theverge.com/tech/1023021/binance-hack-billions-biggest-crypto-heist",
+      "titleAr": "Binance تحقق في حادث أمني قدّر أثره بنحو 6.3 مليارات دولار",
+      "basis": "article",
+      "reviewedAt": "2026-10-31T18:11:52+03:00",
+      "sourceTitles": [
+        "Associated Press — Binance flags potential security issue; estimated impact and frozen assets"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-10-31-1811.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "65eeab64fed21e0b54",
+      "url": "https://www.engadget.com/2301934/general-motors-220-million-settle-multi-state-data-privacy-lawsuit/",
+      "titleAr": "تسوية بقيمة 220 مليون دولار تلزم GM بالحصول على موافقة واضحة قبل مشاركة بيانات القيادة",
+      "basis": "article",
+      "reviewedAt": "2026-10-31T18:11:52+03:00",
+      "sourceTitles": [
+        "Oregon Department of Justice — البيان الأصلي للتسوية وشروط الموافقة"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-10-31-1811.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "d674dea922625d0be8",
+      "url": "https://noyb.eu/en/noyb-win-french-electronics-retailer-fnac-darty-fined-eu7-million",
+      "titleAr": "هيئة حماية البيانات الفرنسية تفرض غرامة 7 ملايين يورو بسبب تتبع مستخدمي تطبيق Fnac دون موافقة",
+      "basis": "article",
+      "reviewedAt": "2026-11-02T14:46:32+03:00",
+      "sourceTitles": [
+        "CNIL: القرار والغرامة على Fnac Darty — المصدر التنظيمي الرسمي",
+        "noyb: تغطية الشكوى والقرار"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-02-1446.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "967be99077d13f07b2",
+      "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+      "titleAr": "اختبار يقارن تكلفة بناء تطبيق واحد بوكلاء البرمجة عبر 12 إطار JavaScript",
+      "basis": "article",
+      "reviewedAt": "2026-11-02T14:46:32+03:00",
+      "sourceTitles": [
+        "Nolan Lawson: The AI cost of JavaScript frameworks — المقال والتجربة الأصلية"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-02-1446.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "32b3bf2b225f3d4c44",
+      "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+      "titleAr": "تجربة من MIT تعرض برمجة أوزان الشبكات العصبية مباشرة بواسطة نموذج لغوي",
+      "basis": "article",
+      "reviewedAt": "2026-11-03T11:38:31+03:00",
+      "sourceTitles": [
+        "MIT CSAIL — Sparks of Weight-Space Programming"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "5010fb296f767bbc9b",
+      "url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/",
+      "titleAr": "مقال رأي يناقش قيمة الرياضيات في عصر الذكاء الاصطناعي بعيدًا عن سباق الإنتاجية",
+      "basis": "article",
+      "reviewedAt": "2026-11-03T11:38:31+03:00",
+      "sourceTitles": [
+        "Terence Tao — Egoless Mathematics in the AI Era"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "327e862bb29c2bb4f7",
+      "url": "https://longcat.ai/blog/longcat-2.5/",
+      "titleAr": "Meituan تطلق LongCat‑2.5 متعدد الوسائط للمهام الوكيلة طويلة الأفق",
+      "basis": "metadata",
+      "reviewedAt": "2026-11-03T11:38:31+03:00",
+      "sourceTitles": [
+        "LongCat — LongCat-2.5: Native Multimodality for Agentic Tasks",
+        "Meituan Newsroom — LongCat-2.5"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "dc7eb9e8885fba4465",
+      "url": "https://arxiv.org/abs/2610.37741",
+      "titleAr": "ورقة على arXiv تبحث مخاطر زرع سلوك خفي في الوكلاء عبر بيانات ما قبل التدريب",
+      "basis": "metadata",
+      "reviewedAt": "2026-11-03T11:38:31+03:00",
+      "sourceTitles": [
+        "arXiv — Agentic backdoors via pretraining poisoning",
+        "arXiv PDF — Agentic backdoors via pretraining poisoning"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "56a1a96015a9777801",
+      "url": "https://polyend.com/whats-up/tracker-the-biggest-update-yet/",
+      "titleAr": "Polyend تفتح مصدر برنامج Tracker وتضيف مسار استعادة لتقليل تعطل الأجهزة",
+      "basis": "metadata",
+      "reviewedAt": "2026-11-03T11:38:31+03:00",
+      "sourceTitles": [
+        "Polyend — Tracker: The Biggest Update Yet"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "841e05fd699259e83c",
+      "url": "https://www6.slac.stanford.edu/news/2026-10-29-slac-researchers-find-proof-altermagnetism-new-magnetic-phase",
+      "titleAr": "فريق SLAC يقدم دليلًا تجريبيًا على طور مغناطيسي ثالث في مادة MnTe",
+      "basis": "article",
+      "reviewedAt": "2026-11-03T11:38:31+03:00",
+      "sourceTitles": [
+        "SLAC National Accelerator Laboratory — Proof of altermagnetism",
+        "Science — Research paper DOI"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "cb87f0ba6d1c74466f",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxObHNVY2RGNWxZajhMalAxVDRBVXVZRF95ZEV6eUM3QTlOMkl3bGpZUlNSaVZZUmxqcVAtVDVpRThIXzc4eExtcmdEdDlZYWt1SXR3bHN0aC1qR0JURUxtTVQxb3JGRDNOSkRCZXhna1cxMC1aeFRPekZaTWNJZVJoNHlWOA?oc=5",
+      "titleAr": "Docker تعرض حزمة لتعاون الوكلاء مع إبقاء وكيل مساحة العمل داخل بيئة معزولة",
+      "basis": "article",
+      "reviewedAt": "2026-11-03T17:45:42+03:00",
+      "sourceTitles": [
+        "Docker — Your Agent Runs in a Docker Sandbox. Now It Can Join a Team.",
+        "BAND documentation"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "5b9f2f37879a136ac2",
+      "url": "https://www.bbc.co.uk/news/articles/ckpqg8lve73go?at_medium=RSS&at_campaign=rss",
+      "titleAr": "هجوم إلكتروني يؤثر في أنظمة تبريد متاجر أوروبية يسلط الضوء على أمن الأجهزة المتصلة",
+      "basis": "metadata",
+      "reviewedAt": "2026-11-03T17:45:42+03:00",
+      "sourceTitles": [
+        "BBC News — If hackers can take control of a supermarket freezer, how vulnerable is other tech?"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "03ad66ba1fba612587",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1025245/apple-earnings-q4-ai",
+      "titleAr": "Apple توسّع رهانها التجاري على الذكاء الاصطناعي عبر أجهزتها وتطبيقات الشركاء",
+      "basis": "metadata",
+      "reviewedAt": "2026-11-03T21:07:20+03:00",
+      "sourceTitles": [
+        "The Verge — Apple is all in on AI",
+        "Apple Newsroom — Apple reports fourth quarter results (2 November 2026)"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "e2d2bf508ced1caa08",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1025242/openai-quietly-renames-data-centers-as-compute-campuses",
+      "titleAr": "OpenAI تطلق برنامجًا لحماية الشبكات المحلية وتستخدم وصف «حرم حوسبة» لمراكز البيانات",
+      "basis": "article",
+      "reviewedAt": "2026-11-03T20:39:34+03:00",
+      "sourceTitles": [
+        "The Verge — OpenAI is quietly renaming data centers compute campuses"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "3e8a8aa6133203ad02",
+      "url": "https://momentic.ai/",
+      "titleAr": "Momentic تعرض وكيل Mo لاستكشاف تدفقات التطبيقات واكتشاف أخطاء الاختبار",
+      "basis": "article",
+      "reviewedAt": "2026-11-03T20:39:34+03:00",
+      "sourceTitles": [
+        "Hacker News — Launch HN: Momentic",
+        "Momentic official website",
+        "Momentic QA Bench",
+        "Momentic QA Bench harness"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "834f867a452076917a",
+      "url": "https://github.com/NVIDIA/auto-ontology",
+      "titleAr": "NVIDIA تطرح Auto Ontology لبناء طبقة دلالية موثوقة لوكلاء تحليل البيانات",
+      "basis": "readme",
+      "reviewedAt": "2026-11-03T20:39:34+03:00",
+      "sourceTitles": [
+        "NVIDIA Auto Ontology repository and README",
+        "Apache-2.0 LICENSE",
+        "Python dependencies",
+        "Deployment guide",
+        "MCP server documentation"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "6b6c7100781c3e9dc6",
+      "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss",
+      "titleAr": "BBC تنقل عن Binance تحذيرًا من مقابلات توظيف مزيفة ضمن حادث أمني",
+      "basis": "metadata",
+      "reviewedAt": "2026-11-03T20:39:34+03:00",
+      "sourceTitles": [
+        "BBC Technology — Binance and fake job interviews"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "5f4b9fdfeb2042b971",
+      "url": "https://www.theverge.com/1024807/google-botnet-android-tv-shut-down",
+      "titleAr": "Google تفكك شبكة XCPE التي ضمّت أكثر من 1.3 مليون جهاز Android",
+      "basis": "article",
+      "reviewedAt": "2026-11-03T21:36:52+03:00",
+      "sourceTitles": [
+        "The Verge — One of Google’s Android partners turned 1.3 million set-top boxes into a botnet",
+        "Google Cloud — Shutting the Door on the XCPE Botnet"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-03-2136.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "2451814cc9423add84",
+      "url": "https://www.theverge.com/science/1025227/nasa-swift-observatory-falling-to-earth",
+      "titleAr": "ناسا تتوقع عودة مرصد Swift إلى الغلاف الجوي في 4 نوفمبر",
+      "basis": "article",
+      "reviewedAt": "2026-11-03T21:36:52+03:00",
+      "sourceTitles": [
+        "The Verge — A truck-sized NASA space telescope is about to crash to Earth",
+        "NASA Science — NASA’s Swift Observatory to Re-Enter Atmosphere"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-03-2136.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "f6417c66c0228f42d3",
+      "url": "https://www.theverge.com/tech/1024835/meta-vr-quest-2-pro-os-end-updates",
+      "titleAr": "Meta تحدد مارس 2027 نهاية تحديثات الميزات لـ Quest 2 وQuest Pro",
+      "basis": "metadata",
+      "reviewedAt": "2026-11-03T21:36:52+03:00",
+      "sourceTitles": [
+        "The Verge — Meta will end Quest 2 OS updates in 2027",
+        "Meta Horizon OS Developers — Quest 2 and Quest Pro End of Feature Development"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-03-2136.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "002b7cee771ca9e347",
+      "url": "https://www.theverge.com/news/1025142/windows-11-8gb-ram-memory-improvements-speed-performance",
+      "titleAr": "Microsoft تعلن تحسينات ذاكرة وأداء لـ Windows 11 على أجهزة 8GB",
+      "basis": "article",
+      "reviewedAt": "2026-11-03T21:36:52+03:00",
+      "sourceTitles": [
+        "The Verge — Windows 11 is now up to 40 percent faster on PCs with 8GB of RAM",
+        "Windows Experience Blog — Raising the bar for 8 GB Windows 11 PCs"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-03-2136.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "1263ce4e09302da828",
+      "url": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
+      "titleAr": "Oracle تعتزم جمع 20 مليار دولار من الأسهم والسندات لتمويل توسعها في الذكاء الاصطناعي",
+      "basis": "article",
+      "reviewedAt": "2026-11-03T23:41:00+03:00",
+      "sourceTitles": [
+        "Reuters — Oracle taps investors for $20 billion to finance AI expansion"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-03-2342.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "210b26f029f33a3ef7",
+      "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+      "titleAr": "Postman تراجع تثبيت إضافات الوكلاء تلقائيًا بعد بلاغ عن تغييرات في إعدادات المطورين",
+      "basis": "article",
+      "reviewedAt": "2026-11-04T11:43:40+03:00",
+      "sourceTitles": [
+        "Postman issue #14370",
+        "Pinned session-start hook"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "35eaf0d06c77e9ddf3",
+      "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
+      "titleAr": "جدل حول ربط سياسات المدارس تجاه أدوات Google AI بإمكانية الوصول إلى البحث",
+      "basis": "metadata",
+      "reviewedAt": "2026-11-04T11:43:40+03:00",
+      "sourceTitles": [
+        "The New York Times — Schools, Google AI and Search"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "b5cba0d011349b3bc5",
+      "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+      "titleAr": "تجربة تعرض قدرة Qwen 3.8 27B على استنتاج سلوك شبكة من أوزانها",
+      "basis": "article",
+      "reviewedAt": "2026-11-04T11:43:40+03:00",
+      "sourceTitles": [
+        "Simon Willison — Qwen 3.8 27B",
+        "Weight Space Programming",
+        "Experimental prompts and weights"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "519582846479e28ed3",
+      "url": "https://neufangled.com/",
+      "titleAr": "Stringman يعرض روبوت كابلات يغطي مساحة غرفة بأربعة محركات",
+      "basis": "article",
+      "reviewedAt": "2026-11-04T11:43:40+03:00",
+      "sourceTitles": [
+        "Neufangled — Stringman",
+        "Stringman firmware repository"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "01b1e45f222dec5edc",
+      "url": "https://arxiv.org/abs/2605.29713",
+      "titleAr": "كتاب تمهيدي رياضي على arXiv يربط الجبر الخطي بطرق الذكاء الاصطناعي التوليدي",
+      "basis": "metadata",
+      "reviewedAt": "2026-11-04T11:43:40+03:00",
+      "sourceTitles": [
+        "arXiv — The Little Book of Generative AI Foundations",
+        "arXiv HTML — table of contents"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "ae61902e2afada6e8c",
+      "url": "https://ben.stolovitz.com/posts/how-use-ai-oct-2026/",
+      "titleAr": "مهندس بحثي يصف انتقال عمله إلى إدارة عدة وكلاء ومراجعة نتائجهم",
+      "basis": "article",
+      "reviewedAt": "2026-11-04T11:43:40+03:00",
+      "sourceTitles": [
+        "Ben Stolovitz — How I use AI (Oct 2026)"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "f1213d42ab134c3258",
+      "url": "https://github.com/finic-ai/kairos",
+      "titleAr": "Kairos ينشر منصة مفتوحة لاتخاذ قرارات مخاطر الاحتيال مع تجارب نماذج يقودها الوكلاء",
+      "basis": "readme",
+      "reviewedAt": "2026-11-04T11:43:40+03:00",
+      "sourceTitles": [
+        "Finic Kairos — repository and README",
+        "Kairos — self-hosting documentation",
+        "Kairos — API reference",
+        "Finic — pricing overview",
+        "Finic — Master Services Agreement"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "e3bc71be0e917360f6",
+      "url": "https://dilshan.github.io/tiny-basic/",
+      "titleAr": "Tiny Basic يتيح كتابة برامج BASIC مباشرة على لوحات Arduino",
+      "basis": "readme",
+      "reviewedAt": "2026-11-04T11:43:40+03:00",
+      "sourceTitles": [
+        "Tiny Basic for Arduino — official project page",
+        "dilshan/tiny-basic — README and BSD-3-Clause license"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "fb02c93fd281f7df67",
+      "url": "https://www.quili.ai/",
+      "titleAr": "حملة Quili.AI تستبدل الرد الآلي بمتطوعين لتسليط الضوء على استهلاك المياه",
+      "basis": "article",
+      "reviewedAt": "2026-11-04T11:43:40+03:00",
+      "sourceTitles": [
+        "Quili.AI — official campaign page",
+        "Associated Press — human-powered chatbot in Chile"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "cf03bdbe3edb09ea56",
+      "url": "https://openathena.ai/blog/there-is-no-posttraining-data-commons/",
+      "titleAr": "Open Athena تجادل بأن تدريب ما بعد التدريب يفتقر إلى مشاع بيانات تشبه بيانات ما قبل التدريب",
+      "basis": "article",
+      "reviewedAt": "2026-11-04T11:43:40+03:00",
+      "sourceTitles": [
+        "Open Athena — There is no posttraining data commons",
+        "Common Crawl — official project"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "954fbd2e34ab1eb99f",
+      "url": "https://github.com/Muvon/octomind",
+      "titleAr": "Octomind يقدم إطارًا مفتوحًا لوكلاء البرمجة يعمل عبر CLI وMCP مع سياسات TOML ومشرف للتحقق",
+      "basis": "readme",
+      "reviewedAt": "2026-11-04T12:22:22+03:00",
+      "sourceTitles": [
+        "Muvon/Octomind — repository and README",
+        "Octomind — configuration guide",
+        "Octomind — guardrails and validators",
+        "Octomind — supervisor",
+        "Octomind — providers and local models",
+        "Octobench"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-04-1222.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    }
+  ]
+}
