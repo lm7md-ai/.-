@@ -35627,6 +35627,274 @@
         }
       ],
       "url": "https://arxiv.org/abs/2611.06984"
+    },
+    "616c68177b707eae60": {
+      "url": "https://openai.com/index/australian-universities-ai-native-graduates",
+      "titleAr": "جامعات أسترالية توسّع إدماج الذكاء الاصطناعي في الدراسة",
+      "summaryAr": "أعلنت OpenAI تعاونات مع UNSW وجامعة سيدني ولا تروب وأديلايد لإتاحة أدواتها وتطوير برامج ومشاريع تعليمية. وتقول دراسة بتكليف من OpenAI شملت 1,018 طالبًا جامعيًا بالغًا في أستراليا إن 81% يستخدمون الذكاء الاصطناعي عدة مرات أسبوعيًا، و28% بنوا مساعدًا أو وكيلًا؛ وتعمل الجامعات بالتوازي على تحديد متى يُسمح باستخدامه في التعلم والتقييم.",
+      "whyItMatters": "التحليل: تتحول مهارات الذكاء الاصطناعي من نشاط فردي إلى جزء من البرامج الجامعية والتقييم والتدريب العملي. هذا لا يعني أن إتقان الأداة يغني عن أساس التخصص أو التفكير النقدي.",
+      "audience": "طلاب الجامعات وأعضاء هيئة التدريس ومسؤولو تطوير المناهج والمهتمون بمهارات سوق العمل.",
+      "nextSteps": [
+        "جرّب استخدام الذكاء الاصطناعي في مشروع دراسي مع توثيق ما أنجزته بنفسك وما راجعه المدرس.",
+        "اقرأ سياسة المقرر بشأن المسموح والممنوع، واحتفظ بمصادر المعلومات التي تعتمد عليها."
+      ],
+      "limitations": "النسب من استطلاع بتكليف OpenAI على 1,018 طالبًا بالغًا في أستراليا خلال 3–7 أغسطس 2026؛ ليست قياسًا لكل الجامعات أو الطلاب عالميًا. تفاصيل التعاون وخطط الإتاحة مصدرها OpenAI والجامعات.",
+      "reviewedAt": "2026-11-06T12:20:36+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Australian universities are creating AI-native graduates — OpenAI",
+          "url": "https://openai.com/index/australian-universities-ai-native-graduates/"
+        }
+      ]
+    },
+    "478057fc524f199fe2": {
+      "url": "https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/",
+      "titleAr": "GitHub يضيف مكانًا واضحًا لملفات إتاحة الاستخدام ACCESSIBILITY.md",
+      "summaryAr": "أصبح GitHub يتعرف على ملف ACCESSIBILITY.md في جذر المستودع أو مجلدي .github وdocs، ويعرضه على صفحة المستودع. ويمكن للمشروعات العامة إضافة بيان مبدئي من Insights > Community Standards، كما أضيف وسم accessibility افتراضيًا للمستودعات الجديدة.",
+      "whyItMatters": "التحليل: توثيق العوائق وبيئات الاختبار ومسار الإبلاغ يجعل الإتاحة جزءًا قابلًا للمراجعة من صيانة المشروع، بما فيها المشاريع التي يستخدمها مساهمون يعتمدون على قارئات الشاشة أو وسائل إدخال بديلة.",
+      "audience": "مشرفو المشاريع المفتوحة ومطورو البرمجيات ومصممو الواجهات والمساهمون المهتمون بإمكانية الوصول.",
+      "nextSteps": [
+        "أضف ACCESSIBILITY.md يصف أهداف المشروع والبيئات التي اختُبرت والعوائق المعروفة ومسار الإبلاغ.",
+        "لا تدّعِ التوافق مع WCAG لمجرد كتابة المستوى المستهدف؛ اذكر نطاق التقييم وتاريخه وطريقته إذا أُجري."
+      ],
+      "limitations": "وجود الملف لا يثبت توافق الموقع أو التطبيق مع معايير الإتاحة، ولا يعوض اختبار قارئ الشاشة ولوحة المفاتيح؛ GitHub يسهّل العثور على البيان فقط.",
+      "reviewedAt": "2026-11-06T12:20:36+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Accessibility statements now have a home on GitHub",
+          "url": "https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/"
+        },
+        {
+          "title": "GitHub Docs — Community profile files",
+          "url": "https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-file-for-your-community-profile"
+        }
+      ]
+    },
+    "25fa4dd18ec78a48a9": {
+      "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+      "titleAr": "OpenAI تنشر تعهدًا مجتمعيًا ومقترح سياسات لمراكز الحوسبة",
+      "summaryAr": "أعلنت OpenAI نشر National Community Compact وCompute Campus Policy Blueprint، مع تعهدات مستقبلية للمراكز التي تملكها وتشغلها: تحمل تكلفة الطاقة والبنية المضافة، ونشر بيانات المياه والطاقة والضوضاء، وإشراك السكان، والتقرير سنويًا عن الوظائف والاستثمارات المحلية. كما تقترح قواعد على الجهات التنظيمية لحماية المستهلكين من تكاليف البنية الجديدة.",
+      "whyItMatters": "التحليل: توسع مراكز البيانات يجعل تكلفة الكهرباء والمياه والتوظيف المحلي جزءًا من سياسة الذكاء الاصطناعي، لا مسألة تقنية فقط؛ ويحتاج المجتمع إلى بيانات قابلة للمساءلة بدل الوعود العامة.",
+      "audience": "المهتمون بالبنية التحتية للذكاء الاصطناعي والطاقة والسياسات العامة والبلديات والمجتمعات المحيطة بمراكز البيانات.",
+      "nextSteps": [
+        "عند تقييم مشروع مركز بيانات، راجع من يتحمل تكلفة توصيل الشبكة والمياه والضوضاء وفرص العمل.",
+        "افصل التعهد الطوعي للشركة عن التشريع الملزم أو ما تم تنفيذه فعليًا."
+      ],
+      "limitations": "التعهد ينطبق على مراكز مستقبلية تملكها وتشغلها OpenAI، والـ Blueprint مقترح سياسة وليس قانونًا نافذًا. المصدر صادر عن الشركة ولا يثبت بعد تنفيذ كل الالتزامات.",
+      "reviewedAt": "2026-11-06T12:20:36+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Setting a new standard for responsible AI infrastructure — OpenAI",
+          "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure/"
+        },
+        {
+          "title": "OpenAI National Community Compact",
+          "url": "https://cdn.openai.com/pdf/community-compact.pdf"
+        }
+      ]
+    },
+    "9a1f2f6f2756d2c6b5": {
+      "url": "https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/",
+      "titleAr": "Axiom تقول إنها حوّلت مشروع Stacks الرياضي إلى براهين قابلة للتحقق في Lean",
+      "summaryAr": "تقول Axiom Math إنها استخدمت وكلاء ذكاء اصطناعي لتحويل نحو 7,654 صفحة من Stacks Project إلى قرابة 16 مليون سطر Lean يمكن لمساعد براهين التحقق منه. ويركز العمل على إبقاء العلاقات بين التعريفات والنظريات متماسكة، لا مجرد ترجمة كل نتيجة منفردة.",
+      "whyItMatters": "التحليل: يمكن للتحقق الصوري أن يضيف طبقة تدقيق قابلة للتشغيل على مخرجات الوكلاء، ويجعل النتائج الرياضية لبنات قابلة لإعادة الاستخدام في البرمجيات والبحث.",
+      "audience": "باحثو الرياضيات وLean والبرمجة الصورية ومطورو وكلاء البرمجة.",
+      "nextSteps": [
+        "تعرّف على Lean وStacks Project قبل تفسير الإنجاز على أنه تحقق مستقل من كل استخدام جديد.",
+        "عند بناء وكيل رياضي، اجعل نجاح مدقق البراهين شرطًا لقبول النتيجة."
+      ],
+      "limitations": "الإنجاز منسوب إلى إعلان Axiom كما نقلته TechCrunch؛ لم أتحقق من مستودع كامل لإعادة إنتاج تحويل 16 مليون سطر. نجاح المدقق يثبت صحة الصياغة الرسمية ضمن المكتبة المعتمدة، لا صحة أي تفسير خارجي أو اكتمال التغطية.",
+      "reviewedAt": "2026-11-06T12:20:36+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Axiom Math wants to keep AI slop out of mathematics — TechCrunch",
+          "url": "https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/"
+        },
+        {
+          "title": "The Stacks Project — official mathematical reference",
+          "url": "https://stacks.math.columbia.edu/"
+        }
+      ]
+    },
+    "b6b371a91cafdd86ad": {
+      "url": "https://techcrunch.com/2026/11/05/a-yc-startup-is-putting-1m-behind-five-unsolved-materials-science-problems-for-ai/",
+      "titleAr": "Discovered Materials تفتح خمسة تحديات علمية بجوائز إجمالية مليون دولار",
+      "summaryAr": "أعلنت شركة Discovered Materials تحديًا بمجموع جوائز مليون دولار لتطوير حلول لخمس مسائل في علم المواد، من الموصلية الفائقة وواجهات أشباه الموصلات إلى نقل الحرارة وتأثير الضوء وتحسين طرق حساب المواد. وتقول الشركة إن نماذج متقدمة جُرّبت مسبقًا على المسائل دون تقدم كبير حتى الآن.",
+      "whyItMatters": "التحليل: وضع معايير قابلة للتحقق قبل المنافسة يربط قدرات الذكاء الاصطناعي بأسئلة علمية أصعب من توليد إجابة نصية، ويجعل التقدم قابلًا للمتابعة.",
+      "audience": "باحثو علم المواد والفيزياء والكيمياء الحاسوبية وأشباه الموصلات ومهندسو الذكاء الاصطناعي العلمي.",
+      "nextSteps": [
+        "راجع تعريف كل تحدٍ ومعايير الحل الرسمية قبل تفسير النتائج أو المشاركة.",
+        "ميّز بين حل نظري وحل أعيد إنتاجه حسابيًا أو تجريبيًا."
+      ],
+      "limitations": "التحديات والجوائز من الشركة المنظمة؛ لا توجد نتائج حلول معلنة في المصدر عند المراجعة. لم تُختبر نماذج على المسائل.",
+      "reviewedAt": "2026-11-06T12:20:36+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "A YC startup is putting $1M behind five unsolved materials science problems for AI — TechCrunch",
+          "url": "https://techcrunch.com/2026/11/05/a-yc-startup-is-putting-1m-behind-five-unsolved-materials-science-problems-for-ai/"
+        },
+        {
+          "title": "Grand Challenges — Discovered Materials",
+          "url": "https://discoveredmaterials.com/grand-challenges/"
+        }
+      ]
+    },
+    "ec1966491ff28b1901": {
+      "url": "https://techcrunch.com/2026/11/05/ainas-smart-ring-has-a-screen-a-joystick-and-a-mic-so-you-can-talk-to-ai-agents/",
+      "titleAr": "خاتم Aina الذكي يجمع شاشة وعصا تحكم وميكروفون للتفاعل مع الوكلاء",
+      "summaryAr": "قدمت Aina خاتمًا بشاشة صغيرة وعصا تحكم وميكروفون ومكبر صوت، يتيح تدوين الملاحظات وإرسال طلبات للوكلاء وضبط التذكيرات والتحكم في بعض التطبيقات والأجهزة. ذكر التقرير أن الطلب المسبق يبدأ بسعر تمهيدي 399 دولارًا وأن الشحن مخطط له في يناير 2027.",
+      "whyItMatters": "التحليل: يختبر المنتج واجهة مادية مختصرة للتحكم في الوكلاء بدل الاعتماد الكامل على شاشة الهاتف؛ ونجاح الفكرة يتوقف على موثوقية الربط وسهولة الاستخدام اليومية.",
+      "audience": "مهتمو واجهات التفاعل القابلة للارتداء ومطورو التطبيقات والوكلاء والأجهزة الذكية.",
+      "nextSteps": [
+        "راقب توافق التطبيقات الفعلي وزمن الاستجابة قبل الحكم على فائدة الخاتم.",
+        "قيّم خصوصية الميكروفون والصلاحيات التي تمنحها للتطبيقات قبل استخدام أجهزة مشابهة."
+      ],
+      "limitations": "تقرير صحفي وتجربة أولية للمراسل؛ يذكر أن بعض البرامج والميزات ما زالت قيد التطوير. السعر والموعد خطط معلنة وليسا ضمانًا للتوفر في جميع الدول.",
+      "reviewedAt": "2026-11-06T12:20:36+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Aina’s smart ring has a screen, a joystick and a mic so you can talk to AI agents — TechCrunch",
+          "url": "https://techcrunch.com/2026/11/05/ainas-smart-ring-has-a-screen-a-joystick-and-a-mic-so-you-can-talk-to-ai-agents/"
+        },
+        {
+          "title": "Aina — official website",
+          "url": "https://www.aina.com/"
+        }
+      ]
+    },
+    "4453f7a18f34574478": {
+      "url": "https://techcrunch.com/2026/11/05/box-taps-nvidias-nemotron-for-new-agent-first-content-retrieval-system/",
+      "titleAr": "Box وNVIDIA يقدمان استرجاعًا سياقيًا للمؤسسات مع ضوابط للوكلاء",
+      "summaryAr": "أعلنت Box عن Context Retrieval المدعوم بنماذج Nemotron Retriever لفهرسة المحتوى النصي والمرئي والصوتي مع مراعاة صلاحيات الوصول، كما أعلنت توسيع التكامل مع NVIDIA OpenShell لضبط تنفيذ الوكلاء. وتذكر Box أهدافًا تصل إلى أربعة أضعاف سرعة الإجابة وخفض 90% من الرموز وتحسين Recall@5 بنسبة 20%.",
+      "whyItMatters": "التحليل: استرجاع سياق المؤسسة لا يتعلق بجودة embedding فقط؛ فالصلاحيات وحداثة المحتوى وتصفية الملفات الحساسة ضرورية حتى لا يحصل الوكيل على معلومات خارج إذن المستخدم.",
+      "audience": "مهندسو RAG ووكلاء المؤسسات ومسؤولو أمن البيانات ومديرو المحتوى المؤسسي.",
+      "nextSteps": [
+        "عند تقييم RAG مؤسسي، اختبر احترام صلاحيات كل مستخدم قبل قياس جودة الإجابات.",
+        "قارن Recall@5 وزمن الفهرسة واستهلاك الرموز على مجموعة بياناتك، لا على الأرقام التسويقية وحدها."
+      ],
+      "limitations": "الأرقام أهداف أو تقديرات معلنة من Box وNVIDIA وليست قياسًا مستقلًا؛ التوفر العام لـContext Retrieval مخطط لعملاء Enterprise Advanced في بداية 2027، ويتطلب منصة Box ونموذج الصلاحيات لديها. هذا الخبر له معرف مختلف عن سجل NVIDIA OpenShell القديم ولا يحل محله.",
+      "reviewedAt": "2026-11-06T12:20:36+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Box Partners With NVIDIA to Deliver the Trusted Content Layer for Enterprise AI — Box",
+          "url": "https://blog.box.com/box-partners-nvidia-deliver-trusted-content-layer-enterprise-ai"
+        },
+        {
+          "title": "Box taps Nvidia’s Nemotron for new agent-first content retrieval system — TechCrunch",
+          "url": "https://techcrunch.com/2026/11/05/box-taps-nvidias-nemotron-for-new-agent-first-content-retrieval-system/"
+        }
+      ]
+    },
+    "b22bff2ad5f49085e7": {
+      "url": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2026-0537",
+      "titleAr": "CERT-In تحذر من ثغرات عالية الخطورة في تطبيقي Tata Motors iRA وiRA.ev",
+      "summaryAr": "أصدرت CERT-In ملاحظة CIVN-2026-0537 بشأن أربع ثغرات في إصدارات قديمة من تطبيقي iRA 2.0 وiRA.ev قد تؤثر في بيانات وخدمات المركبة المتصلة. وتحدد الملاحظة الإصدارات المصححة iRA 2.0 26.8.2 وiRA.ev 26.9.1.",
+      "whyItMatters": "التحليل: تطبيقات السيارات المتصلة تتعامل مع بيانات وأوامر حساسة، لذلك يجب تحديثها وإدارة بيانات الاعتماد والسجلات بعناية. لا يعني التنبيه أن جميع المركبات أو كل المستخدمين تعرضوا للاختراق.",
+      "audience": "مستخدمو تطبيقات Tata Motors المتصلة ومسؤولو أمن التطبيقات والفرق التي تطور تطبيقات المركبات.",
+      "nextSteps": [
+        "تحقق من إصدار التطبيق وثبّت النسخة المصححة من المتجر الرسمي.",
+        "لا تشارك رموز الجلسات أو بيانات الدخول، وراجع إشعارات الشركة إذا كنت تستخدم إصدارًا متأثرًا."
+      ],
+      "limitations": "المصدر CERT-In؛ يصف ثغرات وإصدارات متأثرة لكنه لا يثبت استغلالًا واسعًا أو اختراق حساب بعينه. لم نختبر التطبيقات، ولم ندرج خطوات استغلال.",
+      "reviewedAt": "2026-11-06T12:20:36+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "CERT-In Vulnerability Note CIVN-2026-0537",
+          "url": "https://www.cert-in.org.in/s2cMainServlet?VLCODE=CIVN-2026-0537&pageid=PUBVLNOTES01"
+        }
+      ]
+    },
+    "63945bc79480974982": {
+      "url": "https://huggingface.co/blog/cwe-bench",
+      "titleAr": "CWE-bench v2 يفتح 100 مهمة لقياس قدرة وكلاء البرمجة على إصلاح الثغرات",
+      "summaryAr": "أطلق فريق Collinear AI مجموعة عامة من 100 مهمة تغطي 91 فئة CWE؛ يحصل الوكيل على مستودع برمجي وتعليمات لإصلاح ضعف مع الحفاظ على الوظائف، ثم يفحصه محقق حتمي. يذكر الفريق أن أفضل نتيجة من 11 نموذجًا كانت 67.8% pass@1 و81% pass@4، وأن 95 مهمة حلّها نموذج واحد على الأقل.",
+      "whyItMatters": "التحليل: يوفر معيارًا قابلًا لإعادة الإنتاج للمقارنة بين الوكلاء في إصلاح العيوب، لكنه يقيس مجموعة مهام محددة ولا يضمن أمان برامج حقيقية.",
+      "audience": "فرق أمن التطبيقات ومطورو الوكلاء وباحثو تقييم النماذج ومشرفو المشاريع المفتوحة.",
+      "nextSteps": [
+        "اقرأ تصميم المهمة والمقيّم قبل مقارنة نتائج النماذج.",
+        "استخدم النتائج مؤشرًا بحثيًا مكملًا لمراجعة الشيفرة والاختبارات الأمنية البشرية."
+      ],
+      "limitations": "الأرقام من ناشري المعيار واللوحة التي يديرونها؛ العينة لا تمثل كل الثغرات أو بيئات الإنتاج. المقارنات تشمل نماذج API وأوزانًا مفتوحة، فلا تقارن التكلفة أو النتيجة دون ضبط الإعدادات.",
+      "reviewedAt": "2026-11-06T12:20:36+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "CWE-bench v2: More coverage, quality, and transparency — Hugging Face",
+          "url": "https://huggingface.co/blog/cwe-bench"
+        },
+        {
+          "title": "CWE-bench public dataset",
+          "url": "https://huggingface.co/datasets/collinear-ai/cwe-bench"
+        }
+      ]
+    },
+    "32d4e91d243ef07f07": {
+      "url": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
+      "titleAr": "Dharma Field Extractor يحول المستندات إلى حقول JSON بنموذج من ملياري معامل",
+      "summaryAr": "قدمت Dharma-AI نموذجًا متخصصًا لاستخراج الحقول من صور المستندات وإرجاعها بصيغة JSON، إما وفق مخطط يحدده المستخدم أو باستخراج الحقول المتاحة. يذكر الفريق تدريب LoRA على 43,384 مثالًا واختبار 1,638 حالة، مع درجة 0.834 في معياره مقارنة بأربعة إعدادات لنماذج عامة.",
+      "whyItMatters": "التحليل: في الفواتير والنماذج، تحويل النص إلى حقول محددة قد يقلل خطوة الربط اليدوي بعد OCR، لكن الدقة في البيانات الواقعية واللغة العربية تحتاج اختبارًا منفصلًا.",
+      "audience": "مطورو OCR ومعالجة المستندات وأتمتة الأعمال والباحثون في النماذج المتخصصة.",
+      "nextSteps": [
+        "افحص عينة مستنداتك مع مخطط الحقول المتوقع وقِس القيم الناقصة والخاطئة.",
+        "لا ترسل مستندات شخصية إلى خدمة تجريبية قبل مراجعة الخصوصية وسياسة المعالجة."
+      ],
+      "limitations": "الأرقام والمقارنات من الفريق المطور وعلى مجموعات معيارية محددة؛ تقدير التكلفة 6–147 مرة أقل يعتمد على إعداد GPU L40S والأسعار المرجعية المذكورة وليس سعرًا تجاريًا ثابتًا. لم يعلن المقال نتيجة مستقلة للغة العربية.",
+      "reviewedAt": "2026-11-06T12:20:36+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out — Hugging Face",
+          "url": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor"
+        }
+      ]
+    },
+    "8a418d022687eec680": {
+      "url": "https://arxiv.org/abs/2611.07633",
+      "titleAr": "بحث أولي يقارن طرق إخفاء البيانات الشخصية قبل إرسال النص إلى نماذج اللغة",
+      "summaryAr": "ملخص ورقة arXiv يقارن Regex وMicrosoft Presidio وتصميمات هجينة على 100 سيرة ذاتية اصطناعية تضم 900 قيمة شخصية و600 مصطلح أعمال. يذكر الملخص أن Regex التقط 88.9% من القيم، بينما سجلت بعض التصميمات الهجينة 100% في هذه العينة، مع زمن إضافي محدود مقارنة بزمن استدعاء النموذج.",
+      "whyItMatters": "التحليل: إزالة البيانات الشخصية قبل الإرسال خطوة مفيدة، لكن Regex وحده قد يفوّت أسماء غير معروفة مسبقًا؛ الجمع بين قواعد محددة وكشف الكيانات قد يوازن بين السرعة والتغطية.",
+      "audience": "مطورو تطبيقات النماذج اللغوية ومعماريّو الخصوصية وأمن البيانات وفرق معالجة المستندات.",
+      "nextSteps": [
+        "اقرأ الورقة كاملة قبل اعتماد التصميم، واختبره على بيانات اصطناعية ومجموعة محلية مصرح بها.",
+        "قِس معدل التسرب ومعدل حذف المعلومات التجارية الصحيحة والزمن معًا."
+      ],
+      "limitations": "المراجعة اعتمدت على الملخص فقط؛ النتائج على 100 سيرة ذاتية اصطناعية وليست قياسًا إنتاجيًا أو ضمانًا لعدم التسرب. الورقة مسودة أولية على arXiv ولم تُثبت بعد بمراجعة مستقلة.",
+      "reviewedAt": "2026-11-06T12:20:36+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "Redacting Personal Data: A Speed and Accuracy Comparison of Regex, Presidio and Hybrid Designs — arXiv abstract",
+          "url": "https://arxiv.org/abs/2611.07633"
+        }
+      ]
+    },
+    "d37a69f2f16a8e8ff3": {
+      "url": "https://arxiv.org/abs/2611.06995",
+      "titleAr": "بحث: تفضيلات وكلاء الذكاء الاصطناعي في صياغة البراهين لا تطابق دائمًا تفضيلات الباحثين",
+      "summaryAr": "ملخص ورقة arXiv يدرس تسع تعاونات بشرية في Lean تضم 4.7 ملايين تعريف وأكثر من 6 آلاف commit. ويذكر أن الوكلاء ينجذبون أكثر إلى الفجوات المعلّمة، ويتجنبون مراكز البراهين شديدة الترابط والأهداف المعقدة أو المفاجئة مقارنة بالباحثين.",
+      "whyItMatters": "التحليل: تقييم الوكيل لا ينبغي أن يقتصر على صحة الخطوة التالية؛ اختيار ما يعمل عليه الوكيل قد يختلف عن أولويات الباحث، لذا يلزم قياس جودة التعاون وتغطية الأجزاء المهمة.",
+      "audience": "باحثو الذكاء الاصطناعي والتفاعل إنسان-آلة والرياضيات الصورية ومطورو وكلاء البرمجة.",
+      "nextSteps": [
+        "اقرأ الورقة كاملة وراجع منهجية المحاكاة قبل تعميم النتائج.",
+        "عند بناء وكيل بحثي، قارن ترتيب المهام التي يختارها باختيارات الخبراء واحتفظ بإشراف بشري."
+      ],
+      "limitations": "المراجعة اعتمدت على الملخص فقط؛ النتائج في مجال Lean وتسع تعاونات محددة ولا تثبت سلوك جميع الوكلاء أو المهام. الورقة مسودة أولية وليست حكمًا عامًا على أنظمة الذكاء الاصطناعي.",
+      "reviewedAt": "2026-11-06T12:20:36+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "Autonomous AI Agents Systematically Diverge From Human Preferences in Proof Formalization — arXiv abstract",
+          "url": "https://arxiv.org/abs/2611.06995"
+        }
+      ]
     }
   }
 }
