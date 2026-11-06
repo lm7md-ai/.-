@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "runAt": "2026-11-07T02:52:47+03:00",
+  "mainSha": "020b447733f5cbd8c876a676e2efc4fc603a4487",
+  "feedGeneratedAt": "2026-11-06T18:53:12Z",
+  "incomingMain": {
+    "files": 88,
+    "recordOccurrences": 928,
+    "classification": {
+      "alreadyImportedAndExactCurrentFeed": 339,
+      "alreadyImportedButNoLongerInCurrentFeed": 553,
+      "eligibleExactFeedMatchNotYetImported": 0,
+      "idOrUrlMismatch": 0,
+      "expiredNotInFeedOrEditorial": 36,
+      "unmatchedNotSeen": 0,
+      "structuralIssuesFound": 0
+    },
+    "note": "Counts are appearances across files, not unique IDs; each occurrence was compared by exact ID and URL."
+  },
+  "sourceQualityHolds": [
+    {
+      "id": "d18ddd9c12e46dd96b",
+      "status": "needs_correction",
+      "reason": "Issue قديم أُنشئ في 2022 وأُغلق؛ لا يثبت تحديثه حادثة جديدة."
+    }
+  ],
+  "expiredSourceDateRecovered": [
+    {
+      "id": "e3e3a03bfc5be7aa43",
+      "status": "expired_not_in_current_feed",
+      "sourceDate": "2026-09-02",
+      "source": "https://www.hashtagarabi.com/421567/",
+      "attribution": "إعادة نشر تنسب المادة إلى الشرق الأوسط",
+      "reason": "تاريخ المصدر أصبح معروفًا، لكن السجل لا يطابق التغذية الحالية ولم يُستورد."
+    }
+  ],
+  "specialRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "feedPresent": false,
+      "editorialPresent": false,
+      "seenPresent": true,
+      "status": "خبر منقضٍ؛ المشروع باقٍ في البحث المستقل."
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "feedPresent": false,
+      "editorialPresent": false,
+      "seenPresent": true,
+      "status": "منقضٍ؛ لا يعاد إنشاؤه."
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "feedPresent": false,
+      "editorialPresent": false,
+      "seenPresent": true,
+      "status": "منقضٍ؛ لا يعاد إنشاؤه."
+    }
+  ],
+  "branchIncoming": {
+    "mainFiles": 88,
+    "additionalFiles": 2,
+    "totalFiles": 90,
+    "mainRecordOccurrences": 928,
+    "additionalRecords": 12,
+    "totalOccurrences": 940,
+    "exactFeedMatches": 12
+  },
+  "branchAdditions": {
+    "newNews": 4,
+    "newsTotalInPR": 12,
+    "basisCounts": {
+      "article": 10,
+      "metadata": 2
+    },
+    "mainEditorialBefore": 859,
+    "prEditorialAfter": 871,
+    "allNewIdsAndUrlsExact": true
+  },
+  "projectAudit": {
+    "feedProjectCards": 100,
+    "exactEditorialMatches": 100,
+    "missingEditorial": 0,
+    "newPublicProjects": 0,
+    "previousEightReviewed": 8,
+    "previousEightExactFeedCard": 1,
+    "previousEightResearchOnly": 7,
+    "ideasPreserved": 55
+  },
+  "library": {
+    "structuredCatalogEntries": 31,
+    "archived": 2,
+    "active": 29,
+    "exactFeedMatches": 4,
+    "researchOnly": 27,
+    "licenseNeedsUpstreamVerification": 8,
+    "originalMetricsCapturedAt": "2026-10-24T10:38:36.869Z",
+    "eightProjectRefreshAt": "2026-11-06T23:52:47Z"
+  },
+  "workflow": {
+    "mainScheduledRun": 42309533694,
+    "mainConclusion": "failure",
+    "mainFailure": "TypeError NoneType vs str in scripts/update_feed.py merge sort at line 537 comparing score/publishedAt; deploy skipped.",
+    "prValidationRun": 42314640294,
+    "prConclusion": "success",
+    "pythonTests": 30,
+    "editorialEntriesValidated": 871,
+    "jsSyntaxChecks": "passed",
+    "codeChanged": false
+  },
+  "publication": {
+    "lastSuccessfulMainDeploy": 42274694982,
+    "livePagesFetch": "DisabledError",
+    "editorialJsonVerifiedLive": false,
+    "detailNewsVerifiedLive": false,
+    "detailProjectVerifiedLive": false,
+    "merged": false,
+    "published": false
+  },
+  "notExecutedLocally": [
+    "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-11-07-0252.json",
+    "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-11-07-0252.json",
+    "python -m unittest discover -s tests -v"
+  ]
+}
