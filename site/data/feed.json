@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-06T03:29:05+00:00",
+  "generatedAt": "2026-11-06T03:31:39+00:00",
   "timezone": "Asia/Riyadh",
-  "newItems": 12,
+  "newItems": 10,
   "rankNote": "مؤشر تقريبي من تفاعل Hacker News ونجوم GitHub وحداثة التحديث؛ لا يمثل المشاهدات الفعلية.",
   "items": [
     {
@@ -41,7 +41,7 @@
         "https://raw.githubusercontent.com/freeCodeCamp/freeCodeCamp/main/.github/assets/vultr_logo__on-white.png"
       ],
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 98.7
+      "score": 98.68
     },
     {
       "id": "a17476e9d795515213",
@@ -53,11 +53,11 @@
       "source": "GitHub",
       "category": "مفتوح المصدر",
       "region": "عالمي",
-      "publishedAt": "2026-11-06T03:28:44+00:00",
+      "publishedAt": "2026-11-06T03:30:50+00:00",
       "image": "https://raw.githubusercontent.com/NousResearch/hermes-agent/main/assets/banner.png",
       "avatar": "https://avatars.githubusercontent.com/u/134168893?v=4",
-      "stars": 260916,
-      "forks": 57619,
+      "stars": 260918,
+      "forks": 57620,
       "language": "Python",
       "license": "MIT",
       "topics": [
@@ -74,7 +74,7 @@
       ],
       "repo": "NousResearch/hermes-agent",
       "ideaDomain": "agents",
-      "metric": "260,916 نجمة GitHub",
+      "metric": "260,918 نجمة GitHub",
       "gallery": [
         "https://raw.githubusercontent.com/NousResearch/hermes-agent/main/assets/banner.png"
       ],
@@ -117,7 +117,7 @@
         "https://raw.githubusercontent.com/Significant-Gravitas/AutoGPT/master/docs/content/imgs/readme/experts-team.webp"
       ],
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 95.34
+      "score": 95.32
     },
     {
       "id": "53d940334a2a5afd27",
@@ -131,7 +131,7 @@
       "region": "عالمي",
       "publishedAt": "2026-11-06T03:23:58+00:00",
       "image": "https://huggingface.co/datasets/huggingface/documentation-images/raw/main/transformers-logo-light.svg",
-      "score": 94.52,
+      "score": 94.51,
       "stars": 168576,
       "forks": 35124,
       "license": "Apache-2.0",
@@ -160,6 +160,26 @@
       "firstSeenAt": "2026-10-23T19:03:19+00:00"
     },
     {
+      "id": "199af8aea5b6112902",
+      "kind": "news",
+      "title": "Claude Code sends your email address to websites",
+      "description": "موضوع تقني يحظى بنقاش على Hacker News. افتح المصدر الأساسي لمعرفة التفاصيل، ثم راجع النقاش لآراء المطورين.",
+      "impact": "مؤشر التفاعل هنا يعتمد على التصويتات والتعليقات الفعلية في Hacker News، وليس عدد المشاهدات.",
+      "url": "https://github.com/anthropics/claude-code/issues/107757",
+      "source": "Hacker News",
+      "category": "تقنيات",
+      "region": "عالمي",
+      "publishedAt": "2026-11-05T22:17:15+00:00",
+      "image": "",
+      "points": 640,
+      "comments": 220,
+      "hnUrl": "https://news.ycombinator.com/item?id=50385272",
+      "metric": "187 نقطة · 48 تعليق",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-11-05T23:37:14+00:00",
+      "score": 94.13
+    },
+    {
       "id": "1643157b768c76e76e",
       "kind": "project",
       "title": "prompts.chat",
@@ -172,7 +192,7 @@
       "publishedAt": "2026-11-06T03:12:32+00:00",
       "image": "https://prompts.chat/logo.svg",
       "avatar": "https://avatars.githubusercontent.com/u/196477?v=4",
-      "stars": 175911,
+      "stars": 175913,
       "forks": 22435,
       "language": "MDX",
       "license": "NOASSERTION",
@@ -190,33 +210,13 @@
       ],
       "repo": "f/prompts.chat",
       "ideaDomain": "inference",
-      "metric": "175,911 نجمة GitHub",
+      "metric": "175,913 نجمة GitHub",
       "gallery": [
         "https://prompts.chat/logo.svg",
         "https://prompts.chat/promi.svg",
         "https://raw.githubusercontent.com/f/prompts.chat/main/public/sponsors/neon-dark.svg"
       ],
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 94.05
-    },
-    {
-      "id": "199af8aea5b6112902",
-      "kind": "news",
-      "title": "Claude Code sends your email address to websites",
-      "description": "موضوع تقني يحظى بنقاش على Hacker News. افتح المصدر الأساسي لمعرفة التفاصيل، ثم راجع النقاش لآراء المطورين.",
-      "impact": "مؤشر التفاعل هنا يعتمد على التصويتات والتعليقات الفعلية في Hacker News، وليس عدد المشاهدات.",
-      "url": "https://github.com/anthropics/claude-code/issues/107757",
-      "source": "Hacker News",
-      "category": "تقنيات",
-      "region": "عالمي",
-      "publishedAt": "2026-11-05T22:17:15+00:00",
-      "image": "",
-      "points": 632,
-      "comments": 218,
-      "hnUrl": "https://news.ycombinator.com/item?id=50385272",
-      "metric": "187 نقطة · 48 تعليق",
-      "ideaDomain": "general",
-      "firstSeenAt": "2026-11-05T23:37:14+00:00",
       "score": 94.03
     },
     {
@@ -255,7 +255,7 @@
         "https://cdn.openwebui.com/open-webui-demo.gif"
       ],
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 93.5
+      "score": 93.48
     },
     {
       "id": "e9dbf459bd01dca311",
@@ -294,7 +294,7 @@
         "https://raw.githubusercontent.com/firecrawl/firecrawl/main/img/firecrawl_logo.png"
       ],
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 93.49
+      "score": 93.47
     },
     {
       "id": "c5a32632e586ab2c7c",
@@ -332,7 +332,7 @@
         "https://raw.githubusercontent.com/langchain-ai/langchain/master/.github/images/logo-dark.svg"
       ],
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 92.93
+      "score": 92.91
     },
     {
       "id": "6ee2c2a30826817dae",
@@ -344,7 +344,7 @@
       "source": "GitHub",
       "category": "مفتوح المصدر",
       "region": "عالمي",
-      "publishedAt": "2026-11-06T03:29:10+00:00",
+      "publishedAt": "2026-11-06T03:31:09+00:00",
       "image": "https://github.com/pytorch/pytorch/raw/main/docs/source/_static/img/tensor_illustration.png",
       "avatar": "https://avatars.githubusercontent.com/u/21003710?v=4",
       "stars": 105161,
@@ -365,7 +365,7 @@
       "ideaDomain": "education",
       "metric": "105,161 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 92.34,
+      "score": 92.33,
       "gallery": [
         "https://github.com/pytorch/pytorch/raw/main/docs/source/_static/img/tensor_illustration.png",
         "https://github.com/pytorch/pytorch/raw/main/docs/source/_static/img/dynamic_graph.gif",
@@ -382,10 +382,10 @@
       "source": "GitHub",
       "category": "مفتوح المصدر",
       "region": "عالمي",
-      "publishedAt": "2026-11-06T03:27:54+00:00",
+      "publishedAt": "2026-11-06T03:31:20+00:00",
       "image": "https://raw.githubusercontent.com/paperclipai/paperclip/master/doc/assets/banner.jpg",
       "avatar": "https://avatars.githubusercontent.com/u/264498616?v=4",
-      "stars": 111474,
+      "stars": 111475,
       "forks": 18458,
       "language": "TypeScript",
       "license": "MIT",
@@ -403,7 +403,7 @@
       ],
       "repo": "paperclipai/paperclip",
       "ideaDomain": "agents",
-      "metric": "111,474 نجمة GitHub",
+      "metric": "111,475 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
       "score": 91.9,
       "gallery": [
@@ -444,7 +444,7 @@
         "https://raw.githubusercontent.com/Shubhamsaboo/awesome-llm-apps/main/docs/gallery/ai-fraud-investigation.png"
       ],
       "firstSeenAt": "2026-11-04T14:34:56+00:00",
-      "score": 91.76
+      "score": 91.75
     },
     {
       "id": "0604d6a7a7d7afd211",
@@ -459,7 +459,7 @@
       "publishedAt": "2026-11-05T23:34:00+00:00",
       "image": "https://raw.githubusercontent.com/harry0703/MoneyPrinterTurbo/main/docs/webui.jpg",
       "avatar": "https://avatars.githubusercontent.com/u/4928832?v=4",
-      "stars": 139849,
+      "stars": 139851,
       "forks": 22298,
       "language": "Python",
       "license": "MIT",
@@ -477,14 +477,14 @@
       ],
       "repo": "harry0703/MoneyPrinterTurbo",
       "ideaDomain": "agents",
-      "metric": "139,849 نجمة GitHub",
+      "metric": "139,851 نجمة GitHub",
       "gallery": [
         "https://raw.githubusercontent.com/harry0703/MoneyPrinterTurbo/main/docs/webui.jpg",
         "https://raw.githubusercontent.com/harry0703/MoneyPrinterTurbo/main/docs/api.jpg",
         "https://raw.githubusercontent.com/harry0703/MoneyPrinterTurbo/main/docs/sponsors/kimi-k3.1-pro-banner-zh.webp"
       ],
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 91.49
+      "score": 91.47
     },
     {
       "id": "853c63f738f0cecf3b",
@@ -519,7 +519,7 @@
       "ideaDomain": "search",
       "metric": "113,610 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 91.09,
+      "score": 91.07,
       "gallery": [
         "https://raw.githubusercontent.com/thedotmack/claude-mem/main/docs/public/claude-mem-logo-for-light-mode.webp",
         "https://raw.githubusercontent.com/thedotmack/claude-mem/main/docs/public/greptile-wordmark-green.svg",
@@ -559,7 +559,7 @@
       "ideaDomain": "inference",
       "metric": "107,880 نجمة GitHub",
       "firstSeenAt": "2026-10-28T20:15:17+00:00",
-      "score": 90.98
+      "score": 90.96
     },
     {
       "id": "0a8884baa5f55aa660",
@@ -571,10 +571,10 @@
       "source": "GitHub",
       "category": "مفتوح المصدر",
       "region": "عالمي",
-      "publishedAt": "2026-11-06T03:29:04+00:00",
+      "publishedAt": "2026-11-06T03:30:23+00:00",
       "image": "https://raw.githubusercontent.com/stablyai/orca/main/resources/build/icon.png",
       "avatar": "https://avatars.githubusercontent.com/u/127256420?v=4",
-      "stars": 116833,
+      "stars": 116834,
       "forks": 7399,
       "language": "TypeScript",
       "license": "MIT",
@@ -592,9 +592,9 @@
       ],
       "repo": "stablyai/orca",
       "ideaDomain": "agents",
-      "metric": "116,833 نجمة GitHub",
+      "metric": "116,834 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 90.92,
+      "score": 90.91,
       "gallery": [
         "https://raw.githubusercontent.com/stablyai/orca/main/resources/build/icon.png",
         "https://raw.githubusercontent.com/stablyai/orca/main/docs/assets/readme-downloads.svg",
@@ -614,7 +614,7 @@
       "publishedAt": "2026-11-06T01:09:43+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/161781182?v=4",
-      "stars": 108745,
+      "stars": 108746,
       "forks": 14929,
       "language": "TypeScript",
       "license": "Apache-2.0",
@@ -629,9 +629,9 @@
       ],
       "repo": "google-gemini/gemini-cli",
       "ideaDomain": "devtools",
-      "metric": "108,745 نجمة GitHub",
+      "metric": "108,746 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 90.52,
+      "score": 90.5,
       "gallery": []
     },
     {
@@ -672,7 +672,7 @@
         "https://raw.githubusercontent.com/browser-use/browser-use/main/examples/integrations/toolsets-for-claude/architecture-light.svg"
       ],
       "firstSeenAt": "2026-10-30T06:01:31+00:00",
-      "score": 90.21
+      "score": 90.19
     },
     {
       "id": "5ff4bf30ae94874f6d",
@@ -687,7 +687,7 @@
       "publishedAt": "2026-11-06T02:48:23+00:00",
       "image": "https://raw.githubusercontent.com/infiniflow/ragflow/main/web/src/assets/logo-with-text.svg",
       "avatar": "https://avatars.githubusercontent.com/u/69962740?v=4",
-      "stars": 93642,
+      "stars": 93641,
       "forks": 11245,
       "language": "Go",
       "license": "Apache-2.0",
@@ -705,9 +705,9 @@
       ],
       "repo": "infiniflow/ragflow",
       "ideaDomain": "search",
-      "metric": "93,642 نجمة GitHub",
+      "metric": "93,641 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 90.2,
+      "score": 90.18,
       "gallery": [
         "https://raw.githubusercontent.com/infiniflow/ragflow/main/web/src/assets/logo-with-text.svg",
         "https://raw.githubusercontent.com/infiniflow/ragflow-docs/refs/heads/image/image/ragflow-octoverse.png",
@@ -727,7 +727,7 @@
       "publishedAt": "2026-11-06T00:50:21+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/4178343?v=4",
-      "stars": 102043,
+      "stars": 102045,
       "forks": 11316,
       "language": "Python",
       "license": "AGPL-3.0",
@@ -745,9 +745,9 @@
       ],
       "repo": "debpalash/VoiceStudio",
       "ideaDomain": "speech",
-      "metric": "102,043 نجمة GitHub",
+      "metric": "102,045 نجمة GitHub",
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 89.75
+      "score": 89.73
     },
     {
       "id": "26de699d3e5c651e05",
@@ -782,7 +782,7 @@
       "ideaDomain": "agents",
       "metric": "93,924 نجمة GitHub",
       "firstSeenAt": "2026-10-24T14:50:05+00:00",
-      "score": 89.73
+      "score": 89.72
     },
     {
       "id": "d9330c307f7dbfb63c",
@@ -816,7 +816,7 @@
       "ideaDomain": "devtools",
       "metric": "92,764 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 89.42,
+      "score": 89.4,
       "gallery": [
         "https://assets.openhands.dev/logo-whitebackground.png",
         "https://assets.openhands.dev/screenshot/automation-preview.png"
@@ -835,7 +835,7 @@
       "publishedAt": "2026-11-06T01:28:49+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/320819803?v=4",
-      "stars": 84890,
+      "stars": 84891,
       "forks": 12774,
       "language": "TypeScript",
       "license": "MIT",
@@ -853,9 +853,9 @@
       ],
       "repo": "cheaper-inference/OmniRoute",
       "ideaDomain": "inference",
-      "metric": "84,890 نجمة GitHub",
+      "metric": "84,891 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 89.36
+      "score": 89.35
     },
     {
       "id": "1970f2aab6a882fb2b",
@@ -867,7 +867,7 @@
       "source": "GitHub",
       "category": "مفتوح المصدر",
       "region": "عالمي",
-      "publishedAt": "2026-11-06T03:25:25+00:00",
+      "publishedAt": "2026-11-06T03:31:16+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/150920049?v=4",
       "stars": 79087,
@@ -890,7 +890,7 @@
       "ideaDomain": "inference",
       "metric": "79,087 نجمة GitHub",
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 89.17
+      "score": 89.2
     },
     {
       "id": "10b7f65af4f5070207",
@@ -923,7 +923,7 @@
       "ideaDomain": "education",
       "metric": "64,416 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 88.81
+      "score": 88.79
     },
     {
       "id": "112ba4283cccf5b146",
@@ -958,7 +958,7 @@
       "ideaDomain": "vision",
       "metric": "63,169 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 88.78
+      "score": 88.76
     },
     {
       "id": "e23c298591bff98383",
@@ -993,12 +993,32 @@
       "ideaDomain": "search",
       "metric": "143,046 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 88.23,
+      "score": 88.21,
       "gallery": [
         "https://raw.githubusercontent.com/Graphify-Labs/graphify/v8/docs/graphify-logo.png",
         "https://raw.githubusercontent.com/Graphify-Labs/graphify/v8/docs/graph-hero.png",
         "https://raw.githubusercontent.com/Graphify-Labs/graphify/v8/docs/demo-path.svg"
       ]
+    },
+    {
+      "id": "ef3f53e2698295a005",
+      "kind": "news",
+      "title": "MS Paint Remote Code Execution Vulnerability",
+      "description": "موضوع تقني يحظى بنقاش على Hacker News. افتح المصدر الأساسي لمعرفة التفاصيل، ثم راجع النقاش لآراء المطورين.",
+      "impact": "مؤشر التفاعل هنا يعتمد على التصويتات والتعليقات الفعلية في Hacker News، وليس عدد المشاهدات.",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-83844",
+      "source": "Hacker News",
+      "category": "تقنيات",
+      "region": "عالمي",
+      "publishedAt": "2026-11-05T20:43:42+00:00",
+      "image": "",
+      "points": 361,
+      "comments": 135,
+      "hnUrl": "https://news.ycombinator.com/item?id=50384233",
+      "metric": "226 نقطة · 61 تعليق",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-11-05T23:37:14+00:00",
+      "score": 87.81
     },
     {
       "id": "d07066251c23560c45",
@@ -1033,27 +1053,7 @@
       "ideaDomain": "devtools",
       "metric": "85,672 نجمة GitHub",
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 87.82
-    },
-    {
-      "id": "ef3f53e2698295a005",
-      "kind": "news",
-      "title": "MS Paint Remote Code Execution Vulnerability",
-      "description": "موضوع تقني يحظى بنقاش على Hacker News. افتح المصدر الأساسي لمعرفة التفاصيل، ثم راجع النقاش لآراء المطورين.",
-      "impact": "مؤشر التفاعل هنا يعتمد على التصويتات والتعليقات الفعلية في Hacker News، وليس عدد المشاهدات.",
-      "url": "https://www.cve.org/CVERecord?id=CVE-2026-83844",
-      "source": "Hacker News",
-      "category": "تقنيات",
-      "region": "عالمي",
-      "publishedAt": "2026-11-05T20:43:42+00:00",
-      "image": "",
-      "points": 354,
-      "comments": 135,
-      "hnUrl": "https://news.ycombinator.com/item?id=50384233",
-      "metric": "226 نقطة · 61 تعليق",
-      "ideaDomain": "general",
-      "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 87.66
+      "score": 87.8
     },
     {
       "id": "0ccf055fe1d013fe6e",
@@ -1088,7 +1088,7 @@
       "ideaDomain": "inference",
       "metric": "44,213 نجمة GitHub",
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 86.75
+      "score": 86.73
     },
     {
       "id": "8e773aa72402b28ae1",
@@ -1118,7 +1118,7 @@
       "ideaDomain": "education",
       "metric": "68,024 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 86.47
+      "score": 86.45
     },
     {
       "id": "6df9999ebae1cac076",
@@ -1153,7 +1153,7 @@
       "ideaDomain": "search",
       "metric": "46,607 نجمة GitHub",
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 86.09
+      "score": 86.07
     },
     {
       "id": "e8cd7111f3678ea8f9",
@@ -1188,7 +1188,7 @@
       "ideaDomain": "inference",
       "metric": "47,750 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 85.81
+      "score": 85.79
     },
     {
       "id": "48c31e1ffa04c91de3",
@@ -1222,7 +1222,7 @@
       "ideaDomain": "devtools",
       "metric": "95,806 نجمة GitHub",
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 85.37
+      "score": 85.36
     },
     {
       "id": "c72f4d09f7e1695ffd",
@@ -1238,7 +1238,7 @@
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/326694313?v=4",
       "stars": 41163,
-      "forks": 3568,
+      "forks": 3567,
       "language": "Rust",
       "license": "MIT",
       "topics": [
@@ -1257,7 +1257,7 @@
       "ideaDomain": "devtools",
       "metric": "41,163 نجمة GitHub",
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 85.33
+      "score": 85.31
     },
     {
       "id": "0cd4e25205e9e68806",
@@ -1297,7 +1297,7 @@
         "https://raw.githubusercontent.com/krahets/hello-algo/main/docs/index.assets/btn_download_pdf_epub_dark.svg"
       ],
       "firstSeenAt": "2026-10-27T12:06:45+00:00",
-      "score": 85.3
+      "score": 85.29
     },
     {
       "id": "9874efc4c925cc500b",
@@ -1330,7 +1330,7 @@
       "ideaDomain": "devtools",
       "metric": "46,250 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 85.04
+      "score": 85.02
     },
     {
       "id": "4d243cef998a0bb0c8",
@@ -1365,7 +1365,7 @@
       "ideaDomain": "inference",
       "metric": "43,301 نجمة GitHub",
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 84.76
+      "score": 84.74
     },
     {
       "id": "9563de7ec1221e077a",
@@ -1400,7 +1400,7 @@
       "ideaDomain": "inference",
       "metric": "44,000 نجمة GitHub",
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 84.41
+      "score": 84.39
     },
     {
       "id": "e622970364717202be",
@@ -1434,7 +1434,7 @@
       "ideaDomain": "search",
       "metric": "55,528 نجمة GitHub",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 84.09
+      "score": 84.07
     },
     {
       "id": "7b553354eb54440765",
@@ -1469,7 +1469,7 @@
       "ideaDomain": "education",
       "metric": "77,015 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 84.08
+      "score": 84.07
     },
     {
       "id": "890a56b0d2aff0c91c",
@@ -1484,8 +1484,8 @@
       "publishedAt": "2026-11-04T13:06:39+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/148330874?v=4",
-      "stars": 273973,
-      "forks": 33453,
+      "stars": 273976,
+      "forks": 33455,
       "language": "TypeScript",
       "license": "MIT",
       "topics": [
@@ -1496,10 +1496,10 @@
       ],
       "repo": "deepseek-ai/deepseek-harness",
       "ideaDomain": "agents",
-      "metric": "273,973 نجمة GitHub",
+      "metric": "273,976 نجمة GitHub",
       "gallery": [],
       "firstSeenAt": "2026-10-28T03:03:50+00:00",
-      "score": 84.01
+      "score": 84.0
     },
     {
       "id": "9b645e0b8a68f35a66",
@@ -1534,7 +1534,7 @@
       "ideaDomain": "education",
       "metric": "92,025 نجمة GitHub",
       "firstSeenAt": "2026-10-31T05:36:41+00:00",
-      "score": 83.92
+      "score": 83.9
     },
     {
       "id": "92022b258211b4ce35",
@@ -1569,7 +1569,7 @@
       "ideaDomain": "vision",
       "metric": "29,000 نجمة GitHub",
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 83.65
+      "score": 83.64
     },
     {
       "id": "6c62a31152244eb967",
@@ -1604,7 +1604,7 @@
       "ideaDomain": "devtools",
       "metric": "48,220 نجمة GitHub",
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 83.49
+      "score": 83.47
     },
     {
       "id": "04aa3744e1ae44cec6",
@@ -1619,7 +1619,7 @@
       "publishedAt": "2026-11-05T18:51:52+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/53104118?v=4",
-      "stars": 51513,
+      "stars": 51514,
       "forks": 4921,
       "language": "Python",
       "license": "MIT",
@@ -1637,9 +1637,9 @@
       ],
       "repo": "roboflow/supervision",
       "ideaDomain": "vision",
-      "metric": "51,513 نجمة GitHub",
+      "metric": "51,514 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 83.26
+      "score": 83.25
     },
     {
       "id": "e4dd7c24fff16ee320",
@@ -1672,7 +1672,7 @@
       "ideaDomain": "education",
       "metric": "97,115 نجمة GitHub",
       "firstSeenAt": "2026-10-31T12:23:17+00:00",
-      "score": 83.19
+      "score": 83.17
     },
     {
       "id": "b4b4c4e815a5115ed4",
@@ -1686,13 +1686,13 @@
       "region": "عالمي",
       "publishedAt": "2026-11-05T19:08:22+00:00",
       "image": "",
-      "points": 231,
+      "points": 233,
       "comments": 108,
       "hnUrl": "https://news.ycombinator.com/item?id=50383057",
       "metric": "159 نقطة · 70 تعليق",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 83.09
+      "score": 83.15
     },
     {
       "id": "d97790555bfbf345e7",
@@ -1727,7 +1727,7 @@
       "ideaDomain": "devtools",
       "metric": "46,511 نجمة GitHub",
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 83.05
+      "score": 83.04
     },
     {
       "id": "31e483ef3edc6c2a27",
@@ -1741,13 +1741,13 @@
       "region": "عالمي",
       "publishedAt": "2026-11-05T16:50:14+00:00",
       "image": "",
-      "points": 266,
+      "points": 267,
       "comments": 84,
       "hnUrl": "https://news.ycombinator.com/item?id=50381383",
       "metric": "213 نقطة · 76 تعليق",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 82.85
+      "score": 82.87
     },
     {
       "id": "0b42787f451fe03fc9",
@@ -1767,7 +1767,7 @@
       "metric": "162 نقطة · 73 تعليق",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 82.34
+      "score": 82.33
     },
     {
       "id": "0ada5e6099fcc1f9ba",
@@ -1787,7 +1787,7 @@
       "metric": "140 نقطة · 69 تعليق",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 82.27
+      "score": 82.25
     },
     {
       "id": "134916e26204392cdb",
@@ -1822,7 +1822,7 @@
       "ideaDomain": "search",
       "metric": "40,560 نجمة GitHub",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 82.12
+      "score": 82.1
     },
     {
       "id": "55c5e35b9bbd92d15c",
@@ -1837,7 +1837,7 @@
       "publishedAt": "2026-11-05T19:24:38+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/133959746?v=4",
-      "stars": 40046,
+      "stars": 40047,
       "forks": 3447,
       "language": "Python",
       "license": "MIT",
@@ -1855,9 +1855,9 @@
       ],
       "repo": "VectifyAI/PageIndex",
       "ideaDomain": "search",
-      "metric": "40,046 نجمة GitHub",
+      "metric": "40,047 نجمة GitHub",
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 81.9
+      "score": 81.88
     },
     {
       "id": "1bc6057646c21745bb",
@@ -1892,7 +1892,7 @@
       "ideaDomain": "devtools",
       "metric": "80,761 نجمة GitHub",
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 81.81
+      "score": 81.8
     },
     {
       "id": "291d5eb46511b79f06",
@@ -1907,7 +1907,7 @@
       "publishedAt": "2026-11-05T01:12:12+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/219127460?v=4",
-      "stars": 110752,
+      "stars": 110753,
       "forks": 7438,
       "language": "JavaScript",
       "license": "MIT",
@@ -1925,9 +1925,9 @@
       ],
       "repo": "Leonxlnx/taste-skill",
       "ideaDomain": "agents",
-      "metric": "110,752 نجمة GitHub",
+      "metric": "110,753 نجمة GitHub",
       "firstSeenAt": "2026-10-24T23:52:04+00:00",
-      "score": 81.27
+      "score": 81.25
     },
     {
       "id": "e7f1aab302e1f0371e",
@@ -1962,7 +1962,7 @@
       "ideaDomain": "search",
       "metric": "52,823 نجمة GitHub",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 80.97
+      "score": 80.96
     },
     {
       "id": "fbaa86a829ad59fd10",
@@ -1982,7 +1982,27 @@
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
       "hnUrl": "https://news.ycombinator.com/item?id=50372929",
-      "score": 80.96
+      "score": 80.95
+    },
+    {
+      "id": "2bae9b1f767db0945e",
+      "kind": "news",
+      "title": "Cuban: Facebook knowingly runs AI deepfake scam ads; docs say $16B fraud revenue",
+      "description": "موضوع تقني يحظى بنقاش على Hacker News. افتح المصدر الأساسي لمعرفة التفاصيل، ثم راجع النقاش لآراء المطورين.",
+      "impact": "مؤشر التفاعل هنا يعتمد على التصويتات والتعليقات الفعلية في Hacker News، وليس عدد المشاهدات.",
+      "url": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
+      "source": "Hacker News",
+      "category": "تقنيات",
+      "region": "عالمي",
+      "publishedAt": "2026-11-05T23:09:57+00:00",
+      "image": "",
+      "points": 157,
+      "comments": 67,
+      "hnUrl": "https://news.ycombinator.com/item?id=50385870",
+      "metric": "46 نقطة · 12 تعليق",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-11-06T00:46:03+00:00",
+      "score": 80.53
     },
     {
       "id": "bf5e13e89249895fb0",
@@ -2002,27 +2022,7 @@
       "metric": "44 نقطة · 4 تعليق",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 80.54
-    },
-    {
-      "id": "2bae9b1f767db0945e",
-      "kind": "news",
-      "title": "Cuban: Facebook knowingly runs AI deepfake scam ads; docs say $16B fraud revenue",
-      "description": "موضوع تقني يحظى بنقاش على Hacker News. افتح المصدر الأساسي لمعرفة التفاصيل، ثم راجع النقاش لآراء المطورين.",
-      "impact": "مؤشر التفاعل هنا يعتمد على التصويتات والتعليقات الفعلية في Hacker News، وليس عدد المشاهدات.",
-      "url": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
-      "source": "Hacker News",
-      "category": "تقنيات",
-      "region": "عالمي",
-      "publishedAt": "2026-11-05T23:09:57+00:00",
-      "image": "",
-      "points": 154,
-      "comments": 65,
-      "hnUrl": "https://news.ycombinator.com/item?id=50385870",
-      "metric": "46 نقطة · 12 تعليق",
-      "ideaDomain": "general",
-      "firstSeenAt": "2026-11-06T00:46:03+00:00",
-      "score": 80.33
+      "score": 80.52
     },
     {
       "id": "55f45778dbc81d6a27",
@@ -2057,7 +2057,7 @@
       "ideaDomain": "speech",
       "metric": "17,646 نجمة GitHub",
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 80.05
+      "score": 80.03
     },
     {
       "id": "8d397f7a7077f1abc0",
@@ -2092,7 +2092,7 @@
       "ideaDomain": "speech",
       "metric": "15,769 نجمة GitHub",
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 79.93
+      "score": 79.91
     },
     {
       "id": "6ac7d177869c8f2b1f",
@@ -2126,7 +2126,7 @@
       "ideaDomain": "vision",
       "metric": "36,137 نجمة GitHub",
       "firstSeenAt": "2026-10-26T23:49:36+00:00",
-      "score": 79.81
+      "score": 79.79
     },
     {
       "id": "bf767323e9676daa26",
@@ -2146,7 +2146,7 @@
       "metric": "213 نقطة · 104 تعليق",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 79.51
+      "score": 79.5
     },
     {
       "id": "64b454fa51b65ab3d9",
@@ -2166,7 +2166,7 @@
       "metric": "41 نقطة · 6 تعليق",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 78.74
+      "score": 78.72
     },
     {
       "id": "d4316f8d5082c97897",
@@ -2201,7 +2201,7 @@
       "ideaDomain": "vision",
       "metric": "70,594 نجمة GitHub",
       "firstSeenAt": "2026-10-23T19:03:19+00:00",
-      "score": 78.71
+      "score": 78.7
     },
     {
       "id": "81a7dc557ad3e7bb66",
@@ -2216,8 +2216,8 @@
       "publishedAt": "2026-11-05T06:24:03+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/245557608?v=4",
-      "stars": 62556,
-      "forks": 1695,
+      "stars": 62561,
+      "forks": 1696,
       "language": "JavaScript",
       "license": "MIT",
       "topics": [
@@ -2234,9 +2234,9 @@
       ],
       "repo": "Ebony-Vinyl/dsh-our-free-model",
       "ideaDomain": "inference",
-      "metric": "62,556 نجمة GitHub",
+      "metric": "62,561 نجمة GitHub",
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 78.4
+      "score": 78.39
     },
     {
       "id": "8cf5140931d8ef20d8",
@@ -2271,7 +2271,7 @@
       "ideaDomain": "speech",
       "metric": "41,111 نجمة GitHub",
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 78.39
+      "score": 78.37
     },
     {
       "id": "295354ff422b0d4db9",
@@ -2291,7 +2291,7 @@
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
       "hnUrl": "https://news.ycombinator.com/item?id=50372945",
-      "score": 77.73
+      "score": 77.72
     },
     {
       "id": "25c21cf5edda05ffc8",
@@ -2322,7 +2322,7 @@
       "ideaDomain": "devtools",
       "metric": "40,289 نجمة GitHub",
       "firstSeenAt": "2026-11-05T09:28:16+00:00",
-      "score": 77.53
+      "score": 77.52
     },
     {
       "id": "d46d1480c37c463a90",
@@ -2357,7 +2357,7 @@
       "ideaDomain": "search",
       "metric": "86,961 نجمة GitHub",
       "firstSeenAt": "2026-10-28T20:15:17+00:00",
-      "score": 77.07
+      "score": 77.06
     },
     {
       "id": "c7d21c81942f9a6ade",
@@ -2392,7 +2392,7 @@
       "ideaDomain": "devtools",
       "metric": "43,252 نجمة GitHub",
       "firstSeenAt": "2026-10-28T20:15:17+00:00",
-      "score": 77.01
+      "score": 76.99
     },
     {
       "id": "047dfb5b10d52e5eb6",
@@ -2427,7 +2427,7 @@
       "ideaDomain": "speech",
       "metric": "10,007 نجمة GitHub",
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 76.91
+      "score": 76.89
     },
     {
       "id": "25c2b7d9d66adefad3",
@@ -2441,13 +2441,13 @@
       "region": "عالمي",
       "publishedAt": "2026-11-05T09:29:12+00:00",
       "image": "",
-      "points": 167,
-      "comments": 92,
+      "points": 168,
+      "comments": 93,
       "hnUrl": "https://news.ycombinator.com/item?id=50377078",
       "metric": "139 نقطة · 78 تعليق",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 76.67
+      "score": 76.73
     },
     {
       "id": "c5ca51374c960089ad",
@@ -2467,7 +2467,7 @@
       "metric": "102 نقطة · 6 تعليق",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 76.64
+      "score": 76.63
     },
     {
       "id": "014216b2538f3c1773",
@@ -2502,7 +2502,7 @@
       "ideaDomain": "data",
       "metric": "22,118 نجمة GitHub",
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 76.55
+      "score": 76.54
     },
     {
       "id": "b98f0560cd5ec2475d",
@@ -2533,7 +2533,7 @@
       "ideaDomain": "speech",
       "metric": "19,646 نجمة GitHub",
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 76.42
+      "score": 76.4
     },
     {
       "id": "a0f1f7b609e7c58a19",
@@ -2571,7 +2571,7 @@
         "https://raw.githubusercontent.com/TheAlgorithms/website/1cd824df116b27029f17c2d1b42d81731f28a920/public/logo.svg"
       ],
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 76.38
+      "score": 76.37
     },
     {
       "id": "f74d5b6b78b8a1a444",
@@ -2606,7 +2606,7 @@
       "ideaDomain": "devtools",
       "metric": "48,182 نجمة GitHub",
       "firstSeenAt": "2026-10-27T18:04:03+00:00",
-      "score": 76.26
+      "score": 76.25
     },
     {
       "id": "edb3a626875732de5c",
@@ -2647,6 +2647,26 @@
       "score": 75.75
     },
     {
+      "id": "187bb7cb1c545322a4",
+      "kind": "news",
+      "title": "Inkling 2 Small",
+      "description": "موضوع تقني يحظى بنقاش على Hacker News. افتح المصدر الأساسي لمعرفة التفاصيل، ثم راجع النقاش لآراء المطورين.",
+      "impact": "مؤشر التفاعل هنا يعتمد على التصويتات والتعليقات الفعلية في Hacker News، وليس عدد المشاهدات.",
+      "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+      "source": "Hacker News",
+      "category": "تقنيات",
+      "region": "عالمي",
+      "publishedAt": "2026-11-06T00:00:24+00:00",
+      "image": "",
+      "points": 93,
+      "comments": 41,
+      "hnUrl": "https://news.ycombinator.com/item?id=50386338",
+      "metric": "18 نقطة · 4 تعليق",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-11-06T00:46:03+00:00",
+      "score": 75.61
+    },
+    {
       "id": "d503d5458006786718",
       "kind": "project",
       "title": "free-programming-books",
@@ -2675,27 +2695,7 @@
       "metric": "400,996 نجمة GitHub",
       "gallery": [],
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 75.47
-    },
-    {
-      "id": "187bb7cb1c545322a4",
-      "kind": "news",
-      "title": "Inkling 2 Small",
-      "description": "موضوع تقني يحظى بنقاش على Hacker News. افتح المصدر الأساسي لمعرفة التفاصيل، ثم راجع النقاش لآراء المطورين.",
-      "impact": "مؤشر التفاعل هنا يعتمد على التصويتات والتعليقات الفعلية في Hacker News، وليس عدد المشاهدات.",
-      "url": "https://thinkingmachines.ai/news/inkling-2-small/",
-      "source": "Hacker News",
-      "category": "تقنيات",
-      "region": "عالمي",
-      "publishedAt": "2026-11-06T00:00:24+00:00",
-      "image": "",
-      "points": 91,
-      "comments": 41,
-      "hnUrl": "https://news.ycombinator.com/item?id=50386338",
-      "metric": "18 نقطة · 4 تعليق",
-      "ideaDomain": "general",
-      "firstSeenAt": "2026-11-06T00:46:03+00:00",
-      "score": 75.45
+      "score": 75.46
     },
     {
       "id": "458c04cd04ca960bc3",
@@ -2750,8 +2750,8 @@
       "publishedAt": "2026-11-03T17:42:02+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/213189893?v=4",
-      "stars": 77249,
-      "forks": 10262,
+      "stars": 77250,
+      "forks": 10263,
       "language": "Python",
       "license": "AGPL-3.0",
       "topics": [
@@ -2768,9 +2768,9 @@
       ],
       "repo": "calesthio/OpenMontage",
       "ideaDomain": "vision",
-      "metric": "77,249 نجمة GitHub",
+      "metric": "77,250 نجمة GitHub",
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 72.88
+      "score": 72.87
     },
     {
       "id": "9c79addb856a9fb17d",
@@ -2789,7 +2789,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-30T18:04:46+00:00",
-      "score": 72.88,
+      "score": 72.87,
       "hnUrl": "https://news.ycombinator.com/item?id=50336918"
     },
     {
@@ -2824,7 +2824,7 @@
       "ideaDomain": "speech",
       "metric": "8,207 نجمة GitHub",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 72.84
+      "score": 72.83
     },
     {
       "id": "8ea7b5016269d351c8",
@@ -2919,7 +2919,7 @@
       "metric": "3 نقطة · 0 تعليق",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 70.3
+      "score": 70.28
     },
     {
       "id": "00a13632669d98d0bc",
@@ -2954,7 +2954,7 @@
       "ideaDomain": "vision",
       "metric": "6,432 نجمة GitHub",
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 70.12
+      "score": 70.1
     },
     {
       "id": "1be4fdd8e6ca80f0ec",
@@ -2974,7 +2974,27 @@
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
       "hnUrl": "https://news.ycombinator.com/item?id=50366863",
-      "score": 69.74
+      "score": 69.73
+    },
+    {
+      "id": "24e1aea537d2f6598e",
+      "kind": "news",
+      "title": "Show HN: Stroq – a local audit of what your coding agent did and why",
+      "description": "موضوع تقني يحظى بنقاش على Hacker News. افتح المصدر الأساسي لمعرفة التفاصيل، ثم راجع النقاش لآراء المطورين.",
+      "impact": "مؤشر التفاعل هنا يعتمد على التصويتات والتعليقات الفعلية في Hacker News، وليس عدد المشاهدات.",
+      "url": "https://github.com/AGGIB/Stroq",
+      "source": "Hacker News",
+      "category": "تقنيات",
+      "region": "عالمي",
+      "publishedAt": "2026-11-05T15:54:41+00:00",
+      "image": "",
+      "points": 74,
+      "comments": 22,
+      "hnUrl": "https://news.ycombinator.com/item?id=50380704",
+      "metric": "10 نقطة · 3 تعليق",
+      "ideaDomain": "general",
+      "firstSeenAt": "2026-11-05T17:23:02+00:00",
+      "score": 69.34
     },
     {
       "id": "b537afdfa7640c3681",
@@ -2994,7 +3014,7 @@
       "metric": "63 نقطة · 1 تعليق",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 69.3
+      "score": 69.29
     },
     {
       "id": "bafafb1d70eae30ce1",
@@ -3014,7 +3034,7 @@
       "metric": "12 نقطة · 1 تعليق",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 69.19
+      "score": 69.18
     },
     {
       "id": "92c9b5cfe3d8601484",
@@ -3044,7 +3064,7 @@
       "ideaDomain": "search",
       "metric": "28,731 نجمة GitHub",
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 68.65
+      "score": 68.64
     },
     {
       "id": "576c6507cbdd1cf31f",
@@ -3059,7 +3079,7 @@
       "publishedAt": "2026-11-03T11:36:13+00:00",
       "image": "",
       "avatar": "https://avatars.githubusercontent.com/u/309108654?v=4",
-      "stars": 48334,
+      "stars": 48335,
       "forks": 3888,
       "language": "Rust",
       "license": "Apache-2.0",
@@ -3077,7 +3097,7 @@
       ],
       "repo": "herdrdev/herdr",
       "ideaDomain": "devtools",
-      "metric": "48,334 نجمة GitHub",
+      "metric": "48,335 نجمة GitHub",
       "firstSeenAt": "2026-11-06T03:25:19+00:00",
       "score": 68.52
     },
@@ -3102,26 +3122,6 @@
       "score": 67.79
     },
     {
-      "id": "24e1aea537d2f6598e",
-      "kind": "news",
-      "title": "Show HN: Stroq – a local audit of what your coding agent did and why",
-      "description": "موضوع تقني يحظى بنقاش على Hacker News. افتح المصدر الأساسي لمعرفة التفاصيل، ثم راجع النقاش لآراء المطورين.",
-      "impact": "مؤشر التفاعل هنا يعتمد على التصويتات والتعليقات الفعلية في Hacker News، وليس عدد المشاهدات.",
-      "url": "https://github.com/AGGIB/Stroq",
-      "source": "Hacker News",
-      "category": "تقنيات",
-      "region": "عالمي",
-      "publishedAt": "2026-11-05T15:54:41+00:00",
-      "image": "",
-      "points": 67,
-      "comments": 14,
-      "hnUrl": "https://news.ycombinator.com/item?id=50380704",
-      "metric": "10 نقطة · 3 تعليق",
-      "ideaDomain": "general",
-      "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 67.65
-    },
-    {
       "id": "38c3408d933af173aa",
       "kind": "project",
       "title": "ponytail",
@@ -3134,8 +3134,8 @@
       "publishedAt": "2026-10-29T11:59:31+00:00",
       "image": "https://raw.githubusercontent.com/DietrichGebert/ponytail/main/assets/logo.png",
       "avatar": "https://avatars.githubusercontent.com/u/137048761?v=4",
-      "stars": 185302,
-      "forks": 10251,
+      "stars": 185303,
+      "forks": 10252,
       "language": "JavaScript",
       "license": "MIT",
       "topics": [
@@ -3152,7 +3152,7 @@
       ],
       "repo": "DietrichGebert/ponytail",
       "ideaDomain": "agents",
-      "metric": "185,302 نجمة GitHub",
+      "metric": "185,303 نجمة GitHub",
       "gallery": [
         "https://raw.githubusercontent.com/DietrichGebert/ponytail/main/assets/logo.png",
         "https://raw.githubusercontent.com/DietrichGebert/ponytail/main/assets/stories-banner.png",
@@ -3249,7 +3249,7 @@
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T05:50:07+00:00",
       "hnUrl": "https://news.ycombinator.com/item?id=50345924",
-      "score": 66.19
+      "score": 66.18
     },
     {
       "id": "62ef7f21559e7b7bce",
@@ -3269,7 +3269,7 @@
       "metric": "100 نقطة · 5 تعليق",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 65.47
+      "score": 65.46
     },
     {
       "id": "ae21dd5e42d6ab53ce",
@@ -3339,7 +3339,7 @@
       "ideaDomain": "search",
       "metric": "39,634 نجمة GitHub",
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 64.69
+      "score": 64.68
     },
     {
       "id": "9e59b2d01cdf2c5068",
@@ -3524,7 +3524,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-30T22:16:16+00:00",
-      "score": 62.48,
+      "score": 62.47,
       "hnUrl": "https://news.ycombinator.com/item?id=50338474"
     },
     {
@@ -3666,13 +3666,13 @@
       "region": "عالمي",
       "publishedAt": "2026-11-06T00:54:15+00:00",
       "image": "",
-      "points": 15,
+      "points": 16,
       "comments": 10,
       "hnUrl": "https://news.ycombinator.com/item?id=50386789",
       "metric": "15 نقطة · 10 تعليق",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-06T03:25:19+00:00",
-      "score": 58.66
+      "score": 59.14
     },
     {
       "id": "dd11a4f10dd18591c8",
@@ -3803,7 +3803,7 @@
       "ideaDomain": "speech",
       "metric": "8,191 نجمة GitHub",
       "firstSeenAt": "2026-10-24T10:21:59+00:00",
-      "score": 56.08
+      "score": 56.07
     },
     {
       "id": "d8145bb67a0001adeb",
@@ -3987,7 +3987,7 @@
       "metric": "12 نقطة · 8 تعليق",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 52.84
+      "score": 52.82
     },
     {
       "id": "9207e699adc3a415c8",
@@ -4075,7 +4075,8 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-06T03:29:05+00:00",
-      "score": 35.93
+      "score": 35.91,
+      "hnUrl": ""
     },
     {
       "id": "f96100f1a79cee33e4",
@@ -4095,7 +4096,7 @@
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-06T03:25:19+00:00",
       "hnUrl": "",
-      "score": 35.79
+      "score": 35.77
     },
     {
       "id": "2b77231153d4ebd054",
@@ -4114,7 +4115,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-06T03:25:19+00:00",
-      "score": 35.31,
+      "score": 35.29,
       "hnUrl": ""
     },
     {
@@ -4134,7 +4135,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-06T03:25:19+00:00",
-      "score": 34.78,
+      "score": 34.76,
       "hnUrl": ""
     },
     {
@@ -4154,7 +4155,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-06T03:25:19+00:00",
-      "score": 34.63,
+      "score": 34.62,
       "hnUrl": ""
     },
     {
@@ -4174,7 +4175,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-06T00:46:03+00:00",
-      "score": 34.56,
+      "score": 34.54,
       "hnUrl": ""
     },
     {
@@ -4194,7 +4195,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-06T00:46:03+00:00",
-      "score": 34.56,
+      "score": 34.54,
       "hnUrl": ""
     },
     {
@@ -4214,7 +4215,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-06T00:46:03+00:00",
-      "score": 34.41,
+      "score": 34.4,
       "hnUrl": ""
     },
     {
@@ -4234,7 +4235,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-06T00:46:03+00:00",
-      "score": 34.34,
+      "score": 34.32,
       "hnUrl": ""
     },
     {
@@ -4254,7 +4255,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 34.22,
+      "score": 34.2,
       "hnUrl": ""
     },
     {
@@ -4274,7 +4275,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-06T00:46:03+00:00",
-      "score": 34.17,
+      "score": 34.15,
       "hnUrl": ""
     },
     {
@@ -4294,7 +4295,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 34.11,
+      "score": 34.09,
       "hnUrl": ""
     },
     {
@@ -4314,7 +4315,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-06T00:46:03+00:00",
-      "score": 34.03,
+      "score": 34.01,
       "hnUrl": ""
     },
     {
@@ -4334,7 +4335,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 34.0,
+      "score": 33.99,
       "hnUrl": ""
     },
     {
@@ -4355,7 +4356,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 33.98,
+      "score": 33.96,
       "hnUrl": ""
     },
     {
@@ -4375,7 +4376,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 33.89,
+      "score": 33.88,
       "hnUrl": ""
     },
     {
@@ -4395,7 +4396,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 33.88,
+      "score": 33.86,
       "hnUrl": ""
     },
     {
@@ -4415,7 +4416,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 33.83,
+      "score": 33.81,
       "hnUrl": ""
     },
     {
@@ -4435,7 +4436,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 33.82,
+      "score": 33.8,
       "hnUrl": ""
     },
     {
@@ -4455,7 +4456,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 33.77,
+      "score": 33.75,
       "hnUrl": ""
     },
     {
@@ -4475,7 +4476,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 33.68,
+      "score": 33.66,
       "hnUrl": ""
     },
     {
@@ -4495,7 +4496,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 33.66,
+      "score": 33.65,
       "hnUrl": ""
     },
     {
@@ -4515,7 +4516,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 33.57,
+      "score": 33.55,
       "hnUrl": ""
     },
     {
@@ -4535,7 +4536,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 33.57,
+      "score": 33.55,
       "hnUrl": ""
     },
     {
@@ -4555,7 +4556,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 33.56,
+      "score": 33.55,
       "hnUrl": ""
     },
     {
@@ -4575,7 +4576,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 33.56,
+      "score": 33.55,
       "hnUrl": ""
     },
     {
@@ -4595,7 +4596,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 33.55,
+      "score": 33.53,
       "hnUrl": ""
     },
     {
@@ -4615,7 +4616,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 33.48,
+      "score": 33.46,
       "hnUrl": ""
     },
     {
@@ -4635,7 +4636,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 33.31,
+      "score": 33.29,
       "hnUrl": ""
     },
     {
@@ -4655,7 +4656,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 33.31,
+      "score": 33.29,
       "hnUrl": ""
     },
     {
@@ -4675,7 +4676,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 33.22,
+      "score": 33.2,
       "hnUrl": ""
     },
     {
@@ -4695,7 +4696,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 33.21,
+      "score": 33.19,
       "hnUrl": ""
     },
     {
@@ -4715,7 +4716,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 33.15,
+      "score": 33.14,
       "hnUrl": ""
     },
     {
@@ -4735,7 +4736,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 33.13,
+      "score": 33.11,
       "hnUrl": ""
     },
     {
@@ -4755,7 +4756,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 33.06,
+      "score": 33.04,
       "hnUrl": ""
     },
     {
@@ -4775,7 +4776,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 32.91,
+      "score": 32.9,
       "hnUrl": ""
     },
     {
@@ -4795,7 +4796,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-06T03:25:19+00:00",
-      "score": 32.91,
+      "score": 32.89,
       "hnUrl": ""
     },
     {
@@ -4815,7 +4816,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 32.91,
+      "score": 32.89,
       "hnUrl": ""
     },
     {
@@ -4835,7 +4836,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 32.9,
+      "score": 32.88,
       "hnUrl": ""
     },
     {
@@ -4855,7 +4856,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 32.88,
+      "score": 32.86,
       "hnUrl": ""
     },
     {
@@ -4875,7 +4876,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 32.86,
+      "score": 32.85,
       "hnUrl": ""
     },
     {
@@ -4896,7 +4897,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 32.83,
+      "score": 32.82,
       "hnUrl": ""
     },
     {
@@ -4916,7 +4917,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 32.82,
+      "score": 32.81,
       "hnUrl": ""
     },
     {
@@ -4936,7 +4937,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 32.77,
+      "score": 32.76,
       "hnUrl": ""
     },
     {
@@ -4957,7 +4958,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 32.75,
+      "score": 32.73,
       "hnUrl": ""
     },
     {
@@ -4977,7 +4978,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 32.7,
+      "score": 32.68,
       "hnUrl": ""
     },
     {
@@ -4997,7 +4998,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 32.63,
+      "score": 32.61,
       "hnUrl": ""
     },
     {
@@ -5018,7 +5019,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 32.6,
+      "score": 32.59,
       "hnUrl": ""
     },
     {
@@ -5039,7 +5040,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 32.56,
+      "score": 32.55,
       "hnUrl": ""
     },
     {
@@ -5059,7 +5060,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 32.51,
+      "score": 32.49,
       "hnUrl": ""
     },
     {
@@ -5079,7 +5080,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 32.46,
+      "score": 32.44,
       "hnUrl": ""
     },
     {
@@ -5100,7 +5101,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 32.16,
+      "score": 32.14,
       "hnUrl": ""
     },
     {
@@ -5121,7 +5122,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 32.14,
+      "score": 32.13,
       "hnUrl": ""
     },
     {
@@ -5141,7 +5142,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 32.14,
+      "score": 32.13,
       "hnUrl": ""
     },
     {
@@ -5161,7 +5162,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 32.14,
+      "score": 32.13,
       "hnUrl": ""
     },
     {
@@ -5181,7 +5182,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 32.09
+      "score": 32.08
     },
     {
       "id": "e6d6c85b3eb3fa4e89",
@@ -5200,7 +5201,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 32.08
+      "score": 32.06
     },
     {
       "id": "2fb0a4cf322f754bef",
@@ -5219,7 +5220,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 32.02,
+      "score": 32.0,
       "hnUrl": ""
     },
     {
@@ -5239,7 +5240,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 31.9
+      "score": 31.88
     },
     {
       "id": "6b4ce26bfa3f06838b",
@@ -5258,7 +5259,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 31.85
+      "score": 31.84
     },
     {
       "id": "c84a4cb62f0462d241",
@@ -5277,7 +5278,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 31.83
+      "score": 31.82
     },
     {
       "id": "616c68177b707eae60",
@@ -5296,7 +5297,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-06T03:25:19+00:00",
-      "score": 31.77,
+      "score": 31.75,
       "hnUrl": ""
     },
     {
@@ -5316,7 +5317,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 31.72
+      "score": 31.7
     },
     {
       "id": "7f806f4d6ebc196f3a",
@@ -5335,7 +5336,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 31.67,
+      "score": 31.66,
       "hnUrl": ""
     },
     {
@@ -5355,7 +5356,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 31.58
+      "score": 31.57
     },
     {
       "id": "011c5e85f3c9969e93",
@@ -5374,7 +5375,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 31.58,
+      "score": 31.57,
       "hnUrl": ""
     },
     {
@@ -5394,7 +5395,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 31.57,
+      "score": 31.55,
       "hnUrl": ""
     },
     {
@@ -5415,7 +5416,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 31.5,
+      "score": 31.49,
       "hnUrl": ""
     },
     {
@@ -5435,7 +5436,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 31.41,
+      "score": 31.4,
       "hnUrl": ""
     },
     {
@@ -5455,7 +5456,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 31.4,
+      "score": 31.38,
       "hnUrl": ""
     },
     {
@@ -5475,7 +5476,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 31.4,
+      "score": 31.38,
       "hnUrl": ""
     },
     {
@@ -5495,7 +5496,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 31.4,
+      "score": 31.38,
       "hnUrl": ""
     },
     {
@@ -5515,7 +5516,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 31.4,
+      "score": 31.38,
       "hnUrl": ""
     },
     {
@@ -5535,7 +5536,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 31.4,
+      "score": 31.38,
       "hnUrl": ""
     },
     {
@@ -5555,7 +5556,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 31.31,
+      "score": 31.29,
       "hnUrl": ""
     },
     {
@@ -5575,7 +5576,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 31.27,
+      "score": 31.25,
       "hnUrl": ""
     },
     {
@@ -5595,7 +5596,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 31.16,
+      "score": 31.14,
       "hnUrl": ""
     },
     {
@@ -5615,7 +5616,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 31.15
+      "score": 31.14
     },
     {
       "id": "74bb7f13b00f34a521",
@@ -5635,7 +5636,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 31.15,
+      "score": 31.14,
       "hnUrl": ""
     },
     {
@@ -5655,7 +5656,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 31.04,
+      "score": 31.02,
       "hnUrl": ""
     },
     {
@@ -5675,7 +5676,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 31.03,
+      "score": 31.02,
       "hnUrl": ""
     },
     {
@@ -5695,7 +5696,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 31.01,
+      "score": 30.99,
       "hnUrl": ""
     },
     {
@@ -5715,7 +5716,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.97,
+      "score": 30.95,
       "hnUrl": ""
     },
     {
@@ -5735,7 +5736,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.96
+      "score": 30.95
     },
     {
       "id": "ec1966491ff28b1901",
@@ -5755,7 +5756,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.93,
+      "score": 30.91,
       "hnUrl": ""
     },
     {
@@ -5775,7 +5776,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.71,
+      "score": 30.7,
       "hnUrl": ""
     },
     {
@@ -5795,7 +5796,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.71,
+      "score": 30.69,
       "hnUrl": ""
     },
     {
@@ -5815,7 +5816,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.71
+      "score": 30.69
     },
     {
       "id": "15ff44881fd0bc6766",
@@ -5834,7 +5835,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.7,
+      "score": 30.69,
       "hnUrl": ""
     },
     {
@@ -5854,7 +5855,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.7
+      "score": 30.69
     },
     {
       "id": "4fdcbc1ea59f5a0528",
@@ -5873,7 +5874,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.7,
+      "score": 30.68,
       "hnUrl": ""
     },
     {
@@ -5893,7 +5894,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.68
+      "score": 30.67
     },
     {
       "id": "7454d4ff670f497745",
@@ -5912,7 +5913,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.68,
+      "score": 30.67,
       "hnUrl": ""
     },
     {
@@ -5933,7 +5934,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.68,
+      "score": 30.67,
       "hnUrl": ""
     },
     {
@@ -5953,7 +5954,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.68,
+      "score": 30.67,
       "hnUrl": ""
     },
     {
@@ -5973,7 +5974,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.68,
+      "score": 30.67,
       "hnUrl": ""
     },
     {
@@ -5993,7 +5994,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.68,
+      "score": 30.67,
       "hnUrl": ""
     },
     {
@@ -6013,7 +6014,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.68,
+      "score": 30.67,
       "hnUrl": ""
     },
     {
@@ -6033,7 +6034,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.68,
+      "score": 30.67,
       "hnUrl": ""
     },
     {
@@ -6053,7 +6054,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.68,
+      "score": 30.67,
       "hnUrl": ""
     },
     {
@@ -6073,7 +6074,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.68,
+      "score": 30.66,
       "hnUrl": ""
     },
     {
@@ -6093,7 +6094,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.66,
+      "score": 30.65,
       "hnUrl": ""
     },
     {
@@ -6113,7 +6114,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-06T03:25:19+00:00",
-      "score": 30.66,
+      "score": 30.65,
       "hnUrl": ""
     },
     {
@@ -6133,7 +6134,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.66,
+      "score": 30.65,
       "hnUrl": ""
     },
     {
@@ -6153,7 +6154,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.66,
+      "score": 30.64,
       "hnUrl": ""
     },
     {
@@ -6173,7 +6174,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.51
+      "score": 30.5
     },
     {
       "id": "e68f74f7c9323d3a46",
@@ -6192,7 +6193,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.49,
+      "score": 30.48,
       "hnUrl": ""
     },
     {
@@ -6212,7 +6213,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.33,
+      "score": 30.32,
       "hnUrl": ""
     },
     {
@@ -6233,7 +6234,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.33,
+      "score": 30.31,
       "hnUrl": ""
     },
     {
@@ -6253,7 +6254,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.33,
+      "score": 30.31,
       "hnUrl": ""
     },
     {
@@ -6273,7 +6274,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.33,
+      "score": 30.31,
       "hnUrl": ""
     },
     {
@@ -6293,7 +6294,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.33,
+      "score": 30.31,
       "hnUrl": ""
     },
     {
@@ -6313,7 +6314,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 30.28,
+      "score": 30.27,
       "hnUrl": ""
     },
     {
@@ -6333,7 +6334,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.2
+      "score": 30.18
     },
     {
       "id": "81b6f0bda13c690b1a",
@@ -6352,7 +6353,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.16,
+      "score": 30.14,
       "hnUrl": ""
     },
     {
@@ -6372,7 +6373,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.06
+      "score": 30.05
     },
     {
       "id": "e7b69e01c3e7f36dab",
@@ -6391,7 +6392,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 30.02
+      "score": 30.0
     },
     {
       "id": "0639117defa113f999",
@@ -6410,7 +6411,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 29.99,
+      "score": 29.97,
       "hnUrl": ""
     },
     {
@@ -6430,7 +6431,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 29.98,
+      "score": 29.97,
       "hnUrl": ""
     },
     {
@@ -6450,7 +6451,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 29.98,
+      "score": 29.97,
       "hnUrl": ""
     },
     {
@@ -6470,7 +6471,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 29.98,
+      "score": 29.97,
       "hnUrl": ""
     },
     {
@@ -6490,7 +6491,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 29.98,
+      "score": 29.97,
       "hnUrl": ""
     },
     {
@@ -6510,7 +6511,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 29.94,
+      "score": 29.92,
       "hnUrl": ""
     },
     {
@@ -6530,7 +6531,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 29.9,
+      "score": 29.88,
       "hnUrl": ""
     },
     {
@@ -6550,7 +6551,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 29.81,
+      "score": 29.8,
       "hnUrl": ""
     },
     {
@@ -6570,7 +6571,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 29.78,
+      "score": 29.76,
       "hnUrl": ""
     },
     {
@@ -6590,7 +6591,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 29.77,
+      "score": 29.76,
       "hnUrl": ""
     },
     {
@@ -6610,7 +6611,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 29.64
+      "score": 29.63
     },
     {
       "id": "c7fac8b4f4907ee816",
@@ -6629,7 +6630,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 29.56
+      "score": 29.54
     },
     {
       "id": "d2ae9f0f149ea0fdff",
@@ -6648,7 +6649,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 29.47,
+      "score": 29.46,
       "hnUrl": ""
     },
     {
@@ -6668,7 +6669,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 29.36,
+      "score": 29.34,
       "hnUrl": ""
     },
     {
@@ -6688,7 +6689,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 29.31,
+      "score": 29.29,
       "hnUrl": ""
     },
     {
@@ -6708,7 +6709,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 29.11
+      "score": 29.1
     },
     {
       "id": "99a5021ac5ef0d3ffb",
@@ -6727,7 +6728,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 28.98,
+      "score": 28.96,
       "hnUrl": ""
     },
     {
@@ -6747,7 +6748,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 28.98,
+      "score": 28.96,
       "hnUrl": ""
     },
     {
@@ -6767,7 +6768,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T09:04:59+00:00",
-      "score": 28.86,
+      "score": 28.84,
       "hnUrl": ""
     },
     {
@@ -6787,7 +6788,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T09:04:59+00:00",
-      "score": 28.74,
+      "score": 28.72,
       "hnUrl": ""
     },
     {
@@ -6807,7 +6808,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-06T03:29:05+00:00",
-      "score": 28.73
+      "score": 28.72
     },
     {
       "id": "db9792e954d4470109",
@@ -6826,7 +6827,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 28.65,
+      "score": 28.64,
       "hnUrl": ""
     },
     {
@@ -6846,7 +6847,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T09:04:59+00:00",
-      "score": 28.64,
+      "score": 28.63,
       "hnUrl": ""
     },
     {
@@ -6866,7 +6867,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T09:04:59+00:00",
-      "score": 28.51,
+      "score": 28.5,
       "hnUrl": ""
     },
     {
@@ -6886,7 +6887,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T09:04:59+00:00",
-      "score": 28.33,
+      "score": 28.32,
       "hnUrl": ""
     },
     {
@@ -6906,7 +6907,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 28.23,
+      "score": 28.21,
       "hnUrl": ""
     },
     {
@@ -6926,7 +6927,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 28.02,
+      "score": 28.0,
       "hnUrl": ""
     },
     {
@@ -6946,7 +6947,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 28.02,
+      "score": 28.0,
       "hnUrl": ""
     },
     {
@@ -6966,7 +6967,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 28.02,
+      "score": 28.0,
       "hnUrl": ""
     },
     {
@@ -6986,7 +6987,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 28.02,
+      "score": 28.0,
       "hnUrl": ""
     },
     {
@@ -7006,7 +7007,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 28.02,
+      "score": 28.0,
       "hnUrl": ""
     },
     {
@@ -7026,7 +7027,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 28.02,
+      "score": 28.0,
       "hnUrl": ""
     },
     {
@@ -7046,7 +7047,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 28.02,
+      "score": 28.0,
       "hnUrl": ""
     },
     {
@@ -7066,7 +7067,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 28.02,
+      "score": 28.0,
       "hnUrl": ""
     },
     {
@@ -7086,7 +7087,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 28.02,
+      "score": 28.0,
       "hnUrl": ""
     },
     {
@@ -7106,7 +7107,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 28.02,
+      "score": 28.0,
       "hnUrl": ""
     },
     {
@@ -7126,7 +7127,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 28.02,
+      "score": 28.0,
       "hnUrl": ""
     },
     {
@@ -7146,7 +7147,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 28.02,
+      "score": 28.0,
       "hnUrl": ""
     },
     {
@@ -7166,7 +7167,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 28.01,
+      "score": 28.0,
       "hnUrl": ""
     },
     {
@@ -7187,7 +7188,7 @@
       "metric": "0 نقطة · 0 تعليق",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 27.78
+      "score": 27.76
     },
     {
       "id": "f846b630bec3a503da",
@@ -7206,7 +7207,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7226,7 +7227,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7246,7 +7247,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7266,7 +7267,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7286,7 +7287,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7306,7 +7307,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7326,7 +7327,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7346,7 +7347,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7366,7 +7367,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7386,7 +7387,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7406,7 +7407,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7426,7 +7427,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7446,7 +7447,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7466,7 +7467,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7486,7 +7487,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7506,7 +7507,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7526,7 +7527,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7546,7 +7547,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7566,7 +7567,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7586,7 +7587,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7606,7 +7607,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7626,7 +7627,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7646,7 +7647,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7666,7 +7667,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7686,7 +7687,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7706,7 +7707,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7726,7 +7727,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7746,7 +7747,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7766,7 +7767,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7786,7 +7787,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7806,7 +7807,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7826,7 +7827,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7846,7 +7847,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7866,7 +7867,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7886,7 +7887,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7906,7 +7907,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7926,7 +7927,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7946,7 +7947,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7966,7 +7967,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -7986,7 +7987,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -8006,7 +8007,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -8026,7 +8027,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -8046,7 +8047,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -8066,7 +8067,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -8086,7 +8087,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -8106,7 +8107,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -8126,7 +8127,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -8146,7 +8147,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -8166,7 +8167,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -8186,7 +8187,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -8206,7 +8207,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -8226,7 +8227,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -8246,7 +8247,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -8266,7 +8267,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -8286,7 +8287,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -8306,7 +8307,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -8326,7 +8327,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -8346,7 +8347,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -8366,7 +8367,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -8386,7 +8387,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -8406,7 +8407,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -8426,7 +8427,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -8446,7 +8447,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -8466,7 +8467,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -8486,7 +8487,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -8506,7 +8507,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -8526,7 +8527,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -8546,7 +8547,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 27.71,
+      "score": 27.69,
       "hnUrl": ""
     },
     {
@@ -8566,7 +8567,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 26.8,
+      "score": 26.79,
       "hnUrl": ""
     },
     {
@@ -8587,7 +8588,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 26.64,
+      "score": 26.63,
       "hnUrl": ""
     },
     {
@@ -8608,7 +8609,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 26.52,
+      "score": 26.51,
       "hnUrl": ""
     },
     {
@@ -8628,7 +8629,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-06T00:46:03+00:00",
-      "score": 26.44,
+      "score": 26.43,
       "hnUrl": ""
     },
     {
@@ -8648,7 +8649,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 26.34,
+      "score": 26.33,
       "hnUrl": ""
     },
     {
@@ -8668,7 +8669,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 26.22,
+      "score": 26.21,
       "hnUrl": ""
     },
     {
@@ -8688,7 +8689,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-06T03:25:19+00:00",
-      "score": 26.22,
+      "score": 26.21,
       "hnUrl": ""
     },
     {
@@ -8708,7 +8709,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 26.19,
+      "score": 26.17,
       "hnUrl": ""
     },
     {
@@ -8728,7 +8729,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 26.0,
+      "score": 25.99,
       "hnUrl": ""
     },
     {
@@ -8748,7 +8749,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 25.99
+      "score": 25.98
     },
     {
       "id": "0f0d3295ebee653920",
@@ -8767,7 +8768,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 25.92,
+      "score": 25.91,
       "hnUrl": ""
     },
     {
@@ -8787,7 +8788,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 25.89,
+      "score": 25.87,
       "hnUrl": ""
     },
     {
@@ -8808,7 +8809,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 25.87,
+      "score": 25.86,
       "hnUrl": ""
     },
     {
@@ -8828,7 +8829,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 25.86,
+      "score": 25.85,
       "hnUrl": ""
     },
     {
@@ -8848,7 +8849,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 25.8,
+      "score": 25.79,
       "hnUrl": ""
     },
     {
@@ -8868,7 +8869,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 25.79,
+      "score": 25.78,
       "hnUrl": ""
     },
     {
@@ -8889,7 +8890,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 25.72,
+      "score": 25.71,
       "hnUrl": ""
     },
     {
@@ -8909,7 +8910,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 25.65,
+      "score": 25.64,
       "hnUrl": ""
     },
     {
@@ -8930,7 +8931,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 25.65,
+      "score": 25.63,
       "hnUrl": ""
     },
     {
@@ -8950,7 +8951,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 25.59,
+      "score": 25.58,
       "hnUrl": ""
     },
     {
@@ -8970,7 +8971,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 25.59,
+      "score": 25.58,
       "hnUrl": ""
     },
     {
@@ -8990,7 +8991,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 25.57,
+      "score": 25.55,
       "hnUrl": ""
     },
     {
@@ -9010,7 +9011,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 25.53,
+      "score": 25.51,
       "hnUrl": ""
     },
     {
@@ -9031,7 +9032,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 25.51,
+      "score": 25.49,
       "hnUrl": ""
     },
     {
@@ -9051,7 +9052,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 25.49,
+      "score": 25.47,
       "hnUrl": ""
     },
     {
@@ -9071,7 +9072,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 25.45,
+      "score": 25.44,
       "hnUrl": ""
     },
     {
@@ -9091,7 +9092,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 25.45,
+      "score": 25.44,
       "hnUrl": ""
     },
     {
@@ -9111,7 +9112,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 25.45,
+      "score": 25.44,
       "hnUrl": ""
     },
     {
@@ -9132,7 +9133,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 25.44,
+      "score": 25.43,
       "hnUrl": ""
     },
     {
@@ -9152,7 +9153,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 25.41,
+      "score": 25.4,
       "hnUrl": ""
     },
     {
@@ -9172,7 +9173,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 25.4,
+      "score": 25.38,
       "hnUrl": ""
     },
     {
@@ -9192,7 +9193,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 25.39
+      "score": 25.38
     },
     {
       "id": "486c70c94cb0cc7c69",
@@ -9211,7 +9212,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 25.37,
+      "score": 25.36,
       "hnUrl": ""
     },
     {
@@ -9231,7 +9232,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 25.28,
+      "score": 25.27,
       "hnUrl": ""
     },
     {
@@ -9251,7 +9252,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 25.22,
+      "score": 25.2,
       "hnUrl": ""
     },
     {
@@ -9272,7 +9273,7 @@
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
       "hnUrl": "",
-      "score": 25.12
+      "score": 25.11
     },
     {
       "id": "5b49d6fb67be28ff59",
@@ -9291,7 +9292,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 25.05,
+      "score": 25.04,
       "hnUrl": ""
     },
     {
@@ -9312,7 +9313,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 24.99,
+      "score": 24.98,
       "hnUrl": ""
     },
     {
@@ -9333,7 +9334,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 24.99,
+      "score": 24.97,
       "hnUrl": ""
     },
     {
@@ -9354,7 +9355,7 @@
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
       "hnUrl": "",
-      "score": 24.91
+      "score": 24.9
     },
     {
       "id": "b734ada978fc92df56",
@@ -9373,7 +9374,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 24.89,
+      "score": 24.88,
       "hnUrl": ""
     },
     {
@@ -9394,7 +9395,7 @@
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
       "hnUrl": "",
-      "score": 24.88
+      "score": 24.86
     },
     {
       "id": "7e4f7adddfbaac34bb",
@@ -9413,7 +9414,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 24.87
+      "score": 24.86
     },
     {
       "id": "e9e54c3d98570018f3",
@@ -9432,7 +9433,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 24.81,
+      "score": 24.8,
       "hnUrl": ""
     },
     {
@@ -9453,7 +9454,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 24.79,
+      "score": 24.78,
       "hnUrl": ""
     },
     {
@@ -9473,7 +9474,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 24.69,
+      "score": 24.67,
       "hnUrl": ""
     },
     {
@@ -9493,7 +9494,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 24.68,
+      "score": 24.67,
       "hnUrl": ""
     },
     {
@@ -9513,7 +9514,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 24.64,
+      "score": 24.63,
       "hnUrl": ""
     },
     {
@@ -9533,7 +9534,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 24.6,
+      "score": 24.59,
       "hnUrl": ""
     },
     {
@@ -9553,7 +9554,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 24.59,
+      "score": 24.58,
       "hnUrl": ""
     },
     {
@@ -9574,7 +9575,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 24.55,
+      "score": 24.54,
       "hnUrl": ""
     },
     {
@@ -9594,7 +9595,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 24.54,
+      "score": 24.53,
       "hnUrl": ""
     },
     {
@@ -9614,7 +9615,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 24.52
+      "score": 24.51
     },
     {
       "id": "94e4d3a4cb473032a4",
@@ -9634,7 +9635,7 @@
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
       "hnUrl": "",
-      "score": 24.5
+      "score": 24.49
     },
     {
       "id": "d4ea17937f043b5bf6",
@@ -9653,7 +9654,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 24.38
+      "score": 24.37
     },
     {
       "id": "4856d9c20538bd654e",
@@ -9673,7 +9674,7 @@
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
       "hnUrl": "",
-      "score": 24.36
+      "score": 24.35
     },
     {
       "id": "9c9264e69c1c284bc2",
@@ -9693,7 +9694,7 @@
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
       "hnUrl": "",
-      "score": 24.34
+      "score": 24.33
     },
     {
       "id": "39e8a656305a785d4e",
@@ -9712,7 +9713,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 24.33,
+      "score": 24.32,
       "hnUrl": ""
     },
     {
@@ -9733,7 +9734,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 24.3,
+      "score": 24.29,
       "hnUrl": ""
     },
     {
@@ -9753,7 +9754,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 24.29,
+      "score": 24.28,
       "hnUrl": ""
     },
     {
@@ -9773,7 +9774,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 24.29
+      "score": 24.28
     },
     {
       "id": "bce0ffcba988b4eacb",
@@ -9793,7 +9794,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 24.16,
+      "score": 24.14,
       "hnUrl": ""
     },
     {
@@ -9813,7 +9814,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 24.12,
+      "score": 24.11,
       "hnUrl": ""
     },
     {
@@ -9833,7 +9834,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 24.11,
+      "score": 24.1,
       "hnUrl": ""
     },
     {
@@ -9853,7 +9854,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 24.05,
+      "score": 24.04,
       "hnUrl": ""
     },
     {
@@ -9873,7 +9874,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 24.02,
+      "score": 24.01,
       "hnUrl": ""
     },
     {
@@ -9893,7 +9894,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 24.01,
+      "score": 24.0,
       "hnUrl": ""
     },
     {
@@ -9913,7 +9914,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 23.89,
+      "score": 23.88,
       "hnUrl": ""
     },
     {
@@ -9933,7 +9934,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 23.87,
+      "score": 23.86,
       "hnUrl": ""
     },
     {
@@ -9953,7 +9954,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 23.8
+      "score": 23.79
     },
     {
       "id": "b4b560276b721c3595",
@@ -9972,7 +9973,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T14:34:56+00:00",
-      "score": 23.66,
+      "score": 23.65,
       "hnUrl": ""
     },
     {
@@ -9993,7 +9994,7 @@
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T14:34:56+00:00",
       "hnUrl": "",
-      "score": 23.65
+      "score": 23.64
     },
     {
       "id": "3b3c6162a28fd20dce",
@@ -10012,7 +10013,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T14:34:56+00:00",
-      "score": 23.62,
+      "score": 23.61,
       "hnUrl": ""
     },
     {
@@ -10032,7 +10033,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T14:34:56+00:00",
-      "score": 23.6,
+      "score": 23.59,
       "hnUrl": ""
     },
     {
@@ -10052,7 +10053,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T14:34:56+00:00",
-      "score": 23.58,
+      "score": 23.57,
       "hnUrl": ""
     },
     {
@@ -10072,7 +10073,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T09:04:59+00:00",
-      "score": 23.47,
+      "score": 23.46,
       "hnUrl": ""
     },
     {
@@ -10093,7 +10094,7 @@
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T14:34:56+00:00",
       "hnUrl": "",
-      "score": 23.36
+      "score": 23.35
     },
     {
       "id": "bc62d77ed328e80e76",
@@ -10113,7 +10114,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-04T14:34:56+00:00",
-      "score": 23.35,
+      "score": 23.34,
       "hnUrl": ""
     },
     {
@@ -10133,7 +10134,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 23.33,
+      "score": 23.32,
       "hnUrl": ""
     },
     {
@@ -10154,7 +10155,7 @@
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T14:34:56+00:00",
       "hnUrl": "",
-      "score": 23.2
+      "score": 23.19
     },
     {
       "id": "81d1dcc30eef0fe01a",
@@ -10173,7 +10174,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 23.16
+      "score": 23.15
     },
     {
       "id": "8a00ee8d536f468423",
@@ -10192,7 +10193,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T14:34:56+00:00",
-      "score": 23.01,
+      "score": 23.0,
       "hnUrl": ""
     },
     {
@@ -10212,7 +10213,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 22.64,
+      "score": 22.63,
       "hnUrl": ""
     },
     {
@@ -10232,7 +10233,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T14:34:56+00:00",
-      "score": 22.58,
+      "score": 22.57,
       "hnUrl": ""
     },
     {
@@ -10252,7 +10253,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T14:34:56+00:00",
-      "score": 22.42
+      "score": 22.41
     },
     {
       "id": "c553c242273bc768d2",
@@ -10271,7 +10272,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T14:34:56+00:00",
-      "score": 22.41
+      "score": 22.4
     },
     {
       "id": "7fdbfee7c414072aa6",
@@ -10290,7 +10291,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 22.36
+      "score": 22.35
     },
     {
       "id": "632532d8badc27ea07",
@@ -10329,7 +10330,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T23:37:14+00:00",
-      "score": 22.19,
+      "score": 22.18,
       "hnUrl": ""
     },
     {
@@ -10349,7 +10350,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T17:23:02+00:00",
-      "score": 21.98,
+      "score": 21.97,
       "hnUrl": ""
     },
     {
@@ -10369,7 +10370,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 21.97,
+      "score": 21.96,
       "hnUrl": ""
     },
     {
@@ -10390,7 +10391,7 @@
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T14:34:56+00:00",
       "hnUrl": "",
-      "score": 21.97
+      "score": 21.96
     },
     {
       "id": "44bde11b6d316933c5",
@@ -10409,7 +10410,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T06:15:09+00:00",
-      "score": 21.76,
+      "score": 21.75,
       "hnUrl": ""
     },
     {
@@ -10429,7 +10430,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 21.63,
+      "score": 21.62,
       "hnUrl": ""
     },
     {
@@ -10449,7 +10450,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T06:15:09+00:00",
-      "score": 21.54,
+      "score": 21.53,
       "hnUrl": ""
     },
     {
@@ -10469,7 +10470,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T06:15:09+00:00",
-      "score": 20.65,
+      "score": 20.64,
       "hnUrl": ""
     },
     {
@@ -10489,7 +10490,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T06:15:09+00:00",
-      "score": 20.65,
+      "score": 20.64,
       "hnUrl": ""
     },
     {
@@ -10509,7 +10510,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T06:15:09+00:00",
-      "score": 20.54
+      "score": 20.53
     },
     {
       "id": "3b529b3fa995d03b53",
@@ -10528,7 +10529,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T06:15:09+00:00",
-      "score": 20.53,
+      "score": 20.52,
       "hnUrl": ""
     },
     {
@@ -10548,7 +10549,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-05T06:42:16+00:00",
-      "score": 20.53,
+      "score": 20.52,
       "hnUrl": ""
     },
     {
@@ -10568,7 +10569,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 20.34,
+      "score": 20.33,
       "hnUrl": ""
     },
     {
@@ -10588,7 +10589,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 20.3,
+      "score": 20.29,
       "hnUrl": ""
     },
     {
@@ -10609,7 +10610,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 20.27,
+      "score": 20.26,
       "hnUrl": ""
     },
     {
@@ -10629,7 +10630,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T06:15:09+00:00",
-      "score": 20.27,
+      "score": 20.26,
       "hnUrl": ""
     },
     {
@@ -10650,7 +10651,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 20.2,
+      "score": 20.19,
       "hnUrl": ""
     },
     {
@@ -10671,7 +10672,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 20.09,
+      "score": 20.08,
       "hnUrl": ""
     },
     {
@@ -10691,7 +10692,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T14:34:56+00:00",
-      "score": 20.07
+      "score": 20.06
     },
     {
       "id": "192f6267a29015055a",
@@ -10710,7 +10711,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 20.04
+      "score": 20.03
     },
     {
       "id": "e529e3957e845009c4",
@@ -10730,7 +10731,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 19.97,
+      "score": 19.96,
       "hnUrl": ""
     },
     {
@@ -10750,7 +10751,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 19.89,
+      "score": 19.88,
       "hnUrl": ""
     },
     {
@@ -10771,7 +10772,7 @@
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T06:15:09+00:00",
       "hnUrl": "",
-      "score": 19.76
+      "score": 19.75
     },
     {
       "id": "64e891378c13ac062e",
@@ -10791,7 +10792,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 19.69,
+      "score": 19.68,
       "hnUrl": ""
     },
     {
@@ -10811,7 +10812,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T06:15:09+00:00",
-      "score": 19.54,
+      "score": 19.53,
       "hnUrl": ""
     },
     {
@@ -10832,7 +10833,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 19.53,
+      "score": 19.52,
       "hnUrl": ""
     },
     {
@@ -10852,7 +10853,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 19.5,
+      "score": 19.49,
       "hnUrl": ""
     },
     {
@@ -10872,7 +10873,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 19.46,
+      "score": 19.45,
       "hnUrl": ""
     },
     {
@@ -10892,7 +10893,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T06:15:09+00:00",
-      "score": 19.46,
+      "score": 19.45,
       "hnUrl": ""
     },
     {
@@ -10912,7 +10913,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T06:15:09+00:00",
-      "score": 19.45
+      "score": 19.44
     },
     {
       "id": "20c226af3944f42cda",
@@ -10931,7 +10932,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 19.43,
+      "score": 19.42,
       "hnUrl": ""
     },
     {
@@ -10951,7 +10952,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 19.41,
+      "score": 19.4,
       "hnUrl": ""
     },
     {
@@ -10971,7 +10972,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 19.39
+      "score": 19.38
     },
     {
       "id": "b3b7fa6c1f3dcbf6ed",
@@ -10990,7 +10991,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 19.39,
+      "score": 19.38,
       "hnUrl": ""
     },
     {
@@ -11010,7 +11011,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 19.29,
+      "score": 19.28,
       "hnUrl": ""
     },
     {
@@ -11052,7 +11053,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 19.27,
+      "score": 19.26,
       "hnUrl": ""
     },
     {
@@ -11072,7 +11073,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 19.25,
+      "score": 19.24,
       "hnUrl": ""
     },
     {
@@ -11093,7 +11094,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 19.25,
+      "score": 19.24,
       "hnUrl": ""
     },
     {
@@ -11114,7 +11115,7 @@
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
       "hnUrl": "",
-      "score": 19.25
+      "score": 19.24
     },
     {
       "id": "c01265aacc1a10af6e",
@@ -11133,7 +11134,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T17:00:40+00:00",
-      "score": 19.23
+      "score": 19.22
     },
     {
       "id": "d3c378a140c2811af1",
@@ -11152,7 +11153,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 19.2,
+      "score": 19.19,
       "hnUrl": ""
     },
     {
@@ -11173,7 +11174,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-03T17:00:40+00:00",
-      "score": 19.16,
+      "score": 19.15,
       "hnUrl": ""
     },
     {
@@ -11193,7 +11194,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 19.15
+      "score": 19.14
     },
     {
       "id": "0258c4a6a879691802",
@@ -11213,7 +11214,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-03T17:00:40+00:00",
-      "score": 19.14,
+      "score": 19.13,
       "hnUrl": ""
     },
     {
@@ -11233,7 +11234,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T17:00:40+00:00",
-      "score": 19.12,
+      "score": 19.11,
       "hnUrl": ""
     },
     {
@@ -11253,7 +11254,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T17:00:40+00:00",
-      "score": 19.11,
+      "score": 19.1,
       "hnUrl": ""
     },
     {
@@ -11273,7 +11274,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T17:00:40+00:00",
-      "score": 19.1,
+      "score": 19.09,
       "hnUrl": ""
     },
     {
@@ -11395,7 +11396,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-03T17:00:40+00:00",
-      "score": 18.99,
+      "score": 18.98,
       "hnUrl": ""
     },
     {
@@ -11415,7 +11416,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T21:18:59+00:00",
-      "score": 18.91
+      "score": 18.9
     },
     {
       "id": "7a3ef14ef8bf3db3e4",
@@ -11434,7 +11435,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T17:00:40+00:00",
-      "score": 18.9,
+      "score": 18.89,
       "hnUrl": ""
     },
     {
@@ -11454,7 +11455,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T17:00:40+00:00",
-      "score": 18.85,
+      "score": 18.84,
       "hnUrl": ""
     },
     {
@@ -11474,7 +11475,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T17:00:40+00:00",
-      "score": 18.84,
+      "score": 18.83,
       "hnUrl": ""
     },
     {
@@ -11495,7 +11496,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-03T17:00:40+00:00",
-      "score": 18.8,
+      "score": 18.79,
       "hnUrl": ""
     },
     {
@@ -11515,7 +11516,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 18.77,
+      "score": 18.76,
       "hnUrl": ""
     },
     {
@@ -11595,7 +11596,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T06:15:09+00:00",
-      "score": 18.68
+      "score": 18.67
     },
     {
       "id": "3c8afba8002f50eb4b",
@@ -11614,7 +11615,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-04T06:15:09+00:00",
-      "score": 18.6
+      "score": 18.59
     },
     {
       "id": "27f8dbbdb35b530959",
@@ -11653,7 +11654,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T17:00:40+00:00",
-      "score": 18.56,
+      "score": 18.55,
       "hnUrl": ""
     },
     {
@@ -11693,7 +11694,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T17:00:40+00:00",
-      "score": 18.52,
+      "score": 18.51,
       "hnUrl": ""
     },
     {
@@ -11713,7 +11714,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 18.52,
+      "score": 18.51,
       "hnUrl": ""
     },
     {
@@ -11733,7 +11734,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 18.48,
+      "score": 18.47,
       "hnUrl": ""
     },
     {
@@ -11753,7 +11754,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T17:00:40+00:00",
-      "score": 18.46,
+      "score": 18.45,
       "hnUrl": ""
     },
     {
@@ -11774,7 +11775,7 @@
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T17:00:40+00:00",
       "hnUrl": "",
-      "score": 18.45
+      "score": 18.44
     },
     {
       "id": "77a943fbf3a8c3cd14",
@@ -11793,7 +11794,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 18.4,
+      "score": 18.39,
       "hnUrl": ""
     },
     {
@@ -11853,7 +11854,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T17:00:40+00:00",
-      "score": 18.14,
+      "score": 18.13,
       "hnUrl": ""
     },
     {
@@ -11873,7 +11874,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T17:00:40+00:00",
-      "score": 18.05,
+      "score": 18.04,
       "hnUrl": ""
     },
     {
@@ -11913,7 +11914,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T17:00:40+00:00",
-      "score": 18.03,
+      "score": 18.02,
       "hnUrl": ""
     },
     {
@@ -11933,7 +11934,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T17:00:40+00:00",
-      "score": 17.99,
+      "score": 17.98,
       "hnUrl": ""
     },
     {
@@ -12034,7 +12035,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T17:00:40+00:00",
-      "score": 17.61,
+      "score": 17.6,
       "hnUrl": ""
     },
     {
@@ -12073,7 +12074,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T17:00:40+00:00",
-      "score": 17.33
+      "score": 17.32
     },
     {
       "id": "328792a5952bead006",
@@ -12092,7 +12093,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T06:43:54+00:00",
-      "score": 17.31
+      "score": 17.3
     },
     {
       "id": "ee436535aedf916948",
@@ -12152,7 +12153,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-03T05:50:07+00:00",
-      "score": 16.86,
+      "score": 16.85,
       "hnUrl": ""
     },
     {
@@ -12173,7 +12174,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-03T05:50:07+00:00",
-      "score": 16.69,
+      "score": 16.68,
       "hnUrl": ""
     },
     {
@@ -12194,7 +12195,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-03T17:00:40+00:00",
-      "score": 16.61,
+      "score": 16.6,
       "hnUrl": ""
     },
     {
@@ -12214,7 +12215,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 16.61,
+      "score": 16.6,
       "hnUrl": ""
     },
     {
@@ -12234,7 +12235,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T23:20:11+00:00",
-      "score": 16.61,
+      "score": 16.6,
       "hnUrl": ""
     },
     {
@@ -12254,7 +12255,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T05:50:07+00:00",
-      "score": 16.59
+      "score": 16.58
     },
     {
       "id": "139c26e626b236b31f",
@@ -12273,7 +12274,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T05:50:07+00:00",
-      "score": 16.59,
+      "score": 16.58,
       "hnUrl": ""
     },
     {
@@ -12314,7 +12315,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-03T05:50:07+00:00",
-      "score": 16.51,
+      "score": 16.5,
       "hnUrl": ""
     },
     {
@@ -12355,7 +12356,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-03T05:50:07+00:00",
-      "score": 16.38,
+      "score": 16.37,
       "hnUrl": ""
     },
     {
@@ -12436,7 +12437,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-02T21:41:46+00:00",
-      "score": 16.02,
+      "score": 16.01,
       "hnUrl": ""
     },
     {
@@ -12477,7 +12478,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T21:41:46+00:00",
-      "score": 15.99,
+      "score": 15.98,
       "hnUrl": ""
     },
     {
@@ -12557,7 +12558,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T21:41:46+00:00",
-      "score": 15.85,
+      "score": 15.84,
       "hnUrl": ""
     },
     {
@@ -12577,7 +12578,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T21:41:46+00:00",
-      "score": 15.84,
+      "score": 15.83,
       "hnUrl": ""
     },
     {
@@ -12597,7 +12598,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T05:50:07+00:00",
-      "score": 15.84,
+      "score": 15.83,
       "hnUrl": ""
     },
     {
@@ -12617,7 +12618,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T05:50:07+00:00",
-      "score": 15.84,
+      "score": 15.83,
       "hnUrl": ""
     },
     {
@@ -12657,7 +12658,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T21:41:46+00:00",
-      "score": 15.77,
+      "score": 15.76,
       "hnUrl": ""
     },
     {
@@ -12696,7 +12697,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T21:41:46+00:00",
-      "score": 15.74,
+      "score": 15.73,
       "hnUrl": ""
     },
     {
@@ -12717,7 +12718,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-02T21:41:46+00:00",
-      "score": 15.66,
+      "score": 15.65,
       "hnUrl": ""
     },
     {
@@ -12798,7 +12799,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T21:41:46+00:00",
-      "score": 15.48,
+      "score": 15.47,
       "hnUrl": ""
     },
     {
@@ -12819,7 +12820,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-02T21:41:46+00:00",
-      "score": 15.48,
+      "score": 15.47,
       "hnUrl": ""
     },
     {
@@ -12859,7 +12860,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T21:41:46+00:00",
-      "score": 15.37,
+      "score": 15.36,
       "hnUrl": ""
     },
     {
@@ -12899,7 +12900,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T21:41:46+00:00",
-      "score": 15.36,
+      "score": 15.35,
       "hnUrl": ""
     },
     {
@@ -12939,7 +12940,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T06:43:54+00:00",
-      "score": 15.28
+      "score": 15.27
     },
     {
       "id": "bb8fd8aff105b4d3dd",
@@ -12978,7 +12979,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T21:41:46+00:00",
-      "score": 15.14,
+      "score": 15.13,
       "hnUrl": ""
     },
     {
@@ -12998,7 +12999,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T17:00:40+00:00",
-      "score": 15.09,
+      "score": 15.08,
       "hnUrl": ""
     },
     {
@@ -13019,7 +13020,7 @@
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T21:41:46+00:00",
       "hnUrl": "",
-      "score": 15.09
+      "score": 15.08
     },
     {
       "id": "b17158639229090397",
@@ -13138,7 +13139,7 @@
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T21:41:46+00:00",
       "hnUrl": "",
-      "score": 14.98
+      "score": 14.97
     },
     {
       "id": "e4c907cf61584e2017",
@@ -13196,7 +13197,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.87,
+      "score": 14.86,
       "hnUrl": ""
     },
     {
@@ -13315,7 +13316,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.76,
+      "score": 14.75,
       "hnUrl": ""
     },
     {
@@ -13354,7 +13355,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13374,7 +13375,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13394,7 +13395,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13414,7 +13415,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13434,7 +13435,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13454,7 +13455,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13474,7 +13475,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13494,7 +13495,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13514,7 +13515,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13534,7 +13535,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13554,7 +13555,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13574,7 +13575,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13594,7 +13595,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13614,7 +13615,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13634,7 +13635,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13654,7 +13655,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13674,7 +13675,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13694,7 +13695,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13714,7 +13715,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13734,7 +13735,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13754,7 +13755,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13774,7 +13775,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13794,7 +13795,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13814,7 +13815,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13834,7 +13835,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13854,7 +13855,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13874,7 +13875,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13894,7 +13895,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13914,7 +13915,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13934,7 +13935,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13954,7 +13955,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13974,7 +13975,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -13994,7 +13995,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -14014,7 +14015,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -14034,7 +14035,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T05:50:07+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -14054,7 +14055,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T05:50:07+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -14074,7 +14075,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T05:50:07+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -14094,7 +14095,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T05:50:07+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -14114,7 +14115,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T05:50:07+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -14134,7 +14135,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T05:50:07+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -14154,7 +14155,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T05:50:07+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -14174,7 +14175,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T05:50:07+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -14194,7 +14195,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T05:50:07+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -14214,7 +14215,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T05:50:07+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -14234,7 +14235,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T05:50:07+00:00",
-      "score": 14.4,
+      "score": 14.39,
       "hnUrl": ""
     },
     {
@@ -14254,7 +14255,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 14.38,
+      "score": 14.37,
       "hnUrl": ""
     },
     {
@@ -14294,7 +14295,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T21:41:46+00:00",
-      "score": 13.92,
+      "score": 13.91,
       "hnUrl": ""
     },
     {
@@ -14314,7 +14315,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T05:50:07+00:00",
-      "score": 13.92,
+      "score": 13.91,
       "hnUrl": ""
     },
     {
@@ -14354,7 +14355,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-03T17:00:40+00:00",
-      "score": 13.83,
+      "score": 13.82,
       "hnUrl": ""
     },
     {
@@ -14374,7 +14375,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
-      "score": 13.79
+      "score": 13.78
     },
     {
       "id": "e621a5b384ce839c8a",
@@ -14394,7 +14395,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-02T00:42:44+00:00",
-      "score": 13.73,
+      "score": 13.72,
       "hnUrl": ""
     },
     {
@@ -14415,7 +14416,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-02T00:42:44+00:00",
-      "score": 13.7,
+      "score": 13.69,
       "hnUrl": ""
     },
     {
@@ -14435,7 +14436,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T00:42:44+00:00",
-      "score": 13.65
+      "score": 13.64
     },
     {
       "id": "c33aab374796d53e0f",
@@ -14476,7 +14477,7 @@
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T10:58:55+00:00",
       "hnUrl": "",
-      "score": 13.6
+      "score": 13.59
     },
     {
       "id": "ccb034c41db96aa333",
@@ -14495,7 +14496,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-02T00:42:44+00:00",
-      "score": 13.53
+      "score": 13.52
     },
     {
       "id": "60506285f7f3d32157",
@@ -14514,7 +14515,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-01T19:38:16+00:00",
-      "score": 13.49,
+      "score": 13.48,
       "hnUrl": ""
     },
     {
@@ -14554,7 +14555,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-01T19:38:16+00:00",
-      "score": 13.39,
+      "score": 13.38,
       "hnUrl": ""
     },
     {
@@ -14574,7 +14575,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-01T19:38:16+00:00",
-      "score": 13.32
+      "score": 13.31
     },
     {
       "id": "1ba974446ad2a4b24c",
@@ -14593,7 +14594,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-01T19:38:16+00:00",
-      "score": 13.26
+      "score": 13.25
     },
     {
       "id": "614b98da4443c0edc3",
@@ -14691,7 +14692,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-01T19:38:16+00:00",
-      "score": 13.11
+      "score": 13.1
     },
     {
       "id": "0ee853412e89a01568",
@@ -14710,7 +14711,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-01T19:38:16+00:00",
-      "score": 13.1
+      "score": 13.09
     },
     {
       "id": "e9345298bf4b8a54a6",
@@ -14748,7 +14749,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-01T13:18:34+00:00",
-      "score": 13.0
+      "score": 12.99
     },
     {
       "id": "2af6b0db11cc663cdd",
@@ -14807,7 +14808,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-01T19:38:16+00:00",
-      "score": 12.92,
+      "score": 12.91,
       "hnUrl": ""
     },
     {
@@ -14846,7 +14847,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-01T19:38:16+00:00",
-      "score": 12.86,
+      "score": 12.85,
       "hnUrl": ""
     },
     {
@@ -14906,7 +14907,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-01T11:47:00+00:00",
-      "score": 12.81,
+      "score": 12.8,
       "hnUrl": ""
     },
     {
@@ -14927,7 +14928,7 @@
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-01T11:47:00+00:00",
       "hnUrl": "",
-      "score": 12.8
+      "score": 12.79
     },
     {
       "id": "079905b23a28875386",
@@ -14966,7 +14967,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-01T11:47:00+00:00",
-      "score": 12.72,
+      "score": 12.71,
       "hnUrl": ""
     },
     {
@@ -15142,7 +15143,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-01T05:58:42+00:00",
-      "score": 12.22,
+      "score": 12.21,
       "hnUrl": ""
     },
     {
@@ -15224,7 +15225,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-01T00:06:41+00:00",
-      "score": 11.92,
+      "score": 11.91,
       "hnUrl": ""
     },
     {
@@ -15245,7 +15246,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-11-01T00:06:41+00:00",
-      "score": 11.9,
+      "score": 11.89,
       "hnUrl": ""
     },
     {
@@ -15403,7 +15404,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-11-01T00:06:41+00:00",
-      "score": 11.4
+      "score": 11.39
     },
     {
       "id": "24dbc8c2477faec634",
@@ -15462,7 +15463,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-31T12:23:17+00:00",
-      "score": 11.3
+      "score": 11.29
     },
     {
       "id": "7b46c227e1b0d70a2c",
@@ -15705,7 +15706,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-31T05:36:41+00:00",
-      "score": 10.7,
+      "score": 10.69,
       "hnUrl": ""
     },
     {
@@ -15726,7 +15727,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-10-30T22:16:16+00:00",
-      "score": 10.69,
+      "score": 10.68,
       "hnUrl": ""
     },
     {
@@ -15989,7 +15990,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-10-30T18:04:46+00:00",
-      "score": 10.54,
+      "score": 10.53,
       "hnUrl": ""
     },
     {
@@ -16030,7 +16031,7 @@
       "ideaDomain": "general",
       "imageSource": "صورة المصدر الأصلي",
       "firstSeenAt": "2026-10-30T18:04:46+00:00",
-      "score": 10.51,
+      "score": 10.5,
       "hnUrl": ""
     },
     {
@@ -16193,7 +16194,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-30T15:25:36+00:00",
-      "score": 10.39,
+      "score": 10.38,
       "hnUrl": ""
     },
     {
@@ -16412,7 +16413,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-30T09:57:48+00:00",
-      "score": 10.02,
+      "score": 10.01,
       "hnUrl": ""
     },
     {
@@ -16432,7 +16433,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-31T19:16:40+00:00",
-      "score": 9.99,
+      "score": 9.98,
       "hnUrl": ""
     },
     {
@@ -16471,7 +16472,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-30T00:03:00+00:00",
-      "score": 9.86,
+      "score": 9.85,
       "hnUrl": ""
     },
     {
@@ -16931,7 +16932,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-29T21:08:35+00:00",
-      "score": 9.57,
+      "score": 9.56,
       "hnUrl": ""
     },
     {
@@ -17010,7 +17011,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-29T09:55:30+00:00",
-      "score": 9.53,
+      "score": 9.52,
       "hnUrl": ""
     },
     {
@@ -17030,7 +17031,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-29T17:59:13+00:00",
-      "score": 9.53,
+      "score": 9.52,
       "hnUrl": ""
     },
     {
@@ -17149,7 +17150,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-29T17:59:13+00:00",
-      "score": 9.51,
+      "score": 9.5,
       "hnUrl": ""
     },
     {
@@ -17428,7 +17429,7 @@
       "metric": "التقدير: حداثة ومصدر",
       "ideaDomain": "general",
       "firstSeenAt": "2026-10-30T15:25:36+00:00",
-      "score": 9.1
+      "score": 9.09
     },
     {
       "id": "52f76f3c5a2790373a",
