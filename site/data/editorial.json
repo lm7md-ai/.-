@@ -36629,6 +36629,290 @@
           "url": "https://arxiv.org/abs/2611.07247"
         }
       ]
+    },
+    "485654c1f98a7cdcb6": {
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "titleAr": "Google توسّع توليد الفيديو في Gemini Omni 1.2 Flash إلى 15 ثانية",
+      "summaryAr": "أعلنت Google إتاحة Gemini Omni 1.2 Flash عبر Gemini API وGoogle Cloud، مع توليد مقاطع حتى 15 ثانية وتعديلها بمحادثات متتابعة وتحسين اتباع المراجع. تقول الشركة إن السعر انخفض 30% إلى 0.07 دولار لكل ثانية بدقة 720p، مع إمكان رفع الدقة لاحقًا.",
+      "whyItMatters": "يجعل التعديل المتتابع وإعادة استخدام المقطع سير العمل أقل اعتمادًا على إعادة التوليد الكامل، لكنه لا يلغي مراجعة الاتساق والحقوق وجودة الحركة. السعر المعلن لكل ثانية يجعل طول المقطع والدقة عاملين مباشرين في التكلفة.",
+      "audience": "مطورو الفيديو وصنّاع المحتوى وفرق المنتجات والوسائط التوليدية.",
+      "nextSteps": [
+        "اختبر ثبات العناصر والنصوص عبر مشاهد متعددة.",
+        "احسب التكلفة وفق مدة المقطع والدقة قبل التوسع.",
+        "راجع شروط الاستخدام والوسم المائي SynthID قبل النشر التجاري."
+      ],
+      "limitations": "التفاصيل والتسعير من إعلان Google؛ الأمثلة تسويقية وليست تقييمًا مستقلًا. وتشير الشركة إلى أن الحركة السريعة والفيزياء المعقدة ما زالتا مجالين للتحسين.",
+      "reviewedAt": "2026-11-06T18:13:25+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Google — Gemini Omni 1.2 Flash",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+        }
+      ]
+    },
+    "7951c5b8003d194fd8": {
+      "url": "https://www.anthropic.com/research/how-researchers-use-claude",
+      "titleAr": "Anthropic تحلل استخدام Claude في البحث العلمي عبر 207 آلاف جلسة",
+      "summaryAr": "يعرض تقرير Anthropic تحليلًا لـ207 آلاف جلسة بحثية على Claude وClaude Code باستخدام أساليب تصفها الشركة بأنها محافظة على الخصوصية. وجد التقرير أن تحليل البيانات يشكل نحو ثلث جلسات Claude ونحو نصف جلسات Claude Code، وأن الاستخدام أعلى نسبيًا في العلوم الرسمية، بينما تظل الأعمال المختبرية عائقًا أمام الأتمتة.",
+      "whyItMatters": "يوفر التقرير صورة عن أنماط الاستخدام الفعلية داخل منتجات Anthropic بدل الاكتفاء بالاختبارات المعيارية. لكنه لا يمثل جميع الباحثين أو أدوات الذكاء الاصطناعي، كما أن سيناريوهات تسريع البحث المستقبلية نماذج افتراضية وليست تنبؤات مؤكدة.",
+      "audience": "الباحثون والجامعات ومطورو أدوات البحث العلمي وفرق تقييم الذكاء الاصطناعي.",
+      "nextSteps": [
+        "قارن التقرير بدراسات مستقلة تشمل أدوات ومؤسسات أخرى.",
+        "افصل بين عدد الجلسات وجودة النتائج العلمية وأثرها.",
+        "اختبر حدود الأتمتة في الأعمال التي تتطلب تجارب ميدانية."
+      ],
+      "limitations": "البيانات من استخدام Claude لدى Anthropic وليست عينة ممثلة لكل الباحثين. تقديرات 8x و15x مشروطة بفرضيات تبنٍ وأتمتة مستقبلية، وتقر الشركة بقيود المختبرات والتبني والتكلفة.",
+      "reviewedAt": "2026-11-06T18:13:25+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Anthropic — How researchers use Claude",
+          "url": "https://www.anthropic.com/research/how-researchers-use-claude"
+        }
+      ]
+    },
+    "84864f21844a6bae49": {
+      "url": "https://www.cbc.ca/news/world/university-libraries-ai-data-scraping-bots-9.7408287",
+      "titleAr": "ارتفاع حركة روبوتات جمع البيانات يهدد إتاحة أرشيفات المكتبات الجامعية",
+      "summaryAr": "تقول تغطية CBC إن تدفقات آلية كثيفة تستهدف مجموعات أكاديمية وتاريخية وحكومية، وقد أبطأت مواقع بعض المكتبات أو عطلتها. وتشير إفادات نقلتها Library Journal إلى أن CAPTCHA وتسجيل الدخول قد يحدان من الروبوتات، لكنهما قد يعوقان الوصول البشري والروبوتات البحثية المشروعة.",
+      "whyItMatters": "المشكلة هي الموازنة بين حماية البنية التحتية وإبقاء المعرفة متاحة للجمهور؛ سياسات المنع الشاملة قد تحجب الباحثين والمستخدمين والروبوتات المفيدة معًا.",
+      "audience": "المكتبات والجامعات ومسؤولو الأرشفة والناشرون ومطورو أدوات جمع البيانات.",
+      "nextSteps": [
+        "راقب معدلات الطلبات واستهلاك الخادم قبل فرض الحظر.",
+        "استخدم سياسات معدلات وواجهات وصول واضحة.",
+        "قيّم أثر CAPTCHA أو تسجيل الدخول على الوصول العام والبحثي."
+      ],
+      "limitations": "صفحة CBC الأصلية لم تكن متاحة للقراءة المباشرة؛ اعتمدت المراجعة على بياناتها ومقتطفات نقلتها Library Journal. لم نتحقق مستقلًا من أرقام حركة المرور أو أسباب كل انقطاع.",
+      "reviewedAt": "2026-11-06T18:13:25+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "CBC News — University libraries and AI bots",
+          "url": "https://www.cbc.ca/news/world/university-libraries-ai-data-scraping-bots-9.7408287"
+        },
+        {
+          "title": "Library Journal infoDOCKET — CBC report on AI bots and public access",
+          "url": "https://www.infodocket.com/2026/11/05/cbc-report-libraries-are-being-swarmed-by-ai-bots-putting-public-access-at-risk/"
+        }
+      ]
+    },
+    "8315cc8736b7c55f5e": {
+      "url": "https://www.theverge.com/tech/1028597/tiktok-eu-for-you-algorithm-rabbit-hole-effect",
+      "titleAr": "المفوضية الأوروبية تصدر نتائج أولية بشأن خوارزمية «لك» في TikTok",
+      "summaryAr": "قالت المفوضية الأوروبية في 6 نوفمبر 2026 إنها توصلت مبدئيًا إلى أن تصميم نظام التوصية في صفحة For You قد يخالف قانون الخدمات الرقمية بسبب نمط التعرض المتكرر لمحتوى متشابه. القضية ما زالت أولية وليست حكمًا نهائيًا.",
+      "whyItMatters": "تسلط القضية الضوء على أن سلامة المنصات تشمل تصميم خوارزمية التوصية وآثارها على المستخدمين، مع أهمية خاصة لحماية القاصرين.",
+      "audience": "مطورو أنظمة التوصية وفرق Trust & Safety ومنظمو المنصات ومتابعو سياسات التقنية.",
+      "nextSteps": [
+        "تابع رد TikTok ومسار التحقيق قبل استنتاج المخالفة النهائية.",
+        "راجع نص قانون الخدمات الرقمية والتزامات تقييم المخاطر.",
+        "قارن أدوات التحكم المعلنة بتأثيرها الفعلي."
+      ],
+      "limitations": "النتائج أولية؛ لم يصدر قرار نهائي أو غرامة. بيان المفوضية لا يعرض رد TikTok كاملًا، لذلك لا تُعامل الادعاءات كحسم قضائي.",
+      "reviewedAt": "2026-11-06T18:13:25+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "The Verge — TikTok’s For You page needs to change, says the EU",
+          "url": "https://www.theverge.com/tech/1028597/tiktok-eu-for-you-algorithm-rabbit-hole-effect"
+        },
+        {
+          "title": "European Commission — Preliminary findings on TikTok’s For You feed",
+          "url": "https://digital-strategy.ec.europa.eu/en/news/commission-preliminarily-finds-tiktoks-you-feed-breach-digital-services-act-harmful-rabbit-holes"
+        }
+      ]
+    },
+    "5a90caffb2c87d2e6e": {
+      "url": "https://huggingface.co/blog/allenai/toyblocks",
+      "titleAr": "Ai2 وHugging Face تقدمان ToyBlocks لقياس تعلم الروبوتات في عالم محاكاة مضبوط",
+      "summaryAr": "تقدم Ai2 إطار FoundationWorlds، وتبدأ بـToyBlocks، وهي محاكاة لذراع روبوت وكتل على طاولة تولّد المهام والعروض التدريبية تلقائيًا. يتيح ذلك تغيير بيانات التدريب واختبار مهام محجوبة عن التدريب وقياس النجاح والتقدم، مع إمكان فصل التخطيط عن تنفيذ الحركة.",
+      "whyItMatters": "يوفر بيئة مضبوطة لدراسة تعميم سياسات الروبوتات وتشخيص أسباب الفشل، لكنه لا يجعل نجاح المحاكاة دليلًا تلقائيًا على نجاح الروبوت في العالم الحقيقي.",
+      "audience": "باحثو الروبوتات ونماذج الرؤية واللغة والفعل ومهندسو المحاكاة وتقييم الوكلاء.",
+      "nextSteps": [
+        "راجع المستودع والوثائق والترخيص ومتطلبات Isaac Lab قبل تقدير كلفة التشغيل.",
+        "أعد تجربة baseline على مهام محجوبة عن التدريب.",
+        "قارن نتائج المحاكاة بقياسات روبوت فعلي قبل التعميم."
+      ],
+      "limitations": "النطاق محصور في ذراع وكتل وطاولة؛ بعض المهارات تستخدم معلومات يوفرها المحاكي ولا تتاح للحساسات الواقعية. رقم الأداء حتى 24 ضعف الزمن الحقيقي من وصف المؤلفين وليس قياسًا مستقلًا.",
+      "reviewedAt": "2026-11-06T18:13:25+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Hugging Face / Ai2 — ToyBlocks",
+          "url": "https://huggingface.co/blog/allenai/toyblocks"
+        },
+        {
+          "title": "AllenAI ToyBlocks repository and README",
+          "url": "https://github.com/allenai/ToyBlocks"
+        },
+        {
+          "title": "ToyBlocks installation documentation",
+          "url": "https://allenai.github.io/ToyBlocks/docs/user_guide/workflows/installation_and_setup_instructions.html"
+        }
+      ]
+    },
+    "b1587e5d7646520e18": {
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBWUFVZbHFmOGkzWkNLYnhGSGxWM3VDMzJ5TzJaZ0k2bTNaZkFYWFY3SGpEZ3o3ZUlVQ0lMelpKRjFrSC01elE?oc=5",
+      "titleAr": "وثيقة سعودية تعرض ثمانية مبادئ لاستخدام الذكاء الاصطناعي بمسؤولية في المحتوى الإعلامي",
+      "summaryAr": "ينقل تقرير صحفي منسوب إلى وكالة الأنباء السعودية عن وثيقة «مبادئ الذكاء الاصطناعي في الإعلام»، التي تشمل الشفافية والإفصاح وسلامة المعلومات وحماية الخصوصية ومنع التضليل والمساءلة وعدم التحيز والوعي المجتمعي وتقييم الأثر. ويذكر التقرير لقاءً شارك فيه أكثر من 250 مؤثرًا وصانع محتوى وبرنامجًا تدريبيًا مرتبطًا بالمبادئ.",
+      "whyItMatters": "تربط الوثيقة الحوكمة النظرية بسير عمل إنتاج المحتوى، ويمكن تحويل مبادئها إلى قائمة تحقق للمراجعة والإفصاح والتحقق البشري قبل النشر، خصوصًا في المحتوى العربي.",
+      "audience": "صناع المحتوى وغرف الأخبار والمؤسسات الإعلامية والجامعات وفرق السياسات التقنية.",
+      "nextSteps": [
+        "اقرأ وثيقة سدايا الأصلية كاملة قبل تحويلها إلى سياسة مؤسسية.",
+        "أضف إفصاحًا مناسبًا عن المحتوى المولد أو المعدل آليًا.",
+        "وثّق مصادر المعلومات والمراجعة البشرية وحقوق الصور والصوت."
+      ],
+      "limitations": "الرابط الوارد في التغذية هو إعادة توجيه Google News ولم يُفتح مباشرة؛ تمت مراجعة تقرير الرياض المنسوب إلى واس والوثيقة الرسمية المشار إليها. أعداد المشاركين وتفاصيل البرنامج واردة في التقرير الصحفي، والوثيقة إطار إرشادي لا يثبت أن كل بند قانون ملزم.",
+      "reviewedAt": "2026-11-06T18:13:25+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Google News feed reference — Saudi AI media principles report",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBWUFVZbHFmOGkzWkNLYnhGSGxWM3VDMzJ5TzJaZ0k2bTNaZkFYWFY3SGpEZ3o3ZUlVQ0lMelpKRjFrSC01elE?oc=5"
+        },
+        {
+          "title": "Al Riyadh — المملكة تعزّز الاستخدام الآمن والمسؤول للذكاء الاصطناعي في صناعة المحتوى الإعلامي",
+          "url": "https://www.alriyadh.com/2214014"
+        },
+        {
+          "title": "SDAIA — مبادئ الذكاء الاصطناعي في الإعلام",
+          "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/AIPrinciplesMediaAr.pdf"
+        }
+      ]
+    },
+    "cda444a35c850da42d": {
+      "url": "https://www.engadget.com/2308870/perplexity-teammates-ai-agents-for-ongoing-work/",
+      "titleAr": "Perplexity تطلق Teammates لوكلاء يتابعون مهامًا طويلة عبر الأدوات",
+      "summaryAr": "أعلنت Perplexity وكلاء شخصيين يعملون داخل Computer، ينسقون الجلسات والوكلاء الآخرين، ويحتفظون بسياق المشروع ويتابعون التغييرات ثم يعيدون النتائج للمراجعة. وتقول الشركة إن لكل وكيل بيئة منفصلة وإن بيانات الاعتماد محفوظة مشفرة، مع إطلاق أولي على الويب لمشتركي Max.",
+      "whyItMatters": "ينقل الوكلاء من إجابة مؤقتة إلى تفويض مستمر، ويجعل ضبط الصلاحيات والموافقات وسجل التدقيق ضروريًا بقدر قدرة النموذج على إنجاز المهمة.",
+      "audience": "فرق العمليات والمطورون ومصممو وكلاء الذكاء الاصطناعي والفرق التي تستخدم أدوات مترابطة.",
+      "nextSteps": [
+        "ابدأ بمهمة محددة وصلاحيات موصولة بالحد الأدنى.",
+        "اشترط موافقة بشرية قبل الإرسال أو الشراء أو تعديل بيانات خارجية.",
+        "سجّل خطوات الوكيل وقيّم أخطاء المتابعة قبل توسيع التفويض."
+      ],
+      "limitations": "إعلان منتج من الشركة؛ الأداء والموثوقية لم يُقيّما بصورة مستقلة. الإتاحة الأولية على الويب ولمشتركي Max، وقد تتغير الميزات والخطط.",
+      "reviewedAt": "2026-11-06T18:13:25+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Engadget — Perplexity teammates",
+          "url": "https://www.engadget.com/2308870/perplexity-teammates-ai-agents-for-ongoing-work/"
+        },
+        {
+          "title": "Perplexity — Teammates are agents for complex, ongoing work",
+          "url": "https://www.perplexity.ai/en-GB/hub/blog/teammates-are-agents-for-complex-ongoing-work"
+        }
+      ]
+    },
+    "a128386b25427955b1": {
+      "url": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
+      "titleAr": "Underdog تعرض نموذج Woof الصوتي بحجم معلن قدره 32 ميغابايت",
+      "summaryAr": "تشير بيانات الخبر إلى عرض تجريبي لنموذج Woof بحجم 32 ميغابايت لتوليد الصوت والموسيقى. لا تتوافر في المادة التي أمكن الوصول إليها تفاصيل كافية عن بنية النموذج أو بيانات التدريب أو جودة الصوت أو متطلبات التشغيل الكاملة.",
+      "whyItMatters": "إذا تأكد الأداء على أجهزة فعلية فقد يوسع الصوت التوليدي المحلي ويقلل الاعتماد على الشبكة؛ لكن حجم الأوزان وحده لا يساوي حجم الذاكرة أو متطلبات التنفيذ الكاملة.",
+      "audience": "باحثو الصوت التوليدي ومطورو edge AI ومهندسو تطبيقات الأجهزة المحمولة.",
+      "nextSteps": [
+        "انتظر نشر الأوزان والترخيص والتوثيق الرسمي قبل إدخاله في مقارنة تقنية.",
+        "قِس الذاكرة والكمون والطاقة وجودة الصوت على أجهزة متنوعة.",
+        "قارن المخرجات باختبارات استماع عمياء بدل الاعتماد على عرض واحد."
+      ],
+      "limitations": "صفحة TechCrunch الأصلية لم تكن قابلة للفتح في هذه الدورة؛ اعتمدت المراجعة على بيانات التغذية وملخصات ثانوية. رقم 32 ميغابايت غير متحقق مستقلًا، والعرض التجريبي لا يثبت الجاهزية الإنتاجية.",
+      "reviewedAt": "2026-11-06T18:13:25+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "TechCrunch — Underdog shows off a 32MB speech model in new demo",
+          "url": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/"
+        }
+      ]
+    },
+    "13e4c95dcbaa6d3409": {
+      "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
+      "titleAr": "Open ASR Leaderboard يضيف مجموعتين محادثيتين للإنجليزية المصرية والنيجيرية",
+      "summaryAr": "أضاف Open ASR Leaderboard مجموعتين خاصتين من بيانات Liva AI: 1.34 ساعة للإنجليزية المصرية و1.55 ساعة للإنجليزية النيجيرية، بنمط محادثة عفوي. تهدف الإضافة إلى توسيع تمثيل اللهجات في تقييم التعرف على الكلام وتقليل تحسين النتائج على مجموعات عامة مكشوفة.",
+      "whyItMatters": "القياس على لهجات أقل تمثيلًا يكشف فجوات لا تظهر في الاختبارات المعيارية التقليدية، لكنه لا يكفي بمفرده لتعميم الأداء على جميع المتحدثين أو اللهجات.",
+      "audience": "باحثو ASR وفرق speech-to-text ومطورو النماذج متعددة اللهجات.",
+      "nextSteps": [
+        "قارن أداء النماذج على مجموعات التقييم المتاحة مع توثيق شروط الوصول.",
+        "وثّق حجم العينة ونمط الكلام ومصدر التسجيل لكل مجموعة.",
+        "افصل النتائج بحسب اللهجة ولا تعمم عينة صغيرة على مجتمع لغوي كامل."
+      ],
+      "limitations": "المجموعتان خاصتان وصغيرتان نسبيًا (1.34 و1.55 ساعة)؛ لا تتيحان إعادة إنتاج كل النتائج لمن لا يملك الوصول، ولا تمثلان كل التنوع اللهجي داخل مصر ونيجيريا.",
+      "reviewedAt": "2026-11-06T18:13:25+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Hugging Face — Egyptian and Nigerian English join the Open ASR Leaderboard",
+          "url": "https://huggingface.co/blog/open-asr-leaderboard-liva"
+        },
+        {
+          "title": "Open ASR Leaderboard",
+          "url": "https://huggingface.co/spaces/hf-audio/open_asr_leaderboard"
+        }
+      ]
+    },
+    "fe0dd1833f873a738d": {
+      "url": "https://www.engadget.com/2308903/googles-find-hub-can-finally-notify-you-if-youve-left-a-tracker-behind/",
+      "titleAr": "Google تبدأ طرح تنبيه ترك المتعقّب خلفك في Find Hub",
+      "summaryAr": "بدأت Google طرح ميزة Notify when left behind في Find Hub على Android، لتنبيه المستخدم عند ابتعاد الهاتف عن متعقّب متوافق. تشير التغطية إلى طرح أولي في الولايات المتحدة وأجزاء من أوروبا، واستثناء عنوان المنزل، وظهور الميزة مع متعقبات مثل Moto Tag وChipolo؛ ولا تظهر حاليًا لبعض الأجهزة مثل السماعات.",
+      "whyItMatters": "تضيف الميزة تنبيهًا عمليًا لتقليل نسيان الأغراض، لكنها تبرز أهمية التوافق والطرح التدريجي وأذونات الموقع قبل افتراض توفرها لكل مستخدمي Android.",
+      "audience": "مستخدمو Android ومصنّعو المتعقبات ومطورو تطبيقات الموقع.",
+      "nextSteps": [
+        "تحقق من إصدار Find Hub وتوافق المتعقّب قبل توقع ظهور الخيار.",
+        "اختبر الاستثناءات الجغرافية والتنبيهات الخاطئة في الاستخدام اليومي.",
+        "راجع أذونات الموقع وسياسة الاحتفاظ ببيانات التتبع."
+      ],
+      "limitations": "الطرح تدريجي؛ تفاصيل التوافق والمناطق مستمدة من Engadget وقد تتغير حسب الجهاز والمنطقة. لا يظهر الخيار حاليًا لجميع أنواع الملحقات.",
+      "reviewedAt": "2026-11-06T18:13:25+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Engadget — Google’s Find Hub can notify you if you left a tracker behind",
+          "url": "https://www.engadget.com/2308903/googles-find-hub-can-finally-notify-you-if-youve-left-a-tracker-behind/"
+        }
+      ]
+    },
+    "63e1c5c982d9925542": {
+      "url": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/",
+      "titleAr": "Amazon تتيح لبعض العملاء التسوق عبر الرسائل النصية مع وكيل Alexa",
+      "summaryAr": "قالت Amazon إنها تدعو بعض العملاء في الولايات المتحدة لتفعيل محادثة نصية مع Alexa للمساعدة في البحث عن المنتجات وإضافتها إلى السلة وإتمام الشراء، مع إمكان إدارة القوائم ومتابعة الأسعار والطلبات والبحث انطلاقًا من الصور. التوسع الأوسع متوقع خلال الأسابيع التالية وفق الشركة.",
+      "whyItMatters": "يمثل ذلك انتقال وكلاء المستهلك من الإجابة عن الأسئلة إلى تنفيذ معاملات؛ لذا تصبح الموافقة الواضحة قبل الشراء وعرض تفاصيل المنتج والسعر وحماية بيانات التفضيلات عناصر أساسية.",
+      "audience": "مطورو وكلاء التجارة الإلكترونية وفرق المتاجر ومهندسو الخصوصية وتجربة المستخدم.",
+      "nextSteps": [
+        "اختبر مسارات التأكيد البشري قبل أي معاملة.",
+        "اعرض تفاصيل المنتج والسعر والشحن بوضوح قبل التنفيذ.",
+        "قِس أخطاء الاختيار والإرجاع ووضوح الموافقة بعد الإطلاق."
+      ],
+      "limitations": "الطرح مبدئي لعملاء مختارين في الولايات المتحدة؛ تفاصيل القدرات نقلتها TechCrunch عن Amazon. التخصيص المستقبلي توقع من الشركة وليس نتيجة مقاسة مستقلة.",
+      "reviewedAt": "2026-11-06T18:13:25+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — Amazon lets users text Alexa to help them shop",
+          "url": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/"
+        }
+      ]
+    },
+    "4c20970a6e6b8279c3": {
+      "url": "https://arxiv.org/abs/2611.07598",
+      "titleAr": "ورقة FedAbA تقترح مواءمة قواعد LoRA قبل تجميع تحديثات التعلم الاتحادي",
+      "summaryAr": "تقترح الورقة محاذاة القواعد المحلية لمعاملات LoRA ذات الرتب المختلفة قبل تجميع التحديثات، ثم استخدام أوزان تجمع حجم بيانات العميل ودرجة الاتساق. يذكر الملخص أن التجارب تفوقت على خطوط أساس عند تفاوت الرتب، وأن الورقة قُبلت في NeurIPS 2026 وفق بيانات arXiv.",
+      "whyItMatters": "قد تعالج الفكرة مشكلة عدم اتساق تمثيلات LoRA بين العملاء ذوي القدرات الحسابية المختلفة، وهي مسألة مهمة عند ضبط النماذج اتحاديًا دون جمع البيانات في خادم واحد.",
+      "audience": "باحثو التعلم الاتحادي ومهندسو fine-tuning وفرق الذكاء الاصطناعي الطرفي.",
+      "nextSteps": [
+        "اقرأ النص الكامل والجداول قبل اعتماد نتائج الملخص.",
+        "تحقق من إتاحة الكود والبيانات وإعدادات المقارنة.",
+        "أعد التجارب على توزيعات مختلفة لرتب العملاء وأحجام بياناتهم."
+      ],
+      "limitations": "تمت مراجعة ملخص arXiv فقط؛ لم يتم فحص الكود أو إعادة إنتاج التجارب. نتائج الأداء ادعاء المؤلفين في الملخص وليست تحققًا مستقلًا.",
+      "reviewedAt": "2026-11-06T18:13:25+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — Align Before Aggregation: Basis-Consistent Federated LoRA under Heterogeneous Ranks",
+          "url": "https://arxiv.org/abs/2611.07598"
+        }
+      ]
     }
   }
 }
