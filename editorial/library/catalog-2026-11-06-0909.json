@@ -1,21 +1,21 @@
 {
   "version": 1,
-  "compiledAt": "2026-11-06T06:09:18Z",
+  "compiledAt": "2026-11-06T09:09:28.818Z",
   "note": "Append-only research catalog. Existing priority and idea order preserved; NVKE appended at priority 53 as research-only because its exact feed reference is a news item, not a project card.",
   "metricsWarning": "Previous eight projects were rechecked at 2026-11-06T06:09:18Z. NVKE is an early Preview with Apache-2.0; its updatedAt timestamp is later than the measurement time and is not used as proof of activity. No project was executed.",
-  "measurementWindow": "2026-11-06T06:09:18Z",
+  "measurementWindow": "2026-11-06T09:09:28.818Z",
   "statusSummary": {
-    "total": 53,
+    "total": 54,
     "archived": 2,
-    "nonArchived": 51,
+    "nonArchived": 52,
     "inCurrentFeed": 8,
-    "notInFeed": 44,
+    "notInFeed": 45,
     "feedMembershipUnverified": 1,
-    "licenseNeedsUpstreamVerification": 7,
+    "licenseNeedsUpstreamVerification": 8,
     "enrichedInCurrentFeed": 8,
     "notMaintained": 1
   },
-  "developerIntegrationNotes": "Provide a separate historical projects catalog independent of the 45-day GitHub discovery window.,Keep durable canonical GitHub repository identity and documented status rather than using active feed IDs for out-of-feed projects.,Do not purge library dossiers when feed items rotate; maintain persistent links for bookmarks.,Show license and activity measurement timestamps and mark archived/mirror projects explicitly.,Do not use cumulative GitHub stars as current popularity.,اعرض المستودعات البحثية غير الموجودة في feed بوضوح على أنها research-only؛ لا تنشئ معرفات feed بديلة.,أظهر measuredAt لكل لقطة، ولا تقارن مؤشرات التوقيتات المختلفة كأنها متزامنة. Lasm is research-only and not in the project feed; do not add it to public project cards without a later explicit editorial review. NVIDIA/OpenShell is research-only and absent from feed. Future library UI should show «بحث فقط — غير منشور», measuredAt, Apache-2.0, supported platforms, requirements, local/cloud costs, alternatives and limitations; no feed ID or run/publish button. Show Pydantic AI as research-only, not in feed; display Python 3.11+, MIT, measuredAt, local Ollama vs cloud API costs, alternatives and limitations; no feed ID or run/publish button. Show uv as research-only, not in feed; display MIT OR Apache-2.0, measuredAt, standalone install, local versus CI costs, quickStart and alternatives. Do not assign a feed ID or show run/publish actions. Show AI Engineering Hub with its exact feed ID fe0e6bfdbdd5822139. Detail view should label it as a collection of independent tutorials, show per-folder requirements and quickStart, local/cloud cost, license caveats, alternatives, limitations, and the 4 improvements plus 4 spinoffs in preserved order. Do not show a tested badge or run action; testStatus is not_run. For getify/You-Dont-Know-JS, show it as an educational book series (not an executable package), display the CC BY-NC-ND 4.0 restriction and completion/closed-contributions status, and do not offer an install/run action. WebAnything must remain research-only in the catalog; its feed reference is a news item, not a project card. If surfaced in research UI, show alpha status, MIT-for-code-only scope, external 244-site artifact store, provider API cost, access/ToS limits, and absence of full corpus.\nFor Neywa-Labs/mlx-audio show exact feed ID c9a7e4fb7976ab0a77, Apple-Silicon-only requirement, Python 3.10+, MIT for repository code, optional ffmpeg, local inference, model-specific language support and separate model-weight licenses. Do not show a tested badge; no testEvidence exists.\nFlashProve: show «بحث فقط — غير منشور» and «غير مُصان»; Apache-2.0 repo, third-party/model-weight license caveats, H100/CUDA/RAM/storage requirements, CPU verifier versus GPU prover, variable cloud cost, 1,024-token context, VerInf/DeepProve alternatives; no run/test badge.\\nStrands Harness SDK (strands-agents/harness-sdk) is a research-only library entry; exact feed membership was not verifiable because the current feed blob was returned without content. Do not assign a feed ID or render it as a public project card until literal id/url comparison succeeds. If displayed in a research library, show Apache-2.0, measuredAt 2026-11-04T17:38:56+03:00, Python 3.10+, TypeScript Node >=22 from package.json (flag the docs page's Node 20 discrepancy), Python-only official Ollama path, Bedrock default cloud cost, broad shell/file/web tools, and least-privilege caveats. No test badge or run/publish action.\nDeepSeek dsh-superagent-prototype (deepseek-ai/dsh-superagent-prototype) is research-only, not an official DeepSeek product and not production-ready. Display MIT, Node 22.19+/24, pnpm 11.7, Git 2.32+, Python 3.8+, tmux, GitHub CLI 2.48+, separate agent account, model-provider dependency, danger-full-access/home-directory risk, local execution and variable model cost. No feed ID, run button or test badge.\nTSFLab (D2I-Group/TSFLab) is research-only. Display root MIT license separately from model/data/dependency terms, Python 3.12+, uv, PyTorch 2.14.1, CPU/CUDA profiles, local compute/storage costs, optional Hub/W&B and realtime data terms. Mark README benchmark figures as author-reported, not independently reproduced. No feed ID, run button or test badge.\nRivet (rivet-dev/rivet) is research-only; its exact feed reference is a news item, not a project card. Show Apache-2.0, Node >=20, pnpm 10.13.1 and Rust workspace requirements, local filesystem mode, S3-compatible storage for production, self-host/cloud/BYOC options, measuredAt, and cloud prices separately from infrastructure costs. Do not assign a project feed ID or show a tested badge.\nStroq (AGGIB/Stroq) is research-only; its exact feed reference is a news item, not a project card. Show Apache-2.0 CLI and MIT vendored rules separately, Node >=22, local-only/no telemetry design, supported agent integrations, hook-coverage limitations, author-reported 36-scenario benchmark, measuredAt, and no OS-sandbox claim. Do not assign a project feed ID or show a tested badge.\nNVKE (dsx-ai-factory/nvke) is research-only; its exact feed reference e2e23a0367960f2af3 is a news item, not a project card. Show Apache-2.0, Preview status, Linux local mock-NICo requirements (6 CPUs, 12 GiB RAM, 100 GiB disk, Docker, virtual TPM; no GPU for local simulation), real-install NICo/GPU/network/storage requirements, no published managed-service price, HTTP/authentication and backup/upgrade limitations, and measuredAt. Do not assign a project feed ID, show a tested badge, or expose run/publish actions.",
+  "developerIntegrationNotes": "Provide a separate historical projects catalog independent of the 45-day GitHub discovery window.,Keep durable canonical GitHub repository identity and documented status rather than using active feed IDs for out-of-feed projects.,Do not purge library dossiers when feed items rotate; maintain persistent links for bookmarks.,Show license and activity measurement timestamps and mark archived/mirror projects explicitly.,Do not use cumulative GitHub stars as current popularity.,اعرض المستودعات البحثية غير الموجودة في feed بوضوح على أنها research-only؛ لا تنشئ معرفات feed بديلة.,أظهر measuredAt لكل لقطة، ولا تقارن مؤشرات التوقيتات المختلفة كأنها متزامنة. Lasm is research-only and not in the project feed; do not add it to public project cards without a later explicit editorial review. NVIDIA/OpenShell is research-only and absent from feed. Future library UI should show «بحث فقط — غير منشور», measuredAt, Apache-2.0, supported platforms, requirements, local/cloud costs, alternatives and limitations; no feed ID or run/publish button. Show Pydantic AI as research-only, not in feed; display Python 3.11+, MIT, measuredAt, local Ollama vs cloud API costs, alternatives and limitations; no feed ID or run/publish button. Show uv as research-only, not in feed; display MIT OR Apache-2.0, measuredAt, standalone install, local versus CI costs, quickStart and alternatives. Do not assign a feed ID or show run/publish actions. Show AI Engineering Hub with its exact feed ID fe0e6bfdbdd5822139. Detail view should label it as a collection of independent tutorials, show per-folder requirements and quickStart, local/cloud cost, license caveats, alternatives, limitations, and the 4 improvements plus 4 spinoffs in preserved order. Do not show a tested badge or run action; testStatus is not_run. For getify/You-Dont-Know-JS, show it as an educational book series (not an executable package), display the CC BY-NC-ND 4.0 restriction and completion/closed-contributions status, and do not offer an install/run action. WebAnything must remain research-only in the catalog; its feed reference is a news item, not a project card. If surfaced in research UI, show alpha status, MIT-for-code-only scope, external 244-site artifact store, provider API cost, access/ToS limits, and absence of full corpus.\nFor Neywa-Labs/mlx-audio show exact feed ID c9a7e4fb7976ab0a77, Apple-Silicon-only requirement, Python 3.10+, MIT for repository code, optional ffmpeg, local inference, model-specific language support and separate model-weight licenses. Do not show a tested badge; no testEvidence exists.\nFlashProve: show «بحث فقط — غير منشور» and «غير مُصان»; Apache-2.0 repo, third-party/model-weight license caveats, H100/CUDA/RAM/storage requirements, CPU verifier versus GPU prover, variable cloud cost, 1,024-token context, VerInf/DeepProve alternatives; no run/test badge.\\nStrands Harness SDK (strands-agents/harness-sdk) is a research-only library entry; exact feed membership was not verifiable because the current feed blob was returned without content. Do not assign a feed ID or render it as a public project card until literal id/url comparison succeeds. If displayed in a research library, show Apache-2.0, measuredAt 2026-11-04T17:38:56+03:00, Python 3.10+, TypeScript Node >=22 from package.json (flag the docs page's Node 20 discrepancy), Python-only official Ollama path, Bedrock default cloud cost, broad shell/file/web tools, and least-privilege caveats. No test badge or run/publish action.\nDeepSeek dsh-superagent-prototype (deepseek-ai/dsh-superagent-prototype) is research-only, not an official DeepSeek product and not production-ready. Display MIT, Node 22.19+/24, pnpm 11.7, Git 2.32+, Python 3.8+, tmux, GitHub CLI 2.48+, separate agent account, model-provider dependency, danger-full-access/home-directory risk, local execution and variable model cost. No feed ID, run button or test badge.\nTSFLab (D2I-Group/TSFLab) is research-only. Display root MIT license separately from model/data/dependency terms, Python 3.12+, uv, PyTorch 2.14.1, CPU/CUDA profiles, local compute/storage costs, optional Hub/W&B and realtime data terms. Mark README benchmark figures as author-reported, not independently reproduced. No feed ID, run button or test badge.\nRivet (rivet-dev/rivet) is research-only; its exact feed reference is a news item, not a project card. Show Apache-2.0, Node >=20, pnpm 10.13.1 and Rust workspace requirements, local filesystem mode, S3-compatible storage for production, self-host/cloud/BYOC options, measuredAt, and cloud prices separately from infrastructure costs. Do not assign a project feed ID or show a tested badge.\nStroq (AGGIB/Stroq) is research-only; its exact feed reference is a news item, not a project card. Show Apache-2.0 CLI and MIT vendored rules separately, Node >=22, local-only/no telemetry design, supported agent integrations, hook-coverage limitations, author-reported 36-scenario benchmark, measuredAt, and no OS-sandbox claim. Do not assign a project feed ID or show a tested badge.\nNVKE (dsx-ai-factory/nvke) is research-only; its exact feed reference e2e23a0367960f2af3 is a news item, not a project card. Show Apache-2.0, Preview status, Linux local mock-NICo requirements (6 CPUs, 12 GiB RAM, 100 GiB disk, Docker, virtual TPM; no GPU for local simulation), real-install NICo/GPU/network/storage requirements, no published managed-service price, HTTP/authentication and backup/upgrade limitations, and measuredAt. Do not assign a project feed ID, show a tested badge, or expose run/publish actions.\nPhonon TTS (gradium-ai/xn-ptts) is research-only; Feed reference c65c7708e93995ca45 is a news item, not a project card. Display «بحث فقط — غير منشور», measuredAt, repository Apache-2.0/MIT files separately from model weights (31m English Apache-2.0; 40m CC BY-NC 4.0 non-commercial), supported languages (EN/FR/DE/ES/PT; no Arabic model out of the box), CPU/GPU/NPU backends, Android 12+/ARM64/QNN HTP and SoC-specific bundle requirement, local inference versus optional Gradium Studio voice design costs, alternatives, and limitations. No feed ID, run/publish button, or Tested badge.",
   "entries": [
     {
       "priority": 1,
@@ -3568,10 +3568,90 @@
       "currentStatus": "active_not_archived",
       "currentLicenseStatus": "SPDX_detected_and_LICENSE_inspected",
       "timestampAnomaly": "updatedAt is later than measuredAt; not used as activity proof."
+    },
+    {
+      "priority": 54,
+      "repository": "gradium-ai/xn-ptts",
+      "url": "https://github.com/gradium-ai/xn-ptts",
+      "category": "تحويل النص إلى كلام محلي",
+      "classification": "active_non_archived_research_only",
+      "archived": false,
+      "starsMeasured": 448,
+      "metricCapturedAt": "2026-11-06T09:09:28.818Z",
+      "licenseApiValue": "Apache-2.0",
+      "licenseNeedsUpstreamVerification": true,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "README وQuickstart وAndroid QNN guide وملفي LICENSE-APACHE وLICENSE-MIT ومقال Hugging Face تمت مراجعتها؛ التقطت بيانات المستودع من GitHub REST API؛ لم يتم تشغيل المشروع أو اختباره.",
+      "overviewShort": "محرك Rust لتوليد الكلام محليًا عبر CLI وPython وWeb وAndroid وiOS وخدمات Docker، مع CPU/GPU/NPU backends.",
+      "proposedResearchOrBuild": "فاحص توافق Android QNN ومجموعة تقييم عربية عند توفر نموذج عربي مرخص.",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "feedNewsReferenceId": "c65c7708e93995ca45",
+      "siteVisibility": "research-only; feed reference is news, not a project card",
+      "sources": [
+        {
+          "title": "GitHub repository",
+          "url": "https://github.com/gradium-ai/xn-ptts"
+        },
+        {
+          "title": "README and quickstart",
+          "url": "https://github.com/gradium-ai/xn-ptts/blob/main/README.md"
+        },
+        {
+          "title": "Apache license file",
+          "url": "https://github.com/gradium-ai/xn-ptts/blob/main/LICENSE-APACHE"
+        },
+        {
+          "title": "MIT license file",
+          "url": "https://github.com/gradium-ai/xn-ptts/blob/main/LICENSE-MIT"
+        },
+        {
+          "title": "Android QNN guide",
+          "url": "https://github.com/gradium-ai/xn-ptts/tree/main/qnn"
+        },
+        {
+          "title": "Phonon TTS launch article",
+          "url": "https://huggingface.co/blog/phonon-tts"
+        }
+      ],
+      "disabled": false,
+      "forksMeasured": 50,
+      "metricsCaptureWindow": "2026-11-06T09:09:28.818Z",
+      "lastPushedAt": "2026-11-06T08:58:07Z",
+      "lastUpdatedAt": "2026-11-06T08:58:09Z",
+      "defaultBranch": "main",
+      "language": "Rust",
+      "licenseName": "Apache-2.0 / MIT (repository code; model weights have separate licenses)",
+      "licenseSummary": "الشيفرة مرخصة بملفي Apache-2.0 وMIT؛ Phonon 31m English أوزانه Apache-2.0، أما Phonon 40m بلغاته الخمس فأوزانه CC BY-NC 4.0 وغير تجارية.",
+      "licenseEvidence": "LICENSE-APACHE and LICENSE-MIT inspected; model-specific terms confirmed in README and Hugging Face article; not legal advice.",
+      "activityStatus": "active_recent_push",
+      "alternativeProjects": [
+        "hexgrad/kokoro",
+        "OHF-Voice/piper1-gpl",
+        "kyutai/pocket-tts"
+      ],
+      "metricSource": "https://api.github.com/repos/gradium-ai/xn-ptts",
+      "editorialEnriched": false,
+      "editorialUrlMatches": false,
+      "currentSnapshot": {
+        "stars": 448,
+        "forks": 50,
+        "openIssues": 13,
+        "archived": false,
+        "disabled": false,
+        "licenseSpdx": "Apache-2.0",
+        "pushedAt": "2026-11-06T08:58:07Z",
+        "updatedAt": "2026-11-06T08:58:09Z",
+        "defaultBranch": "main",
+        "measuredAt": "2026-11-06T09:09:28.818Z",
+        "sourceApiUrl": "https://api.github.com/repos/gradium-ai/xn-ptts"
+      },
+      "currentStatus": "active_not_archived",
+      "currentLicenseStatus": "code_license_inspected_model_license_separate"
     }
   ],
-  "currentSnapshotSummary": "53 entries: 2 archived; 51 non-archived (one explicitly marked not maintained); 8 exact project-feed matches; 44 research-only/not in project feed; 1 feed membership remains unverified.",
-  "measurementNote": "Corrected catalog accounting: entries.length is 48; prior catalog summary.total=46 was inconsistent with entries.length=47 and statusSummary.total=47. The new snapshot preserves all 47 prior entries and adds one exact feed-matched project.",
+  "currentSnapshotSummary": "54 entries: 2 archived; 52 non-archived (one explicitly marked not maintained); 8 exact project-feed matches; 45 research-only/not in project feed; 1 feed membership remains unverified.",
+  "measurementNote": "Added gradium-ai/xn-ptts as research-only. Its Feed reference c65c7708e93995ca45 is a news item, not a project card; no project feed ID was assigned. Repository code licenses and model-weight licenses are distinct; no execution or tests were performed.",
   "archivedAlternatives": [
     {
       "repo": "atom/atom",
@@ -3606,19 +3686,9 @@
       ]
     }
   ],
-  "summary": {
-    "total": 53,
-    "archived": 2,
-    "nonArchived": 51,
-    "inCurrentFeed": 8,
-    "notInFeed": 44,
-    "licenseNeedsUpstreamVerification": 7,
-    "enrichedInCurrentFeed": 8,
-    "notMaintained": 1,
-    "feedMembershipUnverified": 1
-  },
-  "runAt": "2026-11-06T09:09:18+03:00",
-  "metricsMeasuredAt": "2026-11-06T06:09:18Z",
+  "summary": "54 projects in the cumulative research catalog; 2 archived, 52 non-archived, 8 exact project-feed matches and 45 research-only entries, with 1 feed-membership status still unverified.",
+  "runAt": "2026-11-06T09:09:28.818Z",
+  "metricsMeasuredAt": "2026-11-06T09:09:28.818Z",
   "metricSource": "GitHub REST API; stars/forks/open issues are cumulative snapshots, not daily gains.",
   "timestampAnomalies": [
     {
