@@ -1,0 +1,252 @@
+{
+  "version": 1,
+  "repository": "Unleash/unleash",
+  "url": "https://github.com/Unleash/unleash",
+  "category": "إدارة الإصدارات وFeature Flags",
+  "status": "research_only_not_published",
+  "siteVisibility": "بحث فقط — غير منشور",
+  "inCurrentFeed": false,
+  "feedId": null,
+  "feedNewsReferenceId": "7ace9bb51dd233554e",
+  "measuredAt": "2026-11-06T15:01:29Z",
+  "metrics": {
+    "stars": 14014,
+    "forks": 925,
+    "openIssues": 44,
+    "archived": false,
+    "disabled": false,
+    "license": "AGPL-3.0",
+    "language": "TypeScript",
+    "lastPushedAt": "2026-11-06T14:07:04Z",
+    "lastUpdatedAt": "2026-11-06T14:57:09Z",
+    "defaultBranch": "main",
+    "source": "https://api.github.com/repos/Unleash/unleash"
+  },
+  "license": {
+    "name": "AGPL-3.0-or-later",
+    "evidence": "LICENSE and package.json inspected; official docs state AGPLv3 from v8.0.0 onwards.",
+    "caveat": "Network copyleft implications should be reviewed before modifying and offering the server to users; not legal advice."
+  },
+  "overview": "Unleash is a feature-management service for feature flags, gradual rollouts, targeting constraints, variants, experiments and kill switches. It provides an admin UI, APIs and client SDKs; the repository is version 8.3.1, primarily TypeScript, with PostgreSQL as its backing database.",
+  "requirements": "Demo path: Docker and Docker Compose; the repository's docker-compose.yml starts the Unleash server plus PostgreSQL 15 and exposes port 4242. Source-development path: Node.js >=22 and pnpm, plus a configured PostgreSQL database. The checked-in Compose file is explicitly for demo/development, uses trust authentication and insecure development tokens, and must not be used as a production deployment.",
+  "quickStart": [
+    "git clone https://github.com/Unleash/unleash.git",
+    "cd unleash",
+    "docker compose up -d",
+    "Open http://localhost:4242 for a local demo, create a test flag, then connect an SDK.",
+    "Do not expose the demo configuration publicly; replace development tokens, configure database authentication, TLS, backups and access controls before production."
+  ],
+  "costModel": "Open Source self-hosting is free of license fees and has limits of 1 project, 2 environments and 5,000 flags per instance; infrastructure, database, backups and operations remain the operator's cost. The official pricing page lists Enterprise Pay-As-You-Go at $75 per seat per month; self-hosted PAYG has a five-seat minimum, while the cloud plan includes 53 million API requests/month then $5 per additional million. A 14-day trial is advertised. No paid plan or service was used in this research.",
+  "localVsCloud": {
+    "local": "Docker Compose is the fastest local learning path but is explicitly not production-safe. Source development requires Node 22+, pnpm and PostgreSQL.",
+    "cloud": "Unleash-hosted Enterprise reduces operations work but is paid; annual Enterprise has custom pricing. Self-hosted Enterprise is also paid and adds governance/security features. Compare total cost including seats, infrastructure and operations."
+  },
+  "alternatives": [
+    {
+      "name": "Flagsmith",
+      "repository": "Flagsmith/flagsmith",
+      "url": "https://github.com/Flagsmith/flagsmith",
+      "license": "BSD-3-Clause for core",
+      "notes": "Open-source feature flags and remote configuration; official site also offers managed and enterprise tiers."
+    },
+    {
+      "name": "GrowthBook",
+      "repository": "growthbook/growthbook",
+      "url": "https://github.com/growthbook/growthbook",
+      "license": "Mostly MIT with some directories under commercial license",
+      "notes": "Feature flags, experimentation and product analytics; inspect per-directory license boundaries."
+    }
+  ],
+  "improvements": [
+    {
+      "title": "مراجع مرئي عربي لسياسات الإطلاق التدريجي",
+      "problem": "قد يضبط الفريق نسب rollout وشرائح المستخدمين دون تصور واضح لمن سيشاهد الميزة أو كيف تتداخل الشروط.",
+      "approach": "أداة قراءة فقط تحاكي استراتيجيات التفعيل والقيود على عينات اصطناعية، وتعرض النتيجة قبل اعتماد السياسة دون تغيير إعدادات Unleash.",
+      "stack": "TypeScript + React + JSON Schema + Unleash API read-only",
+      "steps": [
+        "قراءة تعريفات الاستراتيجيات والقيود من الوثائق الرسمية.",
+        "استيراد إعداد تجريبي بعد إزالة أي بيانات مستخدمين.",
+        "إنشاء عينات سياق اصطناعية تمثل شرائح مختلفة.",
+        "عرض نتيجة كل استراتيجية وسبب التفعيل أو الرفض.",
+        "تصدير تقرير مراجعة مستقل دون الكتابة إلى الخادم."
+      ],
+      "metric": "نسبة حالات التفعيل المتوقعة التي تطابق نتيجة SDK المرجعية في مجموعة اختبار ثابتة.",
+      "difficulty": "متوسط تقديرًا.",
+      "risks": "قد يختلف سلوك SDK حسب اللغة والإصدار؛ يجب إبقاء الأداة read-only وعدم عرض بيانات شخصية.",
+      "sources": [
+        {
+          "title": "Unleash activation strategies",
+          "url": "https://docs.getunleash.io/concepts/activation-strategies"
+        },
+        {
+          "title": "Unleash feature flags",
+          "url": "https://docs.getunleash.io/concepts/feature-flags"
+        }
+      ]
+    },
+    {
+      "title": "لوحة كشف الأعلام القديمة ومخاطر تراكمها",
+      "problem": "الأعلام التي انتهى غرضها قد تبقى في الشيفرة وتزيد التعقيد ومخاطر السلوك غير المتوقع.",
+      "approach": "تقرير دوري يقرأ بيانات lifecycle والأنواع والعمر والمراجع البرمجية، ثم يقترح مراجعة بشرية قبل أي حذف.",
+      "stack": "Python + Unleash Admin API + GitHub API + SQLite",
+      "steps": [
+        "قراءة حالات الأعلام وتواريخ إنشائها وتحديثها.",
+        "جمع مراجع الشيفرة المرتبطة بالأعلام من مستودعات محددة.",
+        "تصنيف الأعلام النشطة والمحتمل تقادمها والمتقادمة.",
+        "إنشاء تقرير يربط كل اقتراح بمصدره ودليل الاستخدام.",
+        "طلب موافقة مالك الشيفرة قبل فتح طلب إزالة؛ لا حذف تلقائي."
+      ],
+      "metric": "نسبة الأعلام المتقادمة التي جرى تأكيد مالكها وخطة إزالتها دون حذف خاطئ.",
+      "difficulty": "متوسط إلى مرتفع تقديرًا.",
+      "risks": "قد لا تظهر المراجع الديناميكية أو الأسماء المبنية وقت التشغيل؛ يجب منع الحذف التلقائي.",
+      "sources": [
+        {
+          "title": "Unleash feature flag lifecycle",
+          "url": "https://docs.getunleash.io/concepts/feature-flags"
+        },
+        {
+          "title": "Unleash API reference",
+          "url": "https://docs.getunleash.io/reference/api/unleash"
+        }
+      ]
+    },
+    {
+      "title": "مختبر موثوقية SDK عند انقطاع الاتصال",
+      "problem": "قد تختلف استجابة SDK أو قيمة العلم المخزنة مؤقتًا عند تعطل الشبكة أو تأخر تحديث الإعدادات.",
+      "approach": "مختبر محلي يشغّل سيناريوهات انقطاع وإعادة اتصال ويقارن سلوك SDKs الرسمية مع سياسة fallback المتفق عليها.",
+      "stack": "Python + pytest + Docker Compose + official Unleash SDKs",
+      "steps": [
+        "اختيار SDKين رسميين وإصدارات محددة.",
+        "إنشاء أعلام اصطناعية وقيم fallback معلنة.",
+        "محاكاة انقطاع الخادم وتأخر التحديث وإعادة الاتصال.",
+        "جمع القرارات وزمن الاستجابة والأخطاء لكل سيناريو.",
+        "إصدار تقرير توافق قابل لإعادة التشغيل."
+      ],
+      "metric": "نسبة حالات الانقطاع التي تحافظ على fallback المتوقع وزمن استعادة التحديث.",
+      "difficulty": "متوسط تقديرًا.",
+      "risks": "قد تعكس النتائج إعداد الاختبار لا كل بيئات الإنتاج؛ يلزم توثيق الإصدارات والقيود.",
+      "sources": [
+        {
+          "title": "Unleash SDK documentation",
+          "url": "https://docs.getunleash.io/sdks"
+        },
+        {
+          "title": "Unleash repository",
+          "url": "https://github.com/Unleash/unleash"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "مدقق فروقات Feature Flags بين البيئات",
+      "problem": "قد تختلف أعلام التطوير والاختبار والإنتاج دون ملاحظة، فتظهر سلوكيات يصعب إعادة إنتاجها.",
+      "approach": "أداة تقارن exports من بيئتين وتعرض اختلاف القيم والاستراتيجيات والقيود مع تقرير فقط.",
+      "stack": "Python + JSON Diff + Unleash Admin API",
+      "steps": [
+        "سحب exports بصلاحيات قراءة فقط.",
+        "تطبيع ترتيب الحقول والقوائم.",
+        "مقارنة القيم والاستراتيجيات والقيود.",
+        "تصنيف الفروقات حسب أثرها المحتمل.",
+        "توليد تقرير ومراجعة بشرية قبل أي تعديل."
+      ],
+      "metric": "دقة اكتشاف الفروقات المقصودة وغير المقصودة في مجموعة ملفات مرجعية.",
+      "difficulty": "متوسط تقديرًا.",
+      "risks": "اختلاف الإصدارات أو معرفات البيئات قد ينتج فروقات شكلية؛ لا تنفذ تغييرات تلقائية.",
+      "sources": [
+        {
+          "title": "Unleash API reference",
+          "url": "https://docs.getunleash.io/reference/api/unleash"
+        },
+        {
+          "title": "Unleash feature flags",
+          "url": "https://docs.getunleash.io/concepts/feature-flags"
+        }
+      ]
+    },
+    {
+      "title": "مختبر توافق متعدد اللغات لعملاء Feature Flags",
+      "problem": "تختلف أمثلة SDKs وطرق التهيئة بين Python وNode وJava وغيرها، ما يصعب مقارنة السلوك.",
+      "approach": "مجموعة تطبيقات صغيرة تشترك في سيناريوهات اختبار واحدة وتنتج تقرير توافق لكل SDK وإصدار.",
+      "stack": "Python + Node.js + Docker Compose + pytest",
+      "steps": [
+        "اختيار ثلاثة SDKs رسمية وإصدارات مثبتة.",
+        "تعريف سيناريوهات موحدة للأعلام والشرائح والـ variants.",
+        "تشغيل كل تطبيق على بيانات اصطناعية واحدة.",
+        "مقارنة النتائج وزمن التقييم وسلوك fallback.",
+        "نشر تقرير توافق مع قيود كل إصدار."
+      ],
+      "metric": "نسبة تطابق قرارات SDKs في السيناريوهات المشتركة.",
+      "difficulty": "متوسط تقديرًا.",
+      "risks": "قد تختلف الميزات المدعومة حسب SDK؛ لا تعمم نتيجة إصدار على جميع الإصدارات.",
+      "sources": [
+        {
+          "title": "Unleash SDK list",
+          "url": "https://docs.getunleash.io/sdks"
+        },
+        {
+          "title": "Unleash repository",
+          "url": "https://github.com/Unleash/unleash"
+        }
+      ]
+    }
+  ],
+  "religiousRationale": "لا توجد حالة استخدام دينية طبيعية تبرر اقتراحًا مستقلًا لهذا المشروع العام لإدارة إصدارات البرمجيات؛ لم تُضف أفكار دينية حشوًا.",
+  "limitations": [
+    "AGPL-3.0-or-later يحتاج مراجعة ترخيصية قبل تقديم نسخة معدلة عبر الشبكة.",
+    "Docker Compose المرفق للتطوير فقط ويحتوي إعدادات غير آمنة للإنتاج.",
+    "نسخة Open Source محدودة بمشروع واحد وبيئتين و5,000 علم لكل instance.",
+    "الأسعار والخطط تتغير؛ الأرقام لقطة من صفحة التسعير وقت القياس.",
+    "لم يتم تشغيل المشروع أو اختبار SDKs؛ لا يوجد testEvidence."
+  ],
+  "displayRequirements": [
+    "اعرض الشارة «بحث فقط — غير منشور» ولا تنشئ feed ID بديلًا.",
+    "اعرض تاريخ قياس النجوم والفروع والـ issues، ولا تخلط اللقطات الزمنية.",
+    "أظهر AGPL-3.0-or-later بوضوح قبل روابط الاستخدام أو النسخ.",
+    "اعرض Node >=22 وPostgreSQL 15 ومتطلبات Docker Compose.",
+    "ضع تحذيرًا واضحًا بأن Compose الافتراضي للتطوير فقط وغير آمن للإنتاج.",
+    "افصل تكلفة Open Source الذاتية عن خطة Enterprise المدفوعة وتكلفة البنية التحتية.",
+    "اعرض البدائل Flagsmith وGrowthBook والقيود والاقتراحات بالترتيب.",
+    "لا تعرض شارة Tested أو زر Run/Publish."
+  ],
+  "testStatus": "not_run",
+  "testEvidence": null,
+  "sources": [
+    {
+      "title": "Unleash repository and README",
+      "url": "https://github.com/Unleash/unleash"
+    },
+    {
+      "title": "Unleash LICENSE",
+      "url": "https://github.com/Unleash/unleash/blob/main/LICENSE"
+    },
+    {
+      "title": "Unleash package.json",
+      "url": "https://github.com/Unleash/unleash/blob/main/package.json"
+    },
+    {
+      "title": "Unleash Docker Compose",
+      "url": "https://github.com/Unleash/unleash/blob/main/docker-compose.yml"
+    },
+    {
+      "title": "Unleash feature flags docs",
+      "url": "https://docs.getunleash.io/concepts/feature-flags"
+    },
+    {
+      "title": "Unleash activation strategies docs",
+      "url": "https://docs.getunleash.io/concepts/activation-strategies"
+    },
+    {
+      "title": "Unleash pricing",
+      "url": "https://www.getunleash.io/pricing"
+    },
+    {
+      "title": "Flagsmith open source",
+      "url": "https://www.flagsmith.com/open-source"
+    },
+    {
+      "title": "GrowthBook repository",
+      "url": "https://github.com/growthbook/growthbook"
+    }
+  ]
+}
