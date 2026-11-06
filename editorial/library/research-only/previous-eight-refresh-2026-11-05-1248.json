@@ -1,0 +1,191 @@
+{
+  "version": 1,
+  "runAt": "2026-11-05T10:02:22.536Z",
+  "scope": "Recheck of the previous eight project dossiers; research-only snapshot, not a public project-card update.",
+  "metricsMeasuredAt": "2026-11-05T10:02:22.536Z",
+  "metricSource": "GitHub REST API repository endpoints; cumulative counters, not daily gains.",
+  "projectsReviewed": 8,
+  "nonArchived": 8,
+  "archived": 0,
+  "feedVisible": 1,
+  "researchOnly": 7,
+  "metrics": [
+    {
+      "repository": "patchy631/ai-engineering-hub",
+      "stars": 41134,
+      "forks": 6566,
+      "openIssues": 136,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "updatedAt": "2026-11-05T09:35:16Z",
+      "defaultBranch": "main",
+      "language": "Jupyter Notebook"
+    },
+    {
+      "repository": "googleapis/python-genai",
+      "stars": 4056,
+      "forks": 1057,
+      "openIssues": 372,
+      "archived": false,
+      "disabled": false,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-05T06:10:47Z",
+      "updatedAt": "2026-11-05T09:10:48Z",
+      "defaultBranch": "main",
+      "language": "Python"
+    },
+    {
+      "repository": "Millillion/lasm",
+      "stars": 99,
+      "forks": 7,
+      "openIssues": 7,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "pushedAt": "2026-11-05T06:06:13Z",
+      "updatedAt": "2026-11-05T06:06:17Z",
+      "defaultBranch": "main",
+      "language": "C"
+    },
+    {
+      "repository": "microsoft/markitdown",
+      "stars": 193963,
+      "forks": 14571,
+      "openIssues": 801,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "pushedAt": "2026-10-28T15:33:14Z",
+      "updatedAt": "2026-11-05T09:44:57Z",
+      "defaultBranch": "main",
+      "language": "Python"
+    },
+    {
+      "repository": "yc-software/minecraft-agent-harness",
+      "stars": 138,
+      "forks": 11,
+      "openIssues": 1,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "updatedAt": "2026-11-05T09:21:30Z",
+      "defaultBranch": "main",
+      "language": "JavaScript"
+    },
+    {
+      "repository": "NVIDIA/OpenShell",
+      "stars": 21119,
+      "forks": 2063,
+      "openIssues": 630,
+      "archived": false,
+      "disabled": false,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-05T09:00:42Z",
+      "updatedAt": "2026-11-05T09:40:14Z",
+      "defaultBranch": "main",
+      "language": "Rust"
+    },
+    {
+      "repository": "pydantic/pydantic-ai",
+      "stars": 21034,
+      "forks": 3102,
+      "openIssues": 1766,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "pushedAt": "2026-11-05T09:41:36Z",
+      "updatedAt": "2026-11-05T09:33:01Z",
+      "defaultBranch": "main",
+      "language": "Python"
+    },
+    {
+      "repository": "astral-sh/uv",
+      "stars": 91558,
+      "forks": 3747,
+      "openIssues": 3050,
+      "archived": false,
+      "disabled": false,
+      "license": "Apache-2.0 OR MIT",
+      "pushedAt": "2026-11-05T02:44:47Z",
+      "updatedAt": "2026-11-05T09:35:25Z",
+      "defaultBranch": "main",
+      "language": "Rust"
+    }
+  ],
+  "licenseEvidence": "GitHub API SPDX metadata; this snapshot does not replace upstream license-text review or per-component license review.",
+  "timestampAnomalies": [],
+  "bestThree": [
+    {
+      "title": "عارض فروقات سياسات OpenShell قبل التنفيذ",
+      "problem": "يصعب اكتشاف اتساع صلاحيات الملفات أو الشبكة في ملفات السياسات الطويلة.",
+      "approach": "واجهة تقارن السياسة الحالية والمقترحة وتشرح أثر كل قاعدة مع موافقة بشرية.",
+      "stack": "TypeScript + JSON Schema + OpenShell policy API",
+      "steps": [
+        "قراءة schema الرسمية.",
+        "تطبيع القواعد وعرض الفروقات.",
+        "إظهار الملفات والوجهات المتأثرة.",
+        "إضافة اختبار deny-by-default."
+      ],
+      "metric": "الصلاحيات الواسعة المكتشفة قبل التشغيل.",
+      "difficulty": "مرتفع، تقدير 1–2 أسبوع",
+      "risks": "تفسير خاطئ لقاعدة قد يعطي ثقة زائفة.",
+      "sources": [
+        {
+          "title": "OpenShell",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        }
+      ]
+    },
+    {
+      "title": "حزمة تقييم typed لوكلاء Pydantic AI",
+      "problem": "قد ينتج الوكيل مخرجات غير صحيحة أو يستدعي أداة غير مناسبة.",
+      "approach": "حالات ثابتة تقيس schema ومسارات الأدوات والامتناع والتكلفة والزمن.",
+      "stack": "Python + Pydantic Evals + pytest + JSONL",
+      "steps": [
+        "تعريف مهام مرجعية.",
+        "إنشاء expected outputs.",
+        "اختبار الفشل والامتناع.",
+        "تصدير مقارنة إصدارات."
+      ],
+      "metric": "دقة المخرجات المنظمة وصحة استدعاءات الأدوات.",
+      "difficulty": "متوسط إلى مرتفع، تقدير أسبوع",
+      "risks": "عدم حتمية النماذج.",
+      "sources": [
+        {
+          "title": "Pydantic AI",
+          "url": "https://github.com/pydantic/pydantic-ai"
+        },
+        {
+          "title": "Docs",
+          "url": "https://pydantic.dev/docs/ai/"
+        }
+      ]
+    },
+    {
+      "title": "مصفوفة توافق Google GenAI SDK",
+      "problem": "تغير واجهات SDK قد يكسر أمثلة قديمة عند الترقية.",
+      "approach": "اختبارات contract لواجهات Python وإصدارات SDK باستخدام fixtures.",
+      "stack": "Python + pytest + GitHub Actions + JSON fixtures",
+      "steps": [
+        "حصر الواجهات المستخدمة.",
+        "إنشاء fixtures ثابتة.",
+        "تشغيل مصفوفة Python وSDK.",
+        "نشر تقرير deprecations."
+      ],
+      "metric": "عدد regressions المكتشفة قبل الإصدار.",
+      "difficulty": "متوسط، تقدير 5–7 أيام",
+      "risks": "fixtures لا تمثل كل تغيرات الخدمة الحية.",
+      "sources": [
+        {
+          "title": "Google GenAI SDK",
+          "url": "https://github.com/googleapis/python-genai"
+        }
+      ]
+    }
+  ],
+  "testEvidence": null,
+  "note": "All eight remain non-archived. AI Engineering Hub is the only exact project URL in the previous-eight set present in the current project feed; seven remain research-only. Metrics are cumulative; no project code was executed. Existing idea order is preserved."
+}
