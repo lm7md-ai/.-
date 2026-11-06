@@ -1,0 +1,243 @@
+{
+  "repository": "zalando-incubator/agentic-identity-broker",
+  "url": "https://github.com/zalando-incubator/agentic-identity-broker",
+  "status": "research-only; not published",
+  "titleAr": "Agentic Identity Broker: وسيط هوية لتفويض صلاحيات وكلاء الذكاء الاصطناعي",
+  "summaryAr": "مشروع Go من Zalando لإدارة تفويض OAuth2 وموافقة المستخدم وسلاسل الصلاحيات للوكلاء، مع خزنة لرموز مزودي الخدمات وتكامل مع Agentgateway لتبادل الرموز عند استدعاء أدوات MCP.",
+  "whyItMatters": "يعالج مشكلة منح الوكيل صلاحيات خدمات خارجية دون تسليمه كلمات مرور أو رموز مزودي الخدمة مباشرة. يضع الموافقة والتفويض وتخزين الرموز والتدقيق في طبقة مركزية؛ وهذا مفيد عند بناء أنظمة وكلاء تحتاج حدود صلاحيات قابلة للمراجعة والإلغاء.",
+  "overview": "يتكون الحل من وسيط هوية يدير تسجيل الوكلاء والجلسات وموافقات المستخدم ونطاقات OAuth2، وخزنة لرموز الخدمات، وطبقة تبادل رموز تتكامل مع Agentgateway قبل وصول طلب MCP إلى الخدمة. يوفر المشروع واجهة موافقة وسجلات تدقيق، ويعرض أمثلة لمزودات وخدمات وهمية. README يذكر أن المشروع مستخدم داخليًا لدى Zalando؛ هذه معلومة يذكرها أصحاب المشروع وليست تدقيقًا مستقلًا.",
+  "requirements": "للتجربة المحلية: Docker مع Docker Compose v2 وGit وcurl وOpenSSL وjq؛ أداة just اختيارية لتشغيل الوصفات. لا يحتاج مسار Compose إلى تثبيت Go أو Node أو PostgreSQL على المضيف، ويستخدم مخازن داخل الذاكرة ومزودي OAuth2 وهميين. للتطوير الأصلي: إصدار Go المحدد في go.mod (1.27.3)، وNode.js/npm للواجهة، وjust وأدوات الاختبار. للنشر المؤسسي: Kubernetes 1.25+ وHelm 3، وPostgreSQL 12+ عند استخدام تخزين دائم؛ وقد تتطلب بنية التشفير الإنتاجية خدمات مثل AWS KMS وDynamoDB وهوية سحابية مناسبة.",
+  "quickStart": "1) ثبّت Docker Compose v2 وGit وOpenSSL وjq، وثبّت just اختياريًا. 2) نفّذ: git clone https://github.com/zalando-incubator/agentic-identity-broker.git ثم cd agentic-identity-broker. 3) شغّل: just compose-up-detached. 4) انتظر اكتمال فحوص الصحة وظهور Local Research Agent؛ البناء الأول ينشئ عدة صور حاويات وقد يستغرق وقتًا حسب الجهاز والشبكة. 5) افتح واجهة الموافقة المحلية على http://localhost:3000/ والعميل التجريبي على http://localhost:9002/. 6) استخدم مزود OAuth2 الوهمي، راجع الأذونات، ثم نفّذ استدعاء whoami التجريبي عبر Agentgateway. 7) أوقف البيئة بـ just compose-down. لا تستخدم إعدادات التطوير على شبكة عامة.",
+  "costs": "التجربة المحلية لا تتطلب خدمة نموذج مدفوعة أو حسابًا سحابيًا؛ كلفتها موارد الجهاز والتنزيل وبناء صور Docker. تشغيل الإنتاج قد يتطلب تكلفة Kubernetes/الحوسبة وقاعدة PostgreSQL وخدمات إدارة مفاتيح مثل KMS وDynamoDB والتخزين والمراقبة ومزودي OAuth2. لا ينشر المستودع سعر SaaS أو تقدير تكلفة موحدًا؛ التكلفة تعتمد على البنية وحجم الجلسات.",
+  "alternatives": [
+    {
+      "name": "Keycloak",
+      "role": "منصة هوية وإدارة وصول مفتوحة المصدر؛ بديل لبناء طبقة هوية/OIDC، لكنه ليس بديلًا مباشرًا لكل مسار تفويض الوكلاء وتبادل رموز MCP في هذا المشروع.",
+      "url": "https://www.keycloak.org/"
+    },
+    {
+      "name": "Ory Hydra",
+      "role": "خادم OAuth2/OIDC يمكن استخدامه لبناء طبقة التفويض؛ يحتاج مكونات إضافية لبناء تجربة الموافقة وتكامل الوكلاء.",
+      "url": "https://www.ory.sh/hydra/"
+    },
+    {
+      "name": "oauth2-proxy",
+      "role": "وكيل عكسي للمصادقة أمام التطبيقات؛ مكوّن مجاور وليس وسيط تفويض كاملًا للوكلاء.",
+      "url": "https://oauth2-proxy.github.io/oauth2-proxy/"
+    },
+    {
+      "name": "Agentgateway",
+      "role": "بوابة متكاملة مع المشروع لتوجيه MCP وتبادل الرموز؛ مكوّن مكمل أكثر من كونه بديلًا للوسيط.",
+      "url": "https://agentgateway.dev/"
+    }
+  ],
+  "requirementsReviewed": "README وARCHITECTURE.md وLICENSE وgo.mod وCONTRIBUTING.md وملفات Docker Compose وjustfile ووثائق البدء والتهيئة والنشر.",
+  "improvements": [
+    {
+      "title": "عارض مرئي عربي لسلسلة التفويض ونطاقات OAuth2",
+      "problem": "يصعب على المسؤول رؤية انتقال الصلاحيات بين المستخدم والوكيل والبوابة ومزود الخدمة ومقارنة نطاقات الموافقة قبل وبعد التغيير.",
+      "approach": "إضافة شاشة قراءة فقط تعرض سلسلة principal→agent→grant→provider، وتوضح النطاقات وتاريخ الانتهاء والفروقات قبل حفظ الموافقة.",
+      "stack": "React وTypeScript وGo API وOpenAPI وPlaywright.",
+      "steps": [
+        "رسم نموذج بيانات التفويض الحالي من واجهات API.",
+        "تصميم عرض بياني وسجل زمني قابلين للقراءة بالعربية.",
+        "إضافة مقارنة نطاقات الصلاحيات قبل الموافقة وبعدها.",
+        "ربط الشاشة بواجهات القراءة دون كشف قيم الرموز.",
+        "إضافة اختبارات صلاحيات وتدفق موافقة تجريبي."
+      ],
+      "metric": "زمن اكتشاف نطاق زائد، ونسبة الموافقات التي يمكن تتبعها من المستخدم إلى المزود.",
+      "difficulty": "متوسط إلى مرتفع؛ تقدير 2–4 أسابيع لمطور واحد بعد مراجعة الواجهات.",
+      "risks": "كشف بيانات وصفية حساسة، أو عرض حالة قديمة بسبب التخزين المؤقت، أو ضعف إتاحة الرسم البياني.",
+      "sources": [
+        {
+          "title": "Agentic Identity Broker README",
+          "url": "https://github.com/zalando-incubator/agentic-identity-broker"
+        },
+        {
+          "title": "Configuration guide",
+          "url": "https://github.com/zalando-incubator/agentic-identity-broker/blob/main/docs/configuration.md"
+        }
+      ]
+    },
+    {
+      "title": "مصفوفة اختبارات تفويض OAuth2 بمزودات وهمية قابلة لإعادة الإنتاج",
+      "problem": "اختبار مسارات الموافقة وتبادل الرموز عبر مزودين متعددين قد يتطلب حسابات خارجية ويصعب تكراره في CI.",
+      "approach": "توسيع بيئة المزودات الوهمية بجدول سيناريوهات يغطي الرفض والانتهاء والإلغاء وتغير النطاقات وفشل المزود، مع نتائج ثابتة.",
+      "stack": "Go وGinkgo وDocker Compose وPlaywright.",
+      "steps": [
+        "حصر مسارات الموافقة وتبادل الرموز في الوثائق.",
+        "إنشاء fixtures ثابتة لحالات النجاح والرفض والانتهاء.",
+        "تشغيل المزودات الوهمية في بيئة Compose معزولة.",
+        "ربط كل سيناريو باختبار API وواجهة مناسب.",
+        "نشر تقرير تغطية يوضح المسارات غير المختبرة."
+      ],
+      "metric": "نسبة مسارات التفويض المغطاة ومعدل نجاح إعادة تشغيل السيناريوهات دون اتصال بمزود حقيقي.",
+      "difficulty": "متوسط؛ تقدير 1–3 أسابيع.",
+      "risks": "قد تختلف المحاكاة عن سلوك مزود OAuth2 حقيقي أو تخفي اختلافات التهيئة.",
+      "sources": [
+        {
+          "title": "Docker Compose setup",
+          "url": "https://github.com/zalando-incubator/agentic-identity-broker/blob/main/docker-compose.yml"
+        },
+        {
+          "title": "Contributing and verification",
+          "url": "https://github.com/zalando-incubator/agentic-identity-broker/blob/main/CONTRIBUTING.md"
+        }
+      ]
+    },
+    {
+      "title": "تنبيه مبكر لانتهاء الموافقات والجلسات التابعة",
+      "problem": "قد يتعطل عمل الوكيل عند انتهاء grant أو جلسة مزود دون أن يعرف المستخدم أي تفويض يحتاج إلى تجديد.",
+      "approach": "إضافة فحص دوري للأحداث الوشيكة الانتهاء، مع لوحة تعرض الوكيل والخدمة والنطاق والوقت المتبقي، دون إرسال أسرار أو رموز.",
+      "stack": "Go وPostgreSQL وReact وWebhooks اختيارية.",
+      "steps": [
+        "تحديد حالات الانتهاء والإلغاء المتاحة في نموذج البيانات.",
+        "إضافة استعلام يلتقط الموافقات والجلسات القريبة من الانتهاء.",
+        "عرض تنبيه داخل واجهة الموافقة مع رابط إلى سجل التفويض.",
+        "إضافة اختبارات زمنية لحالات التجديد والإلغاء.",
+        "قياس التنبيهات الصحيحة والتنبيهات الزائفة."
+      ],
+      "metric": "نسبة الأعطال الناتجة عن انتهاء غير متوقع ومتوسط زمن اكتشاف التفويض المنتهي.",
+      "difficulty": "متوسط؛ تقدير 1–2 أسبوع.",
+      "risks": "تنبيهات زائدة أو كشف علاقة المستخدم بخدمة خارج نطاق صلاحيات المشاهد.",
+      "sources": [
+        {
+          "title": "Agentic Identity Broker architecture",
+          "url": "https://github.com/zalando-incubator/agentic-identity-broker/blob/main/ARCHITECTURE.md"
+        },
+        {
+          "title": "Production deployment guidance",
+          "url": "https://github.com/zalando-incubator/agentic-identity-broker"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "مدقق سياسات MCP ونطاقات OAuth2",
+      "problem": "قد تطلب أدوات MCP نطاقات أوسع من المطلوب ولا توجد مراجعة مستقلة سهلة قبل النشر.",
+      "approach": "CLI يقرأ ملفات إعداد الوكيل والخدمات ويقارن النطاقات بقواعد least-privilege ويصدر تقريرًا دون تعديل الملفات.",
+      "stack": "Go وOPA وJSON Schema وCobra.",
+      "steps": [
+        "تعريف مخطط إدخال لإعدادات الوكيل والخدمات.",
+        "استخراج النطاقات وأهداف إعادة التوجيه.",
+        "إضافة قواعد تحذر من النطاقات الواسعة أو غير المستخدمة.",
+        "إنتاج تقرير JSON وHTML مع مصدر كل قاعدة.",
+        "اختبار الأداة على fixtures عامة ومجهولة الهوية."
+      ],
+      "metric": "عدد مخالفات least-privilege المكتشفة ونسبة التحذيرات الصحيحة في مجموعة اختبار معلنة.",
+      "difficulty": "متوسط؛ تقدير 2–3 أسابيع.",
+      "risks": "إيجابيات كاذبة أو قواعد لا تغطي اختلافات مزودي OAuth2.",
+      "sources": [
+        {
+          "title": "Agentic Identity Broker",
+          "url": "https://github.com/zalando-incubator/agentic-identity-broker"
+        },
+        {
+          "title": "Open Policy Agent",
+          "url": "https://www.openpolicyagent.org/docs"
+        }
+      ]
+    },
+    {
+      "title": "لوحة محلية لسجل موافقات الوكلاء متعدد المزودين",
+      "problem": "تتوزع سجلات الموافقة والتفويض بين خدمات متعددة، ما يصعّب مراجعة ما سمح به المستخدم ومتى.",
+      "approach": "تطبيق محلي يستورد سجلات JSON من وسطاء وبوابات مختلفة ويعرضها زمنيًا مع بحث وتصدير، دون تخزين الرموز أو الأسرار.",
+      "stack": "Python أو Go وSQLite وReact.",
+      "steps": [
+        "تعريف صيغة محايدة للأحداث والحقول الحساسة.",
+        "بناء مستورد يزيل قيم الأسرار ويحتفظ بالمعرّفات المرجعية.",
+        "تخزين الأحداث محليًا في SQLite.",
+        "إضافة مرشحات حسب الوكيل والخدمة والنطاق والتاريخ.",
+        "توفير تصدير تدقيقي وإثبات مصدر كل حدث."
+      ],
+      "metric": "نسبة الأحداث التي تُستورد دون فقدان حقول التدقيق وزمن العثور على موافقة محددة.",
+      "difficulty": "متوسط؛ تقدير 2–4 أسابيع.",
+      "risks": "تسرب بيانات شخصية في السجلات أو فقدان دلالات خاصة بكل مزود.",
+      "sources": [
+        {
+          "title": "Agentic Identity Broker audit logging",
+          "url": "https://github.com/zalando-incubator/agentic-identity-broker"
+        },
+        {
+          "title": "Agentgateway",
+          "url": "https://agentgateway.dev/"
+        }
+      ]
+    }
+  ],
+  "religious": [],
+  "sources": [
+    {
+      "title": "المستودع الرسمي",
+      "url": "https://github.com/zalando-incubator/agentic-identity-broker"
+    },
+    {
+      "title": "README",
+      "url": "https://github.com/zalando-incubator/agentic-identity-broker/blob/main/README.md"
+    },
+    {
+      "title": "LICENSE",
+      "url": "https://github.com/zalando-incubator/agentic-identity-broker/blob/main/LICENSE"
+    },
+    {
+      "title": "ARCHITECTURE",
+      "url": "https://github.com/zalando-incubator/agentic-identity-broker/blob/main/ARCHITECTURE.md"
+    },
+    {
+      "title": "go.mod",
+      "url": "https://github.com/zalando-incubator/agentic-identity-broker/blob/main/go.mod"
+    },
+    {
+      "title": "CONTRIBUTING",
+      "url": "https://github.com/zalando-incubator/agentic-identity-broker/blob/main/CONTRIBUTING.md"
+    },
+    {
+      "title": "Docker Compose setup",
+      "url": "https://github.com/zalando-incubator/agentic-identity-broker/blob/main/docker-compose.yml"
+    },
+    {
+      "title": "justfile",
+      "url": "https://github.com/zalando-incubator/agentic-identity-broker/blob/main/justfile"
+    },
+    {
+      "title": "Keycloak",
+      "url": "https://www.keycloak.org/"
+    },
+    {
+      "title": "Ory Hydra",
+      "url": "https://www.ory.sh/hydra/"
+    },
+    {
+      "title": "oauth2-proxy",
+      "url": "https://oauth2-proxy.github.io/oauth2-proxy/"
+    },
+    {
+      "title": "Agentgateway",
+      "url": "https://agentgateway.dev/"
+    }
+  ],
+  "reviewedAt": "2026-11-06T20:46:47+03:00",
+  "basis": "readme",
+  "limitations": "المشروع نشط وغير مؤرشف ومرخص MIT بحسب GitHub API وLICENSE. README يذكر استخدامًا داخليًا لدى Zalando؛ هذا ادعاء من أصحاب المشروع. إعداد التطوير المحلي يثق بهوية محاكاة عبر X-Remote-User ويستخدم مزودات OAuth2 وهمية ومخزنًا داخل الذاكرة؛ لا يجوز اعتباره إعداد إنتاج أو تعريضه لشبكة عامة. لم تُشغّل الحاويات أو الاختبارات أو النشر في هذه الدورة، لذلك لا يوجد testEvidence.",
+  "activity": {
+    "stars": 47,
+    "forks": 6,
+    "openIssues": 73,
+    "archived": false,
+    "disabled": false,
+    "license": "MIT",
+    "language": "Go",
+    "pushedAt": "2026-11-06T17:10:56Z",
+    "updatedAt": "2026-11-06T18:29:23Z",
+    "measuredAt": "2026-11-06T20:46:47+03:00",
+    "source": "https://api.github.com/repos/zalando-incubator/agentic-identity-broker"
+  },
+  "feedRelation": {
+    "id": "d2e1d4bcf8eebaac40",
+    "url": "https://github.com/zalando-incubator/agentic-identity-broker",
+    "kind": "news",
+    "decision": "يوجد في التغذية كخبر فقط، وليس بطاقة مشروع؛ لذلك لم يُنشأ إثراء عام بهذا المعرف."
+  },
+  "displayRequirements": "للمساعد التطويري مستقبلًا: أبقِ هذا الملف في مكتبة research-only ولا تنشئ بطاقة مشروع عامة ما لم يظهر مستودع مطابق في feed.json كعنصر kind=project. اعرض شارة «بحث غير منشور»، وحالة النشاط والترخيص وتاريخ قياس النجوم، والمتطلبات والتكلفة والبدائل وQuick Start. أظهر بوضوح أن التشغيل والاختبارات لم يُنفذا. لا تغيّر واجهة الموقع أو شيفرته ضمن هذه الدورة."
+}
