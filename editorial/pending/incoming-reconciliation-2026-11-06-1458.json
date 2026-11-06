@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "runAt": "2026-11-06T14:58:11+03:00",
+  "summary": {
+    "incomingFilesScanned": 83,
+    "incomingRecordOccurrences": 878,
+    "alreadyImportedExactOccurrences": 842,
+    "activeExactOccurrences": 308,
+    "staleOccurrences": 570,
+    "notImportedOccurrences": 36,
+    "notImportedStaleOccurrences": 36,
+    "feedItems": 800,
+    "editorialItemsBefore": 808,
+    "currentFeedExactEditorialBefore": 268,
+    "staleEditorialBefore": 540,
+    "missingCurrentFeedEditorialBefore": 532,
+    "interpretation": "الأعداد في incoming هي مرات ظهور للسجل عبر الملفات وقد تتكرر بين الدفعات؛ لا تمثل عدد IDs فريدًا. لم يُستورد أي سجل من هذه المجموعة لأن المعرف والرابط الأصليين لم يعودا مطابقين للتغذية الحالية."
+  },
+  "records": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "titleAr": "OpenShell من NVIDIA: بيئات معزولة للوكلاء بصلاحيات قابلة للمراجعة",
+      "basis": "readme",
+      "reviewedAt": "2026-10-24T05:41:31+03:00",
+      "sourceTitles": [
+        "README OpenShell",
+        "مصفوفة الدعم",
+        "معمارية OpenShell"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "titleAr": "Canva تعلن Craft لتوليد صور يمكن تحويلها إلى تصاميم متعددة الطبقات",
+      "basis": "article",
+      "reviewedAt": "2026-10-24T08:48:04.195Z",
+      "sourceTitles": [
+        "تقرير TechCrunch عن Canva Craft"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "titleAr": "1Password تعرض تفويض دخول للوكلاء دون إظهار كلمات المرور",
+      "basis": "article",
+      "reviewedAt": "2026-10-24T08:48:04.195Z",
+      "sourceTitles": [
+        "تقرير TechCrunch عن 1Password for Agents"
+      ],
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "classification": "stale_expired",
+      "feedIdMatch": false,
+      "feedUrlOtherId": null,
+      "editorialUrlOtherId": null,
+      "structuralStatus": "pass"
+    }
+  ]
+}
