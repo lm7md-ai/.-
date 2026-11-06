@@ -3,8 +3,8 @@
   "runAt": "2026-11-06T06:08:04+03:00",
   "mainSha": "806ba9362a09d36c04151ce371511599d23b4e49",
   "incoming": {
-    "files": 78,
-    "appearances": 818,
+    "files": 79,
+    "appearances": 830,
     "previousAuditedBase": {
       "files": 77,
       "appearances": 806,
@@ -28,13 +28,18 @@
         "allPresentInEditorial": true
       }
     },
-    "exactEditorialAppearances": 782,
+    "exactEditorialAppearances": 794,
     "notInEditorialAppearances": 36,
     "idUrlMismatches": 0,
     "activeCandidatesMissingEditorial": 0,
     "expiredNotImported": 33,
     "seenOnly": 3,
-    "countSemantics": "All figures are appearances across files, not global unique IDs. The 37 repeated appearances were reported by the prior full audit; the 12:08 file changed no IDs or URLs."
+    "countSemantics": "All figures are appearances across files, not global unique IDs. The 37 repeated appearances were reported by the prior full audit; the 12:08 file changed no IDs or URLs.",
+    "newsBatchAddedToIncoming": {
+      "entries": 12,
+      "allExactAndImported": true,
+      "duplicatesWithinNewBatch": 0
+    }
   },
   "currentData": {
     "feed": 800,
@@ -48,13 +53,19 @@
     "activeNewsMissingAfter": 569,
     "activeProjectsMissing": 0,
     "status": "partial",
-    "statusAt": "2026-11-06T00:46:03Z",
+    "statusAt": "2026-11-06T03:25:19Z",
     "sourceCount": 26,
     "sourceErrors": [
       {
         "name": "البوابة العربية للأخبار التقنية",
         "error": "HTTP 403"
       }
+    ],
+    "workflowAutoRefreshCommit": "b70ae101821bbe8d0adf2b539bd23f1c3f6f6c34",
+    "automaticFilesChanged": [
+      "site/data/feed.json",
+      "site/data/seen.json",
+      "site/data/status.json"
     ]
   },
   "specialRecords": [
@@ -94,7 +105,18 @@
     "basisArticle": 12,
     "structuralEquivalentValidation": "passed",
     "allIdsAndUrlsMatchedCurrentFeed": true,
-    "allWerePreviouslyUnenriched": true
+    "allWerePreviouslyUnenriched": true,
+    "publication": {
+      "pr": 83,
+      "mergeCommit": "4fffdcbb2eabaad2b604c583d015c6c7a189fdae",
+      "ciRun": 196,
+      "ciRunId": 42156381012,
+      "pushRun": 136,
+      "pushRunId": 42156428038,
+      "artifactId": 13474472936,
+      "artifactChecked": true,
+      "all12InFeedAndEditorialExact": true
+    }
   },
   "projects": {
     "feedTotal": 100,
@@ -127,7 +149,19 @@
     "officialValidateLocal": "not executed; no local checkout",
     "officialImportLocal": "not executed; no local checkout",
     "unittestLocal": "not executed; no local checkout",
-    "githubActions": "pending PR validation; expected to run official validator and python -m unittest discover -s tests -v"
+    "githubActions": {
+      "prRun": 196,
+      "prRunId": 42156381012,
+      "conclusion": "success",
+      "steps": [
+        "python -m unittest discover -s tests -v",
+        "python scripts/editorial.py validate",
+        "node --check site/app.js && node --check site/ideas.js"
+      ],
+      "pushRun": 136,
+      "pushRunId": 42156428038,
+      "deployment": "success"
+    }
   },
   "deploymentBeforeThisPR": {
     "workflowRun": 135,
@@ -142,5 +176,7 @@
     "artifactActiveEditorial": 219,
     "artifactMissingNews": 581,
     "artifactMissingProjects": 0
-  }
+  },
+  "mainShaBeforeBatch": "806ba9362a09d36c04151ce371511599d23b4e49",
+  "publishedMainSha": "b70ae101821bbe8d0adf2b539bd23f1c3f6f6c34"
 }
