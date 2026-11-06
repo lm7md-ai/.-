@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "runAt": "2026-11-06T12:20:36+03:00",
+  "baseMainSha": "e27f42d6ea5bd229f65dc5d9426042eca03d9ed5",
+  "feed": {
+    "generatedAt": "2026-11-06T09:10:57+00:00",
+    "itemCount": 800,
+    "blobSha": "84f41eda60a2593e9c14ee7bcd22a60d3bf3c0f2",
+    "newsCount": 700,
+    "projectCount": 100
+  },
+  "editorialBefore": {
+    "count": 796,
+    "blobSha": "3a2d91b18b7ba7123290a77d83f65f546ec3a72f",
+    "activeExactMatches": 256,
+    "historicalEntriesOutsideCurrentFeed": 540
+  },
+  "incomingAudit": {
+    "filesVisible": 82,
+    "previousCommittedRecheck": {
+      "filesReviewed": 81,
+      "occurrences": 854,
+      "distinctIdUrlPairs": 817,
+      "duplicateOccurrences": 37,
+      "exactImportedPairs": 781,
+      "expiredOrSeenOnlyPairs": 36,
+      "activeExactAwaitingImport": 0,
+      "idUrlMismatches": 0,
+      "structuralFilesPassed": 81,
+      "structuralFilesFailed": 0
+    },
+    "latestPreviousIncoming": {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-06-1146.json",
+      "count": 12,
+      "structuralEquivalentPass": 12,
+      "exactFeedMatches": 12,
+      "alreadyImportedExact": 12
+    },
+    "currentRunBatch": {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-06-1220.json",
+      "count": 12,
+      "structuralEquivalentPass": 12,
+      "exactFeedMatches": 12,
+      "newToEditorial": 12,
+      "basisCounts": {
+        "article": 10,
+        "metadata": 2
+      }
+    },
+    "note": "لم يُنفذ validate/import الرسمي محليًا لعدم توفر checkout؛ هذا تحقق بنيوي مكافئ للبنية والروابط والحقول، وسيجري CI فحص Editorial الكامل."
+  },
+  "specialRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "name": "NVIDIA OpenShell",
+      "inSeen": true,
+      "inFeed": false,
+      "inEditorial": false,
+      "decision": "يبقى seen-only؛ لا يُستبدل بخبر Box/NVIDIA ذي معرف مختلف."
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "name": "Canva Craft",
+      "inSeen": true,
+      "inFeed": false,
+      "inEditorial": false,
+      "decision": "يبقى seen-only؛ لا يوجد تطابق حرفي حالي."
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "name": "1Password agent sign-in",
+      "inSeen": true,
+      "inFeed": false,
+      "inEditorial": false,
+      "decision": "يبقى seen-only؛ لا يوجد تطابق حرفي حالي."
+    }
+  ],
+  "needsCorrection": [
+    {
+      "id": "74bb7f13b00f34a521",
+      "url": "https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/",
+      "title": "Dropbox acquires Tigris Data for $350M to bolster its AI infrastructure",
+      "reason": "رابط TechCrunch الموجود حرفيًا في Feed تعذر فتحه، بينما صفحة TechCrunch المتاحة تستخدم slug مختلفًا؛ المصدر الرسمي لـDropbox يؤكد إعلان الصفقة المخطط لها، لكن لا يجوز استبدال رابط Feed أو استيراد سجل ذي رابط غير قابل للتحقق.",
+      "verifiedOfficialSource": "https://investors.dropbox.com/news-releases/news-release-details/dropbox-announces-plans-acquire-tigris-data-inc-and-unveils-dbx",
+      "candidateCorrectedPublisherUrl": "https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-infra/",
+      "decision": "pending; لا تعديل لـfeed.json"
+    }
+  ],
+  "currentFeedBacklog": {
+    "unenrichedNews": 532,
+    "unenrichedProjects": 0,
+    "selectedThisRun": 12,
+    "activeEditorialAfterMerge": 268,
+    "remainingUnenrichedNews": 532
+  },
+  "projectReview": {
+    "previousEightReviewedAt": "2026-11-06T09:09:18+03:00",
+    "projectsReviewed": 8,
+    "ideasPreserved": 55,
+    "ideaSchemaComplete": 55,
+    "currentFeedUnenrichedProjects": 0,
+    "catalogProjects": 54,
+    "archived": 2,
+    "nonArchived": 52,
+    "exactProjectFeedMatches": 8,
+    "researchOnly": 45,
+    "feedMembershipUnverified": 1
+  },
+  "projectLibrary": {
+    "newDossierInCurrentMain": "editorial/library/research-only/phonon-tts-2026-11-06.json",
+    "publicCardAdded": false,
+    "improvements": 2,
+    "spinoffs": 2,
+    "testEvidence": null,
+    "decision": "بحث مستقل غير منشور كبطاقة؛ تراخيص الأوزان منفصلة عن ترخيص الشيفرة."
+  },
+  "commands": {
+    "localClone": "failed: DNS could not resolve github.com",
+    "officialValidate": "not run locally",
+    "officialImport": "not run locally",
+    "unitTests": "not run locally",
+    "ciExpected": "python -m unittest discover -s tests -v; python scripts/editorial.py validate"
+  },
+  "protectedFiles": {
+    "feedJsonChanged": false,
+    "seenJsonChanged": false,
+    "siteCodeChanged": false,
+    "designChanged": false,
+    "workflowChanged": false,
+    "publishSettingsChanged": false
+  }
+}
