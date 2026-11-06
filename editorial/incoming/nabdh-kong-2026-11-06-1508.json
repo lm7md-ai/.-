@@ -1,0 +1,277 @@
+{
+  "version": 1,
+  "items": {
+    "56bce697cfa3de9902": {
+      "url": "https://github.com/Kong/kong",
+      "titleAr": "Kong Gateway: بوابة مفتوحة المصدر لإدارة حركة API وLLM وMCP",
+      "summaryAr": "Kong Gateway بوابة API سحابية قابلة للتوسع تعتمد على OpenResty وLua ونظام إضافات. يوفر التوجيه والموازنة والمصادقة وتحديد المعدل والمراقبة، ويعرض المشروع أيضًا مسارات لإدارة حركة نماذج اللغة وMCP وA2A. النواة مرخصة Apache‑2.0، لكن بعض قدرات AI Gateway والخدمات المُدارة تتطلب ترخيصًا أو خطة تجارية.",
+      "whyItMatters": "يمكن أن يكون طبقة موحدة أمام خدمات الويب والواجهات والوكلاء، فتجمع التحكم بالوصول وحركة المرور والمراقبة بدل تكرارها في كل خدمة. أهم نقطة تقييم هي الفصل بين النواة المفتوحة والميزات التجارية، وبين AI Gateway المُدار وخيارات الاستضافة الذاتية.",
+      "audience": "مطورو Backend وواجهات API، مهندسو DevOps والمنصات، وطلاب البنية التحتية للذكاء الاصطناعي.",
+      "overview": "بوابة API عالية الأداء مبنية على OpenResty/Lua، قابلة للتمديد عبر الإضافات، وتدعم تشغيلًا تقليديًا بقاعدة PostgreSQL أو وضع DB-less بإعدادات تصريحية YAML/JSON. تتكامل مع Kubernetes عبر Kong Ingress Controller. وتقدم منتجات ووثائق منفصلة لحوكمة حركة LLM وMCP وA2A، مع اختلاف الترخيص وطريقة الإدارة بين النواة المجتمعية وKonnect وميزات AI Gateway.",
+      "requirements": "للتجربة المحلية: Docker وDocker Compose؛ وضع قاعدة البيانات يحتاج PostgreSQL، بينما DB-less يضبط KONG_DATABASE=off ويحمّل ملف إعداد تصريحي، مع توفير مساحة ذاكرة كافية لـLMDB. للإنتاج يمكن تشغيله على Linux أو Kubernetes، ويحتاج النشر التقليدي إلى إدارة قاعدة البيانات والتحديثات والأسرار. بناء المصدر للمطورين يتطلب بيئة OpenResty/LuaJIT واعتماديات المشروع. لا تحتاج النواة إلى مفتاح مزود LLM ما لم تربطها بخدمة AI خارجية.",
+      "quickStart": "ابدأ بالطريقة التي يوصي بها README: استنسخ https://github.com/Kong/docker-kong ثم ادخل مجلد compose وشغّل KONG_DATABASE=postgres docker-compose --profile database up. بعد التشغيل يكون منفذ 8000 لحركة المرور، و8001 لـAdmin API، و8002 لواجهة Kong Manager. لتجربة مستقلة بلا قاعدة بيانات اضبط KONG_DATABASE=off، وأنشئ إعدادًا تصريحيًا عبر kong config init ثم اربطه بـdeclarative_config. Quickstart الخاص بـAI Gateway 2.x يستخدم Konnect Access Token وينشئ Data Plane محليًا عبر Docker؛ لا تخلط بينه وبين تجربة النواة المجتمعية المجانية.",
+      "costModel": "النواة المجتمعية مرخصة Apache-2.0 ولا تتطلب رسوم ترخيص، لكن تبقى تكاليف الخوادم والتشغيل والمراقبة والصيانة. تعرض صفحة Kong Konnect خطة Plus لإدارة API أو AI تبدأ من 25 دولارًا شهريًا إضافة إلى الاستخدام، وخطة Enterprise بتسعير مخصص؛ كما تعرض Dedicated Cloud Gateways بسعر 500 دولار شهريًا لكل Control Plane و0.15 دولار لكل GB من النطاق في جدول الأسعار الحالي. بعض إضافات AI تتطلب ترخيص AI منفصلًا. هذه أسعار منشورة وقت المراجعة وقد تتغير.",
+      "localVsCloud": "محليًا أو ذاتيًا: شغّل Gateway عبر Docker أو Kubernetes أو خوادمك؛ اختر PostgreSQL للنمط التقليدي أو DB-less مع إعداد تصريحي ومصدر إعدادات مضبوط في Git. في النمط الهجين يمكن فصل Control Plane عن Data Plane. سحابيًا: Konnect يوفر Control Plane مُدارًا وتحليلات وإدارة مركزية، مع Data Plane ذاتي أو Dedicated Cloud Gateway. AI Gateway 2.x له مسار Konnect ومسار on-prem، لكن نموذج الكيانات والسياسات في Konnect يختلف عن إعداد الإضافات اليدوي في بعض نشرات Gateway 3.x؛ راجع وثائق الإصدار قبل نقل الإعدادات.",
+      "alternatives": "بدائل تستحق المقارنة: Apache APISIX لبوابة مفتوحة مبنية على NGINX/Lua، Envoy Gateway لمن يريد منظومة Envoy وKubernetes Gateway API، Traefik Proxy لسهولة إعداد التوجيه والخدمات، Tyk لمنظومة API management متكاملة، وNGINX Gateway Fabric لفرق تعتمد NGINX. قارن الترخيص، سهولة التشغيل، توافق Gateway API، نظام الإضافات، والمزايا المطلوبة فعلًا بدل مقارنة عدد الميزات التسويقية.",
+      "limitations": "منحنى التعلم وإدارة الإضافات والإعدادات قد يكونان ثقيلين للمشاريع الصغيرة. تعريض Admin API أو لوحة الإدارة دون تقييد خطر تشغيلي. وضع DB-less يعتمد إعدادًا تصريحيًا يستبدل حالة الكيانات دفعة واحدة، ووثائق Kong تنبه إلى أن decK لا ينفذ عمليات sync/dump المعتادة في هذا الوضع. كذلك ليست كل ميزات AI/MCP مجانية؛ توثيق AI MCP Proxy يذكر اشتراط ترخيص AI، كما أن نماذج AI Gateway 2.x و3.x ليست متطابقة تمامًا.",
+      "nextSteps": [
+        "ابدأ بتجربة Gateway الأساسية محليًا قبل إضافة طبقة AI.",
+        "قارن PostgreSQL وDB-less وفق حجم الإعداد وطريقة إدارة التغييرات.",
+        "راجع ترخيص كل إضافة AI/MCP وخطة Konnect قبل اعتمادها.",
+        "اختبر حماية Admin API وتحديد المعدل والمراقبة على خدمة تجريبية غير حساسة."
+      ],
+      "reviewedAt": "2026-11-06T15:08:30+03:00",
+      "basis": "readme",
+      "testEvidence": "لم يتم تثبيت Kong أو تشغيل Docker Compose أو تنفيذ اختبارات؛ هذه مراجعة مكتبية للـREADME وLICENSE وkong.conf.default وDEVELOPER.md والوثائق الرسمية وبيانات GitHub.",
+      "sources": [
+        {
+          "title": "Kong Gateway repository and README",
+          "url": "https://github.com/Kong/kong"
+        },
+        {
+          "title": "Kong Gateway Apache 2.0 license",
+          "url": "https://github.com/Kong/kong/blob/master/LICENSE"
+        },
+        {
+          "title": "Kong AI Gateway documentation",
+          "url": "https://developer.konghq.com/ai-gateway/"
+        },
+        {
+          "title": "Kong Gateway DB-less mode",
+          "url": "https://developer.konghq.com/gateway/db-less-mode/"
+        },
+        {
+          "title": "Configure Kong AI Gateway on-prem",
+          "url": "https://developer.konghq.com/ai-gateway/configure-on-prem/"
+        },
+        {
+          "title": "AI MCP Proxy plugin license and compatibility",
+          "url": "https://developer.konghq.com/plugins/ai-mcp-proxy/"
+        },
+        {
+          "title": "Kong Konnect pricing",
+          "url": "https://konghq.com/pricing"
+        },
+        {
+          "title": "Kong Gateway 3.9.4 release",
+          "url": "https://github.com/Kong/kong/releases/tag/3.9.4"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "محرر عربي مرئي لمسارات وسياسات Kong",
+          "problem": "ملفات YAML/JSON والإضافات تجعل مراجعة المسارات والسياسات صعبة على المطورين الجدد، وقد تخفي تغييرات الصلاحيات داخل إعداد طويل.",
+          "approach": "واجهة تقرأ الإعدادات التصريحية وتعرض Services وRoutes وConsumers والإضافات في مخطط، مع إبقاء الملف الخام قابلًا للمراجعة والتحرير والتحقق قبل التصدير.",
+          "stack": "TypeScript + React + YAML/JSON Schema + Kong Admin API",
+          "steps": [
+            "استيراد ملف declarative config.",
+            "تحليل Services وRoutes والـplugins.",
+            "عرض علاقات المسارات والصلاحيات في مخطط.",
+            "إظهار التحذيرات والفروقات بين نسختين.",
+            "تصدير الملف بعد التحقق مع الاحتفاظ بالحقول غير المعروفة."
+          ],
+          "metric": "نسبة الإعدادات التي تُحلل وتُعاد دون فقد حقول، وعدد أخطاء التهيئة المكتشفة قبل النشر.",
+          "difficulty": "متوسط تقديرًا.",
+          "risks": "قد تخفي الواجهة خيارات متقدمة أو تعرض صلاحيات بصورة مبسطة؛ يجب الاحتفاظ بعرض YAML/JSON الأصلي.",
+          "sources": [
+            {
+              "title": "Kong Gateway DB-less and declarative configuration",
+              "url": "https://developer.konghq.com/gateway/db-less-mode/"
+            },
+            {
+              "title": "Kong Gateway repository",
+              "url": "https://github.com/Kong/kong"
+            }
+          ]
+        },
+        {
+          "title": "مراقب ميزانية واستهلاك حركة LLM عبر البوابة",
+          "problem": "تتوزع طلبات LLM على مزودين ونماذج متعددة، فيصعب ربط التكلفة بالمستخدم أو الخدمة وملاحظة الارتفاع غير المتوقع.",
+          "approach": "جمع مقاييس الطلبات والرموز والكمون والأخطاء، ثم إصدار تنبيهات ميزانية لكل فريق أو نموذج دون تخزين محتوى الطلبات افتراضيًا.",
+          "stack": "Kong AI Gateway + OpenTelemetry + Prometheus + Grafana",
+          "steps": [
+            "تحديد labels آمنة للخدمة والفريق والمزود.",
+            "جمع مقاييس الطلبات والرموز والكمون.",
+            "ربط أسعار النماذج بإصدار مؤرخ من جدول الأسعار.",
+            "حساب الإنفاق المتوقع لكل فريق.",
+            "إضافة تنبيهات وحدود قابلة للضبط.",
+            "اختبار صحة القياس باستخدام mock provider."
+          ],
+          "metric": "دقة تقدير التكلفة مقارنة بفواتير المزود، وزمن اكتشاف تجاوز الميزانية.",
+          "difficulty": "متوسط إلى مرتفع تقديرًا.",
+          "risks": "تغير الأسعار واختلاف احتساب الرموز قد يسببان تقديرات غير دقيقة؛ لا تسجل أسرارًا أو نصوصًا حساسة.",
+          "sources": [
+            {
+              "title": "Kong AI Gateway observability and metrics",
+              "url": "https://developer.konghq.com/ai-gateway/"
+            },
+            {
+              "title": "Kong Konnect pricing",
+              "url": "https://konghq.com/pricing"
+            }
+          ]
+        },
+        {
+          "title": "مدقق آمن لتحويل OpenAPI إلى أدوات MCP",
+          "problem": "تحويل واجهات REST إلى أدوات MCP قد يكشف عمليات أو حقولًا لا ينبغي أن يراها الوكيل.",
+          "approach": "قراءة OpenAPI وتوليد قائمة أدوات مقترحة مع allowlist للعمليات والحقول، وفحص صلاحيات القراءة والكتابة قبل نشرها عبر Kong.",
+          "stack": "Python + OpenAPI + MCP SDK + Kong AI Gateway",
+          "steps": [
+            "استيراد OpenAPI spec.",
+            "تصنيف العمليات حسب الأثر والصلاحية.",
+            "إنشاء allowlist للعمليات والحقول المسموحة.",
+            "توليد وصف أدوات MCP مع مخططات الإدخال.",
+            "تشغيل اختبارات رفض للعمليات غير المصرح بها.",
+            "تصدير الإعداد ومراجعته قبل النشر."
+          ],
+          "metric": "نسبة تغطية العمليات المسموحة مع صفر عمليات غير مصرح بها في مجموعة الاختبارات.",
+          "difficulty": "مرتفع تقديرًا.",
+          "risks": "خطأ في تصنيف عملية قد يكشف بيانات أو يسمح بتغيير غير مقصود؛ اجعل الافتراضي قراءة فقط ومراجعة بشرية.",
+          "sources": [
+            {
+              "title": "Kong MCP traffic gateway",
+              "url": "https://developer.konghq.com/mcp/"
+            },
+            {
+              "title": "Kong AI MCP Proxy plugin",
+              "url": "https://developer.konghq.com/plugins/ai-mcp-proxy/"
+            }
+          ]
+        },
+        {
+          "title": "مدقق فروق إعداد DB-less قبل النشر",
+          "problem": "إعداد DB-less يستبدل الحالة التصريحية كاملة، وقد يؤدي تغيير صغير غير ملحوظ إلى إزالة Route أو plugin.",
+          "approach": "أداة CI تقارن نسختين من kong.yml وتعرض الكيانات المحذوفة وتغييرات المصادقة والمعدل قبل قبول التغيير.",
+          "stack": "Python + YAML + JSON Schema + GitHub Actions",
+          "steps": [
+            "تحميل النسخة الحالية والجديدة من الإعداد.",
+            "تطبيع ترتيب الحقول لتقليل فروق التنسيق.",
+            "حساب الكيانات المضافة والمحذوفة والمعدلة.",
+            "تمييز تغييرات المصادقة والتوجيه والمعدل.",
+            "إيقاف CI عند حذف حساس دون موافقة صريحة."
+          ],
+          "metric": "عدد تغييرات الإعداد الخطرة المكتشفة قبل النشر ومعدل الإنذارات الكاذبة.",
+          "difficulty": "متوسط تقديرًا.",
+          "risks": "قد تكون بعض التغييرات المقصودة واسعة؛ يلزم مسار استثناء موثق ومراجع.",
+          "sources": [
+            {
+              "title": "Kong DB-less mode",
+              "url": "https://developer.konghq.com/gateway/db-less-mode/"
+            },
+            {
+              "title": "Kong configuration reference",
+              "url": "https://developer.konghq.com/gateway/configuration/"
+            }
+          ]
+        },
+        {
+          "title": "مختبر جامعي محلي لتعلم بوابات API",
+          "problem": "يصعب على الطلاب فهم العلاقة بين Route وService وConsumer وplugin دون بيئة قابلة لإعادة الإنشاء.",
+          "approach": "حزمة Docker Compose تضم Kong وخدمتين تجريبيتين وملفات إعداد جاهزة وتمارين مصادقة ومعدل ومراقبة.",
+          "stack": "Docker Compose + Kong Gateway OSS + FastAPI + Prometheus",
+          "steps": [
+            "إنشاء خدمتين وهميتين ببيانات غير حساسة.",
+            "تشغيل Kong بوضع DB-less.",
+            "إضافة Routes وKey Auth وRate Limiting.",
+            "عرض السجلات والمقاييس.",
+            "توفير تمارين لإضافة وحذف السياسات ومراجعة الفروقات."
+          ],
+          "metric": "الوقت اللازم لإنشاء أول Route صحيح ونسبة اجتياز تمارين الإعداد.",
+          "difficulty": "متوسط تقديرًا.",
+          "risks": "قد يخلط الطالب بين بيئة المختبر والإنتاج؛ أضف تحذيرًا واضحًا عن الأسرار والتعرض الشبكي.",
+          "sources": [
+            {
+              "title": "Kong Gateway README quickstart",
+              "url": "https://github.com/Kong/kong/blob/master/README.md"
+            },
+            {
+              "title": "Kong DB-less mode",
+              "url": "https://developer.konghq.com/gateway/db-less-mode/"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "بوابة عربية لخدمات الجامعة",
+          "problem": "تحتاج الخدمات الجامعية إلى واجهة موحدة للمصادقة وتحديد المعدل والتوثيق بدل تكامل منفصل لكل تطبيق.",
+          "approach": "طبقة Kong أمام APIs تجريبية للجدول والخدمات الطلابية، مع كتالوج عربي وصلاحيات واضحة وسجلات استخدام.",
+          "stack": "Kong Gateway OSS + FastAPI + OpenAPI + React",
+          "steps": [
+            "اختيار خدمتين تجريبيتين ببيانات غير حقيقية.",
+            "تعريف OpenAPI لكل خدمة.",
+            "إضافة المصادقة وتحديد المعدل في Kong.",
+            "نشر كتالوج عربي للمطورين.",
+            "قياس نجاح الطلبات والكمون والأخطاء."
+          ],
+          "metric": "نسبة نجاح التكامل وزمن إضافة خدمة جديدة وعدد الطلبات المرفوضة بشكل صحيح.",
+          "difficulty": "متوسط تقديرًا.",
+          "risks": "أي ربط ببيانات طلاب حقيقية يحتاج موافقات وضوابط خصوصية؛ ابدأ ببيانات وهمية.",
+          "sources": [
+            {
+              "title": "Kong Gateway documentation",
+              "url": "https://developer.konghq.com/gateway/"
+            },
+            {
+              "title": "Kong Gateway repository",
+              "url": "https://github.com/Kong/kong"
+            }
+          ]
+        },
+        {
+          "title": "جسر MCP للواجهات الجامعية للقراءة فقط",
+          "problem": "تحتاج المساعدات الذكية إلى قراءة معلومات عامة من APIs دون منحها صلاحيات تعديل أنظمة الجامعة.",
+          "approach": "تحويل مجموعة محددة من عمليات GET إلى أدوات MCP مع allowlist ومصادقة ومعدل محدود وتسجيل تدقيق.",
+          "stack": "Kong AI Gateway + OpenAPI + MCP + OAuth",
+          "steps": [
+            "اختيار APIs عامة أو بيانات تجريبية.",
+            "تحديد عمليات القراءة والحقول المسموحة فقط.",
+            "توليد أدوات MCP من OpenAPI.",
+            "فرض المصادقة وتحديد المعدل.",
+            "اختبار رفض كل عملية كتابة أو مسار غير مدرج.",
+            "مراجعة السجلات قبل أي توسيع للنطاق."
+          ],
+          "metric": "معدل نجاح الاستعلامات المسموحة وصفر نجاح لعمليات خارج allowlist.",
+          "difficulty": "مرتفع تقديرًا.",
+          "risks": "خطأ في allowlist أو إدارة الهوية قد يكشف بيانات؛ لا تستخدم بيانات شخصية في النموذج الأولي.",
+          "sources": [
+            {
+              "title": "Kong MCP traffic gateway",
+              "url": "https://developer.konghq.com/mcp/"
+            },
+            {
+              "title": "Kong AI Gateway on-prem",
+              "url": "https://developer.konghq.com/ai-gateway/configure-on-prem/"
+            }
+          ]
+        },
+        {
+          "title": "لوحة تكلفة ومراقبة API للمشاريع الصغيرة",
+          "problem": "لا تملك الفرق الصغيرة صورة موحدة عن استهلاك APIs والكمون والأخطاء والتكلفة.",
+          "approach": "لوحة تجمع مقاييس Kong وOpenTelemetry وتعرض الاتجاهات حسب الخدمة والمزود مع إخفاء محتوى الطلبات.",
+          "stack": "Kong + OpenTelemetry + Prometheus + Grafana",
+          "steps": [
+            "تفعيل المقاييس الأساسية.",
+            "تحديد أسماء خدمات موحدة.",
+            "تجميع الطلبات والكمون والأخطاء.",
+            "إضافة لوحات لكل خدمة ومزود.",
+            "اختبار التنبيهات باستخدام حمل تجريبي."
+          ],
+          "metric": "زمن اكتشاف الأعطال ودقة نسبة الطلبات والتكلفة حسب الخدمة.",
+          "difficulty": "متوسط تقديرًا.",
+          "risks": "القياس غير الدقيق أو تسجيل بيانات حساسة؛ استخدم labels محدودة وسياسة احتفاظ واضحة.",
+          "sources": [
+            {
+              "title": "Kong AI Gateway observability",
+              "url": "https://developer.konghq.com/ai-gateway/"
+            },
+            {
+              "title": "Kong Konnect pricing",
+              "url": "https://konghq.com/pricing"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
