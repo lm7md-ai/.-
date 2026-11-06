@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "runAt": "2026-11-06T08:42:01+03:00",
+  "metricsMeasuredAt": "2026-11-06T05:42:01Z",
+  "projectsReviewed": 8,
+  "nonArchived": 8,
+  "archived": 0,
+  "feedVisible": 1,
+  "researchOnly": 7,
+  "metrics": [
+    {
+      "repository": "patchy631/ai-engineering-hub",
+      "stars": 41172,
+      "forks": 6571,
+      "openIssues": 136,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "updatedAt": "2026-11-06T04:52:58Z"
+    },
+    {
+      "repository": "googleapis/python-genai",
+      "stars": 4057,
+      "forks": 1058,
+      "openIssues": 386,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-11-06T02:02:15Z",
+      "updatedAt": "2026-11-06T02:02:07Z"
+    },
+    {
+      "repository": "Millillion/lasm",
+      "stars": 100,
+      "forks": 7,
+      "openIssues": 6,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-11-05T18:31:22Z",
+      "updatedAt": "2026-11-05T18:31:28Z"
+    },
+    {
+      "repository": "microsoft/markitdown",
+      "stars": 194089,
+      "forks": 14590,
+      "openIssues": 804,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-28T15:33:14Z",
+      "updatedAt": "2026-11-06T05:24:26Z"
+    },
+    {
+      "repository": "yc-software/minecraft-agent-harness",
+      "stars": 148,
+      "forks": 13,
+      "openIssues": 1,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "updatedAt": "2026-11-06T04:44:17Z"
+    },
+    {
+      "repository": "NVIDIA/OpenShell",
+      "stars": 21181,
+      "forks": 2074,
+      "openIssues": 637,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-11-06T03:23:07Z",
+      "updatedAt": "2026-11-06T05:19:51Z"
+    },
+    {
+      "repository": "pydantic/pydantic-ai",
+      "stars": 21048,
+      "forks": 3110,
+      "openIssues": 1769,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-11-06T05:50:03Z",
+      "updatedAt": "2026-11-06T05:42:13Z"
+    },
+    {
+      "repository": "astral-sh/uv",
+      "stars": 91608,
+      "forks": 3752,
+      "openIssues": 3042,
+      "license": "Apache-2.0 OR MIT",
+      "archived": false,
+      "pushedAt": "2026-11-06T00:25:57Z",
+      "updatedAt": "2026-11-06T05:46:30Z"
+    }
+  ],
+  "timestampAnomalies": [
+    "pydantic/pydantic-ai pushedAt وupdatedAt بعد وقت القياس؛ لا تستخدمهما دليل نشاط في هذه اللقطة.",
+    "astral-sh/uv updatedAt بعد وقت القياس؛ لا تستخدمه دليل نشاط في هذه اللقطة."
+  ],
+  "existingIdeasPreserved": 55,
+  "ideaSchemaComplete": 55,
+  "testEvidence": null,
+  "bestThree": [
+    {
+      "title": "محرر مرئي عربي لسياسات NVIDIA OpenShell",
+      "repository": "NVIDIA/OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell"
+    },
+    {
+      "title": "مجموعة تقييم عربية قابلة لإعادة الإنتاج لوكلاء Pydantic AI",
+      "repository": "pydantic/pydantic-ai",
+      "url": "https://github.com/pydantic/pydantic-ai"
+    },
+    {
+      "title": "مراجع توافق إصدارات Google Gen AI SDK",
+      "repository": "googleapis/python-genai",
+      "url": "https://github.com/googleapis/python-genai"
+    }
+  ],
+  "note": "تمت إعادة فحص حالة الأرشفة والتراخيص ومؤشرات GitHub. لم يتم تشغيل أي من المشاريع أو الادعاء باختبارها. حُفظ ترتيب الأفكار وروابطها كما هو."
+}

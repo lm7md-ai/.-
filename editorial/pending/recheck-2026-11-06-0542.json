@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "runAt": "2026-11-06T08:42:01+03:00",
+  "mainShaBeforeThisRun": "64af8535a811fbb31d48dbb6c13ff023df44f771",
+  "scope": "All 79 existing editorial/incoming files before adding this run's new batch.",
+  "incoming": {
+    "files": 79,
+    "appearances": 830,
+    "exactEditorialAppearances": 794,
+    "notInEditorialAppearances": 36,
+    "idUrlMismatches": 0,
+    "activeCandidatesMissingEditorial": 0,
+    "expiredNotImported": 33,
+    "seenOnly": 3,
+    "repeatedAppearancesWithinBatches": 37,
+    "countSemantics": "Appearances across files, not global unique IDs. The 37 repeated appearances are from the committed full audit."
+  },
+  "latestExistingBatch": {
+    "file": "editorial/incoming/nabdh-editorial-2026-11-06-0308.json",
+    "entries": 12,
+    "allExactAndImported": true
+  },
+  "specialRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "title": "NVIDIA OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "researchCatalog": true,
+      "action": "hold; no title-based replacement"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "title": "Canva Craft",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "action": "hold; no title-based replacement"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "title": "1Password agent sign-in",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "action": "hold; no title-based replacement"
+    }
+  ],
+  "newBatch": {
+    "file": "editorial/incoming/nabdh-editorial-2026-11-06-0842.json",
+    "entries": 12,
+    "news": 12,
+    "projects": 0,
+    "basisArticle": 10,
+    "basisReadme": 2,
+    "allIdsAndUrlsMatchedCurrentFeed": true,
+    "allWerePreviouslyUnenriched": true,
+    "structuralEquivalentValidation": "passed"
+  },
+  "currentDataBeforeNewBatch": {
+    "feed": 800,
+    "news": 700,
+    "projects": 100,
+    "editorial": 760,
+    "activeEditorialExact": 230,
+    "activeNewsMissing": 570,
+    "activeProjectsMissing": 0,
+    "status": "partial",
+    "sourceCount": 26,
+    "sourceErrors": [
+      {
+        "name": "البوابة العربية للأخبار التقنية",
+        "error": "HTTP 403"
+      }
+    ]
+  },
+  "expectedAfterImport": {
+    "editorial": 772,
+    "activeEditorialExact": 242,
+    "activeNewsEnriched": 142,
+    "activeNewsMissing": 558,
+    "activeProjectsMissing": 0
+  },
+  "projects": {
+    "researchCatalogBefore": 50,
+    "researchCatalogAfter": 52,
+    "researchCatalogArchived": 2,
+    "researchCatalogActive": 50,
+    "siteLibrary": 31,
+    "siteLibraryArchived": 2,
+    "projectFeed": 100,
+    "projectFeedEnriched": 100,
+    "newPublicProjectCards": 0,
+    "newResearchOnlyProjects": 2,
+    "previousEightReviewed": 8,
+    "previousEightActive": 8,
+    "previousEightArchived": 0,
+    "previousEightFeedVisible": 1,
+    "previousEightResearchOnly": 7,
+    "previousEightIdeasComplete": 55,
+    "newProjectIdeas": 8,
+    "newProjectIdeasComplete": 8,
+    "religiousIdeasAdded": 0
+  },
+  "validation": {
+    "structuralEquivalent": "12/12 entries passed URL, required fields, basis, reviewedAt and source checks; old 760 entries preserved byte-for-byte at object level.",
+    "officialValidateLocal": "not executed; no local checkout/runtime",
+    "officialImportLocal": "not executed; no local checkout/runtime",
+    "unittestLocal": "not executed; no local checkout/runtime",
+    "githubActions": "pending PR checks"
+  },
+  "publication": {
+    "status": "pending PR review and CI; not yet merged or published"
+  },
+  "constraints": {
+    "siteCodeChanged": false,
+    "designChanged": false,
+    "workflowChanged": false,
+    "feedJsonChanged": false,
+    "seenJsonChanged": false,
+    "paidServicesUsed": false,
+    "scheduleChanged": false
+  }
+}
