@@ -1,0 +1,281 @@
+{
+  "version": 1,
+  "runAt": "2026-11-06T21:27:02+03:00",
+  "metricsMeasuredAt": "2026-11-06T18:27:02Z",
+  "measurementSource": "GitHub REST API repository metadata; partial refresh of the same eight repositories, not a synchronized full-library snapshot.",
+  "publicationStatus": "research_only_update_not_public_project_card",
+  "priorSnapshotPath": "editorial/library/research-only/previous-eight-refresh-2026-11-06-1801.json",
+  "cumulativeCatalogPath": "editorial/library/catalog-2026-11-06-2127.json",
+  "projectsReviewed": 8,
+  "projects": [
+    {
+      "repository": "patchy631/ai-engineering-hub",
+      "stars": 41267,
+      "forks": 6585,
+      "openIssues": 136,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "language": "Jupyter Notebook",
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "updatedAt": "2026-11-06T18:29:29Z",
+      "siteVisibility": "one exact feed project card",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "documentationNotes": "README/LICENSE review carried forward from the existing dossier; this run refreshed official GitHub repository metadata only.",
+      "requirementsAndQuickStart": "Existing dossier retains overview, requirements, quickStart, costs, localVsCloud and alternatives.",
+      "testEvidence": null,
+      "metricsMeasuredAt": "2026-11-06T18:27:02Z",
+      "metricsSource": "https://api.github.com/repos/patchy631/ai-engineering-hub"
+    },
+    {
+      "repository": "googleapis/python-genai",
+      "stars": 4057,
+      "forks": 1059,
+      "openIssues": 387,
+      "archived": false,
+      "disabled": false,
+      "license": "Apache-2.0",
+      "language": "Python",
+      "pushedAt": "2026-11-06T02:02:15Z",
+      "updatedAt": "2026-11-06T17:42:13Z",
+      "siteVisibility": "research-only",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "documentationNotes": "README/LICENSE review carried forward from the existing dossier; this run refreshed official GitHub repository metadata only.",
+      "requirementsAndQuickStart": "Existing dossier retains overview, requirements, quickStart, costs, localVsCloud and alternatives.",
+      "testEvidence": null,
+      "metricsMeasuredAt": "2026-11-06T18:27:02Z",
+      "metricsSource": "https://api.github.com/repos/googleapis/python-genai"
+    },
+    {
+      "repository": "Millillion/lasm",
+      "stars": 100,
+      "forks": 7,
+      "openIssues": 6,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "language": "C",
+      "pushedAt": "2026-11-06T16:00:40Z",
+      "updatedAt": "2026-11-06T06:15:53Z",
+      "siteVisibility": "research-only",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "documentationNotes": "README/LICENSE review carried forward from the existing dossier; this run refreshed official GitHub repository metadata only.",
+      "requirementsAndQuickStart": "Existing dossier retains overview, requirements, quickStart, costs, localVsCloud and alternatives.",
+      "testEvidence": null,
+      "metricsMeasuredAt": "2026-11-06T18:27:02Z",
+      "metricsSource": "https://api.github.com/repos/Millillion/lasm"
+    },
+    {
+      "repository": "microsoft/markitdown",
+      "stars": 194175,
+      "forks": 14609,
+      "openIssues": 811,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "language": "Python",
+      "pushedAt": "2026-10-28T15:33:14Z",
+      "updatedAt": "2026-11-06T18:29:17Z",
+      "siteVisibility": "research-only",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "documentationNotes": "README/LICENSE review carried forward from the existing dossier; this run refreshed official GitHub repository metadata only.",
+      "requirementsAndQuickStart": "Existing dossier retains overview, requirements, quickStart, costs, localVsCloud and alternatives.",
+      "testEvidence": null,
+      "metricsMeasuredAt": "2026-11-06T18:27:02Z",
+      "metricsSource": "https://api.github.com/repos/microsoft/markitdown"
+    },
+    {
+      "repository": "yc-software/minecraft-agent-harness",
+      "stars": 152,
+      "forks": 13,
+      "openIssues": 1,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "language": "JavaScript",
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "updatedAt": "2026-11-06T13:25:21Z",
+      "siteVisibility": "research-only",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "documentationNotes": "README/LICENSE review carried forward from the existing dossier; this run refreshed official GitHub repository metadata only.",
+      "requirementsAndQuickStart": "Existing dossier retains overview, requirements, quickStart, costs, localVsCloud and alternatives.",
+      "testEvidence": null,
+      "metricsMeasuredAt": "2026-11-06T18:27:02Z",
+      "metricsSource": "https://api.github.com/repos/yc-software/minecraft-agent-harness"
+    },
+    {
+      "repository": "NVIDIA/OpenShell",
+      "stars": 21208,
+      "forks": 2078,
+      "openIssues": 634,
+      "archived": false,
+      "disabled": false,
+      "license": "Apache-2.0",
+      "language": "Rust",
+      "pushedAt": "2026-11-06T18:26:13Z",
+      "updatedAt": "2026-11-06T18:27:24Z",
+      "siteVisibility": "research-only",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "documentationNotes": "README/LICENSE review carried forward from the existing dossier; this run refreshed official GitHub repository metadata only.",
+      "requirementsAndQuickStart": "Existing dossier retains overview, requirements, quickStart, costs, localVsCloud and alternatives.",
+      "testEvidence": null,
+      "metricsMeasuredAt": "2026-11-06T18:27:02Z",
+      "metricsSource": "https://api.github.com/repos/NVIDIA/OpenShell"
+    },
+    {
+      "repository": "pydantic/pydantic-ai",
+      "stars": 21059,
+      "forks": 3117,
+      "openIssues": 1788,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "language": "Python",
+      "pushedAt": "2026-11-06T18:17:57Z",
+      "updatedAt": "2026-11-06T18:13:28Z",
+      "siteVisibility": "research-only",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "documentationNotes": "README/LICENSE review carried forward from the existing dossier; this run refreshed official GitHub repository metadata only.",
+      "requirementsAndQuickStart": "Existing dossier retains overview, requirements, quickStart, costs, localVsCloud and alternatives.",
+      "testEvidence": null,
+      "metricsMeasuredAt": "2026-11-06T18:27:02Z",
+      "metricsSource": "https://api.github.com/repos/pydantic/pydantic-ai"
+    },
+    {
+      "repository": "astral-sh/uv",
+      "stars": 91643,
+      "forks": 3762,
+      "openIssues": 3049,
+      "archived": false,
+      "disabled": false,
+      "license": "Apache-2.0",
+      "language": "Rust",
+      "pushedAt": "2026-11-06T18:24:11Z",
+      "updatedAt": "2026-11-06T18:23:37Z",
+      "siteVisibility": "research-only",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "documentationNotes": "README/LICENSE review carried forward from the existing dossier; this run refreshed official GitHub repository metadata only.",
+      "requirementsAndQuickStart": "Existing dossier retains overview, requirements, quickStart, costs, localVsCloud and alternatives.",
+      "testEvidence": null,
+      "metricsMeasuredAt": "2026-11-06T18:27:02Z",
+      "metricsSource": "https://api.github.com/repos/astral-sh/uv"
+    }
+  ],
+  "librarySummary": {
+    "cumulativeProjects": 57,
+    "activeOrMaintained": 55,
+    "archived": 2,
+    "feedExactMatches": 8,
+    "researchOnly": 48,
+    "feedMembershipUnverified": 1,
+    "archivedAlternativesTracked": 2
+  },
+  "projectFeedAudit": {
+    "currentProjectCards": 100,
+    "exactEditorialMatches": 100,
+    "missingProjectEditorial": 0,
+    "newProjectsAdded": 0,
+    "reason": "All 100 current project cards still have exact editorial matches. Agentic Identity Broker is a news reference, not a project card, so it was stored only in research-only."
+  },
+  "ideaAudit": {
+    "projectsReviewed": 8,
+    "projectsArchived": 0,
+    "improvementsAndSpinoffsPreserved": 55,
+    "ideaSchemaComplete": 55,
+    "testEvidence": null,
+    "note": "حُفظ ترتيب الأفكار وروابطها السابقة كما هي؛ تم تحديث مؤشرات المستودعات الثمانية فقط، ولم تُضف ادعاءات اختبار أو نتائج تشغيل."
+  },
+  "topThree": [
+    {
+      "title": "محرر مرئي عربي لسياسات NVIDIA OpenShell",
+      "problem": "ملفات YAML وسياسات الملفات والشبكة صعبة المراجعة على غير المتخصصين.",
+      "approach": "واجهة تقرأ المخطط الرسمي وتعرض السياسات والتحذيرات مع إبقاء YAML الخام قابلًا للتحرير.",
+      "stack": "TypeScript + React + YAML Schema",
+      "steps": [
+        "قراءة schema الرسمي.",
+        "عرض سياسات الملفات والعمليات والشبكة.",
+        "التحقق محليًا قبل التصدير.",
+        "إظهار الفروقات والتحذيرات مع YAML الخام."
+      ],
+      "metric": "نسبة ملفات السياسات التي تجتاز التحقق دون إخفاء حقول.",
+      "difficulty": "متوسط تقديرًا.",
+      "risks": "قد تخفي الواجهة تفاصيل دقيقة؛ يجب ألا تستبدل مراجعة YAML الأصلية.",
+      "sources": [
+        {
+          "title": "OpenShell policy schema",
+          "url": "https://docs.nvidia.com/openshell/latest/how-it-works/policies/schema"
+        },
+        {
+          "title": "OpenShell policy management",
+          "url": "https://docs.nvidia.com/openshell/latest/how-it-works/policies/manage-policies"
+        }
+      ]
+    },
+    {
+      "title": "مجموعة تقييم عربية قابلة لإعادة الإنتاج لوكلاء Pydantic AI",
+      "problem": "قد تبدو إجابة الوكيل سليمة لغويًا لكنها خاطئة أو غير مدعومة بمصدر.",
+      "approach": "مجموعة أسئلة عربية ذات إجابات مرجعية تقيس الصحة والإسناد واستخدام الأدوات والامتناع.",
+      "stack": "Python + Pydantic Evals + pytest + JSONL",
+      "steps": [
+        "اختيار مجال ومصادر موثوقة.",
+        "كتابة حالات نجاح وفشل ونقص معلومات.",
+        "تعريف مقاييس الصحة والاستشهاد والامتناع.",
+        "تشغيل المقارنة على إصدارات مختلفة.",
+        "حفظ النتائج مع إصدارات البيانات والنموذج."
+      ],
+      "metric": "درجات الصحة والإسناد والامتناع عبر الإصدارات.",
+      "difficulty": "متوسط إلى مرتفع تقديرًا.",
+      "risks": "تحيز اللهجات أو مجموعة الأسئلة وتحيز المقيم نفسه.",
+      "sources": [
+        {
+          "title": "Pydantic AI evaluation docs",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/evals.md"
+        },
+        {
+          "title": "Pydantic AI repository",
+          "url": "https://github.com/pydantic/pydantic-ai"
+        }
+      ]
+    },
+    {
+      "title": "مراجع توافق إصدارات Google Gen AI Python SDK",
+      "problem": "قد يتعطل المشروع بعد ترقية SDK أو تغيير الحد الأدنى لإصدار Python.",
+      "approach": "أداة تقرأ pyproject.toml وقيود الاعتماديات وتقارنها بمتطلبات الإصدار دون تعديل الملفات تلقائيًا.",
+      "stack": "Python + tomllib + packaging + JSON",
+      "steps": [
+        "قراءة نسخة SDK المثبتة.",
+        "استخراج متطلبات Python والاعتماديات.",
+        "مقارنة القيود بملف pyproject الرسمي.",
+        "إصدار تقرير تعارضات وتحذيرات."
+      ],
+      "metric": "دقة اكتشاف تعارضات الإصدارات قبل الترقية.",
+      "difficulty": "متوسط تقديرًا.",
+      "risks": "الاعتماديات غير المباشرة وتغيرات API قد لا تظهر في قيود النسخ وحدها.",
+      "sources": [
+        {
+          "title": "Google Gen AI Python SDK pyproject",
+          "url": "https://github.com/googleapis/python-genai/blob/main/pyproject.toml"
+        },
+        {
+          "title": "Google Gen AI Python SDK",
+          "url": "https://github.com/googleapis/python-genai"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "المؤشرات لقطة وقتية من GitHub API وليست ترتيبًا للجودة.",
+    "لم تُشغّل المشاريع أو أمثلتها؛ لم تُضف testEvidence جديدًا.",
+    "README وLICENSE للمشاريع الثمانية محمولان من مراجعات الدوسيه السابقة؛ هذه الدورة أعادت قياس بيانات المستودعات فقط.",
+    "ملف المكتبة بحثي غير منشور على واجهة الموقع.",
+    "pushedAt وupdatedAt قد لا يكونان متزامنين؛ لا تُستنتج منهما جودة أو نشاط يومي."
+  ]
+}
