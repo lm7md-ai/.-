@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "runAt": "2026-11-06T09:09:18+03:00",
+  "metricsMeasuredAt": "2026-11-06T06:09:18Z",
+  "source": "GitHub REST API; current snapshots; no project execution.",
+  "projects": [
+    {
+      "repository": "patchy631/ai-engineering-hub",
+      "stars": 41173,
+      "forks": 6571,
+      "openIssues": 136,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "updatedAt": "2026-11-06T06:02:14Z",
+      "defaultBranch": "main",
+      "language": "Jupyter Notebook",
+      "measuredAt": "2026-11-06T06:09:18Z",
+      "siteVisibility": "one exact feed project card"
+    },
+    {
+      "repository": "googleapis/python-genai",
+      "stars": 4057,
+      "forks": 1059,
+      "openIssues": 386,
+      "archived": false,
+      "disabled": false,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-06T02:02:15Z",
+      "updatedAt": "2026-11-06T02:02:07Z",
+      "defaultBranch": "main",
+      "language": "Python",
+      "measuredAt": "2026-11-06T06:09:18Z",
+      "siteVisibility": "research-only"
+    },
+    {
+      "repository": "Millillion/lasm",
+      "stars": 100,
+      "forks": 7,
+      "openIssues": 6,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "pushedAt": "2026-11-05T18:31:22Z",
+      "updatedAt": "2026-11-06T06:15:53Z",
+      "defaultBranch": "main",
+      "language": "C",
+      "measuredAt": "2026-11-06T06:09:18Z",
+      "siteVisibility": "research-only"
+    },
+    {
+      "repository": "microsoft/markitdown",
+      "stars": 194095,
+      "forks": 14590,
+      "openIssues": 804,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "pushedAt": "2026-10-28T15:33:14Z",
+      "updatedAt": "2026-11-06T06:24:16Z",
+      "defaultBranch": "main",
+      "language": "Python",
+      "measuredAt": "2026-11-06T06:09:18Z",
+      "siteVisibility": "research-only"
+    },
+    {
+      "repository": "yc-software/minecraft-agent-harness",
+      "stars": 148,
+      "forks": 13,
+      "openIssues": 1,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "updatedAt": "2026-11-06T04:44:17Z",
+      "defaultBranch": "main",
+      "language": "JavaScript",
+      "measuredAt": "2026-11-06T06:09:18Z",
+      "siteVisibility": "research-only"
+    },
+    {
+      "repository": "NVIDIA/OpenShell",
+      "stars": 21183,
+      "forks": 2074,
+      "openIssues": 638,
+      "archived": false,
+      "disabled": false,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-06T03:23:07Z",
+      "updatedAt": "2026-11-06T06:16:08Z",
+      "defaultBranch": "main",
+      "language": "Rust",
+      "measuredAt": "2026-11-06T06:09:18Z",
+      "siteVisibility": "research-only"
+    },
+    {
+      "repository": "pydantic/pydantic-ai",
+      "stars": 21049,
+      "forks": 3111,
+      "openIssues": 1769,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "pushedAt": "2026-11-06T05:50:14Z",
+      "updatedAt": "2026-11-06T06:19:58Z",
+      "defaultBranch": "main",
+      "language": "Python",
+      "measuredAt": "2026-11-06T06:09:18Z",
+      "siteVisibility": "research-only"
+    },
+    {
+      "repository": "astral-sh/uv",
+      "stars": 91608,
+      "forks": 3752,
+      "openIssues": 3042,
+      "archived": false,
+      "disabled": false,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-06T00:25:57Z",
+      "updatedAt": "2026-11-06T05:46:30Z",
+      "defaultBranch": "main",
+      "language": "Rust",
+      "measuredAt": "2026-11-06T06:09:18Z",
+      "siteVisibility": "research-only"
+    }
+  ],
+  "ideaAudit": {
+    "projectsReviewed": 8,
+    "projectsArchived": 0,
+    "improvementsAndSpinoffsPreserved": 55,
+    "ideaSchemaComplete": 55,
+    "testEvidence": null,
+    "note": "The existing order and links of the 55 ideas are preserved; no test claims were added."
+  },
+  "bestThree": [
+    {
+      "title": "محرر مرئي عربي لسياسات NVIDIA OpenShell",
+      "problem": "ملفات YAML وسياسات الملفات والشبكة صعبة المراجعة على غير المتخصصين.",
+      "approach": "واجهة تقرأ المخطط الرسمي وتعرض السياسات والتحذيرات مع إبقاء YAML الخام قابلًا للتحرير.",
+      "stack": "TypeScript + React + YAML Schema",
+      "steps": [
+        "قراءة schema الرسمي.",
+        "عرض سياسات الملفات والعمليات والشبكة.",
+        "التحقق محليًا قبل التصدير.",
+        "إظهار الفروقات والتحذيرات مع YAML الخام."
+      ],
+      "metric": "نسبة ملفات السياسات التي تجتاز التحقق دون إخفاء حقول.",
+      "difficulty": "متوسط تقديرًا.",
+      "risks": "قد تخفي الواجهة تفاصيل دقيقة؛ يجب ألا تستبدل مراجعة YAML الأصلية.",
+      "sources": [
+        {
+          "title": "OpenShell policy schema",
+          "url": "https://docs.nvidia.com/openshell/latest/how-it-works/policies/schema"
+        },
+        {
+          "title": "OpenShell policy management",
+          "url": "https://docs.nvidia.com/openshell/latest/how-it-works/policies/manage-policies"
+        }
+      ]
+    },
+    {
+      "title": "مجموعة تقييم عربية قابلة لإعادة الإنتاج لوكلاء Pydantic AI",
+      "problem": "قد تبدو إجابة الوكيل سليمة لغويًا لكنها خاطئة أو غير مدعومة بمصدر.",
+      "approach": "مجموعة أسئلة عربية ذات إجابات مرجعية تقيس الصحة والإسناد واستخدام الأدوات والامتناع.",
+      "stack": "Python + Pydantic Evals + pytest + JSONL",
+      "steps": [
+        "اختيار مجال ومصادر موثوقة.",
+        "كتابة حالات نجاح وفشل ونقص معلومات.",
+        "تعريف مقاييس الصحة والاستشهاد والامتناع.",
+        "تشغيل المقارنة على إصدارات مختلفة.",
+        "حفظ النتائج مع إصدارات البيانات والنموذج."
+      ],
+      "metric": "درجات الصحة والإسناد والامتناع عبر الإصدارات.",
+      "difficulty": "متوسط إلى مرتفع تقديرًا.",
+      "risks": "تحيز اللهجات أو مجموعة الأسئلة وتحيز المقيم نفسه.",
+      "sources": [
+        {
+          "title": "Pydantic AI evaluation docs",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/evals.md"
+        },
+        {
+          "title": "Pydantic AI repository",
+          "url": "https://github.com/pydantic/pydantic-ai"
+        }
+      ]
+    },
+    {
+      "title": "مراجع توافق إصدارات Google Gen AI Python SDK",
+      "problem": "قد يتعطل المشروع بعد ترقية SDK أو تغيير الحد الأدنى لإصدار Python.",
+      "approach": "أداة تقرأ pyproject.toml وقيود الاعتماديات وتقارنها بمتطلبات الإصدار دون تعديل الملفات تلقائيًا.",
+      "stack": "Python + tomllib + packaging + JSON",
+      "steps": [
+        "قراءة نسخة SDK المثبتة.",
+        "استخراج متطلبات Python والاعتماديات.",
+        "مقارنة القيود بملف pyproject الرسمي.",
+        "إصدار تقرير تعارضات وتحذيرات."
+      ],
+      "metric": "دقة اكتشاف تعارضات الإصدارات قبل الترقية.",
+      "difficulty": "متوسط تقديرًا.",
+      "risks": "الاعتماديات غير المباشرة وتغيرات API قد لا تظهر في قيود النسخ وحدها.",
+      "sources": [
+        {
+          "title": "Google Gen AI Python SDK pyproject",
+          "url": "https://github.com/googleapis/python-genai/blob/main/pyproject.toml"
+        },
+        {
+          "title": "Google Gen AI Python SDK",
+          "url": "https://github.com/googleapis/python-genai"
+        }
+      ]
+    }
+  ]
+}
