@@ -48,12 +48,12 @@
     "editorialBefore": 748,
     "editorialAfter": 760,
     "activeEditorialExactBefore": 219,
-    "activeEditorialExactAfter": 231,
+    "activeEditorialExactAfter": 230,
     "activeNewsMissingBefore": 581,
-    "activeNewsMissingAfter": 569,
+    "activeNewsMissingAfter": 570,
     "activeProjectsMissing": 0,
     "status": "partial",
-    "statusAt": "2026-11-06T03:25:19Z",
+    "statusAt": "2026-11-06T03:29:05Z",
     "sourceCount": 26,
     "sourceErrors": [
       {
@@ -61,7 +61,7 @@
         "error": "HTTP 403"
       }
     ],
-    "workflowAutoRefreshCommit": "b70ae101821bbe8d0adf2b539bd23f1c3f6f6c34",
+    "workflowAutoRefreshCommit": "5905c69af2a66dcf0448ec9ce41731d854509b21",
     "automaticFilesChanged": [
       "site/data/feed.json",
       "site/data/seen.json",
@@ -115,7 +115,11 @@
       "pushRunId": 42156428038,
       "artifactId": 13474472936,
       "artifactChecked": true,
-      "all12InFeedAndEditorialExact": true
+      "all12InFeedAndEditorialExact": true,
+      "finalPushRun": 137,
+      "finalPushRunId": 42156804712,
+      "finalArtifactId": 13475102332,
+      "finalArtifactChecked": true
     }
   },
   "projects": {
@@ -178,5 +182,5 @@
     "artifactMissingProjects": 0
   },
   "mainShaBeforeBatch": "806ba9362a09d36c04151ce371511599d23b4e49",
-  "publishedMainSha": "b70ae101821bbe8d0adf2b539bd23f1c3f6f6c34"
+  "publishedMainSha": "5905c69af2a66dcf0448ec9ce41731d854509b21"
 }
