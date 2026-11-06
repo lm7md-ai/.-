@@ -34732,6 +34732,314 @@
           "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries/"
         }
       ]
+    },
+    "3a45181f6d992343d4": {
+      "url": "https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/",
+      "titleAr": "Microsoft Research تعرض PDD Kit لإثبات التزام شيفرة الوكيل بالمواصفات",
+      "summaryAr": "تشرح Microsoft Research مجموعة PDD Kit التي تحول نية المطور إلى مواصفات رسمية بلغة Verus، ثم تثبت الخصائص القابلة للإثبات وتستخدم اختبارات لما يقع خارج نطاق البرهان. التجربة المنشورة ركزت على منطق تسجيل الدخول في تطبيق Pet Store مكتوب بـRust، لا على إثبات التطبيق كاملًا.",
+      "whyItMatters": "تضيف طبقة تحقق تربط ما طلبه المطور بما نفذه الوكيل، بدل الاكتفاء باختبارات قد تعكس تنفيذ الوكيل لا نية المستخدم. الأهم هو إظهار حدود الثقة بوضوح: ما ثبت رياضيًا، وما اختبر تجريبيًا، وما بقي ضمن مكونات موثوقة.",
+      "audience": "مطورو البرمجيات، فرق مراجعة الشيفرة، مستخدمو وكلاء البرمجة، ومهندسو Rust والأنظمة الحساسة.",
+      "nextSteps": [
+        "راجع مواصفات Verus وحدود Trusted Computing Base قبل اعتبار أي نتيجة ضمانًا شاملًا.",
+        "تابع إتاحة PDD Kit خارج بيئة Chopin البحثية، وابدأ مستقبلًا بميزة صغيرة عالية الحساسية بدل تطبيق كامل."
+      ],
+      "limitations": "الأداة موصوفة كتجربة داخل GitHub Next Chopin؛ المثال المنشور يركز على منطق تسجيل الدخول. البرهان يغطي المواصفات المحددة فقط، أما الواجهة والمكتبات الخارجية فتحتاج اختبارات وثقة إضافية. لم أختبر الأداة أو أبنِ المثال.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Microsoft Research: PDD Kit",
+          "url": "https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/"
+        },
+        {
+          "title": "Verus proof language",
+          "url": "https://github.com/verus-lang/verus"
+        },
+        {
+          "title": "GitHub Next Chopin",
+          "url": "https://githubnext.com/projects/chopin/"
+        }
+      ],
+      "reviewedAt": "2026-11-06T05:42:01Z"
+    },
+    "bbd492caba72ca544b": {
+      "url": "https://openai.com/index/cultfit-builds-with-codex",
+      "titleAr": "Cult.fit توسّع استخدام Codex من فرق الهندسة إلى بناء أدوات تشغيلية داخلية",
+      "summaryAr": "تقول OpenAI إن Cult.fit وحّدت سير التطوير على Codex ثم وسّعته إلى فرق غير هندسية، حيث بُني أكثر من 20 تطبيقًا داخليًا. وتذكر الشركة توفيرًا سنويًا يتجاوز 100 ألف دولار بعد إعادة بناء قدرة داخلية، وانخفاضًا يتجاوز 50% في تكلفة دعم العملاء؛ وهي أرقام منشورة في دراسة حالة من OpenAI.",
+      "whyItMatters": "القصة توضح انتقال وكلاء البرمجة من كتابة الشيفرة إلى تغيير طريقة عمل المؤسسة، لكنها تبرز أيضًا أن النجاح احتاج توحيد المستودعات والاختبارات والمراجعة وساعات دعم للموظفين، لا مجرد منح الجميع أداة.",
+      "audience": "فرق تطوير المنتجات، مسؤولو التحول الرقمي، فرق العمليات، ومطورو الأدوات الداخلية.",
+      "nextSteps": [
+        "قارن أي تجربة داخلية بتكلفتها السابقة، وزمنها، ومعدل الأخطاء، ووقت المراجعة البشرية.",
+        "ابدأ بأداة داخلية محدودة الصلاحيات، مع مالك بشري واختبارات ومراجعة قبل النشر."
+      ],
+      "limitations": "المؤشرات والنتائج واردة في دراسة حالة نشرتها OpenAI والعميل؛ لا توجد منهجية مستقلة منشورة للتحقق من وفورات التكلفة أو تعميمها على مؤسسات أخرى.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "OpenAI customer story: Cult.fit and Codex",
+          "url": "https://openai.com/index/cultfit-builds-with-codex/"
+        }
+      ],
+      "reviewedAt": "2026-11-06T05:42:01Z"
+    },
+    "ad929875c5a71925cb": {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda",
+      "titleAr": "OpenAI تنشر ميثاقًا مجتمعيًا وتتعهد بعدم استخدام اتفاقيات عدم الإفصاح مع المسؤولين العموميين إلا لاستثناءات ضيقة",
+      "summaryAr": "نشرت OpenAI ميثاقًا مجتمعيًا للمراكز المستقبلية التي تملكها وتشغلها، يتضمن دفع كامل تكاليف الكهرباء والبنية اللازمة، ونشر بيانات الموقع عن المياه والطاقة، ودراسات الضوضاء، وتقارير سنوية عن التوظيف والاستثمار المحلي. وتقول الوثيقة إنها لن تستخدم اتفاقيات عدم الإفصاح مع المسؤولين العموميين، مع استثناءات محدودة للأمن المشروع والأسرار التجارية والمعلومات التنافسية الحساسة.",
+      "whyItMatters": "توسّع مراكز الحوسبة يجعل الطاقة والمياه والضوضاء والوظائف المحلية جزءًا من حوكمة الذكاء الاصطناعي، لا مجرد تفاصيل عقارية. القيمة الفعلية ستتحدد بمدى تحويل التعهدات الطوعية إلى بيانات قابلة للمراجعة والتزامات قابلة للمساءلة.",
+      "audience": "متابعو بنية الذكاء الاصطناعي، سياسات التقنية، الطاقة، المجتمعات المحلية، ومطورو مراكز البيانات.",
+      "nextSteps": [
+        "تابع التقارير السنوية الخاصة بكل موقع وقارن استهلاك الطاقة والمياه والتوظيف بما أُعلن.",
+        "ميّز بين الميثاق الطوعي للمواقع التي تملكها OpenAI وتشغلها وبين مقترحات السياسات التي تحتاج إلى تبنٍ تنظيمي."
+      ],
+      "limitations": "التعهدات تخص المراكز المستقبلية التي تملكها OpenAI وتشغلها، وهي تعهدات الشركة وليست تحققًا مستقلًا من التنفيذ. لم أتمكن من قراءة نص The Verge كاملًا؛ اعتمدت في تفاصيل السياسة على وثيقة OpenAI الأصلية.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "OpenAI: Setting a new standard for responsible AI infrastructure",
+          "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure/"
+        },
+        {
+          "title": "The Verge: OpenAI is stepping back from NDAs for data center projects",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda"
+        }
+      ],
+      "reviewedAt": "2026-11-06T05:42:01Z"
+    },
+    "284810c2fd047502da": {
+      "url": "https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder/",
+      "titleAr": "Meta تتوقع تدقيقًا مجتمعيًا وسياسيًا أشد على توسع مراكز بيانات الذكاء الاصطناعي",
+      "summaryAr": "نقلت TechCrunch عن رئيسة Meta أن ردود الفعل المحلية والانتخابات قد تجعل إنشاء مراكز البيانات أصعب، وأن الشركة ترى قبول المجتمعات مرتبطًا بمنافع ملموسة مثل دفع تكلفة الكهرباء، وتوجيه فوائض ضريبية للمدارس وخدمات الطوارئ، والتوظيف المحلي. الأرقام المتعلقة بمواقع Meta ومشروعاتها وردت على لسان مسؤولة في الشركة.",
+      "whyItMatters": "توسع الحوسبة لا يتوقف على توفر الشرائح والتمويل فقط؛ بل يعتمد أيضًا على موافقات المجتمعات وسعة الشبكة وتوزيع المنافع. هذا يجعل شفافية الطاقة والمياه والوظائف عاملًا مؤثرًا في سرعة بناء البنية التحتية.",
+      "audience": "متابعو الذكاء الاصطناعي والحوسبة السحابية والطاقة، والمهتمون بالسياسات المحلية وتخطيط البنية التحتية.",
+      "nextSteps": [
+        "راقب شروط التصاريح والإفصاحات المحلية عن الكهرباء والمياه والوظائف في المشروعات الجديدة.",
+        "قارن تصريحات الشركات ببيانات الجهات التنظيمية ومشغلي الشبكات عند توفرها."
+      ],
+      "limitations": "التوقعات والتفاصيل التشغيلية منسوبة إلى مسؤولة في Meta، وأرقام المواقع والمشروعات لم تُراجع هنا مقابل سجلات تنظيمية مستقلة. الحديث توقع سياسي وليس نتيجة مؤكدة.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch: Meta warns that election backlash against data centers could make AI expansion harder",
+          "url": "https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder/"
+        }
+      ],
+      "reviewedAt": "2026-11-06T05:42:01Z"
+    },
+    "e12ad59c369bd96f82": {
+      "url": "https://arstechnica.com/ai/2026/11/google-schools-can-keep-search-while-skipping-gemini-but-ai-search-is-non-negotiable/",
+      "titleAr": "Google تجعل تفعيل أدوات الذكاء الاصطناعي في حسابات المدارس بيد الإدارة، لكن تعطيلها قد يحجب البحث أيضًا",
+      "summaryAr": "تقول Google إن أدوات الذكاء الاصطناعي لحسابات طلاب K-12 ستكون متوقفة افتراضيًا حتى يفعّلها مسؤولو المدارس، وتضيف Guided Learning إلى Classroom عالميًا مع تجربة محدودة في Search. وتوضح Ars Technica أن إعدادات Google تجمع Gemini وميزات Search المدعومة بالذكاء الاصطناعي؛ لذلك قد يعني رفض AI فقدان الوصول إلى البحث في حسابات الطلاب.",
+      "whyItMatters": "القرار التعليمي ليس مجرد تشغيل مساعد محادثة أو إيقافه؛ إذ يمكن أن يصبح البحث نفسه مرتبطًا بميزات توليدية. تحتاج المدارس إلى اختبار الإعدادات على حسابات طلاب فعلية وموازنة الخصوصية والوصول إلى المعلومات والتعلم الموجّه.",
+      "audience": "المدارس والمعلمون وأولياء الأمور ومطورو تقنيات التعليم ومسؤولو حسابات Google Workspace for Education.",
+      "nextSteps": [
+        "راجع إعدادات K-12 الرسمية قبل تفعيل أي منتج، واختبر أثر إيقاف AI على Search في حساب تجريبي.",
+        "قيّم Guided Learning على أساس تعلم الطالب ومراجعة المعلم، لا على وصف الشركة وحده."
+      ],
+      "limitations": "الطرح يجمع بين بيان Google وتفسير Ars Technica لنتيجة الإعدادات؛ بعض التغييرات ستُطرح لاحقًا، وتجربة Search تبدأ في مدارس أمريكية مختارة. لم تُنشر هنا نتائج مستقلة عن أثرها التعليمي.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Ars Technica: Google will let schools skip AI tools, but they have to give up search, too",
+          "url": "https://arstechnica.com/ai/2026/11/google-will-let-schools-skip-ai-tools-but-they-have-to-give-up-search-too/"
+        },
+        {
+          "title": "Google: Designing responsible AI for learning",
+          "url": "https://blog.google/products-and-platforms/products/education/ai-learning-era-updates-2026/"
+        }
+      ],
+      "reviewedAt": "2026-11-06T05:42:01Z"
+    },
+    "2b77231153d4ebd054": {
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNc3M5ZFQ0dmJlSUM0YjdBZGRXVzdmRDRzaHc3QzEtYVJLX2NBTGxzX1BPWDlROHJCWjQ2M0EyRGtNV0w3NGdLYUhKWTlya1RERUZpMjNlY2xmRVA4U1lOMGJUWVZ6MUhuWmZJd0tQMkN3Tzh4bnpuUmhnUDBuVkFvbzNlZ1JrdExtaTRBcmpTWGtfaVY2UEpmRFM4OC02b3Vmb2tGenlQcUdYdHk3VlRfdEdrZXZJQTROemx6YUV4SENrdEY3ZkFjOVE2b9IB0AFBVV95cUxQRmpZNEVCaEsxN3dzVmxPLW1sSlJ0Ml9kX3NabXFEbkRQVW01VUlreHRfd1l6VFZfUWJQMXNGRTY5M2VoejRfbGltYWNOVERMOVVhOElweXV6NHhVQlJJSWJhU0JBazgxQVduR1VicGwzMkVnTVIzS3hna3FMUi1GQUxGMjhCT19felFDQ3U3dEFNMmN6Nkx0SmdGeldBZDZlSHNBVWo1cV82NGtrX0ZweWMzU3dIejFKZG9RS3JBb3RtOElyMXpnMUUxejlYX0tB?oc=5",
+      "titleAr": "Quantinuum ترسم خارطة Nexus حتى حاسوب Apollo الكمومي المخطط لعام 2029",
+      "summaryAr": "أعلنت Quantinuum خارطة طريق لمنصة Nexus تجمع تطوير التطبيقات الكمومية والتحقق والترجمة والتنفيذ وتنسيق سير العمل الهجين، مع إضافة تدريجية لأدوات تصحيح الأخطاء وإدارة الموارد. وتقول الشركة إن Nexus تدعم أكثر من 200 مؤسسة وإن إرسال المهام ارتفع عشرة أضعاف خلال الاثني عشر شهرًا المنتهية في أغسطس 2026؛ أما Apollo فحاسوب متسامح مع الأخطاء مخطط له في 2029.",
+      "whyItMatters": "التحدي في الحوسبة الكمومية ليس العتاد وحده؛ بل سلسلة الأدوات التي تنقل الخوارزمية من الدائرة إلى التطبيق الهجين القابل للنشر. خارطة Nexus مهمة للمطورين لأنها توضح كيف تحاول الشركة جعل البرامج قابلة للتطور مع أجيال العتاد.",
+      "audience": "باحثو الحوسبة الكمومية ومطورو الخوارزميات والفرق التي تدرس تطبيقات الكم مع الحوسبة التقليدية.",
+      "nextSteps": [
+        "افصل بين ميزات Nexus المتاحة حاليًا والقدرات الموعودة في إصدارات مستقبلية.",
+        "تابع إصدار ديسمبر المعلن وقارن دعم تصحيح الأخطاء والتنفيذ على Helios بما ورد في خارطة الطريق."
+      ],
+      "limitations": "Apollo هدف مستقبلي لعام 2029 وليس جهازًا متاحًا الآن. أرقام الاستخدام ومقاييس التبني من الشركة، والخارطة تتضمن تصريحات مستقبلية قد تتغير.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Quantinuum: Nexus roadmap",
+          "url": "https://www.quantinuum.com/press-releases/quantinuum-unveils-nexus-roadmap-to-deliver-the-first-developer-platform-designed-for-the-fault-tolerant-quantum-era"
+        },
+        {
+          "title": "Quantinuum investor relations release",
+          "url": "https://ir.quantinuum.com/news-releases/news-release-details/quantinuum-unveils-nexus-roadmap-deliver-first-developer"
+        }
+      ],
+      "reviewedAt": "2026-11-06T05:42:01Z"
+    },
+    "f96100f1a79cee33e4": {
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5tMFhWWThFaVE5WlNDUnJNR3VxanZBQ3prSFZWYnR2WWVCRjlFZmxhN19OemFodHhqb013U0RXellINHI5WXAwd21Qc3JudXJS?oc=5",
+      "titleAr": "أكاديمية زادك تستكشف في بكين المحاكاة الرقمية والروبوتات لتطوير تدريب الطهاة",
+      "summaryAr": "أفادت السعودية الإخبارية بأن مؤسِّسة أكاديمية زادك ورئيسة مجلس إدارتها زارت بكين برفقة الرئيس التنفيذي لمجموعة التعليم السويسرية، وشملت الزيارة جامعات وجهات متخصصة في التعلم الذكي والروبوتات. الهدف المعلن هو استكشاف المحاكاة الرقمية والمطابخ الذكية وتطوير التدريب المهني في الطهي والضيافة، وليس إعلان نشر نظام أو توقيع عقد.",
+      "whyItMatters": "يوضح الخبر امتداد تطبيقات الذكاء الاصطناعي والروبوتات إلى التعليم المهني والضيافة داخل السعودية. الفرصة الحقيقية ليست استبدال مهارة الطاهي، بل تحسين التدريب والمحاكاة والجودة مع الحفاظ على الإبداع والهوية المحلية.",
+      "audience": "المهتمون بالتعليم التقني في السعودية، والضيافة وفنون الطهي، والروبوتات والمحاكاة الرقمية.",
+      "nextSteps": [
+        "تابع إعلانات زادك اللاحقة لمعرفة ما إذا تحولت الزيارة إلى شراكات أو برامج تجريبية معلنة.",
+        "ابحث عن مؤشرات قابلة للقياس مثل ساعات التدريب العملي وجودة الخدمة وسلامة المطبخ قبل تقييم الأثر."
+      ],
+      "limitations": "المصدر المتاح تقرير صحفي واحد عن زيارة استكشافية؛ لا يذكر أسماء الموردين أو عقودًا أو جدول تنفيذ أو نتائج تجريبية. لا ينبغي وصفه بأنه مشروع روبوتات بدأ تشغيله.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "السعودية الإخبارية: زيارة زادك إلى بكين",
+          "url": "https://alsaudi.news/local/0611/117733/"
+        }
+      ],
+      "reviewedAt": "2026-11-06T05:42:01Z"
+    },
+    "199af8aea5b6112902": {
+      "url": "https://github.com/anthropics/claude-code/issues/107757",
+      "titleAr": "بلاغ في Claude Code يثير مخاوف من ظهور بريد الحساب في ترويسة User-Agent",
+      "summaryAr": "تقول بلاغات في مستودع Claude Code إن سياق الحساب قد يدفع الوكيل أحيانًا إلى إدراج البريد في ترويسة User-Agent عند إجراء طلبات ويب. ردّ أحد مطوري Anthropic بأن إضافة الخصوصية المدمجة cc-plugin-privacy أُضيفت في الإصدار 2.1.317 ومفعّلة افتراضيًا، لكن تقريرًا لاحقًا في القضية نفسها قال إن الحماية لم تمنع حالة اختبار لديه في 2.1.317 و2.1.318؛ والقضية ما زالت مفتوحة.",
+      "whyItMatters": "الحادثة تذكّر بأن البيانات الشخصية قد تنتقل من سياق النموذج إلى طلبات أدواته دون أن يقصد المستخدم ذلك. وجود فحص افتراضي جيد، لكن يجب تقييم تغطيته واختباره على المسارات المختلفة بدل اعتباره ضمانًا كاملًا.",
+      "audience": "مستخدمو Claude Code ووكلاء البرمجة، ومطورو أدوات الويب، والمهتمون بالخصوصية وسلامة بيانات الحساب.",
+      "nextSteps": [
+        "تحقق من إصدار العميل وحالة إضافة الخصوصية، ولا تفترض أن تفعيلها يغطي كل مسارات الأدوات.",
+        "تابع تحديث القضية ومصدر الإضافة، وقلل تمرير بيانات الحساب إلى سياق الوكيل عندما لا تكون لازمة."
+      ],
+      "limitations": "المعلومات مستمدة من بلاغ مستخدم ورد مطور في issue مفتوح، مع تقارير لاحقة متعارضة حول فعالية الحماية. لم أعد إنتاج الحالة أو أتحقق من السلوك على جهاز مستقل.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Claude Code issue #107757",
+          "url": "https://github.com/anthropics/claude-code/issues/107757"
+        },
+        {
+          "title": "Anthropic maintainer response about cc-plugin-privacy",
+          "url": "https://github.com/anthropics/claude-code/issues/107757#issuecomment-6672259159"
+        },
+        {
+          "title": "Later report about a coverage gap",
+          "url": "https://github.com/anthropics/claude-code/issues/107757#issuecomment-6676218676"
+        }
+      ],
+      "reviewedAt": "2026-11-06T05:42:01Z"
+    },
+    "c5ca51374c960089ad": {
+      "url": "https://phoboslab.org/log/2026/11/n64-ulc-codec",
+      "titleAr": "ترميز ULC يتيح صوتًا ستيريو 44.1 كيلوهرتز على Nintendo 64 باستهلاك منخفض وفق تجربة المطور",
+      "summaryAr": "شرح مطور Libdragon كيف نقل مفكك ترميز Ultra Low Complexity Codec إلى معالج RSP في Nintendo 64 باستخدام حسابات fixed-point، بعد أن كان فك الترميز يستهلك وقتًا كبيرًا من المعالج الرئيسي. ويقول إن مسارًا صوتيًا واحدًا بدقة 44.1 كيلوهرتز ستيريو يستهلك نحو 4% من وقت CPU و5% من وقت RSP، وقد أُدمج المفكك في فرع preview من Libdragon.",
+      "whyItMatters": "القيمة الهندسية في ملاءمة خوارزمية بسيطة لمعمارية قديمة محدودة الذاكرة والتعليمات، وفي استخدام وكيل برمجة لترجمة أجزاء منخفضة المستوى مع تحقق بشري تكراري. المثال يوضح أن الوكيل يسرّع العمل لكنه لا يلغي فهم المعمارية أو القياس على العتاد.",
+      "audience": "مطورو الأنظمة المضمنة والألعاب القديمة، ومهتمو MIPS وDSP وضغط الصوت ووكلاء البرمجة.",
+      "nextSteps": [
+        "راجع تنفيذ Libdragon وفرع preview قبل الاعتماد على الأرقام.",
+        "قارن جودة الصوت واستهلاك CPU/RSP على الجهاز الفعلي مع ADPCM وOpus في ظروف تشغيل متشابهة."
+      ],
+      "limitations": "الأرقام قياسات نشرها صاحب التجربة وليست معيارًا مستقلًا؛ النتيجة تخص N64 وتنفيذًا محددًا، ولا تعني أن ULC بديل عام لكل الأجهزة أو الاستخدامات.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "PhobosLab: Why this Obscure Audio Codec is a Perfect Fit for the N64",
+          "url": "https://phoboslab.org/log/2026/11/n64-ulc-codec"
+        },
+        {
+          "title": "Libdragon open-source N64 SDK",
+          "url": "https://github.com/DragonMinded/libdragon"
+        },
+        {
+          "title": "ULC codec by Aikku93",
+          "url": "https://github.com/Aikku93/ulcplayer-gba"
+        }
+      ],
+      "reviewedAt": "2026-11-06T05:42:01Z"
+    },
+    "bf767323e9676daa26": {
+      "url": "https://erikgahner.github.io/posts/2026/awesome-repositories-are-no-longer-awesome/",
+      "titleAr": "مقال رأي يحذر من تقادم قوائم GitHub وازدياد إضافات الذكاء الاصطناعي منخفضة الجودة",
+      "summaryAr": "يرى الكاتب Erik Gahner أن كثيرًا من مستودعات Awesome فقدت قيمتها عندما تقادمت مواردها أو تحولت طلبات الدمج إلى اقتراحات عامة مولدة بالذكاء الاصطناعي. ويعرض أمثلة من مراجعاته الشخصية، لكنه يوضح أنه لم يفحص كل طلبات الدمج التي ذكرها؛ لذلك فالمقال رأي مدعوم بأمثلة، وليس دراسة كمية شاملة.",
+      "whyItMatters": "هذا التحذير يمس جودة المكتبات البحثية مباشرة: كثرة الروابط لا تعني جودة الاختيار. يجب أن يكون لكل مشروع دليل رسمي، وترخيص، ونشاط، وطريقة بدء، وحدود واضحة، وأن تبقى المراجعة البشرية مسؤولة عن قرار الإدراج.",
+      "audience": "صنّاع قوائم GitHub، ومشرفو المصادر المفتوحة، ومطورو الوكلاء، ومن يبنون مكتبات أدوات تقنية.",
+      "nextSteps": [
+        "اعتمد معايير قبول قابلة للتحقق تشمل المصدر الرسمي والنشاط والترخيص ووجود مستخدمين أو توثيق مفيد.",
+        "احتفظ بسجل سبب القبول والرفض، ولا تدمج اقتراحات الوكلاء تلقائيًا دون مراجعة مستقلة."
+      ],
+      "limitations": "المقال وجهة نظر شخصية منشورة في مدونة، ويستند إلى أمثلة مختارة لا إلى عينة ممثلة أو قياس شامل لكل قوائم Awesome.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Erik Gahner: Awesome repositories are no longer awesome",
+          "url": "https://erikgahner.github.io/posts/2026/awesome-repositories-are-no-longer-awesome/"
+        },
+        {
+          "title": "Hacker News discussion",
+          "url": "https://news.ycombinator.com/item?id=50377821"
+        }
+      ],
+      "reviewedAt": "2026-11-06T05:42:01Z"
+    },
+    "335e94a0914635a16c": {
+      "url": "https://github.com/rivet-dev/rivet",
+      "titleAr": "Rivet يقدّم منصة Actors مستدامة لتشغيل وكلاء وعمليات طويلة الحالة فوق تخزين كائني",
+      "summaryAr": "يعرض مستودع Rivet منصة مفتوحة المصدر لبناء Actors طويلة العمر تحتفظ بالحالة وتدعم SQLite وWebSockets والجدولة وتنسيق سير العمل، مع استخدام تخزين كائني مثل S3 في النشر. README يعلن أرقامًا منخفضة لزمن البدء والذاكرة، ويعرض تشغيلًا محليًا واستضافة ذاتية وخيارات Cloud وBYOC؛ الأرقام المنشورة قياسات من المشروع وليست اختبارًا مستقلًا.",
+      "whyItMatters": "قد تكون بنية Actors مناسبة لجلسات الوكلاء التي تحتاج ذاكرة واستمرارًا بعد إعادة التشغيل، لكنها لا تستبدل عزل تنفيذ الشيفرة. الاختيار بين الاستضافة الذاتية والسحابة يجب أن يوازن تكلفة العقد والتخزين والتشغيل مقابل سهولة الإدارة.",
+      "audience": "مطورو وكلاء الذكاء الاصطناعي والأنظمة الخلفية والتطبيقات اللحظية والفرق التي تحتاج حالة دائمة.",
+      "nextSteps": [
+        "ابدأ بنموذج Actor محلي صغير وقِس زمن الاستعادة بعد إعادة التشغيل قبل نقل بيانات حقيقية.",
+        "قارن تكلفة Rivet Cloud والاستضافة الذاتية مع Temporal أو Cloudflare Durable Objects وفق نمط الحمل."
+      ],
+      "limitations": "مقاييس الأداء الواردة في README من المشروع ولم أعد إنتاجها. الاستضافة الذاتية تتطلب تخزينًا كائنيًا وبنية تشغيل وصيانة؛ أسعار Cloud تتغير بحسب الخطة وعدد Actor Nodes. لم يُبنَ المشروع أو يُشغّل.",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "Rivet repository and README",
+          "url": "https://github.com/rivet-dev/rivet"
+        },
+        {
+          "title": "Rivet self-hosting documentation",
+          "url": "https://rivet.dev/docs/deploy/self-host/control-plane/"
+        },
+        {
+          "title": "Rivet pricing",
+          "url": "https://rivet.dev/pricing/"
+        },
+        {
+          "title": "Rivet latest release v3.0.5",
+          "url": "https://github.com/rivet-dev/rivet/releases/tag/v3.0.5"
+        }
+      ],
+      "reviewedAt": "2026-11-06T05:42:01Z"
+    },
+    "24e1aea537d2f6598e": {
+      "url": "https://github.com/AGGIB/Stroq",
+      "titleAr": "Stroq يقدّم تدقيقًا محليًا لسلوك وكلاء البرمجة وربط الأوامر بمصادرها",
+      "summaryAr": "يعرض Stroq أداة محلية تفحص سجلات جلسات وكلاء البرمجة وتحاول ربط الأوامر بالمحتوى الذي سبقها، مع hooks لبعض الوكلاء وتقارير عن الأسرار وسياق التنفيذ. المشروع مفتوح المصدر بترخيص Apache-2.0 ويطلب Node.js 22 أو أحدث؛ ويذكر README مجموعة من 36 سيناريو اختبار أعدّها المشروع نفسه، فلا ينبغي اعتبار أرقامها تحققًا مستقلًا.",
+      "whyItMatters": "يوفر طبقة رؤية ومراجعة لأفعال الوكيل، خصوصًا عندما يتحول نص غير موثوق إلى أمر أو طلب شبكة. لكنه مكمل للعزل على مستوى نظام التشغيل وليس بديلًا عنه، كما أن التغطية تعتمد على تكامل كل عميل وإصداره.",
+      "audience": "مستخدمو وكلاء البرمجة ومهندسو الأمن المحلي ومطورو أدوات CLI والمهتمون بخصوصية جلسات الوكلاء.",
+      "nextSteps": [
+        "ابدأ بوضع القراءة فقط على جلسة تجريبية خالية من الأسرار، ثم راجع التغطية والإنذارات قبل تثبيت hooks.",
+        "اختبر كل تكامل على إصدارات الوكيل المستخدمة لديك، ولا تعتمد على نتيجة مجموعة الاختبارات المنشورة وحدها."
+      ],
+      "limitations": "المشروع يعتمد على hooks وتنسيقات الجلسات التي يوفرها كل عميل، ولا يفرض عزلًا على مستوى نظام التشغيل. نتائج 36 سيناريو منشورة من مؤلف المشروع ولم تُكرر مستقلًا. لم أشغّل CLI أو أختبر أي تكامل.",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "Stroq repository and README",
+          "url": "https://github.com/AGGIB/Stroq"
+        },
+        {
+          "title": "Stroq usage guide",
+          "url": "https://github.com/AGGIB/Stroq/blob/main/GUIDE.md"
+        },
+        {
+          "title": "Stroq supported agent integrations",
+          "url": "https://github.com/AGGIB/Stroq/blob/main/docs/AGENTS.md"
+        },
+        {
+          "title": "Stroq Apache-2.0 license",
+          "url": "https://github.com/AGGIB/Stroq/blob/main/LICENSE"
+        },
+        {
+          "title": "Stroq package manifest",
+          "url": "https://github.com/AGGIB/Stroq/blob/main/package.json"
+        }
+      ],
+      "reviewedAt": "2026-11-06T05:42:01Z"
     }
   }
 }

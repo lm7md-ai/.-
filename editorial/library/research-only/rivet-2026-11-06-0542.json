@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "runAt": "2026-11-06T08:42:01+03:00",
+  "metricsMeasuredAt": "2026-11-06T05:42:01Z",
+  "siteVisibility": "research-only",
+  "project": {
+    "name": "Rivet",
+    "repository": "rivet-dev/rivet",
+    "url": "https://github.com/rivet-dev/rivet",
+    "feedProjectId": null,
+    "feedNewsReferenceId": "335e94a0914635a16c",
+    "priority": 51,
+    "license": "Apache-2.0",
+    "archived": false,
+    "disabled": false,
+    "latestRelease": "v3.0.5",
+    "latestReleaseDate": "2026-11-05T16:24:53Z"
+  },
+  "metrics": {
+    "stars": 6686,
+    "forks": 308,
+    "openIssues": 380,
+    "pushedAt": "2026-11-05T23:45:07Z",
+    "updatedAt": "2026-11-06T05:42:58Z",
+    "measuredAt": "2026-11-06T05:42:01Z",
+    "source": "GitHub REST API",
+    "timestampAnomaly": "updatedAt is 57 seconds later than measuredAt; not used as activity proof."
+  },
+  "overview": "Rivet منصة مفتوحة المصدر لبناء Actors طويلة العمر تحتفظ بالحالة وتدعم سير العمل والجدولة وWebSockets. يتكون النشر من backend وcontrol plane وstorage؛ ويمكن تشغيله محليًا أو ذاتيًا أو عبر Rivet Cloud أو BYOC. لا يقدّم Rivet عزلًا أمنيًا لعمليات الوكيل بمجرد استخدام Actors.",
+  "requirements": [
+    "Node.js 20 أو أحدث لتطوير تطبيقات Rivet SDK؛ يستخدم المستودع pnpm 10.13.1 وRust edition 2024 لبناء مكونات المنصة.",
+    "الوضع المحلي يستطيع استخدام filesystem backend؛ الإنتاج الذاتي يحتاج control plane وتخزينًا كائنيًا مثل S3 أو GCS أو Azure Blob أو مخزنًا متوافقًا مع S3، إضافة إلى persistent disk لعقد التشغيل.",
+    "لا يتطلب GPU لتنسيق Actors؛ استدعاءات نماذج اللغة وأي compute خارجي لها تكاليف ومزودون منفصلون.",
+    "توصي وثائق النشر بعقد متعددة ومناطق توافر للإنتاج؛ التجربة المحلية لا تثبت جاهزية التوسع أو التعافي."
+  ],
+  "quickStart": [
+    "راجع README وApache-2.0 والوثائق قبل اختيار نمط النشر.",
+    "ابدأ بتطبيق TypeScript صغير باستخدام rivetkit وأنشئ Actor واحدًا يحتفظ بحالة بسيطة.",
+    "شغّل control plane المحلي ووصل العميل به باستخدام إعدادات quickstart الرسمية.",
+    "اختبر استعادة الحالة بعد إعادة تشغيل العملية، ثم أضف WebSocket أو مهمة مجدولة واحدة.",
+    "لا تنقل بيانات حقيقية أو أسرارًا قبل تحديد التخزين والنسخ الاحتياطي وحدود الوصول."
+  ],
+  "costModel": {
+    "license": "Apache-2.0؛ لا رسوم ترخيص ذاتي.",
+    "local": "مجاني برمجيًا للتجربة المحلية؛ التكلفة هي جهاز المطور ووقت التشغيل والتخزين المحلي.",
+    "selfHosted": "لا رسوم استخدام من Rivet وفق صفحة التسعير، لكن تتحمل تكلفة الخوادم والتخزين الكائني والشبكة والمراقبة والنسخ الاحتياطي والصيانة.",
+    "cloudPricingSnapshot": {
+      "measuredAt": "2026-11-06T05:42:01Z",
+      "freeControlPlaneUsdPerMonth": 0,
+      "hobbyControlPlaneUsdPerMonth": 10,
+      "teamControlPlaneUsdPerMonth": 120,
+      "enterpriseControlPlaneUsdPerMonth": 900,
+      "actorNodeUsdPerMonth": {
+        "R5": 4.2,
+        "R10": 8.4,
+        "R20": 16.8,
+        "R40": 27.3,
+        "R160": 94.5
+      },
+      "currency": "USD",
+      "note": "لقطة من صفحة التسعير وقت القياس؛ العقد الإضافية فوق الخطة، وقد تتغير الأسعار. لا توجد عملية شراء أو اشتراك في هذه الدورة."
+    },
+    "byoc": "تعمل المكونات داخل VPC الخاص بالعميل وتدير Rivet التحديثات عبر اتصال صادر؛ راجع شروط الخطة قبل افتراض أن كل وظائف Enterprise متاحة مجانًا.",
+    "noPaidServicesUsed": true
+  },
+  "alternatives": [
+    {
+      "name": "Temporal",
+      "url": "https://github.com/temporalio/temporal",
+      "note": "مناسب لسير عمل موزع طويل العمر؛ نموذج التنفيذ يختلف عن Actors ذات الحالة."
+    },
+    {
+      "name": "Cloudflare Durable Objects",
+      "url": "https://developers.cloudflare.com/durable-objects/",
+      "note": "بديل actor-like مرتبط بمنصة Cloudflare؛ قارن قيود المنصة ومكان البيانات."
+    }
+  ],
+  "benchmark": {
+    "claims": [
+      {
+        "metric": "p99 cold-start",
+        "value": "4.99 ms",
+        "source": "Rivet README",
+        "independentReplication": false
+      },
+      {
+        "metric": "memory per actor",
+        "value": "72 KB",
+        "source": "Rivet README",
+        "independentReplication": false
+      }
+    ],
+    "testEvidence": null,
+    "note": "أرقام المشروع المنشورة ليست قياسات أعدنا إنتاجها؛ لا تستخدمها لتقدير أداء حمل مختلف."
+  },
+  "improvements": [
+    {
+      "title": "حاسبة شفافة لكلفة Rivet بين Cloud والاستضافة الذاتية",
+      "problem": "تتوزع الكلفة بين control plane وActor Nodes والتخزين والشبكة؛ ويصعب مقارنة ذلك بتشغيل ذاتي.",
+      "approach": "إنشاء حاسبة تقرأ لقطة تسعير مؤرخة وتفصل رسوم المنصة عن تكلفة البنية التي يديرها المستخدم.",
+      "stack": "TypeScript + JSON Schema + pricing snapshots + واجهة عربية RTL",
+      "steps": [
+        "تثبيت نموذج خطط control plane وأحجام العقد.",
+        "إضافة عدد العقد والمنطقة والتخزين كمدخلات منفصلة.",
+        "حساب Cloud وBYOC وself-host في أعمدة مستقلة.",
+        "إظهار العناصر غير المشمولة مثل egress والنسخ الاحتياطي.",
+        "إضافة تاريخ صلاحية لكل لقطة تسعير."
+      ],
+      "metric": "خطأ التقدير مقارنة بالفاتورة الفعلية، وعدد السيناريوهات المغطاة.",
+      "difficulty": "متوسط، 1–2 أسبوع تقديرًا",
+      "risks": "تغير الأسعار وتكاليف الشبكة والتخزين قد تجعل التقدير أقل من الفاتورة؛ يجب وصفه كأداة تقدير لا عرض سعر.",
+      "sources": [
+        {
+          "title": "Rivet pricing",
+          "url": "https://rivet.dev/pricing/"
+        },
+        {
+          "title": "Rivet self-host docs",
+          "url": "https://rivet.dev/docs/deploy/self-host/control-plane/"
+        }
+      ]
+    },
+    {
+      "title": "اختبار استعادة حالة Actor من التخزين الكائني",
+      "problem": "وجود حالة دائمة لا يثبت وحده أن النسخ الاحتياطي والاستعادة يعملان عند تلف عقدة أو تغيير إصدار.",
+      "approach": "بناء اختبار غير إنتاجي يكتب حالة معروفة ثم يعيدها بعد restart أو استبدال عقدة، مع قياس RPO وRTO.",
+      "stack": "TypeScript + S3-compatible storage + Docker + OpenTelemetry",
+      "steps": [
+        "إنشاء Actor تجريبي ببيانات اصطناعية.",
+        "كتابة حالة مرجعية وتسجيل checksum.",
+        "إيقاف عقدة الاختبار ثم استعادة Actor من التخزين.",
+        "مقارنة الحالة المستعادة بالمرجع.",
+        "تسجيل زمن الاستعادة والفقد إن وجد."
+      ],
+      "metric": "نسبة نجاح الاستعادة وRPO/RTO لكل سيناريو.",
+      "difficulty": "مرتفع، 2–3 أسابيع تقديرًا",
+      "risks": "اختلاف مزودي التخزين قد يسبب نتائج غير قابلة للتعميم؛ الاختبار لا يغني عن خطة نسخ احتياطي ومراجعة أمنية.",
+      "sources": [
+        {
+          "title": "Rivet self-host docs",
+          "url": "https://rivet.dev/docs/deploy/self-host/control-plane/"
+        },
+        {
+          "title": "Rivet repository",
+          "url": "https://github.com/rivet-dev/rivet"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "جلسات بحث شخصية مستمرة",
+      "problem": "تفقد تطبيقات الوكلاء سياق العمل بعد إعادة التشغيل أو انتهاء الجلسة.",
+      "approach": "Actor لكل مساحة بحث يحفظ المهام والمصادر وحالة المراجعة ويستأنف من آخر نقطة.",
+      "stack": "TypeScript + Rivet + SQLite + WebSocket",
+      "steps": [
+        "تعريف كيان مساحة البحث.",
+        "حفظ الحالة والروابط والمراجعات داخل Actor.",
+        "إضافة استئناف بعد restart.",
+        "إضافة سجل تغييرات وموافقة بشرية قبل أي إجراء خارجي."
+      ],
+      "metric": "نسبة الجلسات التي تستعيد الحالة الصحيحة بعد إعادة التشغيل.",
+      "difficulty": "متوسط، 1–2 أسبوع تقديرًا",
+      "risks": "قد تتراكم بيانات شخصية أو أسرار في السجل؛ يلزم تقليل البيانات وسياسة حذف واضحة.",
+      "sources": [
+        {
+          "title": "Rivet actors docs",
+          "url": "https://rivet.dev/docs/"
+        },
+        {
+          "title": "Rivet quickstart",
+          "url": "https://rivet.dev/actors/docs/quickstart/backend/"
+        }
+      ]
+    },
+    {
+      "title": "مختبر برمجة تعاوني لحظي للمقررات",
+      "problem": "يصعب تنسيق جلسات فرق الطلاب مع حفظ حالة كل فريق ومزامنة الملاحظات.",
+      "approach": "Actor لكل فريق يزامن الحضور والملاحظات ومهام المختبر، مع حفظ snapshots للرجوع.",
+      "stack": "TypeScript + Rivet + WebSockets + object storage",
+      "steps": [
+        "اختيار مقرر تجريبي ومجموعات صغيرة.",
+        "إنشاء Actor لكل فريق.",
+        "إضافة مزامنة الملاحظات والحالة.",
+        "حفظ snapshot عند نهاية الجلسة.",
+        "قياس التزامن وفقد البيانات."
+      ],
+      "metric": "عدد الجلسات المتزامنة دون فقد أو تضارب في الحالة.",
+      "difficulty": "متوسط، 2 أسبوع تقديرًا",
+      "risks": "عزل المستأجرين وصلاحيات الطلاب والنسخ الاحتياطي تحتاج تصميمًا منفصلًا.",
+      "sources": [
+        {
+          "title": "Rivet workflows",
+          "url": "https://rivet.dev/docs/"
+        },
+        {
+          "title": "Rivet pricing",
+          "url": "https://rivet.dev/pricing/"
+        }
+      ]
+    }
+  ],
+  "religious": [],
+  "limitations": [
+    "لا يوجد testEvidence؛ لم يُثبت المشروع أو يُشغّل.",
+    "Rivet Actors ليست sandbox؛ عزل تنفيذ الأدوات يحتاج طبقة مستقلة.",
+    "مقاييس الأداء من README لم تُكرر مستقلًا.",
+    "الأسعار بالدولار ولقطة زمنية؛ تكلفة البنية الذاتية غير محسوبة."
+  ],
+  "testEvidence": null,
+  "sources": [
+    {
+      "title": "Rivet repository",
+      "url": "https://github.com/rivet-dev/rivet"
+    },
+    {
+      "title": "Rivet README",
+      "url": "https://github.com/rivet-dev/rivet/blob/main/README.md"
+    },
+    {
+      "title": "Rivet Apache-2.0 LICENSE",
+      "url": "https://github.com/rivet-dev/rivet/blob/main/LICENSE"
+    },
+    {
+      "title": "Rivet quickstart",
+      "url": "https://rivet.dev/actors/docs/quickstart/backend/"
+    },
+    {
+      "title": "Rivet self-host documentation",
+      "url": "https://rivet.dev/docs/deploy/self-host/control-plane/"
+    },
+    {
+      "title": "Rivet BYOC documentation",
+      "url": "https://rivet.dev/docs/deploy/byoc/"
+    },
+    {
+      "title": "Rivet pricing",
+      "url": "https://rivet.dev/pricing/"
+    },
+    {
+      "title": "Rivet v3.0.5 release",
+      "url": "https://github.com/rivet-dev/rivet/releases/tag/v3.0.5"
+    }
+  ]
+}

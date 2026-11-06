@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "runAt": "2026-11-06T08:42:01+03:00",
+  "metricsMeasuredAt": "2026-11-06T05:42:01Z",
+  "siteVisibility": "research-only",
+  "project": {
+    "name": "Stroq",
+    "repository": "AGGIB/Stroq",
+    "url": "https://github.com/AGGIB/Stroq",
+    "feedProjectId": null,
+    "feedNewsReferenceId": "24e1aea537d2f6598e",
+    "priority": 52,
+    "license": "Apache-2.0 CLI; vendored ATR rules MIT per README",
+    "archived": false,
+    "disabled": false,
+    "latestRelease": "v0.30.0",
+    "latestReleaseDate": "2026-11-05T15:31:59Z"
+  },
+  "metrics": {
+    "stars": 122,
+    "forks": 7,
+    "openIssues": 6,
+    "pushedAt": "2026-11-05T16:21:19Z",
+    "updatedAt": "2026-11-06T05:41:41Z",
+    "measuredAt": "2026-11-06T05:42:01Z",
+    "source": "GitHub REST API"
+  },
+  "overview": "Stroq أداة TypeScript محلية لتحليل جلسات وكلاء البرمجة وربط بعض الأوامر بمصادرها، مع تكاملات hooks وتقارير محلية عن سياق التنفيذ. هي طبقة مراقبة وحواجز على مستوى تكامل الوكيل، وليست عزلًا لنظام التشغيل أو ضمانًا بأن كل فعل يمر عبرها.",
+  "requirements": [
+    "Node.js 22 أو أحدث؛ ويستخدم المستودع pnpm 11.24.0 لبناء الحزمة.",
+    "لا يحتاج GPU أو حسابًا سحابيًا بحسب README؛ الجلسات والتقارير محلية ولا يعلن المشروع عن خدمة Cloud مستضافة.",
+    "يحتاج صلاحية قراءة ملفات جلسات العميل وتكامل hooks المناسب؛ دعم الأحداث يختلف بين Claude Code وCursor وCodex وCopilot CLI وغيرها.",
+    "تثبيت hooks يغيّر إعدادات العميل؛ راجع الفروقات قبل الموافقة ولا تطبقه على مستودع عمل حقيقي مباشرة."
+  ],
+  "quickStart": [
+    "راجع Apache-2.0 للمشروع وترخيص MIT لقواعد ATR المضمّنة كما يوضح README.",
+    "ابدأ بوضع القراءة فقط على جلسة اصطناعية لا تحتوي أسرارًا، وافحص التقرير الناتج.",
+    "راجع مصفوفة AGENTS.md وتأكد من إصدار الوكيل والأحداث المدعومة.",
+    "اختبر الإنذارات على مشروع تجريبي منفصل، وسجّل الإيجابيات الكاذبة والسلبية.",
+    "لا تثبّت hooks في بيئة فعلية قبل مراجعة تغييرات الإعدادات ومكان حفظ السجلات."
+  ],
+  "costModel": {
+    "license": "Apache-2.0 للـCLI والمشروع؛ يذكر README أن قواعد ATR المضمّنة مرخصة MIT.",
+    "local": "مجاني برمجيًا؛ يحتاج Node.js وموارد الجهاز ومساحة لحفظ سجلات الجلسات.",
+    "cloud": "لم أجد خدمة Cloud أو اشتراكًا معلنًا في README؛ التصميم محلي ولا يتطلب GPU. تنزيل الحزمة يحتاج اتصالًا بمستودع npm.",
+    "noPaidServicesUsed": true
+  },
+  "alternatives": [
+    {
+      "name": "Gitleaks",
+      "url": "https://github.com/gitleaks/gitleaks",
+      "note": "يفحص الأسرار في المستودعات والملفات؛ لا يقدّم بالضرورة سلسلة مصدر أفعال الوكيل."
+    },
+    {
+      "name": "TruffleHog",
+      "url": "https://github.com/trufflesecurity/trufflehog",
+      "note": "يركز على اكتشاف الأسرار والتحقق منها؛ أداة مكملة وليست بديلًا كاملًا لتتبع جلسات الوكلاء."
+    },
+    {
+      "name": "NVIDIA OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "note": "طبقة عزل تنفيذ مختلفة؛ يمكن أن تكمل مراقبة الجلسات بدل استبدالها."
+    }
+  ],
+  "benchmark": {
+    "claims": [
+      {
+        "metric": "سيناريوهات المجموعة المنشورة",
+        "value": "36"
+      },
+      {
+        "metric": "منع وفق README",
+        "value": "15"
+      },
+      {
+        "metric": "طلب موافقة وفق README",
+        "value": "21"
+      },
+      {
+        "metric": "مرور غير مكتشف وفق README",
+        "value": "0"
+      }
+    ],
+    "independentReplication": false,
+    "testEvidence": null,
+    "note": "هذه نتائج مجموعة اختبار كتبها المشروع نفسه؛ لم تُكرر مستقلًا ولا تثبت تغطية كل إصدارات الوكلاء أو طرق تنفيذ الأدوات."
+  },
+  "improvements": [
+    {
+      "title": "مصفوفة توافق hooks حسب إصدار الوكيل",
+      "problem": "تتغير أحداث hooks وتنسيقات الجلسات بين العملاء والإصدارات، وقد يعمل التكامل جزئيًا دون تنبيه واضح.",
+      "approach": "بناء fixtures مؤرخة لكل عميل وإصدار، وتشغيل اختبارات توافق تكشف الأحداث المدعومة والفشل المفتوح أو المغلق.",
+      "stack": "TypeScript + Vitest + JSONL fixtures + GitHub Actions",
+      "steps": [
+        "حصر العملاء والإصدارات المدعومة رسميًا.",
+        "حفظ أمثلة أحداث منقحة لكل إصدار.",
+        "تشغيل الاختبارات على كل fixture عند تحديث الحزمة.",
+        "تمييز unsupported عن failed وعن passed.",
+        "نشر مصفوفة توافق بتاريخ القياس."
+      ],
+      "metric": "نسبة الإصدارات المدعومة التي تجتاز الاختبارات مع معدل الإنذارات الكاذبة.",
+      "difficulty": "متوسط، 1–2 أسبوع تقديرًا",
+      "risks": "قد تتغير واجهات العملاء بسرعة؛ fixtures الاصطناعية لا تمثل كل الجلسات الواقعية.",
+      "sources": [
+        {
+          "title": "Stroq agent integrations",
+          "url": "https://github.com/AGGIB/Stroq/blob/main/docs/AGENTS.md"
+        },
+        {
+          "title": "Stroq guide",
+          "url": "https://github.com/AGGIB/Stroq/blob/main/GUIDE.md"
+        }
+      ]
+    },
+    {
+      "title": "مجموعة تقييم مستقلة لسلسلة مصدر أوامر الوكيل",
+      "problem": "مجموعة 36 حالة منشورة من مؤلف المشروع لا تكفي وحدها لتقدير الدقة خارج أمثلته.",
+      "approach": "إنشاء corpus منقح بحالات اصطناعية وتقارير عامة، مع labels مستقلة وقياس precision/recall والإيجابيات الكاذبة.",
+      "stack": "Python + JSONL + TypeScript + Vitest + SQLite",
+      "steps": [
+        "تعريف فئات المصدر والسلوك المتوقع.",
+        "جمع حالات عامة أو اصطناعية منزوعة البيانات الحساسة.",
+        "إسناد labels بواسطة مراجعين مستقلين.",
+        "تشغيل نسخ Stroq المختلفة على المجموعة.",
+        "نشر النتائج والقيود وإصدارات corpus."
+      ],
+      "metric": "Precision وRecall ومعدل الإيجابيات والسلبيات الكاذبة.",
+      "difficulty": "مرتفع، 2–3 أسابيع تقديرًا",
+      "risks": "تحيز اختيار الحالات واحتمال تسرب نصوص حساسة؛ لا يجوز تضمين أسرار أو بيانات مستخدمين.",
+      "sources": [
+        {
+          "title": "Stroq README",
+          "url": "https://github.com/AGGIB/Stroq"
+        },
+        {
+          "title": "Stroq agent integrations",
+          "url": "https://github.com/AGGIB/Stroq/blob/main/docs/AGENTS.md"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "سجل عربي محلي لسلسلة مصدر أمر الوكيل",
+      "problem": "يصعب على المستخدم فهم كيف انتقل نص من ملف أو صفحة إلى إجراء أداة.",
+      "approach": "واجهة RTL محلية تعرض المصدر والحدث والقرار مع تنقيح القيم الحساسة وعدم رفع السجلات.",
+      "stack": "TypeScript + SQLite + React RTL",
+      "steps": [
+        "تعريف مخطط أحداث منقح.",
+        "ربط كل حدث بمصدره المعروف أو إظهار unknown.",
+        "إضافة تنقيح افتراضي للقيم الحساسة.",
+        "عرض خط زمني عربي قابل للتصفية."
+      ],
+      "metric": "نسبة أحداث الأدوات التي لها مصدر واضح دون كشف أسرار.",
+      "difficulty": "متوسط، 1–2 أسبوع تقديرًا",
+      "risks": "السجلات قد تحتوي مسارات أو نصوصًا خاصة؛ يلزم تنقيح وحذف محلي واضح.",
+      "sources": [
+        {
+          "title": "Stroq guide",
+          "url": "https://github.com/AGGIB/Stroq/blob/main/GUIDE.md"
+        },
+        {
+          "title": "Stroq repository",
+          "url": "https://github.com/AGGIB/Stroq"
+        }
+      ]
+    },
+    {
+      "title": "فحص تمهيدي للخصوصية قبل تثبيت hooks",
+      "problem": "قد يفعّل المستخدم hooks دون معرفة الملفات التي ستتغير أو أين تحفظ السجلات.",
+      "approach": "أداة read-only تقرأ الإعدادات وتعرض diff وصلاحيات الملفات وتوافق العميل قبل أي تعديل.",
+      "stack": "TypeScript CLI + JSON Schema + filesystem diff",
+      "steps": [
+        "حصر ملفات إعدادات العملاء المدعومين.",
+        "بناء parser للقراءة فقط.",
+        "عرض diff مقترح دون تطبيقه.",
+        "إظهار مكان السجلات وسياسة الاحتفاظ.",
+        "تصدير تقرير محلي للمراجعة."
+      ],
+      "metric": "نسبة تغييرات الإعدادات التي وُصفت بالكامل قبل التفعيل.",
+      "difficulty": "متوسط، أسبوع إلى أسبوعين تقديرًا",
+      "risks": "تغير مخططات الإعدادات قد يؤدي إلى تقرير ناقص؛ لا ينبغي وصف الفحص بأنه ضمان أمني.",
+      "sources": [
+        {
+          "title": "Stroq package manifest",
+          "url": "https://github.com/AGGIB/Stroq/blob/main/package.json"
+        },
+        {
+          "title": "Stroq agent integrations",
+          "url": "https://github.com/AGGIB/Stroq/blob/main/docs/AGENTS.md"
+        }
+      ]
+    }
+  ],
+  "religious": [],
+  "limitations": [
+    "لا يوجد testEvidence؛ لم أشغّل CLI أو أثبت hooks.",
+    "التكامل يعتمد على أحداث العميل وتنسيق سجلاته؛ التغطية ليست شاملة.",
+    "لا يفرض sandbox أو عزلًا على مستوى نظام التشغيل.",
+    "نتائج 36 حالة من README وليست benchmark مستقلًا.",
+    "سجلات الوكلاء قد تحتوي بيانات حساسة حتى لو كان التخزين محليًا."
+  ],
+  "testEvidence": null,
+  "sources": [
+    {
+      "title": "Stroq repository and README",
+      "url": "https://github.com/AGGIB/Stroq"
+    },
+    {
+      "title": "Stroq guide",
+      "url": "https://github.com/AGGIB/Stroq/blob/main/GUIDE.md"
+    },
+    {
+      "title": "Stroq agent integrations",
+      "url": "https://github.com/AGGIB/Stroq/blob/main/docs/AGENTS.md"
+    },
+    {
+      "title": "Stroq LICENSE",
+      "url": "https://github.com/AGGIB/Stroq/blob/main/LICENSE"
+    },
+    {
+      "title": "Stroq package.json",
+      "url": "https://github.com/AGGIB/Stroq/blob/main/package.json"
+    },
+    {
+      "title": "Stroq v0.30.0 release",
+      "url": "https://github.com/AGGIB/Stroq/releases/tag/v0.30.0"
+    },
+    {
+      "title": "Gitleaks",
+      "url": "https://github.com/gitleaks/gitleaks"
+    },
+    {
+      "title": "TruffleHog",
+      "url": "https://github.com/trufflesecurity/trufflehog"
+    },
+    {
+      "title": "NVIDIA OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell"
+    }
+  ]
+}
