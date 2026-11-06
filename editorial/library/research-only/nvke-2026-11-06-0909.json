@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "runAt": "2026-11-06T09:09:18+03:00",
+  "metricsMeasuredAt": "2026-11-06T06:09:18Z",
+  "siteVisibility": "research-only",
+  "project": {
+    "name": "NVIDIA Kubernetes Engine (NVKE)",
+    "repository": "dsx-ai-factory/nvke",
+    "url": "https://github.com/dsx-ai-factory/nvke",
+    "feedProjectId": null,
+    "feedNewsReferenceId": "e2e23a0367960f2af3",
+    "priority": 53,
+    "license": "Apache-2.0",
+    "archived": false,
+    "disabled": false,
+    "latestRelease": null
+  },
+  "metrics": {
+    "stars": 138,
+    "forks": 69,
+    "openIssues": 150,
+    "pushedAt": "2026-11-06T05:45:04Z",
+    "updatedAt": "2026-11-06T06:18:41Z",
+    "measuredAt": "2026-11-06T06:09:18Z",
+    "source": "GitHub REST API",
+    "timestampAnomaly": "updatedAt is later than measuredAt; not used as activity proof."
+  },
+  "overview": "NVKE مستودع Go متعدد الوحدات يوفر management plane ينشئ عناقيد Kubernetes مستقلة ويدير دورة حياتها على بنية يملكها المشغل. يعتمد مسار Preview الحقيقي على NVIDIA Infra Controller (NICo) عبر CAPNICo؛ أما quickstart المحلي فيستخدم mock-NICo وkind وDocker لمحاكاة العقد. المشروع ليس توزيع Kubernetes جاهزًا، ولا يوفّر عزلًا أمنيًا تلقائيًا لعمليات الوكلاء.",
+  "requirements": [
+    "Apache-2.0؛ لا رسوم ترخيص ذاتي، مع ضرورة مراجعة NOTICE والتبعيات عند إعادة التوزيع.",
+    "لبناء الشيفرة: Go 1.27.3 أو أحدث وGNU Make 4+ واتصال بمستودعات Go العامة.",
+    "للتجربة المحلية: Linux amd64 أو arm64، ست وحدات CPU على الأقل، 12 GiB RAM و100 GiB مساحة حرة، Docker Engine مع BuildKit، virtual TPM module، kind v0.32.0، kubectl، Helm 4، Tilt وأدوات CLI المذكورة في quickstart.",
+    "لا يلزم GPU أو حساب NVIDIA للمحاكاة المحلية. النشر الحقيقي يحتاج عقد إدارة بعناصر TPM 2.0، تخزينًا دائمًا، شبكات وVIP/BGP، صور عقد، registries، وبنية NICo مع أجهزة فعلية.",
+    "لا توجد قائمة أسعار خدمة مُدارة منشورة في المستودع؛ تكلفة النشر الحقيقي تتحدد من العتاد والسحابة والتخزين والشبكات والتشغيل."
+  ],
+  "quickStart": [
+    "اقرأ Preview status وSupported platforms قبل اختيار مسار التشغيل.",
+    "للتجربة فقط، جهز Linux VM مستوفية متطلبات CPU/RAM/disk وDocker وvirtual TPM.",
+    "استنسخ المستودع وابنِ nvkectl حسب quickstart الرسمي.",
+    "أنشئ kind management cluster وجهز CAPNICo وmock-NICo ثم شغّل Tilt.",
+    "أنشئ workload cluster تجريبيًا وتحقق من وصول العقد إلى Ready.",
+    "لا تستخدم بيانات أو أسرارًا حقيقية ولا تعتبر المحاكاة دليلًا على جاهزية الإنتاج."
+  ],
+  "costModel": {
+    "license": "Apache-2.0؛ لا رسوم ترخيص ذاتي.",
+    "local": "البرمجيات مفتوحة المصدر؛ التكلفة جهاز Linux VM وموارد CPU/RAM/disk ووقت التشغيل. لا GPU مطلوب للمحاكاة.",
+    "selfHosted": "لا توجد رسوم منصة مُدارة موثقة في README؛ تتحمل تكلفة خوادم الإدارة وعقد GPU وNICo والتخزين الدائم والشبكة والنسخ الاحتياطي والمراقبة والصيانة.",
+    "cloud": "يمكن وضع العقد على بنية سحابية يختارها المشغل، لكن لا توجد أسعار NVKE Cloud منشورة في المستودع؛ تكلفة المزود والـGPU والتخزين ونقل البيانات متغيرة.",
+    "noPaidServicesUsed": true
+  },
+  "alternatives": [
+    {
+      "name": "Kubernetes Cluster API",
+      "url": "https://cluster-api.sigs.k8s.io/",
+      "note": "لبنات upstream لإدارة دورة حياة العناقيد؛ ليست منصة GPU مُدارة جاهزة بحد ذاتها."
+    },
+    {
+      "name": "Metal3",
+      "url": "https://metal3.io/",
+      "note": "مسار مفتوح لتوفير وإدارة عتاد bare metal؛ بديل جزئي في طبقة provisioning وليس تطابقًا كاملًا."
+    },
+    {
+      "name": "Rancher",
+      "url": "https://www.rancher.com/",
+      "note": "إدارة أساطيل Kubernetes؛ خيار مجاور للمقارنة، وليس بديلًا مطابقًا لمسار NICo/GPU في NVKE."
+    }
+  ],
+  "benchmark": {
+    "claims": [],
+    "testEvidence": null,
+    "note": "لم تُنقل أرقام أداء من README؛ لا يوجد benchmark مستقل أو اختبار شغّلناه في هذه الدورة."
+  },
+  "improvements": [
+    {
+      "title": "مراجع جاهزية Preview قبل إنشاء العناقيد",
+      "problem": "تتوزع مخاطر الإعداد بين API access والمصادقة ونسخ الحالة وإصدارات Kubernetes وNICo والتخزين، وقد لا تظهر للمشغل قبل النشر.",
+      "approach": "CLI يقرأ site spec وإعدادات النشر ويصدر تقرير preflight واضحًا عن القيود المعروفة، دون تعديل ملفات المشغل تلقائيًا.",
+      "stack": "Go + JSON Schema + OpenAPI + OPA/Rego",
+      "steps": [
+        "استخراج الحقول المدعومة من site spec وAPI schema.",
+        "تحويل قيود Preview إلى قواعد تحقق مؤرخة.",
+        "فحص المصادقة وTLS والشبكات والتخزين وإصدارات العقد.",
+        "إصدار تقرير يمنع اعتبار الإعداد آمنًا عند وجود تحذير حرج."
+      ],
+      "metric": "نسبة الإعدادات الخطرة المعروفة التي يكتشفها الفحص قبل إنشاء cluster.",
+      "difficulty": "متوسط؛ تقدير 2–3 أسابيع.",
+      "risks": "قد تتغير قيود Preview بين الإصدارات؛ يجب ربط كل قاعدة بإصدار NVKE وعدم تقديم الفحص كضمان أمني.",
+      "sources": [
+        {
+          "title": "NVKE preview limitations",
+          "url": "https://github.com/dsx-ai-factory/nvke/blob/main/docs/overview/preview-status.md"
+        },
+        {
+          "title": "NVKE supported platforms",
+          "url": "https://github.com/dsx-ai-factory/nvke/blob/main/docs/overview/supported-platforms.md"
+        }
+      ]
+    },
+    {
+      "title": "مختبر تحقق خارجي من النسخ الاحتياطي والاستعادة",
+      "problem": "لا يوفر Preview إجراءً موثقًا لنسخ management plane احتياطيًا أو استعادته، ما يصعّب تقدير RPO/RTO.",
+      "approach": "أداة اختبار معزولة تنشئ بيانات اصطناعية، وتتحقق من snapshots ومفاتيح etcd المشفرة وخطوات الاستعادة دون لمس عناقيد حقيقية.",
+      "stack": "Go + Kubernetes API + S3-compatible storage + Prometheus",
+      "steps": [
+        "إنشاء management cluster تجريبي مع بيانات غير حساسة.",
+        "تحديد ما يجب نسخه من state وetcd encryption key.",
+        "محاكاة فقد عقدة أو volume في بيئة معزولة.",
+        "استعادة الحالة والتحقق من checksums وcluster readiness.",
+        "تسجيل RPO/RTO والفشل مع runbook واضح."
+      ],
+      "metric": "نسبة نجاح الاستعادة وقياس RPO/RTO لكل سيناريو.",
+      "difficulty": "مرتفع؛ تقدير 3–5 أسابيع.",
+      "risks": "اختبار الاستعادة قد يسبب فقد بيانات إن شُغّل على بيئة حقيقية؛ يجب قصره على مختبر اصطناعي وعدم الادعاء بأنه إجراء مدعوم رسميًا.",
+      "sources": [
+        {
+          "title": "NVKE preview status",
+          "url": "https://github.com/dsx-ai-factory/nvke/blob/main/docs/overview/preview-status.md"
+        },
+        {
+          "title": "NVKE installation planning",
+          "url": "https://github.com/dsx-ai-factory/nvke/blob/main/docs/operate/plan-installation.md"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "مختبر محلي لتعليم دورة حياة Kubernetes دون GPU",
+      "problem": "لا يملك كثير من الطلاب عتاد GPU أو NICo لتجربة إدارة عناقيد متعددة.",
+      "approach": "حزمة تعليمية تعتمد mock-NICo وDocker وkind وتعرض خطوات إنشاء workload cluster وحذفه.",
+      "stack": "Go + kind + Docker + Tilt",
+      "steps": [
+        "تثبيت متطلبات Linux VM.",
+        "تشغيل mock-NICo وmanagement cluster.",
+        "إنشاء workload cluster تجريبي.",
+        "عرض حالة العقد وسجل العمليات ثم حذف البيئة."
+      ],
+      "metric": "الوقت اللازم للوصول إلى أول cluster بحالة Ready ونسبة إكمال الخطوات دون تدخل.",
+      "difficulty": "متوسط؛ تقدير أسبوعين.",
+      "risks": "المحاكاة لا تمثل NICo أو GPU أو أعطال الشبكة الفعلية؛ يجب إظهار حدودها.",
+      "sources": [
+        {
+          "title": "NVKE local quickstart",
+          "url": "https://github.com/dsx-ai-factory/nvke/blob/main/docs/get-started/quickstart-local.md"
+        }
+      ]
+    },
+    {
+      "title": "مجموعة توافق لمزودي البنية التحتية لعناقيد GPU",
+      "problem": "تختلف واجهات provisioning بين NICo وموفري bare-metal، ما يصعّب مقارنة دورة حياة العناقيد.",
+      "approach": "اختبارات conformance خارجية تقارن عمليات create/scale/upgrade/delete عبر واجهات Cluster API ومزودين مختلفين.",
+      "stack": "Go + Cluster API + Kubernetes conformance tests",
+      "steps": [
+        "تعريف عقد موحد للعمليات المطلوبة.",
+        "إنشاء بيئات اختبار مع mock provider ومزود حقيقي واحد.",
+        "تنفيذ create وscale وupgrade وdelete على بيانات اصطناعية.",
+        "مقارنة السلوك والأخطاء والوقت بين المزودين."
+      ],
+      "metric": "نسبة نجاح عمليات دورة الحياة المتطابقة عبر المزودين.",
+      "difficulty": "مرتفع؛ تقدير 4–6 أسابيع.",
+      "risks": "قد لا تتطابق إمكانات المزودين؛ لا ينبغي إخفاء الفروق أو تقديم ترتيب دون ظروف قياس موحدة.",
+      "sources": [
+        {
+          "title": "Cluster API documentation",
+          "url": "https://cluster-api.sigs.k8s.io/"
+        },
+        {
+          "title": "Metal3 project",
+          "url": "https://metal3.io/"
+        }
+      ]
+    }
+  ],
+  "religious": [],
+  "limitations": [
+    "Preview؛ APIs والسلوك قابلان للتغيير ولا يوصي المشروع بأحمال الإنتاج.",
+    "لا توجد آلية موثقة لترقية management plane أو نسخ حالته واستعادتها.",
+    "قد يعمل API عبر HTTP والمصادقة معطلة ما لم يضبطها المشغل؛ يجب عدم تعريضه لشبكة غير موثوقة.",
+    "المحاكاة المحلية لا تحتاج GPU ولا تثبت الأداء أو الاعتمادية على عتاد حقيقي.",
+    "لم نشغل المشروع أو نختبره؛ جميع الخطوات وصف للتوثيق الرسمي."
+  ],
+  "testEvidence": null,
+  "sources": [
+    {
+      "title": "NVKE repository and README",
+      "url": "https://github.com/dsx-ai-factory/nvke"
+    },
+    {
+      "title": "Apache-2.0 LICENSE",
+      "url": "https://github.com/dsx-ai-factory/nvke/blob/main/LICENSE"
+    },
+    {
+      "title": "Local mock-NICo quickstart",
+      "url": "https://github.com/dsx-ai-factory/nvke/blob/main/docs/get-started/quickstart-local.md"
+    },
+    {
+      "title": "Preview status and known limitations",
+      "url": "https://github.com/dsx-ai-factory/nvke/blob/main/docs/overview/preview-status.md"
+    },
+    {
+      "title": "Supported platforms and versions",
+      "url": "https://github.com/dsx-ai-factory/nvke/blob/main/docs/overview/supported-platforms.md"
+    },
+    {
+      "title": "Architecture",
+      "url": "https://github.com/dsx-ai-factory/nvke/blob/main/docs/architecture.md"
+    },
+    {
+      "title": "Plan your installation",
+      "url": "https://github.com/dsx-ai-factory/nvke/blob/main/docs/operate/plan-installation.md"
+    }
+  ]
+}
