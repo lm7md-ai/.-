@@ -1,0 +1,231 @@
+{
+  "version": 1,
+  "runAt": "2026-11-06T21:27:02+03:00",
+  "publicationStatus": "research_only_not_published",
+  "repository": "zalando-incubator/agentic-identity-broker",
+  "url": "https://github.com/zalando-incubator/agentic-identity-broker",
+  "feedReference": {
+    "id": "d2e1d4bcf8eebaac40",
+    "kind": "news",
+    "url": "https://github.com/zalando-incubator/agentic-identity-broker",
+    "note": "The current feed reference is a Show HN/news item, not a kind=project card; this dossier is not published as a project card."
+  },
+  "titleAr": "Agentic Identity Broker — وسيط تفويض وهوية لوكلاء الذكاء الاصطناعي",
+  "overview": "مشروع Go مفتوح المصدر من Zalando لإدارة تسجيل الوكلاء وموافقات المستخدم وسلاسل التفويض بين الوكيل والخدمات الخارجية. يخزن رموز مزودي OAuth2 مشفرة ويتيح تحويلها عبر RFC 8693 عند المرور من بوابة، بحيث لا يحتاج الوكيل إلى امتلاك رمز مزود الخدمة نفسه. يتضمن واجهة موافقة وسجل تدقيق وواجهات إدارية، ويمكن دمجه مع Agentgateway وMCP.",
+  "architecture": "خدمة Go ذات منفذين منفصلين لواجهة المستخدم/الوكيل وواجهة الإدارة؛ واجهة React للموافقة؛ تخزين PostgreSQL في النشر الدائم أو مخزن ذاكرة للتقييم؛ تشفير مفاتيح عبر AWS KMS مع DynamoDB في بنية الإنتاج؛ ومكوّن ExtProc اختياري لتبادل الرموز والسياسات عبر بوابة. وثائق المشروع تصف تدفق OAuth2 Token Exchange وتفويضًا قابلًا للإلغاء.",
+  "license": {
+    "name": "MIT",
+    "status": "LICENSE file inspected",
+    "note": "تراخيص الاعتماديات والأصول الخارجية مستقلة؛ لم يُجر تدقيق قانوني لكل اعتماد."
+  },
+  "activity": {
+    "stars": 46,
+    "forks": 6,
+    "openIssues": 73,
+    "pushedAt": "2026-11-06T17:10:56Z",
+    "updatedAt": "2026-11-06T18:19:06Z",
+    "measuredAt": "2026-11-06T21:27:02+03:00",
+    "source": "GitHub REST API repository metadata",
+    "status": "غير مؤرشف ونشط وفق pushedAt؛ المؤشرات لقطة زمنية وليست مقياس جودة."
+  },
+  "requirements": {
+    "localQuickstart": [
+      "Docker مع Docker Compose v2",
+      "Git",
+      "curl",
+      "OpenSSL",
+      "jq",
+      "just"
+    ],
+    "nativeDevelopment": [
+      "Go 1.27.3 حسب go.mod",
+      "Node.js وnpm للواجهة",
+      "just"
+    ],
+    "production": [
+      "Kubernetes 1.25 أو أحدث",
+      "Helm 3.x",
+      "PostgreSQL 12 أو أحدث أو مشغل قاعدة بيانات متوافق",
+      "AWS KMS وDynamoDB عند استخدام بنية التشفير الموصى بها",
+      "IRSA/OIDC وصلاحيات IAM وشبكة تسمح بالوصول إلى KMS وDynamoDB"
+    ],
+    "note": "دليل Quickstart يقول إن المضيف المحلي لا يحتاج Go أو Node أو PostgreSQL أو بيانات اعتماد سحابية عند استخدام Docker Compose؛ هذه المتطلبات تظهر عند التطوير الأصلي أو النشر الإنتاجي."
+  },
+  "quickStart": [
+    "ثبّت Docker Compose v2 وGit وcurl وOpenSSL وjq وjust.",
+    "استنسخ المستودع الرسمي وانتقل إلى مجلده.",
+    "شغّل just compose-up-detached أو اتبع أمر Docker Compose الوارد في Quickstart.",
+    "افتح واجهة الموافقة على localhost:3000 والعميل التجريبي على localhost:9002.",
+    "نفّذ مسار OAuth2 التجريبي وراجع المنح المسجلة من واجهة الإدارة.",
+    "أرسل استدعاء MCP عبر Agentgateway وتحقق من أن البوابة تستبدل رمز الوكيل برمز المزود دون إظهاره للوكيل.",
+    "أوقف البيئة بأمر just compose-down."
+  ],
+  "localVsCloud": {
+    "local": "Docker Compose يهيئ خدمات OAuth2 وMCP وهمية وواجهة موافقة وبيانات تجريبية؛ يستخدم مخزن ذاكرة ومفاتيح محلية مولدة. مناسب لفهم التدفق والتجربة فقط، والبيانات تضيع عند إعادة تشغيل الحاويات.",
+    "production": "وثائق النشر تصف Kubernetes وPostgreSQL وتشفير AWS KMS مع DynamoDB، وحسابات IAM وIRSA، ومنافذ منفصلة للمستخدم والإدارة، ومهمة migrations مستقلة. يجب مراجعة قائمة الإنتاج، أسرار التشفير، النسخ الاحتياطي، المراقبة، وخطة الاستعادة."
+  },
+  "costs": {
+    "local": "لا يتطلب خدمة مدفوعة أو مفاتيح سحابية في Quickstart؛ تبقى كلفة الجهاز والكهرباء فقط.",
+    "cloud": "لا توجد أسعار خدمة مستضافة للمشروع في README. الكلفة التشغيلية تعتمد على Kubernetes/الحوسبة، PostgreSQL، KMS، DynamoDB، الشبكة، المراقبة والنسخ الاحتياطي. يجب حسابها من تسعير مزود البنية في المنطقة المختارة قبل النشر.",
+    "license": "MIT للمشروع نفسه؛ لا يعني ذلك أن الخدمات السحابية أو الاعتماديات الخارجية مجانية."
+  },
+  "alternatives": [
+    {
+      "name": "Keycloak",
+      "url": "https://www.keycloak.org/",
+      "fit": "منصة IAM وOIDC/OAuth عامة؛ قد تحتاج بناء طبقة تفويض للوكلاء وسجل موافقات مخصص."
+    },
+    {
+      "name": "Ory Hydra",
+      "url": "https://www.ory.sh/hydra/",
+      "fit": "خادم OAuth2/OIDC قابل للتركيب؛ ليس بديلًا مباشرًا لكل وظائف خزنة رموز الوكلاء وواجهة الموافقة."
+    },
+    {
+      "name": "ZITADEL",
+      "url": "https://zitadel.com/",
+      "fit": "منصة هوية وإدارة وصول؛ تقارن بحسب متطلبات التفويض وسير عمل الوكلاء."
+    }
+  ],
+  "limitations": [
+    "المشروع في تطوير نشط؛ README يصفه بأنه مفتوح لقياس ملاءمة النهج وليس منتجًا عامًا ناضجًا مضمونًا.",
+    "استخدام Quickstart لمخزن الذاكرة لا يصلح للإنتاج ولا يثبت تحمل الأعطال.",
+    "النشر الإنتاجي يحتاج ضبطًا دقيقًا لمفاتيح التشفير وIAM وPostgreSQL والبوابة وحدود الثقة.",
+    "لم أشغل المشروع أو أراجع كل الشيفرة أو أجري تدقيقًا أمنيًا؛ لا يوجد testEvidence."
+  ],
+  "improvements": [
+    {
+      "title": "حزمة اختبارات سياسات التفويض قبل الإنتاج",
+      "problem": "قد تتغير صلاحيات الوكيل أو نطاق المورد دون اكتشاف أثرها على منح المستخدمين الحاليين.",
+      "approach": "إضافة مجموعة حالات اختبار للـ scopes والموارد وانتهاء الصلاحية والإلغاء، وتشغيلها على إعدادات CEL وOPA قبل النشر.",
+      "stack": "Go + OPA + CEL + Ginkgo",
+      "steps": [
+        "جمع أمثلة منح وصلاحيات من بيئة اختبار.",
+        "إنشاء حالات سماح ورفض وانتهاء وإلغاء.",
+        "تشغيل السياسات على كل تغيير إعداد.",
+        "إظهار فروق النتائج قبل وبعد التعديل.",
+        "حفظ تقرير قابل للمراجعة ضمن CI."
+      ],
+      "metric": "نسبة حالات التفويض غير المصرح بها التي يكتشفها الاختبار قبل النشر.",
+      "difficulty": "متوسط إلى مرتفع تقديرًا.",
+      "risks": "مجموعة حالات ناقصة قد تمنح ثقة زائفة؛ يجب مراجعة السيناريوهات يدويًا.",
+      "sources": [
+        {
+          "title": "Token exchange documentation",
+          "url": "https://github.com/zalando-incubator/agentic-identity-broker/blob/main/docs/concepts/token-exchange.md"
+        },
+        {
+          "title": "OPA documentation",
+          "url": "https://www.openpolicyagent.org/docs/latest/"
+        }
+      ]
+    },
+    {
+      "title": "تصدير سجل تدقيق منقح إلى أنظمة المراقبة",
+      "problem": "تحتاج فرق الأمن إلى تتبع من منح الوكيل صلاحية ومتى استخدمها دون تسريب رموز الوصول أو بيانات حساسة.",
+      "approach": "توحيد أحداث المنح والتجديد والإلغاء ورفض الطلبات في مخطط JSON منقح مع معرفات ارتباط ووجهة OpenTelemetry.",
+      "stack": "Go + OpenTelemetry + JSON + SIEM",
+      "steps": [
+        "تعريف مخطط موحد للأحداث.",
+        "إزالة الرموز والأسرار من كل الحقول.",
+        "ربط الأحداث بمعرف الوكيل والمستخدم والمنحة.",
+        "إرسال الأحداث إلى OTLP مع إعادة المحاولة.",
+        "اختبار اكتمال السجل عند الفشل والإلغاء."
+      ],
+      "metric": "نسبة أحداث التفويض المهمة المسجلة دون وجود أسرار في السجل.",
+      "difficulty": "متوسط تقديرًا.",
+      "risks": "الإفراط في التسجيل قد يكشف بيانات شخصية؛ يجب تطبيق تقليل البيانات وفترات احتفاظ واضحة.",
+      "sources": [
+        {
+          "title": "Repository README and audit logging overview",
+          "url": "https://github.com/zalando-incubator/agentic-identity-broker"
+        },
+        {
+          "title": "OpenTelemetry documentation",
+          "url": "https://opentelemetry.io/docs/"
+        }
+      ]
+    },
+    {
+      "title": "فاحص جاهزية نشر عربي لقائمة الإنتاج",
+      "problem": "تتوزع متطلبات النشر بين Kubernetes وPostgreSQL وKMS وDynamoDB وIRSA، وقد يغفل المشغل شرطًا حرجًا.",
+      "approach": "أداة قراءة فقط تتحقق من القيم والإعدادات المطلوبة وتصدر تقريرًا عربيًا قبل النشر دون تعديل الموارد.",
+      "stack": "Go + YAML + JSON Schema + Helm",
+      "steps": [
+        "قراءة قيم Helm والإعدادات.",
+        "التحقق من وجود قاعدة البيانات وحسابات الترحيل.",
+        "مراجعة إعدادات KMS وDynamoDB وIRSA.",
+        "إظهار التحذيرات الحرجة مع مصدرها.",
+        "تصدير تقرير جاهزية قابل للمراجعة."
+      ],
+      "metric": "عدد متطلبات الإنتاج التي يكتشفها الفاحص قبل أول نشر.",
+      "difficulty": "متوسط تقديرًا.",
+      "risks": "قد تتغير الوثائق والإعدادات؛ يجب ربط الفحوص بإصدار المشروع وتجنب فحوص سطحية.",
+      "sources": [
+        {
+          "title": "Production deployment checklist",
+          "url": "https://github.com/zalando-incubator/agentic-identity-broker/blob/main/docs/operations/deployment-checklist.md"
+        },
+        {
+          "title": "Kubernetes deployment guide",
+          "url": "https://github.com/zalando-incubator/agentic-identity-broker/blob/main/docs/deployment/kubernetes.md"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "لوحة عربية لمراجعة موافقات وكلاء MCP",
+      "problem": "يصعب على مسؤول النظام فهم الوكلاء الذين يملكون وصولًا إلى خدمات مختلفة ومدة كل منحة.",
+      "approach": "واجهة مستقلة تعرض المستخدم والوكيل والخدمة والصلاحيات وتاريخ المنح والإلغاء مع تصدير تقرير.",
+      "stack": "React + TypeScript + Go API",
+      "steps": [
+        "قراءة واجهات الإدارة الموثقة.",
+        "عرض قائمة الوكلاء والخدمات والمنح.",
+        "إظهار الصلاحيات وتواريخ الانتهاء.",
+        "إضافة مرشحات ومقارنة التغييرات.",
+        "اختبار العرض على بيانات وهمية فقط."
+      ],
+      "metric": "زمن العثور على منحة محددة ومراجعة صلاحياتها.",
+      "difficulty": "متوسط تقديرًا.",
+      "risks": "الواجهة الإدارية عالية الحساسية؛ يجب حماية الوصول وعدم تخزين الرموز.",
+      "sources": [
+        {
+          "title": "Agentic Identity Broker README",
+          "url": "https://github.com/zalando-incubator/agentic-identity-broker"
+        },
+        {
+          "title": "Quickstart",
+          "url": "https://github.com/zalando-incubator/agentic-identity-broker/blob/main/docs/get-started/index.md"
+        }
+      ]
+    },
+    {
+      "title": "مدقق أقل صلاحية لوكلاء المؤسسات",
+      "problem": "قد تطلب أدوات الوكلاء نطاقات OAuth2 أوسع من المهمة التي تنفذها.",
+      "approach": "تحليل ملفات تعريف الوكلاء والموارد المطلوبة واقتراح تقليص scopes مع تقرير فروقات قابل للمراجعة.",
+      "stack": "Python + OPA + OAuth2 metadata",
+      "steps": [
+        "تحديد صيغة وصف الوكيل والصلاحيات.",
+        "استخراج النطاقات المطلوبة لكل أداة.",
+        "مقارنة النطاقات مع المهام المعلنة.",
+        "اقتراح نطاقات أقل دون تطبيق تلقائي.",
+        "إنشاء تقرير يراجعه مسؤول الأمن."
+      ],
+      "metric": "نسبة النطاقات التي يمكن تقليصها دون كسر حالات الاستخدام المختبرة.",
+      "difficulty": "متوسط إلى مرتفع تقديرًا.",
+      "risks": "تقليص خاطئ قد يعطل المهام؛ لا تطبق التغييرات تلقائيًا.",
+      "sources": [
+        {
+          "title": "Delegation and consent concepts",
+          "url": "https://github.com/zalando-incubator/agentic-identity-broker/blob/main/docs/concepts/delegation-and-consent.md"
+        },
+        {
+          "title": "OAuth 2.0 Token Exchange RFC 8693",
+          "url": "https://www.rfc-editor.org/rfc/rfc8693"
+        }
+      ]
+    }
+  ],
+  "religious": [],
+  "developerIntegrationNotes": "بحث غير منشور. لا تنشئ بطاقة مشروع في الموقع لأن العنصر الحالي في feed.json من kind=news وليس kind=project. إذا ظهر لاحقًا عنصر مشروع مطابق، اعرض overview وrequirements وquickStart والتكلفة المحلية/السحابية والبدائل والتحذيرات الأمنية، مع إبقاء testEvidence فارغًا ما لم تُنفذ اختبارات فعلية."
+}
