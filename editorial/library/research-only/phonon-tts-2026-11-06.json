@@ -1,0 +1,193 @@
+{
+  "version": 1,
+  "runAt": "2026-11-06T09:09:28.818Z",
+  "reviewedAt": "2026-11-06T09:09:28.818Z",
+  "repository": "gradium-ai/xn-ptts",
+  "title": "Phonon TTS / xn-ptts — محرك استدلال محلي لتحويل النص إلى كلام",
+  "url": "https://github.com/gradium-ai/xn-ptts",
+  "feedReference": {
+    "id": "c65c7708e93995ca45",
+    "kind": "news",
+    "url": "https://huggingface.co/blog/phonon-tts"
+  },
+  "siteVisibility": "research-only — غير منشور كبطاقة مشروع؛ مرجع Feed الحالي خبر لا عنصر kind=project.",
+  "overview": "محرك Rust مفتوح المصدر لتشغيل Phonon TTS محليًا على الحواسيب والهواتف والمتصفح والخدمات الذاتية الاستضافة. لا يحتاج PyTorch في مسار ptts الأصلي، ويوفر واجهات CLI وPython وRust وC وSwift وAndroid وWebAssembly. يدعم CPU وGPU ومسارات NPU مثل Core ML وSnapdragon QNN، مع بث صوتي تدريجي. المشروع هو طبقة الاستدلال والتكامل؛ أوزان النماذج لها تراخيص منفصلة.",
+  "requirements": "سطح المكتب: ملفات تنفيذية جاهزة لـLinux x64/ARM64 وmacOS وWindows؛ لا يلزم Python أو Rust عند استخدام الملف الجاهز، ويُنزل النموذج الافتراضي ويُخزّن في أول تشغيل. Python: CPython 3.9+ وحزمة ptts. المتصفح: WebAssembly SIMD ويجب تقديم التطبيق عبر HTTPS أو localhost؛ حزمة المتصفح لا تعمل في Node.js. Android QNN: Android 12+ وARM64 ودعم QNN HTP وحزمة نموذج مترجمة لشريحة الهاتف؛ لا يوجد CPU fallback تلقائي، وحزمة AAR لم تُنشر بعد في Maven Central. بديل Android CPU يتطلب Rust وAndroid NDK. خادم Docker CPU يدعم amd64 وarm64.",
+  "quickStart": "سطح المكتب: `uvx ptts --lang en \"Hello from Phonon.\" -o speech.wav`؛ أو تثبيت الحزمة الجاهزة ووضع ptts على PATH. Python: `python -m pip install ptts` ثم `tts = ptts.TTS(lang=\"en\"); tts.save(\"speech.wav\", \"Hello from Phonon.\")`. أول تشغيل ينزل النموذج الافتراضي Phonon 31m ويخزنه. لم يُنفذ أي من هذه الأوامر في هذه المراجعة.",
+  "costModel": "الاستدلال المحلي لا يفرض رسوم API لكل طلب؛ التكلفة العملية هي تنزيل الأوزان والتخزين واستهلاك CPU/GPU/NPU والطاقة وصيانة التطبيق. تصميم الأصوات أو استنساخها عبر Gradium Studio خدمة اختيارية تحتاج حسابًا ومفتاح API؛ لم يظهر سعر رقمي عام في المصادر. يذكر إعلان Gradium أن تسعير الاستخدام التجاري لنماذج 40m يعتمد على عدد المستخدمين، لكن أوزان 40m نفسها CC BY-NC 4.0 وغير تجارية؛ نموذج 31m الإنجليزي Apache-2.0.",
+  "localVsCloud": "المسار الأساسي محلي بالكامل بعد تنزيل النموذج، ولا يحتاج خادمًا أو شبكة أثناء التوليد. يمكن تشغيل خادم محلي داخل Docker بواجهة OpenAI-compatible. Gradium Studio اختياري لإعداد الأصوات، ويحتاج اتصالًا وحسابًا؛ لا تخلط بين خدمة إعداد الصوت والاستدلال المحلي.",
+  "license": {
+    "repositoryApi": "Apache-2.0",
+    "repositoryFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ],
+    "repositorySummary": "ملفات الشيفرة تتضمن Apache-2.0 وMIT؛ راجع الملف الذي يغطي كل مكوّن قبل إعادة التوزيع.",
+    "modelWeights": [
+      {
+        "model": "Phonon 31m",
+        "languages": [
+          "English"
+        ],
+        "license": "Apache-2.0",
+        "commercialUse": "مسموح وفق ترخيص النموذج"
+      },
+      {
+        "model": "Phonon 40m",
+        "languages": [
+          "English",
+          "French",
+          "German",
+          "Spanish",
+          "Portuguese"
+        ],
+        "license": "CC BY-NC 4.0",
+        "commercialUse": "غير تجاري فقط"
+      }
+    ],
+    "warning": "ترخيص المستودع لا يحل محل ترخيص الأوزان؛ افحص كل checkpoint على حدة."
+  },
+  "activity": {
+    "archived": false,
+    "disabled": false,
+    "language": "Rust",
+    "defaultBranch": "main",
+    "stars": 448,
+    "forks": 50,
+    "openIssues": 13,
+    "pushedAt": "2026-11-06T08:58:07Z",
+    "updatedAt": "2026-11-06T08:58:09Z",
+    "measuredAt": "2026-11-06T09:09:28.818Z",
+    "sourceApiUrl": "https://api.github.com/repos/gradium-ai/xn-ptts"
+  },
+  "alternatives": [
+    {
+      "repository": "hexgrad/kokoro",
+      "url": "https://github.com/hexgrad/kokoro",
+      "note": "بديل TTS مفتوح المصدر للمقارنة؛ لم تُجرَ مقارنة أداء مستقلة في هذه المراجعة."
+    },
+    {
+      "repository": "OHF-Voice/piper1-gpl",
+      "url": "https://github.com/OHF-Voice/piper1-gpl",
+      "note": "بديل محلي خفيف؛ راجع GPL-3.0 ومتطلبات كل نموذج قبل الاختيار."
+    },
+    {
+      "repository": "kyutai/pocket-tts",
+      "url": "https://github.com/kyutai/pocket-tts",
+      "note": "مشروع ذو صلة وسلف تقني مذكور في مقال Phonon؛ ليس مقارنة أداء مباشرة."
+    }
+  ],
+  "improvements": [
+    {
+      "title": "حزمة تحقق لتغطية العربية وجودة النطق المحلي",
+      "problem": "لا تتضمن النماذج الجاهزة العربية، رغم أن التطبيقات العربية تحتاج نطقًا مضبوطًا للأسماء والأرقام والتواريخ.",
+      "approach": "بناء مجموعة تقييم عربية مرخصة بموافقات واضحة، مع فصل تقييم الفصحى واللهجات وقياس WER وMOS وزمن بدء الصوت، ثم توثيق ما إذا كان يلزم نموذج مخصص.",
+      "stack": "Python, torchaudio, jiwer, datasets, ptts, JSONL",
+      "steps": [
+        "حدد نطاق اللغة واللهجة والسيناريوهات قبل جمع البيانات.",
+        "تحقق من تراخيص التسجيلات وموافقات المتحدثين.",
+        "أنشئ مجموعة نصوص مرجعية للأسماء والأرقام والتواريخ.",
+        "قارن المخرجات بمقيّم بشري ومقاييس آلية مع توثيق حدودها.",
+        "انشر تقرير تغطية لا يخلط جودة النموذج بسلامة النص."
+      ],
+      "metric": "WER وMOS وزمن أول إطار صوتي، مفصلة حسب اللهجة ونوع النص.",
+      "difficulty": "مرتفع — تقدير بحثي؛ يتطلب بيانات عربية مرخصة وتقييمًا بشريًا.",
+      "risks": "حقوق التسجيلات، تحيز اللهجات، أخطاء نطق النصوص الحساسة، وعدم كفاية WER وحده لجودة الصوت.",
+      "sources": [
+        {
+          "title": "Phonon TTS language coverage",
+          "url": "https://huggingface.co/blog/phonon-tts"
+        },
+        {
+          "title": "xn-ptts README",
+          "url": "https://github.com/gradium-ai/xn-ptts/blob/main/README.md"
+        }
+      ]
+    },
+    {
+      "title": "فاحص توافق Android QNN قبل دمج النموذج",
+      "problem": "مسار Snapdragon يحتاج Android 12+ وARM64 وQNN HTP وحزمة مترجمة لشريحة محددة، ولا يقدم CPU fallback تلقائيًا.",
+      "approach": "أداة فحص قبل التشغيل تعرض توافق الجهاز والحزمة وتمنع إظهار دعم NPU إذا لم تتوفر الشروط، مع تقرير بديل لمسار CPU اليدوي.",
+      "stack": "Kotlin, Android NDK, QNN, Rust FFI, JSON",
+      "steps": [
+        "اجمع معلومات ABI وإصدار Android وقدرات QNN دون صلاحيات إضافية.",
+        "تحقق من وجود HTP runtime وحزمة النموذج المطابقة.",
+        "افصل حالات عدم الدعم عن أخطاء التهيئة.",
+        "اعرض خيار CPU فقط إذا بُنيت مكتبة CPU وثُبتت متطلباتها.",
+        "أضف اختبارات توافق على أجهزة متعددة قبل إصدار التطبيق."
+      ],
+      "metric": "نسبة اكتشاف حالات عدم التوافق قبل التشغيل، ومعدل فشل التهيئة بعد الفحص.",
+      "difficulty": "متوسط إلى مرتفع — تقدير.",
+      "risks": "اختلاف تعريفات الشركات وواجهات QNN بين الأجهزة وإصدارات Android.",
+      "sources": [
+        {
+          "title": "xn-ptts Android/QNN guide",
+          "url": "https://github.com/gradium-ai/xn-ptts/tree/main/qnn"
+        },
+        {
+          "title": "xn-ptts README",
+          "url": "https://github.com/gradium-ai/xn-ptts/blob/main/README.md"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "قارئ وصول ميسر يعمل دون اتصال",
+      "problem": "تطبيقات القراءة تحتاج نطقًا منخفض التأخير دون إرسال النصوص الشخصية إلى السحابة.",
+      "approach": "تطبيق محلي يقرأ نصوص المستخدم باللغات المدعومة ويعرض تحكمًا بالسرعة والتوقف والتخزين المحلي.",
+      "stack": "Kotlin أو Swift, ptts, local document parser",
+      "steps": [
+        "حدد اللغة المدعومة في النموذج قبل قبول النص.",
+        "أضف استيراد ملفات محلية مع تأكيد المستخدم.",
+        "شغّل التوليد في worker منفصل مع بث تدريجي.",
+        "أتح التحكم في السرعة والإيقاف وحذف الملفات المؤقتة.",
+        "اختبر الأداء وإتاحة الاستخدام على أجهزة منخفضة الموارد."
+      ],
+      "metric": "زمن بدء الصوت، معدل إكمال القراءة، واستهلاك الذاكرة.",
+      "difficulty": "متوسط — تقدير.",
+      "risks": "عدم دعم العربية في النماذج الجاهزة، وحقوق النصوص المستوردة، واستهلاك البطارية.",
+      "sources": [
+        {
+          "title": "xn-ptts README",
+          "url": "https://github.com/gradium-ai/xn-ptts/blob/main/README.md"
+        },
+        {
+          "title": "Phonon TTS launch article",
+          "url": "https://huggingface.co/blog/phonon-tts"
+        }
+      ]
+    },
+    {
+      "title": "خدمة إعلانات صوتية محلية لـHome Assistant",
+      "problem": "الأنظمة المنزلية قد تحتاج إعلانًا صوتيًا دون إرسال كل نص إلى مزود سحابي.",
+      "approach": "تشغيل ptts-openai-server محليًا وربطه بأتمتة Home Assistant مع قائمة أصوات ثابتة ومراجعة النص قبل الإرسال.",
+      "stack": "Docker, ptts-openai-server, Home Assistant, REST",
+      "steps": [
+        "شغّل الخدمة على شبكة محلية مقيدة.",
+        "اربط endpoint المحلي بإجراء صوتي في Home Assistant.",
+        "استخدم أصواتًا مرخصة ومثبتة مسبقًا.",
+        "أضف قائمة سماح للأحداث والنصوص التي يمكن نطقها.",
+        "راقب زمن الاستجابة والموارد وأوقف الخدمة عند عدم الحاجة."
+      ],
+      "metric": "زمن أول صوت ونسبة نجاح الإعلانات دون اتصال.",
+      "difficulty": "متوسط — تقدير.",
+      "risks": "حماية endpoint المحلي، واستهلاك الموارد، وأخطاء النطق في التنبيهات المهمة.",
+      "sources": [
+        {
+          "title": "xn-ptts Docker/API quickstart",
+          "url": "https://github.com/gradium-ai/xn-ptts/blob/main/README.md"
+        },
+        {
+          "title": "Home Assistant Phonon example",
+          "url": "https://github.com/gradium-ai/phonon-home-assistant"
+        }
+      ]
+    }
+  ],
+  "religious": [],
+  "limitations": "العربية ليست ضمن النماذج الجاهزة؛ يمكن أن توفر Gradium تدريبًا مخصصًا بطلب منفصل، لكن ذلك ليس تنزيلًا عامًا متاحًا في هذا المستودع. نموذج 40m غير تجاري ومقيّد بشروط وصول؛ لا تخلط ترخيص الشيفرة بترخيص الأوزان. مسار Android QNN خاص بأجهزة وشريحة مدعومة ولا يملك CPU fallback تلقائيًا. أرقام السرعة في README مقاسة على أجهزة محددة ومن إعداد المورد؛ لم نعد إنتاجها. لم تُشغّل اختبارات المشروع أو أمثلته.",
+  "testStatus": "not_run",
+  "testEvidence": null,
+  "developerHandoff": "إذا عُرض في مكتبة نَبض لاحقًا، يجب أن يحمل شارة «بحث فقط — غير منشور»، وأن يفصل ترخيص الشيفرة عن ترخيص كل نموذج، ويعرض اللغات المدعومة بوضوح، ومتطلبات QNN الدقيقة، والتكاليف المحلية مقابل خدمة إعداد الأصوات، وبدائل Kokoro وPiper. لا تضف زر تشغيل أو نشر، ولا شارة Tested. لا تضعه كبطاقة مشروع عامة لأن Feed الحالي يحتوي مرجع خبر فقط."
+}
