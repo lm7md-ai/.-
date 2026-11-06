@@ -1,0 +1,293 @@
+{
+  "version": 1,
+  "runAt": "2026-11-07T02:47:03+03:00",
+  "metricsMeasuredAt": "2026-11-06T23:47:03Z",
+  "measurementSource": "GitHub REST API metadata and upstream README/license review; stars are cumulative.",
+  "publicationStatus": "research_only_update_not_public_project_card",
+  "projectsReviewed": 8,
+  "projects": [
+    {
+      "repository": "patchy631/ai-engineering-hub",
+      "stars": 41289,
+      "forks": 6593,
+      "openIssues": 136,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "requirements": "مستودع أمثلة متعدد؛ المتطلبات تختلف لكل مشروع داخله وقد تحتاج بعض الأمثلة مفتاح API أو موارد حوسبة.",
+      "quickStart": "استنسخ المستودع، ابدأ بخريطة الطريق، اختر مثالًا مبتدئًا واتبع README الخاص به داخل بيئة مستقلة.",
+      "localVsCloud": "أمثلة كثيرة محلية؛ بعضها يتصل بمزودي نماذج أو قواعد بيانات مستضافة.",
+      "costs": "المستودع مجاني؛ API والاستضافة وGPU قد تفرض تكلفة.",
+      "alternatives": "التوثيق الرسمي لمزودي النماذج ومناهج Hugging Face التعليمية.",
+      "siteVisibility": "بطاقة feed واحدة بالمعرف fe0e6bfdbdd5822139",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "testEvidence": null,
+      "sources": [
+        {
+          "title": "Official repository README and LICENSE",
+          "url": "https://github.com/patchy631/ai-engineering-hub"
+        }
+      ]
+    },
+    {
+      "repository": "googleapis/python-genai",
+      "stars": 4057,
+      "forks": 1059,
+      "openIssues": 390,
+      "archived": false,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-06T23:17:46Z",
+      "requirements": "Python ومفتاح Gemini Developer API أو إعداد مشروع وموقع في Gemini Enterprise Agent Platform؛ راجع تحذير README بشأن تغييرات AFC القادمة.",
+      "quickStart": "ثبّت google-genai، أنشئ Client، ثم استخدم models.generate_content وفق التوثيق.",
+      "localVsCloud": "SDK محلي لكن الاستدلال عبر خدمات Google السحابية.",
+      "costs": "التكلفة حسب استخدام Gemini API أو Google Cloud والحصص.",
+      "alternatives": "REST API مباشرة أو SDK رسمي لمزود آخر.",
+      "siteVisibility": "بحث مستقل؛ لا بطاقة feed مطابقة",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "testEvidence": null,
+      "sources": [
+        {
+          "title": "Official repository README and LICENSE",
+          "url": "https://github.com/googleapis/python-genai"
+        }
+      ]
+    },
+    {
+      "repository": "Millillion/lasm",
+      "stars": 102,
+      "forks": 7,
+      "openIssues": 6,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-11-06T16:00:40Z",
+      "requirements": "Node.js 24+ وLean 4.35.0 وnpm.",
+      "quickStart": "npm create @lasm@latest my-app -- --template hono ثم npm install وnpm run dev.",
+      "localVsCloud": "تشغيل محلي عبر Node/Bun/Deno مع أهداف serverless؛ CI لا يعني نشرًا فعليًا.",
+      "costs": "المشروع مجاني؛ استضافة الوظائف قد تفرض رسومًا.",
+      "alternatives": "Rust wasm-bindgen أو AssemblyScript أو JavaScript/TypeScript.",
+      "siteVisibility": "بحث مستقل؛ لا بطاقة feed مطابقة",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "testEvidence": null,
+      "sources": [
+        {
+          "title": "Official repository README and LICENSE",
+          "url": "https://github.com/Millillion/lasm"
+        }
+      ]
+    },
+    {
+      "repository": "microsoft/markitdown",
+      "stars": 194202,
+      "forks": 14609,
+      "openIssues": 812,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-11-06T23:30:29Z",
+      "requirements": "Python 3.10–3.14 وإضافات اختيارية حسب الصيغة؛ انتبه لصلاحيات I/O للعملية.",
+      "quickStart": "ثبّت markitdown[all] ثم markitdown file.pdf > document.md.",
+      "localVsCloud": "التحويل الأساسي محلي؛ بعض وظائف الصور والصوت والإضافات تتصل بخدمات ويب أو Azure.",
+      "costs": "التحويل المحلي مجاني؛ الخدمات الخارجية قد تفرض تكلفة.",
+      "alternatives": "Pandoc وApache Tika وUnstructured.",
+      "siteVisibility": "بحث مستقل؛ لا بطاقة feed مطابقة",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "testEvidence": null,
+      "sources": [
+        {
+          "title": "Official repository README and LICENSE",
+          "url": "https://github.com/microsoft/markitdown"
+        }
+      ]
+    },
+    {
+      "repository": "yc-software/minecraft-agent-harness",
+      "stars": 154,
+      "forks": 13,
+      "openIssues": 1,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "requirements": "Node 22.19+ وMinecraft Java 1.21.6 وJava 21 لخادم التطوير ومفتاح مزود نموذج.",
+      "quickStart": "npm ci، إعداد .env، npm run server، ثم npm start -- --objective داخل عالم اختبار خاص.",
+      "localVsCloud": "Paper محلي؛ صندوق الوكيل Docker أو E2B أو مجلد محلي.",
+      "costs": "الشفرة مجانية؛ API وE2B والاستضافة قد تفرض تكلفة.",
+      "alternatives": "Mineflayer مباشرة أو وكيل مخصص أبسط.",
+      "siteVisibility": "بحث مستقل؛ لا بطاقة feed مطابقة",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "testEvidence": null,
+      "sources": [
+        {
+          "title": "Official repository README and LICENSE",
+          "url": "https://github.com/yc-software/minecraft-agent-harness"
+        }
+      ]
+    },
+    {
+      "repository": "NVIDIA/OpenShell",
+      "stars": 21222,
+      "forks": 2078,
+      "openIssues": 630,
+      "archived": false,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-06T23:10:05Z",
+      "requirements": "Linux أو macOS Apple Silicon أو Windows عبر WSL2 تجريبي؛ Docker/Podman أو افتراضية المضيف.",
+      "quickStart": "اتبع المثبت الرسمي، أنشئ sandbox ثم أكمل Run Your First Agent.",
+      "localVsCloud": "العزل محلي على المضيف؛ استدعاءات النموذج حسب المزود.",
+      "costs": "المشروع مفتوح؛ موارد المضيف ومزود النموذج قد تفرض تكلفة.",
+      "alternatives": "عزل Docker/Podman يدويًا أو صناديق سحابية، مع اختلاف السياسات.",
+      "siteVisibility": "بحث مستقل؛ سجل الخبر السابق منقضٍ",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "testEvidence": null,
+      "sources": [
+        {
+          "title": "Official repository README and LICENSE",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        }
+      ]
+    },
+    {
+      "repository": "pydantic/pydantic-ai",
+      "stars": 21063,
+      "forks": 3118,
+      "openIssues": 1792,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-11-06T23:41:04Z",
+      "requirements": "Python وبيئة حزم وتكامل مزود؛ أضف بيانات الاعتماد للنماذج السحابية.",
+      "quickStart": "ثبّت pydantic-ai، أنشئ Agent ثم نفّذ run() وفق المثال الرسمي.",
+      "localVsCloud": "منطق الوكيل محلي أو على خادم؛ مكان النموذج يعتمد على المزود.",
+      "costs": "الحزمة مجانية؛ استدلال API والمراقبة الاختيارية قد تفرض تكلفة.",
+      "alternatives": "LangGraph وLlamaIndex Workflows وOpenAI Agents SDK.",
+      "siteVisibility": "بحث مستقل؛ لا بطاقة feed مطابقة",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "testEvidence": null,
+      "sources": [
+        {
+          "title": "Official repository README and LICENSE",
+          "url": "https://github.com/pydantic/pydantic-ai"
+        }
+      ]
+    },
+    {
+      "repository": "astral-sh/uv",
+      "stars": 91712,
+      "forks": 3769,
+      "openIssues": 3046,
+      "archived": false,
+      "license": "MIT OR Apache-2.0",
+      "pushedAt": "2026-11-06T20:15:47Z",
+      "requirements": "Windows/macOS/Linux؛ المثبت المستقل لا يتطلب Python أو Rust مسبقًا.",
+      "quickStart": "ثبّت uv ثم uv init وuv add وuv run.",
+      "localVsCloud": "أداة محلية تحتاج الإنترنت لتنزيل الحزم ولا تتطلب خدمة سحابية دائمة.",
+      "costs": "مجانية؛ قد توجد رسوم شبكة أو مستودعات خاصة.",
+      "alternatives": "pip+venv وPoetry وPDM وConda.",
+      "siteVisibility": "بحث مستقل؛ لا بطاقة feed مطابقة",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "testEvidence": null,
+      "sources": [
+        {
+          "title": "Official repository README and LICENSE",
+          "url": "https://github.com/astral-sh/uv"
+        }
+      ]
+    }
+  ],
+  "feedProjectAudit": {
+    "currentProjectCards": 100,
+    "exactEditorialMatches": 100,
+    "missingEditorial": 0,
+    "newProjectsAdded": 0,
+    "previousEightExactFeedCard": 1,
+    "previousEightResearchOnly": 7,
+    "feedId": "fe0e6bfdbdd5822139"
+  },
+  "librarySummary": {
+    "structuredCatalogProjects": 31,
+    "archived": 2,
+    "active": 29,
+    "exactFeedMatches": 4,
+    "researchOnly": 27,
+    "licenseNeedsUpstreamVerification": 8,
+    "originalMetricsCapturedAt": "2026-10-24T10:38:36.869Z",
+    "note": "مؤشرات الكتالوج الأساسي ما زالت لقطة 24 أكتوبر؛ تم تحديث قياس المشاريع الثمانية فقط."
+  },
+  "ideaAudit": {
+    "previousIdeas": 55,
+    "preserved": 55,
+    "reordered": 0,
+    "newIdeas": 0,
+    "testEvidence": null
+  },
+  "topThree": [
+    {
+      "title": "محرر مرئي عربي لسياسات NVIDIA OpenShell",
+      "problem": "صعوبة مراجعة YAML وسياسات الملفات والشبكة.",
+      "approach": "واجهة تقرأ المخطط الرسمي وتعرض التحذيرات مع إبقاء YAML الخام قابلًا للتحرير.",
+      "stack": "TypeScript + React + YAML Schema",
+      "steps": [
+        "قراءة schema الرسمي.",
+        "عرض السياسات.",
+        "التحقق محليًا.",
+        "إظهار الفروقات والتحذيرات."
+      ],
+      "metric": "نسبة ملفات السياسات التي تجتاز التحقق دون فقد حقول.",
+      "difficulty": "متوسط تقديرًا",
+      "risks": "قد تخفي الواجهة تفاصيل دقيقة.",
+      "sources": [
+        {
+          "title": "OpenShell policy schema",
+          "url": "https://docs.nvidia.com/openshell/latest/how-it-works/policies/schema"
+        }
+      ]
+    },
+    {
+      "title": "مجموعة تقييم عربية لوكلاء Pydantic AI",
+      "problem": "إجابات عربية قد تبدو سليمة لكنها غير صحيحة أو غير مسندة.",
+      "approach": "Benchmark يقيس الصحة والإسناد واستخدام الأدوات والامتناع.",
+      "stack": "Python + Pydantic Evals + pytest + JSONL",
+      "steps": [
+        "اختيار مصادر.",
+        "إنشاء حالات نجاح وفشل.",
+        "تعريف المقاييس.",
+        "مقارنة الإصدارات."
+      ],
+      "metric": "الصحة والإسناد والامتناع.",
+      "difficulty": "متوسط إلى مرتفع تقديرًا",
+      "risks": "تحيز اللهجات والمقيم.",
+      "sources": [
+        {
+          "title": "Pydantic AI evaluations",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/evals.md"
+        }
+      ]
+    },
+    {
+      "title": "مراجع توافق إصدارات Google Gen AI Python SDK",
+      "problem": "تعارض الإصدارات والاعتماديات بعد الترقية.",
+      "approach": "أداة تقرأ pyproject.toml وتقارن القيود دون تعديل المشروع.",
+      "stack": "Python + tomllib + packaging + JSON",
+      "steps": [
+        "قراءة نسخة SDK.",
+        "استخراج المتطلبات.",
+        "مقارنة القيود.",
+        "إصدار تقرير."
+      ],
+      "metric": "دقة اكتشاف التعارضات.",
+      "difficulty": "متوسطة تقديرًا",
+      "risks": "الاعتماديات غير المباشرة.",
+      "sources": [
+        {
+          "title": "Google Gen AI SDK pyproject",
+          "url": "https://github.com/googleapis/python-genai/blob/main/pyproject.toml"
+        }
+      ]
+    }
+  ]
+}
