@@ -1,0 +1,235 @@
+{
+  "version": 1,
+  "repository": "allenai/ToyBlocks",
+  "url": "https://github.com/allenai/ToyBlocks",
+  "status": "research_only_not_published",
+  "feedMembership": {
+    "inProjectFeed": false,
+    "relatedNewsId": "5a90caffb2c87d2e6e",
+    "reason": "The exact feed entry is kind=news and refers to the ToyBlocks announcement; no project-card entry exists. No replacement feed ID was generated."
+  },
+  "reviewedAt": "2026-11-06T18:13:25+03:00",
+  "metrics": {
+    "stars": 1,
+    "forks": 1,
+    "openIssues": null,
+    "commits": 69,
+    "archived": false,
+    "disabled": false,
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-06T02:24:59Z",
+    "measuredAt": "2026-11-06T15:13:25Z",
+    "metricSource": "GitHub repository page and latest commit metadata; open issue count not captured."
+  },
+  "license": {
+    "mainRepository": "Apache-2.0",
+    "notes": "The README explicitly states that curobo, maniflow-tb, molmo2, agentic_robotics submodules and downloaded assets have their own licenses. The Poly Haven HDRI pool is CC0; the Laval Indoor HDR Dataset is research-use and requires a request."
+  },
+  "overview": "ToyBlocks من AllenAI إطار محاكاة مفتوح لتعلم الروبوتات وتقييمها، مبني على Isaac Sim/Isaac Lab، ويضع ذراعًا روبوتية وكتلًا على طاولة ضمن نطاق مضبوط. يصف المهام بأهداف PDDL، ويولد مشاهد وعروضًا تدريبية آليًا، ثم يسجل البيانات بصيغة LeRobot. يدعم تقييم السياسات في حلقة مغلقة، واستخدام مكوّن مرجعي (oracle) لعزل فشل التخطيط عالي المستوى عن فشل التنفيذ الحركي منخفض المستوى. ليس منتجًا سحابيًا مستضافًا ولا محاكيًا عامًا لكل بيئات الروبوتات.",
+  "requirements": "المسار الموثق يتطلب Linux x86_64 مع NVIDIA GPU وتعريف يدعم CUDA 12.8 (570 أو أحدث)، وPython 3.11 وuv وGit HTTPS وtmux. يعتمد التثبيت الكامل على Isaac Sim 5.1/Isaac Lab 2.3.2 وPyTorch CUDA 12.8 وcuRobo وLeRobot، مع submodules منفصلة لـManiFlow وMolmo2 وagentic_robotics عند الحاجة. تنزيل الأصول الأساسية نحو 280MB، وتضم حزمة HDRI من Poly Haven نحو 1.8GB؛ مجموعة Laval Indoor HDR تتطلب طلب وصول وترخيصها للاستخدام البحثي. لا يلزم تثبيت CUDA Toolkit محليًا وفق الوثائق؛ cuRobo يستخدم NVRTC وحزم CUDA المثبتة مع PyTorch. وثائق المشروع تذكر اختبارًا على RTX 5090 بذاكرة 32GB، ولا تعرض ذلك بوصفه حدًا أدنى مضمونًا لكل المهام.",
+  "quickStart": "1) استنسخ المستودع وادخل مجلده. 2) أنشئ بيئة Python 3.11 باستخدام uv. 3) نفّذ git submodule update --init --recursive. 4) ثبّت الحزم الاختيارية المناسبة: dev وisaac وtorch-cu128 وvecgen، وأضف maniflow أو agentic عند الحاجة. 5) شغّل get-toyblocks-assets باستخدام asset_manifest.json. 6) ابدأ بتوليد عدد صغير من مسائل PDDL على GPU واحد عبر run_datagen_pipeline.py. 7) افصل خطوة render إذا احتجت فيديو، ثم افحص ملفات الإعدادات وبيانات LeRobot الناتجة. 8) شغّل اختبارات التثبيت الموثقة؛ لم تُنفذ في هذه المراجعة.",
+  "costs": "لا يفرض المستودع رسم اشتراك لاستعمال الكود الأساسي المرخص Apache-2.0. التكلفة العملية تأتي من محطة Linux مزودة بـNVIDIA GPU، التخزين للأصول والبيانات، واستهلاك GPU عند توليد البيانات والتقييم. يمكن تشغيله على محطة محلية أو عقدة متعددة وحدات GPU؛ لا توجد خدمة ToyBlocks مستضافة أو قائمة أسعار تشغيل رسمية في الوثائق. مسار agentic_robotics يستدعي النموذج عبر OpenRouter ويتطلب مفتاح API منفصلًا، فتكون كلفته متغيرة بحسب المزود والاستخدام. بيانات Laval لها قيود وصول وترخيص منفصلة.",
+  "localVsCloud": "التصميم الأساسي local-first: خط توليد البيانات والتقييم يعمل على الجهاز الذي تطلقه، من GPU واحد إلى عدة GPUs في عقدة واحدة. يمكن استخدام خادم GPU سحابي Linux/NVIDIA كبديل للبنية المحلية، لكن تكلفته تحسب من مزود البنية والتخزين ووقت GPU ولا يقدّم المشروع تسعيرًا سحابيًا موحدًا. صور Docker متاحة لمساري التقييم وتوليد البيانات، وتتطلب NVIDIA Container Toolkit ومضيف x86_64 Linux؛ الوثائق تقول إنها لا تبنى على ARM64 مثل Apple Silicon بسبب عجلات CUDA المقيدة.",
+  "quickStartEvidence": "Quick start and install requirements transcribed from the official README and installation documentation; not executed in this run.",
+  "alternatives": [
+    {
+      "name": "ManiSkill",
+      "url": "https://maniskill.readthedocs.io/en/latest/",
+      "relation": "بيئات تلاعب روبوتية أوسع؛ ليست نسخة مطابقة من بيئة ToyBlocks المضبوطة."
+    },
+    {
+      "name": "RoboCasa",
+      "url": "https://robocasa.ai/",
+      "relation": "بيئات محاكاة منزلية أوسع لمهام الروبوتات."
+    },
+    {
+      "name": "NVIDIA Isaac Lab",
+      "url": "https://isaac-sim.github.io/IsaacLab/main/",
+      "relation": "منصة المحاكاة التي يبني ToyBlocks فوقها، وليست بديلًا مستقلًا بنفس مجموعة المهام."
+    },
+    {
+      "name": "LeRobot",
+      "url": "https://github.com/huggingface/lerobot",
+      "relation": "أدوات وتنسيقات لتدريب الروبوتات والبيانات؛ يكمل ToyBlocks بدل أن يحل محل المحاكي."
+    }
+  ],
+  "limitations": [
+    "نطاق البيئة محدود بذراع وكتل وطاولة؛ لا يمثل تنوع البيئات المنزلية أو الصناعية.",
+    "تستخدم بعض المهارات معلومات privileged من المحاكي لا تتاح للروبوت عبر الكاميرا والحساسات.",
+    "التوثيق يذكر أن مسارات التقييم ليست bit-for-bit reproducible بين الأجهزة وإصدارات GPU/PhysX؛ المقارنة الصحيحة تعتمد مجاميع عدد كبير من الحلقات.",
+    "المتطلبات ثقيلة ومقيدة بـLinux وNVIDIA؛ ليست مناسبة لتشغيل محلي مباشر على هاتف أو Apple Silicon.",
+    "ترخيص المستودع الرئيسي Apache-2.0 لا يغطي تلقائيًا كل submodules أو الأصول المنزلة."
+  ],
+  "improvements": [
+    {
+      "title": "حزمة قياس انتقال موحدة من المحاكاة إلى الروبوت الحقيقي",
+      "problem": "نتائج النجاح داخل ToyBlocks لا تكفي وحدها لتقدير فجوة المحاكاة والواقع عبر اختلاف الكاميرا والاحتكاك والكتل.",
+      "approach": "إضافة بروتوكول تقييم موحد يقارن مجموعات مشاهد محجوبة في المحاكاة بتجارب روبوت فعلي مع حفظ معايرة الحساسات والظروف.",
+      "stack": "Python, Isaac Lab, LeRobot, ROS 2, JSON manifests",
+      "steps": [
+        "حدد مهامًا ثابتة وبذورًا ومقاييس نجاح موحدة.",
+        "أنشئ splits للمحاكاة مع تغييرات في الإضاءة والهندسة والاحتكاك.",
+        "نفذ عددًا محدودًا من المهام على منصة روبوت فعلية بعد مراجعة السلامة.",
+        "قارن فجوة النجاح والوقت والقوة بين المحاكاة والواقع.",
+        "انشر manifest يربط كل نتيجة بإصدار الكود والأصول والمعايرة."
+      ],
+      "metric": "فجوة النجاح بين المحاكاة والواقع وتباين الزمن والقوة عبر مجموعات اختبار محجوبة.",
+      "difficulty": "مرتفع (تقديري)",
+      "risks": "يتطلب منصة روبوت فعلية ومعايرة دقيقة؛ قد تكون النتائج مرتبطة بنوع الذراع والحساسات.",
+      "sources": [
+        {
+          "title": "ToyBlocks policy evaluation documentation",
+          "url": "https://allenai.github.io/ToyBlocks/docs/user_guide/workflows/evaluations.html"
+        },
+        {
+          "title": "ToyBlocks README",
+          "url": "https://github.com/allenai/ToyBlocks"
+        }
+      ]
+    },
+    {
+      "title": "ملف provenance قابل لإعادة الإنتاج لكل مجموعة بيانات",
+      "problem": "تعتمد إعادة التجربة على إصدار المستودع والـsubmodules والأصول وإعدادات GPU؛ فقد يصعب مقارنة مجموعات أنشئت في بيئات مختلفة.",
+      "approach": "إنشاء manifest آلي يثبت commits والـchecksums وإصدارات التعريفات والأصول والبذور وإعدادات randomization بجانب بيانات LeRobot.",
+      "stack": "Python, Pydantic, JSON Schema, uv, LeRobot, SHA-256",
+      "steps": [
+        "استخرج commit الرئيسي وcommits كل submodule عند بداية التشغيل.",
+        "سجل إصدار Python وPyTorch وIsaac Lab وتعريف NVIDIA.",
+        "احسب checksums للأصول وملفات إعدادات PDDL وYAML.",
+        "أرفق manifest بالمجموعة المدمجة وافحصه عند إعادة التشغيل.",
+        "أضف مقارنة آلية تشرح اختلافات البيئة قبل مقارنة النتائج."
+      ],
+      "metric": "نسبة التشغيلات التي يمكن إعادة بنائها من manifest واكتشاف اختلافات البيئة قبل التقييم.",
+      "difficulty": "متوسط (تقديري)",
+      "risks": "حجم manifests وتغير الأصول الكبيرة؛ قد لا تكفي checksums وحدها لإعادة إنتاج فيزياء GPU حرفيًا.",
+      "sources": [
+        {
+          "title": "ToyBlocks data generation documentation",
+          "url": "https://allenai.github.io/ToyBlocks/docs/user_guide/workflows/data_generation.html"
+        },
+        {
+          "title": "ToyBlocks pyproject.toml",
+          "url": "https://github.com/allenai/ToyBlocks/blob/main/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "title": "لوحة تشخيص إخفاقات التخطيط والتنفيذ",
+      "problem": "تنتج المنظومة مقاييس وبيانات مفصلة، لكن المقارنة اليدوية بين فشل المخطط عالي المستوى وفشل السياسة الحركية قد تكون بطيئة.",
+      "approach": "واجهة تحليل تعرض التسلسل المنطقي PDDL ومقاييس النجاح الجزئي والسرعة والقوة ومقاطع الإعادة مع إظهار موضع فشل كل مستوى.",
+      "stack": "Python, Streamlit, Plotly, Pandas, LeRobot",
+      "steps": [
+        "حدد مخططًا موحدًا لنتائج الحلقة وأسباب الفشل.",
+        "اقرأ ملخصات LeRobot وملفات التقييم دون تعديل المصدر الأصلي.",
+        "اعرض تقدم predicates ومراحل التنفيذ زمنيًا.",
+        "أضف مقارنة oracle مقابل policy لتحديد مستوى الخطأ.",
+        "صدّر تقريرًا يربط الرسم بإصدار البيانات والإعدادات."
+      ],
+      "metric": "زمن تشخيص الحالة ونسبة تصنيف سبب الفشل بما يتفق مع مراجعة بشرية.",
+      "difficulty": "متوسط (تقديري)",
+      "risks": "قد تختزل الواجهة حالات فيزيائية معقدة إلى تصنيفات مبسطة؛ يجب إظهار البيانات الخام والقيود.",
+      "sources": [
+        {
+          "title": "ToyBlocks policy evaluation documentation",
+          "url": "https://allenai.github.io/ToyBlocks/docs/user_guide/workflows/evaluations.html"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "Benchmark عربي لأوامر التلاعب الروبوتي",
+      "problem": "معظم مجموعات تعليمات الروبوتات لا تقيس فهم الأوامر العربية وتنوع صيغها بصورة منظمة.",
+      "approach": "بناء مجموعة تعليمات عربية يراجعها متحدثون، تربط كل أمر بهدف PDDL واضح وتختبر الفهم والتخطيط والتنفيذ على ToyBlocks.",
+      "stack": "ToyBlocks, PDDL, JSONL, Python, Hugging Face Datasets",
+      "steps": [
+        "حدد مهامًا آمنة وبسيطة مثل ترتيب الكتل وقلبها.",
+        "اكتب صيغًا عربية فصحى ومتنوعة لكل هدف بمراجعة بشرية.",
+        "اربط كل صيغة بمشكلة PDDL مرجعية.",
+        "قسّم البيانات إلى تدريب واختبار مع منع تسرب الصيغ.",
+        "قيّم نجاح المهمة وأخطاء فهم الاتجاه واللون والترتيب."
+      ],
+      "metric": "معدل نجاح الأوامر العربية المحجوبة وفجوة الأداء بين الصيغ واللهجات.",
+      "difficulty": "متوسط–مرتفع (تقديري)",
+      "risks": "تحيز العينة اللغوية؛ صعوبة فصل فهم اللغة عن التحكم الحركي؛ حقوق تسجيلات الصوت إن أضيفت.",
+      "sources": [
+        {
+          "title": "ToyBlocks repository",
+          "url": "https://github.com/allenai/ToyBlocks"
+        },
+        {
+          "title": "ToyBlocks data generation documentation",
+          "url": "https://allenai.github.io/ToyBlocks/docs/user_guide/workflows/data_generation.html"
+        }
+      ]
+    },
+    {
+      "title": "مدقق انحراف بيانات المحاكاة عن الواقع",
+      "problem": "قد تبدو نتائج التدريب قوية بينما تختلف توزيعات الصور والمواضع والحركات في بيئة الاستخدام الفعلية.",
+      "approach": "أداة تقارن توزيعات البيانات الوصفية والصور والـposes والأفعال بين مجموعات المحاكاة والواقع وتنتج تقرير انحراف قابلًا للمراجعة.",
+      "stack": "Python, NumPy, Pandas, OpenCV, PyTorch, LeRobot",
+      "steps": [
+        "حدد الحقول المشتركة في مجموعات المحاكاة والواقع.",
+        "احسب إحصاءات الألوان والمواضع والأحجام وتسلسل الأفعال.",
+        "قارن التوزيعات باستخدام مقاييس مناسبة ومجموعات مرجعية.",
+        "اعرض الفروق مع أمثلة مرئية وقيود العينة.",
+        "اربط التقرير بإصدار البيانات وإعدادات الالتقاط."
+      ],
+      "metric": "دقة اكتشاف التحولات المعروفة ومعدل الإنذارات الكاذبة على مجموعات محجوبة.",
+      "difficulty": "مرتفع (تقديري)",
+      "risks": "اختلاف الكاميرات والوسوم قد يخلق إشارات مضللة؛ يتطلب بيانات واقعية ممثلة.",
+      "sources": [
+        {
+          "title": "ToyBlocks README",
+          "url": "https://github.com/allenai/ToyBlocks"
+        },
+        {
+          "title": "LeRobot repository",
+          "url": "https://github.com/huggingface/lerobot"
+        }
+      ]
+    }
+  ],
+  "religious": [],
+  "displayRequirements": [
+    "اعرض شارة «بحث فقط — غير منشور»؛ لا تنشئ بطاقة مشروع عامة أو feed ID بديلًا.",
+    "أظهر أن المرجع الحالي في feed هو خبر ToyBlocks بالمعرف 5a90caffb2c87d2e6e، وليس بطاقة مشروع.",
+    "اعرض Apache-2.0 للمستودع الرئيسي مع تحذير واضح بأن submodules والأصول لها تراخيص مستقلة.",
+    "أظهر المتطلبات الأساسية: Linux x86_64، NVIDIA GPU، CUDA 12.8 driver 570+، Python 3.11، uv، Isaac Sim 5.1/Isaac Lab 2.3.2.",
+    "افصل تكاليف العتاد والتخزين والأصول عن أي كلفة API؛ اذكر أن مسار الوكلاء يحتاج مفتاح OpenRouter وأن المشروع لا يقدم استضافة مدفوعة موحدة.",
+    "أظهر تنزيل الأصول (نحو 280MB) وHDRI الأساسي (نحو 1.8GB) وقيود مجموعة Laval البحثية.",
+    "اعرض البدائل بوصفها أدوات مجاورة لا بدائل مطابقة: ManiSkill وRoboCasa وIsaac Lab وLeRobot.",
+    "أظهر آخر commit ووقت قياس النجوم والفروع، مع حالة «لم يُختبر في هذه الدورة»؛ لا تعرض زر تشغيل أو نشر أو شارة Tested."
+  ],
+  "testStatus": "not_run",
+  "sources": [
+    {
+      "title": "ToyBlocks GitHub repository and README",
+      "url": "https://github.com/allenai/ToyBlocks"
+    },
+    {
+      "title": "ToyBlocks LICENSE",
+      "url": "https://github.com/allenai/ToyBlocks/blob/main/LICENSE"
+    },
+    {
+      "title": "ToyBlocks pyproject.toml",
+      "url": "https://github.com/allenai/ToyBlocks/blob/main/pyproject.toml"
+    },
+    {
+      "title": "ToyBlocks installation and setup",
+      "url": "https://allenai.github.io/ToyBlocks/docs/user_guide/workflows/installation_and_setup_instructions.html"
+    },
+    {
+      "title": "ToyBlocks automatic data generation",
+      "url": "https://allenai.github.io/ToyBlocks/docs/user_guide/workflows/data_generation.html"
+    },
+    {
+      "title": "ToyBlocks policy evaluation",
+      "url": "https://allenai.github.io/ToyBlocks/docs/user_guide/workflows/evaluations.html"
+    },
+    {
+      "title": "Ai2 — ToyBlocks blog post",
+      "url": "https://allenai.org/blog/toyblocks"
+    }
+  ]
+}
