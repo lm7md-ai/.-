@@ -1,0 +1,283 @@
+{
+  "version": 1,
+  "runAt": "2026-11-06T18:01:29+03:00",
+  "metricsMeasuredAt": "2026-11-06T15:01:29Z",
+  "measurementSource": "GitHub REST API repository metadata; partial refresh of the same eight repositories, not a synchronized full-library snapshot.",
+  "publicationStatus": "research_only_update_not_public_project_card",
+  "priorSnapshotPath": "editorial/library/research-only/previous-eight-refresh-2026-11-06-1458.json",
+  "cumulativeCatalogPath": "editorial/library/catalog-2026-11-06-1801.json",
+  "projectsReviewed": 8,
+  "projects": [
+    {
+      "repository": "patchy631/ai-engineering-hub",
+      "stars": 41221,
+      "forks": 6579,
+      "openIssues": 136,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "language": "Jupyter Notebook",
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "updatedAt": "2026-11-06T14:58:20Z",
+      "siteVisibility": "one exact feed project card",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "documentationNotes": "README is the primary learning map; no separate docs tree was relied on in this refresh. README/LICENSE review carried forward from the previous eight-project refresh; this run rechecked GitHub repository metadata only.",
+      "requirementsAndQuickStart": "Existing dossier retains overview, requirements, quickStart, costs, localVsCloud and alternatives.",
+      "testEvidence": null,
+      "metricsMeasuredAt": "2026-11-06T15:01:29Z",
+      "metricsSource": "https://api.github.com/repos/patchy631/ai-engineering-hub"
+    },
+    {
+      "repository": "googleapis/python-genai",
+      "stars": 4056,
+      "forks": 1059,
+      "openIssues": 386,
+      "archived": false,
+      "disabled": false,
+      "license": "Apache-2.0",
+      "language": "Python",
+      "pushedAt": "2026-11-06T02:02:15Z",
+      "updatedAt": "2026-11-06T14:53:02Z",
+      "siteVisibility": "research-only",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "documentationNotes": "README points to the official SDK documentation and quick-start; the repository pyproject requirements were previously recorded in the dossier. README/LICENSE review carried forward from the previous eight-project refresh; this run rechecked GitHub repository metadata only.",
+      "requirementsAndQuickStart": "Existing dossier retains overview, requirements, quickStart, costs, localVsCloud and alternatives.",
+      "testEvidence": null,
+      "metricsMeasuredAt": "2026-11-06T15:01:29Z",
+      "metricsSource": "https://api.github.com/repos/googleapis/python-genai"
+    },
+    {
+      "repository": "Millillion/lasm",
+      "stars": 100,
+      "forks": 7,
+      "openIssues": 6,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "language": "C",
+      "pushedAt": "2026-11-05T18:31:22Z",
+      "updatedAt": "2026-11-06T06:15:53Z",
+      "siteVisibility": "research-only",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "documentationNotes": "README is the main build and usage guide; no independent runtime test was performed. README/LICENSE review carried forward from the previous eight-project refresh; this run rechecked GitHub repository metadata only.",
+      "requirementsAndQuickStart": "Existing dossier retains overview, requirements, quickStart, cost, localVsCloud and alternatives.",
+      "testEvidence": null,
+      "metricsMeasuredAt": "2026-11-06T15:01:29Z",
+      "metricsSource": "https://api.github.com/repos/Millillion/lasm"
+    },
+    {
+      "repository": "microsoft/markitdown",
+      "stars": 194157,
+      "forks": 14603,
+      "openIssues": 810,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "language": "Python",
+      "pushedAt": "2026-10-28T15:33:14Z",
+      "updatedAt": "2026-11-06T14:59:04Z",
+      "siteVisibility": "research-only",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "documentationNotes": "README and project documentation entry points reviewed; pay attention to format-specific dependencies and conversion limitations. README/LICENSE review carried forward from the previous eight-project refresh; this run rechecked GitHub repository metadata only.",
+      "requirementsAndQuickStart": "Existing dossier retains overview, requirements, quickStart, costModel and alternatives.",
+      "testEvidence": null,
+      "metricsMeasuredAt": "2026-11-06T15:01:29Z",
+      "metricsSource": "https://api.github.com/repos/microsoft/markitdown"
+    },
+    {
+      "repository": "yc-software/minecraft-agent-harness",
+      "stars": 152,
+      "forks": 13,
+      "openIssues": 1,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "language": "JavaScript",
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "updatedAt": "2026-11-06T13:25:21Z",
+      "siteVisibility": "research-only",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "documentationNotes": "README and documentation entry points for configuration, tools and multi-agent use reviewed; no runtime test performed. README/LICENSE review carried forward from the previous eight-project refresh; this run rechecked GitHub repository metadata only.",
+      "requirementsAndQuickStart": "Existing dossier retains overview, requirements, quickStart, costs, localVsCloud, alternatives and religious ideas where applicable.",
+      "testEvidence": null,
+      "metricsMeasuredAt": "2026-11-06T15:01:29Z",
+      "metricsSource": "https://api.github.com/repos/yc-software/minecraft-agent-harness"
+    },
+    {
+      "repository": "NVIDIA/OpenShell",
+      "stars": 21203,
+      "forks": 2076,
+      "openIssues": 637,
+      "archived": false,
+      "disabled": false,
+      "license": "Apache-2.0",
+      "language": "Rust",
+      "pushedAt": "2026-11-06T15:01:20Z",
+      "updatedAt": "2026-11-06T14:43:51Z",
+      "siteVisibility": "research-only",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "documentationNotes": "README and official policy/support documentation entry points reviewed; the incoming news item is stale, while the research dossier remains current as a separate project study. README/LICENSE review carried forward from the previous eight-project refresh; this run rechecked GitHub repository metadata only.",
+      "requirementsAndQuickStart": "Existing dossier retains overview, requirements, quickStart, alternatives, deploymentModes and display requirements; detailed cost/local-cloud comparison remains a documented limitation.",
+      "testEvidence": null,
+      "metricsMeasuredAt": "2026-11-06T15:01:29Z",
+      "metricsSource": "https://api.github.com/repos/NVIDIA/OpenShell"
+    },
+    {
+      "repository": "pydantic/pydantic-ai",
+      "stars": 21055,
+      "forks": 3114,
+      "openIssues": 1795,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "language": "Python",
+      "pushedAt": "2026-11-06T15:00:47Z",
+      "updatedAt": "2026-11-06T14:15:18Z",
+      "siteVisibility": "research-only",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "documentationNotes": "README and official evaluation documentation entry point reviewed; repository activity timestamp is close to measurement time. README/LICENSE review carried forward from the previous eight-project refresh; this run rechecked GitHub repository metadata only.",
+      "requirementsAndQuickStart": "Existing dossier retains overview, requirements, quickStart, costs, localVsCloud, alternatives and developer display requirements.",
+      "testEvidence": null,
+      "metricsMeasuredAt": "2026-11-06T15:01:29Z",
+      "metricsSource": "https://api.github.com/repos/pydantic/pydantic-ai"
+    },
+    {
+      "repository": "astral-sh/uv",
+      "stars": 91627,
+      "forks": 3757,
+      "openIssues": 3047,
+      "archived": false,
+      "disabled": false,
+      "license": "Apache-2.0",
+      "language": "Rust",
+      "pushedAt": "2026-11-06T14:55:54Z",
+      "updatedAt": "2026-11-06T15:01:21Z",
+      "siteVisibility": "research-only",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "documentationNotes": "README, official getting-started documentation entry point, LICENSE-APACHE and LICENSE-MIT checked. README/LICENSE review carried forward from the previous eight-project refresh; this run rechecked GitHub repository metadata only.",
+      "requirementsAndQuickStart": "Existing dossier retains overview, requirements, quickStart, costs, alternatives and setup notes; local/cloud detail remains a documented limitation.",
+      "testEvidence": null,
+      "metricsMeasuredAt": "2026-11-06T15:01:29Z",
+      "metricsSource": "https://api.github.com/repos/astral-sh/uv"
+    }
+  ],
+  "librarySummary": {
+    "cumulativeProjects": 55,
+    "activeOrMaintained": 53,
+    "archived": 2,
+    "feedExactMatches": 8,
+    "researchOnly": 46,
+    "feedMembershipUnverified": 1,
+    "archivedAlternativesTracked": 2
+  },
+  "projectFeedAudit": {
+    "currentProjectCards": 100,
+    "exactEditorialMatches": 100,
+    "missingProjectEditorial": 0,
+    "newProjectsAdded": 0,
+    "reason": "All 100 project cards still have exact editorial matches. Unleash was added to research-only because the feed reference is a news item, not a project card."
+  },
+  "ideaAudit": {
+    "projectsReviewed": 8,
+    "projectsArchived": 0,
+    "improvementsAndSpinoffsPreserved": 55,
+    "ideaSchemaComplete": 55,
+    "testEvidence": null,
+    "note": "حُفظ ترتيب الأفكار وروابطها السابقة كما هي؛ تم تحديث مؤشرات المستودعات الثمانية فقط، ولم تُضف ادعاءات اختبار أو نتائج تشغيل."
+  },
+  "topThree": [
+    {
+      "title": "محرر مرئي عربي لسياسات NVIDIA OpenShell",
+      "problem": "ملفات YAML وسياسات الملفات والشبكة صعبة المراجعة على غير المتخصصين.",
+      "approach": "واجهة تقرأ المخطط الرسمي وتعرض السياسات والتحذيرات مع إبقاء YAML الخام قابلًا للتحرير.",
+      "stack": "TypeScript + React + YAML Schema",
+      "steps": [
+        "قراءة schema الرسمي.",
+        "عرض سياسات الملفات والعمليات والشبكة.",
+        "التحقق محليًا قبل التصدير.",
+        "إظهار الفروقات والتحذيرات مع YAML الخام."
+      ],
+      "metric": "نسبة ملفات السياسات التي تجتاز التحقق دون إخفاء حقول.",
+      "difficulty": "متوسط تقديرًا.",
+      "risks": "قد تخفي الواجهة تفاصيل دقيقة؛ يجب ألا تستبدل مراجعة YAML الأصلية.",
+      "sources": [
+        {
+          "title": "OpenShell policy schema",
+          "url": "https://docs.nvidia.com/openshell/latest/how-it-works/policies/schema"
+        },
+        {
+          "title": "OpenShell policy management",
+          "url": "https://docs.nvidia.com/openshell/latest/how-it-works/policies/manage-policies"
+        }
+      ]
+    },
+    {
+      "title": "مجموعة تقييم عربية قابلة لإعادة الإنتاج لوكلاء Pydantic AI",
+      "problem": "قد تبدو إجابة الوكيل سليمة لغويًا لكنها خاطئة أو غير مدعومة بمصدر.",
+      "approach": "مجموعة أسئلة عربية ذات إجابات مرجعية تقيس الصحة والإسناد واستخدام الأدوات والامتناع.",
+      "stack": "Python + Pydantic Evals + pytest + JSONL",
+      "steps": [
+        "اختيار مجال ومصادر موثوقة.",
+        "كتابة حالات نجاح وفشل ونقص معلومات.",
+        "تعريف مقاييس الصحة والاستشهاد والامتناع.",
+        "تشغيل المقارنة على إصدارات مختلفة.",
+        "حفظ النتائج مع إصدارات البيانات والنموذج."
+      ],
+      "metric": "درجات الصحة والإسناد والامتناع عبر الإصدارات.",
+      "difficulty": "متوسط إلى مرتفع تقديرًا.",
+      "risks": "تحيز اللهجات أو مجموعة الأسئلة وتحيز المقيم نفسه.",
+      "sources": [
+        {
+          "title": "Pydantic AI evaluation docs",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/evals.md"
+        },
+        {
+          "title": "Pydantic AI repository",
+          "url": "https://github.com/pydantic/pydantic-ai"
+        }
+      ]
+    },
+    {
+      "title": "مراجع توافق إصدارات Google Gen AI Python SDK",
+      "problem": "قد يتعطل المشروع بعد ترقية SDK أو تغيير الحد الأدنى لإصدار Python.",
+      "approach": "أداة تقرأ pyproject.toml وقيود الاعتماديات وتقارنها بمتطلبات الإصدار دون تعديل الملفات تلقائيًا.",
+      "stack": "Python + tomllib + packaging + JSON",
+      "steps": [
+        "قراءة نسخة SDK المثبتة.",
+        "استخراج متطلبات Python والاعتماديات.",
+        "مقارنة القيود بملف pyproject الرسمي.",
+        "إصدار تقرير تعارضات وتحذيرات."
+      ],
+      "metric": "دقة اكتشاف تعارضات الإصدارات قبل الترقية.",
+      "difficulty": "متوسط تقديرًا.",
+      "risks": "الاعتماديات غير المباشرة وتغيرات API قد لا تظهر في قيود النسخ وحدها.",
+      "sources": [
+        {
+          "title": "Google Gen AI Python SDK pyproject",
+          "url": "https://github.com/googleapis/python-genai/blob/main/pyproject.toml"
+        },
+        {
+          "title": "Google Gen AI Python SDK",
+          "url": "https://github.com/googleapis/python-genai"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "المؤشرات لقطة وقتية من GitHub API وليست ترتيبًا للجودة.",
+    "لم تُشغّل المشاريع أو أمثلتها؛ لم تُضف testEvidence جديدًا.",
+    "بعض ملفات الدوسيه السابقة تذكر حدودًا في مقارنة التكلفة أو النشر المحلي/السحابي، ولم تُخف هذه الحدود.",
+    "ملف المكتبة بحثي غير منشور على واجهة الموقع.",
+    "Metrics are a partial snapshot for the eight reviewed repositories; the rest of the 55-project catalog retains earlier measurement timestamps.",
+    "No project code was executed; no tests or testEvidence are claimed.",
+    "Unleash is research-only; its feed reference is a news item, not a project card."
+  ]
+}
