@@ -88,9 +88,9 @@
     "duplicateIds": 0,
     "structuralErrors": 0,
     "basisCounts": {
-      "article": 7,
+      "article": 6,
       "readme": 3,
-      "metadata": 0
+      "metadata": 1
     },
     "aramcoCorrection": {
       "id": "82eb1f87d59afe3f62",
@@ -102,7 +102,12 @@
     "officialCliValidateIncoming": "not run locally",
     "officialCliImport": "not run locally",
     "structuralValidation": "passed for all 10 records; exact ID and URL match against current main feed; required Arabic fields, sources, reviewedAt and basis checked",
-    "noProtectedFileChanges": true
+    "noProtectedFileChanges": true,
+    "appleSourceLimitation": {
+      "id": "da4db1176f76c5742a",
+      "basis": "metadata",
+      "reason": "The Verge article body could not be fully opened; the app count is attributed to Apple and is not independently verified."
+    }
   },
   "projects": {
     "publicFeedCards": 100,
