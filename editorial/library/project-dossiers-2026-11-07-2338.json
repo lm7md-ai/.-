@@ -1,0 +1,732 @@
+{
+  "version": 1,
+  "runAt": "2026-11-07T23:38:28+03:00",
+  "metricsCapturedAt": "2026-11-07T20:38:28Z",
+  "publicationStatus": "prepared_on_PR_97_not_published",
+  "catalogBaseCount": 57,
+  "additionalUniqueProjects": 5,
+  "cumulativeUniqueProjects": 62,
+  "projects": [
+    {
+      "repository": "HKUDS/DeepTutor",
+      "name": "DeepTutor",
+      "url": "https://github.com/HKUDS/DeepTutor",
+      "category": "التعليم الشخصي والوكلاء التعليميون",
+      "archived": false,
+      "license": "Apache-2.0",
+      "stars": 56330,
+      "forks": 6885,
+      "openIssues": 322,
+      "defaultBranch": "main",
+      "latestRelease": "v1.7.2 (2026-11-06)",
+      "metricCapturedAt": "2026-11-07T20:38:28Z",
+      "readmeSha": "8808e1dbfdc7a311e580a97cfbc5265c7369eb1c",
+      "licenseSha": "ae1dbfc5e74c6c9ebb3e46ea9ea8dde8a4a04ed8",
+      "activityEvidence": "pushed_at 2026-11-07T15:18:10Z; updated_at 20:36:23Z; archived=false.",
+      "feedId": "e622970364717202be",
+      "basis": "readme",
+      "reviewedAt": "2026-11-07T23:38:28+03:00",
+      "overview": "منصة تعلم شخصية مفتوحة المصدر بترخيص Apache-2.0. يذكر README إصدار v1.7.2، ويضم مساحة ويب وCLI وKnowledge Bases ومسارات تعلم وممارسة وتكاملات. يدعم مزودي نماذج مستضافة ومحلية مثل Ollama وLM Studio وllama.cpp وvLLM؛ وتبقى تراخيص النماذج والمحتوى الذي يضيفه المستخدم مستقلة عن ترخيص الشيفرة.",
+      "requirements": "Python 3.11–3.14؛ Node.js 20+ لمسار PyPI و22 LTS للتطوير من المصدر؛ Docker يوفر الحزمة الكاملة في حاوية واحدة. يلزم مزود LLM؛ المستضاف يحتاج عادة مفتاح API وتكلفة استخدام، والمحلي يحتاج موارد الجهاز. Embeddings اختيارية إلا عند استخدام Knowledge Bases. RAM والتخزين يعتمدان على النماذج والملفات.",
+      "quickStart": "أنشئ مجلد تشغيل مستقلًا، ثم python -m pip install \"deeptutor[full]\"، وبعدها deeptutor init ثم deeptutor start وافتح http://127.0.0.1:3782. في Docker يوصي الدليل بربط المنفذ محليًا 127.0.0.1:3782 مع volume دائم لمجلد /app/data؛ لا حاجة لنشر منفذ backend 8001 للواجهة. اضبط مزود النموذج من Settings → Models & services. لم أشغّل هذه الخطوات.",
+      "localVsCloud": "Local models عبر Ollama/LM Studio/llama.cpp/vLLM أو مزود سحابي. Docker حاوية واحدة مع volume دائم ومنفذ 3782؛ لا حاجة لنشر backend 8001 للواجهة. مفاتيح المزود وبيانات الذاكرة تحفظ في مجلد data، فيجب إبقاؤه خاصًا.",
+      "costs": "Apache-2.0 بلا اشتراك للتطبيق؛ استهلاك الجهاز للنماذج المحلية، ورسوم API للنماذج المستضافة والبحث والembeddings وTTS حسب المزود.",
+      "alternatives": "Open WebUI، AnythingLLM، LlamaIndex.",
+      "limitations": "المشروع سريع التطور. صفحة تثبيت PyPI في التوثيق ما تزال تعرض أمثلة مثبتة على 1.7.0 بينما README يذكر v1.7.2؛ لذلك استخدمت أمر تثبيت غير مثبت الإصدار. بعض ميزات سطح المكتب Preview. جودة الشرح تعتمد على النموذج والمصادر، ولم تُنفذ اختبارات أو تثبيت فعلي.",
+      "sources": [
+        {
+          "title": "DeepTutor README",
+          "url": "https://github.com/HKUDS/DeepTutor/blob/main/README.md"
+        },
+        {
+          "title": "DeepTutor Get Started",
+          "url": "https://docs.deeptutor.info/get-started/"
+        },
+        {
+          "title": "DeepTutor PyPI",
+          "url": "https://docs.deeptutor.info/get-started/pypi/"
+        },
+        {
+          "title": "DeepTutor Docker",
+          "url": "https://docs.deeptutor.info/get-started/docker/"
+        },
+        {
+          "title": "DeepTutor Providers",
+          "url": "https://docs.deeptutor.info/get-started/providers/"
+        },
+        {
+          "title": "DeepTutor LICENSE",
+          "url": "https://github.com/HKUDS/DeepTutor/blob/main/LICENSE"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "تدقيق انحراف الإجابة عن السلايد",
+          "problem": "قد يقدّم المساعد إجابة صحيحة عمومًا لكنها غير موجودة في محتوى المقرر.",
+          "approach": "إضافة طبقة مراجعة تقارن كل ادعاء تعليمي بصفحة المصدر وتعرض الحالات بلا سند.",
+          "stack": "Python, document parser, citation evaluation",
+          "steps": [
+            "أنشئ مجموعة أسئلة بإجابات وصفحات مرجعية.",
+            "استخرج جمل الإجابة وروابطها إلى المصدر.",
+            "صنف الجمل إلى مدعومة أو غير مدعومة أو متعارضة.",
+            "اعرض نسبة التغطية مع أمثلة قابلة للتدقيق."
+          ],
+          "metric": "نسبة الادعاءات المسندة بدقة إلى صفحة صحيحة وتراجع الادعاءات غير المدعومة.",
+          "difficulty": "متوسط — تقدير 2–4 أسابيع لتجربة أولية.",
+          "risks": "قد تكون صفحات PDF مصورة أو ترقيمها غير ثابت؛ المقياس يحتاج مراجعة بشرية.",
+          "sources": [
+            {
+              "title": "DeepTutor README",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/README.md"
+            },
+            {
+              "title": "DeepTutor agent setup",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/docs-for-user/AGENT_SETUP.md"
+            }
+          ]
+        },
+        {
+          "title": "ميزانية استدلال لكل وحدة تعليمية",
+          "problem": "تتفاوت تكلفة الأنشطة الطويلة وقد تتجاوز ميزانية الطالب.",
+          "approach": "تحديد سقف اختياري لكل درس مع مقارنة التقدير بالتكلفة الفعلية وإيقاف النشاط قبل تجاوز الحد.",
+          "stack": "Python, provider usage logs, frontend settings",
+          "steps": [
+            "حدد حدود تكلفة وتجارب قصيرة لكل وحدة.",
+            "سجل رموز الإدخال والإخراج والأسعار المعلنة بتاريخها.",
+            "قارن التكلفة التقديرية بالاستعمال الحقيقي.",
+            "أظهر تنبيهًا واضحًا عند اقتراب السقف."
+          ],
+          "metric": "خطأ التقدير النسبي ونسبة الأنشطة التي تحترم الميزانية.",
+          "difficulty": "متوسط — تقدير 1–3 أسابيع.",
+          "risks": "تختلف أسعار المزودين وطرق التخزين المؤقت، وقد تكون بيانات الاستخدام ناقصة.",
+          "sources": [
+            {
+              "title": "DeepTutor README",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/README.md"
+            },
+            {
+              "title": "DeepTutor agent setup",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/docs-for-user/AGENT_SETUP.md"
+            }
+          ]
+        },
+        {
+          "title": "مراجعة عربية ثنائية الاتجاه للمصطلحات",
+          "problem": "قد تختلف كتابة المصطلحات بين العربية والإنجليزية عبر الأنشطة.",
+          "approach": "إنشاء قاموس مرتبط بالمصدر يراجع الاتساق ويقترح مقابلات لا تُفرض تلقائيًا.",
+          "stack": "Python, terminology extraction, RTL UI",
+          "steps": [
+            "استخرج المصطلحات المتكررة من محاضرتين.",
+            "اربط كل مصطلح بموضعه الأصلي ومقابله المقترح.",
+            "اختبر اكتشاف الاختلافات بين الملخص والأسئلة.",
+            "اعرض التصحيح للمراجعة البشرية."
+          ],
+          "metric": "دقة اكتشاف عدم الاتساق وعدد التصحيحات المقبولة.",
+          "difficulty": "متوسط — تقدير 2–3 أسابيع.",
+          "risks": "قد يكون للمصطلح أكثر من ترجمة صحيحة بحسب السياق.",
+          "sources": [
+            {
+              "title": "DeepTutor README",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/README.md"
+            },
+            {
+              "title": "DeepTutor agent setup",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/docs-for-user/AGENT_SETUP.md"
+            }
+          ]
+        },
+        {
+          "title": "اختبار إحالات الشرح العربي إلى صفحات المصدر",
+          "problem": "قد تبدو الإجابة صحيحة لغويًا بينما تشير إلى صفحة لا تدعمها.",
+          "approach": "بناء مجموعة أسئلة عربية مرتبطة بمواضع مرجعية وقياس صحة كل إحالة.",
+          "stack": "Python, pytest, DeepTutor, PDF fixtures, JSONL",
+          "steps": [
+            "اختر محاضرات مرخصة ومحدودة.",
+            "أنشئ أسئلة مرجعية مع الصفحة والفقرة الداعمتين.",
+            "اجمع إجابات الوكيل وإحالاتها.",
+            "قارن الإحالات بالمواضع المرجعية.",
+            "أصدر تقريرًا يفرق بين خطأ الاسترجاع والتوليد."
+          ],
+          "metric": "دقة الإحالة ونسبة الادعاءات المدعومة.",
+          "difficulty": "متوسطة إلى مرتفعة تقديرًا",
+          "risks": "قد تفشل ملفات PDF المصورة أو تختلف صفحات الطبعات.",
+          "sources": [
+            {
+              "title": "DeepTutor README",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/README.md"
+            },
+            {
+              "title": "DeepTutor Get Started",
+              "url": "https://docs.deeptutor.info/get-started/"
+            },
+            {
+              "title": "DeepTutor PyPI",
+              "url": "https://docs.deeptutor.info/get-started/pypi/"
+            }
+          ]
+        },
+        {
+          "title": "خريطة تغطية أهداف المقرر",
+          "problem": "يصعب معرفة ما إذا كانت الشروحات والتمارين تغطي نواتج التعلم.",
+          "approach": "ربط كل هدف بمصدر ونشاط وسؤال تحقق وإظهار الفجوات.",
+          "stack": "Python, JSON Schema, DeepTutor, SQLite",
+          "steps": [
+            "استخرج نواتج التعلم من توصيف مقرر مرخص.",
+            "حوّل كل ناتج إلى معرف ثابت.",
+            "اربط المقاطع والأنشطة والأسئلة بكل ناتج.",
+            "احسب الأهداف التي لا تملك مصدرًا أو تمرينًا.",
+            "راجع الخريطة مع مدرس."
+          ],
+          "metric": "نسبة الأهداف التي لها مصدر ونشاط وسؤال.",
+          "difficulty": "متوسطة تقديرًا",
+          "risks": "قد ينتج الربط الآلي تغطية وهمية؛ يلزم اعتماد بشري.",
+          "sources": [
+            {
+              "title": "DeepTutor README",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/README.md"
+            },
+            {
+              "title": "DeepTutor Get Started",
+              "url": "https://docs.deeptutor.info/get-started/"
+            }
+          ]
+        },
+        {
+          "title": "تصدير تقدم التعلم بصيغة مفتوحة",
+          "problem": "قد يصبح سجل التقدم مرتبطًا بإصدار واحد.",
+          "approach": "إضافة تصدير واستيراد للتقدم والملاحظات ومراجع المصادر بمخطط قابل للإصدار.",
+          "stack": "Python, JSON, SQLite, schema tests",
+          "steps": [
+            "حدد البيانات القابلة للتصدير.",
+            "ضع مخطط JSON بإصدار ومعرفات مستقرة.",
+            "أضف تصديرًا لا يتضمن مفاتيح API.",
+            "اختبر الاستيراد في نسخة نظيفة.",
+            "وثّق النسخ الاحتياطي والحذف والترقية."
+          ],
+          "metric": "نسبة السجلات المنقولة دون فقد أو تسريب.",
+          "difficulty": "متوسطة تقديرًا",
+          "risks": "تسرب بيانات شخصية أو عدم توافق المخطط.",
+          "sources": [
+            {
+              "title": "DeepTutor README",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/README.md"
+            },
+            {
+              "title": "DeepTutor Get Started",
+              "url": "https://docs.deeptutor.info/get-started/"
+            },
+            {
+              "title": "DeepTutor PyPI",
+              "url": "https://docs.deeptutor.info/get-started/pypi/"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مختبر محاكاة أخطاء اختبار برمجي",
+          "problem": "الاختبارات التقليدية لا تكشف سبب سوء الفهم في الحلول البرمجية.",
+          "approach": "منصة تعرض حلاً خاطئًا قابلًا للتشغيل وتطلب تفسير الخطأ وإصلاحه مع تغذية راجعة مرتبطة بالمفهوم.",
+          "stack": "Python, sandboxed tests, rubric engine",
+          "steps": [
+            "اختر عشرة مفاهيم Python مع أخطاء شائعة.",
+            "اكتب اختبارات آمنة وحالات فشل متوقعة.",
+            "أنشئ واجهة تعرض الخطأ والتلميحات تدريجيًا.",
+            "قِس تحسن تشخيص الخطأ في إعادة اختبار."
+          ],
+          "metric": "نسبة التشخيص الصحيح وتحسن الأداء بين المحاولتين.",
+          "difficulty": "متوسط — تقدير 3–5 أسابيع.",
+          "risks": "تشغيل كود الطلاب يحتاج عزلًا وحدود موارد؛ لا تعتمد على حكم النموذج وحده.",
+          "sources": [
+            {
+              "title": "DeepTutor README",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/README.md"
+            },
+            {
+              "title": "DeepTutor agent setup",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/docs-for-user/AGENT_SETUP.md"
+            }
+          ]
+        },
+        {
+          "title": "مقارن الشرح من مصدر واحد",
+          "problem": "يصعب معرفة أي أسلوب شرح يحسن الفهم فعلًا.",
+          "approach": "توليد شروحات قصيرة متنوعة لنفس النص مع اختبار فهم لاحق مضبوط.",
+          "stack": "Python, assessment rubric, study analytics",
+          "steps": [
+            "اختر نصًا تعليميًا قصيرًا بإذن استخدام.",
+            "حضّر نسختين من الشرح بنفس الحقائق.",
+            "صمم اختبار فهم قبل القراءة وبعدها.",
+            "قارن الفهم والزمن مع توضيح حدود العينة."
+          ],
+          "metric": "متوسط التحسن في أسئلة الفهم بعد كل أسلوب.",
+          "difficulty": "متوسط — تقدير 2–4 أسابيع.",
+          "risks": "قد تؤثر الخبرة السابقة وصغر العينة في المقارنة.",
+          "sources": [
+            {
+              "title": "DeepTutor README",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/README.md"
+            },
+            {
+              "title": "DeepTutor agent setup",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/docs-for-user/AGENT_SETUP.md"
+            }
+          ]
+        },
+        {
+          "title": "فاحص اكتمال تغطية المقرر",
+          "problem": "قد يُغفل الملخص أو بنك الأسئلة موضوعات أساسية في المحاضرات.",
+          "approach": "إنشاء خريطة مفاهيم من فهرس السلايدات وربط كل مفهوم بشرح وسؤال وتوثيق الفجوات.",
+          "stack": "Python, PDF parsing, concept graph",
+          "steps": [
+            "استخرج عناوين السلايدات والمفاهيم من الملفات.",
+            "أنشئ خريطة تغطية قابلة للمراجعة.",
+            "اربط الشرح والأسئلة بالمفاهيم وصفحاتها.",
+            "اعرض الثغرات وراجعها مع المادة الأصلية."
+          ],
+          "metric": "نسبة المفاهيم المغطاة بدليل صحيح وعدد الفجوات المؤكدة.",
+          "difficulty": "متوسط — تقدير 3–4 أسابيع.",
+          "risks": "الاستخراج الآلي قد يفشل في الرسومات والشرائح غير النصية.",
+          "sources": [
+            {
+              "title": "DeepTutor README",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/README.md"
+            },
+            {
+              "title": "DeepTutor agent setup",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/docs-for-user/AGENT_SETUP.md"
+            }
+          ]
+        },
+        {
+          "title": "مساعد مقرر محلي من ملفات المحاضرات",
+          "problem": "يحتاج الطالب شرحًا مرتبطًا بملف المقرر.",
+          "approach": "مساحة تستورد ملفات محاضرات محلية وتعرض شرحًا مع الصفحة والاقتباس.",
+          "stack": "Python, DeepTutor SDK, local LLM, PDF parser",
+          "steps": [
+            "اختر ملفًا يملك المستخدم حق استخدامه.",
+            "أنشئ مساحة مستقلة ومجلد بيانات محليًا.",
+            "اضبط مزودًا محليًا عند توفر الموارد.",
+            "اختبر أسئلة لها إجابات واضحة في الملف.",
+            "أظهر الصفحة وامتنع عند غياب الدليل."
+          ],
+          "metric": "نسبة الإجابات ذات الصفحة الصحيحة.",
+          "difficulty": "متوسطة تقديرًا",
+          "risks": "قد يفشل استخراج النص العربي من ملفات مصورة.",
+          "sources": [
+            {
+              "title": "DeepTutor README",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/README.md"
+            },
+            {
+              "title": "DeepTutor Get Started",
+              "url": "https://docs.deeptutor.info/get-started/"
+            },
+            {
+              "title": "DeepTutor PyPI",
+              "url": "https://docs.deeptutor.info/get-started/pypi/"
+            }
+          ]
+        },
+        {
+          "title": "مختبر تمارين Python مع اختبارات قابلة لإعادة التشغيل",
+          "problem": "قد يشرح المساعد الحل دون التحقق من فهم المتعلم.",
+          "approach": "تمارين تشغّل الشيفرة في بيئة معزولة وتعرض تلميحات بعد المحاولة.",
+          "stack": "Python, pytest, isolated runner, DeepTutor",
+          "steps": [
+            "اكتب تمارين أصلية أو مرخصة.",
+            "حدد اختبارات وحدود وقت وذاكرة.",
+            "شغّل الشيفرة في بيئة معزولة.",
+            "اعرض تلميحًا بعد فشل قابل للتفسير.",
+            "احفظ التقدم دون أسرار."
+          ],
+          "metric": "نسبة اجتياز الاختبارات بعد التلميحات.",
+          "difficulty": "مرتفعة تقديرًا",
+          "risks": "تشغيل شيفرة غير موثوقة يتطلب عزلًا قويًا.",
+          "sources": [
+            {
+              "title": "DeepTutor README",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/README.md"
+            },
+            {
+              "title": "DeepTutor Get Started",
+              "url": "https://docs.deeptutor.info/get-started/"
+            }
+          ]
+        },
+        {
+          "title": "مسار مراجعة متباعد من الأخطاء السابقة",
+          "problem": "تتكرر أخطاء الطالب دون خطة مراجعة.",
+          "approach": "تحويل الأخطاء إلى بطاقات مرتبطة بهدف المقرر والمصدر.",
+          "stack": "Python, SQLite, spaced repetition",
+          "steps": [
+            "سجل المفهوم الذي أخفق فيه المتعلم.",
+            "حوّل الخطأ إلى سؤال قصير.",
+            "حدد موعد المراجعة حسب الأداء.",
+            "أعد الاختبار بمثال جديد.",
+            "اعرض التقدم مع تعديل الجدول."
+          ],
+          "metric": "انخفاض تكرار الخطأ بعد أسبوعين.",
+          "difficulty": "متوسطة تقديرًا",
+          "risks": "قد يبالغ النظام في تقدير الإتقان.",
+          "sources": [
+            {
+              "title": "DeepTutor README",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/README.md"
+            },
+            {
+              "title": "DeepTutor Get Started",
+              "url": "https://docs.deeptutor.info/get-started/"
+            },
+            {
+              "title": "DeepTutor PyPI",
+              "url": "https://docs.deeptutor.info/get-started/pypi/"
+            }
+          ]
+        }
+      ],
+      "religious": [],
+      "testEvidence": null
+    },
+    {
+      "repository": "VectifyAI/PageIndex",
+      "name": "PageIndex",
+      "url": "https://github.com/VectifyAI/PageIndex",
+      "category": "استرجاع الوثائق وRAG الاستدلالي",
+      "archived": false,
+      "license": "MIT",
+      "stars": 40168,
+      "forks": 3456,
+      "openIssues": 166,
+      "defaultBranch": "main",
+      "version": "0.2.10",
+      "metricCapturedAt": "2026-11-07T20:38:28Z",
+      "readmeSha": "757d2685b804b42d5b9fdf38a6ec2cb638102686",
+      "licenseSha": "c9081e44901e1584a323377a072f29efb997d718",
+      "pyprojectSha": "83b0540e10b9f349fe0352c275c99507db3ac373",
+      "activityEvidence": "pushed_at 2026-11-07T13:09:54Z; updated_at 17:08:50Z; archived=false.",
+      "feedId": "55c5e35b9bbd92d15c",
+      "basis": "readme",
+      "reviewedAt": "2026-11-07T23:38:28+03:00",
+      "overview": "مكتبة Python بترخيص MIT تبني شجرة فهرسة للوثيقة وتتيح للـLLM التنقل في بنية الشجرة للوصول إلى الصفحات ذات الصلة. الوضع المحلي يخزن الفهرس على الجهاز ويعالج طبقة النص في PDF؛ أما PageIndex Cloud فيدير الفهرسة والتخزين ويضيف OCR وفهم الصور. لا يحتاج النهج إلى قاعدة متجهات، لكنه يعتمد على نموذج لغوي في بناء الفهرس والاسترجاع.",
+      "requirements": "Python >=3.10 حسب pyproject.toml، وpip وملف PDF. الوضع المحلي يحتاج مفتاح مزود نموذج للفهرسة والإجابة، ولا يحتاج PAGEINDEX_API_KEY. الوضع السحابي يحتاج PAGEINDEX_API_KEY للفهرسة والتخزين ومفتاح مزود LLM للمحادثة؛ ويوفر OCR وفهم الصور. لا يلزم vector database.",
+      "quickStart": "أنشئ بيئة Python ثم pip install -U pageindex. في الوضع المحلي اضبط مفتاح مزود LLM وأنشئ PageIndexClient(index=\"your-index-model\", chat=\"your-chat-model\")، ثم submit_document(\"report.pdf\", wait=True) واسأل عبر client.chat(question, doc_id=doc_id). في Cloud اضبط PAGEINDEX_API_KEY واستخدم index=\"cloud\"؛ ما يزال chat على نموذجك ومفتاح مزودك. لم أجرّب استدعاءً فعليًا.",
+      "localVsCloud": "Local: PDF نصي وفهرسة محلية مع مفتاح LLM؛ لا يحتاج مفتاح PageIndex. Cloud: OCR وفهم صور وتخزين مُدار، يحتاج PAGEINDEX_API_KEY ومفتاح LLM للمحادثة.",
+      "costs": "Local مجاني من جهة PageIndex مع بقاء رسوم مزود LLM. Cloud بحسب تسعير 2026-11-04: $0.01/صفحة للفهرسة العادية، $0.001/صفحة لFlash، $0.001/صفحة/شهر للصفحات النشطة بعد أول 1,000 مجانية؛ الاسترجاع بلا رسم PageIndex، وLLM يُحاسب منفصلًا.",
+      "alternatives": "LlamaIndex أو LangChain مع FAISS/Qdrant، وDocling لاستخراج المستندات.",
+      "limitations": "الوضع المحلي يعتمد على طبقة النص في PDF؛ الملفات الممسوحة والصور تحتاج الوضع السحابي. تقديرات الكلفة والمقارنات المنشورة من المشروع وعلى إعدادات محددة، ولا تثبت تفوقًا عامًا. قد ترتفع تكلفة الاستدلال مع كثرة التنقل في الشجرة.",
+      "sources": [
+        {
+          "title": "PageIndex README",
+          "url": "https://github.com/VectifyAI/PageIndex/blob/main/README.md"
+        },
+        {
+          "title": "PageIndex Getting Started",
+          "url": "https://docs.pageindex.ai/getting-started"
+        },
+        {
+          "title": "PageIndex Client",
+          "url": "https://docs.pageindex.ai/sdk/client"
+        },
+        {
+          "title": "PageIndex Pricing",
+          "url": "https://docs.pageindex.ai/pricing"
+        },
+        {
+          "title": "PageIndex pyproject",
+          "url": "https://github.com/VectifyAI/PageIndex/blob/main/pyproject.toml"
+        },
+        {
+          "title": "PageIndex LICENSE",
+          "url": "https://github.com/VectifyAI/PageIndex/blob/main/LICENSE"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "تدقيق إحالات النص العربي",
+          "problem": "قد لا تدعم الصفحة المشار إليها الإجابة.",
+          "approach": "طابق الاستشهاد بمقطع عربي في PDF وأظهر نتيجة التحقق.",
+          "stack": "Python، PageIndex، pypdf، pytest",
+          "steps": [
+            "جهّز وثائق عربية مرخصة.",
+            "استخرج صفحات الإجابة.",
+            "قارن المقاطع بعد تطبيع محدود.",
+            "راجع 100 إحالة يدويًا."
+          ],
+          "metric": "نسبة الإحالات المدعومة والإنذارات الخاطئة.",
+          "difficulty": "متوسطة؛ تقدير أسبوع.",
+          "risks": "OCR واختلاف أرقام الصفحات قد يسببان نتائج خاطئة.",
+          "sources": [
+            {
+              "title": "PageIndex README",
+              "url": "https://github.com/VectifyAI/PageIndex"
+            },
+            {
+              "title": "PageIndex documentation",
+              "url": "https://docs.pageindex.ai"
+            }
+          ]
+        },
+        {
+          "title": "مقارنة استرجاع شجري ومتجهي",
+          "problem": "لا تصلح نتائج التسويق لاتخاذ قرار على ملفات مختلفة.",
+          "approach": "اختبر الطريقتين على الأسئلة والنماذج والميزانية نفسها.",
+          "stack": "Python، PageIndex، FAISS، pandas",
+          "steps": [
+            "جهّز أسئلة مرجعية.",
+            "ثبّت إعدادات النماذج.",
+            "شغّل الطريقتين.",
+            "قارن الدقة والكلفة والزمن."
+          ],
+          "metric": "صحة الإجابة والإحالة لكل دولار.",
+          "difficulty": "متقدمة؛ تقدير أسبوعين.",
+          "risks": "الضبط غير العادل يفسد المقارنة.",
+          "sources": [
+            {
+              "title": "PageIndex README",
+              "url": "https://github.com/VectifyAI/PageIndex"
+            },
+            {
+              "title": "PageIndex documentation",
+              "url": "https://docs.pageindex.ai"
+            }
+          ]
+        },
+        {
+          "title": "Benchmark عربي لاسترجاع PDF طويل",
+          "problem": "لا يوضح تقييم عام ما إذا كان الاسترجاع الشجري يحافظ على إحالات صحيحة في العربية وRTL.",
+          "approach": "إنشاء مجموعة PDF عربية مرخصة بأسئلة مرجعية ومقارنة PageIndex مع RAG متجهي.",
+          "stack": "Python, PageIndex, pytest, Arabic PDF corpus",
+          "steps": [
+            "اجمع ملفات عربية مرخصة.",
+            "أنشئ أسئلة مرجعية وصفحات داعمة.",
+            "شغّل PageIndex على ملفات نصية.",
+            "شغّل baseline متجهي على البيانات نفسها.",
+            "قِس دقة الصفحة والتكلفة والزمن."
+          ],
+          "metric": "Recall@k ودقة إحالة الصفحة وتكلفة السؤال.",
+          "difficulty": "مرتفعة تقديرًا",
+          "risks": "جودة OCR والخطوط وتنوع الوثائق قد تحيز النتائج.",
+          "sources": [
+            {
+              "title": "PageIndex README",
+              "url": "https://github.com/VectifyAI/PageIndex/blob/main/README.md"
+            },
+            {
+              "title": "PageIndex Getting Started",
+              "url": "https://docs.pageindex.ai/getting-started"
+            },
+            {
+              "title": "PageIndex Client",
+              "url": "https://docs.pageindex.ai/sdk/client"
+            }
+          ]
+        },
+        {
+          "title": "إدارة إصدارات أشجار الوثائق",
+          "problem": "تحديث ملف طويل قد يترك إحالات قديمة أو يفرض إعادة فهرسة كاملة.",
+          "approach": "حفظ بصمة لكل قسم وربط التغييرات بالعقد التي تحتاج تحديثًا.",
+          "stack": "Python, PageIndex, hashes, SQLite",
+          "steps": [
+            "قسّم المستند إلى وحدات مستقرة.",
+            "احفظ إصدار الشجرة ومصدر المستند.",
+            "قارن الإصدار الجديد بالعقد السابقة.",
+            "أعد بناء العقد المتغيرة إن دعم API ذلك.",
+            "اختبر أن الإجابات تشير إلى الإصدار الصحيح."
+          ],
+          "metric": "نسبة العقد المعاد بناؤها وزمن التحديث.",
+          "difficulty": "متوسطة إلى مرتفعة تقديرًا",
+          "risks": "قد تتغير بنية الفهرسة داخليًا؛ يلزم اختبار قبل إعادة الاستخدام.",
+          "sources": [
+            {
+              "title": "PageIndex README",
+              "url": "https://github.com/VectifyAI/PageIndex/blob/main/README.md"
+            },
+            {
+              "title": "PageIndex Getting Started",
+              "url": "https://docs.pageindex.ai/getting-started"
+            },
+            {
+              "title": "PageIndex Client",
+              "url": "https://docs.pageindex.ai/sdk/client"
+            }
+          ]
+        },
+        {
+          "title": "قياس جودة الإحالات لكل صفحة",
+          "problem": "قد تشير الإجابة إلى صفحة غير داعمة.",
+          "approach": "طبقة تقييم تربط كل ادعاء بصفحة ومقطع داعم قبل عرضه.",
+          "stack": "Python, PageIndex, citation evaluator",
+          "steps": [
+            "أنشئ إجابات مرجعية وصفحات محددة.",
+            "استخرج إحالات كل إجابة.",
+            "راجع عينة عمياء بشريًا.",
+            "صنّف الإحالات صحيحة أو جزئية أو غير داعمة.",
+            "أوقف الادعاءات التي لا تملك سندًا."
+          ],
+          "metric": "Citation precision ونسبة الادعاءات المدعومة.",
+          "difficulty": "متوسطة إلى مرتفعة تقديرًا",
+          "risks": "قد يخلط التقييم الآلي بين التشابه والدليل المباشر.",
+          "sources": [
+            {
+              "title": "PageIndex README",
+              "url": "https://github.com/VectifyAI/PageIndex/blob/main/README.md"
+            },
+            {
+              "title": "PageIndex Getting Started",
+              "url": "https://docs.pageindex.ai/getting-started"
+            },
+            {
+              "title": "PageIndex Client",
+              "url": "https://docs.pageindex.ai/sdk/client"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مساعد محاضرات بإحالات السلايد",
+          "problem": "يحتاج الطلاب إجابات قابلة للتتبع إلى الملفات.",
+          "approach": "ابنِ واجهة سؤال وجواب تعرض الصفحة والنص الداعم.",
+          "stack": "Python، PageIndex، Gradio",
+          "steps": [
+            "ارفع محاضرات مسموحًا بها.",
+            "ابنِ فهرسًا لكل ملف.",
+            "اعرض الإجابة والإحالة.",
+            "راجع 50 سؤالًا يدويًا."
+          ],
+          "metric": "نسبة الإجابات المدعومة بإحالة صحيحة.",
+          "difficulty": "متوسطة؛ تقدير أسبوع.",
+          "risks": "قد يخطئ النموذج أو يرسل ملفًا خاصًا إلى API.",
+          "sources": [
+            {
+              "title": "PageIndex README",
+              "url": "https://github.com/VectifyAI/PageIndex"
+            },
+            {
+              "title": "PageIndex documentation",
+              "url": "https://docs.pageindex.ai"
+            }
+          ]
+        },
+        {
+          "title": "مقارن تغييرات السياسات",
+          "problem": "تتغير بنود الوثائق بين النسخ دون تنبيه واضح.",
+          "approach": "قارن الأقسام المتناظرة وقدم قائمة تغييرات مع الصفحات.",
+          "stack": "Python، PageIndex، difflib",
+          "steps": [
+            "اجمع نسختين علنيتين.",
+            "طابق الأقسام.",
+            "استخرج البنود المتغيرة.",
+            "راجع نتائج التغييرات يدويًا."
+          ],
+          "metric": "استرجاع التغييرات الحقيقية ومعدل الإنذارات الخاطئة.",
+          "difficulty": "متوسطة؛ تقدير 1–2 أسبوع.",
+          "risks": "تغيير التنسيق قد يبدو تغييرًا في المعنى.",
+          "sources": [
+            {
+              "title": "PageIndex README",
+              "url": "https://github.com/VectifyAI/PageIndex"
+            },
+            {
+              "title": "PageIndex documentation",
+              "url": "https://docs.pageindex.ai"
+            }
+          ]
+        },
+        {
+          "title": "مساعد محاضرات بإحالات الصفحات",
+          "problem": "يصعب الرجوع إلى موضع المعلومة في محاضرات طويلة.",
+          "approach": "تطبيق يفهرس PDF ويعرض الإجابة مع الصفحة والعنوان والاقتباس.",
+          "stack": "Python, PageIndex SDK, FastAPI",
+          "steps": [
+            "اختر محاضرات مرخصة.",
+            "ابن فهرسًا محليًا لكل ملف.",
+            "أضف واجهة تعرض الصفحات الداعمة.",
+            "اختبر أسئلة لا توجد إجاباتها في الملف.",
+            "أضف فتح الصفحة الأصلية."
+          ],
+          "metric": "دقة الإحالة وزمن العثور على المصدر.",
+          "difficulty": "متوسطة تقديرًا",
+          "risks": "المحاضرات المصورة تحتاج OCR.",
+          "sources": [
+            {
+              "title": "PageIndex README",
+              "url": "https://github.com/VectifyAI/PageIndex/blob/main/README.md"
+            },
+            {
+              "title": "PageIndex Getting Started",
+              "url": "https://docs.pageindex.ai/getting-started"
+            },
+            {
+              "title": "PageIndex Client",
+              "url": "https://docs.pageindex.ai/sdk/client"
+            }
+          ]
+        },
+        {
+          "title": "مقارن اللوائح والسياسات بين الإصدارات",
+          "problem": "يصعب تتبع تغييرات اللوائح الطويلة.",
+          "approach": "فهرسة كل إصدار كشجرة ثم مقارنة العقد ذات الصلة.",
+          "stack": "Python, PageIndex, diff engine",
+          "steps": [
+            "احفظ نسختين مع تاريخ وإصدار.",
+            "أنشئ فهرسًا لكل نسخة.",
+            "ابحث عن الأقسام ذات الصلة.",
+            "قارن النصوص والصفحات دون استنتاج قانوني آلي.",
+            "اعرض الفروق لمراجع بشري."
+          ],
+          "metric": "دقة تحديد مواضع التغيير.",
+          "difficulty": "متوسطة إلى مرتفعة تقديرًا",
+          "risks": "اختلاف الترقيم قد ينتج فروقًا شكلية؛ ليس استشارة قانونية.",
+          "sources": [
+            {
+              "title": "PageIndex README",
+              "url": "https://github.com/VectifyAI/PageIndex/blob/main/README.md"
+            },
+            {
+              "title": "PageIndex Getting Started",
+              "url": "https://docs.pageindex.ai/getting-started"
+            },
+            {
+              "title": "PageIndex Client",
+              "url": "https://docs.pageindex.ai/sdk/client"
+            }
+          ]
+        },
+        {
+          "title": "فهرس أبحاث علمية طويل المدى",
+          "problem": "تتوزع الإجابة العلمية بين أوراق طويلة وملاحق.",
+          "approach": "فهرسة الأوراق مع DOI والإصدار والصفحات وإرجاع أدلة قابلة للتتبع.",
+          "stack": "Python, PageIndex, Crossref metadata",
+          "steps": [
+            "اختر مجموعة أوراق مفتوحة الترخيص.",
+            "سجل DOI والإصدار وبيانات النشر.",
+            "ابن الفهرس مع حفظ الصفحات.",
+            "اختبر أسئلة تتطلب أكثر من ورقة.",
+            "اعرض المراجع وحدود التعميم."
+          ],
+          "metric": "دقة الإحالات وتغطية المراجع.",
+          "difficulty": "متوسطة إلى مرتفعة تقديرًا",
+          "risks": "اختلاف نسخ arXiv والنسخ المنشورة قد يسبب إحالات غير متطابقة.",
+          "sources": [
+            {
+              "title": "PageIndex README",
+              "url": "https://github.com/VectifyAI/PageIndex/blob/main/README.md"
+            },
+            {
+              "title": "PageIndex Getting Started",
+              "url": "https://docs.pageindex.ai/getting-started"
+            },
+            {
+              "title": "PageIndex Client",
+              "url": "https://docs.pageindex.ai/sdk/client"
+            }
+          ]
+        }
+      ],
+      "religious": [],
+      "testEvidence": null
+    }
+  ]
+}

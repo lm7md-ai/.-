@@ -8516,20 +8516,20 @@
     },
     "55c5e35b9bbd92d15c": {
       "url": "https://github.com/VectifyAI/PageIndex",
-      "titleAr": "PageIndex — استرجاع الوثائق بفهرس شجري بدل قاعدة متجهات",
-      "summaryAr": "مكتبة Python تولد فهرسًا هرميًا للأقسام ثم تستخدم استدلال نموذج لغة للانتقال إلى النص المناسب والإجابة بإحالات. وفق README، يدعم SDK فهرسة محلية لملفات PDF النصية وخدمة سحابية لملفات أكثر تعقيدًا.",
-      "whyItMatters": "تتيح مقارنة RAG شجري مع RAG متجهي على المحاضرات والتقارير الطويلة، مع التركيز على صحة الإحالات وتكلفة الاستدلال.",
-      "audience": "مطورو Python وRAG والطلاب والباحثون.",
-      "overview": "يفصل PageIndex بين بناء شجرة الوثيقة والبحث الاستدلالي داخلها. رخصة الشيفرة MIT. أرقام الدقة والكلفة الواردة في README قياسات الفريق لا نتائج اختبارات مستقلة.",
-      "requirements": "Python وpip وPDF نصي ومفتاح API لمزود نموذج للوضع المحلي؛ قد تنشأ رسوم توكنات. الوضع السحابي يحتاج مفتاح PageIndex Cloud وقد تكون له رسوم معالجة وتخزين، ويدعم وفق التوثيق OCR والوثائق المصورة.",
-      "quickStart": "أنشئ بيئة Python ونفّذ pip install -U pageindex، واضبط مفتاح مزود النموذج في متغير بيئة، ثم أنشئ PageIndexClient(index=...,chat=...) واستخدم submit_document('report.pdf') وclient.chat(question,doc_id=...). راجع أمثلة README.",
+      "titleAr": "PageIndex — فهرسة شجرية للوثائق واسترجاع استدلالي دون قاعدة متجهات",
+      "summaryAr": "يوفر PageIndex SDK Python مفتوح المصدر يبني فهرسًا شجريًا للوثيقة ثم يستخدم نموذجًا لغويًا للبحث داخله بدل الاعتماد على تشابه المتجهات. يتوفر وضع محلي للـPDF ذي طبقة نصية ووضع سحابي يضيف OCR وفهم الصور والتخزين المدار. الأسعار تختلف بين الفهرسة العادية وFlash، وتُحاسب النماذج بشكل منفصل.",
+      "whyItMatters": "قد يفيد الاسترجاع الشجري في التقارير الطويلة التي تعتمد الإجابة فيها على بنية الأقسام والعلاقات بين الصفحات. لكنه نهج بديل يجب مقارنته على مجموعة أسئلة حقيقية مع RAG المتجهي، لا افتراض أنه أفضل لكل نوع مستند.",
+      "audience": "مهندسو RAG والوكلاء وفرق تحليل الوثائق المالية والقانونية والأكاديمية.",
+      "overview": "مكتبة Python بترخيص MIT تبني شجرة فهرسة للوثيقة وتتيح للـLLM التنقل في بنية الشجرة للوصول إلى الصفحات ذات الصلة. الوضع المحلي يخزن الفهرس على الجهاز ويعالج طبقة النص في PDF؛ أما PageIndex Cloud فيدير الفهرسة والتخزين ويضيف OCR وفهم الصور. لا يحتاج النهج إلى قاعدة متجهات، لكنه يعتمد على نموذج لغوي في بناء الفهرس والاسترجاع.",
+      "requirements": "Python >=3.10 حسب pyproject.toml، وpip وملف PDF. الوضع المحلي يحتاج مفتاح مزود نموذج للفهرسة والإجابة، ولا يحتاج PAGEINDEX_API_KEY. الوضع السحابي يحتاج PAGEINDEX_API_KEY للفهرسة والتخزين ومفتاح مزود LLM للمحادثة؛ ويوفر OCR وفهم الصور. لا يلزم vector database.",
+      "quickStart": "أنشئ بيئة Python ثم pip install -U pageindex. في الوضع المحلي اضبط مفتاح مزود LLM وأنشئ PageIndexClient(index=\"your-index-model\", chat=\"your-chat-model\")، ثم submit_document(\"report.pdf\", wait=True) واسأل عبر client.chat(question, doc_id=doc_id). في Cloud اضبط PAGEINDEX_API_KEY واستخدم index=\"cloud\"؛ ما يزال chat على نموذجك ومفتاح مزودك. لم أجرّب استدعاءً فعليًا.",
       "nextSteps": [
-        "اختبر PDF نصيًا غير حساس.",
-        "تحقق يدويًا من إجابات 30 سؤالًا وإحالاتها.",
-        "قارن الزمن وتكلفة API مع RAG متجهي."
+        "ابدأ بملف PDF نصي صغير وقارن الإجابات مع صفحات المصدر يدويًا.",
+        "قارن PageIndex مع RAG متجهي على الأسئلة نفسها واحتسب التكلفة والزمن.",
+        "استخدم الوضع السحابي فقط إذا احتجت OCR أو فهم الصور وبعد مراجعة سياسة التخزين والتكلفة."
       ],
-      "limitations": "لم أشغّل المشروع؛ التشغيل المحلي قد يستدعي API سحابيًا ولا يعني العمل دون شبكة. البدائل تشمل Haystack وLlamaIndex والاسترجاع الهجين.",
-      "reviewedAt": "2026-10-26T05:45:27+03:00",
+      "limitations": "الوضع المحلي يعتمد على طبقة النص في PDF؛ الملفات الممسوحة والصور تحتاج الوضع السحابي. تقديرات الكلفة والمقارنات المنشورة من المشروع وعلى إعدادات محددة، ولا تثبت تفوقًا عامًا. قد ترتفع تكلفة الاستدلال مع كثرة التنقل في الشجرة.",
+      "reviewedAt": "2026-11-07T23:38:28+03:00",
       "basis": "readme",
       "sources": [
         {
@@ -8541,8 +8541,28 @@
           "url": "https://docs.pageindex.ai"
         },
         {
-          "title": "PageIndex MIT license",
+          "title": "PageIndex LICENSE",
           "url": "https://github.com/VectifyAI/PageIndex/blob/main/LICENSE"
+        },
+        {
+          "title": "PageIndex README",
+          "url": "https://github.com/VectifyAI/PageIndex/blob/main/README.md"
+        },
+        {
+          "title": "PageIndex Getting Started",
+          "url": "https://docs.pageindex.ai/getting-started"
+        },
+        {
+          "title": "PageIndex Client",
+          "url": "https://docs.pageindex.ai/sdk/client"
+        },
+        {
+          "title": "PageIndex Pricing",
+          "url": "https://docs.pageindex.ai/pricing"
+        },
+        {
+          "title": "PageIndex pyproject",
+          "url": "https://github.com/VectifyAI/PageIndex/blob/main/pyproject.toml"
         }
       ],
       "improvements": [
@@ -8595,6 +8615,96 @@
               "url": "https://docs.pageindex.ai"
             }
           ]
+        },
+        {
+          "title": "Benchmark عربي لاسترجاع PDF طويل",
+          "problem": "لا يوضح تقييم عام ما إذا كان الاسترجاع الشجري يحافظ على إحالات صحيحة في العربية وRTL.",
+          "approach": "إنشاء مجموعة PDF عربية مرخصة بأسئلة مرجعية ومقارنة PageIndex مع RAG متجهي.",
+          "stack": "Python, PageIndex, pytest, Arabic PDF corpus",
+          "steps": [
+            "اجمع ملفات عربية مرخصة.",
+            "أنشئ أسئلة مرجعية وصفحات داعمة.",
+            "شغّل PageIndex على ملفات نصية.",
+            "شغّل baseline متجهي على البيانات نفسها.",
+            "قِس دقة الصفحة والتكلفة والزمن."
+          ],
+          "metric": "Recall@k ودقة إحالة الصفحة وتكلفة السؤال.",
+          "difficulty": "مرتفعة تقديرًا",
+          "risks": "جودة OCR والخطوط وتنوع الوثائق قد تحيز النتائج.",
+          "sources": [
+            {
+              "title": "PageIndex README",
+              "url": "https://github.com/VectifyAI/PageIndex/blob/main/README.md"
+            },
+            {
+              "title": "PageIndex Getting Started",
+              "url": "https://docs.pageindex.ai/getting-started"
+            },
+            {
+              "title": "PageIndex Client",
+              "url": "https://docs.pageindex.ai/sdk/client"
+            }
+          ]
+        },
+        {
+          "title": "إدارة إصدارات أشجار الوثائق",
+          "problem": "تحديث ملف طويل قد يترك إحالات قديمة أو يفرض إعادة فهرسة كاملة.",
+          "approach": "حفظ بصمة لكل قسم وربط التغييرات بالعقد التي تحتاج تحديثًا.",
+          "stack": "Python, PageIndex, hashes, SQLite",
+          "steps": [
+            "قسّم المستند إلى وحدات مستقرة.",
+            "احفظ إصدار الشجرة ومصدر المستند.",
+            "قارن الإصدار الجديد بالعقد السابقة.",
+            "أعد بناء العقد المتغيرة إن دعم API ذلك.",
+            "اختبر أن الإجابات تشير إلى الإصدار الصحيح."
+          ],
+          "metric": "نسبة العقد المعاد بناؤها وزمن التحديث.",
+          "difficulty": "متوسطة إلى مرتفعة تقديرًا",
+          "risks": "قد تتغير بنية الفهرسة داخليًا؛ يلزم اختبار قبل إعادة الاستخدام.",
+          "sources": [
+            {
+              "title": "PageIndex README",
+              "url": "https://github.com/VectifyAI/PageIndex/blob/main/README.md"
+            },
+            {
+              "title": "PageIndex Getting Started",
+              "url": "https://docs.pageindex.ai/getting-started"
+            },
+            {
+              "title": "PageIndex Client",
+              "url": "https://docs.pageindex.ai/sdk/client"
+            }
+          ]
+        },
+        {
+          "title": "قياس جودة الإحالات لكل صفحة",
+          "problem": "قد تشير الإجابة إلى صفحة غير داعمة.",
+          "approach": "طبقة تقييم تربط كل ادعاء بصفحة ومقطع داعم قبل عرضه.",
+          "stack": "Python, PageIndex, citation evaluator",
+          "steps": [
+            "أنشئ إجابات مرجعية وصفحات محددة.",
+            "استخرج إحالات كل إجابة.",
+            "راجع عينة عمياء بشريًا.",
+            "صنّف الإحالات صحيحة أو جزئية أو غير داعمة.",
+            "أوقف الادعاءات التي لا تملك سندًا."
+          ],
+          "metric": "Citation precision ونسبة الادعاءات المدعومة.",
+          "difficulty": "متوسطة إلى مرتفعة تقديرًا",
+          "risks": "قد يخلط التقييم الآلي بين التشابه والدليل المباشر.",
+          "sources": [
+            {
+              "title": "PageIndex README",
+              "url": "https://github.com/VectifyAI/PageIndex/blob/main/README.md"
+            },
+            {
+              "title": "PageIndex Getting Started",
+              "url": "https://docs.pageindex.ai/getting-started"
+            },
+            {
+              "title": "PageIndex Client",
+              "url": "https://docs.pageindex.ai/sdk/client"
+            }
+          ]
         }
       ],
       "spinoffs": [
@@ -8645,6 +8755,96 @@
             {
               "title": "PageIndex documentation",
               "url": "https://docs.pageindex.ai"
+            }
+          ]
+        },
+        {
+          "title": "مساعد محاضرات بإحالات الصفحات",
+          "problem": "يصعب الرجوع إلى موضع المعلومة في محاضرات طويلة.",
+          "approach": "تطبيق يفهرس PDF ويعرض الإجابة مع الصفحة والعنوان والاقتباس.",
+          "stack": "Python, PageIndex SDK, FastAPI",
+          "steps": [
+            "اختر محاضرات مرخصة.",
+            "ابن فهرسًا محليًا لكل ملف.",
+            "أضف واجهة تعرض الصفحات الداعمة.",
+            "اختبر أسئلة لا توجد إجاباتها في الملف.",
+            "أضف فتح الصفحة الأصلية."
+          ],
+          "metric": "دقة الإحالة وزمن العثور على المصدر.",
+          "difficulty": "متوسطة تقديرًا",
+          "risks": "المحاضرات المصورة تحتاج OCR.",
+          "sources": [
+            {
+              "title": "PageIndex README",
+              "url": "https://github.com/VectifyAI/PageIndex/blob/main/README.md"
+            },
+            {
+              "title": "PageIndex Getting Started",
+              "url": "https://docs.pageindex.ai/getting-started"
+            },
+            {
+              "title": "PageIndex Client",
+              "url": "https://docs.pageindex.ai/sdk/client"
+            }
+          ]
+        },
+        {
+          "title": "مقارن اللوائح والسياسات بين الإصدارات",
+          "problem": "يصعب تتبع تغييرات اللوائح الطويلة.",
+          "approach": "فهرسة كل إصدار كشجرة ثم مقارنة العقد ذات الصلة.",
+          "stack": "Python, PageIndex, diff engine",
+          "steps": [
+            "احفظ نسختين مع تاريخ وإصدار.",
+            "أنشئ فهرسًا لكل نسخة.",
+            "ابحث عن الأقسام ذات الصلة.",
+            "قارن النصوص والصفحات دون استنتاج قانوني آلي.",
+            "اعرض الفروق لمراجع بشري."
+          ],
+          "metric": "دقة تحديد مواضع التغيير.",
+          "difficulty": "متوسطة إلى مرتفعة تقديرًا",
+          "risks": "اختلاف الترقيم قد ينتج فروقًا شكلية؛ ليس استشارة قانونية.",
+          "sources": [
+            {
+              "title": "PageIndex README",
+              "url": "https://github.com/VectifyAI/PageIndex/blob/main/README.md"
+            },
+            {
+              "title": "PageIndex Getting Started",
+              "url": "https://docs.pageindex.ai/getting-started"
+            },
+            {
+              "title": "PageIndex Client",
+              "url": "https://docs.pageindex.ai/sdk/client"
+            }
+          ]
+        },
+        {
+          "title": "فهرس أبحاث علمية طويل المدى",
+          "problem": "تتوزع الإجابة العلمية بين أوراق طويلة وملاحق.",
+          "approach": "فهرسة الأوراق مع DOI والإصدار والصفحات وإرجاع أدلة قابلة للتتبع.",
+          "stack": "Python, PageIndex, Crossref metadata",
+          "steps": [
+            "اختر مجموعة أوراق مفتوحة الترخيص.",
+            "سجل DOI والإصدار وبيانات النشر.",
+            "ابن الفهرس مع حفظ الصفحات.",
+            "اختبر أسئلة تتطلب أكثر من ورقة.",
+            "اعرض المراجع وحدود التعميم."
+          ],
+          "metric": "دقة الإحالات وتغطية المراجع.",
+          "difficulty": "متوسطة إلى مرتفعة تقديرًا",
+          "risks": "اختلاف نسخ arXiv والنسخ المنشورة قد يسبب إحالات غير متطابقة.",
+          "sources": [
+            {
+              "title": "PageIndex README",
+              "url": "https://github.com/VectifyAI/PageIndex/blob/main/README.md"
+            },
+            {
+              "title": "PageIndex Getting Started",
+              "url": "https://docs.pageindex.ai/getting-started"
+            },
+            {
+              "title": "PageIndex Client",
+              "url": "https://docs.pageindex.ai/sdk/client"
             }
           ]
         }
@@ -10471,20 +10671,20 @@
     },
     "e622970364717202be": {
       "url": "https://github.com/HKUDS/DeepTutor",
-      "titleAr": "DeepTutor — منصة تعليم شخصية تربط المحتوى بالممارسة والمصادر",
-      "summaryAr": "مشروع مفتوح المصدر للتعلم بمساعدة الوكلاء، يجمع المحادثة والمصادر الدراسية ومسارات التعلم والاختبارات ومساحات العمل. توضح وثائقه إمكان تشغيل الواجهة عبر Docker أو تثبيت Python وNext.js، مع اختيار مزود نموذج مناسب.",
-      "whyItMatters": "تحليل تحريري: يتيح دراسة تجربة تعليمية عملية يمكن قياس فائدتها على ملفات مقرر حقيقي، مع ضرورة الفصل بين دقة الإجابة وجودة التفاعل وسلامة الإحالات.",
-      "audience": "الطلاب ومطورو أدوات التعليم الذكي والباحثون في تقييم التعلم.",
-      "overview": "يتيح DeepTutor مساحات محتوى ودروسًا وأنشطة تعلم ووكلاء مع خيارات بحث واسترجاع ومزودي نماذج. تشير ملاحظات إصدار 19 أكتوبر إلى تحسين مسارات التعلم والتعافي من المحادثات وتقييد الذاكرة. ترخيص الشيفرة Apache-2.0 كما يظهر في LICENSE؛ ترخيص النماذج والمحتوى الخارجي منفصل.",
-      "requirements": "للتجربة السريعة Docker ومساحة تخزين؛ وللتثبيت من المصدر Python 3.11–3.14 وNode.js 22 LTS وnpm حسب دليل الإعداد. يلزم اختيار مزود LLM، وقد تتطلب قواعد المعرفة مزود embeddings. يمكن ضبط endpoint محلي عند دعمه، بينما الخدمات السحابية قد تفرض تكلفة API. لا تفترض أن جميع الوظائف تعمل دون إنترنت.",
-      "quickStart": "اقرأ README ودليل AGENT_SETUP، ثم جرّب حاوية Docker الموثقة على 127.0.0.1:3782 مع volume دائم، أو ثبّت بيئة Python وواجهتها كما في الدليل. افتح Settings → Providers وحدد النموذج وبيانات اعتماده في مصدر آمن، ثم اختبر ملف محاضرة صغيرًا وتحقق من إحالاته. لم أشغّل أيًا من هذه الخطوات.",
+      "titleAr": "DeepTutor — منصة تعلم شخصية تربط الشرح بالمصادر والممارسة",
+      "summaryAr": "مشروع مفتوح المصدر يجمع مساحات التعلم وقواعد المعرفة والبحث والاسترجاع ومسارات الممارسة، مع واجهة ويب وCLI وتكاملات للوكلاء. يذكر README إصدار v1.7.2 بتاريخ 6 نوفمبر 2026، بينما يتيح التوثيق تشغيل النماذج محليًا أو عبر مزود سحابي.",
+      "whyItMatters": "يجمع DeepTutor دورة تعلم منظم بدل الاكتفاء بمحادثة عامة: مواد ومصادر وذاكرة ومسارات إتقان. فائدته تعتمد على ضبط مزود النموذج والتحقق من الإحالات؛ لا ينبغي اعتبار الشرح المولد بديلًا عن المصدر أو المعلم.",
+      "audience": "الطلاب والمعلمون والمتعلمون ذاتيًا ومطورو أدوات التعليم والوكلاء.",
+      "overview": "منصة تعلم شخصية مفتوحة المصدر بترخيص Apache-2.0. يذكر README إصدار v1.7.2، ويضم مساحة ويب وCLI وKnowledge Bases ومسارات تعلم وممارسة وتكاملات. يدعم مزودي نماذج مستضافة ومحلية مثل Ollama وLM Studio وllama.cpp وvLLM؛ وتبقى تراخيص النماذج والمحتوى الذي يضيفه المستخدم مستقلة عن ترخيص الشيفرة.",
+      "requirements": "Python 3.11–3.14؛ Node.js 20+ لمسار PyPI و22 LTS للتطوير من المصدر؛ Docker يوفر الحزمة الكاملة في حاوية واحدة. يلزم مزود LLM؛ المستضاف يحتاج عادة مفتاح API وتكلفة استخدام، والمحلي يحتاج موارد الجهاز. Embeddings اختيارية إلا عند استخدام Knowledge Bases. RAM والتخزين يعتمدان على النماذج والملفات.",
+      "quickStart": "أنشئ مجلد تشغيل مستقلًا، ثم python -m pip install \"deeptutor[full]\"، وبعدها deeptutor init ثم deeptutor start وافتح http://127.0.0.1:3782. في Docker يوصي الدليل بربط المنفذ محليًا 127.0.0.1:3782 مع volume دائم لمجلد /app/data؛ لا حاجة لنشر منفذ backend 8001 للواجهة. اضبط مزود النموذج من Settings → Models & services. لم أشغّل هذه الخطوات.",
       "nextSteps": [
-        "اختر درسًا قصيرًا له إجابات مرجعية وصفحات محددة.",
-        "اضبط المزود وحدود التكلفة وبيئة التشغيل.",
-        "قارن جودة الإحالات والفهم مع المادة الأصلية قبل الاعتماد الدراسي."
+        "ابدأ بمقرر واحد وملف مصدر قصير، ثم تحقق يدويًا من كل إحالة إلى الصفحة أو الفقرة الأصلية.",
+        "جرّب مزودًا محليًا قبل استخدام API سحابي، واحسب تكلفة النموذج والـembeddings إن لزمت.",
+        "احتفظ بمجلد data وملفات مساحة العمل في تخزين خاص، واختبر النسخ الاحتياطي قبل الترقية."
       ],
-      "limitations": "لم أشغّل المشروع ولم أختبر دقة الشرح أو استهلاك الموارد. تعدد المزودين لا يضمن جودة اللغة العربية أو مجانية الاستدلال. بعض الوظائف تحتاج خدمات إضافية وحقوقًا لاستخدام المواد المرفوعة.",
-      "reviewedAt": "2026-10-26T20:42:41+03:00",
+      "limitations": "المشروع سريع التطور. صفحة تثبيت PyPI في التوثيق ما تزال تعرض أمثلة مثبتة على 1.7.0 بينما README يذكر v1.7.2؛ لذلك استخدمت أمر تثبيت غير مثبت الإصدار. بعض ميزات سطح المكتب Preview. جودة الشرح تعتمد على النموذج والمصادر، ولم تُنفذ اختبارات أو تثبيت فعلي.",
+      "reviewedAt": "2026-11-07T23:38:28+03:00",
       "basis": "readme",
       "sources": [
         {
@@ -10496,8 +10696,24 @@
           "url": "https://github.com/HKUDS/DeepTutor/blob/main/docs-for-user/AGENT_SETUP.md"
         },
         {
-          "title": "DeepTutor Apache-2.0 license",
+          "title": "DeepTutor LICENSE",
           "url": "https://github.com/HKUDS/DeepTutor/blob/main/LICENSE"
+        },
+        {
+          "title": "DeepTutor Get Started",
+          "url": "https://docs.deeptutor.info/get-started/"
+        },
+        {
+          "title": "DeepTutor PyPI",
+          "url": "https://docs.deeptutor.info/get-started/pypi/"
+        },
+        {
+          "title": "DeepTutor Docker",
+          "url": "https://docs.deeptutor.info/get-started/docker/"
+        },
+        {
+          "title": "DeepTutor Providers",
+          "url": "https://docs.deeptutor.info/get-started/providers/"
         }
       ],
       "improvements": [
@@ -10573,6 +10789,92 @@
             {
               "title": "DeepTutor agent setup",
               "url": "https://github.com/HKUDS/DeepTutor/blob/main/docs-for-user/AGENT_SETUP.md"
+            }
+          ]
+        },
+        {
+          "title": "اختبار إحالات الشرح العربي إلى صفحات المصدر",
+          "problem": "قد تبدو الإجابة صحيحة لغويًا بينما تشير إلى صفحة لا تدعمها.",
+          "approach": "بناء مجموعة أسئلة عربية مرتبطة بمواضع مرجعية وقياس صحة كل إحالة.",
+          "stack": "Python, pytest, DeepTutor, PDF fixtures, JSONL",
+          "steps": [
+            "اختر محاضرات مرخصة ومحدودة.",
+            "أنشئ أسئلة مرجعية مع الصفحة والفقرة الداعمتين.",
+            "اجمع إجابات الوكيل وإحالاتها.",
+            "قارن الإحالات بالمواضع المرجعية.",
+            "أصدر تقريرًا يفرق بين خطأ الاسترجاع والتوليد."
+          ],
+          "metric": "دقة الإحالة ونسبة الادعاءات المدعومة.",
+          "difficulty": "متوسطة إلى مرتفعة تقديرًا",
+          "risks": "قد تفشل ملفات PDF المصورة أو تختلف صفحات الطبعات.",
+          "sources": [
+            {
+              "title": "DeepTutor README",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/README.md"
+            },
+            {
+              "title": "DeepTutor Get Started",
+              "url": "https://docs.deeptutor.info/get-started/"
+            },
+            {
+              "title": "DeepTutor PyPI",
+              "url": "https://docs.deeptutor.info/get-started/pypi/"
+            }
+          ]
+        },
+        {
+          "title": "خريطة تغطية أهداف المقرر",
+          "problem": "يصعب معرفة ما إذا كانت الشروحات والتمارين تغطي نواتج التعلم.",
+          "approach": "ربط كل هدف بمصدر ونشاط وسؤال تحقق وإظهار الفجوات.",
+          "stack": "Python, JSON Schema, DeepTutor, SQLite",
+          "steps": [
+            "استخرج نواتج التعلم من توصيف مقرر مرخص.",
+            "حوّل كل ناتج إلى معرف ثابت.",
+            "اربط المقاطع والأنشطة والأسئلة بكل ناتج.",
+            "احسب الأهداف التي لا تملك مصدرًا أو تمرينًا.",
+            "راجع الخريطة مع مدرس."
+          ],
+          "metric": "نسبة الأهداف التي لها مصدر ونشاط وسؤال.",
+          "difficulty": "متوسطة تقديرًا",
+          "risks": "قد ينتج الربط الآلي تغطية وهمية؛ يلزم اعتماد بشري.",
+          "sources": [
+            {
+              "title": "DeepTutor README",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/README.md"
+            },
+            {
+              "title": "DeepTutor Get Started",
+              "url": "https://docs.deeptutor.info/get-started/"
+            }
+          ]
+        },
+        {
+          "title": "تصدير تقدم التعلم بصيغة مفتوحة",
+          "problem": "قد يصبح سجل التقدم مرتبطًا بإصدار واحد.",
+          "approach": "إضافة تصدير واستيراد للتقدم والملاحظات ومراجع المصادر بمخطط قابل للإصدار.",
+          "stack": "Python, JSON, SQLite, schema tests",
+          "steps": [
+            "حدد البيانات القابلة للتصدير.",
+            "ضع مخطط JSON بإصدار ومعرفات مستقرة.",
+            "أضف تصديرًا لا يتضمن مفاتيح API.",
+            "اختبر الاستيراد في نسخة نظيفة.",
+            "وثّق النسخ الاحتياطي والحذف والترقية."
+          ],
+          "metric": "نسبة السجلات المنقولة دون فقد أو تسريب.",
+          "difficulty": "متوسطة تقديرًا",
+          "risks": "تسرب بيانات شخصية أو عدم توافق المخطط.",
+          "sources": [
+            {
+              "title": "DeepTutor README",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/README.md"
+            },
+            {
+              "title": "DeepTutor Get Started",
+              "url": "https://docs.deeptutor.info/get-started/"
+            },
+            {
+              "title": "DeepTutor PyPI",
+              "url": "https://docs.deeptutor.info/get-started/pypi/"
             }
           ]
         }
@@ -10652,8 +10954,95 @@
               "url": "https://github.com/HKUDS/DeepTutor/blob/main/docs-for-user/AGENT_SETUP.md"
             }
           ]
+        },
+        {
+          "title": "مساعد مقرر محلي من ملفات المحاضرات",
+          "problem": "يحتاج الطالب شرحًا مرتبطًا بملف المقرر.",
+          "approach": "مساحة تستورد ملفات محاضرات محلية وتعرض شرحًا مع الصفحة والاقتباس.",
+          "stack": "Python, DeepTutor SDK, local LLM, PDF parser",
+          "steps": [
+            "اختر ملفًا يملك المستخدم حق استخدامه.",
+            "أنشئ مساحة مستقلة ومجلد بيانات محليًا.",
+            "اضبط مزودًا محليًا عند توفر الموارد.",
+            "اختبر أسئلة لها إجابات واضحة في الملف.",
+            "أظهر الصفحة وامتنع عند غياب الدليل."
+          ],
+          "metric": "نسبة الإجابات ذات الصفحة الصحيحة.",
+          "difficulty": "متوسطة تقديرًا",
+          "risks": "قد يفشل استخراج النص العربي من ملفات مصورة.",
+          "sources": [
+            {
+              "title": "DeepTutor README",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/README.md"
+            },
+            {
+              "title": "DeepTutor Get Started",
+              "url": "https://docs.deeptutor.info/get-started/"
+            },
+            {
+              "title": "DeepTutor PyPI",
+              "url": "https://docs.deeptutor.info/get-started/pypi/"
+            }
+          ]
+        },
+        {
+          "title": "مختبر تمارين Python مع اختبارات قابلة لإعادة التشغيل",
+          "problem": "قد يشرح المساعد الحل دون التحقق من فهم المتعلم.",
+          "approach": "تمارين تشغّل الشيفرة في بيئة معزولة وتعرض تلميحات بعد المحاولة.",
+          "stack": "Python, pytest, isolated runner, DeepTutor",
+          "steps": [
+            "اكتب تمارين أصلية أو مرخصة.",
+            "حدد اختبارات وحدود وقت وذاكرة.",
+            "شغّل الشيفرة في بيئة معزولة.",
+            "اعرض تلميحًا بعد فشل قابل للتفسير.",
+            "احفظ التقدم دون أسرار."
+          ],
+          "metric": "نسبة اجتياز الاختبارات بعد التلميحات.",
+          "difficulty": "مرتفعة تقديرًا",
+          "risks": "تشغيل شيفرة غير موثوقة يتطلب عزلًا قويًا.",
+          "sources": [
+            {
+              "title": "DeepTutor README",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/README.md"
+            },
+            {
+              "title": "DeepTutor Get Started",
+              "url": "https://docs.deeptutor.info/get-started/"
+            }
+          ]
+        },
+        {
+          "title": "مسار مراجعة متباعد من الأخطاء السابقة",
+          "problem": "تتكرر أخطاء الطالب دون خطة مراجعة.",
+          "approach": "تحويل الأخطاء إلى بطاقات مرتبطة بهدف المقرر والمصدر.",
+          "stack": "Python, SQLite, spaced repetition",
+          "steps": [
+            "سجل المفهوم الذي أخفق فيه المتعلم.",
+            "حوّل الخطأ إلى سؤال قصير.",
+            "حدد موعد المراجعة حسب الأداء.",
+            "أعد الاختبار بمثال جديد.",
+            "اعرض التقدم مع تعديل الجدول."
+          ],
+          "metric": "انخفاض تكرار الخطأ بعد أسبوعين.",
+          "difficulty": "متوسطة تقديرًا",
+          "risks": "قد يبالغ النظام في تقدير الإتقان.",
+          "sources": [
+            {
+              "title": "DeepTutor README",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/README.md"
+            },
+            {
+              "title": "DeepTutor Get Started",
+              "url": "https://docs.deeptutor.info/get-started/"
+            },
+            {
+              "title": "DeepTutor PyPI",
+              "url": "https://docs.deeptutor.info/get-started/pypi/"
+            }
+          ]
         }
-      ]
+      ],
+      "religious": []
     },
     "f74d5b6b78b8a1a444": {
       "url": "https://github.com/DeusData/codebase-memory-mcp",
@@ -37465,56 +37854,6 @@
         }
       ]
     },
-    "5222b774813a87d84a": {
-      "url": "https://www.reuters.com/business/world-at-work/britain-make-salary-disclosure-job-ads-mandatory-2026-11-05/",
-      "titleAr": "بريطانيا تعلن خطة لإلزام أصحاب العمل بإظهار الرواتب في إعلانات الوظائف",
-      "summaryAr": "أعلنت الحكومة البريطانية نيتها تقديم تشريع يلزم أصحاب العمل بنشر معلومات الرواتب في إعلانات الوظائف. ويذكر البيان أن 41% من أصحاب العمل ينشرون نطاقات الرواتب دائمًا، و18% ينشرون الراتب المحدد، وفق تقرير CIPD لعام 2024. كما أعلنت Siemens Mobility برنامج خبرة عملية يستهدف 10,000 شاب وشابة في الهندسة والتقنية خلال ثلاث سنوات. لم يصدر التشريع بعد ولم تُحدد تفاصيل التنفيذ.",
-      "whyItMatters": "قد تساعد شفافية الأجور الطلاب والخريجين على تقييم الفرص قبل التقديم، بينما يوضح برنامج الخبرة العملية أهمية المسارات المبكرة لاكتساب خبرة تقنية. لكن كلتا المبادرتين مرتبطتان بسوق العمل البريطاني ولا تعنيان توفر فرص مماثلة تلقائيًا في السعودية.",
-      "audience": "الطلاب والخريجون والباحثون عن عمل وأصحاب العمل وفرق الموارد البشرية.",
-      "nextSteps": [
-        "تابع صدور مشروع القانون وتفاصيل نطاقه وموعد تطبيقه قبل اعتباره نافذًا.",
-        "لمن يبحث عن فرص في بريطانيا، راجع شروط الأهلية والموقع ومواعيد برامج الخبرة لدى Siemens Mobility.",
-        "استخدم الراتب المعلن، ومتطلبات الوظيفة، ونوع العقد، والموقع معًا عند مقارنة الفرص."
-      ],
-      "limitations": "الإعلان خطة حكومية أولية؛ قالت الحكومة إنها ستقدم التشريع لاحقًا، ولم تُحدد بعد التفاصيل أو موعد النفاذ. أرقام 41% و18% من تقرير CIPD لعام 2024 كما نقلتها الحكومة. برنامج الخبرة يخص المملكة المتحدة.",
-      "reviewedAt": "2026-11-07T02:47:03+03:00",
-      "basis": "article",
-      "sources": [
-        {
-          "title": "GOV.UK — New ‘say what you pay’ law to help young people into work",
-          "url": "https://www.gov.uk/government/news/new-say-what-you-pay-law-to-help-young-people-into-work"
-        },
-        {
-          "title": "Reuters — Britain to make salary disclosure in job ads mandatory",
-          "url": "https://www.reuters.com/business/world-at-work/britain-make-salary-disclosure-job-ads-mandatory-2026-11-05/"
-        }
-      ]
-    },
-    "1cff92b3d4b08e145f": {
-      "url": "https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05/",
-      "titleAr": "إدارة الطيران الأمريكية تبدأ استبدال أنظمة قديمة تعتمد على الأقراص المرنة بحلول 2028",
-      "summaryAr": "قالت إدارة الطيران الفيدرالية الأمريكية إنها بدأت تحديث أنظمة قديمة كانت تستخدم الأقراص المرنة لتوزيع معلومات الطقس والبيانات التشغيلية. ويستبدل نظام Enterprise Information Display System أربعة أنظمة تعود إلى الثمانينيات في أكثر من 400 منشأة؛ وتقول FAA إنها تخطط لتثبيته في 435 موقعًا بحلول نهاية 2028، وبدأت بخمس منشآت.",
-      "whyItMatters": "توضح المبادرة أن تحديث البنية التحتية الحرجة يتطلب توحيد تدفق المعلومات وتقليل الصيانة اليدوية، لا مجرد استبدال وسيط تخزين قديم. كما تبرز أهمية التخطيط المرحلي والتحقق من الاعتمادية عند تحديث أنظمة يعتمد عليها تشغيل الطيران.",
-      "audience": "مهندسو الأنظمة والبنية التحتية، مهتمو الطيران، مسؤولو التقنية الحكومية، وطلاب هندسة الحاسوب.",
-      "nextSteps": [
-        "تابع مراحل التثبيت والاختبارات المعلنة قبل اعتبار التحديث مكتملًا.",
-        "في الأنظمة المؤسسية، وثّق الاعتماديات القديمة وخطط الانتقال والرجوع الآمن.",
-        "ميّز بين تحديث نظام عرض المعلومات وبين اكتمال تحديث منظومة مراقبة الحركة الجوية بأكملها."
-      ],
-      "limitations": "الأرقام والجدول الزمني واردة في بيان FAA الرسمي؛ لا تمثل تقييمًا مستقلًا لأداء النظام بعد التثبيت. الموعد المستهدف نهاية 2028، والتحديث يخص الولايات المتحدة. لا يعني الإعلان أن جميع المواقع انتقلت بالفعل.",
-      "reviewedAt": "2026-11-07T02:47:03+03:00",
-      "basis": "article",
-      "sources": [
-        {
-          "title": "Federal Aviation Administration — Begins Retiring Decades Old Floppy Disks from Air Traffic Control",
-          "url": "https://www.faa.gov/newsroom/trumps-transportation-secretary-sean-p-duffy-begins-retiring-decades-old-floppy-disks-air"
-        },
-        {
-          "title": "Reuters — US FAA says it will phase out floppy disks from air traffic control by 2028",
-          "url": "https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05/"
-        }
-      ]
-    },
     "b81ea0f95984f901c2": {
       "url": "https://github.com/anomalyco/rune",
       "titleAr": "Rune يقدّم إطار واجهات Rust أصليًا برسوم GPU مع اختبار دون واجهة مرئية",
@@ -37760,6 +38099,186 @@
           "url": "https://www.aramco.com/en/news-media/news/2026/pif-and-aramco-close-humain-transaction-to-accelerate-humains-global-growth"
         }
       ]
+    },
+    "f0247d2be6d23fda27": {
+      "titleAr": "Anthropic تشرح بنية ذاكرة الوكلاء وكيفية تحديثها",
+      "summaryAr": "تشرح Anthropic ذاكرة الوكيل بوصفها طبقات تبدأ بسجلات الجلسات، ثم ملاحظات مختصرة، ثم تمثيلات مترابطة مثل الويكي. وتقترح مراجعة دورية خارج الجلسة تجمع المتكرر وتصحح المعلومات القديمة وتعيد تنظيم الروابط. وتعرض الشركة تجربة داخلية على مجموعة وثائق كبيرة لتحسين الاسترجاع؛ النتائج تخص إعدادها وليست معيارًا مستقلًا.",
+      "whyItMatters": "الوكلاء طويلة العمر لا تحتاج سياقًا أكبر فحسب؛ بل تحتاج فصل السجل الخام عن الذاكرة المشتقة وربط كل معلومة بمصدرها. هذا قد يقلل تكرار السياق ويحسن الاسترجاع، لكنه قد يرسّخ ذاكرة خاطئة إذا لم تُراجع مقابل السجل الأصلي.",
+      "audience": "مطورو الوكلاء طويلة العمر ومهندسو أنظمة RAG والذاكرة وفرق المنتجات.",
+      "nextSteps": [
+        "افصل سجل الأحداث الخام عن الملخصات والذاكرة القابلة للاسترجاع.",
+        "أرفق مصدرًا وتاريخًا لكل معلومة مشتقة مع الرجوع للسجل الأصلي.",
+        "قِس دقة الاسترجاع واستهلاك الرموز ومعدل تصحيح الذكريات القديمة."
+      ],
+      "limitations": "الاختبارات والقياسات داخلية ومن إعداد Anthropic وعلى مهام محددة؛ لا تثبت النتيجة نفسها في كل مجال. مصطلح dreaming يصف معالجة دورية خارج الجلسة، ولا يعني وعيًا أو نومًا.",
+      "reviewedAt": "2026-11-07T23:38:28+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Anthropic — The Components of Agent Memory",
+          "url": "https://www.anthropic.com/research/components-of-agent-memory"
+        }
+      ],
+      "url": "https://www.anthropic.com/research/components-of-agent-memory"
+    },
+    "92b8001eea640de464": {
+      "titleAr": "GitHub تدعو إلى هندسة الوكلاء عبر التخطيط والبناء والتحقق والمراقبة",
+      "summaryAr": "يعرض دليل GitHub دورة عمل للوكلاء بأربع مراحل: Plan وBuild وVerify وObserve. وتجادل الشركة بأن توليد الشيفرة أصبح جزءًا واحدًا من العمل، بينما تزداد أهمية معايير القبول وعزل المهام والاختبارات ومراجعة التغييرات ومراقبة ما بعد النشر. الأرقام والدراسات في المقال من سياقات محددة ويجب نسبتها إلى مصادرها.",
+      "whyItMatters": "زيادة سرعة كتابة الشيفرة لا تعني تلقائيًا تسليمًا أسرع أو أكثر موثوقية. القيمة العملية تنتقل إلى وضوح المطلوب والتحقق المستقل وتقليل حجم التغييرات ومراقبة النتائج بدل قياس النجاح بعدد الأسطر.",
+      "audience": "مطورو البرمجيات وقادة الفرق ومهندسو المنصات والطلاب الذين يستخدمون وكلاء البرمجة.",
+      "nextSteps": [
+        "اكتب معايير قبول قابلة للاختبار قبل تفويض المهمة.",
+        "قسّم العمل إلى تغييرات صغيرة مع بيئة معزولة واختبارات مستقلة.",
+        "راقب زمن المراجعة وإعادة العمل والأخطاء بعد الدمج، لا عدد commits وحده."
+      ],
+      "limitations": "المقال صادر عن GitHub، وهي جهة تقدم أدوات للوكلاء؛ لذلك فهو دليل مورّد وليس تقييمًا محايدًا شاملًا. مؤشرات الاستخدام والدراسة لا تعمم تلقائيًا على كل فريق.",
+      "reviewedAt": "2026-11-07T23:38:28+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "GitHub Blog — Beyond code generation",
+          "url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/"
+        }
+      ],
+      "url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/"
+    },
+    "96d96bc83625d43e64": {
+      "titleAr": "Google تستحوذ على موقع مركز بيانات في وايومنغ بعد أعمال تطوير أولية من Crusoe",
+      "summaryAr": "أعلنت Crusoe أن Google استحوذت على موقع في جنوب شرق وايومنغ كانت Crusoe قد أنجزت فيه أعمال ما قبل التطوير، مثل اختيار الموقع والتنسيق مع الجهات المحلية وتخطيط الطاقة. ويصف بيان الشركة مزيجًا مقترحًا من خلايا الوقود وطاقة الشبكة وتوربينات الغاز، مع مسار مستقبلي لالتقاط الكربون. الإعلان يتعلق بالموقع وخطة الطاقة، ولا يثبت أن مركز البيانات دخل التشغيل.",
+      "whyItMatters": "توسع الذكاء الاصطناعي يعتمد على الكهرباء والتصاريح والربط بالشبكة بقدر اعتماده على وحدات GPU؛ لذلك تؤثر مواقع مراكز البيانات وخيارات الطاقة في التكلفة والقدرة والأثر البيئي.",
+      "audience": "متابعو بنية الذكاء الاصطناعي السحابية ومهندسو مراكز البيانات والطاقة وصناع السياسات.",
+      "nextSteps": [
+        "تابع إعلان السعة النهائية والجدول الزمني للبناء والتشغيل.",
+        "ميّز بين الطاقة المخطط لها والطاقة المتصلة فعليًا بالشبكة.",
+        "قارن ادعاءات خفض الانبعاثات ببيانات تشغيل وتدقيق مستقلة."
+      ],
+      "limitations": "المصدر الأساسي بيان صادر عن Crusoe؛ لا يذكر سعر الصفقة أو السعة التشغيلية النهائية أو موعد التشغيل. التقاط الكربون ورد كمسار مستقبلي وليس قدرة عاملة.",
+      "reviewedAt": "2026-11-07T23:38:28+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Crusoe — Wyoming Data Center Campus Update",
+          "url": "https://www.crusoe.ai/resources/newsroom/crusoe-wyoming-data-center-campus-update"
+        }
+      ],
+      "url": "https://www.crusoe.ai/resources/newsroom/crusoe-wyoming-data-center-campus-update"
+    },
+    "7e28c0d8055c0e98ce": {
+      "titleAr": "FAA تبدأ تحديث أنظمة مراقبة الحركة الجوية القديمة وتستهدف استبدالها بحلول 2028",
+      "summaryAr": "قالت إدارة الطيران الفيدرالية الأمريكية إن نظام E-IDS سيحل محل أربعة أنظمة قديمة يعود بعضها إلى الثمانينيات، ضمن خطة تشمل أكثر من 400 منشأة، مع هدف معلن للوصول إلى 435 موقعًا بحلول نهاية 2028. وركز تقرير Ars Technica على استخدام الأقراص المرنة في أجزاء من البنية القديمة؛ لكن التحديث أوسع من وسيط التخزين وحده ولم يكتمل بعد.",
+      "whyItMatters": "المرافق الحرجة تحتاج تحديثًا تدريجيًا يحافظ على السلامة والتوافر أثناء الانتقال من أنظمة قديمة. نجاح التحديث يقاس بالاعتمادية والاختبارات لا بالمظهر الحديث.",
+      "audience": "مهندسو الأنظمة الحرجة ومتابعو الطيران والبنية الحكومية وفرق تحديث الأنظمة القديمة.",
+      "nextSteps": [
+        "تابع مراحل النشر الفعلية بدل التعامل مع هدف 2028 كإنجاز مكتمل.",
+        "راقب خطط التكرار الاحتياطي والتراجع الآمن أثناء الانتقال.",
+        "ابحث عن تقارير مستقلة عن الاعتمادية والتدريب بعد التشغيل."
+      ],
+      "limitations": "المواعيد والأعداد أهداف معلنة من FAA وليست نتائج نهائية. البيان الرسمي لا يقدم قياسًا مستقلًا للأداء بعد النشر، ولا يعني أن جميع مرافق الحركة الجوية تستخدم الأقراص المرنة بالطريقة نفسها.",
+      "reviewedAt": "2026-11-07T23:38:28+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "FAA — Retiring Decades Old Floppy Disks",
+          "url": "https://www.faa.gov/newsroom/trumps-transportation-secretary-sean-p-duffy-begins-retiring-decades-old-floppy-disks-air"
+        },
+        {
+          "title": "Ars Technica — FAA tech upgrade",
+          "url": "https://arstechnica.com/tech-policy/2026/11/faa-to-finally-ditch-floppy-disks-in-what-it-calls-historic-tech-upgrade/"
+        }
+      ],
+      "url": "https://arstechnica.com/tech-policy/2026/11/faa-to-finally-ditch-floppy-disks-in-what-it-calls-historic-tech-upgrade/"
+    },
+    "1e177f364267cd09f3": {
+      "titleAr": "ديوان المظالم يعرض تجربته في حوكمة الذكاء الاصطناعي خلال قمة لندن",
+      "summaryAr": "أفادت وكالة الأنباء السعودية بأن ديوان المظالم اختتم مشاركته في القمة العالمية لتنظيم الذكاء الاصطناعي في لندن، المنعقدة يومي 5 و6 نوفمبر 2026. وذكر البيان أن المشاركة تناولت استخدام الأنظمة الذكية لدعم العمل القضائي، مع الرقابة البشرية وحماية البيانات والامتثال للأمن السيبراني. ولم يذكر البيان أسماء أنظمة محددة أو نتائج أداء مقاسة.",
+      "whyItMatters": "إدخال الذكاء الاصطناعي في الخدمات القضائية والإدارية يتطلب حوكمة ومراجعة بشرية وحماية بيانات، لا مجرد أتمتة الإجراءات.",
+      "audience": "المهتمون بالذكاء الاصطناعي الحكومي والحوكمة الرقمية والأنظمة القضائية والإدارية في السعودية والمنطقة.",
+      "nextSteps": [
+        "تابع نشر تفاصيل الأطر والسياسات التي استندت إليها المشاركة.",
+        "ابحث عن مؤشرات منشورة تقيس أثر الأنظمة الذكية على جودة الخدمة ودقتها.",
+        "ميّز بين عرض تجربة مؤسسية وإثبات نجاح نظام بعينه في الإنتاج."
+      ],
+      "limitations": "المصدر بيان رسمي موجز؛ صفحة SPA أعادت 403 عند الفتح المباشر، لذلك اعتمدت على النص المفهرس ولم أتحقق من تفاصيل إضافية. لا يحدد البيان الأنظمة أو نتائج الأداء.",
+      "reviewedAt": "2026-11-07T23:38:28+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "وكالة الأنباء السعودية — ديوان المظالم والقمة العالمية لتنظيم الذكاء الاصطناعي",
+          "url": "https://www.spa.gov.sa/N2720219"
+        }
+      ],
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFBhbFZOeUxpNk5RUXRtNU1OOHl4N1dJU2VlS1VYWmNSc19ZUWdkN0xPMWxZdGxEM2hWcEJ1R2tRRGw?oc=5"
+    },
+    "d9d8ed120c50cfe24e": {
+      "titleAr": "تقرير: OpenAI جمعت 11 مليار دولار ضمن جولة تمويل لم تُغلق بعد",
+      "summaryAr": "نقلت TechCrunch عن Bloomberg، استنادًا إلى مصادر مطلعة، أن OpenAI جمعت حتى وقت التقرير نحو 11 مليار دولار ضمن جولة قُدّرت الشركة فيها بنحو 1.25 تريليون دولار، مع احتمال استمرار الجولة وجمع مبلغ أكبر. وذكر التقرير أن الشركة لم تقدم تعليقًا عند النشر؛ لذلك تبقى الأرقام رواية صحفية غير مؤكدة بإعلان رسمي.",
+      "whyItMatters": "حجم التمويل المبلغ عنه يوضح شدة احتياج شركات النماذج إلى رأس المال والحوسبة والطاقة. لكنه لا يثبت وحده قيمة اقتصادية مستدامة أو شروط الجولة، ولا ينبغي تحويل الخبر إلى توصية استثمارية.",
+      "audience": "متابعو صناعة الذكاء الاصطناعي ومحللو اقتصاد التقنية والمهتمون بتمويل النماذج.",
+      "nextSteps": [
+        "انتظر إعلانًا رسميًا أو مستندات تؤكد إغلاق الجولة وشروطها.",
+        "افصل بين المبلغ الذي قيل إنه جُمع والمبلغ المستهدف النهائي.",
+        "قارن التمويل بتكاليف الحوسبة والبنية التحتية والالتزامات التشغيلية المنشورة."
+      ],
+      "limitations": "الخبر يعتمد على مصادر مجهلة ونقل TechCrunch عن Bloomberg، ولم يكن هناك تأكيد من OpenAI عند النشر. قد تتغير الأرقام أو التقييم قبل إغلاق الجولة.",
+      "reviewedAt": "2026-11-07T23:38:28+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — OpenAI reportedly raises $11B",
+          "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/"
+        }
+      ],
+      "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/"
+    },
+    "088c4eeb69d432a240": {
+      "titleAr": "Ofcom: تعطيل Find Friends افتراضيًا لحسابات الأطفال على Snapchat في بريطانيا",
+      "summaryAr": "قالت Ofcom إن Snap بدأت في 6 نوفمبر إيقاف ميزة Find Friends افتراضيًا لحسابات الأطفال في المملكة المتحدة، على أن يكتمل الإطلاق خلال الشهر. كما قالت الشركة إن فحوص العمر الفعالة لجميع من هم دون 18 عامًا يفترض أن تطبق بنهاية 2026، وإن Ofcom ستتابع التنفيذ. هذا إعلان عن إجراء جارٍ والتزام مستقبلي، لا دليل على اكتمالهما.",
+      "whyItMatters": "تغيير الإعدادات الافتراضية والتحقق من العمر قد يقللان التعرض للتواصل غير المرغوب فيه، لكنهما طبقة واحدة ضمن حماية أوسع تشمل التصميم والإبلاغ والإنفاذ ومراقبة النتائج.",
+      "audience": "الأسر والطلاب والمعلمون ومهتمو سلامة المنصات وتنظيم الخدمات الرقمية.",
+      "nextSteps": [
+        "تابع تحديثات Ofcom بشأن اكتمال الإطلاق وفعالية فحوص العمر.",
+        "راجع إعدادات الخصوصية والتواصل مع ولي أمر أو شخص موثوق عند الحاجة.",
+        "لا تفترض أن تغييرًا افتراضيًا واحدًا يزيل جميع المخاطر."
+      ],
+      "limitations": "التغيير يخص المستخدمين الأطفال في المملكة المتحدة، والإطلاق لم يكن مكتملًا عند نشر البيان. فحوص العمر التزام مستقبلي بنهاية 2026، ولم تنشر Ofcom تقييمًا نهائيًا لنتائجه.",
+      "reviewedAt": "2026-11-07T23:38:28+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Ofcom — Update on child protections",
+          "url": "https://www.ofcom.org.uk/online-safety/protecting-children/ofcom-provides-update-following-its-call-to-action-on-tech-industry-to-improve-protections-for-children"
+        },
+        {
+          "title": "Engadget — Snapchat Find Friends default",
+          "url": "https://www.engadget.com/2310117/snapchats-find-friends-feature-will-be-off-by-default-for-uks-under-18-users/"
+        }
+      ],
+      "url": "https://www.engadget.com/2310117/snapchats-find-friends-feature-will-be-off-by-default-for-uks-under-18-users/"
+    },
+    "eecad6fef1daea32ea": {
+      "titleAr": "METR تقدّر تسارع نمو درجات قدرات Anthropic بنحو 1.9× خلال عام",
+      "summaryAr": "في تقييم امتد من 12 أغسطس إلى 29 أكتوبر 2026، قدّرت METR أن درجات AECI لنماذج Anthropic نمت بمعدل يقارب 1.9× معدل ما قبل أكتوبر 2025، مع مجال ثقة 95% بين 1.5× و2.8×؛ وفسرت ذلك بأنه يقارب عامين من التقدم التاريخي خلال عام. وترجح METR أن استخدام الذكاء الاصطناعي ساهم في التسارع، لكنها تقول إن مساهمات البحث المستقل بالكامل ليست بعد المحرك الأكبر، وإن أدلة مهمة حُجبت.",
+      "whyItMatters": "إذا كانت أدوات الذكاء الاصطناعي تسرّع عمل فرق البحث والتطوير، فقد تتسارع دورات تطوير النماذج نفسها. لكن التقييم لا يثبت أن الأنظمة تطور نفسها باستقلال كامل؛ بل يشير أساسًا إلى مساعدة الباحثين مع عدم يقين كبير.",
+      "audience": "باحثو الذكاء الاصطناعي وفرق التقييم والسلامة وصناع السياسات ومتابعو تطور قدرات النماذج.",
+      "nextSteps": [
+        "اقرأ منهجية METR ومجال الثقة قبل تداول رقم 1.9× كحقيقة عامة.",
+        "افصل بين قياس درجات benchmark وتقارير الموظفين الذاتية والمساهمة المستقلة للوكلاء.",
+        "تابع تقييمات مستقلة لاحقة تقيس الأثر الواقعي وتوضح البيانات المحجوبة."
+      ],
+      "limitations": "تقييم واحد لشركة واحدة وعلى فترة تقارب 11 أسبوعًا. أقرت METR بأن Anthropic حجبت أغلبية الأدلة التي عدّتها الأكثر إفادة، وأن تقارير الإنتاجية الذاتية دليل ضعيف، وأن تسارع AECI قد لا يساوي تسارع الأثر الواقعي.",
+      "reviewedAt": "2026-11-07T23:38:28+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "METR — Independent Assessment of AI R&D Acceleration",
+          "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/"
+        },
+        {
+          "title": "The Verge — Anthropic/METR report",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development"
+        }
+      ],
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development"
     }
   }
 }
