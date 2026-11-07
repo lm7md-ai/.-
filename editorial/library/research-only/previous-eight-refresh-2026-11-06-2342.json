@@ -1,0 +1,251 @@
+{
+  "version": 1,
+  "runAt": "2026-11-06T23:42:55+03:00",
+  "metricsMeasuredAt": "2026-11-06T20:42:55Z",
+  "measurementSource": "GitHub REST API repository metadata; measured as one partial snapshot for the eight prior projects.",
+  "publicationStatus": "research_only_update_not_public_project_card",
+  "priorSnapshotPath": "editorial/library/research-only/previous-eight-refresh-2026-11-06-2127.json",
+  "cumulativeCatalogPath": "editorial/library/catalog-2026-11-06-2127.json",
+  "projectsReviewed": 8,
+  "projects": [
+    {
+      "repository": "patchy631/ai-engineering-hub",
+      "stars": 41275,
+      "forks": 6588,
+      "openIssues": 136,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "language": "Jupyter Notebook",
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "updatedAt": "2026-11-06T20:46:56Z",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "siteVisibility": "one exact feed project card",
+      "reviewNotes": "README يصف أكثر من 93 مشروعًا تعليميًا موزعًا على مستويات، مع أمثلة LLM وRAG والوكلاء. ملف LICENSE هو MIT. ليس حزمة تشغيل واحدة."
+    },
+    {
+      "repository": "googleapis/python-genai",
+      "stars": 4056,
+      "forks": 1059,
+      "openIssues": 389,
+      "archived": false,
+      "disabled": false,
+      "license": "Apache-2.0",
+      "language": "Python",
+      "pushedAt": "2026-11-06T20:41:13Z",
+      "updatedAt": "2026-11-06T18:32:47Z",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "siteVisibility": "research-only",
+      "reviewNotes": "README يوضح SDK لواجهتي Gemini Developer API وGemini Enterprise Agent Platform، مع أمثلة العميل المتزامن وغير المتزامن. LICENSE Apache-2.0."
+    },
+    {
+      "repository": "Millillion/lasm",
+      "stars": 100,
+      "forks": 7,
+      "openIssues": 6,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "language": "C",
+      "pushedAt": "2026-11-06T16:00:40Z",
+      "updatedAt": "2026-11-06T06:15:53Z",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "siteVisibility": "research-only",
+      "reviewNotes": "README يشرح ترجمة Lean 4 إلى WebAssembly، وأمر بدء npm create @lasm@latest، ويصرح أن اختبارات CI للمنصات تستخدم أدوات محلية ولا تعني نشرًا فعليًا إلى حساب سحابي. LICENSE MIT."
+    },
+    {
+      "repository": "microsoft/markitdown",
+      "stars": 194190,
+      "forks": 14608,
+      "openIssues": 811,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "language": "Python",
+      "pushedAt": "2026-10-28T15:33:14Z",
+      "updatedAt": "2026-11-06T20:42:45Z",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "siteVisibility": "research-only",
+      "reviewNotes": "README يصف تحويل الملفات إلى Markdown للاستخدام مع LLMs، ويذكر optional dependencies وplugins وAzure Content Understanding. يحذر من أن الوصول للملفات يجري بصلاحيات العملية الحالية. LICENSE MIT."
+    },
+    {
+      "repository": "yc-software/minecraft-agent-harness",
+      "stars": 153,
+      "forks": 13,
+      "openIssues": 1,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "language": "JavaScript",
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "updatedAt": "2026-11-06T20:46:25Z",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "siteVisibility": "research-only",
+      "reviewNotes": "README يصف وكلاء LLM للعب Minecraft ويحدد Node.js 22.19+ وMinecraft Java 1.21.6، مع Quickstart وخيار Docker. LICENSE MIT."
+    },
+    {
+      "repository": "NVIDIA/OpenShell",
+      "stars": 21214,
+      "forks": 2078,
+      "openIssues": 633,
+      "archived": false,
+      "disabled": false,
+      "license": "Apache-2.0",
+      "language": "Rust",
+      "pushedAt": "2026-11-06T20:38:08Z",
+      "updatedAt": "2026-11-06T20:22:18Z",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "siteVisibility": "research-only",
+      "reviewNotes": "README يصف runtime لعزل الوكلاء مع primitives جديدة في 0.1.x وروابط الوثائق وSDKs. LICENSE Apache-2.0. سجل الخبر القديم منفصل ومنقضٍ؛ المشروع ما زال غير مؤرشف."
+    },
+    {
+      "repository": "pydantic/pydantic-ai",
+      "stars": 21060,
+      "forks": 3117,
+      "openIssues": 1791,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT",
+      "language": "Python",
+      "pushedAt": "2026-11-06T20:38:05Z",
+      "updatedAt": "2026-11-06T18:48:40Z",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "siteVisibility": "research-only",
+      "reviewNotes": "README يعرض أمثلة coding agents واستخراج البيانات وسير العمل الدائم والصوت والصور، ويربط التوثيق الرسمي. LICENSE MIT."
+    },
+    {
+      "repository": "astral-sh/uv",
+      "stars": 91676,
+      "forks": 3763,
+      "openIssues": 3049,
+      "archived": false,
+      "disabled": false,
+      "license": "MIT OR Apache-2.0",
+      "language": "Rust",
+      "pushedAt": "2026-11-06T20:15:47Z",
+      "updatedAt": "2026-11-06T20:48:28Z",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "siteVisibility": "research-only",
+      "reviewNotes": "README يصف مدير مشاريع وحزم Python مع دعم المشاريع والسكربتات والأدوات وإصدارات Python وواجهة pip. تمت قراءة LICENSE-MIT وLICENSE-APACHE."
+    }
+  ],
+  "librarySummary": {
+    "cumulativeProjects": 57,
+    "activeOrMaintained": 55,
+    "archived": 2,
+    "feedExactMatches": 8,
+    "researchOnly": 48,
+    "feedMembershipUnverified": 1,
+    "licenseNeedsUpstreamVerification": 8,
+    "notMaintained": 1,
+    "researchOnlyFiles": 31
+  },
+  "projectFeedAudit": {
+    "currentProjectCards": 100,
+    "exactEditorialMatches": 100,
+    "missingProjectEditorial": 0,
+    "newProjectsAdded": 0,
+    "reason": "كل بطاقات المشاريع العامة الحالية لها إثراء مطابق. لم يظهر مشروع جديد يبرر إضافة بطاقة أو دوسيه بحثي إضافي في هذه الدورة."
+  },
+  "ideaAudit": {
+    "projectsReviewed": 8,
+    "improvementsAndSpinoffsPreserved": 55,
+    "ideaSchemaComplete": 55,
+    "newIdeasAdded": 0,
+    "testEvidence": null,
+    "note": "حُفظ ترتيب الأفكار وروابطها السابقة. README وLICENSE أعيدت مراجعتهما؛ متطلبات التشغيل وquickStart والتكاليف والمحلي/السحابي والبدائل تُحمل من الدوسيه السابق ولم تُراجع كلها مجددًا في هذه الدورة. لم تُشغّل المشاريع."
+  },
+  "topThree": [
+    {
+      "title": "محرر مرئي عربي لسياسات NVIDIA OpenShell",
+      "problem": "ملفات YAML وسياسات الملفات والشبكة صعبة المراجعة على غير المتخصصين.",
+      "approach": "واجهة تقرأ المخطط الرسمي وتعرض السياسات والتحذيرات مع إبقاء YAML الخام قابلًا للتحرير.",
+      "stack": "TypeScript + React + YAML Schema",
+      "steps": [
+        "قراءة schema الرسمي.",
+        "عرض سياسات الملفات والعمليات والشبكة.",
+        "التحقق محليًا قبل التصدير.",
+        "إظهار الفروقات والتحذيرات مع YAML الخام."
+      ],
+      "metric": "نسبة ملفات السياسات التي تجتاز التحقق دون إخفاء حقول.",
+      "difficulty": "متوسط تقديرًا.",
+      "risks": "قد تخفي الواجهة تفاصيل دقيقة؛ يجب ألا تستبدل مراجعة YAML الأصلية.",
+      "sources": [
+        {
+          "title": "OpenShell policy schema",
+          "url": "https://docs.nvidia.com/openshell/latest/how-it-works/policies/schema"
+        },
+        {
+          "title": "OpenShell policy management",
+          "url": "https://docs.nvidia.com/openshell/latest/how-it-works/policies/manage-policies"
+        }
+      ]
+    },
+    {
+      "title": "مجموعة تقييم عربية قابلة لإعادة الإنتاج لوكلاء Pydantic AI",
+      "problem": "قد تبدو إجابة الوكيل سليمة لغويًا لكنها خاطئة أو غير مدعومة بمصدر.",
+      "approach": "مجموعة أسئلة عربية ذات إجابات مرجعية تقيس الصحة والإسناد واستخدام الأدوات والامتناع.",
+      "stack": "Python + Pydantic Evals + pytest + JSONL",
+      "steps": [
+        "اختيار مجال ومصادر موثوقة.",
+        "كتابة حالات نجاح وفشل ونقص معلومات.",
+        "تعريف مقاييس الصحة والاستشهاد والامتناع.",
+        "تشغيل المقارنة على إصدارات مختلفة.",
+        "حفظ النتائج مع إصدارات البيانات والنموذج."
+      ],
+      "metric": "درجات الصحة والإسناد والامتناع عبر الإصدارات.",
+      "difficulty": "متوسط إلى مرتفع تقديرًا.",
+      "risks": "تحيز اللهجات أو مجموعة الأسئلة وتحيز المقيم نفسه.",
+      "sources": [
+        {
+          "title": "Pydantic AI evaluation docs",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/evals.md"
+        },
+        {
+          "title": "Pydantic AI repository",
+          "url": "https://github.com/pydantic/pydantic-ai"
+        }
+      ]
+    },
+    {
+      "title": "مراجع توافق إصدارات Google Gen AI Python SDK",
+      "problem": "قد يتعطل المشروع بعد ترقية SDK أو تغيير الحد الأدنى لإصدار Python.",
+      "approach": "أداة تقرأ pyproject.toml وقيود الاعتماديات وتقارنها بمتطلبات الإصدار دون تعديل الملفات تلقائيًا.",
+      "stack": "Python + tomllib + packaging + JSON",
+      "steps": [
+        "قراءة نسخة SDK المثبتة.",
+        "استخراج متطلبات Python والاعتماديات.",
+        "مقارنة القيود بملف pyproject الرسمي.",
+        "إصدار تقرير تعارضات وتحذيرات."
+      ],
+      "metric": "دقة اكتشاف تعارضات الإصدارات قبل الترقية.",
+      "difficulty": "متوسط تقديرًا.",
+      "risks": "الاعتماديات غير المباشرة وتغيرات API قد لا تظهر في قيود النسخ وحدها.",
+      "sources": [
+        {
+          "title": "Google Gen AI Python SDK pyproject",
+          "url": "https://github.com/googleapis/python-genai/blob/main/pyproject.toml"
+        },
+        {
+          "title": "Google Gen AI Python SDK",
+          "url": "https://github.com/googleapis/python-genai"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "النجوم والتفرعات والقضايا المفتوحة مؤشرات تراكمية لا تقيس جودة المشروع أو نموه اليومي.",
+    "README وLICENSE أعيدت مراجعتهما؛ لم تُعد قراءة كل الوثائق التفصيلية في هذه الدورة.",
+    "لم تُشغّل المشاريع أو أمثلتها، لذلك لا يوجد testEvidence جديد.",
+    "المكتبة البحثية غير منشورة كبطاقات عامة؛ أعداد المشاريع هي إدخالات الكتالوج وليست عدد الملفات.",
+    "pushedAt وupdatedAt توقيتان مختلفان ولا ينبغي مقارنتهما كقياس موحد للنشاط."
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "version": 1,
+  "runAt": "2026-11-06T23:42:55+03:00",
+  "mainSha": "020b447733f5cbd8c876a676e2efc4fc603a4487",
+  "feedGeneratedAt": "2026-11-06T18:53:12+00:00",
+  "incomingMain": {
+    "files": 88,
+    "recordOccurrences": 928,
+    "unchangedPreviouslyAuditedFiles": 86,
+    "priorAudit": {
+      "path": "editorial/pending/incoming-reconciliation-2026-11-06-2127.json",
+      "filesScanned": 86,
+      "recordOccurrencesScanned": 914,
+      "classification": {
+        "alreadyImportedAndExactCurrentFeed": 332,
+        "alreadyImportedButNoLongerInCurrentFeed": 546,
+        "eligibleExactFeedMatchNotYetImported": 0,
+        "idOrUrlMismatch": 0,
+        "expiredNotInFeedOrEditorial": 36,
+        "structuralIssuesFound": 0
+      }
+    },
+    "addedFiles": [
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-06-2127.json",
+        "records": 10,
+        "allExactFeedUrl": true,
+        "allExactEditorialUrl": true
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-06-2046.json",
+        "records": 4,
+        "allExactFeedUrl": true,
+        "allExactEditorialUrl": true
+      }
+    ],
+    "currentClassification": {
+      "alreadyImportedAndExactCurrentFeed": 346,
+      "alreadyImportedButNoLongerInCurrentFeed": 546,
+      "eligibleExactFeedMatchNotYetImported": 0,
+      "idOrUrlMismatch": 0,
+      "expiredNotInFeedOrEditorial": 36,
+      "structuralIssuesFound": 0
+    },
+    "note": "The two added files contain 14 records; every ID and URL was compared literally with current feed.json and editorial.json. All 14 are already imported and exact. The 86 earlier files have unchanged blob SHAs versus the audited base commit."
+  },
+  "sourceQualityHolds": [
+    {
+      "id": "d18ddd9c12e46dd96b",
+      "status": "needs_correction",
+      "url": "https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105",
+      "reason": "المصدر Issue أُنشئ في 2022 وأُغلق؛ تحديثه في 6 نوفمبر 2026 لا يثبت حادثة حديثة."
+    },
+    {
+      "id": "e3e3a03bfc5be7aa43",
+      "status": "needs_original_date_verification",
+      "url": "https://news.google.com/rss/articles/CBMiyAVBVV95cUxQcmhILXN2eEUzMy0yVXEtX1hmLXNzSU9LT210YzUtTDdKazFRS0N6VnVjbWpJN1NCQnRCdzUtMWFfOGtTeXNvdHh6RGI5U01vT0RBQWdNelNuQjZ1MHdzWXE4ZW5zR0FTOGJHVHdKUnRxUVo0UjVxRW9rSG5IbGZ1OGRXa2NpSV9Bdkhtdmk4LWFJeGNMaXNYdVlzbHF3eEpVa1hlODkwaXlINDlxb1EwMi1rZDZwUjNSS2hRZEdaRjcwMnJiWTFyR2VuTjIwSV81OE5Pa1Z6a3ZKYWlzLW5jekNzNVhHLXhXLTVZbE1UVmw5ODBiNGFrMGxiU2hZcjRuTmcyRl9Ib2ktVVk3elZNalAyTDNucURmQnhKSkJobzFybEZnanhaZUR4eU1sVGN0Mldxb1VKR1FxZTNEWlJPRDJZZWdwclp3QW1aMVB1SVR1bUxCbHRiTVFJNWtjMGFzaE81SDVsSm11M0F3VHlKeTYwS21QR1A0Mlk4eXJyQi05Z1NKbTVaYzVKMTRwMUYxMFJsb2NoLVBKZU9YVTA3NGh3MUhBQ3lLZzNfQzkzZHNJTXF5ZWhWeFdzNS0xQmV5dGsyd0NpX2Y1ZmxXRHh4NEVIMkF5NThoR3o1UmowaU5USzUzaUFnWjFXNUhyZW8zRmljWkJtMFN1UXdMRHFCbGNXMWdrRHd4Mkw4T20xeDdKQ1BZTTg4NHN2ZVh2SmV3LXpNTUc5akd0Z2dMaWdPVTNvZUc0YmJIUTV6UWdUUDNHb3FBNzVJVVlta1lIb0VlX0c4eUVLaXNBektqZVh0VE8zVFBHc19oQ0lFRHlVMUpfbkJHc21heWVEQlZ2cU5UdEJHV3FSNzRFTWdVeUNIQVE5Mm1mbWZZS09nZktZbVFoMG5kR1U5MENXdFd2QUczRk5ZRUcyYzJBdWlNSlFIQ1hpVjF1b1NX?oc=5",
+      "reason": "الرابط وسيط Google News ولم يُثبت تاريخ المصدر الأصلي."
+    }
+  ],
+  "specialRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "feedPresent": false,
+      "editorialPresent": false,
+      "seenPresent": true,
+      "status": "expired news record; project remains research-only in library"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "feedPresent": false,
+      "editorialPresent": false,
+      "seenPresent": true,
+      "status": "expired"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "feedPresent": false,
+      "editorialPresent": false,
+      "seenPresent": true,
+      "status": "expired"
+    }
+  ],
+  "newBatch": {
+    "path": "editorial/incoming/nabdh-editorial-2026-11-06-2342.json",
+    "records": 8,
+    "ids": [
+      "d2cf9ea98eff4e7cb7",
+      "a8fc5de6487f58f91f",
+      "d32234f10741024509",
+      "531a4c7cd4138ae7bd",
+      "8b90275c42b5ae4db8",
+      "bc00e1abe23c7a7329",
+      "f93a2e40ad5d089152",
+      "b035143e2aa925bb9c"
+    ],
+    "exactFeedUrlMatches": 8,
+    "alreadyInMainEditorial": 0,
+    "structuralValidation": "passed in JavaScript equivalent of scripts/editorial.py validate/merge_documents",
+    "basisCounts": {
+      "article": 7,
+      "metadata": 1
+    },
+    "branchImport": "merged into the branch editorial document while preserving all 859 existing entries; not merged to main"
+  },
+  "totals": {
+    "main": {
+      "feed": 800,
+      "news": 700,
+      "projects": 100,
+      "editorial": 859,
+      "exactNewsEditorial": 199,
+      "exactProjectEditorial": 100,
+      "seenIds": 3500
+    },
+    "branchAfterBatch": {
+      "incomingFiles": 89,
+      "incomingRecordOccurrences": 936,
+      "editorial": 867,
+      "exactNewsEditorial": 207,
+      "exactProjectEditorial": 100,
+      "unenrichedNews": 493
+    }
+  },
+  "commands": {
+    "pythonValidateIncoming": "not run",
+    "pythonImport": "not run",
+    "pythonUnitTestsLocal": "not run",
+    "reason": "No local repository execution environment was available; branch CI is the official validation path for the final editorial.json."
+  },
+  "publication": {
+    "status": "branch_only_not_verified_published",
+    "feedSeenStatusWorkflowChangedByThisBranch": false,
+    "livePagesDirectVerification": "web access returned DisabledError; do not claim live data verification"
+  }
+}
