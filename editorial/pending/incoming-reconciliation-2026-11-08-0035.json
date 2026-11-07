@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "runAt": "2026-11-08T00:35:36+03:00",
+  "mainSha": "941a7935ad5f3de744075443f816b5b0492f209a",
+  "prHeadBefore": "79c9b67bdfb73ba2a210457883a81f781f30e172",
+  "mainIncomingAudit": {
+    "filesScanned": 88,
+    "recordOccurrences": 928,
+    "classifications": {
+      "activeExactAlreadyImported": 305,
+      "historicalExactAlreadyImported": 586,
+      "seenOnlyOutsideFeedAndEditorial": 36,
+      "sameUrlDifferentId": 1,
+      "activeExactPending": 0,
+      "unmatchedNotSeen": 0,
+      "structuralErrors": 0
+    },
+    "note": "الأعداد على مستوى ظهور السجلات عبر الملفات لا المعرفات الفريدة. أُجري تحقق بنيوي مكافئ ومقارنة حرفية للمعرفات والروابط.",
+    "identityMismatch": {
+      "oldId": "7a99eca9b2ce14d9f5",
+      "currentId": "e0cbbf211a55e79f34",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "decision": "لا alias ولا معرف مشتق من العنوان."
+    }
+  },
+  "namedRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "libraryDossier": "editorial/library/nvidia-openshell-dossier-2026-10-30-1146.json",
+      "decision": "seen-only؛ dossier بحثي موجود."
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "libraryDossier": null,
+      "decision": "seen-only؛ لا هوية بديلة."
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "libraryDossier": null,
+      "decision": "seen-only؛ لا هوية بديلة."
+    }
+  ],
+  "priorSourceQualityHolds": [
+    {
+      "id": "d18ddd9c12e46dd96b",
+      "state": "seen_only_no_longer_in_feed_or_editorial",
+      "seen": true,
+      "decision": "لا استيراد."
+    },
+    {
+      "id": "e3e3a03bfc5be7aa43",
+      "state": "active_in_feed_but_not_editorial",
+      "decision": "معلق؛ رابط Google News وسيط ولم يثبت الناشر الأصلي."
+    }
+  ],
+  "newBatch": {
+    "records": 5,
+    "news": 5,
+    "projects": 0,
+    "allExactFeedMatches": true,
+    "basisCounts": {
+      "article": 5,
+      "metadata": 0
+    },
+    "officialCliValidated": false,
+    "structuralEquivalentValidated": true
+  },
+  "commandsNotExecuted": [
+    "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-11-08-0035.json",
+    "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-11-08-0035.json",
+    "python -m unittest discover -s tests -v"
+  ],
+  "reason": "لا توجد بيئة checkout محلية. سيجري PR CI التحقق الرسمي من editorial.json وتشغيل اختبارات الوحدة."
+}
