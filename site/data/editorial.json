@@ -38815,6 +38815,56 @@
         "source": "https://github.com/OpenMontageInc/OpenMontage/blob/main/LICENSE"
       },
       "testStatus": "not_run"
+    },
+    "5c24264888e5cf1cac": {
+      "titleAr": "OpenIndiana 2026.10 يحدّث أدوات التطوير ودعم الافتراضية",
+      "summaryAr": "أصدر مشروع OpenIndiana لقطة Hipster 2026.10، وهي تحديث نصف سنوي لتوزيعة مبنية على illumos. تضيف دعم UEFI framebuffer إلى صورة Live، وتحدّث أدوات منها Python 3.15.2 وGCC 15.3.0 وClang 23.1.4 وPerl 5.44، مع تحديث QEMU إلى 11.1.2 وVirtualBox إلى 7.2.22 وإضافة TeX Live 2026 وFoliate وzoxide.",
+      "whyItMatters": "الحقيقة: التحديث يجمع تحديثات أدوات التطوير والافتراضية مع تحسين إقلاع صورة Live على UEFI. التحليل: يهم مسؤولي الأنظمة ومطوري البرمجيات الذين يتابعون استمرار منظومة illumos، لكنه ليس تحولًا جذريًا في واجهة النظام أو دعم العتاد.",
+      "audience": "مسؤولو الأنظمة، مطورو البرمجيات مفتوحة المصدر، ومهتمو illumos والافتراضية.",
+      "nextSteps": [
+        "راجع ملاحظات الإصدار الرسمية وقائمة الحزم قبل الترقية.",
+        "اختبر صورة Live أو آلة افتراضية على بيئة غير إنتاجية، وتحقق من تعريفات جهازك قبل تثبيت النظام.",
+        "قارن إصدارات QEMU وVirtualBox والأدوات التي تعتمد عليها مع بيئتك الحالية."
+      ],
+      "limitations": "قرأت تقرير Phoronix وإعلان OpenIndiana الرسمي. أشار اختبار Phoronix على Framework Laptop 13 Pro إلى نقص دعم عدد من تعريفات الأجهزة؛ لذلك لا يُفهم التحديث كضمان توافق عام. لم أختبر التوزيعة أو أُجرِ ترقية فعلية.",
+      "reviewedAt": "2026-11-08T15:10:18+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "إعلان OpenIndiana الرسمي — Snapshot 2026.10",
+          "url": "https://openindiana.org/announcements/openindiana-hipster-2026-10-announcement/"
+        },
+        {
+          "title": "Phoronix — OpenIndiana 2026.10",
+          "url": "https://www.phoronix.com/news/OpenIndiana-2026.10"
+        }
+      ],
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBnNzYycF9SejNjc2Y5bTJiWUZDS1FPbG9nNFZXUXNHa2VWUW96ejJsLUlkVm9LbXJYQVNCWnFhd1hfcVlYNTZFdGU2NURIQ3Axb01saHZ6cmN6Y0tkQ1E?oc=5"
+    },
+    "550c4c26c4b5289da6": {
+      "titleAr": "YANGWANG U9 Xtreme تسجل 503.17 كم/س في أبوظبي",
+      "summaryAr": "أعلنت BYD أن سيارتها الكهربائية YANGWANG U9 Xtreme بلغت 503.17 كم/س في تجربة على طريق E11 بأبوظبي يوم 1 نوفمبر 2026، بقيادة السائق Marc Basseng. أكدت FIA اعترافها بالسرعة، كما وصفت Guinness النتيجة بأنها رقمان قياسيان لأعلى سرعة في اتجاه واحد لسيارة إنتاج ولسيارة إنتاج كهربائية.",
+      "whyItMatters": "الحقيقة: الرقم المعتمد هنا هو سرعة قصوى في اتجاه واحد، وليس متوسط اختبار ذهابًا وإيابًا. التحليل: يبرز تطور منظومات الدفع الكهربائي والتحكم والثبات عند السرعات العالية، لكنه يخص سيارة فائقة محدودة الإنتاج ولا يمثل أداء سيارات الاستخدام اليومي.",
+      "audience": "متابعو تقنيات السيارات الكهربائية، مهندسو المركبات، والمهتمون بصناعة السيارات في المنطقة.",
+      "nextSteps": [
+        "اقرأ بيان FIA وبيان BYD مع الانتباه إلى أن التصنيف خاص بمحاولة في اتجاه واحد.",
+        "قارن الرقم بالإنجاز السابق للسيارة 496.22 كم/س وبمعايير تسجيل الأرقام القياسية المختلفة.",
+        "افصل بين إنجاز سيارة اختبار فائقة وبين مدى وكفاءة وشحن السيارات الكهربائية التجارية."
+      ],
+      "limitations": "اعتمدت على بيان الشركة وبيان FIA؛ لا يتضمنان اختبارًا مستقلًا لاستهلاك الطاقة أو كفاءة السيارة في الاستخدام اليومي. لا يمثل الرقم متوسط سرعة في اتجاهين ولا توصية بقيادة سريعة على الطرق العامة. لم أختبر المركبة.",
+      "reviewedAt": "2026-11-08T15:10:18+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "BYD — بيان YANGWANG U9 Xtreme الرسمي",
+          "url": "https://www.byd.com/us/news-list/The-fastest-gets-faster-YANGWANG-U9-Xtreme-tops-500km-h-to-set-new-global-speed-record-Abu-Dhabi"
+        },
+        {
+          "title": "FIA — الاعتراف بسرعة 503.17 كم/س",
+          "url": "https://api.fia.com/news/yangwang-u9-xtreme-surpasses-500-kmh-speed-achievement-recognised-fia"
+        }
+      ],
+      "url": "https://aitnews.com/2026/11/07/byd-yangwang-u9-xtreme-503-17-abu-dhabi/"
     }
   }
 }
