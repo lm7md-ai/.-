@@ -69,13 +69,13 @@
       "merged": false,
       "mergeable": true,
       "branch": "editorial/2026-11-06-2342-run11",
-      "head": "1f0b50b4d7667ffbedb8fe6b0c88e4221caa2c4b",
-      "aheadBy": 74,
+      "head": "b01696f2b7b0291b9e406a7950f38c7810559bb4",
+      "aheadBy": 75,
       "behindBy": 2,
       "changedFiles": 64,
       "protectedPathsChanged": [],
       "changedFilesBeforeRun": 60,
-      "finalHead": "80d520c5e582d14f1e57e0d1383bf9b3b7f9349b"
+      "finalHead": "b01696f2b7b0291b9e406a7950f38c7810559bb4"
     },
     "otherOpen": {
       "pr78": {
@@ -529,8 +529,8 @@
     }
   ],
   "tests": {
-    "prCiRun": 42512634274,
-    "jobId": 128828810550,
+    "prCiRun": 42523559686,
+    "jobId": 128862077379,
     "conclusion": "success",
     "unitTests": 30,
     "officialEditorialValidation": "Validated 926 editorial entries",
@@ -561,5 +561,15 @@
     "unittest": "executed by PR CI: 30 tests passed; not executed locally"
   },
   "protectedPathsUntouched": true,
-  "mergeDecision": "Hold PR #97. The main push workflow runs update_feed.py and stages feed.json, seen.json and status.json; merging would trigger a workflow that can modify protected data. Do not alter workflow or merge until this constraint can be preserved."
+  "mergeDecision": "Hold PR #97. The main push workflow runs update_feed.py and stages feed.json, seen.json and status.json; merging would trigger a workflow that can modify protected data. Do not alter workflow or merge until this constraint can be preserved.",
+  "commits": [
+    {
+      "sha": "80d520c5e582d14f1e57e0d1383bf9b3b7f9349b",
+      "purpose": "added the four cycle files"
+    },
+    {
+      "sha": "b01696f2b7b0291b9e406a7950f38c7810559bb4",
+      "purpose": "corrected PR comparison counts"
+    }
+  ]
 }
