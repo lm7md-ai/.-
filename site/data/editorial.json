@@ -38463,6 +38463,170 @@
           "url": "https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/"
         }
       ]
+    },
+    "cc9dd90ef8beb10b05": {
+      "url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/",
+      "titleAr": "GitHub تختبر صفحة Overview جديدة لتلخيص جاهزية طلبات الدمج",
+      "summaryAr": "أطلقت GitHub معاينة عامة اختيارية لصفحة Overview تعرض حالة الدمج والفحوص والمراجعات والتعليقات والنشاط الحديث في ملخص أعلى طلب السحب. وتتيح تصفية المحادثات غير المحسومة أو تعليقات المستخدم وفرز الأحدث أولًا، مع إبراز الإجراءات المتاحة مثل تحديث الفرع. الميزة في مرحلة معاينة قابلة للتعديل وليست تجربة نهائية.",
+      "whyItMatters": "تحليل: تقلل وقت البحث عن العوائق في طلبات السحب الطويلة، لكنها لا تستبدل قراءة فرق التغييرات أو مراجعة الكود نفسه.",
+      "audience": "طلاب البرمجة ومساهمو GitHub ومراجعو Pull Requests.",
+      "nextSteps": [
+        "جرّب صفحة Overview على طلب سحب غير حساس إذا ظهر خيار المعاينة في حسابك.",
+        "استخدم الملخص لتحديد الفحوص أو الموافقات المتبقية، ثم افتح التفاصيل قبل اتخاذ قرار الدمج."
+      ],
+      "limitations": "الميزة opt-in ضمن public preview، وGitHub تقول إنها بداية قابلة للتطوير؛ قد يختلف ظهورها حسب الحساب ومرحلة الإتاحة.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "GitHub Changelog — New pull request overview page in public preview",
+          "url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/"
+        }
+      ],
+      "reviewedAt": "2026-11-08T05:54:23+03:00"
+    },
+    "10bdc73097cfd2386d": {
+      "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+      "titleAr": "بحث Apiiro يرصد أسرارًا داخل ملفات إعدادات محلية لوكلاء البرمجة",
+      "summaryAr": "قالت Apiiro إنها رصدت 2,539 سرًا حقيقيًا في 1,994 مستودعًا عامًا، منها 1,122 نسخة من أصل 104,185 نسخة عامة من ملف إعدادات محلي مرتبط بـ Claude Code. وذكرت أن بعض كلمات المرور المكتوبة داخل أوامر محفوظة قد لا تلتقطها أدوات فحص الأسرار التقليدية. هذه أرقام بحث الشركة وليست تدقيقًا مستقلًا.",
+      "whyItMatters": "الملفات التي يُفترض أن تبقى محلية قد تدخل تاريخ Git أو نسخ المستودعات، لذلك يجب التعامل مع إعدادات الوكلاء وسجلات الأوامر كبيانات حساسة.",
+      "audience": "مطورو البرمجيات ومشرفو المستودعات وفرق أمن التطبيقات.",
+      "nextSteps": [
+        "تجنب وضع كلمات المرور والمفاتيح داخل أوامر أو إعدادات قد تُحفظ مع المشروع.",
+        "استخدم فحص الأسرار المعتمد وسياسات استبعاد الملفات المحلية، وغيّر بيانات الاعتماد التي يثبت انكشافها."
+      ],
+      "limitations": "النتائج صادرة عن Apiiro ومنهجية العينة تخص الشركة ولم نكرر الفحص؛ لا تعني أن كل مستخدمي Claude Code متأثرون. لم نعرض أمثلة أسرار أو خطوات للبحث عنها.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Apiiro Research — Coding Agents Are Leaking Your Secrets to GitHub",
+          "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again/"
+        }
+      ],
+      "reviewedAt": "2026-11-08T05:54:23+03:00"
+    },
+    "e0c8b4541e0b5e8be3": {
+      "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+      "titleAr": "تقييم METR يرجّح تسارع تقدم نماذج Anthropic في المهام المحددة بنحو الضعف",
+      "summaryAr": "خلص تقييم METR المنشور في 5 نوفمبر، بعد مراجعة بيانات داخلية لدى Anthropic، إلى أن تقدم القدرات في المهام المحددة جيدًا يجري على الأرجح بنحو ضعف المعدل بين مارس 2024 وأكتوبر 2025، مع عدم يقين مرتفع. وذكرت METR أن معظم الأدلة الأكثر إفادة حُجبت، بينما قدمت الباحثة Ajeya Cotra قراءة تفسيرية شخصية للتقرير.",
+      "whyItMatters": "إذا صح التقدير، فقد يسرّع استخدام الذكاء الاصطناعي دورة تطوير النماذج نفسها؛ لكن التقرير لا يثبت أن كل أعمال البحث مؤتمتة أو أن الإنتاجية الاقتصادية تضاعفت.",
+      "audience": "باحثو الذكاء الاصطناعي ومهندسو النماذج والمهتمون بقياس التقدم والسلامة.",
+      "nextSteps": [
+        "اقرأ طريقة القياس وحدود مؤشر AECI قبل اقتباس عبارة «تضاعف التقدم».",
+        "افصل بين تسارع مهام قابلة للتقييم وبين الإنتاجية الواقعية أو الاستقلال الكامل للنماذج."
+      ],
+      "limitations": "METR تصف التقدير بأنه عالي عدم اليقين وتقول إن غالبية الأدلة الأكثر إفادة حُجبت؛ مقالة Ajeya Cotra تفسير شخصي لا يمثل METR أو مؤلفي التقرير.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "METR — Independent Assessment of AI R&D Acceleration at Anthropic in October 2026",
+          "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/"
+        },
+        {
+          "title": "Ajeya Cotra — AI is dramatically accelerating AI research right now",
+          "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai"
+        }
+      ],
+      "reviewedAt": "2026-11-08T05:54:23+03:00"
+    },
+    "7d6a970ab1ba21607a": {
+      "url": "https://hunch.net/?p=13764006",
+      "titleAr": "جون لانغفورد يصف نهاية مجموعة AI Frontiers في تدوينة شخصية",
+      "summaryAr": "كتب الباحث جون لانغفورد أن مجموعة AI Frontiers أُعيد تنظيمها داخل Microsoft AI في سبتمبر، وأنه غادر بعد خلاف حول أولوية التوسع مقابل البحث الأساسي. ويصف التدوينة المجموعة بأنها انتهت؛ وهذا عرض شخصي من أحد مؤسسيها وليس إعلانًا رسميًا من Microsoft.",
+      "whyItMatters": "توضح الرواية كيف يمكن أن تتغير أولويات مختبرات الشركات بين البحث طويل الأمد وتوسيع النماذج والمنتجات، وما قد يعنيه ذلك لاستمرارية الفرق والأبحاث.",
+      "audience": "طلاب وباحثو تعلم الآلة والمهتمون بإدارة فرق البحث الصناعي.",
+      "nextSteps": [
+        "قارن الرواية الشخصية بأي بيانات رسمية قبل استنتاج مصير كل مشروع أو موظف.",
+        "تابع الأبحاث والأدوات العامة التي يذكرها الكاتب بدل الاعتماد على وصف تنظيمي واحد."
+      ],
+      "limitations": "المصدر تدوينة شخصية تتضمن تقييمات وآراء عن الإدارة؛ لم نعثر في هذه المراجعة على بيان Microsoft يؤكد جميع التفاصيل أو يصف المجموعة بالطريقة نفسها.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "John Langford — The End of AI Frontiers",
+          "url": "https://hunch.net/?p=13764006"
+        }
+      ],
+      "reviewedAt": "2026-11-08T05:54:23+03:00"
+    },
+    "e32f5c79e127258c97": {
+      "url": "https://www.engadget.com/2309554/gpu-supply-problem-no-end-in-sight/",
+      "titleAr": "طلب مراكز الذكاء الاصطناعي على الذاكرة يضغط على سوق بطاقات الرسوميات",
+      "summaryAr": "يربط تقرير Engadget نقص بعض بطاقات الرسوميات وارتفاع أسعارها بتحويل طاقة تصنيع الذاكرة إلى HBM المطلوبة لمراكز الذكاء الاصطناعي. وينقل عن تقرير JPMorgan تقديرًا بارتفاع أسعار DRAM بنحو 400% بين 2024 ونهاية 2026، مع الإشارة إلى أن HBM تتنافس على سعة تصنيع مشتركة مع أنواع ذاكرة أخرى.",
+      "whyItMatters": "قد يمتد أثر بناء مراكز البيانات إلى تكلفة أجهزة الطلاب والمطورين، ويبيّن أن الذاكرة وسلاسل التصنيع جزء أساسي من اقتصاد الذكاء الاصطناعي.",
+      "audience": "طلاب الحوسبة ومطورو النماذج المحلية ومتابعو عتاد الحاسوب.",
+      "nextSteps": [
+        "قارن الأسعار الفعلية للطراز والبلد قبل شراء بطاقة رسومية، ولا تعتمد سعر الإطلاق وحده.",
+        "ميّز بين HBM المستخدمة في مسرّعات مراكز البيانات وذاكرة GDDR/DRAM في أجهزة المستهلك."
+      ],
+      "limitations": "نسبة 400% منسوبة إلى تقرير JPMorgan ولم نتمكن من فتح التقرير مباشرة؛ الأسعار تختلف حسب البلد والطراز، ولا يثبت المقال أن الذكاء الاصطناعي هو سبب كل زيادة.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Engadget — There Is No End In Sight For The GPU Supply Problem",
+          "url": "https://www.engadget.com/2309554/gpu-supply-problem-no-end-in-sight/"
+        }
+      ],
+      "reviewedAt": "2026-11-08T05:54:23+03:00"
+    },
+    "51a247b5b6ae00e91e": {
+      "url": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/",
+      "titleAr": "اعتراض المجتمعات المحلية على مراكز البيانات يتحول إلى قضية سياسية",
+      "summaryAr": "يرصد TechCrunch تصاعد الاعتراض المحلي في الولايات المتحدة على بعض مشاريع مراكز البيانات بسبب الطاقة والمياه وطرق الحصول على الموافقات. ويشير المقال إلى أن عددًا من إجراءات التصويت التي استهدفت تقييد البناء أو فرض وقف مؤقت نجحت، مع التنبيه إلى أن هذه القضية ليست تفسيرًا وحيدًا لنتائج الانتخابات.",
+      "whyItMatters": "توسع الذكاء الاصطناعي لا يعتمد على وحدات GPU فقط؛ الكهرباء والمياه والتراخيص وقبول المجتمعات قد تحدد أين ومتى تُبنى مراكز الحوسبة.",
+      "audience": "طلاب التقنية والسياسات العامة والطاقة والمهتمون بالبنية التحتية.",
+      "nextSteps": [
+        "عند تقييم مشروع مركز بيانات، افحص مصادر الكهرباء واستهلاك المياه وآليات التشاور المحلي.",
+        "تابع الالتزامات المعلنة من الشركات وقارنها بما يُنفذ فعليًا في المواقع."
+      ],
+      "limitations": "المقال يجمع تقريرًا صحفيًا ونقاش بودكاست؛ لا يثبت أن مراكز البيانات كانت سببًا رئيسيًا لنتائج الانتخابات، وبعض الاستنتاجات تفسيرية.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — After the midterms, things are looking rocky for Elon Musk and data centers",
+          "url": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/"
+        }
+      ],
+      "reviewedAt": "2026-11-08T05:54:23+03:00"
+    },
+    "b4b560276b721c3595": {
+      "url": "https://news.google.com/rss/articles/CBMixAJBVV95cUxQdmoxWUM3RkpEUW43eEZQTlhENXpwVkEwa3N2UGt1enRrZzJJaUFadlVjbGt4ekxuVmNzbTBOTENiYm1oMWVRdnZ6aXZTNVFDOFFWazhHUElnOVlyNDRRLUNXMk1rcmZ2aTNIc2VLRkp6OEZtNm5WZlJXSEROT2M2OXF6cTA1NldNYmJsSWtHMFpJVmV2OHRQVnJJcE9xWWRwM3lzQ2IwWEJNcjRNSEtTeWxTWG9mSjdLYm9FOU44LVZRbHpZMTBBWDdRUkFYYnQtam9pdXcxSXE3Rjd6Ul9IdW1PSlpmVHhJcndkR0pQSFBqMnFUOUdZVVhoaGFWcXBVeTFOUVpUSWtmbkdfM1ZIU3prVWxpVmdCdzBBY3V0bTNuUHJUOUFybldGVjVTLXB3NXhaMkdxZjViNHFscGRqUGdBaU8?oc=5",
+      "titleAr": "HUMAIN تضم CNTXT لتعزيز خدمات الذكاء الاصطناعي والسحابة للمؤسسات",
+      "summaryAr": "أعلنت CNTXT في 3 نوفمبر انضمامها إلى منصة HUMAIN، حاملةً خدمات التحول السحابي والبيانات والتحليلات والذكاء الاصطناعي والأمن السيبراني والتكامل المؤسسي وحلولًا مملوكة وعلاقات مع جهات عامة وخاصة. وتقول الشركة إن الخطوة توسع قدرتها على دعم المؤسسات من التخطيط إلى التنفيذ والتشغيل.",
+      "whyItMatters": "الخطوة تبرز أن تبني الذكاء الاصطناعي المؤسسي يحتاج تكامل البيانات والسحابة والأمن والتشغيل، وليس النماذج أو مراكز البيانات وحدها؛ وقد توسع فرص المهارات التقنية في المنطقة.",
+      "audience": "طلاب الحوسبة السحابية والبيانات ومطورو المؤسسات والمهتمون بسوق التقنية السعودي.",
+      "nextSteps": [
+        "تابع إعلانات HUMAIN وCNTXT حول الخدمات والمنتجات والعملاء بعد الانضمام.",
+        "عند بناء مهارات مهنية، اجمع بين أساسيات النماذج وتكامل البيانات والسحابة والأمن والتشغيل."
+      ],
+      "limitations": "الإعلان صادر عن CNTXT ولا يذكر قيمة صفقة أو تفاصيل ملكية أو شروط انتقال؛ لذلك نصفه بانضمام الشركة إلى المنصة ولا نصفه باستحواذ مالي.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "CNTXT — HUMAIN Welcomes CNTXT into Its Full-Stack AI Platform",
+          "url": "https://cntxt.com/news/cntxt-joins-humain-adding-enterprise-ai-cloud-data-and-technology-services-capabilities-proprietary-solutions-and-a-broad-customer-base-to-humains-growing-platform/"
+        }
+      ],
+      "reviewedAt": "2026-11-08T05:54:23+03:00"
+    },
+    "c948bfa131bcac0192": {
+      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5FN1pyNHVsSG1mS1l3Rk1HNEl4aVkyZ0RHLXo5RXFUWFE4NmpZUHpzMVZ5NFlYblVGdEpMOENkSzdYUmVvR1BJ?oc=5",
+      "titleAr": "التدريب التقني السعودي يعلن مؤشرات استخدام واسعة لمنصته الرقمية",
+      "summaryAr": "تذكر نتيجة الخبر الرسمية لوكالة الأنباء السعودية أن منصة التدرّب الإلكترونية التابعة للمؤسسة العامة للتدريب التقني والمهني تضم 60,347 مقررًا، ونفذت أكثر من 92 ألف جلسة افتراضية، وتجاوز المستفيدون 736 ألفًا، مع أكثر من 16 مليون عملية دخول. كما تشير النتيجة إلى 220 أكاديمية عالمية و849 شهادة احترافية ضمن المنظومة.",
+      "whyItMatters": "تعطي الأرقام مؤشرًا على حجم البنية الرقمية للتدريب المهني في المملكة، وتبرز أهمية التعلم المستمر؛ لكنها تقيس نطاق الاستخدام والعرض ولا تقيس وحدها جودة التعلم أو نتائج التوظيف.",
+      "audience": "طلاب السعودية والمتدربون والباحثون عن مسارات مهارات مهنية رقمية.",
+      "nextSteps": [
+        "تحقق من شروط التسجيل والتخصصات المتاحة عبر المؤسسة قبل اعتبار أي مقرر مفتوحًا للجمهور.",
+        "قارن الشهادة أو المقرر بمتطلبات التخصص والاعتماد وسوق العمل."
+      ],
+      "limitations": "تعذر استخراج النص الكامل لصفحة واس في هذه المراجعة؛ اعتمدنا على بيانات النتيجة الرسمية وملخص الخبر، لذا لا نزعم قراءة المقال كاملًا. الأرقام مؤشرات استخدام مؤسسية وليست قياسًا مستقلًا لجودة التعلم.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "وكالة الأنباء السعودية — التدريب التقني يعزز العملية التدريبية بمنظومة رقمية متكاملة",
+          "url": "https://www.spa.gov.sa/N2719078"
+        }
+      ],
+      "reviewedAt": "2026-11-08T05:54:23+03:00"
     }
   }
 }
