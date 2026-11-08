@@ -3,24 +3,45 @@
   "runAt": "2026-11-08T20:47:00+03:00",
   "repository": "lm7md-ai/.-",
   "main": {
-    "commit": "414e2594176800861fa633702b8ac1ef66831975",
+    "commit": "3eb301af32fa987b2290c73030ce48896209a67f",
     "feedItems": 800,
     "news": 700,
     "projects": 100,
+    "feedGeneratedAt": "2026-11-08T17:54:49Z",
+    "feedBlobSha": "fa24b093a3e505924838e0ee912b7d82d32fdee3",
     "editorialRecords": 859,
-    "seenIds": 3701,
-    "incomingFiles": 88,
-    "incomingOccurrences": 928
+    "editorialBlobSha": "b9b75072729920f3e8d3a9eaf822a06bb6ebac61",
+    "seenIds": 3753,
+    "seenBlobSha": "7c708d87e10c9997bae5bb5707316d30eae049c3",
+    "status": {
+      "state": "partial",
+      "lastSuccessfulAt": "2026-11-08T17:54:49+00:00",
+      "collected": 286,
+      "sourceCount": 26,
+      "emptySources": [
+        "أبحاث الذكاء الاصطناعي",
+        "أبحاث تعلّم الآلة"
+      ],
+      "errorSources": [
+        {
+          "name": "برمجة بايثون",
+          "error": "HTTP 503"
+        },
+        {
+          "name": "فرص وبرامج تقنية",
+          "error": "HTTP 503"
+        }
+      ],
+      "blobSha": "8f88c6999c14bc0215ee72f97f16bd90a7a62548"
+    }
   },
   "pullRequest": {
     "number": 97,
     "branch": "editorial/2026-11-06-2342-run11",
-    "headBefore": "33095956602d19f573215b15f797758695626ce9",
-    "incomingFiles": 98,
-    "unchangedMainIncomingFiles": 88,
-    "additionalIncomingFiles": 10,
-    "additionalOccurrences": 96,
-    "additionalUniqueIds": 58
+    "headBefore": "a1452f6767850e6f70dda4a1d48134bd18c61341",
+    "baseSha": "e89a737663f3944d6c9612c900bf2bc781769a5b",
+    "mergeable": true,
+    "changedFiles": 53
   },
   "additionalIncomingFiles": [
     {
@@ -102,31 +123,35 @@
   },
   "specialRecords": [
     {
-      "id": "940ec4695c1e241c2f",
       "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
       "url": "https://github.com/NVIDIA/OpenShell",
-      "seen": true,
       "inFeed": false,
-      "inEditorial": false,
-      "library": "internal research catalog; research-only"
+      "inMainEditorial": false,
+      "inPrEditorial": false,
+      "inSeen": true,
+      "libraryEntry": true,
+      "libraryStatus": "research-only; not in Feed"
     },
     {
-      "id": "317abcdd1b20728a7e",
       "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
       "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
-      "seen": true,
       "inFeed": false,
-      "inEditorial": false,
-      "library": false
+      "inMainEditorial": false,
+      "inPrEditorial": false,
+      "inSeen": true,
+      "libraryEntry": false
     },
     {
-      "id": "662e68277c6361dd4b",
       "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
       "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
-      "seen": true,
       "inFeed": false,
-      "inEditorial": false,
-      "library": false
+      "inMainEditorial": false,
+      "inPrEditorial": false,
+      "inSeen": true,
+      "libraryEntry": false
     }
   ],
   "expiryAssessment": "No normalized publication date supports a confirmed expiry label; seen-only records remain held.",
@@ -160,16 +185,229 @@
     "allExistingIdsPreserved": true
   },
   "publishedArtifact": {
-    "runId": 42470680358,
-    "artifactId": 13613582102,
-    "createdAt": "2026-11-08T10:16:26Z",
-    "sizeBytes": 1155257,
+    "runId": 42507299158,
+    "artifactId": 13627882822,
+    "createdAt": "2026-11-08T17:55:25Z",
+    "sizeBytes": 1155075,
     "verifiedFiles": {
       "editorial": "b9b75072729920f3e8d3a9eaf822a06bb6ebac61",
-      "feed": "23d93f3bc75b7d564971b113be7407e5b83d5f4a",
-      "seen": "17a0f24d920529b5a557b74dd02f3b9572af2e1a",
-      "status": "c36d9965af2c4ee03b592c36091800f43fbe366d"
+      "feed": "fa24b093a3e505924838e0ee912b7d82d32fdee3",
+      "seen": "7c708d87e10c9997bae5bb5707316d30eae049c3",
+      "status": "8f88c6999c14bc0215ee72f97f16bd90a7a62548"
     },
+    "editorialRecords": 859,
+    "includesPrNewEntries": false,
     "livePagesDirectCheck": "DisabledError; HTTP response not independently verified."
+  },
+  "mainIncoming": {
+    "files": 88,
+    "occurrences": 928,
+    "activeExactAlreadyImported": 279,
+    "historicalExactAlreadyImported": 613,
+    "seenOnly": 36,
+    "activeIdUrlMismatches": 0,
+    "activeExactPending": 0,
+    "unmatchedNotSeen": 0,
+    "structuralErrors": 0,
+    "confirmedExpired": 0,
+    "identityHold": {
+      "historicalId": "7a99eca9b2ce14d9f5",
+      "currentId": "e0cbbf211a55e79f34",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "action": "Keep both IDs separate; this is a historical identity hold, not an active Feed mismatch."
+    }
+  },
+  "pr97Incoming": {
+    "totalFiles": 98,
+    "totalOccurrences": 1024,
+    "unchangedMainFiles": 88,
+    "additionalFiles": 10,
+    "additionalOccurrences": 96,
+    "additionalUniqueIds": 58,
+    "additionalOccurrenceClassification": {
+      "mainActive": 7,
+      "prActive": 62,
+      "prHistorical": 16,
+      "seenOnly": 11,
+      "activePending": 0,
+      "idUrlMismatches": 0,
+      "unmatched": 0,
+      "structuralErrors": 0
+    },
+    "additionalUniqueIdClassification": {
+      "alreadyOnMain": 4,
+      "prOnlyNewIds": 43,
+      "prOnlyNewIdsStillActive": 35,
+      "prOnlyNewIdsHistorical": 8,
+      "seenOnly": 11
+    },
+    "additionalFileCounts": [
+      {
+        "file": "nabdh-editorial-2026-11-06-2342.json",
+        "sha": "da038173414c8653ba849ee7122df7c14e0fb3c0",
+        "items": 8
+      },
+      {
+        "file": "nabdh-editorial-2026-11-07-0247.json",
+        "sha": "8366b714e87dd44f122b805488b94100981b208e",
+        "items": 4
+      },
+      {
+        "file": "nabdh-editorial-2026-11-07-0842.json",
+        "sha": "b7fb0aa370a76f6ba6f62a18a97b5c18f23ce5ca",
+        "items": 10
+      },
+      {
+        "file": "nabdh-editorial-2026-11-07-2338.json",
+        "sha": "c3b9a59ef1416ed0465736ea82e5167cef780dd0",
+        "items": 10
+      },
+      {
+        "file": "nabdh-editorial-2026-11-08-0005.json",
+        "sha": "55ad720ebe6241e35fc9fa4edb6b98a43e9beb38",
+        "items": 3
+      },
+      {
+        "file": "nabdh-editorial-2026-11-08-0035.json",
+        "sha": "9db0e550d7416cd76542a60d11ff80fc74ac7629",
+        "items": 5
+      },
+      {
+        "file": "nabdh-editorial-2026-11-08-0554.json",
+        "sha": "4d3b30adde9331951c7914a4fea9ad1ce17b26ca",
+        "items": 8
+      },
+      {
+        "file": "nabdh-editorial-2026-11-08-0846.json",
+        "sha": "ac601a4732b079e72fe40c8e336d46c8bb66b42b",
+        "items": 1
+      },
+      {
+        "file": "nabdh-editorial-2026-11-08-1453.json",
+        "sha": "0948dd215dae8022c3612e2d6139970571886cbb",
+        "items": 45
+      },
+      {
+        "file": "nabdh-editorial-2026-11-08-1510.json",
+        "sha": "51383ae4b46aba26b44c0e5e3380ce9c78d011b2",
+        "items": 2
+      }
+    ]
+  },
+  "editorialComparison": {
+    "mainRecords": 859,
+    "prRecords": 914,
+    "mainIdsPreserved": 859,
+    "newIdsSinceCurrentMain": 55,
+    "activeNewIds": 44,
+    "outOfFeedNewIds": 11,
+    "activeNewKinds": {
+      "news": 43,
+      "project": 1
+    },
+    "newNewsThisRun": 12,
+    "newNewsStillActive": 9,
+    "newNewsNowOutOfFeed": 3,
+    "oldFieldsRemoved": 0,
+    "activeNewsCoverage": {
+      "matched": 192,
+      "total": 700,
+      "percent": 27.4,
+      "unmatched": 508
+    },
+    "activeProjectCoverage": {
+      "matched": 100,
+      "total": 100
+    }
+  },
+  "newsBatch": {
+    "added": 12,
+    "basisArticle": 3,
+    "basisMetadata": 9,
+    "activeInCurrentFeed": 9,
+    "outOfFeedButKeptHistorical": 3,
+    "ids": [
+      "5be9cd76a11a8ae694",
+      "ef313c34ae184d15b2",
+      "0eacd10b8c48398876",
+      "bd95b63d46d959afe7",
+      "0b33259ab43866603f",
+      "13e695696a47eccca2",
+      "9fdb6f74ae483d9b23",
+      "6b4ec2ccffedd67d8f",
+      "dcb265f08ffa052d65",
+      "91a344d41c03c7c96d",
+      "cbc856aa32d1333eb1",
+      "a47dad607e0fe97888"
+    ],
+    "outOfFeedIds": [
+      "ef313c34ae184d15b2",
+      "0eacd10b8c48398876",
+      "bd95b63d46d959afe7"
+    ]
+  },
+  "validation": {
+    "equivalentStructuralCheck": {
+      "mainIncomingFiles": 88,
+      "mainOccurrences": 928,
+      "mainErrors": 0,
+      "additionalIncomingFiles": 10,
+      "additionalOccurrences": 96,
+      "additionalErrors": 0,
+      "identityComparedByExactIdAndUrl": true
+    },
+    "officialIncomingValidate": {
+      "executed": false,
+      "reason": "No local Python checkout/runtime; per-file incoming checks were structural equivalents."
+    },
+    "officialEditorialValidate": {
+      "executedOnPr": true,
+      "runId": 42507705168,
+      "records": 914,
+      "result": "success"
+    },
+    "officialImport": {
+      "executed": false,
+      "reason": "No active exact incoming IDs remain pending import; local Python runtime unavailable."
+    },
+    "localUnittest": {
+      "executed": false,
+      "command": "python -m unittest discover -s tests -v"
+    },
+    "ciUnittest": {
+      "runId": 42507705168,
+      "passed": 30,
+      "failed": 0,
+      "result": "success"
+    },
+    "javascriptSyntax": {
+      "result": "success",
+      "runId": 42507705168
+    }
+  },
+  "projectLibrary": {
+    "total": 62,
+    "active": 60,
+    "archived": 2,
+    "feedLinked": 10,
+    "researchOnly": 51,
+    "membershipUnverified": 1,
+    "licenseNeedsUpstreamVerification": 9,
+    "notMaintained": 1,
+    "previousEight": {
+      "reviewed": 8,
+      "improvements": 24,
+      "spinoffs": 21,
+      "religious": 0,
+      "testEvidenceClaims": 0,
+      "metricsMeasuredAt": "2026-11-08T15:10:18+03:00"
+    },
+    "publicLibraryEntries": 31,
+    "catalogPublicationStatus": "research-only_not_published"
+  },
+  "decision": {
+    "merge": false,
+    "reason": "The existing push-to-main workflow runs scripts/update_feed.py and may update feed.json, seen.json, and status.json; keep PR open to protect these files.",
+    "noProtectedPathsChanged": true
   }
 }
