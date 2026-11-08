@@ -1,0 +1,220 @@
+{
+  "version": 1,
+  "repository": "synchopate/llama-modchip",
+  "url": "https://github.com/synchopate/llama-modchip",
+  "titleAr": "llama-modchip — بيئة تجريبية لتشغيل نماذج MoE محليًا على CPU",
+  "summaryAr": "مشروع مبني على llama.cpp مع runtime وتنسيق تكميم Fractal-64 ونوى مخصصة لاستدلال محلي أو هجين. يعرض README نتائج أداء كبيرة، لكنها ادعاءات المشروع ولم تُتحقق بإعادة تشغيل مستقلة في هذه الدورة.",
+  "whyItMatters": "يعالج تحدي تشغيل نماذج كبيرة على محطات CPU وذاكرة النظام بدل الاعتماد الكامل على GPU أو API سحابي. القيمة البحثية هنا هي اختبار ما إذا كانت تحسينات الذاكرة والتكميم قابلة للتكرار على أجهزة مختلفة، لا اعتماد أرقام README كحقائق عامة.",
+  "audience": "مطورو النماذج المحلية، وفرق البنية التحتية، وباحثو التكميم وMoE، والطلاب المهتمون بالاستدلال على CPU.",
+  "overview": "يوفر المشروع واجهة CLI باسم modchip، وخيارات chat/web/bench، ونسخة runtime مخصصة من llama.cpp مع تنسيق Fractal-64 ونوى موجهة إلى نماذج MoE. يشرح README مسارات Linux وmacOS وWindows وApple Silicon وARM، ويعرض أمثلة 30B و284B. المشروع ليس خدمة مستضافة؛ التنزيل والاستدلال يتمان محليًا بعد تجهيز runtime والوزن المناسب.",
+  "requirements": "ملف LICENSE يحدد Apache-2.0 لكود المستودع؛ تراخيص أوزان النماذج منفصلة ويجب مراجعتها لكل نموذج. لا يوجد requirements.txt أو pyproject.toml أو CMakeLists.txt في الجذر؛ install.sh يفحص git وcmake وg++ وcurl وpython3 ويثبت OpenMP وأدوات البناء حسب التوزيعة. يذكر README أن نموذج 30B يحتاج عادة 16–32GB RAM وأن وزن 284B يبلغ 56.56GiB مع ذروة ذاكرة معلنة 57.61GiB؛ لذلك 64GB حد ضيق جدًا وليس هامشًا مريحًا. يلزم اتصال لتنزيل الأوزان ومساحة تخزين كبيرة، ثم يمكن أن يكون الاستدلال محليًا.",
+  "quickStart": "المسار الموثق في README لـLinux وmacOS: استنسخ المستودع ثم نفّذ ./modchip chat؛ يصفه المشروع بأنه إعداد وتشغيل آلي وقد ينزّل نموذجًا كبيرًا. قبل ذلك راجع ترخيص النموذج وحجمه ودعم المعالج والذاكرة، ولا تفترض أن نموذج Fractal-64 يعمل في llama.cpp أو Ollama أو LM Studio غير المعدّلة؛ README يحذر من أن نوع tensor المخصص رقم 40 يتطلب runtime المشروع. لم تُنفذ الأوامر في هذه الدورة.",
+  "limitations": "لم يتم تثبيت المشروع أو تشغيله أو تنفيذ benchmark أو eval؛ لا توجد testEvidence. أرقام tokens/s ونتائج الجودة في README وleaderboard ذاتية الإبلاغ ولم نعد إنتاجها. التنسيق المخصص يقلل التوافق مع runtimes الشائعة غير المعدلة. ترخيص المستودع لا يغطي تلقائيًا أوزان النماذج التي ينزلها المستخدم. لم تُتح star/fork/open-issue counters من GitHub connector في هذا القياس، لذلك لا نعرض أرقامًا مخمّنة.",
+  "nextSteps": [
+    "افحص ترخيص كل وزن نموذج قبل تنزيله أو إعادة توزيعه.",
+    "ابدأ بنموذج أصغر وعلى جهاز غير حساس، وسجل الذاكرة والسرعة الفعلية بدل الاعتماد على أرقام README.",
+    "قارن runtime المخصص مع llama.cpp الرسمي على نفس الجهاز والنموذج إن كان التنسيق متوافقًا.",
+    "اطلب سجلات benchmark خامًا مع نوع المعالج والذاكرة وإصدار runtime وhash النموذج."
+  ],
+  "reviewedAt": "2026-11-08T21:15:25+03:00",
+  "basis": "readme",
+  "sources": [
+    {
+      "title": "GitHub repository",
+      "url": "https://github.com/synchopate/llama-modchip"
+    },
+    {
+      "title": "README and Quickstart",
+      "url": "https://github.com/synchopate/llama-modchip/blob/main/README.md"
+    },
+    {
+      "title": "LICENSE",
+      "url": "https://github.com/synchopate/llama-modchip/blob/main/LICENSE"
+    },
+    {
+      "title": "install.sh",
+      "url": "https://github.com/synchopate/llama-modchip/blob/main/install.sh"
+    },
+    {
+      "title": "modchip CLI",
+      "url": "https://github.com/synchopate/llama-modchip/blob/main/modchip"
+    },
+    {
+      "title": "Hardware optimizations",
+      "url": "https://github.com/synchopate/llama-modchip/blob/main/docs/HARDWARE_OPTIMIZATIONS.md"
+    },
+    {
+      "title": "Latest observed commit",
+      "url": "https://github.com/synchopate/llama-modchip/commit/ea51088d7f95bf912add1cf7026cd1d604163efb"
+    },
+    {
+      "title": "llama.cpp alternative",
+      "url": "https://github.com/ggml-org/llama.cpp"
+    },
+    {
+      "title": "Ollama alternative",
+      "url": "https://github.com/ollama/ollama"
+    },
+    {
+      "title": "vLLM alternative",
+      "url": "https://github.com/vllm-project/vllm"
+    }
+  ],
+  "improvements": [
+    {
+      "title": "حزمة benchmark قابلة لإعادة الإنتاج مع سجلات خام",
+      "problem": "أرقام README يصعب مقارنتها دون تثبيت الجهاز وإصدار runtime وhash النموذج وطريقة القياس.",
+      "approach": "إضافة runner موحد يسجل warm/cold start وTTFT وtokens/s وRSS وجودة المخرجات في JSONL مع manifest للأجهزة والأوزان.",
+      "stack": "Python / pytest / JSONL / pandas / GitHub Actions",
+      "steps": [
+        "حدد مجموعة prompts ثابتة غير حساسة.",
+        "سجل CPU وRAM ونظام التشغيل وإصدار runtime وhash النموذج.",
+        "قِس TTFT وprefill/decode وRSS في حالات warm وcold.",
+        "احفظ النتائج الخام والملخص في artifact قابل للتنزيل.",
+        "أعد الاختبار على جهازين مستقلين قبل نشر مقارنة."
+      ],
+      "metric": "نسبة نتائج benchmark التي تحتوي manifest كاملًا ويمكن إعادة إنتاجها ضمن هامش معلن.",
+      "difficulty": "متوسطة إلى مرتفعة — تقدير بحثي.",
+      "risks": "تباين الحرارة والطاقة والذاكرة قد يفسد المقارنة؛ يلزم توثيق الإعدادات وعدم انتقاء أفضل تشغيل.",
+      "sources": [
+        {
+          "title": "llama-modchip README",
+          "url": "https://github.com/synchopate/llama-modchip/blob/main/README.md"
+        },
+        {
+          "title": "Benchmark submission template",
+          "url": "https://github.com/synchopate/llama-modchip/issues/new?template=cpu_benchmark_submission.yml"
+        }
+      ]
+    },
+    {
+      "title": "Manifest توافق للأوزان والتنسيقات المخصصة",
+      "problem": "نوع tensor المخصص رقم 40 قد يؤدي إلى فشل تحميل النموذج في runtimes غير معدلة، كما أن ترخيص الوزن قد يختلف عن ترخيص الكود.",
+      "approach": "توفير manifest لكل نموذج يحدد tensor types وruntime المطلوب وإصدار binary وchecksum وترخيص الوزن والأنظمة المختبرة.",
+      "stack": "JSON Schema / Python / C++ / CMake / CI",
+      "steps": [
+        "صمم schema لإصدار runtime وتنسيق الأوزان وlicense وchecksum.",
+        "أضف manifest لكل وزن مدعوم.",
+        "تحقق عند بدء التشغيل من التوافق قبل تحميل الملف.",
+        "أضف اختبارات فشل واضحة للتنسيقات غير المدعومة.",
+        "انشر مصفوفة دعم محدثة مع كل release."
+      ],
+      "metric": "نسبة الأوزان المنشورة التي تملك manifest صالحًا واختبار توافق موثقًا.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "تغير التنسيقات أو تراخيص النماذج قد يجعل manifest قديمًا؛ يجب ربطه بإصدار محدد.",
+      "sources": [
+        {
+          "title": "llama-modchip README compatibility note",
+          "url": "https://github.com/synchopate/llama-modchip/blob/main/README.md"
+        },
+        {
+          "title": "llama.cpp",
+          "url": "https://github.com/ggml-org/llama.cpp"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "مقياس عربي مفتوح لاستدلال النماذج المحلية على CPU",
+      "problem": "لا توجد مقارنة موحدة سهلة بين سرعة النماذج العربية وجودة الإجابة واستهلاك RAM على أجهزة محلية مختلفة.",
+      "approach": "بناء prompts عربية ثابتة مع rubric تقييم ومقاييس زمنية وذاكرة، وتشغيلها على runtimes متوافقة.",
+      "stack": "Python / llama.cpp / JSONL / pandas / matplotlib",
+      "steps": [
+        "اختر مجموعة أسئلة عربية متنوعة غير حساسة.",
+        "ثبت إصدارات النماذج والأوزان وتراخيصها.",
+        "سجل hardware manifest وRAM وTTFT وtokens/s.",
+        "قيّم جودة الإجابة بمراجعة بشرية منفصلة عن السرعة.",
+        "انشر النتائج الخام مع القيود وتاريخ القياس."
+      ],
+      "metric": "اكتمال manifest لكل تشغيل واتساق ترتيب الأداء عند إعادة الاختبار.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "اختلاف جودة الأوزان والمقيّمين قد يجعل المقارنة مضللة؛ افصل السرعة عن الجودة.",
+      "sources": [
+        {
+          "title": "llama.cpp",
+          "url": "https://github.com/ggml-org/llama.cpp"
+        },
+        {
+          "title": "llama-modchip README",
+          "url": "https://github.com/synchopate/llama-modchip/blob/main/README.md"
+        }
+      ]
+    },
+    {
+      "title": "حاسبة ملاءمة الذاكرة والسياق للنماذج المحلية",
+      "problem": "قد يختار المستخدم نموذجًا يتجاوز RAM المتاحة بعد احتساب وزن النموذج وKV cache والسياق.",
+      "approach": "أداة تقرأ metadata للنموذج وتقدّر ذاكرة الأوزان وKV cache وهامش النظام قبل التنزيل.",
+      "stack": "Python / GGUF metadata / JSON / CLI",
+      "steps": [
+        "حدد صيغ metadata المدعومة.",
+        "احسب حجم الأوزان من الملف أو manifest.",
+        "قدّر KV cache وفق السياق ونوع الدقة.",
+        "أضف هامشًا للنظام وruntime واعرض عدم اليقين.",
+        "قارن التقدير بقراءة RSS فعلية على نماذج اختبار."
+      ],
+      "metric": "متوسط خطأ تقدير RAM مقارنة بالقياس الفعلي على مجموعة أجهزة.",
+      "difficulty": "متوسطة — تقدير بحثي.",
+      "risks": "تختلف دقة الذاكرة باختلاف kernels وbatching؛ لا تعرض التقدير كضمان.",
+      "sources": [
+        {
+          "title": "llama.cpp GGUF",
+          "url": "https://github.com/ggml-org/llama.cpp"
+        },
+        {
+          "title": "llama-modchip hardware guide",
+          "url": "https://github.com/synchopate/llama-modchip/blob/main/docs/HARDWARE_OPTIMIZATIONS.md"
+        }
+      ]
+    }
+  ],
+  "religious": [],
+  "alternatives": [
+    {
+      "name": "llama.cpp",
+      "tradeoff": "مرجع عام واسع الاستخدام؛ قد لا يقرأ Fractal-64 أو tensor type 40 دون دعم خاص.",
+      "url": "https://github.com/ggml-org/llama.cpp"
+    },
+    {
+      "name": "Ollama",
+      "tradeoff": "أسهل لإدارة نماذج محلية شائعة، لكن التنسيق المخصص المذكور في README غير متوافق مع runtime غير معدل.",
+      "url": "https://github.com/ollama/ollama"
+    },
+    {
+      "name": "LM Studio",
+      "tradeoff": "واجهة سطح مكتب سهلة للنماذج المدعومة؛ ليس بديلًا مباشرًا لتنسيق Fractal-64 المخصص.",
+      "url": "https://lmstudio.ai/"
+    },
+    {
+      "name": "vLLM",
+      "tradeoff": "خادم استدلال عالي الإنتاجية مع متطلبات تشغيل مختلفة وغالبًا GPU؛ ليس مقارنة متكافئة لمسار CPU.",
+      "url": "https://github.com/vllm-project/vllm"
+    }
+  ],
+  "deploymentModes": {
+    "local": "الاستدلال محلي بعد تنزيل الأوزان؛ لا يلزم API مدفوع، لكن يلزم تخزين كبير وRAM/CPU مناسب واستهلاك كهرباء. نموذج 284B يتطلب ملفًا يقارب 56.56GiB وذاكرة معلنة 57.61GiB، ما يجعل 64GB هامشًا ضيقًا.",
+    "cloud": "يمكن تشغيله على VM عالية الذاكرة أو CPU/GPU حسب التوافق؛ التكلفة تعتمد على مزود السحابة وساعات التشغيل والتخزين، ولا يقدم المستودع خدمة مستضافة أو تسعيرًا ثابتًا."
+  },
+  "researchOnly": true,
+  "published": false,
+  "relatedIncomingId": null,
+  "feedId": null,
+  "relatedNewsFeedId": "55858f2b4ca73bdea1",
+  "displayRequirements": "اعرض شارة «بحث فقط — غير منشور»، وميّز أرقام README بأنها ادعاءات المؤلف غير المعاد إنتاجها، واعرض ترخيص الكود منفصلًا عن تراخيص الأوزان، ومتطلبات RAM والتنسيق المخصص والبدائل. لا تنشئ بطاقة عامة أو زر تشغيل/نشر أو testEvidence.",
+  "metricSnapshot": {
+    "stars": null,
+    "forks": null,
+    "openIssues": null,
+    "license": "Apache-2.0 (LICENSE file inspected)",
+    "archived": false,
+    "disabled": null,
+    "lastPushedAt": null,
+    "lastUpdatedAt": null,
+    "defaultBranch": "main",
+    "latestCommitSha": "ea51088d7f95bf912add1cf7026cd1d604163efb",
+    "measuredAt": "2026-11-08T21:15:25+03:00",
+    "source": "https://github.com/synchopate/llama-modchip",
+    "note": "GitHub connector did not expose stars/forks/open issues or commit timestamp; no numeric counts invented."
+  },
+  "runtimeValidation": "لم يتم تثبيت المشروع أو تشغيله أو تنفيذ benchmark/eval؛ لا توجد testEvidence."
+}
