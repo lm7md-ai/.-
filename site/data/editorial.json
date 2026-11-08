@@ -23970,7 +23970,7 @@
     },
     "6d3bd03b499863301f": {
       "url": "https://github.com/calesthio/OpenMontage",
-      "reviewedAt": "2026-10-30T20:44:18+03:00",
+      "reviewedAt": "2026-11-08T15:10:18+03:00",
       "titleAr": "OpenMontage: نظام إنتاج فيديو مفتوح المصدر ينسق البحث والسيناريو والأصول والمونتاج",
       "summaryAr": "ينسق OpenMontage البحث والسيناريو وتخطيط المشاهد وتوليد الأصول والصوت والترجمة ثم تركيب الفيديو باستخدام أدوات مثل Remotion وFFmpeg، مع لوحة محلية Backlot. المستودع مرخص AGPL-3.0.",
       "whyItMatters": "قد يختصر تنسيق أدوات الفيديو في مسار قابل للمراجعة، لكنه ليس مجانيًا بالكامل؛ التكلفة والجودة تعتمدان على مزودي النماذج والمفاتيح والعتاد والتراخيص.",
@@ -23978,8 +23978,8 @@
       "overview": "نظام إنتاج فيديو موجّه بالوكيل ينسق البحث والسرد والمشاهد والأصول والصوت والترجمة والتركيب النهائي. الأمثلة والنتائج في README من ناشر المشروع ولم تُعاد تجربتها هنا.",
       "requirements": "يتطلب Python 3.10+ وNode.js 18+ وFFmpeg ومكتبات requirements.txt وتثبيت npm في remotion-composer. بعض المسارات تحتاج مفاتيح API برسوم متغيرة؛ البدائل المحلية قد تحتاج GPU. الترخيص AGPL-3.0، ويجب مراجعة التزامات النسخة المعدلة عند تشغيلها كخدمة شبكية وتراخيص الأصول والمخرجات.",
       "quickStart": "على جهاز تجريبي: `git clone https://github.com/calesthio/OpenMontage.git` ثم `cd OpenMontage` و`make setup`. انسخ `.env.example` إلى `.env` وأضف مفتاح المزود المطلوب فقط. يذكر README محاكاة محلية عبر `python scripts/backlot_simulate_run.py` ثم فتح اللوحة بـ`python -m backlot open`. لم تُنفذ الأوامر هنا.",
-      "limitations": "لم يُشغّل المشروع ولم تُختبر جودة الفيديو أو التكلفة. توفر مفتاح API لا يضمن رصيدًا أو حق استخدام كل نموذج؛ راجع AGPL-3.0 وتراخيص الأصول قبل الاستخدام التجاري.",
-      "basis": "readme",
+      "limitations": "في هذه المراجعة أعاد GitHub API لمسار calesthio/OpenMontage حالة Moved Permanently، وتعذر جلب README من المسار القديم. لذلك هذه البطاقة metadata-only ولا تؤكد أن هذا المعرف يطابق بطاقة OpenMontageInc ذات المعرف المختلف؛ يجب إبقاء ID وURL الأصليين منفصلين حتى يمكن التحقق من وجهة التحويل والمحتوى. لم يُشغّل المشروع.",
+      "basis": "metadata",
       "sources": [
         {
           "title": "OpenMontage README",
@@ -24016,6 +24016,10 @@
         {
           "title": "Blender official site",
           "url": "https://www.blender.org/"
+        },
+        {
+          "title": "GitHub API — repository metadata response for calesthio/OpenMontage",
+          "url": "https://api.github.com/repos/calesthio/OpenMontage"
         }
       ],
       "localVsCloud": "التنسيق واللوحة يمكن أن يكونا محليين؛ توليد الصور والفيديو والصوت غالبًا عبر APIs سحابية. بعض النماذج المحلية تحتاج GPU.",
