@@ -115,7 +115,7 @@
       "name": "uv",
       "repository": "astral-sh/uv",
       "archived": false,
-      "license": "Apache-2.0 AND MIT",
+      "license": "Apache-2.0",
       "stars": 91763,
       "forks": 3776,
       "openIssues": 3051,
@@ -134,5 +134,15 @@
     "completeIdeas": 45,
     "testEvidenceClaims": 0,
     "note": "README, docs, license, requirements, quick start, costs, local/cloud options and alternatives are documented in previous-eight-refresh-2026-11-08-0554.json. This file only refreshes GitHub metrics."
-  }
+  },
+  "timestampAnomalies": [
+    {
+      "repository": "pydantic/pydantic-ai",
+      "field": "pushedAt",
+      "reportedValue": "2026-11-08T12:17:35Z",
+      "measuredAt": "2026-11-08T12:10:18Z",
+      "note": "Reported push timestamp is about 7m17s in the future; do not use it as proof of activity until a later snapshot confirms it."
+    }
+  ],
+  "metricSourceNote": "GitHub API values captured at the stated time. Future timestamps are flagged rather than treated as evidence of recent activity."
 }
