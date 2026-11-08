@@ -1,15 +1,15 @@
 {
   "version": 1,
-  "compiledAt": "2026-11-07T23:38:28+03:00",
+  "compiledAt": "2026-11-08T21:15:25+03:00",
   "note": "Append-only research catalog. Existing priority and idea order preserved; NVKE appended at priority 53 as research-only because its exact feed reference is a news item, not a project card. ToyBlocks appended at priority 56 as research-only because its exact feed reference is a news item, not a project card.",
   "metricsWarning": "قِيست مؤشرات 8 مشاريع سابقة و2 جديدين عند 2026-11-07T20:38:28Z؛ بقية السجلات تحتفظ بأوقات القياس الأصلية.",
   "measurementWindow": "2026-11-06T18:27:02Z",
   "statusSummary": {
-    "total": 62,
+    "total": 63,
     "archived": 2,
-    "nonArchived": 60,
+    "nonArchived": 61,
     "inCurrentFeed": 10,
-    "notInFeed": 51,
+    "notInFeed": 52,
     "feedMembershipUnverified": 1,
     "licenseNeedsUpstreamVerification": 9,
     "enrichedInCurrentFeed": 8,
@@ -4156,9 +4156,81 @@
       "activityStatus": "active_but_activity_timestamp_partial",
       "currentStatus": "active_not_archived",
       "currentLicenseStatus": "verified"
+    },
+    {
+      "priority": 63,
+      "repository": "synchopate/llama-modchip",
+      "url": "https://github.com/synchopate/llama-modchip",
+      "category": "استدلال محلي للنماذج / CPU inference",
+      "classification": "experimental_non_archived",
+      "archived": false,
+      "starsMeasured": null,
+      "metricCapturedAt": null,
+      "licenseApiValue": null,
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": true,
+      "reviewBasis": "README وLICENSE وinstall.sh وmodchip وHARDWARE_OPTIMIZATIONS.md فُحصت؛ لا تنفيذ أو اختبار. LICENSE للكود Apache-2.0، وتراخيص الأوزان منفصلة.",
+      "overviewShort": "Runtime محلي مبني على llama.cpp مع CLI وتنسيق Fractal-64 ونوى مخصصة لنماذج MoE؛ أرقام الأداء ذاتية الإبلاغ وغير معاد إنتاجها هنا.",
+      "proposedResearchOrBuild": "إعادة إنتاج benchmark CPU موحد للنماذج العربية والمحلية، مع تقدير RAM والسياق وتوثيق hashes الأوزان.",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "research-only; no public project card; related news feed item 55858f2b4ca73bdea1",
+      "sources": [
+        {
+          "title": "GitHub repository",
+          "url": "https://github.com/synchopate/llama-modchip"
+        },
+        {
+          "title": "README",
+          "url": "https://github.com/synchopate/llama-modchip/blob/main/README.md"
+        },
+        {
+          "title": "LICENSE",
+          "url": "https://github.com/synchopate/llama-modchip/blob/main/LICENSE"
+        },
+        {
+          "title": "Latest observed commit",
+          "url": "https://github.com/synchopate/llama-modchip/commit/ea51088d7f95bf912add1cf7026cd1d604163efb"
+        }
+      ],
+      "disabled": false,
+      "forksMeasured": null,
+      "metricsCaptureWindow": "2026-11-08T21:15:25+03:00 (numeric stars/forks unavailable)",
+      "lastPushedAt": null,
+      "lastUpdatedAt": null,
+      "defaultBranch": "main",
+      "language": "C++ / Python / Shell",
+      "licenseName": "Apache-2.0",
+      "licenseSummary": "كود المستودع Apache-2.0؛ أوزان النماذج المحملة لها تراخيص منفصلة.",
+      "licenseEvidence": "LICENSE inspected; model-weight licenses not reviewed.",
+      "activityStatus": "not_archived_latest_commit_sha_observed_timestamp_unavailable",
+      "alternativeProjects": [
+        "ggml-org/llama.cpp",
+        "ollama/ollama",
+        "vllm-project/vllm"
+      ],
+      "metricSource": "https://github.com/synchopate/llama-modchip",
+      "editorialEnriched": false,
+      "editorialUrlMatches": false,
+      "currentSnapshot": {
+        "stars": null,
+        "forks": null,
+        "openIssues": null,
+        "archived": false,
+        "disabled": null,
+        "licenseSpdx": "Apache-2.0 (LICENSE file)",
+        "pushedAt": null,
+        "updatedAt": null,
+        "defaultBranch": "main",
+        "latestCommitSha": "ea51088d7f95bf912add1cf7026cd1d604163efb",
+        "measuredAt": "2026-11-08T21:15:25+03:00",
+        "sourceApiUrl": "https://api.github.com/repos/synchopate/llama-modchip"
+      },
+      "currentStatus": "not_archived_activity_timestamp_unavailable",
+      "currentLicenseStatus": "repo_license_verified_model_weights_separate"
     }
   ],
-  "currentSnapshotSummary": "57 entries: 2 archived; 55 non-archived (one explicitly marked not maintained); 8 exact project-feed matches; 48 research-only/not in project feed; 1 feed-membership status remains unverified.",
+  "currentSnapshotSummary": "63 entries: 2 archived; 61 non-archived (one explicitly marked not maintained); 10 exact project-feed matches; 52 research-only/not in project feed; 1 feed-membership status remains unverified.",
   "measurementNote": "Added gradium-ai/xn-ptts as research-only. Its Feed reference c65c7708e93995ca45 is a news item, not a project card; no project feed ID was assigned. Repository code licenses and model-weight licenses are distinct; no execution or tests were performed. Partial refresh at 2026-11-06T15:01:29Z: eight previously reviewed repositories plus Unleash; Unleash is research-only because its current feed reference is a news item, not a project card. Added allenai/ToyBlocks as research-only: exact feed reference 5a90caffb2c87d2e6e is a news item, not a project card. Main repository Apache-2.0; submodules and assets have separate licenses. Metrics measured 2026-11-06T15:13:25Z. No execution or tests were performed.",
   "archivedAlternatives": [
     {
@@ -4194,8 +4266,8 @@
       ]
     }
   ],
-  "summary": "62 مشروعًا: 2 مؤرشفان و60 غير مؤرشف؛ 10 مطابقات feed (8 إثراء منشور سابقًا و2 على PR #97)، و51 بحثًا مستقلًا، وعضوية واحدة غير محسومة.",
-  "runAt": "2026-11-07T23:38:28+03:00",
+  "summary": "63 مشروعًا: 2 مؤرشفان و61 غير مؤرشف؛ 10 مطابقات feed (8 إثراء منشور سابقًا و2 على PR #97)، و52 بحثًا مستقلًا، وعضوية واحدة غير محسومة.",
+  "runAt": "2026-11-08T21:15:25+03:00",
   "metricsMeasuredAt": "2026-11-07T20:38:28Z",
   "metricSource": "GitHub REST API repository metadata; partial refresh of the eight previously reviewed projects plus one new research-only project, not a synchronized full-library snapshot.",
   "timestampAnomalies": [
@@ -4244,5 +4316,5 @@
     "HKUDS/DeepTutor",
     "VectifyAI/PageIndex"
   ],
-  "metricRefreshNote": "تم تحديث المؤشرات داخل هذا الكتالوج نفسه للمشاريع الثمانية السابقة، إضافة إلى DeepTutor وPageIndex؛ بقية السجلات تحتفظ بأوقات قياسها الأصلية."
+  "metricRefreshNote": "تم تحديث المؤشرات داخل هذا الكتالوج نفسه للمشاريع الثمانية السابقة، إضافة إلى DeepTutor وPageIndex؛ بقية السجلات تحتفظ بأوقات قياسها الأصلية. Llama-modchip checked 2026-11-08T21:15:25+03:00: repository not archived, Apache-2.0 LICENSE inspected, latest commit SHA observed; stars/forks/open-issues and commit timestamp unavailable from connector, so counts were not invented."
 }
