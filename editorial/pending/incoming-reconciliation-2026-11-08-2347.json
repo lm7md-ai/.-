@@ -1,0 +1,563 @@
+{
+  "version": 1,
+  "runAt": "2026-11-08T23:47:34+03:00",
+  "repository": "lm7md-ai/.-",
+  "main": {
+    "commit": "3eb301af32fa987b2290c73030ce48896209a67f",
+    "feed": {
+      "items": 800,
+      "news": 700,
+      "projects": 100,
+      "generatedAt": "2026-11-08T17:54:49+00:00",
+      "blobSha": "fa24b093a3e505924838e0ee912b7d82d32fdee3"
+    },
+    "editorial": {
+      "records": 859,
+      "blobSha": "b9b75072729920f3e8d3a9eaf822a06bb6ebac61",
+      "exactActive": {
+        "news": 149,
+        "projects": 99,
+        "total": 248
+      },
+      "outOfFeed": 611,
+      "idUrlMismatches": 0
+    },
+    "seen": {
+      "ids": 3753,
+      "titles": 3595,
+      "blobSha": "7c708d87e10c9997bae5bb5707316d30eae049c3"
+    },
+    "status": {
+      "state": "partial",
+      "lastAttemptAt": "2026-11-08T17:54:49+00:00",
+      "lastSuccessfulAt": "2026-11-08T17:54:49+00:00",
+      "collected": 286,
+      "sourceCount": 26,
+      "sourceStates": {
+        "ok": 22,
+        "empty": 2,
+        "error": 2
+      },
+      "emptySources": [
+        "أبحاث الذكاء الاصطناعي",
+        "أبحاث تعلّم الآلة"
+      ],
+      "errorSources": [
+        {
+          "name": "برمجة بايثون",
+          "error": "HTTP 503"
+        },
+        {
+          "name": "فرص وبرامج تقنية",
+          "error": "HTTP 503"
+        }
+      ],
+      "blobSha": "8f88c6999c14bc0215ee72f97c16bd90a7a62548"
+    }
+  },
+  "pullRequests": {
+    "pr1": {
+      "state": "closed",
+      "merged": true
+    },
+    "pr2": {
+      "state": "closed",
+      "merged": true
+    },
+    "pr97": {
+      "state": "open",
+      "merged": false,
+      "mergeable": true,
+      "branch": "editorial/2026-11-06-2342-run11",
+      "head": "1f0b50b4d7667ffbedb8fe6b0c88e4221caa2c4b",
+      "aheadBy": 71,
+      "behindBy": 2,
+      "changedFiles": 60,
+      "protectedPathsChanged": []
+    },
+    "otherOpen": {
+      "pr78": {
+        "state": "open",
+        "mergeable": false,
+        "changedFiles": 18
+      },
+      "pr71": {
+        "state": "open",
+        "mergeable": false,
+        "changedFiles": 6
+      }
+    }
+  },
+  "incoming": {
+    "main": {
+      "files": 88,
+      "occurrences": 928,
+      "classificationUnit": "occurrence",
+      "classification": {
+        "activeExactAlreadyImported": 279,
+        "historicalExactAlreadyImported": 613,
+        "seenOnly": 36,
+        "activeIdUrlMismatches": 0,
+        "activePendingImport": 0,
+        "historicalUrlMismatches": 0,
+        "unmatchedNotSeen": 0,
+        "confirmedExpired": 0,
+        "structuralErrors": 0
+      },
+      "method": "Fetched and structurally checked all 88 main incoming blobs in seven batches; each ID and URL compared literally with main Feed, main Editorial and Seen IDs.",
+      "discrepancyResolution": {
+        "previous2047": {
+          "active": 286,
+          "historical": 605,
+          "seenOnly": 36,
+          "identityMismatch": 1
+        },
+        "previous2115": {
+          "active": 279,
+          "historical": 613,
+          "seenOnly": 36,
+          "identityMismatch": 0
+        },
+        "currentRecheck": {
+          "active": 279,
+          "historical": 613,
+          "seenOnly": 36,
+          "identityMismatch": 0
+        },
+        "decision": "Current raw recheck matches the 21:15 classification; the 20:47 snapshot is superseded. Feed blob SHA unchanged."
+      }
+    },
+    "prAdditional": {
+      "files": 11,
+      "occurrences": 117,
+      "uniqueIds": 79,
+      "duplicateOccurrences": 38,
+      "structuralErrors": 0,
+      "idUrlConflicts": 0,
+      "uniqueClassification": {
+        "activeExactFeed": 60,
+        "exactInPrEditorial": 68,
+        "alreadyInMainEditorial": 4,
+        "newToPrEditorialFromIncoming": 64,
+        "historicalExactInPrEditorial": 8,
+        "seenOnly": 11,
+        "unknown": 0,
+        "activePending": 0,
+        "confirmedExpired": 0
+      },
+      "kindOccurrences": {
+        "news": 109,
+        "project": 8
+      },
+      "basisOccurrencesAcrossAll21InLatestFile": {
+        "article": 6,
+        "metadata": 15
+      },
+      "latestFile": {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-08-2115.json",
+        "occurrences": 21,
+        "provenanceRecovery": 9,
+        "newNews": 12,
+        "newNewsBasis": {
+          "article": 4,
+          "metadata": 8
+        },
+        "exactFeedIdUrlMatches": 21
+      }
+    },
+    "total": {
+      "files": 99,
+      "occurrences": 1045,
+      "structuralErrors": 0,
+      "activeIdUrlMismatches": 0,
+      "activePendingImport": 0,
+      "confirmedExpired": 0
+    }
+  },
+  "identityAndHolds": {
+    "historicalIdPair": {
+      "historicalId": "7a99eca9b2ce14d9f5",
+      "currentId": "e0cbbf211a55e79f34",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "historicalIdInFeed": false,
+      "currentIdInFeed": true,
+      "decision": "Keep both IDs separate; no title-based alias or synthesized ID."
+    },
+    "historicalPrOnly": [
+      {
+        "id": "ef313c34ae184d15b2",
+        "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph"
+      },
+      {
+        "id": "0eacd10b8c48398876",
+        "url": "https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition/"
+      },
+      {
+        "id": "bd95b63d46d959afe7",
+        "url": "https://www.kadoa.com/companies/insights/ai-selloff-perspective"
+      }
+    ],
+    "specialRecords": [
+      {
+        "name": "NVIDIA OpenShell",
+        "id": "940ec4695c1e241c2f",
+        "inFeed": false,
+        "inMainEditorial": false,
+        "inPrEditorial": false,
+        "inSeen": true,
+        "researchOnlyDossier": true
+      },
+      {
+        "name": "Canva Craft",
+        "id": "317abcdd1b20728a7e",
+        "inFeed": false,
+        "inMainEditorial": false,
+        "inPrEditorial": false,
+        "inSeen": true
+      },
+      {
+        "name": "1Password agent sign-in",
+        "id": "662e68277c6361dd4b",
+        "inFeed": false,
+        "inMainEditorial": false,
+        "inPrEditorial": false,
+        "inSeen": true
+      }
+    ],
+    "seenOnlyNotConfirmedExpired": 36,
+    "confirmedExpired": 0
+  },
+  "editorial": {
+    "mainRecords": 859,
+    "prRecords": 926,
+    "additionalIdsComparedWithMain": 67,
+    "mainIdsPreserved": 859,
+    "oldFieldsRemoved": 0,
+    "urlChanges": 0,
+    "changedExistingItems": 5,
+    "prOnlyHistoricalOutsideIncoming": 3,
+    "activeCoverage": {
+      "main": {
+        "news": 149,
+        "projects": 99,
+        "total": 248
+      },
+      "pr": {
+        "news": 204,
+        "projects": 100,
+        "total": 304
+      }
+    },
+    "latestNewNews": 12,
+    "latestNewsBasis": {
+      "article": 4,
+      "metadata": 8
+    }
+  },
+  "newsBatch": [
+    {
+      "id": "7cdeffc8e00dfd185d",
+      "titleAr": "تقرير: OpenAI تجمع 11 مليار دولار عند تقييم خاص قدره 1.25 تريليون",
+      "basis": "article",
+      "source": "https://www.reuters.com/business/openai-secures-11-billion-funding-125-trillion-valuation-bloomberg-news-reports-2026-11-06/"
+    },
+    {
+      "id": "c08233254ab5569234",
+      "titleAr": "دعويان جديدتان تتهمان Suno بتقليد صوت Elvis Presley وأعمال Eminem",
+      "basis": "article",
+      "source": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit"
+    },
+    {
+      "id": "9a720b3178d2f33796",
+      "titleAr": "NYT Cooking تختبر أداة ذكاء اصطناعي لتعديل الوصفات للمشتركين",
+      "basis": "article",
+      "source": "https://www.wired.com/story/nyt-cooking-new-ai-powered-recipe-modifier-is-pretty-good/"
+    },
+    {
+      "id": "7ff53c833c04080042",
+      "titleAr": "مؤشرات في نسخة iOS تجريبية تلمّح إلى تطبيقات محادثة في Apple HomeView",
+      "basis": "article",
+      "source": "https://www.theverge.com/tech/1029526/chatbots-might-be-coming-to-apples-homeview"
+    },
+    {
+      "id": "a44e5a0e0ca44230ba",
+      "titleAr": "بحث يقترح تعليم الوكلاء مبادئ السلوك بدل الاعتماد على إشارة المكافأة",
+      "basis": "metadata",
+      "source": "https://arxiv.org/abs/2611.07130"
+    },
+    {
+      "id": "11c6518cf3e4b21797",
+      "titleAr": "إسناد متناثر للخبراء يحاول خفض كلفة التعلم الاتحادي لنماذج MoE",
+      "basis": "metadata",
+      "source": "https://arxiv.org/abs/2611.07093"
+    },
+    {
+      "id": "14dea264cd89a5a00c",
+      "titleAr": "TrustMix يقترح تراجعًا تدريجيًا إلى توزيع احتياطي عند تغير البيانات",
+      "basis": "metadata",
+      "source": "https://arxiv.org/abs/2611.07206"
+    },
+    {
+      "id": "40be8173b384ddb90e",
+      "titleAr": "إطار بحثي يمثل معتقدات وأهداف الوكيل صراحةً انطلاقًا من مساراته",
+      "basis": "metadata",
+      "source": "https://arxiv.org/abs/2611.07208"
+    },
+    {
+      "id": "5208fc4d61dd02d27e",
+      "titleAr": "Loopback Transformer يدرس إعادة استخدام التحديثات عبر كتل مشتركة",
+      "basis": "metadata",
+      "source": "https://arxiv.org/abs/2611.07226"
+    },
+    {
+      "id": "1d43601888e266f089",
+      "titleAr": "بحث يستغل تكافؤ تمثيلات الشبكات لتقليل حجم ملفات النماذج",
+      "basis": "metadata",
+      "source": "https://arxiv.org/abs/2611.07233"
+    },
+    {
+      "id": "4c861a74d24931e081",
+      "titleAr": "BCSS يولّد نماذج رمزية قابلة للتفسير لمقارنة استدلال البشر والآلات",
+      "basis": "metadata",
+      "source": "https://arxiv.org/abs/2611.07088"
+    },
+    {
+      "id": "c4e17a182be4d6face",
+      "titleAr": "KG-Neighbor يستخدم علاقات الرسوم المعرفية لتحسين جوار التضمينات",
+      "basis": "metadata",
+      "source": "https://arxiv.org/abs/2611.07246"
+    }
+  ],
+  "projectLibrary": {
+    "priorCatalogEntries": 63,
+    "newResearchOnlyDossier": "editorial/library/research-only/openmontage-2026-11-08.json",
+    "newCatalogSnapshot": "editorial/library/catalog-2026-11-08-2347.json",
+    "afterAddition": {
+      "total": 64,
+      "archived": 2,
+      "nonArchived": 62,
+      "feedLinked": 10,
+      "researchOnly": 53,
+      "membershipUnverified": 1,
+      "licenseNeedsUpstreamVerification": 9
+    },
+    "previousEight": {
+      "projects": 8,
+      "improvements": 24,
+      "spinoffs": 21,
+      "completeIdeas": 45,
+      "religious": 0,
+      "testEvidenceClaims": 0,
+      "allArchived": false
+    },
+    "openMontage": {
+      "repository": "OpenMontageInc/OpenMontage",
+      "inFeed": false,
+      "publicationStatus": "research_only_not_published",
+      "license": "AGPL-3.0",
+      "acceptedSnapshot": {
+        "stars": 78592,
+        "forks": 10478,
+        "openIssues": 323,
+        "measuredAt": "2026-11-08T21:57:55+03:00"
+      },
+      "provisionalLatest": {
+        "stars": 78628,
+        "forks": 10484,
+        "openIssues": 323,
+        "updatedAt": "2026-11-08T20:51:56Z",
+        "reportedAtByConnector": "2026-11-08T20:53:50Z",
+        "timeSkewSeconds": 376
+      },
+      "testEvidence": null
+    }
+  },
+  "provisionalPreviousEightMetrics": [
+    {
+      "repository": "patchy631/ai-engineering-hub",
+      "license": "MIT",
+      "archived": false,
+      "stars": 41503,
+      "forks": 6633,
+      "openIssues": 137,
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "updatedAt": "2026-11-08T20:53:31Z"
+    },
+    {
+      "repository": "googleapis/python-genai",
+      "license": "Apache-2.0",
+      "archived": false,
+      "stars": 4058,
+      "forks": 1061,
+      "openIssues": 396,
+      "pushedAt": "2026-11-08T20:32:42Z",
+      "updatedAt": "2026-11-08T12:51:44Z"
+    },
+    {
+      "repository": "Millillion/lasm",
+      "license": "MIT",
+      "archived": false,
+      "stars": 104,
+      "forks": 7,
+      "openIssues": 8,
+      "pushedAt": "2026-11-08T05:25:20Z",
+      "updatedAt": "2026-11-08T07:28:31Z"
+    },
+    {
+      "repository": "microsoft/markitdown",
+      "license": "MIT",
+      "archived": false,
+      "stars": 194445,
+      "forks": 14650,
+      "openIssues": 813,
+      "pushedAt": "2026-11-07T00:14:01Z",
+      "updatedAt": "2026-11-08T20:49:51Z"
+    },
+    {
+      "repository": "yc-software/minecraft-agent-harness",
+      "license": "MIT",
+      "archived": false,
+      "stars": 186,
+      "forks": 20,
+      "openIssues": 1,
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "updatedAt": "2026-11-08T19:23:51Z"
+    },
+    {
+      "repository": "NVIDIA/OpenShell",
+      "license": "Apache-2.0",
+      "archived": false,
+      "stars": 21284,
+      "forks": 2082,
+      "openIssues": 640,
+      "pushedAt": "2026-11-08T18:18:29Z",
+      "updatedAt": "2026-11-08T20:21:41Z"
+    },
+    {
+      "repository": "pydantic/pydantic-ai",
+      "license": "MIT",
+      "archived": false,
+      "stars": 21090,
+      "forks": 3135,
+      "openIssues": 1849,
+      "pushedAt": "2026-11-08T20:03:03Z",
+      "updatedAt": "2026-11-08T20:34:28Z"
+    },
+    {
+      "repository": "astral-sh/uv",
+      "license": "Apache-2.0 AND MIT",
+      "archived": false,
+      "stars": 91774,
+      "forks": 3779,
+      "openIssues": 3053,
+      "pushedAt": "2026-11-08T01:33:53Z",
+      "updatedAt": "2026-11-08T20:35:51Z"
+    }
+  ],
+  "topIdeas": [
+    {
+      "title": "معيار عربي لدقة إحالات PageIndex",
+      "problem": "صعوبة التحقق من أن الاستشهاد يشير إلى الصفحة والمقطع الصحيحين في وثائق عربية.",
+      "approach": "إنشاء مجموعة وثائق وأسئلة عربية بإحالات مرجعية ذهبية، ثم قياس دقة استرجاع الصفحة والمقطع.",
+      "stack": "Python، PageIndex، pytest، SQLite.",
+      "steps": [
+        "اختر مجموعة وثائق مرخصة وممثلة.",
+        "أنشئ أسئلة وإحالات ذهبية بمراجعة بشرية.",
+        "نفّذ الاسترجاع على أحجام مختلفة من الوثائق.",
+        "احسب precision@k ودقة الصفحة والمقطع.",
+        "انشر النتائج والبيانات المسموح بها لإعادة الإنتاج."
+      ],
+      "metric": "دقة الصفحة والمقطع وprecision@k.",
+      "difficulty": "متوسطة — تقدير 1–2 أسبوع.",
+      "risks": "قد تتأثر النتائج بجودة OCR وتنوع التخطيط؛ لا تكفي المطابقة النصية لإثبات صحة الإجابة.",
+      "sources": [
+        {
+          "title": "PageIndex repository",
+          "url": "https://github.com/VectifyAI/PageIndex"
+        }
+      ]
+    },
+    {
+      "title": "مدقق إحالات DeepTutor",
+      "problem": "قد يتضمن الشرح التعليمي ادعاءات لا يدعمها المصدر المرفق.",
+      "approach": "تفكيك الإجابة إلى ادعاءات وربط كل ادعاء بمقطع مصدر مع كشف الادعاءات غير المدعومة.",
+      "stack": "Python، Pydantic، DeepTutor، pytest.",
+      "steps": [
+        "عرّف schema للادعاء والمصدر والمقطع.",
+        "أنشئ عينة أسئلة مع مصادر ذهبية.",
+        "أضف فحصًا لوجود إحالة لكل ادعاء.",
+        "قارن الدقة مع مراجعين بشريين.",
+        "اعرض حالات الرفض وعدم اليقين بوضوح."
+      ],
+      "metric": "نسبة الادعاءات المدعومة بمصدر صحيح ومعدل الإنذارات الكاذبة.",
+      "difficulty": "متوسطة — تقدير 1–2 أسبوع.",
+      "risks": "التشابه النصي قد يعطي إحالة غير ذات صلة؛ يلزم تقييم دلالي ومراجعة بشرية.",
+      "sources": [
+        {
+          "title": "DeepTutor repository",
+          "url": "https://github.com/HKUDS/DeepTutor"
+        }
+      ]
+    },
+    {
+      "title": "Benchmark قابل لإعادة الإنتاج لـllama-modchip",
+      "problem": "يصعب مقارنة أرقام الأداء دون تثبيت العتاد والأوزان وإصدارات التشغيل.",
+      "approach": "توحيد سيناريوهات القياس وتسجيل البيئة والذاكرة والسرعة وجودة المخرجات مع hashes الأوزان.",
+      "stack": "Python، pytest، llama.cpp، أدوات قياس RAM/CPU.",
+      "steps": [
+        "اختر نموذجًا ووزنًا مرخصًا بوضوح.",
+        "ثبّت إصدار runtime وبيئة التشغيل.",
+        "عرّف prompts عربية ونتائج مرجعية.",
+        "سجل throughput وRAM والسياق والزمن.",
+        "أعد القياس على عتاد ثانٍ وانشر القيود."
+      ],
+      "metric": "نسبة نتائج الأداء القابلة لإعادة التشغيل وفارق القياس بين الأجهزة.",
+      "difficulty": "متوسطة إلى مرتفعة — تقدير 2–3 أسابيع.",
+      "risks": "اختلاف الذاكرة والتعريفات والأوزان قد يجعل المقارنة غير عادلة؛ أرقام الناشر ليست baseline.",
+      "sources": [
+        {
+          "title": "llama-modchip repository",
+          "url": "https://github.com/synchopate/llama-modchip"
+        },
+        {
+          "title": "llama.cpp repository",
+          "url": "https://github.com/ggml-org/llama.cpp"
+        }
+      ]
+    }
+  ],
+  "tests": {
+    "prCiRun": 42512634274,
+    "jobId": 128828810550,
+    "conclusion": "success",
+    "unitTests": 30,
+    "officialEditorialValidation": "Validated 926 editorial entries",
+    "javascriptChecks": "node --check site/app.js and site/ideas.js succeeded",
+    "localCommands": {
+      "pythonUnittest": "not run locally; no local checkout/runtime",
+      "validateEachIncoming": "not run with official Python validator; structural-equivalent checks passed for all 99 files",
+      "import": "not run; no active pending records and PR already contains matching entries"
+    }
+  },
+  "deployment": {
+    "mainRun": 42507299158,
+    "conclusion": "success",
+    "artifactId": 13627882822,
+    "artifactInspected": true,
+    "artifactBlobMatchesMain": {
+      "feed": "fa24b093a3e505924838e0ee912b7d82d32fdee3",
+      "editorial": "b9b75072729920f3e8d3a9eaf822a06bb6ebac61",
+      "seen": "7c708d87e10c9997bae5bb5707316d30eae049c3",
+      "status": "8f88c6999c14bc0215ee72f97c16bd90a7a62548"
+    },
+    "directPagesFetch": "unavailable: web DisabledError and container download failed; artifact/deploy step verified, live detail page not verified"
+  },
+  "officialCommands": {
+    "validatePrEditorial": "executed by PR CI on current head; 926 entries",
+    "validateIncomingIndividually": "not executed locally; structural-equivalent validation used",
+    "import": "not executed; incoming active matches are already represented on PR and no active pending items remain",
+    "unittest": "executed by PR CI: 30 tests passed; not executed locally"
+  },
+  "protectedPathsUntouched": true,
+  "mergeDecision": "Hold PR #97. The main push workflow runs update_feed.py and stages feed.json, seen.json and status.json; merging would trigger a workflow that can modify protected data. Do not alter workflow or merge until this constraint can be preserved."
+}
