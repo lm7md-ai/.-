@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "runAt": "2026-11-08T17:47:15+03:00",
+  "main": {
+    "commit": "414e2594176800861fa633702b8ac1ef66831975",
+    "feed": {
+      "items": 800,
+      "news": 700,
+      "projects": 100,
+      "generatedAt": "2026-11-08T10:16:04Z",
+      "blobSha": "23d93f3bc75b7d564971b113be7407e5b83d5f4a"
+    },
+    "editorial": {
+      "records": 859,
+      "blobSha": "b9b75072729920f3e8d3a9eaf822a06bb6ebac61"
+    },
+    "seen": {
+      "ids": 3701,
+      "blobSha": "17a0f24d920529b5a557b74dd02f3b9572af2e1a"
+    },
+    "status": {
+      "state": "ok",
+      "lastAttemptAt": "2026-11-08T10:16:04Z",
+      "lastSuccessfulAt": "2026-11-08T10:16:04Z",
+      "collected": 303,
+      "successfulSources": 24,
+      "emptySources": 2,
+      "errorSources": 0,
+      "blobSha": "c36d9965af2c4ee03b592c36091800f43fbe366d"
+    }
+  },
+  "mainIncoming": {
+    "files": 88,
+    "occurrences": 928,
+    "activeExactAlreadyImported": 286,
+    "historicalExactAlreadyImported": 605,
+    "seenOnly": 36,
+    "identityMismatches": 1,
+    "activeExactPending": 0,
+    "unmatchedNotSeen": 0,
+    "structuralErrors": 0,
+    "confirmedExpired": 0,
+    "identityHold": {
+      "historicalId": "7a99eca9b2ce14d9f5",
+      "currentId": "e0cbbf211a55e79f34",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "action": "Keep both IDs separate; do not create a title-based alias."
+    },
+    "basis": "Previous 2026-11-08 15:10 reconciliation; all 88 incoming filenames and SHAs are unchanged between main and PR branch."
+  },
+  "pr97Incoming": {
+    "branch": "editorial/2026-11-06-2342-run11",
+    "totalFiles": 98,
+    "totalOccurrences": 1024,
+    "unchangedMainFiles": 88,
+    "additionalFiles": 10,
+    "additionalOccurrences": 96,
+    "additionalUniqueIds": 58,
+    "activeExactUniqueIds": 47,
+    "alreadyImportedUniqueIds": 4,
+    "newUniqueIds": 43,
+    "newKinds": {
+      "news": 42,
+      "project": 1
+    },
+    "seenOnlyUniqueIds": 11,
+    "idUrlMismatches": 0,
+    "confirmedExpired": 0,
+    "structuralErrors": 0,
+    "additionalFileCounts": [
+      {
+        "file": "nabdh-editorial-2026-11-06-2342.json",
+        "items": 8
+      },
+      {
+        "file": "nabdh-editorial-2026-11-07-0247.json",
+        "items": 4
+      },
+      {
+        "file": "nabdh-editorial-2026-11-07-0842.json",
+        "items": 10
+      },
+      {
+        "file": "nabdh-editorial-2026-11-07-2338.json",
+        "items": 10
+      },
+      {
+        "file": "nabdh-editorial-2026-11-08-0005.json",
+        "items": 3
+      },
+      {
+        "file": "nabdh-editorial-2026-11-08-0035.json",
+        "items": 5
+      },
+      {
+        "file": "nabdh-editorial-2026-11-08-0554.json",
+        "items": 8
+      },
+      {
+        "file": "nabdh-editorial-2026-11-08-0846.json",
+        "items": 1
+      },
+      {
+        "file": "nabdh-editorial-2026-11-08-1453.json",
+        "items": 45
+      },
+      {
+        "file": "nabdh-editorial-2026-11-08-1510.json",
+        "items": 2
+      }
+    ],
+    "alreadyImportedIds": [
+      "e622970364717202be",
+      "55c5e35b9bbd92d15c",
+      "c1af6b58492f9bf434",
+      "fe0e6bfdbdd5822139"
+    ],
+    "seenOnlyIds": [
+      "d2cf9ea98eff4e7cb7",
+      "531a4c7cd4138ae7bd",
+      "8b90275c42b5ae4db8",
+      "f93a2e40ad5d089152",
+      "3db05769bae1f4f293",
+      "5222b774813a87d84a",
+      "1cff92b3d4b08e145f",
+      "2d31c1ba998345c38d",
+      "4280bb93d180a01f62",
+      "da4db1176f76c5742a",
+      "31a9be451fbe1bf2f5"
+    ],
+    "newProject": {
+      "id": "bc64dbd527eeb5b716",
+      "url": "https://github.com/OpenMontageInc/OpenMontage",
+      "titleAr": "OpenMontage — منظومة إنتاج فيديو تقودها وكلاء البرمجة"
+    }
+  },
+  "editorialComparison": {
+    "mainRecords": 859,
+    "prRecords": 902,
+    "mainIdsPreserved": 859,
+    "newIds": 43,
+    "newKinds": {
+      "news": 42,
+      "project": 1
+    },
+    "enrichedExistingRecords": 5,
+    "removedOldIds": 0,
+    "removedOldFields": 0,
+    "allNewIdsMatchCurrentMainFeedIdAndUrl": true,
+    "activeProjectCardsMain": {
+      "complete": 99,
+      "total": 100,
+      "improvements": 245,
+      "spinoffs": 232,
+      "religious": 28
+    },
+    "activeProjectCardsPr": {
+      "complete": 100,
+      "total": 100,
+      "improvements": 255,
+      "spinoffs": 241,
+      "religious": 28
+    }
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inSeen": true,
+      "libraryEntry": true,
+      "action": "Keep seen-only; no replacement ID."
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inSeen": true,
+      "action": "Keep seen-only; no replacement ID."
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inSeen": true,
+      "action": "Keep seen-only; no replacement ID."
+    }
+  ],
+  "validation": {
+    "equivalentStructuralCheck": {
+      "mainIncomingFiles": 88,
+      "additionalIncomingFiles": 10,
+      "additionalOccurrences": 96,
+      "errors": 0,
+      "identityComparedByExactIdAndUrl": true
+    },
+    "officialIncomingValidate": {
+      "executed": false,
+      "reason": "No local Python checkout/runtime; CI validates the merged site/data/editorial.json, not each incoming file."
+    },
+    "officialEditorialValidate": {
+      "executedOnPr": true,
+      "runId": 42480901431,
+      "records": 902,
+      "result": "success"
+    },
+    "officialImport": {
+      "executed": false,
+      "reason": "scripts/editorial.py import was not run; no local checkout/runtime."
+    },
+    "localUnittest": {
+      "executed": false,
+      "command": "python -m unittest discover -s tests -v"
+    },
+    "ciUnittest": {
+      "runId": 42480901431,
+      "passed": 30,
+      "failed": 0,
+      "result": "success"
+    },
+    "javascriptSyntax": {
+      "result": "success",
+      "runId": 42480901431
+    }
+  },
+  "projectLibrary": {
+    "total": 62,
+    "active": 60,
+    "archived": 2,
+    "feedLinked": 10,
+    "researchOnly": 51,
+    "membershipUnverified": 1,
+    "licenseNeedsUpstreamVerification": 9,
+    "notMaintained": 1,
+    "previousEight": {
+      "reviewed": 8,
+      "improvements": 24,
+      "spinoffs": 21,
+      "religious": 0,
+      "testEvidenceClaims": 0,
+      "reviewRun": "2026-11-08T05:54:23+03:00",
+      "metricsMeasuredAt": "2026-11-08T15:10:18+03:00"
+    },
+    "catalogPublicationStatus": "research-only_not_published"
+  },
+  "newsSourceRecheck": {
+    "originalPagesOpened": 10,
+    "pages": [
+      "https://about.fb.com/news/2026/11/introducing-spaces-customize-muse-app/",
+      "https://censys.com/blog/artex-agentic-asbestos/",
+      "https://openai.com/index/partnering-with-hacktron/",
+      "https://www.aramco.com/en/news-media/news/2026/pif-and-aramco-close-humain-transaction-to-accelerate-humains-global-growth",
+      "https://www.anthropic.com/research/components-of-agent-memory",
+      "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/",
+      "https://www.ofcom.org.uk/online-safety/protecting-children/ofcom-provides-update-following-its-call-to-action-on-tech-industry-to-improve-protections-for-children",
+      "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+      "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/",
+      "https://www.chainalysis.com/blog/security-incident-october-30/"
+    ],
+    "inaccessible": [
+      {
+        "url": "https://www.reuters.com/business/microsoft-is-winding-down-oracle-deal-rent-ai-cloud-capacity-bloomberg-news-2026-11-06/",
+        "reason": "Could not fetch this run; no claim of re-reading."
+      },
+      {
+        "url": "https://www.epw.senate.gov/public/index.cfm/2026/9/capito-lee-whitehouse-and-heinrich-introduce-bipartisan-american-affordability-and-jobs-act-of-2026",
+        "reason": "HTTP 403; no claim of re-reading."
+      }
+    ]
+  },
+  "deployment": {
+    "latestSuccessfulScheduledRun": 42470680358,
+    "latestScheduledRunCreatedAt": "2026-11-08T10:15:53Z",
+    "artifactId": 13613582102,
+    "artifactExists": true,
+    "artifactCreatedAt": "2026-11-08T10:16:26Z",
+    "livePagesFetch": "DisabledError",
+    "liveDetailPagesVerified": false,
+    "mainBlobHashesPreviouslyMatchedArtifact": true
+  },
+  "decision": {
+    "prState": "open",
+    "prHead": "1f6e36821313a5c40f7db3f584dca1a545c7bc79",
+    "prAheadBy": 58,
+    "prBehindBy": 1,
+    "mergeable": true,
+    "merged": false,
+    "newlyPublished": false,
+    "reason": "The existing push-to-main workflow runs scripts/update_feed.py and may write feed.json, seen.json, and status.json. Those paths are explicitly protected, so PR #97 remains open.",
+    "protectedPathsChangedInPr": [],
+    "codeOrWorkflowPathsChangedInPr": []
+  }
+}
