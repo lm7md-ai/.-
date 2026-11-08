@@ -140,7 +140,11 @@
     "validateLocal": false,
     "importLocal": false,
     "unittestLocal": false,
-    "ciPreviousRun": 42492403956
+    "ciPreviousRun": 42492403956,
+    "ciRun": 42507705168,
+    "ciConclusion": "success",
+    "testsPassed": 30,
+    "editorialValidated": 914
   },
   "protectedPathsUntouched": [
     "site/data/feed.json",
@@ -154,5 +158,18 @@
     "after": 914,
     "addedNews": 12,
     "allExistingIdsPreserved": true
+  },
+  "publishedArtifact": {
+    "runId": 42470680358,
+    "artifactId": 13613582102,
+    "createdAt": "2026-11-08T10:16:26Z",
+    "sizeBytes": 1155257,
+    "verifiedFiles": {
+      "editorial": "b9b75072729920f3e8d3a9eaf822a06bb6ebac61",
+      "feed": "23d93f3bc75b7d564971b113be7407e5b83d5f4a",
+      "seen": "17a0f24d920529b5a557b74dd02f3b9572af2e1a",
+      "status": "c36d9965af2c4ee03b592c36091800f43fbe366d"
+    },
+    "livePagesDirectCheck": "DisabledError; HTTP response not independently verified."
   }
 }
