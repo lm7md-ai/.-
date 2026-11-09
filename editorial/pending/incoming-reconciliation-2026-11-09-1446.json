@@ -113,6 +113,19 @@
     "localUnitTests": false,
     "structuralEquivalent": true,
     "latestPriorPrCiRun": 42598943477,
-    "latestPriorPrCiConclusion": "success"
+    "latestPriorPrCiConclusion": "success",
+    "latestPrCiRun": 42612813528,
+    "latestPrCiConclusion": "success",
+    "pythonUnitTests": {
+      "executedInGitHubActions": true,
+      "count": 30,
+      "result": "OK"
+    },
+    "officialEditorialValidation": {
+      "executedInGitHubActions": true,
+      "entries": 917,
+      "result": "success"
+    },
+    "javascriptChecks": "success"
   }
 }
