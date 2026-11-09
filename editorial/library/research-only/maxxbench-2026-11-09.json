@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "publicationStatus": "research_only_not_published",
+  "projectId": "unlap-labs/maxxbench",
+  "url": "https://github.com/unlap-labs/maxxbench",
+  "titleAr": "MaxxBench: معيار لقياس تكيف وكلاء البرمجة مع تغيّر المتطلبات",
+  "overview": "يقيس MaxxBench قدرة وكلاء البرمجة على التكيف والتعميم عبر تغيير المتطلبات أو نقطة بداية الكود في 89 مهمة مقتبسة من DeepSWE. يستخدم المشغّل Pier 0.3.1؛ تُجمع رقعة الوكيل ثم تُقيّم في حاوية منفصلة عبر اختبارات وظيفية ومتحقق مستقل. بنية المهمة تتضمن التعليمات وملف task.toml وبيئة Docker والاختبارات والحل المرجعي.",
+  "requirements": "يتطلب Python >=3.12,<3.13، وuv، وDocker مع Compose، والاعتماد datacurve-pier==0.3.1. مثال README يستخدم OPENAI_API_KEY ونموذجًا مستضافًا؛ لذلك تعتمد تكلفة الاستدلال على المزود والنموذج وعدد المهام وإعادات المحاولة. الحاويات تُبنى وتُشغّل محليًا، بينما استدعاءات النموذج في المثال سحابية. لم يثبت README دعم تشغيل محلي لنموذج بعينه؛ يجب التحقق من توافق مزود الوكيل قبل افتراض ذلك. لا توجد تكلفة ثابتة منشورة.",
+  "quickStart": "git clone https://github.com/unlap-labs/maxxbench.git && cd maxxbench؛ ثم export OPENAI_API_KEY=...؛ ثم uv run run.py run -p tasks --agent mini-swe-agent --model openai/gpt-6-astra --force-build. لعينة أصغر أضف --n-tasks 10 --sample-seed 0، ولمهمة واحدة استبدل -p tasks بمسارها. تحقق من ملفات الإصدار عبر python3 tools/validate_release.py. لم تُنفذ هذه الأوامر في هذه الدورة.",
+  "limitations": "README يصف 89 مهمة فقط، لذا لا يمثل كل أنماط هندسة البرمجيات. LICENSE Apache-2.0 يغطي مساهمات MaxxBench الأصلية، لكن PROVENANCE.md يوضح أن كود المشاريع upstream داخل المهام يحتفظ بترخيص كل مشروع على حدة؛ يجب مراجعة كل إشعار قبل إعادة التوزيع. نتائج الوكلاء تعتمد على النموذج والميزانية والبيئة. لم يُشغّل المشروع ولم تُختبر الحاويات أو صلاحية الإصدار.",
+  "reviewedAt": "2026-11-09T08:43:29+03:00",
+  "basis": "readme",
+  "testStatus": "not_run",
+  "testEvidence": null,
+  "metrics": {
+    "stars": 24,
+    "forks": 1,
+    "openIssues": 3,
+    "archived": false,
+    "disabled": false,
+    "license": "Apache-2.0",
+    "language": "Python",
+    "defaultBranch": "main",
+    "pushedAt": "2026-11-07T06:49:36Z",
+    "updatedAt": "2026-11-09T05:25:16Z",
+    "measuredAt": "2026-11-09T08:43:29+03:00"
+  },
+  "improvements": [
+    {
+      "title": "دفتر تكلفة وزمن لكل مهمة",
+      "problem": "نتيجة النجاح وحدها لا تكشف تكلفة النموذج أو زمن التنفيذ، وقد تجعل المقارنة بين النماذج غير عادلة.",
+      "approach": "سجل النموذج وإصداره والتوكنات والتكلفة التقديرية ووقت الحاوية وعدد المحاولات لكل مهمة مع حفظ لقطة الأسعار المستخدمة.",
+      "stack": "Python, JSONL, SQLite, Pier, Docker",
+      "steps": [
+        "أضف سجلًا موحدًا لكل trial.",
+        "احفظ model/provider/version وإعدادات sampling.",
+        "اجمع زمن بناء الحاوية وزمن النموذج وعدد المحاولات.",
+        "اربط لقطة أسعار مؤرخة بحساب التكلفة.",
+        "اعرض تكلفة المهمة الناجحة وتكلفة النجاح الكلي."
+      ],
+      "metric": "تكلفة كل مهمة ناجحة، ووسيط زمن المهمة، ونسبة السجلات المكتملة.",
+      "difficulty": "متوسط — تقدير تحريري",
+      "risks": "تغيّر أسعار المزودين واختلاف احتساب التوكنات؛ يجب تمييز التكلفة الفعلية عن التقدير.",
+      "sources": [
+        {
+          "title": "MaxxBench README",
+          "url": "https://github.com/unlap-labs/maxxbench/blob/main/README.md"
+        },
+        {
+          "title": "Pier",
+          "url": "https://github.com/datacurve-ai/pier"
+        }
+      ]
+    },
+    {
+      "title": "مجموعة مهام عربية لتغيّر المتطلبات",
+      "problem": "المعيار الحالي لا يوضح أداء الوكلاء عند فهم تعليمات برمجية عربية أو متطلبات ثنائية اللغة.",
+      "approach": "أنشئ مجموعة صغيرة من مهام مرخصة مع متطلبات عربية أصلية وتغييرات محددة، ثم راجعها بشريًا قبل إدراجها.",
+      "stack": "Python, Docker, pytest, JSON, uv",
+      "steps": [
+        "اختر مستودعات ذات تراخيص واضحة.",
+        "اكتب متطلبات عربية أصلية ومقابلًا إنجليزيًا للمقارنة.",
+        "عرّف اختبارات وظيفية ومتحققًا مستقلًا لكل مهمة.",
+        "اطلب مراجعة لغوية وهندسية مزدوجة.",
+        "قِس نجاح التكيف وحفظ السلوك السابق.",
+        "انشر manifest وبصمات الملفات."
+      ],
+      "metric": "نسبة نجاح المهام العربية، ودقة تنفيذ المتطلبات، ومعدل الانحدار الوظيفي.",
+      "difficulty": "عالٍ — تقدير تحريري",
+      "risks": "تحيز الترجمة وتسرب الحلول وتعارض تراخيص المشاريع المصدرية.",
+      "sources": [
+        {
+          "title": "MaxxBench PROVENANCE",
+          "url": "https://github.com/unlap-labs/maxxbench/blob/main/PROVENANCE.md"
+        },
+        {
+          "title": "MaxxBench task format",
+          "url": "https://github.com/unlap-labs/maxxbench/blob/main/README.md"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "Arabic Coding-Agent Adaptation Benchmark",
+      "problem": "لا توجد في هذه اللقطة مجموعة موحدة تقيس فهم وكلاء البرمجة للمتطلبات العربية المتغيرة.",
+      "approach": "ابنِ benchmark مستقلًا من مهام Python صغيرة مرخصة، مع تعليمات عربية واختبارات آلية ومراجعة بشرية.",
+      "stack": "Python, pytest, Docker, uv, JSONL",
+      "steps": [
+        "حدد نطاق Python ومهامًا قصيرة.",
+        "اختر مستودعات مرخصة ووثق مصدر كل مهمة.",
+        "اكتب نسخة عربية أصلية من المتطلبات.",
+        "أنشئ اختبارات وظيفية ومتحققًا منفصلًا.",
+        "شغّل عدة نماذج بإعدادات ثابتة.",
+        "انشر النتائج مع حدودها وتكاليفها."
+      ],
+      "metric": "Pass rate، ودقة المتطلبات، وتكلفة المهمة، ومعدل التراجع.",
+      "difficulty": "عالٍ — تقدير تحريري",
+      "risks": "تسرب بيانات الاختبار، اختلاف صعوبة اللغة، والتزامات تراخيص upstream.",
+      "sources": [
+        {
+          "title": "MaxxBench",
+          "url": "https://github.com/unlap-labs/maxxbench"
+        },
+        {
+          "title": "DeepSWE",
+          "url": "https://github.com/datacurve-ai/deep-swe"
+        }
+      ]
+    },
+    {
+      "title": "Benchmark محلي لوكلاء البرمجة",
+      "problem": "قد تجعل تكلفة API المقارنات المتكررة مكلفة وتحد من إعادة التجارب.",
+      "approach": "اختبر محولًا اختياريًا لنماذج محلية متوافقة مع واجهة الوكيل، مع إبقاء بيئة المهام والتحقق داخل Docker.",
+      "stack": "Docker, uv, Python, local inference server, Pier",
+      "steps": [
+        "تحقق أولًا من واجهات النماذج التي يدعمها الوكيل.",
+        "أضف محولًا منفصلًا دون تغيير مهام benchmark الأصلية.",
+        "ثبت إصدار النموذج وملف الأوزان وإعدادات التوليد.",
+        "قارن النتائج مع تشغيل سحابي على عينة ثابتة.",
+        "سجل الذاكرة وزمن الاستدلال واستهلاك الطاقة إن توفر."
+      ],
+      "metric": "نجاح المهمة لكل ساعة تشغيل، وذاكرة الذروة، وتكلفة التشغيل المحلي المقدرة.",
+      "difficulty": "عالٍ — تقدير تحريري",
+      "risks": "تفاوت العتاد وصعوبة مقارنة نماذج مختلفة؛ دعم النموذج المحلي غير مثبت في README الحالي.",
+      "sources": [
+        {
+          "title": "MaxxBench README",
+          "url": "https://github.com/unlap-labs/maxxbench/blob/main/README.md"
+        },
+        {
+          "title": "uv documentation",
+          "url": "https://docs.astral.sh/uv/"
+        },
+        {
+          "title": "Docker Compose documentation",
+          "url": "https://docs.docker.com/compose/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "MaxxBench README",
+      "url": "https://github.com/unlap-labs/maxxbench/blob/main/README.md"
+    },
+    {
+      "title": "MaxxBench LICENSE",
+      "url": "https://github.com/unlap-labs/maxxbench/blob/main/LICENSE"
+    },
+    {
+      "title": "MaxxBench PROVENANCE",
+      "url": "https://github.com/unlap-labs/maxxbench/blob/main/PROVENANCE.md"
+    },
+    {
+      "title": "MaxxBench runner",
+      "url": "https://github.com/unlap-labs/maxxbench/blob/main/run.py"
+    },
+    {
+      "title": "Pier runner",
+      "url": "https://github.com/datacurve-ai/pier"
+    },
+    {
+      "title": "DeepSWE upstream tasks",
+      "url": "https://github.com/datacurve-ai/deep-swe"
+    }
+  ],
+  "displayRequirements": "بحث مستقل غير منشور: لا تُنشأ له بطاقة Feed عامة. في واجهة المكتبة فقط، اعرض شارة research-only، رابط المستودع، وقت قياس المقاييس، تحذير تراخيص upstream، والمتطلبات والتكلفة المتغيرة؛ لا تعرضه على أنه مجرّب لأن testStatus=not_run.",
+  "relatedNewsFeedId": "5be9cd76a11a8ae694"
+}
