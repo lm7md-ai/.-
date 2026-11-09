@@ -221,33 +221,28 @@
     "local_gpu_optional",
     "cloud_api_optional"
   ],
-  "researchOnly": true,
-  "published": false,
-  "feedId": null,
-  "relatedFeedId": null,
+  "researchOnly": false,
+  "published": true,
+  "feedId": "bc64dbd527eeb5b716",
+  "relatedFeedId": "bc64dbd527eeb5b716",
   "testEvidence": null,
   "metricSnapshot": {
-    "source": "GitHub REST API",
-    "stars": 78592,
-    "forks": 10478,
-    "openIssues": 323,
+    "stars": 79068,
+    "forks": 10559,
+    "openIssuesCount": 325,
+    "openIssuesCountIncludesPullRequests": true,
     "archived": false,
+    "disabled": false,
     "licenseSpdx": "AGPL-3.0",
-    "pushedAt": "2026-11-08T03:50:57Z",
-    "updatedAt": "2026-11-08T18:57:47Z",
+    "pushedAt": "2026-11-09T06:23:55Z",
+    "updatedAt": "2026-11-09T20:54:01Z",
     "defaultBranch": "main",
     "language": "Python",
-    "measuredAt": "2026-11-08T21:57:55+03:00",
-    "reportedAtByConnector": "2026-11-08T20:53:50Z",
-    "timeSkewSeconds": 376,
-    "status": "accepted_prior_snapshot_with_newer_clock_skew_attempt",
-    "note": "The accepted metric snapshot is the prior branch's 21:57:55+03 capture. A newer connector response is retained as provisional because its clock is 6m16s ahead of this run.",
-    "provisionalLatest": {
-      "stars": 78628,
-      "forks": 10484,
-      "openIssues": 323,
-      "updatedAt": "2026-11-08T20:51:56Z"
-    }
+    "measuredAt": "2026-11-09T23:42:43+03:00",
+    "sourceApiUrl": "https://api.github.com/repos/OpenMontageInc/OpenMontage",
+    "timestampAnomalies": [
+      "updatedAt is later than the run capture timestamp; raw API value retained"
+    ]
   },
   "displayRequirements": [
     "اعرض الشارة «بحث فقط — غير منشور» ولا تنشئ feedId أو بطاقة مشروع عامة.",
@@ -259,6 +254,10 @@
   ],
   "notes": [
     "README يذكر clone URL قديمًا تحت calesthio؛ GitHub API أعاد Moved Permanently، والاسم الحالي المعتمد هو OpenMontageInc/OpenMontage.",
-    "أرقام الأدوات والـ pipelines ونتائج الفيديو أمثلة أو بيانات من الناشر، ولم تُعدّ أو تُختبر مستقلًا."
-  ]
+    "أرقام الأدوات والـ pipelines ونتائج الفيديو أمثلة أو بيانات من الناشر، ولم تُعدّ أو تُختبر مستقلًا.",
+    "Promoted to a public Feed project card under ID bc64dbd527eeb5b716 on 2026-11-09; research dossier path retained for historical links."
+  ],
+  "publicationStatus": "feed_project_enriched",
+  "feedVerifiedAt": "2026-11-09T23:42:43+03:00",
+  "promotionNote": "Originally researched in the research-only library; promoted to the public Feed on 2026-11-09 under the exact original ID bc64dbd527eeb5b716. The deployed artifact confirms the same repository URL in Feed and Editorial. This file path is retained for historical link stability."
 }

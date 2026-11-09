@@ -1,0 +1,174 @@
+{
+  "version": 1,
+  "kind": "repository_metrics_refresh",
+  "capturedAt": "2026-11-09T23:42:43+03:00",
+  "publicationStatus": "internal_research_metrics_snapshot_not_a_public_site_card",
+  "note": "GitHub REST API metadata for the eight previously reviewed projects plus OpenMontage, which was promoted to a public Feed card. openIssuesCount includes issues and pull requests. Raw pushedAt/updatedAt anomalies are retained; this snapshot does not claim execution or testing.",
+  "projects": [
+    {
+      "repository": "patchy631/ai-engineering-hub",
+      "stars": 41615,
+      "forks": 6653,
+      "openIssuesCount": 137,
+      "archived": false,
+      "disabled": false,
+      "licenseSpdx": "MIT",
+      "language": "Jupyter Notebook",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "updatedAt": "2026-11-09T19:54:45Z",
+      "timestampAnomalies": [],
+      "openIssuesCountIncludesPullRequests": true,
+      "measuredAt": "2026-11-09T23:42:43+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/patchy631/ai-engineering-hub"
+    },
+    {
+      "repository": "googleapis/python-genai",
+      "stars": 4057,
+      "forks": 1061,
+      "openIssuesCount": 388,
+      "archived": false,
+      "disabled": false,
+      "licenseSpdx": "Apache-2.0",
+      "language": "Python",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-09T20:19:45Z",
+      "updatedAt": "2026-11-09T20:19:48Z",
+      "timestampAnomalies": [],
+      "openIssuesCountIncludesPullRequests": true,
+      "measuredAt": "2026-11-09T23:42:43+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/googleapis/python-genai"
+    },
+    {
+      "repository": "Millillion/lasm",
+      "stars": 104,
+      "forks": 7,
+      "openIssuesCount": 9,
+      "archived": false,
+      "disabled": false,
+      "licenseSpdx": "MIT",
+      "language": "C",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-09T19:00:05Z",
+      "updatedAt": "2026-11-09T18:07:21Z",
+      "timestampAnomalies": [
+        "updatedAt precedes pushedAt; raw API values retained"
+      ],
+      "openIssuesCountIncludesPullRequests": true,
+      "measuredAt": "2026-11-09T23:42:43+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/Millillion/lasm"
+    },
+    {
+      "repository": "microsoft/markitdown",
+      "stars": 194600,
+      "forks": 14665,
+      "openIssuesCount": 812,
+      "archived": false,
+      "disabled": false,
+      "licenseSpdx": "MIT",
+      "language": "Python",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-07T00:14:01Z",
+      "updatedAt": "2026-11-09T20:49:17Z",
+      "timestampAnomalies": [
+        "updatedAt is later than the run capture time; raw API value retained"
+      ],
+      "openIssuesCountIncludesPullRequests": true,
+      "measuredAt": "2026-11-09T23:42:43+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/microsoft/markitdown"
+    },
+    {
+      "repository": "yc-software/minecraft-agent-harness",
+      "stars": 197,
+      "forks": 23,
+      "openIssuesCount": 1,
+      "archived": false,
+      "disabled": false,
+      "licenseSpdx": "MIT",
+      "language": "JavaScript",
+      "defaultBranch": "main",
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "updatedAt": "2026-11-09T20:51:23Z",
+      "timestampAnomalies": [
+        "updatedAt is later than the run capture time; raw API value retained"
+      ],
+      "openIssuesCountIncludesPullRequests": true,
+      "measuredAt": "2026-11-09T23:42:43+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/yc-software/minecraft-agent-harness"
+    },
+    {
+      "repository": "NVIDIA/OpenShell",
+      "stars": 21321,
+      "forks": 2086,
+      "openIssuesCount": 660,
+      "archived": false,
+      "disabled": false,
+      "licenseSpdx": "Apache-2.0",
+      "language": "Rust",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-09T20:39:43Z",
+      "updatedAt": "2026-11-09T20:39:44Z",
+      "timestampAnomalies": [],
+      "openIssuesCountIncludesPullRequests": true,
+      "measuredAt": "2026-11-09T23:42:43+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/NVIDIA/OpenShell"
+    },
+    {
+      "repository": "pydantic/pydantic-ai",
+      "stars": 21105,
+      "forks": 3138,
+      "openIssuesCount": 1880,
+      "archived": false,
+      "disabled": false,
+      "licenseSpdx": "MIT",
+      "language": "Python",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-09T20:51:35Z",
+      "updatedAt": "2026-11-09T19:56:56Z",
+      "timestampAnomalies": [
+        "pushedAt is later than the run capture time; updatedAt precedes pushedAt; raw API values retained"
+      ],
+      "openIssuesCountIncludesPullRequests": true,
+      "measuredAt": "2026-11-09T23:42:43+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/pydantic/pydantic-ai"
+    },
+    {
+      "repository": "astral-sh/uv",
+      "stars": 91815,
+      "forks": 3783,
+      "openIssuesCount": 3076,
+      "archived": false,
+      "disabled": false,
+      "licenseSpdx": "Apache-2.0",
+      "language": "Rust",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-09T20:51:38Z",
+      "updatedAt": "2026-11-09T20:51:42Z",
+      "timestampAnomalies": [
+        "pushedAt and updatedAt are later than the run capture time; raw API values retained; upstream license files previously inspected as dual MIT/Apache-2.0"
+      ],
+      "openIssuesCountIncludesPullRequests": true,
+      "measuredAt": "2026-11-09T23:42:43+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/astral-sh/uv"
+    },
+    {
+      "repository": "OpenMontageInc/OpenMontage",
+      "stars": 79068,
+      "forks": 10559,
+      "openIssuesCount": 325,
+      "archived": false,
+      "disabled": false,
+      "licenseSpdx": "AGPL-3.0",
+      "language": "Python",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-09T06:23:55Z",
+      "updatedAt": "2026-11-09T20:54:01Z",
+      "timestampAnomalies": [
+        "updatedAt is later than the run capture time; raw API value retained"
+      ],
+      "openIssuesCountIncludesPullRequests": true,
+      "measuredAt": "2026-11-09T23:42:43+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/OpenMontageInc/OpenMontage"
+    }
+  ]
+}

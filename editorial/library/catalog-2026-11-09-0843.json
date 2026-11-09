@@ -1,15 +1,15 @@
 {
   "version": 1,
-  "compiledAt": "2026-11-09T08:43:29+03:00",
+  "compiledAt": "2026-11-09T23:42:43+03:00",
   "note": "Append-only research catalog. Existing priority and idea order preserved; NVKE appended at priority 53 as research-only because its exact feed reference is a news item, not a project card. ToyBlocks appended at priority 56 as research-only because its exact feed reference is a news item, not a project card.",
-  "metricsWarning": "Partial snapshot for 8 projects at 2026-11-09T21:12:38+03:00. Other entries retain their own measuredAt. GitHub updatedAt/pushedAt anomalies are flagged per entry and are not proof of activity.",
+  "metricsWarning": "GitHub open_issues_count includes issues and pull requests. Several pushedAt/updatedAt values are later than the run capture timestamp or internally inconsistent; raw values are retained and no activity claim is inferred from those anomalies.",
   "measurementWindow": "2026-11-06T18:27:02Z",
   "statusSummary": {
     "total": 65,
     "archived": 2,
     "nonArchived": 63,
-    "inCurrentFeed": 10,
-    "notInFeed": 54,
+    "inCurrentFeed": 11,
+    "notInFeed": 53,
     "feedMembershipUnverified": 1,
     "licenseNeedsUpstreamVerification": 10
   },
@@ -1743,8 +1743,8 @@
       "category": "وكلاء الذكاء الاصطناعي والمحاكاة",
       "classification": "experimental_new_repo",
       "archived": false,
-      "starsMeasured": 196,
-      "metricCapturedAt": "2026-11-09T21:12:38+03:00",
+      "starsMeasured": 197,
+      "metricCapturedAt": "2026-11-09T23:42:43+03:00",
       "licenseApiValue": "MIT",
       "licenseNeedsUpstreamVerification": false,
       "pushedActivityMustBeChecked": false,
@@ -1776,7 +1776,7 @@
       "forksMeasured": 23,
       "metricsCaptureWindow": "2026-11-09T21:12:38+03:00",
       "lastPushedAt": "2026-10-29T20:30:45Z",
-      "lastUpdatedAt": "2026-11-09T16:48:40Z",
+      "lastUpdatedAt": "2026-11-09T20:51:23Z",
       "defaultBranch": "main",
       "language": "JavaScript",
       "licenseName": "MIT",
@@ -1799,7 +1799,7 @@
       "editorialEnriched": false,
       "editorialUrlMatches": false,
       "currentSnapshot": {
-        "stars": 196,
+        "stars": 197,
         "forks": 23,
         "openIssuesCount": 1,
         "openIssuesCountIncludesPullRequests": true,
@@ -1807,12 +1807,14 @@
         "disabled": false,
         "licenseSpdx": "MIT",
         "pushedAt": "2026-10-29T20:30:45Z",
-        "updatedAt": "2026-11-09T16:48:40Z",
+        "updatedAt": "2026-11-09T20:51:23Z",
         "defaultBranch": "main",
         "language": "JavaScript",
-        "measuredAt": "2026-11-09T21:12:38+03:00",
+        "measuredAt": "2026-11-09T23:42:43+03:00",
         "sourceApiUrl": "https://api.github.com/repos/yc-software/minecraft-agent-harness",
-        "timestampAnomalies": []
+        "timestampAnomalies": [
+          "updatedAt is later than the run capture time; raw API value retained"
+        ]
       },
       "currentStatus": "active_not_archived",
       "currentLicenseStatus": "verified_upstream_license_file",
@@ -1836,6 +1838,25 @@
           "language": "TypeScript",
           "timestampAnomalies": [],
           "metricCapturedAt": "2026-11-09T12:46:00+03:00"
+        },
+        {
+          "stars": 197,
+          "forks": 23,
+          "openIssuesCount": 1,
+          "openIssuesCountIncludesPullRequests": true,
+          "archived": false,
+          "disabled": false,
+          "licenseSpdx": "MIT",
+          "pushedAt": "2026-10-29T20:30:45Z",
+          "updatedAt": "2026-11-09T20:51:23Z",
+          "defaultBranch": "main",
+          "language": "JavaScript",
+          "measuredAt": "2026-11-09T23:42:43+03:00",
+          "sourceApiUrl": "https://api.github.com/repos/yc-software/minecraft-agent-harness",
+          "timestampAnomalies": [
+            "updatedAt is later than the run capture time; raw API value retained"
+          ],
+          "metricCapturedAt": "2026-11-09T23:42:43+03:00"
         }
       ],
       "timestampAnomalies": []
@@ -1848,7 +1869,7 @@
       "classification": "experimental_new_repo",
       "archived": false,
       "starsMeasured": 104,
-      "metricCapturedAt": "2026-11-09T21:12:38+03:00",
+      "metricCapturedAt": "2026-11-09T23:42:43+03:00",
       "licenseApiValue": "MIT",
       "licenseNeedsUpstreamVerification": false,
       "pushedActivityMustBeChecked": true,
@@ -1885,7 +1906,7 @@
       "forksMeasured": 7,
       "openIssuesMeasured": 9,
       "metricsCaptureWindow": "2026-11-09T21:12:38+03:00",
-      "lastPushedAt": "2026-11-09T18:10:38Z",
+      "lastPushedAt": "2026-11-09T19:00:05Z",
       "lastUpdatedAt": "2026-11-09T18:07:21Z",
       "defaultBranch": "main",
       "language": "C",
@@ -1926,11 +1947,11 @@
         "archived": false,
         "disabled": false,
         "licenseSpdx": "MIT",
-        "pushedAt": "2026-11-09T18:10:38Z",
+        "pushedAt": "2026-11-09T19:00:05Z",
         "updatedAt": "2026-11-09T18:07:21Z",
         "defaultBranch": "main",
         "language": "C",
-        "measuredAt": "2026-11-09T21:12:38+03:00",
+        "measuredAt": "2026-11-09T23:42:43+03:00",
         "sourceApiUrl": "https://api.github.com/repos/Millillion/lasm",
         "timestampAnomalies": [
           "updatedAt precedes pushedAt; raw API values retained"
@@ -1959,6 +1980,25 @@
             "pushedAt is 1m34s after measurement time; activity not inferred from this timestamp"
           ],
           "metricCapturedAt": "2026-11-09T12:46:00+03:00"
+        },
+        {
+          "stars": 104,
+          "forks": 7,
+          "openIssuesCount": 9,
+          "openIssuesCountIncludesPullRequests": true,
+          "archived": false,
+          "disabled": false,
+          "licenseSpdx": "MIT",
+          "pushedAt": "2026-11-09T19:00:05Z",
+          "updatedAt": "2026-11-09T18:07:21Z",
+          "defaultBranch": "main",
+          "language": "C",
+          "measuredAt": "2026-11-09T23:42:43+03:00",
+          "sourceApiUrl": "https://api.github.com/repos/Millillion/lasm",
+          "timestampAnomalies": [
+            "updatedAt precedes pushedAt; raw API values retained"
+          ],
+          "metricCapturedAt": "2026-11-09T23:42:43+03:00"
         }
       ],
       "timestampAnomalies": [
@@ -1972,10 +2012,10 @@
       "category": "أمن وكلاء الذكاء الاصطناعي وعزل التنفيذ",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 21316,
+      "starsMeasured": 21321,
       "forksMeasured": 2086,
-      "openIssuesMeasured": 654,
-      "metricCapturedAt": "2026-11-09T21:12:38+03:00",
+      "openIssuesMeasured": 660,
+      "metricCapturedAt": "2026-11-09T23:42:43+03:00",
       "licenseApiValue": "Apache-2.0",
       "licenseNeedsUpstreamVerification": false,
       "pushedActivityMustBeChecked": false,
@@ -2004,25 +2044,25 @@
         }
       ],
       "disabled": false,
-      "lastPushedAt": "2026-11-09T18:05:46Z",
-      "lastUpdatedAt": "2026-11-09T18:05:53Z",
+      "lastPushedAt": "2026-11-09T20:39:43Z",
+      "lastUpdatedAt": "2026-11-09T20:39:44Z",
       "defaultBranch": "main",
       "language": "Rust",
       "licenseName": "Apache-2.0",
       "activityStatus": "active_non_archived; metadata refreshed",
       "currentSnapshot": {
-        "stars": 21316,
+        "stars": 21321,
         "forks": 2086,
-        "openIssuesCount": 654,
+        "openIssuesCount": 660,
         "openIssuesCountIncludesPullRequests": true,
         "archived": false,
         "disabled": false,
         "licenseSpdx": "Apache-2.0",
-        "pushedAt": "2026-11-09T18:05:46Z",
-        "updatedAt": "2026-11-09T18:05:53Z",
+        "pushedAt": "2026-11-09T20:39:43Z",
+        "updatedAt": "2026-11-09T20:39:44Z",
         "defaultBranch": "main",
         "language": "Rust",
-        "measuredAt": "2026-11-09T21:12:38+03:00",
+        "measuredAt": "2026-11-09T23:42:43+03:00",
         "sourceApiUrl": "https://api.github.com/repos/NVIDIA/OpenShell",
         "timestampAnomalies": []
       },
@@ -2051,6 +2091,23 @@
           "language": "Go",
           "timestampAnomalies": [],
           "metricCapturedAt": "2026-11-09T12:46:00+03:00"
+        },
+        {
+          "stars": 21321,
+          "forks": 2086,
+          "openIssuesCount": 660,
+          "openIssuesCountIncludesPullRequests": true,
+          "archived": false,
+          "disabled": false,
+          "licenseSpdx": "Apache-2.0",
+          "pushedAt": "2026-11-09T20:39:43Z",
+          "updatedAt": "2026-11-09T20:39:44Z",
+          "defaultBranch": "main",
+          "language": "Rust",
+          "measuredAt": "2026-11-09T23:42:43+03:00",
+          "sourceApiUrl": "https://api.github.com/repos/NVIDIA/OpenShell",
+          "timestampAnomalies": [],
+          "metricCapturedAt": "2026-11-09T23:42:43+03:00"
         }
       ],
       "timestampAnomalies": []
@@ -2062,8 +2119,8 @@
       "category": "أطر وكلاء Python",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 21104,
-      "metricCapturedAt": "2026-11-09T21:12:38+03:00",
+      "starsMeasured": 21105,
+      "metricCapturedAt": "2026-11-09T23:42:43+03:00",
       "licenseApiValue": "MIT",
       "licenseNeedsUpstreamVerification": false,
       "pushedActivityMustBeChecked": true,
@@ -2084,10 +2141,10 @@
         }
       ],
       "disabled": false,
-      "forksMeasured": 3137,
+      "forksMeasured": 3138,
       "metricsCaptureWindow": "2026-11-09T21:12:38+03:00",
-      "lastPushedAt": "2026-11-09T18:17:52Z",
-      "lastUpdatedAt": "2026-11-09T18:02:45Z",
+      "lastPushedAt": "2026-11-09T20:51:35Z",
+      "lastUpdatedAt": "2026-11-09T19:56:56Z",
       "defaultBranch": "main",
       "language": "Python",
       "licenseName": "MIT",
@@ -2108,26 +2165,26 @@
       "editorialEnriched": false,
       "editorialUrlMatches": false,
       "currentSnapshot": {
-        "stars": 21104,
-        "forks": 3137,
-        "openIssuesCount": 1872,
+        "stars": 21105,
+        "forks": 3138,
+        "openIssuesCount": 1880,
         "openIssuesCountIncludesPullRequests": true,
         "archived": false,
         "disabled": false,
         "licenseSpdx": "MIT",
-        "pushedAt": "2026-11-09T18:17:52Z",
-        "updatedAt": "2026-11-09T18:02:45Z",
+        "pushedAt": "2026-11-09T20:51:35Z",
+        "updatedAt": "2026-11-09T19:56:56Z",
         "defaultBranch": "main",
         "language": "Python",
-        "measuredAt": "2026-11-09T21:12:38+03:00",
+        "measuredAt": "2026-11-09T23:42:43+03:00",
         "sourceApiUrl": "https://api.github.com/repos/pydantic/pydantic-ai",
         "timestampAnomalies": [
-          "pushedAt is 5m14s after measurement time; updatedAt precedes pushedAt; raw API values retained"
+          "pushedAt is later than the run capture time; updatedAt precedes pushedAt; raw API values retained"
         ]
       },
       "currentStatus": "active_not_archived",
       "currentLicenseStatus": "verified_upstream_license_file",
-      "openIssuesMeasured": 1872,
+      "openIssuesMeasured": 1880,
       "openIssues": 1872,
       "metricsHistory": [
         {
@@ -2149,6 +2206,25 @@
             "pushedAt is 9m49s after measurement time; activity not inferred from this timestamp"
           ],
           "metricCapturedAt": "2026-11-09T12:46:00+03:00"
+        },
+        {
+          "stars": 21105,
+          "forks": 3138,
+          "openIssuesCount": 1880,
+          "openIssuesCountIncludesPullRequests": true,
+          "archived": false,
+          "disabled": false,
+          "licenseSpdx": "MIT",
+          "pushedAt": "2026-11-09T20:51:35Z",
+          "updatedAt": "2026-11-09T19:56:56Z",
+          "defaultBranch": "main",
+          "language": "Python",
+          "measuredAt": "2026-11-09T23:42:43+03:00",
+          "sourceApiUrl": "https://api.github.com/repos/pydantic/pydantic-ai",
+          "timestampAnomalies": [
+            "pushedAt is later than the run capture time; updatedAt precedes pushedAt; raw API values retained"
+          ],
+          "metricCapturedAt": "2026-11-09T23:42:43+03:00"
         }
       ],
       "timestampAnomalies": [
@@ -2162,11 +2238,11 @@
       "category": "أدوات Python وإدارة المشاريع",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 91808,
+      "starsMeasured": 91815,
       "forksMeasured": 3783,
-      "openIssuesMeasured": 3083,
+      "openIssuesMeasured": 3076,
       "watchersMeasured": 195,
-      "metricCapturedAt": "2026-11-09T21:12:38+03:00",
+      "metricCapturedAt": "2026-11-09T23:42:43+03:00",
       "metricPrecision": "rounded as displayed on official GitHub repository page",
       "licenseApiValue": "Apache-2.0",
       "licenseNeedsUpstreamVerification": false,
@@ -2208,25 +2284,25 @@
       "latestCommitSha": "58283797f644cf4917591785eb61743e65d53a88",
       "latestCommitMessage": "Escape literal paths when adding workspace members (#23008)",
       "currentSnapshot": {
-        "stars": 91808,
+        "stars": 91815,
         "forks": 3783,
-        "openIssuesCount": 3083,
+        "openIssuesCount": 3076,
         "openIssuesCountIncludesPullRequests": true,
         "archived": false,
         "disabled": false,
         "licenseSpdx": "Apache-2.0",
-        "pushedAt": "2026-11-09T18:18:16Z",
-        "updatedAt": "2026-11-09T18:16:46Z",
+        "pushedAt": "2026-11-09T20:51:38Z",
+        "updatedAt": "2026-11-09T20:51:42Z",
         "defaultBranch": "main",
         "language": "Rust",
-        "measuredAt": "2026-11-09T21:12:38+03:00",
+        "measuredAt": "2026-11-09T23:42:43+03:00",
         "sourceApiUrl": "https://api.github.com/repos/astral-sh/uv",
         "timestampAnomalies": [
-          "pushedAt is 5m38s after measurement time; updatedAt is 4m08s after measurement time; raw API values retained"
+          "pushedAt and updatedAt are later than the run capture time; raw API values retained; upstream license files previously inspected as dual MIT/Apache-2.0"
         ]
       },
-      "lastPushedAt": "2026-11-09T18:18:16Z",
-      "lastUpdatedAt": "2026-11-09T18:16:46Z",
+      "lastPushedAt": "2026-11-09T20:51:38Z",
+      "lastUpdatedAt": "2026-11-09T20:51:42Z",
       "metricsCaptureWindow": "2026-11-09T21:12:38+03:00",
       "metricSource": "https://api.github.com/repos/astral-sh/uv",
       "currentStatus": "active_not_archived",
@@ -2253,6 +2329,25 @@
             "updatedAt is 10m57s after measurement time; dual MIT/Apache license confirmed from repository license files in prior review"
           ],
           "metricCapturedAt": "2026-11-09T12:46:00+03:00"
+        },
+        {
+          "stars": 91815,
+          "forks": 3783,
+          "openIssuesCount": 3076,
+          "openIssuesCountIncludesPullRequests": true,
+          "archived": false,
+          "disabled": false,
+          "licenseSpdx": "Apache-2.0",
+          "pushedAt": "2026-11-09T20:51:38Z",
+          "updatedAt": "2026-11-09T20:51:42Z",
+          "defaultBranch": "main",
+          "language": "Rust",
+          "measuredAt": "2026-11-09T23:42:43+03:00",
+          "sourceApiUrl": "https://api.github.com/repos/astral-sh/uv",
+          "timestampAnomalies": [
+            "pushedAt and updatedAt are later than the run capture time; raw API values retained; upstream license files previously inspected as dual MIT/Apache-2.0"
+          ],
+          "metricCapturedAt": "2026-11-09T23:42:43+03:00"
         }
       ],
       "timestampAnomalies": [
@@ -2266,8 +2361,8 @@
       "category": "تعلم هندسة الذكاء الاصطناعي",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 41609,
-      "metricCapturedAt": "2026-11-09T21:12:38+03:00",
+      "starsMeasured": 41615,
+      "metricCapturedAt": "2026-11-09T23:42:43+03:00",
       "licenseApiValue": "MIT",
       "licenseNeedsUpstreamVerification": false,
       "pushedActivityMustBeChecked": false,
@@ -2300,7 +2395,7 @@
       "openIssuesMeasured": 137,
       "metricsCaptureWindow": "2026-11-09T21:12:38+03:00",
       "lastPushedAt": "2026-11-01T04:39:16Z",
-      "lastUpdatedAt": "2026-11-09T18:06:03Z",
+      "lastUpdatedAt": "2026-11-09T19:54:45Z",
       "defaultBranch": "main",
       "language": "Jupyter Notebook",
       "licenseName": "MIT",
@@ -2328,7 +2423,7 @@
       "editorialEnriched": true,
       "editorialUrlMatches": true,
       "currentSnapshot": {
-        "stars": 41609,
+        "stars": 41615,
         "forks": 6653,
         "openIssuesCount": 137,
         "openIssuesCountIncludesPullRequests": true,
@@ -2336,10 +2431,10 @@
         "disabled": false,
         "licenseSpdx": "MIT",
         "pushedAt": "2026-11-01T04:39:16Z",
-        "updatedAt": "2026-11-09T18:06:03Z",
+        "updatedAt": "2026-11-09T19:54:45Z",
         "defaultBranch": "main",
         "language": "Jupyter Notebook",
-        "measuredAt": "2026-11-09T21:12:38+03:00",
+        "measuredAt": "2026-11-09T23:42:43+03:00",
         "sourceApiUrl": "https://api.github.com/repos/patchy631/ai-engineering-hub",
         "timestampAnomalies": []
       },
@@ -2367,6 +2462,23 @@
             "updatedAt is 6m32s after measurement time"
           ],
           "metricCapturedAt": "2026-11-09T12:46:00+03:00"
+        },
+        {
+          "stars": 41615,
+          "forks": 6653,
+          "openIssuesCount": 137,
+          "openIssuesCountIncludesPullRequests": true,
+          "archived": false,
+          "disabled": false,
+          "licenseSpdx": "MIT",
+          "pushedAt": "2026-11-01T04:39:16Z",
+          "updatedAt": "2026-11-09T19:54:45Z",
+          "defaultBranch": "main",
+          "language": "Jupyter Notebook",
+          "measuredAt": "2026-11-09T23:42:43+03:00",
+          "sourceApiUrl": "https://api.github.com/repos/patchy631/ai-engineering-hub",
+          "timestampAnomalies": [],
+          "metricCapturedAt": "2026-11-09T23:42:43+03:00"
         }
       ],
       "timestampAnomalies": []
@@ -2437,10 +2549,10 @@
       "category": "واجهات Python لنماذج Gemini",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 4058,
+      "starsMeasured": 4057,
       "forksMeasured": 1061,
-      "openIssuesMeasured": 391,
-      "metricCapturedAt": "2026-11-09T21:12:38+03:00",
+      "openIssuesMeasured": 388,
+      "metricCapturedAt": "2026-11-09T23:42:43+03:00",
       "licenseApiValue": "Apache-2.0",
       "licenseNeedsUpstreamVerification": false,
       "pushedActivityMustBeChecked": true,
@@ -2504,28 +2616,26 @@
       "editorialEnriched": false,
       "editorialUrlMatches": false,
       "currentSnapshot": {
-        "stars": 4058,
+        "stars": 4057,
         "forks": 1061,
-        "openIssuesCount": 391,
+        "openIssuesCount": 388,
         "openIssuesCountIncludesPullRequests": true,
         "archived": false,
         "disabled": false,
         "licenseSpdx": "Apache-2.0",
-        "pushedAt": "2026-11-09T17:46:32Z",
-        "updatedAt": "2026-11-08T12:51:44Z",
+        "pushedAt": "2026-11-09T20:19:45Z",
+        "updatedAt": "2026-11-09T20:19:48Z",
         "defaultBranch": "main",
         "language": "Python",
-        "measuredAt": "2026-11-09T21:12:38+03:00",
+        "measuredAt": "2026-11-09T23:42:43+03:00",
         "sourceApiUrl": "https://api.github.com/repos/googleapis/python-genai",
-        "timestampAnomalies": [
-          "updatedAt precedes pushedAt; raw API values retained"
-        ]
+        "timestampAnomalies": []
       },
       "currentStatus": "active_not_archived",
       "currentLicenseStatus": "verified_upstream_license_file",
       "metricsCaptureWindow": "2026-11-09T21:12:38+03:00",
-      "lastUpdatedAt": "2026-11-08T12:51:44Z",
-      "lastPushedAt": "2026-11-09T17:46:32Z",
+      "lastUpdatedAt": "2026-11-09T20:19:48Z",
+      "lastPushedAt": "2026-11-09T20:19:45Z",
       "openIssues": 391,
       "metricsHistory": [
         {
@@ -2547,6 +2657,23 @@
             "updatedAt precedes pushedAt; raw API values retained"
           ],
           "metricCapturedAt": "2026-11-09T12:46:00+03:00"
+        },
+        {
+          "stars": 4057,
+          "forks": 1061,
+          "openIssuesCount": 388,
+          "openIssuesCountIncludesPullRequests": true,
+          "archived": false,
+          "disabled": false,
+          "licenseSpdx": "Apache-2.0",
+          "pushedAt": "2026-11-09T20:19:45Z",
+          "updatedAt": "2026-11-09T20:19:48Z",
+          "defaultBranch": "main",
+          "language": "Python",
+          "measuredAt": "2026-11-09T23:42:43+03:00",
+          "sourceApiUrl": "https://api.github.com/repos/googleapis/python-genai",
+          "timestampAnomalies": [],
+          "metricCapturedAt": "2026-11-09T23:42:43+03:00"
         }
       ],
       "timestampAnomalies": [
@@ -2560,10 +2687,10 @@
       "category": "تحويل المستندات إلى Markdown",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 194581,
-      "forksMeasured": 14666,
+      "starsMeasured": 194600,
+      "forksMeasured": 14665,
       "openIssuesMeasured": 812,
-      "metricCapturedAt": "2026-11-09T21:12:38+03:00",
+      "metricCapturedAt": "2026-11-09T23:42:43+03:00",
       "licenseApiValue": "MIT",
       "licenseNeedsUpstreamVerification": false,
       "pushedActivityMustBeChecked": true,
@@ -2626,28 +2753,28 @@
       "editorialEnriched": false,
       "editorialUrlMatches": false,
       "currentSnapshot": {
-        "stars": 194581,
-        "forks": 14666,
+        "stars": 194600,
+        "forks": 14665,
         "openIssuesCount": 812,
         "openIssuesCountIncludesPullRequests": true,
         "archived": false,
         "disabled": false,
         "licenseSpdx": "MIT",
         "pushedAt": "2026-11-07T00:14:01Z",
-        "updatedAt": "2026-11-09T18:16:53Z",
+        "updatedAt": "2026-11-09T20:49:17Z",
         "defaultBranch": "main",
         "language": "Python",
-        "measuredAt": "2026-11-09T21:12:38+03:00",
+        "measuredAt": "2026-11-09T23:42:43+03:00",
         "sourceApiUrl": "https://api.github.com/repos/microsoft/markitdown",
         "timestampAnomalies": [
-          "updatedAt is 4m15s after measurement time; raw API value retained"
+          "updatedAt is later than the run capture time; raw API value retained"
         ]
       },
       "currentStatus": "active_not_archived",
       "currentLicenseStatus": "verified_upstream_license_file",
       "metricsCaptureWindow": "2026-11-09T21:12:38+03:00",
       "lastPushedAt": "2026-11-07T00:14:01Z",
-      "lastUpdatedAt": "2026-11-09T18:16:53Z",
+      "lastUpdatedAt": "2026-11-09T20:49:17Z",
       "openIssues": 812,
       "metricsHistory": [
         {
@@ -2669,6 +2796,25 @@
             "updatedAt is 5m41s after measurement time"
           ],
           "metricCapturedAt": "2026-11-09T12:46:00+03:00"
+        },
+        {
+          "stars": 194600,
+          "forks": 14665,
+          "openIssuesCount": 812,
+          "openIssuesCountIncludesPullRequests": true,
+          "archived": false,
+          "disabled": false,
+          "licenseSpdx": "MIT",
+          "pushedAt": "2026-11-07T00:14:01Z",
+          "updatedAt": "2026-11-09T20:49:17Z",
+          "defaultBranch": "main",
+          "language": "Python",
+          "measuredAt": "2026-11-09T23:42:43+03:00",
+          "sourceApiUrl": "https://api.github.com/repos/microsoft/markitdown",
+          "timestampAnomalies": [
+            "updatedAt is later than the run capture time; raw API value retained"
+          ],
+          "metricCapturedAt": "2026-11-09T23:42:43+03:00"
         }
       ],
       "timestampAnomalies": [
@@ -4455,12 +4601,12 @@
       "repository": "OpenMontageInc/OpenMontage",
       "url": "https://github.com/OpenMontageInc/OpenMontage",
       "category": "agentic video production",
-      "classification": "research_only_non_archived_AGPL3",
+      "classification": "feed_project_enriched_non_archived_AGPL3",
       "archived": false,
-      "starsMeasured": 78592,
-      "forksMeasured": 10478,
-      "openIssuesMeasured": 323,
-      "metricCapturedAt": "2026-11-08T21:57:55+03:00",
+      "starsMeasured": 79068,
+      "forksMeasured": 10559,
+      "openIssuesMeasured": 325,
+      "metricCapturedAt": "2026-11-09T23:42:43+03:00",
       "metricCaptureStatus": "accepted_prior_snapshot; newer connector read provisional",
       "licenseApiValue": "AGPL-3.0",
       "licenseNeedsUpstreamVerification": false,
@@ -4468,9 +4614,9 @@
       "reviewBasis": "README, AGENT_GUIDE, docs/ARCHITECTURE.md, docs/PROVIDERS.md, LICENSE, Makefile and requirements inspected; no execution.",
       "overviewShort": "نظام إنتاج فيديو تقوده أداة البرمجة نفسها؛ يعتمد pipelines وskills وأدوات Python وRemotion/HyperFrames/FFmpeg مع مسار محلي صفري ومزودات سحابية اختيارية.",
       "proposedResearchOrBuild": "بوابة QA عربية للترجمة وRTL، وسجل منشأ/ترخيص للأصول، وتقرير ميزانية موحد قبل وبعد الإنتاج.",
-      "inCurrentFeed": false,
-      "feedId": null,
-      "siteVisibility": "research-only; no public feed card",
+      "inCurrentFeed": true,
+      "feedId": "bc64dbd527eeb5b716",
+      "siteVisibility": "current feed; exact original ID and URL match verified in deployed artifact",
       "sources": [
         {
           "title": "OpenMontage repository metadata",
@@ -4510,9 +4656,9 @@
         }
       ],
       "disabled": false,
-      "metricsCaptureWindow": "Accepted snapshot 2026-11-08T21:57:55+03:00; newer connector response 20:53:50Z is provisional due clock skew.",
-      "lastPushedAt": "2026-11-08T03:50:57Z",
-      "lastUpdatedAt": "2026-11-08T18:57:47Z",
+      "metricsCaptureWindow": "2026-11-09T23:42:43+03:00",
+      "lastPushedAt": "2026-11-09T06:23:55Z",
+      "lastUpdatedAt": "2026-11-09T20:54:01Z",
       "defaultBranch": "main",
       "language": "Python",
       "licenseName": "GNU Affero General Public License v3.0",
@@ -4523,21 +4669,25 @@
         "blender/blender",
         "FFmpeg/FFmpeg"
       ],
-      "editorialEnriched": false,
-      "editorialUrlMatches": false,
+      "editorialEnriched": true,
+      "editorialUrlMatches": true,
       "currentSnapshot": {
-        "stars": 78592,
-        "forks": 10478,
-        "openIssues": 323,
+        "stars": 79068,
+        "forks": 10559,
+        "openIssuesCount": 325,
+        "openIssuesCountIncludesPullRequests": true,
         "archived": false,
         "disabled": false,
         "licenseSpdx": "AGPL-3.0",
-        "pushedAt": "2026-11-08T03:50:57Z",
-        "updatedAt": "2026-11-08T18:57:47Z",
+        "pushedAt": "2026-11-09T06:23:55Z",
+        "updatedAt": "2026-11-09T20:54:01Z",
         "defaultBranch": "main",
         "language": "Python",
-        "measuredAt": "2026-11-08T21:57:55+03:00",
-        "sourceApiUrl": "https://api.github.com/repos/OpenMontageInc/OpenMontage"
+        "measuredAt": "2026-11-09T23:42:43+03:00",
+        "sourceApiUrl": "https://api.github.com/repos/OpenMontageInc/OpenMontage",
+        "timestampAnomalies": [
+          "updatedAt is later than the run capture time; raw API value retained"
+        ]
       },
       "provisionalRefresh": {
         "stars": 78628,
@@ -4549,7 +4699,48 @@
       },
       "currentStatus": "active_not_archived",
       "currentLicenseStatus": "verified",
-      "dossierPath": "editorial/library/research-only/openmontage-2026-11-08.json"
+      "dossierPath": "editorial/library/research-only/openmontage-2026-11-08.json",
+      "metricsHistory": [
+        {
+          "stars": 79068,
+          "forks": 10559,
+          "openIssuesCount": 325,
+          "openIssuesCountIncludesPullRequests": true,
+          "archived": false,
+          "disabled": false,
+          "licenseSpdx": "AGPL-3.0",
+          "pushedAt": "2026-11-09T06:23:55Z",
+          "updatedAt": "2026-11-09T20:54:01Z",
+          "defaultBranch": "main",
+          "language": "Python",
+          "measuredAt": "2026-11-09T23:42:43+03:00",
+          "sourceApiUrl": "https://api.github.com/repos/OpenMontageInc/OpenMontage",
+          "timestampAnomalies": [
+            "updatedAt is later than the run capture time; raw API value retained"
+          ],
+          "metricCapturedAt": "2026-11-09T23:42:43+03:00"
+        },
+        {
+          "stars": 79068,
+          "forks": 10559,
+          "openIssuesCount": 325,
+          "openIssuesCountIncludesPullRequests": true,
+          "archived": false,
+          "disabled": false,
+          "licenseSpdx": "AGPL-3.0",
+          "pushedAt": "2026-11-09T06:23:55Z",
+          "updatedAt": "2026-11-09T20:54:01Z",
+          "defaultBranch": "main",
+          "language": "Python",
+          "measuredAt": "2026-11-09T23:42:43+03:00",
+          "sourceApiUrl": "https://api.github.com/repos/OpenMontageInc/OpenMontage",
+          "timestampAnomalies": [
+            "updatedAt is later than the run capture time; raw API value retained"
+          ],
+          "metricCapturedAt": "2026-11-09T23:42:43+03:00"
+        }
+      ],
+      "metricSource": "https://api.github.com/repos/OpenMontageInc/OpenMontage"
     },
     {
       "priority": 65,
@@ -4729,5 +4920,7 @@
       "note": "Eight previously reviewed projects remeasured from GitHub REST API at 2026-11-09T21:12:38+03:00. open_issues_count includes PRs. Future/inconsistent timestamps are flagged; no code was run."
     }
   ],
-  "lastUpdatedAt": "2026-11-09T21:12:38+03:00"
+  "lastUpdatedAt": "2026-11-09T21:12:38+03:00",
+  "lastReconciledAt": "2026-11-09T23:42:43+03:00",
+  "reconciliationNote": "OpenMontage was promoted from research-only to an exact-ID public feed project on 2026-11-09 (feed/editorial ID bc64dbd527eeb5b716). Eight previously reviewed projects were remeasured from GitHub repository metadata in this run. Raw timestamp anomalies are retained and flagged."
 }

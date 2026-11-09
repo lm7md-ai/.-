@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-09T23:42:43+03:00",
+  "mainCommitBeforeThisResearchUpdate": "809a2bf76e8f244b340ae4126539c2dd784cf88b",
+  "deployment": {
+    "runId": 42696710866,
+    "artifactId": 13709183323,
+    "mergeCommit": "7b809a6c459675d32f350a1f9d61dcff0338ab93",
+    "result": "success"
+  },
+  "currentArtifact": {
+    "feedItems": 800,
+    "newsItems": 700,
+    "projectItems": 100,
+    "editorialEntries": 917,
+    "activeExactIdUrlMatches": 280,
+    "historicalEditorialOutsideFeed": 637,
+    "idUrlMismatches": 0
+  },
+  "editorialDeltaFromPreMergeMain": {
+    "newEntries": 58,
+    "activeExactIdUrlMatches": 48,
+    "historicalOutsideFeed": 10,
+    "idUrlMismatches": 0,
+    "kinds": {
+      "news": 47,
+      "project": 1
+    },
+    "basisByKind": {
+      "news": {
+        "article": 27,
+        "metadata": 19,
+        "readme": 1
+      },
+      "historical": {
+        "article": 8,
+        "readme": 1,
+        "metadata": 1
+      },
+      "project": {
+        "readme": 1
+      }
+    },
+    "allNineRequiredNewsOrProjectFieldsPresent": 58
+  },
+  "incomingInventory": {
+    "mainFiles": 88,
+    "prBranchFiles": 102,
+    "branchOnlyFiles": 14,
+    "commonFilesWithIdenticalBlobSha": 88,
+    "branchOnlyOccurrences": 126,
+    "branchOnlyUniqueIds": 88,
+    "branchOnlyRepeatedOccurrences": 38,
+    "priorFullScanAt": "2026-11-09T21:12:00+03:00",
+    "priorClassification": {
+      "mainFileOccurrences": 928,
+      "branchOnlyOccurrences": 126,
+      "totalOccurrences": 1054,
+      "mainActiveExactAndImported": 269,
+      "mainHistoricalAndImported": 623,
+      "mainSeenOnly": 36,
+      "branchOnlyAlreadyInMain": 4,
+      "branchOnlyNewlyImported": 58,
+      "branchOnlySeenOnly": 26
+    },
+    "currentReconciliationNote": "The 14 branch-only JSON files were opened and parsed; the 88 shared incoming files have identical SHAs to the previous full scan. After the feed refresh, all 917 shipped editorial records were compared by exact id and URL to the deployed Feed artifact: zero mismatches. The 58-entry editorial delta now has 48 exact active matches and 10 historical entries. The previous 21:12 classification is preserved as historical rather than relabeled as a fresh scan."
+  },
+  "specialRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "name": "NVIDIA OpenShell",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "library": "present; priority 34; research-only"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "name": "Canva Craft",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "library": "not found"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "name": "1Password agent sign-in",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "library": "not found"
+    }
+  ],
+  "identityConflict": {
+    "url": "https://github.com/rasbt/LLMs-from-scratch",
+    "ids": [
+      {
+        "id": "7a99eca9b2ce14d9f5",
+        "feed": false,
+        "editorial": true
+      },
+      {
+        "id": "e0cbbf211a55e79f34",
+        "feed": true,
+        "editorial": true
+      }
+    ],
+    "decision": "preserve both original IDs; no title-derived alias or merge"
+  },
+  "qualityHolds": [
+    {
+      "id": "d18ddd9c12e46dd96b",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "reason": "closed 2022 issue; does not establish a current event"
+    },
+    {
+      "id": "e3e3a03bfc5be7aa43",
+      "feed": true,
+      "editorial": false,
+      "seen": true,
+      "reason": "Google News intermediary URL; original publisher URL/article needs correction"
+    }
+  ],
+  "expiry": {
+    "confirmedExpired": 0,
+    "rule": "absence from Feed alone is not proof of expiry"
+  },
+  "openMontagePromotion": {
+    "id": "bc64dbd527eeb5b716",
+    "url": "https://github.com/OpenMontageInc/OpenMontage",
+    "feed": true,
+    "editorial": true,
+    "exactUrlMatch": true,
+    "testStatus": "not_run",
+    "improvements": 3,
+    "spinoffs": 2,
+    "religiousIdeas": 0
+  },
+  "library": {
+    "internalCatalogTotal": 65,
+    "archived": 2,
+    "nonArchived": 63,
+    "inCurrentFeed": 11,
+    "notInFeed": 53,
+    "feedMembershipUnverified": 1,
+    "licenseNeedsUpstreamVerification": 10,
+    "publicSiteLibraryEntries": 31
+  },
+  "limitations": [
+    "The live Pages HTTP URL was blocked by the browser and container downloader. The exact file was verified inside the successful GitHub Pages deployment artifact, not through a direct live HTTP GET.",
+    "No local checkout/terminal was available; official Python tests and editorial validator were run by GitHub Actions instead.",
+    "No project execution was performed; OpenMontage testStatus remains not_run.",
+    "The 21:12 incoming file classification is preserved as a historical scan; the current exact check covers all 917 shipped Editorial records against the deployed Feed artifact."
+  ]
+}
