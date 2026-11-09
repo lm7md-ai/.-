@@ -1,0 +1,169 @@
+{
+  "version": 1,
+  "runAt": "2026-11-07T11:41:14+03:00",
+  "repository": "https://github.com/lm7md-ai/.-",
+  "main": {
+    "sha": "25f2260778b516bc6669db186113552b5015e3e0",
+    "feedGeneratedAt": "2026-11-07T05:55:23+00:00",
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialEntries": 859,
+    "seenIds": 3543,
+    "seenTitles": 3385,
+    "status": "ok"
+  },
+  "mainIncomingAudit": {
+    "files": 88,
+    "appearances": 928,
+    "countsAreOccurrences": true,
+    "importedAndExactActive": 331,
+    "importedHistoricalExact": 560,
+    "seenOnlyExpired": 36,
+    "identityCorrectionRequired": 1,
+    "activeExactAwaitingImport": 0,
+    "idUrlMismatches": 0,
+    "parseOrEnvelopeErrors": 0,
+    "identityCorrection": {
+      "oldId": "7a99eca9b2ce14d9f5",
+      "currentId": "e0cbbf211a55e79f34",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "decision": "do_not_merge_automatically"
+    },
+    "sourceReviewHold": [
+      {
+        "id": "d18ddd9c12e46dd96b",
+        "reason": "feed and seen present, editorial missing; source is an old closed 2022 issue and does not establish a new incident"
+      },
+      {
+        "id": "e3e3a03bfc5be7aa43",
+        "reason": "feed and seen present, editorial missing; Google News intermediary, original publication date/source requires confirmation"
+      }
+    ],
+    "namedRecords": [
+      {
+        "name": "NVIDIA OpenShell",
+        "id": "940ec4695c1e241c2f",
+        "feed": false,
+        "editorial": false,
+        "seen": true,
+        "libraryDossier": true,
+        "libraryPath": "editorial/library/nvidia-openshell-dossier-2026-10-30-1146.json"
+      },
+      {
+        "name": "Canva Craft",
+        "id": "317abcdd1b20728a7e",
+        "feed": false,
+        "editorial": false,
+        "seen": true,
+        "libraryDossier": false,
+        "relatedButDifferentFeedItem": "Canva layoffs story is not Canva Craft"
+      },
+      {
+        "name": "1Password agent sign-in",
+        "id": "662e68277c6361dd4b",
+        "feed": false,
+        "editorial": false,
+        "seen": true,
+        "libraryDossier": false
+      }
+    ]
+  },
+  "pr97": {
+    "url": "https://github.com/lm7md-ai/.-/pull/97",
+    "state": "open",
+    "mergeable": true,
+    "merged": false,
+    "headSha": "71472eb9aaff3bb952b383f447290992bda3a76a",
+    "baseSha": "020b447733f5cbd8c876a676e2efc4fc603a4487",
+    "incomingFiles": 3,
+    "incomingRecords": 22,
+    "alreadyImportedBeforeThisRun": 12,
+    "importedThisRun": 10,
+    "branchEditorialEntries": 881,
+    "mainEditorialEntries": 859,
+    "currentFile": "editorial/incoming/nabdh-editorial-2026-11-07-0842.json",
+    "currentFileRecords": 10,
+    "exactFeedIdUrlMatches": 10,
+    "duplicateIds": 0,
+    "structuralErrors": 0,
+    "basisCounts": {
+      "article": 6,
+      "readme": 3,
+      "metadata": 1
+    },
+    "aramcoCorrection": {
+      "id": "82eb1f87d59afe3f62",
+      "basis": "article",
+      "reviewedAt": "2026-11-07T11:41:14+03:00",
+      "source": "https://www.aramco.com/en/news-media/news/2026/pif-and-aramco-close-humain-transaction-to-accelerate-humains-global-growth"
+    },
+    "importMethod": "structural merge into the PR branch preserving all 871 pre-existing records and fields; not the official CLI import command",
+    "officialCliValidateIncoming": "not run locally",
+    "officialCliImport": "not run locally",
+    "structuralValidation": "passed for all 10 records; exact ID and URL match against current main feed; required Arabic fields, sources, reviewedAt and basis checked",
+    "noProtectedFileChanges": true,
+    "appleSourceLimitation": {
+      "id": "da4db1176f76c5742a",
+      "basis": "metadata",
+      "reason": "The Verge article body could not be fully opened; the app count is attributed to Apple and is not independently verified."
+    }
+  },
+  "projects": {
+    "publicFeedCards": 100,
+    "exactEditorialMatches": 100,
+    "allWithOverviewRequirementsQuickStart": 100,
+    "publicIdeas": {
+      "improvements": 247,
+      "spinoffs": 235,
+      "religious": 28
+    },
+    "historicalCatalog": {
+      "baseEntries": 57,
+      "active": 55,
+      "archived": 2,
+      "additionalUniqueResearchDossiers": 3,
+      "cumulativeUniqueProjects": 60
+    },
+    "previousEight": {
+      "reviewed": 8,
+      "feedMatched": 1,
+      "researchOnly": 7,
+      "improvements": 24,
+      "spinoffs": 21,
+      "religious": 0,
+      "allIdeaObjectsComplete": true,
+      "metricsMeasuredAt": "2026-11-07T08:44:00Z",
+      "testEvidence": "none; projects not executed"
+    },
+    "newProjectCardsThisRun": 0,
+    "newResearchDossiersThisRun": 0,
+    "refreshedResearchPaths": [
+      "editorial/library/markitdown-dossier-2026-10-30-0011.json",
+      "editorial/library/pydantic-ai-dossier-2026-10-30-1442.json",
+      "editorial/library/previous-eight-refresh-2026-11-07-1141.json"
+    ]
+  },
+  "validation": {
+    "prCiRun": 42357384700,
+    "result": "success",
+    "unitTests": 30,
+    "officialEditorialValidation": "Validated 881 editorial entries",
+    "javascriptChecks": "site/app.js and site/ideas.js syntax checks passed",
+    "localClone": "failed: DNS could not resolve github.com",
+    "localCommandsNotRun": [
+      "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-11-07-0842.json",
+      "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-11-07-0842.json",
+      "python -m unittest discover -s tests -v"
+    ]
+  },
+  "publish": {
+    "latestMainWorkflowRun": 42344726865,
+    "mainWorkflowResult": "success",
+    "deployStaticWebsiteStep": "success",
+    "liveEditorialJsonVerified": false,
+    "liveDetailPagesOpened": false,
+    "browserFailure": "DisabledError / URL not accessible via browser tool",
+    "reasonNotMerged": "Merging PR #97 would trigger the existing main workflow that refreshes feed.json and seen.json; those files are explicitly protected from modification."
+  }
+}

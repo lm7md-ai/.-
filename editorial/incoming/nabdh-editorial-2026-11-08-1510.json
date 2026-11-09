@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "items": {
+    "5c24264888e5cf1cac": {
+      "titleAr": "OpenIndiana 2026.10 يحدّث أدوات التطوير ودعم الافتراضية",
+      "summaryAr": "أصدر مشروع OpenIndiana لقطة Hipster 2026.10، وهي تحديث نصف سنوي لتوزيعة مبنية على illumos. تضيف دعم UEFI framebuffer إلى صورة Live، وتحدّث أدوات منها Python 3.15.2 وGCC 15.3.0 وClang 23.1.4 وPerl 5.44، مع تحديث QEMU إلى 11.1.2 وVirtualBox إلى 7.2.22 وإضافة TeX Live 2026 وFoliate وzoxide.",
+      "whyItMatters": "الحقيقة: التحديث يجمع تحديثات أدوات التطوير والافتراضية مع تحسين إقلاع صورة Live على UEFI. التحليل: يهم مسؤولي الأنظمة ومطوري البرمجيات الذين يتابعون استمرار منظومة illumos، لكنه ليس تحولًا جذريًا في واجهة النظام أو دعم العتاد.",
+      "audience": "مسؤولو الأنظمة، مطورو البرمجيات مفتوحة المصدر، ومهتمو illumos والافتراضية.",
+      "nextSteps": [
+        "راجع ملاحظات الإصدار الرسمية وقائمة الحزم قبل الترقية.",
+        "اختبر صورة Live أو آلة افتراضية على بيئة غير إنتاجية، وتحقق من تعريفات جهازك قبل تثبيت النظام.",
+        "قارن إصدارات QEMU وVirtualBox والأدوات التي تعتمد عليها مع بيئتك الحالية."
+      ],
+      "limitations": "قرأت تقرير Phoronix وإعلان OpenIndiana الرسمي. أشار اختبار Phoronix على Framework Laptop 13 Pro إلى نقص دعم عدد من تعريفات الأجهزة؛ لذلك لا يُفهم التحديث كضمان توافق عام. لم أختبر التوزيعة أو أُجرِ ترقية فعلية.",
+      "reviewedAt": "2026-11-08T15:10:18+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "إعلان OpenIndiana الرسمي — Snapshot 2026.10",
+          "url": "https://openindiana.org/announcements/openindiana-hipster-2026-10-announcement/"
+        },
+        {
+          "title": "Phoronix — OpenIndiana 2026.10",
+          "url": "https://www.phoronix.com/news/OpenIndiana-2026.10"
+        }
+      ],
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBnNzYycF9SejNjc2Y5bTJiWUZDS1FPbG9nNFZXUXNHa2VWUW96ejJsLUlkVm9LbXJYQVNCWnFhd1hfcVlYNTZFdGU2NURIQ3Axb01saHZ6cmN6Y0tkQ1E?oc=5"
+    },
+    "b228101c3e9d88f964": {
+      "url": "https://github.com/Video-Rebirth/hyperflow-h3-flash",
+      "titleAr": "HyperFlow H3 Flash يضغط نموذجًا مشتركًا للفيديو والصوت إلى نحو 14B",
+      "summaryAr": "قدّم فريق Video Rebirth نسخة HyperFlow H3 Flash المضغوطة من MiniMax-H3، بنحو 13.7B إلى 13.9B معاملًا بحسب المهمة، مع أخذ عينات من 4 أو 6 أو 8 خطوات لتوليد فيديو وصوت مجسّم متزامنين. يوفّر المشروع أوزان GGUF وINT8، ويذكر README أزمنة قياس على بطاقات RTX وH200 وB200؛ هذه أرقام الفريق وليست قياسًا مستقلًا.",
+      "whyItMatters": "الحقيقة: يجمع الإصدار تقليل حجم النموذج والتكميم وتقليل خطوات التوليد في مسار واحد للفيديو والصوت. التحليل: قد يوسّع التجارب المحلية، لكنه لا يلغي متطلبات العتاد والذاكرة ولا يجعل النموذج مناسبًا لكل جهاز؛ كما أن أرقام السرعة والجودة تحتاج إعادة قياس مستقلة.",
+      "audience": "باحثو النماذج التوليدية، مطورو أدوات الفيديو والصوت، مستخدمو ComfyUI، ومهندسو تشغيل النماذج.",
+      "nextSteps": [
+        "اقرأ بطاقة النموذج واتفاقية الترخيص قبل تنزيل الأوزان؛ ترخيص الأوزان يختلف عن ترخيص كود الاستدلال.",
+        "تحقق من الذاكرة وذاكرة GPU وحجم التنزيل؛ يذكر الدليل تنزيلًا أوليًا يقارب 68–90 GB بحسب إعداد text encoder.",
+        "قارن GGUF وINT8 على عينة صغيرة، وسجل جودة الصوت والفيديو والزمن والذاكرة بدل الاعتماد على أرقام README وحدها."
+      ],
+      "limitations": "المشروع ليس إصدارًا رسميًا من MiniMax. كود الاستدلال في المستودع مرخص Apache-2.0، لكن أوزان النموذج مشتقة من MiniMax-H3 وتخضع لاتفاقية MiniMax H3 Community License ذات قيود إقليمية وشروط استخدام وإفصاح؛ راجع الاتفاقية الأصلية قبل التنزيل أو النشر. يذكر README أن قياسات 16 GB GPU غير متوفرة، وأن تشغيل INT8 قد يحتاج 69–91 GiB من RAM مع offload، وأن التنزيل الأولي يقارب 68–90 GB. لم أشغّل النموذج أو أتحقق من أرقام الأداء.",
+      "reviewedAt": "2026-11-08T15:10:18+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "Video-Rebirth — HyperFlow H3 Flash repository and README",
+          "url": "https://github.com/Video-Rebirth/hyperflow-h3-flash"
+        },
+        {
+          "title": "VideoRebirthAI — HyperFlow H3 Flash model card and license",
+          "url": "https://huggingface.co/VideoRebirthAI/hyperflow-h3-flash"
+        },
+        {
+          "title": "Video Rebirth — HyperFlow H3 Flash showcase",
+          "url": "https://www.videorebirth.com"
+        }
+      ]
+    }
+  }
+}

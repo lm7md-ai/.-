@@ -1,0 +1,277 @@
+{
+  "version": 1,
+  "runAt": "2026-11-08T21:15:25+03:00",
+  "repository": "lm7md-ai/.-",
+  "main": {
+    "sha": "3eb301af32fa987b2290c73030ce48896209a67f",
+    "feedItems": 800,
+    "feedNews": 700,
+    "feedProjects": 100,
+    "editorialItems": 859,
+    "seenIds": 3701,
+    "status": "partial",
+    "lastSuccessfulAt": "2026-11-08T17:54:49Z",
+    "collected": 286,
+    "sourcesSuccess": 24,
+    "sourcesEmpty": 2,
+    "errors": 0
+  },
+  "pullRequests": {
+    "pr1": "merged",
+    "pr2": "merged",
+    "pr97": {
+      "state": "open",
+      "headBeforeReport": "6dc85d02efacf5bdbaba5ee6995de905b39cb6d2",
+      "base": "e89a737663f3944d6c9612c900bf2bc781769a5b",
+      "aheadBy": 68,
+      "behindBy": 2,
+      "mergeable": true,
+      "changedFilesBeforeReport": 56,
+      "protectedPathsChanged": []
+    }
+  },
+  "incomingAudit": {
+    "mainFiles": 88,
+    "mainOccurrences": 928,
+    "mainClassification": {
+      "activeExactAlreadyImported": 279,
+      "historicalExactAlreadyImported": 613,
+      "seenOnly": 36,
+      "activeIdUrlMismatches": 0,
+      "activeExactPending": 0,
+      "unmatchedNotSeen": 0,
+      "structuralErrors": 0,
+      "confirmedExpired": 0
+    },
+    "prAdditionalFiles": 10,
+    "prAdditionalOccurrences": 96,
+    "prAdditionalUniqueIds": 58,
+    "prAdditionalUniqueClassification": {
+      "alreadyOnMain": 4,
+      "prOnlyNew": 43,
+      "prOnlyNewStillActive": 35,
+      "prOnlyNewHistorical": 8,
+      "seenOnly": 11
+    },
+    "prAdditionalOccurrenceClassification": {
+      "activeExactAlreadyImported": 69,
+      "historicalExactAlreadyImported": 16,
+      "seenOnly": 11,
+      "activeIdUrlMismatches": 0,
+      "activePending": 0,
+      "unmatchedNotSeen": 0,
+      "structuralErrors": 0
+    },
+    "newFile": {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-08-2115.json",
+      "records": 21,
+      "provenanceRecovery": 9,
+      "newNews": 12,
+      "exactFeedIdUrlMatches": 21,
+      "structuralValidation": "PASS — JavaScript equivalent; official CLI not run locally"
+    },
+    "totalsAfterNewFile": {
+      "files": 99,
+      "occurrences": 1045
+    },
+    "previousBatchCorrection": {
+      "reportedChangedEntries": 12,
+      "newActiveIds": 8,
+      "existingActiveIdRefreshed": 1,
+      "historicalOutOfFeedIds": 3,
+      "existingId": "91a344d41c03c7c96d",
+      "note": "The previous report counted 12 changed records; one was already present in main Editorial, so this was not 12 new unique IDs."
+    },
+    "historicalHolds": [
+      "ef313c34ae184d15b2",
+      "0eacd10b8c48398876",
+      "bd95b63d46d959afe7"
+    ],
+    "identityHold": {
+      "historicalId": "7a99eca9b2ce14d9f5",
+      "currentId": "e0cbbf211a55e79f34",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "decision": "keep separate; no ID synthesized"
+    },
+    "confirmedExpired": 0
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "libraryDossier": true,
+      "researchOnly": true
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    }
+  ],
+  "editorial": {
+    "before": 914,
+    "after": 926,
+    "newUniqueNews": 12,
+    "existingProvenanceRecordsMerged": 9,
+    "oldIdsPreserved": 914,
+    "oldFieldsRemoved": 0,
+    "mergeMethod": "structural-equivalent JSON merge; full old items copied and only exact active Feed IDs added/updated"
+  },
+  "newsBatch": {
+    "count": 12,
+    "articleBasis": 4,
+    "metadataBasis": 8,
+    "items": [
+      {
+        "id": "7cdeffc8e00dfd185d",
+        "titleAr": "تقرير: OpenAI تجمع 11 مليار دولار عند تقييم خاص قدره 1.25 تريليون",
+        "basis": "article"
+      },
+      {
+        "id": "c08233254ab5569234",
+        "titleAr": "دعويان جديدتان تتهمان Suno بتقليد صوت Elvis Presley وأعمال Eminem",
+        "basis": "article"
+      },
+      {
+        "id": "9a720b3178d2f33796",
+        "titleAr": "NYT Cooking تختبر أداة ذكاء اصطناعي لتعديل الوصفات للمشتركين",
+        "basis": "article"
+      },
+      {
+        "id": "7ff53c833c04080042",
+        "titleAr": "مؤشرات في نسخة iOS تجريبية تلمّح إلى تطبيقات محادثة في Apple HomeView",
+        "basis": "article"
+      },
+      {
+        "id": "a44e5a0e0ca44230ba",
+        "titleAr": "بحث يقترح تعليم الوكلاء مبادئ السلوك بدل الاعتماد على إشارة المكافأة",
+        "basis": "metadata"
+      },
+      {
+        "id": "11c6518cf3e4b21797",
+        "titleAr": "إسناد متناثر للخبراء يحاول خفض كلفة التعلم الاتحادي لنماذج MoE",
+        "basis": "metadata"
+      },
+      {
+        "id": "14dea264cd89a5a00c",
+        "titleAr": "TrustMix يقترح تراجعًا تدريجيًا إلى توزيع احتياطي عند تغير البيانات",
+        "basis": "metadata"
+      },
+      {
+        "id": "40be8173b384ddb90e",
+        "titleAr": "إطار بحثي يمثل معتقدات وأهداف الوكيل صراحةً انطلاقًا من مساراته",
+        "basis": "metadata"
+      },
+      {
+        "id": "5208fc4d61dd02d27e",
+        "titleAr": "Loopback Transformer يدرس إعادة استخدام التحديثات عبر كتل مشتركة",
+        "basis": "metadata"
+      },
+      {
+        "id": "1d43601888e266f089",
+        "titleAr": "بحث يستغل تكافؤ تمثيلات الشبكات لتقليل حجم ملفات النماذج",
+        "basis": "metadata"
+      },
+      {
+        "id": "4c861a74d24931e081",
+        "titleAr": "BCSS يولّد نماذج رمزية قابلة للتفسير لمقارنة استدلال البشر والآلات",
+        "basis": "metadata"
+      },
+      {
+        "id": "c4e17a182be4d6face",
+        "titleAr": "KG-Neighbor يستخدم علاقات الرسوم المعرفية لتحسين جوار التضمينات",
+        "basis": "metadata"
+      }
+    ]
+  },
+  "projects": {
+    "libraryTotal": 63,
+    "archived": 2,
+    "nonArchived": 61,
+    "inCurrentProjectFeed": 10,
+    "researchOnly": 52,
+    "feedMembershipUnverified": 1,
+    "licenseNeedsUpstreamVerification": 9,
+    "notMaintained": 1,
+    "publicLibraryCards": 31,
+    "newResearchOnly": "synchopate/llama-modchip",
+    "newDossier": "editorial/library/research-only/llama-modchip-2026-11-08.json",
+    "newDossierImprovements": 2,
+    "newDossierSpinoffs": 2,
+    "newDossierReligious": 0,
+    "testsRun": false,
+    "metrics": {
+      "stars": null,
+      "forks": null,
+      "openIssues": null,
+      "latestCommitSha": "ea51088d7f95bf912add1cf7026cd1d604163efb",
+      "measuredAt": "2026-11-08T21:15:25+03:00",
+      "note": "numeric metrics and commit timestamp not exposed; not invented"
+    }
+  },
+  "previousEight": {
+    "reviewed": 8,
+    "improvements": 24,
+    "spinoffs": 21,
+    "religious": 0,
+    "completeIdeas": 45,
+    "testsClaimed": 0
+  },
+  "bestIdeas": [
+    {
+      "title": "معيار عربي لدقة إحالات PageIndex",
+      "repository": "https://github.com/VectifyAI/PageIndex",
+      "metric": "دقة الصفحة والمقطع الداعم",
+      "difficulty": "متوسطة"
+    },
+    {
+      "title": "مدقق استشهادات DeepTutor",
+      "repository": "https://github.com/HKUDS/DeepTutor",
+      "metric": "نسبة الادعاءات التعليمية المدعومة بمراجع صحيحة",
+      "difficulty": "متوسطة"
+    },
+    {
+      "title": "حزمة benchmark قابلة لإعادة الإنتاج لـllama-modchip",
+      "repository": "https://github.com/synchopate/llama-modchip",
+      "metric": "نسبة النتائج القابلة لإعادة الإنتاج مع hardware/model manifest",
+      "difficulty": "متوسطة إلى مرتفعة"
+    }
+  ],
+  "tests": {
+    "prRun": 42510960077,
+    "conclusion": "success",
+    "unitTests": 30,
+    "officialValidator": "Validated 926 editorial entries",
+    "nodeChecks": "passed",
+    "localCommands": "not run locally"
+  },
+  "deployment": {
+    "mainRun": 42507299158,
+    "conclusion": "success",
+    "artifactId": 13627882822,
+    "artifactGitBlobHashesMatchMain": true,
+    "artifactEditorialItems": 859,
+    "artifactFeedItems": 800,
+    "pagesLiveEndpoint": "DisabledError; not independently browser-verified",
+    "newEditorialPublished": false
+  },
+  "officialCommands": {
+    "pythonUnitTests": "not run locally; CI ran them successfully",
+    "editorialValidate": "not run locally; CI ran official validator on merged Editorial; incoming file checked structurally",
+    "editorialImport": "not run locally; equivalent merge performed in JSON while preserving all 914 old records"
+  },
+  "protectedPathsUntouched": true,
+  "mergeDecision": "Do not merge yet: PR is 2 commits behind current main and the existing push/deploy workflow may refresh feed.json, seen.json, and status.json; no safe way to merge while guaranteeing those protected files remain untouched."
+}

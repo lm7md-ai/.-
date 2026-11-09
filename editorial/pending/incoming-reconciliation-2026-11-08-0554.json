@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "runAt": "2026-11-08T05:54:23+03:00",
+  "main": {
+    "sha": "e89a737663f3944d6c9612c900bf2bc781769a5b",
+    "feed": {
+      "items": 800,
+      "news": 700,
+      "projects": 100,
+      "generatedAt": "2026-11-08T00:33:09+00:00"
+    },
+    "editorial": {
+      "items": 859
+    },
+    "seen": {
+      "ids": 3669
+    },
+    "incoming": {
+      "files": 88,
+      "occurrences": 928,
+      "activeExactAlreadyImported": 294,
+      "historicalExactAlreadyImported": 597,
+      "seenOnly": 36,
+      "activeExactPending": 0,
+      "sameUrlDifferentId": 1,
+      "unmatchedNotSeen": 0,
+      "structuralIssues": 0,
+      "confirmedExpired": 0
+    },
+    "mismatch": {
+      "historicalId": "7a99eca9b2ce14d9f5",
+      "currentFeedId": "e0cbbf211a55e79f34",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "decision": "hold both identities; do not remap by URL or title"
+    },
+    "specialRecords": [
+      {
+        "name": "NVIDIA OpenShell",
+        "id": "940ec4695c1e241c2f",
+        "inFeed": false,
+        "inEditorial": false,
+        "inSeen": true,
+        "researchDossier": "editorial/library/nvidia-openshell-dossier-2026-10-30-1146.json"
+      },
+      {
+        "name": "Canva Craft",
+        "id": "317abcdd1b20728a7e",
+        "inFeed": false,
+        "inEditorial": false,
+        "inSeen": true
+      },
+      {
+        "name": "1Password agent sign-in",
+        "id": "662e68277c6361dd4b",
+        "inFeed": false,
+        "inEditorial": false,
+        "inSeen": true
+      }
+    ]
+  },
+  "pr97": {
+    "headBefore": "b084ceaac313e152f2c8d37e110b6ffe5ffa2661",
+    "branch": "editorial/2026-11-06-2342-run11",
+    "state": "open",
+    "incomingFilesBefore": 6,
+    "occurrences": 40,
+    "activeExactImportedOnPR": 36,
+    "alreadyMainImported": 2,
+    "seenOnlyNotConfirmedExpired": 2,
+    "idUrlMismatch": 0,
+    "unmatchedNotSeen": 0,
+    "editorialBefore": 895,
+    "addedIdsBefore": 36,
+    "mainIdsMissingBefore": 0
+  },
+  "newBatch": {
+    "file": "editorial/incoming/nabdh-editorial-2026-11-08-0554.json",
+    "records": 8,
+    "allExactFeedIdUrlMatches": true,
+    "basisCounts": {
+      "article": 7,
+      "metadata": 1
+    },
+    "importStatus": "merged structurally into PR editorial; official local import command not executed"
+  },
+  "afterMerge": {
+    "editorialItems": 903,
+    "oldPRIdsPreserved": 895,
+    "mainIdsPreserved": 859,
+    "newIds": 8
+  },
+  "projects": {
+    "libraryOnMain": 57,
+    "libraryOnPR": 62,
+    "activeOnPR": 60,
+    "archivedOnPR": 2,
+    "feedLinkedOnPR": 10,
+    "researchOnlyOnPR": 52,
+    "previousEightReviewed": 8,
+    "improvements": 24,
+    "spinoffs": 21,
+    "religious": 0,
+    "completeIdeas": 45,
+    "projectCardsOnMain": 100,
+    "projectCardsCompleteOnMain": 100,
+    "projectDossiersAddedPreviouslyOnPR": [
+      "DeepTutor",
+      "PageIndex"
+    ],
+    "testEvidenceClaims": 0,
+    "metricsMeasuredAt": "2026-11-08T02:54:23Z"
+  },
+  "deployment": {
+    "mainRunId": 42430247102,
+    "artifactId": 13596858841,
+    "artifactMatchesMain": true,
+    "liveHttp": "DisabledError; artifact inspected instead"
+  },
+  "validation": {
+    "localCheckout": "unavailable; git clone failed due DNS",
+    "localCommandsNotExecuted": [
+      "python scripts/editorial.py validate",
+      "python scripts/editorial.py import",
+      "python -m unittest discover -s tests -v"
+    ],
+    "structuralIncomingValidation": "passed in this run",
+    "officialPRValidation": "existing check.yml will run unittest, editorial validate, and JS syntax checks after branch update"
+  },
+  "protectedFiles": {
+    "changedInPRDiff": [],
+    "preservedFromMain": true,
+    "doNotMergeToMainReason": "merge to main triggers update-and-deploy workflow that runs update_feed.py and may write feed.json, seen.json, status.json; this conflicts with the explicit protection requested"
+  },
+  "notes": [
+    "Incoming counts are record appearances, not unique IDs.",
+    "No IDs were regenerated from titles.",
+    "Absence from Feed/Editorial alone does not prove expiration; no records labeled confirmed expired without date evidence.",
+    "PR branch update is a merge commit with latest main as second parent; it does not merge the PR into main."
+  ]
+}

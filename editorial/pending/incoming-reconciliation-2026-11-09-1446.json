@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "runAt": "2026-11-09T14:46:15+03:00",
+  "mainCommit": "96cef35552916f60ef5c2c4f60e7babb9f935000",
+  "prNumber": 97,
+  "prHeadBefore": "611504b05fe28c908aaeca9cb7743351eb4e5fa5",
+  "incomingBeforeThisRun": {
+    "mainFiles": 88,
+    "mainOccurrences": 928,
+    "prBranchFiles": 100,
+    "prBranchOccurrences": 1052,
+    "structurallyCheckedFiles": 100,
+    "structurallyCheckedRecords": 1052,
+    "structuralErrors": 0
+  },
+  "classificationOnMainAtPriorReconciliation": {
+    "activeImportedOccurrences": 276,
+    "historicalImportedOccurrences": 622,
+    "exactActivePendingOccurrences": 78,
+    "exactActivePendingUniqueIds": 56,
+    "seenOnlyOutOfFeedOccurrences": 75,
+    "identityMismatchOccurrences": 1,
+    "sameIdWrongUrlOccurrences": 0,
+    "orphanOccurrences": 0,
+    "confirmedExpiredRecords": 0,
+    "expiryNotProven": true
+  },
+  "currentPrImportState": {
+    "mainEditorialEntriesPreserved": 859,
+    "editorialEntriesBefore": 916,
+    "editorialEntriesAfter": 917,
+    "newlyAddedIds": 58,
+    "activeBacklogIdsImportedFromPriorRun": 56,
+    "newNewsThisRun": 1,
+    "existingEntriesRefreshed": 2,
+    "existingFieldsRemoved": 0,
+    "mainIdsLost": 0,
+    "feedIdUrlMismatches": 0
+  },
+  "newIncomingFile": {
+    "path": "editorial/incoming/nabdh-editorial-2026-11-09-1446.json",
+    "filesAdded": 1,
+    "occurrencesAdded": 1,
+    "items": [
+      {
+        "id": "55858f2b4ca73bdea1",
+        "url": "https://github.com/synchopate/llama-modchip",
+        "kind": "news",
+        "classification": "exact active feed match; imported to PR editorial"
+      }
+    ]
+  },
+  "specialChecks": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    }
+  ],
+  "sourceQualityHolds": [
+    {
+      "id": "e3e3a03bfc5be7aa43",
+      "feed": true,
+      "editorial": false,
+      "reason": "Google News intermediary URL; original publisher page not verified."
+    },
+    {
+      "id": "d18ddd9c12e46dd96b",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "reason": "Old issue/source requires revalidation."
+    }
+  ],
+  "identityMismatch": {
+    "incomingId": "7a99eca9b2ce14d9f5",
+    "incomingUrl": "https://github.com/rasbt/LLMs-from-scratch",
+    "currentFeedId": "e0cbbf211a55e79f34",
+    "currentFeedUrl": "https://github.com/rasbt/LLMs-from-scratch",
+    "action": "No alias or title-based replacement created; held for identity correction."
+  },
+  "projectReview": {
+    "previousEightMetricsFile": "editorial/library/metrics-refresh-2026-11-09-1246.json",
+    "feedProjectCards": 100,
+    "unEnrichedProjectCardsOnPr": 0,
+    "libraryProjects": 65,
+    "archived": 2,
+    "active": 63,
+    "researchOnly": 54,
+    "unresolvedMembership": 1,
+    "newProjectCards": 0,
+    "openMontageMetricSnapshot": "2026-11-09T14:46:15+03:00"
+  },
+  "verification": {
+    "localCliValidate": false,
+    "localCliImport": false,
+    "localUnitTests": false,
+    "structuralEquivalent": true,
+    "latestPriorPrCiRun": 42598943477,
+    "latestPriorPrCiConclusion": "success",
+    "latestPrCiRun": 42612813528,
+    "latestPrCiConclusion": "success",
+    "pythonUnitTests": {
+      "executedInGitHubActions": true,
+      "count": 30,
+      "result": "OK"
+    },
+    "officialEditorialValidation": {
+      "executedInGitHubActions": true,
+      "entries": 917,
+      "result": "success"
+    },
+    "javascriptChecks": "success"
+  }
+}

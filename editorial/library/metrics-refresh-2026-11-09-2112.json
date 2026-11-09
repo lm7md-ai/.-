@@ -1,0 +1,153 @@
+{
+  "version": 1,
+  "publicationStatus": "research_only_not_published",
+  "metricsMeasuredAt": "2026-11-09T21:12:38+03:00",
+  "source": "GitHub REST API GET /repos/{owner}/{repo}",
+  "notes": [
+    "openIssuesCount is GitHub open_issues_count and includes open issues plus pull requests; it is not a pure issue count.",
+    "Stars and forks are cumulative point-in-time counts, not quality or daily growth.",
+    "Raw pushedAt/updatedAt values are retained. Future or internally inconsistent timestamps are flagged and are not treated as proof of activity.",
+    "README, documentation, license, requirements, local/cloud options, costs and alternatives were reviewed in the prior-eight research dossier; this refresh updates GitHub metadata only.",
+    "No repository was executed or tested in this refresh."
+  ],
+  "projects": [
+    {
+      "repository": "patchy631/ai-engineering-hub",
+      "stars": 41609,
+      "forks": 6653,
+      "openIssuesCount": 137,
+      "archived": false,
+      "disabled": false,
+      "licenseApiValue": "MIT",
+      "language": "Jupyter Notebook",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "updatedAt": "2026-11-09T18:06:03Z",
+      "timestampAnomalies": [],
+      "metricCapturedAt": "2026-11-09T21:12:38+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/patchy631/ai-engineering-hub"
+    },
+    {
+      "repository": "googleapis/python-genai",
+      "stars": 4058,
+      "forks": 1061,
+      "openIssuesCount": 391,
+      "archived": false,
+      "disabled": false,
+      "licenseApiValue": "Apache-2.0",
+      "language": "Python",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-09T17:46:32Z",
+      "updatedAt": "2026-11-08T12:51:44Z",
+      "timestampAnomalies": [
+        "updatedAt precedes pushedAt; raw API values retained"
+      ],
+      "metricCapturedAt": "2026-11-09T21:12:38+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/googleapis/python-genai"
+    },
+    {
+      "repository": "Millillion/lasm",
+      "stars": 104,
+      "forks": 7,
+      "openIssuesCount": 9,
+      "archived": false,
+      "disabled": false,
+      "licenseApiValue": "MIT",
+      "language": "C",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-09T18:10:38Z",
+      "updatedAt": "2026-11-09T18:07:21Z",
+      "timestampAnomalies": [
+        "updatedAt precedes pushedAt; raw API values retained"
+      ],
+      "metricCapturedAt": "2026-11-09T21:12:38+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/Millillion/lasm"
+    },
+    {
+      "repository": "microsoft/markitdown",
+      "stars": 194581,
+      "forks": 14666,
+      "openIssuesCount": 812,
+      "archived": false,
+      "disabled": false,
+      "licenseApiValue": "MIT",
+      "language": "Python",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-07T00:14:01Z",
+      "updatedAt": "2026-11-09T18:16:53Z",
+      "timestampAnomalies": [
+        "updatedAt is 4m15s after measurement time; raw API value retained"
+      ],
+      "metricCapturedAt": "2026-11-09T21:12:38+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/microsoft/markitdown"
+    },
+    {
+      "repository": "yc-software/minecraft-agent-harness",
+      "stars": 196,
+      "forks": 23,
+      "openIssuesCount": 1,
+      "archived": false,
+      "disabled": false,
+      "licenseApiValue": "MIT",
+      "language": "JavaScript",
+      "defaultBranch": "main",
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "updatedAt": "2026-11-09T16:48:40Z",
+      "timestampAnomalies": [],
+      "metricCapturedAt": "2026-11-09T21:12:38+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/yc-software/minecraft-agent-harness"
+    },
+    {
+      "repository": "NVIDIA/OpenShell",
+      "stars": 21316,
+      "forks": 2086,
+      "openIssuesCount": 654,
+      "archived": false,
+      "disabled": false,
+      "licenseApiValue": "Apache-2.0",
+      "language": "Rust",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-09T18:05:46Z",
+      "updatedAt": "2026-11-09T18:05:53Z",
+      "timestampAnomalies": [],
+      "metricCapturedAt": "2026-11-09T21:12:38+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/NVIDIA/OpenShell"
+    },
+    {
+      "repository": "pydantic/pydantic-ai",
+      "stars": 21104,
+      "forks": 3137,
+      "openIssuesCount": 1872,
+      "archived": false,
+      "disabled": false,
+      "licenseApiValue": "MIT",
+      "language": "Python",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-09T18:17:52Z",
+      "updatedAt": "2026-11-09T18:02:45Z",
+      "timestampAnomalies": [
+        "pushedAt is 5m14s after measurement time; updatedAt precedes pushedAt; raw API values retained"
+      ],
+      "metricCapturedAt": "2026-11-09T21:12:38+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/pydantic/pydantic-ai"
+    },
+    {
+      "repository": "astral-sh/uv",
+      "stars": 91808,
+      "forks": 3783,
+      "openIssuesCount": 3083,
+      "archived": false,
+      "disabled": false,
+      "licenseApiValue": "Apache-2.0",
+      "language": "Rust",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-09T18:18:16Z",
+      "updatedAt": "2026-11-09T18:16:46Z",
+      "timestampAnomalies": [
+        "pushedAt is 5m38s after measurement time; updatedAt is 4m08s after measurement time; raw API values retained"
+      ],
+      "metricCapturedAt": "2026-11-09T21:12:38+03:00",
+      "sourceApiUrl": "https://api.github.com/repos/astral-sh/uv"
+    }
+  ]
+}

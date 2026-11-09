@@ -1,0 +1,264 @@
+{
+  "version": 1,
+  "repository": "OpenMontageInc/OpenMontage",
+  "url": "https://github.com/OpenMontageInc/OpenMontage",
+  "titleAr": "OpenMontage — نظام إنتاج فيديو تقوده وكلاء البرمجة",
+  "summaryAr": "مشروع مفتوح المصدر ينسّق إنتاج الفيديو عبر مساعد برمجة يقرأ تعريفات pipelines وملفات إرشاد المراحل، ثم يستدعي أدوات Python للمصادر والصوت والصورة والتحرير والتركيب ويحفظ نقاط تحقق. يوفّر مسارات للفيديو التوضيحي والرسوم المتحركة والمونتاج الوثائقي ومقاطع الفيديو القصيرة وغيرها.",
+  "whyItMatters": "يجمع التخطيط والإنتاج والمراجعة في مسار قابل للتتبع بدل الاعتماد على prompt واحد. أهم ميزة عملية هي وجود مسار محلي دون مفاتيح مدفوعة للفيديو التجريبي والمصادر المفتوحة، مع خيارات GPU اختيارية. أرقام عدد الأدوات ومزودي الخدمة والنتائج الواردة في README أوصاف من الناشر وليست قياسات مستقلة.",
+  "audience": "مطورو أدوات الوسائط، صناع المحتوى التعليمي، ومطورو وكلاء البرمجة الذين يريدون فهم سير إنتاج فيديو قابل للتجزئة والمراجعة.",
+  "overview": "وفق README وdocs/ARCHITECTURE، لا يوجد منسّق Python ذكي مستقل؛ مساعد البرمجة هو المنسّق. يختار pipeline، يقرأ YAML manifest وإرشادات stage-director، يستدعي أدوات Python من registry، يحفظ checkpoints، ثم ينفذ مراجعة ذاتية وبوابات موافقة بشرية. يستخدم Remotion وHyperFrames وFFmpeg للتركيب وما بعد الإنتاج.",
+  "requirements": "Python 3.10+ وFFmpeg وNode.js 22.23.4+ أو 24.22.1+ أو 26.12.1+، إضافة إلى مساعد برمجة يستطيع قراءة الملفات وتشغيل Python. make setup يثبت متطلبات Python ومكوّن Remotion؛ تثبيت Piper وHyperFrames اختياري بحسب نجاح التنزيل. تثبيت GPU اختياري ويضيف PyTorch وtorchaudio وtorchvision، بينما توليد الفيديو المحلي المتقدم يحتاج GPU وأوزان نماذج مناسبة.",
+  "quickStart": "المسار المرجعي: git clone https://github.com/OpenMontageInc/OpenMontage.git ثم cd OpenMontage ثم make setup. بعد ذلك يمكن تجربة make demo للمخرجات التجريبية التي لا تحتاج مفاتيح API، أو فتح المشروع في مساعد البرمجة وطلب فيديو تعليمي قصير مع تحديد المدة والأسلوب. يوصي AGENT_GUIDE باختيار pipeline وقراءة manifest وإرشادات المراحل وpreflight قبل تنفيذ أي إنتاج. لم تُنفذ هذه الأوامر في هذه المراجعة.",
+  "costs": "المسار التجريبي الصفري يعتمد على Remotion وHyperFrames وFFmpeg وPiper ومصادر أرشيفية/مفتوحة، فلا يتطلب استدعاء مزود توليد مدفوع. التوليد المحلي المتقدم قد يحتاج GPU وتخزينًا وأوزانًا كبيرة. مزودات الفيديو والصوت والصورة السحابية اختيارية وقد تكون مدفوعة. أرقام التكلفة المثالّية في README تقديرات الناشر وليست ضمانًا؛ دليل PROVIDERS يوضح أن السعر غير المتاح يبقى null ويجب الحصول على تقدير حالي قبل الاستدعاء. README يصف حد ميزانية افتراضيًا $10 وموافقة لكل إجراء فوق $0.50، وكلاهما قابل للتعديل.",
+  "localVsCloud": "محليًا: العرض والتركيب عبر Remotion/HyperFrames/FFmpeg، وPiper TTS، ومسار وثائقي يعتمد أرشيفات ومصادر فيديو مفتوحة؛ توليد نماذج محلية اختياري ويعتمد على GPU والأوزان. سحابيًا: يمكن ربط مزودات خارجية لتوليد الصوت والصورة والفيديو، لكن التكلفة والحدود تختلف حسب المزود والنموذج. وجود كود محلي لا يعني أن كل قدرات التوليد مجانية أو تعمل دون إنترنت.",
+  "limitations": "لم يُشغّل المشروع ولم تُنفذ اختبارات أو توليدات فيديو. README وdocs يصفان قدرات وأعدادًا من منظور الناشر؛ لم نعدّ جميع الأدوات أو نتحقق من جودة المخرجات. تكلفة مزودات API تتغير، وبعض الواجهات قد لا توفر سعرًا مؤكدًا قبل الطلب. توليد الفيديو المحلي يحتاج عتادًا وأوزانًا مناسبة. يجب مراجعة تراخيص المقاطع والصور والأوزان منفصلًا عن ترخيص الكود. ترخيص المستودع AGPL-3.0 وله التزامات copyleft عند تقديم نسخة معدلة عبر الشبكة. رابط clone في README ما زال يستخدم اسم المالك القديم calesthio؛ GitHub API أعاد Moved Permanently، والاسم الحالي للمستودع هو OpenMontageInc/OpenMontage.",
+  "nextSteps": [
+    "ابدأ بمسار make demo الصفري دون مفاتيح أو استدعاءات مدفوعة.",
+    "راجع AGPL-3.0 وتراخيص كل أصل إعلامي أو وزن نموذج قبل إعادة الاستخدام.",
+    "قِس استهلاك CPU/GPU والذاكرة وجودة الترجمة العربية قبل اعتماد المشروع في إنتاج متكرر."
+  ],
+  "reviewedAt": "2026-11-08T23:47:34+03:00",
+  "basis": "readme",
+  "sources": [
+    {
+      "title": "OpenMontage repository metadata",
+      "url": "https://api.github.com/repos/OpenMontageInc/OpenMontage"
+    },
+    {
+      "title": "OpenMontage README",
+      "url": "https://github.com/OpenMontageInc/OpenMontage/blob/main/README.md"
+    },
+    {
+      "title": "OpenMontage Agent Guide",
+      "url": "https://github.com/OpenMontageInc/OpenMontage/blob/main/AGENT_GUIDE.md"
+    },
+    {
+      "title": "OpenMontage architecture",
+      "url": "https://github.com/OpenMontageInc/OpenMontage/blob/main/docs/ARCHITECTURE.md"
+    },
+    {
+      "title": "OpenMontage provider guide",
+      "url": "https://github.com/OpenMontageInc/OpenMontage/blob/main/docs/PROVIDERS.md"
+    },
+    {
+      "title": "OpenMontage AGPL-3.0 license",
+      "url": "https://github.com/OpenMontageInc/OpenMontage/blob/main/LICENSE"
+    },
+    {
+      "title": "OpenMontage Makefile",
+      "url": "https://github.com/OpenMontageInc/OpenMontage/blob/main/Makefile"
+    },
+    {
+      "title": "OpenMontage Python requirements",
+      "url": "https://github.com/OpenMontageInc/OpenMontage/blob/main/requirements.txt"
+    },
+    {
+      "title": "OpenMontage Remotion package manifest",
+      "url": "https://github.com/OpenMontageInc/OpenMontage/blob/main/remotion-composer/package.json"
+    },
+    {
+      "title": "FFmpeg documentation",
+      "url": "https://ffmpeg.org/documentation.html"
+    },
+    {
+      "title": "Blender repository",
+      "url": "https://github.com/blender/blender"
+    }
+  ],
+  "improvements": [
+    {
+      "title": "بوابة فحص عربية للترجمة والتوقيت واتجاه RTL",
+      "problem": "قد يخرج الفيديو بترجمة صحيحة زمنيًا لكنها غير ملائمة للقراءة العربية بسبب اتجاه النص أو تقطيع الأسطر أو علامات الترقيم أو اختلاف اللهجات.",
+      "approach": "إضافة مرحلة QA قبل compose تفحص ترتيب RTL، طول السطر، تداخل التوقيت، تطابق النص مع التفريغ، وظهور الخطوط العربية في عينات إطارات.",
+      "stack": "Python، Pydantic، FFmpeg، WebVTT/SRT، pytest، Remotion.",
+      "steps": [
+        "عرّف مجموعة عينات عربية فصحى ولهجية مع نصوص مرجعية.",
+        "أضف schema لنتيجة subtitle QA تشمل RTL وطول السطر والتوقيت.",
+        "استخرج عينات إطارات وصوت قبل الرندر النهائي.",
+        "ارفض أو أعد مرحلة subtitle عند تجاوز حدود التوقيت أو العرض.",
+        "أنشئ تقريرًا يوضح الأخطاء مع مواضعها."
+      ],
+      "metric": "نسبة المقاطع التي تجتاز QA دون أخطاء اتجاه أو تداخل، ومعدل خطأ محاذاة الكلمات.",
+      "difficulty": "متوسطة — تقدير 1–2 أسبوع.",
+      "risks": "اختلاف اللهجات وجودة ASR والخطوط قد يسبب إنذارات كاذبة؛ فحص التوقيت لا يثبت صحة المعنى.",
+      "sources": [
+        {
+          "title": "OpenMontage README",
+          "url": "https://github.com/OpenMontageInc/OpenMontage/blob/main/README.md"
+        },
+        {
+          "title": "OpenMontage architecture",
+          "url": "https://github.com/OpenMontageInc/OpenMontage/blob/main/docs/ARCHITECTURE.md"
+        },
+        {
+          "title": "WebVTT specification",
+          "url": "https://www.w3.org/TR/webvtt1/"
+        }
+      ]
+    },
+    {
+      "title": "سجل منشأ وترخيص لكل أصل داخل المشروع",
+      "problem": "قد تختلط المقاطع العامة والأصول المولدة والملفات المحلية، فيصعب لاحقًا إثبات المصدر أو شروط إعادة الاستخدام.",
+      "approach": "إضافة manifest لكل asset يسجل URL الأصلي والناشر والترخيص وتاريخ التنزيل ونوع التوليد والمزود وملف الإثبات، ثم منع التصدير عند نقص البيانات الإلزامية.",
+      "stack": "Python، SQLite، Pydantic، JSON Schema، FFprobe.",
+      "steps": [
+        "حدد schema موحدًا للصور والصوت والفيديو والخطوط.",
+        "أضف provenance metadata عند إدخال الأصل إلى cache.",
+        "اربط manifest بمرحلة compose وحزمة التسليم.",
+        "أضف فحصًا يمنع استخدام أصل بلا مصدر أو حالة ترخيص واضحة.",
+        "أصدر تقريرًا قابلًا للتدقيق مع كل فيديو."
+      ],
+      "metric": "نسبة الأصول التي تملك مصدرًا وترخيصًا موثقين قبل التصدير.",
+      "difficulty": "متوسطة — تقدير 1–2 أسبوع.",
+      "risks": "بعض المصادر لا تعرض ترخيصًا واضحًا؛ وجود رابط لا يعني وجود إذن إعادة استخدام.",
+      "sources": [
+        {
+          "title": "OpenMontage provider guide",
+          "url": "https://github.com/OpenMontageInc/OpenMontage/blob/main/docs/PROVIDERS.md"
+        },
+        {
+          "title": "OpenMontage README",
+          "url": "https://github.com/OpenMontageInc/OpenMontage/blob/main/README.md"
+        }
+      ]
+    },
+    {
+      "title": "تقرير ميزانية موحد قبل الإنتاج وبعده",
+      "problem": "تتوزع التكلفة بين توليد الفيديو والصوت والصورة والتخزين؛ وقد تختلف التقديرات عن الفاتورة الفعلية.",
+      "approach": "توحيد estimate/reserve/reconcile لكل مرحلة مع إظهار السعر الموثق أو unknown، ومنع الإرسال إذا لم تتوفر موافقة أو حد ميزانية.",
+      "stack": "Python، Pydantic، SQLite، provider contracts، JSON report.",
+      "steps": [
+        "اجمع cost_status وcost_usd من الأدوات.",
+        "ميّز السعر المؤكد عن التقدير وعن التكلفة غير المعروفة.",
+        "اعرض مجموعًا متوقعًا قبل الإنتاج.",
+        "سجل الفعلي بعد كل عملية وقارن الانحراف.",
+        "أصدر تقريرًا نهائيًا يربط كل بند بالمزود والمرحلة."
+      ],
+      "metric": "الفرق بين التقدير والإنفاق الفعلي، ونسبة الطلبات التي بدأت بسعر معروف أو موافقة صريحة.",
+      "difficulty": "متوسطة — تقدير 1–2 أسبوع.",
+      "risks": "قد تتغير الأسعار أو تفشل بعض المزودات في إرجاع تكلفة؛ لا يجوز تفسير null على أنه صفر.",
+      "sources": [
+        {
+          "title": "OpenMontage provider guide",
+          "url": "https://github.com/OpenMontageInc/OpenMontage/blob/main/docs/PROVIDERS.md"
+        },
+        {
+          "title": "OpenMontage Agent Guide",
+          "url": "https://github.com/OpenMontageInc/OpenMontage/blob/main/AGENT_GUIDE.md"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "مولّد شروحات تعليمية عربية محلي أولًا",
+      "problem": "يحتاج المدرس أو الطالب إلى فيديو قصير يشرح مفهومًا مع ترجمة عربية قابلة للمراجعة دون الاعتماد الافتراضي على API مدفوع.",
+      "approach": "قالب مستقل يختار مسار explainer، يستخدم بيانات ونصًا مرجعيًا، ويبدأ بمكونات Remotion وPiper ثم يتيح مسارًا بصريًا محليًا.",
+      "stack": "Python، Remotion، Piper، FFmpeg، YAML، JSON Schema.",
+      "steps": [
+        "أنشئ brief تعليميًا مع مصدر لكل حقيقة.",
+        "اختر قالب explainer ومخرجات زمنية قصيرة.",
+        "ولّد narration محليًا باستخدام Piper.",
+        "أنشئ رسومًا وشرائح من بيانات موثقة.",
+        "شغّل فحص ترجمة وتوقيت قبل التصدير."
+      ],
+      "metric": "عدد الادعاءات المرتبطة بمصادر ونسبة الترجمة التي تجتاز فحص RTL.",
+      "difficulty": "متوسطة — تقدير 2 أسبوع.",
+      "risks": "قد يختصر الفيديو المفهوم أو يعرض معلومة غير دقيقة؛ يلزم اعتماد بشري للمحتوى.",
+      "sources": [
+        {
+          "title": "OpenMontage README",
+          "url": "https://github.com/OpenMontageInc/OpenMontage/blob/main/README.md"
+        },
+        {
+          "title": "Python documentation",
+          "url": "https://docs.python.org/3/"
+        }
+      ]
+    },
+    {
+      "title": "مجمّع وثائقي من أرشيفات مفتوحة مع سجل حقوق",
+      "problem": "يصعب بناء مونتاج وثائقي من مقاطع حقيقية مع الحفاظ على المصدر وشروط الاستخدام لكل مقطع.",
+      "approach": "أداة مستقلة تبني فهرسًا محليًا للمقاطع المتاحة من أرشيفات مفتوحة، ثم تقترح تسلسلًا زمنيًا وتصدر manifest بالمصادر والتراخيص.",
+      "stack": "Python، FFmpeg، SQLite، CLIP embeddings، metadata manifest.",
+      "steps": [
+        "اختر مصدرًا مفتوحًا واحدًا وراجع شروطه.",
+        "نزّل بيانات وصفية فقط أولًا ثم افحص عينة صغيرة.",
+        "أنشئ فهرسًا محليًا للمقاطع مع المصدر والترخيص.",
+        "ابنِ ترتيبًا زمنيًا مع روابط إلى الأصل.",
+        "صدّر فيديو تجريبيًا وتقرير provenance."
+      ],
+      "metric": "دقة استرجاع المقاطع ذات الصلة واكتمال حقول المصدر والترخيص.",
+      "difficulty": "مرتفعة — تقدير 3–4 أسابيع.",
+      "risks": "تراخيص الأرشيفات متفاوتة وقد تتغير الإتاحة؛ لا يجوز افتراض أن كل ملف متاح مجاني لإعادة النشر.",
+      "sources": [
+        {
+          "title": "OpenMontage README",
+          "url": "https://github.com/OpenMontageInc/OpenMontage/blob/main/README.md"
+        },
+        {
+          "title": "FFmpeg documentation",
+          "url": "https://ffmpeg.org/documentation.html"
+        }
+      ]
+    }
+  ],
+  "religious": [],
+  "alternatives": [
+    {
+      "name": "Blender",
+      "url": "https://github.com/blender/blender",
+      "type": "local 3D animation"
+    },
+    {
+      "name": "FFmpeg",
+      "url": "https://ffmpeg.org/documentation.html",
+      "type": "media processing"
+    }
+  ],
+  "deploymentModes": [
+    "local_zero_key_demo",
+    "local_gpu_optional",
+    "cloud_api_optional"
+  ],
+  "researchOnly": true,
+  "published": false,
+  "feedId": null,
+  "relatedFeedId": null,
+  "testEvidence": null,
+  "metricSnapshot": {
+    "source": "GitHub REST API",
+    "stars": 78592,
+    "forks": 10478,
+    "openIssues": 323,
+    "archived": false,
+    "licenseSpdx": "AGPL-3.0",
+    "pushedAt": "2026-11-08T03:50:57Z",
+    "updatedAt": "2026-11-08T18:57:47Z",
+    "defaultBranch": "main",
+    "language": "Python",
+    "measuredAt": "2026-11-08T21:57:55+03:00",
+    "reportedAtByConnector": "2026-11-08T20:53:50Z",
+    "timeSkewSeconds": 376,
+    "status": "accepted_prior_snapshot_with_newer_clock_skew_attempt",
+    "note": "The accepted metric snapshot is the prior branch's 21:57:55+03 capture. A newer connector response is retained as provisional because its clock is 6m16s ahead of this run.",
+    "provisionalLatest": {
+      "stars": 78628,
+      "forks": 10484,
+      "openIssues": 323,
+      "updatedAt": "2026-11-08T20:51:56Z"
+    }
+  },
+  "displayRequirements": [
+    "اعرض الشارة «بحث فقط — غير منشور» ولا تنشئ feedId أو بطاقة مشروع عامة.",
+    "اعرض AGPL-3.0 وPython 3.10+ وFFmpeg وNode.js 22.23.4+ بوضوح.",
+    "افصل المسار المحلي الصفري عن GPU الاختياري وعن مزودات السحابة الاختيارية والتكلفة المتغيرة.",
+    "اعرض التكاليف الواردة في README بوصفها تقديرات الناشر لا أسعارًا مضمونة.",
+    "اعرض المصادر والقيود ووقت القياس وحالة clock-skew.",
+    "لا تعرض Tested badge أو زر تشغيل/نشر؛ لم تُنفذ اختبارات أو تشغيل للمشروع."
+  ],
+  "notes": [
+    "README يذكر clone URL قديمًا تحت calesthio؛ GitHub API أعاد Moved Permanently، والاسم الحالي المعتمد هو OpenMontageInc/OpenMontage.",
+    "أرقام الأدوات والـ pipelines ونتائج الفيديو أمثلة أو بيانات من الناشر، ولم تُعدّ أو تُختبر مستقلًا."
+  ]
+}

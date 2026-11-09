@@ -1,0 +1,306 @@
+{
+  "version": 1,
+  "runAt": "2026-11-08T15:10:18+03:00",
+  "main": {
+    "commit": "414e2594176800861fa633702b8ac1ef66831975",
+    "feed": {
+      "items": 800,
+      "news": 700,
+      "projects": 100,
+      "generatedAt": "2026-11-08T10:16:04+00:00",
+      "blobSha": "23d93f3bc75b7d564971b113be7407e5b83d5f4a"
+    },
+    "editorial": {
+      "records": 859,
+      "blobSha": "b9b75072729920f3e8d3a9eaf822a06bb6ebac61"
+    },
+    "seen": {
+      "ids": 3701,
+      "blobSha": "17a0f24d920529b5a557b74dd02f3b9572af2e1a"
+    },
+    "status": {
+      "state": "ok",
+      "lastAttemptAt": "2026-11-08T10:16:04+00:00",
+      "lastSuccessfulAt": "2026-11-08T10:16:04+00:00",
+      "collected": 303,
+      "successfulSources": 24,
+      "emptySources": 2,
+      "errorSources": 0,
+      "blobSha": "c36d9965af2c4ee03b592c36091800f43fbe366d"
+    }
+  },
+  "mainIncoming": {
+    "files": 88,
+    "occurrences": 928,
+    "activeExactAlreadyImported": 286,
+    "historicalExactAlreadyImported": 605,
+    "seenOnly": 36,
+    "identityMismatches": 1,
+    "activeExactPending": 0,
+    "unmatchedNotSeen": 0,
+    "confirmedExpired": 0,
+    "structuralErrors": 0,
+    "identityHold": [
+      {
+        "historicalId": "7a99eca9b2ce14d9f5",
+        "currentFeedId": "e0cbbf211a55e79f34",
+        "url": "https://github.com/rasbt/LLMs-from-scratch",
+        "action": "Hold both IDs; do not merge or generate a title-based alias.",
+        "evidence": "The current main feed uses e0cbbf211a55e79f34 for this exact URL; the previous reconciliation documented the historical ID. The old record remains historical and is not re-imported."
+      }
+    ],
+    "note": "Counts are record occurrences. Seen-only records are not marked expired without date evidence."
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inSeen": true,
+      "repoStatus": {
+        "archived": false,
+        "license": "Apache-2.0",
+        "stars": 21268,
+        "forks": 2081,
+        "openIssues": 637,
+        "pushedAt": "2026-11-07T17:31:00Z"
+      },
+      "action": "Keep as seen-only; research library entry exists; no replacement ID."
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inSeen": true,
+      "action": "Keep as seen-only; no replacement ID."
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inSeen": true,
+      "action": "Keep as seen-only; no replacement ID."
+    }
+  ],
+  "pr97": {
+    "state": "open",
+    "mergeable": true,
+    "branch": "editorial/2026-11-06-2342-run11",
+    "incomingFiles": 97,
+    "occurrences": 1022,
+    "additionalFilesBeyondMain": 9,
+    "additionalOccurrences": 94,
+    "additionalUniqueIds": 56,
+    "additionalDuplicateOccurrences": 38,
+    "additionalClassification": {
+      "alreadyImportedOnMain": 7,
+      "stagedInPrEditorial": 76,
+      "seenOnly": 11,
+      "idUrlMismatches": 0,
+      "activePending": 0,
+      "unmatchedNotSeen": 0,
+      "structuralErrors": 0
+    },
+    "changedFiles": 48,
+    "protectedPathsChanged": [],
+    "codeOrWorkflowPathsChanged": []
+  },
+  "prEditorial": {
+    "mainRecordsPreserved": 859,
+    "branchRecords": 902,
+    "newIds": 43,
+    "newKinds": {
+      "news": 42,
+      "project": 1
+    },
+    "enrichedExistingRecords": 5,
+    "removedOldIds": 0,
+    "allNewIdsMatchCurrentMainFeedIdAndUrl": true,
+    "oldProposalOrderPreserved": true,
+    "note": "Four earlier project enrichments preserve prior suggestion order; one moved OpenMontage URL was downgraded to metadata-only without changing its ID or URL."
+  },
+  "newEnrichments": [
+    {
+      "id": "5c24264888e5cf1cac",
+      "titleAr": "OpenIndiana 2026.10 يحدّث أدوات التطوير ودعم الافتراضية",
+      "basis": "article",
+      "sources": [
+        "https://openindiana.org/announcements/openindiana-hipster-2026-10-announcement/",
+        "https://www.phoronix.com/news/OpenIndiana-2026.10"
+      ]
+    },
+    {
+      "id": "b228101c3e9d88f964",
+      "titleAr": "HyperFlow H3 Flash يضغط نموذجًا مشتركًا للفيديو والصوت إلى نحو 14B",
+      "basis": "readme",
+      "sources": [
+        "https://github.com/Video-Rebirth/hyperflow-h3-flash",
+        "https://huggingface.co/VideoRebirthAI/hyperflow-h3-flash"
+      ]
+    }
+  ],
+  "currentFeedDelta": {
+    "netNewSincePreviousMainSnapshot": 34,
+    "news": 32,
+    "projects": 2,
+    "alreadyEditorialBeforeThisRun": 7,
+    "addedThisRun": 2,
+    "stillWithoutEditorial": 25
+  },
+  "projectIdentityHolds": [
+    {
+      "name": "OpenMontage",
+      "id": "bc64dbd527eeb5b716",
+      "url": "https://github.com/OpenMontageInc/OpenMontage",
+      "basis": "readme",
+      "license": "AGPL-3.0",
+      "requirements": [
+        "Python 3.10+",
+        "Node patched LTS/current versions",
+        "FFmpeg"
+      ],
+      "localCloud": "Local tools and optional local models; cloud APIs are optional and pay-as-you-go.",
+      "activity": {
+        "stars": 78457,
+        "forks": 10455,
+        "openIssues": 322,
+        "pushedAt": "2026-11-08T03:50:57Z"
+      },
+      "note": "README clone command still references calesthio/OpenMontage; canonical feed URL is OpenMontageInc. Treat the second feed record separately."
+    },
+    {
+      "name": "OpenMontage legacy URL",
+      "id": "6d3bd03b499863301f",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "basis": "metadata",
+      "note": "GitHub API returned Moved Permanently and README fetch at old path was unavailable. Keep this feed ID and URL separate; do not merge by title."
+    }
+  ],
+  "projectLibrary": {
+    "uniqueProjects": 62,
+    "active": 60,
+    "archived": 2,
+    "feedLinked": 10,
+    "researchOnly": 51,
+    "membershipUnverified": 1,
+    "licensesNeedUpstreamVerification": 9,
+    "notMaintained": 1,
+    "catalogMetricsMeasuredAt": "2026-11-07T20:38:28Z",
+    "previousEightRefresh": {
+      "reviewed": 8,
+      "improvements": 24,
+      "spinoffs": 21,
+      "religious": 0,
+      "testEvidence": 0,
+      "metricsMeasuredAt": "2026-11-08T15:10:18+03:00"
+    },
+    "publicProjectCards": {
+      "complete": 100,
+      "total": 100,
+      "improvements": 247,
+      "spinoffs": 235,
+      "religious": 28
+    },
+    "bestThreeSuggestions": [
+      {
+        "title": "معيار عربي لدقة إحالات PageIndex",
+        "url": "https://github.com/VectifyAI/PageIndex",
+        "difficulty": "متوسط",
+        "metric": "دقة الصفحة والمقطع الداعم"
+      },
+      {
+        "title": "مدقق استشهادات DeepTutor",
+        "url": "https://github.com/HKUDS/DeepTutor",
+        "difficulty": "متوسط",
+        "metric": "نسبة الادعاءات التعليمية المدعومة بمصدر"
+      },
+      {
+        "title": "اختبارات RTL في MarkItDown",
+        "url": "https://github.com/microsoft/markitdown",
+        "difficulty": "متوسط",
+        "metric": "سلامة ترتيب الجداول والنص العربي بعد التحويل"
+      }
+    ],
+    "metricsSnapshot": "editorial/library/metrics-refresh-2026-11-08-1510.json",
+    "previousEightResearch": "editorial/library/previous-eight-refresh-2026-11-08-0554.json",
+    "metricsAnomaly": "pydantic/pydantic-ai reported pushedAt 2026-11-08T12:17:35Z, about 7m17s after measurement time; flagged, not treated as activity proof."
+  },
+  "verification": {
+    "localCheckout": {
+      "attempted": true,
+      "success": false,
+      "reason": "git clone could not resolve github.com; no local execution environment."
+    },
+    "officialUnittest": {
+      "command": "python -m unittest discover -s tests -v",
+      "localExecuted": false,
+      "ciRun": 42480672344,
+      "passed": 30,
+      "failed": 0
+    },
+    "officialEditorialValidate": {
+      "command": "python scripts/editorial.py validate",
+      "localExecuted": false,
+      "ciRun": 42480672344,
+      "result": "success",
+      "scope": "site/data/editorial.json on PR branch (902 records)"
+    },
+    "officialEditorialImport": {
+      "command": "python scripts/editorial.py import",
+      "executed": false,
+      "reason": "No local Python checkout/runtime; no import command was claimed."
+    },
+    "incomingOfficialValidation": false,
+    "structuralEquivalent": {
+      "mainIncomingFiles": 88,
+      "mainIncomingOccurrences": 928,
+      "prAdditionalFiles": 9,
+      "prAdditionalOccurrences": 94,
+      "errors": 0,
+      "identityComparedByExactIdAndUrl": true
+    },
+    "javascriptSyntax": "success",
+    "latestPrCi": {
+      "run": 42480672344,
+      "url": "https://github.com/lm7md-ai/.-/actions/runs/42480672344",
+      "conclusion": "success"
+    }
+  },
+  "deployment": {
+    "mainWorkflowRun": 42470680358,
+    "mainWorkflowUrl": "https://github.com/lm7md-ai/.-/actions/runs/42470680358",
+    "conclusion": "success",
+    "artifactId": 13613582102,
+    "artifactMatchesMainBlobs": true,
+    "artifactBlobs": {
+      "feed": "23d93f3bc75b7d564971b113be7407e5b83d5f4a",
+      "editorial": "b9b75072729920f3e8d3a9eaf822a06bb6ebac61",
+      "seen": "17a0f24d920529b5a557b74dd02f3b9572af2e1a",
+      "status": "c36d9965af2c4ee03b592c36091800f43fbe366d"
+    },
+    "publishedCounts": {
+      "feed": 800,
+      "editorial": 859,
+      "seenIds": 3701
+    },
+    "livePagesFetch": "DisabledError",
+    "liveDetailPagesVerified": false,
+    "detailRoutes": {
+      "news": "https://lm7md-ai.github.io/.-/#item=295354ff422b0d4db9",
+      "project": "https://lm7md-ai.github.io/.-/#item=c1af6b58492f9bf434"
+    }
+  },
+  "decision": {
+    "merged": false,
+    "newlyPublished": false,
+    "reason": "PR #97 changes editorial data only, but the existing push-to-main workflow invokes update_feed.py and may write feed.json, seen.json and status.json. The explicit protected-file constraint takes precedence; keep PR open.",
+    "scheduleChanged": false,
+    "automationCreated": false
+  }
+}

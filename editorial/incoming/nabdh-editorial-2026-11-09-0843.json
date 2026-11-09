@@ -1,0 +1,160 @@
+{
+  "version": 1,
+  "items": {
+    "fe5fdb83e1ea95f1b4": {
+      "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+      "titleAr": "غولدمان ساكس يقيّد استخدام أدوات البرمجة بالذكاء الاصطناعي خارج فرق الهندسة",
+      "summaryAr": "ينقل تقرير State of AI، مستندًا إلى Bloomberg، أن Goldman Sachs قصرت استخدام Claude Code وأدوات البرمجة التابعة لـGitHub على المهندسين بعد مراجعة للإنتاجية والمخاطر. ويذكر التقرير أن فريق strats احتفظ بإمكانية الوصول، وأن مساعد البنك الداخلي القائم على نماذج متعددة ظل متاحًا على مستوى الشركة؛ لذلك فالتغيير يخص وكلاء البرمجة الخارجيين لا كل استخدامات الذكاء الاصطناعي.",
+      "whyItMatters": "الدرس المؤسسي أن إتاحة وكيل يكتب الكود لا تكفي وحدها: يجب تحديد من يملك الأداة الناتجة، ومن يراجعها، ومن يتحمل مسؤوليتها قبل اتصالها ببيانات أو أنظمة إنتاجية.",
+      "audience": "مهندسو البرمجيات، وفرق الأمن والحوكمة، ومديرو التقنية والمنتجات في المؤسسات المنظمة.",
+      "nextSteps": [
+        "تحديد مهندس مسؤول عن مراجعة أي أداة ينتجها وكيل خارج فريق الهندسة.",
+        "حصر بيانات العملاء والأنظمة الإنتاجية التي لا يجوز للوكيل الوصول إليها افتراضيًا.",
+        "قياس جودة الكود ومعدل العيوب ووقت المراجعة قبل توسيع صلاحيات الاستخدام."
+      ],
+      "limitations": "المصدر تقرير State of AI ينقل Bloomberg، وليس بيانًا تفصيليًا منشورًا من Goldman Sachs. لا يثبت القرار حظر جميع أدوات الذكاء الاصطناعي أو جميع الاستخدامات غير البرمجية.",
+      "sources": [
+        {
+          "title": "State of AI — Goldman Sachs and Claude Code",
+          "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers"
+        }
+      ],
+      "reviewedAt": "2026-11-09T08:43:29+03:00",
+      "basis": "article"
+    },
+    "7cbb1e8e79a4571203": {
+      "url": "https://mailroute.net/blog/outlook-rejecting-email-without-dmarc",
+      "titleAr": "MailRoute ترصد رفض Outlook.com بعض الرسائل من نطاقات لا تنشر DMARC",
+      "summaryAr": "تقول MailRoute إنها رصدت منذ 5 نوفمبر 2026 ارتداد بعض الرسائل المرسلة إلى Outlook.com وHotmail وLive وMSN من نطاقات لا تنشر سجل DMARC، مع رسالة رفض 550 5.7.1. وتوضح الشركة أن ملاحظتها تختلف عن سياسة Microsoft المنشورة سابقًا للمرسلين الذين يتجاوزون 5,000 رسالة يوميًا؛ كما تقول إن Microsoft لم تكن قد أعلنت هذا السلوك الجديد حتى 6 نوفمبر.",
+      "whyItMatters": "قد تفشل رسائل تشغيلية مهمة حتى عندما يمر بعضها، لذلك لا يكفي اختبار رسالة واحدة. مصادقة النطاق عبر SPF وDKIM وDMARC جزء من موثوقية أنظمة الإشعارات والبريد.",
+      "audience": "مسؤولو النطاقات والبريد، ومطورو أنظمة الإشعارات، والجهات التي تراسل مستخدمي Outlook.com.",
+      "nextSteps": [
+        "تحقق من سجلات SPF وDKIM وDMARC ومحاذاتها مع نطاق From.",
+        "راقب تقارير DMARC وسجلات الارتداد بدل افتراض أن وصول بعض الرسائل يعني سلامة الإعداد.",
+        "لا تنقل سياسة DMARC إلى quarantine أو reject قبل حصر كل خدمات الإرسال ومراجعة تقاريرها."
+      ],
+      "limitations": "الملاحظة الجديدة صادرة عن MailRoute من سجلاتها وليست إعلانًا مستقلاً من Microsoft؛ لم يذكر المقال حجم العينة أو معدل الانتشار. قيمة p=none تتيح المراقبة ولا تفرض إجراءً على الرسائل الفاشلة.",
+      "sources": [
+        {
+          "title": "MailRoute — Outlook.com and DMARC",
+          "url": "https://mailroute.net/blog/outlook-rejecting-email-without-dmarc"
+        }
+      ],
+      "reviewedAt": "2026-11-09T08:43:29+03:00",
+      "basis": "article"
+    },
+    "655f55142621af7630": {
+      "url": "https://www.engadget.com/2309632/one-problem-with-new-hdds-5000-drives-study/",
+      "titleAr": "بيانات Backblaze تبرز اختلاف موثوقية الأقراص حسب الطراز والعمر",
+      "summaryAr": "يعرض Engadget بيانات Backblaze لأسطول يضم 353,041 قرصًا في تقرير الربع الثاني من 2026، حيث بلغ معدل الفشل السنوي مدى الحياة 1.41%. ويقارنها بتقرير Secure Data Recovery لعينة تزيد على 5,000 قرص كان قد تعطل بالفعل، وقدّر متوسطها بـ807 أيام؛ وهذا الرقم الأخير لا يمثل العمر المتوقع لكل الأقراص لأنه محسوب على عينة فشل منتقاة.",
+      "whyItMatters": "اختيار التخزين ينبغي أن يعتمد على بيانات الطراز والحمل والعمر، مع نسخ احتياطي مستقل. متوسط واحد لا يضمن سلامة قرص بعينه، وRAID لا يحل محل النسخ الاحتياطي.",
+      "audience": "مستخدمو NAS، ومسؤولو الأنظمة، وفرق مراكز البيانات، ومن يخططون لتخزين طويل الأجل.",
+      "nextSteps": [
+        "قارن معدل الفشل للطراز المحدد بدل الاعتماد على متوسط جميع الأقراص.",
+        "احتفظ بنسخة احتياطية منفصلة وخارج الجهاز أو الموقع.",
+        "راقب مؤشرات SMART وسجل الأعطال، وضع خطة استبدال مبنية على العمر والحمل."
+      ],
+      "limitations": "Engadget مصدر ثانوي. بيانات Backblaze تخص أسطول الشركة ولا تمثل كل السوق، أما متوسط 807 أيام فيخص عينة أقراص فاشلة بالفعل ولا يصح تعميمه على عمر الأقراص السليمة.",
+      "sources": [
+        {
+          "title": "Engadget — HDD study summary",
+          "url": "https://www.engadget.com/2309632/one-problem-with-new-hdds-5000-drives-study/"
+        },
+        {
+          "title": "Backblaze — Q2 2026 Drive Stats",
+          "url": "https://www.backblaze.com/blog/backblaze-drive-stats-for-q2-2026/"
+        }
+      ],
+      "reviewedAt": "2026-11-09T08:43:29+03:00",
+      "basis": "article"
+    },
+    "b9c0dd474c98ba8411": {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
+      "titleAr": "تقرير: Apple تسرّع تطوير Siri لتنفيذ مهام متتابعة عبر التطبيقات",
+      "summaryAr": "تنقل The Verge عن Bloomberg أن Apple تضغط لتسريع خارطة Siri. ويتوقع التقرير أن تضيف نسخة iOS 27.3 تحكمًا أعمق في تطبيقات Apple، ثم تكاملًا مع تطبيقات خارجية لاحقًا في الربيع، بينما يتجه الهدف الأبعد إلى مساعد يتابع هدفًا وينفذ عدة خطوات دون طلب جديد عند كل خطوة.",
+      "whyItMatters": "الانتقال من المساعد الحواري إلى وكيل ينفذ مهامًا يرفع أهمية صلاحيات التطبيقات، وتأكيد العمليات الحساسة، وسجل الأفعال، وإمكانية التراجع عند الخطأ.",
+      "audience": "مطورو تطبيقات iOS، ومصممو المنتجات، وفرق المساعدات والوكلاء.",
+      "nextSteps": [
+        "انتظر وثائق Apple وملاحظات الإصدارات التجريبية قبل بناء اعتماد على المواعيد المتوقعة.",
+        "صمم إجراءات التطبيقات بصلاحيات محددة وتأكيد واضح قبل الأفعال الحساسة.",
+        "اختبر الإلغاء والتراجع والتعامل مع فشل خطوة وسط سلسلة مهام."
+      ],
+      "limitations": "التوقيت والميزات مستندان إلى تقرير Bloomberg الذي نقلته The Verge، وليسا إعلانًا رسميًا من Apple؛ قد تتغير الخطط قبل الإصدار.",
+      "sources": [
+        {
+          "title": "The Verge — Apple is racing to make Siri more agentic",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic"
+        }
+      ],
+      "reviewedAt": "2026-11-09T08:43:29+03:00",
+      "basis": "article"
+    },
+    "d1d29453d583846bd7": {
+      "url": "https://www.theverge.com/games/1029557/epic-games-launcher-is-coming-to-steamos",
+      "titleAr": "Epic تؤكد أن مشغّلها الجديد يستهدف SteamOS وتوزيعات Linux",
+      "summaryAr": "بحسب The Verge، أكدت Epic أن Epic Games Launcher ما زال في مرحلة المعاينة وسيستهدف SteamOS وتوزيعات مثل Fedora وCachy وOmarchy، مع استمرار اختبار صيغ الحزم وإعادة AppImage خلال نوفمبر. دعم المشغّل لا يعني أن Fortnite أصبحت متوافقة؛ فما زالت متطلبات Easy Anti-Cheat v2 عائقًا لم يُحسم.",
+      "whyItMatters": "قد يوسع ذلك خيارات مستخدمي Linux وSteam Deck، لكنه يوضح ضرورة الفصل بين توافق متجر الألعاب وتوافق كل لعبة وخدمات الحماية التي تعتمد عليها.",
+      "audience": "مستخدمو Linux وSteam Deck، ومطورو الألعاب، ومتابعو منظومة ألعاب الحاسوب.",
+      "nextSteps": [
+        "تابع إعلان Epic الرسمي عن الإصدارات وصيغ الحزم المدعومة.",
+        "تحقق من توافق التوزيعة والمعمارية قبل تثبيت نسخة المعاينة.",
+        "تحقق من دعم كل لعبة على حدة ولا تفترض أن Fortnite تعمل لمجرد دعم المشغّل."
+      ],
+      "limitations": "المشغّل ما زال Preview ولا يوجد موعد إصدار مستقر مؤكد. المقال يوضح أن دعم Fortnite على SteamOS لم يُحسم بسبب متطلبات Easy Anti-Cheat v2.",
+      "sources": [
+        {
+          "title": "The Verge — Epic Games Launcher is coming to SteamOS",
+          "url": "https://www.theverge.com/games/1029557/epic-games-launcher-is-coming-to-steamos"
+        }
+      ],
+      "reviewedAt": "2026-11-09T08:43:29+03:00",
+      "basis": "article"
+    },
+    "d983ff484839bbb51e": {
+      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE0zd2hoZDd6dm9QU2pkdjRPRjFWNVlpYUJsbzhzV2U1aE1HUW4tVzRlOUVRNUtaOGlyc1lTVnJOVjcxVDJ3ZGZ3?oc=5",
+      "titleAr": "مسك تعلن فوز ثلاثة مشاريع في تحدي نحو الأثر بمنح إجمالية 3 ملايين ريال",
+      "summaryAr": "تشير بيانات الخلاصة إلى إعلان فوز ثلاثة مشاريع في النسخة الثانية من تحدي نحو الأثر بمنح إجمالية قدرها 3 ملايين ريال. وتوضح صفحة مؤسسة مسك الرسمية أن التحدي رحلة تنافسية تمتد سبعة أسابيع وتشمل معسكرات تدريبية وإرشادًا متخصصًا وفرصة لمنحة مليون ريال. تعذر فتح تقرير إعلان الفائزين كاملًا، لذلك لم أتحقق من أسماء المشاريع أو تفاصيل تنفيذها.",
+      "whyItMatters": "البرنامج يجمع التدريب والإرشاد مع تمويل المشاريع، لكن قيمة المبادرة تُقاس بنتائج التنفيذ لاحقًا لا بمجرد إعلان الفوز أو قيمة المنحة.",
+      "audience": "الجمعيات والمنظمات غير الربحية، ورواد الابتكار الاجتماعي، والمهتمون ببرامج مسك.",
+      "nextSteps": [
+        "راجع صفحة البرنامج الرسمية لمعرفة طبيعة التحدي وشروط الدورات القادمة.",
+        "تابع نشر نتائج تنفيذ المشاريع الفائزة بدل اعتبار المنحة دليلًا على تحقق الأثر بعد.",
+        "عند دراسة فرصة مشابهة، حدد المشكلة والفئة المستفيدة ومؤشر أثر قابلًا للقياس."
+      ],
+      "limitations": "لم يتسن فتح تقرير الفائزين على جريدة المدينة؛ هذا السجل مبني على عنوان/بيانات الخلاصة وصفحة مسك الرسمية العامة. أسماء الفائزين وتفاصيل المشاريع ومؤشرات تنفيذها غير متحققة من المقال الكامل.",
+      "sources": [
+        {
+          "title": "جريدة المدينة — فوز ثلاثة مشاريع في تحدي نحو الأثر",
+          "url": "https://www.al-madina.com/article/1012478/%D8%A3%D8%AE%D9%8A%D8%B1%D8%A9/%D9%85%D8%B3%D9%83-%D9%81%D9%88%D8%B2-3-%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D8%A7%D8%AA-%D9%85%D9%86-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%AA%D8%AD%D8%AF%D9%8A-%D9%86%D8%AD%D9%88-%D8%A7%D9%84%D8%A3%D8%AB%D8%B1-%D8%A83-%D9%85%D9%84%D8%A7%D9%8A%D9%8A%D9%86-%D8%B1%D9%8A%D8%A7%D9%84"
+        },
+        {
+          "title": "مؤسسة مسك — تحدي نحو الأثر",
+          "url": "https://misk.org.sa/programs/%D8%AA%D8%AD%D8%AF%D9%8A-%D9%86%D8%AD%D9%88-%D8%A7%D9%84%D8%A3%D8%AB%D8%B1/"
+        }
+      ],
+      "reviewedAt": "2026-11-09T08:43:29+03:00",
+      "basis": "metadata"
+    },
+    "840b5edbfc7f4f3ff7": {
+      "url": "https://news.google.com/rss/articles/CBMigARBVV95cUxOOHN2RGZibkJlZDZVS0xLMlhmemg0YTQyTWZqajZEWFI0Yktla0NjOEVkWU43c1JkMFRlTjI1VEkwQkIzNXM4Wng5WEdZb3phUEJlaGtGRG51cm1xWEJKYnZaNkNzNmlnZFM1OGs3bnI5MzdnbHc5Sk5FeTNKd0IxU3RaQmJfV1A2WE1GMDV6ZUhNMVFtY1VjdDE5SndYWEZGTUZIcS1BU1h6ZnlHZnE5UzZxUDBwTXI2cDBTdm03dXU1dXBybUZuQ1BuRmVDcnNkVWI4VWJPc2lRc1dnTkJ1M3dfMXk4WkhJTmVuT3hxd3ZoODR4ZGJ6bUM4LUFxckNyQWhmbEF6T3BEbmJqbUQ3Sm9qR0VqYVVqdGFzQU5nNVpGbjMtY3dqTmI2VGtzZ1dNRW9YQmNidTB1bHl2UDNsZXNUb2tqdWJEMExWRldlOVp5c1NxWDVPUmMxSUdaMDgwbHVISmxySkkzTzVXeEkyN2xoTEJJNm0xRDc1eHhGX1VVRXE0OHIySmN4QTJIZDlUcnYzWlVTa29JQ1d4Vm1SQzZZNmthWWxYMHpXbmkyd1pWU3RSRUlXbVpndlI3WTFCTV9mNEpISlZfT0ltWWJyajcySzlMNU9IXzViVzZBNkd0UUM5a3A3WGFOSmJwY1JHNVVwNV8wZmJiV091WWM0Ng?oc=5",
+      "titleAr": "برنامج «رُبّان» في مكة يركز على بناء حلول مهنية باستخدام الذكاء الاصطناعي",
+      "summaryAr": "أفادت صحيفة سبق أن الإدارة العامة للتدريب التقني والمهني بمنطقة مكة تطلق برنامج «رُبّان.. رحلة الذكاء الاصطناعي في المهن» من 8 نوفمبر إلى 2 ديسمبر 2026، باستضافة الكلية التقنية للاتصالات والمعلومات بجدة. ويستهدف تمكين المتدربين والمتدربات من توظيف الذكاء الاصطناعي في تخصصاتهم وتحويل تحديات العمل إلى حلول تطبيقية قابلة لقياس الأثر.",
+      "whyItMatters": "يربط البرنامج تعلم الذكاء الاصطناعي بمشكلات مهنية حقيقية والعمل الجماعي وقياس النتائج، بدل الاكتفاء بعروض الأدوات أو التدريب النظري.",
+      "audience": "متدربو ومتدربات المؤسسة العامة للتدريب التقني والمهني في منطقة مكة، والمدربون والجهات التدريبية.",
+      "nextSteps": [
+        "تحقق من الأهلية وآلية المشاركة لدى المؤسسة العامة للتدريب التقني والمهني أو الكلية المستضيفة.",
+        "اختر تحديًا من تخصصك يمكن وصف خط أساسه وقياس التحسن بعد الحل.",
+        "وثّق دور الذكاء الاصطناعي ومراجعة الإنسان والنتيجة بالأرقام."
+      ],
+      "limitations": "المصدر تقرير صحفي من سبق؛ لم يذكر آلية تسجيل تفصيلية أو فتح المشاركة لطلاب الجامعات من خارج المؤسسة. البرنامج محدد بالفترة من 8 نوفمبر إلى 2 ديسمبر 2026.",
+      "sources": [
+        {
+          "title": "سبق — إطلاق برنامج رُبّان في مكة",
+          "url": "https://sabq.org/article/U-SNq3w"
+        }
+      ],
+      "reviewedAt": "2026-11-09T08:43:29+03:00",
+      "basis": "article"
+    }
+  }
+}

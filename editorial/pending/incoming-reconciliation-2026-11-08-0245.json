@@ -1,0 +1,229 @@
+{
+  "version": 1,
+  "runAt": "2026-11-08T02:45:03+03:00",
+  "main": {
+    "sha": "941a7935ad5f3de744075443f816b5b0492f209a",
+    "feed": {
+      "items": 800,
+      "news": 700,
+      "projects": 100,
+      "generatedAt": "2026-11-07T19:24:39+00:00"
+    },
+    "editorial": {
+      "items": 859
+    },
+    "seen": {
+      "ids": 3637
+    },
+    "incoming": {
+      "files": 88,
+      "occurrences": 928,
+      "activeExactAlreadyImported": 305,
+      "historicalExactAlreadyImported": 587,
+      "seenOnly": 36,
+      "activeExactPending": 0,
+      "idUrlMismatch": 0,
+      "unmatchedNotSeen": 0,
+      "structuralIssues": 0,
+      "seenOnlyIds": [
+        "940ec4695c1e241c2f",
+        "317abcdd1b20728a7e",
+        "662e68277c6361dd4b",
+        "87d27a9f8a0972f507",
+        "65eeab64fed21e0b54",
+        "d674dea922625d0be8",
+        "967be99077d13f07b2",
+        "32b3bf2b225f3d4c44",
+        "5010fb296f767bbc9b",
+        "327e862bb29c2bb4f7",
+        "dc7eb9e8885fba4465",
+        "56a1a96015a9777801",
+        "841e05fd699259e83c",
+        "cb87f0ba6d1c74466f",
+        "5b9f2f37879a136ac2",
+        "03ad66ba1fba612587",
+        "e2d2bf508ced1caa08",
+        "3e8a8aa6133203ad02",
+        "834f867a452076917a",
+        "6b6c7100781c3e9dc6",
+        "5f4b9fdfeb2042b971",
+        "2451814cc9423add84",
+        "f6417c66c0228f42d3",
+        "002b7cee771ca9e347",
+        "1263ce4e09302da828",
+        "210b26f029f33a3ef7",
+        "35eaf0d06c77e9ddf3",
+        "b5cba0d011349b3bc5",
+        "519582846479e28ed3",
+        "01b1e45f222dec5edc",
+        "ae61902e2afada6e8c",
+        "f1213d42ab134c3258",
+        "e3bc71be0e917360f6",
+        "fb02c93fd281f7df67",
+        "cf03bdbe3edb09ea56",
+        "954fbd2e34ab1eb99f"
+      ]
+    },
+    "specialRecords": [
+      {
+        "name": "NVIDIA OpenShell",
+        "id": "940ec4695c1e241c2f",
+        "inFeed": false,
+        "inEditorial": false,
+        "inSeen": true,
+        "researchDossier": "editorial/library/nvidia-openshell-dossier-2026-10-30-1146.json"
+      },
+      {
+        "name": "Canva Craft",
+        "id": "317abcdd1b20728a7e",
+        "inFeed": false,
+        "inEditorial": false,
+        "inSeen": true
+      },
+      {
+        "name": "1Password agent sign-in",
+        "id": "662e68277c6361dd4b",
+        "inFeed": false,
+        "inEditorial": false,
+        "inSeen": true
+      }
+    ]
+  },
+  "pr97": {
+    "state": "open",
+    "headBranch": "editorial/2026-11-06-2342-run11",
+    "headSha": "d15adc13060543395e103f21f629101e63a73eba",
+    "base": "main",
+    "baseSha": "020b447733f5cbd8c876a676e2efc4fc603a4487",
+    "aheadBy": 33,
+    "behindBy": 3,
+    "mergeable": true,
+    "incomingFiles": 6,
+    "occurrences": 40,
+    "activeExactPending": 36,
+    "alreadyImportedActive": 2,
+    "expiredSeenOnly": 2,
+    "idUrlMismatch": 0,
+    "unmatchedNotSeen": 0,
+    "structuralIssues": 0,
+    "pendingIds": [
+      "d2cf9ea98eff4e7cb7",
+      "a8fc5de6487f58f91f",
+      "d32234f10741024509",
+      "531a4c7cd4138ae7bd",
+      "8b90275c42b5ae4db8",
+      "bc00e1abe23c7a7329",
+      "f93a2e40ad5d089152",
+      "b035143e2aa925bb9c",
+      "3db05769bae1f4f293",
+      "926cba6ebd7a9faa59",
+      "b81ea0f95984f901c2",
+      "2d31c1ba998345c38d",
+      "4280bb93d180a01f62",
+      "0b47ae94b8dc6c928b",
+      "9aeac73058ac351bd9",
+      "da4db1176f76c5742a",
+      "31a9be451fbe1bf2f5",
+      "5d6aaf835fa3bf32a6",
+      "a0a44ed09dc9a1089b",
+      "82eb1f87d59afe3f62",
+      "f0247d2be6d23fda27",
+      "92b8001eea640de464",
+      "96d96bc83625d43e64",
+      "7e28c0d8055c0e98ce",
+      "1e177f364267cd09f3",
+      "d9d8ed120c50cfe24e",
+      "088c4eeb69d432a240",
+      "eecad6fef1daea32ea",
+      "60724c835de1389a14",
+      "5cdf273169f3ed7a2c",
+      "ee860e0ea0ec35f12c",
+      "5f721228af3682c241",
+      "7142f0ef7fb76f39c0",
+      "20716899a73a29da44",
+      "b521172828d6261302",
+      "b9ca9ce17c9cbad18a"
+    ],
+    "expired": [
+      {
+        "id": "5222b774813a87d84a",
+        "title": "بريطانيا تعلن خطة لإلزام أصحاب العمل بإظهار الرواتب في إعلانات الوظائف",
+        "url": "https://www.reuters.com/business/world-at-work/britain-make-salary-disclosure-job-ads-mandatory-2026-11-05/"
+      },
+      {
+        "id": "1cff92b3d4b08e145f",
+        "title": "إدارة الطيران الأمريكية تبدأ استبدال أنظمة قديمة تعتمد على الأقراص المرنة بحلول 2028",
+        "url": "https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05/"
+      }
+    ],
+    "editorial": {
+      "mainCount": 859,
+      "branchCount": 895,
+      "addedIds": 36,
+      "mainIdsMissing": 0,
+      "changedExisting": 3,
+      "removedKeys": 0,
+      "changedExistingIds": [
+        "55c5e35b9bbd92d15c",
+        "e622970364717202be",
+        "fe0e6bfdbdd5822139"
+      ]
+    },
+    "latestIncomingFiles": [
+      "editorial/incoming/nabdh-editorial-2026-11-06-2342.json",
+      "editorial/incoming/nabdh-editorial-2026-11-07-0247.json",
+      "editorial/incoming/nabdh-editorial-2026-11-07-0842.json",
+      "editorial/incoming/nabdh-editorial-2026-11-07-2338.json",
+      "editorial/incoming/nabdh-editorial-2026-11-08-0005.json",
+      "editorial/incoming/nabdh-editorial-2026-11-08-0035.json"
+    ]
+  },
+  "projects": {
+    "libraryUnique": 62,
+    "active": 60,
+    "archived": 2,
+    "feedMatches": 10,
+    "independentResearch": 51,
+    "unresolvedMembership": 1,
+    "previousEightReviewed": 8,
+    "additionalUniqueProjects": 5,
+    "metricsMeasuredAt": "2026-11-07T20:38:28Z",
+    "feedProjects": 100,
+    "completeProjectCards": 100,
+    "improvements": 253,
+    "spinoffs": 240,
+    "religious": 28,
+    "invalidProposals": 0,
+    "runtimeTestsClaimed": 0
+  },
+  "workflows": {
+    "prCheck": {
+      "runId": 42417419455,
+      "conclusion": "success",
+      "pythonTests": 30,
+      "editorialValidated": 895,
+      "command": "python scripts/editorial.py validate"
+    },
+    "mainDeployment": {
+      "runId": 42406057538,
+      "conclusion": "success",
+      "artifactId": 13586844911,
+      "artifactContainsCurrentMainBlobs": true
+    },
+    "localCliValidateExecuted": false,
+    "localCliImportExecuted": false,
+    "localUnittestExecuted": false,
+    "liveHttpDirectCheck": "blocked: DisabledError; deployment artifact verified instead"
+  },
+  "protectedFilesUnchangedOnPr": [
+    "site/data/feed.json",
+    "site/data/seen.json",
+    "site/data/status.json"
+  ],
+  "notes": [
+    "Counts for incoming main are record occurrences, not distinct IDs.",
+    "No ID was regenerated from title; all comparisons use exact ID and URL.",
+    "The three named records remain seen-only; NVIDIA OpenShell has a research-only dossier.",
+    "PR #97's 36 additions are feed-kind news records, including three GitHub project/release announcements classified as news in feed.json."
+  ]
+}

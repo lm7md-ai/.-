@@ -4149,16 +4149,17 @@
     },
     "c1af6b58492f9bf434": {
       "url": "https://github.com/browser-use/browser-use",
-      "titleAr": "Browser Use: وكلاء Python للتفاعل مع المتصفح",
-      "summaryAr": "مكتبة مفتوحة المصدر لأتمتة المتصفح بوكلاء لغة، مع خيارات متصفح محلي أو سحابي وخدمة وكيل مستضافة منفصلة.",
-      "whyItMatters": "التحليل: مناسبة لاختبار صفحات تملكها أو مهام ويب عامة؛ التشغيل المحلي للمتصفح لا يعني أن نموذج اللغة يعمل دون إنترنت.",
-      "audience": "مطورو Python واختبارات الويب.",
+      "titleAr": "Browser Use — مكتبة Python لوكلاء المتصفح مع تشغيل محلي وسحابي",
+      "summaryAr": "مكتبة Python مفتوحة المصدر وواجهة CLI لبناء وكلاء يتعاملون مع صفحات الويب. تفصل الوثائق بين مكتبة الوكيل التي يدمجها المطور في تطبيقه، وأداة CLI، وخدمة الوكيل المستضافة، ومتصفح Cloud المدار. يمكن تشغيل المتصفح محليًا وربطه بمزود نموذج مدعوم، بما في ذلك Ollama محليًا؛ أما الاستدلال السحابي ومتصفح Cloud فلهما تكاليف منفصلة.",
+      "whyItMatters": "التحليل: يتيح اختبار رحلات الويب وبناء وكلاء مخصصين بدل الاقتصار على أتمتة محددة مسبقًا. يجب أن يقتصر الاستخدام على مواقع وصفحات تملكها أو لديك إذن لاختبارها، مع مراجعة بشرية قبل أي إجراء مؤثر. تشغيل المتصفح محليًا لا يعني أن بيانات الصفحة تبقى محلية إذا كان النموذج المختار مستضافًا.",
+      "audience": "مطورو Python، ومهندسو اختبار الويب، وبناة وكلاء التصفح.",
       "nextSteps": [
-        "ابدأ بعينة محلية صغيرة وفق README.",
-        "راجع الترخيص والاعتماديات قبل الاستخدام."
+        "ابدأ بموقع محلي تجريبي أو صفحة عامة للقراءة فقط، ولا تستخدم حسابات أو بيانات شخصية حقيقية.",
+        "تأكد من Python 3.11+، وأنشئ بيئة باستخدام uv ثم ثبّت browser-use؛ اختر مزود نموذج موثقًا.",
+        "قارن نموذجًا محليًا عبر Ollama مع مزود مستضاف على مهمة قراءة بسيطة، وسجّل الدقة والزمن والتكلفة قبل توسيع الاستخدام."
       ],
-      "limitations": "لم أشغّل المشروع. لا تُستخدم بيانات حسابات حقيقية في التجربة الأولى؛ التكاليف والمزايا السحابية قابلة للتغير ويجب احترام شروط المواقع.",
-      "reviewedAt": "2026-10-24T20:47:22.118Z",
+      "limitations": "لم أُثبّت المشروع أو أشغّله. تتغير واجهات المواقع وقد تجعل خطوات الوكيل غير مستقرة، كما أن نتائج النماذج احتمالية وتحتاج تحققًا. استخدام نموذج API قد يرسل نص الصفحة أو بياناتها إلى المزود حتى لو كان المتصفح محليًا. وفق صفحة الأسعار بتاريخ المراجعة، متصفح Cloud يبدأ من 0.02 دولار لكل ساعة متصفح، وتُحاسب حركة الشبكة منفصلة؛ وتشغيل الوكيل المستضاف يضيف تكلفة النموذج ورسوم خدمة. لا تستخدمه لتجاوز قيود المواقع أو ضوابط الوصول، ولا تختبر إلا نطاقات مصرحًا بها.",
+      "reviewedAt": "2026-11-08T08:46:43+03:00",
       "basis": "readme",
       "sources": [
         {
@@ -4166,13 +4167,33 @@
           "url": "https://github.com/browser-use/browser-use"
         },
         {
-          "title": "Browser Use Docs",
+          "title": "Browser Use pyproject.toml",
+          "url": "https://github.com/browser-use/browser-use/blob/main/pyproject.toml"
+        },
+        {
+          "title": "Browser Use MIT License",
+          "url": "https://github.com/browser-use/browser-use/blob/main/LICENSE"
+        },
+        {
+          "title": "Browser Use Open Source Introduction",
           "url": "https://docs.browser-use.com/open-source/introduction"
+        },
+        {
+          "title": "Browser Use Supported Models",
+          "url": "https://docs.browser-use.com/open-source/supported-models"
+        },
+        {
+          "title": "Browser Use Cloud Agent Quickstart",
+          "url": "https://docs.browser-use.com/cloud/agent/quickstart"
+        },
+        {
+          "title": "Browser Use Pricing",
+          "url": "https://browser-use.com/pricing"
         }
       ],
-      "overview": "يتلقى Agent مهمة ونموذجًا ثم يستخدم متصفحًا لتنفيذ خطوات ويعيد سجلًا ونتيجة. يميز README بين Python Library وCLI وخدمة Hosted Agent، ويدعم تخصيص الأدوات والنماذج.",
-      "requirements": "Python 3.11+ ومكتبة browser-use ومتصفح مناسب؛ مثال README يستخدم uv وPython 3.12 ومفتاح نموذج. المكتبة MIT، أما Cloud API والنماذج فقد تكون مدفوعة؛ يختلف دعم التشغيل المحلي حسب النموذج والعتاد.",
-      "quickStart": "أنشئ مشروع Python 3.12 باستخدام uv، ثم `uv add browser-use`، واضبط مفتاح مزود النموذج في `.env`، وشغّل مثال Agent من README على صفحة عامة أو موقع تجريبي محلي باستخدام `uv run agent.py`.",
+      "overview": "ثلاثة مسارات منفصلة: Python Library لبناء Agent داخل تطبيقك، وCLI لإتاحة المتصفح لوكيل برمجي قائم، وHosted Agent API لتشغيل وكيل مستضاف. يمكن للمكتبة والـCLI التحكم بمتصفح محلي أو متصفح Cloud عبر CDP. توثيق النماذج يذكر دعم أكثر من 15 مزودًا، ومنهم Ollama محليًا. خدمة Cloud Browser ليست هي نفسها خدمة Hosted Agent.",
+      "requirements": "Python >=3.11 وuv أو pip. يحتاج مسار Python إلى متصفح محلي مناسب ومزود نموذج؛ يدعم التوثيق Ollama محليًا، بينما يحتاج مزود API إلى مفتاحه واتصالًا بالإنترنت. متصفح Cloud وخدمة Hosted Agent اختياريان ويتطلبان مفاتيح خدمة وتكلفة استخدام. الاعتماديات الإضافية في pyproject.toml اختيارية لبعض التكاملات، لذلك لا يلزم تثبيت جميع extras لكل تجربة.",
+      "quickStart": "لتجربة محلية آمنة: أنشئ مشروع Python 3.12 باستخدام uv، ثم نفّذ `uv add browser-use`. شغّل Ollama محليًا وثبّت نموذجًا متوافقًا، ثم أنشئ Agent باستخدام ChatOllama ونفّذ مهمة قراءة فقط على صفحة اختبار محلية. راجع صفحة Supported Models قبل اختيار النموذج. لم تُنفذ أوامر التثبيت أو التشغيل في هذه المراجعة.",
       "improvements": [
         {
           "title": "بوابة موافقة قبل إرسال النماذج",
@@ -4246,6 +4267,32 @@
             {
               "title": "Browser Use Docs",
               "url": "https://docs.browser-use.com/open-source/introduction"
+            }
+          ]
+        },
+        {
+          "title": "سجل أدلة قابل للمراجعة لكل خطوة",
+          "problem": "النتيجة النهائية وحدها لا تبيّن الصفحة أو الدليل الذي استند إليه الوكيل عند اتخاذ كل خطوة.",
+          "approach": "إضافة سجل محلي منظم يربط كل خطوة بعنوان الصفحة ووقتها ووصف الفعل ومقتطف دليل وحالة المراجعة البشرية، باستخدام بيانات اختبار اصطناعية.",
+          "stack": "Python, Browser Use, Pydantic, SQLite",
+          "steps": [
+            "أنشئ موقعًا تجريبيًا ببيانات اصطناعية.",
+            "عرّف مخططًا موحدًا لأحداث التنقل والقراءة.",
+            "اربط كل نتيجة بمصدرها ووقت تنفيذها.",
+            "أضف مراجعة بشرية قبل اعتماد الإجراءات الحساسة.",
+            "قِس اكتمال الأدلة في 50 تشغيلًا تجريبيًا."
+          ],
+          "metric": "وجود دليل ومراجعة بشرية لكل إجراء حساس في 50 تشغيلًا تجريبيًا.",
+          "difficulty": "متوسطة؛ تقدير 5–7 أيام.",
+          "risks": "قد تتضمن مقتطفات الصفحات بيانات شخصية؛ استخدم بيانات اصطناعية واحتفاظًا محدودًا.",
+          "sources": [
+            {
+              "title": "Browser Use README",
+              "url": "https://github.com/browser-use/browser-use"
+            },
+            {
+              "title": "Browser Use Supported Models",
+              "url": "https://docs.browser-use.com/open-source/supported-models"
             }
           ]
         }
@@ -4325,9 +4372,38 @@
               "url": "https://docs.browser-use.com/open-source/introduction"
             }
           ]
+        },
+        {
+          "title": "مولّد اختبارات رحلة مستخدم من وصف مكتوب",
+          "problem": "تحويل متطلبات اختبار الواجهة إلى خطوات قابلة للتكرار يستغرق وقتًا.",
+          "approach": "تحويل وصف رحلة مستخدم إلى سيناريو مقترح يراجعه المطور ثم يشغله على تطبيق محلي تجريبي فقط.",
+          "stack": "Python, Browser Use, pytest, FastAPI",
+          "steps": [
+            "اكتب وصفًا لرحلة داخل تطبيق تجريبي.",
+            "حوّل الوصف إلى خطوات ومعايير نجاح.",
+            "اطلب مراجعة بشرية للخطوات قبل التشغيل.",
+            "نفّذ الاختبار على localhost.",
+            "قارن النتيجة مع اختبار يدوي مرجعي."
+          ],
+          "metric": "80% من سيناريوهات عينة من 20 وصفًا تتحول إلى خطوات صحيحة بعد المراجعة.",
+          "difficulty": "متوسطة؛ تقدير أسبوع.",
+          "risks": "قد يسيء النموذج تفسير الوصف؛ لا تشغّل السيناريوهات على مواقع خارج نطاق الاختبار.",
+          "sources": [
+            {
+              "title": "Browser Use README",
+              "url": "https://github.com/browser-use/browser-use"
+            },
+            {
+              "title": "Browser Use Open Source Introduction",
+              "url": "https://docs.browser-use.com/open-source/introduction"
+            }
+          ]
         }
       ],
-      "religious": []
+      "religious": [],
+      "costs": "ترخيص المكتبة MIT ولا توجد رسوم ترخيص. الاستدلال المحلي يتجنب رسوم API لكنه يستهلك موارد الجهاز والطاقة. الاستدلال عبر مزود مستضاف يخضع لتسعير المزود. صفحة Browser Use Pricing تعرض 0.02 دولار لكل ساعة متصفح Cloud، مع رسوم حركة شبكة منفصلة؛ وخدمة Hosted Agents تضيف تكلفة النموذج ورسوم خدمة 20%. الأسعار قابلة للتغيير.",
+      "localVsCloud": "محليًا: Python Library + متصفح محلي + نموذج محلي مثل Ollama، مع اعتماد الأداء على موارد الجهاز. يمكن أيضًا تشغيل المتصفح محليًا مع نموذج API، وعندها قد تغادر بيانات الصفحة الجهاز. سحابيًا: Cloud Browser يستضيف Chromium، بينما Hosted Agent يشغّل الوكيل أيضًا؛ كلاهما اختياري ومدفوع حسب الاستخدام.",
+      "alternatives": "للتدفقات الحتمية التي لا تحتاج استدلالًا، استخدم Playwright أو Puppeteer مباشرة. للواجهات الوكيلة يمكن مقارنة Stagehand. الاختيار يعتمد على الحاجة إلى قرارات نموذجية مقابل خطوات اختبار ثابتة."
     },
     "b37a6534812561ec2b": {
       "url": "https://github.com/Comfy-Org/ComfyUI",
@@ -8516,20 +8592,20 @@
     },
     "55c5e35b9bbd92d15c": {
       "url": "https://github.com/VectifyAI/PageIndex",
-      "titleAr": "PageIndex — استرجاع الوثائق بفهرس شجري بدل قاعدة متجهات",
-      "summaryAr": "مكتبة Python تولد فهرسًا هرميًا للأقسام ثم تستخدم استدلال نموذج لغة للانتقال إلى النص المناسب والإجابة بإحالات. وفق README، يدعم SDK فهرسة محلية لملفات PDF النصية وخدمة سحابية لملفات أكثر تعقيدًا.",
-      "whyItMatters": "تتيح مقارنة RAG شجري مع RAG متجهي على المحاضرات والتقارير الطويلة، مع التركيز على صحة الإحالات وتكلفة الاستدلال.",
-      "audience": "مطورو Python وRAG والطلاب والباحثون.",
-      "overview": "يفصل PageIndex بين بناء شجرة الوثيقة والبحث الاستدلالي داخلها. رخصة الشيفرة MIT. أرقام الدقة والكلفة الواردة في README قياسات الفريق لا نتائج اختبارات مستقلة.",
-      "requirements": "Python وpip وPDF نصي ومفتاح API لمزود نموذج للوضع المحلي؛ قد تنشأ رسوم توكنات. الوضع السحابي يحتاج مفتاح PageIndex Cloud وقد تكون له رسوم معالجة وتخزين، ويدعم وفق التوثيق OCR والوثائق المصورة.",
-      "quickStart": "أنشئ بيئة Python ونفّذ pip install -U pageindex، واضبط مفتاح مزود النموذج في متغير بيئة، ثم أنشئ PageIndexClient(index=...,chat=...) واستخدم submit_document('report.pdf') وclient.chat(question,doc_id=...). راجع أمثلة README.",
+      "titleAr": "PageIndex — فهرسة شجرية للوثائق واسترجاع استدلالي دون قاعدة متجهات",
+      "summaryAr": "يوفر PageIndex SDK Python مفتوح المصدر يبني فهرسًا شجريًا للوثيقة ثم يستخدم نموذجًا لغويًا للبحث داخله بدل الاعتماد على تشابه المتجهات. يتوفر وضع محلي للـPDF ذي طبقة نصية ووضع سحابي يضيف OCR وفهم الصور والتخزين المدار. الأسعار تختلف بين الفهرسة العادية وFlash، وتُحاسب النماذج بشكل منفصل.",
+      "whyItMatters": "قد يفيد الاسترجاع الشجري في التقارير الطويلة التي تعتمد الإجابة فيها على بنية الأقسام والعلاقات بين الصفحات. لكنه نهج بديل يجب مقارنته على مجموعة أسئلة حقيقية مع RAG المتجهي، لا افتراض أنه أفضل لكل نوع مستند.",
+      "audience": "مهندسو RAG والوكلاء وفرق تحليل الوثائق المالية والقانونية والأكاديمية.",
+      "overview": "مكتبة Python بترخيص MIT تبني شجرة فهرسة للوثيقة وتتيح للـLLM التنقل في بنية الشجرة للوصول إلى الصفحات ذات الصلة. الوضع المحلي يخزن الفهرس على الجهاز ويعالج طبقة النص في PDF؛ أما PageIndex Cloud فيدير الفهرسة والتخزين ويضيف OCR وفهم الصور. لا يحتاج النهج إلى قاعدة متجهات، لكنه يعتمد على نموذج لغوي في بناء الفهرس والاسترجاع.",
+      "requirements": "Python >=3.10 حسب pyproject.toml، وpip وملف PDF. الوضع المحلي يحتاج مفتاح مزود نموذج للفهرسة والإجابة، ولا يحتاج PAGEINDEX_API_KEY. الوضع السحابي يحتاج PAGEINDEX_API_KEY للفهرسة والتخزين ومفتاح مزود LLM للمحادثة؛ ويوفر OCR وفهم الصور. لا يلزم vector database.",
+      "quickStart": "أنشئ بيئة Python ثم pip install -U pageindex. في الوضع المحلي اضبط مفتاح مزود LLM وأنشئ PageIndexClient(index=\"your-index-model\", chat=\"your-chat-model\")، ثم submit_document(\"report.pdf\", wait=True) واسأل عبر client.chat(question, doc_id=doc_id). في Cloud اضبط PAGEINDEX_API_KEY واستخدم index=\"cloud\"؛ ما يزال chat على نموذجك ومفتاح مزودك. لم أجرّب استدعاءً فعليًا.",
       "nextSteps": [
-        "اختبر PDF نصيًا غير حساس.",
-        "تحقق يدويًا من إجابات 30 سؤالًا وإحالاتها.",
-        "قارن الزمن وتكلفة API مع RAG متجهي."
+        "ابدأ بملف PDF نصي صغير وقارن الإجابات مع صفحات المصدر يدويًا.",
+        "قارن PageIndex مع RAG متجهي على الأسئلة نفسها واحتسب التكلفة والزمن.",
+        "استخدم الوضع السحابي فقط إذا احتجت OCR أو فهم الصور وبعد مراجعة سياسة التخزين والتكلفة."
       ],
-      "limitations": "لم أشغّل المشروع؛ التشغيل المحلي قد يستدعي API سحابيًا ولا يعني العمل دون شبكة. البدائل تشمل Haystack وLlamaIndex والاسترجاع الهجين.",
-      "reviewedAt": "2026-10-26T05:45:27+03:00",
+      "limitations": "الوضع المحلي يعتمد على طبقة النص في PDF؛ الملفات الممسوحة والصور تحتاج الوضع السحابي. تقديرات الكلفة والمقارنات المنشورة من المشروع وعلى إعدادات محددة، ولا تثبت تفوقًا عامًا. قد ترتفع تكلفة الاستدلال مع كثرة التنقل في الشجرة.",
+      "reviewedAt": "2026-11-07T23:38:28+03:00",
       "basis": "readme",
       "sources": [
         {
@@ -8541,8 +8617,28 @@
           "url": "https://docs.pageindex.ai"
         },
         {
-          "title": "PageIndex MIT license",
+          "title": "PageIndex LICENSE",
           "url": "https://github.com/VectifyAI/PageIndex/blob/main/LICENSE"
+        },
+        {
+          "title": "PageIndex README",
+          "url": "https://github.com/VectifyAI/PageIndex/blob/main/README.md"
+        },
+        {
+          "title": "PageIndex Getting Started",
+          "url": "https://docs.pageindex.ai/getting-started"
+        },
+        {
+          "title": "PageIndex Client",
+          "url": "https://docs.pageindex.ai/sdk/client"
+        },
+        {
+          "title": "PageIndex Pricing",
+          "url": "https://docs.pageindex.ai/pricing"
+        },
+        {
+          "title": "PageIndex pyproject",
+          "url": "https://github.com/VectifyAI/PageIndex/blob/main/pyproject.toml"
         }
       ],
       "improvements": [
@@ -8595,6 +8691,96 @@
               "url": "https://docs.pageindex.ai"
             }
           ]
+        },
+        {
+          "title": "Benchmark عربي لاسترجاع PDF طويل",
+          "problem": "لا يوضح تقييم عام ما إذا كان الاسترجاع الشجري يحافظ على إحالات صحيحة في العربية وRTL.",
+          "approach": "إنشاء مجموعة PDF عربية مرخصة بأسئلة مرجعية ومقارنة PageIndex مع RAG متجهي.",
+          "stack": "Python, PageIndex, pytest, Arabic PDF corpus",
+          "steps": [
+            "اجمع ملفات عربية مرخصة.",
+            "أنشئ أسئلة مرجعية وصفحات داعمة.",
+            "شغّل PageIndex على ملفات نصية.",
+            "شغّل baseline متجهي على البيانات نفسها.",
+            "قِس دقة الصفحة والتكلفة والزمن."
+          ],
+          "metric": "Recall@k ودقة إحالة الصفحة وتكلفة السؤال.",
+          "difficulty": "مرتفعة تقديرًا",
+          "risks": "جودة OCR والخطوط وتنوع الوثائق قد تحيز النتائج.",
+          "sources": [
+            {
+              "title": "PageIndex README",
+              "url": "https://github.com/VectifyAI/PageIndex/blob/main/README.md"
+            },
+            {
+              "title": "PageIndex Getting Started",
+              "url": "https://docs.pageindex.ai/getting-started"
+            },
+            {
+              "title": "PageIndex Client",
+              "url": "https://docs.pageindex.ai/sdk/client"
+            }
+          ]
+        },
+        {
+          "title": "إدارة إصدارات أشجار الوثائق",
+          "problem": "تحديث ملف طويل قد يترك إحالات قديمة أو يفرض إعادة فهرسة كاملة.",
+          "approach": "حفظ بصمة لكل قسم وربط التغييرات بالعقد التي تحتاج تحديثًا.",
+          "stack": "Python, PageIndex, hashes, SQLite",
+          "steps": [
+            "قسّم المستند إلى وحدات مستقرة.",
+            "احفظ إصدار الشجرة ومصدر المستند.",
+            "قارن الإصدار الجديد بالعقد السابقة.",
+            "أعد بناء العقد المتغيرة إن دعم API ذلك.",
+            "اختبر أن الإجابات تشير إلى الإصدار الصحيح."
+          ],
+          "metric": "نسبة العقد المعاد بناؤها وزمن التحديث.",
+          "difficulty": "متوسطة إلى مرتفعة تقديرًا",
+          "risks": "قد تتغير بنية الفهرسة داخليًا؛ يلزم اختبار قبل إعادة الاستخدام.",
+          "sources": [
+            {
+              "title": "PageIndex README",
+              "url": "https://github.com/VectifyAI/PageIndex/blob/main/README.md"
+            },
+            {
+              "title": "PageIndex Getting Started",
+              "url": "https://docs.pageindex.ai/getting-started"
+            },
+            {
+              "title": "PageIndex Client",
+              "url": "https://docs.pageindex.ai/sdk/client"
+            }
+          ]
+        },
+        {
+          "title": "قياس جودة الإحالات لكل صفحة",
+          "problem": "قد تشير الإجابة إلى صفحة غير داعمة.",
+          "approach": "طبقة تقييم تربط كل ادعاء بصفحة ومقطع داعم قبل عرضه.",
+          "stack": "Python, PageIndex, citation evaluator",
+          "steps": [
+            "أنشئ إجابات مرجعية وصفحات محددة.",
+            "استخرج إحالات كل إجابة.",
+            "راجع عينة عمياء بشريًا.",
+            "صنّف الإحالات صحيحة أو جزئية أو غير داعمة.",
+            "أوقف الادعاءات التي لا تملك سندًا."
+          ],
+          "metric": "Citation precision ونسبة الادعاءات المدعومة.",
+          "difficulty": "متوسطة إلى مرتفعة تقديرًا",
+          "risks": "قد يخلط التقييم الآلي بين التشابه والدليل المباشر.",
+          "sources": [
+            {
+              "title": "PageIndex README",
+              "url": "https://github.com/VectifyAI/PageIndex/blob/main/README.md"
+            },
+            {
+              "title": "PageIndex Getting Started",
+              "url": "https://docs.pageindex.ai/getting-started"
+            },
+            {
+              "title": "PageIndex Client",
+              "url": "https://docs.pageindex.ai/sdk/client"
+            }
+          ]
         }
       ],
       "spinoffs": [
@@ -8645,6 +8831,96 @@
             {
               "title": "PageIndex documentation",
               "url": "https://docs.pageindex.ai"
+            }
+          ]
+        },
+        {
+          "title": "مساعد محاضرات بإحالات الصفحات",
+          "problem": "يصعب الرجوع إلى موضع المعلومة في محاضرات طويلة.",
+          "approach": "تطبيق يفهرس PDF ويعرض الإجابة مع الصفحة والعنوان والاقتباس.",
+          "stack": "Python, PageIndex SDK, FastAPI",
+          "steps": [
+            "اختر محاضرات مرخصة.",
+            "ابن فهرسًا محليًا لكل ملف.",
+            "أضف واجهة تعرض الصفحات الداعمة.",
+            "اختبر أسئلة لا توجد إجاباتها في الملف.",
+            "أضف فتح الصفحة الأصلية."
+          ],
+          "metric": "دقة الإحالة وزمن العثور على المصدر.",
+          "difficulty": "متوسطة تقديرًا",
+          "risks": "المحاضرات المصورة تحتاج OCR.",
+          "sources": [
+            {
+              "title": "PageIndex README",
+              "url": "https://github.com/VectifyAI/PageIndex/blob/main/README.md"
+            },
+            {
+              "title": "PageIndex Getting Started",
+              "url": "https://docs.pageindex.ai/getting-started"
+            },
+            {
+              "title": "PageIndex Client",
+              "url": "https://docs.pageindex.ai/sdk/client"
+            }
+          ]
+        },
+        {
+          "title": "مقارن اللوائح والسياسات بين الإصدارات",
+          "problem": "يصعب تتبع تغييرات اللوائح الطويلة.",
+          "approach": "فهرسة كل إصدار كشجرة ثم مقارنة العقد ذات الصلة.",
+          "stack": "Python, PageIndex, diff engine",
+          "steps": [
+            "احفظ نسختين مع تاريخ وإصدار.",
+            "أنشئ فهرسًا لكل نسخة.",
+            "ابحث عن الأقسام ذات الصلة.",
+            "قارن النصوص والصفحات دون استنتاج قانوني آلي.",
+            "اعرض الفروق لمراجع بشري."
+          ],
+          "metric": "دقة تحديد مواضع التغيير.",
+          "difficulty": "متوسطة إلى مرتفعة تقديرًا",
+          "risks": "اختلاف الترقيم قد ينتج فروقًا شكلية؛ ليس استشارة قانونية.",
+          "sources": [
+            {
+              "title": "PageIndex README",
+              "url": "https://github.com/VectifyAI/PageIndex/blob/main/README.md"
+            },
+            {
+              "title": "PageIndex Getting Started",
+              "url": "https://docs.pageindex.ai/getting-started"
+            },
+            {
+              "title": "PageIndex Client",
+              "url": "https://docs.pageindex.ai/sdk/client"
+            }
+          ]
+        },
+        {
+          "title": "فهرس أبحاث علمية طويل المدى",
+          "problem": "تتوزع الإجابة العلمية بين أوراق طويلة وملاحق.",
+          "approach": "فهرسة الأوراق مع DOI والإصدار والصفحات وإرجاع أدلة قابلة للتتبع.",
+          "stack": "Python, PageIndex, Crossref metadata",
+          "steps": [
+            "اختر مجموعة أوراق مفتوحة الترخيص.",
+            "سجل DOI والإصدار وبيانات النشر.",
+            "ابن الفهرس مع حفظ الصفحات.",
+            "اختبر أسئلة تتطلب أكثر من ورقة.",
+            "اعرض المراجع وحدود التعميم."
+          ],
+          "metric": "دقة الإحالات وتغطية المراجع.",
+          "difficulty": "متوسطة إلى مرتفعة تقديرًا",
+          "risks": "اختلاف نسخ arXiv والنسخ المنشورة قد يسبب إحالات غير متطابقة.",
+          "sources": [
+            {
+              "title": "PageIndex README",
+              "url": "https://github.com/VectifyAI/PageIndex/blob/main/README.md"
+            },
+            {
+              "title": "PageIndex Getting Started",
+              "url": "https://docs.pageindex.ai/getting-started"
+            },
+            {
+              "title": "PageIndex Client",
+              "url": "https://docs.pageindex.ai/sdk/client"
             }
           ]
         }
@@ -10471,20 +10747,20 @@
     },
     "e622970364717202be": {
       "url": "https://github.com/HKUDS/DeepTutor",
-      "titleAr": "DeepTutor — منصة تعليم شخصية تربط المحتوى بالممارسة والمصادر",
-      "summaryAr": "مشروع مفتوح المصدر للتعلم بمساعدة الوكلاء، يجمع المحادثة والمصادر الدراسية ومسارات التعلم والاختبارات ومساحات العمل. توضح وثائقه إمكان تشغيل الواجهة عبر Docker أو تثبيت Python وNext.js، مع اختيار مزود نموذج مناسب.",
-      "whyItMatters": "تحليل تحريري: يتيح دراسة تجربة تعليمية عملية يمكن قياس فائدتها على ملفات مقرر حقيقي، مع ضرورة الفصل بين دقة الإجابة وجودة التفاعل وسلامة الإحالات.",
-      "audience": "الطلاب ومطورو أدوات التعليم الذكي والباحثون في تقييم التعلم.",
-      "overview": "يتيح DeepTutor مساحات محتوى ودروسًا وأنشطة تعلم ووكلاء مع خيارات بحث واسترجاع ومزودي نماذج. تشير ملاحظات إصدار 19 أكتوبر إلى تحسين مسارات التعلم والتعافي من المحادثات وتقييد الذاكرة. ترخيص الشيفرة Apache-2.0 كما يظهر في LICENSE؛ ترخيص النماذج والمحتوى الخارجي منفصل.",
-      "requirements": "للتجربة السريعة Docker ومساحة تخزين؛ وللتثبيت من المصدر Python 3.11–3.14 وNode.js 22 LTS وnpm حسب دليل الإعداد. يلزم اختيار مزود LLM، وقد تتطلب قواعد المعرفة مزود embeddings. يمكن ضبط endpoint محلي عند دعمه، بينما الخدمات السحابية قد تفرض تكلفة API. لا تفترض أن جميع الوظائف تعمل دون إنترنت.",
-      "quickStart": "اقرأ README ودليل AGENT_SETUP، ثم جرّب حاوية Docker الموثقة على 127.0.0.1:3782 مع volume دائم، أو ثبّت بيئة Python وواجهتها كما في الدليل. افتح Settings → Providers وحدد النموذج وبيانات اعتماده في مصدر آمن، ثم اختبر ملف محاضرة صغيرًا وتحقق من إحالاته. لم أشغّل أيًا من هذه الخطوات.",
+      "titleAr": "DeepTutor — منصة تعلم شخصية تربط الشرح بالمصادر والممارسة",
+      "summaryAr": "مشروع مفتوح المصدر يجمع مساحات التعلم وقواعد المعرفة والبحث والاسترجاع ومسارات الممارسة، مع واجهة ويب وCLI وتكاملات للوكلاء. يذكر README إصدار v1.7.2 بتاريخ 6 نوفمبر 2026، بينما يتيح التوثيق تشغيل النماذج محليًا أو عبر مزود سحابي.",
+      "whyItMatters": "يجمع DeepTutor دورة تعلم منظم بدل الاكتفاء بمحادثة عامة: مواد ومصادر وذاكرة ومسارات إتقان. فائدته تعتمد على ضبط مزود النموذج والتحقق من الإحالات؛ لا ينبغي اعتبار الشرح المولد بديلًا عن المصدر أو المعلم.",
+      "audience": "الطلاب والمعلمون والمتعلمون ذاتيًا ومطورو أدوات التعليم والوكلاء.",
+      "overview": "منصة تعلم شخصية مفتوحة المصدر بترخيص Apache-2.0. يذكر README إصدار v1.7.2، ويضم مساحة ويب وCLI وKnowledge Bases ومسارات تعلم وممارسة وتكاملات. يدعم مزودي نماذج مستضافة ومحلية مثل Ollama وLM Studio وllama.cpp وvLLM؛ وتبقى تراخيص النماذج والمحتوى الذي يضيفه المستخدم مستقلة عن ترخيص الشيفرة.",
+      "requirements": "Python 3.11–3.14؛ Node.js 20+ لمسار PyPI و22 LTS للتطوير من المصدر؛ Docker يوفر الحزمة الكاملة في حاوية واحدة. يلزم مزود LLM؛ المستضاف يحتاج عادة مفتاح API وتكلفة استخدام، والمحلي يحتاج موارد الجهاز. Embeddings اختيارية إلا عند استخدام Knowledge Bases. RAM والتخزين يعتمدان على النماذج والملفات.",
+      "quickStart": "أنشئ مجلد تشغيل مستقلًا، ثم python -m pip install \"deeptutor[full]\"، وبعدها deeptutor init ثم deeptutor start وافتح http://127.0.0.1:3782. في Docker يوصي الدليل بربط المنفذ محليًا 127.0.0.1:3782 مع volume دائم لمجلد /app/data؛ لا حاجة لنشر منفذ backend 8001 للواجهة. اضبط مزود النموذج من Settings → Models & services. لم أشغّل هذه الخطوات.",
       "nextSteps": [
-        "اختر درسًا قصيرًا له إجابات مرجعية وصفحات محددة.",
-        "اضبط المزود وحدود التكلفة وبيئة التشغيل.",
-        "قارن جودة الإحالات والفهم مع المادة الأصلية قبل الاعتماد الدراسي."
+        "ابدأ بمقرر واحد وملف مصدر قصير، ثم تحقق يدويًا من كل إحالة إلى الصفحة أو الفقرة الأصلية.",
+        "جرّب مزودًا محليًا قبل استخدام API سحابي، واحسب تكلفة النموذج والـembeddings إن لزمت.",
+        "احتفظ بمجلد data وملفات مساحة العمل في تخزين خاص، واختبر النسخ الاحتياطي قبل الترقية."
       ],
-      "limitations": "لم أشغّل المشروع ولم أختبر دقة الشرح أو استهلاك الموارد. تعدد المزودين لا يضمن جودة اللغة العربية أو مجانية الاستدلال. بعض الوظائف تحتاج خدمات إضافية وحقوقًا لاستخدام المواد المرفوعة.",
-      "reviewedAt": "2026-10-26T20:42:41+03:00",
+      "limitations": "المشروع سريع التطور. صفحة تثبيت PyPI في التوثيق ما تزال تعرض أمثلة مثبتة على 1.7.0 بينما README يذكر v1.7.2؛ لذلك استخدمت أمر تثبيت غير مثبت الإصدار. بعض ميزات سطح المكتب Preview. جودة الشرح تعتمد على النموذج والمصادر، ولم تُنفذ اختبارات أو تثبيت فعلي.",
+      "reviewedAt": "2026-11-07T23:38:28+03:00",
       "basis": "readme",
       "sources": [
         {
@@ -10496,8 +10772,24 @@
           "url": "https://github.com/HKUDS/DeepTutor/blob/main/docs-for-user/AGENT_SETUP.md"
         },
         {
-          "title": "DeepTutor Apache-2.0 license",
+          "title": "DeepTutor LICENSE",
           "url": "https://github.com/HKUDS/DeepTutor/blob/main/LICENSE"
+        },
+        {
+          "title": "DeepTutor Get Started",
+          "url": "https://docs.deeptutor.info/get-started/"
+        },
+        {
+          "title": "DeepTutor PyPI",
+          "url": "https://docs.deeptutor.info/get-started/pypi/"
+        },
+        {
+          "title": "DeepTutor Docker",
+          "url": "https://docs.deeptutor.info/get-started/docker/"
+        },
+        {
+          "title": "DeepTutor Providers",
+          "url": "https://docs.deeptutor.info/get-started/providers/"
         }
       ],
       "improvements": [
@@ -10573,6 +10865,92 @@
             {
               "title": "DeepTutor agent setup",
               "url": "https://github.com/HKUDS/DeepTutor/blob/main/docs-for-user/AGENT_SETUP.md"
+            }
+          ]
+        },
+        {
+          "title": "اختبار إحالات الشرح العربي إلى صفحات المصدر",
+          "problem": "قد تبدو الإجابة صحيحة لغويًا بينما تشير إلى صفحة لا تدعمها.",
+          "approach": "بناء مجموعة أسئلة عربية مرتبطة بمواضع مرجعية وقياس صحة كل إحالة.",
+          "stack": "Python, pytest, DeepTutor, PDF fixtures, JSONL",
+          "steps": [
+            "اختر محاضرات مرخصة ومحدودة.",
+            "أنشئ أسئلة مرجعية مع الصفحة والفقرة الداعمتين.",
+            "اجمع إجابات الوكيل وإحالاتها.",
+            "قارن الإحالات بالمواضع المرجعية.",
+            "أصدر تقريرًا يفرق بين خطأ الاسترجاع والتوليد."
+          ],
+          "metric": "دقة الإحالة ونسبة الادعاءات المدعومة.",
+          "difficulty": "متوسطة إلى مرتفعة تقديرًا",
+          "risks": "قد تفشل ملفات PDF المصورة أو تختلف صفحات الطبعات.",
+          "sources": [
+            {
+              "title": "DeepTutor README",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/README.md"
+            },
+            {
+              "title": "DeepTutor Get Started",
+              "url": "https://docs.deeptutor.info/get-started/"
+            },
+            {
+              "title": "DeepTutor PyPI",
+              "url": "https://docs.deeptutor.info/get-started/pypi/"
+            }
+          ]
+        },
+        {
+          "title": "خريطة تغطية أهداف المقرر",
+          "problem": "يصعب معرفة ما إذا كانت الشروحات والتمارين تغطي نواتج التعلم.",
+          "approach": "ربط كل هدف بمصدر ونشاط وسؤال تحقق وإظهار الفجوات.",
+          "stack": "Python, JSON Schema, DeepTutor, SQLite",
+          "steps": [
+            "استخرج نواتج التعلم من توصيف مقرر مرخص.",
+            "حوّل كل ناتج إلى معرف ثابت.",
+            "اربط المقاطع والأنشطة والأسئلة بكل ناتج.",
+            "احسب الأهداف التي لا تملك مصدرًا أو تمرينًا.",
+            "راجع الخريطة مع مدرس."
+          ],
+          "metric": "نسبة الأهداف التي لها مصدر ونشاط وسؤال.",
+          "difficulty": "متوسطة تقديرًا",
+          "risks": "قد ينتج الربط الآلي تغطية وهمية؛ يلزم اعتماد بشري.",
+          "sources": [
+            {
+              "title": "DeepTutor README",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/README.md"
+            },
+            {
+              "title": "DeepTutor Get Started",
+              "url": "https://docs.deeptutor.info/get-started/"
+            }
+          ]
+        },
+        {
+          "title": "تصدير تقدم التعلم بصيغة مفتوحة",
+          "problem": "قد يصبح سجل التقدم مرتبطًا بإصدار واحد.",
+          "approach": "إضافة تصدير واستيراد للتقدم والملاحظات ومراجع المصادر بمخطط قابل للإصدار.",
+          "stack": "Python, JSON, SQLite, schema tests",
+          "steps": [
+            "حدد البيانات القابلة للتصدير.",
+            "ضع مخطط JSON بإصدار ومعرفات مستقرة.",
+            "أضف تصديرًا لا يتضمن مفاتيح API.",
+            "اختبر الاستيراد في نسخة نظيفة.",
+            "وثّق النسخ الاحتياطي والحذف والترقية."
+          ],
+          "metric": "نسبة السجلات المنقولة دون فقد أو تسريب.",
+          "difficulty": "متوسطة تقديرًا",
+          "risks": "تسرب بيانات شخصية أو عدم توافق المخطط.",
+          "sources": [
+            {
+              "title": "DeepTutor README",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/README.md"
+            },
+            {
+              "title": "DeepTutor Get Started",
+              "url": "https://docs.deeptutor.info/get-started/"
+            },
+            {
+              "title": "DeepTutor PyPI",
+              "url": "https://docs.deeptutor.info/get-started/pypi/"
             }
           ]
         }
@@ -10652,8 +11030,95 @@
               "url": "https://github.com/HKUDS/DeepTutor/blob/main/docs-for-user/AGENT_SETUP.md"
             }
           ]
+        },
+        {
+          "title": "مساعد مقرر محلي من ملفات المحاضرات",
+          "problem": "يحتاج الطالب شرحًا مرتبطًا بملف المقرر.",
+          "approach": "مساحة تستورد ملفات محاضرات محلية وتعرض شرحًا مع الصفحة والاقتباس.",
+          "stack": "Python, DeepTutor SDK, local LLM, PDF parser",
+          "steps": [
+            "اختر ملفًا يملك المستخدم حق استخدامه.",
+            "أنشئ مساحة مستقلة ومجلد بيانات محليًا.",
+            "اضبط مزودًا محليًا عند توفر الموارد.",
+            "اختبر أسئلة لها إجابات واضحة في الملف.",
+            "أظهر الصفحة وامتنع عند غياب الدليل."
+          ],
+          "metric": "نسبة الإجابات ذات الصفحة الصحيحة.",
+          "difficulty": "متوسطة تقديرًا",
+          "risks": "قد يفشل استخراج النص العربي من ملفات مصورة.",
+          "sources": [
+            {
+              "title": "DeepTutor README",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/README.md"
+            },
+            {
+              "title": "DeepTutor Get Started",
+              "url": "https://docs.deeptutor.info/get-started/"
+            },
+            {
+              "title": "DeepTutor PyPI",
+              "url": "https://docs.deeptutor.info/get-started/pypi/"
+            }
+          ]
+        },
+        {
+          "title": "مختبر تمارين Python مع اختبارات قابلة لإعادة التشغيل",
+          "problem": "قد يشرح المساعد الحل دون التحقق من فهم المتعلم.",
+          "approach": "تمارين تشغّل الشيفرة في بيئة معزولة وتعرض تلميحات بعد المحاولة.",
+          "stack": "Python, pytest, isolated runner, DeepTutor",
+          "steps": [
+            "اكتب تمارين أصلية أو مرخصة.",
+            "حدد اختبارات وحدود وقت وذاكرة.",
+            "شغّل الشيفرة في بيئة معزولة.",
+            "اعرض تلميحًا بعد فشل قابل للتفسير.",
+            "احفظ التقدم دون أسرار."
+          ],
+          "metric": "نسبة اجتياز الاختبارات بعد التلميحات.",
+          "difficulty": "مرتفعة تقديرًا",
+          "risks": "تشغيل شيفرة غير موثوقة يتطلب عزلًا قويًا.",
+          "sources": [
+            {
+              "title": "DeepTutor README",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/README.md"
+            },
+            {
+              "title": "DeepTutor Get Started",
+              "url": "https://docs.deeptutor.info/get-started/"
+            }
+          ]
+        },
+        {
+          "title": "مسار مراجعة متباعد من الأخطاء السابقة",
+          "problem": "تتكرر أخطاء الطالب دون خطة مراجعة.",
+          "approach": "تحويل الأخطاء إلى بطاقات مرتبطة بهدف المقرر والمصدر.",
+          "stack": "Python, SQLite, spaced repetition",
+          "steps": [
+            "سجل المفهوم الذي أخفق فيه المتعلم.",
+            "حوّل الخطأ إلى سؤال قصير.",
+            "حدد موعد المراجعة حسب الأداء.",
+            "أعد الاختبار بمثال جديد.",
+            "اعرض التقدم مع تعديل الجدول."
+          ],
+          "metric": "انخفاض تكرار الخطأ بعد أسبوعين.",
+          "difficulty": "متوسطة تقديرًا",
+          "risks": "قد يبالغ النظام في تقدير الإتقان.",
+          "sources": [
+            {
+              "title": "DeepTutor README",
+              "url": "https://github.com/HKUDS/DeepTutor/blob/main/README.md"
+            },
+            {
+              "title": "DeepTutor Get Started",
+              "url": "https://docs.deeptutor.info/get-started/"
+            },
+            {
+              "title": "DeepTutor PyPI",
+              "url": "https://docs.deeptutor.info/get-started/pypi/"
+            }
+          ]
         }
-      ]
+      ],
+      "religious": []
     },
     "f74d5b6b78b8a1a444": {
       "url": "https://github.com/DeusData/codebase-memory-mcp",
@@ -23505,7 +23970,7 @@
     },
     "6d3bd03b499863301f": {
       "url": "https://github.com/calesthio/OpenMontage",
-      "reviewedAt": "2026-10-30T20:44:18+03:00",
+      "reviewedAt": "2026-11-08T15:10:18+03:00",
       "titleAr": "OpenMontage: نظام إنتاج فيديو مفتوح المصدر ينسق البحث والسيناريو والأصول والمونتاج",
       "summaryAr": "ينسق OpenMontage البحث والسيناريو وتخطيط المشاهد وتوليد الأصول والصوت والترجمة ثم تركيب الفيديو باستخدام أدوات مثل Remotion وFFmpeg، مع لوحة محلية Backlot. المستودع مرخص AGPL-3.0.",
       "whyItMatters": "قد يختصر تنسيق أدوات الفيديو في مسار قابل للمراجعة، لكنه ليس مجانيًا بالكامل؛ التكلفة والجودة تعتمدان على مزودي النماذج والمفاتيح والعتاد والتراخيص.",
@@ -23513,8 +23978,8 @@
       "overview": "نظام إنتاج فيديو موجّه بالوكيل ينسق البحث والسرد والمشاهد والأصول والصوت والترجمة والتركيب النهائي. الأمثلة والنتائج في README من ناشر المشروع ولم تُعاد تجربتها هنا.",
       "requirements": "يتطلب Python 3.10+ وNode.js 18+ وFFmpeg ومكتبات requirements.txt وتثبيت npm في remotion-composer. بعض المسارات تحتاج مفاتيح API برسوم متغيرة؛ البدائل المحلية قد تحتاج GPU. الترخيص AGPL-3.0، ويجب مراجعة التزامات النسخة المعدلة عند تشغيلها كخدمة شبكية وتراخيص الأصول والمخرجات.",
       "quickStart": "على جهاز تجريبي: `git clone https://github.com/calesthio/OpenMontage.git` ثم `cd OpenMontage` و`make setup`. انسخ `.env.example` إلى `.env` وأضف مفتاح المزود المطلوب فقط. يذكر README محاكاة محلية عبر `python scripts/backlot_simulate_run.py` ثم فتح اللوحة بـ`python -m backlot open`. لم تُنفذ الأوامر هنا.",
-      "limitations": "لم يُشغّل المشروع ولم تُختبر جودة الفيديو أو التكلفة. توفر مفتاح API لا يضمن رصيدًا أو حق استخدام كل نموذج؛ راجع AGPL-3.0 وتراخيص الأصول قبل الاستخدام التجاري.",
-      "basis": "readme",
+      "limitations": "في هذه المراجعة أعاد GitHub API لمسار calesthio/OpenMontage حالة Moved Permanently، وتعذر جلب README من المسار القديم. لذلك هذه البطاقة metadata-only ولا تؤكد أن هذا المعرف يطابق بطاقة OpenMontageInc ذات المعرف المختلف؛ يجب إبقاء ID وURL الأصليين منفصلين حتى يمكن التحقق من وجهة التحويل والمحتوى. لم يُشغّل المشروع.",
+      "basis": "metadata",
       "sources": [
         {
           "title": "OpenMontage README",
@@ -23551,6 +24016,10 @@
         {
           "title": "Blender official site",
           "url": "https://www.blender.org/"
+        },
+        {
+          "title": "GitHub API — repository metadata response for calesthio/OpenMontage",
+          "url": "https://api.github.com/repos/calesthio/OpenMontage"
         }
       ],
       "localVsCloud": "التنسيق واللوحة يمكن أن يكونا محليين؛ توليد الصور والفيديو والصوت غالبًا عبر APIs سحابية. بعض النماذج المحلية تحتاج GPU.",
@@ -29377,7 +29846,7 @@
         "قارن إجابات النموذج بمصادر المستندات وقِس الاسترجاع قبل اعتبار العرض ناجحًا.",
         "احتفظ بقائمة منفصلة للاعتماديات والخدمات السحابية المطلوبة لكل مجلد."
       ],
-      "reviewedAt": "2026-10-30T20:44:18+03:00",
+      "reviewedAt": "2026-11-07T11:41:14+03:00",
       "basis": "readme",
       "sources": [
         {
@@ -29618,7 +30087,26 @@
         }
       ],
       "testStatus": "not_run",
-      "siteVisibility": "in feed; exact feed ID retained"
+      "siteVisibility": "in feed; exact feed ID retained",
+      "metrics": {
+        "stars": 41347,
+        "forks": 6604,
+        "openIssues": 136,
+        "measuredAt": "2026-11-07T08:44:00Z",
+        "source": "https://api.github.com/repos/patchy631/ai-engineering-hub"
+      },
+      "activity": {
+        "archived": false,
+        "defaultBranch": "main",
+        "lastPushedAt": "2026-11-01T04:39:16Z",
+        "lastUpdatedAt": "2026-11-07T08:40:28Z",
+        "measuredAt": "2026-11-07T08:44:00Z"
+      },
+      "license": {
+        "spdx": "MIT",
+        "status": "GitHub API reports MIT; root LICENSE linked in dossier",
+        "source": "https://github.com/patchy631/ai-engineering-hub/blob/main/LICENSE"
+      }
     },
     "9c79addb856a9fb17d": {
       "url": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
@@ -37213,6 +37701,1482 @@
         {
           "title": "arXiv — Embedding-Space Fingerprinting of LoRA Fine-Tunes abstract",
           "url": "https://arxiv.org/abs/2611.07610"
+        }
+      ]
+    },
+    "a8fc5de6487f58f91f": {
+      "url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
+      "titleAr": "Meta تضيف Spaces لبناء تجارب مصغرة مخصصة داخل Muse",
+      "summaryAr": "أعلنت Meta في 6 نوفمبر عن Spaces داخل Muse: تجارب تفاعلية ينشئها المستخدم بوصف الفكرة، مثل لوحة تخطيط أو متعقب أو لعبة معلومات، ثم يعدلها ويضعها في الشريط الجانبي أو التبويبات ويحدد متى تظهر. وتقول الشركة إن ربط التطبيقات يسمح بتحديث المساحات في الخلفية. الإعلان الرسمي يذكر أن Spaces متاحة حيثما يتوفر Muse، بينما مشاركة المساحات مع الآخرين ما زالت ضمن خطط مستقبلية.",
+      "whyItMatters": "تقترب واجهات المساعدات من نمط تطبيقات صغيرة يصممها المستخدم باللغة الطبيعية، ما قد يقلل كلفة بناء أدوات شخصية بسيطة. في المقابل، تصبح صلاحيات ربط التطبيقات ومصدر البيانات وحدود ما تنشئه المنصة نقاطًا أساسية للتقييم.",
+      "audience": "مصممو المنتجات، ومطورو تطبيقات الذكاء الاصطناعي، والطلاب، وصناع الأدوات الشخصية.",
+      "nextSteps": [
+        "جرّب مساحة ببيانات غير حساسة لتقييم دقة ما ينشئه Muse.",
+        "تحقق من التطبيقات المتصلة والصلاحيات والبيانات التي تُحدّث في الخلفية.",
+        "اختبر إمكانية تعديل المساحة وحذفها وإيقاف تحديثها قبل الاعتماد عليها في عمل مهم."
+      ],
+      "limitations": "اعتمدت تفاصيل المنتج على إعلان Meta الرسمي بعد تعذر فتح صفحة TechCrunch المرتبطة في التغذية؛ لذلك لا أضيف تفاصيل مستقلة من تغطية TechCrunch. الإتاحة مرتبطة بتوفر Muse إقليميًا، ولم يذكر الإعلان موعدًا عامًا لمشاركة المساحات أو تقييمًا مستقلًا لجودتها.",
+      "reviewedAt": "2026-11-06T23:42:55+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Meta — Design the Muse App, Just for You",
+          "url": "https://about.fb.com/news/2026/11/introducing-spaces-customize-muse-app/"
+        }
+      ]
+    },
+    "926cba6ebd7a9faa59": {
+      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBWeTBvR2tVUWNoVjF5STFhS2FwSDM2RHY2dHdCVUE1VTA0LVBVaWU0UGU5V1RmOVpTT2JqcHdNa1N1Z2d6TzQw?oc=5",
+      "titleAr": "السعودية تنشر مبادئ إرشادية للاستخدام المسؤول للذكاء الاصطناعي في الإعلام",
+      "summaryAr": "تذكر مادة جريدة الرياض أن وثيقة «مبادئ الذكاء الاصطناعي في الإعلام» تقدم إطارًا وطنيًا إرشاديًا لصنّاع المحتوى والمؤثرين والإعلاميين. وتشمل المبادئ، بحسب المادة، الشفافية والإفصاح، ومصداقية المعلومات، وحماية الخصوصية، ومنع المحتوى المضلل، والمساءلة، والنزاهة وعدم التحيز، ورفع الوعي المجتمعي، وتقييم الأثر والامتثال. كما تشير إلى لقاء تدريبي نظمته سدايا بالتعاون مع الهيئة العامة لتنظيم الإعلام بمشاركة أكثر من 250 صانع محتوى.",
+      "whyItMatters": "تربط المبادئ استخدام أدوات التوليد بمسؤولية النشر والتحقق من المعلومات وحماية الجمهور والخصوصية وحقوق الملكية الفكرية. وهي ذات صلة مباشرة بالإعلاميين والطلاب وصنّاع المحتوى الذين يستخدمون أدوات الذكاء الاصطناعي في البحث والكتابة والصورة والصوت.",
+      "audience": "الإعلاميون وصنّاع المحتوى والمؤثرون والطلاب ومطورو أدوات المحتوى والجهات التنظيمية في السعودية.",
+      "nextSteps": [
+        "راجع الوثيقة الرسمية عند توفرها، وميّز بين المبادئ الإرشادية وأي التزام تنظيمي ملزم.",
+        "أفصح بوضوح عن استخدام التوليد أو التعديل الآلي عندما تؤثر طبيعة المحتوى في فهم الجمهور.",
+        "تحقق من الوقائع والمصادر، واحمِ البيانات الشخصية وحقوق الصور والنصوص قبل النشر."
+      ],
+      "limitations": "تعذر فتح صفحة الناشر وملف الوثيقة المشار إليه أثناء المراجعة؛ لذلك استند هذا الملخص إلى النص الموسع الظاهر في نتيجة جريدة الرياض، ولم أتحقق مباشرة من جميع صفحات الوثيقة. لا أصف المبادئ بأنها قانون أو لائحة ملزمة.",
+      "reviewedAt": "2026-11-07T02:47:03+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "جريدة الرياض — المملكة تعزّز الاستخدام الآمن والمسؤول للذكاء الاصطناعي في صناعة المحتوى الإعلامي",
+          "url": "https://www.alriyadh.com/2214014"
+        },
+        {
+          "title": "سدايا — مبادئ الذكاء الاصطناعي في الإعلام (PDF)",
+          "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/AIPrinciplesMediaAr.pdf"
+        }
+      ]
+    },
+    "b81ea0f95984f901c2": {
+      "url": "https://github.com/anomalyco/rune",
+      "titleAr": "Rune يقدّم إطار واجهات Rust أصليًا برسوم GPU مع اختبار دون واجهة مرئية",
+      "summaryAr": "يعرّف المستودع Rune بأنه إطار واجهات أصلي مكتوب بـRust ويستهدف macOS وWindows وLinux والويب، مع renderer وتخطيط ونصوص وحركات خاصة به. يذكر README أن التطبيقات يمكن تشغيلها بوضع headless لإنتاج PNG وعرض شجرة العناصر وقيادتها بإدخال مبرمج، وهي ميزة مناسبة لفحص واجهات تبنيها أدوات البرمجة. المشروع ما زال قبل الإصدار المستقر ويوصي بتثبيت نسخة محددة من فرع dev.",
+      "whyItMatters": "يجمع المشروع بين واجهات سطح المكتب والويب وبين قابلية فحص الواجهة آليًا، ما يفتح مجالًا لاختبارات بصرية تستطيع أدوات البرمجة تشغيلها ومراجعة نتائجها. لكن حالة ما قبل الإصدار تعني ضرورة تثبيت نسخة محددة وعدم افتراض استقرار الواجهات البرمجية.",
+      "audience": "مطورو Rust وواجهات سطح المكتب والويب، ومهندسو أدوات المطورين، والفرق التي تقيّم اختبار واجهات الوكلاء.",
+      "nextSteps": [
+        "ابدأ بمثال examples/hello واقرأ دليل crate الأساسي قبل بناء تطبيق كامل.",
+        "ثبّت commit محددًا من فرع dev وسجّل نسخة Rust المطلوبة بدل الاعتماد على أحدث تغيير متحرك.",
+        "جرّب إخراج PNG وشجرة العناصر في مشروع تجريبي، ثم قارن النتيجة مع بدائل أكثر استقرارًا."
+      ],
+      "limitations": "المستودع يصف Rune بأنه pre-release ولا يعلن إصدارًا مستقرًا؛ يتطلب Rust 1.99.1 بحسب rust-toolchain.toml، وقد تختلف متطلبات GPU وSDK حسب المنصة. تمت مراجعة README وملفات Cargo وLICENSE فقط، ولم يُبنَ المشروع أو يُختبر في هذه الدورة.",
+      "reviewedAt": "2026-11-07T08:42:53+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "Rune — official README",
+          "url": "https://github.com/anomalyco/rune/blob/dev/README.md"
+        },
+        {
+          "title": "Rune core crate README",
+          "url": "https://github.com/anomalyco/rune/blob/dev/crates/rune/README.md"
+        },
+        {
+          "title": "Rune Cargo workspace and toolchain",
+          "url": "https://github.com/anomalyco/rune/blob/dev/Cargo.toml"
+        },
+        {
+          "title": "Rune MIT License",
+          "url": "https://github.com/anomalyco/rune/blob/dev/LICENSE"
+        }
+      ]
+    },
+    "0b47ae94b8dc6c928b": {
+      "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
+      "titleAr": "Censys ترصد أكثر من 800 نشر مستقل مكشوف لأداة Artex الأمنية",
+      "summaryAr": "نقلت TechCrunch عن باحثي Censys رصد 1,465 مضيفًا يعرضون واجهة Artex حتى 4 نوفمبر 2026؛ وبعد استبعاد كتل استضافة متكررة قدّرت Censys نحو 815 نشرًا يبدو مستقلًا. وأكد التقرير أن بعض النسخ قد تكون لاختبارات مصرح بها، لكن واجهات كثيرة كانت متاحة من الإنترنت دون حاجة تشغيلية لذلك. تركز القصة على مخاطر كشف أدوات الأمن والملفات التشغيلية بسبب إعدادات وصول غير آمنة، لا على أن كل نسخة مستخدمة لهجوم.",
+      "whyItMatters": "توضح الحادثة أن أدوات الاختبار الأمني نفسها تحتاج إلى ضوابط وصول ومراقبة، وأن تعريض لوحة تحكم أو ملفات تشغيل للإنترنت قد يخلق خطرًا حتى عندما يكون الغرض الأصلي دفاعيًا. كما تبرز ضرورة التفريق بين عدد المضيفين وعدد المشغلين الفعليين.",
+      "audience": "فرق الأمن السيبراني ومسؤولو البنية التحتية السحابية ومطورو أدوات الاختبار الأمني والباحثون.",
+      "nextSteps": [
+        "راجع فقط الأنظمة التي تملكها أو تديرها للتأكد من عدم كشف لوحات أدوات الأمن للعامة.",
+        "طبّق المصادقة وتقييد الوصول الشبكي وإدارة الأسرار على أدوات الاختبار الداخلية.",
+        "تابع تقارير Censys وMicrosoft وCrowdStrike لفهم نطاق الحادثة دون إعادة نشر مؤشرات أو ملفات تشغيل حساسة."
+      ],
+      "limitations": "أرقام Censys مبنية على مسح الإنترنت حتى 4 نوفمبر، وتفصل بين 1,465 مضيفًا ونحو 815 نشرًا يبدو مستقلًا؛ ولا تعني أن كل مضيف يمثل مشغلًا أو نشاطًا ضارًا. ذكرت Censys أن مستودع Artex الأصلي أزيل وأن المطور أعلن وقف الإصدارات المفتوحة، لكن ذلك لا يثبت اختفاء النسخ المتداولة.",
+      "reviewedAt": "2026-11-07T08:42:53+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — Hundreds of Artex AI hacking tools found publicly exposed to the web",
+          "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/"
+        },
+        {
+          "title": "Censys — ARTEX: Agentic Asbestos",
+          "url": "https://censys.com/blog/artex-agentic-asbestos/"
+        }
+      ]
+    },
+    "5d6aaf835fa3bf32a6": {
+      "url": "https://arstechnica.com/tech-policy/2026/11/nvidia-ceo-jensen-huang-summoned-by-congress-over-chinese-espionage-concerns/",
+      "titleAr": "لجان في الكونغرس الأمريكي تطلب إحاطة مغلقة من رئيس Nvidia بشأن مخاوف أمنية",
+      "summaryAr": "ذكرت Ars Technica أن رؤساء ثلاث لجان في مجلس النواب طلبوا من Jensen Huang المشاركة في إحاطة مغلقة يوم 18 نوفمبر بشأن أسئلة عن علاقاته مع مسؤولة تنفيذية في شركة Megaspeed، بعد تقارير صحفية عن مخاوف تجسس. نفت Nvidia الادعاءات وقالت إن اجتماعات رئيسها التنفيذي مع العملاء اعتيادية وإن المعلومات التي تقدمها لعملائها ليست أسرارًا تجارية حساسة. النص المنشور يصف طلب إحاطة، لا مذكرة استدعاء قضائية أو subpoena.",
+      "whyItMatters": "توضح القصة تداخل أمن سلسلة توريد شرائح الذكاء الاصطناعي مع السياسة الخارجية والحوكمة المؤسسية. كما تبرز أهمية الفصل بين طلب إحاطة سياسي وبين نتيجة تحقيق أو إثبات علني لواقعة تجسس أو نقل تقنية.",
+      "audience": "متابعو صناعة أشباه الموصلات والذكاء الاصطناعي، وفرق الحوكمة والمخاطر، والمهتمون بسياسات التقنية.",
+      "nextSteps": [
+        "تابع ما إذا كانت Nvidia ستقبل الإحاطة أو تقترح موعدًا بديلًا، وما إذا كانت ستصدر معلومات إضافية.",
+        "ميّز بين التقارير الصحفية والادعاءات السياسية والنتائج التي تثبتها جهة تحقيق.",
+        "لا تستنتج حدوث نقل أسرار أو مخالفة تصدير من طلب الإحاطة وحده."
+      ],
+      "limitations": "الادعاءات المتعلقة بالتجسس وردت بوصفها تقارير ومخاوف ولم يقدم المقال حكمًا أو إثباتًا مستقلًا لها. Nvidia نفت المزاعم. ولفظ summoned في العنوان لا يعني أن ما حدث subpoena؛ النص يصف طلب مشاركة في إحاطة مغلقة.",
+      "reviewedAt": "2026-11-07T08:42:53+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Ars Technica — Nvidia CEO Jensen Huang summoned by Congress over Chinese espionage concerns",
+          "url": "https://arstechnica.com/tech-policy/2026/11/nvidia-ceo-jensen-huang-summoned-by-congress-over-chinese-espionage-concerns/"
+        }
+      ]
+    },
+    "a0a44ed09dc9a1089b": {
+      "url": "https://openai.com/index/partnering-with-hacktron",
+      "titleAr": "OpenAI تتعاون مع Hacktron لاختبار أمن أنظمتها وتكاملاتها الخارجية",
+      "summaryAr": "أعلنت OpenAI تعاونًا مع Hacktron لاختيار مناطق عالية الأولوية لاختبارها، مع تركيز على كيفية تفاعل أنظمة OpenAI مع خدمات الجهات الخارجية. وتقول الشركة إنها توسع وصول Hacktron إلى نماذجها المتقدمة عبر Daybreak Red، وأن التعاون يبني على برنامج مكافآت الثغرات ومشاركة باحثين مستقلين في مراجعة الأمن.",
+      "whyItMatters": "تزداد أهمية نقاط الربط بين الخدمات والهويات والتطبيقات كلما اتصلت بها الوكلاء، ويبرز التعاون دور المراجعة الأمنية المصرح بها والباحثين المستقلين في تقوية الأنظمة المتكاملة.",
+      "audience": "مهندسو الأمن السيبراني ومطورو الوكلاء وفرق المنصات والتكاملات ومهتمو أمن البرمجيات.",
+      "nextSteps": [
+        "راجع نطاق برنامج مكافآت الثغرات الرسمي قبل أي اختبار أمني، والتزم بالأنظمة والحسابات المصرح بها فقط.",
+        "عند بناء تكاملات وكيلة، راجع حدود الصلاحيات وتبادل الرموز والبيانات بين الخدمات.",
+        "تابع ما تنشره OpenAI لاحقًا عن نتائج الإصلاحات أو الدروس المستفادة دون افتراض نتائج لم تعلنها الشركة."
+      ],
+      "limitations": "هذا إعلان من OpenAI عن تعاون ونطاق عام، وليس تقرير تدقيق مستقلًا أو قائمة بالثغرات أو نتائج كمية. لم تنشر الشركة في الإعلان تفاصيل كل الأنظمة أو نتائج الاختبارات.",
+      "reviewedAt": "2026-11-07T08:42:53+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "OpenAI — Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+          "url": "https://openai.com/index/partnering-with-hacktron/"
+        }
+      ]
+    },
+    "82eb1f87d59afe3f62": {
+      "url": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxOSmIwQUpIaWRUUmExWWFjOFRIbDZQcDdmR2N4Y3VwOW43cXJ5SmdQcXVZSVJIZzBlTTdoQS0xZzhyNlpQdi1BZWxQUURKay1IM2NtZjFlVk00TVA5X0NyZFZlaGxuc1pOT2o2cTgyVEdLS2NSR25QZGVCTjljS1gtSjFUM0tlNkJJS2lXQ0w4emxRcXlhNTh4elFxNzcwcTRBc1JvMjBmazZvN1FEVmhfYXUtejRPRlVkRTJ0SWY1dHQwcFd6M3BoQmRzanZ0b0ViZnBvNjhfaFduNG00ZERPWTJmSnJFZkhOb3Vsa2RwTFJYaGx0Wkl4R3BjNXhOdjNDUkhralp5WnVPSlZ2ZHJkdS1rcWdpa0lWX294TEJoekdDLTNPQ2JENjJOUlNINmlqVHpZWmpPbGM5bzVrNksySQ?oc=5",
+      "titleAr": "إتمام صفقة أرامكو لامتلاك 49% من HUMAIN يعزز خطط البنية التحتية للذكاء الاصطناعي",
+      "summaryAr": "يتناول عنوان المادة المرتبطة عبر Google News أثر دخول أرامكو إلى HUMAIN. ولم أتمكن من فتح المقال الأصلي، لذلك يقتصر هذا الملخص على الوقائع المؤكدة في البيان الرسمي: أرامكو استحوذت عبر شركة تابعة على 49% من HUMAIN مع احتفاظ صندوق الاستثمارات العامة بنسبة 51%، وتساهم أرامكو بنحو 9.9 مليار ريال نقدًا خلال 2026 إضافة إلى أصول وقدرات ذكاء اصطناعي. ويذكر البيان خطة لتطوير قدرة مراكز بيانات تصل إلى 3 جيجاواط بحلول 2030.",
+      "whyItMatters": "تعزز الصفقة حضور البنية التحتية والنماذج والخدمات المرتبطة بالذكاء الاصطناعي في السعودية، وتجمع أصولًا وقدرات ضمن شركة واحدة. لكن الأثر الاقتصادي والتقني النهائي يعتمد على تنفيذ الاستثمارات والخطط المعلنة وليس على إتمام الصفقة وحده.",
+      "audience": "طلاب الذكاء الاصطناعي والمهندسون ومتابعو الاقتصاد الرقمي والبنية التحتية السحابية في السعودية.",
+      "nextSteps": [
+        "راجع البيان الرسمي لمعرفة نسب الملكية والمساهمات المالية والأصول المنقولة.",
+        "تابع تنفيذ خطط مراكز البيانات ومواعيد التشغيل الفعلية بدل اعتبار القدرة المستهدفة قائمة الآن.",
+        "افصل بين الوقائع المعلنة وبين التحليل الصحفي حول الأثر الاقتصادي المتوقع."
+      ],
+      "limitations": "النسب ومبلغ المساهمة والقدرة المستهدفة أرقام وتوقعات معلنة في البيان الرسمي لأرامكو وصندوق الاستثمارات العامة؛ لم أتحقق مستقلًا من اكتمال نقل الأصول أو تنفيذ استثمارات 2026 أو بلوغ 3 جيجاواط بحلول 2030.",
+      "reviewedAt": "2026-11-07T11:41:14+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Aramco — PIF and Aramco close HUMAIN transaction",
+          "url": "https://www.aramco.com/en/news-media/news/2026/pif-and-aramco-close-humain-transaction-to-accelerate-humains-global-growth"
+        }
+      ]
+    },
+    "92b8001eea640de464": {
+      "titleAr": "GitHub تدعو إلى هندسة الوكلاء عبر التخطيط والبناء والتحقق والمراقبة",
+      "summaryAr": "يعرض دليل GitHub دورة عمل للوكلاء بأربع مراحل: Plan وBuild وVerify وObserve. وتجادل الشركة بأن توليد الشيفرة أصبح جزءًا واحدًا من العمل، بينما تزداد أهمية معايير القبول وعزل المهام والاختبارات ومراجعة التغييرات ومراقبة ما بعد النشر. الأرقام والدراسات في المقال من سياقات محددة ويجب نسبتها إلى مصادرها.",
+      "whyItMatters": "زيادة سرعة كتابة الشيفرة لا تعني تلقائيًا تسليمًا أسرع أو أكثر موثوقية. القيمة العملية تنتقل إلى وضوح المطلوب والتحقق المستقل وتقليل حجم التغييرات ومراقبة النتائج بدل قياس النجاح بعدد الأسطر.",
+      "audience": "مطورو البرمجيات وقادة الفرق ومهندسو المنصات والطلاب الذين يستخدمون وكلاء البرمجة.",
+      "nextSteps": [
+        "اكتب معايير قبول قابلة للاختبار قبل تفويض المهمة.",
+        "قسّم العمل إلى تغييرات صغيرة مع بيئة معزولة واختبارات مستقلة.",
+        "راقب زمن المراجعة وإعادة العمل والأخطاء بعد الدمج، لا عدد commits وحده."
+      ],
+      "limitations": "المقال صادر عن GitHub، وهي جهة تقدم أدوات للوكلاء؛ لذلك فهو دليل مورّد وليس تقييمًا محايدًا شاملًا. مؤشرات الاستخدام والدراسة لا تعمم تلقائيًا على كل فريق.",
+      "reviewedAt": "2026-11-07T23:38:28+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "GitHub Blog — Beyond code generation",
+          "url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/"
+        }
+      ],
+      "url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/"
+    },
+    "7e28c0d8055c0e98ce": {
+      "titleAr": "FAA تبدأ تحديث أنظمة مراقبة الحركة الجوية القديمة وتستهدف استبدالها بحلول 2028",
+      "summaryAr": "قالت إدارة الطيران الفيدرالية الأمريكية إن نظام E-IDS سيحل محل أربعة أنظمة قديمة يعود بعضها إلى الثمانينيات، ضمن خطة تشمل أكثر من 400 منشأة، مع هدف معلن للوصول إلى 435 موقعًا بحلول نهاية 2028. وركز تقرير Ars Technica على استخدام الأقراص المرنة في أجزاء من البنية القديمة؛ لكن التحديث أوسع من وسيط التخزين وحده ولم يكتمل بعد.",
+      "whyItMatters": "المرافق الحرجة تحتاج تحديثًا تدريجيًا يحافظ على السلامة والتوافر أثناء الانتقال من أنظمة قديمة. نجاح التحديث يقاس بالاعتمادية والاختبارات لا بالمظهر الحديث.",
+      "audience": "مهندسو الأنظمة الحرجة ومتابعو الطيران والبنية الحكومية وفرق تحديث الأنظمة القديمة.",
+      "nextSteps": [
+        "تابع مراحل النشر الفعلية بدل التعامل مع هدف 2028 كإنجاز مكتمل.",
+        "راقب خطط التكرار الاحتياطي والتراجع الآمن أثناء الانتقال.",
+        "ابحث عن تقارير مستقلة عن الاعتمادية والتدريب بعد التشغيل."
+      ],
+      "limitations": "المواعيد والأعداد أهداف معلنة من FAA وليست نتائج نهائية. البيان الرسمي لا يقدم قياسًا مستقلًا للأداء بعد النشر، ولا يعني أن جميع مرافق الحركة الجوية تستخدم الأقراص المرنة بالطريقة نفسها.",
+      "reviewedAt": "2026-11-07T23:38:28+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "FAA — Retiring Decades Old Floppy Disks",
+          "url": "https://www.faa.gov/newsroom/trumps-transportation-secretary-sean-p-duffy-begins-retiring-decades-old-floppy-disks-air"
+        },
+        {
+          "title": "Ars Technica — FAA tech upgrade",
+          "url": "https://arstechnica.com/tech-policy/2026/11/faa-to-finally-ditch-floppy-disks-in-what-it-calls-historic-tech-upgrade/"
+        }
+      ],
+      "url": "https://arstechnica.com/tech-policy/2026/11/faa-to-finally-ditch-floppy-disks-in-what-it-calls-historic-tech-upgrade/"
+    },
+    "1e177f364267cd09f3": {
+      "titleAr": "ديوان المظالم يعرض تجربته في حوكمة الذكاء الاصطناعي خلال قمة لندن",
+      "summaryAr": "أفادت وكالة الأنباء السعودية بأن ديوان المظالم اختتم مشاركته في القمة العالمية لتنظيم الذكاء الاصطناعي في لندن، المنعقدة يومي 5 و6 نوفمبر 2026. وذكر البيان أن المشاركة تناولت استخدام الأنظمة الذكية لدعم العمل القضائي، مع الرقابة البشرية وحماية البيانات والامتثال للأمن السيبراني. ولم يذكر البيان أسماء أنظمة محددة أو نتائج أداء مقاسة.",
+      "whyItMatters": "إدخال الذكاء الاصطناعي في الخدمات القضائية والإدارية يتطلب حوكمة ومراجعة بشرية وحماية بيانات، لا مجرد أتمتة الإجراءات.",
+      "audience": "المهتمون بالذكاء الاصطناعي الحكومي والحوكمة الرقمية والأنظمة القضائية والإدارية في السعودية والمنطقة.",
+      "nextSteps": [
+        "تابع نشر تفاصيل الأطر والسياسات التي استندت إليها المشاركة.",
+        "ابحث عن مؤشرات منشورة تقيس أثر الأنظمة الذكية على جودة الخدمة ودقتها.",
+        "ميّز بين عرض تجربة مؤسسية وإثبات نجاح نظام بعينه في الإنتاج."
+      ],
+      "limitations": "المصدر بيان رسمي موجز؛ صفحة SPA أعادت 403 عند الفتح المباشر، لذلك اعتمدت على النص المفهرس ولم أتحقق من تفاصيل إضافية. لا يحدد البيان الأنظمة أو نتائج الأداء.",
+      "reviewedAt": "2026-11-07T23:38:28+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "وكالة الأنباء السعودية — ديوان المظالم والقمة العالمية لتنظيم الذكاء الاصطناعي",
+          "url": "https://www.spa.gov.sa/N2720219"
+        }
+      ],
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFBhbFZOeUxpNk5RUXRtNU1OOHl4N1dJU2VlS1VYWmNSc19ZUWdkN0xPMWxZdGxEM2hWcEJ1R2tRRGw?oc=5"
+    },
+    "d9d8ed120c50cfe24e": {
+      "titleAr": "تقرير: OpenAI جمعت 11 مليار دولار ضمن جولة تمويل لم تُغلق بعد",
+      "summaryAr": "نقلت TechCrunch عن Bloomberg، استنادًا إلى مصادر مطلعة، أن OpenAI جمعت حتى وقت التقرير نحو 11 مليار دولار ضمن جولة قُدّرت الشركة فيها بنحو 1.25 تريليون دولار، مع احتمال استمرار الجولة وجمع مبلغ أكبر. وذكر التقرير أن الشركة لم تقدم تعليقًا عند النشر؛ لذلك تبقى الأرقام رواية صحفية غير مؤكدة بإعلان رسمي.",
+      "whyItMatters": "حجم التمويل المبلغ عنه يوضح شدة احتياج شركات النماذج إلى رأس المال والحوسبة والطاقة. لكنه لا يثبت وحده قيمة اقتصادية مستدامة أو شروط الجولة، ولا ينبغي تحويل الخبر إلى توصية استثمارية.",
+      "audience": "متابعو صناعة الذكاء الاصطناعي ومحللو اقتصاد التقنية والمهتمون بتمويل النماذج.",
+      "nextSteps": [
+        "انتظر إعلانًا رسميًا أو مستندات تؤكد إغلاق الجولة وشروطها.",
+        "افصل بين المبلغ الذي قيل إنه جُمع والمبلغ المستهدف النهائي.",
+        "قارن التمويل بتكاليف الحوسبة والبنية التحتية والالتزامات التشغيلية المنشورة."
+      ],
+      "limitations": "الخبر يعتمد على مصادر مجهلة ونقل TechCrunch عن Bloomberg، ولم يكن هناك تأكيد من OpenAI عند النشر. قد تتغير الأرقام أو التقييم قبل إغلاق الجولة.",
+      "reviewedAt": "2026-11-07T23:38:28+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — OpenAI reportedly raises $11B",
+          "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/"
+        }
+      ],
+      "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/"
+    },
+    "eecad6fef1daea32ea": {
+      "titleAr": "METR تقدّر تسارع نمو درجات قدرات Anthropic بنحو 1.9× خلال عام",
+      "summaryAr": "في تقييم امتد من 12 أغسطس إلى 29 أكتوبر 2026، قدّرت METR أن درجات AECI لنماذج Anthropic نمت بمعدل يقارب 1.9× معدل ما قبل أكتوبر 2025، مع مجال ثقة 95% بين 1.5× و2.8×؛ وفسرت ذلك بأنه يقارب عامين من التقدم التاريخي خلال عام. وترجح METR أن استخدام الذكاء الاصطناعي ساهم في التسارع، لكنها تقول إن مساهمات البحث المستقل بالكامل ليست بعد المحرك الأكبر، وإن أدلة مهمة حُجبت.",
+      "whyItMatters": "إذا كانت أدوات الذكاء الاصطناعي تسرّع عمل فرق البحث والتطوير، فقد تتسارع دورات تطوير النماذج نفسها. لكن التقييم لا يثبت أن الأنظمة تطور نفسها باستقلال كامل؛ بل يشير أساسًا إلى مساعدة الباحثين مع عدم يقين كبير.",
+      "audience": "باحثو الذكاء الاصطناعي وفرق التقييم والسلامة وصناع السياسات ومتابعو تطور قدرات النماذج.",
+      "nextSteps": [
+        "اقرأ منهجية METR ومجال الثقة قبل تداول رقم 1.9× كحقيقة عامة.",
+        "افصل بين قياس درجات benchmark وتقارير الموظفين الذاتية والمساهمة المستقلة للوكلاء.",
+        "تابع تقييمات مستقلة لاحقة تقيس الأثر الواقعي وتوضح البيانات المحجوبة."
+      ],
+      "limitations": "تقييم واحد لشركة واحدة وعلى فترة تقارب 11 أسبوعًا. أقرت METR بأن Anthropic حجبت أغلبية الأدلة التي عدّتها الأكثر إفادة، وأن تقارير الإنتاجية الذاتية دليل ضعيف، وأن تسارع AECI قد لا يساوي تسارع الأثر الواقعي.",
+      "reviewedAt": "2026-11-07T23:38:28+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "METR — Independent Assessment of AI R&D Acceleration",
+          "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/"
+        },
+        {
+          "title": "The Verge — Anthropic/METR report",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development"
+        }
+      ],
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development"
+    },
+    "5cdf273169f3ed7a2c": {
+      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5ib2EyVHRsVno3ZXNqRTNZcmJWNXZKZFVJa3R3cjk3SkFCckpkekhHT01CZFdRSldSSnRQZDkxYlVLcUloZVNv?oc=5",
+      "titleAr": "أكاديمية التنظيمات الرقمية تعقد برنامجًا سعوديًا عن تنظيم التقنيات الناشئة",
+      "summaryAr": "نقلت صحيفة أحوال عن وكالة الأنباء السعودية أن أكاديمية التنظيمات الرقمية التابعة لهيئة الاتصالات والفضاء والتقنية نظمت، بالشراكة مع مركز إثراء، برنامجًا متخصصًا شارك فيه أكثر من 39 مختصًا من 21 جهة. تناول البرنامج تقييم الحاجة إلى التدخل التنظيمي، ونماذج الأعمال المتغيرة، والمخاطر والآثار، والبيئات التنظيمية التجريبية. وتوضح صفحة الأكاديمية الرسمية أن مسار التقنيات الناشئة يشمل الذكاء الاصطناعي والحوسبة السحابية والبلوكشين وشبكات 5G/6G.",
+      "whyItMatters": "حوكمة التقنيات لا تعتمد على فهم تقني فقط؛ بل تحتاج جمع السياسات والقانون والاقتصاد وتقييم المخاطر. يوضح البرنامج بناء قدرات تنظيمية محلية، لكنه لا يثبت صدور لائحة جديدة أو فتح تسجيل عام.",
+      "audience": "مختصو السياسات العامة والقانون التنظيمي والاقتصاد والاتصالات، والمهتمون بحوكمة التقنيات الناشئة في السعودية.",
+      "nextSteps": [
+        "راجع صفحة أكاديمية التنظيمات الرقمية الرسمية لفهم موضوعات المسار والبرامج ذات الصلة.",
+        "تابع نشر مخرجات أو أطر تنظيمية عملية بدل اعتبار انعقاد البرنامج تغييرًا تشريعيًا.",
+        "عند تقييم تقنية ناشئة، افصل بين توصيف المخاطر وتبرير التدخل التنظيمي وقياس أثره."
+      ],
+      "limitations": "تفاصيل الفعالية وعدد المشاركين وردت في تقرير صحيفة أحوال المنقول عن واس؛ صفحة هيئة الاتصالات الرسمية تصف المنهج العام ولا تؤكد أرقام الحضور. الخبر لا يعلن تسجيلًا مفتوحًا أو لائحة تنظيمية جديدة.",
+      "reviewedAt": "2026-11-08T00:05:55+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "صحيفة أحوال — برنامج تنظيم التقنيات الناشئة",
+          "url": "https://ahwal.sa/archives/285062"
+        },
+        {
+          "title": "هيئة الاتصالات والفضاء والتقنية — أكاديمية التنظيمات الرقمية",
+          "url": "https://www.cst.gov.sa/about/what-we-do/the-digital-regulatory-academy"
+        }
+      ]
+    },
+    "5f721228af3682c241": {
+      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "titleAr": "OpenAI تطلق BioBasicsBench لقياس تحليل بيانات المختبرات بالذكاء الاصطناعي",
+      "summaryAr": "نشرت OpenAI، بالتعاون مع شركة Ligo، معيار BioBasicsBench الذي يضم 100 مهمة من بيانات مختبرية خام مثل صور الهلام والمجاهر وملفات القياس. تقول الشركة إنها قيّمت سبعة نماذج عبر 37 إعدادًا و18,500 محاولة. عند مستوى xhigh سجل GPT‑6 Astra متوسط مكافأة 66.7% (فاصل ثقة 95%: 60.3–73.1)، مقابل 43.8% لـGPT‑5.6 Sol. يقيس المعيار أيضًا اكتشاف أخطاء الضوابط والاعتراف عندما لا تكفي الأدلة لاستنتاج.",
+      "whyItMatters": "التحليل: تقييم النماذج على أدلة مختبرية خام، لا على أسئلة نظرية فقط، أقرب إلى ظروف البحث الفعلية ويكشف أهمية فهم الصور والسياق والضوابط. لكنه يوضح أيضًا أن التحسن في المتوسط لا يعني الاعتماد المستقل على الوكيل في قرار علمي.",
+      "audience": "باحثو الذكاء الاصطناعي الحيوي، ومطورو النماذج متعددة الوسائط، والمهتمون بتقييم موثوقية الوكلاء.",
+      "nextSteps": [
+        "راجع تعريف mean reward وفواصل الثقة قبل مقارنة النسب بوصفها دقة عامة.",
+        "قارن النتائج مع تقييم مستقل أو مرجع بشري على مهام مماثلة.",
+        "افحص أمثلة الإخفاق المنشورة، ولا تعمم نتائج 100 مهمة على كل الأعمال المختبرية."
+      ],
+      "limitations": "الأرقام والتقييم منشوران من OpenAI وبالتعاون مع Ligo، وليسا مراجعة مستقلة. نسبة 66.7% متوسط مكافأة مرجحة بالمعايير وليست نسبة مهام ناجحة بالكامل. المعيار محدود بـ100 مهمة، وتعرض الصفحة أمثلة ما زالت فيها أخطاء في تفسير السياق والضوابط.",
+      "reviewedAt": "2026-11-08T00:35:36+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "OpenAI — Measuring how AI agents handle everyday wet-lab science",
+          "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/"
+        }
+      ]
+    },
+    "7142f0ef7fb76f39c0": {
+      "url": "https://arstechnica.com/security/2026/11/chainalysis-says-hackers-stole-credentials-and-tokens-for-all-of-its-customers/",
+      "titleAr": "Chainalysis تعيد خدماتها بعد تأكيد انكشاف بيانات اعتماد مستخدميها",
+      "summaryAr": "قالت Chainalysis في تحديث 7 نوفمبر إن خدمات Reactor وKYT وAddress Screening عادت للعمل مع إجراءات أمنية إضافية. وكانت قد أفادت في 4 نوفمبر بأن أسماء المستخدمين وأسماء الحسابات وهاشات كلمات المرور ورموزًا حية لجميع مستخدميها انكشفت لمهاجم. ووصفت الشركة أيضًا هجومًا عبر وسيط كشف مجموعة من كلمات المرور. وتقول إنها لم تجد دليلًا على الوصول إلى بيانات التحقيقات أو تغيير بيانات الإسناد، وطلبت إعادة ضبط كلمات المرور وتدوير مفاتيح API بحسب الحاجة.",
+      "whyItMatters": "التحليل: الحادثة تبيّن أن بيانات المصادقة والرموز قد تكون ذات أثر واسع حتى عندما تقول الشركة إن محتوى التحقيقات لم يُمس. وعودة الخدمات لا تعني بالضرورة انتهاء التحقيق أو زوال الحاجة إلى تدوير بيانات الوصول.",
+      "audience": "فرق الأمن وإدارة الهوية، ومشغلو منصات البيانات، والعملاء المؤسسيون.",
+      "nextSteps": [
+        "اقرأ تحديث الشركة المؤرخ 7 نوفمبر بجانب تقرير Ars Technica لتمييز الإفصاح الأولي عن حالة استعادة الخدمات.",
+        "راجع سياسات تدوير كلمات المرور ومفاتيح API وإبطال الرموز لدى الأنظمة المؤسسية.",
+        "افصل بين البيانات التي قالت الشركة إنها انكشفت وبين البيانات التي قالت إنها لم تجد دليلًا على الوصول إليها."
+      ],
+      "limitations": "تفاصيل الحادثة الأساسية صادرة عن الشركة والتحقيق كان مستمرًا وقت التحديث. لم تنشر الشركة وصفًا فنيًا كاملًا لمصدر الهجوم عبر الوسيط، ولا يثبت انكشاف الهاشات أن كلمات المرور ظهرت كنص صريح. لا يوجد في التحديث دليل معلن على الوصول إلى بيانات التحقيقات أو العبث ببيانات الإسناد.",
+      "reviewedAt": "2026-11-08T00:35:36+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Chainalysis — Updated Nov 7: Security Incident Information",
+          "url": "https://www.chainalysis.com/blog/security-incident-october-30/"
+        },
+        {
+          "title": "Ars Technica — Chainalysis says hackers stole credentials and tokens for all of its customers",
+          "url": "https://arstechnica.com/security/2026/11/chainalysis-says-hackers-stole-credentials-and-tokens-for-all-of-its-customers/"
+        }
+      ]
+    },
+    "b9ca9ce17c9cbad18a": {
+      "url": "https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/",
+      "titleAr": "Anthropic توسّع Claude إلى تحليل المصروفات عبر أداة Personal Finance",
+      "summaryAr": "أفادت TechCrunch أن Anthropic بدأت طرح أداة Personal Finance تجريبيًا في الولايات المتحدة لمشتركي Pro وMax وUltra. تربط الأداة الحسابات البنكية وبطاقات الائتمان عبر Plaid بصلاحية قراءة فقط، وتعرض بيانات مثل الأرصدة والحدود الائتمانية وآخر أربعة أرقام من الحساب وسجل معاملات يصل إلى عامين. وتقول الشركة إن المحادثات داخل مساحة Personal Finance لا تُستخدم لتدريب نماذجها.",
+      "whyItMatters": "التحليل: انتقال المساعدات إلى البيانات المالية يجعل حدود الوصول والاحتفاظ والخصوصية جزءًا أساسيًا من تقييم المنتج. وصف الاتصال بأنه «قراءة فقط» يقلل صلاحيات التنفيذ، لكنه لا يجعل سجل المعاملات بيانات غير حساسة.",
+      "audience": "متابعو منتجات الذكاء الاصطناعي، والخصوصية، وتصميم الخدمات المالية الرقمية.",
+      "nextSteps": [
+        "راجع نطاق البيانات والصلاحيات والبلدان والخطط المدعومة في أي إعلان رسمي قبل الاعتماد على أداة مماثلة.",
+        "قارن بين البيانات التي يحتاجها السؤال فعلًا والبيانات التي يطلب المنتج الوصول إليها.",
+        "تجنب مشاركة بيانات مالية حساسة في محادثات عامة أو خدمات لم تراجع شروطها."
+      ],
+      "limitations": "الإتاحة المذكورة كانت نسخة تجريبية في الولايات المتحدة لمشتركي Pro وMax وUltra فقط. وصف الصلاحية بأنها قراءة فقط وسياسة عدم استخدام محادثات المساحة للتدريب منسوبان إلى Anthropic كما نقلتهما TechCrunch؛ ولا يقدم المقال تدقيقًا مستقلًا للخصوصية أو توصية مالية.",
+      "reviewedAt": "2026-11-08T00:35:36+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — Claude can now analyze your spending with its new Personal Finance tool",
+          "url": "https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/"
+        }
+      ]
+    },
+    "cc9dd90ef8beb10b05": {
+      "url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/",
+      "titleAr": "GitHub تختبر صفحة Overview جديدة لتلخيص جاهزية طلبات الدمج",
+      "summaryAr": "أطلقت GitHub معاينة عامة اختيارية لصفحة Overview تعرض حالة الدمج والفحوص والمراجعات والتعليقات والنشاط الحديث في ملخص أعلى طلب السحب. وتتيح تصفية المحادثات غير المحسومة أو تعليقات المستخدم وفرز الأحدث أولًا، مع إبراز الإجراءات المتاحة مثل تحديث الفرع. الميزة في مرحلة معاينة قابلة للتعديل وليست تجربة نهائية.",
+      "whyItMatters": "تحليل: تقلل وقت البحث عن العوائق في طلبات السحب الطويلة، لكنها لا تستبدل قراءة فرق التغييرات أو مراجعة الكود نفسه.",
+      "audience": "طلاب البرمجة ومساهمو GitHub ومراجعو Pull Requests.",
+      "nextSteps": [
+        "جرّب صفحة Overview على طلب سحب غير حساس إذا ظهر خيار المعاينة في حسابك.",
+        "استخدم الملخص لتحديد الفحوص أو الموافقات المتبقية، ثم افتح التفاصيل قبل اتخاذ قرار الدمج."
+      ],
+      "limitations": "الميزة opt-in ضمن public preview، وGitHub تقول إنها بداية قابلة للتطوير؛ قد يختلف ظهورها حسب الحساب ومرحلة الإتاحة.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "GitHub Changelog — New pull request overview page in public preview",
+          "url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/"
+        }
+      ],
+      "reviewedAt": "2026-11-08T05:54:23+03:00"
+    },
+    "10bdc73097cfd2386d": {
+      "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+      "titleAr": "بحث Apiiro يرصد أسرارًا داخل ملفات إعدادات محلية لوكلاء البرمجة",
+      "summaryAr": "قالت Apiiro إنها رصدت 2,539 سرًا حقيقيًا في 1,994 مستودعًا عامًا، منها 1,122 نسخة من أصل 104,185 نسخة عامة من ملف إعدادات محلي مرتبط بـ Claude Code. وذكرت أن بعض كلمات المرور المكتوبة داخل أوامر محفوظة قد لا تلتقطها أدوات فحص الأسرار التقليدية. هذه أرقام بحث الشركة وليست تدقيقًا مستقلًا.",
+      "whyItMatters": "الملفات التي يُفترض أن تبقى محلية قد تدخل تاريخ Git أو نسخ المستودعات، لذلك يجب التعامل مع إعدادات الوكلاء وسجلات الأوامر كبيانات حساسة.",
+      "audience": "مطورو البرمجيات ومشرفو المستودعات وفرق أمن التطبيقات.",
+      "nextSteps": [
+        "تجنب وضع كلمات المرور والمفاتيح داخل أوامر أو إعدادات قد تُحفظ مع المشروع.",
+        "استخدم فحص الأسرار المعتمد وسياسات استبعاد الملفات المحلية، وغيّر بيانات الاعتماد التي يثبت انكشافها."
+      ],
+      "limitations": "النتائج صادرة عن Apiiro ومنهجية العينة تخص الشركة ولم نكرر الفحص؛ لا تعني أن كل مستخدمي Claude Code متأثرون. لم نعرض أمثلة أسرار أو خطوات للبحث عنها.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Apiiro Research — Coding Agents Are Leaking Your Secrets to GitHub",
+          "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again/"
+        }
+      ],
+      "reviewedAt": "2026-11-08T05:54:23+03:00"
+    },
+    "e32f5c79e127258c97": {
+      "url": "https://www.engadget.com/2309554/gpu-supply-problem-no-end-in-sight/",
+      "titleAr": "طلب مراكز الذكاء الاصطناعي على الذاكرة يضغط على سوق بطاقات الرسوميات",
+      "summaryAr": "يربط تقرير Engadget نقص بعض بطاقات الرسوميات وارتفاع أسعارها بتحويل طاقة تصنيع الذاكرة إلى HBM المطلوبة لمراكز الذكاء الاصطناعي. وينقل عن تقرير JPMorgan تقديرًا بارتفاع أسعار DRAM بنحو 400% بين 2024 ونهاية 2026، مع الإشارة إلى أن HBM تتنافس على سعة تصنيع مشتركة مع أنواع ذاكرة أخرى.",
+      "whyItMatters": "قد يمتد أثر بناء مراكز البيانات إلى تكلفة أجهزة الطلاب والمطورين، ويبيّن أن الذاكرة وسلاسل التصنيع جزء أساسي من اقتصاد الذكاء الاصطناعي.",
+      "audience": "طلاب الحوسبة ومطورو النماذج المحلية ومتابعو عتاد الحاسوب.",
+      "nextSteps": [
+        "قارن الأسعار الفعلية للطراز والبلد قبل شراء بطاقة رسومية، ولا تعتمد سعر الإطلاق وحده.",
+        "ميّز بين HBM المستخدمة في مسرّعات مراكز البيانات وذاكرة GDDR/DRAM في أجهزة المستهلك."
+      ],
+      "limitations": "نسبة 400% منسوبة إلى تقرير JPMorgan ولم نتمكن من فتح التقرير مباشرة؛ الأسعار تختلف حسب البلد والطراز، ولا يثبت المقال أن الذكاء الاصطناعي هو سبب كل زيادة.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Engadget — There Is No End In Sight For The GPU Supply Problem",
+          "url": "https://www.engadget.com/2309554/gpu-supply-problem-no-end-in-sight/"
+        }
+      ],
+      "reviewedAt": "2026-11-08T05:54:23+03:00"
+    },
+    "51a247b5b6ae00e91e": {
+      "url": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/",
+      "titleAr": "اعتراض المجتمعات المحلية على مراكز البيانات يتحول إلى قضية سياسية",
+      "summaryAr": "يرصد TechCrunch تصاعد الاعتراض المحلي في الولايات المتحدة على بعض مشاريع مراكز البيانات بسبب الطاقة والمياه وطرق الحصول على الموافقات. ويشير المقال إلى أن عددًا من إجراءات التصويت التي استهدفت تقييد البناء أو فرض وقف مؤقت نجحت، مع التنبيه إلى أن هذه القضية ليست تفسيرًا وحيدًا لنتائج الانتخابات.",
+      "whyItMatters": "توسع الذكاء الاصطناعي لا يعتمد على وحدات GPU فقط؛ الكهرباء والمياه والتراخيص وقبول المجتمعات قد تحدد أين ومتى تُبنى مراكز الحوسبة.",
+      "audience": "طلاب التقنية والسياسات العامة والطاقة والمهتمون بالبنية التحتية.",
+      "nextSteps": [
+        "عند تقييم مشروع مركز بيانات، افحص مصادر الكهرباء واستهلاك المياه وآليات التشاور المحلي.",
+        "تابع الالتزامات المعلنة من الشركات وقارنها بما يُنفذ فعليًا في المواقع."
+      ],
+      "limitations": "المقال يجمع تقريرًا صحفيًا ونقاش بودكاست؛ لا يثبت أن مراكز البيانات كانت سببًا رئيسيًا لنتائج الانتخابات، وبعض الاستنتاجات تفسيرية.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — After the midterms, things are looking rocky for Elon Musk and data centers",
+          "url": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/"
+        }
+      ],
+      "reviewedAt": "2026-11-08T05:54:23+03:00"
+    },
+    "b4b560276b721c3595": {
+      "url": "https://news.google.com/rss/articles/CBMixAJBVV95cUxQdmoxWUM3RkpEUW43eEZQTlhENXpwVkEwa3N2UGt1enRrZzJJaUFadlVjbGt4ekxuVmNzbTBOTENiYm1oMWVRdnZ6aXZTNVFDOFFWazhHUElnOVlyNDRRLUNXMk1rcmZ2aTNIc2VLRkp6OEZtNm5WZlJXSEROT2M2OXF6cTA1NldNYmJsSWtHMFpJVmV2OHRQVnJJcE9xWWRwM3lzQ2IwWEJNcjRNSEtTeWxTWG9mSjdLYm9FOU44LVZRbHpZMTBBWDdRUkFYYnQtam9pdXcxSXE3Rjd6Ul9IdW1PSlpmVHhJcndkR0pQSFBqMnFUOUdZVVhoaGFWcXBVeTFOUVpUSWtmbkdfM1ZIU3prVWxpVmdCdzBBY3V0bTNuUHJUOUFybldGVjVTLXB3NXhaMkdxZjViNHFscGRqUGdBaU8?oc=5",
+      "titleAr": "HUMAIN تضم CNTXT لتعزيز خدمات الذكاء الاصطناعي والسحابة للمؤسسات",
+      "summaryAr": "أعلنت CNTXT في 3 نوفمبر انضمامها إلى منصة HUMAIN، حاملةً خدمات التحول السحابي والبيانات والتحليلات والذكاء الاصطناعي والأمن السيبراني والتكامل المؤسسي وحلولًا مملوكة وعلاقات مع جهات عامة وخاصة. وتقول الشركة إن الخطوة توسع قدرتها على دعم المؤسسات من التخطيط إلى التنفيذ والتشغيل.",
+      "whyItMatters": "الخطوة تبرز أن تبني الذكاء الاصطناعي المؤسسي يحتاج تكامل البيانات والسحابة والأمن والتشغيل، وليس النماذج أو مراكز البيانات وحدها؛ وقد توسع فرص المهارات التقنية في المنطقة.",
+      "audience": "طلاب الحوسبة السحابية والبيانات ومطورو المؤسسات والمهتمون بسوق التقنية السعودي.",
+      "nextSteps": [
+        "تابع إعلانات HUMAIN وCNTXT حول الخدمات والمنتجات والعملاء بعد الانضمام.",
+        "عند بناء مهارات مهنية، اجمع بين أساسيات النماذج وتكامل البيانات والسحابة والأمن والتشغيل."
+      ],
+      "limitations": "الإعلان صادر عن CNTXT ولا يذكر قيمة صفقة أو تفاصيل ملكية أو شروط انتقال؛ لذلك نصفه بانضمام الشركة إلى المنصة ولا نصفه باستحواذ مالي.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "CNTXT — HUMAIN Welcomes CNTXT into Its Full-Stack AI Platform",
+          "url": "https://cntxt.com/news/cntxt-joins-humain-adding-enterprise-ai-cloud-data-and-technology-services-capabilities-proprietary-solutions-and-a-broad-customer-base-to-humains-growing-platform/"
+        }
+      ],
+      "reviewedAt": "2026-11-08T05:54:23+03:00"
+    },
+    "c948bfa131bcac0192": {
+      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5FN1pyNHVsSG1mS1l3Rk1HNEl4aVkyZ0RHLXo5RXFUWFE4NmpZUHpzMVZ5NFlYblVGdEpMOENkSzdYUmVvR1BJ?oc=5",
+      "titleAr": "التدريب التقني السعودي يعلن مؤشرات استخدام واسعة لمنصته الرقمية",
+      "summaryAr": "تذكر نتيجة الخبر الرسمية لوكالة الأنباء السعودية أن منصة التدرّب الإلكترونية التابعة للمؤسسة العامة للتدريب التقني والمهني تضم 60,347 مقررًا، ونفذت أكثر من 92 ألف جلسة افتراضية، وتجاوز المستفيدون 736 ألفًا، مع أكثر من 16 مليون عملية دخول. كما تشير النتيجة إلى 220 أكاديمية عالمية و849 شهادة احترافية ضمن المنظومة.",
+      "whyItMatters": "تعطي الأرقام مؤشرًا على حجم البنية الرقمية للتدريب المهني في المملكة، وتبرز أهمية التعلم المستمر؛ لكنها تقيس نطاق الاستخدام والعرض ولا تقيس وحدها جودة التعلم أو نتائج التوظيف.",
+      "audience": "طلاب السعودية والمتدربون والباحثون عن مسارات مهارات مهنية رقمية.",
+      "nextSteps": [
+        "تحقق من شروط التسجيل والتخصصات المتاحة عبر المؤسسة قبل اعتبار أي مقرر مفتوحًا للجمهور.",
+        "قارن الشهادة أو المقرر بمتطلبات التخصص والاعتماد وسوق العمل."
+      ],
+      "limitations": "تعذر استخراج النص الكامل لصفحة واس في هذه المراجعة؛ اعتمدنا على بيانات النتيجة الرسمية وملخص الخبر، لذا لا نزعم قراءة المقال كاملًا. الأرقام مؤشرات استخدام مؤسسية وليست قياسًا مستقلًا لجودة التعلم.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "وكالة الأنباء السعودية — التدريب التقني يعزز العملية التدريبية بمنظومة رقمية متكاملة",
+          "url": "https://www.spa.gov.sa/N2719078"
+        }
+      ],
+      "reviewedAt": "2026-11-08T05:54:23+03:00"
+    },
+    "7a6ddd94fc2d29aa49": {
+      "url": "https://www.wired.com/story/world-models-will-soon-be-inescapable-what-you-need-to-know/",
+      "titleAr": "نماذج العالم تنقل الذكاء الاصطناعي من توقع الكلمات إلى محاكاة المشاهد والفيزياء",
+      "summaryAr": "تشرح WIRED كيف تستخدم نماذج العالم المدخلات البصرية لتوقّع الحالة التالية ومحاكاة جوانب من الفيزياء والسببية. يورد المقال أمثلة من Niantic Spatial وWayve على إعادة بناء الأماكن وتوليد ظروف قيادة افتراضية لتدريب الأنظمة، مع احتمالات أوسع للروبوتات والألعاب.",
+      "whyItMatters": "التحليل: قد تصبح نماذج العالم طبقة تدريب للروبوتات والمركبات بدل الاكتفاء بتوليد نص أو فيديو؛ لذلك تصبح جودة المحاكاة وحدود نقلها إلى العالم الحقيقي وموافقة الأشخاص على استخدام صور الأماكن مسائل عملية.",
+      "audience": "مطورو الروبوتات والسيارات الذاتية، فرق المحاكاة والألعاب، وباحثو الرؤية الحاسوبية والخصوصية.",
+      "nextSteps": [
+        "قارن بين نموذج العالم وتوليد الفيديو: هل يحافظ على استجابة المشهد للأفعال وقواعده الفيزيائية؟",
+        "تابع طريقة جمع بيانات الأماكن والأشخاص وشروط الموافقة والترخيص.",
+        "لا تعتبر نجاح المحاكاة وحده دليلًا على سلامة نظام يعمل في العالم الحقيقي."
+      ],
+      "limitations": "المادة شرح صحفي لأمثلة واتجاهات شركات؛ لا تقدم معيارًا مستقلًا موحدًا يقارن دقة نماذج العالم أو يثبت جاهزيتها التشغيلية.",
+      "reviewedAt": "2026-11-08T14:53:18+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "WIRED — World Models Will Soon Be Inescapable",
+          "url": "https://www.wired.com/story/world-models-will-soon-be-inescapable-what-you-need-to-know/"
+        }
+      ]
+    },
+    "fd273feaa8fd4ac1ef": {
+      "url": "https://www.science.org/content/article/wearable-device-makers-are-harvesting-brain-data-train-ai-without-telling-users?referrer=https%3A%2F%2Fwww.google.com%2F",
+      "titleAr": "تحقيق عن أجهزة EEG الاستهلاكية يثير أسئلة حول استخدام بيانات الدماغ في تدريب الذكاء الاصطناعي",
+      "summaryAr": "يلخص تقرير Inside BCI تحقيقًا نشرته Science راجع سياسات خصوصية 57 شركة تجمع إشارات EEG، ووجد تفاوتًا في الإفصاح عن مشاركة البيانات واستخدامها في تدريب نماذج دماغية. ويذكر التقرير أن بعض الشركات عدّلت سياساتها بعد استفسارات الصحفيين؛ لذا يجب نسبة التفاصيل إلى التحقيق والشركات المعنية لا تعميمها على جميع الأجهزة.",
+      "whyItMatters": "التحليل: الإشارات العصبية بيانات شديدة الحساسية؛ واستخدامها في تدريب النماذج يرفع أهمية الموافقة المنفصلة ووضوح المشاركة مع الأطراف الأخرى وسياسة حذف البيانات وما إذا كانت تشمل النماذج المدربة.",
+      "audience": "مستخدمو أجهزة EEG، مطورو تقنيات الأعصاب، مسؤولو الخصوصية، والباحثون في واجهات الدماغ والحاسوب.",
+      "nextSteps": [
+        "راجع سياسة الخصوصية وابحث تحديدًا عن استخدام بيانات EEG لتدريب النماذج ومشاركتها.",
+        "اطلب موافقة منفصلة وواضحة لأي استخدام تدريبي، وتحقق من وجود خيار انسحاب.",
+        "تحقق مما إذا كانت سياسة الحذف تشمل البيانات الخام والتمثيلات أو النماذج المدربة."
+      ],
+      "limitations": "تعذر فتح نص Science الكامل في هذه المراجعة؛ الأساس ملخص تفصيلي من Inside BCI ينقل التحقيق الأصلي. بعض الشركات حدّثت سياساتها بعد الاستفسارات، ولا تثبت النتائج أن كل شركة أو جهاز يتبع الممارسة نفسها.",
+      "reviewedAt": "2026-11-08T14:53:18+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "Science — التحقيق الأصلي حول بيانات EEG وتدريب النماذج",
+          "url": "https://www.science.org/content/article/wearable-device-makers-are-harvesting-brain-data-train-ai-without-telling-users"
+        },
+        {
+          "title": "Inside BCI — ملخص التحقيق وتفاصيل سياسات الشركات",
+          "url": "https://insidebci.com/policy/2026-11-07-science-investigation-consumer-eeg-brain-data-ai-foundation-models-privacy-policies/"
+        }
+      ]
+    },
+    "af86f1fe61f21b7056": {
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5ZS18zNERCdHQ0bmFPZFk1OW9EVkJMVWVZa0h1eUMtSDBuLXljbFY4MmJvWmV1SDFMSEhjXzJQTDJuQlY3WW5nT053OFcxdnRG?oc=5",
+      "titleAr": "UKRI تدعم مركزًا يستخدم صور العين والذكاء الاصطناعي لرصد مؤشرات مبكرة للسكري وأمراض القلب",
+      "summaryAr": "أعلنت UKRI دعم خمسة مراكز بحثية بأكثر من 52 مليون جنيه إسترليني. ويعمل مركز NORI بقيادة جامعة سندرلاند على تحليل صور العين الروتينية مع سجلات NHS والبيانات المجتمعية للبحث عن تغيرات شبكية قد تشير مبكرًا إلى السكري وأمراض القلب، ثم مساعدة الأطباء في تحديد من يحتاج إلى فحوص إضافية.",
+      "whyItMatters": "التحليل: قد تساعد صور العين المتاحة أصلًا في توجيه الفحوص الوقائية، لكن القيمة الطبية تعتمد على التحقق السريري ومعدلات الإحالة الخاطئة وحوكمة ربط الصور بالسجلات الصحية.",
+      "audience": "الباحثون الصحيون، مطورو الذكاء الاصطناعي الطبي، مقدمو الرعاية، ومهتمو الصحة الرقمية.",
+      "nextSteps": [
+        "تابع تصميم التحقق السريري ومعدلات النتائج الإيجابية والسلبية الخاطئة قبل أي استخدام روتيني.",
+        "راجع شروط مشاركة صور العين والسجلات الصحية والاحتفاظ بها.",
+        "تعامل مع المشروع بوصفه مركزًا بحثيًا وأداة فرز قيد التطوير، لا تشخيصًا مستقلًا."
+      ],
+      "limitations": "إعلان UKRI يصف مركزًا وخطة بحث وتطوير؛ لا يقدم منتجًا طبيًا معتمدًا أو نتائج سريرية نهائية أو دقة تشخيص مثبتة.",
+      "reviewedAt": "2026-11-08T14:53:18+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "UKRI — New technology to spot illness years earlier gets UKRI backing",
+          "url": "https://www.ukri.org/news/new-technology-to-spot-illness-years-earlier-gets-ukri-backing/"
+        }
+      ]
+    },
+    "cb3806e69ce377257e": {
+      "url": "https://aitnews.com/2026/11/08/%d8%a7%d9%84%d9%83%d9%88%d9%86%d8%ba%d8%b1%d8%b3-%d8%a7%d9%84%d8%a3%d9%85%d8%b1%d9%8a%d9%83%d9%8a-%d9%8a%d8%b7%d9%84%d8%a8-%d8%a5%d9%8a%d8%b6%d8%a7%d8%ad%d8%a7%d8%aa-%d9%85%d9%86-%d8%b1%d8%a6%d9%8a/",
+      "titleAr": "ثلاث لجان في مجلس النواب الأمريكي تطلب إحاطة مغلقة من رئيس NVIDIA بشأن مخاوف أمنية",
+      "summaryAr": "قالت لجنة الشؤون الخارجية في مجلس النواب الأمريكي إن رؤساء ثلاث لجان أرسلوا في 5 نوفمبر 2026 خطابًا إلى جنسن هوانغ لطلب إحاطة مغلقة في 18 نوفمبر حول تفاعلات مزعومة مع مسؤولة تنفيذية في Megaspeed وبروتوكولات حماية التقنيات الحساسة. الخطاب يثبت وجود طلب رقابي، ولا يثبت وقوع تجسس أو مخالفة.",
+      "whyItMatters": "التحليل: أمن سلسلة توريد الشرائح والوصول إلى التقنيات الحساسة أصبح ملفًا رقابيًا وسياسيًا إلى جانب المنافسة التقنية والتجارية؛ وستكون الوثائق والردود الرسمية أهم من الاستنتاجات المبكرة.",
+      "audience": "متابعو أشباه الموصلات والذكاء الاصطناعي والسياسات التقنية والأمن السيبراني.",
+      "nextSteps": [
+        "راقب رد NVIDIA والوثائق الرسمية بعد موعد الإحاطة المطلوب في 18 نوفمبر.",
+        "افصل بين نص الخطاب الرسمي والادعاءات الواردة في التغطيات الصحفية.",
+        "تابع أي نتائج مثبتة قبل ربطها بضوابط التصدير أو قرارات تجارية."
+      ],
+      "limitations": "البيان يصف طلب إحاطة مغلقة؛ الادعاءات المشار إليها لم تثبتها اللجنة في هذا البيان، ولا يصح عرضها كحقيقة أو اتهام مؤكد.",
+      "reviewedAt": "2026-11-08T14:53:18+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "U.S. House Foreign Affairs Committee — press release, 5 Nov 2026",
+          "url": "https://foreignaffairs.house.gov/news/press-releases/chairmen-mast-moolenaar-and-crawford-request-jensen-huang-brief-congress-on-link-to-chinese-intelligence-asset"
+        }
+      ]
+    },
+    "46a02fa7c3e9ab44a3": {
+      "url": "https://news.google.com/rss/articles/CBMixAJBVV95cUxPcjFMay1iZ3R2RHA3Nl9ha0RSMFdlc0tRNmpmV1hoanhPTjRXeHFqVDV6c3VpMFVKVE5WbkdydWVGQUVEX2s4MmRDcEk5TEM0T0V3b3k5OXVVcFFNVDdybmlFQm1xQVlGRk9DQ0ItelItbUFQcWFrVEdwVkZWMGFRZ3pDQjkxZXJxazI5bXFZeVVMblRIQVlsbXVlRlJaZXFzTVh3bFpwNG9KM2VJM05Ccmo3aklOcG5CeXZnTFZxMWhmZ2l4RWQwVzFXQm9JRVhwTTNZYVVQUk5xQWttVDBmMV9Gd2pWRnd4M0huUk1pRnlaTXM3cjROQS1URDA5NmtYdDRyMWVpMERNcUhCZlAtay1aczNYNGVjN2djdTVoU1FtaHhjdFVOYUVzQkR2alVsYzItbU80eXBLWWdtNk1YWmZyME8?oc=5",
+      "titleAr": "قمة جامعة بنها للشركات الناشئة تستهدف تحويل الأبحاث والمشروعات الطلابية إلى شركات",
+      "summaryAr": "تقول جامعة بنها في إعلانها الرسمي إن القمة تستهدف الطلاب والباحثين وأعضاء هيئة التدريس، وتدعم تحويل الأبحاث ومشروعات التخرج إلى نماذج أولية وشركات عبر مسارات للتأهيل والاحتضان والتمويل. تقرير WAYA الأحدث يذكر دعمًا يصل إلى 2.23 مليون جنيه وموعدًا حتى 23 نوفمبر، بينما إعلان الجامعة المنشور في 25 سبتمبر يذكر 1.5 مليون جنيه؛ لذلك لا يمكن تثبيت الرقم النهائي دون تحديث رسمي.",
+      "whyItMatters": "التحليل: أهمية المبادرة ليست في جائزة منفردة، بل في ربط مشاريع الجامعة باختبار السوق والاحتضان والاستثمار؛ وهي فرصة لمتابعة شروط المشاركة والملكية الفكرية قبل بناء توقعات مالية.",
+      "audience": "طلاب الجامعات والباحثون والخريجون والفرق متعددة التخصصات، خصوصًا في مصر والمنطقة العربية.",
+      "nextSteps": [
+        "راجع أحدث شروط التقديم عبر قنوات جامعة بنها الرسمية قبل الاعتماد على الموعد أو المبلغ.",
+        "جهز وصف المشكلة ونموذجًا أوليًا وتقديرًا أوليًا للسوق.",
+        "تحقق من أهلية الفريق ومتطلبات الملكية الفكرية والاحتضان."
+      ],
+      "limitations": "تعذر فتح نص WAYA كاملًا؛ تقرير WAYA يذكر 2.23 مليون جنيه وموعد 23 نوفمبر، بينما إعلان الجامعة الرسمي في 25 سبتمبر يذكر 1.5 مليون جنيه وفرص تمويل من 50 إلى 200 ألف جنيه للشركات المختارة. الموعد النهائي الحالي غير مثبت في صفحة الجامعة التي تمت مراجعتها، والتمويل غير مضمون.",
+      "reviewedAt": "2026-11-08T14:53:18+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "WAYA Media — خبر قمة جامعة بنها 2026",
+          "url": "https://waya.media/arabi/جامعة-بنها-تُطلق-قمة-للشركات-الناشئة-2026/"
+        },
+        {
+          "title": "Benha University — official announcement, 25 Sep 2026",
+          "url": "https://bu.edu.eg/BUNews/30749"
+        }
+      ]
+    },
+    "bc64dbd527eeb5b716": {
+      "url": "https://github.com/OpenMontageInc/OpenMontage",
+      "titleAr": "OpenMontage — منظومة إنتاج فيديو تقودها وكلاء البرمجة",
+      "summaryAr": "مشروع مفتوح المصدر يجعل مساعد البرمجة منسقًا لسير إنتاج فيديو متعدد المراحل: بحث، كتابة، تخطيط مشاهد، جمع أصول، تحرير وتركيب. يربط أدوات Python وتعريفات YAML ومهارات Markdown بمسار عرض يعتمد على Remotion وFFmpeg، ويذكر README أكثر من 10 مسارات و100 أداة و60 مزودًا؛ هذه أرقام يعلنها المشروع وليست قياسًا مستقلًا.",
+      "whyItMatters": "التحليل: قيمته في تنظيم الإنتاج كسير عمل قابل للمراجعة بدل طلب فيديو واحد من نموذج؛ كما أن فصل الأصول والتكلفة والموافقات قد يجعل الإنتاج التعليمي أكثر قابلية للتكرار. لكنه يحتاج مراجعة بشرية للمصادر والحقوق وجودة المخرجات.",
+      "audience": "صناع المحتوى، محررو الفيديو، مطورو Python، فرق التعليم والتسويق، ومطورو أدوات الإنتاج الوكيلي.",
+      "overview": "OpenMontage منظومة إنتاج فيديو agent-first. يعمل مساعد البرمجة كمنسق، بينما تنفذ أدوات Python ومهارات Markdown وتعريفات pipeline ملفات YAML مراحل البحث والمقترح والسيناريو وخطة المشاهد والأصول والتحرير والتركيب. يستخدم المشروع Remotion وFFmpeg للعرض، ويتضمن Backlot لإدارة الإنتاج. أرقام 10+ pipelines و100+ tools و60+ providers و700+ knowledge files هي ادعاءات README، وليست اختبارًا مستقلًا.",
+      "requirements": "README يذكر Python 3.10+ وFFmpeg وNode.js 22.23.4+ وpip حديثًا، إضافة إلى مساعد برمجة يدعم تعليمات المشروع وnpm لاعتماديات Remotion. requirements.txt يغطي أدوات Python الأساسية، وrequirements-gpu.txt اختياري لحزم PyTorch. مفاتيح مزودي النماذج السحابية اختيارية بحسب المسار؛ التوليد المحلي يحتاج أوزان النماذج وموارد GPU ومساحة تخزين. ترخيص المستودع AGPL-3.0.",
+      "quickStart": "1) استنسخ المستودع الحالي: git clone https://github.com/OpenMontageInc/OpenMontage.git ثم cd OpenMontage. 2) راجع README وAGENT_GUIDE.md وconfig.yaml قبل أي تشغيل. 3) ثبّت FFmpeg وPython 3.10+ وNode.js 22.23.4+ ثم نفّذ make setup وفق الدليل. 4) ابدأ بمسار صغير يستخدم أصولًا مجانية أو أدوات محلية، ولا تضف مفاتيح مزود سحابي إلا عند الحاجة وبعد مراجعة التكلفة. 5) افتح المشروع في مساعد البرمجة واتبع تعليمات pipeline المختار، ثم راجع المصادر والأصول قبل اعتماد الفيديو. ملاحظة: أمر الاستنساخ في README يشير إلى اسم مالك قديم calesthio؛ الرابط الرسمي الحالي في GitHub API هو OpenMontageInc/OpenMontage.",
+      "costs": "الشيفرة مفتوحة المصدر بترخيص AGPL-3.0، لكن هذا لا يعني أن كل توليد مجاني. يمكن تقليل رسوم الاستدعاء باستخدام أصول مجانية مثل Pexels/Pixabay وأدوات محلية مثل Piper وFFmpeg، مقابل موارد الجهاز والتنزيل والتخزين والوقت. مزودات التوليد السحابية قد تفرض رسومًا حسب الاستخدام وتتغير أسعارها وحصصها؛ config.yaml يضع حدود ميزانية تحذيرية افتراضية، لكنها ليست ضمانًا لفاتورة المزود.",
+      "localVsCloud": "محليًا: FFmpeg وRemotion للتركيب، Piper للصوت، وأي نماذج محلية مدعومة عند توفر GPU والأوزان والاعتماديات. سحابيًا: تكاملات مزودات الصور والفيديو والصوت والنماذج تتطلب مفاتيح وحسابات وقد تكون مدفوعة؛ لا يلزم استخدامها لكل مسار. افصل بين تكلفة تشغيل الشيفرة وتكلفة الاستدلال أو توليد الوسائط.",
+      "alternatives": "بدائل ومكونات مكملة وليست نسخًا مطابقة: Remotion لبناء فيديوهات برمجية، FFmpeg للمعالجة والتركيب، ComfyUI لتدفقات توليد الوسائط محليًا، وManim للرسوم الرياضية. الاختيار يعتمد على الحاجة إلى تنسيق وكيلي شامل مقابل أداة متخصصة.",
+      "limitations": "لم أشغّل المشروع أو أنفذ make setup؛ testEvidence غير متوفر. يعتمد على مساعد برمجة وعلى اعتماديات Python وNode وFFmpeg، وقد تحتاج مسارات عديدة إلى API keys أو GPU. ادعاءات عدد الأدوات والمزودات من README فقط. ترخيص AGPL-3.0 يحتاج مراجعة قبل إعادة التوزيع أو تقديم خدمة مشتقة. README ما زال يعرض اسم مالك قديم في أمر clone بينما GitHub API يحدد OpenMontageInc/OpenMontage حاليًا. مؤشرات GitHub لقطة وقتية؛ open_issues_count قد يشمل طلبات الدمج، ولا يمثل عدد Issues خالصًا.",
+      "nextSteps": [
+        "ابدأ بقراءة AGENT_GUIDE.md وdocs/PROVIDERS.md وconfig.yaml قبل اختيار pipeline.",
+        "تحقق من إصدار Node وFFmpeg وPython على جهازك قبل تثبيت الاعتماديات.",
+        "اختر مسارًا صغيرًا بأصول مجانية أو أدوات محلية لتقدير الجودة والوقت قبل أي استخدام سحابي.",
+        "راجع ترخيص كل أصل بصري أو صوتي واحتفظ بمصدره وإسناده."
+      ],
+      "reviewedAt": "2026-11-09T14:46:15+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "OpenMontage — official repository and README",
+          "url": "https://github.com/OpenMontageInc/OpenMontage"
+        },
+        {
+          "title": "OpenMontage — AGPL-3.0 LICENSE",
+          "url": "https://github.com/OpenMontageInc/OpenMontage/blob/main/LICENSE"
+        },
+        {
+          "title": "OpenMontage — requirements.txt",
+          "url": "https://github.com/OpenMontageInc/OpenMontage/blob/main/requirements.txt"
+        },
+        {
+          "title": "OpenMontage — optional GPU requirements",
+          "url": "https://github.com/OpenMontageInc/OpenMontage/blob/main/requirements-gpu.txt"
+        },
+        {
+          "title": "OpenMontage — AGENT_GUIDE.md",
+          "url": "https://github.com/OpenMontageInc/OpenMontage/blob/main/AGENT_GUIDE.md"
+        },
+        {
+          "title": "OpenMontage — provider guide",
+          "url": "https://github.com/OpenMontageInc/OpenMontage/blob/main/docs/PROVIDERS.md"
+        },
+        {
+          "title": "OpenMontage — configuration and budget defaults",
+          "url": "https://github.com/OpenMontageInc/OpenMontage/blob/main/config.yaml"
+        },
+        {
+          "title": "OpenMontage GitHub repository metrics (9 Nov 2026)",
+          "url": "https://api.github.com/repos/OpenMontageInc/OpenMontage"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "فاحص جودة الترجمة العربية واتجاه RTL قبل الرندر",
+          "problem": "قد تظهر الحروف العربية أو علامات الترقيم أو الأسطر المختلطة بصورة غير صحيحة بعد انتقال النص بين الترجمة وRemotion وFFmpeg.",
+          "approach": "إضافة مجموعة fixtures عربية، وفحص اتجاه النص والتفاف السطر وتوقيت المقاطع قبل اعتماد الرندر، مع معاينة مرئية للمراجعة البشرية.",
+          "stack": "Python، Remotion، FFmpeg، Playwright، اختبارات نصية ومرئية",
+          "steps": [
+            "أنشئ عينات عربية فصحى ولهجات ونصوصًا مختلطة عربي/إنجليزي.",
+            "ولّد ملفات SRT/VTT من السيناريو مع توقيت الكلمات.",
+            "ارندر مقاطع قصيرة بخطوط مرخصة تدعم العربية.",
+            "افحص ترتيب الحروف وعلامات الترقيم والتفاف الأسطر في أكثر من مقاس.",
+            "أصدر تقريرًا يحدد المقاطع التي تحتاج مراجعة بشرية."
+          ],
+          "metric": "نسبة المقاطع ذات اتجاه وتفاف صحيحين، وانحراف التوقيت أقل من 100ms.",
+          "difficulty": "متوسط إلى مرتفع (تقدير 3–5 أسابيع)",
+          "risks": "اختلاف محركات العرض والخطوط واللهجات قد ينتج نتائج غير متطابقة؛ يلزم اختبار بصري ومراجعة بشرية.",
+          "sources": [
+            {
+              "title": "OpenMontage repository",
+              "url": "https://github.com/OpenMontageInc/OpenMontage"
+            },
+            {
+              "title": "Remotion documentation",
+              "url": "https://www.remotion.dev/docs/"
+            },
+            {
+              "title": "W3C CSS Writing Modes",
+              "url": "https://www.w3.org/TR/css-writing-modes-3/"
+            }
+          ]
+        },
+        {
+          "title": "مقدّر تكلفة محلي/سحابي قبل تنفيذ كل مشهد",
+          "problem": "تعدد مزودي الوسائط وتغير الأسعار يجعل تقدير تكلفة الفيديو قبل التوليد صعبًا، وقد تُنفذ خطوات مدفوعة دون وضوح التكلفة الكلية.",
+          "approach": "بناء سجل أسعار مؤرخ لكل مزود وأداة، وحساب تقدير لكل مشهد، ومنع الخطوة المدفوعة إذا غابت الأسعار أو تجاوزت سقف الميزانية دون موافقة.",
+          "stack": "Python، Pydantic، YAML، JSON، اختبارات وحدات",
+          "steps": [
+            "عرّف مخططًا موحدًا للسعر والوحدة والمصدر وتاريخ القياس.",
+            "اربط كل أداة في pipeline بمصدر سعر أو علامة غير معروف.",
+            "احسب تقدير التكلفة قبل تنفيذ المشهد وأظهر الافتراضات.",
+            "اطلب موافقة صريحة عند تجاوز السقف أو استخدام مزود غير مسعّر.",
+            "قارن التقدير بالفاتورة الفعلية بعد التشغيل وسجل الانحراف."
+          ],
+          "metric": "كل خطوة مدفوعة لها تقدير ومصدر وسقف موافقة؛ صفر عمليات مدفوعة غير مصرح بها.",
+          "difficulty": "متوسط (تقدير 2–4 أسابيع)",
+          "risks": "قد تختلف الأسعار الفعلية بسبب التخزين المؤقت والضرائب وتغير الخطط؛ التقدير ليس فاتورة نهائية.",
+          "sources": [
+            {
+              "title": "OpenMontage provider guide",
+              "url": "https://github.com/OpenMontageInc/OpenMontage/blob/main/docs/PROVIDERS.md"
+            },
+            {
+              "title": "OpenMontage config",
+              "url": "https://github.com/OpenMontageInc/OpenMontage/blob/main/config.yaml"
+            }
+          ]
+        },
+        {
+          "title": "سجل حقوق وإسناد تلقائي لكل أصل بصري وصوتي",
+          "problem": "قد تنتقل الصور والمقاطع والموسيقى بين مراحل الإنتاج دون حفظ مصدرها أو شروط استخدامها، ما يصعب مراجعة الحقوق عند النشر.",
+          "approach": "إضافة manifest لكل أصل يتضمن الرابط والمالك والترخيص وتاريخ الجلب وشروط النسبة، ثم توليد شاشة اعتماد وقائمة credits تلقائيًا.",
+          "stack": "Python، Pydantic، JSON، Remotion، FFmpeg",
+          "steps": [
+            "عرّف مخططًا لبيانات الأصل ومصدره وترخيصه وشروط النسبة.",
+            "اجمع metadata عند إضافة كل صورة أو مقطع أو ملف صوت.",
+            "ارفض الأصول التي لا تحمل مصدرًا أو حالة ترخيص واضحة.",
+            "أنشئ شاشة مراجعة بشرية للأصول قبل الرندر النهائي.",
+            "ولّد صفحة credits وملف manifest قابلًا للتصدير مع الفيديو."
+          ],
+          "metric": "100% من الأصول المنشورة لها مصدر وحالة ترخيص وإسناد موثق.",
+          "difficulty": "متوسط (تقدير 2–3 أسابيع)",
+          "risks": "قد تكون بيانات الترخيص ناقصة أو متغيرة؛ لا يغني الفحص الآلي عن المراجعة القانونية والبشرية.",
+          "sources": [
+            {
+              "title": "OpenMontage repository",
+              "url": "https://github.com/OpenMontageInc/OpenMontage"
+            },
+            {
+              "title": "Pexels license",
+              "url": "https://www.pexels.com/license/"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "استوديو عربي لإنتاج شروحات جامعية قصيرة",
+          "problem": "يحتاج الطلاب والمعلمون إلى فيديوهات عربية قصيرة تشرح مفهومًا واحدًا بمصادر ورسوم واضحة بدل مقاطع طويلة غير مترابطة.",
+          "approach": "مسار يحول مادة مرخصة أو محاضرة يملك المستخدم حق استخدامها إلى مخطط شرح ورسوم وتعليق صوتي وترجمة، مع مراجعة مدرس قبل التصدير.",
+          "stack": "Python، Remotion، FFmpeg، MathJax، Piper أو مزود صوت اختياري",
+          "steps": [
+            "اختر مفهومًا واحدًا ومصادر يحق استخدامها.",
+            "استخرج مخططًا من 3–5 نقاط مع إحالات لكل معلومة.",
+            "أنشئ رسمًا أو مثالًا بصريًا لكل نقطة.",
+            "ولّد تعليقًا صوتيًا وترجمة عربية قابلة للمراجعة.",
+            "اعرض نسخة أولية على مدرس ثم صدّر الفيديو مع المصادر."
+          ],
+          "metric": "كل ادعاء تعليمي مرتبط بمصدر، وتقييم مدرس لا يقل عن 4/5 في الوضوح والدقة.",
+          "difficulty": "متوسط إلى مرتفع (تقدير 3–6 أسابيع)",
+          "risks": "قد تخطئ النماذج في المعادلات أو النطق؛ لا ينشر الفيديو قبل مراجعة بشرية.",
+          "sources": [
+            {
+              "title": "OpenMontage repository",
+              "url": "https://github.com/OpenMontageInc/OpenMontage"
+            },
+            {
+              "title": "Remotion documentation",
+              "url": "https://www.remotion.dev/docs/"
+            }
+          ]
+        },
+        {
+          "title": "محول مشروع تخرج إلى فيديو عرض موثق",
+          "problem": "يصعب على الفرق الجامعية تحويل مشروع تقني ونتائجه إلى عرض قصير لا يبالغ في الإنجاز أو يخفي القيود.",
+          "approach": "قالب ينتج فيديو 60–90 ثانية من ملخص معتمد ونتائج موثقة وصور أصلية، مع فحص كل ادعاء مقابل مستند المشروع.",
+          "stack": "Python، Remotion، FFmpeg، Pydantic، JSON",
+          "steps": [
+            "أدخل ملخص المشروع والنتائج التي وافق الفريق على نشرها.",
+            "اربط كل ادعاء بمصدر أو نتيجة قابلة للمراجعة.",
+            "أنشئ storyboard قصيرًا مع توضيح حدود التجربة.",
+            "أضف صورًا أو تسجيل شاشة يملك الفريق حق نشره.",
+            "راجع الفيديو مع أعضاء الفريق ثم صدّر نسخة مع ملف مصادر."
+          ],
+          "metric": "كل ادعاء في الفيديو له مرجع، وزمن المراجعة أقل من 15 دقيقة.",
+          "difficulty": "متوسط (تقدير 2–4 أسابيع)",
+          "risks": "احتمال كشف بيانات غير منشورة أو حقوق ملكية فكرية؛ يلزم اعتماد الفريق قبل التصدير.",
+          "sources": [
+            {
+              "title": "OpenMontage repository",
+              "url": "https://github.com/OpenMontageInc/OpenMontage"
+            },
+            {
+              "title": "OpenMontage AGENT_GUIDE",
+              "url": "https://github.com/OpenMontageInc/OpenMontage/blob/main/AGENT_GUIDE.md"
+            }
+          ]
+        }
+      ],
+      "religious": [],
+      "metrics": {
+        "stars": 78882,
+        "forks": 10538,
+        "openIssues": 323,
+        "measuredAt": "2026-11-09T14:46:15+03:00",
+        "source": "https://api.github.com/repos/OpenMontageInc/OpenMontage"
+      },
+      "activity": {
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "main",
+        "lastPushedAt": "2026-11-09T06:23:55Z",
+        "lastUpdatedAt": "2026-11-09T11:45:51Z",
+        "measuredAt": "2026-11-09T14:46:15+03:00"
+      },
+      "license": {
+        "spdx": "AGPL-3.0",
+        "status": "root LICENSE inspected",
+        "source": "https://github.com/OpenMontageInc/OpenMontage/blob/main/LICENSE"
+      },
+      "testStatus": "not_run",
+      "metricsMeasuredAt": "2026-11-09T14:46:15+03:00"
+    },
+    "5c24264888e5cf1cac": {
+      "titleAr": "OpenIndiana 2026.10 يحدّث أدوات التطوير ودعم الافتراضية",
+      "summaryAr": "أصدر مشروع OpenIndiana لقطة Hipster 2026.10، وهي تحديث نصف سنوي لتوزيعة مبنية على illumos. تضيف دعم UEFI framebuffer إلى صورة Live، وتحدّث أدوات منها Python 3.15.2 وGCC 15.3.0 وClang 23.1.4 وPerl 5.44، مع تحديث QEMU إلى 11.1.2 وVirtualBox إلى 7.2.22 وإضافة TeX Live 2026 وFoliate وzoxide.",
+      "whyItMatters": "الحقيقة: التحديث يجمع تحديثات أدوات التطوير والافتراضية مع تحسين إقلاع صورة Live على UEFI. التحليل: يهم مسؤولي الأنظمة ومطوري البرمجيات الذين يتابعون استمرار منظومة illumos، لكنه ليس تحولًا جذريًا في واجهة النظام أو دعم العتاد.",
+      "audience": "مسؤولو الأنظمة، مطورو البرمجيات مفتوحة المصدر، ومهتمو illumos والافتراضية.",
+      "nextSteps": [
+        "راجع ملاحظات الإصدار الرسمية وقائمة الحزم قبل الترقية.",
+        "اختبر صورة Live أو آلة افتراضية على بيئة غير إنتاجية، وتحقق من تعريفات جهازك قبل تثبيت النظام.",
+        "قارن إصدارات QEMU وVirtualBox والأدوات التي تعتمد عليها مع بيئتك الحالية."
+      ],
+      "limitations": "قرأت تقرير Phoronix وإعلان OpenIndiana الرسمي. أشار اختبار Phoronix على Framework Laptop 13 Pro إلى نقص دعم عدد من تعريفات الأجهزة؛ لذلك لا يُفهم التحديث كضمان توافق عام. لم أختبر التوزيعة أو أُجرِ ترقية فعلية.",
+      "reviewedAt": "2026-11-08T15:10:18+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "إعلان OpenIndiana الرسمي — Snapshot 2026.10",
+          "url": "https://openindiana.org/announcements/openindiana-hipster-2026-10-announcement/"
+        },
+        {
+          "title": "Phoronix — OpenIndiana 2026.10",
+          "url": "https://www.phoronix.com/news/OpenIndiana-2026.10"
+        }
+      ],
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBnNzYycF9SejNjc2Y5bTJiWUZDS1FPbG9nNFZXUXNHa2VWUW96ejJsLUlkVm9LbXJYQVNCWnFhd1hfcVlYNTZFdGU2NURIQ3Axb01saHZ6cmN6Y0tkQ1E?oc=5"
+    },
+    "0b33259ab43866603f": {
+      "url": "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/",
+      "titleAr": "Meta تؤجل شروطًا كانت ستوسع استخدام المواقع المرتبطة في تطوير الذكاء الاصطناعي",
+      "summaryAr": "ذكرت Ars Technica أن Meta أوقفت إلى أجل غير محدد تحديثًا لشروط الحسابات التجارية كان سيفرض السماح باستخدام مواقع خارجية مرتبطة بصفحات Facebook في تطوير منتجات الذكاء الاصطناعي. وقالت الشركة إن الشروط الحالية تبقى سارية أثناء التشاور مع أصحاب المصلحة.",
+      "whyItMatters": "المسألة تمس علاقة المنصات بحقوق الناشرين وتفضيلات الزحف مثل robots.txt، وتوضح أثر الاعتراضات التنظيمية والصحفية على سياسات البيانات.",
+      "audience": "الناشرون والمطورون ومسؤولو الخصوصية والسياسات الرقمية.",
+      "nextSteps": [
+        "تابع الصياغة النهائية للشروط الرسمية بدل اعتبار التأجيل إلغاءً نهائيًا.",
+        "افحص سياسات المنصة وتفضيلات الزحف مع عدم افتراض أنها تمنح حماية قانونية كاملة."
+      ],
+      "limitations": "التأجيل لا يعني إلغاءً دائمًا؛ بعض المخاوف منسوب إلى خبراء ومؤسسات إعلامية، بينما موقف Meta ورد عبر متحدثها. هذا تلخيص صحفي.",
+      "reviewedAt": "2026-11-08T20:47:00+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Ars Technica — Meta pauses commercial terms changes",
+          "url": "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/"
+        }
+      ]
+    },
+    "13e695696a47eccca2": {
+      "url": "https://www.engadget.com/2309559/ev-battery-can-power-house-what-stops-most-people/",
+      "titleAr": "بطارية السيارة الكهربائية قد تغذي المنزل لكن V2H يتطلب توافقًا وتجهيزًا خاصًا",
+      "summaryAr": "يشرح Engadget الفرق بين سعة البطارية وقدرة الإخراج، وبين V2H لتغذية المنزل وV2L لتشغيل أجهزة منفردة. ويشير إلى الحاجة لتوافق السيارة والشاحن ثنائي الاتجاه ومعدات التحويل والعزل الكهربائي وتركيب معتمد، وأن التوافق والتكلفة يختلفان حسب الطراز والسوق.",
+      "whyItMatters": "يوضح أن وجود بطارية كبيرة لا يكفي وحده؛ القيمة العملية تعتمد على البنية الكهربائية المحلية والتوافق والتكلفة.",
+      "audience": "المهتمون بالمركبات الكهربائية والطاقة المنزلية وصناع القرار في الطاقة.",
+      "nextSteps": [
+        "تحقق من مواصفات الشركة المصنعة للطراز والسنة والسوق قبل أي استنتاج.",
+        "استعن بمختص مرخص لتقييم التوافق؛ لا تتعامل مع السيارة كأنها قابس منزلي مباشر."
+      ],
+      "limitations": "المقال صحفي عام؛ لا يغطي كل الطرازات أو متطلبات السعودية تحديدًا، ولا يغني عن تقييم كهربائي محلي.",
+      "reviewedAt": "2026-11-08T20:47:00+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Engadget — EV battery home backup limitations",
+          "url": "https://www.engadget.com/2309559/ev-battery-can-power-house-what-stops-most-people/"
+        }
+      ]
+    },
+    "9fdb6f74ae483d9b23": {
+      "url": "https://arxiv.org/abs/2611.05662",
+      "titleAr": "دراسة أولية تحذر من تحيز التأكيد في تقييم الوكلاء بواسطة وكيل حَكَم",
+      "summaryAr": "تذكر خلاصة الورقة أن ملاحظة تمهيدية خاطئة منسوبة إلى جهة موثوقة قلبت ما يصل إلى 40% من أحكام صحيحة في تجارب على أربعة مقيمين وخمس مجموعات بيانات، رغم جمع أدلة من البيئة. وتقسم الورقة الإخفاقات إلى الإفراط في الثقة والهلوسة وقلة الاستقصاء.",
+      "whyItMatters": "استخدام وكيل لتقييم وكيل آخر لا يضمن الحياد؛ ينبغي فصل الأدلة عن الملاحظات السابقة وتسجيل مسار التحقق.",
+      "audience": "باحثو تقييم الوكلاء ومطورو أنظمة المراجعة الآلية.",
+      "nextSteps": [
+        "اقرأ الورقة كاملة ومنهجية التجارب قبل اعتماد الرقم.",
+        "صمم تقييمًا يعمي المقيم عن الملخصات غير المدعومة ويقيس أثرها."
+      ],
+      "limitations": "ملخص arXiv فقط؛ الورقة preprint قيد المراجعة، والنتيجة مرتبطة بتجارب محددة وليست معدل خطأ عامًا.",
+      "reviewedAt": "2026-11-08T20:47:00+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — Grounded but Not Immune",
+          "url": "https://arxiv.org/abs/2611.05662"
+        }
+      ]
+    },
+    "6b4ec2ccffedd67d8f": {
+      "url": "https://arxiv.org/abs/2611.07217",
+      "titleAr": "TileQuant يقترح توزيع دقة التكميم على كتل صغيرة من أوزان النماذج",
+      "summaryAr": "تقترح الورقة إطارًا دون تدريب إضافي يخصص الدقة على وحدات ثنائية الأبعاد متوافقة مع العتاد، مع الاحتفاظ ببعض الكتل بدقة 16-bit وتحويل أخرى إلى 8-bit. ويذكر الملخص أن التجارب حققت حتى 2.66× في سرعة التوليد.",
+      "whyItMatters": "اختيار وحدة التكميم قد يؤثر في التوازن بين الذاكرة وجودة المخرجات وسرعة الاستدلال، وهو جانب مهم لتشغيل النماذج محليًا.",
+      "audience": "مهندسو النماذج والباحثون في الاستدلال وضغط النماذج.",
+      "nextSteps": [
+        "راجع تفاصيل العتاد والقياسات قبل مقارنة الرقم مع حلول أخرى.",
+        "اختبر الجودة والسرعة على النموذج والعتاد المستهدفين إذا توفرت الشيفرة."
+      ],
+      "limitations": "ملخص arXiv فقط؛ النتائج من تجارب المؤلفين ولا تعني تحسنًا مماثلًا على كل نموذج أو جهاز.",
+      "reviewedAt": "2026-11-08T20:47:00+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — TileQuant",
+          "url": "https://arxiv.org/abs/2611.07217"
+        }
+      ]
+    },
+    "dcb265f08ffa052d65": {
+      "url": "https://arxiv.org/abs/2611.06988",
+      "titleAr": "دراسة تقارن نماذج التنبؤ المجمدة بخطوط أساس أبسط في تصنيف السلاسل الزمنية",
+      "summaryAr": "تقارن الورقة تمثيلات نماذج التنبؤ المجمدة مع أربعة أساليب تصنيف للسلاسل الزمنية على ست مجموعات بيانات. ووفق الملخص، تفوقت التمثيلات على نسخ عشوائية في خمس مجموعات، لكنها لم تتجاوز أقوى خط أساس غير مدرب في 15 من 17 حالة وتعادلت في حالتين.",
+      "whyItMatters": "يشدد على ضرورة استخدام خطوط أساس قوية وضوابط بأوزان عشوائية قبل افتراض أن النموذج الأكبر أو المدرب مسبقًا أفضل.",
+      "audience": "باحثو تعلم الآلة وتحليل السلاسل الزمنية وفرق التقييم.",
+      "nextSteps": [
+        "راجع مجموعة MONSTER ومقاييس التجربة قبل الاستشهاد بالأرقام.",
+        "قارن نموذجًا مدربًا مسبقًا مع خط أساس بسيط ونسخة ذات أوزان عشوائية."
+      ],
+      "limitations": "ملخص arXiv فقط؛ المقارنة تخص مجموعات وطرقًا محددة ولا تعمم على كل مهام السلاسل الزمنية.",
+      "reviewedAt": "2026-11-08T20:47:00+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — Big Models, Small Gains",
+          "url": "https://arxiv.org/abs/2611.06988"
+        }
+      ]
+    },
+    "91a344d41c03c7c96d": {
+      "url": "https://arxiv.org/abs/2611.05709",
+      "titleAr": "ورقة تبحث متى تفيد إشرافات التفكير في تدريب وكلاء اللغة",
+      "summaryAr": "تفصل الورقة بين إشراف الأفكار والأفعال عند تقطير مسارات المعلم إلى نموذج أصغر. ويذكر الملخص أن تغيير الأفكار أو حذفها كان أثره محدودًا في الأداء عبر معايير شائعة، لكنه يصبح مهمًا عندما لا تكشف الأفعال عن المعلومات الموجودة في التفكير.",
+      "whyItMatters": "قد يقلل ذلك من تكلفة بيانات التدريب عندما لا تضيف سجلات التفكير معلومات عملية جديدة، مع بقاء الحاجة إليها في الحالات التي تحمل فيها معلومات غير ظاهرة في الأفعال.",
+      "audience": "باحثو تقطير النماذج ووكلاء اللغة وتصميم بيانات التدريب.",
+      "nextSteps": [
+        "راجع تعريف التلاعب بمسارات التفكير والأفعال في الورقة.",
+        "اختبر الأثر على مهام تتطلب معلومات لا تظهر في سجل الأفعال."
+      ],
+      "limitations": "ملخص arXiv فقط؛ النتائج مرتبطة بالمعايير والأحجام التي اختبرها المؤلفون، وليست قاعدة لكل وكيل.",
+      "reviewedAt": "2026-11-08T20:47:00+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — Agents, Think Only When it Helps",
+          "url": "https://arxiv.org/abs/2611.05709"
+        }
+      ]
+    },
+    "cbc856aa32d1333eb1": {
+      "url": "https://arxiv.org/abs/2611.07667",
+      "titleAr": "دراسة تجريبية تظهر أن زيادة المعلومات قد تحسن أو تضعف تعاون وكلاء اللغة",
+      "summaryAr": "تختبر الورقة سياسات إفصاح مختلفة للمعلومات بين وكلاء لغويين في أسواق تبادل ومساومة ومزادات. ويشير الملخص إلى أن أثر إظهار تفاصيل أكثر يعتمد على النموذج والمهمة؛ فقد تحسنت النتائج لبعض النماذج وتراجعت الرفاهية أو توازن الاتفاقات في حالات أخرى.",
+      "whyItMatters": "مشاركة كل البيانات مع كل وكيل ليست بالضرورة أفضل؛ تصميم الصلاحيات ومقدار المعلومات جزء من هندسة النظام.",
+      "audience": "باحثو الأنظمة متعددة الوكلاء ومصممو سير العمل المعتمد على الوكلاء.",
+      "nextSteps": [
+        "راجع إعدادات التجارب والنماذج قبل تعميم النتائج.",
+        "صمم اختبارات تقارن الإفصاح الكامل والجزئي مع ثبات قواعد التفاعل."
+      ],
+      "limitations": "ملخص arXiv فقط؛ النتائج ضمن ثلاث بيئات اقتصادية تجريبية وعشرة نماذج، ولا تثبت سلوك الوكلاء في كل سياق.",
+      "reviewedAt": "2026-11-08T20:47:00+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — Who Should Know What?",
+          "url": "https://arxiv.org/abs/2611.07667"
+        }
+      ]
+    },
+    "a47dad607e0fe97888": {
+      "url": "https://arxiv.org/abs/2611.07066",
+      "titleAr": "إطار EFXPLORER يوازن استكشاف الوكلاء المتعاونين مع الحفاظ على أداء المهمة",
+      "summaryAr": "تقترح الورقة طريقة للاستكشاف في التعلم المعزز متعدد الوكلاء تفصل مكافآت الاستكشاف عن هدف الفريق، وتضع ميزانية استكشاف ضمن قيد يحافظ على أداء المهمة. ويذكر الملخص نتائج على مجموعات SMAX وVMAS وMPE.",
+      "whyItMatters": "تحدي التعلم المعزز متعدد الوكلاء هو اكتشاف سلوك تعاوني دون أن تفسد المكافآت الإضافية هدف المهمة؛ فصل الهدفين قد يحسن تصميم التجارب.",
+      "audience": "باحثو التعلم المعزز والأنظمة متعددة الوكلاء.",
+      "nextSteps": [
+        "اقرأ تفاصيل إعادة الصياغة والميزانية التكيفية في الورقة.",
+        "قارن النتائج بخطوط الأساس على مجموعات الاختبار المذكورة."
+      ],
+      "limitations": "ملخص arXiv فقط؛ النتائج من تجارب المؤلفين على ثلاث مجموعات معيارية ولا تعمم تلقائيًا على كل بيئة.",
+      "reviewedAt": "2026-11-08T20:47:00+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — Cooperative Multi-Agent Reinforcement Learning via Epigraph-Form Guided Exploration",
+          "url": "https://arxiv.org/abs/2611.07066"
+        }
+      ]
+    },
+    "7cdeffc8e00dfd185d": {
+      "url": "https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/",
+      "titleAr": "تقرير: OpenAI تجمع 11 مليار دولار عند تقييم خاص قدره 1.25 تريليون",
+      "summaryAr": "أفادت Reuters في 6 نوفمبر، نقلًا عن تقرير Bloomberg ومصادر مطلعة، بأن OpenAI جمعت 11 مليار دولار ضمن تمويل أوسع عند تقييم خاص مبلّغ عنه قدره 1.25 تريليون دولار. وتناول التقرير مشاركة مستثمرين كبار، لكنه لا يمثل إفصاحًا ماليًا رسميًا من الشركة.",
+      "whyItMatters": "حجم التمويل يوضح كلفة المنافسة على النماذج والبنية الحاسوبية، لكن التقييم الخاص لا يثبت ربحية الشركة أو تحقق القيمة مستقبلًا. كما أن الأرقام المنقولة صحفيًا تختلف في قوتها عن إعلان رسمي أو بيانات مالية مدققة.",
+      "audience": "متابعو صناعة الذكاء الاصطناعي، وطلاب الاقتصاد الرقمي، وفرق البنية التحتية والحوسبة.",
+      "nextSteps": [
+        "تابع أي إعلان رسمي لاحق من OpenAI أو المستثمرين لتأكيد تفاصيل الجولة.",
+        "قارن التمويل المعلن بإنفاق الحوسبة ومراكز البيانات بدل اعتباره مؤشرًا منفردًا على النجاح.",
+        "ميّز بين تقييم جولة خاصة وقيمة سوقية قابلة للتداول."
+      ],
+      "limitations": "المادة الصحفية تنقل عن مصادر وتقارير؛ لم تكن بيانًا ماليًا رسميًا من OpenAI. التقييم تقدير لجولة خاصة وليس سعر سهم عام أو دليلًا على أرباح محققة.",
+      "reviewedAt": "2026-11-08T21:15:25+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Reuters — OpenAI gets $11 billion funding at $1.25 trillion valuation",
+          "url": "https://www.reuters.com/business/openai-secures-11-billion-funding-125-trillion-valuation-bloomberg-news-reports-2026-11-06/"
+        }
+      ]
+    },
+    "c08233254ab5569234": {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
+      "titleAr": "دعويان جديدتان تتهمان Suno بتقليد صوت Elvis Presley وأعمال Eminem",
+      "summaryAr": "أفادت The Verge في 8 نوفمبر بأن أصحاب حقوق مرتبطة بموسيقى Elvis Presley وناشر أعمال لـEminem رفعوا دعويين ضد شركة Suno، متهمينها بتوليد موسيقى وكلمات تحاكي الفنانين. وتقول الدعوى المتعلقة بـPresley إن ذلك يخالف قانون ELVIS في ولاية Tennessee. وردت Suno بأنها تمنع الطلبات التي تستخدم أسماء فنانين وأعمالهم وتفحص الملفات المرفوعة بحثًا عن إساءة الاستخدام.",
+      "whyItMatters": "القضية تضع حقوق الصوت والهوية والتدريب والتوليد الموسيقي أمام اختبار قانوني جديد. وهي مهمة لمطوري النماذج والمنصات، لكنها لا تحسم وحدها ما تسمح به القوانين أو ما إذا كانت الادعاءات صحيحة.",
+      "audience": "مطورو أدوات الصوت التوليدي، وصنّاع الموسيقى، ومتابعو سياسات حقوق النشر والهوية.",
+      "nextSteps": [
+        "تابع نصوص الدعاوى وردود الشركة وقرارات المحكمة بدل الاكتفاء بالعناوين.",
+        "راقب أدوات المنصات لمنع انتحال الفنانين أو استخدام أسمائهم وصوتهم دون إذن.",
+        "افصل بين دعاوى حقوق الصوت والهوية وبين دعاوى حقوق النشر التقليدية."
+      ],
+      "limitations": "المعلومات الواردة تتعلق بادعاءات قضائية ورد الشركة؛ لم يصدر حكم نهائي في المادة التي تمت قراءتها، ولا ينبغي التعامل مع الاتهامات باعتبارها وقائع قضائية مثبتة.",
+      "reviewedAt": "2026-11-08T21:15:25+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "The Verge — Elvis and Eminem rights holders are suing Suno",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit"
+        }
+      ]
+    },
+    "9a720b3178d2f33796": {
+      "url": "https://www.wired.com/story/nyt-cooking-new-ai-powered-recipe-modifier-is-pretty-good/",
+      "titleAr": "NYT Cooking تختبر أداة ذكاء اصطناعي لتعديل الوصفات للمشتركين",
+      "summaryAr": "اختبرت WIRED ميزة تجريبية داخل تطبيق NYT Cooking على iOS تتيح للمشتركين طلب بدائل للمكونات أو المعدات وتعديلات تناسب احتياجاتهم. تظهر التغييرات بوضوح ويمكن الرجوع إلى الوصفة الأصلية. وذكر الاختبار أنه رصد اقتراحًا غير مناسب في توقيت طهي الدجاج، كما تؤكد الواجهة أن النسخة المعدلة لم يختبرها أو يعتمدها مبتكر الوصفة الأصلية.",
+      "whyItMatters": "المثال يوضح استخدامًا عمليًا للذكاء الاصطناعي كمساعد لتحوير محتوى موثوق بدل إنشاء وصفة من الصفر، مع إبقاء التغييرات مرئية وإتاحة الرجوع للأصل. لكنه يبين أيضًا أن التعديل اللغوي المقنع لا يضمن صحة كل خطوة عملية.",
+      "audience": "فرق المنتجات الرقمية، ومطورو تطبيقات المحتوى، والناشرون الذين يدمجون الذكاء الاصطناعي في مواد يراجعها خبراء.",
+      "nextSteps": [
+        "افحص التغييرات مقارنة بالوصفة الأصلية ولا تفترض أن النسخة المعدلة اختُبرت.",
+        "راقب توسع الميزة خارج نسخة iOS التجريبية قبل اعتبارها متاحة للجميع.",
+        "قيّم التصميم الذي يوضح التعديلات ويتيح الرجوع إلى النسخة الأصلية."
+      ],
+      "limitations": "الميزة في نسخة iOS تجريبية بحسب المقال؛ تجربة الصحفي شملت أمثلة محدودة ولا تمثل اختبارًا علميًا شاملًا. الوصفات المعدلة ليست بالضرورة مختبرة أو معتمدة من أصحاب الوصفات الأصلية.",
+      "reviewedAt": "2026-11-08T21:15:25+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "WIRED — I Used NYT Cooking’s New AI-Powered Recipe Modifier",
+          "url": "https://www.wired.com/story/nyt-cooking-new-ai-powered-recipe-modifier-is-pretty-good/"
+        }
+      ]
+    },
+    "7ff53c833c04080042": {
+      "url": "https://www.theverge.com/tech/1029526/chatbots-might-be-coming-to-apples-homeview",
+      "titleAr": "مؤشرات في نسخة iOS تجريبية تلمّح إلى تطبيقات محادثة في Apple HomeView",
+      "summaryAr": "رصدت The Verge في نسخة iOS 27.3 التجريبية إشارة إلى فئة باسم Conversational Apps ضمن HomeView، ما قد يفتح المجال مستقبلًا لواجهات محادثة أو مساعدين مثل ChatGPT وClaude. ويشير التقرير إلى أن بعض عناصر الصوت وإدارة الجلسات لم تكن مكتملة الربط، وأن Apple لم تعلن الميزة رسميًا أو تحدد موعدًا لإطلاقها.",
+      "whyItMatters": "إذا تحولت الإشارة إلى منتج، فقد تنتقل واجهات الذكاء الاصطناعي من الهاتف إلى مركز المنزل الذكي. الأثر الحقيقي سيتوقف على صلاحيات الميكروفون والبيانات المنزلية وإدارة التطبيقات، لا على وجود اسم الفئة في نسخة تجريبية فقط.",
+      "audience": "مطورو تطبيقات Apple، وفرق المنزل الذكي، ومصممو المساعدات الصوتية.",
+      "nextSteps": [
+        "انتظر إعلان Apple الرسمي قبل اعتبار الميزة متاحة أو تحديد التطبيقات المدعومة.",
+        "عند ظهور تفاصيل رسمية، راجع أذونات الصوت والبيانات والتحكم في التطبيقات.",
+        "تابع ما إذا كانت الإشارة التجريبية ستصل إلى إصدار عام أم ستتغير."
+      ],
+      "limitations": "المعلومة مبنية على تحليل شيفرة نسخة تجريبية؛ لا يوجد إعلان رسمي أو موعد إطلاق أو قائمة تطبيقات مؤكدة، وقد تتغير الميزة أو لا تصدر.",
+      "reviewedAt": "2026-11-08T21:15:25+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "The Verge — AI chatbots might be coming to Apple’s HomeView",
+          "url": "https://www.theverge.com/tech/1029526/chatbots-might-be-coming-to-apples-homeview"
+        }
+      ]
+    },
+    "a44e5a0e0ca44230ba": {
+      "url": "https://arxiv.org/abs/2611.07130",
+      "titleAr": "بحث يقترح تعليم الوكلاء مبادئ السلوك بدل الاعتماد على إشارة المكافأة",
+      "summaryAr": "يقترح البحث أسلوب Prescriptive Policy Learning لتعليم الوكيل مبادئ سلوكية أعلى مستوى، مثل كيفية الحفاظ على التوازن أو إنهاء الحركة بسلاسة، بدل أن يستنتج السلوك المطلوب من سلسلة مكافآت رقمية. ويذكر الملخص أن تجارب المؤلف حققت سياسات قابلة للتعميم باستخدام عينات أقل من بعض الأساليب المعتمدة على المكافأة.",
+      "whyItMatters": "الفكرة مهمة لتصميم وكلاء يتعلمون أهدافًا أوضح من مجرد تحسين رقم المكافأة، وقد تخفف عبء هندسة reward functions. لكن جودة الطريقة تعتمد على اختيار المبادئ وقياسها، ولا يكفي الملخص لإثبات تفوقها خارج المهام المختبرة.",
+      "audience": "باحثو التعلم المعزز، ومهندسو الوكلاء، ومطورو بيئات المحاكاة.",
+      "nextSteps": [
+        "اقرأ الورقة كاملة لفهم كيفية اختيار المبادئ والكميات المرجعية.",
+        "افحص المهام وخطوط الأساس وعدد العينات قبل مقارنة النتائج.",
+        "اختبر الفكرة على بيئة مستقلة قبل اعتمادها في وكيل إنتاجي."
+      ],
+      "limitations": "تمت قراءة صفحة الملخص فقط، لا الورقة الكاملة أو الكود. النتائج المذكورة من المؤلف وليست إعادة إنتاج مستقلة، ولا يثبت الملخص أن النهج يتفوق في جميع أنواع الوكلاء.",
+      "reviewedAt": "2026-11-08T21:15:25+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — Teaching Agents the Principle, Not the Reward",
+          "url": "https://arxiv.org/abs/2611.07130"
+        }
+      ]
+    },
+    "11c6518cf3e4b21797": {
+      "url": "https://arxiv.org/abs/2611.07093",
+      "titleAr": "إسناد متناثر للخبراء يحاول خفض كلفة التعلم الاتحادي لنماذج MoE",
+      "summaryAr": "يعرض الملخص إطار S³-MoE لتقدير الخبراء الأكثر صلة بكل عميل في التعلم الاتحادي اعتمادًا على ملاحظات جزئية، ثم تحسين الإسناد بآلية استكشاف واستغلال. في تجربة مذكورة على MoE مبني على CNN ومجموعة CIFAR-100، أفاد المؤلفان بتحسن 1.31 نقطة مئوية في الدقة النهائية مع إتاحة خمسة خبراء فقط من أصل عشرين لكل عميل.",
+      "whyItMatters": "قد يقلل اختيار الخبراء المناسبين الذاكرة والحساب المطلوبين على الأجهزة الطرفية، وهو اتجاه مهم للأنظمة الموزعة. لكن التجربة المذكورة ليست على نموذج لغوي كبير، لذلك لا ينبغي نقل النتيجة مباشرة إلى LLMs.",
+      "audience": "باحثو التعلم الاتحادي، ومهندسو edge ML، ومطورو أنظمة Mixture-of-Experts.",
+      "nextSteps": [
+        "راجع الضمانات النظرية وافتراضات الملاحظات الجزئية.",
+        "قارن الطريقة بأساليب تحميل الخبراء الجزئي الأخرى.",
+        "اختبرها على أجهزة طرفية وبيانات غير متجانسة قبل تعميم النتيجة."
+      ],
+      "limitations": "تمت قراءة الملخص فقط. التجربة الموصوفة تستخدم CNN-based MoE على CIFAR-100 وليست اختبارًا مباشرًا على LLM؛ أرقام الدقة من المؤلفين ولم تُعَد تجربتها هنا.",
+      "reviewedAt": "2026-11-08T21:15:25+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — Server-Side Sparse Assignment for Federated Mixture-of-Experts",
+          "url": "https://arxiv.org/abs/2611.07093"
+        }
+      ]
+    },
+    "14dea264cd89a5a00c": {
+      "url": "https://arxiv.org/abs/2611.07206",
+      "titleAr": "TrustMix يقترح تراجعًا تدريجيًا إلى توزيع احتياطي عند تغير البيانات",
+      "summaryAr": "يقدم الملخص طريقة لاحقة للتدريب تمزج توزيع توقع النموذج المدرب مع توزيع احتياطي يحدده المستخدم. كلما ارتفعت إشارة الانحراف عن توزيع التدريب، يتحول التوقع تدريجيًا نحو التوزيع الاحتياطي. ويذكر المؤلفون تقييمًا على تحولات اصطناعية وحقيقية في بيانات جدولية وصورية ولغوية دون إعادة تدريب النموذج الأساسي.",
+      "whyItMatters": "النهج يعالج مشكلة الثقة المفرطة خارج نطاق التدريب ويجعل سلوك النموذج عند عدم اليقين أكثر قابلية للتحكم. نجاحه يتوقف على اختيار إشارة الانحراف والتوزيع الاحتياطي؛ فاختيار احتياطي سيئ قد يستبدل خطأً بآخر.",
+      "audience": "مهندسو تعلم الآلة، وفرق تقييم النماذج، ومطورو الأنظمة الحساسة لتغير البيانات.",
+      "nextSteps": [
+        "افحص تعريف إشارة OOD وكيفية معايرتها.",
+        "قارن المعايرة والاحتمالية التنبؤية مع خطوط أساس مناسبة.",
+        "اختبر توزيعًا احتياطيًا مستمدًا من معرفة المجال على بيانات جديدة."
+      ],
+      "limitations": "تمت قراءة الملخص فقط، ولم تُراجع تفاصيل التجارب أو الكود. التحسن المذكور تقرير المؤلفين، كما أن جودة التراجع تعتمد على صلاحية التوزيع الاحتياطي.",
+      "reviewedAt": "2026-11-08T21:15:25+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — TrustMix: Graceful Degradation for Pretrained Models under Distribution Shift",
+          "url": "https://arxiv.org/abs/2611.07206"
+        }
+      ]
+    },
+    "40be8173b384ddb90e": {
+      "url": "https://arxiv.org/abs/2611.07208",
+      "titleAr": "إطار بحثي يمثل معتقدات وأهداف الوكيل صراحةً انطلاقًا من مساراته",
+      "summaryAr": "يقترح البحث Structured Machine Theory of Mind تمثيلًا منفصلًا للمعتقدات والرغبات ضمن بنية Belief-Desire-Intention، ثم استخدام هذه القنوات لتفسير المسارات وإجراء تدخلات افتراضية. يصف الملخص تجربة مضبوطة في مجال تنقل المشاة، حيث أمكن تغيير حالة اعتقاد أو رغبة وملاحظة تغير الوجهة المتوقعة.",
+      "whyItMatters": "قد يدعم هذا النوع من التمثيل تفسيرًا أوضح لسلوك الوكلاء ومحاكاة السيناريوهات المضادة للواقع. لكن التجربة في نطاق تنقل مضبوط، ولا تثبت أن النموذج يستطيع استنتاج الحالات الذهنية الحقيقية للبشر في مواقف عامة.",
+      "audience": "باحثو تفسير النماذج، ومحاكاة الوكلاء، وواجهات الإنسان والآلة.",
+      "nextSteps": [
+        "راجع بنية الإشراف على المعتقدات والرغبات ومصدر التسميات.",
+        "افحص حدود مجال تنقل المشاة قبل نقل الطريقة إلى سياقات أخرى.",
+        "قارن الأداء مع نماذج المسارات وحدها ومع خط أساس ذي إشراف مساعد."
+      ],
+      "limitations": "تمت قراءة الملخص فقط. التجربة الموصوفة في بيئة تنقل مشاة مضبوطة؛ لا يصح تفسير المخرجات على أنها قراءة مباشرة أو مؤكدة لأفكار البشر.",
+      "reviewedAt": "2026-11-08T21:15:25+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — Structured Machine Theory of Mind from Agent Trajectories",
+          "url": "https://arxiv.org/abs/2611.07208"
+        }
+      ]
+    },
+    "5208fc4d61dd02d27e": {
+      "url": "https://arxiv.org/abs/2611.07226",
+      "titleAr": "Loopback Transformer يدرس إعادة استخدام التحديثات عبر كتل مشتركة",
+      "summaryAr": "يعيد البحث تنظيم طريقة استخدام مخرجات الكتل المتكررة في Transformer ذي الأوزان المشتركة، مع مسار منفصل للمدخل وتوزيع متعلم لأوزان التحديثات السابقة. ويذكر الملخص نتائج على ClimbMix بخسارة تحقق أقل من خطوط أساس Transformer مع 40–75% من عدد المعلمات، باستثناء تضمينات الرموز ورأس الإخراج، وعبر 13 مهمة لاحقة.",
+      "whyItMatters": "العمل يختبر مسارًا لتقليل المعلمات مع الاحتفاظ بعمق حسابي، ما قد يفيد كفاءة التدريب والنشر. لكن الحكم يحتاج مقارنة عادلة على بيانات ونماذج أكبر، والتحقق من كلفة التنفيذ لا عدد المعلمات وحده.",
+      "audience": "باحثو بنى النماذج، ومهندسو LLM، وفرق كفاءة التدريب.",
+      "nextSteps": [
+        "راجع إعدادات ClimbMix ومطابقة عدد الرموز والعمق مع خطوط الأساس.",
+        "افحص كلفة الذاكرة والسرعة إلى جانب عدد المعلمات.",
+        "أعد تجربة صغيرة مستقلة قبل تعميم نتائج الملخص."
+      ],
+      "limitations": "تمت قراءة الملخص فقط. المقاييس المذكورة من المؤلفين، كما أن نسبة المعلمات تستثني تضمينات الرموز ورأس الإخراج وفق الملخص.",
+      "reviewedAt": "2026-11-08T21:15:25+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — Loopback Transformer: Towards a Unified View of Residual Looped Transformers",
+          "url": "https://arxiv.org/abs/2611.07226"
+        }
+      ]
+    },
+    "1d43601888e266f089": {
+      "url": "https://arxiv.org/abs/2611.07233",
+      "titleAr": "بحث يستغل تكافؤ تمثيلات الشبكات لتقليل حجم ملفات النماذج",
+      "summaryAr": "يقترح البحث البحث عن تحويلات تحفظ الدالة التي تنفذها الشبكة، أو تسمح بتغيير وظيفي محدود، ثم تمرير التمثيل الناتج إلى ضواغط عامة دون تصميم codec جديد. ويذكر الملخص خفضًا يصل إلى 23.4% في حجم checkpoints المضغوطة بـZstandard على SmolLM2 وQwen3.",
+      "whyItMatters": "إذا أمكن الحفاظ على جودة النموذج مع تقليل حجم الملفات، فقد تنخفض كلفة التخزين والنقل والتوزيع. لكن يلزم فحص أثر التحويلات على المخرجات والمهام اللاحقة، وليس حجم الملف وحده.",
+      "audience": "باحثو ضغط النماذج، وفرق نشر النماذج، ومهندسو البنية التحتية.",
+      "nextSteps": [
+        "راجع التحويلات التي تحفظ الدالة مقابل التحويلات ذات التشويه المحدود.",
+        "قارن الجودة على مهام متعددة بعد فك الضغط.",
+        "اختبر النتيجة على معماريات وأحجام إضافية مع تسجيل كلفة المعالجة."
+      ],
+      "limitations": "تمت قراءة الملخص فقط. نسبة 23.4% حد أقصى أبلغ عنه المؤلف على نماذج محددة، ولم نراجع تفاصيل التقييم أو نكرر التجربة.",
+      "reviewedAt": "2026-11-08T21:15:25+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — Neural Compression over Equivalence Classes",
+          "url": "https://arxiv.org/abs/2611.07233"
+        }
+      ]
+    },
+    "4c861a74d24931e081": {
+      "url": "https://arxiv.org/abs/2611.07088",
+      "titleAr": "BCSS يولّد نماذج رمزية قابلة للتفسير لمقارنة استدلال البشر والآلات",
+      "summaryAr": "يعرض الملخص أسلوب Behavior-Conditioned Symbolic Synthesis للبحث آليًا عن برامج رمزية حتمية قابلة للتفسير تعيد إنتاج السلوك عبر مئات مسائل الاستدلال. ويذكر المؤلفون أن تحليل البرامج الناتجة كشف أنماطًا مشتركة من التبسيط واستخدام قواعد جزئية لدى البشر والأنظمة الآلية.",
+      "whyItMatters": "العمل يربط تفسير النماذج بتوليد تفسيرات رمزية قابلة للفحص بدل الاكتفاء بمخرجات صندوق أسود. وقد يساعد على مقارنة أنماط الاستدلال، لكن النتائج تتأثر بتصميم المسائل وبقدرة خوارزمية التركيب على إيجاد البرامج المناسبة.",
+      "audience": "باحثو تفسير الذكاء الاصطناعي، والعلوم المعرفية، وتقييم النماذج.",
+      "nextSteps": [
+        "راجع مجموعة مسائل الاستدلال ومعايير قبول البرنامج الرمزي.",
+        "افحص كلفة البحث الحسابية واحتمال وجود تفسيرات بديلة.",
+        "قارن النماذج الرمزية بتفسيرات مستقلة وبخطوط أساس بسيطة."
+      ],
+      "limitations": "تمت قراءة الملخص فقط، لا الورقة الكاملة أو الكود. وصف المؤلفين للأنماط المشتركة لا يعني تطابق آليات التفكير لدى البشر والآلات.",
+      "reviewedAt": "2026-11-08T21:15:25+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — Synthesizing symbolic models of human and machine reasoning at scale",
+          "url": "https://arxiv.org/abs/2611.07088"
+        }
+      ]
+    },
+    "c4e17a182be4d6face": {
+      "url": "https://arxiv.org/abs/2611.07246",
+      "titleAr": "KG-Neighbor يستخدم علاقات الرسوم المعرفية لتحسين جوار التضمينات",
+      "summaryAr": "يقترح البحث بناء رسم جوار دلالي من ثلاثيات الرسم المعرفي، ثم تعديل المسافات بين التضمينات لإعادة بناء أقرب الجيران. ويعرض الملخص تقييمًا عبر ثمانية إعدادات لبيانات نصية وصورية ومشفّرات مختلفة، مع تحسن في مقاييس NMI وLT2D مقارنة بخط أساس kNN في ظروف الاختبار.",
+      "whyItMatters": "قد يساعد النهج على جعل قرب النقاط في خرائط التضمين أقرب إلى العلاقات التي يدعمها المحتوى، بدل الاعتماد على المسافة العددية وحدها. لكن استخراج المعرفة وبناء الرسم يضيفان تعقيدًا، والنتائج تختلف باختلاف المشفر والبيانات.",
+      "audience": "علماء البيانات، وباحثو الرسوم المعرفية، ومطورو أدوات تصور التضمينات.",
+      "nextSteps": [
+        "راجع طريقة استخراج ثلاثيات الرسم المعرفي ومصدرها.",
+        "قارن نتائج KGN مع kNN على بياناتك ومشفّرات مختلفة.",
+        "تحقق من الحالات التي تبقى فيها أخطاء التصنيف أو الجوار دون حل."
+      ],
+      "limitations": "تمت قراءة الملخص فقط. التقييم يغطي ثمانية إعدادات محددة وفق الملخص، ولم نراجع الورقة أو نكرر النتائج. القبول المذكور في الملخص لورشة WSDN 2027.",
+      "reviewedAt": "2026-11-08T21:15:25+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — KG-Neighbor: Knowledge-Guided Neighborhood Construction for Embedding Visualization",
+          "url": "https://arxiv.org/abs/2611.07246"
+        }
+      ]
+    },
+    "fe5fdb83e1ea95f1b4": {
+      "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+      "titleAr": "غولدمان ساكس يقيّد استخدام أدوات البرمجة بالذكاء الاصطناعي خارج فرق الهندسة",
+      "summaryAr": "ينقل تقرير State of AI، مستندًا إلى Bloomberg، أن Goldman Sachs قصرت استخدام Claude Code وأدوات البرمجة التابعة لـGitHub على المهندسين بعد مراجعة للإنتاجية والمخاطر. ويذكر التقرير أن فريق strats احتفظ بإمكانية الوصول، وأن مساعد البنك الداخلي القائم على نماذج متعددة ظل متاحًا على مستوى الشركة؛ لذلك فالتغيير يخص وكلاء البرمجة الخارجيين لا كل استخدامات الذكاء الاصطناعي.",
+      "whyItMatters": "الدرس المؤسسي أن إتاحة وكيل يكتب الكود لا تكفي وحدها: يجب تحديد من يملك الأداة الناتجة، ومن يراجعها، ومن يتحمل مسؤوليتها قبل اتصالها ببيانات أو أنظمة إنتاجية.",
+      "audience": "مهندسو البرمجيات، وفرق الأمن والحوكمة، ومديرو التقنية والمنتجات في المؤسسات المنظمة.",
+      "nextSteps": [
+        "تحديد مهندس مسؤول عن مراجعة أي أداة ينتجها وكيل خارج فريق الهندسة.",
+        "حصر بيانات العملاء والأنظمة الإنتاجية التي لا يجوز للوكيل الوصول إليها افتراضيًا.",
+        "قياس جودة الكود ومعدل العيوب ووقت المراجعة قبل توسيع صلاحيات الاستخدام."
+      ],
+      "limitations": "المصدر تقرير State of AI ينقل Bloomberg، وليس بيانًا تفصيليًا منشورًا من Goldman Sachs. لا يثبت القرار حظر جميع أدوات الذكاء الاصطناعي أو جميع الاستخدامات غير البرمجية.",
+      "sources": [
+        {
+          "title": "State of AI — Goldman Sachs and Claude Code",
+          "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers"
+        }
+      ],
+      "reviewedAt": "2026-11-09T08:43:29+03:00",
+      "basis": "article"
+    },
+    "7cbb1e8e79a4571203": {
+      "url": "https://mailroute.net/blog/outlook-rejecting-email-without-dmarc",
+      "titleAr": "MailRoute ترصد رفض Outlook.com بعض الرسائل من نطاقات لا تنشر DMARC",
+      "summaryAr": "تقول MailRoute إنها رصدت منذ 5 نوفمبر 2026 ارتداد بعض الرسائل المرسلة إلى Outlook.com وHotmail وLive وMSN من نطاقات لا تنشر سجل DMARC، مع رسالة رفض 550 5.7.1. وتوضح الشركة أن ملاحظتها تختلف عن سياسة Microsoft المنشورة سابقًا للمرسلين الذين يتجاوزون 5,000 رسالة يوميًا؛ كما تقول إن Microsoft لم تكن قد أعلنت هذا السلوك الجديد حتى 6 نوفمبر.",
+      "whyItMatters": "قد تفشل رسائل تشغيلية مهمة حتى عندما يمر بعضها، لذلك لا يكفي اختبار رسالة واحدة. مصادقة النطاق عبر SPF وDKIM وDMARC جزء من موثوقية أنظمة الإشعارات والبريد.",
+      "audience": "مسؤولو النطاقات والبريد، ومطورو أنظمة الإشعارات، والجهات التي تراسل مستخدمي Outlook.com.",
+      "nextSteps": [
+        "تحقق من سجلات SPF وDKIM وDMARC ومحاذاتها مع نطاق From.",
+        "راقب تقارير DMARC وسجلات الارتداد بدل افتراض أن وصول بعض الرسائل يعني سلامة الإعداد.",
+        "لا تنقل سياسة DMARC إلى quarantine أو reject قبل حصر كل خدمات الإرسال ومراجعة تقاريرها."
+      ],
+      "limitations": "الملاحظة الجديدة صادرة عن MailRoute من سجلاتها وليست إعلانًا مستقلاً من Microsoft؛ لم يذكر المقال حجم العينة أو معدل الانتشار. قيمة p=none تتيح المراقبة ولا تفرض إجراءً على الرسائل الفاشلة.",
+      "sources": [
+        {
+          "title": "MailRoute — Outlook.com and DMARC",
+          "url": "https://mailroute.net/blog/outlook-rejecting-email-without-dmarc"
+        }
+      ],
+      "reviewedAt": "2026-11-09T08:43:29+03:00",
+      "basis": "article"
+    },
+    "655f55142621af7630": {
+      "url": "https://www.engadget.com/2309632/one-problem-with-new-hdds-5000-drives-study/",
+      "titleAr": "بيانات Backblaze تبرز اختلاف موثوقية الأقراص حسب الطراز والعمر",
+      "summaryAr": "يعرض Engadget بيانات Backblaze لأسطول يضم 353,041 قرصًا في تقرير الربع الثاني من 2026، حيث بلغ معدل الفشل السنوي مدى الحياة 1.41%. ويقارنها بتقرير Secure Data Recovery لعينة تزيد على 5,000 قرص كان قد تعطل بالفعل، وقدّر متوسطها بـ807 أيام؛ وهذا الرقم الأخير لا يمثل العمر المتوقع لكل الأقراص لأنه محسوب على عينة فشل منتقاة.",
+      "whyItMatters": "اختيار التخزين ينبغي أن يعتمد على بيانات الطراز والحمل والعمر، مع نسخ احتياطي مستقل. متوسط واحد لا يضمن سلامة قرص بعينه، وRAID لا يحل محل النسخ الاحتياطي.",
+      "audience": "مستخدمو NAS، ومسؤولو الأنظمة، وفرق مراكز البيانات، ومن يخططون لتخزين طويل الأجل.",
+      "nextSteps": [
+        "قارن معدل الفشل للطراز المحدد بدل الاعتماد على متوسط جميع الأقراص.",
+        "احتفظ بنسخة احتياطية منفصلة وخارج الجهاز أو الموقع.",
+        "راقب مؤشرات SMART وسجل الأعطال، وضع خطة استبدال مبنية على العمر والحمل."
+      ],
+      "limitations": "Engadget مصدر ثانوي. بيانات Backblaze تخص أسطول الشركة ولا تمثل كل السوق، أما متوسط 807 أيام فيخص عينة أقراص فاشلة بالفعل ولا يصح تعميمه على عمر الأقراص السليمة.",
+      "sources": [
+        {
+          "title": "Engadget — HDD study summary",
+          "url": "https://www.engadget.com/2309632/one-problem-with-new-hdds-5000-drives-study/"
+        },
+        {
+          "title": "Backblaze — Q2 2026 Drive Stats",
+          "url": "https://www.backblaze.com/blog/backblaze-drive-stats-for-q2-2026/"
+        }
+      ],
+      "reviewedAt": "2026-11-09T08:43:29+03:00",
+      "basis": "article"
+    },
+    "b9c0dd474c98ba8411": {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
+      "titleAr": "تقرير: Apple تسرّع تطوير Siri لتنفيذ مهام متتابعة عبر التطبيقات",
+      "summaryAr": "تنقل The Verge عن Bloomberg أن Apple تضغط لتسريع خارطة Siri. ويتوقع التقرير أن تضيف نسخة iOS 27.3 تحكمًا أعمق في تطبيقات Apple، ثم تكاملًا مع تطبيقات خارجية لاحقًا في الربيع، بينما يتجه الهدف الأبعد إلى مساعد يتابع هدفًا وينفذ عدة خطوات دون طلب جديد عند كل خطوة.",
+      "whyItMatters": "الانتقال من المساعد الحواري إلى وكيل ينفذ مهامًا يرفع أهمية صلاحيات التطبيقات، وتأكيد العمليات الحساسة، وسجل الأفعال، وإمكانية التراجع عند الخطأ.",
+      "audience": "مطورو تطبيقات iOS، ومصممو المنتجات، وفرق المساعدات والوكلاء.",
+      "nextSteps": [
+        "انتظر وثائق Apple وملاحظات الإصدارات التجريبية قبل بناء اعتماد على المواعيد المتوقعة.",
+        "صمم إجراءات التطبيقات بصلاحيات محددة وتأكيد واضح قبل الأفعال الحساسة.",
+        "اختبر الإلغاء والتراجع والتعامل مع فشل خطوة وسط سلسلة مهام."
+      ],
+      "limitations": "التوقيت والميزات مستندان إلى تقرير Bloomberg الذي نقلته The Verge، وليسا إعلانًا رسميًا من Apple؛ قد تتغير الخطط قبل الإصدار.",
+      "sources": [
+        {
+          "title": "The Verge — Apple is racing to make Siri more agentic",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic"
+        }
+      ],
+      "reviewedAt": "2026-11-09T08:43:29+03:00",
+      "basis": "article"
+    },
+    "d1d29453d583846bd7": {
+      "url": "https://www.theverge.com/games/1029557/epic-games-launcher-is-coming-to-steamos",
+      "titleAr": "Epic تؤكد أن مشغّلها الجديد يستهدف SteamOS وتوزيعات Linux",
+      "summaryAr": "بحسب The Verge، أكدت Epic أن Epic Games Launcher ما زال في مرحلة المعاينة وسيستهدف SteamOS وتوزيعات مثل Fedora وCachy وOmarchy، مع استمرار اختبار صيغ الحزم وإعادة AppImage خلال نوفمبر. دعم المشغّل لا يعني أن Fortnite أصبحت متوافقة؛ فما زالت متطلبات Easy Anti-Cheat v2 عائقًا لم يُحسم.",
+      "whyItMatters": "قد يوسع ذلك خيارات مستخدمي Linux وSteam Deck، لكنه يوضح ضرورة الفصل بين توافق متجر الألعاب وتوافق كل لعبة وخدمات الحماية التي تعتمد عليها.",
+      "audience": "مستخدمو Linux وSteam Deck، ومطورو الألعاب، ومتابعو منظومة ألعاب الحاسوب.",
+      "nextSteps": [
+        "تابع إعلان Epic الرسمي عن الإصدارات وصيغ الحزم المدعومة.",
+        "تحقق من توافق التوزيعة والمعمارية قبل تثبيت نسخة المعاينة.",
+        "تحقق من دعم كل لعبة على حدة ولا تفترض أن Fortnite تعمل لمجرد دعم المشغّل."
+      ],
+      "limitations": "المشغّل ما زال Preview ولا يوجد موعد إصدار مستقر مؤكد. المقال يوضح أن دعم Fortnite على SteamOS لم يُحسم بسبب متطلبات Easy Anti-Cheat v2.",
+      "sources": [
+        {
+          "title": "The Verge — Epic Games Launcher is coming to SteamOS",
+          "url": "https://www.theverge.com/games/1029557/epic-games-launcher-is-coming-to-steamos"
+        }
+      ],
+      "reviewedAt": "2026-11-09T08:43:29+03:00",
+      "basis": "article"
+    },
+    "d983ff484839bbb51e": {
+      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE0zd2hoZDd6dm9QU2pkdjRPRjFWNVlpYUJsbzhzV2U1aE1HUW4tVzRlOUVRNUtaOGlyc1lTVnJOVjcxVDJ3ZGZ3?oc=5",
+      "titleAr": "مسك تعلن فوز ثلاثة مشاريع في تحدي نحو الأثر بمنح إجمالية 3 ملايين ريال",
+      "summaryAr": "تشير بيانات الخلاصة إلى إعلان فوز ثلاثة مشاريع في النسخة الثانية من تحدي نحو الأثر بمنح إجمالية قدرها 3 ملايين ريال. وتوضح صفحة مؤسسة مسك الرسمية أن التحدي رحلة تنافسية تمتد سبعة أسابيع وتشمل معسكرات تدريبية وإرشادًا متخصصًا وفرصة لمنحة مليون ريال. تعذر فتح تقرير إعلان الفائزين كاملًا، لذلك لم أتحقق من أسماء المشاريع أو تفاصيل تنفيذها.",
+      "whyItMatters": "البرنامج يجمع التدريب والإرشاد مع تمويل المشاريع، لكن قيمة المبادرة تُقاس بنتائج التنفيذ لاحقًا لا بمجرد إعلان الفوز أو قيمة المنحة.",
+      "audience": "الجمعيات والمنظمات غير الربحية، ورواد الابتكار الاجتماعي، والمهتمون ببرامج مسك.",
+      "nextSteps": [
+        "راجع صفحة البرنامج الرسمية لمعرفة طبيعة التحدي وشروط الدورات القادمة.",
+        "تابع نشر نتائج تنفيذ المشاريع الفائزة بدل اعتبار المنحة دليلًا على تحقق الأثر بعد.",
+        "عند دراسة فرصة مشابهة، حدد المشكلة والفئة المستفيدة ومؤشر أثر قابلًا للقياس."
+      ],
+      "limitations": "لم يتسن فتح تقرير الفائزين على جريدة المدينة؛ هذا السجل مبني على عنوان/بيانات الخلاصة وصفحة مسك الرسمية العامة. أسماء الفائزين وتفاصيل المشاريع ومؤشرات تنفيذها غير متحققة من المقال الكامل.",
+      "sources": [
+        {
+          "title": "جريدة المدينة — فوز ثلاثة مشاريع في تحدي نحو الأثر",
+          "url": "https://www.al-madina.com/article/1012478/%D8%A3%D8%AE%D9%8A%D8%B1%D8%A9/%D9%85%D8%B3%D9%83-%D9%81%D9%88%D8%B2-3-%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D8%A7%D8%AA-%D9%85%D9%86-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%AA%D8%AD%D8%AF%D9%8A-%D9%86%D8%AD%D9%88-%D8%A7%D9%84%D8%A3%D8%AB%D8%B1-%D8%A83-%D9%85%D9%84%D8%A7%D9%8A%D9%8A%D9%86-%D8%B1%D9%8A%D8%A7%D9%84"
+        },
+        {
+          "title": "مؤسسة مسك — تحدي نحو الأثر",
+          "url": "https://misk.org.sa/programs/%D8%AA%D8%AD%D8%AF%D9%8A-%D9%86%D8%AD%D9%88-%D8%A7%D9%84%D8%A3%D8%AB%D8%B1/"
+        }
+      ],
+      "reviewedAt": "2026-11-09T08:43:29+03:00",
+      "basis": "metadata"
+    },
+    "840b5edbfc7f4f3ff7": {
+      "url": "https://news.google.com/rss/articles/CBMigARBVV95cUxOOHN2RGZibkJlZDZVS0xLMlhmemg0YTQyTWZqajZEWFI0Yktla0NjOEVkWU43c1JkMFRlTjI1VEkwQkIzNXM4Wng5WEdZb3phUEJlaGtGRG51cm1xWEJKYnZaNkNzNmlnZFM1OGs3bnI5MzdnbHc5Sk5FeTNKd0IxU3RaQmJfV1A2WE1GMDV6ZUhNMVFtY1VjdDE5SndYWEZGTUZIcS1BU1h6ZnlHZnE5UzZxUDBwTXI2cDBTdm03dXU1dXBybUZuQ1BuRmVDcnNkVWI4VWJPc2lRc1dnTkJ1M3dfMXk4WkhJTmVuT3hxd3ZoODR4ZGJ6bUM4LUFxckNyQWhmbEF6T3BEbmJqbUQ3Sm9qR0VqYVVqdGFzQU5nNVpGbjMtY3dqTmI2VGtzZ1dNRW9YQmNidTB1bHl2UDNsZXNUb2tqdWJEMExWRldlOVp5c1NxWDVPUmMxSUdaMDgwbHVISmxySkkzTzVXeEkyN2xoTEJJNm0xRDc1eHhGX1VVRXE0OHIySmN4QTJIZDlUcnYzWlVTa29JQ1d4Vm1SQzZZNmthWWxYMHpXbmkyd1pWU3RSRUlXbVpndlI3WTFCTV9mNEpISlZfT0ltWWJyajcySzlMNU9IXzViVzZBNkd0UUM5a3A3WGFOSmJwY1JHNVVwNV8wZmJiV091WWM0Ng?oc=5",
+      "titleAr": "برنامج «رُبّان» في مكة يركز على بناء حلول مهنية باستخدام الذكاء الاصطناعي",
+      "summaryAr": "أفادت صحيفة سبق أن الإدارة العامة للتدريب التقني والمهني بمنطقة مكة تطلق برنامج «رُبّان.. رحلة الذكاء الاصطناعي في المهن» من 8 نوفمبر إلى 2 ديسمبر 2026، باستضافة الكلية التقنية للاتصالات والمعلومات بجدة. ويستهدف تمكين المتدربين والمتدربات من توظيف الذكاء الاصطناعي في تخصصاتهم وتحويل تحديات العمل إلى حلول تطبيقية قابلة لقياس الأثر.",
+      "whyItMatters": "يربط البرنامج تعلم الذكاء الاصطناعي بمشكلات مهنية حقيقية والعمل الجماعي وقياس النتائج، بدل الاكتفاء بعروض الأدوات أو التدريب النظري.",
+      "audience": "متدربو ومتدربات المؤسسة العامة للتدريب التقني والمهني في منطقة مكة، والمدربون والجهات التدريبية.",
+      "nextSteps": [
+        "تحقق من الأهلية وآلية المشاركة لدى المؤسسة العامة للتدريب التقني والمهني أو الكلية المستضيفة.",
+        "اختر تحديًا من تخصصك يمكن وصف خط أساسه وقياس التحسن بعد الحل.",
+        "وثّق دور الذكاء الاصطناعي ومراجعة الإنسان والنتيجة بالأرقام."
+      ],
+      "limitations": "المصدر تقرير صحفي من سبق؛ لم يذكر آلية تسجيل تفصيلية أو فتح المشاركة لطلاب الجامعات من خارج المؤسسة. البرنامج محدد بالفترة من 8 نوفمبر إلى 2 ديسمبر 2026.",
+      "sources": [
+        {
+          "title": "سبق — إطلاق برنامج رُبّان في مكة",
+          "url": "https://sabq.org/article/U-SNq3w"
+        }
+      ],
+      "reviewedAt": "2026-11-09T08:43:29+03:00",
+      "basis": "article"
+    },
+    "5b78b4e9dfa02a9337": {
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVFdMT0RIRWszSF91dzVlRkpiVXpWQXRvVGNiTXdpZ2d2NWRPQUVPbHQ4MkhacEVFM184Z05DbHRKVUU3TUxhdmh6cUZ3dVdPUkFjb01yb1lmaWt1OFUwcHY0RzlZU05uVmU5TzNKS19RS3E0YXI4NUpRc2lfQzhfLThTallkLWx0?oc=5",
+      "titleAr": "LG تفتح API لنموذج K-EXAONE 2.5 مجانًا وتعلن نتائج جديدة لوكلاء الذكاء الاصطناعي",
+      "summaryAr": "أعلنت LG AI Research في 9 نوفمبر إتاحة واجهة K-EXAONE 2.5 عبر منصتها للمطورين مجانًا عند الإطلاق، بعد تدريب إضافي على K-EXAONE 2.0. نشرت الشركة نتائجها على أربعة اختبارات للوكلاء: AutomationBench ‏74.6، وClaw-Eval ‏77.3، وBrowseComp ‏78.0، وSWE-Bench Pro ‏59.2. كما قالت إن مجموع 24 مؤشرًا تحسن بأكثر من 70% مقارنة بنموذج أغسطس. الأرقام تقييم داخلي من الشركة وليست مقارنة مستقلة.",
+      "whyItMatters": "الإتاحة المجانية تتيح تجربة نموذج جديد عبر API بدل شراء عتاد محلي، لكن النتائج لا تثبت تفوقًا عامًا: في بعض المقاييس جاءت النتيجة أدنى من DeepSeek أو GLM المذكورين في البيان. وتعرض وثائق المنصة اللغتين الكورية والإنجليزية؛ لذلك لا ينبغي افتراض جودة العربية قبل اختبارها.",
+      "audience": "مطورو تطبيقات الذكاء الاصطناعي والوكلاء، الباحثون، الشركات الناشئة، والفرق التي تقارن مزودي API.",
+      "nextSteps": [
+        "راجع صفحة النماذج وحدود المعدل وشروط الخدمة قبل ربط بيانات أو أنظمة حقيقية.",
+        "ابدأ باختبار غير حساس يقارن جودة الكورية والإنجليزية والعربية، مع قياس الدقة وزمن الاستجابة.",
+        "قارن نتائج استدعاء الأدوات على مجموعة مهامك نفسها، ولا تعتمد على نسبة التحسن المعلنة وحدها."
+      ],
+      "limitations": "قرأت بيان LG AI Research كاملًا. جميع أرقام الأداء المذكورة من تقييمات الشركة على مجموعات بيانات مفتوحة وليست تحققًا مستقلًا. وثائق API الحالية تسرد الكورية والإنجليزية ضمن اللغات، ولا تثبت دعم العربية. الاستخدام يتطلب API key وتخضع الطلبات لحدود معدل؛ المجانية المعلنة تخص الإتاحة عند الإطلاق ولا تضمن بقاء الشروط أو الحصص دون تغيير.",
+      "reviewedAt": "2026-11-09T14:46:15+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "LG AI Research — K-EXAONE 2.5 API announcement (9 Nov 2026)",
+          "url": "https://www.lg.co.kr/media/release/30760"
+        },
+        {
+          "title": "EXAONE API — Models and language support",
+          "url": "https://docs.exaone.ai/en/docs/models"
+        },
+        {
+          "title": "EXAONE API — Rate Limits",
+          "url": "https://docs.exaone.ai/en/docs/rate-limits"
+        },
+        {
+          "title": "EXAONE API — Quick Start",
+          "url": "https://docs.exaone.ai/en/docs/quick-start"
+        }
+      ]
+    },
+    "55858f2b4ca73bdea1": {
+      "url": "https://github.com/synchopate/llama-modchip",
+      "titleAr": "Llama-modchip يعلن تشغيل DeepSeek-V4-Flash بحجم 284B على CPU وذاكرة 64GB",
+      "summaryAr": "يعرض مستودع llama-modchip إصدار v2.4.0 من تعديلات llama.cpp وأدوات الضغط والتشغيل لاستدلال نماذج MoE على CPU دون GPU. يذكر المطور أن نسخة DeepSeek-V4-Flash ذات 284.33 مليار معامل ضُغطت إلى 56.56 GiB، وأن ذروة الذاكرة المقيمة بلغت 57.61 GiB عند سياق 256K على نظام بذاكرة 64GB. ويعرض معدل توليد 9.1–14.7 token/s على عتاد محدد؛ هذه نتائج المشروع المنشورة وليست قياسًا مستقلًا.",
+      "whyItMatters": "الفكرة مهمة لمن يدرس الاستدلال المحلي: تقليل حجم الأوزان وتحسين استخدام الذاكرة وعرض النطاق قد يفتح تشغيل نماذج كبيرة دون GPU. لكن 64GB RAM ومعالجًا مناسبًا ليسا متاحين في كل جهاز، و«يعمل بلا GPU» لا يعني أنه خفيف أو سريع على حاسوب عادي.",
+      "audience": "مطورو الاستدلال المحلي، مهندسو أداء النماذج، والمهتمون بتشغيل نماذج MoE على CPU.",
+      "nextSteps": [
+        "راجع متطلبات المعالج وتعليمات SIMD والذاكرة الفعلية المتاحة قبل تقدير إمكانية التشغيل.",
+        "قارن مسار نموذج 30B الذي يذكره المشروع بمسار 284B، مع الانتباه إلى أن الأرقام المنشورة خاصة بعتاد واختبارات محددة.",
+        "تحقق من ترخيص الكود وترخيص أوزان النموذج والملفات المشتقة كلٌّ على حدة قبل إعادة الاستخدام."
+      ],
+      "limitations": "المعلومات والأرقام من README الخاص بالمشروع؛ لم أشغّل الشيفرة أو أعد الاختبارات. نتائج السرعة والذاكرة ادعاءات الناشر وتتأثر بالمعالج وعرض نطاق الذاكرة وطول السياق والكمّية. يستخدم المشروع نوع tensor مخصصًا وتعديلات على runtime؛ توضح الوثائق أن نسخ llama.cpp غير المعدلة وبعض المشغلات قد لا تقرأ الملفات الناتجة. ترخيص المستودع Apache-2.0 لا يثبت تلقائيًا أن أوزان النماذج الأساسية تحمل الترخيص نفسه.",
+      "reviewedAt": "2026-11-09T14:46:15+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "llama-modchip README v2.4.0",
+          "url": "https://github.com/synchopate/llama-modchip"
+        },
+        {
+          "title": "llama-modchip Apache-2.0 license",
+          "url": "https://github.com/synchopate/llama-modchip/blob/main/LICENSE"
+        },
+        {
+          "title": "llama-modchip technical paper",
+          "url": "https://github.com/synchopate/llama-modchip/blob/main/paper/llama-modchip-paper.pdf"
         }
       ]
     }

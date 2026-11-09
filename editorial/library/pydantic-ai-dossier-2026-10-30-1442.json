@@ -10,17 +10,18 @@
     "feedId": null,
     "measuredAt": "2026-10-30T14:42:19+03:00",
     "metrics": {
-      "stars": 20955,
-      "forks": 3067,
-      "openIssues": 1630,
+      "stars": 21069,
+      "forks": 3120,
+      "openIssues": 1801,
       "archived": false,
       "disabled": false,
       "license": "MIT",
       "language": "Python",
       "defaultBranch": "main",
-      "pushedAt": "2026-10-30T11:35:30Z",
-      "updatedAt": "2026-10-30T10:57:28Z",
-      "sourceApiUrl": "https://api.github.com/repos/pydantic/pydantic-ai"
+      "pushedAt": "2026-11-07T07:19:53Z",
+      "updatedAt": "2026-11-07T08:19:57Z",
+      "sourceApiUrl": "https://api.github.com/repos/pydantic/pydantic-ai",
+      "measuredAt": "2026-11-07T08:44:00Z"
     },
     "licenseEvidence": "قرأت ملف LICENSE الرسمي؛ MIT، وتطابق مع قيمة SPDX في GitHub API.",
     "activityStatus": "active_recent_push"
@@ -207,6 +208,58 @@
           "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/testing.md"
         }
       ]
+    },
+    {
+      "title": "قوالب اختبارات لعقود الأدوات باستخدام TestModel",
+      "problem": "وجود مخططات Pydantic للمدخلات والمخرجات لا يضمن أن مسار الوكيل يستدعي الأداة الصحيحة أو يتعامل مع حالات الرفض وإعادة المحاولة.",
+      "approach": "إضافة أمثلة اختبار حتمية تستخدم TestModel للتحقق من tool calls والمخرجات المهيكلة والأخطاء قبل ربط مزود نموذج حقيقي.",
+      "stack": "Python، pydantic-ai، pytest، Pydantic، JSON Schema",
+      "steps": [
+        "اختر وكيلًا صغيرًا بأداة واحدة ومخطط إدخال واضح.",
+        "اكتب اختبارات نجاح وفشل باستخدام TestModel.",
+        "تحقق من صحة الوسائط والمخرجات ومنع الاستدعاءات غير المسموحة.",
+        "أضف حالات timeout وإعادة المحاولة وتعدد الأدوات.",
+        "افصل الاختبارات الحتمية عن اختبارات التكامل مع مزود خارجي."
+      ],
+      "metric": "نسبة مسارات الأدوات التي تجتاز اختبارات العقود، ومعدل أخطاء المخطط غير المكتشفة.",
+      "difficulty": "متوسطة — تقدير؛ تحتاج معرفة بنمط الوكلاء والاختبار.",
+      "risks": "TestModel لا يقيس جودة النموذج الحقيقي ولا سلوكه الاحتمالي؛ يجب إبقاء اختبارات التكامل منفصلة.",
+      "sources": [
+        {
+          "title": "Pydantic AI — Testing",
+          "url": "https://pydantic.dev/docs/ai/testing/"
+        },
+        {
+          "title": "Pydantic AI — Tools",
+          "url": "https://pydantic.dev/docs/ai/tools/"
+        }
+      ]
+    },
+    {
+      "title": "قياس استقرار المخرجات المهيكلة عبر مزودات متعددة",
+      "problem": "قد يختلف التزام النماذج بمخطط Pydantic عند تغيير المزود أو الإصدار رغم بقاء منطق الوكيل نفسه.",
+      "approach": "مجموعة اختبارات تكامل اختيارية تقارن التزام المخرجات، وإعادة المحاولة، وزمن الاستجابة لكل مزود مع توثيق النموذج والإعدادات.",
+      "stack": "Python، pydantic-ai، pytest، JSONL، pandas",
+      "steps": [
+        "عرّف مجموعة مهام عامة ذات مخرجات Pydantic ثابتة.",
+        "شغّل TestModel كخط أساس حتمي.",
+        "أضف مزودات حقيقية اختيارية بمفاتيح يضبطها المستخدم محليًا.",
+        "سجل صحة المخطط والزمن وعدد المحاولات والتكلفة المتاحة.",
+        "انشر النتائج مع أسماء الإصدارات وحجم العينة والقيود."
+      ],
+      "metric": "معدل صحة المخطط ومتوسط زمن الاستجابة وعدد المحاولات لكل مزود.",
+      "difficulty": "مرتفعة — تقدير؛ تتطلب حسابات ومفاتيح مزودات واختبارات متكررة.",
+      "risks": "تكلفة API وتغير الأسعار وحدود المعدل، وعدم قابلية تعميم عينة صغيرة.",
+      "sources": [
+        {
+          "title": "Pydantic AI — Model providers",
+          "url": "https://pydantic.dev/docs/ai/models/overview/"
+        },
+        {
+          "title": "Pydantic AI — Testing",
+          "url": "https://pydantic.dev/docs/ai/testing/"
+        }
+      ]
     }
   ],
   "spinoffs": [
@@ -387,6 +440,32 @@
           "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/testing.md"
         }
       ]
+    },
+    {
+      "title": "حزمة تقييم عربية لوكلاء Python ذوي الأدوات",
+      "problem": "لا تتوفر مجموعة عربية صغيرة قابلة لإعادة الإنتاج تقيس فهم الطلب واستدعاء الأداة وإرجاع نتيجة مطابقة.",
+      "approach": "إنشاء مهام عربية غير حساسة مع مخططات أدوات متوقعة، ثم تشغيلها على وكلاء Pydantic AI وتسجيل دقة الاستدعاء وصحة المخرجات.",
+      "stack": "Python، pydantic-ai، pytest، SQLite، pandas، JSONL",
+      "steps": [
+        "اكتب مهامًا عربية قصيرة ذات نتيجة قابلة للتحقق.",
+        "عرّف لكل مهمة أداة ومخطط Pydantic متوقعًا.",
+        "اختبر الحالات الحتمية باستخدام TestModel.",
+        "أضف تشغيلًا اختياريًا على مزودات حقيقية مع حدود تكلفة.",
+        "احسب دقة اختيار الأداة وصحة المخرجات والامتناع عند نقص البيانات."
+      ],
+      "metric": "دقة اختيار الأداة وصحة المخطط ونسبة إكمال المهمة على مجموعة عربية منشورة.",
+      "difficulty": "متوسطة إلى مرتفعة — تقدير؛ تتطلب إعداد بيانات تقييم ومراجعة بشرية.",
+      "risks": "قد تنحاز المجموعة للهجة أو المجال، ولا تقيس كل أبعاد جودة المحادثة.",
+      "sources": [
+        {
+          "title": "Pydantic AI — المستودع الرسمي",
+          "url": "https://github.com/pydantic/pydantic-ai"
+        },
+        {
+          "title": "Pydantic AI — Testing",
+          "url": "https://pydantic.dev/docs/ai/testing/"
+        }
+      ]
     }
   ],
   "religious": [],
@@ -398,8 +477,8 @@
     "اعرض Python 3.11+ ومتطلبات مزود النموذج، وافصل تكلفة API عن كلفة التشغيل المحلي.",
     "اعرض البدائل والقيود، ولا تعرض README badges كاختبارات أجراها نَبض."
   ],
-  "reviewedAt": "2026-10-30T14:42:19+03:00",
-  "testEvidence": "لم يتم تثبيت المشروع أو تشغيل أمثلة أو اختبارات؛ هذه مراجعة README والتوثيق وLICENSE وبيانات GitHub الرسمية فقط.",
+  "reviewedAt": "2026-11-07T11:41:14+03:00",
+  "testEvidence": null,
   "sources": [
     {
       "title": "المستودع الرسمي وREADME",
@@ -437,5 +516,6 @@
       "title": "حقن الاعتماديات",
       "url": "https://github.com/pydantic/pydantic-ai/blob/main/docs/dependencies.md"
     }
-  ]
+  ],
+  "metricsMeasuredAt": "2026-11-07T08:44:00Z"
 }

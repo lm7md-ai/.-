@@ -1,0 +1,148 @@
+{
+  "version": 1,
+  "publicationStatus": "research-only; not a public project card",
+  "measuredAt": "2026-11-08T15:10:18+03:00",
+  "metricSource": "GitHub REST repository metadata",
+  "measurementNote": "Stars, forks, open issues and timestamps are a point-in-time GitHub snapshot, not quality or maintenance guarantees. License labels are repository metadata; review LICENSE files before reuse. No projects were executed in this refresh.",
+  "cumulativeLibrary": {
+    "total": 62,
+    "active": 60,
+    "archived": 2,
+    "feedLinked": 10,
+    "outsideFeed": 51,
+    "membershipUnverified": 1,
+    "licenseNeedsUpstreamVerification": 9,
+    "metricsMeasuredAt": "2026-11-07T20:38:28Z",
+    "archivedRepositories": [
+      "atom/atom",
+      "angular/angular.js"
+    ],
+    "archivedAlternativesNote": "Use maintained successor projects only after checking migration paths and compatibility; the library keeps archived entries for historical comparison."
+  },
+  "projects": [
+    {
+      "name": "AI Engineering Hub",
+      "repository": "patchy631/ai-engineering-hub",
+      "archived": false,
+      "license": "MIT",
+      "stars": 41468,
+      "forks": 6627,
+      "openIssues": 137,
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "updatedAt": "2026-11-08T11:43:15Z",
+      "source": "https://api.github.com/repos/patchy631/ai-engineering-hub",
+      "measuredAt": "2026-11-08T15:10:18+03:00"
+    },
+    {
+      "name": "Google Gen AI Python SDK",
+      "repository": "googleapis/python-genai",
+      "archived": false,
+      "license": "Apache-2.0",
+      "stars": 4057,
+      "forks": 1059,
+      "openIssues": 392,
+      "pushedAt": "2026-11-08T01:28:50Z",
+      "updatedAt": "2026-11-08T10:28:06Z",
+      "source": "https://api.github.com/repos/googleapis/python-genai",
+      "measuredAt": "2026-11-08T15:10:18+03:00"
+    },
+    {
+      "name": "Lasm",
+      "repository": "Millillion/lasm",
+      "archived": false,
+      "license": "MIT",
+      "stars": 104,
+      "forks": 7,
+      "openIssues": 8,
+      "pushedAt": "2026-11-08T05:25:20Z",
+      "updatedAt": "2026-11-08T07:28:31Z",
+      "source": "https://api.github.com/repos/Millillion/lasm",
+      "measuredAt": "2026-11-08T15:10:18+03:00"
+    },
+    {
+      "name": "MarkItDown",
+      "repository": "microsoft/markitdown",
+      "archived": false,
+      "license": "MIT",
+      "stars": 194393,
+      "forks": 14637,
+      "openIssues": 814,
+      "pushedAt": "2026-11-07T00:14:01Z",
+      "updatedAt": "2026-11-08T12:22:56Z",
+      "source": "https://api.github.com/repos/microsoft/markitdown",
+      "measuredAt": "2026-11-08T15:10:18+03:00"
+    },
+    {
+      "name": "Minecraft Agent Harness",
+      "repository": "yc-software/minecraft-agent-harness",
+      "archived": false,
+      "license": "MIT",
+      "stars": 181,
+      "forks": 19,
+      "openIssues": 1,
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "updatedAt": "2026-11-08T12:19:20Z",
+      "source": "https://api.github.com/repos/yc-software/minecraft-agent-harness",
+      "measuredAt": "2026-11-08T15:10:18+03:00"
+    },
+    {
+      "name": "NVIDIA OpenShell",
+      "repository": "NVIDIA/OpenShell",
+      "archived": false,
+      "license": "Apache-2.0",
+      "stars": 21268,
+      "forks": 2081,
+      "openIssues": 637,
+      "pushedAt": "2026-11-07T17:31:00Z",
+      "updatedAt": "2026-11-08T12:04:36Z",
+      "source": "https://api.github.com/repos/NVIDIA/OpenShell",
+      "measuredAt": "2026-11-08T15:10:18+03:00"
+    },
+    {
+      "name": "Pydantic AI",
+      "repository": "pydantic/pydantic-ai",
+      "archived": false,
+      "license": "MIT",
+      "stars": 21086,
+      "forks": 3130,
+      "openIssues": 1842,
+      "pushedAt": "2026-11-08T12:17:35Z",
+      "updatedAt": "2026-11-08T09:00:42Z",
+      "source": "https://api.github.com/repos/pydantic/pydantic-ai",
+      "measuredAt": "2026-11-08T15:10:18+03:00"
+    },
+    {
+      "name": "uv",
+      "repository": "astral-sh/uv",
+      "archived": false,
+      "license": "Apache-2.0",
+      "stars": 91763,
+      "forks": 3776,
+      "openIssues": 3051,
+      "pushedAt": "2026-11-08T01:33:53Z",
+      "updatedAt": "2026-11-08T11:34:09Z",
+      "source": "https://api.github.com/repos/astral-sh/uv",
+      "measuredAt": "2026-11-08T15:10:18+03:00"
+    }
+  ],
+  "previousEightResearch": {
+    "runAt": "2026-11-08T05:54:23+03:00",
+    "metricsMeasuredAt": "2026-11-08T02:54:23Z",
+    "improvements": 24,
+    "spinoffs": 21,
+    "religious": 0,
+    "completeIdeas": 45,
+    "testEvidenceClaims": 0,
+    "note": "README, docs, license, requirements, quick start, costs, local/cloud options and alternatives are documented in previous-eight-refresh-2026-11-08-0554.json. This file only refreshes GitHub metrics."
+  },
+  "timestampAnomalies": [
+    {
+      "repository": "pydantic/pydantic-ai",
+      "field": "pushedAt",
+      "reportedValue": "2026-11-08T12:17:35Z",
+      "measuredAt": "2026-11-08T12:10:18Z",
+      "note": "Reported push timestamp is about 7m17s in the future; do not use it as proof of activity until a later snapshot confirms it."
+    }
+  ],
+  "metricSourceNote": "GitHub API values captured at the stated time. Future timestamps are flagged rather than treated as evidence of recent activity."
+}
