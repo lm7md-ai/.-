@@ -163,8 +163,55 @@
     {
       "title": "DeepSWE upstream tasks",
       "url": "https://github.com/datacurve-ai/deep-swe"
+    },
+    {
+      "title": "SWE-bench README",
+      "url": "https://github.com/SWE-bench/SWE-bench/blob/main/README.md"
+    },
+    {
+      "title": "SWE-bench LICENSE",
+      "url": "https://github.com/SWE-bench/SWE-bench/blob/main/LICENSE"
     }
   ],
   "displayRequirements": "بحث مستقل غير منشور: لا تُنشأ له بطاقة Feed عامة. في واجهة المكتبة فقط، اعرض شارة research-only، رابط المستودع، وقت قياس المقاييس، تحذير تراخيص upstream، والمتطلبات والتكلفة المتغيرة؛ لا تعرضه على أنه مجرّب لأن testStatus=not_run.",
-  "relatedNewsFeedId": "5be9cd76a11a8ae694"
+  "relatedNewsFeedId": "5be9cd76a11a8ae694",
+  "alternatives": [
+    {
+      "name": "DeepSWE",
+      "repository": "datacurve-ai/deep-swe",
+      "relation": "upstream task source / closest reference",
+      "summary": "DeepSWE يضم 113 مهمة طويلة الأفق من مستودعات مفتوحة المصدر عبر TypeScript وGo وPython وJavaScript وRust، ويستخدم Harbor task format وبيئة verifier منفصلة وPier أحدث من 0.3.0. MaxxBench يعيد استخدام 89 مهمة من هذا المصدر ويضيف محور تغيّر المتطلبات ونقطة البداية.",
+      "license": "Apache-2.0",
+      "localCloud": "الحاويات محلية؛ يمكن تشغيل بعض التجارب على Modal عبر Pier، وتظل تكلفة النموذج مرتبطة بالمزود.",
+      "sources": [
+        {
+          "title": "DeepSWE README",
+          "url": "https://github.com/datacurve-ai/deep-swe/blob/main/README.md"
+        },
+        {
+          "title": "DeepSWE LICENSE",
+          "url": "https://github.com/datacurve-ai/deep-swe/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "name": "SWE-bench",
+      "repository": "SWE-bench/SWE-bench",
+      "relation": "adjacent alternative",
+      "summary": "يقيس حل قضايا برمجية حقيقية مأخوذة من GitHub: يُعطى الوكيل codebase وissue ويُطلب patch. يدعم مجموعات full وverified وmultimodal وmultilingual، ويستخدم Docker لتقييم قابل لإعادة الإنتاج. هو أقرب لقياس حل issue من قياس التكيف مع تغيّر تعليمات المهمة.",
+      "license": "MIT",
+      "requirements": "Python 3.8+ وDocker؛ يمكن التقييم محليًا، كما يوثق المشروع خيارات سحابية عبر sb-cli أو Modal. التشغيل قد يستهلك مساحة تخزين كبيرة.",
+      "sources": [
+        {
+          "title": "SWE-bench README",
+          "url": "https://github.com/SWE-bench/SWE-bench/blob/main/README.md"
+        },
+        {
+          "title": "SWE-bench LICENSE",
+          "url": "https://github.com/SWE-bench/SWE-bench/blob/main/LICENSE"
+        }
+      ]
+    }
+  ],
+  "comparisonSummary": "DeepSWE هو المصدر upstream الأقرب؛ SWE-bench بديل مجاور لقياس حل قضايا GitHub. لا أدرج Terminal-Bench في المقارنة لأن ملف README لم يُقرأ في هذه الدورة."
 }

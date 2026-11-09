@@ -4376,8 +4376,7 @@
       "activityStatus": "active_recent_update",
       "alternativeProjects": [
         "datacurve-ai/deep-swe",
-        "SWE-bench",
-        "Terminal-Bench"
+        "SWE-bench/SWE-bench"
       ],
       "metricSource": "https://api.github.com/repos/unlap-labs/maxxbench",
       "editorialEnriched": false,
@@ -4400,7 +4399,7 @@
     }
   ],
   "currentSnapshotSummary": "65 entries: 2 archived; 63 non-archived; 10 exact project-feed matches; 55 research-only/not in feed; 1 feed-membership status remains unverified.",
-  "measurementNote": "لقطة تراكمية؛ مؤشرات النجوم والفروع والقضايا متغيرة ولا تقيس الجودة. تم قياس MaxxBench عبر GitHub API في 2026-11-09T08:43:29+03:00. لم يُشغّل المشروع. ترخيص Apache-2.0 لا يعيد ترخيص كود upstream.",
+  "measurementNote": "لقطة تراكمية؛ مؤشرات النجوم والفروع والقضايا متغيرة ولا تقيس الجودة. تم قياس MaxxBench عبر GitHub API في 2026-11-09T08:43:29+03:00. لم يُشغّل المشروع. ترخيص Apache-2.0 لا يعيد ترخيص كود upstream. تمت مراجعة README وLICENSE لكل من DeepSWE وSWE-bench كمرجع upstream وبديل مجاور؛ لم تُدرج Terminal-Bench في المقارنة.",
   "archivedAlternatives": [
     {
       "repo": "atom/atom",
