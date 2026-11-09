@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "metricsMeasuredAt": "2026-11-09T12:46:00+03:00",
+  "source": "GitHub REST API GET /repos/{owner}/{repo}",
+  "notes": [
+    "openIssuesCount is GitHub's open_issues_count and includes open issues plus pull requests; it is not a pure issue count.",
+    "Stars and forks are point-in-time counts and can change.",
+    "Raw pushedAt/updatedAt values are retained. Future timestamps relative to this capture are flagged, not treated as proof of activity.",
+    "README, documentation, requirements, quickStart, license files, local/cloud model, costs and alternatives are documented in previous-eight-refresh-2026-11-08-0554.json; no project was executed in this run."
+  ],
+  "projects": [
+    {
+      "repository": "patchy631/ai-engineering-hub",
+      "stars": 41521,
+      "forks": 6635,
+      "openIssuesCount": 137,
+      "archived": false,
+      "disabled": false,
+      "licenseApiValue": "MIT",
+      "language": "Jupyter Notebook",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-01T08:41:12Z",
+      "updatedAt": "2026-11-09T09:52:32Z",
+      "timestampAnomalies": [
+        "updatedAt is 6m32s after measurement time"
+      ]
+    },
+    {
+      "repository": "googleapis/python-genai",
+      "stars": 4058,
+      "forks": 1061,
+      "openIssuesCount": 392,
+      "archived": false,
+      "disabled": false,
+      "licenseApiValue": "Apache-2.0",
+      "language": "Python",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-08T20:32:49Z",
+      "updatedAt": "2026-11-08T12:51:44Z",
+      "timestampAnomalies": [
+        "updatedAt precedes pushedAt; raw API values retained"
+      ]
+    },
+    {
+      "repository": "Millillion/lasm",
+      "stars": 104,
+      "forks": 7,
+      "openIssuesCount": 9,
+      "archived": false,
+      "disabled": false,
+      "licenseApiValue": "MIT",
+      "language": "Lean",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-09T09:47:34Z",
+      "updatedAt": "2026-11-09T09:40:24Z",
+      "timestampAnomalies": [
+        "pushedAt is 1m34s after measurement time; activity not inferred from this timestamp"
+      ]
+    },
+    {
+      "repository": "microsoft/markitdown",
+      "stars": 194490,
+      "forks": 14652,
+      "openIssuesCount": 813,
+      "archived": false,
+      "disabled": false,
+      "licenseApiValue": "MIT",
+      "language": "Python",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-07T20:16:12Z",
+      "updatedAt": "2026-11-09T09:51:41Z",
+      "timestampAnomalies": [
+        "updatedAt is 5m41s after measurement time"
+      ]
+    },
+    {
+      "repository": "yc-software/minecraft-agent-harness",
+      "stars": 187,
+      "forks": 20,
+      "openIssuesCount": 1,
+      "archived": false,
+      "disabled": false,
+      "licenseApiValue": "MIT",
+      "language": "TypeScript",
+      "defaultBranch": "main",
+      "pushedAt": "2026-10-29T15:14:09Z",
+      "updatedAt": "2026-11-09T08:03:18Z",
+      "timestampAnomalies": []
+    },
+    {
+      "repository": "NVIDIA/OpenShell",
+      "stars": 21293,
+      "forks": 2084,
+      "openIssuesCount": 640,
+      "archived": false,
+      "disabled": false,
+      "licenseApiValue": "Apache-2.0",
+      "language": "Go",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-09T09:11:51Z",
+      "updatedAt": "2026-11-09T09:44:54Z",
+      "timestampAnomalies": []
+    },
+    {
+      "repository": "pydantic/pydantic-ai",
+      "stars": 21094,
+      "forks": 3136,
+      "openIssuesCount": 1872,
+      "archived": false,
+      "disabled": false,
+      "licenseApiValue": "MIT",
+      "language": "Python",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-09T09:55:49Z",
+      "updatedAt": "2026-11-09T09:39:03Z",
+      "timestampAnomalies": [
+        "pushedAt is 9m49s after measurement time; activity not inferred from this timestamp"
+      ]
+    },
+    {
+      "repository": "astral-sh/uv",
+      "stars": 91783,
+      "forks": 3780,
+      "openIssuesCount": 3086,
+      "archived": false,
+      "disabled": false,
+      "licenseApiValue": "Apache-2.0",
+      "language": "Rust",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-09T02:57:47Z",
+      "updatedAt": "2026-11-09T09:56:57Z",
+      "timestampAnomalies": [
+        "updatedAt is 10m57s after measurement time; dual MIT/Apache license confirmed from repository license files in prior review"
+      ]
+    }
+  ]
+}
