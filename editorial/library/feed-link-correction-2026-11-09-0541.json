@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "runAt": "2026-11-09T05:41:08+03:00",
+  "publicationStatus": "research_only_not_published",
+  "sourceFeed": {
+    "generatedAt": "2026-11-08T22:00:40+00:00",
+    "blobSha": "e4b9c9c56a9294b1de059db7f14cd6f88edadc6b"
+  },
+  "correction": {
+    "staleSnapshot": "editorial/library/catalog-2026-11-08-2347.json",
+    "staleEntry": {
+      "repository": "OpenMontageInc/OpenMontage",
+      "inCurrentFeed": false,
+      "feedId": null,
+      "siteVisibility": "research-only; no public feed card"
+    },
+    "currentState": {
+      "repository": "OpenMontageInc/OpenMontage",
+      "inCurrentFeed": true,
+      "feedId": "bc64dbd527eeb5b716",
+      "kind": "project",
+      "url": "https://github.com/OpenMontageInc/OpenMontage",
+      "mainEditorial": false,
+      "prEditorial": true,
+      "basis": "readme"
+    },
+    "requiredNextCatalogFields": {
+      "inCurrentFeed": true,
+      "feedId": "bc64dbd527eeb5b716",
+      "siteVisibility": "public Feed project card; Editorial enrichment on PR #97"
+    }
+  },
+  "identitySeparation": [
+    {
+      "id": "bc64dbd527eeb5b716",
+      "url": "https://github.com/OpenMontageInc/OpenMontage",
+      "decision": "Use this exact ID and URL for the current repository card."
+    },
+    {
+      "id": "6d3bd03b499863301f",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "decision": "Keep as a separate existing Feed/Editorial record; do not merge, alias, or synthesize identity from the shared title."
+    }
+  ],
+  "quickStartCaution": "The current OpenMontageInc README's clone command still points to https://github.com/calesthio/OpenMontage.git. Verify repository redirect/current ownership before copying that command into the published quickStart.",
+  "testEvidence": null
+}
