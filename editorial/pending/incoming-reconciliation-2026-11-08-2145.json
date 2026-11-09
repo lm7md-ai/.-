@@ -1,0 +1,588 @@
+{
+  "version": 1,
+  "runAt": "2026-11-08T21:45:25+03:00",
+  "repository": "lm7md-ai/.-",
+  "main": {
+    "commit": "3eb301af32fa987b2290c73030ce48896209a67f",
+    "feed": {
+      "items": 800,
+      "news": 700,
+      "projects": 100,
+      "generatedAt": "2026-11-08T17:54:49+00:00",
+      "blobSha": "fa24b093a3e505924838e0ee912b7d82d32fdee3"
+    },
+    "editorial": {
+      "records": 859,
+      "blobSha": "b9b75072729920f3e8d3a9eaf822a06bb6ebac61",
+      "exactActive": {
+        "news": 149,
+        "projects": 99,
+        "total": 248
+      },
+      "outOfFeed": 611,
+      "idUrlMismatches": 0
+    },
+    "seen": {
+      "ids": 3753,
+      "titles": 3595,
+      "blobSha": "7c708d87e10c9997bae5bb5707316d30eae049c3"
+    },
+    "status": {
+      "state": "partial",
+      "lastAttemptAt": "2026-11-08T17:54:49+00:00",
+      "lastSuccessfulAt": "2026-11-08T17:54:49+00:00",
+      "collected": 286,
+      "sourceCount": 26,
+      "sourceStates": {
+        "ok": 22,
+        "empty": 2,
+        "error": 2
+      },
+      "emptySources": [
+        "أبحاث الذكاء الاصطناعي",
+        "أبحاث تعلّم الآلة"
+      ],
+      "errorSources": [
+        {
+          "name": "برمجة بايثون",
+          "error": "HTTP 503"
+        },
+        {
+          "name": "فرص وبرامج تقنية",
+          "error": "HTTP 503"
+        }
+      ],
+      "blobSha": "8f88c6999c14bc0215ee72f97f16bd90a7a62548"
+    }
+  },
+  "pullRequests": {
+    "pr1": {
+      "state": "closed",
+      "merged": true
+    },
+    "pr2": {
+      "state": "closed",
+      "merged": true
+    },
+    "pr97": {
+      "state": "open",
+      "merged": false,
+      "mergeable": true,
+      "branch": "editorial/2026-11-06-2342-run11",
+      "head": "85bdb6a7058ded081b4b73c5a9a2c8a7559982c0",
+      "base": "e89a737663f3944d6c9612c900bf2bc781769a5b",
+      "aheadBy": 71,
+      "behindBy": 2,
+      "changedFiles": 58,
+      "protectedPathsChanged": []
+    }
+  },
+  "incoming": {
+    "main": {
+      "files": 88,
+      "occurrences": 928,
+      "classificationLatest21_15": {
+        "activeExactAlreadyImported": 279,
+        "historicalExactAlreadyImported": 613,
+        "seenOnly": 36,
+        "activeIdUrlMismatches": 0,
+        "activePendingImport": 0,
+        "unmatchedNotSeen": 0,
+        "confirmedExpired": 0,
+        "structuralErrors": 0
+      },
+      "previous20_47Classification": {
+        "activeExactAlreadyImported": 286,
+        "historicalExactAlreadyImported": 605,
+        "seenOnly": 36,
+        "identityMismatchOccurrences": 1
+      },
+      "classificationDiscrepancy": {
+        "activeOccurrencesDelta": 7,
+        "historicalOccurrencesDelta": 8,
+        "identityMismatchDelta": 1,
+        "note": "The 21:15 report reclassified seven occurrences from active to historical and the prior single mismatch into a historical identity hold. Main Feed blob SHA is unchanged. Retain both snapshots; recheck from raw incoming and Feed on the next available repository runtime rather than silently choosing."
+      }
+    },
+    "pr": {
+      "files": [
+        {
+          "name": "nabdh-editorial-2026-11-06-2342.json",
+          "sha": "da038173414c8653ba849ee7122df7c14e0fb3c0",
+          "items": 8
+        },
+        {
+          "name": "nabdh-editorial-2026-11-07-0247.json",
+          "sha": "8366b714e87dd44f122b805488b94100981b208e",
+          "items": 4
+        },
+        {
+          "name": "nabdh-editorial-2026-11-07-0842.json",
+          "sha": "b7fb0aa370a76f6ba6f62a18a97b5c18f23ce5ca",
+          "items": 10
+        },
+        {
+          "name": "nabdh-editorial-2026-11-07-2338.json",
+          "sha": "c3b9a59ef1416ed0465736ea82e5167cef780dd0",
+          "items": 10
+        },
+        {
+          "name": "nabdh-editorial-2026-11-08-0005.json",
+          "sha": "55ad720ebe6241e35fc9fa4edb6b98a43e9beb38",
+          "items": 3
+        },
+        {
+          "name": "nabdh-editorial-2026-11-08-0035.json",
+          "sha": "9db0e550d7416cd76542a60d11ff80fc74ac7629",
+          "items": 5
+        },
+        {
+          "name": "nabdh-editorial-2026-11-08-0554.json",
+          "sha": "4d3b30adde9331951c7914a4fea9ad1ce17b26ca",
+          "items": 8
+        },
+        {
+          "name": "nabdh-editorial-2026-11-08-0846.json",
+          "sha": "ac601a4732b079e72fe40c8e336d46c8bb66b42b",
+          "items": 1
+        },
+        {
+          "name": "nabdh-editorial-2026-11-08-1453.json",
+          "sha": "0948dd215dae8022c3612e2d6139970571886cbb",
+          "items": 45
+        },
+        {
+          "name": "nabdh-editorial-2026-11-08-1510.json",
+          "sha": "51383ae4b46aba26b44c0e5e3380ce9c78d011b2",
+          "items": 2
+        },
+        {
+          "name": "nabdh-editorial-2026-11-08-2115.json",
+          "sha": "9cc1276d2f1300f437d0075a82253518c9e9a37c",
+          "items": 21
+        }
+      ],
+      "unchangedMainFiles": 88,
+      "additionalFiles": 11,
+      "additionalOccurrences": 117,
+      "additionalUniqueIds": 79,
+      "duplicateOccurrences": 38,
+      "kindOccurrences": {
+        "news": 109,
+        "project": 8
+      },
+      "basisOccurrences": {
+        "article": 78,
+        "metadata": 26,
+        "readme": 13
+      },
+      "structuralValidation": {
+        "method": "JavaScript structural equivalent aligned to editorial schema constraints",
+        "errors": 0,
+        "idUrlConflicts": 0
+      },
+      "firstTenFiles": {
+        "files": 10,
+        "occurrences": 96,
+        "uniqueIds": 58,
+        "alreadyOnMain": 4,
+        "prOnlyNew": 43,
+        "prOnlyNewActive": 35,
+        "prOnlyNewHistorical": 8,
+        "seenOnly": 11,
+        "activeExactOccurrences": 69,
+        "historicalExactOccurrences": 16,
+        "seenOnlyOccurrences": 11,
+        "idUrlMismatches": 0,
+        "activePendingImport": 0,
+        "confirmedExpired": 0,
+        "structuralErrors": 0
+      },
+      "finalFile": {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-08-2115.json",
+        "occurrences": 21,
+        "uniqueIds": 21,
+        "provenanceRecovery": 9,
+        "newNews": 12,
+        "exactFeedIdUrlMatches": 21
+      }
+    }
+  },
+  "identityAndHolds": {
+    "historicalIdPair": {
+      "historicalId": "7a99eca9b2ce14d9f5",
+      "currentId": "e0cbbf211a55e79f34",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "decision": "Keep both IDs separate; no title-based alias or synthesized ID."
+    },
+    "historicalOutOfFeed": [
+      {
+        "id": "ef313c34ae184d15b2",
+        "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph"
+      },
+      {
+        "id": "0eacd10b8c48398876",
+        "url": "https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition/"
+      },
+      {
+        "id": "bd95b63d46d959afe7",
+        "url": "https://www.kadoa.com/companies/insights/ai-selloff-perspective"
+      }
+    ],
+    "seenOnlyNotConfirmedExpired": 11,
+    "confirmedExpired": 0
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inPrEditorial": false,
+      "inSeen": true,
+      "researchOnlyDossier": true
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inPrEditorial": false,
+      "inSeen": true,
+      "researchOnlyDossier": false
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inPrEditorial": false,
+      "inSeen": true,
+      "researchOnlyDossier": false
+    }
+  ],
+  "editorial": {
+    "mainRecords": 859,
+    "prRecords": 926,
+    "additionalIdsComparedWithMain": 67,
+    "mainIdsPreserved": 859,
+    "oldFieldsRemoved": 0,
+    "latestNewUniqueNews": 12,
+    "latestNewsBasis": {
+      "article": 4,
+      "metadata": 8
+    },
+    "latestNewsReviewedAt": "2026-11-08T21:15:25+03:00",
+    "projectCards": {
+      "main": 99,
+      "pr": 100,
+      "totalFeedProjects": 100
+    },
+    "newsCoverage": {
+      "main": 149,
+      "prDerived": 204,
+      "totalFeedNews": 700,
+      "prDerivedPercent": 29.1,
+      "note": "PR figure is derived from the 20:47 reconciliation (192 active news) plus the 12 latest exact Feed matches; not read directly from the oversized PR JSON in this run."
+    }
+  },
+  "newsBatch": [
+    {
+      "id": "7cdeffc8e00dfd185d",
+      "titleAr": "تقرير: OpenAI تجمع 11 مليار دولار عند تقييم خاص قدره 1.25 تريليون",
+      "basis": "article",
+      "source": "https://www.reuters.com/business/openai-secures-11-billion-funding-125-trillion-valuation-bloomberg-news-reports-2026-11-06/"
+    },
+    {
+      "id": "c08233254ab5569234",
+      "titleAr": "دعويان جديدتان تتهمان Suno بتقليد صوت Elvis Presley وأعمال Eminem",
+      "basis": "article",
+      "source": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit"
+    },
+    {
+      "id": "9a720b3178d2f33796",
+      "titleAr": "NYT Cooking تختبر أداة ذكاء اصطناعي لتعديل الوصفات للمشتركين",
+      "basis": "article",
+      "source": "https://www.wired.com/story/nyt-cooking-new-ai-powered-recipe-modifier-is-pretty-good/"
+    },
+    {
+      "id": "7ff53c833c04080042",
+      "titleAr": "مؤشرات في نسخة iOS تجريبية تلمّح إلى تطبيقات محادثة في Apple HomeView",
+      "basis": "article",
+      "source": "https://www.theverge.com/tech/1029526/chatbots-might-be-coming-to-apples-homeview"
+    },
+    {
+      "id": "a44e5a0e0ca44230ba",
+      "titleAr": "بحث يقترح تعليم الوكلاء مبادئ السلوك بدل الاعتماد على إشارة المكافأة",
+      "basis": "metadata",
+      "source": "https://arxiv.org/abs/2611.07130"
+    },
+    {
+      "id": "11c6518cf3e4b21797",
+      "titleAr": "إسناد متناثر للخبراء يحاول خفض كلفة التعلم الاتحادي لنماذج MoE",
+      "basis": "metadata",
+      "source": "https://arxiv.org/abs/2611.07093"
+    },
+    {
+      "id": "14dea264cd89a5a00c",
+      "titleAr": "TrustMix يقترح تراجعًا تدريجيًا إلى توزيع احتياطي عند تغير البيانات",
+      "basis": "metadata",
+      "source": "https://arxiv.org/abs/2611.07206"
+    },
+    {
+      "id": "40be8173b384ddb90e",
+      "titleAr": "إطار بحثي يمثل معتقدات وأهداف الوكيل صراحةً انطلاقًا من مساراته",
+      "basis": "metadata",
+      "source": "https://arxiv.org/abs/2611.07208"
+    },
+    {
+      "id": "5208fc4d61dd02d27e",
+      "titleAr": "Loopback Transformer يدرس إعادة استخدام التحديثات عبر كتل مشتركة",
+      "basis": "metadata",
+      "source": "https://arxiv.org/abs/2611.07226"
+    },
+    {
+      "id": "1d43601888e266f089",
+      "titleAr": "بحث يستغل تكافؤ تمثيلات الشبكات لتقليل حجم ملفات النماذج",
+      "basis": "metadata",
+      "source": "https://arxiv.org/abs/2611.07233"
+    },
+    {
+      "id": "4c861a74d24931e081",
+      "titleAr": "BCSS يولّد نماذج رمزية قابلة للتفسير لمقارنة استدلال البشر والآلات",
+      "basis": "metadata",
+      "source": "https://arxiv.org/abs/2611.07088"
+    },
+    {
+      "id": "c4e17a182be4d6face",
+      "titleAr": "KG-Neighbor يستخدم علاقات الرسوم المعرفية لتحسين جوار التضمينات",
+      "basis": "metadata",
+      "source": "https://arxiv.org/abs/2611.07246"
+    }
+  ],
+  "projectLibrary": {
+    "total": 63,
+    "archived": 2,
+    "nonArchived": 61,
+    "inCurrentFeed": 10,
+    "researchOnly": 52,
+    "feedMembershipUnverified": 1,
+    "licenseNeedsUpstreamVerification": 9,
+    "notMaintained": 1,
+    "publicLibraryCards": 31,
+    "archivedExamples": [
+      {
+        "repo": "atom/atom",
+        "alternatives": [
+          "microsoft/vscode",
+          "zed-industries/zed"
+        ]
+      },
+      {
+        "repo": "angular/angular.js",
+        "alternatives": [
+          "angular/angular",
+          "vuejs/core",
+          "sveltejs/svelte"
+        ]
+      }
+    ],
+    "previousEight": {
+      "reviewed": 8,
+      "projects": [
+        "AI Engineering Hub",
+        "Google Gen AI Python SDK",
+        "Lasm",
+        "MarkItDown",
+        "Minecraft Agent Harness",
+        "NVIDIA OpenShell",
+        "Pydantic AI",
+        "uv"
+      ],
+      "improvements": 24,
+      "spinoffs": 21,
+      "religious": 0,
+      "testEvidence": 0,
+      "metricsMeasuredAt": "2026-11-08T15:10:18+03:00"
+    },
+    "newPublicProjectSinceMain": {
+      "name": "OpenMontage",
+      "id": "bc64dbd527eeb5b716",
+      "url": "https://github.com/OpenMontageInc/OpenMontage",
+      "license": "AGPL-3.0",
+      "archived": false,
+      "stars": 78592,
+      "forks": 10478,
+      "openIssues": 323,
+      "lastPushedAt": "2026-11-08T03:50:57Z",
+      "lastUpdatedAt": "2026-11-08T18:57:47Z",
+      "measuredAt": "2026-11-08T21:57:55+03:00",
+      "requirements": [
+        "Python 3.10+",
+        "FFmpeg",
+        "Node.js 22.23.4+",
+        "AI coding assistant",
+        "npm for Remotion"
+      ],
+      "quickStart": "Review README, AGENT_GUIDE.md, docs/PROVIDERS.md and config.yaml; install prerequisites; run make setup; start with a small free/local pipeline before enabling optional paid providers.",
+      "localVsCloud": "Local: FFmpeg/Remotion and Piper, free stock sources, optional local GPU models. Cloud: optional provider APIs, potentially paid per use; source code being AGPL does not make media generation free.",
+      "testEvidence": null
+    },
+    "researchOnlyAddedPreviously": {
+      "name": "llama-modchip",
+      "url": "https://github.com/synchopate/llama-modchip",
+      "published": false,
+      "improvements": 2,
+      "spinoffs": 2,
+      "religious": 0,
+      "testEvidence": null
+    },
+    "newPublicProjectsThisRun": 0,
+    "newResearchDossiersThisRun": 0
+  },
+  "topIdeas": [
+    {
+      "title": "معيار عربي لدقة إحالات PageIndex",
+      "problem": "يصعب قياس ما إذا كانت إجابة الاسترجاع تشير إلى الصفحة والمقطع اللذين يدعمان الادعاء فعلًا في الوثائق العربية.",
+      "approach": "إنشاء مجموعة وثائق وأسئلة عربية مع إحالات مرجعية ذهبية، ثم مقارنة صفحات ومقاطع PageIndex بإجابات مراجعين.",
+      "stack": "Python، PageIndex، pytest، JSONL، أدوات تقييم استرجاع",
+      "steps": [
+        "اجمع وثائق عربية مرخصة ومتنوعة.",
+        "أنشئ أسئلة تتطلب صفحات أو مقاطع محددة.",
+        "ضع إحالات ذهبية بمراجعة بشرية مزدوجة.",
+        "شغّل PageIndex على المجموعة وسجّل الإحالات.",
+        "احسب دقة الصفحة والمقطع وحالات الامتناع.",
+        "انشر مجموعة الاختبار ونتائجها مع إصدارات الأدوات."
+      ],
+      "metric": "دقة الصفحة والمقطع الداعم، ونسبة الادعاءات ذات إحالة صحيحة.",
+      "difficulty": "متوسط (تقدير)",
+      "risks": "تحيز العينة واختلاف جودة OCR؛ يلزم توثيق مصدر كل وثيقة ومراجعة بشرية.",
+      "sources": [
+        "https://github.com/VectifyAI/PageIndex",
+        "https://arxiv.org/abs/"
+      ]
+    },
+    {
+      "title": "مدقق استشهادات DeepTutor",
+      "problem": "قد ينتج الشرح التعليمي ادعاءً صحيح الصياغة لكنه غير مدعوم بالمصدر الذي يظهر بجانبه.",
+      "approach": "تفكيك الشرح إلى ادعاءات، وربط كل ادعاء بمقطع مصدر، ثم تصنيف الدعم والتعارض والفجوات.",
+      "stack": "Python، DeepTutor، Pydantic، sentence-transformers، pytest",
+      "steps": [
+        "اختر درسًا ومصادره المسموح بها.",
+        "استخرج الادعاءات الذرية من الشرح.",
+        "اربط كل ادعاء بمقطع المصدر ورقم الصفحة.",
+        "صنّف الدعم إلى مدعوم أو جزئي أو متعارض أو بلا دليل.",
+        "اطلب مراجعة بشرية للحالات غير الواضحة.",
+        "احسب الدقة والاستدعاء وانشر أمثلة الإخفاق."
+      ],
+      "metric": "نسبة الادعاءات المدعومة بمراجع صحيحة، ومعدل الاستشهادات الخاطئة.",
+      "difficulty": "متوسط (تقدير)",
+      "risks": "تشابه النص لا يثبت الاستلزام؛ يلزم حكم دلالي ومراجعة بشرية.",
+      "sources": [
+        "https://github.com/HKUDS/DeepTutor",
+        "https://github.com/VectifyAI/PageIndex"
+      ]
+    },
+    {
+      "title": "حزمة benchmark قابلة لإعادة الإنتاج لـllama-modchip",
+      "problem": "يصعب مقارنة ادعاءات الأداء دون تثبيت العتاد وإصدار النموذج ونوع tensor وإعدادات الذاكرة.",
+      "approach": "بناء manifest وقياس موحد للذاكرة والسرعة والجودة مع حفظ الإصدارات والبيئة، دون اعتبار أرقام README اختبارًا مستقلًا.",
+      "stack": "Python، llama-modchip، pytest، JSON، أدوات قياس GPU",
+      "steps": [
+        "سجّل طراز GPU والذاكرة والتعريفات وإصدار runtime.",
+        "ثبّت commit النموذج والأوزان وبصمتها.",
+        "نفّذ مجموعة prompts ثابتة وبذورًا معلومة.",
+        "قِس زمن أول token والسرعة والذاكرة.",
+        "قيّم جودة المخرجات بمقياس معلن ومراجعة بشرية.",
+        "أصدر manifest ونتائج قابلة لإعادة التشغيل."
+      ],
+      "metric": "نسبة تشغيل النتائج مجددًا ضمن هامش أداء محدد مع manifest مكتمل.",
+      "difficulty": "متوسط إلى مرتفع (تقدير)",
+      "risks": "اعتماد النتائج على العتاد والتعريفات؛ تراخيص الأوزان منفصلة عن ترخيص الكود.",
+      "sources": [
+        "https://github.com/synchopate/llama-modchip"
+      ]
+    }
+  ],
+  "tests": {
+    "prRunId": 42511145574,
+    "prRunUrl": "https://github.com/lm7md-ai/.-/actions/runs/42511145574",
+    "runHead": "85bdb6a7058ded081b4b73c5a9a2c8a7559982c0",
+    "mergeRef": "48cf366fd7fee03dfcd9c2fe0003319f3e75d7fb",
+    "conclusion": "success",
+    "unitTests": {
+      "command": "python -m unittest discover -s tests -v",
+      "passed": 30,
+      "failed": 0,
+      "ranInGitHubActions": true,
+      "ranLocally": false
+    },
+    "editorialValidate": {
+      "command": "python scripts/editorial.py validate",
+      "records": 926,
+      "result": "success",
+      "ranInGitHubActions": true,
+      "perIncomingFile": false
+    },
+    "javascriptSyntax": "success",
+    "incomingOfficialValidateLocal": false,
+    "importCommandExecuted": false,
+    "structuralEquivalentIncoming": {
+      "files": 11,
+      "occurrences": 117,
+      "errors": 0,
+      "idUrlConflicts": 0
+    }
+  },
+  "deployment": {
+    "workflowRunId": 42507299158,
+    "workflowRunUrl": "https://github.com/lm7md-ai/.-/actions/runs/42507299158",
+    "conclusion": "success",
+    "artifactId": 13627882822,
+    "artifactSizeBytes": 1155075,
+    "deployedData": {
+      "feedItems": 800,
+      "editorialRecords": 859,
+      "seenIds": 3753,
+      "seenTitles": 3595,
+      "status": "partial"
+    },
+    "blobHashesMatchCurrentMain": {
+      "feed": true,
+      "editorial": true,
+      "seen": true,
+      "status": true
+    },
+    "livePagesEndpoint": "DisabledError",
+    "browserDetailPagesOpened": false,
+    "samplePublishedNews": {
+      "id": "fbaa86a829ad59fd10",
+      "titleAr": "أوبن إيه آي تعرض مسارًا آليًا لمساعدة فرق الصيانة في تدقيق Linux",
+      "detailUrl": "https://lm7md-ai.github.io/.-/#item=fbaa86a829ad59fd10"
+    },
+    "samplePublishedProject": {
+      "id": "ab84e19553c74c6e20",
+      "titleAr": "freeCodeCamp: تعليم برمجة مجاني بمشاريع عملية",
+      "detailUrl": "https://lm7md-ai.github.io/.-/#item=ab84e19553c74c6e20"
+    }
+  },
+  "officialCommands": {
+    "localCheckoutAvailable": false,
+    "python -m unittest discover -s tests -v": "not run locally; exact command passed in PR CI",
+    "python scripts/editorial.py validate": "not run locally; official CI validated the PR Editorial file",
+    "python scripts/editorial.py import": "not run",
+    "incomingPerFileOfficialValidate": "not run locally; 11 files received structural-equivalent validation"
+  },
+  "protectedPathsUntouched": [
+    "site/data/feed.json",
+    "site/data/seen.json",
+    "site/data/status.json",
+    ".github/workflows/**",
+    "scripts/**",
+    "site/** code and design"
+  ],
+  "mergeDecision": {
+    "merge": false,
+    "reason": "The existing main push workflow has write permission and runs scripts/update_feed.py, then stages feed.json, seen.json and status.json. A merge could change protected files; changing workflow/settings to suppress that is prohibited."
+  }
+}

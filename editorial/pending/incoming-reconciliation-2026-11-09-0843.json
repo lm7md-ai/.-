@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "runAt": "2026-11-09T08:43:29+03:00",
+  "mainSha": "20b7e453e2f282af9798e4657e95678a2142865d",
+  "feedSha": "e4b9c9c56a9294b1de059db7f14cd6f88edadc6b",
+  "editorialMainSha": "b9b75072729920f3e8d3a9eaf822a06bb6ebac61",
+  "seenSha": "74ed7acbaca381734995f04c4333fb80b269b991",
+  "mainIncoming": {
+    "files": 88,
+    "appearances": 928,
+    "importedExactIdUrlAppearances": 892,
+    "seenOnlyAppearances": 36,
+    "activeMatchNotImported": 0,
+    "feedIdUrlMismatch": 0,
+    "editorialIdUrlMismatch": 0,
+    "orphan": 0,
+    "structuralValidationErrors": 0,
+    "confirmedExpired": 0,
+    "needsCorrection": 0
+  },
+  "prOnlyIncoming": {
+    "files": 11,
+    "appearances": 117,
+    "uniqueIds": 79,
+    "repeatedAppearances": 38,
+    "alreadyInPrEditorialAppearances": 106,
+    "alreadyInPrEditorialUniqueIds": 68,
+    "seenOnlyUniqueIds": 11,
+    "activeMatchNotImported": 0,
+    "identityMismatches": 0,
+    "structuralValidationErrors": 0
+  },
+  "totals": {
+    "files": 99,
+    "appearances": 1045,
+    "unmatchedActiveRecords": 0,
+    "identityMismatches": 0,
+    "confirmedExpired": 0,
+    "needsCorrection": 0
+  },
+  "classificationNote": "الأعداد هي appearances ما لم يُذكر uniqueIds. لم تُصنف Seen-only على أنها منقضية دون دليل تاريخي كافٍ. جرى التحقق البنيوي المكافئ لقواعد scripts/editorial.py validate؛ لم يُشغّل CLI محليًا.",
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "status": "seen-only; no active feed record"
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "status": "seen-only; no active feed record"
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "status": "seen-only; no active feed record"
+    }
+  ],
+  "importPlan": {
+    "newNews": 7,
+    "exactFeedIds": [
+      "fe5fdb83e1ea95f1b4",
+      "7cbb1e8e79a4571203",
+      "655f55142621af7630",
+      "b9c0dd474c98ba8411",
+      "d1d29453d583846bd7",
+      "d983ff484839bbb51e",
+      "840b5edbfc7f4f3ff7"
+    ],
+    "preservedExistingEditorial": 926,
+    "mergedEditorialCount": 933,
+    "existingEntriesChanged": 0,
+    "method": "structural validate + exact feed ID/URL check + merge-preserving semantics; official CLI import not run"
+  }
+}

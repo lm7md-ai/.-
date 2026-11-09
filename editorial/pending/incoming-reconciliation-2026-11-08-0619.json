@@ -1,0 +1,316 @@
+{
+  "version": 1,
+  "runAt": "2026-11-08T06:19:01+03:00",
+  "main": {
+    "sha": "e89a737663f3944d6c9612c900bf2bc781769a5b",
+    "latestCommitMessage": "data: refresh deduplicated technology feed",
+    "feed": {
+      "items": 800,
+      "news": 700,
+      "projects": 100,
+      "generatedAt": "2026-11-08T00:33:09+00:00"
+    },
+    "editorial": {
+      "items": 859
+    },
+    "seen": {
+      "ids": 3669
+    },
+    "status": {
+      "state": "partial",
+      "lastAttemptAt": "2026-11-08T00:33:09+00:00",
+      "collected": 296,
+      "sources": {
+        "total": 26,
+        "ok": 23,
+        "empty": 2,
+        "error": 1
+      },
+      "errors": [
+        {
+          "name": "البوابة العربية للأخبار التقنية",
+          "error": "HTTP 403"
+        }
+      ],
+      "empty": [
+        "أبحاث الذكاء الاصطناعي",
+        "أبحاث تعلّم الآلة"
+      ]
+    }
+  },
+  "incomingOnMain": {
+    "files": 88,
+    "occurrences": 928,
+    "activeExactAlreadyImported": 294,
+    "historicalExactAlreadyImported": 597,
+    "seenOnly": 36,
+    "activeExactPending": 0,
+    "sameUrlDifferentId": 1,
+    "unmatchedNotSeen": 0,
+    "structuralIssues": 0,
+    "confirmedExpired": 0,
+    "mismatch": {
+      "historicalId": "7a99eca9b2ce14d9f5",
+      "currentFeedId": "e0cbbf211a55e79f34",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "decision": "hold both IDs; do not remap by title or URL"
+    }
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "inFeed": false,
+      "inEditorial": false,
+      "inSeen": true,
+      "researchDossiers": [
+        "editorial/library/nvidia-openshell-dossier-2026-10-29.json",
+        "editorial/library/nvidia-openshell-dossier-2026-10-30-1146.json"
+      ]
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "inFeed": false,
+      "inEditorial": false,
+      "inSeen": true,
+      "dossier": null
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "inFeed": false,
+      "inEditorial": false,
+      "inSeen": true,
+      "dossier": null
+    }
+  ],
+  "pr97": {
+    "state": "open",
+    "branch": "editorial/2026-11-06-2342-run11",
+    "headBeforeReport": "f22169633c8588d8e38896d7fda77d80a80f2079",
+    "base": "main",
+    "aheadBy": 39,
+    "behindBy": 0,
+    "changedFilesBeforeReport": 38,
+    "mergeable": true,
+    "incomingFiles": 7,
+    "incomingOccurrences": 48,
+    "previousBatch": {
+      "occurrences": 40,
+      "activeExactImportedOnPR": 36,
+      "alreadyMainImported": 2,
+      "seenOnlyNotConfirmedExpired": 2,
+      "idUrlMismatch": 0
+    },
+    "newBatch": {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-08-0554.json",
+      "records": [
+        {
+          "id": "cc9dd90ef8beb10b05",
+          "url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/",
+          "titleAr": "GitHub تختبر صفحة Overview جديدة لتلخيص جاهزية طلبات الدمج",
+          "basis": "article"
+        },
+        {
+          "id": "10bdc73097cfd2386d",
+          "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+          "titleAr": "بحث Apiiro يرصد أسرارًا داخل ملفات إعدادات محلية لوكلاء البرمجة",
+          "basis": "article"
+        },
+        {
+          "id": "e0c8b4541e0b5e8be3",
+          "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+          "titleAr": "تقييم METR يرجّح تسارع تقدم نماذج Anthropic في المهام المحددة بنحو الضعف",
+          "basis": "article"
+        },
+        {
+          "id": "7d6a970ab1ba21607a",
+          "url": "https://hunch.net/?p=13764006",
+          "titleAr": "جون لانغفورد يصف نهاية مجموعة AI Frontiers في تدوينة شخصية",
+          "basis": "article"
+        },
+        {
+          "id": "e32f5c79e127258c97",
+          "url": "https://www.engadget.com/2309554/gpu-supply-problem-no-end-in-sight/",
+          "titleAr": "طلب مراكز الذكاء الاصطناعي على الذاكرة يضغط على سوق بطاقات الرسوميات",
+          "basis": "article"
+        },
+        {
+          "id": "51a247b5b6ae00e91e",
+          "url": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/",
+          "titleAr": "اعتراض المجتمعات المحلية على مراكز البيانات يتحول إلى قضية سياسية",
+          "basis": "article"
+        },
+        {
+          "id": "b4b560276b721c3595",
+          "url": "https://news.google.com/rss/articles/CBMixAJBVV95cUxQdmoxWUM3RkpEUW43eEZQTlhENXpwVkEwa3N2UGt1enRrZzJJaUFadlVjbGt4ekxuVmNzbTBOTENiYm1oMWVRdnZ6aXZTNVFDOFFWazhHUElnOVlyNDRRLUNXMk1rcmZ2aTNIc2VLRkp6OEZtNm5WZlJXSEROT2M2OXF6cTA1NldNYmJsSWtHMFpJVmV2OHRQVnJJcE9xWWRwM3lzQ2IwWEJNcjRNSEtTeWxTWG9mSjdLYm9FOU44LVZRbHpZMTBBWDdRUkFYYnQtam9pdXcxSXE3Rjd6Ul9IdW1PSlpmVHhJcndkR0pQSFBqMnFUOUdZVVhoaGFWcXBVeTFOUVpUSWtmbkdfM1ZIU3prVWxpVmdCdzBBY3V0bTNuUHJUOUFybldGVjVTLXB3NXhaMkdxZjViNHFscGRqUGdBaU8?oc=5",
+          "titleAr": "HUMAIN تضم CNTXT لتعزيز خدمات الذكاء الاصطناعي والسحابة للمؤسسات",
+          "basis": "article"
+        },
+        {
+          "id": "c948bfa131bcac0192",
+          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5FN1pyNHVsSG1mS1l3Rk1HNEl4aVkyZ0RHLXo5RXFUWFE4NmpZUHpzMVZ5NFlYblVGdEpMOENkSzdYUmVvR1BJ?oc=5",
+          "titleAr": "التدريب التقني السعودي يعلن مؤشرات استخدام واسعة لمنصته الرقمية",
+          "basis": "metadata"
+        }
+      ],
+      "activeExactFeedMatches": 8,
+      "alreadyInMainEditorial": 0,
+      "inPrEditorial": 8,
+      "basisCounts": {
+        "article": 7,
+        "metadata": 1
+      },
+      "structuralCheck": "pass; 0 issues",
+      "allRequiredFieldsPresent": true,
+      "newlyCreatedInThisRun": 0,
+      "recheckedAt": "2026-11-08T06:19:01+03:00",
+      "reviewedAtInIncoming": "2026-11-08T05:54:23+03:00"
+    },
+    "editorial": {
+      "mainItems": 859,
+      "prItems": 903,
+      "mainIdsPreserved": 859,
+      "previousPrIdsPreserved": 895,
+      "newIdsVsMain": 44,
+      "diffAdditions": 1445,
+      "diffDeletions": 33,
+      "note": "GitHub file API did not return the complete 3.1 MB editorial file for a full line-by-line field diff. The two project records present in incoming 2026-11-07-2338 were key-compared: PageIndex lost no keys; DeepTutor lost no keys and added religious. No claim is made that every old value in the large file was independently compared."
+    }
+  },
+  "projects": {
+    "libraryEntries": 62,
+    "uniqueRepositories": 62,
+    "active": 60,
+    "archived": 2,
+    "feedLinked": 10,
+    "outsideFeed": 51,
+    "feedMembershipUnverified": 1,
+    "licensesNeedingUpstreamVerification": 9,
+    "notMaintained": 1,
+    "historicalProjectsAddedThisRun": 0,
+    "newProjectCardsThisRun": 0,
+    "visibleFeedProjectCards": 100,
+    "visibleCardsComplete": 100,
+    "visibleImprovements": 247,
+    "visibleSpinoffs": 235,
+    "visibleReligious": 28,
+    "previousEight": {
+      "names": [
+        "AI Engineering Hub",
+        "Google Gen AI Python SDK",
+        "LASM",
+        "MarkItDown",
+        "Minecraft Agent Harness",
+        "NVIDIA OpenShell",
+        "Pydantic AI",
+        "Astral uv"
+      ],
+      "metricsMeasuredAt": "2026-11-08T02:54:23Z",
+      "improvements": 24,
+      "spinoffs": 21,
+      "religious": 0,
+      "testEvidence": 0
+    }
+  },
+  "ideaPreservationRepairs": [
+    {
+      "file": "editorial/library/markitdown-dossier-2026-10-30-0011.json",
+      "beforeMain": {
+        "improvements": 3,
+        "spinoffs": 3
+      },
+      "beforePr": {
+        "improvements": 2,
+        "spinoffs": 1
+      },
+      "after": {
+        "improvements": 5,
+        "spinoffs": 4,
+        "religious": 0
+      },
+      "rule": "all main ideas kept in original order; PR additions appended; no duplicate titles",
+      "validation": "all required fields, 3-12 steps and HTTPS sources passed structural check",
+      "commit": "94f9da4cd82ba155077d0fcd7c5123aab8c17c20"
+    },
+    {
+      "file": "editorial/library/pydantic-ai-dossier-2026-10-30-1442.json",
+      "beforeMain": {
+        "improvements": 5,
+        "spinoffs": 5
+      },
+      "beforePr": {
+        "improvements": 2,
+        "spinoffs": 1
+      },
+      "after": {
+        "improvements": 7,
+        "spinoffs": 6,
+        "religious": 0
+      },
+      "rule": "all main ideas kept in original order; PR additions appended; no duplicate titles",
+      "validation": "all required fields, 3-12 steps and HTTPS sources passed structural check",
+      "commit": "f22169633c8588d8e38896d7fda77d80a80f2079"
+    }
+  ],
+  "validation": {
+    "prCiRun": 42442167113,
+    "prCiConclusion": "success",
+    "unittest": {
+      "command": "python -m unittest discover -s tests -v",
+      "result": "30 passed in CI"
+    },
+    "editorialValidate": {
+      "command": "python scripts/editorial.py validate",
+      "result": "Validated 903 editorial entries in CI"
+    },
+    "jsSyntax": "node --check site/app.js && node --check site/ideas.js passed in CI",
+    "localRepoCheckout": false,
+    "localCommandsNotRun": [
+      "python scripts/editorial.py validate <each incoming file>",
+      "python scripts/editorial.py import <incoming file>",
+      "python -m unittest discover -s tests -v locally"
+    ],
+    "structuralCheckFor0554Incoming": "pass",
+    "officialImportExecuted": false
+  },
+  "deployment": {
+    "mainWorkflowRun": 42430247102,
+    "conclusion": "success",
+    "artifactId": 13596858841,
+    "artifactCreatedAt": "2026-11-08T00:34:03Z",
+    "artifactMatchesCurrentMainGitBlobs": {
+      "feed": "c78d968bed2d7de71fd3c504c36af2cf76b7acd9",
+      "editorial": "b9b75072729920f3e8d3a9eaf822a06bb6ebac61",
+      "seen": "abd1b4157f0989cc4ed0f69c8797f976a48d677b",
+      "status": "70f87886d07184a990621a646439afdc2027d4fb"
+    },
+    "publishedCounts": {
+      "feed": 800,
+      "editorial": 859,
+      "seen": 3669
+    },
+    "liveEndpointAndDetailsBrowser": "DisabledError; artifact verified, direct HTTP/browser verification unavailable"
+  },
+  "detailLinksVerifiedInArtifact": [
+    {
+      "kind": "news",
+      "id": "c18d658a7097a990e5",
+      "title": "Inside GitHub’s new Git storage architecture",
+      "route": "https://lm7md-ai.github.io/.-/#item=c18d658a7097a990e5"
+    },
+    {
+      "kind": "project",
+      "id": "a17476e9d795515213",
+      "title": "hermes-agent",
+      "route": "https://lm7md-ai.github.io/.-/#item=a17476e9d795515213"
+    }
+  ],
+  "protectedFiles": {
+    "changedInPrDiff": [],
+    "codeDesignWorkflowPagesSettingsChanged": false,
+    "feedSeenStatusRemainEqualToMain": true
+  },
+  "mergeDecision": "not merged: main push workflow invokes update_feed.py and may rewrite feed.json, seen.json and status.json; also official local import command has not been run and full editorial field diff is not available"
+}

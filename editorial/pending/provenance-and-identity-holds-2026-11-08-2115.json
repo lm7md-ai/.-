@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "runAt": "2026-11-08T21:15:25+03:00",
+  "purpose": "Document historical and identity holds; do not create replacement IDs or import records that do not match the current Feed by exact ID and URL.",
+  "historicalOutOfFeed": [
+    {
+      "id": "ef313c34ae184d15b2",
+      "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph",
+      "titleAr": "تحقيق يثير أسئلة حول رسم علاقات محلي في macOS",
+      "feedPresent": false,
+      "editorialPresent": true,
+      "decision": "retain as historical Editorial record; do not import"
+    },
+    {
+      "id": "0eacd10b8c48398876",
+      "url": "https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition/",
+      "titleAr": "مكتب قانوني بريطاني يشارك تجربته مع البرمجيات الحرة",
+      "feedPresent": false,
+      "editorialPresent": true,
+      "decision": "retain as historical Editorial record; do not import"
+    },
+    {
+      "id": "bd95b63d46d959afe7",
+      "url": "https://www.kadoa.com/companies/insights/ai-selloff-perspective",
+      "titleAr": "تصحيح أسهم شركات التقنية يختلف عن الهبوط العام في السوق",
+      "feedPresent": false,
+      "editorialPresent": true,
+      "decision": "retain as historical Editorial record; do not import"
+    }
+  ],
+  "identityHold": {
+    "historicalId": "7a99eca9b2ce14d9f5",
+    "currentId": "e0cbbf211a55e79f34",
+    "url": "https://github.com/rasbt/LLMs-from-scratch",
+    "decision": "keep both IDs separate; same URL is not permission to synthesize or replace an ID"
+  },
+  "previousRunCorrection": {
+    "reportClaimedModifiedEntries": 12,
+    "auditedEntries": [
+      "5be9cd76a11a8ae694",
+      "ef313c34ae184d15b2",
+      "0eacd10b8c48398876",
+      "bd95b63d46d959afe7",
+      "0b33259ab43866603f",
+      "13e695696a47eccca2",
+      "9fdb6f74ae483d9b23",
+      "6b4ec2ccffedd67d8f",
+      "dcb265f08ffa052d65",
+      "91a344d41c03c7c96d",
+      "cbc856aa32d1333eb1",
+      "a47dad607e0fe97888"
+    ],
+    "result": {
+      "newActiveIds": 8,
+      "existingActiveIdRefreshed": 1,
+      "historicalOutOfFeedIds": 3,
+      "unresolvedIdNotFoundInEditorial": "none"
+    },
+    "note": "The 91a... ID already existed in main Editorial and current Feed; it was refreshed, not a new unique ID. The previous report's count is 12 changed records, not 12 new IDs."
+  },
+  "expiryAssessment": {
+    "confirmedExpired": 0,
+    "reason": "Out-of-feed records are historical; no reliable expiry evidence was established."
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "feed": false,
+      "mainEditorial": false,
+      "prEditorial": false,
+      "seen": true
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "feed": false,
+      "mainEditorial": false,
+      "prEditorial": false,
+      "seen": true
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "feed": false,
+      "mainEditorial": false,
+      "prEditorial": false,
+      "seen": true
+    }
+  ],
+  "importDecision": "Only exact current Feed ID+URL matches were included in the new incoming batch. Historical and identity-hold records remain separate.",
+  "officialCommands": {
+    "validate": "not run locally; no repository Python checkout/runtime",
+    "import": "not run locally; merge performed by structural-equivalent JSON merge; official PR CI validates the resulting Editorial"
+  },
+  "protectedPathsUntouched": true
+}

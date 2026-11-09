@@ -1,0 +1,187 @@
+{
+  "version": 1,
+  "runAt": "2026-11-08T08:46:43+03:00",
+  "main": {
+    "commit": "e89a737663f3944d6c9612c900bf2bc781769a5b",
+    "feed": {
+      "items": 800,
+      "news": 700,
+      "projects": 100,
+      "generatedAt": "2026-11-08T00:33:09+00:00"
+    },
+    "editorial": 859,
+    "seenIds": 3669,
+    "status": "partial",
+    "sources": {
+      "successful": 23,
+      "empty": 2,
+      "errors": 1
+    },
+    "incoming": {
+      "files": 88,
+      "occurrences": 928,
+      "activeExactAlreadyImported": 294,
+      "historicalExactAlreadyImported": 597,
+      "seenOnly": 36,
+      "activeExactPending": 0,
+      "identityMismatches": 1,
+      "unmatchedNotSeen": 0,
+      "structuralErrors": 0,
+      "confirmedExpired": 0
+    }
+  },
+  "pr97": {
+    "state": "open",
+    "mergeable": true,
+    "branch": "editorial/2026-11-06-2342-run11",
+    "headBeforeReport": "cab03c2eb74e51b46fb4d449ac98e85e1ecfe464",
+    "incomingFiles": 96,
+    "incomingOccurrences": 49,
+    "classification": {
+      "activeExactStagedInPrEditorial": 44,
+      "alreadyImportedOnMain": 2,
+      "seenOnlyNotConfirmedExpired": 2,
+      "existingFeedProjectRefreshedWithOriginalId": 1,
+      "idUrlMismatches": 0,
+      "structuralErrors": 0
+    },
+    "editorial": {
+      "mainCount": 859,
+      "prCount": 903,
+      "mainIdsPreserved": 859,
+      "mainIdsRemoved": 0,
+      "exactUnchangedOldRecords": 855,
+      "enrichedExistingOldRecords": 4,
+      "newIds": 44
+    },
+    "protectedPathsChanged": [],
+    "codeOrWorkflowPathsChanged": []
+  },
+  "held": {
+    "seenOnlyNotConfirmedExpired": [
+      {
+        "id": "5222b774813a87d84a",
+        "sourceFile": "nabdh-editorial-2026-11-07-0247.json",
+        "reason": "Present in Seen; absent from current Feed and Editorial. Expiry not independently established."
+      },
+      {
+        "id": "1cff92b3d4b08e145f",
+        "sourceFile": "nabdh-editorial-2026-11-07-0247.json",
+        "reason": "Present in Seen; absent from current Feed and Editorial. Expiry not independently established."
+      }
+    ],
+    "identityMismatch": [
+      {
+        "historicalId": "7a99eca9b2ce14d9f5",
+        "currentFeedId": "e0cbbf211a55e79f34",
+        "url": "https://github.com/rasbt/LLMs-from-scratch",
+        "action": "Hold both identities; do not merge or generate an alternate ID."
+      }
+    ]
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inSeen": true
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inSeen": true
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inSeen": true
+    }
+  ],
+  "browserUseRefresh": {
+    "id": "c1af6b58492f9bf434",
+    "url": "https://github.com/browser-use/browser-use",
+    "feedUrlExact": true,
+    "incomingFile": "editorial/incoming/nabdh-editorial-2026-11-08-0846.json",
+    "editorialEntryMatchesIncomingExactly": true,
+    "basis": "readme",
+    "reviewedAt": "2026-11-08T08:46:43+03:00",
+    "improvements": 4,
+    "spinoffs": 4,
+    "religious": 0,
+    "executionTested": false
+  },
+  "projectLibrary": {
+    "uniqueProjects": 62,
+    "active": 60,
+    "archived": 2,
+    "feedLinked": 10,
+    "researchOnly": 51,
+    "membershipUnresolved": 1,
+    "licensesNeedUpstreamVerification": 9,
+    "notMaintained": 1,
+    "previousEightRefresh": "editorial/library/previous-eight-refresh-2026-11-08-0554.json",
+    "previousEight": {
+      "reviewed": 8,
+      "improvements": 24,
+      "spinoffs": 21,
+      "religious": 0,
+      "testEvidence": 0
+    },
+    "publicProjectCards": {
+      "complete": 100,
+      "total": 100,
+      "improvements": 247,
+      "spinoffs": 235,
+      "religious": 28
+    }
+  },
+  "verification": {
+    "structuralEquivalent": {
+      "prEditorialRecords": 903,
+      "prEditorialErrors": 0,
+      "incomingRecords": 49,
+      "incomingErrors": 0
+    },
+    "officialCiRun": 42452262153,
+    "officialCiUrl": "https://github.com/lm7md-ai/.-/actions/runs/42452262153",
+    "unittest": {
+      "command": "python -m unittest discover -s tests -v",
+      "passed": 30,
+      "failed": 0,
+      "executedBy": "GitHub Actions"
+    },
+    "editorialValidate": {
+      "command": "python scripts/editorial.py validate",
+      "result": "success",
+      "executedBy": "GitHub Actions"
+    },
+    "javascriptSyntax": "success",
+    "localUnittestExecuted": false,
+    "localValidateExecuted": false,
+    "editorialImportExecuted": false,
+    "incomingFilesValidatedByOfficialScript": false
+  },
+  "deployment": {
+    "workflowRun": 42430247102,
+    "artifactId": 13596858841,
+    "result": "success",
+    "artifactMatchesMainGitBlobs": true,
+    "publishedCounts": {
+      "feed": 800,
+      "editorial": 859,
+      "seenIds": 3669
+    },
+    "directPagesFetch": "DisabledError",
+    "liveDetailPagesVerified": false
+  },
+  "decision": {
+    "merged": false,
+    "newlyPublished": false,
+    "reason": "The existing push-to-main workflow runs update_feed.py and may write feed.json, seen.json, and status.json. Preserve the user's protected-file constraint."
+  }
+}

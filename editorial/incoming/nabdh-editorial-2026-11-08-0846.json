@@ -1,0 +1,263 @@
+{
+  "version": 1,
+  "items": {
+    "c1af6b58492f9bf434": {
+      "url": "https://github.com/browser-use/browser-use",
+      "titleAr": "Browser Use — مكتبة Python لوكلاء المتصفح مع تشغيل محلي وسحابي",
+      "summaryAr": "مكتبة Python مفتوحة المصدر وواجهة CLI لبناء وكلاء يتعاملون مع صفحات الويب. تفصل الوثائق بين مكتبة الوكيل التي يدمجها المطور في تطبيقه، وأداة CLI، وخدمة الوكيل المستضافة، ومتصفح Cloud المدار. يمكن تشغيل المتصفح محليًا وربطه بمزود نموذج مدعوم، بما في ذلك Ollama محليًا؛ أما الاستدلال السحابي ومتصفح Cloud فلهما تكاليف منفصلة.",
+      "whyItMatters": "التحليل: يتيح اختبار رحلات الويب وبناء وكلاء مخصصين بدل الاقتصار على أتمتة محددة مسبقًا. يجب أن يقتصر الاستخدام على مواقع وصفحات تملكها أو لديك إذن لاختبارها، مع مراجعة بشرية قبل أي إجراء مؤثر. تشغيل المتصفح محليًا لا يعني أن بيانات الصفحة تبقى محلية إذا كان النموذج المختار مستضافًا.",
+      "audience": "مطورو Python، ومهندسو اختبار الويب، وبناة وكلاء التصفح.",
+      "nextSteps": [
+        "ابدأ بموقع محلي تجريبي أو صفحة عامة للقراءة فقط، ولا تستخدم حسابات أو بيانات شخصية حقيقية.",
+        "تأكد من Python 3.11+، وأنشئ بيئة باستخدام uv ثم ثبّت browser-use؛ اختر مزود نموذج موثقًا.",
+        "قارن نموذجًا محليًا عبر Ollama مع مزود مستضاف على مهمة قراءة بسيطة، وسجّل الدقة والزمن والتكلفة قبل توسيع الاستخدام."
+      ],
+      "limitations": "لم أُثبّت المشروع أو أشغّله. تتغير واجهات المواقع وقد تجعل خطوات الوكيل غير مستقرة، كما أن نتائج النماذج احتمالية وتحتاج تحققًا. استخدام نموذج API قد يرسل نص الصفحة أو بياناتها إلى المزود حتى لو كان المتصفح محليًا. وفق صفحة الأسعار بتاريخ المراجعة، متصفح Cloud يبدأ من 0.02 دولار لكل ساعة متصفح، وتُحاسب حركة الشبكة منفصلة؛ وتشغيل الوكيل المستضاف يضيف تكلفة النموذج ورسوم خدمة. لا تستخدمه لتجاوز قيود المواقع أو ضوابط الوصول، ولا تختبر إلا نطاقات مصرحًا بها.",
+      "reviewedAt": "2026-11-08T08:46:43+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "Browser Use README",
+          "url": "https://github.com/browser-use/browser-use"
+        },
+        {
+          "title": "Browser Use pyproject.toml",
+          "url": "https://github.com/browser-use/browser-use/blob/main/pyproject.toml"
+        },
+        {
+          "title": "Browser Use MIT License",
+          "url": "https://github.com/browser-use/browser-use/blob/main/LICENSE"
+        },
+        {
+          "title": "Browser Use Open Source Introduction",
+          "url": "https://docs.browser-use.com/open-source/introduction"
+        },
+        {
+          "title": "Browser Use Supported Models",
+          "url": "https://docs.browser-use.com/open-source/supported-models"
+        },
+        {
+          "title": "Browser Use Cloud Agent Quickstart",
+          "url": "https://docs.browser-use.com/cloud/agent/quickstart"
+        },
+        {
+          "title": "Browser Use Pricing",
+          "url": "https://browser-use.com/pricing"
+        }
+      ],
+      "overview": "ثلاثة مسارات منفصلة: Python Library لبناء Agent داخل تطبيقك، وCLI لإتاحة المتصفح لوكيل برمجي قائم، وHosted Agent API لتشغيل وكيل مستضاف. يمكن للمكتبة والـCLI التحكم بمتصفح محلي أو متصفح Cloud عبر CDP. توثيق النماذج يذكر دعم أكثر من 15 مزودًا، ومنهم Ollama محليًا. خدمة Cloud Browser ليست هي نفسها خدمة Hosted Agent.",
+      "requirements": "Python >=3.11 وuv أو pip. يحتاج مسار Python إلى متصفح محلي مناسب ومزود نموذج؛ يدعم التوثيق Ollama محليًا، بينما يحتاج مزود API إلى مفتاحه واتصالًا بالإنترنت. متصفح Cloud وخدمة Hosted Agent اختياريان ويتطلبان مفاتيح خدمة وتكلفة استخدام. الاعتماديات الإضافية في pyproject.toml اختيارية لبعض التكاملات، لذلك لا يلزم تثبيت جميع extras لكل تجربة.",
+      "quickStart": "لتجربة محلية آمنة: أنشئ مشروع Python 3.12 باستخدام uv، ثم نفّذ `uv add browser-use`. شغّل Ollama محليًا وثبّت نموذجًا متوافقًا، ثم أنشئ Agent باستخدام ChatOllama ونفّذ مهمة قراءة فقط على صفحة اختبار محلية. راجع صفحة Supported Models قبل اختيار النموذج. لم تُنفذ أوامر التثبيت أو التشغيل في هذه المراجعة.",
+      "improvements": [
+        {
+          "title": "بوابة موافقة قبل إرسال النماذج",
+          "problem": "الوكيل قد يرسل نموذجًا دون مراجعة المستخدم.",
+          "approach": "طبقة تطبيق خارجية تعرض ملخص الإرسال وتنتظر موافقة صريحة في موقع اختبار.",
+          "stack": "Python, Browser Use, SQLite",
+          "steps": [
+            "حدد إجراءات الإرسال الحساسة.",
+            "ابنِ نموذجًا تجريبيًا.",
+            "اعترض الإرسال وسجّل القرار.",
+            "اختبر 30 محاولة."
+          ],
+          "metric": "صفر إرسال بلا موافقة في 30 اختبارًا.",
+          "difficulty": "متوسطة؛ تقدير 4 أيام.",
+          "risks": "تغير واجهة الموقع قد يتجاوز الاعتراض؛ ليست حماية مضمونة.",
+          "sources": [
+            {
+              "title": "Browser Use README",
+              "url": "https://github.com/browser-use/browser-use"
+            },
+            {
+              "title": "Browser Use Docs",
+              "url": "https://docs.browser-use.com/open-source/introduction"
+            }
+          ]
+        },
+        {
+          "title": "مقياس تكرارية مهام المتصفح",
+          "problem": "نجاح محاولة واحدة لا يقيس الاعتمادية.",
+          "approach": "أداة تعيد تشغيل سيناريوهات مصرح بها وتجمع نسب النجاح والتكلفة.",
+          "stack": "Python, pytest, Browser Use",
+          "steps": [
+            "حدد عشر مهام على صفحات محلية.",
+            "أعد الحالة الابتدائية.",
+            "كرر كل مهمة خمس مرات.",
+            "احسب النجاح والتباين."
+          ],
+          "metric": "تقرير 50 تشغيلًا مع أسباب الفشل.",
+          "difficulty": "متوسطة؛ تقدير أسبوع.",
+          "risks": "تكلفة النماذج وتباين النتائج.",
+          "sources": [
+            {
+              "title": "Browser Use README",
+              "url": "https://github.com/browser-use/browser-use"
+            },
+            {
+              "title": "Browser Use Docs",
+              "url": "https://docs.browser-use.com/open-source/introduction"
+            }
+          ]
+        },
+        {
+          "title": "مدقق وصولية لتفاعل الوكلاء",
+          "problem": "بعض عناصر الويب غير المعنونة تسبب فشل التنقل.",
+          "approach": "اربط نتائج اختبارات الوصولية بفشل الوكيل في صفحات تجريبية.",
+          "stack": "Playwright, axe-core, Python",
+          "steps": [
+            "أنشئ صفحات بعناصر معنونة وغير معنونة.",
+            "شغّل فحص وصولية.",
+            "نفّذ مهام تنقل بسيطة.",
+            "قارن النتائج."
+          ],
+          "metric": "كشف 80% من حالات الفشل المرتبطة بالتسمية.",
+          "difficulty": "متوسطة؛ تقدير 5 أيام.",
+          "risks": "الارتباط لا يثبت السببية.",
+          "sources": [
+            {
+              "title": "Browser Use README",
+              "url": "https://github.com/browser-use/browser-use"
+            },
+            {
+              "title": "Browser Use Docs",
+              "url": "https://docs.browser-use.com/open-source/introduction"
+            }
+          ]
+        },
+        {
+          "title": "سجل أدلة قابل للمراجعة لكل خطوة",
+          "problem": "النتيجة النهائية وحدها لا تبيّن الصفحة أو الدليل الذي استند إليه الوكيل عند اتخاذ كل خطوة.",
+          "approach": "إضافة سجل محلي منظم يربط كل خطوة بعنوان الصفحة ووقتها ووصف الفعل ومقتطف دليل وحالة المراجعة البشرية، باستخدام بيانات اختبار اصطناعية.",
+          "stack": "Python, Browser Use, Pydantic, SQLite",
+          "steps": [
+            "أنشئ موقعًا تجريبيًا ببيانات اصطناعية.",
+            "عرّف مخططًا موحدًا لأحداث التنقل والقراءة.",
+            "اربط كل نتيجة بمصدرها ووقت تنفيذها.",
+            "أضف مراجعة بشرية قبل اعتماد الإجراءات الحساسة.",
+            "قِس اكتمال الأدلة في 50 تشغيلًا تجريبيًا."
+          ],
+          "metric": "وجود دليل ومراجعة بشرية لكل إجراء حساس في 50 تشغيلًا تجريبيًا.",
+          "difficulty": "متوسطة؛ تقدير 5–7 أيام.",
+          "risks": "قد تتضمن مقتطفات الصفحات بيانات شخصية؛ استخدم بيانات اصطناعية واحتفاظًا محدودًا.",
+          "sources": [
+            {
+              "title": "Browser Use README",
+              "url": "https://github.com/browser-use/browser-use"
+            },
+            {
+              "title": "Browser Use Supported Models",
+              "url": "https://docs.browser-use.com/open-source/supported-models"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مختبر اختبار مواقع الطلاب",
+          "problem": "طلاب الويب يحتاجون اختبار رحلات مستخدم متكررة.",
+          "approach": "خدمة محلية تختبر روابط ونماذج مواقع يملكها الطلاب.",
+          "stack": "Python, Browser Use, pytest",
+          "steps": [
+            "جهز موقعًا تجريبيًا.",
+            "حدد خمس رحلات.",
+            "نفّذها وسجّل الأخطاء.",
+            "قارنها بفحص يدوي."
+          ],
+          "metric": "اكتشاف 80% من الأخطاء المزروعة.",
+          "difficulty": "متوسطة؛ تقدير أسبوع.",
+          "risks": "اختبر المواقع المملوكة أو المصرح بها فقط.",
+          "sources": [
+            {
+              "title": "Browser Use README",
+              "url": "https://github.com/browser-use/browser-use"
+            },
+            {
+              "title": "Browser Use Docs",
+              "url": "https://docs.browser-use.com/open-source/introduction"
+            }
+          ]
+        },
+        {
+          "title": "مدقق روابط المقررات",
+          "problem": "روابط المصادر التعليمية تتعطل مع الوقت.",
+          "approach": "أداة تفحص روابط عامة وتحفظ تقريرًا بتاريخ التحقق.",
+          "stack": "Python, Browser Use, CSV",
+          "steps": [
+            "اجمع 30 رابطًا عامًا.",
+            "افحص الفتح والعنوان.",
+            "سجّل التعطل.",
+            "راجع الحالات المشكوك بها."
+          ],
+          "metric": "دقة 95% في عينة مرجعية.",
+          "difficulty": "سهلة؛ تقدير يومان.",
+          "risks": "حظر بعض المواقع للأتمتة.",
+          "sources": [
+            {
+              "title": "Browser Use README",
+              "url": "https://github.com/browser-use/browser-use"
+            },
+            {
+              "title": "Browser Use Docs",
+              "url": "https://docs.browser-use.com/open-source/introduction"
+            }
+          ]
+        },
+        {
+          "title": "مقارن تكلفة نماذج وكلاء التصفح",
+          "problem": "اختيار النموذج دون قياس قد يزيد التكلفة.",
+          "approach": "تجربة مقارنة على مهام ثابتة بحساب الزمن والنجاح والتكلفة.",
+          "stack": "Python, Browser Use, pandas",
+          "steps": [
+            "حدد خمس مهام آمنة.",
+            "شغّل ثلاثة نماذج.",
+            "اجمع الزمن والتكلفة.",
+            "اعرض حدود العينة."
+          ],
+          "metric": "تقرير قابل لإعادة الإنتاج لـ15 تجربة.",
+          "difficulty": "متوسطة؛ تقدير أسبوع.",
+          "risks": "الأسعار متغيرة والنتائج حساسة للبيئة.",
+          "sources": [
+            {
+              "title": "Browser Use README",
+              "url": "https://github.com/browser-use/browser-use"
+            },
+            {
+              "title": "Browser Use Docs",
+              "url": "https://docs.browser-use.com/open-source/introduction"
+            }
+          ]
+        },
+        {
+          "title": "مولّد اختبارات رحلة مستخدم من وصف مكتوب",
+          "problem": "تحويل متطلبات اختبار الواجهة إلى خطوات قابلة للتكرار يستغرق وقتًا.",
+          "approach": "تحويل وصف رحلة مستخدم إلى سيناريو مقترح يراجعه المطور ثم يشغله على تطبيق محلي تجريبي فقط.",
+          "stack": "Python, Browser Use, pytest, FastAPI",
+          "steps": [
+            "اكتب وصفًا لرحلة داخل تطبيق تجريبي.",
+            "حوّل الوصف إلى خطوات ومعايير نجاح.",
+            "اطلب مراجعة بشرية للخطوات قبل التشغيل.",
+            "نفّذ الاختبار على localhost.",
+            "قارن النتيجة مع اختبار يدوي مرجعي."
+          ],
+          "metric": "80% من سيناريوهات عينة من 20 وصفًا تتحول إلى خطوات صحيحة بعد المراجعة.",
+          "difficulty": "متوسطة؛ تقدير أسبوع.",
+          "risks": "قد يسيء النموذج تفسير الوصف؛ لا تشغّل السيناريوهات على مواقع خارج نطاق الاختبار.",
+          "sources": [
+            {
+              "title": "Browser Use README",
+              "url": "https://github.com/browser-use/browser-use"
+            },
+            {
+              "title": "Browser Use Open Source Introduction",
+              "url": "https://docs.browser-use.com/open-source/introduction"
+            }
+          ]
+        }
+      ],
+      "religious": [],
+      "costs": "ترخيص المكتبة MIT ولا توجد رسوم ترخيص. الاستدلال المحلي يتجنب رسوم API لكنه يستهلك موارد الجهاز والطاقة. الاستدلال عبر مزود مستضاف يخضع لتسعير المزود. صفحة Browser Use Pricing تعرض 0.02 دولار لكل ساعة متصفح Cloud، مع رسوم حركة شبكة منفصلة؛ وخدمة Hosted Agents تضيف تكلفة النموذج ورسوم خدمة 20%. الأسعار قابلة للتغيير.",
+      "localVsCloud": "محليًا: Python Library + متصفح محلي + نموذج محلي مثل Ollama، مع اعتماد الأداء على موارد الجهاز. يمكن أيضًا تشغيل المتصفح محليًا مع نموذج API، وعندها قد تغادر بيانات الصفحة الجهاز. سحابيًا: Cloud Browser يستضيف Chromium، بينما Hosted Agent يشغّل الوكيل أيضًا؛ كلاهما اختياري ومدفوع حسب الاستخدام.",
+      "alternatives": "للتدفقات الحتمية التي لا تحتاج استدلالًا، استخدم Playwright أو Puppeteer مباشرة. للواجهات الوكيلة يمكن مقارنة Stagehand. الاختيار يعتمد على الحاجة إلى قرارات نموذجية مقابل خطوات اختبار ثابتة."
+    }
+  }
+}

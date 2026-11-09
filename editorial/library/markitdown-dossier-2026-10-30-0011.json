@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "reviewedAt": "2026-10-30T00:11:07+03:00",
+  "reviewedAt": "2026-11-07T11:41:14+03:00",
   "published": false,
   "siteVisible": false,
   "status": "research-only; not published",
@@ -16,12 +16,12 @@
     "disabled": false,
     "license": "MIT",
     "defaultBranch": "main",
-    "stars": 192881,
-    "forks": 14429,
-    "openIssues": 767,
-    "pushedAt": "2026-10-28T15:33:14Z",
-    "updatedAt": "2026-10-29T21:14:05Z",
-    "metricsMeasuredAt": "2026-10-30T00:11:07+03:00",
+    "stars": 194235,
+    "forks": 14614,
+    "openIssues": 811,
+    "pushedAt": "2026-11-07T00:14:01Z",
+    "updatedAt": "2026-11-07T08:19:05Z",
+    "metricsMeasuredAt": "2026-11-07T08:44:00Z",
     "measurementSource": "GitHub repository API"
   },
   "overview": "أداة Python وسطر أوامر لتحويل ملفات PDF وWord وPowerPoint وExcel والصور والصوت وHTML وCSV وJSON وXML وZIP وEPUB وبعض الرسائل ومصادر الفيديو إلى Markdown. الهدف تجهيز المحتوى للفهرسة والتحليل ومسارات LLM، لا إعادة إنتاج التنسيق المرئي بدقة مطبعية.",
@@ -122,6 +122,62 @@
           "url": "https://pymupdf.readthedocs.io/en/latest/"
         }
       ]
+    },
+    {
+      "title": "اختبارات بنيوية للجداول العربية متعددة الصفحات",
+      "problem": "قد يفقد تحويل المستندات العربية ترتيب الأعمدة أو علاقات الخلايا عند وجود جداول RTL أو خلايا مدمجة وصفحات متتابعة؛ لا توجد في هذه المراجعة مجموعة مرجعية منشورة تقيس ذلك.",
+      "approach": "إنشاء مجموعة مستندات عامة مرخصة مع جداول مرجعية، ثم مقارنة النص المستخرج وبنية الصفوف والأعمدة وترتيب RTL لكل صيغة مدعومة.",
+      "stack": "Python، pytest، pandas، openpyxl، python-docx، JSONL",
+      "steps": [
+        "اختر ملفات PDF وDOCX وXLSX عامة تسمح تراخيصها بإعادة الاختبار.",
+        "أنشئ تمثيلًا مرجعيًا يدويًا للجداول وعناوين الأعمدة وترتيبها.",
+        "حوّل الملفات عبر MarkItDown وسجّل نوع المحول والاعتماديات.",
+        "قارن الخلايا والصفوف والأعمدة وترتيب RTL مع المرجع.",
+        "انشر تقريرًا يفصل أخطاء OCR عن أخطاء التحويل البنيوي."
+      ],
+      "metric": "نسبة تطابق الخلايا والصفوف والأعمدة وترتيب RTL لكل نوع ملف.",
+      "difficulty": "متوسطة إلى مرتفعة — تقدير؛ تتطلب بيانات مرجعية متعددة الصيغ.",
+      "risks": "تراخيص المستندات، تفاوت OCR والخطوط، واحتمال أن تعكس النتيجة عينة محدودة لا كل الملفات.",
+      "sources": [
+        {
+          "title": "MarkItDown — README الرسمي",
+          "url": "https://github.com/microsoft/markitdown/blob/main/README.md"
+        },
+        {
+          "title": "MarkItDown — package README",
+          "url": "https://github.com/microsoft/markitdown/blob/main/packages/markitdown/README.md"
+        }
+      ]
+    },
+    {
+      "title": "تقرير مقارنة محلي لمحولات المستندات إلى Markdown",
+      "problem": "يصعب اختيار محول مناسب دون مقارنة قابلة لإعادة الإنتاج بين جودة البنية والسرعة والاعتماديات.",
+      "approach": "أداة benchmark محلية تشغّل مجموعة ملفات ثابتة على MarkItDown وDocling وApache Tika، وتعرض جودة العناوين والجداول والروابط وزمن التحويل.",
+      "stack": "Python، pandas، pytest، Docling، Apache Tika، Markdown",
+      "steps": [
+        "جهز مجموعة ملفات مرخصة ومتنوعة مع نتائج مرجعية.",
+        "أضف محولات اختيارية مع عزل اعتماديات كل محول.",
+        "نفّذ التحويل محليًا وسجل الزمن والذاكرة وحجم الناتج.",
+        "قارن العناوين والجداول والروابط والبيانات الوصفية.",
+        "أنشئ تقريرًا يوضح القيود وإصدارات الأدوات دون ترتيب مطلق للجودة."
+      ],
+      "metric": "دقة البنية المستخرجة وزمن التحويل واستهلاك الذاكرة لكل صيغة.",
+      "difficulty": "متوسطة — تقدير؛ تتطلب ضبط بيئات مختلفة.",
+      "risks": "اختلاف إعدادات المحولات قد يفسد المقارنة، وبعض الميزات الاختيارية تحتاج أدوات خارجية.",
+      "sources": [
+        {
+          "title": "MarkItDown — المستودع الرسمي",
+          "url": "https://github.com/microsoft/markitdown"
+        },
+        {
+          "title": "Docling — المستودع الرسمي",
+          "url": "https://github.com/docling-project/docling"
+        },
+        {
+          "title": "Apache Tika — التوثيق",
+          "url": "https://tika.apache.org/"
+        }
+      ]
     }
   ],
   "spinoffs": [
@@ -199,6 +255,32 @@
           "url": "https://pymupdf.readthedocs.io/en/latest/"
         }
       ]
+    },
+    {
+      "title": "مختبر عربي لتحويل ملفات الجامعة إلى Markdown قابل للبحث",
+      "problem": "يحتاج الطلاب إلى استخراج بنية المحاضرات والجداول من ملفات متنوعة دون رفع ملفاتهم الخاصة إلى خدمة خارجية.",
+      "approach": "تطبيق سطح مكتب/طرفية يعمل محليًا ويحوّل الملفات التي يختارها المستخدم إلى Markdown مع تقرير جودة ومراجع للصفحات.",
+      "stack": "Python، MarkItDown، SQLite، PySide أو واجهة محلية خفيفة",
+      "steps": [
+        "ابدأ بصيغ PDF وDOCX وPPTX وXLSX الموثقة.",
+        "نفّذ التحويل محليًا مع اختيار مجلد الإخراج.",
+        "احتفظ برقم الصفحة واسم الملف بجانب كل مقطع عند توفرهما.",
+        "اعرض التحذيرات عند فقدان الصور أو الجداول أو النصوص.",
+        "اختبره على ملفات عامة مرخصة قبل استخدام مستندات شخصية."
+      ],
+      "metric": "نسبة الملفات التي تنتج Markdown قابلًا للبحث مع بقاء عناوين الأقسام والجداول الأساسية.",
+      "difficulty": "متوسطة — تقدير.",
+      "risks": "قد تكون بعض ملفات PDF صورًا تحتاج OCR منفصلًا، ولا يضمن Markdown الحفاظ على التنسيق المرئي.",
+      "sources": [
+        {
+          "title": "MarkItDown — README الرسمي",
+          "url": "https://github.com/microsoft/markitdown/blob/main/README.md"
+        },
+        {
+          "title": "MarkItDown — package README",
+          "url": "https://github.com/microsoft/markitdown/blob/main/packages/markitdown/README.md"
+        }
+      ]
     }
   ],
   "sourceReview": {
@@ -232,5 +314,7 @@
     }
   ],
   "developerDisplayRequirements": "هذا الملف بحثي فقط وغير منشور. إن عُرض لاحقًا، أظهر حالة عدم النشر، المستودع والترخيص ووقت قياس المؤشرات والمتطلبات والبدء والتكلفة المحلية/السحابية والبدائل والقيود والأفكار. لا تدمجه تلقائيًا في site/data/editorial.json ولا تزعم اختباره.",
-  "testEvidence": null
+  "testEvidence": null,
+  "metricsMeasuredAt": "2026-11-07T08:44:00Z",
+  "testStatus": "not_run"
 }

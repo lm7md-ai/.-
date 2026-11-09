@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-09T21:12:38+03:00",
+  "status": "pending_source_or_identity_correction",
+  "records": [
+    {
+      "id": "7a99eca9b2ce14d9f5",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "issue": "same URL is now present in feed under id e0cbbf211a55e79f34",
+      "decision": "preserve both IDs; no alias; do not replace historical editorial identity"
+    },
+    {
+      "id": "d18ddd9c12e46dd96b",
+      "issue": "closed 2022 issue, no current primary-source evidence",
+      "decision": "do not enrich until a recent primary source is found"
+    },
+    {
+      "id": "e3e3a03bfc5be7aa43",
+      "url": "https://news.google.com/rss/articles/CBMiyAVBVV95cUxQcmhILXN2eEUzMy0yVXEtX1hmLXNzSU9LT210YzUtTDdKazFRS0N6VnVjbWpJN1NCQnRCdzUtMWFfOGtTeXNvdHh6RGI5U01vT0RBQWdNelNuQjZ1MHdzWXE4ZW5zR0FTOGJHVHdKUnRxUVo0UjVxRW9rSG5IbGZ1OGRXa2NpSV9Bdkhtdmk4LWFJeGNMaXNYdVlzbHF3eEpVa1hlODkwaXlINDlxb1EwMi1rZDZwUjNSS2hRZEdaRjcwMnJiWTFyR2VuTjIwSV81OE5Pa1Z6a3ZKYWlzLW5jekNzNVhHLXhXLTVZbE1UVmw5ODBiNGFrMGxiU2hZcjRuTmcyRl9Ib2ktVVk3elZNalAyTDNucURmQnhKSkJobzFybEZnanhaZUR4eU1sVGN0Mldxb1VKR1FxZTNEWlJPRDJZZWdwclp3QW1aMVB1SVR1bUxCbHRiTVFJNWtjMGFzaE81SDVsSm11M0F3VHlKeTYwS21QR1A0Mlk4eXJyQi05Z1NKbTVaYzVKMTRwMUYxMFJsb2NoLVBKZU9YVTA3NGh3MUhBQ3lLZzNfQzkzZHNJTXF5ZWhWeFdzNS0xQmV5dGsyd0NpX2Y1ZmxXRHh4NEVIMkF5NThoR3o1UmowaU5USzUzaUFnWjFXNUhyZW8zRmljWkJtMFN1UXdMRHFCbGNXMWdrRHd4Mkw4T20xeDdKQ1BZTTg4NHN2ZVh2SmV3LXpNTUc5akd0Z2dMaWdPVTNvZUc0YmJIUTV6UWdUUDNHb3FBNzVJVVlta1lIb0VlX0c4eUVLaXNBektqZVh0VE8zVFBHc19oQ0lFRHlVMUpfbkJHc21heWVEQlZ2cU5UdEJHV3FSNzRFTWdVeUNIQVE5Mm1mbWZZS09nZktZbVFoMG5kR1U5MENXdFd2QUczRk5ZRUcyYzJBdWlNSlFIQ1hpVjF1b1NX?oc=5",
+      "issue": "active feed item uses Google News intermediary; original publisher URL/article not confirmed",
+      "decision": "keep pending; no basis=article until full original article is read"
+    }
+  ],
+  "seenOnly": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "name": "NVIDIA OpenShell",
+      "library": "research-only priority 34"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "name": "Canva Craft"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "name": "1Password agent sign-in"
+    }
+  ]
+}

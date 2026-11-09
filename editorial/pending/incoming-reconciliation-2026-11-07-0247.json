@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "runAt": "2026-11-07T02:47:03+03:00",
+  "mainSha": "020b447733f5cbd8c876a676e2efc4fc603a4487",
+  "feedGeneratedAt": "2026-11-06T18:53:12+00:00",
+  "incomingMain": {
+    "files": 88,
+    "recordOccurrences": 928,
+    "classification": {
+      "alreadyImportedAndExactCurrentFeed": 339,
+      "alreadyImportedButNoLongerInCurrentFeed": 553,
+      "eligibleExactFeedMatchNotYetImported": 0,
+      "idOrUrlMismatch": 0,
+      "expiredNotInFeedOrEditorial": 36,
+      "unmatchedNotSeen": 0,
+      "structuralIssuesFound": 0
+    },
+    "note": "Counts are appearances across files, not unique IDs; every occurrence was compared by exact ID and URL."
+  },
+  "sourceQualityHolds": [
+    {
+      "id": "d18ddd9c12e46dd96b",
+      "status": "needs_correction",
+      "reason": "Issue قديم أُنشئ في 2022 وأُغلق؛ تحديثه في 6 نوفمبر 2026 لا يثبت حادثة حديثة."
+    },
+    {
+      "id": "e3e3a03bfc5be7aa43",
+      "status": "needs_original_date_verification",
+      "reason": "رابط وسيط Google News؛ لم يثبت تاريخ المصدر الأصلي."
+    }
+  ],
+  "specialRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "feedPresent": false,
+      "editorialPresent": false,
+      "seenPresent": true,
+      "status": "سجل خبر منقضٍ؛ المشروع باقٍ في البحث المستقل."
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "feedPresent": false,
+      "editorialPresent": false,
+      "seenPresent": true,
+      "status": "منقضٍ؛ لا يعاد إنشاؤه."
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "feedPresent": false,
+      "editorialPresent": false,
+      "seenPresent": true,
+      "status": "منقضٍ؛ لا يعاد إنشاؤه."
+    }
+  ],
+  "branchAdditions": {
+    "incomingFilesAdded": 2,
+    "records": 12,
+    "exactFeedMatches": 12,
+    "alreadyInMainEditorial": 0,
+    "basisCounts": {
+      "article": 10,
+      "metadata": 2
+    },
+    "branchEditorialCountAfterUpdate": 871
+  },
+  "projectAudit": {
+    "feedProjectCards": 100,
+    "exactEditorialMatches": 100,
+    "missingEditorial": 0,
+    "newPublicProjects": 0,
+    "previousEightReviewed": 8,
+    "previousEightExactFeedCard": 1,
+    "previousEightResearchOnly": 7,
+    "ideasPreserved": 55
+  },
+  "library": {
+    "structuredCatalogEntries": 31,
+    "archived": 2,
+    "active": 29,
+    "exactFeedMatches": 4,
+    "researchOnly": 27,
+    "licenseNeedsUpstreamVerification": 8,
+    "originalMetricsCapturedAt": "2026-10-24T10:38:36.869Z"
+  },
+  "workflow": {
+    "latestScheduledRun": 42309533694,
+    "conclusion": "failure",
+    "testsAndEditorialValidation": "passed before feed refresh",
+    "failure": "TypeError NoneType vs str in update_feed.py merge sort at line 537 comparing score/publishedAt",
+    "deployment": "skipped",
+    "codeChanged": false
+  },
+  "publicationVerification": {
+    "pagesFetch": "DisabledError",
+    "editorialJsonVerifiedLive": false,
+    "detailNewsVerifiedLive": false,
+    "detailProjectVerifiedLive": false
+  },
+  "notExecutedLocally": [
+    "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-11-07-0247.json",
+    "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-11-07-0247.json",
+    "python -m unittest discover -s tests -v"
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "version": 1,
+  "runAt": "2026-11-07T08:55:00+03:00",
+  "mainSha": "25f2260778b516bc6669db186113552b5015e3e0",
+  "feedGeneratedAt": "2026-11-07T05:55:23+00:00",
+  "feed": {
+    "items": 800,
+    "news": 700,
+    "projects": 100,
+    "newItems": 52,
+    "collected": 310
+  },
+  "editorial": {
+    "mainRecords": 859,
+    "pr97Records": 871,
+    "projectCardsExact": 100
+  },
+  "incomingMain": {
+    "files": 88,
+    "recordOccurrences": 928,
+    "classification": {
+      "importedAndExactCurrentFeed": 331,
+      "importedHistoricalExactUrl": 560,
+      "expiredSeenOnlyNotInFeedOrEditorial": 36,
+      "sameUrlDifferentIdNeedsCorrection": 1,
+      "eligibleExactFeedMatchNotYetImported": 0,
+      "idUrlMismatchDifferentUrl": 0,
+      "unmatchedNotSeen": 0,
+      "structuralJsonEnvelopeIssues": 0
+    },
+    "countUnit": "occurrences across files, not unique IDs",
+    "method": "All 88 incoming files were fetched and JSON-parsed in batches; each version/items envelope and every id/url occurrence was compared literally with current main feed and editorial. This is a structural comparison, not the official Python validator.",
+    "mismatch": [
+      {
+        "incomingId": "7a99eca9b2ce14d9f5",
+        "incomingUrl": "https://github.com/rasbt/LLMs-from-scratch",
+        "currentFeedId": "e0cbbf211a55e79f34",
+        "currentFeedUrl": "https://github.com/rasbt/LLMs-from-scratch",
+        "oldEditorialIdPresent": true,
+        "currentFeedEditorialPresent": true,
+        "status": "same URL appears under a new feed ID; do not re-key or duplicate by title without explicit identity reconciliation"
+      }
+    ]
+  },
+  "sourceQualityHolds": [
+    {
+      "id": "d18ddd9c12e46dd96b",
+      "feedPresent": true,
+      "editorialPresent": false,
+      "seenPresent": true,
+      "status": "needs_correction",
+      "reason": "Hacker News item links to an Issue opened in 2022 and closed; it does not establish a new incident."
+    },
+    {
+      "id": "e3e3a03bfc5be7aa43",
+      "feedPresent": true,
+      "editorialPresent": false,
+      "seenPresent": true,
+      "status": "needs_correction",
+      "sourceDate": "2026-09-02",
+      "source": "https://www.hashtagarabi.com/421567/",
+      "reason": "The current feed reintroduced a Google News reprint with an old underlying publication date; keep basis=metadata until the original publisher/article is reviewed."
+    }
+  ],
+  "specialRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "feedPresent": false,
+      "editorialPresent": false,
+      "seenPresent": true,
+      "status": "seen-only; no replacement ID"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "feedPresent": false,
+      "editorialPresent": false,
+      "seenPresent": true,
+      "status": "seen-only; no replacement ID"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "feedPresent": false,
+      "editorialPresent": false,
+      "seenPresent": true,
+      "status": "seen-only; no replacement ID"
+    }
+  ],
+  "preparedBatchOnPr97": {
+    "file": "editorial/incoming/nabdh-editorial-2026-11-07-0842.json",
+    "records": 10,
+    "exactIdUrlMatchesAgainstLatestMainFeed": 10,
+    "alreadyInMainEditorial": 0,
+    "importedToEditorial": false
+  },
+  "workflow": {
+    "workflowFile": ".github/workflows/update-and-deploy.yml",
+    "triggers": [
+      "push to main",
+      "schedule",
+      "workflow_dispatch"
+    ],
+    "latestObservedBotCommit": "25f2260778b516bc6669db186113552b5015e3e0",
+    "latestStatusState": "ok",
+    "lastAttemptAt": "2026-11-07T05:55:23+00:00",
+    "sourceStatus": "all sources ok except two arXiv feeds empty",
+    "note": "The existing workflow committed feed.json, seen.json, and status.json automatically. This run did not write those files. A push to main (including merging PR #97) triggers this workflow and may rewrite them, so PR #97 was not merged under the explicit no-feed/no-seen-change constraint.",
+    "deploymentVerified": false,
+    "runIdRetrieved": false
+  },
+  "projects": {
+    "priorEightReviewedFromStoredRefresh": true,
+    "priorEightCount": 8,
+    "publicProjectCards": 100,
+    "exactPublicProjectMatches": 100,
+    "baseResearchCatalog": 57,
+    "newResearchOnlyDossiers": 3,
+    "cumulativeUniqueResearchProjects": 60,
+    "newDossiersFile": "editorial/library/research-only/project-dossiers-2026-11-07-0842.json",
+    "newProjects": [
+      "PyLings",
+      "Rune",
+      "Flawless UI/UX Skill"
+    ],
+    "ideas": {
+      "improvements": 3,
+      "spinoffs": 3,
+      "religious": 0,
+      "testEvidence": null
+    }
+  },
+  "notExecutedLocally": {
+    "reason": "git clone failed: Could not resolve host: github.com",
+    "commands": [
+      "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-11-07-0842.json",
+      "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-11-07-0842.json",
+      "python -m unittest discover -s tests -v"
+    ],
+    "ciEvidence": "PR #97 CI run 42344733971 passed 30 Python tests, scripts/editorial.py validate on the existing 871-record editorial.json, and JavaScript syntax checks. It did not validate the new incoming file."
+  },
+  "publication": {
+    "mainChangedByThisRun": false,
+    "merge": false,
+    "pagesLiveJsonVerified": false,
+    "reason": "GitHub Pages endpoint and Actions UI returned DisabledError; bot feed-refresh commit and status=ok do not prove the Pages deployment completed."
+  }
+}

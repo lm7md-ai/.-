@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "metricsMeasuredAt": "2026-11-09T14:46:15+03:00",
+  "source": "GitHub REST API GET /repos/OpenMontageInc/OpenMontage",
+  "project": {
+    "repository": "OpenMontageInc/OpenMontage",
+    "feedId": "bc64dbd527eeb5b716",
+    "feedUrl": "https://github.com/OpenMontageInc/OpenMontage",
+    "kind": "project",
+    "stars": 78882,
+    "forks": 10538,
+    "openIssuesCount": 323,
+    "archived": false,
+    "disabled": false,
+    "licenseApiValue": "AGPL-3.0",
+    "language": "Python",
+    "defaultBranch": "main",
+    "pushedAt": "2026-11-09T06:23:55Z",
+    "updatedAt": "2026-11-09T11:45:51Z",
+    "note": "open_issues_count may include pull requests; metrics are point-in-time, not quality measures."
+  },
+  "priorEightMetricsFile": "editorial/library/metrics-refresh-2026-11-09-1246.json",
+  "notes": [
+    "The eight previously reviewed projects retain their 12:46 metrics snapshot; this file refreshes OpenMontage, already present as a project card in Feed.",
+    "No project was executed; testStatus remains not_run."
+  ]
+}

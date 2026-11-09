@@ -1,0 +1,324 @@
+{
+  "version": 1,
+  "runAt": "2026-11-07T08:42:53+03:00",
+  "metricsCapturedAt": "2026-11-07T05:42:53Z",
+  "publicationStatus": "research_only_not_published",
+  "catalogBaseCount": 57,
+  "additionalUniqueProjects": 3,
+  "cumulativeUniqueProjects": 60,
+  "measurementNote": "GitHub repository pages were read during this run. Stars/forks are cumulative; Rune stars are rounded display value. Open-issue counts and exact last-push timestamps were not consistently exposed, so they are null/not inferred. Latest commit SHAs are recorded as activity evidence.",
+  "projects": [
+    {
+      "repository": "thesayfulla/pylings",
+      "name": "PyLings",
+      "url": "https://github.com/thesayfulla/pylings",
+      "category": "Python learning CLI",
+      "classification": "نشط غير مؤرشف؛ الترخيص غير مثبت",
+      "archived": false,
+      "license": null,
+      "licenseStatus": "unverified_no_LICENSE_found_in_reviewed_root",
+      "stars": 36,
+      "forks": 2,
+      "commitCount": 8,
+      "openIssues": null,
+      "defaultBranch": "main",
+      "latestCommitSha": "26fd4c9c8fc341142de8bdde505409a24f4a12b0",
+      "latestCommitUrl": "https://github.com/thesayfulla/pylings/commit/26fd4c9c8fc341142de8bdde505409a24f4a12b0",
+      "metricCapturedAt": "2026-11-07T05:42:53Z",
+      "activityEvidence": "Repository page showed 8 commits and no archived flag; latest commit SHA was returned by GitHub commit search. Exact last-push timestamp was not surfaced.",
+      "basis": "readme",
+      "reviewedAt": "2026-11-07T08:42:53+03:00",
+      "overview": "أداة طرفية لتعلّم Python عبر إصلاح أخطاء في تمارين مرتبة من الأساسيات إلى مستوى مقابلات Senior وStaff. README يذكر 35 تمرينًا تمهيديًا و20 تمرين مقابلات، وإعادة تشغيل الاختبارات عند حفظ التمرين، مع كتالوج pylings.toml وحلول مرجعية منفصلة.",
+      "requirements": "Python 3.14 وفق README، ولا توجد اعتماديات خارجية بحسب وصف المشروع. التشغيل من نسخة المستودع محليًا. لم يظهر LICENSE أو pyproject.toml أو requirements.txt في الملفات الجذرية التي راجعتها؛ لا تعِد توزيع الشيفرة قبل توضيح الترخيص.",
+      "quickStart": "استنسخ المستودع، افتح مجلده في طرفية مع Python 3.14، ثم نفّذ python3 -m pylings. اتبع الترتيب في pylings.toml، واستخدم n للتالي وh للتلميح وr لإعادة الاختبار وc لفحص الجميع. لا تفتح solutions قبل نجاح الاختبارات.",
+      "requirementsDetail": "محلي بالكامل ولا يحتاج API أو حسابًا سحابيًا. التوافق المعلن Python 3.14؛ لم أتحقق من تشغيله على إصدارات أقدم.",
+      "localVsCloud": "تشغيل CLI والاختبارات محليان؛ لا توجد خدمة سحابية لازمة في README.",
+      "costs": "المستودع لا يعلن خدمة مدفوعة أو API. تكلفة التشغيل العملية هي بيئة Python المحلية. حالة الترخيص غير محسومة، فلا تعتبر الشيفرة حرة الاستخدام قانونيًا حتى يؤكد صاحب المشروع ذلك.",
+      "alternatives": "Exercism وPython Morsels وCodewars ومسارات التدريب الرسمية في Python؛ تختلف هذه البدائل في أسلوب الاختبارات والاعتماد على الويب.",
+      "limitations": "ليس منهجًا شاملًا لبناء التطبيقات أو استخدام مكتبات AI؛ المحتوى موجه للتمارين والمقابلات. الترخيص غير ظاهر في الملفات المفحوصة، ولم تُشغّل الاختبارات.",
+      "readmeReviewed": true,
+      "licenseReviewed": false,
+      "testEvidence": null,
+      "sources": [
+        {
+          "title": "PyLings README",
+          "url": "https://github.com/thesayfulla/pylings/blob/main/README.md"
+        },
+        {
+          "title": "PyLings exercise catalog",
+          "url": "https://github.com/thesayfulla/pylings/blob/main/pylings.toml"
+        },
+        {
+          "title": "PyLings repository",
+          "url": "https://github.com/thesayfulla/pylings"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "إضافة ترخيص واضح وبيانات تثبيت قابلة للتكرار",
+          "problem": "غياب LICENSE وبيانات الحزمة يجعل إعادة الاستخدام والتثبيت خارج مجلد المستودع غير واضحين.",
+          "approach": "يحدد maintainer الترخيص، ويضيف pyproject.toml ونطاق Python مدعومًا، ثم يختبر تثبيتًا نظيفًا في CI.",
+          "stack": "Python 3.14, pyproject.toml, unittest, GitHub Actions",
+          "steps": [
+            "الحصول على قرار ترخيص صريح من صاحب المشروع.",
+            "إضافة metadata للحزمة ونقطة تشغيل موثقة.",
+            "تحديد إصدارات Python المدعومة واختبارها في CI.",
+            "توثيق طريقة التثبيت والتحديث وإزالة الحزمة."
+          ],
+          "metric": "نجاح تثبيت نظيف وتشغيل أول تمرين على كل إصدار Python مدعوم.",
+          "difficulty": "منخفضة إلى متوسطة تقديرًا",
+          "risks": "لا يجوز اختيار ترخيص نيابة عن المؤلف؛ توسيع دعم الإصدارات قد يتطلب تعديلات على التمارين.",
+          "sources": [
+            {
+              "title": "PyLings README",
+              "url": "https://github.com/thesayfulla/pylings/blob/main/README.md"
+            },
+            {
+              "title": "PyLings repository",
+              "url": "https://github.com/thesayfulla/pylings"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مختبر Python عربي قائم على إصلاح الأخطاء",
+          "problem": "المتعلم العربي يحتاج تدريبًا تدريجيًا يشرح سبب الخطأ دون تحويل التجربة إلى اختبارات اختيار من متعدد.",
+          "approach": "إنشاء واجهة محلية تعرض التمرين والتلميحات والاختبارات وتشرح المفاهيم بالعربية مع إبقاء الشيفرة الأصلية قابلة للتعديل.",
+          "stack": "Python, Textual أو Rich, unittest, JSON progress store",
+          "steps": [
+            "اختيار مجموعة تمارين مرخصة أو إعادة كتابة تمارين أصلية.",
+            "بناء مشغل محلي يعرض التمرين والتلميح والاختبار.",
+            "إضافة شرح عربي قصير للمفهوم والحالات الطرفية.",
+            "حفظ التقدم محليًا مع إخفاء الحل حتى اجتياز الاختبارات."
+          ],
+          "metric": "نسبة إكمال التمارين واجتياز الاختبارات ومعدل العودة للتدريب.",
+          "difficulty": "متوسطة تقديرًا",
+          "risks": "حقوق التمارين الأصلية، جودة الترجمة، وتسريب الحلول قبل المحاولة.",
+          "sources": [
+            {
+              "title": "PyLings README",
+              "url": "https://github.com/thesayfulla/pylings/blob/main/README.md"
+            }
+          ]
+        }
+      ],
+      "religious": []
+    },
+    {
+      "repository": "anomalyco/rune",
+      "name": "Rune",
+      "url": "https://github.com/anomalyco/rune",
+      "category": "Rust native UI framework",
+      "classification": "نشط قبل الإصدار؛ MIT؛ فرع dev",
+      "archived": false,
+      "license": "MIT",
+      "licenseStatus": "verified_repository_LICENSE_and_workspace_license",
+      "starsDisplay": "2.6k",
+      "starsExact": null,
+      "forks": 60,
+      "commitCount": 1611,
+      "openIssuesObserved": 69,
+      "defaultBranch": "dev",
+      "latestCommitSha": "f73f72cdc563534e4f7de9f5a79bed007ac42384",
+      "latestCommitUrl": "https://github.com/anomalyco/rune/commit/f73f72cdc563534e4f7de9f5a79bed007ac42384",
+      "metricCapturedAt": "2026-11-07T05:42:53Z",
+      "activityEvidence": "Repository page showed 1,611 commits, 69 issues and active dev branch; latest commit SHA recorded. README explicitly labels project pre-release.",
+      "basis": "readme",
+      "reviewedAt": "2026-11-07T08:42:53+03:00",
+      "overview": "إطار واجهات Rust أصلي يرسم عبر GPU ويستهدف macOS وWindows وLinux والويب. يوفر renderer وتخطيطًا ونصوصًا وحركات، ويتيح تشغيل التطبيقات دون نافذة لإخراج PNG وشجرة العناصر وقيادتها بإدخال مبرمج، ما يجعله قابلًا للربط باختبارات واجهات الوكلاء.",
+      "requirements": "Rust toolchain 1.99.1 مع rustfmt وclippy، edition 2024، Cargo، ومتطلبات رسومية وSDK تختلف حسب النظام. قد تتطلب بعض ميزات Linux خدمات D-Bus؛ وبعض ميزات macOS تستخدم Metal. راجع Cargo features قبل تعطيل أو تفعيل أجزاء من البناء.",
+      "quickStart": "استنسخ anomalyco/rune، استخدم toolchain المحددة في rust-toolchain.toml، وابدأ من examples/hello. مثال الحزمة اسمه hello ويعتمد على crates/rune؛ ثبّت commit محددًا من dev في Cargo.toml لأن المشروع pre-release ولا توجد إصدارات مستقرة موصى بها.",
+      "requirementsDetail": "الاعتماديات تشمل wgpu وwinit وtaffy وparley ومكتبات رسم/نص؛ تختلف متطلبات GPU والمنصة. لا تفترض أن كل ميزات macOS وLinux وWeb تعمل بالطريقة نفسها.",
+      "localVsCloud": "البناء والرسم والاختبار headless محليًا؛ يمكن استهداف الويب، لكن لا تتطلب المكتبة خدمة سحابية دائمة.",
+      "costs": "MIT ومجاني الاستخدام من جهة الترخيص؛ تحتاج بيئة Rust وموارد GPU ووقت بناء. لا يظهر اشتراك أو API مدفوع إلزامي.",
+      "alternatives": "egui وIced وSlint وDioxus؛ المقارنة يجب أن تشمل نضج الإصدارات وإمكانية الوصول ودعم المنصات وحجم الاعتماديات.",
+      "limitations": "المشروع pre-release ويطلب تثبيت revision من dev؛ تغييرات API ممكنة. لم أبنِ الأمثلة أو أقس أداء الرسم. يلزم اختبار النص العربي واتجاه RTL وإمكانية الوصول على كل منصة مستهدفة.",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "testEvidence": null,
+      "sources": [
+        {
+          "title": "Rune README",
+          "url": "https://github.com/anomalyco/rune/blob/dev/README.md"
+        },
+        {
+          "title": "Rune Cargo workspace",
+          "url": "https://github.com/anomalyco/rune/blob/dev/Cargo.toml"
+        },
+        {
+          "title": "Rune toolchain",
+          "url": "https://github.com/anomalyco/rune/blob/dev/rust-toolchain.toml"
+        },
+        {
+          "title": "Rune core crate manifest",
+          "url": "https://github.com/anomalyco/rune/blob/dev/crates/rune/Cargo.toml"
+        },
+        {
+          "title": "Rune MIT License",
+          "url": "https://github.com/anomalyco/rune/blob/dev/LICENSE"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "مجموعة اختبارات RTL والنصوص العربية",
+          "problem": "الواجهة متعددة المنصات قد تتصرف بشكل مختلف مع تشكيل العربية واتجاه النص وكسر السطور.",
+          "approach": "إنشاء حالات اختبار ثابتة للعربية المختلطة بالأرقام والإنجليزية، مع لقطات headless وشجرة عناصر متوقعة.",
+          "stack": "Rust, Rune headless renderer, PNG snapshots, Unicode test fixtures",
+          "steps": [
+            "إنشاء أمثلة عربية قصيرة وطويلة ومختلطة الاتجاه.",
+            "تحديد لقطات مرجعية وشجرة عناصر متوقعة لكل حالة.",
+            "تشغيل الحالات على منصتين على الأقل ومقارنة النتائج.",
+            "توثيق الاختلافات المقبولة ومشكلات الخطوط والتشكيل."
+          ],
+          "metric": "نسبة حالات النص العربي التي تطابق المخرجات المرجعية عبر المنصات.",
+          "difficulty": "متوسطة إلى مرتفعة تقديرًا",
+          "risks": "اختلاف GPU والخطوط وأنظمة تشكيل النص قد ينتج فروقًا غير دلالية.",
+          "sources": [
+            {
+              "title": "Rune README and headless testing",
+              "url": "https://github.com/anomalyco/rune/blob/dev/README.md"
+            },
+            {
+              "title": "Rune core crate",
+              "url": "https://github.com/anomalyco/rune/blob/dev/crates/rune/README.md"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "اختبار بصري headless لوكلاء البرمجة",
+          "problem": "الوكلاء قد يكتبون واجهة تبدو صحيحة في الشيفرة لكن لا يلاحظون الفيض أو التداخل أو فقدان عناصر التحكم.",
+          "approach": "مشغل يفتح مثال Rune headless ويصدر PNG وشجرة العناصر ويقارنها بخط أساس قبل إرجاع تقرير للفريق.",
+          "stack": "Rust, Rune, PNG diff, JSON element tree, CI",
+          "steps": [
+            "تحديد مثال صغير قابل لإعادة الإنتاج.",
+            "تصدير PNG وشجرة العناصر في كل تشغيل.",
+            "مقارنة الصور والشجرة بخط أساس محفوظ.",
+            "إرفاق تقرير الفروقات مع commit الوكيل دون اعتماد تلقائي."
+          ],
+          "metric": "نسبة التغييرات البصرية المكتشفة قبل الدمج ومعدل الإنذارات الكاذبة.",
+          "difficulty": "مرتفعة تقديرًا",
+          "risks": "تغيرات GPU والخطوط والتوقيت قد تنتج فروقًا لا تعني خللًا حقيقيًا؛ المشروع نفسه pre-release.",
+          "sources": [
+            {
+              "title": "Rune README — headless agent workflow",
+              "url": "https://github.com/anomalyco/rune/blob/dev/README.md"
+            }
+          ]
+        }
+      ],
+      "religious": []
+    },
+    {
+      "repository": "smokeeaasd/flawless-ui-ux",
+      "name": "Flawless UI/UX Skill",
+      "url": "https://github.com/smokeeaasd/flawless-ui-ux",
+      "category": "Coding-agent UI/UX skill and inspection CLI",
+      "classification": "نشط؛ MIT؛ إصدار 1.0.0",
+      "archived": false,
+      "license": "MIT",
+      "licenseStatus": "verified_repository_LICENSE",
+      "stars": 75,
+      "forks": 1,
+      "commitCount": 31,
+      "openIssues": null,
+      "defaultBranch": "main",
+      "latestCommitSha": "82d9355d346b0d701240ed046e5ef11c6d39e80e3",
+      "latestCommitUrl": "https://github.com/smokeeaasd/flawless-ui-ux/commit/82d9355d346b0d701240ed046e5ef11c6d39e80e3",
+      "metricCapturedAt": "2026-11-07T05:42:53Z",
+      "activityEvidence": "Repository page showed 31 commits, MIT license and non-archived main branch; v1.0.0 release and latest commit SHA were observed. Exact last-push timestamp not surfaced.",
+      "basis": "readme",
+      "reviewedAt": "2026-11-07T08:42:53+03:00",
+      "overview": "مهارة لوكلاء البرمجة لتصميم الواجهات وصقلها ومراجعتها، مع CLI للتثبيت وفحص المصدر والواجهة. يدعم عدة وكلاء، ويقدم فحوصًا مرئية عبر Playwright وaxe عند تجهيز المتصفح والتطبيق، إضافة إلى تعليمات تصميم مرتبطة بجمهور المنتج ومحتواه وهويته.",
+      "requirements": "Node.js 22.12+، npm أو pnpm أو Bun لتشغيل المثبت؛ README يذكر Playwright وaxe-core للفحص المرئي. يجب تجهيز Chromium ورابط التطبيق؛ CLI لا يشغّل التطبيق بنفسه. الوكيل المستهدف يجب أن يدعم تثبيت skill files.",
+      "quickStart": "من مجلد المشروع نفّذ npx flawless-ui-ux@latest install أو pnpm dlx أو bunx، اختر نطاق المشروع أو global والوكيل المطلوب، ثم ابدأ جلسة جديدة للوكيل واطلب استخدام مهارة flawless-ui-ux. نفّذ الفحص المرئي بعد تشغيل التطبيق وتجهيز Chromium.",
+      "requirementsDetail": "package.json وREADME يحددان Node 22.12+؛ Bun يستخدم في التطوير والاختبارات. فحص الواجهة يحتاج Playwright وaxe-core ومتصفحًا متاحًا.",
+      "localVsCloud": "المثبت وCLI وفحص المتصفح محلية؛ قد يكون نموذج وكيل البرمجة سحابيًا أو محليًا بحسب الأداة التي يختارها المستخدم. لا يوجد backend سحابي إلزامي في README.",
+      "costs": "المشروع MIT ومجاني؛ قد توجد تكلفة لاستخدام نموذج وكيل خارجي أو موارد تشغيل Chromium. لا يذكر اشتراكًا خاصًا بالمشروع.",
+      "alternatives": "Storybook لمراجعة المكونات، وPlaywright للاختبارات المرئية، وaxe-core لفحوص الوصول، وأنظمة التصميم وقواعد lint مخصصة.",
+      "limitations": "الفحص الآلي لا يثبت وحده قابلية الاستخدام أو امتثال WCAG كاملًا. CLI لا يثبت الوكيل ولا يشغّل التطبيق ولا يحرر ملفات المصدر. جودة المخرجات تعتمد على السياق الذي يقدمه المستخدم وعلى مراجعة بشرية.",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "testEvidence": null,
+      "sources": [
+        {
+          "title": "Flawless UI/UX README",
+          "url": "https://github.com/smokeeaasd/flawless-ui-ux/blob/main/README.md"
+        },
+        {
+          "title": "Flawless UI/UX package.json",
+          "url": "https://github.com/smokeeaasd/flawless-ui-ux/blob/main/package.json"
+        },
+        {
+          "title": "Flawless UI/UX changelog",
+          "url": "https://github.com/smokeeaasd/flawless-ui-ux/blob/main/CHANGELOG.md"
+        },
+        {
+          "title": "Flawless UI/UX MIT License",
+          "url": "https://github.com/smokeeaasd/flawless-ui-ux/blob/main/LICENSE"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "إضافة قواعد RTL عربية وحالات اختبار اتجاه النص",
+          "problem": "قد تفوت مهارات التصميم العامة مشكلات اتجاه النص والأرقام والحقول المختلطة العربية والإنجليزية.",
+          "approach": "إضافة fixtures عربية مع فحوص اتجاه ومحاذاة وترتيب لوحة المفاتيح والفيض على أحجام شاشة مختلفة.",
+          "stack": "Node.js, Playwright, axe-core, RTL fixtures",
+          "steps": [
+            "تجهيز صفحات اختبار عربية قصيرة وطويلة ومختلطة الاتجاه.",
+            "إضافة حالات فحص للحقول والقوائم والتنقل بلوحة المفاتيح.",
+            "تسجيل الفروقات المرئية وأخطاء الوصول في تقرير واحد.",
+            "مراجعة الحالات يدويًا قبل اعتماد أي قاعدة آلية."
+          ],
+          "metric": "عدد أخطاء RTL القابلة لإعادة الإنتاج المكتشفة لكل إصدار، ومعدل الإنذارات الكاذبة.",
+          "difficulty": "متوسطة تقديرًا",
+          "risks": "التحقق الآلي من اتجاه النص لا يغطي جودة الترجمة أو سهولة الفهم، وقد يختلف العرض بين المتصفحات.",
+          "sources": [
+            {
+              "title": "Flawless UI/UX README",
+              "url": "https://github.com/smokeeaasd/flawless-ui-ux/blob/main/README.md"
+            },
+            {
+              "title": "Playwright documentation",
+              "url": "https://playwright.dev/docs/intro"
+            },
+            {
+              "title": "axe-core",
+              "url": "https://github.com/dequelabs/axe-core"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مراجع واجهات عربية لـCodex وAntigravity",
+          "problem": "تحتاج فرق التطوير العربية إلى مراجعة موحدة للتصميم وRTL وإمكانية الوصول بدل الاعتماد على وصف عام مثل اجعل الموقع احترافيًا.",
+          "approach": "حزمة قواعد عربية تضيف قائمة تحقق للتباين والتسلسل البصري واتجاه النص والهواتف، وتعيد تقريرًا قابلًا للمراجعة للوكيل والمطور.",
+          "stack": "Node.js, agent skills, Playwright, axe-core, JSON reports",
+          "steps": [
+            "تعريف معايير مراجعة عربية واضحة وغير مرتبطة بذوق بصري واحد.",
+            "إضافة صفحات مرجعية RTL وLTR للمقارنة.",
+            "ربط الفحوص الآلية بتقرير مختصر مع صور وملاحظات.",
+            "تجربة الحزمة على موقع تجريبي ثم توثيق حدودها."
+          ],
+          "metric": "نسبة عناصر قائمة المراجعة المغطاة وقابلية إعادة إنتاج الملاحظات بين الوكلاء.",
+          "difficulty": "متوسطة تقديرًا",
+          "risks": "اختلاف قدرات الوكلاء وتغير النماذج قد يجعل النتائج متفاوتة؛ يلزم تقييم بشري.",
+          "sources": [
+            {
+              "title": "Flawless UI/UX repository",
+              "url": "https://github.com/smokeeaasd/flawless-ui-ux"
+            },
+            {
+              "title": "Flawless UI/UX README",
+              "url": "https://github.com/smokeeaasd/flawless-ui-ux/blob/main/README.md"
+            }
+          ]
+        }
+      ],
+      "religious": []
+    }
+  ]
+}

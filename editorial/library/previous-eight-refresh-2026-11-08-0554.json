@@ -1,0 +1,308 @@
+{
+  "version": 1,
+  "runAt": "2026-11-08T05:54:23+03:00",
+  "metricsMeasuredAt": "2026-11-08T02:54:23Z",
+  "publicationStatus": "research_only_not_published",
+  "summary": "إعادة فحص ثمانية مشاريع سابقة عبر GitHub API وREADME وLICENSE والوثائق الرسمية. جميعها غير مؤرشفة وقت القياس. لم تُشغّل المشاريع؛ testEvidence=null.",
+  "librarySnapshot": {
+    "mainUniqueProjects": 57,
+    "prUniqueProjects": 62,
+    "prActive": 60,
+    "prArchived": 2,
+    "prFeedLinked": 10,
+    "prResearchOnly": 52,
+    "additionalUniqueProjectsFromPriorSnapshot": 5,
+    "feedProjectCardsOnMain": 100,
+    "editorialCompleteOnMain": 100
+  },
+  "projects": [
+    {
+      "name": "AI Engineering Hub",
+      "repo": "patchy631/ai-engineering-hub",
+      "license": "MIT",
+      "archived": false,
+      "stars": 41444,
+      "forks": 6622,
+      "openIssues": 137,
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "updatedAt": "2026-11-08T02:48:55Z",
+      "readmeSha": "6c65ab12125814c5233f873c4c1af2765ff87d51",
+      "licenseSha": "84ee68d33c9b68bae6c139f591996f021a02b23a",
+      "requirements": "مكتبة أمثلة؛ متطلبات كل مشروع تختلف. مثال Simple RAG يتطلب Python 3.10+ وOllama وLlamaIndex.",
+      "quickStart": "ابدأ بخارطة الطريق ثم اختر مثالًا؛ Simple RAG يستخدم Ollama ونموذج llama3.2 ودفتر workflow.ipynb. لم تُنفذ الخطوات.",
+      "costs": "MIT بلا رسوم؛ الحوسبة محلية وقد تفرض الأمثلة السحابية رسوم API.",
+      "localVsCloud": "مثال RAG محلي عبر Ollama؛ أمثلة أخرى قد تستخدم مزودات مستضافة.",
+      "alternatives": [
+        "LlamaIndex",
+        "LangChain",
+        "Hugging Face course material"
+      ],
+      "docs": [
+        "README.md",
+        "ai-engineering-roadmap/README.md",
+        "simple-rag-workflow/README.md"
+      ],
+      "ideas": {
+        "improvements": 4,
+        "spinoffs": 4,
+        "religious": 0
+      },
+      "testEvidence": null
+    },
+    {
+      "name": "Google Gen AI Python SDK",
+      "repo": "googleapis/python-genai",
+      "license": "Apache-2.0",
+      "archived": false,
+      "stars": 4056,
+      "forks": 1059,
+      "openIssues": 390,
+      "pushedAt": "2026-11-08T01:28:50Z",
+      "updatedAt": "2026-11-07T16:16:28Z",
+      "readmeSha": "0bf1969310f7459b491bd1c848d1ed1bb51ee232",
+      "licenseSha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "requirements": "Python >=3.11 وpip ومفتاح Gemini Developer API أو مشروع Gemini Enterprise Agent Platform؛ بعض الميزات تتطلب extras.",
+      "quickStart": "pip install google-genai ثم إنشاء genai.Client بالمفتاح أو إعداد Enterprise؛ لم تُنفذ استدعاءات API.",
+      "costs": "Apache-2.0 بلا رسوم SDK؛ استخدام نماذج Gemini والمنصة يخضع لتسعير Google.",
+      "localVsCloud": "عميل لواجهات Gemini السحابية وليس محرك استدلال محليًا.",
+      "alternatives": [
+        "Vertex AI SDK",
+        "Pydantic AI",
+        "LiteLLM"
+      ],
+      "docs": [
+        "README.md",
+        "docs/source/index.rst",
+        "pyproject.toml"
+      ],
+      "ideas": {
+        "improvements": 3,
+        "spinoffs": 3,
+        "religious": 0
+      },
+      "testEvidence": null
+    },
+    {
+      "name": "Lasm",
+      "repo": "Millillion/lasm",
+      "license": "MIT",
+      "archived": false,
+      "stars": 103,
+      "forks": 7,
+      "openIssues": 7,
+      "pushedAt": "2026-11-08T01:52:38Z",
+      "updatedAt": "2026-11-08T01:52:42Z",
+      "readmeSha": "9071138ddf71aa3bfe579d805e5d7d1fa0b753bc",
+      "licenseSha": "46b25ff7d8953b8fc88d7ed6d37c6f1550a39193",
+      "requirements": "Lean 4 وnpm؛ تطبيقات الإنتاج تحتاج Node.js 24+ أو runtime الهدف.",
+      "quickStart": "npm create @lasm@latest my-app -- --template hono ثم npm install وnpm run dev؛ لم تُنفذ الأوامر.",
+      "costs": "MIT؛ التشغيل المحلي بلا رسوم، والنشر يخضع لتكاليف الاستضافة.",
+      "localVsCloud": "محليًا على Node/Bun/Deno، ويستهدف edge/serverless؛ CI يستخدم runtimes ومحاكيات لا حسابات سحابية حقيقية.",
+      "alternatives": [
+        "Rust + WebAssembly",
+        "AssemblyScript",
+        "ReScript"
+      ],
+      "docs": [
+        "README.md",
+        "docs/README.md",
+        "docs/DEPLOYMENT.md"
+      ],
+      "ideas": {
+        "improvements": 3,
+        "spinoffs": 2,
+        "religious": 0
+      },
+      "testEvidence": null
+    },
+    {
+      "name": "MarkItDown",
+      "repo": "microsoft/markitdown",
+      "license": "MIT",
+      "archived": false,
+      "stars": 194336,
+      "forks": 14627,
+      "openIssues": 814,
+      "pushedAt": "2026-11-07T00:14:01Z",
+      "updatedAt": "2026-11-08T02:22:59Z",
+      "readmeSha": "af858038fd380b187e2928cfbb8b9802c4912d5b",
+      "licenseSha": "9e841e7a26e4eb057b24511e7b92d42b257a80e5",
+      "requirements": "Python >=3.10 و<3.15؛ extras اختيارية لصيغ المستندات والصوت والفيديو وخدمات Azure.",
+      "quickStart": "بيئة افتراضية، تثبيت markitdown مع extras المناسبة ثم تحويل ملف إلى Markdown؛ لم تُنفذ الخطوات.",
+      "costs": "MIT والتحويل الأساسي محلي بلا رسوم؛ خدمات Azure أو captioning/transcription قد تتطلب مفاتيح ورسوم.",
+      "localVsCloud": "معظم التحويل محلي؛ بعض ميزات الصور والصوت تعتمد خدمات مستضافة.",
+      "alternatives": [
+        "Pandoc",
+        "Docling",
+        "PyMuPDF",
+        "Apache Tika"
+      ],
+      "docs": [
+        "README.md",
+        "packages/markitdown/pyproject.toml"
+      ],
+      "ideas": {
+        "improvements": 2,
+        "spinoffs": 1,
+        "religious": 0
+      },
+      "testEvidence": null
+    },
+    {
+      "name": "Minecraft Agent Harness",
+      "repo": "yc-software/minecraft-agent-harness",
+      "license": "MIT",
+      "archived": false,
+      "stars": 163,
+      "forks": 17,
+      "openIssues": 1,
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "updatedAt": "2026-11-08T01:03:46Z",
+      "readmeSha": "50b5a20eeb3a6f8268d06d244d858c4464c81eba",
+      "licenseSha": "5efc79a61c6ce9c8b89f423f7b0d883ca9af43a9",
+      "requirements": "Node.js >=22.19 وMinecraft Java 1.21.6؛ Java 21 للخادم التطويري؛ مفتاح مزود نموذج.",
+      "quickStart": "npm ci، إعداد .env، تشغيل الخادم ثم npx minecraft-agent؛ لم تُنفذ الأوامر.",
+      "costs": "MIT؛ تكلفة النموذج والعتاد محليًا، وE2B خيار منفصل قد يفرض تكلفة.",
+      "localVsCloud": "مجلد محلي أو Docker أو E2B VM؛ sharedMachine=local يعمل دون عزل، وE2B يحتاج E2B_API_KEY.",
+      "alternatives": [
+        "Mineflayer مع agent loop مخصص",
+        "Voyager research framework"
+      ],
+      "docs": [
+        "README.md",
+        "docs/configuration.md",
+        "docs/multi-agent.md",
+        "package.json"
+      ],
+      "ideas": {
+        "improvements": 3,
+        "spinoffs": 3,
+        "religious": 0
+      },
+      "testEvidence": null
+    },
+    {
+      "name": "NVIDIA OpenShell",
+      "repo": "NVIDIA/OpenShell",
+      "license": "Apache-2.0",
+      "archived": false,
+      "stars": 21255,
+      "forks": 2081,
+      "openIssues": 638,
+      "pushedAt": "2026-11-07T17:31:00Z",
+      "updatedAt": "2026-11-08T01:39:46Z",
+      "readmeSha": "cdbe4562391d4ed14d4f8bcce62f4b7c355a862d",
+      "licenseSha": "f13d24c3fa482d61605d600e5ac1248799bd4107",
+      "requirements": "Linux أو macOS؛ Kubernetes خيار نشر؛ CLI وlocal gateway وsandbox image وprovider profile. WSL2 تجريبي.",
+      "quickStart": "تثبيت إصدار مستقر، تحقق openshell status، إعداد provider profile وsandbox policy ثم تشغيل agent داخل sandbox؛ لم تُنفذ الخطوات.",
+      "costs": "Apache-2.0 بلا رسوم ترخيص؛ موارد المضيف أو Kubernetes ومزود النموذج منفصلة.",
+      "localVsCloud": "محطة عمل محلية أو Kubernetes؛ لا يتطلب SaaS مُدارًا في المسار المحلي.",
+      "alternatives": [
+        "Docker isolation",
+        "gVisor",
+        "Kata Containers",
+        "E2B"
+      ],
+      "docs": [
+        "README.md",
+        "docs/about/installation.mdx",
+        "docs/about/run-your-first-agent.mdx",
+        "docs/about/support-matrix.mdx"
+      ],
+      "relatedIncomingId": "940ec4695c1e241c2f",
+      "ideas": {
+        "improvements": 3,
+        "spinoffs": 3,
+        "religious": 0
+      },
+      "testEvidence": null
+    },
+    {
+      "name": "Pydantic AI",
+      "repo": "pydantic/pydantic-ai",
+      "license": "MIT",
+      "archived": false,
+      "stars": 21082,
+      "forks": 3127,
+      "openIssues": 1825,
+      "pushedAt": "2026-11-08T02:26:08Z",
+      "updatedAt": "2026-11-08T02:23:24Z",
+      "readmeSha": "75d861aba8c188b10b9cfe7cf3b01ef8da55c473",
+      "licenseSha": "1bf1f55e6d1736b499ded961ec6b94bfebb17aec",
+      "requirements": "Python >=3.11 ومزود نموذج أو endpoint متوافق؛ extras اختيارية للأدوات والتقييمات.",
+      "quickStart": "pip install pydantic-ai، تعريف Agent مع نموذج ومخرجات typed ثم run؛ لم تُنفذ الأمثلة.",
+      "costs": "MIT؛ تكلفة النموذج حسب المزود أو موارد inference المحلي، وخدمات المراقبة الاختيارية قد تكون مدفوعة.",
+      "localVsCloud": "التطبيق محلي أو مستضاف، ويمكن توصيل مزودات سحابية أو endpoints محلية حسب دعم النموذج.",
+      "alternatives": [
+        "LangChain",
+        "LlamaIndex",
+        "smolagents"
+      ],
+      "docs": [
+        "README.md",
+        "docs/agent.md",
+        "pyproject.toml"
+      ],
+      "ideas": {
+        "improvements": 2,
+        "spinoffs": 1,
+        "religious": 0
+      },
+      "testEvidence": null
+    },
+    {
+      "name": "uv",
+      "repo": "astral-sh/uv",
+      "license": "Apache-2.0 AND MIT",
+      "licenseFiles": [
+        "LICENSE-APACHE",
+        "LICENSE-MIT"
+      ],
+      "archived": false,
+      "stars": 91745,
+      "forks": 3777,
+      "openIssues": 3049,
+      "pushedAt": "2026-11-08T01:33:53Z",
+      "updatedAt": "2026-11-08T01:34:09Z",
+      "readmeSha": "66caaf9ccc62add8c63de8e71184c9b7677377ad",
+      "licenseShas": {
+        "apache": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+        "mit": "014835144877ea9c926d027ece3e1a26290cf481"
+      },
+      "requirements": "أداة CLI متعددة الأنظمة؛ binary الرسمي لا يحتاج تثبيت Python أو Rust مسبقًا؛ Linux/macOS/Windows.",
+      "quickStart": "uv init، ثم uv add، وuv run، وuv sync؛ لم تُنفذ الأوامر.",
+      "costs": "ترخيص مزدوج Apache-2.0/MIT بلا رسوم؛ الشبكة والتخزين ووقت CI فقط، ولا توجد خدمة uv مستضافة.",
+      "localVsCloud": "مدير محلي للمشاريع والحزم؛ يستخدم فهارس بعيدة لكنه لا يقدم بيئة تنفيذ سحابية مُدارة.",
+      "alternatives": [
+        "Poetry",
+        "PDM",
+        "pip-tools",
+        "Rye"
+      ],
+      "docs": [
+        "README.md",
+        "docs/guides/projects.md",
+        "docs/concepts/projects/layout.md"
+      ],
+      "ideas": {
+        "improvements": 4,
+        "spinoffs": 4,
+        "religious": 0
+      },
+      "testEvidence": null
+    }
+  ],
+  "totals": {
+    "improvements": 24,
+    "spinoffs": 21,
+    "religious": 0,
+    "completeIdeas": 45,
+    "testEvidenceClaims": 0
+  },
+  "notes": [
+    "المؤشرات من GitHub API في metricsMeasuredAt؛ النجوم والفروع والقضايا المفتوحة متغيرة.",
+    "كل المشاريع الثمانية غير مؤرشفة وقت القياس؛ تم فحص ملفات الترخيص الفعلية.",
+    "لم تُشغّل المشاريع؛ testEvidence=null.",
+    "لم تُضف أفكار دينية غير ملائمة لمجرد زيادة العدد."
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "version": 1,
+  "runAt": "2026-11-09T12:46:00+03:00",
+  "mainCommit": "96cef35552916f60ef5c2c4f60e7babb9f935000",
+  "prNumber": 97,
+  "prHeadBefore": "d9869213a0be3e50bbb35f5629381f7dc2cb23f0",
+  "incomingBeforeThisRun": {
+    "mainFiles": 88,
+    "mainOccurrences": 928,
+    "prBranchFiles": 100,
+    "prBranchOccurrences": 1052,
+    "structurallyCheckedFiles": 100,
+    "structurallyCheckedRecords": 1052,
+    "structuralErrors": 0
+  },
+  "classificationAcross100Files": {
+    "activeImportedOccurrences": 276,
+    "historicalImportedOccurrences": 622,
+    "exactActivePendingOccurrences": 78,
+    "exactActivePendingUniqueIds": 56,
+    "seenOnlyOutOfFeedOccurrences": 75,
+    "identityMismatchOccurrences": 1,
+    "sameIdWrongUrlOccurrences": 0,
+    "orphanOccurrences": 0,
+    "confirmedExpiredRecords": 0,
+    "expiryNotProven": true
+  },
+  "prOnlyIncomingFiles": {
+    "files": 12,
+    "occurrences": 124,
+    "alreadyImportedOccurrences": 7,
+    "exactActivePendingOccurrences": 78,
+    "exactActivePendingUniqueIds": 56,
+    "seenOnlyOccurrences": 39,
+    "seenOnlyUniqueIds": 26,
+    "identityMismatchOccurrences": 0
+  },
+  "prEditorialBefore": {
+    "entries": 933,
+    "mainEntriesPreserved": 859,
+    "newIds": 74,
+    "exactActiveNewIds": 56,
+    "outOfFeedNewIds": 18,
+    "existingEntriesExpanded": 5,
+    "existingFieldsRemoved": 0
+  },
+  "prEditorialAfter": {
+    "entries": 916,
+    "mainEntriesPreserved": 859,
+    "exactActiveBacklogIds": 56,
+    "newNewsThisRun": 1,
+    "removedOutOfFeedIds": 18,
+    "existingEntriesExpanded": 5,
+    "existingFieldsRemoved": 0
+  },
+  "heldOutOfFeed": [
+    {
+      "id": "d32234f10741024509",
+      "titleAr": "رويترز: Microsoft تتجه لإنهاء ترتيب استئجار سعة ذكاء اصطناعي من Oracle",
+      "url": "https://www.reuters.com/business/microsoft-is-winding-down-oracle-deal-rent-ai-cloud-capacity-bloomberg-news-2026-11-06/",
+      "seenOnly": true,
+      "reason": "ID is absent from current Feed and main Editorial; kept in incoming history but removed from PR Editorial."
+    },
+    {
+      "id": "bc00e1abe23c7a7329",
+      "titleAr": "Memorilla تقترح ذاكرة دلالية تضغط سياق النماذج إلى رموز مرتبطة بالسؤال",
+      "url": "https://arxiv.org/abs/2610.21375",
+      "seenOnly": true,
+      "reason": "ID is absent from current Feed and main Editorial; kept in incoming history but removed from PR Editorial."
+    },
+    {
+      "id": "b035143e2aa925bb9c",
+      "titleAr": "مشروع قانون أمريكي يربط تسريع تصاريح الطاقة بتحمّل مراكز البيانات كلفة الشبكة",
+      "url": "https://www.theverge.com/policy/1028228/energy-infrastructure-permitting-reform-bill-congress-vote",
+      "seenOnly": true,
+      "reason": "ID is absent from current Feed and main Editorial; kept in incoming history but removed from PR Editorial."
+    },
+    {
+      "id": "9aeac73058ac351bd9",
+      "titleAr": "Meta تضيف Spaces إلى Muse لإنشاء مساحات عمل مصغرة حسب الحاجة",
+      "url": "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces",
+      "seenOnly": true,
+      "reason": "ID is absent from current Feed and main Editorial; kept in incoming history but removed from PR Editorial."
+    },
+    {
+      "id": "f0247d2be6d23fda27",
+      "titleAr": "Anthropic تشرح بنية ذاكرة الوكلاء وكيفية تحديثها",
+      "url": "https://www.anthropic.com/research/components-of-agent-memory",
+      "seenOnly": true,
+      "reason": "ID is absent from current Feed and main Editorial; kept in incoming history but removed from PR Editorial."
+    },
+    {
+      "id": "96d96bc83625d43e64",
+      "titleAr": "Google تستحوذ على موقع مركز بيانات في وايومنغ بعد أعمال تطوير أولية من Crusoe",
+      "url": "https://www.crusoe.ai/resources/newsroom/crusoe-wyoming-data-center-campus-update",
+      "seenOnly": true,
+      "reason": "ID is absent from current Feed and main Editorial; kept in incoming history but removed from PR Editorial."
+    },
+    {
+      "id": "088c4eeb69d432a240",
+      "titleAr": "Ofcom: تعطيل Find Friends افتراضيًا لحسابات الأطفال على Snapchat في بريطانيا",
+      "url": "https://www.engadget.com/2310117/snapchats-find-friends-feature-will-be-off-by-default-for-uks-under-18-users/",
+      "seenOnly": true,
+      "reason": "ID is absent from current Feed and main Editorial; kept in incoming history but removed from PR Editorial."
+    },
+    {
+      "id": "60724c835de1389a14",
+      "titleAr": "Hightouch تختبر تحكيمًا هجينًا يقترب من دقة Opus بتكلفة أقل",
+      "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
+      "seenOnly": true,
+      "reason": "ID is absent from current Feed and main Editorial; kept in incoming history but removed from PR Editorial."
+    },
+    {
+      "id": "ee860e0ea0ec35f12c",
+      "titleAr": "ICFO تختبر خلية شمسية عضوية تقلل فقد الضوء عبر تضييق زاوية الانبعاث",
+      "url": "https://www.engadget.com/2306188/solar-panel-efficiency-breakthrough-doubles-output/",
+      "seenOnly": true,
+      "reason": "ID is absent from current Feed and main Editorial; kept in incoming history but removed from PR Editorial."
+    },
+    {
+      "id": "20716899a73a29da44",
+      "titleAr": "هجمات على أنظمة التبريد المتصلة تكشف مخاطر البنية التحتية لسلسلة التبريد",
+      "url": "https://www.wired.com/story/kernel-panic-refrigeration-hacks-internet-of-things/",
+      "seenOnly": true,
+      "reason": "ID is absent from current Feed and main Editorial; kept in incoming history but removed from PR Editorial."
+    },
+    {
+      "id": "b521172828d6261302",
+      "titleAr": "تقرير يثير تساؤلات حول تدقيق مشتري شرائح Nvidia H200 في الصين",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+      "seenOnly": true,
+      "reason": "ID is absent from current Feed and main Editorial; kept in incoming history but removed from PR Editorial."
+    },
+    {
+      "id": "e0c8b4541e0b5e8be3",
+      "titleAr": "تقييم METR يرجّح تسارع تقدم نماذج Anthropic في المهام المحددة بنحو الضعف",
+      "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+      "seenOnly": true,
+      "reason": "ID is absent from current Feed and main Editorial; kept in incoming history but removed from PR Editorial."
+    },
+    {
+      "id": "7d6a970ab1ba21607a",
+      "titleAr": "جون لانغفورد يصف نهاية مجموعة AI Frontiers في تدوينة شخصية",
+      "url": "https://hunch.net/?p=13764006",
+      "seenOnly": true,
+      "reason": "ID is absent from current Feed and main Editorial; kept in incoming history but removed from PR Editorial."
+    },
+    {
+      "id": "b228101c3e9d88f964",
+      "titleAr": "HyperFlow H3 Flash يضغط نموذجًا مشتركًا للفيديو والصوت إلى نحو 14B",
+      "url": "https://github.com/Video-Rebirth/hyperflow-h3-flash",
+      "seenOnly": true,
+      "reason": "ID is absent from current Feed and main Editorial; kept in incoming history but removed from PR Editorial."
+    },
+    {
+      "id": "5be9cd76a11a8ae694",
+      "titleAr": "MaxxBench يختبر ما إذا كانت نتائج نماذج البرمجة تصمد أمام تغيّر المتطلبات",
+      "url": "https://maxxbench.unlap.ai/research/why-maxxbench/",
+      "seenOnly": true,
+      "reason": "ID is absent from current Feed and main Editorial; kept in incoming history but removed from PR Editorial."
+    },
+    {
+      "id": "ef313c34ae184d15b2",
+      "titleAr": "تحقيق يثير أسئلة حول رسم علاقات محلي في macOS",
+      "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph",
+      "seenOnly": true,
+      "reason": "ID is absent from current Feed and main Editorial; kept in incoming history but removed from PR Editorial."
+    },
+    {
+      "id": "0eacd10b8c48398876",
+      "titleAr": "مكتب قانوني بريطاني يشارك تجربته مع البرمجيات الحرة",
+      "url": "https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition/",
+      "seenOnly": true,
+      "reason": "ID is absent from current Feed and main Editorial; kept in incoming history but removed from PR Editorial."
+    },
+    {
+      "id": "bd95b63d46d959afe7",
+      "titleAr": "تصحيح أسهم شركات التقنية يختلف عن الهبوط العام في السوق",
+      "url": "https://www.kadoa.com/companies/insights/ai-selloff-perspective",
+      "seenOnly": true,
+      "reason": "ID is absent from current Feed and main Editorial; kept in incoming history but removed from PR Editorial."
+    }
+  ],
+  "identityMismatch": {
+    "incomingId": "7a99eca9b2ce14d9f5",
+    "incomingUrl": "https://github.com/rasbt/LLMs-from-scratch",
+    "currentFeedId": "e0cbbf211a55e79f34",
+    "currentFeedUrl": "https://github.com/rasbt/LLMs-from-scratch",
+    "action": "No alias or replacement ID created; old main editorial record retained; hold mismatch."
+  },
+  "specialChecks": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "libraryProject": "NVIDIA/OpenShell"
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    }
+  ],
+  "sourceQualityHolds": [
+    {
+      "id": "e3e3a03bfc5be7aa43",
+      "feed": true,
+      "editorial": false,
+      "reason": "Feed URL is Google News intermediary; original publisher article not verified; do not import until source is resolved."
+    },
+    {
+      "id": "d18ddd9c12e46dd96b",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "reason": "Seen-only old issue; source needs correction/revalidation before editorial import."
+    }
+  ],
+  "newEditorial": {
+    "id": "5b78b4e9dfa02a9337",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVFdMT0RIRWszSF91dzVlRkpiVXpWQXRvVGNiTXdpZ2d2NWRPQUVPbHQ4MkhacEVFM184Z05DbHRKVUU3TUxhdmh6cUZ3dVdPUkFjb01yb1lmaWt1OFUwcHY0RzlZU05uVmU5TzNKS19RS3E0YXI4NUpRc2lfQzhfLThTallkLWx0?oc=5",
+    "basis": "metadata",
+    "source": "https://www.lg.co.kr/media/release/30760",
+    "reason": "Official release page text was not retrievable in full; metadata-only entry explicitly records this limitation."
+  },
+  "constraints": {
+    "feedJsonChanged": false,
+    "seenJsonChanged": false,
+    "statusJsonChanged": false,
+    "siteCodeChanged": false,
+    "designChanged": false,
+    "workflowsChanged": false,
+    "deploymentSettingsChanged": false
+  }
+}
