@@ -39270,9 +39270,9 @@
         "راجع حدود الاستخدام والأجهزة والمناطق في دعم Apple.",
         "ميّز الميزات المحلية من الميزات التي ترسل الطلب لمزود سحابي."
       ],
-      "limitations": "السعر من تقرير The Verge وقد يتغير؛ Apple تذكر قيودًا عمرية وإقليمية لبعض الميزات.",
-      "reviewedAt": "2026-11-10T02:43:48+03:00",
-      "basis": "article",
+      "limitations": "لم يتاح النص الكامل لمقال The Verge أو صفحة Apple Support المرتبطة في هذه المراجعة؛ هذا الوصف مبني على بيانات التغذية والمقتطف المتاح، ويجب الرجوع إلى شروط Apple الرسمية قبل اعتماد السعر أو قيود الاستخدام.",
+      "reviewedAt": "2026-11-10T20:39:19+03:00",
+      "basis": "metadata",
       "sources": [
         {
           "title": "The Verge — Apple’s Intelligence Usage Packs",
@@ -39328,26 +39328,6 @@
         }
       ]
     },
-    "a425346c085c7dcb99": {
-      "url": "https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet/",
-      "titleAr": "ألواح شمسية شبه شفافة تسمح بمرور الضوء اللازم للنباتات في تجربة زراعية",
-      "summaryAr": "يعرض Anthropocene تجربة زراعية في السويد لخلايا CdTe شمسية شبه شفافة تمرر أطوالًا موجية حمراء وزرقاء للنباتات وتحوّل أجزاء أخرى من الضوء إلى كهرباء. وصل وزن رؤوس البروكلي إلى مستوى قريب من المقارنة المفتوحة، لكن النضج تأخر 25 يومًا.",
-      "whyItMatters": "توضح التجربة مقايضة agrivoltaics بين إنتاج الكهرباء وزمن نمو المحصول، وأن تصميم الطيف الضوئي قد يغير هذه المقايضة.",
-      "audience": "مهتمو الطاقة المتجددة، والزراعة الذكية، والبحث البيئي، وهندسة الخلايا الشمسية.",
-      "nextSteps": [
-        "انتظر تجارب متعددة المواسم ومحاصيل مختلفة.",
-        "قارن العائد الكلي للمحصول والكهرباء وتكاليف الصيانة."
-      ],
-      "limitations": "المصدر تقرير علمي صحفي عن تجربة أولية لموسم واحد ومحصول وموقع محدودين؛ لم نراجع الورقة البحثية كاملة. لا تثبت النتيجة جاهزية تجارية.",
-      "reviewedAt": "2026-11-10T02:43:48+03:00",
-      "basis": "article",
-      "sources": [
-        {
-          "title": "Anthropocene — Magenta solar panels and agrivoltaics",
-          "url": "https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet/"
-        }
-      ]
-    },
     "0a2b694e15caf809f8": {
       "url": "https://www.cnx-software.com/2026/11/03/when-will-this-stop-the-raspberry-pi-5-16gb-sbc-now-sells-for-385/",
       "titleAr": "ارتفاع سعر نسخة 16GB من Raspberry Pi 5 بمقدار 80 دولارًا",
@@ -39369,199 +39349,6 @@
         {
           "title": "CNX Software — Raspberry Pi 5 16GB price report",
           "url": "https://www.cnx-software.com/2026/11/03/when-will-this-stop-the-raspberry-pi-5-16gb-sbc-now-sells-for-385/"
-        }
-      ]
-    },
-    "cec6ab6c90d6d9e9c1": {
-      "url": "https://github.com/ikey4u/zebkit",
-      "titleAr": "Zebkit يقدّم محرك Chromium كمكتبة يمكن تضمينها في التطبيقات الأصلية",
-      "summaryAr": "يعرض Zebkit 0.4.0 محرك Chromium وBlink وV8 وPDFium وFFmpeg كمكتبة native، مع واجهات C وRust وPython وGo وJavaScript وأدوات Playwright وMCP.",
-      "whyItMatters": "يوفر مسارًا لتضمين محرك ويب داخل تطبيق أصلي، لكنه يتطلب تقييم حجم الحزمة وتوافق الأنظمة والترخيص وحدود الصلاحيات.",
-      "audience": "مطورو تطبيقات سطح المكتب، ومهندسو Rust وPython وC/C++، وفرق أدوات المتصفح والأتمتة.",
-      "nextSteps": [
-        "ابدأ بحزمة إصدار جاهزة بدل بناء Chromium من المصدر، ثم اختبر مثالًا بسيطًا على نظامك.",
-        "راجع مصفوفة الأنظمة والاعتماديات والترخيص قبل تضمينه في تطبيق قابل للتوزيع.",
-        "اختبر حدود origin والملفات والصلاحيات في بيئة تجريبية مع إبقاء العزل مفعّلًا وعدم منح صلاحيات واسعة."
-      ],
-      "limitations": "الإصدار 0.4.0 وقياسات الأداء من إعداد المشروع؛ بناء المصدر ثقيل ولم نشغّل المشروع أو نختبره.",
-      "overview": "Chromium كمكتبة native embeddable: التطبيق يحتفظ بعملية التشغيل وواجهة النوافذ وحلقة الأحداث، ويستدعي محرك الويب عند الحاجة. يوفر المشروع واجهات متعددة، PDFium، وسائط، أتمتة Playwright وواجهة MCP ضمن حدود يحددها المشغّل.",
-      "requirements": "حزمة إصدار مطابقة للنظام؛ Linux x86-64 مع glibc 2.17+ وX11 أو Wayland، أو macOS على Apple Silicon، أو Windows x64 وWindows 10+. ربط Python يتطلب Python 3.8+، وRust يستخدم edition 2021. بناء Chromium من المصدر يحتاج نحو 30GB للشجرة، وتذكر وثائق البناء قرابة 120GB لمساحة الشجرة والبناء، وذاكرة كبيرة؛ بيئة المرجع 24 نواة و94GB RAM ويستغرق البناء الكامل ساعات.",
-      "quickStart": "للتجربة الأولى استخدم حزمة الإصدار الجاهزة المناسبة لنظامك، ثم ثبّت ربط Python عبر pip، واضبط ZEBKIT_DIR على مجلد الحزمة، وشغّل مثال View بسيطًا على صفحة اختبار. لا تبدأ ببناء Chromium من المصدر إلا إذا احتجت تعديل المحرك نفسه.",
-      "improvements": [
-        {
-          "title": "مصفوفة توافق واختبارات إصدار متعددة الأنظمة",
-          "problem": "تعدد الأنظمة والواجهات والاعتماد على Chromium يجعل اكتشاف اختلافات الحزم وواجهات النظام قبل الإصدار صعبًا.",
-          "approach": "إنشاء مصفوفة CI ثابتة تغطي إصدارات Python وRust والأنظمة المدعومة، وتشغّل smoke tests للحزمة الجاهزة دون إعادة بناء Chromium في كل مرة.",
-          "stack": "GitHub Actions / Python / Rust / CTest / JSON test reports",
-          "steps": [
-            "حدد أنظمة التشغيل والإصدارات التي يدعمها المشروع فعليًا.",
-            "أنشئ smoke tests قصيرة للحزمة الجاهزة وواجهات PDF وView.",
-            "احفظ نتائج كل منصة مع إصدار Chromium والحزمة.",
-            "اربط نشر الإصدار بمرور الاختبارات الأساسية."
-          ],
-          "metric": "نسبة منصات الإصدار التي تمر باختبارات smoke مع سجل قابل لإعادة الإنتاج.",
-          "difficulty": "متوسطة إلى مرتفعة — تقدير بحثي.",
-          "risks": "تكلفة runners وتفاوت عتاد الرسوميات قد ينتجان فشلًا متقطعًا؛ افصل اختبارات العتاد عن الاختبارات الوظيفية.",
-          "sources": [
-            {
-              "title": "Zebkit BUILD documentation",
-              "url": "https://github.com/ikey4u/zebkit/blob/main/docs/BUILD.md"
-            },
-            {
-              "title": "Zebkit README",
-              "url": "https://github.com/ikey4u/zebkit/blob/main/README.md"
-            }
-          ]
-        },
-        {
-          "title": "جرد SPDX وSBOM لمكونات Chromium المضمّنة",
-          "problem": "المحرك يجمع مكتبات كثيرة مثل FFmpeg وPDFium وBoringSSL وغيرها، ولكل مكوّن شروط ترخيص وتحديث مختلفة.",
-          "approach": "إصدار SBOM آلي لكل حزمة وربط كل مكتبة بإصدارها وترخيصها ومصدرها، مع تقرير تغييرات بين الإصدارات.",
-          "stack": "SPDX / CycloneDX / Syft / GitHub Actions",
-          "steps": [
-            "استخرج قائمة المكونات والإصدارات من شجرة البناء.",
-            "أنشئ SBOM بصيغتي SPDX أو CycloneDX.",
-            "اربط التراخيص والإشعارات بكل حزمة إصدار.",
-            "أضف فحصًا آليًا للتغييرات والثغرات قبل النشر."
-          ],
-          "metric": "نسبة المكونات التي لها إصدار ومصدر وترخيص موثق في كل إصدار.",
-          "difficulty": "مرتفعة — تقدير بحثي.",
-          "risks": "قد تختلف ملفات الترخيص داخل Chromium والمكونات المجمعة؛ يلزم تدقيق بشري ولا يكفي تصنيف SPDX آلي وحده.",
-          "sources": [
-            {
-              "title": "Zebkit upstream lock",
-              "url": "https://github.com/ikey4u/zebkit/blob/main/upstream.lock"
-            },
-            {
-              "title": "Zebkit license",
-              "url": "https://github.com/ikey4u/zebkit/blob/main/LICENSE"
-            }
-          ]
-        },
-        {
-          "title": "مُهيّئ Python يتحقق من حزمة المحرك تلقائيًا",
-          "problem": "تثبيت ربط Python وحده لا يضمن وجود حزمة المحرك الصحيحة، ويحتاج المستخدم إلى ضبط ZEBKIT_DIR يدويًا.",
-          "approach": "إضافة أداة اختيارية تتحقق من النظام والمعمارية والإصدار، وتنزّل حزمة الإصدار المطابقة بعد التحقق من SHA-256.",
-          "stack": "Python / PyPI / SHA-256 / platform tags",
-          "steps": [
-            "عرّف خريطة إصدارات الحزم حسب النظام والمعمارية.",
-            "أضف أمر doctor لفحص ZEBKIT_DIR والإصدار والملفات المطلوبة.",
-            "تحقق من checksum قبل اعتماد الحزمة.",
-            "وثّق مسارًا يدويًا بديلًا للتثبيت دون اتصال."
-          ],
-          "metric": "نسبة نجاح التثبيت النظيف على المنصات المدعومة دون إعداد يدوي.",
-          "difficulty": "متوسطة — تقدير بحثي.",
-          "risks": "حجم التنزيل وتغيّر روابط الإصدارات ومخاطر سلسلة التوريد؛ يجب التحقق من checksum وعدم تنفيذ ملفات غير موثوقة.",
-          "sources": [
-            {
-              "title": "Zebkit Python binding metadata",
-              "url": "https://github.com/ikey4u/zebkit/blob/main/bindings/python/pyproject.toml"
-            },
-            {
-              "title": "Zebkit releases",
-              "url": "https://github.com/ikey4u/zebkit/releases"
-            }
-          ]
-        }
-      ],
-      "spinoffs": [
-        {
-          "title": "قارئ أبحاث عربي محلي مع PDF وفهرسة RTL",
-          "problem": "الباحث يحتاج إلى قراءة ملفات PDF كثيرة والبحث داخلها مع دعم العربية والاقتباسات دون إرسال الملفات إلى خدمة سحابية.",
-          "approach": "تطبيق سطح مكتب محلي يستخدم PDFium لاستخراج النص، وفهرس SQLite، وواجهة RTL، مع حفظ موضع الصفحة ومصدر الاقتباس.",
-          "stack": "Python / Zebkit / PDFium / SQLite / Arabic RTL UI",
-          "steps": [
-            "ابنِ نافذة محلية تعرض PDF وتدعم RTL.",
-            "استخرج النص والصفحات والروابط من PDFium.",
-            "أنشئ فهرس SQLite مع معرف الملف ورقم الصفحة.",
-            "أضف بحثًا عربيًا وتصدير اقتباس مع مرجع الصفحة.",
-            "اختبر ملفات عربية ممسوحة وأخرى نصية وسجل حدود OCR."
-          ],
-          "metric": "دقة استرجاع نتائج البحث على مجموعة ملفات عربية مع صحة مرجع الصفحة.",
-          "difficulty": "مرتفعة — تقدير بحثي.",
-          "risks": "تفاوت جودة PDF والخطوط والـOCR قد يسبب أخطاء؛ يجب إظهار النص الأصلي والصفحة وعدم اختلاق الاقتباس.",
-          "sources": [
-            {
-              "title": "Zebkit PDF API overview",
-              "url": "https://github.com/ikey4u/zebkit/blob/main/docs/API.md"
-            },
-            {
-              "title": "Zebkit README",
-              "url": "https://github.com/ikey4u/zebkit/blob/main/README.md"
-            }
-          ]
-        },
-        {
-          "title": "مساحة بحث محلية لوكلاء الذكاء الاصطناعي بصلاحيات محدودة",
-          "problem": "أدوات الوكلاء تحتاج تصفحًا وقراءة مستندات، لكن منحها وصولًا واسعًا للملفات والشبكة يرفع مخاطر تسرب البيانات أو إساءة استخدام محتوى الصفحات.",
-          "approach": "تطبيق محلي يستخدم Zebkit MCP مع قائمة origins محددة، ومجلد قراءة فقط افتراضيًا، وسجل لكل أداة، وموافقة بشرية منفصلة قبل الكتابة.",
-          "stack": "Rust / Zebkit MCP / SQLite / JSON audit log",
-          "steps": [
-            "حدد نطاق المواقع المسموح بها لكل مشروع.",
-            "ابدأ بصلاحيات قراءة محدودة دون كتابة.",
-            "سجل طلبات الأدوات ومصادر الصفحات والملفات.",
-            "أضف موافقة بشرية لأي تغيير دائم أو مشاركة خارجية.",
-            "اختبر رفض الطلبات الخارجة عن الحدود قبل الاستخدام."
-          ],
-          "metric": "نسبة عمليات الوكيل التي تبقى داخل قائمة origins والمجلدات المصرح بها.",
-          "difficulty": "مرتفعة — تقدير بحثي.",
-          "risks": "محتوى الصفحات غير موثوق وقد يحاول التأثير في قرارات الوكيل؛ حدود الأداة لا تمنع كل أخطاء التفسير، ويجب عدم توسيع الصلاحيات افتراضيًا.",
-          "sources": [
-            {
-              "title": "Zebkit MCP documentation",
-              "url": "https://github.com/ikey4u/zebkit/blob/main/docs/MCP.md"
-            },
-            {
-              "title": "Zebkit BUILD documentation",
-              "url": "https://github.com/ikey4u/zebkit/blob/main/docs/BUILD.md"
-            }
-          ]
-        }
-      ],
-      "religious": [],
-      "testStatus": "not_run",
-      "sources": [
-        {
-          "title": "Zebkit README",
-          "url": "https://github.com/ikey4u/zebkit/blob/main/README.md"
-        },
-        {
-          "title": "Zebkit build documentation",
-          "url": "https://github.com/ikey4u/zebkit/blob/main/docs/BUILD.md"
-        },
-        {
-          "title": "Zebkit MCP documentation",
-          "url": "https://github.com/ikey4u/zebkit/blob/main/docs/MCP.md"
-        },
-        {
-          "title": "Zebkit license",
-          "url": "https://github.com/ikey4u/zebkit/blob/main/LICENSE"
-        }
-      ],
-      "reviewedAt": "2026-11-10T02:43:48+03:00",
-      "basis": "readme",
-      "costs": "لا تذكر الوثائق خدمة مُدارة أو رسوم API إلزامية. التشغيل المحلي عبر حزمة إصدار جاهزة هو المسار العملي؛ بناء Chromium من المصدر يحتاج مساحة وذاكرة ووقتًا كبيرًا. لا توجد أسعار استضافة رسمية.",
-      "localVsCloud": "محليًا: استخدم حزمة إصدار جاهزة. سحابيًا: يمكن تشغيلها على VM للاختبارات، لكن لا توجد خدمة مُدارة؛ كلفة العتاد ووقت التشغيل متغيرة.",
-      "alternatives": [
-        {
-          "name": "Electron",
-          "tradeoff": "محرك متصفح مضمّن وحزمة أكبر.",
-          "url": "https://www.electronjs.org/docs/latest/"
-        },
-        {
-          "name": "CEF",
-          "tradeoff": "تضمين Chromium منخفض المستوى مع مسؤولية أكبر عن دورة الحياة.",
-          "url": "https://chromiumembedded.github.io/cef/"
-        },
-        {
-          "name": "WebView2",
-          "tradeoff": "تكامل رسمي لكنه مرتبط بـWindows.",
-          "url": "https://learn.microsoft.com/en-us/microsoft-edge/webview2/"
-        },
-        {
-          "name": "Tauri",
-          "tradeoff": "يعتمد WebView النظام بدل تضمين Chromium.",
-          "url": "https://tauri.app/"
         }
       ]
     },
@@ -39993,6 +39780,60 @@
         }
       ],
       "testStatus": "not_run"
+    },
+    "126b111b5d436487e5": {
+      "url": "https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/",
+      "titleAr": "Adobe توسّع Creative Cloud بوكلاء ذكاء اصطناعي وتكاملات MCP محلية",
+      "summaryAr": "أعلنت Adobe في مؤتمر MAX بتاريخ 10 نوفمبر توسيع Creative Agent إلى أدوات Creative Cloud وFirefly، مع مساعدين قادرين على تنسيق مهام متعددة الخطوات. كما عرضت تكاملات MCP محلية مستقبلية تسمح لوكلاء الطرف الثالث بإجراء تغييرات في ملفات Photoshop وIllustrator وPremiere وAfter Effects الأصلية مع بقاء الطبقات والعناصر قابلة للتحرير. تؤكد Adobe أن تكاملات MCP ما تزال معاينة خاصة، ومتوقع طرحها في private beta مطلع 2027؛ أما بعض ميزات Creative Agent فتتوفر كإصدارات beta أو بحسب التطبيق.",
+      "whyItMatters": "يمثل ذلك انتقالًا من مساعدات منفصلة إلى سير عمل يربط الوكلاء بأدوات الإنتاج الإبداعي نفسها. يهم المصممين ومحرري الفيديو ومطوري تكاملات MCP، لكنه يرفع أهمية تحديد الصلاحيات ومراجعة التغييرات على الملفات الأصلية.",
+      "audience": "مصممو الجرافيك، محررو الفيديو، فرق المحتوى، ومطورو تكاملات MCP والوكلاء.",
+      "nextSteps": [
+        "ميّز بين الميزات المتاحة عمومًا وميزات beta والمعاينات الخاصة قبل اعتمادها في سير عمل فعلي.",
+        "اختبر أي وكيل على نسخة من المشروع، واحتفظ بإمكانية التراجع ومراجعة التغييرات قبل حفظها على الملفات الأصلية.",
+        "تابع موعد إتاحة تكاملات MCP الرسمية وحدود الصلاحيات المحلية لكل تطبيق."
+      ],
+      "limitations": "المعلومات من إعلان Adobe ومقالها الرسمي؛ لم تُنشر مقارنة مستقلة للأداء أو جودة المخرجات. تكاملات MCP ليست متاحة عمومًا الآن، بل معاينة خاصة متوقع أن تبدأ في مطلع 2027، كما تختلف حالة الميزات بين التطبيقات.",
+      "reviewedAt": "2026-11-10T20:39:19+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Adobe Newsroom — Creative Cloud agentic workflows",
+          "url": "https://news.adobe.com/news/2026/11/adobe-transforms-creative-cloud-tools"
+        },
+        {
+          "title": "Adobe Blog — Creative Cloud and Firefly updates at MAX 2026",
+          "url": "https://blog.adobe.com/en/publish/2026/11/10/explore-new-ways-create-across-creative-cloud-adobe-firefly-while-advancing-craft-precision-choice-control"
+        },
+        {
+          "title": "TechCrunch — Adobe adds AI agents and MCP",
+          "url": "https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/"
+        }
+      ]
+    },
+    "7fc88fbdaa8e97213d": {
+      "url": "https://techcrunch.com/2026/11/10/cyberattacks-threaten-to-make-open-source-ai-a-little-less-open-hugging-face-exec-warns/",
+      "titleAr": "تحذيرات من أن الهجمات على منصات الذكاء الاصطناعي المفتوحة قد تشدد شروط المشاركة",
+      "summaryAr": "ينقل تقرير TechCrunch عن مسؤولة السياسات في Hugging Face أن المنصات المفتوحة أصبحت أهدافًا جذابة بسبب مفاتيح الوصول والبيانات والأوزان التي تستضيفها. ويورد التقرير حوادث مرتبطة بـOpenCode وHugging Face، ثم يستشهد بإفصاح Fireworks الرسمي عن حادثة أكتوبر: تأثرت بيانات حسابات وفوترة، ولعدد محدود من العملاء بعض الأسرار ومجموعات البيانات وأوزان نماذج غير مكتملة. تقول Fireworks إن خدمات الاستدلال وTraining SDK وNexus ذات الاحتفاظ الصفري لم تتأثر وفق تحقيقها حتى وقت البيان، وإن التحقيق مستمر.",
+      "whyItMatters": "المسألة تمس توازنًا مهمًا بين سهولة مساهمة الباحثين والمطورين في المنصات المفتوحة وبين حماية مفاتيح API والبيانات والنماذج. التقرير يوضح أن الأمن الجيد لا يقتصر على إغلاق المشاركة؛ بل يشمل تقليل الامتيازات، وضبط الشبكات، والمراقبة والاستجابة للحوادث.",
+      "audience": "مطورو المصادر المفتوحة، مشرفو منصات النماذج، فرق أمن المعلومات، ومشغلو البنية التحتية للذكاء الاصطناعي.",
+      "nextSteps": [
+        "راجع صلاحيات مفاتيح الوصول والخدمات، وقلّصها إلى الحد اللازم مع تدوير الأسرار وفق سياسة المؤسسة.",
+        "افصل بيئات البناء والتدريب والبيانات الحساسة، وفعّل سجلات تدقيق ومراقبة للوصول غير المعتاد.",
+        "راجع نشرات الحوادث الرسمية للمزوّدين المتأثرين، وحدّث خطة الاستجابة وإبلاغ المستخدمين عند الحاجة."
+      ],
+      "limitations": "المقال يجمع مقابلة صحفية وروايات عن حوادث متعددة، ولا يمثل تدقيقًا جنائيًا مستقلًا لكل حادثة. تفاصيل Fireworks مستندة إلى إفصاح الشركة المؤرخ 9 نوفمبر، والتحقيق لديها ما زال مستمرًا؛ ولا يجوز تعميم نطاق الأثر على جميع العملاء أو المنصات.",
+      "reviewedAt": "2026-11-10T20:39:19+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — Cyberattacks and open-source AI platforms",
+          "url": "https://techcrunch.com/2026/11/10/cyberattacks-threaten-to-make-open-source-ai-a-little-less-open-hugging-face-exec-warns/"
+        },
+        {
+          "title": "Fireworks AI — October 2026 security incident update",
+          "url": "https://fireworks.ai/security/bulletins/october-2026-security-incident-update"
+        }
+      ]
     }
   }
 }
