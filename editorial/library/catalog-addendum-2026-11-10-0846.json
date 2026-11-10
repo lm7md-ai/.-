@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "kind": "project-catalog-addendum",
+  "publicationStatus": "research-library-only; not a separate public project card",
+  "reviewedAt": "2026-11-10T08:46:13+03:00",
+  "previousCatalogTotal": 65,
+  "newCatalogTotal": 66,
+  "statusSummaryAfterAppend": {
+    "total": 66,
+    "archived": 2,
+    "nonArchived": 64,
+    "inCurrentFeed": 12,
+    "notInFeed": 53,
+    "feedMembershipUnverified": 1
+  },
+  "note": "Append-only addition at priority 66. Existing catalog order and prior ideas remain unchanged. DevDocs is an exact current Feed project item and is enriched under its original ID.",
+  "entries": [
+    {
+      "priority": 66,
+      "repository": "freeCodeCamp/devdocs",
+      "url": "https://github.com/freeCodeCamp/devdocs",
+      "category": "توثيق وأدوات مطورين",
+      "classification": "established_non_archived",
+      "archived": false,
+      "starsMeasured": 39614,
+      "forksMeasured": 2654,
+      "openIssuesCount": 196,
+      "metricCapturedAt": "2026-11-10T08:46:13+03:00",
+      "metricSource": "https://api.github.com/repos/freeCodeCamp/devdocs",
+      "licenseApiValue": "MPL-2.0",
+      "licenseName": "Mozilla Public License 2.0",
+      "licenseNeedsUpstreamVerification": false,
+      "licenseEvidence": "Official LICENSE read; MPL-2.0. README attribution and naming note reviewed.",
+      "lastPushedAt": "2026-11-09T23:34:13Z",
+      "lastUpdatedAt": "2026-11-10T02:39:42Z",
+      "defaultBranch": "main",
+      "language": "Ruby",
+      "activityStatus": "active_recent_push",
+      "inCurrentFeed": true,
+      "feedId": "0eeaaf4c87a4398c95",
+      "siteVisibility": "exact project Feed item; Editorial enrichment included in PR #98, not merged",
+      "reviewBasis": "README, Gemfile, Dockerfile, LICENSE and GitHub REST metadata inspected. No code execution or Docker build performed.",
+      "overviewShort": "متصفح توثيق API موحد يعمل دون اتصال، يتكون من Ruby scraper وواجهة JavaScript يقدمها Sinatra.",
+      "proposedResearchOrBuild": "حزمة توثيق Python والذكاء الاصطناعي بإصدارات مثبتة وتنبيه بفروق docsets ومصدر وترخيص لكل مجموعة.",
+      "alternatives": [
+        {
+          "name": "Zeal",
+          "url": "https://zealdocs.org/",
+          "note": "Desktop offline docsets for Windows/Linux; native application."
+        },
+        {
+          "name": "Dash",
+          "url": "https://kapeli.com/dash",
+          "note": "macOS desktop docset browser with custom docset generation and editor integrations."
+        }
+      ],
+      "currentSnapshot": {
+        "stars": 39614,
+        "forks": 2654,
+        "openIssuesCount": 196,
+        "archived": false,
+        "disabled": false,
+        "licenseSpdx": "MPL-2.0",
+        "pushedAt": "2026-11-09T23:34:13Z",
+        "updatedAt": "2026-11-10T02:39:42Z",
+        "defaultBranch": "main",
+        "language": "Ruby",
+        "measuredAt": "2026-11-10T08:46:13+03:00",
+        "sourceApiUrl": "https://api.github.com/repos/freeCodeCamp/devdocs"
+      },
+      "metricsWarning": "openIssuesCount includes issues and pull requests. Stars/forks are cumulative. No activity claim is based solely on updatedAt."
+    }
+  ]
+}
