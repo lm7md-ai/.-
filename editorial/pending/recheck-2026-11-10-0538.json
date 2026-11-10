@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-10T05:38:51+03:00",
+  "newBatch": {
+    "records": 12,
+    "activeExact": 12,
+    "importedOnPrBranch": 12,
+    "mismatches": 0,
+    "expired": 0
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "researchOnly": true,
+      "priority": 34
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    }
+  ],
+  "holds": [
+    {
+      "id": "7a99eca9b2ce14d9f5",
+      "relatedId": "e0cbbf211a55e79f34",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "reason": "keep historical/current IDs separate"
+    },
+    {
+      "id": "d18ddd9c12e46dd96b",
+      "reason": "closed historical issue from 2022; needs recent primary source"
+    },
+    {
+      "id": "e3e3a03bfc5be7aa43",
+      "reason": "active Feed item uses Google News intermediary URL"
+    }
+  ],
+  "note": "Incoming JSON repaired. Records are in PR branch Editorial only; not main or published. Official CLI not run locally."
+}
