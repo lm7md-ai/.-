@@ -39179,6 +39179,603 @@
           "url": "https://github.com/synchopate/llama-modchip/blob/main/paper/llama-modchip-paper.pdf"
         }
       ]
+    },
+    "86708699833d3a9796": {
+      "url": "https://research.meta.ai/blog/muse-ember",
+      "titleAr": "ميتا تطلق Muse Ember كنموذج صغير للمهام المتكررة داخل الوكلاء",
+      "summaryAr": "أعلنت Meta عن Muse Ember للمهام المتكررة داخل الوكلاء. تذكر الشركة نافذة سياق مليون رمز وحدّ إخراج 512 ألف رمز، وتسعيرًا قدره 0.10 دولار للإدخال و0.004 دولار للإدخال المخزن و0.50 دولار للإخراج لكل مليون رمز.",
+      "whyItMatters": "قد يخفض تكلفة المهام المتكررة داخل الوكلاء، لكن الاختيار ينبغي أن يعتمد على اختبار الدقة وزمن الاستجابة على مهامك لا على ترتيب الشركة وحده.",
+      "audience": "مطورو الوكلاء البرمجيين، وفرق أدوات المطورين، ومهندسو الأنظمة الذين يقارنون تكلفة الاستدلال المحلي والسحابي.",
+      "nextSteps": [
+        "قارن الدقة والسرعة والتكلفة على مجموعة مهام ثابتة.",
+        "اختبر استدعاء الأدوات والتعامل مع الأخطاء قبل الإنتاج."
+      ],
+      "limitations": "الأرقام والاختبارات من Meta أو شركائها ولم نعد تنفيذها مستقلًا؛ الأسعار تخص API المعلن وقد تتغير.",
+      "reviewedAt": "2026-11-10T02:43:48+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Meta AI Research — Introducing Muse Ember",
+          "url": "https://research.meta.ai/blog/muse-ember"
+        }
+      ]
+    },
+    "caa9073cefb43725f1": {
+      "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+      "titleAr": "OpenAI تتيح ChatGPT Enterprise عبر AWS Marketplace",
+      "summaryAr": "أعلنت OpenAI إتاحة ChatGPT Enterprise عبر AWS Marketplace، مع إدارة الفوترة من خلال AWS وإمكانية احتساب الإنفاق المؤهل ضمن التزامات السحابة. وتقول الشركة إن ميزات الخدمة ونماذجها هي نفسها المتاحة مباشرة.",
+      "whyItMatters": "التغيير في قناة الشراء والحوكمة المؤسسية، وليس إطلاق نموذج جديد أو إتاحة عامة للأفراد.",
+      "audience": "مسؤولو تقنية المعلومات والمشتريات السحابية، وفرق الحوكمة وإدارة اشتراكات الذكاء الاصطناعي في المؤسسات.",
+      "nextSteps": [
+        "تحقق من أهلية المؤسسة وشروط الإدراج.",
+        "قارن الفوترة والحوكمة مع التعاقد المباشر."
+      ],
+      "limitations": "لا يعرض الإعلان سعرًا موحدًا؛ الأهلية والتوافر يعتمدان على اتفاق المؤسسة مع AWS وOpenAI.",
+      "reviewedAt": "2026-11-10T02:43:48+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "OpenAI — ChatGPT Enterprise now available in AWS Marketplace",
+          "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace"
+        }
+      ]
+    },
+    "a3bc8ca770f44f2d28": {
+      "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/",
+      "titleAr": "Anthropic تحدّث Mythos وFable إلى الإصدار 5.2 مع تحسينات معلنة",
+      "summaryAr": "أعلنت Anthropic تحديث Fable وMythos إلى 5.2، وقالت إنهما أسرع حتى 30% من الجيل السابق. تسعير Fable المعلن 8 دولارات لكل مليون رمز إدخال و40 دولارًا للإخراج؛ أما Mythos فيتاح للجهات المؤهلة عبر برامج تحقق.",
+      "whyItMatters": "السعر والسرعة وسياسات الاحتفاظ بالبيانات وتقييم السلامة عوامل أساسية عند اختيار نموذج جديد، ويجب فصل تصريحات الشركة عن القياس المستقل.",
+      "audience": "مطورو تطبيقات النماذج، وفرق تقييم النماذج، ومسؤولو الخصوصية والحوكمة المؤسسية.",
+      "nextSteps": [
+        "راجع بطاقة النظام وملاحظات الإصدار قبل الاعتماد.",
+        "قارن السعر والسرعة والجودة على مجموعة تقييم ثابتة."
+      ],
+      "limitations": "نسب السرعة والأداء من اختبارات Anthropic وليست قياسًا مستقلًا هنا. Mythos ليس متاحًا للجميع؛ الوصول مشروط ببرامج التحقق.",
+      "reviewedAt": "2026-11-10T02:43:48+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — Anthropic releases new Mythos and Fable models",
+          "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/"
+        },
+        {
+          "title": "Anthropic — Claude Fable 5.2 and Mythos 5.2",
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+        }
+      ]
+    },
+    "5ef93d9981a0db1c3c": {
+      "url": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
+      "titleAr": "آبل توسّع حدود استخدام بعض ميزات Apple Intelligence بحزم إضافية",
+      "summaryAr": "أفاد The Verge أن Apple أضافت خيار شراء حزمة استخدام إضافية لمرة واحدة بسعر 49.99 دولارًا لبعض ميزات الذكاء الاصطناعي السحابية. عند النشر كان الشراء متاحًا في Logic Pro فقط، مع توقع توسيعه إلى تطبيقات أخرى؛ الحزمة مرتبطة بالحساب المشترِي ولا تدعم Family Sharing وتنتهي بعد 12 شهرًا.",
+      "whyItMatters": "بعض ميزات الذكاء الاصطناعي تتحول إلى استخدام محدود شهريًا ثم تكلفة إضافية؛ لذلك تهم الحدود والخصوصية قبل الاعتماد عليها.",
+      "audience": "مطورو التطبيقات الإبداعية، ومستخدمو أدوات الإنتاج، وفرق التقنية التي تقيّم حدود استخدام خدمات الذكاء الاصطناعي.",
+      "nextSteps": [
+        "راجع حدود الاستخدام والأجهزة والمناطق في دعم Apple.",
+        "ميّز الميزات المحلية من الميزات التي ترسل الطلب لمزود سحابي."
+      ],
+      "limitations": "السعر من تقرير The Verge وقد يتغير؛ Apple تذكر قيودًا عمرية وإقليمية لبعض الميزات.",
+      "reviewedAt": "2026-11-10T02:43:48+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "The Verge — Apple’s Intelligence Usage Packs",
+          "url": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro"
+        },
+        {
+          "title": "Apple Support — About the intelligence features in Apple Creator Studio",
+          "url": "https://support.apple.com/en-us/127888"
+        }
+      ]
+    },
+    "12c83389e580dec71d": {
+      "url": "https://www.eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim/",
+      "titleAr": "DeepX تعلن اكتمال تصميم DX-M2 وتستهدف تشغيل نماذج كبيرة على أجهزة الطرف",
+      "summaryAr": "بحسب EE Times، أنهت DeepX مرحلة tape-out لمسرّع DX-M2 لأجهزة الطرف. وتقول محاكاة الشركة إن إسناد GEMV إلى LPDDR5x-PIM رفع معدل الرموز 6.7 أضعاف على Llama 3.1 8B، مقابل طاقة أعلى 2.7 ضعف.",
+      "whyItMatters": "قد يوسّع PIM تشغيل النماذج على الأجهزة الطرفية، لكن الأداء والطاقة يجب قياسهما على شريحة فعلية لا على المحاكاة فقط.",
+      "audience": "مهندسو العتاد والأنظمة المضمنة، وفرق الروبوتات وإنترنت الأشياء، ومهندسو استدلال النماذج.",
+      "nextSteps": [
+        "انتظر عينات العتاد ونتائج القياس المستقلة.",
+        "قارن الأداء والطاقة والحرارة على حمل متطابق."
+      ],
+      "limitations": "مكسب 6.7 أضعاف نتيجة محاكاة منسوبة إلى DeepX وليس قياسًا على منتج نهائي؛ المترجم ما زال قيد التطوير والاختبار الفيزيائي لم يكتمل.",
+      "reviewedAt": "2026-11-10T02:43:48+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "EE Times — DeepX Tapes Out Second-Gen Chip",
+          "url": "https://www.eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim/"
+        }
+      ]
+    },
+    "a8ac24a5fed69e7112": {
+      "url": "https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy",
+      "titleAr": "كندا تطلق Real-Time Rail للمدفوعات الفورية على مدار الساعة",
+      "summaryAr": "أعلنت Payments Canada إطلاق Real-Time Rail، بنية مدفوعات وطنية تتيح للمؤسسات المشاركة تبادل وتسوية المدفوعات لحظيًا طوال أيام السنة، برسائل بيانات ISO 20022. وأعلن بنك كندا إدراج النظام ضمن أنظمة الدفع الخاضعة لإشرافه.",
+      "whyItMatters": "البنية الفورية تضيف بيانات أغنى وتكاملًا لحظيًا، لكنها تتطلب ضوابط احتيال وتشغيلًا مستمرًا.",
+      "audience": "مطورو fintech، ومهندسو تكامل المدفوعات، ودارسو أنظمة ISO 20022 والبنية المالية.",
+      "nextSteps": [
+        "ادرس رسائل ISO 20022 وآلية المشاركين.",
+        "راجع ضوابط مكافحة الاحتيال المنشورة."
+      ],
+      "limitations": "الإطلاق كندي ويبدأ بمؤسسات مشاركة فقط؛ التوسع تدريجي وتوقعات التوفير ليست نتائج محققة.",
+      "reviewedAt": "2026-11-10T02:43:48+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Payments Canada — Canada launches the Real-Time Rail",
+          "url": "https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy"
+        },
+        {
+          "title": "Bank of Canada — RTR designated as a prominent payment system",
+          "url": "https://www.bankofcanada.ca/2026/11/bank-of-canada-designates-rtr-as-a-prominent-payment-system/"
+        }
+      ]
+    },
+    "a425346c085c7dcb99": {
+      "url": "https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet/",
+      "titleAr": "ألواح شمسية شبه شفافة تسمح بمرور الضوء اللازم للنباتات في تجربة زراعية",
+      "summaryAr": "يعرض Anthropocene تجربة زراعية في السويد لخلايا CdTe شمسية شبه شفافة تمرر أطوالًا موجية حمراء وزرقاء للنباتات وتحوّل أجزاء أخرى من الضوء إلى كهرباء. وصل وزن رؤوس البروكلي إلى مستوى قريب من المقارنة المفتوحة، لكن النضج تأخر 25 يومًا.",
+      "whyItMatters": "توضح التجربة مقايضة agrivoltaics بين إنتاج الكهرباء وزمن نمو المحصول، وأن تصميم الطيف الضوئي قد يغير هذه المقايضة.",
+      "audience": "مهتمو الطاقة المتجددة، والزراعة الذكية، والبحث البيئي، وهندسة الخلايا الشمسية.",
+      "nextSteps": [
+        "انتظر تجارب متعددة المواسم ومحاصيل مختلفة.",
+        "قارن العائد الكلي للمحصول والكهرباء وتكاليف الصيانة."
+      ],
+      "limitations": "المصدر تقرير علمي صحفي عن تجربة أولية لموسم واحد ومحصول وموقع محدودين؛ لم نراجع الورقة البحثية كاملة. لا تثبت النتيجة جاهزية تجارية.",
+      "reviewedAt": "2026-11-10T02:43:48+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Anthropocene — Magenta solar panels and agrivoltaics",
+          "url": "https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet/"
+        }
+      ]
+    },
+    "0a2b694e15caf809f8": {
+      "url": "https://www.cnx-software.com/2026/11/03/when-will-this-stop-the-raspberry-pi-5-16gb-sbc-now-sells-for-385/",
+      "titleAr": "ارتفاع سعر نسخة 16GB من Raspberry Pi 5 بمقدار 80 دولارًا",
+      "summaryAr": "أعلنت Raspberry Pi Foundation في 2 نوفمبر رفع سعر نسخة Raspberry Pi 5 ذات 16GB بمقدار 80 دولارًا إلى 385 دولارًا بسبب نقص بدائل توريد DRAM عالية الكثافة، مع زيادات قدرها 40 دولارًا لبعض نسخ Compute Module 5.",
+      "whyItMatters": "ارتفاع تكلفة الذاكرة يؤثر في ميزانيات مشاريع التعليم والحوسبة الطرفية، ويجعل تقدير RAM الفعلي أهم من اختيار السعة الأعلى تلقائيًا.",
+      "audience": "طلاب الحوسبة والهواة ومطورو الأنظمة المضمنة ومختبرات التعليم.",
+      "nextSteps": [
+        "تحقق من السعر المحلي والضرائب لدى الموزع.",
+        "قدّر استهلاك الذاكرة قبل اختيار السعة."
+      ],
+      "limitations": "السعر بالدولار الأمريكي ويختلف عن سعر الموزعين والضرائب في السعودية. السبب المعلن من المؤسسة؛ لا يمثل تحليلًا مستقلًا لسوق الذاكرة.",
+      "reviewedAt": "2026-11-10T02:43:48+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Raspberry Pi — Price rises for some 16GB Raspberry Pi products",
+          "url": "https://www.raspberrypi.com/news/price-rises-for-some-16gb-raspberry-pi-products/"
+        },
+        {
+          "title": "CNX Software — Raspberry Pi 5 16GB price report",
+          "url": "https://www.cnx-software.com/2026/11/03/when-will-this-stop-the-raspberry-pi-5-16gb-sbc-now-sells-for-385/"
+        }
+      ]
+    },
+    "cec6ab6c90d6d9e9c1": {
+      "url": "https://github.com/ikey4u/zebkit",
+      "titleAr": "Zebkit يقدّم محرك Chromium كمكتبة يمكن تضمينها في التطبيقات الأصلية",
+      "summaryAr": "يعرض Zebkit 0.4.0 محرك Chromium وBlink وV8 وPDFium وFFmpeg كمكتبة native، مع واجهات C وRust وPython وGo وJavaScript وأدوات Playwright وMCP.",
+      "whyItMatters": "يوفر مسارًا لتضمين محرك ويب داخل تطبيق أصلي، لكنه يتطلب تقييم حجم الحزمة وتوافق الأنظمة والترخيص وحدود الصلاحيات.",
+      "audience": "مطورو تطبيقات سطح المكتب، ومهندسو Rust وPython وC/C++، وفرق أدوات المتصفح والأتمتة.",
+      "nextSteps": [
+        "ابدأ بحزمة إصدار جاهزة بدل بناء Chromium من المصدر، ثم اختبر مثالًا بسيطًا على نظامك.",
+        "راجع مصفوفة الأنظمة والاعتماديات والترخيص قبل تضمينه في تطبيق قابل للتوزيع.",
+        "اختبر حدود origin والملفات والصلاحيات في بيئة تجريبية مع إبقاء العزل مفعّلًا وعدم منح صلاحيات واسعة."
+      ],
+      "limitations": "الإصدار 0.4.0 وقياسات الأداء من إعداد المشروع؛ بناء المصدر ثقيل ولم نشغّل المشروع أو نختبره.",
+      "overview": "Chromium كمكتبة native embeddable: التطبيق يحتفظ بعملية التشغيل وواجهة النوافذ وحلقة الأحداث، ويستدعي محرك الويب عند الحاجة. يوفر المشروع واجهات متعددة، PDFium، وسائط، أتمتة Playwright وواجهة MCP ضمن حدود يحددها المشغّل.",
+      "requirements": "حزمة إصدار مطابقة للنظام؛ Linux x86-64 مع glibc 2.17+ وX11 أو Wayland، أو macOS على Apple Silicon، أو Windows x64 وWindows 10+. ربط Python يتطلب Python 3.8+، وRust يستخدم edition 2021. بناء Chromium من المصدر يحتاج نحو 30GB للشجرة، وتذكر وثائق البناء قرابة 120GB لمساحة الشجرة والبناء، وذاكرة كبيرة؛ بيئة المرجع 24 نواة و94GB RAM ويستغرق البناء الكامل ساعات.",
+      "quickStart": "للتجربة الأولى استخدم حزمة الإصدار الجاهزة المناسبة لنظامك، ثم ثبّت ربط Python عبر pip، واضبط ZEBKIT_DIR على مجلد الحزمة، وشغّل مثال View بسيطًا على صفحة اختبار. لا تبدأ ببناء Chromium من المصدر إلا إذا احتجت تعديل المحرك نفسه.",
+      "improvements": [
+        {
+          "title": "مصفوفة توافق واختبارات إصدار متعددة الأنظمة",
+          "problem": "تعدد الأنظمة والواجهات والاعتماد على Chromium يجعل اكتشاف اختلافات الحزم وواجهات النظام قبل الإصدار صعبًا.",
+          "approach": "إنشاء مصفوفة CI ثابتة تغطي إصدارات Python وRust والأنظمة المدعومة، وتشغّل smoke tests للحزمة الجاهزة دون إعادة بناء Chromium في كل مرة.",
+          "stack": "GitHub Actions / Python / Rust / CTest / JSON test reports",
+          "steps": [
+            "حدد أنظمة التشغيل والإصدارات التي يدعمها المشروع فعليًا.",
+            "أنشئ smoke tests قصيرة للحزمة الجاهزة وواجهات PDF وView.",
+            "احفظ نتائج كل منصة مع إصدار Chromium والحزمة.",
+            "اربط نشر الإصدار بمرور الاختبارات الأساسية."
+          ],
+          "metric": "نسبة منصات الإصدار التي تمر باختبارات smoke مع سجل قابل لإعادة الإنتاج.",
+          "difficulty": "متوسطة إلى مرتفعة — تقدير بحثي.",
+          "risks": "تكلفة runners وتفاوت عتاد الرسوميات قد ينتجان فشلًا متقطعًا؛ افصل اختبارات العتاد عن الاختبارات الوظيفية.",
+          "sources": [
+            {
+              "title": "Zebkit BUILD documentation",
+              "url": "https://github.com/ikey4u/zebkit/blob/main/docs/BUILD.md"
+            },
+            {
+              "title": "Zebkit README",
+              "url": "https://github.com/ikey4u/zebkit/blob/main/README.md"
+            }
+          ]
+        },
+        {
+          "title": "جرد SPDX وSBOM لمكونات Chromium المضمّنة",
+          "problem": "المحرك يجمع مكتبات كثيرة مثل FFmpeg وPDFium وBoringSSL وغيرها، ولكل مكوّن شروط ترخيص وتحديث مختلفة.",
+          "approach": "إصدار SBOM آلي لكل حزمة وربط كل مكتبة بإصدارها وترخيصها ومصدرها، مع تقرير تغييرات بين الإصدارات.",
+          "stack": "SPDX / CycloneDX / Syft / GitHub Actions",
+          "steps": [
+            "استخرج قائمة المكونات والإصدارات من شجرة البناء.",
+            "أنشئ SBOM بصيغتي SPDX أو CycloneDX.",
+            "اربط التراخيص والإشعارات بكل حزمة إصدار.",
+            "أضف فحصًا آليًا للتغييرات والثغرات قبل النشر."
+          ],
+          "metric": "نسبة المكونات التي لها إصدار ومصدر وترخيص موثق في كل إصدار.",
+          "difficulty": "مرتفعة — تقدير بحثي.",
+          "risks": "قد تختلف ملفات الترخيص داخل Chromium والمكونات المجمعة؛ يلزم تدقيق بشري ولا يكفي تصنيف SPDX آلي وحده.",
+          "sources": [
+            {
+              "title": "Zebkit upstream lock",
+              "url": "https://github.com/ikey4u/zebkit/blob/main/upstream.lock"
+            },
+            {
+              "title": "Zebkit license",
+              "url": "https://github.com/ikey4u/zebkit/blob/main/LICENSE"
+            }
+          ]
+        },
+        {
+          "title": "مُهيّئ Python يتحقق من حزمة المحرك تلقائيًا",
+          "problem": "تثبيت ربط Python وحده لا يضمن وجود حزمة المحرك الصحيحة، ويحتاج المستخدم إلى ضبط ZEBKIT_DIR يدويًا.",
+          "approach": "إضافة أداة اختيارية تتحقق من النظام والمعمارية والإصدار، وتنزّل حزمة الإصدار المطابقة بعد التحقق من SHA-256.",
+          "stack": "Python / PyPI / SHA-256 / platform tags",
+          "steps": [
+            "عرّف خريطة إصدارات الحزم حسب النظام والمعمارية.",
+            "أضف أمر doctor لفحص ZEBKIT_DIR والإصدار والملفات المطلوبة.",
+            "تحقق من checksum قبل اعتماد الحزمة.",
+            "وثّق مسارًا يدويًا بديلًا للتثبيت دون اتصال."
+          ],
+          "metric": "نسبة نجاح التثبيت النظيف على المنصات المدعومة دون إعداد يدوي.",
+          "difficulty": "متوسطة — تقدير بحثي.",
+          "risks": "حجم التنزيل وتغيّر روابط الإصدارات ومخاطر سلسلة التوريد؛ يجب التحقق من checksum وعدم تنفيذ ملفات غير موثوقة.",
+          "sources": [
+            {
+              "title": "Zebkit Python binding metadata",
+              "url": "https://github.com/ikey4u/zebkit/blob/main/bindings/python/pyproject.toml"
+            },
+            {
+              "title": "Zebkit releases",
+              "url": "https://github.com/ikey4u/zebkit/releases"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "قارئ أبحاث عربي محلي مع PDF وفهرسة RTL",
+          "problem": "الباحث يحتاج إلى قراءة ملفات PDF كثيرة والبحث داخلها مع دعم العربية والاقتباسات دون إرسال الملفات إلى خدمة سحابية.",
+          "approach": "تطبيق سطح مكتب محلي يستخدم PDFium لاستخراج النص، وفهرس SQLite، وواجهة RTL، مع حفظ موضع الصفحة ومصدر الاقتباس.",
+          "stack": "Python / Zebkit / PDFium / SQLite / Arabic RTL UI",
+          "steps": [
+            "ابنِ نافذة محلية تعرض PDF وتدعم RTL.",
+            "استخرج النص والصفحات والروابط من PDFium.",
+            "أنشئ فهرس SQLite مع معرف الملف ورقم الصفحة.",
+            "أضف بحثًا عربيًا وتصدير اقتباس مع مرجع الصفحة.",
+            "اختبر ملفات عربية ممسوحة وأخرى نصية وسجل حدود OCR."
+          ],
+          "metric": "دقة استرجاع نتائج البحث على مجموعة ملفات عربية مع صحة مرجع الصفحة.",
+          "difficulty": "مرتفعة — تقدير بحثي.",
+          "risks": "تفاوت جودة PDF والخطوط والـOCR قد يسبب أخطاء؛ يجب إظهار النص الأصلي والصفحة وعدم اختلاق الاقتباس.",
+          "sources": [
+            {
+              "title": "Zebkit PDF API overview",
+              "url": "https://github.com/ikey4u/zebkit/blob/main/docs/API.md"
+            },
+            {
+              "title": "Zebkit README",
+              "url": "https://github.com/ikey4u/zebkit/blob/main/README.md"
+            }
+          ]
+        },
+        {
+          "title": "مساحة بحث محلية لوكلاء الذكاء الاصطناعي بصلاحيات محدودة",
+          "problem": "أدوات الوكلاء تحتاج تصفحًا وقراءة مستندات، لكن منحها وصولًا واسعًا للملفات والشبكة يرفع مخاطر تسرب البيانات أو إساءة استخدام محتوى الصفحات.",
+          "approach": "تطبيق محلي يستخدم Zebkit MCP مع قائمة origins محددة، ومجلد قراءة فقط افتراضيًا، وسجل لكل أداة، وموافقة بشرية منفصلة قبل الكتابة.",
+          "stack": "Rust / Zebkit MCP / SQLite / JSON audit log",
+          "steps": [
+            "حدد نطاق المواقع المسموح بها لكل مشروع.",
+            "ابدأ بصلاحيات قراءة محدودة دون كتابة.",
+            "سجل طلبات الأدوات ومصادر الصفحات والملفات.",
+            "أضف موافقة بشرية لأي تغيير دائم أو مشاركة خارجية.",
+            "اختبر رفض الطلبات الخارجة عن الحدود قبل الاستخدام."
+          ],
+          "metric": "نسبة عمليات الوكيل التي تبقى داخل قائمة origins والمجلدات المصرح بها.",
+          "difficulty": "مرتفعة — تقدير بحثي.",
+          "risks": "محتوى الصفحات غير موثوق وقد يحاول التأثير في قرارات الوكيل؛ حدود الأداة لا تمنع كل أخطاء التفسير، ويجب عدم توسيع الصلاحيات افتراضيًا.",
+          "sources": [
+            {
+              "title": "Zebkit MCP documentation",
+              "url": "https://github.com/ikey4u/zebkit/blob/main/docs/MCP.md"
+            },
+            {
+              "title": "Zebkit BUILD documentation",
+              "url": "https://github.com/ikey4u/zebkit/blob/main/docs/BUILD.md"
+            }
+          ]
+        }
+      ],
+      "religious": [],
+      "testStatus": "not_run",
+      "sources": [
+        {
+          "title": "Zebkit README",
+          "url": "https://github.com/ikey4u/zebkit/blob/main/README.md"
+        },
+        {
+          "title": "Zebkit build documentation",
+          "url": "https://github.com/ikey4u/zebkit/blob/main/docs/BUILD.md"
+        },
+        {
+          "title": "Zebkit MCP documentation",
+          "url": "https://github.com/ikey4u/zebkit/blob/main/docs/MCP.md"
+        },
+        {
+          "title": "Zebkit license",
+          "url": "https://github.com/ikey4u/zebkit/blob/main/LICENSE"
+        }
+      ],
+      "reviewedAt": "2026-11-10T02:43:48+03:00",
+      "basis": "readme",
+      "costs": "لا تذكر الوثائق خدمة مُدارة أو رسوم API إلزامية. التشغيل المحلي عبر حزمة إصدار جاهزة هو المسار العملي؛ بناء Chromium من المصدر يحتاج مساحة وذاكرة ووقتًا كبيرًا. لا توجد أسعار استضافة رسمية.",
+      "localVsCloud": "محليًا: استخدم حزمة إصدار جاهزة. سحابيًا: يمكن تشغيلها على VM للاختبارات، لكن لا توجد خدمة مُدارة؛ كلفة العتاد ووقت التشغيل متغيرة.",
+      "alternatives": [
+        {
+          "name": "Electron",
+          "tradeoff": "محرك متصفح مضمّن وحزمة أكبر.",
+          "url": "https://www.electronjs.org/docs/latest/"
+        },
+        {
+          "name": "CEF",
+          "tradeoff": "تضمين Chromium منخفض المستوى مع مسؤولية أكبر عن دورة الحياة.",
+          "url": "https://chromiumembedded.github.io/cef/"
+        },
+        {
+          "name": "WebView2",
+          "tradeoff": "تكامل رسمي لكنه مرتبط بـWindows.",
+          "url": "https://learn.microsoft.com/en-us/microsoft-edge/webview2/"
+        },
+        {
+          "name": "Tauri",
+          "tradeoff": "يعتمد WebView النظام بدل تضمين Chromium.",
+          "url": "https://tauri.app/"
+        }
+      ]
+    },
+    "fb9de46b88c3faa779": {
+      "url": "https://e-means.github.io/",
+      "titleAr": "ورقة e-means تقترح تسريع تجميع k-means بتحديثات المتوسط المتحرك الأسي",
+      "summaryAr": "تقدم ورقة arXiv خوارزمية mini-batch k-means تستخدم تحديثات EMA مع جدول تناقص للخطوة وإعادة تنشيط العناقيد الخاملة. يذكر الملخص أن الطريقة بلغت خسارة Lloyd عند 25 دورة بعد نحو 1.4–2.6 دورة في مجموعات embeddings، مع تسريع GPU معلن 10–45 مرة في تجارب المؤلفين.",
+      "whyItMatters": "قد يفيد تسريع التجميع في فهرسة المتجهات وضغط التمثيلات وتجهيز بيانات البحث، لكن الاختيار يعتمد على حجم البيانات والذاكرة وجودة العناقيد.",
+      "audience": "مهندسو تعلم الآلة وفرق البحث والاسترجاع الدلالي ومطورو أنظمة الفهرسة.",
+      "nextSteps": [
+        "اقرأ الورقة الكاملة وتحقق من شروط المقارنة مع Faiss وFlash-KMeans.",
+        "اختبر الخوارزمية على بياناتك مع تثبيت العتاد والبذرة ومقياس الخسارة.",
+        "قارن زمن التدريب والذاكرة وجودة التعميم، لا عدد الدورات فقط."
+      ],
+      "limitations": "راجعنا الملخص والبيانات الوصفية وبعض وصف المنهج، لا الورقة كاملة ولم نعد تنفيذ التجارب. النتائج من المؤلفين وعلى بيانات وعتاد محددين.",
+      "reviewedAt": "2026-11-10T05:38:00+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — e-means: outperforming k-means",
+          "url": "https://arxiv.org/abs/2611.09501"
+        }
+      ]
+    },
+    "3c86ca6a06f60e03f0": {
+      "url": "https://postalpro.usps.com/zcb",
+      "titleAr": "USPS تطرح خرائط حدود ZIP Code مشتقة من بيانات عناوين التسليم",
+      "summaryAr": "تصف USPS منتج ZIP Code Boundaries بأنه خريطة وطنية مبنية على بيانات عناوين ومواقع التسليم لديها، وتتغير حدوده مع تغير توزيع مواقع التسليم. تعرض الصفحة استخدامات في الخرائط والتأمين والعقارات واللوجستيات، مع أربعة تحديثات ربع سنوية لكل مستوى ترخيص.",
+      "whyItMatters": "قد تساعد البيانات في التحليل المكاني والتوجيه داخل الولايات المتحدة، لكنها منتج مرخّص وليست بديلًا تلقائيًا عن ZCTA الإحصائية.",
+      "audience": "فرق GIS واللوجستيات والتأمين والعقارات وتحليل الأسواق والبيانات الجغرافية.",
+      "nextSteps": [
+        "اقرأ الدليل الفني وملف GeoJSON التجريبي.",
+        "راجع اتفاقية الترخيص وحدود التوزيع قبل الاستخدام التجاري.",
+        "قارن عينة USPS مع ZCTA من Census."
+      ],
+      "limitations": "المنتج خاص بالولايات المتحدة ويخضع لفئات ترخيص وتوزيع مختلفة. صفحة التعريف لا تكفي لتحديد السعر النهائي أو جميع القيود التعاقدية؛ لم نتحقق من الأسعار في نموذج الطلب.",
+      "reviewedAt": "2026-11-10T05:38:00+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "USPS PostalPro — USPS ZIP Code Boundaries",
+          "url": "https://postalpro.usps.com/zcb"
+        }
+      ]
+    },
+    "1addf27c71831a1839": {
+      "url": "https://yappologistic.github.io/CUI/",
+      "titleAr": "CUI يقدم مكتبة واجهات C99 فورية متعددة الأنظمة دون اعتماديات خارجية",
+      "summaryAr": "CUI مكتبة immediate-mode مكتوبة بـC99 ترسم مكوناتها عبر OpenGL أو renderer برمجي، وتعمل على Windows وmacOS وLinux أو داخل المتصفح عبر WebAssembly. يذكر README نحو 190 مكونًا وإمكانية دمجها عبر CMake أو ملفي cui.h وcui.c.",
+      "whyItMatters": "تتيح بناء أدوات سطح مكتب صغيرة بلغة C/C++ دون تضمين متصفح أو إطار ثقيل، لكنها ليست بديلًا ناضجًا تلقائيًا عن Qt أو GTK عندما تكون الإتاحة أولوية.",
+      "audience": "مطورو C وC++ ومطورو أدوات سطح المكتب والمحررات ولوحات البيانات وواجهات الألعاب.",
+      "nextSteps": [
+        "ابدأ بمثال hello عبر CMake 3.14+ ومترجم C99.",
+        "شغّل معرض المكونات واختبر الإدخال ولوحة المفاتيح وRTL.",
+        "راجع قيود قارئات الشاشة وطرق الإدخال قبل الاستخدام الإنتاجي."
+      ],
+      "limitations": "README يوضح أن دعم قارئات الشاشة وطرق الإدخال ليس مكتملًا، وأن Qt وGTK وwxWidgets أكثر نضجًا. لم نشغّل المكتبة أو نختبرها.",
+      "overview": "مكتبة immediate-mode لـC99 ترسم عناصر الواجهة بنفسها. تعمل في نافذة أصلية أو عبر WebAssembly، وتقدم مكونات للنصوص والنماذج والجداول والمخططات ومحرر الشيفرة.",
+      "requirements": "مترجم C99 وCMake 3.14 أو أحدث. على Linux يلزم X11 development headers؛ على Windows Visual Studio 2019+ أو MinGW-w64؛ وعلى macOS أدوات Xcode command-line وCMake.",
+      "quickStart": "نفّذ git clone https://github.com/yappologistic/CUI.git ثم cd CUI، وبعدها cmake -S . -B build -DCMAKE_BUILD_TYPE=Release ثم cmake --build build وشغّل build/examples/hello.",
+      "costs": "MIT ومفتوحة المصدر دون رسوم خدمة أو API إلزامية. التكلفة الأساسية وقت البناء والتطوير؛ يمكن نشر نسخة WebAssembly كملفات ثابتة، ولا توجد خدمة خلفية مُدارة.",
+      "localVsCloud": "محليًا: مكتبة C داخل تطبيق أصلي ولا تحتاج اتصالًا بعد البناء. سحابيًا: يمكن نشر عرض WebAssembly على استضافة ثابتة؛ لا تقدم المكتبة خدمة سحابية.",
+      "alternatives": [
+        {
+          "name": "Qt",
+          "tradeoff": "أكثر نضجًا في الوصول وطرق الإدخال مقابل حجم وتعقيد أكبر.",
+          "url": "https://www.qt.io/"
+        },
+        {
+          "name": "GTK",
+          "tradeoff": "مجموعة واجهات أصلية ناضجة بنموذج widgets.",
+          "url": "https://www.gtk.org/"
+        },
+        {
+          "name": "Dear ImGui",
+          "tradeoff": "مناسبة لأدوات المطور داخل renderer موجود.",
+          "url": "https://github.com/ocornut/imgui"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "طبقة إتاحة لقارئات الشاشة",
+          "problem": "الرسم المخصص لا يوفر تلقائيًا شجرة دلالية لتقنيات الوصول.",
+          "approach": "إضافة وصف دلالي للمكونات وربطه بواجهات الإتاحة في الأنظمة المدعومة.",
+          "stack": "C99 / Windows UI Automation / macOS Accessibility API / AT-SPI",
+          "steps": [
+            "حدد role وlabel وvalue للمكونات.",
+            "أضف ربطًا أوليًا لنظام واحد.",
+            "اختبر التركيز وقارئ الشاشة.",
+            "وسّع الربط ووثّق التغطية."
+          ],
+          "metric": "نسبة المكونات الأساسية المفهومة عبر قارئ شاشة.",
+          "difficulty": "مرتفعة — تقدير.",
+          "risks": "اختلاف APIs وتعقيد مزامنة حالة الواجهة.",
+          "sources": [
+            {
+              "title": "CUI README",
+              "url": "https://github.com/yappologistic/CUI/blob/master/README.md"
+            },
+            {
+              "title": "CUI Getting Started",
+              "url": "https://github.com/yappologistic/CUI/blob/master/docs/getting-started.md"
+            }
+          ]
+        },
+        {
+          "title": "اختبارات بصرية وسلوكية متعددة الأنظمة",
+          "problem": "قد تختلف الرسوم والخطوط والتركيز بين backends والأنظمة.",
+          "approach": "إنشاء اختبارات صور ثابتة وأحداث إدخال أساسية على منصات CI.",
+          "stack": "C / CMake / screenshot tests / GitHub Actions",
+          "steps": [
+            "اختر مكونات تمثل حالات الواجهة.",
+            "ثبّت الخطوط وإعدادات العرض.",
+            "التقط صورًا لكل backend.",
+            "أضف اختبارات لوحة المفاتيح والتركيز.",
+            "انشر تقرير فروق بصري."
+          ],
+          "metric": "عدد الانحرافات المكتشفة قبل الإصدار.",
+          "difficulty": "متوسطة إلى مرتفعة — تقدير.",
+          "risks": "اختلاف GPU والخطوط قد ينتج فروقًا غير مؤثرة.",
+          "sources": [
+            {
+              "title": "CUI components",
+              "url": "https://github.com/yappologistic/CUI/blob/master/docs/components.md"
+            },
+            {
+              "title": "CUI README",
+              "url": "https://github.com/yappologistic/CUI/blob/master/README.md"
+            }
+          ]
+        },
+        {
+          "title": "دعم IME وRTL",
+          "problem": "الواجهات متعددة اللغات تحتاج إدخالًا مركبًا وترتيب نصوص RTL موثوقًا.",
+          "approach": "توسيع طبقة إدخال النص وربط composition events واختبارات عربية ويابانية.",
+          "stack": "C99 / platform input APIs / Unicode",
+          "steps": [
+            "وثّق سلوك النص الحالي.",
+            "أضف أحداث composition.",
+            "اختبر العربية وRTL واليابانية.",
+            "تحقق من المؤشر والنسخ واللصق.",
+            "وثّق الأنظمة المدعومة."
+          ],
+          "metric": "نسبة سيناريوهات IME وRTL الناجحة.",
+          "difficulty": "مرتفعة — تقدير.",
+          "risks": "تعقيد Unicode وتفاوت APIs قد يسبب فقد نص.",
+          "sources": [
+            {
+              "title": "CUI README",
+              "url": "https://github.com/yappologistic/CUI/blob/master/README.md"
+            },
+            {
+              "title": "CUI Getting Started",
+              "url": "https://github.com/yappologistic/CUI/blob/master/docs/getting-started.md"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "لوحة مراقبة محلية خفيفة",
+          "problem": "أدوات النظام تحتاج واجهة صغيرة دون إطار متصفح.",
+          "approach": "تطبيق C99 يعرض مؤشرات النظام في رسوم وجداول محلية.",
+          "stack": "C99 / CUI / SQLite / OS APIs",
+          "steps": [
+            "حدد مؤشرات قراءة فقط.",
+            "أنشئ بطاقات وجداول.",
+            "أضف رسمًا زمنيًا.",
+            "احفظ الإعدادات محليًا.",
+            "اختبر استهلاك الذاكرة."
+          ],
+          "metric": "الذاكرة وزمن تحديث اللوحة.",
+          "difficulty": "متوسطة — تقدير.",
+          "risks": "اختلاف APIs بين الأنظمة؛ ابدأ بنظام واحد.",
+          "sources": [
+            {
+              "title": "CUI README",
+              "url": "https://github.com/yappologistic/CUI/blob/master/README.md"
+            },
+            {
+              "title": "CUI components",
+              "url": "https://github.com/yappologistic/CUI/blob/master/docs/components.md"
+            }
+          ]
+        },
+        {
+          "title": "محرر ملاحظات محلي متعدد المنصات",
+          "problem": "الحاجة إلى محرر يعمل دون حساب أو خدمة سحابية.",
+          "approach": "محرر Markdown محلي مع قائمة ملفات ومعاينة وحفظ واضح.",
+          "stack": "C99 / CUI / filesystem / Markdown parser",
+          "steps": [
+            "أنشئ نافذة ومحرر نص.",
+            "أضف فتح وحفظ الملفات.",
+            "أضف معاينة Markdown.",
+            "أضف بحثًا داخل الملاحظات.",
+            "اختبر العربية وRTL واستعادة الملفات."
+          ],
+          "metric": "زمن الفتح وسلامة الحفظ واستعادة الجلسة.",
+          "difficulty": "متوسطة — تقدير.",
+          "risks": "إدارة الملفات والنسخ الاحتياطي تحتاج تصميمًا منفصلًا.",
+          "sources": [
+            {
+              "title": "CUI README",
+              "url": "https://github.com/yappologistic/CUI/blob/master/README.md"
+            },
+            {
+              "title": "CUI Getting Started",
+              "url": "https://github.com/yappologistic/CUI/blob/master/docs/getting-started.md"
+            }
+          ]
+        }
+      ],
+      "religious": [],
+      "testStatus": "not_run",
+      "reviewedAt": "2026-11-10T05:38:00+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "CUI README",
+          "url": "https://github.com/yappologistic/CUI/blob/master/README.md"
+        },
+        {
+          "title": "CUI Getting Started",
+          "url": "https://github.com/yappologistic/CUI/blob/master/docs/getting-started.md"
+        },
+        {
+          "title": "CUI LICENSE",
+          "url": "https://github.com/yappologistic/CUI/blob/master/LICENSE"
+        }
+      ]
     }
   }
 }
