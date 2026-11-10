@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "publicationStatus": "research_only_not_published",
+  "archiveStateCheckedAt": "2026-11-10T05:38:51+03:00",
+  "lastNumericMetricsMeasuredAt": "2026-11-09T23:42:00+03:00",
+  "source": "GitHub get_repo metadata; connector did not expose fresh stars/forks/open_issues_count",
+  "notes": [
+    "All eight prior projects returned archived=false and default_branch=main.",
+    "Numeric counts below are the previous snapshot, not refreshed in this run.",
+    "open_issues_count may include PRs.",
+    "No project was executed or tested."
+  ],
+  "projects": [
+    {
+      "repository": "patchy631/ai-engineering-hub",
+      "stars": 41615,
+      "forks": 6653,
+      "openIssuesCount": 137,
+      "archived": false,
+      "defaultBranch": "main",
+      "license": "MIT"
+    },
+    {
+      "repository": "googleapis/python-genai",
+      "stars": 4057,
+      "forks": 1061,
+      "openIssuesCount": 388,
+      "archived": false,
+      "defaultBranch": "main",
+      "license": "Apache-2.0"
+    },
+    {
+      "repository": "Millillion/lasm",
+      "stars": 104,
+      "forks": 7,
+      "openIssuesCount": 9,
+      "archived": false,
+      "defaultBranch": "main",
+      "license": "MIT"
+    },
+    {
+      "repository": "microsoft/markitdown",
+      "stars": 194600,
+      "forks": 14665,
+      "openIssuesCount": 812,
+      "archived": false,
+      "defaultBranch": "main",
+      "license": "MIT"
+    },
+    {
+      "repository": "yc-software/minecraft-agent-harness",
+      "stars": 197,
+      "forks": 23,
+      "openIssuesCount": 1,
+      "archived": false,
+      "defaultBranch": "main",
+      "license": "MIT"
+    },
+    {
+      "repository": "NVIDIA/OpenShell",
+      "stars": 21321,
+      "forks": 2086,
+      "openIssuesCount": 660,
+      "archived": false,
+      "defaultBranch": "main",
+      "license": "Apache-2.0"
+    },
+    {
+      "repository": "pydantic/pydantic-ai",
+      "stars": 21105,
+      "forks": 3138,
+      "openIssuesCount": 1880,
+      "archived": false,
+      "defaultBranch": "main",
+      "license": "MIT"
+    },
+    {
+      "repository": "astral-sh/uv",
+      "stars": 91815,
+      "forks": 3783,
+      "openIssuesCount": 3076,
+      "archived": false,
+      "defaultBranch": "main",
+      "license": "Apache-2.0"
+    }
+  ]
+}
