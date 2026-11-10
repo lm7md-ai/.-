@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-10T23:38:46+03:00",
+  "main": {
+    "sha": "5f9e9b980f51c2e3372e75dc6aed5b2884b55234",
+    "feedBlob": "bc7a867fdb558ec4f13ea1acbdd6c41668dcba9d",
+    "editorialBlob": "430ec5a47ff85d4eebd9fba101d40664fe97e769",
+    "statusBlob": "f6b823c1aa59356b3f929c2fe7463d941ae9f005"
+  },
+  "incoming": {
+    "files": 102,
+    "occurrences": 1054,
+    "uniqueIdUrlPairs": 932,
+    "duplicateOccurrences": 122,
+    "importedExactPairs": 870,
+    "seenOnlyOutsideFeed": 62,
+    "activeExactNotImported": 0,
+    "sameIdDifferentUrl": 0,
+    "unseenOrphans": 0,
+    "confirmedExpired": 0,
+    "jsonParseErrors": 0,
+    "structuralCheckThisRun": "JSON parsing and ID/URL reconciliation performed for all 102 files; full field-level equivalent validation was not repeated for every historical file in this run.",
+    "officialCliExecuted": false
+  },
+  "scanChunks": [
+    {
+      "files": 12,
+      "occurrences": 102,
+      "uniquePairsWithinChunk": 102,
+      "duplicateOccurrencesWithinChunk": 0,
+      "importedExactWithinChunk": 99,
+      "seenOnlyWithinChunk": 3
+    },
+    {
+      "files": 15,
+      "occurrences": 104,
+      "uniquePairsWithinChunk": 104,
+      "duplicateOccurrencesWithinChunk": 0,
+      "importedExactWithinChunk": 104,
+      "seenOnlyWithinChunk": 0
+    },
+    {
+      "files": 15,
+      "occurrences": 204,
+      "uniquePairsWithinChunk": 204,
+      "duplicateOccurrencesWithinChunk": 0,
+      "importedExactWithinChunk": 204,
+      "seenOnlyWithinChunk": 0
+    },
+    {
+      "files": 15,
+      "occurrences": 139,
+      "uniquePairsWithinChunk": 136,
+      "duplicateOccurrencesWithinChunk": 3,
+      "importedExactWithinChunk": 136,
+      "seenOnlyWithinChunk": 0
+    },
+    {
+      "files": 15,
+      "occurrences": 141,
+      "uniquePairsWithinChunk": 140,
+      "duplicateOccurrencesWithinChunk": 1,
+      "importedExactWithinChunk": 108,
+      "seenOnlyWithinChunk": 32
+    },
+    {
+      "files": 15,
+      "occurrences": 228,
+      "uniquePairsWithinChunk": 210,
+      "duplicateOccurrencesWithinChunk": 18,
+      "importedExactWithinChunk": 209,
+      "seenOnlyWithinChunk": 1
+    },
+    {
+      "files": 15,
+      "occurrences": 136,
+      "uniquePairsWithinChunk": 98,
+      "duplicateOccurrencesWithinChunk": 38,
+      "importedExactWithinChunk": 72,
+      "seenOnlyWithinChunk": 26
+    }
+  ],
+  "specialRecords": {
+    "NVIDIA OpenShell": {
+      "id": "940ec4695c1e241c2f",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "researchDossier": true,
+      "decision": "retain research-only; no public card without Feed identity"
+    },
+    "Canva Craft": {
+      "id": "317abcdd1b20728a7e",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "researchDossier": false,
+      "decision": "seen-only; no alternate identity"
+    },
+    "1Password agent sign-in": {
+      "id": "662e68277c6361dd4b",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "researchDossier": false,
+      "decision": "seen-only; no alternate identity"
+    }
+  },
+  "unresolved": {
+    "identityCollision": {
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "historicalEditorialId": "7a99eca9b2ce14d9f5",
+      "activeFeedAndEditorialId": "e0cbbf211a55e79f34",
+      "decision": "preserve both IDs; no alias, remap, or title-derived identity"
+    },
+    "sourceCorrections": [
+      {
+        "id": "d18ddd9c12e46dd96b",
+        "feed": false,
+        "editorial": false,
+        "seen": true,
+        "issue": "source points to a closed 2022 issue; needs current primary evidence"
+      },
+      {
+        "id": "e3e3a03bfc5be7aa43",
+        "feed": true,
+        "editorial": false,
+        "seen": true,
+        "issue": "active Feed item uses Google News intermediary; require original publisher URL and date before enrichment"
+      }
+    ]
+  },
+  "notes": "The 62 seen-only pairs are outside the current Feed; absence from Feed alone is not proof of expiration. No confirmed expired records were found. Counts are ID/URL pairs, not title-based identities."
+}
