@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-11T09:08:02+03:00",
+  "status": "hold_not_in_current_feed",
+  "reason": "The exact id/url pair is absent from the current published feed. Do not create an alternate identity from the title. The source is an analytical essay rather than a dated news event; retain it as a research note until an exact feed identity exists.",
+  "item": {
+    "id": "f4116becfee3f1d34e",
+    "url": "https://alexwang.ai/posts/reasoning-as-pathfinding/",
+    "titleAr": "مقال يفسر الاستدلال بوصفه بحثًا عن مسارات ناجحة لا مجرد إطالة سلسلة التفكير",
+    "summaryAr": "يعرض Alex Wang تصورًا للاستدلال باعتباره بحثًا احتماليًا عن مسارات في فضاء الحلول، حيث تساعد عينات متعددة وآلية تقييم موثوقة على زيادة احتمال الوصول إلى إجابة صحيحة. يشرح المقال لماذا لا يضمن طول سلسلة التفكير تحسن الدقة، وكيف قد تشجع مقاييس التقييم الضعيفة اختصارات تبدو مقنعة لكنها لا تحقق الهدف.",
+    "whyItMatters": "يوفر إطارًا لفهم تصميم نماذج الاستدلال ووكلاء البرمجة: جودة المقيم، وتنوع المسارات، والتحقق من النتيجة قد تكون أهم من جعل النموذج يكتب خطوات أطول.",
+    "audience": "طلاب الذكاء الاصطناعي، باحثو تعلم الآلة، ومطورو أنظمة الوكلاء والتقييم.",
+    "nextSteps": [
+      "مقارنة الفكرة مع best-of-k والتعلم بالتعزيز ذي المكافآت القابلة للتحقق.",
+      "تصميم تقييمات تقيس صحة النتيجة لا طول الشرح.",
+      "متابعة حدود المقيم ومخاطر تحسين النموذج لمقياس بديل عن الهدف الحقيقي."
+    ],
+    "limitations": "مقال تحليلي يشرح نموذجًا مفاهيميًا وليس دراسة تجريبية شاملة؛ يفترض وجود مقيم يستطيع التمييز بين الحل الصحيح والخاطئ، وهو افتراض لا يتحقق دائمًا في المهام المفتوحة.",
+    "reviewedAt": "2026-11-11T08:55:29+03:00",
+    "basis": "article",
+    "sources": [
+      {
+        "title": "Alex Wang — What objective is reasoning solving?",
+        "url": "https://alexwang.ai/posts/reasoning-as-pathfinding/"
+      }
+    ]
+  }
+}
