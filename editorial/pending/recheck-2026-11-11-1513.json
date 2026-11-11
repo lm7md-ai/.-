@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-11T15:13:08+03:00",
+  "source": {
+    "repository": "lm7md-ai/.-",
+    "mainSha": "a376b36c5d29a973eebb19169cc0dc3924d9154c",
+    "prNumber": 98,
+    "prHeadBeforeThisReport": "993c433885a68c0c9815b4ffa39b0a7d2d92a54d",
+    "identityRule": "Compare literal id and URL only. Never derive identity from title."
+  },
+  "main": {
+    "feed": {
+      "items": 800,
+      "news": 700,
+      "projects": 100,
+      "generatedAt": "2026-11-11T06:10:48+00:00"
+    },
+    "editorialEntries": 917,
+    "seenIds": 4331,
+    "status": {
+      "state": "ok",
+      "sources": 26,
+      "successfulSources": 26,
+      "lastSuccessfulAt": "2026-11-11T06:10:48+00:00"
+    },
+    "pr1": {
+      "state": "closed",
+      "merged": true,
+      "mergedAt": "2026-10-24T10:21:47Z"
+    },
+    "pr2": {
+      "state": "closed",
+      "merged": true,
+      "mergedAt": "2026-10-24T10:07:54Z"
+    }
+  },
+  "mainIncoming": {
+    "files": 102,
+    "appearances": 1054,
+    "perFileStructuralValidation": {
+      "filesParsed": 102,
+      "filesValid": 102,
+      "structuralErrors": 0,
+      "officialCliExecuted": false
+    },
+    "literalIdUrlComparedAgainstCurrentFeedAndEditorial": true,
+    "uniqueIdUrlPairs": 932,
+    "duplicateAppearances": 122,
+    "importedExactUniquePairs": 870,
+    "seenOnlyOutsideFeedAndEditorialUniquePairs": 62,
+    "activeUnimportedUniquePairs": 0,
+    "idUrlMismatches": 0,
+    "sameUrlDifferentIdConflicts": 0,
+    "orphanUniquePairs": 0,
+    "confirmedExpired": 0,
+    "aggregationNote": "Per-record structural and literal identity comparison was repeated for all 102 current-main incoming blobs in this run. Unique-pair and cross-file duplicate totals are carried from the prior complete reconciliation of the same main snapshot; no title-derived identity was used."
+  },
+  "prIncoming": {
+    "files": 5,
+    "appearances": 37,
+    "uniqueIdUrlPairs": 25,
+    "duplicateAppearances": 12,
+    "structuralErrors": 0,
+    "activeExactUnimported": 13,
+    "activeNewNews": 12,
+    "activeNewProjects": 1,
+    "alreadyImportedActive": 1,
+    "historicalNotInCurrentFeed": 9,
+    "seenOnlyNotInCurrentFeed": 2,
+    "idUrlMismatches": 0,
+    "orphanUniquePairs": 0,
+    "activeNewIds": [
+      "caa9073cefb43725f1",
+      "a3bc8ca770f44f2d28",
+      "0eeaaf4c87a4398c95",
+      "126b111b5d436487e5",
+      "7fc88fbdaa8e97213d",
+      "0e9fb0eb84f13acffd",
+      "c7d3010a8bcc401c0c",
+      "5553fe020c93d3c2ae",
+      "1d8889c9661cfe547b",
+      "d62e152dace4589504",
+      "ae543fdc68f7cb2628",
+      "f0fc30384fec2ecc4d",
+      "1b0c05cd97a311af5c"
+    ],
+    "duplicateConflict": {
+      "id": "5ef93d9981a0db1c3c",
+      "url": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
+      "files": [
+        "nabdh-editorial-2026-11-10-0243.json",
+        "nabdh-editorial-2026-11-10-2039-reconciled.json"
+      ],
+      "sameIdAndUrl": true,
+      "conflictingFields": [
+        "basis",
+        "limitations",
+        "reviewedAt"
+      ],
+      "action": "No replacement by title; preserve the current Editorial version and keep the duplicate conflict documented."
+    }
+  },
+  "prEditorial": {
+    "mainEntries": 917,
+    "prEntries": 939,
+    "newIds": 22,
+    "changedExistingIds": [
+      "7c94eb734f17ebfcce"
+    ],
+    "removedOldIds": 0,
+    "removedOldFields": 0,
+    "activeExactEntries": 217,
+    "activeNews": 117,
+    "activeProjects": 100,
+    "activeNewAdditions": 13,
+    "activeNewNews": 12,
+    "activeNewProjects": 1,
+    "note": "The existing Open WebUI record was refreshed; all 917 main IDs and their existing fields remain present."
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inPrEditorial": false,
+      "inSeen": true,
+      "status": "seen-only",
+      "officialVersion": "v0.1.8",
+      "note": "Official docs Latest and GitHub Releases both show v0.1.8; previous v0.1.7/v0.1.8 discrepancy is resolved."
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inPrEditorial": false,
+      "inSeen": true,
+      "status": "seen-only",
+      "note": "Official Canva announcement confirms 2K, more than 30 aspect ratios and Public API; DesignArena rankings remain Canva's own reported evaluation."
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inPrEditorial": false,
+      "inSeen": true,
+      "status": "seen-only",
+      "note": "Official support documentation confirms opt-in approval, personal/family accounts, app v8.12.42+, no passkeys/shared vaults, and approvals up to 30 days."
+    }
+  ],
+  "news": {
+    "activeNewsInPr": 12,
+    "priorActiveNewsPreserved": 9,
+    "latestBatchNewNews": 3,
+    "latestBatchIds": [
+      "ae543fdc68f7cb2628",
+      "f0fc30384fec2ecc4d",
+      "1b0c05cd97a311af5c"
+    ],
+    "sourceReviewNote": "Primary-source checks refreshed for OpenAI Enterprise/AWS, Anthropic Fable/Mythos and roadshow, Adobe Creative Cloud, Notion/Fireworks incident, DeepMind AlphaProof Code, Ring Robotics, Git security, Oura/Counsel, New York S8828, and the official SPA HUMAIN financing report.",
+    "resolvedHumainSource": {
+      "id": "d62e152dace4589504",
+      "source": "https://spa.gov.sa/N2721828",
+      "basis": "article",
+      "verifiedClaims": [
+        "up to SAR 2.5B total",
+        "up to SAR 1.1B GPU facility for about 25MW IT load",
+        "up to SAR 1.4B power infrastructure facility",
+        "up to 1GW is future design capacity, not current operating capacity"
+      ],
+      "note": "The SPA page itself returned no readable lines on direct open, but the official search-indexed article returned its full Arabic text; the existing summary and limitations match that text."
+    }
+  },
+  "projects": {
+    "researchLibraryTotal": 68,
+    "nonArchived": 66,
+    "archived": 2,
+    "currentFeedProjects": 100,
+    "currentFeedProjectsWithEditorial": 100,
+    "activeProjectIdeaCounts": {
+      "improvements": 252,
+      "spinoffs": 237,
+      "religious": 29,
+      "total": 518,
+      "incomplete": 0
+    },
+    "previousEightRefreshed": true,
+    "metricsMeasuredAt": "2026-11-11T15:13:08+03:00",
+    "noNewProjectAddedReason": "The current 100 Feed projects are covered in Editorial, DevDocs is the single active new project in PR #98, and the 68-project research library already exceeds the requested historical-library target. No filler project was added.",
+    "testStatus": "not_run"
+  },
+  "validation": {
+    "officialCiRun": 42991316916,
+    "ciConclusion": "success",
+    "unitTests": 30,
+    "unitTestResult": "OK",
+    "officialEditorialValidation": "Validated 939 editorial entries",
+    "javascriptSyntaxChecks": "success",
+    "localCloneAttempt": "failed: temporary DNS resolution failure for github.com",
+    "localCommandsNotExecuted": [
+      "python -m unittest discover -s tests -v",
+      "python scripts/editorial.py validate <each incoming file>",
+      "python scripts/editorial.py import <approved active batch>"
+    ],
+    "equivalentStructuralValidation": "All 102 main incoming files and all 5 PR incoming files parsed and passed the equivalent structural checks; the PR's final editorial.json was validated by the official CI command."
+  },
+  "deployment": {
+    "runId": 42970586945,
+    "conclusion": "success",
+    "artifactId": 13833202134,
+    "artifactCreatedAt": "2026-11-11T06:11:09Z",
+    "artifactFiles": 13,
+    "deployedEditorialEntries": 917,
+    "deployedFeedItems": 800,
+    "deployedSeenIds": 4331,
+    "deployedStatus": "ok",
+    "artifactGitBlobMatchesMain": {
+      "editorial": true,
+      "feed": true,
+      "seen": true,
+      "status": true
+    },
+    "directPagesHttpCheck": "Blocked by DisabledError; the deployment artifact was downloaded and its four data-file Git blob SHAs matched current main.",
+    "newPrEntriesPublished": false
+  },
+  "mergeDecision": {
+    "prOpen": true,
+    "mergeable": true,
+    "aheadBy": 45,
+    "behindBy": 2,
+    "changedFilesBeforeThisReport": 45,
+    "safeToMergeUnderCurrentConstraints": false,
+    "reason": "The only existing deploy workflow runs on push to main and always executes scripts/update_feed.py, then stages and may commit site/data/feed.json, seen.json and status.json. There is no deploy-only path. Merging would cause protected Feed/Seen data to be rewritten; therefore keep PR open until a permitted deployment path exists. No workflow or settings were modified."
+  }
+}
