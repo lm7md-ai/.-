@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "measuredAt": "2026-11-11T18:36:12+03:00",
+  "source": "GitHub REST repository metadata for the eight previously prioritized projects; point-in-time counters, not quality scores.",
+  "metricNotes": "openIssuesCount is GitHub open_issues_count (issues plus pull requests). pushedAt is used for code activity; updatedAt is metadata activity and is not treated as a commit. No project was executed or tested in this metrics refresh.",
+  "projects": [
+    {
+      "priority": 1,
+      "name": "AI Engineering Hub",
+      "repository": "patchy631/ai-engineering-hub",
+      "metrics": {
+        "stars": 41759,
+        "forks": 6672,
+        "openIssuesCount": 137,
+        "archived": false,
+        "disabled": false,
+        "licenseSpdx": "MIT",
+        "pushedAt": "2026-11-01T04:39:16Z",
+        "updatedAt": "2026-11-11T15:06:29Z",
+        "defaultBranch": "main",
+        "language": "Jupyter Notebook",
+        "measuredAt": "2026-11-11T18:36:12+03:00",
+        "sourceApiUrl": "https://api.github.com/repos/patchy631/ai-engineering-hub"
+      }
+    },
+    {
+      "priority": 2,
+      "name": "Python GenAI SDK",
+      "repository": "googleapis/python-genai",
+      "metrics": {
+        "stars": 4061,
+        "forks": 1063,
+        "openIssuesCount": 407,
+        "archived": false,
+        "disabled": false,
+        "licenseSpdx": "Apache-2.0",
+        "pushedAt": "2026-11-11T15:08:50Z",
+        "updatedAt": "2026-11-11T15:09:45Z",
+        "defaultBranch": "main",
+        "language": "Python",
+        "measuredAt": "2026-11-11T18:36:12+03:00",
+        "sourceApiUrl": "https://api.github.com/repos/googleapis/python-genai"
+      }
+    },
+    {
+      "priority": 3,
+      "name": "Lasm",
+      "repository": "Millillion/lasm",
+      "metrics": {
+        "stars": 105,
+        "forks": 7,
+        "openIssuesCount": 21,
+        "archived": false,
+        "disabled": false,
+        "licenseSpdx": "MIT",
+        "pushedAt": "2026-11-11T15:38:57Z",
+        "updatedAt": "2026-11-11T14:20:13Z",
+        "defaultBranch": "main",
+        "language": "C",
+        "measuredAt": "2026-11-11T18:36:12+03:00",
+        "sourceApiUrl": "https://api.github.com/repos/Millillion/lasm"
+      }
+    },
+    {
+      "priority": 4,
+      "name": "MarkItDown",
+      "repository": "microsoft/markitdown",
+      "metrics": {
+        "stars": 194918,
+        "forks": 14701,
+        "openIssuesCount": 806,
+        "archived": false,
+        "disabled": false,
+        "licenseSpdx": "MIT",
+        "pushedAt": "2026-11-07T00:14:01Z",
+        "updatedAt": "2026-11-11T15:41:15Z",
+        "defaultBranch": "main",
+        "language": "Python",
+        "measuredAt": "2026-11-11T18:36:12+03:00",
+        "sourceApiUrl": "https://api.github.com/repos/microsoft/markitdown"
+      }
+    },
+    {
+      "priority": 5,
+      "name": "Minecraft Agent Harness",
+      "repository": "yc-software/minecraft-agent-harness",
+      "metrics": {
+        "stars": 202,
+        "forks": 28,
+        "openIssuesCount": 1,
+        "archived": false,
+        "disabled": false,
+        "licenseSpdx": "MIT",
+        "pushedAt": "2026-10-29T20:30:45Z",
+        "updatedAt": "2026-11-11T10:31:47Z",
+        "defaultBranch": "main",
+        "language": "JavaScript",
+        "measuredAt": "2026-11-11T18:36:12+03:00",
+        "sourceApiUrl": "https://api.github.com/repos/yc-software/minecraft-agent-harness"
+      }
+    },
+    {
+      "priority": 6,
+      "name": "NVIDIA OpenShell",
+      "repository": "NVIDIA/OpenShell",
+      "metrics": {
+        "stars": 21439,
+        "forks": 2092,
+        "openIssuesCount": 642,
+        "archived": false,
+        "disabled": false,
+        "licenseSpdx": "Apache-2.0",
+        "pushedAt": "2026-11-11T15:43:43Z",
+        "updatedAt": "2026-11-11T15:41:03Z",
+        "defaultBranch": "main",
+        "language": "Rust",
+        "measuredAt": "2026-11-11T18:36:12+03:00",
+        "sourceApiUrl": "https://api.github.com/repos/NVIDIA/OpenShell"
+      }
+    },
+    {
+      "priority": 7,
+      "name": "Pydantic AI",
+      "repository": "pydantic/pydantic-ai",
+      "metrics": {
+        "stars": 21138,
+        "forks": 3147,
+        "openIssuesCount": 1977,
+        "archived": false,
+        "disabled": false,
+        "licenseSpdx": "MIT",
+        "pushedAt": "2026-11-11T15:37:10Z",
+        "updatedAt": "2026-11-11T15:03:22Z",
+        "defaultBranch": "main",
+        "language": "Python",
+        "measuredAt": "2026-11-11T18:36:12+03:00",
+        "sourceApiUrl": "https://api.github.com/repos/pydantic/pydantic-ai"
+      }
+    },
+    {
+      "priority": 8,
+      "name": "uv",
+      "repository": "astral-sh/uv",
+      "metrics": {
+        "stars": 91878,
+        "forks": 3796,
+        "openIssuesCount": 3081,
+        "archived": false,
+        "disabled": false,
+        "licenseSpdx": "Apache-2.0",
+        "pushedAt": "2026-11-11T14:57:55Z",
+        "updatedAt": "2026-11-11T15:26:14Z",
+        "defaultBranch": "main",
+        "language": "Rust",
+        "measuredAt": "2026-11-11T18:36:12+03:00",
+        "sourceApiUrl": "https://api.github.com/repos/astral-sh/uv"
+      }
+    }
+  ]
+}

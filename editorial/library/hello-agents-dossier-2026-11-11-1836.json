@@ -1,0 +1,252 @@
+{
+  "version": 1,
+  "kind": "project_dossier",
+  "publicationStatus": "active_feed_editorial",
+  "reviewedAt": "2026-11-11T18:36:12+03:00",
+  "projectId": "ee7e0e584b2626a327",
+  "url": "https://github.com/datawhalechina/hello-agents",
+  "titleAr": "Hello-Agents: دليل عملي لبناء وكلاء الذكاء الاصطناعي من الصفر",
+  "summaryAr": "مشروع تعليمي من مجتمع Datawhale يقدم كتابًا مجانيًا ومنظمًا لبناء وكلاء الذكاء الاصطناعي من المبادئ إلى التطبيق. يغطي الأساسيات، أنماط ReAct وPlan-and-Solve وReflection، الأطر، الذاكرة وRAG، هندسة السياق، بروتوكولات MCP وA2A وANP، التدريب والتقييم، ثم تطبيقات متعددة الوكلاء. يرفق أمثلة برمجية ومشروعات تطبيقية، وليس حزمة واحدة جاهزة للتثبيت.",
+  "whyItMatters": "يشرح الانتقال من استخدام نموذج لغوي إلى بناء نظام وكيل قابل للتصميم والتقييم، ويربط المفاهيم بتطبيقات عملية. قيمته تعليمية ومنهجية؛ لكنه لا يغني عن قراءة توثيق كل إطار أو اختبار الأمثلة على إصداراتها الحالية.",
+  "audience": "طلاب ومطورو Python، مهندسو البرمجيات، والمتعلمون الذين لديهم أساس برمجي ومعرفة أولية باستدعاء واجهات النماذج.",
+  "nextSteps": [
+    "ابدأ بالقراءة الإلكترونية، ثم اقرأ الفصول الثلاثة الأولى قبل اختيار إطار أو مشروع تطبيقي.",
+    "استنسخ المستودع واختر فصلًا واحدًا؛ لا تثبّت اعتماديات كل الأمثلة دفعة واحدة.",
+    "راجع requirements.txt أو pyproject.toml داخل مجلد المثال، ثم انسخ ملف .env.example واضبط مفاتيح المزود المطلوبة.",
+    "سجّل إصدار Python والنموذج ومزود الخدمة قبل تشغيل المثال حتى يمكن إعادة إنتاج النتيجة."
+  ],
+  "limitations": "المحتوى الأساسي باللغة الصينية، ولا يوجد ملف متطلبات موحد لجذر المستودع؛ تختلف الاعتماديات حسب الفصل والمشروع. بعض الأمثلة تحتاج مفاتيح API وخدمات خارجية مثل مزود نموذج أو Tavily أو Amap. يعلن LICENSE.txt ترخيص CC BY-NC-SA 4.0 للمحتوى، أي مع نسب العمل وعدم الاستخدام التجاري والمشاركة بالمثل؛ وتوجد ملفات ترخيص منفصلة داخل بعض المجلدات، لذلك لا ينبغي افتراض أن كل مثال يرث ترخيصًا برمجيًا واحدًا. لم نشغّل الأمثلة في هذه المراجعة.",
+  "basis": "readme",
+  "overview": "دليل تعليمي من 16 فصلًا يبدأ بمفهوم الوكيل وتاريخ النماذج، ثم يبني الأنماط الكلاسيكية والأطر، ويتناول الذاكرة والاسترجاع وهندسة السياق وبروتوكولات الوكلاء وAgentic RL والتقييم، وينتهي بتطبيقات مثل مساعد السفر والبحث العميق ومحاكاة مجتمع. يوفر قراءة إلكترونية ونسخة PDF وأمثلة ضمن مجلد code؛ ليس إطارًا برمجيًا موحدًا أو خدمة مستضافة.",
+  "requirements": "لا توجد متطلبات تثبيت عامة للجذر. يوصي README بأساس Python وفهم أولي لاستدعاء LLM API. الاعتماديات مرتبطة بكل مثال: مثلًا مثال LangGraph يثبت langgraph==1.0.0a3 وlangchain_openai==0.3.33 وpython-dotenv وtavily-python؛ ومساعد السفر يطلب Python 3.10+ وNode.js 16+ ومفاتيح Amap لخدمات الويب وJavaScript ومفتاح مزود نموذج؛ ومشروع DeepResearch يحدد Python >=3.10 مع FastAPI وhello-agents==0.2.9 وTavily وOpenAI وUvicorn وddgs وloguru. استخدم ملف الاعتماديات الخاص بالمثال فقط.",
+  "quickStart": "للقراءة: افتح https://datawhalechina.github.io/hello-agents/ . للتطبيق: git clone https://github.com/datawhalechina/hello-agents.git، اختر فصلًا واحدًا، ادخل مجلد code الخاص به، أنشئ بيئة Python وفق المتطلبات المحددة، وثبّت ملف requirements.txt أو pyproject.toml الخاص بذلك المثال. انسخ .env.example إن وجد، أضف مفاتيح المزود المطلوبة، ثم نفّذ ملف البدء المذكور في README الخاص بالمثال. لا يوجد أمر pip install واحد يغطي المستودع كله.",
+  "costModel": "قراءة المحتوى مجانية. تكلفة التطبيق تختلف: استدعاءات نماذج LLM وTavily وAmap قد تستهلك حصصًا أو رسومًا لدى المزود؛ ويمكن لبعض الأمثلة استخدام نقطة نهاية محلية متوافقة أو نموذج محلي إذا كانت البنية تسمح، مقابل موارد الجهاز. لا توجد خدمة استضافة رسمية مدفوعة مفروضة لقراءة الكتاب.",
+  "localVsCloud": "يمكن قراءة المحتوى عبر الويب أو تنزيله محليًا، وتشغيل كثير من الأمثلة على جهاز المطور. لكن الأمثلة التي تستخدم OpenAI أو Tavily أو Amap تتصل بخدمات سحابية؛ لا تفترض أن تشغيل الكود محليًا يعني أن معالجة النموذج محلية. استبدال المزود يتطلب توافق الواجهة وتعديل الإعدادات.",
+  "licenseSummary": "LICENSE.txt في جذر المستودع يحدد Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0): نسب العمل، وعدم الاستخدام التجاري، ومشاركة المشتقات بالمثل. GitHub API يعرض NOASSERTION لا لغياب نص الترخيص بل لأن الترخيص ليس SPDX تقليديًا؛ توجد ملفات ترخيص فرعية لبعض الأمثلة ويجب فحصها منفردة قبل إعادة التوزيع.",
+  "activityAssessment": "المستودع غير مؤرشف ومفعّل؛ آخر push بحسب GitHub API كان 2026-11-11T06:18:57Z. قياس 2026-11-11 18:36 (+03): 86,737 نجمة و10,822 fork و176 issue/PR مفتوحًا. updatedAt لا يُعامل كبديل عن pushedAt.",
+  "metrics": {
+    "stars": 86737,
+    "forks": 10822,
+    "openIssuesCount": 176,
+    "archived": false,
+    "disabled": false,
+    "licenseSpdx": "NOASSERTION",
+    "licenseDeclared": "CC BY-NC-SA 4.0",
+    "pushedAt": "2026-11-11T06:18:57Z",
+    "updatedAt": "2026-11-11T15:45:21Z",
+    "defaultBranch": "main",
+    "language": "Python",
+    "measuredAt": "2026-11-11T18:36:12+03:00",
+    "sourceApiUrl": "https://api.github.com/repos/datawhalechina/hello-agents"
+  },
+  "alternatives": [
+    {
+      "name": "Datawhale Agent Learning Hub",
+      "url": "https://github.com/datawhalechina/Agent-Learning-Hub",
+      "tradeoff": "خريطة تعلم أوسع لمسارات الوكلاء بدل كتاب واحد متدرج."
+    },
+    {
+      "name": "LangChain Academy",
+      "url": "https://academy.langchain.com/",
+      "tradeoff": "مسارات تطبيقية تركز على منظومة LangChain وLangGraph."
+    },
+    {
+      "name": "Full Stack Deep Learning",
+      "url": "https://fullstackdeeplearning.com/",
+      "tradeoff": "تركيز على بناء أنظمة تعلم عميق إنتاجية، وليس منهجًا عامًا لبناء الوكلاء."
+    }
+  ],
+  "improvements": [
+    {
+      "title": "بيئات قابلة لإعادة الإنتاج لكل فصل",
+      "problem": "تتغير إصدارات الحزم ومزودات النماذج، وقد يفشل مثال قديم رغم صحة الشرح.",
+      "approach": "تحديد ملف اعتماديات مقفل لكل مثال، مع نسخة Python ومزود النموذج وتاريخ آخر تشغيل موثق.",
+      "stack": "Python, uv, pip-tools, pytest, GitHub Actions",
+      "steps": [
+        "احصر الأمثلة التي لها ملفات اعتماديات مستقلة.",
+        "ثبّت إصدار Python والحزم لكل مثال بدل متطلبات عائمة.",
+        "أضف .env.example يوضح المتغيرات دون أسرار.",
+        "أنشئ smoke test صغيرًا باستخدام fixtures أو TestModel حيث يتاح.",
+        "اعرض تاريخ آخر تحقق ومزود النموذج في صفحة الفصل."
+      ],
+      "metric": "100% من أمثلة المسار الأساسي لها بيئة موثقة وحالة اختبار وتاريخ مراجعة.",
+      "difficulty": "متوسطة؛ تقدير 3–4 أسابيع.",
+      "risks": "قد تتغير واجهات مزودي النماذج أو تتطلب الاختبارات مفاتيح API وحصصًا سحابية.",
+      "sources": [
+        {
+          "title": "Hello-Agents README",
+          "url": "https://github.com/datawhalechina/hello-agents/blob/main/README.md"
+        },
+        {
+          "title": "LangGraph example requirements",
+          "url": "https://github.com/datawhalechina/hello-agents/blob/main/code/chapter6/Langgraph/requirements.txt"
+        }
+      ]
+    },
+    {
+      "title": "نسخة عربية مع مسرد مصطلحات ثنائي اللغة",
+      "problem": "الحاجز اللغوي يقلل استفادة المتعلمين العرب من الفصول والمفاهيم التقنية.",
+      "approach": "ترجمة مجتمعية فصلية مرتبطة بإصدار النص الأصلي، مع مسرد موحد ومراجعة بشرية وإبقاء النسب والترخيص.",
+      "stack": "Markdown, YAML glossary, MkDocs, GitHub Pages",
+      "steps": [
+        "ابدأ بفصول الأساسيات الأربعة وحدد نسخة المصدر وتاريخها.",
+        "أنشئ مسردًا عربيًا/إنجليزيًا لمصطلحات Agent وRAG وMCP وA2A.",
+        "ترجم فصلًا واحدًا مع روابط للمقاطع الأصلية.",
+        "اطلب مراجعة تقنية ولغوية مستقلة قبل النشر.",
+        "أضف آلية لمقارنة التغييرات مع النسخة الصينية وتحديث الترجمة."
+      ],
+      "metric": "ثلاثة فصول عربية مراجعة مع اتساق 95% للمصطلحات في عينة تدقيق.",
+      "difficulty": "متوسطة إلى عالية؛ تقدير 4–6 أسابيع.",
+      "risks": "انحراف الترجمة عن المصدر، وحقوق المشتقات؛ يجب احترام CC BY-NC-SA 4.0.",
+      "sources": [
+        {
+          "title": "Hello-Agents README",
+          "url": "https://github.com/datawhalechina/hello-agents/blob/main/README.md"
+        },
+        {
+          "title": "Hello-Agents LICENSE.txt",
+          "url": "https://github.com/datawhalechina/hello-agents/blob/main/LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "title": "سجل إصدارات ومصادر لأمثلة النماذج والواجهات",
+      "problem": "قد تتغير أسماء النماذج وواجهات SDK أو تتوقف نقاط النهاية بعد نشر الفصل.",
+      "approach": "إضافة سجل لكل مثال يحدد SDK والنموذج والمزود والبديل المحلي وتاريخ المراجعة وحدود الاستخدام.",
+      "stack": "Python, JSON manifest, uv, pytest, API fixtures",
+      "steps": [
+        "استخرج الأمثلة التي تستدعي واجهات خارجية.",
+        "سجّل اسم الحزمة وإصدارها والنموذج والمزود لكل مثال.",
+        "أضف بديلًا محليًا عندما تدعمه الواجهة دون ادعاء تطابق كامل.",
+        "استخدم fixtures لاختبار parsing وتدفق الأدوات دون استهلاك API.",
+        "أصدر تقريرًا دوريًا بالأمثلة التي تحتاج تحديثًا."
+      ],
+      "metric": "90% من أمثلة الواجهات الخارجية تحمل إصدارًا ومصدرًا وتاريخ تحقق واضحًا.",
+      "difficulty": "متوسطة؛ تقدير 3–5 أسابيع.",
+      "risks": "قد تتطلب بعض مزودات API تشغيلًا حيًا وتكلفة أو تتغير شروطها.",
+      "sources": [
+        {
+          "title": "FirstAgentTest.py",
+          "url": "https://github.com/datawhalechina/hello-agents/blob/main/code/chapter1/FirstAgentTest.py"
+        },
+        {
+          "title": "Trip Planner README",
+          "url": "https://github.com/datawhalechina/hello-agents/blob/main/code/chapter13/helloagents-trip-planner/README.md"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "مختبر عربي تفاعلي لتجارب Agent",
+      "problem": "يصعب على المتعلم الانتقال من قراءة النظرية إلى تجربة خطوات الوكيل وملاحظة فشل الأدوات.",
+      "approach": "مختبر صغير يقسم التجربة إلى مهام ReAct وذاكرة وRAG وتقييم، مع بيئة محلية وبيانات اصطناعية.",
+      "stack": "Python, Jupyter, FastAPI, local LLM, pytest",
+      "steps": [
+        "اختر ثلاثة أنماط أساسية من الكتاب.",
+        "ابنِ لكل نمط مثالًا قصيرًا ببيانات اصطناعية.",
+        "أضف اختبارًا يوضح السلوك المتوقع والفشل.",
+        "وفر مزودًا محليًا اختياريًا لتجنب API في التجارب الأولى.",
+        "اجمع نتائج المتعلم في تقرير تقدم قابل للتصدير."
+      ],
+      "metric": "إكمال 80% من تجارب المسار الأساسي مع نجاح اختبارات الأمثلة.",
+      "difficulty": "متوسطة؛ تقدير 4–6 أسابيع.",
+      "risks": "تفاوت أداء النماذج المحلية ومتطلبات الذاكرة؛ يجب عدم تشغيل أدوات غير موثوقة بلا عزل.",
+      "sources": [
+        {
+          "title": "Hello-Agents README",
+          "url": "https://github.com/datawhalechina/hello-agents/blob/main/README.md"
+        },
+        {
+          "title": "Hello-Agents code directory",
+          "url": "https://github.com/datawhalechina/hello-agents/tree/main/code"
+        }
+      ]
+    },
+    {
+      "title": "مجموعة تقييم عربية لوكلاء الأدوات",
+      "problem": "تفتقر أمثلة الوكلاء العربية إلى مجموعة مهام قابلة لإعادة الإنتاج لقياس اختيار الأداة وصحة النتيجة.",
+      "approach": "إنشاء مهام عربية محدودة مع إجابة مرجعية وأدوات وهمية وقياس الدقة والرفض عند غياب المصدر.",
+      "stack": "Python, pytest, JSONL fixtures, evaluation harness",
+      "steps": [
+        "حدد 30 مهمة عربية بسيطة ذات مخرجات مرجعية.",
+        "أنشئ أدوات وهمية لا تتصل بحسابات حقيقية.",
+        "قِس اختيار الأداة وصحة الوسيط والنتيجة النهائية.",
+        "أضف حالات يجب أن يصرح فيها الوكيل بعدم كفاية البيانات.",
+        "انشر نتائج كل نموذج مع الإصدار والإعدادات."
+      ],
+      "metric": "دقة 90% في اختيار الأداة والوسائط على مجموعة الاختبار الثابتة.",
+      "difficulty": "متوسطة إلى عالية؛ تقدير 5–7 أسابيع.",
+      "risks": "الانحياز لمهام محدودة وعدم تمثيل كل اللهجات أو السياقات.",
+      "sources": [
+        {
+          "title": "Hello-Agents chapter 12",
+          "url": "https://github.com/datawhalechina/hello-agents/tree/main/code/chapter12"
+        },
+        {
+          "title": "Hello-Agents README",
+          "url": "https://github.com/datawhalechina/hello-agents/blob/main/README.md"
+        }
+      ]
+    }
+  ],
+  "religious": [
+    {
+      "title": "فهرس تعليمي لنصوص شرعية موثقة دون إصدار فتاوى",
+      "problem": "يصعب على المتعلم البحث في مجموعة نصوص مع الحفاظ على الإحالة الدقيقة ومنع نسبة كلام غير موثق للمصدر.",
+      "approach": "تطبيق استرجاع يعرض المقطع ورقم الصفحة والمصدر وتاريخ النسخة، ويقتصر على الفهرسة والشرح اللغوي المراجع ولا يصدر أحكامًا أو فتاوى.",
+      "stack": "Python, HelloAgents, local embeddings, vector database, human review",
+      "steps": [
+        "حدد corpus مرخصًا ومراجعًا من جهة علمية موثوقة.",
+        "احفظ النصوص كما هي مع بيانات المصدر والباب والصفحة والإصدار.",
+        "ابنِ فهرسة محلية تعيد المقاطع ذات الصلة فقط.",
+        "اشترط إظهار الإحالة الحرفية وامتنع عند غياب مصدر كافٍ.",
+        "اعرض أي شرح على مختص مؤهل قبل نشره ولا تقدم فتوى آلية."
+      ],
+      "metric": "100% من النتائج المعروضة تحمل إحالة قابلة للتحقق، وصفر أحكام شرعية مولدة دون مراجعة بشرية.",
+      "difficulty": "عالية؛ تقدير 6–8 أسابيع.",
+      "risks": "خطأ النقل أو الفهم أو حقوق النصوص؛ يجب ألا يستخدم لإصدار فتوى أو استبدال أهل الاختصاص.",
+      "sources": [
+        {
+          "title": "Hello-Agents README",
+          "url": "https://github.com/datawhalechina/hello-agents/blob/main/README.md"
+        },
+        {
+          "title": "Hello-Agents LICENSE.txt",
+          "url": "https://github.com/datawhalechina/hello-agents/blob/main/LICENSE.txt"
+        }
+      ]
+    }
+  ],
+  "testStatus": "not_run",
+  "sources": [
+    {
+      "title": "Hello-Agents README",
+      "url": "https://github.com/datawhalechina/hello-agents/blob/main/README.md"
+    },
+    {
+      "title": "Hello-Agents LICENSE.txt — CC BY-NC-SA 4.0",
+      "url": "https://github.com/datawhalechina/hello-agents/blob/main/LICENSE.txt"
+    },
+    {
+      "title": "Chapter 1 agent example",
+      "url": "https://github.com/datawhalechina/hello-agents/blob/main/code/chapter1/FirstAgentTest.py"
+    },
+    {
+      "title": "Chapter 6 LangGraph requirements",
+      "url": "https://github.com/datawhalechina/hello-agents/blob/main/code/chapter6/Langgraph/requirements.txt"
+    },
+    {
+      "title": "Trip Planner README and setup",
+      "url": "https://github.com/datawhalechina/hello-agents/blob/main/code/chapter13/helloagents-trip-planner/README.md"
+    },
+    {
+      "title": "DeepResearch pyproject",
+      "url": "https://github.com/datawhalechina/hello-agents/blob/main/code/chapter14/helloagents-deepresearch/backend/pyproject.toml"
+    },
+    {
+      "title": "Online reading",
+      "url": "https://datawhalechina.github.io/hello-agents/"
+    }
+  ]
+}
