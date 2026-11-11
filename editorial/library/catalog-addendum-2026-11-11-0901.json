@@ -1,0 +1,327 @@
+{
+  "version": 1,
+  "kind": "project-catalog-addendum",
+  "publicationStatus": "research-library-only; not a public project card",
+  "reviewedAt": "2026-11-11T09:01:51+03:00",
+  "previousCatalogTotal": 67,
+  "newCatalogTotal": 68,
+  "statusSummaryAfterAppend": {
+    "total": 68,
+    "archived": 2,
+    "nonArchived": 66,
+    "inCurrentProjectFeed": 12,
+    "feedNewsReferences": 1,
+    "notInFeed": 54,
+    "membershipUnverified": 1
+  },
+  "note": "إضافة تراكمية ذات أولوية 68. لا تعديل للكتالوج الأساسي ولا تغيير لترتيب المشاريع السابقة. يوجد مرجع Feed أصلي للمستودع لكنه مصنف news لا project؛ لذلك تبقى الإضافة بحثية وغير منشورة كـproject card.",
+  "entries": [
+    {
+      "priority": 68,
+      "repository": "GoogleChrome/modern-web-guidance",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance",
+      "category": "أدوات المطورين ووكلاء البرمجة",
+      "classification": "established_non_archived",
+      "archived": false,
+      "license": "Apache-2.0 code; CC BY 4.0 guides per README",
+      "metrics": {
+        "stars": 3456,
+        "forks": 119,
+        "openIssuesCount": 1,
+        "archived": false,
+        "disabled": false,
+        "licenseSpdx": "Apache-2.0",
+        "pushedAt": "2026-11-10T03:22:38Z",
+        "updatedAt": "2026-11-11T06:00:34Z",
+        "defaultBranch": "main",
+        "language": null,
+        "measuredAt": "2026-11-11T09:01:51+03:00",
+        "sourceApiUrl": "https://api.github.com/repos/GoogleChrome/modern-web-guidance",
+        "note": "openIssuesCount يتضمن عناصر GitHub المفتوحة ولا يساوي أعطالًا."
+      },
+      "feedId": "a4978faa7e166cdb12",
+      "feedKind": "news",
+      "siteVisibility": "research-only; not a public project card",
+      "overviewShort": "مكتبة إرشادات ويب حديثة قابلة للاستدعاء من وكلاء البرمجة. README يصف أكثر من 250 دليلًا عمليًا في CSS وHTML وJavaScript وواجهات الويب والأداء وإمكانية الوصول والأمان. CLI يبحث محليًا باستخدام نموذج embeddings مضمّن وBM25 ثم يسترجع الدليل المناسب إلى سياق الوكيل. يدعم تكاملات Codex وGoogle Antigravity وعدة وكلاء آخرين.",
+      "requirements": "Node.js 22+ بحسب package metadata؛ VS Code 1.90+ لمسار إضافة VS Code. لا يحتاج مفتاح API أو استدلالًا سحابيًا. التثبيت الأول عبر npx يحتاج اتصال npm، ثم البحث والاسترجاع محليان. LICENSE للمشروع Apache-2.0، وREADME يذكر أن محتوى guides مرخص CC BY 4.0؛ يجب الحفاظ على attribution عند إعادة استخدام الأدلة.",
+      "quickStart": "التثبيت العام عبر npx modern-web-guidance@latest install. يمكن تجربة البحث دون تثبيت دائم باستخدام npx modern-web-guidance@latest search ثم retrieve بمعرف الدليل. تكامل Antigravity موثق بأمر agy plugin install، وتكامل Codex موثق بأوامر إضافة marketplace/plugin. التحديث عبر npx modern-web-guidance@latest update.",
+      "costs": "لا توجد رسوم خدمة أو API model إلزامية؛ البحث المحلي لا يرسل استعلامات إلى نموذج سحابي ولا يحتاج مفتاح API. التكلفة هي تنزيل npm واستهلاك موارد محلية، إضافة إلى اشتراك وكيل البرمجة الذي يملكه المستخدم أصلًا إن كان مدفوعًا. Telemetry مفعّل افتراضيًا وفق README ويمكن تعطيله عبر DISABLE_TELEMETRY=1؛ يذكر README أنه يجمع عدد التثبيتات واسم الوكيل ومعرفات الأدلة واستعلامات CLI المولدة، ولا يجمع prompts الخام.",
+      "localVsCloud": "البحث والاسترجاع محليان وoffline بعد توفر الحزمة؛ npx يستخدم الشبكة للحصول على أحدث إصدار. لا يتطلب Cloud inference. يجب توضيح telemetry قبل اعتماد الحزمة في بيئة ذات سياسات خصوصية صارمة.",
+      "alternatives": [
+        {
+          "name": "Vercel Skills CLI",
+          "url": "https://github.com/vercel-labs/skills",
+          "tradeoff": "موزع عام لتثبيت skills من مستودعات متعددة؛ لا يقتصر على أدلة منصة الويب."
+        },
+        {
+          "name": "web.dev",
+          "url": "https://web.dev/",
+          "tradeoff": "مرجع تعليمي ومقالات بشرية؛ ليس CLI يسترجع أدلة داخل سياق وكيل."
+        },
+        {
+          "name": "MDN Web Docs",
+          "url": "https://developer.mozilla.org/",
+          "tradeoff": "مرجع شامل للواجهات والمعايير؛ يحتاج الوكيل إلى البحث والانتقاء بنفسه."
+        }
+      ],
+      "improvements": [
+        {
+          "title": "حزمة عربية موثقة لإرشادات الويب الحديثة",
+          "problem": "المحتوى الحالي يركز على الإنجليزية؛ قد تفقد أمثلة RTL والمصطلحات العربية دقتها إذا ترجمها الوكيل ضمنيًا.",
+          "approach": "إنشاء مجموعة guides عربية ذات IDs ثابتة ومصطلحات موحدة، مع روابط للأصل الإنجليزي وتاريخ تحقق من دعم المتصفحات.",
+          "stack": "Markdown, JSON metadata, Node CLI, GitHub Actions, Playwright",
+          "steps": [
+            "اختيار 30 دليلًا عالي الاستخدام في HTML وCSS وJavaScript وRTL.",
+            "إنشاء glossary عربي/إنجليزي للمصطلحات التقنية.",
+            "ترجمة الأمثلة مع الحفاظ على API names وروابط المواصفات.",
+            "إضافة أمثلة RTL واختبارات متصفح آلية.",
+            "مراجعة بشرية ثم نشر النسخة مع مصدر وتاريخ مراجعة لكل دليل."
+          ],
+          "metric": "30 دليلًا أوليًا؛ ≥90% نجاح على مجموعة مهام عربية RTL؛ صفر روابط مكسورة في الإصدار.",
+          "difficulty": "متوسط",
+          "risks": "تغير دعم المتصفحات، اختلاف المصطلحات بين الفرق، واحتمال أن تصبح الترجمة أقدم من المصدر.",
+          "sources": [
+            {
+              "title": "Modern Web Guidance README",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance/blob/main/README.md"
+            },
+            {
+              "title": "Modern Web Guidance package metadata",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance/blob/main/package.json"
+            },
+            {
+              "title": "Modern Web Guidance source repository",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance-src"
+            },
+            {
+              "title": "Modern Web Guidance telemetry implementation",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance-src/blob/main/src/cli/modern-web.ts"
+            },
+            {
+              "title": "Apache 2.0 code license",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance/blob/main/LICENSE"
+            }
+          ]
+        },
+        {
+          "title": "Benchmark قابل لإعادة الإنتاج لـCodex وAntigravity",
+          "problem": "نتائج الرفع المنشورة في README داخلية، ولا تكفي وحدها للمقارنة المستقلة بين الوكلاء أو الإصدارات.",
+          "approach": "نشر مجموعة مهام وبيانات grader والإصدارات والـprompts وقياس pass rate والوقت والتكلفة قبل وبعد إرشادات Modern Web Guidance.",
+          "stack": "Playwright, Node.js, JSON tasks, GitHub Actions, reproducible eval harness",
+          "steps": [
+            "تثبيت مجموعة مهام ممثلة للواجهات والأداء وإمكانية الوصول.",
+            "نشر golden solutions وgrader مستقل لكل assertion.",
+            "تشغيل baseline دون الإرشادات ثم guided مع نفس القيود.",
+            "تسجيل اسم الوكيل والنموذج والإصدار والتاريخ وعدد الرموز والوقت.",
+            "نشر النتائج الخام وفواصل الثقة وتغييرات المنهجية.",
+            "إعادة الاختبار عند تحديث guides أو النماذج."
+          ],
+          "metric": "إمكانية إعادة تشغيل ≥90% من المهام؛ عرض pass-rate delta والوقت والرموز لكل إصدار.",
+          "difficulty": "متوسط إلى مرتفع",
+          "risks": "تسرب حلول grader، تغير النماذج، وتحسين الأداء على مجموعة الاختبار فقط.",
+          "sources": [
+            {
+              "title": "Modern Web Guidance README",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance/blob/main/README.md"
+            },
+            {
+              "title": "Modern Web Guidance package metadata",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance/blob/main/package.json"
+            },
+            {
+              "title": "Modern Web Guidance source repository",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance-src"
+            },
+            {
+              "title": "Modern Web Guidance telemetry implementation",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance-src/blob/main/src/cli/modern-web.ts"
+            },
+            {
+              "title": "Apache 2.0 code license",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance/blob/main/LICENSE"
+            }
+          ]
+        },
+        {
+          "title": "وضع خصوصية ومحتوى مثبت الإصدار",
+          "problem": "README يذكر جمع telemetry افتراضيًا يتضمن اسم الوكيل ومعرفات الأدلة واستعلامات البحث التي يولدها الوكيل؛ كما أن استخدام latest قد يغير المحتوى بين تشغيل وآخر.",
+          "approach": "إضافة موافقة واضحة على telemetry، خيار تعطيل دائم، وإمكانية تثبيت snapshot محلي موقّع من الأدلة لضمان إعادة الإنتاج دون شبكة.",
+          "stack": "Node.js CLI, local BM25/embeddings, JSON snapshots, npm package",
+          "steps": [
+            "توثيق كل حدث telemetry وسبب جمعه ومدته.",
+            "إظهار خيار opt-in في أول تشغيل بدل الاعتماد على الإعداد الافتراضي.",
+            "إضافة أمر snapshot export/import مع checksum وإصدار.",
+            "إضافة وضع offline يرفض الشبكة صراحة بعد تثبيت الحزمة.",
+            "اختبار أن telemetry لا يرسل أي طلب عند opt-out."
+          ],
+          "metric": "صفر طلبات telemetry بعد opt-out؛ تشغيل offline قابل لإعادة الإنتاج؛ checksum ثابت للـsnapshot.",
+          "difficulty": "متوسط",
+          "risks": "تقليل بيانات تحسين المنتج، تقادم snapshots، وتعقيد التوافق بين الإصدارات.",
+          "sources": [
+            {
+              "title": "Modern Web Guidance README",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance/blob/main/README.md"
+            },
+            {
+              "title": "Modern Web Guidance package metadata",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance/blob/main/package.json"
+            },
+            {
+              "title": "Modern Web Guidance source repository",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance-src"
+            },
+            {
+              "title": "Modern Web Guidance telemetry implementation",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance-src/blob/main/src/cli/modern-web.ts"
+            },
+            {
+              "title": "Apache 2.0 code license",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance/blob/main/LICENSE"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "Arabic Web Platform Agent Pack",
+          "problem": "تحتاج مهام بناء الواجهات العربية إلى معرفة مركزة بـRTL والخطوط والتخطيط وإمكانية الوصول، لا مجرد ترجمة إرشادات عامة.",
+          "approach": "حزمة skills مستقلة لـCodex وAntigravity تقدم قواعد RTL، typography، responsive layouts، accessibility وperformance مع أمثلة اختبار.",
+          "stack": "Markdown skills, plugin manifests, Playwright, axe-core",
+          "steps": [
+            "تحديد أكثر 20 خطأ RTL تكرارًا في واجهات الويب.",
+            "كتابة guides قصيرة مع مثال صحيح وخاطئ.",
+            "إضافة مهام Playwright لاختبار اتجاه النص وتدفق العناصر.",
+            "ربط الحزمة بإضافات Codex وAntigravity.",
+            "قياس جودة المخرجات على مشاريع عربية قبل وبعد."
+          ],
+          "metric": "انخفاض أخطاء RTL وإمكانية الوصول في مجموعة الاختبار؛ pass rate ≥90%.",
+          "difficulty": "متوسط",
+          "risks": "الاختلاف بين أنظمة التصميم والخطوط، وتغير سلوك المتصفحات.",
+          "sources": [
+            {
+              "title": "Modern Web Guidance README",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance/blob/main/README.md"
+            },
+            {
+              "title": "Modern Web Guidance package metadata",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance/blob/main/package.json"
+            },
+            {
+              "title": "Modern Web Guidance source repository",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance-src"
+            },
+            {
+              "title": "Modern Web Guidance telemetry implementation",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance-src/blob/main/src/cli/modern-web.ts"
+            },
+            {
+              "title": "Apache 2.0 code license",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance/blob/main/LICENSE"
+            }
+          ]
+        },
+        {
+          "title": "مراجع مشاريع الويب الطلابية",
+          "problem": "تحتاج مشاريع الطلاب إلى مراجعة متكررة للـsemantics والاستجابة وإمكانية الوصول والأداء، بينما المراجعات اليدوية قد تفوت أخطاء متكررة.",
+          "approach": "Skill محلي يقدم checklist قابلة للتفسير، يربط كل ملاحظة بدليل ويب حديث ونتيجة أداة تحقق، دون تعديل المشروع تلقائيًا.",
+          "stack": "Node CLI, Markdown, JSON, Lighthouse CI, axe-core, Playwright",
+          "steps": [
+            "تعريف معايير قبول صغيرة للمشروع.",
+            "تشغيل فحوصات آلية على نسخة محلية أو preview.",
+            "إرفاق كل نتيجة برابط الدليل والملف والسطر.",
+            "تجميع النتائج حسب severity مع منع التخمين.",
+            "إصدار تقرير قابل للمراجعة قبل أي تعديل."
+          ],
+          "metric": "دقة اكتشاف العيوب المؤكدة؛ انخفاض الملاحظات الكاذبة؛ زمن مراجعة أقل.",
+          "difficulty": "متوسط",
+          "risks": "تحويل التقييم إلى درجة شكلية، أو كشف بيانات خاصة إذا رُفعت المشاريع إلى خدمة خارجية.",
+          "sources": [
+            {
+              "title": "Modern Web Guidance README",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance/blob/main/README.md"
+            },
+            {
+              "title": "Modern Web Guidance package metadata",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance/blob/main/package.json"
+            },
+            {
+              "title": "Modern Web Guidance source repository",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance-src"
+            },
+            {
+              "title": "Modern Web Guidance telemetry implementation",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance-src/blob/main/src/cli/modern-web.ts"
+            },
+            {
+              "title": "Apache 2.0 code license",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance/blob/main/LICENSE"
+            }
+          ]
+        },
+        {
+          "title": "رادار تغيّر معايير الويب",
+          "problem": "قد تصبح الإرشادات صحيحة وقت كتابتها ثم تتغير Baseline أو دعم المتصفحات أو مواصفات APIs.",
+          "approach": "ربط كل guide بميزة ويب ومصدر مواصفة وتاريخ تحقق، ثم مقارنة تغييرات بيانات الدعم وفتح تنبيه مراجعة عند تغير الحالة.",
+          "stack": "GitHub Actions, web-features data, JSON metadata, Markdown",
+          "steps": [
+            "إضافة feature IDs وروابط المواصفات لكل دليل.",
+            "حفظ lastVerified وsupportStatus في metadata.",
+            "جدولة مقارنة دورية مع بيانات Baseline الرسمية.",
+            "فتح issue فقط عند تغير مؤثر مع رابط التغيير.",
+            "مراجعة بشرية قبل تعديل نص الدليل."
+          ],
+          "metric": "متوسط زمن تحديث الدليل بعد تغير الدعم؛ عدد الروابط والأمثلة المتقادمة.",
+          "difficulty": "متوسط إلى مرتفع",
+          "risks": "تنبيهات زائفة، اختلاف بيانات المتصفحات، وتغير المواصفات قبل التنفيذ الفعلي.",
+          "sources": [
+            {
+              "title": "Modern Web Guidance README",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance/blob/main/README.md"
+            },
+            {
+              "title": "Modern Web Guidance package metadata",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance/blob/main/package.json"
+            },
+            {
+              "title": "Modern Web Guidance source repository",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance-src"
+            },
+            {
+              "title": "Modern Web Guidance telemetry implementation",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance-src/blob/main/src/cli/modern-web.ts"
+            },
+            {
+              "title": "Apache 2.0 code license",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance/blob/main/LICENSE"
+            }
+          ]
+        }
+      ],
+      "religiousIdeas": [],
+      "testStatus": "not_run",
+      "testEvidence": null,
+      "sources": [
+        {
+          "title": "Modern Web Guidance README",
+          "url": "https://github.com/GoogleChrome/modern-web-guidance/blob/main/README.md"
+        },
+        {
+          "title": "Modern Web Guidance package metadata",
+          "url": "https://github.com/GoogleChrome/modern-web-guidance/blob/main/package.json"
+        },
+        {
+          "title": "Modern Web Guidance source repository",
+          "url": "https://github.com/GoogleChrome/modern-web-guidance-src"
+        },
+        {
+          "title": "Modern Web Guidance telemetry implementation",
+          "url": "https://github.com/GoogleChrome/modern-web-guidance-src/blob/main/src/cli/modern-web.ts"
+        },
+        {
+          "title": "Apache 2.0 code license",
+          "url": "https://github.com/GoogleChrome/modern-web-guidance/blob/main/LICENSE"
+        }
+      ]
+    }
+  ]
+}
