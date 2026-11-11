@@ -179,7 +179,13 @@
       "researchDossier": true,
       "publicationStatus": "research-only",
       "currentVersion": "v0.1.8",
-      "note": "صفحة التثبيت ما زالت تعرض v0.1.7؛ صفحة الإصدارات ودليل المطور يعرضان v0.1.8."
+      "note": "Seen-only خارج Feed وEditorial؛ أحدث إصدار v0.1.8، وصفحة Installation وDeveloper Guide وGitHub Releases كلها تعرض Latest v0.1.8. ملاحظات الإصدار تتضمن تغييرات ترقية كاسرة يجب مراجعتها.",
+      "documentationConsistency": {
+        "developerGuide": "v0.1.8",
+        "installationPage": "v0.1.8",
+        "githubLatestRelease": "v0.1.8",
+        "status": "consistent"
+      }
     },
     {
       "name": "Canva Craft",

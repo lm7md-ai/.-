@@ -25,13 +25,6 @@
     "publishedAt": "2026-11-10T18:14:36Z",
     "url": "https://github.com/NVIDIA/OpenShell/releases"
   },
-  "documentationDiscrepancy": {
-    "developerGuide": "v0.1.8",
-    "githubLatestRelease": "v0.1.8",
-    "installationPage": "v0.1.7",
-    "status": "stale-version-mismatch",
-    "implication": "لا تستخدم صفحة التثبيت وحدها لتحديد أحدث إصدار؛ طابق الإصدار مع صفحة الإصدارات ووثائق v0.1.8."
-  },
   "releaseHighlights": [
     "تغيير موضع بيانات اعتماد المزوّد: بيانات الاعتماد الثابتة تحل افتراضيًا في Authorization header، وتحتاج مواضع body/WebSocket إلى سياسات rewrite صريحة؛ راجع upgrade notes قبل ترقية بوابة قائمة.",
     "طلبات HTTP upgrade على REST endpoints تعاد الآن 403؛ يجب تعريف WebSocket صراحة بسياسات handshake/message.",
@@ -40,7 +33,7 @@
     "ملاحظات الإصدار تشير إلى انتقال مخطط إلى CNCF ومنظمة ai-openshell؛ هذا إعلان خطة وليس إثبات اكتمال النقل."
   ],
   "overview": "OpenShell runtime لإدارة وتشغيل وكلاء الذكاء الاصطناعي داخل sandboxes مع سياسات للملفات والشبكة والهوية. هو طبقة تشغيل وعزل، وليس نموذجًا لغويًا. تحديث v0.1.8 مهم خصوصًا لمن لديهم سياسات credentials أو WebSocket أو OCSF أو SDKs.",
-  "limitations": "صفحة installation التي عُثر عليها تعرض v0.1.7 بينما صفحة Developer Guide وGitHub Releases تعرض v0.1.8. يلزم مطابقة تعليمات التثبيت مع release v0.1.8 قبل تنفيذ ترقية. لا توجد تجربة تشغيل أو اختبار أمني مستقل في هذه المراجعة.",
+  "limitations": "لا يظهر تعارض إصدار بين صفحة Installation وDeveloper Guide وGitHub Releases؛ جميعها تشير إلى v0.1.8. تتضمن ملاحظات الترقية تغييرات كاسرة في مواضع credentials وWebSocket وOCSF وSDKs، لذا يجب قراءة upgrade notes قبل ترقية بيئة قائمة. لا توجد تجربة تشغيل أو اختبار أمني مستقل في هذه المراجعة.",
   "testStatus": "not_run",
   "sources": [
     {
@@ -63,5 +56,12 @@
       "title": "Apache-2.0 license",
       "url": "https://github.com/NVIDIA/OpenShell/blob/main/LICENSE"
     }
-  ]
+  ],
+  "documentationConsistency": {
+    "developerGuide": "v0.1.8",
+    "installationPage": "v0.1.8",
+    "githubLatestRelease": "v0.1.8",
+    "status": "consistent",
+    "note": "الصفحة /latest/about/installation وDeveloper Guide كلتاهما تعرضان Latest v0.1.8؛ ظهور v0.1.7 في نتائج البحث كان لصفحة الإصدار السابق، وليس نسخة latest."
+  }
 }
