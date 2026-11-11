@@ -41,7 +41,7 @@
     "state": "open",
     "mergeable": true,
     "base": "main",
-    "head": "c17e6524eb4959ac2d9c9e70fb43389052a5e2bd",
+    "head": "b2e97e1bb6028718838aec56e952057c09e6dfaa",
     "aheadBy": 29,
     "behindBy": 1,
     "changedFiles": 35,
@@ -138,7 +138,7 @@
     "newResearchOnlyProjectsThisRun": 0
   },
   "tests": {
-    "prRunId": 42926069793,
+    "prRunId": 42948393467,
     "conclusion": "success",
     "pythonTests": 30,
     "editorialEntriesValidated": 936,
@@ -149,7 +149,8 @@
       "python scripts/editorial.py validate <each incoming file>",
       "python scripts/editorial.py import <approved active batch>",
       "python -m unittest discover -s tests -v"
-    ]
+    ],
+    "prRunHead": "b2e97e1bb6028718838aec56e952057c09e6dfaa"
   },
   "deployment": {
     "runId": 42903504532,
