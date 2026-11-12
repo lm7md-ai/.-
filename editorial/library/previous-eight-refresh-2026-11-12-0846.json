@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "kind": "previous-eight-metrics-refresh",
+  "measuredAt": "2026-11-12T08:46:40+03:00",
+  "measurementSource": "GitHub REST API /repos/{owner}/{repo}",
+  "note": "Stars, forks and openIssuesCount are point-in-time counts; openIssuesCount may include pull requests. pushedAt measures last push; updatedAt is not a substitute for code activity.",
+  "projects": [
+    {
+      "name": "AI Engineering Hub",
+      "repository": "patchy631/ai-engineering-hub",
+      "stars": 41778,
+      "forks": 6676,
+      "openIssuesCount": 137,
+      "license": "MIT",
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "updatedAt": "2026-11-12T04:25:18Z"
+    },
+    {
+      "name": "Python GenAI SDK",
+      "repository": "googleapis/python-genai",
+      "stars": 4064,
+      "forks": 1065,
+      "openIssuesCount": 402,
+      "license": "Apache-2.0",
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-11-12T02:50:46Z",
+      "updatedAt": "2026-11-12T05:39:56Z"
+    },
+    {
+      "name": "Lasm",
+      "repository": "Millillion/lasm",
+      "stars": 105,
+      "forks": 7,
+      "openIssuesCount": 21,
+      "license": "MIT",
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-11-12T01:36:33Z",
+      "updatedAt": "2026-11-12T02:10:46Z"
+    },
+    {
+      "name": "MarkItDown",
+      "repository": "microsoft/markitdown",
+      "stars": 194994,
+      "forks": 14711,
+      "openIssuesCount": 807,
+      "license": "MIT",
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-11-07T00:14:01Z",
+      "updatedAt": "2026-11-12T05:35:42Z"
+    },
+    {
+      "name": "Minecraft Agent Harness",
+      "repository": "yc-software/minecraft-agent-harness",
+      "stars": 210,
+      "forks": 28,
+      "openIssuesCount": 1,
+      "license": "MIT",
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "updatedAt": "2026-11-12T04:27:34Z"
+    },
+    {
+      "name": "NVIDIA OpenShell",
+      "repository": "NVIDIA/OpenShell",
+      "stars": 21474,
+      "forks": 2095,
+      "openIssuesCount": 652,
+      "license": "Apache-2.0",
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-11-12T04:13:01Z",
+      "updatedAt": "2026-11-12T05:11:58Z"
+    },
+    {
+      "name": "Pydantic AI",
+      "repository": "pydantic/pydantic-ai",
+      "stars": 21154,
+      "forks": 3150,
+      "openIssuesCount": 1945,
+      "license": "MIT",
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-11-12T05:16:51Z",
+      "updatedAt": "2026-11-12T05:22:45Z"
+    },
+    {
+      "name": "uv",
+      "repository": "astral-sh/uv",
+      "stars": 91925,
+      "forks": 3810,
+      "openIssuesCount": 3083,
+      "license": "Apache-2.0",
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-11-11T15:49:58Z",
+      "updatedAt": "2026-11-12T05:33:33Z"
+    }
+  ],
+  "reviewNotes": [
+    "AI Engineering Hub: مجموعة تعليمية ومشروعات، لا حزمة تثبيت واحدة؛ آخر دفع 1 نوفمبر.",
+    "Python GenAI SDK: Python SDK لـGemini Developer API وVertex AI؛ pip install google-genai؛ التكلفة بحسب مزود النموذج.",
+    "Lasm: Lean 4.35 وNode 24+ بحسب README؛ MIT؛ لم نشغّل الأمثلة.",
+    "MarkItDown: Python 3.10+ وتبعيات اختيارية لـPDF/DOCX/PPTX؛ MIT؛ Docker متاح؛ I/O يعمل بصلاحيات العملية الحالية.",
+    "Minecraft Agent Harness: Node 22.19+ وMinecraft Java 1.21.6؛ MIT؛ يعتمد على runtime/model خارجي بحسب الإعداد.",
+    "NVIDIA OpenShell: Apache-2.0؛ وثائق v0.1.8 تذكر Docker 28+ أو Podman 5.x على Linux وخيارات MicroVM؛ Windows native تطويري وغير مؤهل للإنتاج وWSL2 تجريبي.",
+    "Pydantic AI: MIT؛ يدعم مزودين متعددين ويقدم TestModel؛ تكلفة الإنتاج بحسب مزود النموذج.",
+    "uv: Apache-2.0 وفق GitHub API؛ أداة محلية لإدارة Python والحزم."
+  ],
+  "testEvidence": [],
+  "noteOnTesting": "No runtime tests were executed for the eight projects; README/license/API metadata review only.",
+  "feedLinkedProjectResearch": {
+    "name": "MACaQ",
+    "repository": "huawei-csl/MACaQ",
+    "feedId": "d0e5cfeb79c6e58571",
+    "feedKind": "news",
+    "stars": 126,
+    "forks": 6,
+    "openIssuesCount": 1,
+    "license": "Apache-2.0",
+    "archived": false,
+    "pushedAt": "2026-11-12T00:11:46Z",
+    "measuredAt": "2026-11-12T08:46:40+03:00",
+    "decision": "enriched under original feed ID; feed kind unchanged"
+  }
+}
