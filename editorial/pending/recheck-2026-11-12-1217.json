@@ -106,22 +106,7 @@
       "decision": "hold; no current Feed match"
     }
   ],
-  "verifiedButDeferred": [
-    {
-      "id": "b0cee948b440301e45",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1UU2tHemhQOGVzakpWWmxJQ0dYZFVaX3p6c1pJM2xSc19jV0JRWHpYTWVya0xCcUdZNTRrUHlHakxLTUE0RVZTNlBud0ZvQ3V0RnBoMUdFVWgtN28?oc=5",
-      "seen": true,
-      "inCurrentFeed": true,
-      "inEditorial": false,
-      "decision": "source_verified_ready_but_not_imported_to_keep_the_12_news_cycle_cap",
-      "basis": "article",
-      "sources": [
-        "https://www.auswaertiges-amt.de/en/newsroom/news/2810400-2810400",
-        "https://www.gov.uk/government/news/joint-declaration-following-the-g7-foreign-ministers-meeting-in-paris"
-      ],
-      "verification": "قراءة البيان المشترك الكامل؛ يذكر مخاطر إساءة استخدام النماذج المتقدمة في أنشطة سيبرانية وإجرامية وقدرات عالية الأثر. لا يثبت وقوع حادث محدد ولا يعلن إجراءً ملزمًا أو نموذجًا بعينه."
-    }
-  ],
+  "verifiedButDeferred": [],
   "specialRecords": [
     {
       "name": "NVIDIA OpenShell",
@@ -374,5 +359,22 @@
       "site/data/status.json"
     ],
     "decision": "do_not_merge_or_trigger_deploy_under_current_no-feed-no-seen-no-status-change constraint"
-  }
+  },
+  "correctionReviewedAt": "2026-11-12T12:23:19+03:00",
+  "pendingCorrectionRecords": [
+    {
+      "id": "b0cee948b440301e45",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1UU2tHemhQOGVzakpWWmxJQ0dYZFVaX3p6c1pJM2xSc19jV0JRWHpYTWVya0xCcUdZNTRrUHlHakxLTUE0RVZTNlBud0ZvQ3V0RnBoMUdFVWgtN28?oc=5",
+      "seen": true,
+      "inCurrentFeed": true,
+      "inEditorial": false,
+      "status": "needs_correction",
+      "issue": "source_does_not_support_ai_claim",
+      "checkedOfficialSource": "https://www.auswaertiges-amt.de/en/newsroom/news/2810400-2810400",
+      "checkedOfficialSourceDate": "2026-11-11",
+      "verification": "راجعت البيان الرسمي المشار إليه كاملًا؛ لم يظهر فيه ذكر للذكاء الاصطناعي. لذلك لا يثبت المصدر الادعاء الوارد في عنوان الخبر.",
+      "decision": "do_not_import_until_original_supporting_source_is_provided_or_title_and_summary_are_corrected"
+    }
+  ],
+  "verifiedButDeferredNote": "لا يوجد سجل موثق المصدر مؤجل بسبب سقف الأخبار في هذا التقرير؛ سجل b0cee9485... بقي needs_correction بسبب عدم تطابق المصدر مع الادعاء."
 }
