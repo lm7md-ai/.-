@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "kind": "previous-eight-project-metrics",
+  "measuredAt": "2026-11-12T18:11:49+03:00",
+  "source": "GitHub REST API /repos/{owner}/{repo}",
+  "note": "Live counters are cumulative snapshots, not daily growth. License and archived flags are repository metadata; no project execution tests were run in this cycle.",
+  "projects": [
+    {
+      "repo": "patchy631/ai-engineering-hub",
+      "stars": 41799,
+      "forks": 6678,
+      "openIssues": 137,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-11-01T04:39:16Z"
+    },
+    {
+      "repo": "googleapis/python-genai",
+      "stars": 4065,
+      "forks": 1064,
+      "openIssues": 402,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-11-12T12:37:01Z"
+    },
+    {
+      "repo": "Millillion/lasm",
+      "stars": 105,
+      "forks": 7,
+      "openIssues": 19,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-11-12T15:14:02Z"
+    },
+    {
+      "repo": "microsoft/markitdown",
+      "stars": 195062,
+      "forks": 14718,
+      "openIssues": 808,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-11-07T00:14:01Z"
+    },
+    {
+      "repo": "yc-software/minecraft-agent-harness",
+      "stars": 212,
+      "forks": 28,
+      "openIssues": 1,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-29T20:30:45Z"
+    },
+    {
+      "repo": "NVIDIA/OpenShell",
+      "stars": 21495,
+      "forks": 2099,
+      "openIssues": 654,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-11-12T15:26:11Z"
+    },
+    {
+      "repo": "pydantic/pydantic-ai",
+      "stars": 21169,
+      "forks": 3156,
+      "openIssues": 1949,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-11-12T15:23:09Z"
+    },
+    {
+      "repo": "astral-sh/uv",
+      "stars": 91942,
+      "forks": 3809,
+      "openIssues": 3078,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-11-12T14:53:28Z"
+    }
+  ],
+  "summary": {
+    "reviewed": 8,
+    "unarchived": 8,
+    "archived": 0,
+    "licensesVerified": 8,
+    "testsRun": 0,
+    "testsStatus": "not_run"
+  }
+}
