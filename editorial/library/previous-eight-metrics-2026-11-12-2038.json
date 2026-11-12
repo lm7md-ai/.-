@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "kind": "previous-eight-project-metrics",
+  "measuredAt": "2026-11-12T20:38:00+03:00",
+  "source": "GitHub REST API /repos/{owner}/{repo}",
+  "note": "لقطة تراكمية مباشرة من GitHub API؛ openIssuesCount يشمل عناصر GitHub المفتوحة وليس عدد الأعطال. تمت مراجعة README وLICENSE في المراجعة السابقة 11:38 (+03)، وهذه الجولة أعادت قياس النشاط والنجوم والفروع والترخيص والأرشفة. لم تُشغّل المشاريع.",
+  "projects": [
+    {
+      "repo": "patchy631/ai-engineering-hub",
+      "stars": 41800,
+      "forks": 6680,
+      "openIssuesCount": 137,
+      "license": "MIT",
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "updatedAt": "2026-11-12T15:35:51Z",
+      "defaultBranch": "main"
+    },
+    {
+      "repo": "googleapis/python-genai",
+      "stars": 4065,
+      "forks": 1064,
+      "openIssuesCount": 402,
+      "license": "Apache-2.0",
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-11-12T17:22:08Z",
+      "updatedAt": "2026-11-12T15:02:31Z",
+      "defaultBranch": "main"
+    },
+    {
+      "repo": "Millillion/lasm",
+      "stars": 105,
+      "forks": 7,
+      "openIssuesCount": 15,
+      "license": "MIT",
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-11-12T17:21:16Z",
+      "updatedAt": "2026-11-12T16:10:11Z",
+      "defaultBranch": "main"
+    },
+    {
+      "repo": "microsoft/markitdown",
+      "stars": 195081,
+      "forks": 14720,
+      "openIssuesCount": 808,
+      "license": "MIT",
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-11-07T00:14:01Z",
+      "updatedAt": "2026-11-12T17:28:18Z",
+      "defaultBranch": "main"
+    },
+    {
+      "repo": "yc-software/minecraft-agent-harness",
+      "stars": 213,
+      "forks": 28,
+      "openIssuesCount": 1,
+      "license": "MIT",
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "updatedAt": "2026-11-12T16:54:52Z",
+      "defaultBranch": "main"
+    },
+    {
+      "repo": "NVIDIA/OpenShell",
+      "stars": 21498,
+      "forks": 2101,
+      "openIssuesCount": 656,
+      "license": "Apache-2.0",
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-11-12T16:18:35Z",
+      "updatedAt": "2026-11-12T17:14:48Z",
+      "defaultBranch": "main"
+    },
+    {
+      "repo": "pydantic/pydantic-ai",
+      "stars": 21170,
+      "forks": 3156,
+      "openIssuesCount": 1942,
+      "license": "MIT",
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-11-12T17:42:49Z",
+      "updatedAt": "2026-11-12T17:19:18Z",
+      "defaultBranch": "main"
+    },
+    {
+      "repo": "astral-sh/uv",
+      "stars": 91942,
+      "forks": 3809,
+      "openIssuesCount": 3076,
+      "license": "Apache-2.0",
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-11-12T17:03:06Z",
+      "updatedAt": "2026-11-12T17:42:37Z",
+      "defaultBranch": "main"
+    }
+  ],
+  "summary": {
+    "reviewed": 8,
+    "unarchived": 8,
+    "archived": 0,
+    "licensesVerified": 8,
+    "testsRun": 0,
+    "testsStatus": "not_run"
+  }
+}

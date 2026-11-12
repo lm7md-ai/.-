@@ -1,0 +1,277 @@
+{
+  "version": 1,
+  "kind": "nabdh-run-reconciliation",
+  "runAt": "2026-11-12T20:38:00+03:00",
+  "repository": "lm7md-ai/.-",
+  "main": {
+    "sha": "cef15d89bd6eebd529da2387f189fad4ac1ab955",
+    "feedGeneratedAt": "2026-11-12T17:34:19+00:00",
+    "feedItems": 800,
+    "feedNews": 700,
+    "feedProjects": 100,
+    "editorialItems": 917
+  },
+  "pullRequest": {
+    "number": 98,
+    "branch": "editorial/2026-11-10-0243-research-and-incoming",
+    "previousHead": "194ab28b4e888036947b9fb9e95d7a69c31b9942",
+    "state": "open",
+    "merged": false,
+    "mergeable": true,
+    "behindMain": 1,
+    "editorialItemsAfterImport": 943
+  },
+  "incomingAudit": {
+    "main": {
+      "files": 102,
+      "occurrences": 1054,
+      "uniqueIdUrlPairs": 932,
+      "duplicates": 122,
+      "editorialMatches": 870,
+      "seenOnly": 62,
+      "idUrlMismatches": 0,
+      "invalidJson": 0,
+      "confirmedExpired": 0,
+      "reusedPriorAudit": true,
+      "all102BlobShasIdenticalBetweenMainAndPR": true
+    },
+    "pullRequestOnly": {
+      "files": 11,
+      "occurrences": 78,
+      "uniqueIdUrlPairs": 52,
+      "duplicateOccurrences": 26,
+      "activeExactPairsInCurrentFeed": 35,
+      "alreadyInPREditorial": 15,
+      "newActivePairsBeforeThisRun": 20,
+      "outsideCurrentFeed": 17,
+      "idUrlMismatches": 0,
+      "idsWithMultipleUrls": 0,
+      "invalidJson": 0,
+      "confirmedExpired": 0,
+      "duplicateNote": "ملف 2026-11-12-1811 ذو 14 سجلًا يكرر أزواجًا موجودة مسبقًا ولا يضيف أزواجًا فريدة."
+    },
+    "currentClassification": {
+      "newActiveImportedThisRun": 12,
+      "remainingActiveExactPairs": 8,
+      "outsideCurrentFeed": 17,
+      "previouslySeenOnlyAmongOutsideFeed": 15,
+      "newlyAbsentSincePreviousAggregateAudit": 2,
+      "newlyAbsentIdsIndividuallyResolved": false,
+      "expirationConfirmed": 0
+    },
+    "remainingActive": [
+      {
+        "id": "a3bc8ca770f44f2d28",
+        "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/",
+        "titleAr": "Anthropic تحدّث Mythos وFable إلى الإصدار 5.2 مع تحسينات معلنة",
+        "status": "active_exact_match_pending"
+      },
+      {
+        "id": "1251f00274bede43be",
+        "url": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai",
+        "titleAr": "Adobe تعرض عشرة نماذج بحثية في MAX 2026 لتحرير الفيديو والصوت والصور",
+        "status": "active_exact_match_pending"
+      },
+      {
+        "id": "f63659155352269baf",
+        "url": "https://arxiv.org/abs/2611.12933",
+        "titleAr": "بحث يدرس فرقًا بشرية ووكلاء تنفذ تجارب أشعة سينية ذاتية مع توثيق القرارات",
+        "status": "active_exact_match_pending"
+      },
+      {
+        "id": "70b6e0e37bdecc39c4",
+        "url": "https://arxiv.org/abs/2611.12934",
+        "titleAr": "EarthRecord يختبر الوكلاء متعددة الوسائط على صور أقمار صناعية تمتد أربعة عقود",
+        "status": "active_exact_match_pending"
+      },
+      {
+        "id": "e5cd4cd10b4ff8cfa7",
+        "url": "https://arxiv.org/abs/2611.12935",
+        "titleAr": "TopicScope يراقب تغيّر موضوع النص أثناء التوليد باستخدام ميزات المحولات التلقائية المتناثرة",
+        "status": "active_exact_match_pending"
+      },
+      {
+        "id": "1df6a00742e99b5a00",
+        "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+        "titleAr": "United Airlines تقيّد وكلاء الذكاء الاصطناعي الخارجيين من إجراء الحجوزات دون إذن",
+        "status": "active_exact_match_pending"
+      },
+      {
+        "id": "3b53bf6090ab9868ec",
+        "url": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
+        "titleAr": "OpenAI تستحوذ على Odessia وتستقطب مؤسس وكيل السفر",
+        "status": "active_exact_match_pending"
+      },
+      {
+        "id": "1385baee7258ede721",
+        "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5yU0dvLVdFS3VDbGFhalpycWxjRWJRVTVxZzlWMUZQZFdiaTNUVG02VzdkS1F2c3J1azY3OTdaRWdIRkdpbGc?oc=5",
+        "titleAr": "تقرير IMD 2026 يضع السعودية في المرتبة الثانية في مؤشرين لأمن الذكاء الاصطناعي",
+        "status": "active_exact_match_pending"
+      }
+    ],
+    "outsideCurrentFeed": [
+      {
+        "id": "86708699833d3a9796",
+        "url": "https://research.meta.ai/blog/muse-ember",
+        "titleAr": "ميتا تطلق Muse Ember كنموذج صغير للمهام المتكررة داخل الوكلاء"
+      },
+      {
+        "id": "5ef93d9981a0db1c3c",
+        "url": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
+        "titleAr": "آبل توسّع حدود استخدام بعض ميزات Apple Intelligence بحزم إضافية"
+      },
+      {
+        "id": "12c83389e580dec71d",
+        "url": "https://www.eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim/",
+        "titleAr": "DeepX تعلن اكتمال تصميم DX-M2 وتستهدف تشغيل نماذج كبيرة على أجهزة الطرف"
+      },
+      {
+        "id": "a8ac24a5fed69e7112",
+        "url": "https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy",
+        "titleAr": "كندا تطلق Real-Time Rail للمدفوعات الفورية على مدار الساعة"
+      },
+      {
+        "id": "a425346c085c7dcb99",
+        "url": "https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet/",
+        "titleAr": "ألواح شمسية شبه شفافة تسمح بمرور الضوء اللازم للنباتات في تجربة زراعية"
+      },
+      {
+        "id": "0a2b694e15caf809f8",
+        "url": "https://www.cnx-software.com/2026/11/03/when-will-this-stop-the-raspberry-pi-5-16gb-sbc-now-sells-for-385/",
+        "titleAr": "ارتفاع سعر نسخة 16GB من Raspberry Pi 5 بمقدار 80 دولارًا"
+      },
+      {
+        "id": "cec6ab6c90d6d9e9c1",
+        "url": "https://github.com/ikey4u/zebkit",
+        "titleAr": "Zebkit يقدّم محرك Chromium كمكتبة يمكن تضمينها في التطبيقات الأصلية"
+      },
+      {
+        "id": "fb9de46b88c3faa779",
+        "url": "https://e-means.github.io/",
+        "titleAr": "ورقة e-means تقترح تسريع تجميع k-means بتحديثات المتوسط المتحرك الأسي"
+      },
+      {
+        "id": "3c86ca6a06f60e03f0",
+        "url": "https://postalpro.usps.com/zcb",
+        "titleAr": "USPS تطرح خرائط حدود ZIP Code مشتقة من بيانات عناوين التسليم"
+      },
+      {
+        "id": "1addf27c71831a1839",
+        "url": "https://yappologistic.github.io/CUI/",
+        "titleAr": "CUI يقدم مكتبة واجهات C99 فورية متعددة الأنظمة دون اعتماديات خارجية"
+      },
+      {
+        "id": "0e9fb0eb84f13acffd",
+        "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+        "titleAr": "Google DeepMind تكشف AlphaProof Code للتحقق الشكلي من تنفيذ بروتوكول Signal"
+      },
+      {
+        "id": "c7d3010a8bcc401c0c",
+        "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
+        "titleAr": "Notion تكشف تفاصيل أثر حادثة Fireworks AI على بعض مساحات العمل"
+      },
+      {
+        "id": "a7b39cb0698327aa7f",
+        "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/",
+        "titleAr": "Google توسّع الجيل الثامن من TPU بنظامي 8tx و8i Max"
+      },
+      {
+        "id": "1d8889c9661cfe547b",
+        "url": "https://www.theverge.com/tech/1030601/ring-drone-cam-hands-on-price-release-date-ai-pilot",
+        "titleAr": "Ring تعلن كاميرا Drone Cam وروبوت Rover ضمن فئة Ring Robotics"
+      },
+      {
+        "id": "14645f9d816239f1eb",
+        "url": "https://aitnews.com/2026/11/11/%d8%b3%d9%8a%d8%ac%d9%8a%d8%aa-%d8%aa%d8%b7%d9%84%d9%82-firecuda-forge-%d8%a8%d8%aa%d8%ae%d8%b2%d9%8a%d9%86-%d9%85%d8%a4%d9%82%d8%aa-%d8%b0%d9%83%d9%8a-%d9%88%d8%b3%d8%b9%d8%a9-%d8%aa%d8%b5%d9%84/",
+        "titleAr": "Seagate تطلق FireCuda Forge بسعتي 8 و20 تيرابايت مع تخزين مؤقت ذكي"
+      },
+      {
+        "id": "31699ba3bf57a08cdb",
+        "url": "https://tendrils.co/blog/2026-11-10/30m-raised",
+        "titleAr": "Tendrils تعلن جمع 30 مليون دولار لتطوير معمارية معالجات موازية ولغة Vine"
+      },
+      {
+        "id": "b87487ef036547770a",
+        "url": "https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news/",
+        "titleAr": "تقرير Reuters Institute: استخدام الذكاء الاصطناعي يتوسع كمصدر للمعلومات لكن تقبّل صناعة الأخبار آليًا ما زال منخفضًا"
+      }
+    ],
+    "note": "كل العناصر الـ17 خارج Feed الحالي موسومة خارج التغذية مع انقضاء غير مؤكد. سجل التدقيق السابق أثبت أن 15 منها كانت seen-only؛ ظهر عنصران إضافيان خارج التغذية بعد تحديث Feed. لم تُخمن هوية العنصرين الجديدين ولم يُنشأ ID بديل."
+  },
+  "selectedIds": [
+    "caa9073cefb43725f1",
+    "126b111b5d436487e5",
+    "7fc88fbdaa8e97213d",
+    "5553fe020c93d3c2ae",
+    "ae543fdc68f7cb2628",
+    "35f9d4a8ad49bd077c",
+    "1b0c05cd97a311af5c",
+    "65b96c238445cdedc9",
+    "312cc2672ec7b82778",
+    "3ddc5cc5a5b08ed604",
+    "b8c7de61a30502becd",
+    "b0cee948b440301e45"
+  ],
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inPrEditorial": false,
+      "inSeen": true,
+      "dossier": "editorial/library/nvidia-openshell-release-review-2026-11-11-2040.json",
+      "publication": "research-only"
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inPrEditorial": false,
+      "inSeen": true,
+      "dossier": false,
+      "publication": "seen-only"
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inPrEditorial": false,
+      "inSeen": true,
+      "dossier": false,
+      "publication": "seen-only"
+    }
+  ],
+  "cli": {
+    "localCheckout": false,
+    "cloneAttempt": "git clone --filter=blob:none --no-checkout https://github.com/lm7md-ai/.-.git /tmp/nabdh",
+    "cloneResult": "failed: Could not resolve host github.com",
+    "notRun": [
+      "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-11-12-2038.json",
+      "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-11-12-2038.json",
+      "python scripts/editorial.py validate",
+      "python -m unittest discover -s tests -v"
+    ],
+    "structuralValidation": "12/12 entries passed required-field, HTTPS source, timestamp, basis and exact current Feed id+url checks; 931 previous Editorial records preserved unchanged in merged 943-record JSON"
+  },
+  "projectLibrary": {
+    "catalogTotal": 68,
+    "unarchived": 66,
+    "archived": 2,
+    "previouslyRecordedImprovements": 313,
+    "spinoffs": 296,
+    "religious": 34,
+    "countsRecomputedThisRun": false,
+    "publicProjectCardsAdded": 0,
+    "feedProjectCards": 100,
+    "feedProjectEditorialCoverage": 100,
+    "reasonNoNewProjectCard": "لا توجد بطاقة مشروع ناقصة في Feed؛ المكتبة البحثية الحالية تتجاوز هدف 30 مشروعًا."
+  },
+  "deployment": {
+    "merged": false,
+    "publishedNewEditorial": false,
+    "reason": "update-and-deploy.yml يعمل على push إلى main ويشغّل update_feed.py ثم ي stage feed.json وseen.json وstatus.json؛ الدمج سيطلق المسار القائم وقد يغير ملفات محمية. لا يوجد مسار نشر Editorial-only مثبت."
+  }
+}
