@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "runAt": "2026-11-12T18:41:02+03:00",
+  "repository": "lm7md-ai/.-",
+  "main": {
+    "sha": "32c21fedf510fa24eccea0e44a80f57cb6e6db58",
+    "feedItems": 800,
+    "editorialItems": 917,
+    "seenIds": 4546,
+    "lastFeedRefresh": "2026-11-12T07:06:45+00:00",
+    "status": "ok"
+  },
+  "pullRequest": {
+    "number": 98,
+    "state": "open",
+    "mergeable": true,
+    "branch": "editorial/2026-11-10-0243-research-and-incoming",
+    "headSha": "1363b21b721fc7be290a50498b629279bc3bff1b",
+    "base": "main",
+    "ahead": 64,
+    "behind": 0,
+    "editorialItems": 931,
+    "latestPassingRun": 43249447718,
+    "latestPassingRunHead": "1363b21b721fc7be290a50498b629279bc3bff1b"
+  },
+  "incomingAudit": {
+    "main": {
+      "files": 102,
+      "occurrences": 1054,
+      "uniqueIdUrlPairs": 932,
+      "duplicates": 122,
+      "editorialMatches": 870,
+      "seenOnly": 62,
+      "idUrlMismatches": 0,
+      "invalidJson": 0,
+      "confirmedExpired": 0,
+      "auditMainSha": "32c21fedf510fa24eccea0e44a80f57cb6e6db58",
+      "reusedUnchangedMainAudit": true
+    },
+    "pullRequest": {
+      "files": 11,
+      "occurrences": 78,
+      "uniqueIdUrlPairs": 52,
+      "duplicateOccurrences": 26,
+      "uniqueActivePairs": 37,
+      "alreadyEditorialPairs": 15,
+      "newActivePairs": 22,
+      "seenOnlyPairs": 15,
+      "idUrlMismatches": 0,
+      "idsWithMultipleUrls": 0,
+      "invalidJson": 0,
+      "confirmedExpired": 0
+    },
+    "duplicateNote": "The 14-record 2026-11-12-1811 file contains 14 exact ID/URL pairs already present in earlier incoming files and already represented in PR Editorial; it adds zero unique pairs."
+  },
+  "backlog": {
+    "eligibleNewActive": 22,
+    "selectedForThisRun": 12,
+    "remainingActive": 10,
+    "selectedIds": [
+      "caa9073cefb43725f1",
+      "126b111b5d436487e5",
+      "5553fe020c93d3c2ae",
+      "ae543fdc68f7cb2628",
+      "35f9d4a8ad49bd077c",
+      "1b0c05cd97a311af5c",
+      "1df6a00742e99b5a00",
+      "3ddc5cc5a5b08ed604",
+      "b8c7de61a30502becd",
+      "b0cee948b440301e45",
+      "70b6e0e37bdecc39c4",
+      "b87487ef036547770a"
+    ],
+    "selectedBasis": {
+      "article": 11,
+      "metadata": 1
+    },
+    "localCli": {
+      "officialScriptBlobSha": "5996ca5c8eae1b25950c349336d4d0f48067fe8c",
+      "commands": [
+        "python scripts/editorial.py validate editorial/incoming/backlog-12-2026-11-12.json",
+        "python scripts/editorial.py import editorial/incoming/backlog-12-2026-11-12.json",
+        "python scripts/editorial.py validate"
+      ],
+      "results": [
+        "exit 0: Validated 12 editorial entries",
+        "exit 0: import completed",
+        "exit 0: Validated 929 editorial entries"
+      ],
+      "baseEditorial": 917,
+      "resultEditorial": 929,
+      "oldRecordsPreserved": true,
+      "feedUnchanged": true,
+      "seenUnchanged": true,
+      "persistedToPullRequest": false,
+      "warning": "Python startup emitted a spreadsheet-runtime warmup traceback, but each command returned exit code 0."
+    },
+    "persistenceBlock": "The large PR Editorial blob could not be fetched completely through the available GitHub content endpoints in this run. No partial or reconstructed replacement was committed; existing PR Editorial remains 931."
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "inFeed": false,
+      "inEditorial": false,
+      "inSeen": true,
+      "researchDossier": "editorial/library/nvidia-openshell-release-review-2026-11-11-2040.json",
+      "publication": "research-only"
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "inFeed": false,
+      "inEditorial": false,
+      "inSeen": true,
+      "dossier": false,
+      "publication": "seen-only"
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "inFeed": false,
+      "inEditorial": false,
+      "inSeen": true,
+      "dossier": false,
+      "publication": "seen-only"
+    }
+  ],
+  "projectLibrary": {
+    "lastReportedCount": 68,
+    "lastReportedUnarchived": 66,
+    "lastReportedArchived": 2,
+    "latestEightMetricsFile": "editorial/library/previous-eight-metrics-2026-11-12-1811.json",
+    "newMetricsFile": "editorial/library/previous-eight-metrics-2026-11-12-1841.json",
+    "newProjectDossiers": 0
+  },
+  "deployment": {
+    "latestSuccessfulMainRun": 43172835178,
+    "artifactId": 13922064135,
+    "artifactEditorialItems": 917,
+    "pagesDirectFetch": "DisabledError",
+    "merged": false,
+    "publishedNewEditorial": false,
+    "reason": "update-and-deploy.yml runs update_feed.py on push to main, then stages feed.json, seen.json and status.json; these are protected by the user's instruction."
+  },
+  "protectedFilesUnchanged": [
+    "site/data/feed.json",
+    "site/data/seen.json",
+    "site/data/status.json",
+    ".github/workflows/update-and-deploy.yml",
+    ".github/workflows/check.yml",
+    "scripts/editorial.py",
+    "README.md",
+    "docs/CONTENT_GUIDE.md",
+    "docs/SCHEDULED_EDITOR_PROMPT.md"
+  ]
+}
