@@ -248,13 +248,20 @@
     "localCheckout": false,
     "cloneAttempt": "git clone --filter=blob:none --no-checkout https://github.com/lm7md-ai/.-.git /tmp/nabdh",
     "cloneResult": "failed: Could not resolve host github.com",
-    "notRun": [
+    "localCommandsNotRun": [
       "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-11-12-2038.json",
       "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-11-12-2038.json",
-      "python scripts/editorial.py validate",
-      "python -m unittest discover -s tests -v"
+      "python scripts/editorial.py import editorial/incoming/nabdh-project-refresh-2026-11-12-2038.json"
     ],
-    "structuralValidation": "12/12 entries passed required-field, HTTPS source, timestamp, basis and exact current Feed id+url checks; 931 previous Editorial records preserved unchanged in merged 943-record JSON"
+    "ci": {
+      "runId": 43273570150,
+      "headSha": "a5d871adf1db868da5e6b3b57dfe3f1bec54e9df",
+      "conclusion": "success",
+      "tests": 30,
+      "unitTests": "OK",
+      "editorialValidation": "Validated 943 editorial entries",
+      "javascriptSyntax": "success"
+    }
   },
   "projectLibrary": {
     "catalogTotal": 68,
@@ -272,6 +279,16 @@
   "deployment": {
     "merged": false,
     "publishedNewEditorial": false,
-    "reason": "update-and-deploy.yml يعمل على push إلى main ويشغّل update_feed.py ثم ي stage feed.json وseen.json وstatus.json؛ الدمج سيطلق المسار القائم وقد يغير ملفات محمية. لا يوجد مسار نشر Editorial-only مثبت."
+    "reason": "update-and-deploy.yml triggers on push to main, runs update_feed.py, then stages feed.json, seen.json and status.json; no Editorial-only deploy path is configured."
+  },
+  "projectReview": {
+    "projectsReviewed": 8,
+    "feedEnriched": 1,
+    "researchOnly": 7,
+    "newPublicProjectCards": 0,
+    "readmeAndLicenseReRead": true,
+    "testsRun": 0,
+    "testsStatus": "not_run",
+    "reviewFile": "editorial/library/previous-eight-review-2026-11-12-2038.json"
   }
 }
