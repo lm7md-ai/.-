@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "project": "NVIDIA/OpenShell",
+  "projectId": "940ec4695c1e241c2f",
+  "publicationStatus": "research-only",
+  "inFeed": false,
+  "inEditorial": false,
+  "inSeen": true,
+  "reviewedAt": "2026-11-11T20:40:22+03:00",
+  "repositorySnapshot": {
+    "stars": 21447,
+    "forks": 2093,
+    "openIssuesCount": 645,
+    "license": "Apache-2.0",
+    "archived": false,
+    "disabled": false,
+    "pushedAt": "2026-11-11T17:37:05Z",
+    "updatedAt": "2026-11-11T17:43:43Z",
+    "measuredAt": "2026-11-11T20:40:22+03:00",
+    "source": "https://api.github.com/repos/NVIDIA/OpenShell"
+  },
+  "latestRelease": {
+    "tag": "v0.1.8",
+    "isLatestStable": true,
+    "publishedAt": "2026-11-10T18:14:36Z",
+    "url": "https://github.com/NVIDIA/OpenShell/releases"
+  },
+  "releaseHighlights": [
+    "تغيير موضع بيانات اعتماد المزوّد: بيانات الاعتماد الثابتة تحل افتراضيًا في Authorization header، وتحتاج مواضع body/WebSocket إلى سياسات rewrite صريحة؛ راجع upgrade notes قبل ترقية بوابة قائمة.",
+    "طلبات HTTP upgrade على REST endpoints تعاد الآن 403؛ يجب تعريف WebSocket صراحة بسياسات handshake/message.",
+    "تغيرت حقول إسناد sandbox في أحداث OCSF، وقد تحتاج SIEM parsers إلى تحديث.",
+    "SDK Python أصبح في ai-openshell/sdk-python؛ وGo SDK القديم معلن deprecated لصالح ai-openshell/sdk-go.",
+    "ملاحظات الإصدار تشير إلى انتقال مخطط إلى CNCF ومنظمة ai-openshell؛ هذا إعلان خطة وليس إثبات اكتمال النقل."
+  ],
+  "overview": "OpenShell runtime لإدارة وتشغيل وكلاء الذكاء الاصطناعي داخل sandboxes مع سياسات للملفات والشبكة والهوية. هو طبقة تشغيل وعزل، وليس نموذجًا لغويًا. تحديث v0.1.8 مهم خصوصًا لمن لديهم سياسات credentials أو WebSocket أو OCSF أو SDKs.",
+  "limitations": "لا يظهر تعارض إصدار بين صفحة Installation وDeveloper Guide وGitHub Releases؛ جميعها تشير إلى v0.1.8. تتضمن ملاحظات الترقية تغييرات كاسرة في مواضع credentials وWebSocket وOCSF وSDKs، لذا يجب قراءة upgrade notes قبل ترقية بيئة قائمة. لا توجد تجربة تشغيل أو اختبار أمني مستقل في هذه المراجعة.",
+  "testStatus": "not_run",
+  "sources": [
+    {
+      "title": "GitHub Releases — OpenShell v0.1.8",
+      "url": "https://github.com/NVIDIA/OpenShell/releases"
+    },
+    {
+      "title": "OpenShell Developer Guide — latest v0.1.8",
+      "url": "https://docs.nvidia.com/openshell/home"
+    },
+    {
+      "title": "OpenShell Installation page — latest v0.1.8",
+      "url": "https://docs.nvidia.com/openshell/latest/about/installation"
+    },
+    {
+      "title": "Official repository and README",
+      "url": "https://github.com/NVIDIA/OpenShell"
+    },
+    {
+      "title": "Apache-2.0 license",
+      "url": "https://github.com/NVIDIA/OpenShell/blob/main/LICENSE"
+    }
+  ],
+  "documentationConsistency": {
+    "developerGuide": "v0.1.8",
+    "installationPage": "v0.1.8",
+    "githubLatestRelease": "v0.1.8",
+    "status": "consistent",
+    "note": "الصفحة /latest/about/installation وDeveloper Guide كلتاهما تعرضان Latest v0.1.8؛ ظهور v0.1.7 في نتائج البحث كان لصفحة الإصدار السابق، وليس نسخة latest."
+  }
+}

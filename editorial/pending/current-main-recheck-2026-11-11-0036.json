@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-11T00:36:40+03:00",
+  "main": {
+    "sha": "83fecb11b1141646254105ff0752712523592d16",
+    "parent": "5f9e9b980f51c2e3372e75dc6aed5b2884b55234",
+    "generatedAt": "2026-11-10T21:17:15+00:00",
+    "blobs": {
+      "feed": "c989ec4be5dd2e2e8211a62d3ee2f514658a5242",
+      "editorial": "430ec5a47ff85d4eebd9fba101d40664fe97e769",
+      "seen": "6db3b3b59e9b4751b202882238a2c785475fb21c",
+      "status": "dc814d05e45e60be6d5e19870335bb9ce02b1944"
+    },
+    "counts": {
+      "feed": 800,
+      "news": 700,
+      "projects": 100,
+      "editorial": 917,
+      "activeEditorial": 240,
+      "activeNews": 141,
+      "activeProjects": 99,
+      "historicalEditorial": 677,
+      "seenIds": 4211,
+      "seenTitles": 4047,
+      "status": "ok",
+      "collected": 326,
+      "sources": 26,
+      "sourcesOk": 24,
+      "sourcesEmpty": 2
+    },
+    "emptySources": [
+      "أبحاث الذكاء الاصطناعي",
+      "أبحاث تعلّم الآلة"
+    ]
+  },
+  "pullRequests": {
+    "pr1": {
+      "state": "closed",
+      "merged": true,
+      "mergedAt": "2026-10-24T10:21:47Z"
+    },
+    "pr2": {
+      "state": "closed",
+      "merged": true,
+      "mergedAt": "2026-10-24T10:07:54Z"
+    },
+    "pr98": {
+      "state": "open",
+      "mergeable": true,
+      "base": "5f9e9b980f51c2e3372e75dc6aed5b2884b55234",
+      "head": "399d9d468fa6f960f6267e0ab653c41c3062fd43",
+      "aheadBy": 25,
+      "behindBy": 1,
+      "changedFiles": 31,
+      "additions": 5740,
+      "deletions": 13,
+      "changedPathScope": [
+        "editorial/**",
+        "site/data/editorial.json"
+      ]
+    }
+  },
+  "mainIncomingDifferential": {
+    "files": 102,
+    "sameFileHashesAsPreviousFullScan": true,
+    "previousFullScan": {
+      "basedOnMain": "5f9e9b980f51c2e3372e75dc6aed5b2884b55234",
+      "report": "editorial/pending/incoming-reconciliation-2026-11-10-2039.json",
+      "occurrences": 1054,
+      "uniqueIdUrlPairs": 932,
+      "duplicateOccurrences": 122,
+      "importedExactPairs": 870,
+      "seenOnlyOutsideFeed": 62,
+      "activeExactNotImported": 0,
+      "sameIdDifferentUrl": 0,
+      "unseenOrphans": 0,
+      "confirmedExpired": 0,
+      "jsonParseErrors": 0,
+      "structurallyValidFiles": 102,
+      "officialCliExecuted": false
+    },
+    "latestFeedDelta": {
+      "addedItems": 85,
+      "droppedItems": 85,
+      "seenOnlyIncomingNowActive": 0,
+      "addedFeedItemsAlreadyInEditorial": 1,
+      "droppedFeedItemsWithEditorial": 14,
+      "currentActiveEditorial": 240
+    },
+    "note": "All 102 incoming file blob hashes are unchanged between the previously audited main and current main. The 62 previously seen-only ID/URL pairs were cross-checked against the 85 new feed IDs; none became active. This is a differential recheck, not a fresh field-by-field rerun of all 102 files."
+  },
+  "prIncoming": {
+    "files": [
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+        "occurrences": 12,
+        "structuralEquivalent": "pass"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-10-0846.json",
+        "occurrences": 2,
+        "structuralEquivalent": "pass"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-10-2039-reconciled.json",
+        "occurrences": 14,
+        "structuralEquivalent": "pass"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-10-2338.json",
+        "occurrences": 6,
+        "structuralEquivalent": "pass"
+      }
+    ],
+    "occurrences": 34,
+    "uniqueIdUrlPairs": 22,
+    "duplicateOccurrences": 12,
+    "activeExactPairs": 12,
+    "alreadyPresentExactInMainEditorial": 1,
+    "activeNewCandidates": 11,
+    "activeNewNews": 10,
+    "activeNewProjects": 1,
+    "seenOnlyOutsideCurrentFeed": 10,
+    "nowHistoricalButActiveInOldFeed": 8,
+    "neverInOldOrCurrentFeedButSeenOnly": 2,
+    "idUrlMismatches": 0,
+    "orphans": 0,
+    "notInPrEditorial": [
+      {
+        "id": "a425346c085c7dcb99",
+        "url": "https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet/",
+        "classification": "seen-only; not in old or current feed"
+      },
+      {
+        "id": "cec6ab6c90d6d9e9c1",
+        "url": "https://github.com/ikey4u/zebkit",
+        "classification": "seen-only; not in old or current feed; research dossier exists"
+      }
+    ],
+    "currentActiveNewIds": [
+      "caa9073cefb43725f1",
+      "a3bc8ca770f44f2d28",
+      "0eeaaf4c87a4398c95",
+      "126b111b5d436487e5",
+      "7fc88fbdaa8e97213d",
+      "0e9fb0eb84f13acffd",
+      "c7d3010a8bcc401c0c",
+      "a7b39cb0698327aa7f",
+      "5553fe020c93d3c2ae",
+      "1d8889c9661cfe547b",
+      "d62e152dace4589504"
+    ],
+    "staleButPreviouslyActiveIds": [
+      "86708699833d3a9796",
+      "5ef93d9981a0db1c3c",
+      "12c83389e580dec71d",
+      "a8ac24a5fed69e7112",
+      "0a2b694e15caf809f8",
+      "fb9de46b88c3faa779",
+      "3c86ca6a06f60e03f0",
+      "1addf27c71831a1839"
+    ],
+    "note": "The 8 records above were active in the previous feed but are absent from the current feed; they are historical entries already present on the PR branch, not candidates for a fresh import. The official import command would reject them if passed as incoming against the current feed."
+  },
+  "specialRecords": {
+    "NVIDIA OpenShell": {
+      "id": "940ec4695c1e241c2f",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "researchDossier": true,
+      "publication": "research-only"
+    },
+    "Canva Craft": {
+      "id": "317abcdd1b20728a7e",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "researchDossier": false,
+      "publication": "seen-only"
+    },
+    "1Password agent sign-in": {
+      "id": "662e68277c6361dd4b",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "researchDossier": false,
+      "publication": "seen-only"
+    }
+  },
+  "holds": [
+    {
+      "id": "d18ddd9c12e46dd96b",
+      "reason": "seen-only closed historical issue from 2022; requires current primary evidence"
+    },
+    {
+      "id": "e3e3a03bfc5be7aa43",
+      "reason": "active feed item has Google News intermediary URL; require original publisher URL and date"
+    },
+    {
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "historicalId": "7a99eca9b2ce14d9f5",
+      "activeId": "e0cbbf211a55e79f34",
+      "reason": "preserve both identities; no title-derived alias or remap"
+    }
+  ],
+  "library": {
+    "cumulativeProjects": 67,
+    "unarchived": 65,
+    "archived": 2,
+    "previousEightRefresh": "editorial/library/previous-eight-refresh-2026-11-10-2338.json",
+    "newProjectDossierAdded": 0,
+    "reason": "library exceeds the requested ~30-project target; current main project coverage is 99/100 and PR coverage is 100/100"
+  },
+  "githubActions": {
+    "mainScheduledRun": {
+      "id": 42903504532,
+      "conclusion": "success",
+      "artifactId": 13803119125
+    },
+    "prValidationRun": {
+      "id": 42899204094,
+      "conclusion": "success",
+      "steps": [
+        "python -m unittest discover -s tests -v",
+        "python scripts/editorial.py validate",
+        "node --check site/app.js",
+        "node --check site/ideas.js"
+      ]
+    },
+    "mainArtifact": {
+      "feed": 800,
+      "editorial": 917,
+      "seenIds": 4211,
+      "seenTitles": 4047,
+      "status": "ok",
+      "sourcesOk": 24,
+      "sourcesTotal": 26,
+      "blobShaMatchesMain": {
+        "feed": true,
+        "editorial": true,
+        "seen": true,
+        "status": true
+      }
+    },
+    "liveHttpCheck": "not available: browser DisabledError and container DNS resolution failure; deployed artifact itself was downloaded and inspected"
+  },
+  "localCommandsNotExecuted": [
+    "python scripts/editorial.py validate <incoming-file>",
+    "python scripts/editorial.py import <incoming-file>",
+    "python -m unittest discover -s tests -v"
+  ],
+  "decision": "Do not merge PR #98: the existing push-to-main workflow runs scripts/update_feed.py and stages feed.json, seen.json, and status.json before deployment. Merging could modify protected files. Keep PR open until a safe publication path exists without changing workflows or protected data."
+}

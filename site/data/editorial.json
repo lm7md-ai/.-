@@ -3259,15 +3259,16 @@
     },
     "7c94eb734f17ebfcce": {
       "url": "https://github.com/open-webui/open-webui",
-      "titleAr": "Open WebUI: واجهة للنماذج المحلية والسحابية",
-      "summaryAr": "واجهة ذاتية الاستضافة تدعم Ollama وواجهات API المتوافقة مع OpenAI، وتضم RAG وإضافات وأدوات وإدارة مستخدمين. يمكن أن تعمل دون اتصال عندما تكون جميع النماذج والخدمات محلية، بينما الاعتماد على API أو بحث ويب يستلزم اتصالًا وربما رسومًا.",
-      "whyItMatters": "تساعد على جمع نماذج متعددة في واجهة واحدة مع التحكم في مكان معالجة البيانات. العمل محليًا ليس مضمونًا بمجرد تثبيت الواجهة.",
-      "audience": "مستخدمو النماذج المحلية والمطورون وفرق المعرفة.",
+      "titleAr": "Open WebUI: واجهة ذاتية الاستضافة للنماذج المحلية والسحابية",
+      "summaryAr": "منصة ذاتية الاستضافة لواجهة نماذج محلية أو سحابية؛ تدعم Ollama وواجهات API المتوافقة مع OpenAI، ويمكن تثبيتها عبر Python 3.12 أو Docker. لا تتضمن نموذجًا خاصًا بها، ويعتمد العمل دون اتصال على بقاء النموذج وخدمات التضمين واستخراج المستندات محلية.",
+      "whyItMatters": "تجمع نماذج ومصادر متعددة في واجهة واحدة مع إمكانية إبقاء البيانات على الجهاز عند استخدام مزود محلي. لكن اختيار API سحابي أو بحث ويب خارجي يغيّر نموذج الخصوصية والتكلفة؛ وجود واجهة محلية لا يجعل كل المعالجة محلية تلقائيًا.",
+      "audience": "مستخدمو النماذج المحلية، مطورو تطبيقات الذكاء الاصطناعي، وفرق المعرفة الصغيرة.",
       "nextSteps": [
-        "راجع README واختر pip أو Docker مع تخزين دائم.",
-        "جرّب ربط نموذج محلي قبل إضافة خدمات مدفوعة."
+        "اختر Ollama محليًا أو مزود API، وتأكد من عنوان الاتصال قبل تنزيل النماذج.",
+        "عند Docker استخدم وحدة تخزين دائمة ومفتاح WEBUI_SECRET_KEY ثابتًا، وثبّت إصدارًا محددًا بدل وسم main في الإنتاج.",
+        "راجع Open WebUI License وLICENSE_HISTORY قبل إزالة العلامة التجارية أو إعادة توزيع نسخة معدلة."
       ],
-      "limitations": "لم نشغّل الخدمة؛ الترخيص Open WebUI License يتضمن شروط علامة تجارية لبعض حالات النشر والتعديل.",
+      "limitations": "لا يتضمن المشروع نموذجًا لغويًا؛ تشغيله دون اتصال يتطلب أن تكون النماذج وخدمات التضمين واستخراج المستندات محلية. API السحابي وخدمات البحث قد تفرض رسومًا مستقلة. GitHub API يعرض الترخيص NOASSERTION لأن LICENSE الحالي مخصص باسم Open WebUI License وليس SPDX قياسيًا؛ يمنع إزالة العلامة التجارية أو تغييرها إذا تجاوز النشر 50 مستخدمًا خلال أي 30 يومًا متحركًا، إلا بإذن كتابي أو ترخيص مؤسسي صريح. المواد الأقدم تحتفظ بتراخيصها السابقة وفق LICENSE_HISTORY. لم نشغّل المشروع في هذه المراجعة.",
       "basis": "readme",
       "sources": [
         {
@@ -3275,21 +3276,33 @@
           "url": "https://github.com/open-webui/open-webui/blob/main/README.md"
         },
         {
-          "title": "Open WebUI documentation",
-          "url": "https://docs.openwebui.com/"
+          "title": "Open WebUI Quick Start",
+          "url": "https://docs.openwebui.com/getting-started/quick-start/"
+        },
+        {
+          "title": "Open WebUI Authentication & Access",
+          "url": "https://docs.openwebui.com/features/authentication-access/"
+        },
+        {
+          "title": "Open WebUI API Keys",
+          "url": "https://docs.openwebui.com/features/authentication-access/api-keys/"
         },
         {
           "title": "Open WebUI License",
           "url": "https://github.com/open-webui/open-webui/blob/main/LICENSE"
         },
         {
+          "title": "Open WebUI License History",
+          "url": "https://github.com/open-webui/open-webui/blob/main/LICENSE_HISTORY"
+        },
+        {
           "title": "Ollama repository",
           "url": "https://github.com/ollama/ollama"
         }
       ],
-      "overview": "خادم ويب للمحادثات والمستخدمين والملفات والأدوات يتصل بالنماذج عبر Ollama وواجهات متوافقة. يدعم RAG وقواعد متجهات متعددة وتكاملات MCP والذاكرة وتحليلات الاستخدام؛ هذه مزايا قائمة وليست تحسينات مقترحة.",
-      "requirements": "يوصي README باستخدام Python 3.11 عند التثبيت عبر pip، أو Docker مع وحدة تخزين دائمة. النماذج المحلية تحتاج عتادًا حسب الحجم، والخدمات الخارجية قد تكون مدفوعة. راجع Open WebUI License وLICENSE_HISTORY قبل تعديل العلامة التجارية.",
-      "quickStart": "وفق README: pip install open-webui ثم open-webui serve للوصول إلى localhost:8080 في بيئة Python 3.11. أو اتبع مثال Docker الرسمي مع -v open-webui:/app/backend/data للحفاظ على البيانات.",
+      "overview": "Open WebUI خادم واجهة محادثة ذاتية الاستضافة يربط Ollama ومزودي OpenAI-compatible، ويقدم إدارة نماذج ومحادثات وملفات وRAG وأدوات ومستخدمين ومفاتيح API. يعمل محليًا عند إبقاء النموذج وخدمات المعالجة محلية، ويمكنه أيضًا الاتصال بخدمات سحابية. لا يرفق نموذجًا خاصًا به.",
+      "requirements": "README الحالي يتطلب Python 3.12 لمسار Python أو Docker للمسار الموصى به. النماذج المحلية تحتاج ذاكرة ومعالجًا/معالجًا رسوميًا مناسبًا لحجم النموذج؛ ووسم CUDA يحتاج NVIDIA Container Toolkit. صورة slim تعتمد على خدمات خارجية للتضمين واستخراج المستندات والصوت. يمكن ربط Ollama محليًا أو API خارجي؛ تكلفة API حسب مزود النموذج والاستخدام. الترخيص الحالي Open WebUI License بشروط علامة تجارية خاصة، وليس MIT.",
+      "quickStart": "Python: uvx --python 3.12 open-webui@latest serve أو pip install open-webui ثم open-webui serve وافتح localhost:8080. Docker: استخدم الصورة الرسمية ghcr.io/open-webui/open-webui:main مع -v open-webui:/app/backend/data ومفتاح WEBUI_SECRET_KEY ثابت، وافتح localhost:3000. بعد الدخول اربط Ollama أو API من Settings > Admin > Connections. للإنتاج ثبّت رقم إصدار محددًا.",
       "improvements": [
         {
           "title": "كشف الاستشهادات القديمة بعد تحديث مستندات RAG",
@@ -3471,7 +3484,10 @@
           ]
         }
       ],
-      "reviewedAt": "2026-10-24T14:40:39+00:00"
+      "reviewedAt": "2026-11-10T08:46:13+03:00",
+      "costModel": "لا يفرض المشروع رسومًا على استخدام الشيفرة بذاتها؛ التشغيل المحلي يستهلك عتادك والكهرباء والتخزين. مزودات API السحابية، وخدمات البحث أو استخراج المستندات الخارجية، تُحاسب وفق شروطها. لا يوجد نموذج مرفق ضمن Open WebUI.",
+      "licenseSummary": "Open WebUI License مخصص؛ يحظر تغيير العلامة التجارية في النشر/التوزيع لأكثر من 50 مستخدمًا خلال 30 يومًا متحركًا إلا بإذن كتابي أو ترخيص مؤسسي صريح. المواد السابقة على تغيير الترخيص تحتفظ بشروط LICENSE_HISTORY.",
+      "testStatus": "not_run"
     },
     "074fde187f687eacc1": {
       "url": "https://blog.python.org/2026/10/python-3151-3149-31317/",
@@ -39177,6 +39193,1844 @@
         {
           "title": "llama-modchip technical paper",
           "url": "https://github.com/synchopate/llama-modchip/blob/main/paper/llama-modchip-paper.pdf"
+        }
+      ]
+    },
+    "86708699833d3a9796": {
+      "url": "https://research.meta.ai/blog/muse-ember",
+      "titleAr": "ميتا تطلق Muse Ember كنموذج صغير للمهام المتكررة داخل الوكلاء",
+      "summaryAr": "أعلنت Meta عن Muse Ember للمهام المتكررة داخل الوكلاء. تذكر الشركة نافذة سياق مليون رمز وحدّ إخراج 512 ألف رمز، وتسعيرًا قدره 0.10 دولار للإدخال و0.004 دولار للإدخال المخزن و0.50 دولار للإخراج لكل مليون رمز.",
+      "whyItMatters": "قد يخفض تكلفة المهام المتكررة داخل الوكلاء، لكن الاختيار ينبغي أن يعتمد على اختبار الدقة وزمن الاستجابة على مهامك لا على ترتيب الشركة وحده.",
+      "audience": "مطورو الوكلاء البرمجيين، وفرق أدوات المطورين، ومهندسو الأنظمة الذين يقارنون تكلفة الاستدلال المحلي والسحابي.",
+      "nextSteps": [
+        "قارن الدقة والسرعة والتكلفة على مجموعة مهام ثابتة.",
+        "اختبر استدعاء الأدوات والتعامل مع الأخطاء قبل الإنتاج."
+      ],
+      "limitations": "الأرقام والاختبارات من Meta أو شركائها ولم نعد تنفيذها مستقلًا؛ الأسعار تخص API المعلن وقد تتغير.",
+      "reviewedAt": "2026-11-10T02:43:48+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Meta AI Research — Introducing Muse Ember",
+          "url": "https://research.meta.ai/blog/muse-ember"
+        }
+      ]
+    },
+    "caa9073cefb43725f1": {
+      "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+      "titleAr": "OpenAI تتيح ChatGPT Enterprise عبر AWS Marketplace",
+      "summaryAr": "أعلنت OpenAI إتاحة ChatGPT Enterprise عبر AWS Marketplace، مع إدارة الفوترة من خلال AWS وإمكانية احتساب الإنفاق المؤهل ضمن التزامات السحابة. وتقول الشركة إن ميزات الخدمة ونماذجها هي نفسها المتاحة مباشرة.",
+      "whyItMatters": "التغيير في قناة الشراء والحوكمة المؤسسية، وليس إطلاق نموذج جديد أو إتاحة عامة للأفراد.",
+      "audience": "مسؤولو تقنية المعلومات والمشتريات السحابية، وفرق الحوكمة وإدارة اشتراكات الذكاء الاصطناعي في المؤسسات.",
+      "nextSteps": [
+        "تحقق من أهلية المؤسسة وشروط الإدراج.",
+        "قارن الفوترة والحوكمة مع التعاقد المباشر."
+      ],
+      "limitations": "لا يعرض الإعلان سعرًا موحدًا؛ الأهلية والتوافر يعتمدان على اتفاق المؤسسة مع AWS وOpenAI.",
+      "reviewedAt": "2026-11-10T02:43:48+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "OpenAI — ChatGPT Enterprise now available in AWS Marketplace",
+          "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace"
+        }
+      ]
+    },
+    "a3bc8ca770f44f2d28": {
+      "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/",
+      "titleAr": "Anthropic تحدّث Mythos وFable إلى الإصدار 5.2 مع تحسينات معلنة",
+      "summaryAr": "أعلنت Anthropic تحديث Fable وMythos إلى 5.2، وقالت إنهما أسرع حتى 30% من الجيل السابق. تسعير Fable المعلن 8 دولارات لكل مليون رمز إدخال و40 دولارًا للإخراج؛ أما Mythos فيتاح للجهات المؤهلة عبر برامج تحقق.",
+      "whyItMatters": "السعر والسرعة وسياسات الاحتفاظ بالبيانات وتقييم السلامة عوامل أساسية عند اختيار نموذج جديد، ويجب فصل تصريحات الشركة عن القياس المستقل.",
+      "audience": "مطورو تطبيقات النماذج، وفرق تقييم النماذج، ومسؤولو الخصوصية والحوكمة المؤسسية.",
+      "nextSteps": [
+        "راجع بطاقة النظام وملاحظات الإصدار قبل الاعتماد.",
+        "قارن السعر والسرعة والجودة على مجموعة تقييم ثابتة."
+      ],
+      "limitations": "نسب السرعة والأداء من اختبارات Anthropic وليست قياسًا مستقلًا هنا. Mythos ليس متاحًا للجميع؛ الوصول مشروط ببرامج التحقق.",
+      "reviewedAt": "2026-11-10T02:43:48+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — Anthropic releases new Mythos and Fable models",
+          "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/"
+        },
+        {
+          "title": "Anthropic — Claude Fable 5.2 and Mythos 5.2",
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+        }
+      ]
+    },
+    "5ef93d9981a0db1c3c": {
+      "url": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
+      "titleAr": "آبل توسّع حدود استخدام بعض ميزات Apple Intelligence بحزم إضافية",
+      "summaryAr": "أفاد The Verge أن Apple أضافت خيار شراء حزمة استخدام إضافية لمرة واحدة بسعر 49.99 دولارًا لبعض ميزات الذكاء الاصطناعي السحابية. عند النشر كان الشراء متاحًا في Logic Pro فقط، مع توقع توسيعه إلى تطبيقات أخرى؛ الحزمة مرتبطة بالحساب المشترِي ولا تدعم Family Sharing وتنتهي بعد 12 شهرًا.",
+      "whyItMatters": "بعض ميزات الذكاء الاصطناعي تتحول إلى استخدام محدود شهريًا ثم تكلفة إضافية؛ لذلك تهم الحدود والخصوصية قبل الاعتماد عليها.",
+      "audience": "مطورو التطبيقات الإبداعية، ومستخدمو أدوات الإنتاج، وفرق التقنية التي تقيّم حدود استخدام خدمات الذكاء الاصطناعي.",
+      "nextSteps": [
+        "راجع حدود الاستخدام والأجهزة والمناطق في دعم Apple.",
+        "ميّز الميزات المحلية من الميزات التي ترسل الطلب لمزود سحابي."
+      ],
+      "limitations": "لم يتاح النص الكامل لمقال The Verge أو صفحة Apple Support المرتبطة في هذه المراجعة؛ هذا الوصف مبني على بيانات التغذية والمقتطف المتاح، ويجب الرجوع إلى شروط Apple الرسمية قبل اعتماد السعر أو قيود الاستخدام.",
+      "reviewedAt": "2026-11-10T20:39:19+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "The Verge — Apple’s Intelligence Usage Packs",
+          "url": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro"
+        },
+        {
+          "title": "Apple Support — About the intelligence features in Apple Creator Studio",
+          "url": "https://support.apple.com/en-us/127888"
+        }
+      ]
+    },
+    "12c83389e580dec71d": {
+      "url": "https://www.eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim/",
+      "titleAr": "DeepX تعلن اكتمال تصميم DX-M2 وتستهدف تشغيل نماذج كبيرة على أجهزة الطرف",
+      "summaryAr": "بحسب EE Times، أنهت DeepX مرحلة tape-out لمسرّع DX-M2 لأجهزة الطرف. وتقول محاكاة الشركة إن إسناد GEMV إلى LPDDR5x-PIM رفع معدل الرموز 6.7 أضعاف على Llama 3.1 8B، مقابل طاقة أعلى 2.7 ضعف.",
+      "whyItMatters": "قد يوسّع PIM تشغيل النماذج على الأجهزة الطرفية، لكن الأداء والطاقة يجب قياسهما على شريحة فعلية لا على المحاكاة فقط.",
+      "audience": "مهندسو العتاد والأنظمة المضمنة، وفرق الروبوتات وإنترنت الأشياء، ومهندسو استدلال النماذج.",
+      "nextSteps": [
+        "انتظر عينات العتاد ونتائج القياس المستقلة.",
+        "قارن الأداء والطاقة والحرارة على حمل متطابق."
+      ],
+      "limitations": "مكسب 6.7 أضعاف نتيجة محاكاة منسوبة إلى DeepX وليس قياسًا على منتج نهائي؛ المترجم ما زال قيد التطوير والاختبار الفيزيائي لم يكتمل.",
+      "reviewedAt": "2026-11-10T02:43:48+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "EE Times — DeepX Tapes Out Second-Gen Chip",
+          "url": "https://www.eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim/"
+        }
+      ]
+    },
+    "a8ac24a5fed69e7112": {
+      "url": "https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy",
+      "titleAr": "كندا تطلق Real-Time Rail للمدفوعات الفورية على مدار الساعة",
+      "summaryAr": "أعلنت Payments Canada إطلاق Real-Time Rail، بنية مدفوعات وطنية تتيح للمؤسسات المشاركة تبادل وتسوية المدفوعات لحظيًا طوال أيام السنة، برسائل بيانات ISO 20022. وأعلن بنك كندا إدراج النظام ضمن أنظمة الدفع الخاضعة لإشرافه.",
+      "whyItMatters": "البنية الفورية تضيف بيانات أغنى وتكاملًا لحظيًا، لكنها تتطلب ضوابط احتيال وتشغيلًا مستمرًا.",
+      "audience": "مطورو fintech، ومهندسو تكامل المدفوعات، ودارسو أنظمة ISO 20022 والبنية المالية.",
+      "nextSteps": [
+        "ادرس رسائل ISO 20022 وآلية المشاركين.",
+        "راجع ضوابط مكافحة الاحتيال المنشورة."
+      ],
+      "limitations": "الإطلاق كندي ويبدأ بمؤسسات مشاركة فقط؛ التوسع تدريجي وتوقعات التوفير ليست نتائج محققة.",
+      "reviewedAt": "2026-11-10T02:43:48+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Payments Canada — Canada launches the Real-Time Rail",
+          "url": "https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy"
+        },
+        {
+          "title": "Bank of Canada — RTR designated as a prominent payment system",
+          "url": "https://www.bankofcanada.ca/2026/11/bank-of-canada-designates-rtr-as-a-prominent-payment-system/"
+        }
+      ]
+    },
+    "0a2b694e15caf809f8": {
+      "url": "https://www.cnx-software.com/2026/11/03/when-will-this-stop-the-raspberry-pi-5-16gb-sbc-now-sells-for-385/",
+      "titleAr": "ارتفاع سعر نسخة 16GB من Raspberry Pi 5 بمقدار 80 دولارًا",
+      "summaryAr": "أعلنت Raspberry Pi Foundation في 2 نوفمبر رفع سعر نسخة Raspberry Pi 5 ذات 16GB بمقدار 80 دولارًا إلى 385 دولارًا بسبب نقص بدائل توريد DRAM عالية الكثافة، مع زيادات قدرها 40 دولارًا لبعض نسخ Compute Module 5.",
+      "whyItMatters": "ارتفاع تكلفة الذاكرة يؤثر في ميزانيات مشاريع التعليم والحوسبة الطرفية، ويجعل تقدير RAM الفعلي أهم من اختيار السعة الأعلى تلقائيًا.",
+      "audience": "طلاب الحوسبة والهواة ومطورو الأنظمة المضمنة ومختبرات التعليم.",
+      "nextSteps": [
+        "تحقق من السعر المحلي والضرائب لدى الموزع.",
+        "قدّر استهلاك الذاكرة قبل اختيار السعة."
+      ],
+      "limitations": "السعر بالدولار الأمريكي ويختلف عن سعر الموزعين والضرائب في السعودية. السبب المعلن من المؤسسة؛ لا يمثل تحليلًا مستقلًا لسوق الذاكرة.",
+      "reviewedAt": "2026-11-10T02:43:48+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Raspberry Pi — Price rises for some 16GB Raspberry Pi products",
+          "url": "https://www.raspberrypi.com/news/price-rises-for-some-16gb-raspberry-pi-products/"
+        },
+        {
+          "title": "CNX Software — Raspberry Pi 5 16GB price report",
+          "url": "https://www.cnx-software.com/2026/11/03/when-will-this-stop-the-raspberry-pi-5-16gb-sbc-now-sells-for-385/"
+        }
+      ]
+    },
+    "fb9de46b88c3faa779": {
+      "url": "https://e-means.github.io/",
+      "titleAr": "ورقة e-means تقترح تسريع تجميع k-means بتحديثات المتوسط المتحرك الأسي",
+      "summaryAr": "تقدم ورقة arXiv خوارزمية mini-batch k-means تستخدم تحديثات EMA مع جدول تناقص للخطوة وإعادة تنشيط العناقيد الخاملة. يذكر الملخص أن الطريقة بلغت خسارة Lloyd عند 25 دورة بعد نحو 1.4–2.6 دورة في مجموعات embeddings، مع تسريع GPU معلن 10–45 مرة في تجارب المؤلفين.",
+      "whyItMatters": "قد يفيد تسريع التجميع في فهرسة المتجهات وضغط التمثيلات وتجهيز بيانات البحث، لكن الاختيار يعتمد على حجم البيانات والذاكرة وجودة العناقيد.",
+      "audience": "مهندسو تعلم الآلة وفرق البحث والاسترجاع الدلالي ومطورو أنظمة الفهرسة.",
+      "nextSteps": [
+        "اقرأ الورقة الكاملة وتحقق من شروط المقارنة مع Faiss وFlash-KMeans.",
+        "اختبر الخوارزمية على بياناتك مع تثبيت العتاد والبذرة ومقياس الخسارة.",
+        "قارن زمن التدريب والذاكرة وجودة التعميم، لا عدد الدورات فقط."
+      ],
+      "limitations": "راجعنا الملخص والبيانات الوصفية وبعض وصف المنهج، لا الورقة كاملة ولم نعد تنفيذ التجارب. النتائج من المؤلفين وعلى بيانات وعتاد محددين.",
+      "reviewedAt": "2026-11-10T05:38:00+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — e-means: outperforming k-means",
+          "url": "https://arxiv.org/abs/2611.09501"
+        }
+      ]
+    },
+    "3c86ca6a06f60e03f0": {
+      "url": "https://postalpro.usps.com/zcb",
+      "titleAr": "USPS تطرح خرائط حدود ZIP Code مشتقة من بيانات عناوين التسليم",
+      "summaryAr": "تصف USPS منتج ZIP Code Boundaries بأنه خريطة وطنية مبنية على بيانات عناوين ومواقع التسليم لديها، وتتغير حدوده مع تغير توزيع مواقع التسليم. تعرض الصفحة استخدامات في الخرائط والتأمين والعقارات واللوجستيات، مع أربعة تحديثات ربع سنوية لكل مستوى ترخيص.",
+      "whyItMatters": "قد تساعد البيانات في التحليل المكاني والتوجيه داخل الولايات المتحدة، لكنها منتج مرخّص وليست بديلًا تلقائيًا عن ZCTA الإحصائية.",
+      "audience": "فرق GIS واللوجستيات والتأمين والعقارات وتحليل الأسواق والبيانات الجغرافية.",
+      "nextSteps": [
+        "اقرأ الدليل الفني وملف GeoJSON التجريبي.",
+        "راجع اتفاقية الترخيص وحدود التوزيع قبل الاستخدام التجاري.",
+        "قارن عينة USPS مع ZCTA من Census."
+      ],
+      "limitations": "المنتج خاص بالولايات المتحدة ويخضع لفئات ترخيص وتوزيع مختلفة. صفحة التعريف لا تكفي لتحديد السعر النهائي أو جميع القيود التعاقدية؛ لم نتحقق من الأسعار في نموذج الطلب.",
+      "reviewedAt": "2026-11-10T05:38:00+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "USPS PostalPro — USPS ZIP Code Boundaries",
+          "url": "https://postalpro.usps.com/zcb"
+        }
+      ]
+    },
+    "1addf27c71831a1839": {
+      "url": "https://yappologistic.github.io/CUI/",
+      "titleAr": "CUI يقدم مكتبة واجهات C99 فورية متعددة الأنظمة دون اعتماديات خارجية",
+      "summaryAr": "CUI مكتبة immediate-mode مكتوبة بـC99 ترسم مكوناتها عبر OpenGL أو renderer برمجي، وتعمل على Windows وmacOS وLinux أو داخل المتصفح عبر WebAssembly. يذكر README نحو 190 مكونًا وإمكانية دمجها عبر CMake أو ملفي cui.h وcui.c.",
+      "whyItMatters": "تتيح بناء أدوات سطح مكتب صغيرة بلغة C/C++ دون تضمين متصفح أو إطار ثقيل، لكنها ليست بديلًا ناضجًا تلقائيًا عن Qt أو GTK عندما تكون الإتاحة أولوية.",
+      "audience": "مطورو C وC++ ومطورو أدوات سطح المكتب والمحررات ولوحات البيانات وواجهات الألعاب.",
+      "nextSteps": [
+        "ابدأ بمثال hello عبر CMake 3.14+ ومترجم C99.",
+        "شغّل معرض المكونات واختبر الإدخال ولوحة المفاتيح وRTL.",
+        "راجع قيود قارئات الشاشة وطرق الإدخال قبل الاستخدام الإنتاجي."
+      ],
+      "limitations": "README يوضح أن دعم قارئات الشاشة وطرق الإدخال ليس مكتملًا، وأن Qt وGTK وwxWidgets أكثر نضجًا. لم نشغّل المكتبة أو نختبرها.",
+      "overview": "مكتبة immediate-mode لـC99 ترسم عناصر الواجهة بنفسها. تعمل في نافذة أصلية أو عبر WebAssembly، وتقدم مكونات للنصوص والنماذج والجداول والمخططات ومحرر الشيفرة.",
+      "requirements": "مترجم C99 وCMake 3.14 أو أحدث. على Linux يلزم X11 development headers؛ على Windows Visual Studio 2019+ أو MinGW-w64؛ وعلى macOS أدوات Xcode command-line وCMake.",
+      "quickStart": "نفّذ git clone https://github.com/yappologistic/CUI.git ثم cd CUI، وبعدها cmake -S . -B build -DCMAKE_BUILD_TYPE=Release ثم cmake --build build وشغّل build/examples/hello.",
+      "costs": "MIT ومفتوحة المصدر دون رسوم خدمة أو API إلزامية. التكلفة الأساسية وقت البناء والتطوير؛ يمكن نشر نسخة WebAssembly كملفات ثابتة، ولا توجد خدمة خلفية مُدارة.",
+      "localVsCloud": "محليًا: مكتبة C داخل تطبيق أصلي ولا تحتاج اتصالًا بعد البناء. سحابيًا: يمكن نشر عرض WebAssembly على استضافة ثابتة؛ لا تقدم المكتبة خدمة سحابية.",
+      "alternatives": [
+        {
+          "name": "Qt",
+          "tradeoff": "أكثر نضجًا في الوصول وطرق الإدخال مقابل حجم وتعقيد أكبر.",
+          "url": "https://www.qt.io/"
+        },
+        {
+          "name": "GTK",
+          "tradeoff": "مجموعة واجهات أصلية ناضجة بنموذج widgets.",
+          "url": "https://www.gtk.org/"
+        },
+        {
+          "name": "Dear ImGui",
+          "tradeoff": "مناسبة لأدوات المطور داخل renderer موجود.",
+          "url": "https://github.com/ocornut/imgui"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "طبقة إتاحة لقارئات الشاشة",
+          "problem": "الرسم المخصص لا يوفر تلقائيًا شجرة دلالية لتقنيات الوصول.",
+          "approach": "إضافة وصف دلالي للمكونات وربطه بواجهات الإتاحة في الأنظمة المدعومة.",
+          "stack": "C99 / Windows UI Automation / macOS Accessibility API / AT-SPI",
+          "steps": [
+            "حدد role وlabel وvalue للمكونات.",
+            "أضف ربطًا أوليًا لنظام واحد.",
+            "اختبر التركيز وقارئ الشاشة.",
+            "وسّع الربط ووثّق التغطية."
+          ],
+          "metric": "نسبة المكونات الأساسية المفهومة عبر قارئ شاشة.",
+          "difficulty": "مرتفعة — تقدير.",
+          "risks": "اختلاف APIs وتعقيد مزامنة حالة الواجهة.",
+          "sources": [
+            {
+              "title": "CUI README",
+              "url": "https://github.com/yappologistic/CUI/blob/master/README.md"
+            },
+            {
+              "title": "CUI Getting Started",
+              "url": "https://github.com/yappologistic/CUI/blob/master/docs/getting-started.md"
+            }
+          ]
+        },
+        {
+          "title": "اختبارات بصرية وسلوكية متعددة الأنظمة",
+          "problem": "قد تختلف الرسوم والخطوط والتركيز بين backends والأنظمة.",
+          "approach": "إنشاء اختبارات صور ثابتة وأحداث إدخال أساسية على منصات CI.",
+          "stack": "C / CMake / screenshot tests / GitHub Actions",
+          "steps": [
+            "اختر مكونات تمثل حالات الواجهة.",
+            "ثبّت الخطوط وإعدادات العرض.",
+            "التقط صورًا لكل backend.",
+            "أضف اختبارات لوحة المفاتيح والتركيز.",
+            "انشر تقرير فروق بصري."
+          ],
+          "metric": "عدد الانحرافات المكتشفة قبل الإصدار.",
+          "difficulty": "متوسطة إلى مرتفعة — تقدير.",
+          "risks": "اختلاف GPU والخطوط قد ينتج فروقًا غير مؤثرة.",
+          "sources": [
+            {
+              "title": "CUI components",
+              "url": "https://github.com/yappologistic/CUI/blob/master/docs/components.md"
+            },
+            {
+              "title": "CUI README",
+              "url": "https://github.com/yappologistic/CUI/blob/master/README.md"
+            }
+          ]
+        },
+        {
+          "title": "دعم IME وRTL",
+          "problem": "الواجهات متعددة اللغات تحتاج إدخالًا مركبًا وترتيب نصوص RTL موثوقًا.",
+          "approach": "توسيع طبقة إدخال النص وربط composition events واختبارات عربية ويابانية.",
+          "stack": "C99 / platform input APIs / Unicode",
+          "steps": [
+            "وثّق سلوك النص الحالي.",
+            "أضف أحداث composition.",
+            "اختبر العربية وRTL واليابانية.",
+            "تحقق من المؤشر والنسخ واللصق.",
+            "وثّق الأنظمة المدعومة."
+          ],
+          "metric": "نسبة سيناريوهات IME وRTL الناجحة.",
+          "difficulty": "مرتفعة — تقدير.",
+          "risks": "تعقيد Unicode وتفاوت APIs قد يسبب فقد نص.",
+          "sources": [
+            {
+              "title": "CUI README",
+              "url": "https://github.com/yappologistic/CUI/blob/master/README.md"
+            },
+            {
+              "title": "CUI Getting Started",
+              "url": "https://github.com/yappologistic/CUI/blob/master/docs/getting-started.md"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "لوحة مراقبة محلية خفيفة",
+          "problem": "أدوات النظام تحتاج واجهة صغيرة دون إطار متصفح.",
+          "approach": "تطبيق C99 يعرض مؤشرات النظام في رسوم وجداول محلية.",
+          "stack": "C99 / CUI / SQLite / OS APIs",
+          "steps": [
+            "حدد مؤشرات قراءة فقط.",
+            "أنشئ بطاقات وجداول.",
+            "أضف رسمًا زمنيًا.",
+            "احفظ الإعدادات محليًا.",
+            "اختبر استهلاك الذاكرة."
+          ],
+          "metric": "الذاكرة وزمن تحديث اللوحة.",
+          "difficulty": "متوسطة — تقدير.",
+          "risks": "اختلاف APIs بين الأنظمة؛ ابدأ بنظام واحد.",
+          "sources": [
+            {
+              "title": "CUI README",
+              "url": "https://github.com/yappologistic/CUI/blob/master/README.md"
+            },
+            {
+              "title": "CUI components",
+              "url": "https://github.com/yappologistic/CUI/blob/master/docs/components.md"
+            }
+          ]
+        },
+        {
+          "title": "محرر ملاحظات محلي متعدد المنصات",
+          "problem": "الحاجة إلى محرر يعمل دون حساب أو خدمة سحابية.",
+          "approach": "محرر Markdown محلي مع قائمة ملفات ومعاينة وحفظ واضح.",
+          "stack": "C99 / CUI / filesystem / Markdown parser",
+          "steps": [
+            "أنشئ نافذة ومحرر نص.",
+            "أضف فتح وحفظ الملفات.",
+            "أضف معاينة Markdown.",
+            "أضف بحثًا داخل الملاحظات.",
+            "اختبر العربية وRTL واستعادة الملفات."
+          ],
+          "metric": "زمن الفتح وسلامة الحفظ واستعادة الجلسة.",
+          "difficulty": "متوسطة — تقدير.",
+          "risks": "إدارة الملفات والنسخ الاحتياطي تحتاج تصميمًا منفصلًا.",
+          "sources": [
+            {
+              "title": "CUI README",
+              "url": "https://github.com/yappologistic/CUI/blob/master/README.md"
+            },
+            {
+              "title": "CUI Getting Started",
+              "url": "https://github.com/yappologistic/CUI/blob/master/docs/getting-started.md"
+            }
+          ]
+        }
+      ],
+      "religious": [],
+      "testStatus": "not_run",
+      "reviewedAt": "2026-11-10T05:38:00+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "CUI README",
+          "url": "https://github.com/yappologistic/CUI/blob/master/README.md"
+        },
+        {
+          "title": "CUI Getting Started",
+          "url": "https://github.com/yappologistic/CUI/blob/master/docs/getting-started.md"
+        },
+        {
+          "title": "CUI LICENSE",
+          "url": "https://github.com/yappologistic/CUI/blob/master/LICENSE"
+        }
+      ]
+    },
+    "0eeaaf4c87a4398c95": {
+      "url": "https://github.com/freeCodeCamp/devdocs",
+      "titleAr": "DevDocs يجمع توثيق واجهات البرمجة في متصفح واحد يعمل دون اتصال",
+      "summaryAr": "مشروع freeCodeCamp يجمع توثيقات لغات وأطر ومكتبات في واجهة ويب موحدة مع بحث فوري، مجموعات وثائق قابلة للاختيار، وضع داكن واختصارات لوحة المفاتيح والعمل دون اتصال. يتكون من Ruby scraper يبني صفحات الوثائق والفهارس، وتطبيق JavaScript يخدمه Sinatra؛ ويمكن استخدام النسخة المستضافة أو تشغيل نسخة محلية عبر Docker.",
+      "whyItMatters": "يفيد الطالب والمطور الذي يعود كثيرًا إلى توثيق Python وواجهات المكتبات؛ تنزيل مجموعات الوثائق يتيح البحث دون اتصال ويقلل التنقل بين مواقع كثيرة. لكنه مرجع API لا دورة تعليمية أو محرك بحث عام، ومحتواه يأتي من مصادر توثيق خارجية.",
+      "audience": "طلاب البرمجة، مطورو Python وJavaScript، والفرق التي تحتاج مرجع API موحدًا أو نسخة داخلية.",
+      "nextSteps": [
+        "ابدأ بالنسخة المستضافة devdocs.io وحدد مجموعات الوثائق التي تستخدمها فعليًا.",
+        "لتجربة محلية استخدم صورة Docker الرسمية وافتح localhost:9292.",
+        "إذا بنيت من المصدر فراجع Ruby 4.0.9 ومتطلبات libcurl وwebp وbsdtar وExecJS؛ لاحظ اختلاف إصدار Ruby في Dockerfile.",
+        "راجع MPL-2.0 وملفات حقوق التوثيق قبل إعادة توزيع docsets أو تعديلها."
+      ],
+      "limitations": "README يوضح أن DevDocs يركز على مرجع API وليس الدروس أو البحث العام، وأن الوثائق من جهات خارجية. لا توجد آلية تحديث تلقائي موحدة في التثبيت اليدوي؛ يلزم git pull ثم thor docs:download --installed. README يذكر أن المشروع يبحث عن maintainers، ما يستدعي الانتباه لاستمرارية الصيانة. توجد ملاحظة توافق تستحق الفحص: Gemfile يثبت Ruby 4.0.9 بينما Dockerfile الحالي يبدأ من ruby:4.0.8. لم نشغّل المشروع أو نختبر بناء الصورة في هذه المراجعة.",
+      "reviewedAt": "2026-11-10T08:46:13+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "DevDocs README",
+          "url": "https://github.com/freeCodeCamp/devdocs/blob/main/README.md"
+        },
+        {
+          "title": "DevDocs Gemfile",
+          "url": "https://github.com/freeCodeCamp/devdocs/blob/main/Gemfile"
+        },
+        {
+          "title": "DevDocs Dockerfile",
+          "url": "https://github.com/freeCodeCamp/devdocs/blob/main/Dockerfile"
+        },
+        {
+          "title": "DevDocs MPL-2.0 License",
+          "url": "https://github.com/freeCodeCamp/devdocs/blob/main/LICENSE"
+        },
+        {
+          "title": "DevDocs adding documentation guide",
+          "url": "https://github.com/freeCodeCamp/devdocs/blob/main/docs/adding-docs.md"
+        },
+        {
+          "title": "DevDocs scraper reference",
+          "url": "https://github.com/freeCodeCamp/devdocs/blob/main/docs/scraper-reference.md"
+        },
+        {
+          "title": "Zeal official website",
+          "url": "https://zealdocs.org/"
+        },
+        {
+          "title": "Dash official website",
+          "url": "https://kapeli.com/dash"
+        }
+      ],
+      "overview": "يتكون DevDocs من Ruby scraper ينزل صفحات التوثيق أو يقرأها من ملفات محلية، وينظف HTML ويصلح الروابط ويولد صفحات وفهارس وملفات metadata. تطبيق JavaScript يعمل في المتصفح ويقدمه خادم Sinatra/Sprockets صغير؛ يستخدم التخزين المحلي وservice worker لتسريع التشغيل والعمل دون اتصال، ويتيح للمستخدم اختيار docsets لتقليل الذاكرة. نطاقه توثيق API/reference وليس tutorials.",
+      "requirements": "أسهل مسار هو Docker الرسمي على المنفذ 9292. التثبيت اليدوي يحتاج Ruby 4.0.9، وlibcurl وwebp وbsdtar (أو libarchive-tools)، وJavaScript runtime يدعمه ExecJS (Node على Linux)، وBundler. المتصفح يحتاج إصدارًا حديثًا من Firefox/Chrome/Opera أو Safari 16.4+ أو Edge 89+؛ iOS 16.4+ مذكور في README. التنزيل الأولي للوثائق يحتاج اتصالًا ومساحة تخزين، ثم يمكن البحث في المجموعات المنزلة دون اتصال.",
+      "quickStart": "Docker: docker run --name devdocs -d -p 9292:9292 ghcr.io/freecodecamp/devdocs:latest ثم افتح http://localhost:9292. للتثبيت من المصدر: git clone https://github.com/freeCodeCamp/devdocs.git ثم gem install bundler وbundle install وbundle exec thor docs:download --default وbundle exec rackup. لتحديث docsets المثبتة استخدم thor docs:download --installed بعد تحديث المستودع. Dockerfile يحدد Ruby 4.0.8 بينما Gemfile يطلب 4.0.9؛ تحقق من توافق البناء قبل الاعتماد عليه.",
+      "costModel": "لا يحتاج نموذجًا لغويًا أو API مدفوعًا. النسخة المستضافة متاحة عبر devdocs.io، أما التشغيل الذاتي فيستهلك موارد الخادم والتخزين وعرض النطاق عند تنزيل docsets. لم أجد سعرًا معلنًا لخدمة الاستضافة في README، لذلك لا أفترض تكلفة اشتراك.",
+      "alternatives": [
+        {
+          "name": "Zeal",
+          "url": "https://zealdocs.org/",
+          "notes": "تطبيق سطح مكتب مفتوح المصدر لوثائق offline، مناسب لـWindows وLinux ويستخدم docsets؛ يختلف عن DevDocs بكونه تطبيقًا أصليًا."
+        },
+        {
+          "name": "Dash",
+          "url": "https://kapeli.com/dash",
+          "notes": "تطبيق macOS لبحث docsets وتوليد توثيق مخصص والتكامل مع المحررات؛ بديل مكتبي وليس خادم ويب ذاتي الاستضافة."
+        }
+      ],
+      "improvements": [
+        {
+          "title": "تنبيه فروق إصدارات docsets",
+          "problem": "قد يستمر المستخدم في البحث داخل توثيق قديم بعد تغير واجهة API أو حذف صفحة.",
+          "approach": "قارن فهارس وmetadata لكل إصدار، وأنشئ تقريرًا يوضح الصفحات المضافة والمحذوفة والمتغيرة مع رابط المصدر.",
+          "stack": "Ruby, Thor, JSON, GitHub Actions",
+          "steps": [
+            "احفظ نسخة manifest وبصمة لكل docset مثبت.",
+            "نزّل snapshot جديدًا للمجموعات المختارة.",
+            "قارن العناوين والمعرفات والروابط في الفهرس.",
+            "صنّف الإضافات والحذف والتغييرات.",
+            "أنشئ تقريرًا قابلًا للفتح قبل استبدال النسخة المحلية."
+          ],
+          "metric": "كشف 95% من تغييرات الصفحات المعروفة في مجموعة اختبار، مع أقل من 5% تنبيهات كاذبة.",
+          "difficulty": "متوسطة؛ تقدير 3–5 أسابيع.",
+          "risks": "تغير بنية HTML أو scraper قد ينتج فروقًا شكلية؛ يلزم تثبيت مصدر كل docset.",
+          "sources": [
+            {
+              "title": "DevDocs README",
+              "url": "https://github.com/freeCodeCamp/devdocs/blob/main/README.md"
+            },
+            {
+              "title": "DevDocs scraper reference",
+              "url": "https://github.com/freeCodeCamp/devdocs/blob/main/docs/scraper-reference.md"
+            }
+          ]
+        },
+        {
+          "title": "حزم توثيق عربية موثقة المصدر",
+          "problem": "قد يتفرق التوثيق العربي أو تختلط ترجمة غير محدثة بمرجع الإصدار الحالي.",
+          "approach": "أنشئ docsets عربية اختيارية من مواد يسمح ترخيصها بإعادة الاستخدام، مع إبقاء رابط الأصل والإصدار وتاريخ الترجمة ظاهرًا.",
+          "stack": "Ruby scraper, HTML/Markdown, JSON metadata, RTL CSS",
+          "steps": [
+            "اختر مكتبات لها توثيق عربي أو صفحات مرخصة بوضوح.",
+            "سجل مصدر كل صفحة وإصدارها وترخيصها.",
+            "أضف تاريخ آخر مراجعة واسم المراجع.",
+            "ولّد docset منفصلًا ولا تستبدل النص الأصلي.",
+            "اختبر البحث والروابط والاتجاه RTL على عينة."
+          ],
+          "metric": "100% من الصفحات المضافة تحمل مصدرًا وترخيصًا وإصدارًا وتاريخ مراجعة.",
+          "difficulty": "متوسطة إلى عالية؛ تقدير 4–7 أسابيع.",
+          "risks": "حقوق إعادة نشر الوثائق وتقادم الترجمة وتفاوت المصطلحات.",
+          "sources": [
+            {
+              "title": "DevDocs adding documentation guide",
+              "url": "https://github.com/freeCodeCamp/devdocs/blob/main/docs/adding-docs.md"
+            },
+            {
+              "title": "DevDocs LICENSE",
+              "url": "https://github.com/freeCodeCamp/devdocs/blob/main/LICENSE"
+            }
+          ]
+        },
+        {
+          "title": "سجل مصدر وترخيص لكل مجموعة وثائق",
+          "problem": "قد لا يعرف المسؤول مصدر docset وشروط إعادة توزيعه عند تجميع عدة مكتبات.",
+          "approach": "أضف manifest موحدًا يربط كل docset بالناشر والترخيص والرابط والإصدار وتاريخ الالتقاط.",
+          "stack": "Ruby, JSON Schema, SPDX identifiers",
+          "steps": [
+            "حدد حقول manifest الإلزامية.",
+            "اجمع بيانات المصدر والترخيص من كل ناشر.",
+            "ارفض docset بلا مصدر أو حالة ترخيص واضحة.",
+            "اعرض manifest بجانب اسم الإصدار.",
+            "أضف اختبارًا يمنع نشر حزمة ناقصة البيانات."
+          ],
+          "metric": "كل docsets المنشورة لها مصدر ورخصة أو حالة غير محسومة واضحة.",
+          "difficulty": "متوسطة؛ تقدير 3–4 أسابيع.",
+          "risks": "بعض الناشرين لا يقدمون ترخيصًا موحدًا لكل صفحاتهم.",
+          "sources": [
+            {
+              "title": "DevDocs README",
+              "url": "https://github.com/freeCodeCamp/devdocs/blob/main/README.md"
+            },
+            {
+              "title": "DevDocs adding documentation guide",
+              "url": "https://github.com/freeCodeCamp/devdocs/blob/main/docs/adding-docs.md"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مكتبة Python والذكاء الاصطناعي دون اتصال",
+          "problem": "يحتاج الطالب الرجوع إلى توثيق Python وNumPy وpandas وPyTorch من أماكن مختلفة.",
+          "approach": "حزمة docsets منتقاة بإصدارات ثابتة ومصادر رسمية وتاريخ قياس، تُنزّل مرة وتعمل دون اتصال.",
+          "stack": "DevDocs, Python docs, NumPy, pandas, PyTorch, JSON manifest",
+          "steps": [
+            "اختر إصدارات متوافقة مع المقرر.",
+            "تحقق من شروط إعادة استخدام كل توثيق.",
+            "أنشئ manifest للمصادر والإصدارات.",
+            "ولّد الحزمة ونزّلها على جهاز اختبار.",
+            "اختبر 50 استعلامًا شائعًا دون إنترنت."
+          ],
+          "metric": "ظهور صفحة صحيحة ضمن أول 5 نتائج في 90% من الاستعلامات المرجعية.",
+          "difficulty": "متوسطة؛ تقدير 2–4 أسابيع.",
+          "risks": "تغير الإصدارات وتفاوت تراخيص الوثائق واستهلاك التخزين.",
+          "sources": [
+            {
+              "title": "DevDocs README",
+              "url": "https://github.com/freeCodeCamp/devdocs/blob/main/README.md"
+            },
+            {
+              "title": "DevDocs adding documentation guide",
+              "url": "https://github.com/freeCodeCamp/devdocs/blob/main/docs/adding-docs.md"
+            }
+          ]
+        },
+        {
+          "title": "بوابة توثيق داخلية لمشاريع الجامعة",
+          "problem": "تتوزع واجهات API للمشاريع والمكتبات المعتمدة بين ملفات وروابط لا يسهل البحث فيها.",
+          "approach": "استخدم FileScraper لإدراج توثيق محلي مصرح به في نسخة داخلية من DevDocs مع تحكم وصول من طبقة الاستضافة.",
+          "stack": "DevDocs, Ruby FileScraper, Sinatra, reverse proxy, access control",
+          "steps": [
+            "حدد مستودعات ووثائق يسمح أصحابها بفهرستها.",
+            "أنشئ scraper للملفات المحلية بدل جلبها من الإنترنت.",
+            "اربط كل مجموعة باسم المشروع والإصدار.",
+            "ضع الخدمة خلف مصادقة الجامعة ولا تعرضها للعامة.",
+            "اختبر البحث والصلاحيات على حسابات مختلفة."
+          ],
+          "metric": "زمن العثور على مرجع API أقل من 10 ثوانٍ في 90% من مهام الاختبار.",
+          "difficulty": "متوسطة إلى عالية؛ تقدير 4–6 أسابيع.",
+          "risks": "تسرب وثائق داخلية أو فهرسة أسرار بالخطأ؛ يلزم مراجعة الوصول قبل النشر.",
+          "sources": [
+            {
+              "title": "DevDocs scraper reference",
+              "url": "https://github.com/freeCodeCamp/devdocs/blob/main/docs/scraper-reference.md"
+            },
+            {
+              "title": "DevDocs README",
+              "url": "https://github.com/freeCodeCamp/devdocs/blob/main/README.md"
+            }
+          ]
+        }
+      ],
+      "testStatus": "not_run"
+    },
+    "126b111b5d436487e5": {
+      "url": "https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/",
+      "titleAr": "Adobe توسّع Creative Cloud بوكلاء ذكاء اصطناعي وتكاملات MCP محلية",
+      "summaryAr": "أعلنت Adobe في مؤتمر MAX بتاريخ 10 نوفمبر توسيع Creative Agent إلى أدوات Creative Cloud وFirefly، مع مساعدين قادرين على تنسيق مهام متعددة الخطوات. كما عرضت تكاملات MCP محلية مستقبلية تسمح لوكلاء الطرف الثالث بإجراء تغييرات في ملفات Photoshop وIllustrator وPremiere وAfter Effects الأصلية مع بقاء الطبقات والعناصر قابلة للتحرير. تؤكد Adobe أن تكاملات MCP ما تزال معاينة خاصة، ومتوقع طرحها في private beta مطلع 2027؛ أما بعض ميزات Creative Agent فتتوفر كإصدارات beta أو بحسب التطبيق.",
+      "whyItMatters": "يمثل ذلك انتقالًا من مساعدات منفصلة إلى سير عمل يربط الوكلاء بأدوات الإنتاج الإبداعي نفسها. يهم المصممين ومحرري الفيديو ومطوري تكاملات MCP، لكنه يرفع أهمية تحديد الصلاحيات ومراجعة التغييرات على الملفات الأصلية.",
+      "audience": "مصممو الجرافيك، محررو الفيديو، فرق المحتوى، ومطورو تكاملات MCP والوكلاء.",
+      "nextSteps": [
+        "ميّز بين الميزات المتاحة عمومًا وميزات beta والمعاينات الخاصة قبل اعتمادها في سير عمل فعلي.",
+        "اختبر أي وكيل على نسخة من المشروع، واحتفظ بإمكانية التراجع ومراجعة التغييرات قبل حفظها على الملفات الأصلية.",
+        "تابع موعد إتاحة تكاملات MCP الرسمية وحدود الصلاحيات المحلية لكل تطبيق."
+      ],
+      "limitations": "المعلومات من إعلان Adobe ومقالها الرسمي؛ لم تُنشر مقارنة مستقلة للأداء أو جودة المخرجات. تكاملات MCP ليست متاحة عمومًا الآن، بل معاينة خاصة متوقع أن تبدأ في مطلع 2027، كما تختلف حالة الميزات بين التطبيقات.",
+      "reviewedAt": "2026-11-10T20:39:19+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Adobe Newsroom — Creative Cloud agentic workflows",
+          "url": "https://news.adobe.com/news/2026/11/adobe-transforms-creative-cloud-tools"
+        },
+        {
+          "title": "Adobe Blog — Creative Cloud and Firefly updates at MAX 2026",
+          "url": "https://blog.adobe.com/en/publish/2026/11/10/explore-new-ways-create-across-creative-cloud-adobe-firefly-while-advancing-craft-precision-choice-control"
+        },
+        {
+          "title": "TechCrunch — Adobe adds AI agents and MCP",
+          "url": "https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/"
+        }
+      ]
+    },
+    "7fc88fbdaa8e97213d": {
+      "url": "https://techcrunch.com/2026/11/10/cyberattacks-threaten-to-make-open-source-ai-a-little-less-open-hugging-face-exec-warns/",
+      "titleAr": "تحذيرات من أن الهجمات على منصات الذكاء الاصطناعي المفتوحة قد تشدد شروط المشاركة",
+      "summaryAr": "ينقل تقرير TechCrunch عن مسؤولة السياسات في Hugging Face أن المنصات المفتوحة أصبحت أهدافًا جذابة بسبب مفاتيح الوصول والبيانات والأوزان التي تستضيفها. ويورد التقرير حوادث مرتبطة بـOpenCode وHugging Face، ثم يستشهد بإفصاح Fireworks الرسمي عن حادثة أكتوبر: تأثرت بيانات حسابات وفوترة، ولعدد محدود من العملاء بعض الأسرار ومجموعات البيانات وأوزان نماذج غير مكتملة. تقول Fireworks إن خدمات الاستدلال وTraining SDK وNexus ذات الاحتفاظ الصفري لم تتأثر وفق تحقيقها حتى وقت البيان، وإن التحقيق مستمر.",
+      "whyItMatters": "المسألة تمس توازنًا مهمًا بين سهولة مساهمة الباحثين والمطورين في المنصات المفتوحة وبين حماية مفاتيح API والبيانات والنماذج. التقرير يوضح أن الأمن الجيد لا يقتصر على إغلاق المشاركة؛ بل يشمل تقليل الامتيازات، وضبط الشبكات، والمراقبة والاستجابة للحوادث.",
+      "audience": "مطورو المصادر المفتوحة، مشرفو منصات النماذج، فرق أمن المعلومات، ومشغلو البنية التحتية للذكاء الاصطناعي.",
+      "nextSteps": [
+        "راجع صلاحيات مفاتيح الوصول والخدمات، وقلّصها إلى الحد اللازم مع تدوير الأسرار وفق سياسة المؤسسة.",
+        "افصل بيئات البناء والتدريب والبيانات الحساسة، وفعّل سجلات تدقيق ومراقبة للوصول غير المعتاد.",
+        "راجع نشرات الحوادث الرسمية للمزوّدين المتأثرين، وحدّث خطة الاستجابة وإبلاغ المستخدمين عند الحاجة."
+      ],
+      "limitations": "المقال يجمع مقابلة صحفية وروايات عن حوادث متعددة، ولا يمثل تدقيقًا جنائيًا مستقلًا لكل حادثة. تفاصيل Fireworks مستندة إلى إفصاح الشركة المؤرخ 9 نوفمبر، والتحقيق لديها ما زال مستمرًا؛ ولا يجوز تعميم نطاق الأثر على جميع العملاء أو المنصات.",
+      "reviewedAt": "2026-11-10T20:39:19+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — Cyberattacks and open-source AI platforms",
+          "url": "https://techcrunch.com/2026/11/10/cyberattacks-threaten-to-make-open-source-ai-a-little-less-open-hugging-face-exec-warns/"
+        },
+        {
+          "title": "Fireworks AI — October 2026 security incident update",
+          "url": "https://fireworks.ai/security/bulletins/october-2026-security-incident-update"
+        }
+      ]
+    },
+    "0e9fb0eb84f13acffd": {
+      "titleAr": "Google DeepMind تكشف AlphaProof Code للتحقق الشكلي من تنفيذ بروتوكول Signal",
+      "summaryAr": "تقول Google DeepMind إن إطار AlphaProof Code، الذي يجمع خبراء بشريين ووكلاء ذكاء اصطناعي ومتحقق Lean، أثبت خصائص أمنية أساسية في الشيفرة الفعلية لبروتوكول Signal. وتذكر الشركة توليد أكثر من ستة ملايين سطر Lean وإتمام العمل خلال أربعة أسابيع، مع إعادة إدخال عيبين معروفين في نسخة معزولة للتأكد من أن المنهج يميز التنفيذ غير الآمن.",
+      "whyItMatters": "ينقل التركيز من توليد الشيفرة واختبارها إلى إثبات خصائص محددة رياضيًا في التنفيذ الفعلي. قد يساعد ذلك في تقليل الفجوة بين التصميم والتنفيذ، لكنه لا يعني أن التطبيق كاملًا خالٍ من الأخطاء.",
+      "audience": "مهندسو البرمجيات، باحثو التحقق الشكلي، وفرق أمن التطبيقات والاتصالات.",
+      "nextSteps": [
+        "راجع الآثار والورقة التقنية التي نشرتها DeepMind، وحدد بدقة الخصائص التي شملها البرهان.",
+        "قارن التحقق الشكلي باختبارات الوحدات والاختبارات العشوائية ومراجعة الشيفرة؛ فهي وسائل متكاملة وليست بدائل متطابقة.",
+        "تابع مراجعات مستقلة للمنهج قبل تعميم نتائجه على بروتوكولات أو تطبيقات أخرى."
+      ],
+      "limitations": "التفاصيل والأرقام وادعاء السبق واردة في إعلان Google DeepMind وتصريح Signal؛ لم نجرِ إعادة تنفيذ مستقلة. نطاق العمل هو خصائص أساسية محددة في شيفرة بروتوكول Signal، وليس كل مكونات التطبيقات التي تستخدمه أو كل فئات الأخطاء الممكنة.",
+      "reviewedAt": "2026-11-10T23:38:46+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Google DeepMind — Introducing AlphaProof Code",
+          "url": "https://deepmind.google/blog/introducing-alphaproof-code/"
+        }
+      ],
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/"
+    },
+    "c7d3010a8bcc401c0c": {
+      "titleAr": "Notion تكشف تفاصيل أثر حادثة Fireworks AI على بعض مساحات العمل",
+      "summaryAr": "قالت Notion إن مزودها Fireworks AI أبلغها بحادثة أمنية أثرت في أقل من 1% من مساحات العمل. وبعد تأكيد مجموعة بيانات إضافية في 8 نوفمبر، قالت Notion إن المجموعة تضمنت نصوص محادثات مرتبطة بميزة Insights؛ وكانت غالبية هذه النصوص غير قابلة للنسب إلى مستخدم أو مساحة عمل محددة، وأوقفت Notion الميزة والتكامل مع المزود أثناء التحقيق.",
+      "whyItMatters": "توضح الحادثة أن تقييم مزودي النماذج والبنية الخارجية جزء من حماية البيانات؛ فقد تمر بيانات الاستخدام أو المحادثات عبر أطراف أخرى حتى عندما لا تكون أنظمة المنتج الأساسية هي موضع الحادثة.",
+      "audience": "مسؤولو أمن المعلومات والخصوصية، فرق تقنية المعلومات، والمؤسسات التي تستخدم خدمات الذكاء الاصطناعي.",
+      "nextSteps": [
+        "راجع إشعار Notion الرسمي وأي رسالة مباشرة وصلت إلى مساحة العمل.",
+        "إذا أكدت Notion أن مساحة العمل متأثرة، فاتبع تعليماتها الخاصة بمراجعة البيانات؛ لا تفترض التأثر لمجرد استخدام Notion.",
+        "راجع سياسات مشاركة المحادثات والبيانات مع مزودي الاستدلال والتصنيف الخارجيين."
+      ],
+      "limitations": "الأرقام ونطاق البيانات وفق إفادة Notion، والتحقيق كان مستمرًا عند آخر تحديث للصفحة. لا تصف الإفادة الحادثة بأنها اختراق شامل لأنظمة Notion؛ كما أن عدد المساحات المتأثرة وتفاصيل كل حالة لم تُنشر كاملة.",
+      "reviewedAt": "2026-11-10T23:38:46+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Notion Security Advisory — Fireworks AI incident",
+          "url": "https://www.notion.com/en-gb/security/advisories/security-incident-involving-a-third-party-ai-vendor"
+        }
+      ],
+      "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor"
+    },
+    "a7b39cb0698327aa7f": {
+      "titleAr": "Google توسّع الجيل الثامن من TPU بنظامي 8tx و8i Max",
+      "summaryAr": "أعلنت Google عن نظام TPU 8tx للاستدلال السري وحماية البيانات أثناء المعالجة، ونظام TPU 8i Max لزيادة سعة الذاكرة وعرض النطاق لأحمال السياق الكبيرة. وتقول الشركة إن 8i Max يضاعف الحوسبة وذاكرة SRAM وعرض نطاق HBM مقارنة بـ8i، وإن 8tx قد يخفض الكمون حتى الضعف مقارنة بـ8t؛ وهي أرقام أداء معلنة من الشركة.",
+      "whyItMatters": "تُظهر الإعلانات أن تشغيل الوكلاء والنماذج الكبيرة يعتمد على أمن البيانات وسعة الذاكرة والشبكات وتكامل البرمجيات، وليس على عدد العمليات الحسابية وحده.",
+      "audience": "مهندسو بنية الذكاء الاصطناعي، معماريّو السحابة، وفرق تشغيل النماذج.",
+      "nextSteps": [
+        "قارن أدوار 8t و8i و8tx و8i Max بحسب التدريب والاستدلال والخصوصية وحجم السياق.",
+        "تحقق من توافر الأنظمة وأسعارها الفعلية في Google Cloud قبل بناء تقدير تكلفة.",
+        "اختبر ادعاءات الأداء على حمل عمل ممثل لك بدل الاعتماد على أرقام الشركة العامة."
+      ],
+      "limitations": "المواصفات ونسب الأداء الواردة في الإعلان مصدرها Google ولم تُتحقق بقياس مستقل هنا. الإعلان يصف أنظمة متخصصة، ولا يقدم وحده سعرًا عامًا أو موعد إتاحة موحدًا لكل عميل.",
+      "reviewedAt": "2026-11-10T23:38:46+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Google — Our newest TPUs: 8tx and 8i Max",
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/"
+        }
+      ],
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/"
+    },
+    "5553fe020c93d3c2ae": {
+      "titleAr": "Anthropic تعلن بدء الجولة الترويجية لطرح عام أولي مقترح",
+      "summaryAr": "أعلنت Anthropic بدء roadshow لطرح مقترح يتضمن 825 مليون سهم من الفئة A، بسعر استرشادي بين 70 و78 دولارًا للسهم، مع طلب إدراج في Nasdaq تحت الرمز ANT. وتوضح الشركة أن بيان التسجيل لم يكن قد أصبح نافذًا عند الإعلان، وأن البيع لا يبدأ قبل نفاذه.",
+      "whyItMatters": "يعكس الإعلان انتقال شركات الذكاء الاصطناعي الكبرى إلى أسواق رأس المال، ويعيد تسليط الضوء على حجم تمويل الحوسبة والبنية التحتية والحوكمة في هذا القطاع.",
+      "audience": "متابعو صناعة الذكاء الاصطناعي، الصحفيون الاقتصاديون، ودارسو اقتصاد التقنية.",
+      "nextSteps": [
+        "تابع بيان التسجيل والنشرة النهائية لمعرفة السعر والشروط بعد اعتمادها.",
+        "ميّز بين النطاق الاسترشادي والسعر النهائي وبين أسهم الشركة والأسهم المعروضة من مساهمين حاليين.",
+        "تعامل مع الخبر بوصفه تطورًا مؤسسيًا لا توصية بشراء سهم أو توقعًا لعائد."
+      ],
+      "limitations": "الطرح مقترح وبيان التسجيل لم يكن نافذًا وقت الإعلان؛ قد تتغير الشروط والسعر والجدول. الأرقام لا تثبت قيمة سوقية نهائية ولا تقدم توصية استثمارية.",
+      "reviewedAt": "2026-11-10T23:38:46+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Anthropic — Roadshow launch announcement",
+          "url": "https://www.anthropic.com/news/roadshow-launch"
+        },
+        {
+          "title": "TechCrunch — Anthropic sets IPO price range",
+          "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/"
+        }
+      ],
+      "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/"
+    },
+    "1d8889c9661cfe547b": {
+      "titleAr": "Ring تعلن كاميرا Drone Cam وروبوت Rover ضمن فئة Ring Robotics",
+      "summaryAr": "أعلنت Amazon عن كاميرا داخلية طائرة تتحرك وفق مسارات وتستجيب لتنبيهات أجهزة Ring، وروبوت Rover مخصصًا للأعمال. تقول الشركة إن Drone Cam يصور بدقة 2K ويستخدم AI Pilot لرسم المسارات، وحددت إطلاقًا أميركيًا معلنًا في 27 يناير 2027 بسعر 249.99 دولارًا. وفي تجربة The Verge القصيرة، تراوح زمن الطيران المعلن بين خمس وثماني دقائق، مع اعتماد الجهاز على اتصال Wi‑Fi.",
+      "whyItMatters": "يمثل انتقالًا من الكاميرات الثابتة إلى أجهزة مراقبة متحركة تعتمد على الرؤية الحاسوبية والسحابة؛ ويثير أسئلة عملية عن الخصوصية والاعتمادية والاشتراكات.",
+      "audience": "متابعو الأجهزة المنزلية والروبوتات، ومهتمو الخصوصية وتقنيات المنزل الذكي.",
+      "nextSteps": [
+        "تابع حصول Drone Cam على موافقة FCC قبل اعتباره منتجًا متاحًا للبيع.",
+        "راجع سياسة معالجة الفيديو والتخزين السحابي ومتطلبات Ring Protect قبل تقييم الجهاز.",
+        "قارن زمن الطيران والاعتماد على Wi‑Fi مع الحاجة الفعلية للمراقبة المستمرة."
+      ],
+      "limitations": "تقول Amazon إن الجهاز لم يحصل بعد على تصريح FCC اللازم، ولذلك لا يجوز عرضه للبيع أو التأجير قبل الموافقة. التجربة الصحفية كانت قصيرة ولم تختبر كل العوائق أو السلالم أو تفاعل الحيوانات؛ كما أن الاعتماد على Wi‑Fi يحد من التشغيل عند انقطاع الاتصال.",
+      "reviewedAt": "2026-11-10T23:38:46+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Amazon — Ring announces Ring Robotics",
+          "url": "https://www.aboutamazon.com/news/devices/ring-drone-cam-rover-cam-security-robot"
+        },
+        {
+          "title": "The Verge — Hands-on with Ring’s new AI drone camera",
+          "url": "https://www.theverge.com/tech/1030601/ring-drone-cam-hands-on-price-release-date-ai-pilot"
+        }
+      ],
+      "url": "https://www.theverge.com/tech/1030601/ring-drone-cam-hands-on-price-release-date-ai-pilot"
+    },
+    "d62e152dace4589504": {
+      "titleAr": "تمويل سعودي يصل إلى 2.5 مليار ريال لدعم حوسبة ومراكز بيانات HUMAIN",
+      "summaryAr": "أعلنت وكالة الأنباء السعودية أن صندوق البنية التحتية الوطني وHUMAIN وقّعا اتفاقيتي تمويل تصلان إلى 2.5 مليار ريال (667 مليون دولار). يخصص التسهيل الأول ما يصل إلى 1.1 مليار ريال لتوفير وحدات معالجة رسومية بحمل تقني معلومات يقارب 25 ميجاواط، والثاني ما يصل إلى 1.4 مليار ريال للبنية التحتية للطاقة اللازمة لمراكز بيانات قد تتوسع مستقبلًا إلى أحمال تصل إلى 1 جيجاواط.",
+      "whyItMatters": "يربط توسع الذكاء الاصطناعي في المملكة بقدرات الكهرباء ومراكز البيانات والتمويل، ويبرز أن الحوسبة واسعة النطاق تحتاج بنية طاقة واتصال وتبريد إلى جانب وحدات GPU.",
+      "audience": "طلاب الذكاء الاصطناعي والهندسة، مطورو الحلول، ومتابعو الاقتصاد الرقمي والبنية التحتية في السعودية.",
+      "nextSteps": [
+        "تابع مراحل تنفيذ اتفاقيتي التمويل وموعد شراء وحدات GPU وتشغيلها.",
+        "فرّق بين أحمال 25 ميجاواط المعلنة للتسهيل الأول وبين هدف التوسع المستقبلي إلى 1 جيجاواط.",
+        "راقب مؤشرات التشغيل الفعلي واستهلاك الطاقة والتبريد بدل الاكتفاء بقيمة التمويل المعلنة."
+      ],
+      "limitations": "المبالغ حدود تمويل معلنة وليست دليلًا على أن وحدات GPU أو سعة مراكز البيانات أصبحت عاملة بالفعل. رقم 1 جيجاواط يصف قدرة مستقبلية مستهدفة للبنية، لا سعة تشغيلية حالية.",
+      "reviewedAt": "2026-11-10T23:38:46+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "وكالة الأنباء السعودية — اتفاقيتا تمويل صندوق البنية التحتية الوطني وHUMAIN",
+          "url": "https://spa.gov.sa/N2721828"
+        }
+      ],
+      "url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxPNkNBR3pQRFJfaTVSQjJZMEViQUxmVnNnU1lOeXRoWHdrWVA2SmFpeXNBQkFCcTduZkg3SGpwOGxLYmZ5WGg2SXZCYi1ocUFBZWNEUzEwV2llU24wc0tjYnRnWndhemxwdEVWM09jRlJaa2dOb1h2T3pqQXpDWWdGLWFKOERLaUlfMGo3NnB0LUxlZHNlMll3ZlQ3eVhFYzhneUh1andLRnBDaGNZVV9Da3hHeDBuVS1wV2kwY1JOXzlTUDJ0OVJZeW9jRXN4eHhFanFvQkVuc1dDVkRvME1Fel9YemFmalczdGIxYUZicnBBRDNycmNSWDczRXhRTWE1amt2aU9RaEZ3NVJwN2NtQVNOX2NjMS1WblYxcEJwRFpVUUdKcFl2NW9ENVUwUHl0elI2OFoxcEJiRWt6YkFBNjdpYzk5OGo4am5r?oc=5"
+    },
+    "ae543fdc68f7cb2628": {
+      "url": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
+      "titleAr": "نيويورك تفتح تسجيل مطوري النماذج المتقدمة قبل بدء قانون RAISE في 2027",
+      "summaryAr": "أفاد TechCrunch بأن ولاية نيويورك فتحت بوابة تسجيل للمطورين الذين يشملهم قانون RAISE. وتؤكد صفحة مجلس الشيوخ أن مشروع S8828 وُقّع في 27 مارس 2026؛ وتقول التغطية إن بدء تطبيق الإطار مقرر في 1 يناير 2027. يركز القانون على الشفافية وخطط السلامة والإبلاغ لفئة محددة من مطوري النماذج المتقدمة.",
+      "whyItMatters": "ينقل بعض التزامات سلامة النماذج من الممارسات الطوعية إلى متطلبات تنظيمية، ويجعل فهم النطاق والتوقيت والجهات المشمولة مهمًا للمطورين والمؤسسات.",
+      "audience": "مطورو النماذج المتقدمة، فرق الامتثال والسياسات، والباحثون في حوكمة الذكاء الاصطناعي.",
+      "nextSteps": [
+        "راجع نص S8828 وسجل إجراءاته الرسميين قبل نقل أي موعد أو التزام.",
+        "تابع إرشادات بوابة التسجيل واللوائح التنفيذية لتحديد الجهات المشمولة.",
+        "ميّز مطوري النماذج الذين ينطبق عليهم التعريف القانوني عن مطوري التطبيقات الصغيرة ومستخدمي النماذج."
+      ],
+      "limitations": "تاريخ توقيع S8828 مؤكد في سجل مجلس الشيوخ؛ أما موعد 1 يناير 2027 فيستند إلى تغطية TechCrunch وقراءة النص التشريعي المرتبط. لا يعني ذلك أن كل تطبيق أو مطور صغير مشمول؛ راجع الإرشادات التنفيذية قبل تحديد التزام جهة بعينها.",
+      "reviewedAt": "2026-11-11T11:44:51+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — New York AI oversight and RAISE registration",
+          "url": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect"
+        },
+        {
+          "title": "New York State Senate — Bill S8828",
+          "url": "https://www.nysenate.gov/legislation/bills/2025/S8828"
+        }
+      ]
+    },
+    "f0fc30384fec2ecc4d": {
+      "url": "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/",
+      "titleAr": "Git ينشر تحديثات أمنية لإصلاح ست ثغرات ويوصي بتحديث فروع الصيانة",
+      "summaryAr": "أعلن مشروع Git ست ثغرات وأصدر تحديثات صيانة تشمل Git 2.56.1 وفروعًا أقدم مدعومة. تتناول النشرة حالات مرتبطة بعمليات استنساخ ومراجع ودمج واستيراد؛ وتوصي GitHub بتحديث نسخ Git المثبتة والنسخ المضمنة في أدوات التطوير وصور البناء.",
+      "whyItMatters": "يدخل Git في أجهزة المطورين وخوادم CI وأدوات البناء؛ لذلك لا يكفي تحديث النسخة المثبتة مباشرة، بل ينبغي فحص النسخ المضمنة في بيئات التطوير والحاويات.",
+      "audience": "المطورون، مسؤولو DevOps، مشرفو المستودعات، وفرق أمن البرمجيات.",
+      "nextSteps": [
+        "احصر إصدارات Git المستخدمة محليًا وفي أنظمة CI وصور الحاويات.",
+        "طبّق إصدار الإصلاح المناسب لفرع الصيانة المستخدم وفق النشرة الرسمية.",
+        "راجع نسخ Git المضمنة في IDEs وأدوات البناء بدل افتراض أنها تتحدث مع النظام."
+      ],
+      "limitations": "يتوقف التأثر على الإصدار والعملية المستخدمة؛ وجود إصدار أقدم لا يثبت وقوع اختراق. ارجع إلى النشرة الرسمية لتحديد الإصدار المتأثر والإصلاح المناسب ولا تعمم الخطر على كل إعداد.",
+      "reviewedAt": "2026-11-11T11:44:51+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "GitHub Blog — Git security vulnerabilities announced",
+          "url": "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/"
+        }
+      ]
+    },
+    "1b0c05cd97a311af5c": {
+      "url": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/",
+      "titleAr": "Oura تتفق على الاستحواذ على Counsel Health مقابل 625 مليون دولار",
+      "summaryAr": "أعلنت Counsel Health اتفاقًا نهائيًا تستحوذ بموجبه Oura على الشركة مقابل 625 مليون دولار نقدًا. يربط النموذج المعلن بيانات Oura الحيوية بخدمات ذكاء اصطناعي للرعاية الأولية وإمكانية التصعيد إلى أطباء مرخصين؛ وتقول Counsel إن الإغلاق متوقع قبل نهاية 2026، مع استمرارها في خدمة شركائها المؤسسيين.",
+      "whyItMatters": "يجمع الخبر بين الأجهزة القابلة للارتداء والرعاية الرقمية والذكاء الاصطناعي الطبي، ويبرز أن الاستخدام السريري يتطلب إشرافًا طبيًا وحوكمة للبيانات وتقييمًا يتجاوز مؤشرات التفاعل.",
+      "audience": "متابعو الأجهزة القابلة للارتداء والصحة الرقمية والذكاء الاصطناعي الطبي والخصوصية.",
+      "nextSteps": [
+        "تابع إتمام الصفقة بدل وصفها بأنها أُغلقت بالفعل.",
+        "راجع سياسات مشاركة البيانات والصلاحيات بين تطبيق Oura وخدمات Counsel بعد الإغلاق.",
+        "ميّز مؤشرات الشركة الأولية عن الأدلة السريرية المستقلة ونتائج الاستخدام طويلة الأمد."
+      ],
+      "limitations": "الصفقة اتفاق معلن ولم تغلق بعد. بيان Counsel الرسمي يذكر توقع الإغلاق قبل نهاية 2026، بينما أوردت تغطية TechCrunch جدولًا مختلفًا؛ لذلك اعتمدت المصدر الأولي مع الإشارة إلى التعارض. الأرقام والنتائج الواردة في البيان تصريحات شركات وليست تقييمًا سريريًا مستقلًا.",
+      "reviewedAt": "2026-11-11T11:44:51+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — Oura to acquire Counsel Health",
+          "url": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/"
+        },
+        {
+          "title": "Counsel Health — Oura acquisition announcement",
+          "url": "https://www.counselhealth.com/newsroom/oura-to-acquire-counsel-health-advancing-vision-for-more-connected-personalized-healthcare"
+        }
+      ]
+    },
+    "69d4d9d74efa01629a": {
+      "url": "https://openai.com/index/closing-ai-guidance-gap-education",
+      "titleAr": "OpenAI ترصد فجوة في إرشاد الطلاب والمعلمين لاستخدام الذكاء الاصطناعي في التعليم",
+      "summaryAr": "في مقال منشور في 10 نوفمبر 2026، تقول OpenAI إن بحث ThinkYoung شمل 5,000 طالب ثانوي و600 معلم في 12 دولة بأوروبا والشرق الأوسط وأفريقيا. وتذكر أن 79% من الطلاب المشاركين استخدموا الذكاء الاصطناعي في الواجبات أو المهام، بينما قال 47% فقط إنهم تلقوا إرشادًا حول كيفية استخدامه. وتعرض المقالة شراكات تعليمية في إستونيا وسلوفاكيا واليونان وإيطاليا تركز على تدريب المعلمين ومحو أمية الذكاء الاصطناعي والتقييم.",
+      "whyItMatters": "التحليل: الاستخدام لدى الطلاب قد يسبق الإرشاد المدرسي في العينة التي تستشهد بها OpenAI؛ لذلك لا يكفي حظر الأدوات أو تعميمها، بل يلزم توجيه واضح وتدريب للمعلمين وتعليم التحقق من المخرجات والحفاظ على التفكير المستقل. النسب وحدها لا تثبت أن الذكاء الاصطناعي يحسن التحصيل.",
+      "audience": "الطلاب والمعلمون والجامعات وصنّاع سياسات التعليم.",
+      "nextSteps": [
+        "راجع تقرير ThinkYoung الكامل عند توفره، وحدود العمر والبلدان وطريقة اختيار العينة قبل تعميم النسب.",
+        "ضع قواعد تعليمية واضحة للإفصاح عن المساعدة الآلية والتمييز بين التعلم وإنجاز المهمة نيابة عن الطالب.",
+        "قيّم الفهم والاحتفاظ بالمعلومة والتفكير المستقل، لا سرعة إنجاز الواجب وحدها."
+      ],
+      "limitations": "المقال صادر عن OpenAI ويستند إلى بحث ThinkYoung؛ صفحة ThinkYoung العامة تؤكد حجم العينة ونطاقها الجغرافي، لكن التقرير الكامل يتطلب طلب الوصول. نسب 79% و47% منسوبة إلى OpenAI وليست إعادة تحليل مستقلة هنا. المقال يعرض أنماطًا أولية وشراكات في EMEA ولا يقدم تجربة سببية تثبت تحسن التحصيل.",
+      "reviewedAt": "2026-11-11T18:36:12+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "OpenAI — Closing the AI guidance gap in education",
+          "url": "https://openai.com/index/closing-ai-guidance-gap-education/"
+        },
+        {
+          "title": "ThinkYoung — Views, Experiences & Expectations for AI in Education",
+          "url": "https://www.thinkyoung.eu/aieducation"
+        }
+      ]
+    },
+    "cb93d68b445c05b0e3": {
+      "url": "https://huggingface.co/blog/hub-gcp-marketplace",
+      "titleAr": "Hugging Face تتيح فوترة استخدام Hub عبر حساب Google Cloud للمنظمات",
+      "summaryAr": "أعلنت Hugging Face أن مسؤولي المنظمات يمكنهم ربط حساب Hugging Face المؤسسي باشتراك Google Cloud Marketplace، لتظهر رسوم الاشتراك واستخدام خدمات Hub ضمن فاتورة Google Cloud. تتطلب العملية موافقة Hugging Face قبل بدء الفوترة الجديدة؛ وقد تبقى البطاقة الحالية مستخدمة حتى الموافقة أو دورة الفوترة التالية. يوضح دليل الفوترة أن الاستخدام الحاسوبي يظل مقاسًا حسب الاستهلاك وأن الاشتراكات والموارد قد تُفوتر بصورة منفصلة.",
+      "whyItMatters": "التحليل: يفيد هذا فرق تعلم الآلة التي تدير مشتريات سحابية موحدة، لكنه ليس خصمًا ولا يجعل الحوسبة مجانية. ينبغي فصل رسوم الاشتراك عن تكاليف Jobs وInference وGPU Spaces ومراقبة الاستهلاك بعد الربط.",
+      "audience": "فرق تعلم الآلة والذكاء الاصطناعي، مسؤولو Google Cloud، وفرق المشتريات والمالية.",
+      "nextSteps": [
+        "تحقق من أن الربط متاح لمنظمة وأن لديك صلاحية مسؤول عليها في Hugging Face ومشروع Google Cloud الصحيح.",
+        "راجع أسعار الاشتراكات والحوسبة والتخزين قبل الموافقة، ولا تعتبر توحيد الفاتورة خفضًا للتكلفة.",
+        "تابع حالة الموافقة ولوحة الاستخدام وسجلات التدقيق، وتأكد من تاريخ انتقال وسيلة الدفع."
+      ],
+      "limitations": "الميزة مخصصة للمنظمات، وتتطلب موافقة Hugging Face. إلى أن تصبح الموافقة فعالة يستمر استخدام وسيلة الدفع الحالية؛ وقد تنتقل المنظمات ذات البطاقة عند بداية دورة الفوترة التالية. الاستخدام الحاسوبي مقاس حسب الاستهلاك، وقد يكون منفصلًا عن اشتراك PRO أو Team أو Enterprise. الإعلان صادر عن مزود الخدمة ولا يقدم مقارنة أسعار تثبت توفيرًا ماليًا.",
+      "reviewedAt": "2026-11-11T18:36:12+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Hugging Face — Pay for Hugging Face Hub with your Google Cloud Account",
+          "url": "https://huggingface.co/blog/hub-gcp-marketplace"
+        },
+        {
+          "title": "Hugging Face — Billing documentation",
+          "url": "https://huggingface.co/docs/hub/billing"
+        }
+      ]
+    },
+    "ee7e0e584b2626a327": {
+      "url": "https://github.com/datawhalechina/hello-agents",
+      "titleAr": "Hello-Agents: دليل عملي لبناء وكلاء الذكاء الاصطناعي من الصفر",
+      "summaryAr": "مشروع تعليمي من مجتمع Datawhale يقدم كتابًا مجانيًا ومنظمًا لبناء وكلاء الذكاء الاصطناعي من المبادئ إلى التطبيق. يغطي الأساسيات، أنماط ReAct وPlan-and-Solve وReflection، الأطر، الذاكرة وRAG، هندسة السياق، بروتوكولات MCP وA2A وANP، التدريب والتقييم، ثم تطبيقات متعددة الوكلاء. يرفق أمثلة برمجية ومشروعات تطبيقية، وليس حزمة واحدة جاهزة للتثبيت.",
+      "whyItMatters": "يشرح الانتقال من استخدام نموذج لغوي إلى بناء نظام وكيل قابل للتصميم والتقييم، ويربط المفاهيم بتطبيقات عملية. قيمته تعليمية ومنهجية؛ لكنه لا يغني عن قراءة توثيق كل إطار أو اختبار الأمثلة على إصداراتها الحالية.",
+      "audience": "طلاب ومطورو Python، مهندسو البرمجيات، والمتعلمون الذين لديهم أساس برمجي ومعرفة أولية باستدعاء واجهات النماذج.",
+      "nextSteps": [
+        "ابدأ بالقراءة الإلكترونية، ثم اقرأ الفصول الثلاثة الأولى قبل اختيار إطار أو مشروع تطبيقي.",
+        "استنسخ المستودع واختر فصلًا واحدًا؛ لا تثبّت اعتماديات كل الأمثلة دفعة واحدة.",
+        "راجع requirements.txt أو pyproject.toml داخل مجلد المثال، ثم انسخ ملف .env.example واضبط مفاتيح المزود المطلوبة.",
+        "سجّل إصدار Python والنموذج ومزود الخدمة قبل تشغيل المثال حتى يمكن إعادة إنتاج النتيجة."
+      ],
+      "limitations": "المحتوى الأساسي باللغة الصينية، ولا يوجد ملف متطلبات موحد لجذر المستودع؛ تختلف الاعتماديات حسب الفصل والمشروع. بعض الأمثلة تحتاج مفاتيح API وخدمات خارجية مثل مزود نموذج أو Tavily أو Amap. يعلن LICENSE.txt ترخيص CC BY-NC-SA 4.0 للمحتوى، أي مع نسب العمل وعدم الاستخدام التجاري والمشاركة بالمثل؛ وتوجد ملفات ترخيص منفصلة داخل بعض المجلدات، لذلك لا ينبغي افتراض أن كل مثال يرث ترخيصًا برمجيًا واحدًا. لم نشغّل الأمثلة في هذه المراجعة.",
+      "reviewedAt": "2026-11-11T18:36:12+03:00",
+      "basis": "readme",
+      "overview": "دليل تعليمي من 16 فصلًا يبدأ بمفهوم الوكيل وتاريخ النماذج، ثم يبني الأنماط الكلاسيكية والأطر، ويتناول الذاكرة والاسترجاع وهندسة السياق وبروتوكولات الوكلاء وAgentic RL والتقييم، وينتهي بتطبيقات مثل مساعد السفر والبحث العميق ومحاكاة مجتمع. يوفر قراءة إلكترونية ونسخة PDF وأمثلة ضمن مجلد code؛ ليس إطارًا برمجيًا موحدًا أو خدمة مستضافة.",
+      "requirements": "لا توجد متطلبات تثبيت عامة للجذر. يوصي README بأساس Python وفهم أولي لاستدعاء LLM API. الاعتماديات مرتبطة بكل مثال: مثلًا مثال LangGraph يثبت langgraph==1.0.0a3 وlangchain_openai==0.3.33 وpython-dotenv وtavily-python؛ ومساعد السفر يطلب Python 3.10+ وNode.js 16+ ومفاتيح Amap لخدمات الويب وJavaScript ومفتاح مزود نموذج؛ ومشروع DeepResearch يحدد Python >=3.10 مع FastAPI وhello-agents==0.2.9 وTavily وOpenAI وUvicorn وddgs وloguru. استخدم ملف الاعتماديات الخاص بالمثال فقط.",
+      "quickStart": "للقراءة: افتح https://datawhalechina.github.io/hello-agents/ . للتطبيق: git clone https://github.com/datawhalechina/hello-agents.git، اختر فصلًا واحدًا، ادخل مجلد code الخاص به، أنشئ بيئة Python وفق المتطلبات المحددة، وثبّت ملف requirements.txt أو pyproject.toml الخاص بذلك المثال. انسخ .env.example إن وجد، أضف مفاتيح المزود المطلوبة، ثم نفّذ ملف البدء المذكور في README الخاص بالمثال. لا يوجد أمر pip install واحد يغطي المستودع كله.",
+      "costModel": "قراءة المحتوى مجانية. تكلفة التطبيق تختلف: استدعاءات نماذج LLM وTavily وAmap قد تستهلك حصصًا أو رسومًا لدى المزود؛ ويمكن لبعض الأمثلة استخدام نقطة نهاية محلية متوافقة أو نموذج محلي إذا كانت البنية تسمح، مقابل موارد الجهاز. لا توجد خدمة استضافة رسمية مدفوعة مفروضة لقراءة الكتاب.",
+      "localVsCloud": "يمكن قراءة المحتوى عبر الويب أو تنزيله محليًا، وتشغيل كثير من الأمثلة على جهاز المطور. لكن الأمثلة التي تستخدم OpenAI أو Tavily أو Amap تتصل بخدمات سحابية؛ لا تفترض أن تشغيل الكود محليًا يعني أن معالجة النموذج محلية. استبدال المزود يتطلب توافق الواجهة وتعديل الإعدادات.",
+      "licenseSummary": "LICENSE.txt في جذر المستودع يحدد Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0): نسب العمل، وعدم الاستخدام التجاري، ومشاركة المشتقات بالمثل. GitHub API يعرض NOASSERTION لا لغياب نص الترخيص بل لأن الترخيص ليس SPDX تقليديًا؛ توجد ملفات ترخيص فرعية لبعض الأمثلة ويجب فحصها منفردة قبل إعادة التوزيع.",
+      "activityAssessment": "المستودع غير مؤرشف ومفعّل؛ آخر push بحسب GitHub API كان 2026-11-11T06:18:57Z. قياس 2026-11-11 18:36 (+03): 86,737 نجمة و10,822 fork و176 issue/PR مفتوحًا. updatedAt لا يُعامل كبديل عن pushedAt.",
+      "metrics": {
+        "stars": 86737,
+        "forks": 10822,
+        "openIssuesCount": 176,
+        "archived": false,
+        "disabled": false,
+        "licenseSpdx": "NOASSERTION",
+        "licenseDeclared": "CC BY-NC-SA 4.0",
+        "pushedAt": "2026-11-11T06:18:57Z",
+        "updatedAt": "2026-11-11T15:45:21Z",
+        "defaultBranch": "main",
+        "language": "Python",
+        "measuredAt": "2026-11-11T18:36:12+03:00",
+        "sourceApiUrl": "https://api.github.com/repos/datawhalechina/hello-agents"
+      },
+      "alternatives": [
+        {
+          "name": "Datawhale Agent Learning Hub",
+          "url": "https://github.com/datawhalechina/Agent-Learning-Hub",
+          "tradeoff": "خريطة تعلم أوسع لمسارات الوكلاء بدل كتاب واحد متدرج."
+        },
+        {
+          "name": "LangChain Academy",
+          "url": "https://academy.langchain.com/",
+          "tradeoff": "مسارات تطبيقية تركز على منظومة LangChain وLangGraph."
+        },
+        {
+          "name": "Full Stack Deep Learning",
+          "url": "https://fullstackdeeplearning.com/",
+          "tradeoff": "تركيز على بناء أنظمة تعلم عميق إنتاجية، وليس منهجًا عامًا لبناء الوكلاء."
+        }
+      ],
+      "improvements": [
+        {
+          "title": "بيئات قابلة لإعادة الإنتاج لكل فصل",
+          "problem": "تتغير إصدارات الحزم ومزودات النماذج، وقد يفشل مثال قديم رغم صحة الشرح.",
+          "approach": "تحديد ملف اعتماديات مقفل لكل مثال، مع نسخة Python ومزود النموذج وتاريخ آخر تشغيل موثق.",
+          "stack": "Python, uv, pip-tools, pytest, GitHub Actions",
+          "steps": [
+            "احصر الأمثلة التي لها ملفات اعتماديات مستقلة.",
+            "ثبّت إصدار Python والحزم لكل مثال بدل متطلبات عائمة.",
+            "أضف .env.example يوضح المتغيرات دون أسرار.",
+            "أنشئ smoke test صغيرًا باستخدام fixtures أو TestModel حيث يتاح.",
+            "اعرض تاريخ آخر تحقق ومزود النموذج في صفحة الفصل."
+          ],
+          "metric": "100% من أمثلة المسار الأساسي لها بيئة موثقة وحالة اختبار وتاريخ مراجعة.",
+          "difficulty": "متوسطة؛ تقدير 3–4 أسابيع.",
+          "risks": "قد تتغير واجهات مزودي النماذج أو تتطلب الاختبارات مفاتيح API وحصصًا سحابية.",
+          "sources": [
+            {
+              "title": "Hello-Agents README",
+              "url": "https://github.com/datawhalechina/hello-agents/blob/main/README.md"
+            },
+            {
+              "title": "LangGraph example requirements",
+              "url": "https://github.com/datawhalechina/hello-agents/blob/main/code/chapter6/Langgraph/requirements.txt"
+            }
+          ]
+        },
+        {
+          "title": "نسخة عربية مع مسرد مصطلحات ثنائي اللغة",
+          "problem": "الحاجز اللغوي يقلل استفادة المتعلمين العرب من الفصول والمفاهيم التقنية.",
+          "approach": "ترجمة مجتمعية فصلية مرتبطة بإصدار النص الأصلي، مع مسرد موحد ومراجعة بشرية وإبقاء النسب والترخيص.",
+          "stack": "Markdown, YAML glossary, MkDocs, GitHub Pages",
+          "steps": [
+            "ابدأ بفصول الأساسيات الأربعة وحدد نسخة المصدر وتاريخها.",
+            "أنشئ مسردًا عربيًا/إنجليزيًا لمصطلحات Agent وRAG وMCP وA2A.",
+            "ترجم فصلًا واحدًا مع روابط للمقاطع الأصلية.",
+            "اطلب مراجعة تقنية ولغوية مستقلة قبل النشر.",
+            "أضف آلية لمقارنة التغييرات مع النسخة الصينية وتحديث الترجمة."
+          ],
+          "metric": "ثلاثة فصول عربية مراجعة مع اتساق 95% للمصطلحات في عينة تدقيق.",
+          "difficulty": "متوسطة إلى عالية؛ تقدير 4–6 أسابيع.",
+          "risks": "انحراف الترجمة عن المصدر، وحقوق المشتقات؛ يجب احترام CC BY-NC-SA 4.0.",
+          "sources": [
+            {
+              "title": "Hello-Agents README",
+              "url": "https://github.com/datawhalechina/hello-agents/blob/main/README.md"
+            },
+            {
+              "title": "Hello-Agents LICENSE.txt",
+              "url": "https://github.com/datawhalechina/hello-agents/blob/main/LICENSE.txt"
+            }
+          ]
+        },
+        {
+          "title": "سجل إصدارات ومصادر لأمثلة النماذج والواجهات",
+          "problem": "قد تتغير أسماء النماذج وواجهات SDK أو تتوقف نقاط النهاية بعد نشر الفصل.",
+          "approach": "إضافة سجل لكل مثال يحدد SDK والنموذج والمزود والبديل المحلي وتاريخ المراجعة وحدود الاستخدام.",
+          "stack": "Python, JSON manifest, uv, pytest, API fixtures",
+          "steps": [
+            "استخرج الأمثلة التي تستدعي واجهات خارجية.",
+            "سجّل اسم الحزمة وإصدارها والنموذج والمزود لكل مثال.",
+            "أضف بديلًا محليًا عندما تدعمه الواجهة دون ادعاء تطابق كامل.",
+            "استخدم fixtures لاختبار parsing وتدفق الأدوات دون استهلاك API.",
+            "أصدر تقريرًا دوريًا بالأمثلة التي تحتاج تحديثًا."
+          ],
+          "metric": "90% من أمثلة الواجهات الخارجية تحمل إصدارًا ومصدرًا وتاريخ تحقق واضحًا.",
+          "difficulty": "متوسطة؛ تقدير 3–5 أسابيع.",
+          "risks": "قد تتطلب بعض مزودات API تشغيلًا حيًا وتكلفة أو تتغير شروطها.",
+          "sources": [
+            {
+              "title": "FirstAgentTest.py",
+              "url": "https://github.com/datawhalechina/hello-agents/blob/main/code/chapter1/FirstAgentTest.py"
+            },
+            {
+              "title": "Trip Planner README",
+              "url": "https://github.com/datawhalechina/hello-agents/blob/main/code/chapter13/helloagents-trip-planner/README.md"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مختبر عربي تفاعلي لتجارب Agent",
+          "problem": "يصعب على المتعلم الانتقال من قراءة النظرية إلى تجربة خطوات الوكيل وملاحظة فشل الأدوات.",
+          "approach": "مختبر صغير يقسم التجربة إلى مهام ReAct وذاكرة وRAG وتقييم، مع بيئة محلية وبيانات اصطناعية.",
+          "stack": "Python, Jupyter, FastAPI, local LLM, pytest",
+          "steps": [
+            "اختر ثلاثة أنماط أساسية من الكتاب.",
+            "ابنِ لكل نمط مثالًا قصيرًا ببيانات اصطناعية.",
+            "أضف اختبارًا يوضح السلوك المتوقع والفشل.",
+            "وفر مزودًا محليًا اختياريًا لتجنب API في التجارب الأولى.",
+            "اجمع نتائج المتعلم في تقرير تقدم قابل للتصدير."
+          ],
+          "metric": "إكمال 80% من تجارب المسار الأساسي مع نجاح اختبارات الأمثلة.",
+          "difficulty": "متوسطة؛ تقدير 4–6 أسابيع.",
+          "risks": "تفاوت أداء النماذج المحلية ومتطلبات الذاكرة؛ يجب عدم تشغيل أدوات غير موثوقة بلا عزل.",
+          "sources": [
+            {
+              "title": "Hello-Agents README",
+              "url": "https://github.com/datawhalechina/hello-agents/blob/main/README.md"
+            },
+            {
+              "title": "Hello-Agents code directory",
+              "url": "https://github.com/datawhalechina/hello-agents/tree/main/code"
+            }
+          ]
+        },
+        {
+          "title": "مجموعة تقييم عربية لوكلاء الأدوات",
+          "problem": "تفتقر أمثلة الوكلاء العربية إلى مجموعة مهام قابلة لإعادة الإنتاج لقياس اختيار الأداة وصحة النتيجة.",
+          "approach": "إنشاء مهام عربية محدودة مع إجابة مرجعية وأدوات وهمية وقياس الدقة والرفض عند غياب المصدر.",
+          "stack": "Python, pytest, JSONL fixtures, evaluation harness",
+          "steps": [
+            "حدد 30 مهمة عربية بسيطة ذات مخرجات مرجعية.",
+            "أنشئ أدوات وهمية لا تتصل بحسابات حقيقية.",
+            "قِس اختيار الأداة وصحة الوسيط والنتيجة النهائية.",
+            "أضف حالات يجب أن يصرح فيها الوكيل بعدم كفاية البيانات.",
+            "انشر نتائج كل نموذج مع الإصدار والإعدادات."
+          ],
+          "metric": "دقة 90% في اختيار الأداة والوسائط على مجموعة الاختبار الثابتة.",
+          "difficulty": "متوسطة إلى عالية؛ تقدير 5–7 أسابيع.",
+          "risks": "الانحياز لمهام محدودة وعدم تمثيل كل اللهجات أو السياقات.",
+          "sources": [
+            {
+              "title": "Hello-Agents chapter 12",
+              "url": "https://github.com/datawhalechina/hello-agents/tree/main/code/chapter12"
+            },
+            {
+              "title": "Hello-Agents README",
+              "url": "https://github.com/datawhalechina/hello-agents/blob/main/README.md"
+            }
+          ]
+        }
+      ],
+      "religious": [
+        {
+          "title": "فهرس تعليمي لنصوص شرعية موثقة دون إصدار فتاوى",
+          "problem": "يصعب على المتعلم البحث في مجموعة نصوص مع الحفاظ على الإحالة الدقيقة ومنع نسبة كلام غير موثق للمصدر.",
+          "approach": "تطبيق استرجاع يعرض المقطع ورقم الصفحة والمصدر وتاريخ النسخة، ويقتصر على الفهرسة والشرح اللغوي المراجع ولا يصدر أحكامًا أو فتاوى.",
+          "stack": "Python, HelloAgents, local embeddings, vector database, human review",
+          "steps": [
+            "حدد corpus مرخصًا ومراجعًا من جهة علمية موثوقة.",
+            "احفظ النصوص كما هي مع بيانات المصدر والباب والصفحة والإصدار.",
+            "ابنِ فهرسة محلية تعيد المقاطع ذات الصلة فقط.",
+            "اشترط إظهار الإحالة الحرفية وامتنع عند غياب مصدر كافٍ.",
+            "اعرض أي شرح على مختص مؤهل قبل نشره ولا تقدم فتوى آلية."
+          ],
+          "metric": "100% من النتائج المعروضة تحمل إحالة قابلة للتحقق، وصفر أحكام شرعية مولدة دون مراجعة بشرية.",
+          "difficulty": "عالية؛ تقدير 6–8 أسابيع.",
+          "risks": "خطأ النقل أو الفهم أو حقوق النصوص؛ يجب ألا يستخدم لإصدار فتوى أو استبدال أهل الاختصاص.",
+          "sources": [
+            {
+              "title": "Hello-Agents README",
+              "url": "https://github.com/datawhalechina/hello-agents/blob/main/README.md"
+            },
+            {
+              "title": "Hello-Agents LICENSE.txt",
+              "url": "https://github.com/datawhalechina/hello-agents/blob/main/LICENSE.txt"
+            }
+          ]
+        }
+      ],
+      "testStatus": "not_run",
+      "sources": [
+        {
+          "title": "Hello-Agents README",
+          "url": "https://github.com/datawhalechina/hello-agents/blob/main/README.md"
+        },
+        {
+          "title": "Hello-Agents LICENSE.txt — CC BY-NC-SA 4.0",
+          "url": "https://github.com/datawhalechina/hello-agents/blob/main/LICENSE.txt"
+        },
+        {
+          "title": "Chapter 1 agent example",
+          "url": "https://github.com/datawhalechina/hello-agents/blob/main/code/chapter1/FirstAgentTest.py"
+        },
+        {
+          "title": "Chapter 6 LangGraph requirements",
+          "url": "https://github.com/datawhalechina/hello-agents/blob/main/code/chapter6/Langgraph/requirements.txt"
+        },
+        {
+          "title": "Trip Planner README and setup",
+          "url": "https://github.com/datawhalechina/hello-agents/blob/main/code/chapter13/helloagents-trip-planner/README.md"
+        },
+        {
+          "title": "DeepResearch pyproject",
+          "url": "https://github.com/datawhalechina/hello-agents/blob/main/code/chapter14/helloagents-deepresearch/backend/pyproject.toml"
+        },
+        {
+          "title": "Online reading",
+          "url": "https://datawhalechina.github.io/hello-agents/"
+        }
+      ]
+    },
+    "3cffec5790b8f2e218": {
+      "titleAr": "Firefox يقلّص بصمة المتصفح ويعزز مقاومة التتبع دون ملفات تعريف الارتباط",
+      "summaryAr": "تشرح Mozilla أن تحديثات Firefox 145 تقلل تفاصيل الجهاز التي يمكن جمعها لتكوين بصمة متصفح مميزة، مثل بعض معلومات الشاشة وعدد المعالجات. وتستند الدراسة إلى قياسات قرابة 25 مليون مستخدم مع تدابير خصوصية، ثم حولت النتائج إلى وسائل حماية في المتصفح.",
+      "whyItMatters": "التحليل: قد تحد هذه التغييرات من ربط زيارات المستخدم عبر المواقع حتى عندما لا تُستخدم ملفات الارتباط. لكنها لا تجعل البصمة مستحيلة، كما أن بعض الحمايات الإضافية تتطلب وضع Strict أو التصفح الخاص.",
+      "audience": "مستخدمو الويب ومطورو المتصفحات والباحثون في الخصوصية والأمن.",
+      "nextSteps": [
+        "تحقق من استخدام إصدار Firefox 145 أو أحدث.",
+        "اختبر المواقع المهمة مع حماية التتبع الصارمة قبل اعتماد الإعداد دائمًا.",
+        "راجع ورقة Mozilla وأداة الاختبار لفهم القياسات والحدود."
+      ],
+      "limitations": "الأرقام والمنهجية الواردة من Mozilla؛ وتقر الشركة بأن المتعقبين قد يطورون أساليب جديدة. بعض إجراءات الحماية قد تؤثر في توافق مواقع معينة، ولا تمنع جميع وسائل التتبع.",
+      "reviewedAt": "2026-11-11T23:38:26+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Mozilla Security Blog — Open research, stronger privacy",
+          "url": "https://blog.mozilla.org/security/2026/11/10/open-research-stronger-privacy-making-firefox-users-harder-to-fingerprint/"
+        }
+      ],
+      "url": "https://blog.mozilla.org/security/2026/11/10/open-research-stronger-privacy-making-firefox-users-harder-to-fingerprint/"
+    },
+    "35f9d4a8ad49bd077c": {
+      "titleAr": "المفوضية الأوروبية تقترح قانون العدالة الرقمية لمواجهة الأنماط المضللة والاشتراكات المعقدة",
+      "summaryAr": "عرضت المفوضية الأوروبية في 11 نوفمبر 2026 مقترح Digital Fairness Act لمعالجة أساليب مثل الندرة الوهمية والأسعار غير الواضحة والتصميم الذي يصعّب إيقاف الميزات أو إلغاء الاشتراكات، مع تشديد الإفصاح عن التسويق المؤثر والحد من الاستهداف غير العادل للقاصرين.",
+      "whyItMatters": "التحليل: قد يغيّر المقترح متطلبات تصميم المنتجات الرقمية والاشتراكات والتسويق في الاتحاد الأوروبي. لكنه ما يزال مقترحًا تشريعيًا، وليس قانونًا نافذًا بمجرد الإعلان عنه.",
+      "audience": "مطورو المنتجات الرقمية وفرق تجربة المستخدم والتجارة الإلكترونية والامتثال والمستهلكون.",
+      "nextSteps": [
+        "تابع مسار المقترح التشريعي قبل اعتباره التزامًا نافذًا.",
+        "راجع وضوح الأسعار وتدفقات الاشتراك والإلغاء في المنتجات الرقمية.",
+        "افصل بين المقترح الجديد والقواعد الأوروبية السارية حاليًا."
+      ],
+      "limitations": "تقدير الوفورات الذي يصل إلى 13.7 مليار يورو صادر عن المفوضية. لم يُحسم في صفحة الإعلان مسار الاعتماد أو موعد التطبيق النهائي.",
+      "reviewedAt": "2026-11-11T23:38:26+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "European Commission — Making your online experience fairer",
+          "url": "https://commission.europa.eu/news-and-media/news/making-your-online-experience-fairer-2026-11-11_en"
+        }
+      ],
+      "url": "https://www.wired.com/story/duolingo-strava-and-ticketmaster-are-all-caught-up-in-eus-new-digital-fairness-rules/"
+    },
+    "1d584b01bcf30b6f44": {
+      "titleAr": "PAN 2: نموذج عالم مفتوح من جامعة محمد بن زايد يحاكي نتائج الأفعال في مشاهد واقعية",
+      "summaryAr": "أعلن معهد النماذج التأسيسية التابع لجامعة محمد بن زايد للذكاء الاصطناعي إطلاق PAN 2، وهو نموذج عالم مفتوح يستقبل مشهدًا ابتدائيًا وفعلًا موصوفًا باللغة وينتج فيديو يتوقع ما قد يحدث. يجمع بين نموذج لغوي لتخطيط الأحداث ونموذج انتشار فيديو لبناء المشهد، وتقول الجامعة إن الأوزان وكود التدريب والاستدلال متاحة بترخيص Apache 2.0.",
+      "whyItMatters": "التحليل: قد تساعد نماذج العالم الوكلاء والروبوتات على اختبار سيناريوهات افتراضيًا قبل التنفيذ. لكن دقة المحاكاة والاتساق عبر مدد طويلة ما زالا تحديين، فلا ينبغي اعتبار الفيديو محاكاة فيزيائية موثوقة تلقائيًا.",
+      "audience": "باحثو الروبوتات والرؤية الحاسوبية ونماذج العالم ومحاكاة الأفعال.",
+      "nextSteps": [
+        "افحص الأوزان وكود التدريب والاستدلال قبل مقارنة النتائج.",
+        "اختبر ثبات الأجسام والسببية عبر عدة خطوات لا لقطة واحدة.",
+        "قارن النتائج على مهام فيزيائية قابلة لإعادة الإنتاج."
+      ],
+      "limitations": "ترتيب PAN 2 في المعايير والنتائج المذكورة من الجهة المطورة. تذكر الجامعة أن الاتساق طويل المدى ما زال تحديًا؛ لم نشغّل النموذج أو نتحقق مستقلًا من الأداء.",
+      "reviewedAt": "2026-11-11T23:38:26+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "MBZUAI — The Institute of Foundation Models Unveils PAN 2",
+          "url": "https://mbzuai.ac.ae/news-events/news/the-institute-foundation-models-unveils-pan-2-open-world-model-physical"
+        }
+      ],
+      "url": "https://aitnews.com/2026/11/11/%d8%ac%d8%a7%d9%85%d8%b9%d8%a9-%d9%85%d8%ad%d9%85%d8%af-%d8%a8%d9%86-%d8%b2%d8%a7%d9%8a%d8%af-%d9%84%d9%84%d8%b0%d9%83%d8%a7%d8%a1-%d8%a7%d9%84%d8%a7%d8%b5%d8%b7%d9%86%d8%a7%d8%b9%d9%8a-%d8%aa%d8%b7-4/"
+    },
+    "1251f00274bede43be": {
+      "titleAr": "Adobe تعرض عشرة نماذج بحثية في MAX 2026 لتحرير الفيديو والصوت والصور",
+      "summaryAr": "قدمت Adobe في MAX Sneaks 2026 عشر ابتكارات بحثية، منها تطبيق تعديلات متناسقة عبر لقطات الفيديو، والتحكم في توقيت الحركة، وتطوير الشخصيات بالحوار، واستخراج الأصوات وتعديلها، وأدوات فرشاة تفهم محتوى الصورة. وأتاحت الشركة تجربة بعض المشاريع عبر Adobe Labs Playground.",
+      "whyItMatters": "التحليل: تتجه أدوات الإبداع إلى تحرير العناصر والسياق بدل الاكتفاء بتوليد ملف نهائي. لكن ما عُرض في Sneaks يضم نماذج بحثية، وليس ميزات مستقرة متاحة في جميع منتجات Adobe.",
+      "audience": "المصممون ومحررو الفيديو والصوت والباحثون في أدوات الإبداع.",
+      "nextSteps": [
+        "ميّز بين عروض Sneaks والميزات المتاحة فعليًا في Creative Cloud.",
+        "جرّب المشاريع التي أتيحت في Adobe Labs Playground بملفات غير حساسة.",
+        "راقب دقة التحرير وإمكانية التراجع والتحكم قبل إدخالها في سير عمل إنتاجي."
+      ],
+      "limitations": "العروض استكشافية؛ التوفر والأداء قد يتغيران، ولا يعني العرض أن كل مشروع سيصبح منتجًا تجاريًا.",
+      "reviewedAt": "2026-11-11T23:38:26+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Adobe Blog — Adobe MAX 2026 Sneaks: Previewing the future of creativity",
+          "url": "https://blog.adobe.com/en/publish/2026/11/11/adobe-max-sneaks"
+        }
+      ],
+      "url": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai"
+    },
+    "14645f9d816239f1eb": {
+      "titleAr": "Seagate تطلق FireCuda Forge بسعتي 8 و20 تيرابايت مع تخزين مؤقت ذكي",
+      "summaryAr": "أعلنت Seagate قرص FireCuda Forge المدعوم بمنصة Alkemi لإدارة التخزين المؤقت؛ إذ تضع الملفات كثيرة الاستخدام على NVMe SSD يقدمه المستخدم، وتحتفظ بالمكتبات الكبيرة على HDD. تذكر الشركة سرعات تصل إلى 2500 ميجابايت/ث للقراءة و2000 للكتابة، واتصال USB4، وسعتي 8 و20 تيرابايت.",
+      "whyItMatters": "التحليل: تمزج الفكرة سرعة SSD وسعة HDD، لكنها تعتمد على SSD منفصل يقدمه المستخدم؛ لذلك ينبغي حساب تكلفة المنظومة كاملة بدل مقارنة سعر القرص وحده.",
+      "audience": "صناع المحتوى واللاعبون ومهندسو التخزين وبناة الحواسيب.",
+      "nextSteps": [
+        "تحقق من متطلبات NVMe SSD المتوافق قبل الشراء.",
+        "قارن التكلفة الإجمالية مع SSD خارجي وHDD منفصلين.",
+        "انتظر اختبارات مستقلة للسرعة والحرارة والضوضاء والاعتمادية."
+      ],
+      "limitations": "الأرقام والمواصفات من بيان Seagate وليست قياسات مستقلة. يتفاوت السعر والتوفر حسب السوق، وتتطلب المنظومة SSD يشتريه المستخدم.",
+      "reviewedAt": "2026-11-11T23:38:26+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Seagate Investor Relations — FireCuda Forge launch",
+          "url": "https://investors.seagate.com/news/news-details/2026/Seagate-Launches-the-FireCuda-Forge-Powered-by-New-Alkemi-Intelligent-Platform-to-Deliver-Both-SSD-Grade-Responsiveness-and-HDD-Capacity/default.aspx"
+        }
+      ],
+      "url": "https://aitnews.com/2026/11/11/%d8%b3%d9%8a%d8%ac%d9%8a%d8%aa-%d8%aa%d8%b7%d9%84%d9%82-firecuda-forge-%d8%a8%d8%aa%d8%ae%d8%b2%d9%8a%d9%86-%d9%85%d8%a4%d9%82%d8%aa-%d8%b0%d9%83%d9%8a-%d9%88%d8%b3%d8%b9%d8%a9-%d8%aa%d8%b5%d9%84/"
+    },
+    "19b4fcb1faac9c9bdb": {
+      "titleAr": "BotPsy يقدم نموذج وكيل صغيرًا بـ0.8 مليار معلمة للتشغيل على الأجهزة",
+      "summaryAr": "أعلنت Tether AI Research نموذج QVAC BotPsy بحجم 0.8 مليار معلمة ومخصص لاستدعاء الأدوات وتنفيذ مهام متعددة الخطوات محليًا. تقول الشركة إن النموذج تفوق في ستة اختبارات للوكلاء على نماذج حتى 1.2 مليار معلمة، وتوفر أوزانه المفتوحة وإصدارات GGUF للتشغيل عبر llama.cpp.",
+      "whyItMatters": "التحليل: قد تقلل النماذج الصغيرة المتخصصة اعتماد المساعد على الخوادم الخارجية عند معالجة سياق شخصي. لكن تنفيذ الأدوات يبقى مسؤولية التطبيق، ويحتاج إلى صلاحيات محدودة ومراجعة بشرية.",
+      "audience": "مطورو المساعدات المحلية وباحثو النماذج الصغيرة ومطورو التطبيقات على الهاتف والحاسوب.",
+      "nextSteps": [
+        "راجع بطاقة النموذج والترخيص قبل دمجه في تطبيق.",
+        "اختبر استدعاء الأدوات بالعربية على مهام آمنة ومحدودة.",
+        "قِس الذاكرة والسرعة وجودة القرار قبل ربطه ببيانات شخصية."
+      ],
+      "limitations": "نتائج المعايير صادرة عن Tether ولم تُقَس بصورة مستقلة هنا. الإنجليزية هي اللغة الموصى بها بحسب QVAC، ولا يوجد تطبيق جاهز؛ يحتاج المطور إلى بناء طبقة أدوات وصلاحيات.",
+      "reviewedAt": "2026-11-11T23:38:26+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Tether — QVAC BotPsy announcement and benchmark results",
+          "url": "https://tether.io/news/tethers-800m-ai-agent-beats-models-2-5x-its-size-on-everyday-phone-tasks/"
+        },
+        {
+          "title": "QVAC — BotPsy model overview",
+          "url": "https://qvac.tether.io/models/botpsy"
+        }
+      ],
+      "url": "https://huggingface.co/blog/qvac/botpsy"
+    },
+    "fff18d7edb4b918233": {
+      "titleAr": "OmniOps تطلق Bunyan Inference Hub لاستضافة استدلال الذكاء الاصطناعي داخل السعودية",
+      "summaryAr": "أعلنت OmniOps إطلاق Bunyan Inference Hub، وهي منصة تجمع كتالوج نماذج مفتوحة المصدر وموارد GPU وخيارات موارد مخصصة، مع استضافة البيانات وأعباء الاستدلال داخل السعودية. تقول الشركة إن محركها يوجه الطلبات إلى العتاد المناسب، ويدير التوسع، ويوفر حدود استخدام ومتابعة استهلاك الرموز.",
+      "whyItMatters": "التحليل: الاستضافة المحلية قد تساعد الجهات ذات متطلبات إقامة البيانات والامتثال، لكن وصف المنصة لا يكفي وحده لإثبات جودة الخدمة أو تكلفتها أو مستويات العزل الفعلية.",
+      "audience": "المؤسسات السعودية وفرق البنية التحتية والذكاء الاصطناعي والمطورون.",
+      "nextSteps": [
+        "اطلب قائمة النماذج المدعومة والأسعار واتفاقية مستوى الخدمة.",
+        "تحقق من مواقع البيانات والنسخ الاحتياطية ومقدمي GPU الفرعيين.",
+        "نفذ تجربة قياس بتكلفة وكمون وحجم استخدام محدد قبل الاعتماد."
+      ],
+      "limitations": "المادة بيان صحفي ومعلومات الشركة؛ لا تتضمن أسعارًا تفصيلية أو قياسات أداء مستقلة أو ضمانات SLA منشورة.",
+      "reviewedAt": "2026-11-11T23:38:26+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Wamda — OmniOps unveils Bunyan Inference Hub",
+          "url": "https://www.wamda.com/2026/11/omniops-unveils-bunyan-inference-hub-simplify-ai-deployment-saudi-arabia"
+        },
+        {
+          "title": "البوابة العربية للأخبار التقنية — إطلاق Bunyan Inference Hub",
+          "url": "https://aitnews.com/2026/11/11/omniops-bunyan-inference-hub-saudi-arabia/"
+        }
+      ],
+      "url": "https://aitnews.com/2026/11/11/omniops-bunyan-inference-hub-saudi-arabia/"
+    },
+    "f63659155352269baf": {
+      "titleAr": "بحث يدرس فرقًا بشرية ووكلاء تنفذ تجارب أشعة سينية ذاتية مع توثيق القرارات",
+      "summaryAr": "تقدم ورقة arXiv نظام VISION-CC لتنسيق وكلاء متخصصين تحت إشراف عالم واحد في تجارب حيود الأشعة السينية على هياكل نانوية، مع حفظ سجلات المحادثات والقرارات والتصحيحات. يذكر الباحثون ثلاث جلسات تجريبية تجاوزت خمسين ساعة، وأن نسبة كبيرة من الرسائل تضمنت تفسيرًا أو حكمًا لا مجرد تنسيق آلي.",
+      "whyItMatters": "التحليل: القيمة ليست الاستقلالية وحدها، بل قابلية تتبع من اقترح ووافق وصحح القرار؛ وهو عنصر مهم عند استخدام الوكلاء في تجارب علمية حقيقية.",
+      "audience": "باحثو الذكاء الاصطناعي للعلوم ومختبرات التجارب الآلية ومطورو الأنظمة متعددة الوكلاء.",
+      "nextSteps": [
+        "راجع المنهجية وخط أنابيب التدقيق والملحقات قبل تعميم النتائج.",
+        "قارن سجلات القرارات بنتائج القياس الفعلية.",
+        "تحقق من دور المشغل البشري وآليات إيقاف النظام قبل أي تطبيق مادي."
+      ],
+      "limitations": "ورقة arXiv أولية؛ لم نراجع جميع الجداول والملحقات ولم نعد التجربة. النتائج تخص إعدادًا بحثيًا محددًا ولا تثبت سهولة تعميم النظام على مختبرات أخرى.",
+      "reviewedAt": "2026-11-11T23:38:26+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — Auditable Human-Agent Teams for Autonomous X-ray Experimentation",
+          "url": "https://arxiv.org/abs/2611.12933"
+        }
+      ],
+      "url": "https://arxiv.org/abs/2611.12933"
+    },
+    "70b6e0e37bdecc39c4": {
+      "titleAr": "EarthRecord يختبر الوكلاء متعددة الوسائط على صور أقمار صناعية تمتد أربعة عقود",
+      "summaryAr": "تعرض الورقة معيارًا يضم 56 موقعًا و238 سؤالًا عن تغيرات الأرض باستخدام بيانات خام من Landsat وMODIS وVIIRS وSentinel-2 عبر أربعة عقود، مع ترك إزالة السحب ومواءمة المستشعرات للوكلاء. تشير النتائج إلى أن الأنظمة تنجز تحليلات كثيرة، لكنها تتأثر عندما تتغير بيانات مستشعر دون تغير الأرض فعليًا.",
+      "whyItMatters": "التحليل: يختبر المعيار قدرة الوكيل على التعامل مع أرشيفات حقيقية متعددة المستشعرات، لا مجرد وصف صور منتقاة؛ وهذا مهم للموثوقية في الرصد البيئي والجغرافي.",
+      "audience": "باحثو الاستشعار عن بعد والرؤية الحاسوبية والذكاء الاصطناعي الجغرافي.",
+      "nextSteps": [
+        "افحص مجموعة الأسئلة والمراجع المحجوبة قبل استخدام المعيار.",
+        "اختبر حساسية النظام لتغير المستشعرات والسحب.",
+        "قارن النتائج مع منتجات مرجعية مستقلة وعلى مواقع جديدة."
+      ],
+      "limitations": "ورقة arXiv أولية؛ الملخص لا يثبت الأداء خارج المواقع والمهام المختارة. يشير الباحثون إلى أن بعض الإجابات قد تتبع تغييرات الصورة بدل تغير الأرض الحقيقي.",
+      "reviewedAt": "2026-11-11T23:38:26+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — EarthRecord: From Pixels to Land Change with Multimodal Agents",
+          "url": "https://arxiv.org/abs/2611.12934"
+        }
+      ],
+      "url": "https://arxiv.org/abs/2611.12934"
+    },
+    "e5cd4cd10b4ff8cfa7": {
+      "titleAr": "TopicScope يراقب تغيّر موضوع النص أثناء التوليد باستخدام ميزات المحولات التلقائية المتناثرة",
+      "summaryAr": "تقدم الورقة إطارًا لتصنيف موضوع كل رمز أثناء توليد النص، باستخدام ميزات Sparse Autoencoders وتدريب المصنفات على حالات prefill ثم تشغيلها أثناء decoding. اختبر الباحثون سبعة موضوعات على Gemma-3 1B و4B، وذكروا أن إدخال استطرادات خارج الموضوع أو حذف موضوعات أو إعادة ترتيب المقاطع خفّض الأداء بحد أقصى خمس نقاط macro-F1.",
+      "whyItMatters": "التحليل: قد يوفّر ذلك مراقبة أدق لتغيّر الموضوع داخل الاستدلال، لكن تصنيف الموضوع لا يثبت صحة المحتوى أو سلامته ولا يغني عن تقييم الإجابة.",
+      "audience": "باحثو تفسير النماذج ومراقبة الاستدلال ومهندسو أنظمة الذكاء الاصطناعي.",
+      "nextSteps": [
+        "افحص الكود والبيانات ونقاط التحقق التي نشرها الباحثون.",
+        "اختبر التعميم على العربية ومحادثات أطول ومتعددة الموضوعات.",
+        "قارن المصنف بمراقبة أبسط على مجموعة الاختبار نفسها."
+      ],
+      "limitations": "ورقة arXiv أولية؛ اعتمدت التجارب على محادثات اصطناعية وسبعة موضوعات ونموذجين من Gemma-3. لا يثبت المقياس كشف الأخطاء أو المحتوى الضار.",
+      "reviewedAt": "2026-11-11T23:38:26+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — Train on prefill, monitor at decode: Using sparse autoencoders for topic monitoring",
+          "url": "https://arxiv.org/abs/2611.12935"
+        }
+      ],
+      "url": "https://arxiv.org/abs/2611.12935"
+    },
+    "65b96c238445cdedc9": {
+      "titleAr": "مكتب Gilbert + Tobin ينتقل من تجارب الذكاء الاصطناعي إلى سير عمل قانوني متعدد الخطوات",
+      "summaryAr": "تقول دراسة الحالة المنشورة من OpenAI إن المكتب بدأ بالتجريب الفردي، ثم أدخل ChatGPT Enterprise وChatGPT Work وCodex لدعم مهام متعددة الخطوات، مع إبقاء المراجعة والاعتماد النهائي بيد الموظفين. وتذكر الحالة ضوابط وصول وإقامة بيانات داخل أستراليا.",
+      "whyItMatters": "التحليل: المثال يوضح انتقال الذكاء الاصطناعي من مساعدة فردية إلى عمليات مؤسسية مترابطة؛ وتبقى السرية المهنية وحدود صلاحيات الوكيل والمراجعة البشرية عوامل حاسمة.",
+      "audience": "طلاب الذكاء الاصطناعي والبرمجة، مطورو أدوات المؤسسات، وفرق القانون والحوكمة.",
+      "nextSteps": [
+        "اقرأ مراحل التبني الثلاث وافصل بين التجريب والإنتاج.",
+        "حدد البيانات المسموح بها ونقاط الموافقة البشرية قبل ربط الأدوات.",
+        "تعامل مع أرقام الاستخدام والتوفير باعتبارها إفادات من العميل وOpenAI لا قياسًا مستقلًا."
+      ],
+      "limitations": "دراسة حالة تسويقية منشورة من OpenAI ومبنية على مقابلة مع العميل؛ لا تقدم تدقيقًا مستقلًا للأثر أو مقارنة منهجية قبل التطبيق وبعده.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "OpenAI — Gilbert + Tobin rethinks the business of law with AI",
+          "url": "https://openai.com/index/gilbert-tobin-sam-nickless/"
+        }
+      ],
+      "url": "https://openai.com/index/gilbert-tobin-sam-nickless",
+      "reviewedAt": "2026-11-12T08:46:40+03:00"
+    },
+    "02bfed5e7aa817ea9d": {
+      "titleAr": "Google تطلق Gemini Decisions API لتقييم ما يصل إلى ألف قرار متعدد الوسائط في طلب واحد",
+      "summaryAr": "أعلنت Google عن Gemini Decision 1 وواجهة Decisions API لتقييم أسئلة نعم/لا أو الاختيار بين بدائل أو الدرجات وفق معيار على مدخل مشترك قد يتضمن نصًا وصورًا وصوتًا وفيديو وPDF. وتقول الشركة إن الواجهة تعيد احتمالات وثقة بدل توليد نص طويل، وتذكر زمنًا إجماليًا 150–250 مللي ثانية وتسعيرًا قدره 0.10 دولار لكل مليون رمز إدخال دون رموز إخراج مفوترة.",
+      "whyItMatters": "التحليل: تفصل الواجهة قرارات التصنيف والتوجيه عن توليد النص، وقد تفيد اختيار الأدوات وفحص السياسات داخل الوكلاء؛ لكن الثقة الاحتمالية ليست ضمانًا للصحة ويجب ضبط عتباتها على بيانات التطبيق.",
+      "audience": "مطورو Python وJavaScript، مهندسو الوكلاء، وباحثو تقييم النماذج متعددة الوسائط.",
+      "nextSteps": [
+        "حدد هل المهمة اختيار محدود أم تحتاج إجابة مولدة.",
+        "اختبر المعايرة على مجموعة موسومة من بياناتك وقارنها بخط أساس.",
+        "صعّد الحالات منخفضة الثقة أو عالية الأثر إلى مراجعة بشرية."
+      ],
+      "limitations": "الأداء والتسعير والمقارنة أرقام منشورة من Google وليست قياسًا مستقلًا؛ التوثيق يستخدم v1beta وقد تتغير الحدود والإتاحة.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Google — Gemini Decisions API",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+        },
+        {
+          "title": "Google AI Studio — Decisions API documentation",
+          "url": "https://aistudio.google.com/docs/decisions-api"
+        }
+      ],
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "reviewedAt": "2026-11-12T08:46:40+03:00"
+    },
+    "b21fa54b837dba6b35": {
+      "titleAr": "باحثو Apple يدرسون تسريع استرجاع RAG بتعلّم توزيع الاستعلامات",
+      "summaryAr": "تشرح Apple بحثًا قُدّم في ICML 2026 يستخدم شبكات عصبية صغيرة تتدرب مسبقًا على قاعدة مفاتيح ثابتة وتوزيع الاستعلامات المتوقع، ثم توجه الاستعلام إلى أفضل تطابق بسرعة. تقايض الطريقة كلفة تدريب أولية باسترجاع أسرع ضمن ظروف البحث المدروسة.",
+      "whyItMatters": "التحليل: يمكن أن يكون توزيع الاستعلامات المعروف ميزة لا تستغلها فهارس البحث العامة؛ لكن الحل يصبح أقل ملاءمة إذا تغيرت قاعدة البيانات أو سلوك المستخدم.",
+      "audience": "باحثو تعلم الآلة، مهندسو البحث وRAG، ومطورو قواعد المتجهات.",
+      "nextSteps": [
+        "اقرأ الورقة المرتبطة لفهم دالة الدعم وآلية التدريب.",
+        "قارنها بخط أساس exact MIPS وبفهرس تقريبي على استعلامات ممثلة.",
+        "قِس recall وlatency وكلفة التدريب بعد تغير قاعدة المفاتيح."
+      ],
+      "limitations": "المادة بحثية وليست إعلانًا عن مكتبة جاهزة؛ تفترض قاعدة مفاتيح ثابتة وتوزيع استعلامات يمكن توصيفه، وقد تتراجع فائدتها مع تغير التوزيع.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Apple ML Research — Faster Retrieval for Better, More Efficient RAG",
+          "url": "https://machinelearning.apple.com/research/faster-retrieval"
+        },
+        {
+          "title": "Apple ML Research — Amortizing Maximum Inner Product Search with Learned Support Functions",
+          "url": "https://machinelearning.apple.com/research/amortizing-inner-product-search"
+        }
+      ],
+      "url": "https://machinelearning.apple.com/research/faster-retrieval",
+      "reviewedAt": "2026-11-12T08:46:40+03:00"
+    },
+    "31699ba3bf57a08cdb": {
+      "titleAr": "Tendrils تعلن جمع 30 مليون دولار لتطوير معمارية معالجات موازية ولغة Vine",
+      "summaryAr": "أعلنت Tendrils جولة بقيمة 30 مليون دولار بقيادة Benchmark لتمويل تصور لمعالجات عامة تحتوي آلاف الأنوية المتوازية، بالتوازي مع لغة Vine مفتوحة المصدر تستهدف هذه المعمارية. تطرح الشركة ذلك كرؤية هندسية طويلة الأمد لا منتج متاح.",
+      "whyItMatters": "التحليل: إذا تحولت الفكرة إلى عتاد وأدوات قابلة للاستخدام فقد تؤثر في المترجمات والبرمجيات المتوازية؛ لكن التمويل والرؤية لا يثبتان تفوق الأداء أو جاهزية السيليكون.",
+      "audience": "طلاب هندسة الحاسب، مهندسو المعالجات والمترجمات، ومطورو الأنظمة عالية الأداء.",
+      "nextSteps": [
+        "تابع مواصفات المعمارية وشفرة Vine.",
+        "انتظر اختبارات عتاد مستقلة تقارن الأداء والطاقة والتوافق.",
+        "افصل بين إمكانات اللغة المعلنة وتوفر معالج فعلي للاختبار."
+      ],
+      "limitations": "إعلان الشركة لا يتضمن معالجًا متاحًا أو benchmarks مستقلة أو جدولًا مؤكدًا لوصول العتاد؛ الانتقادات للمعماريات الحالية تمثل أطروحة الشركة.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Tendrils — $30M Raised to Redo the CPU",
+          "url": "https://tendrils.co/blog/2026-11-10/30m-raised"
+        }
+      ],
+      "url": "https://tendrils.co/blog/2026-11-10/30m-raised",
+      "reviewedAt": "2026-11-12T08:46:40+03:00"
+    },
+    "b87487ef036547770a": {
+      "titleAr": "تقرير Reuters Institute: استخدام الذكاء الاصطناعي يتوسع كمصدر للمعلومات لكن تقبّل صناعة الأخبار آليًا ما زال منخفضًا",
+      "summaryAr": "يعرض تقرير Reuters Institute لعام 2026، المبني على استطلاع YouGov في تسع دول، ارتفاع الاستخدام الأسبوعي إلى 51% في الدول الست ذات بيانات المقارنة، وذكر 57% أنهم شاهدوا أو استخدموا إجابات مولدة في البحث. في المقابل قال 67% إنهم لم يستخدموا وكيلًا خلال الأسبوع السابق، ولم يبدِ سوى 12% ارتياحًا لأخبار مصنوعة بالكامل بالذكاء الاصطناعي مقابل 19% مع إشراف بشري.",
+      "whyItMatters": "التحليل: الاستخدام يتوسع أسرع من قبول الجمهور لاستبدال الصحفي؛ لذا ينبغي أن تركز منتجات الأخبار على الإفصاح والمصادر القابلة للتتبع والمراجعة البشرية.",
+      "audience": "طلاب الذكاء الاصطناعي، مطورو منتجات المحتوى والبحث، الصحفيون، وفرق السياسات الرقمية.",
+      "nextSteps": [
+        "اقرأ المنهجية ولا تخلط متوسط الدول التسع باتجاهات الدول الست.",
+        "استخدم الإفصاح وروابط المصادر والمراجعة البشرية عند بناء أدوات نشر.",
+        "لا تعمم النتائج على الجمهور السعودي أو العربي دون بيانات محلية."
+      ],
+      "limitations": "العينة تسع دول وجُمعت عبر استبيان إلكتروني؛ يذكر التقرير أن الفروق الصغيرة قد لا تكون ذات دلالة وأن النتائج تعتمد على تذكر المشاركين.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Reuters Institute — Generative AI and News Report 2026",
+          "url": "https://reutersinstitute.politics.ox.ac.uk/generative-ai-and-news-report-2026-standalone-tools-information-infrastructure"
+        },
+        {
+          "title": "Nieman Lab — AI is becoming an information gateway",
+          "url": "https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news/"
+        }
+      ],
+      "url": "https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news/",
+      "reviewedAt": "2026-11-12T08:46:40+03:00"
+    },
+    "312cc2672ec7b82778": {
+      "titleAr": "GitHub يعيد Actions وPages وCopilot وWebhooks بعد عطل متعدد الخدمات",
+      "summaryAr": "تُظهر صفحة حالة GitHub أن تدهور الخدمة في 11 نوفمبر أثّر في Actions وPages وCopilot وWebhooks. أعلنت الشركة اكتمال معالجة تراكم مهام Actions وعودة الخدمات إلى التعافي الكامل عند 21:21 UTC، وقالت إن تحليل السبب الجذري سينشر لاحقًا.",
+      "whyItMatters": "التحليل: تعطل منصة واحدة قد يؤخر الاختبارات والنشر حتى لو كان المستودع سليمًا؛ لذلك يفيد الاحتفاظ بمسار تحقق محلي ومعرفة وقت الحادث قبل إعادة تشغيل المهام الفاشلة.",
+      "audience": "المطورون، مسؤولو DevOps، مشغلو المواقع الثابتة، وفرق CI/CD.",
+      "nextSteps": [
+        "راجع أوقات تشغيل CI/CD وقارنها بالجدول الزمني للحادث.",
+        "أعد فحص المهام التي فشلت خلال نافذة العطل بعد عودة الخدمة.",
+        "احتفظ بأوامر الاختبار المحلية وسجل النشر."
+      ],
+      "limitations": "هذه صفحة حالة تشغيلية وليست تقرير سبب جذري؛ GitHub قال إن تحليلًا تفصيليًا سينشر لاحقًا. الحادث معلن كمحلول.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "GitHub Status — Impact across multiple GitHub products",
+          "url": "https://www.githubstatus.com/incidents/dvy0t3mvh1lg"
+        }
+      ],
+      "url": "https://www.githubstatus.com/incidents/dvy0t3mvh1lg",
+      "reviewedAt": "2026-11-12T08:46:40+03:00"
+    },
+    "b8c7de61a30502becd": {
+      "titleAr": "دراسة سدايا تضع السعودية ثالثة عالميًا في نمو كفاءات الذكاء الاصطناعي",
+      "summaryAr": "تنقل عكاظ عن دراسة «حالة الذكاء الاصطناعي في المملكة» الصادرة عن سدايا حصول السعودية على المركز الثالث عالميًا في نمو كفاءات الذكاء الاصطناعي وفق مؤشر Stanford لعام 2026، والثالث في تطوير النماذج الرائدة لعام 2025. وتذكر الدراسة نمو سعة مراكز البيانات 115.8% بين 2023 و2025، ووجود تسع مناطق سحابية، إلى جانب مؤشرات عن التبني الحكومي والبحث العلمي.",
+      "whyItMatters": "التحليل: الأرقام ترسم صورة عن نمو البنية التحتية والمواهب والبحث محليًا، لكنها لا تقيس جودة كل مشروع أو فرص كل تخصص بمفردها.",
+      "audience": "طلاب الجامعات السعودية، مطورو الذكاء الاصطناعي، الجامعات والشركات وصناع السياسات.",
+      "nextSteps": [
+        "قارن المؤشرات بمصادرها الأصلية مثل Stanford AI Index.",
+        "تابع نشر نسخة الدراسة الكاملة من سدايا للتحقق من تعريف كل مؤشر.",
+        "حوّل مؤشرات النمو إلى أسئلة عملية عن المهارات المطلوبة والبحث المحلي."
+      ],
+      "limitations": "اطلعنا على التقرير الصحفي الكامل الذي يلخص دراسة سدايا، ولم نعثر على نسخة الدراسة الكاملة نفسها. الترتيبات تخص مؤشرات وسنوات مختلفة ولا ينبغي دمجها في ترتيب واحد.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "عكاظ — دراسة لسدايا: السعودية الثالثة عالميًا في نمو كفاءات الذكاء الاصطناعي",
+          "url": "https://www.okaz.com.sa/local/na/2275173"
+        }
+      ],
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB4N3hSbDJabVg4WnB4VUJRVVBDZDZrQnhnTUJhYjJLanNIclRwMmRWN2lEeFFuTnFVUzVpQWRPRVpjSVR2eERFdGpDSUZfQXRRdnfSAVRBVV95cUxPNzVPT21fOEYxT2pMdDFGNVkyMHlUSUtLWWVaaWNTLTRTQWNya3RTRWhocWpLZjJVaHdUS3A4c0ZoalRvMDgwS09iazhiYzZiX3RNQTE?oc=5",
+      "reviewedAt": "2026-11-12T08:46:40+03:00"
+    },
+    "1df6a00742e99b5a00": {
+      "titleAr": "United Airlines تقيّد وكلاء الذكاء الاصطناعي الخارجيين من إجراء الحجوزات دون إذن",
+      "summaryAr": "أفادت PhocusWire بأن United Airlines تمنع وكلاء الذكاء الاصطناعي الشخصيين من إجراء الحجوزات عبر موقعها وتطبيقها، وتمتد السياسة إلى استخدام الوكلاء عبر وكالات السفر ومنصات الحجز دون موافقة الشركة. وتقول الشركة إن حماية بيانات الحساب ومنع المعاملات أو التغييرات غير المقصودة من دوافع القرار.",
+      "whyItMatters": "التحليل: التجارة الوكيلة لا تعتمد على قدرة النموذج على النقر فقط؛ بل تحتاج تكاملًا مصرحًا به وموافقة واضحة ومسؤولية عن المعاملة، وإلا قد تمنع المنصات الوكلاء من إتمامها.",
+      "audience": "مطورو الوكلاء، فرق أمن الحسابات، شركات السفر، ومصممو منتجات التجارة الرقمية.",
+      "nextSteps": [
+        "اقرأ سياسة United الرسمية قبل تصميم تكامل معها.",
+        "استخدم واجهات معتمدة ولا تشارك بيانات الحساب مع وكيل خارجي.",
+        "صمم تأكيدًا بشريًا قبل أي معاملة أو تغيير في حساب المستخدم."
+      ],
+      "limitations": "التغطية الصحفية تنقل سياسة United، ولم تنشر تفاصيل تقنية كاملة عن آلية الإنفاذ أو برنامج الشراكات؛ لا تعمم سياسة شركة واحدة على بقية شركات الطيران.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "PhocusWire — United blocks third-party AI agents from app, website",
+          "url": "https://www.phocuswire.com/news/technology/united-blocks-third-party-ai-agents-from-app-website"
+        },
+        {
+          "title": "United Airlines — Digital Trust Center: Third-party AI agents",
+          "url": "https://www.united.com/en/us/fly/help-center/digital-trust-center/artificial-intelligence/third-party-ai-agents.html"
+        }
+      ],
+      "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+      "reviewedAt": "2026-11-12T08:46:40+03:00"
+    },
+    "d0e5cfeb79c6e58571": {
+      "titleAr": "MACaQ من هواوي: أدوات مفتوحة لتكميم النماذج وتشغيلها محليًا عبر أطر متعددة",
+      "summaryAr": "يقدم مستودع Huawei CSL مسارات لتكميم GGUF والنماذج النصية والصورية والفيديو والصوت عبر llama.cpp وvLLM وDiffusers وPyTorch، مع بيئات Python 3.12 منفصلة لكل backend. يذكر README تجربة لتكميم نموذج 122B خلال 64 دقيقة وبذاكرة 32.5GB؛ هذه نتيجة يوردها أصحاب المشروع ولم نتحقق منها مستقلًا.",
+      "whyItMatters": "التحليل: يجمع المشروع مسارات تكميم واستدلال محلي متعددة، ما قد يساعد على مقارنة الجودة والذاكرة والسرعة بدل الاعتماد على خدمة سحابية؛ لكن الفائدة تعتمد على العتاد والـbackend ومقدار تراجع الجودة.",
+      "audience": "مطورو النماذج المحلية، باحثو تعلم الآلة، مهندسو الاستدلال، ومهتمو النماذج متعددة الوسائط.",
+      "nextSteps": [
+        "اختر backend واحدًا وابدأ بنموذج صغير.",
+        "قارن الجودة قبل التكميم وبعده على مجموعة تقييم مناسبة.",
+        "سجل نوع GPU والذاكرة وإصدارات CUDA والاعتماديات.",
+        "راجع ترخيص الأوزان منفصلًا عن ترخيص المستودع."
+      ],
+      "limitations": "لم نشغل المشروع أو نتحقق من أرقام الأداء. نتائج 122B/64 دقيقة و32.5GB منشورة في README وتعتمد على العتاد والإعدادات. مسار CPU موثق لـllama.cpp؛ بينما vLLM ومسارات Diffusers/PyTorch لها متطلبات عتاد وتبعيات خاصة.",
+      "basis": "readme",
+      "overview": "مستودع Apache-2.0 لتكميم GGUF والنماذج النصية ومتعددة الوسائط، مع أدلة مستقلة لـllama.cpp وvLLM وDiffusers وPyTorch وAscend. يجهز بيانات المعايرة ثم يحفظ checkpoints أو GGUF لتشغيلها محليًا أو عبر vLLM.",
+      "requirements": "Python 3.12 وبيئة منفصلة لكل backend. llama.cpp يدعم CPU عبر requirements/llamacpp-cpu.txt أو GPU مع CUDA. vLLM يستهدف Linux/GPU ويتطلب requirements/vllm.txt وملفات البناء. Diffusers وPyTorch لهما متطلبات مستقلة للنماذج الصورية والفيديو والصوت وTTS. Ascend يحتاج CANN وPyTorch وtorch_npu متوافقة.",
+      "quickStart": "استنسخ https://github.com/huawei-csl/MACaQ.git، واستخدم Python 3.12، واختر backend واحدًا. لمسار النص على CPU اتبع llamacpp/README.md وثبّت requirements/llamacpp-cpu.txt وابنِ llama.cpp مع GGML_CUDA=OFF. لمسار GPU اتبع تعليمات CUDA أو دليل backend المناسب، جهز بيانات المعايرة من أمثلة المستودع، نفذ أمر quantize ثم اختبر عينة صغيرة.",
+      "costModel": "المستودع مفتوح المصدر ولا يفرض اشتراكًا أو API مدفوعًا. التكلفة الأساسية العتاد والطاقة والتخزين وتنزيل الأوزان؛ GPU سحابي يضيف تكلفة وقت GPU. قد تكون لأوزان النماذج وdatasets تراخيص منفصلة.",
+      "localVsCloud": "يمكن تشغيل llama.cpp على CPU محليًا أو GPU محلي، وتشغيل backends أخرى على GPU متوافق. vLLM مناسب لخدمة استدلال على Linux/GPU. يمكن استئجار GPU سحابي عند الحاجة؛ MACaQ نفسه ليس خدمة مستضافة ولا يحتاج API خارجيًا افتراضيًا.",
+      "licenseSummary": "ملف LICENSE وGitHub API يحددان Apache-2.0 للمستودع. هذا لا يمنح تلقائيًا حق إعادة توزيع أوزان النماذج أو datasets؛ افحص ترخيص كل نموذج وتبعياته.",
+      "activityAssessment": "غير مؤرشف؛ آخر دفع مرصود 2026-11-12T00:11:46Z. قياس GitHub API عند 2026-11-12T08:46:40+03:00: 126 نجمة و6 forks و1 issue مفتوح.",
+      "metrics": {
+        "stars": 126,
+        "forks": 6,
+        "openIssuesCount": 1,
+        "archived": false,
+        "disabled": false,
+        "licenseSpdx": "Apache-2.0",
+        "pushedAt": "2026-11-12T00:11:46Z",
+        "updatedAt": "2026-11-12T05:42:40Z",
+        "defaultBranch": "main",
+        "language": "Python",
+        "measuredAt": "2026-11-12T08:46:40+03:00",
+        "sourceApiUrl": "https://api.github.com/repos/huawei-csl/MACaQ"
+      },
+      "alternatives": [
+        {
+          "name": "llama.cpp quantization",
+          "url": "https://github.com/ggml-org/llama.cpp",
+          "tradeoff": "مسار مباشر لتكميم GGUF على CPU وGPU؛ أقل توحيدًا من MACaQ عبر backends متعددة."
+        },
+        {
+          "name": "bitsandbytes",
+          "url": "https://github.com/bitsandbytes-foundation/bitsandbytes",
+          "tradeoff": "مناسب لتكميم وتحميل أوزان PyTorch؛ يختلف عن مسارات GGUF ومتعدد الوسائط."
+        }
+      ],
+      "improvements": [
+        {
+          "title": "حزمة benchmark موحدة للجودة والسرعة والذاكرة",
+          "problem": "تختلف نتائج التكميم حسب backend والعتاد ومجموعة المعايرة، ما يصعب مقارنة الوصفات.",
+          "approach": "إضافة مجموعة قياس ثابتة تسجل الجودة والكمون والذاكرة ووقت المعايرة قبل التكميم وبعده.",
+          "stack": "Python 3.12, pytest, JSONL, llama.cpp, vLLM, PyTorch",
+          "steps": [
+            "اختر نموذجين مفتوحي الأوزان بتراخيص واضحة.",
+            "ثبت مجموعة معايرة واختبار منفصلة لكل مهمة.",
+            "شغل baseline غير مكمم على العتاد نفسه.",
+            "نفذ وصفات التكميم وسجل الذاكرة والكمون والجودة.",
+            "انشر النتائج مع إصدار العتاد والسائق والحزم."
+          ],
+          "metric": "تقرير قابل للتكرار يغطي ثلاثة backends على الأقل ويعرض الجودة والذاكرة والكمون ووقت المعايرة.",
+          "difficulty": "متوسطة إلى عالية؛ تقدير 4–6 أسابيع.",
+          "risks": "تكلفة GPU واختلاف kernels وصعوبة مقارنة مهام متعددة الوسائط بمقياس واحد.",
+          "sources": [
+            {
+              "title": "MACaQ README",
+              "url": "https://github.com/huawei-csl/MACaQ#readme"
+            },
+            {
+              "title": "MACaQ llama.cpp guide",
+              "url": "https://github.com/huawei-csl/MACaQ/blob/main/llamacpp/README.md"
+            }
+          ]
+        },
+        {
+          "title": "فاحص توافق مسبق للعتاد والاعتماديات",
+          "problem": "قد يفشل التثبيت بسبب اختلاف CUDA أو CANN أو إصدار Python أو بيئة backend قبل بدء التكميم.",
+          "approach": "فاحص يقرأ النظام والذاكرة وإصدارات السائق والحزم ويقترح مسار CPU أو GPU المتوافق دون تعديل النظام تلقائيًا.",
+          "stack": "Python 3.12, uv, packaging, platform, JSON reports",
+          "steps": [
+            "اجمع متطلبات كل backend من README وملفات requirements.",
+            "أضف فحوص Python وGPU وCUDA وCANN.",
+            "اعرض المسار المتوافق وأسباب عدم توافق المسارات الأخرى.",
+            "أنشئ تقريرًا قابلًا للتصدير مع الإصدارات المقترحة.",
+            "اختبر الفاحص على بيئات CPU وGPU منفصلة."
+          ],
+          "metric": "تحديد صحيح لمسار التثبيت في 95% من بيئات الاختبار المرجعية.",
+          "difficulty": "متوسطة؛ تقدير 3–5 أسابيع.",
+          "risks": "تعدد تعريفات GPU وتغير إصدارات السائق قد يجعل نتيجة الفحص قديمة.",
+          "sources": [
+            {
+              "title": "MACaQ README",
+              "url": "https://github.com/huawei-csl/MACaQ#readme"
+            },
+            {
+              "title": "MACaQ vLLM guide",
+              "url": "https://github.com/huawei-csl/MACaQ/blob/main/vllm/README.md"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مختبر تكميم للنماذج العربية المحلية",
+          "problem": "لا توجد مقارنة موحدة كافية توضح أثر التكميم على فهم العربية واللهجات ومهام الاستدلال.",
+          "approach": "حزمة تقييم عربية تقارن نموذجًا أصليًا ونسخًا مكممة على مهام فهم وتعليمات وتلخيص.",
+          "stack": "Python, MACaQ, llama.cpp, JSONL, pytest",
+          "steps": [
+            "اختر نماذج عربية أو متعددة اللغات مرخصة.",
+            "ابنِ مجموعة أسئلة عربية مراجعة بشريًا ومتوازنة.",
+            "شغل النموذج الأصلي وسجل baseline.",
+            "كمّم نسخًا متعددة بوصفات MACaQ.",
+            "قارن الدقة والذاكرة والكمون وانشر الحدود."
+          ],
+          "metric": "مقارنة ثلاثة مستويات تكميم وثلاث مهام عربية على الأقل بنتائج قابلة للتكرار.",
+          "difficulty": "عالية؛ تقدير 5–8 أسابيع.",
+          "risks": "تحيز مجموعة التقييم واختلاف ترخيص الأوزان وتراجع الجودة في لهجات غير ممثلة.",
+          "sources": [
+            {
+              "title": "MACaQ README",
+              "url": "https://github.com/huawei-csl/MACaQ#readme"
+            },
+            {
+              "title": "MACaQ paper",
+              "url": "https://arxiv.org/abs/2611.10649"
+            }
+          ]
+        },
+        {
+          "title": "مختبر محلي لتكميم النماذج متعددة الوسائط",
+          "problem": "يصعب معرفة المفاضلة بين حجم نموذج الصورة أو الصوت أو الفيديو وجودة مخرجاته على جهاز محدود.",
+          "approach": "واجهة بحثية محلية تسجل وصفات Diffusers وPyTorch وتعرض حجم checkpoint والذاكرة والوقت وجودة عينات الاختبار.",
+          "stack": "Python, Diffusers, PyTorch, MACaQ, Gradio",
+          "steps": [
+            "اختر نموذج صورة ونموذج صوت يدعمهما README.",
+            "حدد عينات مرخصة ومقاييس جودة مناسبة.",
+            "نفذ baseline ثم وصفات W4A4 الموثقة.",
+            "سجل الذاكرة والوقت وحجم الملفات والنتائج.",
+            "اعرض مقارنة محلية مع ربط النتائج بالعتاد."
+          ],
+          "metric": "تقرير قابل لإعادة الإنتاج لنموذجين ووسيطين مع قياس الحجم والذاكرة والوقت والجودة.",
+          "difficulty": "عالية؛ تقدير 6–8 أسابيع.",
+          "risks": "تفاوت مقاييس الجودة وكلفة GPU وقيود تراخيص بيانات الاختبار.",
+          "sources": [
+            {
+              "title": "MACaQ Diffusers guide",
+              "url": "https://github.com/huawei-csl/MACaQ/blob/main/diffusers/README.md"
+            },
+            {
+              "title": "MACaQ PyTorch guide",
+              "url": "https://github.com/huawei-csl/MACaQ/blob/main/pytorch/README.md"
+            }
+          ]
+        }
+      ],
+      "religious": [],
+      "testStatus": "not_run",
+      "testEvidence": [],
+      "sources": [
+        {
+          "title": "MACaQ README",
+          "url": "https://github.com/huawei-csl/MACaQ#readme"
+        },
+        {
+          "title": "llama.cpp backend guide",
+          "url": "https://github.com/huawei-csl/MACaQ/blob/main/llamacpp/README.md"
+        },
+        {
+          "title": "vLLM backend guide",
+          "url": "https://github.com/huawei-csl/MACaQ/blob/main/vllm/README.md"
+        },
+        {
+          "title": "Diffusers backend guide",
+          "url": "https://github.com/huawei-csl/MACaQ/blob/main/diffusers/README.md"
+        },
+        {
+          "title": "PyTorch backend guide",
+          "url": "https://github.com/huawei-csl/MACaQ/blob/main/pytorch/README.md"
+        },
+        {
+          "title": "MACaQ paper",
+          "url": "https://arxiv.org/abs/2611.10649"
+        },
+        {
+          "title": "MACaQ LICENSE",
+          "url": "https://github.com/huawei-csl/MACaQ/blob/main/LICENSE"
+        }
+      ],
+      "url": "https://github.com/huawei-csl/MACaQ",
+      "reviewedAt": "2026-11-12T08:46:40+03:00"
+    },
+    "bb27561db5d10d5000": {
+      "url": "https://arstechnica.com/ai/2026/11/taiwans-chipmaking-giant-tsmc-to-invest-1b-in-anthropic-openai/",
+      "titleAr": "TSMC توافق على استثمارات تصل إلى مليار دولار في Anthropic وOpenAI",
+      "summaryAr": "أفادت Ars Technica وReuters أن مجلس TSMC وافق على خطط لاستثمار ما يصل إلى 500 مليون دولار في أسهم Anthropic عند سعر اكتتابها، و500 مليون دولار في أسهم ممتازة لـOpenAI. بذلك تصبح الشركة مورّدًا رئيسيًا للشرائح ومستثمرًا في شركتين تستخدمان بنيتها التحتية.",
+      "whyItMatters": "التحليل: يوضح الخبر تقارب تمويل شركات الذكاء الاصطناعي ومورّدي عتادها؛ وقد يجعل تقييم الطلب المستقل على الحوسبة أكثر تعقيدًا عندما يصبح المورد مستثمرًا في العميل. هذا توصيف لبنية السوق، وليس دليلًا بحد ذاته على تضارب محقق أو طلب مصطنع.",
+      "audience": "متابعو صناعة أشباه الموصلات، اقتصاد الذكاء الاصطناعي، ومطورو النماذج والبنية التحتية.",
+      "nextSteps": [
+        "راقب إتمام الاستثمارات وشروطها بدل التعامل مع موافقة المجلس كأنها دفعة مكتملة.",
+        "قارن استثمارات الموردين مع الإيرادات الفعلية والقدرة الإنتاجية والطلبيات المعلنة.",
+        "افصل بين إعلان التمويل والنتائج التشغيلية التي يمكن قياسها لاحقًا."
+      ],
+      "limitations": "المبلغ سقف مخطط له يصل إلى 500 مليون دولار لكل شركة، وليس إثباتًا أن كامل المبلغ دُفع. تفاصيل الشروط والتوقيت غير منشورة في التقارير التي تمت مراجعتها. وصف التمويل الدائري تحليل صحفي لهيكل العلاقة، وليس حكمًا على صحة الطلب.",
+      "reviewedAt": "2026-11-12T11:38:58+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Ars Technica — Taiwan’s chipmaking giant TSMC to invest $1B in Anthropic, OpenAI",
+          "url": "https://arstechnica.com/ai/2026/11/taiwans-chipmaking-giant-tsmc-to-invest-1b-in-anthropic-openai/"
+        },
+        {
+          "title": "Reuters — TSMC to invest up to $1 billion in Anthropic, OpenAI",
+          "url": "https://www.reuters.com/world/china/tsmc-invest-up-1-billion-anthropic-openai-2026-11-10/"
+        }
+      ]
+    },
+    "3b53bf6090ab9868ec": {
+      "url": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
+      "titleAr": "OpenAI تستحوذ على Odessia وتستقطب مؤسس وكيل السفر",
+      "summaryAr": "ذكر TechCrunch أن OpenAI استحوذت على Odessia، وأن مؤسسها فرانسيس ديفيدسون انضم إلى الشركة للعمل على مستقبل السفر. أكد متحدث باسم OpenAI انضمامه، فيما يعلن الموقع الرسمي لـOdessia إغلاق الخدمة العامة بعد الاستحواذ.",
+      "whyItMatters": "التحليل: يشير الحدث إلى اهتمام شركات النماذج بتطبيقات الوكلاء المتخصصة في السفر، لكنه لا يثبت إطلاق منتج حجز جديد. استقطاب مؤسس وخبرته التشغيلية قد يضيفان معرفة بالمجال، لكن المنتج والخطة التجارية لم يُعلنا.",
+      "audience": "مطورون مهتمون بوكلاء المهام، قطاع السفر، ومنتجات الذكاء الاصطناعي للمستهلك.",
+      "nextSteps": [
+        "راقب إعلان منتج أو تكامل رسمي قبل افتراض أن ChatGPT سيحجز الرحلات.",
+        "من لديه خطة أو حجز قديم في Odessia يراجع إشعار الخدمة الرسمي وقناة الدعم.",
+        "عند تقييم وكلاء السفر، تحقق من الأسعار والسياسات وشروط التغيير قبل الاعتماد على اقتراحاتهم."
+      ],
+      "limitations": "القيمة المالية للصفقة غير معلنة. وصفها بأنها استحواذ توظيفي هو توصيف صحفي وليس مصطلحًا رسميًا معلنًا. الخدمة العامة أُغلقت، ولم تعلن OpenAI في المادة عن منتج سفر جديد أو موعد إطلاق.",
+      "reviewedAt": "2026-11-12T11:38:58+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — OpenAI acquires Odessia, travel startup created by Sonder founder",
+          "url": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/"
+        },
+        {
+          "title": "Odessia official website and service notice",
+          "url": "https://odessia.com/"
+        }
+      ]
+    },
+    "3ddc5cc5a5b08ed604": {
+      "url": "https://www.theverge.com/tech/1031601/home-assistant-connect-aux-2-hands-on",
+      "titleAr": "Home Assistant تطلق Connect AUX-2 لربط الأجهزة التقليدية بالمنزل الذكي",
+      "summaryAr": "أعلنت Nabu Casa جهاز Connect AUX-2 بسعر موصى به 69 دولارًا أو 59 يورو، ويجمع Bluetooth وEthernet وPoE وخرجًا صوتيًا وواجهات RS-232 وGrove وUSB لتوسيع تكامل Home Assistant مع الأجهزة التقليدية. في تجربة The Verge عمل وسيط Bluetooth وتشغيل الصوت، بينما لم يختبر المراجع التحكم التسلسلي.",
+      "whyItMatters": "التحليل: يفيد الجهاز من يريد الاحتفاظ بمعدات صوتية أو أجهزة تحكم منزلية قديمة وربطها بمنصة محلية، لكنه عتاد إضافي وليس بديلًا عن التكاملات أو الأجهزة المتوافقة. القيمة العملية هي جمع عدة واجهات في جهاز واحد مع الاستفادة من ESPHome وHome Assistant.",
+      "audience": "مستخدمو Home Assistant، هواة المنزل الذكي، ومطورو ESPHome.",
+      "nextSteps": [
+        "تحقق من Home Assistant 2026.9 أو أحدث ومن وجود تكامل للجهاز التسلسلي الذي تريد التحكم به.",
+        "قارن الجهاز مع لوحات ESP32 أو بدائل DIY قبل الشراء، واحسب تكلفة الكابلات والمضخم عند الحاجة.",
+        "تحقق من نوع الطاقة والاتصال؛ RS-485 يحتاج محول USB إضافيًا، وZigbee موصوف بأنه تجريبي ومحدود."
+      ],
+      "limitations": "الجهاز لا يضخم الصوت؛ يخرج الصوت فقط ولا يعمل كـBluetooth audio. التحكم التسلسلي يعتمد على وجود تكامل مناسب في Home Assistant، ولم يختبره مراجع The Verge. صفحة المنتج تذكر أن Zigbee تجريبي ومحدود وأن Thread غير مدعوم. السعر المعلن موصى به وقد يختلف حسب المنطقة والضرائب.",
+      "reviewedAt": "2026-11-12T11:38:58+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "The Verge — Hands on with Home Assistant’s new smart home multi-tool",
+          "url": "https://www.theverge.com/tech/1031601/home-assistant-connect-aux-2-hands-on"
+        },
+        {
+          "title": "Home Assistant — No device left behind: Connect AUX-2",
+          "url": "https://www.home-assistant.io/blog/2026/11/11/no-device-left-behind-home-assistant-connect-aux-2/"
+        },
+        {
+          "title": "Home Assistant Connect AUX-2 product specifications and FAQ",
+          "url": "https://www.home-assistant.io/connect/aux-2/"
+        }
+      ]
+    },
+    "1385baee7258ede721": {
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5yU0dvLVdFS3VDbGFhalpycWxjRWJRVTVxZzlWMUZQZFdiaTNUVG02VzdkS1F2c3J1azY3OTdaRWdIRkdpbGc?oc=5",
+      "titleAr": "تقرير IMD 2026 يضع السعودية في المرتبة الثانية في مؤشرين لأمن الذكاء الاصطناعي",
+      "summaryAr": "يعرض ملف السعودية الرسمي لدى IMD ضمن World Digital and AI Ranking 2026 ترتيبها الثاني عالميًا في معيار فهم الشركات لمخاطر الأمن السيبراني المرتبطة بالذكاء الاصطناعي، والثاني في معيار حماية أنظمة الذكاء الاصطناعي للشركات للبيانات الحساسة. الترتيب الثاني يخص مؤشرين فرعيين، لا الترتيب العام.",
+      "whyItMatters": "التحليل: تعكس المؤشرات اهتمامًا مؤسسيًا بالوعي بالمخاطر وحماية البيانات، ويمكن أن توجه التدريب والحوكمة. لكنها لا تعني أن كل مؤسسة محمية أو أن معدل الحوادث منخفض؛ يجب قراءتها مع بقية عوامل الحوكمة والبنية التحتية.",
+      "audience": "المؤسسات السعودية، فرق الأمن السيبراني والامتثال، الجامعات، ومتابعو سياسة الذكاء الاصطناعي.",
+      "nextSteps": [
+        "اقرأ ملف الدولة الكامل وميّز ترتيب المؤشرات الفرعية عن ترتيب التنافسية الرقمية العام.",
+        "حوّل النتائج إلى مراجعة عملية لسياسات إدخال البيانات إلى أدوات الذكاء الاصطناعي وإدارة الوصول والتدريب.",
+        "قارن المؤشرات عبر السنوات قبل استنتاج اتجاه طويل الأجل."
+      ],
+      "limitations": "الترتيب مبني على معايير ومصادر بيانات محددة، وليس تدقيقًا مباشرًا لكل شركة. ملف IMD الرسمي يضع السعودية في المركز 20 في الترتيب العام للتنافسية الرقمية لعام 2026؛ المركز الثاني هنا يخص مؤشرين فرعيين فقط. لا يصح اختزال الخبر في أن السعودية الثانية عالميًا في الذكاء الاصطناعي عمومًا.",
+      "reviewedAt": "2026-11-12T11:38:58+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "IMD — Saudi Arabia Digital Ranking (WDAIR) 2026 profile PDF",
+          "url": "https://imd.widen.net/content/rgmnqiqry9/pdf/SA_digital_2026.pdf?u=dnnfeq"
+        },
+        {
+          "title": "IMD — Economy Profiles for the 2026 Digital and AI Ranking",
+          "url": "https://www.imd.org/centers/wcc/digital-ranking/country-profiles/"
         }
       ]
     }

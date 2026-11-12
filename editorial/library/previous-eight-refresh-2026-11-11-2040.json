@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "measuredAt": "2026-11-11T20:40:22+03:00",
+  "measurementSource": "GitHub REST API GET /repos/{owner}/{repo}",
+  "measurementNotes": [
+    "pushedAt هو مؤشر نشاط الشيفرة؛ updatedAt قد يتغير لأسباب إدارية ولا يثبت وجود commit.",
+    "openIssuesCount هو GitHub open_issues_count ويشمل عناصر Issues وPull Requests المفتوحة.",
+    "كل القيم لقطة وقت القياس وليست اتجاه نمو مضمونًا."
+  ],
+  "previousEight": [
+    {
+      "name": "AI Engineering Hub",
+      "repository": "patchy631/ai-engineering-hub",
+      "stars": 41765,
+      "forks": 6672,
+      "openIssuesCount": 137,
+      "license": "MIT",
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "updatedAt": "2026-11-11T17:15:21Z",
+      "defaultBranch": "main",
+      "language": "Python"
+    },
+    {
+      "name": "Python GenAI SDK",
+      "repository": "googleapis/python-genai",
+      "stars": 4061,
+      "forks": 1063,
+      "openIssuesCount": 405,
+      "license": "Apache-2.0",
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-11-11T17:34:28Z",
+      "updatedAt": "2026-11-11T15:09:45Z",
+      "defaultBranch": "main",
+      "language": "Python"
+    },
+    {
+      "name": "Lasm",
+      "repository": "Millillion/lasm",
+      "stars": 105,
+      "forks": 7,
+      "openIssuesCount": 21,
+      "license": "MIT",
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-11-11T17:13:59Z",
+      "updatedAt": "2026-11-11T14:20:13Z",
+      "defaultBranch": "main",
+      "language": "Python"
+    },
+    {
+      "name": "MarkItDown",
+      "repository": "microsoft/markitdown",
+      "stars": 194928,
+      "forks": 14700,
+      "openIssuesCount": 805,
+      "license": "MIT",
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-11-07T00:14:01Z",
+      "updatedAt": "2026-11-11T17:41:00Z",
+      "defaultBranch": "main",
+      "language": "Python"
+    },
+    {
+      "name": "Minecraft Agent Harness",
+      "repository": "yc-software/minecraft-agent-harness",
+      "stars": 204,
+      "forks": 28,
+      "openIssuesCount": 1,
+      "license": "MIT",
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "updatedAt": "2026-11-11T16:57:18Z",
+      "defaultBranch": "main",
+      "language": "TypeScript"
+    },
+    {
+      "name": "NVIDIA OpenShell",
+      "repository": "NVIDIA/OpenShell",
+      "stars": 21447,
+      "forks": 2093,
+      "openIssuesCount": 645,
+      "license": "Apache-2.0",
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-11-11T17:37:05Z",
+      "updatedAt": "2026-11-11T17:43:43Z",
+      "defaultBranch": "main",
+      "language": "Rust"
+    },
+    {
+      "name": "Pydantic AI",
+      "repository": "pydantic/pydantic-ai",
+      "stars": 21141,
+      "forks": 3148,
+      "openIssuesCount": 1966,
+      "license": "MIT",
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-11-11T17:47:13Z",
+      "updatedAt": "2026-11-11T16:44:46Z",
+      "defaultBranch": "main",
+      "language": "Python"
+    },
+    {
+      "name": "uv",
+      "repository": "astral-sh/uv",
+      "stars": 91856,
+      "forks": 3793,
+      "openIssuesCount": 3082,
+      "license": "Apache-2.0",
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-11-11T15:49:58Z",
+      "updatedAt": "2026-11-11T17:45:50Z",
+      "defaultBranch": "main",
+      "language": "Rust"
+    }
+  ],
+  "activeNewProjects": [
+    {
+      "name": "DevDocs",
+      "repository": "freeCodeCamp/devdocs",
+      "stars": 39621,
+      "forks": 2654,
+      "openIssuesCount": 196,
+      "license": "MPL-2.0",
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-11-11T16:15:46Z",
+      "updatedAt": "2026-11-11T17:33:33Z",
+      "defaultBranch": "main",
+      "language": "Ruby"
+    },
+    {
+      "name": "Hello-Agents",
+      "repository": "datawhalechina/hello-agents",
+      "stars": 86742,
+      "forks": 10822,
+      "openIssuesCount": 176,
+      "license": "NOASSERTION (repository LICENSE.txt declares CC BY-NC-SA 4.0)",
+      "archived": false,
+      "disabled": false,
+      "pushedAt": "2026-11-11T06:18:57Z",
+      "defaultBranch": "main",
+      "language": "Python"
+    }
+  ],
+  "notes": [
+    "AI Engineering Hub وMarkItDown وMinecraft Agent Harness أقدم في pushedAt من بقية المجموعة، لكن المستودعات الثلاثة غير مؤرشفة.",
+    "تراجع عدد نجوم uv مقارنة بلقطة 18:36 ممكن بسبب تنظيف GitHub؛ لا أفسره كدليل تراجع نشاط.",
+    "Hello-Agents ترخيص الكتاب الجذري CC BY-NC-SA 4.0؛ بعض مجلدات الأمثلة لها ملفات ترخيص فرعية، لذلك يلزم فحص كل مثال قبل إعادة التوزيع."
+  ]
+}

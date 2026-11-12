@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-10T05:38:51+03:00",
+  "sourceMainSha": "383a2d1fd99b168820b4dc20914d7bd5c38a5f86",
+  "inventory": {
+    "mainFiles": 102,
+    "mainOccurrences": 1054,
+    "priorAudit": "editorial/pending/incoming-reconciliation-2026-11-09-2112.json",
+    "prior102ReopenedThisRun": false,
+    "newPrFiles": 1,
+    "totalPrFiles": 103,
+    "totalOccurrences": 1066
+  },
+  "newBatch": {
+    "originalJsonValid": false,
+    "defect": "missing final root closing brace",
+    "corrected": true,
+    "records": 12,
+    "feedExactIdUrlMatches": 12,
+    "editorialCollisions": 0,
+    "mismatches": 0,
+    "confirmedExpired": 0,
+    "mainEditorial": 917,
+    "prEditorial": 929,
+    "oldEntriesPreserved": 917
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "researchOnly": true,
+      "priority": 34
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    }
+  ],
+  "holds": [
+    {
+      "id": "7a99eca9b2ce14d9f5",
+      "relatedId": "e0cbbf211a55e79f34",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "reason": "keep historical/current IDs separate"
+    },
+    {
+      "id": "d18ddd9c12e46dd96b",
+      "reason": "closed historical issue from 2022; needs recent primary source"
+    },
+    {
+      "id": "e3e3a03bfc5be7aa43",
+      "reason": "active Feed item uses Google News intermediary URL"
+    }
+  ],
+  "expiry": {
+    "confirmedExpired": 0
+  },
+  "validation": {
+    "structuralEquivalentIncoming": 12,
+    "structuralEquivalentMerged": 929,
+    "oldEntriesPreserved": true,
+    "officialCliRunLocally": false,
+    "officialCiAfterCommit": "pending",
+    "officialCiRun": 42745570990,
+    "officialCiConclusion": "success",
+    "unitTests": "30/30 passed",
+    "editorialValidate": "Validated 929 editorial entries",
+    "javascriptSyntax": "passed",
+    "officialImportCliRunLocally": false,
+    "mergeToMain": false,
+    "published": false
+  },
+  "constraints": {
+    "feedChanged": false,
+    "seenChanged": false,
+    "statusChanged": false,
+    "siteCodeChanged": false,
+    "designChanged": false,
+    "workflowChanged": false,
+    "deploymentSettingsChanged": false
+  }
+}

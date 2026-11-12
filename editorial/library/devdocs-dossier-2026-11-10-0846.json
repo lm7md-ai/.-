@@ -1,0 +1,232 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-10T08:46:13+03:00",
+  "publicationStatus": "research library; exact Feed project enriched on PR #98",
+  "project": {
+    "url": "https://github.com/freeCodeCamp/devdocs",
+    "titleAr": "DevDocs يجمع توثيق واجهات البرمجة في متصفح واحد يعمل دون اتصال",
+    "summaryAr": "مشروع freeCodeCamp يجمع توثيقات لغات وأطر ومكتبات في واجهة ويب موحدة مع بحث فوري، مجموعات وثائق قابلة للاختيار، وضع داكن واختصارات لوحة المفاتيح والعمل دون اتصال. يتكون من Ruby scraper يبني صفحات الوثائق والفهارس، وتطبيق JavaScript يخدمه Sinatra؛ ويمكن استخدام النسخة المستضافة أو تشغيل نسخة محلية عبر Docker.",
+    "whyItMatters": "يفيد الطالب والمطور الذي يعود كثيرًا إلى توثيق Python وواجهات المكتبات؛ تنزيل مجموعات الوثائق يتيح البحث دون اتصال ويقلل التنقل بين مواقع كثيرة. لكنه مرجع API لا دورة تعليمية أو محرك بحث عام، ومحتواه يأتي من مصادر توثيق خارجية.",
+    "audience": "طلاب البرمجة، مطورو Python وJavaScript، والفرق التي تحتاج مرجع API موحدًا أو نسخة داخلية.",
+    "nextSteps": [
+      "ابدأ بالنسخة المستضافة devdocs.io وحدد مجموعات الوثائق التي تستخدمها فعليًا.",
+      "لتجربة محلية استخدم صورة Docker الرسمية وافتح localhost:9292.",
+      "إذا بنيت من المصدر فراجع Ruby 4.0.9 ومتطلبات libcurl وwebp وbsdtar وExecJS؛ لاحظ اختلاف إصدار Ruby في Dockerfile.",
+      "راجع MPL-2.0 وملفات حقوق التوثيق قبل إعادة توزيع docsets أو تعديلها."
+    ],
+    "limitations": "README يوضح أن DevDocs يركز على مرجع API وليس الدروس أو البحث العام، وأن الوثائق من جهات خارجية. لا توجد آلية تحديث تلقائي موحدة في التثبيت اليدوي؛ يلزم git pull ثم thor docs:download --installed. README يذكر أن المشروع يبحث عن maintainers، ما يستدعي الانتباه لاستمرارية الصيانة. توجد ملاحظة توافق تستحق الفحص: Gemfile يثبت Ruby 4.0.9 بينما Dockerfile الحالي يبدأ من ruby:4.0.8. لم نشغّل المشروع أو نختبر بناء الصورة في هذه المراجعة.",
+    "reviewedAt": "2026-11-10T08:46:13+03:00",
+    "basis": "readme",
+    "sources": [
+      {
+        "title": "DevDocs README",
+        "url": "https://github.com/freeCodeCamp/devdocs/blob/main/README.md"
+      },
+      {
+        "title": "DevDocs Gemfile",
+        "url": "https://github.com/freeCodeCamp/devdocs/blob/main/Gemfile"
+      },
+      {
+        "title": "DevDocs Dockerfile",
+        "url": "https://github.com/freeCodeCamp/devdocs/blob/main/Dockerfile"
+      },
+      {
+        "title": "DevDocs MPL-2.0 License",
+        "url": "https://github.com/freeCodeCamp/devdocs/blob/main/LICENSE"
+      },
+      {
+        "title": "DevDocs adding documentation guide",
+        "url": "https://github.com/freeCodeCamp/devdocs/blob/main/docs/adding-docs.md"
+      },
+      {
+        "title": "DevDocs scraper reference",
+        "url": "https://github.com/freeCodeCamp/devdocs/blob/main/docs/scraper-reference.md"
+      },
+      {
+        "title": "Zeal official website",
+        "url": "https://zealdocs.org/"
+      },
+      {
+        "title": "Dash official website",
+        "url": "https://kapeli.com/dash"
+      }
+    ],
+    "overview": "يتكون DevDocs من Ruby scraper ينزل صفحات التوثيق أو يقرأها من ملفات محلية، وينظف HTML ويصلح الروابط ويولد صفحات وفهارس وملفات metadata. تطبيق JavaScript يعمل في المتصفح ويقدمه خادم Sinatra/Sprockets صغير؛ يستخدم التخزين المحلي وservice worker لتسريع التشغيل والعمل دون اتصال، ويتيح للمستخدم اختيار docsets لتقليل الذاكرة. نطاقه توثيق API/reference وليس tutorials.",
+    "requirements": "أسهل مسار هو Docker الرسمي على المنفذ 9292. التثبيت اليدوي يحتاج Ruby 4.0.9، وlibcurl وwebp وbsdtar (أو libarchive-tools)، وJavaScript runtime يدعمه ExecJS (Node على Linux)، وBundler. المتصفح يحتاج إصدارًا حديثًا من Firefox/Chrome/Opera أو Safari 16.4+ أو Edge 89+؛ iOS 16.4+ مذكور في README. التنزيل الأولي للوثائق يحتاج اتصالًا ومساحة تخزين، ثم يمكن البحث في المجموعات المنزلة دون اتصال.",
+    "quickStart": "Docker: docker run --name devdocs -d -p 9292:9292 ghcr.io/freecodecamp/devdocs:latest ثم افتح http://localhost:9292. للتثبيت من المصدر: git clone https://github.com/freeCodeCamp/devdocs.git ثم gem install bundler وbundle install وbundle exec thor docs:download --default وbundle exec rackup. لتحديث docsets المثبتة استخدم thor docs:download --installed بعد تحديث المستودع. Dockerfile يحدد Ruby 4.0.8 بينما Gemfile يطلب 4.0.9؛ تحقق من توافق البناء قبل الاعتماد عليه.",
+    "costModel": "لا يحتاج نموذجًا لغويًا أو API مدفوعًا. النسخة المستضافة متاحة عبر devdocs.io، أما التشغيل الذاتي فيستهلك موارد الخادم والتخزين وعرض النطاق عند تنزيل docsets. لم أجد سعرًا معلنًا لخدمة الاستضافة في README، لذلك لا أفترض تكلفة اشتراك.",
+    "alternatives": [
+      {
+        "name": "Zeal",
+        "url": "https://zealdocs.org/",
+        "notes": "تطبيق سطح مكتب مفتوح المصدر لوثائق offline، مناسب لـWindows وLinux ويستخدم docsets؛ يختلف عن DevDocs بكونه تطبيقًا أصليًا."
+      },
+      {
+        "name": "Dash",
+        "url": "https://kapeli.com/dash",
+        "notes": "تطبيق macOS لبحث docsets وتوليد توثيق مخصص والتكامل مع المحررات؛ بديل مكتبي وليس خادم ويب ذاتي الاستضافة."
+      }
+    ],
+    "improvements": [
+      {
+        "title": "تنبيه فروق إصدارات docsets",
+        "problem": "قد يستمر المستخدم في البحث داخل توثيق قديم بعد تغير واجهة API أو حذف صفحة.",
+        "approach": "قارن فهارس وmetadata لكل إصدار، وأنشئ تقريرًا يوضح الصفحات المضافة والمحذوفة والمتغيرة مع رابط المصدر.",
+        "stack": "Ruby, Thor, JSON, GitHub Actions",
+        "steps": [
+          "احفظ نسخة manifest وبصمة لكل docset مثبت.",
+          "نزّل snapshot جديدًا للمجموعات المختارة.",
+          "قارن العناوين والمعرفات والروابط في الفهرس.",
+          "صنّف الإضافات والحذف والتغييرات.",
+          "أنشئ تقريرًا قابلًا للفتح قبل استبدال النسخة المحلية."
+        ],
+        "metric": "كشف 95% من تغييرات الصفحات المعروفة في مجموعة اختبار، مع أقل من 5% تنبيهات كاذبة.",
+        "difficulty": "متوسطة؛ تقدير 3–5 أسابيع.",
+        "risks": "تغير بنية HTML أو scraper قد ينتج فروقًا شكلية؛ يلزم تثبيت مصدر كل docset.",
+        "sources": [
+          {
+            "title": "DevDocs README",
+            "url": "https://github.com/freeCodeCamp/devdocs/blob/main/README.md"
+          },
+          {
+            "title": "DevDocs scraper reference",
+            "url": "https://github.com/freeCodeCamp/devdocs/blob/main/docs/scraper-reference.md"
+          }
+        ]
+      },
+      {
+        "title": "حزم توثيق عربية موثقة المصدر",
+        "problem": "قد يتفرق التوثيق العربي أو تختلط ترجمة غير محدثة بمرجع الإصدار الحالي.",
+        "approach": "أنشئ docsets عربية اختيارية من مواد يسمح ترخيصها بإعادة الاستخدام، مع إبقاء رابط الأصل والإصدار وتاريخ الترجمة ظاهرًا.",
+        "stack": "Ruby scraper, HTML/Markdown, JSON metadata, RTL CSS",
+        "steps": [
+          "اختر مكتبات لها توثيق عربي أو صفحات مرخصة بوضوح.",
+          "سجل مصدر كل صفحة وإصدارها وترخيصها.",
+          "أضف تاريخ آخر مراجعة واسم المراجع.",
+          "ولّد docset منفصلًا ولا تستبدل النص الأصلي.",
+          "اختبر البحث والروابط والاتجاه RTL على عينة."
+        ],
+        "metric": "100% من الصفحات المضافة تحمل مصدرًا وترخيصًا وإصدارًا وتاريخ مراجعة.",
+        "difficulty": "متوسطة إلى عالية؛ تقدير 4–7 أسابيع.",
+        "risks": "حقوق إعادة نشر الوثائق وتقادم الترجمة وتفاوت المصطلحات.",
+        "sources": [
+          {
+            "title": "DevDocs adding documentation guide",
+            "url": "https://github.com/freeCodeCamp/devdocs/blob/main/docs/adding-docs.md"
+          },
+          {
+            "title": "DevDocs LICENSE",
+            "url": "https://github.com/freeCodeCamp/devdocs/blob/main/LICENSE"
+          }
+        ]
+      },
+      {
+        "title": "سجل مصدر وترخيص لكل مجموعة وثائق",
+        "problem": "قد لا يعرف المسؤول مصدر docset وشروط إعادة توزيعه عند تجميع عدة مكتبات.",
+        "approach": "أضف manifest موحدًا يربط كل docset بالناشر والترخيص والرابط والإصدار وتاريخ الالتقاط.",
+        "stack": "Ruby, JSON Schema, SPDX identifiers",
+        "steps": [
+          "حدد حقول manifest الإلزامية.",
+          "اجمع بيانات المصدر والترخيص من كل ناشر.",
+          "ارفض docset بلا مصدر أو حالة ترخيص واضحة.",
+          "اعرض manifest بجانب اسم الإصدار.",
+          "أضف اختبارًا يمنع نشر حزمة ناقصة البيانات."
+        ],
+        "metric": "كل docsets المنشورة لها مصدر ورخصة أو حالة غير محسومة واضحة.",
+        "difficulty": "متوسطة؛ تقدير 3–4 أسابيع.",
+        "risks": "بعض الناشرين لا يقدمون ترخيصًا موحدًا لكل صفحاتهم.",
+        "sources": [
+          {
+            "title": "DevDocs README",
+            "url": "https://github.com/freeCodeCamp/devdocs/blob/main/README.md"
+          },
+          {
+            "title": "DevDocs adding documentation guide",
+            "url": "https://github.com/freeCodeCamp/devdocs/blob/main/docs/adding-docs.md"
+          }
+        ]
+      }
+    ],
+    "spinoffs": [
+      {
+        "title": "مكتبة Python والذكاء الاصطناعي دون اتصال",
+        "problem": "يحتاج الطالب الرجوع إلى توثيق Python وNumPy وpandas وPyTorch من أماكن مختلفة.",
+        "approach": "حزمة docsets منتقاة بإصدارات ثابتة ومصادر رسمية وتاريخ قياس، تُنزّل مرة وتعمل دون اتصال.",
+        "stack": "DevDocs, Python docs, NumPy, pandas, PyTorch, JSON manifest",
+        "steps": [
+          "اختر إصدارات متوافقة مع المقرر.",
+          "تحقق من شروط إعادة استخدام كل توثيق.",
+          "أنشئ manifest للمصادر والإصدارات.",
+          "ولّد الحزمة ونزّلها على جهاز اختبار.",
+          "اختبر 50 استعلامًا شائعًا دون إنترنت."
+        ],
+        "metric": "ظهور صفحة صحيحة ضمن أول 5 نتائج في 90% من الاستعلامات المرجعية.",
+        "difficulty": "متوسطة؛ تقدير 2–4 أسابيع.",
+        "risks": "تغير الإصدارات وتفاوت تراخيص الوثائق واستهلاك التخزين.",
+        "sources": [
+          {
+            "title": "DevDocs README",
+            "url": "https://github.com/freeCodeCamp/devdocs/blob/main/README.md"
+          },
+          {
+            "title": "DevDocs adding documentation guide",
+            "url": "https://github.com/freeCodeCamp/devdocs/blob/main/docs/adding-docs.md"
+          }
+        ]
+      },
+      {
+        "title": "بوابة توثيق داخلية لمشاريع الجامعة",
+        "problem": "تتوزع واجهات API للمشاريع والمكتبات المعتمدة بين ملفات وروابط لا يسهل البحث فيها.",
+        "approach": "استخدم FileScraper لإدراج توثيق محلي مصرح به في نسخة داخلية من DevDocs مع تحكم وصول من طبقة الاستضافة.",
+        "stack": "DevDocs, Ruby FileScraper, Sinatra, reverse proxy, access control",
+        "steps": [
+          "حدد مستودعات ووثائق يسمح أصحابها بفهرستها.",
+          "أنشئ scraper للملفات المحلية بدل جلبها من الإنترنت.",
+          "اربط كل مجموعة باسم المشروع والإصدار.",
+          "ضع الخدمة خلف مصادقة الجامعة ولا تعرضها للعامة.",
+          "اختبر البحث والصلاحيات على حسابات مختلفة."
+        ],
+        "metric": "زمن العثور على مرجع API أقل من 10 ثوانٍ في 90% من مهام الاختبار.",
+        "difficulty": "متوسطة إلى عالية؛ تقدير 4–6 أسابيع.",
+        "risks": "تسرب وثائق داخلية أو فهرسة أسرار بالخطأ؛ يلزم مراجعة الوصول قبل النشر.",
+        "sources": [
+          {
+            "title": "DevDocs scraper reference",
+            "url": "https://github.com/freeCodeCamp/devdocs/blob/main/docs/scraper-reference.md"
+          },
+          {
+            "title": "DevDocs README",
+            "url": "https://github.com/freeCodeCamp/devdocs/blob/main/README.md"
+          }
+        ]
+      }
+    ],
+    "testStatus": "not_run"
+  },
+  "repositorySnapshot": {
+    "repository": "freeCodeCamp/devdocs",
+    "stars": 39614,
+    "forks": 2654,
+    "openIssuesCount": 196,
+    "archived": false,
+    "license": "MPL-2.0",
+    "pushedAt": "2026-11-09T23:34:13Z",
+    "updatedAt": "2026-11-10T02:39:42Z",
+    "defaultBranch": "main",
+    "language": "Ruby",
+    "metricSource": "https://api.github.com/repos/freeCodeCamp/devdocs"
+  },
+  "alternatives": [
+    {
+      "name": "Zeal",
+      "url": "https://zealdocs.org/",
+      "notes": "تطبيق سطح مكتب مفتوح المصدر لوثائق offline، مناسب لـWindows وLinux ويستخدم docsets؛ يختلف عن DevDocs بكونه تطبيقًا أصليًا."
+    },
+    {
+      "name": "Dash",
+      "url": "https://kapeli.com/dash",
+      "notes": "تطبيق macOS لبحث docsets وتوليد توثيق مخصص والتكامل مع المحررات؛ بديل مكتبي وليس خادم ويب ذاتي الاستضافة."
+    }
+  ],
+  "testStatus": "not_run"
+}

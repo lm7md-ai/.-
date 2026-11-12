@@ -1,0 +1,314 @@
+{
+  "version": 1,
+  "kind": "nabdh-run-reconciliation",
+  "reviewedAt": "2026-11-11T11:44:51+03:00",
+  "main": {
+    "sha": "a376b36c5d29a973eebb19169cc0dc3924d9154c",
+    "feed": {
+      "items": 800,
+      "news": 700,
+      "projects": 100,
+      "generatedAt": "2026-11-11T06:10:48+00:00",
+      "blobSha": "c7b6f4ff08b581e2d9ef35533c7d9484ee7e434e"
+    },
+    "editorial": {
+      "entries": 917,
+      "active": 204,
+      "activeNews": 105,
+      "activeProjects": 99,
+      "historical": 713,
+      "blobSha": "430ec5a47ff85d4eebd9fba101d40664fe97e769",
+      "idUrlMismatches": 0
+    },
+    "seen": {
+      "ids": 4331,
+      "titles": 4170,
+      "blobSha": "b21b4c7710af0cde62d2954de6d33a93a73997f4"
+    },
+    "status": {
+      "state": "ok",
+      "collected": 389,
+      "sourceCount": 26,
+      "blobSha": "588bbb66a784a1fa88e5b85ea72862a4f0c0719a"
+    },
+    "incomingAudit": {
+      "files": 102,
+      "occurrences": 1054,
+      "uniqueIdUrlPairs": 932,
+      "duplicateOccurrences": 122,
+      "alreadyImportedExactPairs": 870,
+      "seenOnlyOutsideFeed": 62,
+      "idUrlMismatches": 0,
+      "orphans": 0,
+      "confirmedExpired": 0,
+      "activeUnimported": 0,
+      "method": "استندت إلى آخر مسح كامل موثق؛ أعيد فحص ثبات بصمات الملفات ومقارنة تغير Feed في هذه الدورة، ولم تُقرأ محتويات الملفات الـ102 كلها من الصفر.",
+      "differentialFeedChange": {
+        "added": 85,
+        "dropped": 85,
+        "editorialRecordsAmongDropped": 14,
+        "previousSeenOnlyBecameActive": 0
+      }
+    }
+  },
+  "pullRequests": {
+    "pr1": "merged",
+    "pr2": "merged",
+    "pr98": {
+      "state": "open",
+      "mergeable": true,
+      "headBeforeThisRun": "913e64154a3c8f3dee1b620a38a83e257e6a632c",
+      "baseSha": "5f9e9b980f51c2e3372e75dc6aed5b2884b55234",
+      "changedFilesBeforeThisRun": 42
+    }
+  },
+  "prIncoming": {
+    "mainIncomingFiles": 102,
+    "prOnlyIncomingFiles": [
+      "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+      "editorial/incoming/nabdh-editorial-2026-11-10-0846.json",
+      "editorial/incoming/nabdh-editorial-2026-11-10-2039-reconciled.json",
+      "editorial/incoming/nabdh-editorial-2026-11-10-2338.json",
+      "editorial/incoming/nabdh-editorial-2026-11-11-1144.json"
+    ],
+    "occurrences": 37,
+    "uniqueIdUrlPairs": 25,
+    "duplicateOccurrences": 12,
+    "structuralErrors": 0,
+    "currentFeedExactPairs": 14,
+    "activeNewToMain": 13,
+    "activeNewNews": 12,
+    "activeNewProjects": 1,
+    "alreadyImportedInMain": 1,
+    "historicalNoLongerInCurrentFeed": 9,
+    "seenOnlyNeverInOldOrCurrentFeed": 2,
+    "idUrlMismatches": 0,
+    "orphans": 0,
+    "confirmedExpired": 0,
+    "classification": {
+      "alreadyInMainEditorial": [
+        {
+          "id": "7c94eb734f17ebfcce",
+          "title": "Open WebUI",
+          "note": "نفس id/url؛ أضيفت حقول costModel وlicenseSummary وtestStatus دون حذف أي حقل سابق."
+        }
+      ],
+      "activeNewNews": [
+        "caa9073cefb43725f1",
+        "a3bc8ca770f44f2d28",
+        "126b111b5d436487e5",
+        "7fc88fbdaa8e97213d",
+        "0e9fb0eb84f13acffd",
+        "c7d3010a8bcc401c0c",
+        "5553fe020c93d3c2ae",
+        "1d8889c9661cfe547b",
+        "d62e152dace4589504",
+        "ae543fdc68f7cb2628",
+        "f0fc30384fec2ecc4d",
+        "1b0c05cd97a311af5c"
+      ],
+      "activeNewProjects": [
+        "0eeaaf4c87a4398c95"
+      ],
+      "historical": [
+        "86708699833d3a9796",
+        "5ef93d9981a0db1c3c",
+        "12c83389e580dec71d",
+        "a8ac24a5fed69e7112",
+        "0a2b694e15caf809f8",
+        "fb9de46b88c3faa779",
+        "3c86ca6a06f60e03f0",
+        "1addf27c71831a1839",
+        "a7b39cb0698327aa7f"
+      ],
+      "seenOnly": [
+        {
+          "id": "a425346c085c7dcb99",
+          "title": "ألواح شمسية شبه شفافة للزراعة",
+          "reason": "لا يوجد في Feed الحالي أو السابق ولا في Editorial؛ موجود في Seen فقط."
+        },
+        {
+          "id": "cec6ab6c90d6d9e9c1",
+          "title": "Zebkit Chromium library",
+          "reason": "لا يوجد في Feed الحالي أو السابق ولا في Editorial؛ موجود في Seen فقط."
+        }
+      ]
+    },
+    "duplicateNeedsCorrection": {
+      "id": "5ef93d9981a0db1c3c",
+      "url": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
+      "files": [
+        "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+        "editorial/incoming/nabdh-editorial-2026-11-10-2039-reconciled.json"
+      ],
+      "differingFields": [
+        "basis",
+        "limitations",
+        "reviewedAt"
+      ],
+      "currentEditorialBasis": "metadata",
+      "action": "أُبقيت نسخة Editorial الحالية كما هي؛ العنصر تاريخي وغير موجود في Feed الحالي، ولم يُستبدل أو تُنشأ له هوية بديلة."
+    }
+  },
+  "editorialImport": {
+    "mainEntries": 917,
+    "prEntries": 939,
+    "addedIds": 22,
+    "changedExistingIds": [
+      "7c94eb734f17ebfcce"
+    ],
+    "mainIdsPreserved": true,
+    "missingOldFields": 0,
+    "prActive": 217,
+    "prActiveNews": 117,
+    "prActiveProjects": 100,
+    "prHistorical": 722,
+    "importMethod": "دمج بنيوي مكافئ لثلاثة سجلات جديدة في كائن Editorial الموجود على فرع PR؛ لم يُستبدل الملف كاملًا ولم تُحذف أي سجلات.",
+    "officialImportCommandRun": false
+  },
+  "newsSelection": {
+    "selected": [
+      {
+        "id": "ae543fdc68f7cb2628",
+        "titleAr": "نيويورك تفتح تسجيل مطوري النماذج المتقدمة قبل بدء قانون RAISE في 2027",
+        "basis": "article"
+      },
+      {
+        "id": "f0fc30384fec2ecc4d",
+        "titleAr": "Git ينشر تحديثات أمنية لإصلاح ست ثغرات ويوصي بتحديث فروع الصيانة",
+        "basis": "article"
+      },
+      {
+        "id": "1b0c05cd97a311af5c",
+        "titleAr": "Oura تتفق على الاستحواذ على Counsel Health مقابل 625 مليون دولار",
+        "basis": "article"
+      }
+    ],
+    "priorActiveNewsPreserved": 9,
+    "totalActiveNewsInPr": 12,
+    "held": [
+      {
+        "id": "3b53bf6090ab9868ec",
+        "title": "OpenAI وOdessia",
+        "reason": "تفاصيل الاستحواذ غير معلنة؛ OpenAI أكدت انضمام المؤسس فقط في التغطية، وأولوية أقل ضمن سقف 12."
+      },
+      {
+        "id": "68219fdebd4ad78ca5",
+        "title": "Businesses in ChatGPT",
+        "reason": "تأجيل لتجنب ازدواج تغطية أخبار OpenAI التجارية مع خبر AWS Marketplace الموجود في الدفعة."
+      },
+      {
+        "id": "7e74320883f414fbb1",
+        "title": "PSI وAaronson–Ambainis",
+        "reason": "مادة بحثية مهمة لكنها تتداخل مع خبر AlphaProof Code الموجود ضمن الدفعة الحالية."
+      },
+      {
+        "id": "ab7b71ea882de237fd",
+        "title": "كتاب Six Maths Essentials",
+        "reason": "معلومة نشر/metadata أقل أولوية من الأخبار التنفيذية والبحثية الحالية؛ تبقى basis=metadata."
+      }
+    ],
+    "allSevenDraftItemsMatchCurrentFeedExactly": true
+  },
+  "specialRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "name": "NVIDIA OpenShell",
+      "inFeed": false,
+      "inEditorial": false,
+      "inSeen": true,
+      "decision": "بحث فقط",
+      "note": "README يذكر انتقال المشروع إلى CNCF قيد التنفيذ. وثائق الإصدار فيها تعارض بين صفحة latest التي تعرض v0.1.7 وصفحة إصدار v0.1.8؛ لم يُحسم أحدث stable."
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "name": "Canva Craft",
+      "inFeed": false,
+      "inEditorial": false,
+      "inSeen": true,
+      "decision": "Seen-only",
+      "note": "إعلان Canva الرسمي: 2K وأكثر من 30 نسبة أبعاد وPublic API؛ ترتيب DesignArena ادعاء Canva وليس قياسًا مستقلاً."
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "name": "1Password agent sign-in",
+      "inFeed": false,
+      "inEditorial": false,
+      "inSeen": true,
+      "decision": "Seen-only",
+      "note": "ميزة opt-in؛ حساب فردي/عائلي؛ التطبيق 8.12.42+؛ passkeys والخزائن المشتركة غير مدعومة؛ موافقة حتى 30 يومًا."
+    }
+  ],
+  "projectResearch": {
+    "cumulativeLibrary": {
+      "total": 68,
+      "nonArchived": 66,
+      "archived": 2,
+      "inCurrentProjectFeed": 12,
+      "feedNewsReferences": 1,
+      "notInFeed": 54,
+      "membershipUnverified": 1,
+      "publicationStatus": "research-only"
+    },
+    "previousEight": {
+      "reviewed": 8,
+      "archivedNow": 0,
+      "defaultBranchMain": 8,
+      "metricsMeasuredAt": "2026-11-11T09:01:51+03:00",
+      "metricsRefreshedThisRun": false,
+      "readmeAndLicenseFetched": true
+    },
+    "devDocs": {
+      "id": "0eeaaf4c87a4398c95",
+      "improvements": 3,
+      "improvementsValid": 3,
+      "spinoffs": 2,
+      "spinoffsValid": 2,
+      "religious": 0,
+      "testStatus": "not_run"
+    },
+    "modernWebGuidance": {
+      "id": "a4978faa7e166cdb12",
+      "feedKind": "news",
+      "priority": 68,
+      "publicationStatus": "research-only; not a public project card",
+      "license": "Apache-2.0 code; CC BY 4.0 guides"
+    }
+  },
+  "commandsNotRun": [
+    "python scripts/editorial.py validate <each incoming file>",
+    "python scripts/editorial.py import <approved active batch>",
+    "python -m unittest discover -s tests -v"
+  ],
+  "equivalentValidation": {
+    "files": 5,
+    "records": 37,
+    "uniquePairs": 25,
+    "structuralErrors": 0,
+    "divergentDuplicatePairs": 1
+  },
+  "workflowSafety": {
+    "workflow": "Refresh news and deploy Nabdh",
+    "triggers": [
+      "push main",
+      "schedule",
+      "workflow_dispatch"
+    ],
+    "noSkipRefreshInput": true,
+    "behavior": "يشغّل update_feed.py ثم يضيف feed.json وseen.json وstatus.json عند وجود فروق قبل رفع GitHub Pages artifact.",
+    "mergeDecision": "لم يُدمج PR #98 لأن الدمج سيشغّل مسارًا يعدل Feed/Seen/Status تلقائيًا، وهو يتعارض مع منع تعديل feed.json وseen.json. لا توجد طريقة نشر مستقلة في الـworkflow الحالي."
+  },
+  "publication": {
+    "lastMainRunId": 42970586945,
+    "lastMainRunConclusion": "success",
+    "artifactId": 13833202134,
+    "artifactDataBlobsMatchMain": {
+      "feed": true,
+      "editorial": true,
+      "seen": true,
+      "status": true
+    },
+    "directPagesFetch": "DisabledError",
+    "detailPageFetch": "DisabledError"
+  }
+}

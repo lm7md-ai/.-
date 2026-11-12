@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-12T08:46:40+03:00",
+  "repository": "lm7md-ai/.-",
+  "main": {
+    "sha": "9ac538da9be6c0865a6c8f2f09632b6cc83fd7cc",
+    "feed": {
+      "count": 800,
+      "news": 700,
+      "projects": 100,
+      "generatedAt": "2026-11-11T21:55:46+00:00"
+    },
+    "editorialCount": 917,
+    "seenCount": 4495
+  },
+  "incomingMain": {
+    "files": 102,
+    "occurrences": 1054,
+    "uniqueIdUrlPairs": 932,
+    "duplicateOccurrences": 122,
+    "alreadyImportedExact": 870,
+    "seenOnlyOutsideCurrentFeed": 62,
+    "currentOccurrenceBreakdown": {
+      "editorialExact": 979,
+      "seenOnly": 75
+    },
+    "activeUnimported": 0,
+    "idUrlMismatches": 0,
+    "editorialUrlMismatches": 0,
+    "orphans": 0,
+    "confirmedExpired": 0,
+    "jsonParseErrors": 0
+  },
+  "incomingPRBeforeThisCycle": {
+    "filesTotal": 109,
+    "filesAddedSinceMain": 7,
+    "occurrencesInAddedFiles": 50,
+    "uniquePairsWithinAddedFiles": 38,
+    "duplicateOccurrencesWithinAddedFiles": 12,
+    "activeNewCurrent": 23,
+    "activeNewNewsCurrent": 21,
+    "activeNewProjectsCurrent": 2,
+    "alreadyImportedExact": 1,
+    "historicalRetained": 11,
+    "pending": 2,
+    "idUrlMismatches": 0,
+    "structuralErrors": 0
+  },
+  "pendingRecords": [
+    {
+      "id": "a425346c085c7dcb99",
+      "titleAr": "ألواح شمسية شبه شفافة للزراعة",
+      "status": "seen-only; no current feed/editorial entry",
+      "decision": "hold; do not import"
+    },
+    {
+      "id": "cec6ab6c90d6d9e9c1",
+      "titleAr": "Zebkit",
+      "status": "seen-only; no current feed/editorial entry",
+      "decision": "hold; do not import"
+    }
+  ],
+  "identityCollision": {
+    "name": "LLMs-from-scratch",
+    "historicalId": "7a99eca9b2ce14d9f5",
+    "activeId": "e0cbbf211a55e79f34",
+    "sameUrl": true,
+    "decision": "preserve both identities; do not derive aliases from title"
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "status": "seen-only; research-only",
+      "officialSource": "https://docs.nvidia.com/openshell/v0.1.8/about/installation",
+      "verified": "v0.1.8 documentation remains current; no active Feed/Editorial record."
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "status": "seen-only; research-only",
+      "officialSource": "https://www.canva.com/newsroom/news/canva-craft/",
+      "verified": "Available globally in Canva and via Public API; 2K; prompts in any language and text in 55 languages; Canva MCP coming soon."
+    },
+    {
+      "name": "1Password for Agents",
+      "id": "662e68277c6361dd4b",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "status": "seen-only; research-only",
+      "officialSource": "https://support.1password.com/1password-for-agents/",
+      "verified": "Claude Duet, Grok Bot, Instinct, Muse, Town; Individual/Family 1Password.com; app 8.12.42+; Login items in Personal/Private vaults; Passkeys and Shared vaults unsupported."
+    }
+  ],
+  "newBatch": {
+    "news": 8,
+    "projectLinkedFeedItems": 1,
+    "exactIdUrlMatches": 9,
+    "basisCounts": {
+      "article": 7,
+      "metadata": 1,
+      "readme": 1
+    },
+    "newIds": [
+      "65b96c238445cdedc9",
+      "02bfed5e7aa817ea9d",
+      "b21fa54b837dba6b35",
+      "31699ba3bf57a08cdb",
+      "b87487ef036547770a",
+      "312cc2672ec7b82778",
+      "b8c7de61a30502becd",
+      "1df6a00742e99b5a00",
+      "d0e5cfeb79c6e58571"
+    ],
+    "allPresentInCurrentFeed": true,
+    "allAbsentFromEditorialBeforeImport": true
+  },
+  "afterImport": {
+    "editorialCount": 961,
+    "activeExact": 217,
+    "activeNews": 117,
+    "activeProjects": 100,
+    "addedActiveExact": 9
+  },
+  "decision": {
+    "mergePr98": false,
+    "reason": "The existing push-to-main workflow runs update_feed.py and stages feed.json, seen.json and status.json; merging may change protected files. No workflow or settings changes were made."
+  }
+}
