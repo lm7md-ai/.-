@@ -24,6 +24,6 @@
   "decision": "The previous 'no AI mention' hold was too strict. The official statement supports the headline at a high level, but the Arabic title and summary were reworded to avoid implying a specific incident or technical proof. A candidate entry was added to incoming and Editorial on PR #98; it remains unpublished pending CI.",
   "candidateTitleAr": "إعلان وزراء خارجية مجموعة السبع يناقش فرص النماذج المتقدمة ومخاطر إساءة استخدامها",
   "candidateBasis": "article",
-  "cliValidation": "not executed locally; structural-equivalent validation performed",
-  "cliImport": "not executed locally; entry merged while preserving all existing Editorial records and fields"
+  "cliValidation": "Executed on a temporary local snapshot of main: validate on the candidate passed; final PR Editorial was officially validated by CI run 43212426287 at 966 entries.",
+  "cliImport": "Executed on a temporary local main snapshot: imported one candidate and preserved all 917 existing records (result 918). The same entry was separately merged into the 965-entry PR Editorial; CI validated the PR result at 966. The CLI import was not run directly against the PR's 965-entry file."
 }
