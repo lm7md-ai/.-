@@ -1,0 +1,378 @@
+{
+  "version": 1,
+  "kind": "incoming-reconciliation",
+  "reviewedAt": "2026-11-12T12:17:42+03:00",
+  "auditedMainSha": "32c21fedf510fa24eccea0e44a80f57cb6e6db58",
+  "auditedPrHeadBeforeThisReport": "d09268c4c188981a99e54f6f4d6d545c1745bf62",
+  "pullRequest": {
+    "number": 98,
+    "state": "open",
+    "mergeable": true,
+    "aheadBy": 57,
+    "behindBy": 0,
+    "base": "main",
+    "branch": "editorial/2026-11-10-0243-research-and-incoming"
+  },
+  "currentMain": {
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialItems": 917,
+    "activeExactEditorial": 182,
+    "seenIds": 4546,
+    "status": "ok",
+    "lastSuccessfulAt": "2026-11-12T07:06:45+00:00",
+    "collected": 328
+  },
+  "mainIncomingAudit": {
+    "files": 102,
+    "appearances": 1054,
+    "uniqueIdUrlPairs": 932,
+    "duplicateAppearances": 122,
+    "importedExact": 870,
+    "seenOnlyOutsideCurrentFeedAndEditorial": 62,
+    "idUrlMismatches": 0,
+    "invalidJsonFiles": 0,
+    "invalidEntries": 0,
+    "activeUnimported": 0,
+    "confirmedExpired": 0,
+    "latestRecheck": {
+      "seenOnlyCheckedAgainstCurrentFeed": 62,
+      "reactivated": 0
+    },
+    "evidenceFiles": [
+      "editorial/pending/incoming-reconciliation-2026-11-10-2039.json",
+      "editorial/pending/recheck-2026-11-12-1138.json"
+    ]
+  },
+  "prIncomingAudit": {
+    "additionalFiles": 9,
+    "appearances": 63,
+    "uniqueIdUrlPairs": 51,
+    "duplicateAppearances": 12,
+    "activeExactPairs": 36,
+    "activeNewToMainEditorial": 35,
+    "activeAlreadyInMainEditorial": 1,
+    "activeKinds": {
+      "news": 33,
+      "project": 3
+    },
+    "activeNewKinds": {
+      "news": 33,
+      "project": 2
+    },
+    "outsideCurrentFeedPairs": 15,
+    "historicalRetainedInEditorial": 13,
+    "pendingNotImported": 2,
+    "idUrlMismatches": 0,
+    "invalidJsonFiles": 0,
+    "structuralEquivalentValidation": {
+      "filesChecked": 9,
+      "passed": 9,
+      "failed": 0,
+      "method": "JSON/schema/HTTPS/reviewedAt/basis/steps/proposal-field checks; not the Python CLI"
+    }
+  },
+  "historicalRetainedIds": [
+    "86708699833d3a9796",
+    "5ef93d9981a0db1c3c",
+    "12c83389e580dec71d",
+    "a8ac24a5fed69e7112",
+    "0a2b694e15caf809f8",
+    "fb9de46b88c3faa779",
+    "3c86ca6a06f60e03f0",
+    "1addf27c71831a1839",
+    "0e9fb0eb84f13acffd",
+    "c7d3010a8bcc401c0c",
+    "a7b39cb0698327aa7f",
+    "1d8889c9661cfe547b",
+    "31699ba3bf57a08cdb"
+  ],
+  "pendingRecords": [
+    {
+      "id": "a425346c085c7dcb99",
+      "incomingUrl": "https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet/",
+      "seen": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "decision": "hold; no current Feed match"
+    },
+    {
+      "id": "cec6ab6c90d6d9e9c1",
+      "incomingUrl": "https://github.com/ikey4u/zebkit",
+      "seen": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "decision": "hold; no current Feed match"
+    }
+  ],
+  "verifiedButDeferred": [
+    {
+      "id": "b0cee948b440301e45",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1UU2tHemhQOGVzakpWWmxJQ0dYZFVaX3p6c1pJM2xSc19jV0JRWHpYTWVya0xCcUdZNTRrUHlHakxLTUE0RVZTNlBud0ZvQ3V0RnBoMUdFVWgtN28?oc=5",
+      "seen": true,
+      "inCurrentFeed": true,
+      "inEditorial": false,
+      "decision": "source_verified_ready_but_not_imported_to_keep_the_12_news_cycle_cap",
+      "basis": "article",
+      "sources": [
+        "https://www.auswaertiges-amt.de/en/newsroom/news/2810400-2810400",
+        "https://www.gov.uk/government/news/joint-declaration-following-the-g7-foreign-ministers-meeting-in-paris"
+      ],
+      "verification": "قراءة البيان المشترك الكامل؛ يذكر مخاطر إساءة استخدام النماذج المتقدمة في أنشطة سيبرانية وإجرامية وقدرات عالية الأثر. لا يثبت وقوع حادث محدد ولا يعلن إجراءً ملزمًا أو نموذجًا بعينه."
+    }
+  ],
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "seen": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "researchDossier": "editorial/library/nvidia-openshell-dossier-2026-10-29.json",
+      "officialSources": [
+        "https://docs.nvidia.com/openshell/v0.1.8/about/installation",
+        "https://github.com/NVIDIA/OpenShell"
+      ],
+      "verification": "v0.1.8؛ Docker 28+، Podman 5.x على Linux مع cgroups v2، وMicroVM عند توفر افتراضية المضيف. Windows الأصلي تطويري وغير مؤهل للإنتاج، وWSL2 تجريبي."
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "seen": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "researchDossier": null,
+      "officialSources": [
+        "https://www.canva.com/newsroom/news/canva-craft/",
+        "https://www.canva.com/ai-research/craft-api/"
+      ],
+      "verification": "Canva تعلن الإتاحة عالميًا وPublic API ودقة حتى 2K ونصوصًا في 55 لغة؛ Canva MCP موصوف بأنه قادم. أرقام التقييم والتكلفة ادعاءات منشورة من Canva وليست قياسًا مستقلًا."
+    },
+    {
+      "name": "1Password for Agents",
+      "id": "662e68277c6361dd4b",
+      "seen": true,
+      "inCurrentFeed": false,
+      "inEditorial": false,
+      "researchDossier": null,
+      "officialSources": [
+        "https://support.1password.com/1password-for-agents/"
+      ],
+      "verification": "مقال الدعم منشور 4 نوفمبر 2026؛ Individual/Family، تطبيق 1Password 8.12.42+، وعناصر Login في Personal/Private vaults. Passkeys وShared vaults غير مدعومة حاليًا."
+    }
+  ],
+  "newsReviewed": [
+    {
+      "id": "65b96c238445cdedc9",
+      "titleAr": "مكتب Gilbert + Tobin ينتقل من تجارب الذكاء الاصطناعي إلى سير عمل قانوني متعدد الخطوات",
+      "basis": "article"
+    },
+    {
+      "id": "02bfed5e7aa817ea9d",
+      "titleAr": "Google تطلق Gemini Decisions API لتقييم قرارات متعددة الوسائط",
+      "basis": "article"
+    },
+    {
+      "id": "b21fa54b837dba6b35",
+      "titleAr": "باحثو Apple يدرسون تسريع استرجاع RAG بتعلّم توزيع الاستعلامات",
+      "basis": "article"
+    },
+    {
+      "id": "31699ba3bf57a08cdb",
+      "titleAr": "Tendrils تعلن جمع 30 مليون دولار لتطوير معمارية معالجات ولغة Vine",
+      "basis": "article"
+    },
+    {
+      "id": "b87487ef036547770a",
+      "titleAr": "تقرير Reuters Institute عن استخدام الذكاء الاصطناعي والأخبار",
+      "basis": "article"
+    },
+    {
+      "id": "312cc2672ec7b82778",
+      "titleAr": "GitHub يعيد Actions وPages وCopilot وWebhooks بعد عطل متعدد الخدمات",
+      "basis": "metadata"
+    },
+    {
+      "id": "b8c7de61a30502becd",
+      "titleAr": "دراسة سدايا تضع السعودية ثالثة عالميًا في نمو كفاءات الذكاء الاصطناعي",
+      "basis": "article"
+    },
+    {
+      "id": "1df6a00742e99b5a00",
+      "titleAr": "United Airlines تقيّد وكلاء الذكاء الاصطناعي الخارجيين من إجراء الحجوزات دون إذن",
+      "basis": "article"
+    },
+    {
+      "id": "bb27561db5d10d5000",
+      "titleAr": "TSMC توافق على استثمارات تصل إلى مليار دولار في Anthropic وOpenAI",
+      "basis": "article"
+    },
+    {
+      "id": "3b53bf6090ab9868ec",
+      "titleAr": "OpenAI تستحوذ على Odessia وتستقطب مؤسس وكيل السفر",
+      "basis": "article"
+    },
+    {
+      "id": "3ddc5cc5a5b08ed604",
+      "titleAr": "Home Assistant تطلق Connect AUX-2 لربط الأجهزة التقليدية بالمنزل الذكي",
+      "basis": "article"
+    },
+    {
+      "id": "1385baee7258ede721",
+      "titleAr": "تقرير IMD 2026 يضع السعودية في المرتبة الثانية في مؤشرين فرعيين",
+      "basis": "article"
+    }
+  ],
+  "separateResearchEnrichment": {
+    "id": "d0e5cfeb79c6e58571",
+    "name": "MACaQ",
+    "basis": "readme",
+    "kindInFeed": "news",
+    "note": "إثراء بحثي لمستودع برمجي؛ لا يُحسب ضمن الأخبار الاثني عشر ولا يُدّعى اختبار تشغيله."
+  },
+  "projectLibrary": {
+    "cumulativeProjects": 68,
+    "nonArchived": 66,
+    "archived": 2,
+    "linkedToCurrentProjectFeed": 12,
+    "researchOnly": 54,
+    "membershipUnverified": 1,
+    "currentProjectFeed": 100,
+    "editorialCoverage": "100/100",
+    "publicResearchDossiers": 3,
+    "improvements": 313,
+    "spinoffs": 296,
+    "religious": 34,
+    "note": "الأعداد البنيوية من Editorial/catalog؛ لا تعني أن الاقتراحات نُفذت أو اختُبرت."
+  },
+  "previousEightRefresh": {
+    "measuredAt": "2026-11-12T12:17:42+03:00",
+    "readmeAndLicenseReview": "آخر مراجعة تفصيلية في editorial/library/previous-eight-refresh-2026-11-12-1138.json",
+    "currentFeedMatch": 1,
+    "researchOnly": 7,
+    "newProjectCards": 0,
+    "improvements": 32,
+    "spinoffs": 29,
+    "religious": 0,
+    "allProjectTests": "not_run",
+    "metrics": [
+      {
+        "repo": "patchy631/ai-engineering-hub",
+        "stars": 41787,
+        "forks": 6678,
+        "openIssues": 137,
+        "license": "MIT",
+        "archived": false,
+        "pushedAt": "2026-11-01T04:39:16Z"
+      },
+      {
+        "repo": "googleapis/python-genai",
+        "stars": 4064,
+        "forks": 1065,
+        "openIssues": 402,
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushedAt": "2026-11-12T06:42:04Z"
+      },
+      {
+        "repo": "Millillion/lasm",
+        "stars": 105,
+        "forks": 7,
+        "openIssues": 21,
+        "license": "MIT",
+        "archived": false,
+        "pushedAt": "2026-11-12T01:36:33Z"
+      },
+      {
+        "repo": "microsoft/markitdown",
+        "stars": 195014,
+        "forks": 14714,
+        "openIssues": 807,
+        "license": "MIT",
+        "archived": false,
+        "pushedAt": "2026-11-07T00:14:01Z"
+      },
+      {
+        "repo": "yc-software/minecraft-agent-harness",
+        "stars": 211,
+        "forks": 28,
+        "openIssues": 1,
+        "license": "MIT",
+        "archived": false,
+        "pushedAt": "2026-10-29T20:30:45Z"
+      },
+      {
+        "repo": "NVIDIA/OpenShell",
+        "stars": 21478,
+        "forks": 2099,
+        "openIssues": 655,
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushedAt": "2026-11-12T09:00:59Z"
+      },
+      {
+        "repo": "pydantic/pydantic-ai",
+        "stars": 21160,
+        "forks": 3153,
+        "openIssues": 1948,
+        "license": "MIT",
+        "archived": false,
+        "pushedAt": "2026-11-12T09:16:28Z"
+      },
+      {
+        "repo": "astral-sh/uv",
+        "stars": 91934,
+        "forks": 3810,
+        "openIssues": 3082,
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushedAt": "2026-11-11T15:49:58Z"
+      }
+    ]
+  },
+  "preservation": {
+    "mainEditorialRecords": 917,
+    "prEditorialRecords": 965,
+    "newIds": 48,
+    "missingMainIds": 0,
+    "removedFields": 0,
+    "activeNewRecords": 35,
+    "historicalNewRecords": 13,
+    "existingRecordsEnriched": [
+      "7c94eb734f17ebfcce",
+      "fe0e6bfdbdd5822139"
+    ]
+  },
+  "execution": {
+    "localPythonRuntime": false,
+    "officialValidateIncoming": "not executed locally; equivalent structural validation passed 9/9 incoming files",
+    "officialImport": "not executed locally",
+    "officialValidateFinalEditorial": "GitHub Actions run 43187968154 passed; 965 entries",
+    "unitTests": "GitHub Actions run 43187968154 passed; 30 tests",
+    "nodeSyntaxChecks": "passed in the same PR check run"
+  },
+  "publication": {
+    "latestMainWorkflowRun": 43172835178,
+    "conclusion": "success",
+    "artifactId": 13922064135,
+    "artifactInspected": true,
+    "artifactFeedItems": 800,
+    "artifactEditorialItems": 917,
+    "artifactSeenIds": 4546,
+    "artifactStatus": "ok",
+    "prEditorialPublished": false,
+    "livePagesBrowserOpen": "DisabledError"
+  },
+  "mergeConstraint": {
+    "prDiffOnlyEditorialData": true,
+    "protectedFilesInCurrentPrDiff": [],
+    "existingPushWorkflowRunsOnMainPush": true,
+    "workflowRunsRefreshAndWrites": [
+      "site/data/feed.json",
+      "site/data/seen.json",
+      "site/data/status.json"
+    ],
+    "decision": "do_not_merge_or_trigger_deploy_under_current_no-feed-no-seen-no-status-change constraint"
+  }
+}
