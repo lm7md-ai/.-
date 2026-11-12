@@ -193,7 +193,32 @@
       "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-11-12-2105.json",
       "python -m unittest discover -s tests -v"
     ],
-    "reason": "لم يتوفر checkout محلي؛ محاولة git clone فشلت بسبب تعذر حل github.com. أُجري فحص بنيوي مكافئ في بيئة الأدوات، وسيُستخدم CI الرسمي للتحقق من Editorial والاختبارات بعد الدفع."
+    "reason": "لم يتوفر checkout محلي؛ محاولة git clone فشلت بسبب تعذر حل github.com. أُجري فحص بنيوي مكافئ في بيئة الأدوات، وسيُستخدم CI الرسمي للتحقق من Editorial والاختبارات بعد الدفع.",
+    "officialCiRun": 43279177126,
+    "officialCiUrl": "https://github.com/lm7md-ai/.-/actions/runs/43279177126",
+    "officialCiStatus": "success",
+    "officialCiMergeRef": "538240d38211eafa6456edf61eb5acd209c026ac",
+    "officialCiContentCommit": "5b44984015a4384a79505041b17936fc8c84525b",
+    "unittest": {
+      "command": "python -m unittest discover -s tests -v",
+      "executed": "GitHub Actions PR CI",
+      "result": "Ran 30 tests in 0.075s; OK"
+    },
+    "editorialValidate": {
+      "command": "python scripts/editorial.py validate",
+      "executed": "GitHub Actions PR CI",
+      "result": "Validated 951 editorial entries"
+    },
+    "javascriptCheck": {
+      "command": "node --check site/app.js && node --check site/ideas.js",
+      "executed": "GitHub Actions PR CI",
+      "result": "success"
+    },
+    "officialImport": {
+      "command": "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-11-12-2105.json",
+      "executed": false,
+      "reason": "لا يوجد checkout محلي؛ لم يُنفذ الأمر. أُضيفت السجلات بدمج JSON محافظ ثم تحقق CI من Editorial النهائي."
+    }
   },
   "publication": {
     "lastSuccessfulMainRun": 43270812228,
@@ -204,6 +229,18 @@
     "newThisRunIdsInArtifact": false,
     "liveEditorialUrl": "DisabledError",
     "browserDetailUrls": "DisabledError",
-    "note": "فُحص artifact.tar داخل github-pages artifact؛ يحتوي 917 سجل Editorial ولا يحتوي المعرفات الثمانية الجديدة. لم يثبت نشر PR."
+    "note": "فُحص artifact.tar داخل github-pages artifact؛ يحتوي 917 سجل Editorial ولا يحتوي المعرفات الثمانية الجديدة. لم يثبت نشر PR.",
+    "newEditorialCount": 951,
+    "prMerged": false,
+    "prPublished": false
+  },
+  "prAfterCommit": {
+    "headSha": "5b44984015a4384a79505041b17936fc8c84525b",
+    "state": "open",
+    "merged": false,
+    "mergeable": true,
+    "aheadBy": 71,
+    "behindBy": 1,
+    "protectedPathsInDiff": []
   }
 }
