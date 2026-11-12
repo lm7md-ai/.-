@@ -279,7 +279,30 @@
         "testStatus"
       ],
       "previousFieldsRemoved": []
-    }
+    },
+    "existingMainRecordsExtended": [
+      {
+        "id": "7c94eb734f17ebfcce",
+        "addedFields": [
+          "costModel",
+          "licenseSummary",
+          "testStatus"
+        ],
+        "previousFieldsRemoved": []
+      },
+      {
+        "id": "fe0e6bfdbdd5822139",
+        "addedFields": [
+          "metricsSnapshot",
+          "activitySnapshot",
+          "licenseSummary",
+          "costModel",
+          "testStatus",
+          "testEvidence"
+        ],
+        "previousFieldsRemoved": []
+      }
+    ]
   },
   "staleHistoricalRecords": [
     {

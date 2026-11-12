@@ -29862,7 +29862,7 @@
         "قارن إجابات النموذج بمصادر المستندات وقِس الاسترجاع قبل اعتبار العرض ناجحًا.",
         "احتفظ بقائمة منفصلة للاعتماديات والخدمات السحابية المطلوبة لكل مجلد."
       ],
-      "reviewedAt": "2026-11-07T11:41:14+03:00",
+      "reviewedAt": "2026-11-12T11:38:58+03:00",
       "basis": "readme",
       "sources": [
         {
@@ -29892,6 +29892,10 @@
         {
           "title": "توثيق Ollama",
           "url": "https://docs.ollama.com/"
+        },
+        {
+          "title": "GitHub repository metadata snapshot — 12 Nov 2026",
+          "url": "https://api.github.com/repos/patchy631/ai-engineering-hub"
         }
       ],
       "improvements": [
@@ -30122,7 +30126,26 @@
         "spdx": "MIT",
         "status": "GitHub API reports MIT; root LICENSE linked in dossier",
         "source": "https://github.com/patchy631/ai-engineering-hub/blob/main/LICENSE"
-      }
+      },
+      "metricsSnapshot": {
+        "stars": 41786,
+        "forks": 6678,
+        "openIssuesCount": 137,
+        "licenseSpdx": "MIT",
+        "archived": false,
+        "pushedAt": "2026-11-01T04:39:16Z",
+        "measuredAt": "2026-11-12T11:38:58+03:00",
+        "source": "https://api.github.com/repos/patchy631/ai-engineering-hub"
+      },
+      "activitySnapshot": {
+        "archived": false,
+        "defaultBranch": "main",
+        "pushedAt": "2026-11-01T04:39:16Z",
+        "measuredAt": "2026-11-12T11:38:58+03:00"
+      },
+      "licenseSummary": "MIT؛ تم التحقق من LICENSE الجذري وبيانات GitHub API. ترخيص الاعتماديات والنماذج والبيانات الخارجية يحتاج مراجعة منفصلة.",
+      "costModel": "المستودع مجاني؛ مثال RAG المحلي عبر Ollama لا يفرض رسوم API لكل طلب لكنه يحتاج موارد وتنزيل نموذج. أمثلة أخرى قد تستخدم مزودات سحابية برسوم مستقلة.",
+      "testEvidence": "لم تُشغّل الدفاتر أو المشاريع في هذه الدورة؛ تمت مراجعة README وLICENSE وبيانات GitHub API فقط."
     },
     "9c79addb856a9fb17d": {
       "url": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
