@@ -111,7 +111,7 @@
       },
       {
         "id": "0630098a9e25be78fc",
-        "url": "https://news.google.com/rss/articles/CBMi5gRBVV95cUxPTVp2cUhGU1J1dlRYbEpqZi1fQ1NlMndXV2wxMkx3RmxmRE15YjJQVklWcFlHODdnTmxyYVgxbnMzTi1Ja2xTT25iNXdNenBQQkpVMlJjZEdQUGhiYXhiZ0pJVm00VDR0U0FVdFdXTVRVMmF3dzJReHVmUlRJVm4zbWF0blpqRUs0aEJYSURXSDBHVzhPMGN6NEVmMW9iajFQWTdoMnBqUnJGU2g1MnlaY2hwSEJLRDM3WXhBRmsyQVE5dWpiMWhuYmNRR01wdnQ4WDkwWHQ1UHJoSGFnRUNkQXFSRUtGalQyZWZwWHlyRHN5NC1ScEZTLW1OTHdLMjRHRW9PUWROaGxpc0w1OE5CeUV2WGZreGlBTUd0ZlpNWnlaOFJZTks3X0dsQnV6ZmJfT1RfSjRSblZkMmNodWl2eXduY05FWHF5V0d1R1d5YUpVMW14Y012MHdKLXVZZ2cxRXdFWWhraWtYTHVfSi14TXRPc1FqbUJ3VGNWSjNHZng1YW1oUEZ3cVVYdjVpcmNYbGpuc2VZT0xuQWVLRWRabkNmSHBORHRReGwySGNUdE01SlU4OUNPZGRFWFdUeHdGNlVXUlhuOU0xRTI2OTg3c0lGM19GeXQzc2c1Qk1pY0RNc29LZmR4Q25xQzJoSHd0eU9FdVN6dFlnRTQxcGhNQWg2eGhncUN0dlRLWm90NktHRFBQOGJjNUV2b21NRUJWMWR4S2YyQXdUMzRLdkxCcnZuM2tSVTJhNnRsVnpqWEU2MWpuNGxNTFpISHhvVDVFczdqankxWVdEdV9kVUpwdWloQXliZw?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMi5gRBVV95cUxPTVp2cUhGU1J1dlRYbEpqZi1fQ1NlMndXV2wxMkx3RmxmRE15YjJQVklWcFlHODdnTmxyYVgxbnMzTi1Ja2xTT25iNXdNenBQQkpVMlJjZEdQUGhiYXhiZ0pJVm00VDR0U0FVdFdXTVRVMmF3dzJReHVmUlRJVm4zbWF0blpqRUs0aEJYSURXSDBHVzhPMGN6NEVmMW9iajFQWTdoMnBqUnJGU2g1MnlaY2hwSEJLRDM3WXhBRmsyQVE5dWpiMWhuYmNRR01wdnQ4WDkwWHQ1UHJoSGFnRUNkQXFSRUtGalQyZWZwWHlyRHN5NC1ScEZTLW1OTHdLMjRHRW9PUWROaGxpc0w1OE5CeUV2WGZreGlBTUd0ZlpNWnlaOFJZTks3X0dsQnV6ZmJfT1RfSjRSblZkMmNodWl2eXduY05FWHF5V0d1R1d5YUpVMW14Y012MHdKLXVZZ2cxRXdFWWhraWtYTHVfSi14TXRPc1FqbUJ3VGNWSjNHZng1YW1oUEZ3cVVYdjVpcmNYbGpuc2VZT0xuQWVLRWRabkNmSHBORHRReGwySGNUdE01SlU4OUNPZGRFWFdUeHdGNlVXUlhuOU0xRTI2OTg3c0lGM19GeXQzc2c1Qk1pY0RNc29LZmR4Q25xQzJoSHd0eU9FdVN6dFlnRTQxcGhNQWg2eGhncUN0dlRLWm90NktHRFBQOGJjNUV2b21NRUJWMWR4U2YyQXdUMzRLdkxCcnZuM2tSVTJhNnRsVnpqWEU2MWpuNGxNTFpISHhvVDVFczdqankxWVdEdV9kVUpwdWloQXliZw?oc=5"
       },
       {
         "id": "abe478951338ae24f8",
@@ -226,5 +226,44 @@
     "needsCorrection": "Edge0 source is now verified; it remains source-verified-not-enriched due the 12-news limit. GitHub availability report remains source-verified-not-enriched."
   },
   "limitation": "The 117 incoming files were exhaustively audited at the prior main SHA. This run confirmed that incoming files and editorial.json did not change between that SHA and current main, but did not re-fetch every incoming file to recompute membership against the refreshed feed. Therefore do not reuse the old 262 feed-match count as a current count and do not import the 22 seen-only IDs until their exact id/url status is rechecked.",
-  "handling": "No title-based identity replacement. No feed.json or seen.json modification by this run. This file is research-only and is not part of site/data."
+  "handling": "No title-based identity replacement. No feed.json or seen.json modification by this run. This file is research-only and is not part of site/data.",
+  "postRefreshReconciliation": {
+    "reviewedAt": "2026-11-13T17:48:00+03:00",
+    "currentMainSha": "9b9d6196a5a6e5cf3231d2d33904a7d9067889e6",
+    "currentFeedBlobSha": "38c54884b21761a3c1e53b6150b51c8a2583698d",
+    "currentFeedGeneratedAt": "2026-11-13T06:40:54+00:00",
+    "currentEditorialEntries": 953,
+    "feedDeltaAgainstPreviousFeed": {
+      "added": 22,
+      "removed": 22
+    },
+    "addedRecords": {
+      "count": 22,
+      "inSeen": 22,
+      "inEditorial": 0,
+      "exactFeedUrlsAfterReportCorrection": 22,
+      "notFoundInIncomingCodeSearch": 22
+    },
+    "removedRecords": {
+      "count": 22,
+      "inSeen": 22,
+      "stillInEditorialExact": 4,
+      "seenOnly": 18,
+      "confirmedExpired": 0
+    },
+    "priorPendingSeenOnly": {
+      "count": 22,
+      "stillInSeen": 22,
+      "stillInFeed": 0,
+      "stillInEditorial": 0,
+      "confirmedExpired": 0
+    },
+    "correctedReportUrl": {
+      "id": "0630098a9e25be78fc",
+      "previousReportUrl": "https://news.google.com/rss/articles/CBMi5gRBVV95cUxPTVp2cUhGU1J1dlRYbEpqZi1fQ1NlMndXV2wxMkx3RmxmRE15YjJQVklWcFlHODdnTmxyYVgxbnMzTi1Ja2xTT25iNXdNenBQQkpVMlJjZEdQUGhiYXhiZ0pJVm00VDR0U0FVdFdXTVRVMmF3dzJReHVmUlRJVm4zbWF0blpqRUs0aEJYSURXSDBHVzhPMGN6NEVmMW9iajFQWTdoMnBqUnJGU2g1MnlaY2hwSEJLRDM3WXhBRmsyQVE5dWpiMWhuYmNRR01wdnQ4WDkwWHQ1UHJoSGFnRUNkQXFSRUtGalQyZWZwWHlyRHN5NC1ScEZTLW1OTHdLMjRHRW9PUWROaGxpc0w1OE5CeUV2WGZreGlBTUd0ZlpNWnlaOFJZTks3X0dsQnV6ZmJfT1RfSjRSblZkMmNodWl2eXduY05FWHF5V0d1R1d5YUpVMW14Y012MHdKLXVZZ2cxRXdFWWhraWtYTHVfSi14TXRPc1FqbUJ3VGNWSjNHZng1YW1oUEZ3cVVYdjVpcmNYbGpuc2VZT0xuQWVLRWRabkNmSHBORHRReGwySGNUdE01SlU4OUNPZGRFWFdUeHdGNlVXUlhuOU0xRTI2OTg3c0lGM19GeXQzc2c1Qk1pY0RNc29LZmR4Q25xQzJoSHd0eU9FdVN6dFlnRTQxcGhNQWg2eGhncUN0dlRLWm90NktHRFBQOGJjNUV2b21NRUJWMWR4S2YyQXdUMzRLdkxCcnZuM2tSVTJhNnRsVnpqWEU2MWpuNGxNTFpISHhvVDVFczdqankxWVdEdV9kVUpwdWloQXliZw?oc=5",
+      "currentFeedUrl": "https://news.google.com/rss/articles/CBMi5gRBVV95cUxPTVp2cUhGU1J1dlRYbEpqZi1fQ1NlMndXV2wxMkx3RmxmRE15YjJQVklWcFlHODdnTmxyYVgxbnMzTi1Ja2xTT25iNXdNenBQQkpVMlJjZEdQUGhiYXhiZ0pJVm00VDR0U0FVdFdXTVRVMmF3dzJReHVmUlRJVm4zbWF0blpqRUs0aEJYSURXSDBHVzhPMGN6NEVmMW9iajFQWTdoMnBqUnJGU2g1MnlaY2hwSEJLRDM3WXhBRmsyQVE5dWpiMWhuYmNRR01wdnQ4WDkwWHQ1UHJoSGFnRUNkQXFSRUtGalQyZWZwWHlyRHN5NC1ScEZTLW1OTHdLMjRHRW9PUWROaGxpc0w1OE5CeUV2WGZreGlBTUd0ZlpNWnlaOFJZTks3X0dsQnV6ZmJfT1RfSjRSblZkMmNodWl2eXduY05FWHF5V0d1R1d5YUpVMW14Y012MHdKLXVZZ2cxRXdFWWhraWtYTHVfSi14TXRPc1FqbUJ3VGNWSjNHZng1YW1oUEZ3cVVYdjVpcmNYbGpuc2VZT0xuQWVLRWRabkNmSHBORHRReGwySGNUdE01SlU4OUNPZGRFWFdUeHdGNlVXUlhuOU0xRTI2OTg3c0lGM19GeXQzc2c1Qk1pY0RNc29LZmR4Q25xQzJoSHd0eU9FdVN6dFlnRTQxcGhNQWg2eGhncUN0dlRLWm90NktHRFBQOGJjNUV2b21NRUJWMWR4U2YyQXdUMzRLdkxCcnZuM2tSVTJhNnRsVnpqWEU2MWpuNGxNTFpISHhvVDVFczdqankxWVdEdV9kVUpwdWloQXliZw?oc=5",
+      "action": "Corrected the report URL only; did not change id, feed.json, seen.json, or editorial.json."
+    },
+    "note": "The incoming inventory remains unchanged from the previously exhaustive 117-file audit; current feed membership was rechecked against the 22 added and 22 removed IDs. The 22 older pending incoming IDs remain absent from current feed and editorial and are not marked expired."
+  }
 }
