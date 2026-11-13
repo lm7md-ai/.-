@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "kind": "project-catalog-addendum",
+  "publicationStatus": "research-library update; both projects already exist as Feed project cards; no new public cards created",
+  "reviewedAt": "2026-11-12T21:05:47+03:00",
+  "previousCatalogTotal": 68,
+  "newCatalogTotal": 70,
+  "statusSummaryAfterAppend": {
+    "total": 70,
+    "archived": 2,
+    "nonArchived": 68,
+    "inCurrentProjectFeed": 14,
+    "notInFeed": 54,
+    "feedMembershipUnverified": 1,
+    "feedNewsReferences": 1,
+    "licenseNeedsUpstreamVerification": 10
+  },
+  "note": "أضيف Hermes Agent وFirecrawl بالترتيب 69 و70. كلاهما موجود أصلًا في Feed كـproject؛ إثراؤهما محفوظ تحت المعرفين الأصليين. لم يتغير ترتيب الأفكار السابقة، ولم تُنشأ بطاقات عامة بديلة.",
+  "entries": [
+    {
+      "priority": 69,
+      "name": "Hermes Agent",
+      "repository": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "feedId": "a17476e9d795515213",
+      "feedKind": "project",
+      "siteVisibility": "existing-feed-card-enriched; no new card",
+      "category": "وكلاء الذكاء الاصطناعي والأتمتة متعددة القنوات",
+      "classification": "established_non_archived",
+      "archived": false,
+      "license": "MIT",
+      "licenseNeedsUpstreamVerification": false,
+      "licenseEvidence": "تمت قراءة LICENSE الرسمي وتأكيد MIT.",
+      "metrics": {
+        "stars": 262920,
+        "forks": 59165,
+        "openIssuesCount": 53974,
+        "archived": false,
+        "disabled": false,
+        "licenseSpdx": "MIT",
+        "pushedAt": "2026-11-12T18:11:53Z",
+        "updatedAt": "2026-11-12T18:09:17Z",
+        "defaultBranch": "main",
+        "measuredAt": "2026-11-12T21:05:47+03:00",
+        "sourceApiUrl": "https://api.github.com/repos/NousResearch/hermes-agent",
+        "note": "openIssuesCount يتضمن Issues وPull Requests."
+      },
+      "readmeSha": "830be257308736e48f25ac4f2d097888b3a63a2c",
+      "licenseFileSha": "75410e73319c72cd3e991a501c5455eb78f38375",
+      "overview": "Hermes Agent مشروع MIT يوفّر وكيلًا طرفيًا وبوابة قنوات وذاكرة ومهارات وجدولة ومهامًا فرعية. يتيح README خلفيات تنفيذ محلية وDocker وSSH وخيارات سحابية مثل Modal وDaytona وVercel Sandbox. وصف حلقة التعلم وتحسين المهارات مصدره المشروع ولم يُختبر مستقلًا.",
+      "requirements": "يدعم مسار CLI أنظمة Linux وmacOS وWSL2 وWindows الأصلي؛ وحزمة Desktop على macOS تتطلب Apple Silicon، كما توجد حزمة Termux لأجهزة Android aarch64. يجهز المثبّت المصدر Python 3.14 وNode.js وnpm وpnpm وripgrep وFFmpeg. يلزم مزود نموذج واحد على الأقل، مثل API سحابي أو نقطة نهاية ذاتية عبر Ollama/vLLM؛ وبعض الخلفيات تتطلب Docker أو حساب خدمة خارجية.",
+      "quickStart": "اتبع دليل التثبيت الرسمي للنظام. بعد التثبيت شغّل hermes setup، ثم hermes model لاختيار المزود والنموذج، وhermes doctor للتشخيص. اضبط الأدوات على أقل صلاحيات لازمة، وابدأ بمهمة قراءة يدوية قبل تفعيل القنوات أو الجدولة.",
+      "costs": "ترخيص الشيفرة MIT ولا توجد رسوم ترخيص للمستودع. قد تُحتسب تكلفة استخدام مزود النموذج السحابي أو بوابة API، بينما يتطلب النموذج المحلي عتادًا وطاقة ووقت إعداد. الاستضافة على VPS أو Modal أو Daytona أو Vercel Sandbox قد تضيف تكلفة بنية تحتية؛ رقم VPS المنخفض المذكور في README تقدير تسويقي وليس ضمانًا لسعر ثابت.",
+      "alternatives": "بدائل جزئية: OpenHands يركز على مهام هندسة البرمجيات، وOpenClaw على المساعد الشخصي والقنوات، وPydantic AI إطار Python لبناء الوكلاء لا تطبيقًا جاهزًا مماثلًا. الاختيار يعتمد على ما إذا كانت الأولوية للمهام الطرفية أو تطوير الوكيل أو التكاملات.",
+      "limitations": "لم نثبت المشروع أو نختبر الذاكرة أو القنوات أو المهام المجدولة. ادعاءات التعلم الذاتي والتكلفة صادرة عن الناشر. يحتاج الوصول إلى الأدوات والملفات والحسابات إلى سياسة صلاحيات ومراجعة؛ وتشغيل الوكيل محليًا لا يجعل مزود النموذج أو الخدمات الخارجية مجانية.",
+      "sources": [
+        {
+          "title": "Hermes Agent — README",
+          "url": "https://github.com/NousResearch/hermes-agent/blob/main/README.md"
+        },
+        {
+          "title": "Hermes Agent — MIT License",
+          "url": "https://github.com/NousResearch/hermes-agent/blob/main/LICENSE"
+        },
+        {
+          "title": "Official installation guide",
+          "url": "https://hermes-agent.nousresearch.com/docs/getting-started/installation"
+        },
+        {
+          "title": "LLM and model providers",
+          "url": "https://hermes-agent.nousresearch.com/docs/integrations/providers"
+        }
+      ],
+      "testStatus": "not_run"
+    },
+    {
+      "priority": 70,
+      "name": "Firecrawl",
+      "repository": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "feedId": "e9dbf459bd01dca311",
+      "feedKind": "project",
+      "siteVisibility": "existing-feed-card-enriched; no new card",
+      "category": "استخراج الويب والبحث للأنظمة الذكية",
+      "classification": "established_non_archived",
+      "archived": false,
+      "license": "AGPL-3.0 core; MIT for SDKs and selected UI components",
+      "licenseNeedsUpstreamVerification": false,
+      "licenseEvidence": "تمت قراءة LICENSE الأساسي وREADME؛ يوضح README أن بعض SDKs ومكونات الواجهة لها MIT.",
+      "metrics": {
+        "stars": 201222,
+        "forks": 10564,
+        "openIssuesCount": 797,
+        "archived": false,
+        "disabled": false,
+        "licenseSpdx": "AGPL-3.0",
+        "pushedAt": "2026-11-12T18:11:28Z",
+        "updatedAt": "2026-11-12T18:11:12Z",
+        "defaultBranch": "main",
+        "measuredAt": "2026-11-12T21:05:47+03:00",
+        "sourceApiUrl": "https://api.github.com/repos/firecrawl/firecrawl",
+        "note": "openIssuesCount يتضمن Issues وPull Requests."
+      },
+      "readmeSha": "e2447411a88c78145c273e29e200c671a6990006",
+      "licenseFileSha": "c3670aecd9a8bce47d9be8daa62811a99b809113",
+      "overview": "Firecrawl واجهة لجلب صفحات الويب واستخراجها والتفاعل معها؛ يستطيع Crawl اكتشاف صفحات فرعية عبر sitemap والروابط مع حدود عمق ومسارات ونطاقات. يوفر المشروع خدمة Cloud ومكونات مفتوحة المصدر، لكن ليس كل ما في الخدمة المستضافة متاحًا في الاستضافة الذاتية.",
+      "requirements": "للتجربة السحابية يمكن تنفيذ طلب محدود دون مفتاح وفق صفحة البداية، ويحتاج الاستخدام الأعلى إلى حساب ومفتاح API. الاستضافة الذاتية تستخدم Docker Compose؛ دليل المشروع يثبت إصدارًا ويشغل API محليًا على المنفذ 3002. مسار quickstart المحلي يعطل المصادقة ولا يتضمن تخزينًا دائمًا أو TLS أو توافرًا عاليًا، ولذلك ليس إعداد إنتاج.",
+      "quickStart": "للتجربة السريعة ثبّت SDK بـ pip install firecrawl، ثم أنشئ Firecrawl(api_key=...) واستدعِ app.scrape(url) أو app.search(query, limit=5). يمكن تجربة طلب أولي محدود دون مفتاح بحسب التوثيق، لكن الحدود الأعلى تحتاج API key. للاستضافة الذاتية اتبع دليل Docker Compose ثم أضف المصادقة والتخزين والمراقبة قبل أي استخدام إنتاجي.",
+      "costs": "المشروع الأساسي AGPL-3.0، وبعض SDKs ومكونات الواجهة MIT. الخدمة السحابية تعمل وفق خطط وحدود استخدام تتغير؛ لم نثبت سعرًا حاليًا هنا. الاستضافة الذاتية تتجنب رسم API للخدمة لكنها تنقل تكلفة الخوادم والتخزين والعمليات والتحديثات والمراقبة إلى المشغّل.",
+      "alternatives": "بدائل جزئية: Crawlee لزحف Node.js، Scrapy لزحف Python، Playwright لأتمتة المتصفح، وJina Reader لتحويل صفحات إلى نص. ليست بدائل متطابقة في البحث والزحف والتفاعل والمراقبة؛ قارن الوظيفة المطلوبة قبل الاختيار.",
+      "limitations": "أرقام التغطية والسرعة في README ادعاءات الناشر ولم نقسها مستقلًا. تختلف خصائص Cloud عن OSS، كما أن دليل الاستضافة الذاتية يصف إعدادًا موثوقًا على شبكة داخلية لا إعداد إنتاج كامل. يجب احترام robots.txt وشروط الاستخدام والخصوصية وحدود المعدل؛ وترخيص AGPL-3.0 يحتاج مراجعة مناسبة قبل تعديل خدمة شبكية أو إعادة توزيعها.",
+      "sources": [
+        {
+          "title": "Firecrawl — README",
+          "url": "https://github.com/firecrawl/firecrawl/blob/main/README.md"
+        },
+        {
+          "title": "Firecrawl — AGPL-3.0 license",
+          "url": "https://github.com/firecrawl/firecrawl/blob/main/LICENSE"
+        },
+        {
+          "title": "Official introduction and quick start",
+          "url": "https://docs.firecrawl.dev/introduction"
+        },
+        {
+          "title": "Official self-hosting guide",
+          "url": "https://docs.firecrawl.dev/contributing/self-host"
+        },
+        {
+          "title": "Crawl endpoint documentation",
+          "url": "https://docs.firecrawl.dev/features/crawl"
+        },
+        {
+          "title": "Scrape API reference",
+          "url": "https://docs.firecrawl.dev/api-reference/endpoint/scrape"
+        }
+      ],
+      "testStatus": "not_run"
+    }
+  ]
+}

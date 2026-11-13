@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-11T20:40:22+03:00",
+  "repository": "lm7md-ai/.-",
+  "main": {
+    "sha": "4cf91e179fa2e8e42dc3d71f107bbc0889cf20f7",
+    "files": {
+      "readme": {
+        "path": "README.md",
+        "sha": "b65d4ccb0b7e96f0072101addf05785992044c58"
+      },
+      "contentGuide": {
+        "path": "docs/CONTENT_GUIDE.md",
+        "sha": "4056fc047fdedd1f34967935fd083165ba99841d"
+      },
+      "scheduledPrompt": {
+        "path": "docs/SCHEDULED_EDITOR_PROMPT.md",
+        "sha": "fe21144e4cb54b98f5e15828e0d9e7af14fdd902"
+      },
+      "editorialScript": {
+        "path": "scripts/editorial.py",
+        "sha": "5996ca5c8eae1b25950c349336d4d0f48067fe8c"
+      },
+      "feed": {
+        "path": "site/data/feed.json",
+        "sha": "7551f639272d5ec6ef264e6713e37802421d6af4"
+      },
+      "editorial": {
+        "path": "site/data/editorial.json",
+        "sha": "430ec5a47ff85d4eebd9fba101d40664fe97e769"
+      },
+      "status": {
+        "path": "site/data/status.json",
+        "sha": "08350e18646624fa723d53241c274636b6dc9c37"
+      }
+    },
+    "feed": {
+      "items": 800,
+      "news": 700,
+      "projects": 100,
+      "generatedAt": "2026-11-11T14:16:50+00:00"
+    },
+    "editorial": {
+      "items": 917,
+      "activeExact": 197,
+      "activeNews": 99,
+      "activeProjects": 98
+    },
+    "seen": {
+      "ids": 4398,
+      "sha": "a494fb6b7f9e7fee1cb3810d7dc06b566d9d48bd"
+    },
+    "status": {
+      "state": "ok",
+      "lastSuccessfulAt": "2026-11-11T14:16:50+00:00",
+      "collected": 393,
+      "sources": 26,
+      "sourcesOk": 26
+    },
+    "incoming": {
+      "files": 102,
+      "appearances": 1054,
+      "uniqueIdUrlPairs": 932,
+      "duplicateAppearances": 122,
+      "priorDeduplicatedSnapshot": {
+        "at": "2026-11-11T15:13+03:00",
+        "importedExact": 870,
+        "seenOnlyOutsideFeed": 62,
+        "activeUnimported": 0,
+        "idUrlMismatches": 0,
+        "orphans": 0,
+        "confirmedExpired": 0
+      },
+      "currentRescan": {
+        "all102JsonBlobsRead": true,
+        "allParsed": true,
+        "comparedIdAndUrlAgainstCurrentFeedAndEditorial": true,
+        "activeUnimported": 0,
+        "idUrlMismatches": 0,
+        "structuralErrors": 0
+      },
+      "note": "ملفات incoming على main لم تتغير في مقارنة main منذ لقطة 15:13؛ التغير اللاحق كان في feed/seen/status فقط. أرقام 870/62 هي تقسيم اللقطة السابقة وليست إعادة عدّ فريدة بعد تدوير التغذية."
+    }
+  },
+  "pr98": {
+    "url": "https://github.com/lm7md-ai/.-/pull/98",
+    "branch": "editorial/2026-11-10-0243-research-and-incoming",
+    "headSha": "1e5562c3b0a8c9ac36992a2e18d6aad237cde1c6",
+    "state": "open",
+    "mergeable": true,
+    "aheadBy": 47,
+    "behindBy": 3,
+    "changedFiles": 51,
+    "protectedFilesChanged": [],
+    "editorial": {
+      "mainItems": 917,
+      "prItems": 942,
+      "addedIds": 25,
+      "droppedIds": 0,
+      "changedExisting": 1,
+      "changedExistingId": "7c94eb734f17ebfcce",
+      "removedFieldsFromChangedRecord": [],
+      "activeExact": 211,
+      "activeNews": 111,
+      "activeProjects": 100
+    },
+    "incomingFiles": [
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+        "entries": 12
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-10-0846.json",
+        "entries": 2
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-10-2039-reconciled.json",
+        "entries": 14
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-10-2338.json",
+        "entries": 6
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-11-1144.json",
+        "entries": 3
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-11-1836.json",
+        "entries": 3
+      }
+    ],
+    "incomingSummary": {
+      "files": 6,
+      "appearances": 40,
+      "uniqueIdUrlPairs": 28,
+      "duplicateAppearances": 12,
+      "activeNew": 14,
+      "activeNewNews": 12,
+      "activeNewProjects": 2,
+      "alreadyImportedExact": 1,
+      "notInCurrentFeed": 13,
+      "seenOnly": 13,
+      "retainedAsHistoricalInPrEditorial": 11,
+      "pendingNotImported": 2,
+      "idUrlMismatches": 0,
+      "unseenOrphans": 0,
+      "confirmedExpired": 0,
+      "structuralErrors": 0
+    },
+    "pendingNotImported": [
+      {
+        "id": "a425346c085c7dcb99",
+        "title": "ألواح شمسية شبه شفافة تسمح بمرور الضوء اللازم للنباتات في تجربة زراعية",
+        "url": "https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet/",
+        "reason": "Seen-only؛ لم يعد موجودًا في Feed الحالي ولا في Editorial؛ لا يُستورد حتى يعود بمعرفه ورابطه الأصليين إلى Feed."
+      },
+      {
+        "id": "cec6ab6c90d6d9e9c1",
+        "title": "Zebkit يقدّم محرك Chromium كمكتبة يمكن تضمينها في التطبيقات الأصلية",
+        "url": "https://github.com/ikey4u/zebkit",
+        "reason": "Seen-only؛ غير موجود في Feed الحالي أو Editorial؛ لا يُستورد حتى يصبح نشطًا في Feed."
+      }
+    ],
+    "identityCollision": {
+      "historicalId": "7a99eca9b2ce14d9f5",
+      "activeId": "e0cbbf211a55e79f34",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "decision": "الاحتفاظ بالمعرفين كما هما دون alias أو إعادة توليد ID من العنوان."
+    }
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "researchDossier": true,
+      "publicationStatus": "research-only",
+      "currentVersion": "v0.1.8",
+      "note": "Seen-only خارج Feed وEditorial؛ أحدث إصدار v0.1.8، وصفحة Installation وDeveloper Guide وGitHub Releases كلها تعرض Latest v0.1.8. ملاحظات الإصدار تتضمن تغييرات ترقية كاسرة يجب مراجعتها.",
+      "documentationConsistency": {
+        "developerGuide": "v0.1.8",
+        "installationPage": "v0.1.8",
+        "githubLatestRelease": "v0.1.8",
+        "status": "consistent"
+      }
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "researchDossier": false,
+      "publicationStatus": "held-seen-only",
+      "note": "إعلان Canva الرسمي يؤكد الإتاحة العالمية وPublic API ودقة 2K وأكثر من 30 نسبة أبعاد وبنية تخطيط ثم rendering؛ ترتيب DesignArena ادعاء من Canva لا تقييم مستقل هنا."
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "researchDossier": false,
+      "publicationStatus": "held-seen-only",
+      "note": "الوثائق الرسمية الحالية لـInstinct وClaude Duet: حساب فردي/عائلي فقط، إصدار 8.12.42+، موافقة المستخدم، Login items في Personal/Private فقط، لا Passkeys أو shared vaults، والموافقة تنتهي بعد 30 يومًا."
+    }
+  ],
+  "sourceCorrections": [
+    {
+      "id": "d18ddd9c12e46dd96b",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "state": "needs-source-correction",
+      "reason": "رابط GitHub Issue قديم مغلق من 2022؛ لا يثبت حدثًا جديدًا."
+    },
+    {
+      "id": "e3e3a03bfc5be7aa43",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "state": "needs-original-source",
+      "reason": "كان رابط Google News وسيطًا في اللقطة السابقة؛ خرج الآن من Feed، ولم يُعثر على رابط ناشر أصلي يبرر إثراءه."
+    }
+  ],
+  "library": {
+    "historicalProjects": 68,
+    "nonArchived": 66,
+    "archived": 2,
+    "inCurrentProjectFeed": 12,
+    "researchOnly": 54,
+    "membershipUnverified": 1,
+    "ideasBefore": 518,
+    "helloAgentsAdded": 6,
+    "ideasCurrent": 524
+  },
+  "projects": {
+    "currentFeedProjects": 100,
+    "prEditorialCoverage": 100,
+    "newActiveProjectsInPr": [
+      "DevDocs",
+      "Hello-Agents"
+    ],
+    "previousEightMetricsRefreshed": true,
+    "projectRuntimeTests": "not_run"
+  },
+  "news": {
+    "activeNewNewsInPr": 12,
+    "newlySourceReviewedThisRun": 2,
+    "carriedForwardFromPriorReview": 10
+  },
+  "validation": {
+    "structuralEquivalent": {
+      "mainIncomingFilesParsed": 102,
+      "prIncomingFiles": 6,
+      "prIncomingErrors": 0
+    },
+    "officialCliValidateIncomingFiles": "not_run_individually",
+    "officialCiEditorialValidate": {
+      "runId": 43053338060,
+      "conclusion": "success",
+      "validatedEntries": 942
+    },
+    "localUnitTests": "not_run_no_local_checkout",
+    "ciUnitTests": {
+      "runId": 43053338060,
+      "command": "python -m unittest discover -s tests -v",
+      "tests": 30,
+      "result": "OK"
+    },
+    "javascriptChecks": "success",
+    "importCommand": "not_run_no_active_unimported_main_records; PR active additions already present in PR Editorial"
+  },
+  "publication": {
+    "mainPagesRunId": 43036906603,
+    "artifactId": 13862664074,
+    "conclusion": "success",
+    "artifactCounts": {
+      "editorial": 917,
+      "feed": 800,
+      "seen": 4398,
+      "status": "ok",
+      "sources": 26,
+      "sourcesSuccessful": 26
+    },
+    "artifactGitBlobShaMatchesMain": {
+      "editorial": true,
+      "feed": true,
+      "seen": true,
+      "status": true
+    },
+    "directPagesHttpFetch": "DisabledError",
+    "itemDetailBrowserOpen": "not_available",
+    "newsDetail": "https://lm7md-ai.github.io/.-/#item=10bdc73097cfd2386d",
+    "projectDetail": "https://lm7md-ai.github.io/.-/#item=ab84e19553c74c6e20"
+  },
+  "decision": {
+    "mergePr98": false,
+    "reason": "push to main invokes update-and-deploy.yml, which runs update_feed.py and commits feed.json, seen.json and status.json. This run leaves PR open to avoid changing the prohibited feed/seen files.",
+    "noCodeDesignWorkflowOrSettingsChanges": true
+  }
+}

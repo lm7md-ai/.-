@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-11T05:41:58+03:00",
+  "main": {
+    "sha": "83fecb11b1141646254105ff0752712523592d16",
+    "generatedAt": "2026-11-10T21:17:15Z",
+    "counts": {
+      "feed": 800,
+      "news": 700,
+      "projects": 100,
+      "editorial": 917,
+      "activeEditorial": 240,
+      "activeNews": 141,
+      "activeProjects": 99,
+      "historicalEditorial": 677,
+      "seenIds": 4211,
+      "seenTitles": 4047,
+      "status": "ok",
+      "sources": 26,
+      "sourcesOk": 24,
+      "sourcesEmpty": 2
+    }
+  },
+  "mainIncoming": {
+    "filesEnumerated": 102,
+    "occurrences": 1054,
+    "uniqueIdUrlPairs": 932,
+    "duplicateOccurrences": 122,
+    "importedExactPairs": 870,
+    "seenOnlyOutsideFeed": 62,
+    "activeExactNotImported": 0,
+    "sameIdDifferentUrl": 0,
+    "unseenOrphans": 0,
+    "confirmedExpired": 0,
+    "fullScanHashesUnchangedFromPreviousAudit": true,
+    "fullContentRescannedThisRun": false,
+    "previousFullScanReport": "editorial/pending/incoming-reconciliation-2026-11-10-2039.json",
+    "differentialRecheck": "editorial/pending/current-main-recheck-2026-11-11-0036.json"
+  },
+  "pr98": {
+    "state": "open",
+    "mergeable": true,
+    "base": "main",
+    "head": "b2e97e1bb6028718838aec56e952057c09e6dfaa",
+    "aheadBy": 29,
+    "behindBy": 1,
+    "changedFiles": 35,
+    "changedPathScope": [
+      "editorial/**",
+      "site/data/editorial.json"
+    ],
+    "merged": false
+  },
+  "prIncoming": {
+    "files": 4,
+    "occurrences": 34,
+    "uniqueIdUrlPairs": 22,
+    "duplicateOccurrences": 12,
+    "activeExactPairs": 12,
+    "alreadyInMainEditorial": 1,
+    "activeNewCandidates": 11,
+    "activeNewNews": 10,
+    "activeNewProjects": 1,
+    "staleButPreviouslyActive": 8,
+    "seenOnlyOutsideCurrentFeed": 2,
+    "idUrlMismatches": 0,
+    "orphans": 0,
+    "structuralEquivalent": "pass",
+    "recordsWithSchemaErrors": 0,
+    "activeNewIds": [
+      "caa9073cefb43725f1",
+      "a3bc8ca770f44f2d28",
+      "0eeaaf4c87a4398c95",
+      "126b111b5d436487e5",
+      "7fc88fbdaa8e97213d",
+      "0e9fb0eb84f13acffd",
+      "c7d3010a8bcc401c0c",
+      "a7b39cb0698327aa7f",
+      "5553fe020c93d3c2ae",
+      "1d8889c9661cfe547b",
+      "d62e152dace4589504"
+    ]
+  },
+  "specialRecords": {
+    "NVIDIA OpenShell": {
+      "id": "940ec4695c1e241c2f",
+      "feed": false,
+      "mainEditorial": false,
+      "prEditorial": false,
+      "seen": true,
+      "researchDossier": true,
+      "publication": "research-only",
+      "officialSource": "https://docs.nvidia.com/openshell/latest/about/installation/",
+      "latestDocsVersion": "v0.1.8"
+    },
+    "Canva Craft": {
+      "id": "317abcdd1b20728a7e",
+      "feed": false,
+      "mainEditorial": false,
+      "prEditorial": false,
+      "seen": true,
+      "publication": "seen-only",
+      "officialSource": "https://www.canva.com/newsroom/news/canva-craft/"
+    },
+    "1Password agent sign-in": {
+      "id": "662e68277c6361dd4b",
+      "feed": false,
+      "mainEditorial": false,
+      "prEditorial": false,
+      "seen": true,
+      "publication": "seen-only",
+      "officialSource": "https://support.1password.com/1password-for-agents/"
+    }
+  },
+  "holds": [
+    {
+      "id": "d18ddd9c12e46dd96b",
+      "reason": "seen-only; historical closed 2022 issue; needs current primary evidence"
+    },
+    {
+      "id": "e3e3a03bfc5be7aa43",
+      "reason": "active feed item uses Google News intermediary; needs publisher URL and publication date"
+    },
+    {
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "historicalId": "7a99eca9b2ce14d9f5",
+      "activeId": "e0cbbf211a55e79f34",
+      "reason": "preserve both IDs; no alias or title-derived remap"
+    }
+  ],
+  "library": {
+    "totalProjects": 67,
+    "nonArchived": 65,
+    "archived": 2,
+    "feedProjectsCoveredOnPr": 100,
+    "previousEightAllArchivedFalse": true,
+    "previousEightMetricsMeasuredAt": "2026-11-10T23:38:46+03:00",
+    "newResearchOnlyProjectsThisRun": 0
+  },
+  "tests": {
+    "prRunId": 42948393467,
+    "conclusion": "success",
+    "pythonTests": 30,
+    "editorialEntriesValidated": 936,
+    "javascriptChecks": "success",
+    "incomingOfficialCliExecuted": false,
+    "localUnittestExecuted": false,
+    "commandsNotExecuted": [
+      "python scripts/editorial.py validate <each incoming file>",
+      "python scripts/editorial.py import <approved active batch>",
+      "python -m unittest discover -s tests -v"
+    ],
+    "prRunHead": "b2e97e1bb6028718838aec56e952057c09e6dfaa"
+  },
+  "deployment": {
+    "runId": 42903504532,
+    "conclusion": "success",
+    "artifactId": 13803119125,
+    "artifactCreatedAt": "2026-11-10T21:17:36Z",
+    "artifactFilesMatchedMainBlobSha": 4,
+    "artifactFeedItems": 800,
+    "artifactEditorialEntries": 917,
+    "artifactSeenIds": 4211,
+    "artifactStatus": "ok",
+    "livePagesHttpCheck": "DisabledError"
+  },
+  "decision": {
+    "merge": false,
+    "reason": "The existing push-to-main workflow runs scripts/update_feed.py and stages feed.json, seen.json, and status.json before Pages deployment; merging would risk modifying protected files.",
+    "newNewsAddedThisRun": 0,
+    "newProjectsAddedThisRun": 0,
+    "existingActiveNewsWaitingInPr": 10,
+    "existingProjectWaitingInPr": 1
+  }
+}

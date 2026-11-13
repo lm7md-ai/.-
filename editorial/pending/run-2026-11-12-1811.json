@@ -1,0 +1,472 @@
+{
+  "version": 1,
+  "kind": "nabdh-run-reconciliation",
+  "reviewedAt": "2026-11-12T18:11:49+03:00",
+  "main": {
+    "sha": "32c21fedf510fa24eccea0e44a80f57cb6e6db58",
+    "feedItems": 800,
+    "feedNews": 700,
+    "feedProjects": 100,
+    "editorialEntries": 917,
+    "activeEditorial": 182,
+    "activeNews": 84,
+    "activeProjects": 98,
+    "seenIds": 4546,
+    "generatedAt": "2026-11-12T07:06:45+00:00"
+  },
+  "incomingMain": {
+    "files": 102,
+    "occurrences": 1054,
+    "uniqueIdUrlPairs": 932,
+    "duplicateOccurrences": 122,
+    "importedExactPairs": 870,
+    "seenOnlyOutsideFeed": 62,
+    "activeExactNotImported": 0,
+    "idUrlMismatches": 0,
+    "unseenOrphans": 0,
+    "confirmedExpired": 0,
+    "jsonParseErrors": 0,
+    "structurallyValidFiles": 102,
+    "hashesUnchangedFromPreviousFullScan": true
+  },
+  "incomingPR": {
+    "files": 10,
+    "occurrences": 64,
+    "uniqueIdUrlPairs": 52,
+    "duplicateOccurrences": 12,
+    "alreadyImportedExactPairs": 3,
+    "activeExactNewPairs": 36,
+    "activeNews": 34,
+    "activeProjects": 2,
+    "outOfFeedSeenOnly": 13,
+    "idUrlMismatches": 0,
+    "unseenOrphans": 0
+  },
+  "decision": {
+    "selectedNews": 12,
+    "selectedProjects": 2,
+    "importedThisCycle": 14,
+    "deferredActiveNews": 22,
+    "outOfFeedRecords": 18,
+    "expiryConfirmed": 0,
+    "note": "Out-of-feed means absent from current feed and present in Seen; it does not prove expiry. Exact active records beyond the 12-news cap remain in incoming and are not discarded."
+  },
+  "selectedIds": [
+    "69d4d9d74efa01629a",
+    "02bfed5e7aa817ea9d",
+    "b21fa54b837dba6b35",
+    "cb93d68b445c05b0e3",
+    "f0fc30384fec2ecc4d",
+    "3cffec5790b8f2e218",
+    "19b4fcb1faac9c9bdb",
+    "d62e152dace4589504",
+    "1d584b01bcf30b6f44",
+    "fff18d7edb4b918233",
+    "bb27561db5d10d5000",
+    "d0e5cfeb79c6e58571",
+    "0eeaaf4c87a4398c95",
+    "ee7e0e584b2626a327"
+  ],
+  "deferredActive": [
+    {
+      "id": "caa9073cefb43725f1",
+      "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+      "titleAr": "OpenAI تتيح ChatGPT Enterprise عبر AWS Marketplace",
+      "basis": "article",
+      "kind": "news",
+      "classification": "exact-active-match-deferred-by-12-news-cycle-cap"
+    },
+    {
+      "id": "a3bc8ca770f44f2d28",
+      "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/",
+      "titleAr": "Anthropic تحدّث Mythos وFable إلى الإصدار 5.2 مع تحسينات معلنة",
+      "basis": "article",
+      "kind": "news",
+      "classification": "exact-active-match-deferred-by-12-news-cycle-cap"
+    },
+    {
+      "id": "126b111b5d436487e5",
+      "url": "https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/",
+      "titleAr": "Adobe توسّع Creative Cloud بوكلاء ذكاء اصطناعي وتكاملات MCP محلية",
+      "basis": "article",
+      "kind": "news",
+      "classification": "exact-active-match-deferred-by-12-news-cycle-cap"
+    },
+    {
+      "id": "7fc88fbdaa8e97213d",
+      "url": "https://techcrunch.com/2026/11/10/cyberattacks-threaten-to-make-open-source-ai-a-little-less-open-hugging-face-exec-warns/",
+      "titleAr": "تحذيرات من أن الهجمات على منصات الذكاء الاصطناعي المفتوحة قد تشدد شروط المشاركة",
+      "basis": "article",
+      "kind": "news",
+      "classification": "exact-active-match-deferred-by-12-news-cycle-cap"
+    },
+    {
+      "id": "5553fe020c93d3c2ae",
+      "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/",
+      "titleAr": "Anthropic تعلن بدء الجولة الترويجية لطرح عام أولي مقترح",
+      "basis": "article",
+      "kind": "news",
+      "classification": "exact-active-match-deferred-by-12-news-cycle-cap"
+    },
+    {
+      "id": "ae543fdc68f7cb2628",
+      "url": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
+      "titleAr": "نيويورك تفتح تسجيل مطوري النماذج المتقدمة قبل بدء قانون RAISE في 2027",
+      "basis": "article",
+      "kind": "news",
+      "classification": "exact-active-match-deferred-by-12-news-cycle-cap"
+    },
+    {
+      "id": "1b0c05cd97a311af5c",
+      "url": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/",
+      "titleAr": "Oura تتفق على الاستحواذ على Counsel Health مقابل 625 مليون دولار",
+      "basis": "article",
+      "kind": "news",
+      "classification": "exact-active-match-deferred-by-12-news-cycle-cap"
+    },
+    {
+      "id": "35f9d4a8ad49bd077c",
+      "url": "https://www.wired.com/story/duolingo-strava-and-ticketmaster-are-all-caught-up-in-eus-new-digital-fairness-rules/",
+      "titleAr": "المفوضية الأوروبية تقترح قانون العدالة الرقمية لمواجهة الأنماط المضللة والاشتراكات المعقدة",
+      "basis": "article",
+      "kind": "news",
+      "classification": "exact-active-match-deferred-by-12-news-cycle-cap"
+    },
+    {
+      "id": "1251f00274bede43be",
+      "url": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai",
+      "titleAr": "Adobe تعرض عشرة نماذج بحثية في MAX 2026 لتحرير الفيديو والصوت والصور",
+      "basis": "article",
+      "kind": "news",
+      "classification": "exact-active-match-deferred-by-12-news-cycle-cap"
+    },
+    {
+      "id": "14645f9d816239f1eb",
+      "url": "https://aitnews.com/2026/11/11/%d8%b3%d9%8a%d8%ac%d9%8a%d8%aa-%d8%aa%d8%b7%d9%84%d9%82-firecuda-forge-%d8%a8%d8%aa%d8%ae%d8%b2%d9%8a%d9%86-%d9%85%d8%a4%d9%82%d8%aa-%d8%b0%d9%83%d9%8a-%d9%88%d8%b3%d8%b9%d8%a9-%d8%aa%d8%b5%d9%84/",
+      "titleAr": "Seagate تطلق FireCuda Forge بسعتي 8 و20 تيرابايت مع تخزين مؤقت ذكي",
+      "basis": "article",
+      "kind": "news",
+      "classification": "exact-active-match-deferred-by-12-news-cycle-cap"
+    },
+    {
+      "id": "f63659155352269baf",
+      "url": "https://arxiv.org/abs/2611.12933",
+      "titleAr": "بحث يدرس فرقًا بشرية ووكلاء تنفذ تجارب أشعة سينية ذاتية مع توثيق القرارات",
+      "basis": "metadata",
+      "kind": "news",
+      "classification": "exact-active-match-deferred-by-12-news-cycle-cap"
+    },
+    {
+      "id": "70b6e0e37bdecc39c4",
+      "url": "https://arxiv.org/abs/2611.12934",
+      "titleAr": "EarthRecord يختبر الوكلاء متعددة الوسائط على صور أقمار صناعية تمتد أربعة عقود",
+      "basis": "metadata",
+      "kind": "news",
+      "classification": "exact-active-match-deferred-by-12-news-cycle-cap"
+    },
+    {
+      "id": "e5cd4cd10b4ff8cfa7",
+      "url": "https://arxiv.org/abs/2611.12935",
+      "titleAr": "TopicScope يراقب تغيّر موضوع النص أثناء التوليد باستخدام ميزات المحولات التلقائية المتناثرة",
+      "basis": "metadata",
+      "kind": "news",
+      "classification": "exact-active-match-deferred-by-12-news-cycle-cap"
+    },
+    {
+      "id": "65b96c238445cdedc9",
+      "url": "https://openai.com/index/gilbert-tobin-sam-nickless",
+      "titleAr": "مكتب Gilbert + Tobin ينتقل من تجارب الذكاء الاصطناعي إلى سير عمل قانوني متعدد الخطوات",
+      "basis": "article",
+      "kind": "news",
+      "classification": "exact-active-match-deferred-by-12-news-cycle-cap"
+    },
+    {
+      "id": "b87487ef036547770a",
+      "url": "https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news/",
+      "titleAr": "تقرير Reuters Institute: استخدام الذكاء الاصطناعي يتوسع كمصدر للمعلومات لكن تقبّل صناعة الأخبار آليًا ما زال منخفضًا",
+      "basis": "article",
+      "kind": "news",
+      "classification": "exact-active-match-deferred-by-12-news-cycle-cap"
+    },
+    {
+      "id": "312cc2672ec7b82778",
+      "url": "https://www.githubstatus.com/incidents/dvy0t3mvh1lg",
+      "titleAr": "GitHub يعيد Actions وPages وCopilot وWebhooks بعد عطل متعدد الخدمات",
+      "basis": "metadata",
+      "kind": "news",
+      "classification": "exact-active-match-deferred-by-12-news-cycle-cap"
+    },
+    {
+      "id": "b8c7de61a30502becd",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB4N3hSbDJabVg4WnB4VUJRVVBDZDZrQnhnTUJhYjJLanNIclRwMmRWN2lEeFFuTnFVUzVpQWRPRVpjSVR2eERFdGpDSUZfQXRRdnfSAVRBVV95cUxPNzVPT21fOEYxT2pMdDFGNVkyMHlUSUtLWWVaaWNTLTRTQWNya3RTRWhocWpLZjJVaHdUS3A4c0ZoalRvMDgwS09iazhiYzZiX3RNQTE?oc=5",
+      "titleAr": "دراسة سدايا تضع السعودية ثالثة عالميًا في نمو كفاءات الذكاء الاصطناعي",
+      "basis": "article",
+      "kind": "news",
+      "classification": "exact-active-match-deferred-by-12-news-cycle-cap"
+    },
+    {
+      "id": "1df6a00742e99b5a00",
+      "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+      "titleAr": "United Airlines تقيّد وكلاء الذكاء الاصطناعي الخارجيين من إجراء الحجوزات دون إذن",
+      "basis": "article",
+      "kind": "news",
+      "classification": "exact-active-match-deferred-by-12-news-cycle-cap"
+    },
+    {
+      "id": "3b53bf6090ab9868ec",
+      "url": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
+      "titleAr": "OpenAI تستحوذ على Odessia وتستقطب مؤسس وكيل السفر",
+      "basis": "article",
+      "kind": "news",
+      "classification": "exact-active-match-deferred-by-12-news-cycle-cap"
+    },
+    {
+      "id": "3ddc5cc5a5b08ed604",
+      "url": "https://www.theverge.com/tech/1031601/home-assistant-connect-aux-2-hands-on",
+      "titleAr": "Home Assistant تطلق Connect AUX-2 لربط الأجهزة التقليدية بالمنزل الذكي",
+      "basis": "article",
+      "kind": "news",
+      "classification": "exact-active-match-deferred-by-12-news-cycle-cap"
+    },
+    {
+      "id": "1385baee7258ede721",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5yU0dvLVdFS3VDbGFhalpycWxjRWJRVTVxZzlWMUZQZFdiaTNUVG02VzdkS1F2c3J1azY3OTdaRWdIRkdpbGc?oc=5",
+      "titleAr": "تقرير IMD 2026 يضع السعودية في المرتبة الثانية في مؤشرين لأمن الذكاء الاصطناعي",
+      "basis": "article",
+      "kind": "news",
+      "classification": "exact-active-match-deferred-by-12-news-cycle-cap"
+    },
+    {
+      "id": "b0cee948b440301e45",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1UU2tHemhQOGVzakpWWmxJQ0dYZFVaX3p6c1pJM2xSc19jV0JRWHpYTWVya0xCcUdZNTRrUHlHakxLTUE0RVZTNlBud0ZvQ3V0RnBoMUdFVWgtN28?oc=5",
+      "titleAr": "إعلان وزراء خارجية مجموعة السبع يناقش فرص النماذج المتقدمة ومخاطر إساءة استخدامها",
+      "basis": "article",
+      "kind": "news",
+      "classification": "exact-active-match-deferred-by-12-news-cycle-cap"
+    }
+  ],
+  "outOfFeed": [
+    {
+      "id": "86708699833d3a9796",
+      "url": "https://research.meta.ai/blog/muse-ember",
+      "titleAr": "ميتا تطلق Muse Ember كنموذج صغير للمهام المتكررة داخل الوكلاء",
+      "basis": "article",
+      "seen": true,
+      "classification": "seen-only-outside-current-feed",
+      "expiryConfirmed": false
+    },
+    {
+      "id": "5ef93d9981a0db1c3c",
+      "url": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
+      "titleAr": "آبل توسّع حدود استخدام بعض ميزات Apple Intelligence بحزم إضافية",
+      "basis": "metadata",
+      "seen": true,
+      "classification": "seen-only-outside-current-feed",
+      "expiryConfirmed": false
+    },
+    {
+      "id": "12c83389e580dec71d",
+      "url": "https://www.eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim/",
+      "titleAr": "DeepX تعلن اكتمال تصميم DX-M2 وتستهدف تشغيل نماذج كبيرة على أجهزة الطرف",
+      "basis": "article",
+      "seen": true,
+      "classification": "seen-only-outside-current-feed",
+      "expiryConfirmed": false
+    },
+    {
+      "id": "a8ac24a5fed69e7112",
+      "url": "https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy",
+      "titleAr": "كندا تطلق Real-Time Rail للمدفوعات الفورية على مدار الساعة",
+      "basis": "article",
+      "seen": true,
+      "classification": "seen-only-outside-current-feed",
+      "expiryConfirmed": false
+    },
+    {
+      "id": "0a2b694e15caf809f8",
+      "url": "https://www.cnx-software.com/2026/11/03/when-will-this-stop-the-raspberry-pi-5-16gb-sbc-now-sells-for-385/",
+      "titleAr": "ارتفاع سعر نسخة 16GB من Raspberry Pi 5 بمقدار 80 دولارًا",
+      "basis": "article",
+      "seen": true,
+      "classification": "seen-only-outside-current-feed",
+      "expiryConfirmed": false
+    },
+    {
+      "id": "fb9de46b88c3faa779",
+      "url": "https://e-means.github.io/",
+      "titleAr": "ورقة e-means تقترح تسريع تجميع k-means بتحديثات المتوسط المتحرك الأسي",
+      "basis": "metadata",
+      "seen": true,
+      "classification": "seen-only-outside-current-feed",
+      "expiryConfirmed": false
+    },
+    {
+      "id": "3c86ca6a06f60e03f0",
+      "url": "https://postalpro.usps.com/zcb",
+      "titleAr": "USPS تطرح خرائط حدود ZIP Code مشتقة من بيانات عناوين التسليم",
+      "basis": "article",
+      "seen": true,
+      "classification": "seen-only-outside-current-feed",
+      "expiryConfirmed": false
+    },
+    {
+      "id": "1addf27c71831a1839",
+      "url": "https://yappologistic.github.io/CUI/",
+      "titleAr": "CUI يقدم مكتبة واجهات C99 فورية متعددة الأنظمة دون اعتماديات خارجية",
+      "basis": "readme",
+      "seen": true,
+      "classification": "seen-only-outside-current-feed",
+      "expiryConfirmed": false
+    },
+    {
+      "id": "0e9fb0eb84f13acffd",
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "titleAr": "Google DeepMind تكشف AlphaProof Code للتحقق الشكلي من تنفيذ بروتوكول Signal",
+      "basis": "article",
+      "seen": true,
+      "classification": "seen-only-outside-current-feed",
+      "expiryConfirmed": false
+    },
+    {
+      "id": "c7d3010a8bcc401c0c",
+      "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
+      "titleAr": "Notion تكشف تفاصيل أثر حادثة Fireworks AI على بعض مساحات العمل",
+      "basis": "article",
+      "seen": true,
+      "classification": "seen-only-outside-current-feed",
+      "expiryConfirmed": false
+    },
+    {
+      "id": "a7b39cb0698327aa7f",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/",
+      "titleAr": "Google توسّع الجيل الثامن من TPU بنظامي 8tx و8i Max",
+      "basis": "article",
+      "seen": true,
+      "classification": "seen-only-outside-current-feed",
+      "expiryConfirmed": false
+    },
+    {
+      "id": "1d8889c9661cfe547b",
+      "url": "https://www.theverge.com/tech/1030601/ring-drone-cam-hands-on-price-release-date-ai-pilot",
+      "titleAr": "Ring تعلن كاميرا Drone Cam وروبوت Rover ضمن فئة Ring Robotics",
+      "basis": "article",
+      "seen": true,
+      "classification": "seen-only-outside-current-feed",
+      "expiryConfirmed": false
+    },
+    {
+      "id": "31699ba3bf57a08cdb",
+      "url": "https://tendrils.co/blog/2026-11-10/30m-raised",
+      "titleAr": "Tendrils تعلن جمع 30 مليون دولار لتطوير معمارية معالجات موازية ولغة Vine",
+      "basis": "article",
+      "seen": true,
+      "classification": "seen-only-outside-current-feed",
+      "expiryConfirmed": false
+    },
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "titleAr": "OpenShell من NVIDIA: بيئات معزولة للوكلاء بصلاحيات قابلة للمراجعة",
+      "seen": true,
+      "researchDossier": true,
+      "publication": "research-only"
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "titleAr": "Canva تعلن Craft لتوليد صور يمكن تحويلها إلى تصاميم متعددة الطبقات",
+      "seen": true,
+      "researchDossier": false,
+      "publication": "seen-only"
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "titleAr": "1Password تعرض تفويض دخول للوكلاء دون إظهار كلمات المرور",
+      "seen": true,
+      "researchDossier": false,
+      "publication": "seen-only"
+    },
+    {
+      "name": "Agrivoltaics",
+      "id": "a425346c085c7dcb99",
+      "url": "https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet/",
+      "titleAr": "ألواح شمسية شبه شفافة تسمح بمرور الضوء اللازم للنباتات في تجربة زراعية",
+      "seen": true,
+      "researchDossier": false,
+      "publication": "seen-only"
+    },
+    {
+      "name": "Zebkit",
+      "id": "cec6ab6c90d6d9e9c1",
+      "url": "https://github.com/ikey4u/zebkit",
+      "titleAr": "Zebkit يقدّم محرك Chromium كمكتبة يمكن تضمينها في التطبيقات الأصلية",
+      "seen": true,
+      "researchDossier": true,
+      "publication": "research-only"
+    }
+  ],
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "titleAr": "OpenShell من NVIDIA: بيئات معزولة للوكلاء بصلاحيات قابلة للمراجعة",
+      "seen": true,
+      "researchDossier": true,
+      "publication": "research-only"
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "titleAr": "Canva تعلن Craft لتوليد صور يمكن تحويلها إلى تصاميم متعددة الطبقات",
+      "seen": true,
+      "researchDossier": false,
+      "publication": "seen-only"
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "titleAr": "1Password تعرض تفويض دخول للوكلاء دون إظهار كلمات المرور",
+      "seen": true,
+      "researchDossier": false,
+      "publication": "seen-only"
+    },
+    {
+      "name": "Agrivoltaics",
+      "id": "a425346c085c7dcb99",
+      "url": "https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet/",
+      "titleAr": "ألواح شمسية شبه شفافة تسمح بمرور الضوء اللازم للنباتات في تجربة زراعية",
+      "seen": true,
+      "researchDossier": false,
+      "publication": "seen-only"
+    },
+    {
+      "name": "Zebkit",
+      "id": "cec6ab6c90d6d9e9c1",
+      "url": "https://github.com/ikey4u/zebkit",
+      "titleAr": "Zebkit يقدّم محرك Chromium كمكتبة يمكن تضمينها في التطبيقات الأصلية",
+      "seen": true,
+      "researchDossier": true,
+      "publication": "research-only"
+    }
+  ],
+  "localCommandsNotExecuted": [
+    "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-11-12-1811.json",
+    "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-11-12-1811.json",
+    "python -m unittest discover -s tests -v"
+  ],
+  "structuralEquivalent": {
+    "incoming": "pass",
+    "finalEditorial": "pass",
+    "mainEntriesPreserved": 917,
+    "selectedIdUrlMatches": 14,
+    "proposalSchemas": "pass"
+  },
+  "mergeConstraint": "PR #98 remains unmerged because the push-to-main workflow runs update_feed.py and can write feed.json and seen.json; no workflow or settings changes are allowed."
+}

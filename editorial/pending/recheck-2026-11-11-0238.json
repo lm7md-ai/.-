@@ -1,0 +1,424 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-11T02:38:53+03:00",
+  "repository": "lm7md-ai/.-",
+  "mainSha": "83fecb11b1141646254105ff0752712523592d16",
+  "pr": {
+    "number": 98,
+    "headSha": "d28e47e45b4c68aad60a4701f48f05356a7a0241",
+    "baseSha": "5f9e9b980f51c2e3372e75dc6aed5b2884b55234",
+    "aheadBy": 27,
+    "behindBy": 1
+  },
+  "mainCounts": {
+    "feed": 800,
+    "news": 700,
+    "projects": 100,
+    "generatedAt": "2026-11-10T21:17:15+00:00",
+    "editorial": 917,
+    "activeEditorial": 240,
+    "activeNews": 141,
+    "activeProjects": 99,
+    "historicalEditorial": 677,
+    "seenIds": 4211,
+    "seenTitles": 4047
+  },
+  "prCounts": {
+    "editorial": 936,
+    "activeEditorial": 251,
+    "activeNews": 151,
+    "activeProjects": 100,
+    "mainIdsPreserved": true,
+    "mainIdsMissing": 0,
+    "lostMainFields": 0
+  },
+  "mainIncomingAudit": {
+    "files": 102,
+    "occurrences": 1054,
+    "uniqueIdUrlPairs": 932,
+    "duplicateOccurrences": 122,
+    "exactImportedPairs": 870,
+    "seenOnlyOutsideFeed": 62,
+    "activeExactNotImported": 0,
+    "sameIdDifferentUrl": 0,
+    "unseenOrphans": 0,
+    "confirmedExpired": 0,
+    "latestDifferential": "All 102 file hashes unchanged from the previous full scan; current Feed delta 85 added/85 dropped; none of the 62 seen-only pairs became active.",
+    "note": "Not a fresh field-by-field rerun of all 102 main files in this cycle."
+  },
+  "prIncoming": {
+    "files": [
+      {
+        "file": "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+        "records": 12,
+        "errors": 0
+      },
+      {
+        "file": "editorial/incoming/nabdh-editorial-2026-11-10-0846.json",
+        "records": 2,
+        "errors": 0
+      },
+      {
+        "file": "editorial/incoming/nabdh-editorial-2026-11-10-2039-reconciled.json",
+        "records": 14,
+        "errors": 0
+      },
+      {
+        "file": "editorial/incoming/nabdh-editorial-2026-11-10-2338.json",
+        "records": 6,
+        "errors": 0
+      }
+    ],
+    "occurrences": 34,
+    "uniqueIdUrlPairs": 22,
+    "duplicateOccurrences": 12,
+    "activeExactPairs": 12,
+    "alreadyInMainEditorial": 1,
+    "activeNewCandidates": 11,
+    "activeNewNews": 10,
+    "activeNewProjects": 1,
+    "seenOnlyOutsideCurrentFeed": 10,
+    "previouslyActiveButNowHistorical": 8,
+    "neverInOldOrCurrentFeed": 2,
+    "idUrlMismatches": 0,
+    "orphans": 0,
+    "structuralErrors": 0,
+    "activeCandidates": [
+      {
+        "id": "caa9073cefb43725f1",
+        "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+        "titleAr": "OpenAI تتيح ChatGPT Enterprise عبر AWS Marketplace",
+        "kind": "news",
+        "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+        "basis": "article",
+        "currentFeedMatch": true,
+        "mainEditorialMatch": false,
+        "prEditorialMatch": true,
+        "decision": "already present in PR editorial; not published to main"
+      },
+      {
+        "id": "a3bc8ca770f44f2d28",
+        "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/",
+        "titleAr": "Anthropic تحدّث Mythos وFable إلى الإصدار 5.2 مع تحسينات معلنة",
+        "kind": "news",
+        "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+        "basis": "article",
+        "currentFeedMatch": true,
+        "mainEditorialMatch": false,
+        "prEditorialMatch": true,
+        "decision": "already present in PR editorial; not published to main"
+      },
+      {
+        "id": "0eeaaf4c87a4398c95",
+        "url": "https://github.com/freeCodeCamp/devdocs",
+        "titleAr": "DevDocs يجمع توثيق واجهات البرمجة في متصفح واحد يعمل دون اتصال",
+        "kind": "project",
+        "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-0846.json",
+        "basis": "readme",
+        "currentFeedMatch": true,
+        "mainEditorialMatch": false,
+        "prEditorialMatch": true,
+        "decision": "already present in PR editorial; not published to main"
+      },
+      {
+        "id": "126b111b5d436487e5",
+        "url": "https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/",
+        "titleAr": "Adobe توسّع Creative Cloud بوكلاء ذكاء اصطناعي وتكاملات MCP محلية",
+        "kind": "news",
+        "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-2039-reconciled.json",
+        "basis": "article",
+        "currentFeedMatch": true,
+        "mainEditorialMatch": false,
+        "prEditorialMatch": true,
+        "decision": "already present in PR editorial; not published to main"
+      },
+      {
+        "id": "7fc88fbdaa8e97213d",
+        "url": "https://techcrunch.com/2026/11/10/cyberattacks-threaten-to-make-open-source-ai-a-little-less-open-hugging-face-exec-warns/",
+        "titleAr": "تحذيرات من أن الهجمات على منصات الذكاء الاصطناعي المفتوحة قد تشدد شروط المشاركة",
+        "kind": "news",
+        "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-2039-reconciled.json",
+        "basis": "article",
+        "currentFeedMatch": true,
+        "mainEditorialMatch": false,
+        "prEditorialMatch": true,
+        "decision": "already present in PR editorial; not published to main"
+      },
+      {
+        "id": "0e9fb0eb84f13acffd",
+        "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+        "titleAr": "Google DeepMind تكشف AlphaProof Code للتحقق الشكلي من تنفيذ بروتوكول Signal",
+        "kind": "news",
+        "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-2338.json",
+        "basis": "article",
+        "currentFeedMatch": true,
+        "mainEditorialMatch": false,
+        "prEditorialMatch": true,
+        "decision": "already present in PR editorial; not published to main"
+      },
+      {
+        "id": "c7d3010a8bcc401c0c",
+        "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
+        "titleAr": "Notion تكشف تفاصيل أثر حادثة Fireworks AI على بعض مساحات العمل",
+        "kind": "news",
+        "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-2338.json",
+        "basis": "article",
+        "currentFeedMatch": true,
+        "mainEditorialMatch": false,
+        "prEditorialMatch": true,
+        "decision": "already present in PR editorial; not published to main"
+      },
+      {
+        "id": "a7b39cb0698327aa7f",
+        "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/",
+        "titleAr": "Google توسّع الجيل الثامن من TPU بنظامي 8tx و8i Max",
+        "kind": "news",
+        "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-2338.json",
+        "basis": "article",
+        "currentFeedMatch": true,
+        "mainEditorialMatch": false,
+        "prEditorialMatch": true,
+        "decision": "already present in PR editorial; not published to main"
+      },
+      {
+        "id": "5553fe020c93d3c2ae",
+        "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/",
+        "titleAr": "Anthropic تعلن بدء الجولة الترويجية لطرح عام أولي مقترح",
+        "kind": "news",
+        "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-2338.json",
+        "basis": "article",
+        "currentFeedMatch": true,
+        "mainEditorialMatch": false,
+        "prEditorialMatch": true,
+        "decision": "already present in PR editorial; not published to main"
+      },
+      {
+        "id": "1d8889c9661cfe547b",
+        "url": "https://www.theverge.com/tech/1030601/ring-drone-cam-hands-on-price-release-date-ai-pilot",
+        "titleAr": "Ring تعلن كاميرا Drone Cam وروبوت Rover ضمن فئة Ring Robotics",
+        "kind": "news",
+        "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-2338.json",
+        "basis": "article",
+        "currentFeedMatch": true,
+        "mainEditorialMatch": false,
+        "prEditorialMatch": true,
+        "decision": "already present in PR editorial; not published to main"
+      },
+      {
+        "id": "d62e152dace4589504",
+        "url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxPNkNBR3pQRFJfaTVSQjJZMEViQUxmVnNnU1lOeXRoWHdrWVA2SmFpeXNBQkFCcTduZkg3SGpwOGxLYmZ5WGg2SXZCYi1ocUFBZWNEUzEwV2llU24wc0tjYnRnWndhemxwdEVWM09jRlJaa2dOb1h2T3pqQXpDWWdGLWFKOERLaUlfMGo3NnB0LUxlZHNlMll3ZlQ3eVhFYzhneUh1andLRnBDaGNZVV9Da3hHeDBuVS1wV2kwY1JOXzlTUDJ0OVJZeW9jRXN4eHhFanFvQkVuc1dDVkRvME1Fel9YemFmalczdGIxYUZicnBBRDNycmNSWDczRXhRTWE1amt2aU9RaEZ3NVJwN2NtQVNOX2NjMS1WblYxcEJwRFpVUUdKcFl2NW9ENVUwUHl0elI2OFoxcEJiRWt6YkFBNjdpYzk5OGo4am5r?oc=5",
+        "titleAr": "تمويل سعودي يصل إلى 2.5 مليار ريال لدعم حوسبة ومراكز بيانات HUMAIN",
+        "kind": "news",
+        "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-2338.json",
+        "basis": "article",
+        "currentFeedMatch": true,
+        "mainEditorialMatch": false,
+        "prEditorialMatch": true,
+        "decision": "already present in PR editorial; not published to main"
+      }
+    ],
+    "pendingRecords": [
+      {
+        "id": "86708699833d3a9796",
+        "url": "https://research.meta.ai/blog/muse-ember",
+        "titleAr": "ميتا تطلق Muse Ember كنموذج صغير للمهام المتكررة داخل الوكلاء",
+        "kind": null,
+        "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+        "currentFeedMatch": false,
+        "mainEditorialMatch": false,
+        "prEditorialMatch": true,
+        "seen": true,
+        "previousFeedMatch": true,
+        "classification": "historical_after_feed_rotation",
+        "confirmedExpired": false,
+        "decision": "hold; do not import against current feed; retain original id/url; no title-derived identity"
+      },
+      {
+        "id": "5ef93d9981a0db1c3c",
+        "url": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
+        "titleAr": "آبل توسّع حدود استخدام بعض ميزات Apple Intelligence بحزم إضافية",
+        "kind": null,
+        "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+        "currentFeedMatch": false,
+        "mainEditorialMatch": false,
+        "prEditorialMatch": true,
+        "seen": true,
+        "previousFeedMatch": true,
+        "classification": "historical_after_feed_rotation",
+        "confirmedExpired": false,
+        "decision": "hold; do not import against current feed; retain original id/url; no title-derived identity"
+      },
+      {
+        "id": "12c83389e580dec71d",
+        "url": "https://www.eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim/",
+        "titleAr": "DeepX تعلن اكتمال تصميم DX-M2 وتستهدف تشغيل نماذج كبيرة على أجهزة الطرف",
+        "kind": null,
+        "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+        "currentFeedMatch": false,
+        "mainEditorialMatch": false,
+        "prEditorialMatch": true,
+        "seen": true,
+        "previousFeedMatch": true,
+        "classification": "historical_after_feed_rotation",
+        "confirmedExpired": false,
+        "decision": "hold; do not import against current feed; retain original id/url; no title-derived identity"
+      },
+      {
+        "id": "a8ac24a5fed69e7112",
+        "url": "https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy",
+        "titleAr": "كندا تطلق Real-Time Rail للمدفوعات الفورية على مدار الساعة",
+        "kind": null,
+        "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+        "currentFeedMatch": false,
+        "mainEditorialMatch": false,
+        "prEditorialMatch": true,
+        "seen": true,
+        "previousFeedMatch": true,
+        "classification": "historical_after_feed_rotation",
+        "confirmedExpired": false,
+        "decision": "hold; do not import against current feed; retain original id/url; no title-derived identity"
+      },
+      {
+        "id": "a425346c085c7dcb99",
+        "url": "https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet/",
+        "titleAr": "ألواح شمسية شبه شفافة تسمح بمرور الضوء اللازم للنباتات في تجربة زراعية",
+        "kind": null,
+        "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+        "currentFeedMatch": false,
+        "mainEditorialMatch": false,
+        "prEditorialMatch": false,
+        "seen": true,
+        "previousFeedMatch": false,
+        "classification": "seen_only_never_in_old_or_current_feed",
+        "confirmedExpired": false,
+        "decision": "hold; do not import against current feed; retain original id/url; no title-derived identity"
+      },
+      {
+        "id": "0a2b694e15caf809f8",
+        "url": "https://www.cnx-software.com/2026/11/03/when-will-this-stop-the-raspberry-pi-5-16gb-sbc-now-sells-for-385/",
+        "titleAr": "ارتفاع سعر نسخة 16GB من Raspberry Pi 5 بمقدار 80 دولارًا",
+        "kind": null,
+        "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+        "currentFeedMatch": false,
+        "mainEditorialMatch": false,
+        "prEditorialMatch": true,
+        "seen": true,
+        "previousFeedMatch": true,
+        "classification": "historical_after_feed_rotation",
+        "confirmedExpired": false,
+        "decision": "hold; do not import against current feed; retain original id/url; no title-derived identity"
+      },
+      {
+        "id": "cec6ab6c90d6d9e9c1",
+        "url": "https://github.com/ikey4u/zebkit",
+        "titleAr": "Zebkit يقدّم محرك Chromium كمكتبة يمكن تضمينها في التطبيقات الأصلية",
+        "kind": null,
+        "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+        "currentFeedMatch": false,
+        "mainEditorialMatch": false,
+        "prEditorialMatch": false,
+        "seen": true,
+        "previousFeedMatch": false,
+        "classification": "seen_only_never_in_old_or_current_feed",
+        "confirmedExpired": false,
+        "decision": "hold; do not import against current feed; retain original id/url; no title-derived identity"
+      },
+      {
+        "id": "fb9de46b88c3faa779",
+        "url": "https://e-means.github.io/",
+        "titleAr": "ورقة e-means تقترح تسريع تجميع k-means بتحديثات المتوسط المتحرك الأسي",
+        "kind": null,
+        "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+        "currentFeedMatch": false,
+        "mainEditorialMatch": false,
+        "prEditorialMatch": true,
+        "seen": true,
+        "previousFeedMatch": true,
+        "classification": "historical_after_feed_rotation",
+        "confirmedExpired": false,
+        "decision": "hold; do not import against current feed; retain original id/url; no title-derived identity"
+      },
+      {
+        "id": "3c86ca6a06f60e03f0",
+        "url": "https://postalpro.usps.com/zcb",
+        "titleAr": "USPS تطرح خرائط حدود ZIP Code مشتقة من بيانات عناوين التسليم",
+        "kind": null,
+        "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+        "currentFeedMatch": false,
+        "mainEditorialMatch": false,
+        "prEditorialMatch": true,
+        "seen": true,
+        "previousFeedMatch": true,
+        "classification": "historical_after_feed_rotation",
+        "confirmedExpired": false,
+        "decision": "hold; do not import against current feed; retain original id/url; no title-derived identity"
+      },
+      {
+        "id": "1addf27c71831a1839",
+        "url": "https://yappologistic.github.io/CUI/",
+        "titleAr": "CUI يقدم مكتبة واجهات C99 فورية متعددة الأنظمة دون اعتماديات خارجية",
+        "kind": null,
+        "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+        "currentFeedMatch": false,
+        "mainEditorialMatch": false,
+        "prEditorialMatch": true,
+        "seen": true,
+        "previousFeedMatch": true,
+        "classification": "historical_after_feed_rotation",
+        "confirmedExpired": false,
+        "decision": "hold; do not import against current feed; retain original id/url; no title-derived identity"
+      }
+    ]
+  },
+  "specialRecords": {
+    "NVIDIA OpenShell": {
+      "id": "940ec4695c1e241c2f",
+      "feed": false,
+      "mainEditorial": false,
+      "prEditorial": false,
+      "seen": true,
+      "researchDossier": true,
+      "publication": "research-only"
+    },
+    "Canva Craft": {
+      "id": "317abcdd1b20728a7e",
+      "feed": false,
+      "mainEditorial": false,
+      "prEditorial": false,
+      "seen": true,
+      "researchDossier": false,
+      "publication": "seen-only"
+    },
+    "1Password agent sign-in": {
+      "id": "662e68277c6361dd4b",
+      "feed": false,
+      "mainEditorial": false,
+      "prEditorial": false,
+      "seen": true,
+      "researchDossier": false,
+      "publication": "seen-only"
+    }
+  },
+  "holds": [
+    {
+      "id": "d18ddd9c12e46dd96b",
+      "reason": "seen-only; closed historical issue from 2022; current primary evidence required"
+    },
+    {
+      "id": "e3e3a03bfc5be7aa43",
+      "reason": "active feed item but Google News intermediary URL; original publisher URL and date required"
+    },
+    {
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "historicalId": "7a99eca9b2ce14d9f5",
+      "activeId": "e0cbbf211a55e79f34",
+      "reason": "keep IDs separate; no alias or title-based remapping"
+    }
+  ],
+  "officialCommandsNotExecuted": [
+    "python scripts/editorial.py validate <each incoming file>",
+    "python scripts/editorial.py import <approved active batch>",
+    "python -m unittest discover -s tests -v (locally)"
+  ],
+  "structuralEquivalent": "All four PR incoming files passed the locally reproduced schema checks: version/items, HTTPS URL/source, required text, reviewedAt timezone, basis, nextSteps and proposal structure. Official CLI was not run on the incoming files."
+}

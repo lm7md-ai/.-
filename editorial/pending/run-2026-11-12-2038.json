@@ -1,0 +1,462 @@
+{
+  "version": 1,
+  "kind": "nabdh-run-reconciliation",
+  "runAt": "2026-11-12T20:38:00+03:00",
+  "repository": "lm7md-ai/.-",
+  "main": {
+    "sha": "cef15d89bd6eebd529da2387f189fad4ac1ab955",
+    "feedGeneratedAt": "2026-11-12T17:34:19+00:00",
+    "feedItems": 800,
+    "feedNews": 700,
+    "feedProjects": 100,
+    "editorialItems": 917
+  },
+  "pullRequest": {
+    "number": 98,
+    "branch": "editorial/2026-11-10-0243-research-and-incoming",
+    "previousHead": "194ab28b4e888036947b9fb9e95d7a69c31b9942",
+    "state": "open",
+    "merged": false,
+    "mergeable": true,
+    "behindMain": 1,
+    "editorialItemsAfterImport": 943,
+    "currentHead": "7eeb86ac2ede27b0e79cdbf7cf1148f19fc30002",
+    "commits": 70,
+    "changedFilesAgainstOriginalBase": 92,
+    "aheadOfCurrentMain": 69,
+    "behindCurrentMain": 1,
+    "changedFilesAgainstCurrentMain": 89,
+    "protectedPathsChangedAgainstCurrentMain": []
+  },
+  "incomingAudit": {
+    "main": {
+      "files": 102,
+      "occurrences": 1054,
+      "uniqueIdUrlPairs": 932,
+      "duplicates": 122,
+      "editorialMatches": 870,
+      "seenOnly": 62,
+      "idUrlMismatches": 0,
+      "invalidJson": 0,
+      "confirmedExpired": 0,
+      "reusedPriorAudit": true,
+      "all102BlobShasIdenticalBetweenMainAndPR": true
+    },
+    "pullRequestOnly": {
+      "files": 11,
+      "occurrences": 78,
+      "uniqueIdUrlPairs": 52,
+      "duplicateOccurrences": 26,
+      "activeExactPairsInCurrentFeed": 35,
+      "alreadyInPREditorial": 15,
+      "newActivePairsBeforeThisRun": 20,
+      "outsideCurrentFeed": 17,
+      "idUrlMismatches": 0,
+      "idsWithMultipleUrls": 0,
+      "invalidJson": 0,
+      "confirmedExpired": 0,
+      "duplicateNote": "ملف 2026-11-12-1811 ذو 14 سجلًا يكرر أزواجًا موجودة مسبقًا ولا يضيف أزواجًا فريدة.",
+      "alreadyInPREditorialIds": [
+        {
+          "id": "7c94eb734f17ebfcce",
+          "url": "https://github.com/open-webui/open-webui",
+          "titleAr": "Open WebUI: واجهة ذاتية الاستضافة للنماذج المحلية والسحابية"
+        },
+        {
+          "id": "0eeaaf4c87a4398c95",
+          "url": "https://github.com/freeCodeCamp/devdocs",
+          "titleAr": "DevDocs يجمع توثيق واجهات البرمجة في متصفح واحد يعمل دون اتصال"
+        },
+        {
+          "id": "d62e152dace4589504",
+          "url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxPNkNBR3pQRFJfaTVSQjJZMEViQUxmVnNnU1lOeXRoWHdrWVA2SmFpeXNBQkFCcTduZkg3SGpwOGxLYmZ5WGg2SXZCYi1ocUFBZWNEUzEwV2llU24wc0tjYnRnWndhemxwdEVWM09jRlJaa2dOb1h2T3pqQXpDWWdGLWFKOERLaUlfMGo3NnB0LUxlZHNlMll3ZlQ3eVhFYzhneUh1andLRnBDaGNZVV9Da3hHeDBuVS1wV2kwY1JOXzlTUDJ0OVJZeW9jRXN4eHhFanFvQkVuc1dDVkRvME1Fel9YemFmalczdGIxYUZicnBBRDNycmNSWDczRXhRTWE1amt2aU9RaEZ3NVJwN2NtQVNOX2NjMS1WblYxcEJwRFpVUUdKcFl2NW9ENVUwUHl0elI2OFoxcEJiRWt6YkFBNjdpYzk5OGo4am5r?oc=5",
+          "titleAr": "تمويل سعودي يصل إلى 2.5 مليار ريال لدعم حوسبة ومراكز بيانات HUMAIN"
+        },
+        {
+          "id": "f0fc30384fec2ecc4d",
+          "url": "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/",
+          "titleAr": "Git ينشر تحديثات أمنية لإصلاح ست ثغرات ويوصي بتحديث فروع الصيانة"
+        },
+        {
+          "id": "69d4d9d74efa01629a",
+          "url": "https://openai.com/index/closing-ai-guidance-gap-education",
+          "titleAr": "OpenAI ترصد فجوة في إرشاد الطلاب والمعلمين لاستخدام الذكاء الاصطناعي في التعليم"
+        },
+        {
+          "id": "cb93d68b445c05b0e3",
+          "url": "https://huggingface.co/blog/hub-gcp-marketplace",
+          "titleAr": "Hugging Face تتيح فوترة استخدام Hub عبر حساب Google Cloud للمنظمات"
+        },
+        {
+          "id": "ee7e0e584b2626a327",
+          "url": "https://github.com/datawhalechina/hello-agents",
+          "titleAr": "Hello-Agents: دليل عملي لبناء وكلاء الذكاء الاصطناعي من الصفر"
+        },
+        {
+          "id": "3cffec5790b8f2e218",
+          "url": "https://blog.mozilla.org/security/2026/11/10/open-research-stronger-privacy-making-firefox-users-harder-to-fingerprint/",
+          "titleAr": "Firefox يقلّص بصمة المتصفح ويعزز مقاومة التتبع دون ملفات تعريف الارتباط"
+        },
+        {
+          "id": "1d584b01bcf30b6f44",
+          "url": "https://aitnews.com/2026/11/11/%d8%ac%d8%a7%d9%85%d8%b9%d8%a9-%d9%85%d8%ad%d9%85%d8%af-%d8%a8%d9%86-%d8%b2%d8%a7%d9%8a%d8%af-%d9%84%d9%84%d8%b0%d9%83%d8%a7%d8%a1-%d8%a7%d9%84%d8%a7%d8%b5%d8%b7%d9%86%d8%a7%d8%b9%d9%8a-%d8%aa%d8%b7-4/",
+          "titleAr": "PAN 2: نموذج عالم مفتوح من جامعة محمد بن زايد يحاكي نتائج الأفعال في مشاهد واقعية"
+        },
+        {
+          "id": "19b4fcb1faac9c9bdb",
+          "url": "https://huggingface.co/blog/qvac/botpsy",
+          "titleAr": "BotPsy يقدم نموذج وكيل صغيرًا بـ0.8 مليار معلمة للتشغيل على الأجهزة"
+        },
+        {
+          "id": "fff18d7edb4b918233",
+          "url": "https://aitnews.com/2026/11/11/omniops-bunyan-inference-hub-saudi-arabia/",
+          "titleAr": "OmniOps تطلق Bunyan Inference Hub لاستضافة استدلال الذكاء الاصطناعي داخل السعودية"
+        },
+        {
+          "id": "02bfed5e7aa817ea9d",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+          "titleAr": "Google تطلق Gemini Decisions API لتقييم ما يصل إلى ألف قرار متعدد الوسائط في طلب واحد"
+        },
+        {
+          "id": "b21fa54b837dba6b35",
+          "url": "https://machinelearning.apple.com/research/faster-retrieval",
+          "titleAr": "باحثو Apple يدرسون تسريع استرجاع RAG بتعلّم توزيع الاستعلامات"
+        },
+        {
+          "id": "d0e5cfeb79c6e58571",
+          "url": "https://github.com/huawei-csl/MACaQ",
+          "titleAr": "MACaQ من هواوي: أدوات مفتوحة لتكميم النماذج وتشغيلها محليًا عبر أطر متعددة"
+        },
+        {
+          "id": "bb27561db5d10d5000",
+          "url": "https://arstechnica.com/ai/2026/11/taiwans-chipmaking-giant-tsmc-to-invest-1b-in-anthropic-openai/",
+          "titleAr": "TSMC توافق على استثمارات تصل إلى مليار دولار في Anthropic وOpenAI"
+        }
+      ]
+    },
+    "currentClassification": {
+      "newActiveImportedThisRun": 12,
+      "remainingActiveExactPairs": 8,
+      "outsideCurrentFeed": 17,
+      "previouslySeenOnlyAmongOutsideFeed": 15,
+      "newlyAbsentSincePreviousAggregateAudit": 2,
+      "newlyAbsentIdsIndividuallyResolved": false,
+      "expirationConfirmed": 0
+    },
+    "remainingActive": [
+      {
+        "id": "a3bc8ca770f44f2d28",
+        "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/",
+        "titleAr": "Anthropic تحدّث Mythos وFable إلى الإصدار 5.2 مع تحسينات معلنة",
+        "status": "active_exact_match_pending"
+      },
+      {
+        "id": "1251f00274bede43be",
+        "url": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai",
+        "titleAr": "Adobe تعرض عشرة نماذج بحثية في MAX 2026 لتحرير الفيديو والصوت والصور",
+        "status": "active_exact_match_pending"
+      },
+      {
+        "id": "f63659155352269baf",
+        "url": "https://arxiv.org/abs/2611.12933",
+        "titleAr": "بحث يدرس فرقًا بشرية ووكلاء تنفذ تجارب أشعة سينية ذاتية مع توثيق القرارات",
+        "status": "active_exact_match_pending"
+      },
+      {
+        "id": "70b6e0e37bdecc39c4",
+        "url": "https://arxiv.org/abs/2611.12934",
+        "titleAr": "EarthRecord يختبر الوكلاء متعددة الوسائط على صور أقمار صناعية تمتد أربعة عقود",
+        "status": "active_exact_match_pending"
+      },
+      {
+        "id": "e5cd4cd10b4ff8cfa7",
+        "url": "https://arxiv.org/abs/2611.12935",
+        "titleAr": "TopicScope يراقب تغيّر موضوع النص أثناء التوليد باستخدام ميزات المحولات التلقائية المتناثرة",
+        "status": "active_exact_match_pending"
+      },
+      {
+        "id": "1df6a00742e99b5a00",
+        "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+        "titleAr": "United Airlines تقيّد وكلاء الذكاء الاصطناعي الخارجيين من إجراء الحجوزات دون إذن",
+        "status": "active_exact_match_pending"
+      },
+      {
+        "id": "3b53bf6090ab9868ec",
+        "url": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
+        "titleAr": "OpenAI تستحوذ على Odessia وتستقطب مؤسس وكيل السفر",
+        "status": "active_exact_match_pending"
+      },
+      {
+        "id": "1385baee7258ede721",
+        "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5yU0dvLVdFS3VDbGFhalpycWxjRWJRVTVxZzlWMUZQZFdiaTNUVG02VzdkS1F2c3J1azY3OTdaRWdIRkdpbGc?oc=5",
+        "titleAr": "تقرير IMD 2026 يضع السعودية في المرتبة الثانية في مؤشرين لأمن الذكاء الاصطناعي",
+        "status": "active_exact_match_pending"
+      }
+    ],
+    "outsideCurrentFeed": [
+      {
+        "id": "86708699833d3a9796",
+        "url": "https://research.meta.ai/blog/muse-ember",
+        "titleAr": "ميتا تطلق Muse Ember كنموذج صغير للمهام المتكررة داخل الوكلاء"
+      },
+      {
+        "id": "5ef93d9981a0db1c3c",
+        "url": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
+        "titleAr": "آبل توسّع حدود استخدام بعض ميزات Apple Intelligence بحزم إضافية"
+      },
+      {
+        "id": "12c83389e580dec71d",
+        "url": "https://www.eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim/",
+        "titleAr": "DeepX تعلن اكتمال تصميم DX-M2 وتستهدف تشغيل نماذج كبيرة على أجهزة الطرف"
+      },
+      {
+        "id": "a8ac24a5fed69e7112",
+        "url": "https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy",
+        "titleAr": "كندا تطلق Real-Time Rail للمدفوعات الفورية على مدار الساعة"
+      },
+      {
+        "id": "a425346c085c7dcb99",
+        "url": "https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet/",
+        "titleAr": "ألواح شمسية شبه شفافة تسمح بمرور الضوء اللازم للنباتات في تجربة زراعية"
+      },
+      {
+        "id": "0a2b694e15caf809f8",
+        "url": "https://www.cnx-software.com/2026/11/03/when-will-this-stop-the-raspberry-pi-5-16gb-sbc-now-sells-for-385/",
+        "titleAr": "ارتفاع سعر نسخة 16GB من Raspberry Pi 5 بمقدار 80 دولارًا"
+      },
+      {
+        "id": "cec6ab6c90d6d9e9c1",
+        "url": "https://github.com/ikey4u/zebkit",
+        "titleAr": "Zebkit يقدّم محرك Chromium كمكتبة يمكن تضمينها في التطبيقات الأصلية"
+      },
+      {
+        "id": "fb9de46b88c3faa779",
+        "url": "https://e-means.github.io/",
+        "titleAr": "ورقة e-means تقترح تسريع تجميع k-means بتحديثات المتوسط المتحرك الأسي"
+      },
+      {
+        "id": "3c86ca6a06f60e03f0",
+        "url": "https://postalpro.usps.com/zcb",
+        "titleAr": "USPS تطرح خرائط حدود ZIP Code مشتقة من بيانات عناوين التسليم"
+      },
+      {
+        "id": "1addf27c71831a1839",
+        "url": "https://yappologistic.github.io/CUI/",
+        "titleAr": "CUI يقدم مكتبة واجهات C99 فورية متعددة الأنظمة دون اعتماديات خارجية"
+      },
+      {
+        "id": "0e9fb0eb84f13acffd",
+        "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+        "titleAr": "Google DeepMind تكشف AlphaProof Code للتحقق الشكلي من تنفيذ بروتوكول Signal"
+      },
+      {
+        "id": "c7d3010a8bcc401c0c",
+        "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
+        "titleAr": "Notion تكشف تفاصيل أثر حادثة Fireworks AI على بعض مساحات العمل"
+      },
+      {
+        "id": "a7b39cb0698327aa7f",
+        "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/",
+        "titleAr": "Google توسّع الجيل الثامن من TPU بنظامي 8tx و8i Max"
+      },
+      {
+        "id": "1d8889c9661cfe547b",
+        "url": "https://www.theverge.com/tech/1030601/ring-drone-cam-hands-on-price-release-date-ai-pilot",
+        "titleAr": "Ring تعلن كاميرا Drone Cam وروبوت Rover ضمن فئة Ring Robotics"
+      },
+      {
+        "id": "14645f9d816239f1eb",
+        "url": "https://aitnews.com/2026/11/11/%d8%b3%d9%8a%d8%ac%d9%8a%d8%aa-%d8%aa%d8%b7%d9%84%d9%82-firecuda-forge-%d8%a8%d8%aa%d8%ae%d8%b2%d9%8a%d9%86-%d9%85%d8%a4%d9%82%d8%aa-%d8%b0%d9%83%d9%8a-%d9%88%d8%b3%d8%b9%d8%a9-%d8%aa%d8%b5%d9%84/",
+        "titleAr": "Seagate تطلق FireCuda Forge بسعتي 8 و20 تيرابايت مع تخزين مؤقت ذكي"
+      },
+      {
+        "id": "31699ba3bf57a08cdb",
+        "url": "https://tendrils.co/blog/2026-11-10/30m-raised",
+        "titleAr": "Tendrils تعلن جمع 30 مليون دولار لتطوير معمارية معالجات موازية ولغة Vine"
+      },
+      {
+        "id": "b87487ef036547770a",
+        "url": "https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news/",
+        "titleAr": "تقرير Reuters Institute: استخدام الذكاء الاصطناعي يتوسع كمصدر للمعلومات لكن تقبّل صناعة الأخبار آليًا ما زال منخفضًا"
+      }
+    ],
+    "note": "كل العناصر الـ17 خارج Feed الحالي موسومة خارج التغذية مع انقضاء غير مؤكد. سجل التدقيق السابق أثبت أن 15 منها كانت seen-only؛ ظهر عنصران إضافيان خارج التغذية بعد تحديث Feed. لم تُخمن هوية العنصرين الجديدين ولم يُنشأ ID بديل.",
+    "currentPRIncomingFiles": 115,
+    "branchOnlyFiles": 13,
+    "branchOnlyBreakdown": {
+      "previousFiles": 11,
+      "previousOccurrences": 78,
+      "previousUniquePairs": 52,
+      "newFilesThisRun": 2,
+      "newOccurrencesThisRun": 13,
+      "newNewsRecords": 12,
+      "projectRefreshRecords": 1
+    }
+  },
+  "selectedIds": [
+    "caa9073cefb43725f1",
+    "126b111b5d436487e5",
+    "7fc88fbdaa8e97213d",
+    "5553fe020c93d3c2ae",
+    "ae543fdc68f7cb2628",
+    "35f9d4a8ad49bd077c",
+    "1b0c05cd97a311af5c",
+    "65b96c238445cdedc9",
+    "312cc2672ec7b82778",
+    "3ddc5cc5a5b08ed604",
+    "b8c7de61a30502becd",
+    "b0cee948b440301e45"
+  ],
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inPrEditorial": false,
+      "inSeen": true,
+      "dossier": "editorial/library/nvidia-openshell-release-review-2026-11-11-2040.json",
+      "publication": "research-only"
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inPrEditorial": false,
+      "inSeen": true,
+      "dossier": false,
+      "publication": "seen-only"
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inPrEditorial": false,
+      "inSeen": true,
+      "dossier": false,
+      "publication": "seen-only"
+    }
+  ],
+  "cli": {
+    "localCheckout": false,
+    "cloneAttempt": "git clone --filter=blob:none --no-checkout https://github.com/lm7md-ai/.-.git /tmp/nabdh",
+    "cloneResult": "failed: Could not resolve host github.com",
+    "localCommandsNotRun": [
+      "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-11-12-2038.json",
+      "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-11-12-2038.json",
+      "python scripts/editorial.py validate editorial/incoming/nabdh-project-refresh-2026-11-12-2038.json",
+      "python scripts/editorial.py import editorial/incoming/nabdh-project-refresh-2026-11-12-2038.json"
+    ],
+    "ci": {
+      "runId": 43274818407,
+      "headSha": "7eeb86ac2ede27b0e79cdbf7cf1148f19fc30002",
+      "conclusion": "success",
+      "tests": 30,
+      "unitTests": "OK",
+      "editorialValidation": "Validated 943 editorial entries",
+      "javascriptSyntax": "success",
+      "logEvidence": "job 131380305719"
+    }
+  },
+  "projectLibrary": {
+    "catalogTotal": 68,
+    "unarchived": 66,
+    "archived": 2,
+    "previouslyRecordedImprovements": 313,
+    "spinoffs": 296,
+    "religious": 34,
+    "countsRecomputedThisRun": false,
+    "publicProjectCardsAdded": 0,
+    "feedProjectCards": 100,
+    "feedProjectEditorialCoverage": 100,
+    "reasonNoNewProjectCard": "لا توجد بطاقة مشروع ناقصة في Feed؛ المكتبة البحثية الحالية تتجاوز هدف 30 مشروعًا."
+  },
+  "deployment": {
+    "lastSuccessfulRun": 43270812228,
+    "conclusion": "success",
+    "event": "schedule",
+    "headSha": "32c21fedf510fa24eccea0e44a80f57cb6e6db58",
+    "artifactId": 13968326643,
+    "artifactName": "github-pages",
+    "artifactBytes": 1213143,
+    "mainEditorialRecords": 917,
+    "newEditorialPublished": false,
+    "liveSiteBrowser": "DisabledError"
+  },
+  "projectReview": {
+    "projectsReviewed": 8,
+    "feedEnriched": 1,
+    "researchOnly": 7,
+    "newPublicProjectCards": 0,
+    "readmeAndLicenseReRead": true,
+    "testsRun": 0,
+    "testsStatus": "not_run",
+    "reviewFile": "editorial/library/previous-eight-review-2026-11-12-2038.json"
+  },
+  "importedThisRun": [
+    {
+      "id": "caa9073cefb43725f1",
+      "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace"
+    },
+    {
+      "id": "126b111b5d436487e5",
+      "url": "https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/"
+    },
+    {
+      "id": "7fc88fbdaa8e97213d",
+      "url": "https://techcrunch.com/2026/11/10/cyberattacks-threaten-to-make-open-source-ai-a-little-less-open-hugging-face-exec-warns/"
+    },
+    {
+      "id": "5553fe020c93d3c2ae",
+      "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/"
+    },
+    {
+      "id": "ae543fdc68f7cb2628",
+      "url": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/"
+    },
+    {
+      "id": "35f9d4a8ad49bd077c",
+      "url": "https://www.wired.com/story/duolingo-strava-and-ticketmaster-are-all-caught-up-in-eus-new-digital-fairness-rules/"
+    },
+    {
+      "id": "1b0c05cd97a311af5c",
+      "url": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/"
+    },
+    {
+      "id": "65b96c238445cdedc9",
+      "url": "https://openai.com/index/gilbert-tobin-sam-nickless"
+    },
+    {
+      "id": "312cc2672ec7b82778",
+      "url": "https://www.githubstatus.com/incidents/dvy0t3mvh1lg"
+    },
+    {
+      "id": "3ddc5cc5a5b08ed604",
+      "url": "https://www.theverge.com/tech/1031601/home-assistant-connect-aux-2-hands-on"
+    },
+    {
+      "id": "b8c7de61a30502becd",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB4N3hSbDJabVg4WnB4VUJRVVBDZDZrQnhnTUJhYjJLanNIclRwMmRWN2lEeFFuTnFVUzVpQWRPRVpjSVR2eERFdGpDSUZfQXRRdnfSAVRBVV95cUxPNzVPT21fOEYxT2pMdDFGNVkyMHlUSUtLWWVaaWNTLTRTQWNya3RTRWhocWpLZjJVaHdUS3A4c0ZoalRvMDgwS09iazhiYzZiX3RNQTE?oc=5"
+    },
+    {
+      "id": "b0cee948b440301e45",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1UU2tHemhQOGVzakpWWmxJQ0dYZFVaX3p6c1pJM2xSc19jV0JRWHpYTWVya0xCcUdZNTRrUHlHakxLTUE0RVZTNlBud0ZvQ3V0RnBoMUdFVWgtN28?oc=5"
+    }
+  ],
+  "projectRefresh": {
+    "id": "fe0e6bfdbdd5822139",
+    "url": "https://github.com/patchy631/ai-engineering-hub",
+    "existingEditorialRecordUpdated": true,
+    "newPublicProjectCard": false,
+    "incomingFile": "editorial/incoming/nabdh-project-refresh-2026-11-12-2038.json"
+  },
+  "corrections": [
+    {
+      "id": "b0cee948b440301e45",
+      "status": "corrected_in_this_run",
+      "reason": "البيان الرسمي يحتوي قسم Frontier models؛ أُعيدت صياغة العنوان والملخص بعد قراءة البيان كاملًا. النسخة المصححة في incoming 2038 وEditorial على PR؛ النسخة التاريخية السابقة لا ينبغي إعادة استيرادها فوق التصحيح."
+    }
+  ]
+}

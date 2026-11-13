@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "kind": "previous-eight-metrics-refresh",
+  "reviewedAt": "2026-11-12T21:05:47+03:00",
+  "metricSource": "GitHub REST repository metadata; README and LICENSE fetched from each default branch",
+  "warning": "open_issues_count includes issues and pull requests; it is not a count of defects. Stars and forks are cumulative. No project execution tests were run.",
+  "projects": [
+    {
+      "repository": "patchy631/ai-engineering-hub",
+      "stars": 41801,
+      "forks": 6680,
+      "openIssuesCount": 137,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "updatedAt": "2026-11-12T17:57:35Z",
+      "metricCapturedAt": "2026-11-12T21:05:47+03:00",
+      "readmeSha": "6c65ab12125814c5233f873c4c1af2765ff87d51",
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha": "84ee68d33c9b68bae6c139f591996f021a02b23a"
+        }
+      ],
+      "testStatus": "not_run"
+    },
+    {
+      "repository": "googleapis/python-genai",
+      "stars": 4065,
+      "forks": 1064,
+      "openIssuesCount": 402,
+      "archived": false,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-12T17:22:08Z",
+      "updatedAt": "2026-11-12T15:02:31Z",
+      "metricCapturedAt": "2026-11-12T21:05:47+03:00",
+      "readmeSha": "8faf7f0d715072fccdc0e5fba0a5d7aa74f78d53",
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7"
+        }
+      ],
+      "testStatus": "not_run"
+    },
+    {
+      "repository": "Millillion/lasm",
+      "stars": 105,
+      "forks": 7,
+      "openIssuesCount": 14,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-11-12T18:09:43Z",
+      "updatedAt": "2026-11-12T16:10:11Z",
+      "metricCapturedAt": "2026-11-12T21:05:47+03:00",
+      "readmeSha": "51a3ffe2836ba3ee932ab5d279a2a14df5ed4b61",
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha": "46b25ff7d8953b8fc88d7ed6d37c6f1550a39193"
+        }
+      ],
+      "testStatus": "not_run"
+    },
+    {
+      "repository": "microsoft/markitdown",
+      "stars": 195083,
+      "forks": 14722,
+      "openIssuesCount": 808,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-11-07T00:14:01Z",
+      "updatedAt": "2026-11-12T18:09:34Z",
+      "metricCapturedAt": "2026-11-12T21:05:47+03:00",
+      "readmeSha": "af858038fd380b187e2928cfbb8b9802c4912d5b",
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha": "9e841e7a26e4eb057b24511e7b92d42b257a80e5"
+        }
+      ],
+      "testStatus": "not_run"
+    },
+    {
+      "repository": "yc-software/minecraft-agent-harness",
+      "stars": 213,
+      "forks": 28,
+      "openIssuesCount": 1,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "updatedAt": "2026-11-12T16:54:52Z",
+      "metricCapturedAt": "2026-11-12T21:05:47+03:00",
+      "readmeSha": "50b5a20eeb3a6f8268d06d244d858c4464c81eba",
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha": "5efc79a61c6ce9c8b89f423f7b0d883ca9af43a9"
+        }
+      ],
+      "testStatus": "not_run"
+    },
+    {
+      "repository": "NVIDIA/OpenShell",
+      "stars": 21500,
+      "forks": 2101,
+      "openIssuesCount": 656,
+      "archived": false,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-12T16:18:35Z",
+      "updatedAt": "2026-11-12T18:00:27Z",
+      "metricCapturedAt": "2026-11-12T21:05:47+03:00",
+      "readmeSha": "ea31d968136ad93ac659552697d03f0e473301d4",
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha": "f13d24c3fa482d61605d600e5ac1248799bd4107"
+        }
+      ],
+      "testStatus": "not_run"
+    },
+    {
+      "repository": "pydantic/pydantic-ai",
+      "stars": 21170,
+      "forks": 3156,
+      "openIssuesCount": 1945,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-11-12T18:10:37Z",
+      "updatedAt": "2026-11-12T17:19:18Z",
+      "metricCapturedAt": "2026-11-12T21:05:47+03:00",
+      "readmeSha": "3774a1843c1b5256cea465c3c361390d668fdf6b",
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha": "1bf1f55e6d1736b499ded961ec6b94bfebb17aec"
+        }
+      ],
+      "testStatus": "not_run"
+    },
+    {
+      "repository": "astral-sh/uv",
+      "stars": 91943,
+      "forks": 3809,
+      "openIssuesCount": 3076,
+      "archived": false,
+      "license": "Apache-2.0 AND MIT",
+      "pushedAt": "2026-11-12T17:03:06Z",
+      "updatedAt": "2026-11-12T17:54:48Z",
+      "metricCapturedAt": "2026-11-12T21:05:47+03:00",
+      "readmeSha": "66caaf9ccc62add8c63de8e71184c9b7677377ad",
+      "licenseFiles": [
+        {
+          "path": "LICENSE-APACHE",
+          "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+        },
+        {
+          "path": "LICENSE-MIT",
+          "sha": "014835144877ea9c926d027ece3e1a26290cf481"
+        }
+      ],
+      "testStatus": "not_run"
+    }
+  ]
+}

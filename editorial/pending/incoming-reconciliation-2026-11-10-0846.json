@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-10T08:46:13+03:00",
+  "mainCommit": "790e65030199524bc028d14a1840de29fdb8a814",
+  "feed": {
+    "items": 800,
+    "news": 700,
+    "projects": 100,
+    "generatedAt": "2026-11-10T03:33:17+00:00"
+  },
+  "editorial": {
+    "entries": 917,
+    "activeExactIdUrlMatches": 270,
+    "historicalOutsideFeed": 647,
+    "idUrlMismatches": 0
+  },
+  "incomingMain": {
+    "files": 102,
+    "occurrences": 1054,
+    "fullScanReference": "editorial/pending/recheck-2026-11-09-2342.json",
+    "fullScanAt": "2026-11-09T21:12:00+03:00",
+    "classificationFromFullScan": {
+      "alreadyImportedOccurrences": 954,
+      "seenOnlyOccurrences": 62,
+      "duplicateAppearances": 38,
+      "idUrlMismatches": 0,
+      "confirmedExpired": 0,
+      "expiryNotProven": true
+    },
+    "note": "Current main still has the same 102 incoming files; previous full scan covered 88 identical-SHA files plus 14 branch-only files that were parsed. The 11/10 scheduled refresh changed feed/status data but added no incoming files."
+  },
+  "identityConflict": {
+    "url": "https://github.com/rasbt/LLMs-from-scratch",
+    "ids": [
+      "7a99eca9b2ce14d9f5",
+      "e0cbbf211a55e79f34"
+    ],
+    "decision": "preserve both IDs; no title-derived alias or merge"
+  },
+  "qualityHolds": [
+    {
+      "id": "d18ddd9c12e46dd96b",
+      "reason": "closed 2022 issue; not evidence of a current event"
+    },
+    {
+      "id": "e3e3a03bfc5be7aa43",
+      "reason": "Google News intermediary URL; original publisher URL required"
+    }
+  ],
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "library": "research-only dossier at priority 34"
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "library": "not found"
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "library": "not found"
+    }
+  ],
+  "currentPR98": {
+    "headBefore": "1a5c06c60f690d341e100e1fb1851a37e45472ac",
+    "existingIncomingFile": "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+    "existingNewsItems": 12,
+    "existingNewsExactFeedMatches": 12,
+    "alreadyInMainEditorial": 0,
+    "newIncomingFile": "editorial/incoming/nabdh-editorial-2026-11-10-0846.json",
+    "newIncomingItems": 2,
+    "exactFeedMatches": 2,
+    "refreshExistingId": "7c94eb734f17ebfcce",
+    "newProjectId": "0eeaaf4c87a4398c95"
+  },
+  "finalBranchCounts": {
+    "editorialEntries": 930,
+    "mainEntriesPreserved": 917,
+    "mainEntriesUnchanged": 916,
+    "mainEntriesIntentionallyRefreshed": 1,
+    "newNewsEntries": 12,
+    "newProjectEntries": 1,
+    "activeExactIdUrlMatches": 283,
+    "historicalOutsideFeed": 647,
+    "idUrlMismatches": 0
+  },
+  "constraints": {
+    "feedJsonChanged": false,
+    "seenJsonChanged": false,
+    "statusJsonChanged": false,
+    "siteCodeChanged": false,
+    "designChanged": false,
+    "workflowChanged": false,
+    "publishSettingsChanged": false
+  }
+}

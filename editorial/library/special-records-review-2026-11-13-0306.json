@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "kind": "special-records-review",
+  "publicationStatus": "research-only-not-published",
+  "reviewedAt": "2026-11-13T00:26:23.711Z",
+  "records": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "inSeen": true,
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inPrEditorial": false,
+      "status": "research-only",
+      "latestRelease": "v0.1.8",
+      "releasePublishedAt": "2026-11-10T18:14:42Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "stars": 21520,
+      "forks": 2102,
+      "openIssuesCount": 661,
+      "testStatus": "not_run",
+      "dossier": "editorial/library/nvidia-openshell-release-review-2026-11-11-2040.json",
+      "sources": [
+        "https://github.com/NVIDIA/OpenShell/releases",
+        "https://docs.nvidia.com/openshell/home",
+        "https://github.com/NVIDIA/OpenShell/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "inSeen": true,
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inPrEditorial": false,
+      "status": "seen-only-research",
+      "announcementDate": "2026-10-22",
+      "publicApi": "available",
+      "mcpServer": "coming soon per official announcement",
+      "sources": [
+        "https://www.canva.com/newsroom/news/canva-craft/",
+        "https://www.canva.com/ai-research/craft-api/"
+      ]
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "inSeen": true,
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inPrEditorial": false,
+      "status": "seen-only-research",
+      "announcementDate": "2026-10-22",
+      "optIn": true,
+      "accountEligibility": "Individual and Family accounts; Team/Business not supported in current support guide",
+      "agentPasswordVisibility": "1Password says it fills credentials without exposing them to the agent",
+      "sources": [
+        "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents",
+        "https://support.1password.com/1password-for-agents/"
+      ]
+    }
+  ],
+  "notes": [
+    "المعرفات الثلاثة مطابقة لما في Seen فقط؛ لا يوجد Feed أو Editorial حالي مطابق.",
+    "لا تُنشأ هويات بديلة بالعنوان ولا تُضاف هذه السجلات إلى Editorial حتى يظهر نفس id وurl في Feed.",
+    "NVIDIA OpenShell dossier موجود ومحدّث بالإصدار v0.1.8؛ Canva Craft و1Password موثقان هنا كبحث غير منشور."
+  ]
+}

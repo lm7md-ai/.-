@@ -1,0 +1,335 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-12T05:42:33+03:00",
+  "repository": "lm7md-ai/.-",
+  "main": {
+    "sha": "9ac538da9be6c0865a6c8f2f09632b6cc83fd7cc",
+    "feed": {
+      "count": 800,
+      "news": 700,
+      "projects": 100,
+      "generatedAt": "2026-11-11T21:55:46+00:00",
+      "blobSha": "58ba098e53cc10d3ce1363f467958d642de302ca"
+    },
+    "editorial": {
+      "count": 917,
+      "activeExact": 185,
+      "activeNews": 87,
+      "activeProjects": 98,
+      "blobSha": "430ec5a47ff85d4eebd9fba101d40664fe97e769"
+    },
+    "seen": {
+      "count": 4495,
+      "blobSha": "6dfe2ba5f6db0f0b5120d8e3a2e5d3117a8d9478"
+    },
+    "status": {
+      "lastAttemptAt": "2026-11-11T21:55:46+00:00",
+      "state": "ok",
+      "collected": 404,
+      "successfulSources": 26,
+      "totalSources": 26,
+      "blobSha": "958ae308fcb5db458a455a85df2e4cc38e35dfad"
+    }
+  },
+  "incomingMain": {
+    "files": 102,
+    "occurrences": 1054,
+    "uniqueIdUrlPairs": 932,
+    "duplicateOccurrences": 122,
+    "alreadyImportedExact": 870,
+    "seenOnlyOutsideCurrentFeed": 62,
+    "currentOccurrenceBreakdown": {
+      "editorialExact": 979,
+      "seenOnly": 75
+    },
+    "activeUnimported": 0,
+    "idUrlMismatches": 0,
+    "editorialUrlMismatches": 0,
+    "orphans": 0,
+    "confirmedExpired": 0,
+    "jsonErrors": 0,
+    "basis": "All 102 current main incoming JSON blobs were fetched and each id/url compared with current main feed, editorial and seen. Unique-pair counts retain the deduplicated 932/122 reconciliation; current occurrence-level classification is 979 exact editorial appearances and 75 seen-only appearances."
+  },
+  "pr98": {
+    "state": "open",
+    "merged": false,
+    "head": "ae00eee386a1f56444f6da9c10367d33d8ebf03f",
+    "base": "9ac538da9be6c0865a6c8f2f09632b6cc83fd7cc",
+    "aheadBy": 52,
+    "behindBy": 0,
+    "mergeable": true,
+    "mergeableState": "clean",
+    "changedFiles": 58,
+    "additions": 12439,
+    "deletions": 13,
+    "editorial": {
+      "count": 952,
+      "mainRecordsPreservedExact": 916,
+      "existingRecordsUpdated": 1,
+      "addedIds": 35,
+      "activeExact": 208,
+      "activeNews": 108,
+      "activeProjects": 100,
+      "addedActiveExact": 23,
+      "addedNotInCurrentFeed": 12,
+      "activeIdUrlMismatches": 0
+    },
+    "branchSyncCommit": "ae00eee386a1f56444f6da9c10367d33d8ebf03f"
+  },
+  "prIncoming": {
+    "filesTotal": 109,
+    "filesAddedSinceMain": 7,
+    "occurrencesInAddedFiles": 50,
+    "uniquePairs": 38,
+    "duplicateOccurrences": 12,
+    "activeNewAtPreviousAudit": 24,
+    "activeNewCurrent": 23,
+    "activeNewNewsCurrent": 21,
+    "activeNewProjectsCurrent": 2,
+    "alreadyImportedExact": 1,
+    "historicalRetained": 11,
+    "pending": 2,
+    "idUrlMismatches": 0,
+    "structuralErrors": 0
+  },
+  "newBatch": {
+    "news": 10,
+    "projects": 0,
+    "basisCounts": {
+      "article": 7,
+      "metadata": 3
+    },
+    "allTenNewsStillMatchCurrentFeed": true,
+    "activeProjectCardsAlreadyInPR": [
+      {
+        "id": "0eeaaf4c87a4398c95",
+        "name": "DevDocs",
+        "url": "https://github.com/freeCodeCamp/devdocs"
+      },
+      {
+        "id": "ee7e0e584b2626a327",
+        "name": "Hello-Agents",
+        "url": "https://github.com/datawhalechina/hello-agents"
+      }
+    ],
+    "pendingRecords": [
+      {
+        "id": "a425346c085c7dcb99",
+        "name": "ألواح شمسية شبه شفافة للزراعة",
+        "state": "seen-only; no current feed/editorial entry",
+        "action": "hold"
+      },
+      {
+        "id": "cec6ab6c90d6d9e9c1",
+        "name": "Zebkit",
+        "state": "seen-only; no current feed/editorial entry",
+        "action": "hold"
+      }
+    ]
+  },
+  "identityCollision": {
+    "name": "LLMs-from-scratch",
+    "historicalId": "7a99eca9b2ce14d9f5",
+    "activeId": "e0cbbf211a55e79f34",
+    "sameUrl": true,
+    "action": "preserve both exact identities; do not derive aliases from title"
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "latestVersion": "v0.1.8",
+      "releasePublishedAt": "2026-11-10T18:14:42Z",
+      "status": "seen-only; research-only"
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "availability": "available globally in Canva and via public API",
+      "resolution": "up to 2K",
+      "textLanguages": 55,
+      "mcp": "coming soon",
+      "status": "seen-only; research-only"
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "supportedAgents": [
+        "Claude Duet",
+        "Grok Bot",
+        "Instinct",
+        "Muse",
+        "Town"
+      ],
+      "requirements": "Individual or Family 1Password.com account; app 8.12.42+; Login items in Personal/Private vaults",
+      "notSupported": [
+        "Passkeys",
+        "shared vaults",
+        "team/business accounts"
+      ],
+      "status": "seen-only; research-only"
+    }
+  ],
+  "previousEight": {
+    "measuredAt": "2026-11-12T05:42:33+03:00",
+    "measurementSource": "GitHub REST API /repos/{owner}/{repo}",
+    "projects": [
+      {
+        "name": "AI Engineering Hub",
+        "repository": "patchy631/ai-engineering-hub",
+        "stars": 41774,
+        "forks": 6675,
+        "openIssues": 137,
+        "license": "MIT",
+        "archived": false,
+        "pushedAt": "2026-11-01T04:39:16Z",
+        "language": "Jupyter Notebook"
+      },
+      {
+        "name": "Python GenAI SDK",
+        "repository": "googleapis/python-genai",
+        "stars": 4062,
+        "forks": 1065,
+        "openIssues": 402,
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushedAt": "2026-11-12T02:50:46Z",
+        "language": "Python"
+      },
+      {
+        "name": "Lasm",
+        "repository": "Millillion/lasm",
+        "stars": 105,
+        "forks": 7,
+        "openIssues": 21,
+        "license": "MIT",
+        "archived": false,
+        "pushedAt": "2026-11-12T01:36:33Z",
+        "language": "C"
+      },
+      {
+        "name": "MarkItDown",
+        "repository": "microsoft/markitdown",
+        "stars": 194974,
+        "forks": 14707,
+        "openIssues": 807,
+        "license": "MIT",
+        "archived": false,
+        "pushedAt": "2026-11-07T00:14:01Z",
+        "language": "Python"
+      },
+      {
+        "name": "Minecraft Agent Harness",
+        "repository": "yc-software/minecraft-agent-harness",
+        "stars": 209,
+        "forks": 28,
+        "openIssues": 1,
+        "license": "MIT",
+        "archived": false,
+        "pushedAt": "2026-10-29T20:30:45Z",
+        "language": "JavaScript"
+      },
+      {
+        "name": "NVIDIA OpenShell",
+        "repository": "NVIDIA/OpenShell",
+        "stars": 21471,
+        "forks": 2095,
+        "openIssues": 651,
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushedAt": "2026-11-11T22:03:37Z",
+        "language": "Rust"
+      },
+      {
+        "name": "Pydantic AI",
+        "repository": "pydantic/pydantic-ai",
+        "stars": 21150,
+        "forks": 3149,
+        "openIssues": 1941,
+        "license": "MIT",
+        "archived": false,
+        "pushedAt": "2026-11-12T02:52:25Z",
+        "language": "Python"
+      },
+      {
+        "name": "uv",
+        "repository": "astral-sh/uv",
+        "stars": 91924,
+        "forks": 3810,
+        "openIssues": 3083,
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushedAt": "2026-11-11T15:49:58Z",
+        "language": "Rust"
+      }
+    ],
+    "testEvidence": "No runtime tests of these eight projects were executed; README/license/API metadata review only."
+  },
+  "library": {
+    "prHistoricalCatalog": {
+      "projects": 68,
+      "nonArchived": 66,
+      "archived": 2,
+      "inCurrentProjectFeed": 12,
+      "researchOnly": 54,
+      "membershipUnverified": 1,
+      "measuredInPreviousDossierAt": "2026-11-11T20:40:22+03:00"
+    },
+    "mainSiteResearch": {
+      "reviewedProjectDossiers": 3,
+      "projects": [
+        "firecrawl/firecrawl",
+        "nousresearch/hermes-agent",
+        "huggingface/transformers"
+      ]
+    },
+    "prEditorialProposals": {
+      "improvements": 311,
+      "spinoffs": 294,
+      "religious": 34,
+      "total": 639,
+      "structurallyComplete": 639,
+      "incomplete": 0
+    }
+  },
+  "validation": {
+    "localCheckout": false,
+    "localUnitTests": "not run locally",
+    "localValidateCommand": "not run locally",
+    "officialCiRun": 43144462079,
+    "ciConclusion": "success",
+    "ciSteps": {
+      "python -m unittest discover -s tests -v": "success",
+      "python scripts/editorial.py validate": "success",
+      "node --check site/app.js && node --check site/ideas.js": "success"
+    }
+  },
+  "publication": {
+    "latestScheduleRun": 43107278330,
+    "scheduleConclusion": "success",
+    "runHead": "4cf91e179fa2e8e42dc3d71f107bbc0889cf20f7",
+    "resultingMainDataCommit": "9ac538da9be6c0865a6c8f2f09632b6cc83fd7cc",
+    "pagesArtifactId": 13894492422,
+    "artifactExpired": false,
+    "directPagesHttpFetch": "DisabledError",
+    "publishedEditorialDirectlyVerified": false,
+    "prContentPublished": false
+  },
+  "decision": {
+    "mergePr98": false,
+    "reason": "The existing push-to-main workflow runs update_feed.py and stages feed.json, seen.json and status.json. Merging now could change feed.json/seen.json, which are explicitly protected.",
+    "codeDesignWorkflowOrSettingsChanges": false,
+    "mainFeedOrSeenChangedByThisRun": false,
+    "mainEditorialMerged": false,
+    "newPagesDeployment": false
+  }
+}

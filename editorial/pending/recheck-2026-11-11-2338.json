@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-11T23:38:26+03:00",
+  "repository": "lm7md-ai/.-",
+  "main": {
+    "sha": "4cf91e179fa2e8e42dc3d71f107bbc0889cf20f7",
+    "feed": {
+      "count": 800,
+      "news": 700,
+      "projects": 100,
+      "generatedAt": "2026-11-11T14:16:50+00:00",
+      "blobSha": "7551f639272d5ec6ef264e6713e37802421d6af4"
+    },
+    "editorial": {
+      "count": 917,
+      "activeExact": 197,
+      "activeNews": 99,
+      "activeProjects": 98,
+      "blobSha": "430ec5a47ff85d4eebd9fba101d40664fe97e769"
+    },
+    "seen": {
+      "count": 4398,
+      "blobSha": "a494fb6b7f9e7fee1cb3810d7dc06b566d9d48bd"
+    },
+    "status": {
+      "lastAttemptAt": "2026-11-11T14:16:50+00:00",
+      "state": "ok",
+      "collected": 393,
+      "successfulSources": 26,
+      "totalSources": 26
+    }
+  },
+  "incomingMain": {
+    "files": 102,
+    "occurrences": 1054,
+    "uniqueIdUrlPairs": 932,
+    "duplicateOccurrences": 122,
+    "alreadyImportedExact": 870,
+    "seenOnlyOutsideCurrentFeed": 62,
+    "activeUnimported": 0,
+    "idUrlMismatches": 0,
+    "orphans": 0,
+    "confirmedExpired": 0,
+    "jsonErrors": 0,
+    "auditMainSha": "4cf91e179fa2e8e42dc3d71f107bbc0889cf20f7",
+    "basis": "full structural scan recorded in recheck-2026-11-11-2040.json; same main SHA remains current"
+  },
+  "pr98": {
+    "headBeforeThisCommit": "2aa873167c61218ce7c182531ad3ec3f19598d70",
+    "editorialBefore": 942,
+    "editorialAfter": 952,
+    "activeExactBefore": 211,
+    "activeExactAfter": 221,
+    "activeNewsAfter": 121,
+    "activeProjectsAfter": 100,
+    "activeMissingAfter": 579,
+    "changedFilesBefore": 55,
+    "additionsBefore": 11552,
+    "deletionsBefore": 13,
+    "mergeable": true
+  },
+  "incomingPr": {
+    "filesBefore": 6,
+    "filesAfter": 7,
+    "occurrencesBefore": 40,
+    "occurrencesAfter": 50,
+    "uniquePairsBefore": 28,
+    "uniquePairsAfter": 38,
+    "duplicateOccurrences": 12,
+    "activeNewAfter": 24,
+    "activeNewNewsAfter": 22,
+    "activeNewProjectsAfter": 2,
+    "alreadyImportedExact": 1,
+    "historicalRetained": 11,
+    "pending": 2,
+    "idUrlMismatches": 0,
+    "structuralErrors": 0,
+    "newFile": "editorial/incoming/nabdh-editorial-2026-11-11-2338.json",
+    "newFileItems": 10
+  },
+  "newBatch": {
+    "news": 10,
+    "projects": 0,
+    "basisCounts": {
+      "article": 7,
+      "metadata": 3
+    },
+    "items": [
+      {
+        "id": "3cffec5790b8f2e218",
+        "titleAr": "Firefox يقلّص بصمة المتصفح ويعزز مقاومة التتبع دون ملفات تعريف الارتباط",
+        "url": "https://blog.mozilla.org/security/2026/11/10/open-research-stronger-privacy-making-firefox-users-harder-to-fingerprint/",
+        "basis": "article",
+        "sources": [
+          "https://blog.mozilla.org/security/2026/11/10/open-research-stronger-privacy-making-firefox-users-harder-to-fingerprint/"
+        ]
+      },
+      {
+        "id": "35f9d4a8ad49bd077c",
+        "titleAr": "المفوضية الأوروبية تقترح قانون العدالة الرقمية لمواجهة الأنماط المضللة والاشتراكات المعقدة",
+        "url": "https://www.wired.com/story/duolingo-strava-and-ticketmaster-are-all-caught-up-in-eus-new-digital-fairness-rules/",
+        "basis": "article",
+        "sources": [
+          "https://commission.europa.eu/news-and-media/news/making-your-online-experience-fairer-2026-11-11_en"
+        ]
+      },
+      {
+        "id": "1d584b01bcf30b6f44",
+        "titleAr": "PAN 2: نموذج عالم مفتوح من جامعة محمد بن زايد يحاكي نتائج الأفعال في مشاهد واقعية",
+        "url": "https://aitnews.com/2026/11/11/%d8%ac%d8%a7%d9%85%d8%b9%d8%a9-%d9%85%d8%ad%d9%85%d8%af-%d8%a8%d9%86-%d8%b2%d8%a7%d9%8a%d8%af-%d9%84%d9%84%d8%b0%d9%83%d8%a7%d8%a1-%d8%a7%d9%84%d8%a7%d8%b5%d8%b7%d9%86%d8%a7%d8%b9%d9%8a-%d8%aa%d8%b7-4/",
+        "basis": "article",
+        "sources": [
+          "https://mbzuai.ac.ae/news-events/news/the-institute-foundation-models-unveils-pan-2-open-world-model-physical"
+        ]
+      },
+      {
+        "id": "1251f00274bede43be",
+        "titleAr": "Adobe تعرض عشرة نماذج بحثية في MAX 2026 لتحرير الفيديو والصوت والصور",
+        "url": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai",
+        "basis": "article",
+        "sources": [
+          "https://blog.adobe.com/en/publish/2026/11/11/adobe-max-sneaks"
+        ]
+      },
+      {
+        "id": "14645f9d816239f1eb",
+        "titleAr": "Seagate تطلق FireCuda Forge بسعتي 8 و20 تيرابايت مع تخزين مؤقت ذكي",
+        "url": "https://aitnews.com/2026/11/11/%d8%b3%d9%8a%d8%ac%d9%8a%d8%aa-%d8%aa%d8%b7%d9%84%d9%82-firecuda-forge-%d8%a8%d8%aa%d8%ae%d8%b2%d9%8a%d9%86-%d9%85%d8%a4%d9%82%d8%aa-%d8%b0%d9%83%d9%8a-%d9%88%d8%b3%d8%b9%d8%a9-%d8%aa%d8%b5%d9%84/",
+        "basis": "article",
+        "sources": [
+          "https://investors.seagate.com/news/news-details/2026/Seagate-Launches-the-FireCuda-Forge-Powered-by-New-Alkemi-Intelligent-Platform-to-Deliver-Both-SSD-Grade-Responsiveness-and-HDD-Capacity/default.aspx"
+        ]
+      },
+      {
+        "id": "19b4fcb1faac9c9bdb",
+        "titleAr": "BotPsy يقدم نموذج وكيل صغيرًا بـ0.8 مليار معلمة للتشغيل على الأجهزة",
+        "url": "https://huggingface.co/blog/qvac/botpsy",
+        "basis": "article",
+        "sources": [
+          "https://tether.io/news/tethers-800m-ai-agent-beats-models-2-5x-its-size-on-everyday-phone-tasks/",
+          "https://qvac.tether.io/models/botpsy"
+        ]
+      },
+      {
+        "id": "fff18d7edb4b918233",
+        "titleAr": "OmniOps تطلق Bunyan Inference Hub لاستضافة استدلال الذكاء الاصطناعي داخل السعودية",
+        "url": "https://aitnews.com/2026/11/11/omniops-bunyan-inference-hub-saudi-arabia/",
+        "basis": "article",
+        "sources": [
+          "https://www.wamda.com/2026/11/omniops-unveils-bunyan-inference-hub-simplify-ai-deployment-saudi-arabia",
+          "https://aitnews.com/2026/11/11/omniops-bunyan-inference-hub-saudi-arabia/"
+        ]
+      },
+      {
+        "id": "f63659155352269baf",
+        "titleAr": "بحث يدرس فرقًا بشرية ووكلاء تنفذ تجارب أشعة سينية ذاتية مع توثيق القرارات",
+        "url": "https://arxiv.org/abs/2611.12933",
+        "basis": "metadata",
+        "sources": [
+          "https://arxiv.org/abs/2611.12933"
+        ]
+      },
+      {
+        "id": "70b6e0e37bdecc39c4",
+        "titleAr": "EarthRecord يختبر الوكلاء متعددة الوسائط على صور أقمار صناعية تمتد أربعة عقود",
+        "url": "https://arxiv.org/abs/2611.12934",
+        "basis": "metadata",
+        "sources": [
+          "https://arxiv.org/abs/2611.12934"
+        ]
+      },
+      {
+        "id": "e5cd4cd10b4ff8cfa7",
+        "titleAr": "TopicScope يراقب تغيّر موضوع النص أثناء التوليد باستخدام ميزات المحولات التلقائية المتناثرة",
+        "url": "https://arxiv.org/abs/2611.12935",
+        "basis": "metadata",
+        "sources": [
+          "https://arxiv.org/abs/2611.12935"
+        ]
+      }
+    ]
+  },
+  "pendingRecords": [
+    {
+      "id": "a425346c085c7dcb99",
+      "name": "ألواح شمسية شبه شفافة للزراعة",
+      "state": "seen-only; no current feed/editorial entry",
+      "action": "hold; do not import without exact active feed id/url"
+    },
+    {
+      "id": "cec6ab6c90d6d9e9c1",
+      "name": "Zebkit",
+      "state": "seen-only; no current feed/editorial entry",
+      "action": "hold; do not import without exact active feed id/url"
+    }
+  ],
+  "identityCollision": {
+    "name": "LLMs-from-scratch",
+    "historicalId": "7a99eca9b2ce14d9f5",
+    "activeId": "e0cbbf211a55e79f34",
+    "sameUrl": true,
+    "action": "preserve both exact identities; no title-derived alias"
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "latestVersion": "v0.1.8",
+      "publishedAt": "2026-11-10T18:14:42Z",
+      "dossier": "editorial/library/nvidia-openshell-release-review-2026-11-11-2040.json",
+      "status": "research-only; dossier source label corrected in commit 2aa873167c61218ce7c182531ad3ec3f19598d70"
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "productAvailability": "globally in Canva",
+      "apiStatus": "preview; public apps using preview API cannot pass public-app review or be made available to all Canva users",
+      "model": "craft_v1_2k",
+      "resolution": "up to 2K",
+      "aspectRatios": "30+",
+      "languages": "prompts any language; text in images 55 languages",
+      "cost": "uses AI credits; service app uses team API credits",
+      "status": "seen-only; hold"
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "supportedAgents": [
+        "Claude Duet",
+        "Grok Bot",
+        "Instinct",
+        "Muse",
+        "Town"
+      ],
+      "requirements": "individual/family 1Password.com account; app 8.12.42+; Login items in Personal/Private vaults",
+      "notSupported": [
+        "Passkeys",
+        "shared vaults",
+        "other item types",
+        "team/business accounts"
+      ],
+      "approval": "user-approved; up to 30 days; agent cannot approve its own request",
+      "status": "seen-only; hold"
+    }
+  ],
+  "sourceCorrections": [
+    {
+      "id": "d18ddd9c12e46dd96b",
+      "state": "needs-source-correction",
+      "reason": "old GitHub issue closed in 2022; does not establish a new event"
+    },
+    {
+      "id": "e3e3a03bfc5be7aa43",
+      "state": "needs-original-source",
+      "reason": "Google News intermediary; no original publisher source found; now outside Feed"
+    }
+  ],
+  "library": {
+    "historicalProjects": 68,
+    "nonArchived": 66,
+    "archived": 2,
+    "inCurrentProjectFeed": 12,
+    "researchOnly": 54,
+    "membershipUnverified": 1,
+    "projectFeedCoverageInPr": 100,
+    "projectFeedTotal": 100,
+    "ideasRecordedInPriorCatalogReport": 524,
+    "editorialProposalObjects": 639,
+    "proposalCounts": {
+      "improvements": 311,
+      "spinoffs": 294,
+      "religious": 34
+    },
+    "structurallyCompleteProposals": 639,
+    "incompleteProposals": 0,
+    "scopeNote": "524 is the prior catalog counter; 639 is the current proposal-object count in PR Editorial. Keep the scopes distinct until the historical catalog counter is reconciled."
+  },
+  "previousEight": {
+    "status": "reviewed in prior run; not remeasured in this run",
+    "latestSnapshotAt": "2026-11-11T20:40:00+03:00",
+    "file": "editorial/library/previous-eight-refresh-2026-11-11-2040.json"
+  },
+  "validation": {
+    "localUnitTests": "not_run_no_local_checkout",
+    "localValidateCommand": "not_run_no_local_checkout",
+    "localImportCommand": "not_run_no_local_checkout",
+    "structuralEquivalent": "10/10 incoming entries valid; all ids and urls match active main feed; 942 prior editorial entries preserved; 952 after merge",
+    "lastCompletedCi": {
+      "runId": 43073871881,
+      "conclusion": "success",
+      "tests": 30,
+      "validatedEditorialEntries": 942
+    },
+    "currentPreCommitCi": {
+      "runId": 43097677082,
+      "status": "queued",
+      "headSha": "2aa873167c61218ce7c182531ad3ec3f19598d70"
+    },
+    "projectRuntimeTests": "not_run"
+  },
+  "publication": {
+    "lastPagesRunId": 43036906603,
+    "artifactId": 13862664074,
+    "artifactPresent": true,
+    "artifactExpired": false,
+    "artifactCounts": {
+      "editorial": 917,
+      "feed": 800,
+      "seen": 4398,
+      "status": "ok",
+      "sources": 26,
+      "sourcesSuccessful": 26
+    },
+    "lastStatusAttempt": "2026-11-11T14:16:50+00:00",
+    "directPagesHttpFetch": "DisabledError",
+    "detailBrowserOpen": "DisabledError",
+    "existingNewsDetail": "https://lm7md-ai.github.io/.-/#item=10bdc73097cfd2386d",
+    "existingProjectDetail": "https://lm7md-ai.github.io/.-/#item=ab84e19553c74c6e20",
+    "newBatchPublished": false
+  },
+  "decision": {
+    "mergePr98": false,
+    "reason": "push to main triggers update-and-deploy.yml, which runs update_feed.py and stages feed.json, seen.json and status.json; merging would violate the explicit no-feed/no-seen constraint",
+    "noCodeDesignWorkflowOrSettingsChanges": true,
+    "noFeedOrSeenChanges": true
+  }
+}

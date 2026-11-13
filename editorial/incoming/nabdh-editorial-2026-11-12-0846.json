@@ -1,0 +1,380 @@
+{
+  "version": 1,
+  "generatedAt": "2026-11-12T08:46:40+03:00",
+  "items": {
+    "65b96c238445cdedc9": {
+      "titleAr": "مكتب Gilbert + Tobin ينتقل من تجارب الذكاء الاصطناعي إلى سير عمل قانوني متعدد الخطوات",
+      "summaryAr": "تقول دراسة الحالة المنشورة من OpenAI إن المكتب بدأ بالتجريب الفردي، ثم أدخل ChatGPT Enterprise وChatGPT Work وCodex لدعم مهام متعددة الخطوات، مع إبقاء المراجعة والاعتماد النهائي بيد الموظفين. وتذكر الحالة ضوابط وصول وإقامة بيانات داخل أستراليا.",
+      "whyItMatters": "التحليل: المثال يوضح انتقال الذكاء الاصطناعي من مساعدة فردية إلى عمليات مؤسسية مترابطة؛ وتبقى السرية المهنية وحدود صلاحيات الوكيل والمراجعة البشرية عوامل حاسمة.",
+      "audience": "طلاب الذكاء الاصطناعي والبرمجة، مطورو أدوات المؤسسات، وفرق القانون والحوكمة.",
+      "nextSteps": [
+        "اقرأ مراحل التبني الثلاث وافصل بين التجريب والإنتاج.",
+        "حدد البيانات المسموح بها ونقاط الموافقة البشرية قبل ربط الأدوات.",
+        "تعامل مع أرقام الاستخدام والتوفير باعتبارها إفادات من العميل وOpenAI لا قياسًا مستقلًا."
+      ],
+      "limitations": "دراسة حالة تسويقية منشورة من OpenAI ومبنية على مقابلة مع العميل؛ لا تقدم تدقيقًا مستقلًا للأثر أو مقارنة منهجية قبل التطبيق وبعده.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "OpenAI — Gilbert + Tobin rethinks the business of law with AI",
+          "url": "https://openai.com/index/gilbert-tobin-sam-nickless/"
+        }
+      ],
+      "url": "https://openai.com/index/gilbert-tobin-sam-nickless",
+      "reviewedAt": "2026-11-12T08:46:40+03:00"
+    },
+    "02bfed5e7aa817ea9d": {
+      "titleAr": "Google تطلق Gemini Decisions API لتقييم ما يصل إلى ألف قرار متعدد الوسائط في طلب واحد",
+      "summaryAr": "أعلنت Google عن Gemini Decision 1 وواجهة Decisions API لتقييم أسئلة نعم/لا أو الاختيار بين بدائل أو الدرجات وفق معيار على مدخل مشترك قد يتضمن نصًا وصورًا وصوتًا وفيديو وPDF. وتقول الشركة إن الواجهة تعيد احتمالات وثقة بدل توليد نص طويل، وتذكر زمنًا إجماليًا 150–250 مللي ثانية وتسعيرًا قدره 0.10 دولار لكل مليون رمز إدخال دون رموز إخراج مفوترة.",
+      "whyItMatters": "التحليل: تفصل الواجهة قرارات التصنيف والتوجيه عن توليد النص، وقد تفيد اختيار الأدوات وفحص السياسات داخل الوكلاء؛ لكن الثقة الاحتمالية ليست ضمانًا للصحة ويجب ضبط عتباتها على بيانات التطبيق.",
+      "audience": "مطورو Python وJavaScript، مهندسو الوكلاء، وباحثو تقييم النماذج متعددة الوسائط.",
+      "nextSteps": [
+        "حدد هل المهمة اختيار محدود أم تحتاج إجابة مولدة.",
+        "اختبر المعايرة على مجموعة موسومة من بياناتك وقارنها بخط أساس.",
+        "صعّد الحالات منخفضة الثقة أو عالية الأثر إلى مراجعة بشرية."
+      ],
+      "limitations": "الأداء والتسعير والمقارنة أرقام منشورة من Google وليست قياسًا مستقلًا؛ التوثيق يستخدم v1beta وقد تتغير الحدود والإتاحة.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Google — Gemini Decisions API",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+        },
+        {
+          "title": "Google AI Studio — Decisions API documentation",
+          "url": "https://aistudio.google.com/docs/decisions-api"
+        }
+      ],
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "reviewedAt": "2026-11-12T08:46:40+03:00"
+    },
+    "b21fa54b837dba6b35": {
+      "titleAr": "باحثو Apple يدرسون تسريع استرجاع RAG بتعلّم توزيع الاستعلامات",
+      "summaryAr": "تشرح Apple بحثًا قُدّم في ICML 2026 يستخدم شبكات عصبية صغيرة تتدرب مسبقًا على قاعدة مفاتيح ثابتة وتوزيع الاستعلامات المتوقع، ثم توجه الاستعلام إلى أفضل تطابق بسرعة. تقايض الطريقة كلفة تدريب أولية باسترجاع أسرع ضمن ظروف البحث المدروسة.",
+      "whyItMatters": "التحليل: يمكن أن يكون توزيع الاستعلامات المعروف ميزة لا تستغلها فهارس البحث العامة؛ لكن الحل يصبح أقل ملاءمة إذا تغيرت قاعدة البيانات أو سلوك المستخدم.",
+      "audience": "باحثو تعلم الآلة، مهندسو البحث وRAG، ومطورو قواعد المتجهات.",
+      "nextSteps": [
+        "اقرأ الورقة المرتبطة لفهم دالة الدعم وآلية التدريب.",
+        "قارنها بخط أساس exact MIPS وبفهرس تقريبي على استعلامات ممثلة.",
+        "قِس recall وlatency وكلفة التدريب بعد تغير قاعدة المفاتيح."
+      ],
+      "limitations": "المادة بحثية وليست إعلانًا عن مكتبة جاهزة؛ تفترض قاعدة مفاتيح ثابتة وتوزيع استعلامات يمكن توصيفه، وقد تتراجع فائدتها مع تغير التوزيع.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Apple ML Research — Faster Retrieval for Better, More Efficient RAG",
+          "url": "https://machinelearning.apple.com/research/faster-retrieval"
+        },
+        {
+          "title": "Apple ML Research — Amortizing Maximum Inner Product Search with Learned Support Functions",
+          "url": "https://machinelearning.apple.com/research/amortizing-inner-product-search"
+        }
+      ],
+      "url": "https://machinelearning.apple.com/research/faster-retrieval",
+      "reviewedAt": "2026-11-12T08:46:40+03:00"
+    },
+    "31699ba3bf57a08cdb": {
+      "titleAr": "Tendrils تعلن جمع 30 مليون دولار لتطوير معمارية معالجات موازية ولغة Vine",
+      "summaryAr": "أعلنت Tendrils جولة بقيمة 30 مليون دولار بقيادة Benchmark لتمويل تصور لمعالجات عامة تحتوي آلاف الأنوية المتوازية، بالتوازي مع لغة Vine مفتوحة المصدر تستهدف هذه المعمارية. تطرح الشركة ذلك كرؤية هندسية طويلة الأمد لا منتج متاح.",
+      "whyItMatters": "التحليل: إذا تحولت الفكرة إلى عتاد وأدوات قابلة للاستخدام فقد تؤثر في المترجمات والبرمجيات المتوازية؛ لكن التمويل والرؤية لا يثبتان تفوق الأداء أو جاهزية السيليكون.",
+      "audience": "طلاب هندسة الحاسب، مهندسو المعالجات والمترجمات، ومطورو الأنظمة عالية الأداء.",
+      "nextSteps": [
+        "تابع مواصفات المعمارية وشفرة Vine.",
+        "انتظر اختبارات عتاد مستقلة تقارن الأداء والطاقة والتوافق.",
+        "افصل بين إمكانات اللغة المعلنة وتوفر معالج فعلي للاختبار."
+      ],
+      "limitations": "إعلان الشركة لا يتضمن معالجًا متاحًا أو benchmarks مستقلة أو جدولًا مؤكدًا لوصول العتاد؛ الانتقادات للمعماريات الحالية تمثل أطروحة الشركة.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Tendrils — $30M Raised to Redo the CPU",
+          "url": "https://tendrils.co/blog/2026-11-10/30m-raised"
+        }
+      ],
+      "url": "https://tendrils.co/blog/2026-11-10/30m-raised",
+      "reviewedAt": "2026-11-12T08:46:40+03:00"
+    },
+    "b87487ef036547770a": {
+      "titleAr": "تقرير Reuters Institute: استخدام الذكاء الاصطناعي يتوسع كمصدر للمعلومات لكن تقبّل صناعة الأخبار آليًا ما زال منخفضًا",
+      "summaryAr": "يعرض تقرير Reuters Institute لعام 2026، المبني على استطلاع YouGov في تسع دول، ارتفاع الاستخدام الأسبوعي إلى 51% في الدول الست ذات بيانات المقارنة، وذكر 57% أنهم شاهدوا أو استخدموا إجابات مولدة في البحث. في المقابل قال 67% إنهم لم يستخدموا وكيلًا خلال الأسبوع السابق، ولم يبدِ سوى 12% ارتياحًا لأخبار مصنوعة بالكامل بالذكاء الاصطناعي مقابل 19% مع إشراف بشري.",
+      "whyItMatters": "التحليل: الاستخدام يتوسع أسرع من قبول الجمهور لاستبدال الصحفي؛ لذا ينبغي أن تركز منتجات الأخبار على الإفصاح والمصادر القابلة للتتبع والمراجعة البشرية.",
+      "audience": "طلاب الذكاء الاصطناعي، مطورو منتجات المحتوى والبحث، الصحفيون، وفرق السياسات الرقمية.",
+      "nextSteps": [
+        "اقرأ المنهجية ولا تخلط متوسط الدول التسع باتجاهات الدول الست.",
+        "استخدم الإفصاح وروابط المصادر والمراجعة البشرية عند بناء أدوات نشر.",
+        "لا تعمم النتائج على الجمهور السعودي أو العربي دون بيانات محلية."
+      ],
+      "limitations": "العينة تسع دول وجُمعت عبر استبيان إلكتروني؛ يذكر التقرير أن الفروق الصغيرة قد لا تكون ذات دلالة وأن النتائج تعتمد على تذكر المشاركين.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Reuters Institute — Generative AI and News Report 2026",
+          "url": "https://reutersinstitute.politics.ox.ac.uk/generative-ai-and-news-report-2026-standalone-tools-information-infrastructure"
+        },
+        {
+          "title": "Nieman Lab — AI is becoming an information gateway",
+          "url": "https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news/"
+        }
+      ],
+      "url": "https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news/",
+      "reviewedAt": "2026-11-12T08:46:40+03:00"
+    },
+    "312cc2672ec7b82778": {
+      "titleAr": "GitHub يعيد Actions وPages وCopilot وWebhooks بعد عطل متعدد الخدمات",
+      "summaryAr": "تُظهر صفحة حالة GitHub أن تدهور الخدمة في 11 نوفمبر أثّر في Actions وPages وCopilot وWebhooks. أعلنت الشركة اكتمال معالجة تراكم مهام Actions وعودة الخدمات إلى التعافي الكامل عند 21:21 UTC، وقالت إن تحليل السبب الجذري سينشر لاحقًا.",
+      "whyItMatters": "التحليل: تعطل منصة واحدة قد يؤخر الاختبارات والنشر حتى لو كان المستودع سليمًا؛ لذلك يفيد الاحتفاظ بمسار تحقق محلي ومعرفة وقت الحادث قبل إعادة تشغيل المهام الفاشلة.",
+      "audience": "المطورون، مسؤولو DevOps، مشغلو المواقع الثابتة، وفرق CI/CD.",
+      "nextSteps": [
+        "راجع أوقات تشغيل CI/CD وقارنها بالجدول الزمني للحادث.",
+        "أعد فحص المهام التي فشلت خلال نافذة العطل بعد عودة الخدمة.",
+        "احتفظ بأوامر الاختبار المحلية وسجل النشر."
+      ],
+      "limitations": "هذه صفحة حالة تشغيلية وليست تقرير سبب جذري؛ GitHub قال إن تحليلًا تفصيليًا سينشر لاحقًا. الحادث معلن كمحلول.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "GitHub Status — Impact across multiple GitHub products",
+          "url": "https://www.githubstatus.com/incidents/dvy0t3mvh1lg"
+        }
+      ],
+      "url": "https://www.githubstatus.com/incidents/dvy0t3mvh1lg",
+      "reviewedAt": "2026-11-12T08:46:40+03:00"
+    },
+    "b8c7de61a30502becd": {
+      "titleAr": "دراسة سدايا تضع السعودية ثالثة عالميًا في نمو كفاءات الذكاء الاصطناعي",
+      "summaryAr": "تنقل عكاظ عن دراسة «حالة الذكاء الاصطناعي في المملكة» الصادرة عن سدايا حصول السعودية على المركز الثالث عالميًا في نمو كفاءات الذكاء الاصطناعي وفق مؤشر Stanford لعام 2026، والثالث في تطوير النماذج الرائدة لعام 2025. وتذكر الدراسة نمو سعة مراكز البيانات 115.8% بين 2023 و2025، ووجود تسع مناطق سحابية، إلى جانب مؤشرات عن التبني الحكومي والبحث العلمي.",
+      "whyItMatters": "التحليل: الأرقام ترسم صورة عن نمو البنية التحتية والمواهب والبحث محليًا، لكنها لا تقيس جودة كل مشروع أو فرص كل تخصص بمفردها.",
+      "audience": "طلاب الجامعات السعودية، مطورو الذكاء الاصطناعي، الجامعات والشركات وصناع السياسات.",
+      "nextSteps": [
+        "قارن المؤشرات بمصادرها الأصلية مثل Stanford AI Index.",
+        "تابع نشر نسخة الدراسة الكاملة من سدايا للتحقق من تعريف كل مؤشر.",
+        "حوّل مؤشرات النمو إلى أسئلة عملية عن المهارات المطلوبة والبحث المحلي."
+      ],
+      "limitations": "اطلعنا على التقرير الصحفي الكامل الذي يلخص دراسة سدايا، ولم نعثر على نسخة الدراسة الكاملة نفسها. الترتيبات تخص مؤشرات وسنوات مختلفة ولا ينبغي دمجها في ترتيب واحد.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "عكاظ — دراسة لسدايا: السعودية الثالثة عالميًا في نمو كفاءات الذكاء الاصطناعي",
+          "url": "https://www.okaz.com.sa/local/na/2275173"
+        }
+      ],
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB4N3hSbDJabVg4WnB4VUJRVVBDZDZrQnhnTUJhYjJLanNIclRwMmRWN2lEeFFuTnFVUzVpQWRPRVpjSVR2eERFdGpDSUZfQXRRdnfSAVRBVV95cUxPNzVPT21fOEYxT2pMdDFGNVkyMHlUSUtLWWVaaWNTLTRTQWNya3RTRWhocWpLZjJVaHdUS3A4c0ZoalRvMDgwS09iazhiYzZiX3RNQTE?oc=5",
+      "reviewedAt": "2026-11-12T08:46:40+03:00"
+    },
+    "1df6a00742e99b5a00": {
+      "titleAr": "United Airlines تقيّد وكلاء الذكاء الاصطناعي الخارجيين من إجراء الحجوزات دون إذن",
+      "summaryAr": "أفادت PhocusWire بأن United Airlines تمنع وكلاء الذكاء الاصطناعي الشخصيين من إجراء الحجوزات عبر موقعها وتطبيقها، وتمتد السياسة إلى استخدام الوكلاء عبر وكالات السفر ومنصات الحجز دون موافقة الشركة. وتقول الشركة إن حماية بيانات الحساب ومنع المعاملات أو التغييرات غير المقصودة من دوافع القرار.",
+      "whyItMatters": "التحليل: التجارة الوكيلة لا تعتمد على قدرة النموذج على النقر فقط؛ بل تحتاج تكاملًا مصرحًا به وموافقة واضحة ومسؤولية عن المعاملة، وإلا قد تمنع المنصات الوكلاء من إتمامها.",
+      "audience": "مطورو الوكلاء، فرق أمن الحسابات، شركات السفر، ومصممو منتجات التجارة الرقمية.",
+      "nextSteps": [
+        "اقرأ سياسة United الرسمية قبل تصميم تكامل معها.",
+        "استخدم واجهات معتمدة ولا تشارك بيانات الحساب مع وكيل خارجي.",
+        "صمم تأكيدًا بشريًا قبل أي معاملة أو تغيير في حساب المستخدم."
+      ],
+      "limitations": "التغطية الصحفية تنقل سياسة United، ولم تنشر تفاصيل تقنية كاملة عن آلية الإنفاذ أو برنامج الشراكات؛ لا تعمم سياسة شركة واحدة على بقية شركات الطيران.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "PhocusWire — United blocks third-party AI agents from app, website",
+          "url": "https://www.phocuswire.com/news/technology/united-blocks-third-party-ai-agents-from-app-website"
+        },
+        {
+          "title": "United Airlines — Digital Trust Center: Third-party AI agents",
+          "url": "https://www.united.com/en/us/fly/help-center/digital-trust-center/artificial-intelligence/third-party-ai-agents.html"
+        }
+      ],
+      "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+      "reviewedAt": "2026-11-12T08:46:40+03:00"
+    },
+    "d0e5cfeb79c6e58571": {
+      "titleAr": "MACaQ من هواوي: أدوات مفتوحة لتكميم النماذج وتشغيلها محليًا عبر أطر متعددة",
+      "summaryAr": "يقدم مستودع Huawei CSL مسارات لتكميم GGUF والنماذج النصية والصورية والفيديو والصوت عبر llama.cpp وvLLM وDiffusers وPyTorch، مع بيئات Python 3.12 منفصلة لكل backend. يذكر README تجربة لتكميم نموذج 122B خلال 64 دقيقة وبذاكرة 32.5GB؛ هذه نتيجة يوردها أصحاب المشروع ولم نتحقق منها مستقلًا.",
+      "whyItMatters": "التحليل: يجمع المشروع مسارات تكميم واستدلال محلي متعددة، ما قد يساعد على مقارنة الجودة والذاكرة والسرعة بدل الاعتماد على خدمة سحابية؛ لكن الفائدة تعتمد على العتاد والـbackend ومقدار تراجع الجودة.",
+      "audience": "مطورو النماذج المحلية، باحثو تعلم الآلة، مهندسو الاستدلال، ومهتمو النماذج متعددة الوسائط.",
+      "nextSteps": [
+        "اختر backend واحدًا وابدأ بنموذج صغير.",
+        "قارن الجودة قبل التكميم وبعده على مجموعة تقييم مناسبة.",
+        "سجل نوع GPU والذاكرة وإصدارات CUDA والاعتماديات.",
+        "راجع ترخيص الأوزان منفصلًا عن ترخيص المستودع."
+      ],
+      "limitations": "لم نشغل المشروع أو نتحقق من أرقام الأداء. نتائج 122B/64 دقيقة و32.5GB منشورة في README وتعتمد على العتاد والإعدادات. مسار CPU موثق لـllama.cpp؛ بينما vLLM ومسارات Diffusers/PyTorch لها متطلبات عتاد وتبعيات خاصة.",
+      "basis": "readme",
+      "overview": "مستودع Apache-2.0 لتكميم GGUF والنماذج النصية ومتعددة الوسائط، مع أدلة مستقلة لـllama.cpp وvLLM وDiffusers وPyTorch وAscend. يجهز بيانات المعايرة ثم يحفظ checkpoints أو GGUF لتشغيلها محليًا أو عبر vLLM.",
+      "requirements": "Python 3.12 وبيئة منفصلة لكل backend. llama.cpp يدعم CPU عبر requirements/llamacpp-cpu.txt أو GPU مع CUDA. vLLM يستهدف Linux/GPU ويتطلب requirements/vllm.txt وملفات البناء. Diffusers وPyTorch لهما متطلبات مستقلة للنماذج الصورية والفيديو والصوت وTTS. Ascend يحتاج CANN وPyTorch وtorch_npu متوافقة.",
+      "quickStart": "استنسخ https://github.com/huawei-csl/MACaQ.git، واستخدم Python 3.12، واختر backend واحدًا. لمسار النص على CPU اتبع llamacpp/README.md وثبّت requirements/llamacpp-cpu.txt وابنِ llama.cpp مع GGML_CUDA=OFF. لمسار GPU اتبع تعليمات CUDA أو دليل backend المناسب، جهز بيانات المعايرة من أمثلة المستودع، نفذ أمر quantize ثم اختبر عينة صغيرة.",
+      "costModel": "المستودع مفتوح المصدر ولا يفرض اشتراكًا أو API مدفوعًا. التكلفة الأساسية العتاد والطاقة والتخزين وتنزيل الأوزان؛ GPU سحابي يضيف تكلفة وقت GPU. قد تكون لأوزان النماذج وdatasets تراخيص منفصلة.",
+      "localVsCloud": "يمكن تشغيل llama.cpp على CPU محليًا أو GPU محلي، وتشغيل backends أخرى على GPU متوافق. vLLM مناسب لخدمة استدلال على Linux/GPU. يمكن استئجار GPU سحابي عند الحاجة؛ MACaQ نفسه ليس خدمة مستضافة ولا يحتاج API خارجيًا افتراضيًا.",
+      "licenseSummary": "ملف LICENSE وGitHub API يحددان Apache-2.0 للمستودع. هذا لا يمنح تلقائيًا حق إعادة توزيع أوزان النماذج أو datasets؛ افحص ترخيص كل نموذج وتبعياته.",
+      "activityAssessment": "غير مؤرشف؛ آخر دفع مرصود 2026-11-12T00:11:46Z. قياس GitHub API عند 2026-11-12T08:46:40+03:00: 126 نجمة و6 forks و1 issue مفتوح.",
+      "metrics": {
+        "stars": 126,
+        "forks": 6,
+        "openIssuesCount": 1,
+        "archived": false,
+        "disabled": false,
+        "licenseSpdx": "Apache-2.0",
+        "pushedAt": "2026-11-12T00:11:46Z",
+        "updatedAt": "2026-11-12T05:42:40Z",
+        "defaultBranch": "main",
+        "language": "Python",
+        "measuredAt": "2026-11-12T08:46:40+03:00",
+        "sourceApiUrl": "https://api.github.com/repos/huawei-csl/MACaQ"
+      },
+      "alternatives": [
+        {
+          "name": "llama.cpp quantization",
+          "url": "https://github.com/ggml-org/llama.cpp",
+          "tradeoff": "مسار مباشر لتكميم GGUF على CPU وGPU؛ أقل توحيدًا من MACaQ عبر backends متعددة."
+        },
+        {
+          "name": "bitsandbytes",
+          "url": "https://github.com/bitsandbytes-foundation/bitsandbytes",
+          "tradeoff": "مناسب لتكميم وتحميل أوزان PyTorch؛ يختلف عن مسارات GGUF ومتعدد الوسائط."
+        }
+      ],
+      "improvements": [
+        {
+          "title": "حزمة benchmark موحدة للجودة والسرعة والذاكرة",
+          "problem": "تختلف نتائج التكميم حسب backend والعتاد ومجموعة المعايرة، ما يصعب مقارنة الوصفات.",
+          "approach": "إضافة مجموعة قياس ثابتة تسجل الجودة والكمون والذاكرة ووقت المعايرة قبل التكميم وبعده.",
+          "stack": "Python 3.12, pytest, JSONL, llama.cpp, vLLM, PyTorch",
+          "steps": [
+            "اختر نموذجين مفتوحي الأوزان بتراخيص واضحة.",
+            "ثبت مجموعة معايرة واختبار منفصلة لكل مهمة.",
+            "شغل baseline غير مكمم على العتاد نفسه.",
+            "نفذ وصفات التكميم وسجل الذاكرة والكمون والجودة.",
+            "انشر النتائج مع إصدار العتاد والسائق والحزم."
+          ],
+          "metric": "تقرير قابل للتكرار يغطي ثلاثة backends على الأقل ويعرض الجودة والذاكرة والكمون ووقت المعايرة.",
+          "difficulty": "متوسطة إلى عالية؛ تقدير 4–6 أسابيع.",
+          "risks": "تكلفة GPU واختلاف kernels وصعوبة مقارنة مهام متعددة الوسائط بمقياس واحد.",
+          "sources": [
+            {
+              "title": "MACaQ README",
+              "url": "https://github.com/huawei-csl/MACaQ#readme"
+            },
+            {
+              "title": "MACaQ llama.cpp guide",
+              "url": "https://github.com/huawei-csl/MACaQ/blob/main/llamacpp/README.md"
+            }
+          ]
+        },
+        {
+          "title": "فاحص توافق مسبق للعتاد والاعتماديات",
+          "problem": "قد يفشل التثبيت بسبب اختلاف CUDA أو CANN أو إصدار Python أو بيئة backend قبل بدء التكميم.",
+          "approach": "فاحص يقرأ النظام والذاكرة وإصدارات السائق والحزم ويقترح مسار CPU أو GPU المتوافق دون تعديل النظام تلقائيًا.",
+          "stack": "Python 3.12, uv, packaging, platform, JSON reports",
+          "steps": [
+            "اجمع متطلبات كل backend من README وملفات requirements.",
+            "أضف فحوص Python وGPU وCUDA وCANN.",
+            "اعرض المسار المتوافق وأسباب عدم توافق المسارات الأخرى.",
+            "أنشئ تقريرًا قابلًا للتصدير مع الإصدارات المقترحة.",
+            "اختبر الفاحص على بيئات CPU وGPU منفصلة."
+          ],
+          "metric": "تحديد صحيح لمسار التثبيت في 95% من بيئات الاختبار المرجعية.",
+          "difficulty": "متوسطة؛ تقدير 3–5 أسابيع.",
+          "risks": "تعدد تعريفات GPU وتغير إصدارات السائق قد يجعل نتيجة الفحص قديمة.",
+          "sources": [
+            {
+              "title": "MACaQ README",
+              "url": "https://github.com/huawei-csl/MACaQ#readme"
+            },
+            {
+              "title": "MACaQ vLLM guide",
+              "url": "https://github.com/huawei-csl/MACaQ/blob/main/vllm/README.md"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مختبر تكميم للنماذج العربية المحلية",
+          "problem": "لا توجد مقارنة موحدة كافية توضح أثر التكميم على فهم العربية واللهجات ومهام الاستدلال.",
+          "approach": "حزمة تقييم عربية تقارن نموذجًا أصليًا ونسخًا مكممة على مهام فهم وتعليمات وتلخيص.",
+          "stack": "Python, MACaQ, llama.cpp, JSONL, pytest",
+          "steps": [
+            "اختر نماذج عربية أو متعددة اللغات مرخصة.",
+            "ابنِ مجموعة أسئلة عربية مراجعة بشريًا ومتوازنة.",
+            "شغل النموذج الأصلي وسجل baseline.",
+            "كمّم نسخًا متعددة بوصفات MACaQ.",
+            "قارن الدقة والذاكرة والكمون وانشر الحدود."
+          ],
+          "metric": "مقارنة ثلاثة مستويات تكميم وثلاث مهام عربية على الأقل بنتائج قابلة للتكرار.",
+          "difficulty": "عالية؛ تقدير 5–8 أسابيع.",
+          "risks": "تحيز مجموعة التقييم واختلاف ترخيص الأوزان وتراجع الجودة في لهجات غير ممثلة.",
+          "sources": [
+            {
+              "title": "MACaQ README",
+              "url": "https://github.com/huawei-csl/MACaQ#readme"
+            },
+            {
+              "title": "MACaQ paper",
+              "url": "https://arxiv.org/abs/2611.10649"
+            }
+          ]
+        },
+        {
+          "title": "مختبر محلي لتكميم النماذج متعددة الوسائط",
+          "problem": "يصعب معرفة المفاضلة بين حجم نموذج الصورة أو الصوت أو الفيديو وجودة مخرجاته على جهاز محدود.",
+          "approach": "واجهة بحثية محلية تسجل وصفات Diffusers وPyTorch وتعرض حجم checkpoint والذاكرة والوقت وجودة عينات الاختبار.",
+          "stack": "Python, Diffusers, PyTorch, MACaQ, Gradio",
+          "steps": [
+            "اختر نموذج صورة ونموذج صوت يدعمهما README.",
+            "حدد عينات مرخصة ومقاييس جودة مناسبة.",
+            "نفذ baseline ثم وصفات W4A4 الموثقة.",
+            "سجل الذاكرة والوقت وحجم الملفات والنتائج.",
+            "اعرض مقارنة محلية مع ربط النتائج بالعتاد."
+          ],
+          "metric": "تقرير قابل لإعادة الإنتاج لنموذجين ووسيطين مع قياس الحجم والذاكرة والوقت والجودة.",
+          "difficulty": "عالية؛ تقدير 6–8 أسابيع.",
+          "risks": "تفاوت مقاييس الجودة وكلفة GPU وقيود تراخيص بيانات الاختبار.",
+          "sources": [
+            {
+              "title": "MACaQ Diffusers guide",
+              "url": "https://github.com/huawei-csl/MACaQ/blob/main/diffusers/README.md"
+            },
+            {
+              "title": "MACaQ PyTorch guide",
+              "url": "https://github.com/huawei-csl/MACaQ/blob/main/pytorch/README.md"
+            }
+          ]
+        }
+      ],
+      "religious": [],
+      "testStatus": "not_run",
+      "testEvidence": [],
+      "sources": [
+        {
+          "title": "MACaQ README",
+          "url": "https://github.com/huawei-csl/MACaQ#readme"
+        },
+        {
+          "title": "llama.cpp backend guide",
+          "url": "https://github.com/huawei-csl/MACaQ/blob/main/llamacpp/README.md"
+        },
+        {
+          "title": "vLLM backend guide",
+          "url": "https://github.com/huawei-csl/MACaQ/blob/main/vllm/README.md"
+        },
+        {
+          "title": "Diffusers backend guide",
+          "url": "https://github.com/huawei-csl/MACaQ/blob/main/diffusers/README.md"
+        },
+        {
+          "title": "PyTorch backend guide",
+          "url": "https://github.com/huawei-csl/MACaQ/blob/main/pytorch/README.md"
+        },
+        {
+          "title": "MACaQ paper",
+          "url": "https://arxiv.org/abs/2611.10649"
+        },
+        {
+          "title": "MACaQ LICENSE",
+          "url": "https://github.com/huawei-csl/MACaQ/blob/main/LICENSE"
+        }
+      ],
+      "url": "https://github.com/huawei-csl/MACaQ",
+      "reviewedAt": "2026-11-12T08:46:40+03:00"
+    }
+  }
+}

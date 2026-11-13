@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "kind": "previous-eight-live-metrics",
+  "measuredAt": "2026-11-12T18:41:02+03:00",
+  "source": "GitHub REST repository metadata",
+  "note": "Fresh metadata recheck of the eight projects already in the previous snapshot. Stars, forks and openIssues are point-in-time counters; pushedAt is the latest repository push timestamp. No tests of project code were run.",
+  "projects": [
+    {
+      "repo": "patchy631/ai-engineering-hub",
+      "stars": 41800,
+      "forks": 6679,
+      "openIssues": 137,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-11-01T04:39:16Z"
+    },
+    {
+      "repo": "googleapis/python-genai",
+      "stars": 4065,
+      "forks": 1064,
+      "openIssues": 402,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-11-12T12:37:01Z"
+    },
+    {
+      "repo": "Millillion/lasm",
+      "stars": 105,
+      "forks": 7,
+      "openIssues": 18,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-11-12T15:31:38Z"
+    },
+    {
+      "repo": "microsoft/markitdown",
+      "stars": 195069,
+      "forks": 14718,
+      "openIssues": 808,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-11-07T00:14:01Z"
+    },
+    {
+      "repo": "yc-software/minecraft-agent-harness",
+      "stars": 212,
+      "forks": 28,
+      "openIssues": 1,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-29T20:30:45Z"
+    },
+    {
+      "repo": "NVIDIA/OpenShell",
+      "stars": 21496,
+      "forks": 2099,
+      "openIssues": 655,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-11-12T15:58:00Z"
+    },
+    {
+      "repo": "pydantic/pydantic-ai",
+      "stars": 21170,
+      "forks": 3156,
+      "openIssues": 1953,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-11-12T16:03:37Z"
+    },
+    {
+      "repo": "astral-sh/uv",
+      "stars": 91942,
+      "forks": 3809,
+      "openIssues": 3077,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-11-12T16:03:06Z"
+    }
+  ],
+  "summary": {
+    "checked": 8,
+    "archived": 0,
+    "unarchived": 8,
+    "newProjectsAdded": 0
+  }
+}

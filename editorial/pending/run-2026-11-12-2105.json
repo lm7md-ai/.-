@@ -1,0 +1,246 @@
+{
+  "version": 1,
+  "runAt": "2026-11-12T21:05:47+03:00",
+  "mainSha": "cef15d89bd6eebd529da2387f189fad4ac1ab955",
+  "prNumber": 98,
+  "prHeadBefore": "42db9ee737e81862d6de5bdc4fead6d6a0723eb1",
+  "incomingAudit": {
+    "mainIncomingFiles": 102,
+    "mainIncomingOccurrences": 1054,
+    "mainIncomingUniquePairs": 932,
+    "mainIncomingDuplicates": 122,
+    "mainIncomingExactFeedMatches": 870,
+    "mainIncomingSeenOnly": 62,
+    "prOnlyIncomingFiles": 13,
+    "prOnlyOccurrences": 91,
+    "prOnlyUniquePairs": 53,
+    "prOnlyDuplicates": 38,
+    "prOnlyActiveExactPairs": 36,
+    "prOnlyAlreadyInPrEditorial": 28,
+    "activeExactPairsAddedThisRun": 8,
+    "outsideCurrentFeed": 17,
+    "outsideAlsoInSeen": 17,
+    "idUrlMismatches": 0,
+    "confirmedExpired": 0,
+    "note": "The 102 main incoming files have the same blob SHAs on the PR branch as on main and were previously fully reconciled; the 13 PR-only files were re-fetched and structurally checked in this run."
+  },
+  "outsideFeedPending": [
+    {
+      "id": "86708699833d3a9796",
+      "url": "https://research.meta.ai/blog/muse-ember",
+      "titleAr": "ميتا تطلق Muse Ember كنموذج صغير للمهام المتكررة داخل الوكلاء",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "5ef93d9981a0db1c3c",
+      "url": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
+      "titleAr": "آبل توسّع حدود استخدام بعض ميزات Apple Intelligence بحزم إضافية",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "12c83389e580dec71d",
+      "url": "https://www.eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim/",
+      "titleAr": "DeepX تعلن اكتمال تصميم DX-M2 وتستهدف تشغيل نماذج كبيرة على أجهزة الطرف",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "a8ac24a5fed69e7112",
+      "url": "https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy",
+      "titleAr": "كندا تطلق Real-Time Rail للمدفوعات الفورية على مدار الساعة",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "a425346c085c7dcb99",
+      "url": "https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet/",
+      "titleAr": "ألواح شمسية شبه شفافة تسمح بمرور الضوء اللازم للنباتات في تجربة زراعية",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "0a2b694e15caf809f8",
+      "url": "https://www.cnx-software.com/2026/11/03/when-will-this-stop-the-raspberry-pi-5-16gb-sbc-now-sells-for-385/",
+      "titleAr": "ارتفاع سعر نسخة 16GB من Raspberry Pi 5 بمقدار 80 دولارًا",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "cec6ab6c90d6d9e9c1",
+      "url": "https://github.com/ikey4u/zebkit",
+      "titleAr": "Zebkit يقدّم محرك Chromium كمكتبة يمكن تضمينها في التطبيقات الأصلية",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "fb9de46b88c3faa779",
+      "url": "https://e-means.github.io/",
+      "titleAr": "ورقة e-means تقترح تسريع تجميع k-means بتحديثات المتوسط المتحرك الأسي",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "3c86ca6a06f60e03f0",
+      "url": "https://postalpro.usps.com/zcb",
+      "titleAr": "USPS تطرح خرائط حدود ZIP Code مشتقة من بيانات عناوين التسليم",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "1addf27c71831a1839",
+      "url": "https://yappologistic.github.io/CUI/",
+      "titleAr": "CUI يقدم مكتبة واجهات C99 فورية متعددة الأنظمة دون اعتماديات خارجية",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "0e9fb0eb84f13acffd",
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "titleAr": "Google DeepMind تكشف AlphaProof Code للتحقق الشكلي من تنفيذ بروتوكول Signal",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "c7d3010a8bcc401c0c",
+      "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
+      "titleAr": "Notion تكشف تفاصيل أثر حادثة Fireworks AI على بعض مساحات العمل",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "a7b39cb0698327aa7f",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/",
+      "titleAr": "Google توسّع الجيل الثامن من TPU بنظامي 8tx و8i Max",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "1d8889c9661cfe547b",
+      "url": "https://www.theverge.com/tech/1030601/ring-drone-cam-hands-on-price-release-date-ai-pilot",
+      "titleAr": "Ring تعلن كاميرا Drone Cam وروبوت Rover ضمن فئة Ring Robotics",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "14645f9d816239f1eb",
+      "url": "https://aitnews.com/2026/11/11/%d8%b3%d9%8a%d8%ac%d9%8a%d8%aa-%d8%aa%d8%b7%d9%84%d9%82-firecuda-forge-%d8%a8%d8%aa%d8%ae%d8%b2%d9%8a%d9%86-%d9%85%d8%a4%d9%82%d8%aa-%d8%b0%d9%83%d9%8a-%d9%88%d8%b3%d8%b9%d8%a9-%d8%aa%d8%b5%d9%84/",
+      "titleAr": "Seagate تطلق FireCuda Forge بسعتي 8 و20 تيرابايت مع تخزين مؤقت ذكي",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "31699ba3bf57a08cdb",
+      "url": "https://tendrils.co/blog/2026-11-10/30m-raised",
+      "titleAr": "Tendrils تعلن جمع 30 مليون دولار لتطوير معمارية معالجات موازية ولغة Vine",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "b87487ef036547770a",
+      "url": "https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news/",
+      "titleAr": "تقرير Reuters Institute: استخدام الذكاء الاصطناعي يتوسع كمصدر للمعلومات لكن تقبّل صناعة الأخبار آليًا ما زال منخفضًا",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    }
+  ],
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "inSeen": true,
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inPrEditorial": false,
+      "dossier": "editorial/library/nvidia-openshell-release-review-2026-11-11-2040.json",
+      "status": "research-only"
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "inSeen": true,
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inPrEditorial": false,
+      "dossier": null,
+      "status": "seen-only"
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "inSeen": true,
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inPrEditorial": false,
+      "dossier": null,
+      "status": "seen-only"
+    }
+  ],
+  "corrections": [
+    {
+      "id": "b0cee948b440301e45",
+      "status": "corrected_in_pr_before_this_run",
+      "reason": "البيان الرسمي يحتوي قسم Frontier models؛ العنوان والملخص المصححان موجودان في Editorial على PR. لا تعِد استيراد النسخة الأقدم من incoming 2026-11-12-1439 فوق التصحيح."
+    }
+  ],
+  "validation": {
+    "prOnlyIncomingFilesStructuralEquivalent": 13,
+    "prOnlyIncomingFilesCount": 13,
+    "newIncomingEntriesStructuralEquivalent": 10,
+    "officialLocalCommandsNotRun": [
+      "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-11-12-2105.json",
+      "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-11-12-2105.json",
+      "python -m unittest discover -s tests -v"
+    ],
+    "reason": "لم يتوفر checkout محلي؛ محاولة git clone فشلت بسبب تعذر حل github.com. أُجري فحص بنيوي مكافئ في بيئة الأدوات، وسيُستخدم CI الرسمي للتحقق من Editorial والاختبارات بعد الدفع.",
+    "officialCiRun": 43279177126,
+    "officialCiUrl": "https://github.com/lm7md-ai/.-/actions/runs/43279177126",
+    "officialCiStatus": "success",
+    "officialCiMergeRef": "538240d38211eafa6456edf61eb5acd209c026ac",
+    "officialCiContentCommit": "5b44984015a4384a79505041b17936fc8c84525b",
+    "unittest": {
+      "command": "python -m unittest discover -s tests -v",
+      "executed": "GitHub Actions PR CI",
+      "result": "Ran 30 tests in 0.075s; OK"
+    },
+    "editorialValidate": {
+      "command": "python scripts/editorial.py validate",
+      "executed": "GitHub Actions PR CI",
+      "result": "Validated 951 editorial entries"
+    },
+    "javascriptCheck": {
+      "command": "node --check site/app.js && node --check site/ideas.js",
+      "executed": "GitHub Actions PR CI",
+      "result": "success"
+    },
+    "officialImport": {
+      "command": "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-11-12-2105.json",
+      "executed": false,
+      "reason": "لا يوجد checkout محلي؛ لم يُنفذ الأمر. أُضيفت السجلات بدمج JSON محافظ ثم تحقق CI من Editorial النهائي."
+    }
+  },
+  "publication": {
+    "lastSuccessfulMainRun": 43270812228,
+    "artifactId": 13968326643,
+    "artifactName": "github-pages",
+    "artifactDownloadedAndInspected": true,
+    "artifactEditorialRecords": 917,
+    "newThisRunIdsInArtifact": false,
+    "liveEditorialUrl": "DisabledError",
+    "browserDetailUrls": "DisabledError",
+    "note": "فُحص artifact.tar داخل github-pages artifact؛ يحتوي 917 سجل Editorial ولا يحتوي المعرفات الثمانية الجديدة. لم يثبت نشر PR.",
+    "newEditorialCount": 951,
+    "prMerged": false,
+    "prPublished": false
+  },
+  "prAfterCommit": {
+    "headSha": "5b44984015a4384a79505041b17936fc8c84525b",
+    "state": "open",
+    "merged": false,
+    "mergeable": true,
+    "aheadBy": 71,
+    "behindBy": 1,
+    "protectedPathsInDiff": []
+  }
+}

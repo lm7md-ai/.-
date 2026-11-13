@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "kind": "official-source-recheck",
+  "reviewedAt": "2026-11-12T14:39:32+03:00",
+  "auditedMainSha": "32c21fedf510fa24eccea0e44a80f57cb6e6db58",
+  "pullRequest": 98,
+  "record": {
+    "id": "b0cee948b440301e45",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1UU2tHemhQOGVzakpWWmxJQ0dYZFVaX3p6c1pJM2xSc19jV0JRWHpYTWVya0xCcUdZNTRrUHlHakxLTUE0RVZTNlBud0ZvQ3V0RnBoMUdFVWgtN28?oc=5",
+    "seen": true,
+    "inCurrentFeed": true,
+    "inMainEditorial": false
+  },
+  "previousAssessment": "needs_correction: source_does_not_support_ai_claim",
+  "revisedAssessment": "source_supports_high_level_frontier_model_risk_claim",
+  "officialSource": {
+    "title": "Joint declaration following the G7 Foreign Ministers Meeting in Paris on 9 and 10 November 2026",
+    "url": "https://www.auswaertiges-amt.de/en/newsroom/news/2810400-2810400",
+    "publishedAt": "2026-11-11",
+    "reviewedInFull": true,
+    "relevantSection": "Frontier models",
+    "finding": "The statement recognizes opportunities and safeguards for frontier models, and notes possible misuse in malicious cyber activities and the enhancement of dangerous capabilities. It also refers to the Hiroshima AI Process."
+  },
+  "decision": "The previous 'no AI mention' hold was too strict. The official statement supports the headline at a high level, but the Arabic title and summary were reworded to avoid implying a specific incident or technical proof. A candidate entry was added to incoming and Editorial on PR #98; it remains unpublished pending CI.",
+  "candidateTitleAr": "إعلان وزراء خارجية مجموعة السبع يناقش فرص النماذج المتقدمة ومخاطر إساءة استخدامها",
+  "candidateBasis": "article",
+  "cliValidation": "Executed on a temporary local snapshot of main: validate on the candidate passed; final PR Editorial was officially validated by CI run 43212426287 at 966 entries.",
+  "cliImport": "Executed on a temporary local main snapshot: imported one candidate and preserved all 917 existing records (result 918). The same entry was separately merged into the 965-entry PR Editorial; CI validated the PR result at 966. The CLI import was not run directly against the PR's 965-entry file."
+}
