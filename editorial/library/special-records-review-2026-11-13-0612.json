@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "publicationStatus": "research-only",
-  "reviewedAt": "2026-11-13T06:56:31+03:00",
-  "note": "تمت المطابقة بالمعرف والرابط الحرفيين فقط؛ لم يُنشأ أي معرف بديل من العنوان. راجعنا صفحات الإصدارات والدعم الرسمية مجددًا في 06:56.",
+  "reviewedAt": "2026-11-13T14:43:00+03:00",
+  "note": "مراجعة إضافية في 14:43: تمت مطابقة id وurl حرفيًا مع main؛ السجلات الثلاثة ما تزال Seen-only ولا تُستورد. صُححت حالة Canva MCP استنادًا إلى إعلان GA الرسمي المؤرخ 2026-10-27. لم تُنشأ هويات بديلة.",
   "records": [
     {
       "name": "NVIDIA OpenShell",
@@ -62,9 +62,9 @@
       "inFeed": false,
       "inEditorial": false,
       "status": "seen-only-research",
-      "apiStatus": "public API announced as available",
-      "mcpStatus": "announced as coming soon; not treated as available",
-      "limitations": "تحديث الحالة لا ينشئ معرفًا جديدًا ولا يبرر الاستيراد ما دام المعرف والرابط الأصليان غير موجودين في Feed الحالي.",
+      "apiStatus": "متاح الآن للمطورين عبر public API؛ Canva تقول إن Craft ينتج صورًا حتى 2K مع مخرجات قابلة للتحرير (ادعاء الشركة).",
+      "mcpStatus": "Canva MCP متاح عمومًا منذ 2026-10-27 وفق مدونة المطورين الرسمية؛ يمكن تفعيله من Developer Portal وربطه بالخادم البعيد عبر OAuth. كل مستخدم يصادق بحسابه؛ لا يدعم مصادقة المؤسسة أو service accounts.",
+      "limitations": "يبقى السجل Seen-only لأن id والرابط الأصليين غير موجودين في Feed الحالي أو Editorial؛ لا يُستورد. لا تساوِ بين Craft model API وكل أدوات Canva MCP؛ تحقّق من النطاقات والميزات المتاحة في Developer Portal قبل نسبة كل قدرات Craft إلى MCP.",
       "sources": [
         {
           "title": "Canva newsroom — Canva Craft",
@@ -73,6 +73,10 @@
         {
           "title": "Canva Craft API and MCP availability",
           "url": "https://www.canva.com/ai-research/craft-api/"
+        },
+        {
+          "title": "Canva Developers Blog — Canva MCP generally available (2026-10-27)",
+          "url": "https://www.canva.dev/blog/developers/canva-mcp-ga/"
         }
       ]
     },
