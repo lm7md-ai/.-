@@ -30206,7 +30206,7 @@
       "basis": "readme",
       "sources": [
         {
-          "title": "المستودع الرسمي وREADME الحالي",
+          "title": "المستودع الرسمي وREADME",
           "url": "https://github.com/patchy631/ai-engineering-hub"
         },
         {
@@ -30214,12 +30214,12 @@
           "url": "https://github.com/patchy631/ai-engineering-hub/blob/main/ai-engineering-roadmap/README.md"
         },
         {
-          "title": "ترخيص MIT",
+          "title": "ترخيص المستودع",
           "url": "https://github.com/patchy631/ai-engineering-hub/blob/main/LICENSE"
         },
         {
-          "title": "مثال Simple RAG Workflow",
-          "url": "https://github.com/patchy631/ai-engineering-hub/tree/main/simple-rag-workflow"
+          "title": "README لمثال Simple RAG Workflow",
+          "url": "https://github.com/patchy631/ai-engineering-hub/blob/main/simple-rag-workflow/README.md"
         },
         {
           "title": "شيفرة مثال RAG",
@@ -30232,6 +30232,10 @@
         {
           "title": "توثيق Ollama",
           "url": "https://docs.ollama.com/"
+        },
+        {
+          "title": "مثال Simple RAG Workflow",
+          "url": "https://github.com/patchy631/ai-engineering-hub/tree/main/simple-rag-workflow"
         },
         {
           "title": "دليل مشاريع uv",
@@ -39569,56 +39573,6 @@
         }
       ]
     },
-    "02bfed5e7aa817ea9d": {
-      "titleAr": "Google تطلق Gemini Decisions API لتقييم ما يصل إلى ألف قرار متعدد الوسائط في طلب واحد",
-      "summaryAr": "أعلنت Google عن Gemini Decision 1 وواجهة Decisions API لتقييم أسئلة نعم/لا أو الاختيار بين بدائل أو الدرجات وفق معيار على مدخل مشترك قد يتضمن نصًا وصورًا وصوتًا وفيديو وPDF. وتقول الشركة إن الواجهة تعيد احتمالات وثقة بدل توليد نص طويل، وتذكر زمنًا إجماليًا 150–250 مللي ثانية وتسعيرًا قدره 0.10 دولار لكل مليون رمز إدخال دون رموز إخراج مفوترة.",
-      "whyItMatters": "التحليل: تفصل الواجهة قرارات التصنيف والتوجيه عن توليد النص، وقد تفيد اختيار الأدوات وفحص السياسات داخل الوكلاء؛ لكن الثقة الاحتمالية ليست ضمانًا للصحة ويجب ضبط عتباتها على بيانات التطبيق.",
-      "audience": "مطورو Python وJavaScript، مهندسو الوكلاء، وباحثو تقييم النماذج متعددة الوسائط.",
-      "nextSteps": [
-        "حدد هل المهمة اختيار محدود أم تحتاج إجابة مولدة.",
-        "اختبر المعايرة على مجموعة موسومة من بياناتك وقارنها بخط أساس.",
-        "صعّد الحالات منخفضة الثقة أو عالية الأثر إلى مراجعة بشرية."
-      ],
-      "limitations": "الأداء والتسعير والمقارنة أرقام منشورة من Google وليست قياسًا مستقلًا؛ التوثيق يستخدم v1beta وقد تتغير الحدود والإتاحة.",
-      "basis": "article",
-      "sources": [
-        {
-          "title": "Google — Gemini Decisions API",
-          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
-        },
-        {
-          "title": "Google AI Studio — Decisions API documentation",
-          "url": "https://aistudio.google.com/docs/decisions-api"
-        }
-      ],
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
-      "reviewedAt": "2026-11-12T18:11:49+03:00"
-    },
-    "b21fa54b837dba6b35": {
-      "titleAr": "باحثو Apple يدرسون تسريع استرجاع RAG بتعلّم توزيع الاستعلامات",
-      "summaryAr": "تشرح Apple بحثًا قُدّم في ICML 2026 يستخدم شبكات عصبية صغيرة تتدرب مسبقًا على قاعدة مفاتيح ثابتة وتوزيع الاستعلامات المتوقع، ثم توجه الاستعلام إلى أفضل تطابق بسرعة. تقايض الطريقة كلفة تدريب أولية باسترجاع أسرع ضمن ظروف البحث المدروسة.",
-      "whyItMatters": "التحليل: يمكن أن يكون توزيع الاستعلامات المعروف ميزة لا تستغلها فهارس البحث العامة؛ لكن الحل يصبح أقل ملاءمة إذا تغيرت قاعدة البيانات أو سلوك المستخدم.",
-      "audience": "باحثو تعلم الآلة، مهندسو البحث وRAG، ومطورو قواعد المتجهات.",
-      "nextSteps": [
-        "اقرأ الورقة المرتبطة لفهم دالة الدعم وآلية التدريب.",
-        "قارنها بخط أساس exact MIPS وبفهرس تقريبي على استعلامات ممثلة.",
-        "قِس recall وlatency وكلفة التدريب بعد تغير قاعدة المفاتيح."
-      ],
-      "limitations": "المادة بحثية وليست إعلانًا عن مكتبة جاهزة؛ تفترض قاعدة مفاتيح ثابتة وتوزيع استعلامات يمكن توصيفه، وقد تتراجع فائدتها مع تغير التوزيع.",
-      "basis": "article",
-      "sources": [
-        {
-          "title": "Apple ML Research — Faster Retrieval for Better, More Efficient RAG",
-          "url": "https://machinelearning.apple.com/research/faster-retrieval"
-        },
-        {
-          "title": "Apple ML Research — Amortizing Maximum Inner Product Search with Learned Support Functions",
-          "url": "https://machinelearning.apple.com/research/amortizing-inner-product-search"
-        }
-      ],
-      "url": "https://machinelearning.apple.com/research/faster-retrieval",
-      "reviewedAt": "2026-11-12T18:11:49+03:00"
-    },
     "cb93d68b445c05b0e3": {
       "url": "https://huggingface.co/blog/hub-gcp-marketplace",
       "titleAr": "Hugging Face تتيح فوترة استخدام Hub عبر حساب Google Cloud للمنظمات",
@@ -39664,27 +39618,6 @@
           "url": "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/"
         }
       ]
-    },
-    "3cffec5790b8f2e218": {
-      "titleAr": "Firefox يقلّص بصمة المتصفح ويعزز مقاومة التتبع دون ملفات تعريف الارتباط",
-      "summaryAr": "تشرح Mozilla تحسينات حديثة في Firefox تهدف إلى تقليل الإشارات التقنية التي تستطيع المواقع جمعها لبناء بصمة مميزة للمتصفح، مع تقييم الحماية على بيانات استخدام واسعة. الفكرة هي تقليل قابلية التمييز بين المستخدمين، لا إيقاف كل أشكال التتبع أو ضمان إخفاء الهوية.",
-      "whyItMatters": "التحليل: قد تحد هذه التغييرات من ربط زيارات المستخدم عبر المواقع حتى عندما لا تُستخدم ملفات الارتباط. لكنها لا تجعل البصمة مستحيلة، كما أن بعض الحمايات الإضافية تتطلب وضع Strict أو التصفح الخاص.",
-      "audience": "مستخدمو الويب ومطورو المتصفحات والباحثون في الخصوصية والأمن.",
-      "nextSteps": [
-        "تحقق من استخدام إصدار Firefox 145 أو أحدث.",
-        "اختبر المواقع المهمة مع حماية التتبع الصارمة قبل اعتماد الإعداد دائمًا.",
-        "راجع ورقة Mozilla وأداة الاختبار لفهم القياسات والحدود."
-      ],
-      "limitations": "الحماية تقلل بعض إشارات البصمة ولا تمنع جميع تقنيات التتبع أو الربط بين الحسابات. نتائج التقييم المنشورة من Mozilla؛ وقد تختلف آثار التوافق والأداء بين المواقع والإعدادات.",
-      "reviewedAt": "2026-11-12T18:11:49+03:00",
-      "basis": "article",
-      "sources": [
-        {
-          "title": "Mozilla Security Blog — Open research, stronger privacy",
-          "url": "https://blog.mozilla.org/security/2026/11/10/open-research-stronger-privacy-making-firefox-users-harder-to-fingerprint/"
-        }
-      ],
-      "url": "https://blog.mozilla.org/security/2026/11/10/open-research-stronger-privacy-making-firefox-users-harder-to-fingerprint/"
     },
     "19b4fcb1faac9c9bdb": {
       "titleAr": "BotPsy يقدم نموذج وكيل صغيرًا بـ0.8 مليار معلمة للتشغيل على الأجهزة",
@@ -40575,27 +40508,6 @@
         }
       ]
     },
-    "35f9d4a8ad49bd077c": {
-      "url": "https://www.wired.com/story/duolingo-strava-and-ticketmaster-are-all-caught-up-in-eus-new-digital-fairness-rules/",
-      "titleAr": "المفوضية الأوروبية تقترح قانون العدالة الرقمية لمواجهة الأنماط المضللة والرسوم المخفية",
-      "summaryAr": "أعلنت المفوضية الأوروبية في 11 نوفمبر 2026 مقترح Digital Fairness Act لمعالجة ممارسات مثل الندرة الوهمية والأسعار غير الواضحة والتصميم الذي يدفع إلى إنفاق مفرط أو يصعّب إيقاف الميزات وإلغاء الاشتراكات. وتقدر المفوضية أن المقترح قد يوفر للمستهلكين ما يصل إلى 13.7 مليار يورو سنويًا.",
-      "whyItMatters": "التحليل: إذا اعتُمد المقترح فقد يؤثر في تصميم الاشتراكات والواجهات والإعلانات الرقمية داخل الاتحاد الأوروبي؛ لكن الإعلان لا يعني أن الأحكام أصبحت نافذة الآن.",
-      "audience": "مطورو المنتجات الرقمية وفرق تجربة المستخدم والتجارة الإلكترونية وحماية المستهلك وصناع السياسات.",
-      "nextSteps": [
-        "راقب مسار اعتماد المقترح والنص التشريعي النهائي.",
-        "راجع الواجهات لاكتشاف الندرة الوهمية والرسوم المخفية وصعوبة الإلغاء.",
-        "اجعل السعر والتجديد والإلغاء واضحًا، مع تجنب ادعاء امتثال قانوني قبل صدور النص النهائي."
-      ],
-      "limitations": "المقترح لم يصبح قانونًا نافذًا؛ تقدير 13.7 مليار يورو صادر عن المفوضية وليس قياسًا مستقلًا. ستتحدد التفاصيل ومواعيد التطبيق خلال العملية التشريعية.",
-      "reviewedAt": "2026-11-12T20:38:00+03:00",
-      "basis": "article",
-      "sources": [
-        {
-          "title": "European Commission — Making your online experience fairer",
-          "url": "https://commission.europa.eu/news-and-media/news/making-your-online-experience-fairer-2026-11-11_en"
-        }
-      ]
-    },
     "1b0c05cd97a311af5c": {
       "url": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/",
       "titleAr": "Oura تتفق على الاستحواذ على Counsel Health مقابل 625 مليون دولار نقدًا",
@@ -40747,31 +40659,6 @@
         }
       ]
     },
-    "1251f00274bede43be": {
-      "url": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai",
-      "titleAr": "Adobe تعرض عشرة نماذج بحثية في MAX 2026 وتفتح معاينة لبعضها في Labs Playground",
-      "summaryAr": "عرضت Adobe في فعالية MAX Sneaks عشرة ابتكارات بحثية تستكشف أساليب جديدة للتحكم في الفيديو والصوت والصور والتصميم. وتقول الشركة إن بعض المشاريع أصبحت قابلة للتجربة المبكرة عبر Adobe Labs Playground للمرة الأولى، مع دعوة المستخدمين لتقديم ملاحظاتهم. من الأمثلة المعروضة أدوات بحثية لتحرير المشاهد والتحكم الإبداعي؛ ولا يعني العرض أنها أصبحت ميزات عامة في منتجات Adobe.",
-      "whyItMatters": "التحليل: تكشف العروض اتجاهات البحث في أدوات الإبداع، لكنها تحتاج فصلًا واضحًا بين نموذج تجريبي متاح لمجموعة محدودة وميزة مستقرة يمكن الاعتماد عليها في سير عمل إنتاجي.",
-      "audience": "مصممو الجرافيك، محررو الفيديو والصوت، صناع المحتوى، وباحثو التفاعل الإبداعي.",
-      "nextSteps": [
-        "راجع وصف كل تجربة وحدد ما إذا كانت متاحة فعلًا في Labs Playground.",
-        "اختبر المعاينات المتاحة على ملفات غير حساسة وقارنها بالأدوات الحالية.",
-        "لا تبنِ سير عمل إنتاجيًا يعتمد على تجربة بحثية قبل إعلان إصدارها."
-      ],
-      "limitations": "المصدر الرسمي يصف مشاريع بحثية ومعاينات مبكرة؛ التوفر والخصائص قد يتغيران، ولم تُختبر الأدوات عمليًا في هذه المراجعة.",
-      "reviewedAt": "2026-11-12T21:05:47+03:00",
-      "basis": "article",
-      "sources": [
-        {
-          "title": "The Verge — Adobe MAX 2026 Sneaks",
-          "url": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai"
-        },
-        {
-          "title": "Adobe — MAX 2026 Sneaks: Previewing the future of creativity",
-          "url": "https://blog.adobe.com/en/publish/2026/11/11/adobe-max-sneaks"
-        }
-      ]
-    },
     "f63659155352269baf": {
       "url": "https://arxiv.org/abs/2611.12933",
       "titleAr": "دراسة توثق تعاون باحث ووكلاء ذكيين في تجارب أشعة سينية مع سجل قرارات قابل للتدقيق",
@@ -40917,6 +40804,172 @@
           "url": "https://www.imd.org/centers/wcc/world-competitiveness-center/rankings/world-digital-competitiveness-ranking"
         }
       ]
+    },
+    "607d4d7557c40807b1": {
+      "titleAr": "NVIDIA تعلن انتقالًا في القيادة وتعيّن Colette Kress رئيسة تنفيذية مؤقتة",
+      "summaryAr": "أعلنت NVIDIA في 12 نوفمبر 2026 أن Jensen Huang استقال من منصبي الرئيس التنفيذي والرئيس وعضوية مجلس الإدارة بأثر فوري. عُيّنت المديرة المالية Colette Kress رئيسة تنفيذية مؤقتة، وبدأ المجلس البحث عن خليفة دائم، كما عيّن Harvey C. Jones رئيسًا للمجلس. البيان الرسمي لم يذكر سبب الاستقالة.",
+      "whyItMatters": "يمس الانتقال شركة محورية في رقائق ومسرّعات الذكاء الاصطناعي؛ لذا يستحق متابعة استمرارية خارطة المنتجات والحوكمة، من دون استنتاج أثر تقني فوري أو تكرار أسباب غير مثبتة.",
+      "audience": "متابعو صناعة أشباه الموصلات والذكاء الاصطناعي والحوكمة التقنية.",
+      "nextSteps": [
+        "تابع أي تحديث رسمي بشأن اختيار الرئيس التنفيذي الدائم.",
+        "قارن تصريحات الإدارة اللاحقة بخارطة المنتجات والتزامات العملاء الواردة في البيان."
+      ],
+      "limitations": "البيان الرسمي لا يشرح أسباب الاستقالة ولا يعلن خليفة دائمًا؛ التقارير الصحفية عن الدوافع لا تُعامل هنا كحقائق مثبتة.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "NVIDIA Newsroom — CEO transition, 12 Nov 2026",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+        },
+        {
+          "title": "NVIDIA — Executive biographies",
+          "url": "https://nvidianews.nvidia.com/multimedia/corporate/corporate-executives"
+        }
+      ],
+      "url": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss",
+      "reviewedAt": "2026-11-13T00:26:23.711Z"
+    },
+    "a3e1afb4a33deb1bb6": {
+      "titleAr": "Google تطلق Gemini 4 Hydrogen وتوسّع نمط العمل متعدد النماذج",
+      "summaryAr": "أعلنت Google في 12 نوفمبر 2026 نموذج Gemini 4 Hydrogen للمهام اليومية والبرمجية والوكيلة، مع إتاحته عبر Gemini API وAI Studio وتطبيق Gemini وSearch. تذكر الشركة نافذة سياق تصل إلى مليون رمز وأربع درجات للتفكير، وتقول إن Hydrogen أسرع في مهام معينة من نماذج سابقة أو منافسة ضمن اختبارات داخلية.",
+      "whyItMatters": "يعكس الإصدار توجهًا إلى توزيع العمل بين نموذج أعمق للتخطيط وآخر أسرع للتنفيذ والتحقق؛ وهذا يهم المطورين الذين يوازنون جودة المخرجات والزمن والحصة والتكلفة.",
+      "audience": "مطورون وفرق بناء الوكلاء والطلاب الذين يستخدمون أدوات Google AI.",
+      "nextSteps": [
+        "اختبر مجموعة مهام ثابتة وقارن الجودة والزمن والتكلفة بدل الاعتماد على عرض تسويقي واحد.",
+        "تحقق من التوفر والأسعار وحدود الاستخدام في حسابك قبل نقل سير عمل فعلي."
+      ],
+      "limitations": "أرقام Terminal-Bench والسرعة وخفض الادعاءات المختلقة صادرة عن Google أو شركائها؛ ليست تقييمًا مستقلًا، وقد يختلف الوصول حسب المنطقة والخطة.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Google — Introducing Gemini 4 Hydrogen",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+        }
+      ],
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
+      "reviewedAt": "2026-11-13T00:26:23.711Z"
+    },
+    "a491aa90d650ab2bf9": {
+      "titleAr": "Amplitude تعرض Wave لتحويل تحليلات المنتج إلى تحسينات برمجية قابلة للقياس",
+      "summaryAr": "تشرح دراسة حالة OpenAI المنشورة في 12 نوفمبر كيف يجمع وكيل Wave لدى Amplitude بيانات الاستخدام وإعادات الجلسات وتعليقات العملاء والكود، ثم يرتب فرص التحسين ويعد خطة تنفيذ ومعايير قبول ويرسلها إلى وكلاء البرمجة، وبعدها يقيس الأثر. وتذكر الدراسة ارتفاع الرسائل المرسلة عبر بطاقات اقتراح مخصصة بنسبة 160% مقارنة بالمجموعة الضابطة بعد يوم واحد.",
+      "whyItMatters": "يعرض مسارًا عمليًا من بيانات المنتج إلى خطة تقنية ثم تجربة A/B وقياس النتائج، بدل الاكتفاء بتوليد الشيفرة؛ ويمكن أن يساعد فرق المنتجات على ربط الوكلاء بمؤشرات قابلة للمراجعة.",
+      "audience": "فرق المنتجات والتحليلات ومهندسو البرمجيات وبناة الوكلاء.",
+      "nextSteps": [
+        "ابدأ بمشكلة صغيرة ومقياس أساسي قبل أي تعديل.",
+        "اشترط مراجعة بشرية ومعايير قبول وتجربة مقارنة قبل النشر.",
+        "سجل تكلفة النموذج والزمن وجودة النتيجة لكل مهمة."
+      ],
+      "limitations": "هذه دراسة حالة تسويقية من OpenAI وAmplitude؛ نتيجة 160% وتقديرات 1–2 يوم تخص سياق الشركة وتجربة قصيرة، ولا تثبت أداءً عامًا أو سببية مستقلة.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "OpenAI — How Amplitude ships product improvements in 1–2 days",
+          "url": "https://openai.com/business/customer-stories/amplitude/"
+        }
+      ],
+      "url": "https://openai.com/index/amplitude",
+      "reviewedAt": "2026-11-13T00:26:23.711Z"
+    },
+    "6a0b530a1c16bbaf1b": {
+      "titleAr": "FAA توسّع SMART لتوصيات تخطيط الحركة الجوية إلى مراكزها الـ22",
+      "summaryAr": "قالت إدارة الطيران الفيدرالية الأمريكية في 10 نوفمبر 2026 إن نظام SMART السحابي سيتوسع إلى المجال الجوي لجميع 22 مركزًا. يجمع النظام نحو 200 تدفق بيانات، منها الطقس ومسارات الطيران وتدفق الحركة ومؤشرات التوظيف؛ وتقول FAA إنه ساعد منذ 21 سبتمبر على إعادة توجيه 180 رحلة بمتوسط توفير 10 دقائق ونحو 80 جالونًا من الوقود لكل رحلة. يراجع مختصون التوصيات وتظل للقيادات المحلية سلطة النظر فيها.",
+      "whyItMatters": "هذا مثال على استخدام التحليلات المدعومة بالذكاء الاصطناعي في بنية تحتية حساسة مع بقاء القرار التشغيلي لدى البشر؛ وتبرز أهميته في الحوكمة وقياس السلامة والتحقق المستقل.",
+      "audience": "مهندسو الذكاء الاصطناعي والأنظمة الحرجة ومتابعو الطيران والسياسات التقنية.",
+      "nextSteps": [
+        "راجع ورقة الحقائق الرسمية لتفاصيل دور المختصين وحدود النظام.",
+        "تابع أي تقييم مستقل أو بيانات لاحقة قبل تعميم أثر النظام على كل الرحلات."
+      ],
+      "limitations": "أرقام التوفير تقديرات FAA للرحلات التي أعاد النظام توجيهها وليست قياسًا مستقلًا لكل الشبكة؛ البيان لا يقدم تقييمًا خارجيًا للسلامة أو الدقة.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "FAA — SMART Expanding Across the Nation, 10 Nov 2026",
+          "url": "https://www.faa.gov/newsroom/statements/general-statements"
+        },
+        {
+          "title": "U.S. DOT — SMART launch, 21 Sep 2026",
+          "url": "https://www.transportation.gov/briefing-room/trumps-transportation-secretary-sean-p-duffy-delivers-state-art-air-traffic-control"
+        }
+      ],
+      "url": "https://arstechnica.com/ai/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
+      "reviewedAt": "2026-11-13T00:26:23.711Z"
+    },
+    "0e171f2635ea316420": {
+      "titleAr": "GitHub تجعل ملفات قفل اعتماديات Actions متاحة عمومًا",
+      "summaryAr": "أعلنت GitHub في 28 أكتوبر 2026 الإتاحة العامة لملفات قفل اعتماديات Actions. يسجل الملف `.github/workflows/actions.lock` المراجعات الدقيقة للإجراءات واعتمادياتها المتعدية، مع إبقاء مراجع الإصدارات المقروءة في ملفات workflow. يمكن إدخال المسارات تدريجيًا، وتحديث القفل مع تحديثات Dependabot، والتحقق من حداثته داخل CI.",
+      "whyItMatters": "تقلل ملفات القفل خطر تغيّر الوسوم أو الفروع بعد مراجعة workflow، وتوفر سجلًا قابلًا للتدقيق لسلسلة توريد CI/CD؛ لكنها لا تجعل الاعتمادية آمنة تلقائيًا.",
+      "audience": "مطورو GitHub Actions وفرق DevOps وأمن سلسلة التوريد البرمجية.",
+      "nextSteps": [
+        "ابدأ بتجربة القفل على workflow غير حرج وراجع الفروق قبل اعتماده.",
+        "أضف تحققًا من حداثة القفل إلى CI بعد مراجعة الوثائق الرسمية.",
+        "أبقِ استدعاءات reusable workflows خارج المستودع مثبتة إلى SHA كاملًا وفق إرشادات GitHub."
+      ],
+      "limitations": "القفل لا يغطي استدعاءات reusable workflows من `jobs.<id>.uses` ولا يثبت سلامة الشيفرة المقفولة أو بقية مدخلات البناء مثل الصور والـ runner؛ راجع الاعتماديات قبل تثبيتها.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "Hugo van Kemenade — Lock GitHub Actions",
+          "url": "https://hugovk.dev/blog/2026/lock-github-actions"
+        },
+        {
+          "title": "GitHub Changelog — Workflow lockfiles generally available",
+          "url": "https://github.blog/changelog/2026-10-28-github-actions-workflow-lockfiles-are-generally-available/"
+        },
+        {
+          "title": "GitHub Docs — Workflow dependency lockfiles",
+          "url": "https://docs.github.com/en/actions/concepts/security/workflow-dependency-lockfiles"
+        }
+      ],
+      "url": "https://hugovk.dev/blog/2026/lock-github-actions/",
+      "reviewedAt": "2026-11-13T00:26:23.711Z"
+    },
+    "a487e36889862acfd3": {
+      "titleAr": "انقطاع في Outlook وExchange Online يعطّل الوصول إلى البريد في عدة مناطق",
+      "summaryAr": "أفادت The Verge في 12 نوفمبر بوجود مشكلات وصول إلى Outlook عبر الويب والتطبيقات في عدة مناطق. نقلت عن حساب Microsoft 365 Status أن أحمالًا مرتفعة في بنية متعددة المناطق كانت وراء أخطاء الاتصال، ثم تحدثت Microsoft عن تغيير موجه لتجاوز مكوّن فحوص صحة الخوادم المتأثرة وحماية خوادم إضافية من الإزالة. لم يتضمن آخر تحديث في التغطية وقتًا نهائيًا متوقعًا للتعافي.",
+      "whyItMatters": "يعكس الاعتماد اليومي على خدمات البريد السحابية وأهمية الرصد وخطط الاستمرارية وقنوات الاتصال البديلة عند تعطل مزود مركزي.",
+      "audience": "مستخدمو Microsoft 365 ومسؤولو تقنية المعلومات وفرق التشغيل.",
+      "nextSteps": [
+        "تحقق من صفحة الحالة الرسمية قبل اعتبار الخدمة متعافية.",
+        "للمؤسسات، راجع قنوات الاتصال البديلة وإجراءات استمرارية الأعمال."
+      ],
+      "limitations": "المعلومات تلخص تحديث التغطية المنشور مساء 12 نوفمبر؛ صفحة الحالة العامة ديناميكية ولم تعرض تفاصيل الحادثة في النسخة القابلة للفهرسة، ولا نثبت سببًا جذريًا نهائيًا.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "The Verge — Microsoft Outlook is down",
+          "url": "https://www.theverge.com/tech/1032226/microsoft-outlook-is-down"
+        },
+        {
+          "title": "Microsoft 365 Service Health Status",
+          "url": "https://status.cloud.microsoft/"
+        }
+      ],
+      "url": "https://www.theverge.com/tech/1032226/microsoft-outlook-is-down",
+      "reviewedAt": "2026-11-13T00:26:23.711Z"
+    },
+    "ecab0e7e397b310858": {
+      "titleAr": "إعادة تصميم Humble Bundle تثير تساؤلات حول إدارة المصادقة الثنائية",
+      "summaryAr": "أفادت The Verge في 12 نوفمبر أن صفحة إعدادات الحساب بعد إعادة التصميم لم تعد تعرض للكاتب خيار إضافة أو تحديث طريقة مصادقة عبر تطبيق رموز. وفي اختباره ظل رمز البريد الإلكتروني مطلوبًا عند تسجيل الدخول، بينما لم يظهر خيار إدارة رمز TOTP المحفوظ؛ ولم ترد الشركة على طلب التعليق وقت نشر المقال.",
+      "whyItMatters": "توضح الحالة أن إعادة تصميم إعدادات الحساب قد تجعل إدارة وسائل الحماية أقل وضوحًا، وأن تغييرات تجربة المستخدم يجب أن تختبر مسارات الأمان والاسترداد لا الواجهة فقط.",
+      "audience": "مستخدمو الخدمات الرقمية وفرق تجربة المستخدم وأمن الحسابات.",
+      "nextSteps": [
+        "انتظر توضيح الشركة وتحقق من إرشادات الأمان الرسمية قبل افتراض إزالة وسيلة حماية بالكامل.",
+        "راجع وسائل استرداد الحساب المتاحة من قنوات الدعم الرسمية."
+      ],
+      "limitations": "الملاحظة مبنية على تجربة صحفي واحد وتقارير ثانوية؛ لم تؤكد Humble Bundle إزالة المصادقة الثنائية بالكامل، وظل رمز البريد مطلوبًا في تجربة الكاتب، كما لم يصل رد الشركة وقت النشر.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "The Verge — Humble Bundle redesign and two-factor settings",
+          "url": "https://www.theverge.com/games/1032659/humble-bundle-redesign-two-factor-verification-security-settings"
+        },
+        {
+          "title": "Humble Bundle Support — Two-Step Verification",
+          "url": "https://support.humblebundle.com/hc/en-us/articles/202421374-Humble-Bundle-Two-Step-Verification"
+        }
+      ],
+      "url": "https://www.theverge.com/games/1032659/humble-bundle-redesign-two-factor-verification-security-settings",
+      "reviewedAt": "2026-11-13T00:26:23.711Z"
     }
   }
 }

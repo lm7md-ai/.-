@@ -1,0 +1,556 @@
+{
+  "version": 1,
+  "runAt": "2026-11-13T00:26:23.711Z",
+  "mainSha": "68d316010b0983d016070d2646624eda1b245691",
+  "prNumber": 98,
+  "prHeadBefore": "ea753a1f6d5096ee2bce247bbcbb4aa48c2694fc",
+  "incomingAudit": {
+    "main": {
+      "files": 102,
+      "occurrences": 1054,
+      "uniqueIdUrlPairs": 932,
+      "duplicateOccurrences": 122,
+      "exactFeedPairs": 870,
+      "seenOnlyPairs": 62,
+      "idUrlConflicts": 0,
+      "confirmedExpired": 0,
+      "structuralCoreCheck": "102/102 files parsed; core URL/title/summary/whyItMatters/sources/basis/reviewedAt checks passed",
+      "officialPythonValidator": "not_run_locally"
+    },
+    "prOnly": {
+      "files": 14,
+      "occurrences": 101,
+      "uniqueIdUrlPairs": 55,
+      "duplicateOccurrences": 46,
+      "idsWithMultipleUrls": 0,
+      "exactFeedPairs": 33,
+      "alreadyInMainEditorial": 4,
+      "newActiveExactPairs": 29,
+      "outsideCurrentFeedUniquePairs": 22,
+      "seenOnlyOutsideFeed": 22,
+      "idUrlConflicts": 0,
+      "structuralEquivalent": "101/101 entries passed the ported schema checks across all 14 files"
+    }
+  },
+  "importBatch": {
+    "file": "editorial/incoming/nabdh-editorial-2026-11-13-0306.json",
+    "entries": 39,
+    "newEntries": 36,
+    "updates": 3,
+    "newNews": 7,
+    "backlogNews": 27,
+    "newProjects": 2,
+    "updatedProjects": 3,
+    "excludedNewOutOfFeedEntries": 5,
+    "finalEditorialEntries": 953,
+    "status": "prepared_not_yet_merged"
+  },
+  "outsideFeedPending": [
+    {
+      "id": "86708699833d3a9796",
+      "url": "https://research.meta.ai/blog/muse-ember",
+      "titleAr": "ميتا تطلق Muse Ember كنموذج صغير للمهام المتكررة داخل الوكلاء",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "5ef93d9981a0db1c3c",
+      "url": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
+      "titleAr": "آبل توسّع حدود استخدام بعض ميزات Apple Intelligence بحزم إضافية",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "12c83389e580dec71d",
+      "url": "https://www.eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim/",
+      "titleAr": "DeepX تعلن اكتمال تصميم DX-M2 وتستهدف تشغيل نماذج كبيرة على أجهزة الطرف",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "a8ac24a5fed69e7112",
+      "url": "https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy",
+      "titleAr": "كندا تطلق Real-Time Rail للمدفوعات الفورية على مدار الساعة",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "a425346c085c7dcb99",
+      "url": "https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet/",
+      "titleAr": "ألواح شمسية شبه شفافة تسمح بمرور الضوء اللازم للنباتات في تجربة زراعية",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "0a2b694e15caf809f8",
+      "url": "https://www.cnx-software.com/2026/11/03/when-will-this-stop-the-raspberry-pi-5-16gb-sbc-now-sells-for-385/",
+      "titleAr": "ارتفاع سعر نسخة 16GB من Raspberry Pi 5 بمقدار 80 دولارًا",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "cec6ab6c90d6d9e9c1",
+      "url": "https://github.com/ikey4u/zebkit",
+      "titleAr": "Zebkit يقدّم محرك Chromium كمكتبة يمكن تضمينها في التطبيقات الأصلية",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "fb9de46b88c3faa779",
+      "url": "https://e-means.github.io/",
+      "titleAr": "ورقة e-means تقترح تسريع تجميع k-means بتحديثات المتوسط المتحرك الأسي",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "3c86ca6a06f60e03f0",
+      "url": "https://postalpro.usps.com/zcb",
+      "titleAr": "USPS تطرح خرائط حدود ZIP Code مشتقة من بيانات عناوين التسليم",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "1addf27c71831a1839",
+      "url": "https://yappologistic.github.io/CUI/",
+      "titleAr": "CUI يقدم مكتبة واجهات C99 فورية متعددة الأنظمة دون اعتماديات خارجية",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "0e9fb0eb84f13acffd",
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "titleAr": "Google DeepMind تكشف AlphaProof Code للتحقق الشكلي من تنفيذ بروتوكول Signal",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "c7d3010a8bcc401c0c",
+      "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
+      "titleAr": "Notion تكشف تفاصيل أثر حادثة Fireworks AI على بعض مساحات العمل",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "a7b39cb0698327aa7f",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/",
+      "titleAr": "Google توسّع الجيل الثامن من TPU بنظامي 8tx و8i Max",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "1d8889c9661cfe547b",
+      "url": "https://www.theverge.com/tech/1030601/ring-drone-cam-hands-on-price-release-date-ai-pilot",
+      "titleAr": "Ring تعلن كاميرا Drone Cam وروبوت Rover ضمن فئة Ring Robotics",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "14645f9d816239f1eb",
+      "url": "https://aitnews.com/2026/11/11/%d8%b3%d9%8a%d8%ac%d9%8a%d8%aa-%d8%aa%d8%b7%d9%84%d9%82-firecuda-forge-%d8%a8%d8%aa%d8%ae%d8%b2%d9%8a%d9%86-%d9%85%d8%a4%d9%82%d8%aa-%d8%b0%d9%83%d9%8a-%d9%88%d8%b3%d8%b9%d8%a9-%d8%aa%d8%b5%d9%84/",
+      "titleAr": "Seagate تطلق FireCuda Forge بسعتي 8 و20 تيرابايت مع تخزين مؤقت ذكي",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "31699ba3bf57a08cdb",
+      "url": "https://tendrils.co/blog/2026-11-10/30m-raised",
+      "titleAr": "Tendrils تعلن جمع 30 مليون دولار لتطوير معمارية معالجات موازية ولغة Vine",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "b87487ef036547770a",
+      "url": "https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news/",
+      "titleAr": "تقرير Reuters Institute: استخدام الذكاء الاصطناعي يتوسع كمصدر للمعلومات لكن تقبّل صناعة الأخبار آليًا ما زال منخفضًا",
+      "seen": true,
+      "status": "outside_current_feed; not confirmed expired; do not import until exact ID/URL reappears"
+    },
+    {
+      "id": "02bfed5e7aa817ea9d",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "titleAr": "Google تطلق Gemini Decisions API لتقييم ما يصل إلى ألف قرار متعدد الوسائط في طلب واحد",
+      "sourceFiles": [
+        "editorial/incoming PR #98 (14-file batch)"
+      ],
+      "inSeen": true,
+      "inFeed": false,
+      "confirmedExpired": false,
+      "status": "seen-only-outside-current-feed",
+      "reason": "لا يوجد سجل Feed حالي مطابق؛ يُحفظ للمتابعة ولا يُستورد."
+    },
+    {
+      "id": "b21fa54b837dba6b35",
+      "url": "https://machinelearning.apple.com/research/faster-retrieval",
+      "titleAr": "باحثو Apple يدرسون تسريع استرجاع RAG بتعلّم توزيع الاستعلامات",
+      "sourceFiles": [
+        "editorial/incoming PR #98 (14-file batch)"
+      ],
+      "inSeen": true,
+      "inFeed": false,
+      "confirmedExpired": false,
+      "status": "seen-only-outside-current-feed",
+      "reason": "لا يوجد سجل Feed حالي مطابق؛ يُحفظ للمتابعة ولا يُستورد."
+    },
+    {
+      "id": "3cffec5790b8f2e218",
+      "url": "https://blog.mozilla.org/security/2026/11/10/open-research-stronger-privacy-making-firefox-users-harder-to-fingerprint/",
+      "titleAr": "Firefox يقلّص بصمة المتصفح ويعزز مقاومة التتبع دون ملفات تعريف الارتباط",
+      "sourceFiles": [
+        "editorial/incoming PR #98 (14-file batch)"
+      ],
+      "inSeen": true,
+      "inFeed": false,
+      "confirmedExpired": false,
+      "status": "seen-only-outside-current-feed",
+      "reason": "لا يوجد سجل Feed حالي مطابق؛ يُحفظ للمتابعة ولا يُستورد."
+    },
+    {
+      "id": "35f9d4a8ad49bd077c",
+      "url": "https://www.wired.com/story/duolingo-strava-and-ticketmaster-are-all-caught-up-in-eus-new-digital-fairness-rules/",
+      "titleAr": "المفوضية الأوروبية تقترح قانون العدالة الرقمية لمواجهة الأنماط المضللة والرسوم المخفية",
+      "sourceFiles": [
+        "editorial/incoming PR #98 (14-file batch)"
+      ],
+      "inSeen": true,
+      "inFeed": false,
+      "confirmedExpired": false,
+      "status": "seen-only-outside-current-feed",
+      "reason": "لا يوجد سجل Feed حالي مطابق؛ يُحفظ للمتابعة ولا يُستورد."
+    },
+    {
+      "id": "1251f00274bede43be",
+      "url": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai",
+      "titleAr": "Adobe تعرض عشرة نماذج بحثية في MAX 2026 وتفتح معاينة لبعضها في Labs Playground",
+      "sourceFiles": [
+        "editorial/incoming PR #98 (14-file batch)"
+      ],
+      "inSeen": true,
+      "inFeed": false,
+      "confirmedExpired": false,
+      "status": "seen-only-outside-current-feed",
+      "reason": "لا يوجد سجل Feed حالي مطابق؛ يُحفظ للمتابعة ولا يُستورد."
+    }
+  ],
+  "excludedFromEditorial": [
+    {
+      "id": "02bfed5e7aa817ea9d",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "titleAr": "Google تطلق Gemini Decisions API لتقييم ما يصل إلى ألف قرار متعدد الوسائط في طلب واحد",
+      "sourceFiles": [
+        "editorial/incoming PR #98 (14-file batch)"
+      ],
+      "inSeen": true,
+      "inFeed": false,
+      "confirmedExpired": false,
+      "status": "seen-only-outside-current-feed",
+      "reason": "لا يوجد سجل Feed حالي مطابق؛ يُحفظ للمتابعة ولا يُستورد."
+    },
+    {
+      "id": "b21fa54b837dba6b35",
+      "url": "https://machinelearning.apple.com/research/faster-retrieval",
+      "titleAr": "باحثو Apple يدرسون تسريع استرجاع RAG بتعلّم توزيع الاستعلامات",
+      "sourceFiles": [
+        "editorial/incoming PR #98 (14-file batch)"
+      ],
+      "inSeen": true,
+      "inFeed": false,
+      "confirmedExpired": false,
+      "status": "seen-only-outside-current-feed",
+      "reason": "لا يوجد سجل Feed حالي مطابق؛ يُحفظ للمتابعة ولا يُستورد."
+    },
+    {
+      "id": "3cffec5790b8f2e218",
+      "url": "https://blog.mozilla.org/security/2026/11/10/open-research-stronger-privacy-making-firefox-users-harder-to-fingerprint/",
+      "titleAr": "Firefox يقلّص بصمة المتصفح ويعزز مقاومة التتبع دون ملفات تعريف الارتباط",
+      "sourceFiles": [
+        "editorial/incoming PR #98 (14-file batch)"
+      ],
+      "inSeen": true,
+      "inFeed": false,
+      "confirmedExpired": false,
+      "status": "seen-only-outside-current-feed",
+      "reason": "لا يوجد سجل Feed حالي مطابق؛ يُحفظ للمتابعة ولا يُستورد."
+    },
+    {
+      "id": "35f9d4a8ad49bd077c",
+      "url": "https://www.wired.com/story/duolingo-strava-and-ticketmaster-are-all-caught-up-in-eus-new-digital-fairness-rules/",
+      "titleAr": "المفوضية الأوروبية تقترح قانون العدالة الرقمية لمواجهة الأنماط المضللة والرسوم المخفية",
+      "sourceFiles": [
+        "editorial/incoming PR #98 (14-file batch)"
+      ],
+      "inSeen": true,
+      "inFeed": false,
+      "confirmedExpired": false,
+      "status": "seen-only-outside-current-feed",
+      "reason": "لا يوجد سجل Feed حالي مطابق؛ يُحفظ للمتابعة ولا يُستورد."
+    },
+    {
+      "id": "1251f00274bede43be",
+      "url": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai",
+      "titleAr": "Adobe تعرض عشرة نماذج بحثية في MAX 2026 وتفتح معاينة لبعضها في Labs Playground",
+      "sourceFiles": [
+        "editorial/incoming PR #98 (14-file batch)"
+      ],
+      "inSeen": true,
+      "inFeed": false,
+      "confirmedExpired": false,
+      "status": "seen-only-outside-current-feed",
+      "reason": "لا يوجد سجل Feed حالي مطابق؛ يُحفظ للمتابعة ولا يُستورد."
+    }
+  ],
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "inSeen": true,
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inPrEditorial": false,
+      "status": "research-only",
+      "latestRelease": "v0.1.8",
+      "releasePublishedAt": "2026-11-10T18:14:42Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "stars": 21520,
+      "forks": 2102,
+      "openIssuesCount": 661,
+      "testStatus": "not_run",
+      "dossier": "editorial/library/nvidia-openshell-release-review-2026-11-11-2040.json",
+      "sources": [
+        "https://github.com/NVIDIA/OpenShell/releases",
+        "https://docs.nvidia.com/openshell/home",
+        "https://github.com/NVIDIA/OpenShell/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "inSeen": true,
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inPrEditorial": false,
+      "status": "seen-only-research",
+      "announcementDate": "2026-10-22",
+      "publicApi": "available",
+      "mcpServer": "coming soon per official announcement",
+      "sources": [
+        "https://www.canva.com/newsroom/news/canva-craft/",
+        "https://www.canva.com/ai-research/craft-api/"
+      ]
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "inSeen": true,
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inPrEditorial": false,
+      "status": "seen-only-research",
+      "announcementDate": "2026-10-22",
+      "optIn": true,
+      "accountEligibility": "Individual and Family accounts; Team/Business not supported in current support guide",
+      "agentPasswordVisibility": "1Password says it fills credentials without exposing them to the agent",
+      "sources": [
+        "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents",
+        "https://support.1password.com/1password-for-agents/"
+      ]
+    }
+  ],
+  "projectReview": {
+    "feedProjects": 100,
+    "mainEditorialActiveProjects": 98,
+    "prEditorialActiveProjects": 100,
+    "previousEightReviewed": 8,
+    "researchLibraryTotal": 70,
+    "researchLibraryActive": 68,
+    "researchLibraryArchived": 2,
+    "researchLibraryInCurrentProjectFeed": 14,
+    "researchLibraryNotInFeed": 54,
+    "feedMembershipUnverified": 1,
+    "feedNewsReferences": 1,
+    "licenseNeedsUpstreamVerification": 10,
+    "publishedLibraryEntries": 31,
+    "publishedLibraryCompiledAt": "2026-10-24T10:38:36.869Z",
+    "newProjectProposalCount": 11,
+    "newProjectProposalComplete": 11,
+    "topSuggestions": [
+      {
+        "project": "DevDocs",
+        "title": "مكتبة Python والذكاء الاصطناعي دون اتصال",
+        "problem": "تشتت توثيق Python وNumPy وpandas وPyTorch بين مصادر متعددة.",
+        "approach": "حزمة docsets منتقاة بإصدارات ثابتة ومصادر رسمية وتاريخ مراجعة.",
+        "stack": "DevDocs, Python docs, NumPy, pandas, PyTorch, JSON manifest",
+        "steps": 5,
+        "metric": "ظهور الصفحة الصحيحة ضمن أول 5 نتائج في 90% من الاستعلامات المرجعية.",
+        "difficulty": "متوسطة؛ تقدير 2–4 أسابيع",
+        "risks": "تغير الإصدارات وتفاوت تراخيص الوثائق واستهلاك التخزين."
+      },
+      {
+        "project": "Hello-Agents",
+        "title": "بيئات قابلة لإعادة الإنتاج لكل فصل",
+        "problem": "تغير إصدارات الحزم ومزودي النماذج قد يكسر أمثلة تعليمية قديمة.",
+        "approach": "ملف اعتماديات مقفل لكل مثال مع إصدار Python والمزود وتاريخ آخر تشغيل موثق.",
+        "stack": "Python, uv, pip-tools, pytest, GitHub Actions",
+        "steps": 5,
+        "metric": "100% من أمثلة المسار الأساسي لها بيئة موثقة وحالة اختبار وتاريخ مراجعة.",
+        "difficulty": "متوسطة؛ تقدير 3–4 أسابيع",
+        "risks": "قد تتغير واجهات المزودين أو تتطلب الاختبارات مفاتيح API وحصصًا سحابية."
+      },
+      {
+        "project": "AI Engineering Hub",
+        "title": "اختبارات smoke تلقائية للدفاتر",
+        "problem": "وجود دفتر Jupyter لا يثبت أن خلاياه تعمل مع الإصدارات الحالية.",
+        "approach": "تشغيل مجموعة صغيرة من الدفاتر على بيانات اصطناعية أو صغيرة في CI مع فصل الاختبارات التي تحتاج نموذجًا محليًا.",
+        "stack": "Python, pytest, nbmake, GitHub Actions",
+        "steps": 5,
+        "metric": "نسبة الدفاتر الأساسية التي تمر باختبار smoke على بيئة معلنة.",
+        "difficulty": "متوسطة؛ تقدير 3–5 أسابيع",
+        "risks": "قد تتجاوز الاختبارات وقت CI أو تفشل بسبب تنزيل النماذج؛ استخدم fixtures صغيرة ولا تدّعِ اختبارًا كاملًا."
+      }
+    ]
+  },
+  "newsAdded": [
+    {
+      "id": "607d4d7557c40807b1",
+      "titleAr": "NVIDIA تعلن انتقالًا في القيادة وتعيّن Colette Kress رئيسة تنفيذية مؤقتة",
+      "url": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "NVIDIA Newsroom — CEO transition, 12 Nov 2026",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+        },
+        {
+          "title": "NVIDIA — Executive biographies",
+          "url": "https://nvidianews.nvidia.com/multimedia/corporate/corporate-executives"
+        }
+      ]
+    },
+    {
+      "id": "a3e1afb4a33deb1bb6",
+      "titleAr": "Google تطلق Gemini 4 Hydrogen وتوسّع نمط العمل متعدد النماذج",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Google — Introducing Gemini 4 Hydrogen",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+        }
+      ]
+    },
+    {
+      "id": "a491aa90d650ab2bf9",
+      "titleAr": "Amplitude تعرض Wave لتحويل تحليلات المنتج إلى تحسينات برمجية قابلة للقياس",
+      "url": "https://openai.com/index/amplitude",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "OpenAI — How Amplitude ships product improvements in 1–2 days",
+          "url": "https://openai.com/business/customer-stories/amplitude/"
+        }
+      ]
+    },
+    {
+      "id": "6a0b530a1c16bbaf1b",
+      "titleAr": "FAA توسّع SMART لتوصيات تخطيط الحركة الجوية إلى مراكزها الـ22",
+      "url": "https://arstechnica.com/ai/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "FAA — SMART Expanding Across the Nation, 10 Nov 2026",
+          "url": "https://www.faa.gov/newsroom/statements/general-statements"
+        },
+        {
+          "title": "U.S. DOT — SMART launch, 21 Sep 2026",
+          "url": "https://www.transportation.gov/briefing-room/trumps-transportation-secretary-sean-p-duffy-delivers-state-art-air-traffic-control"
+        }
+      ]
+    },
+    {
+      "id": "0e171f2635ea316420",
+      "titleAr": "GitHub تجعل ملفات قفل اعتماديات Actions متاحة عمومًا",
+      "url": "https://hugovk.dev/blog/2026/lock-github-actions/",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "Hugo van Kemenade — Lock GitHub Actions",
+          "url": "https://hugovk.dev/blog/2026/lock-github-actions"
+        },
+        {
+          "title": "GitHub Changelog — Workflow lockfiles generally available",
+          "url": "https://github.blog/changelog/2026-10-28-github-actions-workflow-lockfiles-are-generally-available/"
+        },
+        {
+          "title": "GitHub Docs — Workflow dependency lockfiles",
+          "url": "https://docs.github.com/en/actions/concepts/security/workflow-dependency-lockfiles"
+        }
+      ]
+    },
+    {
+      "id": "a487e36889862acfd3",
+      "titleAr": "انقطاع في Outlook وExchange Online يعطّل الوصول إلى البريد في عدة مناطق",
+      "url": "https://www.theverge.com/tech/1032226/microsoft-outlook-is-down",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "The Verge — Microsoft Outlook is down",
+          "url": "https://www.theverge.com/tech/1032226/microsoft-outlook-is-down"
+        },
+        {
+          "title": "Microsoft 365 Service Health Status",
+          "url": "https://status.cloud.microsoft/"
+        }
+      ]
+    },
+    {
+      "id": "ecab0e7e397b310858",
+      "titleAr": "إعادة تصميم Humble Bundle تثير تساؤلات حول إدارة المصادقة الثنائية",
+      "url": "https://www.theverge.com/games/1032659/humble-bundle-redesign-two-factor-verification-security-settings",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "The Verge — Humble Bundle redesign and two-factor settings",
+          "url": "https://www.theverge.com/games/1032659/humble-bundle-redesign-two-factor-verification-security-settings"
+        },
+        {
+          "title": "Humble Bundle Support — Two-Step Verification",
+          "url": "https://support.humblebundle.com/hc/en-us/articles/202421374-Humble-Bundle-Two-Step-Verification"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "structuralEquivalent": {
+      "batchEntries": 39,
+      "batchPass": 39,
+      "mergedEditorialEntries": 953,
+      "mergedPass": 953
+    },
+    "officialCommandsNotExecuted": [
+      "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-11-13-0306.json",
+      "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-11-13-0306.json",
+      "python -m unittest discover -s tests -v"
+    ],
+    "reason": "لا توجد نسخة عمل محلية؛ محاولة git clone فشلت بسبب تعذر DNS. CI هو مصدر تنفيذ الاختبارات الرسمية."
+  },
+  "ciBeforeCurrentCommit": {
+    "prRun": 43279486558,
+    "head": "ea753a1f6d5096ee2bce247bbcbb4aa48c2694fc",
+    "conclusion": "success",
+    "tests": 30,
+    "editorialValidated": 951
+  },
+  "publicationBeforeCurrentCommit": {
+    "mainRun": 43330206972,
+    "conclusion": "success",
+    "artifactId": 13994442337,
+    "artifactEditorialEntries": 917,
+    "livePagesFetch": "not_verified_disabled_error"
+  },
+  "limitations": [
+    "لا يوجد اختبار تشغيل للمشاريع؛ testStatus remains not_run unless testEvidence exists.",
+    "22 سجلًا خارج Feed موجودة في Seen؛ لا يوجد دليل كافٍ لتصنيفها منقضية.",
+    "10 تراخيص في الكتالوج التاريخي تحتاج تحققًا من المصدر upstream.",
+    "وقت updatedAt في GitHub API جاء بعد وقت الالتقاط المسجل بعدة دقائق؛ تعامل معه كاختلاف ساعة API ولا تستخدمه وحده لإثبات نشاط جديد."
+  ]
+}
