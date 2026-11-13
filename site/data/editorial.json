@@ -41583,27 +41583,6 @@
         }
       ]
     },
-    "0d7637bb5559a97c22": {
-      "url": "https://tratt.net/laurie/blog/2026/adapting_cpython_for_yk.html",
-      "titleAr": "تجربة تقنية لتكييف CPython مع بيئة Yk",
-      "summaryAr": "تشير بيانات التغذية إلى تدوينة تقنية تتناول محاولة تكييف CPython للعمل مع Yk. لم يتيسر فتح نص التدوينة كاملًا في هذه الدورة؛ لذلك يقتصر الوصف على موضوعها الظاهر ولا يتضمن ادعاءً عن الأداء أو التوافق أو اكتمال التنفيذ.",
-      "whyItMatters": "أي تجربة تربط مفسّر Python ببيئة تشغيل أو مترجم JIT قد تهم مطوري اللغات والأدوات، لكن القيمة العملية تتوقف على تفاصيل التنفيذ والاختبارات والتوافق مع امتدادات Python.",
-      "audience": "مطورو Python ومهندسو المفسرات وبيئات التشغيل ومهتمو تحسين الأداء.",
-      "nextSteps": [
-        "اقرأ التدوينة الأصلية قبل الاستناد إلى تفاصيلها الفنية.",
-        "تحقق من المستودع والاختبارات وإصدارات CPython التي تغطيها التجربة.",
-        "لا تقارن الأداء قبل توفر معيار قابل لإعادة الإنتاج على العتاد نفسه."
-      ],
-      "limitations": "basis=metadata: لم يُقرأ النص الكامل في هذه الدورة، ولا توجد هنا نتائج أداء أو اختبارات توافق مؤكدة.",
-      "reviewedAt": "2026-11-13T06:12:00+03:00",
-      "basis": "metadata",
-      "sources": [
-        {
-          "title": "Laurie Tratt — Adapting CPython for Yk",
-          "url": "https://tratt.net/laurie/blog/2026/adapting_cpython_for_yk.html"
-        }
-      ]
-    },
     "60460c51ffcbaa7143": {
       "url": "https://mehmetince.net/part-3-6-how-i-ended-up-turning-a-22-year-old-postgresql-type-confusion-primitive-into-rce-cve-2026-6460/",
       "titleAr": "PostgreSQL تنشر إصلاحًا لثغرة CVE-2026-6460 عالية الخطورة",
