@@ -45,6 +45,10 @@
         {
           "title": "docTR alternative",
           "url": "https://github.com/mindee/doctr"
+        },
+        {
+          "title": "Apache-2.0 license",
+          "url": "https://github.com/JaidedAI/EasyOCR/blob/master/LICENSE"
         }
       ],
       "basis": "readme",
@@ -216,7 +220,17 @@
             }
           ]
         }
-      ]
+      ],
+      "license": "Apache-2.0",
+      "localVsCloud": "التشغيل الأساسي محلي على CPU أو GPU بعد تنزيل الأوزان؛ لا توجد رسوم API لكل صفحة. يمكن تشغيله داخل حاوية أو VM سحابية، وعندها تكون التكلفة موارد الحوسبة والتخزين. أول تشغيل قد ينزّل ملفات النموذج.",
+      "activityStatus": "active",
+      "repositorySnapshot": {
+        "stars": 30141,
+        "forks": 3623,
+        "archived": false,
+        "pushedAt": "2026-11-13T00:06:56Z",
+        "measuredAt": "2026-11-13T06:12:00+03:00"
+      }
     },
     {
       "id": "6ea9e0fbab097163ee",
@@ -276,6 +290,10 @@
         {
           "title": "Pipecat alternative",
           "url": "https://github.com/pipecat-ai/pipecat"
+        },
+        {
+          "title": "BSD-2-Clause license",
+          "url": "https://github.com/dograh-hq/dograh/blob/main/LICENSE"
         }
       ],
       "basis": "readme",
@@ -476,8 +494,18 @@
             }
           ]
         }
-      ]
+      ],
+      "license": "BSD-2-Clause",
+      "localVsCloud": "يمكن استضافة Dograh ذاتيًا عبر Docker على جهاز أو VM تملكها؛ تبقى تكاليف STT وTTS وLLM والاتصال الهاتفي مرتبطة بالمزود المختار. خيار الاستضافة السحابية المدارة يقلل إدارة الخادم لكنه يضيف رسوم المنصة والاستخدام.",
+      "activityStatus": "active",
+      "repositorySnapshot": {
+        "stars": 6078,
+        "forks": 1565,
+        "archived": false,
+        "pushedAt": "2026-11-12T04:27:29Z",
+        "measuredAt": "2026-11-13T06:12:00+03:00"
+      }
     }
   ],
-  "editorialNote": "تمت مراجعة README والتوثيق والترخيص والمتطلبات وطريقة البدء والتكاليف المحليّة/السحابية والبدائل. المقترحات أعيدت صياغة خطواتها لتكون خاصة بكل مشروع. لم تُشغّل المشاريع ولم يُدّعَ اختبارها."
+  "editorialNote": "أُضيفت بيانات الترخيص والتشغيل المحلي/السحابي ومؤشرات المستودع من الصفحات الرسمية. لم تُشغّل المشاريع ولم يُدّعَ اختبارها."
 }
