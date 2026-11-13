@@ -1,0 +1,734 @@
+{
+  "version": 1,
+  "items": {
+    "1c5e170b0f37ff95fd": {
+      "url": "https://developer.apple.com/foundation-models-framework/",
+      "titleAr": "Apple توسّع Foundation Models لتوحيد النماذج المحلية والخادمية في تطبيقات Swift",
+      "summaryAr": "توضح وثائق Apple أن Foundation Models إطار Swift موحّد للوصول إلى نموذج Apple على الجهاز وإلى نماذج خادمية من مزودين آخرين، مع دعم استدعاء الأدوات والتوليد الموجّه وفهم الصور. وتتكامل معه إمكانات Vision لاستخراج النصوص محليًا، بينما يتطلب استخدام Private Cloud Compute مراعاة شروط Apple الخاصة.",
+      "whyItMatters": "يقلل الإطار كلفة بناء طبقة تكامل منفصلة لكل نموذج، لكنه يجعل قرار اختيار النموذج قرارًا معماريًا: المحلي يقلل الاعتماد على الشبكة، والخادمي قد يخدم المهام الأثقل. يجب قياس الخصوصية والكمون والتكلفة وحدود الجهاز بدل افتراض أن المسار الواحد مناسب لكل مهمة.",
+      "audience": "مطورو تطبيقات Apple وفرق Swift وواجهات الذكاء الاصطناعي على الأجهزة.",
+      "nextSteps": [
+        "اختبر نموذجًا محليًا على جهاز متوافق قبل اعتماد أي مسار خادمي.",
+        "قارن زمن الاستجابة والذاكرة وجودة المخرجات بين المحلي والخادمي.",
+        "راجع شروط Private Cloud Compute وحدود الأهلية وسياسات مزود النموذج قبل الإطلاق."
+      ],
+      "limitations": "تختلف الإمكانات باختلاف الجهاز وإصدار النظام ومزود النموذج. وتذكر Apple أن الوصول المجاني إلى بعض استخدامات Private Cloud Compute مشروط ببرنامج App Store Small Business وحدّ التنزيلات؛ ولا يعني ذلك أن كل استخدام سحابي مجاني.",
+      "reviewedAt": "2026-11-13T06:12:00+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Apple — Foundation Models framework",
+          "url": "https://developer.apple.com/foundation-models-framework/"
+        },
+        {
+          "title": "Apple Developer Documentation — FoundationModels",
+          "url": "https://developer.apple.com/documentation/FoundationModels/"
+        }
+      ]
+    },
+    "d121304c3de64e9ed0": {
+      "url": "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/",
+      "titleAr": "GitHub تنشر دليلًا لبناء Agent Skills قابلة للنقل بين الوكلاء",
+      "summaryAr": "يشرح دليل GitHub الرسمي تنظيم مهارة الوكيل في مجلد قابل لإعادة الاستخدام يتضمن ملف SKILL.md وتعليمات وموارد مرتبطة. ويؤكد الفصل بين وصف سير العمل وبين الأدوات والبيانات والصلاحيات التي يوفرها المضيف للوكيل.",
+      "whyItMatters": "يساعد هذا الأسلوب على مشاركة إجراءات العمل بين بيئات الوكلاء بدل إعادة كتابة التعليمات لكل أداة. لكنه لا يمنح المهارة صلاحيات تلقائيًا ولا يضمن صحة التنفيذ؛ تبقى إدارة الأسرار والموافقات والاختبارات مسؤولية النظام المضيف والفريق.",
+      "audience": "مطورو الوكلاء وأدوات المطورين وفرق هندسة البرمجيات التي توحّد إجراءات العمل.",
+      "nextSteps": [
+        "ثبّت نسخة كل مهارة وراجع تغييرات SKILL.md ضمن مراجعة الشيفرة.",
+        "افصل تعليمات المهارة عن الرموز السرية والصلاحيات الفعلية.",
+        "أضف تحققًا مستقلًا واختبارات وموافقة بشرية للعمليات المؤثرة."
+      ],
+      "limitations": "الدليل صادر عن GitHub ويعرض نمطًا إرشاديًا؛ ملف المهارة وحده لا يفرض عزلًا أو تحكمًا بالوصول، ولا يثبت أن الوكيل نفّذ المهمة بصورة صحيحة.",
+      "reviewedAt": "2026-11-13T06:12:00+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "GitHub Blog — Build once, run on any agent: A practical guide to agent skills",
+          "url": "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/"
+        }
+      ]
+    },
+    "3737f013bc02f6fab5": {
+      "url": "https://www.engadget.com/2315525/metas-muse-can-now-make-calls-on-your-behalf-if-you-have-a-paid-subscription/",
+      "titleAr": "Meta توسّع Muse ليجري مكالمات أعمال نيابةً عن المستخدم المشترك",
+      "summaryAr": "يذكر تقرير Engadget أن Muse أصبح قادرًا على الاتصال بأعمال تجارية لتنفيذ مهام مثل حجز موعد أو إجراء حجز والانتظار على الخط، وأن الميزة مرتبطة باشتراك مدفوع. وينقل التقرير عن Meta أن الخدمة تجاوزت عشرة ملايين مستخدم، وهي معلومة من الشركة وليست قياسًا مستقلًا.",
+      "whyItMatters": "انتقال الوكيل من الإجابة النصية إلى إجراء مكالمة يرفع أهمية التفويض والشفافية وتأكيد التفاصيل قبل تنفيذ الحجز. ويشير المثال الذي أورده التقرير إلى أن الطرف الآخر قد لا يعرف دائمًا بوضوح أنه يتحدث مع وكيل آلي، ما يجعل الإفصاح والموافقة جزءًا أساسيًا من تصميم التجربة.",
+      "audience": "فرق المنتجات التي تبني مساعدين شخصيين ومطورو وكلاء الصوت ومهتمو خصوصية المستخدم.",
+      "nextSteps": [
+        "تحقق من نطاق إتاحة الميزة وشروط الاشتراك قبل تقييمها.",
+        "اشترط عرض المهمة والتفاصيل للمستخدم قبل إجراء اتصال أو تثبيت حجز.",
+        "صمّم إفصاحًا واضحًا عن هوية الوكيل وسجلًا لما قاله وما وافق عليه المستخدم."
+      ],
+      "limitations": "التقرير يصف إطلاقًا مرتبطًا باشتراك مدفوع ولا يثبت توفر الميزة في كل البلدان أو اللغات. كما أن تجربة مكالمة منشورة لا تكفي لقياس الموثوقية في الحالات المعقدة.",
+      "reviewedAt": "2026-11-13T06:12:00+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Engadget — Meta's Muse can now make calls on your behalf",
+          "url": "https://www.engadget.com/2315525/metas-muse-can-now-make-calls-on-your-behalf-if-you-have-a-paid-subscription/"
+        }
+      ]
+    },
+    "039c74dda2a3b52c28": {
+      "url": "https://techcrunch.com/2026/11/12/united-airlines-blocks-ai-agents-from-booking-flights-citing-cybersecurity-risks/",
+      "titleAr": "United Airlines تقيّد وكلاء الذكاء الاصطناعي في حجز الرحلات وإدارة الحجوزات",
+      "summaryAr": "ينقل تقرير TechCrunch أن United Airlines لا تسمح لوكلاء ذكاء اصطناعي خارجيين غير مصرح لهم بإجراء الحجوزات أو إدارة تغييراتها نيابةً عن العملاء، مع الإشارة إلى مخاطر الوصول غير المصرح به والحجوزات أو التعديلات غير المقصودة.",
+      "whyItMatters": "توضح الحالة أن الوكيل الذي يملك صلاحية تنفيذ معاملة يختلف عن مساعد يقدّم اقتراحًا فقط. ستحتاج خدمات السفر إلى تحديد هوية الوكيل وحدود التفويض وسجل الموافقات، بينما ينبغي للمستخدم ألا يمنح وكيلًا وصولًا أوسع من المهمة المطلوبة.",
+      "audience": "مطورو وكلاء السفر والحجوزات ومصممو الخدمات الرقمية ومستخدمو المساعدات الآلية.",
+      "nextSteps": [
+        "راجع شروط شركة الطيران قبل دمج أي أتمتة للحجوزات.",
+        "استخدم واجهات رسمية وصلاحيات محدودة بدل مشاركة بيانات الحساب على نطاق واسع.",
+        "اطلب تأكيدًا بشريًا قبل الدفع أو الإلغاء أو تغيير مسار الرحلة."
+      ],
+      "limitations": "هذا موقف شركة طيران بعينها كما نقله التقرير، وليس حظرًا عامًا على كل المساعدات أو قاعدة موحدة لكل شركات الطيران. قد تتغير الشروط بمرور الوقت.",
+      "reviewedAt": "2026-11-13T06:12:00+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — United Airlines blocks AI agents from booking flights",
+          "url": "https://techcrunch.com/2026/11/12/united-airlines-blocks-ai-agents-from-booking-flights-citing-cybersecurity-risks/"
+        }
+      ]
+    },
+    "743bb9f48555c86ca2": {
+      "url": "https://techcrunch.com/2026/11/12/softbanks-billion-dollar-loss-may-have-put-a-cap-on-ais-natural-gas-ambitions/",
+      "titleAr": "خسائر SoftBank تكشف مخاطر التسرّع في شراء طاقة مراكز الذكاء الاصطناعي",
+      "summaryAr": "يربط تقرير TechCrunch جزءًا كبيرًا من خسارة SoftBank الفصلية المعلنة، البالغة 7.1 مليارات دولار، بمعدات توليد الطاقة، ويذكر أن أكثر من ثلاثة مليارات دولار ارتبطت بطلبات توربينات غازية مسبقة وفق تفاصيل نقلها التقرير. ويعرض ذلك ضمن سباق تأمين الكهرباء اللازمة لمراكز البيانات.",
+      "whyItMatters": "توسّع الذكاء الاصطناعي لا يعتمد على وحدات GPU وحدها؛ فالكهرباء والتبريد ومواعيد التوريد قد تتحول إلى قيود رأسمالية وتشغيلية. ويبرز الخبر مخاطر الالتزامات طويلة الأجل إذا تغيرت توقعات الطلب أو تأخر بناء مراكز البيانات.",
+      "audience": "متابعو بنية الذكاء الاصطناعي ومشغلو مراكز البيانات ومحللو الطاقة والتقنية.",
+      "nextSteps": [
+        "افصل بين الأرقام التي أعلنتها الشركة والتفاصيل التي نقلتها الصحافة عن العقود.",
+        "تابع مراحل تسليم المعدات وربطها الفعلي بالشبكة بدل الاكتفاء بقيمة الطلبات.",
+        "قارن سيناريوهات الطاقة والتمويل والطلب قبل بناء توقعات سعة الحوسبة."
+      ],
+      "limitations": "تفاصيل توزيع الخسارة وقيمة بعض طلبات التوربينات منسوبة في التقرير إلى مصادر صحفية، وليست كشفًا مستقلًا لكل عقد. الخبر تحليل لمخاطر البنية التحتية وليس توصية استثمارية.",
+      "reviewedAt": "2026-11-13T06:12:00+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — SoftBank's billion-dollar loss and AI power ambitions",
+          "url": "https://techcrunch.com/2026/11/12/softbanks-billion-dollar-loss-may-have-put-a-cap-on-ais-natural-gas-ambitions/"
+        }
+      ]
+    },
+    "076934ef461be2b954": {
+      "url": "https://unemploymentlabs.com/checkpoint-forensics",
+      "titleAr": "تحليل بحثي يرصد بصمات عتادية محتملة في أوزان بعض النماذج",
+      "summaryAr": "نشرت Unemployment Labs تحليلًا جنائيًا يزعم أن أنماطًا رقمية في بعض نقاط حفظ النماذج تتوافق مع آثار تدريب على عتاد NVIDIA Blackwell. ويذكر التقرير أن هذه المؤشرات لا تحدد موقع التدريب ولا تثبت وحدها وقوع مخالفة لضوابط التصدير.",
+      "whyItMatters": "قد تصبح منشأ الحوسبة جزءًا من توثيق سلسلة توريد النماذج، لكن البصمة الإحصائية ليست إثباتًا مستقلًا لمكان التدريب أو الجهة التي امتلكت العتاد. يلزم تكرار النتائج ومقارنتها بأدلة مستقلة قبل بناء استنتاجات تنظيمية أو سياسية.",
+      "audience": "باحثو النماذج ومهندسو موثوقية الذكاء الاصطناعي ومحللو سلسلة التوريد والسياسات التقنية.",
+      "nextSteps": [
+        "اطلب إعادة إنتاج مستقلة للنتائج قبل اعتمادها.",
+        "افصل بين رصد نمط عتادي وبين إثبات موقع الحوسبة أو وضعها القانوني.",
+        "وثّق حدود البيانات والافتراضات وأي تفسيرات بديلة."
+      ],
+      "limitations": "المصدر تقرير بحثي مستقل وليس مراجعة محكّمة أو إعلانًا من مزود العتاد. لا يثبت وحده موقع التدريب أو وجود مخالفة، ولا ينبغي تحويله إلى حكم قطعي.",
+      "reviewedAt": "2026-11-13T06:12:00+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Unemployment Labs — Checkpoint Forensics",
+          "url": "https://unemploymentlabs.com/checkpoint-forensics"
+        }
+      ]
+    },
+    "60460c51ffcbaa7143": {
+      "url": "https://mehmetince.net/part-3-6-how-i-ended-up-turning-a-22-year-old-postgresql-type-confusion-primitive-into-rce-cve-2026-6460/",
+      "titleAr": "PostgreSQL تنشر إصلاحًا لثغرة CVE-2026-6460 عالية الخطورة",
+      "summaryAr": "يسجل التنبيه الرسمي CVE-2026-6460 خللًا في معالجة أنواع البيانات داخل PostgreSQL قد يتيح تنفيذ تعليمات بصلاحيات مستخدم نظام قاعدة البيانات عند تحقق شروط صلاحيات محددة. حُددت الإصدارات المصححة في 18.7 و17.12 و16.16 و15.20 و14.25، بدرجة CVSS 8.8.",
+      "whyItMatters": "يذكّر التنبيه بأن إدارة صلاحيات إنشاء الكائنات وتحديث الإصدارات الفرعية جزء من أمن قواعد البيانات، لا مجرد صيانة دورية. ينبغي التحقق من الإصدار الفعلي والرجوع إلى تنبيه التوزيعة عند وجود إصلاحات خلفية.",
+      "audience": "مسؤولو PostgreSQL ومطورو الخدمات التي تعتمد عليه وفرق أمن قواعد البيانات.",
+      "nextSteps": [
+        "تحقق من الإصدار الفعلي لكل خادم أو صورة حاوية.",
+        "حدّث إلى الإصدار الفرعي المصحح الموافق لخط الإصدار المستخدم.",
+        "راجع صلاحيات إنشاء الكائنات وسياسات التحديث لدى مزود نظام التشغيل أو الحاوية."
+      ],
+      "limitations": "تتطلب قابلية التأثر شروط صلاحيات وإصدارًا محددًا؛ لا يعني التنبيه أن كل خادم مكشوف. قد تحمل توزيعات Linux إصلاحًا خلفيًا دون تطابق رقم الإصدار upstream. لا يتضمن هذا الملخص خطوات استغلال.",
+      "reviewedAt": "2026-11-13T06:12:00+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "PostgreSQL — CVE-2026-6460 official advisory",
+          "url": "https://www.postgresql.org/support/security/CVE-2026-6460/"
+        },
+        {
+          "title": "Mehmet Ince — PostgreSQL type-confusion research",
+          "url": "https://mehmetince.net/part-3-6-how-i-ended-up-turning-a-22-year-old-postgresql-type-confusion-primitive-into-rce-cve-2026-6460/"
+        }
+      ]
+    },
+    "e31d579ac0149753f2": {
+      "url": "https://www.bbc.co.uk/news/articles/cm62y0wrnz9zo?at_medium=RSS&at_campaign=rss",
+      "titleAr": "BBC ترصد استخدام تعديلات الذكاء الاصطناعي في صور العقارات",
+      "summaryAr": "تشير بيانات عنوان وخلاصة BBC إلى تقرير عن تعديل صور العقارات بالذكاء الاصطناعي، وما قد يحدث عندما تتجاوز التحسينات الشكلية حدًا يغيّر توقعات المشتري عن العقار. لم تُفتح صفحة المقال كاملة في هذه الدورة، لذا لا أضيف تفاصيل أو أحكامًا قانونية غير ظاهرة في بيانات المصدر.",
+      "whyItMatters": "تزداد أهمية توضيح مصدر الصورة والتعديلات التي طرأت عليها عندما يعتمد قرار شراء أو زيارة على تمثيل بصري. وتحتاج منصات العقارات إلى قواعد إفصاح تحفظ الفرق بين تحسين العرض وتغيير خصائص المكان.",
+      "audience": "مشترو المنازل والوكلاء العقاريون ومنصات الإعلانات ومصممو سياسات المحتوى المرئي.",
+      "nextSteps": [
+        "اطلب صورًا أصلية أو جولة ميدانية عند اتخاذ قرار مهم.",
+        "أفصح بوضوح عن التعديلات الاصطناعية في صور الإعلانات.",
+        "افصل في أدوات النشر بين تحسين الإضاءة وإضافة أو إزالة عناصر تغيّر حقيقة العقار."
+      ],
+      "limitations": "basis=metadata: صفحة BBC لم تُقرأ كاملة؛ الملخص مقصور على العنوان والخلاصة المتاحة، ولا يقدم رأيًا قانونيًا أو قياسًا لانتشار الظاهرة.",
+      "reviewedAt": "2026-11-13T06:12:00+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "BBC News — Housefishing and AI-edited property images",
+          "url": "https://www.bbc.co.uk/news/articles/cm62y0wrnz9zo?at_medium=RSS&at_campaign=rss"
+        }
+      ]
+    },
+    "889dda614b5244142f": {
+      "url": "https://www.theverge.com/games/1032085/gdc-festival-of-gaming-annual-survey-ai-layoffs",
+      "titleAr": "استطلاع GDC: استخدام الذكاء الاصطناعي بين مطوري الألعاب يرتفع إلى 40%",
+      "summaryAr": "تقول معاينة تقرير GDC لشهر نوفمبر 2026 إن 40% من المشاركين يستخدمون أدوات الذكاء الاصطناعي التوليدي ضمن عملهم، مقارنة بـ36% في العام السابق. وفي المقابل يرى 55% أثرًا سلبيًا على الصناعة، بينما تتركز الاستخدامات المقبولة أكثر في المهام المتكررة والبحث والعصف الذهني، مع استمرار الاعتراض على الاستخدامات الإبداعية أو الموجهة للاعب.",
+      "whyItMatters": "ارتفاع الاستخدام لا يعني وجود إجماع مهني؛ فالموقف يختلف بحسب نوع المهمة والحقوق والأثر على الوظائف وجودة العمل. تحتاج الاستوديوهات إلى سياسة تميّز بين المساعدة الإدارية والإنتاج الإبداعي، وتحدد الإفصاح ومصدر الأصول ومراجعة الجودة.",
+      "audience": "مطورو الألعاب والاستوديوهات والطلاب والمعلمون ومديرو الإنتاج.",
+      "nextSteps": [
+        "اقرأ منهجية الاستطلاع وحجم العينة قبل تعميم النسب.",
+        "قسّم سياسة الاستوديو حسب نوع الاستخدام بدل اعتماد حظر أو سماح شامل.",
+        "وثّق حقوق الأصول وموافقة أصحابها ومراجعة المخرجات قبل إدخالها في لعبة منشورة."
+      ],
+      "limitations": "النتائج ذاتية الإبلاغ وليست تعدادًا شاملًا للصناعة. وتذكر GDC أن مشاركين متأثرين بالتسريح قد يكونون ممثلين بنسبة أعلى في بعض أقسام الاستطلاع؛ لذلك لا تثبت الأرقام علاقة سببية.",
+      "reviewedAt": "2026-11-13T06:12:00+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "The Verge — GDC annual survey on AI and layoffs",
+          "url": "https://www.theverge.com/games/1032085/gdc-festival-of-gaming-annual-survey-ai-layoffs"
+        },
+        {
+          "title": "GDC — State of the Game Industry: November 2026",
+          "url": "https://gdconf.com/state-of-the-game-industry-november-2026/"
+        }
+      ]
+    },
+    "9ccf02f3129f738855": {
+      "url": "https://techcrunch.com/2026/11/12/hugging-face-ceo-vows-to-keep-fighting-for-open-source-ai-after-jensen-huangs-exit/",
+      "titleAr": "Hugging Face تؤكد مواصلة دعم الذكاء الاصطناعي المفتوح وسط تغيّرات NVIDIA",
+      "summaryAr": "ينقل TechCrunch عن الرئيس التنفيذي لـHugging Face تأكيده مواصلة دعم الذكاء الاصطناعي المفتوح. ويذكر التقرير أن خطة استحواذ NVIDIA المعلنة على المنصة بقيمة 12.9 مليار دولار ما زالت تستهدف الإغلاق في النصف الأول من 2027؛ أي إن الصفقة لم تكن قد أُغلقت وقت نشر الخبر.",
+      "whyItMatters": "إذا اكتملت الصفقة فقد يتغير ميزان النفوذ حول منصة توزيع نماذج واسعة الاستخدام. لذلك لا يكفي تصريح بالاستمرار؛ الأهم متابعة الحوكمة وتراخيص النماذج وإمكانية الوصول وتعدد المزودين بعد أي تغيير ملكية.",
+      "audience": "مجتمع النماذج المفتوحة ومطورو الذكاء الاصطناعي ومتابعو المنافسة والسياسات التقنية.",
+      "nextSteps": [
+        "تابع الإعلانات الرسمية وحالة الصفقة التنظيمية بدل افتراض اكتمالها.",
+        "راجع ترخيص كل نموذج وأوزانه بصورة مستقلة عن اسم المنصة.",
+        "حافظ على مسارات بديلة لتوزيع النماذج وتخزينها وتقييمها."
+      ],
+      "limitations": "الصفقة لم تكن مكتملة وقت التقرير، والمعلومات عن التحقيقات التنظيمية منسوبة إلى مصادر صحفية. لا يمكن استنتاج سياسات ما بعد الإغلاق من تصريح واحد.",
+      "reviewedAt": "2026-11-13T06:12:00+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — Hugging Face CEO vows to keep fighting for open source AI",
+          "url": "https://techcrunch.com/2026/11/12/hugging-face-ceo-vows-to-keep-fighting-for-open-source-ai-after-jensen-huangs-exit/"
+        }
+      ]
+    },
+    "dd62360cdb55684548": {
+      "url": "https://www.theverge.com/gadgets/1032630/whoop-humans-social-network",
+      "titleAr": "WHOOP تعلن شبكة اجتماعية لمشاركة بيانات الأداء باختيار المستخدم",
+      "summaryAr": "تظهر بيانات الخبر والإعلان أن WHOOP تقدّم WHOOP Humans بوصفها شبكة اجتماعية تتيح للأعضاء نشر محتوى مرتبط بأجهزتهم ومؤشرات الأداء التي يختارون مشاركتها. لم يتيسر فتح صفحة الإعلان الرسمية كاملة في هذه الدورة، لذلك لا أتعامل مع ادعاءات الخصوصية أو التحقق من الهوية كحقائق مدققة مستقلًا.",
+      "whyItMatters": "عندما تنتقل بيانات الأجهزة القابلة للارتداء إلى مساحة اجتماعية تصبح إعدادات الجمهور والموافقة والسحب والحذف وتقليل البيانات عناصر تصميم أساسية. مشاركة المؤشرات ليست ضرورة لاستخدام الجهاز، ولا ينبغي أن تتحول إلى ضغط اجتماعي على المستخدم.",
+      "audience": "مستخدمو الأجهزة القابلة للارتداء ومصممو المنتجات الرقمية وفرق الخصوصية.",
+      "nextSteps": [
+        "راجع إعدادات الجمهور والبيانات قبل تفعيل أي مشاركة.",
+        "تأكد من إمكان إيقاف المشاركة وسحب المنشورات أو حذفها.",
+        "لا تشارك مؤشرات حساسة لمجرد أن الشبكة تشجع على النشر."
+      ],
+      "limitations": "basis=metadata: لم تُفتح صفحة WHOOP الرسمية كاملة، والملخص مبني على عنوان الخبر وبيانات الإعلان المتاحة. ادعاءات الشركة حول الخصوصية والتحقق تحتاج مراجعة مستقلة.",
+      "reviewedAt": "2026-11-13T06:12:00+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "The Verge — WHOOP Humans social network",
+          "url": "https://www.theverge.com/gadgets/1032630/whoop-humans-social-network"
+        },
+        {
+          "title": "WHOOP Press Center — WHOOP Humans announcement",
+          "url": "https://www.whoop.com/it/en/press-center/whoop-launches-whoop-humans-the-most-verifiably-human-social-network/"
+        }
+      ]
+    },
+    "bf86da7f404b1d1c1f": {
+      "url": "https://github.com/JaidedAI/EasyOCR",
+      "titleAr": "EasyOCR — مكتبة مفتوحة للتعرّف الضوئي على النصوص متعددة اللغات",
+      "summaryAr": "مكتبة OCR جاهزة مبنية على PyTorch، تدعم أكثر من 80 لغة ومنها العربية، وتعيد النصوص مع إحداثيات الصناديق ودرجة الثقة. تعمل على CPU أو GPU وتحمّل أوزان النماذج عند أول استخدام.",
+      "whyItMatters": "تتيح استخراج النصوص من الصور والمستندات محليًا، بما فيها العربية، وتوفر أساسًا لبناء خطوط معالجة وثائق قابلة للقياس والمراجعة.",
+      "audience": "مطورو Python ومشاريع معالجة الصور والوثائق والبحث داخل المستندات.",
+      "overview": "EasyOCR مكتبة OCR متعددة اللغات تعتمد PyTorch وتجمع كاشف النص مع نموذج التعرف. تدعم 80+ لغة وكتابات متعددة منها العربية، وتعيد لكل مقطع صندوقًا ونصًا ودرجة ثقة. أوزان اللغة المختارة تُنزّل تلقائيًا. لا تتضمن خدمة OCR سحابية مستضافة؛ الاستخدام الأساسي مكتبة محلية.",
+      "requirements": "Python وPyTorch وtorchvision، مع opencv-python-headless وSciPy وNumPy وPillow وscikit-image وpython-bidi وPyYAML وShapely وpyclipper. يمكن تشغيل CPU عبر gpu=False؛ يتطلب GPU نسخة PyTorch/CUDA متوافقة. أوزان النماذج تُنزّل عند أول استخدام، وكاشف DBNet الاختياري يحتاج Ninja.",
+      "quickStart": "أنشئ بيئة Python وثبّت easyocr، ثم أنشئ Reader مرة واحدة للغات متوافقة مثل ['ar','en'] واستخدم readtext على صورة محلية. اضبط gpu=False لتشغيل CPU. راجع توافق مجموعة اللغات قبل جمع لغات كثيرة؛ ليست كل اللغات قابلة للاستخدام معًا.",
+      "costs": "الترخيص Apache-2.0 ولا توجد رسوم ترخيص. التشغيل المحلي يستهلك CPU/RAM ومساحة لأوزان النماذج. GPU سحابي اختياري وتكلفته من مزود البنية التحتية؛ لا توجد خدمة API سحابية رسمية ضمن المستودع.",
+      "alternatives": "Tesseract OCR للمحرك التقليدي متعدد اللغات، PaddleOCR لخطوط OCR عميقة، وdocTR لخطوط المستندات المعتمدة على PyTorch/TensorFlow. قارنها على الصور نفسها وبمقاييس CER/WER.",
+      "limitations": "آخر إصدار معلن v1.7.2 يعود إلى 24 سبتمبر 2024 رغم وجود commit حديث في 13 نوفمبر 2026؛ يلزم التحقق من توافقه مع إصدارات PyTorch الحالية. لا يقدم دعم الكتابة اليدوية كميزة مستقرة، وبعض اللغات لا تتوافق معًا. النص العربي المختلط والتشكيل وجودة المسح تحتاج تقييمًا خاصًا، ودرجة الثقة ليست ضمانًا لصحة النص.",
+      "nextSteps": [
+        "اختبر عينة صور عربية مرخّصة تشمل نصًا مطبوعًا ومختلطًا.",
+        "قارن CPU/GPU على مجموعة ثابتة مع CER/WER وزمن التنفيذ.",
+        "لا تعتمد النص المستخرج في سياق حساس دون مراجعة بشرية."
+      ],
+      "sources": [
+        {
+          "title": "EasyOCR repository and README",
+          "url": "https://github.com/JaidedAI/EasyOCR"
+        },
+        {
+          "title": "EasyOCR Apache-2.0 license",
+          "url": "https://github.com/JaidedAI/EasyOCR/blob/master/LICENSE"
+        },
+        {
+          "title": "EasyOCR requirements",
+          "url": "https://github.com/JaidedAI/EasyOCR/blob/master/requirements.txt"
+        },
+        {
+          "title": "EasyOCR tutorial",
+          "url": "https://www.jaided.ai/easyocr/tutorial"
+        },
+        {
+          "title": "EasyOCR documentation",
+          "url": "https://www.jaided.ai/easyocr/documentation"
+        },
+        {
+          "title": "Tesseract OCR alternative",
+          "url": "https://github.com/tesseract-ocr/tesseract"
+        },
+        {
+          "title": "PaddleOCR alternative",
+          "url": "https://github.com/PaddlePaddle/PaddleOCR"
+        },
+        {
+          "title": "docTR alternative",
+          "url": "https://github.com/mindee/doctr"
+        }
+      ],
+      "reviewedAt": "2026-11-13T00:42:01.325Z",
+      "basis": "readme",
+      "testStatus": "not_run",
+      "improvements": [
+        {
+          "title": "حزمة قياس OCR عربية قابلة لإعادة الإنتاج",
+          "problem": "لا تكفي أمثلة README لقياس دقة EasyOCR على التشكيل والنص المختلط وجودة المسح.",
+          "approach": "مجموعة اختبار مرخّصة ومقسمة حسب الخط والتشكيل والوضوح، مع قياس CER/WER ودقة الصناديق.",
+          "stack": "Python, EasyOCR, OpenCV, pandas, pytest",
+          "steps": [
+            "حدد نطاقًا صغيرًا وبيانات اختبار مصرحًا بها.",
+            "سجّل خط أساس قبل أي تغيير.",
+            "نفّذ المكوّن على بيئة محلية منفصلة.",
+            "اختبر الحالات العادية والاستثنائية وسجّل النتائج.",
+            "وثّق المقاييس والقيود ولا تدّعِ نجاحًا دون دليل."
+          ],
+          "metric": "CER/WER لكل فئة ودقة اكتشاف مناطق النص.",
+          "difficulty": "متوسطة؛ تقدير 2–3 أسابيع.",
+          "risks": "حقوق الصور والخصوصية وانحياز العينة وأخطاء الأسماء والأرقام.",
+          "sources": [
+            {
+              "title": "EasyOCR repository and README",
+              "url": "https://github.com/JaidedAI/EasyOCR"
+            },
+            {
+              "title": "EasyOCR tutorial",
+              "url": "https://www.jaided.ai/easyocr/tutorial"
+            }
+          ]
+        },
+        {
+          "title": "معالجة صور قبل OCR مع قياس الأثر",
+          "problem": "الانحراف والضبابية وضعف التباين قد يخفض جودة التعرف، لكن المعالجة المفرطة قد تفسد الحروف والنقاط.",
+          "approach": "خيارات مستقلة لإزالة الميل وتحسين التباين وتقليل الضوضاء، تقارن على مجموعة مرجعية.",
+          "stack": "OpenCV, NumPy, EasyOCR, pytest",
+          "steps": [
+            "حدد نطاقًا صغيرًا وبيانات اختبار مصرحًا بها.",
+            "سجّل خط أساس قبل أي تغيير.",
+            "نفّذ المكوّن على بيئة محلية منفصلة.",
+            "اختبر الحالات العادية والاستثنائية وسجّل النتائج.",
+            "وثّق المقاييس والقيود ولا تدّعِ نجاحًا دون دليل."
+          ],
+          "metric": "تحسن CER مستهدف 10% على الصور منخفضة الجودة دون تراجع في الصور النظيفة.",
+          "difficulty": "متوسطة؛ تقدير 2–4 أسابيع.",
+          "risks": "إزالة نقاط أو تشكيل، زيادة زمن المعالجة، نتائج غير قابلة للتعميم.",
+          "sources": [
+            {
+              "title": "EasyOCR repository and README",
+              "url": "https://github.com/JaidedAI/EasyOCR"
+            },
+            {
+              "title": "EasyOCR tutorial",
+              "url": "https://www.jaided.ai/easyocr/tutorial"
+            }
+          ]
+        },
+        {
+          "title": "واجهة مراجعة بشرية للمقاطع منخفضة الثقة",
+          "problem": "الثقة وحدها لا توفر مسارًا لتصحيح الكلمات مع الحفاظ على موضعها.",
+          "approach": "واجهة تعرض الصورة والصناديق والنص والثقة، وتوجّه المراجع للمقاطع الأقل ثقة وتحفظ سجل التصحيح.",
+          "stack": "EasyOCR, FastAPI, Gradio, SQLite",
+          "steps": [
+            "حدد نطاقًا صغيرًا وبيانات اختبار مصرحًا بها.",
+            "سجّل خط أساس قبل أي تغيير.",
+            "نفّذ المكوّن على بيئة محلية منفصلة.",
+            "اختبر الحالات العادية والاستثنائية وسجّل النتائج.",
+            "وثّق المقاييس والقيود ولا تدّعِ نجاحًا دون دليل."
+          ],
+          "metric": "زمن تصحيح الصفحة ومعدل الأخطاء المتبقية بعد المراجعة.",
+          "difficulty": "متوسطة؛ تقدير 3–5 أسابيع.",
+          "risks": "تخزين مستندات حساسة، أخطاء بشرية، الحاجة إلى صلاحيات وحذف آمن.",
+          "sources": [
+            {
+              "title": "EasyOCR repository and README",
+              "url": "https://github.com/JaidedAI/EasyOCR"
+            },
+            {
+              "title": "EasyOCR documentation",
+              "url": "https://www.jaided.ai/easyocr/documentation"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "أداة OCR محلية للدفعات والأرشفة",
+          "problem": "تشغيل OCR على ملفات كثيرة يدويًا يصعب تتبعه وإعادة إنتاجه.",
+          "approach": "CLI تعالج الصور وPDF وتنتج JSON/CSV مع رقم الصفحة وبصمة المصدر وإعدادات النموذج.",
+          "stack": "Python, Typer, EasyOCR, PyMuPDF, SQLite",
+          "steps": [
+            "حدد نطاقًا صغيرًا وبيانات اختبار مصرحًا بها.",
+            "سجّل خط أساس قبل أي تغيير.",
+            "نفّذ المكوّن على بيئة محلية منفصلة.",
+            "اختبر الحالات العادية والاستثنائية وسجّل النتائج.",
+            "وثّق المقاييس والقيود ولا تدّعِ نجاحًا دون دليل."
+          ],
+          "metric": "عدد الصفحات في الدقيقة ونسبة الصفحات المكتملة دون فقد بيانات المصدر.",
+          "difficulty": "متوسطة؛ تقدير 2–4 أسابيع.",
+          "risks": "استهلاك الذاكرة وتغير نتائج النماذج وحقوق المستندات.",
+          "sources": [
+            {
+              "title": "EasyOCR repository and README",
+              "url": "https://github.com/JaidedAI/EasyOCR"
+            },
+            {
+              "title": "Tesseract OCR alternative",
+              "url": "https://github.com/tesseract-ocr/tesseract"
+            }
+          ]
+        },
+        {
+          "title": "فهرس بصري لكتب تراثية مرخّصة",
+          "problem": "يصعب البحث في صور كتب تراثية مطبوعة عندما لا يتوفر نص رقمي موثوق.",
+          "approach": "OCR لمواد عامة الملكية أو مصرح بها، مع حفظ صورة الصفحة ورقمها ومراجعة بشرية.",
+          "stack": "EasyOCR, Python, OpenCV, SQLite",
+          "steps": [
+            "حدد نطاقًا صغيرًا وبيانات اختبار مصرحًا بها.",
+            "سجّل خط أساس قبل أي تغيير.",
+            "نفّذ المكوّن على بيئة محلية منفصلة.",
+            "اختبر الحالات العادية والاستثنائية وسجّل النتائج.",
+            "وثّق المقاييس والقيود ولا تدّعِ نجاحًا دون دليل."
+          ],
+          "metric": "نسبة الصفحات المفهرسة ومعدل أخطاء النص بعد المراجعة.",
+          "difficulty": "متوسطة؛ تقدير 3–6 أسابيع.",
+          "risks": "حقوق النشر وأخطاء التشكيل والاقتباس وترتيب الصفحات.",
+          "sources": [
+            {
+              "title": "EasyOCR repository and README",
+              "url": "https://github.com/JaidedAI/EasyOCR"
+            },
+            {
+              "title": "EasyOCR tutorial",
+              "url": "https://www.jaided.ai/easyocr/tutorial"
+            }
+          ]
+        }
+      ],
+      "religious": [
+        {
+          "title": "فهرسة مصادر تراثية مرخّصة مع مراجعة بشرية",
+          "problem": "قد يسبب OCR غير المدقق أخطاء في أسماء الكتب أو النصوص المنقولة.",
+          "approach": "استخراج نص أولي من مصادر مرخصة وربط كل مقتطف بصورة الصفحة والطبعة ومراجعته بشريًا؛ لا فتاوى أو استنتاجات شرعية.",
+          "stack": "EasyOCR, Python, OpenCV, SQLite",
+          "steps": [
+            "حدد نطاقًا صغيرًا وبيانات اختبار مصرحًا بها.",
+            "سجّل خط أساس قبل أي تغيير.",
+            "نفّذ المكوّن على بيئة محلية منفصلة.",
+            "اختبر الحالات العادية والاستثنائية وسجّل النتائج.",
+            "وثّق المقاييس والقيود ولا تدّعِ نجاحًا دون دليل."
+          ],
+          "metric": "نسبة النصوص التي اجتازت المراجعة ومعدل أخطاء الأسماء والاقتباسات.",
+          "difficulty": "متوسطة؛ تقدير 4–6 أسابيع.",
+          "risks": "حقوق النشر وأخطاء OCR والاعتماد على نص غير مدقق والخلط بين الفهرسة والإفتاء.",
+          "sources": [
+            {
+              "title": "EasyOCR repository and README",
+              "url": "https://github.com/JaidedAI/EasyOCR"
+            },
+            {
+              "title": "EasyOCR tutorial",
+              "url": "https://www.jaided.ai/easyocr/tutorial"
+            }
+          ]
+        }
+      ]
+    },
+    "6ea9e0fbab097163ee": {
+      "url": "https://github.com/dograh-hq/dograh",
+      "titleAr": "Dograh — منصة مفتوحة لبناء وكلاء صوتيين ذاتية الاستضافة",
+      "summaryAr": "منصة صوتية مفتوحة المصدر بواجهة بناء تدفقات مرئية، تدعم LLM وSTT وTTS بنمط BYOK أو المكدس المدمج، وتوفر Web Call من المتصفح وتكاملات MCP وtelephony اختيارية. تعمل محليًا عبر Docker أو من النسخة السحابية.",
+      "whyItMatters": "تجمع بناء تدفق الوكيل واختباره ومراقبته في مشروع ذاتي الاستضافة، وتتيح مقارنة مزودي الصوت والنماذج مع خيار تشغيل البيانات على بنية يملكها المستخدم.",
+      "audience": "مطورو Python والفرق التي تتعلم بناء وكلاء صوتيين وتدفقات محادثة.",
+      "overview": "Dograh منصة وكلاء صوتيين ذاتية الاستضافة بواجهة workflow مرئية وMCP وتكاملات LLM/STT/TTS. تدعم وضع Dograh المدمج وBYOK، وتتيح Web Call من المتصفح لاختبار المسار دون رقم هاتف. README يقارنها بخدمات Vapi وRetell ويعرض نسخة Cloud.",
+      "requirements": "توصي الوثائق محليًا بحد أدنى 8GB RAM (4GB متاحة لـDocker)، و10GB مساحة، ونواتين CPU، وDocker 20.10+ مع Compose. الحاويات تشمل PostgreSQL 17 مع pgvector وRedis 7 وMinIO وFastAPI وواجهة Next.js. تطوير المصدر يتطلب Python 3.13.x وNode 24.x؛ المنافذ المحلية تشمل 3010 و8000 و5432 و6379 و9000 و9001.",
+      "quickStart": "استخدم مسار Docker المحلي الرسمي بعد مراجعة إعداداته، وانتظر 2–3 دقائق لأول تنزيل، ثم افتح localhost:3010 وأنشئ وكيلًا تجريبيًا واختبره عبر Web Call في المتصفح؛ لا يحتاج هذا الاختبار رقم هاتف أو إعداد telephony. README يذكر أن quickstart قد يفتح Cloudflare quick tunnel ويترك التسجيل مفعّلًا افتراضيًا؛ أبقِ التجربة محلية وراجع إعدادات النفق والتسجيل قبل أي تعريض خارجي.",
+      "costs": "الترخيص BSD-2-Clause ولا توجد رسوم ترخيص للاستضافة الذاتية. التكلفة الفعلية للجهاز/الخادم والتخزين، ثم مزودو LLM/STT/TTS أو telephony إن فُعّلوا. النسخة السحابية موصوفة بأنها usage-based ولم أتحقق من سعر ثابت منشور؛ لا يلزم telephony لاختبار Web Call المحلي.",
+      "alternatives": "Vapi وRetell بدائل SaaS؛ LiveKit Agents وPipecat إطاران مفتوحان لبناء وكلاء صوتيين بمكونات أكثر تركيبًا. الاختيار يعتمد على التحكم المطلوب وتكلفة التشغيل واستضافة الصوت.",
+      "limitations": "المكدس متعدد الخدمات ويحتاج Docker وموارد معتبرة. quickstart قد يفعّل نفقًا عامًا والتسجيل افتراضيًا، كما أن مزودي STT/TTS يستقبلون الصوت والنص اللازمين للمعالجة؛ راجع سياساتهم قبل استخدام بيانات حساسة. لم أشغّل المشروع أو أختبر مكالمات أو تكاملات خارجية.",
+      "nextSteps": [
+        "ابدأ باختبار Web Call محلي بصوت اصطناعي وسيناريو غير حساس.",
+        "قارن وضع Dograh المدمج مع BYOK من حيث الجودة والزمن والتكلفة.",
+        "راجع مسار النفق والتسجيل وسياسات مزودي الصوت قبل أي نشر خارجي."
+      ],
+      "sources": [
+        {
+          "title": "Dograh repository and README",
+          "url": "https://github.com/dograh-hq/dograh"
+        },
+        {
+          "title": "Dograh BSD-2-Clause license",
+          "url": "https://github.com/dograh-hq/dograh/blob/main/LICENSE"
+        },
+        {
+          "title": "Dograh prerequisites",
+          "url": "https://github.com/dograh-hq/dograh/blob/main/docs/getting-started/prerequisites.mdx"
+        },
+        {
+          "title": "Dograh first agent",
+          "url": "https://github.com/dograh-hq/dograh/blob/main/docs/getting-started/first-agent.mdx"
+        },
+        {
+          "title": "Dograh Docker deployment",
+          "url": "https://github.com/dograh-hq/dograh/blob/main/docs/deployment/docker.mdx"
+        },
+        {
+          "title": "Dograh inference providers",
+          "url": "https://github.com/dograh-hq/dograh/blob/main/docs/configurations/inference-providers.mdx"
+        },
+        {
+          "title": "Dograh voice providers",
+          "url": "https://github.com/dograh-hq/dograh/blob/main/docs/configurations/voice.mdx"
+        },
+        {
+          "title": "Dograh transcriber providers",
+          "url": "https://github.com/dograh-hq/dograh/blob/main/docs/configurations/transcriber.mdx"
+        },
+        {
+          "title": "Vapi alternative",
+          "url": "https://vapi.ai/"
+        },
+        {
+          "title": "Retell alternative",
+          "url": "https://www.retellai.com/"
+        },
+        {
+          "title": "LiveKit Agents alternative",
+          "url": "https://github.com/livekit/agents"
+        },
+        {
+          "title": "Pipecat alternative",
+          "url": "https://github.com/pipecat-ai/pipecat"
+        }
+      ],
+      "reviewedAt": "2026-11-13T00:42:01.325Z",
+      "basis": "readme",
+      "testStatus": "not_run",
+      "improvements": [
+        {
+          "title": "مجموعة تقييم لوكلاء الصوت بالعربية",
+          "problem": "تختلف جودة STT/TTS وفهم المقاطعة واللهجات ولا تكفي تجربة مكالمة واحدة للمقارنة.",
+          "approach": "اختبار محلي بصوت اصطناعي أو تسجيلات مصرح بها وقياس WER وزمن الاستجابة وإتمام المهمة والتحويل البشري دون اتصالات حقيقية.",
+          "stack": "Dograh, Python SDK, pytest, JSONL, OpenTelemetry",
+          "steps": [
+            "حدد نطاقًا صغيرًا وبيانات اختبار مصرحًا بها.",
+            "سجّل خط أساس قبل أي تغيير.",
+            "نفّذ المكوّن على بيئة محلية منفصلة.",
+            "اختبر الحالات العادية والاستثنائية وسجّل النتائج.",
+            "وثّق المقاييس والقيود ولا تدّعِ نجاحًا دون دليل."
+          ],
+          "metric": "WER حسب اللهجة وP95 latency ونسبة إتمام المهمة والتحويل الصحيح.",
+          "difficulty": "متوسطة؛ تقدير 3–5 أسابيع.",
+          "risks": "خصوصية الصوت وانحياز اللهجات وتكاليف المزودين وعدم تمثيل العينة للواقع.",
+          "sources": [
+            {
+              "title": "Dograh repository and README",
+              "url": "https://github.com/dograh-hq/dograh"
+            },
+            {
+              "title": "Dograh first agent",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/getting-started/first-agent.mdx"
+            },
+            {
+              "title": "Dograh inference providers",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/configurations/inference-providers.mdx"
+            },
+            {
+              "title": "Dograh voice providers",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/configurations/voice.mdx"
+            },
+            {
+              "title": "Dograh transcriber providers",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/configurations/transcriber.mdx"
+            }
+          ]
+        },
+        {
+          "title": "إصدارات قابلة للمراجعة للـ workflows مع حجب الأسرار",
+          "problem": "التعديلات البصرية يصعب تتبعها أو استعادتها وقد يتسرب سر عند التصدير.",
+          "approach": "تصدير workflow بإصدار schema مع استبدال الأسرار بمراجع آمنة وإظهار diff قبل الاستيراد.",
+          "stack": "Dograh API, Python, JSON Schema, Git",
+          "steps": [
+            "حدد نطاقًا صغيرًا وبيانات اختبار مصرحًا بها.",
+            "سجّل خط أساس قبل أي تغيير.",
+            "نفّذ المكوّن على بيئة محلية منفصلة.",
+            "اختبر الحالات العادية والاستثنائية وسجّل النتائج.",
+            "وثّق المقاييس والقيود ولا تدّعِ نجاحًا دون دليل."
+          ],
+          "metric": "نجاح استعادة workflow تجريبي دون تسرب أي قيمة سرية.",
+          "difficulty": "متوسطة؛ تقدير 3–5 أسابيع.",
+          "risks": "تغير schema وتسرب الأسرار عبر السجلات واستيراد غير متوافق.",
+          "sources": [
+            {
+              "title": "Dograh repository and README",
+              "url": "https://github.com/dograh-hq/dograh"
+            },
+            {
+              "title": "Dograh Docker deployment",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/deployment/docker.mdx"
+            },
+            {
+              "title": "Dograh inference providers",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/configurations/inference-providers.mdx"
+            }
+          ]
+        },
+        {
+          "title": "خريطة خصوصية لمزودي الصوت والنماذج",
+          "problem": "قد لا يعرف المستخدم أين يذهب الصوت والنص والبيانات الوصفية عند اختيار مزود خارجي.",
+          "approach": "جدول لكل مزود يوضح البيانات المرسلة ورابط سياسة الاحتفاظ والمنطقة مع تنبيه قبل التفعيل.",
+          "stack": "Dograh provider metadata, JSON, documentation tests",
+          "steps": [
+            "حدد نطاقًا صغيرًا وبيانات اختبار مصرحًا بها.",
+            "سجّل خط أساس قبل أي تغيير.",
+            "نفّذ المكوّن على بيئة محلية منفصلة.",
+            "اختبر الحالات العادية والاستثنائية وسجّل النتائج.",
+            "وثّق المقاييس والقيود ولا تدّعِ نجاحًا دون دليل."
+          ],
+          "metric": "وجود مصدر وتاريخ مراجعة لكل مزود ظاهر في الواجهة.",
+          "difficulty": "متوسطة؛ تقدير 2–3 أسابيع.",
+          "risks": "تغير السياسات ونقص المعلومات وإعطاء انطباع أمان غير مبرر.",
+          "sources": [
+            {
+              "title": "Dograh inference providers",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/configurations/inference-providers.mdx"
+            },
+            {
+              "title": "Dograh voice providers",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/configurations/voice.mdx"
+            },
+            {
+              "title": "Dograh transcriber providers",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/configurations/transcriber.mdx"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مساعد معلومات جامعية صوتي للاستفسارات العامة",
+          "problem": "تتكرر الأسئلة العامة عن المواعيد والخدمات بين صفحات متعددة.",
+          "approach": "وكيل يسترجع إجابات من صفحات عامة مع روابط المصدر ويحوّل الغموض إلى موظف بشري؛ اختبار Web Call محلي أولًا.",
+          "stack": "Dograh, Python, retrieval, FastAPI, public FAQs",
+          "steps": [
+            "حدد نطاقًا صغيرًا وبيانات اختبار مصرحًا بها.",
+            "سجّل خط أساس قبل أي تغيير.",
+            "نفّذ المكوّن على بيئة محلية منفصلة.",
+            "اختبر الحالات العادية والاستثنائية وسجّل النتائج.",
+            "وثّق المقاييس والقيود ولا تدّعِ نجاحًا دون دليل."
+          ],
+          "metric": "دقة الإجابة الموثقة ونسبة التحويل الصحيح عند غياب المصدر.",
+          "difficulty": "متوسطة؛ تقدير 3–4 أسابيع.",
+          "risks": "تقادم المعلومات والهلوسة وكشف بيانات شخصية إذا توسع النطاق.",
+          "sources": [
+            {
+              "title": "Dograh repository and README",
+              "url": "https://github.com/dograh-hq/dograh"
+            },
+            {
+              "title": "Dograh first agent",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/getting-started/first-agent.mdx"
+            },
+            {
+              "title": "Dograh inference providers",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/configurations/inference-providers.mdx"
+            }
+          ]
+        },
+        {
+          "title": "دليل صوتي لمواعيد الدروس والمواد المعتمدة",
+          "problem": "قد يصعب الوصول إلى مواعيد الدروس وروابطها من واجهة نصية فقط.",
+          "approach": "وكيل يقرأ جدولًا منشورًا ومراجعًا ويذكر مصدر كل موعد ويحيل التعارض إلى جهة بشرية؛ لا يجيب عن الأحكام.",
+          "stack": "Dograh, Python, approved schedule JSON, retrieval, Web Call",
+          "steps": [
+            "حدد نطاقًا صغيرًا وبيانات اختبار مصرحًا بها.",
+            "سجّل خط أساس قبل أي تغيير.",
+            "نفّذ المكوّن على بيئة محلية منفصلة.",
+            "اختبر الحالات العادية والاستثنائية وسجّل النتائج.",
+            "وثّق المقاييس والقيود ولا تدّعِ نجاحًا دون دليل."
+          ],
+          "metric": "نسبة الإجابات المرتبطة بمصدر صحيح ونسبة اكتشاف التعارضات.",
+          "difficulty": "متوسطة؛ تقدير 3–4 أسابيع.",
+          "risks": "تغير الجداول ونقل معلومة قديمة والاعتماد على مصدر غير رسمي.",
+          "sources": [
+            {
+              "title": "Dograh repository and README",
+              "url": "https://github.com/dograh-hq/dograh"
+            },
+            {
+              "title": "Dograh first agent",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/getting-started/first-agent.mdx"
+            },
+            {
+              "title": "Dograh inference providers",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/configurations/inference-providers.mdx"
+            }
+          ]
+        }
+      ],
+      "religious": [
+        {
+          "title": "دليل صوتي لمواعيد الدروس والمصادر المعتمدة",
+          "problem": "يحتاج المستخدم أحيانًا إلى معرفة موعد درس أو الوصول إلى مادته دون خلط ذلك بإجابة شرعية.",
+          "approach": "يقتصر الوكيل على جدول موثق وروابط مواد معتمدة ويذكر المصدر والتاريخ ويحيل أي سؤال عن حكم إلى جهة بشرية مختصة.",
+          "stack": "Dograh, Python, approved schedule JSON, retrieval, Web Call",
+          "steps": [
+            "حدد نطاقًا صغيرًا وبيانات اختبار مصرحًا بها.",
+            "سجّل خط أساس قبل أي تغيير.",
+            "نفّذ المكوّن على بيئة محلية منفصلة.",
+            "اختبر الحالات العادية والاستثنائية وسجّل النتائج.",
+            "وثّق المقاييس والقيود ولا تدّعِ نجاحًا دون دليل."
+          ],
+          "metric": "نسبة الإجابات الصحيحة المرتبطة بمصدر محدث ومعدل الإحالة السليمة للأسئلة خارج النطاق.",
+          "difficulty": "متوسطة؛ تقدير 3–4 أسابيع.",
+          "risks": "تقادم الجدول والخلط بين الإرشاد الإداري والفتوى والاعتماد على مصدر غير معتمد.",
+          "sources": [
+            {
+              "title": "Dograh repository and README",
+              "url": "https://github.com/dograh-hq/dograh"
+            },
+            {
+              "title": "Dograh first agent",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/getting-started/first-agent.mdx"
+            },
+            {
+              "title": "Dograh inference providers",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/configurations/inference-providers.mdx"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
