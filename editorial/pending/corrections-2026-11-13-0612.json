@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-13T06:12:00+03:00",
+  "publicationStatus": "pending-correction",
+  "note": "لم تُستورد السجلات التالية ولم تُنشأ لها هوية بديلة؛ يلزم تصحيح المصدر قبل النشر.",
+  "records": [
+    {
+      "id": "4e10e32134f86500f7",
+      "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+      "status": "needs-correction",
+      "reason": "المصدر المرتبط لا يقدم دليلًا يمكن التحقق منه على ادعاء 145B، والصفحات الرسمية المتاحة لا تطابق هذا الادعاء. يلزم رابط إصدار/توثيق رسمي مطابق قبل التحرير.",
+      "nextAction": "تأكيد اسم النموذج وحجمه من صفحة إصدار رسمية أو حذف الادعاء."
+    },
+    {
+      "id": "eaf76493fdb0b4bfce",
+      "url": "https://github.blog/news-insights/company-news/github-availability-report-october-2026/",
+      "status": "needs-correction",
+      "reason": "رابط تقرير أكتوبر لم يُتحقق منه، وأرشيف GitHub الرسمي الذي راجعناه لم يعرض تقرير أكتوبر بوصفه أحدث تقرير متاح وقت المراجعة.",
+      "nextAction": "الحصول على رابط رسمي قابل للفتح أو الإبقاء على السجل في الانتظار."
+    }
+  ]
+}
