@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "research-only",
+  "reviewedAt": "2026-11-13T06:12:00+03:00",
+  "note": "تمت المطابقة بالمعرف والرابط الحرفيين فقط؛ لم يُنشأ أي معرف بديل من العنوان.",
+  "records": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "inSeen": true,
+      "inFeed": false,
+      "inEditorial": false,
+      "status": "research-only",
+      "license": "Apache-2.0",
+      "archived": false,
+      "latestRelease": {
+        "tag": "v0.1.8",
+        "publishedAt": "2026-11-10T18:14:36Z",
+        "url": "https://github.com/NVIDIA/OpenShell/releases"
+      },
+      "repositorySnapshot": {
+        "stars": 21526,
+        "forks": 2103,
+        "pushedAt": "2026-11-13T02:36:58Z",
+        "measuredAt": "2026-11-13T06:12:00+03:00"
+      },
+      "documentationNotes": "README يذكر انتقال التطوير إلى ai-openshell وحوكمة CNCF قيد التنفيذ؛ لا يُعرض الانتقال كأنه اكتمل. توثيق latest متسق على v0.1.8. توجد تغييرات ترقية تمس credentials وWebSocket وOCSF وSDKs.",
+      "testStatus": "not_run",
+      "sources": [
+        {
+          "title": "Official repository and README",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        },
+        {
+          "title": "GitHub Releases",
+          "url": "https://github.com/NVIDIA/OpenShell/releases"
+        },
+        {
+          "title": "Official installation docs",
+          "url": "https://docs.nvidia.com/openshell/latest/about/installation"
+        },
+        {
+          "title": "Apache-2.0 license",
+          "url": "https://github.com/NVIDIA/OpenShell/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "url": "https://www.canva.com/newsroom/news/canva-craft/",
+      "inSeen": true,
+      "inFeed": false,
+      "inEditorial": false,
+      "status": "seen-only-research",
+      "apiStatus": "public API announced as available",
+      "mcpStatus": "announced as coming soon; not treated as available",
+      "limitations": "تحديث الحالة لا ينشئ معرفًا جديدًا ولا يبرر الاستيراد ما دام المعرف والرابط الأصليان غير موجودين في Feed الحالي.",
+      "sources": [
+        {
+          "title": "Canva newsroom — Canva Craft",
+          "url": "https://www.canva.com/newsroom/news/canva-craft/"
+        }
+      ]
+    },
+    {
+      "name": "1Password for Agents",
+      "id": "662e68277c6361dd4b",
+      "url": "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents",
+      "inSeen": true,
+      "inFeed": false,
+      "inEditorial": false,
+      "status": "seen-only-research",
+      "productStatus": "launched",
+      "eligibility": "Individual and Family plans; availability/rollout may vary",
+      "securityNotes": "الموافقة تتم من تطبيق 1Password المفتوح ويمكن إلغاء الوصول؛ لا يحصل الوكيل على كلمة المرور الخام بحسب وصف المنتج. يبقى الموقع ومطور الوكيل جزءًا من حدود الثقة بعد تعبئة البيانات.",
+      "sources": [
+        {
+          "title": "1Password press release — 1Password for Agents",
+          "url": "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents"
+        },
+        {
+          "title": "1Password support — AI agent integrations",
+          "url": "https://support.1password.com/ai-agent-integrations/"
+        }
+      ]
+    }
+  ]
+}
