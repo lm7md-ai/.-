@@ -1,15 +1,18 @@
 {
   "schemaVersion": 1,
-  "reviewedAt": "2026-11-13T06:53:54+03:00",
-  "publicationStatus": "partially-resolved",
-  "note": "إعادة تحقق 06:42: مصدر GitHub الرسمي لتقرير أكتوبر أصبح متاحًا ويؤكد التقرير المنشور في 12 نوفمبر 2026؛ أُغلق هذا التصحيح. بقي سجل Edge0 في الانتظار لعدم توفر دليل رسمي مطابق. لا تُنشأ هوية بديلة ولا تُعدّل feed.json أو seen.json.",
+  "reviewedAt": "2026-11-13T14:43:00+03:00",
+  "publicationStatus": "source-verified-pending-editorial-slot",
+  "note": "إعادة تحقق 14:43: أُغلق تصحيح مصدر Edge0 بعد إتاحة المقال الرسمي المنشور 12 نوفمبر 2026؛ السجل مطابق للتغذية الحالية لكنه لم يُثرَ ضمن حد 12 خبرًا. تقرير GitHub Availability بقي موثقًا كمصدر متحقق وغير مُثرى. لا تغيير للمعرفات أو feed.json أو seen.json.",
   "records": [
     {
       "id": "4e10e32134f86500f7",
       "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
-      "status": "needs-correction",
-      "reason": "صفحة المصدر غير متاحة للتحقق في هذه الدورة، ولم يظهر في البحث الرسمي دليل إصدار أو توثيق مطابق لادعاء 145B.",
-      "nextAction": "الحصول على رابط إصدار أو توثيق رسمي قابل للفتح يثبت الاسم والحجم، أو حذف الادعاء قبل الإثراء."
+      "status": "source-verified-not-enriched",
+      "reason": "المقال الرسمي متاح ومؤرخ 12 نوفمبر 2026؛ تعلن Edge0 إطلاق Edge0-145B وEdge0-120B وتذكر مواصفات 145B. لم يُضف إثراء لهذا السجل ضمن دفعة 12 خبرًا الحالية.",
+      "nextAction": "يُحتفظ بالمعرف والرابط كما هما؛ عند تخصيص موضع لاحق، استخدم basis=article وميّز بوضوح بين إطلاق الشركة وقياساتها الداخلية والتحقق المستقل.",
+      "verifiedAt": "2026-11-13T14:43:00+03:00",
+      "evidence": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+      "limitations": "أرقام 29GB و80+ tokens/s ونتائج المعايير مصدرها اختبارات Edge0 الداخلية/المعلنة؛ لا تمثل تحققًا مستقلًا. المقارنات مع نماذج أخرى تعتمد على إعدادات مختلفة، وتقر الصفحة بأن بعض خطوط الأساس تقديرية. لا يعني ذلك أن النموذج يعمل على أي حاسوب."
     },
     {
       "id": "eaf76493fdb0b4bfce",
