@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "publicationStatus": "research-only",
-  "reviewedAt": "2026-11-13T06:12:00+03:00",
-  "note": "تمت المطابقة بالمعرف والرابط الحرفيين فقط؛ لم يُنشأ أي معرف بديل من العنوان.",
+  "reviewedAt": "2026-11-13T06:56:31+03:00",
+  "note": "تمت المطابقة بالمعرف والرابط الحرفيين فقط؛ لم يُنشأ أي معرف بديل من العنوان. راجعنا صفحات الإصدارات والدعم الرسمية مجددًا في 06:56.",
   "records": [
     {
       "name": "NVIDIA OpenShell",
@@ -16,8 +16,8 @@
       "archived": false,
       "latestRelease": {
         "tag": "v0.1.8",
-        "publishedAt": "2026-11-10T18:14:36Z",
-        "url": "https://github.com/NVIDIA/OpenShell/releases"
+        "publishedAt": "2026-11-10T18:14:42Z",
+        "url": "https://github.com/NVIDIA/OpenShell/releases/tag/v0.1.8"
       },
       "repositorySnapshot": {
         "stars": 21526,
@@ -25,7 +25,7 @@
         "pushedAt": "2026-11-13T02:36:58Z",
         "measuredAt": "2026-11-13T06:12:00+03:00"
       },
-      "documentationNotes": "README يذكر انتقال التطوير إلى ai-openshell وحوكمة CNCF قيد التنفيذ؛ لا يُعرض الانتقال كأنه اكتمل. توثيق latest متسق على v0.1.8. توجد تغييرات ترقية تمس credentials وWebSocket وOCSF وSDKs.",
+      "documentationNotes": "README يذكر انتقال التطوير إلى ai-openshell وحوكمة CNCF قيد التنفيذ؛ لا يُعرض الانتقال كأنه اكتمل. أحدث إصدار مستقر v0.1.8، مع dev prerelease 0.1.9-dev.23. توجد تغييرات ترقية تمس credentials وWebSocket وOCSF وSDKs.",
       "testStatus": "not_run",
       "sources": [
         {
@@ -44,7 +44,15 @@
           "title": "Apache-2.0 license",
           "url": "https://github.com/NVIDIA/OpenShell/blob/main/LICENSE"
         }
-      ]
+      ],
+      "latestPrerelease": {
+        "tag": "dev",
+        "assetVersion": "0.1.9-dev.23",
+        "createdAt": "2026-11-12T23:45:09Z",
+        "url": "https://github.com/NVIDIA/OpenShell/releases/tag/dev",
+        "note": "معاينة تطويرية وليست إصدارًا مستقرًا."
+      },
+      "developmentTransition": "README الحالي يذكر أن OpenShell أصبح ضمن CNCF وأن نقل التطوير إلى ai-openshell والحوكمة ما زالا قيد التنفيذ؛ يظل NVIDIA/OpenShell المستودع المرجعي للكود والقضايا حتى اكتمال النقل."
     },
     {
       "name": "Canva Craft",
@@ -61,6 +69,10 @@
         {
           "title": "Canva newsroom — Canva Craft",
           "url": "https://www.canva.com/newsroom/news/canva-craft/"
+        },
+        {
+          "title": "Canva Craft API and MCP availability",
+          "url": "https://www.canva.com/ai-research/craft-api/"
         }
       ]
     },
@@ -73,16 +85,20 @@
       "inEditorial": false,
       "status": "seen-only-research",
       "productStatus": "launched",
-      "eligibility": "Individual and Family plans; availability/rollout may vary",
-      "securityNotes": "الموافقة تتم من تطبيق 1Password المفتوح ويمكن إلغاء الوصول؛ لا يحصل الوكيل على كلمة المرور الخام بحسب وصف المنتج. يبقى الموقع ومطور الوكيل جزءًا من حدود الثقة بعد تعبئة البيانات.",
+      "eligibility": "حساب Individual أو Family على 1Password.com فقط؛ Team وBusiness و1Password.ca و1Password.eu غير مدعومة حاليًا بحسب صفحة الدعم.",
+      "securityNotes": "الميزة opt-in؛ كل طلب وصول يحتاج موافقة المستخدم في 1Password ولا يستطيع الوكيل الموافقة بنفسه. بعد الموافقة يمكن إعادة استخدام العنصر حتى 30 يومًا. تعبئة البيانات تتم خارج رؤية الوكيل، لكن الموقع ومطور الوكيل يظلان ضمن حدود الثقة.",
       "sources": [
         {
           "title": "1Password press release — 1Password for Agents",
           "url": "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents"
         },
         {
-          "title": "1Password support — AI agent integrations",
-          "url": "https://support.1password.com/ai-agent-integrations/"
+          "title": "1Password support — Use 1Password to sign in to sites with supported agents",
+          "url": "https://support.1password.com/1password-for-agents/"
+        },
+        {
+          "title": "1Password support — Security model for 1Password for Agents",
+          "url": "https://support.1password.com/1password-for-agents-security/"
         }
       ]
     }
