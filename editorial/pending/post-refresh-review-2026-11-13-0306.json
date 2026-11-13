@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-13T00:42:01.325Z",
+  "mainSha": "cc5e9afbec33f9770925eac1a384ba7f9d9140ce",
+  "previousPendingReport": "editorial/pending/run-2026-11-13-0306.json",
+  "previousOutsideFeedPendingCount": 22,
+  "feedRefresh": {
+    "oldCount": 800,
+    "newCount": 800,
+    "addedIds": 8,
+    "removedIds": 8,
+    "seenIdDelta": 7,
+    "activeEditorialNews": 90,
+    "activeEditorialProjects": 98
+  },
+  "rotatedImportedRecords": [
+    {
+      "id": "d0e5cfeb79c6e58571",
+      "title": "MACaQ from Huawei",
+      "status": "imported_while_active_then_left_feed_after_refresh",
+      "stillInEditorial": true,
+      "confirmedExpired": false
+    },
+    {
+      "id": "312cc2672ec7b82778",
+      "title": "GitHub incident with Webhooks, Actions, etc.",
+      "status": "imported_while_active_then_left_feed_after_refresh",
+      "stillInEditorial": true,
+      "confirmedExpired": false
+    },
+    {
+      "id": "1df6a00742e99b5a00",
+      "title": "United Airlines AI-agent booking policy",
+      "status": "imported_while_active_then_left_feed_after_refresh",
+      "stillInEditorial": true,
+      "confirmedExpired": false
+    }
+  ],
+  "newProjectsPrepared": [
+    {
+      "id": "bf86da7f404b1d1c1f",
+      "url": "https://github.com/JaidedAI/EasyOCR",
+      "titleAr": "EasyOCR — مكتبة مفتوحة للتعرّف الضوئي على النصوص متعددة اللغات",
+      "status": "prepared_in_PR_99",
+      "inCurrentFeed": true,
+      "inCurrentEditorialBeforePr": false
+    },
+    {
+      "id": "6ea9e0fbab097163ee",
+      "url": "https://github.com/dograh-hq/dograh",
+      "titleAr": "Dograh — منصة مفتوحة لبناء وكلاء صوتيين ذاتية الاستضافة",
+      "status": "prepared_in_PR_99",
+      "inCurrentFeed": true,
+      "inCurrentEditorialBeforePr": false
+    }
+  ],
+  "correctionCandidates": [
+    {
+      "id": "4e10e32134f86500f7",
+      "title": "Edge0-145B: Frontier AI Capabilities on Your Own Computer",
+      "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+      "status": "needs_source_correction",
+      "reason": "الرابط المحدد غير قابل للوصول وقت المراجعة؛ صفحات Edge0 الرسمية التي ظهرت تتناول 35B/8B وTTS 0.1B، ولم يظهر توثيق مطابق لادعاء 145B."
+    },
+    {
+      "id": "eaf76493fdb0b4bfce",
+      "title": "GitHub availability report: October 2026",
+      "url": "https://github.blog/news-insights/company-news/github-availability-report-october-2026/",
+      "status": "needs_source_correction",
+      "reason": "الرابط المحدد غير متاح؛ الأرشيف الرسمي الذي أمكن التحقق منه يعرض تقرير سبتمبر 2026 بوصفه الأحدث في المراجعة."
+    }
+  ],
+  "outsideFeedPendingCount": 22,
+  "officialCommandsNotRun": [
+    "python scripts/editorial.py validate editorial/incoming/nabdh-project-refresh-2026-11-13-0306.json",
+    "python scripts/editorial.py import editorial/incoming/nabdh-project-refresh-2026-11-13-0306.json",
+    "python -m unittest discover -s tests -v"
+  ],
+  "reason": "لا توجد نسخة عمل محلية؛ تحقق بنيوي مكافئ أُجري، وسيجري CI الرسمي على PR."
+}
