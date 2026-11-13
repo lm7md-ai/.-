@@ -1,0 +1,483 @@
+{
+  "version": 1,
+  "publicationStatus": "research-only",
+  "reviewedAt": "2026-11-13T06:12:00+03:00",
+  "projects": [
+    {
+      "id": "bf86da7f404b1d1c1f",
+      "url": "https://github.com/JaidedAI/EasyOCR",
+      "titleAr": "EasyOCR — مكتبة مفتوحة للتعرّف الضوئي على النصوص متعددة اللغات",
+      "overview": "EasyOCR مكتبة OCR متعددة اللغات تعتمد PyTorch وتجمع كاشف النص مع نموذج التعرف. تدعم 80+ لغة وكتابات متعددة منها العربية، وتعيد لكل مقطع صندوقًا ونصًا ودرجة ثقة. أوزان اللغة المختارة تُنزّل تلقائيًا. لا تتضمن خدمة OCR سحابية مستضافة؛ الاستخدام الأساسي مكتبة محلية.",
+      "requirements": "Python وPyTorch وtorchvision، مع opencv-python-headless وSciPy وNumPy وPillow وscikit-image وpython-bidi وPyYAML وShapely وpyclipper. يمكن تشغيل CPU عبر gpu=False؛ يتطلب GPU نسخة PyTorch/CUDA متوافقة. أوزان النماذج تُنزّل عند أول استخدام، وكاشف DBNet الاختياري يحتاج Ninja.",
+      "quickStart": "أنشئ بيئة Python وثبّت easyocr، ثم أنشئ Reader مرة واحدة للغات متوافقة مثل ['ar','en'] واستخدم readtext على صورة محلية. اضبط gpu=False لتشغيل CPU. راجع توافق مجموعة اللغات قبل جمع لغات كثيرة؛ ليست كل اللغات قابلة للاستخدام معًا.",
+      "costs": "الترخيص Apache-2.0 ولا توجد رسوم ترخيص. التشغيل المحلي يستهلك CPU/RAM ومساحة لأوزان النماذج. GPU سحابي اختياري وتكلفته من مزود البنية التحتية؛ لا توجد خدمة API سحابية رسمية ضمن المستودع.",
+      "alternatives": "Tesseract OCR للمحرك التقليدي متعدد اللغات، PaddleOCR لخطوط OCR عميقة، وdocTR لخطوط المستندات المعتمدة على PyTorch/TensorFlow. قارنها على الصور نفسها وبمقاييس CER/WER.",
+      "limitations": "آخر إصدار معلن v1.7.2 يعود إلى 24 سبتمبر 2024 رغم وجود commit حديث في 13 نوفمبر 2026؛ يلزم التحقق من توافقه مع إصدارات PyTorch الحالية. لا يقدم دعم الكتابة اليدوية كميزة مستقرة، وبعض اللغات لا تتوافق معًا. النص العربي المختلط والتشكيل وجودة المسح تحتاج تقييمًا خاصًا، ودرجة الثقة ليست ضمانًا لصحة النص.",
+      "sources": [
+        {
+          "title": "EasyOCR repository and README",
+          "url": "https://github.com/JaidedAI/EasyOCR"
+        },
+        {
+          "title": "EasyOCR Apache-2.0 license",
+          "url": "https://github.com/JaidedAI/EasyOCR/blob/master/LICENSE"
+        },
+        {
+          "title": "EasyOCR requirements",
+          "url": "https://github.com/JaidedAI/EasyOCR/blob/master/requirements.txt"
+        },
+        {
+          "title": "EasyOCR tutorial",
+          "url": "https://www.jaided.ai/easyocr/tutorial"
+        },
+        {
+          "title": "EasyOCR documentation",
+          "url": "https://www.jaided.ai/easyocr/documentation"
+        },
+        {
+          "title": "Tesseract OCR alternative",
+          "url": "https://github.com/tesseract-ocr/tesseract"
+        },
+        {
+          "title": "PaddleOCR alternative",
+          "url": "https://github.com/PaddlePaddle/PaddleOCR"
+        },
+        {
+          "title": "docTR alternative",
+          "url": "https://github.com/mindee/doctr"
+        }
+      ],
+      "basis": "readme",
+      "testStatus": "not_run",
+      "improvements": [
+        {
+          "title": "حزمة قياس OCR عربية قابلة لإعادة الإنتاج",
+          "problem": "لا تكفي أمثلة README لقياس دقة EasyOCR على التشكيل والنص المختلط وجودة المسح.",
+          "approach": "مجموعة اختبار مرخّصة ومقسمة حسب الخط والتشكيل والوضوح، مع قياس CER/WER ودقة الصناديق.",
+          "stack": "Python, EasyOCR, OpenCV, pandas, pytest",
+          "steps": [
+            "اختر صفحات عربية مطبوعة من مصادر عامة الملكية أو مرخصة وسجّل حقوقها.",
+            "قسّم العينة بحسب الخط وجودة المسح ووجود أرقام أو نص عربي-لاتيني مختلط.",
+            "شغّل EasyOCR بإصدار ونموذج ثابتين على CPU وGPU.",
+            "طبّق تطبيعًا محددًا للتقييم مع الاحتفاظ بالنص الخام كما خرج من النموذج.",
+            "احسب CER وWER لكل فئة، وافحص أخطاء الحروف المتشابهة والتشكيل والأرقام.",
+            "انشر الإعدادات والعينة المسموح بها والقيود حتى يمكن إعادة التجربة."
+          ],
+          "metric": "CER/WER لكل فئة؛ زمن p50/p95؛ قابلية إعادة النتائج عبر ثلاث جولات.",
+          "difficulty": "متوسطة؛ تقدير 2–3 أسابيع.",
+          "risks": "حقوق مجموعة البيانات وتفاوت جودة الوسوم؛ وقد يخفي التطبيع فروقًا لغوية مهمة.",
+          "sources": [
+            {
+              "title": "EasyOCR repository and README",
+              "url": "https://github.com/JaidedAI/EasyOCR"
+            },
+            {
+              "title": "EasyOCR tutorial",
+              "url": "https://www.jaided.ai/easyocr/tutorial"
+            }
+          ]
+        },
+        {
+          "title": "معالجة صور قبل OCR مع قياس الأثر",
+          "problem": "الانحراف والضبابية وضعف التباين قد يخفض جودة التعرف، لكن المعالجة المفرطة قد تفسد الحروف والنقاط.",
+          "approach": "خيارات مستقلة لإزالة الميل وتحسين التباين وتقليل الضوضاء، تقارن على مجموعة مرجعية.",
+          "stack": "OpenCV, NumPy, EasyOCR, pytest",
+          "steps": [
+            "كوّن مجموعة ثابتة من صور نظيفة ومائلة ومنخفضة التباين ومشوّشة.",
+            "سجّل خط أساس EasyOCR على الصور الأصلية دون معالجة.",
+            "اختبر deskew ورفع التباين وإزالة الضوضاء كلًا على حدة.",
+            "شغّل النموذج والإعدادات نفسها على كل نسخة معالجة.",
+            "قارن CER/WER وزمن المعالجة، ولا تجمع التحويلات إلا إذا أثبتت فائدتها.",
+            "وثّق الحالات التي أضرت فيها المعالجة بالصور النظيفة أو أزالت التشكيل."
+          ],
+          "metric": "تغير CER/WER مقابل الصورة الخام؛ زمن المعالجة لكل صفحة.",
+          "difficulty": "متوسطة؛ تقدير 2–4 أسابيع.",
+          "risks": "قد تزيل المعالجة نقاطًا أو تشكيلًا أو تدمج حروفًا؛ وخطر الإفراط في مواءمة مجموعة صغيرة.",
+          "sources": [
+            {
+              "title": "EasyOCR repository and README",
+              "url": "https://github.com/JaidedAI/EasyOCR"
+            },
+            {
+              "title": "EasyOCR tutorial",
+              "url": "https://www.jaided.ai/easyocr/tutorial"
+            }
+          ]
+        },
+        {
+          "title": "واجهة مراجعة بشرية للمقاطع منخفضة الثقة",
+          "problem": "الثقة وحدها لا توفر مسارًا لتصحيح الكلمات مع الحفاظ على موضعها.",
+          "approach": "واجهة تعرض الصورة والصناديق والنص والثقة، وتوجّه المراجع للمقاطع الأقل ثقة وتحفظ سجل التصحيح.",
+          "stack": "EasyOCR, FastAPI, Gradio, SQLite",
+          "steps": [
+            "عرّف سجلًا يحفظ الصفحة ومربع النص والمخرج الخام والثقة والنص المصحح والمراجع والتاريخ.",
+            "أنشئ واجهة محلية لعرض دفعات OCR دون تغيير المخرج الأصلي.",
+            "أبرز المربعات منخفضة الثقة واسمح بتصحيحها مع الاحتفاظ بالنص السابق.",
+            "احفظ التصحيحات منفصلة واربطها بإصدار النموذج والإعدادات.",
+            "أضف صلاحيات وصول وتصديرًا وحذفًا للملفات الحساسة.",
+            "اختبر الواجهة على مستندات اصطناعية أو مرخصة قبل إدخال وثائق حقيقية."
+          ],
+          "metric": "زمن المراجعة لكل صفحة؛ نسبة الحالات منخفضة الثقة التي حُسمت؛ اتفاق المراجعين.",
+          "difficulty": "متوسطة؛ تقدير 3–5 أسابيع.",
+          "risks": "خصوصية المستندات وسلامة سجل التعديلات وتباين أحكام المراجعين.",
+          "sources": [
+            {
+              "title": "EasyOCR repository and README",
+              "url": "https://github.com/JaidedAI/EasyOCR"
+            },
+            {
+              "title": "EasyOCR documentation",
+              "url": "https://www.jaided.ai/easyocr/documentation"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "أداة OCR محلية للدفعات والأرشفة",
+          "problem": "تشغيل OCR على ملفات كثيرة يدويًا يصعب تتبعه وإعادة إنتاجه.",
+          "approach": "CLI تعالج الصور وPDF وتنتج JSON/CSV مع رقم الصفحة وبصمة المصدر وإعدادات النموذج.",
+          "stack": "Python, Typer, EasyOCR, PyMuPDF, SQLite",
+          "steps": [
+            "اقبل ملفًا أو مجلدًا أو PDF وحدد اللغات المطلوبة صراحة.",
+            "احسب بصمة لكل مصدر وسجّل إصدار النموذج والإعدادات.",
+            "عالج الصفحات على دفعات محدودة الذاكرة مع خيار CPU.",
+            "اكتب JSONL أو CSV يتضمن الصفحة والمربع والنص والثقة.",
+            "احفظ checkpoint لاستكمال الصفحات الفاشلة دون إعادة الدفعة كلها.",
+            "اختبر على ملفات اصطناعية ومرخصة وقس السرعة والذاكرة."
+          ],
+          "metric": "صفحات/دقيقة؛ ذروة الذاكرة؛ نسبة نجاح الاستئناف.",
+          "difficulty": "متوسطة؛ تقدير 2–4 أسابيع.",
+          "risks": "حجم ملفات PDF وتنزيل الأوزان تلقائيًا وحقوق الوثائق المدخلة.",
+          "sources": [
+            {
+              "title": "EasyOCR repository and README",
+              "url": "https://github.com/JaidedAI/EasyOCR"
+            },
+            {
+              "title": "Tesseract OCR alternative",
+              "url": "https://github.com/tesseract-ocr/tesseract"
+            }
+          ]
+        },
+        {
+          "title": "فهرس بصري لكتب تراثية مرخّصة",
+          "problem": "يصعب البحث في صور كتب تراثية مطبوعة عندما لا يتوفر نص رقمي موثوق.",
+          "approach": "OCR لمواد عامة الملكية أو مصرح بها، مع حفظ صورة الصفحة ورقمها ومراجعة بشرية.",
+          "stack": "EasyOCR, Python, OpenCV, SQLite",
+          "steps": [
+            "اختر مجموعة وثائق عامة الملكية أو مرخصة بوضوح.",
+            "احتفظ بالمسح الأصلي ورقم الصفحة والطبعة ومصدر الملف.",
+            "شغّل OCR وضع علامة على المقاطع منخفضة الثقة للمراجعة.",
+            "افهرس النص مع بيانات الوثيقة والطبعة والصفحة.",
+            "أعد كل نتيجة بحث إلى صورة الصفحة الأصلية بدل عرض النص وحده.",
+            "اختبر دقة الاسترجاع على استعلامات معروفة."
+          ],
+          "metric": "Precision/Recall للبحث؛ اكتمال الإحالة إلى الصفحة؛ معدل التصحيحات البشرية.",
+          "difficulty": "متوسطة؛ تقدير 3–6 أسابيع.",
+          "risks": "مطابقات OCR الخاطئة وحقوق النشر واختلاف الطبعات.",
+          "sources": [
+            {
+              "title": "EasyOCR repository and README",
+              "url": "https://github.com/JaidedAI/EasyOCR"
+            },
+            {
+              "title": "EasyOCR tutorial",
+              "url": "https://www.jaided.ai/easyocr/tutorial"
+            }
+          ]
+        }
+      ],
+      "religious": [
+        {
+          "title": "فهرسة مصادر تراثية مرخّصة مع مراجعة بشرية",
+          "problem": "قد يسبب OCR غير المدقق أخطاء في أسماء الكتب أو النصوص المنقولة.",
+          "approach": "استخراج نص أولي من مصادر مرخصة وربط كل مقتطف بصورة الصفحة والطبعة ومراجعته بشريًا؛ لا فتاوى أو استنتاجات شرعية.",
+          "stack": "EasyOCR, Python, OpenCV, SQLite",
+          "steps": [
+            "استخدم نصوصًا عامة الملكية أو مرخصة وسجّل الطبعة ومصدرها.",
+            "احتفظ بصورة الصفحة والنص الخام دون استبداله بالنص المطبع.",
+            "شغّل OCR مع إبقاء التشكيل والاختلافات الأصلية للمراجعة.",
+            "اشترط مراجعة بشرية للاقتباسات والأسماء والآيات وأرقام الصفحات.",
+            "افهرس المقاطع التي اجتازت المراجعة مع إحالة صفحة قابلة للفتح.",
+            "اعرض المشروع بوصفه فهرس بحث فقط وليس مصدرًا للفتوى أو الحكم."
+          ],
+          "metric": "نسبة المقاطع ذات الإحالة؛ دقة النص بعد المراجعة؛ التزام حقوق المصدر.",
+          "difficulty": "متوسطة؛ تقدير 4–6 أسابيع.",
+          "risks": "خطأ OCR قد يغيّر اقتباسًا؛ اختلاف الطبعات؛ خطر فهم الفهرس على أنه فتوى.",
+          "sources": [
+            {
+              "title": "EasyOCR repository and README",
+              "url": "https://github.com/JaidedAI/EasyOCR"
+            },
+            {
+              "title": "EasyOCR tutorial",
+              "url": "https://www.jaided.ai/easyocr/tutorial"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6ea9e0fbab097163ee",
+      "url": "https://github.com/dograh-hq/dograh",
+      "titleAr": "Dograh — منصة مفتوحة لبناء وكلاء صوتيين ذاتية الاستضافة",
+      "overview": "Dograh منصة وكلاء صوتيين ذاتية الاستضافة بواجهة workflow مرئية وMCP وتكاملات LLM/STT/TTS. تدعم وضع Dograh المدمج وBYOK، وتتيح Web Call من المتصفح لاختبار المسار دون رقم هاتف. README يقارنها بخدمات Vapi وRetell ويعرض نسخة Cloud.",
+      "requirements": "توصي الوثائق محليًا بحد أدنى 8GB RAM (4GB متاحة لـDocker)، و10GB مساحة، ونواتين CPU، وDocker 20.10+ مع Compose. الحاويات تشمل PostgreSQL 17 مع pgvector وRedis 7 وMinIO وFastAPI وواجهة Next.js. تطوير المصدر يتطلب Python 3.13.x وNode 24.x؛ المنافذ المحلية تشمل 3010 و8000 و5432 و6379 و9000 و9001.",
+      "quickStart": "استخدم مسار Docker المحلي الرسمي بعد مراجعة إعداداته، وانتظر 2–3 دقائق لأول تنزيل، ثم افتح localhost:3010 وأنشئ وكيلًا تجريبيًا واختبره عبر Web Call في المتصفح؛ لا يحتاج هذا الاختبار رقم هاتف أو إعداد telephony. README يذكر أن quickstart قد يفتح Cloudflare quick tunnel ويترك التسجيل مفعّلًا افتراضيًا؛ أبقِ التجربة محلية وراجع إعدادات النفق والتسجيل قبل أي تعريض خارجي.",
+      "costs": "الترخيص BSD-2-Clause ولا توجد رسوم ترخيص للاستضافة الذاتية. التكلفة الفعلية للجهاز/الخادم والتخزين، ثم مزودو LLM/STT/TTS أو telephony إن فُعّلوا. النسخة السحابية موصوفة بأنها usage-based ولم أتحقق من سعر ثابت منشور؛ لا يلزم telephony لاختبار Web Call المحلي.",
+      "alternatives": "Vapi وRetell بدائل SaaS؛ LiveKit Agents وPipecat إطاران مفتوحان لبناء وكلاء صوتيين بمكونات أكثر تركيبًا. الاختيار يعتمد على التحكم المطلوب وتكلفة التشغيل واستضافة الصوت.",
+      "limitations": "المكدس متعدد الخدمات ويحتاج Docker وموارد معتبرة. quickstart قد يفعّل نفقًا عامًا والتسجيل افتراضيًا، كما أن مزودي STT/TTS يستقبلون الصوت والنص اللازمين للمعالجة؛ راجع سياساتهم قبل استخدام بيانات حساسة. لم أشغّل المشروع أو أختبر مكالمات أو تكاملات خارجية.",
+      "sources": [
+        {
+          "title": "Dograh repository and README",
+          "url": "https://github.com/dograh-hq/dograh"
+        },
+        {
+          "title": "Dograh BSD-2-Clause license",
+          "url": "https://github.com/dograh-hq/dograh/blob/main/LICENSE"
+        },
+        {
+          "title": "Dograh prerequisites",
+          "url": "https://github.com/dograh-hq/dograh/blob/main/docs/getting-started/prerequisites.mdx"
+        },
+        {
+          "title": "Dograh first agent",
+          "url": "https://github.com/dograh-hq/dograh/blob/main/docs/getting-started/first-agent.mdx"
+        },
+        {
+          "title": "Dograh Docker deployment",
+          "url": "https://github.com/dograh-hq/dograh/blob/main/docs/deployment/docker.mdx"
+        },
+        {
+          "title": "Dograh inference providers",
+          "url": "https://github.com/dograh-hq/dograh/blob/main/docs/configurations/inference-providers.mdx"
+        },
+        {
+          "title": "Dograh voice providers",
+          "url": "https://github.com/dograh-hq/dograh/blob/main/docs/configurations/voice.mdx"
+        },
+        {
+          "title": "Dograh transcriber providers",
+          "url": "https://github.com/dograh-hq/dograh/blob/main/docs/configurations/transcriber.mdx"
+        },
+        {
+          "title": "Vapi alternative",
+          "url": "https://vapi.ai/"
+        },
+        {
+          "title": "Retell alternative",
+          "url": "https://www.retellai.com/"
+        },
+        {
+          "title": "LiveKit Agents alternative",
+          "url": "https://github.com/livekit/agents"
+        },
+        {
+          "title": "Pipecat alternative",
+          "url": "https://github.com/pipecat-ai/pipecat"
+        }
+      ],
+      "basis": "readme",
+      "testStatus": "not_run",
+      "improvements": [
+        {
+          "title": "مجموعة تقييم لوكلاء الصوت بالعربية",
+          "problem": "تختلف جودة STT/TTS وفهم المقاطعة واللهجات ولا تكفي تجربة مكالمة واحدة للمقارنة.",
+          "approach": "اختبار محلي بصوت اصطناعي أو تسجيلات مصرح بها وقياس WER وزمن الاستجابة وإتمام المهمة والتحويل البشري دون اتصالات حقيقية.",
+          "stack": "Dograh, Python SDK, pytest, JSONL, OpenTelemetry",
+          "steps": [
+            "حدّد مجموعة أسئلة عربية ثابتة تشمل لهجات وأسماء وأرقامًا ومقاطعات.",
+            "استخدم صوتًا اصطناعيًا أو تسجيلات بموافقة واضحة وسجّل سياسة الاحتفاظ.",
+            "ثبّت إعدادات STT وTTS وLLM والاتصال لكل مزود.",
+            "نفّذ جلسات Web Call مسجلة دون إجراء مكالمات هاتفية حقيقية.",
+            "احسب WER ونجاح المهمة وP95 latency والانقطاعات ونجاح التحويل إلى موظف.",
+            "انشر إصدارات المزودين وأمثلة الإخفاق وحدود العينة."
+          ],
+          "metric": "WER؛ P95 latency؛ نسبة إكمال المهمة؛ دقة handoff.",
+          "difficulty": "متوسطة؛ تقدير 3–5 أسابيع.",
+          "risks": "خصوصية الصوت وتحيز اللهجات وتغير نماذج المزودين.",
+          "sources": [
+            {
+              "title": "Dograh repository and README",
+              "url": "https://github.com/dograh-hq/dograh"
+            },
+            {
+              "title": "Dograh first agent",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/getting-started/first-agent.mdx"
+            },
+            {
+              "title": "Dograh inference providers",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/configurations/inference-providers.mdx"
+            },
+            {
+              "title": "Dograh voice providers",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/configurations/voice.mdx"
+            },
+            {
+              "title": "Dograh transcriber providers",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/configurations/transcriber.mdx"
+            }
+          ]
+        },
+        {
+          "title": "إصدارات قابلة للمراجعة للـ workflows مع حجب الأسرار",
+          "problem": "التعديلات البصرية يصعب تتبعها أو استعادتها وقد يتسرب سر عند التصدير.",
+          "approach": "تصدير workflow بإصدار schema مع استبدال الأسرار بمراجع آمنة وإظهار diff قبل الاستيراد.",
+          "stack": "Dograh API, Python, JSON Schema, Git",
+          "steps": [
+            "استخرج مخطط تصدير workflow من التوثيق الرسمي وحدد الحقول المستقرة.",
+            "عرّف رقم إصدار ومراجع بيئة منفصلة عن بيانات الأسرار.",
+            "استبدل قيم الأسرار بمراجع آمنة وافحص الملف بحثًا عن قيم حساسة.",
+            "أنشئ فروقًا قابلة للمراجعة وتحققًا من المخطط قبل الاستيراد.",
+            "اختبر export/import ذهابًا وإيابًا ثم جرّب rollback على سير تجريبي.",
+            "أضف اختبارًا يفشل عند ظهور قيمة سرية خام في ملف التصدير."
+          ],
+          "metric": "صفر أسرار خام في التصدير؛ نجاح round-trip؛ نجاح rollback.",
+          "difficulty": "متوسطة؛ تقدير 3–5 أسابيع.",
+          "risks": "تغير المخطط والإنذارات الكاذبة ومراجع أسرار غير صالحة في بيئة أخرى.",
+          "sources": [
+            {
+              "title": "Dograh repository and README",
+              "url": "https://github.com/dograh-hq/dograh"
+            },
+            {
+              "title": "Dograh Docker deployment",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/deployment/docker.mdx"
+            },
+            {
+              "title": "Dograh inference providers",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/configurations/inference-providers.mdx"
+            }
+          ]
+        },
+        {
+          "title": "خريطة خصوصية لمزودي الصوت والنماذج",
+          "problem": "قد لا يعرف المستخدم أين يذهب الصوت والنص والبيانات الوصفية عند اختيار مزود خارجي.",
+          "approach": "جدول لكل مزود يوضح البيانات المرسلة ورابط سياسة الاحتفاظ والمنطقة مع تنبيه قبل التفعيل.",
+          "stack": "Dograh provider metadata, JSON, documentation tests",
+          "steps": [
+            "احصر مزودي STT وTTS وLLM المذكورين في التوثيق الرسمي.",
+            "سجّل أنواع البيانات والمنطقة والاحتفاظ واستخدام البيانات للتدريب ورابط DPA لكل مزود.",
+            "اربط كل حقل بصفحة الخصوصية أو الشروط الرسمية وتاريخ المراجعة.",
+            "ضع Unknown عندما لا تنشر الوثائق معلومة بدل تخمينها.",
+            "اعرض تنبيهًا قبل تفعيل مزود إذا كانت بياناته ناقصة أو قديمة."
+          ],
+          "metric": "نسبة تغطية المزودين؛ عمر آخر مراجعة؛ عدد الحقول المجهولة.",
+          "difficulty": "متوسطة؛ تقدير 2–3 أسابيع.",
+          "risks": "تقادم الوثائق ونقص الإفصاح واختلاف شروط المناطق.",
+          "sources": [
+            {
+              "title": "Dograh inference providers",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/configurations/inference-providers.mdx"
+            },
+            {
+              "title": "Dograh voice providers",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/configurations/voice.mdx"
+            },
+            {
+              "title": "Dograh transcriber providers",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/configurations/transcriber.mdx"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مساعد معلومات جامعية صوتي للاستفسارات العامة",
+          "problem": "تتكرر الأسئلة العامة عن المواعيد والخدمات بين صفحات متعددة.",
+          "approach": "وكيل يسترجع إجابات من صفحات عامة مع روابط المصدر ويحوّل الغموض إلى موظف بشري؛ اختبار Web Call محلي أولًا.",
+          "stack": "Dograh, Python, retrieval, FastAPI, public FAQs",
+          "steps": [
+            "اجمع أسئلة شائعة من صفحات الجامعة الرسمية العامة فقط.",
+            "ابنِ فهرس استرجاع يحفظ رابط المصدر وتاريخ تحديثه.",
+            "اضبط workflow ليجيب من المقاطع المسترجعة مع إظهار المصدر.",
+            "حوّل الأسئلة غير المدعومة أو المتعلقة بسجلات شخصية إلى موظف.",
+            "اختبر مجموعة أسئلة ثابتة وقس صحة الإجابة ودقة الإحالة."
+          ],
+          "metric": "دقة الإجابة؛ Precision للإحالات؛ معدل التحويل إلى موظف.",
+          "difficulty": "متوسطة؛ تقدير 3–4 أسابيع.",
+          "risks": "تقادم صفحات الجامعة والهلوسة وتسرب بيانات الطلاب؛ أبق السجلات الشخصية خارج النطاق.",
+          "sources": [
+            {
+              "title": "Dograh repository and README",
+              "url": "https://github.com/dograh-hq/dograh"
+            },
+            {
+              "title": "Dograh first agent",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/getting-started/first-agent.mdx"
+            },
+            {
+              "title": "Dograh inference providers",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/configurations/inference-providers.mdx"
+            }
+          ]
+        },
+        {
+          "title": "دليل صوتي لمواعيد الدروس والمواد المعتمدة",
+          "problem": "قد يصعب الوصول إلى مواعيد الدروس وروابطها من واجهة نصية فقط.",
+          "approach": "وكيل يقرأ جدولًا منشورًا ومراجعًا ويذكر مصدر كل موعد ويحيل التعارض إلى جهة بشرية؛ لا يجيب عن الأحكام.",
+          "stack": "Dograh, Python, approved schedule JSON, retrieval, Web Call",
+          "steps": [
+            "استورد جدولًا عامًا أو مصرحًا به مع رقم الفصل والنسخة.",
+            "وحّد رموز المقررات والأيام والمنطقة الزمنية.",
+            "أنشئ intents للاستعلام والتصعيد عند التعارض أو نقص البيانات.",
+            "أعد المواعيد مع رابط المصدر وتاريخ آخر تحديث.",
+            "اختبر مجموعة حالات تشمل اختلاف التوقيت وتحديث الجدول وأسماء المقررات المتشابهة."
+          ],
+          "metric": "صحة المواعيد؛ زمن الاستجابة؛ نسبة التصعيد عند الغموض.",
+          "difficulty": "متوسطة؛ تقدير 3–4 أسابيع.",
+          "risks": "تغير الجداول وغموض أسماء المقررات وأخطاء المنطقة الزمنية.",
+          "sources": [
+            {
+              "title": "Dograh repository and README",
+              "url": "https://github.com/dograh-hq/dograh"
+            },
+            {
+              "title": "Dograh first agent",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/getting-started/first-agent.mdx"
+            },
+            {
+              "title": "Dograh inference providers",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/configurations/inference-providers.mdx"
+            }
+          ]
+        }
+      ],
+      "religious": [
+        {
+          "title": "دليل صوتي لمواعيد الدروس والمصادر المعتمدة",
+          "problem": "يحتاج المستخدم أحيانًا إلى معرفة موعد درس أو الوصول إلى مادته دون خلط ذلك بإجابة شرعية.",
+          "approach": "يقتصر الوكيل على جدول موثق وروابط مواد معتمدة ويذكر المصدر والتاريخ ويحيل أي سؤال عن حكم إلى جهة بشرية مختصة.",
+          "stack": "Dograh, Python, approved schedule JSON, retrieval, Web Call",
+          "steps": [
+            "اختر جدولًا محليًا موثوقًا وسجّل الجهة والمنهج والتاريخ والمنطقة.",
+            "احفظ المدينة والمنطقة الزمنية وتاريخ الجدول وإصداره مع كل سجل.",
+            "اقصر workflow الصوتي على معلومات الجدول والتنبيهات المحددة.",
+            "أظهر المصدر ووفّر تحويلًا بشريًا عند اختلاف الجداول أو الاعتراض عليها.",
+            "اختبر حدود الأيام وتغير التوقيت وتحديث المصدر.",
+            "استبعد الفتاوى والأحكام والتفسيرات غير الموجودة في المصدر المعتمد."
+          ],
+          "metric": "مطابقة الأوقات للمصدر؛ اكتمال الإحالة؛ معدل الإجابات خارج النطاق.",
+          "difficulty": "متوسطة؛ تقدير 3–4 أسابيع.",
+          "risks": "اختلاف طرق الحساب والمناطق الزمنية وتقادم الجداول؛ ليس أداة فتوى.",
+          "sources": [
+            {
+              "title": "Dograh repository and README",
+              "url": "https://github.com/dograh-hq/dograh"
+            },
+            {
+              "title": "Dograh first agent",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/getting-started/first-agent.mdx"
+            },
+            {
+              "title": "Dograh inference providers",
+              "url": "https://github.com/dograh-hq/dograh/blob/main/docs/configurations/inference-providers.mdx"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editorialNote": "تمت مراجعة README والتوثيق والترخيص والمتطلبات وطريقة البدء والتكاليف المحليّة/السحابية والبدائل. المقترحات أعيدت صياغة خطواتها لتكون خاصة بكل مشروع. لم تُشغّل المشاريع ولم يُدّعَ اختبارها."
+}
