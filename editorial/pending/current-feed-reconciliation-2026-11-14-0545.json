@@ -119,7 +119,7 @@
     "editorialCount": 978,
     "newRecords": 10,
     "existingRecordsPreserved": true,
-    "headSha": "3859d69ca2a5164d98ddaebdc793a51914e48669"
+    "headSha": "b7a17e27349258916e2cfca679ebd18b60d640f3"
   },
   "protectedFiles": {
     "feedJson": "untouched",
@@ -157,7 +157,23 @@
         "conclusion": "success"
       }
     },
-    "localCloneError": "Could not resolve host: github.com"
+    "localCloneError": "Could not resolve host: github.com",
+    "latestPrCheck": {
+      "workflow": "Validate Nabdh changes",
+      "run": 380,
+      "runId": 43549258270,
+      "headSha": "b7a17e27349258916e2cfca679ebd18b60d640f3",
+      "status": "completed",
+      "conclusion": "success",
+      "unitTests": {
+        "passed": 30,
+        "failed": 0
+      },
+      "editorialValidation": {
+        "validatedEntries": 978
+      },
+      "javascriptChecks": "success"
+    }
   },
   "publish": {
     "mainDeployRun": 176,
@@ -176,5 +192,16 @@
     "prMerged": false
   },
   "prBaseSha": "cc5e9afbec33f9770925eac1a384ba7f9d9140ce",
-  "prBehindMain": 3
+  "prBehindMain": 3,
+  "specialRecordsOnePassword": {
+    "supportedAgents": [
+      "Claude Duet",
+      "Grok Bot",
+      "Instinct",
+      "Muse",
+      "Town"
+    ],
+    "approvalReuseDays": 30,
+    "sourcePublishedAt": "2026-11-04"
+  }
 }
