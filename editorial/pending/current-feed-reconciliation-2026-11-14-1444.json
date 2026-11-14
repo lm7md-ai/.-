@@ -1,0 +1,277 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-14T14:44:08+03:00",
+  "mainSha": "6ee41f735682ffcbc98731e89a57593838f33616",
+  "feed": {
+    "generatedAt": "2026-11-14T06:17:16+00:00",
+    "total": 800,
+    "news": 700,
+    "projects": 100,
+    "blobSha": "a8305ab876ebfcb5e014938d7cbfaf1fa80e8394"
+  },
+  "mainEditorialCount": 953,
+  "incomingMain": {
+    "files": 117,
+    "recordAppearances": 1194,
+    "alreadyImportedAppearances": 1084,
+    "seenOnlyAppearances": 110,
+    "uniqueSeenOnlyPairs": 84,
+    "idUrlConflictsFound": 0,
+    "malformedEntriesFound": 0,
+    "invalidOriginalUrlsFound": 0,
+    "confirmedExpired": 0,
+    "allFilesParsed": true,
+    "inventoryUnchangedSincePriorFullAudit": true,
+    "inventoryBasis": "The full 117-file audit was completed against ce6dcf3cbeefba0172c5ba077a1145b00ed4a1fe. The four commits now ahead on main change only feed.json, seen.json and status.json; no incoming path changed. All 84 seen-only IDs were rechecked against the current feed."
+  },
+  "currentFeedRecheck": {
+    "seenOnlyIdsRechecked": 84,
+    "exactIdMatches": 0,
+    "exactIdUrlMatches": 0,
+    "stillAbsent": 84,
+    "confirmedExpired": 0,
+    "note": "All 84 IDs are absent from current Feed. No title-based replacement IDs were generated; absence is not treated as proof of expiry."
+  },
+  "heldRecords": [
+    {
+      "id": "0d7637bb5559a97c22",
+      "url": "https://tratt.net/laurie/blog/2026/adapting_cpython_for_yk.html",
+      "decision": "hold_no_import"
+    },
+    {
+      "id": "60460c51ffcbaa7143",
+      "url": "https://mehmetince.net/part-3-6-how-i-ended-up-turning-a-22-year-old-postgresql-type-confusion-primitive-into-rce-cve-2026-6460/",
+      "decision": "hold_no_import"
+    },
+    {
+      "id": "889dda614b5244142f",
+      "url": "https://www.theverge.com/games/1032085/gdc-festival-of-gaming-annual-survey-ai-layoffs",
+      "decision": "hold_no_import"
+    }
+  ],
+  "absentFromFeed": [
+    {
+      "id": "1c5e170b0f37ff95fd",
+      "url": "https://developer.apple.com/foundation-models-framework/",
+      "titleAr": "Apple Foundation Models"
+    },
+    {
+      "id": "076934ef461be2b954",
+      "url": "https://unemploymentlabs.com/checkpoint-forensics",
+      "titleAr": "Checkpoint Forensics"
+    },
+    {
+      "id": "cf14d9f186a2331efa",
+      "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/",
+      "titleAr": "Coway cloud removal"
+    },
+    {
+      "id": "b1c7febb39e1226c18",
+      "url": "https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html",
+      "titleAr": "App Store review delays"
+    }
+  ],
+  "excludedActiveNews": [
+    {
+      "id": "3737f013bc02f6fab5",
+      "url": "https://www.engadget.com/2315525/metas-muse-can-now-make-calls-on-your-behalf-if-you-have-a-paid-subscription/"
+    },
+    {
+      "id": "e31d579ac0149753f2",
+      "url": "https://www.bbc.co.uk/news/articles/cm62y0wrnz9zo?at_medium=RSS&at_campaign=RSS"
+    },
+    {
+      "id": "dd62360cdb55684548",
+      "url": "https://www.theverge.com/gadgets/1032630/whoop-humans-social-network"
+    },
+    {
+      "id": "3cdc276fd6a522c552",
+      "url": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/"
+    },
+    {
+      "id": "421313add8f8b7d4e7",
+      "url": "https://www.mtsoukalos.eu/2026/11/why-zig-over-c-for-systems-programming/"
+    },
+    {
+      "id": "cdfd26896257823e51",
+      "url": "https://twitter.com/flightradar24/status/2121347654714077605"
+    }
+  ],
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "officialStatus": {
+        "repository": "NVIDIA/OpenShell remains active",
+        "archived": false,
+        "license": "Apache-2.0",
+        "stars": 21607,
+        "pushedAt": "2026-11-14T04:54:19Z",
+        "migration": "No replacement repository at ai-openshell/openshell was confirmed; migration is not claimed complete."
+      },
+      "decision": "seen_only_no_import"
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "officialStatus": {
+        "model": "CRAFT-1 2K (craft_v1_2k)",
+        "api": "Image Generation API remains Preview",
+        "auth": "user apps use asset:write and user AI allowance; service apps use service:asset:write and team API credits",
+        "cost": "3 credits per 2K image for service apps"
+      },
+      "decision": "seen_only_no_import"
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "officialStatus": {
+        "eligibility": "Individual/Family on 1Password.com; Team/Business and .ca/.eu unsupported",
+        "minimumAppVersion": "8.12.42+",
+        "supportedAgents": [
+          "Claude Duet",
+          "Grok Bot",
+          "Instinct",
+          "Muse",
+          "Town"
+        ],
+        "approvalReuseDays": 30,
+        "sessionBoundary": "1Password fills/submits sign-in form; later website session is controlled by the agent"
+      },
+      "decision": "seen_only_no_import"
+    }
+  ],
+  "selected": {
+    "news": {
+      "count": 12,
+      "basis": {
+        "article": 10,
+        "metadata": 2
+      },
+      "ids": [
+        "1a09f77a4836fe9e9b",
+        "12990af15e181ab96c",
+        "8c9ba4b267174e41c3",
+        "d121304c3de64e9ed0",
+        "039c74dda2a3b52c28",
+        "743bb9f48555c86ca2",
+        "691d6cdbb8fb511a56",
+        "9ccf02f3129f738855",
+        "4e10e32134f86500f7",
+        "b6c6cdb45a036bcc24",
+        "37867e7926c4575162",
+        "830a5f0df960922e48"
+      ]
+    },
+    "projects": {
+      "count": 3,
+      "ids": [
+        "bf86da7f404b1d1c1f",
+        "6ea9e0fbab097163ee",
+        "b1b1542da472edd249"
+      ]
+    },
+    "total": 15
+  },
+  "feedQueue": {
+    "before": {
+      "enrichedExact": 153,
+      "unenrichedNews": 644,
+      "unenrichedProjects": 3
+    },
+    "after": {
+      "enrichedExact": 168,
+      "unenrichedNews": 632,
+      "unenrichedProjects": 0
+    }
+  },
+  "previousEight": {
+    "reviewed": 8,
+    "active": 8,
+    "archived": 0,
+    "inCurrentFeed": 1,
+    "inEditorialByOriginalRepoUrl": 2,
+    "inEditorialExactCurrentFeed": 1,
+    "measuredAt": "2026-11-14T14:44:08+03:00"
+  },
+  "library": {
+    "researchOnlyPrSnapshot": {
+      "total": 73,
+      "active": 71,
+      "archived": 2,
+      "projectFeedMembers": 17,
+      "outsideCurrentFeed": 56,
+      "unverifiedMembership": 1,
+      "licensesNeedingUpstreamVerification": 10,
+      "measuredAt": "2026-11-14T02:47:48+03:00"
+    },
+    "publishedArtifactSnapshot": {
+      "total": 31,
+      "archived": 2,
+      "inCurrentFeed": 4,
+      "outsideCurrentFeed": 27,
+      "run": 177,
+      "artifactId": 14102275805
+    }
+  },
+  "prAfter": {
+    "editorialCount": 968,
+    "newRecords": 15,
+    "existingMainRecordsPreserved": true,
+    "notImportedFromPriorPr": 10
+  },
+  "protectedFiles": {
+    "feedJson": "synced from current main unchanged in PR diff",
+    "seenJson": "synced from current main unchanged in PR diff",
+    "statusJson": "synced from current main unchanged in PR diff",
+    "sourceCode": "untouched",
+    "design": "untouched",
+    "workflows": "untouched",
+    "publishSettings": "untouched"
+  },
+  "execution": {
+    "localShellAvailable": false,
+    "localValidate": "not_run",
+    "localImport": "not_run",
+    "localUnitTests": "not_run",
+    "structuralValidation": "passed",
+    "structuralValidationEntries": 15,
+    "officialPrCheckBeforeRefresh": {
+      "run": 381,
+      "runId": 43549381773,
+      "headSha": "8a6de059d031e5f139a2d079f2466d33dda5dbf0",
+      "status": "completed",
+      "conclusion": "success",
+      "unitTestsPassed": 30,
+      "unitTestsFailed": 0,
+      "validatedEntries": 978
+    }
+  },
+  "publish": {
+    "mainDeployRun": 177,
+    "runId": 43565577014,
+    "conclusion": "success",
+    "artifactId": 14102275805,
+    "publishedMainEditorialCount": 953,
+    "publishedFeedCount": 800,
+    "publishedSeenIds": 4925,
+    "publishedStatus": "ok",
+    "artifactDownloadedAndInspected": true,
+    "prNotMerged": true,
+    "publicEditorialUrl": "https://lm7md-ai.github.io/.-/data/editorial.json",
+    "publicUrlVerification": "not_verified; GitHub Pages fetch returned DisabledError"
+  },
+  "mergeDecision": "Do not merge while preserving the explicit no-feed/no-seen constraint: update-and-deploy.yml runs update_feed.py on every push to main and may commit feed.json, seen.json and status.json. No editorial-only deploy path exists in the unchanged workflow."
+}

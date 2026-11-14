@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "research-only",
+  "measuredAt": "2026-11-14T14:44:08+03:00",
+  "summary": {
+    "reviewed": 8,
+    "active": 8,
+    "archived": 0,
+    "inCurrentFeed": 1,
+    "inEditorialByOriginalRepoUrl": 2,
+    "inEditorialExactCurrentFeed": 1
+  },
+  "projects": [
+    {
+      "repo": "patchy631/ai-engineering-hub",
+      "name": "AI Engineering Hub",
+      "stars": 41848,
+      "forks": 6682,
+      "openIssues": 138,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "updatedAt": "2026-11-14T09:48:41Z",
+      "inCurrentFeed": true,
+      "feedId": "fe0e6bfdbdd5822139",
+      "inEditorialExactCurrentFeed": true,
+      "editorialId": "fe0e6bfdbdd5822139",
+      "testStatus": "not_run",
+      "sources": [
+        {
+          "title": "GitHub repository",
+          "url": "https://github.com/patchy631/ai-engineering-hub"
+        },
+        {
+          "title": "MIT license",
+          "url": "https://github.com/patchy631/ai-engineering-hub/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "repo": "googleapis/python-genai",
+      "name": "Google Gen AI SDK for Python",
+      "stars": 4070,
+      "forks": 1065,
+      "openIssues": 387,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-11-14T03:55:51Z",
+      "updatedAt": "2026-11-14T07:55:13Z",
+      "inCurrentFeed": false,
+      "inEditorialExactCurrentFeed": false,
+      "testStatus": "not_run",
+      "sources": [
+        {
+          "title": "GitHub repository",
+          "url": "https://github.com/googleapis/python-genai"
+        },
+        {
+          "title": "Apache-2.0 license",
+          "url": "https://github.com/googleapis/python-genai/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "repo": "Millillion/lasm",
+      "name": "Lasm",
+      "stars": 105,
+      "forks": 7,
+      "openIssues": 31,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-11-14T11:12:37Z",
+      "updatedAt": "2026-11-12T16:10:11Z",
+      "inCurrentFeed": false,
+      "inEditorialExactCurrentFeed": false,
+      "testStatus": "not_run",
+      "sources": [
+        {
+          "title": "GitHub repository",
+          "url": "https://github.com/Millillion/lasm"
+        },
+        {
+          "title": "MIT license",
+          "url": "https://github.com/Millillion/lasm/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "repo": "microsoft/markitdown",
+      "name": "MarkItDown",
+      "stars": 195316,
+      "forks": 14748,
+      "openIssues": 812,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-11-07T00:14:01Z",
+      "updatedAt": "2026-11-14T11:41:54Z",
+      "inCurrentFeed": false,
+      "inEditorialExactCurrentFeed": false,
+      "testStatus": "not_run",
+      "sources": [
+        {
+          "title": "GitHub repository",
+          "url": "https://github.com/microsoft/markitdown"
+        },
+        {
+          "title": "MIT license",
+          "url": "https://github.com/microsoft/markitdown/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "repo": "yc-software/minecraft-agent-harness",
+      "name": "Minecraft Agent Harness",
+      "stars": 215,
+      "forks": 30,
+      "openIssues": 1,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "updatedAt": "2026-11-13T19:39:42Z",
+      "inCurrentFeed": false,
+      "inEditorialExactCurrentFeed": false,
+      "testStatus": "not_run",
+      "sources": [
+        {
+          "title": "GitHub repository",
+          "url": "https://github.com/yc-software/minecraft-agent-harness"
+        },
+        {
+          "title": "MIT license",
+          "url": "https://github.com/yc-software/minecraft-agent-harness/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "repo": "NVIDIA/OpenShell",
+      "name": "NVIDIA OpenShell",
+      "stars": 21606,
+      "forks": 2105,
+      "openIssues": 675,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-11-14T04:54:19Z",
+      "updatedAt": "2026-11-14T11:17:54Z",
+      "inCurrentFeed": false,
+      "inEditorialExactCurrentFeed": false,
+      "testStatus": "not_run",
+      "sources": [
+        {
+          "title": "GitHub repository",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        },
+        {
+          "title": "Apache-2.0 license",
+          "url": "https://github.com/NVIDIA/OpenShell/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "repo": "pydantic/pydantic-ai",
+      "name": "Pydantic AI",
+      "stars": 21204,
+      "forks": 3174,
+      "openIssues": 1971,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-11-14T10:31:03Z",
+      "updatedAt": "2026-11-14T11:21:46Z",
+      "inCurrentFeed": false,
+      "inEditorialExactCurrentFeed": false,
+      "testStatus": "not_run",
+      "sources": [
+        {
+          "title": "GitHub repository",
+          "url": "https://github.com/pydantic/pydantic-ai"
+        },
+        {
+          "title": "MIT license",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "repo": "astral-sh/uv",
+      "name": "uv",
+      "stars": 91987,
+      "forks": 3812,
+      "openIssues": 3078,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-11-14T04:08:07Z",
+      "updatedAt": "2026-11-14T11:09:49Z",
+      "inCurrentFeed": false,
+      "inEditorialExactCurrentFeed": false,
+      "inEditorialByOriginalRepoUrl": true,
+      "editorialId": "30e283a9b3f70e35d8",
+      "testStatus": "not_run",
+      "sources": [
+        {
+          "title": "GitHub repository",
+          "url": "https://github.com/astral-sh/uv"
+        },
+        {
+          "title": "Apache-2.0 license",
+          "url": "https://github.com/astral-sh/uv/blob/main/LICENSE-APACHE"
+        }
+      ]
+    }
+  ],
+  "note": "All eight repositories are non-archived according to GitHub API. Stars/forks/issues are snapshots, not rankings. Feed membership is checked by exact repo URL/ID; uv has an Editorial record by original URL but is not in current Feed."
+}
