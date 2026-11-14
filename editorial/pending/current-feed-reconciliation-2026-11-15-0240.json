@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-15T02:40:05+03:00",
+  "baseMain": "09f4e0859e7e025fc3c9c80c8318c4157074cb18",
+  "currentFeed": {
+    "generatedAt": "2026-11-14T22:21:04+00:00",
+    "itemCount": 800,
+    "news": 700,
+    "projects": 100
+  },
+  "editorialCountBefore": 968,
+  "editorialCountAfter": 975,
+  "incomingInventory": {
+    "files": 123,
+    "appearances": 1261,
+    "lastFullScanAt": "2026-11-14T20:56:10+03:00",
+    "lastFullScanBaseMain": "8b2fcb00963b1b86dd4e1636ad9b437116fe0e4b",
+    "lastFullScanCounts": {
+      "alreadyImportedExact": 1126,
+      "currentFeedExactPending": 1,
+      "absentFromCurrentFeedAndEditorial": 134,
+      "idUrlConflicts": 0,
+      "malformedFiles": 0,
+      "confirmedExpired": 0,
+      "needsCorrection": 0
+    },
+    "currentRunNote": "لم يُعد فحص محتويات الملفات الـ123 كاملة بعد تحديث Feed؛ أرقام المصالحة الكاملة أعلاه لقطة سابقة وليست تصنيفًا محدثًا."
+  },
+  "selectedNewsRevalidation": {
+    "sourceFile": "editorial/incoming/nabdh-news-2026-11-14-2056.json",
+    "originalCount": 8,
+    "exactCurrentFeed": 7,
+    "excludedFromImport": 1,
+    "retainedIds": [
+      "e2307d7e10d0392066",
+      "afe19bd014a42e97b9",
+      "22f7de6935dc23ea50",
+      "8b981141b76904904e",
+      "a2daa312bdf773c779",
+      "6fd244d2fe45a197cf",
+      "9b6607215c79a138b6"
+    ],
+    "pending": [
+      {
+        "id": "cdfd26896257823e51",
+        "url": "https://twitter.com/flightradar24/status/2121347654714077605",
+        "titleAr": "عطل اتصالات مراقبة الحركة الجوية يفرض إيقافًا وطنيًا مؤقتًا لإقلاع الرحلات الأمريكية",
+        "reason": "المعرف والرابط الأصليان غير موجودين في Feed الحالي؛ لم يُنشأ بديل ولم يثبت الانقضاء."
+      }
+    ]
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "seen": true,
+      "inFeed": false,
+      "inEditorial": false
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "seen": true,
+      "inFeed": false,
+      "inEditorial": false
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "seen": true,
+      "inFeed": false,
+      "inEditorial": false
+    }
+  ],
+  "projects": {
+    "feedProjects": 100,
+    "missingExactEditorial": 0,
+    "reviewedDossiers": 3,
+    "reviewedDossierIds": [
+      "fe0e6bfdbdd5822139",
+      "bf86da7f404b1d1c1f",
+      "6ea9e0fbab097163ee"
+    ],
+    "previousEight": {
+      "reviewed": 8,
+      "active": 8,
+      "archived": 0,
+      "lastMetricsAt": "2026-11-14T14:44:08+03:00"
+    },
+    "library": {
+      "published": 31,
+      "catalog": 73,
+      "active": 71,
+      "archived": 2
+    }
+  },
+  "execution": {
+    "localGitClone": "failed: DNS resolution unavailable",
+    "officialValidate": "not run locally",
+    "officialImport": "not run locally",
+    "unittest": "not run locally",
+    "structuralEquivalent": "passed for 968 existing + 7 retained entries"
+  },
+  "publication": {
+    "latestMainWorkflowRun": 180,
+    "runId": 43647611802,
+    "conclusion": "success",
+    "deployStep": "success",
+    "directPublishedJsonVerification": "unavailable: DNS/browser access failed"
+  },
+  "notes": [
+    "لم تُعدّل feed.json أو seen.json يدويًا.",
+    "لم تُعدّل الشيفرة أو التصميم أو workflows أو إعدادات النشر.",
+    "السجل المعلّق محفوظ بهويته الأصلية ولا يُستورد."
+  ]
+}
