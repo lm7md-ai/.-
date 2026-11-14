@@ -248,15 +248,26 @@
     "localUnitTests": "not_run",
     "structuralValidation": "passed",
     "structuralValidationEntries": 15,
-    "officialPrCheckBeforeRefresh": {
-      "run": 381,
-      "runId": 43549381773,
-      "headSha": "8a6de059d031e5f139a2d079f2466d33dda5dbf0",
+    "officialPrCheck": {
+      "workflow": "Validate Nabdh changes",
+      "run": 382,
+      "runId": 43592376419,
+      "headSha": "c13bf4d7ae6cad57d1fb04227c9d4bb0958ab95f",
       "status": "completed",
       "conclusion": "success",
-      "unitTestsPassed": 30,
-      "unitTestsFailed": 0,
-      "validatedEntries": 978
+      "unitTests": {
+        "command": "python -m unittest discover -s tests -v",
+        "passed": 30,
+        "failed": 0
+      },
+      "editorialValidation": {
+        "command": "python scripts/editorial.py validate",
+        "validatedEntries": 968
+      },
+      "javascriptChecks": {
+        "command": "node --check site/app.js && node --check site/ideas.js",
+        "conclusion": "success"
+      }
     }
   },
   "publish": {
