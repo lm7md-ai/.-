@@ -1,27 +1,30 @@
 {
   "schemaVersion": 1,
-  "reviewedAt": "2026-11-13T14:43:00+03:00",
+  "reviewedAt": "2026-11-14T03:15:29+03:00",
   "publicationStatus": "source-verified-pending-editorial-slot",
-  "note": "إعادة تحقق 14:43: أُغلق تصحيح مصدر Edge0 بعد إتاحة المقال الرسمي المنشور 12 نوفمبر 2026؛ السجل مطابق للتغذية الحالية لكنه لم يُثرَ ضمن حد 12 خبرًا. تقرير GitHub Availability بقي موثقًا كمصدر متحقق وغير مُثرى. لا تغيير للمعرفات أو feed.json أو seen.json.",
+  "note": "Updated after the 2026-11-14 03:15 audit: Edge0 is now enriched in PR #99 (not published); GitHub Availability remains active in Feed and is deferred by the 12-news cycle cap. No IDs or URLs were changed.",
   "records": [
     {
       "id": "4e10e32134f86500f7",
       "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
-      "status": "source-verified-not-enriched",
-      "reason": "المقال الرسمي متاح ومؤرخ 12 نوفمبر 2026؛ تعلن Edge0 إطلاق Edge0-145B وEdge0-120B وتذكر مواصفات 145B. لم يُضف إثراء لهذا السجل ضمن دفعة 12 خبرًا الحالية.",
-      "nextAction": "يُحتفظ بالمعرف والرابط كما هما؛ عند تخصيص موضع لاحق، استخدم basis=article وميّز بوضوح بين إطلاق الشركة وقياساتها الداخلية والتحقق المستقل.",
-      "verifiedAt": "2026-11-13T14:43:00+03:00",
+      "status": "enriched-in-pr-not-yet-published",
+      "reason": "The official Edge0 article is now enriched under the original ID/URL in PR #99; the article and model card distinguish company-reported benchmarks from independent testing.",
+      "nextAction": "Keep the original ID/URL. Wait for a safe merge path; do not treat the PR entry as published until the deployed public JSON is checked.",
+      "verifiedAt": "2026-11-14T03:15:29+03:00",
       "evidence": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
-      "limitations": "أرقام 29GB و80+ tokens/s ونتائج المعايير مصدرها اختبارات Edge0 الداخلية/المعلنة؛ لا تمثل تحققًا مستقلًا. المقارنات مع نماذج أخرى تعتمد على إعدادات مختلفة، وتقر الصفحة بأن بعض خطوط الأساس تقديرية. لا يعني ذلك أن النموذج يعمل على أي حاسوب."
+      "limitations": "أرقام 29GB و80+ tokens/s ونتائج المعايير مصدرها اختبارات Edge0 الداخلية/المعلنة؛ لا تمثل تحققًا مستقلًا. المقارنات مع نماذج أخرى تعتمد على إعدادات مختلفة، وتقر الصفحة بأن بعض خطوط الأساس تقديرية. لا يعني ذلك أن النموذج يعمل على أي حاسوب.",
+      "editorialBasis": "article",
+      "editorialLocation": "site/data/editorial.json",
+      "pullRequest": 99
     },
     {
       "id": "eaf76493fdb0b4bfce",
       "url": "https://github.blog/news-insights/company-news/github-availability-report-october-2026/",
-      "status": "source-verified-not-enriched",
+      "status": "source-verified-active-feed-deferred-by-cycle-limit",
       "verifiedAt": "2026-11-13T06:42:00+03:00",
-      "reason": "الصفحة الرسمية متاحة وتؤكد تقرير أكتوبر المنشور في 12 نوفمبر 2026 عن ثمانية حوادث وتغييرات السعة والاعتمادية. لم يُضف إثراء مستقل لهذا السجل ضمن دفعة الأخبار الاثني عشر الحالية.",
+      "reason": "The exact original ID/URL remains in current Feed but was not selected in this 12-news cycle. It is not expired and must not be recreated under another title-derived identity.",
       "evidence": "https://github.blog/news-insights/company-news/github-availability-report-october-2026/",
-      "nextAction": "يُحتفظ بالمعرف والرابط كما هما؛ يمكن إثراؤه في دورة لاحقة إذا توفر موضع ضمن حد الأخبار."
+      "nextAction": "Retain the original ID/URL and consider it in the next news queue if it remains in Feed; use basis=article only after reviewing the full official report."
     }
   ]
 }
