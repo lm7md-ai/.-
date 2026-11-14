@@ -1,7 +1,7 @@
 {
   "version": 1,
   "reviewedAt": "2026-11-14T05:45:45+03:00",
-  "mainSha": "cc5e9afbec33f9770925eac1a384ba7f9d9140ce",
+  "mainSha": "ce6dcf3cbeefba0172c5ba077a1145b00ed4a1fe",
   "feed": {
     "generatedAt": "2026-11-13T23:30:24+00:00",
     "total": 800,
@@ -119,8 +119,7 @@
     "editorialCount": 978,
     "newRecords": 10,
     "existingRecordsPreserved": true,
-    "headSha": "67233441881fa338024bb46be7fe75b7f34495ef",
-    "nextCommitExpected": true
+    "headSha": "3859d69ca2a5164d98ddaebdc793a51914e48669"
   },
   "protectedFiles": {
     "feedJson": "untouched",
@@ -169,6 +168,13 @@
     "prNotMerged": true,
     "publicEditorialUrl": "https://lm7md-ai.github.io/.-/data/editorial.json",
     "publicUrlVerification": "not_verified; web fetch returned DisabledError and GitHub connector does not support GitHub Pages host",
-    "claim": "Do not claim the 10 new records are published."
-  }
+    "claim": "Do not claim the 10 new records are published.",
+    "mainSha": "ce6dcf3cbeefba0172c5ba077a1145b00ed4a1fe",
+    "prBaseSha": "cc5e9afbec33f9770925eac1a384ba7f9d9140ce",
+    "prHeadSha": "3859d69ca2a5164d98ddaebdc793a51914e48669",
+    "mainEditorialCount": 953,
+    "prMerged": false
+  },
+  "prBaseSha": "cc5e9afbec33f9770925eac1a384ba7f9d9140ce",
+  "prBehindMain": 3
 }
