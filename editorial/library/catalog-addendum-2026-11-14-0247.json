@@ -1,0 +1,361 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-14T02:47:48+03:00",
+  "previousTotal": 72,
+  "newTotal": 73,
+  "active": 71,
+  "archived": 2,
+  "projectFeedMembers": 17,
+  "outsideCurrentFeed": 56,
+  "unverifiedMembership": 1,
+  "licensesNeedingUpstreamVerification": 10,
+  "added": {
+    "id": "b1b1542da472edd249",
+    "name": "Cherry Studio",
+    "url": "https://github.com/CherryHQ/cherry-studio",
+    "status": "active",
+    "archived": false,
+    "license": "AGPL-3.0",
+    "metrics": {
+      "stars": 53490,
+      "forks": 5220,
+      "measuredAt": "2026-11-14T02:47:48+03:00",
+      "pushedAt": "2026-11-13T23:50:50Z",
+      "updatedAt": "2026-11-13T23:32:07Z"
+    },
+    "latestRelease": {
+      "tag": "v2.2.2",
+      "publishedAt": "2026-11-13T16:04:27Z",
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v2.2.2"
+    },
+    "overview": "Cherry Studio تطبيق Electron/TypeScript متعدد المنصات لإدارة مزودي النماذج والمحادثات، وتبديل النماذج، وبناء وكلاء بمهارات وأدوات، وربط MCP، وإنشاء قواعد معرفة محلية، وتوليد الصور، واستخدام قنوات وواجهات مساعدة. يتيح ربط مزودات سحابية أو تشغيل نماذج محلية عبر Ollama وLM Studio. يدعم أيضًا بوابة API وميزات تنظيمية؛ ينبغي التفريق بين إصدار المجتمع والميزات التي تتطلب خدمات أو ترتيبات تجارية.",
+    "requirements": "التطبيق متاح لسطح المكتب على Windows وmacOS وLinux، مع حزم x64 وARM64. لم أجد حدًا أدنى رسميًا موحدًا للذاكرة أو المعالج؛ الاحتياج يتغير حسب النموذج المحلي. للمزود السحابي تحتاج حسابًا ومفتاح API؛ وللنموذج المحلي تحتاج محركًا مثل Ollama أو LM Studio ومساحة تنزيل وRAM/GPU تناسب حجم النموذج. للمطورين: Node.js بالإصدار المحدد في ملفات المشروع وpnpm عبر Corepack.",
+    "quickStart": "1) نزّل إصدار سطح المكتب المطابق لنظامك من صفحة الإصدارات. 2) افتح Settings ثم Model Provider واختر المزود. 3) أضف مفتاح API أو اربط Ollama/LM Studio. 4) حدّث قائمة النماذج وفعّل النموذج. 5) ابدأ محادثة وجرب قاعدة معرفة صغيرة على ملفات غير حساسة. 6) عند تجربة الوكلاء أو MCP ابدأ بأدوات قراءة فقط وراجع صلاحيات الملفات والشبكة.",
+    "costs": "التطبيق المكتبي لا يتطلب خادمًا ذاتيًا للاستخدام الأساسي. التكاليف المتغيرة تأتي من استدعاءات مزودي النماذج والخدمات المدمجة، أو من الجهاز والتخزين والطاقة عند تشغيل نماذج محلية. لا أفترض أن كل خدمة مدمجة مجانية أو بلا حدود؛ راجع أسعارها وشروطها وقت الاستخدام.",
+    "localVsCloud": {
+      "local": "يدعم Ollama وLM Studio؛ التكاليف عتاد وتخزين وطاقة.",
+      "cloud": "مزودات API بمفاتيح المستخدم؛ الاتصالات مباشرة للمزود، والخدمات المدمجة تمرر الطلب عبر خدمة Cherry Studio."
+    },
+    "privacy": "الحد الأدنى للعتاد غير محدد رسميًا. سياسة الخصوصية تقول إن مفاتيح API والمحادثات والإعدادات تحفظ محليًا افتراضيًا، وإن الاتصال بالمزود الذي تضبطه يتم مباشرة؛ أما الخدمات المدمجة فتمرر الطلب الحالي عبر خدمة Cherry Studio إلى المزود upstream. تجمع السياسة بيانات تشغيلية مجهولة ويمكن تعطيل خياراتها من إعدادات الخصوصية. الترخيص AGPL-3.0 ويحتاج مراجعة قبل توزيع نسخة معدلة أو تقديمها عبر الشبكة. لم أشغّل التطبيق؛ testStatus=not_run.",
+    "alternatives": "بدائل للمقارنة: Open WebUI لواجهة ويب ذاتية الاستضافة وارتباط قوي بـOllama، وLibreChat لواجهة متعددة المزودين مع وكلاء وMCP، وJan لتجربة محلية تعمل دون اتصال. تختلف متطلبات النشر والترخيص والميزات بينها.",
+    "testStatus": "not_run",
+    "testEvidence": null,
+    "sources": [
+      {
+        "title": "Cherry Studio repository and README",
+        "url": "https://github.com/CherryHQ/cherry-studio"
+      },
+      {
+        "title": "Cherry Studio v2.2.2 release",
+        "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v2.2.2"
+      },
+      {
+        "title": "Cherry Studio AGPL-3.0 license",
+        "url": "https://github.com/CherryHQ/cherry-studio/blob/main/LICENSE"
+      },
+      {
+        "title": "Cherry Studio privacy policy",
+        "url": "https://github.com/CherryHQ/cherry-studio/blob/main/PRIVACY.md"
+      },
+      {
+        "title": "Cherry Studio quick start",
+        "url": "https://cherryai.com/docs/en/getting-started/quick-start/"
+      },
+      {
+        "title": "Open WebUI alternative",
+        "url": "https://github.com/open-webui/open-webui"
+      },
+      {
+        "title": "LibreChat alternative",
+        "url": "https://github.com/LibreChat-AI/LibreChat"
+      },
+      {
+        "title": "Jan alternative",
+        "url": "https://github.com/janhq/jan"
+      }
+    ],
+    "improvements": [
+      {
+        "title": "لوحة شفافة لمسار البيانات لكل مزود",
+        "problem": "يصعب تمييز ما يبقى محليًا وما يمر عبر خدمة مدمجة أو مزود خارجي.",
+        "approach": "صفحة لكل مزود تعرض وجهة الطلب وأنواع البيانات وموضع تخزين المفاتيح والقياس عن بعد وسياسة الاحتفاظ.",
+        "stack": "TypeScript، React، Electron، SQLite، Vitest.",
+        "steps": [
+          "جرد مسارات الاتصال.",
+          "ربط كل ميزة بمزودها.",
+          "إنشاء مخطط محلي/خارجي.",
+          "إظهار تحذير قبل الخدمات المدمجة.",
+          "اختبار اكتمال وصف الخصوصية."
+        ],
+        "metric": "توثيق 100% من تكاملات البيانات.",
+        "difficulty": "متوسط إلى مرتفع (تقدير)",
+        "risks": "قد تصبح المعلومات قديمة مع تغير الخدمات.",
+        "sources": [
+          {
+            "title": "Privacy policy",
+            "url": "https://github.com/CherryHQ/cherry-studio/blob/main/PRIVACY.md"
+          },
+          {
+            "title": "Repository",
+            "url": "https://github.com/CherryHQ/cherry-studio"
+          }
+        ]
+      },
+      {
+        "title": "صلاحيات مؤقتة ومحددة لأدوات الوكلاء",
+        "problem": "قد تطلب الأدوات صلاحيات ملفات أو شبكة أوسع من المهمة.",
+        "approach": "نطاقات قراءة/كتابة منفصلة وموافقة لكل فعل حساس وانتهاء تلقائي للتفويض وسجل مراجعة.",
+        "stack": "TypeScript، Electron IPC، MCP، SQLite.",
+        "steps": [
+          "تعريف scopes.",
+          "ربط كل أداة بأقل صلاحية.",
+          "عرض الملفات المتأثرة قبل الموافقة.",
+          "جعل الموافقة مؤقتة وقابلة للإلغاء.",
+          "تسجيل كل استدعاء.",
+          "اختبار رفض الاستدعاء خارج النطاق."
+        ],
+        "metric": "حظر 100% من الاستدعاءات خارج النطاق في مجموعة الاختبار.",
+        "difficulty": "مرتفع (تقدير)",
+        "risks": "زيادة الاحتكاك أو كسر أدوات تعتمد صلاحيات واسعة.",
+        "sources": [
+          {
+            "title": "Repository",
+            "url": "https://github.com/CherryHQ/cherry-studio"
+          },
+          {
+            "title": "Quick start",
+            "url": "https://cherryai.com/docs/en/getting-started/quick-start/"
+          }
+        ]
+      },
+      {
+        "title": "مختبر مقارنة موحد للنماذج",
+        "problem": "المقارنة اليدوية لا تنتج قياسات قابلة لإعادة الإنتاج.",
+        "approach": "تشغيل prompts ثابتة وتسجيل latency وtokens والتكلفة ونتائج تقييم منفصلة.",
+        "stack": "TypeScript، SQLite، Vitest، JSON/CSV.",
+        "steps": [
+          "إنشاء مجموعة اختبار موسومة.",
+          "تثبيت إعدادات النماذج.",
+          "تشغيل المدخلات نفسها.",
+          "حفظ الزمن والرموز والتكلفة.",
+          "فصل التقييم الآلي عن البشري."
+        ],
+        "metric": "إعادة إنتاج 100% من النتائج عند تثبيت الإعدادات.",
+        "difficulty": "متوسط (تقدير)",
+        "risks": "اختلاف أسعار المزودين وتحيز التقييم الآلي.",
+        "sources": [
+          {
+            "title": "Repository",
+            "url": "https://github.com/CherryHQ/cherry-studio"
+          },
+          {
+            "title": "v2.2.2 release",
+            "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v2.2.2"
+          }
+        ]
+      }
+    ],
+    "spinoffs": [
+      {
+        "title": "مكتبة دراسة محلية بإحالات قابلة للتحقق",
+        "problem": "تضيع إحالات الصفحات عند تلخيص ملفات PDF وDOCX.",
+        "approach": "فهرسة محلية تحفظ المقطع واسم الملف ورقم الصفحة مع كل إجابة.",
+        "stack": "Electron/React، SQLite، OCR، نموذج محلي.",
+        "steps": [
+          "استيراد ملفات تجريبية.",
+          "استخراج النص ورقم الصفحة.",
+          "إنشاء فهرس محلي.",
+          "إظهار الإجابة مع إحالات.",
+          "مراجعة عينة يدويًا."
+        ],
+        "metric": "دقة الإحالات واسترجاع المقاطع.",
+        "difficulty": "متوسط (تقدير)",
+        "risks": "أخطاء OCR ورداءة الملفات.",
+        "sources": [
+          {
+            "title": "Repository",
+            "url": "https://github.com/CherryHQ/cherry-studio"
+          },
+          {
+            "title": "Privacy policy",
+            "url": "https://github.com/CherryHQ/cherry-studio/blob/main/PRIVACY.md"
+          }
+        ]
+      },
+      {
+        "title": "مساعد بحث عربي يسجل قوة الدليل",
+        "problem": "تختلط تصريحات الجهات بالتحليل والنتائج المستقلة.",
+        "approach": "حفظ المصدر وتاريخ المراجعة وتصنيف نوع الدليل وربط كل ادعاء بإحالة.",
+        "stack": "TypeScript، MCP read-only، SQLite، بحث.",
+        "steps": [
+          "تعريف مخطط المصدر والادعاء.",
+          "استيراد روابط محددة.",
+          "حفظ مقتطف وإحالة.",
+          "تمييز الحقائق والمزاعم والتحليل.",
+          "إظهار التعارضات والنواقص."
+        ],
+        "metric": "نسبة الادعاءات المرتبطة بمصدر مباشر.",
+        "difficulty": "متوسط إلى مرتفع (تقدير)",
+        "risks": "حقوق النشر وتغير الروابط والمصادر المغلقة.",
+        "sources": [
+          {
+            "title": "Repository",
+            "url": "https://github.com/CherryHQ/cherry-studio"
+          },
+          {
+            "title": "Decisions API",
+            "url": "https://docs.perplexity.ai/docs/decisions/quickstart"
+          }
+        ]
+      }
+    ],
+    "religious": [
+      {
+        "title": "فهرس حديثي للبحث والإحالة دون توليد فتاوى",
+        "problem": "قد يظهر النص دون تحديد الكتاب والباب ورقم الحديث.",
+        "approach": "خدمة قراءة فقط تستخدم واجهة Sunnah.com وتعرض النص والمرجع الأصلي دون إعادة صياغة حكم أو توليد فتوى.",
+        "stack": "MCP server، FastAPI/Node.js، SQLite، Sunnah.com API.",
+        "steps": [
+          "طلب مفتاح API الرسمي.",
+          "إنشاء أداة بحث قراءة فقط.",
+          "حفظ المجموعة والكتاب والرقم والرابط.",
+          "عرض النص مع بيانات المصدر.",
+          "وسم البيانات غير المكتملة.",
+          "مراجعة عينة يدويًا."
+        ],
+        "metric": "100% من النتائج تحمل مرجعًا مباشرًا.",
+        "difficulty": "متوسط (تقدير)",
+        "risks": "تغطية API غير كاملة ويلزم احترام الشروط وعدم توليد فتاوى.",
+        "sources": [
+          {
+            "title": "Sunnah.com API",
+            "url": "https://sunnah.com/developers"
+          },
+          {
+            "title": "Cherry Studio",
+            "url": "https://github.com/CherryHQ/cherry-studio"
+          }
+        ]
+      }
+    ]
+  },
+  "previousEight": {
+    "measuredAt": "2026-11-14T02:47:48+03:00",
+    "projects": [
+      {
+        "name": "AI Engineering Hub",
+        "repo": "patchy631/ai-engineering-hub",
+        "stars": 41833,
+        "forks": 6682,
+        "openIssues": 137,
+        "archived": false,
+        "license": "MIT",
+        "pushedAt": "2026-11-01T14:20:04Z",
+        "updatedAt": "2026-11-13T18:21:02Z",
+        "inFeed": true,
+        "feedId": "fe0e6bfdbdd5822139",
+        "inEditorial": true,
+        "editorialId": "fe0e6bfdbdd5822139"
+      },
+      {
+        "name": "Google Gen AI SDK",
+        "repo": "googleapis/python-genai",
+        "stars": 4069,
+        "forks": 1066,
+        "openIssues": 400,
+        "archived": false,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-11-13T23:56:01Z",
+        "updatedAt": "2026-11-13T17:41:52Z",
+        "inFeed": false,
+        "inEditorial": false
+      },
+      {
+        "name": "Lasm",
+        "repo": "Millillion/lasm",
+        "stars": 105,
+        "forks": 7,
+        "openIssues": 15,
+        "archived": false,
+        "license": "MIT",
+        "pushedAt": "2026-11-13T18:02:43Z",
+        "updatedAt": "2026-11-12T16:10:00Z",
+        "inFeed": false,
+        "inEditorial": false
+      },
+      {
+        "name": "MarkItDown",
+        "repo": "microsoft/markitdown",
+        "stars": 195250,
+        "forks": 14738,
+        "openIssues": 811,
+        "archived": false,
+        "license": "MIT",
+        "pushedAt": "2026-11-07T00:14:12Z",
+        "updatedAt": "2026-11-13T23:46:05Z",
+        "inFeed": false,
+        "inEditorial": false
+      },
+      {
+        "name": "Minecraft Agent Harness",
+        "repo": "yc-software/minecraft-agent-harness",
+        "stars": 215,
+        "forks": 30,
+        "openIssues": 1,
+        "archived": false,
+        "license": "MIT",
+        "pushedAt": "2026-10-29T20:30:42Z",
+        "updatedAt": "2026-11-13T19:39:18Z",
+        "inFeed": false,
+        "inEditorial": false
+      },
+      {
+        "name": "NVIDIA OpenShell",
+        "repo": "NVIDIA/OpenShell",
+        "stars": 21584,
+        "forks": 2104,
+        "openIssues": 665,
+        "archived": false,
+        "license": "Apache-2.0",
+        "pushedAt": "2026-11-13T23:51:02Z",
+        "updatedAt": "2026-11-13T23:50:37Z",
+        "inFeed": false,
+        "inEditorial": false
+      },
+      {
+        "name": "Pydantic AI",
+        "repo": "pydantic/pydantic-ai",
+        "stars": 21195,
+        "forks": 3167,
+        "openIssues": 1965,
+        "archived": false,
+        "license": "MIT",
+        "pushedAt": "2026-11-13T23:40:18Z",
+        "updatedAt": "2026-11-13T23:32:14Z",
+        "inFeed": false,
+        "inEditorial": false
+      },
+      {
+        "name": "uv",
+        "repo": "astral-sh/uv",
+        "stars": 91975,
+        "forks": 3811,
+        "openIssues": 3075,
+        "archived": false,
+        "license": "MIT AND Apache-2.0 (GitHub API identifies Apache-2.0)",
+        "pushedAt": "2026-11-13T23:42:55Z",
+        "updatedAt": "2026-11-13T23:35:29Z",
+        "inFeed": false,
+        "inEditorial": true,
+        "editorialId": "30e283a9b3f70e35d8"
+      }
+    ],
+    "summary": {
+      "total": 8,
+      "active": 8,
+      "archived": 0,
+      "inFeed": 1,
+      "inEditorial": 2
+    }
+  }
+}
