@@ -118,7 +118,9 @@
   "prAfter": {
     "editorialCount": 978,
     "newRecords": 10,
-    "existingRecordsPreserved": true
+    "existingRecordsPreserved": true,
+    "headSha": "67233441881fa338024bb46be7fe75b7f34495ef",
+    "nextCommitExpected": true
   },
   "protectedFiles": {
     "feedJson": "untouched",
@@ -134,6 +136,39 @@
     "localValidate": "not_run",
     "localImport": "not_run",
     "localUnitTests": "not_run",
-    "structuralValidation": "passed"
+    "structuralValidation": "passed",
+    "prCheck": {
+      "workflow": "Validate Nabdh changes",
+      "run": 377,
+      "runId": 43548910991,
+      "headSha": "67233441881fa338024bb46be7fe75b7f34495ef",
+      "status": "completed",
+      "conclusion": "success",
+      "unitTests": {
+        "command": "python -m unittest discover -s tests -v",
+        "passed": 30,
+        "failed": 0
+      },
+      "editorialValidation": {
+        "command": "python scripts/editorial.py validate",
+        "validatedEntries": 978
+      },
+      "javascriptChecks": {
+        "command": "node --check site/app.js && node --check site/ideas.js",
+        "conclusion": "success"
+      }
+    },
+    "localCloneError": "Could not resolve host: github.com"
+  },
+  "publish": {
+    "mainDeployRun": 176,
+    "runId": 43527578243,
+    "conclusion": "success",
+    "publishedMainEditorialCount": 953,
+    "prEditorialCount": 978,
+    "prNotMerged": true,
+    "publicEditorialUrl": "https://lm7md-ai.github.io/.-/data/editorial.json",
+    "publicUrlVerification": "not_verified; web fetch returned DisabledError and GitHub connector does not support GitHub Pages host",
+    "claim": "Do not claim the 10 new records are published."
   }
 }
