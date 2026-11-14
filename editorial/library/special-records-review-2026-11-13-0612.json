@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "research-only",
+  "reviewedAt": "2026-11-13T14:43:00+03:00",
+  "note": "مراجعة إضافية في 14:43: تمت مطابقة id وurl حرفيًا مع main؛ السجلات الثلاثة ما تزال Seen-only ولا تُستورد. صُححت حالة Canva MCP استنادًا إلى إعلان GA الرسمي المؤرخ 2026-10-27. لم تُنشأ هويات بديلة.",
+  "records": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "inSeen": true,
+      "inFeed": false,
+      "inEditorial": false,
+      "status": "research-only",
+      "license": "Apache-2.0",
+      "archived": false,
+      "latestRelease": {
+        "tag": "v0.1.8",
+        "publishedAt": "2026-11-10T18:14:42Z",
+        "url": "https://github.com/NVIDIA/OpenShell/releases/tag/v0.1.8"
+      },
+      "repositorySnapshot": {
+        "stars": 21526,
+        "forks": 2103,
+        "pushedAt": "2026-11-13T02:36:58Z",
+        "measuredAt": "2026-11-13T06:12:00+03:00"
+      },
+      "documentationNotes": "README يذكر انتقال التطوير إلى ai-openshell وحوكمة CNCF قيد التنفيذ؛ لا يُعرض الانتقال كأنه اكتمل. أحدث إصدار مستقر v0.1.8، مع dev prerelease 0.1.9-dev.23. توجد تغييرات ترقية تمس credentials وWebSocket وOCSF وSDKs.",
+      "testStatus": "not_run",
+      "sources": [
+        {
+          "title": "Official repository and README",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        },
+        {
+          "title": "GitHub Releases",
+          "url": "https://github.com/NVIDIA/OpenShell/releases"
+        },
+        {
+          "title": "Official installation docs",
+          "url": "https://docs.nvidia.com/openshell/latest/about/installation"
+        },
+        {
+          "title": "Apache-2.0 license",
+          "url": "https://github.com/NVIDIA/OpenShell/blob/main/LICENSE"
+        }
+      ],
+      "latestPrerelease": {
+        "tag": "dev",
+        "assetVersion": "0.1.9-dev.23",
+        "createdAt": "2026-11-12T23:45:09Z",
+        "url": "https://github.com/NVIDIA/OpenShell/releases/tag/dev",
+        "note": "معاينة تطويرية وليست إصدارًا مستقرًا."
+      },
+      "developmentTransition": "README الحالي يذكر أن OpenShell أصبح ضمن CNCF وأن نقل التطوير إلى ai-openshell والحوكمة ما زالا قيد التنفيذ؛ يظل NVIDIA/OpenShell المستودع المرجعي للكود والقضايا حتى اكتمال النقل."
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "url": "https://www.canva.com/newsroom/news/canva-craft/",
+      "inSeen": true,
+      "inFeed": false,
+      "inEditorial": false,
+      "status": "seen-only-research",
+      "apiStatus": "متاح الآن للمطورين عبر public API؛ Canva تقول إن Craft ينتج صورًا حتى 2K مع مخرجات قابلة للتحرير (ادعاء الشركة).",
+      "mcpStatus": "Canva MCP متاح عمومًا منذ 2026-10-27 وفق مدونة المطورين الرسمية؛ يمكن تفعيله من Developer Portal وربطه بالخادم البعيد عبر OAuth. كل مستخدم يصادق بحسابه؛ لا يدعم مصادقة المؤسسة أو service accounts.",
+      "limitations": "يبقى السجل Seen-only لأن id والرابط الأصليين غير موجودين في Feed الحالي أو Editorial؛ لا يُستورد. لا تساوِ بين Craft model API وكل أدوات Canva MCP؛ تحقّق من النطاقات والميزات المتاحة في Developer Portal قبل نسبة كل قدرات Craft إلى MCP.",
+      "sources": [
+        {
+          "title": "Canva newsroom — Canva Craft",
+          "url": "https://www.canva.com/newsroom/news/canva-craft/"
+        },
+        {
+          "title": "Canva Craft API and MCP availability",
+          "url": "https://www.canva.com/ai-research/craft-api/"
+        },
+        {
+          "title": "Canva Developers Blog — Canva MCP generally available (2026-10-27)",
+          "url": "https://www.canva.dev/blog/developers/canva-mcp-ga/"
+        }
+      ]
+    },
+    {
+      "name": "1Password for Agents",
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "inSeen": true,
+      "inFeed": false,
+      "inEditorial": false,
+      "status": "seen-only-research",
+      "productStatus": "launched",
+      "eligibility": "حساب Individual أو Family على 1Password.com فقط؛ Team وBusiness و1Password.ca و1Password.eu غير مدعومة حاليًا بحسب صفحة الدعم.",
+      "securityNotes": "الميزة opt-in؛ كل طلب وصول يحتاج موافقة المستخدم في 1Password ولا يستطيع الوكيل الموافقة بنفسه. بعد الموافقة يمكن إعادة استخدام العنصر حتى 30 يومًا. تعبئة البيانات تتم خارج رؤية الوكيل، لكن الموقع ومطور الوكيل يظلان ضمن حدود الثقة.",
+      "sources": [
+        {
+          "title": "1Password press release — 1Password for Agents",
+          "url": "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents"
+        },
+        {
+          "title": "1Password support — Use 1Password to sign in to sites with supported agents",
+          "url": "https://support.1password.com/1password-for-agents/"
+        },
+        {
+          "title": "1Password support — Security model for 1Password for Agents",
+          "url": "https://support.1password.com/1password-for-agents-security/"
+        }
+      ],
+      "originalFeedTitle": "1Password تعرض تفويض دخول للوكلاء دون إظهار كلمات المرور",
+      "officialPressRelease": "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents",
+      "identityCorrectionAt": "2026-11-13T23:43:30+03:00",
+      "identityNote": "حقل url هو الرابط الأصلي المرتبط بالمعرف في Feed/Seen؛ البيان الصحفي الرسمي مرجع مستقل في sources، ولا يُستبدل به رابط الهوية."
+    }
+  ]
+}

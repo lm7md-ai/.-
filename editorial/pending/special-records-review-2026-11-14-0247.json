@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-14T02:47:48+03:00",
+  "membership": {
+    "allThreeExactIdsInSeen": true,
+    "allThreeExactIdsInCurrentFeed": false,
+    "allThreeExactIdsInMainEditorial": false,
+    "noCurrentFeedTitleMatch": true,
+    "decision": "keep_seen_only_no_import_no_title_based_replacement"
+  },
+  "records": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "membership": {
+        "seen": true,
+        "feed": false,
+        "editorial": false
+      },
+      "officialStatus": {
+        "repository": "NVIDIA/OpenShell remains the repository to use for code, issues and pull requests until the transfer is complete",
+        "transfer": "The ai-openshell GitHub organization exists and its notice says OpenShell is moving there; the move is explicitly still in progress",
+        "latestStableRelease": "v0.1.8",
+        "license": "Apache-2.0",
+        "stars": 21584,
+        "forks": 2104,
+        "pushedAt": "2026-11-13T23:51:02Z",
+        "archived": false
+      },
+      "decision": "Do not import: exact ID/URL absent from current Feed. Keep Seen-only; do not create a replacement ID.",
+      "sources": [
+        {
+          "title": "NVIDIA OpenShell repository",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        },
+        {
+          "title": "ai-openshell organization migration notice",
+          "url": "https://github.com/ai-openshell"
+        },
+        {
+          "title": "NVIDIA OpenShell releases",
+          "url": "https://github.com/NVIDIA/OpenShell/releases"
+        }
+      ]
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "membership": {
+        "seen": true,
+        "feed": false,
+        "editorial": false
+      },
+      "officialStatus": {
+        "craft": "Canva Craft is its first-party image-generation model, currently exposed as craft_v1_2k through the preview Image Generation API. It requires OAuth on behalf of the user, asset:write scope and the image_generation capability; each generation consumes the user's AI credit allowance.",
+        "previewLimits": "The API is explicitly in preview; apps using it cannot pass public-app review or be made available to all Canva users.",
+        "mcpDistinction": "Canva MCP is a separate integration. Its developer announcement dated 2026-10-27 says it can be enabled in the Developer Portal using a per-user OAuth client; service-account authentication is not supported. Some capabilities require a paid Canva plan."
+      },
+      "decision": "Do not import: exact ID/URL absent from current Feed. Keep Seen-only; do not create a replacement ID. Do not conflate the Craft image-generation preview API with the separate Canva MCP server.",
+      "sources": [
+        {
+          "title": "Canva Craft image-generation API preview",
+          "url": "https://www.canva.dev/blog/developers/image-gen-with-craft/"
+        },
+        {
+          "title": "Canva MCP general availability announcement",
+          "url": "https://www.canva.dev/blog/developers/canva-mcp-ga/"
+        },
+        {
+          "title": "Original TechCrunch article",
+          "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/"
+        }
+      ]
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "membership": {
+        "seen": true,
+        "feed": false,
+        "editorial": false
+      },
+      "officialStatus": {
+        "availability": "Opt-in feature for Individual and Family accounts on 1Password.com; Teams/Business and 1Password.ca/.eu are not currently supported.",
+        "requirement": "1Password app version 8.12.42 or later on the same device; currently supported agents are listed in the official support article.",
+        "authorization": "The user approves each new item request; the agent cannot approve its own request. An approved item can be reused for up to 30 days and access can be revoked.",
+        "boundary": "1Password fills and submits the sign-in form outside the agent's view. After sign-in, the website session is governed by the agent; 1Password's guarantees do not cover the agent's later actions on the website."
+      },
+      "decision": "Do not import: exact ID/URL absent from current Feed. Keep Seen-only; do not create a replacement ID.",
+      "sources": [
+        {
+          "title": "1Password for Agents support",
+          "url": "https://support.1password.com/1password-for-agents/"
+        },
+        {
+          "title": "1Password for Agents security model",
+          "url": "https://support.1password.com/1password-for-agents-security/"
+        },
+        {
+          "title": "Original TechCrunch article",
+          "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/"
+        }
+      ]
+    }
+  ]
+}

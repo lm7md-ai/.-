@@ -1,0 +1,269 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "research-only-pending-reconciliation",
+  "reviewedAt": "2026-11-13T14:43:00+03:00",
+  "basis": "GitHub compare API: base cc5e9afbec33f9770925eac1a384ba7f9d9140ce to current main 9b9d6196a5a6e5cf3231d2d33904a7d9067889e6",
+  "incomingInventory": {
+    "files": 117,
+    "unchangedSinceBase": true,
+    "previousAuditFile": "editorial/pending/post-refresh-review-2026-11-13-0306.json",
+    "previousAudit": {
+      "occurrences": 1194,
+      "exactIdUrlMatchesToEditorial": 1084,
+      "seenOnlyOccurrences": 110,
+      "seenOnlyUniqueIds": 22,
+      "idUrlConflicts": 0,
+      "unknownUniqueIds": 0,
+      "feedMatchesAtAuditTime": 262
+    }
+  },
+  "feedTransition": {
+    "before": {
+      "generatedAt": "2026-11-13T00:28:42+00:00",
+      "items": 800
+    },
+    "after": {
+      "generatedAt": "2026-11-13T06:40:54+00:00",
+      "items": 800
+    },
+    "addedCount": 22,
+    "removedCount": 22,
+    "added": [
+      {
+        "id": "6cfe21829f74261bd8",
+        "url": "https://github.com/KoljaB/RealtimeVAD"
+      },
+      {
+        "id": "4ef8117d287ed25165",
+        "url": "https://geekspin.co/scientists-claim-the-universe-is-twice-as-old-as-believed/"
+      },
+      {
+        "id": "9f98adef35eb8c7968",
+        "url": "https://github.com/pharma2a/pharma2a"
+      },
+      {
+        "id": "ad5b7a69d99c0bb70e",
+        "url": "https://www.tech-wd.com/wd/2026/11/13/%d8%a5%d9%8a%d9%84%d9%88%d9%86-%d9%85%d8%a7%d8%b3%d9%83-%d9%8a%d8%b5%d9%81-%d8%aa%d9%88%d8%b8%d9%8a%d9%81-%d8%ac%d9%8a%d9%86%d8%b3%d9%86-%d9%87%d9%88%d8%a7%d9%86%d8%ba-%d8%a8%d9%80%d8%a7%d9%84%d8%b4/"
+      },
+      {
+        "id": "ae37e2cbf1825676af",
+        "url": "https://www.tech-wd.com/wd/2026/11/13/%d8%aa%d9%82%d8%b1%d9%8a%d8%b1-%d8%a3%d9%85%d8%b1%d9%8a%d9%83%d8%a7-%d9%82%d8%af-%d8%aa%d9%86%d8%aa%d8%ac-400-%d8%a3%d9%84%d9%81-%d8%b1%d9%88%d8%a8%d9%88%d8%aa-%d8%a8%d8%b4%d8%b1%d9%8a-%d8%b3%d9%86/"
+      },
+      {
+        "id": "326ccdf6ede86bc454",
+        "url": "https://www.tech-wd.com/wd/2026/11/13/%d9%85%d8%b3%d8%aa%d8%ae%d8%af%d9%85%d9%88-fitbit-air-%d9%8a%d9%88%d8%a7%d8%ac%d9%87%d9%88%d9%86-%d9%85%d8%b4%d8%a7%d9%83%d9%84-%d8%aa%d8%b2%d8%a7%d9%85%d9%86-%d9%85%d8%b9-google-health-%d8%b9%d9%84/"
+      },
+      {
+        "id": "d0dbe3ad3973b6d17a",
+        "url": "https://www.tech-wd.com/wd/2026/11/13/%d9%87%d9%88%d8%a7%d9%88%d9%8a-%d8%aa%d8%b7%d9%84%d9%82-%d8%a5%d8%b5%d8%af%d8%a7%d8%b1-mate-xt-2-%d8%a8%d8%b3%d8%b9%d8%a9-512-%d8%ac%d9%8a%d8%ac%d8%a7%d8%a8%d8%a7%d9%8a%d8%aa-%d9%85%d8%b9-%d8%b4%d8%a7/"
+      },
+      {
+        "id": "3421367f183dde6dd1",
+        "url": "https://www.wired.com/story/gametime-promo-code/"
+      },
+      {
+        "id": "bfb4a56914eab186d8",
+        "url": "https://www.wired.com/story/instacart-promo/code/"
+      },
+      {
+        "id": "d9601177afc3d7bb77",
+        "url": "https://www.wired.com/story/western-digital-promo-code/"
+      },
+      {
+        "id": "608eea89a0f498870d",
+        "url": "https://www.wired.com/story/logitech-promo-code/"
+      },
+      {
+        "id": "3fffa1d94b5b03e2e2",
+        "url": "https://www.wired.com/story/chatbooks-promo-code/"
+      },
+      {
+        "id": "f100f56dfc993b043d",
+        "url": "https://www.tech-wd.com/wd/2026/11/13/%d8%aa%d8%b3%d8%b1%d9%8a%d8%a8-%d8%b5%d9%88%d8%b1%d8%a9-%d9%84%d9%87%d8%a7%d8%aa%d9%81-huawei-mate-x8-%d8%aa%d9%83%d8%b4%d9%81-%d8%b9%d9%88%d8%af%d8%a9-%d9%88%d8%ad%d8%af%d8%a9-%d8%a7%d9%84%d9%83/"
+      },
+      {
+        "id": "5e4989a4dbcb32b875",
+        "url": "https://aitnews.com/2026/11/13/%d8%b9%d8%b7%d9%84-%d9%85%d8%a7%d9%8a%d9%83%d8%b1%d9%88%d8%b3%d9%88%d9%81%d8%aa-365/"
+      },
+      {
+        "id": "7d226533f769fbf1fe",
+        "url": "https://www.bbc.co.uk/news/articles/c5gm3g9ldz8xo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "id": "6528d4a52185299b44",
+        "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/"
+      },
+      {
+        "id": "510287d4bd35344c61",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5MakhiYWh6ZmRKQ2hUSkd2eDdaYWl4R180d09jRFpTNTRKOFNTdDFKa1F6Q04wekRHUHVkemdwbl9QVmk1NEpjM2g1RFZ5bHZKbEF2azNRdEctamhL?oc=5"
+      },
+      {
+        "id": "a33c16c8e7593e792b",
+        "url": "https://www.theverge.com/tech/1032774/president-donald-trump-tim-cook-nvidia-jensen-huang"
+      },
+      {
+        "id": "caf2869d4cab0612ad",
+        "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5WZGRHSXVZSzMwWXMzU190WVNFc05OU243TE51QWtOMnFoODBfaF9xbDZRRTMzc21oanFHbkkwemp3R0lnUWFz?oc=5"
+      },
+      {
+        "id": "fc0539be73bdd125b0",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNbnlqelBIT1ZXblFBa25zdHlXalhPR2Z2b2xLZ2lmeEtFbUFXS3Mya3FtU0tyeGJrOXpHVEJOdFpDVUZSUTVOUHA0WjRiakw2a2hIRzc3ZHBfM3pDT3dKTDdfMExNQ2FnU1NWSHI3UGpXX2lVSEUxeVYwb2FfNE5vRGJnMjhWSzU5WkFrdmtOdW5Fb0lja1dFN3JUMkQ5R01JRXhNUA?oc=5"
+      },
+      {
+        "id": "0630098a9e25be78fc",
+        "url": "https://news.google.com/rss/articles/CBMi5gRBVV95cUxPTVp2cUhGU1J1dlRYbEpqZi1fQ1NlMndXV2wxMkx3RmxmRE15YjJQVklWcFlHODdnTmxyYVgxbnMzTi1Ja2xTT25iNXdNenBQQkpVMlJjZEdQUGhiYXhiZ0pJVm00VDR0U0FVdFdXTVRVMmF3dzJReHVmUlRJVm4zbWF0blpqRUs0aEJYSURXSDBHVzhPMGN6NEVmMW9iajFQWTdoMnBqUnJGU2g1MnlaY2hwSEJLRDM3WXhBRmsyQVE5dWpiMWhuYmNRR01wdnQ4WDkwWHQ1UHJoSGFnRUNkQXFSRUtGalQyZWZwWHlyRHN5NC1ScEZTLW1OTHdLMjRHRW9PUWROaGxpc0w1OE5CeUV2WGZreGlBTUd0ZlpNWnlaOFJZTks3X0dsQnV6ZmJfT1RfSjRSblZkMmNodWl2eXduY05FWHF5V0d1R1d5YUpVMW14Y012MHdKLXVZZ2cxRXdFWWhraWtYTHVfSi14TXRPc1FqbUJ3VGNWSjNHZng1YW1oUEZ3cVVYdjVpcmNYbGpuc2VZT0xuQWVLRWRabkNmSHBORHRReGwySGNUdE01SlU4OUNPZGRFWFdUeHdGNlVXUlhuOU0xRTI2OTg3c0lGM19GeXQzc2c1Qk1pY0RNc29LZmR4Q25xQzJoSHd0eU9FdVN6dFlnRTQxcGhNQWg2eGhncUN0dlRLWm90NktHRFBQOGJjNUV2b21NRUJWMWR4U2YyQXdUMzRLdkxCcnZuM2tSVTJhNnRsVnpqWEU2MWpuNGxNTFpISHhvVDVFczdqankxWVdEdV9kVUpwdWloQXliZw?oc=5"
+      },
+      {
+        "id": "abe478951338ae24f8",
+        "url": "https://news.google.com/rss/articles/CBMijwRBVV95cUxOODdoaFNhS3ZSNE1FSU9rTEcwM1BLMkNZUU80QXBGODZ2SXpETzgtQkZURUVBaWFlRmExM29ha1MtS0diZjFIREZRVWtPSV9LM2x2T1lyemVEUFpGaDV4YjV5SUR1NFZDamZEN2xOakNFSDBZal9HczJ4UGdSTmJQWThzX01rbUU3LTVQMEpMMWhRZXItRklmTUhHc1gyMFZTN0Zod2Y1Z21tcmMzUjItTk1HeWpUd09rcVdnS2c0bGRhUkV6bW9UdEk5TDJKMWFxOVc2cEJNN3AwNEJJT1dibi1YQ1ZYcmxHaHQtd3EyQXdfWm5CMXBNOEhsVEJwTlJaVW11aXBwUGRSdjZZOHY5QU14cXVnV1JnR1dVeW16QTd1ODNDNWxSbDhDOWFpVjJRZ21sWmVTSEtYQ043aTJDbUk1LTNLSFM3MUVUU1E4QjhIWmtFclhTVllzVEsyc1FFWm5NanFqZHZrNmFqbWEwdHRWSHpmMGhsS0tJZTBGcmJ0VS0yMGl3dkpfXzF3anNYQ1p6ZG1wb3FHRVRROTFfNVZoTjVqakZiMHpBS3R6SURFSHJEVVVIMk1xczF3dVZoY1gwM2ZPOVRhazk2dXJ6SkhnWG9MbzVEVG8tY2lVMXNOLU1XUVNXWnBqSGpJYzBtVEJCdXlsVzY0LUVHeXU2aXNLelY4ZTlUSzlUNXlZdw?oc=5"
+      }
+    ],
+    "removed": [
+      {
+        "id": "149144c3215bef3c81",
+        "url": "https://www.mcmillen.dev/sigbovik/"
+      },
+      {
+        "id": "0e171f2635ea316420",
+        "url": "https://hugovk.dev/blog/2026/lock-github-actions/"
+      },
+      {
+        "id": "0ca78acb174e9e7a6d",
+        "url": "https://github.com/tylertms/Stela"
+      },
+      {
+        "id": "a580750173b5f39618",
+        "url": "https://www.wired.com/story/ll-bean-promo-code/"
+      },
+      {
+        "id": "e3a996bcc36516d920",
+        "url": "https://www.wired.com/story/acer-promo-code/"
+      },
+      {
+        "id": "b975ca605bdcff0741",
+        "url": "https://www.wired.com/story/vitamix-promo-code/"
+      },
+      {
+        "id": "997d9379f29ebd92d4",
+        "url": "https://www.wired.com/story/design-within-reach-promo-code/"
+      },
+      {
+        "id": "5052b0097b0581939f",
+        "url": "https://www.wired.com/story/select-blinds-promo-code/"
+      },
+      {
+        "id": "1f7e6846b8443f4b41",
+        "url": "https://www.wired.com/story/early-black-friday-macbook-air-deal/"
+      },
+      {
+        "id": "770d9bc6aa92436666",
+        "url": "https://www.wired.com/story/best-black-friday-walking-pad-treadmill-deals-11-11-26/"
+      },
+      {
+        "id": "a6547f8cea67f8f660",
+        "url": "https://www.theverge.com/tech/1031652/jensen-huang-rumor"
+      },
+      {
+        "id": "3ddc5cc5a5b08ed604",
+        "url": "https://www.theverge.com/tech/1031601/home-assistant-connect-aux-2-hands-on"
+      },
+      {
+        "id": "c0be713c66472f0b10",
+        "url": "https://www.engadget.com/2314341/new-york-is-forcing-t-mobile-to-stop-putting-data-caps-on-low-income-home-internet-plans/"
+      },
+      {
+        "id": "76c32aad363e140cfb",
+        "url": "https://www.bbc.co.uk/news/articles/c6rmgw8zynr4o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "id": "cf48156cf7fa71cac8",
+        "url": "https://www.wired.com/story/pete-hegseth-is-about-to-get-his-ass-kicked/"
+      },
+      {
+        "id": "3c4a130ff1dbafc38d",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents"
+      },
+      {
+        "id": "986c8eb70d0f58a09b",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQcDVpWEhuUVN6SmdWNFJVR1VvcDR1eFFPUUVac3Q2N2I1aEFjXzQwNmdYWHJSanpMVllLYm5VRk9hZm1RUlZXZWtDc0VqUmxSVjBYamJFZW5DRjJCaURHcExLVlhiWHZnU242N2pybC13aEtfYUJ0Z0NnTXVTLWw2OGFXZXJMTkJGNFgxWnpR?oc=5"
+      },
+      {
+        "id": "52375cf5b1748113e1",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1zZldlVS1pQkVmbElGSEFBWFJXY2p4b1I3d3pOM0dHWXVPUGJyRnJEZ21WVEEtejAxT0lGb0RlN3hqTkFzQmJIaG1BcjlHYWhVMlBSX3RFclo5anRM?oc=5"
+      },
+      {
+        "id": "cd0d2d5b3f6213fc91",
+        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE82RW9Qbi1PbjVvajIxQmxjbG13cnpsSkVrNWszOEpmZ2RQQ2pOZ21Ya1h4V19xcTA4a3hxd2dCRkJFN19ucGh6NVNMWlFjVlVO?oc=5"
+      },
+      {
+        "id": "0b47ae94b8dc6c928b",
+        "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/"
+      },
+      {
+        "id": "704df4283560cdfce3",
+        "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBYUmprRGpvM0xDTmRiRDZDbVI1TmhEM3ZyUnBDLWFwamtmaGNKckVwU3VIeGJlM0RZekprbEw5Y2cyYkJHSzgw?oc=5"
+      },
+      {
+        "id": "478057fc524f199fe2",
+        "url": "https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/"
+      }
+    ]
+  },
+  "currentChecks": {
+    "editorialEntries": 953,
+    "feedItems": 800,
+    "feedNews": 700,
+    "feedProjects": 100,
+    "pr99NewEntries": 14,
+    "pr99NewEntriesMatchingCurrentFeedExactly": 14,
+    "oldEditorialEntriesPreservedExactly": 953
+  },
+  "classification": {
+    "imported": "1084 exact id/url appearances matched editorial at the last exhaustive audit; editorial has not changed since that audit base",
+    "matchingCurrentFeed": "The 14 proposed PR #99 additions were checked and all 14 match current feed id+url exactly",
+    "nonmatching": "The 22 prior seen-only IDs remain a pending set, but their membership against the current feed must be rechecked against the 22 additions/removals listed above",
+    "expired": "No record is marked expired solely because it left feed; no independently confirmed expiry in this refresh",
+    "needsCorrection": "Edge0 source is now verified; it remains source-verified-not-enriched due the 12-news limit. GitHub availability report remains source-verified-not-enriched."
+  },
+  "limitation": "The 117 incoming files were exhaustively audited at the prior main SHA. This run confirmed that incoming files and editorial.json did not change between that SHA and current main, but did not re-fetch every incoming file to recompute membership against the refreshed feed. Therefore do not reuse the old 262 feed-match count as a current count and do not import the 22 seen-only IDs until their exact id/url status is rechecked.",
+  "handling": "No title-based identity replacement. No feed.json or seen.json modification by this run. This file is research-only and is not part of site/data.",
+  "postRefreshReconciliation": {
+    "reviewedAt": "2026-11-13T17:48:00+03:00",
+    "currentMainSha": "9b9d6196a5a6e5cf3231d2d33904a7d9067889e6",
+    "currentFeedBlobSha": "38c54884b21761a3c1e53b6150b51c8a2583698d",
+    "currentFeedGeneratedAt": "2026-11-13T06:40:54+00:00",
+    "currentEditorialEntries": 953,
+    "feedDeltaAgainstPreviousFeed": {
+      "added": 22,
+      "removed": 22
+    },
+    "addedRecords": {
+      "count": 22,
+      "inSeen": 22,
+      "inEditorial": 0,
+      "exactFeedUrlsAfterReportCorrection": 22,
+      "notFoundInIncomingCodeSearch": 22
+    },
+    "removedRecords": {
+      "count": 22,
+      "inSeen": 22,
+      "stillInEditorialExact": 4,
+      "seenOnly": 18,
+      "confirmedExpired": 0
+    },
+    "priorPendingSeenOnly": {
+      "count": 22,
+      "stillInSeen": 22,
+      "stillInFeed": 0,
+      "stillInEditorial": 0,
+      "confirmedExpired": 0
+    },
+    "correctedReportUrl": {
+      "id": "0630098a9e25be78fc",
+      "previousReportUrl": "https://news.google.com/rss/articles/CBMi5gRBVV95cUxPTVp2cUhGU1J1dlRYbEpqZi1fQ1NlMndXV2wxMkx3RmxmRE15YjJQVklWcFlHODdnTmxyYVgxbnMzTi1Ja2xTT25iNXdNenBQQkpVMlJjZEdQUGhiYXhiZ0pJVm00VDR0U0FVdFdXTVRVMmF3dzJReHVmUlRJVm4zbWF0blpqRUs0aEJYSURXSDBHVzhPMGN6NEVmMW9iajFQWTdoMnBqUnJGU2g1MnlaY2hwSEJLRDM3WXhBRmsyQVE5dWpiMWhuYmNRR01wdnQ4WDkwWHQ1UHJoSGFnRUNkQXFSRUtGalQyZWZwWHlyRHN5NC1ScEZTLW1OTHdLMjRHRW9PUWROaGxpc0w1OE5CeUV2WGZreGlBTUd0ZlpNWnlaOFJZTks3X0dsQnV6ZmJfT1RfSjRSblZkMmNodWl2eXduY05FWHF5V0d1R1d5YUpVMW14Y012MHdKLXVZZ2cxRXdFWWhraWtYTHVfSi14TXRPc1FqbUJ3VGNWSjNHZng1YW1oUEZ3cVVYdjVpcmNYbGpuc2VZT0xuQWVLRWRabkNmSHBORHRReGwySGNUdE01SlU4OUNPZGRFWFdUeHdGNlVXUlhuOU0xRTI2OTg3c0lGM19GeXQzc2c1Qk1pY0RNc29LZmR4Q25xQzJoSHd0eU9FdVN6dFlnRTQxcGhNQWg2eGhncUN0dlRLWm90NktHRFBQOGJjNUV2b21NRUJWMWR4S2YyQXdUMzRLdkxCcnZuM2tSVTJhNnRsVnpqWEU2MWpuNGxNTFpISHhvVDVFczdqankxWVdEdV9kVUpwdWloQXliZw?oc=5",
+      "currentFeedUrl": "https://news.google.com/rss/articles/CBMi5gRBVV95cUxPTVp2cUhGU1J1dlRYbEpqZi1fQ1NlMndXV2wxMkx3RmxmRE15YjJQVklWcFlHODdnTmxyYVgxbnMzTi1Ja2xTT25iNXdNenBQQkpVMlJjZEdQUGhiYXhiZ0pJVm00VDR0U0FVdFdXTVRVMmF3dzJReHVmUlRJVm4zbWF0blpqRUs0aEJYSURXSDBHVzhPMGN6NEVmMW9iajFQWTdoMnBqUnJGU2g1MnlaY2hwSEJLRDM3WXhBRmsyQVE5dWpiMWhuYmNRR01wdnQ4WDkwWHQ1UHJoSGFnRUNkQXFSRUtGalQyZWZwWHlyRHN5NC1ScEZTLW1OTHdLMjRHRW9PUWROaGxpc0w1OE5CeUV2WGZreGlBTUd0ZlpNWnlaOFJZTks3X0dsQnV6ZmJfT1RfSjRSblZkMmNodWl2eXduY05FWHF5V0d1R1d5YUpVMW14Y012MHdKLXVZZ2cxRXdFWWhraWtYTHVfSi14TXRPc1FqbUJ3VGNWSjNHZng1YW1oUEZ3cVVYdjVpcmNYbGpuc2VZT0xuQWVLRWRabkNmSHBORHRReGwySGNUdE01SlU4OUNPZGRFWFdUeHdGNlVXUlhuOU0xRTI2OTg3c0lGM19GeXQzc2c1Qk1pY0RNc29LZmR4Q25xQzJoSHd0eU9FdVN6dFlnRTQxcGhNQWg2eGhncUN0dlRLWm90NktHRFBQOGJjNUV2b21NRUJWMWR4U2YyQXdUMzRLdkxCcnZuM2tSVTJhNnRsVnpqWEU2MWpuNGxNTFpISHhvVDVFczdqankxWVdEdV9kVUpwdWloQXliZw?oc=5",
+      "action": "Corrected the report URL only; did not change id, feed.json, seen.json, or editorial.json."
+    },
+    "note": "The incoming inventory remains unchanged from the previously exhaustive 117-file audit; current feed membership was rechecked against the 22 added and 22 removed IDs. The 22 older pending incoming IDs remain absent from current feed and editorial and are not marked expired."
+  }
+}

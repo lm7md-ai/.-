@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "kind": "current-feed-reconciliation",
+  "reviewedAt": "2026-11-13T23:43:30+03:00",
+  "mainSha": "10e17b3aa190c8bb2f4cd37a1869afdde1975812",
+  "incomingMain": {
+    "files": 117,
+    "occurrences": 1194,
+    "exactEditorialAppearances": 1084,
+    "seenOnlyAppearances": 110,
+    "seenOnlyUniquePairs": 22,
+    "idUrlConflicts": 0,
+    "confirmedExpired": 0,
+    "auditBasis": "previous exhaustive audit 2026-11-13 14:43; incoming inventory unchanged; current main commit changed feed/seen/status only; differential recheck used."
+  },
+  "currentFeed": {
+    "generatedAt": "2026-11-13T17:11:19+00:00",
+    "items": 800,
+    "news": 700,
+    "projects": 100
+  },
+  "priorPending": {
+    "count": 22,
+    "stillSeen": 22,
+    "stillInFeed": 0,
+    "stillInEditorial": 0,
+    "confirmedExpired": 0,
+    "report": "editorial/pending/run-2026-11-13-0306.json"
+  },
+  "pr99": {
+    "headBefore": "a771990da546fe583e970374dde39d4e2e8a04fd",
+    "incomingNews": 12,
+    "incomingProjects": 2,
+    "total": 14,
+    "exactCurrent": 13,
+    "activeNews": 11,
+    "activeProjects": 2,
+    "held": [
+      {
+        "id": "0d7637bb5559a97c22",
+        "url": "https://tratt.net/laurie/blog/2026/adapting_cpython_for_yk.html",
+        "titleAr": "تجربة تقنية لتكييف CPython مع بيئة Yk",
+        "seen": true,
+        "inCurrentFeed": false,
+        "inMainEditorial": false,
+        "confirmedExpired": false,
+        "decision": "hold; do not import; retain original identity"
+      }
+    ],
+    "cleanIncoming": "editorial/incoming/nabdh-editorial-2026-11-13-2343-reconciled.json",
+    "finalEditorialEntries": 966
+  },
+  "news": {
+    "count": 11,
+    "basisCounts": {
+      "article": 9,
+      "metadata": 2
+    },
+    "items": [
+      {
+        "id": "1c5e170b0f37ff95fd",
+        "titleAr": "Apple توسّع Foundation Models لتوحيد النماذج المحلية والخادمية في تطبيقات Swift",
+        "basis": "article"
+      },
+      {
+        "id": "d121304c3de64e9ed0",
+        "titleAr": "GitHub تنشر دليلًا لبناء Agent Skills قابلة للنقل بين الوكلاء",
+        "basis": "article"
+      },
+      {
+        "id": "3737f013bc02f6fab5",
+        "titleAr": "Meta توسّع Muse ليجري مكالمات أعمال نيابةً عن المستخدم المشترك",
+        "basis": "article"
+      },
+      {
+        "id": "039c74dda2a3b52c28",
+        "titleAr": "United Airlines تقيّد وكلاء الذكاء الاصطناعي في حجز الرحلات وإدارة الحجوزات",
+        "basis": "article"
+      },
+      {
+        "id": "743bb9f48555c86ca2",
+        "titleAr": "خسائر SoftBank تكشف مخاطر التسرّع في شراء طاقة مراكز الذكاء الاصطناعي",
+        "basis": "article"
+      },
+      {
+        "id": "076934ef461be2b954",
+        "titleAr": "تحليل بحثي يرصد بصمات عتادية محتملة في أوزان بعض النماذج",
+        "basis": "article"
+      },
+      {
+        "id": "60460c51ffcbaa7143",
+        "titleAr": "PostgreSQL تنشر إصلاحًا لثغرة CVE-2026-6460 عالية الخطورة",
+        "basis": "article"
+      },
+      {
+        "id": "e31d579ac0149753f2",
+        "titleAr": "BBC ترصد استخدام تعديلات الذكاء الاصطناعي في صور العقارات",
+        "basis": "metadata"
+      },
+      {
+        "id": "889dda614b5244142f",
+        "titleAr": "استطلاع GDC: استخدام الذكاء الاصطناعي بين مطوري الألعاب يرتفع إلى 40%",
+        "basis": "article"
+      },
+      {
+        "id": "9ccf02f3129f738855",
+        "titleAr": "Hugging Face تؤكد مواصلة دعم الذكاء الاصطناعي المفتوح وسط تغيّرات NVIDIA",
+        "basis": "article"
+      },
+      {
+        "id": "dd62360cdb55684548",
+        "titleAr": "WHOOP تعلن شبكة اجتماعية لمشاركة بيانات الأداء باختيار المستخدم",
+        "basis": "metadata"
+      }
+    ]
+  },
+  "projects": {
+    "count": 2,
+    "items": [
+      {
+        "id": "bf86da7f404b1d1c1f",
+        "titleAr": "EasyOCR — مكتبة مفتوحة للتعرّف الضوئي على النصوص متعددة اللغات",
+        "basis": "readme"
+      },
+      {
+        "id": "6ea9e0fbab097163ee",
+        "titleAr": "Dograh — منصة مفتوحة لبناء وكلاء صوتيين ذاتية الاستضافة",
+        "basis": "readme"
+      }
+    ]
+  },
+  "validation": {
+    "portedOfficialRules": "pass",
+    "cleanEntries": 13,
+    "exactIdUrlMatches": 13,
+    "finalEditorialEntries": 966,
+    "oldMainEditorialEntriesPreserved": 953
+  },
+  "identityCorrection": {
+    "id": "662e68277c6361dd4b",
+    "originalFeedUrl": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+    "officialPressRelease": "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents",
+    "note": "Keep original Feed URL as identity; official press release remains a source."
+  },
+  "specialRecords": {
+    "NVIDIA_OpenShell": "seen-only; Apache-2.0; v0.1.8 stable; 0.1.9-dev.23 prerelease; CNCF/ai-openshell transfer ongoing; not tested",
+    "Canva_Craft": "seen-only; public API available; Canva MCP GA 2026-10-27 via OAuth; no service accounts",
+    "OnePassword": "seen-only; launched opt-in; Individual/Family on 1Password.com per support guide"
+  },
+  "officialCommandsNotExecuted": [
+    "python scripts/editorial.py validate editorial/incoming/nabdh-editorial-2026-11-13-2343-reconciled.json",
+    "python scripts/editorial.py import editorial/incoming/nabdh-editorial-2026-11-13-2343-reconciled.json",
+    "python -m unittest discover -s tests -v"
+  ],
+  "mergeDecision": "Keep PR open because push-to-main workflow runs update_feed.py and writes feed.json, seen.json and status.json."
+}
