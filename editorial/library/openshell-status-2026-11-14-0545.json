@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "research-only-not-published",
+  "measuredAt": "2026-11-14T05:45:45+03:00",
+  "project": {
+    "repo": "NVIDIA/OpenShell",
+    "name": "NVIDIA OpenShell",
+    "license": "Apache-2.0",
+    "archived": false,
+    "latestStableRelease": "v0.1.8",
+    "stars": 21589,
+    "forks": 2105,
+    "pushedAt": "2026-11-14T02:17:22Z",
+    "governance": "CNCF Sandbox; migration to ai-openshell is underway but NVIDIA/OpenShell remains the source repository until transfer completes."
+  },
+  "overview": "Runtime مفتوح المصدر لحوكمة وكلاء الذكاء الاصطناعي عبر Gateway وSupervisor وsandboxes وسياسات وصول للملفات والشبكة والاعتمادات. يتيح ربط مزودي الاستدلال والتخزين السري وبيئات التنفيذ، مع تبني Cedar للسياسات.",
+  "requirements": "راجع Support Matrix الرسمية؛ يتطلب مضيفًا مدعومًا (Linux أو macOS Apple Silicon أو Windows عبر WSL2 التجريبي)، وDocker أو Podman أو افتراضية مضيف لتشغيل sandboxes، مع متطلبات إضافية بحسب backend.",
+  "quickStart": [
+    "راجع Support Matrix وملاحظات الترقية للإصدار v0.1.8.",
+    "استخدم NVIDIA/OpenShell للتثبيت والمشكلات حتى اكتمال النقل إلى ai-openshell.",
+    "ابدأ ببيئة تجريبية وسياسة ملفات وشبكة ضيقة.",
+    "اختبر طلبات الصلاحيات وسجل التدقيق قبل السماح بمهام أوسع."
+  ],
+  "costs": "البرنامج مفتوح المصدر؛ التكاليف تتبع موارد المضيف أو VM ومزود النموذج والتخزين السري المختار.",
+  "localVsCloud": "يمكن تشغيل Gateway وsandboxes محليًا أو على مضيف سحابي؛ لا يلغي ذلك ضرورة عزل المضيف وتقييد الشبكة والملفات ومراجعة السياسات.",
+  "alternatives": [
+    "gVisor",
+    "Firecracker",
+    "E2B sandboxes",
+    "Docker sandbox"
+  ],
+  "improvements": [
+    {
+      "title": "حزمة امتثال للنقل إلى CNCF",
+      "problem": "نقل الحوكمة إلى مؤسسة محايدة يتطلب أدلة متسقة على سلامة الإصدارات والتوقيع والتبعيات.",
+      "approach": "إضافة SBOM قابلة للتحقق وبناءات قابلة لإعادة الإنتاج وسياسة توقيع وإثبات provenance لكل إصدار.",
+      "stack": "GitHub Actions, Sigstore, SLSA, SPDX",
+      "steps": [
+        "حدد artifacts التي تدخل كل إصدار.",
+        "أنشئ SBOM لكل artifact.",
+        "وقّع الحزم والبيانات الوصفية.",
+        "تحقق من provenance في CI.",
+        "انشر تقرير امتثال مع كل إصدار."
+      ],
+      "metric": "نسبة artifacts التي لها SBOM وتوقيع وprovenance قابلة للتحقق.",
+      "difficulty": "تقدير متوسط إلى مرتفع؛ يعتمد على خطوط الإصدار الحالية.",
+      "risks": "قد يضيف خطوات إصدار أو يكشف تبعيات غير متوقعة.",
+      "sources": [
+        {
+          "title": "CNCF OpenShell announcement",
+          "url": "https://www.cncf.io/blog/2026/11/10/welcoming-openshell-to-the-cncf-open-governance-to-secure-agentic-ai/"
+        }
+      ]
+    },
+    {
+      "title": "اختبارات توافق موحدة لمشغلات العزل",
+      "problem": "اختلاف backends قد يجعل السياسة نفسها تتصرف بشكل مختلف بين Linux وmacOS وKubernetes.",
+      "approach": "إنشاء conformance suite تقيس حدود الملفات والشبكة والعمليات لكل driver مع fixtures موحدة.",
+      "stack": "Rust, pytest, OCI, Kubernetes, GitHub Actions",
+      "steps": [
+        "حدد واجهة driver والقدرات المطلوبة.",
+        "اكتب fixtures لسياسات الملفات والشبكة.",
+        "شغّل الاختبارات على كل backend مدعوم.",
+        "سجّل الفروق والقدرات غير المدعومة.",
+        "انشر مصفوفة توافق مرتبطة بالإصدار."
+      ],
+      "metric": "نسبة حالات conformance الناجحة لكل backend.",
+      "difficulty": "تقدير مرتفع؛ يحتاج بيئات اختبار متعددة.",
+      "risks": "الاختبارات قد لا تمثل كل إعدادات الإنتاج.",
+      "sources": [
+        {
+          "title": "OpenShell CNCF contribution areas",
+          "url": "https://nvidia.github.io/OpenShell-Research/dev-notes/posts/2026-11-09-donated-openshell-to-cncf/"
+        }
+      ]
+    },
+    {
+      "title": "سجل تدقيق موحد مع تقليل البيانات الحساسة",
+      "problem": "تحتاج فرق التشغيل إلى تتبع قرارات الوكلاء دون تسجيل أسرار أو محتوى حساس غير ضروري.",
+      "approach": "توحيد أحداث Gateway وSupervisor بصيغة OCSF/OpenTelemetry مع تنقيح الحقول الحساسة واختبارات منع التسريب.",
+      "stack": "OpenTelemetry, OCSF, Rust, Cedar",
+      "steps": [
+        "حدد مخطط أحداث مشتركًا.",
+        "صنف الحقول الحساسة.",
+        "أضف تنقيحًا قبل التصدير.",
+        "اكتب اختبارات تمنع ظهور الأسرار.",
+        "قارن اكتمال التدقيق مع حجم البيانات المصدرة."
+      ],
+      "metric": "نسبة أحداث التدقيق المطابقة للمخطط مع صفر أسرار في عينات الاختبار.",
+      "difficulty": "تقدير متوسط إلى مرتفع.",
+      "risks": "التنقيح المفرط قد يضعف التحقيق في الحوادث.",
+      "sources": [
+        {
+          "title": "OpenShell observability roadmap",
+          "url": "https://nvidia.github.io/OpenShell-Research/dev-notes/posts/2026-11-09-donated-openshell-to-cncf/"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "مختبر توافق سياسات وكلاء متعدد البيئات",
+      "problem": "يصعب مقارنة فعالية السياسة نفسها عبر backends مختلفة.",
+      "approach": "أداة مستقلة تشغّل مجموعة سياسات ثابتة على بيئات عزل متعددة وتنتج تقرير فروق.",
+      "stack": "Python, pytest, OCI, Kubernetes",
+      "steps": [
+        "أنشئ مجموعة سياسات مرجعية.",
+        "جهّز backends معزولة.",
+        "نفّذ الحالات نفسها على كل backend.",
+        "قارن السماح والمنع والسجلات.",
+        "أنشئ تقرير توافق آليًا."
+      ],
+      "metric": "عدد فروق السلوك المكتشفة لكل إصدار.",
+      "difficulty": "تقدير متوسط.",
+      "risks": "تتطلب صيانة بيئات متعددة.",
+      "sources": [
+        {
+          "title": "CNCF OpenShell announcement",
+          "url": "https://www.cncf.io/blog/2026/11/10/welcoming-openshell-to-the-cncf-open-governance-to-secure-agentic-ai/"
+        }
+      ]
+    },
+    {
+      "title": "وسيط أسرار محايد لمزودي التخزين",
+      "problem": "قد يربط الوكيل نفسه بمزود أسرار واحد ويزيد عبء الانتقال بين البيئات.",
+      "approach": "طبقة adapters موحدة تعيد مراجع قصيرة العمر وتمنع تمرير السر إلى سياق النموذج.",
+      "stack": "Rust, OIDC, Vault-compatible APIs, Cedar",
+      "steps": [
+        "عرّف واجهة provider موحدة.",
+        "أضف adapter لمخزن محلي وآخر سحابي.",
+        "استخدم مراجع قصيرة العمر بدل القيم.",
+        "اختبر إلغاء الصلاحية والتدوير.",
+        "وثّق سجل الوصول دون تسجيل الأسرار."
+      ],
+      "metric": "عدد مزودي الأسرار المدعومين مع اجتياز اختبارات عدم كشف السر.",
+      "difficulty": "تقدير مرتفع.",
+      "risks": "اختلاف نماذج الصلاحيات بين المزودين.",
+      "sources": [
+        {
+          "title": "OpenShell credential-driver extension points",
+          "url": "https://nvidia.github.io/OpenShell-Research/dev-notes/posts/2026-11-09-donated-openshell-to-cncf/"
+        }
+      ]
+    }
+  ],
+  "religious": [
+    {
+      "title": "بيئة مراجعة مصادر تراثية مع سجل تدقيق",
+      "problem": "تحتاج أدوات فهرسة المصادر الإسلامية إلى فصل البحث النصي عن إصدار الأحكام أو نسبة النصوص دون تحقق.",
+      "approach": "تشغيل وكيل بحث داخل sandbox يقتصر على مصادر مرخصة، ويعيد مواضع الاقتباس وروابطها للمراجع البشري دون إصدار فتوى أو إنشاء نص شرعي.",
+      "stack": "OpenShell, Cedar, Python, SQLite FTS, OpenTelemetry",
+      "steps": [
+        "اجمع مصادر مرخصة وموثقة فقط.",
+        "عرّف سياسة قراءة تمنع الكتابة أو الاتصال غير المصرح.",
+        "أعد نتائج البحث مع رقم الصفحة والرابط.",
+        "سجّل مصدر كل اقتباس ونسخة الملف.",
+        "اشترط مراجعة بشرية قبل النشر."
+      ],
+      "metric": "نسبة النتائج التي تحتوي على مصدر وموضع قابلين للتحقق، مع صفر نشر آلي بلا مراجعة.",
+      "difficulty": "تقدير مرتفع؛ يتطلب مراجعين متخصصين ومراجعة تراخيص.",
+      "risks": "أخطاء OCR أو فهرسة قد تنسب النص إلى موضع خاطئ؛ لا يجوز تحويل النتائج إلى فتوى.",
+      "sources": [
+        {
+          "title": "OpenShell policy and audit architecture",
+          "url": "https://nvidia.github.io/OpenShell-Research/dev-notes/posts/2026-11-09-donated-openshell-to-cncf/"
+        }
+      ]
+    }
+  ],
+  "limitations": "المؤشرات لقطة GitHub وقت القياس. نقل المستودع إلى ai-openshell لم يكتمل؛ صفحة المنظمة تطلب استخدام NVIDIA/OpenShell حتى اكتمال النقل. لم يُشغّل المشروع في هذه الدورة؛ لا توجد testEvidence.",
+  "testStatus": "not_run",
+  "sources": [
+    {
+      "title": "NVIDIA OpenShell repository README",
+      "url": "https://github.com/NVIDIA/OpenShell"
+    },
+    {
+      "title": "Official documentation",
+      "url": "https://docs.nvidia.com/openshell/latest/"
+    },
+    {
+      "title": "Support matrix",
+      "url": "https://docs.nvidia.com/openshell/latest/about/support-matrix"
+    },
+    {
+      "title": "Latest release v0.1.8",
+      "url": "https://github.com/NVIDIA/OpenShell/releases/tag/v0.1.8"
+    },
+    {
+      "title": "CNCF contribution announcement",
+      "url": "https://www.cncf.io/blog/2026/11/10/welcoming-openshell-to-the-cncf-open-governance-to-secure-agentic-ai/"
+    },
+    {
+      "title": "Apache-2.0 license",
+      "url": "https://github.com/NVIDIA/OpenShell/blob/main/LICENSE"
+    }
+  ]
+}

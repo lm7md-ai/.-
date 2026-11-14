@@ -1,0 +1,139 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-14T05:45:45+03:00",
+  "mainSha": "cc5e9afbec33f9770925eac1a384ba7f9d9140ce",
+  "feed": {
+    "generatedAt": "2026-11-13T23:30:24+00:00",
+    "total": 800,
+    "news": 700,
+    "projects": 100,
+    "blobSha": "03e7fab7c76bd778e5cb5a13687a780d2178b3fc"
+  },
+  "mainEditorialCount": 953,
+  "prBefore": {
+    "headSha": "d5be6dfc49897dbe585b614e81f5da060e5e0966",
+    "editorialBlobSha": "d237c0e2355520229218feada9b8a1a4e6550257",
+    "count": 968
+  },
+  "incomingMain": {
+    "files": 117,
+    "recordAppearances": 1194,
+    "alreadyImportedAppearances": 1084,
+    "seenOnlyAppearances": 110,
+    "uniqueSeenOnlyPairs": 84,
+    "idUrlConflictsFound": 0,
+    "malformedEntriesFound": 0,
+    "invalidOriginalUrlsFound": 0,
+    "confirmedExpired": 0,
+    "allFilesParsed": true,
+    "inventoryUnchangedOnSameMainSha": true,
+    "priorReport": "editorial/pending/current-feed-reconciliation-2026-11-14-0247.json"
+  },
+  "heldRecords": [
+    {
+      "id": "0d7637bb5559a97c22",
+      "url": "https://tratt.net/laurie/blog/2026/adapting_cpython_for_yk.html",
+      "decision": "hold_no_import"
+    },
+    {
+      "id": "60460c51ffcbaa7143",
+      "url": "https://mehmetince.net/part-3-6-how-i-ended-up-turning-a-22-year-old-postgresql-type-confusion-primitive-into-rce-cve-2026-6460/",
+      "decision": "hold_no_import"
+    },
+    {
+      "id": "889dda614b5244142f",
+      "url": "https://www.theverge.com/games/1032085/gdc-festival-of-gaming-annual-survey-ai-layoffs",
+      "decision": "hold_no_import"
+    }
+  ],
+  "newNews": {
+    "count": 10,
+    "article": 6,
+    "metadata": 4,
+    "ids": [
+      {
+        "id": "1a09f77a4836fe9e9b",
+        "url": "https://status.claude.com/incidents/nn11wk485zfn"
+      },
+      {
+        "id": "cf14d9f186a2331efa",
+        "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/"
+      },
+      {
+        "id": "12990af15e181ab96c",
+        "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths"
+      },
+      {
+        "id": "8c9ba4b267174e41c3",
+        "url": "https://haddyalchaer.com/jepa"
+      },
+      {
+        "id": "3cdc276fd6a522c552",
+        "url": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/"
+      },
+      {
+        "id": "691d6cdbb8fb511a56",
+        "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/"
+      },
+      {
+        "id": "421313add8f8b7d4e7",
+        "url": "https://www.mtsoukalos.eu/2026/11/why-zig-over-c-for-systems-programming/"
+      },
+      {
+        "id": "cdfd26896257823e51",
+        "url": "https://twitter.com/flightradar24/status/2121347654714077605"
+      },
+      {
+        "id": "830a5f0df960922e48",
+        "url": "https://github.com/lonewolf-im/lonewolf/releases/tag/v0.3.0"
+      },
+      {
+        "id": "b1c7febb39e1226c18",
+        "url": "https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html"
+      }
+    ]
+  },
+  "projects": {
+    "feedProjects": 100,
+    "missingExactEditorialOnPrBranch": 0,
+    "newProjectEnrichments": 0
+  },
+  "library": {
+    "total": 73,
+    "active": 71,
+    "archived": 2,
+    "projectFeedMembers": 17,
+    "outsideCurrentFeed": 56,
+    "unverifiedMembership": 1,
+    "licensesNeedingUpstreamVerification": 10
+  },
+  "previousEight": {
+    "reviewed": 8,
+    "active": 8,
+    "archived": 0,
+    "inCurrentFeed": 2,
+    "inEditorial": 2,
+    "currentGitHubArchived": 0
+  },
+  "prAfter": {
+    "editorialCount": 978,
+    "newRecords": 10,
+    "existingRecordsPreserved": true
+  },
+  "protectedFiles": {
+    "feedJson": "untouched",
+    "seenJson": "untouched",
+    "statusJson": "untouched",
+    "sourceCode": "untouched",
+    "design": "untouched",
+    "workflows": "untouched",
+    "publishSettings": "untouched"
+  },
+  "execution": {
+    "localShellAvailable": false,
+    "localValidate": "not_run",
+    "localImport": "not_run",
+    "localUnitTests": "not_run",
+    "structuralValidation": "passed"
+  }
+}

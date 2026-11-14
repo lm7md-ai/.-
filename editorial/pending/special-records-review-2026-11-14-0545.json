@@ -1,0 +1,135 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-14T05:45:45+03:00",
+  "membership": {
+    "allThreeExactIdsInSeen": true,
+    "allThreeExactIdsInCurrentFeed": false,
+    "allThreeExactIdsInMainEditorial": false,
+    "noCurrentFeedTitleMatch": true,
+    "decision": "keep_seen_only_no_import_no_title_based_replacement"
+  },
+  "records": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "membership": {
+        "seen": true,
+        "feed": false,
+        "editorial": false
+      },
+      "officialStatus": {
+        "donation": "NVIDIA contributed OpenShell to CNCF as a Sandbox project on 2026-11-09.",
+        "organization": "https://github.com/ai-openshell exists with 8 repositories; its notice says migration is still in progress.",
+        "sourceOfTruth": "Until transfer completes, use NVIDIA/OpenShell for code, issues and pull requests.",
+        "latestStableRelease": "v0.1.8 published 2026-11-10",
+        "license": "Apache-2.0",
+        "stars": 21589,
+        "forks": 2105,
+        "pushedAt": "2026-11-14T02:17:22Z",
+        "archived": false,
+        "measuredAt": "2026-11-14T05:45:45+03:00"
+      },
+      "decision": "Do not import: exact ID/URL absent from current Feed. Keep Seen-only; do not create a replacement ID.",
+      "sources": [
+        {
+          "title": "NVIDIA OpenShell CNCF donation note",
+          "url": "https://nvidia.github.io/OpenShell-Research/dev-notes/posts/2026-11-09-donated-openshell-to-cncf/"
+        },
+        {
+          "title": "CNCF OpenShell announcement",
+          "url": "https://www.cncf.io/blog/2026/11/10/welcoming-openshell-to-the-cncf-open-governance-to-secure-agentic-ai/"
+        },
+        {
+          "title": "ai-openshell migration notice",
+          "url": "https://github.com/ai-openshell"
+        },
+        {
+          "title": "Current source repository",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        },
+        {
+          "title": "Latest release",
+          "url": "https://github.com/NVIDIA/OpenShell/releases/tag/v0.1.8"
+        }
+      ]
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "membership": {
+        "seen": true,
+        "feed": false,
+        "editorial": false
+      },
+      "officialStatus": {
+        "craft": "CRAFT-1 2K (craft_v1_2k) is Canva's first-party image-generation model; the Image Generation REST API remains Preview.",
+        "userAppAuth": "Public/private app uses user authorization, asset:write, image_generation capability and the user's AI credit allowance.",
+        "serviceAppAuth": "Service apps are also supported for this REST endpoint through client credentials and service:asset:write; CRAFT-1 2K costs 3 credits per 2K image from the team's API credit pool.",
+        "serviceAppEligibility": "Service apps require an eligible Canva Business, Teams or Nonprofit team and MFA or SSO; each team can have one service app.",
+        "previewLimits": "Preview APIs may change without notice; public apps using them cannot pass public-app review or be made available to all Canva users.",
+        "mcpDistinction": "Canva MCP is separate: its official guide uses per-user OAuth and says organization-level or service-account authentication is not supported."
+      },
+      "decision": "Do not import: exact ID/URL absent from current Feed. Keep Seen-only; do not create a replacement ID.",
+      "sources": [
+        {
+          "title": "Canva Craft API guide",
+          "url": "https://www.canva.dev/docs/apps/rest-apis/generate-images-with-craft/"
+        },
+        {
+          "title": "Canva service accounts announcement",
+          "url": "https://www.canva.dev/blog/developers/canva-service-accounts/"
+        },
+        {
+          "title": "Canva MCP general availability guide",
+          "url": "https://www.canva.dev/blog/developers/canva-mcp-ga/"
+        },
+        {
+          "title": "Original TechCrunch article",
+          "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/"
+        }
+      ]
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "membership": {
+        "seen": true,
+        "feed": false,
+        "editorial": false
+      },
+      "officialStatus": {
+        "availability": "Opt-in for Individual and Family accounts on 1Password.com; Team/Business accounts and 1Password.ca/.eu are not currently supported.",
+        "minimumAppVersion": "8.12.42 or later on the same device as the agent.",
+        "supportedAgents": [
+          "Claude",
+          "Duet",
+          "Grok Bot",
+          "Instinct",
+          "Muse",
+          "Town"
+        ],
+        "approval": "The user approves or denies each sign-in request; the agent cannot approve its own request. Approved items can be reused for up to 30 days.",
+        "boundary": "1Password fills and submits the sign-in form outside the agent's view. After sign-in, the website session is controlled by the agent and is outside the password-fill guarantee.",
+        "unsupported": "Passkeys, sign-in-provider login items and shared vaults are not currently supported."
+      },
+      "decision": "Do not import: exact ID/URL absent from current Feed. Keep Seen-only; do not create a replacement ID.",
+      "sources": [
+        {
+          "title": "1Password for Agents support",
+          "url": "https://support.1password.com/1password-for-agents/"
+        },
+        {
+          "title": "1Password for Agents security model",
+          "url": "https://support.1password.com/1password-for-agents-security/"
+        },
+        {
+          "title": "Original TechCrunch article",
+          "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/"
+        }
+      ]
+    }
+  ]
+}
