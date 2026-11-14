@@ -104,8 +104,7 @@
         "availability": "Opt-in for Individual and Family accounts on 1Password.com; Team/Business accounts and 1Password.ca/.eu are not currently supported.",
         "minimumAppVersion": "8.12.42 or later on the same device as the agent.",
         "supportedAgents": [
-          "Claude",
-          "Duet",
+          "Claude Duet",
           "Grok Bot",
           "Instinct",
           "Muse",
@@ -113,7 +112,10 @@
         ],
         "approval": "The user approves or denies each sign-in request; the agent cannot approve its own request. Approved items can be reused for up to 30 days.",
         "boundary": "1Password fills and submits the sign-in form outside the agent's view. After sign-in, the website session is controlled by the agent and is outside the password-fill guarantee.",
-        "unsupported": "Passkeys, sign-in-provider login items and shared vaults are not currently supported."
+        "unsupported": "Passkeys, sign-in-provider login items and shared vaults are not currently supported.",
+        "supportPagePublishedAt": "2026-11-04",
+        "approvalReuse": "Up to 30 days; a new approval is required after the 30-day period.",
+        "sessionBoundary": "1Password fills and submits the sign-in form outside the agent's view. After submission, the website session is controlled by the agent and is outside the credential-fill guarantee."
       },
       "decision": "Do not import: exact ID/URL absent from current Feed. Keep Seen-only; do not create a replacement ID.",
       "sources": [
