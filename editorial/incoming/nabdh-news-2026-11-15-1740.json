@@ -1,0 +1,256 @@
+{
+  "version": 1,
+  "items": {
+    "34de9d80d81453d365": {
+      "titleAr": "تنفيذ تعليمي مصغّر لبنية DeepSeek-V3 باستخدام JAX",
+      "summaryAr": "يعرض المستودع تنفيذًا تعليميًا لبنية DeepSeek-V3 في نحو 200 سطر من JAX، مع نموذج صغير جدًا يذكر README أنه يضم 36.2 مليون معامل وتجربة تدريب محلية. هذا ليس إعادة تدريب للنموذج الأصلي واسع النطاق؛ بل نموذج مصغّر لتوضيح بعض أفكار البنية.",
+      "whyItMatters": "التحليل: يتيح للطلاب فهم مكونات مثل Mixture-of-Experts وتدفق التدريب على نطاق يمكن استكشافه، دون موارد مركز بيانات. قيمته تعليمية وتجريبية، لا دليل على أنه بديل لنموذج إنتاجي.",
+      "audience": "طلاب تعلم الآلة، مطورو JAX، والمهتمون بفهم بنى النماذج الكبيرة.",
+      "nextSteps": [
+        "اقرأ README وحدد المكونات التي جرى تبسيطها.",
+        "قارن التنفيذ بالمفاهيم الأصلية في وصف المشروع.",
+        "تعامل مع أرقام التدريب والأداء باعتبارها نتائج يذكرها صاحب المستودع لا قياسًا مستقلًا."
+      ],
+      "limitations": "حجم النموذج المذكور 36.2M معامل، وليس النموذج الكامل؛ أجزاء من تحسينات التدريب والإنتاج غير ممثلة. لم أشغّل الكود أو أتحقق من نتائج التدريب مستقلًا.",
+      "reviewedAt": "2026-11-15T17:40:40+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "README — DeepSeek V3 in JAX",
+          "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax"
+        },
+        {
+          "title": "MIT License",
+          "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax/blob/main/LICENSE"
+        }
+      ],
+      "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax"
+    },
+    "5e606231a9fd6a9dc3": {
+      "titleAr": "Gawain: أداة لفرض type hints على متغيرات Python",
+      "summaryAr": "يقدم المستودع أداة Python تفحص وجود type annotations للمتغيرات، وتتكامل مع ty أو Pyrefly، مع أوضاع متفاوتة في الصرامة. يعرض README قياسًا على مشروع كبير، لكنه قياس يخص بيئة صاحب المشروع.",
+      "whyItMatters": "التحليل: قد تساعد الأداة الفرق التي تريد توحيد مستوى التلميحات النوعية وتحسين قابلية الصيانة، لكنها تضيف قاعدة فحص ينبغي اختبارها تدريجيًا حتى لا تتحول إلى عبء على الشيفرة القديمة.",
+      "audience": "مطورو Python، مسؤولو المستودعات، وفرق الجودة الساكنة للشيفرة.",
+      "nextSteps": [
+        "ابدأ بتجربتها على فرع تجريبي لا على المستودع الرئيسي.",
+        "قارن الوضع الافتراضي بالوضع الصارم.",
+        "تحقق من توافق إصدار ty أو Pyrefly مع مشروعك.",
+        "راجع الاستثناءات والنتائج الكاذبة قبل اعتمادها في CI."
+      ],
+      "limitations": "القياس المنشور في README ذاتي وعلى جهاز واحد، وليس مقارنة مستقلة. الأداة حديثة وتتطلب أداة فحص نوعي متوافقة؛ لم أشغّلها على مشروع فعلي.",
+      "reviewedAt": "2026-11-15T17:40:40+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "README — Gawain",
+          "url": "https://github.com/matheuzgomes/gawain"
+        },
+        {
+          "title": "MIT License",
+          "url": "https://github.com/matheuzgomes/gawain/blob/main/LICENSE"
+        }
+      ],
+      "url": "https://github.com/matheuzgomes/gawain"
+    },
+    "0303ada4a529724d5d": {
+      "titleAr": "تعطل اتصالات مراقبة الحركة الجوية الأمريكية يبرز مخاطر الشبكات القديمة",
+      "summaryAr": "أدى اضطراب اتصالات إلى إيقاف وطني للإقلاع في الولايات المتحدة قرابة خمس ساعات يوم 13 نوفمبر. أفادت Reuters بتأثر 17 من 22 مركزًا للمراقبة، وبأن مشكلة في أجهزة توجيه أثناء تحديث الشبكة قد تكون عاملًا؛ لكن المسؤولين قالوا إن السبب النهائي لم يُحسم بعد.",
+      "whyItMatters": "التحليل: يوضح الحادث أن تحديث البنية الحرجة يحتاج عزلًا للأعطال، ومسارات احتياطية واختبارات انتقال، لا مجرد استبدال النحاس بالألياف. لا يثبت العنوان أن جهازًا واحدًا حُدد نهائيًا بوصفه السبب.",
+      "audience": "طلاب الشبكات، هندسة الأنظمة، الاعتمادية، والبنية التحتية الحرجة.",
+      "nextSteps": [
+        "قارن مفهوم single point of failure بتصميمات التكرار متعددة المسارات.",
+        "اقرأ تغطية Reuters وتحديثات FAA لفصل الوقائع عن الفرضيات.",
+        "استخدم الحادث مثالًا دراسيًا على إدارة الانتقال بين الأنظمة القديمة والجديدة."
+      ],
+      "limitations": "رابط Wall Street Journal الأصلي يتطلب وصولًا مدفوعًا؛ لذلك لم أقرأه كاملًا واستخدمت basis=metadata. جرى التحقق من تفاصيل الحادث عبر Reuters وThe Guardian. سبب العطل النهائي ظل قيد التحقيق في التغطية التي تمت مراجعتها.",
+      "reviewedAt": "2026-11-15T17:40:40+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "The Single Router in Southern Arkansas — Wall Street Journal",
+          "url": "https://www.wsj.com/business/airlines/the-single-router-in-southern-arkansas-that-ground-air-travel-to-a-halt-eedc326c"
+        },
+        {
+          "title": "Reuters — US aviation shutdown blamed on L3Harris installed router",
+          "url": "https://www.reuters.com/business/aerospace-defense/us-aviation-shutdown-blamed-l3-harris-installed-router-2026-11-14/"
+        },
+        {
+          "title": "The Guardian — Flights resume after FAA ground stop",
+          "url": "https://www.theguardian.com/world/2026/nov/13/faa-nationwide-ground-stop-flights"
+        }
+      ],
+      "url": "https://www.wsj.com/business/airlines/the-single-router-in-southern-arkansas-that-ground-air-travel-to-a-halt-eedc326c"
+    },
+    "d475ddecdb36eb2421": {
+      "titleAr": "Kiri يطرح بيئة تشغيل حاويات بديلة في مرحلة beta",
+      "summaryAr": "يعرض Kiri بيئة لتشغيل الحاويات عبر واجهات متوافقة مع Docker CLI وCompose وDocker Engine API، ويذكر الموقع الرسمي دعم macOS وWindows وLinux. يعلن المطور عن بدء تشغيل أسرع بنحو ثمانية أضعاف في اختبار محلي واحد على Mac.",
+      "whyItMatters": "التحليل: قد تقلل بيئة تشغيل خفيفة زمن الانتظار في دورات التطوير المحلية، لكن الأهم هو توافق الصور والشبكات والتخزين وCompose، لا نتيجة أمر واحد فقط.",
+      "audience": "مطورو البرمجيات، DevOps، ومستخدمو الحاويات محليًا.",
+      "nextSteps": [
+        "اقرأ وثائق التوافق قبل نقل مشروع قائم.",
+        "اختبره على مشروع تجريبي غير حساس.",
+        "قارن زمن البدء وبناء الصور وتشغيل Compose في بيئتك نفسها.",
+        "لا تعتمد نسخة beta في بيئة إنتاج دون مراجعة الاستقرار والدعم."
+      ],
+      "limitations": "إصدار 0.2.1 في مرحلة beta؛ أرقام الأداء منشورة من الشركة ومرتبطة ببيئة اختبار محددة وليست قياسًا مستقلًا. لم أتحقق من التوافق على أنظمة متعددة، ولم أجد في الصفحات المقروءة ترخيصًا مفتوح المصدر واضحًا.",
+      "reviewedAt": "2026-11-15T17:40:40+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "Kiri — The Modern Container Runtime",
+          "url": "https://runkiri.com/"
+        },
+        {
+          "title": "Kiri Documentation",
+          "url": "https://docs.runkiri.com/"
+        }
+      ],
+      "url": "https://runkiri.com/"
+    },
+    "af7f8d8cd3854a599b": {
+      "titleAr": "Agweb يقدم متصفح WebKit مخصصًا لوكلاء البرمجة على macOS",
+      "summaryAr": "يصف المستودع Agweb بأنه متصفح مبني على WebKit لنظام macOS، مع واجهة سطر أوامر وخصائص تسمح للوكلاء بإدارة جلسات التصفح دون الاستحواذ على تركيز نافذة المستخدم. الترخيص في المستودع MIT.",
+      "whyItMatters": "التحليل: يوضح اتجاهًا نحو فصل تجربة المتصفح التي يستخدمها الإنسان عن أتمتة الوكلاء، لكنه حل محدود المنصة ومحرك العرض، وليس متصفحًا عامًا لكل أنظمة التشغيل.",
+      "audience": "مطورو وكلاء البرمجة وأدوات الأتمتة على macOS.",
+      "nextSteps": [
+        "راجع متطلبات إصدار macOS قبل التجربة.",
+        "اختبره بملف تعريف منفصل وحساب تجريبي.",
+        "تحقق من المواقع التي تعتمد خصائص Chromium غير المتاحة في WebKit.",
+        "راجع أذونات الجلسات والملفات قبل ربط أي حساب حقيقي."
+      ],
+      "limitations": "المشروع مخصص لـmacOS ويعتمد WebKit؛ لذلك قد تختلف التوافقية عن Chromium، ولا يناسب Android أو Windows. لم أشغّل التطبيق أو أتحقق من ادعاءات README عمليًا.",
+      "reviewedAt": "2026-11-15T17:40:40+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "README — Agweb",
+          "url": "https://github.com/paul-nameless/agweb"
+        },
+        {
+          "title": "MIT License",
+          "url": "https://github.com/paul-nameless/agweb/blob/main/LICENSE"
+        }
+      ],
+      "url": "https://github.com/paul-nameless/agweb"
+    },
+    "af020eb3695952769c": {
+      "titleAr": "تحليل يوازن جدوى مراكز البيانات المدارية مع قيودها الهندسية",
+      "summaryAr": "تبحث ورقة تحليلية منشورة في 22 مايو 2026 احتمال وضع مراكز بيانات في المدار، وتناقش تكلفة الإطلاق، والتبريد والمشعات، والإشعاع، والصيانة والاتصال. وهي دراسة سيناريوهات وليست إعلانًا عن مركز بيانات تجاري يعمل في الفضاء.",
+      "whyItMatters": "التحليل: يربط نمو أحمال الذكاء الاصطناعي بقيود الطاقة والتبريد على الأرض، لكنه يوضح أن الوصول إلى المدار يضيف كلفة وصعوبة صيانة واعتمادية قد تتجاوز مزايا الطاقة الشمسية.",
+      "audience": "باحثو بنية الذكاء الاصطناعي، هندسة الفضاء، ومهندسو مراكز البيانات.",
+      "nextSteps": [
+        "افصل الافتراضات الاقتصادية عن النتائج المقاسة.",
+        "قارن تكلفة الإطلاق والتبريد والصيانة مع مراكز البيانات الأرضية.",
+        "تابع التجارب المدارية الفعلية قبل اعتبار السيناريو قابلًا للتطبيق التجاري."
+      ],
+      "limitations": "المقال تحليلي وتاريخ نشره 22 مايو 2026، وقد أعاد مجتمع Hacker News تداوله في نوفمبر؛ لا توجد في المقال أدلة على تشغيل مركز بيانات مداري تجاري. التقديرات تعتمد على افتراضات مستقبلية عن الإطلاق والتبريد.",
+      "reviewedAt": "2026-11-15T17:40:40+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Forethought — Will We Really Put Data Centers in Space?",
+          "url": "https://www.forethought.org/research/will-we-really-put-data-centers-in-space"
+        }
+      ],
+      "url": "https://www.forethought.org/research/will-we-really-put-data-centers-in-space"
+    },
+    "1ed6c2a0f5a9074992": {
+      "titleAr": "Fursoy: نواة RISC-V خارج الترتيب مكتوبة بـSystemVerilog",
+      "summaryAr": "يعرض المستودع نواة RV64IMAFDV خارج الترتيب، ويذكر إقلاع Linux 6.6.50 وBusyBox مع دعم Sv39، ويعرض هدف توقيت 500MHz ضمن تدفق synthesis باستخدام مكتبة Nangate 45nm. هذه نتائج تصميم ومحاكاة/توليف يعلنها المشروع، وليست قياسًا لشريحة مصنعة.",
+      "whyItMatters": "التحليل: يصلح المشروع مادة دراسة متقدمة لفهم RTL والذاكرة الافتراضية والتنفيذ خارج الترتيب والتحقق من المعالجات، لكنه يتطلب معرفة بهندسة الحاسوب وأدوات التحقق.",
+      "audience": "طلاب هندسة الحاسوب، ومهتمو تصميم المعالجات وSystemVerilog.",
+      "nextSteps": [
+        "راجع قائمة تعليمات RISC-V المدعومة وحدود التنفيذ.",
+        "اقرأ تعليمات المحاكاة والاختبارات في README.",
+        "افصل نتائج synthesis عن الأداء الفعلي على عتاد.",
+        "لا تعتبر هدف 500MHz قياسًا لمعالج تجاري."
+      ],
+      "limitations": "تردد 500MHz هدف timing في تدفق synthesis وفق README وليس أداء شريحة فعلية. ادعاء إقلاع Linux صادر عن المشروع ولم أعد تشغيله أو أتحقق منه مستقلًا.",
+      "reviewedAt": "2026-11-15T17:40:40+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "README — Fursoy CPU",
+          "url": "https://github.com/FURSOY/fursoy-cpu"
+        },
+        {
+          "title": "Apache License 2.0",
+          "url": "https://github.com/FURSOY/fursoy-cpu/blob/main/LICENSE"
+        }
+      ],
+      "url": "https://github.com/FURSOY/fursoy-cpu"
+    },
+    "b6a998f7218333dc05": {
+      "titleAr": "Turbo-Browser-MCP يجمع مهام أتمتة المتصفح في أدوات دفعيّة",
+      "summaryAr": "يقدم المستودع خادم MCP لأتمتة المتصفح، مع استدعاءات دفعيّة ولقطات DOM تفاضلية وحواجز مراجعة قبل إرسال النماذج. يذكر README الحاجة إلى Node.js 20 أو أحدث، ويعلن 407 اختبارات ناجحة.",
+      "whyItMatters": "التحليل: قد يقلل تجميع العمليات عدد استدعاءات الأدوات في سير عمل الوكلاء، لكن أتمتة المتصفح تتعامل مع جلسات ومحتوى حسابات؛ لذلك يجب عزلها ومراجعة كل إجراء قبل الإرسال.",
+      "audience": "مطورو MCP، وأدوات الوكلاء، وفرق اختبار واجهات الويب.",
+      "nextSteps": [
+        "اقرأ README والترخيص ومتطلبات Node قبل التجربة.",
+        "استخدم حسابات وبيانات اختبار منفصلة.",
+        "راجع حاجز الموافقة قبل إرسال أي نموذج.",
+        "قِس زمن التنفيذ واستهلاك الرموز في بيئتك بدل اعتماد أرقام المستودع."
+      ],
+      "limitations": "عدد الاختبارات والقياسات الواردة في README ذاتية ولم أشغّلها مستقلًا. يتطلب Node 20+؛ ويجب التعامل مع جلسات المتصفح والصلاحيات بحذر وعدم ربط حسابات حساسة أثناء التجربة.",
+      "reviewedAt": "2026-11-15T17:40:40+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "README — Turbo-Browser-MCP",
+          "url": "https://github.com/Tthanh2k6/turbo-browser-mcp"
+        },
+        {
+          "title": "MIT License",
+          "url": "https://github.com/Tthanh2k6/turbo-browser-mcp/blob/main/LICENSE"
+        }
+      ],
+      "url": "https://github.com/Tthanh2k6/turbo-browser-mcp"
+    },
+    "02ffb690a313ac1d88": {
+      "titleAr": "تمويل الشركات الناشئة في الشرق الأوسط يسجل 173.8 مليون دولار خلال أسبوع",
+      "summaryAr": "بحسب تقرير إنت عربي الذي نقلته أراجيك، رُصدت ثماني صفقات بين 7 و13 نوفمبر 2026، وأُعلنت قيمة أربع منها بإجمالي 173.8 مليون دولار. وبلغت الصفقات السعودية المعلنة 101.3 مليون دولار، فيما استحوذت التقنية الصحية على 72.5 مليونًا من الإجمالي.",
+      "whyItMatters": "التحليل: تشير اللقطة الأسبوعية إلى نشاط في الذكاء الاصطناعي والأمن السيبراني والتقنية الصحية، لكنها لا تكفي لإثبات اتجاه طويل الأجل؛ مقارنة الأسبوع السابق البالغ 5.11 مليار دولار قد تتأثر بصفقة كبيرة واحدة.",
+      "audience": "رواد الأعمال، الطلاب المهتمون بالشركات الناشئة، ومتابعو الاستثمار التقني في المنطقة.",
+      "nextSteps": [
+        "راجع تفاصيل الصفقات والقطاعات في التقرير الأصلي.",
+        "قارن بيانات شهرية وربع سنوية قبل استنتاج اتجاه السوق.",
+        "تحقق من إعلانات الشركات نفسها عند استخدام الأرقام في دراسة أو عرض."
+      ],
+      "limitations": "الأرقام أسبوعية ومنقولة عن تقرير إنت عربي؛ أربع صفقات فقط من أصل ثمانٍ كشفت قيمتها. لا ينبغي استخدام أسبوع واحد للحكم على نمو السوق أو فرص الاستثمار.",
+      "reviewedAt": "2026-11-15T17:40:40+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "أراجيك — تمويل الشركات الناشئة في الشرق الأوسط يتراجع إلى 173.8 مليون دولار في أسبوع",
+          "url": "https://www.arageek.com/%D8%AA%D9%85%D9%88%D9%8A%D9%84-%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA-%D8%A7%D9%84%D9%86%D8%A7%D8%B4%D8%A6%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7"
+        }
+      ],
+      "url": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxNWG5UVEJwZ3YwUW9iZFE0TjNyS1ZmSm1mbHFRaU5OQjRHdDFWdG9lVk1maU41UzNNa1o5a1VlS0tyUndELTI0cFRrWXFzNFROUGctNmlUWHEwQjBKRmg5YlVwem5IS2kxVlBKdGNBTFE4V01fdURZeUZQV1BTQ1BoVEVwdHZZXzc2dnBrOXJIY1JyRkZSMXMtaGp0c1JHMmNXcVZVWHVLQU95ZS1qYnVWT18wc3ptV1RjS2xrMFR3M19taFp5Z3A3WTZCdjZUa01WV2VpZk0xcFp1eXlORG5fR1N6QUtiMkFLUVo4U1I0c3Qzbko4cmhNbkpoVUZNY09hNDlGaE04UmlkUUNuUlJpTGxweHZvV2hfT1ZHd0M3Y1ZKSXFrSjFyTG9DX0RGcTMxNHFJcm8wMHllOW9nMHhVUjlSRQ?oc=5"
+    },
+    "b8d7118498bb09f6dd": {
+      "titleAr": "قمة HR Tech Saudi تنعقد في الرياض يومي 16 و17 نوفمبر",
+      "summaryAr": "يؤكد تقويم الجهة المنظمة QnA International انعقاد النسخة العاشرة من HR Tech Saudi Summit في فندق voco Riyadh يومي 16 و17 نوفمبر 2026. وتعرض صفحة الفعالية موضوعات تشمل استقطاب المواهب بالذكاء الاصطناعي، وتحليلات الأفراد، وتجربة الموظف، وأمن بيانات العاملين.",
+      "whyItMatters": "التحليل: تبرز القمة تقاطع الذكاء الاصطناعي مع أنظمة الموارد البشرية والبيانات والامتثال في السوق السعودي. وهي فعالية مهنية لقادة HR وتقنية المعلومات، وليست إعلان وظائف أو ضمانًا لفرص توظيف.",
+      "audience": "المهتمون بتقنية الموارد البشرية، وتحليلات البيانات، والمنتجات المؤسسية، وقادة HR وتقنية المعلومات.",
+      "nextSteps": [
+        "تحقق من البرنامج والتسجيل مباشرة لدى المنظم.",
+        "راجع جلسات الذكاء الاصطناعي وتحليلات الأفراد إن كانت ضمن البرنامج النهائي.",
+        "تعامل معها كفعالية مهنية لا كإعلان توظيف."
+      ],
+      "limitations": "لم أتمكن من قراءة المقال الأصلي المرتبط عبر Google News؛ لذلك basis=metadata. تاريخ ومكان الفعالية مؤكدان في تقويم QnA، بينما تفاصيل الحضور المتوقع والبرنامج مأخوذة من صفحة SaudiCon وقد تتغير.",
+      "reviewedAt": "2026-11-15T17:40:40+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "QnA International — Events Calendar",
+          "url": "https://www.qnainternational.com/"
+        },
+        {
+          "title": "SaudiCon — HR Tech Saudi Summit 2026",
+          "url": "https://saudicon.app/en/events/hr-tech-saudi-summit-2026"
+        }
+      ],
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQWmlkSjljazR5QzkzWm42Zk9ieDMzNVVBS2pBSUc4NkY0MnZaTlJrb3Z6ajBTbGQyQkN1Z0tNc0VkZWJnZ3RNQlo1LXpsN2pRYnc3MzRncEtOX3pTSENxSnNQTDlzN2xNTkJTMnNURWxWaFAtR1lwRzlFZXBaWUd6SjJCY3M5UQ?oc=5"
+    }
+  }
+}
