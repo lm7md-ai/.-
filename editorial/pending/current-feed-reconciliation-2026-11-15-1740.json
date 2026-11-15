@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-15T17:40:40+03:00",
+  "baseMain": "1067f81b8809f44726e1f0de2dcede5665f4fa77",
+  "snapshots": {
+    "feedBlobSha": "e555ac02a3a78f8254273ea6bd3da8d4dbeb6c60",
+    "feedGeneratedAt": "2026-11-15T10:02:19+00:00",
+    "feedItems": 800,
+    "feedNews": 700,
+    "feedProjects": 100,
+    "editorialBlobSha": "fc7f0eba0ffe375773e7021a049a19e2c5dfbde0",
+    "editorialEntriesBefore": 991,
+    "editorialEntriesAfter": 1001
+  },
+  "incomingInventory": {
+    "files": 126,
+    "recordOccurrences": 1284,
+    "countsAreOccurrencesNotUniqueIds": true,
+    "alreadyImportedExactIdUrlOccurrences": 1149,
+    "currentFeedExactOccurrences": 261,
+    "pendingExactFeedNotEditorialOccurrences": 0,
+    "absentFromCurrentFeedAndEditorialOccurrences": 135,
+    "confirmedExpiredOccurrences": 0,
+    "malformedJsonFiles": 0,
+    "structuralValidationErrors": 0,
+    "idUrlConflicts": 0,
+    "urlOwnedByDifferentIdCollisions": 1,
+    "method": "Enumerated 61 October and 65 November JSON paths in editorial/incoming; fetched and structurally checked all 126 documents; compared each occurrence by exact ID and URL against current Feed and Editorial. This is a structural equivalent, not the official Python CLI."
+  },
+  "collision": {
+    "id": "7a99eca9b2ce14d9f5",
+    "incomingFile": "editorial/incoming/nabdh-editorial-2026-10-27-1141.json",
+    "url": "https://github.com/rasbt/LLMs-from-scratch",
+    "editorialIdStillHasExactUrl": true,
+    "currentFeedId": "e0cbbf211a55e79f34",
+    "currentFeedKind": "project",
+    "action": "hold; do not remap by title or create an alias ID"
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "incomingFile": "nabdh-editorial-2026-10-24-0542.json",
+      "inSeen": true,
+      "inCurrentFeed": false,
+      "inCurrentEditorial": false,
+      "libraryDossier": true
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "incomingFile": "nabdh-editorial-2026-10-24-1143.json",
+      "inSeen": true,
+      "inCurrentFeed": false,
+      "inCurrentEditorial": false,
+      "libraryDossier": false
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "incomingFile": "nabdh-editorial-2026-10-24-1143.json",
+      "inSeen": true,
+      "inCurrentFeed": false,
+      "inCurrentEditorial": false,
+      "libraryDossier": false
+    }
+  ],
+  "newNews": {
+    "prepared": 10,
+    "ids": [
+      "34de9d80d81453d365",
+      "5e606231a9fd6a9dc3",
+      "0303ada4a529724d5d",
+      "d475ddecdb36eb2421",
+      "af7f8d8cd3854a599b",
+      "af020eb3695952769c",
+      "1ed6c2a0f5a9074992",
+      "b6a998f7218333dc05",
+      "02ffb690a313ac1d88",
+      "b8d7118498bb09f6dd"
+    ],
+    "allExactCurrentFeed": true,
+    "basisCounts": {
+      "readme": 6,
+      "article": 2,
+      "metadata": 2
+    },
+    "testEvidence": "none; no tests claimed"
+  },
+  "projects": {
+    "previousEightReviewed": 8,
+    "active": 8,
+    "archived": 0,
+    "feedProjects": 100,
+    "editorialExactFeedProjects": 100,
+    "newProjectCards": 0,
+    "historicalCatalog": 73,
+    "activeCatalogEntries": 71,
+    "archivedCatalogEntries": 2,
+    "licenseChecksStillPending": 10,
+    "testStatus": "not_run"
+  },
+  "execution": {
+    "officialLocalValidate": false,
+    "officialLocalImport": false,
+    "localUnittest": false,
+    "reason": "No writable repository checkout/Python runtime was available in this run. The incoming documents were structurally checked and merged with exact Feed ID/URL checks; GitHub PR CI will run the official validator and tests."
+  },
+  "publication": {
+    "directPagesFetch": "not verified; Pages host returned DisabledError",
+    "latestAvailablePublishedArtifact": "14155817694",
+    "latestArtifactRun": "43699797688",
+    "artifactPredatesThisEditorialMerge": true
+  }
+}
