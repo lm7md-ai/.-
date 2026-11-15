@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-15T10:00:28.454Z",
+  "baseMain": "656fd8459dd47988339af40937cace83ebb54080",
+  "snapshots": {
+    "feedGeneratedAt": "2026-11-15T09:33:26+00:00",
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialEntries": 983,
+    "editorialExactCurrentFeed": 167,
+    "newsExactCurrentFeed": 67,
+    "projectsExactCurrentFeed": 100,
+    "unenrichedNews": 633
+  },
+  "incomingInventory": {
+    "files": 125,
+    "recordOccurrences": 1276,
+    "countsAreOccurrencesNotUniqueIds": true,
+    "alreadyImportedExactIdUrlOccurrences": 1141,
+    "currentFeedExactOccurrences": 253,
+    "pendingExactFeedNotEditorialOccurrences": 0,
+    "absentFromCurrentFeedAndEditorialOccurrences": 135,
+    "absentAlsoPresentInSeenOccurrences": 135,
+    "confirmedExpiredOccurrences": 0,
+    "malformedJsonFiles": 0,
+    "urlOwnedByDifferentIdCollisions": 1,
+    "structuralValidationNote": "124 files were structurally checked in the previous reconciliation; the newest 8-record file was merged in PR #101 and the complete 983-entry editorial file passed the official validator in the current workflow. All 125 incoming JSON files parsed successfully in this run."
+  },
+  "collision": {
+    "id": "7a99eca9b2ce14d9f5",
+    "incomingFile": "editorial/incoming/nabdh-editorial-2026-10-27-1141.json",
+    "url": "https://github.com/rasbt/LLMs-from-scratch",
+    "editorialIdStillHasExactUrl": true,
+    "currentFeedId": "e0cbbf211a55e79f34",
+    "currentFeedKind": "project",
+    "action": "hold; do not remap by title or create an alias ID"
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "incomingFiles": [
+        "nabdh-editorial-2026-10-24-0542.json"
+      ],
+      "inSeen": true,
+      "inCurrentFeed": false,
+      "inCurrentEditorial": false,
+      "libraryDossier": true
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "incomingFiles": [
+        "nabdh-editorial-2026-10-24-1143.json"
+      ],
+      "inSeen": true,
+      "inCurrentFeed": false,
+      "inCurrentEditorial": false,
+      "libraryDossier": false
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "incomingFiles": [
+        "nabdh-editorial-2026-10-24-1143.json"
+      ],
+      "inSeen": true,
+      "inCurrentFeed": false,
+      "inCurrentEditorial": false,
+      "libraryDossier": false
+    }
+  ],
+  "newNews": {
+    "prepared": 8,
+    "ids": [
+      "daf938509f03026751",
+      "7e8a918c3908973f72",
+      "1de9e89923c3293b6b",
+      "d5d8547e961af0e1fa",
+      "3485621c12ab9987cf",
+      "c319b12e1cc2fac305",
+      "f16fbfb856742f516c",
+      "88ae2cfdd6f592722f"
+    ],
+    "allExactCurrentFeed": true,
+    "basisCounts": {
+      "article": 8,
+      "metadata": 0
+    },
+    "sourceReview": "Original pages/PDFs read; claims and analysis are explicitly attributed; no test claims made."
+  },
+  "projects": {
+    "previousEightReviewed": 8,
+    "active": 8,
+    "archived": 0,
+    "inCurrentFeed": 1,
+    "inEditorialByOriginalRepoUrl": 2,
+    "inEditorialExactCurrentFeed": 1,
+    "newProjectsAdded": 0,
+    "historicalCatalog": 73,
+    "activeCatalogEntries": 71,
+    "archivedCatalogEntries": 2,
+    "testStatus": "not_run"
+  },
+  "execution": {
+    "officialLocalValidate": false,
+    "officialLocalImport": false,
+    "localUnittest": false,
+    "reason": "No full writable repository checkout/runtime was available; a structural equivalent and ID/URL comparison were performed. CI will run the official validator and tests on the PR."
+  },
+  "publication": {
+    "currentMainEditorialEntries": 983,
+    "expectedAfterMerge": 991,
+    "directPagesFetch": "not verified; Pages domain returned DisabledError in browser tool",
+    "latestPublishedArtifact": "14155817694",
+    "latestWorkflowRun": "43699797688",
+    "latestWorkflowConclusion": "success"
+  }
+}
