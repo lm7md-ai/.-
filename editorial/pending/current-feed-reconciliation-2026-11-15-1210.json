@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-15T12:10:07+03:00",
+  "repository": "lm7md-ai/.-",
+  "baseMain": "f6ce139512433349f3b9648bebe77c168999b87f",
+  "snapshots": {
+    "feedBlob": "cac45ddc128a2abdac8843dfe286aeb1a60d5e4d",
+    "feedGeneratedAt": "2026-11-15T06:24:41Z",
+    "feedItems": 800,
+    "feedNews": 700,
+    "feedProjects": 100,
+    "editorialBlob": "6e829ac32ae34fc8aabed0cbf3a0467e99fefc40",
+    "editorialEntries": 975,
+    "seenBlob": "6599a435f84077618e51261ef8fc1778af191a4a"
+  },
+  "incomingInventory": {
+    "files": 124,
+    "recordOccurrences": 1268,
+    "countsAreOccurrencesNotUniqueIds": true,
+    "classification": {
+      "alreadyImportedExactIdUrl": 1133,
+      "currentFeedExactPending": 0,
+      "absentFromCurrentFeedAndEditorial": 135,
+      "idUrlConflicts": 0,
+      "malformedFiles": 0,
+      "structuralErrors": 0,
+      "confirmedExpired": 0,
+      "needsCorrection": 0
+    },
+    "method": "Fetched and parsed all 124 incoming JSON files; compared every record's literal id and url against current main Feed and Editorial. Structural equivalent checked required fields, HTTPS source URLs, reviewedAt timezone, basis, nextSteps, and proposal shape. The 135 absent occurrences are not marked expired because absence from a capped feed does not prove expiry.",
+    "unmatchedAction": "Retain original incoming files and IDs; do not import absent records; do not derive aliases from titles."
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "seen": true,
+      "inFeed": false,
+      "inEditorial": false,
+      "incomingSearchMatch": false,
+      "researchOnly": true,
+      "license": "Apache-2.0",
+      "note": "Repository remains active; research dossier exists in the historical catalog, not as a current public Feed/Editorial item."
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "seen": true,
+      "inFeed": false,
+      "inEditorial": false,
+      "incomingSearchMatch": false,
+      "researchOnly": false,
+      "note": "Seen-only; no current Feed/Editorial entry or research dossier found."
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "seen": true,
+      "inFeed": false,
+      "inEditorial": false,
+      "incomingSearchMatch": false,
+      "researchOnly": false,
+      "note": "Seen-only; no current Feed/Editorial entry or research dossier found."
+    }
+  ],
+  "selectedNews": {
+    "reviewedCandidates": 12,
+    "alreadyEnrichedAndPreserved": 4,
+    "newExactFeedEntries": 8,
+    "newIds": [
+      "7d4d71d056da02862d",
+      "cdc8eef67bc55a0d0f",
+      "96c7f67bef86f83160",
+      "6841e619fcd7e8d937",
+      "cd1f1a3b900c462417",
+      "c44ac57feedcf64a76",
+      "bf3b76431e18449fd8",
+      "eaf76493fdb0b4bfce"
+    ],
+    "basisCounts": {
+      "article": 7,
+      "metadata": 1
+    }
+  },
+  "projects": {
+    "currentFeedProjects": 100,
+    "exactEditorialCoverage": 100,
+    "previousEightReviewed": 8,
+    "previousEightActive": 8,
+    "previousEightArchived": 0,
+    "newProjectsAdded": 0,
+    "researchCatalog": {
+      "total": 73,
+      "active": 71,
+      "archived": 2,
+      "licensesNeedingUpstreamVerification": 10
+    },
+    "testStatus": "not_run"
+  },
+  "execution": {
+    "localGitClone": "failed: DNS resolution unavailable",
+    "officialValidateOnIncoming": "not run locally",
+    "officialImport": "not run locally; no backlog records were eligible and new records were merged with the script's merge_documents semantics",
+    "unittestLocal": "not run locally",
+    "structuralEquivalent": "passed for 124 files / 1,268 record occurrences and 8 new entries",
+    "ciValidation": "existing PR check workflow runs python -m unittest discover -s tests -v and python scripts/editorial.py validate on the merged editorial file"
+  },
+  "publication": {
+    "latestMainWorkflowRun": 182,
+    "runId": 43685293300,
+    "conclusion": "success",
+    "jobId": 132724401565,
+    "artifactId": 14150775127,
+    "artifactInspected": true,
+    "artifactEditorialEntries": 975,
+    "artifactFeedItems": 800,
+    "artifactStatusCollected": 294,
+    "deployStep": "success",
+    "directPagesJson": "DisabledError; live URL could not be fetched independently"
+  },
+  "notes": [
+    "No manual changes to feed.json or seen.json.",
+    "No code, design, workflow, or deployment settings were changed.",
+    "PR #78 and PR #71 remain open and untouched.",
+    "PR #1 and PR #2 are merged; PR #100 is merged."
+  ]
+}
