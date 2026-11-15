@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-16T02:54:42+03:00",
+  "baseMain": "f8658f0f5e8da236893c00a0d550ebf7c29a930b",
+  "snapshots": {
+    "feedBlobSha": "159cacdde87d6003d6924acaec4e47482958a9a4",
+    "feedGeneratedAt": "2026-11-15T22:46:23+00:00",
+    "feedItems": 800,
+    "feedNews": 700,
+    "feedProjects": 100,
+    "editorialBlobShaBefore": "2e70c664e1eda1917c7e6f35d20e429fda583c50",
+    "editorialEntriesBefore": 1001,
+    "seenIds": 5185
+  },
+  "incomingInventory": {
+    "files": 127,
+    "recordOccurrences": 1294,
+    "countsAreOccurrencesNotUniqueIds": true,
+    "alreadyImportedExactIdUrlOccurrences": 1159,
+    "currentFeedExactOccurrences": 271,
+    "pendingExactFeedNotEditorialOccurrences": 0,
+    "absentFromCurrentFeedAndEditorialOccurrences": 135,
+    "confirmedExpiredOccurrences": 0,
+    "malformedJsonFiles": 0,
+    "structuralValidationErrors": 0,
+    "idUrlConflicts": 0,
+    "urlOwnedByDifferentIdCollisions": 1,
+    "deltaSincePrevious": {
+      "filesAdded": 1,
+      "occurrencesAdded": 10,
+      "newExactCurrentFeedItemsNowImported": 10
+    },
+    "method": "The previous reconciliation structurally inspected 126 files and recorded 1,284 occurrences. This run enumerated 127 current incoming paths and parsed all documents in batches; the new 10-item file was validated by the official scripts/editorial.py CLI. Counts are occurrences, not unique IDs. The official CLI was not run over all historical incoming files."
+  },
+  "collision": {
+    "oldEditorialId": "7a99eca9b2ce14d9f5",
+    "currentFeedId": "e0cbbf211a55e79f34",
+    "url": "https://github.com/rasbt/LLMs-from-scratch",
+    "oldEditorialEntryHasExactUrl": true,
+    "currentFeedEntryHasExactUrl": true,
+    "decision": "hold; do not remap by title, merge IDs, or create an alias"
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "inSeen": true,
+      "inCurrentFeed": false,
+      "inCurrentEditorial": false,
+      "libraryDossier": true,
+      "status": "not archived; latest release v0.1.8; CNCF migration notice in repository",
+      "decision": "research-only; do not import without exact current Feed ID/URL",
+      "sources": [
+        {
+          "title": "NVIDIA/OpenShell repository and migration notice",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        },
+        {
+          "title": "OpenShell v0.1.8 release",
+          "url": "https://github.com/NVIDIA/OpenShell/releases/tag/v0.1.8"
+        }
+      ]
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "url": "https://www.canva.com/newsroom/news/canva-craft/",
+      "inSeen": true,
+      "inCurrentFeed": false,
+      "inCurrentEditorial": false,
+      "libraryDossier": false,
+      "publishedAt": "2026-10-22",
+      "outside21DayRssWindow": true,
+      "status": "official Canva page remains available; Public API access stated; Canva MCP described as coming soon; DesignArena ranking is Canva's own claim",
+      "decision": "out of RSS window; do not import or create alternate ID",
+      "sources": [
+        {
+          "title": "Canva — Introducing Canva Craft",
+          "url": "https://www.canva.com/newsroom/news/canva-craft/"
+        }
+      ]
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "inSeen": true,
+      "inCurrentFeed": false,
+      "inCurrentEditorial": false,
+      "libraryDossier": false,
+      "publishedAt": "2026-10-22",
+      "outside21DayRssWindow": true,
+      "status": "official announcement describes an agent identity key, user approval on the user's device, and credential fill without exposing the secret to the agent",
+      "decision": "out of RSS window; do not import or create alternate ID",
+      "sources": [
+        {
+          "title": "1Password — 1Password for Agents launch announcement",
+          "url": "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents"
+        },
+        {
+          "title": "TechCrunch — 1Password launches agent sign-in",
+          "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/"
+        }
+      ]
+    }
+  ],
+  "unmatchedDecision": {
+    "absentOccurrences": 135,
+    "confirmedExpired": 0,
+    "decision": "retain original incoming records; do not import because they have no exact current Feed ID/URL pair and no proof of expiry. Recheck on a future fresh Feed snapshot."
+  },
+  "newNews": {
+    "prepared": 12,
+    "allExactCurrentFeed": true,
+    "basisCounts": {
+      "article": 9,
+      "readme": 2,
+      "metadata": 1
+    },
+    "newEditorialEntriesAfterImport": 12,
+    "editorialEntriesAfterImport": 1013,
+    "testEvidence": "none; no project execution or benchmark test claimed"
+  },
+  "projects": {
+    "feedProjects": 100,
+    "editorialExactFeedProjects": 100,
+    "previousEightReviewed": 8,
+    "previousEightNotArchived": 8,
+    "previousEightArchived": 0,
+    "newProjectCards": 0,
+    "publishedHistoricalLibrary": {
+      "total": 31,
+      "active": 29,
+      "archived": 2,
+      "inCurrentFeed": 4,
+      "notInFeed": 27,
+      "licenseVerified": 31
+    },
+    "deepReviewedProjects": 3,
+    "deepIdeas": 90,
+    "genericReligiousDomains": 9,
+    "genericReligiousIdeas": 90,
+    "note": "No new project card was justified; the 100 current Feed projects are already enriched. The historical library was refreshed with upstream license evidence and dated activity metrics."
+  },
+  "execution": {
+    "officialLocalValidate": true,
+    "officialLocalImport": true,
+    "scriptBlobSha": "5996ca5c8eae1b25950c349336d4d0f48067fe8c",
+    "feedBlobShaMatchedMain": true,
+    "editorialBlobShaMatchedMainBeforeImport": true,
+    "mergedEditorialBlobSha": "fc6b2fedff979664ed4e881c7a6a7b1b9683a5c9",
+    "localUnittest": false,
+    "localUnittestReason": "The full repository checkout was not available locally; GitHub PR validation will run the repository's full unittest command."
+  },
+  "publication": {
+    "latestExistingRun": 43771124226,
+    "latestExistingArtifact": 14183934282,
+    "existingArtifactEditorialEntries": 1001,
+    "newContentNotYetPublished": true,
+    "directPagesHttpCheck": "not yet verified"
+  }
+}
