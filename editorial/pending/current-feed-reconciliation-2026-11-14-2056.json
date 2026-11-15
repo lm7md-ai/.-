@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-14T20:56:10+03:00",
+  "baseMain": "8b2fcb00963b1b86dd4e1636ad9b437116fe0e4b",
+  "incomingInventory": {
+    "files": 123,
+    "appearances": 1261,
+    "alreadyImportedExact": 1126,
+    "currentFeedExactPending": 1,
+    "absentFromCurrentFeedAndEditorial": 134,
+    "idUrlConflicts": 0,
+    "malformedFiles": 0,
+    "confirmedExpired": 0,
+    "needsCorrection": 0,
+    "prior117Files": {
+      "files": 117,
+      "appearances": 1194,
+      "alreadyImportedExact": 1084,
+      "seenOnlyAppearances": 110,
+      "seenOnlyUniqueIds": 84
+    },
+    "latestSixFiles": {
+      "files": 6,
+      "appearances": 67,
+      "alreadyImportedExact": 42,
+      "currentFeedExactPending": 1,
+      "absentFromCurrentFeedAndEditorial": 24,
+      "idUrlConflicts": 0,
+      "structuralValidationErrors": 0
+    }
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "seen": true,
+      "inFeed": false,
+      "inEditorial": false
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "seen": true,
+      "inFeed": false,
+      "inEditorial": false
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "seen": true,
+      "inFeed": false,
+      "inEditorial": false
+    }
+  ],
+  "feed": {
+    "generatedAt": "2026-11-14T17:55:00Z",
+    "total": 800,
+    "news": 700,
+    "projects": 100
+  },
+  "editorial": {
+    "before": 968,
+    "after": 976
+  },
+  "selectedNews": {
+    "count": 8,
+    "backlogImports": 1,
+    "newQueueEnrichments": 7,
+    "allExactFeedIdUrl": true,
+    "ids": [
+      "e2307d7e10d0392066",
+      "afe19bd014a42e97b9",
+      "22f7de6935dc23ea50",
+      "8b981141b76904904e",
+      "a2daa312bdf773c779",
+      "6fd244d2fe45a197cf",
+      "9b6607215c79a138b6",
+      "cdfd26896257823e51"
+    ]
+  },
+  "projects": {
+    "newProjects": 0,
+    "unEnrichedFeedProjects": 0,
+    "publishedLibrary": 31,
+    "researchOnlyCatalog": 73,
+    "researchActive": 71,
+    "researchArchived": 2,
+    "licensesPendingUpstreamVerification": 10,
+    "previousEight": {
+      "reviewed": 8,
+      "active": 8,
+      "archived": 0,
+      "inCurrentFeed": 1,
+      "inEditorialByOriginalRepoUrl": 2,
+      "inEditorialExactCurrentFeed": 1,
+      "lastMeasuredAt": "2026-11-14T14:44:08+03:00",
+      "testedThisRun": 0
+    }
+  },
+  "workflow": {
+    "run": 179,
+    "url": "https://github.com/lm7md-ai/.-/actions/runs/43612037859",
+    "conclusion": "failure",
+    "failedStep": "Deploy static website",
+    "artifactId": 14120846079,
+    "artifactUploaded": true,
+    "deployError": "The first attempt uploaded one github-pages artifact but deploy-pages reported zero artifacts. The rerun uploaded a second artifact; deploy-pages then found two artifacts with the same name and failed.",
+    "rerunAttempted": true,
+    "rerunConclusion": "failure",
+    "automaticSideEffectCommit": "8b2fcb00963b1b86dd4e1636ad9b437116fe0e4b",
+    "automaticChanges": [
+      "site/data/feed.json",
+      "site/data/seen.json",
+      "site/data/status.json"
+    ],
+    "feedSeenManuallyEdited": false,
+    "artifactIds": [
+      14120846079,
+      14125615508
+    ],
+    "firstAttempt": {
+      "artifactUploaded": 14120846079,
+      "deployActionFoundArtifacts": 0,
+      "conclusion": "failure"
+    },
+    "rerunAttempt": {
+      "artifactUploaded": 14125615508,
+      "deployActionFoundArtifacts": 2,
+      "conclusion": "failure",
+      "reason": "Multiple artifacts named github-pages were unexpectedly found"
+    }
+  },
+  "validation": {
+    "localUnitTests": "not_run",
+    "localOfficialValidate": "not_run",
+    "localOfficialImport": "not_run",
+    "structuralValidationOfLatestSixIncomingFiles": "passed",
+    "prCheckRun": {
+      "id": 43624470221,
+      "url": "https://github.com/lm7md-ai/.-/actions/runs/43624470221",
+      "status": "success",
+      "unitTests": 30,
+      "officialValidate": "976 editorial entries",
+      "javascriptSyntax": "success"
+    }
+  },
+  "publication": {
+    "mainEditorialCount": 968,
+    "branchEditorialCount": 976,
+    "merged": false,
+    "publishedVerified": false,
+    "publicSiteBrowserAccess": "unavailable"
+  }
+}
