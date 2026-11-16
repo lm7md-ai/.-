@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-16T03:07:00+03:00",
+  "baseMain": "00fb62ca7b06a62a32c2957dd02d097690d9853d",
+  "snapshots": {
+    "feedBlobSha": "4decff4594bd774e0cf039d46e3f8577692aeec0",
+    "feedGeneratedAt": "2026-11-16T00:01:47+00:00",
+    "feedItems": 800,
+    "feedNews": 700,
+    "feedProjects": 100,
+    "editorialBlobShaBefore": "fc6b2fedff979664ed4e881c7a6a7b1b9683a5c9",
+    "editorialEntriesBefore": 1013,
+    "seenBlobSha": "cf148d4027ebb44b99ad1af48bd12ff1cdef6b2b",
+    "seenIds": 5195
+  },
+  "priorInventorySnapshot": {
+    "report": "editorial/pending/current-feed-reconciliation-2026-11-16-0254.json",
+    "measuredAt": "2026-11-16T02:54:42+03:00",
+    "feedGeneratedAt": "2026-11-15T22:46:23+00:00",
+    "incomingFiles": 128,
+    "recordOccurrences": 1306,
+    "countsAreOccurrencesNotUniqueIds": true,
+    "alreadyImportedExactIdUrlOccurrences": 1171,
+    "currentFeedExactOccurrences": 283,
+    "pendingExactFeedNotEditorialOccurrences": 0,
+    "absentFromCurrentFeedAndEditorialOccurrences": 135,
+    "confirmedExpiredOccurrences": 0,
+    "malformedJsonFiles": 0,
+    "structuralValidationErrors": 0,
+    "idUrlConflicts": 0,
+    "urlOwnedByDifferentIdCollisions": 1,
+    "note": "هذه الأرقام تخص لقطة التغذية عند 22:46:23Z، وليست إعادة عد كاملة على تغذية 00:01:47Z."
+  },
+  "incomingAfter": {
+    "files": 129,
+    "recordOccurrences": 1308,
+    "countsAreOccurrencesNotUniqueIds": true,
+    "addedFile": "editorial/incoming/nabdh-news-2026-11-16-0307.json",
+    "addedOccurrences": 2
+  },
+  "newBatch": {
+    "prepared": 2,
+    "exactCurrentFeedIdUrl": 2,
+    "imported": 2,
+    "pendingExactFeedNotEditorialAfterImport": 0,
+    "basisCounts": {
+      "article": 1,
+      "metadata": 1
+    },
+    "items": [
+      {
+        "id": "a95ebd575e275280ef",
+        "url": "https://datatracker.ietf.org/doc/draft-banffy-httpbis-not-a-freezer/",
+        "basis": "article",
+        "sourceRead": "IETF Internet-Draft and IANA registry"
+      },
+      {
+        "id": "61200927e23c6bf1a9",
+        "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+        "basis": "metadata",
+        "sourceRead": "TechCrunch original inaccessible; secondary republication reviewed"
+      }
+    ],
+    "exclusions": [
+      {
+        "reason": "source date conflicts with feed recency",
+        "detail": "Emacs article page itself is dated 20 April 2026 despite a newer feed timestamp"
+      },
+      {
+        "reason": "duplicate event",
+        "detail": "Vulcan launch failure was already covered by an imported Reuters entry"
+      },
+      {
+        "reason": "source access or evidence insufficient",
+        "detail": "Other queue items were held rather than promoted without reliable source review"
+      }
+    ]
+  },
+  "unmatchedDecision": {
+    "absentOccurrencesAtPriorSnapshot": 135,
+    "confirmedExpired": 0,
+    "decision": "retain original IDs and URLs in Incoming; do not import without exact current Feed ID/URL; do not infer expiry from absence alone"
+  },
+  "collision": {
+    "oldEditorialId": "7a99eca9b2ce14d9f5",
+    "currentFeedId": "e0cbbf211a55e79f34",
+    "url": "https://github.com/rasbt/LLMs-from-scratch",
+    "decision": "hold; no ID remapping, title-based alias, or merge"
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "inSeen": true,
+      "inCurrentFeed": false,
+      "inCurrentEditorial": false,
+      "decision": "research-only"
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "inSeen": true,
+      "inCurrentFeed": false,
+      "inCurrentEditorial": false,
+      "decision": "outside 21-day RSS window; no import"
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "inSeen": true,
+      "inCurrentFeed": false,
+      "inCurrentEditorial": false,
+      "decision": "outside 21-day RSS window; no import"
+    }
+  ],
+  "projects": {
+    "currentFeedProjects": 100,
+    "currentFeedProjectsWithExactEditorial": 100,
+    "previousEightReviewed": 8,
+    "previousEightNotArchived": 8,
+    "previousEightArchived": 0,
+    "newProjectCards": 0,
+    "historicalLibraryTotal": 31,
+    "historicalLibraryActive": 29,
+    "historicalLibraryArchived": 2,
+    "historicalLibraryInCurrentFeed": 4,
+    "historicalLibraryOutsideCurrentFeed": 27,
+    "historicalLibraryLicensesVerified": 31,
+    "historicalLibraryMetricMeasuredAt": "2026-11-16T02:54:42+03:00",
+    "deepReviewedProjects": 3,
+    "deepIdeas": 90,
+    "genericReligiousDomains": 9,
+    "genericReligiousIdeas": 90
+  },
+  "execution": {
+    "officialScriptBlobSha": "5996ca5c8eae1b25950c349336d4d0f48067fe8c",
+    "localOfficialValidateIncoming": true,
+    "localOfficialImport": true,
+    "localOfficialValidateFinal": true,
+    "localUnitTests": false,
+    "localUnitTestsReason": "النسخة المحلية المؤقتة تضمنت البيانات والسكربت الرسميين فقط؛ اختبارات الوحدة شُغلت في GitHub Actions.",
+    "oldEditorialEntries": 1013,
+    "addedEditorialEntries": 2,
+    "removedEditorialEntries": 0,
+    "oldEntriesPreservedExactly": true,
+    "finalEditorialEntries": 1015
+  },
+  "publication": {
+    "priorPublishedArtifact": 14187251632,
+    "priorPublishedRun": 43777943627,
+    "priorArtifactEditorialEntries": 1013,
+    "newBatchPublicationPending": true,
+    "note": "الدفعة الجديدة لا تُعد منشورة حتى ينجح CI والنشر بعد دمج PR."
+  }
+}
