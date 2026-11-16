@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "measuredAt": "2026-11-16T02:54:42+03:00",
+  "source": "GitHub REST API repository metadata plus upstream license evidence",
+  "previousEight": [
+    {
+      "name": "AI Engineering Hub",
+      "repository": "patchy631/ai-engineering-hub",
+      "stars": 41902,
+      "forks": 6691,
+      "openIssues": 138,
+      "license": "MIT",
+      "archived": false,
+      "lastPushedAt": "2026-11-01T12:17:28Z",
+      "inFeed": true,
+      "editorialId": "fe0e6bfdbdd5822139",
+      "dossier": "editorial/library/ai-engineering-hub-dossier-2026-10-30-2044.json"
+    },
+    {
+      "name": "Google Gen AI SDK",
+      "repository": "googleapis/python-genai",
+      "stars": 4075,
+      "forks": 1067,
+      "openIssues": 386,
+      "license": "Apache-2.0",
+      "archived": false,
+      "lastPushedAt": "2026-11-15T22:35:10Z",
+      "inFeed": false,
+      "editorialId": null,
+      "dossier": "editorial/library/google-genai-sdk-dossier-2026-10-30-0255.json"
+    },
+    {
+      "name": "Lasm",
+      "repository": "Millillion/lasm",
+      "stars": 106,
+      "forks": 7,
+      "openIssues": 9,
+      "license": "MIT",
+      "archived": false,
+      "lastPushedAt": "2026-11-15T05:09:14Z",
+      "inFeed": false,
+      "editorialId": null,
+      "dossier": "editorial/library/lasm-dossier-2026-10-30-0839.json"
+    },
+    {
+      "name": "MarkItDown",
+      "repository": "microsoft/markitdown",
+      "stars": 195564,
+      "forks": 14779,
+      "openIssues": 814,
+      "license": "MIT",
+      "archived": false,
+      "lastPushedAt": "2026-11-07T00:14:22Z",
+      "inFeed": false,
+      "editorialId": null,
+      "dossier": "editorial/library/markitdown-dossier-2026-10-30-0011.json"
+    },
+    {
+      "name": "Minecraft Agent Harness",
+      "repository": "yc-software/minecraft-agent-harness",
+      "stars": 222,
+      "forks": 30,
+      "openIssues": 1,
+      "license": "MIT",
+      "archived": false,
+      "lastPushedAt": "2026-10-29T20:30:10Z",
+      "inFeed": false,
+      "editorialId": null,
+      "dossier": "editorial/library/minecraft-agent-harness-dossier-2026-10-30-0540.json"
+    },
+    {
+      "name": "NVIDIA OpenShell",
+      "repository": "NVIDIA/OpenShell",
+      "stars": 21650,
+      "forks": 2117,
+      "openIssues": 701,
+      "license": "Apache-2.0",
+      "archived": false,
+      "lastPushedAt": "2026-11-15T23:34:11Z",
+      "inFeed": false,
+      "editorialId": null,
+      "dossier": "editorial/library/openshell-status-2026-11-14-0545.json"
+    },
+    {
+      "name": "Pydantic AI",
+      "repository": "pydantic/pydantic-ai",
+      "stars": 21227,
+      "forks": 3186,
+      "openIssues": 1977,
+      "license": "MIT",
+      "archived": false,
+      "lastPushedAt": "2026-11-15T23:44:02Z",
+      "inFeed": false,
+      "editorialId": null,
+      "dossier": "editorial/library/pydantic-ai-dossier-2026-10-30-1442.json"
+    },
+    {
+      "name": "uv",
+      "repository": "astral-sh/uv",
+      "stars": 92060,
+      "forks": 3844,
+      "openIssues": 3082,
+      "license": "Apache-2.0",
+      "archived": false,
+      "lastPushedAt": "2026-11-14T04:08:33Z",
+      "inFeed": false,
+      "editorialId": "30e283a9b3f70e35d8",
+      "dossier": "editorial/library/uv-dossier-2026-10-30-2044.json"
+    }
+  ],
+  "catalog": {
+    "total": 31,
+    "active": 29,
+    "archived": 2,
+    "inCurrentFeed": 4,
+    "notInFeed": 27,
+    "licenseVerified": 31,
+    "licenseUnverified": 0,
+    "note": "All 31 catalog entries now have a dated upstream license classification and current GitHub activity metrics. Some projects use dual, conditional, or source-available licenses; read licenseSummary and source files before reuse."
+  },
+  "archivedProjectsAndAlternatives": [
+    {
+      "repository": "atom/atom",
+      "status": "archived",
+      "lastPushedAt": "2023-01-03T10:49:48Z",
+      "license": "MIT",
+      "alternatives": [
+        {
+          "repository": "microsoft/vscode",
+          "url": "https://github.com/microsoft/vscode"
+        },
+        {
+          "repository": "zed-industries/zed",
+          "url": "https://github.com/zed-industries/zed"
+        },
+        {
+          "repository": "pulsar-edit/pulsar",
+          "url": "https://github.com/pulsar-edit/pulsar"
+        }
+      ]
+    },
+    {
+      "repository": "angular/angular.js",
+      "status": "archived",
+      "lastPushedAt": "2024-04-12T17:43:16Z",
+      "license": "MIT",
+      "alternatives": [
+        {
+          "repository": "angular/angular",
+          "url": "https://github.com/angular/angular"
+        },
+        {
+          "repository": "vuejs/core",
+          "url": "https://github.com/vuejs/core"
+        },
+        {
+          "repository": "sveltejs/svelte",
+          "url": "https://github.com/sveltejs/svelte"
+        }
+      ]
+    }
+  ],
+  "researchCompleteness": {
+    "deepReviewedProjects": 3,
+    "deepIdeas": 90,
+    "genericReligiousDomains": 9,
+    "genericReligiousIdeas": 90,
+    "previousEightMetricsRefreshed": 8,
+    "fullReadmeReauditForPreviousEightThisRun": [
+      "NVIDIA/OpenShell"
+    ],
+    "note": "The other seven previous-eight projects retain their earlier dossier evidence; this run refreshes metadata and Feed/Editorial presence only."
+  },
+  "preservedTopIdeas": [
+    {
+      "rank": 1,
+      "title": "معيار OCR عربي قابل لإعادة الإنتاج",
+      "problem": "لا توجد مقارنة عربية ثابتة وقابلة لإعادة الإنتاج بين محركات OCR على أنواع مستندات متنوعة.",
+      "approach": "مجموعة بيانات موثقة ومقسمة حسب نوع المستند، مع قياس CER وWER والزمن.",
+      "stack": [
+        "Python",
+        "PaddleOCR",
+        "EasyOCR",
+        "OpenCV",
+        "pandas"
+      ],
+      "steps": [
+        "حدد نطاقًا قانونيًا للوثائق واجمع عينات مرخصة.",
+        "ضع سياسة إزالة بيانات شخصية وتطبيع النص.",
+        "ثبت تقسيم train/validation/test.",
+        "شغل محركات متعددة بإعدادات موثقة.",
+        "احسب CER وWER والزمن لكل فئة.",
+        "انشر النتائج والقيود وطريقة إعادة الإنتاج."
+      ],
+      "metric": "CER وWER وزمن المعالجة لكل صفحة",
+      "difficulty": "متوسطة؛ تقدير 2–3 أسابيع",
+      "risks": "انحياز البيانات، تسرب معلومات شخصية، اختلاف جودة المسح",
+      "sources": [
+        {
+          "title": "PaddleOCR",
+          "url": "https://github.com/PaddlePaddle/PaddleOCR"
+        },
+        {
+          "title": "EasyOCR",
+          "url": "https://github.com/JaidedAI/EasyOCR"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "معيار تقييم وكلاء الصوت باللهجات العربية",
+      "problem": "مقاييس ASR وحدها لا تكشف قدرة الوكيل على إكمال مهمة صوتية باللهجات المختلفة.",
+      "approach": "مجموعة سيناريوهات صوتية مرخصة تقيس التفريغ وفهم النية وإتمام المهمة وزمن الاستجابة.",
+      "stack": [
+        "Python",
+        "Whisper",
+        "PyTorch",
+        "FastAPI",
+        "SQLite"
+      ],
+      "steps": [
+        "حدد لهجات ومواقف استخدام آمنة.",
+        "اجمع تسجيلات بموافقات واضحة.",
+        "ضع نصوصًا مرجعية ووسوم نية.",
+        "اختبر عدة نماذج ASR وTTS.",
+        "قِس WER ونجاح المهمة وP95.",
+        "انشر حالات الفشل والحدود."
+      ],
+      "metric": "WER ونسبة إتمام المهمة وزمن P95",
+      "difficulty": "متوسطة؛ تقدير 3–5 أسابيع",
+      "risks": "تمثيل غير متوازن للهجات، خصوصية الصوت، موافقات المشاركين",
+      "sources": [
+        {
+          "title": "OpenAI Whisper",
+          "url": "https://github.com/openai/whisper"
+        },
+        {
+          "title": "Mozilla Common Voice",
+          "url": "https://commonvoice.mozilla.org/"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "صلاحيات مؤقتة ومحددة لأدوات الوكلاء",
+      "problem": "قد تحصل الوكلاء على صلاحيات أوسع أو أطول من المطلوب لإنجاز مهمة واحدة.",
+      "approach": "وسيط أدوات يصدر صلاحيات قصيرة ومحددة النطاق مع موافقة بشرية وسجل تدقيق.",
+      "stack": [
+        "Python",
+        "FastAPI",
+        "OPA",
+        "SQLite",
+        "OpenTelemetry"
+      ],
+      "steps": [
+        "عرّف موارد وأفعالًا مسموحًا بها.",
+        "أنشئ سياسات أقل صلاحية.",
+        "أصدر رموزًا قصيرة العمر ومحددة النطاق.",
+        "اطلب موافقة بشرية للأفعال الحساسة.",
+        "سجل كل استدعاء وقرار رفض.",
+        "اختبر محاولات تجاوز النطاق.",
+        "قِس الرفض الصحيح وزمن التفويض."
+      ],
+      "metric": "نسبة الاستدعاءات الخارجة عن النطاق المرفوضة وزمن التفويض",
+      "difficulty": "مرتفعة؛ تقدير 4–6 أسابيع",
+      "risks": "أخطاء السياسات، سوء إدارة الرموز، عبء الموافقات",
+      "sources": [
+        {
+          "title": "Open Policy Agent",
+          "url": "https://github.com/open-policy-agent/opa"
+        },
+        {
+          "title": "OpenTelemetry",
+          "url": "https://opentelemetry.io/"
+        }
+      ]
+    }
+  ]
+}
