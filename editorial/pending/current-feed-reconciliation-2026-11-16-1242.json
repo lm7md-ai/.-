@@ -111,15 +111,69 @@
   },
   "execution": {
     "localCheckout": "unavailable; no local checkout in this run",
-    "officialValidate": "not run locally",
-    "officialImport": "not run locally",
+    "officialValidate": "GitHub Actions ran python scripts/editorial.py validate successfully: Validated 1059 editorial entries",
+    "officialImport": "not run locally; the 12-entry merge was applied structurally with exact Feed ID/URL matching and all prior entries preserved; CI validated the final Editorial document",
     "structuralEquivalent": "passed for 12 new records; all exact Feed ID/URL; all 1047 existing Editorial entries preserved at object level",
-    "localUnitTests": "not run locally; PR CI will run official tests and validation"
+    "localUnitTests": "not run locally; GitHub Actions ran python -m unittest discover -s tests -v successfully (30 tests)"
   },
   "decisions": {
-    "feedJson": "not changed",
-    "seenJson": "not changed",
+    "feedJson": "modified automatically by the existing refresh-and-publish workflow after PR merge; no direct editorial PR edit",
+    "seenJson": "modified automatically by the existing refresh-and-publish workflow after PR merge; no direct editorial PR edit",
     "codeDesignWorkflowsPagesSettings": "not changed",
     "oldEditorialEntries": "all 1047 preserved at object level"
+  },
+  "postPublication": {
+    "mainAfterWorkflow": "cd9951453036b12e3302e2cd9389af478d39b123",
+    "mainCommitMessage": "data: refresh deduplicated technology feed",
+    "workflowRun": {
+      "id": 43844478379,
+      "url": "https://github.com/lm7md-ai/.-/actions/runs/43844478379",
+      "conclusion": "success",
+      "refreshPublicFeeds": "success",
+      "pagesArtifactId": 14214018700,
+      "artifactUrl": "https://github.com/lm7md-ai/.-/actions/runs/43844478379/artifacts/14214018700",
+      "deploymentUrl": "https://lm7md-ai.github.io/.-/"
+    },
+    "artifactVerification": {
+      "editorialEntries": 1059,
+      "newBatchIdsPresent": 12,
+      "feedItems": 800,
+      "feedGeneratedAt": "2026-11-16T09:58:03+00:00",
+      "seenIds": 5295,
+      "seenTitles": 5121,
+      "verifiedFromDownloadedGitHubPagesArtifact": true
+    },
+    "automaticWorkflowSideEffects": {
+      "feedJson": {
+        "changed": true,
+        "beforeBlob": "305c3305a8d7a8fed3a52afd0a344c0ff0857aa7",
+        "afterBlob": "c263c30ab869e9b98a4282a04829b670201a7c2c",
+        "cause": "existing refresh-and-publish workflow; no direct edit in PR #109"
+      },
+      "seenJson": {
+        "changed": true,
+        "beforeBlob": "77088d7a3e1a04130830219a667154ea1cc54f7a",
+        "afterBlob": "0305e8bf9a19af97d864a20c823b9abdaaec8216",
+        "cause": "existing refresh-and-publish workflow; no direct edit in PR #109"
+      },
+      "statusJson": {
+        "changed": true,
+        "beforeBlob": "edf2bd1ce0c462abc8fdc194c969f4cb8aaac353",
+        "afterBlob": "267ede9307f59a9315f7f7927720f44260b4fbf1",
+        "cause": "existing refresh-and-publish workflow"
+      },
+      "policyNote": "This was an automatic side effect of the existing publishing workflow after the authorized merge. It conflicts with the instruction to leave feed.json and seen.json untouched. No manual edit or rollback was made because a rollback/redeploy would trigger the same pipeline and could desynchronize the published artifact."
+    },
+    "liveEndpointCheck": {
+      "url": "https://lm7md-ai.github.io/.-/data/editorial.json",
+      "browserFetch": "DisabledError",
+      "containerDownload": "failed",
+      "conclusion": "Pages deployment and artifact are verified; direct GET of the live JSON endpoint could not be completed from this environment."
+    },
+    "previousDeploymentFailure": {
+      "runId": 43816779703,
+      "conclusion": "failure",
+      "cause": "TypeError comparing str and NoneType during update_feed merge; not reproduced in this run; no code changes were made."
+    }
   }
 }
