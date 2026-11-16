@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "measuredAt": "2026-11-16T12:42:35+03:00",
+  "purpose": "Research-only project dossier; not published to Feed or Editorial.",
+  "name": "NVIDIA OpenShell",
+  "repository": "NVIDIA/OpenShell",
+  "repositoryUrl": "https://github.com/NVIDIA/OpenShell",
+  "feedIdentity": {
+    "id": "940ec4695c1e241c2f",
+    "url": "https://github.com/NVIDIA/OpenShell",
+    "seen": true,
+    "inFeed": false,
+    "inEditorial": false,
+    "decision": "do not create a replacement identity"
+  },
+  "status": {
+    "archived": false,
+    "license": "Apache-2.0",
+    "stars": 21668,
+    "forks": 2116,
+    "openIssues": 704,
+    "pushedAt": "2026-11-16T08:38:52Z",
+    "latestCommit": "2e5589b2180dd432320adda124c4f7bcede119b5",
+    "latestCommitAt": "2026-11-13T23:50:46Z"
+  },
+  "overview": "Open-source runtime for fleets of autonomous agents in sandboxed environments, combining kernel-level isolation with declarative YAML policies. Documented controls cover filesystem paths, outbound network destinations, process/syscall restrictions and provider credentials. README says the project is now part of CNCF and that development/governance migration is in progress; until complete, NVIDIA/OpenShell remains the repository for code, issues and pull requests.",
+  "requirements": "Latest docs v0.1.8. Local installation is documented for Linux and macOS; Linux packages require glibc 2.28+. Supported local runtimes include Docker Desktop/Engine 28+, Podman 5.x on Linux with cgroups v2 and an active user socket, or host microVM virtualization (Hypervisor.framework on macOS or KVM on Linux). Native Windows runtime is under development and not production-qualified; WSL2 is experimental. Kubernetes installation uses the Helm chart.",
+  "quickStart": "On Linux or macOS, run the official installer from the documentation, then `openshell status` to confirm the local gateway. For a first agent, import a provider profile, create a provider credential, choose a sandbox image containing the agent, then create the sandbox with an explicit policy and agent command. Review the profile's network and filesystem access before using it.",
+  "localCloud": "CLI and gateway run locally; the gateway can also be deployed to Kubernetes. The agent can use approved external model endpoints. Documentation includes private/self-hosted model endpoint patterns; cloud deployment and model inference are separate from the local runtime.",
+  "costs": "Code is Apache-2.0. No paid OpenShell license is indicated in the reviewed sources; costs can arise from model API usage, Kubernetes/VM infrastructure, cloud hosting and operational monitoring.",
+  "alternatives": "Docker or Podman with manually authored filesystem/network restrictions; other sandbox or microVM runtimes. Compare isolation boundary, policy enforcement, credential handling, supported operating systems and operational overhead before selecting an alternative.",
+  "testEvidence": null,
+  "sources": [
+    {
+      "title": "NVIDIA OpenShell README",
+      "url": "https://github.com/NVIDIA/OpenShell/blob/main/README.md"
+    },
+    {
+      "title": "NVIDIA OpenShell LICENSE",
+      "url": "https://github.com/NVIDIA/OpenShell/blob/main/LICENSE"
+    },
+    {
+      "title": "Official documentation — Overview",
+      "url": "https://docs.nvidia.com/openshell/about/overview"
+    },
+    {
+      "title": "Official documentation — Installation",
+      "url": "https://docs.nvidia.com/openshell/about/installation"
+    },
+    {
+      "title": "Official documentation — Run Your First Agent",
+      "url": "https://docs.nvidia.com/openshell/about/run-your-first-agent"
+    }
+  ]
+}

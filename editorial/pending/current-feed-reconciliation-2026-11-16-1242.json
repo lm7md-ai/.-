@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-16T12:42:35+03:00",
+  "baseMain": "8495243b3499beaf8361f2d2ee22e0dad800a164",
+  "snapshots": {
+    "feedGeneratedAt": "2026-11-16T06:08:33+00:00",
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialEntriesBefore": 1047,
+    "editorialEntriesAfter": 1059,
+    "incomingFiles": 132,
+    "incomingRecordOccurrences": 1340
+  },
+  "incomingAudit": {
+    "baselineReport": "editorial/pending/current-feed-reconciliation-2026-11-16-0911.json",
+    "baseline": {
+      "files": 131,
+      "recordOccurrences": 1328,
+      "alreadyImportedExactIdUrlOccurrences": 1182,
+      "currentFeedExactOccurrencesAfterImport": 265,
+      "pendingExactFeedNotEditorialOccurrences": 0,
+      "absentFromCurrentFeedAndEditorialOccurrences": 135,
+      "confirmedExpiredOccurrences": 0,
+      "needsCorrectionOccurrences": 0,
+      "idUrlConflicts": 0,
+      "urlCollisionCount": 1
+    },
+    "deltaSinceBaseline": {
+      "file": "editorial/incoming/nabdh-news-2026-11-16-0911.json",
+      "records": 12,
+      "exactFeedIdUrlMatches": 12,
+      "exactEditorialIdUrlMatches": 12,
+      "newPending": 0
+    },
+    "allFiles": {
+      "scanned": 132,
+      "parsedSuccessfullyAfterRetry": 132,
+      "recordOccurrences": 1340,
+      "globalUniquePairs": null,
+      "globalUniquePairsNote": "لم يُحسب dedup عالمي مستقل عبر الملفات؛ الأعداد هنا مرات ظهور. تمت مراجعة الملفات على دفعات ومقارنة معرفات وروابط كل سجل بالتغذية والسجلات الحالية.",
+      "structuralChecks": "JSON parsing; baseline and latest batch version/items shape; HTTPS URL, titleAr, summaryAr, whyItMatters, sources, timezone-aware reviewedAt and basis inspected; no parse or structural errors found in this scan."
+    },
+    "decisions": {
+      "pendingExactFeedNotEditorialOccurrences": 0,
+      "absentFromFeedAndEditorialOccurrences": 135,
+      "confirmedExpiredOccurrences": 0,
+      "needsCorrectionOccurrences": 0,
+      "idUrlConflicts": 0,
+      "urlCollision": {
+        "url": "https://github.com/rasbt/LLMs-from-scratch",
+        "oldId": "7a99eca9b2ce14d9f5",
+        "currentId": "e0cbbf211a55e79f34",
+        "decision": "keep identities separate; no title-derived replacement"
+      }
+    }
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "publicationStatus": "research-only-not-published",
+      "dossier": "editorial/library/nvidia-openshell-update-2026-11-16-1242.json",
+      "decision": "refresh research dossier only; do not create Feed/Editorial identity"
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "officialReference": "https://www.canva.com/newsroom/news/canva-craft/",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "decision": "seen-only; distinguish Craft API from Canva MCP; no alternate ID"
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "decision": "seen-only; no alternate ID"
+    }
+  ],
+  "newBatch": {
+    "file": "editorial/incoming/nabdh-news-2026-11-16-1242.json",
+    "records": 12,
+    "exactFeedIdUrlMatches": 12,
+    "alreadyInEditorialBeforeImport": 0,
+    "basisCounts": {
+      "article": 2,
+      "metadata": 10
+    }
+  },
+  "projectReview": {
+    "file": "editorial/library/previous-eight-refresh-2026-11-16-1242.json",
+    "previousEightReviewed": 8,
+    "readmeAndLicenseRechecked": 8,
+    "activityRechecked": 8,
+    "historicalLibraryProjects": 31,
+    "active": 29,
+    "archived": 2,
+    "feedProjectsWithExactEditorial": 100,
+    "feedProjectCardsAdded": 0,
+    "decision": "No new project card justified; retain existing Feed identity and research-only library records."
+  },
+  "execution": {
+    "localCheckout": "unavailable; no local checkout in this run",
+    "officialValidate": "not run locally",
+    "officialImport": "not run locally",
+    "structuralEquivalent": "passed for 12 new records; all exact Feed ID/URL; all 1047 existing Editorial entries preserved at object level",
+    "localUnitTests": "not run locally; PR CI will run official tests and validation"
+  },
+  "decisions": {
+    "feedJson": "not changed",
+    "seenJson": "not changed",
+    "codeDesignWorkflowsPagesSettings": "not changed",
+    "oldEditorialEntries": "all 1047 preserved at object level"
+  }
+}
