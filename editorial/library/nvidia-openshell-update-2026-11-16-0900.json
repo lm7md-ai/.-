@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "research-only-not-published",
+  "reviewedAt": "2026-11-16T09:00:12+03:00",
+  "name": "NVIDIA OpenShell",
+  "repository": "NVIDIA/OpenShell",
+  "url": "https://github.com/NVIDIA/OpenShell",
+  "seenId": "940ec4695c1e241c2f",
+  "feedId": null,
+  "feedMatch": false,
+  "editorialMatch": false,
+  "overview": "بيئة تشغيل معزولة لوكلاء الذكاء الاصطناعي؛ تشغّل الوكيل داخل sandbox وتفرض سياسات معلنة على الوصول إلى الملفات ونداءات النظام والاتصالات الشبكية، مع فصل بيانات اعتماد المزود عن عملية الوكيل. هذا لا يجعلها ضمانًا مطلقًا للأمان ولا يستبدل مراجعة سياسات الصلاحيات.",
+  "status": {
+    "archived": false,
+    "latestStableRelease": "v0.1.8",
+    "latestPrerelease": "0.1.9-dev.23",
+    "latestCommitSha": "2e5589b2180dd432320adda124c4f7bcede119b5",
+    "latestCommitAt": "2026-11-13T23:50:46Z",
+    "governance": "README يقول إن المشروع أصبح ضمن CNCF، لكن نقل التطوير إلى ai-openshell والحوكمة إلى CNCF ما زالا قيد التنفيذ؛ إلى أن يكتمل النقل يظل NVIDIA/OpenShell مستودع الكود والقضايا المرجعي."
+  },
+  "license": "Apache-2.0",
+  "requirements": "CLI مستقل؛ Python >=3.11 مطلوب للـPython SDK فقط. يتطلب Gateway يمكن الوصول إليه وcompute driver واحدًا على الأقل: Kubernetes أو Docker أو Podman أو MicroVM. المسارات المحلية الموثقة تستهدف Linux وmacOS Apple Silicon؛ Windows عبر WSL2 تجريبي. README يذكر Docker 28+ أو Podman 5.x للمسارات المدعومة.",
+  "quickStart": [
+    "راجع مصفوفة الدعم والتثبيت أولًا.",
+    "ثبت CLI من المثبت الرسمي؛ ملاحظة: uv add openshell يثبت Python SDK فقط ولا يثبت CLI.",
+    "ابدأ Gateway محليًا واختر driver مناسبًا.",
+    "سجل Gateway المحلي عبر openshell gateway add http://127.0.0.1:18080 --local --name local ثم openshell gateway select local.",
+    "أنشئ sandbox لوكيل مدعوم مثل Codex أو Claude Code بعد مراجعة صلاحياته.",
+    "زوّد مزود النموذج بمفتاح API منفصل عند الحاجة، واحتسب رسوم المزود خارج تكلفة OpenShell.",
+    "اختبر سياسة ملفات وشبكة محدودة على بيانات تجريبية قبل أي ملفات حقيقية."
+  ],
+  "localCloud": {
+    "local": "Gateway وsandbox على جهاز المستخدم باستخدام Docker/Podman أو MicroVM؛ لا توجد رسوم ترخيص للبرنامج، لكن يلزم عتاد ومساحة ووقت تشغيل.",
+    "cloud": "يمكن استخدام Gateway/driver بعيد أو Kubernetes أو مزود إطلاق سحابي؛ رسوم الحوسبة والتخزين والشبكة ومزود النموذج منفصلة ومتغيرة، ولا توجد تعرفة مُدارة ثابتة في README."
+  },
+  "costs": "المستودع Apache-2.0 بلا رسوم ترخيص. تكلفة النماذج/API ليست ضمن OpenShell؛ التشغيل المحلي يستهلك موارد الجهاز، والسحابي يضيف رسوم البنية ومزود النموذج. لا يوجد سعر مُدار ثابت منشور في المستودع.",
+  "alternatives": [
+    {
+      "name": "Docker / Podman",
+      "url": "https://docs.docker.com/engine/security/",
+      "difference": "لبناء عزل مخصص يدويًا؛ لا يقدمان وحدهما نفس طبقة سياسات الوكلاء المتكاملة."
+    },
+    {
+      "name": "Firecracker",
+      "url": "https://firecracker-microvm.github.io/",
+      "difference": "تقنية microVM منخفضة المستوى يمكن أن تكون مكوّنًا لعزل مخصص، وليست واجهة إدارة وكلاء مكافئة."
+    },
+    {
+      "name": "OpenHands",
+      "url": "https://github.com/All-Hands-AI/OpenHands",
+      "difference": "بيئة وكيل تطوير، وليست بديلًا مباشرًا لطبقة فرض سياسات النظام."
+    }
+  ],
+  "improvements": [
+    {
+      "title": "اختبارات انحدار لسياسات الوكلاء",
+      "problem": "تغيير policy قد يفتح مسار ملف أو شبكة لم يكن مسموحًا سابقًا.",
+      "approach": "حزمة سيناريوهات ثابتة تقارن القرار المتوقع بقرار sandbox الفعلي عبر إصدارات OpenShell.",
+      "stack": "Python, pytest, YAML, OpenTelemetry",
+      "steps": [
+        "عرّف 20 حالة سماح ومنع.",
+        "أنشئ ملفات ووجهات شبكة اختبارية.",
+        "شغّل الحالات على Docker وPodman.",
+        "قارن سجلات القرار بالنتيجة الفعلية.",
+        "انشر تقرير انحدار لكل إصدار."
+      ],
+      "metric": "اجتياز 100% من الحالات المرجعية مع إظهار أي تغيير غير متوقع.",
+      "difficulty": "متوسط؛ تقدير 1–2 أسبوع.",
+      "risks": "التغطية لا تثبت غياب كل مسارات التجاوز؛ تختلف النتائج حسب النواة والـdriver.",
+      "sources": [
+        {
+          "title": "OpenShell README",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        },
+        {
+          "title": "Manage Sandboxes",
+          "url": "https://docs.nvidia.com/openshell/latest/sandboxes/manage-sandboxes"
+        }
+      ]
+    },
+    {
+      "title": "سجل دورة حياة موافقات بيانات الاعتماد",
+      "problem": "قد يصعب تدقيق من منح الوكيل سرًا ولماذا ومتى أُلغي.",
+      "approach": "لوحة قراءة فقط تعرض grant/revoke والوجهة المصرح بها دون إظهار قيمة السر.",
+      "stack": "Python, OpenTelemetry, SQLite, FastAPI",
+      "steps": [
+        "حدد أحداث الموافقة والإلغاء المتاحة.",
+        "اخفِ القيم الحساسة من السجل.",
+        "اربط الحدث بمعرف sandbox والوجهة.",
+        "اختبر انتهاء الصلاحية والإلغاء.",
+        "راجع صلاحيات الوصول إلى سجل التدقيق."
+      ],
+      "metric": "تسجيل 100% من أحداث الاختبار دون تخزين قيمة credential.",
+      "difficulty": "متوسط؛ تقدير 1–2 أسبوع.",
+      "risks": "السجلات نفسها قد تكشف metadata حساسة؛ يلزم تقليل الاحتفاظ والتشفير.",
+      "sources": [
+        {
+          "title": "OpenShell Security",
+          "url": "https://github.com/NVIDIA/OpenShell/blob/main/SECURITY.md"
+        },
+        {
+          "title": "OpenShell README",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        }
+      ]
+    },
+    {
+      "title": "مصفوفة توافق عملية للأنظمة والـdrivers",
+      "problem": "الاختلاف بين Linux وmacOS وWSL2 وdrivers قد لا يظهر في Quickstart المختصر.",
+      "approach": "مصفوفة إصدار/نظام/driver مرتبطة باختبارات smoke منفصلة مع توضيح ما هو تجريبي.",
+      "stack": "GitHub Actions, pytest, Docker, Podman",
+      "steps": [
+        "حدد التركيبات المدعومة رسميًا.",
+        "افصل المسارات التجريبية عن المستقرة.",
+        "أضف smoke test لكل تركيبة قابلة للتشغيل.",
+        "سجل الإخفاقات مع إصدار النظام.",
+        "انشر جدول توافق بتاريخ القياس."
+      ],
+      "metric": "تغطية جميع التركيبات المعلنة أو وسم غير المختبر منها بوضوح.",
+      "difficulty": "مرتفع؛ تقدير 2–4 أسابيع.",
+      "risks": "بعض drivers تتطلب بنية خاصة أو موارد لا تتوفر في CI العام.",
+      "sources": [
+        {
+          "title": "OpenShell Installation",
+          "url": "https://docs.nvidia.com/openshell/latest/about/installation"
+        },
+        {
+          "title": "OpenShell pyproject",
+          "url": "https://github.com/NVIDIA/OpenShell/blob/main/pyproject.toml"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "مراجع مستودعات داخل sandbox للقراءة فقط",
+      "problem": "مراجعة مستودع غير موثوق قد تمنح الوكيل صلاحيات أوسع من المطلوب.",
+      "approach": "وكيل يقرأ الملفات ويخرج تقريرًا، بينما يمنع policy الكتابة خارج مجلد scratch والاتصال غير الضروري.",
+      "stack": "OpenShell, Python, pytest, Git",
+      "steps": [
+        "أنشئ نسخة تجريبية من مستودع عام.",
+        "حدد مسارات القراءة ومجلد scratch.",
+        "امنع الكتابة إلى المصدر الأصلي.",
+        "شغّل مراجعة ثابتة.",
+        "تحقق من عدم تغير ملفات المصدر."
+      ],
+      "metric": "صفر تغييرات في المستودع الأصلي خلال 20 تجربة.",
+      "difficulty": "متوسط؛ تقدير أسبوع.",
+      "risks": "لا تشغّل أوامر المستودع غير الموثوق خارج العزل؛ قد تحتاج بعض أدوات الفحص إلى شبكة.",
+      "sources": [
+        {
+          "title": "OpenShell Quickstart",
+          "url": "https://docs.nvidia.com/openshell/latest/get-started/quickstart"
+        },
+        {
+          "title": "Manage Sandboxes",
+          "url": "https://docs.nvidia.com/openshell/latest/sandboxes/manage-sandboxes"
+        }
+      ]
+    },
+    {
+      "title": "مختبر مقارنة تغطية سياسات الوكلاء",
+      "problem": "يصعب مقارنة ما تمنعه إعدادات sandbox المختلفة.",
+      "approach": "مجموعة اختبارات موحدة تقارن سياسات الملفات والشبكة بين drivers دون ادعاء تكافؤ كامل.",
+      "stack": "Python, YAML, pytest, Docker, Podman",
+      "steps": [
+        "حدد مجموعة أفعال غير ضارة.",
+        "اكتب policy متكافئة لكل driver.",
+        "شغّل الحالات وسجل القرارات.",
+        "قارن النتائج والفروق.",
+        "انشر القيود حسب النظام."
+      ],
+      "metric": "تقرير قابل لإعادة الإنتاج لـ30 حالة.",
+      "difficulty": "متوسط؛ تقدير أسبوعين.",
+      "risks": "اختلاف قدرات drivers يمنع المقارنة المباشرة في بعض الحالات.",
+      "sources": [
+        {
+          "title": "OpenShell README",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        },
+        {
+          "title": "Manage Sandboxes",
+          "url": "https://docs.nvidia.com/openshell/latest/sandboxes/manage-sandboxes"
+        }
+      ]
+    }
+  ],
+  "religious": [
+    {
+      "title": "مساعد فهرسة للمصادر الشرعية بقراءة فقط",
+      "problem": "قد تختلط النصوص الموثقة بالمحتوى غير المسند عند البحث في مكتبات كبيرة.",
+      "approach": "وكيل بحث معزول يقرأ مجموعة مصادر مرخصة ومحددة، ويعيد مواضع النصوص وروابطها فقط مع مراجعة بشرية؛ لا يصدر فتاوى ولا يستنتج أحكامًا.",
+      "stack": "OpenShell, Python, SQLite, فهرس نصي محلي",
+      "steps": [
+        "حدد corpus موثوقًا وحقوق استخدامه.",
+        "اجعل sandbox للقراءة فقط.",
+        "سجل مصدر كل مقتطف ورابطه.",
+        "امنع النشر أو الإجابة الحكمية التلقائية.",
+        "اطلب مراجعة مختص قبل عرض أي استنتاج."
+      ],
+      "metric": "إسناد 100% من المقتطفات إلى مصدر محدد في عينة مراجعة.",
+      "difficulty": "متوسط؛ تقدير أسبوعين.",
+      "risks": "خطأ النسبة أو اختلاف الروايات والترجمات؛ لا يُستخدم بدل المختص الشرعي.",
+      "sources": [
+        {
+          "title": "Quran.com",
+          "url": "https://quran.com/"
+        },
+        {
+          "title": "Sunnah.com",
+          "url": "https://sunnah.com/"
+        },
+        {
+          "title": "OpenShell Quickstart",
+          "url": "https://docs.nvidia.com/openshell/latest/get-started/quickstart"
+        }
+      ]
+    }
+  ],
+  "testStatus": "not_run",
+  "testEvidence": null,
+  "displayContract": {
+    "label": "بحث فقط — غير منشور",
+    "showPublicCard": false,
+    "feedId": null,
+    "showRunButton": false,
+    "showPublishButton": false,
+    "showTestedBadge": false,
+    "display": [
+      "حالة البحث فقط",
+      "ترخيص Apache-2.0",
+      "متطلبات النظام والـdriver",
+      "QuickStart",
+      "تكاليف محلية/سحابية منفصلة",
+      "البدائل والقيود",
+      "تاريخ قياس النشاط"
+    ],
+    "note": "لا تُنشأ بطاقة Feed أو Editorial من seenId؛ لا تُعرض مزاعم اختبار أو جاهزية إنتاجية."
+  },
+  "sources": [
+    {
+      "title": "NVIDIA OpenShell repository and README",
+      "url": "https://github.com/NVIDIA/OpenShell"
+    },
+    {
+      "title": "Apache-2.0 license",
+      "url": "https://github.com/NVIDIA/OpenShell/blob/main/LICENSE"
+    },
+    {
+      "title": "pyproject.toml",
+      "url": "https://github.com/NVIDIA/OpenShell/blob/main/pyproject.toml"
+    },
+    {
+      "title": "Official Quickstart",
+      "url": "https://docs.nvidia.com/openshell/latest/get-started/quickstart"
+    },
+    {
+      "title": "Manage Sandboxes",
+      "url": "https://docs.nvidia.com/openshell/latest/sandboxes/manage-sandboxes"
+    },
+    {
+      "title": "Installation",
+      "url": "https://docs.nvidia.com/openshell/latest/about/installation"
+    }
+  ]
+}
