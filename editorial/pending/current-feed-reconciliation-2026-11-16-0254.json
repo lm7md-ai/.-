@@ -13,11 +13,11 @@
     "seenIds": 5185
   },
   "incomingInventory": {
-    "files": 127,
-    "recordOccurrences": 1294,
+    "files": 128,
+    "recordOccurrences": 1306,
     "countsAreOccurrencesNotUniqueIds": true,
-    "alreadyImportedExactIdUrlOccurrences": 1159,
-    "currentFeedExactOccurrences": 271,
+    "alreadyImportedExactIdUrlOccurrences": 1171,
+    "currentFeedExactOccurrences": 283,
     "pendingExactFeedNotEditorialOccurrences": 0,
     "absentFromCurrentFeedAndEditorialOccurrences": 135,
     "confirmedExpiredOccurrences": 0,
@@ -26,11 +26,11 @@
     "idUrlConflicts": 0,
     "urlOwnedByDifferentIdCollisions": 1,
     "deltaSincePrevious": {
-      "filesAdded": 1,
-      "occurrencesAdded": 10,
-      "newExactCurrentFeedItemsNowImported": 10
+      "filesAdded": 2,
+      "occurrencesAdded": 22,
+      "newExactCurrentFeedItemsNowImported": 22
     },
-    "method": "The previous reconciliation structurally inspected 126 files and recorded 1,284 occurrences. This run enumerated 127 current incoming paths and parsed all documents in batches; the new 10-item file was validated by the official scripts/editorial.py CLI. Counts are occurrences, not unique IDs. The official CLI was not run over all historical incoming files."
+    "method": "The previous reconciliation structurally inspected 126 files and recorded 1,284 occurrences. This branch adds a 10-item file merged in PR #103 and this 12-item file; all 22 new entries are exact current Feed ID/URL matches and are present in Editorial after the official local import. Counts are occurrences, not unique IDs. The official CLI was not run over all historical incoming files."
   },
   "collision": {
     "oldEditorialId": "7a99eca9b2ce14d9f5",
