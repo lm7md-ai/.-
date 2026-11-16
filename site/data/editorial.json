@@ -43071,6 +43071,60 @@
           "url": "https://mosquitto.org/documentation/"
         }
       ]
+    },
+    "a95ebd575e275280ef": {
+      "url": "https://datatracker.ietf.org/doc/draft-banffy-httpbis-not-a-freezer/",
+      "titleAr": "مسودة فردية تقترح رمز HTTP 483 لحالة «الخادم ليس مبرّدًا»",
+      "summaryAr": "نشر Ricardo Bánffy مسودة Internet-Draft فردية تقترح رمز HTTP 483 عندما يفهم الخادم طلبًا يتطلب تبريدًا أو تجميدًا ماديًا لكنه لا يملك القدرة على تنفيذه. تشرح المسودة نطاق الرمز وسلوك العميل والاعتبارات الأمنية والخصوصية، وتطلب إدراجه في سجل IANA.",
+      "whyItMatters": "هي مسودة بروتوكول طريفة لكنها توضح أهمية تعريف دقيق للفشل عند ربط البرمجيات بأجهزة العالم المادي. لا ينبغي التعامل مع 483 كرمز HTTP معتمد: سجل IANA الحالي يضع المجال 452–499 ضمن الرموز غير المخصصة، وDatatracker يصف الوثيقة بأنها مسودة فردية غير معتمدة من IETF.",
+      "audience": "مطورو HTTP وواجهات الأجهزة المتصلة وطلاب بروتوكولات الإنترنت.",
+      "nextSteps": [
+        "اقرأ المسودة وقارن طلبها بسجل HTTP Status Code Registry الرسمي.",
+        "تابع حالة الوثيقة وقرار IANA قبل التعامل مع 483 كرمز مسجل.",
+        "استخدم رموز HTTP المسجلة حاليًا في الأنظمة الفعلية ما لم تعتمد المواصفة رسميًا."
+      ],
+      "limitations": "المسودة مؤرخة 15 نوفمبر 2026 وتنتهي في 19 مايو 2027 بحسب Datatracker. لا توجد موافقة IETF أو تسجيل IANA أو أدلة تطبيق؛ الاقتراح ليس معيارًا نافذًا.",
+      "reviewedAt": "2026-11-16T03:07:00+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "IETF Datatracker — draft-banffy-httpbis-not-a-freezer-00",
+          "url": "https://datatracker.ietf.org/doc/draft-banffy-httpbis-not-a-freezer/"
+        },
+        {
+          "title": "IETF Internet-Draft HTML — draft-banffy-httpbis-not-a-freezer-00",
+          "url": "https://www.ietf.org/ietf-ftp/internet-drafts/draft-banffy-httpbis-not-a-freezer-00.html"
+        },
+        {
+          "title": "IANA — HTTP Status Code Registry",
+          "url": "https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml"
+        }
+      ]
+    },
+    "61200927e23c6bf1a9": {
+      "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+      "titleAr": "Bharat Semi تجمع 24 مليون دولار لتطوير حساسات صور مدمجة بالذكاء الاصطناعي",
+      "summaryAr": "تقول الشركة الناشئة الهندية إنها جمعت 24 مليون دولار في جولة تأسيسية لتطوير حساسات صور قابلة للبرمجة تدمج التقاط الصورة ومعالجتها ووظائف الذكاء الاصطناعي على شريحة واحدة. وتفيد إعادة نشر ثانوية لتقرير TechCrunch أن الجيل الأول ما زال في مرحلة النماذج الأولية، مع استهداف إنتاج تجاري أولي في 2027.",
+      "whyItMatters": "قد يقلل دمج المعالجة قرب المستشعر الحاجة إلى نقل بيانات الصورة إلى وحدات منفصلة في بعض تطبيقات الرؤية الطرفية. لكن تقدير خفض التكلفة بنسبة 70% منسوب إلى المؤسسة المشاركة وليس قياسًا مستقلًا، كما أن التمويل وذكر design wins لا يثبتان جاهزية المنتج تجاريًا.",
+      "audience": "متابعو أشباه الموصلات والذكاء الاصطناعي الطرفي وصناعة مستشعرات الصور.",
+      "nextSteps": [
+        "تابع انتقال الجيل الأول من النماذج الأولية إلى الإنتاج التجاري المستهدف في 2027.",
+        "ابحث عن قياسات مستقلة للطاقة وزمن الاستجابة والتكلفة مقارنة ببنية مستشعر وISP وSoC منفصلة.",
+        "تحقق من طبيعة design wins المذكورة وما إذا كانت اتفاقات اختبار أو شراء."
+      ],
+      "limitations": "تعذر فتح مقال TechCrunch الأصلي مباشرة؛ استندت المراجعة إلى بيانات التغذية وإعادة نشر ثانوية للتقرير. أرقام الجولة وتوقعات الإنتاج وتقدير خفض التكلفة منسوبة إلى الشركة أو المؤسِّسة، ولا يوجد هنا تحقق مستقل أو benchmark منشور.",
+      "reviewedAt": "2026-11-16T03:07:00+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "TechCrunch — Indian chip startup Bharat Semi lands $24M seed round",
+          "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/"
+        },
+        {
+          "title": "TechWaveDispatch — summary of TechCrunch report on Bharat Semi",
+          "url": "https://techwavedispatch.com/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/"
+        }
+      ]
     }
   }
 }
