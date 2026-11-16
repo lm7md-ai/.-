@@ -1,13 +1,17 @@
 {
   "version": 1,
-  "compiledAt": "2026-10-24T10:38:36.869Z",
-  "note": "Research queue, not published website content. GitHub metadata checked October 24 2026; not independently tested or README audited. License values NOASSERTION do not imply no license. Stars are cumulative at measurement, not trending.",
-  "metricsWarning": "Do not label stars as today popularity; verify upstream licensing, actual release activity and maintenance before publishing a dossier.",
+  "compiledAt": "2026-11-16T02:54:42+03:00",
+  "note": "مكتبة بحثية تراكمية مستقلة عن نافذة Feed؛ قياسات GitHub المرفقة تراكمية ومؤرخة، ولا تثبت الجودة أو الاختبار. تم التحقق من تراخيص المشاريع الـ31 عبر GitHub metadata أو ملفات الترخيص الرسمية. مراجعة README والتشغيل التفصيلية موجودة فقط للمشاريع التي تحمل dossier منفصلًا.",
+  "metricsWarning": "النجوم تراكمية وليست رواجًا يوميًا. lastPushedAt يقيس آخر دفع للشيفرة ولا يضمن الصيانة أو الجودة. راجع licenseSummary بعناية، خصوصًا التراخيص المشروطة أو متعددة الخيارات.",
   "statusSummary": {
     "total": 31,
+    "active": 29,
     "archived": 2,
     "inCurrentFeed": 4,
-    "notInFeed": 27
+    "notInFeed": 27,
+    "licenseVerified": 31,
+    "licenseUnverified": 0,
+    "metricCapturedAt": "2026-11-16T02:54:42+03:00"
   },
   "developerIntegrationNotes": [
     "Provide a separate historical projects catalog independent of the 45-day GitHub discovery window.",
@@ -24,12 +28,12 @@
       "category": "أنظمة تشغيل",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 253324,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 255806,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "NOASSERTION",
-      "licenseNeedsUpstreamVerification": true,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "نواة أنظمة Linux",
       "proposedResearchOrBuild": "توثيق مسارات kernel/modules وتجارب محاكاة",
       "inCurrentFeed": false,
@@ -39,8 +43,25 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/torvalds/linux"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/torvalds/linux"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://github.com/torvalds/linux/blob/master/COPYING"
         }
-      ]
+      ],
+      "forksMeasured": 67424,
+      "openIssuesMeasured": 3,
+      "lastPushedAt": "2026-11-15T22:38:25Z",
+      "upstreamUpdatedAt": "2026-11-15T23:52:50Z",
+      "defaultBranch": "master",
+      "activityClass": "active",
+      "licenseSummary": "GPL-2.0 WITH Linux-syscall-note",
+      "licenseStatus": "verified_from_upstream_COPYING",
+      "licenseSource": "https://github.com/torvalds/linux/blob/master/COPYING"
     },
     {
       "priority": 2,
@@ -49,12 +70,12 @@
       "category": "أدوات تطوير",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 194261,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 195429,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "MIT",
       "licenseNeedsUpstreamVerification": false,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "محرر الشيفرة وإضافاته",
       "proposedResearchOrBuild": "إضافة فحوص جودة مشاريع Python",
       "inCurrentFeed": false,
@@ -64,8 +85,25 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/microsoft/vscode"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/microsoft/vscode"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://api.github.com/repos/microsoft/vscode"
         }
-      ]
+      ],
+      "forksMeasured": 43860,
+      "openIssuesMeasured": 21560,
+      "lastPushedAt": "2026-11-15T23:50:43Z",
+      "upstreamUpdatedAt": "2026-11-15T23:30:02Z",
+      "defaultBranch": "main",
+      "activityClass": "active",
+      "licenseSummary": "MIT",
+      "licenseStatus": "verified_from_GitHub_license_metadata",
+      "licenseSource": "https://api.github.com/repos/microsoft/vscode"
     },
     {
       "priority": 3,
@@ -74,12 +112,12 @@
       "category": "واجهات ويب",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 54798,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 55042,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "MIT",
       "licenseNeedsUpstreamVerification": false,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "واجهة تفاعلية للويب",
       "proposedResearchOrBuild": "مكوّنات RTL وإمكانية الوصول",
       "inCurrentFeed": false,
@@ -89,8 +127,25 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/vuejs/core"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/vuejs/core"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://api.github.com/repos/vuejs/core"
         }
-      ]
+      ],
+      "forksMeasured": 9347,
+      "openIssuesMeasured": 974,
+      "lastPushedAt": "2026-11-15T04:00:30Z",
+      "upstreamUpdatedAt": "2026-11-15T23:50:14Z",
+      "defaultBranch": "main",
+      "activityClass": "active",
+      "licenseSummary": "MIT",
+      "licenseStatus": "verified_from_GitHub_license_metadata",
+      "licenseSource": "https://api.github.com/repos/vuejs/core"
     },
     {
       "priority": 4,
@@ -99,12 +154,12 @@
       "category": "بيئات JavaScript",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 123034,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 123763,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "NOASSERTION",
-      "licenseNeedsUpstreamVerification": true,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "تشغيل JavaScript على الخوادم",
       "proposedResearchOrBuild": "اختبار قياس الأداء للشبكات",
       "inCurrentFeed": false,
@@ -114,8 +169,25 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/nodejs/node"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/nodejs/node"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://github.com/nodejs/node/blob/main/LICENSE"
         }
-      ]
+      ],
+      "forksMeasured": 38079,
+      "openIssuesMeasured": 1324,
+      "lastPushedAt": "2026-11-15T22:01:22Z",
+      "upstreamUpdatedAt": "2026-11-15T23:41:55Z",
+      "defaultBranch": "main",
+      "activityClass": "active",
+      "licenseSummary": "MIT (with separately licensed third-party components)",
+      "licenseStatus": "verified_from_upstream_LICENSE",
+      "licenseSource": "https://github.com/nodejs/node/blob/main/LICENSE"
     },
     {
       "priority": 5,
@@ -124,12 +196,12 @@
       "category": "لغات برمجة",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 77751,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 78249,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "NOASSERTION",
-      "licenseNeedsUpstreamVerification": true,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "المفسر المرجعي للغة Python",
       "proposedResearchOrBuild": "تعلم الواجهات والـ C API وبناء أدوات تشخيص",
       "inCurrentFeed": false,
@@ -139,8 +211,25 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/python/cpython"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/python/cpython"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://github.com/python/cpython/blob/main/LICENSE"
         }
-      ]
+      ],
+      "forksMeasured": 36614,
+      "openIssuesMeasured": 9295,
+      "lastPushedAt": "2026-11-15T22:34:05Z",
+      "upstreamUpdatedAt": "2026-11-15T23:42:40Z",
+      "defaultBranch": "main",
+      "activityClass": "active",
+      "licenseSummary": "PSF-2.0 (with bundled third-party notices)",
+      "licenseStatus": "verified_from_upstream_LICENSE",
+      "licenseSource": "https://github.com/python/cpython/blob/main/LICENSE"
     },
     {
       "priority": 6,
@@ -149,12 +238,12 @@
       "category": "لغات برمجة",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 120726,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 122002,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "Apache-2.0",
       "licenseNeedsUpstreamVerification": false,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "المترجم والبنية البرمجية للغة Rust",
       "proposedResearchOrBuild": "فحوص أمان الذاكرة وقواعد lint",
       "inCurrentFeed": false,
@@ -164,8 +253,25 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/rust-lang/rust"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/rust-lang/rust"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://github.com/rust-lang/rust/tree/main"
         }
-      ]
+      ],
+      "forksMeasured": 16685,
+      "openIssuesMeasured": 12634,
+      "lastPushedAt": "2026-11-15T21:46:43Z",
+      "upstreamUpdatedAt": "2026-11-15T23:49:57Z",
+      "defaultBranch": "main",
+      "activityClass": "active",
+      "licenseSummary": "MIT OR Apache-2.0",
+      "licenseStatus": "verified_from_upstream_LICENSE_files",
+      "licenseSource": "https://github.com/rust-lang/rust/tree/main"
     },
     {
       "priority": 7,
@@ -174,12 +280,12 @@
       "category": "لغات برمجة",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 139505,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 139931,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "BSD-3-Clause",
       "licenseNeedsUpstreamVerification": false,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "لغة Go وأدواتها",
       "proposedResearchOrBuild": "أداة CLI لتتبع زمن تنفيذ المهام",
       "inCurrentFeed": false,
@@ -189,8 +295,25 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/golang/go"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/golang/go"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://api.github.com/repos/golang/go"
         }
-      ]
+      ],
+      "forksMeasured": 20284,
+      "openIssuesMeasured": 9906,
+      "lastPushedAt": "2026-11-15T21:29:13Z",
+      "upstreamUpdatedAt": "2026-11-15T23:40:18Z",
+      "defaultBranch": "master",
+      "activityClass": "active",
+      "licenseSummary": "BSD-3-Clause",
+      "licenseStatus": "verified_from_GitHub_license_metadata",
+      "licenseSource": "https://api.github.com/repos/golang/go"
     },
     {
       "priority": 8,
@@ -199,12 +322,12 @@
       "category": "بنية سحابية",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 128601,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 129106,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "Apache-2.0",
       "licenseNeedsUpstreamVerification": false,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "تنسيق الحاويات والخدمات",
       "proposedResearchOrBuild": "لوحة فحص موارد الحاويات",
       "inCurrentFeed": false,
@@ -214,8 +337,25 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/kubernetes/kubernetes"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/kubernetes/kubernetes"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://api.github.com/repos/kubernetes/kubernetes"
         }
-      ]
+      ],
+      "forksMeasured": 45117,
+      "openIssuesMeasured": 3284,
+      "lastPushedAt": "2026-11-15T23:09:54Z",
+      "upstreamUpdatedAt": "2026-11-15T23:50:13Z",
+      "defaultBranch": "master",
+      "activityClass": "active",
+      "licenseSummary": "Apache-2.0",
+      "licenseStatus": "verified_from_GitHub_license_metadata",
+      "licenseSource": "https://api.github.com/repos/kubernetes/kubernetes"
     },
     {
       "priority": 9,
@@ -224,12 +364,12 @@
       "category": "قواعد بيانات",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 22534,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 22840,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "NOASSERTION",
-      "licenseNeedsUpstreamVerification": true,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "مرآة رسمية لشفرة PostgreSQL؛ المساهمات تُقدَّم عبر المشروع الأصلي",
       "proposedResearchOrBuild": "أداة مقارنة خطط استعلامات SQL",
       "inCurrentFeed": false,
@@ -239,8 +379,25 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/postgres/postgres"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/postgres/postgres"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://github.com/postgres/postgres/blob/master/COPYRIGHT"
         }
-      ]
+      ],
+      "forksMeasured": 6116,
+      "openIssuesMeasured": 0,
+      "lastPushedAt": "2026-11-14T19:26:20Z",
+      "upstreamUpdatedAt": "2026-11-15T21:32:30Z",
+      "defaultBranch": "master",
+      "activityClass": "active",
+      "licenseSummary": "PostgreSQL License (permissive, BSD-style)",
+      "licenseStatus": "verified_from_upstream_COPYRIGHT",
+      "licenseSource": "https://github.com/postgres/postgres/blob/master/COPYRIGHT"
     },
     {
       "priority": 10,
@@ -249,12 +406,12 @@
       "category": "تعلم آلي",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 201212,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 201645,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "Apache-2.0",
       "licenseNeedsUpstreamVerification": false,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "إطار تعلم آلي",
       "proposedResearchOrBuild": "تقييم خط سير تدريب على مجموعات بيانات صغيرة",
       "inCurrentFeed": false,
@@ -264,8 +421,25 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/tensorflow/tensorflow"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/tensorflow/tensorflow"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://api.github.com/repos/tensorflow/tensorflow"
         }
-      ]
+      ],
+      "forksMeasured": 77980,
+      "openIssuesMeasured": 3461,
+      "lastPushedAt": "2026-11-15T23:40:50Z",
+      "upstreamUpdatedAt": "2026-11-15T23:50:13Z",
+      "defaultBranch": "master",
+      "activityClass": "active",
+      "licenseSummary": "Apache-2.0",
+      "licenseStatus": "verified_from_GitHub_license_metadata",
+      "licenseSource": "https://api.github.com/repos/tensorflow/tensorflow"
     },
     {
       "priority": 11,
@@ -274,12 +448,12 @@
       "category": "تعلم عميق",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 105030,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 105539,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "NOASSERTION",
-      "licenseNeedsUpstreamVerification": true,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "إطار موترات ونماذج تعلم عميق",
       "proposedResearchOrBuild": "قياس استهلاك ذاكرة التدريب",
       "inCurrentFeed": true,
@@ -289,8 +463,25 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/pytorch/pytorch"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/pytorch/pytorch"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://github.com/pytorch/pytorch/blob/main/LICENSE"
         }
-      ]
+      ],
+      "forksMeasured": 30736,
+      "openIssuesMeasured": 18314,
+      "lastPushedAt": "2026-11-15T23:50:21Z",
+      "upstreamUpdatedAt": "2026-11-15T23:50:14Z",
+      "defaultBranch": "main",
+      "activityClass": "active",
+      "licenseSummary": "BSD-3-Clause (check bundled third-party notices)",
+      "licenseStatus": "verified_from_upstream_LICENSE",
+      "licenseSource": "https://github.com/pytorch/pytorch/blob/main/LICENSE"
     },
     {
       "priority": 12,
@@ -299,12 +490,12 @@
       "category": "نماذج AI",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 168058,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 169020,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "Apache-2.0",
       "licenseNeedsUpstreamVerification": false,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "واجهة لتحميل وتدريب واستدلال النماذج",
       "proposedResearchOrBuild": "لوحة مقارنة نماذج على عتاد متاح",
       "inCurrentFeed": true,
@@ -314,8 +505,25 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/huggingface/transformers"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/huggingface/transformers"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://api.github.com/repos/huggingface/transformers"
         }
-      ]
+      ],
+      "forksMeasured": 35217,
+      "openIssuesMeasured": 1150,
+      "lastPushedAt": "2026-11-15T23:13:14Z",
+      "upstreamUpdatedAt": "2026-11-15T23:22:54Z",
+      "defaultBranch": "main",
+      "activityClass": "active",
+      "licenseSummary": "Apache-2.0",
+      "licenseStatus": "verified_from_GitHub_license_metadata",
+      "licenseSource": "https://api.github.com/repos/huggingface/transformers"
     },
     {
       "priority": 13,
@@ -324,12 +532,12 @@
       "category": "نماذج محلية",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 184591,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 187097,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "MIT",
       "licenseNeedsUpstreamVerification": false,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "تشغيل نماذج محلية بواجهات API",
       "proposedResearchOrBuild": "مدير ذاكرة سياقات محلية",
       "inCurrentFeed": false,
@@ -339,8 +547,25 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/ollama/ollama"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/ollama/ollama"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://api.github.com/repos/ollama/ollama"
         }
-      ]
+      ],
+      "forksMeasured": 19109,
+      "openIssuesMeasured": 4658,
+      "lastPushedAt": "2026-11-15T18:46:15Z",
+      "upstreamUpdatedAt": "2026-11-15T23:50:51Z",
+      "defaultBranch": "main",
+      "activityClass": "active",
+      "licenseSummary": "MIT",
+      "licenseStatus": "verified_from_GitHub_license_metadata",
+      "licenseSource": "https://api.github.com/repos/ollama/ollama"
     },
     {
       "priority": 14,
@@ -349,12 +574,12 @@
       "category": "أتمتة",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 208466,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 210607,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "NOASSERTION",
-      "licenseNeedsUpstreamVerification": true,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "بناء تدفقات أتمتة مرئية؛ شروط الترخيص تحتاج تدقيقًا",
       "proposedResearchOrBuild": "مراقب تدفقات مع قياس فشل المهام",
       "inCurrentFeed": false,
@@ -364,8 +589,25 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/n8n-io/n8n"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/n8n-io/n8n"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://github.com/n8n-io/n8n/blob/master/LICENSE.md"
         }
-      ]
+      ],
+      "forksMeasured": 61535,
+      "openIssuesMeasured": 1245,
+      "lastPushedAt": "2026-11-15T23:18:10Z",
+      "upstreamUpdatedAt": "2026-11-15T23:44:16Z",
+      "defaultBranch": "master",
+      "activityClass": "active",
+      "licenseSummary": "Sustainable Use License; .ee components require a separate Enterprise License; not OSI open source",
+      "licenseStatus": "verified_from_upstream_LICENSE_and_LICENSE_EE",
+      "licenseSource": "https://github.com/n8n-io/n8n/blob/master/LICENSE.md"
     },
     {
       "priority": 15,
@@ -374,12 +616,12 @@
       "category": "تطبيقات AI",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 148351,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 149575,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "MIT",
       "licenseNeedsUpstreamVerification": false,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "بناء تطبيقات وكلاء وربط أدوات",
       "proposedResearchOrBuild": "مجموعة تقييم لاستخراج المصادر",
       "inCurrentFeed": true,
@@ -389,8 +631,25 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/langchain-ai/langchain"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/langchain-ai/langchain"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://api.github.com/repos/langchain-ai/langchain"
         }
-      ]
+      ],
+      "forksMeasured": 25139,
+      "openIssuesMeasured": 743,
+      "lastPushedAt": "2026-11-15T23:07:39Z",
+      "upstreamUpdatedAt": "2026-11-15T23:48:03Z",
+      "defaultBranch": "master",
+      "activityClass": "active",
+      "licenseSummary": "MIT",
+      "licenseStatus": "verified_from_GitHub_license_metadata",
+      "licenseSource": "https://api.github.com/repos/langchain-ai/langchain"
     },
     {
       "priority": 16,
@@ -399,12 +658,12 @@
       "category": "منزل ذكي",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 91691,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 92339,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "Apache-2.0",
       "licenseNeedsUpstreamVerification": false,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "أتمتة المنزل مع تركيز على التحكم المحلي",
       "proposedResearchOrBuild": "لوحة قياس جودة الحساسات",
       "inCurrentFeed": false,
@@ -414,8 +673,25 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/home-assistant/core"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/home-assistant/core"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://api.github.com/repos/home-assistant/core"
         }
-      ]
+      ],
+      "forksMeasured": 39348,
+      "openIssuesMeasured": 3993,
+      "lastPushedAt": "2026-11-15T22:59:49Z",
+      "upstreamUpdatedAt": "2026-11-15T23:50:12Z",
+      "defaultBranch": "dev",
+      "activityClass": "active",
+      "licenseSummary": "Apache-2.0",
+      "licenseStatus": "verified_from_GitHub_license_metadata",
+      "licenseSource": "https://api.github.com/repos/home-assistant/core"
     },
     {
       "priority": 17,
@@ -424,12 +700,12 @@
       "category": "بث وتسجيل",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 78048,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 79618,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "GPL-2.0",
       "licenseNeedsUpstreamVerification": false,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "تسجيل الشاشة والبث",
       "proposedResearchOrBuild": "إضافة فهرسة تلقائية للمقاطع التعليمية",
       "inCurrentFeed": false,
@@ -439,8 +715,25 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/obsproject/obs-studio"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/obsproject/obs-studio"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://api.github.com/repos/obsproject/obs-studio"
         }
-      ]
+      ],
+      "forksMeasured": 11276,
+      "openIssuesMeasured": 1209,
+      "lastPushedAt": "2026-11-11T00:42:54Z",
+      "upstreamUpdatedAt": "2026-11-15T23:50:12Z",
+      "defaultBranch": "master",
+      "activityClass": "active",
+      "licenseSummary": "GPL-2.0",
+      "licenseStatus": "verified_from_GitHub_license_metadata",
+      "licenseSource": "https://api.github.com/repos/obsproject/obs-studio"
     },
     {
       "priority": 18,
@@ -449,12 +742,12 @@
       "category": "ثلاثي أبعاد",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 21198,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 22057,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "NOASSERTION",
-      "licenseNeedsUpstreamVerification": true,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "مرآة رسمية لتطبيق Blender",
       "proposedResearchOrBuild": "مقارنة كلفة الرندر للمشاهد",
       "inCurrentFeed": false,
@@ -464,8 +757,25 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/blender/blender"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/blender/blender"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://github.com/blender/blender/blob/main/COPYING"
         }
-      ]
+      ],
+      "forksMeasured": 3598,
+      "openIssuesMeasured": 0,
+      "lastPushedAt": "2026-11-15T23:02:50Z",
+      "upstreamUpdatedAt": "2026-11-15T22:19:39Z",
+      "defaultBranch": "main",
+      "activityClass": "active",
+      "licenseSummary": "GPL-2.0-or-later",
+      "licenseStatus": "verified_from_upstream_COPYING_and_GPL_license",
+      "licenseSource": "https://github.com/blender/blender/blob/main/COPYING"
     },
     {
       "priority": 19,
@@ -474,12 +784,12 @@
       "category": "وسائط",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 58491,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 59410,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "GPL-2.0",
       "licenseNeedsUpstreamVerification": false,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "خادم وسائط مفتوح",
       "proposedResearchOrBuild": "فهرسة مكتبة محلية وإحصاء صيغ الملفات",
       "inCurrentFeed": false,
@@ -489,8 +799,25 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/jellyfin/jellyfin"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/jellyfin/jellyfin"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://api.github.com/repos/jellyfin/jellyfin"
         }
-      ]
+      ],
+      "forksMeasured": 5819,
+      "openIssuesMeasured": 918,
+      "lastPushedAt": "2026-11-14T23:52:25Z",
+      "upstreamUpdatedAt": "2026-11-15T23:48:04Z",
+      "defaultBranch": "master",
+      "activityClass": "active",
+      "licenseSummary": "GPL-2.0",
+      "licenseStatus": "verified_from_GitHub_license_metadata",
+      "licenseSource": "https://api.github.com/repos/jellyfin/jellyfin"
     },
     {
       "priority": 20,
@@ -499,12 +826,12 @@
       "category": "صور",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 117062,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 119297,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "AGPL-3.0",
       "licenseNeedsUpstreamVerification": false,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "إدارة الصور والفيديوهات ذاتيًا",
       "proposedResearchOrBuild": "اكتشاف النسخ المكررة بموافقة المستخدم",
       "inCurrentFeed": false,
@@ -514,8 +841,25 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/immich-app/immich"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/immich-app/immich"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://api.github.com/repos/immich-app/immich"
         }
-      ]
+      ],
+      "forksMeasured": 7616,
+      "openIssuesMeasured": 693,
+      "lastPushedAt": "2026-11-15T19:02:48Z",
+      "upstreamUpdatedAt": "2026-11-15T23:22:40Z",
+      "defaultBranch": "main",
+      "activityClass": "active",
+      "licenseSummary": "AGPL-3.0",
+      "licenseStatus": "verified_from_GitHub_license_metadata",
+      "licenseSource": "https://api.github.com/repos/immich-app/immich"
     },
     {
       "priority": 21,
@@ -524,12 +868,12 @@
       "category": "وثائق",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 47043,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 48147,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "GPL-3.0",
       "licenseNeedsUpstreamVerification": false,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "أرشفة وبحث المستندات الممسوحة",
       "proposedResearchOrBuild": "استخراج حقول مستندات محليًا مع مراجعة بشرية",
       "inCurrentFeed": true,
@@ -539,8 +883,25 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/paperless-ngx/paperless-ngx"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/paperless-ngx/paperless-ngx"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://api.github.com/repos/paperless-ngx/paperless-ngx"
         }
-      ]
+      ],
+      "forksMeasured": 3386,
+      "openIssuesMeasured": 12,
+      "lastPushedAt": "2026-11-15T22:23:38Z",
+      "upstreamUpdatedAt": "2026-11-15T23:45:36Z",
+      "defaultBranch": "dev",
+      "activityClass": "active",
+      "licenseSummary": "GPL-3.0",
+      "licenseStatus": "verified_from_GitHub_license_metadata",
+      "licenseSource": "https://api.github.com/repos/paperless-ngx/paperless-ngx"
     },
     {
       "priority": 22,
@@ -549,12 +910,12 @@
       "category": "مراقبة",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 77475,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 77927,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "AGPL-3.0",
       "licenseNeedsUpstreamVerification": false,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "لوحات زمنية وقياسات ونصوص سجلات",
       "proposedResearchOrBuild": "لوحة مراقبة موارد خدمات AI",
       "inCurrentFeed": false,
@@ -564,8 +925,25 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/grafana/grafana"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/grafana/grafana"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://api.github.com/repos/grafana/grafana"
         }
-      ]
+      ],
+      "forksMeasured": 14984,
+      "openIssuesMeasured": 3300,
+      "lastPushedAt": "2026-11-15T23:43:32Z",
+      "upstreamUpdatedAt": "2026-11-15T22:18:42Z",
+      "defaultBranch": "main",
+      "activityClass": "active",
+      "licenseSummary": "AGPL-3.0",
+      "licenseStatus": "verified_from_GitHub_license_metadata",
+      "licenseSource": "https://api.github.com/repos/grafana/grafana"
     },
     {
       "priority": 23,
@@ -574,12 +952,12 @@
       "category": "ألعاب",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 118993,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 120234,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "MIT",
       "licenseNeedsUpstreamVerification": false,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "محرك تطوير ألعاب 2D و3D",
       "proposedResearchOrBuild": "أداة تعلم تفاعلية لأساسيات البرمجة",
       "inCurrentFeed": false,
@@ -589,8 +967,25 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/godotengine/godot"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/godotengine/godot"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://api.github.com/repos/godotengine/godot"
         }
-      ]
+      ],
+      "forksMeasured": 27523,
+      "openIssuesMeasured": 19069,
+      "lastPushedAt": "2026-11-14T20:14:50Z",
+      "upstreamUpdatedAt": "2026-11-15T23:17:09Z",
+      "defaultBranch": "master",
+      "activityClass": "active",
+      "licenseSummary": "MIT",
+      "licenseStatus": "verified_from_GitHub_license_metadata",
+      "licenseSource": "https://api.github.com/repos/godotengine/godot"
     },
     {
       "priority": 24,
@@ -599,12 +994,12 @@
       "category": "ويب Python",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 104068,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 104756,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "MIT",
       "licenseNeedsUpstreamVerification": false,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "إطار واجهات API بلغة Python",
       "proposedResearchOrBuild": "قالب خدمة نماذج مع تحقق إدخال",
       "inCurrentFeed": false,
@@ -614,8 +1009,25 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/fastapi/fastapi"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/fastapi/fastapi"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://api.github.com/repos/fastapi/fastapi"
         }
-      ]
+      ],
+      "forksMeasured": 10309,
+      "openIssuesMeasured": 76,
+      "lastPushedAt": "2026-11-15T17:10:39Z",
+      "upstreamUpdatedAt": "2026-11-15T23:50:12Z",
+      "defaultBranch": "master",
+      "activityClass": "active",
+      "licenseSummary": "MIT",
+      "licenseStatus": "verified_from_GitHub_license_metadata",
+      "licenseSource": "https://api.github.com/repos/fastapi/fastapi"
     },
     {
       "priority": 25,
@@ -624,12 +1036,12 @@
       "category": "واجهات ويب",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 88428,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 88769,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "MIT",
       "licenseNeedsUpstreamVerification": false,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "تطوير واجهات ويب مترجمة إلى JavaScript",
       "proposedResearchOrBuild": "مكونات جدول أخبار قابلة للنفاذ",
       "inCurrentFeed": false,
@@ -639,8 +1051,25 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/sveltejs/svelte"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/sveltejs/svelte"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://api.github.com/repos/sveltejs/svelte"
         }
-      ]
+      ],
+      "forksMeasured": 6056,
+      "openIssuesMeasured": 1308,
+      "lastPushedAt": "2026-11-15T21:22:16Z",
+      "upstreamUpdatedAt": "2026-11-15T23:50:13Z",
+      "defaultBranch": "main",
+      "activityClass": "active",
+      "licenseSummary": "MIT",
+      "licenseStatus": "verified_from_GitHub_license_metadata",
+      "licenseSource": "https://api.github.com/repos/sveltejs/svelte"
     },
     {
       "priority": 26,
@@ -649,12 +1078,12 @@
       "category": "ويب Python",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 91575,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 91776,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "BSD-3-Clause",
       "licenseNeedsUpstreamVerification": false,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "إطار ويب متكامل",
       "proposedResearchOrBuild": "لوحة إدارة مصادر بيانات تعليمية",
       "inCurrentFeed": false,
@@ -664,8 +1093,25 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/django/django"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/django/django"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://api.github.com/repos/django/django"
         }
-      ]
+      ],
+      "forksMeasured": 35227,
+      "openIssuesMeasured": 531,
+      "lastPushedAt": "2026-11-13T17:06:51Z",
+      "upstreamUpdatedAt": "2026-11-15T23:50:12Z",
+      "defaultBranch": "main",
+      "activityClass": "active",
+      "licenseSummary": "BSD-3-Clause",
+      "licenseStatus": "verified_from_GitHub_license_metadata",
+      "licenseSource": "https://api.github.com/repos/django/django"
     },
     {
       "priority": 27,
@@ -674,12 +1120,12 @@
       "category": "محررات",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 103142,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 103681,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "NOASSERTION",
-      "licenseNeedsUpstreamVerification": true,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "محرر extensible وخفيف",
       "proposedResearchOrBuild": "واجهة إضافية لفحص نتائج اختبارات",
       "inCurrentFeed": false,
@@ -689,8 +1135,25 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/neovim/neovim"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/neovim/neovim"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://github.com/neovim/neovim/blob/master/LICENSE.txt"
         }
-      ]
+      ],
+      "forksMeasured": 7426,
+      "openIssuesMeasured": 2008,
+      "lastPushedAt": "2026-11-15T21:09:59Z",
+      "upstreamUpdatedAt": "2026-11-15T23:50:12Z",
+      "defaultBranch": "master",
+      "activityClass": "active",
+      "licenseSummary": "Apache-2.0 with portions under the Vim license",
+      "licenseStatus": "verified_from_upstream_LICENSE",
+      "licenseSource": "https://github.com/neovim/neovim/blob/master/LICENSE.txt"
     },
     {
       "priority": 28,
@@ -699,12 +1162,12 @@
       "category": "وسائط",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 65628,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 67389,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "NOASSERTION",
-      "licenseNeedsUpstreamVerification": true,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "licenseNeedsUpstreamVerification": false,
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "مرآة شفرة إطار معالجة الصوت والفيديو",
       "proposedResearchOrBuild": "أداة قياس حجم وصيغ الفيديو",
       "inCurrentFeed": false,
@@ -714,8 +1177,25 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/FFmpeg/FFmpeg"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/FFmpeg/FFmpeg"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://github.com/FFmpeg/FFmpeg/blob/master/README.md"
         }
-      ]
+      ],
+      "forksMeasured": 14664,
+      "openIssuesMeasured": 3,
+      "lastPushedAt": "2026-11-15T23:48:30Z",
+      "upstreamUpdatedAt": "2026-11-15T23:50:12Z",
+      "defaultBranch": "master",
+      "activityClass": "active",
+      "licenseSummary": "LGPL-2.1-or-later; GPL components may change the build's license",
+      "licenseStatus": "verified_from_upstream_README_and_COPYING",
+      "licenseSource": "https://github.com/FFmpeg/FFmpeg/blob/master/README.md"
     },
     {
       "priority": 29,
@@ -724,12 +1204,12 @@
       "category": "مؤرشف",
       "classification": "historical_archived",
       "archived": true,
-      "starsMeasured": 60710,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 60692,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "MIT",
       "licenseNeedsUpstreamVerification": false,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "محرر مؤرشف، ذو قيمة تاريخية",
       "proposedResearchOrBuild": "دراسة الهجرة إلى VS Code",
       "inCurrentFeed": false,
@@ -739,6 +1219,40 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/atom/atom"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/atom/atom"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://api.github.com/repos/atom/atom"
+        }
+      ],
+      "forksMeasured": 17163,
+      "openIssuesMeasured": 993,
+      "lastPushedAt": "2023-01-03T10:49:48Z",
+      "upstreamUpdatedAt": "2026-11-15T19:34:12Z",
+      "defaultBranch": "master",
+      "activityClass": "archived",
+      "licenseSummary": "MIT",
+      "licenseStatus": "verified_from_GitHub_license_metadata",
+      "licenseSource": "https://api.github.com/repos/atom/atom",
+      "alternatives": [
+        {
+          "repository": "microsoft/vscode",
+          "url": "https://github.com/microsoft/vscode",
+          "reason": "محرر حديث نشط في الكتالوج"
+        },
+        {
+          "repository": "zed-industries/zed",
+          "url": "https://github.com/zed-industries/zed",
+          "reason": "بديل حديث نشط؛ قياس GitHub API في هذه الدورة"
+        },
+        {
+          "repository": "pulsar-edit/pulsar",
+          "url": "https://github.com/pulsar-edit/pulsar",
+          "reason": "تفرع مجتمعي يستمر في تطوير تجربة قريبة من Atom"
         }
       ]
     },
@@ -749,12 +1263,12 @@
       "category": "مؤرشف",
       "classification": "historical_archived",
       "archived": true,
-      "starsMeasured": 58472,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 58427,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "MIT",
       "licenseNeedsUpstreamVerification": false,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "إطار AngularJS القديم والمؤرشف",
       "proposedResearchOrBuild": "دليل هجرة تدريجي إلى أطر حديثة",
       "inCurrentFeed": false,
@@ -764,6 +1278,40 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/angular/angular.js"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/angular/angular.js"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://api.github.com/repos/angular/angular.js"
+        }
+      ],
+      "forksMeasured": 26895,
+      "openIssuesMeasured": 461,
+      "lastPushedAt": "2024-04-12T17:43:16Z",
+      "upstreamUpdatedAt": "2026-11-15T10:02:24Z",
+      "defaultBranch": "master",
+      "activityClass": "archived",
+      "licenseSummary": "MIT",
+      "licenseStatus": "verified_from_GitHub_license_metadata",
+      "licenseSource": "https://api.github.com/repos/angular/angular.js",
+      "alternatives": [
+        {
+          "repository": "angular/angular",
+          "url": "https://github.com/angular/angular",
+          "reason": "الخلف الرسمي الحديث من فريق Angular؛ نشط في القياس الحالي"
+        },
+        {
+          "repository": "vuejs/core",
+          "url": "https://github.com/vuejs/core",
+          "reason": "بديل حديث ضمن الكتالوج"
+        },
+        {
+          "repository": "sveltejs/svelte",
+          "url": "https://github.com/sveltejs/svelte",
+          "reason": "بديل حديث ضمن الكتالوج"
         }
       ]
     },
@@ -774,12 +1322,12 @@
       "category": "لغات برمجة",
       "classification": "established_non_archived",
       "archived": false,
-      "starsMeasured": 111584,
-      "metricCapturedAt": "2026-10-24T10:38:36.869Z",
+      "starsMeasured": 111823,
+      "metricCapturedAt": "2026-11-16T02:54:42+03:00",
       "licenseApiValue": "Apache-2.0",
       "licenseNeedsUpstreamVerification": false,
-      "pushedActivityMustBeChecked": true,
-      "reviewBasis": "GitHub repository metadata, not README or code execution",
+      "pushedActivityMustBeChecked": false,
+      "reviewBasis": "GitHub REST repository metadata plus the upstream license file or GitHub's detected SPDX license; README and runtime were not re-audited in this metrics refresh.",
       "overviewShort": "لغة TypeScript ومترجمها",
       "proposedResearchOrBuild": "مولد قوالب للتحقق من أنواع بيانات API",
       "inCurrentFeed": false,
@@ -789,8 +1337,25 @@
         {
           "title": "GitHub repository metadata",
           "url": "https://github.com/microsoft/TypeScript"
+        },
+        {
+          "title": "GitHub repository metadata captured 2026-11-16",
+          "url": "https://api.github.com/repos/microsoft/TypeScript"
+        },
+        {
+          "title": "Upstream license evidence",
+          "url": "https://api.github.com/repos/microsoft/TypeScript"
         }
-      ]
+      ],
+      "forksMeasured": 14698,
+      "openIssuesMeasured": 5305,
+      "lastPushedAt": "2026-11-15T22:32:30Z",
+      "upstreamUpdatedAt": "2026-11-15T22:34:14Z",
+      "defaultBranch": "main",
+      "activityClass": "active",
+      "licenseSummary": "Apache-2.0",
+      "licenseStatus": "verified_from_GitHub_license_metadata",
+      "licenseSource": "https://api.github.com/repos/microsoft/TypeScript"
     }
   ]
 }
