@@ -2,7 +2,7 @@
   "version": 1,
   "publicationStatus": "research-only-not-published",
   "reviewedAt": "2026-11-16T23:47:26+03:00",
-  "sourceMainSha": "65e69a2329235ee0cd0dfb8a7de70745f7671edc",
+  "sourceMainSha": "f7f3f42d289a6076959e21eeae1290f5c22edf03",
   "sourcePrHeadBefore": "dcb6ba5fe35e7d08e09731470b10917064d1a33b",
   "catalogBaseline": {
     "total": 73,
@@ -435,5 +435,16 @@
     "Display this file as a research-only license audit, not as a published project card.",
     "Keep code license, model-weight license, third-party notices, and upstream task licenses as separate fields.",
     "Do not present a project as open source solely from GitHub API license metadata when the official license says otherwise."
-  ]
+  ],
+  "mainAdvanceDuringRun": {
+    "from": "65e69a2329235ee0cd0dfb8a7de70745f7671edc",
+    "to": "f7f3f42d289a6076959e21eeae1290f5c22edf03",
+    "commitTitle": "data: refresh deduplicated technology feed",
+    "changedFiles": [
+      "site/data/feed.json",
+      "site/data/seen.json",
+      "site/data/status.json"
+    ],
+    "trigger": "existing scheduled GitHub Actions run 43940637534"
+  }
 }
