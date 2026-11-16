@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-16T06:17:25+03:00",
+  "baseMain": "726240b704f20b859cc825190cb30fe642b3f998",
+  "snapshots": {
+    "feedBlobSha": "06472869c36ef96d650b3b380f6c9fccdefc25b7",
+    "feedGeneratedAt": "2026-11-16T00:16:46+00:00",
+    "feedItems": 800,
+    "feedNews": 700,
+    "feedProjects": 100,
+    "editorialBlobShaBefore": "2dfceadcde9bddcef729bda9c5f47d68128b66f7",
+    "editorialEntriesBefore": 1015,
+    "seenBlobSha": "13a39853ff26550452b515e80ddab6f5d5c0afe0",
+    "seenIds": 5196
+  },
+  "incomingAudit": {
+    "files": 129,
+    "recordOccurrences": 1308,
+    "countsAreOccurrencesNotUniqueIds": true,
+    "alreadyImportedExactIdUrlOccurrences": 1173,
+    "currentFeedExactOccurrences": 260,
+    "pendingExactFeedNotEditorialOccurrences": 0,
+    "absentFromCurrentFeedAndEditorialOccurrences": 135,
+    "confirmedExpiredOccurrences": 0,
+    "malformedJsonFiles": 0,
+    "structuralValidationErrors": 0,
+    "idUrlConflicts": 0,
+    "urlOwnedByDifferentIdCollisions": 1,
+    "note": "تمت مقارنة كل ID وURL في الملفات الـ129 مع Feed وEditorial الحاليين. 135 ظهورًا لا يطابق Feed ولا Editorial؛ غيابها لا يثبت الانقضاء. جميع التطابقات الدقيقة مع Feed كانت مستوردة بالفعل."
+  },
+  "collision": {
+    "oldEditorialId": "7a99eca9b2ce14d9f5",
+    "currentFeedId": "e0cbbf211a55e79f34",
+    "url": "https://github.com/rasbt/LLMs-from-scratch",
+    "decision": "hold; no ID remapping, title alias, or merge"
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "inSeen": true,
+      "inCurrentFeed": false,
+      "inCurrentEditorial": false,
+      "decision": "research-only; upstream README says CNCF migration is not complete"
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "inSeen": true,
+      "inCurrentFeed": false,
+      "inCurrentEditorial": false,
+      "decision": "outside current RSS window; no import"
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "inSeen": true,
+      "inCurrentFeed": false,
+      "inCurrentEditorial": false,
+      "decision": "outside current RSS window; no import"
+    }
+  ],
+  "newNewsBatch": {
+    "prepared": 11,
+    "exactCurrentFeedIdUrl": 11,
+    "alreadyEditorialBefore": 0,
+    "basisCounts": {
+      "article": 2,
+      "metadata": 9
+    },
+    "items": [
+      {
+        "id": "cf97ff69639d42ba1b",
+        "url": "https://www.engadget.com/2313818/how-to-generate-edit-gifs-with-chatgpt/",
+        "basis": "article"
+      },
+      {
+        "id": "ee5af6d04c30018d9c",
+        "url": "https://www.engadget.com/2313934/wifi-slows-down-when-devices-connect/",
+        "basis": "article"
+      },
+      {
+        "id": "9e5328de36564d8957",
+        "url": "https://arxiv.org/abs/2611.14960",
+        "basis": "metadata"
+      },
+      {
+        "id": "1c17e7e3955e404552",
+        "url": "https://arxiv.org/abs/2611.14846",
+        "basis": "metadata"
+      },
+      {
+        "id": "439d7c3c1dd7d54ef9",
+        "url": "https://arxiv.org/abs/2611.15006",
+        "basis": "metadata"
+      },
+      {
+        "id": "36459f304a2d52e221",
+        "url": "https://arxiv.org/abs/2611.14769",
+        "basis": "metadata"
+      },
+      {
+        "id": "2551474761e05508e9",
+        "url": "https://arxiv.org/abs/2611.14924",
+        "basis": "metadata"
+      },
+      {
+        "id": "425dc6549550598959",
+        "url": "https://arxiv.org/abs/2611.15097",
+        "basis": "metadata"
+      },
+      {
+        "id": "a0b5c798ba3b66748b",
+        "url": "https://arxiv.org/abs/2611.14681",
+        "basis": "metadata"
+      },
+      {
+        "id": "3a18bb57d526bd2f83",
+        "url": "https://arxiv.org/abs/2611.15178",
+        "basis": "metadata"
+      },
+      {
+        "id": "eef01a785311fec48e",
+        "url": "https://arxiv.org/abs/2611.14844",
+        "basis": "metadata"
+      }
+    ]
+  },
+  "projectReview": {
+    "previousEightRefreshed": 8,
+    "currentFeedProjects": 100,
+    "currentFeedProjectsWithExactEditorial": 100,
+    "newProjectCards": 0,
+    "historicalLibraryProjects": 31,
+    "active": 29,
+    "archived": 2,
+    "licensesVerified": 31,
+    "lastFullLibraryAudit": "2026-11-16T02:54:42+03:00",
+    "libraryFiles": 128
+  },
+  "execution": {
+    "officialLocalValidate": false,
+    "officialLocalImport": false,
+    "structuralEquivalentValidation": true,
+    "existingEditorialEntriesPreserved": 1015,
+    "addedEditorialEntries": 11,
+    "removedEditorialEntries": 0,
+    "finalEditorialEntries": 1026,
+    "localUnitTests": false,
+    "localUnitTestsReason": "لا توجد نسخة مستودع محلية قابلة للتنفيذ في هذه البيئة؛ سيجري التحقق الرسمي والاختبارات عبر CI على طلب الدمج."
+  },
+  "publication": {
+    "status": "pending",
+    "note": "لا تُعد السجلات منشورة حتى ينجح CI ثم GitHub Pages ويُفحص Artifact أو الملف العام."
+  }
+}
