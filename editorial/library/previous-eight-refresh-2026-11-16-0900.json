@@ -1,0 +1,464 @@
+{
+  "schemaVersion": 1,
+  "measuredAt": "2026-11-16T09:00:12+03:00",
+  "purpose": "Research-only refresh of the eight previous projects; not published to the website.",
+  "historicalLibrary": {
+    "projects": 31,
+    "active": 29,
+    "archived": 2,
+    "licensesVerified": 31,
+    "lastFullAudit": "2026-11-16T02:54:42+03:00",
+    "deepReviewedProjects": 3,
+    "priorIdeas": 90,
+    "religiousDomains": 9,
+    "religiousIdeas": 90,
+    "libraryDirectoryFiles": 130
+  },
+  "currentFeed": {
+    "news": 700,
+    "newsWithExactEditorial": 91,
+    "newsWithoutEditorial": 609,
+    "projects": 100,
+    "projectsWithExactEditorial": 100,
+    "newProjectCards": 0
+  },
+  "previousEight": [
+    {
+      "name": "AI Engineering Hub",
+      "repository": "patchy631/ai-engineering-hub",
+      "stars": 41913,
+      "forks": 6692,
+      "openIssues": 138,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-30T08:51:58Z",
+      "inFeed": true,
+      "editorialId": "fe0e6bfdbdd5822139",
+      "requirements": "مجموعة تعليمية تضم أكثر من 90 مشروعًا؛ لا يوجد runtime أو متطلبات موحدة للمستودع كله.",
+      "quickStart": "ابدأ بخريطة AI Engineering Roadmap، ثم اختر مشروعًا واحدًا واقرأ README الخاص به قبل تثبيت متطلباته.",
+      "localCloud": "تضم أمثلة OCR وRAG محلية وأمثلة تعتمد خدمات API سحابية؛ التنفيذ يتبع المشروع الفرعي.",
+      "costs": "المستودع مجاني؛ تكلفة النماذج والخدمات تختلف حسب المشروع الفرعي.",
+      "alternatives": "لا بديل واحد لأنه فهرس موارد؛ استخدم توثيق Hugging Face أو LangChain أو LlamaIndex بحسب المسار.",
+      "sources": [
+        "README",
+        "LICENSE"
+      ],
+      "testEvidence": null,
+      "latestCommit": {
+        "sha": "042aeb5067384981eeba6a07fa882f436bb1660d",
+        "committedAt": "2026-10-30T08:51:58Z",
+        "message": "Add multi-agent omnigraph demo"
+      },
+      "readmeSha": "6c65b7c2c3b2c9e1e",
+      "licenseSha": "84ee6c2b",
+      "licenseMitSha": null,
+      "licenseApacheSha": null,
+      "activityCheckedAt": "2026-11-16T09:00:12+03:00"
+    },
+    {
+      "name": "Google Gen AI SDK",
+      "repository": "googleapis/python-genai",
+      "stars": 4075,
+      "forks": 1067,
+      "openIssues": 386,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-11-16T05:25:01Z",
+      "inFeed": false,
+      "editorialId": null,
+      "requirements": "Python >=3.11؛ pyproject يذكر الإصدار 3.3.0 واعتماديات Pydantic وhttpx2 وgoogle-auth.",
+      "quickStart": "pip install google-genai؛ أنشئ Client بمفتاح Gemini Developer API أو ببيانات مشروع Google Cloud.",
+      "localCloud": "التطبيق محلي لكن استدعاء النماذج سحابي عبر Gemini API أو Agent Platform.",
+      "costs": "المكتبة مجانية؛ الاستدعاءات تخضع لتسعير API والحصص.",
+      "alternatives": "REST API أو SDKs أخرى حسب المزود.",
+      "sources": [
+        "README",
+        "pyproject.toml",
+        "LICENSE"
+      ],
+      "testEvidence": null,
+      "latestCommit": {
+        "sha": "36c3c5fada2ccbf166dfc66fa7b58516f9ddef5e",
+        "committedAt": "2026-11-16T05:25:01Z",
+        "message": "feat(interactions): expose static file processing options"
+      },
+      "readmeSha": "8faf1d2",
+      "licenseSha": "d6450b",
+      "licenseMitSha": null,
+      "licenseApacheSha": null,
+      "activityCheckedAt": "2026-11-16T09:00:12+03:00"
+    },
+    {
+      "name": "Lasm",
+      "repository": "Millillion/lasm",
+      "stars": 106,
+      "forks": 7,
+      "openIssues": 9,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-11-15T05:09:28Z",
+      "inFeed": false,
+      "editorialId": null,
+      "requirements": "Node.js >=24 وLean 4.35.0؛ يحتاج npm لتنزيل الحزم.",
+      "quickStart": "npm create @lasm@latest my-app -- --template hono؛ ثم npm install وnpm run dev.",
+      "localCloud": "يبني Lean إلى WebAssembly ويستهدف Node وBun وDeno والمتصفح ومنصات edge/serverless؛ CI يستخدم محاكيات محلية ولا يثبت نشرًا إنتاجيًا.",
+      "costs": "المترجم مفتوح المصدر؛ الاستضافة تخضع لتسعير المنصة.",
+      "alternatives": "TypeScript/JavaScript أو أطر WASM أخرى بحسب الحاجة إلى Lean والتحقق الصوري.",
+      "sources": [
+        "README",
+        "package.json",
+        "lean-toolchain",
+        "LICENSE"
+      ],
+      "testEvidence": null,
+      "latestCommit": {
+        "sha": "b01838bfad4d7f8da8beb61e5aee7b690e86ae3e",
+        "committedAt": "2026-11-15T05:09:28Z",
+        "message": "benchmarks: record 0.1.0-experimental.43670850059"
+      },
+      "readmeSha": "8e6b31",
+      "licenseSha": "46b2a",
+      "licenseMitSha": null,
+      "licenseApacheSha": null,
+      "activityCheckedAt": "2026-11-16T09:00:12+03:00"
+    },
+    {
+      "name": "MarkItDown",
+      "repository": "microsoft/markitdown",
+      "stars": 195580,
+      "forks": 14784,
+      "openIssues": 814,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-11-07T00:14:01Z",
+      "inFeed": false,
+      "editorialId": null,
+      "requirements": "Python >=3.10 و<3.15؛ التبعيات الاختيارية تختلف حسب PDF وDOCX وPPTX وXLSX والصوت.",
+      "quickStart": "pip install 'markitdown[all]' أو ثبّت الإضافات اللازمة فقط.",
+      "localCloud": "التحويل الأساسي محلي؛ التعليق على الصور والتعرف على الصوت وبعض موصلات Azure تعتمد خدمات خارجية.",
+      "costs": "الحزمة مجانية؛ قد تنشأ تكلفة لخدمات Azure أو الاستدلال الخارجي.",
+      "alternatives": "Apache Tika وPandoc وUnstructured وDocling.",
+      "sources": [
+        "README",
+        "pyproject.toml",
+        "LICENSE"
+      ],
+      "testEvidence": null,
+      "latestCommit": {
+        "sha": "ed178952a6672abdfd35b5f9e76a80b6cefc086e",
+        "committedAt": "2026-11-07T00:14:01Z",
+        "message": "fix: match ExifTool directories case-insensitively on Windows"
+      },
+      "readmeSha": "af858b",
+      "licenseSha": "9e841",
+      "licenseMitSha": null,
+      "licenseApacheSha": null,
+      "activityCheckedAt": "2026-11-16T09:00:12+03:00"
+    },
+    {
+      "name": "Minecraft Agent Harness",
+      "repository": "yc-software/minecraft-agent-harness",
+      "stars": 222,
+      "forks": 30,
+      "openIssues": 1,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-29T05:00:00Z",
+      "inFeed": false,
+      "editorialId": null,
+      "requirements": "Node.js >=22.19 وMinecraft Java 1.21.6؛ الخادم المحلي يحتاج Java 21 ومفتاح مزود النموذج.",
+      "quickStart": "npm ci؛ انسخ .env.example إلى .env وأضف مفتاح المزود؛ npm run server؛ ثم شغّل الوكيل على localhost:25565.",
+      "localCloud": "يدعم Paper محليًا وDocker أو E2B؛ المجلد المحلي ينفذ الأوامر بصلاحيات المستخدم.",
+      "costs": "قد توجد تكلفة لرموز النموذج وE2B والاستضافة؛ Docker والخادم المحلي يقللان تكلفة الخدمة الخارجية.",
+      "alternatives": "Mineflayer مباشرة أو أطر وكلاء عامة إن لم تكن محاكاة Minecraft مطلوبة.",
+      "sources": [
+        "README",
+        "docs/configuration.md",
+        "package.json",
+        "LICENSE"
+      ],
+      "testEvidence": null,
+      "latestCommit": {
+        "sha": "775d558689f5e4eaa0f1d0d7a320035190b1fce6",
+        "committedAt": "2026-10-29T05:00:00Z",
+        "message": "Initial public release"
+      },
+      "readmeSha": "50b5c",
+      "licenseSha": "5efc",
+      "licenseMitSha": null,
+      "licenseApacheSha": null,
+      "activityCheckedAt": "2026-11-16T09:00:12+03:00"
+    },
+    {
+      "name": "NVIDIA OpenShell",
+      "repository": "NVIDIA/OpenShell",
+      "stars": 21652,
+      "forks": 2117,
+      "openIssues": 701,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-11-13T23:50:46Z",
+      "inFeed": false,
+      "editorialId": null,
+      "requirements": "Python >=3.11؛ Linux أو macOS Apple Silicon أو Windows عبر WSL 2 التجريبي؛ Docker أو Podman أو host virtualization.",
+      "quickStart": "المثبت الرسمي ثم openshell sandbox create --name demo؛ يتطلب تشغيل وكيل فعلي اتباع دليل Run Your First Agent.",
+      "localCloud": "CLI وgateway محليان؛ SDKs متعددة وخيار Brev Launchable. انتقال التطوير والحوكمة إلى ai-openshell/CNCF ما زال قيد التنفيذ، لذا يبقى مستودع NVIDIA هو المرجع الحالي.",
+      "costs": "البرنامج Apache-2.0؛ تكلفة النماذج والاستضافة منفصلة. يمكن تعطيل telemetry التشغيلية.",
+      "alternatives": "Docker/Podman بسياسات يدوية أو أطر عزل أخرى بعد مقارنة نموذج الصلاحيات.",
+      "sources": [
+        "README",
+        "pyproject.toml",
+        "LICENSE",
+        "official docs"
+      ],
+      "testEvidence": null,
+      "latestCommit": {
+        "sha": "2e5589b2180dd432320adda124c4f7bcede119b5",
+        "committedAt": "2026-11-13T23:50:46Z",
+        "message": "fix(helm): scope OIDC CA trust to the OIDC client"
+      },
+      "readmeSha": "ea31d968136ad93ac659552697d03f0e473301d4",
+      "licenseSha": "f13d",
+      "licenseMitSha": null,
+      "licenseApacheSha": null,
+      "activityCheckedAt": "2026-11-16T09:00:12+03:00"
+    },
+    {
+      "name": "Pydantic AI",
+      "repository": "pydantic/pydantic-ai",
+      "stars": 21227,
+      "forks": 3186,
+      "openIssues": 1953,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-11-16T05:37:19Z",
+      "inFeed": false,
+      "editorialId": null,
+      "requirements": "Python >=3.11؛ إطار typed agent loop وتكاملات مزودي نماذج متعددة.",
+      "quickStart": "uv add pydantic-ai؛ استخدم TestModel دون API key لاختبار بنية الوكيل، ثم أضف بيانات اعتماد المزود.",
+      "localCloud": "التطبيق محلي ويمكن ربطه بمزود محلي أو سحابي؛ Logfire اختياري ويمكن استبداله بـOpenTelemetry backend.",
+      "costs": "المكتبة مجانية؛ تكلفة الاستدلال تتبع المزود. Logfire لديه فئة مجانية.",
+      "alternatives": "OpenAI Agents SDK وLangChain وLlamaIndex وHaystack.",
+      "sources": [
+        "README",
+        "pyproject.toml",
+        "LICENSE",
+        "official docs"
+      ],
+      "testEvidence": null,
+      "latestCommit": {
+        "sha": "bc598a1dc02b9305bf99b988334fba214774d357",
+        "committedAt": "2026-11-16T05:37:19Z",
+        "message": "Document that IPythonCodeMode can lose its kernel to an interrupt on Python 3.14"
+      },
+      "readmeSha": "3774",
+      "licenseSha": "1bf1",
+      "licenseMitSha": null,
+      "licenseApacheSha": null,
+      "activityCheckedAt": "2026-11-16T09:00:12+03:00"
+    },
+    {
+      "name": "uv",
+      "repository": "astral-sh/uv",
+      "stars": 92052,
+      "forks": 3838,
+      "openIssues": 3082,
+      "license": "MIT AND Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-11-16T04:10:34Z",
+      "inFeed": false,
+      "editorialId": null,
+      "requirements": "أداة مستقلة مكتوبة بـRust ويمكن تثبيتها دون Python أو Rust؛ تدعم macOS وLinux وWindows.",
+      "quickStart": "استخدم المثبت الرسمي أو pipx/pip، ثم uv init وuv add وuv run.",
+      "localCloud": "مدير حزم ومشاريع محلي ولا يحتاج خدمة سحابية؛ يجلب الحزم من registries عند الحاجة.",
+      "costs": "مجاني ومفتوح المصدر ولا توجد رسوم خدمة من uv نفسه.",
+      "alternatives": "pip وvenv وpip-tools وPoetry وPDM وConda.",
+      "sources": [
+        "README",
+        "LICENSE-MIT",
+        "LICENSE-APACHE",
+        "official docs"
+      ],
+      "testEvidence": null,
+      "latestCommit": {
+        "sha": "cf9bace0e30e448544c029fb65bff068c16a42d2",
+        "committedAt": "2026-11-16T04:10:34Z",
+        "message": "Update Rust crate libc to v0.2.190"
+      },
+      "readmeSha": "66ca",
+      "licenseMitSha": "014835144877ea9c926d027ece3e1a26290cf481",
+      "licenseApacheSha": "261e",
+      "activityCheckedAt": "2026-11-16T09:00:12+03:00"
+    }
+  ],
+  "preservedTopSuggestions": [
+    {
+      "title": "معيار OCR عربي قابل لإعادة الإنتاج",
+      "problem": "تختلف جودة استخراج العربية مع الجداول والتشكيل وجودة المسح.",
+      "approach": "جمع صفحات مرخصة ومقارنة محركات OCR بقياس CER وWER والزمن.",
+      "stack": "Python, PaddleOCR, EasyOCR, OpenCV, pandas",
+      "steps": [
+        "جمع صفحات مرخصة.",
+        "إزالة البيانات الشخصية ووضع نص مرجعي.",
+        "تشغيل محركات OCR بإعدادات موثقة.",
+        "قياس CER وWER والزمن.",
+        "نشر النتائج والقيود."
+      ],
+      "metric": "CER وWER وزمن معالجة الصفحة.",
+      "difficulty": "متوسطة — تقدير 2–3 أسابيع.",
+      "risks": "انحياز العينة وخصوصية الوثائق واختلاف جودة المسح.",
+      "sources": [
+        {
+          "title": "PaddleOCR",
+          "url": "https://github.com/PaddlePaddle/PaddleOCR"
+        },
+        {
+          "title": "EasyOCR",
+          "url": "https://github.com/JaidedAI/EasyOCR"
+        }
+      ]
+    },
+    {
+      "title": "معيار تقييم وكلاء الصوت باللهجات العربية",
+      "problem": "قد يتراجع التفريغ في لهجات أو ضوضاء مختلفة.",
+      "approach": "مجموعة تسجيلات بموافقة ونصوص مرجعية تقيس التفريغ وإتمام المهمة وزمن الاستجابة.",
+      "stack": "Python, Whisper, PyTorch, FastAPI, SQLite",
+      "steps": [
+        "تحديد اللهجات والسياقات.",
+        "جمع تسجيلات بموافقة.",
+        "إنشاء نصوص مرجعية.",
+        "اختبار نماذج متعددة.",
+        "قياس WER ونسبة الإتمام وP95.",
+        "نشر حالات الفشل."
+      ],
+      "metric": "WER ونسبة إتمام المهمة وزمن الاستجابة P95.",
+      "difficulty": "متوسطة — تقدير 3–5 أسابيع.",
+      "risks": "الخصوصية وعدم توازن اللهجات.",
+      "sources": [
+        {
+          "title": "Whisper",
+          "url": "https://github.com/openai/whisper"
+        },
+        {
+          "title": "Mozilla Common Voice",
+          "url": "https://commonvoice.mozilla.org/"
+        }
+      ]
+    },
+    {
+      "title": "صلاحيات مؤقتة ومحددة لأدوات الوكلاء",
+      "problem": "قد يحصل الوكيل على صلاحية أوسع من الإجراء المطلوب.",
+      "approach": "وسيط سياسات يصدر تفويضًا قصير العمر ومقيدًا بالمورد والفعل.",
+      "stack": "Python, FastAPI, OPA, SQLite, OpenTelemetry",
+      "steps": [
+        "تعريف الموارد والأفعال.",
+        "كتابة سياسات أقل صلاحية.",
+        "إصدار تفويضات قصيرة العمر.",
+        "إضافة موافقات بشرية.",
+        "تسجيل القرارات.",
+        "اختبار الخروج عن النطاق."
+      ],
+      "metric": "نسبة الاستدعاءات الخارجة عن النطاق التي رُفضت وزمن التفويض.",
+      "difficulty": "مرتفعة — تقدير 4–6 أسابيع.",
+      "risks": "أخطاء السياسات وإدارة الرموز وعبء الموافقات.",
+      "sources": [
+        {
+          "title": "Open Policy Agent",
+          "url": "https://github.com/open-policy-agent/opa"
+        },
+        {
+          "title": "OpenTelemetry",
+          "url": "https://opentelemetry.io/"
+        }
+      ]
+    }
+  ],
+  "displayRequirementsForDevelopmentAssistant": "مراجعة بيانات بحثية فقط؛ لا تغيّر الموقع أو الواجهة أو CSS أو JavaScript أو workflows أو إعدادات Pages. عند عرض أي مشروع اربط البطاقة بالمعرف الأصلي في Feed وأظهر overview وrequirements وquickStart ثم الاقتراحات ذات الأدلة. لا تضف testEvidence إلا بعد تجربة موثقة.",
+  "metricsSnapshotAt": "2026-11-16T06:17:25+03:00",
+  "activityRecheckAt": "2026-11-16T09:00:12+03:00",
+  "activityRecheck": [
+    {
+      "repository": "patchy631/ai-engineering-hub",
+      "latestCommitSha": "042aeb5067384981eeba6a07fa882f436bb1660d",
+      "latestCommitAt": "2026-10-30T08:51:58Z",
+      "latestCommitMessage": "Add multi-agent omnigraph demo",
+      "readmeSha": "6c65b7c2c3b2c9e1e",
+      "licenseSha": "84ee6c2b",
+      "archived": false,
+      "activityCheckedAt": "2026-11-16T09:00:12+03:00"
+    },
+    {
+      "repository": "googleapis/python-genai",
+      "latestCommitSha": "36c3c5fada2ccbf166dfc66fa7b58516f9ddef5e",
+      "latestCommitAt": "2026-11-16T05:25:01Z",
+      "latestCommitMessage": "feat(interactions): expose static file processing options",
+      "readmeSha": "8faf1d2",
+      "licenseSha": "d6450b",
+      "archived": false,
+      "activityCheckedAt": "2026-11-16T09:00:12+03:00"
+    },
+    {
+      "repository": "Millillion/lasm",
+      "latestCommitSha": "b01838bfad4d7f8da8beb61e5aee7b690e86ae3e",
+      "latestCommitAt": "2026-11-15T05:09:28Z",
+      "latestCommitMessage": "benchmarks: record 0.1.0-experimental.43670850059",
+      "readmeSha": "8e6b31",
+      "licenseSha": "46b2a",
+      "archived": false,
+      "activityCheckedAt": "2026-11-16T09:00:12+03:00"
+    },
+    {
+      "repository": "microsoft/markitdown",
+      "latestCommitSha": "ed178952a6672abdfd35b5f9e76a80b6cefc086e",
+      "latestCommitAt": "2026-11-07T00:14:01Z",
+      "latestCommitMessage": "fix: match ExifTool directories case-insensitively on Windows",
+      "readmeSha": "af858b",
+      "licenseSha": "9e841",
+      "archived": false,
+      "activityCheckedAt": "2026-11-16T09:00:12+03:00"
+    },
+    {
+      "repository": "yc-software/minecraft-agent-harness",
+      "latestCommitSha": "775d558689f5e4eaa0f1d0d7a320035190b1fce6",
+      "latestCommitAt": "2026-10-29T05:00:00Z",
+      "latestCommitMessage": "Initial public release",
+      "readmeSha": "50b5c",
+      "licenseSha": "5efc",
+      "archived": false,
+      "activityCheckedAt": "2026-11-16T09:00:12+03:00"
+    },
+    {
+      "repository": "NVIDIA/OpenShell",
+      "latestCommitSha": "2e5589b2180dd432320adda124c4f7bcede119b5",
+      "latestCommitAt": "2026-11-13T23:50:46Z",
+      "latestCommitMessage": "fix(helm): scope OIDC CA trust to the OIDC client",
+      "readmeSha": "ea31d968136ad93ac659552697d03f0e473301d4",
+      "licenseSha": "f13d",
+      "archived": false,
+      "activityCheckedAt": "2026-11-16T09:00:12+03:00"
+    },
+    {
+      "repository": "pydantic/pydantic-ai",
+      "latestCommitSha": "bc598a1dc02b9305bf99b988334fba214774d357",
+      "latestCommitAt": "2026-11-16T05:37:19Z",
+      "latestCommitMessage": "Document that IPythonCodeMode can lose its kernel to an interrupt on Python 3.14",
+      "readmeSha": "3774",
+      "licenseSha": "1bf1",
+      "archived": false,
+      "activityCheckedAt": "2026-11-16T09:00:12+03:00"
+    },
+    {
+      "repository": "astral-sh/uv",
+      "latestCommitSha": "cf9bace0e30e448544c029fb65bff068c16a42d2",
+      "latestCommitAt": "2026-11-16T04:10:34Z",
+      "latestCommitMessage": "Update Rust crate libc to v0.2.190",
+      "readmeSha": "66ca",
+      "licenseApacheSha": "261e",
+      "licenseMitSha": "014835144877ea9c926d027ece3e1a26290cf481",
+      "archived": false,
+      "activityCheckedAt": "2026-11-16T09:00:12+03:00"
+    }
+  ],
+  "metricsNote": "أعيد التحقق من حالة الأرشفة وآخر commit لكل مستودع. لم تعرض أداة GitHub المتاحة حقول stars/forks/open_issues في هذه القراءة؛ لذلك أبقيت أرقامها كما هي في snapshot السابق measuredAt=2026-11-16T06:17:25+03:00 ولم أقدّمها كقياس جديد.",
+  "reviewOutcome": "لا تغيير في ترتيب الأفكار السابقة أو روابطها؛ المشاريع الثمانية ما زالت غير مؤرشفة، ولا توجد بطاقة مشروع جديدة مبررة لأن 100/100 مشروع في Feed لها إثراء مطابق."
+}
