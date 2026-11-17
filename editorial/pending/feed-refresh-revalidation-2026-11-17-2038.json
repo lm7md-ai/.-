@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "unpublished-pending-revalidation",
+  "reviewedAt": "2026-11-17T20:38:44+03:00",
+  "sourceMainSha": "55f6dcdb1116dbfadac1b19b7e07db6db8057218",
+  "sourcePrHeadBefore": "d98b4662167b39acde57c999435dd5460a500723",
+  "sourceBlobShas": {
+    "feed": "4b4404c13002f83fe368143888b0115aea6700f0",
+    "editorial": "54ee37bae9daeed7556c243d7b6f8d1737e004f7",
+    "seen": "202398780fbb46091d58ef28509ad45561c5ed5f",
+    "status": "83035174944073f124a7d4f271e23abae7c4f29d"
+  },
+  "latestMainRefresh": {
+    "commit": "55f6dcdb1116dbfadac1b19b7e07db6db8057218",
+    "author": "github-actions[bot]",
+    "createdAt": "2026-11-17T15:57:21Z",
+    "changedFiles": {
+      "site/data/feed.json": {
+        "additions": 5322,
+        "deletions": 5358
+      },
+      "site/data/seen.json": {
+        "additions": 1,
+        "deletions": 1
+      },
+      "site/data/status.json": {
+        "additions": 44,
+        "deletions": 44
+      }
+    },
+    "status": {
+      "lastAttemptAt": "2026-11-17T15:57:06+00:00",
+      "state": "partial",
+      "collected": 306,
+      "okSources": 23,
+      "emptySources": 2,
+      "errorSources": 1,
+      "error": "عالم التقنية HTTP 403"
+    }
+  },
+  "previousFullReconciliation": {
+    "mainSha": "eea564780d85671379cb85808980d918d4684243",
+    "incomingFiles": 133,
+    "recordOccurrences": 1352,
+    "previouslyImportedOccurrences": 1217,
+    "occurrencesOutsideFeed": 135,
+    "uniqueSeenOnlyIdUrlPairs": 97,
+    "currentFeedMatchesAwaitingImport": 0,
+    "idUrlConflicts": 0,
+    "confirmedExpired": 0,
+    "correctionNeeded": 0,
+    "note": "هذه أرقام آخر مصالحة كاملة قبل تحديث Main الحالي؛ ملفات Incoming لم تتغير في commit 55f6، لكن Feed وSeen تغيرا، لذلك لا تُعامل نتيجة المقارنة القديمة بوصفها مصالحة حالية."
+  },
+  "currentReconciliation": {
+    "incomingFilesUnchangedSincePriorAudit": 133,
+    "currentFeedExactComparison": "blocked",
+    "reason": "GitHub connector returned an empty content body for the large current feed.json blob; no current ID/URL comparison was inferred from commit metadata or code-search misses.",
+    "action": "لا استيراد حتى تتاح مقارنة حرفية مع Feed الحالي."
+  },
+  "currentPrBatch": {
+    "incomingPath": "editorial/incoming/nabdh-news-2026-11-16-2116.json",
+    "itemCount": 12,
+    "previousExactMatchCount": 12,
+    "currentExactMatchCount": null,
+    "state": "revalidation_required",
+    "items": [
+      {
+        "id": "823dc8cc3dabd3dac1",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE14VUwycEJqVUdvVjNXOENUZ29aZWJsWTk4Nm1fSEU1T09lMXNveXBoTnVpc1lPV2c5bkVESEQzYXA4SGJuSmg3aTRHcUxXanJiT0xScjlDc0JsYVE?oc=5",
+        "titleAr": "تعهد أنطاليا للذكاء الاصطناعي يحصد 80 بيان دعم و271 تعهدًا خلال COP31",
+        "basis": "article",
+        "previousExactFeedMatchAt": "2026-11-17T12:37:11+03:00",
+        "currentFeedMatch": "unverified",
+        "decision": "hold_not_imported"
+      },
+      {
+        "id": "8446beb7a01314a2c1",
+        "url": "https://news.google.com/rss/articles/CBMixwZBVV95cUxPYzc5NUJEVFBOUWh5V1I3bmNDdXBVa1ZaVml2c0FTcjNKZGhiNzlqanAwOE8xcXlpX21iU1k2MFg3T0FnUS1lOFlXeV82T0JoRzlNeGNNdHVqaGZDMHpmNDg0Y0xwaGhlcElTUF9URjdZdnBMU01nejZyaHRoSU1XbktWcVItN2Q5WTFGQzVzNkkzM0J0OThZdUk5eGU5U0VIZzY3d0tlbHpXVTZJbVhDbWN2OFBNOXE1X19YLXNuUkpoSUlwUnZUaXlFb0dUREEtNEdsZ2FmSWRnSFpVS3ZlNEFJTXVhc0IwdVFsNHgwOGFncUZ3bHYtWjhVWTI3M0lfUXpCdE1HSmFWUDVXbk04UjU3Y1RTWWlqQjlTUUhvQWFrQnpHc0lmTll6c3ZHekVVak9GVkFWSjVnQUppdzg2VUtwemhyM1dPRWR1dUVnQkdndkgtOEJMOWNkRE1BYjRhTVN5MkZMWk1paGRXdlpuOHp4S1ZLdks3c2dYcVAxMG5YbHJxd18tcGZPQWJPU2hKTTUtZU9fSFE0TzFla3lJRWl2ZkxEVUw5WGJxLWpFWndxN2FwZnNlMWdvOGVrUm1WXzV1bEdoTjlQSVAzX0tZeUVxeG1nYk1FaHJmbHRmNkhfS1Jsc2hfVUs0WmtBOC1Qd2VsSlZPb0xOdFhWOTFtOVRnXzg1cExyeEdQM2t2bnNsak82NkdZRUNzTVlkU1RRM2ExSFlXZmdTeGs0YzBOUTJVd2JSdzBSbmxhaDllbmNFblA3bmdCZDU2SHRLWmNqRF9nRHBQZ2dRdTdSYXF5YkxlWFIxbzQxVWFlVE44aVUwQllMMXRZQWowN2xBT25XaktMZDE2T09XTE9ydW96TW1Id0JSeGdhQnJCUjlkUkdXLU5Qd0pSbG9jUm1vTjlNZ1FYZ21sM2RBQWVNeWZ5eWZMdVl2elJFMVFLTTNPT2V6Q0ItN180ZlhOZDkwZ1ZoanRRY29rc3g3cHBHZnRnTVFpMmgwVlV6WElSQnRKbWhGTXBLNjdHTTZLendSWmpqbjF2dkJBRmU3ZnJRNXp0WXZkS2lvRDdzTGJURGFRUEdsRFNsNl8wZGJXTzhRN2tVbG9ZNTNQQQ?oc=5",
+        "titleAr": "SAP: الشركات السعودية توسع تخطيط المهارات مع دمج الذكاء الاصطناعي في العمل",
+        "basis": "article",
+        "previousExactFeedMatchAt": "2026-11-17T12:37:11+03:00",
+        "currentFeedMatch": "unverified",
+        "decision": "hold_not_imported"
+      },
+      {
+        "id": "011a44efadf77ed279",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOS29PbXVXQTRYNmlpWEtDNU8yUWQwckZIODJWNU5EMm1JOExYaG1CRE1qdndaclB2US1IZkxVclpkUjRLMFp4c0RTUGJ0NEw2cTdHZXhJREttT21IN0lUUUdZakwzNzRGa1FGUndjc3NhOTNOcnVvYkkxdzRKck9kTy1zNHk5M3RPUW9CbEwtUHkxQzdtN3RHZ0xwLU5lZTBuMlE?oc=5",
+        "titleAr": "رأي: الإفراط في تجريد أدوات البرمجة بالوكلاء قد يضعف فهم المطور لما يبنيه",
+        "basis": "article",
+        "previousExactFeedMatchAt": "2026-11-17T12:37:11+03:00",
+        "currentFeedMatch": "unverified",
+        "decision": "hold_not_imported"
+      },
+      {
+        "id": "ff7833693fa2a06713",
+        "url": "https://openai.com/index/lvmh-media-division-partnership",
+        "titleAr": "LVMH Media Division تتفق مع OpenAI على إدخال أدوات الذكاء الاصطناعي إلى غرف الأخبار",
+        "basis": "article",
+        "previousExactFeedMatchAt": "2026-11-17T12:37:11+03:00",
+        "currentFeedMatch": "unverified",
+        "decision": "hold_not_imported"
+      },
+      {
+        "id": "5cc536aed4b9c93361",
+        "url": "https://arxiv.org/abs/2611.17341",
+        "titleAr": "بحث يقترح استخدام إحصاءات سكانية كاسترجاع منظم لتوقع مجموعات الأدوية من السجلات الطبية",
+        "basis": "metadata",
+        "previousExactFeedMatchAt": "2026-11-17T12:37:11+03:00",
+        "currentFeedMatch": "unverified",
+        "decision": "hold_not_imported"
+      },
+      {
+        "id": "963bbe19ff67ab4441",
+        "url": "https://arxiv.org/abs/2611.17515",
+        "titleAr": "بحث تجريبي يختبر أثر الصياغة والضغط الإداري في سلوك وكيل لغوي داخل محاكاة تواطؤ",
+        "basis": "metadata",
+        "previousExactFeedMatchAt": "2026-11-17T12:37:11+03:00",
+        "currentFeedMatch": "unverified",
+        "decision": "hold_not_imported"
+      },
+      {
+        "id": "b5369aae9868552237",
+        "url": "https://arxiv.org/abs/2611.17532",
+        "titleAr": "بحث يستكشف محاكاة دور الخلايا النجمية في تحسين تدريب الشبكات العصبية",
+        "basis": "metadata",
+        "previousExactFeedMatchAt": "2026-11-17T12:37:11+03:00",
+        "currentFeedMatch": "unverified",
+        "decision": "hold_not_imported"
+      },
+      {
+        "id": "bb14b9e7844b57ec97",
+        "url": "https://arxiv.org/abs/2611.17680",
+        "titleAr": "معيار بحثي يقيس متى تساعد النصوص أو تضر توقع السلاسل الزمنية متعددة الوسائط",
+        "basis": "metadata",
+        "previousExactFeedMatchAt": "2026-11-17T12:37:11+03:00",
+        "currentFeedMatch": "unverified",
+        "decision": "hold_not_imported"
+      },
+      {
+        "id": "8e257d66526dc57485",
+        "url": "https://arxiv.org/abs/2611.17704",
+        "titleAr": "ChlCast: نموذج ذكاء اصطناعي يتنبأ بتركيز الكلوروفيل البحري بدقة مكانية أعلى",
+        "basis": "metadata",
+        "previousExactFeedMatchAt": "2026-11-17T12:37:11+03:00",
+        "currentFeedMatch": "unverified",
+        "decision": "hold_not_imported"
+      },
+      {
+        "id": "619525edf219eeff49",
+        "url": "https://arxiv.org/abs/2611.17710",
+        "titleAr": "دراسة متعددة اللغات تحذر من تعميم مؤشرات الكلام على رصد التدهور المعرفي",
+        "basis": "metadata",
+        "previousExactFeedMatchAt": "2026-11-17T12:37:11+03:00",
+        "currentFeedMatch": "unverified",
+        "decision": "hold_not_imported"
+      },
+      {
+        "id": "fe749e12033c8dfa21",
+        "url": "https://arxiv.org/abs/2611.17728",
+        "titleAr": "إطار طيفي يقترح تقليل تداخل المعلمات عند دمج نماذج متعددة المهام",
+        "basis": "metadata",
+        "previousExactFeedMatchAt": "2026-11-17T12:37:11+03:00",
+        "currentFeedMatch": "unverified",
+        "decision": "hold_not_imported"
+      },
+      {
+        "id": "c3d9d3fc175d750857",
+        "url": "https://arxiv.org/abs/2611.17763",
+        "titleAr": "بحث يقترح قياس تعافي النماذج من التصحيح الخاطئ لا مجرد قبول المعلومة الزائفة",
+        "basis": "metadata",
+        "previousExactFeedMatchAt": "2026-11-17T12:37:11+03:00",
+        "currentFeedMatch": "unverified",
+        "decision": "hold_not_imported"
+      }
+    ]
+  },
+  "specialRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "name": "NVIDIA OpenShell",
+      "seen": true,
+      "editorial": false,
+      "currentFeed": "unverified_after_refresh",
+      "decision": "hold"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "name": "Canva Craft",
+      "seen": true,
+      "editorial": false,
+      "currentFeed": "unverified_after_refresh",
+      "decision": "hold"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "name": "1Password agent sign-in",
+      "seen": true,
+      "editorial": false,
+      "currentFeed": "unverified_after_refresh",
+      "decision": "hold"
+    }
+  ],
+  "expirationPolicy": "لا يُعد السجل منقضيًا بسبب غيابه عن Feed أو وجوده في Seen فقط؛ لا يوجد في هذه الجولة تاريخ انتهاء موثوق لأي من الأزواج المعلقة.",
+  "importsThisRun": 0
+}
