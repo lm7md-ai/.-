@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "publicationStatus": "unpublished-research-library",
-  "measuredAt": "2026-11-17T12:07:37+03:00",
+  "measuredAt": "2026-11-17T12:28:20+03:00",
   "sourceMainSha": "eea564780d85671379cb85808980d918d4684243",
   "measurementNote": "نجوم وفروع ومشكلات مفتوحة من GitHub REST API عند 2026-11-17T09:07:37Z؛ أرقام تراكمية وليست نموًا يوميًا. لم تُشغّل المشاريع في هذه الدورة.",
   "summary": {
@@ -14,7 +14,8 @@
     "newProjectsAdded": 0,
     "readmeChangedSincePreviousReview": 1,
     "licenseShaUnchanged": 8,
-    "testStatus": "not_run"
+    "testStatus": "not_run",
+    "note": "Lasm README hash changed again during this run and was reread at 12:28; its MIT LICENSE hash remains unchanged. No project was executed."
   },
   "projects": [
     {
@@ -108,20 +109,20 @@
       "license": "MIT",
       "licenseVerified": true,
       "archived": false,
-      "pushedAt": "2026-11-17T08:37:38Z",
+      "pushedAt": "2026-11-17T09:20:42Z",
       "updatedAt": "2026-11-17T01:00:13Z",
-      "readmeSha": "bcc11531c08d31f9f9aead8c9f688d4c39597d0e",
+      "readmeSha": "02a92e8dd0c115fcab4dd3703f9492a6d72c0ee7",
       "licenseSha": "46b25ff7d8953b8fc88d7ed6d37c6f1550a39193",
       "inCurrentFeed": false,
       "inEditorialExactCurrentFeed": false,
       "testStatus": "not_run",
-      "overview": "مترجم يحول Lean 4 إلى WebAssembly ويستهدف Node.js وBun وDeno وCloudflare Workers وVercel وNetlify وSupabase وAWS Lambda وAzure وGoogle Cloud Functions وFastly وWASI والمتصفح. يعرض README مثال Conduit مع 52 proposition و307 theorem؛ هذه أرقام يعلنها المشروع وليست تحققًا مستقلًا في هذه الدورة.",
-      "requirements": "يتطلب Lean 4.35.0 بالضبط. بيئة البناء: Node.js 24+ أو Bun 1.4.4 أو Deno 2.9.6، وعلى Linux glibc 2.34+ أو macOS أو Windows x64. أول بناء ينزّل نحو 250–275MB. هدف Node يحتاج 512MB على الأقل؛ أهداف أخرى تعمل أحاديّة الخيط مع قيود على sockets/processes، مع استثناءات WASI للملفات.",
-      "quickStart": "npm create @lasm@latest my-app -- --template hono ثم cd my-app && npm install && npm run dev. للبناء استخدم npm run build. لاستهداف Cloudflare Workers أنشئ المشروع بخيار --deploy workers ثم npm run build:workers وnpx wrangler dev. مثال Conduit: cd examples/conduit && npm install && npm run build && npm start؛ أوامر proofs وtest موثقة في README ولم أشغّلها.",
-      "costs": "الـ CLI مرخص MIT والقوالب والأمثلة MIT-0؛ لا توجد رسوم ترخيص للمشروع. أول بناء ينزّل أدوات Lean بحجم 250–275MB. تكاليف الاستضافة والسحابة ورسوم حسابات المنصات منفصلة وتحددها الجهة المستضيفة.",
-      "localCloud": "التطوير محلي عبر Node/Bun/Deno، والاختبارات تستخدم runtimes ومحاكيات محلية. أهداف النشر تشمل منصات سحابية متعددة، لكن README يوضح أن CI لا ينشر إلى حساب سحابي حقيقي؛ نجاحه يثبت توافق أدوات البناء المحلية فقط.",
-      "alternatives": "إذا لم تكن براهين Lean مطلوبة، قارن مع TypeScript أو Rust أو AssemblyScript لمشاريع WebAssembly، أو Node/Hono المعتاد لتطبيقات الويب. الاختيار يعتمد على الحاجة إلى التحقق الشكلي مقابل سهولة النظام البيئي.",
-      "risks": "قيود runtime تختلف حسب الهدف؛ الأهداف غير Node أحادية الخيط ولا توفر sockets/processes. ربط npm يتطلب تعريفات JS يدوية. مستويات L2/L3 وأرقام Conduit أدلة يعلنها المشروع من CI، وليست اختبارًا مستقلًا أو ضمانًا للنشر الإنتاجي.",
+      "overview": "Lasm مترجم Lean 4 إلى WebAssembly؛ يتيح كتابة التطبيق وإثبات خصائصه في Lean ثم تشغيله على Node.js وBun وDeno وCloudflare Workers وVercel وNetlify وDeno Deploy وSupabase وAWS Lambda وAzure وGoogle Cloud Functions وFastly وWASI والمتصفح. README يذكر مثال Conduit وفيه 52 proposition و307 theorem ونجاح اختبارات RealWorld على منصات محلية؛ هذه أدلة يعلنها المشروع من CI وليست إعادة اختبار مستقلة هنا.",
+      "requirements": "Lean 4.35.0 بالضبط. أدوات البناء: Node.js 24+ أو Bun 1.4.4 أو Deno 2.9.6؛ Linux x64/arm64 (glibc 2.34+)، macOS x64/arm64 أو Windows x64. أول بناء يجلب Lean وأدواته بحجم 250–275MB؛ حزمة npm نحو 71MB تنزيلًا و403MB بعد التثبيت، وذاكرة التخزين المؤقت بعد البناء الأول تقارب 2.5GB. تطبيق Node يحتاج 512MB على الأقل (1GB لحركة إنتاجية فعلية).",
+      "quickStart": "ابدأ: npm create @lasm@latest my-app -- --template hono ثم cd my-app && npm install && npm run dev. للبناء والتشغيل على Node: npm run build && npm start. لـCloudflare Workers: npm create @lasm@latest my-edge -- --template hono --deploy workers ثم npm install وnpm run build:workers وnpx wrangler dev. مثال Conduit: cd examples/conduit && npm install ثم npm run build && npm start؛ أوامر npm run proofs وnpm test وnpm run test:e2e موثقة في README لكنها لم تُشغّل في هذه المراجعة.",
+      "costs": "الـCLI مرخص MIT والقوالب والأمثلة MIT-0، فلا توجد رسوم ترخيص. أول بناء ينزّل 250–275MB؛ تثبيت الحزمة ينزّل نحو 71MB ويستهلك نحو 403MB، وذاكرة الأدوات المؤقتة بعد البناء الأول نحو 2.5GB. تكاليف الاستضافة والسحابة وحسابات المنصات منفصلة؛ لا توجد رسوم سحابية ضمن كود Lasm نفسه.",
+      "localCloud": "التطوير والاختبارات محليًا عبر Node/Bun/Deno وDocker ومحاكيات المنصات. README وdocs/TESTING يوضحان أن CI يستخدم runtime أو container أو local emulator؛ لا ينشر إلى حساب سحابي حقيقي. النشر يتطلب CLI وحساب المنصة مثل wrangler أو vercel أو sam أو func بحسب الهدف.",
+      "alternatives": "لمن لا يحتاج براهين Lean: Rust أو AssemblyScript أو TypeScript/WebAssembly، أو Node/Hono دون Wasm. Lean native مناسب إذا لم يكن WebAssembly أو تشغيل JS runtimes مطلوبًا. المقارنة تتعلق بالتحقق الشكلي وحجم الأدوات وسهولة الربط.",
+      "risks": "الأهداف غير Node أحادية الخيط ولا تدعم sockets أو processes، ولا تدعم الملفات إلا WASI. Lean 4.35.0 مطلوب بالضبط. لا يوجد runtime elaboration أو #eval أو تحميل .olean. ربط npm يحتاج bindings يدوية. حتى README يوضح أن SQL semantics وJSON transport والتزامن وLean/Lasm/JS runtime أجزاء موثوقة لا يثبتها Lean. درجات L2/L3 وأرقام Conduit/benchmarks منشورة من CI الخاص بالمشروع ولم نعد إنتاجها.",
       "sources": [
         {
           "title": "Lasm README",
@@ -132,27 +133,27 @@
           "url": "https://github.com/Millillion/lasm/blob/main/LICENSE"
         },
         {
-          "title": "Lasm deployment documentation",
-          "url": "https://github.com/Millillion/lasm/tree/main/docs/deploy"
-        },
-        {
-          "title": "Lasm testing evidence levels",
-          "url": "https://github.com/Millillion/lasm/blob/main/docs/TESTING.md"
-        },
-        {
           "title": "Lasm README and runtime matrix",
           "url": "https://github.com/Millillion/lasm/blob/main/README.md"
         },
         {
-          "title": "Lasm testing evidence levels",
+          "title": "Lasm README",
+          "url": "https://github.com/Millillion/lasm/blob/main/README.md"
+        },
+        {
+          "title": "Lasm testing methodology",
           "url": "https://github.com/Millillion/lasm/blob/main/docs/TESTING.md"
         },
         {
           "title": "Lasm deployment documentation",
           "url": "https://github.com/Millillion/lasm/blob/main/docs/deploy/README.md"
+        },
+        {
+          "title": "Lasm benchmarks and measurement caveats",
+          "url": "https://github.com/Millillion/lasm/blob/main/docs/BENCHMARKS.md"
         }
       ],
-      "measuredAt": "2026-11-17T12:07:37+03:00",
+      "measuredAt": "2026-11-17T12:28:20+03:00",
       "testEvidence": null,
       "feedId": null,
       "inEditorialByOriginalRepoUrl": false,
@@ -171,10 +172,19 @@
           "Deno 2.9.6"
         ],
         "firstBuildDownloadMB": "250–275",
+        "npmInstallDownloadMB": 71,
+        "installedMB": 403,
+        "toolCacheGB": 2.5,
         "nodeMemoryMB": 512,
-        "ciDeployment": "local runtimes/emulators only; no real cloud-account deployment",
-        "evidenceClaim": "README يذكر 52 propositions و307 theorems في Conduit؛ لم أعد تشغيلها."
-      }
+        "productionMemoryMB": 1024,
+        "ciEvidence": "Differential testing, target equivalence, bindings, scenario matrix, unit tests, fuzzing, proofs and example apps are described in docs/TESTING.md; cloud targets use local tooling/emulators, not production cloud accounts.",
+        "readmeSha": "02a92e8dd0c115fcab4dd3703f9492a6d72c0ee7",
+        "testingDocSha": "b1a13a3c34030eea4191e7d74dfe5d2868c9fa7c",
+        "deployDocSha": "b9e19953cc5809f6d6233f6994ab8b0ac6e7df8f",
+        "reviewedAt": "2026-11-17T12:28:20+03:00"
+      },
+      "testingDocSha": "b1a13a3c34030eea4191e7d74dfe5d2868c9fa7c",
+      "deployDocSha": "b9e19953cc5809f6d6233f6994ab8b0ac6e7df8f"
     },
     {
       "repo": "microsoft/markitdown",
@@ -607,7 +617,7 @@
       "url": "https://github.com/astral-sh/uv/blob/main/LICENSE-MIT"
     }
   ],
-  "reviewedAt": "2026-11-17T12:07:37+03:00",
+  "reviewedAt": "2026-11-17T12:28:20+03:00",
   "historicalCatalog": {
     "total": 73,
     "active": 71,
