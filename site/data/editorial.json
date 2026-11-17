@@ -44317,6 +44317,235 @@
         }
       ],
       "url": "https://arxiv.org/abs/2611.17763"
+    },
+    "d586dccccf61f04120": {
+      "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+      "titleAr": "تحقيق مستقل يرصد إرسال مؤشرات عن أدوات البرمجة في Windows 11",
+      "summaryAr": "يشرح الباحث Xusheng Li كيف عثر، عبر تحليل مكوّن في Windows 11، على تقرير تشخيصي يسجل فئات من وكلاء البرمجة وأدوات المطور التي شُغّلت. وجد أن التقرير يُعامل كبيانات تشخيص اختيارية، وأنه وُضع في طابور الإرسال في بيئة أمريكية اختبرها. لم يعثر في التقرير على نصوص المطالبات أو الشيفرة المصدرية.",
+      "whyItMatters": "الوقائع: الرصد يخص مكوّنًا وإعدادات وإصدارًا اختبرها الباحث، وليس كل تثبيت Windows. التحليل: حتى مؤشرات الاستخدام المختصرة قد تكشف أدوات العمل داخل المؤسسة؛ لذلك ينبغي فهم الفرق بين التشخيص المطلوب والاختياري ومراجعة سياسة أجهزة العمل.",
+      "audience": "مستخدمو Windows والمطورون ومسؤولو أجهزة الشركات والمهتمون بخصوصية أدوات الذكاء الاصطناعي.",
+      "nextSteps": [
+        "اقرأ حدود التجربة وإعدادات الخصوصية التي وثقها الباحث قبل تعميم النتيجة.",
+        "راجع سياسة بيانات التشخيص الاختيارية على جهازك أو ضمن سياسة المؤسسة.",
+        "لا تستنتج أن المطالبات أو الشيفرة تُرسل؛ المقال يقول إن التقرير الذي فحصه لا يحتويهما."
+      ],
+      "limitations": "تعذر فتح صفحة الكاتب مباشرة؛ اعتمدت على مقتطفات مفهرسة من المصدر الأصلي، وعلى وثائق Microsoft العامة للتشخيص. التجربة المنشورة على إعداد أمريكي محدد، والكاتب لا يثبت أن الميزة مفعلة على جميع الأجهزة. وثائق Microsoft العامة تذكر نشاط التطبيقات ضمن البيانات الاختيارية لكنها لا تسمي هذا المكوّن تحديدًا.",
+      "reviewedAt": "2026-11-18T00:01:59+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "Xusheng Li — Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use",
+          "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/"
+        },
+        {
+          "title": "Windows diagnostic data configuration — Microsoft Learn",
+          "url": "https://learn.microsoft.com/en-us/windows/privacy/configure-windows-diagnostic-data-in-your-organization"
+        }
+      ]
+    },
+    "74a4e87de084a0a8b9": {
+      "url": "https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026",
+      "titleAr": "مايكروسوفت تربط انقطاع البريد بخلل في إصلاح أُدخل خلال يوليو",
+      "summaryAr": "نقل The Register عن تقرير أولي لمايكروسوفت أن تغييرًا برمجيًا أُدخل في يوليو تسبب في تنازع على الموارد داخل بوابات الشبكة عند اجتماع زيادة الحمل مع خروج جزء من السعة عن الخدمة. أدى ذلك إلى تعطل واسع، ولم تكن آليات الاستعادة المعتادة مصممة لحالة الانتشار هذه؛ لذلك عالج المهندسون المسار المتأثر بدل الاكتفاء بالتراجع عن تحديث حديث.",
+      "whyItMatters": "الوقائع المنسوبة لمايكروسوفت: الاختبارات السابقة لم تكشف العيب، كما أن ظروف الحمل وتراجع السعة اجتمعتا لتفعيل المشكلة. التحليل: اختبارات الحمل على عتاد أقل قدرة لا تكفي دائمًا، ويجب اختبار سيناريوهات الفشل المتزامن وخطط الاستعادة والتراجع عن تغييرات قديمة.",
+      "audience": "مهندسو SRE وفرق تشغيل السحابة ومسؤولو Exchange Online ومديرو استمرارية الأعمال.",
+      "nextSteps": [
+        "انتظر التقرير النهائي وقارن ما يضيفه إلى التقرير الأولي.",
+        "راجع اختبارات الحمل على عتاد قريب من بيئة الإنتاج، لا على متوسطات منخفضة فقط.",
+        "اختبر سيناريو فقدان السعة مع تحويل الحركة وآليات الاستعادة والتراجع."
+      ],
+      "limitations": "المصدر يصف تقريرًا أوليًا منشورًا في 15 نوفمبر، وليس تحقيقًا مستقلًا كاملًا. تفاصيل السبب الجذري والإجراءات طويلة الأجل قد تتغير في التقرير النهائي.",
+      "reviewedAt": "2026-11-18T00:01:59+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "The Register — Microsoft blames monster email outage on software defect introduced in July fix",
+          "url": "https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026"
+        }
+      ]
+    },
+    "9a0aa0e71b450c03e2": {
+      "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+      "titleAr": "فريق Claude Code يشرح لماذا تحتاج وكلاء البرمجة إلى تحقق مستقل",
+      "summaryAr": "يعرض Addy Osmani ثلاث طبقات اختبار يراها الفريق مهمة لوكلاء البرمجة: اختبارات نهاية إلى نهاية لمسارات المستخدم، واختبارات خصائص تولّد حالات حدية، واختبارات تفاضلية تقارن النظام القديم بالجديد. ويذكر المقال أن نحو 90% من شيفرة الفريق تُكتب وتُراجع بواسطة Claude، وأن مقيّمًا منفصلًا حسّن النجاح في اختبار داخلي محدد بما يصل إلى 10 نقاط.",
+      "whyItMatters": "الوقائع: هذه أرقام وتجارب داخلية يذكرها فريق Claude Code. التحليل: لا يكفي أن ينشئ الوكيل اختباره بنفسه؛ ينبغي أن تكون معايير القبول مستقلة وقابلة لإعادة الإنتاج، وأن تجمع بين سلوك المستخدم والخصائص والحفاظ على التوافق.",
+      "audience": "مطورو البرمجيات ومهندسو الاختبار والفرق التي تستخدم وكلاء كتابة الشيفرة.",
+      "nextSteps": [
+        "ابدأ بمسار E2E واحد يمثل أهم وظيفة للمستخدم.",
+        "أضف اختبارات خصائص للثوابت والحالات الحدية.",
+        "استخدم اختبارًا تفاضليًا عند إعادة كتابة مكوّن مع توقع بقاء السلوك.",
+        "راقب تذبذب الاختبارات وزمنها حتى لا يتعلم الوكيل إعادة التشغيل بدل إصلاح السبب."
+      ],
+      "limitations": "المقال إرشاد هندسي من فريق Anthropic، وليس دراسة مستقلة تقارن كل أنواع الاختبار. نسب 90% وتحسن 10 نقاط تعود إلى وصف الشركة واختبار داخلي محدد ولا تعمم على كل مشروع.",
+      "reviewedAt": "2026-11-18T00:01:59+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Claude.dev — How the Claude Code team thinks about verification",
+          "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/"
+        }
+      ]
+    },
+    "4353c1c4ce1b00e72f": {
+      "url": "https://www.cnn.com/2026/11/16/us/united-airlines-outage",
+      "titleAr": "عطل تقني يؤخر رحلات يونايتد إيرلاينز ويبرز اعتماد الإقلاع على أنظمة الحساب",
+      "summaryAr": "قالت يونايتد إن عطلًا تقنيًا أوقف مغادرات رحلاتها لنحو ساعة، بينما وصفت AP الانقطاع بأنه تجاوز 90 دقيقة. ذكرت Reuters أن الخلل أصاب تطبيقات أطقم الطيران ومنع توافر بيانات الوزن النهائية لحسابات ما قبل الإقلاع؛ ولم تتأثر الرحلات الموجودة في الجو أو United Express، ولم تحدد الشركة السبب الجذري.",
+      "whyItMatters": "الوقائع: تقارير AP وReuters تذكر أن FlightAware رصدت مئات التأخيرات الإجمالية، لكنها لا تنسبها كلها إلى هذا العطل. التحليل: الأنظمة الرقمية في النقل جزء من سلسلة سلامة تشغيلية؛ لذا يجب أن تكون إجراءات التوقف والتحقق اليدوي والتعافي واضحة قبل عودة الخدمة.",
+      "audience": "مهندسو الأنظمة الحرجة وفرق الاعتمادية والمهتمون بتقنية النقل وسلاسل التشغيل.",
+      "nextSteps": [
+        "تابع بيان الشركة النهائي حول النظام المتأثر والسبب الجذري.",
+        "راجع كيف تتعامل الأنظمة الحرجة مع فقدان بيانات التشغيل دون تجاوز ضوابط السلامة.",
+        "افصل أرقام التأخير الكلية عن عدد الرحلات التي ثبت أن العطل تسبب فيها."
+      ],
+      "limitations": "تعذر فتح رابط CNN الموجود في Feed؛ بُني الملخص على تغطيتين أصليتين من AP وReuters للحادث نفسه. أرقام التأخير والإلغاء الإجمالية لا تحدد عدد الرحلات التي تسبب فيها العطل وحده.",
+      "reviewedAt": "2026-11-18T00:01:59+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Associated Press via ABC News — 1.5-hour-long system outage forces United Airlines to delay departing flights",
+          "url": "https://abcnews.com/Business/wireStory/15-hour-long-system-outage-forces-united-airlines-138190979"
+        },
+        {
+          "title": "Reuters — United Airlines says technology outage that delayed departures has been resolved",
+          "url": "https://www.reuters.com/world/us/united-airlines-says-technology-issue-affecting-departing-flights-2026-11-16/"
+        },
+        {
+          "title": "CNN item in Nabdh feed",
+          "url": "https://www.cnn.com/2026/11/16/us/united-airlines-outage"
+        }
+      ]
+    },
+    "8331a3aa13cbf4dc7e": {
+      "url": "https://opencode.ai/product/browse",
+      "titleAr": "OpenCode Browse يتيح لوكلاء البرمجة استخدام متصفح المستخدم بإشرافه",
+      "summaryAr": "تصف الصفحة الرسمية Browse بأنه خادم MCP وإضافة Chromium تسمحان للوكيل بفتح تبويبات خلفية وقراءة الصفحات والنقر والكتابة والتقاط الصور وتسجيل التبويبات. عند تسجيل الدخول أو طلب المصادقة الثنائية أو الدفع يعيد التبويب إلى المستخدم ليكمل الخطوة بنفسه، كما يتيح تسليم تبويب مفتوح وتحديد المواقع المسموح بها.",
+      "whyItMatters": "الوقائع: المنتج يربط الوكيل بالمتصفح الحقيقي وجلسات المستخدم وإضافاته. التحليل: هذا يقلل الحاجة إلى مفاتيح منفصلة لبعض المواقع لكنه يرفع أهمية نطاق المواقع المسموح بها ومراجعة الأفعال؛ وجود جلسة مسجلة لا يعني أن كل تصرف لاحق آمن أو مقصود.",
+      "audience": "مطورو وكلاء المتصفح ومستخدمو Codex وClaude Code وCursor وZed والمهتمون بتكامل MCP.",
+      "nextSteps": [
+        "راجع قائمة المواقع المسموح بها قبل ربط المتصفح.",
+        "أبقِ تسجيل الدخول والمصادقة الثنائية بيد المستخدم عند ظهور handoff.",
+        "اختبره على حساب تجريبي ومواقع غير حساسة أولًا.",
+        "راجع ما يسجله المنتج من صور وحركة شبكة قبل استخدامه في عمل حقيقي."
+      ],
+      "limitations": "المصدر صفحة منتج رسمية لا مراجعة مستقلة؛ لم أختبر الإضافة أو أراجع شيفرتها. لم تعرض الصفحة في المادة المفتوحة تقييمًا أمنيًا مستقلًا أو مقارنة تفصيلية للتكلفة.",
+      "reviewedAt": "2026-11-18T00:01:59+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "OpenCode — Browse product page",
+          "url": "https://opencode.ai/product/browse"
+        }
+      ]
+    },
+    "cd3f9f2cc97c05f9f5": {
+      "url": "https://get.mem.ai/blog/mem-is-shutting-down",
+      "titleAr": "Mem تعلن إيقاف الخدمة في 15 يناير 2027 وتحدد موعدًا لتحويل الملاحظات إلى القراءة فقط",
+      "summaryAr": "أعلنت Mem رسميًا إنهاء الخدمة في 15 يناير 2027. ابتداءً من 18 ديسمبر 2026 ستصبح الملاحظات للقراءة فقط، مع استمرار إمكان قراءتها وتصديرها حتى موعد الإغلاق. تقول الشركة إنها أوقفت الفوترة، وتنشر دليل ترحيل إلى Apple Notes وNotion وGoogle Docs وObsidian وOneNote وغيرها.",
+      "whyItMatters": "الوقائع: هناك تاريخان مختلفان يجب عدم الخلط بينهما؛ 18 ديسمبر لوقف التحرير و15 يناير لانتهاء الوصول. التحليل: الاعتماد على تطبيق ملاحظات سحابي يجعل خطة التصدير والتحقق من المرفقات والمجموعات والتسجيلات جزءًا من استمرارية البيانات.",
+      "audience": "مستخدمو Mem والطلاب والفرق التي تحفظ ملاحظاتها واجتماعاتها في خدمات سحابية.",
+      "nextSteps": [
+        "صدّر نسخة من مكتبتك قبل 18 ديسمبر 2026.",
+        "افتح عينة من الملفات المصدرة وتحقق من المرفقات والمجموعات والنصوص.",
+        "اختر بديلًا واختبر الاستيراد قبل 15 يناير 2027.",
+        "احتفظ بنسخة مستقلة لا تعتمد على استمرار حساب Mem."
+      ],
+      "limitations": "المعلومات من إعلان الشركة الرسمي وقد تتغير تفاصيل أداة التصدير أو المهاجرات. لم أختبر عملية التصدير أو أتحقق من توافق كل نوع مرفق مع البدائل.",
+      "reviewedAt": "2026-11-18T00:01:59+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Mem — Mem is shutting down",
+          "url": "https://get.mem.ai/blog/mem-is-shutting-down"
+        },
+        {
+          "title": "Mem Help Center — Take your notes with you",
+          "url": "https://help.mem.ai/migration"
+        }
+      ]
+    },
+    "9fe6d2ae73e55f52b8": {
+      "url": "https://openai.com/index/our-first-phase-of-embedded-assessments",
+      "titleAr": "OpenAI تعلن مرحلة أولى من التقييمات المستقلة المدمجة داخل مختبراتها",
+      "summaryAr": "أعلنت OpenAI اتفاقات مع Apollo Research وMETR وTransluce وGoodfire لإجراء تقييمات متعمقة للنماذج وأنظمة المراقبة والمواءمة. يذكر الإعلان إتاحة مواد مثل نقاط تحقق النماذج وبيانات التدريب والتقييم وأنظمة المراقبة والوثائق، مع بروتوكولات للإشراف وحماية المعلومات والنشر المسؤول.",
+      "whyItMatters": "الوقائع: هذه اتفاقات ونطاقات عمل معلنة من OpenAI؛ بعضها يبدأ بتقييمات محددة وبعضها ما زال نطاقه قيد الاتفاق. التحليل: قيمة التقييم المستقل تتوقف على الوصول الكافي وحرية المحقق في اتباع الأدلة ووضوح نشر النتائج وإدارة تعارض المصالح، لا على اسم الجهة وحده.",
+      "audience": "باحثو سلامة الذكاء الاصطناعي وصناع السياسات ومطورو النماذج والمهتمون بتقييم مستقل.",
+      "nextSteps": [
+        "تابع تقارير كل جهة عندما تنشر نتائجها، لا الاكتفاء بإعلان الاتفاق.",
+        "قارن نطاق الوصول والموارد وحق النشر والرقابة لكل تقييم.",
+        "ميّز بين التقييم المخطط والتقييم المكتمل والنتائج المنشورة."
+      ],
+      "limitations": "المصدر إعلان OpenAI عن ترتيباتها، وليس نتائج تقييم منشورة. بعض النطاقات أولية أو معلقة على اتفاق لاحق، وقد توجد قيود سرية أو تأخير نشر لأسباب أمنية.",
+      "reviewedAt": "2026-11-18T00:01:59+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "OpenAI — Our first phase of embedded assessments",
+          "url": "https://openai.com/index/our-first-phase-of-embedded-assessments/"
+        }
+      ]
+    },
+    "59e483d52cff0b2fdb": {
+      "url": "https://news.google.com/rss/articles/CBMi_ANBVV95cUxQbGtQMDVaNjFOaG8yTzg5d0lNRUtQOGoyN1lGZkhweGhWdTZlSklGVzNGbTB2eVNzQ1R3WV9Zal9GQWFPNWdDNXZzQm80ZFUyaTE5cjNBV0tTNnp5NEhfemFtLW9RZGNxRWZCdzE0VmU2ampZcWVtaU5YTVBlU0xaUDhuSXpXeGFhd01OY2YzSUQ5ZmJ6akYwaDQ0aVFCam1pdjVqaG80NG1MN2Zsa2dycUdnTmlFMmRQdXRBWkRVNnpWNTREM291NGM4eUZUdXZnR09TUWVReDNMcEdhdko4UUIzQ0FrWnZtZXExVkFCQWNTMHVmSVpCdDVNU3NtdjNzMm5hSVdzRU1Jb1kybEVCdE9fZ09BSDFkRjloekZ5RDZ6Q0RtdEtIZUFjNjFTMk1EMmtxVXFGYUNLRy1XaEM3TFNzTDNYWEpIUmh0Yko2RV9Ca295TVBjQkRJMkdEYUV3Q09XM29vQTI4UkxaQnp6M3EyQTMzREJoOE5SVHdIQ2htSzlrdm5WaUJ1b2FQN3RIWURIUVpXTks0d0c5aVNua000TVR0M2dPYnpDeGtld3pqYXcxakVyYWp4X2dMbUZ2QXZhZl9JSUtIOEpCMFpsQmZxR2VDbFBXU3BFSzZ5VHN2QWo1ZmFRaDNZUkdHMlJ1WHByLS1iX1NNQi1R?oc=5",
+      "titleAr": "سدايا تدعو الجامعات إلى رفع الوعي بمخاطر الذكاء الاصطناعي والاستخدام المسؤول",
+      "summaryAr": "بحسب مادة أخبار 24 المفهرسة، نظمت سدايا بالتعاون مع جامعة الملك سعود جلسة حوارية حول الانتقال من الوعي بمخاطر الذكاء الاصطناعي إلى الاستخدام الآمن والمسؤول. تناولت الجلسة فهم حدود الأدوات والتحقق من المخرجات وحماية البيانات، مع أمثلة تطبيقية لطلاب الجامعة.",
+      "whyItMatters": "التحليل: إدخال الوعي بالمخاطر في البيئة الجامعية يجعل استخدام الذكاء الاصطناعي جزءًا من مهارات الدراسة والبحث، لا مجرد تعلم أداة جديدة. قيمة المبادرة تتوقف على تحويل التوعية إلى ممارسات وسياسات واضحة داخل المقررات والمشروعات.",
+      "audience": "طلاب الجامعات وأعضاء هيئة التدريس ومسؤولو التحول الرقمي والمهتمون بالتعليم في السعودية.",
+      "nextSteps": [
+        "تحقق من إرشادات جامعتك بشأن استخدام أدوات الذكاء الاصطناعي والإفصاح عنها.",
+        "راجع المخرجات والمراجع قبل إدراجها في واجب أو بحث.",
+        "لا ترفع بيانات شخصية أو ملفات جامعية حساسة إلى خدمة خارجية دون إذن."
+      ],
+      "limitations": "تعذر فتح صفحة أخبار 24 الأصلية؛ الملخص مبني على نتيجة البحث المفهرسة، لذلك basis=metadata. لا تتضمن المادة المتاحة قياسًا لأثر الجلسة أو تفاصيل تطبيق سياسة موحدة في الجامعات.",
+      "reviewedAt": "2026-11-18T00:01:59+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "أخبار 24 — سدايا تدعو للوعي بمخاطر تقنيات الذكاء في البيئة الجامعية",
+          "url": "https://www.akhbaar24.com/%D8%AA%D9%82%D9%86%D9%8A%D8%A9/%D8%B3%D8%AF%D8%A7%D9%8A%D8%A7-%D8%AA%D8%AF%D8%B9%D9%88-%D9%84%D9%84%D9%88%D8%B9%D9%8A-%D8%A8%D9%85%D8%AE%D8%A7%D8%B7%D8%B1-%D8%AA%D9%82%D9%86%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D9%81%D9%8A-%D8%A7%D9%84%D8%A8%D9%8A%D8%A6%D8%A9-%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D9%8A%D8%A9-776051"
+        }
+      ]
+    },
+    "dead8804d42d6fa615": {
+      "url": "https://news.google.com/rss/articles/CBMi7gRBVV95cUxQaTMwT2RTakhIVUxOcHFSakxfQzhfdFNjMGI1a2pMenNiM0JMdFl1Q1dObVBzQ3QyWTFubHVRamN0YnlYS2xTQTdnVDJtbm03R3F3VGtmdFI1VkJvVDVvQUhRd1Y5QndMLXpUQ0dsY1lEa1VaWi0wSERIc0dMME9YcWhmQjBfdFBxZVZtRGZKRnBQMlAtOFFia0dxaHJXVURpckNfRndpZXFMYUtCWno5anhTWTkxdUh1ZUh6Nzk0Tmo5UkZJM1JfR3ZLY2Y1aTd5UlRoVHRXRjNESkpQR1JueDE1X181MzdQTDN2VFFSU2N1aW94R0haUjhMLVJGNnNCa0ttM1l2WTN3NWxOV1RhWl9OWEhhbGxIOUlMNkZEalZwSGsxMUdQLV9PMWJIbkJkX09YTTVkMnlsMGRfQTZnWjZpYmVkUF9XTnI5QklhSnJJQkNSRllWaWNxc0VDS0pVbHExeE5zb2xKWER4RkwzeldQZVJlbmhMVVZiVWVMU3h2Qlk3ZUlQOGhBMGRSaXo5eHVfazdtQ0dWdXgtdkk3V2piM3dncUtLNnZVZVNPWDBLbXZCSElxSHI5Mzc2RzQwUkFXQk1laEpESmkxbUNXOWtRTnA5MVRiMWU4MXdjWmdFZ3NTMWVjMENSQ2ZUVzRSQkQ5bzFZM0NDcUZ3OTJENDBielUwc3F0cXdJV1owU25PMml1UEkwd0JxOHdNbzVRa0VYV191d3NFdlVpeV8zbEJLWVhjcVktYkJod1A0NG8zbGVNV1oxVGhiOVotbnlyWHl0bWFNUXlwdVQxanI5dUlFQk9GV3VJM0lQTlNn?oc=5",
+      "titleAr": "بحث أمني يحذر من ضعف حوكمة خوادم وأدوات ربط وكلاء الذكاء الاصطناعي بالبيانات",
+      "summaryAr": "نقلت الشرق الأوسط عن بحث لشركة TrendAI رصد عدد كبير من خدمات MCP المكشوفة أو غير الخاضعة لرقابة فرق الأمن، بينها خدمات قد تتعامل مع قواعد بيانات أو معلومات حساسة. ويركز التقرير على أن مخاطر الوكلاء لا تتعلق بالنموذج وحده، بل أيضًا بالموصلات والهويات الرقمية والصلاحيات التي تمنحها المؤسسات.",
+      "whyItMatters": "الوقائع: الأرقام الواردة من بحث تجاري للشركة كما نقلتها الصحيفة، وليست إحصاءً مستقلًا لكل خوادم MCP على الإنترنت. التحليل: كل أداة متصلة بالوكيل توسع نطاق الأثر المحتمل؛ لذلك تبرز أهمية جرد الموصلات، والصلاحيات الدنيا، والمراجعة المستقلة، ومراقبة الوصول.",
+      "audience": "مسؤولو الأمن السيبراني والبيانات والفرق التي تنشر وكلاء AI أو خوادم MCP في المؤسسات السعودية.",
+      "nextSteps": [
+        "أنشئ جردًا داخليًا للموصلات والخوادم التي تتصل بها الوكلاء.",
+        "راجع الصلاحيات والهوية لكل وكيل، ولا تستخدم حسابات مشتركة واسعة الامتياز.",
+        "راقب سجلات الوصول وراجع التطبيقات الخارجية قبل ربطها بالبيانات الحساسة."
+      ],
+      "limitations": "تعذر فتح صفحة الشرق الأوسط الأصلية؛ basis=metadata. الأعداد والنتائج منسوبة إلى بحث TrendAI ومقابلة مع ممثلها، ولا تثبت أن كل خدمة مكشوفة استُغلت أو أن كل خادم MCP غير آمن. لم أدرج تفاصيل تشغيلية عن الخوادم أو طرق الوصول.",
+      "reviewedAt": "2026-11-18T00:01:59+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "الشرق الأوسط — أبحاث أمنية تكشف عن خوادم تربط وكلاء الذكاء الاصطناعي ببيانات حساسة",
+          "url": "https://aawsat.com/%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A7/5342331-%D8%A3%D8%A8%D8%AD%D8%A7%D8%AB-%D8%A3%D9%85%D9%86%D9%8A%D8%A9-%D8%AA%D9%83%D8%B4%D9%81-%D8%B9%D9%86-1467-%D8%AE%D8%A7%D8%AF%D9%85%D8%A7%D9%8B-%D9%8A%D8%B1%D8%A8%D8%B7-%D9%88%D9%83%D9%84%D8%A7%D8%A1-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%D8%A8%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA-%D8%AD%D8%B3%D8%A7%D8%B3%D8%A9"
+        }
+      ]
+    },
+    "dc9b00f988f99db733": {
+      "url": "https://techcrunch.com/2026/11/17/spotifys-new-tool-aims-to-stop-deepfakes-from-being-attributed-to-real-artists/",
+      "titleAr": "Spotify تطلق حماية لملفات الفنانين للحد من نسب الإصدارات المزيفة إلى أصحابها",
+      "summaryAr": "قالت Spotify إن ميزة Artist Profile Protection أصبحت متاحة للفنانين عبر Spotify for Artists. تتيح التنبيه عند إرسال إصدار جديد باسم الفنان وإزالة ارتباط الإصدار غير الصحيح بملفه؛ ويمكن تفعيل إعداد متقدم يطلب الموافقة اليدوية قبل ظهور الإصدار. يأتي ذلك بعد مرحلة تجريبية استمرت أشهرًا.",
+      "whyItMatters": "الوقائع: الميزة تستهدف أخطاء البيانات وانتحال الهوية وإسناد الموسيقى إلى الملف الخطأ. التحليل: حماية الهوية الرقمية للفنان أصبحت جزءًا من حوكمة المحتوى، لكن نجاحها يعتمد على سرعة التنبيه ومراجعة الإصدارات وعدم الاعتماد على كشف آلي وحده.",
+      "audience": "الفنانون ومديرو الحقوق وشركات التوزيع ومطورو منصات المحتوى.",
+      "nextSteps": [
+        "راجع إعداد Artist Profile Protection داخل Spotify for Artists إذا كنت تدير ملف فنان.",
+        "قيّم خيار الموافقة اليدوية قبل النشر إذا كان خطر الإسناد الخاطئ مرتفعًا.",
+        "تابع تقارير الفنانين حول دقة التنبيهات وآلية الاعتراض بعد الإطلاق."
+      ],
+      "limitations": "المصدر تقرير TechCrunch ينقل وصف Spotify؛ لم أختبر الميزة. وصف الشركة بأنها الأولى والوحيدة من نوعها ادعاء من Spotify وليس مقارنة مستقلة، والإعداد الافتراضي يسمح بنشر الإصدارات ما لم يتدخل الفنان.",
+      "reviewedAt": "2026-11-18T00:01:59+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — Spotify’s new tool aims to stop deepfakes from being attributed to real artists",
+          "url": "https://techcrunch.com/2026/11/17/spotifys-new-tool-aims-to-stop-deepfakes-from-being-attributed-to-real-artists/"
+        }
+      ]
     }
   }
 }
