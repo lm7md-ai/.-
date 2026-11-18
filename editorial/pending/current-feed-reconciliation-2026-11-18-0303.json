@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-18T03:03:23+03:00",
+  "sourceMainSha": "55f6dcdb1116dbfadac1b19b7e07db6db8057218",
+  "sourcePrHeadAtStart": "8b0ab43e53a79fffe300224b56683a43ee98aeba",
+  "scope": "Full reconciliation of every editorial/incoming file on main; exact id and url comparisons against current feed and imported editorial records.",
+  "filesScanned": 133,
+  "entryAppearances": 1352,
+  "countSemantics": "Counts are appearances across incoming files, not unique IDs or unique ID/URL pairs. Feed-exact appearances overlap editorial-exact appearances.",
+  "counts": {
+    "editorialExactAppearances": 1217,
+    "currentFeedExactAppearances": 224,
+    "seenOnlyAppearances": 135,
+    "idUrlConflictAppearances": 0,
+    "unknownAppearances": 0,
+    "eligibleHistoricalImports": 0,
+    "confirmedExpired": 0,
+    "needsCorrection": 0,
+    "optionalNextStepsMissingOccurrences": 8
+  },
+  "structuralCheck": {
+    "jsonParseErrors": 0,
+    "requiredFieldErrors": 0,
+    "optionalFieldNote": "Eight legacy incoming snapshots omit nextSteps; scripts/editorial.py does not require nextSteps, so these are not validator failures.",
+    "officialValidatorPerHistoricalFile": "not_run",
+    "equivalentCheck": "Each of the 133 JSON files was parsed and each id/url compared literally against main feed and editorial maps; no ID/URL conflicts or unknown identities were found."
+  },
+  "seenOnlyDisposition": {
+    "appearances": 135,
+    "confirmedExpired": 0,
+    "action": "Keep in original incoming files and this pending report; do not create replacement identities or import without an exact current feed ID/URL match.",
+    "otherSeenOnlyAppearances": 132
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "inSeen": true,
+      "inFeed": false,
+      "inEditorial": false,
+      "status": "seen_only_not_in_current_feed",
+      "expired": false,
+      "action": "Keep original identity; separate unpublished research refresh saved in editorial/library/openshell-refresh-2026-11-18-0246.json."
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "inSeen": true,
+      "inFeed": false,
+      "inEditorial": false,
+      "status": "seen_only_not_in_current_feed",
+      "expired": false,
+      "action": "Keep original TechCrunch identity; official Canva newsroom/API and MCP GA pages remain supporting research only. Do not substitute the Canva newsroom URL as the record identity."
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "inSeen": true,
+      "inFeed": false,
+      "inEditorial": false,
+      "status": "seen_only_not_in_current_feed",
+      "expired": false,
+      "action": "Keep original identity; official 1Password press and support pages remain supporting research only."
+    }
+  ],
+  "specialResearchNotes": {
+    "canva": "Canva Craft API availability and Canva MCP GA (2026-10-27) are separate capabilities; do not conflate them.",
+    "onePassword": "Official support states Individual/Family eligibility; Team/Business not currently supported. Feature is opt-in, each access request requires user approval, and approved items may be reused for up to 30 days.",
+    "openShell": "README says CNCF transition is in progress and NVIDIA/OpenShell remains the canonical code/issues repository until migration completes. Latest docs show v0.1.9; prior release snapshot records stable v0.1.8 and dev 0.1.9-dev.23, so stable-version status needs confirmation."
+  },
+  "newBatch": {
+    "path": "editorial/incoming/nabdh-news-2026-11-18-0246.json",
+    "items": 12,
+    "articleBasis": 10,
+    "metadataBasis": 2,
+    "allExactFeedIdUrl": true,
+    "alreadyInPrEditorialBeforeMerge": 0,
+    "structuralValidation": "pass",
+    "officialValidateCommand": "not_run",
+    "officialImportCommand": "not_run",
+    "mergeMethod": "Equivalent non-destructive merge into existing Editorial object; all 1081 pre-existing PR entries retained unchanged.",
+    "postMergeEditorialEntries": 1093,
+    "ciRunId": 44204400757,
+    "ciValidateResult": "Validated 1093 editorial entries"
+  },
+  "noChanges": [
+    "site/data/feed.json",
+    "site/data/seen.json",
+    "site/data/status.json",
+    "scripts/**",
+    "site/app.js",
+    "site/ideas.js",
+    ".github/workflows/**",
+    "repository settings"
+  ]
+}
