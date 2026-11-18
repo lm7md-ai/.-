@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "verification_record",
+  "verifiedAt": "2026-11-19T00:05:34+03:00",
+  "mainSha": "5433ee1e8afba87941ed7f6c57fad38f70bcde1c",
+  "workflowRun": {
+    "id": 44391318450,
+    "conclusion": "success",
+    "artifactId": 14468786371,
+    "artifactName": "github-pages",
+    "artifactSizeBytes": 1372574
+  },
+  "artifactFiles": {
+    "data/feed.json": {
+      "gitBlobSha": "9c947e0ab8150a9b8c7b5ba4936ccf2d3ab5f525",
+      "items": 800,
+      "news": 700,
+      "projects": 100
+    },
+    "data/editorial.json": {
+      "gitBlobSha": "54ee37bae9daeed7556c243d7b6f8d1737e004f7",
+      "items": 1059
+    },
+    "data/library.json": {
+      "gitBlobSha": "36a22603e523cf65f80d9935e9cdc634ed913bc4",
+      "entries": 31
+    },
+    "data/research.json": {
+      "gitBlobSha": "7a52ee44f18569fa25255b43a844066bbe075683"
+    },
+    "data/status.json": {
+      "gitBlobSha": "d8b7aa02f04057a00cf881079f697680084a1008",
+      "state": "ok"
+    },
+    "data/seen.json": {
+      "gitBlobSha": "007f1c311a4714e049981117e4c7e9122d0750a1",
+      "ids": 5908
+    }
+  },
+  "verification": "All six Git blob hashes computed from the downloaded Pages artifact match current Main. Direct live CDN fetch returned DisabledError; artifact-level verification only."
+}

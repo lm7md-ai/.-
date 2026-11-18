@@ -1,0 +1,452 @@
+{
+  "version": 1,
+  "batch": 8,
+  "of": 9,
+  "sourceMainSha": "65e69a2329235ee0cd0dfb8a7de70745f7671edc",
+  "reviewedAt": "2026-11-16T21:16:09+03:00",
+  "files": [
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-10-2338.json",
+      "appearances": 6,
+      "alreadyImported": 2,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 4,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-11-1144.json",
+      "appearances": 3,
+      "alreadyImported": 3,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-11-1836.json",
+      "appearances": 3,
+      "alreadyImported": 3,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-11-2338.json",
+      "appearances": 10,
+      "alreadyImported": 6,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 4,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-12-0846.json",
+      "appearances": 9,
+      "alreadyImported": 5,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 4,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-12-1138.json",
+      "appearances": 4,
+      "alreadyImported": 4,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-12-1439.json",
+      "appearances": 1,
+      "alreadyImported": 1,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-12-1811.json",
+      "appearances": 14,
+      "alreadyImported": 11,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 3,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-12-2038.json",
+      "appearances": 12,
+      "alreadyImported": 11,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 1,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-12-2105.json",
+      "appearances": 10,
+      "alreadyImported": 9,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 1,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-13-0306.json",
+      "appearances": 39,
+      "alreadyImported": 39,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-13-2343-reconciled.json",
+      "appearances": 13,
+      "alreadyImported": 6,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 7,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-14-0247-reconciled.json",
+      "appearances": 15,
+      "alreadyImported": 10,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 5,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-14-1444-reconciled.json",
+      "appearances": 15,
+      "alreadyImported": 15,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-news-2026-11-13-0612.json",
+      "appearances": 12,
+      "alreadyImported": 4,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 8,
+      "structuralInvalid": 0
+    }
+  ],
+  "totals": {
+    "appearances": 166,
+    "alreadyImported": 129,
+    "exactFeedNotImported": 0,
+    "idUrlMismatch": 0,
+    "outOfFeed": 37,
+    "structuralInvalid": 0
+  },
+  "pendingAppearances": [
+    {
+      "id": "0e9fb0eb84f13acffd",
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-2338.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "c7d3010a8bcc401c0c",
+      "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-2338.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "a7b39cb0698327aa7f",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-2338.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "1d8889c9661cfe547b",
+      "url": "https://www.theverge.com/tech/1030601/ring-drone-cam-hands-on-price-release-date-ai-pilot",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-2338.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "3cffec5790b8f2e218",
+      "url": "https://blog.mozilla.org/security/2026/11/10/open-research-stronger-privacy-making-firefox-users-harder-to-fingerprint/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-11-2338.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "35f9d4a8ad49bd077c",
+      "url": "https://www.wired.com/story/duolingo-strava-and-ticketmaster-are-all-caught-up-in-eus-new-digital-fairness-rules/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-11-2338.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "1251f00274bede43be",
+      "url": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-11-2338.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "14645f9d816239f1eb",
+      "url": "https://aitnews.com/2026/11/11/%d8%b3%d9%8a%d8%ac%d9%8a%d8%aa-%d8%aa%d8%b7%d9%84%d9%82-firecuda-forge-%d8%a8%d8%aa%d8%ae%d8%b2%d9%8a%d9%86-%d9%85%d8%a4%d9%82%d8%aa-%d8%b0%d9%83%d9%8a-%d9%88%d8%b3%d8%b9%d8%a9-%d8%aa%d8%b5%d9%84/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-11-2338.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "02bfed5e7aa817ea9d",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-12-0846.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "b21fa54b837dba6b35",
+      "url": "https://machinelearning.apple.com/research/faster-retrieval",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-12-0846.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "31699ba3bf57a08cdb",
+      "url": "https://tendrils.co/blog/2026-11-10/30m-raised",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-12-0846.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "b87487ef036547770a",
+      "url": "https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-12-0846.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "02bfed5e7aa817ea9d",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-12-1811.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "b21fa54b837dba6b35",
+      "url": "https://machinelearning.apple.com/research/faster-retrieval",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-12-1811.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "3cffec5790b8f2e218",
+      "url": "https://blog.mozilla.org/security/2026/11/10/open-research-stronger-privacy-making-firefox-users-harder-to-fingerprint/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-12-1811.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "35f9d4a8ad49bd077c",
+      "url": "https://www.wired.com/story/duolingo-strava-and-ticketmaster-are-all-caught-up-in-eus-new-digital-fairness-rules/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-12-2038.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "1251f00274bede43be",
+      "url": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-12-2105.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "1c5e170b0f37ff95fd",
+      "url": "https://developer.apple.com/foundation-models-framework/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-13-2343-reconciled.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "3737f013bc02f6fab5",
+      "url": "https://www.engadget.com/2315525/metas-muse-can-now-make-calls-on-your-behalf-if-you-have-a-paid-subscription/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-13-2343-reconciled.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "076934ef461be2b954",
+      "url": "https://unemploymentlabs.com/checkpoint-forensics",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-13-2343-reconciled.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "60460c51ffcbaa7143",
+      "url": "https://mehmetince.net/part-3-6-how-i-ended-up-turning-a-22-year-old-postgresql-type-confusion-primitive-into-rce-cve-2026-6460/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-13-2343-reconciled.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "e31d579ac0149753f2",
+      "url": "https://www.bbc.co.uk/news/articles/cm62y0wrnz9zo?at_medium=RSS&at_campaign=rss",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-13-2343-reconciled.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "889dda614b5244142f",
+      "url": "https://www.theverge.com/games/1032085/gdc-festival-of-gaming-annual-survey-ai-layoffs",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-13-2343-reconciled.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "dd62360cdb55684548",
+      "url": "https://www.theverge.com/gadgets/1032630/whoop-humans-social-network",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-13-2343-reconciled.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "1c5e170b0f37ff95fd",
+      "url": "https://developer.apple.com/foundation-models-framework/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-14-0247-reconciled.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "3737f013bc02f6fab5",
+      "url": "https://www.engadget.com/2315525/metas-muse-can-now-make-calls-on-your-behalf-if-you-have-a-paid-subscription/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-14-0247-reconciled.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "076934ef461be2b954",
+      "url": "https://unemploymentlabs.com/checkpoint-forensics",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-14-0247-reconciled.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "e31d579ac0149753f2",
+      "url": "https://www.bbc.co.uk/news/articles/cm62y0wrnz9zo?at_medium=RSS&at_campaign=rss",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-14-0247-reconciled.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "dd62360cdb55684548",
+      "url": "https://www.theverge.com/gadgets/1032630/whoop-humans-social-network",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-14-0247-reconciled.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "1c5e170b0f37ff95fd",
+      "url": "https://developer.apple.com/foundation-models-framework/",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-13-0612.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "3737f013bc02f6fab5",
+      "url": "https://www.engadget.com/2315525/metas-muse-can-now-make-calls-on-your-behalf-if-you-have-a-paid-subscription/",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-13-0612.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "076934ef461be2b954",
+      "url": "https://unemploymentlabs.com/checkpoint-forensics",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-13-0612.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "0d7637bb5559a97c22",
+      "url": "https://tratt.net/laurie/blog/2026/adapting_cpython_for_yk.html",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-13-0612.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "60460c51ffcbaa7143",
+      "url": "https://mehmetince.net/part-3-6-how-i-ended-up-turning-a-22-year-old-postgresql-type-confusion-primitive-into-rce-cve-2026-6460/",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-13-0612.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "e31d579ac0149753f2",
+      "url": "https://www.bbc.co.uk/news/articles/cm62y0wrnz9zo?at_medium=RSS&at_campaign=rss",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-13-0612.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "889dda614b5244142f",
+      "url": "https://www.theverge.com/games/1032085/gdc-festival-of-gaming-annual-survey-ai-layoffs",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-13-0612.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "dd62360cdb55684548",
+      "url": "https://www.theverge.com/gadgets/1032630/whoop-humans-social-network",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-13-0612.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    }
+  ],
+  "expiryAssessment": "لا يوجد تاريخ نشر/انتهاء كافٍ لإثبات الانقضاء؛ Seen وحده لا يثبت ذلك.",
+  "validator": "structural-equivalent-only; official Python validator not run on historical incoming files"
+}

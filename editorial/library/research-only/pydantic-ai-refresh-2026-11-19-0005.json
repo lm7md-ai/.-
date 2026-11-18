@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "research_only_not_published",
+  "reviewedAt": "2026-11-19T00:05:34+03:00",
+  "basis": "readme",
+  "repository": "pydantic/pydantic-ai",
+  "url": "https://github.com/pydantic/pydantic-ai",
+  "license": "MIT",
+  "licenseVerified": true,
+  "activity": {
+    "archived": false,
+    "lastPushedAt": "2026-11-18T21:11:43Z",
+    "latestRelease": "v2.70.0"
+  },
+  "metrics": {
+    "stars": 21278,
+    "forks": 3210,
+    "openIssues": 1827,
+    "measuredAt": "2026-11-19T00:05:34+03:00"
+  },
+  "readmeSha": "94fc16382961699760acb0c6280f361e49a1733b",
+  "pyprojectSha": "f8842fc2d8f7eabba09966a906e9dd8651f6b35c",
+  "licenseSha": "1bf1f55e6d1736b499ded961ec6b94bfebb17aec",
+  "overview": "SDK مفتوح المصدر لبناء وكلاء Python بواجهات typed ومخرجات Pydantic. يدعم مزودين متعددين والأدوات والاعتماديات والمخرجات المنظمة وإعادة المحاولة والبث والوسائط المتعددة. README الحالي يبرز Harness للمهام الطويلة ووكلاء البرمجة وEvals لتقييم المخرجات ومسارات الأدوات وGraph لتدفقات التحكم، إضافة إلى Monty وgenai-prices.",
+  "requirements": "Python >=3.11، MIT. التثبيت عبر uv أو pip. يحتاج مزود السحابة إلى مفتاح API وحساب؛ يمكن استخدام Ollama محليًا لتجنب رسوم API مع تكلفة العتاد والكهرباء. ميزات Harness أو sandbox أو durable execution قد تحتاج إضافات وخدمات خارجية.",
+  "quickStart": "أنشئ بيئة Python 3.11+، نفّذ `uv add pydantic-ai`، وضع مفتاح المزود في متغير بيئة محلي. أنشئ Agent بمُعرّف نموذج متاح وحدد output_type ثم استخدم run أو run_sync لمهمة عامة. مثال: `from pydantic_ai import Agent; agent = Agent('openai:<model-id>', output_type=str); result = agent.run_sync('Summarize this public text'); print(result.output)`. أضف أدوات typed واختبارات قبل ربطه ببيانات حقيقية.",
+  "costs": "المكتبة MIT ومجانية؛ تكلفة النماذج السحابية حسب المزود والاستهلاك. Ollama يقلل رسوم API لكنه يحتاج موارد محلية. Logfire وخدمات durable execution أو sandbox اختيارية وقد تكون مدفوعة.",
+  "localVsCloud": "محليًا: Python مع Ollama ونموذج محلي. سحابيًا: OpenAI وAnthropic وGoogle وBedrock وAzure وغيرها مع رسوم API واحتمال استخدام Logfire أو sandbox.",
+  "alternatives": "LangGraph/LangChain للتدفقات والتكاملات؛ OpenAI Agents SDK لمنظومة OpenAI؛ CrewAI للأدوار متعددة الوكلاء؛ Semantic Kernel للتكامل مع Microsoft. بدائل جزئية لا تطابق كل خصائص الأنواع والتقييم.",
+  "limitations": "المقاييس الاجتماعية ليست دليل جودة. نضج كل تكامل وسعره وقيوده يختلف. أدوات shell/filesystem لا تصبح آمنة تلقائيًا؛ يجب تقييد الصلاحيات. لم أشغّل المشروع أو أختبر مثالًا.",
+  "improvements": [
+    {
+      "title": "سياسات typed لصلاحيات الأدوات",
+      "problem": "قد يحصل الوكيل على أدوات أوسع من حاجة المهمة.",
+      "approach": "تعريف allowlist للمسارات والأوامر وبوابات موافقة بشرية.",
+      "stack": "Python، Pydantic AI Harness، pytest، YAML",
+      "steps": [
+        "حدد الأدوات والصلاحيات.",
+        "عرّف allowlist للمسارات والأوامر.",
+        "أضف موافقة قبل الكتابة.",
+        "اختبر الرفض والقبول.",
+        "وثّق الاستثناءات."
+      ],
+      "metric": "نسبة منع الأفعال خارج السياسة وصفر تنفيذ غير مصرح به في fixtures.",
+      "difficulty": "متوسطة إلى عالية (تقدير)",
+      "risks": "السياسات الصارمة قد تعطل مهام صحيحة؛ يلزم مسار استثناءات.",
+      "sources": [
+        {
+          "title": "Pydantic AI Harness",
+          "url": "https://pydantic.dev/docs/ai/capabilities/harness/"
+        },
+        {
+          "title": "Guardrails",
+          "url": "https://pydantic.dev/docs/ai/production/guardrails/"
+        }
+      ]
+    },
+    {
+      "title": "تقييم عربي/إنجليزي لمسارات الأدوات",
+      "problem": "قد تكون الإجابة صحيحة رغم استخدام أداة خاطئة أو سوء فهم النص المختلط.",
+      "approach": "مجموعة تقييم مرخصة تقيس المخرجات ومسارات الأدوات والاستشهاد.",
+      "stack": "Pydantic Evals، Python، JSONL، pytest",
+      "steps": [
+        "اجمع مهامًا عامة بلا بيانات شخصية.",
+        "اكتب مخرجات ومسارات مرجعية.",
+        "أضف حالات عربية وإنجليزية.",
+        "قيّم المخرج وتسلسل الأدوات والامتناع.",
+        "انشر النتائج مع حجم العينة."
+      ],
+      "metric": "دقة المخرجات وصحة استدعاء الأدوات ومعدل الامتناع الصحيح.",
+      "difficulty": "متوسطة (تقدير)",
+      "risks": "مجموعة صغيرة قد تنحاز للهجة؛ نوّع الأمثلة.",
+      "sources": [
+        {
+          "title": "Pydantic Evals",
+          "url": "https://pydantic.dev/docs/ai/evals/evals/"
+        },
+        {
+          "title": "Agent trajectory evaluation",
+          "url": "https://pydantic.dev/docs/ai/evals/evaluators/agentic/"
+        }
+      ]
+    },
+    {
+      "title": "مصفوفة تكلفة وكمون للمزودين",
+      "problem": "اختيار fallback بالاسم فقط قد يرفع التكلفة أو يغير الجودة.",
+      "approach": "تشغيل مهام ثابتة على مزودين وتسجيل p50/p95 والتكلفة والجودة.",
+      "stack": "Pydantic AI، pandas، JSONL، OpenTelemetry",
+      "steps": [
+        "حدد مهامًا ومخرجات مرجعية.",
+        "شغّل كل مزود بإعدادات متقاربة.",
+        "سجل الزمن والتكلفة.",
+        "قارن الجودة ومسارات الأدوات.",
+        "عرّف قواعد fallback قابلة للمراجعة."
+      ],
+      "metric": "تكلفة المهمة الناجحة وزمن p95 مع حد أدنى للجودة.",
+      "difficulty": "متوسطة (تقدير)",
+      "risks": "تتغير الأسعار وحدود المعدلات؛ احفظ تاريخ القياس.",
+      "sources": [
+        {
+          "title": "Model providers",
+          "url": "https://pydantic.dev/docs/ai/models/overview/"
+        },
+        {
+          "title": "Logfire",
+          "url": "https://pydantic.dev/logfire"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "مدرّس Python عربي بوكيل قابل للتقييم",
+      "problem": "الحاجة إلى شرح متدرج وتغذية راجعة عملية.",
+      "approach": "وكيل يشرح مفهومًا ويقترح مهمة ويقيّم الناتج باختبارات معزولة.",
+      "stack": "Python، Pydantic AI، pytest، Jupyter",
+      "steps": [
+        "قسّم المنهج إلى مهارات.",
+        "أنشئ تمارين مرخصة.",
+        "اجعل الوكيل يشرح ويقترح مهمة.",
+        "شغّل الاختبارات في بيئة معزولة.",
+        "اعرض التقييم وبدائل الحل."
+      ],
+      "metric": "نسبة اجتياز اختبارات المهارة بعد الشرح.",
+      "difficulty": "متوسطة إلى عالية (تقدير)",
+      "risks": "لا تنفذ شيفرة غير موثوقة على الجهاز المضيف.",
+      "sources": [
+        {
+          "title": "Pydantic AI",
+          "url": "https://github.com/pydantic/pydantic-ai"
+        },
+        {
+          "title": "Pydantic Evals",
+          "url": "https://pydantic.dev/docs/ai/evals/evals/"
+        }
+      ]
+    },
+    {
+      "title": "مساعد بحث محلي بإحالات",
+      "problem": "قد يقدم المساعد إجابة بلا مستند يدعمها.",
+      "approach": "استرجاع من ملفات عامة محلية مع عرض المقاطع والامتناع عند غياب الدليل.",
+      "stack": "Pydantic AI، Ollama، SQLite FTS، Python",
+      "steps": [
+        "اختر مستندات مرخصة.",
+        "ابنِ فهرسًا بمعرفات المقاطع.",
+        "اجعل المخرجات تتطلب إحالات.",
+        "اختبر أسئلة بلا إجابة.",
+        "اعرض المقاطع بجانب الادعاءات."
+      ],
+      "metric": "نسبة الادعاءات ذات المقاطع الصحيحة ومعدل الامتناع.",
+      "difficulty": "متوسطة (تقدير)",
+      "risks": "قد يفوّت الاسترجاع معلومة أو يختار مقطعًا مضللًا.",
+      "sources": [
+        {
+          "title": "Pydantic AI",
+          "url": "https://github.com/pydantic/pydantic-ai"
+        },
+        {
+          "title": "Ollama provider",
+          "url": "https://pydantic.dev/docs/ai/models/ollama/"
+        }
+      ]
+    }
+  ],
+  "religious": [
+    {
+      "title": "فهرس مرجعي للقرآن والحديث مع توثيق المصدر",
+      "problem": "قد تنسب إجابة النموذج نصًا أو معلومة إلى مصدر غير صحيح.",
+      "approach": "استرجاع من واجهات موثقة يعرض السورة أو الكتاب ورقم الحديث والرابط ويمتنع عن الفتاوى.",
+      "stack": "Pydantic AI، Quran Foundation API، Sunnah API، قاعدة محلية",
+      "steps": [
+        "التزم بشروط الواجهات الرسمية.",
+        "خزن النصوص والبيانات الوصفية والإصدار.",
+        "لا تعرض اقتباسًا بلا مرجع.",
+        "أضف مراجعة بشرية قبل النشر.",
+        "وضح أن التطبيق فهرسة وليس جهة فتوى."
+      ],
+      "metric": "نسبة الإحالات الصحيحة في مراجعة بشرية ومعدل الامتناع.",
+      "difficulty": "متوسطة إلى عالية (تقدير)",
+      "risks": "أخطاء الإسناد أو اختلاف الطبعات أو التفسير؛ يلزم تدقيق متخصص.",
+      "sources": [
+        {
+          "title": "Quran Foundation API",
+          "url": "https://api-docs.quran.foundation/"
+        },
+        {
+          "title": "Sunnah.com API",
+          "url": "https://sunnah.com/developers"
+        },
+        {
+          "title": "Pydantic AI",
+          "url": "https://github.com/pydantic/pydantic-ai"
+        }
+      ]
+    }
+  ],
+  "testStatus": "not_run",
+  "sources": [
+    {
+      "title": "Pydantic AI repository",
+      "url": "https://github.com/pydantic/pydantic-ai"
+    },
+    {
+      "title": "pyproject.toml",
+      "url": "https://github.com/pydantic/pydantic-ai/blob/main/pyproject.toml"
+    },
+    {
+      "title": "MIT license",
+      "url": "https://github.com/pydantic/pydantic-ai/blob/main/LICENSE"
+    },
+    {
+      "title": "Installation",
+      "url": "https://pydantic.dev/docs/ai/overview/install/"
+    },
+    {
+      "title": "Agents",
+      "url": "https://pydantic.dev/docs/ai/core-concepts/agent/"
+    },
+    {
+      "title": "Harness",
+      "url": "https://pydantic.dev/docs/ai/capabilities/harness/"
+    },
+    {
+      "title": "Evals",
+      "url": "https://pydantic.dev/docs/ai/evals/evals/"
+    },
+    {
+      "title": "Ollama",
+      "url": "https://pydantic.dev/docs/ai/models/ollama/"
+    }
+  ]
+}

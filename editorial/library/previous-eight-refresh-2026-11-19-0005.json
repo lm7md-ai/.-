@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "research_review_not_published_as_project_cards",
+  "reviewedAt": "2026-11-19T00:05:34+03:00",
+  "summary": {
+    "previousProjectsReviewed": 8,
+    "active": 8,
+    "archived": 0,
+    "readmeUnchanged": 7,
+    "readmeChanged": 1,
+    "licensesVerified": 8,
+    "newProjectCards": 0,
+    "existingFeedProjectEnriched": 1,
+    "libraryTotal": 31,
+    "libraryActive": 29,
+    "libraryArchived": 2,
+    "libraryLicenseVerified": 31,
+    "libraryMetricsSnapshot": "2026-11-16"
+  },
+  "projects": [
+    {
+      "repo": "patchy631/ai-engineering-hub",
+      "name": "AI Engineering Hub",
+      "feedId": "fe0e6bfdbdd5822139",
+      "inCurrentFeed": true,
+      "license": "MIT",
+      "stars": 42005,
+      "forks": 6716,
+      "openIssues": 139,
+      "lastPushedAt": "2026-11-01T04:39:16Z",
+      "readmeChanged": false,
+      "activity": "quiet_but_unarchived",
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "googleapis/python-genai",
+      "name": "Google Gen AI SDK",
+      "inCurrentFeed": false,
+      "license": "Apache-2.0",
+      "stars": 4078,
+      "forks": 1064,
+      "openIssues": 388,
+      "lastPushedAt": "2026-11-18T21:08:32Z",
+      "release": "3.6.0",
+      "readmeChanged": false,
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "Millillion/lasm",
+      "name": "Lasm",
+      "inCurrentFeed": false,
+      "license": "MIT",
+      "stars": 108,
+      "forks": 6,
+      "openIssues": 9,
+      "lastPushedAt": "2026-11-18T19:07:09Z",
+      "release": "0.10.0",
+      "readmeChanged": false,
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "microsoft/markitdown",
+      "name": "MarkItDown",
+      "inCurrentFeed": false,
+      "license": "MIT",
+      "stars": 196655,
+      "forks": 14893,
+      "openIssues": 814,
+      "lastPushedAt": "2026-11-07T00:14:01Z",
+      "readmeChanged": false,
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "yc-software/minecraft-agent-harness",
+      "name": "Minecraft Agent Harness",
+      "inCurrentFeed": false,
+      "license": "MIT",
+      "stars": 226,
+      "forks": 30,
+      "openIssues": 1,
+      "lastPushedAt": "2026-10-29T20:30:45Z",
+      "readmeChanged": false,
+      "activity": "low_activity_unarchived",
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "NVIDIA/OpenShell",
+      "name": "NVIDIA OpenShell",
+      "inCurrentFeed": false,
+      "license": "Apache-2.0",
+      "stars": 21773,
+      "forks": 2135,
+      "openIssues": 739,
+      "lastPushedAt": "2026-11-18T21:04:56Z",
+      "readmeChanged": false,
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "pydantic/pydantic-ai",
+      "name": "Pydantic AI",
+      "inCurrentFeed": false,
+      "license": "MIT",
+      "stars": 21278,
+      "forks": 3210,
+      "openIssues": 1827,
+      "lastPushedAt": "2026-11-18T21:11:43Z",
+      "release": "v2.70.0",
+      "pythonRequirement": ">=3.11",
+      "readmeChanged": true,
+      "readmeSha": "94fc16382961699760acb0c6280f361e49a1733b",
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "astral-sh/uv",
+      "name": "uv",
+      "inCurrentFeed": false,
+      "license": "MIT OR Apache-2.0",
+      "stars": 92200,
+      "forks": 3921,
+      "openIssues": 3077,
+      "lastPushedAt": "2026-11-18T18:59:26Z",
+      "readmeChanged": false,
+      "testStatus": "not_run"
+    }
+  ],
+  "newFeedProject": {
+    "name": "Lapce",
+    "repo": "lapce/lapce",
+    "feedId": "3aeb603c56a3660ee6",
+    "inCurrentFeed": true,
+    "license": "Apache-2.0",
+    "stars": 39092,
+    "forks": 1367,
+    "openIssues": 906,
+    "lastPushedAt": "2026-11-18T13:40:27Z",
+    "editorialStatus": "enriched_in_pr_existing_id",
+    "testStatus": "not_run"
+  },
+  "archivedLibrary": [
+    {
+      "repo": "atom/atom",
+      "alternative": "VS Code, Zed, Lapce"
+    },
+    {
+      "repo": "angular/angular.js",
+      "alternative": "modern Angular, React, Vue"
+    }
+  ],
+  "researchCatalog": {
+    "total": 31,
+    "active": 29,
+    "archived": 2,
+    "licensesVerified": 31,
+    "deeplyReviewedProjects": 3,
+    "metricsSnapshotAt": "2026-11-16"
+  },
+  "decision": "All eight previous projects remain unarchived with verified licenses. Seven README files are unchanged; Pydantic AI changed and was reread. Lapce uses its original Feed ID. Pydantic AI is not in Feed and remains research-only."
+}

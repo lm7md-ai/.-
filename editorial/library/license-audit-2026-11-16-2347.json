@@ -1,0 +1,450 @@
+{
+  "version": 1,
+  "publicationStatus": "research-only-not-published",
+  "reviewedAt": "2026-11-16T23:47:26+03:00",
+  "sourceMainSha": "f7f3f42d289a6076959e21eeae1290f5c22edf03",
+  "sourcePrHeadBefore": "dcb6ba5fe35e7d08e09731470b10917064d1a33b",
+  "catalogBaseline": {
+    "total": 73,
+    "active": 71,
+    "archived": 2,
+    "snapshotAt": "2026-11-14T02:47:48+03:00",
+    "flaggedLicenseCases": 10
+  },
+  "auditSummary": {
+    "flaggedCasesReviewed": 10,
+    "officialLicenseFilesRead": 9,
+    "repoWithoutLicenseFile": 1,
+    "archivedNow": 0,
+    "classification": "file-level review; scoped caveats remain; not legal advice"
+  },
+  "entries": [
+    {
+      "repo": "torvalds/linux",
+      "name": "Linux kernel",
+      "url": "https://github.com/torvalds/linux",
+      "archived": false,
+      "metrics": {
+        "stars": 255896,
+        "forks": 67456,
+        "pushedAt": "2026-11-16T17:14:41Z",
+        "updatedAt": "2026-11-16T20:53:45Z",
+        "measuredAt": "2026-11-16T23:47:26+03:00"
+      },
+      "apiLicense": "NOASSERTION",
+      "licenseFiles": [
+        {
+          "path": "COPYING",
+          "sha": "a635a38ef9405fdfcfe97f3a435393c1e9cae971"
+        }
+      ],
+      "licenseStatus": "file-reviewed-with-per-file-caveat",
+      "licenseSummary": "الملف الأعلى يحدد GPL-2.0-only مع Linux-syscall-note. قد تختلف تراخيص الملفات الفردية؛ افحص SPDX داخل الملف وLICENSES/ قبل إعادة توزيع جزء محدد.",
+      "sources": [
+        {
+          "title": "Linux repository",
+          "url": "https://github.com/torvalds/linux"
+        },
+        {
+          "title": "Top-level COPYING",
+          "url": "https://github.com/torvalds/linux/blob/master/COPYING"
+        },
+        {
+          "title": "LICENSES directory",
+          "url": "https://github.com/torvalds/linux/tree/master/LICENSES"
+        }
+      ],
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "nodejs/node",
+      "name": "Node.js",
+      "url": "https://github.com/nodejs/node",
+      "archived": false,
+      "metrics": {
+        "stars": 123733,
+        "forks": 38067,
+        "pushedAt": "2026-11-16T20:37:17Z",
+        "updatedAt": "2026-11-16T20:52:01Z",
+        "measuredAt": "2026-11-16T23:47:26+03:00"
+      },
+      "apiLicense": "NOASSERTION",
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha": "ec72f56e16fb19944a55acdbff67727d2bfadb8a"
+        }
+      ],
+      "licenseStatus": "file-reviewed-with-third-party-notices",
+      "licenseSummary": "ملف LICENSE يضم شروط MIT الخاصة بأجزاء Node.js ثم إشعارات وتراخيص لمكونات مضمّنة. لا تختزل الملف كله إلى ترخيص واحد عند إعادة توزيع حزمة أو مكوّن.",
+      "sources": [
+        {
+          "title": "Node.js repository",
+          "url": "https://github.com/nodejs/node"
+        },
+        {
+          "title": "LICENSE",
+          "url": "https://github.com/nodejs/node/blob/main/LICENSE"
+        }
+      ],
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "pytorch/pytorch",
+      "name": "PyTorch",
+      "url": "https://github.com/pytorch/pytorch",
+      "archived": false,
+      "metrics": {
+        "stars": 105560,
+        "forks": 30725,
+        "pushedAt": "2026-11-16T20:53:58Z",
+        "updatedAt": "2026-11-16T20:52:28Z",
+        "measuredAt": "2026-11-16T23:47:26+03:00"
+      },
+      "apiLicense": "NOASSERTION",
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha": "c23172f7aff0254e4f0f163fb2e6e355cbaec5f4"
+        },
+        {
+          "path": "NOTICE",
+          "sha": "6effb8b5d70709f90835f2f5d646352fd77b6943"
+        }
+      ],
+      "licenseStatus": "file-reviewed-with-component-notice-caveat",
+      "licenseSummary": "قرأت LICENSE وNOTICE؛ يتضمن الملف شروط إعادة توزيع على نمط BSD مع سجلات مساهمين متعددة، وNOTICE يشير إلى مكونات طرف ثالث. راجع تراخيص المكونات والحزم الثنائية المستخدمة بدل افتراض أن كل الاعتماديات تحت شرط واحد.",
+      "sources": [
+        {
+          "title": "PyTorch repository",
+          "url": "https://github.com/pytorch/pytorch"
+        },
+        {
+          "title": "LICENSE",
+          "url": "https://github.com/pytorch/pytorch/blob/main/LICENSE"
+        },
+        {
+          "title": "NOTICE",
+          "url": "https://github.com/pytorch/pytorch/blob/main/NOTICE"
+        }
+      ],
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "name": "n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "archived": false,
+      "metrics": {
+        "stars": 210635,
+        "forks": 61523,
+        "pushedAt": "2026-11-16T20:51:01Z",
+        "updatedAt": "2026-11-16T20:52:58Z",
+        "measuredAt": "2026-11-16T23:47:26+03:00"
+      },
+      "apiLicense": "NOASSERTION",
+      "licenseFiles": [
+        {
+          "path": "LICENSE.md",
+          "sha": "f85f59baa906530c26cee26e0c9ddd6bd5f86dbd"
+        },
+        {
+          "path": "LICENSE_EE.md",
+          "sha": "b47966a6c05809c90723aa4beaf47cbbd34fac1b"
+        }
+      ],
+      "licenseStatus": "file-reviewed-source-available-commercial-scope",
+      "licenseSummary": "LICENSE.md يحدد Sustainable Use License لأجزاء من المصدر، ويستثني مسارات .ee التي يحكمها LICENSE_EE.md. الأخير يشترط ترخيص Enterprise للاستخدام الإنتاجي. لا تصفه كمشروع OSI مفتوح المصدر ولا تفترض أن الاستخدام التجاري غير مقيد.",
+      "sources": [
+        {
+          "title": "n8n repository",
+          "url": "https://github.com/n8n-io/n8n"
+        },
+        {
+          "title": "Sustainable Use License",
+          "url": "https://github.com/n8n-io/n8n/blob/master/LICENSE.md"
+        },
+        {
+          "title": "Enterprise License",
+          "url": "https://github.com/n8n-io/n8n/blob/master/LICENSE_EE.md"
+        }
+      ],
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "blender/blender",
+      "name": "Blender",
+      "url": "https://github.com/blender/blender",
+      "archived": false,
+      "metrics": {
+        "stars": 22109,
+        "forks": 3610,
+        "pushedAt": "2026-11-16T20:28:52Z",
+        "updatedAt": "2026-11-16T20:42:32Z",
+        "measuredAt": "2026-11-16T23:47:26+03:00"
+      },
+      "apiLicense": "NOASSERTION",
+      "licenseFiles": [
+        {
+          "path": "COPYING",
+          "sha": "3be7c91320a650eb99fc4ebda1f5fab48c7dbea2"
+        },
+        {
+          "path": "doc/license/GPL-license.txt",
+          "sha": "8860b2a8afa8c8586992f7f374a099956563a152"
+        }
+      ],
+      "licenseStatus": "file-reviewed",
+      "licenseSummary": "COPYING يحيل إلى doc/license/GPL-license.txt؛ النص الرسمي هناك هو GNU GPL Version 2 (June 1991).",
+      "sources": [
+        {
+          "title": "Blender repository",
+          "url": "https://github.com/blender/blender"
+        },
+        {
+          "title": "COPYING",
+          "url": "https://github.com/blender/blender/blob/main/COPYING"
+        },
+        {
+          "title": "GPL license text",
+          "url": "https://github.com/blender/blender/blob/main/doc/license/GPL-license.txt"
+        }
+      ],
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "neovim/neovim",
+      "name": "Neovim",
+      "url": "https://github.com/neovim/neovim",
+      "archived": false,
+      "metrics": {
+        "stars": 103668,
+        "forks": 7406,
+        "pushedAt": "2026-11-16T20:32:11Z",
+        "updatedAt": "2026-11-16T20:46:06Z",
+        "measuredAt": "2026-11-16T23:47:26+03:00"
+      },
+      "apiLicense": "NOASSERTION",
+      "licenseFiles": [
+        {
+          "path": "LICENSE.txt",
+          "sha": "7d06aaf8bced96162aa9f8849c16279731e1baf0"
+        }
+      ],
+      "licenseStatus": "file-reviewed-mixed-contributions",
+      "licenseSummary": "LICENSE.txt يحدد Apache 2.0 مع استثناء أجزاء ساهمت تحت Vim license. راجع مصدر الجزء المحدد قبل إعادة استخدامه.",
+      "sources": [
+        {
+          "title": "Neovim repository",
+          "url": "https://github.com/neovim/neovim"
+        },
+        {
+          "title": "LICENSE.txt",
+          "url": "https://github.com/neovim/neovim/blob/master/LICENSE.txt"
+        }
+      ],
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "FFmpeg/FFmpeg",
+      "name": "FFmpeg",
+      "url": "https://github.com/FFmpeg/FFmpeg",
+      "archived": false,
+      "metrics": {
+        "stars": 67382,
+        "forks": 14646,
+        "pushedAt": "2026-11-16T18:02:27Z",
+        "updatedAt": "2026-11-16T20:53:50Z",
+        "measuredAt": "2026-11-16T23:47:26+03:00"
+      },
+      "apiLicense": "NOASSERTION",
+      "licenseFiles": [
+        {
+          "path": "LICENSE.md",
+          "sha": "0e75dd3030844784ae339fb51300bd1a3b1e6207"
+        },
+        {
+          "path": "COPYING.LGPLv2.1",
+          "sha": "40924c2a6da76a2b0c639f6fe7ef0b2d095a6adb"
+        },
+        {
+          "path": "COPYING.GPLv2",
+          "sha": "d159169d1050894d3ea3b98e1c965c4058208fe1"
+        },
+        {
+          "path": "COPYING.GPLv3",
+          "sha": "94a9ed024d3859793618152ea559a168bbcbb5e2"
+        }
+      ],
+      "licenseStatus": "file-reviewed-build-configuration-dependent",
+      "licenseSummary": "LICENSE.md يقول إن معظم الملفات تحت LGPL v2.1+؛ الأجزاء الاختيارية تحت GPL v2+ ولا تُفعّل افتراضيًا، ويتغير الترخيص عند خيارات build مثل --enable-gpl أو --enable-version3. افحص إعداد البناء والمكتبات الخارجية.",
+      "sources": [
+        {
+          "title": "FFmpeg repository",
+          "url": "https://github.com/FFmpeg/FFmpeg"
+        },
+        {
+          "title": "LICENSE.md",
+          "url": "https://github.com/FFmpeg/FFmpeg/blob/master/LICENSE.md"
+        },
+        {
+          "title": "LGPL v2.1",
+          "url": "https://github.com/FFmpeg/FFmpeg/blob/master/COPYING.LGPLv2.1"
+        },
+        {
+          "title": "GPL v2",
+          "url": "https://github.com/FFmpeg/FFmpeg/blob/master/COPYING.GPLv2"
+        },
+        {
+          "title": "GPL v3",
+          "url": "https://github.com/FFmpeg/FFmpeg/blob/master/COPYING.GPLv3"
+        }
+      ],
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "gradium-ai/xn-ptts",
+      "name": "Phonon / xn-ptts",
+      "url": "https://github.com/gradium-ai/xn-ptts",
+      "archived": false,
+      "metrics": {
+        "stars": 499,
+        "forks": 57,
+        "pushedAt": "2026-11-16T08:19:32Z",
+        "updatedAt": "2026-11-16T15:04:38Z",
+        "measuredAt": "2026-11-16T23:47:26+03:00"
+      },
+      "apiLicense": "Apache-2.0",
+      "licenseFiles": [
+        {
+          "path": "LICENSE-APACHE",
+          "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+        },
+        {
+          "path": "LICENSE-MIT",
+          "sha": "31aa79387f27e730e33d871925e152e35e428031"
+        }
+      ],
+      "licenseStatus": "code-license-reviewed-model-license-separated",
+      "licenseSummary": "كود المستودع MIT OR Apache-2.0. README يفرق بين أوزان النماذج: Phonon 31m تحت Apache 2.0، بينما Phonon 40m تحت CC BY-NC 4.0؛ لا تنقل ترخيص الكود إلى الأوزان.",
+      "sources": [
+        {
+          "title": "xn-ptts repository",
+          "url": "https://github.com/gradium-ai/xn-ptts"
+        },
+        {
+          "title": "LICENSE-APACHE",
+          "url": "https://github.com/gradium-ai/xn-ptts/blob/main/LICENSE-APACHE"
+        },
+        {
+          "title": "LICENSE-MIT",
+          "url": "https://github.com/gradium-ai/xn-ptts/blob/main/LICENSE-MIT"
+        },
+        {
+          "title": "Model setup and model licenses",
+          "url": "https://github.com/gradium-ai/xn-ptts#model-setup"
+        },
+        {
+          "title": "Phonon 31m model",
+          "url": "https://huggingface.co/gradium/phonon-31m-en"
+        },
+        {
+          "title": "Phonon 40m model",
+          "url": "https://huggingface.co/gradium/phonon-40m-en"
+        }
+      ],
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "thesayfulla/pylings",
+      "name": "Pylings",
+      "url": "https://github.com/thesayfulla/pylings",
+      "archived": false,
+      "metrics": {
+        "stars": 101,
+        "forks": 6,
+        "pushedAt": "2026-11-16T20:04:46Z",
+        "updatedAt": "2026-11-15T12:34:16Z",
+        "measuredAt": "2026-11-16T23:47:26+03:00"
+      },
+      "apiLicense": null,
+      "licenseFiles": [],
+      "licenseStatus": "no-license-file-found",
+      "licenseSummary": "لم يظهر ملف LICENSE في جذر المستودع، وGitHub API لا يحدد ترخيصًا. لا تفترض وجود إذن لإعادة الاستخدام أو إعادة التوزيع؛ أبقِه مرجعًا للقراءة فقط حتى يوضح المالك الترخيص.",
+      "sources": [
+        {
+          "title": "Pylings repository",
+          "url": "https://github.com/thesayfulla/pylings"
+        }
+      ],
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "unlap-labs/maxxbench",
+      "name": "MaxxBench",
+      "url": "https://github.com/unlap-labs/maxxbench",
+      "archived": false,
+      "metrics": {
+        "stars": 36,
+        "forks": 2,
+        "pushedAt": "2026-11-07T06:49:36Z",
+        "updatedAt": "2026-11-14T10:13:35Z",
+        "measuredAt": "2026-11-16T23:47:26+03:00"
+      },
+      "apiLicense": "Apache-2.0",
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+        },
+        {
+          "path": "PROVENANCE.md",
+          "sha": "d6b1dead329da2a7a8f1eb1359bb7571e2f17e4c"
+        }
+      ],
+      "licenseStatus": "file-reviewed-upstream-code-remains-separate",
+      "licenseSummary": "LICENSE يخص مساهمات المستودع الأصلية فقط. PROVENANCE.md يوضح أن 89 مهمة مقتبسة من مشاريع upstream وتبقى تراخيص تلك المشاريع منفصلة؛ راجع كل upstream قبل إعادة توزيع الشيفرة.",
+      "sources": [
+        {
+          "title": "MaxxBench repository",
+          "url": "https://github.com/unlap-labs/maxxbench"
+        },
+        {
+          "title": "LICENSE",
+          "url": "https://github.com/unlap-labs/maxxbench/blob/main/LICENSE"
+        },
+        {
+          "title": "PROVENANCE",
+          "url": "https://github.com/unlap-labs/maxxbench/blob/main/PROVENANCE.md"
+        }
+      ],
+      "testStatus": "not_run"
+    }
+  ],
+  "notes": [
+    "GitHub metrics are cumulative snapshots at measuredAt, not daily growth.",
+    "All ten repositories reported archived=false at measurement time.",
+    "Pylings has no root LICENSE file and no GitHub API license value; no reuse permission is inferred.",
+    "n8n uses Sustainable Use License for covered core files and a separate Enterprise License for .ee paths; do not label it OSI open source.",
+    "FFmpeg licensing depends on selected components and build flags.",
+    "Gradium code and model weights have separate licenses.",
+    "MaxxBench's Apache-2.0 license does not relicense upstream code included in tasks.",
+    "No project was executed or tested; testStatus=not_run throughout."
+  ],
+  "developerHandoff": [
+    "Display this file as a research-only license audit, not as a published project card.",
+    "Keep code license, model-weight license, third-party notices, and upstream task licenses as separate fields.",
+    "Do not present a project as open source solely from GitHub API license metadata when the official license says otherwise."
+  ],
+  "mainAdvanceDuringRun": {
+    "from": "65e69a2329235ee0cd0dfb8a7de70745f7671edc",
+    "to": "f7f3f42d289a6076959e21eeae1290f5c22edf03",
+    "commitTitle": "data: refresh deduplicated technology feed",
+    "changedFiles": [
+      "site/data/feed.json",
+      "site/data/seen.json",
+      "site/data/status.json"
+    ],
+    "trigger": "existing scheduled GitHub Actions run 43940637534"
+  }
+}

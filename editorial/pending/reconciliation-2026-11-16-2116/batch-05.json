@@ -1,0 +1,420 @@
+{
+  "version": 1,
+  "batch": 5,
+  "of": 9,
+  "sourceMainSha": "65e69a2329235ee0cd0dfb8a7de70745f7671edc",
+  "reviewedAt": "2026-11-16T21:16:09+03:00",
+  "files": [
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-31-1811.json",
+      "appearances": 5,
+      "alreadyImported": 3,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 2,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-01-0542.json",
+      "appearances": 12,
+      "alreadyImported": 12,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-01-1158.json",
+      "appearances": 6,
+      "alreadyImported": 6,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-02-1446.json",
+      "appearances": 10,
+      "alreadyImported": 8,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 2,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-02-2347.json",
+      "appearances": 4,
+      "alreadyImported": 4,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "appearances": 29,
+      "alreadyImported": 16,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 13,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-03-2136.json",
+      "appearances": 7,
+      "alreadyImported": 3,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 4,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-03-2222.json",
+      "appearances": 12,
+      "alreadyImported": 12,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-03-2342.json",
+      "appearances": 11,
+      "alreadyImported": 10,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 1,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-04-0238.json",
+      "appearances": 1,
+      "alreadyImported": 1,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-04-0841.json",
+      "appearances": 12,
+      "alreadyImported": 12,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "appearances": 12,
+      "alreadyImported": 2,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 10,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-04-1222.json",
+      "appearances": 9,
+      "alreadyImported": 8,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 1,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-04-2338.json",
+      "appearances": 1,
+      "alreadyImported": 1,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-05-0409.json",
+      "appearances": 9,
+      "alreadyImported": 9,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    }
+  ],
+  "totals": {
+    "appearances": 140,
+    "alreadyImported": 107,
+    "exactFeedNotImported": 0,
+    "idUrlMismatch": 0,
+    "outOfFeed": 33,
+    "structuralInvalid": 0
+  },
+  "pendingAppearances": [
+    {
+      "id": "87d27a9f8a0972f507",
+      "url": "https://www.theverge.com/tech/1023021/binance-hack-billions-biggest-crypto-heist",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-31-1811.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "65eeab64fed21e0b54",
+      "url": "https://www.engadget.com/2301934/general-motors-220-million-settle-multi-state-data-privacy-lawsuit/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-31-1811.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "d674dea922625d0be8",
+      "url": "https://noyb.eu/en/noyb-win-french-electronics-retailer-fnac-darty-fined-eu7-million",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-02-1446.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "967be99077d13f07b2",
+      "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-02-1446.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "32b3bf2b225f3d4c44",
+      "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "5010fb296f767bbc9b",
+      "url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "327e862bb29c2bb4f7",
+      "url": "https://longcat.ai/blog/longcat-2.5/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "dc7eb9e8885fba4465",
+      "url": "https://arxiv.org/abs/2610.37741",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "56a1a96015a9777801",
+      "url": "https://polyend.com/whats-up/tracker-the-biggest-update-yet/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "841e05fd699259e83c",
+      "url": "https://www6.slac.stanford.edu/news/2026-10-29-slac-researchers-find-proof-altermagnetism-new-magnetic-phase",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "cb87f0ba6d1c74466f",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxObHNVY2RGNWxZajhMalAxVDRBVXVZRF95ZEV6eUM3QTlOMkl3bGpZUlNSaVZZUmxqcVAtVDVpRThIXzc4eExtcmdEdDlZYWt1SXR3bHN0aC1qR0JURUxtTVQxb3JGRDNOSkRCZXhna1cxMC1aeFRPekZaTWNJZVJoNHlWOA?oc=5",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "5b9f2f37879a136ac2",
+      "url": "https://www.bbc.co.uk/news/articles/ckpqg8lve73go?at_medium=RSS&at_campaign=rss",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "03ad66ba1fba612587",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1025245/apple-earnings-q4-ai",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "e2d2bf508ced1caa08",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1025242/openai-quietly-renames-data-centers-as-compute-campuses",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "3e8a8aa6133203ad02",
+      "url": "https://momentic.ai/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "834f867a452076917a",
+      "url": "https://github.com/NVIDIA/auto-ontology",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "6b6c7100781c3e9dc6",
+      "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "5f4b9fdfeb2042b971",
+      "url": "https://www.theverge.com/1024807/google-botnet-android-tv-shut-down",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2136.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "2451814cc9423add84",
+      "url": "https://www.theverge.com/science/1025227/nasa-swift-observatory-falling-to-earth",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2136.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "f6417c66c0228f42d3",
+      "url": "https://www.theverge.com/tech/1024835/meta-vr-quest-2-pro-os-end-updates",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2136.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "002b7cee771ca9e347",
+      "url": "https://www.theverge.com/news/1025142/windows-11-8gb-ram-memory-improvements-speed-performance",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2136.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "1263ce4e09302da828",
+      "url": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-03-2342.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "210b26f029f33a3ef7",
+      "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "35eaf0d06c77e9ddf3",
+      "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "b5cba0d011349b3bc5",
+      "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "519582846479e28ed3",
+      "url": "https://neufangled.com/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "01b1e45f222dec5edc",
+      "url": "https://arxiv.org/abs/2605.29713",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "ae61902e2afada6e8c",
+      "url": "https://ben.stolovitz.com/posts/how-use-ai-oct-2026/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "f1213d42ab134c3258",
+      "url": "https://github.com/finic-ai/kairos",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "e3bc71be0e917360f6",
+      "url": "https://dilshan.github.io/tiny-basic/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "fb02c93fd281f7df67",
+      "url": "https://www.quili.ai/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "cf03bdbe3edb09ea56",
+      "url": "https://openathena.ai/blog/there-is-no-posttraining-data-commons/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "954fbd2e34ab1eb99f",
+      "url": "https://github.com/Muvon/octomind",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-04-1222.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    }
+  ],
+  "expiryAssessment": "لا يوجد تاريخ نشر/انتهاء كافٍ لإثبات الانقضاء؛ Seen وحده لا يثبت ذلك.",
+  "validator": "structural-equivalent-only; official Python validator not run on historical incoming files"
+}

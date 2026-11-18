@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "verified-deployment-artifact-not-live-cdn",
+  "reviewedAt": "2026-11-18T18:36:04+03:00",
+  "mainSha": "e03f5be1e158566ff057cd05eb774f00f2525366",
+  "workflowRun": {
+    "id": 44296233205,
+    "url": "https://github.com/lm7md-ai/.-/actions/runs/44296233205",
+    "event": "schedule",
+    "status": "completed",
+    "conclusion": "success"
+  },
+  "artifact": {
+    "id": 14423346974,
+    "name": "github-pages",
+    "sizeBytes": 1369720,
+    "zipName": "nabdh-pages-442962.zip",
+    "containsNestedTar": true,
+    "extracted": true
+  },
+  "deployedPayload": {
+    "editorial": {
+      "path": "data/editorial.json",
+      "entries": 1059,
+      "gitBlobSha": "54ee37bae9daeed7556c243d7b6f8d1737e004f7",
+      "matchesMain": true
+    },
+    "feed": {
+      "path": "data/feed.json",
+      "entries": 800,
+      "generatedAt": "2026-11-18T11:36:41+00:00",
+      "gitBlobSha": "ee786e1da5d933715da6ec83451a22b8a7f5d246",
+      "matchesMain": true
+    },
+    "seen": {
+      "path": "data/seen.json",
+      "ids": 5783,
+      "gitBlobSha": "5de71023e8b93e7f8a44f119373e338e487e97db",
+      "matchesMain": true
+    },
+    "status": {
+      "path": "data/status.json",
+      "state": "partial",
+      "gitBlobSha": "cc05279b9f3025dcf267d04257bf2cb4e2125317",
+      "matchesMain": true
+    }
+  },
+  "verifiedDetailExamples": [
+    {
+      "kind": "news",
+      "id": "3485621c12ab9987cf",
+      "titleAr": "Seagate تعيد التخزين الهجين عبر FireCuda Forge وطبقة Alkemi",
+      "source": "https://arstechnica.com/gadgets/2026/11/seagate-resurrects-the-ssd-hdd-hybrid-drive/"
+    },
+    {
+      "kind": "project",
+      "id": "ab84e19553c74c6e20",
+      "titleAr": "freeCodeCamp: تعليم برمجة مجاني بمشاريع عملية",
+      "source": "https://github.com/freeCodeCamp/freeCodeCamp"
+    }
+  ],
+  "directSiteVerification": {
+    "homepage": "DisabledError",
+    "editorialJson": "DisabledError",
+    "result": "not_verified_directly"
+  },
+  "distinction": "نجاح نشر Artifact مؤكد؛ استجابة CDN الحية غير مؤكدة. هذه اللقطة تسبق دمج 37 سجلًا في PR."
+}

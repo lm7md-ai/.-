@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "research-only-not-published",
+  "reviewedAt": "2026-11-18T21:02:11+03:00",
+  "metricsMeasuredAt": "2026-11-18T20:58:49+03:00",
+  "sourceMainSha": "e03f5be1e158566ff057cd05eb774f00f2525366",
+  "feedReference": {
+    "id": "e1f0381c8cfc61e333",
+    "kind": "news",
+    "url": "https://github.com/Apakottur/unref",
+    "exactUrlMatch": true,
+    "projectKindCard": false,
+    "editorialEnriched": true,
+    "note": "المستودع وارد في Feed كعنصر news من نوع Show HN، وليس بطاقة project؛ أُثري سجل الخبر بمعرفه الأصلي، وحُفظ هذا الملف البحثي منفصلًا دون نشر بطاقة مشروع."
+  },
+  "repository": {
+    "fullName": "Apakottur/unref",
+    "url": "https://github.com/Apakottur/unref",
+    "defaultBranch": "main",
+    "archived": false,
+    "status": "active",
+    "license": "MIT",
+    "licenseVerified": true,
+    "stars": 70,
+    "forks": 1,
+    "openIssues": 5,
+    "createdAt": "2026-11-11T15:27:47Z",
+    "lastPushedAt": "2026-11-18T17:52:39Z"
+  },
+  "overview": "Unref أداة سطر أوامر لاكتشاف تعريفات Python التي لا تصل إليها نقاط الدخول المعروفة. تستخدم Ruff parser عبر Rust، وتغطي الدوال والفئات والطرق والمتغيرات والسمات، مع إعدادات للأطر الشائعة ونقاط الدخول الديناميكية. لا تحل محل Ruff في كشف الاستيرادات أو المتغيرات المحلية غير المستخدمة؛ الأداتان متكاملتان.",
+  "requirements": {
+    "python": "3.11+",
+    "sourceBuild": "Rust 1.97+ مع Maturin وفق Cargo.toml وpyproject.toml",
+    "runtime": "يمكن تشغيلها عبر uvx دون خدمة سحابية؛ الحزمة تحتاج تنزيلًا أوليًا",
+    "frameworks": [
+      "pytest",
+      "Django",
+      "Flask",
+      "Pydantic",
+      "SQLAlchemy"
+    ],
+    "notes": [
+      "قد تتطلب واجهات المكتبات العامة __all__ أو used-names.",
+      "الإضافات والتحميل الديناميكي يحتاجان إعداد entry points وoverrides.",
+      "البناء من المصدر يحتاج سلسلة أدوات Rust؛ التشغيل عبر حزمة جاهزة لا يتطلب إدارة خدمة خارجية."
+    ]
+  },
+  "quickStart": [
+    "من جذر المشروع شغّل `uvx unref` لإنتاج تقرير أولي.",
+    "لفحص مسارات محددة استخدم `uvx unref src scripts`.",
+    "اضبط `[tool.unref]` داخل pyproject.toml للأسماء والديكورات ونقاط الدخول والاستثناءات.",
+    "أضف hook إلى pre-commit/prek أو شغّل `uvx unref --output-format github` في GitHub Actions بعد مراجعة النتائج."
+  ],
+  "costs": {
+    "license": "MIT مفتوح المصدر",
+    "local": "لا يحتاج API أو حسابًا سحابيًا؛ التنفيذ محلي",
+    "cloud": "اختياري عبر CI، وتستهلك GitHub Actions دقائق المستودع المعتادة",
+    "paidServices": "لا توجد خدمة مدفوعة مطلوبة في مسار الاستخدام الأساسي"
+  },
+  "alternatives": [
+    {
+      "name": "Vulture",
+      "role": "كاشف Python معروف للشيفرة غير المستخدمة؛ مقارنة الأداء المنشورة مع Unref صادرة عن مطور Unref وليست مستقلة."
+    },
+    {
+      "name": "Ruff",
+      "role": "يكشف استيرادات ومتغيرات محلية غير مستخدمة ويكمل Unref، لكنه ليس بديلًا مطابقًا لاكتشاف التعريفات غير القابلة للوصول."
+    }
+  ],
+  "limitations": [
+    "Benchmark 20× على CPython 3.15 ونحو 2,300 ملف ادعاء نشره المطور؛ لم نعد تشغيله.",
+    "التحميل الديناميكي وواجهات الإضافات قد يسببان نتائج إيجابية كاذبة إن لم تُعرّف نقاط الدخول.",
+    "لم تُنفذ اختبارات أو تشغيل عملي في هذه الدورة؛ testStatus=not_run.",
+    "لم يُجر تدقيق مستقل لصحة كل قاعدة أو معدل الإيجابيات الكاذبة."
+  ],
+  "testStatus": "not_run",
+  "testEvidence": [],
+  "improvements": [
+    {
+      "title": "وضع Baseline وقياس الفروقات في CI",
+      "problem": "قد ينتج عن أول تشغيل في مستودع قديم عدد كبير من النتائج التاريخية، ما يجعل اعتماد الأداة حاجزًا جديدًا صعبًا.",
+      "approach": "إضافة ملف baseline ثابت بمعرّفات نتائج مستقرة، ثم جعل CI يفشل على النتائج الجديدة فقط مع أمر صريح لمراجعة وتحديث baseline.",
+      "stack": [
+        "Rust",
+        "Python",
+        "JSON baseline",
+        "GitHub Actions"
+      ],
+      "steps": [
+        "تحديد هوية مستقرة لكل نتيجة من المسار والقاعدة والرمز.",
+        "تصدير baseline أولي مع مراجعة بشرية.",
+        "مقارنة كل تشغيل بالـbaseline وعرض النتائج الجديدة فقط.",
+        "إضافة أمر تحديث baseline مع سجل تغييرات وموافقة مراجِع."
+      ],
+      "metric": "عدد النتائج الجديدة لكل PR، ومعدل الإيجابيات الكاذبة، وزمن مراجعة التنظيف.",
+      "difficulty": "متوسط — تقدير هندسي",
+      "risks": [
+        "قد يخفي baseline قديم دينًا تقنيًا إذا لم يُراجع دوريًا.",
+        "إعادة تسمية الملفات أو الرموز قد تنتج نتائج جديدة غير حقيقية."
+      ],
+      "sources": [
+        "https://github.com/Apakottur/unref",
+        "https://github.com/Apakottur/unref/blob/main/docs/usage.md"
+      ]
+    },
+    {
+      "title": "إخراج SARIF موحد للتكامل مع أدوات مراجعة الشيفرة",
+      "problem": "تعليقات GitHub المضمنة مفيدة، لكن فرق الأمن والجودة قد تحتاج تنسيقًا معياريًا لتجميع النتائج ومقارنتها عبر المستودعات.",
+      "approach": "إضافة SARIF 2.1.0 بمعرّفات قواعد ومواقع ثابتة ومستوى ثقة، مع إبقاء المخرجات الحالية متوافقة.",
+      "stack": [
+        "Rust",
+        "SARIF 2.1.0",
+        "GitHub Code Scanning"
+      ],
+      "steps": [
+        "تحديد ruleId ثابت لكل قاعدة.",
+        "تحويل النتائج إلى SARIF مع المسار والمدى والرسالة.",
+        "اختبار المخطط بعينات صغيرة ومستودعات أطر مختلفة.",
+        "توثيق رفع التقرير إلى GitHub Actions دون تفعيل حاجز إلزامي افتراضيًا."
+      ],
+      "metric": "نسبة النتائج التي تظهر بموقع صحيح وإمكانية تتبعها بين تشغيل وآخر.",
+      "difficulty": "متوسط — تقدير هندسي",
+      "risks": [
+        "أخطاء مواقع المصدر أو معرّفات غير مستقرة قد تكرر التنبيهات.",
+        "قد يختلف دعم SARIF بين منصات الاستضافة."
+      ],
+      "sources": [
+        "https://github.com/Apakottur/unref",
+        "https://github.com/Apakottur/unref/blob/main/docs/configuration.md"
+      ]
+    },
+    {
+      "title": "توسيع فهم نقاط الدخول الديناميكية والإضافات",
+      "problem": "المشاريع التي تعتمد importlib.metadata وentry points أو تسجيل الإضافات قد تبدو تعريفاتها غير مستخدمة رغم استدعائها وقت التشغيل.",
+      "approach": "توفير قواعد اختيارية لاكتشاف entry points وregistries الشائعة مع تقرير يوضح مصدر اعتبار الرمز نقطة دخول.",
+      "stack": [
+        "Rust",
+        "Python AST",
+        "importlib.metadata",
+        "pytest"
+      ],
+      "steps": [
+        "جمع أنماط entry points من pyproject.toml وملفات التهيئة.",
+        "إضافة قواعد قابلة للتشغيل والإيقاف لكل إطار.",
+        "بناء fixtures لمشاريع تستخدم plugins وdecorator registries.",
+        "قياس الإيجابيات الكاذبة قبل تفعيل القواعد افتراضيًا."
+      ],
+      "metric": "انخفاض الإيجابيات الكاذبة في مستودعات الإضافات دون زيادة كبيرة في التعريفات التي تفلت من الكشف.",
+      "difficulty": "عالٍ — تقدير هندسي",
+      "risks": [
+        "قواعد واسعة قد تخفي شيفرة ميتة فعلًا.",
+        "تحليل التهيئة قد يضيف تعقيدًا واعتمادًا على صيغ متعددة."
+      ],
+      "sources": [
+        "https://github.com/Apakottur/unref/blob/main/docs/configuration.md",
+        "https://github.com/Apakottur/unref/blob/main/docs/faq.md"
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "لوحة اتجاهات الشيفرة غير المستخدمة عبر عدة مستودعات",
+      "problem": "لا يرى فريق المنصة أثر نتائج Unref عبر المستودعات أو تحسنها بمرور الوقت.",
+      "approach": "جامع تقارير JSON/SARIF يعرض الاتجاهات والملكية والاستثناءات دون قراءة الشيفرة المصدرية نفسها.",
+      "stack": [
+        "Python",
+        "SQLite",
+        "SARIF",
+        "Static dashboard"
+      ],
+      "steps": [
+        "جمع تقارير CI بعد كل تشغيل.",
+        "توحيد هوية النتائج عبر المستودعات.",
+        "عرض الاتجاهات والنتائج الجديدة والمغلقة.",
+        "إتاحة تصدير CSV ومراجعة الاستثناءات."
+      ],
+      "metric": "انخفاض عدد النتائج المتراكمة وزمن إغلاقها.",
+      "difficulty": "متوسط — تقدير هندسي",
+      "risks": [
+        "تسرب أسماء ملفات أو معلومات داخلية إن نُشرت التقارير بلا ضوابط.",
+        "تغير هوية النتائج يربك الاتجاهات."
+      ],
+      "sources": [
+        "https://github.com/Apakottur/unref",
+        "https://github.com/Apakottur/unref/blob/main/docs/usage.md"
+      ]
+    },
+    {
+      "title": "مساعد اقتراح تنظيف آمن مع مراجعة بشرية",
+      "problem": "تحويل قائمة نتائج طويلة إلى تغييرات صغيرة قابلة للمراجعة يستغرق وقتًا.",
+      "approach": "تجميع النتائج واقتراح patch منفصل لكل مجموعة، مع تشغيل اختبارات المشروع وطلب موافقة بشرية قبل الدمج.",
+      "stack": [
+        "Python",
+        "GitHub API",
+        "Unref JSON",
+        "Project test runner"
+      ],
+      "steps": [
+        "قراءة تقرير Unref دون تعديل الملفات.",
+        "تجميع النتائج بحسب الملف والاعتماديات.",
+        "إنشاء patch مقترح مع شرح سبب كل حذف.",
+        "تشغيل اختبارات المشروع وعرض الأدلة للمراجع.",
+        "ترك قرار الدمج والحذف النهائي للمستخدم."
+      ],
+      "metric": "نسبة الاقتراحات المقبولة دون تراجعات أو أخطاء تشغيل.",
+      "difficulty": "عالٍ — تقدير هندسي",
+      "risks": [
+        "قد يؤدي الحذف إلى كسر نقاط دخول ديناميكية غير ممثلة في الاختبارات.",
+        "نجاح الاختبارات لا يثبت غياب كل استخدام خارجي."
+      ],
+      "sources": [
+        "https://github.com/Apakottur/unref",
+        "https://github.com/Apakottur/unref/blob/main/docs/faq.md"
+      ]
+    }
+  ],
+  "religious": [],
+  "developerHandoff": [
+    "أبقِ هذا الملف في البحث غير المنشور ولا تنشئ بطاقة project عامة من عنصر Feed ذي kind=news.",
+    "أظهر أن قياس الأداء 20× ادعاء maintainer ولم يُختبر في نَبض.",
+    "لا تقترح حذفًا آليًا؛ اجعل كل نتيجة مرشحة للمراجعة البشرية.",
+    "اعرض متطلبات Python/Rust والتكلفة المحلية والسحابية والبدائل والمصادر.",
+    "لا تحول testStatus=not_run إلى tested؛ لا توجد testEvidence."
+  ],
+  "sources": [
+    {
+      "title": "Unref GitHub repository",
+      "url": "https://github.com/Apakottur/unref"
+    },
+    {
+      "title": "README",
+      "url": "https://github.com/Apakottur/unref/blob/main/README.md"
+    },
+    {
+      "title": "Usage",
+      "url": "https://github.com/Apakottur/unref/blob/main/docs/usage.md"
+    },
+    {
+      "title": "Configuration",
+      "url": "https://github.com/Apakottur/unref/blob/main/docs/configuration.md"
+    },
+    {
+      "title": "FAQ",
+      "url": "https://github.com/Apakottur/unref/blob/main/docs/faq.md"
+    },
+    {
+      "title": "Rules",
+      "url": "https://github.com/Apakottur/unref/blob/main/docs/rules.md"
+    },
+    {
+      "title": "pyproject.toml",
+      "url": "https://github.com/Apakottur/unref/blob/main/pyproject.toml"
+    },
+    {
+      "title": "Cargo.toml",
+      "url": "https://github.com/Apakottur/unref/blob/main/Cargo.toml"
+    },
+    {
+      "title": "MIT License",
+      "url": "https://github.com/Apakottur/unref/blob/main/LICENSE"
+    }
+  ]
+}

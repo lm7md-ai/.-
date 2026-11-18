@@ -1,0 +1,532 @@
+{
+  "version": 1,
+  "batch": 7,
+  "of": 9,
+  "sourceMainSha": "65e69a2329235ee0cd0dfb8a7de70745f7671edc",
+  "reviewedAt": "2026-11-16T21:16:09+03:00",
+  "files": [
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-07-0842.json",
+      "appearances": 10,
+      "alreadyImported": 5,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 5,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-07-2338.json",
+      "appearances": 10,
+      "alreadyImported": 7,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 3,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-08-0005.json",
+      "appearances": 3,
+      "alreadyImported": 1,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 2,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-08-0035.json",
+      "appearances": 5,
+      "alreadyImported": 3,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 2,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-08-0554.json",
+      "appearances": 8,
+      "alreadyImported": 6,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 2,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-08-0846.json",
+      "appearances": 1,
+      "alreadyImported": 1,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-08-1453.json",
+      "appearances": 45,
+      "alreadyImported": 32,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 13,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-08-1510.json",
+      "appearances": 2,
+      "alreadyImported": 1,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 1,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-08-2115.json",
+      "appearances": 21,
+      "alreadyImported": 20,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 1,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-09-0843.json",
+      "appearances": 7,
+      "alreadyImported": 7,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-09-1246.json",
+      "appearances": 1,
+      "alreadyImported": 1,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-09-1446.json",
+      "appearances": 1,
+      "alreadyImported": 1,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+      "appearances": 12,
+      "alreadyImported": 2,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 10,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-10-0846.json",
+      "appearances": 2,
+      "alreadyImported": 2,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-11-10-2039-reconciled.json",
+      "appearances": 14,
+      "alreadyImported": 6,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 8,
+      "structuralInvalid": 0
+    }
+  ],
+  "totals": {
+    "appearances": 142,
+    "alreadyImported": 95,
+    "exactFeedNotImported": 0,
+    "idUrlMismatch": 0,
+    "outOfFeed": 47,
+    "structuralInvalid": 0
+  },
+  "pendingAppearances": [
+    {
+      "id": "2d31c1ba998345c38d",
+      "url": "https://github.com/smokeeaasd/flawless-ui-ux/releases/tag/v1.0.0",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-07-0842.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "4280bb93d180a01f62",
+      "url": "https://github.com/thesayfulla/pylings",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-07-0842.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "9aeac73058ac351bd9",
+      "url": "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-07-0842.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "da4db1176f76c5742a",
+      "url": "https://www.theverge.com/tech/1028813/apple-iphone-duo-optimized-apps",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-07-0842.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "31a9be451fbe1bf2f5",
+      "url": "https://www.engadget.com/2309285/youll-soon-be-able-to-text-alexa-to-shop-on-amazon/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-07-0842.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "f0247d2be6d23fda27",
+      "url": "https://www.anthropic.com/research/components-of-agent-memory",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-07-2338.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "96d96bc83625d43e64",
+      "url": "https://www.crusoe.ai/resources/newsroom/crusoe-wyoming-data-center-campus-update",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-07-2338.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "088c4eeb69d432a240",
+      "url": "https://www.engadget.com/2310117/snapchats-find-friends-feature-will-be-off-by-default-for-uks-under-18-users/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-07-2338.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "60724c835de1389a14",
+      "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-08-0005.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "ee860e0ea0ec35f12c",
+      "url": "https://www.engadget.com/2306188/solar-panel-efficiency-breakthrough-doubles-output/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-08-0005.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "20716899a73a29da44",
+      "url": "https://www.wired.com/story/kernel-panic-refrigeration-hacks-internet-of-things/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-08-0035.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "b521172828d6261302",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-08-0035.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "e0c8b4541e0b5e8be3",
+      "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-08-0554.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "7d6a970ab1ba21607a",
+      "url": "https://hunch.net/?p=13764006",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-08-0554.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "d32234f10741024509",
+      "url": "https://www.reuters.com/business/microsoft-is-winding-down-oracle-deal-rent-ai-cloud-capacity-bloomberg-news-2026-11-06/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-08-1453.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "bc00e1abe23c7a7329",
+      "url": "https://arxiv.org/abs/2610.21375",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-08-1453.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "b035143e2aa925bb9c",
+      "url": "[REDACTED: restricted-topic link]",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-08-1453.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "موضوع مقيّد؛ الرابط محجوب في التقرير."
+    },
+    {
+      "id": "9aeac73058ac351bd9",
+      "url": "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-08-1453.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "f0247d2be6d23fda27",
+      "url": "https://www.anthropic.com/research/components-of-agent-memory",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-08-1453.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "96d96bc83625d43e64",
+      "url": "https://www.crusoe.ai/resources/newsroom/crusoe-wyoming-data-center-campus-update",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-08-1453.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "088c4eeb69d432a240",
+      "url": "https://www.engadget.com/2310117/snapchats-find-friends-feature-will-be-off-by-default-for-uks-under-18-users/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-08-1453.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "60724c835de1389a14",
+      "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-08-1453.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "ee860e0ea0ec35f12c",
+      "url": "https://www.engadget.com/2306188/solar-panel-efficiency-breakthrough-doubles-output/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-08-1453.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "20716899a73a29da44",
+      "url": "https://www.wired.com/story/kernel-panic-refrigeration-hacks-internet-of-things/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-08-1453.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "b521172828d6261302",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-08-1453.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "e0c8b4541e0b5e8be3",
+      "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-08-1453.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "7d6a970ab1ba21607a",
+      "url": "https://hunch.net/?p=13764006",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-08-1453.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "b228101c3e9d88f964",
+      "url": "https://github.com/Video-Rebirth/hyperflow-h3-flash",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-08-1510.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "5be9cd76a11a8ae694",
+      "url": "https://maxxbench.unlap.ai/research/why-maxxbench/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-08-2115.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "86708699833d3a9796",
+      "url": "https://research.meta.ai/blog/muse-ember",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "5ef93d9981a0db1c3c",
+      "url": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "12c83389e580dec71d",
+      "url": "https://www.eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "a8ac24a5fed69e7112",
+      "url": "https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "a425346c085c7dcb99",
+      "url": "https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "0a2b694e15caf809f8",
+      "url": "https://www.cnx-software.com/2026/11/03/when-will-this-stop-the-raspberry-pi-5-16gb-sbc-now-sells-for-385/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "cec6ab6c90d6d9e9c1",
+      "url": "https://github.com/ikey4u/zebkit",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "fb9de46b88c3faa779",
+      "url": "https://e-means.github.io/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "3c86ca6a06f60e03f0",
+      "url": "https://postalpro.usps.com/zcb",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "1addf27c71831a1839",
+      "url": "https://yappologistic.github.io/CUI/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "86708699833d3a9796",
+      "url": "https://research.meta.ai/blog/muse-ember",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-2039-reconciled.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "5ef93d9981a0db1c3c",
+      "url": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-2039-reconciled.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "12c83389e580dec71d",
+      "url": "https://www.eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-2039-reconciled.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "a8ac24a5fed69e7112",
+      "url": "https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-2039-reconciled.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "0a2b694e15caf809f8",
+      "url": "https://www.cnx-software.com/2026/11/03/when-will-this-stop-the-raspberry-pi-5-16gb-sbc-now-sells-for-385/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-2039-reconciled.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "fb9de46b88c3faa779",
+      "url": "https://e-means.github.io/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-2039-reconciled.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "3c86ca6a06f60e03f0",
+      "url": "https://postalpro.usps.com/zcb",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-2039-reconciled.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "1addf27c71831a1839",
+      "url": "https://yappologistic.github.io/CUI/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-11-10-2039-reconciled.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    }
+  ],
+  "expiryAssessment": "لا يوجد تاريخ نشر/انتهاء كافٍ لإثبات الانقضاء؛ Seen وحده لا يثبت ذلك.",
+  "validator": "structural-equivalent-only; official Python validator not run on historical incoming files"
+}

@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "unpublished-research-library",
+  "reviewedAt": "2026-11-18T18:36:04+03:00",
+  "sourceMainSha": "e03f5be1e158566ff057cd05eb774f00f2525366",
+  "metricsMeasuredAt": "2026-11-18T18:36:04+03:00",
+  "summary": {
+    "reviewed": 8,
+    "active": 8,
+    "archived": 0,
+    "readmeChanged": 1,
+    "licenseChanged": 0,
+    "exactFeedMatches": 1,
+    "outsideCurrentFeed": 7,
+    "projectsAddedToFeed": 0,
+    "projectTestsExecuted": 0
+  },
+  "projects": [
+    {
+      "repo": "patchy631/ai-engineering-hub",
+      "name": "AI Engineering Hub",
+      "archived": false,
+      "license": "MIT",
+      "licenseVerified": true,
+      "readmeSha": "6c65ab12125814c5233f873c4c1af2765ff87d51",
+      "readmeChanged": false,
+      "stars": 41990,
+      "forks": 6714,
+      "openIssues": 139,
+      "lastPushedAt": "2026-11-01T04:39:16Z",
+      "inCurrentFeed": true,
+      "feedId": "fe0e6bfdbdd5822139",
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "googleapis/python-genai",
+      "name": "Google Gen AI SDK for Python",
+      "archived": false,
+      "license": "Apache-2.0",
+      "licenseVerified": true,
+      "readmeSha": "8faf7f0d715072fccdc0e5fba0a5d7aa74f78d53",
+      "readmeChanged": false,
+      "stars": 4078,
+      "forks": 1064,
+      "openIssues": 386,
+      "lastPushedAt": "2026-11-18T09:26:26Z",
+      "inCurrentFeed": false,
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "Millillion/lasm",
+      "name": "Lasm",
+      "archived": false,
+      "license": "MIT",
+      "licenseVerified": true,
+      "readmeSha": "f29c541dc7657fa87e718718e8fcda28cf6b3112",
+      "readmeChanged": true,
+      "stars": 107,
+      "forks": 6,
+      "openIssues": 9,
+      "lastPushedAt": "2026-11-18T11:33:07Z",
+      "version": "0.10.0",
+      "inCurrentFeed": false,
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "microsoft/markitdown",
+      "name": "MarkItDown",
+      "archived": false,
+      "license": "MIT",
+      "licenseVerified": true,
+      "readmeSha": "af858038fd380b187e2928cfbb8b9802c4912d5b",
+      "readmeChanged": false,
+      "stars": 196519,
+      "forks": 14877,
+      "openIssues": 813,
+      "lastPushedAt": "2026-11-07T00:14:01Z",
+      "inCurrentFeed": false,
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "yc-software/minecraft-agent-harness",
+      "name": "Minecraft Agent Harness",
+      "archived": false,
+      "license": "MIT",
+      "licenseVerified": true,
+      "readmeSha": "50b5a20eeb3a6f8268d06d244d858c4464c81eba",
+      "readmeChanged": false,
+      "stars": 226,
+      "forks": 30,
+      "openIssues": 1,
+      "lastPushedAt": "2026-10-29T20:30:45Z",
+      "inCurrentFeed": false,
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "NVIDIA/OpenShell",
+      "name": "NVIDIA OpenShell",
+      "archived": false,
+      "license": "Apache-2.0",
+      "licenseVerified": true,
+      "readmeSha": "ea31d968136ad93ac659552697d03f0e473301d4",
+      "readmeChanged": false,
+      "stars": 21763,
+      "forks": 2133,
+      "openIssues": 742,
+      "lastPushedAt": "2026-11-18T15:41:49Z",
+      "inCurrentFeed": false,
+      "testStatus": "not_run",
+      "metricsNote": "GitHub API pushed_at is slightly ahead of the run clock; recorded as reported metadata, not used to infer chronology."
+    },
+    {
+      "repo": "pydantic/pydantic-ai",
+      "name": "Pydantic AI",
+      "archived": false,
+      "license": "MIT",
+      "licenseVerified": true,
+      "readmeSha": "3774a1843c1b5256cea465c3c361390d668fdf6b",
+      "readmeChanged": false,
+      "stars": 21273,
+      "forks": 3205,
+      "openIssues": 1859,
+      "lastPushedAt": "2026-11-18T15:42:24Z",
+      "inCurrentFeed": false,
+      "testStatus": "not_run",
+      "metricsNote": "GitHub API pushed_at is slightly ahead of the run clock; recorded as reported metadata, not used to infer chronology."
+    },
+    {
+      "repo": "astral-sh/uv",
+      "name": "uv",
+      "archived": false,
+      "license": "MIT OR Apache-2.0",
+      "licenseVerified": true,
+      "readmeSha": "66caaf9ccc62add8c63de8e71184c9b7677377ad",
+      "readmeChanged": false,
+      "stars": 92148,
+      "forks": 3918,
+      "openIssues": 3075,
+      "lastPushedAt": "2026-11-18T00:25:55Z",
+      "inCurrentFeed": false,
+      "testStatus": "not_run",
+      "licenseFiles": [
+        "LICENSE-MIT",
+        "LICENSE-APACHE"
+      ]
+    }
+  ],
+  "decision": "لم يظهر مرشح موثق يتفوق على المكتبة الحالية لإضافته إلى Feed. AI Engineering Hub هو المشروع الوحيد من الثمانية المطابق للتغذية الحالية؛ بقية الأبحاث تبقى غير منشورة. Lasm خارج Feed، لذا حُفظ تحديثه كبحث مستقل. لم تُضف بطاقات مشاريع جديدة.",
+  "developerHandoff": [
+    "اعرض الكتالوج بوصفه مكتبة بحثية منفصلة غير منشورة، ولا تخلط عناصره مع بطاقات Feed العامة.",
+    "لكل مشروع اعرض حالة active/archived/unverified، رابط المستودع الرسمي، الترخيص ودرجة التحقق، النجوم والفروع مع measuredAt ومصدر القياس.",
+    "أظهر overview وrequirements وquickStart وcosts وlocalVsCloud وalternatives ومصادرها.",
+    "اعرض testStatus وtestEvidence بوضوح؛ not_run لا يتحول إلى tested بسبب وجود CI في المستودع الأصلي.",
+    "لكل اقتراح اعرض title وproblem وapproach وstack وsteps وmetric وdifficulty كتقدير وrisks وsources.",
+    "احفظ ترتيب الأفكار وروابطها الحالية؛ لا تستبدل فكرة محفوظة بموضع آخر ولا تملأ العدد بحشو.",
+    "أظهر تاريخ القياس بجانب النجوم والفروع؛ لا تعرضها بوصفها نموًا يوميًا."
+  ],
+  "sources": [
+    {
+      "title": "patchy631/ai-engineering-hub — GitHub repository",
+      "url": "https://github.com/patchy631/ai-engineering-hub"
+    },
+    {
+      "title": "googleapis/python-genai — GitHub repository",
+      "url": "https://github.com/googleapis/python-genai"
+    },
+    {
+      "title": "Millillion/lasm — GitHub repository",
+      "url": "https://github.com/Millillion/lasm"
+    },
+    {
+      "title": "microsoft/markitdown — GitHub repository",
+      "url": "https://github.com/microsoft/markitdown"
+    },
+    {
+      "title": "yc-software/minecraft-agent-harness — GitHub repository",
+      "url": "https://github.com/yc-software/minecraft-agent-harness"
+    },
+    {
+      "title": "NVIDIA/OpenShell — GitHub repository",
+      "url": "https://github.com/NVIDIA/OpenShell"
+    },
+    {
+      "title": "pydantic/pydantic-ai — GitHub repository",
+      "url": "https://github.com/pydantic/pydantic-ai"
+    },
+    {
+      "title": "astral-sh/uv — GitHub repository",
+      "url": "https://github.com/astral-sh/uv"
+    },
+    {
+      "title": "uv MIT license",
+      "url": "https://github.com/astral-sh/uv/blob/main/LICENSE-MIT"
+    },
+    {
+      "title": "uv Apache-2.0 license",
+      "url": "https://github.com/astral-sh/uv/blob/main/LICENSE-APACHE"
+    }
+  ]
+}

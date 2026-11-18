@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "not_published_pending_report",
+  "reviewedAt": "2026-11-19T00:05:34+03:00",
+  "sourceMainSha": "5433ee1e8afba87941ed7f6c57fad38f70bcde1c",
+  "currentData": {
+    "feedCount": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialCount": 1059,
+    "seenCount": 5908,
+    "editorialExactCurrentFeed": 141,
+    "editorialUrlMismatch": 0,
+    "editorialAbsentFromCurrentFeed": 918
+  },
+  "mainIncomingAudit": {
+    "files": 133,
+    "appearances": 1352,
+    "previouslyImportedAppearances": 1217,
+    "pendingAppearances": 135,
+    "pendingUniquePairs": 97,
+    "pendingDuplicateAppearances": 38,
+    "all133BlobShasUnchangedSincePreviousAudit": true,
+    "editorialBlobUnchangedSincePreviousAudit": true,
+    "recordsFiles": [
+      "editorial/pending/current-feed-revalidation-2026-11-18-2043-part-1.json",
+      "editorial/pending/current-feed-revalidation-2026-11-18-2043-part-2.json"
+    ]
+  },
+  "prIncomingAudit": {
+    "files": 8,
+    "appearances": 140,
+    "uniquePairs": 62,
+    "duplicateAppearances": 78,
+    "exactCurrentFeed": 47,
+    "absentFromFeed": 15,
+    "urlMismatches": 0,
+    "perFile": [
+      {
+        "file": "nabdh-news-2026-11-16-2116.json",
+        "appearances": 12,
+        "feedExact": 12,
+        "feedAbsent": 0
+      },
+      {
+        "file": "nabdh-news-2026-11-18-0001.json",
+        "appearances": 10,
+        "feedExact": 5,
+        "feedAbsent": 5
+      },
+      {
+        "file": "nabdh-news-2026-11-18-0246.json",
+        "appearances": 12,
+        "feedExact": 7,
+        "feedAbsent": 5
+      },
+      {
+        "file": "nabdh-news-2026-11-18-0846.json",
+        "appearances": 10,
+        "feedExact": 6,
+        "feedAbsent": 4
+      },
+      {
+        "file": "nabdh-news-2026-11-18-0925-reconciled.json",
+        "appearances": 41,
+        "feedExact": 30,
+        "feedAbsent": 11
+      },
+      {
+        "file": "nabdh-news-2026-11-18-1836-matches.json",
+        "appearances": 37,
+        "feedExact": 30,
+        "feedAbsent": 7
+      },
+      {
+        "file": "nabdh-news-2026-11-18-2043.json",
+        "appearances": 8,
+        "feedExact": 7,
+        "feedAbsent": 1
+      },
+      {
+        "file": "nabdh-news-2026-11-18-2338.json",
+        "appearances": 10,
+        "feedExact": 10,
+        "feedAbsent": 0
+      }
+    ]
+  },
+  "prEditorialReconciliation": {
+    "before": 1114,
+    "main": 1059,
+    "extraRecords": 55,
+    "exactCurrentFeed": 47,
+    "absentCurrentFeed": 8,
+    "urlMismatches": 0,
+    "excludedStaleRecords": [
+      {
+        "id": "6ca6a1ab86c20b3043",
+        "url": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
+        "titleAr": "قادة بايدو وشاومي يحذرون من اتساع الفجوة بين ضجة الذكاء الاصطناعي وعوائده",
+        "decision": "exclude_from_current_editorial",
+        "expiryStatus": "not_proven_expired"
+      },
+      {
+        "id": "76dc46fd98b03354ed",
+        "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
+        "titleAr": "تقييم FrontierHarness: معظم تكلفة تشغيل وكلاء البرمجة ذهبت إلى المحاولات غير الناجحة",
+        "decision": "exclude_from_current_editorial",
+        "expiryStatus": "not_proven_expired"
+      },
+      {
+        "id": "a5049c2e05f8ff3b30",
+        "url": "https://www.engadget.com/2319013/xiaomi-18-pro-vibe-coded-apps-launch-hands-on/",
+        "titleAr": "شاومي تعرض إنشاء تطبيقات صغيرة للشاشة الخلفية في هاتف 18 Pro بالأوامر النصية",
+        "decision": "exclude_from_current_editorial",
+        "expiryStatus": "not_proven_expired"
+      },
+      {
+        "id": "c74e8eacd8b57733cc",
+        "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+        "titleAr": "Microsoft تقدم MAI Code 2 ونسخة Flash لمهام البرمجة اليومية",
+        "decision": "exclude_from_current_editorial",
+        "expiryStatus": "not_proven_expired"
+      },
+      {
+        "id": "85e628cc5ceac4060a",
+        "url": "https://hy.tencent.ai/research/hy4-flash",
+        "titleAr": "Tencent تكشف Hy4 Flash بنموذج كبير وتكلفة API منخفضة",
+        "decision": "exclude_from_current_editorial",
+        "expiryStatus": "not_proven_expired"
+      },
+      {
+        "id": "3a4d3301c790ce8ec0",
+        "url": "https://github.com/jquery/jquery/releases/tag/4.1.0",
+        "titleAr": "jQuery 4.1.0 يصل مع إصلاح ReDoS وتحسينات في المحددات وAJAX",
+        "decision": "exclude_from_current_editorial",
+        "expiryStatus": "not_proven_expired"
+      },
+      {
+        "id": "ad73217d827dccc4fc",
+        "url": "https://developer.apple.com/system-status/",
+        "titleAr": "توقف بعض خدمات Apple بعد تحديث داخلي وتقول الشركة إنه لم يكن هجومًا إلكترونيًا",
+        "decision": "exclude_from_current_editorial",
+        "expiryStatus": "not_proven_expired"
+      },
+      {
+        "id": "233f4988e8c3601e84",
+        "url": "https://newsletter.posthog.com/p/decision-models",
+        "titleAr": "PostHog تشرح كيف تستخدم نماذج القرار الصغيرة لتقليل استدعاءات LLM المكلفة",
+        "decision": "exclude_from_current_editorial",
+        "expiryStatus": "not_proven_expired"
+      }
+    ]
+  },
+  "combinedPending": {
+    "uniquePairs": 104,
+    "appearances": 146,
+    "duplicateAppearances": 42,
+    "exactCurrentFeed": 0,
+    "absentCurrentFeed": 104,
+    "urlMismatches": 0,
+    "confirmedExpiredEvents": 1,
+    "expiryUnknown": 103,
+    "additionalPairs": [
+      "74a4e87de084a0a8b9",
+      "8331a3aa13cbf4dc7e",
+      "67dee7074b335d74dc",
+      "9a0aa0e71b450c03e2",
+      "4353c1c4ce1b00e72f",
+      "cd3f9f2cc97c05f9f5",
+      "20b32bc10151119b84"
+    ],
+    "recordsFiles": [
+      "editorial/pending/current-feed-revalidation-2026-11-18-2043-part-1.json",
+      "editorial/pending/current-feed-revalidation-2026-11-18-2043-part-2.json",
+      "editorial/pending/pr-110-extra-incoming-2026-11-18-2043.json"
+    ],
+    "decision": "Do not import until exact ID and URL reappear in current Feed."
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "officialStatus": "active repository; Apache-2.0; last pushed 2026-11-18T21:04:56Z",
+      "source": "https://github.com/NVIDIA/OpenShell",
+      "decision": "keep pending; no exact current Feed pair"
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/23/canva-craft-image-model/",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "officialStatus": "Canva official page confirms Craft and API availability; rankings remain Canva-reported",
+      "sources": [
+        "https://www.canva.com/ai-research/craft-api/",
+        "https://www.canva.com/ai-research/"
+      ],
+      "decision": "keep pending; no exact current Feed pair"
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-ai-agents-sign-in/",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "officialStatus": "official launch and support docs confirm opt-in; individual/family 1Password.com only, with supported-agent and platform limits",
+      "sources": [
+        "https://1password.com/blog/1password-for-ai-agents",
+        "https://support.1password.com/1password-for-agents/"
+      ],
+      "decision": "keep pending; no exact current Feed pair"
+    }
+  ],
+  "decision": {
+    "importFromExistingPr": 47,
+    "excludeStalePrRecords": 8,
+    "importNewNews": 5,
+    "totalStructuralAdditions": 52,
+    "doNotImportPendingPairs": 104,
+    "identityReplacementByTitle": 0
+  }
+}

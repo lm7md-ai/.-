@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-16T21:16:09+03:00",
+  "sourceMainSha": "65e69a2329235ee0cd0dfb8a7de70745f7671edc",
+  "publicationStatus": "research-only-not-published",
+  "catalog": {
+    "baseFile": "editorial/library/catalog-2026-11-09-0843.json",
+    "latestAddendum": "editorial/library/catalog-addendum-2026-11-14-0247.json",
+    "snapshotAt": "2026-11-14T02:47:48+03:00",
+    "total": 73,
+    "activeAtSnapshot": 71,
+    "archivedAtSnapshot": 2,
+    "projectFeedMembersAtSnapshot": 17,
+    "outsideCurrentFeedAtSnapshot": 56,
+    "unverifiedMembership": 1,
+    "licensesNeedingUpstreamVerificationAtSnapshot": 10,
+    "addedProject": "Cherry Studio"
+  },
+  "currentFeed": {
+    "projectCards": 100,
+    "projectCardsWithEditorial": 100,
+    "unrichedProjectCards": 0,
+    "newProjectCardsAdded": 0
+  },
+  "publicResearch": {
+    "file": "site/data/research.json",
+    "deepReviewedProjects": 3,
+    "ideasPerProject": 30,
+    "totalCuratedIdeas": 90,
+    "lastReviewed": "2026-10-24",
+    "projects": [
+      "firecrawl/firecrawl",
+      "nousresearch/hermes-agent",
+      "huggingface/transformers"
+    ]
+  },
+  "previousEight": {
+    "file": "editorial/library/previous-eight-refresh-2026-11-16-2116.json",
+    "reviewed": 8,
+    "active": 8,
+    "archived": 0,
+    "measuredAt": "2026-11-16T21:16:09+03:00",
+    "metricsSource": "GitHub REST repository metadata; README and LICENSE content SHAs checked",
+    "testStatus": "not_run"
+  },
+  "decision": "لم يُضف مشروع جديد في هذه الدورة: بطاقات المشاريع المئة في Feed الحالي مثرية بالفعل، ولم يظهر مرشح جديد موثق يتفوق على عناصر المكتبة الحالية. المكتبة التاريخية 73 مشروعًا بحسب آخر إضافة مؤرخة في 14 نوفمبر؛ أرقامها ليست قياسًا جديدًا شاملًا في هذه الدورة.",
+  "developerHandoff": [
+    "اعرض الكتالوج بوصفه مكتبة بحثية منفصلة غير منشورة، ولا تخلط عناصره مع بطاقات Feed العامة.",
+    "لكل مشروع اعرض حالة active/archived/unverified، رابط المستودع الرسمي، الترخيص ودرجة التحقق، النجوم والفروع مع measuredAt ومصدر القياس.",
+    "أظهر overview وrequirements وquickStart وcosts وlocalVsCloud وalternatives ومصادرها.",
+    "اعرض testStatus وtestEvidence بوضوح؛ not_run لا يتحول إلى tested بسبب وجود CI في المستودع الأصلي.",
+    "لكل اقتراح اعرض title وproblem وapproach وstack وsteps وmetric وdifficulty كتقدير وrisks وsources.",
+    "احفظ ترتيب الأفكار وروابطها الحالية؛ لا تستبدل فكرة محفوظة بموضع آخر ولا تملأ العدد بحشو.",
+    "أظهر تاريخ القياس بجانب النجوم والفروع؛ لا تعرضها بوصفها نموًا يوميًا."
+  ],
+  "sources": [
+    {
+      "title": "Historical project catalog",
+      "url": "https://github.com/lm7md-ai/.-/blob/main/editorial/library/catalog-2026-11-09-0843.json"
+    },
+    {
+      "title": "Latest catalog addendum",
+      "url": "https://github.com/lm7md-ai/.-/blob/main/editorial/library/catalog-addendum-2026-11-14-0247.json"
+    },
+    {
+      "title": "Public research file",
+      "url": "https://github.com/lm7md-ai/.-/blob/main/site/data/research.json"
+    },
+    {
+      "title": "Previous eight projects refresh",
+      "url": "https://github.com/lm7md-ai/.-/blob/main/editorial/library/previous-eight-refresh-2026-11-15-1210.json"
+    }
+  ]
+}
