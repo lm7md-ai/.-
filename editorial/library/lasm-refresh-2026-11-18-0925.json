@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "research-only-not-published",
+  "reviewedAt": "2026-11-18T09:25:22+03:00",
+  "repo": "Millillion/lasm",
+  "name": "Lasm",
+  "archived": false,
+  "license": "MIT",
+  "starterTemplatesAndExamplesLicense": "MIT-0",
+  "licenseVerified": true,
+  "metrics": {
+    "stars": 107,
+    "forks": 6,
+    "openIssues": 11,
+    "lastPushedAt": "2026-11-18T06:20:40Z",
+    "measuredAt": "2026-11-18T09:25:22+03:00"
+  },
+  "version": {
+    "current": "@lasm/cli 0.9.0",
+    "releaseTag": "v0.9.0",
+    "releasePublishedAt": "2026-11-18T00:16:34Z",
+    "note": "The release notes describe the first Stage 0 API release with breaking changes. npm registry version was not independently queried."
+  },
+  "overview": "Lasm يحوّل Lean 4 إلى WebAssembly ويستهدف Node.js وBun وDeno وCloudflare Workers وVercel وNetlify وDeno Deploy وSupabase وAWS Lambda وAzure Functions وGoogle Cloud Functions وFastly وWASI والمتصفح. الإصدار 0.9.0 يثبت واجهات Stage 0 قبل 1.0، ويضيف Node.serve ومجموعات bindings موسعة، لكنه يتضمن تغييرات كاسرة في معالجات function platforms وLasm.UI وواجهات JS المولدة وCLI.",
+  "requirements": "Lean 4.35.0 تحديدًا. أدوات البناء: Node.js 24+ أو Bun 1.4.4 أو Deno 2.9.6. بيئات التطوير المدعومة Linux x64/arm64 مع glibc 2.34+، macOS x64/arm64، وWindows x64. تطبيقات Node تحتاج 512MB على الأقل و1GB موصى به للإنتاج. أول بناء ينزّل نحو 250–275MB من الأدوات. لا يحتاج المشروع إلى elan للبناء بحسب README.",
+  "quickStart": "لإنشاء تطبيق Hono: npm create @lasm@latest my-app -- --template hono ثم cd my-app && npm install && npm run dev. لمشروع قائم: npm install -D @lasm/cli@0.9.0. قبل ترقية مشروع 0.8.x راجع docs/release/0.9.0-notes.md لأن نطاق التغييرات كاسر ولا تلتقطه ^0.8.0.",
+  "costs": "ترخيص MIT للمترجم وMIT-0 للقوالب والأمثلة؛ لا رسوم ترخيص. أول بناء ينزّل 250–275MB من الأدوات. الاستضافة والحوسبة السحابية ورسوم حسابات المزودين منفصلة. أرقام ملف BENCHMARKS الحالي مرتبطة بمرشح تجريبي 0.1.0-experimental.44232261158 ولا ينبغي نسبها إلى الإصدار 0.9.0.",
+  "localVsCloud": "التطوير والاختبارات محليًا عبر Node/Bun/Deno ومحاكيات مثل wrangler dev وViceroy وwasmtime وPlaywright. وثائق الاختبار تميز المحاكيات المحلية عن النشر الحقيقي؛ CI لا ينشر إلى حسابات سحابية فعلية. للنشر الفعلي يلزم CLI وحساب المزود المناسب، وتختلف متطلبات المنصة.",
+  "alternatives": "Node.js/Hono إذا لم تكن براهين Lean أو WebAssembly مطلوبة. Rust أو AssemblyScript أو TypeScript/Wasm إذا كانت الأولوية لمخرجات Wasm دون منظومة Lean. Lean native إذا لم تكن بيئة JS/Wasm مطلوبة.",
+  "improvements": [
+    {
+      "title": "مساعد ترحيل آلي من Lasm 0.8 إلى 0.9",
+      "problem": "الإصدار 0.9.0 يغير طريقة تصدير handlers للمنصات الوظيفية ويحذف أو يعيد تنظيم واجهات وCLI؛ وقد تتعطل مشاريع قائمة عند الترقية.",
+      "approach": "فاحص ثابت يقرأ ملفات Lean وpackage.json وملفات النشر ويولد تقريرًا بالأنماط القديمة وملاحظات الترحيل ذات الصلة، دون تعديل تلقائي غير مراجع.",
+      "stack": "Node.js 24 / TypeScript / parser أو قواعد AST / Vitest / JSON reports",
+      "steps": [
+        "جمع أنماط 0.8 المتأثرة من ملاحظات 0.9.0",
+        "بناء fixtures صغيرة لكل نمط قديم وجديد",
+        "فحص ملفات المشروع وإظهار مواضع الاشتباه",
+        "ربط كل نتيجة بملاحظة ترحيل رسمية",
+        "إضافة وضع اقتراح patch منفصل يتطلب مراجعة بشرية"
+      ],
+      "metric": "نسبة الأنماط المعروفة المكتشفة مع قياس الإيجابيات الكاذبة على مجموعة مشاريع اختبارية",
+      "difficulty": "متوسط إلى مرتفع — يحتاج قواعد AST واختبارات fixtures",
+      "risks": "قد يخطئ الفاحص في المشاريع ذات التخصيصات؛ لا ينبغي تطبيق تحويل آلي دون اختبارات المشروع.",
+      "sources": [
+        {
+          "title": "Lasm 0.9.0 release notes",
+          "url": "https://github.com/Millillion/lasm/blob/main/docs/release/0.9.0-notes.md"
+        },
+        {
+          "title": "Lasm README",
+          "url": "https://github.com/Millillion/lasm/blob/main/README.md"
+        }
+      ]
+    },
+    {
+      "title": "مصفوفة قدرات واختبارات أهداف النشر",
+      "problem": "وجود اختبار محلي لكل هدف لا يعني تطابق السلوك مع بيئة الإنتاج السحابية.",
+      "approach": "ملف capabilities موحد يربط كل target بالواجهات المتاحة ومستوى دليل الاختبار ونوع المحاكي وحدود البيئة.",
+      "stack": "Lean / Node.js / Bun / Deno / GitHub Actions / JSON / Playwright / wrangler / wasmtime",
+      "steps": [
+        "استخراج targets والواجهات المعلنة من README والوثائق",
+        "تسجيل runtime والمحاكي وإصدار كل أداة",
+        "ربط كل قدرة باختبار تكافؤ أو اختبار smoke محدد",
+        "تمييز المحاكاة المحلية عن اختبار حساب سحابي حقيقي",
+        "توليد تقرير قابل للمقارنة بين الإصدارات"
+      ],
+      "metric": "نسبة targets التي لها دليل اختبار موثق ومحدد الإصدار مع فصل المحاكاة عن الإنتاج",
+      "difficulty": "مرتفع — يحتاج صيانة مصفوفة منصات متعددة",
+      "risks": "قد تتغير واجهات المنصات والمحاكيات؛ لا يعوض التقرير اختبار نشر حقيقي.",
+      "sources": [
+        {
+          "title": "Lasm testing methodology",
+          "url": "https://github.com/Millillion/lasm/blob/main/docs/TESTING.md"
+        },
+        {
+          "title": "Lasm deployment docs",
+          "url": "https://github.com/Millillion/lasm/blob/main/docs/deploy/README.md"
+        }
+      ]
+    },
+    {
+      "title": "مقارن أداء خاص بالإصدار والهدف",
+      "problem": "قد تُنسب أرقام مرشح تجريبي إلى إصدار مستقر أو تقارن بيئات تشغيل غير متطابقة.",
+      "approach": "إلزام كل benchmark بحقل releaseTag وcommit وruntime وrunner وraw-data URL، مع رفض المقارنة عند اختلاف البيئة.",
+      "stack": "Node.js / JSON Schema / GitHub Actions / benchmark harness",
+      "steps": [
+        "تعريف مخطط metadata للقياسات",
+        "ربط كل نتيجة بـcommit وtag وrunner",
+        "فصل candidate عن stable release",
+        "إظهار الذاكرة ووقت البدء وحجم الحزمة معًا",
+        "إنشاء مقارنة فقط بين قياسات قابلة للمقارنة"
+      ],
+      "metric": "نسبة القياسات المنشورة التي تحمل provenance كاملًا ولا تخلط candidate مع stable",
+      "difficulty": "متوسط — يتطلب ضبط مخطط البيانات وسير نشر القياسات",
+      "risks": "الاختبارات القصيرة قد تتأثر بضوضاء المضيف؛ يجب نشر التشتت والبيانات الخام.",
+      "sources": [
+        {
+          "title": "Lasm benchmarks",
+          "url": "https://github.com/Millillion/lasm/blob/main/docs/BENCHMARKS.md"
+        },
+        {
+          "title": "Lasm README",
+          "url": "https://github.com/Millillion/lasm/blob/main/README.md"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "لوحة مقارنة توافق Lean/Wasm عبر runtimes",
+      "problem": "يصعب على المطور اختيار الهدف الأنسب من دون رؤية الفروقات العملية.",
+      "approach": "واجهة بحث تعرض دعم APIs ومستوى الاختبار والقيود لكل runtime مع روابط الأدلة.",
+      "stack": "TypeScript / JSON / static site / GitHub Actions",
+      "steps": [
+        "تعريف مخطط target موحد",
+        "جمع قدرات Node وBun وDeno وWorkers وWASI والمتصفح",
+        "ربط كل قدرة بمصدرها واختبارها",
+        "إظهار الفجوات والمحاكاة بوضوح",
+        "نشر لوحة ثابتة قابلة للتحديث"
+      ],
+      "metric": "اكتمال بيانات targets وتاريخ آخر تحقق لكل قدرة",
+      "difficulty": "متوسط — يعتمد على جودة البيانات المصدرية",
+      "risks": "قد تصبح اللوحة قديمة إذا تغيرت runtimes أو الوثائق.",
+      "sources": [
+        {
+          "title": "Lasm README",
+          "url": "https://github.com/Millillion/lasm/blob/main/README.md"
+        },
+        {
+          "title": "Lasm testing docs",
+          "url": "https://github.com/Millillion/lasm/blob/main/docs/TESTING.md"
+        }
+      ]
+    },
+    {
+      "title": "حزمة أمثلة Lean لخدمات الحافة",
+      "problem": "تحتاج الفرق إلى أمثلة صغيرة تشرح قيود WASI وWorkers وfunction platforms بعد 0.9.0.",
+      "approach": "مستودع أمثلة مستقل لكل منصة مع handler بسيط واختبار محلي ودليل نشر منفصل.",
+      "stack": "Lean 4 / Lasm CLI / Node.js / wrangler / wasmtime",
+      "steps": [
+        "اختيار ثلاث منصات ذات قيود مختلفة",
+        "كتابة مثال handler صغير لكل منصة",
+        "إضافة اختبار محلي قابل للتكرار",
+        "توثيق حدود APIs والذاكرة",
+        "إضافة دليل نشر اختياري لا يخلط المحاكاة بالإنتاج"
+      ],
+      "metric": "عدد الأمثلة التي تُبنى وتنجح اختبارات محاكاتها في CI",
+      "difficulty": "متوسط",
+      "risks": "الأمثلة تحتاج تحديثًا مع تغير CLI وواجهات المنصات.",
+      "sources": [
+        {
+          "title": "Lasm deployment docs",
+          "url": "https://github.com/Millillion/lasm/blob/main/docs/deploy/README.md"
+        },
+        {
+          "title": "Lasm 0.9.0 release notes",
+          "url": "https://github.com/Millillion/lasm/blob/main/docs/release/0.9.0-notes.md"
+        }
+      ]
+    }
+  ],
+  "religious": [],
+  "testStatus": "not_run",
+  "testEvidence": null,
+  "notes": [
+    "لم تُشغّل npm test أو npm run proofs أو اختبارات Playwright في هذه المراجعة.",
+    "إصدار npm لم يُستعلم عنه مباشرة؛ تم التحقق من GitHub release v0.9.0 وREADME وpackage.json.",
+    "ملف BENCHMARKS يعرض مرشحًا تجريبيًا 0.1.0-experimental؛ لم تُنسب أرقامه إلى 0.9.0."
+  ],
+  "sources": [
+    {
+      "title": "Lasm README",
+      "url": "https://github.com/Millillion/lasm/blob/main/README.md"
+    },
+    {
+      "title": "Lasm 0.9.0 GitHub release",
+      "url": "https://github.com/Millillion/lasm/releases/tag/v0.9.0"
+    },
+    {
+      "title": "Lasm 0.9.0 release notes",
+      "url": "https://github.com/Millillion/lasm/blob/main/docs/release/0.9.0-notes.md"
+    },
+    {
+      "title": "Lasm testing methodology",
+      "url": "https://github.com/Millillion/lasm/blob/main/docs/TESTING.md"
+    },
+    {
+      "title": "Lasm deployment docs",
+      "url": "https://github.com/Millillion/lasm/blob/main/docs/deploy/README.md"
+    },
+    {
+      "title": "Lasm license",
+      "url": "https://github.com/Millillion/lasm/blob/main/LICENSE"
+    },
+    {
+      "title": "Lasm benchmarks",
+      "url": "https://github.com/Millillion/lasm/blob/main/docs/BENCHMARKS.md"
+    }
+  ]
+}
