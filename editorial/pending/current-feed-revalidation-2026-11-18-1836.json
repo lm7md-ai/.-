@@ -3,7 +3,7 @@
   "publicationStatus": "unpublished-pending-audit",
   "reviewedAt": "2026-11-18T18:36:04+03:00",
   "sourceMainSha": "e03f5be1e158566ff057cd05eb774f00f2525366",
-  "sourcePrHead": "1b6fa547008b1157f358298bc3414a10deb0cce0",
+  "sourcePrHead": "3ec00e05cddfa8b10afb136fa7afbd3be51c6ebe",
   "sourcePrBase": "04cdf1521adca0115a177ddb9880841b64cdb0d7",
   "mainSnapshot": {
     "feedGeneratedAt": "2026-11-18T11:36:41+00:00",
@@ -201,14 +201,71 @@
   ],
   "decision": "دمج 37 سجلًا فقط بعد مطابقة id وurl حرفيًا مع Feed الحالي. إبقاء 7 سجلات حديثة و95 زوجًا تاريخيًا في الانتظار. لا تُنشأ هويات بديلة بالعنوان.",
   "officialCommands": {
-    "pythonScriptsEditorialValidate": "not_run_locally; no Python execution environment in this run",
-    "pythonScriptsEditorialImport": "not_run_locally; equivalent merge semantics applied to a copy of current Main Editorial",
-    "pythonUnittestDiscover": "not_run_locally; awaiting PR Actions",
-    "structuralValidation": "passed for all 37 candidate records",
-    "mainFilesProtected": [
-      "site/data/feed.json",
-      "site/data/seen.json",
-      "site/data/status.json"
-    ]
+    "pythonScriptsEditorialValidate": {
+      "executedInGitHubActions": true,
+      "runId": 44340638096,
+      "result": "success",
+      "validatedEntries": 1096
+    },
+    "pythonScriptsEditorialImport": {
+      "executedInGitHubActions": false,
+      "result": "not_run; equivalent merge applied to current Main Editorial without replacing old records"
+    },
+    "pythonUnittestDiscover": {
+      "executedInGitHubActions": true,
+      "runId": 44340638096,
+      "result": "success",
+      "testsPassed": 30,
+      "testsFailed": 0
+    },
+    "nodeSyntaxChecks": {
+      "executedInGitHubActions": true,
+      "runId": 44340638096,
+      "result": "success",
+      "files": [
+        "site/app.js",
+        "site/ideas.js"
+      ]
+    },
+    "localPythonEnvironment": "unavailable in this run",
+    "structuralValidation": "37/37 new candidate records passed before commit"
+  },
+  "branchEditorialSha": "8e0dd2d81afc1c51dae323d8114c01e88b1f944a",
+  "deploymentArtifact": {
+    "mainWorkflowRunId": 44296233205,
+    "runUrl": "https://github.com/lm7md-ai/.-/actions/runs/44296233205",
+    "conclusion": "success",
+    "artifactId": 14423346974,
+    "artifactSizeBytes": 1369720,
+    "extracted": true,
+    "files": {
+      "editorial": {
+        "path": "data/editorial.json",
+        "items": 1059,
+        "gitBlobSha": "54ee37bae9daeed7556c243d7b6f8d1737e004f7",
+        "matchesMain": true
+      },
+      "feed": {
+        "path": "data/feed.json",
+        "items": 800,
+        "generatedAt": "2026-11-18T11:36:41+00:00",
+        "gitBlobSha": "ee786e1da5d933715da6ec83451a22b8a7f5d246",
+        "matchesMain": true
+      },
+      "seen": {
+        "path": "data/seen.json",
+        "ids": 5783,
+        "gitBlobSha": "5de71023e8b93e7f8a44f119373e338e487e97db",
+        "matchesMain": true
+      },
+      "status": {
+        "path": "data/status.json",
+        "state": "partial",
+        "gitBlobSha": "cc05279b9f3025dcf267d04257bf2cb4e2125317",
+        "matchesMain": true
+      }
+    },
+    "browserLiveFetch": "DisabledError; CDN direct verification unavailable",
+    "note": "The artifact is the exact uploaded Pages payload and matches Main files byte-for-byte; it contains 1,059 editorial entries, so the 37 new records in PR are not yet deployed."
   }
 }
