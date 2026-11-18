@@ -44343,83 +44343,6 @@
         }
       ]
     },
-    "9a0aa0e71b450c03e2": {
-      "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
-      "titleAr": "فريق Claude Code يشرح لماذا تحتاج وكلاء البرمجة إلى تحقق مستقل",
-      "summaryAr": "يعرض Addy Osmani ثلاث طبقات اختبار يراها الفريق مهمة لوكلاء البرمجة: اختبارات نهاية إلى نهاية لمسارات المستخدم، واختبارات خصائص تولّد حالات حدية، واختبارات تفاضلية تقارن النظام القديم بالجديد. ويذكر المقال أن نحو 90% من شيفرة الفريق تُكتب وتُراجع بواسطة Claude، وأن مقيّمًا منفصلًا حسّن النجاح في اختبار داخلي محدد بما يصل إلى 10 نقاط.",
-      "whyItMatters": "الوقائع: هذه أرقام وتجارب داخلية يذكرها فريق Claude Code. التحليل: لا يكفي أن ينشئ الوكيل اختباره بنفسه؛ ينبغي أن تكون معايير القبول مستقلة وقابلة لإعادة الإنتاج، وأن تجمع بين سلوك المستخدم والخصائص والحفاظ على التوافق.",
-      "audience": "مطورو البرمجيات ومهندسو الاختبار والفرق التي تستخدم وكلاء كتابة الشيفرة.",
-      "nextSteps": [
-        "ابدأ بمسار E2E واحد يمثل أهم وظيفة للمستخدم.",
-        "أضف اختبارات خصائص للثوابت والحالات الحدية.",
-        "استخدم اختبارًا تفاضليًا عند إعادة كتابة مكوّن مع توقع بقاء السلوك.",
-        "راقب تذبذب الاختبارات وزمنها حتى لا يتعلم الوكيل إعادة التشغيل بدل إصلاح السبب."
-      ],
-      "limitations": "المقال إرشاد هندسي من فريق Anthropic، وليس دراسة مستقلة تقارن كل أنواع الاختبار. نسب 90% وتحسن 10 نقاط تعود إلى وصف الشركة واختبار داخلي محدد ولا تعمم على كل مشروع.",
-      "reviewedAt": "2026-11-18T00:01:59+03:00",
-      "basis": "article",
-      "sources": [
-        {
-          "title": "Claude.dev — How the Claude Code team thinks about verification",
-          "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/"
-        }
-      ]
-    },
-    "4353c1c4ce1b00e72f": {
-      "url": "https://www.cnn.com/2026/11/16/us/united-airlines-outage",
-      "titleAr": "عطل تقني يؤخر رحلات يونايتد إيرلاينز ويبرز اعتماد الإقلاع على أنظمة الحساب",
-      "summaryAr": "قالت يونايتد إن عطلًا تقنيًا أوقف مغادرات رحلاتها لنحو ساعة، بينما وصفت AP الانقطاع بأنه تجاوز 90 دقيقة. ذكرت Reuters أن الخلل أصاب تطبيقات أطقم الطيران ومنع توافر بيانات الوزن النهائية لحسابات ما قبل الإقلاع؛ ولم تتأثر الرحلات الموجودة في الجو أو United Express، ولم تحدد الشركة السبب الجذري.",
-      "whyItMatters": "الوقائع: تقارير AP وReuters تذكر أن FlightAware رصدت مئات التأخيرات الإجمالية، لكنها لا تنسبها كلها إلى هذا العطل. التحليل: الأنظمة الرقمية في النقل جزء من سلسلة سلامة تشغيلية؛ لذا يجب أن تكون إجراءات التوقف والتحقق اليدوي والتعافي واضحة قبل عودة الخدمة.",
-      "audience": "مهندسو الأنظمة الحرجة وفرق الاعتمادية والمهتمون بتقنية النقل وسلاسل التشغيل.",
-      "nextSteps": [
-        "تابع بيان الشركة النهائي حول النظام المتأثر والسبب الجذري.",
-        "راجع كيف تتعامل الأنظمة الحرجة مع فقدان بيانات التشغيل دون تجاوز ضوابط السلامة.",
-        "افصل أرقام التأخير الكلية عن عدد الرحلات التي ثبت أن العطل تسبب فيها."
-      ],
-      "limitations": "تعذر فتح رابط CNN الموجود في Feed؛ بُني الملخص على تغطيتين أصليتين من AP وReuters للحادث نفسه. أرقام التأخير والإلغاء الإجمالية لا تحدد عدد الرحلات التي تسبب فيها العطل وحده.",
-      "reviewedAt": "2026-11-18T00:01:59+03:00",
-      "basis": "article",
-      "sources": [
-        {
-          "title": "Associated Press via ABC News — 1.5-hour-long system outage forces United Airlines to delay departing flights",
-          "url": "https://abcnews.com/Business/wireStory/15-hour-long-system-outage-forces-united-airlines-138190979"
-        },
-        {
-          "title": "Reuters — United Airlines says technology outage that delayed departures has been resolved",
-          "url": "https://www.reuters.com/world/us/united-airlines-says-technology-issue-affecting-departing-flights-2026-11-16/"
-        },
-        {
-          "title": "CNN item in Nabdh feed",
-          "url": "https://www.cnn.com/2026/11/16/us/united-airlines-outage"
-        }
-      ]
-    },
-    "cd3f9f2cc97c05f9f5": {
-      "url": "https://get.mem.ai/blog/mem-is-shutting-down",
-      "titleAr": "Mem تعلن إيقاف الخدمة في 15 يناير 2027 وتحدد موعدًا لتحويل الملاحظات إلى القراءة فقط",
-      "summaryAr": "أعلنت Mem رسميًا إنهاء الخدمة في 15 يناير 2027. ابتداءً من 18 ديسمبر 2026 ستصبح الملاحظات للقراءة فقط، مع استمرار إمكان قراءتها وتصديرها حتى موعد الإغلاق. تقول الشركة إنها أوقفت الفوترة، وتنشر دليل ترحيل إلى Apple Notes وNotion وGoogle Docs وObsidian وOneNote وغيرها.",
-      "whyItMatters": "الوقائع: هناك تاريخان مختلفان يجب عدم الخلط بينهما؛ 18 ديسمبر لوقف التحرير و15 يناير لانتهاء الوصول. التحليل: الاعتماد على تطبيق ملاحظات سحابي يجعل خطة التصدير والتحقق من المرفقات والمجموعات والتسجيلات جزءًا من استمرارية البيانات.",
-      "audience": "مستخدمو Mem والطلاب والفرق التي تحفظ ملاحظاتها واجتماعاتها في خدمات سحابية.",
-      "nextSteps": [
-        "صدّر نسخة من مكتبتك قبل 18 ديسمبر 2026.",
-        "افتح عينة من الملفات المصدرة وتحقق من المرفقات والمجموعات والنصوص.",
-        "اختر بديلًا واختبر الاستيراد قبل 15 يناير 2027.",
-        "احتفظ بنسخة مستقلة لا تعتمد على استمرار حساب Mem."
-      ],
-      "limitations": "المعلومات من إعلان الشركة الرسمي وقد تتغير تفاصيل أداة التصدير أو المهاجرات. لم أختبر عملية التصدير أو أتحقق من توافق كل نوع مرفق مع البدائل.",
-      "reviewedAt": "2026-11-18T00:01:59+03:00",
-      "basis": "article",
-      "sources": [
-        {
-          "title": "Mem — Mem is shutting down",
-          "url": "https://get.mem.ai/blog/mem-is-shutting-down"
-        },
-        {
-          "title": "Mem Help Center — Take your notes with you",
-          "url": "https://help.mem.ai/migration"
-        }
-      ]
-    },
     "9fe6d2ae73e55f52b8": {
       "url": "https://openai.com/index/our-first-phase-of-embedded-assessments",
       "titleAr": "OpenAI تعلن مرحلة أولى من التقييمات المستقلة المدمجة داخل مختبراتها",
@@ -44738,32 +44661,6 @@
         }
       ],
       "url": "https://www.microsoft.com/en-us/research/blog/tokeneconomizer-learning-from-experience-to-make-ai-coding-agents-more-efficient/",
-      "reviewedAt": "2026-11-18T02:46:49+03:00"
-    },
-    "20b32bc10151119b84": {
-      "id": "20b32bc10151119b84",
-      "basis": "article",
-      "titleAr": "آبل توسّع التحكم في صلاحيات التطبيقات والملفات ضمن macOS 27.3",
-      "summaryAr": "أضافت آبل في macOS 27.3 beta 2 إعدادات أكثر تفصيلًا للتحكم في Device Control وData Access وFull Disk Access. تشمل التغييرات فصل بعض أنواع الصلاحيات، وإظهار نطاق البيانات التي قد يصل إليها التطبيق، وإتاحة طلب الموافقة في كل مرة، مع مؤشر يوضح عندما يتحكم تطبيق في تطبيق آخر. هذه ضوابط عامة للتطبيقات وليست ميزة مخصصة للذكاء الاصطناعي، لكنها قد تؤثر في التطبيقات التي تشغّل وكلاء.",
-      "whyItMatters": "الخطوة تنقل أذونات التطبيقات من موافقة عامة قد لا يفهم المستخدم نطاقها إلى موافقات أكثر تحديدًا ووضوحًا. وهي مهمة عند تشغيل وكلاء يعملون كتطبيقات على الجهاز؛ لكن التحكم الجديد لا يلغي تلقائيًا الصلاحيات التي سبق منحها.",
-      "audience": "مستخدمو Mac ومطورو تطبيقات الذكاء الاصطناعي والمهتمون بالخصوصية.",
-      "nextSteps": [
-        "قراءة إعلان Apple Developer الرسمي لمعرفة الفروق بين الصلاحيات الجديدة.",
-        "مراجعة الأذونات الحالية بدل افتراض أن تحديث النظام يسحبها تلقائيًا.",
-        "على المطورين اختبار سلوك تطبيقاتهم عندما يُمنح الوصول إلى مجلدات أو تطبيقات محددة فقط."
-      ],
-      "limitations": "التغييرات ظهرت في نسخة macOS 27.3 التجريبية الثانية ولا يوجد موعد عام مؤكد في المقال. إعلان Apple يصف نظام صلاحيات عامًّا للتطبيقات، بينما يضعه Engadget في سياق وكلاء الذكاء الاصطناعي. الصلاحيات التي سبق منحها تبقى سارية.",
-      "sources": [
-        {
-          "title": "Apple Developer — Updates to Device Control and Data Access, and Full Disk Access in macOS",
-          "url": "https://developer.apple.com/news/?id=oqng0zjk"
-        },
-        {
-          "title": "Engadget — Apple adds new disk controls to prevent AI agents from running amok",
-          "url": "https://www.engadget.com/2318790/apple-adds-new-disk-controls-to-prevent-ai-agents-from-running-amok/"
-        }
-      ],
-      "url": "https://www.engadget.com/2318790/apple-adds-new-disk-controls-to-prevent-ai-agents-from-running-amok/",
       "reviewedAt": "2026-11-18T02:46:49+03:00"
     },
     "8f6af8c44a4a1bfb5d": {
