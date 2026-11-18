@@ -1,0 +1,196 @@
+{
+  "version": 2,
+  "reviewedAt": "2026-11-18T06:07:39+03:00",
+  "sourceMainSha": "04cdf1521adca0115a177ddb9880841b64cdb0d7",
+  "sourcePrHead": "367f2b8f5e91d9d6c77c9c1e7f1b8e0d1f6a4c2",
+  "mainSnapshot": {
+    "feedGeneratedAt": "2026-11-18T00:56:47+00:00",
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialEntries": 1059,
+    "seenIds": 5644,
+    "feedBlobCommit": "04cdf1521adca0115a177ddb9880841b64cdb0d7"
+  },
+  "historicalIncoming": {
+    "filesScanned": 133,
+    "entryAppearances": 1352,
+    "editorialExactAppearances": 1217,
+    "previousFeedExactAppearancesAtMain55f": 224,
+    "pendingAppearances": 98,
+    "uniqueSafeIdUrlPairs": 95,
+    "duplicateAppearances": 37,
+    "redactedAppearances": 3,
+    "currentFeedExactPendingPairs": 0,
+    "currentFeedIdPresentPendingPairs": 0,
+    "currentEditorialExactPendingPairs": 0,
+    "currentSeenPendingUniqueIds": 95,
+    "notSeenPendingUniqueIds": 0,
+    "idUrlConflicts": 0,
+    "confirmedExpired": 0,
+    "needsCorrection": 0,
+    "note": "الملفات الـ133 لم تتغير في تحديث Main 04cdf؛ سجل Editorial في Main لم يتغير أيضًا، لذا بقيت 1217 ظهورًا مطابقة لـEditorial. أعيدت مقارنة الأزواج الـ95 الآمنة المعلقة حرفيًا مع Feed وEditorial الحاليين: لا يوجد أي تطابق حالي. رقم 224 السابق يخص Main 55f وليس لقطة Feed الحالية."
+  },
+  "currentPrBatches": [
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-16-2116.json",
+      "items": 12,
+      "currentFeedExact": 12,
+      "currentFeedMissing": 0,
+      "currentFeedUrlConflicts": 0,
+      "currentMainEditorialExact": 0,
+      "branchEditorialPresent": 12,
+      "officialImport": "not_run"
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-18-0001.json",
+      "items": 10,
+      "currentFeedExact": 8,
+      "currentFeedMissing": 2,
+      "currentFeedUrlConflicts": 0,
+      "currentMainEditorialExact": 0,
+      "branchEditorialPresent": 10,
+      "officialImport": "not_run"
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-18-0246.json",
+      "items": 12,
+      "currentFeedExact": 11,
+      "currentFeedMissing": 1,
+      "currentFeedUrlConflicts": 0,
+      "currentMainEditorialExact": 0,
+      "branchEditorialPresent": 12,
+      "officialImport": "not_run"
+    }
+  ],
+  "branchEditorial": {
+    "entries": 1093,
+    "mainEntries": 1059,
+    "branchOnlyEntries": 34,
+    "currentFeedExactBranchOnly": 31,
+    "missingFromCurrentFeed": 3,
+    "unmatchedEntriesRemainInBranchEditorial": true,
+    "decision": "لا تدمج PR حتى تُعالج السجلات الثلاثة غير الموجودة في Feed الحالي."
+  },
+  "unmatchedRecords": [
+    {
+      "id": "74a4e87de084a0a8b9",
+      "url": "https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026",
+      "titleAr": "مايكروسوفت تربط انقطاع البريد بخلل في إصلاح أُدخل خلال يوليو",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-18-0001.json",
+      "seen": true,
+      "currentFeedIdPresent": false,
+      "currentEditorialIdPresent": false,
+      "reason": "ID غير موجود في Feed الحالي؛ لا تستورد ولا تنشئ هوية بديلة."
+    },
+    {
+      "id": "8331a3aa13cbf4dc7e",
+      "url": "https://opencode.ai/product/browse",
+      "titleAr": "OpenCode Browse يتيح لوكلاء البرمجة استخدام متصفح المستخدم بإشرافه",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-18-0001.json",
+      "seen": true,
+      "currentFeedIdPresent": false,
+      "currentEditorialIdPresent": false,
+      "reason": "ID غير موجود في Feed الحالي؛ لا تستورد ولا تنشئ هوية بديلة."
+    },
+    {
+      "id": "67dee7074b335d74dc",
+      "url": "https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains",
+      "titleAr": "دراسة من كورنيل: رعي الأغنام بين الألواح الشمسية قد يدعم التنوع الحيوي",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-18-0246.json",
+      "seen": true,
+      "currentFeedIdPresent": false,
+      "currentEditorialIdPresent": false,
+      "reason": "ID غير موجود في Feed الحالي؛ لا تستورد ولا تنشئ هوية بديلة."
+    }
+  ],
+  "eligibleCurrentFeedIds": [
+    "823dc8cc3dabd3dac1",
+    "8446beb7a01314a2c1",
+    "011a44efadf77ed279",
+    "ff7833693fa2a06713",
+    "5cc536aed4b9c93361",
+    "963bbe19ff67ab4441",
+    "b5369aae9868552237",
+    "bb14b9e7844b57ec97",
+    "8e257d66526dc57485",
+    "619525edf219eeff49",
+    "fe749e12033c8dfa21",
+    "c3d9d3fc175d750857",
+    "d586dccccf61f04120",
+    "9a0aa0e71b450c03e2",
+    "4353c1c4ce1b00e72f",
+    "cd3f9f2cc97c05f9f5",
+    "9fe6d2ae73e55f52b8",
+    "59e483d52cff0b2fdb",
+    "dead8804d42d6fa615",
+    "dc9b00f988f99db733",
+    "6ca6a1ab86c20b3043",
+    "5a247eaacfa6070a87",
+    "76dc46fd98b03354ed",
+    "e04686f80cf8e47e92",
+    "4794d4873562de7620",
+    "c183b19404c146298c",
+    "a5049c2e05f8ff3b30",
+    "c4978af8324d61a8a5",
+    "1c3d3bc22915fae93a",
+    "60d6d445e0dacc9d17",
+    "20b32bc10151119b84"
+  ],
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "seen": true,
+      "currentFeed": false,
+      "currentEditorial": false,
+      "expired": false,
+      "decision": "احتفظ بالهوية الأصلية؛ بحث منفصل غير منشور."
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "seen": true,
+      "currentFeed": false,
+      "currentEditorial": false,
+      "expired": false,
+      "decision": "احتفظ برابط TechCrunch الأصلي؛ لا تستبدله برابط Canva الرسمي."
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "seen": true,
+      "currentFeed": false,
+      "currentEditorial": false,
+      "expired": false,
+      "decision": "احتفظ بالهوية الأصلية؛ لا تستورد دون عودة الزوج نفسه إلى Feed."
+    }
+  ],
+  "commands": {
+    "pythonUnitTests": "passed_in_GitHub_Actions_44225877705_30_tests",
+    "officialValidateIncomingFiles": "not_run",
+    "officialValidateCombinedEditorial": "passed_in_GitHub_Actions_44225877705_1093_entries",
+    "officialImport": "not_run",
+    "reason": "لا توجد بيئة تنفيذ محلية متصلة بالمستودع؛ استُخدم فحص بنيوي ومقارنة ID/URL حرفية عبر محتوى GitHub، ولا ندّعي تنفيذ أمر import."
+  },
+  "deployment": {
+    "workflowRun": 44211911655,
+    "runNumber": 198,
+    "conclusion": "success",
+    "steps": [
+      "Refresh public feeds",
+      "Preserve history to prevent repeated posts",
+      "Configure GitHub Pages",
+      "Upload static website",
+      "Deploy static website"
+    ],
+    "artifactId": 14386472055,
+    "artifactBytes": 1362119,
+    "publishedEditorialJsonVerifiedByBrowser": false,
+    "reason": "تعذر جلب CDN مباشرة؛ نجاح workflow يثبت اكتمال خطوة النشر لا قراءة ملف Editorial المنشور."
+  },
+  "decision": "ابقِ PR مسودة ولا تدمجه: 3 سجلات موجودة في Editorial الفرعي لكنها لا تطابق Feed الحالي، كما أن دمج PR سيطلق workflow يحدّث feed.json وseen.json تلقائيًا، وهو خارج حدود هذا التشغيل."
+}
