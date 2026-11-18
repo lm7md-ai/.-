@@ -170,9 +170,9 @@
     }
   ],
   "commands": {
-    "pythonUnitTests": "passed_in_GitHub_Actions_44225877705_30_tests",
+    "pythonUnitTests": "passed_in_GitHub_Actions_44229861042_30_tests",
     "officialValidateIncomingFiles": "not_run",
-    "officialValidateCombinedEditorial": "passed_in_GitHub_Actions_44225877705_1093_entries",
+    "officialValidateCombinedEditorial": "passed_in_GitHub_Actions_44229861042_1093_entries",
     "officialImport": "not_run",
     "reason": "لا توجد بيئة تنفيذ محلية متصلة بالمستودع؛ استُخدم فحص بنيوي ومقارنة ID/URL حرفية عبر محتوى GitHub، ولا ندّعي تنفيذ أمر import."
   },
@@ -192,5 +192,13 @@
     "publishedEditorialJsonVerifiedByBrowser": false,
     "reason": "تعذر جلب CDN مباشرة؛ نجاح workflow يثبت اكتمال خطوة النشر لا قراءة ملف Editorial المنشور."
   },
-  "decision": "ابقِ PR مسودة ولا تدمجه: 3 سجلات موجودة في Editorial الفرعي لكنها لا تطابق Feed الحالي، كما أن دمج PR سيطلق workflow يحدّث feed.json وseen.json تلقائيًا، وهو خارج حدود هذا التشغيل."
+  "decision": "ابقِ PR مسودة ولا تدمجه: 3 سجلات موجودة في Editorial الفرعي لكنها لا تطابق Feed الحالي، كما أن دمج PR سيطلق workflow يحدّث feed.json وseen.json تلقائيًا، وهو خارج حدود هذا التشغيل.",
+  "sourcePrHeadAfter": "2b887cf26e61c8b028969f2ead41a370eb42ed81",
+  "latestValidationRun": {
+    "id": 44229861042,
+    "status": "completed",
+    "conclusion": "success",
+    "headSha": "2b887cf26e61c8b028969f2ead41a370eb42ed81",
+    "url": "https://github.com/lm7md-ai/.-/actions/runs/44229861042"
+  }
 }
