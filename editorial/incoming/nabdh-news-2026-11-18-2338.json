@@ -1,0 +1,409 @@
+{
+  "version": 1,
+  "items": {
+    "7a053dbed9c7adc91b": {
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTnpUVGEwUjEwbVlIV2xOVlRjMWx2SWtGeGJsUzV3WE0xWGwzdWx4dm5qeG0xTFRtZG95c1Q4cVhLdTZIUlh1cDFqNEI0OExlQlFHRzFYM245SnNJTXJ3bTBnQVdCTXNtZDhENTA0MXNtYU5tMjFWVkRHeGx3eUFuVXNzTV83eUNuZlJxcnlVTGFYa2g3amREdFBybVg2MHFDRkExNHl3?oc=5",
+      "titleAr": "إصداران ضاران من حزمة Microsoft Agent Framework استهدفا أسرار المطورين",
+      "summaryAr": "ذكر باحثو OX Security أن الإصدارين 1.26.1 و1.26.2 من حزمة agent-framework على PyPI نُشرا في 17 نوفمبر 2026 وبقيا متاحين لأقل من ساعة. ووفق تحليلهم، استهدفت الحزمة أسرار بيئات التطوير وخطوط البناء، مع إبقاء أجزاء الإطار الأصلية عاملة؛ ونقلت CSO أن Microsoft لم تشرح علنًا كيف حصل المهاجم على صلاحية النشر. هذه نتائج باحثين وتقارير أمنية، وليست حصيلة مؤكدة لعدد البيئات المتأثرة.",
+      "whyItMatters": "التحليل: سلامة سلسلة توريد Python لا تُستنتج من اسم الناشر أو من استمرار التطبيق في العمل؛ فقد تمتد المخاطر إلى أجهزة المطورين وصور الحاويات وخطوط CI/CD معًا.",
+      "audience": "مطورو Python ومسؤولو CI/CD وفرق أمن التطبيقات",
+      "nextSteps": [
+        "راجع سجلات تثبيت agent-framework وملفات القفل وصور البناء خلال نافذة 17 نوفمبر، وتحقق من أرقام الإصدارات ومصدر الحزمة.",
+        "إذا ظهر إصدار متأثر، اتبع إشعارات Microsoft والباحثين لتحديث الاعتماد ومراجعة الأسرار التي كان يمكن لبيئة البناء الوصول إليها."
+      ],
+      "limitations": "مدة النشر أقل من ساعة وفق الباحثين، لكن عدد التثبيتات المتأثرة غير معلوم. Microsoft لم توضح علنًا طريقة اختراق عملية النشر. لا يعني التقرير أن كل مستخدمي الإطار تأثروا.",
+      "reviewedAt": "2026-11-18T23:38:22+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "OX Security — تحليل الإصدارات المخترقة",
+          "url": "https://www.ox.security/blog/breaking-hijacked-releases-of-microsofts-official-agent-framework-steals-azure-and-ci-credentials/"
+        },
+        {
+          "title": "CSO Online — تقرير اختراق حزمة Agent Framework",
+          "url": "https://www.csoonline.com/article/4250156/attackers-hijack-microsofts-agent-framework-package-to-steal-azure-and-ci-credentials.html"
+        }
+      ]
+    },
+    "92cd511ad92d5aa501": {
+      "url": "https://aitnews.com/2026/11/19/google-stitch-loop/",
+      "titleAr": "Google Stitch Loop يحوّل تحسين المنتج بعد الإطلاق إلى دورة عمل مستمرة",
+      "summaryAr": "أعلنت Google Labs تجربة Stitch Loop، وهي وكيل طويل التشغيل يربط مستودع GitHub بمقاييس المنتج وسجلاته وملاحظات المستخدمين. يعرض فرصًا للتحسين، ثم يكتب التغيير داخل بيئة سحابية معزولة ويفتح Pull Request لمراجعته؛ ولا يُدمج شيء قبل موافقة الفريق. تذكر Google أكثر من 180 تكاملًا وحلقات جاهزة للأمن والكمون وإمكانية الوصول.",
+      "whyItMatters": "التحليل: ينتقل دور الوكلاء من توليد ميزة إلى متابعة ما بعد الإطلاق، لكن ذلك يوسّع أيضًا نطاق الوصول إلى الشيفرة والقياسات وسياق المنتج؛ لذلك تظل مراجعة الصلاحيات والـPull Requests أساسية.",
+      "audience": "فرق المنتجات والمطورون وفرق التشغيل والجودة",
+      "nextSteps": [
+        "راجع قائمة الانتظار والتكاملات ونطاق البيانات المطلوب قبل ربط مستودع حقيقي.",
+        "ابدأ بمستودع تجريبي وصلاحيات محدودة، وراجع كل Pull Request وبيانات القياس قبل الدمج."
+      ],
+      "limitations": "Stitch Loop تجربة من Google Labs والوصول عبر قائمة انتظار؛ أرقام التكاملات والقدرات وصف الشركة. التنفيذ داخل sandbox سحابي ويتطلب مشاركة سياق المنتج، ولا يدمج التغييرات تلقائيًا.",
+      "reviewedAt": "2026-11-18T23:38:22+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Google Blog — Stitch Loop",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-loop/"
+        }
+      ]
+    },
+    "34f320ca70bc697fa9": {
+      "url": "https://aitnews.com/2026/11/19/nvidia-rtx-spark-desktops-local-ai/",
+      "titleAr": "إنفيديا تطرح أجهزة RTX Spark المكتبية لتشغيل نماذج الذكاء الاصطناعي محليًا",
+      "summaryAr": "أعلنت NVIDIA توفر حواسيب RTX Spark مدمجة من ASUS وDell وMSI، بذاكرة موحدة تصل إلى 128GB ومعالج Grace ذي 20 نواة ووحدة Blackwell RTX. تقول الشركة إن الأنظمة تصل إلى 1 بيتافلوب من أداء الذكاء الاصطناعي وتستهدف تشغيل نماذج محلية تصل إلى 120 مليار معلمة، إلى جانب الوكلاء وأدوات إنشاء الصور والفيديو. وتذكر NVIDIA دعم أدوات مثل ComfyUI وHermes Agent وUnsloth.",
+      "whyItMatters": "التحليل: قد تجعل الأجهزة المحلية تشغيل بعض مهام الذكاء الاصطناعي والوكلاء دون رسوم API لكل رمز أكثر عملية، لكن الجدوى الفعلية تعتمد على سعر الجهاز والطاقة والذاكرة والبرمجيات المدعومة.",
+      "audience": "مطورون وباحثو الذكاء الاصطناعي المحلي وصناع المحتوى",
+      "nextSteps": [
+        "قارن تكوينات الذاكرة والتخزين والطاقة والأسعار الفعلية بين الشركات قبل الشراء.",
+        "اختبر نموذجًا محددًا على الجهاز المستهدف بقياس الذاكرة والسرعة وجودة المخرجات بدل الاعتماد على حجم المعلمات المعلن."
+      ],
+      "limitations": "أرقام الأداء وحجم النموذج من NVIDIA وليست قياسًا مستقلًا. توفر الأجهزة والأسعار يختلف حسب الشركة والسوق، وحجم المعلمات وحده لا يضمن تشغيلًا سريعًا أو دقة عالية.",
+      "reviewedAt": "2026-11-18T23:38:22+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "NVIDIA Blog — RTX Spark Compact Desktops",
+          "url": "https://blogs.nvidia.com/blog/rtx-spark-desktop-local-ai-available-now/"
+        }
+      ]
+    },
+    "ac57b5b6ee9ed73e27": {
+      "url": "https://techcrunch.com/2026/11/18/snapchat-now-lets-developers-build-ar-lenses-with-ai-coding-assistants-like-claude-code-and-cursor/",
+      "titleAr": "Snapchat تطلق Easy Lens CLI لإنشاء عدسات الواقع المعزز بمساعدات البرمجة",
+      "summaryAr": "أعلنت Snap أداة Easy Lens CLI المجانية لحسابات Snapchat، وتعمل على macOS وWindows وLinux، وتتيح لمساعدات مثل Claude Code وCodex وCursor إنشاء Lens ومعاينتها وإرسالها إلى الهاتف ثم نشرها. تقول الشركة إن الأداة تستفيد من أكثر من 100 كتلة AR وأكثر من 50 مولّدًا للأصول بالذكاء الاصطناعي. وذكرت Snap أنها دفعت 1.8 مليون دولار لمبدعي Lens+ في الشهر السابق.",
+      "whyItMatters": "التحليل: تقرّب الأداة تطوير تجارب AR من سير عمل المطورين المعتاد وتقلل الحاجة إلى أدوات متخصصة، لكنها تظل مرتبطة بمراجعة Snapchat وسياسات المحتوى وحقوق الأصول.",
+      "audience": "مطورو الألعاب وصناع تجارب AR والوكالات والعلامات التجارية",
+      "nextSteps": [
+        "راجع تعليمات Easy Lens CLI وصلاحيات تسجيل الدخول قبل ربط مساعد البرمجة.",
+        "ابدأ بعدسة بسيطة، واختبرها على الهاتف، ثم راجع قواعد المحتوى وحقوق الأصول قبل النشر."
+      ],
+      "limitations": "الأرقام والوعود التشغيلية من Snap؛ لا تضمن الأداة قبول كل Lens أو تحقيق دخل. برنامج Lens+ Payouts له أهلية منفصلة والأرباح ليست مضمونة.",
+      "reviewedAt": "2026-11-18T23:38:22+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Snapchat Newsroom — Introducing Easy Lens CLI",
+          "url": "https://newsroom.snap.com/introducing-easy-lens-cli"
+        },
+        {
+          "title": "TechCrunch — Snapchat Easy Lens CLI",
+          "url": "https://techcrunch.com/2026/11/18/snapchat-now-lets-developers-build-ar-lenses-with-ai-coding-assistants-like-claude-code-and-cursor/"
+        }
+      ]
+    },
+    "f0b81ce3c146128806": {
+      "url": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin",
+      "titleAr": "RadixArk تطلق DaisyRose-27B وتعرض مكاسب في كفاءة تدريب الوكلاء",
+      "summaryAr": "أعلنت RadixArk نموذج DaisyRose-27B المبني على Qwen3.8-27B والمدرّب بالتعلم المعزز على 1,200 مهمة طويلة خلال 18 يومًا باستخدام 144 وحدة H200. تقول الشركة إن نتيجة Terminal-Bench 4.1 pass@1 ارتفعت من 5.6% إلى 12.0%، وتعلن خفضًا بنسبة 57% في وقت GPU مقارنة بتشغيل مرجعي محدد، مع توفير نقاط تحقق BF16 وFP8 وNVFP4. ويشرح المقال اعتماد التدريب على مهام منتقاة وبيئات sandbox وبنية غير متزامنة.",
+      "whyItMatters": "التحليل: تبرز التجربة أثر جودة المهام وموثوقية بيئة التنفيذ وكفاءة خط التدريب، لا حجم النموذج وحده؛ كما تتيح نقاط التحقق المفتوحة إعادة القياس بدل الاكتفاء بالوصف التسويقي.",
+      "audience": "باحثو النماذج وفرق post-training ومطورو الوكلاء",
+      "nextSteps": [
+        "افحص نقاط التحقق وإطار Miles قبل تنزيل النموذج أو إعادة التدريب.",
+        "أعد الاختبار على Terminal-Bench بالإعدادات نفسها إن توفرت، وافصل تكلفة التدريب عن تكلفة تشغيل الوكيل."
+      ],
+      "limitations": "نتائج الأداء والتكلفة من RadixArk وباستخدام harness وبنية داخلية؛ ليست مقارنة مستقلة. يذكر المقال 18 يومًا للتدريب، كما يعرض نافذة تسعة أسابيع لخدمة sandbox و63 ألف ساعة GPU؛ ينبغي عدم خلط الفترتين أو تعميم النسب على كل فريق.",
+      "reviewedAt": "2026-11-18T23:38:22+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "RadixArk Blog — DaisyRose-27B",
+          "url": "https://www.radixark.com/blog/daisyrose-27b"
+        },
+        {
+          "title": "Hugging Face — DaisyRose-27B article",
+          "url": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin"
+        }
+      ]
+    },
+    "1defc708d8475fb74a": {
+      "url": "https://www.tech-wd.com/wd/2026/11/18/booking-holdings-%d8%aa%d9%86%d8%b4%d8%a6-%d9%88%d8%ad%d8%af%d8%a9-%d8%b4%d8%b1%d8%a7%d9%83%d8%a7%d8%aa-%d8%ac%d8%af%d9%8a%d8%af%d8%a9-%d9%85%d8%b9-%d8%aa%d8%b5%d8%a7%d8%b9%d8%af-%d8%aa%d8%a3%d8%ab/",
+      "titleAr": "Booking Holdings تجمع شراكات السفر التقنية في وحدة عالمية جديدة",
+      "summaryAr": "أعلنت Booking Holdings إطلاق Booking Partner Division لتجميع قدرات الشراكات الاستراتيجية في Booking.com وRocket Travel by Agoda ضمن وحدة B2B عالمية تبدأ العمل في يناير 2027. تشمل الحلول API وWhite Label وBranded Solutions وتوزيع أسعار الفنادق عبر السلاسل. ويذكر بيان الشركة أن شبكتها تضم أكثر من 4.7 مليون منشأة و33 مليون قائمة إقامة و500 شركة طيران وأكثر من 200 مزود لتأجير السيارات.",
+      "whyItMatters": "التحليل: تعزز الخطوة دور منصات السفر كمزود بنية تحتية وخدمات لشركات أخرى، بينما ورد الذكاء الاصطناعي في البيان كاتجاه لتطوير قدرات مستقبلية لا كمنتج محدد أُطلق الآن.",
+      "audience": "شركات السفر والتقنية المالية وشركات الطيران وشركاء B2B",
+      "nextSteps": [
+        "تابع بدء التشغيل في يناير 2027 وأي توثيق API أو شروط شراكة تنشرها الوحدة.",
+        "تحقق من التغطية الجغرافية والعمولات وشروط استخدام البيانات قبل بناء اعتماد تجاري."
+      ],
+      "limitations": "المصدر الأساسي بيان صادر عن Booking Holdings عبر PR Newswire؛ لا يثبت وحده أداء الوحدة أو تبني الشركاء. القدرات المرتبطة بالذكاء الاصطناعي وردت كهدف مستقبلي.",
+      "reviewedAt": "2026-11-18T23:38:22+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Booking Holdings — Booking Partner Division press release",
+          "url": "https://www.prnewswire.com/news-releases/booking-holdings-unveils-booking-partner-division-to-accelerate-b2b-travel-innovation-302940923.html"
+        }
+      ]
+    },
+    "25a4ca5f35209bfb46": {
+      "url": "https://arstechnica.com/tech-policy/2026/11/muse-privacy-invasions-are-freaking-out-meta-staffers-internal-chats-show/",
+      "titleAr": "تحقيق Reuters يثير أسئلة حول صلاحيات وكيل Meta Muse وخصوصية الرسائل",
+      "summaryAr": "اطلعت Reuters على محادثات داخلية لموظفي Meta تحدثت عن رسائل غير متوقعة وسياق لا يخص المستخدم. وأظهرت اختبارات أجرتها Reuters بالتعاون مع Signal وAI Now أن Muse استطاع في ظروف محددة الوصول إلى نصوص رسائل عبر صلاحيات إشعارات Android وأدوات إمكانية الوصول ولقطات الشاشة في macOS، بينما لم تنجح الاختبارات نفسها على iPhone. قالت Meta إن بعض الحالات هلوسات أو خلل عولج، لكن Reuters أشارت إلى استمرار تقارير داخلية حتى نوفمبر.",
+      "whyItMatters": "التحليل: الوكلاء الذين يعملون على الأجهزة يحتاجون صلاحيات واسعة؛ لذلك يجب أن يكون نطاق الوصول واضحًا ومحددًا وقابلًا للمراجعة، لا أن يُفهم من موافقة عامة على ربط التطبيق.",
+      "audience": "مستخدمو وكلاء الذكاء الاصطناعي ومطورو التطبيقات وفرق الخصوصية والأمان",
+      "nextSteps": [
+        "راجع أذونات الإشعارات وإمكانية الوصول والموصلات المرتبطة بأي وكيل على الجهاز.",
+        "لا تمنح صلاحيات شاملة إلا عند الحاجة، واطلب من مزود التطبيق توضيح مصادر البيانات وطريقة إيقافها."
+      ],
+      "limitations": "لم تثبت Reuters أن بيانات الحسابات المالية التي ظهرت في بعض الأمثلة كانت بيانات حقيقية وليست مخرجات مختلقة. Meta وصفت المشكلة بأنها خلل أو هلوسة وقالت إنها أصلحتها؛ كما تختلف صلاحيات أنظمة التشغيل ونتائج الاختبارات.",
+      "reviewedAt": "2026-11-18T23:38:22+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Reuters — As Meta bets big on Muse AI agent",
+          "url": "https://www.reuters.com/investigations/meta-bets-big-muse-ai-agent-early-safety-mishaps-surface-2026-11-18/"
+        },
+        {
+          "title": "Ars Technica — Muse privacy concerns",
+          "url": "https://arstechnica.com/tech-policy/2026/11/muse-privacy-invasions-are-freaking-out-meta-staffers-internal-chats-show/"
+        }
+      ]
+    },
+    "5431b4f8d324cc4e2d": {
+      "url": "https://www.wired.com/story/ai-debt-collection-service-exposed-66-million-accounts-and-315000-call-recordings/",
+      "titleAr": "ثغرتان في منصة CreditNirvana عرّضتا ملايين الحسابات وسجلات المكالمات",
+      "summaryAr": "أفاد الباحث الأمني Eaton Zveare بوجود ثغرتين في منصة CreditNirvana لتحصيل الديون المدعومة بالذكاء الاصطناعي، وقال إنهما أتاحتا الوصول إلى 6.6 مليون حساب ونحو 315 ألف تسجيل مكالمات عبر ثلاث مؤسسات مالية. وذكرت Wired أن الثغرات عولجت في يونيو وكُشف عنها علنًا في أكتوبر، وأن CERT-In أصدر ملاحظتي ثغرات صنّفت إحداهما عالية الخطورة والأخرى حرجة.",
+      "whyItMatters": "التحليل: المنصات الوكيلة التي تتعامل مع بيانات مالية ومكالمات تحتاج فصلًا صارمًا للصلاحيات ومراجعة مستقلة للمصادقة والوصول إلى التسجيلات؛ فخطأ في طبقة الهوية قد يكشف بيانات تتجاوز وظيفة الوكيل نفسها.",
+      "audience": "فرق أمن fintech ومسؤولو حماية البيانات ومطورو الأنظمة الوكيلة",
+      "nextSteps": [
+        "راجع ضوابط الوصول ومراجعات الأمان لدى مزودي التحصيل الذين يعالجون بيانات حساسة، واطلب أدلة معالجة الثغرات.",
+        "افصل صلاحيات الوكلاء عن صلاحيات الإدارة وراقب الوصول إلى السجلات والتسجيلات مع توثيق عمليات القراءة والتصدير."
+      ],
+      "limitations": "الأعداد من الباحث وWired وليست إحصاءً مستقلًا للأشخاص المتضررين. ذكر الباحث أن الثغرات عولجت بعد الإبلاغ؛ ولا يثبت التقرير وقوع استغلال فعلي من مهاجمين خارجيين.",
+      "reviewedAt": "2026-11-18T23:38:22+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Wired — AI debt collection service exposure",
+          "url": "https://www.wired.com/story/ai-debt-collection-service-exposed-66-million-accounts-and-315000-call-recordings/"
+        },
+        {
+          "title": "Eaton Works — The AI Repo Man research disclosure",
+          "url": "https://eaton-works.com/2026/11/18/credit-nirvana-hack/"
+        }
+      ]
+    },
+    "a261d2eee241a886ed": {
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
+      "titleAr": "Google تطرح Genie 4 ضمن Project Genie لمشتركي AI Ultra",
+      "summaryAr": "أعلنت Google طرح تجربة Project Genie المحدّثة للمشتركين المؤهلين في AI Ultra، مع إتاحة Genie 4 لتعديل العالم أثناء الجلسة باللغة الطبيعية وإضافة صوت أصلي يتكيف مع المشهد، إلى جانب وكيل يساعد على بناء العوالم ومعرض للمشاركة وإعادة المزج. كما حدّثت Genie 3 لتصل الجلسة إلى ثلاث دقائق بدل 60 ثانية، وأضافت ربط العوالم والاستناد إلى صور بانورامية بزاوية 360 درجة.",
+      "whyItMatters": "التحليل: يوضح التحديث انتقال نماذج العالم من توليد لقطة منفردة إلى بيئة تفاعلية قابلة للتعديل والمشاركة؛ لكنه ما زال أقرب إلى منصة تجريبية للنمذجة منه إلى محرك إنتاج ألعاب مكتمل.",
+      "audience": "مصممو الألعاب وصناع المحتوى والباحثون والمعلمون",
+      "nextSteps": [
+        "تحقق من أهلية AI Ultra أو قائمة انتظار AI Pro قبل التخطيط للاستخدام.",
+        "اختبر ثبات الفيزياء واستمرار المشهد والصوت على سيناريوهات قصيرة قبل استخدامه في إنتاج جاد."
+      ],
+      "limitations": "الإتاحة محدودة بمشتركي AI Ultra المؤهلين، وAI Pro عبر قائمة انتظار. تصف Google Genie 3 وGenie 4 كنماذج بحثية وتقر بتحديات الكمون والفيزياء والصوت واستمرارية المشهد.",
+      "reviewedAt": "2026-11-18T23:38:22+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Google Blog — Project Genie update featuring Genie 4",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/"
+        }
+      ]
+    },
+    "3aeb603c56a3660ee6": {
+      "url": "https://github.com/lapce/lapce",
+      "titleAr": "Lapce: محرر شيفرة مكتبي مفتوح المصدر مبني بـRust مع LSP والتطوير البعيد",
+      "summaryAr": "Lapce محرر شيفرة مكتبي مكتوب بـRust بواجهة Floem ورسم عبر wgpu، ويضم دعم LSP للإكمال والتشخيص وإجراءات الشيفرة، ووضع تحرير شبيه Vim، وطرفية مدمجة وتطويرًا بعيدًا ونظام إضافات مبنيًا على WASI. آخر تغيير مرصود في المستودع أضاف تمييز Verilog وSystemVerilog وVHDL في 18 نوفمبر 2026. لقطة Feed عند 20:28 UTC سجلت 39,092 نجمة و1,367 fork.",
+      "whyItMatters": "التحليل: يقدم Lapce خيارًا مكتبيًا مفتوح المصدر لمن يريد محررًا أصليًا بميزات LSP والتطوير البعيد وإضافات WASI دون اشتراك محرر أو API. لكن دعم العربية واتجاه RTL يحتاج اختبارًا خاصًا؛ توجد بالفعل نقاشات ومشكلات سابقة في هذا الجانب.",
+      "audience": "مطورو البرمجيات ومستخدمو Rust وفرق التطوير البعيد ومن يريد محررًا مكتبيًا قابلًا للتخصيص",
+      "overview": "محرر مكتبي أصلي مفتوح المصدر مكتوب بـRust، يستخدم Floem للواجهة وwgpu للرسم وبنية Rope Science للتحرير. يتضمن LSP وTree-sitter ووضع Vim وطرفية مدمجة ودعم التطوير البعيد وإضافات يمكن بناؤها بلغات تنتج WASI. الترخيص Apache-2.0. آخر stable release هو v0.4.6 بتاريخ 21 يناير 2026، مع إصدار nightly بتاريخ 9 أكتوبر 2026 وتغييرات مستمرة في المستودع حتى 18 نوفمبر 2026.",
+      "requirements": "للاستخدام العادي تتوفر حزم جاهزة لـWindows وLinux وmacOS. البناء من المصدر يتطلب Rust 1.98.0 وCargo وRust edition 2024. على Ubuntu توثق الصفحة الحاجة إلى clang وlibxkbcommon-x11-dev وpkg-config وlibvulkan-dev وlibwayland-dev وxorg-dev وبعض مكتبات XCB؛ وتوجد قائمة مقابلة لـFedora وVoid Linux. يحتاج العرض الرسومي إلى بيئة تعريفات متوافقة مع wgpu، ولا تنشر الوثائق حدًا موحدًا للذاكرة. التطوير البعيد يحتاج جهازًا بعيدًا يمكن الوصول إليه وشبكة مستقرة؛ والإضافات تحتاج هدف WASI متوافقًا.",
+      "quickStart": "الطريق الأسهل: نزّل الحزمة المناسبة لنظامك من صفحة Releases أو استخدم مدير حزم موثقًا مثل Flatpak أو Scoop، ثم افتح مجلد المشروع واضبط خادم اللغة المناسب للغة التي تعمل بها. للبناء من المصدر: ثبّت Rust عبر rustup، وثبّت اعتماديات نظام التشغيل، ثم نفّذ git clone https://github.com/lapce/lapce.git وبعدها cargo install --path . --bin lapce --profile release-lto --locked. يضع Cargo الملف التنفيذي عادة في $HOME/.cargo/bin/lapce.",
+      "costs": "ترخيص المحرر Apache-2.0 ولا يتطلب اشتراك محرر أو API مدفوعًا للميزات المحلية الأساسية. قد تنشأ تكلفة منفصلة من الجهاز البعيد أو استضافة بيئة التطوير أو خدمة Lapdev؛ لم أتحقق من أسعار تلك الخدمات. البناء من المصدر يستهلك وقتًا وموارد جهازك.",
+      "alternatives": "بدائل للمقارنة: VS Code وZed وHelix. ليست بدائل متطابقة؛ تختلف في نظام الإضافات والتطوير البعيد ودعم اللغات وسرعة التحديث. قارنها على مشروعك وخوادم اللغة واحتياجات RTL بدل الاعتماد على وصف السرعة وحده.",
+      "nextSteps": [
+        "نزّل النسخة الجاهزة وجربها على مشروع صغير مع خادم اللغة والطرفية المدمجين.",
+        "اختبر الكتابة العربية واتجاه المؤشر والتحديد والنسخ على ملف منفصل قبل اعتماده للعمل اليومي.",
+        "قارن تجربة التطوير البعيد والإضافات مع VS Code وZed وHelix على نفس المشروع."
+      ],
+      "limitations": "آخر إصدار مستقر ظاهر هو v0.4.6 بتاريخ 21 يناير 2026، رغم استمرار commits ووجود nightly. توجد قضايا سابقة عن العربية واتجاه RTL، منها #3866 و#2926 و#897؛ لذلك لا أفترض أن التجربة العربية مكتملة. لم أثبت البرنامج أو أشغّل اختباراته في هذه الدورة.",
+      "reviewedAt": "2026-11-18T23:38:22+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "Lapce — Official repository and README",
+          "url": "https://github.com/lapce/lapce"
+        },
+        {
+          "title": "Lapce README",
+          "url": "https://github.com/lapce/lapce/blob/master/README.md"
+        },
+        {
+          "title": "Building from source",
+          "url": "https://github.com/lapce/lapce/blob/master/docs/building-from-source.md"
+        },
+        {
+          "title": "Installing with package manager",
+          "url": "https://github.com/lapce/lapce/blob/master/docs/installing-with-package-manager.md"
+        },
+        {
+          "title": "Cargo.toml — Rust version, edition and dependencies",
+          "url": "https://github.com/lapce/lapce/blob/master/Cargo.toml"
+        },
+        {
+          "title": "Apache-2.0 license",
+          "url": "https://github.com/lapce/lapce/blob/master/LICENSE"
+        },
+        {
+          "title": "Official releases",
+          "url": "https://github.com/lapce/lapce/releases"
+        },
+        {
+          "title": "Arabic and RTL support issue",
+          "url": "https://github.com/lapce/lapce/issues/3866"
+        },
+        {
+          "title": "Arabic input stability issue",
+          "url": "https://github.com/lapce/lapce/issues/2926"
+        },
+        {
+          "title": "RTL and BIDI issue",
+          "url": "https://github.com/lapce/lapce/issues/897"
+        },
+        {
+          "title": "Plugin support discussion",
+          "url": "https://github.com/lapce/lapce/issues/558"
+        }
+      ],
+      "improvements": [
+        {
+          "title": "مجموعة اختبارات استقرار العربية واتجاه RTL",
+          "problem": "توجد نقاشات سابقة عن دعم العربية واتجاه RTL، مع بلاغ عن تعطل عند إدخال نص عربي؛ ولا يكفي وجود طلب دعم لإثبات أن المسارات المختلفة مستقرة.",
+          "approach": "إنشاء fixtures عربية وفارسية ونصوص مختلطة LTR/RTL، ثم اختبار المؤشر والتحديد والنسخ واللصق والالتفاف والتراجع والتشخيص على مستوى المحرر والواجهة.",
+          "stack": "Rust، Floem، Unicode bidi fixtures، cargo test، GitHub Actions",
+          "steps": [
+            "اجمع الحالات الموجودة في القضايا #3866 و#2926 و#897 وحدد السلوك المتوقع.",
+            "أنشئ ملفات اختبار قصيرة ومتوسطة وطويلة تشمل العربية والأرقام والرموز والشيفرة المختلطة.",
+            "أضف اختبارات للمؤشر والتحديد والنسخ واللصق والالتفاف والتراجع في اتجاهين.",
+            "شغّل الاختبارات على Windows وLinux وmacOS مع توثيق الخطوط وإعدادات العرض.",
+            "اربط أي إخفاق بالقضية المناسبة بدل إنشاء طلب مكرر."
+          ],
+          "metric": "هدف مقترح: اجتياز 100% من fixtures على الأنظمة الثلاثة وصفر تعطل في 10,000 عملية تحرير آلية.",
+          "difficulty": "متوسطة إلى عالية؛ تقدير 3–6 أسابيع",
+          "risks": "قد تكون بعض المشكلات في Floem أو wgpu أو خطوط النظام لا في Lapce وحده؛ يجب التنسيق مع القضايا القائمة وتجنب تكرار العمل.",
+          "sources": [
+            {
+              "title": "Arabic and RTL support issue",
+              "url": "https://github.com/lapce/lapce/issues/3866"
+            },
+            {
+              "title": "Arabic input stability issue",
+              "url": "https://github.com/lapce/lapce/issues/2926"
+            },
+            {
+              "title": "RTL and BIDI issue",
+              "url": "https://github.com/lapce/lapce/issues/897"
+            }
+          ]
+        },
+        {
+          "title": "مصفوفة توافق إضافات WASI",
+          "problem": "يعتمد نظام الإضافات على WASI، لكن مطوري الإضافات يحتاجون طريقة واضحة لمعرفة توافق الإضافة مع إصدارات المضيف والأنظمة المختلفة.",
+          "approach": "بناء مجموعة إضافات مرجعية صغيرة وتشغيلها في مصفوفة إصدارات ومنصات، مع اختبار حدود الصلاحيات ورسائل الفشل قبل إصدار تغييرات ABI.",
+          "stack": "Rust، WASI، Cargo، GitHub Actions، fixtures للإضافات",
+          "steps": [
+            "وثّق واجهة الإضافة وإصدارات WASI المدعومة من README والوثائق.",
+            "أنشئ ثلاث إضافات مرجعية: تحليل ملف، أمر طرفية، ومكوّن واجهة بسيط.",
+            "شغّلها على مصفوفة إصدارات المضيف والأنظمة المدعومة.",
+            "اختبر رفض الصلاحيات غير المطلوبة ورسائل الأخطاء والتوافق الخلفي.",
+            "انشر تقرير توافق مرتبطًا بكل إصدار."
+          ],
+          "metric": "هدف مقترح: نجاح 95% من الإضافات المرجعية على مصفوفة الإصدارات المدعومة مع صفر تجاوز للصلاحيات.",
+          "difficulty": "متوسطة؛ تقدير 2–4 أسابيع",
+          "risks": "قد تتغير واجهة الإضافات أو مواصفات WASI؛ توجد مناقشة قائمة حول دعم الإضافات (#558) فينبغي تنسيق العمل معها.",
+          "sources": [
+            {
+              "title": "Lapce README — WASI plugin system",
+              "url": "https://github.com/lapce/lapce/blob/master/README.md"
+            },
+            {
+              "title": "Plugin support discussion",
+              "url": "https://github.com/lapce/lapce/issues/558"
+            }
+          ]
+        },
+        {
+          "title": "تشخيص اتصال التطوير البعيد",
+          "problem": "التطوير البعيد يعتمد على الشبكة والجهاز المضيف وخادم اللغة، وقد يصعب على المستخدم معرفة إن كان التأخير من الاتصال أو مزامنة الملفات أو LSP.",
+          "approach": "إظهار مراحل الاتصال ووقت المصافحة وزمن استجابة LSP ومزامنة الملفات مع سجل تشخيص محلي يحجب أسماء الملفات والمحتوى.",
+          "stack": "Rust، lapce-proxy، tracing، اختبارات شبكية محلية",
+          "steps": [
+            "حدد مراحل الاتصال الموجودة في lapce-proxy ونقاط الفشل الممكنة.",
+            "أضف قياسًا لوقت المصافحة وإعادة الاتصال ومزامنة ملف اختبار.",
+            "اربط زمن استجابة LSP بالجلسة دون تسجيل محتوى الشيفرة.",
+            "أنشئ اختبارات لانقطاع الشبكة والعودة وتغير زمن الاستجابة.",
+            "اعرض تقرير تشخيص محليًا يمكن للمستخدم مراجعته قبل مشاركته."
+          ],
+          "metric": "هدف مقترح: تفسير 90% من حالات فشل الاتصال في الاختبارات مع قياس p50 وp95 لزمن المصافحة.",
+          "difficulty": "متوسطة؛ تقدير 2–4 أسابيع",
+          "risks": "قد تكشف سجلات التشخيص معلومات عن بيئة المستخدم؛ يجب تقليل البيانات وإتاحة تعطيل القياس.",
+          "sources": [
+            {
+              "title": "Lapce README — remote development",
+              "url": "https://github.com/lapce/lapce/blob/master/README.md"
+            },
+            {
+              "title": "Lapce source repository",
+              "url": "https://github.com/lapce/lapce"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مختبر توافق RTL للمحررات",
+          "problem": "يصعب مقارنة دعم العربية واتجاه النص بين محررات الشيفرة بطريقة قابلة للتكرار.",
+          "approach": "مشروع مستقل يوفّر fixtures عربية ومختلطة واختبارات مؤشر وتحديد ونسخ ولصق والتفاف، مع تقارير قابلة للمقارنة بين المحررات.",
+          "stack": "Rust، Python، JSON fixtures، GitHub Actions",
+          "steps": [
+            "اجمع أمثلة عربية ومختلطة لا تحتوي بيانات شخصية.",
+            "عرّف النتائج المتوقعة للمؤشر والتحديد والنسخ واللصق.",
+            "أنشئ مشغلات اختبار لكل محرر يدعم واجهة آلية.",
+            "قارن النتائج واحفظ صورًا وقياسات زمنية.",
+            "انشر تقرير توافق مع إصدار كل محرر ونظام تشغيل."
+          ],
+          "metric": "إعادة تشغيل 100% من الحالات على ثلاث بيئات مع تقرير واضح لكل اختلاف.",
+          "difficulty": "متوسطة؛ تقدير 3–5 أسابيع",
+          "risks": "تختلف واجهات الأتمتة والخطوط بين المحررات؛ لا يجوز تحويل نتيجة محرر واحد إلى حكم على الجميع.",
+          "sources": [
+            {
+              "title": "Lapce Arabic and RTL issue",
+              "url": "https://github.com/lapce/lapce/issues/3866"
+            },
+            {
+              "title": "Lapce RTL/BIDI issue",
+              "url": "https://github.com/lapce/lapce/issues/897"
+            }
+          ]
+        },
+        {
+          "title": "مختبر CI لتوافق إضافات WASI",
+          "problem": "يحتاج مطورو الإضافات إلى اختبار توافق متكرر دون بناء مصفوفة CI خاصة بكل محرر.",
+          "approach": "مستودع مستقل يحزم إضافات WASI تجريبية ويشغلها على مضيفين وإصدارات متعددة مع تقرير صلاحيات وتوافق.",
+          "stack": "Rust، WASI، Cargo، GitHub Actions",
+          "steps": [
+            "حدد واجهة إضافة صغيرة مشتركة.",
+            "أنشئ إضافات اختبار تمثل القراءة والأوامر والواجهة.",
+            "شغّلها على مضيفين وإصدارات مختلفة.",
+            "اختبر رفض الوصول غير المصرح به.",
+            "انشر تقرير توافق وإرشادات ترقية."
+          ],
+          "metric": "نسبة نجاح مرجعية لا تقل عن 95% مع تسجيل كل فشل وسبب واضح.",
+          "difficulty": "متوسطة؛ تقدير 2–4 أسابيع",
+          "risks": "قد لا تتطابق واجهات المضيفين؛ يجب إبقاء الاختبارات مستقلة عن تنفيذ محرر واحد.",
+          "sources": [
+            {
+              "title": "Lapce README — WASI plugins",
+              "url": "https://github.com/lapce/lapce/blob/master/README.md"
+            },
+            {
+              "title": "Lapce plugin support issue",
+              "url": "https://github.com/lapce/lapce/issues/558"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
