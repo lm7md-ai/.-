@@ -4011,26 +4011,34 @@
       "summaryAr": "يقدم المستودع الحالي Agent Canvas، وهي واجهة ذاتية الاستضافة لتشغيل OpenHands ووكلاء متوافقين مع ACP مثل Codex وGemini CLI، عبر backend محلي أو Docker أو VM أو سحابة، مع مهام مؤتمتة وربط أدوات خارجية.",
       "whyItMatters": "حقيقة: ينسق Agent Canvas بين الواجهة وAgent Servers وAutomation Server. تحليل: مناسب لتجربة وكلاء متعددين ومراقبة مهامهم، لكن ليس نموذجًا لغويًا مستقلًا، وقد تتطلب النماذج اشتراكات.",
       "audience": "مطورو البرمجيات وفرق الاختبارات ومستخدمو وكلاء الكود.",
-      "overview": "يعالج تشتت مهام الوكلاء بين الطرفيات والخوادم. واجهة Agent Canvas تتصل بـAgent Server لتشغيل المحادثات والأدوات؛ يمكن وصل عدة backends وتفعيل أتمتة عبر Automation Server. أمثلة: مراجعة تغييرات كود أو تشغيل مهمة على مشروع تجريبي. البديل الأبسط تشغيل كل وكيل مباشرة من طرفيته؛ الفرق هنا إدارة موحدة وتشغيل مستمر.",
-      "requirements": "للتشغيل المباشر Node.js 24+ وuv؛ وللعزل Docker. ترخيص المستودع MIT، وتراخيص وكلاء الطرف الثالث منفصلة. التشغيل دون sandbox يمنح الوكيل وصولًا واسعًا إلى ملفات الجهاز حسب تحذير README؛ خدمات النماذج والسحابة قد تتطلب مفاتيح وتكاليف.",
-      "quickStart": "حسب README: npm install -g @openhands/agent-canvas ثم agent-canvas وافتح http://localhost:8000. اختر backend ووكيلاً، وابدأ بمشروع غير حساس. بديل Docker موجود في README مع PROJECTS_PATH. لم أختبر الأوامر.",
-      "limitations": "مراجعة README والترخيص فقط، دون تشغيل. تحقق من التوافق الفعلي وإعدادات العزل قبل إتاحة الوصول لملفات مهمة.",
-      "reviewedAt": "2026-10-24T17:43:26+00:00",
+      "overview": "OpenHands Agent Canvas مركز تحكم ذاتي الاستضافة لتشغيل وكلاء البرمجة والأتمتة. يدعم OpenHands ووكلاء ACP مثل Claude Code وCodex وGemini CLI وPi وOpenCode، مع backends محلية أو بعيدة أو VM أو Docker أو Cloud/Enterprise. هو واجهة إدارة تشغيل لا نموذج مستقل.",
+      "requirements": "Node.js 24+ وuv للتشغيل المباشر. Docker لمسار العزل بالحاويات. البناء من المصدر يستخدم npm 11.12.1؛ وقد تحتاج بيانات اعتماد لمزود النموذج. الترخيص MIT للمستودع مع تراخيص مستقلة للوكلاء الخارجيين. التشغيل بلا sandbox يمنح وصولًا كاملًا إلى ملفات الجهاز.",
+      "quickStart": "محليًا: `npm install -g @openhands/agent-canvas` ثم `agent-canvas` وافتح `http://localhost:8000`. المسار المباشر يمنح Agent Server وصولًا واسعًا للملفات. للتجربة الأكثر عزلًا جهّز مجلدًا منفصلًا واستخدم Docker Sandbox كما في README، وأبقِ المنفذ على 127.0.0.1. لم تُنفذ الأوامر.",
+      "limitations": "التشغيل بلا sandbox يمنح وصولًا كاملًا للملفات؛ Docker يحتاج ضبطًا صحيحًا ولا يضمن أمانًا مطلقًا. محادثات متعددة قد تتعارض في مجلد عمل مشترك. تكاليف النماذج والخدمات المدارة منفصلة. لم يُختبر التثبيت أو الوكيل.",
+      "reviewedAt": "2026-11-20T00:37:02+03:00",
       "basis": "readme",
       "sources": [
         {
-          "title": "README الرسمي",
-          "url": "https://github.com/OpenHands/OpenHands"
+          "title": "OpenHands Agent Canvas README",
+          "url": "https://github.com/OpenHands/OpenHands/blob/main/README.md"
         },
         {
-          "title": "الترخيص",
+          "title": "OpenHands MIT License",
           "url": "https://github.com/OpenHands/OpenHands/blob/main/LICENSE"
+        },
+        {
+          "title": "Backends documentation",
+          "url": "https://docs.openhands.dev/openhands/usage/agent-canvas/backends"
+        },
+        {
+          "title": "VM / Self-Hosted Installation",
+          "url": "https://docs.openhands.dev/openhands/usage/agent-canvas/backend-setup/vm"
         }
       ],
       "nextSteps": [
-        "راجع README والترخيص ومتطلبات العتاد.",
-        "نفذ تجربة صغيرة في مساحة عمل منفصلة.",
-        "تحقق من النتائج والتكلفة قبل استخدام بيانات حقيقية."
+        "ابدأ بمجلد مشروع تجريبي منفصل.",
+        "اختر Docker backend قبل مهام تعديل الملفات.",
+        "راجع إعدادات الشبكة ومفتاح الجلسة قبل الاتصال البعيد."
       ],
       "improvements": [
         {
@@ -4098,6 +4106,36 @@
             {
               "title": "مرجع تقني",
               "url": "https://docs.pytest.org/en/stable/"
+            }
+          ]
+        },
+        {
+          "title": "فحص نطاق العزل قبل تشغيل أول مهمة",
+          "problem": "قد يبدأ المستخدم المسار المحلي المباشر دون إدراك أن Agent Server يستطيع الوصول إلى ملفات الجهاز كاملة.",
+          "approach": "فحص تمهيدي يعرض نوع backend ومجلدات mount ونطاق الشبكة وحالة Docker، ثم يطلب تأكيدًا إذا لم يكن المسار معزولًا.",
+          "stack": "TypeScript، Node.js، Docker API، Agent Canvas backend configuration",
+          "steps": [
+            "استخرج نوع backend ومسارات workspace وإعدادات host.",
+            "صنّف المسار محليًا مباشرًا أو Docker أو VM أو Cloud دون ادعاء ضمان أمني.",
+            "اعرض الملفات والمجلدات التي سيصل إليها الوكيل.",
+            "اطلب تأكيدًا للمسار غير المعزول أو اقترح Docker sandbox.",
+            "اختبر 20 إعدادًا مع حالات mount خاطئة وصحيحة."
+          ],
+          "metric": "ظهور تحذير في كل سيناريو غير معزول معروف، مع صفر تصنيف خاطئ في مجموعة الاختبار",
+          "difficulty": "متوسط — تقدير 4–6 أيام",
+          "risks": "قد تخفي إعدادات Docker أو VM بعض مسارات الوصول؛ الفحص تمهيدي لا ضمان عزل.",
+          "sources": [
+            {
+              "title": "OpenHands Agent Canvas README",
+              "url": "https://github.com/OpenHands/OpenHands/blob/main/README.md"
+            },
+            {
+              "title": "Backends documentation",
+              "url": "https://docs.openhands.dev/openhands/usage/agent-canvas/backends"
+            },
+            {
+              "title": "VM setup",
+              "url": "https://docs.openhands.dev/openhands/usage/agent-canvas/backend-setup/vm"
             }
           ]
         }
@@ -4172,7 +4210,10 @@
           ]
         }
       ],
-      "religious": []
+      "religious": [],
+      "costs": "المستودع MIT ولا توجد رسوم ترخيص للواجهة. التشغيل المحلي يستهلك موارد الجهاز؛ الاستدلال يعتمد على المزود. Cloud وEnterprise خدمات منفصلة وقد تتطلب رسومًا؛ لم يظهر سعر عام موحد في الوثائق.",
+      "localVsCloud": "محليًا: Agent Canvas backend محلي أو داخل حاوية/VM. سحابيًا: Cloud/Enterprise توفر بنية backend وsandbox مدارة؛ يختلف مكان التنفيذ ونطاق الوصول والتكلفة.",
+      "alternatives": "لمهمة برمجية واحدة يمكن تشغيل وكيل CLI مباشرة. لإدارة أهداف وميزانيات فريق قارن Paperclip. لا تحتاج Agent Canvas إذا كان Playwright أو سكربت حتمي يكفي."
     },
     "5ff4bf30ae94874f6d": {
       "url": "https://github.com/infiniflow/ragflow",
@@ -4510,46 +4551,46 @@
       "whyItMatters": "التحليل: يتيح اختبار رحلات الويب وبناء وكلاء مخصصين بدل الاقتصار على أتمتة محددة مسبقًا. يجب أن يقتصر الاستخدام على مواقع وصفحات تملكها أو لديك إذن لاختبارها، مع مراجعة بشرية قبل أي إجراء مؤثر. تشغيل المتصفح محليًا لا يعني أن بيانات الصفحة تبقى محلية إذا كان النموذج المختار مستضافًا.",
       "audience": "مطورو Python، ومهندسو اختبار الويب، وبناة وكلاء التصفح.",
       "nextSteps": [
-        "ابدأ بموقع محلي تجريبي أو صفحة عامة للقراءة فقط، ولا تستخدم حسابات أو بيانات شخصية حقيقية.",
-        "تأكد من Python 3.11+، وأنشئ بيئة باستخدام uv ثم ثبّت browser-use؛ اختر مزود نموذج موثقًا.",
-        "قارن نموذجًا محليًا عبر Ollama مع مزود مستضاف على مهمة قراءة بسيطة، وسجّل الدقة والزمن والتكلفة قبل توسيع الاستخدام."
+        "ابدأ بصفحة HTML محلية وبيانات اصطناعية.",
+        "قارن نموذج Ollama محليًا بمزود API على المهمة نفسها.",
+        "سجّل النجاح والزمن والتكلفة وراجع الأفعال قبل توسيع المواقع."
       ],
-      "limitations": "لم أُثبّت المشروع أو أشغّله. تتغير واجهات المواقع وقد تجعل خطوات الوكيل غير مستقرة، كما أن نتائج النماذج احتمالية وتحتاج تحققًا. استخدام نموذج API قد يرسل نص الصفحة أو بياناتها إلى المزود حتى لو كان المتصفح محليًا. وفق صفحة الأسعار بتاريخ المراجعة، متصفح Cloud يبدأ من 0.02 دولار لكل ساعة متصفح، وتُحاسب حركة الشبكة منفصلة؛ وتشغيل الوكيل المستضاف يضيف تكلفة النموذج ورسوم خدمة. لا تستخدمه لتجاوز قيود المواقع أو ضوابط الوصول، ولا تختبر إلا نطاقات مصرحًا بها.",
-      "reviewedAt": "2026-11-08T08:46:43+03:00",
+      "limitations": "شيفرة Python التي يولدها النموذج ليست sandbox وقد تقرأ ما يتيحه الجهاز. منفذ تصحيح Chrome المحلي لا يتضمن مصادقة في بعض الأوضاع؛ لا تستخدم ملف متصفح يحوي جلسات حساسة على جهاز مشترك. تغيّر DOM والنماذج يسببان عدم استقرار. لم أختبر التشغيل.",
+      "reviewedAt": "2026-11-20T00:37:02+03:00",
       "basis": "readme",
       "sources": [
         {
           "title": "Browser Use README",
-          "url": "https://github.com/browser-use/browser-use"
-        },
-        {
-          "title": "Browser Use pyproject.toml",
-          "url": "https://github.com/browser-use/browser-use/blob/main/pyproject.toml"
+          "url": "https://github.com/browser-use/browser-use/blob/main/README.md"
         },
         {
           "title": "Browser Use MIT License",
           "url": "https://github.com/browser-use/browser-use/blob/main/LICENSE"
         },
         {
-          "title": "Browser Use Open Source Introduction",
+          "title": "pyproject.toml",
+          "url": "https://github.com/browser-use/browser-use/blob/main/pyproject.toml"
+        },
+        {
+          "title": "Open Source Introduction",
           "url": "https://docs.browser-use.com/open-source/introduction"
         },
         {
-          "title": "Browser Use Supported Models",
-          "url": "https://docs.browser-use.com/open-source/supported-models"
+          "title": "Models",
+          "url": "https://docs.browser-use.com/open-source/models"
         },
         {
-          "title": "Browser Use Cloud Agent Quickstart",
+          "title": "Cloud Quickstart",
           "url": "https://docs.browser-use.com/cloud/agent/quickstart"
         },
         {
-          "title": "Browser Use Pricing",
+          "title": "Pricing",
           "url": "https://browser-use.com/pricing"
         }
       ],
-      "overview": "ثلاثة مسارات منفصلة: Python Library لبناء Agent داخل تطبيقك، وCLI لإتاحة المتصفح لوكيل برمجي قائم، وHosted Agent API لتشغيل وكيل مستضاف. يمكن للمكتبة والـCLI التحكم بمتصفح محلي أو متصفح Cloud عبر CDP. توثيق النماذج يذكر دعم أكثر من 15 مزودًا، ومنهم Ollama محليًا. خدمة Cloud Browser ليست هي نفسها خدمة Hosted Agent.",
-      "requirements": "Python >=3.11 وuv أو pip. يحتاج مسار Python إلى متصفح محلي مناسب ومزود نموذج؛ يدعم التوثيق Ollama محليًا، بينما يحتاج مزود API إلى مفتاحه واتصالًا بالإنترنت. متصفح Cloud وخدمة Hosted Agent اختياريان ويتطلبان مفاتيح خدمة وتكلفة استخدام. الاعتماديات الإضافية في pyproject.toml اختيارية لبعض التكاملات، لذلك لا يلزم تثبيت جميع extras لكل تجربة.",
-      "quickStart": "لتجربة محلية آمنة: أنشئ مشروع Python 3.12 باستخدام uv، ثم نفّذ `uv add browser-use`. شغّل Ollama محليًا وثبّت نموذجًا متوافقًا، ثم أنشئ Agent باستخدام ChatOllama ونفّذ مهمة قراءة فقط على صفحة اختبار محلية. راجع صفحة Supported Models قبل اختيار النموذج. لم تُنفذ أوامر التثبيت أو التشغيل في هذه المراجعة.",
+      "overview": "Browser Use 1.0.6 مكتبة Python وCLI لوكيل متصفح يكتب Python داخل REPL مستمر ويتحكم بالمتصفح عبر Chrome DevTools Protocol. يوفر مسار Cloud مستضافًا وCLI لربط وكيل قائم ومكتبة Python للدمج. الافتراضي يستخدم نموذج BU 4.0 ومتصفح Browser Use Cloud؛ ويمكن اختيار Chrome محلي ونموذج محلي أو مزود خارجي.",
+      "requirements": "Python 3.11+ وuv أو pip. المسار السحابي يحتاج BROWSER_USE_API_KEY؛ ويمكن تشغيل Chrome/Chromium/Edge محليًا مع نموذج متوافق. توثيق النماذج يذكر Ollama عبر OpenAI-compatible API ونموذج يدعم tool calling. الترخيص MIT؛ pyproject.toml يثبت browser-harness وPydantic AI وMCP. ثبّت إصدارًا محددًا.",
+      "quickStart": "سحابيًا: `uv init --python 3.12 my-agent` ثم `uv add 'browser-use==1.0.6'` واضبط BROWSER_USE_API_KEY. محليًا: شغّل Ollama ونموذج tool-calling واستخدم ChatOpenAI مع `base_url='http://localhost:11434/v1'` و`Browser('chromium')`. ابدأ بموقع اختبار محلي ومهمة قراءة فقط؛ لم تُنفذ الأوامر.",
       "improvements": [
         {
           "title": "بوابة موافقة قبل إرسال النماذج",
@@ -4649,6 +4690,36 @@
             {
               "title": "Browser Use Supported Models",
               "url": "https://docs.browser-use.com/open-source/supported-models"
+            }
+          ]
+        },
+        {
+          "title": "مختبر كشف انجراف واجهات المواقع",
+          "problem": "قد تتغير بنية الصفحة أو أسماء العناصر أو ترتيبها فتفشل مهام الوكيل رغم بقاء هدف المستخدم نفسه.",
+          "approach": "صفحات اختبار محلية بثلاث نسخ DOM مختلفة تشغّل المهمة نفسها وتقارن النجاح وأسباب الفشل مع حفظ نسخة الصفحة والأدلة.",
+          "stack": "Python، Browser Use، pytest، HTML fixtures، Playwright",
+          "steps": [
+            "أنشئ موقعًا تجريبيًا بصفحات ثابتة وبيانات اصطناعية.",
+            "أنشئ ثلاث نسخ لكل صفحة مع تغييرات DOM والتسميات والترتيب.",
+            "شغّل المهمة خمس مرات لكل نسخة مع تثبيت النموذج والإعدادات.",
+            "سجّل النجاح والزمن والعنصر الذي تعذر العثور عليه.",
+            "أنشئ تقريرًا يربط تراجع النجاح بالتغيير البنيوي."
+          ],
+          "metric": "نسبة اكتشاف التراجعات المزروعة ومعدل نجاح المهمة عبر 15 تشغيلًا",
+          "difficulty": "متوسط — تقدير 4–6 أيام",
+          "risks": "قد لا تمثل صفحات الاختبار المواقع الحقيقية؛ لا تشغّلها على نطاقات خارجية دون إذن ونتائج النماذج غير حتمية.",
+          "sources": [
+            {
+              "title": "Browser Use README",
+              "url": "https://github.com/browser-use/browser-use/blob/main/README.md"
+            },
+            {
+              "title": "Open Source Introduction",
+              "url": "https://docs.browser-use.com/open-source/introduction"
+            },
+            {
+              "title": "Models",
+              "url": "https://docs.browser-use.com/open-source/models"
             }
           ]
         }
@@ -4757,9 +4828,9 @@
         }
       ],
       "religious": [],
-      "costs": "ترخيص المكتبة MIT ولا توجد رسوم ترخيص. الاستدلال المحلي يتجنب رسوم API لكنه يستهلك موارد الجهاز والطاقة. الاستدلال عبر مزود مستضاف يخضع لتسعير المزود. صفحة Browser Use Pricing تعرض 0.02 دولار لكل ساعة متصفح Cloud، مع رسوم حركة شبكة منفصلة؛ وخدمة Hosted Agents تضيف تكلفة النموذج ورسوم خدمة 20%. الأسعار قابلة للتغيير.",
-      "localVsCloud": "محليًا: Python Library + متصفح محلي + نموذج محلي مثل Ollama، مع اعتماد الأداء على موارد الجهاز. يمكن أيضًا تشغيل المتصفح محليًا مع نموذج API، وعندها قد تغادر بيانات الصفحة الجهاز. سحابيًا: Cloud Browser يستضيف Chromium، بينما Hosted Agent يشغّل الوكيل أيضًا؛ كلاهما اختياري ومدفوع حسب الاستخدام.",
-      "alternatives": "للتدفقات الحتمية التي لا تحتاج استدلالًا، استخدم Playwright أو Puppeteer مباشرة. للواجهات الوكيلة يمكن مقارنة Stagehand. الاختيار يعتمد على الحاجة إلى قرارات نموذجية مقابل خطوات اختبار ثابتة."
+      "costs": "مكتبة MIT مجانية. Chrome ونموذج محلي يستهلكان موارد الجهاز. الأسعار الرسمية: متصفح Cloud بسعر 0.06 دولار/ساعة (الحد الأدنى دقيقة)، حركة شبكة 5 دولارات/GB عبر home-IP proxy أو 0.20 دولار/GB مباشرة أو proxy خاص؛ تكلفة النموذج منفصلة.",
+      "localVsCloud": "محليًا: Browser('chromium') مع Ollama أو نموذج متوافق؛ يلزم أن يكون النموذج محليًا أيضًا لبقاء البيانات محليًا. سحابيًا: مفتاح Browser Use يستخدم نموذج gateway ومتصفح Cloud، مع تكلفة ساعات المتصفح وحركة الشبكة والنموذج.",
+      "alternatives": "Playwright أو Puppeteer أنسب للتدفقات الحتمية. Browser Use أنسب عندما تحتاج استدلالًا من سياق الصفحة. يمكن مقارنة Stagehand لوكيل متصفح يجمع DOM والنموذج."
     },
     "b37a6534812561ec2b": {
       "url": "https://github.com/Comfy-Org/ComfyUI",
@@ -11919,16 +11990,16 @@
       "summaryAr": "مشروع مفتوح المصدر ذاتي الاستضافة ينسق عدة وكلاء عبر أهداف ومهام وأدوار وموافقات وسجل تشغيل وميزانيات. يوفّر واجهة React وخادم Node.js ويتيح ربط وكلاء وأدوات متعددة بدل إدارة جلسات منفصلة يدويًا.",
       "whyItMatters": "يفيد في تنظيم مشاريع تستخدم عدة وكلاء بالتوازي، خصوصًا عندما تحتاج مراجعة بشرية وسجلًا للتكلفة والقرارات. لا يجعل الوكلاء موثوقين تلقائيًا؛ تظل الصلاحيات وحدود العمل والتقييم مسؤولية المشغّل.",
       "audience": "مطورو الوكلاء والفرق الصغيرة والطلاب الذين يديرون مشاريع متعددة الجلسات.",
-      "overview": "منصة مفتوحة لإدارة فريق من الوكلاء كمنظمة عمل: أهداف، مخطط أدوار، مهام، موافقات، سجل نشاط، وصلات مع أدوات خارجية وضبط ميزانية. يصفها README بأنها ذاتية الاستضافة ولا تحتاج حساب Paperclip؛ ويمكن اختيار الوكلاء والمزودين المتوافقين. هذا وصف من README والتوثيق، وليس تجربة تشغيل مستقلة.",
-      "requirements": "بحسب README الحالي: Node.js 24.11.0 أو أحدث، وpnpm 9.15.4 في إعداد المستودع. للتجربة السريعة يوفّر CLI عبر npx. يحتاج الوكيل الذي تختاره إلى إعداد ومزود نموذج أو runtime مناسب؛ قد تنشأ تكلفة API أو استضافة مستقلة. الترخيص MIT. لم أختبر التثبيت محليًا.",
-      "quickStart": "ابدأ وفق الدليل الرسمي: ثبّت Node.js 24.11+، ثم شغّل `npx paperclipai@latest onboard --yes`، واتبع الإعداد لإنشاء مثيل محلي وربط وكيل ومزود. يمكن استخدام `npx paperclipai test-drive` للتجربة المعزولة وفق README. راجع إعدادات الموافقات والصلاحيات والميزانية قبل ربط حسابات حقيقية. لم أنفذ هذه الأوامر.",
-      "limitations": "المشروع نشط جدًا لكنه كبير ومتسارع التغيّر (تاريخ القياس 2026-10-26)، وعدد القضايا المفتوحة مرتفع؛ راجع الوثائق والإصدار قبل الاستخدام. لوحة الإدارة محلية/ذاتية الاستضافة، لكن استدعاءات النماذج قد تذهب إلى مزود خارجي وتكلف مالًا. لا توجد نتيجة اختبار تشغيل في هذه المراجعة.",
+      "overview": "Paperclip منصة مفتوحة ذاتية الاستضافة لإدارة فرق وكلاء الذكاء الاصطناعي كمنظمة عمل: أهداف وأدوار ومهام وموافقات وميزانيات وسجل نشاط. خادم Node.js وواجهة React، وليست نموذجًا لغويًا. التشغيل المحلي يستخدم PostgreSQL مضمّنة؛ ويمكن للإنتاج استخدام PostgreSQL خاص.",
+      "requirements": "Node.js 24.11+ لمسار CLI وpnpm 9.15+ للبناء من المصدر. يحتاج كل وكيل إلى مزود نموذج أو CLI ومفاتيح/اشتراك؛ بعض المسارات تحتاج Python 3 وCLI المزود. قد يحتاج البناء Rust toolchain لتشغيل Paperclip Runner. الترخيص MIT؛ لم يُنفذ تثبيت أو اختبار.",
+      "quickStart": "محليًا: `npx paperclipai@latest onboard --yes` بعد تثبيت Node.js 24.11+. الإعداد الافتراضي محلي على loopback. أنشئ مؤسسة تجريبية ووكيلًا واحدًا ومهمة غير حساسة، واضبط الميزانية والموافقة قبل ربط حسابات حقيقية. من المصدر: `git clone https://github.com/paperclipai/paperclip.git` ثم `pnpm install` و`pnpm dev`؛ الواجهة وAPI على المنفذ 3100.",
+      "limitations": "المشروع سريع التغير وعدد القضايا المفتوحة مرتفع؛ النجوم لا تقيس الجودة. Paperclip ينسق الوكلاء ولا يضمن صحة مخرجاتهم. النماذج والاستضافة قد تكلف، والوصول البعيد يحتاج مصادقة وشبكة خاصة. لم تُختبر أوامر التشغيل.",
       "nextSteps": [
-        "ابدأ بمهمة تجريبية غير حساسة ووكيل واحد.",
-        "اضبط حدود الصلاحيات والموافقة قبل توصيل GitHub أو البريد.",
-        "قارن التكلفة والجودة على مجموعة مهام ثابتة قبل التوسع."
+        "ابدأ بمثيل محلي ووكيل واحد على مستودع تجريبي.",
+        "اضبط سقفًا للوكيل والمشروع والمؤسسة قبل المهام المتوازية.",
+        "راجع سجل الأفعال والموافقات قبل ربط حسابات حقيقية."
       ],
-      "reviewedAt": "2026-10-26T23:42:00+03:00",
+      "reviewedAt": "2026-11-20T00:37:02+03:00",
       "basis": "readme",
       "sources": [
         {
@@ -11936,20 +12007,24 @@
           "url": "https://github.com/paperclipai/paperclip/blob/master/README.md"
         },
         {
-          "title": "Paperclip Quickstart",
+          "title": "Paperclip MIT License",
+          "url": "https://github.com/paperclipai/paperclip/blob/master/LICENSE"
+        },
+        {
+          "title": "Quickstart",
           "url": "https://docs.paperclip.ing/guides/getting-started/five-minute-path/"
         },
         {
-          "title": "Paperclip CLI installation",
+          "title": "CLI installation",
           "url": "https://docs.paperclip.ing/reference/cli/installation/"
         },
         {
-          "title": "Paperclip Costs & Budgets",
+          "title": "Costs and Budgets",
           "url": "https://docs.paperclip.ing/guides/day-to-day/costs/"
         },
         {
-          "title": "Paperclip MIT License",
-          "url": "https://github.com/paperclipai/paperclip/blob/master/LICENSE"
+          "title": "Deployment Modes",
+          "url": "https://docs.paperclip.ing/reference/deploy/deployment-modes/"
         }
       ],
       "improvements": [
@@ -12025,6 +12100,32 @@
             {
               "title": "Paperclip Quickstart",
               "url": "https://docs.paperclip.ing/guides/getting-started/five-minute-path/"
+            }
+          ]
+        },
+        {
+          "title": "تقدير تكلفة الفريق قبل إطلاق دفعة مهام",
+          "problem": "حدود الميزانية تعرض الإنفاق أثناء العمل، لكن يصعب تقدير أثر تشغيل عدة وكلاء بالتوازي قبل البدء.",
+          "approach": "لوحة تقدير تستخدم سجلات الاستهلاك السابقة وأسعار النماذج المؤرخة لعرض نطاق منخفض ومتوسط ومرتفع، وتطلب موافقة بشرية عند تجاوز سقف المشروع.",
+          "stack": "TypeScript، React، Paperclip API، PostgreSQL، لقطات أسعار مؤرخة",
+          "steps": [
+            "حدد حقول التوكنات والتكلفة والزمن المتاحة لكل adapter.",
+            "احفظ لقطة سعر ومصدرها وتاريخها لكل مزود.",
+            "ابنِ تقديرًا من مهام تاريخية متشابهة.",
+            "اختبر التقدير على 30 مهمة اصطناعية وقارن الفعلي بالمتوقع.",
+            "اعرض هامش الخطأ واطلب موافقة قبل تجاوز السقف."
+          ],
+          "metric": "متوسط الخطأ المطلق النسبي على 30 تشغيلًا، مع موافقة لكل تقدير يتجاوز الميزانية",
+          "difficulty": "متوسط — تقدير 1–2 أسبوع",
+          "risks": "قد تكون بيانات بعض الوكلاء ناقصة وتتغير الأسعار؛ التقدير ليس فاتورة ولا ينبغي إيقاف مهمة تلقائيًا بلا سياسة.",
+          "sources": [
+            {
+              "title": "Paperclip README",
+              "url": "https://github.com/paperclipai/paperclip/blob/master/README.md"
+            },
+            {
+              "title": "Paperclip Costs",
+              "url": "https://docs.paperclip.ing/guides/day-to-day/costs/"
             }
           ]
         }
@@ -12137,7 +12238,10 @@
           ]
         }
       ],
-      "url": "https://github.com/paperclipai/paperclip"
+      "url": "https://github.com/paperclipai/paperclip",
+      "costs": "المشروع MIT ومفتوح المصدر؛ التكلفة من مزود النموذج أو اشتراك/CLI الوكيل والخادم وقاعدة البيانات والاستضافة. يوفر ميزانيات للمؤسسة والوكيل والمشروع، لكن أسعار المزودين متغيرة.",
+      "localVsCloud": "محليًا: Node.js وPostgreSQL مضمّنة. للإنتاج يمكن استخدام PostgreSQL خاص وDocker أو خادم خاص. تذكر README قائمة انتظار لـPaperclip Cloud؛ لا أفترض أن الاستضافة المدارة متاحة للجميع.",
+      "alternatives": "لمهمة وكيل واحد استخدم Claude Code أو Codex مباشرة. لإدارة عدة وكلاء قارن OpenHands Agent Canvas. اختر Paperclip عند الحاجة لأهداف وميزانيات وموافقات وسجل فريق."
     },
     "100e6a5a6a69719857": {
       "titleAr": "OmniRoute: بوابة محلية موحدة لتوجيه طلبات نماذج الذكاء الاصطناعي",
@@ -45915,6 +46019,299 @@
         }
       ],
       "url": "https://news.google.com/rss/articles/CBMitARBVV95cUxPMzUwYmswWUQ2ZkxjbGpaU0ZFS1NmQzdJaXpkWVN2aXl6a1c2MW0tVHpDSXgwY3p3YVZJNFQwdUVXb2NIcjRNc0ZVSDEwZk5la2x1UElzMmNoU21UU2xPdjFiYmo2Y01tX01wX0lKNEFUYmJ2QXpPMzdFNFcxZngtaC1vLWVKQ21IYUhORlp5X0s0d2Y3c0w5cGlXTzY2V0hlN0FmT0VDMHM1ODlHMUgzMzdLR0xvSmRqV0RlTWFzdkhrSjFEVFkyWkFXWHZNYkQybUdZcGpiVGFQRjI5dEhjMnZBeG5nZkQ5M1B4a3VxNjktQ0xVN3J5dGMtWWdCbHVFbE1BckZ5V0N3RkpjTFdqVkZJVVVDZXRXeldWRzdLdGVqYm83aDBmVTN4Zms2Z0JlOGJHY1Y4OVdVajM4MnFSZkxPMnNuTUhPWUtIWk9YM0poM2FfT2ZNS2lkSTZaRTh6b054enVRNFBOa1FHTTBFRkxVb3FZenQ0LVFJQ0FRUWg3SmFfWTRMaExkZ2drODNYd09KQ2dmWnh2ZkNJNlc2eGlINXd6d1IwRFRKTVVJT1V1cjJPRkp5NDJYell6U1d5LTA4bHpEMkNWU1hQWTljY2Rta0VwVlpJNG9vSDZxdmZZV2F1YXBIaEpWel9ZVkhTV00wRkpYdjdzZ0Nrb1VIVTliQWgxNUJCbFg4RWYzWmdrLTNFWFREZUkwelhneVpCNFBRQi1fZnEyY2xjM1Z5U2VwMnLSAbQEQVVfeXFMTzM1MGJrMFlENmZMY2xqWlNGRUtTZkM3SWl6ZFlTdml5emtXNjFtLVR6Q0l4MGN6d2FWSTRUMHVFV29jSHI0TXNGVUgxMGZOZWtsdVBJczJjaFNtVFNsT3YxYmJqNmNNbV9NcF9JSjRBVGJidkF6TzM3RTRXMWZ4LWgtby1lSkNtSGFITkZaeV9LNHdmN3NMOXBpV082NldIZTdBZk9FQzBzNTg5RzFIMzM3S0dMb0pkaldEZU1hc3ZIa0oxRFRZMlpBV1h2TWJEMm1HWXBqYlRhUEYyOXRIYzJ2QXhuZ2ZEOTNQeGt1cTY5LUNMVTdyeXRjLVlnQmx1RWxNQXJGeVdDd0ZKY0xXalZGSVVVQ2V0V3pXVkc3S3RlamJvN2gwZlUzeGZrNmdCZThiR2NWODlXVWozODJxUmZMTzJzbk1IT1lLSFpPWDNKaDNhX09mTUtpZEk2WkU4em9OeHp1UTRQTmtRR00wRUZMVW9xWXp0NC1RSUNBUVFoN0phX1k0TGhMZGdnazgzWHdPSkNnZlp4dmZDSTZXNnhpSDV3endSMERUSk1VSU9VdXIyT0ZKeTQyWHpZelNXeS0wOGx6RDJDVlNYUFk5Y2NkbWtFcFZaSTRvb0g2cXZmWVdhdWFwSGhKVnpfWVZIU1dNMEZKWHY3c2dDa29VSFU5YkFoMTVCQmxYOEVmM1pnay0zRVhURGVJMHpYZ3laQjRQUUItX2ZxMmNsYzNWeVNlcDJy?oc=5"
+    },
+    "607807410ad5227362": {
+      "url": "https://www.theverge.com/tech/1037535/google-blue-origin-project-suncatcher-2029",
+      "titleAr": "غوغل تتعاون مع Blue Origin لإطلاق أقمار خوادم ذكاء اصطناعي في 2029",
+      "summaryAr": "أعلنت Google وBlue Origin عن إطلاق ثقيل مخصص في الربع الأول من 2029 ضمن Project Suncatcher. تقول Google إن صاروخ New Glenn سيضع أقمارًا مزودة بوحدات TPU في مدار متزامن مع الشمس، وإن سعة كل قمر تقارب رفًا واحدًا من مركز بيانات. الخبر يصف خطة مستقبلية، لا مركز بيانات فضائيًا يعمل تجاريًا الآن.",
+      "whyItMatters": "إذا نجح المشروع فقد يفتح مسارًا جديدًا للاستفادة من الطاقة الشمسية المدارية في الحوسبة. لكن الجدوى ستعتمد على الطاقة والتبريد والاتصالات والصيانة والتكلفة؛ وهذه أسئلة مفتوحة وليست نتائج مثبتة.",
+      "audience": "طلاب الذكاء الاصطناعي وهندسة الحوسبة والفضاء والبنية التحتية.",
+      "nextSteps": [
+        "تابع نتائج اختبارات الأقمار والاتصال والطاقة قبل تقييم التوسع التجاري.",
+        "قارن متطلبات الطاقة والتبريد والاتصال مع مراكز البيانات الأرضية."
+      ],
+      "limitations": "موعد الإطلاق المستهدف هو الربع الأول من 2029؛ السعة المذكورة تقريبية ومنسوبة إلى Google. لا يتضمن الإعلان تكلفة تشغيل أو نتائج تشغيل تجاري.",
+      "reviewedAt": "2026-11-20T00:37:02+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "The Verge — Blue Origin will launch Google’s AI server satellites in 2029",
+          "url": "https://www.theverge.com/tech/1037535/google-blue-origin-project-suncatcher-2029"
+        },
+        {
+          "title": "Google — Project Suncatcher and Blue Origin partnership",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/blue-origin-project-suncatcher-partnership/"
+        }
+      ]
+    },
+    "44f76fbba2d3881574": {
+      "url": "https://aitnews.com/2026/11/19/%d9%86%d9%85%d8%a7%d8%b0%d8%ac-openai-%d8%aa%d8%ad%d8%b3%d9%91%d9%86-%d8%aa%d8%b5%d9%85%d9%8a%d9%85-%d8%af%d9%88%d8%a7%d8%a6%d8%b1-amd-%d8%a7%d9%84%d8%b1%d8%b3%d9%88%d9%85%d9%8a%d8%a9-%d8%a8%d9%86/",
+      "titleAr": "نماذج OpenAI تساعد في تحسين تصميم شرائح AMD بنسبة تصل إلى 14%",
+      "summaryAr": "تقول OpenAI إنها تعاونت مع AMD لتحسين مؤشرات القدرة والأداء والمساحة (PPA) في تصميم GPU، مع تحسن يصل إلى 14% مقارنة بخط أساس وصفته بأنه محسّن بشدة. وتقول الشركة إن بعض التعديلات أُدرجت في تصميم أُرسل للتصنيع، واستخدمت أدوات Synopsys للتحقق من الحفاظ على السلوك الوظيفي. الأرقام والتوصيف من OpenAI.",
+      "whyItMatters": "قد يوسّع استخدام النماذج من كتابة الشيفرة إلى تصميم دوائر رقمية بمساعدة أدوات تحقق هندسية. المهم هو إدماج النماذج في دورة تصميم قابلة للاختبار، لا اعتبارها بديلًا عن المهندسين.",
+      "audience": "مهندسو الحاسوب والدوائر الرقمية والذكاء الاصطناعي ومتابعو صناعة الرقائق.",
+      "nextSteps": [
+        "قارن نتائج PPA مع خطوط أساس مستقلة إذا نُشرت تفاصيل إضافية.",
+        "تابع ما إذا كانت النتائج تتكرر على تصميمات ومهام أخرى."
+      ],
+      "limitations": "المصدر الأساسي هو إعلان OpenAI؛ لا يحدد المقال المنتجات أو القياسات التفصيلية لكل كتلة، ولا يقدم مراجعة مستقلة شاملة. تعذر فتح صفحة AITNews في هذه الجولة.",
+      "reviewedAt": "2026-11-20T00:37:02+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "OpenAI — Advancing chip design with OpenAI models",
+          "url": "https://openai.com/index/advancing-chip-design-with-our-models/"
+        },
+        {
+          "title": "البوابة العربية للأخبار التقنية — نماذج OpenAI تحسّن تصميم دوائر AMD",
+          "url": "https://aitnews.com/2026/11/19/%d9%86%d9%85%d8%a7%d8%b0%d8%ac-openai-%d8%aa%d8%ad%d8%b3%d9%91%d9%86-%d8%aa%d8%b5%d9%85%d9%8a%d9%85-%d8%af%d9%88%d8%a7%d8%a6%d8%b1-amd-%d8%a8%d9%86/"
+        }
+      ]
+    },
+    "e55c8f2df06c07ffc9": {
+      "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
+      "titleAr": "دراسة Dharma-AI تتنبأ بزمن ضبط النماذج بدقة أعلى من تقدير FLOPs في عينة H200",
+      "summaryAr": "حلل فريق Dharma-AI عدد 272 عملية ضبط خاضع للإشراف (SFT) على وحدات H200 بإجمالي 7,382 ساعة GPU. في تحقق متقاطع من خمس طيات، سجل CatBoost قيمة R² تقارب 0.98 ومتوسط خطأ مطلق 1.71 ساعة، مقابل 12.41 ساعة لخط أساس FLOPs في الإعداد المقارن. استخدم النموذج خصائص مثل التقييم والحفظ وحجم النموذج وتخصيص GPU.",
+      "whyItMatters": "تخطيط زمن التدريب يحتاج احتساب التحميل والتقييم ونقاط الحفظ وتنافس التخزين والشبكة، لا الحساب النظري وحده. قد يساعد هذا النوع من النماذج في جدولة موارد GPU وتقليل عدم اليقين.",
+      "audience": "مهندسو تعلم الآلة وMLOps ومديرو عناقيد GPU وطلاب أنظمة التدريب.",
+      "nextSteps": [
+        "اختبر الفكرة على سجلات تشغيلك قبل اعتمادها في الجدولة.",
+        "قارن النتائج بخط أساس FLOPs على العينة نفسها.",
+        "راقب الأداء على أنواع GPU ومهام تدريب مختلفة."
+      ],
+      "limitations": "العينة 272 عملية SFT من مجموعة تشغيل واحدة على H200؛ لا تشمل RLHF أو DPO أو RLVR. كان عدد التشغيلات التي تجاوزت 60 ساعة قليلًا، والورقة الكاملة ما زالت قادمة.",
+      "reviewedAt": "2026-11-20T00:37:02+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Hugging Face — Why your fine-tuning job takes longer than the FLOPs say",
+          "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time"
+        }
+      ]
+    },
+    "662045f579cfb2e238": {
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQVy12aDVhTzcyeUJxYUFoaFp0eXlHVmtkQ0VCNHQxdUpJRmxyMUZnMW50VG1EZzFkV1dXeGNSMW5oWlY3aG5Pb0hlTUNLVHZCM3Z2U08wbUhuWFFoOThCSGw1cEI0bEE3T1ctZ2hGbkpJSHctS3c0R2tiSEgwOHhFNWRQZXdMLXdfRm5hYmdXdGxoT2tB?oc=5",
+      "titleAr": "AWS تطرح معاينة المطورين من SDK Python v4 بعملاء متزامنين وغير متزامنين",
+      "summaryAr": "أعلنت AWS عن نسخة معاينة مطورين من SDK Python v4، بعملاء نمطيين لكل خدمة، وتعليقات نوعية مولدة من نماذج الخدمات، ودعم متزامن وغير متزامن. بعض تدفقات الأحداث متاحة في العملاء غير المتزامنين فقط. يتطلب البدء Python 3.12 أو أحدث وحساب AWS وبيانات اعتماد ومنطقة، وتوصي AWS بالاستمرار على Boto3 في أحمال الإنتاج حتى الإصدار العام.",
+      "whyItMatters": "يوفر التصميم النمطي والدعم غير المتزامن خيارات أفضل لتطبيقات Python عالية التزامن، لكنه لا يبرر ترحيل مشاريع الإنتاج قبل استقرار الواجهة والتوافق.",
+      "audience": "مطورو Python وAWS وفرق Backend.",
+      "nextSteps": [
+        "جرّب SDK في مشروع تجريبي وببيانات غير حساسة.",
+        "قارن الواجهة والتوافق مع Boto3 قبل أي ترحيل.",
+        "تابع تغييرات المعاينة حتى الإصدار العام."
+      ],
+      "limitations": "الإصدار Developer Preview؛ يتطلب Python 3.12 أو أحدث؛ بعض Event Streaming متاح في العملاء غير المتزامنين فقط. توصي AWS باستخدام Boto3 في الإنتاج حاليًا.",
+      "reviewedAt": "2026-11-20T00:37:02+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "AWS Developer Tools Blog — AWS SDK for Python v4 developer preview",
+          "url": "https://aws.amazon.com/blogs/developer/announcing-developer-preview-aws-sdk-for-python-v4/"
+        },
+        {
+          "title": "AWS SDK for Python v4 — Developer Guide",
+          "url": "https://docs.aws.amazon.com/sdk-for-python/v4/guide/"
+        }
+      ]
+    },
+    "f629676ca2f94e3b99": {
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBKSzl6NU1meVZBYzBPb1Y1dzNRSmFqMEVRZHVWQXp3cTZsc1lPaVA0bUxzS3kzSW51VnlIX2VBS1U2RHJYUGc?oc=5",
+      "titleAr": "وزارة الاتصالات وهيئة الحكومة الرقمية تبحثان تسريع تبني السحابة والذكاء الاصطناعي الحكومي",
+      "summaryAr": "ذكرت وكالة الأنباء السعودية أن وزارة الاتصالات وهيئة الحكومة الرقمية عقدتا لقاءً تنفيذيًا في الرياض بالتعاون مع AWS لبحث تبني الحوسبة السحابية والذكاء الاصطناعي في القطاع الحكومي، ومناقشة سياسة السحابة أولًا وتجارب الجهات الحكومية ورفع الإنتاجية. الإعلان يصف لقاءً ومناقشات، وليس عقد شراء أو نشرًا فعليًا لخدمة محددة.",
+      "whyItMatters": "يربط تطور البنية السحابية بالتحول الحكومي والمهارات الرقمية؛ متابعة النتائج والمشاريع الفعلية أهم من الاكتفاء بإعلان الفعاليات.",
+      "audience": "الطلاب والمهتمون بالسحابة والذكاء الاصطناعي والقطاع الحكومي السعودي.",
+      "nextSteps": [
+        "تابع إعلانات الجهات عن المشاريع والسياسات والبرامج التدريبية الناتجة عن اللقاء.",
+        "راقب مؤشرات التبني والحوكمة وحماية البيانات بدل افتراض تنفيذ فوري."
+      ],
+      "limitations": "بيان واس لا يذكر عقودًا أو ميزانية أو مؤشرات نتائج؛ والمشاركة مع AWS لا تعني أن جميع الجهات ستستخدم خدمة بعينها. لم يظهر متن صفحة SPA مباشرة في قارئ الصفحة؛ أساس التلخيص هو النص الرسمي المعروض في نتيجة البحث، لذلك أبقيت basis=metadata.",
+      "reviewedAt": "2026-11-20T00:37:02+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "وكالة الأنباء السعودية — لقاء حكومي لتعزيز تبني الحوسبة السحابية والذكاء الاصطناعي",
+          "url": "https://www.spa.gov.sa/N2730782"
+        },
+        {
+          "title": "Google News — رابط الخلاصة الأصلي",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBKSzl6NU1meVZBYzBPb1Y1dzNRSmFqMEVRZHVWQXp3cTZsc1lPaVA0bUxzS3kzSW51VnlIX2VBS1U2RHJYUGc?oc=5"
+        }
+      ]
+    },
+    "1578edf8b253799c50": {
+      "url": "https://news.google.com/rss/articles/CBMijwVBVV95cUxNemc1ZVlHQW9ITlR4czdaZDR6WGZFRGMxNHd1TWpabGJjQ0FjTk1VWE52bnk1ZDBZTDAzZFRlSUZYUnhLY0FCdnBZREhhdWhBQ05tVGlQZ2xacGpLQmpBbXB2bjRQSEM3eEg1eG5iaHEzS21mU3hfX3VCdDVQSWtpNXBvd0dmMXYwUFlMU0xtaUh2Ujc5N0dLZ3AyNDJuaC1hd1pKV0JPUXZKb1NVMGU2S2Z3STE2ZF9CdjNidHhPVmd4RDNNUVZZVGY4MUVJS01SZndGOTk1bTZOb2FrMzRHTzdDRlF5RzRiM1ZkQTBMU2xrZWJiTVZSSzZadFBzZG9FM29EODM4a3dDWGYwZ1FrY0FjbUFkaFFVa094Nmw0N1Rub0x1LUN1MjB2ZGpKbS1oS01od3IzRHh5OVhHQTBWU244bVhFV3RYZC0wdHhEdnlqYnc4YlVBNzJsbjhTdWFxdHMyNHhwZW1LQzJsV29kbnZueGZXVEptYnhYeUdDb3pnSm9MNHA5VkU4bDVDYm5ORTd5Mm4zQW9Vd3B2VU5nUGZ0MzZHbEtuUmZsbjh3UGVUMk9fOXZyMkQ0bUpyUHllZmpQNUxoVW1SOHEwZkI3OVpPclZKTUVZaklmUm5TNUVZTWVMQ3g4WjdtRUJvTnNzclVEdFhYblZxLU0yRk9OWWwyTjVaUkFkSTdZeE5jZ3VsMXhrbzd3bFVtVGNQMnBlMWtYT0lLdFEybGEwOWJOT0RtdUxPWGNqdWFRaUJRbU1NdkxzMjA4dEkzVU5UUGdWaVlFWUZfS0RUbEgtVkppWk5Wdm5jWkZPZDE4NU5La1hzZGUxUXpLQnZIaWF3QUJqYlpIWFZXRHk3R3FyX1pr?oc=5",
+      "titleAr": "HUMAIN تعرض منصة صوتية عربية تدعم اللهجات ووكلاء المحادثة الفورية",
+      "summaryAr": "تصف صفحة HUMAIN الرسمية منصة Voice للتحويل من الكلام إلى نص ومن النص إلى صوت ووكلاء صوتيين لحظيين، مع العربية والإنجليزية واكتشاف اللهجات والمزج بين اللغتين وأكثر من 15 لهجة وإقامة بيانات داخل المملكة. رابط التغذية يقود إلى خبر في الشرق الأوسط عبر Google News، لكن متن المقال لم يكن متاحًا كاملًا؛ لذلك يقتصر الإثراء على خصائص المنتج الرسمية.",
+      "whyItMatters": "قد يوفّر خيارًا عربيًا أولًا لخدمة العملاء والتعليم والمساعدات الصوتية. ينبغي مقارنة الدقة وزمن الاستجابة والتكلفة على عينات لهجية قبل اعتماده.",
+      "audience": "مطورو التطبيقات الصوتية وفرق خدمة العملاء والجهات التعليمية.",
+      "nextSteps": [
+        "راجع وثائق API وسياسة البيانات قبل إدخال بيانات حقيقية.",
+        "اختبر عينات لهجية بموافقة أصحابها وقس الدقة والزمن.",
+        "قارن التكلفة مع بدائل صوتية."
+      ],
+      "limitations": "لم أقرأ متن مقال الشرق الأوسط كاملًا؛ هذه خلاصة المنتج من الصفحات الرسمية لا تحقق مستقل لتفاصيل الإعلان. لم أتمكن من قراءة تقرير الخبر الأصلي كاملًا؛ راجعت صفحة HUMAIN الرسمية، لذلك basis=metadata والقدرات المذكورة تظل ادعاءات الجهة المطوّرة.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "HUMAIN — Intelligence Voice",
+          "url": "https://www.humain.com/en/voice"
+        },
+        {
+          "title": "HUMAIN Voice — Developer portal",
+          "url": "https://voice.humain.com/"
+        },
+        {
+          "title": "الشرق الأوسط — رابط Feed",
+          "url": "https://news.google.com/rss/articles/CBMijwVBVV95cUxNemc1ZVlHQW9ITlR4czdaZDR6WGZFRGMxNHd1TWpabGJjQ0FjTk1VWE52bnk1ZDBZTDAzZFRlSUZYUnhLY0FCdnBZREhhdWhBQ05tVGlQZ2xacGpLQmpBbXB2bjRQSEM3eEg1eG5iaHEzS21mU3hfX3VCdDVQSWtpNXBvd0dmMXYwUFlMU0xtaUh2Ujc5N0dLZ3AyNDJuaC1hd1pKV0JPUXZKb1NVMGU2S2Z3STE2ZF9CdjNidHhPVmd4RDNNUVZZVGY4MUVJS01SZndGOTk1bTZOb2FrMzRHTzdDRlF5RzRiM1ZkQTBMU2xrZWJiTVZSSzZadFBzZG9FM29EODM4a3dDWGYwZ1FrY0FjbUFkaFFVa094Nmw0N1Rub0x1LUN1MjB2ZGpKbS1oS01od3IzRHh5OVhHQTBWU244bVhFV3RYZC0wdHhEdnlqYnc4YlVBNzJsbjhTdWFxdHMyNHhwZW1LQzJsV29kbnZueGZXVEptYnhYeUdDb3pnSm9MNHA5VkU4bDVDYm5ORTd5Mm4zQW9Vd3B2VU5nUGZ0MzZHbEtuUmZsbjh3UGVUMk9fOXZyMkQ0bUpyUHllZmpQNUxoVW1SOHEwZkI3OVpPclZKTUVZaklmUm5TNUVZTWVMQ3g4WjdtRUJvTnNzclVEdFhYblZxLU0yRk9OWWwyTjVaUkFkSTdZeE5jZ3VsMXhrbzd3bFVtVGNQMnBlMWtYT0lLdFEybGEwOWJOT0RtdUxPWGNqdWFRaUJRbU1NdkxzMjA4dEkzVU5UUGdWaVlFWUZfS0RUbEgtVkppWk5Wdm5jWkZPZDE4NU5La1hzZGUxUXpLQnZIaWF3QUJqYlpIWFZXRHk3R3FyX1pr?oc=5"
+        }
+      ],
+      "reviewedAt": "2026-11-20T00:37:02+03:00"
+    },
+    "47396adf5e31273b13": {
+      "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/",
+      "titleAr": "Reuters يرصد مخاوف خصوصية وسلامة في وكيل Meta Muse",
+      "summaryAr": "راجع Reuters أكثر من عشرين منشورًا داخليًا ثم أعاد اختبار الوصول إلى رسائل Signal عبر أذونات إشعارات Android وأدوات تسهيلات الاستخدام ولقطات الشاشة على macOS؛ ولم تتكرر النتيجة نفسها على iPhone. قالت Meta إن الحالات معزولة وإن بعض الرسائل قد تكون هلوسات، ولم يحسم Reuters صحة بعض الأرصدة المعروضة.",
+      "whyItMatters": "توضح القصة أن صلاحيات النظام الواسعة قد تجعل الوكيل يرى سياقًا لم يقصده المستخدم، وأن ادعاء الوكيل ليس دليلًا على صحة البيانات.",
+      "audience": "مطورو الوكلاء وتطبيقات الهاتف وفرق الخصوصية والأمن.",
+      "nextSteps": [
+        "راجع أذونات الإشعارات وإمكانية الوصول الممنوحة للوكلاء.",
+        "افصل صلاحيات كل تطبيق واطلب موافقة واضحة.",
+        "تحقق من مصدر البيانات قبل عرضها."
+      ],
+      "limitations": "تحقيق Reuters واختبارات محددة ورد Meta؛ لا يثبت تعرض كل المستخدمين لتسرب أو أن كل الأمثلة بيانات حقيقية.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Reuters — Muse safety mishaps",
+          "url": "https://www.reuters.com/investigations/meta-bets-big-muse-ai-agent-early-safety-mishaps-surface-2026-11-18/"
+        },
+        {
+          "title": "TechCrunch — Meta Muse report",
+          "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/"
+        }
+      ],
+      "reviewedAt": "2026-11-20T00:37:02+03:00"
+    },
+    "5fe21d2b4ecab0b0d1": {
+      "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+      "titleAr": "Anthropic تقول إن Claude Fable 5.2 ساعد في حل مسألتين نظريتين في فيزياء الثقوب السوداء",
+      "summaryAr": "تقول Anthropic إن Claude Fable 5.2 ووكلاء متعاونين ساعدوا في نتيجتين نظريتين: حساب مرتبط بنموذج مبسط للثقوب السوداء وحد دقيق في modular bootstrap. وتذكر أن جزءًا من البرهان تحقق بـLean وأن فيزيائيًا راجع النتائج الرئيسية؛ ولا تصف المسألتان كوننا مباشرة.",
+      "whyItMatters": "الحالة مثال على استخدام النماذج في استكشاف براهين طويلة بالتوازي مع تحقق رسمي ومراجعة بشرية، لا استبدال الباحث.",
+      "audience": "طلاب الفيزياء والرياضيات وعلوم الحاسوب وباحثو الذكاء الاصطناعي العلمي.",
+      "nextSteps": [
+        "اقرأ الورقة والشرح الرياضي.",
+        "راجع ما تحقق رسميًا في Lean.",
+        "قارن المنهج بأدوات إثبات آلي."
+      ],
+      "limitations": "هذا وصف Anthropic لعمل شارك فيه نموذجها؛ النتائج نظرية ومحددة ولا تحل الجاذبية الكمومية عمومًا.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Anthropic — Claude Fable 5.2 black-hole physics",
+          "url": "https://www.anthropic.com/research/claude-black-hole-physics"
+        }
+      ],
+      "reviewedAt": "2026-11-20T00:37:02+03:00"
+    },
+    "a9933de7f7b7b31206": {
+      "url": "https://www.wired.com/story/google-built-a-giant-mirror-dimension-internet-to-test-its-chrome-ai-agents/",
+      "titleAr": "Google تبني بيئة إنترنت اصطناعية لاختبار وكلاء Chrome قبل الويب الحقيقي",
+      "summaryAr": "يصف Wired بيئة Mirror Dimension المعزولة التي تحاكي مواقع اجتماعية وتسوق ولوحات حسابات، وتختبر وكلاء Chrome بمهام تتضمن حقن تعليمات مخفية. الهدف اختبار الوكلاء دون تعريض حسابات حقيقية لوكيل غير ناضج؛ وتقول Google إن بعض الهجمات احتاجت امتيازات خاصة داخل بيئتها.",
+      "whyItMatters": "اختبار وكلاء المتصفح يحتاج بيئات واسعة ومتغيرة تحاكي مواقع حقيقية، كما يجب قياس مقاومة prompt injection قبل السماح للوكيل بالتصرف على مواقع المستخدمين.",
+      "audience": "مطورو المتصفحات والوكلاء وفرق أمن التطبيقات والباحثون.",
+      "nextSteps": [
+        "أنشئ صفحات اختبار محلية تحاكي نماذج ومحتوى غير موثوق.",
+        "أدرج تعليمات اصطناعية مخفية وقس هل يتجاهلها الوكيل.",
+        "افصل الاختبار عن الحسابات الحقيقية."
+      ],
+      "limitations": "Mirror Dimension بيئة داخلية معزولة وليست نسخة كاملة من الإنترنت أو خدمة عامة؛ والهجمات الموصوفة احتاجت امتيازات خاصة.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "WIRED — Mirror Dimension for Chrome AI agents",
+          "url": "https://www.wired.com/story/google-built-a-giant-mirror-dimension-internet-to-test-its-chrome-ai-agents/"
+        }
+      ],
+      "reviewedAt": "2026-11-20T00:37:02+03:00"
+    },
+    "534016fa5cae687038": {
+      "url": "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use",
+      "titleAr": "Gemini على macOS يحصل على قدرة استخدام الحاسوب لتنفيذ مهام متعددة الخطوات",
+      "summaryAr": "أعلنت Google إضافة computer use إلى تطبيق Gemini على macOS لتنفيذ النقر والكتابة وملء النماذج عبر التطبيقات والويب داخل نافذة معزولة ومعاينات وموافقات. ذكر The Verge أن الإطلاق بدأ باللغة الإنجليزية في الولايات المتحدة.",
+      "whyItMatters": "ينقل المساعد من الإجابة النصية إلى تنفيذ سير عمل على سطح المكتب؛ صلاحيات التطبيقات ومراجعة الأفعال أهم من سرعة التنفيذ.",
+      "audience": "مستخدمو macOS ومطورو التطبيقات وبناة الوكلاء.",
+      "nextSteps": [
+        "تحقق من التوافر الإقليمي.",
+        "ابدأ بملفات تجريبية غير حساسة.",
+        "قارن الوقت والأخطاء مع التنفيذ اليدوي."
+      ],
+      "limitations": "الإطلاق المذكور باللغة الإنجليزية في الولايات المتحدة؛ ولا تضمن الميزة صحة كل خطوة.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Google — Gemini computer use on Mac",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/"
+        },
+        {
+          "title": "The Verge — Gemini on Mac",
+          "url": "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use"
+        }
+      ],
+      "reviewedAt": "2026-11-20T00:37:02+03:00"
+    },
+    "f88414c8cfe7b454dc": {
+      "url": "https://arstechnica.com/gadgets/2026/11/google-will-launch-android-app-verification-requirement-globally-in-january-2027/",
+      "titleAr": "Google تبدأ التوسع العالمي للتحقق من مطوري تطبيقات Android في يناير 2027",
+      "summaryAr": "أعلنت مدونة Android Developers بدء التوسع العالمي للتحقق من هوية مطوري التطبيقات في يناير 2027 بالتعاون مع سبعة موزعين، مع توسع تدريجي إلى بلدان ومصادر تثبيت أخرى خلال عدة أشهر. وتقول Google إن الحماية بدأت في متاجر مشاركة بالبرازيل وإندونيسيا وسنغافورة وتايلاند.",
+      "whyItMatters": "قد يؤثر التغيير على المطورين الذين يوزعون تطبيقات Android خارج Google Play وعلى المستخدمين الذين يثبتون تطبيقات من مصادر متعددة.",
+      "audience": "مطورو Android والطلاب وفرق النشر ومتاجر التطبيقات.",
+      "nextSteps": [
+        "راجع متطلبات تسجيل المطورين قبل يناير 2027.",
+        "تحقق من أثر السياسة على قنوات توزيع تطبيقك.",
+        "احتفظ بسجل لهوية الناشر وتوقيع التطبيق."
+      ],
+      "limitations": "الإطلاق مرحلي؛ لا يعني خضوع جميع البلدان ومصادر التثبيت في اليوم نفسه.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Android Developers Blog — Developer verification 2027",
+          "url": "https://developer.android.com/blog/posts/android-developer-verification-2027"
+        },
+        {
+          "title": "Ars Technica — Android verification rollout",
+          "url": "https://arstechnica.com/gadgets/2026/11/google-will-launch-android-app-verification-requirement-globally-in-january-2027/"
+        }
+      ],
+      "reviewedAt": "2026-11-20T00:37:02+03:00"
+    },
+    "f91b7c614ab8def43a": {
+      "url": "https://aitnews.com/2026/11/19/java4shell-exploitation-attempts-security-updates/",
+      "titleAr": "ثغرة Java4Shell في OpenJDK تستدعي تثبيت تحديثات نوفمبر",
+      "summaryAr": "تتناول المصادر الأمنية خللًا في مسار Base64 ضمن OpenJDK أُطلق عليه Java4Shell. يوضح تنبيه Sophos نطاق الإصدارات المتأثرة والإصدارات المصححة، ويذكر عدم رصد استغلال عام معروف وقت نشره. لا يكفي عنوان الخبر وحده لإثبات وجود استغلال نشط؛ الإجراء العملي هو مراجعة إصدار Java المثبت وتطبيق تحديث المورّد المناسب.",
+      "whyItMatters": "قد يؤثر الخلل في خدمات Java التي تعتمد على الإصدارات المتأثرة، لذا يفيد مسؤولي الأنظمة ومطوري Java التحقق من الإصدار والتحديث بدل الاعتماد على وصف صحفي أو افتراض وجود اختراق.",
+      "audience": "مطورو Java، مسؤولو الأنظمة، وفرق أمن التطبيقات.",
+      "nextSteps": [
+        "تحقق من إصدار Java/OpenJDK المستخدم في كل خدمة.",
+        "راجع جدول الإصدارات المتأثرة والمصححة لدى المورّد.",
+        "طبّق تحديث المورّد واختبر توافق التطبيق في بيئة مرحلية."
+      ],
+      "limitations": "لم أتمكن من قراءة متن تقرير AITnews الأصلي مباشرة؛ هذه الصياغة مبنية على التنبيهات الرسمية/الأمنية المرتبطة. لا يوجد في المصادر التي راجعتها إثبات لاستغلال عام وقت النشر، ولا تتضمن هذه الخلاصة خطوات استغلال.",
+      "reviewedAt": "2026-11-20T00:37:02+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "تقرير AITnews الأصلي — Java4Shell",
+          "url": "https://aitnews.com/2026/11/19/java4shell-exploitation-attempts-security-updates/"
+        },
+        {
+          "title": "Sophos Security Advisory — Java4Shell",
+          "url": "https://www.sophos.com/en-us/security-advisories/sophos-sa-20261118-java4shell"
+        },
+        {
+          "title": "Oracle Critical Patch Update — November 2026",
+          "url": "https://www.oracle.com/security-alerts/cspunov2026.html"
+        }
+      ]
     }
   }
 }
