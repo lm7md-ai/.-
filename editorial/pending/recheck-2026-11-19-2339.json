@@ -1,0 +1,34 @@
+{
+  "reviewedAt": "2026-11-19T23:39:43+03:00",
+  "sourceMain": "036745cdd7ebb59026a1742aeb1f18699928351e",
+  "feedPairsChecked": 113,
+  "reappeared": 0,
+  "urlMismatches": 0,
+  "stillAbsent": 112,
+  "expiredConfirmed": 1,
+  "expiredRecords": [],
+  "note": "Full record list and the three special-record status checks are retained in the prior audit file editorial/pending/current-feed-revalidation-2026-11-19-1553.json; this is a recheck addendum. No historical item was imported.",
+  "specialRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "feedMatch": false,
+      "editorialMatch": false,
+      "status": "Active, Apache-2.0; README says transition to CNCF and ai-openshell, continue using NVIDIA repo until transfer completes."
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "feedMatch": false,
+      "editorialMatch": false,
+      "status": "CRAFT-1 2K API remains Preview; public apps using Preview cannot pass review; service apps use 3 credits per 2K image."
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "feedMatch": false,
+      "editorialMatch": false,
+      "status": "Opt-in; no extra cost for Individual/Family on 1Password.com; Teams/Business and .eu/.ca currently unsupported."
+    }
+  ]
+}
