@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Research-only metrics refresh for the eight previously reviewed projects; not published as Feed or Editorial project cards.",
+  "reviewedAt": "2026-11-20T02:51:53+03:00",
+  "metricsCapturedAt": "2026-11-20T02:51:53+03:00",
+  "sourceMain": "036745cdd7ebb59026a1742aeb1f18699928351e",
+  "sourcePRHead": "6d86463ac76f38402c90923a1c5354126ccdac23",
+  "historicalLibrary": {
+    "count": 31,
+    "active": 29,
+    "archived": 2,
+    "lastCatalogAudit": "2026-11-16",
+    "targetMet": true
+  },
+  "feedSnapshot": {
+    "generatedAt": "2026-11-19T20:31:37+00:00",
+    "blobSha": "d0455b7bce52c9251f76088d047aeba27d7dbeaf",
+    "items": 800,
+    "news": 700,
+    "projects": 100,
+    "mainEditorialEntries": 1129,
+    "prEditorialEntries": 1145,
+    "projectEditorialCoverage": {
+      "covered": 100,
+      "total": 100
+    }
+  },
+  "review": {
+    "projects": 8,
+    "archived": 0,
+    "readmeChanged": 0,
+    "readmeShasUnchanged": true,
+    "licenseFilesVerified": 8,
+    "licenseShaComparedAndUnchanged": 7,
+    "projectCardsAdded": 0,
+    "projectCardsEnrichedInOpenPR": 3
+  },
+  "projects": [
+    {
+      "name": "AI Engineering Hub",
+      "repository": "patchy631/ai-engineering-hub",
+      "url": "https://github.com/patchy631/ai-engineering-hub",
+      "archived": false,
+      "license": "MIT",
+      "stars": 42023,
+      "forks": 6721,
+      "openIssues": 139,
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "readmeSha": "6c65ab12125814c5233f873c4c1af2765ff87d51",
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha": "84ee68d33c9b68bae6c139f591996f021a02b23a"
+        }
+      ],
+      "readmeChangedSincePreviousReview": false,
+      "feedId": "fe0e6bfdbdd5822139",
+      "feedPresent": true
+    },
+    {
+      "name": "Google Gen AI SDK",
+      "repository": "googleapis/python-genai",
+      "url": "https://github.com/googleapis/python-genai",
+      "archived": false,
+      "license": "Apache-2.0",
+      "stars": 4081,
+      "forks": 1066,
+      "openIssues": 374,
+      "pushedAt": "2026-11-19T23:03:04Z",
+      "readmeSha": "8faf7f0d715072fccdc0e5fba0a5d7aa74f78d53",
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7"
+        }
+      ],
+      "readmeChangedSincePreviousReview": false,
+      "feedId": null,
+      "feedPresent": false
+    },
+    {
+      "name": "Lasm",
+      "repository": "Millillion/lasm",
+      "url": "https://github.com/Millillion/lasm",
+      "archived": false,
+      "license": "MIT",
+      "stars": 108,
+      "forks": 6,
+      "openIssues": 9,
+      "pushedAt": "2026-11-19T19:14:01Z",
+      "readmeSha": "f29c541dc7657fa87e718718e8fcda28cf6b3112",
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha": "46b25ff7d8953b8fc88d7ed6d37c6f1550a39193"
+        }
+      ],
+      "readmeChangedSincePreviousReview": false,
+      "feedId": null,
+      "feedPresent": false
+    },
+    {
+      "name": "MarkItDown",
+      "repository": "microsoft/markitdown",
+      "url": "https://github.com/microsoft/markitdown",
+      "archived": false,
+      "license": "MIT",
+      "stars": 197025,
+      "forks": 14923,
+      "openIssues": 818,
+      "pushedAt": "2026-11-07T00:14:01Z",
+      "readmeSha": "af858038fd380b187e2928cfbb8b9802c4912d5b",
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha": "9e841e7a26e4eb057b24511e7b92d42b257a80e5"
+        }
+      ],
+      "readmeChangedSincePreviousReview": false,
+      "feedId": null,
+      "feedPresent": false
+    },
+    {
+      "name": "Minecraft Agent Harness",
+      "repository": "yc-software/minecraft-agent-harness",
+      "url": "https://github.com/yc-software/minecraft-agent-harness",
+      "archived": false,
+      "license": "MIT",
+      "stars": 228,
+      "forks": 30,
+      "openIssues": 1,
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "readmeSha": "50b5a20eeb3a6f8268d06d244d858c4464c81eba",
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha": "5efc79a61c6ce9c8b89f423f7b0d883ca9af43a9"
+        }
+      ],
+      "readmeChangedSincePreviousReview": false,
+      "feedId": null,
+      "feedPresent": false
+    },
+    {
+      "name": "NVIDIA OpenShell",
+      "repository": "NVIDIA/OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "archived": false,
+      "license": "Apache-2.0",
+      "stars": 21807,
+      "forks": 2144,
+      "openIssues": 746,
+      "pushedAt": "2026-11-19T23:44:36Z",
+      "readmeSha": "ea31d968136ad93ac659552697d03f0e473301d4",
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha": "f13d24c3fa482d61605d600e5ac1248799bd4107"
+        }
+      ],
+      "readmeChangedSincePreviousReview": false,
+      "feedId": null,
+      "feedPresent": false
+    },
+    {
+      "name": "Pydantic AI",
+      "repository": "pydantic/pydantic-ai",
+      "url": "https://github.com/pydantic/pydantic-ai",
+      "archived": false,
+      "license": "MIT",
+      "stars": 21294,
+      "forks": 3220,
+      "openIssues": 1858,
+      "pushedAt": "2026-11-19T23:48:49Z",
+      "readmeSha": "3774a1843c1b5256cea465c3c361390d668fdf6b",
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha": "1bf1f55e6d1736b499ded961ec6b94bfebb17aec"
+        }
+      ],
+      "readmeChangedSincePreviousReview": false,
+      "feedId": null,
+      "feedPresent": false
+    },
+    {
+      "name": "uv",
+      "repository": "astral-sh/uv",
+      "url": "https://github.com/astral-sh/uv",
+      "archived": false,
+      "license": "MIT OR Apache-2.0",
+      "stars": 92425,
+      "forks": 3941,
+      "openIssues": 3085,
+      "pushedAt": "2026-11-19T22:56:58Z",
+      "readmeSha": "66caaf9ccc62add8c63de8e71184c9b7677377ad",
+      "licenseFiles": [
+        {
+          "path": "LICENSE-APACHE",
+          "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+        },
+        {
+          "path": "LICENSE-MIT",
+          "sha": "014835144877ea9c926d027ece3e1a26290cf481"
+        }
+      ],
+      "readmeChangedSincePreviousReview": false,
+      "feedId": null,
+      "feedPresent": false
+    }
+  ],
+  "notes": [
+    "README blob SHAs for all eight projects match the previous review.",
+    "License files for the first seven projects match previously recorded SHAs; uv's two license files were verified directly in this refresh.",
+    "GitHub API counters are cumulative snapshots, not daily growth or quality measures.",
+    "No new project card was added because the current Feed contains 100 projects and all 100 already have Editorial coverage."
+  ]
+}
