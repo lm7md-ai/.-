@@ -1,0 +1,367 @@
+{
+  "schemaVersion": 1,
+  "status": "research-only-snapshot-not-a-new-site-feature",
+  "notPublishedAsLibrary": true,
+  "reviewedAt": "2026-11-19T15:53:39+03:00",
+  "metricsCapturedAt": "2026-11-19T12:53:39Z",
+  "previousSnapshot": "editorial/library/research-only/previous-eight-refresh-2026-11-07-0247.json",
+  "projectCount": 8,
+  "historicalLibrary": {
+    "count": 31,
+    "active": 29,
+    "archived": 2,
+    "otherProjectsMetricsSnapshot": "2026-11-16",
+    "licenseVerified": 31,
+    "licenseVerificationBasis": "The library's current licenseStatus fields are all verified_*; verification bases include GitHub license metadata and upstream LICENSE/COPYING files.",
+    "licenseStatusCounts": {
+      "verifiedFromGitHubLicenseMetadata": 21,
+      "verifiedFromUpstreamLicenseOrCopyingFiles": 10
+    }
+  },
+  "currentFeed": {
+    "projects": 100,
+    "editorialCoverage": "100/100"
+  },
+  "feedPresence": {
+    "inFeed": 1,
+    "researchOnly": 7
+  },
+  "newProjectCards": 0,
+  "ideaOrderPreserved": true,
+  "proposalListsChanged": false,
+  "projects": [
+    {
+      "repository": "patchy631/ai-engineering-hub",
+      "stars": 42020,
+      "forks": 6720,
+      "openIssues": 139,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "requirements": "مستودع أمثلة متعدد؛ المتطلبات تختلف لكل مشروع داخله وقد تحتاج بعض الأمثلة مفتاح API أو موارد حوسبة.",
+      "quickStart": "استنسخ المستودع، ابدأ بخريطة الطريق، اختر مثالًا مبتدئًا واتبع README الخاص به داخل بيئة مستقلة.",
+      "localVsCloud": "أمثلة كثيرة محلية؛ بعضها يتصل بمزودي نماذج أو قواعد بيانات مستضافة.",
+      "costs": "المستودع مجاني؛ API والاستضافة وGPU قد تفرض تكلفة.",
+      "alternatives": "التوثيق الرسمي لمزودي النماذج ومناهج Hugging Face التعليمية.",
+      "siteVisibility": "بطاقة feed واحدة بالمعرف fe0e6bfdbdd5822139",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "testEvidence": null,
+      "sources": [
+        {
+          "title": "Official repository README and LICENSE",
+          "url": "https://github.com/patchy631/ai-engineering-hub"
+        }
+      ],
+      "updatedAt": "2026-11-19T11:53:56Z",
+      "readmeSha": "6c65ab12125814c5233f873c4c1af2765ff87d51",
+      "licenseFiles": [
+        "LICENSE:84ee68d33c9b68bae6c139f591996f021a02b23a"
+      ],
+      "note": "README الرئيسي ومثال Simple RAG تمت مراجعتهما؛ الجذر دليل تجميعي لا حزمة واحدة، والمثال يتطلب Python 3.10+ وOllama.",
+      "metricsCapturedAt": "2026-11-19T12:53:39Z",
+      "readmeReviewedAt": "2026-11-19T15:53:39+03:00",
+      "licenseReviewedAt": "2026-11-19T15:53:39+03:00",
+      "feedPresence": "present_exact_id_url",
+      "feedId": "fe0e6bfdbdd5822139",
+      "editorialEntry": true,
+      "editorialIds": [
+        "fe0e6bfdbdd5822139"
+      ],
+      "dossierStatus": "editorial-refresh-prepared",
+      "runtimeTested": false,
+      "reviewNote": "README الرئيسي ومثال Simple RAG تمت مراجعتهما؛ الجذر دليل تجميعي لا حزمة واحدة، والمثال يتطلب Python 3.10+ وOllama.",
+      "timestampAnomaly": false
+    },
+    {
+      "repository": "googleapis/python-genai",
+      "stars": 4081,
+      "forks": 1066,
+      "openIssues": 381,
+      "archived": false,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-19T00:50:51Z",
+      "requirements": "Python ومفتاح Gemini Developer API أو إعداد مشروع وموقع في Gemini Enterprise Agent Platform؛ راجع تحذير README بشأن تغييرات AFC القادمة.",
+      "quickStart": "ثبّت google-genai، أنشئ Client، ثم استخدم models.generate_content وفق التوثيق.",
+      "localVsCloud": "SDK محلي لكن الاستدلال عبر خدمات Google السحابية.",
+      "costs": "التكلفة حسب استخدام Gemini API أو Google Cloud والحصص.",
+      "alternatives": "REST API مباشرة أو SDK رسمي لمزود آخر.",
+      "siteVisibility": "بحث مستقل؛ لا بطاقة feed مطابقة",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "testEvidence": null,
+      "sources": [
+        {
+          "title": "Official repository README and LICENSE",
+          "url": "https://github.com/googleapis/python-genai"
+        }
+      ],
+      "updatedAt": "2026-11-19T06:20:23Z",
+      "readmeSha": "8faf7f0d715072fccdc0e5fba0a5d7aa74f78d53",
+      "licenseFiles": [
+        "LICENSE:d645695673349e3947e8e5ae42332d0ac3164cd7"
+      ],
+      "note": "README الإصدار 3 يوضح Gemini Developer API v1 وhttpx2 افتراضيًا، مع دعم MCP المحلي بوصفه تجريبيًا.",
+      "metricsCapturedAt": "2026-11-19T12:53:39Z",
+      "readmeReviewedAt": "2026-11-19T15:53:39+03:00",
+      "licenseReviewedAt": "2026-11-19T15:53:39+03:00",
+      "feedPresence": "absent_from_current_feed",
+      "feedId": null,
+      "editorialEntry": false,
+      "editorialIds": [],
+      "dossierStatus": "research-only-not-published",
+      "runtimeTested": false,
+      "reviewNote": "README الإصدار 3 يوضح Gemini Developer API v1 وhttpx2 افتراضيًا، مع دعم MCP المحلي بوصفه تجريبيًا.",
+      "timestampAnomaly": false
+    },
+    {
+      "repository": "Millillion/lasm",
+      "stars": 108,
+      "forks": 6,
+      "openIssues": 9,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-11-18T19:07:09Z",
+      "requirements": "Node.js 24+ وLean 4.35.0 وnpm.",
+      "quickStart": "npm create @lasm@latest my-app -- --template hono ثم npm install وnpm run dev.",
+      "localVsCloud": "تشغيل محلي عبر Node/Bun/Deno مع أهداف serverless؛ CI لا يعني نشرًا فعليًا.",
+      "costs": "المشروع مجاني؛ استضافة الوظائف قد تفرض رسومًا.",
+      "alternatives": "Rust wasm-bindgen أو AssemblyScript أو JavaScript/TypeScript.",
+      "siteVisibility": "بحث مستقل؛ لا بطاقة feed مطابقة",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "testEvidence": null,
+      "sources": [
+        {
+          "title": "Official repository README and LICENSE",
+          "url": "https://github.com/Millillion/lasm"
+        }
+      ],
+      "updatedAt": "2026-11-18T18:41:29Z",
+      "readmeSha": "f29c541dc7657fa87e718718e8fcda28cf6b3112",
+      "licenseFiles": [
+        "LICENSE:46b25ff7d8953b8fc88d7ed6d37c6f1550a39193"
+      ],
+      "note": "README يحدد Node.js 24+ وLean ويعرض npm create ومسارات Node/Bun/Deno/Workers.",
+      "metricsCapturedAt": "2026-11-19T12:53:39Z",
+      "readmeReviewedAt": "2026-11-19T15:53:39+03:00",
+      "licenseReviewedAt": "2026-11-19T15:53:39+03:00",
+      "feedPresence": "absent_from_current_feed",
+      "feedId": null,
+      "editorialEntry": false,
+      "editorialIds": [],
+      "dossierStatus": "research-only-not-published",
+      "runtimeTested": false,
+      "reviewNote": "README يحدد Node.js 24+ وLean ويعرض npm create ومسارات Node/Bun/Deno/Workers.",
+      "timestampAnomaly": false
+    },
+    {
+      "repository": "microsoft/markitdown",
+      "stars": 196890,
+      "forks": 14911,
+      "openIssues": 817,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-11-07T00:14:01Z",
+      "requirements": "Python 3.10–3.14 وإضافات اختيارية حسب الصيغة؛ انتبه لصلاحيات I/O للعملية.",
+      "quickStart": "ثبّت markitdown[all] ثم markitdown file.pdf > document.md.",
+      "localVsCloud": "التحويل الأساسي محلي؛ بعض وظائف الصور والصوت والإضافات تتصل بخدمات ويب أو Azure.",
+      "costs": "التحويل المحلي مجاني؛ الخدمات الخارجية قد تفرض تكلفة.",
+      "alternatives": "Pandoc وApache Tika وUnstructured.",
+      "siteVisibility": "بحث مستقل؛ لا بطاقة feed مطابقة",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "testEvidence": null,
+      "sources": [
+        {
+          "title": "Official repository README and LICENSE",
+          "url": "https://github.com/microsoft/markitdown"
+        }
+      ],
+      "updatedAt": "2026-11-19T13:01:32Z",
+      "readmeSha": "af858038fd380b187e2928cfbb8b9802c4912d5b",
+      "licenseFiles": [
+        "LICENSE:9e841e7a26e4eb057b24511e7b92d42b257a80e5"
+      ],
+      "note": "README يشرح Python وuv وDocker والتكاملات الاختيارية مع Azure Content Understanding وDocument Intelligence؛ updated_at متقدم على وقت التشغيل فلا يستخدم لتصنيف نشاط الكود.",
+      "metricsCapturedAt": "2026-11-19T12:53:39Z",
+      "readmeReviewedAt": "2026-11-19T15:53:39+03:00",
+      "licenseReviewedAt": "2026-11-19T15:53:39+03:00",
+      "feedPresence": "absent_from_current_feed",
+      "feedId": null,
+      "editorialEntry": false,
+      "editorialIds": [],
+      "dossierStatus": "research-only-not-published",
+      "runtimeTested": false,
+      "reviewNote": "README يشرح Python وuv وDocker والتكاملات الاختيارية مع Azure Content Understanding وDocument Intelligence؛ updated_at متقدم على وقت التشغيل فلا يستخدم لتصنيف نشاط الكود.",
+      "timestampAnomaly": true
+    },
+    {
+      "repository": "yc-software/minecraft-agent-harness",
+      "stars": 227,
+      "forks": 30,
+      "openIssues": 1,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "requirements": "Node 22.19+ وMinecraft Java 1.21.6 وJava 21 لخادم التطوير ومفتاح مزود نموذج.",
+      "quickStart": "npm ci، إعداد .env، npm run server، ثم npm start -- --objective داخل عالم اختبار خاص.",
+      "localVsCloud": "Paper محلي؛ صندوق الوكيل Docker أو E2B أو مجلد محلي.",
+      "costs": "الشفرة مجانية؛ API وE2B والاستضافة قد تفرض تكلفة.",
+      "alternatives": "Mineflayer مباشرة أو وكيل مخصص أبسط.",
+      "siteVisibility": "بحث مستقل؛ لا بطاقة feed مطابقة",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "testEvidence": null,
+      "sources": [
+        {
+          "title": "Official repository README and LICENSE",
+          "url": "https://github.com/yc-software/minecraft-agent-harness"
+        }
+      ],
+      "updatedAt": "2026-11-19T08:05:53Z",
+      "readmeSha": "50b5a20eeb3a6f8268d06d244d858c4464c81eba",
+      "licenseFiles": [
+        "LICENSE:5efc79a61c6ce9c8b89f423f7b0d883ca9af43a9"
+      ],
+      "note": "README يحدد Node.js 22.19+ وMinecraft Java 1.21.6 وJava 21 لخادم التطوير ومفتاح مزود نموذج؛ يدعم Docker/E2B.",
+      "metricsCapturedAt": "2026-11-19T12:53:39Z",
+      "readmeReviewedAt": "2026-11-19T15:53:39+03:00",
+      "licenseReviewedAt": "2026-11-19T15:53:39+03:00",
+      "feedPresence": "absent_from_current_feed",
+      "feedId": null,
+      "editorialEntry": false,
+      "editorialIds": [],
+      "dossierStatus": "research-only-not-published",
+      "runtimeTested": false,
+      "reviewNote": "README يحدد Node.js 22.19+ وMinecraft Java 1.21.6 وJava 21 لخادم التطوير ومفتاح مزود نموذج؛ يدعم Docker/E2B.",
+      "timestampAnomaly": false
+    },
+    {
+      "repository": "NVIDIA/OpenShell",
+      "stars": 21794,
+      "forks": 2142,
+      "openIssues": 750,
+      "archived": false,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-19T12:44:36Z",
+      "requirements": "Linux أو macOS Apple Silicon أو Windows عبر WSL2 تجريبي؛ Docker/Podman أو افتراضية المضيف.",
+      "quickStart": "اتبع المثبت الرسمي، أنشئ sandbox ثم أكمل Run Your First Agent.",
+      "localVsCloud": "العزل محلي على المضيف؛ استدعاءات النموذج حسب المزود.",
+      "costs": "المشروع مفتوح؛ موارد المضيف ومزود النموذج قد تفرض تكلفة.",
+      "alternatives": "عزل Docker/Podman يدويًا أو صناديق سحابية، مع اختلاف السياسات.",
+      "siteVisibility": "بحث مستقل؛ سجل الخبر السابق منقضٍ",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "testEvidence": null,
+      "sources": [
+        {
+          "title": "Official repository README and LICENSE",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        }
+      ],
+      "updatedAt": "2026-11-19T12:21:57Z",
+      "readmeSha": "ea31d968136ad93ac659552697d03f0e473301d4",
+      "licenseFiles": [
+        "LICENSE:f13d24c3fa482d61605d600e5ac1248799bd4107"
+      ],
+      "note": "README يعلن انتقال المشروع إلى CNCF؛ استمر باستخدام NVIDIA/OpenShell حتى اكتمال النقل. Quickstart محلي مع Docker/Podman وWSL2 تجريبي.",
+      "metricsCapturedAt": "2026-11-19T12:53:39Z",
+      "readmeReviewedAt": "2026-11-19T15:53:39+03:00",
+      "licenseReviewedAt": "2026-11-19T15:53:39+03:00",
+      "feedPresence": "absent_from_current_feed",
+      "feedId": null,
+      "editorialEntry": false,
+      "editorialIds": [],
+      "dossierStatus": "research-only-not-published",
+      "runtimeTested": false,
+      "reviewNote": "README يعلن انتقال المشروع إلى CNCF؛ استمر باستخدام NVIDIA/OpenShell حتى اكتمال النقل. Quickstart محلي مع Docker/Podman وWSL2 تجريبي.",
+      "timestampAnomaly": false
+    },
+    {
+      "repository": "pydantic/pydantic-ai",
+      "stars": 21288,
+      "forks": 3212,
+      "openIssues": 1839,
+      "archived": false,
+      "license": "MIT",
+      "pushedAt": "2026-11-19T13:00:10Z",
+      "requirements": "Python وبيئة حزم وتكامل مزود؛ أضف بيانات الاعتماد للنماذج السحابية.",
+      "quickStart": "ثبّت pydantic-ai، أنشئ Agent ثم نفّذ run() وفق المثال الرسمي.",
+      "localVsCloud": "منطق الوكيل محلي أو على خادم؛ مكان النموذج يعتمد على المزود.",
+      "costs": "الحزمة مجانية؛ استدلال API والمراقبة الاختيارية قد تفرض تكلفة.",
+      "alternatives": "LangGraph وLlamaIndex Workflows وOpenAI Agents SDK.",
+      "siteVisibility": "بحث مستقل؛ لا بطاقة feed مطابقة",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "testEvidence": null,
+      "sources": [
+        {
+          "title": "Official repository README and LICENSE",
+          "url": "https://github.com/pydantic/pydantic-ai"
+        }
+      ],
+      "updatedAt": "2026-11-19T11:44:18Z",
+      "readmeSha": "3774a1843c1b5256cea465c3c361390d668fdf6b",
+      "licenseFiles": [
+        "LICENSE:1bf1f55e6d1736b499ded961ec6b94bfebb17aec"
+      ],
+      "note": "README يضيف Harness وAgent Skills وTestModel دون API key؛ pushed_at متقدم على وقت التشغيل بنحو 6 دقائق، فيُعلّم كاختلاف توقيت.",
+      "metricsCapturedAt": "2026-11-19T12:53:39Z",
+      "readmeReviewedAt": "2026-11-19T15:53:39+03:00",
+      "licenseReviewedAt": "2026-11-19T15:53:39+03:00",
+      "feedPresence": "absent_from_current_feed",
+      "feedId": null,
+      "editorialEntry": false,
+      "editorialIds": [],
+      "dossierStatus": "research-only-not-published",
+      "runtimeTested": false,
+      "reviewNote": "README يضيف Harness وAgent Skills وTestModel دون API key؛ pushed_at متقدم على وقت التشغيل بنحو 6 دقائق، فيُعلّم كاختلاف توقيت.",
+      "timestampAnomaly": true
+    },
+    {
+      "repository": "astral-sh/uv",
+      "stars": 92397,
+      "forks": 3937,
+      "openIssues": 3082,
+      "archived": false,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-19T11:21:28Z",
+      "requirements": "Windows/macOS/Linux؛ المثبت المستقل لا يتطلب Python أو Rust مسبقًا.",
+      "quickStart": "ثبّت uv ثم uv init وuv add وuv run.",
+      "localVsCloud": "أداة محلية تحتاج الإنترنت لتنزيل الحزم ولا تتطلب خدمة سحابية دائمة.",
+      "costs": "مجانية؛ قد توجد رسوم شبكة أو مستودعات خاصة.",
+      "alternatives": "pip+venv وPoetry وPDM وConda.",
+      "siteVisibility": "بحث مستقل؛ لا بطاقة feed مطابقة",
+      "readmeReviewed": true,
+      "licenseReviewed": true,
+      "testEvidence": null,
+      "sources": [
+        {
+          "title": "Official repository README and LICENSE",
+          "url": "https://github.com/astral-sh/uv"
+        }
+      ],
+      "updatedAt": "2026-11-19T11:51:53Z",
+      "readmeSha": "66caaf9ccc62add8c63de8e71184c9b7677377ad",
+      "licenseFiles": [
+        "LICENSE-APACHE:261eeb9e8f9b2b4b0d119366dda99c6fd7d35c64",
+        "LICENSE-MIT:014835144877ea9c926d027ece3e1a26290cf481"
+      ],
+      "note": "README يغطي التثبيت المستقل وpip/pipx وإدارة إصدارات Python والمشاريع وملفات القفل؛ الأداة محلية.",
+      "metricsCapturedAt": "2026-11-19T12:53:39Z",
+      "readmeReviewedAt": "2026-11-19T15:53:39+03:00",
+      "licenseReviewedAt": "2026-11-19T15:53:39+03:00",
+      "feedPresence": "absent_from_current_feed",
+      "feedId": null,
+      "editorialEntry": true,
+      "editorialIds": [
+        "30e283a9b3f70e35d8"
+      ],
+      "dossierStatus": "research-only-not-published",
+      "runtimeTested": false,
+      "reviewNote": "README يغطي التثبيت المستقل وpip/pipx وإدارة إصدارات Python والمشاريع وملفات القفل؛ الأداة محلية.",
+      "timestampAnomaly": false
+    }
+  ]
+}
