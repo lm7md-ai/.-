@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-18T21:02:11+03:00",
+  "sourceMainSha": "e03f5be1e158566ff057cd05eb774f00f2525366",
+  "main": {
+    "incomingFiles": 133,
+    "appearances": 1352,
+    "alreadyImportedAppearances": 1217,
+    "unimportedAppearances": 135,
+    "unimportedUniquePairs": 97,
+    "duplicateUnimportedAppearances": 38,
+    "exactCurrentFeedUnimported": 0,
+    "seenOnlyUniquePairs": 97,
+    "idUrlConflicts": 0,
+    "confirmedCorrectionsNeeded": 0,
+    "expiredEvents": 1,
+    "expiryUnknown": 96,
+    "parts": [
+      "editorial/pending/current-feed-revalidation-2026-11-18-2043-part-1.json",
+      "editorial/pending/current-feed-revalidation-2026-11-18-2043-part-2.json"
+    ]
+  },
+  "prBranch": {
+    "prNumber": 110,
+    "incomingFiles": 140,
+    "mainIncomingFiles": 133,
+    "preexistingExtraIncomingFiles": 6,
+    "preexistingExtraAppearances": 122,
+    "preexistingAlreadyImportedActiveAppearances": 111,
+    "preexistingPendingAppearances": 11,
+    "preexistingPendingUniquePairs": 7,
+    "pendingFile": "editorial/pending/pr-110-extra-incoming-2026-11-18-2043.json",
+    "newCycleIncomingFile": "editorial/incoming/nabdh-news-2026-11-18-2043.json",
+    "newCycleItems": 8,
+    "newCycleExactFeedItems": 8,
+    "newCycleEditorialItems": 8
+  },
+  "totals": {
+    "mainPendingUniquePairs": 97,
+    "prOnlyPendingUniquePairs": 7,
+    "combinedPendingUniquePairs": 104,
+    "mainPendingAppearances": 135,
+    "prOnlyPendingAppearances": 11,
+    "combinedPendingAppearances": 146,
+    "combinedRepeatedAppearances": 42
+  },
+  "specialRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "title": "OpenShell من NVIDIA: بيئات معزولة للوكلاء بصلاحيات قابلة للمراجعة",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "seenStatus": "present",
+      "feedStatus": "absent",
+      "editorialStatus": "absent"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "title": "Canva تعلن Craft لتوليد صور يمكن تحويلها إلى تصاميم متعددة الطبقات",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "seenStatus": "present",
+      "feedStatus": "absent",
+      "editorialStatus": "absent"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "title": "1Password تعرض تفويض دخول للوكلاء دون إظهار كلمات المرور",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "seenStatus": "present",
+      "feedStatus": "absent",
+      "editorialStatus": "absent"
+    }
+  ],
+  "decisions": [
+    "لا تستورد أيًا من 97 زوجًا من Main أو 7 أزواج خاصة بـPR ما دامت غائبة عن Feed الحالي.",
+    "عنصر NASA Swift المرتبط بموعد 4 نوفمبر موسوم كحدث منقضٍ؛ بقية السجلات تظل freshness/expiry غير محسومة لغياب publishedAt في ملفات Incoming.",
+    "لا تنشئ ID بديلًا بالعنوان.",
+    "كل 8 عناصر جديدة في دفعة 2043 تطابق Feed حرفيًا، وأضيفت إلى Editorial الفرعي."
+  ],
+  "protectedFiles": {
+    "feedJsonUnchanged": true,
+    "seenJsonUnchanged": true,
+    "statusJsonUnchanged": true
+  }
+}

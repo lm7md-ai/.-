@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 2,
+  "publicationStatus": "unpublished-pending-audit",
+  "reviewedAt": "2026-11-18T18:36:04+03:00",
+  "sourceMainSha": "e03f5be1e158566ff057cd05eb774f00f2525366",
+  "sourcePrHead": "3ec00e05cddfa8b10afb136fa7afbd3be51c6ebe",
+  "sourcePrBase": "04cdf1521adca0115a177ddb9880841b64cdb0d7",
+  "mainSnapshot": {
+    "feedGeneratedAt": "2026-11-18T11:36:41+00:00",
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialEntries": 1059,
+    "seenIds": 5783,
+    "statusLastSuccessfulAt": "2026-11-18T11:36:41+00:00",
+    "statusState": "partial",
+    "sourceCount": 26,
+    "failedSources": [
+      {
+        "name": "عالم التقنية",
+        "state": "error",
+        "error": "HTTP 403",
+        "items": 0
+      }
+    ]
+  },
+  "feedRefreshSincePrBase": {
+    "previousGeneratedAt": "2026-11-18T00:56:47+00:00",
+    "currentGeneratedAt": "2026-11-18T11:36:41+00:00",
+    "previousItems": 800,
+    "currentItems": 800,
+    "removedIds": 138,
+    "addedIds": 138,
+    "changedUrlForSameId": 0
+  },
+  "historicalIncomingAudit": {
+    "filesScanned": 133,
+    "entryAppearances": 1352,
+    "editorialExactAppearances": 1217,
+    "pendingAppearances": 135,
+    "uniqueSafeIdUrlPairs": 95,
+    "duplicateAppearances": 37,
+    "redactedAppearances": 3,
+    "redactedDistinctIds": 2,
+    "currentFeedExactPendingPairs": 0,
+    "currentFeedIdPresentPendingPairs": 0,
+    "currentEditorialExactPendingPairs": 0,
+    "currentSeenPendingUniqueIds": 95,
+    "notSeenPendingUniqueIds": 0,
+    "idUrlConflicts": 0,
+    "confirmedExpired": 0,
+    "needsCorrection": 0,
+    "expiryAssessment": "غير مثبت؛ غياب السجل عن Feed لا يكفي لإثبات انتهاء صلاحيته.",
+    "sourceReports": [
+      "editorial/pending/reconciliation-2026-11-16-2116/batch-01.json",
+      "editorial/pending/reconciliation-2026-11-16-2116/batch-02.json",
+      "editorial/pending/reconciliation-2026-11-16-2116/batch-03.json",
+      "editorial/pending/reconciliation-2026-11-16-2116/batch-04.json",
+      "editorial/pending/reconciliation-2026-11-16-2116/batch-05.json",
+      "editorial/pending/reconciliation-2026-11-16-2116/batch-06.json",
+      "editorial/pending/reconciliation-2026-11-16-2116/batch-07.json",
+      "editorial/pending/reconciliation-2026-11-16-2116/batch-08.json",
+      "editorial/pending/reconciliation-2026-11-16-2116/batch-09.json"
+    ]
+  },
+  "newPrIncomingAudit": {
+    "filesAddedToPr": 5,
+    "rawBatchFiles": 4,
+    "rawOccurrences": 44,
+    "rawUniqueIds": 44,
+    "reconciledFileRecords": 41,
+    "previouslyExcludedFromReconciled": 3,
+    "currentFeedExactCandidates": 37,
+    "currentFeedMissingFromReconciled": 4,
+    "currentIdUrlConflicts": 0,
+    "structuralErrors": 0,
+    "branchEditorialOnlyBefore": 41,
+    "importedCandidates": 37,
+    "pendingNewUniquePairs": 7,
+    "pendingNewSeenIds": 7,
+    "branchEditorialAfterImport": 1096
+  },
+  "pendingRecords": [
+    {
+      "id": "74a4e87de084a0a8b9",
+      "url": "https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026",
+      "titleAr": "مايكروسوفت تربط انقطاع البريد بخلل في إصلاح أُدخل خلال يوليو",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-18-0001.json",
+      "wasInBranchEditorial": false,
+      "reason": "كان غائبًا عن Feed وEditorial عند المصالحة الأولى؛ ما زال Seen-only.",
+      "seen": true,
+      "currentFeedExact": false,
+      "currentEditorialExact": false,
+      "expiryAssessment": "unverified"
+    },
+    {
+      "id": "8331a3aa13cbf4dc7e",
+      "url": "https://opencode.ai/product/browse",
+      "titleAr": "OpenCode Browse يتيح لوكلاء البرمجة استخدام متصفح المستخدم بإشرافه",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-18-0001.json",
+      "wasInBranchEditorial": false,
+      "reason": "كان غائبًا عن Feed وEditorial عند المصالحة الأولى؛ ما زال Seen-only.",
+      "seen": true,
+      "currentFeedExact": false,
+      "currentEditorialExact": false,
+      "expiryAssessment": "unverified"
+    },
+    {
+      "id": "67dee7074b335d74dc",
+      "url": "https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains",
+      "titleAr": "دراسة من كورنيل: رعي الأغنام بين الألواح الشمسية قد يدعم التنوع الحيوي",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-18-0246.json",
+      "wasInBranchEditorial": false,
+      "reason": "كان غائبًا عن Feed وEditorial عند المصالحة الأولى؛ ما زال Seen-only.",
+      "seen": true,
+      "currentFeedExact": false,
+      "currentEditorialExact": false,
+      "expiryAssessment": "unverified"
+    },
+    {
+      "id": "9a0aa0e71b450c03e2",
+      "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+      "titleAr": "فريق Claude Code يشرح لماذا تحتاج وكلاء البرمجة إلى تحقق مستقل",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-18-0001.json",
+      "wasInBranchEditorial": true,
+      "reason": "أزاله تحديث Feed في 2026-11-18T11:36:41Z؛ لا يوجد تطابق حالي.",
+      "seen": true,
+      "currentFeedExact": false,
+      "currentEditorialExact": false,
+      "expiryAssessment": "unverified"
+    },
+    {
+      "id": "4353c1c4ce1b00e72f",
+      "url": "https://www.cnn.com/2026/11/16/us/united-airlines-outage",
+      "titleAr": "عطل تقني يؤخر رحلات يونايتد إيرلاينز ويبرز اعتماد الإقلاع على أنظمة الحساب",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-18-0001.json",
+      "wasInBranchEditorial": true,
+      "reason": "أزاله تحديث Feed في 2026-11-18T11:36:41Z؛ لا يوجد تطابق حالي.",
+      "seen": true,
+      "currentFeedExact": false,
+      "currentEditorialExact": false,
+      "expiryAssessment": "unverified"
+    },
+    {
+      "id": "cd3f9f2cc97c05f9f5",
+      "url": "https://get.mem.ai/blog/mem-is-shutting-down",
+      "titleAr": "Mem تعلن إيقاف الخدمة في 15 يناير 2027 وتحدد موعدًا لتحويل الملاحظات إلى القراءة فقط",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-18-0001.json",
+      "wasInBranchEditorial": true,
+      "reason": "أزاله تحديث Feed في 2026-11-18T11:36:41Z؛ لا يوجد تطابق حالي.",
+      "seen": true,
+      "currentFeedExact": false,
+      "currentEditorialExact": false,
+      "expiryAssessment": "unverified"
+    },
+    {
+      "id": "20b32bc10151119b84",
+      "url": "https://www.engadget.com/2318790/apple-adds-new-disk-controls-to-prevent-ai-agents-from-running-amok/",
+      "titleAr": "آبل توسّع التحكم في صلاحيات التطبيقات والملفات ضمن macOS 27.3",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-18-0246.json",
+      "wasInBranchEditorial": true,
+      "reason": "أزاله تحديث Feed في 2026-11-18T11:36:41Z؛ لا يوجد تطابق حالي.",
+      "seen": true,
+      "currentFeedExact": false,
+      "currentEditorialExact": false,
+      "expiryAssessment": "unverified"
+    }
+  ],
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "officialSource": "https://docs.nvidia.com/openshell/latest/index.html",
+      "researchFile": "editorial/library/openshell-refresh-2026-11-18-0246.json",
+      "seen": true,
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inBranchEditorial": false
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "officialSource": "https://www.canva.com/ai-research/craft-api/",
+      "seen": true,
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inBranchEditorial": false
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "officialSource": "https://support.1password.com/1password-for-agents/",
+      "seen": true,
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inBranchEditorial": false
+    }
+  ],
+  "decision": "دمج 37 سجلًا فقط بعد مطابقة id وurl حرفيًا مع Feed الحالي. إبقاء 7 سجلات حديثة و95 زوجًا تاريخيًا في الانتظار. لا تُنشأ هويات بديلة بالعنوان.",
+  "officialCommands": {
+    "pythonScriptsEditorialValidate": {
+      "executedInGitHubActions": true,
+      "runId": 44340638096,
+      "result": "success",
+      "validatedEntries": 1096
+    },
+    "pythonScriptsEditorialImport": {
+      "executedInGitHubActions": false,
+      "result": "not_run; equivalent merge applied to current Main Editorial without replacing old records"
+    },
+    "pythonUnittestDiscover": {
+      "executedInGitHubActions": true,
+      "runId": 44340638096,
+      "result": "success",
+      "testsPassed": 30,
+      "testsFailed": 0
+    },
+    "nodeSyntaxChecks": {
+      "executedInGitHubActions": true,
+      "runId": 44340638096,
+      "result": "success",
+      "files": [
+        "site/app.js",
+        "site/ideas.js"
+      ]
+    },
+    "localPythonEnvironment": "unavailable in this run",
+    "structuralValidation": "37/37 new candidate records passed before commit"
+  },
+  "branchEditorialSha": "8e0dd2d81afc1c51dae323d8114c01e88b1f944a",
+  "deploymentArtifact": {
+    "mainWorkflowRunId": 44296233205,
+    "runUrl": "https://github.com/lm7md-ai/.-/actions/runs/44296233205",
+    "conclusion": "success",
+    "artifactId": 14423346974,
+    "artifactSizeBytes": 1369720,
+    "extracted": true,
+    "files": {
+      "editorial": {
+        "path": "data/editorial.json",
+        "items": 1059,
+        "gitBlobSha": "54ee37bae9daeed7556c243d7b6f8d1737e004f7",
+        "matchesMain": true
+      },
+      "feed": {
+        "path": "data/feed.json",
+        "items": 800,
+        "generatedAt": "2026-11-18T11:36:41+00:00",
+        "gitBlobSha": "ee786e1da5d933715da6ec83451a22b8a7f5d246",
+        "matchesMain": true
+      },
+      "seen": {
+        "path": "data/seen.json",
+        "ids": 5783,
+        "gitBlobSha": "5de71023e8b93e7f8a44f119373e338e487e97db",
+        "matchesMain": true
+      },
+      "status": {
+        "path": "data/status.json",
+        "state": "partial",
+        "gitBlobSha": "cc05279b9f3025dcf267d04257bf2cb4e2125317",
+        "matchesMain": true
+      }
+    },
+    "browserLiveFetch": "DisabledError; CDN direct verification unavailable",
+    "note": "The artifact is the exact uploaded Pages payload and matches Main files byte-for-byte; it contains 1,059 editorial entries, so the 37 new records in PR are not yet deployed."
+  }
+}

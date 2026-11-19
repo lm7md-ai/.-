@@ -1,0 +1,257 @@
+{
+  "schemaVersion": 1,
+  "recordId": "openshell-refresh-2026-11-18-0246",
+  "publicationStatus": "unpublished_research",
+  "sourceMainSha": "55f6dcdb1116dbfadac1b19b7e07db6db8057218",
+  "reviewedAt": "2026-11-18T02:46:49+03:00",
+  "project": {
+    "name": "NVIDIA OpenShell",
+    "repository": "https://github.com/NVIDIA/OpenShell",
+    "officialDocs": "https://docs.nvidia.com/openshell/latest/index.html",
+    "feedMatch": false,
+    "feedId": null,
+    "category": "AI agent sandboxing, policy enforcement, runtime security",
+    "license": "Apache-2.0",
+    "lifecycle": "active; README states OpenShell is now part of CNCF and development is moving to ai-openshell; NVIDIA/OpenShell remains the canonical repository until migration completes",
+    "latestDocsVersion": "v0.1.9",
+    "repositoryMetrics": {
+      "stars": null,
+      "forks": null,
+      "openIssues": null,
+      "lastPush": null,
+      "measuredAt": "2026-11-18T02:46:49+03:00",
+      "note": "Not remeasured in this run; no current numeric metrics are asserted."
+    }
+  },
+  "overview": "بيئة تشغيل وبوابة لإدارة وكلاء الذكاء الاصطناعي داخل sandboxes مع سياسات وصول للملفات والعمليات والشبكة ومزوّدي الأسرار. يذكر المشروع أن الإنفاذ يتم عند مستوى النواة/بيئة التشغيل، وأن تغييرات السياسة يمكن فحصها بمتحقق رسمي قبل اعتمادها. يتكون التصميم من gateway وsupervisor وsandbox وcompute runtime؛ لا يعني ذلك أن كل إعداد افتراضي آمن تلقائيًا، إذ تعتمد النتيجة على سياسة صحيحة ومشغّل مدعوم.",
+  "requirements": [
+    "Linux (glibc 2.28+) أو macOS على Apple Silicon؛ تشغيل Linux عبر WSL 2 تجريبي. مسار Windows الأصلي ما زال تطويريًا وغير مؤهل للإنتاج.",
+    "أحد مشغلات العزل: Docker Desktop أو Docker Engine 28+، أو Podman 5.x على Linux مع cgroups v2 ومقبس مستخدم نشط، أو MicroVM مع Hypervisor.framework على macOS أو KVM على Linux.",
+    "Kubernetes عند النشر العنقودي؛ يجب أن يطبق CNI سياسات NetworkPolicy.",
+    "CLI وGateway محليان؛ حزمة PyPI المسماة openshell هي Python SDK فقط ولا تثبت CLI.",
+    "نموذج أو مزود استدلال عند تشغيل وكيل فعلي؛ تكاليف الاستدلال منفصلة عن ترخيص OpenShell."
+  ],
+  "quickStart": [
+    "راجع Support Matrix وحدد مشغل العزل المدعوم على جهازك.",
+    "ثبّت CLI والبوابة المحلية من حزمة إصدار موثقة؛ README يعرض install.sh، ويمكن تنزيل ملفات الإصدار مباشرة بدل تشغيل سكربت غير مفحوص.",
+    "تحقق من الاتصال بالبوابة باستخدام openshell status.",
+    "أنشئ sandbox تجريبيًا باسم demo؛ الصورة الافتراضية Ubuntu مصغّرة ولا تحتوي وكيلًا مثبتًا.",
+    "راجع سياسة الملفات والشبكة قبل ربط أي حساب أو سر، ثم اتبع دليل Run Your First Agent لتشغيل وكيل تجريبي بصلاحيات محدودة."
+  ],
+  "costs": {
+    "license": "لا توجد رسوم ترخيص للبرنامج نفسه وفق Apache-2.0.",
+    "local": "تكلفة الجهاز والقرص والذاكرة ومشغل العزل؛ وتضاف تكلفة استدلال النموذج إن كان عبر API مدفوع.",
+    "cloud": "تكلفة عقد Kubernetes والتخزين والشبكة والمراقبة، إضافة إلى تكلفة مزود النموذج إن استُخدم.",
+    "paidServices": "لا يلزم اشتراك NVIDIA مدفوع لبدء تجربة محلية أساسية؛ أي نموذج أو بنية سحابية خارجية قد تكون مدفوعة.",
+    "estimate": "لا توجد تكلفة شهرية موحدة؛ تتغير حسب عدد sandboxes والموارد ومزود الاستدلال."
+  },
+  "localVsCloud": {
+    "local": "Gateway محلي على الجهاز مع sandboxes عبر Docker/Podman/MicroVM؛ مناسب للتجارب الفردية والتحقق من السياسات.",
+    "cloud": "يمكن نشر Gateway على Kubernetes عبر Helm لإدارة عدة sandboxes؛ يتطلب CNI يدعم NetworkPolicy وإعداد تشغيل ومراقبة وصلاحيات تشغيلية.",
+    "tradeoff": "المحلي أبسط وأقل اعتمادًا على خدمات خارجية لكنه محدود بموارد الجهاز؛ Kubernetes أنسب للتشغيل المشترك لكنه يضيف تكلفة وتعقيدًا تشغيليًا."
+  },
+  "alternatives": [
+    {
+      "name": "Docker/Podman مع سياسات يدوية",
+      "fit": "تجارب محلية بسيطة",
+      "tradeoff": "مرونة عالية لكن تحتاج بناء طبقة السياسات والتدقيق وإدارة الأسرار بنفسك."
+    },
+    {
+      "name": "gVisor أو Kata Containers",
+      "fit": "عزل أحمال الحاويات",
+      "tradeoff": "توفر طبقات عزل مختلفة لكنها ليست بديلًا مباشرًا لبوابة OpenShell وسياسات اعتماد الوكيل على الأدوات."
+    },
+    {
+      "name": "Kubernetes NetworkPolicy مع OPA/Kyverno",
+      "fit": "حوكمة شبكات وسياسات عنقودية",
+      "tradeoff": "مناسبة للبنية المؤسسية لكنها تحتاج تجميعًا إضافيًا لإدارة هوية الوكيل والأسرار وسجلات طلباته."
+    }
+  ],
+  "limitations": [
+    "دعم Windows الأصلي موصوف بأنه تطويري وغير مؤهل للإنتاج؛ وWSL 2 تجريبي.",
+    "الصورة الافتراضية لا تتضمن وكيلًا؛ على المشغل تثبيت الوكيل ومراجعة موفر النموذج.",
+    "السياسات الفعالة قد تجمع سياسة sandbox مع قواعد يضيفها Provider؛ يجب مراجعة effective policy وليس ملف الأساس فقط.",
+    "الضمانات الأمنية هي تصميم وادعاءات المشروع؛ يلزم اختبار إعدادك ونسختك وبيئتك ولا تُعاملها كبديل لمراجعة أمنية مستقلة.",
+    "إعلان الانتقال إلى CNCF يعني احتمال تغير مسارات المستودعات والحوكمة؛ README يطلب استخدام NVIDIA/OpenShell حتى اكتمال النقل."
+  ],
+  "improvements": [
+    {
+      "title": "دليل سياسات عربي مع قوالب دنيا قابلة للتحقق",
+      "problem": "المستخدم العربي يحتاج فهم صلاحيات الملفات والشبكة قبل تشغيل وكيل، والأمثلة العامة قد تُنسخ دون فهم.",
+      "approach": "إضافة دليل عربي يشرح كل قاعدة مع سياسة قراءة فقط، وسياسة مجلد مشروع، وسياسة شبكة لمزود واحد؛ وإرفاق اختبارات تثبت أن الوجهات غير المسموح بها تُرفض.",
+      "stack": "Markdown, YAML, OpenShell CLI, openshell-prover",
+      "steps": [
+        "تحديد ثلاث حالات استخدام تعليمية صغيرة.",
+        "كتابة سياسة أقل صلاحية لكل حالة.",
+        "إضافة حالات اختبار للقبول والرفض.",
+        "ربط كل مثال بمخرجات policy prover وتحديثه مع كل إصدار."
+      ],
+      "metric": "نسبة الأمثلة التي تمر باختبارات السياسة دون توسيع صلاحيات غير مقصود.",
+      "difficulty": "متوسط (تقدير)",
+      "risks": "قد تصبح الأمثلة قديمة عند تغير مخطط السياسة؛ يجب ربطها بإصدارات محددة.",
+      "sources": [
+        {
+          "url": "https://docs.nvidia.com/openshell/latest/how-it-works/policies/overview"
+        },
+        {
+          "url": "https://docs.nvidia.com/openshell/latest/about/installation"
+        }
+      ]
+    },
+    {
+      "title": "اختبارات انحدار لتوسّع الصلاحيات بين إصدارات السياسة",
+      "problem": "قد تمنح مراجعة سياسة جديدة وصولًا إضافيًا غير مقصود مقارنة بالنسخة السابقة.",
+      "approach": "بناء مجموعة سياسات مرجعية تقارن الوجهات والملفات والطلبات المسموحة قبل وبعد التعديل، وتوقف الدمج عند ظهور صلاحية جديدة غير موثقة.",
+      "stack": "Python, YAML, openshell-prover, GitHub Actions",
+      "steps": [
+        "تجميع سياسات أساسية تمثل حالات استخدام شائعة.",
+        "استخراج الحدود المسموحة لكل سياسة.",
+        "تشغيل prover على النسخة القديمة والجديدة.",
+        "إنشاء تقرير فرق يطلب موافقة بشرية على كل اتساع."
+      ],
+      "metric": "عدد تغييرات الصلاحيات غير المقصودة المكتشفة قبل الدمج.",
+      "difficulty": "متوسط-مرتفع (تقدير)",
+      "risks": "قد ينتج إنذارات زائدة أو يغفل سلوكًا خارج ما تمثله مجموعة الاختبار.",
+      "sources": [
+        {
+          "url": "https://docs.nvidia.com/openshell/latest/how-it-works/policies/overview"
+        },
+        {
+          "url": "https://docs.nvidia.com/openshell/latest/about/architecture"
+        }
+      ]
+    },
+    {
+      "title": "لوحة موارد وتدقيق لكل Sandbox",
+      "problem": "تحتاج الفرق معرفة تكلفة تشغيل كل وكيل وزمنه واستهلاكه دون كشف محتوى المستخدم.",
+      "approach": "تجميع مقاييس البوابة والسجلات المهيكلة مع مؤشرات CPU والذاكرة وحركة الشبكة، وإظهار هوية الوكيل والسياسة وسبب الرفض.",
+      "stack": "OpenTelemetry, OCSF, Prometheus, Grafana",
+      "steps": [
+        "تحديد المقاييس التي لا تحتوي prompts أو أسرارًا.",
+        "ربط كل sandbox بمعرف تشغيل وسياسة.",
+        "بناء لوحة موارد ورفض ومدة تشغيل.",
+        "إضافة تصدير تدقيقي مع سياسة احتفاظ واضحة."
+      ],
+      "metric": "دقة ربط المقاييس بكل sandbox وزمن اكتشاف طلب مرفوض.",
+      "difficulty": "مرتفع (تقدير)",
+      "risks": "قد يؤدي جمع سجلات أكثر من اللازم إلى مخاطر خصوصية أو كلفة تخزين.",
+      "sources": [
+        {
+          "url": "https://docs.nvidia.com/openshell/latest/about/architecture"
+        },
+        {
+          "url": "https://docs.nvidia.com/openshell/latest/about/installation"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "بيئة CI معزولة لوكلاء إصلاح الأخطاء",
+      "problem": "تشغيل وكلاء البرمجة داخل CI قد يعرّض المستودع أو أسرار البناء لصلاحيات أوسع من المهمة.",
+      "approach": "إنشاء sandboxes مؤقتة لكل مهمة، مع ملفات مشروع محددة وشبكة تسمح فقط بمصادر الاعتماد اللازمة، ثم حذف البيئة بعد جمع الاختبارات.",
+      "stack": "GitHub Actions, OpenShell, Docker, Python",
+      "steps": [
+        "إنشاء صورة sandbox خاصة بالاختبارات.",
+        "تعريف سياسة قراءة وكتابة لمجلد العمل فقط.",
+        "السماح بمصادر الحزم المحددة فقط.",
+        "تشغيل الوكيل والاختبارات ثم حفظ السجل وحذف sandbox."
+      ],
+      "metric": "نسبة المهام التي تنتهي دون وصول خارج السياسة، وزمن الإنشاء والتنظيف.",
+      "difficulty": "مرتفع (تقدير)",
+      "risks": "تعطل تنزيل الاعتماديات أو تسرب أسرار CI إذا أخطئت السياسة.",
+      "sources": [
+        {
+          "url": "https://docs.nvidia.com/openshell/latest/about/architecture"
+        },
+        {
+          "url": "https://docs.nvidia.com/openshell/latest/how-it-works/policies/overview"
+        }
+      ]
+    },
+    {
+      "title": "مختبر عربي لتعليم أمن وكلاء الذكاء الاصطناعي",
+      "problem": "المتعلمون يحتاجون رؤية عملية للفارق بين الصلاحية الواسعة والحد الأدنى من الوصول.",
+      "approach": "واجهة تعليمية تعرض سياسة sandbox وطلبات الوكيل وقرار السماح أو الرفض مع تمارين غير متصلة ببيانات حقيقية.",
+      "stack": "FastAPI, OpenShell, YAML, SQLite, RTL Web UI",
+      "steps": [
+        "إعداد سيناريوهات ملفات وشبكة وهمية.",
+        "بناء واجهة عربية لعرض السياسة والطلبات.",
+        "إضافة تمارين لتعديل القواعد ومقارنة الأثر.",
+        "قياس فهم المتعلم قبل وبعد كل تمرين."
+      ],
+      "metric": "نسبة نجاح المتعلم في توقع نتيجة سياسة جديدة.",
+      "difficulty": "متوسط (تقدير)",
+      "risks": "قد توحي المحاكاة بأن الحماية مضمونة؛ يجب تمييز المحاكاة عن التنفيذ الحقيقي.",
+      "sources": [
+        {
+          "url": "https://docs.nvidia.com/openshell/latest/how-it-works/policies/overview"
+        },
+        {
+          "url": "https://docs.nvidia.com/openshell/latest/about/architecture"
+        }
+      ]
+    },
+    {
+      "title": "مساعد بحث محلي بصلاحيات ملفات محدودة",
+      "problem": "المساعد المحلي قد يحتاج قراءة ملفات مشروع محدد دون امتلاك وصول شامل إلى الجهاز.",
+      "approach": "تشغيل وكيل داخل sandbox يقرأ مجلدًا مختارًا فقط ويصل إلى نموذج محلي أو مزود محدد عبر Provider مع تسجيل الطلبات.",
+      "stack": "OpenShell, local model endpoint, Python SDK, SQLite",
+      "steps": [
+        "اختيار مجلد تجريبي غير حساس.",
+        "تعريف سياسة قراءة فقط لذلك المجلد.",
+        "ربط endpoint النموذج دون تمرير أسرار إلى الوكيل.",
+        "اختبار رفض الوصول إلى بقية الملفات وتوثيق النتيجة."
+      ],
+      "metric": "عدد محاولات الوصول خارج المجلد التي تُرفض مع بقاء مهام البحث ناجحة.",
+      "difficulty": "متوسط-مرتفع (تقدير)",
+      "risks": "قد يظل النموذج أو سجلاته بحاجة إلى موارد GPU؛ كما أن أخطاء السياسة قد تكشف ملفات غير مقصودة.",
+      "sources": [
+        {
+          "url": "https://docs.nvidia.com/openshell/latest/about/architecture"
+        },
+        {
+          "url": "https://docs.nvidia.com/openshell/latest/about/installation"
+        }
+      ]
+    }
+  ],
+  "religious": [],
+  "testStatus": "not_run",
+  "testEvidence": null,
+  "sources": [
+    {
+      "title": "NVIDIA OpenShell README (main)",
+      "url": "https://raw.githubusercontent.com/NVIDIA/OpenShell/main/README.md"
+    },
+    {
+      "title": "NVIDIA OpenShell LICENSE (Apache-2.0)",
+      "url": "https://raw.githubusercontent.com/NVIDIA/OpenShell/main/LICENSE"
+    },
+    {
+      "title": "NVIDIA OpenShell — Installation (latest v0.1.9)",
+      "url": "https://docs.nvidia.com/openshell/latest/about/installation"
+    },
+    {
+      "title": "NVIDIA OpenShell — Architecture",
+      "url": "https://docs.nvidia.com/openshell/latest/about/architecture"
+    },
+    {
+      "title": "NVIDIA OpenShell — Sandbox Policies",
+      "url": "https://docs.nvidia.com/openshell/latest/how-it-works/policies/overview"
+    },
+    {
+      "title": "NVIDIA OpenShell — Support Matrix",
+      "url": "https://docs.nvidia.com/openshell/latest/about/support-matrix"
+    },
+    {
+      "title": "NVIDIA OpenShell — Run Your First Agent",
+      "url": "https://docs.nvidia.com/openshell/latest/about/run-your-first-agent"
+    },
+    {
+      "title": "NVIDIA OpenShell — Kubernetes setup",
+      "url": "https://docs.nvidia.com/openshell/latest/kubernetes/setup"
+    }
+  ],
+  "reviewNotes": "README وLICENSE قُرئا من raw.githubusercontent.com، ووثائق التثبيت والعمارة والسياسات من docs.nvidia.com. لم تُشغّل أوامر التثبيت أو اختبارات المشروع في هذه الدورة. أحدث الوثائق المفتوحة تعرض v0.1.9. لا توجد مطابقة في Feed الحالي، لذلك هذا بحث مكتبة غير منشور وليس سجل مشروع على الموقع."
+}

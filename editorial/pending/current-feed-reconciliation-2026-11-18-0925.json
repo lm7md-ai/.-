@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-18T09:25:22+03:00",
+  "sourceMainSha": "04cdf1521adca0115a177ddb9880841b64cdb0d7",
+  "feedGeneratedAt": "2026-11-18T00:56:47+00:00",
+  "historicalIncomingAudit": {
+    "files": 133,
+    "lastFullAuditAt": "2026-11-18T06:07:39+03:00",
+    "occurrences": 1352,
+    "importedEditorialMatches": 1217,
+    "feedMatches": 224,
+    "seenOnlyOccurrences": 135,
+    "pendingUnique": 95,
+    "duplicateAppearances": 37,
+    "idUrlConflicts": 0,
+    "expiredConfirmed": 0,
+    "previousReport": "editorial/pending/current-feed-revalidation-2026-11-18-0607.json"
+  },
+  "currentPrIncoming": {
+    "files": 4,
+    "occurrences": 44,
+    "uniqueIds": 44,
+    "exactFeedMatches": 41,
+    "pending": 3,
+    "duplicates": 0,
+    "structuralErrors": 0,
+    "branchEditorialBefore": 1093,
+    "mainEditorial": 1059,
+    "branchEditorialAfter": 1100,
+    "previousBranchOnly": 34,
+    "previousBranchOnlyMatching": 31,
+    "previousBranchOnlyPending": 3
+  },
+  "pendingItems": [
+    {
+      "id": "74a4e87de084a0a8b9",
+      "url": "https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026",
+      "titleAr": "مايكروسوفت تربط انقطاع البريد بخلل في إصلاح أُدخل خلال يوليو",
+      "seen": true,
+      "reason": "ID/URL pair is absent from the current Main feed; retain without import"
+    },
+    {
+      "id": "8331a3aa13cbf4dc7e",
+      "url": "https://opencode.ai/product/browse",
+      "titleAr": "OpenCode Browse يتيح لوكلاء البرمجة استخدام متصفح المستخدم بإشرافه",
+      "seen": true,
+      "reason": "ID/URL pair is absent from the current Main feed; retain without import"
+    },
+    {
+      "id": "67dee7074b335d74dc",
+      "url": "https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains",
+      "titleAr": "دراسة من كورنيل: رعي الأغنام بين الألواح الشمسية قد يدعم التنوع الحيوي",
+      "seen": true,
+      "reason": "ID/URL pair is absent from the current Main feed; retain without import"
+    }
+  ],
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "seen": true,
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inPrEditorial": false,
+      "unpublishedResearch": "editorial/library/openshell-refresh-2026-11-18-0246.json"
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "seen": true,
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inPrEditorial": false,
+      "officialSource": "https://www.canva.com/ai-research/craft-api/"
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "seen": true,
+      "inFeed": false,
+      "inMainEditorial": false,
+      "inPrEditorial": false,
+      "officialSource": "https://support.1password.com/1password-for-agents/"
+    }
+  ],
+  "decision": "Import only the 41 exact ID/URL matches. Keep the three nonmatching records in this pending report. Preserve all prior editorial entries and fields.",
+  "sourcePrHeadSha": "d43b92c6501dea95ce127d53805a683dbe3aeff1",
+  "sourceBranch": "editorial/run-2026-11-16-2116",
+  "validation": {
+    "workflowRun": 44253495838,
+    "conclusion": "success",
+    "unitTests": 30,
+    "editorialValidated": 1100,
+    "javascriptSyntaxChecks": "success",
+    "officialImportCommandExecuted": false,
+    "localPythonAvailable": false
+  }
+}

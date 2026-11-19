@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "research-only-not-published",
+  "reviewedAt": "2026-11-17T17:39:52+03:00",
+  "sourceMainSha": "eea564780d85671379cb85808980d918d4684243",
+  "project": {
+    "repository": "NVIDIA/NemoClaw",
+    "name": "NVIDIA NemoClaw",
+    "url": "https://github.com/NVIDIA/NemoClaw",
+    "status": "active_alpha",
+    "archived": false,
+    "defaultBranch": "main",
+    "readmeSha": "5c4cd0f62aedfd485c04611595b65cabb5b5f499",
+    "license": "Apache-2.0",
+    "licenseVerified": true,
+    "licenseSha": "c19172302050f1ea47c7cbf08191df19e58844fb",
+    "feedMembership": {
+      "feedSha": "e06d59519b3b235bb96f570e0647081700e3874e",
+      "feedItems": 800,
+      "exactUrlMatches": 0,
+      "urlSubstringMatches": 0,
+      "titleMatches": 0,
+      "feedId": null,
+      "decision": "لا توجد مطابقة حرفية للرابط أو العنوان في Feed المنشور؛ لم يُنشأ معرف بديل."
+    },
+    "overview": "NVIDIA NemoClaw طبقة مرجعية لإعداد وتشغيل وكلاء OpenClaw وHermes وLangChain Deep Agents Code داخل صناديق OpenShell. تضيف إعدادًا موجّهًا، ونسخ blueprints بإصدارات، وربط الاستدلال، وسياسات الشبكة، والتكاملات المُدارة، وحفظ حالة مساحة العمل، وإدارة دورة حياة الصندوق. لا تستبدل OpenShell ولا محرك الوكيل؛ تنسّق استخدامهما.",
+    "requirements": "المتطلبات الرسمية الحالية: 4 vCPU على الأقل، و8 GB RAM (16 GB موصى بها)، و20 GB مساحة فارغة (40 GB موصى بها). صورة sandbox تقارب 2.4 GB مضغوطة. Node.js 22.19+ وnpm 10+ وأداة SHA-256 عند الحاجة إلى تثبيت/ترقية Node عبر nvm. Docker Engine أو Docker Desktop أو Colima على المنصات المختبرة؛ rootless Podman خيار مؤهل فقط على مسارات Linux وWindows WSL2 المحددة. حالة المنصات ليست موحدة: DGX Spark Tested، وDGX Station وWindows WSL2 Tested with limitations، وبعض المسارات الأخرى Deferred أو Experimental.",
+    "quickStart": "1) اقرأ صفحة Prerequisites ومصفوفة Platform Support لتتأكد من حالة نظامك. 2) جهّز runtime حاويات مدعومًا وموارد لا تقل عن الحدود الرسمية. 3) راجع المثبّت الرسمي قبل تشغيله؛ التثبيت قد يطلب صلاحيات إدارية ويجهز Docker على بعض الأنظمة. 4) أكمل nemoclaw onboard واختر OpenClaw أو Hermes أو LangChain Deep Agents Code ومزود الاستدلال. 5) افحص حالة الصندوق عبر nemoclaw <sandbox-name> status. 6) افتح dashboard أو اتصل بالوكيل بعد ظهور ملخص NemoClaw is ready. لم أنفذ التثبيت أو الأوامر في هذه المراجعة.",
+    "costs": "الشفرة تحت Apache-2.0 ولا توجد رسوم ترخيص للمشروع نفسه. لا توجد كلفة موحدة للاستدلال: مزودات NVIDIA Endpoints وOpenRouter وOpenAI وAnthropic وGoogle Gemini تحاسب وفق خططها، بينما Ollama/vLLM/llama.cpp/NIM محليًا تنقل التكلفة إلى العتاد والطاقة والتخزين. صورة sandbox نحو 2.4 GB مضغوطة، والحد الأدنى المعلن 20 GB مساحة حرة؛ لذلك لا يصح وصف المسار المحلي بأنه مجاني بلا كلفة عتاد.",
+    "localVsCloud": {
+      "local": "يمكن تشغيل الوكيل داخل OpenShell على الجهاز المضيف، مع Ollama أو خادم vLLM قائم أو مسارات vLLM مُدارة أو llama.cpp بحسب المنصة وحالة الدعم. Local NVIDIA NIM موسوم Experimental ويتطلب GPU وأدوات NVIDIA؛ وبعض مسارات vLLM لها قيود أو متطلبات خاصة.",
+      "cloud": "يمكن توجيه الاستدلال إلى NVIDIA Endpoints وOpenRouter وOpenAI وAnthropic وGoogle Gemini أو endpoint متوافق. تبقى رسوم المزود الخارجي منفصلة، وتُدار بيانات الاعتماد عبر OpenShell وفق المسار الموثق."
+    },
+    "alternatives": "إذا كانت الحاجة الأساسية هي عزل العمليات وسياسات الشبكة دون onboarding لوكيل مدعوم، فقارن استخدام OpenShell مباشرة. إذا كانت الحاجة بناء وكيل Python مخصص لا تشغيل وكيل جاهز داخل sandbox، فقارن Pydantic AI أو SDK المزود مباشرة. هذه بدائل بحسب نطاق الاستخدام وليست بدائل متطابقة وظيفيًا.",
+    "risks": "المشروع موسوم Alpha / Early preview ومراجعة المساهمات best-effort بلا ضمان استجابة. حالة دعم المنصات تختلف ويجب عدم تعميم صف Tested على Deferred أو Experimental. مسار Docker قد يضيف المستخدم إلى مجموعة docker ذات أثر يعادل صلاحيات root؛ لا ينبغي منحه لحسابات غير موثوقة. سياسات الشبكة والملفات والعمليات تعتمد على المنصة وإعداد الصندوق، ولا تعني ضمانًا مطلقًا. مزودات الاستدلال السحابية قد تترتب عليها رسوم، ومسارات الاستدلال المحلي قد تحتاج GPU وذاكرة أكبر بكثير من الحد الأدنى لتشغيل الصندوق.",
+    "testStatus": "not_run",
+    "testEvidence": null,
+    "metrics": {
+      "archived": false,
+      "defaultBranch": "main",
+      "stars": "not_captured",
+      "forks": "not_captured",
+      "openIssues": "not_captured",
+      "measuredAt": "2026-11-17T17:39:52+03:00",
+      "note": "GitHub search أكد المستودع غير مؤرشف؛ واجهة البحث المتاحة لم تُرجع أعداد النجوم والفروع والمشكلات، لذلك لم تُخترع مؤشرات."
+    },
+    "sources": [
+      {
+        "title": "NVIDIA NemoClaw repository and README",
+        "url": "https://github.com/NVIDIA/NemoClaw"
+      },
+      {
+        "title": "Apache-2.0 license",
+        "url": "https://github.com/NVIDIA/NemoClaw/blob/main/LICENSE"
+      },
+      {
+        "title": "Official prerequisites",
+        "url": "https://docs.nvidia.com/nemoclaw/latest/user-guide/openclaw/get-started/prerequisites"
+      },
+      {
+        "title": "Official OpenClaw quickstart",
+        "url": "https://docs.nvidia.com/nemoclaw/latest/user-guide/openclaw/get-started/quickstart"
+      },
+      {
+        "title": "Architecture overview",
+        "url": "https://docs.nvidia.com/nemoclaw/latest/user-guide/openclaw/about/how-it-works"
+      },
+      {
+        "title": "Platform support matrix",
+        "url": "https://docs.nvidia.com/nemoclaw/latest/user-guide/openclaw/reference/platform-support"
+      },
+      {
+        "title": "Inference provider choices",
+        "url": "https://docs.nvidia.com/nemoclaw/latest/user-guide/openclaw/inference/learn-and-choose/choose-inference-provider"
+      }
+    ],
+    "improvements": [
+      {
+        "title": "مدقق جاهزية قبل التثبيت",
+        "problem": "اختلاف حالة الدعم والموارد بين المنصات قد يجعل المستخدم يبدأ مسارًا غير مؤهل.",
+        "approach": "فحص قراءة فقط للمعالج والذاكرة والمساحة وNode وruntime وGPU، ثم مطابقة النتيجة مع مصفوفة الدعم وإظهار Tested/Limitations/Deferred قبل أي تغيير.",
+        "stack": "TypeScript CLI، platform-matrix.json، JSON Schema، unit tests.",
+        "steps": [
+          "جمع معلومات النظام دون تعديل.",
+          "مطابقة النظام والـruntime بمصفوفة الدعم.",
+          "التحقق من حدود CPU/RAM/disk.",
+          "عرض سبب كل تحذير أو منع.",
+          "اختبار حالات منصات مدعومة وغير مدعومة."
+        ],
+        "metric": "صفر حالات تصنيف منصة Deferred على أنها Tested في مجموعة الاختبار.",
+        "difficulty": "متوسط إلى مرتفع (تقدير)",
+        "risks": "قد تتأخر مصفوفة الدعم عن تغييرات الأنظمة أو تعريفات العتاد.",
+        "sources": [
+          {
+            "title": "Prerequisites",
+            "url": "https://docs.nvidia.com/nemoclaw/latest/user-guide/openclaw/get-started/prerequisites"
+          },
+          {
+            "title": "Platform Support",
+            "url": "https://docs.nvidia.com/nemoclaw/latest/user-guide/openclaw/reference/platform-support"
+          }
+        ]
+      },
+      {
+        "title": "تقرير شفاف لمسار الأسرار ووجهات الشبكة",
+        "problem": "يحتاج المشغّل إلى رؤية موحدة لمواضع حفظ بيانات الاعتماد والوجهات التي يسمح الوكيل بالاتصال بها.",
+        "approach": "توليد تقرير منقح يعرض أسماء المزودات والوجهات وقواعد egress والموافقات ومكان حفظ المراجع، دون إخراج قيم الأسرار.",
+        "stack": "TypeScript CLI، OpenShell policy APIs، JSON/HTML، اختبارات redaction.",
+        "steps": [
+          "قراءة إعدادات المزود والسياسة بصلاحية قراءة فقط.",
+          "تحويل الإعدادات إلى سجل موحد.",
+          "إخفاء أي قيمة سرية أو token.",
+          "عرض الوجهات المسموحة والمعلقة والمرفوضة.",
+          "اختبار التقرير على بيانات اصطناعية والتأكد من عدم ظهور أسرار."
+        ],
+        "metric": "تغطية 100% من الوجهات المضبوطة مع صفر قيم أسرار في التقرير.",
+        "difficulty": "مرتفع (تقدير)",
+        "risks": "قد يكشف التقرير أسماء خدمات داخلية حساسة إذا لم تُضبط صلاحيات مشاركته.",
+        "sources": [
+          {
+            "title": "Architecture overview",
+            "url": "https://docs.nvidia.com/nemoclaw/latest/user-guide/openclaw/about/how-it-works"
+          },
+          {
+            "title": "Platform Support",
+            "url": "https://docs.nvidia.com/nemoclaw/latest/user-guide/openclaw/reference/platform-support"
+          }
+        ]
+      },
+      {
+        "title": "محاكاة استعادة الصندوق قبل إعادة البناء",
+        "problem": "عمليات rebuild/recreate تحتاج تحققًا عمليًا من حفظ مساحة العمل وحدود بيانات الاعتماد قبل استبدال الصندوق.",
+        "approach": "إنشاء dry-run manifest وبصمات للملفات التي ستُنقل، مع اختبار استعادة على بيئة مؤقتة والتحقق من عدم نسخ مخزن الأسرار.",
+        "stack": "TypeScript CLI، OpenShell storage، JSON manifest، integration tests.",
+        "steps": [
+          "تحديد مسارات مساحة العمل التي يملكها OpenShell.",
+          "إنشاء manifest وبصمات دون نسخ الأسرار.",
+          "عرض الفرق قبل إعادة البناء.",
+          "تنفيذ الاستعادة في sandbox تجريبي.",
+          "مقارنة عدد الملفات والبصمات والتحقق من حدود الأسرار."
+        ],
+        "metric": "تطابق بصمات ملفات مساحة العمل بعد الاستعادة وصفر قيم اعتماد سرية داخل النسخة الاحتياطية.",
+        "difficulty": "مرتفع (تقدير)",
+        "risks": "المساحات الكبيرة والملفات المتغيرة أثناء النسخ قد تتطلب snapshot متسقًا.",
+        "sources": [
+          {
+            "title": "Architecture overview",
+            "url": "https://docs.nvidia.com/nemoclaw/latest/user-guide/openclaw/about/how-it-works"
+          },
+          {
+            "title": "OpenClaw quickstart and lifecycle guidance",
+            "url": "https://docs.nvidia.com/nemoclaw/latest/user-guide/openclaw/get-started/quickstart"
+          }
+        ]
+      }
+    ],
+    "spinoffs": [
+      {
+        "title": "مختبر تقييم سياسات الوكلاء",
+        "problem": "يصعب مقارنة صرامة سياسات الشبكة والملفات بين إعدادات sandbox مختلفة.",
+        "approach": "تشغيل مهام اصطناعية ثابتة داخل صناديق معزولة وتسجيل محاولات الوصول المسموح والمرفوض ونجاح المهمة.",
+        "stack": "Python، OpenShell CLI، JSONL، pytest.",
+        "steps": [
+          "إنشاء مجموعة مهام اصطناعية غير حساسة.",
+          "تعريف سياسة أساسية وسياسات مقارنة.",
+          "تشغيل الوكيل داخل sandbox مؤقت.",
+          "جمع سجلات الموافقات والرفض ونتيجة المهمة.",
+          "حساب معدل الحظر الصحيح ومعدل تعطيل المهام المشروعة."
+        ],
+        "metric": "معدل منع محاولات الوصول غير المصرح بها مع الحفاظ على نجاح المهام المسموحة.",
+        "difficulty": "متوسط إلى مرتفع (تقدير)",
+        "risks": "المهام الاصطناعية لا تغطي كل سلوك واقعي للوكلاء.",
+        "sources": [
+          {
+            "title": "Architecture overview",
+            "url": "https://docs.nvidia.com/nemoclaw/latest/user-guide/openclaw/about/how-it-works"
+          },
+          {
+            "title": "Platform Support",
+            "url": "https://docs.nvidia.com/nemoclaw/latest/user-guide/openclaw/reference/platform-support"
+          }
+        ]
+      },
+      {
+        "title": "مقارنة تكلفة الاستدلال المحلي والسحابي",
+        "problem": "اختيار مزود النموذج دون قياس تكلفة المهمة وزمن الاستجابة على نفس المدخلات يؤدي إلى مقارنة مضللة.",
+        "approach": "تشغيل prompts ثابتة على مزود محلي وآخر مستضاف، وتسجيل tokens والكمون والتكلفة التقديرية والطاقة عند توفر القياس.",
+        "stack": "Python، OpenAI-compatible clients، CSV/JSON، قياس GPU اختياري.",
+        "steps": [
+          "اختيار مجموعة prompts غير حساسة.",
+          "تثبيت إعدادات النماذج وإصداراتها.",
+          "تشغيل الحالات على المزود المحلي.",
+          "إعادة الحالات على المزود السحابي.",
+          "حساب التكلفة لكل مهمة ناجحة وp95 latency.",
+          "توثيق اختلاف الجودة والقيود."
+        ],
+        "metric": "تكلفة المهمة الناجحة وp95 latency لكل مسار.",
+        "difficulty": "متوسط (تقدير)",
+        "risks": "تغير الأسعار وحدود المعدل واختلاف العتاد يجعل النتائج مرتبطة بتاريخ القياس.",
+        "sources": [
+          {
+            "title": "Inference provider choices",
+            "url": "https://docs.nvidia.com/nemoclaw/latest/user-guide/openclaw/inference/learn-and-choose/choose-inference-provider"
+          },
+          {
+            "title": "Prerequisites",
+            "url": "https://docs.nvidia.com/nemoclaw/latest/user-guide/openclaw/get-started/prerequisites"
+          }
+        ]
+      }
+    ],
+    "religious": []
+  },
+  "developerDisplayRequirements": "اعرضه كبطاقة «بحث فقط — غير منشور» دون Feed ID أو زر تشغيل/نشر أو شارة اختبار. أظهر Alpha، Apache-2.0، وقت المراجعة، متطلبات العتاد، مصفوفة دعم المنصات، مسارات الاستدلال المحلي/السحابي، التكاليف المتغيرة، البدائل والقيود. لا تخلطه مع NVIDIA OpenShell؛ وضّح أن NemoClaw طبقة onboarding وإدارة وكلاء فوق OpenShell.",
+  "nextAction": "يبقى dossier بحثيًا. لا يُنشأ Feed ID ولا يُضاف إلى site/data/editorial.json إلا إذا ظهر لاحقًا عنصر مشروع مطابق حرفيًا في Feed."
+}

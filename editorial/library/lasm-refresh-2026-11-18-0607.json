@@ -1,0 +1,246 @@
+{
+  "version": 1,
+  "publicationStatus": "unpublished_research",
+  "reviewedAt": "2026-11-18T06:07:39+03:00",
+  "repository": "Millillion/lasm",
+  "url": "https://github.com/Millillion/lasm",
+  "feedMembership": {
+    "status": "outside_current_feed",
+    "checkedMainSha": "04cdf1521adca0115a177ddb9880841b64cdb0d7",
+    "checkedAt": "2026-11-18T06:07:39+03:00",
+    "decision": "research_only_no_feed_identity"
+  },
+  "upstream": {
+    "archived": false,
+    "license": "MIT",
+    "templateAndExampleLicense": "MIT-0",
+    "stars": 107,
+    "forks": 6,
+    "openIssues": 13,
+    "lastPushedAt": "2026-11-17T20:22:54Z",
+    "metricsMeasuredAt": "2026-11-18T00:07:25+03:00",
+    "readmeSha": "5beab259c8c7b0184e04eaf95cd61bf01a0174e9",
+    "licenseSha": "46b25ff7d8953b8fc88d7ed6d37c6f1550a39193",
+    "licenseMit0Sha": "efd4333295cd92e0e86e100390e3ba2658f1bbc0"
+  },
+  "overview": "Lasm يحول Lean 4 إلى WebAssembly ويستهدف Node.js وBun وDeno والمتصفح وبيئات serverless وedge وWASI. README الحالي يعرض Quick Facts بأن @lasm/cli 0.8.0 هو الإصدار الحالي، بينما صفحة docs/release/0.9.0-notes.md موجودة وتصف 0.9.0 بأنها Stage 0 مع تغييرات كاسرة؛ لذلك حالة الإصدار المنشور غير محسومة، ويجب تأكيد بيانات npm قبل أي ترقية. يذكر README أن Conduit يحتوي 52 proposition مثبتة و307 theorem، وأن اختبارات المنصات تستخدم runtimes أو محاكيات محلية ولا تنشر إلى حسابات cloud حقيقية.",
+  "requirements": [
+    "Lean 4.35.0 بالضبط؛ الأداة تثبته ولا يتطلب البناء elan.",
+    "Node.js 24+؛ Bun 1.4.4 أو Deno 2.9.6 يمكن أن يكونا runtime للمترجم.",
+    "Linux x64/arm64 وmacOS x64/arm64 وWindows x64 للبناء؛ تطبيقات Node تتطلب glibc 2.28+ أو musl حسب الحزمة.",
+    "ذاكرة 512MB حد أدنى معلن؛ 1GB موصى به لحركة حقيقية.",
+    "الإصدار 0.9.0 يكسر التوافق: تغييرات exportDefault وNode.serve والقوالب وCLI وLasm.UI وحذف Lasm.RPC."
+  ],
+  "quickStart": [
+    "npm create @lasm@latest my-app -- --template hono",
+    "cd my-app && npm install && npm run dev",
+    "للتجربة على هدف آخر استخدم --deploy/--target المناسب ثم أداة المنصة المحلية؛ لا تعتبر البناء المحلي نشرًا سحابيًا."
+  ],
+  "costs": {
+    "license": "MIT للمترجم والمكتبة؛ MIT-0 للقوالب والأمثلة وعينات الوثائق.",
+    "local": "لا رسوم ترخيص؛ التكلفة المحلية هي الجهاز وأدوات Node/Bun/Deno ووقت البناء.",
+    "cloud": "رسوم Workers/Lambda/Vercel/Netlify وغيرها منفصلة وتحددها المنصة وحجم الاستخدام؛ لم أسجل أسعارًا متغيرة.",
+    "pricingEvidence": "لا يوجد تسعير تجاري لـLasm نفسه في README المفتوح."
+  },
+  "localVsCloud": {
+    "local": "CI يستخدم wrangler dev وVercel/Netlify offline وLambda Runtime Interface Emulator وDeno/Bun/wasmtime وPlaywright؛ هذه أدلة محلية.",
+    "cloud": "README وDEPLOYMENT ينصان صراحة أن CI لا ينشر إلى حسابات cloud حقيقية؛ الإنتاج يحتاج إعداد حساب المنصة وأدواتها."
+  },
+  "alternatives": [
+    {
+      "name": "Node.js/Bun/Deno مباشرة",
+      "fit": "الأبسط إذا كان الفريق يفضل JavaScript/TypeScript ولا يحتاج Lean أو مخرجات Wasm متعددة.",
+      "url": "https://nodejs.org/en"
+    },
+    {
+      "name": "Rust + wasm-bindgen",
+      "fit": "أنسب عندما يكون منطق التطبيق Rust وتحتاج ربطًا غنيًا بين Wasm وJavaScript.",
+      "url": "https://rustwasm.github.io/docs/wasm-bindgen/"
+    },
+    {
+      "name": "AssemblyScript",
+      "fit": "لغة قريبة من TypeScript مصممة خصيصًا لـWebAssembly؛ ليست بديلًا مطابقًا لـLean أو برهانه.",
+      "url": "https://www.assemblyscript.org/"
+    }
+  ],
+  "testStatus": "not_run",
+  "testEvidence": [],
+  "improvements": [
+    {
+      "title": "مدقق توافق Lasm 0.8/0.9 قبل الترقية",
+      "problem": "README يعلن 0.8.0 كالإصدار الحالي بينما توجد ملاحظات 0.9.0 الكاسرة؛ هذا التعارض قد يؤدي إلى توثيق ترقية غير منشورة أو غير مثبتة.",
+      "approach": "تحقق أولًا من النسخة المنشورة في npm ثم حلل ملاحظات الإصدار وملفات Lean/JS والقوالب لإنتاج تقرير ترحيل مشروط بالإصدار الفعلي.",
+      "stack": [
+        "Node.js 24",
+        "TypeScript",
+        "Lean source/import scanner"
+      ],
+      "steps": [
+        "اقرأ رقم الإصدار في README وبيانات npm الرسمية عند توفرها.",
+        "ثبّت الإصدار المنشور داخل مشروع تجريبي منفصل.",
+        "حلل imports والقوالب وواجهات Lasm المتغيرة.",
+        "طابق كل تغيير مع ملاحظة ترحيل موثقة.",
+        "ولّد تقريرًا بالملفات المتأثرة وخطوات تحقق مقترحة قبل أي تحديث."
+      ],
+      "metric": "نسبة حالات التغيير المكتشفة بدقة، ونسبة المشاريع التجريبية التي تُبنى دون أخطاء بعد ترحيل معتمد.",
+      "difficulty": "متوسط إلى مرتفع (تقدير)",
+      "risks": "قد يتأخر تحديث README أو registry؛ والتحليل الساكن قد يفوّت الاستدعاءات الديناميكية.",
+      "sources": [
+        {
+          "title": "Lasm 0.9.0 release notes",
+          "url": "https://github.com/Millillion/lasm/blob/main/docs/release/0.9.0-notes.md"
+        },
+        {
+          "title": "Lasm README",
+          "url": "https://github.com/Millillion/lasm/blob/main/README.md"
+        }
+      ]
+    },
+    {
+      "title": "مصدّر أدلة توافق المنصات",
+      "problem": "جدول L0–L3 غني لكن قد يقرأه الزائر كتأكيد نشر سحابي حقيقي رغم أن الاختبارات محلية ومحاكاة.",
+      "approach": "مصدّر يربط كل منصة بأمر CI ونوع الدليل وحدوده وتاريخ آخر تشغيل، ويولد JSON/Markdown موحدًا.",
+      "stack": [
+        "Node.js",
+        "GitHub Actions artifacts",
+        "JSON Schema"
+      ],
+      "steps": [
+        "عرّف evidence level ومصدره لكل منصة.",
+        "اربط الصفوف بأسماء workflows وruns.",
+        "ميّز local emulator عن cloud deployment.",
+        "أصدر ملفًا آليًا بتاريخ القياس.",
+        "أضف اختبار اتساق يمنع ادعاء نشر حقيقي بلا دليل."
+      ],
+      "metric": "100% من صفوف المنصات لها evidence source وتاريخ؛ صفر ادعاء cloud غير موثق.",
+      "difficulty": "متوسط — تقدير تحريري.",
+      "risks": "قد تتغير أسماء workflows أو دلالات مستويات الدليل؛ يلزم مالك واضح للبيانات.",
+      "sources": [
+        {
+          "title": "Lasm testing methodology",
+          "url": "https://github.com/Millillion/lasm/blob/main/docs/TESTING.md"
+        },
+        {
+          "title": "Lasm deployment evidence",
+          "url": "https://github.com/Millillion/lasm/blob/main/docs/DEPLOYMENT.md"
+        }
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "مخطط توافق Lean/Wasm قبل النشر",
+      "problem": "اختيار target غير مدعوم أو API غير متاحة يكتشف متأخرًا أثناء build أو deploy.",
+      "approach": "واجهة/CLI تقرأ target وواجهات Lean/JS المستخدمة ثم تعرض مصفوفة التوافق والأدلة والقيود قبل البناء.",
+      "stack": [
+        "Lean 4.35.0",
+        "Node.js 24",
+        "WebAssembly feature metadata"
+      ],
+      "steps": [
+        "اقرأ manifest المشروع والهدف المطلوب.",
+        "استخرج واجهات Lasm.JS المستخدمة.",
+        "طابقها مع جدول targets والـ guards.",
+        "اعرض مستوى الدليل والقيود لكل هدف.",
+        "ولّد تقريرًا قابلًا للحفظ قبل البناء."
+      ],
+      "metric": "انخفاض إخفاقات target بسبب API غير مدعومة في مجموعة مشاريع تجريبية.",
+      "difficulty": "متوسط — تقدير تحريري.",
+      "risks": "قد لا يلتقط الاستدعاءات الديناميكية أو JavaScript الخارجي؛ يجب وصف النتيجة كتنبؤ لا ضمان.",
+      "sources": [
+        {
+          "title": "Lasm supported platforms",
+          "url": "https://github.com/Millillion/lasm/blob/main/README.md#supported-platforms"
+        },
+        {
+          "title": "Lasm testing",
+          "url": "https://github.com/Millillion/lasm/blob/main/docs/TESTING.md"
+        }
+      ]
+    }
+  ],
+  "religious": [],
+  "developerDisplayRequirements": [
+    "اعرض الشارة Research-only / غير منشور؛ لا تنشئ Feed ID.",
+    "اعرض version 0.9.0 وتاريخ قياس GitHub metrics.",
+    "اعرض Lean 4.35.0 وNode 24+ وBun/Deno requirements.",
+    "اعرض مصفوفة targets ومستوى L2/L3 مع توضيح أن CI يستخدم محاكيات محلية ولا ينشر إلى cloud حقيقي.",
+    "اعرض ترخيص MIT وMIT-0 للقوالب والأمثلة.",
+    "اعرض testStatus=not_run ولا تضع شارة tested."
+  ],
+  "sources": [
+    {
+      "title": "Lasm README",
+      "url": "https://github.com/Millillion/lasm/blob/main/README.md"
+    },
+    {
+      "title": "wasm-bindgen guide",
+      "url": "https://rustwasm.github.io/docs/wasm-bindgen/"
+    },
+    {
+      "title": "AssemblyScript",
+      "url": "https://www.assemblyscript.org/"
+    },
+    {
+      "title": "Lasm README (current 2026-11-18)",
+      "url": "https://github.com/Millillion/lasm/blob/main/README.md"
+    },
+    {
+      "title": "Lasm 0.9.0 release notes",
+      "url": "https://github.com/Millillion/lasm/blob/main/docs/release/0.9.0-notes.md"
+    },
+    {
+      "title": "Lasm testing methodology",
+      "url": "https://github.com/Millillion/lasm/blob/main/docs/TESTING.md"
+    },
+    {
+      "title": "Lasm deployment documentation",
+      "url": "https://github.com/Millillion/lasm/blob/main/docs/DEPLOYMENT.md"
+    },
+    {
+      "title": "Lasm MIT License",
+      "url": "https://github.com/Millillion/lasm/blob/main/LICENSE"
+    },
+    {
+      "title": "Lasm MIT-0 license scope",
+      "url": "https://github.com/Millillion/lasm/blob/main/LICENSE-MIT-0"
+    },
+    {
+      "title": "npm package page (403 during review; version not confirmed)",
+      "url": "https://www.npmjs.com/package/@lasm/cli"
+    }
+  ],
+  "readmeSha": "c812bf338d91fd2fc415ca5a74629d1cfdad7046",
+  "previousReadmeSha": "5beab259c8c7b0184e04eaf95cd61bf01a0174e9",
+  "licenseSha": "46b25ff7d8953b8fc88d7ed6d37c6f1550a39193",
+  "metrics": {
+    "stars": 107,
+    "forks": 6,
+    "openIssues": 14,
+    "measuredAt": "2026-11-18T06:07:39+03:00",
+    "source": "https://api.github.com/repos/Millillion/lasm"
+  },
+  "activity": {
+    "archived": false,
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-18T03:13:17Z",
+    "readmeChangedSincePreviousReview": true,
+    "licenseChangedSincePreviousReview": false,
+    "measuredAt": "2026-11-18T06:07:39+03:00"
+  },
+  "revalidationNotes": [
+    "قُرئ README الحالي كاملًا، وملاحظات إصدار 0.9.0، وdocs/TESTING.md، وdocs/DEPLOYMENT.md، وLICENSE وLICENSE-MIT-0.",
+    "README الحالي يوضح أن Node.js 24+ مطلوب لتطبيق مبني، وأن CI لا ينشر إلى حسابات سحابية حقيقية.",
+    "ترخيص المترجم والمكتبة MIT؛ القوالب والأمثلة المحددة متاحة أيضًا تحت MIT-0 وفق LICENSE-MIT-0.",
+    "لم تُشغّل أمثلة المشروع أو اختبارات المستودع في هذه الدورة؛ testStatus يبقى not_run.",
+    "تعارض الإصدار: README Quick Facts يقول إن الإصدار الحالي 0.8.0؛ توجد صفحة ملاحظات 0.9.0 لكنها لا تكفي وحدها لإثبات أن 0.9.0 منشور على npm.",
+    "صفحة npm الرسمية أعادت HTTP 403 في هذه الدورة؛ latest published version remains unconfirmed.",
+    "فتحت صفحة GitHub الرسمية وراجعت أقسام المنصات والـQuick Facts؛ بعض أهداف Bun/Deno/Edge/WASI تعمل أحادي الخيط ودون sockets/processes، بينما Node لديه runtime أوسع."
+  ],
+  "versionStatus": {
+    "readmeQuickFacts": "0.8.0",
+    "releaseNotesPage": "0.9.0",
+    "publishedNpmVersion": "not_confirmed",
+    "note": "README Quick Facts still labels @lasm/cli 0.8.0 as current, while docs/release/0.9.0-notes.md exists and describes 0.9.0 as Stage 0 with breaking changes. npmjs package page returned 403 during this run; do not assert 0.9.0 is the published current version without registry confirmation."
+  }
+}

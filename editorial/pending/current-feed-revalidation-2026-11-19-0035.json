@@ -1,0 +1,405 @@
+{
+  "schemaVersion": 1,
+  "runId": "2026-11-19-0035",
+  "reviewedAt": "2026-11-19T00:35:04+03:00",
+  "sourceMainSha": "5433ee1e8afba87941ed7f6c57fad38f70bcde1c",
+  "pullRequest": {
+    "number": 110,
+    "state": "open",
+    "draft": true,
+    "mergeable": true,
+    "headSha": "ae6bcde67166cc2f3a67ab26652a9627b082b790",
+    "baseSha": "e03f5be1e158566ff057cd05eb774f00f2525366",
+    "commitsAtReview": 84,
+    "changedFilesAtReview": 80,
+    "compareAgainstCurrentMain": {
+      "aheadBy": 83,
+      "behindBy": 0
+    }
+  },
+  "priorPullRequests": [
+    {
+      "number": 1,
+      "state": "closed",
+      "merged": true
+    },
+    {
+      "number": 2,
+      "state": "closed",
+      "merged": true
+    }
+  ],
+  "mainData": {
+    "feed": {
+      "generatedAt": "2026-11-18T20:28:16+00:00",
+      "items": 800,
+      "news": 700,
+      "projects": 100
+    },
+    "editorialEntries": 1059,
+    "seenIds": 5908,
+    "status": {
+      "state": "ok",
+      "lastAttemptAt": "2026-11-18T20:28:16+00:00",
+      "lastSuccessfulAt": "2026-11-18T20:28:16+00:00",
+      "sources": 26,
+      "sourceStates": {
+        "ok": 26
+      },
+      "collected": 422
+    }
+  },
+  "mainIncomingAudit": {
+    "files": 133,
+    "appearances": 1352,
+    "alreadyImportedAppearances": 1217,
+    "pendingAppearances": 135,
+    "pendingUniqueIdUrlPairs": 97,
+    "duplicatePendingAppearances": 38,
+    "exactCurrentFeedPairs": 0,
+    "absentCurrentFeedPairs": 97,
+    "idUrlConflicts": 0,
+    "confirmedExpired": 1,
+    "freshnessUnresolved": 96,
+    "correctionRequired": 0,
+    "evidence": "The detailed 133-file audit is recorded in current-feed-revalidation-2026-11-18-2338.json against this exact Main SHA. In this run, the 133 Main file blobs were compared with the PR branch: all names and SHAs matched; no Main incoming blob changed."
+  },
+  "prIncomingAudit": {
+    "totalFiles": 142,
+    "mainFiles": 133,
+    "branchOnlyFiles": [
+      "nabdh-news-2026-11-16-2116.json",
+      "nabdh-news-2026-11-18-0001.json",
+      "nabdh-news-2026-11-18-0246.json",
+      "nabdh-news-2026-11-18-0846.json",
+      "nabdh-news-2026-11-18-0925-reconciled.json",
+      "nabdh-news-2026-11-18-1836-matches.json",
+      "nabdh-news-2026-11-18-2043.json",
+      "nabdh-news-2026-11-18-2338.json",
+      "nabdh-news-2026-11-19-0005.json"
+    ],
+    "branchOnlyAppearances": 145,
+    "uniqueIdUrlPairs": 67,
+    "duplicateAppearances": 78,
+    "exactCurrentFeedPairs": 52,
+    "absentCurrentFeedPairs": 15,
+    "urlMismatches": 0,
+    "conflictingIds": 0,
+    "perFile": [
+      {
+        "file": "nabdh-news-2026-11-16-2116.json",
+        "appearances": 12,
+        "exact": 12,
+        "absent": 0
+      },
+      {
+        "file": "nabdh-news-2026-11-18-0001.json",
+        "appearances": 10,
+        "exact": 5,
+        "absent": 5
+      },
+      {
+        "file": "nabdh-news-2026-11-18-0246.json",
+        "appearances": 12,
+        "exact": 7,
+        "absent": 5
+      },
+      {
+        "file": "nabdh-news-2026-11-18-0846.json",
+        "appearances": 10,
+        "exact": 6,
+        "absent": 4
+      },
+      {
+        "file": "nabdh-news-2026-11-18-0925-reconciled.json",
+        "appearances": 41,
+        "exact": 30,
+        "absent": 11
+      },
+      {
+        "file": "nabdh-news-2026-11-18-1836-matches.json",
+        "appearances": 37,
+        "exact": 30,
+        "absent": 7
+      },
+      {
+        "file": "nabdh-news-2026-11-18-2043.json",
+        "appearances": 8,
+        "exact": 7,
+        "absent": 1
+      },
+      {
+        "file": "nabdh-news-2026-11-18-2338.json",
+        "appearances": 10,
+        "exact": 10,
+        "absent": 0
+      },
+      {
+        "file": "nabdh-news-2026-11-19-0005.json",
+        "appearances": 5,
+        "exact": 5,
+        "absent": 0
+      }
+    ],
+    "latestFiveBatchIds": [
+      "0c457241d113ed5afb",
+      "f5b869b89561f8d723",
+      "68ddb817fe4001c0fc",
+      "948257091aad02b88a",
+      "f6f0576c6cc397f30a"
+    ],
+    "latestFiveBatchStatus": "All five match current Feed ID and URL exactly and are already present in PR Editorial; no additional import is required."
+  },
+  "combinedPending": {
+    "uniqueIdUrlPairs": 104,
+    "appearances": 146,
+    "duplicateAppearances": 42,
+    "confirmedExpired": 1,
+    "freshnessUnresolved": 103,
+    "correctionRequired": 0,
+    "additionalPrOnlyPairs": [
+      "74a4e87de084a0a8b9",
+      "9a0aa0e71b450c03e2",
+      "4353c1c4ce1b00e72f",
+      "8331a3aa13cbf4dc7e",
+      "cd3f9f2cc97c05f9f5",
+      "67dee7074b335d74dc",
+      "20b32bc10151119b84"
+    ],
+    "policy": "Do not synthesize replacement IDs from titles. Keep absent-feed records pending until the exact original ID and URL return or a documented correction is supplied."
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "decision": "pending; do not recreate"
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "decision": "pending; do not recreate"
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "decision": "pending; do not recreate"
+    }
+  ],
+  "editorialReconciliation": {
+    "mainEntries": 1059,
+    "prEntries": 1111,
+    "newEntries": 52,
+    "newEntriesMatchingCurrentFeedExactly": 52,
+    "staleNewEntries": 0,
+    "urlMismatches": 0,
+    "overwritesOfExistingMainEntries": 0
+  },
+  "protectedFiles": {
+    "site/data/feed.json": {
+      "mainSha": "9c947e0ab8150a9b8c7b5ba4936ccf2d3ab5f525",
+      "prSha": "9c947e0ab8150a9b8c7b5ba4936ccf2d3ab5f525",
+      "changed": false
+    },
+    "site/data/seen.json": {
+      "mainSha": "007f1c311a4714e049981117e4c7e9122d0750a1",
+      "prSha": "007f1c311a4714e049981117e4c7e9122d0750a1",
+      "changed": false
+    },
+    "site/data/status.json": {
+      "mainSha": "d8b7aa02f04057a00cf881079f697680084a1008",
+      "prSha": "d8b7aa02f04057a00cf881079f697680084a1008",
+      "changed": false
+    }
+  },
+  "newsReview": {
+    "candidatesInLatestTwoBatches": 14,
+    "selectedAndReviewed": 10,
+    "notSelected": 4,
+    "selected": [
+      {
+        "id": "7a053dbed9c7adc91b",
+        "topic": "Microsoft Agent Framework PyPI compromise",
+        "basis": "article",
+        "source": "https://www.wiz.io/blog/malicious-version-of-microsofts-agent-framework-published-to-pypi",
+        "limitations": "Wiz attributes the likely publishing-path compromise as a hypothesis; root cause was not independently confirmed."
+      },
+      {
+        "id": "92cd511ad92d5aa501",
+        "topic": "Google Stitch Loop",
+        "basis": "article",
+        "source": "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-loop/",
+        "limitations": "Google Labs experiment/waitlist; pull requests require human approval."
+      },
+      {
+        "id": "34f320ca70bc697fa9",
+        "topic": "NVIDIA RTX Spark desktops",
+        "basis": "article",
+        "source": "https://www.theverge.com/tech/1036880/nvidia-rtx-spark-ai-mini-pc-desktops",
+        "limitations": "Performance figures are NVIDIA claims; price cited is one configuration and may vary by market."
+      },
+      {
+        "id": "ac57b5b6ee9ed73e27",
+        "topic": "Snapchat Easy Lens CLI",
+        "basis": "article",
+        "source": "https://newsroom.snap.com/introducing-easy-lens-cli",
+        "limitations": "Feature and creator-payout claims are from Snap; no independent usage evaluation."
+      },
+      {
+        "id": "f0b81ce3c146128806",
+        "topic": "DaisyRose-27B",
+        "basis": "article",
+        "source": "https://www.radixark.com/blog/daisyrose-27b",
+        "limitations": "Benchmark and sandbox-cost improvements are vendor-reported, not independently reproduced."
+      },
+      {
+        "id": "25a4ca5f35209bfb46",
+        "topic": "Meta Muse privacy and safety",
+        "basis": "article",
+        "source": "https://www.reuters.com/investigations/meta-bets-big-muse-ai-agent-early-safety-mishaps-surface-2026-11-18/",
+        "limitations": "Reuters reports internal posts and reproductions; Meta disputes some interpretations and Reuters could not establish whether reported financial details were real."
+      },
+      {
+        "id": "a261d2eee241a886ed",
+        "topic": "Google Genie 4 in Project Genie",
+        "basis": "article",
+        "source": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
+        "limitations": "Access is rolling out to Google AI Ultra subscribers; Google identifies remaining research limitations."
+      },
+      {
+        "id": "0c457241d113ed5afb",
+        "topic": "NGINX HTTP/2 security vulnerabilities",
+        "basis": "article",
+        "sources": [
+          "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+          "https://www.cert.europa.eu/publications/security-advisories/2026-022/"
+        ],
+        "limitations": "CERT-EU reported no exploitation in the wild at publication. Wiz and CERT-EU list different CVSS values; avoid repeating a single score without reconciling F5's advisory."
+      },
+      {
+        "id": "f5b869b89561f8d723",
+        "topic": "Microsoft Ignite MAI models and Maia 200",
+        "basis": "article",
+        "source": "https://microsoft.ai/news/microsoft-ignite-2026/",
+        "limitations": "Benchmark and price/performance comparisons are Microsoft claims on specified everyday enterprise coding benchmarks; Code 2 is not described as tuned for long-horizon agentic work."
+      },
+      {
+        "id": "68ddb817fe4001c0fc",
+        "topic": "OpenAI models for chip design",
+        "basis": "article",
+        "source": "https://openai.com/index/advancing-chip-design-with-our-models/",
+        "limitations": "PPA improvements and evaluation results are OpenAI-reported; not an independent replication."
+      }
+    ],
+    "held": [
+      {
+        "id": "1defc708d8475fb74a",
+        "topic": "Booking Holdings travel technology unit",
+        "reason": "Lower priority for this cycle; no new original-source review performed."
+      },
+      {
+        "id": "5431b4f8d324cc4e2d",
+        "topic": "CreditNirvana data exposure",
+        "reason": "Wired and researcher pages were inaccessible in this run; do not claim a fresh full-article review. Existing historical Editorial record was not changed."
+      },
+      {
+        "id": "948257091aad02b88a",
+        "topic": "Energy-Based Reasoners",
+        "reason": "Metadata-only landing page; no full paper review in this run."
+      },
+      {
+        "id": "f6f0576c6cc397f30a",
+        "topic": "KPMG AI audit pilot",
+        "reason": "Financial Times article is paywalled; secondary summaries are not a substitute for full original-source review."
+      }
+    ]
+  },
+  "projectReview": {
+    "previousEightReviewed": 8,
+    "active": 8,
+    "archived": 0,
+    "readmeUnchanged": 7,
+    "readmeChanged": 1,
+    "licensesVerified": 8,
+    "newProjectCards": 0,
+    "existingFeedProjectEnriched": 1,
+    "feedProjectCount": 100,
+    "prEditorialProjectCoverage": 100,
+    "libraryTotal": 31,
+    "libraryActive": 29,
+    "libraryArchived": 2,
+    "libraryLicensesVerified": 31,
+    "libraryMetricSnapshot": "2026-11-16T02:54:42+03:00",
+    "currentRepoMetricsMeasuredAt": "2026-11-19T00:35:04+03:00",
+    "researchOnly": {
+      "pydanticAI": {
+        "improvements": 3,
+        "spinoffs": 2,
+        "religious": 1,
+        "testStatus": "not_run"
+      },
+      "unref": {
+        "improvements": 3,
+        "spinoffs": 2,
+        "religious": 0,
+        "testStatus": "not_run"
+      }
+    },
+    "lapce": {
+      "feedId": "3aeb603c56a3660ee6",
+      "improvements": 3,
+      "spinoffs": 2,
+      "religious": 0,
+      "testStatus": "not_run"
+    },
+    "topThree": [
+      "Lapce: Arabic RTL/BIDI test matrix across Windows, Linux, and macOS.",
+      "Pydantic AI: typed permission policies for tools and agent scopes.",
+      "Pydantic AI: Arabic/English evaluation harness for tool trajectories, quality, latency, and cost."
+    ]
+  },
+  "validation": {
+    "prRunId": 44402096008,
+    "prJobId": 135147579405,
+    "prConclusion": "success",
+    "prUnitTests": "30 passed",
+    "prOfficialValidator": "Validated 1111 editorial entries",
+    "prJavaScriptChecks": "site/app.js and site/ideas.js passed",
+    "mainRunId": 44391318450,
+    "mainJobId": 135109438311,
+    "mainConclusion": "success",
+    "mainUnitTests": "30 passed",
+    "mainOfficialValidator": "Validated 1059 editorial entries",
+    "localGitClone": "failed: DNS resolution to github.com unavailable",
+    "localUnitTests": "not run",
+    "localValidate": "not run",
+    "importCommand": "not run; all 52 exact current-feed additions were already present in PR Editorial, and no new eligible records remained"
+  },
+  "deployment": {
+    "artifactId": 14468786371,
+    "artifactSizeBytes": 1372574,
+    "artifactCounts": {
+      "editorial": 1059,
+      "feed": 800,
+      "seen": 5908,
+      "status": "ok"
+    },
+    "artifactMatchesMainByGitBlobSha": {
+      "feed": true,
+      "editorial": true,
+      "seen": true,
+      "status": true
+    },
+    "liveCdnDirectFetch": "DisabledError via browser; container download also failed",
+    "newEditorialPublished": false,
+    "mergeDecision": "Do not merge while the existing push-to-main workflow refreshes and commits feed.json, seen.json, and status.json. No workflow or settings changes are authorized."
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "version": 1,
+  "batch": 1,
+  "of": 9,
+  "sourceMainSha": "65e69a2329235ee0cd0dfb8a7de70745f7671edc",
+  "reviewedAt": "2026-11-16T21:16:09+03:00",
+  "files": [
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+      "appearances": 10,
+      "alreadyImported": 9,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 1,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-0840.json",
+      "appearances": 7,
+      "alreadyImported": 7,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "appearances": 14,
+      "alreadyImported": 12,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 2,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-1439.json",
+      "appearances": 9,
+      "alreadyImported": 9,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-1740.json",
+      "appearances": 6,
+      "alreadyImported": 6,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-2043.json",
+      "appearances": 10,
+      "alreadyImported": 10,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24-2342.json",
+      "appearances": 10,
+      "alreadyImported": 10,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-24.json",
+      "appearances": 6,
+      "alreadyImported": 6,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-25-0250.json",
+      "appearances": 6,
+      "alreadyImported": 6,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-25-0554.json",
+      "appearances": 8,
+      "alreadyImported": 8,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-25-0845.json",
+      "appearances": 10,
+      "alreadyImported": 10,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-25-1143.json",
+      "appearances": 6,
+      "alreadyImported": 6,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-25-1442.json",
+      "appearances": 6,
+      "alreadyImported": 6,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-25-1742.json",
+      "appearances": 8,
+      "alreadyImported": 8,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    },
+    {
+      "file": "editorial/incoming/nabdh-editorial-2026-10-25-2038.json",
+      "appearances": 6,
+      "alreadyImported": 6,
+      "exactFeedNotImported": 0,
+      "idUrlMismatch": 0,
+      "outOfFeed": 0,
+      "structuralInvalid": 0
+    }
+  ],
+  "totals": {
+    "appearances": 122,
+    "alreadyImported": 119,
+    "exactFeedNotImported": 0,
+    "idUrlMismatch": 0,
+    "outOfFeed": 3,
+    "structuralInvalid": 0
+  },
+  "pendingAppearances": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "sourceFile": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "seen": true,
+      "expiryAssessment": "unverified",
+      "reason": "ID غير موجود في Feed الحالي ولا في Editorial؛ لا يستورد دون عودة ID/URL نفسه إلى Feed."
+    }
+  ],
+  "expiryAssessment": "لا يوجد تاريخ نشر/انتهاء كافٍ لإثبات الانقضاء؛ Seen وحده لا يثبت ذلك.",
+  "validator": "structural-equivalent-only; official Python validator not run on historical incoming files"
+}

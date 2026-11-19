@@ -1,0 +1,388 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "research-only",
+  "measuredAt": "2026-11-16T21:16:09+03:00",
+  "sourceMainSha": "65e69a2329235ee0cd0dfb8a7de70745f7671edc",
+  "measurementNote": "GitHub repository metadata fetched during this run; README.md and license files were read from the default main branch. Counts are a point-in-time snapshot, not a quality score. No project tests were run.",
+  "summary": {
+    "reviewed": 8,
+    "active": 8,
+    "archived": 0,
+    "inCurrentFeed": 1,
+    "inEditorialByOriginalRepoUrl": 2,
+    "inEditorialExactCurrentFeed": 1,
+    "newProjectsAdded": 0,
+    "testStatus": "not_run",
+    "readmeChangedSinceLast": 1,
+    "licensesVerifiedThisRun": 8
+  },
+  "projects": [
+    {
+      "repo": "patchy631/ai-engineering-hub",
+      "name": "AI Engineering Hub",
+      "stars": 41934,
+      "forks": 6698,
+      "openIssues": 139,
+      "license": "MIT",
+      "licenseVerified": true,
+      "archived": false,
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "updatedAt": "2026-11-16T18:15:00Z",
+      "readmeSha": "6c65ab12125814c5233f873c4c1af2765ff87d51",
+      "licenseSha": "84ee68d33c9b68bae6c139f591996f021a02b23a",
+      "inCurrentFeed": true,
+      "feedId": "fe0e6bfdbdd5822139",
+      "inEditorialExactCurrentFeed": true,
+      "testStatus": "not_run",
+      "overview": "مستودع تعليمي يجمع أكثر من 93 مشروعًا وشرحًا في هندسة الذكاء الاصطناعي، موزعة على مستويات مبتدئ ومتوسط ومتقدم وتشمل LLMs وRAG والوكلاء.",
+      "requirements": "لا توجد بيئة تشغيل موحدة للمستودع؛ كل مشروع يحدد لغته واعتمادياته ومزود النموذج أو العتاد المطلوب.",
+      "quickStart": "ابدأ بخارطة الطريق في README، اختر مشروعًا تمهيديًا مثل OCR أو RAG، ثم اتبع README الخاص بذلك المشروع وحده.",
+      "costs": "المحتوى مجاني؛ قد تتطلب بعض المشاريع API أو GPU أو خدمات مستضافة برسوم منفصلة.",
+      "localCloud": "المستودع فهرس لمشاريع محلية وسحابية متعددة، وليس تطبيقًا واحدًا قابلًا للتشغيل.",
+      "alternatives": "Full Stack Deep Learning وMade With ML كمراجع تعليمية موازية.",
+      "risks": "العدد المعلن لا يضمن تساوي الصيانة أو جودة الاختبار بين المشاريع الفرعية.",
+      "sources": [
+        {
+          "title": "Repository and README",
+          "url": "https://github.com/patchy631/ai-engineering-hub"
+        },
+        {
+          "title": "MIT license",
+          "url": "https://github.com/patchy631/ai-engineering-hub/blob/main/LICENSE"
+        }
+      ],
+      "measuredAt": "2026-11-16T21:16:09+03:00",
+      "testEvidence": null,
+      "inEditorialByOriginalRepoUrl": true,
+      "readmeChangedSincePreviousReview": false
+    },
+    {
+      "repo": "googleapis/python-genai",
+      "name": "Google Gen AI SDK for Python",
+      "stars": 4074,
+      "forks": 1067,
+      "openIssues": 387,
+      "license": "Apache-2.0",
+      "licenseVerified": true,
+      "archived": false,
+      "pushedAt": "2026-11-16T17:38:30Z",
+      "updatedAt": "2026-11-16T18:13:34Z",
+      "readmeSha": "8faf7f0d715072fccdc0e5fba0a5d7aa74f78d53",
+      "licenseSha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "inCurrentFeed": false,
+      "inEditorialExactCurrentFeed": false,
+      "testStatus": "not_run",
+      "overview": "واجهة Python رسمية للتعامل مع Gemini Developer API وGemini Enterprise Agent Platform.",
+      "requirements": "بيئة Python ومفتاح Gemini API أو إعداد مشروع وموقع Google Cloud لاستخدام Agent Platform؛ الإصدار الرئيسي 3 غيّر الافتراضي إلى API v1 وHTTP client إلى httpx2.",
+      "quickStart": "ثبّت google-genai، اضبط GEMINI_API_KEY أو متغيرات Google Cloud، ثم أنشئ genai.Client واستدعِ النموذج المطلوب.",
+      "costs": "المكتبة Apache-2.0؛ تكلفة الاستخدام تأتي من استدعاءات خدمات النماذج وفق خطة الحساب.",
+      "localCloud": "الكود يعمل محليًا أو على خادم، بينما طلبات النماذج تتصل بخدمات Google السحابية.",
+      "alternatives": "SDKs الرسمية لمزودين آخرين أو LiteLLM عند الحاجة إلى طبقة متعددة المزودين.",
+      "risks": "تغييرات v3 قد تكسر افتراضات الإصدارات السابقة؛ يجب تثبيت النسخة ومراجعة API version وHTTP transport.",
+      "sources": [
+        {
+          "title": "Repository and README",
+          "url": "https://github.com/googleapis/python-genai"
+        },
+        {
+          "title": "Official documentation",
+          "url": "https://googleapis.github.io/python-genai/"
+        },
+        {
+          "title": "Apache-2.0 license",
+          "url": "https://github.com/googleapis/python-genai/blob/main/LICENSE"
+        }
+      ],
+      "measuredAt": "2026-11-16T21:16:09+03:00",
+      "testEvidence": null,
+      "feedId": null,
+      "inEditorialByOriginalRepoUrl": false,
+      "readmeChangedSincePreviousReview": false
+    },
+    {
+      "repo": "Millillion/lasm",
+      "name": "Lasm",
+      "stars": 106,
+      "forks": 7,
+      "openIssues": 18,
+      "license": "MIT",
+      "licenseVerified": true,
+      "archived": false,
+      "pushedAt": "2026-11-16T18:19:22Z",
+      "updatedAt": "2026-11-14T13:10:53Z",
+      "readmeSha": "e7cf73d193efd90968e784c67547508b3474e324",
+      "licenseSha": "46b25ff7d8953b8fc88d7ed6d37c6f1550a39193",
+      "inCurrentFeed": false,
+      "inEditorialExactCurrentFeed": false,
+      "testStatus": "not_run",
+      "overview": "Lasm يحوّل Lean 4 إلى WebAssembly ويستهدف Node.js وBun وDeno وCloudflare Workers وVercel وNetlify وDeno Deploy وSupabase وAWS Lambda وAzure وGoogle Cloud Functions وFastly وWASI والمتصفح. يضم قوالب Hono وExpress وFastify وواجهات Lean للويب وHTTP وRPC وKV، مع مثال Conduit كبير يتضمن براهين واختبارات توافق.",
+      "requirements": "يتطلب بناء Lasm Node.js 24+ (أو Bun 1.4.4 / Deno 2.9.6 كبيئة تشغيل مدعومة في README) وLean 4.35.0 المحدد في lean-toolchain. يدعم Linux وmacOS وWindows x64، وLinux arm64 بحسب جدول المنصات. لا يحدد README حدًا أدنى موحدًا للذاكرة؛ الموارد تعتمد على التطبيق والمنصة. النشر إلى خدمة سحابية قد يتطلب حسابًا وإعدادات خاصة بالمنصة.",
+      "quickStart": "1) أنشئ مشروعًا: npm create @lasm@latest my-app -- --template hono. 2) ادخل المجلد: cd my-app. 3) ثبّت الاعتماديات: npm install. 4) شغّل بيئة التطوير: npm run dev. 5) راجع docs/deploy وملفات الهدف قبل النشر. 6) اختبر على runtime محلي؛ اختبارات CI في README تستخدم أدوات ومحاكيات محلية ولا تعني نشرًا فعليًا إلى حساب سحابي.",
+      "costs": "المترجم والأدوات مفتوحة المصدر بترخيص MIT؛ لا يذكر README رسومًا للمنتج نفسه. تكاليف الاستضافة أو خدمات الحافة وقواعد البيانات والنقل تعتمد على المزود والخطة المختارة، ويجب مراجعة تسعير كل منصة قبل النشر.",
+      "localCloud": "README يوضح أن اختبارات CI تستخدم أدوات محلية ومحاكيات ولا تعني نشرًا فعليًا إلى حسابات سحابية.",
+      "alternatives": [
+        "TypeScript/Node.js مع Hono أو Fastify عند عدم الحاجة إلى Lean أو إثباتات.",
+        "Rust إلى WASM عند الحاجة إلى منظومة WebAssembly دون واجهات Lean.",
+        "بدائل المنصات serverless الأصلية عند أولوية التكامل المباشر مع مزود سحابي."
+      ],
+      "risks": "المشروع حديث نسبيًا؛ مصفوفة runtimes واسعة ويجب اختبار الهدف المحدد بدل افتراض تطابق المنصات.",
+      "sources": [
+        {
+          "title": "Lasm README",
+          "url": "https://github.com/Millillion/lasm"
+        },
+        {
+          "title": "Lasm license",
+          "url": "https://github.com/Millillion/lasm/blob/main/LICENSE"
+        },
+        {
+          "title": "Lasm deployment documentation",
+          "url": "https://github.com/Millillion/lasm/tree/main/docs/deploy"
+        },
+        {
+          "title": "Lasm testing evidence levels",
+          "url": "https://github.com/Millillion/lasm/blob/main/docs/TESTING.md"
+        }
+      ],
+      "measuredAt": "2026-11-16T21:16:09+03:00",
+      "testEvidence": null,
+      "feedId": null,
+      "inEditorialByOriginalRepoUrl": false,
+      "readmeChangedSincePreviousReview": true,
+      "localVsCloud": {
+        "local": "يمكن البناء والتطوير محليًا على Node.js 24+ مع Lean 4.35.0، وتشغيل الأهداف المحلية أو المحاكيات الموثقة.",
+        "cloud": "يستهدف منصات مثل Workers وLambda وVercel وNetlify وAzure وGoogle Cloud Functions؛ اختبارات README تستخدم أدوات محلية/صور حاويات ومحاكيات ولا تنفذ نشرًا إلى حسابات حقيقية."
+      },
+      "readmeReviewNote": "تغير README منذ المراجعة السابقة؛ تمت إعادة قراءة محتواه الأساسي. يذكر الإصدار 0.8.0، Lean 4.35.0، Node.js 24+، واختبارات CI محلية/محاكاة لا تمثل نشرًا إلى حسابات سحابية."
+    },
+    {
+      "repo": "microsoft/markitdown",
+      "name": "MarkItDown",
+      "stars": 195730,
+      "forks": 14799,
+      "openIssues": 815,
+      "license": "MIT",
+      "licenseVerified": true,
+      "archived": false,
+      "pushedAt": "2026-11-07T00:14:01Z",
+      "updatedAt": "2026-11-16T18:15:00Z",
+      "readmeSha": "af858038fd380b187e2928cfbb8b9802c4912d5b",
+      "licenseSha": "9e841e7a26e4eb057b24511e7b92d42b257a80e5",
+      "inCurrentFeed": false,
+      "inEditorialExactCurrentFeed": false,
+      "testStatus": "not_run",
+      "overview": "أداة Python لتحويل PDF وOffice والصور والصوت وHTML وصيغ أخرى إلى Markdown مناسب للتحليل وسير عمل LLM.",
+      "requirements": "Python 3.10–3.14 وبيئة افتراضية موصى بها؛ يمكن تثبيت extras حسب صيغ الملفات المطلوبة.",
+      "quickStart": "أنشئ venv ثم ثبّت markitdown[all] أو extras محددة مثل pdf وdocx وpptx، ثم استخدم CLI أو واجهة Python.",
+      "costs": "المكتبة MIT؛ بعض ميزات captioning/transcription تعتمد خدمات ويب وقد تترتب عليها تكاليف.",
+      "localCloud": "التحويل الأساسي محلي؛ بعض ميزات الصور والصوت تستدعي خدمات مستضافة.",
+      "alternatives": "Apache Tika وUnstructured بحسب أنواع الملفات ودقة التحويل المطلوبة.",
+      "risks": "README يحذر أن الأداة تعمل بصلاحيات العملية الحالية؛ يجب حصر الوصول وتنظيف المدخلات غير الموثوقة، والمخرجات ليست تحويلًا بصريًا عالي الدقة.",
+      "sources": [
+        {
+          "title": "Repository and README",
+          "url": "https://github.com/microsoft/markitdown"
+        },
+        {
+          "title": "Security considerations",
+          "url": "https://github.com/microsoft/markitdown#security-considerations"
+        },
+        {
+          "title": "MIT license",
+          "url": "https://github.com/microsoft/markitdown/blob/main/LICENSE"
+        }
+      ],
+      "measuredAt": "2026-11-16T21:16:09+03:00",
+      "testEvidence": null,
+      "feedId": null,
+      "inEditorialByOriginalRepoUrl": false,
+      "readmeChangedSincePreviousReview": false
+    },
+    {
+      "repo": "yc-software/minecraft-agent-harness",
+      "name": "Minecraft Agent Harness",
+      "stars": 224,
+      "forks": 30,
+      "openIssues": 1,
+      "license": "MIT",
+      "licenseVerified": true,
+      "archived": false,
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "updatedAt": "2026-11-16T09:40:26Z",
+      "readmeSha": "50b5a20eeb3a6f8268d06d244d858c4464c81eba",
+      "licenseSha": "5efc79a61c6ce9c8b89f423f7b0d883ca9af43a9",
+      "inCurrentFeed": false,
+      "inEditorialExactCurrentFeed": false,
+      "testStatus": "not_run",
+      "overview": "إطار لوكلاء LLM يتحكمون بعالم Minecraft عبر Mineflayer، مع جلسات مستمرة وفرق وكلاء وخيارات shell محلية أو معزولة.",
+      "requirements": "Node.js 22.19+، خادم Minecraft Java 1.21.6، مفتاح مزود نموذج؛ الخادم التطويري المرفق يحتاج Java 21.",
+      "quickStart": "نفّذ npm ci، انسخ .env.example إلى .env وأضف إعداد المزود، ثم npm run server وفي طرفية ثانية npm start مع objective.",
+      "costs": "المستودع MIT؛ تكلفة النماذج تعتمد على المزود، وقد توجد تكلفة استضافة لخادم بعيد.",
+      "localCloud": "يمكن تشغيل خادم محلي أو ربط خادم بعيد؛ خيارات shell تشمل Docker أو E2B أو مجلدًا محليًا.",
+      "alternatives": "Mineflayer مع وكيل مخصص أو أطر محاكاة/وكلاء ألعاب أخرى.",
+      "risks": "README يوضح أن shell المحلي ينفذ بصلاحيات المستخدم؛ يجب فهم اختيار sandbox قبل التشغيل. ميزة الرؤية تجريبية.",
+      "sources": [
+        {
+          "title": "Repository and README",
+          "url": "https://github.com/yc-software/minecraft-agent-harness"
+        },
+        {
+          "title": "Configuration docs",
+          "url": "https://github.com/yc-software/minecraft-agent-harness/blob/main/docs/configuration.md"
+        },
+        {
+          "title": "MIT license",
+          "url": "https://github.com/yc-software/minecraft-agent-harness/blob/main/LICENSE"
+        }
+      ],
+      "measuredAt": "2026-11-16T21:16:09+03:00",
+      "testEvidence": null,
+      "feedId": null,
+      "inEditorialByOriginalRepoUrl": false,
+      "readmeChangedSincePreviousReview": false
+    },
+    {
+      "repo": "NVIDIA/OpenShell",
+      "name": "NVIDIA OpenShell",
+      "stars": 21681,
+      "forks": 2118,
+      "openIssues": 696,
+      "license": "Apache-2.0",
+      "licenseVerified": true,
+      "archived": false,
+      "pushedAt": "2026-11-16T18:19:16Z",
+      "updatedAt": "2026-11-16T18:09:49Z",
+      "readmeSha": "ea31d968136ad93ac659552697d03f0e473301d4",
+      "licenseSha": "f13d24c3fa482d61605d600e5ac1248799bd4107",
+      "inCurrentFeed": false,
+      "inEditorialExactCurrentFeed": false,
+      "testStatus": "not_run",
+      "overview": "Runtime لوكلاء الذكاء الاصطناعي يفرض سياسات وصول للملفات واستدعاءات النظام والشبكة داخل sandboxes، مع فحص تغييرات السياسات قبل تطبيقها.",
+      "requirements": "Linux أو macOS على Apple Silicon أو Windows عبر WSL2 تجريبي، إضافة إلى Docker أو Podman أو host virtualization؛ توصي الوثائق بمطابقة إصدار SDK والـgateway.",
+      "quickStart": "اتبع Quickstart الرسمي لتثبيت CLI والبوابة المحلية ثم أنشئ sandbox تجريبيًا؛ راجع Support Matrix قبل اختيار النظام.",
+      "costs": "المستودع Apache-2.0؛ البنية التحتية والموارد الحاسوبية تبقى على المشغل.",
+      "localCloud": "الأساس بوابة وsandbox محليان؛ توجد خيارات استضافة خارجية لكنها ليست شرطًا لتجربة المفهوم.",
+      "alternatives": "حاويات مع سياسات مخصصة، أو runtimes معزولة مثل E2B وDaytona بحسب نموذج التهديد.",
+      "risks": "دعم Windows عبر WSL2 موصوف بأنه تجريبي؛ README يقول إن انتقال التطوير إلى ai-openshell وحوكمة CNCF ما زال قيد التنفيذ.",
+      "sources": [
+        {
+          "title": "Repository and README",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        },
+        {
+          "title": "Official documentation",
+          "url": "https://docs.nvidia.com/openshell/latest/index.html"
+        },
+        {
+          "title": "Apache-2.0 license",
+          "url": "https://github.com/NVIDIA/OpenShell/blob/main/LICENSE"
+        }
+      ],
+      "measuredAt": "2026-11-16T21:16:09+03:00",
+      "testEvidence": null,
+      "feedId": null,
+      "inEditorialByOriginalRepoUrl": false,
+      "readmeChangedSincePreviousReview": false
+    },
+    {
+      "repo": "pydantic/pydantic-ai",
+      "name": "Pydantic AI",
+      "stars": 21242,
+      "forks": 3198,
+      "openIssues": 1918,
+      "license": "MIT",
+      "licenseVerified": true,
+      "archived": false,
+      "pushedAt": "2026-11-16T18:19:36Z",
+      "updatedAt": "2026-11-16T17:58:48Z",
+      "readmeSha": "3774a1843c1b5256cea465c3c361390d668fdf6b",
+      "licenseSha": "1bf1f55e6d1736b499ded961ec6b94bfebb17aec",
+      "inCurrentFeed": false,
+      "inEditorialExactCurrentFeed": false,
+      "testStatus": "not_run",
+      "overview": "SDK Python لبناء وكلاء typed مع أدوات ومخرجات منظمة ودعم مزودين متعددين وواجهات terminal/web/voice ووسائل tracing/evaluation.",
+      "requirements": "Python وبيئة حزم؛ يلزم اعتماد مزود نموذج للاتصال الحي، لكن README يذكر نموذج test مدمجًا للاختبارات دون API key.",
+      "quickStart": "ثبّت pydantic-ai عبر uv add pydantic-ai، أنشئ Agent مع model وتعليمات وأدوات، ثم استخدم run مع معالجة المخرجات.",
+      "costs": "المكتبة MIT؛ تكلفة الاستدلال من مزود النموذج، وأدوات المراقبة أو gateway لها خططها الخاصة.",
+      "localCloud": "يمكن تشغيل orchestration محليًا مع مزود محلي أو الاتصال بمزود سحابي؛ يدعم OpenTelemetry.",
+      "alternatives": "LangGraph وLlamaIndex Workflows وHaystack بحسب احتياج الرسم البياني والاسترجاع.",
+      "risks": "تعدد المزودين لا يلغي اختلاف القدرات والتسعير؛ يجب إضافة تقييمات وحدود تكلفة والتحقق من المخرجات.",
+      "sources": [
+        {
+          "title": "Repository and README",
+          "url": "https://github.com/pydantic/pydantic-ai"
+        },
+        {
+          "title": "Official docs",
+          "url": "https://pydantic.dev/docs/ai/"
+        },
+        {
+          "title": "MIT license",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/LICENSE"
+        }
+      ],
+      "measuredAt": "2026-11-16T21:16:09+03:00",
+      "testEvidence": null,
+      "feedId": null,
+      "inEditorialByOriginalRepoUrl": false,
+      "readmeChangedSincePreviousReview": false
+    },
+    {
+      "repo": "astral-sh/uv",
+      "name": "uv",
+      "stars": 92009,
+      "forks": 3845,
+      "openIssues": 3089,
+      "license": "MIT AND Apache-2.0",
+      "licenseVerified": true,
+      "archived": false,
+      "pushedAt": "2026-11-16T18:20:18Z",
+      "updatedAt": "2026-11-16T18:19:32Z",
+      "readmeSha": "66caaf9ccc62add8c63de8e71184c9b7677377ad",
+      "licenseSha": [
+        "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+        "014835144877ea9c926d027ece3e1a26290cf481"
+      ],
+      "inCurrentFeed": false,
+      "inEditorialExactCurrentFeed": false,
+      "testStatus": "not_run",
+      "overview": "مدير مشاريع وحزم وبيئات Python مكتوب بـRust، يجمع تثبيت الحزم وإدارة إصدارات Python والـscripts والأدوات وlockfiles.",
+      "requirements": "يدعم Windows وmacOS وLinux؛ يمكن تثبيته بمثبت مستقل دون تثبيت Rust أو Python مسبقًا.",
+      "quickStart": "ثبّت uv، ثم استخدم uv init لإنشاء مشروع وuv add لإضافة اعتماد وuv run لتشغيله.",
+      "costs": "مفتوح المصدر ومجاني؛ يعمل محليًا ولا يتطلب خدمة سحابية.",
+      "localCloud": "أداة محلية لإدارة بيئة التطوير والبناء؛ يمكن استخدامها داخل CI.",
+      "alternatives": "pip مع venv، Poetry، PDM، Conda، وpipx بحسب حجم المشروع وسير العمل.",
+      "risks": "الانتقال من مدير حزم آخر يحتاج مراجعة lockfile وسلوك مصادر الحزم؛ ادعاء السرعة يعتمد على benchmark وحالة cache.",
+      "sources": [
+        {
+          "title": "Repository and README",
+          "url": "https://github.com/astral-sh/uv"
+        },
+        {
+          "title": "Official docs",
+          "url": "https://docs.astral.sh/uv/"
+        },
+        {
+          "title": "Apache-2.0 license",
+          "url": "https://github.com/astral-sh/uv/blob/main/LICENSE-APACHE"
+        },
+        {
+          "title": "MIT license",
+          "url": "https://github.com/astral-sh/uv/blob/main/LICENSE-MIT"
+        }
+      ],
+      "measuredAt": "2026-11-16T21:16:09+03:00",
+      "testEvidence": null,
+      "feedId": null,
+      "inEditorialByOriginalRepoUrl": true,
+      "readmeChangedSincePreviousReview": false
+    }
+  ],
+  "notes": [
+    "جميع المشاريع الثمانية غير مؤرشفة عند القياس؛ حالة عدم الأرشفة لا تعني اختبار التشغيل.",
+    "تمت مطابقة README وملفات الترخيص الحالية؛ سبعة README لم تتغير بصمتها منذ المراجعة السابقة، بينما تغير README لمشروع Lasm وأعيدت مراجعته.",
+    "النجوم والفروع والأعداد مؤشرات تراكمية وقت القياس وليست نموًا خلال اليوم.",
+    "لم يُشغّل أي مشروع؛ testStatus=not_run لجميع المشاريع.",
+    "لا توجد بطاقة مشروع جديدة لأن 100/100 مشروعًا في Feed الحالي لها Editorial، ولم يظهر مرشح جديد موثق يستحق الإضافة."
+  ]
+}

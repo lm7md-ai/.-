@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "unpublished-research-library",
+  "reviewedAt": "2026-11-18T23:38:22+03:00",
+  "activityMeasuredAt": "2026-11-18T23:38:22+03:00",
+  "metricsMeasuredAt": "2026-11-16T20:58:49+03:00",
+  "sourceMainSha": "5433ee1e8afba87941ed7f6c57fad38f70bcde1c",
+  "summary": {
+    "reviewed": 8,
+    "active": 8,
+    "archived": 0,
+    "readmeChangedSincePreviousReview": 0,
+    "licenseFilesVerified": 8,
+    "licenseChanged": null,
+    "projectCardsAdded": 0,
+    "projectEditorialEnriched": 1,
+    "projectTestsExecuted": 0,
+    "publicLibraryEntries": 31,
+    "publicLibraryActive": 29,
+    "publicLibraryArchived": 2,
+    "feedProjectItems": 100,
+    "mainFeedProjectEditorialCoverage": 99,
+    "mainUnenrichedProjectItems": 1,
+    "unenrichedProjectId": "3aeb603c56a3660ee6",
+    "previousMetricsRetainedWithOriginalMeasurementTime": true
+  },
+  "projects": [
+    {
+      "repo": "patchy631/ai-engineering-hub",
+      "name": "AI Engineering Hub",
+      "archived": false,
+      "license": "MIT",
+      "licenseVerified": true,
+      "licenseFileSha": "84ee68d33c9b68bae6c139f591996f021a02b23a",
+      "readmeSha": "6c65ab12125814c5233f873c4c1af2765ff87d51",
+      "readmeChanged": false,
+      "lastCommitAt": "2026-10-30T08:51:58Z",
+      "lastCommitSha": "042aeb5067384981eeba6a07fa882f436bb1660d",
+      "lastCommitMessage": "Add multi-agent omnigraph demo",
+      "inCurrentFeed": true,
+      "testStatus": "not_run",
+      "previousMetrics": {
+        "stars": 42000,
+        "forks": 6715,
+        "openIssues": 139,
+        "measuredAt": "2026-11-16T20:58:49+03:00"
+      }
+    },
+    {
+      "repo": "googleapis/python-genai",
+      "name": "Google Gen AI SDK for Python",
+      "archived": false,
+      "license": "Apache-2.0",
+      "licenseVerified": true,
+      "licenseFileSha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "readmeSha": "8faf7f0d715072fccdc0e5fba0a5d7aa74f78d53",
+      "readmeChanged": false,
+      "lastCommitAt": "2026-11-18T07:09:22Z",
+      "lastCommitSha": "acf76e4a284273082e487af7ff77a3949d9ad797",
+      "lastCommitMessage": "chore(main): release 3.6.0 (#3398)",
+      "inCurrentFeed": false,
+      "testStatus": "not_run",
+      "release": "3.6.0",
+      "previousMetrics": {
+        "stars": 4078,
+        "forks": 1064,
+        "openIssues": 387,
+        "measuredAt": "2026-11-16T20:58:49+03:00"
+      }
+    },
+    {
+      "repo": "Millillion/lasm",
+      "name": "Lasm",
+      "archived": false,
+      "license": "MIT",
+      "licenseVerified": true,
+      "licenseFileSha": "46b25ff7d8953b8fc88d7ed6d37c6f1550a39193",
+      "readmeSha": "f29c541dc7657fa87e718718e8fcda28cf6b3112",
+      "readmeChanged": false,
+      "lastCommitAt": "2026-11-18T19:07:08Z",
+      "lastCommitSha": "1848f24e4a41ac373ae9b6c00aab90a81b21c96a",
+      "lastCommitMessage": "Evidence page from CI (2026-11-18)",
+      "inCurrentFeed": false,
+      "testStatus": "not_run",
+      "version": "0.10.0",
+      "note": "آخر commit صفحة أدلة مولدة من CI، وليس تغيير README",
+      "previousMetrics": {
+        "stars": 107,
+        "forks": 6,
+        "openIssues": 9,
+        "measuredAt": "2026-11-16T20:58:49+03:00"
+      }
+    },
+    {
+      "repo": "microsoft/markitdown",
+      "name": "MarkItDown",
+      "archived": false,
+      "license": "MIT",
+      "licenseVerified": true,
+      "licenseFileSha": "9e841e7a26e4eb057b24511e7b92d42b257a80e5",
+      "readmeSha": "af858038fd380b187e2928cfbb8b9802c4912d5b",
+      "readmeChanged": false,
+      "lastCommitAt": "2026-11-07T00:14:01Z",
+      "lastCommitSha": "ed178952a6672abdfd35b5f9e76a80b6cefc086e",
+      "lastCommitMessage": "fix: match ExifTool directories case-insensitively on Windows",
+      "inCurrentFeed": false,
+      "testStatus": "not_run",
+      "previousMetrics": {
+        "stars": 196573,
+        "forks": 14882,
+        "openIssues": 814,
+        "measuredAt": "2026-11-16T20:58:49+03:00"
+      }
+    },
+    {
+      "repo": "yc-software/minecraft-agent-harness",
+      "name": "Minecraft Agent Harness",
+      "archived": false,
+      "license": "MIT",
+      "licenseVerified": true,
+      "licenseFileSha": "5efc79a61c6ce9c8b89f423f7b0d883ca9af43a9",
+      "readmeSha": "50b5a20eeb3a6f8268d06d244d858c4464c81eba",
+      "readmeChanged": false,
+      "lastCommitAt": "2026-10-29T05:00:00Z",
+      "lastCommitSha": "775d558689f5e4eaa0f1d0d7a320035190b1fce6",
+      "lastCommitMessage": "Initial public release",
+      "inCurrentFeed": false,
+      "testStatus": "not_run",
+      "previousMetrics": {
+        "stars": 226,
+        "forks": 30,
+        "openIssues": 1,
+        "measuredAt": "2026-11-16T20:58:49+03:00"
+      }
+    },
+    {
+      "repo": "NVIDIA/OpenShell",
+      "name": "NVIDIA OpenShell",
+      "archived": false,
+      "license": "Apache-2.0",
+      "licenseVerified": true,
+      "licenseFileSha": "f13d24c3fa482d61605d600e5ac1248799bd4107",
+      "readmeSha": "ea31d968136ad93ac659552697d03f0e473301d4",
+      "readmeChanged": false,
+      "lastCommitAt": "2026-11-18T19:36:59Z",
+      "lastCommitSha": "78ba34775a34dcc8b01fd13cc30c10c1940a113a",
+      "lastCommitMessage": "feat(gateway): export metrics over OTLP",
+      "inCurrentFeed": false,
+      "testStatus": "not_run",
+      "previousMetrics": {
+        "stars": 21768,
+        "forks": 2135,
+        "openIssues": 740,
+        "measuredAt": "2026-11-16T20:58:49+03:00"
+      }
+    },
+    {
+      "repo": "pydantic/pydantic-ai",
+      "name": "Pydantic AI",
+      "archived": false,
+      "license": "MIT",
+      "licenseVerified": true,
+      "licenseFileSha": "1bf1f55e6d1736b499ded961ec6b94bfebb17aec",
+      "readmeSha": "3774a1843c1b5256cea465c3c361390d668fdf6b",
+      "readmeChanged": false,
+      "lastCommitAt": "2026-11-18T20:15:36Z",
+      "lastCommitSha": "679ed8942dd553c5aa2da25fa777135d9a1abc49",
+      "lastCommitMessage": "Fix flaky test_cancelling_a_run_interrupts_its_cell",
+      "inCurrentFeed": false,
+      "testStatus": "not_run",
+      "previousMetrics": {
+        "stars": 21275,
+        "forks": 3207,
+        "openIssues": 1842,
+        "measuredAt": "2026-11-16T20:58:49+03:00"
+      }
+    },
+    {
+      "repo": "astral-sh/uv",
+      "name": "uv",
+      "archived": false,
+      "license": "MIT OR Apache-2.0",
+      "licenseVerified": true,
+      "licenseFileShas": [
+        "014835144877ea9c926d027ece3e1a26290cf481",
+        "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+      ],
+      "readmeSha": "66caaf9ccc62add8c63de8e71184c9b7677377ad",
+      "readmeChanged": false,
+      "lastCommitAt": "2026-11-18T18:50:42Z",
+      "lastCommitSha": "469fe6513a86ebb59f64390669a64fd165b65b8a",
+      "lastCommitMessage": "Add PEP 723 metadata and locks to two release scripts",
+      "inCurrentFeed": false,
+      "testStatus": "not_run",
+      "previousMetrics": {
+        "stars": 92170,
+        "forks": 3920,
+        "openIssues": 3077,
+        "measuredAt": "2026-11-16T20:58:49+03:00"
+      }
+    }
+  ],
+  "recentChanges": [
+    "Google Gen AI SDK reached 3.6.0 on 18 Nov.",
+    "NVIDIA OpenShell added opt-in OTLP metrics export.",
+    "Pydantic AI fixed a flaky cancellation test.",
+    "uv added PEP 723 metadata and lockfiles to release scripts.",
+    "Lasm's latest commit generated an evidence page; README stayed unchanged."
+  ],
+  "decision": "لم يتغير README لأي من المشاريع الثمانية، وجميعها غير مؤرشفة وتراخيصها الحالية موجودة ومطابقة للأنواع المسجلة. بقيت المقاييس العددية القديمة مؤرخة بتاريخ 16 نوفمبر ولم تُحدّث إلى تاريخ اليوم. المشروع الجديد غير المثرى هو Lapce، وهو موجود في Feed؛ لذلك سيُثرى بمعرفه الأصلي ولا تُنشأ له بطاقة أو ملف بحث غير منشور.",
+  "sources": [
+    {
+      "title": "patchy631/ai-engineering-hub",
+      "url": "https://github.com/patchy631/ai-engineering-hub"
+    },
+    {
+      "title": "googleapis/python-genai",
+      "url": "https://github.com/googleapis/python-genai"
+    },
+    {
+      "title": "Millillion/lasm",
+      "url": "https://github.com/Millillion/lasm"
+    },
+    {
+      "title": "microsoft/markitdown",
+      "url": "https://github.com/microsoft/markitdown"
+    },
+    {
+      "title": "yc-software/minecraft-agent-harness",
+      "url": "https://github.com/yc-software/minecraft-agent-harness"
+    },
+    {
+      "title": "NVIDIA/OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell"
+    },
+    {
+      "title": "pydantic/pydantic-ai",
+      "url": "https://github.com/pydantic/pydantic-ai"
+    },
+    {
+      "title": "astral-sh/uv",
+      "url": "https://github.com/astral-sh/uv"
+    }
+  ]
+}

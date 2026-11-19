@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-17T12:07:37+03:00",
+  "sourceMainSha": "eea564780d85671379cb85808980d918d4684243",
+  "sourcePrHeadBefore": "3281a0daa206d7adb77197982a1fd3dc563cc5cf",
+  "publicationStatus": "pending-not-merged",
+  "sourceFeedGeneratedAt": "2026-11-17T03:49:39+00:00",
+  "summary": {
+    "incomingFilesOnMain": 133,
+    "incomingFilesOnPrBranch": 134,
+    "mainIncomingBlobsIdenticalOnPr": 133,
+    "recordAppearances": 1352,
+    "alreadyInEditorialSameIdUrl": 1217,
+    "exactCurrentFeedNotImported": 0,
+    "idUrlMismatches": 0,
+    "outOfFeedAndNotImportedAppearances": 135,
+    "uniqueOutOfFeedIdUrlPairs": 97,
+    "seenPendingAppearances": 135,
+    "unseenPendingAppearances": 0,
+    "structuralFilesCheckedEquivalent": 133,
+    "structuralIssuesInEquivalentCheck": 0,
+    "confirmedExpired": 0,
+    "needsCorrection": 0,
+    "feed": {
+      "items": 800,
+      "news": 700,
+      "projects": 100
+    },
+    "editorialMain": 1059,
+    "editorialPrBranch": 1071,
+    "seenIds": 5460,
+    "seenTitles": 5281,
+    "projectFeedEditorialExact": 100
+  },
+  "recheck": {
+    "method": "أعيد تجميع تقارير الدفعات التسع 01–09 ثم أُعيدت مطابقة الأزواج الـ97 الفريدة وظهوراتها الـ135 حرفيًا مع Feed وEditorial وSeen على Main الحالي.",
+    "pendingPairsRechecked": 97,
+    "appearancesRechecked": 135,
+    "discrepancies": 0,
+    "categories": {
+      "stillSeenOnlyPairs": 97,
+      "nowActiveExact": 0,
+      "idUrlConflict": 0,
+      "urlUnderDifferentId": 0,
+      "alreadyEditorial": 0,
+      "notSeen": 0
+    },
+    "expiryAssessment": "غير محسوم؛ غياب السجل عن Feed مع وجود Seen لا يثبت الانقضاء دون تاريخ نشر/انتهاء موثق."
+  },
+  "incomingValidation": {
+    "filesParsed": 133,
+    "recordAppearances": 1352,
+    "structuralEquivalent": "passed",
+    "errors": 0,
+    "officialPythonValidatorOnIncoming": "not_run_local",
+    "note": "فحص بنيوي مكافئ لكل ملف: JSON/version/items، الحقول النصية، HTTPS للمصادر، reviewedAt، basis، nextSteps، ومقترحات improvements/spinoffs/religious. لم تتوفر بيئة محلية لتشغيل scripts/editorial.py على Incoming."
+  },
+  "prEnrichment": {
+    "newEntries": 12,
+    "allExactCurrentFeed": true,
+    "existingEntriesPreserved": 1059,
+    "existingRecordsChanged": 0,
+    "basisArticle": 3,
+    "basisMetadata": 9
+  },
+  "specialRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "name": "NVIDIA OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "seen": true,
+      "inFeed": false,
+      "inEditorial": false
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "name": "Canva Craft",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "seen": true,
+      "inFeed": false,
+      "inEditorial": false
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "name": "1Password agent sign-in",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "seen": true,
+      "inFeed": false,
+      "inEditorial": false
+    }
+  ],
+  "sourceStatus": {
+    "state": "partial",
+    "collected": 358,
+    "lastAttemptAt": "2026-11-17T03:49:39+00:00",
+    "aitnews": "ok",
+    "techWd": "HTTP 403"
+  },
+  "decision": "لا يوجد سجل تاريخي مطابق لـFeed الحالي ينتظر الاستيراد. تبقى الأزواج الـ97 خارج Feed وSeen-only؛ لا تُستورد ولا تُنشأ هويات بديلة. دفعة الأخبار الاثنا عشر في PR #110 تطابق Feed الحالي حرفيًا.",
+  "immutableFiles": [
+    "site/data/feed.json",
+    "site/data/seen.json"
+  ],
+  "validator": "Structural-equivalent check passed for all 133 incoming files. Local python scripts/editorial.py validate/import not run. PR CI validates the merged editorial.json; no official import command was executed.",
+  "developerNote": "تظل سجلات المصالحة في editorial/pending ولا تعرض كبطاقات منشورة."
+}
