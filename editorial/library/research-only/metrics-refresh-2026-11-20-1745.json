@@ -1,9 +1,10 @@
 {
   "schemaVersion": 1,
-  "purpose": "Research-only metrics refresh. This file is not Feed and not published Editorial. It updates repository activity/licence metrics for the previous eight projects and two exploratory candidates; detailed README, requirements, quickStart, costs, local/cloud, alternatives and ideas remain in the linked prior research dossier.",
+  "purpose": "Research-only metrics refresh; not Feed and not published Editorial. Detailed README, requirements, quickStart, costs, local/cloud, alternatives and ideas remain in the linked prior dossier.",
   "reviewedAt": "2026-11-20T17:45:43+03:00",
   "metricsCapturedAt": "2026-11-20T17:45:43+03:00",
-  "sourceMainTree": "8ea97cdf3216ee6b3eef851efe203e360c818703",
+  "sourceMainCommit": "8ea97cdf3216ee6b3eef851efe203e360c818703",
+  "sourceMainTree": "f59735ee717f9950505b96a0c8824c4822d38145",
   "feedSnapshot": {
     "generatedAt": "2026-11-20T11:31:41+00:00",
     "items": 800,
@@ -187,7 +188,7 @@
       "testStatus": "not_run",
       "readmeSha": "c11beae612f8d20b73cb9c7d8fd7feb13db2e0c1",
       "licenseSha": "295f5e1b5c342a1382ca2b54f7a911fdc466149d",
-      "note": "README describes a local-first visual code editor with bring-your-own-agent; source build requires no Onlook account/cloud key."
+      "note": "README describes a local-first visual code editor with bring-your-own-agent; source build requires no Onlook account or cloud key."
     },
     {
       "name": "FailTrace",
@@ -207,7 +208,7 @@
       "testStatus": "not_run",
       "readmeSha": "c3675813f512b96d0cf434e6df00f4418afdf871",
       "licenseSha": "5eb149e3f8d4c788282f31ac7541865bd0a9db69",
-      "note": "README marks early development; repro currently limited to Linux run-script steps and uses Docker."
+      "note": "README marks early development; reproduction currently limited to Linux run-script steps and uses Docker."
     }
   ],
   "presentationRequirements": [
