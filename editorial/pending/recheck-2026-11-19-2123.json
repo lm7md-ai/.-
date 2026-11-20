@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-19T18:29:39.507Z",
+  "publicationStatus": "not-published-audit-addendum",
+  "sourceMain": {
+    "commit": "91f278a40876d921c0af7e4993c31f90520e2355",
+    "feedGeneratedAt": "2026-11-19T14:41:46+00:00",
+    "feedItems": 800,
+    "editorialEntries": 1129,
+    "incomingFiles": 145,
+    "incomingAppearances": 1517
+  },
+  "previousAudit": "editorial/pending/current-feed-revalidation-2026-11-19-1553.json",
+  "previousAuditCounts": {
+    "uniquePendingPairs": 113,
+    "expiredConfirmed": 1,
+    "awaitingCurrentFeedOrCorrection": 112
+  },
+  "latestRevalidation": {
+    "recheckedAt": "2026-11-19T18:29:39.507Z",
+    "feedGeneratedAt": "2026-11-19T14:41:46+00:00",
+    "feedItems": 800,
+    "editorialEntries": 1129,
+    "uniquePending": 113,
+    "reappearedExact": 0,
+    "urlMismatches": 0,
+    "stillAbsent": 112,
+    "expiredConfirmed": 1,
+    "expiredRecords": [
+      {
+        "id": "2451814cc9423add84",
+        "url": "https://www.theverge.com/science/1025227/nasa-swift-observatory-falling-to-earth",
+        "titleAr": "ناسا تتوقع عودة مرصد Swift إلى الغلاف الجوي في 4 نوفمبر"
+      }
+    ]
+  },
+  "incomingReconciliation": {
+    "previouslyAuditedFiles": 144,
+    "previouslyAuditedAppearances": 1508,
+    "newlyObservedFile": "editorial/incoming/nabdh-content-2026-11-19-1553.json",
+    "newlyObservedRecords": 9,
+    "newlyObservedRecordsAlreadyImported": 9,
+    "totalFiles": 145,
+    "totalAppearances": 1517
+  },
+  "specialRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "titleAr": "OpenShell من NVIDIA",
+      "seen": true,
+      "feedMatch": false,
+      "editorialMatch": false,
+      "officialStatus": "المستودع نشط بترخيص Apache-2.0؛ README يعلن انتقال التطوير والحوكمة إلى CNCF/ai-openshell، مع الاستمرار في NVIDIA/OpenShell حتى اكتمال النقل.",
+      "sources": [
+        {
+          "title": "NVIDIA OpenShell README",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        }
+      ]
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "titleAr": "Canva Craft",
+      "seen": true,
+      "feedMatch": false,
+      "editorialMatch": false,
+      "officialStatus": "CRAFT-1 2K متاح عبر API Preview؛ التطبيقات العامة التي تستخدم Preview لا تجتاز مراجعة النشر العام؛ تطبيق الخدمة يستهلك 3 credits لكل صورة 2K.",
+      "sources": [
+        {
+          "title": "Canva Developers — Generate images with CRAFT",
+          "url": "https://www.canva.dev/docs/apps/rest-apis/generate-images-with-craft/"
+        },
+        {
+          "title": "Canva Developers Blog — Build AI image generation into your app with Canva Craft",
+          "url": "https://www.canva.dev/blog/developers/image-gen-with-craft/"
+        }
+      ]
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "titleAr": "1Password for Agents",
+      "seen": true,
+      "feedMatch": false,
+      "editorialMatch": false,
+      "officialStatus": "أصبح متاحًا دون تكلفة إضافية لحسابات Individual وFamily على 1Password.com؛ حسابات Team/Business و1Password.eu و1Password.ca غير مدعومة حاليًا. الاستخدام opt-in وموافقة المستخدم مطلوبة، وتختلف الميزات حسب تكامل الوكيل.",
+      "sources": [
+        {
+          "title": "1Password — Introducing 1Password for Agents",
+          "url": "https://1password.com/blog/1password-for-ai-agents"
+        },
+        {
+          "title": "1Password Support — Use 1Password to sign in to sites with supported agents",
+          "url": "https://support.1password.com/1password-for-agents/"
+        }
+      ]
+    }
+  ],
+  "rules": "لا تُنشأ هوية بديلة من العنوان. لا يستورد أي سجل ما لم يطابق id وurl حرفيًا مع Feed الحالي. تبقى السجلات التاريخية غير المطابقة في قائمة الانتظار.",
+  "pendingRecordsReference": "editorial/pending/current-feed-revalidation-2026-11-19-1553.json"
+}

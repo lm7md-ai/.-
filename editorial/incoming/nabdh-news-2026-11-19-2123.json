@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "items": {
+    "607807410ad5227362": {
+      "url": "https://www.theverge.com/tech/1037535/google-blue-origin-project-suncatcher-2029",
+      "titleAr": "غوغل تتعاون مع Blue Origin لإطلاق أقمار خوادم ذكاء اصطناعي في 2029",
+      "summaryAr": "أعلنت Google وBlue Origin عن إطلاق ثقيل مخصص في الربع الأول من 2029 ضمن Project Suncatcher. تقول Google إن صاروخ New Glenn سيضع أقمارًا مزودة بوحدات TPU في مدار متزامن مع الشمس، وإن سعة كل قمر تقارب رفًا واحدًا من مركز بيانات. الخبر يصف خطة مستقبلية، لا مركز بيانات فضائيًا يعمل تجاريًا الآن.",
+      "whyItMatters": "إذا نجح المشروع فقد يفتح مسارًا جديدًا للاستفادة من الطاقة الشمسية المدارية في الحوسبة. لكن الجدوى ستعتمد على الطاقة والتبريد والاتصالات والصيانة والتكلفة؛ وهذه أسئلة مفتوحة وليست نتائج مثبتة.",
+      "audience": "طلاب الذكاء الاصطناعي وهندسة الحوسبة والفضاء والبنية التحتية.",
+      "nextSteps": [
+        "تابع نتائج اختبارات الأقمار والاتصال والطاقة قبل تقييم التوسع التجاري.",
+        "قارن متطلبات الطاقة والتبريد والاتصال مع مراكز البيانات الأرضية."
+      ],
+      "limitations": "موعد الإطلاق المستهدف هو الربع الأول من 2029؛ السعة المذكورة تقريبية ومنسوبة إلى Google. لا يتضمن الإعلان تكلفة تشغيل أو نتائج تشغيل تجاري.",
+      "reviewedAt": "2026-11-19T21:25:33+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "The Verge — Blue Origin will launch Google’s AI server satellites in 2029",
+          "url": "https://www.theverge.com/tech/1037535/google-blue-origin-project-suncatcher-2029"
+        },
+        {
+          "title": "Google — Project Suncatcher and Blue Origin partnership",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/blue-origin-project-suncatcher-partnership/"
+        }
+      ]
+    },
+    "44f76fbba2d3881574": {
+      "url": "https://aitnews.com/2026/11/19/%d9%86%d9%85%d8%a7%d8%b0%d8%ac-openai-%d8%aa%d8%ad%d8%b3%d9%91%d9%86-%d8%aa%d8%b5%d9%85%d9%8a%d9%85-%d8%af%d9%88%d8%a7%d8%a6%d8%b1-amd-%d8%a7%d9%84%d8%b1%d8%b3%d9%88%d9%85%d9%8a%d8%a9-%d8%a8%d9%86/",
+      "titleAr": "نماذج OpenAI تساعد في تحسين تصميم شرائح AMD بنسبة تصل إلى 14%",
+      "summaryAr": "تقول OpenAI إنها تعاونت مع AMD لتحسين مؤشرات القدرة والأداء والمساحة (PPA) في تصميم GPU، مع تحسن يصل إلى 14% مقارنة بخط أساس وصفته بأنه محسّن بشدة. وتقول الشركة إن بعض التعديلات أُدرجت في تصميم أُرسل للتصنيع، واستخدمت أدوات Synopsys للتحقق من الحفاظ على السلوك الوظيفي. الأرقام والتوصيف من OpenAI.",
+      "whyItMatters": "قد يوسّع استخدام النماذج من كتابة الشيفرة إلى تصميم دوائر رقمية بمساعدة أدوات تحقق هندسية. المهم هو إدماج النماذج في دورة تصميم قابلة للاختبار، لا اعتبارها بديلًا عن المهندسين.",
+      "audience": "مهندسو الحاسوب والدوائر الرقمية والذكاء الاصطناعي ومتابعو صناعة الرقائق.",
+      "nextSteps": [
+        "قارن نتائج PPA مع خطوط أساس مستقلة إذا نُشرت تفاصيل إضافية.",
+        "تابع ما إذا كانت النتائج تتكرر على تصميمات ومهام أخرى."
+      ],
+      "limitations": "المصدر الأساسي هو إعلان OpenAI؛ لا يحدد المقال المنتجات أو القياسات التفصيلية لكل كتلة، ولا يقدم مراجعة مستقلة شاملة. تعذر فتح صفحة AITNews في هذه الجولة.",
+      "reviewedAt": "2026-11-19T21:25:33+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "OpenAI — Advancing chip design with OpenAI models",
+          "url": "https://openai.com/index/advancing-chip-design-with-our-models/"
+        },
+        {
+          "title": "البوابة العربية للأخبار التقنية — نماذج OpenAI تحسّن تصميم دوائر AMD",
+          "url": "https://aitnews.com/2026/11/19/%d9%86%d9%85%d8%a7%d8%b0%d8%ac-openai-%d8%aa%d8%ad%d8%b3%d9%91%d9%86-%d8%aa%d8%b5%d9%85%d9%8a%d9%85-%d8%af%d9%88%d8%a7%d8%a6%d8%b1-amd-%d8%a8%d9%86/"
+        }
+      ]
+    },
+    "db895de00b77372a93": {
+      "url": "https://techcrunch.com/2026/11/19/superhuman-pushes-its-go-assistant-everywhere/",
+      "titleAr": "Superhuman توسّع مساعد Go داخل Docs وMail وتضيف 20 وكيلًا متصلًا",
+      "summaryAr": "بحسب TechCrunch، توسّع الشركة مساعد Go ليعمل داخل Docs وMail، وتضيف 20 تكاملًا لوكلاء وخدمات مثل DeepL وLegora وAmplitude وDatabricks وBlackboard. ويستخدم Go سياق الأدوات المتصلة لاقتراح النصوص وتنظيم البريد وتشغيل مهام في الخلفية. قال الرئيس التنفيذي إن عدد المستخدمين النشطين تجاوز مليونًا؛ وهذا رقم منسوب إلى الشركة.",
+      "whyItMatters": "يعكس انتقال المساعدات من نافذة محادثة منفصلة إلى سياق العمل والملفات والبريد. هذا قد يزيد الفائدة، لكنه يجعل ضبط الصلاحيات ومراجعة المحتوى قبل إرساله أكثر أهمية.",
+      "audience": "الطلاب والمطورون والفرق التي تقيّم أدوات الإنتاجية والوكلاء.",
+      "nextSteps": [
+        "راجع صلاحيات كل موصل قبل ربط حسابات العمل.",
+        "اختبر الاقتراحات في مستندات تجريبية وتحقق من المحتوى قبل الإرسال."
+      ],
+      "limitations": "مليون مستخدم رقم ذكره الرئيس التنفيذي ولم يتحقق منه مستقلًا. توافر التكاملات قد يختلف حسب الخطة والمنطقة، والمقال لا يثبت دقة كل وكيل.",
+      "reviewedAt": "2026-11-19T21:25:33+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — Superhuman pushes its Go assistant everywhere",
+          "url": "https://techcrunch.com/2026/11/19/superhuman-pushes-its-go-assistant-everywhere/"
+        },
+        {
+          "title": "Superhuman — Go assistant",
+          "url": "https://superhuman.com/go"
+        }
+      ]
+    },
+    "e55c8f2df06c07ffc9": {
+      "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
+      "titleAr": "دراسة Dharma-AI تتنبأ بزمن ضبط النماذج بدقة أعلى من تقدير FLOPs في عينة H200",
+      "summaryAr": "حلل فريق Dharma-AI عدد 272 عملية ضبط خاضع للإشراف (SFT) على وحدات H200 بإجمالي 7,382 ساعة GPU. في تحقق متقاطع من خمس طيات، سجل CatBoost قيمة R² تقارب 0.98 ومتوسط خطأ مطلق 1.71 ساعة، مقابل 12.41 ساعة لخط أساس FLOPs في الإعداد المقارن. استخدم النموذج خصائص مثل التقييم والحفظ وحجم النموذج وتخصيص GPU.",
+      "whyItMatters": "تخطيط زمن التدريب يحتاج احتساب التحميل والتقييم ونقاط الحفظ وتنافس التخزين والشبكة، لا الحساب النظري وحده. قد يساعد هذا النوع من النماذج في جدولة موارد GPU وتقليل عدم اليقين.",
+      "audience": "مهندسو تعلم الآلة وMLOps ومديرو عناقيد GPU وطلاب أنظمة التدريب.",
+      "nextSteps": [
+        "اختبر الفكرة على سجلات تشغيلك قبل اعتمادها في الجدولة.",
+        "قارن النتائج بخط أساس FLOPs على العينة نفسها.",
+        "راقب الأداء على أنواع GPU ومهام تدريب مختلفة."
+      ],
+      "limitations": "العينة 272 عملية SFT من مجموعة تشغيل واحدة على H200؛ لا تشمل RLHF أو DPO أو RLVR. كان عدد التشغيلات التي تجاوزت 60 ساعة قليلًا، والورقة الكاملة ما زالت قادمة.",
+      "reviewedAt": "2026-11-19T21:25:33+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Hugging Face — Why your fine-tuning job takes longer than the FLOPs say",
+          "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time"
+        }
+      ]
+    },
+    "662045f579cfb2e238": {
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQVy12aDVhTzcyeUJxYUFoaFp0eXlHVmtkQ0VCNHQxdUpJRmxyMUZnMW50VG1EZzFkV1dXeGNSMW5oWlY3aG5Pb0hlTUNLVHZCM3Z2U08wbUhuWFFoOThCSGw1cEI0bEE3T1ctZ2hGbkpJSHctS3c0R2tiSEgwOHhFNWRQZXdMLXdfRm5hYmdXdGxoT2tB?oc=5",
+      "titleAr": "AWS تطرح معاينة المطورين من SDK Python v4 بعملاء متزامنين وغير متزامنين",
+      "summaryAr": "أعلنت AWS عن نسخة معاينة مطورين من SDK Python v4، بعملاء نمطيين لكل خدمة، وتعليقات نوعية مولدة من نماذج الخدمات، ودعم متزامن وغير متزامن. بعض تدفقات الأحداث متاحة في العملاء غير المتزامنين فقط. يتطلب البدء Python 3.12 أو أحدث وحساب AWS وبيانات اعتماد ومنطقة، وتوصي AWS بالاستمرار على Boto3 في أحمال الإنتاج حتى الإصدار العام.",
+      "whyItMatters": "يوفر التصميم النمطي والدعم غير المتزامن خيارات أفضل لتطبيقات Python عالية التزامن، لكنه لا يبرر ترحيل مشاريع الإنتاج قبل استقرار الواجهة والتوافق.",
+      "audience": "مطورو Python وAWS وفرق Backend.",
+      "nextSteps": [
+        "جرّب SDK في مشروع تجريبي وببيانات غير حساسة.",
+        "قارن الواجهة والتوافق مع Boto3 قبل أي ترحيل.",
+        "تابع تغييرات المعاينة حتى الإصدار العام."
+      ],
+      "limitations": "الإصدار Developer Preview؛ يتطلب Python 3.12 أو أحدث؛ بعض Event Streaming متاح في العملاء غير المتزامنين فقط. توصي AWS باستخدام Boto3 في الإنتاج حاليًا.",
+      "reviewedAt": "2026-11-19T21:25:33+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "AWS Developer Tools Blog — AWS SDK for Python v4 developer preview",
+          "url": "https://aws.amazon.com/blogs/developer/announcing-developer-preview-aws-sdk-for-python-v4/"
+        },
+        {
+          "title": "AWS SDK for Python v4 — Developer Guide",
+          "url": "https://docs.aws.amazon.com/sdk-for-python/v4/guide/"
+        }
+      ]
+    },
+    "f91b7c614ab8def43a": {
+      "url": "https://aitnews.com/2026/11/19/java4shell-exploitation-attempts-security-updates/",
+      "titleAr": "Oracle تدرج ثغرة Java4Shell ضمن تحديثات Java لشهر نوفمبر",
+      "summaryAr": "يتداول عنوان AITNews زيادة محاولات استغلال Java4Shell، لكن صفحة المقال لم تُفتح في هذه الجولة، كما قالت Sophos في 18 نوفمبر إنها لا تعرف تقارير عامة عن استغلال الثغرة في الواقع. المؤكد في نشرة Oracle أن CVE-2026-114938 تؤثر في منتجات وإصدارات محددة من Oracle Java SE وGraalVM، بدرجة CVSS 3.1 تبلغ 8.1، وتحتاج إلى تحديثات المورد.",
+      "whyItMatters": "تذكير بأن تحديث بيئة تشغيل Java جزء من أمن التطبيقات، وأن مراجعة نشرة المورد والإصدار الدقيق أكثر موثوقية من الاعتماد على اسم الثغرة أو ملخص عام.",
+      "audience": "مطورو Java ومسؤولو الأنظمة وفرق الأمن.",
+      "nextSteps": [
+        "راجع نشرة Oracle وحدد ما إذا كانت بيئتك ضمن المنتجات والإصدارات المتأثرة.",
+        "طبّق تحديثات المورد في بيئة اختبار ثم تحقق من توافق التطبيقات.",
+        "تابع نشرات Oracle وموزع OpenJDK الذي تستخدمه."
+      ],
+      "limitations": "تعذر فتح صفحة AITNews؛ لذلك لم أتحقق من ادعاء تزايد محاولات الاستغلال. قالت Sophos في 18 نوفمبر إنها لا تعرف تقارير عامة عن استغلالها في الواقع. يعتمد نطاق التأثر على المنتج والإصدار والبيئة؛ لا يقدم هذا الملخص خطوات استغلال.",
+      "reviewedAt": "2026-11-19T21:25:33+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "Oracle — Critical Security Patch Update Advisory, November 2026",
+          "url": "https://www.oracle.com/security-alerts/cspunov2026.html"
+        },
+        {
+          "title": "Sophos — OpenJDK Base64 Vulnerability (Java4Shell), CVE-2026-114938",
+          "url": "https://www.sophos.com/en-us/security-advisories/sophos-sa-20261118-java4shell"
+        },
+        {
+          "title": "البوابة العربية للأخبار التقنية — Java4Shell",
+          "url": "https://aitnews.com/2026/11/19/java4shell-exploitation-attempts-security-updates/"
+        }
+      ]
+    },
+    "c263b280fabbf4887d": {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1037126/canva-ai-features-off-button",
+      "titleAr": "Canva تضيف إعدادًا لإيقاف معظم ميزات الذكاء الاصطناعي التوليدي",
+      "summaryAr": "أعلنت Canva عن مفتاح يوقف ميزات توليدية مثل Magic Write وMagic Design وDream Lab وCanva Code، مع خيار منفصل لتقليل ظهور المحتوى المولّد في مكتبتها. تقول الشركة إن الخيارين متاحان لمستخدمي Free وPro دون تكلفة إضافية. تبقى أدوات تحرير مساعدة مثل إزالة الخلفية وMagic Grab متاحة لأنها تعدّل محتوى موجودًا.",
+      "whyItMatters": "يعطي الإعداد المستخدم تحكمًا أكبر في ظهور أدوات التوليد وفي نتائج مكتبة التصميم، ويفصل بين توليد محتوى جديد والتحرير المساعد.",
+      "audience": "مصممو المحتوى والطلاب والمعلمون ومستخدمو Canva.",
+      "nextSteps": [
+        "راجع إعداد Enable generative AI features من إعدادات الحساب.",
+        "ميّز بين إيقاف التوليد وتقليل المحتوى المولّد وبين إعدادات الخصوصية واستخدام البيانات."
+      ],
+      "limitations": "القائمة الدقيقة للأدوات قد تتغير. تقول Canva إن المكتبة تحتوي نسبة صغيرة من المحتوى المولّد دون نشر قياس مستقل؛ وإيقاف التوليد لا يعطل كل أدوات الذكاء الاصطناعي المساعدة.",
+      "reviewedAt": "2026-11-19T21:25:33+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "The Verge — Canva adds an AI off button",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1037126/canva-ai-features-off-button"
+        },
+        {
+          "title": "Canva Newsroom — Introducing AI Controls",
+          "url": "https://www.canva.com/newsroom/news/ai-controls-canva/"
+        }
+      ]
+    },
+    "f629676ca2f94e3b99": {
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBKSzl6NU1meVZBYzBPb1Y1dzNRSmFqMEVRZHVWQXp3cTZsc1lPaVA0bUxzS3kzSW51VnlIX2VBS1U2RHJYUGc?oc=5",
+      "titleAr": "وزارة الاتصالات وهيئة الحكومة الرقمية تبحثان تسريع تبني السحابة والذكاء الاصطناعي الحكومي",
+      "summaryAr": "ذكرت وكالة الأنباء السعودية أن وزارة الاتصالات وهيئة الحكومة الرقمية عقدتا لقاءً تنفيذيًا في الرياض بالتعاون مع AWS لبحث تبني الحوسبة السحابية والذكاء الاصطناعي في القطاع الحكومي، ومناقشة سياسة السحابة أولًا وتجارب الجهات الحكومية ورفع الإنتاجية. الإعلان يصف لقاءً ومناقشات، وليس عقد شراء أو نشرًا فعليًا لخدمة محددة.",
+      "whyItMatters": "يربط تطور البنية السحابية بالتحول الحكومي والمهارات الرقمية؛ متابعة النتائج والمشاريع الفعلية أهم من الاكتفاء بإعلان الفعاليات.",
+      "audience": "الطلاب والمهتمون بالسحابة والذكاء الاصطناعي والقطاع الحكومي السعودي.",
+      "nextSteps": [
+        "تابع إعلانات الجهات عن المشاريع والسياسات والبرامج التدريبية الناتجة عن اللقاء.",
+        "راقب مؤشرات التبني والحوكمة وحماية البيانات بدل افتراض تنفيذ فوري."
+      ],
+      "limitations": "بيان واس لا يذكر عقودًا أو ميزانية أو مؤشرات نتائج؛ والمشاركة مع AWS لا تعني أن جميع الجهات ستستخدم خدمة بعينها.",
+      "reviewedAt": "2026-11-19T21:25:33+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "وكالة الأنباء السعودية — لقاء حكومي لتعزيز تبني الحوسبة السحابية والذكاء الاصطناعي",
+          "url": "https://www.spa.gov.sa/N2730782"
+        },
+        {
+          "title": "Google News — رابط الخلاصة الأصلي",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBKSzl6NU1meVZBYzBPb1Y1dzNRSmFqMEVRZHVWQXp3cTZsc1lPaVA0bUxzS3kzSW51VnlIX2VBS1U2RHJYUGc?oc=5"
+        }
+      ]
+    }
+  }
+}
