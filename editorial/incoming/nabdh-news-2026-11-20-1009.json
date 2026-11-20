@@ -1,0 +1,226 @@
+{
+  "version": 1,
+  "items": {
+    "21c18831fcc7a86452": {
+      "titleAr": "تحديثات Ruby تعالج سبع ثغرات أمنية بينها خلل Ruby2Shell",
+      "summaryAr": "نشرت Ruby تنبيهًا عن سبع ثغرات في Regexp وتحويل حالة النصوص. أصلحت الإصدارات 4.0.10 و3.4.13 و3.3.14. وصفت Veria Labs خلل Ruby2Shell بأنه قد يصل إلى إعدادات Rails وSinatra التقليدية، لكن ذلك لا يعني أن كل تطبيق Ruby مكشوف.",
+      "whyItMatters": "تقع مكتبات اللغة في مسار التنفيذ الأساسي؛ لذا ينبغي فحص إصدارات Ruby والاعتمادات المضمنة في المنتجات ذاتية الاستضافة.",
+      "audience": "مطورو Ruby وRails وفرق DevOps وأمن التطبيقات.",
+      "nextSteps": [
+        "تحقق من إصدارات Ruby داخل الخدمات والحاويات.",
+        "حدّث إلى إصدار Ruby المصحح المناسب لفرعك.",
+        "راجع نشرات موردي المنتجات التي تضم Ruby داخليًا."
+      ],
+      "limitations": "تستند الإصدارات المتأثرة والمصححة إلى تنبيه Ruby وصفحة Veria Labs المحدثة في 20 نوفمبر 2026. وجود إثباتات مفهوم لا يثبت استغلالًا عامًا لكل تطبيق؛ لا يتضمن الملخص خطوات استغلال.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Veria Labs — Ruby2Shell",
+          "url": "https://verialabs.com/ruby2shell/"
+        },
+        {
+          "title": "Ruby security advisory",
+          "url": "https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/"
+        }
+      ],
+      "url": "https://verialabs.com/ruby2shell/",
+      "reviewedAt": "2026-11-20T06:35:29+03:00"
+    },
+    "dbe111187a465a8a1f": {
+      "titleAr": "Apple تبحث عن قائد هندسي لبناء وكيل يستخدم الحاسوب عبر التطبيقات والويب",
+      "summaryAr": "أفاد TechCrunch نقلًا عن Bloomberg أن إعلان وظيفة لدى Apple يطلب مديرًا هندسيًا أول للإشراف على وكيل يستطيع تصفح الويب والعمل عبر التطبيقات وتشغيل الأوامر وكتابة الشيفرة وتصحيحها. المشروع في مرحلة مبكرة ولم تؤكد Apple منتجًا أو موعد إطلاق. وبالتوازي، أعلنت Apple ضوابط أوضح قبل منح التطبيقات صلاحية Full Disk Access.",
+      "whyItMatters": "يشير إلى انتقال المنافسة نحو وكلاء يتحكمون في الحاسوب نفسه، ويجعل حدود الصلاحيات والموافقة البشرية وحماية الملفات جزءًا أساسيًا من تجربة المنتج.",
+      "audience": "مطورو macOS وبناة وكلاء الحاسوب ومهندسو الأمن وتجربة المستخدم.",
+      "nextSteps": [
+        "تعامل مع الخبر بوصفه مشروعًا مبكرًا لا إطلاقًا معلنًا.",
+        "صمم أذونات أقل امتيازًا وموافقات قبل الأفعال الحساسة.",
+        "اختبر وكلاء سطح المكتب على ملفات تجريبية مع سجل قابل للمراجعة."
+      ],
+      "limitations": "الخبر يستند إلى إعلان وظيفة نقلته Bloomberg؛ Apple لم تؤكد منتجًا أو موعدًا لـTechCrunch. تحديث Full Disk Access بيان رسمي منفصل.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — Apple may be developing its own AI agent",
+          "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/"
+        },
+        {
+          "title": "Apple Developer — Updates to Full Disk Access",
+          "url": "https://developer.apple.com/news/?id=p6zjojqw"
+        }
+      ],
+      "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
+      "reviewedAt": "2026-11-20T06:35:29+03:00"
+    },
+    "2e1fba6f9ed9affbda": {
+      "titleAr": "السعودية تتصدر مؤشر الخدمات الإلكترونية وتأتي رابعة في مؤشر الأمم المتحدة للحكومة الإلكترونية",
+      "summaryAr": "أعلنت وكالة الأنباء السعودية في 19 نوفمبر 2026 أن المملكة جاءت أولًا عالميًا في مؤشر الخدمات الإلكترونية (OSI) ورابعًا في مؤشر الأمم المتحدة لتطور الحكومة الإلكترونية (EGDI)، فيما جاءت الرياض أولًا في مؤشر الخدمات الإلكترونية المحلية (LOSI). يدرس مسح الأمم المتحدة الخدمات والبنية التحتية ورأس المال البشري ويشير إلى أن الخدمات المدعومة بالذكاء الاصطناعي ما زالت ناشئة وتتطلب إشرافًا بشريًا.",
+      "whyItMatters": "تضع النتائج الخدمات الرقمية السعودية ضمن المقارنة العالمية، وتوضح أن تقييم الحكومة الرقمية يشمل البنية التحتية والمهارات وجودة الخدمة والمشاركة.",
+      "audience": "المهتمون بالتقنية في السعودية وطلاب الذكاء الاصطناعي والحكومة الرقمية ومطورو الخدمات العامة.",
+      "nextSteps": [
+        "ميّز بين OSI وEGDI وLOSI عند قراءة الترتيب.",
+        "راجع منهجية المؤشر قبل مقارنة الأعوام.",
+        "تابع جودة الخدمة وإمكانية الوصول والأمن إلى جانب الترتيب."
+      ],
+      "limitations": "المراتب التفصيلية من بيان SPA؛ أما UN DESA فيشرح إطار المسح وترتيبه العام. المؤشرات مركبة ولا تقيس تجربة كل مستخدم أو جودة كل خدمة على حدة.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "SPA — المملكة الأولى عالميًا في الخدمات الحكومية الرقمية",
+          "url": "https://spa.gov.sa/N2731813"
+        },
+        {
+          "title": "UN DESA — 2026 E-Government Survey",
+          "url": "https://www.un.org/en/desa/digital-government-advances-worldwide-but-divides-persist-as-ai-transforms-public-administration-new-un-survey-shows"
+        }
+      ],
+      "url": "https://news.google.com/rss/articles/CBMi1gRBVV95cUxQeDJlOE1TdUpmUjZZN2dxZG12NUJXbVA5MGIyRmlld0FyME1CRkljTTZxYi14VG1Dai1DRERCOXlQQnVsbGNpV0tkUERWZ1c3Zm9UNHBySkJxem9vU0VaWnZRSmRDdHR0SUtUc3FCR3QwMUNRVmVNY0o2M1AtWHJzc2RuTzl0c1JITVZsbVVpU2pLdWEzR1U0Z1dYekZJSDBpdFRQek1aeWJ3bDdiX2RRUF9FaTJPQWkyNjEyZlF3V3laWjFhbGVDOFVaTnVnWUYzT0pTOHRGQlNUZWIzWmNILWZXNG51bG9WNjZhb1UzWEJYQm5RaWhiVnhtU0U2MEtoS2NLOVJJTEp2NjllR0dKa0VLWVh3NnVDc2Y1Mlphdm1pdHd2b2xSbEVBUmhYb0w1U1BrRFMyZjBIUW1xOEh2aVU1V3Z4cHJ6Rm83TFRYU05LMGctQ215NzJhWDQ5UGg2bU5NbEY0TXRGYURYNU1uZzRNMjlmVEctaUpKVXNKRWYtOThOS1NpY3dHam53YzVEcTFsenZuU0VzRjZwMkstVGpiVTItT05PY0x6UnA2dU5WNjhsMnJISUJXbXc1cDZyTHVqN3RBUnJzcUZPYUpxdzFYekZvYTJYb2haMUZjNHZqNk9sLW1VZUV3dm1EWmFjNFZZbVZ3T1dxT08yZGtIek1takMyampyLWhxTlVmT2VKMy1JZDRHUDJBa0JnMnVadE9rM01YV2sxNVdpS2dBVm1kYlBuZU5BTzluUTNpNVRxTTEyWGVqaWYtZTZyZ0l2bUpscFZB?oc=5",
+      "reviewedAt": "2026-11-20T06:35:29+03:00"
+    },
+    "dc2fa2fb88cfbd46a7": {
+      "titleAr": "AWS تطلق Common Runtime 1.0 رسميًا لمكونات HTTP وS3 وMQTT",
+      "summaryAr": "أعلنت AWS التوافر العام للإصدار 1.0 من Common Runtime، وهي عائلة مكتبات مفتوحة المصدر مكتوبة بلغة C تستخدمها أدوات وSDKs AWS للشبكات ونقل S3 وMQTT والتوقيع والتحقق من سلامة البيانات. يمكن استخدامها مباشرة أو عبر روابط لغات متعددة، لكن الدعم يختلف حسب المكوّن واللغة.",
+      "whyItMatters": "يوفر أساسًا مشتركًا للاتصال والنقل داخل تطبيقات AWS، وقد يقلل إعادة بناء إدارة الاتصالات وإعادة المحاولة والتوقيع في كل تطبيق.",
+      "audience": "مطورو C وC++ وJava وPython وNode.js ومهندسو السحابة.",
+      "nextSteps": [
+        "تحقق مما إذا كان SDK الحالي يستخدم CRT قبل إضافة اعتماد مباشر.",
+        "راجع مصفوفة المكوّنات واللغات المدعومة.",
+        "اختبر التوافق والنقل على بيئة مرحلية."
+      ],
+      "limitations": "إعلان GA من AWS وليس اختبار أداء مستقلًا؛ الفائدة تعتمد على SDK والمنصة والشبكة، ودعم HTTP وS3 وMQTT ليس متماثلًا في جميع اللغات.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "AWS Developer Tools Blog — AWS Common Runtime 1.0",
+          "url": "https://aws.amazon.com/blogs/developer/announcing-aws-common-runtime-crt-v1-0-0/"
+        }
+      ],
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQSEl0SUtqbjlNYXk5czNYWUp3REwwNkZOYkZ2ZFlFaW5NUEdvM1h0bmpzUGhEamlmdDFLOExfVTB5S1lXdE5VMW9hQzhOT1FPWVBvV3NvZkZrMEItaWhlQ2hXSHNnZUNBa0dEaExpYUh4MmJYSC1Yd1p3Mm5FTUNfUjZSSVJvbWs?oc=5",
+      "reviewedAt": "2026-11-20T06:35:29+03:00"
+    },
+    "fdf1ebbcf783c618ab": {
+      "titleAr": "AWS تجعل Transfer Manager لنقل S3 بلغة Rust متاحًا عمومًا",
+      "summaryAr": "أطلقت AWS الإصدار العام من aws-s3-transfer بعد معاينة بدأت في مارس 2025. يضيف محرك جدولة عادلة ومجمع ذاكرة محدودًا افتراضيًا بما يصل إلى ربع ذاكرة الجهاز وبحد 32 GiB، ومسار تنزيل يقلل النسخ ودعم أهداف WebAssembly محددة. تتطلب أمثلة البدء حساب AWS وصلاحيات S3 ومشروع Rust يستخدم Tokio.",
+      "whyItMatters": "يخفف إدارة التوازي والذاكرة ونقل الملفات الكبيرة عن مطوري Rust، لكنه لا يلغي الحاجة إلى ضبط IAM ومراقبة التكلفة واختبار السلوك على بيانات التطبيق.",
+      "audience": "مطورو Rust ومهندسو البيانات ومطورو تطبيقات S3.",
+      "nextSteps": [
+        "ابدأ بحاوية S3 اختبارية وصلاحيات أقل امتيازًا.",
+        "قِس throughput والذاكرة على أحجام ملفات مختلفة.",
+        "احسب رسوم التخزين والطلبات ونقل البيانات قبل الإنتاج."
+      ],
+      "limitations": "الأرقام الافتراضية معلنة من AWS وليست benchmark مستقلًا. قد تترتب رسوم S3، ودعم WebAssembly يخص أهدافًا محددة لا كل بيئات WASM.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "AWS Developer Tools Blog — S3 Transfer Manager for Rust GA",
+          "url": "https://aws.amazon.com/blogs/developer/high-throughput-transfer-manager-for-amazon-s3-in-rust-is-now-generally-available/"
+        },
+        {
+          "title": "aws-s3-transfer crate",
+          "url": "https://crates.io/crates/aws-s3-transfer"
+        },
+        {
+          "title": "aws-s3-transfer API docs",
+          "url": "https://docs.rs/aws-s3-transfer/latest/aws_s3_transfer/"
+        }
+      ],
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMDQ5aVduak1QSEVub2FLN21qRV9wbVNTZzRJZXF6WnI0MVp5ckdyVThhTER0MzZoVE1wTjdlX1ZvRnUwUzBTOU1vZm1iYjMwQkJMZ3lmWGxjWkpCUU15OXJoSlRYYW5ZV3Uxam5tbjRSdXpuMldSV1NuQ0JmTlk4dnhHYnRmTmJva3N5UkpBTjhObEV6X2JSSjkxOEpLaXhJSE5MMV95OWp5R0VGS1JPdmxJcnFiV3NKR0xKaTFn?oc=5",
+      "reviewedAt": "2026-11-20T06:35:29+03:00"
+    },
+    "8cc8dc08d878937a89": {
+      "titleAr": "Google تطلق Gemini 4 Neon بسياق مليون رمز وتسعير معلن",
+      "summaryAr": "أعلنت Google في 18 نوفمبر 2026 نموذج Gemini 4 Neon، مع نافذة سياق تصل إلى مليون رمز وتسعير معلن قدره 3 دولارات لكل مليون رمز إدخال و15 دولارًا للإخراج و0.15 دولار للإدخال المخزن. تقول الشركة إن النموذج سجل 61 في Artificial Analysis Intelligence Index عند مستوى xhigh، وذكرت نتائج في مؤشرات أخرى. بدأ الإطلاق عبر Gemini API وGoogle AI Studio وبعض خطط Pro وUltra وAntigravity.",
+      "whyItMatters": "يضيف خيارًا بسياق كبير وتسعير معلن؛ لكن المقارنة العملية تتطلب ضبط مستوى التفكير وحساب الزمن والتكلفة بدل الاعتماد على ترتيب واحد.",
+      "audience": "مطورون وباحثون ومستخدمو وكلاء البرمجة والتحليل.",
+      "nextSteps": [
+        "اختبر مجموعة مهام ثابتة على high وxhigh.",
+        "احسب تكلفة الإدخال والإخراج والكاش والزمن.",
+        "تحقق من التوافر في خطتك ومنطقتك."
+      ],
+      "limitations": "نتائج المؤشرات منشورة من Google؛ نتيجة 61 مرتبطة بإعداد xhigh وليست ضمانًا لأداء كل استخدام. الإتاحة مرحلية وقد تختلف حسب الخطة.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Google — Introducing Gemini 4 Neon",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+        },
+        {
+          "title": "Google DeepMind — Gemini 4 Neon model card",
+          "url": "https://deepmind.google/models/model-cards/gemini-4-neon/"
+        }
+      ],
+      "url": "https://aitnews.com/2026/11/19/%d8%ac%d9%88%d8%ac%d9%84-%d8%aa%d8%b7%d9%84%d9%82-%d9%86%d9%85%d9%88%d8%b0%d8%ac-%d8%a7%d9%84%d8%b0%d9%83%d8%a7%d8%a1-%d8%a7%d9%84%d8%a7%d8%b5%d8%b7%d9%86%d8%a7%d8%b9%d9%8a-gemini-4-neon-%d9%84%d9%84/",
+      "reviewedAt": "2026-11-20T06:35:29+03:00"
+    },
+    "001e20945eceeac012": {
+      "titleAr": "تقرير: Meta قد تسعّر جهاز Muse Charm بنحو 300 دولار مع اتصال 5G",
+      "summaryAr": "نقل TechCrunch وReuters عن تقرير The Information أن Meta قد تسعّر جهاز Muse Charm بنحو 300 دولار مع احتمال توفير حتى 12 شهرًا من بيانات Verizon. وصف التقرير شاشة صغيرة واتصال 5G والوصول إلى مساعد Muse؛ لكن Meta لم تؤكد السعر أو شروط البيانات.",
+      "whyItMatters": "يمثل محاولة لنقل المساعد الوكيل من تطبيق الهاتف إلى جهاز مخصص قابل للحمل، ويثير أسئلة حول الاتصال المستمر والخصوصية والسعر.",
+      "audience": "متابعو أجهزة الذكاء الاصطناعي القابلة للارتداء ومطورو المساعدات الاستهلاكية.",
+      "nextSteps": [
+        "انتظر الإعلان الرسمي عن السعر والتوافر وشروط البيانات.",
+        "قارن الفائدة بتطبيق الهاتف قبل شراء جهاز مستقل.",
+        "راجع سياسات الصوت والبيانات والصلاحيات."
+      ],
+      "limitations": "السعر وخطة 5G مستندان إلى تقرير The Information ومصادر مطلعة؛ لم تؤكد Meta التفاصيل ولم ترد Verizon وقت تقرير Reuters.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — Meta’s new Muse Charm device may cost $300",
+          "url": "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/"
+        },
+        {
+          "title": "Reuters — Meta to price Muse Charm gadget at $300",
+          "url": "https://www.reuters.com/business/media-telecom/meta-price-muse-charm-gadget-300-information-reports-2026-11-19/"
+        }
+      ],
+      "url": "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/",
+      "reviewedAt": "2026-11-20T06:35:29+03:00"
+    },
+    "87b2502506d7cb89ef": {
+      "titleAr": "تحليل: انقطاعات الخدمات تكشف مخاطر تحديث الأنظمة القديمة وسط تسارع أدوات الأمن",
+      "summaryAr": "يرصد TechCrunch انقطاعات طالت خدمات دفع واتصالات وطيران وإنتاجية خلال أسبوعين، لكنه ينقل عن شركات أن كثيرًا منها لم يكن بسبب هجمات سيبرانية أو ذكاء اصطناعي. يطرح خبراء احتمال أن تسارع اكتشاف الثغرات والتحديثات يضغط على أنظمة قديمة، بينما يشير آخرون إلى أن دمج البنية الحديثة مع القديمة دون اختبار كافٍ قد يسبب الاضطراب. المقال تحليل لا يثبت سببًا موحدًا.",
+      "whyItMatters": "يوضح أن تسريع التصحيح لا يكفي؛ فالتدرج والاختبارات والقدرة على الرجوع والتقسيم الشبكي ضرورية لتجنب انقطاع التشغيل.",
+      "audience": "مهندسو الأنظمة وSRE والأمن السيبراني وفرق البنية التحتية.",
+      "nextSteps": [
+        "افصل سبب كل حادثة ولا تنسبها إلى AI دون دليل.",
+        "استخدم بيئة مرحلية ونشرًا تدريجيًا وخطة rollback.",
+        "راقب الأنظمة القديمة وحدود الوصول أثناء التحديث."
+      ],
+      "limitations": "المقال يجمع حوادث وآراء مختلفة ولا يثبت علاقة سببية بينها أو أن الذكاء الاصطناعي تسبب فيها؛ بعض الشركات نفت علاقة الهجمات أو AI.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — These tech outages are giving Y2K, AI agent style",
+          "url": "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/"
+        }
+      ],
+      "url": "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/",
+      "reviewedAt": "2026-11-20T06:35:29+03:00"
+    },
+    "e39600edda0e5accc0": {
+      "titleAr": "حوار مع Pete Warden حول الذكاء الاصطناعي المحلي والنماذج الصوتية منخفضة التأخير",
+      "summaryAr": "تستعرض مقابلة The Data Exchange مع Pete Warden تشغيل نماذج محلية على الحواسيب والمتصفحات والأجهزة محدودة الموارد، وتناقش النماذج المفتوحة والصوت كواجهة تفاعل. يرى الضيف أن انخفاض الكمون والتحكم المحلي قد يفتحان حالات استخدام جديدة، لكنه يشير إلى أن سهولة الاستخدام والتسويق ما زالا عائقين.",
+      "whyItMatters": "يعرض مفاضلة بين الخصوصية والتحكم والكمون من جهة، وسهولة الاستخدام وقدرات الخدمات السحابية من جهة أخرى؛ وهي مفاضلة مهمة عند بناء تطبيقات صوتية ومحلية.",
+      "audience": "مطورو الذكاء الاصطناعي المحلي وEdge AI والصوت والطلاب المهتمون بالنماذج المفتوحة.",
+      "nextSteps": [
+        "قارن نموذجًا محليًا وآخر سحابيًا على تسجيلات متطابقة.",
+        "قس زمن الاستجابة والذاكرة والدقة على جهاز فعلي.",
+        "راجع Moonshine Voice كمثال متخصص ولا تعمم من رأي ضيف واحد."
+      ],
+      "limitations": "هذه مقابلة ورأي ضيف وليست دراسة معيارية. تمت مراجعة وصف الحلقة ومقاطع من التفريغ لا التفريغ الكامل؛ لا تُعامل الآراء كقياسات مثبتة.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "The Data Exchange — Why AI Wants to Be Local",
+          "url": "https://thedataexchange.media/pete-warden-moonshine/"
+        },
+        {
+          "title": "Moonshine Voice — Official site",
+          "url": "https://www.moonshine.ai/"
+        }
+      ],
+      "url": "https://thedataexchange.media/pete-warden-moonshine/",
+      "reviewedAt": "2026-11-20T06:35:29+03:00"
+    }
+  }
+}
