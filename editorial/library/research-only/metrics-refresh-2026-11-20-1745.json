@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Research-only metrics refresh. This file is not Feed and not published Editorial. It updates repository activity/licence metrics for the previous eight projects and two exploratory candidates; detailed README, requirements, quickStart, costs, local/cloud, alternatives and ideas remain in the linked prior research dossier.",
+  "reviewedAt": "2026-11-20T17:45:43+03:00",
+  "metricsCapturedAt": "2026-11-20T17:45:43+03:00",
+  "sourceMainTree": "8ea97cdf3216ee6b3eef851efe203e360c818703",
+  "feedSnapshot": {
+    "generatedAt": "2026-11-20T11:31:41+00:00",
+    "items": 800,
+    "news": 700,
+    "projects": 100,
+    "mainEditorialEntries": 1129,
+    "prEditorialEntries": 1165,
+    "projectEditorialCoverage": {
+      "covered": 100,
+      "total": 100
+    }
+  },
+  "historicalLibrary": {
+    "count": 31,
+    "active": 29,
+    "archived": 2,
+    "targetApprox30Met": true,
+    "newCandidatesNotCounted": 2
+  },
+  "priorResearchDossier": "editorial/library/research-only/previous-eight-and-candidates-2026-11-20-1443.json",
+  "priorIdeaCompleteness": {
+    "projectsReviewed": 9,
+    "improvements": 18,
+    "spinoffs": 9,
+    "religiousIdeasRetained": 1,
+    "testEvidenceClaims": 0
+  },
+  "projects": [
+    {
+      "name": "AI Engineering Hub",
+      "repository": "patchy631/ai-engineering-hub",
+      "feedPresent": true,
+      "editorialId": "fe0e6bfdbdd5822139",
+      "archived": false,
+      "license": "MIT",
+      "metrics": {
+        "stars": 42033,
+        "forks": 6720,
+        "openIssues": 139,
+        "pushedAt": "2026-11-01T04:39:16Z",
+        "updatedAt": "2026-11-20T12:53:58Z"
+      },
+      "metricsStatus": "current",
+      "testStatus": "not_run",
+      "source": "https://api.github.com/repos/patchy631/ai-engineering-hub"
+    },
+    {
+      "name": "Google Gen AI SDK",
+      "repository": "googleapis/python-genai",
+      "feedPresent": false,
+      "archived": false,
+      "license": "Apache-2.0",
+      "metrics": {
+        "stars": 4081,
+        "forks": 1067,
+        "openIssues": 364,
+        "pushedAt": "2026-11-20T10:52:25Z",
+        "updatedAt": "2026-11-19T16:23:31Z"
+      },
+      "metricsStatus": "current",
+      "testStatus": "not_run",
+      "source": "https://api.github.com/repos/googleapis/python-genai"
+    },
+    {
+      "name": "Lasm",
+      "repository": "Millillion/lasm",
+      "feedPresent": false,
+      "archived": false,
+      "license": "MIT",
+      "metrics": {
+        "stars": 108,
+        "forks": 6,
+        "openIssues": 9,
+        "pushedAt": "2026-11-19T19:14:01Z",
+        "updatedAt": "2026-11-18T18:41:29Z"
+      },
+      "metricsStatus": "current",
+      "testStatus": "not_run",
+      "source": "https://api.github.com/repos/Millillion/lasm"
+    },
+    {
+      "name": "MarkItDown",
+      "repository": "microsoft/markitdown",
+      "feedPresent": false,
+      "archived": false,
+      "license": "MIT",
+      "metrics": {
+        "stars": 197195,
+        "forks": 14935,
+        "openIssues": 821,
+        "pushedAt": "2026-11-07T00:14:01Z",
+        "updatedAt": "2026-11-20T14:56:51Z"
+      },
+      "metricsStatus": "current",
+      "testStatus": "not_run",
+      "source": "https://api.github.com/repos/microsoft/markitdown"
+    },
+    {
+      "name": "Minecraft Agent Harness",
+      "repository": "yc-software/minecraft-agent-harness",
+      "feedPresent": false,
+      "archived": false,
+      "license": "MIT",
+      "metrics": {
+        "stars": 228,
+        "forks": 30,
+        "openIssues": 1,
+        "pushedAt": "2026-10-29T20:30:45Z",
+        "updatedAt": "2026-11-20T10:30:45Z"
+      },
+      "metricsStatus": "current",
+      "testStatus": "not_run",
+      "source": "https://api.github.com/repos/yc-software/minecraft-agent-harness"
+    },
+    {
+      "name": "NVIDIA OpenShell",
+      "repository": "NVIDIA/OpenShell",
+      "feedPresent": false,
+      "archived": false,
+      "license": "Apache-2.0",
+      "metrics": {
+        "stars": 21827,
+        "forks": 2146,
+        "openIssues": 772,
+        "pushedAt": "2026-11-20T11:25:34Z"
+      },
+      "metricsStatus": "previous-snapshot-only",
+      "note": "GitHub API now returns Moved Permanently for the old repository path; current metrics could not be refreshed in this run.",
+      "testStatus": "not_run",
+      "source": "https://github.com/NVIDIA/OpenShell"
+    },
+    {
+      "name": "Pydantic AI",
+      "repository": "pydantic/pydantic-ai",
+      "feedPresent": false,
+      "archived": false,
+      "license": "MIT",
+      "metrics": {
+        "stars": 21312,
+        "forks": 3225,
+        "openIssues": 1855,
+        "pushedAt": "2026-11-20T14:56:58Z",
+        "updatedAt": "2026-11-20T13:26:28Z"
+      },
+      "metricsStatus": "current",
+      "testStatus": "not_run",
+      "source": "https://api.github.com/repos/pydantic/pydantic-ai"
+    },
+    {
+      "name": "uv",
+      "repository": "astral-sh/uv",
+      "feedPresent": false,
+      "archived": false,
+      "license": "MIT OR Apache-2.0",
+      "metrics": {
+        "stars": 92452,
+        "forks": 3944,
+        "openIssues": 3082,
+        "pushedAt": "2026-11-20T14:26:39Z",
+        "updatedAt": "2026-11-20T14:52:57Z"
+      },
+      "metricsStatus": "current",
+      "testStatus": "not_run",
+      "source": "https://api.github.com/repos/astral-sh/uv"
+    },
+    {
+      "name": "Onlook",
+      "repository": "onlook-dev/onlook",
+      "feedPresent": false,
+      "candidate": true,
+      "archived": false,
+      "license": "Apache-2.0",
+      "metrics": {
+        "stars": 27555,
+        "forks": 2165,
+        "openIssues": 9,
+        "pushedAt": "2026-11-20T02:22:43Z",
+        "updatedAt": "2026-11-20T14:46:21Z"
+      },
+      "metricsStatus": "current",
+      "testStatus": "not_run",
+      "readmeSha": "c11beae612f8d20b73cb9c7d8fd7feb13db2e0c1",
+      "licenseSha": "295f5e1b5c342a1382ca2b54f7a911fdc466149d",
+      "note": "README describes a local-first visual code editor with bring-your-own-agent; source build requires no Onlook account/cloud key."
+    },
+    {
+      "name": "FailTrace",
+      "repository": "Ri4dH/failtrace",
+      "feedPresent": false,
+      "candidate": true,
+      "archived": false,
+      "license": "MIT",
+      "metrics": {
+        "stars": 33,
+        "forks": 0,
+        "openIssues": 0,
+        "pushedAt": "2026-11-19T15:34:20Z",
+        "updatedAt": "2026-11-20T12:34:53Z"
+      },
+      "metricsStatus": "current",
+      "testStatus": "not_run",
+      "readmeSha": "c3675813f512b96d0cf434e6df00f4418afdf871",
+      "licenseSha": "5eb149e3f8d4c788282f31ac7541865bd0a9db69",
+      "note": "README marks early development; repro currently limited to Linux run-script steps and uses Docker."
+    }
+  ],
+  "presentationRequirements": [
+    "For projects already in Feed, retain the original Feed ID.",
+    "Render overview, requirements, quickStart, costs, localVsCloud, alternatives and limitations before ideas.",
+    "Preserve idea order and stable source URLs; label difficulty as an estimate and testStatus explicitly.",
+    "Keep projects absent from Feed in this research-only library; do not display them as published project cards."
+  ]
+}
