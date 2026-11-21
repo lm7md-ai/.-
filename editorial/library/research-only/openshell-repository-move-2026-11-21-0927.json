@@ -1,18 +1,19 @@
 {
   "schemaVersion": 1,
   "purpose": "Research-only refresh of the existing NVIDIA OpenShell library entry after the upstream repository transfer. This is not a new project, not a Feed card, and not published Editorial.",
-  "reviewedAt": "2026-11-21T12:09:02+03:00",
-  "metricsCapturedAt": "2026-11-21T09:09:02Z",
-  "sourceMainCommit": "25c212ec6ee5dde3a85b92116d3005b14b0c5e47",
+  "reviewedAt": "2026-11-21T14:40:33+03:00",
+  "metricsCapturedAt": "2026-11-21T11:40:33Z",
+  "sourceMainCommit": "2bcf5798e4e7461fd4fc26c02e4b16bbb5b5c8bd",
   "identity": {
     "legacySeenId": "940ec4695c1e241c2f",
     "oldRepository": "NVIDIA/OpenShell",
     "canonicalRepository": "ai-openshell/openshell",
     "seenPresent": true,
-    "feedPresent": false,
+    "feedPresent": null,
     "editorialPresent": false,
     "countAsNewProject": false,
-    "historicalLibraryCount": 31
+    "historicalLibraryCount": 31,
+    "feedPresenceStatus": "not_revalidated_after_main_feed_refresh"
   },
   "project": {
     "name": "NVIDIA OpenShell",
@@ -24,12 +25,12 @@
     "readmeSha": "0752ddaf1385b78f39a08f8718268762d15db2d1",
     "licenseSha": "f13d24c3fa482d61605d600e5ac1248799bd4107",
     "metrics": {
-      "stars": 21844,
+      "stars": 21847,
       "forks": 2152,
       "openIssues": 781,
       "pushedAt": "2026-11-21T05:47:46Z",
-      "updatedAt": "2026-11-21T08:26:48Z",
-      "measuredAt": "2026-11-21T09:09:02Z",
+      "updatedAt": "2026-11-21T11:28:21Z",
+      "measuredAt": "2026-11-21T11:40:33Z",
       "note": "GitHub counters are a timestamped snapshot, not a quality or growth measure.",
       "latestCommit": "438e07b2312476c9057f3f7630fde31d29b6d377",
       "latestCommitAt": "2026-11-21T02:31:37Z"
@@ -72,6 +73,10 @@
       {
         "title": "0.1.0 upgrade guide",
         "url": "https://docs.nvidia.com/openshell/latest/upgrade/0-1-0"
+      },
+      {
+        "title": "GitHub repository metadata snapshot (metrics and activity)",
+        "url": "https://api.github.com/repos/ai-openshell/openshell"
       }
     ],
     "improvements": [
@@ -166,6 +171,7 @@
     "Keep this as a research-only refresh of the existing OpenShell entry; do not create a new Feed identity or card.",
     "Display the canonical repository ai-openshell/openshell and retain the legacy Seen ID only as a traceable reference.",
     "Show license, archived status, metricsCapturedAt, pushedAt, and updatedAt beside counters.",
-    "Keep testStatus=not_run until a reproducible build or execution produces testEvidence."
+    "Keep testStatus=not_run until a reproducible build or execution produces testEvidence.",
+    "Recheck the legacy ID against the latest Main feed before setting feedPresent; the feed changed after the prior audit."
   ]
 }
