@@ -1,0 +1,301 @@
+{
+  "version": 1,
+  "items": {
+    "47396adf5e31273b13": {
+      "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/",
+      "titleAr": "Reuters يرصد مخاوف خصوصية وسلامة في وكيل Meta Muse",
+      "summaryAr": "راجع Reuters أكثر من عشرين منشورًا داخليًا ثم أعاد اختبار الوصول إلى رسائل Signal عبر أذونات إشعارات Android وأدوات تسهيلات الاستخدام ولقطات الشاشة على macOS؛ ولم تتكرر النتيجة نفسها على iPhone. قالت Meta إن الحالات معزولة وإن بعض الرسائل قد تكون هلوسات، ولم يحسم Reuters صحة بعض الأرصدة المعروضة.",
+      "whyItMatters": "توضح القصة أن صلاحيات النظام الواسعة قد تجعل الوكيل يرى سياقًا لم يقصده المستخدم، وأن ادعاء الوكيل ليس دليلًا على صحة البيانات.",
+      "audience": "مطورو الوكلاء وتطبيقات الهاتف وفرق الخصوصية والأمن.",
+      "nextSteps": [
+        "راجع أذونات الإشعارات وإمكانية الوصول الممنوحة للوكلاء.",
+        "افصل صلاحيات كل تطبيق واطلب موافقة واضحة.",
+        "تحقق من مصدر البيانات قبل عرضها."
+      ],
+      "limitations": "تحقيق Reuters واختبارات محددة ورد Meta؛ لا يثبت تعرض كل المستخدمين لتسرب أو أن كل الأمثلة بيانات حقيقية.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Reuters — Muse safety mishaps",
+          "url": "https://www.reuters.com/investigations/meta-bets-big-muse-ai-agent-early-safety-mishaps-surface-2026-11-18/"
+        },
+        {
+          "title": "TechCrunch — Meta Muse report",
+          "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/"
+        }
+      ],
+      "reviewedAt": "2026-11-21T18:11:30+03:00"
+    },
+    "f88414c8cfe7b454dc": {
+      "url": "https://arstechnica.com/gadgets/2026/11/google-will-launch-android-app-verification-requirement-globally-in-january-2027/",
+      "titleAr": "Google تبدأ التوسع العالمي للتحقق من مطوري تطبيقات Android في يناير 2027",
+      "summaryAr": "أعلنت مدونة Android Developers بدء التوسع العالمي للتحقق من هوية مطوري التطبيقات في يناير 2027 بالتعاون مع سبعة موزعين، مع توسع تدريجي إلى بلدان ومصادر تثبيت أخرى خلال عدة أشهر. وتقول Google إن الحماية بدأت في متاجر مشاركة بالبرازيل وإندونيسيا وسنغافورة وتايلاند.",
+      "whyItMatters": "قد يؤثر التغيير على المطورين الذين يوزعون تطبيقات Android خارج Google Play وعلى المستخدمين الذين يثبتون تطبيقات من مصادر متعددة.",
+      "audience": "مطورو Android والطلاب وفرق النشر ومتاجر التطبيقات.",
+      "nextSteps": [
+        "راجع متطلبات تسجيل المطورين قبل يناير 2027.",
+        "تحقق من أثر السياسة على قنوات توزيع تطبيقك.",
+        "احتفظ بسجل لهوية الناشر وتوقيع التطبيق."
+      ],
+      "limitations": "الإطلاق مرحلي؛ لا يعني خضوع جميع البلدان ومصادر التثبيت في اليوم نفسه.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Android Developers Blog — Developer verification 2027",
+          "url": "https://developer.android.com/blog/posts/android-developer-verification-2027"
+        },
+        {
+          "title": "Ars Technica — Android verification rollout",
+          "url": "https://arstechnica.com/gadgets/2026/11/google-will-launch-android-app-verification-requirement-globally-in-january-2027/"
+        }
+      ],
+      "reviewedAt": "2026-11-21T18:11:30+03:00"
+    },
+    "1578edf8b253799c50": {
+      "url": "https://news.google.com/rss/articles/CBMijwVBVV95cUxNemc1ZVlHQW9ITlR4czdaZDR6WGZFRGMxNHd1TWpabGJjQ0FjTk1VWE52bnk1ZDBZTDAzZFRlSUZYUnhLY0FCdnBZREhhdWhBQ05tVGlQZ2xacGpLQmpBbXB2bjRQSEM3eEg1eG5iaHEzS21mU3hfX3VCdDVQSWtpNXBvd0dmMXYwUFlMU0xtaUh2Ujc5N0dLZ3AyNDJuaC1hd1pKV0JPUXZKb1NVMGU2S2Z3STE2ZF9CdjNidHhPVmd4RDNNUVZZVGY4MUVJS01SZndGOTk1bTZOb2FrMzRHTzdDRlF5RzRiM1ZkQTBMU2xrZWJiTVZSSzZadFBzZG9FM29EODM4a3dDWGYwZ1FrY0FjbUFkaFFVa094Nmw0N1Rub0x1LUN1MjB2ZGpKbS1oS01od3IzRHh5OVhHQTBWU244bVhFV3RYZC0wdHhEdnlqYnc4YlVBNzJsbjhTdWFxdHMyNHhwZW1LQzJsV29kbnZueGZXVEptYnhYeUdDb3pnSm9MNHA5VkU4bDVDYm5ORTd5Mm4zQW9Vd3B2VU5nUGZ0MzZHbEtuUmZsbjh3UGVUMk9fOXZyMkQ0bUpyUHllZmpQNUxoVW1SOHEwZkI3OVpPclZKTUVZaklmUm5TNUVZTWVMQ3g4WjdtRUJvTnNzclVEdFhYblZxLU0yRk9OWWwyTjVaUkFkSTdZeE5jZ3VsMXhrbzd3bFVtVGNQMnBlMWtYT0lLdFEybGEwOWJOT0RtdUxPWGNqdWFRaUJRbU1NdkxzMjA4dEkzVU5UUGdWaVlFWUZfS0RUbEgtVkppWk5Wdm5jWkZPZDE4NU5La1hzZGUxUXpLQnZIaWF3QUJqYlpIWFZXRHk3R3FyX1pr?oc=5",
+      "titleAr": "HUMAIN تعرض منصة صوتية عربية تدعم اللهجات ووكلاء المحادثة الفورية",
+      "summaryAr": "تصف صفحة HUMAIN الرسمية منصة Voice للتحويل من الكلام إلى نص ومن النص إلى صوت ووكلاء صوتيين لحظيين، مع العربية والإنجليزية واكتشاف اللهجات والمزج بين اللغتين وأكثر من 15 لهجة وإقامة بيانات داخل المملكة. رابط التغذية يقود إلى خبر في الشرق الأوسط عبر Google News، لكن متن المقال لم يكن متاحًا كاملًا؛ لذلك يقتصر الإثراء على خصائص المنتج الرسمية.",
+      "whyItMatters": "قد يوفّر خيارًا عربيًا أولًا لخدمة العملاء والتعليم والمساعدات الصوتية. ينبغي مقارنة الدقة وزمن الاستجابة والتكلفة على عينات لهجية قبل اعتماده.",
+      "audience": "مطورو التطبيقات الصوتية وفرق خدمة العملاء والجهات التعليمية.",
+      "nextSteps": [
+        "راجع وثائق API وسياسة البيانات قبل إدخال بيانات حقيقية.",
+        "اختبر عينات لهجية بموافقة أصحابها وقس الدقة والزمن.",
+        "قارن التكلفة مع بدائل صوتية."
+      ],
+      "limitations": "لم أقرأ متن مقال الشرق الأوسط كاملًا؛ هذه خلاصة المنتج من الصفحات الرسمية لا تحقق مستقل لتفاصيل الإعلان. لم أتمكن من قراءة تقرير الخبر الأصلي كاملًا؛ راجعت صفحة HUMAIN الرسمية، لذلك basis=metadata والقدرات المذكورة تظل ادعاءات الجهة المطوّرة. أُخذت تفاصيل اللهجات والإقامة والواجهات من صفحة HUMAIN الرسمية؛ لم نتمكن من قراءة التقرير الصحفي الأصلي كاملًا أو اختبار الخدمة مستقلاً.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "HUMAIN — Intelligence Voice",
+          "url": "https://www.humain.com/en/voice"
+        },
+        {
+          "title": "HUMAIN Voice — Developer portal",
+          "url": "https://voice.humain.com/"
+        },
+        {
+          "title": "الشرق الأوسط — رابط Feed",
+          "url": "https://news.google.com/rss/articles/CBMijwVBVV95cUxNemc1ZVlHQW9ITlR4czdaZDR6WGZFRGMxNHd1TWpabGJjQ0FjTk1VWE52bnk1ZDBZTDAzZFRlSUZYUnhLY0FCdnBZREhhdWhBQ05tVGlQZ2xacGpLQmpBbXB2bjRQSEM3eEg1eG5iaHEzS21mU3hfX3VCdDVQSWtpNXBvd0dmMXYwUFlMU0xtaUh2Ujc5N0dLZ3AyNDJuaC1hd1pKV0JPUXZKb1NVMGU2S2Z3STE2ZF9CdjNidHhPVmd4RDNNUVZZVGY4MUVJS01SZndGOTk1bTZOb2FrMzRHTzdDRlF5RzRiM1ZkQTBMU2xrZWJiTVZSSzZadFBzZG9FM29EODM4a3dDWGYwZ1FrY0FjbUFkaFFVa094Nmw0N1Rub0x1LUN1MjB2ZGpKbS1oS01od3IzRHh5OVhHQTBWU244bVhFV3RYZC0wdHhEdnlqYnc4YlVBNzJsbjhTdWFxdHMyNHhwZW1LQzJsV29kbnZueGZXVEptYnhYeUdDb3pnSm9MNHA5VkU4bDVDYm5ORTd5Mm4zQW9Vd3B2VU5nUGZ0MzZHbEtuUmZsbjh3UGVUMk9fOXZyMkQ0bUpyUHllZmpQNUxoVW1SOHEwZkI3OVpPclZKTUVZaklmUm5TNUVZTWVMQ3g4WjdtRUJvTnNzclVEdFhYblZxLU0yRk9OWWwyTjVaUkFkSTdZeE5jZ3VsMXhrbzd3bFVtVGNQMnBlMWtYT0lLdFEybGEwOWJOT0RtdUxPWGNqdWFRaUJRbU1NdkxzMjA4dEkzVU5UUGdWaVlFWUZfS0RUbEgtVkppWk5Wdm5jWkZPZDE4NU5La1hzZGUxUXpLQnZIaWF3QUJqYlpIWFZXRHk3R3FyX1pr?oc=5"
+        }
+      ],
+      "reviewedAt": "2026-11-21T18:11:30+03:00"
+    },
+    "2e1fba6f9ed9affbda": {
+      "titleAr": "السعودية تتصدر مؤشر الخدمات الإلكترونية وتأتي رابعة في مؤشر الأمم المتحدة للحكومة الإلكترونية",
+      "summaryAr": "أعلنت وكالة الأنباء السعودية في 19 نوفمبر 2026 أن المملكة جاءت أولًا عالميًا في مؤشر الخدمات الإلكترونية (OSI) ورابعًا في مؤشر الأمم المتحدة لتطور الحكومة الإلكترونية (EGDI)، فيما جاءت الرياض أولًا في مؤشر الخدمات الإلكترونية المحلية (LOSI). يدرس مسح الأمم المتحدة الخدمات والبنية التحتية ورأس المال البشري ويشير إلى أن الخدمات المدعومة بالذكاء الاصطناعي ما زالت ناشئة وتتطلب إشرافًا بشريًا.",
+      "whyItMatters": "تضع النتائج الخدمات الرقمية السعودية ضمن المقارنة العالمية، وتوضح أن تقييم الحكومة الرقمية يشمل البنية التحتية والمهارات وجودة الخدمة والمشاركة.",
+      "audience": "المهتمون بالتقنية في السعودية وطلاب الذكاء الاصطناعي والحكومة الرقمية ومطورو الخدمات العامة.",
+      "nextSteps": [
+        "ميّز بين OSI وEGDI وLOSI عند قراءة الترتيب.",
+        "راجع منهجية المؤشر قبل مقارنة الأعوام.",
+        "تابع جودة الخدمة وإمكانية الوصول والأمن إلى جانب الترتيب."
+      ],
+      "limitations": "المراتب التفصيلية من بيان SPA؛ أما UN DESA فيشرح إطار المسح وترتيبه العام. المؤشرات مركبة ولا تقيس تجربة كل مستخدم أو جودة كل خدمة على حدة.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "SPA — المملكة الأولى عالميًا في الخدمات الحكومية الرقمية",
+          "url": "https://spa.gov.sa/N2731813"
+        },
+        {
+          "title": "UN DESA — 2026 E-Government Survey",
+          "url": "https://www.un.org/en/desa/digital-government-advances-worldwide-but-divides-persist-as-ai-transforms-public-administration-new-un-survey-shows"
+        }
+      ],
+      "url": "https://news.google.com/rss/articles/CBMi1gRBVV95cUxQeDJlOE1TdUpmUjZZN2dxZG12NUJXbVA5MGIyRmlld0FyME1CRkljTTZxYi14VG1Dai1DRERCOXlQQnVsbGNpV0tkUERWZ1c3Zm9UNHBySkJxem9vU0VaWnZRSmRDdHR0SUtUc3FCR3QwMUNRVmVNY0o2M1AtWHJzc2RuTzl0c1JITVZsbVVpU2pLdWEzR1U0Z1dYekZJSDBpdFRQek1aeWJ3bDdiX2RRUF9FaTJPQWkyNjEyZlF3V3laWjFhbGVDOFVaTnVnWUYzT0pTOHRGQlNUZWIzWmNILWZXNG51bG9WNjZhb1UzWEJYQm5RaWhiVnhtU0U2MEtoS2NLOVJJTEp2NjllR0dKa0VLWVh3NnVDc2Y1Mlphdm1pdHd2b2xSbEVBUmhYb0w1U1BrRFMyZjBIUW1xOEh2aVU1V3Z4cHJ6Rm83TFRYU05LMGctQ215NzJhWDQ5UGg2bU5NbEY0TXRGYURYNU1uZzRNMjlmVEctaUpKVXNKRWYtOThOS1NpY3dHam53YzVEcTFsenZuU0VzRjZwMkstVGpiVTItT05PY0x6UnA2dU5WNjhsMnJISUJXbXc1cDZyTHVqN3RBUnJzcUZPYUpxdzFYekZvYTJYb2haMUZjNHZqNk9sLW1VZUV3dm1EWmFjNFZZbVZ3T1dxT08yZGtIek1takMyampyLWhxTlVmT2VKMy1JZDRHUDJBa0JnMnVadE9rM01YV2sxNVdpS2dBVm1kYlBuZU5BTzluUTNpNVRxTTEyWGVqaWYtZTZyZ0l2bUpscFZB?oc=5",
+      "reviewedAt": "2026-11-21T18:11:30+03:00"
+    },
+    "dc2fa2fb88cfbd46a7": {
+      "titleAr": "AWS تطلق Common Runtime 1.0 رسميًا لمكونات HTTP وS3 وMQTT",
+      "summaryAr": "أعلنت AWS التوافر العام للإصدار 1.0 من Common Runtime، وهي عائلة مكتبات مفتوحة المصدر مكتوبة بلغة C تستخدمها أدوات وSDKs AWS للشبكات ونقل S3 وMQTT والتوقيع والتحقق من سلامة البيانات. يمكن استخدامها مباشرة أو عبر روابط لغات متعددة، لكن الدعم يختلف حسب المكوّن واللغة.",
+      "whyItMatters": "يوفر أساسًا مشتركًا للاتصال والنقل داخل تطبيقات AWS، وقد يقلل إعادة بناء إدارة الاتصالات وإعادة المحاولة والتوقيع في كل تطبيق.",
+      "audience": "مطورو C وC++ وJava وPython وNode.js ومهندسو السحابة.",
+      "nextSteps": [
+        "تحقق مما إذا كان SDK الحالي يستخدم CRT قبل إضافة اعتماد مباشر.",
+        "راجع مصفوفة المكوّنات واللغات المدعومة.",
+        "اختبر التوافق والنقل على بيئة مرحلية."
+      ],
+      "limitations": "إعلان GA من AWS وليس اختبار أداء مستقلًا؛ الفائدة تعتمد على SDK والمنصة والشبكة، ودعم HTTP وS3 وMQTT ليس متماثلًا في جميع اللغات.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "AWS Developer Tools Blog — AWS Common Runtime 1.0",
+          "url": "https://aws.amazon.com/blogs/developer/announcing-aws-common-runtime-crt-v1-0-0/"
+        }
+      ],
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQSEl0SUtqbjlNYXk5czNYWUp3REwwNkZOYkZ2ZFlFaW5NUEdvM1h0bmpzUGhEamlmdDFLOExfVTB5S1lXdE5VMW9hQzhOT1FPWVBvV3NvZkZrMEItaWhlQ2hXSHNnZUNBa0dEaExpYUh4MmJYSC1Yd1p3Mm5FTUNfUjZSSVJvbWs?oc=5",
+      "reviewedAt": "2026-11-21T18:11:30+03:00"
+    },
+    "fdf1ebbcf783c618ab": {
+      "titleAr": "AWS تجعل Transfer Manager لنقل S3 بلغة Rust متاحًا عمومًا",
+      "summaryAr": "أطلقت AWS الإصدار العام من aws-s3-transfer بعد معاينة بدأت في مارس 2025. يضيف محرك جدولة عادلة ومجمع ذاكرة محدودًا افتراضيًا بما يصل إلى ربع ذاكرة الجهاز وبحد 32 GiB، ومسار تنزيل يقلل النسخ ودعم أهداف WebAssembly محددة. تتطلب أمثلة البدء حساب AWS وصلاحيات S3 ومشروع Rust يستخدم Tokio.",
+      "whyItMatters": "يخفف إدارة التوازي والذاكرة ونقل الملفات الكبيرة عن مطوري Rust، لكنه لا يلغي الحاجة إلى ضبط IAM ومراقبة التكلفة واختبار السلوك على بيانات التطبيق.",
+      "audience": "مطورو Rust ومهندسو البيانات ومطورو تطبيقات S3.",
+      "nextSteps": [
+        "ابدأ بحاوية S3 اختبارية وصلاحيات أقل امتيازًا.",
+        "قِس throughput والذاكرة على أحجام ملفات مختلفة.",
+        "احسب رسوم التخزين والطلبات ونقل البيانات قبل الإنتاج."
+      ],
+      "limitations": "الأرقام الافتراضية معلنة من AWS وليست benchmark مستقلًا. قد تترتب رسوم S3، ودعم WebAssembly يخص أهدافًا محددة لا كل بيئات WASM.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "AWS Developer Tools Blog — S3 Transfer Manager for Rust GA",
+          "url": "https://aws.amazon.com/blogs/developer/high-throughput-transfer-manager-for-amazon-s3-in-rust-is-now-generally-available/"
+        },
+        {
+          "title": "aws-s3-transfer crate",
+          "url": "https://crates.io/crates/aws-s3-transfer"
+        },
+        {
+          "title": "aws-s3-transfer API docs",
+          "url": "https://docs.rs/aws-s3-transfer/latest/aws_s3_transfer/"
+        }
+      ],
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMDQ5aVduak1QSEVub2FLN21qRV9wbVNTZzRJZXF6WnI0MVp5ckdyVThhTER0MzZoVE1wTjdlX1ZvRnUwUzBTOU1vZm1iYjMwQkJMZ3lmWGxjWkpCUU15OXJoSlRYYW5ZV3Uxam5tbjRSdXpuMldSV1NuQ0JmTlk4dnhHYnRmTmJva3N5UkpBTjhObEV6X2JSSjkxOEpLaXhJSE5MMV95OWp5R0VGS1JPdmxJcnFiV3NKR0xKaTFn?oc=5",
+      "reviewedAt": "2026-11-21T18:11:30+03:00"
+    },
+    "dbe111187a465a8a1f": {
+      "titleAr": "Apple تبحث عن قائد هندسي لبناء وكيل يستخدم الحاسوب عبر التطبيقات والويب",
+      "summaryAr": "أفاد TechCrunch نقلًا عن Bloomberg أن إعلان وظيفة لدى Apple يطلب مديرًا هندسيًا أول للإشراف على وكيل يستطيع تصفح الويب والعمل عبر التطبيقات وتشغيل الأوامر وكتابة الشيفرة وتصحيحها. المشروع في مرحلة مبكرة ولم تؤكد Apple منتجًا أو موعد إطلاق. وبالتوازي، أعلنت Apple ضوابط أوضح قبل منح التطبيقات صلاحية Full Disk Access.",
+      "whyItMatters": "يشير إلى انتقال المنافسة نحو وكلاء يتحكمون في الحاسوب نفسه، ويجعل حدود الصلاحيات والموافقة البشرية وحماية الملفات جزءًا أساسيًا من تجربة المنتج.",
+      "audience": "مطورو macOS وبناة وكلاء الحاسوب ومهندسو الأمن وتجربة المستخدم.",
+      "nextSteps": [
+        "تعامل مع الخبر بوصفه مشروعًا مبكرًا لا إطلاقًا معلنًا.",
+        "صمم أذونات أقل امتيازًا وموافقات قبل الأفعال الحساسة.",
+        "اختبر وكلاء سطح المكتب على ملفات تجريبية مع سجل قابل للمراجعة."
+      ],
+      "limitations": "الخبر يستند إلى إعلان وظيفة نقلته Bloomberg؛ Apple لم تؤكد منتجًا أو موعدًا لـTechCrunch. تحديث Full Disk Access بيان رسمي منفصل.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — Apple may be developing its own AI agent",
+          "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/"
+        },
+        {
+          "title": "Apple Developer — Updates to Full Disk Access",
+          "url": "https://developer.apple.com/news/?id=p6zjojqw"
+        }
+      ],
+      "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
+      "reviewedAt": "2026-11-21T18:11:30+03:00"
+    },
+    "7bdcb7fa3841c84cc9": {
+      "url": "https://www.engadget.com/2322656/openai-is-testing-dots-personal-agents-on-its-20-per-month-plus-tier/",
+      "titleAr": "OpenAI تختبر Dots مع عدد محدود من مشتركي Plus وتوسع Business Standard",
+      "summaryAr": "ذكر Engadget أن OpenAI بدأت اختبار Dots مع مجموعة صغيرة من مستخدمي Plus، مع إتاحة الخدمة لمستخدمي Business Standard وفق إعلان مسؤول هندسي في الشركة. يصف المقال وكلاء استباقيين يتصلون بتطبيقات وخدمات ويمكنهم العمل على الحاسوب؛ لكن نطاق الإتاحة وحدود الاستخدام في الخطط الأقل لم تُحسم بالكامل.",
+      "whyItMatters": "توسع الوكلاء المستمرين يجعل إدارة صلاحيات التطبيقات ومراجعة الأعمال التي ينفذها الوكيل جزءًا أساسيًا من تجربة الاستخدام، لا مجرد اختيار نموذج لغوي.",
+      "audience": "متابعو منتجات الذكاء الاصطناعي ومطورو الوكلاء وفرق تقنية المعلومات.",
+      "nextSteps": [
+        "تحقق من الإعلان داخل حسابك قبل افتراض توافر الميزة.",
+        "راجع التطبيقات والصلاحيات الممنوحة لأي وكيل قبل تفعيله.",
+        "ابدأ بمهام منخفضة المخاطر وراجع سجل التنفيذ والنتائج."
+      ],
+      "limitations": "الاختبار محدود لمجموعة صغيرة من مستخدمي Plus بحسب المقال، ولم تؤكد OpenAI أن الإتاحة ستكون دائمة أو أن حدود الاستخدام ستكون مماثلة لخطط Pro. أرقام التطبيقات والقدرات منسوبة إلى التغطية والإعلان.",
+      "reviewedAt": "2026-11-21T18:11:30+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Engadget — OpenAI is testing Dots personal agents on its Plus tier",
+          "url": "https://www.engadget.com/2322656/openai-is-testing-dots-personal-agents-on-its-20-per-month-plus-tier/"
+        }
+      ]
+    },
+    "03b179946dd0e55198": {
+      "url": "https://arxiv.org/abs/2611.21885",
+      "titleAr": "بحث يختبر قدرة نموذج لغوي على تعديل أوزانه بنفسه دون تدريب تقليدي",
+      "summaryAr": "تعرض نسخة الورقة الثانية المنشورة في 18 نوفمبر 2026 تجربة «إعادة الكتابة الذاتية» على عائلة Qwen3.5. أعطى الباحثون نموذج 27B أوزانه وإجاباته المقيمة وأدوات محدودة، فعدّل بعض المصفوفات بالاستدلال والتمريرات الأمامية دون تدرجات أو مُحسّن. في اختبار محدد مسبقًا على 490 مسألة لم يرها، ارتفعت الدقة من 57.2% إلى 58.3% في بروتوكول، ووصل التحسن في جلستين من بروتوكول آخر إلى 4.0 و6.6 نقاط. خمس جلسات من ثمانٍ سحبت تعديلاتِها بدل اعتمادها.",
+      "whyItMatters": "الفكرة تنقل بعض التحسين من التعليمات المؤقتة إلى الأوزان نفسها، وقد تؤثر في أبحاث صيانة النماذج وتكيّفها. لكن النتائج ما تزال تجربة ضيقة ومقيدة، وليست دليلًا على أن النماذج تستطيع تحسين نفسها عمومًا أو بأمان.",
+      "audience": "باحثو تعلم الآلة، مهندسو النماذج، مطورو الوكلاء، ومهتمو تقييم النماذج.",
+      "nextSteps": [
+        "قراءة بروتوكول التجربة وبيانات الاختبار قبل تعميم النتيجة.",
+        "مقارنة الفكرة بتحرير الأوزان وLoRA والضبط الدقيق التقليدي.",
+        "متابعة اختبارات التعميم والاحتفاظ بالقدرات ومعدلات التراجع قبل اعتبارها قابلة للاستخدام الإنتاجي."
+      ],
+      "limitations": "ورقة أولية على arXiv وليست بحد ذاتها تحكيمًا مستقلًا. التجربة على عائلة واحدة ومهام رياضيات مضبوطة؛ نموذج 27B وحده أظهر تحسنًا، بينما لم يعدّل نموذج 2B أوزانه وأضرت محاولات 4B و9B بنفسيهما. كما أن خمسة من ثماني جلسات في البروتوكول الثاني سحبت التعديل. لا تثبت النتائج تحسنًا عامًا أو آمنًا خارج هذا الإعداد. في هذه المراجعة اعتمدنا على ملخص arXiv وسجل النسخة فقط، ولم نتحقق من جميع تفاصيل الورقة الكاملة أو نكرر التجربة.",
+      "reviewedAt": "2026-11-21T18:11:30+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "الورقة الكاملة — arXiv HTML v2",
+          "url": "https://arxiv.org/html/2611.21885v2"
+        },
+        {
+          "title": "سجل الورقة وملخصها — arXiv",
+          "url": "https://arxiv.org/abs/2611.21885"
+        }
+      ]
+    },
+    "945d12baa1ef9bf958": {
+      "url": "https://www.androidauthority.com/grapheneos-team-google-pressure-3737525/",
+      "titleAr": "GrapheneOS تزعم تعرضها لضغط من Google وتحذر من قيود محتملة على أنظمة Android البديلة",
+      "summaryAr": "نقل Android Authority في 20 نوفمبر 2026 عن فريق GrapheneOS قوله إن Google تواصلت مع شركات تصنيع هواتف للاستفسار عن تعاونها مع المشروع، وإنها لوّحت — بحسب رواية الفريق — بشروط ترخيص Google Mobile Services. كما توقع الفريق احتمال فرض قيود مستقبلية على فتح محمّل الإقلاع في هواتف Pixel. المقال يوضح أن Google وMotorola طُلب منهما التعليق ولم يكن قد وصل رد عند النشر.",
+      "whyItMatters": "القضية تمس قدرة المستخدمين والمطورين على تشغيل أنظمة Android بديلة، واستقلالية المشاريع التي تركز على الخصوصية والأمان، وشروط المنافسة بين موردي النظام ومصنعي الأجهزة.",
+      "audience": "مستخدمو Android، مطورو الأنظمة البديلة، باحثو الأمن والخصوصية، ومصنعو الأجهزة.",
+      "nextSteps": [
+        "متابعة رد Google وMotorola وأي وثائق تؤيد الادعاءات.",
+        "التمييز بين ما قاله فريق GrapheneOS وما ثبت بصورة مستقلة.",
+        "متابعة سياسات فتح محمّل الإقلاع ودعم الأجهزة من الإعلانات الرسمية للمصنعين."
+      ],
+      "limitations": "الضغط المزعوم ورد في تصريحات GrapheneOS ولم يتحقق منه المقال بصورة مستقلة. Google وMotorola لم تقدما ردًا وقت النشر. الحديث عن قفل محمّل الإقلاع توقع مستقبلي وليس تغييرًا مؤكدًا في سياسة Pixel.",
+      "reviewedAt": "2026-11-21T18:11:30+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Android Authority — تقرير GrapheneOS وGoogle",
+          "url": "https://www.androidauthority.com/grapheneos-team-google-pressure-3737525/"
+        }
+      ]
+    },
+    "bf82adff4bf6ffb39c": {
+      "url": "https://github.com/tristanbuckmaster/navier-stokes/",
+      "titleAr": "مستودع يرافق ادعاءً جديدًا بشأن معادلات Navier–Stokes بصياغة Lean مع فجوات تحقق معلنة",
+      "summaryAr": "يعرض المستودع ورقة من 79 صفحة مؤرخة في 20 نوفمبر 2026 وصياغة رسمية باستخدام Lean 4. يوضح README أن ملفات التحدي تصرّح بالنظريات، بينما يثبت Solution.lean النتائج بالاعتماد على مكتبة Breakdown. لكنه يذكر أيضًا أن الشهادة العددية وحساب التحقق بالفواصل ذات الدقة 128 بت غير موجودين في المستودع، وأن نسخة الحزمة المعدلة في 20 نوفمبر لم يُعَد بناؤها بعد. لذلك فالمتاح أثر بحثي وصياغة رسمية جزئية، لا تحقق مستقل مكتمل لكل مكونات الادعاء.",
+      "whyItMatters": "المثال يوضح الفرق بين صياغة النظريات وإثباتها في مساعد برهان، وبين التحقق العددي من الشهادة التي يعتمد عليها المسار البحثي. وهو تذكير مهم بضرورة نشر الأدلة القابلة لإعادة الإنتاج قبل التعامل مع ادعاء رياضي استثنائي كحقيقة محسومة.",
+      "audience": "باحثو الرياضيات، مطورو Lean، مختصو التحليل العددي والتحقق الرسمي.",
+      "nextSteps": [
+        "قراءة README وNOTICE لمعرفة النظريات التي يثبتها Lean تحديدًا.",
+        "متابعة نشر الشهادة العددية وأداة التحقق بالفواصل ومراجعة استقلالهما.",
+        "انتظار إعادة بناء النسخة المعدلة ونتائج مراجعة رياضية مستقلة قبل اعتماد الادعاء."
+      ],
+      "limitations": "المستودع حديث ويعرض سجلًا قصيرًا من النشاط. لا يحتوي الشهادة العددية ولا برنامج التحقق الذي يذكره البحث، كما أن الحزمة المعدلة لم تُبنَ وقت المراجعة. لم يُنفذ lake build هنا، ولم يظهر ملف ترخيص في شجرة المستودع؛ لا ينبغي افتراض إذن إعادة الاستخدام.",
+      "reviewedAt": "2026-11-21T18:11:30+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "المستودع وREADME",
+          "url": "https://github.com/tristanbuckmaster/navier-stokes"
+        },
+        {
+          "title": "شرح صياغة Lean",
+          "url": "https://github.com/tristanbuckmaster/navier-stokes/blob/main/lean/README.md"
+        },
+        {
+          "title": "NOTICE — نطاق النظريات المثبتة",
+          "url": "https://github.com/tristanbuckmaster/navier-stokes/blob/main/lean/NOTICE"
+        }
+      ]
+    },
+    "2fb42fa5fa3e9829b6": {
+      "url": "https://arxiv.org/abs/2611.23588",
+      "titleAr": "ARISE: ذاكرة تتطور من إخفاقات الوكلاء لتحسين الدقة وتقليل كلفة التشغيل",
+      "summaryAr": "تقترح الورقة بنية ذاكرة لوكلاء المؤسسات تتعلم من الإخفاقات دون تعديل أوزان النموذج أو أدواته أو منطق سير العمل. تُحفظ التصحيحات كذكريات صغيرة قابلة للاسترجاع ثم تُدمج في قواعد أوسع، ولا يُقبل تحديث القاعدة إلا إذا تحسنت الدقة على بيانات تحقق منفصلة. يورد الملخص مكاسب قدرها 10.9 نقطة مئوية على SOP-Bench و5.8 نقاط على tau²-bench لنسخة تستخدم نموذجًا معلّمًا، عبر 14 مجالًا و5 نماذج.",
+      "whyItMatters": "تقدم الورقة مسارًا لتحسين الوكلاء عبر ذاكرة قابلة للمراجعة والقياس بدل إعادة تدريب النموذج في كل مرة؛ لكن نجاح الفكرة يعتمد على جودة إسناد سبب الإخفاق ومنع ترسيخ تصحيح خاطئ.",
+      "audience": "مطورو الوكلاء، مهندسو منصات الذكاء الاصطناعي، وفرق أتمتة سير العمل.",
+      "nextSteps": [
+        "اقرأ تفاصيل آلية إسناد الإخفاقات وقبول قواعد الذاكرة.",
+        "اختبر الذاكرة على سير عمل غير حرج مع مجموعة تحقق منفصلة.",
+        "احتفظ بسجل للتعديلات وإمكانية التراجع عن قاعدة تدهور الأداء."
+      ],
+      "limitations": "المراجعة اقتصرت على ملخص arXiv؛ الأرقام من تجارب المؤلفين على مجموعات معيارية ولا تضمن مكاسب مماثلة في بيئة إنتاجية. استخدام نموذج معلّم قد يغير الكلفة الفعلية. المراجعة هنا للملخص وقسم القيود في arXiv، وليست إعادة تنفيذ للتجارب أو تدقيقًا كاملاً لكل الجداول.",
+      "reviewedAt": "2026-11-21T18:11:30+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — ARISE: Practical Self-Evolving Memory for Accurate and Cost-Efficient Enterprise Agents",
+          "url": "https://arxiv.org/abs/2611.23588"
+        }
+      ]
+    }
+  }
+}
