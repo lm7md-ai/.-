@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "purpose": "Research-only refresh of the existing NVIDIA OpenShell library entry after the upstream repository transfer. This is not a new project, not a Feed card, and not published Editorial.",
-  "reviewedAt": "2026-11-21T09:27:28+03:00",
-  "metricsCapturedAt": "2026-11-21T06:27:28.962Z",
+  "reviewedAt": "2026-11-21T12:09:02+03:00",
+  "metricsCapturedAt": "2026-11-21T09:09:02Z",
   "sourceMainCommit": "25c212ec6ee5dde3a85b92116d3005b14b0c5e47",
   "identity": {
     "legacySeenId": "940ec4695c1e241c2f",
@@ -24,13 +24,15 @@
     "readmeSha": "0752ddaf1385b78f39a08f8718268762d15db2d1",
     "licenseSha": "f13d24c3fa482d61605d600e5ac1248799bd4107",
     "metrics": {
-      "stars": 21841,
+      "stars": 21844,
       "forks": 2152,
-      "openIssues": 782,
+      "openIssues": 781,
       "pushedAt": "2026-11-21T05:47:46Z",
-      "updatedAt": "2026-11-21T06:11:47Z",
-      "measuredAt": "2026-11-21T06:27:28.962Z",
-      "note": "GitHub counters are a timestamped snapshot, not a quality or growth measure."
+      "updatedAt": "2026-11-21T08:26:48Z",
+      "measuredAt": "2026-11-21T09:09:02Z",
+      "note": "GitHub counters are a timestamped snapshot, not a quality or growth measure.",
+      "latestCommit": "438e07b2312476c9057f3f7630fde31d29b6d377",
+      "latestCommitAt": "2026-11-21T02:31:37Z"
     },
     "overview": "OpenShell is an open-source runtime and gateway for autonomous agents. It provides isolated sandboxes, policy-controlled filesystem and network access, credential mediation, and policy review. The upstream README states that the project is now part of the CNCF and that development moved from NVIDIA/OpenShell to ai-openshell/openshell.",
     "requirements": "Linux, macOS on Apple Silicon, or Windows with WSL 2 (experimental); Docker, Podman, or host virtualization. Kubernetes deployment uses Helm and requires a CNI that enforces NetworkPolicy. The default sandbox is minimal Ubuntu and does not include an agent.",
