@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Research-only metrics snapshot for the eight previously reviewed projects and two existing candidates. Not Feed and not published Editorial.",
+  "reviewedAt": "2026-11-21T03:18:34+03:00",
+  "metricsCapturedAt": "2026-11-21T03:18:34+03:00",
+  "sourceMainCommit": "c46037504dd056baadac0891701985348039f9e7",
+  "feedSnapshot": {
+    "generatedAt": "2026-11-20T20:12:13+00:00",
+    "items": 800,
+    "news": 700,
+    "projects": 100,
+    "mainEditorialEntries": 1129,
+    "prEditorialEntries": 1182,
+    "projectEditorialCoverage": {
+      "covered": 100,
+      "total": 100
+    }
+  },
+  "historicalLibrary": {
+    "count": 31,
+    "active": 29,
+    "archived": 2,
+    "candidatesNotCounted": 3
+  },
+  "review": {
+    "previousEight": 8,
+    "archivedAmongPreviousEight": 0,
+    "readmeChanged": 0,
+    "licenseFilesVerified": 8,
+    "licenseShaComparedAndUnchanged": 7,
+    "newProjectCards": 0,
+    "projectCardsAlreadyEnrichedInPR": 4
+  },
+  "projects": [
+    {
+      "name": "AI Engineering Hub",
+      "repo": "patchy631/ai-engineering-hub",
+      "feedPresent": true,
+      "feedId": "fe0e6bfdbdd5822139",
+      "archived": false,
+      "license": "MIT",
+      "metrics": {
+        "stars": 42039,
+        "forks": 6721,
+        "openIssues": 139,
+        "pushedAt": "2026-11-01T04:39:16Z",
+        "updatedAt": "2026-11-20T23:05:07Z"
+      },
+      "metricsStatus": "current"
+    },
+    {
+      "name": "Google Gen AI SDK",
+      "repo": "googleapis/python-genai",
+      "feedPresent": false,
+      "archived": false,
+      "license": "Apache-2.0",
+      "metrics": {
+        "stars": 4082,
+        "forks": 1067,
+        "openIssues": 363,
+        "pushedAt": "2026-11-21T00:14:27Z",
+        "updatedAt": "2026-11-20T20:32:50Z"
+      },
+      "metricsStatus": "current"
+    },
+    {
+      "name": "Lasm",
+      "repo": "Millillion/lasm",
+      "feedPresent": false,
+      "archived": false,
+      "license": "MIT",
+      "metrics": {
+        "stars": 108,
+        "forks": 6,
+        "openIssues": 9,
+        "pushedAt": "2026-11-20T18:52:08Z",
+        "updatedAt": "2026-11-18T18:41:29Z"
+      },
+      "metricsStatus": "current"
+    },
+    {
+      "name": "MarkItDown",
+      "repo": "microsoft/markitdown",
+      "feedPresent": false,
+      "archived": false,
+      "license": "MIT",
+      "metrics": {
+        "stars": 197256,
+        "forks": 14932,
+        "openIssues": 822,
+        "pushedAt": "2026-11-07T00:14:01Z",
+        "updatedAt": "2026-11-21T00:16:42Z"
+      },
+      "metricsStatus": "current"
+    },
+    {
+      "name": "Minecraft Agent Harness",
+      "repo": "yc-software/minecraft-agent-harness",
+      "feedPresent": false,
+      "archived": false,
+      "license": "MIT",
+      "metrics": {
+        "stars": 228,
+        "forks": 30,
+        "openIssues": 1,
+        "pushedAt": "2026-10-29T20:30:45Z",
+        "updatedAt": "2026-11-20T10:30:45Z"
+      },
+      "metricsStatus": "current"
+    },
+    {
+      "name": "NVIDIA OpenShell",
+      "repo": "NVIDIA/OpenShell",
+      "feedPresent": false,
+      "archived": false,
+      "license": "Apache-2.0",
+      "metrics": {
+        "stars": 21827,
+        "forks": 2146,
+        "openIssues": 772,
+        "pushedAt": "2026-11-20T11:25:34Z"
+      },
+      "metricsCapturedAt": "2026-11-20T17:45:43+03:00",
+      "metricsStatus": "stale_api_unavailable"
+    },
+    {
+      "name": "Pydantic AI",
+      "repo": "pydantic/pydantic-ai",
+      "feedPresent": false,
+      "archived": false,
+      "license": "MIT",
+      "metrics": {
+        "stars": 21317,
+        "forks": 3228,
+        "openIssues": 1861,
+        "pushedAt": "2026-11-21T00:12:23Z",
+        "updatedAt": "2026-11-21T00:08:22Z"
+      },
+      "metricsStatus": "current"
+    },
+    {
+      "name": "uv",
+      "repo": "astral-sh/uv",
+      "feedPresent": false,
+      "archived": false,
+      "license": "Apache-2.0",
+      "metrics": {
+        "stars": 92464,
+        "forks": 3934,
+        "openIssues": 3090,
+        "pushedAt": "2026-11-21T00:06:30Z",
+        "updatedAt": "2026-11-20T23:33:45Z"
+      },
+      "metricsStatus": "current"
+    },
+    {
+      "name": "Onlook",
+      "repo": "onlook-dev/onlook",
+      "feedPresent": false,
+      "candidateOnly": true,
+      "archived": false,
+      "license": "Apache-2.0",
+      "metrics": {
+        "stars": 27596,
+        "forks": 2167,
+        "openIssues": 9,
+        "pushedAt": "2026-11-20T23:29:27Z",
+        "updatedAt": "2026-11-20T23:22:44Z"
+      },
+      "metricsStatus": "current"
+    },
+    {
+      "name": "FailTrace",
+      "repo": "Ri4dH/failtrace",
+      "feedPresent": false,
+      "candidateOnly": true,
+      "archived": false,
+      "license": "MIT",
+      "metrics": {
+        "stars": 33,
+        "forks": 0,
+        "openIssues": 0,
+        "pushedAt": "2026-11-19T15:34:20Z",
+        "updatedAt": "2026-11-20T12:34:53Z"
+      },
+      "metricsStatus": "current"
+    }
+  ],
+  "notes": [
+    "GitHub API counters are snapshots, not quality measures.",
+    "NVIDIA/OpenShell could not be refreshed through the current API lookup; its displayed values are the last known snapshot and are explicitly stale.",
+    "The historical library count remains 31 (29 active, 2 archived); Onlook, FailTrace and the new Navier–Stokes research item are candidates, not added to that count."
+  ]
+}

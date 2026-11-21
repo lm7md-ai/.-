@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Research-only candidate; not a Feed project card and not published Editorial; not counted in the 31-project historical library.",
+  "reviewedAt": "2026-11-21T03:18:34+03:00",
+  "metricsCapturedAt": "2026-11-21T03:18:34+03:00",
+  "sourceMainCommit": "c46037504dd056baadac0891701985348039f9e7",
+  "project": {
+    "name": "Navier–Stokes Lean formalization",
+    "repository": "tristanbuckmaster/navier-stokes",
+    "url": "https://github.com/tristanbuckmaster/navier-stokes",
+    "feedNewsId": "bf82adff4bf6ffb39c",
+    "feedProjectPresent": false,
+    "archived": false,
+    "activity": "Very new public repository; 2 commits visible at review time.",
+    "license": null,
+    "licenseNote": "GitHub API reports license=null and the recursive repository tree contains no LICENSE file. Public visibility does not grant reuse rights.",
+    "metrics": {
+      "stars": 219,
+      "forks": 13,
+      "openIssues": 3,
+      "commits": 2,
+      "pushedAt": "2026-11-20T13:33:18Z",
+      "updatedAt": "2026-11-21T00:04:17Z"
+    },
+    "overview": "Research repository accompanying a 79-page paper on finite-time blow-up for Navier–Stokes. It contains a Lean 4.33.1/Mathlib formalization: challenge files state theorems and Solution.lean proves them from Breakdown. The repository README explicitly says the numerical certificate and its 128-bit interval-arithmetic verification are not included.",
+    "requirements": "Lean 4.33.1, Lake, and Mathlib at revision 0df444a360eaa60ab8c11dca51a86af692955474. The project is a large Lean library (README estimates about 2,270 files and 600,000 lines); expect substantial memory and build time.",
+    "quickStart": "From the lean/ directory, run `lake exe cache get` followed by `lake build`. The patched package dated 20 November was not rebuilt when the repository was assembled, so a successful build must not be assumed.",
+    "costs": "No paid API or hosted inference service is described. The main cost is local or CI compute, storage, and time for a large Lean/Mathlib build. No build was run in this review.",
+    "localVsCloud": "The repository is a local Lean/Lake package. It can be built on a suitably provisioned local machine or CI runner; there is no built-in cloud service or hosted execution tier.",
+    "alternatives": "The accompanying PDF is the primary mathematical exposition. Other proof assistants or independent formalizations could provide separate checks, but none was evaluated here as a drop-in alternative.",
+    "limitations": "The numerical certificate and interval-arithmetic verification program are absent; the patched Lean package was not rebuilt; the repository has only two commits; no LICENSE file was found; the claim requires independent mathematical review. No testEvidence is claimed.",
+    "testStatus": "not_run",
+    "basis": "readme",
+    "sources": [
+      {
+        "title": "Repository README",
+        "url": "https://github.com/tristanbuckmaster/navier-stokes"
+      },
+      {
+        "title": "Lean formalization README",
+        "url": "https://github.com/tristanbuckmaster/navier-stokes/blob/main/lean/README.md"
+      },
+      {
+        "title": "NOTICE",
+        "url": "https://github.com/tristanbuckmaster/navier-stokes/blob/main/lean/NOTICE"
+      },
+      {
+        "title": "Pinned Lean dependencies",
+        "url": "https://github.com/tristanbuckmaster/navier-stokes/blob/main/lean/lakefile.toml"
+      }
+    ],
+    "improvements": [
+      {
+        "title": "حزمة تحقق قابلة لإعادة الإنتاج للشهادة العددية",
+        "problem": "README يذكر أن الشهادة العددية وحساب الفواصل غير موجودين في المستودع، وأن النسخة المعدلة لم يُعَد بناؤها.",
+        "approach": "نشر الشهادة مع بصمتها، وتوثيق أداة التحقق وإصداراتها، وفصل بناء Lean عن التحقق العددي، ثم حفظ سجلات بناء قابلة للمراجعة.",
+        "stack": "Lean 4.33.1, Lake, Mathlib pinned revision, Arb/FLINT interval arithmetic, GitHub Actions",
+        "steps": [
+          "تثبيت toolchain وMathlib على المراجعات المحددة.",
+          "نشر ملف الشهادة وبصمة SHA-256 بعد إتاحته رسميًا.",
+          "توثيق مدخلات وخطوات حساب الفواصل ذات 128 بت.",
+          "إضافة CI يبني Lean ويشغّل أداة التحقق عندما تصبح الشهادة متاحة.",
+          "حفظ سجلات البناء والتحقق مع كل إصدار."
+        ],
+        "metric": "نجاح بناء نظيف قابل لإعادة الإنتاج، ونجاح تحقق الشهادة، وإمكانية إعادة النتيجة من طرف مستقل.",
+        "difficulty": "مرتفع (تقدير)",
+        "risks": "الشهادة غير متاحة حاليًا، والبناء مكلف حسابيًا، وغياب الترخيص الواضح يقيّد إعادة الاستخدام.",
+        "sources": [
+          {
+            "title": "README",
+            "url": "https://github.com/tristanbuckmaster/navier-stokes"
+          },
+          {
+            "title": "Lean README",
+            "url": "https://github.com/tristanbuckmaster/navier-stokes/blob/main/lean/README.md"
+          },
+          {
+            "title": "Lakefile",
+            "url": "https://github.com/tristanbuckmaster/navier-stokes/blob/main/lean/lakefile.toml"
+          }
+        ]
+      }
+    ],
+    "spinoffs": [],
+    "religious": []
+  }
+}

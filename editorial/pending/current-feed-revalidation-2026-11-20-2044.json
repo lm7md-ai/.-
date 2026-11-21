@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-20T20:44:11+03:00",
+  "sourceMain": {
+    "commit": "8ea97cdf3216ee6b3eef851efe203e360c818703",
+    "tree": "f59735ee717f9950505b96a0c8824c4822d38145",
+    "parent": "0901a21e07ffa22019eb452d5e7dad7dfee8aa34"
+  },
+  "feedSnapshot": {
+    "generatedAt": "2026-11-20T11:31:41+00:00",
+    "items": 800,
+    "news": 700,
+    "projects": 100,
+    "blobSha": "165716baa6632e5325cb5e83d34f60d8481794c1"
+  },
+  "mainEditorial": {
+    "entries": 1129,
+    "blobSha": "c65c4943a766a83dcb06b00965d4ce714f5c44e6"
+  },
+  "prEditorial": {
+    "before": 1172,
+    "after": 1182,
+    "priorNewIds": 43,
+    "previousProjectCardsEnriched": 4
+  },
+  "seenSnapshot": {
+    "ids": 6331,
+    "blobSha": "028ddf920bf34cbc40b7681ec6ff929810ad71cb"
+  },
+  "incomingAudit": {
+    "files": 145,
+    "recordOccurrences": 1517,
+    "exactCurrentFeedOccurrences": 195,
+    "exactCurrentFeedNotImported": 0,
+    "occurrencesAlreadyPresentInEditorial": 1346,
+    "staleOccurrences": 1322,
+    "staleButIdAlreadyInEditorial": 1151,
+    "staleNotInEditorial": 171,
+    "idPresentButUrlMismatch": 0,
+    "invalidFiles": 0,
+    "countsAreOccurrencesNotUniquePairs": true,
+    "uniqueStalePairs": 113,
+    "waitingForIdentityOrCorrection": 112,
+    "expired": 1,
+    "method": "all 145 Incoming JSON blobs fetched and parsed; exact id/url comparisons against current Feed and Editorial"
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "incoming": true,
+      "seen": true,
+      "feed": false,
+      "editorial": false
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "incoming": true,
+      "seen": true,
+      "feed": false,
+      "editorial": false
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "incoming": true,
+      "seen": true,
+      "feed": false,
+      "editorial": false
+    }
+  ],
+  "decision": "لا يوجد سجل Incoming مطابق لـFeed وينتظر الاستيراد؛ كل الظهورات الـ195 المطابقة ممثلة في Editorial. أُضيفت دفعة مستقلة من 10 عناصر جديدة مطابقة للـFeed الحالي. بقيت الهويات التاريخية خارج Feed في قائمة الانتظار دون إنشاء معرفات بديلة."
+}
