@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-20T17:45:43+03:00",
+  "sourceMain": {
+    "commit": "8ea97cdf3216ee6b3eef851efe203e360c818703",
+    "tree": "f59735ee717f9950505b96a0c8824c4822d38145",
+    "parent": "0901a21e07ffa22019eb452d5e7dad7dfee8aa34"
+  },
+  "feedSnapshot": {
+    "generatedAt": "2026-11-20T11:31:41+00:00",
+    "items": 800,
+    "news": 700,
+    "projects": 100,
+    "blobSha": "165716baa6632e5325cb5e83d34f60d8481794c1"
+  },
+  "mainEditorial": {
+    "entries": 1129,
+    "blobSha": "c65c4943a766a83dcb06b00965d4ce714f5c44e6"
+  },
+  "seenSnapshot": {
+    "ids": 6331,
+    "blobSha": "028ddf920bf34cbc40b7681ec6ff929810ad71cb"
+  },
+  "incomingAudit": {
+    "files": 145,
+    "recordOccurrences": 1517,
+    "exactCurrentFeedOccurrences": 195,
+    "exactCurrentFeedNotImported": 0,
+    "occurrencesAlreadyPresentInEditorial": 1346,
+    "staleOccurrences": 1322,
+    "staleButIdAlreadyInEditorial": 1151,
+    "staleNotInEditorial": 171,
+    "idPresentButUrlMismatch": 0,
+    "invalidFiles": 0,
+    "countsAreOccurrencesNotUniquePairs": true,
+    "source": "editorial/pending/current-feed-revalidation-2026-11-20-1443.json",
+    "note": "هذا التدقيق شمل كل ملفات Main Incoming؛ تأكدت في هذه الدورة أن Main commit/tree ما زالا عند المصدر نفسه، لذلك لم تتغير الملفات منذ تدقيقها."
+  },
+  "priorStaleQueue": {
+    "uniquePairs": 113,
+    "waitingForIdentityOrCorrection": 112,
+    "expired": 1,
+    "idUrlMismatches": 0,
+    "details": "السجلات التاريخية خارج Feed الحالي؛ لا تُنشأ هويات بديلة بالعنوان."
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "incoming": true,
+      "seen": true,
+      "feed": false,
+      "editorial": false
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "incoming": true,
+      "seen": true,
+      "feed": false,
+      "editorial": false
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "incoming": true,
+      "seen": true,
+      "feed": false,
+      "editorial": false
+    }
+  ],
+  "previousPRBatch": {
+    "path": "editorial/incoming/nabdh-import-2026-11-20-1443.json",
+    "entries": 28,
+    "exactFeedMatches": 28,
+    "news": 24,
+    "projectRefreshes": 4,
+    "alreadyRepresentedInEditorialBeforeThisRun": true
+  },
+  "currentBatch": {
+    "sourcePath": "editorial/incoming/nabdh-news-2026-11-20-1510.json",
+    "importPath": "editorial/incoming/nabdh-import-2026-11-20-1745.json",
+    "entries": 12,
+    "kind": "news",
+    "exactIdUrlFeedMatches": 12,
+    "urlMismatches": 0,
+    "missingFromFeed": 0,
+    "alreadyInPREditorialBeforeThisRun": 0,
+    "addedToPREditorial": 12
+  },
+  "excludedRecords": [
+    {
+      "id": "21c18831fcc7a86452",
+      "reason": "يبقى في انتظار التصحيح: رابط OpenJDK PR 32781 يصف مشكلة AVX-512/Base64 لا Java4Shell، والطلب مغلق وغير مدمج."
+    }
+  ],
+  "decision": "تمت إضافة الأخبار الاثني عشر فقط بعد مطابقة كل ID وURL حرفيًا مع Feed الحالي. لا توجد سجلات غير مطابقة في دفعة 1510. تبقى السجلات التاريخية والسجلات الخاصة الثلاثة معلقة بهوياتها الأصلية."
+}

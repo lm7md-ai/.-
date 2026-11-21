@@ -45915,6 +45915,246 @@
         }
       ],
       "url": "https://news.google.com/rss/articles/CBMitARBVV95cUxPMzUwYmswWUQ2ZkxjbGpaU0ZFS1NmQzdJaXpkWVN2aXl6a1c2MW0tVHpDSXgwY3p3YVZJNFQwdUVXb2NIcjRNc0ZVSDEwZk5la2x1UElzMmNoU21UU2xPdjFiYmo2Y01tX01wX0lKNEFUYmJ2QXpPMzdFNFcxZngtaC1vLWVKQ21IYUhORlp5X0s0d2Y3c0w5cGlXTzY2V0hlN0FmT0VDMHM1ODlHMUgzMzdLR0xvSmRqV0RlTWFzdkhrSjFEVFkyWkFXWHZNYkQybUdZcGpiVGFQRjI5dEhjMnZBeG5nZkQ5M1B4a3VxNjktQ0xVN3J5dGMtWWdCbHVFbE1BckZ5V0N3RkpjTFdqVkZJVVVDZXRXeldWRzdLdGVqYm83aDBmVTN4Zms2Z0JlOGJHY1Y4OVdVajM4MnFSZkxPMnNuTUhPWUtIWk9YM0poM2FfT2ZNS2lkSTZaRTh6b054enVRNFBOa1FHTTBFRkxVb3FZenQ0LVFJQ0FRUWg3SmFfWTRMaExkZ2drODNYd09KQ2dmWnh2ZkNJNlc2eGlINXd6d1IwRFRKTVVJT1V1cjJPRkp5NDJYell6U1d5LTA4bHpEMkNWU1hQWTljY2Rta0VwVlpJNG9vSDZxdmZZV2F1YXBIaEpWel9ZVkhTV00wRkpYdjdzZ0Nrb1VIVTliQWgxNUJCbFg4RWYzWmdrLTNFWFREZUkwelhneVpCNFBRQi1fZnEyY2xjM1Z5U2VwMnLSAbQEQVVfeXFMTzM1MGJrMFlENmZMY2xqWlNGRUtTZkM3SWl6ZFlTdml5emtXNjFtLVR6Q0l4MGN6d2FWSTRUMHVFV29jSHI0TXNGVUgxMGZOZWtsdVBJczJjaFNtVFNsT3YxYmJqNmNNbV9NcF9JSjRBVGJidkF6TzM3RTRXMWZ4LWgtby1lSkNtSGFITkZaeV9LNHdmN3NMOXBpV082NldIZTdBZk9FQzBzNTg5RzFIMzM3S0dMb0pkaldEZU1hc3ZIa0oxRFRZMlpBV1h2TWJEMm1HWXBqYlRhUEYyOXRIYzJ2QXhuZ2ZEOTNQeGt1cTY5LUNMVTdyeXRjLVlnQmx1RWxNQXJGeVdDd0ZKY0xXalZGSVVVQ2V0V3pXVkc3S3RlamJvN2gwZlUzeGZrNmdCZThiR2NWODlXVWozODJxUmZMTzJzbk1IT1lLSFpPWDNKaDNhX09mTUtpZEk2WkU4em9OeHp1UTRQTmtRR00wRUZMVW9xWXp0NC1RSUNBUVFoN0phX1k0TGhMZGdnazgzWHdPSkNnZlp4dmZDSTZXNnhpSDV3endSMERUSk1VSU9VdXIyT0ZKeTQyWHpZelNXeS0wOGx6RDJDVlNYUFk5Y2NkbWtFcFZaSTRvb0g2cXZmWVdhdWFwSGhKVnpfWVZIU1dNMEZKWHY3c2dDa29VSFU5YkFoMTVCQmxYOEVmM1pnay0zRVhURGVJMHpYZ3laQjRQUUItX2ZxMmNsYzNWeVNlcDJy?oc=5"
+    },
+    "9342dbf934e428aa00": {
+      "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+      "titleAr": "OpenAI تستخدم Codex في سير عمل آلي لرصد تراجعات أداء ChatGPT واقتراح إصلاحها",
+      "summaryAr": "تشرح OpenAI نظام Performance Factory السحابي الذي يبدأ عند ظهور تنبيه أداء: يحقق وكيل Codex في التراجع، ويسجل التشخيص ويقترح إصلاحًا لمهندس لمراجعته، ثم يتحقق وكيل آخر بعد النشر من عودة الأداء إلى خط الأساس. تقول الشركة إن مسار Regression Workflow تابع أكثر من 1,700 تحقيق وحدد السبب الجذري في أكثر من 600 حالة خلال ما يزيد قليلًا على ثلاثة أشهر. وفي مراجعة يدوية لعينة من 100 اقتراح سبب، قيّمت OpenAI نحو 70% بأنها دقيقة، بينما احتاج 30% إلى تحسين أو لم تثبت السببية بالكامل.",
+      "whyItMatters": "القيمة في دورة تشغيل كاملة لا في توليد الشيفرة وحده: تنبيه، تحقيق، مراجعة مضادة، اقتراح إصلاح، ثم قياس أثره بعد النشر. لكنها دراسة حالة داخل OpenAI وليست اختبارًا مستقلًا يثبت الأداء نفسه في كل فريق أو مستودع.",
+      "audience": "فرق هندسة الأداء وموثوقية المواقع SRE، ومطورو الأنظمة التي تتكرر فيها تراجعات الأداء.",
+      "nextSteps": [
+        "قارن دورة التنبيه والتحقيق والإصلاح والقياس الحالية في مشروعك بهذا التسلسل.",
+        "إذا جرّبت وكيلًا على أعطال الأداء، فابدأ باقتراحات لا تغيّر الإنتاج تلقائيًا وسجّل دقة التشخيص قبل توسيع الصلاحيات."
+      ],
+      "limitations": "الأرقام والنتائج من OpenAI نفسها؛ عينة مراجعة الأسباب اليدوية 100 فقط، و30% احتاجت تحسينًا أو لم تثبت السببية. لا يذكر المقال مقارنة مستقلة أو نتائج قابلة للتعميم على قواعد شيفرة أخرى.",
+      "reviewedAt": "2026-11-21T17:44:20+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "OpenAI — How OpenAI’s Performance Factory keeps ChatGPT fast",
+          "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast/"
+        }
+      ]
+    },
+    "67952d9a918d2536a7": {
+      "url": "https://openai.com/index/inside-the-codex-sandbox",
+      "titleAr": "OpenAI تشرح كيف يقيّد Codex وصول الوكيل إلى الملفات والشبكة على الجهاز",
+      "summaryAr": "تشرح OpenAI طبقة العزل التي تشغّل أوامر Codex عبر واجهة موحدة فوق آليات macOS وWindows وLinux. يمكن لملفات الصلاحيات تحديد مسارات القراءة والكتابة والمنع، كما يمكن تعطيل الشبكة افتراضيًا أو تمريرها عبر وكيل يطبّق قواعد نطاقات. وتنتقل قيود العزل إلى العمليات الفرعية التي يطلقها الأمر. وتوضح المقالة أن بعض ملفات مساحة العمل، مثل إعدادات Git وCodex، يمكن أن تبقى للقراءة فقط، وأن الأسرار يمكن حظرها صراحة.",
+      "whyItMatters": "عند تفويض وكيل برمجة بالعمل على مشروع محلي، فإن نطاق الملفات والشبكة هو ما يحدد ما يمكن أن يتأثر عند خطأ أو تعليمات غير موثوقة. يوضح المقال أن كلمة sandbox لا تعني منعًا مطلقًا؛ بل مجموعة حدود يجب ضبطها وفهمها.",
+      "audience": "مستخدمو وكلاء البرمجة، ومطورو الأدوات المحلية، وفرق DevSecOps.",
+      "nextSteps": [
+        "راجع ملف الصلاحيات الفعلي في بيئة Codex لديك ولا تفترض أن كل المسارات خارج المشروع محجوبة.",
+        "اختبر أوضاع القراءة فقط ومنع الشبكة على مشروع تجريبي قبل منح أي وكيل صلاحية كتابة أوسع."
+      ],
+      "limitations": "التنفيذ يعتمد على نظام التشغيل وملف الصلاحيات وإعداد الشبكة؛ وضع الوصول الكامل يختلف جذريًا عن وضع مساحة العمل. المقال يصف دفاعًا متعدد الطبقات ولا يقدّم ضمانًا بأن العزل وحده يحمي من كل المخاطر.",
+      "reviewedAt": "2026-11-21T17:44:20+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "OpenAI — Inside the Codex sandbox",
+          "url": "https://openai.com/index/inside-the-codex-sandbox/"
+        }
+      ]
+    },
+    "44f76fbba2d3881574": {
+      "url": "https://aitnews.com/2026/11/19/%d9%86%d9%85%d8%a7%d8%b0%d8%ac-openai-%d8%aa%d8%ad%d8%b3%d9%91%d9%86-%d8%aa%d8%b5%d9%85%d9%8a%d9%85-%d8%af%d9%88%d8%a7%d8%a6%d8%b1-amd-%d8%a7%d9%84%d8%b1%d8%b3%d9%88%d9%85%d9%8a%d8%a9-%d8%a8%d9%86/",
+      "titleAr": "OpenAI تقول إن نماذجها حسّنت مؤشرات تصميم شريحة AMD بما يصل إلى 14%",
+      "summaryAr": "تقول OpenAI إنها تعاونت مع AMD لتحسين مؤشرات القدرة والأداء والمساحة في تصميم GPU، مع تحسن يصل إلى 14% مقارنة بخط أساس تصفه بأنه محسّن بشدة. وتذكر أن النموذج أعاد كتابة أجزاء من SystemVerilog RTL، وأن AMD أدرجت بعض التغييرات في تصميم أُرسل للتصنيع وأخرى في ملفات تصميم إنتاجية لاحقة. وتقول OpenAI إن أدوات Synopsys استُخدمت للتحقق من بقاء السلوك الوظيفي أثناء قياس المفاضلات الهندسية.",
+      "whyItMatters": "يمثل ذلك انتقالًا من مساعدة النماذج في كتابة البرمجيات إلى اقتراح تعديلات على وصف الدوائر الرقمية، مع إبقاء أدوات التحقق الهندسي ضمن الحلقة. الأهم هو أن التحسين المعلن اقترن بفحص وظيفي، لا أن النموذج استبدل مهندس العتاد.",
+      "audience": "مهندسو تصميم الشرائح والأنظمة المضمنة، وباحثو استخدام النماذج في التصميم الهندسي.",
+      "nextSteps": [
+        "اقرأ تفاصيل المنهج وخط الأساس قبل مقارنة نسبة 14% بنتائج فرق أو شرائح أخرى.",
+        "تابع ما إذا كانت AMD أو جهات مستقلة ستنشر قياسات قابلة لإعادة الإنتاج."
+      ],
+      "limitations": "نسبة 14% معلنة من OpenAI، ولا يقدّم المقال تقييمًا مستقلاً كاملًا أو تفاصيل كل ظروف القياس. لا تعني النتيجة أن النموذج صمّم شريحة كاملة دون تدخل هندسي.",
+      "reviewedAt": "2026-11-21T17:44:20+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "OpenAI — Advancing chip design with OpenAI models",
+          "url": "https://openai.com/index/advancing-chip-design-with-our-models/"
+        }
+      ]
+    },
+    "cd586d1b931827fd92": {
+      "url": "https://aitnews.com/2026/11/20/aws-marketplace-ai-agents-automated-purchases/",
+      "titleAr": "AWS تتيح لوكلاء محددين شراء منتجات من Marketplace مع حدود إنفاق وسجلات تدقيق",
+      "summaryAr": "أعلنت AWS عن إمكان اكتشاف وشراء وكلاء الذكاء الاصطناعي منتجات مختارة متوافقة مع بروتوكول x402 عبر AgentCore Payments، وتسوية المشتريات بالدولار على فاتورة AWS الحالية. يشترط أن يسجل البائع في AWS Marketplace ويدمج SDK الخاص بالمشتريات عبر x402. ويمكن للمطور ضبط حدود إنفاق قبل المعاملة، كما تسجل عمليات الشراء التي يبدأها الوكيل في CloudTrail وتظهر مؤشرات صحتها في أدوات المراقبة.",
+      "whyItMatters": "عندما ينتقل الوكيل من اقتراح خدمة إلى شراء API أو بيانات، تصبح الموافقات والميزانيات وسجلات التدقيق جزءًا من تصميمه. الإعلان مهم لأنه يوضح أن الشراء محصور في منتجات وبائعين مشاركين، وليس تفويضًا مفتوحًا لكل وكيل.",
+      "audience": "مطورو الوكلاء، ومسؤولو المشتريات السحابية، وفرق الأمن والحوكمة المالية.",
+      "nextSteps": [
+        "تحقق من أهلية المنتج والبائع قبل تصميم تكامل يعتمد على الشراء الآلي.",
+        "ضع حدًا ماليًا صغيرًا وموافقة بشرية وسجل تدقيق في أي تجربة قبل السماح بمعاملات فعلية."
+      ],
+      "limitations": "الميزة مقتصرة على منتجات x402 والبائعين الذين أتموا التسجيل والتكامل؛ لا تعني أن كل منتجات Marketplace قابلة للشراء من الوكلاء. التكاليف الفعلية تعتمد على المنتجات والخدمات المختارة.",
+      "reviewedAt": "2026-11-21T17:44:20+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "AWS Marketplace — AWS Marketplace helps humans and agents buy, deploy, and transact",
+          "url": "https://aws.amazon.com/blogs/awsmarketplace/aws-marketplace-helps-humans-and-agents-buy-deploy-and-transact/"
+        }
+      ]
+    },
+    "f918b0f9d5b5ec1244": {
+      "url": "https://aitnews.com/2026/11/20/snapchat-easy-lens-cli-claude-code-codex-cursor/",
+      "titleAr": "Snap تطلق Easy Lens CLI لإنشاء عدسات Snapchat بمساعدة أدوات البرمجة",
+      "summaryAr": "تقول Snap إن Easy Lens CLI يربط إنشاء عدسات Snapchat بمساعدات برمجية مثل Claude Code وCodex وCursor. يصف المطور العدسة باللغة الطبيعية، ثم يستخدم المساعد أكثر من 100 مكوّن لبناء تجارب الواقع المعزز وأكثر من 50 مولدًا للأصول، ويُنشئ معاينة مرئية يمكن إرسالها إلى الهاتف للتجربة قبل النشر ومتابعة الأداء. وتقول Snap إن الأداة متاحة مجانًا باستخدام حساب Snapchat.",
+      "whyItMatters": "هذا مثال على انتقال وكلاء البرمجة إلى أدوات إنتاج إبداعي متخصصة؛ إذ يجمع المسار بين وصف الفكرة والبناء والمعاينة على الهاتف والنشر بدل الاكتفاء بتعديل ملفات نصية.",
+      "audience": "مطورو تجارب الواقع المعزز، ومصممو العدسات، ومطورو الأدوات الإبداعية.",
+      "nextSteps": [
+        "راجع متطلبات CLI والحساب والمنصات المدعومة في وثائق Snap قبل البدء.",
+        "ابدأ بعدسة تجريبية غير منشورة، واختبر المعاينة على الهاتف قبل مشاركة أي عدسة."
+      ],
+      "limitations": "تفاصيل الإتاحة والقيود التشغيلية الواردة في هذا الملخص من إعلان Snap؛ لم أختبر CLI أو أتحقق من توفر جميع المكونات في كل منطقة أو حساب.",
+      "reviewedAt": "2026-11-21T17:44:20+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Snap Newsroom — Introducing Easy Lens CLI",
+          "url": "https://newsroom.snap.com/introducing-easy-lens-cli"
+        }
+      ]
+    },
+    "8cc8dc08d878937a89": {
+      "url": "https://aitnews.com/2026/11/19/%d8%ac%d9%88%d8%ac%d9%84-%d8%aa%d8%b7%d9%84%d9%82-%d9%86%d9%85%d9%88%d8%b0%d8%ac-%d8%a7%d9%84%d8%b0%d9%83%d8%a7%d8%a1-%d8%a7%d9%84%d8%a7%d8%b5%d8%b7%d9%86%d8%a7%d8%b9%d9%8a-gemini-4-neon-%d9%84%d9%84/",
+      "titleAr": "Google تعلن Gemini 4 Neon بسياق مليون رمز وأسعار معلنة للـAPI",
+      "summaryAr": "أعلنت Google عن Gemini 4 Neon بنافذة سياق تصل إلى مليون رمز. وتذكر الشركة سعر 3 دولارات لكل مليون رمز إدخال و15 دولارًا لكل مليون رمز إخراج، مع سعر أقل للمدخلات المخزنة. كما تورد نتائج في Artificial Analysis وVals Index عند مستوى التفكير xhigh، وتقول إن الإطلاق بدأ عبر Gemini API وGoogle AI Studio وبعض الخطط المدفوعة في منتجاتها.",
+      "whyItMatters": "السياق الطويل والتسعير المعلن قد يغيّران طريقة بناء تطبيقات تحليل المستندات والمهام متعددة الوسائط، لكن القرار العملي يحتاج مقارنة جودة المهمة وزمنها وتكلفتها على بياناتك، لا الاعتماد على ترتيب واحد.",
+      "audience": "مطورو تطبيقات النماذج، ومهندسو البرمجيات، والباحثون الذين يعالجون مستندات طويلة.",
+      "nextSteps": [
+        "تحقق من نموذج التسعير وحدود السياق والإتاحة في منطقتك قبل تقدير تكلفة تطبيق.",
+        "اختبر عينة ممثلة من مهامك على أكثر من نموذج مع تثبيت مستوى التفكير وحساب التكلفة الكلية."
+      ],
+      "limitations": "الأسعار والترتيب والنتائج المذكورة من إعلان Google ومؤشرات محددة؛ تتغير الأسعار والتوافر، ولا تمثل نتائج benchmark ضمانًا لأداء كل مهمة أو لغة.",
+      "reviewedAt": "2026-11-21T17:44:20+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Google — Introducing Gemini 4 Neon",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+        }
+      ]
+    },
+    "662045f579cfb2e238": {
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQVy12aDVhTzcyeUJxYUFoaFp0eXlHVmtkQ0VCNHQxdUpJRmxyMUZnMW50VG1EZzFkV1dXeGNSMW5oWlY3aG5Pb0hlTUNLVHZCM3Z2U08wbUhuWFFoOThCSGw1cEI0bEE3T1ctZ2hGbkpJSHctS3c0R2tiSEgwOHhFNWRQZXdMLXdfRm5hYmdXdGxoT2tB?oc=5",
+      "titleAr": "AWS تطرح معاينة SDK Python v4 بعملاء متزامنين وغير متزامنين",
+      "summaryAr": "أعلنت AWS عن معاينة مطورين لـSDK Python v4، مع عملاء نمطيين ومجزأين حسب الخدمة ودعم متزامن وغير متزامن. تشمل قائمة الخدمات الأولية S3 وDynamoDB وLambda وBedrock، وبعض ميزات تدفق الأحداث متاحة حاليًا في العملاء غير المتزامنين فقط. يتطلب البدء Python 3.12 أو أحدث وحساب AWS وبيانات اعتماد ومنطقة مضبوطة؛ وتوصي AWS بالاستمرار على Boto3 في أحمال الإنتاج إلى أن يصل الإصدار إلى التوافر العام.",
+      "whyItMatters": "قد يحسن التصميم غير المتزامن والأنواع الدقيقة وتثبيت الحزم حسب الخدمة بناء تطبيقات Python عالية التزامن، لكن حالة المعاينة تعني أن التوافق والواجهات قد تتغير.",
+      "audience": "مطورو Python الذين يبنون تكاملات AWS، ومهندسو الخدمات غير المتزامنة.",
+      "nextSteps": [
+        "جرّب SDK v4 في بيئة افتراضية ومشروع تجريبي، مع تثبيت الإصدار وتوثيق تغييرات الواجهة.",
+        "أبقِ Boto3 في الإنتاج إلى أن تعلن AWS التوافر العام وتوضح مسار الترحيل."
+      ],
+      "limitations": "هذا إصدار Developer Preview وليس GA؛ توصي AWS صراحة بعدم نقله إلى أحمال الإنتاج بعد. يتطلب Python 3.12+ وبيانات اعتماد AWS، وقد تختلف تغطية الخدمات والميزات بين العملاء.",
+      "reviewedAt": "2026-11-21T17:44:20+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "AWS Developer Tools Blog — Announcing the developer preview of the AWS SDK for Python v4",
+          "url": "https://aws.amazon.com/blogs/developer/announcing-developer-preview-aws-sdk-for-python-v4/"
+        }
+      ]
+    },
+    "ec56b5eff9affb1c33": {
+      "url": "https://huggingface.co/blog/moe-expert-streaming",
+      "titleAr": "تجربة Hugging Face تبث خبراء MoE من SSD لتشغيل نموذج كبير على Mac بذاكرة 32GB",
+      "summaryAr": "يصف Tarek Ziadé تجربة تشغيل Qwen3.8-Flash-Next على جهاز Mac M5 بذاكرة موحدة 32GB عبر بث الخبراء الذين يختارهم موجّه MoE من SSD بدل تحميل كل الأوزان إلى الذاكرة. يذكر المقال 121GB من الخبراء و51GB لجدول n-gram، مع تكميم الخبراء إلى 3-bit وتخزين 49GB على القرص وذاكرة مؤقتة 12GiB. في الإعداد النهائي سجلت نسخة Transformers نحو 13.9 رمزًا/ثانية لفك 200 رمز و228 رمزًا/ثانية لتهيئة مطالبة 4K.",
+      "whyItMatters": "توضح التجربة أن استغلال التفعيل المتناثر والبث من التخزين قد يتيح تجارب محلية أكبر من الذاكرة المتاحة، لكنها تعتمد على بنية MoE وقرص سريع وتكميم وإعدادات محددة.",
+      "audience": "باحثو تشغيل النماذج محليًا، ومطورو Transformers وMoE، ومستخدمو أجهزة Apple Silicon.",
+      "nextSteps": [
+        "اقرأ إعدادات القياس والذاكرة كاملة قبل مقارنة السرعة بجهاز أو محرك آخر.",
+        "إذا أعدت التجربة، سجل نوع القرص والذاكرة والتكميم وطول السياق وحرارة الجهاز مع النتائج."
+      ],
+      "limitations": "هذه تجربة مؤلف واحد على Mac M5 محدد وليست ضمانًا لتشغيل النموذج على كل جهاز 32GB. يتطلب الإعداد ملفات كبيرة على SSD وتكميمًا ومسارًا خاصًا لجدول n-gram، كما أن واجهة Transformers المذكورة ما زالت قيد النقاش.",
+      "reviewedAt": "2026-11-21T17:44:20+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Hugging Face — 180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers",
+          "url": "https://huggingface.co/blog/moe-expert-streaming"
+        }
+      ]
+    },
+    "5b89a2db7f60ae9099": {
+      "url": "https://huggingface.co/blog/rumble-2-flash",
+      "titleAr": "Reson8 تنشر Rumble-2-Flash المفتوح للتعرف على الكلام بحجم 0.5B",
+      "summaryAr": "أعلنت Reson8 نشر Rumble-2-Flash بترخيص Apache 2.0 وحجم يقارب 0.5 مليار معامل، مع دعم معلن لأكثر من 40 لغة وتكامل مباشر مع Transformers وvLLM. يعرض المقال متوسط معدل خطأ 6.96% على مسار متعدد اللغات شمل تسع لغات، و6.6% WER على المسار الإنجليزي. ويشرح أن النموذج صُغّر بالتقطير على مخرجاته مع تقييم المعلم لكل رمز.",
+      "whyItMatters": "قد يتيح نموذج صغير نسبيًا تجارب تعرف على الكلام في بيئات محدودة الموارد، لكن قيمته للتطبيق العربي لا تُحسم بعدد اللغات المعلن؛ بل بقياس اللهجات والضوضاء والمجال الصوتي محليًا.",
+      "audience": "مطورو تحويل الكلام إلى نص، وباحثو النماذج الصوتية، ومطورو تطبيقات متعددة اللغات.",
+      "nextSteps": [
+        "تحقق من بطاقة النموذج ومتطلبات التشغيل والترخيص قبل إدماجه.",
+        "ابنِ مجموعة تقييم عربية مرخصة تشمل لهجات وضوضاء وأسماء محلية قبل الاعتماد عليه."
+      ],
+      "limitations": "أرقام الدقة من المقال وعلى مجموعات تقييم محددة؛ المسار متعدد اللغات المذكور يغطي تسع لغات ولا يثبت جودة العربية. لم أجر اختبارًا مستقلًا على النموذج.",
+      "reviewedAt": "2026-11-21T17:44:20+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Hugging Face — Rumble-2-Flash: an open 0.5B speech model for 40+ languages",
+          "url": "https://huggingface.co/blog/rumble-2-flash"
+        }
+      ]
+    },
+    "c68cb5d11f8dc6196b": {
+      "url": "https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/",
+      "titleAr": "GitHub وMicrosoft يختبران فرز نتائج فحص AI وإرسال تقارير ثغرات موثقة بدل إغراق المشرفين",
+      "summaryAr": "تصف GitHub تجربة Codename MDASH على ستة مشاريع مفتوحة المصدر. اقترح نظام Microsoft MAI Cyber مشكلات وإصلاحات، ثم فرزها وكيل من GitHub Security Lab، وفحص باحثون من Microsoft FORGE Lab النتائج يدويًا قبل إرسال تقارير خاصة تتضمن إثباتًا ومقترح إصلاح. تقول GitHub إن الفحص أشار إلى 9,791 احتمالًا، نتج عنها 99 تقريرًا بعد الفرز والمراجعة؛ وبحلول 15 نوفمبر كان المشرفون قد أصلحوا 55، ووصل 14 إصلاحًا إلى إصدار منشور.",
+      "whyItMatters": "الدرس هو أن قيمة فحص الأمن بالذكاء الاصطناعي لا تقاس بعدد التنبيهات الخام، بل بنسبة النتائج التي تتحقق ويستطيع المشرف التعامل معها. كما يوضح أهمية المراجعة البشرية والإبلاغ الخاص وإرفاق دليل وإصلاح مقترح.",
+      "audience": "مشرفو البرمجيات مفتوحة المصدر، وفرق AppSec، وباحثو أمن التطبيقات.",
+      "nextSteps": [
+        "عند تقييم ماسح AI، قِس الإيجابيات الكاذبة والنتائج المؤكدة والإصلاحات المقبولة لا عدد التنبيهات فقط.",
+        "استخدم قنوات إفصاح خاصة ومراجعة بشرية قبل إرسال نتائج أمنية غير مؤكدة إلى المشرفين."
+      ],
+      "limitations": "الأرقام من تجربة GitHub وMicrosoft على ستة مشاريع، وليست قياسًا مستقلًا لمعدل اكتشاف الثغرات في كل المستودعات. لا يعني عدد الاحتمالات الخام وجود ثغرات مؤكدة.",
+      "reviewedAt": "2026-11-21T17:44:20+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "GitHub Blog — Maintainers don’t need more AI bug reports. They need fixes.",
+          "url": "https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/"
+        }
+      ]
+    },
+    "57b03ec42d31d8f486": {
+      "url": "https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/",
+      "titleAr": "GitHub تشرح Agent Host Protocol لنقل جلسات الوكلاء بين المحررات والتطبيقات والأجهزة",
+      "summaryAr": "تشرح GitHub بروتوكول Agent Host Protocol بوصفه معيارًا مفتوحًا لفصل عمر جلسة الوكيل عن نافذة محرر واحدة، بحيث يمكن بدء الجلسة في مكان ومتابعتها من تطبيق أو جهاز آخر أو بيئة سحابية. تذكر المقالة وجود تطبيقين مستقلين للمضيف: VS Code بلغة TypeScript وGitHub بلغة Rust، وتعرض مكتبات للعملاء والخوادم بلغات Rust وTypeScript وKotlin وSwift و.NET وGo.",
+      "whyItMatters": "إذا استمرت الوكلاء في العمل لساعات أو أيام، تصبح قابلية نقل الجلسة وحالتها وأدواتها بين الأجهزة ميزة بنيوية مهمة. البروتوكول المفتوح قد يقلل الحاجة إلى تكامل منفصل لكل محرر وتطبيق.",
+      "audience": "مطورو أدوات الوكلاء والمحررات، وفرق بناء تطبيقات مصاحبة، ومطورو تكاملات متعددة الأجهزة.",
+      "nextSteps": [
+        "اقرأ مواصفات Agent Host Protocol والمكتبات الرسمية قبل بناء تكامل.",
+        "ابدأ بعميل تجريبي يعرض حالة الجلسة واستئنافها، ثم اختبر التوافق بين مضيفين مستقلين."
+      ],
+      "limitations": "المقال يشرح تجربة GitHub وتبني منتجاتها للبروتوكول؛ لا يثبت أن كل عميل أو وكيل خارجي متوافق معه تلقائيًا. يجب التحقق من نضج المكتبات وتوافق الإصدارات قبل اعتماد تكامل إنتاجي.",
+      "reviewedAt": "2026-11-21T17:44:20+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "GitHub Blog — Building the Agent Host Protocol for sessions that continue across devices",
+          "url": "https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/"
+        }
+      ]
+    },
+    "e30c513b833d362832": {
+      "url": "https://news.google.com/rss/articles/CBMixgJBVV95cUxNTHA0MTZVVTVQcC1qTThQV2IySTNHcGdfLW1ZNUllekpLeVpLNmZpcFlsUDB6SHdvUE5FbHhOMGJuempJN1N0TmQxeUc3SlVIQkk5LTV0c3ppTWZpbXJfcVBDdnA4UXRKcDEwdlE1TWFadXZkelhkY1RkbnVDR2o0cGpDdzd2R0E3blhseUNSX05hVXBaQ2w0Y1ZEOTlGdW56d09pWmVrbFBfTDlPQkhsMDdtdm5qd0haRXhEY0xnWWZBQTBiYlFqWDdmVmZkeDRxQlk2TkE2TnEtTVJZLWFMSG5rX2pQTnBIXzRyUVBrSlVOMmRzT0Mtd05yeEdyay1DWGNYRDVWNGxBYlh3cWk1SmtaVVh6WFgxOUN4YWZDUzZGZV80ZzNhR1BUMGVwSHpHaE9DWjNRaUZhQWpYZXJrY3VJb2p3dw?oc=5",
+      "titleAr": "جامعة أم القرى وسدايا تناقشان أثر الذكاء الاصطناعي على الوظائف والمهارات المطلوبة",
+      "summaryAr": "تقول جامعة أم القرى إنها نظمت بالتعاون مع الهيئة السعودية للبيانات والذكاء الاصطناعي «سدايا» لقاءً في 19 نوفمبر 2026 بعنوان «تأثير الذكاء الاصطناعي على الوظائف»، ضمن مبادرة عام الذكاء الاصطناعي 2026 في جامعات المملكة. وقدّم اللقاء مستشار الرئيس التنفيذي لقطاع بناء القدرات في سدايا، وناقش تغير طبيعة الوظائف والمهارات والكفاءات المطلوبة مع تطور التقنية.",
+      "whyItMatters": "هذا خبر محلي يربط الذكاء الاصطناعي بالمهارات الجامعية وسوق العمل في المملكة. أهميته للطلبة أنه يلفت إلى ضرورة متابعة المهارات المطلوبة والتدريب العملي، لكنه لا يعني الإعلان عن وظائف أو برنامج تدريب محدد.",
+      "audience": "طلاب الجامعات والباحثون عن مسارات مهنية تقنية، خصوصًا في المملكة.",
+      "nextSteps": [
+        "تابع إعلانات أم القرى وسدايا الرسمية لمعرفة أي برامج تدريب أو فعاليات لاحقة.",
+        "حوّل الموضوع إلى خطة تعلم مهارية مرتبطة بتخصصك بدل الاكتفاء بمتابعة أخبار النماذج."
+      ],
+      "limitations": "الصفحة الرسمية تصف لقاءً توعويًا وأهدافه؛ لا تذكر نتائج توظيف أو أعداد متدربين أو برنامجًا عمليًا محددًا. لم أستنتج منها فرصًا وظيفية غير معلنة.",
+      "reviewedAt": "2026-11-21T17:44:20+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "جامعة أم القرى — جامعة أم القرى وسدايا يناقشان تأثير الذكاء الاصطناعي على الوظائف",
+          "url": "https://uqu.edu.sa/App/News/180111"
+        }
+      ]
     }
   }
 }

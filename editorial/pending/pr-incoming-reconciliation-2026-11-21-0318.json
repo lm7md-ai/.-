@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-21T03:18:34+03:00",
+  "mainCommit": "c46037504dd056baadac0891701985348039f9e7",
+  "prHeadAtReview": "2b5915547fb88956b1c94b9535243b53d453ac46",
+  "mainIncoming": {
+    "files": 145,
+    "occurrences": 1517,
+    "exactFeedIdUrlOccurrences": 183,
+    "exactFeedMatchesMissingFromMainEditorial": 0,
+    "feedIdUrlMismatches": 0,
+    "editorialIdsPresentOccurrences": 1346,
+    "staleOccurrences": 1334,
+    "staleButIdAlreadyInEditorial": 1163,
+    "staleIdsMissingFromEditorial": 171,
+    "jsonParsed": 145,
+    "versionOneItemsObject": 145,
+    "entryLevelOfficialValidate": false,
+    "uniqueStalePairsCurrentSnapshot": null,
+    "note": "The previous unique-pair snapshot was 113 pairs (112 pending, 1 expired); the new Feed snapshot was rechecked at occurrence level, but unique pairs were not recomputed."
+  },
+  "prOnlyIncoming": {
+    "files": [
+      "nabdh-import-2026-11-20-1443.json",
+      "nabdh-import-2026-11-20-1745.json",
+      "nabdh-news-2026-11-20-0037.json",
+      "nabdh-news-2026-11-20-1009.json",
+      "nabdh-news-2026-11-20-1510.json",
+      "nabdh-news-2026-11-20-1813.json",
+      "nabdh-news-2026-11-20-2044.json",
+      "nabdh-projects-2026-11-20-0037.json"
+    ],
+    "occurrences": 97,
+    "feedExactIdUrlOccurrences": 86,
+    "notInCurrentFeed": 11,
+    "feedIdUrlMismatches": 0,
+    "exactIdUrlPresentInPrEditorial": 96,
+    "prEditorialUrlMismatches": 0,
+    "notPresentInPrEditorial": 1,
+    "missingRecord": {
+      "id": "21c18831fcc7a86452",
+      "url": "https://verialabs.com/ruby2shell/",
+      "title": "تحديثات Ruby تعالج سبع ثغرات أمنية بينها خلل Ruby2Shell",
+      "currentFeed": false,
+      "prEditorial": false,
+      "status": "pending_source_identity_or_feed_reentry"
+    }
+  },
+  "newBatch": {
+    "file": "editorial/incoming/nabdh-news-2026-11-21-0318.json",
+    "records": 4,
+    "ids": [
+      "03b179946dd0e55198",
+      "945d12baa1ef9bf958",
+      "bf82adff4bf6ffb39c",
+      "d32b20a39c5cb2dedb"
+    ],
+    "exactCurrentFeedIdUrlMatches": 4,
+    "presentInPrEditorial": 0,
+    "status": "saved_incoming_not_imported"
+  },
+  "pendingFeedItem": {
+    "id": "4dfa7e8e0db14f07b9",
+    "title": "استخدام الذكاء الاصطناعي لـ10 دقائق يقلل القدرة على إنجاز المهام الصعبة",
+    "currentFeed": true,
+    "currentEditorial": false,
+    "feedPublishedAt": "2026-11-20T08:12:18Z",
+    "originalSourcePublishedAt": "2026-10-13T11:42:00+03:00",
+    "originalSource": "https://aawsat.com/تكنولوجيا/5329062-استخدام-الذكاء-الاصطناعي-لـ10-دقائق-يقلل-القدرة-على-إنجاز-المهام-الصعبة",
+    "status": "pending_source_date_mismatch",
+    "reason": "The Feed timestamp is 20 November while the original publisher page states 13 October. Do not import until the feed timestamp is confirmed as a republication or corrected."
+  },
+  "specialRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "name": "NVIDIA OpenShell",
+      "incoming": true,
+      "seen": true,
+      "feed": false,
+      "editorial": false
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "name": "Canva Craft",
+      "incoming": true,
+      "seen": true,
+      "feed": false,
+      "editorial": false
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "name": "1Password agent sign-in",
+      "incoming": true,
+      "seen": true,
+      "feed": false,
+      "editorial": false
+    }
+  ],
+  "validation": {
+    "structuralNewBatch": "Passed in-memory checks for version=1, items object, exact Feed ID/URL, required fields, HTTPS sources, basis and reviewedAt.",
+    "officialCi": "Run 44843652788 passed on PR head 2b591554; official validate and 30 unit tests applied to site/data/editorial.json (1,182 entries), not to the Incoming batch.",
+    "officialImport": "Not run. Local git access failed DNS; no claim of import.",
+    "urlMismatchesAcrossAuditedFiles": 0
+  },
+  "decision": "Do not synthesize IDs or import the stale Ruby2Shell record or the date-mismatched Aawsat item. Four new cards remain saved in Incoming only until the official import can be executed."
+}

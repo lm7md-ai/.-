@@ -1,0 +1,388 @@
+{
+  "version": 1,
+  "items": {
+    "534016fa5cae687038": {
+      "url": "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use",
+      "titleAr": "Gemini على macOS يحصل على قدرة استخدام الحاسوب لتنفيذ مهام متعددة الخطوات",
+      "summaryAr": "أعلنت Google إضافة computer use إلى تطبيق Gemini على macOS لتنفيذ النقر والكتابة وملء النماذج عبر التطبيقات والويب داخل نافذة معزولة ومعاينات وموافقات. ذكر The Verge أن الإطلاق بدأ باللغة الإنجليزية في الولايات المتحدة.",
+      "whyItMatters": "ينقل المساعد من الإجابة النصية إلى تنفيذ سير عمل على سطح المكتب؛ صلاحيات التطبيقات ومراجعة الأفعال أهم من سرعة التنفيذ.",
+      "audience": "مستخدمو macOS ومطورو التطبيقات وبناة الوكلاء.",
+      "nextSteps": [
+        "تحقق من التوافر الإقليمي.",
+        "ابدأ بملفات تجريبية غير حساسة.",
+        "قارن الوقت والأخطاء مع التنفيذ اليدوي."
+      ],
+      "limitations": "الإطلاق المذكور باللغة الإنجليزية في الولايات المتحدة؛ ولا تضمن الميزة صحة كل خطوة.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Google — Gemini computer use on Mac",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/"
+        },
+        {
+          "title": "The Verge — Gemini on Mac",
+          "url": "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use"
+        }
+      ],
+      "reviewedAt": "2026-11-20T00:37:02+03:00"
+    },
+    "c363e4ee1aa6f6ac6b": {
+      "url": "https://www.theverge.com/tech/1038059/google-search-homepage-ai-chats",
+      "titleAr": "Google تضيف سجل محادثات AI Mode إلى الصفحة الرئيسية للبحث",
+      "summaryAr": "تطرح Google شريطًا جانبيًا على صفحة البحث في سطح المكتب يعرض محادثات AI Mode السابقة ويسمح بمتابعتها والبحث داخل السجل وربط Gemini Notebook. وصف The Verge الطرح بأنه عالمي على سطح المكتب.",
+      "whyItMatters": "تغيّر الواجهة طريقة العودة إلى البحث السابق وبناء الاستكشاف على مراحل؛ وتزيد أهمية إدارة السياق والخصوصية.",
+      "audience": "مستخدمو Google Search والطلاب والباحثون ومطورو البحث.",
+      "nextSteps": [
+        "تحقق من ظهور الشريط على سطح المكتب.",
+        "جرّب متابعة موضوع بحثي ثم راجع السياق المحفوظ.",
+        "قارن البحث داخل المحادثات بسجل المتصفح."
+      ],
+      "limitations": "المقال يصف سطح المكتب ولا يثبت توافر الواجهة نفسها على الهاتف؛ وقد تتغير تفاصيل الربط.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "The Verge — Google is putting AI chats on the homepage",
+          "url": "https://www.theverge.com/tech/1038059/google-search-homepage-ai-chats"
+        }
+      ],
+      "reviewedAt": "2026-11-19T23:39:43+03:00"
+    },
+    "47396adf5e31273b13": {
+      "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/",
+      "titleAr": "Reuters يرصد مخاوف خصوصية وسلامة في وكيل Meta Muse",
+      "summaryAr": "راجع Reuters أكثر من عشرين منشورًا داخليًا ثم أعاد اختبار الوصول إلى رسائل Signal عبر أذونات إشعارات Android وأدوات تسهيلات الاستخدام ولقطات الشاشة على macOS؛ ولم تتكرر النتيجة نفسها على iPhone. قالت Meta إن الحالات معزولة وإن بعض الرسائل قد تكون هلوسات، ولم يحسم Reuters صحة بعض الأرصدة المعروضة.",
+      "whyItMatters": "توضح القصة أن صلاحيات النظام الواسعة قد تجعل الوكيل يرى سياقًا لم يقصده المستخدم، وأن ادعاء الوكيل ليس دليلًا على صحة البيانات.",
+      "audience": "مطورو الوكلاء وتطبيقات الهاتف وفرق الخصوصية والأمن.",
+      "nextSteps": [
+        "راجع أذونات الإشعارات وإمكانية الوصول الممنوحة للوكلاء.",
+        "افصل صلاحيات كل تطبيق واطلب موافقة واضحة.",
+        "تحقق من مصدر البيانات قبل عرضها."
+      ],
+      "limitations": "تحقيق Reuters واختبارات محددة ورد Meta؛ لا يثبت تعرض كل المستخدمين لتسرب أو أن كل الأمثلة بيانات حقيقية.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Reuters — Muse safety mishaps",
+          "url": "https://www.reuters.com/investigations/meta-bets-big-muse-ai-agent-early-safety-mishaps-surface-2026-11-18/"
+        },
+        {
+          "title": "TechCrunch — Meta Muse report",
+          "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/"
+        }
+      ],
+      "reviewedAt": "2026-11-20T00:37:02+03:00"
+    },
+    "fa5917e879d29a8bbf": {
+      "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+      "titleAr": "طرح Anthropic في ناسداك يقدّر قيمتها بنحو تريليوني دولار في أول يوم تداول",
+      "summaryAr": "ذكر Reuters أن تقييم Anthropic قارب تريليوني دولار في ظهورها الأول يوم 19 نوفمبر 2026. افتتح السهم عند 111.50 دولارًا مقابل سعر طرح 83 دولارًا ثم تراجع إلى نحو 99 دولارًا وقت التقرير، مع إبراز تقلب السوق والتزامات الحوسبة.",
+      "whyItMatters": "يصبح الإدراج مؤشرًا عامًا لنمو شركة نماذج متقدمة وتكاليفها ومخاطر تمويلها؛ لكنه لا يثبت الربحية.",
+      "audience": "متابعو اقتصاد الذكاء الاصطناعي والطلاب والمهتمون بالأسواق.",
+      "nextSteps": [
+        "تابع الإفصاحات الدورية لا سعر يوم الإدراج وحده.",
+        "قارن الإيرادات وتكلفة الحوسبة والالتزامات المستقبلية.",
+        "راقب أثر الإدراج على تمويل المنافسين."
+      ],
+      "limitations": "الأرقام لقطة يوم الإدراج؛ التقييم السوقي ليس قياسًا للربحية والالتزامات المستقبلية ليست كلها إنفاقًا محققًا.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Reuters — Anthropic Nasdaq debut",
+          "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/"
+        }
+      ],
+      "reviewedAt": "2026-11-19T23:39:43+03:00"
+    },
+    "5fe21d2b4ecab0b0d1": {
+      "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+      "titleAr": "Anthropic تقول إن Claude Fable 5.2 ساعد في حل مسألتين نظريتين في فيزياء الثقوب السوداء",
+      "summaryAr": "تقول Anthropic إن Claude Fable 5.2 ووكلاء متعاونين ساعدوا في نتيجتين نظريتين: حساب مرتبط بنموذج مبسط للثقوب السوداء وحد دقيق في modular bootstrap. وتذكر أن جزءًا من البرهان تحقق بـLean وأن فيزيائيًا راجع النتائج الرئيسية؛ ولا تصف المسألتان كوننا مباشرة.",
+      "whyItMatters": "الحالة مثال على استخدام النماذج في استكشاف براهين طويلة بالتوازي مع تحقق رسمي ومراجعة بشرية، لا استبدال الباحث.",
+      "audience": "طلاب الفيزياء والرياضيات وعلوم الحاسوب وباحثو الذكاء الاصطناعي العلمي.",
+      "nextSteps": [
+        "اقرأ الورقة والشرح الرياضي.",
+        "راجع ما تحقق رسميًا في Lean.",
+        "قارن المنهج بأدوات إثبات آلي."
+      ],
+      "limitations": "هذا وصف Anthropic لعمل شارك فيه نموذجها؛ النتائج نظرية ومحددة ولا تحل الجاذبية الكمومية عمومًا.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Anthropic — Claude Fable 5.2 black-hole physics",
+          "url": "https://www.anthropic.com/research/claude-black-hole-physics"
+        }
+      ],
+      "reviewedAt": "2026-11-20T00:37:02+03:00"
+    },
+    "f88414c8cfe7b454dc": {
+      "url": "https://arstechnica.com/gadgets/2026/11/google-will-launch-android-app-verification-requirement-globally-in-january-2027/",
+      "titleAr": "Google تبدأ التوسع العالمي للتحقق من مطوري تطبيقات Android في يناير 2027",
+      "summaryAr": "أعلنت مدونة Android Developers بدء التوسع العالمي للتحقق من هوية مطوري التطبيقات في يناير 2027 بالتعاون مع سبعة موزعين، مع توسع تدريجي إلى بلدان ومصادر تثبيت أخرى خلال عدة أشهر. وتقول Google إن الحماية بدأت في متاجر مشاركة بالبرازيل وإندونيسيا وسنغافورة وتايلاند.",
+      "whyItMatters": "قد يؤثر التغيير على المطورين الذين يوزعون تطبيقات Android خارج Google Play وعلى المستخدمين الذين يثبتون تطبيقات من مصادر متعددة.",
+      "audience": "مطورو Android والطلاب وفرق النشر ومتاجر التطبيقات.",
+      "nextSteps": [
+        "راجع متطلبات تسجيل المطورين قبل يناير 2027.",
+        "تحقق من أثر السياسة على قنوات توزيع تطبيقك.",
+        "احتفظ بسجل لهوية الناشر وتوقيع التطبيق."
+      ],
+      "limitations": "الإطلاق مرحلي؛ لا يعني خضوع جميع البلدان ومصادر التثبيت في اليوم نفسه.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Android Developers Blog — Developer verification 2027",
+          "url": "https://developer.android.com/blog/posts/android-developer-verification-2027"
+        },
+        {
+          "title": "Ars Technica — Android verification rollout",
+          "url": "https://arstechnica.com/gadgets/2026/11/google-will-launch-android-app-verification-requirement-globally-in-january-2027/"
+        }
+      ],
+      "reviewedAt": "2026-11-20T00:37:02+03:00"
+    },
+    "a9933de7f7b7b31206": {
+      "url": "https://www.wired.com/story/google-built-a-giant-mirror-dimension-internet-to-test-its-chrome-ai-agents/",
+      "titleAr": "Google تبني بيئة إنترنت اصطناعية لاختبار وكلاء Chrome قبل الويب الحقيقي",
+      "summaryAr": "يصف Wired بيئة Mirror Dimension المعزولة التي تحاكي مواقع اجتماعية وتسوق ولوحات حسابات، وتختبر وكلاء Chrome بمهام تتضمن حقن تعليمات مخفية. الهدف اختبار الوكلاء دون تعريض حسابات حقيقية لوكيل غير ناضج؛ وتقول Google إن بعض الهجمات احتاجت امتيازات خاصة داخل بيئتها.",
+      "whyItMatters": "اختبار وكلاء المتصفح يحتاج بيئات واسعة ومتغيرة تحاكي مواقع حقيقية، كما يجب قياس مقاومة prompt injection قبل السماح للوكيل بالتصرف على مواقع المستخدمين.",
+      "audience": "مطورو المتصفحات والوكلاء وفرق أمن التطبيقات والباحثون.",
+      "nextSteps": [
+        "أنشئ صفحات اختبار محلية تحاكي نماذج ومحتوى غير موثوق.",
+        "أدرج تعليمات اصطناعية مخفية وقس هل يتجاهلها الوكيل.",
+        "افصل الاختبار عن الحسابات الحقيقية."
+      ],
+      "limitations": "Mirror Dimension بيئة داخلية معزولة وليست نسخة كاملة من الإنترنت أو خدمة عامة؛ والهجمات الموصوفة احتاجت امتيازات خاصة.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "WIRED — Mirror Dimension for Chrome AI agents",
+          "url": "https://www.wired.com/story/google-built-a-giant-mirror-dimension-internet-to-test-its-chrome-ai-agents/"
+        }
+      ],
+      "reviewedAt": "2026-11-20T00:37:02+03:00"
+    },
+    "1578edf8b253799c50": {
+      "url": "https://news.google.com/rss/articles/CBMijwVBVV95cUxNemc1ZVlHQW9ITlR4czdaZDR6WGZFRGMxNHd1TWpabGJjQ0FjTk1VWE52bnk1ZDBZTDAzZFRlSUZYUnhLY0FCdnBZREhhdWhBQ05tVGlQZ2xacGpLQmpBbXB2bjRQSEM3eEg1eG5iaHEzS21mU3hfX3VCdDVQSWtpNXBvd0dmMXYwUFlMU0xtaUh2Ujc5N0dLZ3AyNDJuaC1hd1pKV0JPUXZKb1NVMGU2S2Z3STE2ZF9CdjNidHhPVmd4RDNNUVZZVGY4MUVJS01SZndGOTk1bTZOb2FrMzRHTzdDRlF5RzRiM1ZkQTBMU2xrZWJiTVZSSzZadFBzZG9FM29EODM4a3dDWGYwZ1FrY0FjbUFkaFFVa094Nmw0N1Rub0x1LUN1MjB2ZGpKbS1oS01od3IzRHh5OVhHQTBWU244bVhFV3RYZC0wdHhEdnlqYnc4YlVBNzJsbjhTdWFxdHMyNHhwZW1LQzJsV29kbnZueGZXVEptYnhYeUdDb3pnSm9MNHA5VkU4bDVDYm5ORTd5Mm4zQW9Vd3B2VU5nUGZ0MzZHbEtuUmZsbjh3UGVUMk9fOXZyMkQ0bUpyUHllZmpQNUxoVW1SOHEwZkI3OVpPclZKTUVZaklmUm5TNUVZTWVMQ3g4WjdtRUJvTnNzclVEdFhYblZxLU0yRk9OWWwyTjVaUkFkSTdZeE5jZ3VsMXhrbzd3bFVtVGNQMnBlMWtYT0lLdFEybGEwOWJOT0RtdUxPWGNqdWFRaUJRbU1NdkxzMjA4dEkzVU5UUGdWaVlFWUZfS0RUbEgtVkppWk5Wdm5jWkZPZDE4NU5La1hzZGUxUXpLQnZIaWF3QUJqYlpIWFZXRHk3R3FyX1pr?oc=5",
+      "titleAr": "HUMAIN تعرض منصة صوتية عربية تدعم اللهجات ووكلاء المحادثة الفورية",
+      "summaryAr": "تصف صفحة HUMAIN الرسمية منصة Voice للتحويل من الكلام إلى نص ومن النص إلى صوت ووكلاء صوتيين لحظيين، مع العربية والإنجليزية واكتشاف اللهجات والمزج بين اللغتين وأكثر من 15 لهجة وإقامة بيانات داخل المملكة. رابط التغذية يقود إلى خبر في الشرق الأوسط عبر Google News، لكن متن المقال لم يكن متاحًا كاملًا؛ لذلك يقتصر الإثراء على خصائص المنتج الرسمية.",
+      "whyItMatters": "قد يوفّر خيارًا عربيًا أولًا لخدمة العملاء والتعليم والمساعدات الصوتية. ينبغي مقارنة الدقة وزمن الاستجابة والتكلفة على عينات لهجية قبل اعتماده.",
+      "audience": "مطورو التطبيقات الصوتية وفرق خدمة العملاء والجهات التعليمية.",
+      "nextSteps": [
+        "راجع وثائق API وسياسة البيانات قبل إدخال بيانات حقيقية.",
+        "اختبر عينات لهجية بموافقة أصحابها وقس الدقة والزمن.",
+        "قارن التكلفة مع بدائل صوتية."
+      ],
+      "limitations": "لم أقرأ متن مقال الشرق الأوسط كاملًا؛ هذه خلاصة المنتج من الصفحات الرسمية لا تحقق مستقل لتفاصيل الإعلان. لم أتمكن من قراءة تقرير الخبر الأصلي كاملًا؛ راجعت صفحة HUMAIN الرسمية، لذلك basis=metadata والقدرات المذكورة تظل ادعاءات الجهة المطوّرة.",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "HUMAIN — Intelligence Voice",
+          "url": "https://www.humain.com/en/voice"
+        },
+        {
+          "title": "HUMAIN Voice — Developer portal",
+          "url": "https://voice.humain.com/"
+        },
+        {
+          "title": "الشرق الأوسط — رابط Feed",
+          "url": "https://news.google.com/rss/articles/CBMijwVBVV95cUxNemc1ZVlHQW9ITlR4czdaZDR6WGZFRGMxNHd1TWpabGJjQ0FjTk1VWE52bnk1ZDBZTDAzZFRlSUZYUnhLY0FCdnBZREhhdWhBQ05tVGlQZ2xacGpLQmpBbXB2bjRQSEM3eEg1eG5iaHEzS21mU3hfX3VCdDVQSWtpNXBvd0dmMXYwUFlMU0xtaUh2Ujc5N0dLZ3AyNDJuaC1hd1pKV0JPUXZKb1NVMGU2S2Z3STE2ZF9CdjNidHhPVmd4RDNNUVZZVGY4MUVJS01SZndGOTk1bTZOb2FrMzRHTzdDRlF5RzRiM1ZkQTBMU2xrZWJiTVZSSzZadFBzZG9FM29EODM4a3dDWGYwZ1FrY0FjbUFkaFFVa094Nmw0N1Rub0x1LUN1MjB2ZGpKbS1oS01od3IzRHh5OVhHQTBWU244bVhFV3RYZC0wdHhEdnlqYnc4YlVBNzJsbjhTdWFxdHMyNHhwZW1LQzJsV29kbnZueGZXVEptYnhYeUdDb3pnSm9MNHA5VkU4bDVDYm5ORTd5Mm4zQW9Vd3B2VU5nUGZ0MzZHbEtuUmZsbjh3UGVUMk9fOXZyMkQ0bUpyUHllZmpQNUxoVW1SOHEwZkI3OVpPclZKTUVZaklmUm5TNUVZTWVMQ3g4WjdtRUJvTnNzclVEdFhYblZxLU0yRk9OWWwyTjVaUkFkSTdZeE5jZ3VsMXhrbzd3bFVtVGNQMnBlMWtYT0lLdFEybGEwOWJOT0RtdUxPWGNqdWFRaUJRbU1NdkxzMjA4dEkzVU5UUGdWaVlFWUZfS0RUbEgtVkppWk5Wdm5jWkZPZDE4NU5La1hzZGUxUXpLQnZIaWF3QUJqYlpIWFZXRHk3R3FyX1pr?oc=5"
+        }
+      ],
+      "reviewedAt": "2026-11-20T00:37:02+03:00"
+    },
+    "607807410ad5227362": {
+      "url": "https://www.theverge.com/tech/1037535/google-blue-origin-project-suncatcher-2029",
+      "titleAr": "غوغل تتعاون مع Blue Origin لإطلاق أقمار خوادم ذكاء اصطناعي في 2029",
+      "summaryAr": "أعلنت Google وBlue Origin عن إطلاق ثقيل مخصص في الربع الأول من 2029 ضمن Project Suncatcher. تقول Google إن صاروخ New Glenn سيضع أقمارًا مزودة بوحدات TPU في مدار متزامن مع الشمس، وإن سعة كل قمر تقارب رفًا واحدًا من مركز بيانات. الخبر يصف خطة مستقبلية، لا مركز بيانات فضائيًا يعمل تجاريًا الآن.",
+      "whyItMatters": "إذا نجح المشروع فقد يفتح مسارًا جديدًا للاستفادة من الطاقة الشمسية المدارية في الحوسبة. لكن الجدوى ستعتمد على الطاقة والتبريد والاتصالات والصيانة والتكلفة؛ وهذه أسئلة مفتوحة وليست نتائج مثبتة.",
+      "audience": "طلاب الذكاء الاصطناعي وهندسة الحوسبة والفضاء والبنية التحتية.",
+      "nextSteps": [
+        "تابع نتائج اختبارات الأقمار والاتصال والطاقة قبل تقييم التوسع التجاري.",
+        "قارن متطلبات الطاقة والتبريد والاتصال مع مراكز البيانات الأرضية."
+      ],
+      "limitations": "موعد الإطلاق المستهدف هو الربع الأول من 2029؛ السعة المذكورة تقريبية ومنسوبة إلى Google. لا يتضمن الإعلان تكلفة تشغيل أو نتائج تشغيل تجاري.",
+      "reviewedAt": "2026-11-20T00:37:02+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "The Verge — Blue Origin will launch Google’s AI server satellites in 2029",
+          "url": "https://www.theverge.com/tech/1037535/google-blue-origin-project-suncatcher-2029"
+        },
+        {
+          "title": "Google — Project Suncatcher and Blue Origin partnership",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/blue-origin-project-suncatcher-partnership/"
+        }
+      ]
+    },
+    "44f76fbba2d3881574": {
+      "url": "https://aitnews.com/2026/11/19/%d9%86%d9%85%d8%a7%d8%b0%d8%ac-openai-%d8%aa%d8%ad%d8%b3%d9%91%d9%86-%d8%aa%d8%b5%d9%85%d9%8a%d9%85-%d8%af%d9%88%d8%a7%d8%a6%d8%b1-amd-%d8%a7%d9%84%d8%b1%d8%b3%d9%88%d9%85%d9%8a%d8%a9-%d8%a8%d9%86/",
+      "titleAr": "نماذج OpenAI تساعد في تحسين تصميم شرائح AMD بنسبة تصل إلى 14%",
+      "summaryAr": "تقول OpenAI إنها تعاونت مع AMD لتحسين مؤشرات القدرة والأداء والمساحة (PPA) في تصميم GPU، مع تحسن يصل إلى 14% مقارنة بخط أساس وصفته بأنه محسّن بشدة. وتقول الشركة إن بعض التعديلات أُدرجت في تصميم أُرسل للتصنيع، واستخدمت أدوات Synopsys للتحقق من الحفاظ على السلوك الوظيفي. الأرقام والتوصيف من OpenAI.",
+      "whyItMatters": "قد يوسّع استخدام النماذج من كتابة الشيفرة إلى تصميم دوائر رقمية بمساعدة أدوات تحقق هندسية. المهم هو إدماج النماذج في دورة تصميم قابلة للاختبار، لا اعتبارها بديلًا عن المهندسين.",
+      "audience": "مهندسو الحاسوب والدوائر الرقمية والذكاء الاصطناعي ومتابعو صناعة الرقائق.",
+      "nextSteps": [
+        "قارن نتائج PPA مع خطوط أساس مستقلة إذا نُشرت تفاصيل إضافية.",
+        "تابع ما إذا كانت النتائج تتكرر على تصميمات ومهام أخرى."
+      ],
+      "limitations": "المصدر الأساسي هو إعلان OpenAI؛ لا يحدد المقال المنتجات أو القياسات التفصيلية لكل كتلة، ولا يقدم مراجعة مستقلة شاملة. تعذر فتح صفحة AITNews في هذه الجولة.",
+      "reviewedAt": "2026-11-20T00:37:02+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "OpenAI — Advancing chip design with OpenAI models",
+          "url": "https://openai.com/index/advancing-chip-design-with-our-models/"
+        },
+        {
+          "title": "البوابة العربية للأخبار التقنية — نماذج OpenAI تحسّن تصميم دوائر AMD",
+          "url": "https://aitnews.com/2026/11/19/%d9%86%d9%85%d8%a7%d8%b0%d8%ac-openai-%d8%aa%d8%ad%d8%b3%d9%91%d9%86-%d8%aa%d8%b5%d9%85%d9%8a%d9%85-%d8%af%d9%88%d8%a7%d8%a6%d8%b1-amd-%d8%a8%d9%86/"
+        }
+      ]
+    },
+    "db895de00b77372a93": {
+      "url": "https://techcrunch.com/2026/11/19/superhuman-pushes-its-go-assistant-everywhere/",
+      "titleAr": "Superhuman توسّع مساعد Go داخل Docs وMail وتضيف 20 وكيلًا متصلًا",
+      "summaryAr": "بحسب TechCrunch، توسّع الشركة مساعد Go ليعمل داخل Docs وMail، وتضيف 20 تكاملًا لوكلاء وخدمات مثل DeepL وLegora وAmplitude وDatabricks وBlackboard. ويستخدم Go سياق الأدوات المتصلة لاقتراح النصوص وتنظيم البريد وتشغيل مهام في الخلفية. قال الرئيس التنفيذي إن عدد المستخدمين النشطين تجاوز مليونًا؛ وهذا رقم منسوب إلى الشركة.",
+      "whyItMatters": "يعكس انتقال المساعدات من نافذة محادثة منفصلة إلى سياق العمل والملفات والبريد. هذا قد يزيد الفائدة، لكنه يجعل ضبط الصلاحيات ومراجعة المحتوى قبل إرساله أكثر أهمية.",
+      "audience": "الطلاب والمطورون والفرق التي تقيّم أدوات الإنتاجية والوكلاء.",
+      "nextSteps": [
+        "راجع صلاحيات كل موصل قبل ربط حسابات العمل.",
+        "اختبر الاقتراحات في مستندات تجريبية وتحقق من المحتوى قبل الإرسال."
+      ],
+      "limitations": "مليون مستخدم رقم ذكره الرئيس التنفيذي ولم يتحقق منه مستقلًا. توافر التكاملات قد يختلف حسب الخطة والمنطقة، والمقال لا يثبت دقة كل وكيل.",
+      "reviewedAt": "2026-11-19T21:25:33+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — Superhuman pushes its Go assistant everywhere",
+          "url": "https://techcrunch.com/2026/11/19/superhuman-pushes-its-go-assistant-everywhere/"
+        },
+        {
+          "title": "Superhuman — Go assistant",
+          "url": "https://superhuman.com/go"
+        }
+      ]
+    },
+    "e55c8f2df06c07ffc9": {
+      "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
+      "titleAr": "دراسة Dharma-AI تتنبأ بزمن ضبط النماذج بدقة أعلى من تقدير FLOPs في عينة H200",
+      "summaryAr": "حلل فريق Dharma-AI عدد 272 عملية ضبط خاضع للإشراف (SFT) على وحدات H200 بإجمالي 7,382 ساعة GPU. في تحقق متقاطع من خمس طيات، سجل CatBoost قيمة R² تقارب 0.98 ومتوسط خطأ مطلق 1.71 ساعة، مقابل 12.41 ساعة لخط أساس FLOPs في الإعداد المقارن. استخدم النموذج خصائص مثل التقييم والحفظ وحجم النموذج وتخصيص GPU.",
+      "whyItMatters": "تخطيط زمن التدريب يحتاج احتساب التحميل والتقييم ونقاط الحفظ وتنافس التخزين والشبكة، لا الحساب النظري وحده. قد يساعد هذا النوع من النماذج في جدولة موارد GPU وتقليل عدم اليقين.",
+      "audience": "مهندسو تعلم الآلة وMLOps ومديرو عناقيد GPU وطلاب أنظمة التدريب.",
+      "nextSteps": [
+        "اختبر الفكرة على سجلات تشغيلك قبل اعتمادها في الجدولة.",
+        "قارن النتائج بخط أساس FLOPs على العينة نفسها.",
+        "راقب الأداء على أنواع GPU ومهام تدريب مختلفة."
+      ],
+      "limitations": "العينة 272 عملية SFT من مجموعة تشغيل واحدة على H200؛ لا تشمل RLHF أو DPO أو RLVR. كان عدد التشغيلات التي تجاوزت 60 ساعة قليلًا، والورقة الكاملة ما زالت قادمة.",
+      "reviewedAt": "2026-11-20T00:37:02+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Hugging Face — Why your fine-tuning job takes longer than the FLOPs say",
+          "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time"
+        }
+      ]
+    },
+    "662045f579cfb2e238": {
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQVy12aDVhTzcyeUJxYUFoaFp0eXlHVmtkQ0VCNHQxdUpJRmxyMUZnMW50VG1EZzFkV1dXeGNSMW5oWlY3aG5Pb0hlTUNLVHZCM3Z2U08wbUhuWFFoOThCSGw1cEI0bEE3T1ctZ2hGbkpJSHctS3c0R2tiSEgwOHhFNWRQZXdMLXdfRm5hYmdXdGxoT2tB?oc=5",
+      "titleAr": "AWS تطرح معاينة المطورين من SDK Python v4 بعملاء متزامنين وغير متزامنين",
+      "summaryAr": "أعلنت AWS عن نسخة معاينة مطورين من SDK Python v4، بعملاء نمطيين لكل خدمة، وتعليقات نوعية مولدة من نماذج الخدمات، ودعم متزامن وغير متزامن. بعض تدفقات الأحداث متاحة في العملاء غير المتزامنين فقط. يتطلب البدء Python 3.12 أو أحدث وحساب AWS وبيانات اعتماد ومنطقة، وتوصي AWS بالاستمرار على Boto3 في أحمال الإنتاج حتى الإصدار العام.",
+      "whyItMatters": "يوفر التصميم النمطي والدعم غير المتزامن خيارات أفضل لتطبيقات Python عالية التزامن، لكنه لا يبرر ترحيل مشاريع الإنتاج قبل استقرار الواجهة والتوافق.",
+      "audience": "مطورو Python وAWS وفرق Backend.",
+      "nextSteps": [
+        "جرّب SDK في مشروع تجريبي وببيانات غير حساسة.",
+        "قارن الواجهة والتوافق مع Boto3 قبل أي ترحيل.",
+        "تابع تغييرات المعاينة حتى الإصدار العام."
+      ],
+      "limitations": "الإصدار Developer Preview؛ يتطلب Python 3.12 أو أحدث؛ بعض Event Streaming متاح في العملاء غير المتزامنين فقط. توصي AWS باستخدام Boto3 في الإنتاج حاليًا.",
+      "reviewedAt": "2026-11-20T00:37:02+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "AWS Developer Tools Blog — AWS SDK for Python v4 developer preview",
+          "url": "https://aws.amazon.com/blogs/developer/announcing-developer-preview-aws-sdk-for-python-v4/"
+        },
+        {
+          "title": "AWS SDK for Python v4 — Developer Guide",
+          "url": "https://docs.aws.amazon.com/sdk-for-python/v4/guide/"
+        }
+      ]
+    },
+    "f91b7c614ab8def43a": {
+      "url": "https://aitnews.com/2026/11/19/java4shell-exploitation-attempts-security-updates/",
+      "titleAr": "ثغرة Java4Shell في OpenJDK تستدعي تثبيت تحديثات نوفمبر",
+      "summaryAr": "تتناول المصادر الأمنية خللًا في مسار Base64 ضمن OpenJDK أُطلق عليه Java4Shell. يوضح تنبيه Sophos نطاق الإصدارات المتأثرة والإصدارات المصححة، ويذكر عدم رصد استغلال عام معروف وقت نشره. لا يكفي عنوان الخبر وحده لإثبات وجود استغلال نشط؛ الإجراء العملي هو مراجعة إصدار Java المثبت وتطبيق تحديث المورّد المناسب.",
+      "whyItMatters": "قد يؤثر الخلل في خدمات Java التي تعتمد على الإصدارات المتأثرة، لذا يفيد مسؤولي الأنظمة ومطوري Java التحقق من الإصدار والتحديث بدل الاعتماد على وصف صحفي أو افتراض وجود اختراق.",
+      "audience": "مطورو Java، مسؤولو الأنظمة، وفرق أمن التطبيقات.",
+      "nextSteps": [
+        "تحقق من إصدار Java/OpenJDK المستخدم في كل خدمة.",
+        "راجع جدول الإصدارات المتأثرة والمصححة لدى المورّد.",
+        "طبّق تحديث المورّد واختبر توافق التطبيق في بيئة مرحلية."
+      ],
+      "limitations": "لم أتمكن من قراءة متن تقرير AITnews الأصلي مباشرة؛ هذه الصياغة مبنية على التنبيهات الرسمية/الأمنية المرتبطة. لا يوجد في المصادر التي راجعتها إثبات لاستغلال عام وقت النشر، ولا تتضمن هذه الخلاصة خطوات استغلال.",
+      "reviewedAt": "2026-11-20T00:37:02+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "تقرير AITnews الأصلي — Java4Shell",
+          "url": "https://aitnews.com/2026/11/19/java4shell-exploitation-attempts-security-updates/"
+        },
+        {
+          "title": "Sophos Security Advisory — Java4Shell",
+          "url": "https://www.sophos.com/en-us/security-advisories/sophos-sa-20261118-java4shell"
+        },
+        {
+          "title": "Oracle Critical Patch Update — November 2026",
+          "url": "https://www.oracle.com/security-alerts/cspunov2026.html"
+        }
+      ]
+    },
+    "c263b280fabbf4887d": {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1037126/canva-ai-features-off-button",
+      "titleAr": "Canva تضيف إعدادًا لإيقاف معظم ميزات الذكاء الاصطناعي التوليدي",
+      "summaryAr": "أعلنت Canva عن مفتاح يوقف ميزات توليدية مثل Magic Write وMagic Design وDream Lab وCanva Code، مع خيار منفصل لتقليل ظهور المحتوى المولّد في مكتبتها. تقول الشركة إن الخيارين متاحان لمستخدمي Free وPro دون تكلفة إضافية. تبقى أدوات تحرير مساعدة مثل إزالة الخلفية وMagic Grab متاحة لأنها تعدّل محتوى موجودًا.",
+      "whyItMatters": "يعطي الإعداد المستخدم تحكمًا أكبر في ظهور أدوات التوليد وفي نتائج مكتبة التصميم، ويفصل بين توليد محتوى جديد والتحرير المساعد.",
+      "audience": "مصممو المحتوى والطلاب والمعلمون ومستخدمو Canva.",
+      "nextSteps": [
+        "راجع إعداد Enable generative AI features من إعدادات الحساب.",
+        "ميّز بين إيقاف التوليد وتقليل المحتوى المولّد وبين إعدادات الخصوصية واستخدام البيانات."
+      ],
+      "limitations": "القائمة الدقيقة للأدوات قد تتغير. تقول Canva إن المكتبة تحتوي نسبة صغيرة من المحتوى المولّد دون نشر قياس مستقل؛ وإيقاف التوليد لا يعطل كل أدوات الذكاء الاصطناعي المساعدة.",
+      "reviewedAt": "2026-11-19T21:25:33+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "The Verge — Canva adds an AI off button",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1037126/canva-ai-features-off-button"
+        },
+        {
+          "title": "Canva Newsroom — Introducing AI Controls",
+          "url": "https://www.canva.com/newsroom/news/ai-controls-canva/"
+        }
+      ]
+    },
+    "f629676ca2f94e3b99": {
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBKSzl6NU1meVZBYzBPb1Y1dzNRSmFqMEVRZHVWQXp3cTZsc1lPaVA0bUxzS3kzSW51VnlIX2VBS1U2RHJYUGc?oc=5",
+      "titleAr": "وزارة الاتصالات وهيئة الحكومة الرقمية تبحثان تسريع تبني السحابة والذكاء الاصطناعي الحكومي",
+      "summaryAr": "ذكرت وكالة الأنباء السعودية أن وزارة الاتصالات وهيئة الحكومة الرقمية عقدتا لقاءً تنفيذيًا في الرياض بالتعاون مع AWS لبحث تبني الحوسبة السحابية والذكاء الاصطناعي في القطاع الحكومي، ومناقشة سياسة السحابة أولًا وتجارب الجهات الحكومية ورفع الإنتاجية. الإعلان يصف لقاءً ومناقشات، وليس عقد شراء أو نشرًا فعليًا لخدمة محددة.",
+      "whyItMatters": "يربط تطور البنية السحابية بالتحول الحكومي والمهارات الرقمية؛ متابعة النتائج والمشاريع الفعلية أهم من الاكتفاء بإعلان الفعاليات.",
+      "audience": "الطلاب والمهتمون بالسحابة والذكاء الاصطناعي والقطاع الحكومي السعودي.",
+      "nextSteps": [
+        "تابع إعلانات الجهات عن المشاريع والسياسات والبرامج التدريبية الناتجة عن اللقاء.",
+        "راقب مؤشرات التبني والحوكمة وحماية البيانات بدل افتراض تنفيذ فوري."
+      ],
+      "limitations": "بيان واس لا يذكر عقودًا أو ميزانية أو مؤشرات نتائج؛ والمشاركة مع AWS لا تعني أن جميع الجهات ستستخدم خدمة بعينها. لم يظهر متن صفحة SPA مباشرة في قارئ الصفحة؛ أساس التلخيص هو النص الرسمي المعروض في نتيجة البحث، لذلك أبقيت basis=metadata.",
+      "reviewedAt": "2026-11-20T00:37:02+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "وكالة الأنباء السعودية — لقاء حكومي لتعزيز تبني الحوسبة السحابية والذكاء الاصطناعي",
+          "url": "https://www.spa.gov.sa/N2730782"
+        },
+        {
+          "title": "Google News — رابط الخلاصة الأصلي",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBKSzl6NU1meVZBYzBPb1Y1dzNRSmFqMEVRZHVWQXp3cTZsc1lPaVA0bUxzS3kzSW51VnlIX2VBS1U2RHJYUGc?oc=5"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-20T14:43:32+03:00",
+  "sourceMain": "8ea97cdf3216ee6b3eef851efe203e360c818703",
+  "feedGeneratedAt": "2026-11-20T11:31:41+00:00",
+  "incomingAudit": {
+    "files": 145,
+    "recordOccurrences": 1517,
+    "exactCurrentFeedOccurrences": 195,
+    "exactCurrentFeedNotImported": 0,
+    "occurrencesAlreadyPresentInEditorial": 1346,
+    "staleOccurrences": 1322,
+    "staleButIdAlreadyInEditorial": 1151,
+    "staleNotInEditorial": 171,
+    "idPresentButUrlMismatch": 0,
+    "invalidFiles": 0,
+    "countsAreOccurrencesNotUniquePairs": true,
+    "note": "All 145 Main editorial/incoming JSON files were parsed. Each record ID and URL was compared literally to current Feed and Editorial; repeated appearances across files are counted as occurrences."
+  },
+  "specialRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "name": "NVIDIA OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "incoming": true,
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "action": "Keep pending; no replacement identity."
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "name": "Canva Craft",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "incoming": true,
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "action": "Keep pending; no replacement identity."
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "name": "1Password agent sign-in",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "incoming": true,
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "action": "Keep pending; no replacement identity."
+    }
+  ],
+  "prPending": [
+    {
+      "id": "21c18831fcc7a86452",
+      "url": "https://verialabs.com/ruby2shell/",
+      "titleAr": "تحديثات Ruby تعالج سبع ثغرات أمنية بينها خلل Ruby2Shell",
+      "incoming": true,
+      "feed": false,
+      "action": "Excluded from the corrected Editorial and import batch; retain original record pending Feed reappearance or source correction."
+    }
+  ],
+  "decision": "No Main Incoming record needs import: every exact current Feed match is already represented in Editorial. PR #114 has 24 exact new news entries and three exact project refreshes; one Ruby2Shell entry is outside current Feed and excluded. AI Engineering Hub is refreshed using its original Feed ID."
+}

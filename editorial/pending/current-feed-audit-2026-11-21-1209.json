@@ -1,0 +1,348 @@
+{
+  "version": 1,
+  "reportType": "pending_current_feed_reconciliation",
+  "reviewedAt": "2026-11-21T12:09:02+03:00",
+  "source": {
+    "mainSha": "25c212ec6ee5dde3a85b92116d3005b14b0c5e47",
+    "prHeadSha": "46befd99d62786717826a550ed1df5908cff0979",
+    "feedSha": "f9972fca8e7e4a08a74eb2dc56739d0a24a367d3",
+    "mainEditorialSha": "c65c4943a766a83dcb06b00965d4ce714f5c44e6",
+    "prEditorialSha": "a2a6a3494ad64c89e1e09d3cd7e4d81d066e7580"
+  },
+  "snapshot": {
+    "feedGeneratedAt": "2026-11-21T02:11:40+00:00",
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "mainEditorialItems": 1129,
+    "mainEditorialActiveExact": {
+      "news": 31,
+      "projects": 100,
+      "total": 131
+    },
+    "mainEditorialOutsideCurrentFeed": 998,
+    "prEditorialItems": 1182,
+    "prEditorialAdditions": 53,
+    "oldIdsLost": 0,
+    "oldFieldsLost": 0,
+    "oldEntriesChanged": 4,
+    "prEditorialNewActiveExact": 42,
+    "prEditorialNewOutsideCurrentFeed": 11
+  },
+  "mainIncomingAudit": {
+    "files": 145,
+    "occurrences": 1517,
+    "currentFeedExactOccurrences": 181,
+    "alreadyInMainEditorial": 181,
+    "pendingExact": 0,
+    "urlMismatches": 0,
+    "outsideCurrentFeedOccurrences": 1336,
+    "expiryStatus": "not determined from current feed absence alone"
+  },
+  "prAdditionalIncomingAudit": {
+    "files": 9,
+    "occurrences": 101,
+    "uniqueIdUrlPairs": 62,
+    "duplicateOccurrences": 39,
+    "currentFeedExactOccurrences": 79,
+    "outsideCurrentFeedOccurrences": 22,
+    "outsideCurrentFeedUniquePairs": 12,
+    "exactMatchesAlreadyInPrEditorial": 75,
+    "exactMatchesPending": 4,
+    "urlMismatches": 0
+  },
+  "outOfFeedRecords": [
+    {
+      "id": "607807410ad5227362",
+      "url": "https://www.theverge.com/tech/1037535/google-blue-origin-project-suncatcher-2029",
+      "titleAr": "غوغل تتعاون مع Blue Origin لإطلاق أقمار خوادم ذكاء اصطناعي في 2029",
+      "basis": "article",
+      "reviewedAt": [
+        "2026-11-20T00:37:02+03:00"
+      ],
+      "incomingFiles": [
+        "editorial/incoming/nabdh-import-2026-11-20-1443.json",
+        "editorial/incoming/nabdh-news-2026-11-20-0037.json"
+      ],
+      "prEditorialPresent": true,
+      "mainEditorialPresent": false,
+      "currentFeedMatch": false,
+      "expiryStatus": "unconfirmed",
+      "decision": "keep original id+url in pending; do not import while absent from current feed"
+    },
+    {
+      "id": "5fe21d2b4ecab0b0d1",
+      "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+      "titleAr": "Anthropic تقول إن Claude Fable 5.2 ساعد في حل مسألتين نظريتين في فيزياء الثقوب السوداء",
+      "basis": "article",
+      "reviewedAt": [
+        "2026-11-20T00:37:02+03:00"
+      ],
+      "incomingFiles": [
+        "editorial/incoming/nabdh-import-2026-11-20-1443.json",
+        "editorial/incoming/nabdh-news-2026-11-20-0037.json"
+      ],
+      "prEditorialPresent": true,
+      "mainEditorialPresent": false,
+      "currentFeedMatch": false,
+      "expiryStatus": "unconfirmed",
+      "decision": "keep original id+url in pending; do not import while absent from current feed"
+    },
+    {
+      "id": "a9933de7f7b7b31206",
+      "url": "https://www.wired.com/story/google-built-a-giant-mirror-dimension-internet-to-test-its-chrome-ai-agents/",
+      "titleAr": "Google تبني بيئة إنترنت اصطناعية لاختبار وكلاء Chrome قبل الويب الحقيقي",
+      "basis": "article",
+      "reviewedAt": [
+        "2026-11-20T00:37:02+03:00"
+      ],
+      "incomingFiles": [
+        "editorial/incoming/nabdh-import-2026-11-20-1443.json",
+        "editorial/incoming/nabdh-news-2026-11-20-0037.json"
+      ],
+      "prEditorialPresent": true,
+      "mainEditorialPresent": false,
+      "currentFeedMatch": false,
+      "expiryStatus": "unconfirmed",
+      "decision": "keep original id+url in pending; do not import while absent from current feed"
+    },
+    {
+      "id": "534016fa5cae687038",
+      "url": "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use",
+      "titleAr": "Gemini على macOS يحصل على قدرة استخدام الحاسوب لتنفيذ مهام متعددة الخطوات",
+      "basis": "article",
+      "reviewedAt": [
+        "2026-11-20T00:37:02+03:00"
+      ],
+      "incomingFiles": [
+        "editorial/incoming/nabdh-import-2026-11-20-1443.json",
+        "editorial/incoming/nabdh-news-2026-11-20-0037.json"
+      ],
+      "prEditorialPresent": true,
+      "mainEditorialPresent": false,
+      "currentFeedMatch": false,
+      "expiryStatus": "unconfirmed",
+      "decision": "keep original id+url in pending; do not import while absent from current feed"
+    },
+    {
+      "id": "f91b7c614ab8def43a",
+      "url": "https://aitnews.com/2026/11/19/java4shell-exploitation-attempts-security-updates/",
+      "titleAr": "ثغرة Java4Shell في OpenJDK تستدعي تثبيت تحديثات نوفمبر",
+      "basis": "metadata",
+      "reviewedAt": [
+        "2026-11-20T00:37:02+03:00"
+      ],
+      "incomingFiles": [
+        "editorial/incoming/nabdh-import-2026-11-20-1443.json",
+        "editorial/incoming/nabdh-news-2026-11-20-0037.json"
+      ],
+      "prEditorialPresent": true,
+      "mainEditorialPresent": false,
+      "currentFeedMatch": false,
+      "expiryStatus": "unconfirmed",
+      "decision": "keep original id+url in pending; do not import while absent from current feed"
+    },
+    {
+      "id": "fa5917e879d29a8bbf",
+      "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+      "titleAr": "إدراج Anthropic يضع تقييمها المخفف قرب تريليوني دولار مع تراجع السهم بعد الافتتاح",
+      "basis": "article",
+      "reviewedAt": [
+        "2026-11-20T02:46:24+03:00",
+        "2026-11-19T23:39:43+03:00"
+      ],
+      "incomingFiles": [
+        "editorial/incoming/nabdh-import-2026-11-20-1443.json",
+        "editorial/incoming/nabdh-news-2026-11-20-0037.json"
+      ],
+      "prEditorialPresent": true,
+      "mainEditorialPresent": false,
+      "currentFeedMatch": false,
+      "expiryStatus": "unconfirmed",
+      "decision": "keep original id+url in pending; do not import while absent from current feed"
+    },
+    {
+      "id": "c263b280fabbf4887d",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1037126/canva-ai-features-off-button",
+      "titleAr": "Canva تضيف مفتاحًا لإيقاف معظم ميزات الذكاء الاصطناعي التوليدي",
+      "basis": "article",
+      "reviewedAt": [
+        "2026-11-20T02:46:24+03:00",
+        "2026-11-19T21:25:33+03:00"
+      ],
+      "incomingFiles": [
+        "editorial/incoming/nabdh-import-2026-11-20-1443.json",
+        "editorial/incoming/nabdh-news-2026-11-20-0037.json"
+      ],
+      "prEditorialPresent": true,
+      "mainEditorialPresent": false,
+      "currentFeedMatch": false,
+      "expiryStatus": "unconfirmed",
+      "decision": "keep original id+url in pending; do not import while absent from current feed"
+    },
+    {
+      "id": "e39600edda0e5accc0",
+      "url": "https://thedataexchange.media/pete-warden-moonshine/",
+      "titleAr": "حوار مع Pete Warden حول الذكاء الاصطناعي المحلي والنماذج الصوتية منخفضة التأخير",
+      "basis": "metadata",
+      "reviewedAt": [
+        "2026-11-20T06:35:29+03:00"
+      ],
+      "incomingFiles": [
+        "editorial/incoming/nabdh-import-2026-11-20-1443.json",
+        "editorial/incoming/nabdh-news-2026-11-20-1009.json"
+      ],
+      "prEditorialPresent": true,
+      "mainEditorialPresent": false,
+      "currentFeedMatch": false,
+      "expiryStatus": "unconfirmed",
+      "decision": "keep original id+url in pending; do not import while absent from current feed"
+    },
+    {
+      "id": "0d99ee3888cb9d4af2",
+      "url": "https://blog.python.org/2026/11/transifex-sponsors-python-docs/",
+      "titleAr": "Python تعلن رعاية لمدة 12 شهرًا لدعم فرق ترجمة التوثيق عبر Transifex",
+      "basis": "article",
+      "reviewedAt": [
+        "2026-11-20T17:45:43+03:00",
+        "2026-11-20T15:10:43+03:00"
+      ],
+      "incomingFiles": [
+        "editorial/incoming/nabdh-import-2026-11-20-1745.json",
+        "editorial/incoming/nabdh-news-2026-11-20-1510.json"
+      ],
+      "prEditorialPresent": true,
+      "mainEditorialPresent": false,
+      "currentFeedMatch": false,
+      "expiryStatus": "unconfirmed",
+      "decision": "keep original id+url in pending; do not import while absent from current feed"
+    },
+    {
+      "id": "519de22d67ea32a39f",
+      "url": "https://github.com/openjdk/jdk/pull/32781",
+      "titleAr": "OpenJDK PR 32781 يعالج حالة طرفية في فك Base64 عبر AVX-512؛ وليس Java4Shell",
+      "basis": "article",
+      "reviewedAt": [
+        "2026-11-20T17:45:43+03:00",
+        "2026-11-20T15:10:43+03:00"
+      ],
+      "incomingFiles": [
+        "editorial/incoming/nabdh-import-2026-11-20-1745.json",
+        "editorial/incoming/nabdh-news-2026-11-20-1510.json"
+      ],
+      "prEditorialPresent": true,
+      "mainEditorialPresent": false,
+      "currentFeedMatch": false,
+      "expiryStatus": "unconfirmed",
+      "decision": "keep original id+url in pending; do not import while absent from current feed"
+    },
+    {
+      "id": "21c18831fcc7a86452",
+      "url": "https://verialabs.com/ruby2shell/",
+      "titleAr": "تحديثات Ruby تعالج سبع ثغرات أمنية بينها خلل Ruby2Shell",
+      "basis": "article",
+      "reviewedAt": [
+        "2026-11-20T06:35:29+03:00"
+      ],
+      "incomingFiles": [
+        "editorial/incoming/nabdh-news-2026-11-20-1009.json"
+      ],
+      "prEditorialPresent": false,
+      "mainEditorialPresent": false,
+      "currentFeedMatch": false,
+      "expiryStatus": "unconfirmed",
+      "decision": "keep original id+url in pending; do not import while absent from current feed"
+    },
+    {
+      "id": "c50a064b65c55ff5ed",
+      "url": "https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine",
+      "titleAr": "مقال رأي ينتقد اعتماد الشركات الصغيرة على مزادات الإعلانات الرقمية",
+      "basis": "article",
+      "reviewedAt": [
+        "2026-11-20T18:13:13+03:00"
+      ],
+      "incomingFiles": [
+        "editorial/incoming/nabdh-news-2026-11-20-1813.json"
+      ],
+      "prEditorialPresent": true,
+      "mainEditorialPresent": false,
+      "currentFeedMatch": false,
+      "expiryStatus": "unconfirmed",
+      "decision": "keep original id+url in pending; do not import while absent from current feed"
+    }
+  ],
+  "readyToImport": [
+    {
+      "id": "03b179946dd0e55198",
+      "url": "https://arxiv.org/abs/2611.21885",
+      "titleAr": "بحث يختبر قدرة نموذج لغوي على تعديل أوزانه بنفسه دون تدريب تقليدي",
+      "kind": "news",
+      "basis": "article",
+      "currentFeedExact": true,
+      "mainEditorialPresent": false,
+      "prEditorialPresent": false,
+      "structuralEquivalentCheck": "pass",
+      "officialValidate": "not_run",
+      "import": "not_run"
+    },
+    {
+      "id": "945d12baa1ef9bf958",
+      "url": "https://www.androidauthority.com/grapheneos-team-google-pressure-3737525/",
+      "titleAr": "GrapheneOS تزعم تعرضها لضغط من Google وتحذر من قيود محتملة على أنظمة Android البديلة",
+      "kind": "news",
+      "basis": "article",
+      "currentFeedExact": true,
+      "mainEditorialPresent": false,
+      "prEditorialPresent": false,
+      "structuralEquivalentCheck": "pass",
+      "officialValidate": "not_run",
+      "import": "not_run"
+    },
+    {
+      "id": "bf82adff4bf6ffb39c",
+      "url": "https://github.com/tristanbuckmaster/navier-stokes/",
+      "titleAr": "مستودع يرافق ادعاءً جديدًا بشأن معادلات Navier–Stokes بصياغة Lean مع فجوات تحقق معلنة",
+      "kind": "news",
+      "basis": "readme",
+      "currentFeedExact": true,
+      "mainEditorialPresent": false,
+      "prEditorialPresent": false,
+      "structuralEquivalentCheck": "pass",
+      "officialValidate": "not_run",
+      "import": "not_run"
+    },
+    {
+      "id": "d32b20a39c5cb2dedb",
+      "url": "https://www.nbcnews.com/business/markets/anthropic-shares-markets-selloff-nasdaq-rcna610394",
+      "titleAr": "تراجع أسهم Anthropic بعد أول يوم تداول قوي بالتزامن مع موجة بيع في أسهم التقنية",
+      "kind": "news",
+      "basis": "metadata",
+      "currentFeedExact": true,
+      "mainEditorialPresent": false,
+      "prEditorialPresent": false,
+      "structuralEquivalentCheck": "pass",
+      "officialValidate": "not_run",
+      "import": "not_run"
+    }
+  ],
+  "malformedIncoming": {
+    "file": "editorial/incoming/nabdh-news-2026-11-20-1813.json",
+    "envelopeKeys": [
+      "schemaVersion",
+      "reviewedAt",
+      "items"
+    ],
+    "schemaVersion": 1,
+    "version": null,
+    "items": 7,
+    "decision": "official validator expects version=1; keep unimported until corrected"
+  },
+  "decision": {
+    "importedThisRun": 0,
+    "officialValidateExecuted": false,
+    "officialImportExecuted": false,
+    "mergeToMain": false,
+    "publishVerified": false,
+    "reason": "No local execution environment; GitHub CI validates the PR Editorial file but not the pending incoming file. Eleven new PR Editorial IDs are outside the current Feed, so the PR needs a controlled reconciliation before merge."
+  }
+}

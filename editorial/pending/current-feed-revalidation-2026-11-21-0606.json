@@ -1,0 +1,196 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-21T06:06:29+03:00",
+  "main": {
+    "commit": "25c212ec6ee5dde3a85b92116d3005b14b0c5e47",
+    "feedSha": "f9972fca8e7e4a08a74eb2dc56739d0a24a367d3",
+    "editorialSha": "c65c4943a766a83dcb06b00965d4ce714f5c44e6",
+    "statusSha": "759863413680beaece0654061cb3db26a18a07df",
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialItems": 1129,
+    "collection": {
+      "state": "ok",
+      "lastSuccessfulAt": "2026-11-21T02:11:40+00:00",
+      "collected": 379,
+      "sources": 26
+    }
+  },
+  "incomingMain": {
+    "files": 145,
+    "appearances": 1517,
+    "structurallyParsedFiles": 145,
+    "exactIdUrlMatches": 181,
+    "alreadyImportedExactMatches": 181,
+    "eligibleNotImported": 0,
+    "urlMismatches": 0,
+    "outsideCurrentFeedAppearances": 1336,
+    "uniqueOutsidePairs": null,
+    "disposition": "pending_source_date_and_identity_review",
+    "note": "Do not classify every absent item as expired without a reliable publication date. Do not derive replacement IDs from titles."
+  },
+  "incomingPullRequest": {
+    "files": 9,
+    "appearances": 101,
+    "uniqueIdUrlPairs": 62,
+    "duplicateAppearances": 39,
+    "exactFeedMatchAppearances": 79,
+    "alreadyRepresentedInPrEditorial": 75,
+    "eligibleNotImportedAppearances": 4,
+    "uniqueEligibleRecords": 4,
+    "outsideFeedAppearances": 22,
+    "uniqueOutsidePairs": 12,
+    "urlMismatches": 0,
+    "eligible": [
+      {
+        "id": "03b179946dd0e55198",
+        "url": "https://arxiv.org/abs/2611.21885",
+        "basis": "article",
+        "status": "eligible_not_imported"
+      },
+      {
+        "id": "945d12baa1ef9bf958",
+        "url": "https://www.androidauthority.com/grapheneos-team-google-pressure-3737525/",
+        "basis": "article",
+        "status": "eligible_not_imported"
+      },
+      {
+        "id": "bf82adff4bf6ffb39c",
+        "url": "https://github.com/tristanbuckmaster/navier-stokes/",
+        "basis": "readme",
+        "status": "eligible_not_imported"
+      },
+      {
+        "id": "d32b20a39c5cb2dedb",
+        "url": "https://www.nbcnews.com/business/markets/anthropic-shares-markets-selloff-nasdaq-rcna610394",
+        "basis": "metadata",
+        "status": "eligible_not_imported"
+      }
+    ],
+    "invalidEnvelopeFiles": [
+      {
+        "path": "editorial/incoming/nabdh-news-2026-11-20-1813.json",
+        "problem": "Uses schemaVersion instead of version; 7 records; individual entries structurally valid; 6 match Feed and 1 is outside Feed; all 7 already represented in PR Editorial; hold file pending correction."
+      }
+    ]
+  },
+  "structuralEquivalent": {
+    "filesReviewed": 154,
+    "totalAppearances": 1618,
+    "validWrappers": 153,
+    "invalidWrappers": 1,
+    "entriesCheckedInValidWrappers": 1611,
+    "entriesPassing": 1611,
+    "entriesInInvalidWrapperCheckedIndividually": 7,
+    "individualEntriesPassing": 7,
+    "method": "Structural equivalent of scripts/editorial.py validate; not the official Python command."
+  },
+  "specialRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "name": "NVIDIA OpenShell",
+      "state": "seen_only",
+      "inFeed": false,
+      "inEditorial": false,
+      "disposition": "active_project_research_only",
+      "note": "Original NVIDIA/OpenShell URL now points to ai-openshell/openshell; current repository is active and Apache-2.0. Preserve original record identity; do not invent an ID."
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "name": "Canva Craft",
+      "state": "seen_only",
+      "inFeed": false,
+      "inEditorial": false,
+      "publishedAt": "2026-10-22",
+      "disposition": "expired_by_21_day_news_window"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "name": "1Password for Agents",
+      "state": "seen_only",
+      "inFeed": false,
+      "inEditorial": false,
+      "publishedAt": "2026-10-22",
+      "disposition": "expired_by_21_day_news_window"
+    }
+  ],
+  "projects": {
+    "feedCoverage": {
+      "projects": 100,
+      "editorialMatched": 100,
+      "newCards": 0
+    },
+    "historicalLibrary": {
+      "count": 31,
+      "active": 29,
+      "archived": 2,
+      "compiledAt": "2026-11-16T02:54:42+03:00"
+    },
+    "previousEight": {
+      "names": [
+        "AI Engineering Hub",
+        "Google Gen AI SDK",
+        "Lasm",
+        "MarkItDown",
+        "Minecraft Agent Harness",
+        "NVIDIA OpenShell",
+        "Pydantic AI",
+        "uv"
+      ],
+      "archived": 0,
+      "licenseFilesVerified": 8,
+      "licenseShasComparedUnchanged": 7,
+      "readmeChanged": 0,
+      "improvements": 18,
+      "spinoffs": 9,
+      "religiousNew": 0,
+      "proposalCompleteness": "27/27",
+      "note": "One existing religious idea remains in the AI Engineering Hub card; no new religious proposal was added."
+    },
+    "researchOnlyCandidates": [
+      "Onlook",
+      "FailTrace",
+      "Navier-Stokes Lean formalization"
+    ]
+  },
+  "pr": {
+    "number": 114,
+    "state": "open",
+    "baseSha": "25c212ec6ee5dde3a85b92116d3005b14b0c5e47",
+    "headSha": "6a1325e5e2d7936b0fa69b07ae24dd8c2fd3a880",
+    "branchUpdateCommit": "6a1325e5e2d7936b0fa69b07ae24dd8c2fd3a880",
+    "editorialMainRecordsPreserved": 1129,
+    "editorialPrRecords": 1182,
+    "addedRecords": 53,
+    "oldFieldsRemoved": 0,
+    "editorialFileFormat": "single-line minified; PR diff replaces the full file and is not an acceptable minimal import diff"
+  },
+  "validation": {
+    "latestPrRun": "https://github.com/lm7md-ai/.-/actions/runs/44860820493",
+    "ciConclusion": "success",
+    "unitTests": "30/30 passed in GitHub Actions",
+    "officialEditorialValidate": "Validated 1182 editorial entries in GitHub Actions",
+    "localValidateExecuted": false,
+    "localImportExecuted": false,
+    "localUnitTestsExecuted": false,
+    "reason": "No local repository checkout/execution environment was available; incoming files received structural-equivalent validation only."
+  },
+  "deployment": {
+    "mainRun": "https://github.com/lm7md-ai/.-/actions/runs/44854489628",
+    "conclusion": "failure",
+    "failedStep": "deploy-pages",
+    "detail": "Deployment failed, try again later.",
+    "publishedEditorialVerified": false,
+    "pagesDirectFetch": "DisabledError"
+  },
+  "safety": {
+    "mainFilesModifiedByThisRun": [],
+    "codeOrDesignModified": false,
+    "workflowsOrPublishSettingsModified": false,
+    "feedOrSeenModifiedByThisRun": false,
+    "paidServicesAdded": false,
+    "scheduleChanged": false,
+    "newAutomationCreated": false
+  }
+}

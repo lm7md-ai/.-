@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-21T04:11:56+03:00",
+  "sourceMainCommit": "bee1f473f509da67dc687cd08f2908d85cb8a61d",
+  "feedSnapshot": {
+    "blobSha": "d0ba77bcbb274478b5d15078418c08f12b4aa599",
+    "generatedAt": "2026-11-21T00:16:54+00:00",
+    "items": 800,
+    "news": 700,
+    "projects": 100
+  },
+  "editorialSnapshot": {
+    "mainBlobSha": "c65c4943a766a83dcb06b00965d4ce714f5c44e6",
+    "mainEntries": 1129,
+    "prEntries": 1182,
+    "missingMainIdsInPR": 0,
+    "removedOldFields": 0
+  },
+  "mainIncomingAudit": {
+    "files": 145,
+    "recordOccurrences": 1517,
+    "allJsonParsed": true,
+    "allVersionOneWithItemsObject": true,
+    "structuralEquivalentErrors": 0,
+    "exactFeedIdUrlOccurrences": 181,
+    "exactMatchesAlreadyInEditorial": 181,
+    "exactMatchesAwaitingImport": 0,
+    "idPresentInFeedUrlDifferent": 0,
+    "outsideCurrentFeedOccurrences": 1336,
+    "uniqueOutsideFeedPairsCurrentSnapshot": null,
+    "previousSnapshotUniqueOutsidePairs": 113,
+    "previousSnapshotPendingPairs": 112,
+    "previousSnapshotExpiredPairs": 1,
+    "expirationReconfirmed": false
+  },
+  "prOnlyIncomingAudit": {
+    "files": 9,
+    "recordOccurrences": 94,
+    "exactFeedIdUrlOccurrences": 73,
+    "alreadyInPREditorial": 69,
+    "exactAwaitingEditorialImport": 4,
+    "outsideCurrentFeedOccurrences": 21,
+    "duplicateIds": 39,
+    "duplicateOccurrences": 39,
+    "unmatchedIdentity": {
+      "id": "21c18831fcc7a86452",
+      "inFeed": false,
+      "inPREditorial": false,
+      "decision": "hold; do not create title-derived alias"
+    },
+    "invalidEnvelopeFile": {
+      "path": "editorial/incoming/nabdh-news-2026-11-20-1813.json",
+      "actualEnvelopeField": "schemaVersion",
+      "expectedEnvelopeField": "version",
+      "records": 7,
+      "alreadyInPREditorial": 7,
+      "feedExact": 6,
+      "outsideFeed": 1
+    }
+  },
+  "specialRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "name": "NVIDIA OpenShell",
+      "incoming": true,
+      "seen": true,
+      "feed": false,
+      "mainEditorial": false,
+      "prEditorial": false,
+      "decision": "hold"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "name": "Canva Craft",
+      "incoming": true,
+      "seen": true,
+      "feed": false,
+      "mainEditorial": false,
+      "prEditorial": false,
+      "decision": "hold"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "name": "1Password agent sign-in",
+      "incoming": true,
+      "seen": true,
+      "feed": false,
+      "mainEditorial": false,
+      "prEditorial": false,
+      "decision": "hold"
+    }
+  ],
+  "fourPreparedRecords": [
+    {
+      "id": "03b179946dd0e55198",
+      "url": "https://arxiv.org/abs/2611.21885",
+      "basis": "article",
+      "feedExact": true,
+      "structuralValidation": "passed"
+    },
+    {
+      "id": "945d12baa1ef9bf958",
+      "url": "https://www.androidauthority.com/grapheneos-team-google-pressure-3737525/",
+      "basis": "article",
+      "feedExact": true,
+      "structuralValidation": "passed"
+    },
+    {
+      "id": "bf82adff4bf6ffb39c",
+      "url": "https://github.com/tristanbuckmaster/navier-stokes/",
+      "basis": "readme",
+      "feedExact": true,
+      "structuralValidation": "passed"
+    },
+    {
+      "id": "d32b20a39c5cb2dedb",
+      "url": "https://www.nbcnews.com/business/markets/anthropic-shares-markets-selloff-nasdaq-rcna610394",
+      "basis": "metadata",
+      "feedExact": true,
+      "structuralValidation": "passed"
+    }
+  ],
+  "officialCommands": {
+    "localCheckout": "not_available_git_clone_dns_failure",
+    "validate": "not_run",
+    "import": "not_run",
+    "unitTests": "not_run_locally"
+  },
+  "mergeStatus": "not_imported_to_editorial_due_large_blob_write_transport_failure; records remain in Incoming",
+  "projects": {
+    "feedCoverage": {
+      "covered": 100,
+      "total": 100
+    },
+    "historicalLibrary": {
+      "count": 31,
+      "active": 29,
+      "archived": 2
+    },
+    "newProjectCards": 0,
+    "researchOnlyCandidates": [
+      "Onlook",
+      "FailTrace"
+    ],
+    "navierStokesResearchOnly": {
+      "license": null,
+      "certificateMissing": true,
+      "buildNotRun": true
+    }
+  },
+  "deployment": {
+    "latestMainRun": 44809152232,
+    "conclusion": "failure",
+    "testsAndValidate": "success",
+    "feedRefresh": "success",
+    "artifactUpload": "success",
+    "deploy": "failure",
+    "duplicateArtifactIds": [
+      14664507979,
+      14680749755
+    ],
+    "directPagesFetch": "DisabledError"
+  }
+}

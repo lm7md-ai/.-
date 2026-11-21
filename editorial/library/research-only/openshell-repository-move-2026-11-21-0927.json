@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Research-only refresh of the existing NVIDIA OpenShell library entry after the upstream repository transfer. This is not a new project, not a Feed card, and not published Editorial.",
+  "reviewedAt": "2026-11-21T14:40:33+03:00",
+  "metricsCapturedAt": "2026-11-21T11:40:33Z",
+  "sourceMainCommit": "2bcf5798e4e7461fd4fc26c02e4b16bbb5b5c8bd",
+  "identity": {
+    "legacySeenId": "940ec4695c1e241c2f",
+    "oldRepository": "NVIDIA/OpenShell",
+    "canonicalRepository": "ai-openshell/openshell",
+    "seenPresent": true,
+    "feedPresent": null,
+    "editorialPresent": false,
+    "countAsNewProject": false,
+    "historicalLibraryCount": 31,
+    "feedPresenceStatus": "not_revalidated_after_main_feed_refresh"
+  },
+  "project": {
+    "name": "NVIDIA OpenShell",
+    "repository": "ai-openshell/openshell",
+    "url": "https://github.com/ai-openshell/openshell",
+    "status": "active",
+    "archived": false,
+    "license": "Apache-2.0",
+    "readmeSha": "0752ddaf1385b78f39a08f8718268762d15db2d1",
+    "licenseSha": "f13d24c3fa482d61605d600e5ac1248799bd4107",
+    "metrics": {
+      "stars": 21847,
+      "forks": 2152,
+      "openIssues": 781,
+      "pushedAt": "2026-11-21T05:47:46Z",
+      "updatedAt": "2026-11-21T11:28:21Z",
+      "measuredAt": "2026-11-21T11:40:33Z",
+      "note": "GitHub counters are a timestamped snapshot, not a quality or growth measure.",
+      "latestCommit": "438e07b2312476c9057f3f7630fde31d29b6d377",
+      "latestCommitAt": "2026-11-21T02:31:37Z"
+    },
+    "overview": "OpenShell is an open-source runtime and gateway for autonomous agents. It provides isolated sandboxes, policy-controlled filesystem and network access, credential mediation, and policy review. The upstream README states that the project is now part of the CNCF and that development moved from NVIDIA/OpenShell to ai-openshell/openshell.",
+    "requirements": "Linux, macOS on Apple Silicon, or Windows with WSL 2 (experimental); Docker, Podman, or host virtualization. Kubernetes deployment uses Helm and requires a CNI that enforces NetworkPolicy. The default sandbox is minimal Ubuntu and does not include an agent.",
+    "quickStart": "Install the CLI and local gateway using the official installer, then create a disposable sandbox with `openshell sandbox create --name demo`. Follow the official Run Your First Agent guide to add an agent and review requested access. Do not assume an agent is bundled in the default sandbox.",
+    "costs": "The source is Apache-2.0 and does not require a paid OpenShell license. Model inference, external APIs, hosted compute, Kubernetes clusters, storage, and network egress may incur separate provider costs.",
+    "localVsCloud": "The CLI, gateway, and sandbox can run locally on supported systems. Kubernetes/Helm is an optional deployment path. Model inference and external services remain with the configured providers; OpenShell is not a model provider.",
+    "alternatives": "Docker or Podman with custom least-privilege policies, devcontainers, and other agent sandbox runtimes. Compare kernel-level enforcement, network mediation, credential handling, and policy review rather than feature labels alone.",
+    "limitations": "Windows WSL 2 is marked experimental. The default sandbox has no agent installed. Platform support and isolation depend on the host runtime and configuration. No build or agent execution was performed in this review. External data and model-provider terms remain separate.",
+    "testStatus": "not_run",
+    "testEvidence": null,
+    "basis": "readme",
+    "sources": [
+      {
+        "title": "Current upstream repository and README",
+        "url": "https://github.com/ai-openshell/openshell/blob/main/README.md"
+      },
+      {
+        "title": "Apache-2.0 license",
+        "url": "https://github.com/ai-openshell/openshell/blob/main/LICENSE"
+      },
+      {
+        "title": "Official support matrix",
+        "url": "https://docs.nvidia.com/openshell/latest/about/support-matrix"
+      },
+      {
+        "title": "Architecture",
+        "url": "https://docs.nvidia.com/openshell/latest/about/architecture"
+      },
+      {
+        "title": "Run Your First Agent",
+        "url": "https://docs.nvidia.com/openshell/latest/about/run-your-first-agent"
+      },
+      {
+        "title": "Policy overview",
+        "url": "https://docs.nvidia.com/openshell/latest/how-it-works/policies/overview"
+      },
+      {
+        "title": "0.1.0 upgrade guide",
+        "url": "https://docs.nvidia.com/openshell/latest/upgrade/0-1-0"
+      },
+      {
+        "title": "GitHub repository metadata snapshot (metrics and activity)",
+        "url": "https://api.github.com/repos/ai-openshell/openshell"
+      }
+    ],
+    "improvements": [
+      {
+        "title": "Policy dry-run visualizer",
+        "problem": "Policy files are difficult to audit before an agent requests filesystem, network, or credential access.",
+        "approach": "Simulate representative access requests without launching an agent, then show allow/deny outcomes, affected resources, and reasons for human review.",
+        "stack": "OpenShell SDK, YAML policy fixtures, TypeScript UI, Python test harness",
+        "steps": [
+          "Define representative filesystem, network, and credential requests.",
+          "Run policy evaluation in dry-run mode.",
+          "Render allowed and denied resources with decision reasons.",
+          "Export a reviewable policy diff.",
+          "Compare simulator output with runtime decisions for supported policy constructs."
+        ],
+        "metric": "Policy-case coverage and count of unexpected permissions found before a run.",
+        "difficulty": "متوسط إلى مرتفع (تقدير)",
+        "risks": "A simulator can diverge from runtime enforcement; unsupported constructs must be marked clearly and never treated as verified.",
+        "sources": [
+          {
+            "title": "OpenShell README",
+            "url": "https://github.com/ai-openshell/openshell/blob/main/README.md"
+          },
+          {
+            "title": "Policy overview",
+            "url": "https://docs.nvidia.com/openshell/latest/how-it-works/policies/overview"
+          },
+          {
+            "title": "Policy advisor",
+            "url": "https://docs.nvidia.com/openshell/latest/how-it-works/policies/advisor"
+          }
+        ]
+      },
+      {
+        "title": "Policy drift regression suite",
+        "problem": "Runtime or policy updates can unintentionally broaden an agent's effective permissions.",
+        "approach": "Maintain versioned least-privilege fixtures and compare effective decisions across pinned and candidate releases.",
+        "stack": "OpenShell CLI, YAML, pytest, GitHub Actions",
+        "steps": [
+          "Create role-specific policy fixtures.",
+          "Capture effective decisions for each fixture.",
+          "Run the same fixtures against pinned and candidate versions.",
+          "Flag newly allowed paths, hosts, or credential scopes.",
+          "Require human review for unexpected permission changes."
+        ],
+        "metric": "Unexpected permission changes per release and proportion of policy cases covered.",
+        "difficulty": "متوسط (تقدير)",
+        "risks": "Policy semantics can change between releases; pin versions and keep human approval in the loop.",
+        "sources": [
+          {
+            "title": "OpenShell README",
+            "url": "https://github.com/ai-openshell/openshell/blob/main/README.md"
+          },
+          {
+            "title": "Upgrade guide",
+            "url": "https://docs.nvidia.com/openshell/latest/upgrade/0-1-0"
+          }
+        ]
+      }
+    ],
+    "spinoffs": [
+      {
+        "title": "Local sandbox templates for Python agents",
+        "problem": "Developers repeatedly configure filesystem and network restrictions for small local agents.",
+        "approach": "Publish narrow, documented policy templates with a disposable local smoke-test task and explicit cleanup steps.",
+        "stack": "Python, OpenShell SDK, YAML, Docker",
+        "steps": [
+          "Choose one read-only sample task.",
+          "Allow only the required project folder and approved hosts.",
+          "Run the task in a disposable sandbox.",
+          "Inspect denied requests and adjust only when justified.",
+          "Document credential revocation and sandbox cleanup."
+        ],
+        "metric": "Time to create a least-privilege sandbox and unnecessary grants per template.",
+        "difficulty": "متوسط (تقدير)",
+        "risks": "Templates are examples, not universal security guarantees; each project needs its own threat-model review.",
+        "sources": [
+          {
+            "title": "OpenShell README",
+            "url": "https://github.com/ai-openshell/openshell/blob/main/README.md"
+          },
+          {
+            "title": "Run Your First Agent",
+            "url": "https://docs.nvidia.com/openshell/latest/about/run-your-first-agent"
+          }
+        ]
+      }
+    ],
+    "religious": []
+  },
+  "developerHandoff": [
+    "Keep this as a research-only refresh of the existing OpenShell entry; do not create a new Feed identity or card.",
+    "Display the canonical repository ai-openshell/openshell and retain the legacy Seen ID only as a traceable reference.",
+    "Show license, archived status, metricsCapturedAt, pushedAt, and updatedAt beside counters.",
+    "Keep testStatus=not_run until a reproducible build or execution produces testEvidence.",
+    "Recheck the legacy ID against the latest Main feed before setting feedPresent; the feed changed after the prior audit."
+  ]
+}
