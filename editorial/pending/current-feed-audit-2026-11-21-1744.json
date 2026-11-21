@@ -1,0 +1,698 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Current-feed reconciliation; pending identities are not imported and no ID is regenerated from a title.",
+  "reviewedAt": "2026-11-21T17:44:20+03:00",
+  "sourceMainCommit": "2bcf5798e4e7461fd4fc26c02e4b16bbb5b5c8bd",
+  "mainIncoming": {
+    "files": 145,
+    "appearances": 1517,
+    "validWrappers": 145,
+    "invalidWrappers": 0,
+    "parseErrors": 0,
+    "exactCurrentFeedAppearances": 170,
+    "exactAndAlreadyInEditorial": 170,
+    "readyToImport": 0,
+    "outsideCurrentFeedAppearances": 1347,
+    "outsideButAlreadyInEditorial": 1176,
+    "outsideAndNotInEditorial": 171,
+    "urlMismatches": 0,
+    "expiry": "not established from feed absence; retain as historical/pending until date and identity evidence is reviewed",
+    "sourceFiles": [
+      {
+        "path": "editorial/incoming/nabdh-content-2026-11-19-1553.json",
+        "sha": "6519d7a223e23d1fc82b736fa6c6f3a6dceceb81"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+        "sha": "5cbbde735820d3fbbd6ffc5e8726ba8010d66dbe"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-24-0840.json",
+        "sha": "68b728fa673c7d5b2198b00b0c5fcc1b9a0bbc18"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+        "sha": "b1aaf887300d600d15b9cd66b51321604d8da139"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-24-1439.json",
+        "sha": "88a0f1efaa8699b1e31a83ac541daba264885113"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-24-1740.json",
+        "sha": "d6fa64cfea40876a5e88aeea44c2525064fcf9fd"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-24-2043.json",
+        "sha": "9651fed60f2c1a32e58d95af66cd0fb4f3ab29ae"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-24-2342.json",
+        "sha": "2f172ad8645bce9232ae1e07f17e5b3cc9f2f94c"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-24.json",
+        "sha": "5d09a1a8bf7f1f0d6ca500296d9707c7dba95fd3"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-25-0250.json",
+        "sha": "6ca9be0501cea58c97733db77363c38d1fb4ebb6"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-25-0554.json",
+        "sha": "0af481e73f1c598c09e347febdbb0843c81c6741"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-25-0845.json",
+        "sha": "6ec634639d38f8884a4a9fb03fd9699457390da3"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-25-1143.json",
+        "sha": "42a3f5335cf768033ca7a1f596078f38eb2029bf"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-25-1442.json",
+        "sha": "99ce95d76b905597078eb53082a1c4685082b02e"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-25-1742.json",
+        "sha": "7b49c3322083612bc034791c03e8e7868e5710cc"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-25-2038.json",
+        "sha": "f20fd110855271a58eb750962ec67abd2a880b8f"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-25-2342.json",
+        "sha": "67a086dc877cc360518d3027ad4a14e9e84a7858"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-26-0250.json",
+        "sha": "ca50fd0bec339642cfe1f0b4945253c62e6d4a7d"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-26-0545.json",
+        "sha": "8aaf21148bebff0b1420b4c6dd3862e8829849b5"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-26-0840.json",
+        "sha": "bcf33df52194b01060e5a4b3b777561b88c969cb"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-26-1152.json",
+        "sha": "c06cebf6b7957dc55c8bee28ca267c512e5ea42f"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-26-1445.json",
+        "sha": "c7fe44ccbf051bc85b89164ce2d1acd3aa57de64"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-26-1745.json",
+        "sha": "7c112aa8f7b5b7056c2819a5897c0848e0e7fdcb"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-26-2042.json",
+        "sha": "3137089d6e6a7b08845462514f354f129456e8e9"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-26-2342.json",
+        "sha": "97d56c54768f6ce8112b2c14b0ff42bdb5144c66"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-27-0038.json",
+        "sha": "7a9edf47ccb48c8960073c9fc6eb4bdb0540ca44"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-27-0240.json",
+        "sha": "27e9663b2cb55cda16f2fb70ca1a718d0f35ef7a"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-27-0549.json",
+        "sha": "679a308b144483ef53b094394e1217538bf1978b"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-27-0619.json",
+        "sha": "d5228abb39972066b739155b4fb7a8179993455f"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-27-0847.json",
+        "sha": "9d686fb606509755601618cf886ac3bd0e5b49f9"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-27-1141.json",
+        "sha": "fa48ff89641ec45430471ddce4df8783c228ce04"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-27-1443.json",
+        "sha": "c67141c5c3a0e451aff2cd6a8dd0c002e61b3006"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-27-2045.json",
+        "sha": "f0229a44ce7581db7d8957319a023faea189541e"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-27-2113.json",
+        "sha": "92821d67483f60c53e823a0b023ff9cfb5c3a525"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-27-2347.json",
+        "sha": "70e44c66c3cf9cfa1e44b09b05a28a70c378c6e7"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-28-0244.json",
+        "sha": "ed1e1cc5291d476c1ccacf7d21d73abb77552b7b"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-28-0555.json",
+        "sha": "315100dfa8a90ff92c9ae5b538ff050167f2f14a"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-28-0609.json",
+        "sha": "8efa1fd9599d7862b8e61f4ac22ed4a161bb4d2f"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-28-0846.json",
+        "sha": "f999d75789553ce5c87dec9463e023433a7126ca"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-28-0914.json",
+        "sha": "2f3eaa2d7e45d67c2e44f94da0da1f944925b2a3"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-28-0943.json",
+        "sha": "01bf866ffc7eab47fd6b4eda85d42d0026213be7"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-28-1151.json",
+        "sha": "468747a84ca58368696cdf5b1bcf200e9416a034"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-28-2045.json",
+        "sha": "c664e39c49ecdb1f5516350dcc75449b8a7f5fda"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-29-0243.json",
+        "sha": "e9f31a6099279e9c860307533f43b7eb8d8711e0"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-29-0319.json",
+        "sha": "bb0a8184c06d575a27c778d6063d51571dead582"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-29-0559.json",
+        "sha": "da75de9a6dca73741dad5daa1b32b7a67053b651"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-29-0855.json",
+        "sha": "fadf854386415a468b99248200c1a205f12df103"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-29-1145.json",
+        "sha": "de7ea61f9e14b81f983faaf21b5c9c6e1fdddd98"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-29-1525.json",
+        "sha": "521e147455824f99cbc7caafe9366bf7a15104ac"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-29-1755.json",
+        "sha": "fc9d508649f75610244bbc423cf38cfe78962257"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-29-2045.json",
+        "sha": "891780f93c96511e5140b5df7a0dd41b8f5cce7c"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-30-0255.json",
+        "sha": "fdf800d02b5012f31fcdb6f9d43f79766028b65c"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-30-0540.json",
+        "sha": "06b5195b44e0c58ac1aac07ad25f63d6c8d45c5d"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-30-0839.json",
+        "sha": "1f7e377a69c0f490c325dc80718dce33a714f43d"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-30-1146.json",
+        "sha": "a96b8c20d2b44f2e27fcf2c08bfe446667dbb7b5"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-30-1442.json",
+        "sha": "7cdb583309843dbefd5d93f63d47a2e15da1df5f"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-30-1811.json",
+        "sha": "2fe4f53352f2c556b9eb87175b363874c390484d"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-30-2044.json",
+        "sha": "19b5b936609bc7ebffd6c4a8c372765c923fd902"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-30-2341.json",
+        "sha": "8988d2c951f97cb8beb7abd1edbcd3994d660f07"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-31-0247.json",
+        "sha": "e53fd6cb756bbed9813c6396e803a32e09acf3a7"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-31-0840.json",
+        "sha": "7dbe21502bd54c6d62ef20d1a3514957cae856c3"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-10-31-1811.json",
+        "sha": "9f530e0e81a5a102b85805837487ecea1404c372"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-01-0542.json",
+        "sha": "14222b7b3eedcedfb7122b2ca2cefed57cdb4d86"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-01-1158.json",
+        "sha": "a3e61b621e31d1b30089da07a0f8015bf83760e6"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-02-1446.json",
+        "sha": "405120544206256f853fe5a7545787a63451678e"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-02-2347.json",
+        "sha": "41155826ae5385d9efbdec284da0dd6030e238cc"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+        "sha": "16f9cff0b37350bf5cb4122769611280ea1812a6"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-03-2136.json",
+        "sha": "ab288022f6ccdb7b8e6f3918d24e6bd2b463e860"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-03-2222.json",
+        "sha": "977bfe9055bd279415c6fc2d6f274991e05ff9c8"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-03-2342.json",
+        "sha": "28c1dbcca56d45a8304fc6e8dc0374f2f24db2e0"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-04-0238.json",
+        "sha": "4c6badc58d0ce88c021f76e3602d161e3fe3886e"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-04-0841.json",
+        "sha": "15d7f07f638a499e7de7c3e58c1ee551d03979c3"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+        "sha": "39ee0ff14b77fdce08667ac3ad598d0b201a2a58"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-04-1222.json",
+        "sha": "3e1c0e612d13fca7799e3d8cc0de5cb91828c35d"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-04-2338.json",
+        "sha": "155e52a666ede73f4bbd464a148b2bbb757f8dac"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-05-0409.json",
+        "sha": "f8bbf66d06f72ce7dc1c123749e493182870b1ab"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-05-1140.json",
+        "sha": "587eb7a8ed5877cf045c458f2473b8782f5c8d8d"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-05-1208.json",
+        "sha": "322b01fe60f4f68e5d09799cb17f52b99f96de9e"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-05-1248.json",
+        "sha": "12d509699b9dda2c77dd51dc23be5f5ace383150"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-06-0308.json",
+        "sha": "35b6cbe2f8d580eda9b9f02840bee5ab1f22058e"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-06-0842.json",
+        "sha": "9c9973124e29a2779a9e9da3114c9f4fe61c1e6a"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-06-0909.json",
+        "sha": "cb71956fc187fffc3ace08d9acd3a0123accbb37"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-06-1146.json",
+        "sha": "9cc7cc6ef2d1d80702549bcedb6aaf1f6025defc"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-06-1220.json",
+        "sha": "0e4788a4383eccc4f870f7eb3f40f6998b5c140e"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-06-1458.json",
+        "sha": "8b8541e316656f1f0b83a4d8a938d2bff3bf21b4"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-06-1801.json",
+        "sha": "00c01169b87268d4a37ddb96e92c252746a3cbc6"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-06-1813.json",
+        "sha": "bdf961c7f6b4a869243f9fd16a1025d060cdc6de"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-06-2046.json",
+        "sha": "3e22396d9d09cd51ec0f2d173357c16f732e0cf8"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-06-2127.json",
+        "sha": "efa13ff90e452dac9a4a2d628280b46d497cc175"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-06-2342.json",
+        "sha": "da038173414c8653ba849ee7122df7c14e0fb3c0"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-07-0247.json",
+        "sha": "8366b714e87dd44f122b805488b94100981b208e"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-07-0842.json",
+        "sha": "b7fb0aa370a76f6ba6f62a18a97b5c18f23ce5ca"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-07-2338.json",
+        "sha": "c3b9a59ef1416ed0465736ea82e5167cef780dd0"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-08-0005.json",
+        "sha": "55ad720ebe6241e35fc9fa4edb6b98a43e9beb38"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-08-0035.json",
+        "sha": "9db0e550d7416cd76542a60d11ff80fc74ac7629"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-08-0554.json",
+        "sha": "4d3b30adde9331951c7914a4fea9ad1ce17b26ca"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-08-0846.json",
+        "sha": "ac601a4732b079e72fe40c8e336d46c8bb66b42b"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-08-1453.json",
+        "sha": "0948dd215dae8022c3612e2d6139970571886cbb"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-08-1510.json",
+        "sha": "51383ae4b46aba26b44c0e5e3380ce9c78d011b2"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-08-2115.json",
+        "sha": "9cc1276d2f1300f437d0075a82253518c9e9a37c"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-09-0843.json",
+        "sha": "8a8d60740fbb4cf6a46acc1b7e4d81a993e1fd0c"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-09-1246.json",
+        "sha": "b8a709b92169bb647fe854dba36ab1db31f1aa72"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-09-1446.json",
+        "sha": "3fea4f6f8618f65307baa0c7bcc6200c9e03aafe"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+        "sha": "3f99cb6e5eee6deeb135274863f58b39992abc8e"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-10-0846.json",
+        "sha": "16cf44473f53bfe7d63a0d7ff2035bc6d614a3e0"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-10-2039-reconciled.json",
+        "sha": "06f57ec6a12de6f94670b6355861e88473d15388"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-10-2338.json",
+        "sha": "d47e017cdc8542340b622a1a4ab9ec680cef7386"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-11-1144.json",
+        "sha": "3d43cb886aadeeb8cb9174ddc9a6b0082e70814c"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-11-1836.json",
+        "sha": "c14c42384ca8ebce0f689e5a33a5261af57cb93d"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-11-2338.json",
+        "sha": "acc81ab5e38c1709195ac2b82186ea9988fd064a"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-12-0846.json",
+        "sha": "e0f1cbcd657dcfb800aa612efb405b040fefd5a2"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-12-1138.json",
+        "sha": "98e3bbbac9f7836dd37263db2b905a01f1d7d76d"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-12-1439.json",
+        "sha": "30a5a4a4ca7e2ad733d793c8322d11653c7702a2"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-12-1811.json",
+        "sha": "3fa1971dc22753262058608339db4b8644e27dd4"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-12-2038.json",
+        "sha": "d1a2ea8cba0f9939131ba81bf68c6c89e47b779d"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-12-2105.json",
+        "sha": "047a5c19b6b238f5aa42a0d770ae65d363013a09"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-13-0306.json",
+        "sha": "99941a28cd1c25a640f97cfd95f4b0922c2b4395"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-13-2343-reconciled.json",
+        "sha": "f7e6531f61cb293c0300b2df756dd51ea38e2e9d"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-14-0247-reconciled.json",
+        "sha": "43b5135ba488f8c35d46d4e53a6dd0b121c68030"
+      },
+      {
+        "path": "editorial/incoming/nabdh-editorial-2026-11-14-1444-reconciled.json",
+        "sha": "17a2264b4eb08a0ade5e5e57e691fed280ebd9bf"
+      },
+      {
+        "path": "editorial/incoming/nabdh-news-2026-11-13-0612.json",
+        "sha": "af65c96accaa731347bbf474914a15319e1f9ce3"
+      },
+      {
+        "path": "editorial/incoming/nabdh-news-2026-11-14-0545.json",
+        "sha": "2bcda40b970940c6f20e2451cc1215acd14d0e83"
+      },
+      {
+        "path": "editorial/incoming/nabdh-news-2026-11-14-2056.json",
+        "sha": "87f2361000271fa21abdd6e6e65101ffa990f2c1"
+      },
+      {
+        "path": "editorial/incoming/nabdh-news-2026-11-15-1210.json",
+        "sha": "203d5db830f77bf6d074e062bbb8e8402bb0d2b1"
+      },
+      {
+        "path": "editorial/incoming/nabdh-news-2026-11-15-1239.json",
+        "sha": "0ba4e45931013192e0862fd61ddc3c3ef6394d9a"
+      },
+      {
+        "path": "editorial/incoming/nabdh-news-2026-11-15-1740.json",
+        "sha": "356c729befaf3bd859cfb714febf247bd1499adb"
+      },
+      {
+        "path": "editorial/incoming/nabdh-news-2026-11-16-0245.json",
+        "sha": "2fbb532da2e6833e4047e82aafe5f82a2ac18149"
+      },
+      {
+        "path": "editorial/incoming/nabdh-news-2026-11-16-0307.json",
+        "sha": "8a707193eda1a34a5f53d40fdc39facf36ad8e48"
+      },
+      {
+        "path": "editorial/incoming/nabdh-news-2026-11-16-0617.json",
+        "sha": "38b89177f71c51f9478f583c8ec721450fc436b0"
+      },
+      {
+        "path": "editorial/incoming/nabdh-news-2026-11-16-0900.json",
+        "sha": "09daaf9bd750ca9487b40de04d18dbea2b8e6575"
+      },
+      {
+        "path": "editorial/incoming/nabdh-news-2026-11-16-0911.json",
+        "sha": "446962ae730920b4539dca088ab1bc0e8e23a295"
+      },
+      {
+        "path": "editorial/incoming/nabdh-news-2026-11-16-1242.json",
+        "sha": "d7100780c4c06a2e567c934c19946f6a1bd9c795"
+      },
+      {
+        "path": "editorial/incoming/nabdh-news-2026-11-16-2116.json",
+        "sha": "f670a794a1590beaac4ab7248ec2dfcc0fc24694"
+      },
+      {
+        "path": "editorial/incoming/nabdh-news-2026-11-18-0001.json",
+        "sha": "555899895f7db5841739fe956740cd1aeaca015a"
+      },
+      {
+        "path": "editorial/incoming/nabdh-news-2026-11-18-0246.json",
+        "sha": "9c1225c3a7010e05cbfa6dc99d481beec250efc1"
+      },
+      {
+        "path": "editorial/incoming/nabdh-news-2026-11-18-0846.json",
+        "sha": "2e7bcc946eabb5ed9adcae7c90add82ab765f206"
+      },
+      {
+        "path": "editorial/incoming/nabdh-news-2026-11-18-0925-reconciled.json",
+        "sha": "26c37c84f808c735f24ba3b5f67e0ad5542dd0a6"
+      },
+      {
+        "path": "editorial/incoming/nabdh-news-2026-11-18-1836-matches.json",
+        "sha": "ee439f697cb2ef0f1e358cf1e575f9f389031311"
+      },
+      {
+        "path": "editorial/incoming/nabdh-news-2026-11-18-2043.json",
+        "sha": "d8f15342d69181505563754c5a283a850c34a815"
+      },
+      {
+        "path": "editorial/incoming/nabdh-news-2026-11-18-2338.json",
+        "sha": "001aab5e4192a6661678de6eb0e9ee8074a08c7f"
+      },
+      {
+        "path": "editorial/incoming/nabdh-news-2026-11-19-0005.json",
+        "sha": "2e212cfdc9a2efc46c6ac4f5767a908b815bc126"
+      },
+      {
+        "path": "editorial/incoming/nabdh-news-2026-11-19-0240.json",
+        "sha": "c9f73ec4e3e518a2e1b44a104befe6fe1fc999c6"
+      },
+      {
+        "path": "editorial/incoming/nabdh-news-2026-11-19-1140.json",
+        "sha": "1515838acb0ce9e121fa2ecb8299af2ec87ec41c"
+      },
+      {
+        "path": "editorial/incoming/nabdh-project-refresh-2026-11-12-2038.json",
+        "sha": "093c2d2f73d39fa51c4159bbf8898ad937736088"
+      },
+      {
+        "path": "editorial/incoming/nabdh-project-refresh-2026-11-13-0306.json",
+        "sha": "59bce227aef77f2dbd6f877512a3e42045202bd6"
+      }
+    ]
+  },
+  "prIncoming": {
+    "files": 9,
+    "appearances": 101,
+    "uniqueIdUrlPairs": 62,
+    "repeatedAppearances": 39,
+    "validWrappers": 8,
+    "invalidWrappers": 1,
+    "exactCurrentFeedAppearances": 76,
+    "outsideCurrentFeedAppearances": 25,
+    "urlMismatches": 0,
+    "invalidWrapperFile": "editorial/incoming/nabdh-news-2026-11-20-1813.json",
+    "invalidWrapperReason": "Uses schemaVersion instead of the required version:1 envelope; do not import without correction."
+  },
+  "prEditorialAdditions": {
+    "total": 53,
+    "exactCurrentFeed": 41,
+    "outsideCurrentFeed": 12,
+    "selectedForThisRun": 12,
+    "notSelectedActive": 29
+  },
+  "outsideFeedRecords": [
+    {
+      "id": "607807410ad5227362",
+      "url": "https://www.theverge.com/tech/1037535/google-blue-origin-project-suncatcher-2029"
+    },
+    {
+      "id": "5fe21d2b4ecab0b0d1",
+      "url": "https://www.anthropic.com/research/claude-black-hole-physics"
+    },
+    {
+      "id": "a9933de7f7b7b31206",
+      "url": "https://www.wired.com/story/google-built-a-giant-mirror-dimension-internet-to-test-its-chrome-ai-agents/"
+    },
+    {
+      "id": "534016fa5cae687038",
+      "url": "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use"
+    },
+    {
+      "id": "f91b7c614ab8def43a",
+      "url": "https://aitnews.com/2026/11/19/java4shell-exploitation-attempts-security-updates/"
+    },
+    {
+      "id": "c363e4ee1aa6f6ac6b",
+      "url": "https://www.theverge.com/tech/1038059/google-search-homepage-ai-chats"
+    },
+    {
+      "id": "fa5917e879d29a8bbf",
+      "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/"
+    },
+    {
+      "id": "c263b280fabbf4887d",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1037126/canva-ai-features-off-button"
+    },
+    {
+      "id": "e39600edda0e5accc0",
+      "url": "https://thedataexchange.media/pete-warden-moonshine/"
+    },
+    {
+      "id": "0d99ee3888cb9d4af2",
+      "url": "https://blog.python.org/2026/11/transifex-sponsors-python-docs/"
+    },
+    {
+      "id": "519de22d67ea32a39f",
+      "url": "https://github.com/openjdk/jdk/pull/32781"
+    },
+    {
+      "id": "c50a064b65c55ff5ed",
+      "url": "https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine"
+    }
+  ],
+  "specialSeenOnly": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "name": "NVIDIA OpenShell",
+      "seen": true,
+      "feedPresent": false,
+      "editorialPresent": false,
+      "canonicalRepository": "https://github.com/ai-openshell/openshell"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "name": "Canva Craft",
+      "seen": true,
+      "feedPresent": false,
+      "editorialPresent": false
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "name": "1Password agent sign-in",
+      "seen": true,
+      "feedPresent": false,
+      "editorialPresent": false
+    }
+  ],
+  "decision": "Do not import outside-feed records. Keep their original ID and URL in this report; do not derive replacement identity from title."
+}
