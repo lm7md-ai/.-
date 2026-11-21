@@ -1,0 +1,1278 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Current-Main incoming reconciliation and pending editorial preparation; no site data imported by this run.",
+  "reviewedAt": "2026-11-21T18:11:30+03:00",
+  "sourceMainCommit": "dc342586590a8af7d76414ebf5e0adaab6273948",
+  "feedSnapshot": {
+    "generatedAt": "2026-11-21T15:05:06+00:00",
+    "items": 800,
+    "news": 700,
+    "projects": 100,
+    "blobSha": "e6615bf5526026f2c4cefcb4e4eaa2d9645043e8"
+  },
+  "editorialSnapshot": {
+    "entries": 1141,
+    "blobSha": "b9f752d7d22f7f08e350d8819d962a667b083077"
+  },
+  "statusSnapshot": {
+    "lastSuccessfulAt": "2026-11-21T15:05:06+00:00",
+    "state": "ok",
+    "collected": 303,
+    "sources": 26,
+    "emptySources": [
+      "أبحاث الذكاء الاصطناعي",
+      "أبحاث تعلّم الآلة"
+    ]
+  },
+  "incomingAudit": {
+    "files": 155,
+    "recordOccurrences": 1630,
+    "parseErrors": 0,
+    "validWrappers": 154,
+    "invalidWrappers": 1,
+    "invalidWrapperFile": "editorial/incoming/nabdh-news-2026-11-20-1813.json",
+    "invalidWrapperReason": "schemaVersion=1 موجود بدل version=1؛ لا يُقبل كغلاف رسمي دون تصحيح",
+    "countBasis": "ظهورات/تكرارات عبر الملفات، لا عدد هويات فريدة؛ لا تُجمع الأعداد على أنها unique IDs",
+    "exactCurrentFeedIdUrlOccurrences": 255,
+    "exactAndAlreadyInEditorialOccurrences": 225,
+    "exactCurrentFeedNotInEditorialOccurrences": 30,
+    "idPresentInFeedWithDifferentUrl": 0,
+    "alreadyRepresentedInEditorialOccurrences": 1388,
+    "notRepresentedInEditorialOccurrences": 242,
+    "outsideCurrentFeedOccurrences": 1375,
+    "outsideCurrentFeedButAlreadyInEditorialOccurrences": 1163,
+    "outsideCurrentFeedAndNotInEditorialOccurrences": 212,
+    "confirmedExpiredOccurrences": 0,
+    "expiryDecision": "عدم الظهور في Feed لا يثبت الانقضاء؛ لا توجد publishedAt موثوقة لكل الظهورات القديمة، لذلك تبقى خارج Feed/تاريخية لا منقضية مثبتة."
+  },
+  "currentFeedCandidates": [
+    {
+      "id": "47396adf5e31273b13",
+      "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/",
+      "titleAr": "Reuters يرصد مخاوف خصوصية وسلامة في وكيل Meta Muse",
+      "basis": "article",
+      "sourceFile": "nabdh-news-2026-11-20-0037.json",
+      "publishedAt": "2026-11-19T17:38:40+00:00",
+      "source": "تقارير الذكاء الاصطناعي",
+      "score": 21.77
+    },
+    {
+      "id": "f88414c8cfe7b454dc",
+      "url": "https://arstechnica.com/gadgets/2026/11/google-will-launch-android-app-verification-requirement-globally-in-january-2027/",
+      "titleAr": "Google تبدأ التوسع العالمي للتحقق من مطوري تطبيقات Android في يناير 2027",
+      "basis": "article",
+      "sourceFile": "nabdh-news-2026-11-20-0037.json",
+      "publishedAt": "2026-11-19T18:00:33+00:00",
+      "source": "Ars Technica",
+      "score": 21.84
+    },
+    {
+      "id": "1578edf8b253799c50",
+      "url": "https://news.google.com/rss/articles/CBMijwVBVV95cUxNemc1ZVlHQW9ITlR4czdaZDR6WGZFRGMxNHd1TWpabGJjQ0FjTk1VWE52bnk1ZDBZTDAzZFRlSUZYUnhLY0FCdnBZREhhdWhBQ05tVGlQZ2xacGpLQmpBbXB2bjRQSEM3eEg1eG5iaHEzS21mU3hfX3VCdDVQSWtpNXBvd0dmMXYwUFlMU0xtaUh2Ujc5N0dLZ3AyNDJuaC1hd1pKV0JPUXZKb1NVMGU2S2Z3STE2ZF9CdjNidHhPVmd4RDNNUVZZVGY4MUVJS01SZndGOTk1bTZOb2FrMzRHTzdDRlF5RzRiM1ZkQTBMU2xrZWJiTVZSSzZadFBzZG9FM29EODM4a3dDWGYwZ1FrY0FjbUFkaFFVa094Nmw0N1Rub0x1LUN1MjB2ZGpKbS1oS01od3IzRHh5OVhHQTBWU244bVhFV3RYZC0wdHhEdnlqYnc4YlVBNzJsbjhTdWFxdHMyNHhwZW1LQzJsV29kbnZueGZXVEptYnhYeUdDb3pnSm9MNHA5VkU4bDVDYm5ORTd5Mm4zQW9Vd3B2VU5nUGZ0MzZHbEtuUmZsbjh3UGVUMk9fOXZyMkQ0bUpyUHllZmpQNUxoVW1SOHEwZkI3OVpPclZKTUVZaklmUm5TNUVZTWVMQ3g4WjdtRUJvTnNzclVEdFhYblZxLU0yRk9OWWwyTjVaUkFkSTdZeE5jZ3VsMXhrbzd3bFVtVGNQMnBlMWtYT0lLdFEybGEwOWJOT0RtdUxPWGNqdWFRaUJRbU1NdkxzMjA4dEkzVU5UUGdWaVlFWUZfS0RUbEgtVkppWk5Wdm5jWkZPZDE4NU5La1hzZGUxUXpLQnZIaWF3QUJqYlpIWFZXRHk3R3FyX1pr?oc=5",
+      "titleAr": "HUMAIN تعرض منصة صوتية عربية تدعم اللهجات ووكلاء المحادثة الفورية",
+      "basis": "metadata",
+      "sourceFile": "nabdh-news-2026-11-20-0037.json",
+      "publishedAt": "2026-11-19T19:24:41+00:00",
+      "source": "الشرق الأوسط",
+      "score": 22.15
+    },
+    {
+      "id": "db895de00b77372a93",
+      "url": "https://techcrunch.com/2026/11/19/superhuman-pushes-its-go-assistant-everywhere/",
+      "titleAr": "Superhuman توسّع مساعد Go داخل Docs وMail وتضيف 20 وكيلًا متصلًا",
+      "basis": "article",
+      "sourceFile": "nabdh-news-2026-11-20-0037.json",
+      "publishedAt": "2026-11-19T14:00:00+00:00",
+      "source": "تقارير الذكاء الاصطناعي",
+      "score": 21
+    },
+    {
+      "id": "e55c8f2df06c07ffc9",
+      "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
+      "titleAr": "دراسة Dharma-AI تتنبأ بزمن ضبط النماذج بدقة أعلى من تقدير FLOPs في عينة H200",
+      "basis": "article",
+      "sourceFile": "nabdh-news-2026-11-20-0037.json",
+      "publishedAt": "2026-11-18T18:53:43+00:00",
+      "source": "Hugging Face",
+      "score": 17.65
+    },
+    {
+      "id": "f629676ca2f94e3b99",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBKSzl6NU1meVZBYzBPb1Y1dzNRSmFqMEVRZHVWQXp3cTZsc1lPaVA0bUxzS3kzSW51VnlIX2VBS1U2RHJYUGc?oc=5",
+      "titleAr": "وزارة الاتصالات وهيئة الحكومة الرقمية تبحثان تسريع تبني السحابة والذكاء الاصطناعي الحكومي",
+      "basis": "metadata",
+      "sourceFile": "nabdh-news-2026-11-20-0037.json",
+      "publishedAt": "2026-11-18T17:11:27+00:00",
+      "source": "وكالة الأنباء السعودية",
+      "score": 17.39
+    },
+    {
+      "id": "dbe111187a465a8a1f",
+      "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
+      "titleAr": "Apple تبحث عن قائد هندسي لبناء وكيل يستخدم الحاسوب عبر التطبيقات والويب",
+      "basis": "article",
+      "sourceFile": "nabdh-news-2026-11-20-1009.json",
+      "publishedAt": "2026-11-20T00:56:01+00:00",
+      "source": "تقارير الذكاء الاصطناعي",
+      "score": 23.43
+    },
+    {
+      "id": "2e1fba6f9ed9affbda",
+      "url": "https://news.google.com/rss/articles/CBMi1gRBVV95cUxQeDJlOE1TdUpmUjZZN2dxZG12NUJXbVA5MGIyRmlld0FyME1CRkljTTZxYi14VG1Dai1DRERCOXlQQnVsbGNpV0tkUERWZ1c3Zm9UNHBySkJxem9vU0VaWnZRSmRDdHR0SUtUc3FCR3QwMUNRVmVNY0o2M1AtWHJzc2RuTzl0c1JITVZsbVVpU2pLdWEzR1U0Z1dYekZJSDBpdFRQek1aeWJ3bDdiX2RRUF9FaTJPQWkyNjEyZlF3V3laWjFhbGVDOFVaTnVnWUYzT0pTOHRGQlNUZWIzWmNILWZXNG51bG9WNjZhb1UzWEJYQm5RaWhiVnhtU0U2MEtoS2NLOVJJTEp2NjllR0dKa0VLWVh3NnVDc2Y1Mlphdm1pdHd2b2xSbEVBUmhYb0w1U1BrRFMyZjBIUW1xOEh2aVU1V3Z4cHJ6Rm83TFRYU05LMGctQ215NzJhWDQ5UGg2bU5NbEY0TXRGYURYNU1uZzRNMjlmVEctaUpKVXNKRWYtOThOS1NpY3dHam53YzVEcTFsenZuU0VzRjZwMkstVGpiVTItT05PY0x6UnA2dU5WNjhsMnJISUJXbXc1cDZyTHVqN3RBUnJzcUZPYUpxdzFYekZvYTJYb2haMUZjNHZqNk9sLW1VZUV3dm1EWmFjNFZZbVZ3T1dxT08yZGtIek1takMyampyLWhxTlVmT2VKMy1JZDRHUDJBa0JnMnVadE9rM01YV2sxNVdpS2dBVm1kYlBuZU5BTzluUTNpNVRxTTEyWGVqaWYtZTZyZ0l2bUpscFZB?oc=5",
+      "titleAr": "السعودية تتصدر مؤشر الخدمات الإلكترونية وتأتي رابعة في مؤشر الأمم المتحدة للحكومة الإلكترونية",
+      "basis": "article",
+      "sourceFile": "nabdh-news-2026-11-20-1009.json",
+      "publishedAt": "2026-11-19T22:11:46+00:00",
+      "source": "الشرق الأوسط",
+      "score": 22.78
+    },
+    {
+      "id": "dc2fa2fb88cfbd46a7",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQSEl0SUtqbjlNYXk5czNYWUp3REwwNkZOYkZ2ZFlFaW5NUEdvM1h0bmpzUGhEamlmdDFLOExfVTB5S1lXdE5VMW9hQzhOT1FPWVBvV3NvZkZrMEItaWhlQ2hXSHNnZUNBa0dEaExpYUh4MmJYSC1Yd1p3Mm5FTUNfUjZSSVJvbWs?oc=5",
+      "titleAr": "AWS تطلق Common Runtime 1.0 رسميًا لمكونات HTTP وS3 وMQTT",
+      "basis": "article",
+      "sourceFile": "nabdh-news-2026-11-20-1009.json",
+      "publishedAt": "2026-11-19T21:56:17+00:00",
+      "source": "Amazon Web Services (AWS)",
+      "score": 22.72
+    },
+    {
+      "id": "fdf1ebbcf783c618ab",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMDQ5aVduak1QSEVub2FLN21qRV9wbVNTZzRJZXF6WnI0MVp5ckdyVThhTER0MzZoVE1wTjdlX1ZvRnUwUzBTOU1vZm1iYjMwQkJMZ3lmWGxjWkpCUU15OXJoSlRYYW5ZV3Uxam5tbjRSdXpuMldSV1NuQ0JmTlk4dnhHYnRmTmJva3N5UkpBTjhObEV6X2JSSjkxOEpLaXhJSE5MMV95OWp5R0VGS1JPdmxJcnFiV3NKR0xKaTFn?oc=5",
+      "titleAr": "AWS تجعل Transfer Manager لنقل S3 بلغة Rust متاحًا عمومًا",
+      "basis": "article",
+      "sourceFile": "nabdh-news-2026-11-20-1009.json",
+      "publishedAt": "2026-11-18T23:48:54+00:00",
+      "source": "Amazon Web Services (AWS)",
+      "score": 18.42
+    },
+    {
+      "id": "001e20945eceeac012",
+      "url": "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/",
+      "titleAr": "تقرير: Meta قد تسعّر جهاز Muse Charm بنحو 300 دولار مع اتصال 5G",
+      "basis": "article",
+      "sourceFile": "nabdh-news-2026-11-20-1009.json",
+      "publishedAt": "2026-11-19T21:58:06+00:00",
+      "source": "تقارير الذكاء الاصطناعي",
+      "score": 22.73
+    },
+    {
+      "id": "87b2502506d7cb89ef",
+      "url": "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/",
+      "titleAr": "تحليل: انقطاعات الخدمات تكشف مخاطر تحديث الأنظمة القديمة وسط تسارع أدوات الأمن",
+      "basis": "article",
+      "sourceFile": "nabdh-news-2026-11-20-1009.json",
+      "publishedAt": "2026-11-19T21:42:31+00:00",
+      "source": "تقارير الذكاء الاصطناعي",
+      "score": 22.67
+    },
+    {
+      "id": "93e9f509f2c7ec3fe7",
+      "url": "https://aitnews.com/2026/11/20/%d8%a3%d8%b3%d8%a8%d9%88%d8%b9-%d8%af%d8%a8%d9%8a-%d9%84%d9%84%d9%85%d8%b3%d8%aa%d9%82%d8%a8%d9%84-%d8%b1%d9%88%d8%a8%d9%88%d8%aa%d8%a7%d8%aa-%d8%a7%d9%84%d8%aa%d9%88%d8%b5%d9%8a%d9%84-%d9%88%d8%b4/",
+      "titleAr": "دبي تطلق برنامجًا لتجهيز 100 مبنى لاستقبال التوصيل الروبوتي بحلول 2029",
+      "basis": "article",
+      "sourceFile": "nabdh-news-2026-11-20-1510.json",
+      "publishedAt": "2026-11-20T06:41:21+00:00",
+      "source": "البوابة العربية للأخبار التقنية",
+      "score": 24.88
+    },
+    {
+      "id": "3381c1b46b2b81fa0a",
+      "url": "https://architectlabs.com/blog/frostbite",
+      "titleAr": "Architect Labs تعرض تصميم معالج Frostbite وتقول إن أنظمة AI شاركت في ابتكاره والتحقق منه",
+      "basis": "article",
+      "sourceFile": "nabdh-news-2026-11-20-1510.json",
+      "publishedAt": "2026-11-20T10:01:41+00:00",
+      "source": "Hacker News",
+      "score": 86.56
+    },
+    {
+      "id": "7bdcb7fa3841c84cc9",
+      "url": "https://www.engadget.com/2322656/openai-is-testing-dots-personal-agents-on-its-20-per-month-plus-tier/",
+      "titleAr": "OpenAI تختبر Dots مع عدد محدود من مشتركي Plus وتوسع Business Standard",
+      "basis": "article",
+      "sourceFile": "nabdh-news-2026-11-20-1813.json",
+      "publishedAt": "2026-11-20T07:31:25+00:00",
+      "source": "Engadget",
+      "score": 25.1
+    },
+    {
+      "id": "b1430f615687828286",
+      "url": "https://www.engadget.com/2322705/the-trump-administration-has-replaced-its-cybersecurity-chief/",
+      "titleAr": "تعيين مؤقت لقيادة الأمن السيبراني الأميركي بعد موجة انقطاعات تقنية",
+      "basis": "metadata",
+      "sourceFile": "nabdh-news-2026-11-20-1813.json",
+      "publishedAt": "2026-11-20T10:53:36+00:00",
+      "source": "Engadget",
+      "score": 26.02
+    },
+    {
+      "id": "b6973fc351e5f01d48",
+      "url": "https://www.bbc.co.uk/news/articles/c6d94pzk9vleo?at_medium=RSS&at_campaign=rss",
+      "titleAr": "BBC تطرح سؤال استخدام الذكاء الاصطناعي في تقييم الجدارة الائتمانية",
+      "basis": "metadata",
+      "sourceFile": "nabdh-news-2026-11-20-1813.json",
+      "publishedAt": "2026-11-20T07:32:19+00:00",
+      "source": "تقنية BBC",
+      "score": 25.1
+    },
+    {
+      "id": "f78d1ebaf9c5d49889",
+      "url": "https://aitnews.com/2026/11/20/asian-chip-stocks-ai-investment-selloff-november-2026/",
+      "titleAr": "أسهم شركات الرقائق الآسيوية تتراجع وسط إعادة تقييم رهانات الذكاء الاصطناعي",
+      "basis": "metadata",
+      "sourceFile": "nabdh-news-2026-11-20-1813.json",
+      "publishedAt": "2026-11-20T06:42:51+00:00",
+      "source": "البوابة العربية للأخبار التقنية",
+      "score": 24.88
+    },
+    {
+      "id": "8a369b2d17a9b0f043",
+      "url": "https://arxiv.org/abs/2611.23365",
+      "titleAr": "بحث يقترح مراقبًا مستقلًا لرصد السلوك غير المقصود للنماذج اللغوية",
+      "basis": "metadata",
+      "sourceFile": "nabdh-news-2026-11-20-2044.json",
+      "publishedAt": "2026-11-20T05:00:00+00:00",
+      "source": "أبحاث الذكاء الاصطناعي",
+      "score": 24.44
+    },
+    {
+      "id": "b048edc1eac377680e",
+      "url": "https://arxiv.org/abs/2611.23375",
+      "titleAr": "ورقة تبحث في كلفة الرموز وما ينجزه وكلاء البرمجة فعليًا",
+      "basis": "metadata",
+      "sourceFile": "nabdh-news-2026-11-20-2044.json",
+      "publishedAt": "2026-11-20T05:00:00+00:00",
+      "source": "أبحاث الذكاء الاصطناعي",
+      "score": 24.44
+    },
+    {
+      "id": "cd580215f9c64a6ed2",
+      "url": "https://arxiv.org/abs/2611.23398",
+      "titleAr": "HardwareDx: نموذج رسومي لتشخيص أعطال عتاد مراكز البيانات",
+      "basis": "metadata",
+      "sourceFile": "nabdh-news-2026-11-20-2044.json",
+      "publishedAt": "2026-11-20T05:00:00+00:00",
+      "source": "أبحاث الذكاء الاصطناعي",
+      "score": 24.44
+    },
+    {
+      "id": "f7a3b0193b2bb179c7",
+      "url": "https://arxiv.org/abs/2611.23456",
+      "titleAr": "VeriMath: إطار بشري الإشراف لتوليد أسئلة رياضيات متوافقة مع المنهج",
+      "basis": "metadata",
+      "sourceFile": "nabdh-news-2026-11-20-2044.json",
+      "publishedAt": "2026-11-20T05:00:00+00:00",
+      "source": "أبحاث الذكاء الاصطناعي",
+      "score": 24.44
+    },
+    {
+      "id": "c58c2ea61f6116e9db",
+      "url": "https://www.wired.com/story/regular-tech-bros-are-worried-about-honeypots/",
+      "titleAr": "تحذيرات من أساليب الهندسة الاجتماعية طويلة الأمد التي تستهدف العاملين في التقنية",
+      "basis": "metadata",
+      "sourceFile": "nabdh-news-2026-11-20-2044.json",
+      "publishedAt": "2026-11-20T11:00:00+00:00",
+      "source": "Wired",
+      "score": 26.05
+    },
+    {
+      "id": "e7264247c8d50ed476",
+      "url": "https://arxiv.org/abs/2611.23817",
+      "titleAr": "بحث يقترح تغذية وكلاء البرمجة بمقاييس التعقيد والتغطية أثناء التنفيذ",
+      "basis": "metadata",
+      "sourceFile": "nabdh-news-2026-11-20-2044.json",
+      "publishedAt": "2026-11-20T05:00:00+00:00",
+      "source": "أبحاث الذكاء الاصطناعي",
+      "score": 24.44
+    },
+    {
+      "id": "2fb42fa5fa3e9829b6",
+      "url": "https://arxiv.org/abs/2611.23588",
+      "titleAr": "ARISE: ذاكرة تتطور من إخفاقات الوكلاء لتحسين الدقة وتقليل كلفة التشغيل",
+      "basis": "metadata",
+      "sourceFile": "nabdh-news-2026-11-20-2044.json",
+      "publishedAt": "2026-11-20T05:00:00+00:00",
+      "source": "أبحاث الذكاء الاصطناعي",
+      "score": 24.44
+    },
+    {
+      "id": "e2dca3baf6f62afaf1",
+      "url": "https://arxiv.org/abs/2611.23678",
+      "titleAr": "ورقة تقترح سجلًا حاكمًا لتجارب التعلم الآلي التي ينفذها الوكلاء",
+      "basis": "metadata",
+      "sourceFile": "nabdh-news-2026-11-20-2044.json",
+      "publishedAt": "2026-11-20T05:00:00+00:00",
+      "source": "أبحاث الذكاء الاصطناعي",
+      "score": 24.44
+    },
+    {
+      "id": "03b179946dd0e55198",
+      "url": "https://arxiv.org/abs/2611.21885",
+      "titleAr": "بحث يختبر قدرة نموذج لغوي على تعديل أوزانه بنفسه دون تدريب تقليدي",
+      "basis": "article",
+      "sourceFile": "nabdh-news-2026-11-21-0318.json",
+      "publishedAt": "2026-11-18T05:00:00+00:00",
+      "source": "أبحاث الذكاء الاصطناعي",
+      "score": 75.97
+    },
+    {
+      "id": "945d12baa1ef9bf958",
+      "url": "https://www.androidauthority.com/grapheneos-team-google-pressure-3737525/",
+      "titleAr": "GrapheneOS تزعم تعرضها لضغط من Google وتحذر من قيود محتملة على أنظمة Android البديلة",
+      "basis": "article",
+      "sourceFile": "nabdh-news-2026-11-21-0318.json",
+      "publishedAt": "2026-11-20T19:21:49+00:00",
+      "source": "Hacker News",
+      "score": 59.79
+    },
+    {
+      "id": "bf82adff4bf6ffb39c",
+      "url": "https://github.com/tristanbuckmaster/navier-stokes/",
+      "titleAr": "مستودع يرافق ادعاءً جديدًا بشأن معادلات Navier–Stokes بصياغة Lean مع فجوات تحقق معلنة",
+      "basis": "readme",
+      "sourceFile": "nabdh-news-2026-11-21-0318.json",
+      "publishedAt": "2026-11-20T15:34:31+00:00",
+      "source": "Hacker News",
+      "score": 79.83
+    },
+    {
+      "id": "d32b20a39c5cb2dedb",
+      "url": "https://www.nbcnews.com/business/markets/anthropic-shares-markets-selloff-nasdaq-rcna610394",
+      "titleAr": "تراجع أسهم Anthropic بعد أول يوم تداول قوي بالتزامن مع موجة بيع في أسهم التقنية",
+      "basis": "metadata",
+      "sourceFile": "nabdh-news-2026-11-21-0318.json",
+      "publishedAt": "2026-11-20T17:44:01+00:00",
+      "source": "Hacker News",
+      "score": 74.75
+    }
+  ],
+  "selectedForEditorialPreparation": [
+    {
+      "id": "47396adf5e31273b13",
+      "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/",
+      "titleAr": "Reuters يرصد مخاوف خصوصية وسلامة في وكيل Meta Muse",
+      "basis": "article",
+      "sourceFile": "nabdh-news-2026-11-20-0037.json"
+    },
+    {
+      "id": "f88414c8cfe7b454dc",
+      "url": "https://arstechnica.com/gadgets/2026/11/google-will-launch-android-app-verification-requirement-globally-in-january-2027/",
+      "titleAr": "Google تبدأ التوسع العالمي للتحقق من مطوري تطبيقات Android في يناير 2027",
+      "basis": "article",
+      "sourceFile": "nabdh-news-2026-11-20-0037.json"
+    },
+    {
+      "id": "1578edf8b253799c50",
+      "url": "https://news.google.com/rss/articles/CBMijwVBVV95cUxNemc1ZVlHQW9ITlR4czdaZDR6WGZFRGMxNHd1TWpabGJjQ0FjTk1VWE52bnk1ZDBZTDAzZFRlSUZYUnhLY0FCdnBZREhhdWhBQ05tVGlQZ2xacGpLQmpBbXB2bjRQSEM3eEg1eG5iaHEzS21mU3hfX3VCdDVQSWtpNXBvd0dmMXYwUFlMU0xtaUh2Ujc5N0dLZ3AyNDJuaC1hd1pKV0JPUXZKb1NVMGU2S2Z3STE2ZF9CdjNidHhPVmd4RDNNUVZZVGY4MUVJS01SZndGOTk1bTZOb2FrMzRHTzdDRlF5RzRiM1ZkQTBMU2xrZWJiTVZSSzZadFBzZG9FM29EODM4a3dDWGYwZ1FrY0FjbUFkaFFVa094Nmw0N1Rub0x1LUN1MjB2ZGpKbS1oS01od3IzRHh5OVhHQTBWU244bVhFV3RYZC0wdHhEdnlqYnc4YlVBNzJsbjhTdWFxdHMyNHhwZW1LQzJsV29kbnZueGZXVEptYnhYeUdDb3pnSm9MNHA5VkU4bDVDYm5ORTd5Mm4zQW9Vd3B2VU5nUGZ0MzZHbEtuUmZsbjh3UGVUMk9fOXZyMkQ0bUpyUHllZmpQNUxoVW1SOHEwZkI3OVpPclZKTUVZaklmUm5TNUVZTWVMQ3g4WjdtRUJvTnNzclVEdFhYblZxLU0yRk9OWWwyTjVaUkFkSTdZeE5jZ3VsMXhrbzd3bFVtVGNQMnBlMWtYT0lLdFEybGEwOWJOT0RtdUxPWGNqdWFRaUJRbU1NdkxzMjA4dEkzVU5UUGdWaVlFWUZfS0RUbEgtVkppWk5Wdm5jWkZPZDE4NU5La1hzZGUxUXpLQnZIaWF3QUJqYlpIWFZXRHk3R3FyX1pr?oc=5",
+      "titleAr": "HUMAIN تعرض منصة صوتية عربية تدعم اللهجات ووكلاء المحادثة الفورية",
+      "basis": "metadata",
+      "sourceFile": "nabdh-news-2026-11-20-0037.json"
+    },
+    {
+      "id": "2e1fba6f9ed9affbda",
+      "url": "https://news.google.com/rss/articles/CBMi1gRBVV95cUxQeDJlOE1TdUpmUjZZN2dxZG12NUJXbVA5MGIyRmlld0FyME1CRkljTTZxYi14VG1Dai1DRERCOXlQQnVsbGNpV0tkUERWZ1c3Zm9UNHBySkJxem9vU0VaWnZRSmRDdHR0SUtUc3FCR3QwMUNRVmVNY0o2M1AtWHJzc2RuTzl0c1JITVZsbVVpU2pLdWEzR1U0Z1dYekZJSDBpdFRQek1aeWJ3bDdiX2RRUF9FaTJPQWkyNjEyZlF3V3laWjFhbGVDOFVaTnVnWUYzT0pTOHRGQlNUZWIzWmNILWZXNG51bG9WNjZhb1UzWEJYQm5RaWhiVnhtU0U2MEtoS2NLOVJJTEp2NjllR0dKa0VLWVh3NnVDc2Y1Mlphdm1pdHd2b2xSbEVBUmhYb0w1U1BrRFMyZjBIUW1xOEh2aVU1V3Z4cHJ6Rm83TFRYU05LMGctQ215NzJhWDQ5UGg2bU5NbEY0TXRGYURYNU1uZzRNMjlmVEctaUpKVXNKRWYtOThOS1NpY3dHam53YzVEcTFsenZuU0VzRjZwMkstVGpiVTItT05PY0x6UnA2dU5WNjhsMnJISUJXbXc1cDZyTHVqN3RBUnJzcUZPYUpxdzFYekZvYTJYb2haMUZjNHZqNk9sLW1VZUV3dm1EWmFjNFZZbVZ3T1dxT08yZGtIek1takMyampyLWhxTlVmT2VKMy1JZDRHUDJBa0JnMnVadE9rM01YV2sxNVdpS2dBVm1kYlBuZU5BTzluUTNpNVRxTTEyWGVqaWYtZTZyZ0l2bUpscFZB?oc=5",
+      "titleAr": "السعودية تتصدر مؤشر الخدمات الإلكترونية وتأتي رابعة في مؤشر الأمم المتحدة للحكومة الإلكترونية",
+      "basis": "article",
+      "sourceFile": "nabdh-news-2026-11-20-1009.json"
+    },
+    {
+      "id": "dc2fa2fb88cfbd46a7",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQSEl0SUtqbjlNYXk5czNYWUp3REwwNkZOYkZ2ZFlFaW5NUEdvM1h0bmpzUGhEamlmdDFLOExfVTB5S1lXdE5VMW9hQzhOT1FPWVBvV3NvZkZrMEItaWhlQ2hXSHNnZUNBa0dEaExpYUh4MmJYSC1Yd1p3Mm5FTUNfUjZSSVJvbWs?oc=5",
+      "titleAr": "AWS تطلق Common Runtime 1.0 رسميًا لمكونات HTTP وS3 وMQTT",
+      "basis": "article",
+      "sourceFile": "nabdh-news-2026-11-20-1009.json"
+    },
+    {
+      "id": "fdf1ebbcf783c618ab",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMDQ5aVduak1QSEVub2FLN21qRV9wbVNTZzRJZXF6WnI0MVp5ckdyVThhTER0MzZoVE1wTjdlX1ZvRnUwUzBTOU1vZm1iYjMwQkJMZ3lmWGxjWkpCUU15OXJoSlRYYW5ZV3Uxam5tbjRSdXpuMldSV1NuQ0JmTlk4dnhHYnRmTmJva3N5UkpBTjhObEV6X2JSSjkxOEpLaXhJSE5MMV95OWp5R0VGS1JPdmxJcnFiV3NKR0xKaTFn?oc=5",
+      "titleAr": "AWS تجعل Transfer Manager لنقل S3 بلغة Rust متاحًا عمومًا",
+      "basis": "article",
+      "sourceFile": "nabdh-news-2026-11-20-1009.json"
+    },
+    {
+      "id": "dbe111187a465a8a1f",
+      "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
+      "titleAr": "Apple تبحث عن قائد هندسي لبناء وكيل يستخدم الحاسوب عبر التطبيقات والويب",
+      "basis": "article",
+      "sourceFile": "nabdh-news-2026-11-20-1009.json"
+    },
+    {
+      "id": "7bdcb7fa3841c84cc9",
+      "url": "https://www.engadget.com/2322656/openai-is-testing-dots-personal-agents-on-its-20-per-month-plus-tier/",
+      "titleAr": "OpenAI تختبر Dots مع عدد محدود من مشتركي Plus وتوسع Business Standard",
+      "basis": "article",
+      "sourceFile": "nabdh-news-2026-11-20-1813.json"
+    },
+    {
+      "id": "03b179946dd0e55198",
+      "url": "https://arxiv.org/abs/2611.21885",
+      "titleAr": "بحث يختبر قدرة نموذج لغوي على تعديل أوزانه بنفسه دون تدريب تقليدي",
+      "basis": "metadata",
+      "sourceFile": "nabdh-news-2026-11-21-0318.json"
+    },
+    {
+      "id": "945d12baa1ef9bf958",
+      "url": "https://www.androidauthority.com/grapheneos-team-google-pressure-3737525/",
+      "titleAr": "GrapheneOS تزعم تعرضها لضغط من Google وتحذر من قيود محتملة على أنظمة Android البديلة",
+      "basis": "article",
+      "sourceFile": "nabdh-news-2026-11-21-0318.json"
+    },
+    {
+      "id": "bf82adff4bf6ffb39c",
+      "url": "https://github.com/tristanbuckmaster/navier-stokes/",
+      "titleAr": "مستودع يرافق ادعاءً جديدًا بشأن معادلات Navier–Stokes بصياغة Lean مع فجوات تحقق معلنة",
+      "basis": "readme",
+      "sourceFile": "nabdh-news-2026-11-21-0318.json"
+    },
+    {
+      "id": "2fb42fa5fa3e9829b6",
+      "url": "https://arxiv.org/abs/2611.23588",
+      "titleAr": "ARISE: ذاكرة تتطور من إخفاقات الوكلاء لتحسين الدقة وتقليل كلفة التشغيل",
+      "basis": "metadata",
+      "sourceFile": "nabdh-news-2026-11-20-2044.json"
+    }
+  ],
+  "specialSeenOnly": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "name": "NVIDIA OpenShell",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "canonicalRepository": "https://github.com/ai-openshell/openshell"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "name": "Canva Craft",
+      "seen": true,
+      "feed": false,
+      "editorial": false
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "name": "1Password agent sign-in",
+      "seen": true,
+      "feed": false,
+      "editorial": false
+    }
+  ],
+  "previousBatch": {
+    "file": "editorial/incoming/nabdh-news-2026-11-21-1744.json",
+    "records": 12,
+    "feedExact": 12,
+    "editorialExact": 12,
+    "mergedThrough": "PR #114",
+    "mergeCommit": "0fb18b9562c966a848a7610c149ed95b84796270"
+  },
+  "projectCoverage": {
+    "feedProjects": 100,
+    "editorialExactProjects": 99,
+    "missingProject": {
+      "id": "6e18aa23e1f0d14413",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "title": "HyperFrames"
+    }
+  },
+  "projectLibraryBaseline": {
+    "curated": 31,
+    "active": 29,
+    "archived": 2,
+    "eightPriorProjectsReviewed": true,
+    "eightReadmeAndLicenseHashesUnchanged": true
+  },
+  "officialExecution": {
+    "tests": "CI executed python -m unittest discover -s tests -v; 30 tests passed.",
+    "editorialValidate": "CI executed python scripts/editorial.py validate on current site/data/editorial.json; success.",
+    "pendingValidate": "not run",
+    "import": "not run",
+    "localCheckout": "not available; DNS/clone unavailable"
+  },
+  "deployment": {
+    "runId": 44917239922,
+    "headSha": "0fb18b9562c966a848a7610c149ed95b84796270",
+    "conclusion": "success",
+    "artifactId": 14711468828,
+    "artifactEditorialEntries": 1141,
+    "artifactFeedItems": 800,
+    "publicPagesFetch": "DisabledError; live URL not independently verified"
+  },
+  "sourceFiles": [
+    {
+      "path": "editorial/incoming/nabdh-content-2026-11-19-1553.json",
+      "sha": "6519d7a223e23d1fc82b736fa6c6f3a6dceceb81",
+      "size": 50838
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+      "sha": "5cbbde735820d3fbbd6ffc5e8726ba8010d66dbe",
+      "size": 54158
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-24-0840.json",
+      "sha": "68b728fa673c7d5b2198b00b0c5fcc1b9a0bbc18",
+      "size": 41549
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "sha": "b1aaf887300d600d15b9cd66b51321604d8da139",
+      "size": 48908
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-24-1439.json",
+      "sha": "88a0f1efaa8699b1e31a83ac541daba264885113",
+      "size": 31855
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-24-1740.json",
+      "sha": "d6fa64cfea40876a5e88aeea44c2525064fcf9fd",
+      "size": 31309
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-24-2043.json",
+      "sha": "9651fed60f2c1a32e58d95af66cd0fb4f3ab29ae",
+      "size": 35970
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-24-2342.json",
+      "sha": "2f172ad8645bce9232ae1e07f17e5b3cc9f2f94c",
+      "size": 31607
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-24.json",
+      "sha": "5d09a1a8bf7f1f0d6ca500296d9707c7dba95fd3",
+      "size": 40127
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-25-0250.json",
+      "sha": "6ca9be0501cea58c97733db77363c38d1fb4ebb6",
+      "size": 25312
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-25-0554.json",
+      "sha": "0af481e73f1c598c09e347febdbb0843c81c6741",
+      "size": 42722
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-25-0845.json",
+      "sha": "6ec634639d38f8884a4a9fb03fd9699457390da3",
+      "size": 33021
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-25-1143.json",
+      "sha": "42a3f5335cf768033ca7a1f596078f38eb2029bf",
+      "size": 19699
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-25-1442.json",
+      "sha": "99ce95d76b905597078eb53082a1c4685082b02e",
+      "size": 26934
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-25-1742.json",
+      "sha": "7b49c3322083612bc034791c03e8e7868e5710cc",
+      "size": 23895
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-25-2038.json",
+      "sha": "f20fd110855271a58eb750962ec67abd2a880b8f",
+      "size": 22349
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-25-2342.json",
+      "sha": "67a086dc877cc360518d3027ad4a14e9e84a7858",
+      "size": 37381
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-26-0250.json",
+      "sha": "ca50fd0bec339642cfe1f0b4945253c62e6d4a7d",
+      "size": 28763
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-26-0545.json",
+      "sha": "8aaf21148bebff0b1420b4c6dd3862e8829849b5",
+      "size": 23176
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-26-0840.json",
+      "sha": "bcf33df52194b01060e5a4b3b777561b88c969cb",
+      "size": 21312
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-26-1152.json",
+      "sha": "c06cebf6b7957dc55c8bee28ca267c512e5ea42f",
+      "size": 33709
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-26-1445.json",
+      "sha": "c7fe44ccbf051bc85b89164ce2d1acd3aa57de64",
+      "size": 25617
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-26-1745.json",
+      "sha": "7c112aa8f7b5b7056c2819a5897c0848e0e7fdcb",
+      "size": 37234
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-26-2042.json",
+      "sha": "3137089d6e6a7b08845462514f354f129456e8e9",
+      "size": 33865
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-26-2342.json",
+      "sha": "97d56c54768f6ce8112b2c14b0ff42bdb5144c66",
+      "size": 54423
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-27-0038.json",
+      "sha": "7a9edf47ccb48c8960073c9fc6eb4bdb0540ca44",
+      "size": 40868
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-27-0240.json",
+      "sha": "27e9663b2cb55cda16f2fb70ca1a718d0f35ef7a",
+      "size": 37107
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-27-0549.json",
+      "sha": "679a308b144483ef53b094394e1217538bf1978b",
+      "size": 33231
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-27-0619.json",
+      "sha": "d5228abb39972066b739155b4fb7a8179993455f",
+      "size": 65720
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-27-0847.json",
+      "sha": "9d686fb606509755601618cf886ac3bd0e5b49f9",
+      "size": 50644
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-27-1141.json",
+      "sha": "fa48ff89641ec45430471ddce4df8783c228ce04",
+      "size": 53787
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-27-1443.json",
+      "sha": "c67141c5c3a0e451aff2cd6a8dd0c002e61b3006",
+      "size": 53978
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-27-2045.json",
+      "sha": "f0229a44ce7581db7d8957319a023faea189541e",
+      "size": 46084
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-27-2113.json",
+      "sha": "92821d67483f60c53e823a0b023ff9cfb5c3a525",
+      "size": 56996
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-27-2347.json",
+      "sha": "70e44c66c3cf9cfa1e44b09b05a28a70c378c6e7",
+      "size": 64559
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-28-0244.json",
+      "sha": "ed1e1cc5291d476c1ccacf7d21d73abb77552b7b",
+      "size": 33903
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-28-0555.json",
+      "sha": "315100dfa8a90ff92c9ae5b538ff050167f2f14a",
+      "size": 47838
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-28-0609.json",
+      "sha": "8efa1fd9599d7862b8e61f4ac22ed4a161bb4d2f",
+      "size": 54895
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-28-0846.json",
+      "sha": "f999d75789553ce5c87dec9463e023433a7126ca",
+      "size": 56750
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-28-0914.json",
+      "sha": "2f3eaa2d7e45d67c2e44f94da0da1f944925b2a3",
+      "size": 57082
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-28-0943.json",
+      "sha": "01bf866ffc7eab47fd6b4eda85d42d0026213be7",
+      "size": 48993
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-28-1151.json",
+      "sha": "468747a84ca58368696cdf5b1bcf200e9416a034",
+      "size": 37058
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-28-2045.json",
+      "sha": "c664e39c49ecdb1f5516350dcc75449b8a7f5fda",
+      "size": 52024
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-29-0243.json",
+      "sha": "e9f31a6099279e9c860307533f43b7eb8d8711e0",
+      "size": 51005
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-29-0319.json",
+      "sha": "bb0a8184c06d575a27c778d6063d51571dead582",
+      "size": 53508
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-29-0559.json",
+      "sha": "da75de9a6dca73741dad5daa1b32b7a67053b651",
+      "size": 62436
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-29-0855.json",
+      "sha": "fadf854386415a468b99248200c1a205f12df103",
+      "size": 51587
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-29-1145.json",
+      "sha": "de7ea61f9e14b81f983faaf21b5c9c6e1fdddd98",
+      "size": 51141
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-29-1525.json",
+      "sha": "521e147455824f99cbc7caafe9366bf7a15104ac",
+      "size": 37365
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-29-1755.json",
+      "sha": "fc9d508649f75610244bbc423cf38cfe78962257",
+      "size": 31017
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-29-2045.json",
+      "sha": "891780f93c96511e5140b5df7a0dd41b8f5cce7c",
+      "size": 54251
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-30-0255.json",
+      "sha": "fdf800d02b5012f31fcdb6f9d43f79766028b65c",
+      "size": 29937
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-30-0540.json",
+      "sha": "06b5195b44e0c58ac1aac07ad25f63d6c8d45c5d",
+      "size": 16377
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-30-0839.json",
+      "sha": "1f7e377a69c0f490c325dc80718dce33a714f43d",
+      "size": 24177
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-30-1146.json",
+      "sha": "a96b8c20d2b44f2e27fcf2c08bfe446667dbb7b5",
+      "size": 15698
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-30-1442.json",
+      "sha": "7cdb583309843dbefd5d93f63d47a2e15da1df5f",
+      "size": 3392
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-30-1811.json",
+      "sha": "2fe4f53352f2c556b9eb87175b363874c390484d",
+      "size": 14029
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-30-2044.json",
+      "sha": "19b5b936609bc7ebffd6c4a8c372765c923fd902",
+      "size": 40611
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-30-2341.json",
+      "sha": "8988d2c951f97cb8beb7abd1edbcd3994d660f07",
+      "size": 22624
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-31-0247.json",
+      "sha": "e53fd6cb756bbed9813c6396e803a32e09acf3a7",
+      "size": 26987
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-31-0840.json",
+      "sha": "7dbe21502bd54c6d62ef20d1a3514957cae856c3",
+      "size": 31009
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-10-31-1811.json",
+      "sha": "9f530e0e81a5a102b85805837487ecea1404c372",
+      "size": 25322
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-01-0542.json",
+      "sha": "14222b7b3eedcedfb7122b2ca2cefed57cdb4d86",
+      "size": 40337
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-01-1158.json",
+      "sha": "a3e61b621e31d1b30089da07a0f8015bf83760e6",
+      "size": 18550
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-02-1446.json",
+      "sha": "405120544206256f853fe5a7545787a63451678e",
+      "size": 40747
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-02-2347.json",
+      "sha": "41155826ae5385d9efbdec284da0dd6030e238cc",
+      "size": 15680
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-03-2039.json",
+      "sha": "16f9cff0b37350bf5cb4122769611280ea1812a6",
+      "size": 75409
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-03-2136.json",
+      "sha": "ab288022f6ccdb7b8e6f3918d24e6bd2b463e860",
+      "size": 20619
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-03-2222.json",
+      "sha": "977bfe9055bd279415c6fc2d6f274991e05ff9c8",
+      "size": 34182
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-03-2342.json",
+      "sha": "28c1dbcca56d45a8304fc6e8dc0374f2f24db2e0",
+      "size": 31771
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-04-0238.json",
+      "sha": "4c6badc58d0ce88c021f76e3602d161e3fe3886e",
+      "size": 17939
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-04-0841.json",
+      "sha": "15d7f07f638a499e7de7c3e58c1ee551d03979c3",
+      "size": 25729
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-04-1143.json",
+      "sha": "39ee0ff14b77fdce08667ac3ad598d0b201a2a58",
+      "size": 23710
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-04-1222.json",
+      "sha": "3e1c0e612d13fca7799e3d8cc0de5cb91828c35d",
+      "size": 25948
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-04-2338.json",
+      "sha": "155e52a666ede73f4bbd464a148b2bbb757f8dac",
+      "size": 16284
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-05-0409.json",
+      "sha": "f8bbf66d06f72ce7dc1c123749e493182870b1ab",
+      "size": 20680
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-05-1140.json",
+      "sha": "587eb7a8ed5877cf045c458f2473b8782f5c8d8d",
+      "size": 244833
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-05-1208.json",
+      "sha": "322b01fe60f4f68e5d09799cb17f52b99f96de9e",
+      "size": 28022
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-05-1248.json",
+      "sha": "12d509699b9dda2c77dd51dc23be5f5ace383150",
+      "size": 30686
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-06-0308.json",
+      "sha": "35b6cbe2f8d580eda9b9f02840bee5ab1f22058e",
+      "size": 28107
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-06-0842.json",
+      "sha": "9c9973124e29a2779a9e9da3114c9f4fe61c1e6a",
+      "size": 32422
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-06-0909.json",
+      "sha": "cb71956fc187fffc3ace08d9acd3a0123accbb37",
+      "size": 32294
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-06-1146.json",
+      "sha": "9cc7cc6ef2d1d80702549bcedb6aaf1f6025defc",
+      "size": 29794
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-06-1220.json",
+      "sha": "0e4788a4383eccc4f870f7eb3f40f6998b5c140e",
+      "size": 27837
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-06-1458.json",
+      "sha": "8b8541e316656f1f0b83a4d8a938d2bff3bf21b4",
+      "size": 27753
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-06-1801.json",
+      "sha": "00c01169b87268d4a37ddb96e92c252746a3cbc6",
+      "size": 30692
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-06-1813.json",
+      "sha": "bdf961c7f6b4a869243f9fd16a1025d060cdc6de",
+      "size": 28043
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-06-2046.json",
+      "sha": "3e22396d9d09cd51ec0f2d173357c16f732e0cf8",
+      "size": 8859
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-06-2127.json",
+      "sha": "efa13ff90e452dac9a4a2d628280b46d497cc175",
+      "size": 25169
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-06-2342.json",
+      "sha": "da038173414c8653ba849ee7122df7c14e0fb3c0",
+      "size": 22694
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-07-0247.json",
+      "sha": "8366b714e87dd44f122b805488b94100981b208e",
+      "size": 12643
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-07-0842.json",
+      "sha": "b7fb0aa370a76f6ba6f62a18a97b5c18f23ce5ca",
+      "size": 28731
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-07-2338.json",
+      "sha": "c3b9a59ef1416ed0465736ea82e5167cef780dd0",
+      "size": 61977
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-08-0005.json",
+      "sha": "55ad720ebe6241e35fc9fa4edb6b98a43e9beb38",
+      "size": 9039
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-08-0035.json",
+      "sha": "9db0e550d7416cd76542a60d11ff80fc74ac7629",
+      "size": 14382
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-08-0554.json",
+      "sha": "4d3b30adde9331951c7914a4fea9ad1ce17b26ca",
+      "size": 18032
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-08-0846.json",
+      "sha": "ac601a4732b079e72fe40c8e336d46c8bb66b42b",
+      "size": 17680
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-08-1453.json",
+      "sha": "0948dd215dae8022c3612e2d6139970571886cbb",
+      "size": 207876
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-08-1510.json",
+      "sha": "51383ae4b46aba26b44c0e5e3380ce9c78d011b2",
+      "size": 5936
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-08-2115.json",
+      "sha": "9cc1276d2f1300f437d0075a82253518c9e9a37c",
+      "size": 43725
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-09-0843.json",
+      "sha": "8a8d60740fbb4cf6a46acc1b7e4d81a993e1fd0c",
+      "size": 17563
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-09-1246.json",
+      "sha": "b8a709b92169bb647fe854dba36ab1db31f1aa72",
+      "size": 2676
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-09-1446.json",
+      "sha": "3fea4f6f8618f65307baa0c7bcc6200c9e03aafe",
+      "size": 3343
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-10-0243.json",
+      "sha": "3f99cb6e5eee6deeb135274863f58b39992abc8e",
+      "size": 44241
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-10-0846.json",
+      "sha": "16cf44473f53bfe7d63a0d7ff2035bc6d614a3e0",
+      "size": 31036
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-10-2039-reconciled.json",
+      "sha": "06f57ec6a12de6f94670b6355861e88473d15388",
+      "size": 65947
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-10-2338.json",
+      "sha": "d47e017cdc8542340b622a1a4ab9ec680cef7386",
+      "size": 15775
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-11-1144.json",
+      "sha": "3d43cb886aadeeb8cb9174ddc9a6b0082e70814c",
+      "size": 7690
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-11-1836.json",
+      "sha": "c14c42384ca8ebce0f689e5a33a5261af57cb93d",
+      "size": 26971
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-11-2338.json",
+      "sha": "acc81ab5e38c1709195ac2b82186ea9988fd064a",
+      "size": 22777
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-12-0846.json",
+      "sha": "e0f1cbcd657dcfb800aa612efb405b040fefd5a2",
+      "size": 32382
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-12-1138.json",
+      "sha": "98e3bbbac9f7836dd37263db2b905a01f1d7d76d",
+      "size": 11330
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-12-1439.json",
+      "sha": "30a5a4a4ca7e2ad733d793c8322d11653c7702a2",
+      "size": 2827
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-12-1811.json",
+      "sha": "3fa1971dc22753262058608339db4b8644e27dd4",
+      "size": 79504
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-12-2038.json",
+      "sha": "d1a2ea8cba0f9939131ba81bf68c6c89e47b779d",
+      "size": 29334
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-12-2105.json",
+      "sha": "047a5c19b6b238f5aa42a0d770ae65d363013a09",
+      "size": 52926
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-13-0306.json",
+      "sha": "99941a28cd1c25a640f97cfd95f4b0922c2b4395",
+      "size": 188049
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-13-2343-reconciled.json",
+      "sha": "f7e6531f61cb293c0300b2df756dd51ea38e2e9d",
+      "size": 59653
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-14-0247-reconciled.json",
+      "sha": "43b5135ba488f8c35d46d4e53a6dd0b121c68030",
+      "size": 83769
+    },
+    {
+      "path": "editorial/incoming/nabdh-editorial-2026-11-14-1444-reconciled.json",
+      "sha": "17a2264b4eb08a0ade5e5e57e691fed280ebd9bf",
+      "size": 84156
+    },
+    {
+      "path": "editorial/incoming/nabdh-import-2026-11-20-1443.json",
+      "sha": "7de23b5d7b169bc71bb053ec2426351a99fe09a2",
+      "size": 117890
+    },
+    {
+      "path": "editorial/incoming/nabdh-import-2026-11-20-1745.json",
+      "sha": "bbf4d44f0cce94ace02367dba98379870a3ed414",
+      "size": 29007
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-13-0612.json",
+      "sha": "af65c96accaa731347bbf474914a15319e1f9ce3",
+      "size": 28829
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-14-0545.json",
+      "sha": "2bcda40b970940c6f20e2451cc1215acd14d0e83",
+      "size": 25454
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-14-2056.json",
+      "sha": "87f2361000271fa21abdd6e6e65101ffa990f2c1",
+      "size": 17933
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-15-1210.json",
+      "sha": "203d5db830f77bf6d074e062bbb8e8402bb0d2b1",
+      "size": 20656
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-15-1239.json",
+      "sha": "0ba4e45931013192e0862fd61ddc3c3ef6394d9a",
+      "size": 24015
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-15-1740.json",
+      "sha": "356c729befaf3bd859cfb714febf247bd1499adb",
+      "size": 22826
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-16-0245.json",
+      "sha": "2fbb532da2e6833e4047e82aafe5f82a2ac18149",
+      "size": 30395
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-16-0307.json",
+      "sha": "8a707193eda1a34a5f53d40fdc39facf36ad8e48",
+      "size": 5659
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-16-0617.json",
+      "sha": "38b89177f71c51f9478f583c8ec721450fc436b0",
+      "size": 26063
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-16-0900.json",
+      "sha": "09daaf9bd750ca9487b40de04d18dbea2b8e6575",
+      "size": 21205
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-16-0911.json",
+      "sha": "446962ae730920b4539dca088ab1bc0e8e23a295",
+      "size": 24537
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-16-1242.json",
+      "sha": "d7100780c4c06a2e567c934c19946f6a1bd9c795",
+      "size": 29434
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-16-2116.json",
+      "sha": "f670a794a1590beaac4ab7248ec2dfcc0fc24694",
+      "size": 30349
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-18-0001.json",
+      "sha": "555899895f7db5841739fe956740cd1aeaca015a",
+      "size": 28388
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-18-0246.json",
+      "sha": "9c1225c3a7010e05cbfa6dc99d481beec250efc1",
+      "size": 34192
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-18-0846.json",
+      "sha": "2e7bcc946eabb5ed9adcae7c90add82ab765f206",
+      "size": 25659
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-18-0925-reconciled.json",
+      "sha": "26c37c84f808c735f24ba3b5f67e0ad5542dd0a6",
+      "size": 110674
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-18-1836-matches.json",
+      "sha": "ee439f697cb2ef0f1e358cf1e575f9f389031311",
+      "size": 99775
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-18-2043.json",
+      "sha": "d8f15342d69181505563754c5a283a850c34a815",
+      "size": 24008
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-18-2338.json",
+      "sha": "001aab5e4192a6661678de6eb0e9ee8074a08c7f",
+      "size": 39610
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-19-0005.json",
+      "sha": "2e212cfdc9a2efc46c6ac4f5767a908b815bc126",
+      "size": 12941
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-19-0240.json",
+      "sha": "c9f73ec4e3e518a2e1b44a104befe6fe1fc999c6",
+      "size": 11152
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-19-1140.json",
+      "sha": "1515838acb0ce9e121fa2ecb8299af2ec87ec41c",
+      "size": 21581
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-20-0037.json",
+      "sha": "6a59fd2bfc1a6bef2bb1a2414b30c5e3f4c7254c",
+      "size": 37208
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-20-1009.json",
+      "sha": "9a11899286eac2cf433e691ebc63c083d7e8d1ee",
+      "size": 21143
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-20-1510.json",
+      "sha": "9e11a34269a021caebc34329768526a55b3806c1",
+      "size": 28685
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-20-1813.json",
+      "sha": "cf9f193389fec404c47d8942623cae250ea9a9e4",
+      "size": 14872
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-20-2044.json",
+      "sha": "bbcc8e2f29349dc48fc842a7bcea41811d3111b7",
+      "size": 22606
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-21-0318.json",
+      "sha": "a59e2ba8a086758ea0c9cbc24e45cb504fa08492",
+      "size": 11129
+    },
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-21-1744.json",
+      "sha": "d328de985b8a4ddc136bc3aeeae87d6e2b477f2f",
+      "size": 29919
+    },
+    {
+      "path": "editorial/incoming/nabdh-project-refresh-2026-11-12-2038.json",
+      "sha": "093c2d2f73d39fa51c4159bbf8898ad937736088",
+      "size": 21884
+    },
+    {
+      "path": "editorial/incoming/nabdh-project-refresh-2026-11-13-0306.json",
+      "sha": "59bce227aef77f2dbd6f877512a3e42045202bd6",
+      "size": 32784
+    },
+    {
+      "path": "editorial/incoming/nabdh-projects-2026-11-20-0037.json",
+      "sha": "a3d7713aeef814aebe4e24240810b71d17f60ece",
+      "size": 50995
+    }
+  ],
+  "decision": "Do not import any new record in this run. Keep 30 exact Feed candidates pending until the official validate/import path can run on a fresh checkout. Do not import out-of-feed records or derive replacement IDs."
+}
