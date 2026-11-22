@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "items": {
+    "f6f5282ad9e3c36bec": {
+      "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+      "titleAr": "Signal تقيّد التقاط الشاشة للحد من وصول وكلاء الذكاء الاصطناعي إلى المحادثات",
+      "summaryAr": "أعلنت Signal في 20 نوفمبر 2026 أنها ستحد من التقاط محتوى الشاشة بواسطة بعض وكلاء أنظمة التشغيل: على iOS 27، وعلى إصدارات Android عندما تتمكن من اكتشاف محاولة مساعد ذكاء اصطناعي قراءة الشاشة. تقول المؤسسة إن البيانات الملتقطة قد تصبح متاحة لنظام الوكيل محليًا أو عبر خادم. وتوضح أن الحماية لا تغطي كل طرق الوصول إلى بيانات التطبيق، ولا يمكن تطبيقها حاليًا على macOS.",
+      "whyItMatters": "تشفير الرسائل لا يحل وحده مشكلة قراءة محتوى الشاشة بعد ظهوره على الجهاز. تبرز القصة حاجة المطورين إلى واجهات موثقة تسمح برفض وصول وكلاء النظام إلى بيانات التطبيقات الحساسة دون إضعاف وظائف التطبيق.",
+      "audience": "مستخدمو تطبيقات المراسلة المشفرة، ومطورو التطبيقات، ومهندسو أمن أنظمة التشغيل والخصوصية.",
+      "nextSteps": [
+        "راجع إعدادات Screen Security والحماية المتاحة في إصدار Signal ونظامك.",
+        "لا تفترض أن حظر لقطات الشاشة يغطي قراءة الملفات أو الإشعارات أو واجهات النظام الأخرى.",
+        "تابع توثيق Android وApple بشأن صلاحيات وكلاء النظام وواجهات منع الوصول.",
+        "عند تصميم تطبيق حساس، وثّق حدود الحماية لكل نظام تشغيل بدل تعميمها."
+      ],
+      "limitations": "هذا شرح مبني على بيان Signal الرسمي وتغطية TechCrunch؛ بعض الحماية تعتمد على قدرة التطبيق على اكتشاف محاولة الوصول، وتختلف بين توزيعات Android. تقول Signal إن الحماية لا تعالج كل طرق الوصول إلى البيانات، ولا تتوفر حاليًا على macOS. ادعاءات المخاطر هنا منسوبة إلى Signal وليست قياسًا مستقلًا لكل وكيل.",
+      "reviewedAt": "2026-11-22T23:47:26+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Signal — Signal is Serious About Protecting Your Privacy (20 Nov 2026)",
+          "url": "https://signal.org/blog/protecting-your-privacy/"
+        },
+        {
+          "title": "TechCrunch — Signal restricts mobile screenshots as it confronts AI surveillance (21 Nov 2026)",
+          "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/"
+        }
+      ]
+    },
+    "0c359abaa9f0b87d93": {
+      "url": "https://news.google.com/rss/articles/CBMixgJBVV95cUxORm82UHpEX0dQQ0J4UWc3ZHRpQVNpaVRJZnFuU3A3OTlXbm1fRmwyX0F1RU11a2xwcWNrX1hRYWJWSFZZVTI5aGdla3RVLUNhM01rXzFsY3pDTjdhXzcxcFBuN2MtZHJGeE1ZTGdiVFhpVmhQczJjbU03OTEwSjJGbjFTT0hNellQNmc5dTFyUC1MN0pZazhpVWZDdTlhUmlicEQwcDM0SEtnQ19xOEV3ZmhDU2FfVS0zX3NsNUVvQnZHX3dmNHdJbE5BT1FpWWpVNXpKdEwxR3Y0d3FUSktlTVlCV053WmtIQWlNZ1pNODV2RnBJdld4cWprMGdxcGUxZ2RJRFdoR0h5WVhTYUVYZzRINkxEeFpWZUpHNmNoUXFuM1ZSWGpxZ0ZCbUcweGF0cGVMaEJvTXhaRGN3eHg5ZDIyWjZqQQ?oc=5",
+      "titleAr": "وزارة الاتصالات تطلق برنامج CODE AI Catalyst لدعم 280 شركة ومشروعًا ناشئًا في الذكاء الاصطناعي",
+      "summaryAr": "أعلنت وكالة الأنباء السعودية في 18 نوفمبر 2026 إطلاق مركز ريادة الأعمال الرقمية CODE، التابع لوزارة الاتصالات وتقنية المعلومات، برنامج CODE AI Catalyst لمدة أربعة أشهر. يستهدف البرنامج 280 شركة ومشروعًا رياديًا، ويعرض رحلة تشمل الإرشاد المتخصص وورش العمل والدعم التقني والأدوات الرقمية وفرص التواصل مع الخبراء والمستثمرين والشركاء، لمساعدة المشاركين على الانتقال من مرحلة المنتج الأولي القابل للتطبيق إلى دخول السوق.",
+      "whyItMatters": "البرنامج يركز على جاهزية المنتج والسوق وبناء شبكة علاقات للشركات الناشئة السعودية في الذكاء الاصطناعي. وهو إعلان عن مسار دعم، لا إعلان عن تمويل مضمون أو نتائج سوقية محققة.",
+      "audience": "مؤسسو الشركات الناشئة السعودية، وطلاب التقنية، والمطورون الذين لديهم منتجات أولية في الذكاء الاصطناعي.",
+      "nextSteps": [
+        "راجع شروط الأهلية ومواعيد التسجيل في صفحة CODE الرسمية قبل التقديم.",
+        "جهّز وصفًا واضحًا للمشكلة والعملاء والمنتج الأولي ومؤشرات الاستخدام.",
+        "تحقق من متطلبات الملكية الفكرية والبيانات قبل مشاركة مواد المشروع.",
+        "قيّم ملاءمة الإرشاد والدعم التقني والاتصال بالمستثمرين لمرحلة مشروعك."
+      ],
+      "limitations": "بيان SPA يصف أهداف البرنامج والخدمات المعلنة، ولا يضمن قبول جميع المتقدمين أو تمويلهم أو وصولهم إلى السوق. تفاصيل الأهلية والاختيار والالتزامات العملية يجب تأكيدها من صفحة التسجيل الرسمية.",
+      "reviewedAt": "2026-11-22T23:47:26+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "وكالة الأنباء السعودية — وزارة الاتصالات تطلق برنامج CODE AI Catalyst (18 نوفمبر 2026)",
+          "url": "https://spa.gov.sa/ar/w2730467"
+        },
+        {
+          "title": "Saudi Press Agency — MCIT Launches CODE AI Catalyst Program (18 November 2026)",
+          "url": "https://spa.gov.sa/en/N2730548"
+        }
+      ]
+    },
+    "47b2738e2872fd88c1": {
+      "url": "https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash/",
+      "titleAr": "اعتراضات مراكز البيانات تتصاعد مع توسع البنية الحاسوبية للذكاء الاصطناعي",
+      "summaryAr": "في مقابلة نشرها TechCrunch في 22 نوفمبر 2026 حول كتاب Hyperscale، عرض الصحفي Paris Marx مخاوف من توسع مراكز البيانات فائقة الحجم، وربطها بضغوط محلية محتملة على الكهرباء والمياه والضوضاء. استشهد بأمثلة من تشيلي وأيرلندا وولاية أوريغون. هذه وجهة نظر الضيف وأمثلة أوردها في المقابلة، وليست تدقيقًا هندسيًا موحدًا.",
+      "whyItMatters": "توسع نماذج الذكاء الاصطناعي يعتمد على بنية مادية تستهلك الطاقة والتبريد والمساحة. تقييم المشاريع لا ينبغي أن يقتصر على سرعة الحوسبة أو كلفة GPU؛ بل يحتاج شفافية محلية حول استهلاك الموارد والأثر على المجتمعات.",
+      "audience": "مهندسو البنية التحتية السحابية، وفرق الاستدامة، ومخططو الطاقة والمياه، وصناع السياسات والمجتمعات القريبة من مراكز البيانات.",
+      "nextSteps": [
+        "اطلب بيانات الاستهلاك المحلي للكهرباء والمياه بدل الاكتفاء بمتوسطات وطنية.",
+        "قارن أنظمة التبريد مع أثرها على استهلاك الماء والطاقة في الموقع نفسه.",
+        "افصل بين تصريحات الشركات وأبحاث القياس المستقل عند تقييم أثر المنشأة.",
+        "تابع الإفصاح عن مصادر الطاقة والضغط على الشبكة وخطط إدارة المياه."
+      ],
+      "limitations": "المصدر مقابلة صحفية مع مؤلف كتاب، وتتضمن تقييمات وآراء وأمثلة من مواقع محددة. لا تمثل الأرقام والأمثلة جردًا عالميًا أو تدقيقًا مستقلًا لكل مركز بيانات، وقد تختلف الآثار حسب المناخ والتقنية ومزيج الطاقة والتبريد.",
+      "reviewedAt": "2026-11-22T23:47:26+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — Why data centers are at the center of the Big Tech backlash (22 Nov 2026)",
+          "url": "https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash/"
+        }
+      ]
+    },
+    "00cf06b3a862cb0571": {
+      "url": "https://news.google.com/rss/articles/CBMikARBVV95cUxQaXdPWkNpNVJmeExFdWs4aGEzVi00MG5odjVrRVIyeWE5cU5xT2NwckU2OE5Rd2N6c2ZBNjVXUHVQMWZRdDBhOXVLclZlcUIxUmNOSnFOMmF6aWtqM1dFMkQ5MWVDeFdMdXZNdVdUT3BkT045Q2VDTEdNeXRKaG9iMlVIV3lPXzZaV2s1R0FReTBIR2oxbWpVYVdTdGJ3QlR4ZGk3TGNJa2twUlFIVTJtcnJ6WmhndGNnaUVVSnFpbDNIdlRCeTdSNTBrd0xORlRWZTJwb3NwZ1RkM01uMndGS1FBLTdkVlpkREFzSGNMYXpYQTJHOHNnZGl3UklEbTBnUUQyaEd0aDBvS0VtWko4ZW5hOUdrbGE3bHQ4RmFqS3phalFCS0lmS2VYZF9zN2pISDU5Uk9MbUk4U0M2Tnd1TlYyVHBXZEU4d0ZkXzZqdy1lRkZNalVMYUd1cU1jczNZdmJZX1NpQTA3MUNSRXNSZ25DWE5aU2RCTEpwamxFWmREZnlUNnVCRGJpaWw4bFZmaFVNYkwtY3VhVnA5dHlmWHNvbVo4aWtZZ05EbjF0aTZ3eGZqME5xSDRrRk1FZWJod01PUDNEcXB1N0JFYmxUcG9MVTNtZVlMMG9nU0JyYnJsSzdxN2prNktMLS1CVFRXQW1sbVN3QzBXdnVMS0lBOHVvUjFRdm9Oc2hMOGdGUjHSAZAEQVVfeXFMUGl3T1pDaTVSZnhMRXVrOGhhM1YtNDBuaHY1a0VSMnlhOXFOcU9jcHJFNjhOUXdjenNmQTY1V1B1UDFmUXQwYTl1S3JWZXFCMVJjTkpxTjJhemlrajNXRTJEOTFlQ3hXTHV2TXVXVE9wZE9OOUNlQ0xHTXl0SmhvYjJVSFd5T182WldrNUdBUXkwSEdqMW1qVWFXU3Rid0JUeGRpN0xjSWtrcFJRSFUybXJyelpoZ3RjZ2lFVUpxaWwzSHZUQnk3UjUwa3dMTkZUVmUycG9zcGdUZDNNbjJ3RktRQS03ZFZaZERBc0hjTGF6WEEyRzhzZ2Rpd1JJRG0wZ1FEMmhHdGgwb0tFbVpKOGVuYTlHa2xhN2x0OEZhakt6YWpRQktJZktlWGRfczdqSEg1OVJPTG1JOFNDNk53dU5WMlRwV2RFOHdGZF82anctZUZGTWpVTGFHdXFNY3MzWXZiWV9TaUEwNzFDUkVzUmduQ1hOWlNkQkxKcGpsRVpkRGZ5VDZ1QkRiaWlsOGxWZmhVTWJMLWN1YVZwOXR5Zlhzb21aOGlrWWdORG4xdGk2d3hmajBOcUg0a0ZNRWViaHdNT1AzRHFwdTdCRWJsVHBvTFUzbWVZTDBvZ1NCcmJybEs3cTdqazZLTC0tQlRUV0FtbG1Td0MwV3Z1TEtJQTh1b1IxUXZvTnNoTDhnRlIx?oc=5",
+      "titleAr": "Nothing تحدد 8 ديسمبر 2026 موعدًا للكشف عن منتجها الأول المخصص للذكاء الاصطناعي",
+      "summaryAr": "أفادت Gadgets360 في 20 نوفمبر 2026 أن Nothing حددت 8 ديسمبر موعدًا لإطلاق منتج جديد، مستندة إلى منشور رسمي للشركة على X. وكانت Nothing قد وصفت منتجها الأول المعتمد على الذكاء الاصطناعي بأنه أداة إنتاجية بلا شاشة وليست مجرد تطبيق، وفق تصريح سابق للرئيس التنفيذي Carl Pei نقلته TechCrunch. لم تكشف الشركة حتى الآن الاسم أو السعر أو المواصفات أو الوظائف النهائية.",
+      "whyItMatters": "القصة تشير إلى تجربة جديدة في أجهزة الذكاء الاصطناعي المتخصصة، لكنها لا تثبت أن الجهاز سيقدم فائدة تتجاوز الهاتف أو السماعات. القيمة ستعتمد على الوظائف الفعلية والخصوصية والاتصال والتكلفة وسهولة الاستخدام.",
+      "audience": "مصممو الأجهزة، ومطورو المنتجات، والمهتمون بواجهات وأجهزة الذكاء الاصطناعي الاستهلاكية.",
+      "nextSteps": [
+        "انتظر الإعلان الرسمي قبل الحكم على المنتج أو مقارنته بأجهزة أخرى.",
+        "تحقق عند الإطلاق من الوظائف الفعلية والسعر والتوافر في الأسواق.",
+        "راجع ما إذا كانت المعالجة محلية أم سحابية وما البيانات التي يجمعها الجهاز.",
+        "قارن فائدته بتطبيقات الهاتف والأجهزة الموجودة بدل الاكتفاء بوصف AI-native."
+      ],
+      "limitations": "Gadgets360 نقل موعد 8 ديسمبر عن منشور Nothing الرسمي، بينما TechCrunch نقل وصف Carl Pei السابق للمنتج. رابط منشور X المباشر أعاد 403 أثناء المراجعة؛ لذلك لا تتوفر مواصفات مستقلة مؤكدة. لا ينبغي التعامل مع التسريبات أو توقعات الشكل والوظائف على أنها حقائق.",
+      "reviewedAt": "2026-11-22T23:47:26+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Gadgets360 — Nothing’s First Screenless AI Device Launches December 8 (20 Nov 2026)",
+          "url": "https://www.gadgets360.com/mobiles/news/nothing-launch-date-teaser-design-specifications-12354447"
+        },
+        {
+          "title": "TechCrunch — Nothing CEO says company’s mysterious AI-first device is dropping next month (4 Nov 2026)",
+          "url": "https://techcrunch.com/2026/11/04/nothing-ceo-says-companys-mysterious-ai-first-device-is-dropping-next-month/"
+        },
+        {
+          "title": "Nothing — official X post announcing 8 December (direct access returned 403)",
+          "url": "https://x.com/nothing/status/2123724078435520980"
+        }
+      ]
+    }
+  }
+}
