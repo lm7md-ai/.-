@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "research_review_not_published_as_project_cards",
+  "reviewedAt": "2026-11-22T02:47:45+03:00",
+  "metricsMeasuredAt": "2026-11-22T00:00:37Z",
+  "summary": {
+    "previousProjectsReviewed": 8,
+    "active": 8,
+    "archived": 0,
+    "licensesVerified": 8,
+    "readmeUnchangedSincePriorReview": 7,
+    "readmeChangedSincePriorReview": 1,
+    "currentFeedProjects": 100,
+    "currentFeedProjectsWithExactEditorial": 99,
+    "missingEditorialFeedProject": {
+      "id": "6e18aa23e1f0d14413",
+      "repo": "heygen-com/hyperframes",
+      "title": "HyperFrames"
+    },
+    "newFeedProjectCards": 0,
+    "existingFeedProjectEnrichmentCandidates": 1,
+    "libraryTotal": 31,
+    "libraryActive": 29,
+    "libraryArchived": 2,
+    "libraryCatalogLastReviewedAt": "2026-11-19T00:05:34+03:00",
+    "libraryMetricsSnapshotAt": "2026-11-16"
+  },
+  "projects": [
+    {
+      "repo": "patchy631/ai-engineering-hub",
+      "name": "AI Engineering Hub",
+      "archived": false,
+      "license": "MIT",
+      "readmeSha": "6c65ab12125814c5233f873c4c1af2765ff87d51",
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha": "84ee68d33c9b68bae6c139f591996f021a02b23a"
+        }
+      ],
+      "stars": 42057,
+      "forks": 6724,
+      "openIssues": 139,
+      "lastPushedAt": "2026-11-01T04:39:16Z",
+      "lastUpdatedAt": "2026-11-21T23:54:05Z",
+      "readmeChangedSincePriorReview": false,
+      "inCurrentFeed": false,
+      "testStatus": "not_run",
+      "note": "هادئ نسبيًا لكنه غير مؤرشف؛ أمثلة RAG تحتاج مفاتيح/مزودًا خارجيًا بحسب المثال."
+    },
+    {
+      "repo": "googleapis/python-genai",
+      "name": "Google Gen AI SDK",
+      "archived": false,
+      "license": "Apache-2.0",
+      "readmeSha": "8faf7f0d715072fccdc0e5fba0a5d7aa74f78d53",
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7"
+        }
+      ],
+      "stars": 4086,
+      "forks": 1067,
+      "openIssues": 364,
+      "lastPushedAt": "2026-11-21T17:30:30Z",
+      "lastUpdatedAt": "2026-11-21T20:49:53Z",
+      "readmeChangedSincePriorReview": false,
+      "inCurrentFeed": false,
+      "testStatus": "not_run",
+      "note": "يتطلب مفتاح Gemini أو Vertex AI؛ كلفة الاستخدام مرتبطة بمزود النموذج."
+    },
+    {
+      "repo": "Millillion/lasm",
+      "name": "Lasm",
+      "archived": false,
+      "license": "MIT",
+      "readmeSha": "3bf92bcf2b72a42e5244928591209a3aebaa9509",
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha": "46b25ff7d8953b8fc88d7ed6d37c6f1550a39193"
+        }
+      ],
+      "stars": 108,
+      "forks": 6,
+      "openIssues": 7,
+      "lastPushedAt": "2026-11-21T22:56:33Z",
+      "lastUpdatedAt": "2026-11-18T18:41:29Z",
+      "readmeChangedSincePriorReview": false,
+      "inCurrentFeed": false,
+      "testStatus": "not_run",
+      "note": "مشروع صغير ونشط نسبيًا؛ راجع تراخيص الأمثلة MIT-0 والاعتمادات الخارجية منفصلة."
+    },
+    {
+      "repo": "microsoft/markitdown",
+      "name": "MarkItDown",
+      "archived": false,
+      "license": "MIT",
+      "readmeSha": "af858038fd380b187e2928cfbb8b9802c4912d5b",
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha": "9e841e7a26e4eb057b24511e7b92d42b257a80e5"
+        }
+      ],
+      "stars": 197525,
+      "forks": 14948,
+      "openIssues": 827,
+      "lastPushedAt": "2026-11-07T00:14:01Z",
+      "lastUpdatedAt": "2026-11-21T23:58:17Z",
+      "readmeChangedSincePriorReview": false,
+      "inCurrentFeed": false,
+      "testStatus": "not_run",
+      "note": "README يحذر أن تشغيل التحويل يتم بصلاحيات العملية؛ لا تمرر ملفات غير موثوقة إلى بيئة حساسة."
+    },
+    {
+      "repo": "yc-software/minecraft-agent-harness",
+      "name": "Minecraft Agent Harness",
+      "archived": false,
+      "license": "MIT",
+      "readmeSha": "50b5a20eeb3a6f8268d06d244d858c4464c81eba",
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha": "5efc79a61c6ce9c8b89f423f7b0d883ca9af43a9"
+        }
+      ],
+      "stars": 231,
+      "forks": 30,
+      "openIssues": 1,
+      "lastPushedAt": "2026-10-29T20:30:45Z",
+      "lastUpdatedAt": "2026-11-21T16:35:49Z",
+      "readmeChangedSincePriorReview": false,
+      "inCurrentFeed": false,
+      "testStatus": "not_run",
+      "note": "نشاط منخفض وغير مؤرشف؛ لم تُجرَ تجربة تشغيل أو اختبار."
+    },
+    {
+      "repo": "ai-openshell/openshell",
+      "name": "OpenShell",
+      "archived": false,
+      "license": "Apache-2.0",
+      "readmeSha": "0752ddaf1385b78f39a08f8718268762d15db2d1",
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha": "f13d24c3fa482d61605d600e5ac1248799bd4107"
+        }
+      ],
+      "stars": 21852,
+      "forks": 2152,
+      "openIssues": 789,
+      "lastPushedAt": "2026-11-21T20:34:20Z",
+      "lastUpdatedAt": "2026-11-22T00:00:25Z",
+      "readmeChangedSincePriorReview": false,
+      "inCurrentFeed": false,
+      "testStatus": "not_run",
+      "canonicalRepositoryChanged": true,
+      "previousRepository": "NVIDIA/OpenShell",
+      "note": "المستودع الرسمي الحالي ai-openshell/openshell؛ لا تنشئ هوية بديلة لمعرف Seen القديم."
+    },
+    {
+      "repo": "pydantic/pydantic-ai",
+      "name": "Pydantic AI",
+      "archived": false,
+      "license": "MIT",
+      "readmeSha": "3774a1843c1b5256cea465c3c361390d668fdf6b",
+      "previousReadmeSha": "94fc16382961699760acb0c6280f361e49a1733b",
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha": "1bf1f55e6d1736b499ded961ec6b94bfebb17aec"
+        }
+      ],
+      "stars": 21329,
+      "forks": 3238,
+      "openIssues": 1885,
+      "lastPushedAt": "2026-11-22T00:00:45Z",
+      "lastUpdatedAt": "2026-11-21T22:11:23Z",
+      "readmeChangedSincePriorReview": true,
+      "inCurrentFeed": false,
+      "testStatus": "not_run",
+      "note": "README تغير؛ أُعيدت قراءته. Python requirement السابق >=3.11 يحتاج تثبيتًا من pyproject عند أي بطاقة لاحقة."
+    },
+    {
+      "repo": "astral-sh/uv",
+      "name": "uv",
+      "archived": false,
+      "license": "MIT OR Apache-2.0",
+      "readmeSha": "66caaf9ccc62add8c63de8e71184c9b7677377ad",
+      "licenseFiles": [
+        {
+          "path": "LICENSE-APACHE",
+          "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+        },
+        {
+          "path": "LICENSE-MIT",
+          "sha": "014835144877ea9c926d027ece3e1a26290cf481"
+        }
+      ],
+      "stars": 92505,
+      "forks": 3927,
+      "openIssues": 3091,
+      "lastPushedAt": "2026-11-21T23:45:38Z",
+      "lastUpdatedAt": "2026-11-22T00:02:42Z",
+      "readmeChangedSincePriorReview": false,
+      "inCurrentFeed": false,
+      "testStatus": "not_run",
+      "note": "Dual licensed; يجب عرض خياري الترخيص وعدم الاكتفاء بواحد عند إعادة التوزيع."
+    }
+  ],
+  "archivedLibrary": [
+    {
+      "repo": "atom/atom",
+      "alternatives": [
+        "VS Code",
+        "Zed",
+        "Lapce"
+      ]
+    },
+    {
+      "repo": "angular/angular.js",
+      "alternatives": [
+        "modern Angular",
+        "React",
+        "Vue"
+      ]
+    }
+  ],
+  "decision": "لم تُضف بطاقات جديدة للمشاريع الثمانية؛ كلها خارج Feed الحالي وتبقى في المكتبة البحثية. HyperFrames هو عنصر Feed الحالي الوحيد غير المثري، وله مرشح Editorial مستقل بالمعرف الأصلي. لم تُجرَ اختبارات تشغيل لأي مشروع."
+}
