@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "items": {
+    "26c5ca669b14170471": {
+      "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+      "titleAr": "OpenRouter تستبعد ثلاثة مزوّدين وتزيل 125 نقطة نهاية من أهلية الاحتفاظ الصفري بعد تحقيقات في بيانات الاستدلال",
+      "summaryAr": "في 22 نوفمبر 2026، قالت OpenRouter إن باحثين أبلغوا عن حالات اختراق أو عدم التزام بسياسات معالجة البيانات لدى بعض مزوّدي الاستدلال. وذكرت أن الاختبارات لم تُظهر اختراقًا أو وصولًا غير مصرح به إلى OpenRouter نفسها. قالت الشركة إنها أخرجت ثلاثة مزوّدين من المنصة، وأزالت 125 نقطة نهاية من أهلية Zero Data Retention، شملت حالات احترازية، وأخطرت العملاء المحتمل تأثرهم. كما أعلنت فحص مسارات الشبكة والتمرير إلى أطراف ثالثة قبل إعادة الأهلية.",
+      "whyItMatters": "توضح الواقعة أن وعد الخصوصية في طبقة التوجيه لا يكفي وحده إذا مر الطلب عبر مزوّدين أو بائعين وسيطين. يجب تقييم سلسلة المعالجة الفعلية وسياسة كل طرف، لا الاعتماد على وسم ZDR منفردًا. وتفصل القصة بين ما قالته OpenRouter عن سلامة خدمتها وبين تقارير حوادث لدى مزوّدين آخرين.",
+      "audience": "مطورو تطبيقات الذكاء الاصطناعي، وفرق الأمن والخصوصية، والمؤسسات التي ترسل شيفرة أو بيانات عملاء إلى واجهات الاستدلال.",
+      "nextSteps": [
+        "إذا وصلك إخطار من مزوّد، طابق النموذج والـendpoint وفترة الاستخدام مع نطاق الإخطار واتبع إرشاداته بشأن الأسرار المتأثرة.",
+        "تجنب إرسال مفاتيح API أو بيانات العملاء أو الشيفرة السرية إلى مسارات لا تعرف مزوّدها الفعلي.",
+        "عند استخدام وسيط توجيه، اختر المزوّد والـendpoint بوضوح وراجع شروط الاحتفاظ لكل طرف؛ لا تعامل وسم ZDR وحده كدليل تدقيق.",
+        "سجّل المزوّد والنموذج والـendpoint وسياسة البيانات وتاريخ تغييرها لتسهيل المراجعة."
+      ],
+      "limitations": "بيان OpenRouter يعرض نتائج تحقيق الشركة ولا يمثل تدقيقًا مستقلًا شاملًا؛ وقد قالت الشركة إن الاختبارات لم تُظهر اختراقًا لخدمتها نفسها. تقرير Dragos يعتمد على canary tokens واختبارات بحثية ولا يحصي كل طلبات السوق. تقارير بعض المزوّدين أولية ونطاقاتها مختلفة، وبعض الأطراف لم تنشر إفصاحًا عامًا. إزالة 125 نقطة نهاية من أهلية ZDR لا تعني بالضرورة إيقاف الخدمة، وشملت الإزالة إجراءات احترازية؛ ولم يُعلن إجمالي موحد للطلبات أو العملاء المتأثرين.",
+      "reviewedAt": "2026-11-22T18:33:00.936+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "OpenRouter — Data Processing Incidents on Inference Providers",
+          "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/"
+        },
+        {
+          "title": "Dragos — Three breaches, endless leaks: Your AI supply chain needs canaries",
+          "url": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens"
+        },
+        {
+          "title": "Novita — Privacy Notice Regarding MiniMax Requests on Novita",
+          "url": "https://novita.ai/blog/minimax-requests-privacy-notice/"
+        },
+        {
+          "title": "Phala — Phala November Preliminary Incident Report",
+          "url": "https://phala.com/posts/phala-november-preliminary-incident-report"
+        },
+        {
+          "title": "Together AI — Security event: Prompt leakage for requests in June and July of 2026",
+          "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026"
+        }
+      ]
+    }
+  }
+}
