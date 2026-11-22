@@ -72,7 +72,11 @@
     "updatedExistingRecords": 1,
     "all34AddedExactLatestFeed": true,
     "projectCards": 100,
-    "projectCardsWithExactEditorial": 100
+    "projectCardsWithExactEditorial": 100,
+    "headAfterMergeCommit": "3f13d710ee7f3494a65e431b246ca07dfc90076f",
+    "behindMain": 0,
+    "aheadOfMain": 31,
+    "mergeable": true
   },
   "news": {
     "selectedStories": 12,
@@ -126,7 +130,13 @@
     "newOpenRouterExactFeedMatch": true,
     "deepSeekExactFeedMatch": true,
     "localOfficialCommands": "not_run_due_DNS",
-    "ciStatus": "pending"
+    "ciStatus": "success",
+    "ciRunId": 45041136737,
+    "ciRunUrl": "https://github.com/lm7md-ai/.-/actions/runs/45041136737",
+    "unitTests": 30,
+    "validatorMessage": "Validated 1175 editorial entries",
+    "javascriptSyntaxChecks": "passed",
+    "importCommand": "not_run; merged records conservatively with preservation checks"
   },
   "deployment": {
     "lastMainWorkflowRun": 45016595493,
