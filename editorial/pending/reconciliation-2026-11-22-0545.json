@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-22T06:07:59.456+03:00",
+  "sourceMainCommit": "f184637e4ffaf062c1a3b3a2f31ae1aca6dcd8db",
+  "incoming": {
+    "files": 155,
+    "rawRecordAppearances": 1670,
+    "alreadyImportedAppearances": 1392,
+    "currentExactMatchAppearances": 33,
+    "currentExactUniquePairs": 21,
+    "outsideCurrentFeedAppearances": 245,
+    "idUrlMismatches": 0,
+    "structurallyCompatibleFiles": 154,
+    "needsEnvelopeCorrection": 1,
+    "malformedFile": "editorial/incoming/nabdh-news-2026-11-20-1813.json"
+  },
+  "import": {
+    "currentExactUniqueRecords": 21,
+    "recordsPending": 9
+  },
+  "specialRecords": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "name": "NVIDIA OpenShell",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "decision": "research-only; no alias"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "name": "Canva Craft",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "decision": "hold; no alias"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "name": "1Password agent sign-in",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "decision": "hold; no alias"
+    }
+  ],
+  "pendingRecords": [
+    {
+      "id": "97dffa3b72860b1f67",
+      "url": "https://github.com/openssl/openssl/pull/33652",
+      "titleAr": "CVE-2026-121481: طلب إصلاح مفتوح لمشكلة في EVP_EncodeBlock",
+      "basis": "metadata",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-20-1813.json",
+      "reason": "not_in_current_feed_at_main_f184637; preserve original ID/URL; no title-derived alias"
+    },
+    {
+      "id": "bda522de56a34a98c0",
+      "url": "https://git-aarvin.github.io/mei/",
+      "titleAr": "مؤشر مستقل يضع Gemini 4 Neon في صدارة اختبارات هندسة البرمجيات",
+      "basis": "article",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-20-1813.json",
+      "reason": "not_in_current_feed_at_main_f184637; preserve original ID/URL; no title-derived alias"
+    },
+    {
+      "id": "b1430f615687828286",
+      "url": "https://www.engadget.com/2322705/the-trump-administration-has-replaced-its-cybersecurity-chief/",
+      "titleAr": "تعيين مؤقت لقيادة الأمن السيبراني الأميركي بعد موجة انقطاعات تقنية",
+      "basis": "metadata",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-20-1813.json",
+      "reason": "not_in_current_feed_at_main_f184637; preserve original ID/URL; no title-derived alias"
+    },
+    {
+      "id": "b6973fc351e5f01d48",
+      "url": "https://www.bbc.co.uk/news/articles/c6d94pzk9vleo?at_medium=RSS&at_campaign=rss",
+      "titleAr": "BBC تطرح سؤال استخدام الذكاء الاصطناعي في تقييم الجدارة الائتمانية",
+      "basis": "metadata",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-20-1813.json",
+      "reason": "not_in_current_feed_at_main_f184637; preserve original ID/URL; no title-derived alias"
+    },
+    {
+      "id": "c50a064b65c55ff5ed",
+      "url": "https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine",
+      "titleAr": "مقال رأي ينتقد اعتماد الشركات الصغيرة على مزادات الإعلانات الرقمية",
+      "basis": "article",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-20-1813.json",
+      "reason": "not_in_current_feed_at_main_f184637; preserve original ID/URL; no title-derived alias"
+    },
+    {
+      "id": "f78d1ebaf9c5d49889",
+      "url": "https://aitnews.com/2026/11/20/asian-chip-stocks-ai-investment-selloff-november-2026/",
+      "titleAr": "أسهم شركات الرقائق الآسيوية تتراجع وسط إعادة تقييم رهانات الذكاء الاصطناعي",
+      "basis": "metadata",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-20-1813.json",
+      "reason": "not_in_current_feed_at_main_f184637; preserve original ID/URL; no title-derived alias"
+    },
+    {
+      "id": "945d12baa1ef9bf958",
+      "url": "https://www.androidauthority.com/grapheneos-team-google-pressure-3737525/",
+      "titleAr": "GrapheneOS تزعم تعرضها لضغط من Google وتحذر من قيود محتملة على أنظمة Android البديلة",
+      "basis": "article",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-21-0318.json",
+      "reason": "not_in_current_feed_at_main_f184637; preserve original ID/URL; no title-derived alias"
+    },
+    {
+      "id": "bf82adff4bf6ffb39c",
+      "url": "https://github.com/tristanbuckmaster/navier-stokes/",
+      "titleAr": "مستودع يرافق ادعاءً جديدًا بشأن معادلات Navier–Stokes بصياغة Lean مع فجوات تحقق معلنة",
+      "basis": "readme",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-21-0318.json",
+      "reason": "not_in_current_feed_at_main_f184637; preserve original ID/URL; no title-derived alias"
+    },
+    {
+      "id": "d32b20a39c5cb2dedb",
+      "url": "https://www.nbcnews.com/business/markets/anthropic-shares-markets-selloff-nasdaq-rcna610394",
+      "titleAr": "تراجع أسهم Anthropic بعد أول يوم تداول قوي بالتزامن مع موجة بيع في أسهم التقنية",
+      "basis": "metadata",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-21-0318.json",
+      "reason": "not_in_current_feed_at_main_f184637; preserve original ID/URL; no title-derived alias"
+    }
+  ],
+  "notes": [
+    "The raw occurrence total and already-imported count come from the last complete raw inventory; all 155 current files were re-read and checked against refreshed Main.",
+    "Two previous news candidates (945d12baa1ef9bf958 and d32b20a39c5cb2dedb) plus one project record (bf82adff4bf6ffb39c) are no longer in current Feed; not labelled expired.",
+    "The schemaVersion file was left unchanged; only its exact Dots item was extracted into a version=1 candidate."
+  ]
+}
