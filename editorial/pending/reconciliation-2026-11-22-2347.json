@@ -135,7 +135,7 @@
     "records": 1174,
     "localValidate": "not_run",
     "localImport": "not_run",
-    "localUnittest": "not_run",
+    "localUnittest": "not_run_locally",
     "previousCI": {
       "run": 45041505806,
       "conclusion": "success",
@@ -143,7 +143,16 @@
       "validatedRecords": 1175,
       "previousHeadOnly": true
     },
-    "newCI": "pending"
+    "newCI": {
+      "runId": 45070034752,
+      "status": "success",
+      "headSha": "104fb3277a3aacfbcbe21887bb4b3f78802bc4d5",
+      "unitTests": 30,
+      "unittestConclusion": "OK",
+      "editorialValidate": "Validated 1174 editorial entries",
+      "nodeChecks": "success"
+    },
+    "localOfficialValidate": "not_run_locally"
   },
   "deployment": {
     "mainRun": 45061495969,
