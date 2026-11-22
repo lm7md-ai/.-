@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "publicationStatus": "research_review_not_published_as_project_cards",
-  "reviewedAt": "2026-11-22T02:47:45+03:00",
-  "metricsMeasuredAt": "2026-11-22T00:11:10Z",
+  "reviewedAt": "2026-11-22T08:45:41+03:00",
+  "metricsMeasuredAt": "2026-11-22T05:45:41Z",
   "summary": {
     "previousProjectsReviewed": 8,
     "active": 8,
     "archived": 0,
     "licensesVerified": 8,
-    "readmeUnchangedSincePriorReview": 7,
-    "readmeChangedSincePriorReview": 1,
+    "readmeUnchangedSincePriorReview": 8,
+    "readmeChangedSincePriorReview": 0,
     "currentFeedProjects": 100,
     "currentFeedProjectsWithExactEditorial": 99,
     "missingEditorialFeedProject": {
@@ -38,11 +38,11 @@
           "sha": "84ee68d33c9b68bae6c139f591996f021a02b23a"
         }
       ],
-      "stars": 42057,
-      "forks": 6724,
+      "stars": 42059,
+      "forks": 6725,
       "openIssues": 139,
       "lastPushedAt": "2026-11-01T04:39:16Z",
-      "lastUpdatedAt": "2026-11-21T23:54:05Z",
+      "lastUpdatedAt": "2026-11-22T02:51:19Z",
       "readmeChangedSincePriorReview": false,
       "inCurrentFeed": false,
       "testStatus": "not_run",
@@ -84,8 +84,8 @@
       ],
       "stars": 108,
       "forks": 6,
-      "openIssues": 7,
-      "lastPushedAt": "2026-11-21T22:56:33Z",
+      "openIssues": 6,
+      "lastPushedAt": "2026-11-22T02:00:01Z",
       "lastUpdatedAt": "2026-11-18T18:41:29Z",
       "readmeChangedSincePriorReview": false,
       "inCurrentFeed": false,
@@ -104,11 +104,11 @@
           "sha": "9e841e7a26e4eb057b24511e7b92d42b257a80e5"
         }
       ],
-      "stars": 197525,
-      "forks": 14948,
-      "openIssues": 827,
+      "stars": 197642,
+      "forks": 14961,
+      "openIssues": 829,
       "lastPushedAt": "2026-11-07T00:14:01Z",
-      "lastUpdatedAt": "2026-11-21T23:58:17Z",
+      "lastUpdatedAt": "2026-11-22T05:58:15Z",
       "readmeChangedSincePriorReview": false,
       "inCurrentFeed": false,
       "testStatus": "not_run",
@@ -148,11 +148,11 @@
           "sha": "f13d24c3fa482d61605d600e5ac1248799bd4107"
         }
       ],
-      "stars": 21852,
+      "stars": 21853,
       "forks": 2152,
       "openIssues": 789,
       "lastPushedAt": "2026-11-21T20:34:20Z",
-      "lastUpdatedAt": "2026-11-22T00:00:25Z",
+      "lastUpdatedAt": "2026-11-22T04:36:51Z",
       "readmeChangedSincePriorReview": false,
       "inCurrentFeed": false,
       "testStatus": "not_run",
@@ -173,12 +173,12 @@
           "sha": "1bf1f55e6d1736b499ded961ec6b94bfebb17aec"
         }
       ],
-      "stars": 21329,
-      "forks": 3238,
-      "openIssues": 1885,
-      "lastPushedAt": "2026-11-22T00:00:45Z",
-      "lastUpdatedAt": "2026-11-21T22:11:23Z",
-      "readmeChangedSincePriorReview": true,
+      "stars": 21330,
+      "forks": 3237,
+      "openIssues": 1887,
+      "lastPushedAt": "2026-11-22T02:58:19Z",
+      "lastUpdatedAt": "2026-11-22T04:54:51Z",
+      "readmeChangedSincePriorReview": false,
       "inCurrentFeed": false,
       "testStatus": "not_run",
       "note": "README تغير؛ أُعيدت قراءته. Python requirement السابق >=3.11 يحتاج تثبيتًا من pyproject عند أي بطاقة لاحقة."
@@ -199,11 +199,11 @@
           "sha": "014835144877ea9c926d027ece3e1a26290cf481"
         }
       ],
-      "stars": 92505,
+      "stars": 92526,
       "forks": 3927,
       "openIssues": 3091,
-      "lastPushedAt": "2026-11-21T23:45:38Z",
-      "lastUpdatedAt": "2026-11-22T00:02:42Z",
+      "lastPushedAt": "2026-11-22T00:26:12Z",
+      "lastUpdatedAt": "2026-11-22T05:12:34Z",
       "readmeChangedSincePriorReview": false,
       "inCurrentFeed": false,
       "testStatus": "not_run",
@@ -228,7 +228,7 @@
       ]
     }
   ],
-  "decision": "لم تُضف بطاقات جديدة للمشاريع الثمانية؛ كلها خارج Feed الحالي وتبقى في المكتبة البحثية. HyperFrames هو عنصر Feed الحالي الوحيد غير المثري، وله مرشح Editorial مستقل بالمعرف الأصلي. لم تُجرَ اختبارات تشغيل لأي مشروع.",
-  "readmeMeasuredAt": "2026-11-22T00:04:10Z",
-  "licenseMeasuredAt": "2026-11-22T00:04:10Z"
+  "decision": "أعيد قياس المؤشرات الثمانية في 22 نوفمبر 2026؛ جميع المستودعات الثمانية ما زالت نشطة، وهاش README لم يتغير منذ مراجعة 02:47. تراخيصها الثمانية باقية؛ uv يحتفظ بملفي LICENSE-APACHE وLICENSE-MIT رغم أن GitHub API يعرض Apache-2.0 كترخيص أساسي. NVIDIA/OpenShell يعيد 301 (Moved Permanently)، والاسم الرسمي الحالي ai-openshell/openshell؛ لا تنشئ هوية بديلة لمعرف Seen القديم. لم تُضف بطاقات جديدة لهذه المشاريع خارج Feed. HyperFrames هو مشروع Feed الوحيد الذي كان بلا إثراء على Main، وله مرشح Editorial بالمعرف الأصلي على PR. لم تُجرَ اختبارات تشغيل لأي مشروع.",
+  "readmeMeasuredAt": "2026-11-22T05:45:41Z",
+  "licenseMeasuredAt": "2026-11-22T05:45:41Z"
 }
