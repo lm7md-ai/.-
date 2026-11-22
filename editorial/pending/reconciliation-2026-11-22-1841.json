@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-22T18:41:12+03:00",
+  "sourceMainCommit": "1f6fce6ecba9202b6334e76dc7849dbb879f1617",
+  "sourcePRHead": "eccd44d08faef2d869fd0cd6549b39dacb101b47",
+  "incoming": {
+    "files": 155,
+    "fileSetUnchangedSincePriorFullAudit": true,
+    "rawRecordAppearances": 1670,
+    "alreadyImportedAppearances": 1392,
+    "currentExactMatchAppearances": 33,
+    "currentExactUniquePairs": 21,
+    "outsideCurrentFeedAppearances": 245,
+    "idUrlMismatches": 0,
+    "structurallyCompatibleFiles": 154,
+    "needsEnvelopeCorrection": 1,
+    "malformedFile": "editorial/incoming/nabdh-news-2026-11-20-1813.json",
+    "malformedFileItems": 7,
+    "malformedFileExactFeedItems": 1,
+    "malformedFileExactItemId": "7bdcb7fa3841c84cc9",
+    "exactUniquePairsAlreadyOnPR": 21,
+    "exactPairsNewlyImportedThisRun": 0
+  },
+  "pending": {
+    "records": 9,
+    "seenOnly": 9,
+    "inCurrentFeed": 0,
+    "inMainEditorial": 0,
+    "expiredConfirmed": 0,
+    "decision": "hold; no proof of expiry; preserve original IDs and URLs"
+  },
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "canonicalRepository": "ai-openshell/openshell",
+      "decision": "seen-only; no alias"
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "decision": "seen-only; no alias"
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "decision": "seen-only; no alias"
+    }
+  ],
+  "latestMain": {
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "feedGeneratedAt": "2026-11-22T11:17:52Z",
+    "editorialRecords": 1141,
+    "statusLastSuccessfulAt": "2026-11-22T11:17:52Z",
+    "statusState": "ok",
+    "statusCollected": 313
+  },
+  "latestPR": {
+    "editorialRecords": 1175,
+    "addedRecordsVsMain": 34,
+    "updatedExistingRecords": 1,
+    "all34AddedExactLatestFeed": true,
+    "projectCards": 100,
+    "projectCardsWithExactEditorial": 100
+  },
+  "news": {
+    "selectedStories": 12,
+    "existingStoriesOnPR": 11,
+    "newStoryAdded": "26c5ca669b14170471",
+    "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+    "basis": "article",
+    "sources": 5,
+    "reviewedAt": "2026-11-22T18:41:12+03:00"
+  },
+  "projects": {
+    "previousEightReviewed": 8,
+    "active": 8,
+    "archived": 0,
+    "licensesVerified": 8,
+    "readmeHashesUnchanged": 8,
+    "licenseHashesUnchanged": 8,
+    "hyperFramesEnrichedByOriginalId": true,
+    "deepSeekHarnessEnrichedByOriginalId": true,
+    "newProjectCards": 0,
+    "curatedLibrary": {
+      "total": 31,
+      "active": 29,
+      "archived": 2,
+      "lastReviewed": "2026-11-19"
+    },
+    "historicalCatalog": {
+      "total": 73,
+      "active": 71,
+      "archived": 2,
+      "lastReviewed": "2026-11-14"
+    },
+    "publicResearch": {
+      "deepReviewedProjects": 3,
+      "ideasPerProject": 30,
+      "totalCuratedIdeas": 90,
+      "lastReviewed": "2026-10-24"
+    },
+    "projectTests": "not_run"
+  },
+  "bestThreeIdeas": [
+    "عارض فروقات سياسات OpenShell قبل التنفيذ",
+    "تقييم Typed لوكلاء Pydantic AI",
+    "مصفوفة توافق Google Gen AI SDK"
+  ],
+  "validation": {
+    "structuralEquivalent": "passed",
+    "editorialCount": 1175,
+    "mainRecordsPreserved": 1141,
+    "priorPRAdditionsExact": 33,
+    "newOpenRouterExactFeedMatch": true,
+    "deepSeekExactFeedMatch": true,
+    "localOfficialCommands": "not_run_due_DNS",
+    "ciStatus": "pending"
+  },
+  "deployment": {
+    "lastMainWorkflowRun": 45016595493,
+    "lastMainArtifact": 14752216056,
+    "artifactFeedItems": 800,
+    "artifactEditorialRecords": 1141,
+    "livePagesFetch": "DisabledError",
+    "newContentPublished": false
+  },
+  "protectedFiles": {
+    "feedJsonChanged": false,
+    "seenJsonChanged": false,
+    "statusJsonChanged": false,
+    "siteCodeChanged": false,
+    "designChanged": false,
+    "workflowChanged": false,
+    "deploymentSettingsChanged": false
+  },
+  "decisions": [
+    "Original incoming files were not modified.",
+    "All 21 exact unique incoming ID/URL pairs are already represented on PR; no new backlog import was required.",
+    "The malformed envelope remains unchanged; its one exact Dots item is already present through a valid candidate.",
+    "OpenRouter was imported with the exact current-feed ID/URL.",
+    "DeepSeek Harness was enriched under its existing feed ID; no duplicate project card.",
+    "PR remains open because merging triggers update-and-deploy on main, which runs update_feed.py and may modify feed.json and seen.json."
+  ]
+}
