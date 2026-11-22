@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "research_only_existing_feed_project_enrichment",
+  "reviewedAt": "2026-11-22T18:35:11.237+03:00",
+  "metricsMeasuredAt": "2026-11-22T15:35:11.237Z",
+  "repository": "heygen-com/hyperframes",
+  "feedId": "6e18aa23e1f0d14413",
+  "license": "Apache-2.0",
+  "metrics": {
+    "stars": 88105,
+    "forks": 8200,
+    "openIssues": 311,
+    "archived": false,
+    "pushedAt": "2026-11-22T15:15:39Z",
+    "updatedAt": "2026-11-22T15:18:34Z",
+    "readmeSha": "c1712141abd3b94426fd29eb00145b0bbd493167",
+    "licenseSha": "ae06b37e1c5116ccfaa615ac25ec1aabf5658d8c",
+    "quickstartSha": "050442a867becbbb1ca525de166434cfe614dd2c",
+    "faqSha": "0c3d7170070dd9b3427a1cf80ed6fea27cef48fe",
+    "introductionSha": "2cc585c22ac3ae2cdd7a39b2bbf0d5175ca1400c"
+  },
+  "requirements": "Node.js 22+ وFFmpeg للرندر المحلي؛ لا يلزم حساب HeyGen للرندر المحلي. تطبيق Studio يتطلب حسابًا مجانيًا. README وQuickstart وFAQ وIntroduction والترخيص قُرئت بعد تغير README SHA.",
+  "costs": "الرندر المحلي مجاني وغير محدود؛ Studio Free يتضمن 3 مقاطع مولدة و5 صادرات سحابية شهريًا؛ Pro بـ25 دولارًا شهريًا مع نماذج أعلى وصادرات سحابية غير محدودة. الوكيل والخدمات السحابية قد تضيف تكاليف.",
+  "localVsCloud": "CLI وFFmpeg محليًا يحتفظان بمجلد المشروع ولا يحتاجان حساب HeyGen. الرندر السحابي والموصل المستضاف يعالجان داخل حساب HeyGen وقد يستهلكان أرصدة ولا يسلّمان مجلد المشروع المحلي.",
+  "alternatives": [
+    "Remotion",
+    "Motion Canvas",
+    "Lottie",
+    "FFmpeg"
+  ],
+  "testStatus": "not_run",
+  "improvements": 2,
+  "spinoffs": 2,
+  "religious": 0,
+  "decision": "أُعيدت قراءة README والوثائق والترخيص بسبب تغير README SHA؛ لم يُشغّل المشروع ولم يُختبر. لا بطاقة مشروع جديدة."
+}
