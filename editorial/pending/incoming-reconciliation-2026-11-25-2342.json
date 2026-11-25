@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "audit-only-not-imported",
+  "reviewedAt": "2026-11-25T23:42:08+03:00",
+  "mainCommit": "1523fcc6514a2dc86940e483a30998ec15506dda",
+  "feedGeneratedAt": "2026-11-25T19:13:31+00:00",
+  "incomingTreeSha": "7357ba473f9abb28ac08679650a27ca746f56a17",
+  "incomingFiles": 155,
+  "lastCompleteAudit": {
+    "reviewedAt": "2026-11-25T12:44:18+03:00",
+    "occurrences": 1630,
+    "importedOccurrences": 1388,
+    "exactUnimportedOccurrencesAtThatSnapshot": 30,
+    "exactUnimportedUniqueIds": 19,
+    "seenOnlyOccurrences": 212,
+    "idUrlMismatches": 0,
+    "structurallyValidFiles": 154,
+    "filesNeedingSchemaCorrection": 1,
+    "knownNewsBeyond21DayWindow": 2
+  },
+  "currentRevalidation": {
+    "priorBacklogUniqueIds": 19,
+    "stillExactInCurrentFeed": 13,
+    "nowAbsentFromCurrentFeed": 6,
+    "priorCandidateRecords": 30,
+    "latestCandidateOriginal": 31,
+    "latestCandidateRetained": 25,
+    "retainedNews": 23,
+    "retainedProjects": 2,
+    "retainedBacklogIds": 13,
+    "newNews": 10,
+    "exactIdUrlMismatches": 0,
+    "editorialIdCollisions": 0,
+    "alreadyImported": 0,
+    "expectedEditorialCountAfterImport": 1166
+  },
+  "staleIds": [
+    "e55c8f2df06c07ffc9",
+    "1578edf8b253799c50",
+    "2e1fba6f9ed9affbda",
+    "e7264247c8d50ed476",
+    "2fb42fa5fa3e9829b6",
+    "e2dca3baf6f62afaf1"
+  ],
+  "retainedIds": [
+    "47396adf5e31273b13",
+    "f88414c8cfe7b454dc",
+    "db895de00b77372a93",
+    "dbe111187a465a8a1f",
+    "dc2fa2fb88cfbd46a7",
+    "fdf1ebbcf783c618ab",
+    "001e20945eceeac012",
+    "87b2502506d7cb89ef",
+    "7bdcb7fa3841c84cc9",
+    "8a369b2d17a9b0f043",
+    "b048edc1eac377680e",
+    "cd580215f9c64a6ed2",
+    "f7a3b0193b2bb179c7",
+    "ac2f786b30f6d45772",
+    "b0689cf87ab570a441",
+    "57993858eb1cb09379",
+    "b0f646dfac9a0a0a63",
+    "977f9f016cc6ca5bd4",
+    "c323da16e537764406",
+    "4113acb1424b1bba6",
+    "76aca383ca5b948c9a",
+    "6a28e842b3bf4bfd84",
+    "aaa55aaf5989509238",
+    "6e18aa23e1f0d14413",
+    "27e4be1576dc64eaa5"
+  ],
+  "specialRecords": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "canonicalRepo": "ai-openshell/openshell",
+      "note": "NVIDIA/OpenShell API returns Moved Permanently; preserve the original editorial ID."
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "age": "2026-10-22; beyond the 21-day RSS retention window"
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "feed": false,
+      "editorial": false,
+      "seen": true,
+      "age": "2026-10-22; beyond the 21-day RSS retention window"
+    }
+  ],
+  "currentData": {
+    "feedItems": 800,
+    "news": 700,
+    "projects": 100,
+    "editorialItems": 1141,
+    "seenIds": 7368,
+    "status": "ok",
+    "sources": 26,
+    "collected": 366,
+    "emptySources": [
+      "أبحاث تعلّم الآلة"
+    ]
+  },
+  "projectCoverage": {
+    "currentFeedProjects": 100,
+    "alreadyEnriched": 98,
+    "pendingInCurrentCandidate": 2,
+    "afterCandidate": 100
+  },
+  "notes": [
+    "Incoming subtree SHA matches the complete prior audit exactly; no incoming file changed since that scan.",
+    "The 6 absent IDs are not marked expired: absence from the current feed is not sufficient proof of expiry.",
+    "The malformed file editorial/incoming/nabdh-news-2026-11-20-1813.json uses schemaVersion instead of version. The Dots record was re-expressed in the candidate; the other records remain quarantined.",
+    "The last complete audit counts are a 12:44 snapshot; current-feed exactness is separately revalidated against the 19:13 feed."
+  ]
+}

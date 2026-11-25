@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "pending-not-importable-current-feed",
+  "reviewedAt": "2026-11-25T23:42:08+03:00",
+  "mainCommit": "1523fcc6514a2dc86940e483a30998ec15506dda",
+  "feedGeneratedAt": "2026-11-25T19:13:31+00:00",
+  "supersedesCandidate": "editorial/pending/current-feed-enrichment-2026-11-25-1514.json",
+  "summary": {
+    "records": 6,
+    "confirmedExpired": 0,
+    "reason": "ID absent from latest feed; do not infer expiry"
+  },
+  "records": [
+    {
+      "id": "e55c8f2df06c07ffc9",
+      "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
+      "titleAr": "دراسة Dharma-AI تتنبأ بزمن ضبط النماذج بدقة أعلى من تقدير FLOPs في عينة H200",
+      "basis": "article",
+      "reviewedAt": "2026-11-20T00:37:02+03:00",
+      "classification": "not_in_current_feed",
+      "reason": "لم يعد المعرف موجودًا في Feed الحالي بعد تحديث 2026-11-25T19:13:31Z؛ لا يُستورد. لا يُصنّف منقضيًا دون تاريخ نشر موثوق أو دليل مستقل.",
+      "sources": [
+        {
+          "title": "Hugging Face — Why your fine-tuning job takes longer than the FLOPs say",
+          "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time"
+        }
+      ]
+    },
+    {
+      "id": "1578edf8b253799c50",
+      "url": "https://news.google.com/rss/articles/CBMijwVBVV95cUxNemc1ZVlHQW9ITlR4czdaZDR6WGZFRGMxNHd1TWpabGJjQ0FjTk1VWE52bnk1ZDBZTDAzZFRlSUZYUnhLY0FCdnBZREhhdWhBQ05tVGlQZ2xacGpLQmpBbXB2bjRQSEM3eEg1eG5iaHEzS21mU3hfX3VCdDVQSWtpNXBvd0dmMXYwUFlMU0xtaUh2Ujc5N0dLZ3AyNDJuaC1hd1pKV0JPUXZKb1NVMGU2S2Z3STE2ZF9CdjNidHhPVmd4RDNNUVZZVGY4MUVJS01SZndGOTk1bTZOb2FrMzRHTzdDRlF5RzRiM1ZkQTBMU2xrZWJiTVZSSzZadFBzZG9FM29EODM4a3dDWGYwZ1FrY0FjbUFkaFFVa094Nmw0N1Rub0x1LUN1MjB2ZGpKbS1oS01od3IzRHh5OVhHQTBWU244bVhFV3RYZC0wdHhEdnlqYnc4YlVBNzJsbjhTdWFxdHMyNHhwZW1LQzJsV29kbnZueGZXVEptYnhYeUdDb3pnSm9MNHA5VkU4bDVDYm5ORTd5Mm4zQW9Vd3B2VU5nUGZ0MzZHbEtuUmZsbjh3UGVUMk9fOXZyMkQ0bUpyUHllZmpQNUxoVW1SOHEwZkI3OVpPclZKTUVZaklmUm5TNUVZTWVMQ3g4WjdtRUJvTnNzclVEdFhYblZxLU0yRk9OWWwyTjVaUkFkSTdZeE5jZ3VsMXhrbzd3bFVtVGNQMnBlMWtYT0lLdFEybGEwOWJOT0RtdUxPWGNqdWFRaUJRbU1NdkxzMjA4dEkzVU5UUGdWaVlFWUZfS0RUbEgtVkppWk5Wdm5jWkZPZDE4NU5La1hzZGUxUXpLQnZIaWF3QUJqYlpIWFZXRHk3R3FyX1pr?oc=5",
+      "titleAr": "HUMAIN تعرض منصة صوتية عربية تدعم اللهجات ووكلاء المحادثة الفورية",
+      "basis": "metadata",
+      "reviewedAt": "2026-11-20T00:37:02+03:00",
+      "classification": "not_in_current_feed",
+      "reason": "لم يعد المعرف موجودًا في Feed الحالي بعد تحديث 2026-11-25T19:13:31Z؛ لا يُستورد. لا يُصنّف منقضيًا دون تاريخ نشر موثوق أو دليل مستقل.",
+      "sources": [
+        {
+          "title": "HUMAIN — Intelligence Voice",
+          "url": "https://www.humain.com/en/voice"
+        },
+        {
+          "title": "HUMAIN Voice — Developer portal",
+          "url": "https://voice.humain.com/"
+        },
+        {
+          "title": "الشرق الأوسط — رابط Feed",
+          "url": "https://news.google.com/rss/articles/CBMijwVBVV95cUxNemc1ZVlHQW9ITlR4czdaZDR6WGZFRGMxNHd1TWpabGJjQ0FjTk1VWE52bnk1ZDBZTDAzZFRlSUZYUnhLY0FCdnBZREhhdWhBQ05tVGlQZ2xacGpLQmpBbXB2bjRQSEM3eEg1eG5iaHEzS21mU3hfX3VCdDVQSWtpNXBvd0dmMXYwUFlMU0xtaUh2Ujc5N0dLZ3AyNDJuaC1hd1pKV0JPUXZKb1NVMGU2S2Z3STE2ZF9CdjNidHhPVmd4RDNNUVZZVGY4MUVJS01SZndGOTk1bTZOb2FrMzRHTzdDRlF5RzRiM1ZkQTBMU2xrZWJiTVZSSzZadFBzZG9FM29EODM4a3dDWGYwZ1FrY0FjbUFkaFFVa094Nmw0N1Rub0x1LUN1MjB2ZGpKbS1oS01od3IzRHh5OVhHQTBWU244bVhFV3RYZC0wdHhEdnlqYnc4YlVBNzJsbjhTdWFxdHMyNHhwZW1LQzJsV29kbnZueGZXVEptYnhYeUdDb3pnSm9MNHA5VkU4bDVDYm5ORTd5Mm4zQW9Vd3B2VU5nUGZ0MzZHbEtuUmZsbjh3UGVUMk9fOXZyMkQ0bUpyUHllZmpQNUxoVW1SOHEwZkI3OVpPclZKTUVZaklmUm5TNUVZTWVMQ3g4WjdtRUJvTnNzclVEdFhYblZxLU0yRk9OWWwyTjVaUkFkSTdZeE5jZ3VsMXhrbzd3bFVtVGNQMnBlMWtYT0lLdFEybGEwOWJOT0RtdUxPWGNqdWFRaUJRbU1NdkxzMjA4dEkzVU5UUGdWaVlFWUZfS0RUbEgtVkppWk5Wdm5jWkZPZDE4NU5La1hzZGUxUXpLQnZIaWF3QUJqYlpIWFZXRHk3R3FyX1pr?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "2e1fba6f9ed9affbda",
+      "url": "https://news.google.com/rss/articles/CBMi1gRBVV95cUxQeDJlOE1TdUpmUjZZN2dxZG12NUJXbVA5MGIyRmlld0FyME1CRkljTTZxYi14VG1Dai1DRERCOXlQQnVsbGNpV0tkUERWZ1c3Zm9UNHBySkJxem9vU0VaWnZRSmRDdHR0SUtUc3FCR3QwMUNRVmVNY0o2M1AtWHJzc2RuTzl0c1JITVZsbVVpU2pLdWEzR1U0Z1dYekZJSDBpdFRQek1aeWJ3bDdiX2RRUF9FaTJPQWkyNjEyZlF3V3laWjFhbGVDOFVaTnVnWUYzT0pTOHRGQlNUZWIzWmNILWZXNG51bG9WNjZhb1UzWEJYQm5RaWhiVnhtU0U2MEtoS2NLOVJJTEp2NjllR0dKa0VLWVh3NnVDc2Y1Mlphdm1pdHd2b2xSbEVBUmhYb0w1U1BrRFMyZjBIUW1xOEh2aVU1V3Z4cHJ6Rm83TFRYU05LMGctQ215NzJhWDQ5UGg2bU5NbEY0TXRGYURYNU1uZzRNMjlmVEctaUpKVXNKRWYtOThOS1NpY3dHam53YzVEcTFsenZuU0VzRjZwMkstVGpiVTItT05PY0x6UnA2dU5WNjhsMnJISUJXbXc1cDZyTHVqN3RBUnJzcUZPYUpxdzFYekZvYTJYb2haMUZjNHZqNk9sLW1VZUV3dm1EWmFjNFZZbVZ3T1dxT08yZGtIek1takMyampyLWhxTlVmT2VKMy1JZDRHUDJBa0JnMnVadE9rM01YV2sxNVdpS2dBVm1kYlBuZU5BTzluUTNpNVRxTTEyWGVqaWYtZTZyZ0l2bUpscFZB?oc=5",
+      "titleAr": "السعودية تتصدر مؤشر الخدمات الإلكترونية وتأتي رابعة في مؤشر الأمم المتحدة للحكومة الإلكترونية",
+      "basis": "metadata",
+      "reviewedAt": "2026-11-20T06:35:29+03:00",
+      "classification": "not_in_current_feed",
+      "reason": "لم يعد المعرف موجودًا في Feed الحالي بعد تحديث 2026-11-25T19:13:31Z؛ لا يُستورد. لا يُصنّف منقضيًا دون تاريخ نشر موثوق أو دليل مستقل.",
+      "sources": [
+        {
+          "title": "SPA — المملكة الأولى عالميًا في الخدمات الحكومية الرقمية",
+          "url": "https://spa.gov.sa/N2731813"
+        },
+        {
+          "title": "UN DESA — 2026 E-Government Survey",
+          "url": "https://www.un.org/en/desa/digital-government-advances-worldwide-but-divides-persist-as-ai-transforms-public-administration-new-un-survey-shows"
+        }
+      ]
+    },
+    {
+      "id": "e7264247c8d50ed476",
+      "url": "https://arxiv.org/abs/2611.23817",
+      "titleAr": "بحث يقترح تغذية وكلاء البرمجة بمقاييس التعقيد والتغطية أثناء التنفيذ",
+      "basis": "metadata",
+      "reviewedAt": "2026-11-20T20:44:11+03:00",
+      "classification": "not_in_current_feed",
+      "reason": "لم يعد المعرف موجودًا في Feed الحالي بعد تحديث 2026-11-25T19:13:31Z؛ لا يُستورد. لا يُصنّف منقضيًا دون تاريخ نشر موثوق أو دليل مستقل.",
+      "sources": [
+        {
+          "title": "arXiv — Metrics-in-the-Loop: Complexity Feedback Reshapes Agent-Written Code",
+          "url": "https://arxiv.org/abs/2611.23817"
+        }
+      ]
+    },
+    {
+      "id": "2fb42fa5fa3e9829b6",
+      "url": "https://arxiv.org/abs/2611.23588",
+      "titleAr": "ARISE: ذاكرة تتطور من إخفاقات الوكلاء لتحسين الدقة وتقليل كلفة التشغيل",
+      "basis": "metadata",
+      "reviewedAt": "2026-11-20T20:44:11+03:00",
+      "classification": "not_in_current_feed",
+      "reason": "لم يعد المعرف موجودًا في Feed الحالي بعد تحديث 2026-11-25T19:13:31Z؛ لا يُستورد. لا يُصنّف منقضيًا دون تاريخ نشر موثوق أو دليل مستقل.",
+      "sources": [
+        {
+          "title": "arXiv — ARISE: Practical Self-Evolving Memory for Accurate and Cost-Efficient Enterprise Agents",
+          "url": "https://arxiv.org/abs/2611.23588"
+        }
+      ]
+    },
+    {
+      "id": "e2dca3baf6f62afaf1",
+      "url": "https://arxiv.org/abs/2611.23678",
+      "titleAr": "ورقة تقترح سجلًا حاكمًا لتجارب التعلم الآلي التي ينفذها الوكلاء",
+      "basis": "metadata",
+      "reviewedAt": "2026-11-20T20:44:11+03:00",
+      "classification": "not_in_current_feed",
+      "reason": "لم يعد المعرف موجودًا في Feed الحالي بعد تحديث 2026-11-25T19:13:31Z؛ لا يُستورد. لا يُصنّف منقضيًا دون تاريخ نشر موثوق أو دليل مستقل.",
+      "sources": [
+        {
+          "title": "arXiv — Evaluating Governed LLM-Driven ML Experimentation: Lifecycle, Provenance, and Failure Metrics",
+          "url": "https://arxiv.org/abs/2611.23678"
+        }
+      ]
+    }
+  ]
+}

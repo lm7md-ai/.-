@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "reconciliation_report_not_importable",
+  "reviewedAt": "2026-11-24T23:42:49+03:00",
+  "mainCommit": "b3a842061d0bb016ea4c3d35d6fa950bf7d2c9c9",
+  "incomingTreeSha": "7357ba473f9abb28ac08679650a27ca746f56a17",
+  "files": 155,
+  "appearances": 1630,
+  "classifications": {
+    "alreadyImportedExactIdUrl": 1388,
+    "activeExactIdUrlNotInMainEditorial": 32,
+    "outsideCurrentFeedButSeen": 210,
+    "idUrlMismatches": 0,
+    "neitherFeedNorSeen": 0,
+    "distinctActiveIds": 20
+  },
+  "structuralEquivalentValidation": {
+    "passedFiles": 154,
+    "failedFiles": 1,
+    "failedFile": "editorial/incoming/nabdh-news-2026-11-20-1813.json",
+    "failedEntryCount": 7,
+    "reason": "schemaVersion instead of version:1"
+  },
+  "auditProvenance": {
+    "source": "editorial/pending/incoming-reconciliation-2026-11-24-0640.json",
+    "sameIncomingTreeSha": true,
+    "countsReusedNotRecounted": true
+  },
+  "currentFeedRevalidation": {
+    "feedGeneratedAt": "2026-11-24T14:51:09+00:00",
+    "feedCount": 800,
+    "candidateCount": 32,
+    "exactIdUrlMatches": 31,
+    "staleCount": 1,
+    "staleId": "f629676ca2f94e3b99",
+    "editorialCountBefore": 1141,
+    "exactMatchesAlreadyImported": 1,
+    "newRecords": 30,
+    "editorialCountAfterIfImported": 1171,
+    "kindCounts": {
+      "news": 29,
+      "projects": 2
+    },
+    "basisCounts": {
+      "article": 18,
+      "metadata": 11,
+      "readme": 2
+    }
+  },
+  "specialRecords": {
+    "nvidiaOpenShell": {
+      "id": "940ec4695c1e241c2f",
+      "seen": true,
+      "feed": false,
+      "editorial": false
+    },
+    "canvaCraft": {
+      "id": "317abcdd1b20728a7e",
+      "seen": true,
+      "feed": false,
+      "editorial": false
+    },
+    "onePasswordAgentSignIn": {
+      "id": "662e68277c6361dd4b",
+      "seen": true,
+      "feed": false,
+      "editorial": false
+    }
+  },
+  "note": "The 155-file classification and structural scan are inherited from the prior audit because the incoming tree SHA is unchanged; they were not recounted in this run. The 32 prepared candidate records were newly compared with current Feed; 31 match exact ID+URL."
+}
