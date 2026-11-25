@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-25T08:42:43+03:00",
+  "records": [
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-20-1813.json",
+      "status": "quarantined",
+      "reason": "يستخدم schemaVersion بدل version:1؛ لم يُستورد.",
+      "requiredCorrection": "إضافة version:1 وفق مخطط المحرر، ثم إعادة validate ومطابقة ID/URL."
+    },
+    {
+      "id": "940ec4695c1e241c2f",
+      "name": "NVIDIA OpenShell",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "status": "seen-only; no replacement identity"
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "name": "Canva Craft",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "status": "seen-only; no replacement identity"
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "name": "1Password agent sign-in",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "status": "seen-only; no replacement identity"
+    }
+  ],
+  "seenOnlyOutsideFeed": 212,
+  "confirmedExpired": 0
+}
