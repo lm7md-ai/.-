@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-11-25T03:10:49+03:00",
+  "basis": "Exact ID and URL comparison against Main 61e4deb7cf69be87a08b01de22a764abc62efb3f",
+  "note": "Both records are present in Seen but absent from current Feed. They are not declared expired; recheck original sources and queue status before any import.",
+  "records": [
+    {
+      "id": "f629676ca2f94e3b99",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBKSzl6NU1meVZBYzBPb1Y1dzNRSmFqMEVRZHVWQXp3cTZsc1lPaVA0bUxzS3kzSW51VnlIX2VBS1U2RHJYUGc?oc=5",
+      "titleAr": "وزارة الاتصالات وهيئة الحكومة الرقمية تبحثان تسريع تبني السحابة والذكاء الاصطناعي الحكومي",
+      "classification": "seen_only_not_in_feed",
+      "reason": "Exact ID is in Seen; exact ID is absent from current Feed."
+    },
+    {
+      "id": "26c5ca669b14170471",
+      "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+      "titleAr": "OpenRouter تستبعد ثلاثة مزوّدين وتزيل 125 نقطة نهاية من أهلية الاحتفاظ الصفري بعد تحقيقات في بيانات الاستدلال",
+      "classification": "seen_only_not_in_feed",
+      "reason": "Exact ID is in Seen; exact ID is absent from current Feed."
+    }
+  ]
+}
