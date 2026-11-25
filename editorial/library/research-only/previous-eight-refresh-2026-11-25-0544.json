@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "research-only-not-project-cards",
+  "reviewedAt": "2026-11-25T05:44:28+03:00",
+  "summary": {
+    "previousProjectsReviewed": 8,
+    "active": 8,
+    "archived": 0,
+    "licensesVerified": 8,
+    "newProjectCards": 0,
+    "testStatus": "not_run",
+    "curatedLibrary": {
+      "total": 31,
+      "active": 29,
+      "archived": 2,
+      "licensesVerified": 31,
+      "metricsCapturedAt": "2026-11-16T02:54:42+03:00"
+    },
+    "historicalCatalog": {
+      "total": 73,
+      "active": 71,
+      "archived": 2,
+      "feedMembers": 17,
+      "outsideFeed": 56,
+      "licensesNeedingUpstreamVerification": 10,
+      "snapshotAt": "2026-11-14T02:47:48+03:00"
+    }
+  },
+  "projects": [
+    {
+      "repo": "patchy631/ai-engineering-hub",
+      "name": "AI Engineering Hub",
+      "feedId": "fe0e6bfdbdd5822139",
+      "inCurrentFeed": true,
+      "archived": false,
+      "license": "MIT",
+      "metrics": {
+        "stars": 42117,
+        "forks": 6727,
+        "openIssues": 141,
+        "lastPushedAt": "2026-11-01T04:39:16Z",
+        "measuredAt": "2026-11-25T05:44:28+03:00"
+      },
+      "readmeSha": "6c65ab12125814c5233f873c4c1af2765ff87d51",
+      "overview": "مستودع تعليمي يجمع مشاريع AI Engineering بمستويات صعوبة متعددة؛ README يذكر أكثر من 93 مشروعًا.",
+      "requirements": "لا توجد بيئة تشغيل واحدة؛ متطلبات كل مشروع فرعي تختلف وقد تتضمن Python أو مفاتيح API أو GPU.",
+      "quickStart": "ابدأ بفهرس README، اختر مشروعًا بحسب المستوى، ثم اتبع README والترخيص والمتطلبات الخاصة به.",
+      "costs": "المحتوى مجاني؛ بعض المشاريع الفرعية قد تعتمد على APIs أو GPU مدفوع.",
+      "testStatus": "not_run",
+      "sources": [
+        {
+          "title": "README",
+          "url": "https://github.com/patchy631/ai-engineering-hub/blob/main/README.md"
+        },
+        {
+          "title": "LICENSE",
+          "url": "https://github.com/patchy631/ai-engineering-hub/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "repo": "googleapis/python-genai",
+      "name": "Google Gen AI SDK",
+      "inCurrentFeed": false,
+      "archived": false,
+      "license": "Apache-2.0",
+      "metrics": {
+        "stars": 4087,
+        "forks": 1070,
+        "openIssues": 350,
+        "lastPushedAt": "2026-11-25T00:24:36Z",
+        "measuredAt": "2026-11-25T05:44:28+03:00"
+      },
+      "readmeSha": "ec135323f87bfbb6b7be8754b3a31968f25bc9ae",
+      "overview": "SDK Python رسمي لـGemini Developer API وVertex AI؛ README يتضمن Agent Skills والعملاء المتزامنين وغير المتزامنين.",
+      "requirements": "Python متوافق مع إصدار SDK، اتصال شبكي، ومصادقة مناسبة للواجهة المختارة.",
+      "quickStart": "ثبّت google-genai، اختر Gemini Developer API أو Vertex AI، أعد المصادقة وفق الوثائق، ثم اتبع مثال README.",
+      "costs": "تكلفة الاستدعاءات تعتمد على نموذج Google وخطة الحساب.",
+      "testStatus": "not_run",
+      "sources": [
+        {
+          "title": "README",
+          "url": "https://github.com/googleapis/python-genai/blob/main/README.md"
+        },
+        {
+          "title": "Docs",
+          "url": "https://googleapis.github.io/python-genai/"
+        }
+      ]
+    },
+    {
+      "repo": "Millillion/lasm",
+      "name": "Lasm",
+      "inCurrentFeed": false,
+      "archived": false,
+      "license": "MIT",
+      "metrics": {
+        "stars": 109,
+        "forks": 6,
+        "openIssues": 13,
+        "lastPushedAt": "2026-11-25T02:24:52Z",
+        "measuredAt": "2026-11-25T05:44:28+03:00"
+      },
+      "readmeSha": "d437b8cf0b36f43b05182bd1d3a9c720445d9b03",
+      "overview": "مترجم Lean 4 إلى WebAssembly؛ README يذكر Node وBun وDeno وWorkers والمتصفح.",
+      "requirements": "Node.js/npm للبدء، وLean 4 عند تطوير الشيفرة أو البراهين؛ راجع docs لكل هدف نشر.",
+      "quickStart": "npm create @lasm@latest my-app -- --template hono ثم cd my-app وnpm install وnpm run dev.",
+      "costs": "البناء محلي؛ استضافة Workers أو Functions قد تُحتسب حسب المزود.",
+      "testStatus": "not_run",
+      "sources": [
+        {
+          "title": "README",
+          "url": "https://github.com/Millillion/lasm/blob/main/README.md"
+        },
+        {
+          "title": "LICENSE",
+          "url": "https://github.com/Millillion/lasm/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "repo": "microsoft/markitdown",
+      "name": "MarkItDown",
+      "inCurrentFeed": false,
+      "archived": false,
+      "license": "MIT",
+      "metrics": {
+        "stars": 198296,
+        "forks": 15039,
+        "openIssues": 822,
+        "lastPushedAt": "2026-11-07T00:14:01Z",
+        "measuredAt": "2026-11-25T05:44:28+03:00"
+      },
+      "readmeSha": "af858038fd380b187e2928cfbb8b9802c4912d5b",
+      "overview": "مكتبة وأداة لتحويل صيغ ملفات متعددة إلى Markdown مع optional dependencies وplugins.",
+      "requirements": "بيئة Python؛ بعض الصيغ تحتاج تبعيات اختيارية. README يحذر من I/O بصلاحيات العملية الحالية.",
+      "quickStart": "ثبّت MarkItDown في بيئة معزولة، ابدأ بصيغة واحدة عبر CLI أو convert function ضيقة النطاق، واختبر الملفات غير الموثوقة بحذر.",
+      "costs": "التحويل محلي؛ خدمات Azure الاختيارية قد تتطلب تكلفة.",
+      "testStatus": "not_run",
+      "sources": [
+        {
+          "title": "README",
+          "url": "https://github.com/microsoft/markitdown/blob/main/README.md"
+        },
+        {
+          "title": "Security considerations",
+          "url": "https://github.com/microsoft/markitdown#security-considerations"
+        }
+      ]
+    },
+    {
+      "repo": "yc-software/minecraft-agent-harness",
+      "name": "Minecraft Agent Harness",
+      "inCurrentFeed": false,
+      "archived": false,
+      "license": "MIT",
+      "metrics": {
+        "stars": 233,
+        "forks": 30,
+        "openIssues": 1,
+        "lastPushedAt": "2026-10-29T20:30:45Z",
+        "measuredAt": "2026-11-25T05:44:28+03:00"
+      },
+      "readmeSha": "50b5a20eeb3a6f8268d06d244d858c4464c81eba",
+      "overview": "Harness لتجربة وكلاء LLM داخل Minecraft Java مع خيارات خادم خاص وDocker وTeams.",
+      "requirements": "README يحدد Node.js 22.19+ وMinecraft Java 1.21.6؛ يلزم إعداد الخادم ومزود النموذج.",
+      "quickStart": "راجع Quickstart، جهّز خادم Minecraft المتوافق، ثم اختر التشغيل على خادمك أو Docker واضبط إعدادات الوكيل.",
+      "costs": "الخادم المحلي يقلل تكلفة الاستضافة؛ API النموذج قد يضيف تكلفة.",
+      "testStatus": "not_run",
+      "sources": [
+        {
+          "title": "README",
+          "url": "https://github.com/yc-software/minecraft-agent-harness/blob/main/README.md"
+        },
+        {
+          "title": "LICENSE",
+          "url": "https://github.com/yc-software/minecraft-agent-harness/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "repo": "NVIDIA/OpenShell",
+      "name": "NVIDIA OpenShell",
+      "inCurrentFeed": false,
+      "archived": false,
+      "license": "Apache-2.0",
+      "metrics": {
+        "stars": 21773,
+        "forks": 2135,
+        "openIssues": 739,
+        "lastPushedAt": "2026-11-18T21:04:56Z",
+        "measuredAt": "2026-11-19T00:05:34+03:00",
+        "stale": true
+      },
+      "readmeSha": null,
+      "overview": "بيئة تشغيل لوكلاء AI تضبط الوصول إلى الملفات واستدعاءات النظام والشبكة عبر السياسات؛ README الرسمي يقول إن الانتقال إلى CNCF وai-openshell ما زال قيد التنفيذ.",
+      "requirements": "راجع متطلبات التثبيت الرسمية حسب النظام والبيئة؛ لا تفترض اكتمال نقل المستودع.",
+      "quickStart": "ابدأ بصفحة التثبيت الرسمية وREADME، واستخدم NVIDIA/OpenShell كمصدر الكود والقضايا إلى اكتمال النقل.",
+      "costs": "المشروع مفتوح المصدر؛ تكلفة النموذج والبنية التحتية منفصلة.",
+      "testStatus": "not_run",
+      "sources": [
+        {
+          "title": "README",
+          "url": "https://github.com/NVIDIA/OpenShell/blob/main/README.md"
+        },
+        {
+          "title": "Installation docs",
+          "url": "https://docs.nvidia.com/openshell/latest/about/installation"
+        },
+        {
+          "title": "LICENSE",
+          "url": "https://github.com/NVIDIA/OpenShell/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "repo": "pydantic/pydantic-ai",
+      "name": "Pydantic AI",
+      "inCurrentFeed": false,
+      "archived": false,
+      "license": "MIT",
+      "metrics": {
+        "stars": 21371,
+        "forks": 3266,
+        "openIssues": 1997,
+        "lastPushedAt": "2026-11-25T02:47:31Z",
+        "measuredAt": "2026-11-25T05:44:28+03:00"
+      },
+      "readmeSha": "ec17e58df5808685581935d1bc19b14ab394e159",
+      "readmeChangedSincePreviousHash": true,
+      "previousReadmeSha": "94fc16382961699760acb0c6280f361e49a1733b",
+      "overview": "إطار Python لبناء وكلاء typed؛ README يعرض coding agents واستخراج البيانات وسير العمل والصوت الفوري وتوليد الصور.",
+      "requirements": "Python وفق النسخة المدعومة في docs، ومزود نموذج متوافق؛ Logfire أو الخدمات الخارجية اختيارية.",
+      "quickStart": "ثبّت pydantic-ai، اختر مزودًا مدعومًا، واتبع أول مثال في docs ثم أضف أدوات typed واختبارات للفشل.",
+      "costs": "الإطار مفتوح المصدر؛ كلفة النموذج أو المراقبة السحابية حسب المزود.",
+      "testStatus": "not_run",
+      "sources": [
+        {
+          "title": "README",
+          "url": "https://github.com/pydantic/pydantic-ai/blob/main/README.md"
+        },
+        {
+          "title": "Docs",
+          "url": "https://ai.pydantic.dev/"
+        }
+      ]
+    },
+    {
+      "repo": "astral-sh/uv",
+      "name": "uv",
+      "inCurrentFeed": false,
+      "archived": false,
+      "license": "MIT OR Apache-2.0",
+      "metadataLicense": "Apache-2.0",
+      "metrics": {
+        "stars": 92613,
+        "forks": 3930,
+        "openIssues": 3097,
+        "lastPushedAt": "2026-11-24T22:57:05Z",
+        "measuredAt": "2026-11-25T05:44:28+03:00"
+      },
+      "readmeSha": "66caaf9ccc62add8c63de8e71184c9b7677377ad",
+      "overview": "مدير سريع لمشاريع وحزم وأدوات Python مكتوب بـRust؛ README يغطي projects وscripts وtools.",
+      "requirements": "ملف تنفيذي متوافق مع النظام المدعوم؛ إدارة Python محليًا.",
+      "quickStart": "ثبّت uv وفق docs، ثم uv init لإنشاء مشروع وuv add لإضافة اعتماد وuv run لتشغيله.",
+      "costs": "محلي ومفتوح المصدر؛ لا يحتاج اشتراكًا.",
+      "testStatus": "not_run",
+      "sources": [
+        {
+          "title": "README",
+          "url": "https://github.com/astral-sh/uv/blob/main/README.md"
+        },
+        {
+          "title": "Docs",
+          "url": "https://docs.astral.sh/uv/"
+        }
+      ]
+    }
+  ],
+  "developerHandoff": [
+    "افصل الكتالوج التاريخي عن Feed.",
+    "اعرض active/archived وlicense ووقت القياس ومصدره.",
+    "اعرض overview وrequirements وquickStart وcosts وlocalVsCloud وalternatives ومصادرها عند إنشاء dossier.",
+    "أظهر testStatus=not_run ولا تحوله إلى tested بسبب CI خارجي.",
+    "احفظ ترتيب الأفكار وروابطها السابقة."
+  ]
+}
