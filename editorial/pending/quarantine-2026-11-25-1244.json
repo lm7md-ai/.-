@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-25T12:44:18+03:00",
+  "seenOnlyOutsideFeed": 212,
+  "confirmedExpired": 0,
+  "idUrlMismatches": 0,
+  "records": [
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-20-1813.json",
+      "status": "schema_mismatch",
+      "schemaVersion": 1,
+      "expected": "version:1",
+      "entries": 7,
+      "matchingEntries": [
+        {
+          "id": "7bdcb7fa3841c84cc9",
+          "title": "OpenAI تختبر Dots مع عدد محدود من مشتركي Plus وتوسع Business Standard",
+          "url": "https://www.engadget.com/2322656/openai-is-testing-dots-personal-agents-on-its-20-per-month-plus-tier/",
+          "seen": true,
+          "feed": true,
+          "exact": true,
+          "alreadyEditorial": false
+        }
+      ],
+      "unmatchedEntries": [
+        {
+          "id": "97dffa3b72860b1f67",
+          "title": "CVE-2026-121481: طلب إصلاح مفتوح لمشكلة في EVP_EncodeBlock",
+          "url": "https://github.com/openssl/openssl/pull/33652",
+          "seen": true,
+          "feed": false,
+          "exact": false,
+          "alreadyEditorial": false
+        },
+        {
+          "id": "bda522de56a34a98c0",
+          "title": "مؤشر مستقل يضع Gemini 4 Neon في صدارة اختبارات هندسة البرمجيات",
+          "url": "https://git-aarvin.github.io/mei/",
+          "seen": true,
+          "feed": false,
+          "exact": false,
+          "alreadyEditorial": false
+        },
+        {
+          "id": "b1430f615687828286",
+          "title": "تعيين مؤقت لقيادة الأمن السيبراني الأميركي بعد موجة انقطاعات تقنية",
+          "url": "https://www.engadget.com/2322705/the-trump-administration-has-replaced-its-cybersecurity-chief/",
+          "seen": true,
+          "feed": false,
+          "exact": false,
+          "alreadyEditorial": false
+        },
+        {
+          "id": "b6973fc351e5f01d48",
+          "title": "BBC تطرح سؤال استخدام الذكاء الاصطناعي في تقييم الجدارة الائتمانية",
+          "url": "https://www.bbc.co.uk/news/articles/c6d94pzk9vleo?at_medium=RSS&at_campaign=rss",
+          "seen": true,
+          "feed": false,
+          "exact": false,
+          "alreadyEditorial": false
+        },
+        {
+          "id": "c50a064b65c55ff5ed",
+          "title": "مقال رأي ينتقد اعتماد الشركات الصغيرة على مزادات الإعلانات الرقمية",
+          "url": "https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine",
+          "seen": true,
+          "feed": false,
+          "exact": false,
+          "alreadyEditorial": false
+        },
+        {
+          "id": "f78d1ebaf9c5d49889",
+          "title": "أسهم شركات الرقائق الآسيوية تتراجع وسط إعادة تقييم رهانات الذكاء الاصطناعي",
+          "url": "https://aitnews.com/2026/11/20/asian-chip-stocks-ai-investment-selloff-november-2026/",
+          "seen": true,
+          "feed": false,
+          "exact": false,
+          "alreadyEditorial": false
+        }
+      ]
+    },
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "status": "seen_only_no_alias"
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "status": "seen_only_no_alias"
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "seen": true,
+      "feed": false,
+      "editorial": false,
+      "status": "seen_only_no_alias"
+    }
+  ]
+}
