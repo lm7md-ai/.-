@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "research-only-not-project-card",
+  "reviewedAt": "2026-11-25T12:44:18+03:00",
+  "project": {
+    "repo": "muruhq/muru",
+    "name": "Muru",
+    "feedRelation": {
+      "id": "aaa55aaf5989509238",
+      "kind": "news",
+      "projectCardInCurrentFeed": false
+    },
+    "activity": {
+      "defaultBranch": "develop",
+      "archived": false,
+      "lastCommitSha": "a6cdc960678c2da2d13a129dfce60f2b8e905043",
+      "lastCommitAt": "2026-11-25T03:16:18Z",
+      "version": "0.1.0-alpha.36"
+    },
+    "license": "Apache-2.0",
+    "overview": "طبقة توجيه وحافة تشغيل ومتحكم لخدمات Python عبر WSGI وASGI. تستقبل حافة Rust اتصالات HTTP وتوجهها عبر وصلة خاصة إلى عمليات Python؛ يدير متحكم Rust إصدارات immutable يمكن تشغيلها جنبًا إلى جنب ثم تحويل الحركة إليها بعد الجاهزية. يدعم blue/green وcanary موزونًا وتقسيم A/B والمعاينات والتراجع الفوري، مع CLI وdaemon وحاوية.",
+    "requirements": "للتجربة: uv وتطبيق Python يعرّف WSGI أو ASGI entrypoint. pyproject.toml يعلن Python >=3.11 لبيئة التطوير، وCargo.toml يحدد Rust 1.88 وEdition 2024 للبناء من المصدر. راجع توثيق النظام قبل افتراض توافق الإنتاج.",
+    "quickStart": "1) ثبّت uv. 2) شغّل `uv tool install muructl`. 3) من مجلد التطبيق شغّل `muructl run app:application`. 4) افتح `http://127.0.0.1:8080`. إعداد daemon أو container يحتاج دليل النشر.",
+    "costs": "المشروع مفتوح المصدر ولا يتطلب API مدفوعًا وفق README؛ التشغيل المحلي لا يحتاج خدمة مستضافة. النشر على VM أو حاوية يضيف تكلفة البنية التحتية والشبكة والمراقبة.",
+    "alternatives": "Uvicorn وGunicorn وGranian وHypercorn لخدمة تطبيقات Python؛ ويمكن وضع Nginx أو Caddy كحافة أمامية. هذه بدائل مقارنة وليست مطابقة لوظائف إدارة الإصدارات والتراجع.",
+    "limitations": "المشروع Alpha وإصدارات PyPI من سلسلة 0.1.0 pre-release؛ الأوامر والإعدادات قد تتغير. لم يُشغّل في هذه المراجعة. لا تفترض جاهزية إنتاجية من README وحده.",
+    "testStatus": "not_run",
+    "metrics": {
+      "stars": null,
+      "forks": null,
+      "openIssues": null,
+      "measuredAt": "2026-11-25T12:44:18+03:00",
+      "note": "الأعداد الرقمية لم تظهر في استجابة GitHub المتاحة؛ لم تُقدّر."
+    },
+    "improvements": [
+      {
+        "title": "سجل تدقيق قابل للتصدير لقرارات النشر والتراجع",
+        "problem": "قد يصعب تفسير سبب نقل الحركة أو التراجع عند مراجعة حادثة لاحقة.",
+        "approach": "سجل أحداث منظم يربط الإصدار وقرار canary ونتائج بوابات الصحة وسبب rollback مع تصدير JSON/OTel دون محتوى الطلبات.",
+        "stack": "Rust, OpenTelemetry, JSONL, Muru control plane",
+        "steps": [
+          "حدد أحداث النشر والتحويل والتراجع دون بيانات شخصية.",
+          "أضف مخططًا ثابتًا يتضمن release ID والوقت والقرار ونتيجة health gate.",
+          "صدّر الأحداث إلى JSONL وOpenTelemetry.",
+          "اختبر عدم تسجيل headers أو bodies الحساسة.",
+          "وثّق الاحتفاظ والتدوير وربط السجل بمعرف الحادثة."
+        ],
+        "metric": "نسبة قرارات canary/rollback التي يمكن تفسيرها دون الوصول لبيانات الطلبات.",
+        "difficulty": "متوسط (تقدير)",
+        "risks": "قد يكشف السجل أسماء خدمات أو بنية داخلية؛ يلزم تقليل البيانات والتحكم في الوصول.",
+        "sources": [
+          {
+            "title": "Muru README",
+            "url": "https://github.com/muruhq/muru/blob/develop/README.md"
+          },
+          {
+            "title": "Muru documentation",
+            "url": "https://docs.muruhq.dev/"
+          }
+        ]
+      }
+    ],
+    "spinoffs": [
+      {
+        "title": "مختبر مقارنة خوادم ASGI/WSGI",
+        "problem": "يصعب مقارنة خوادم Python تحت حمل متطابق مع اختلاف البروتوكول والعمال والمهلات.",
+        "approach": "أداة مستقلة تشغّل تطبيقات معيارية متطابقة على Muru وUvicorn وGunicorn وGranian وتنتج تقريرًا قابلًا لإعادة الإنتاج.",
+        "stack": "Python, uv, pytest, Docker, wrk/vegeta, JSON",
+        "steps": [
+          "أنشئ تطبيق WSGI وآخر ASGI بمهام ثابتة.",
+          "ثبّت إصدارات الخوادم والعتاد وإعدادات العمال.",
+          "شغّل الأحمال نفسها مع معدلات تزامن متعددة.",
+          "اجمع p50/p95/p99 ومعدل الأخطاء واستهلاك الذاكرة.",
+          "انشر ملفات الإعداد والنتائج الخام مع التقرير."
+        ],
+        "metric": "قابلية إعادة إنتاج النتائج والفروق في p95 ومعدل الأخطاء واستهلاك الذاكرة.",
+        "difficulty": "متوسط (تقدير)",
+        "risks": "النتائج تتأثر بالعتاد والشبكة ونظام التشغيل؛ لا تعمم نتيجة جهاز واحد.",
+        "sources": [
+          {
+            "title": "Muru README",
+            "url": "https://github.com/muruhq/muru/blob/develop/README.md"
+          },
+          {
+            "title": "Uvicorn documentation",
+            "url": "https://www.uvicorn.org/"
+          },
+          {
+            "title": "Granian documentation",
+            "url": "https://granian.readthedocs.io/"
+          }
+        ]
+      }
+    ],
+    "religious": [],
+    "sources": [
+      {
+        "title": "Muru README",
+        "url": "https://github.com/muruhq/muru/blob/develop/README.md"
+      },
+      {
+        "title": "Muru LICENSE",
+        "url": "https://github.com/muruhq/muru/blob/develop/LICENSE"
+      },
+      {
+        "title": "Muru pyproject.toml",
+        "url": "https://github.com/muruhq/muru/blob/develop/pyproject.toml"
+      },
+      {
+        "title": "Muru Cargo.toml",
+        "url": "https://github.com/muruhq/muru/blob/develop/Cargo.toml"
+      },
+      {
+        "title": "Muru documentation",
+        "url": "https://docs.muruhq.dev/"
+      },
+      {
+        "title": "muructl on PyPI",
+        "url": "https://pypi.org/project/muructl/"
+      }
+    ]
+  }
+}
