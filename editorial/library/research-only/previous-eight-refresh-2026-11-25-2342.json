@@ -30,13 +30,14 @@
     },
     "metricsMeasuredAt": "2026-11-25T23:42:08+03:00",
     "note": "المؤشرات تراكمية من GitHub REST API، وليست نموًا يوميًا؛ OpenShell مقاس على المستودع canonical بعد انتقال الاسم.",
-    "currentFeedProjectEnrichmentsAfterCandidate": 100
+    "currentFeedProjectEnrichmentsAfterCandidate": 100,
+    "projectMembershipCheckedAt": "2026-11-25T23:42:08+03:00"
   },
   "projects": [
     {
       "repo": "patchy631/ai-engineering-hub",
       "name": "AI Engineering Hub",
-      "feedId": "fe0e6bfdbdd5822139",
+      "feedId": null,
       "inCurrentFeed": false,
       "archived": false,
       "license": "MIT",
@@ -63,7 +64,8 @@
           "url": "https://github.com/patchy631/ai-engineering-hub/blob/main/LICENSE"
         }
       ],
-      "canonicalRepo": "patchy631/ai-engineering-hub"
+      "canonicalRepo": "patchy631/ai-engineering-hub",
+      "previousFeedId": "fe0e6bfdbdd5822139"
     },
     {
       "repo": "googleapis/python-genai",
@@ -94,7 +96,9 @@
           "url": "https://googleapis.github.io/python-genai/"
         }
       ],
-      "canonicalRepo": "googleapis/python-genai"
+      "canonicalRepo": "googleapis/python-genai",
+      "previousFeedId": null,
+      "feedId": null
     },
     {
       "repo": "Millillion/lasm",
@@ -125,7 +129,9 @@
           "url": "https://github.com/Millillion/lasm/blob/main/LICENSE"
         }
       ],
-      "canonicalRepo": "Millillion/lasm"
+      "canonicalRepo": "Millillion/lasm",
+      "previousFeedId": null,
+      "feedId": null
     },
     {
       "repo": "microsoft/markitdown",
@@ -156,7 +162,9 @@
           "url": "https://github.com/microsoft/markitdown#security-considerations"
         }
       ],
-      "canonicalRepo": "microsoft/markitdown"
+      "canonicalRepo": "microsoft/markitdown",
+      "previousFeedId": null,
+      "feedId": null
     },
     {
       "repo": "yc-software/minecraft-agent-harness",
@@ -187,7 +195,9 @@
           "url": "https://github.com/yc-software/minecraft-agent-harness/blob/main/LICENSE"
         }
       ],
-      "canonicalRepo": "yc-software/minecraft-agent-harness"
+      "canonicalRepo": "yc-software/minecraft-agent-harness",
+      "previousFeedId": null,
+      "feedId": null
     },
     {
       "repo": "NVIDIA/OpenShell",
@@ -224,7 +234,9 @@
         }
       ],
       "canonicalRepo": "ai-openshell/openshell",
-      "repositoryStatus": "old NVIDIA/OpenShell URL returns 301; canonical repository is ai-openshell/openshell"
+      "repositoryStatus": "old NVIDIA/OpenShell URL returns 301; canonical repository is ai-openshell/openshell",
+      "previousFeedId": null,
+      "feedId": null
     },
     {
       "repo": "pydantic/pydantic-ai",
@@ -257,7 +269,9 @@
           "url": "https://ai.pydantic.dev/"
         }
       ],
-      "canonicalRepo": "pydantic/pydantic-ai"
+      "canonicalRepo": "pydantic/pydantic-ai",
+      "previousFeedId": null,
+      "feedId": null
     },
     {
       "repo": "astral-sh/uv",
@@ -289,7 +303,9 @@
           "url": "https://docs.astral.sh/uv/"
         }
       ],
-      "canonicalRepo": "astral-sh/uv"
+      "canonicalRepo": "astral-sh/uv",
+      "previousFeedId": null,
+      "feedId": null
     }
   ]
 }
