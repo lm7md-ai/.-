@@ -1,0 +1,334 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "pending_not_imported",
+  "reviewedAt": "2026-11-25T12:44:18+03:00",
+  "mainCommit": "96876ce74827b8121313e3897fcfa2423ebf032e",
+  "feedGeneratedAt": "2026-11-25T08:27:50+00:00",
+  "feedBlobSha": "2f6d594d62b27a597b9b79e6e71980a4f146bb35",
+  "editorialBlobSha": "b9f752d7d22f7f08e350d8819d962a667b083077",
+  "candidatePath": "editorial/pending/current-feed-enrichment-2026-11-25-0842.json",
+  "counts": {
+    "candidate": 30,
+    "exactIdUrlMatches": 30,
+    "mismatches": 0,
+    "alreadyImported": 0,
+    "editorialBefore": 1141,
+    "editorialAfterIfImported": 1171,
+    "news": 29,
+    "projects": 1,
+    "seen": 29,
+    "notSeen": 1,
+    "basis": {
+      "article": 19,
+      "metadata": 9,
+      "readme": 2
+    }
+  },
+  "backlog": {
+    "exactIds": 19,
+    "includedInCandidate": 19,
+    "missing": []
+  },
+  "items": [
+    {
+      "id": "e55c8f2df06c07ffc9",
+      "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
+      "kind": "news",
+      "basis": "article",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": true,
+      "titleAr": "دراسة Dharma-AI تتنبأ بزمن ضبط النماذج بدقة أعلى من تقدير FLOPs في عينة H200"
+    },
+    {
+      "id": "1578edf8b253799c50",
+      "url": "https://news.google.com/rss/articles/CBMijwVBVV95cUxNemc1ZVlHQW9ITlR4czdaZDR6WGZFRGMxNHd1TWpabGJjQ0FjTk1VWE52bnk1ZDBZTDAzZFRlSUZYUnhLY0FCdnBZREhhdWhBQ05tVGlQZ2xacGpLQmpBbXB2bjRQSEM3eEg1eG5iaHEzS21mU3hfX3VCdDVQSWtpNXBvd0dmMXYwUFlMU0xtaUh2Ujc5N0dLZ3AyNDJuaC1hd1pKV0JPUXZKb1NVMGU2S2Z3STE2ZF9CdjNidHhPVmd4RDNNUVZZVGY4MUVJS01SZndGOTk1bTZOb2FrMzRHTzdDRlF5RzRiM1ZkQTBMU2xrZWJiTVZSSzZadFBzZG9FM29EODM4a3dDWGYwZ1FrY0FjbUFkaFFVa094Nmw0N1Rub0x1LUN1MjB2ZGpKbS1oS01od3IzRHh5OVhHQTBWU244bVhFV3RYZC0wdHhEdnlqYnc4YlVBNzJsbjhTdWFxdHMyNHhwZW1LQzJsV29kbnZueGZXVEptYnhYeUdDb3pnSm9MNHA5VkU4bDVDYm5ORTd5Mm4zQW9Vd3B2VU5nUGZ0MzZHbEtuUmZsbjh3UGVUMk9fOXZyMkQ0bUpyUHllZmpQNUxoVW1SOHEwZkI3OVpPclZKTUVZaklmUm5TNUVZTWVMQ3g4WjdtRUJvTnNzclVEdFhYblZxLU0yRk9OWWwyTjVaUkFkSTdZeE5jZ3VsMXhrbzd3bFVtVGNQMnBlMWtYT0lLdFEybGEwOWJOT0RtdUxPWGNqdWFRaUJRbU1NdkxzMjA4dEkzVU5UUGdWaVlFWUZfS0RUbEgtVkppWk5Wdm5jWkZPZDE4NU5La1hzZGUxUXpLQnZIaWF3QUJqYlpIWFZXRHk3R3FyX1pr?oc=5",
+      "kind": "news",
+      "basis": "metadata",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": true,
+      "titleAr": "HUMAIN تعرض منصة صوتية عربية تدعم اللهجات ووكلاء المحادثة الفورية"
+    },
+    {
+      "id": "47396adf5e31273b13",
+      "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/",
+      "kind": "news",
+      "basis": "article",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": true,
+      "titleAr": "Reuters يرصد مخاوف خصوصية وسلامة في وكيل Meta Muse"
+    },
+    {
+      "id": "f88414c8cfe7b454dc",
+      "url": "https://arstechnica.com/gadgets/2026/11/google-will-launch-android-app-verification-requirement-globally-in-january-2027/",
+      "kind": "news",
+      "basis": "article",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": true,
+      "titleAr": "Google تبدأ التوسع العالمي للتحقق من مطوري تطبيقات Android في يناير 2027"
+    },
+    {
+      "id": "db895de00b77372a93",
+      "url": "https://techcrunch.com/2026/11/19/superhuman-pushes-its-go-assistant-everywhere/",
+      "kind": "news",
+      "basis": "article",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": true,
+      "titleAr": "Superhuman توسّع مساعد Go داخل Docs وMail وتضيف 20 وكيلًا متصلًا"
+    },
+    {
+      "id": "dbe111187a465a8a1f",
+      "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
+      "kind": "news",
+      "basis": "article",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": true,
+      "titleAr": "Apple تبحث عن قائد هندسي لبناء وكيل يستخدم الحاسوب عبر التطبيقات والويب"
+    },
+    {
+      "id": "2e1fba6f9ed9affbda",
+      "url": "https://news.google.com/rss/articles/CBMi1gRBVV95cUxQeDJlOE1TdUpmUjZZN2dxZG12NUJXbVA5MGIyRmlld0FyME1CRkljTTZxYi14VG1Dai1DRERCOXlQQnVsbGNpV0tkUERWZ1c3Zm9UNHBySkJxem9vU0VaWnZRSmRDdHR0SUtUc3FCR3QwMUNRVmVNY0o2M1AtWHJzc2RuTzl0c1JITVZsbVVpU2pLdWEzR1U0Z1dYekZJSDBpdFRQek1aeWJ3bDdiX2RRUF9FaTJPQWkyNjEyZlF3V3laWjFhbGVDOFVaTnVnWUYzT0pTOHRGQlNUZWIzWmNILWZXNG51bG9WNjZhb1UzWEJYQm5RaWhiVnhtU0U2MEtoS2NLOVJJTEp2NjllR0dKa0VLWVh3NnVDc2Y1Mlphdm1pdHd2b2xSbEVBUmhYb0w1U1BrRFMyZjBIUW1xOEh2aVU1V3Z4cHJ6Rm83TFRYU05LMGctQ215NzJhWDQ5UGg2bU5NbEY0TXRGYURYNU1uZzRNMjlmVEctaUpKVXNKRWYtOThOS1NpY3dHam53YzVEcTFsenZuU0VzRjZwMkstVGpiVTItT05PY0x6UnA2dU5WNjhsMnJISUJXbXc1cDZyTHVqN3RBUnJzcUZPYUpxdzFYekZvYTJYb2haMUZjNHZqNk9sLW1VZUV3dm1EWmFjNFZZbVZ3T1dxT08yZGtIek1takMyampyLWhxTlVmT2VKMy1JZDRHUDJBa0JnMnVadE9rM01YV2sxNVdpS2dBVm1kYlBuZU5BTzluUTNpNVRxTTEyWGVqaWYtZTZyZ0l2bUpscFZB?oc=5",
+      "kind": "news",
+      "basis": "metadata",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": true,
+      "titleAr": "السعودية تتصدر مؤشر الخدمات الإلكترونية وتأتي رابعة في مؤشر الأمم المتحدة للحكومة الإلكترونية"
+    },
+    {
+      "id": "dc2fa2fb88cfbd46a7",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQSEl0SUtqbjlNYXk5czNYWUp3REwwNkZOYkZ2ZFlFaW5NUEdvM1h0bmpzUGhEamlmdDFLOExfVTB5S1lXdE5VMW9hQzhOT1FPWVBvV3NvZkZrMEItaWhlQ2hXSHNnZUNBa0dEaExpYUh4MmJYSC1Yd1p3Mm5FTUNfUjZSSVJvbWs?oc=5",
+      "kind": "news",
+      "basis": "article",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": true,
+      "titleAr": "AWS تطلق Common Runtime 1.0 رسميًا لمكونات HTTP وS3 وMQTT"
+    },
+    {
+      "id": "fdf1ebbcf783c618ab",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMDQ5aVduak1QSEVub2FLN21qRV9wbVNTZzRJZXF6WnI0MVp5ckdyVThhTER0MzZoVE1wTjdlX1ZvRnUwUzBTOU1vZm1iYjMwQkJMZ3lmWGxjWkpCUU15OXJoSlRYYW5ZV3Uxam5tbjRSdXpuMldSV1NuQ0JmTlk4dnhHYnRmTmJva3N5UkpBTjhObEV6X2JSSjkxOEpLaXhJSE5MMV95OWp5R0VGS1JPdmxJcnFiV3NKR0xKaTFn?oc=5",
+      "kind": "news",
+      "basis": "article",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": true,
+      "titleAr": "AWS تجعل Transfer Manager لنقل S3 بلغة Rust متاحًا عمومًا"
+    },
+    {
+      "id": "001e20945eceeac012",
+      "url": "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/",
+      "kind": "news",
+      "basis": "article",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": true,
+      "titleAr": "تقرير: Meta قد تسعّر جهاز Muse Charm بنحو 300 دولار مع اتصال 5G"
+    },
+    {
+      "id": "87b2502506d7cb89ef",
+      "url": "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/",
+      "kind": "news",
+      "basis": "article",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": true,
+      "titleAr": "تحليل: انقطاعات الخدمات تكشف مخاطر تحديث الأنظمة القديمة وسط تسارع أدوات الأمن"
+    },
+    {
+      "id": "7bdcb7fa3841c84cc9",
+      "url": "https://www.engadget.com/2322656/openai-is-testing-dots-personal-agents-on-its-20-per-month-plus-tier/",
+      "kind": "news",
+      "basis": "article",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": true,
+      "titleAr": "OpenAI تختبر Dots مع عدد محدود من مشتركي Plus وتوسع Business Standard"
+    },
+    {
+      "id": "8a369b2d17a9b0f043",
+      "url": "https://arxiv.org/abs/2611.23365",
+      "kind": "news",
+      "basis": "metadata",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": true,
+      "titleAr": "بحث يقترح مراقبًا مستقلًا لرصد السلوك غير المقصود للنماذج اللغوية"
+    },
+    {
+      "id": "b048edc1eac377680e",
+      "url": "https://arxiv.org/abs/2611.23375",
+      "kind": "news",
+      "basis": "metadata",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": true,
+      "titleAr": "ورقة تبحث في كلفة الرموز وما ينجزه وكلاء البرمجة فعليًا"
+    },
+    {
+      "id": "cd580215f9c64a6ed2",
+      "url": "https://arxiv.org/abs/2611.23398",
+      "kind": "news",
+      "basis": "metadata",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": true,
+      "titleAr": "HardwareDx: نموذج رسومي لتشخيص أعطال عتاد مراكز البيانات"
+    },
+    {
+      "id": "f7a3b0193b2bb179c7",
+      "url": "https://arxiv.org/abs/2611.23456",
+      "kind": "news",
+      "basis": "metadata",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": true,
+      "titleAr": "VeriMath: إطار بشري الإشراف لتوليد أسئلة رياضيات متوافقة مع المنهج"
+    },
+    {
+      "id": "e7264247c8d50ed476",
+      "url": "https://arxiv.org/abs/2611.23817",
+      "kind": "news",
+      "basis": "metadata",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": true,
+      "titleAr": "بحث يقترح تغذية وكلاء البرمجة بمقاييس التعقيد والتغطية أثناء التنفيذ"
+    },
+    {
+      "id": "2fb42fa5fa3e9829b6",
+      "url": "https://arxiv.org/abs/2611.23588",
+      "kind": "news",
+      "basis": "metadata",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": true,
+      "titleAr": "ARISE: ذاكرة تتطور من إخفاقات الوكلاء لتحسين الدقة وتقليل كلفة التشغيل"
+    },
+    {
+      "id": "e2dca3baf6f62afaf1",
+      "url": "https://arxiv.org/abs/2611.23678",
+      "kind": "news",
+      "basis": "metadata",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": true,
+      "titleAr": "ورقة تقترح سجلًا حاكمًا لتجارب التعلم الآلي التي ينفذها الوكلاء"
+    },
+    {
+      "id": "ac2f786b30f6d45772",
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "kind": "news",
+      "basis": "article",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": true,
+      "titleAr": "OpenAI تعرض نتائج بحثية أولية لقدرات GPT‑6 في تصميم البروتينات"
+    },
+    {
+      "id": "b0689cf87ab570a441",
+      "url": "https://openai.com/index/introducing-shirudo",
+      "kind": "news",
+      "basis": "article",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": true,
+      "titleAr": "OpenAI وCisco تطلقان Shirudo لحماية أنظمة Linux أثناء طرح التحديثات"
+    },
+    {
+      "id": "57993858eb1cb09379",
+      "url": "https://prismml.com/news/bonsai-2-5-27b",
+      "kind": "news",
+      "basis": "article",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": true,
+      "titleAr": "PrismML تطلق Ternary Bonsai 2.5 27B بتركيز على تشغيل الوكلاء محليًا"
+    },
+    {
+      "id": "b0f646dfac9a0a0a63",
+      "url": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
+      "kind": "news",
+      "basis": "article",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": true,
+      "titleAr": "Meta توسّع مساعد Muse إلى رسائل Instagram وتضيف تنظيم المنشورات المحفوظة"
+    },
+    {
+      "id": "977f9f016cc6ca5bd4",
+      "url": "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself/",
+      "kind": "news",
+      "basis": "article",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": true,
+      "titleAr": "Maple تجمع 5.3 ملايين دولار لتطوير مساعدات ذكاء اصطناعي تركز على خصوصية البيانات"
+    },
+    {
+      "id": "c323da16e537764406",
+      "url": "https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign",
+      "kind": "news",
+      "basis": "article",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": true,
+      "titleAr": "GreyNoise ترصد حملة اختراق استهدفت خوادم إدارة Check Point لدى 22 مؤسسة"
+    },
+    {
+      "id": "4113acb1424b41bba6",
+      "url": "https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security/",
+      "kind": "news",
+      "basis": "article",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": true,
+      "titleAr": "المركز الوطني للأمن السيبراني البريطاني يحذر من تسارع الهجمات المدعومة بالذكاء الاصطناعي"
+    },
+    {
+      "id": "76aca383ca5b948c9a",
+      "url": "https://arstechnica.com/gadgets/2026/11/microsofts-historic-cloud-outage-exposed-an-engineering-fog-of-war/",
+      "kind": "news",
+      "basis": "article",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": true,
+      "titleAr": "تقرير عن انقطاع Microsoft 365 يكشف تحديات تنسيق الاستجابة للأعطال واسعة النطاق"
+    },
+    {
+      "id": "6a28e842b3bf4bfd84",
+      "url": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance",
+      "kind": "news",
+      "basis": "article",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": true,
+      "titleAr": "Hugging Face تعرض مسارًا لمحاكاة تجنب العوائق لروبوت Microduck باستخدام Isaac Lab وNewton"
+    },
+    {
+      "id": "aaa55aaf5989509238",
+      "url": "https://simonwillison.net/2026/Nov/21/muru/",
+      "kind": "news",
+      "basis": "readme",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": true,
+      "titleAr": "Muru يقدّم خادمًا مكتوبًا بـRust لتشغيل تطبيقات Python عبر ASGI وWSGI"
+    },
+    {
+      "id": "6e18aa23e1f0d14413",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "kind": "project",
+      "basis": "readme",
+      "exactIdUrl": true,
+      "alreadyImported": false,
+      "seen": false,
+      "titleAr": "HyperFrames — إطار مفتوح المصدر لتحويل HTML إلى فيديو قابل للتحرير"
+    }
+  ]
+}
