@@ -1,0 +1,847 @@
+{
+  "version": 1,
+  "items": {
+    "47396adf5e31273b13": {
+      "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/",
+      "titleAr": "Reuters يرصد مخاوف خصوصية وسلامة في وكيل Meta Muse",
+      "summaryAr": "راجع Reuters أكثر من عشرين منشورًا داخليًا ثم أعاد اختبار الوصول إلى رسائل Signal عبر أذونات إشعارات Android وأدوات تسهيلات الاستخدام ولقطات الشاشة على macOS؛ ولم تتكرر النتيجة نفسها على iPhone. قالت Meta إن الحالات معزولة وإن بعض الرسائل قد تكون هلوسات، ولم يحسم Reuters صحة بعض الأرصدة المعروضة.",
+      "whyItMatters": "توضح القصة أن صلاحيات النظام الواسعة قد تجعل الوكيل يرى سياقًا لم يقصده المستخدم، وأن ادعاء الوكيل ليس دليلًا على صحة البيانات.",
+      "audience": "مطورو الوكلاء وتطبيقات الهاتف وفرق الخصوصية والأمن.",
+      "nextSteps": [
+        "راجع أذونات الإشعارات وإمكانية الوصول الممنوحة للوكلاء.",
+        "افصل صلاحيات كل تطبيق واطلب موافقة واضحة.",
+        "تحقق من مصدر البيانات قبل عرضها."
+      ],
+      "limitations": "تحقيق Reuters واختبارات محددة ورد Meta؛ لا يثبت تعرض كل المستخدمين لتسرب أو أن كل الأمثلة بيانات حقيقية.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Reuters — Muse safety mishaps",
+          "url": "https://www.reuters.com/investigations/meta-bets-big-muse-ai-agent-early-safety-mishaps-surface-2026-11-18/"
+        },
+        {
+          "title": "TechCrunch — Meta Muse report",
+          "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/"
+        }
+      ],
+      "reviewedAt": "2026-11-20T00:37:02+03:00"
+    },
+    "f88414c8cfe7b454dc": {
+      "url": "https://arstechnica.com/gadgets/2026/11/google-will-launch-android-app-verification-requirement-globally-in-january-2027/",
+      "titleAr": "Google تبدأ التوسع العالمي للتحقق من مطوري تطبيقات Android في يناير 2027",
+      "summaryAr": "أعلنت مدونة Android Developers بدء التوسع العالمي للتحقق من هوية مطوري التطبيقات في يناير 2027 بالتعاون مع سبعة موزعين، مع توسع تدريجي إلى بلدان ومصادر تثبيت أخرى خلال عدة أشهر. وتقول Google إن الحماية بدأت في متاجر مشاركة بالبرازيل وإندونيسيا وسنغافورة وتايلاند.",
+      "whyItMatters": "قد يؤثر التغيير على المطورين الذين يوزعون تطبيقات Android خارج Google Play وعلى المستخدمين الذين يثبتون تطبيقات من مصادر متعددة.",
+      "audience": "مطورو Android والطلاب وفرق النشر ومتاجر التطبيقات.",
+      "nextSteps": [
+        "راجع متطلبات تسجيل المطورين قبل يناير 2027.",
+        "تحقق من أثر السياسة على قنوات توزيع تطبيقك.",
+        "احتفظ بسجل لهوية الناشر وتوقيع التطبيق."
+      ],
+      "limitations": "الإطلاق مرحلي؛ لا يعني خضوع جميع البلدان ومصادر التثبيت في اليوم نفسه.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Android Developers Blog — Developer verification 2027",
+          "url": "https://developer.android.com/blog/posts/android-developer-verification-2027"
+        },
+        {
+          "title": "Ars Technica — Android verification rollout",
+          "url": "https://arstechnica.com/gadgets/2026/11/google-will-launch-android-app-verification-requirement-globally-in-january-2027/"
+        }
+      ],
+      "reviewedAt": "2026-11-20T00:37:02+03:00"
+    },
+    "db895de00b77372a93": {
+      "url": "https://techcrunch.com/2026/11/19/superhuman-pushes-its-go-assistant-everywhere/",
+      "titleAr": "Superhuman توسّع مساعد Go داخل Docs وMail وتضيف 20 وكيلًا متصلًا",
+      "summaryAr": "بحسب TechCrunch، توسّع الشركة مساعد Go ليعمل داخل Docs وMail، وتضيف 20 تكاملًا لوكلاء وخدمات مثل DeepL وLegora وAmplitude وDatabricks وBlackboard. ويستخدم Go سياق الأدوات المتصلة لاقتراح النصوص وتنظيم البريد وتشغيل مهام في الخلفية. قال الرئيس التنفيذي إن عدد المستخدمين النشطين تجاوز مليونًا؛ وهذا رقم منسوب إلى الشركة.",
+      "whyItMatters": "يعكس انتقال المساعدات من نافذة محادثة منفصلة إلى سياق العمل والملفات والبريد. هذا قد يزيد الفائدة، لكنه يجعل ضبط الصلاحيات ومراجعة المحتوى قبل إرساله أكثر أهمية.",
+      "audience": "الطلاب والمطورون والفرق التي تقيّم أدوات الإنتاجية والوكلاء.",
+      "nextSteps": [
+        "راجع صلاحيات كل موصل قبل ربط حسابات العمل.",
+        "اختبر الاقتراحات في مستندات تجريبية وتحقق من المحتوى قبل الإرسال."
+      ],
+      "limitations": "مليون مستخدم رقم ذكره الرئيس التنفيذي ولم يتحقق منه مستقلًا. توافر التكاملات قد يختلف حسب الخطة والمنطقة، والمقال لا يثبت دقة كل وكيل.",
+      "reviewedAt": "2026-11-19T21:25:33+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — Superhuman pushes its Go assistant everywhere",
+          "url": "https://techcrunch.com/2026/11/19/superhuman-pushes-its-go-assistant-everywhere/"
+        },
+        {
+          "title": "Superhuman — Go assistant",
+          "url": "https://superhuman.com/go"
+        }
+      ]
+    },
+    "dbe111187a465a8a1f": {
+      "titleAr": "Apple تبحث عن قائد هندسي لبناء وكيل يستخدم الحاسوب عبر التطبيقات والويب",
+      "summaryAr": "أفاد TechCrunch نقلًا عن Bloomberg أن إعلان وظيفة لدى Apple يطلب مديرًا هندسيًا أول للإشراف على وكيل يستطيع تصفح الويب والعمل عبر التطبيقات وتشغيل الأوامر وكتابة الشيفرة وتصحيحها. المشروع في مرحلة مبكرة ولم تؤكد Apple منتجًا أو موعد إطلاق. وبالتوازي، أعلنت Apple ضوابط أوضح قبل منح التطبيقات صلاحية Full Disk Access.",
+      "whyItMatters": "يشير إلى انتقال المنافسة نحو وكلاء يتحكمون في الحاسوب نفسه، ويجعل حدود الصلاحيات والموافقة البشرية وحماية الملفات جزءًا أساسيًا من تجربة المنتج.",
+      "audience": "مطورو macOS وبناة وكلاء الحاسوب ومهندسو الأمن وتجربة المستخدم.",
+      "nextSteps": [
+        "تعامل مع الخبر بوصفه مشروعًا مبكرًا لا إطلاقًا معلنًا.",
+        "صمم أذونات أقل امتيازًا وموافقات قبل الأفعال الحساسة.",
+        "اختبر وكلاء سطح المكتب على ملفات تجريبية مع سجل قابل للمراجعة."
+      ],
+      "limitations": "الخبر يستند إلى إعلان وظيفة نقلته Bloomberg؛ Apple لم تؤكد منتجًا أو موعدًا لـTechCrunch. تحديث Full Disk Access بيان رسمي منفصل.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — Apple may be developing its own AI agent",
+          "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/"
+        },
+        {
+          "title": "Apple Developer — Updates to Full Disk Access",
+          "url": "https://developer.apple.com/news/?id=p6zjojqw"
+        }
+      ],
+      "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
+      "reviewedAt": "2026-11-20T06:35:29+03:00"
+    },
+    "dc2fa2fb88cfbd46a7": {
+      "titleAr": "AWS تطلق Common Runtime 1.0 رسميًا لمكونات HTTP وS3 وMQTT",
+      "summaryAr": "أعلنت AWS التوافر العام للإصدار 1.0 من Common Runtime، وهي عائلة مكتبات مفتوحة المصدر مكتوبة بلغة C تستخدمها أدوات وSDKs AWS للشبكات ونقل S3 وMQTT والتوقيع والتحقق من سلامة البيانات. يمكن استخدامها مباشرة أو عبر روابط لغات متعددة، لكن الدعم يختلف حسب المكوّن واللغة.",
+      "whyItMatters": "يوفر أساسًا مشتركًا للاتصال والنقل داخل تطبيقات AWS، وقد يقلل إعادة بناء إدارة الاتصالات وإعادة المحاولة والتوقيع في كل تطبيق.",
+      "audience": "مطورو C وC++ وJava وPython وNode.js ومهندسو السحابة.",
+      "nextSteps": [
+        "تحقق مما إذا كان SDK الحالي يستخدم CRT قبل إضافة اعتماد مباشر.",
+        "راجع مصفوفة المكوّنات واللغات المدعومة.",
+        "اختبر التوافق والنقل على بيئة مرحلية."
+      ],
+      "limitations": "إعلان GA من AWS وليس اختبار أداء مستقلًا؛ الفائدة تعتمد على SDK والمنصة والشبكة، ودعم HTTP وS3 وMQTT ليس متماثلًا في جميع اللغات.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "AWS Developer Tools Blog — AWS Common Runtime 1.0",
+          "url": "https://aws.amazon.com/blogs/developer/announcing-aws-common-runtime-crt-v1-0-0/"
+        }
+      ],
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQSEl0SUtqbjlNYXk5czNYWUp3REwwNkZOYkZ2ZFlFaW5NUEdvM1h0bmpzUGhEamlmdDFLOExfVTB5S1lXdE5VMW9hQzhOT1FPWVBvV3NvZkZrMEItaWhlQ2hXSHNnZUNBa0dEaExpYUh4MmJYSC1Yd1p3Mm5FTUNfUjZSSVJvbWs?oc=5",
+      "reviewedAt": "2026-11-20T06:35:29+03:00"
+    },
+    "fdf1ebbcf783c618ab": {
+      "titleAr": "AWS تجعل Transfer Manager لنقل S3 بلغة Rust متاحًا عمومًا",
+      "summaryAr": "أطلقت AWS الإصدار العام من aws-s3-transfer بعد معاينة بدأت في مارس 2025. يضيف محرك جدولة عادلة ومجمع ذاكرة محدودًا افتراضيًا بما يصل إلى ربع ذاكرة الجهاز وبحد 32 GiB، ومسار تنزيل يقلل النسخ ودعم أهداف WebAssembly محددة. تتطلب أمثلة البدء حساب AWS وصلاحيات S3 ومشروع Rust يستخدم Tokio.",
+      "whyItMatters": "يخفف إدارة التوازي والذاكرة ونقل الملفات الكبيرة عن مطوري Rust، لكنه لا يلغي الحاجة إلى ضبط IAM ومراقبة التكلفة واختبار السلوك على بيانات التطبيق.",
+      "audience": "مطورو Rust ومهندسو البيانات ومطورو تطبيقات S3.",
+      "nextSteps": [
+        "ابدأ بحاوية S3 اختبارية وصلاحيات أقل امتيازًا.",
+        "قِس throughput والذاكرة على أحجام ملفات مختلفة.",
+        "احسب رسوم التخزين والطلبات ونقل البيانات قبل الإنتاج."
+      ],
+      "limitations": "الأرقام الافتراضية معلنة من AWS وليست benchmark مستقلًا. قد تترتب رسوم S3، ودعم WebAssembly يخص أهدافًا محددة لا كل بيئات WASM.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "AWS Developer Tools Blog — S3 Transfer Manager for Rust GA",
+          "url": "https://aws.amazon.com/blogs/developer/high-throughput-transfer-manager-for-amazon-s3-in-rust-is-now-generally-available/"
+        },
+        {
+          "title": "aws-s3-transfer crate",
+          "url": "https://crates.io/crates/aws-s3-transfer"
+        },
+        {
+          "title": "aws-s3-transfer API docs",
+          "url": "https://docs.rs/aws-s3-transfer/latest/aws_s3_transfer/"
+        }
+      ],
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMDQ5aVduak1QSEVub2FLN21qRV9wbVNTZzRJZXF6WnI0MVp5ckdyVThhTER0MzZoVE1wTjdlX1ZvRnUwUzBTOU1vZm1iYjMwQkJMZ3lmWGxjWkpCUU15OXJoSlRYYW5ZV3Uxam5tbjRSdXpuMldSV1NuQ0JmTlk4dnhHYnRmTmJva3N5UkpBTjhObEV6X2JSSjkxOEpLaXhJSE5MMV95OWp5R0VGS1JPdmxJcnFiV3NKR0xKaTFn?oc=5",
+      "reviewedAt": "2026-11-20T06:35:29+03:00"
+    },
+    "001e20945eceeac012": {
+      "titleAr": "تقرير: Meta قد تسعّر جهاز Muse Charm بنحو 300 دولار مع اتصال 5G",
+      "summaryAr": "نقل TechCrunch وReuters عن تقرير The Information أن Meta قد تسعّر جهاز Muse Charm بنحو 300 دولار مع احتمال توفير حتى 12 شهرًا من بيانات Verizon. وصف التقرير شاشة صغيرة واتصال 5G والوصول إلى مساعد Muse؛ لكن Meta لم تؤكد السعر أو شروط البيانات.",
+      "whyItMatters": "يمثل محاولة لنقل المساعد الوكيل من تطبيق الهاتف إلى جهاز مخصص قابل للحمل، ويثير أسئلة حول الاتصال المستمر والخصوصية والسعر.",
+      "audience": "متابعو أجهزة الذكاء الاصطناعي القابلة للارتداء ومطورو المساعدات الاستهلاكية.",
+      "nextSteps": [
+        "انتظر الإعلان الرسمي عن السعر والتوافر وشروط البيانات.",
+        "قارن الفائدة بتطبيق الهاتف قبل شراء جهاز مستقل.",
+        "راجع سياسات الصوت والبيانات والصلاحيات."
+      ],
+      "limitations": "السعر وخطة 5G مستندان إلى تقرير The Information ومصادر مطلعة؛ لم تؤكد Meta التفاصيل ولم ترد Verizon وقت تقرير Reuters.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — Meta’s new Muse Charm device may cost $300",
+          "url": "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/"
+        },
+        {
+          "title": "Reuters — Meta to price Muse Charm gadget at $300",
+          "url": "https://www.reuters.com/business/media-telecom/meta-price-muse-charm-gadget-300-information-reports-2026-11-19/"
+        }
+      ],
+      "url": "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/",
+      "reviewedAt": "2026-11-20T06:35:29+03:00"
+    },
+    "87b2502506d7cb89ef": {
+      "titleAr": "تحليل: انقطاعات الخدمات تكشف مخاطر تحديث الأنظمة القديمة وسط تسارع أدوات الأمن",
+      "summaryAr": "يرصد TechCrunch انقطاعات طالت خدمات دفع واتصالات وطيران وإنتاجية خلال أسبوعين، لكنه ينقل عن شركات أن كثيرًا منها لم يكن بسبب هجمات سيبرانية أو ذكاء اصطناعي. يطرح خبراء احتمال أن تسارع اكتشاف الثغرات والتحديثات يضغط على أنظمة قديمة، بينما يشير آخرون إلى أن دمج البنية الحديثة مع القديمة دون اختبار كافٍ قد يسبب الاضطراب. المقال تحليل لا يثبت سببًا موحدًا.",
+      "whyItMatters": "يوضح أن تسريع التصحيح لا يكفي؛ فالتدرج والاختبارات والقدرة على الرجوع والتقسيم الشبكي ضرورية لتجنب انقطاع التشغيل.",
+      "audience": "مهندسو الأنظمة وSRE والأمن السيبراني وفرق البنية التحتية.",
+      "nextSteps": [
+        "افصل سبب كل حادثة ولا تنسبها إلى AI دون دليل.",
+        "استخدم بيئة مرحلية ونشرًا تدريجيًا وخطة rollback.",
+        "راقب الأنظمة القديمة وحدود الوصول أثناء التحديث."
+      ],
+      "limitations": "المقال يجمع حوادث وآراء مختلفة ولا يثبت علاقة سببية بينها أو أن الذكاء الاصطناعي تسبب فيها؛ بعض الشركات نفت علاقة الهجمات أو AI.",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — These tech outages are giving Y2K, AI agent style",
+          "url": "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/"
+        }
+      ],
+      "url": "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/",
+      "reviewedAt": "2026-11-20T06:35:29+03:00"
+    },
+    "7bdcb7fa3841c84cc9": {
+      "url": "https://www.engadget.com/2322656/openai-is-testing-dots-personal-agents-on-its-20-per-month-plus-tier/",
+      "titleAr": "OpenAI تختبر Dots مع عدد محدود من مشتركي Plus وتوسع Business Standard",
+      "summaryAr": "ذكر Engadget أن OpenAI بدأت اختبار Dots مع مجموعة صغيرة من مستخدمي Plus، مع إتاحة الخدمة لمستخدمي Business Standard وفق إعلان مسؤول هندسي في الشركة. يصف المقال وكلاء استباقيين يتصلون بتطبيقات وخدمات ويمكنهم العمل على الحاسوب؛ لكن نطاق الإتاحة وحدود الاستخدام في الخطط الأقل لم تُحسم بالكامل.",
+      "whyItMatters": "توسع الوكلاء المستمرين يجعل إدارة صلاحيات التطبيقات ومراجعة الأعمال التي ينفذها الوكيل جزءًا أساسيًا من تجربة الاستخدام، لا مجرد اختيار نموذج لغوي.",
+      "audience": "متابعو منتجات الذكاء الاصطناعي ومطورو الوكلاء وفرق تقنية المعلومات.",
+      "nextSteps": [
+        "تحقق من الإعلان داخل حسابك قبل افتراض توافر الميزة.",
+        "راجع التطبيقات والصلاحيات الممنوحة لأي وكيل قبل تفعيله.",
+        "ابدأ بمهام منخفضة المخاطر وراجع سجل التنفيذ والنتائج."
+      ],
+      "limitations": "الاختبار محدود لمجموعة صغيرة من مستخدمي Plus بحسب المقال، ولم تؤكد OpenAI أن الإتاحة ستكون دائمة أو أن حدود الاستخدام ستكون مماثلة لخطط Pro. أرقام التطبيقات والقدرات منسوبة إلى التغطية والإعلان.",
+      "reviewedAt": "2026-11-20T18:13:13+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Engadget — OpenAI is testing Dots personal agents on its Plus tier",
+          "url": "https://www.engadget.com/2322656/openai-is-testing-dots-personal-agents-on-its-20-per-month-plus-tier/"
+        }
+      ]
+    },
+    "8a369b2d17a9b0f043": {
+      "url": "https://arxiv.org/abs/2611.23365",
+      "titleAr": "بحث يقترح مراقبًا مستقلًا لرصد السلوك غير المقصود للنماذج اللغوية",
+      "summaryAr": "تقترح الورقة دور مراقب منفصل من منظور الغائب الثالث، يُدرَّب على الإجابة عن أسئلة قابلة للتحقق حول سلوك النموذج المساعد. يذكر الملخص أن مراقبًا مدرّبًا على Qwen3.6-27B حقق متوسط AUROC قدره 0.907 عبر خمسة تقييمات رقابية، مقارنةً بـ0.864 لتدريب الصدق و0.828 لمراقبة النصوص و0.796 لمقاربات فك الترميز من التنشيطات. هذه أرقام يوردها الباحثون وليست تحققًا مستقلًا.",
+      "whyItMatters": "يعالج فجوة في تقييم الوكلاء: سؤال النموذج عن سلوكه لا يكفي إذا لم يكن مدرّبًا على الإبلاغ الدقيق؛ وقد يساعد وجود مراقب منفصل قابل للتحقق في كشف بعض الأنماط غير المرغوبة.",
+      "audience": "باحثو سلامة الذكاء الاصطناعي، مطورو الوكلاء، وفرق تقييم النماذج.",
+      "nextSteps": [
+        "اقرأ الورقة كاملة لفهم إعدادات التقييم وحدود المقارنة.",
+        "اختبر الفكرة على مهام ذات سجل سلوك ونتائج مرجعية يمكن التحقق منها.",
+        "استخدم المراقب كطبقة مساعدة إلى جانب السجلات والاختبارات المستقلة."
+      ],
+      "limitations": "المراجعة اقتصرت على ملخص arXiv؛ النتائج من خمسة تقييمات كما يصفها المؤلفون، ولم تُعَد التجارب بصورة مستقلة. وجود مراقب منفصل لا يضمن كشف كل سلوك خفي.",
+      "reviewedAt": "2026-11-20T20:44:11+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — Training Language Models for Introspective Oversight",
+          "url": "https://arxiv.org/abs/2611.23365"
+        }
+      ]
+    },
+    "b048edc1eac377680e": {
+      "url": "https://arxiv.org/abs/2611.23375",
+      "titleAr": "ورقة تبحث في كلفة الرموز وما ينجزه وكلاء البرمجة فعليًا",
+      "summaryAr": "تقترح الورقة إطارًا بحثيًا يشبّه عمل وكلاء البرمجة بالديناميكا الحرارية، ويفصل بين الرموز التي تقابل عملًا مفيدًا وتلك التي تمثل كلفة لا تنتج تغييرًا مقبولًا. وتتعامل مع مجموعة الاختبارات بوصفها مرشحًا يحكم على التعديلات، ثم تدرس دورات متكررة من التعديل والتراجع لقياس تشتت الكلفة. يذكر الملخص أن ما يسميه الباحثان «درجة حرارة البرمجيات» ارتفع مع درجة أخذ العينات للنموذج.",
+      "whyItMatters": "عدد الرموز وحده لا يوضح قيمة عمل وكيل البرمجة؛ ربط الكلفة بالتغييرات التي تجتاز الاختبارات قد يعطي صورة أفضل عن الكفاءة من قياس الاستهلاك الخام فقط.",
+      "audience": "مطورو وكلاء البرمجة، مهندسو البرمجيات، وفرق تقييم النماذج.",
+      "nextSteps": [
+        "اقرأ الورقة كاملة قبل استخدام مصطلحاتها كمقاييس إنتاجية.",
+        "قارن عدد الرموز لكل تغيير مقبول واجتاز الاختبارات في تجارب مضبوطة.",
+        "افصل بين كلفة الاستكشاف وكلفة التعديل الذي بقي في النسخة النهائية."
+      ],
+      "limitations": "المراجعة اقتصرت على الملخص؛ الإطار تشبيهي وبحثي وليس معيارًا صناعيًا معتمدًا. لا تكفي هذه النتائج وحدها لمقارنة نماذج أو مهام مختلفة.",
+      "reviewedAt": "2026-11-20T20:44:11+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — Where the Tokens Go: Heat, Entropy and Error in Agentic Coding",
+          "url": "https://arxiv.org/abs/2611.23375"
+        }
+      ]
+    },
+    "cd580215f9c64a6ed2": {
+      "url": "https://arxiv.org/abs/2611.23398",
+      "titleAr": "HardwareDx: نموذج رسومي لتشخيص أعطال عتاد مراكز البيانات",
+      "summaryAr": "تعرض الورقة نظام HardwareDx لتشخيص أعطال الأجهزة في مراكز البيانات باستخدام نموذج أساس رسومي، بهدف دعم منصات عتاد متعددة وتسريع ضم منتجات جديدة إلى منظومة التشخيص. ويذكر الملخص أن النظام نُشر على نطاق إنتاجي في Google وأن الباحثين رصدوا مكاسب كفاءة عبر معماريات حوسبة متنوعة، لكنه لا يعرض في الملخص أرقامًا تفصيلية لحجم تلك المكاسب.",
+      "whyItMatters": "موثوقية العتاد تؤثر في استمرارية تدريب النماذج وتشغيل الخدمات؛ وأدوات التشخيص التي تعمل عبر منصات مختلفة قد تقلل زمن اكتشاف الأعطال إذا أثبتت فعاليتها.",
+      "audience": "فرق تشغيل مراكز البيانات، مهندسو البنية التحتية للذكاء الاصطناعي، وباحثو النماذج الرسومية.",
+      "nextSteps": [
+        "راجع الورقة كاملة لمعرفة أنواع الأعطال والبيانات المستخدمة.",
+        "ابحث عن مقاييس الدقة وزمن التشخيص ومعدل الإنذارات الخاطئة.",
+        "قارن النتائج عبر أجيال مختلفة من العتاد قبل تعميم الاستنتاج."
+      ],
+      "limitations": "المراجعة اقتصرت على ملخص arXiv؛ ادعاء النشر الإنتاجي ومكاسب الكفاءة من وصف المؤلفين، ولا توجد في الملخص أرقام كمية تسمح بتقييم حجم الأثر.",
+      "reviewedAt": "2026-11-20T20:44:11+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — HardwareDx: A Foundational Graph Model System for Datacenter Machine Repairs",
+          "url": "https://arxiv.org/abs/2611.23398"
+        }
+      ]
+    },
+    "f7a3b0193b2bb179c7": {
+      "url": "https://arxiv.org/abs/2611.23456",
+      "titleAr": "VeriMath: إطار بشري الإشراف لتوليد أسئلة رياضيات متوافقة مع المنهج",
+      "summaryAr": "تقترح الورقة إطارًا لتوليد مسودات أسئلة رياضيات تراعي القسم الدراسي ومستوى الاستدلال المطلوب، بالاستناد إلى أسئلة مرجعية مشروحة. تمر المسودات بتحقق آلي متتابع وإصلاح موجّه قبل عرضها على خبير تربوي لمراجعتها. يركز العمل على جعل التوليد مضبوطًا وقابلًا للمراجعة بدل الاكتفاء بإنتاج سؤال لغوي يبدو صحيحًا.",
+      "whyItMatters": "توضح الفكرة أن جودة أسئلة التقييم لا تعتمد على صحة المعادلة فقط؛ بل تشمل ملاءمة المنهج ومستوى الصعوبة وإمكانية مراجعة المعلم.",
+      "audience": "المعلمون، مطورو تقنيات التعليم، وباحثو الذكاء الاصطناعي التعليمي.",
+      "nextSteps": [
+        "اختبر أي نظام مشابه على المنهج المحلي ومخرجات تعلم محددة.",
+        "قِس صحة الحل وملاءمة المستوى واتساق السؤال مع القسم الدراسي.",
+        "اجعل اعتماد المعلم شرطًا قبل استخدام السؤال في تقييم فعلي."
+      ],
+      "limitations": "المراجعة اقتصرت على الملخص؛ لا تثبت الورقة في هذا العرض نتائج صفية طويلة الأمد، ولا تعني أن التوليد الآلي يغني عن مراجعة المعلم أو يضمن خلو الأسئلة من الأخطاء.",
+      "reviewedAt": "2026-11-20T20:44:11+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "arXiv — VeriMath: Human-in-the-Loop Generation and Verification of Curriculum-Aligned Mathematics Assessment Items",
+          "url": "https://arxiv.org/abs/2611.23456"
+        }
+      ]
+    },
+    "ac2f786b30f6d45772": {
+      "titleAr": "OpenAI تعرض نتائج بحثية أولية لقدرات GPT‑6 في تصميم البروتينات",
+      "summaryAr": "تقول OpenAI إن عائلة GPT‑6 أظهرت قدرة على اقتراح تصاميم بروتينية اعتمادًا على الاستدلال والبرمجة العامة. وفي تجارب مخبرية مع شريكها Onava، أظهرت بعض التصاميم المختارة ارتباطًا بأهداف متعددة؛ لكن مراحل اختيار المرشحين استعانت أيضًا بنماذج متخصصة. وتعرض الصفحة نتائج داخلية وتجارب أولية وليست تحققًا مستقلًا.",
+      "whyItMatters": "يشير الإعلان إلى اتساع استخدام النماذج العامة في البحث العلمي، لكنه يوضح أيضًا أن التقدم البحثي يحتاج تقييمًا مستقلًا وضوابط أمان حيوي، ولا يعني أن النموذج صار بديلًا عن المختبر أو الخبرة المتخصصة.",
+      "audience": "متابعو أبحاث الذكاء الاصطناعي والعلوم الحيوية وسياسات السلامة البحثية.",
+      "nextSteps": [
+        "اقرأ الورقة المرتبطة بالمنشور وميّز بين النتائج الحسابية والمخبرية.",
+        "قارن الادعاءات بحدود الدراسة وما استعانت به من أدوات متخصصة.",
+        "تابع تقييمات مستقلة وضوابط الأمان الحيوي قبل استنتاج الجاهزية التطبيقية."
+      ],
+      "limitations": "المصدر إعلان بحثي من OpenAI؛ استخدمت بعض مراحل التقييم نماذج متخصصة لترشيح المرشحين، والنتائج لا تثبت تصميمًا حيويًا كاملًا من البداية إلى النهاية أو تحققًا مستقلًا.",
+      "reviewedAt": "2026-11-25T08:42:43+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "OpenAI — GPT-6 models demonstrate intrinsic protein-design capabilities",
+          "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/"
+        }
+      ],
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities"
+    },
+    "b0689cf87ab570a441": {
+      "titleAr": "OpenAI وCisco تطلقان Shirudo لحماية أنظمة Linux أثناء طرح التحديثات",
+      "summaryAr": "أعلنت OpenAI وCisco مشروع Shirudo مفتوح المصدر، وهو منصة أمنية تعتمد eBPF لتطبيق ضوابط مؤقتة على أنظمة Linux أثناء انتظار التصحيحات، مع توقيع وسائل الحماية والتحقق منها قبل اعتمادها. وتقول الشركتان إن تجربة مضبوطة أظهرت حجب محاولة استغلال على خدمة Elasticsearch دون إعادة تشغيلها.",
+      "whyItMatters": "قد يقلل هذا النوع من الحماية المؤقتة فجوة التعرض أثناء نشر التصحيحات، لكنه يحتاج قياسًا واقعيًا للتوافق والأداء والإنذارات الخاطئة، ولا يغني عن تثبيت التحديثات.",
+      "audience": "مسؤولو Linux والبنية التحتية وفرق الأمن والاستجابة للحوادث.",
+      "nextSteps": [
+        "راجع التصميم وحدود الحماية في الوثائق الرسمية قبل تقييمه.",
+        "اختبره في بيئة مرحلية مع موافقة مسؤول النظام.",
+        "قارن أثره على الطلبات المشروعة والأداء، واستمر في خطة التصحيح الأصلية."
+      ],
+      "limitations": "المشروع في مرحلة ما قبل الإصدار؛ يتطلب بيئة Linux ونواة وTPM متوافقين للإنتاج، والنتيجة المذكورة من اختبار مضبوط لا تثبت فعالية عامة على كل التطبيقات.",
+      "reviewedAt": "2026-11-25T08:42:43+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "OpenAI — OpenAI and Cisco introduce Shirudo",
+          "url": "https://openai.com/index/introducing-shirudo/"
+        },
+        {
+          "title": "Shirudo — المستودع الرسمي وREADME",
+          "url": "https://github.com/shirudo-dev/shirudo"
+        },
+        {
+          "title": "Cisco Newsroom — Cisco and OpenAI launch Shirudo",
+          "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m11/cisco-and-openai-launch-shirudo-a-new-project-to-safeguard-agentic-ai.html"
+        }
+      ],
+      "url": "https://openai.com/index/introducing-shirudo"
+    },
+    "57993858eb1cb09379": {
+      "titleAr": "PrismML تطلق Ternary Bonsai 2.5 27B بتركيز على تشغيل الوكلاء محليًا",
+      "summaryAr": "أعلنت PrismML إصدار Ternary Bonsai 2.5 27B المبني على Qwen3.8 27B، مع حجم معلن يبلغ 5.9 جيجابايت وتحسينات تدّعي الشركة أنها تشمل استخدام الأدوات متعدد الخطوات والبرمجة الوكيلة. وتعرض الشركة متوسطات أعلى من الإصدار السابق في مجموعات اختبارات البرمجة واستدعاء الأدوات، وتقول إن النموذج متاح بترخيص Apache-2.0.",
+      "whyItMatters": "النماذج المضغوطة قد توسع تشغيل مهام الوكلاء على أجهزة شخصية أو بيئات محدودة الذاكرة، لكن الحجم وحده لا يحدد السرعة أو الجودة أو احتياجات الذاكرة الفعلية.",
+      "audience": "مطورو النماذج المحلية ووكلاء البرمجة وفرق تقييم الأداء.",
+      "nextSteps": [
+        "راجع بطاقة النموذج والورقة التقنية والترخيص قبل التنزيل.",
+        "قارن الجودة على مهامك الفعلية لا على متوسطات الشركة فقط.",
+        "قس الذاكرة والسرعة واستهلاك الطاقة على العتاد المستهدف."
+      ],
+      "limitations": "الأرقام المنشورة وادعاءات التفوق صادرة عن PrismML؛ تختلف النتائج حسب العتاد وإعدادات القياس، ولا تعادل ضمان أداء على كل المهام.",
+      "reviewedAt": "2026-11-25T08:42:43+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "PrismML — Introducing Ternary Bonsai 2.5 27B",
+          "url": "https://prismml.com/news/bonsai-2-5-27b"
+        },
+        {
+          "title": "PrismML — Launch announcement",
+          "url": "https://prismml.com/news/prismml-launches-ternary-bonsai-2-5-27b"
+        }
+      ],
+      "url": "https://prismml.com/news/bonsai-2-5-27b"
+    },
+    "b0f646dfac9a0a0a63": {
+      "titleAr": "Meta توسّع مساعد Muse إلى رسائل Instagram وتضيف تنظيم المنشورات المحفوظة",
+      "summaryAr": "أفادت TechCrunch بأن مستخدمي Instagram في الولايات المتحدة وكندا والمكسيك واليابان وسنغافورة بدأوا يحصلون على محادثة مباشرة مع Muse داخل الرسائل، مع إمكان طلب سياق إضافي عن منشور أو مكان أو منتج. وتقول Meta إن المساعد يستطيع أيضًا تنظيم المنشورات المحفوظة في مجموعات أو قوائم، وإنه لا يرسل أو ينشر أو ينفذ إجراءً دون موافقة المستخدم.",
+      "whyItMatters": "يدمج هذا التوسع المساعد داخل سياق اجتماعي يستخدمه الناس يوميًا، ما يجعل وضوح الموافقات وحدود الوصول إلى الرسائل والمنشورات مهمًا بقدر سهولة الاستخدام.",
+      "audience": "متابعو منتجات الذكاء الاصطناعي ومطورو التطبيقات ومهتمو الخصوصية الرقمية.",
+      "nextSteps": [
+        "تحقق من توفر الميزة في منطقتك وحسابك بدل افتراض الإطلاق العالمي.",
+        "راجع إعدادات الخصوصية والصلاحيات قبل مشاركة محتوى خاص مع مساعد.",
+        "تأكد من معاينة أي إجراء مقترح والموافقة عليه قبل تنفيذه."
+      ],
+      "limitations": "التغطية تصف طرحًا مرحليًا في خمس دول؛ خصائص الموافقة والخصوصية منسوبة إلى Meta، ولا تثبت أن الميزة متاحة لكل المستخدمين أو الحسابات.",
+      "reviewedAt": "2026-11-25T08:42:43+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — Meta brings its Muse AI assistant directly into Instagram DMs",
+          "url": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/"
+        },
+        {
+          "title": "MacRumors — Meta's Muse AI Agent Comes to Instagram DMs",
+          "url": "https://www.macrumors.com/2026/11/24/meta-muse-instagram-dms/"
+        }
+      ],
+      "url": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/"
+    },
+    "977f9f016cc6ca5bd4": {
+      "titleAr": "Maple تجمع 5.3 ملايين دولار لتطوير مساعدات ذكاء اصطناعي تركز على خصوصية البيانات",
+      "summaryAr": "ذكرت TechCrunch أن شركة Maple جمعت 5.3 ملايين دولار لتطوير تطبيقات ومساعدات تعتمد على تشفير البيانات وبيئات تنفيذ موثوقة، وتقول الشركة إن بيانات المستخدم تبقى غير متاحة لها بصورتها الخام أثناء المعالجة. كما تعرض تطبيقًا مكتبيًا وتكاملات للبريد والتقويم، وتخطط للتوسع المؤسسي بعد استكمال تدقيقات أمنية.",
+      "whyItMatters": "مع زيادة وصول الوكلاء إلى الملفات والبريد والتقويم، تصبح بنية الخصوصية والتحقق من بيئة المعالجة عاملًا مهمًا في اختيار الخدمات، لا مجرد وعد تسويقي بالتشفير.",
+      "audience": "فرق تقنية المعلومات والشركات الصغيرة ومطورو التطبيقات المهتمون بخصوصية الوكلاء.",
+      "nextSteps": [
+        "اقرأ نموذج التهديد والتوثيق الأمني قبل ربط حسابات فعلية.",
+        "تحقق من نطاق التشفير وما إذا كانت المفاتيح تحت سيطرة المستخدم.",
+        "انتظر نتائج تدقيقات مستقلة قبل التعامل مع ادعاءات الخصوصية كضمان."
+      ],
+      "limitations": "وصف الحماية قائم أساسًا على تصريحات الشركة؛ أشارت التغطية إلى أن تدقيقات SOC 2 والأمن كانت لا تزال قيد الإنجاز، كما أن أرقام النمو منسوبة للشركة.",
+      "reviewedAt": "2026-11-25T08:42:43+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TechCrunch — Maple raises $5.3M to build AI products that protect your data",
+          "url": "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself/"
+        }
+      ],
+      "url": "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself/"
+    },
+    "4113acb1424b41bba6": {
+      "titleAr": "المركز الوطني للأمن السيبراني البريطاني يحذر من تسارع الهجمات المدعومة بالذكاء الاصطناعي",
+      "summaryAr": "ذكر المركز الوطني للأمن السيبراني البريطاني أنه رصد ارتفاعًا ملحوظًا في حوادث تستخدم أدوات آلية للبحث عن نقاط ضعف بسيطة واستغلالها بسرعة أكبر. وتقول الجهة إن كثيرًا من المشكلات المستغلة ليست ثغرات جديدة، بل ضعفًا متراكمًا في كلمات المرور والخدمات المكشوفة وواجهات API.",
+      "whyItMatters": "قد تزيد الأدوات الآلية سرعة اكتشاف نقاط الضعف، لكنها لا تلغي أهمية أساسيات الأمن؛ فالتحديثات وإدارة الوصول وتقليل التعرض للإنترنت تظل خطوط دفاع أساسية.",
+      "audience": "مسؤولو الأنظمة والمطورون وفرق الأمن وإدارة المخاطر.",
+      "nextSteps": [
+        "راجع إرشادات NCSC الرسمية لتقوية الأنظمة وإدارة الوصول.",
+        "حدّث الأصول المعرضة وفعّل المصادقة متعددة العوامل حيث تتاح.",
+        "راجع الخدمات المكشوفة ومفاتيح API ضمن إجراءات فريق الأمن."
+      ],
+      "limitations": "التقييم صادر عن NCSC ويصف حوادث مرصودة منذ سبتمبر؛ لا يعني أن كل حادثة تستخدم الذكاء الاصطناعي أو أن كل المؤسسات تعرضت لهجمات مماثلة.",
+      "reviewedAt": "2026-11-25T08:42:43+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "UK NCSC — Familiar weaknesses, exploited faster: defending against agentic cyber attacks",
+          "url": "https://www.ncsc.gov.uk/blogs/familiar-weaknesses-exploited-faster-defending-against-agentic-cyber-attacks"
+        },
+        {
+          "title": "TechCrunch — UK warns AI-driven cyberattacks are exposing years of weak security",
+          "url": "https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security/"
+        }
+      ],
+      "url": "https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security/"
+    },
+    "76aca383ca5b948c9a": {
+      "titleAr": "تقرير عن انقطاع Microsoft 365 يكشف تحديات تنسيق الاستجابة للأعطال واسعة النطاق",
+      "summaryAr": "أفادت Ars Technica وReuters، استنادًا إلى تقرير ما بعد الحادثة ومذكرات داخلية، بأن Microsoft بدأت مراجعة عاجلة لإجراءات الاستجابة بعد انقطاع نوفمبر الذي أثر في Exchange Online وTeams وOutlook. وذكرت المذكرات هدفًا لتقليص زمن نشر الإصلاحات الحرجة إلى ساعة، بينما أرجع التقرير السبب إلى عيب تقني وتراكم ضغط على البنية التحتية، لا إلى هجوم سيبراني أو أدوات ذكاء اصطناعي.",
+      "whyItMatters": "توضح الحادثة أن المرونة التقنية لا تعتمد على التكرار وحده؛ بل تحتاج رؤية موحدة للحادث، وسعة احتياطية، وتنسيقًا واضحًا بين فرق الاستجابة.",
+      "audience": "مهندسو SRE والسحابة ومديرو الحوادث والفرق التي تشغّل خدمات حرجة.",
+      "nextSteps": [
+        "راجع تقرير ما بعد الحادثة المنشور من Microsoft وافصل الحقائق الرسمية عن المذكرات الداخلية المنقولة.",
+        "اختبر قنوات اتصال موحدة وسجلًا زمنيًا مركزيًا للحوادث.",
+        "قِس زمن الاكتشاف والتخفيف والتعافي في تمارين الاستجابة."
+      ],
+      "limitations": "المذكرات الداخلية التي استند إليها التقرير ليست منشورة بالكامل؛ هدف الساعة طموح معلن وليس نتيجة محققة، وتفاصيل السبب الفني تعتمد على تقرير ما بعد الحادثة.",
+      "reviewedAt": "2026-11-25T08:42:43+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Reuters — Microsoft declares Code Red after historic outage",
+          "url": "https://www.reuters.com/business/microsoft-declares-code-red-after-historic-outage-internal-memos-show-2026-11-24/"
+        },
+        {
+          "title": "Ars Technica — Microsoft's historic cloud outage exposed an engineering fog of war",
+          "url": "https://arstechnica.com/gadgets/2026/11/microsofts-historic-cloud-outage-exposed-an-engineering-fog-of-war/"
+        }
+      ],
+      "url": "https://arstechnica.com/gadgets/2026/11/microsofts-historic-cloud-outage-exposed-an-engineering-fog-of-war/"
+    },
+    "6a28e842b3bf4bfd84": {
+      "titleAr": "Hugging Face تعرض مسارًا لمحاكاة تجنب العوائق لروبوت Microduck باستخدام Isaac Lab وNewton",
+      "summaryAr": "يعرض الدليل المنشور في Hugging Face مسار Sim2Real يضيف تجنب العوائق إلى روبوت Microduck مع إبقاء سياسة المشي الأساسية ثابتة. يستخدم العرض محاكاة Isaac Lab ومحرك Newton لقياسات مستشعر زمن الطيران، ثم يقيّم سياسة توجيه منفصلة قبل اختبارها على الروبوت الحقيقي.",
+      "whyItMatters": "يوضح المثال كيف يمكن فصل مهارة الحركة الأساسية عن مهارة الملاحة، واستخدام المحاكاة لاختبار سلوك الروبوت قبل نقله إلى العتاد الفعلي.",
+      "audience": "باحثو الروبوتات والتعلم المعزز ومهندسو المحاكاة والأنظمة المضمنة.",
+      "nextSteps": [
+        "راجع متطلبات Isaac Lab والعتاد قبل تقدير كلفة التدريب.",
+        "قارن نتائج المحاكاة بمشاهد لم تدخل التدريب.",
+        "اجعل اختبار العتاد الحقيقي تحت إشراف وبحدود حركة آمنة موثقة."
+      ],
+      "limitations": "الدليل حالة تطبيقية مرتبطة بعتاد Microduck وإعدادات NVIDIA؛ متطلبات GPU والتدريب قد تكون مرتفعة، ونجاح المحاكاة لا يضمن تعميم السلوك على بيئات حقيقية أخرى.",
+      "reviewedAt": "2026-11-25T08:42:43+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Hugging Face — Microduck Obstacle Avoidance: A Sim2Real Workflow with Isaac Lab and Newton",
+          "url": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance"
+        },
+        {
+          "title": "NVIDIA Isaac Lab — Documentation",
+          "url": "https://isaac-sim.github.io/IsaacLab/"
+        }
+      ],
+      "url": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance"
+    },
+    "aaa55aaf5989509238": {
+      "titleAr": "Muru يقدّم خادمًا مكتوبًا بـRust لتشغيل تطبيقات Python عبر ASGI وWSGI",
+      "summaryAr": "يعرض المشروع خادمًا وحافة توجيه وطبقة تحكم لتطبيقات Python، مع إدارة عمليات واعية ببيئة Python وإصدارات متوازية وإمكانات canary والتراجع دون توقف. يذكر README أن المشروع في مرحلة alpha بإصدارات 0.1.0 قبل النهائية، ومرخص Apache-2.0، ويضم تكاملًا مع وكلاء البرمجة عبر MCP.",
+      "whyItMatters": "قد يقدّم مسارًا جديدًا لتشغيل تطبيقات Python مع نشر تدريجي وإدارة عمليات أدق، لكن مرحلة alpha تعني أن التوافق والسلوك التشغيلي يحتاجان اختبارًا قبل التفكير في الإنتاج.",
+      "audience": "مطورو Python وفرق تشغيل تطبيقات الويب ومهندسو الخوادم.",
+      "nextSteps": [
+        "اقرأ README والتوثيق الرسميين للمشروع قبل تقييمه بديلًا لخادم قائم.",
+        "قارن توافق ASGI وWSGI وسلوك العمال في بيئة اختبار.",
+        "لا تنقل خدمة إنتاجية قبل قياس الاستقرار والتوافق وزمن الاستجابة."
+      ],
+      "limitations": "المشروع في مرحلة alpha وأوامره وإعداداته قد تتغير؛ لم يُختبر عمليًا في هذه المراجعة، ولا ينبغي استنتاج الجاهزية الإنتاجية من README.",
+      "reviewedAt": "2026-11-25T08:42:43+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "Muru — المستودع الرسمي وREADME",
+          "url": "https://github.com/muruhq/muru"
+        },
+        {
+          "title": "Simon Willison — Muru",
+          "url": "https://simonwillison.net/2026/Nov/21/muru/"
+        }
+      ],
+      "url": "https://simonwillison.net/2026/Nov/21/muru/"
+    },
+    "6e18aa23e1f0d14413": {
+      "repository": "heygen-com/hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "titleAr": "HyperFrames — إطار مفتوح المصدر لتحويل HTML إلى فيديو قابل للتحرير",
+      "summaryAr": "إطار Apache-2.0 يحوّل HTML وCSS وJavaScript والوسائط إلى فيديو MP4 قابل للتحرير، مع CLI ومهارات للوكلاء وتطبيق Studio مجاني. يتطلب Node.js 22+ وFFmpeg للرندر المحلي؛ أما النماذج وبعض خدمات HeyGen السحابية فتخضع لحسابات أو رسوم منفصلة.",
+      "whyItMatters": "يحوّل تقنيات الويب المعتادة إلى خط إنتاج فيديو قابل للمراجعة وإعادة الاستخدام بدل ملف فيديو مسطّح فقط. وتفيد قابلية تحرير المشروع ومخرجات الإطارات الحتمية في إنتاج شروحات المنتجات والدروس والمخططات المتحركة، مع ضرورة الفصل بين مزايا الإطار المفتوح ومزايا HeyGen المدفوعة.",
+      "audience": "مطورو الويب، وصنّاع المحتوى التقني، وفرق التوثيق والتسويق، ومطورو الوكلاء الذين يريدون إنشاء فيديوهات قابلة للتحرير.",
+      "overview": "HyperFrames إطار مفتوح المصدر يبني الفيديو من HTML وCSS وJavaScript والوسائط، ويطلب الإطار الزمني الدقيق لكل إطار بدل الاعتماد على تشغيل حي قد يسقط إطارات. ينتج مجلد مشروع قابلًا للتحرير بواسطة وكيل برمجي أو محرر المتصفح أو أدوات المطور. يدعم CLI محليًا، وتطبيق Studio لسطح المكتب، وموصلًا مستضافًا داخل حساب HeyGen؛ هذه المسارات ليست متطابقة من ناحية الخصوصية والتكلفة.",
+      "requirements": "للـCLI والرندر المحلي: Node.js 22+ وFFmpeg وnpm؛ يمكن استخدام وكيل يدعم skills مثل Codex أو Claude Code أو Cursor أو Gemini CLI، لكنه ليس شرطًا للتشغيل اليدوي. تطبيق Studio متاح على macOS وWindows وLinux ويتطلب حساب HeyGen مجانيًا. لا يلزم حساب HeyGen للرندر المحلي.",
+      "quickStart": "1) جهّز Node.js 22+ وFFmpeg. 2) داخل مجلد المشروع شغّل `npx hyperframes skills update` أو أضف مهارات المستودع عبر `npx skills add heygen-com/hyperframes`. 3) افتح وكيل البرمجة في المجلد واطلب فيديو قصيرًا محدد الهدف والمدة والمقاس. 4) راجع المشروع والمعاينة عبر `npx hyperframes preview`. 5) صدّر MP4 من المسار المحلي بعد مراجعة التوقيت والخطوط والأصول. لم يُنفّذ هذا المسار في هذه المراجعة.",
+      "costs": "الإطار وCLI والمهارات مرخصة Apache-2.0 والرندر المحلي مجاني. توثق FAQ خطة Studio مجانية تشمل 3 مقاطع AI و5 صادرات سحابية شهريًا، وخطة Pro بسعر 25 دولارًا شهريًا مع نماذج أعلى وصادرات سحابية غير محدودة؛ الأسعار والحدود قابلة للتغيير. خطة وكيل البرمجة ومصادر الوسائط قد تفرض تكاليف مستقلة.",
+      "localVsCloud": "محليًا: ملفات المشروع تبقى على الجهاز والرندر لا يحتاج حساب HeyGen، لكنه يحتاج Node.js وFFmpeg وموارد الجهاز. سحابيًا: الموصل المستضاف ينشئ الفيديو داخل حساب HeyGen ولا يسلّم مجلد المشروع المحلي؛ الرندر السحابي يستهلك حدود الخطة. يختلف ذلك عن تطبيق Studio والرندر المحلي.",
+      "alternatives": "Remotion مناسب للمشاريع المبنية على React؛ Motion Canvas للرسوم المتحركة البرمجية؛ Lottie للحركات المتجهية المضمنة؛ وFFmpeg مباشرة لخطوط تحويل بسيطة. يختلف HyperFrames باستخدام HTML وCSS وJavaScript مع توقيت إطارات حتمي.",
+      "limitations": "يتطلب الرندر المحلي Node.js 22+ وFFmpeg وقد يتأثر بموارد الجهاز والخطوط. الميزات السحابية والوسائط التوليدية مرتبطة بخطة HeyGen وحساب المستخدم. استخدام الموصل المستضاف يغيّر مكان معالجة المشروع ولا يوفّر مجلد المشروع المحلي. يجب التحقق من تراخيص الخطوط والموسيقى واللقطات. لم يُبنَ المشروع أو يُشغّل في هذه المراجعة.",
+      "reviewedAt": "2026-11-25T08:42:43+03:00",
+      "basis": "readme",
+      "license": "Apache-2.0",
+      "feedId": "6e18aa23e1f0d14413",
+      "metrics": {
+        "starsApprox": "89.2k",
+        "forksApprox": "8.3k",
+        "openIssues": 132,
+        "archived": false,
+        "measuredAt": "2026-11-25T08:42:43+03:00",
+        "source": "GitHub repository page; stars/forks rounded by display"
+      },
+      "testStatus": "not_run",
+      "improvements": [
+        {
+          "title": "اختبارات RTL عربية لإطارات الفيديو والترجمة",
+          "problem": "قد تتغير محاذاة النص العربي واتجاهه وتشكيل الحروف عند مزج العربية بالأرقام والاختصارات اللاتينية أو عند تغيير الخط والمنصة.",
+          "approach": "إنشاء عينات ثابتة للعربية الفصحى واللهجات والنص المختلط، ثم رندر لقطات مرجعية وفحص ترتيب المحارف والتفاف السطور وعدم تجاوز حدود الإطار.",
+          "stack": "HyperFrames CLI، Node.js، FFmpeg، Playwright، Vitest، خطوط مرخصة",
+          "steps": [
+            "أنشئ عينات مرخصة تتضمن العربية والأرقام والنص المختلط والتشكيل.",
+            "ثبّت خطوطًا مرخصة وإعدادات اتجاه ومحاذاة واضحة.",
+            "ولّد لقطات مرجعية على دقات وأبعاد مختلفة.",
+            "قارن ترتيب النص والتفافه وعدم القصّ مع النتائج المتوقعة.",
+            "أضف الاختبارات إلى CI مع حفظ صور الفروق للمراجعة."
+          ],
+          "metric": "نسبة عينات RTL التي تعرض النص بالترتيب الصحيح دون قصّ أو تداخل.",
+          "difficulty": "متوسط (تقدير)",
+          "risks": "اختلاف محركات العرض والخطوط بين الأنظمة قد ينتج فروقًا بصرية؛ يجب تثبيت بيئة الاختبار وتوثيق تراخيص الخطوط.",
+          "sources": [
+            {
+              "title": "HyperFrames README",
+              "url": "https://github.com/heygen-com/hyperframes/blob/main/README.md"
+            },
+            {
+              "title": "HyperFrames Quickstart",
+              "url": "https://github.com/heygen-com/hyperframes/blob/main/docs/quickstart.mdx"
+            }
+          ]
+        },
+        {
+          "title": "اختبارات انحدار حتمية للرندر",
+          "problem": "قد تغيّر تحديثات CSS أو مكتبات الحركة شكل الإطارات أو توقيتها دون أن يظهر الخطأ في مراجعة الشيفرة وحدها.",
+          "approach": "رندر مشاهد قصيرة ثابتة، وحفظ لقطات مرجعية وبيانات مدة وإطارات، ثم مقارنة فروق الصور ضمن حدود معلنة.",
+          "stack": "HyperFrames CLI، FFmpeg، Vitest، GitHub Actions",
+          "steps": [
+            "اختر مشاهد قصيرة تمثل النص والحركة والصوت والوسائط.",
+            "ثبّت إصدارات Node وFFmpeg والخطوط المستخدمة.",
+            "رندر اللقطات المرجعية واحفظ بيانات الفيديو الوصفية.",
+            "قارن الصور والتوقيتات مع حدود سماح موثقة.",
+            "أوقف التحديثات التي تتجاوز الحد واطلب مراجعة بشرية للفروق."
+          ],
+          "metric": "عدد تغييرات الرندر غير المقصودة المكتشفة قبل الإصدار ومعدل الإنذارات الكاذبة.",
+          "difficulty": "متوسط (تقدير)",
+          "risks": "الترميز والاختلافات بين الأنظمة قد تنتج فروقًا غير مؤثرة؛ يلزم تطبيع الصور والبيانات الوصفية.",
+          "sources": [
+            {
+              "title": "HyperFrames README",
+              "url": "https://github.com/heygen-com/hyperframes/blob/main/README.md"
+            },
+            {
+              "title": "HyperFrames FAQ",
+              "url": "https://github.com/heygen-com/hyperframes/blob/main/docs/faq.mdx"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مولّد دروس Python عربية قصيرة",
+          "problem": "الملاحظات والدفاتر البرمجية طويلة ويصعب تحويلها إلى مراجعات مرئية قصيرة مع المحافظة على صحة الشيفرة.",
+          "approach": "تحويل درس موثق إلى فيديو قصير يعرض الفكرة ومقطع الشيفرة ومثال الإدخال والإخراج وترجمة عربية قابلة للتحرير.",
+          "stack": "Python، Jupyter، Markdown، HyperFrames، FFmpeg، صوت محلي",
+          "steps": [
+            "حدد درسًا واحدًا ومخرجات تعلم قابلة للتحقق.",
+            "استخرج الشيفرة والأمثلة من مصدر مرخص وثبّت نسخ المكتبات.",
+            "أنشئ مخططًا زمنيًا يربط الشرح بمقاطع الشيفرة.",
+            "ولّد ترجمة عربية وراجع اتجاه النص والتوقيت يدويًا.",
+            "صدّر الفيديو محليًا وأرفق روابط المصادر وملفات المشروع."
+          ],
+          "metric": "دقة الشيفرة المعروضة ونسبة أخطاء الترجمة والتوقيت لكل درس.",
+          "difficulty": "متوسط (تقدير)",
+          "risks": "قد تنتج النماذج شيفرة غير صحيحة أو ترجمة غير دقيقة؛ يجب مراجعة الأمثلة وتشغيلها خارج مسار إنتاج الفيديو.",
+          "sources": [
+            {
+              "title": "HyperFrames Quickstart",
+              "url": "https://github.com/heygen-com/hyperframes/blob/main/docs/quickstart.mdx"
+            },
+            {
+              "title": "HyperFrames README",
+              "url": "https://github.com/heygen-com/hyperframes/blob/main/README.md"
+            }
+          ]
+        },
+        {
+          "title": "تحويل إصدارات GitHub إلى فيديو توضيحي",
+          "problem": "ملاحظات الإصدارات وطلبات الدمج طويلة ولا توضح بصريًا أثر التغيير للمستخدم النهائي.",
+          "approach": "إنشاء مسودة فيديو من Release notes وروابط PR مع إبقاء كل ادعاء مرتبطًا بمصدره واشتراط موافقة بشرية قبل النشر.",
+          "stack": "GitHub API، Node.js، HyperFrames، FFmpeg، Markdown",
+          "steps": [
+            "اقرأ ملاحظات إصدار منشور فقط وحدد التغييرات الموجهة للمستخدم.",
+            "اربط كل مشهد برابط PR أو توثيق رسمي.",
+            "أنشئ مخططًا مرئيًا وشيفرة توضيحية قابلة للتحرير.",
+            "اعرض المسودة للمراجع للتحقق من الدقة وعدم كشف معلومات داخلية.",
+            "صدّر الفيديو بعد الموافقة مع روابط المصادر."
+          ],
+          "metric": "زمن إعداد فيديو الإصدار ونسبة الادعاءات المرتبطة بمصدر موثوق.",
+          "difficulty": "متوسط (تقدير)",
+          "risks": "قد تكشف بيانات PR غير العامة أو تتضمن الملاحظات وعودًا غير مكتملة؛ يجب قصر القراءة على المحتوى العام وفرض المراجعة البشرية.",
+          "sources": [
+            {
+              "title": "HyperFrames README",
+              "url": "https://github.com/heygen-com/hyperframes/blob/main/README.md"
+            },
+            {
+              "title": "GitHub REST API",
+              "url": "https://docs.github.com/en/rest/releases/releases"
+            }
+          ]
+        }
+      ],
+      "religious": [],
+      "sources": [
+        {
+          "title": "HyperFrames — README",
+          "url": "https://github.com/heygen-com/hyperframes/blob/main/README.md"
+        },
+        {
+          "title": "HyperFrames — LICENSE (Apache-2.0)",
+          "url": "https://github.com/heygen-com/hyperframes/blob/main/LICENSE"
+        },
+        {
+          "title": "HyperFrames — Quickstart",
+          "url": "https://hyperframes.heygen.com/quickstart"
+        },
+        {
+          "title": "HyperFrames — Agent guide",
+          "url": "https://hyperframes.heygen.com/guides/with-claude-code"
+        },
+        {
+          "title": "HyperFrames — FAQ and pricing",
+          "url": "https://hyperframes.heygen.com/faq"
+        }
+      ],
+      "displayRequirements": "إثراء عنصر Feed الأصلي 6e18aa23e1f0d14413 دون إنشاء هوية أو بطاقة جديدة. اعرض overview وrequirements وquickStart وcosts وlocalVsCloud وalternatives وlimitations ومصادرها. ميّز بوضوح بين الرندر المحلي المجاني وخطة Studio المجانية وميزات Pro والرندر السحابي المدفوع. أظهر Apache-2.0 ووقت قياس مؤشرات GitHub، وخصوصية الرفع السحابي، وحالة testStatus=not_run. لا تعرض شارة اختبار ناجح أو تَعِد بتشغيل لم يحدث."
+    },
+    "27e4be1576dc64eaa5": {
+      "url": "https://github.com/bilibili/GPT-SoVITS",
+      "titleAr": "GPT-SoVITS — واجهة مفتوحة لتحويل الصوت إلى كلام وتوليد صوت متعدد اللغات",
+      "summaryAr": "مشروع MIT يوفّر WebUI وأدوات لمعالجة بيانات الصوت والاستدلال النصي-الصوتي. يذكر README وضع zero-shot بعينة مرجعية قصيرة وfew-shot بعد ضبط النموذج ببيانات أكثر، مع دعم معلن للإنجليزية واليابانية والكورية والكانتونية والصينية؛ هذه قدرات يذكرها المشروع ولم تُختبر هنا.",
+      "whyItMatters": "يعرض سلسلة عمل عملية في معالجة الصوت من تجهيز البيانات إلى الاستدلال، ويمكن دراسته لتطبيقات النطق وإمكانية الوصول. يجب استخدام تسجيلاتك أو أصوات مرخّصة وبموافقة صريحة، وعدم انتحال صوت شخص أو نشر كلام باسمه.",
+      "audience": "طلاب معالجة الصوت وتعلم الآلة، ومطورو تطبيقات النطق وإمكانية الوصول، والباحثون في تحويل النص إلى كلام.",
+      "overview": "GPT-SoVITS-WebUI مشروع Python لمعالجة الصوت وتوليد الكلام وتحويله. يذكر README دعم zero-shot TTS بعينة مرجعية قصيرة وfew-shot بعد ضبط دقيق ببيانات تدريب، مع أدوات لتقطيع التسجيلات وASR ومراجعة النصوص وفصل الصوت المصاحب. يدعم الاستدلال عبر WebUI وواجهات API، وتضيف وثيقة semantic streaming إعدادات اختيارية لبعض إصدارات V2ProPlus وV5. الأرقام والسرعة والقدرات الواردة في README ادعاءات المشروع وليست نتائج تحقق مستقل.",
+      "requirements": "شارة README تشير إلى Python 3.10–3.12، بينما جدول البيئات المختبرة يتضمن أيضًا بعض تركيبات Python 3.9. يذكر PyTorch بإصدارات متعددة وCUDA 11.8/12.4/12.8، مع CPU وApple Silicon في بعض التركيبات. يلزم Conda وFFmpeg وتنزيل الأوزان المسبقة؛ وقد تتطلب ميزات ASR وفصل الصوت أوزانًا إضافية. لا يحدد README حدًا أدنى موحدًا لذاكرة GPU. ويذكر أن تدريب Mac GPU قد يعطي جودة أقل من أجهزة أخرى.",
+      "quickStart": "1) ابدأ بقراءة دليل المستخدم الإنجليزي وسجل التغييرات. 2) جهّز بيئة Conda بإصدار Python متوافق مع جدول الاختبار. 3) اتبع install.sh على Linux/macOS أو install.ps1 على Windows واختر مسار الجهاز ومصدر النماذج، أو راجع التثبيت اليدوي في README. 4) ثبّت FFmpeg ونزّل الأوزان المطلوبة إلى المسارات التي يحددها الدليل. 5) افتح WebUI عبر `python webui.py` وابدأ بعيناتك أو مواد مرخّصة وبموافقة أصحاب الأصوات. لم يُنفّذ التثبيت أو التشغيل في هذه المراجعة.",
+      "costs": "ترخيص الشيفرة MIT ولا يفرض رسم API على التشغيل المحلي. تبقى كلفة العتاد والطاقة والتخزين وتنزيل الأوزان قائمة؛ أما Colab وAutoDL وHugging Face Spaces والخوادم السحابية فقد تكون محدودة أو مدفوعة بحسب المزود. لا يحدد README سعرًا سحابيًا ثابتًا.",
+      "localVsCloud": "محليًا: يمكن التشغيل على Windows وLinux وmacOS، مع مسارات CPU وApple Silicon وبعض إعدادات CUDA؛ يعتمد الأداء على العتاد وحجم النموذج. Docker الموثق موجّه إلى إعدادات NVIDIA ويتضمن shared memory كبيرًا. سحابيًا: يشير README إلى Colab وAutoDL وعرض Hugging Face؛ تحقق من الحصص والتكلفة وسياسة الاحتفاظ قبل رفع أي تسجيلات. التشغيل المحلي لا يلغي ضرورة احترام حقوق الصوت والبيانات.",
+      "alternatives": "بدائل للمقارنة وليست بدائل متطابقة: F5-TTS (MIT، غير مؤرشف، وآخر دفع ظاهر في GitHub كان 2026-11-03)؛ OpenVoice (MIT وغير مؤرشف، لكن آخر دفع ظاهر كان 2025-04-19، لذا نشاطه أقدم). قارن اللغات المدعومة وجودة النطق ومتطلبات العتاد وترخيص الأوزان قبل الاختيار.",
+      "limitations": "العربية واللهجات العربية ليست ضمن اللغات التي يسردها README صراحة؛ لا تفترض دعمها قبل اختبار مستقل. ادعاءات السرعة والتشابه وجودة النماذج من المشروع ولم تُقَس هنا. يعتمد التثبيت على مجموعة اعتماديات وأوزان كبيرة وقد تختلف التوافقية بين الأجهزة. ترخيص MIT للشيفرة لا يثبت ترخيص كل وزن أو مجموعة بيانات. يلزم إذن صريح لاستخدام أي صوت لشخص آخر. لم يُشغّل المشروع في هذه المراجعة.",
+      "nextSteps": [
+        "تحقق من ترخيص كل وزن ومجموعة بيانات قبل تنزيلها أو إعادة توزيعها.",
+        "استخدم تسجيلاتك أو عينات مرخّصة بموافقة واضحة فقط، ولا تنسب صوتًا مولدًا إلى شخص آخر.",
+        "اختبر دعم العربية واللهجات على مجموعة مرجعية مرخّصة قبل وصفه بأنه يدعم العربية."
+      ],
+      "improvements": [
+        {
+          "title": "مجموعة تقييم للنطق العربي واللهجات مع إعلان حدود الدعم",
+          "problem": "قائمة اللغات في README لا تذكر العربية، لذلك قد يخلط المستخدم بين القدرة على إدخال نص عربي وبين نطق عربي مفهوم وطبيعي.",
+          "approach": "إضافة مجموعة اختبار مرخّصة ومراجعة بشريًا تشمل الفصحى ولهجات محددة، مع نشر نتائج منفصلة لكل لهجة وعدم إعلان دعمها قبل اجتياز عتبات واضحة.",
+          "stack": "Python، librosa، pandas، مجموعة صوتية مرخّصة، أدوات تقييم بشرية",
+          "steps": [
+            "حدد نطاق اللهجات وموافقة أصحاب التسجيلات.",
+            "أنشئ جملًا مرجعية تغطي الأصوات والأرقام والأسماء.",
+            "ولّد عينات من الإصدارات المراد تقييمها دون استخدام أصوات غير مصرح بها.",
+            "قيّم الوضوح والنطق والتوقيت بواسطة مراجعين مستقلين.",
+            "انشر النتائج والقيود بحسب اللهجة والإصدار."
+          ],
+          "metric": "نسبة الجمل المفهومة وفق معيار تقييم معلن لكل لهجة، مع اكتمال موافقات 100% من العينات.",
+          "difficulty": "متوسط إلى مرتفع (تقدير)",
+          "risks": "تحيز مجموعة صغيرة من المتحدثين، وخصوصية التسجيلات، وإمكانية المبالغة في تعميم نتائج لهجة واحدة.",
+          "sources": [
+            {
+              "title": "GPT-SoVITS README",
+              "url": "https://github.com/bilibili/GPT-SoVITS/blob/main/README.md"
+            },
+            {
+              "title": "GPT-SoVITS requirements",
+              "url": "https://github.com/bilibili/GPT-SoVITS/blob/main/requirements.txt"
+            }
+          ]
+        },
+        {
+          "title": "سجل موافقات ومصدر للأصوات والأوزان",
+          "problem": "ترخيص الشيفرة لا يوضح تلقائيًا حقوق كل تسجيل أو وزن نموذج، وقد يصعب تتبع الموافقة أو طلب حذف مادة صوتية.",
+          "approach": "إضافة بيانات منشأ وموافقة لكل عينة ووزن، مع حالة استخدام مسموحة وتاريخ الموافقة وآلية حذف وسجل تدقيق.",
+          "stack": "Python، SQLite، JSON Schema، واجهة WebUI، اختبارات آلية",
+          "steps": [
+            "عرّف حقول المصدر والترخيص ونطاق الموافقة.",
+            "اجعل إدخال أي عينة يتطلب إثبات إذن أو ترخيص مناسب.",
+            "اربط الأوزان بصفحة المصدر وإصدارها وشروطها.",
+            "أضف طلب حذف يزيل الملفات والفهارس المرتبطة بها.",
+            "اختبر رفض العينات التي تفتقد بيانات الموافقة."
+          ],
+          "metric": "نسبة 100% من العينات والأوزان المستخدمة التي لها سجل مصدر وموافقة قابل للمراجعة.",
+          "difficulty": "متوسط (تقدير)",
+          "risks": "قد تحتوي سجلات الموافقة معلومات شخصية؛ يلزم تقليل البيانات وتحديد الاحتفاظ والوصول.",
+          "sources": [
+            {
+              "title": "GPT-SoVITS LICENSE",
+              "url": "https://github.com/bilibili/GPT-SoVITS/blob/main/LICENSE"
+            },
+            {
+              "title": "GPT-SoVITS README",
+              "url": "https://github.com/bilibili/GPT-SoVITS/blob/main/README.md"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مقياس جودة للنطق العربي على أصوات مرخّصة",
+          "problem": "لا تتوفر في صفحة المشروع الحالية نتائج واضحة عن الفصحى واللهجات العربية.",
+          "approach": "أداة تقييم مستقلة تقارن أنظمة TTS على جمل عربية مرجعية، وتفصل بين وضوح الكلام وطبيعية النبرة ودقة الأسماء.",
+          "stack": "Python، pandas، librosa، jiwer، واجهة تقارير",
+          "steps": [
+            "اجمع جملًا عامة أو تسجيلات بموافقة موثقة.",
+            "حدد النص المرجعي ومعايير التقييم قبل التشغيل.",
+            "شغّل الأنظمة التي تسمح تراخيصها بذلك.",
+            "اجمع تقييمًا بشريًا ومقاييس آلية منفصلة.",
+            "انشر النتائج مع إصدارات النماذج وحدود العينة."
+          ],
+          "metric": "اكتمال التغطية الصوتية ونسبة المقاطع التي اجتازت معيار الوضوح المعلن.",
+          "difficulty": "متوسط (تقدير)",
+          "risks": "المقاييس الآلية لا تكفي وحدها للحكم على طبيعية الصوت؛ يجب حماية بيانات المشاركين.",
+          "sources": [
+            {
+              "title": "GPT-SoVITS README",
+              "url": "https://github.com/bilibili/GPT-SoVITS/blob/main/README.md"
+            },
+            {
+              "title": "F5-TTS repository",
+              "url": "https://github.com/SWivid/F5-TTS"
+            }
+          ]
+        },
+        {
+          "title": "قارئ محلي للملاحظات بصوت يملكه المستخدم",
+          "problem": "يحتاج بعض المتعلمين إلى تحويل ملاحظات نصية إلى صوت مع بقاء الملفات على أجهزتهم.",
+          "approach": "واجهة قراءة محلية تربط النصوص بملفات صوتية من صوت المستخدم نفسه أو أصوات مرخّصة، مع بديل TTS واضح إذا لم تكن العربية مدعومة.",
+          "stack": "Python، واجهة WebUI، SQLite، مشغل صوت محلي",
+          "steps": [
+            "ابدأ بمستندات عامة أو ملاحظات يملكها المستخدم.",
+            "تحقق من لغة النص ودعم النموذج قبل اختيار محرك الصوت.",
+            "استخدم صوتًا يملكه المستخدم أو مرخصًا بوضوح.",
+            "احفظ الصوت محليًا مع مصدره وإعداداته.",
+            "اختبر سهولة الاستماع وإمكانية حذف الملفات."
+          ],
+          "metric": "نسبة النصوص التي تحولت إلى صوت واضح مع بقاء الملفات محليًا وسجل مصدر صالح.",
+          "difficulty": "متوسط (تقدير)",
+          "risks": "قد لا يدعم النموذج العربية جيدًا؛ تجنب استخدام أصوات أشخاص دون إذن ولا ترفع الملاحظات الحساسة إلى خدمة سحابية.",
+          "sources": [
+            {
+              "title": "GPT-SoVITS README",
+              "url": "https://github.com/bilibili/GPT-SoVITS/blob/main/README.md"
+            },
+            {
+              "title": "GPT-SoVITS English user guide",
+              "url": "https://rentry.co/GPT-SoVITS-guide#/"
+            }
+          ]
+        }
+      ],
+      "religious": [],
+      "testStatus": "not_run",
+      "reviewedAt": "2026-11-25T15:14:01+03:00",
+      "basis": "readme",
+      "sources": [
+        {
+          "title": "GPT-SoVITS README",
+          "url": "https://github.com/bilibili/GPT-SoVITS/blob/main/README.md"
+        },
+        {
+          "title": "MIT License",
+          "url": "https://github.com/bilibili/GPT-SoVITS/blob/main/LICENSE"
+        },
+        {
+          "title": "Python requirements",
+          "url": "https://github.com/bilibili/GPT-SoVITS/blob/main/requirements.txt"
+        },
+        {
+          "title": "Additional requirements",
+          "url": "https://github.com/bilibili/GPT-SoVITS/blob/main/extra-req.txt"
+        },
+        {
+          "title": "English changelog",
+          "url": "https://github.com/bilibili/GPT-SoVITS/blob/main/docs/en/Changelog_EN.md"
+        },
+        {
+          "title": "Semantic streaming documentation",
+          "url": "https://github.com/bilibili/GPT-SoVITS/blob/main/docs/en/semantic_streaming.md"
+        },
+        {
+          "title": "English user guide linked by README",
+          "url": "https://rentry.co/GPT-SoVITS-guide#/"
+        }
+      ]
+    }
+  }
+}
