@@ -39,7 +39,7 @@
       "feedMatch": false,
       "editorialMatch": false,
       "status": "official-availability-verified",
-      "note": "Canva أعلنت أن MCP أصبح متاحًا عمومًا وأن Craft متاح عبر MCP وAPI؛ صفحة Research القديمة التي تقول إن MCP قادم لم تعد المرجع الأحدث. لا يُستورد دون ID/URL مطابق في Feed.",
+      "note": "أكدت Canva رسميًا أن MCP أصبح متاحًا عمومًا دون قائمة انتظار، وأن Canva Craft متاح عبر MCP وREST API. أرقام التسجيل والاستخدام الواردة في البيان أرقام Canva الذاتية وليست قياسًا مستقلًا. لا يُستورد السجل ما لم يظهر زوج ID/URL مطابق في Feed.",
       "sources": [
         {
           "title": "Canva newsroom — MCP generally available and Craft via API/MCP",
@@ -57,7 +57,7 @@
       "feedMatch": false,
       "editorialMatch": false,
       "status": "official-support-documentation-verified",
-      "note": "دعم تسجيل الدخول للوكلاء موجود رسميًا وبموافقة المستخدم؛ الحسابات الفردية والعائلية فقط حاليًا، وتطبيق 1Password 8.12.42+، وعناصر Login في Personal/Private؛ لا تشمل Passkeys أو shared vaults أو تسجيلات الدخول عبر مزود خارجي. قصص 1Password الموجودة في Feed عن التسريب/التصيد موضوع مختلف.",
+      "note": "الميزة opt-in؛ تتطلب حسابًا فرديًا أو عائليًا، تطبيق 1Password 8.12.42+، وLogin items في Personal أو Private vault، ولا تدعم Passkeys أو shared vaults أو عناصر تعتمد على مزود تسجيل خارجي. يوافق المستخدم على كل طلب جديد؛ لا يستطيع الوكيل الموافقة لنفسه، ويمكن إلغاء الربط. تعبئة البيانات تتم خارج رؤية الوكيل، لكن بعد تسجيل الدخول يصبح سلوك الوكيل داخل الموقع وحدود حماية الموقع مسؤولية منفصلة؛ ضمانات 1Password تغطي التخزين والموافقة والتسليم والتعبئة لا تصرف الوكيل أثناء الجلسة.",
       "sources": [
         {
           "title": "1Password for Agents — official support",
@@ -67,7 +67,8 @@
           "title": "1Password for Agents security model",
           "url": "https://support.1password.com/1password-for-agents-security/"
         }
-      ]
+      ],
+      "securityModel": "لا يحصل الوكيل أو مطوّر الوكيل على كلمة مرور حساب 1Password أو Secret Key؛ تُستخدم مفاتيح تكامل ومفتاح عميل مشفر، وتُفك العناصر الموافق عليها داخل confidential computing enclave ثم تُرسل إلى امتداد المتصفح بقناة مشفرة."
     }
   ]
 }
