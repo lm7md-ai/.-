@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "kind": "special-records-review",
+  "publicationStatus": "research-only-not-published",
+  "reviewedAt": "2026-11-26T14:42:32Z",
+  "sourceMainSha": "d7e86d183e92f10e5271be504351f277afc56090",
+  "mainSnapshot": {
+    "feedItems": 800,
+    "editorialEntries": 1141,
+    "seenIds": 7422,
+    "feedGeneratedAt": "2026-11-26T03:32:33Z",
+    "sourceCount": 26,
+    "sourceStates": {
+      "ok": 24,
+      "empty": 2
+    },
+    "collected": 308
+  },
+  "records": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-10-24-0542.json",
+      "originalUrl": "https://github.com/NVIDIA/OpenShell",
+      "inIncoming": true,
+      "inSeen": true,
+      "inFeedByExactIdAndUrl": false,
+      "inMainEditorial": false,
+      "inCurrentPrEditorial": false,
+      "status": "seen-only-research",
+      "canonicalRepositoryForResearch": "https://github.com/ai-openshell/openshell",
+      "officialRelease": {
+        "version": "v0.1.10",
+        "publishedAt": "2026-11-24T15:12:00Z",
+        "releaseUrl": "https://github.com/ai-openshell/openshell/releases/tag/v0.1.10",
+        "docsLatest": "v0.1.10",
+        "docsUrl": "https://docs.nvidia.com/openshell/latest/about/overview"
+      },
+      "license": "Apache-2.0",
+      "notes": [
+        "The original incoming URL is retained exactly; the canonical repository moved to ai-openshell/openshell.",
+        "No ID or URL alias was created, and the record remains non-importable until the exact original ID+URL appears in Feed."
+      ],
+      "testStatus": "not_run",
+      "sources": [
+        {
+          "title": "Official repository",
+          "url": "https://github.com/ai-openshell/openshell"
+        },
+        {
+          "title": "OpenShell v0.1.10 release",
+          "url": "https://github.com/ai-openshell/openshell/releases/tag/v0.1.10"
+        },
+        {
+          "title": "NVIDIA OpenShell latest documentation",
+          "url": "https://docs.nvidia.com/openshell/latest/about/overview"
+        },
+        {
+          "title": "Apache-2.0 license",
+          "url": "https://github.com/ai-openshell/openshell/blob/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "originalUrl": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "inIncoming": true,
+      "inSeen": true,
+      "inFeedByExactIdAndUrl": false,
+      "inMainEditorial": false,
+      "inCurrentPrEditorial": false,
+      "status": "seen-only-research",
+      "originalArticleDate": "2026-10-22",
+      "expiryAssessment": "not_confirmed; original item is outside the 21-day feed window, but absence alone does not prove expiry",
+      "currentOfficialStatus": {
+        "craftViaApi": true,
+        "craftViaMcp": true,
+        "mcpGenerallyAvailable": true,
+        "waitlistRequired": false,
+        "officialUpdateUrl": "https://www.canva.com/newsroom/news/canva-mcp-update/",
+        "craftApiUrl": "https://www.canva.com/ai-research/craft-api/"
+      },
+      "notes": [
+        "The older Craft page said MCP was coming soon; Canva's current newsroom update now says MCP is generally available and Craft is available via API and MCP.",
+        "Company usage and ranking figures remain company-reported claims, not independent evaluation.",
+        "The original TechCrunch ID+URL is not in the current Feed; no new identity was generated."
+      ],
+      "sources": [
+        {
+          "title": "Canva current MCP and Craft availability update",
+          "url": "https://www.canva.com/newsroom/news/canva-mcp-update/"
+        },
+        {
+          "title": "Canva Craft API and model details",
+          "url": "https://www.canva.com/ai-research/craft-api/"
+        },
+        {
+          "title": "Original incoming article URL",
+          "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/"
+        }
+      ]
+    },
+    {
+      "name": "1Password agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "incomingFile": "editorial/incoming/nabdh-editorial-2026-10-24-1143.json",
+      "originalUrl": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "inIncoming": true,
+      "inSeen": true,
+      "inFeedByExactIdAndUrl": false,
+      "inMainEditorial": false,
+      "inCurrentPrEditorial": false,
+      "status": "seen-only-research",
+      "originalArticleDate": "2026-10-22",
+      "expiryAssessment": "not_confirmed; original item is outside the 21-day feed window, but absence alone does not prove expiry",
+      "currentOfficialStatus": {
+        "optInOnly": true,
+        "eligibleAccounts": "Individual and Family on 1Password.com",
+        "unsupportedAccounts": [
+          "Team",
+          "Business",
+          "1Password.ca",
+          "1Password.eu"
+        ],
+        "minimumAppVersion": "8.12.42",
+        "supportedVaults": [
+          "Personal",
+          "Private"
+        ],
+        "unsupportedFeatures": [
+          "Passkeys",
+          "shared vaults"
+        ],
+        "approvalMayLastDays": 30,
+        "supportedAgents": [
+          "Claude Duet",
+          "Grok Bot",
+          "Instinct",
+          "Muse",
+          "Town"
+        ],
+        "officialSupportUrl": "https://support.1password.com/1password-for-agents/"
+      },
+      "notes": [
+        "The agent can request a sign-in prompt but cannot approve its own request or access the vault.",
+        "1Password fills the sign-in form; after sign-in, the website controls the session.",
+        "The original TechCrunch ID+URL is not in the current Feed; no new identity was generated."
+      ],
+      "sources": [
+        {
+          "title": "1Password official support guide",
+          "url": "https://support.1password.com/1password-for-agents/"
+        },
+        {
+          "title": "Original incoming article URL",
+          "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/"
+        }
+      ]
+    }
+  ],
+  "decision": "Do not import any of the three until the exact original ID and URL reappear together in the current Feed. Preserve all original identities; no aliases."
+}
