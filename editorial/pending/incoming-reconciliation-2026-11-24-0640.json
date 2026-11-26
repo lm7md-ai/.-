@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "reconciliation_report_not_importable",
+  "reviewedAt": "2026-11-24T06:40:00+03:00",
+  "mainCommit": "27cc144b1e9ae4f8c9c5528c0c51c4544092ae8a",
+  "incomingTreeSha": "7357ba473f9abb28ac08679650a27ca746f56a17",
+  "files": 155,
+  "appearances": 1630,
+  "classifications": {
+    "alreadyImportedExactIdUrl": 1388,
+    "activeExactIdUrlNotInMainEditorial": 32,
+    "outsideCurrentFeedButSeen": 210,
+    "idUrlMismatches": 0,
+    "neitherFeedNorSeen": 0,
+    "distinctActiveIds": 20
+  },
+  "structuralEquivalentValidation": {
+    "passedFiles": 154,
+    "failedFiles": 1,
+    "failedFile": "editorial/incoming/nabdh-news-2026-11-20-1813.json",
+    "failedEntryCount": 7,
+    "reason": "schemaVersion instead of version:1"
+  },
+  "specialRecords": {
+    "nvidiaOpenShell": {
+      "id": "940ec4695c1e241c2f",
+      "seen": true,
+      "feed": false,
+      "editorialMain": false
+    },
+    "canvaCraft": {
+      "id": "317abcdd1b20728a7e",
+      "seen": true,
+      "feed": false,
+      "editorialMain": false
+    },
+    "onePasswordAgentSignIn": {
+      "id": "662e68277c6361dd4b",
+      "seen": true,
+      "feed": false,
+      "editorialMain": false
+    }
+  },
+  "note": "Counts are file appearances except distinctActiveIds. Absence from current Feed is not proof of time expiry. No identity was generated from title."
+}

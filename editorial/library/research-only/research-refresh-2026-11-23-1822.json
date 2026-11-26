@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "research_only_not_published",
+  "reviewedAt": "2026-11-23T18:22:56+03:00",
+  "library": {
+    "curated": 31,
+    "active": 29,
+    "archived": 2,
+    "historical": 73,
+    "historicalActive": 71,
+    "historicalArchived": 2,
+    "deepResearch": 3,
+    "ideas": 90,
+    "priorIdeasOrder": [
+      "OpenShell policy diff viewer",
+      "Pydantic AI typed evaluation harness",
+      "Google Gen AI SDK compatibility matrix"
+    ]
+  },
+  "metricsMeasuredAt": "2026-11-23T15:22:56Z",
+  "metricsWarning": "pushed_at لـPydantic AI وuv لاحق لوقت القياس؛ لا يُستخدم كدليل نشاط بعد القياس.",
+  "previousEight": [
+    {
+      "repo": "patchy631/ai-engineering-hub",
+      "stars": 42078,
+      "forks": 6727,
+      "openIssues": 140,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "measuredAt": "2026-11-23T15:22:56Z",
+      "readmeReviewed": true,
+      "summary": "93+ تعليمات ومشاريع AI؛ لا متطلبات موحدة.",
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "googleapis/python-genai",
+      "stars": 4087,
+      "forks": 1068,
+      "openIssues": 359,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-11-22T20:51:06Z",
+      "measuredAt": "2026-11-23T15:22:56Z",
+      "readmeReviewed": true,
+      "summary": "SDK رسمي لـGemini Developer API وAgent Platform؛ pip install google-genai؛ استدعاءات السحابة قد تكون مدفوعة.",
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "Millillion/lasm",
+      "stars": 109,
+      "forks": 6,
+      "openIssues": 6,
+      "license": "MIT / MIT-0",
+      "archived": false,
+      "pushedAt": "2026-11-22T02:00:01Z",
+      "measuredAt": "2026-11-23T15:22:56Z",
+      "readmeReviewed": true,
+      "summary": "Lean 4 إلى WASM؛ Node 24+؛ تراخيص أرشيف Lean تحتاج مراجعة.",
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "microsoft/markitdown",
+      "stars": 198032,
+      "forks": 14999,
+      "openIssues": 823,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-11-07T00:14:01Z",
+      "measuredAt": "2026-11-23T15:22:56Z",
+      "readmeReviewed": true,
+      "summary": "Python 3.10–3.14؛ تحويل محلي؛ OCR/الصوت/Azure قد تكون خدمات مدفوعة.",
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "yc-software/minecraft-agent-harness",
+      "stars": 232,
+      "forks": 30,
+      "openIssues": 1,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "measuredAt": "2026-11-23T15:22:56Z",
+      "readmeReviewed": true,
+      "summary": "Node 22.19+، Minecraft 1.21.6، Java 21 للخادم المحلي؛ مفتاح مزود نموذج.",
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "ai-openshell/openshell",
+      "stars": 21885,
+      "forks": 2152,
+      "openIssues": 783,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-11-23T15:19:07Z",
+      "measuredAt": "2026-11-23T15:22:56Z",
+      "readmeReviewed": true,
+      "summary": "Linux/macOS Apple Silicon وWSL2 تجريبي؛ Docker/Podman؛ API النموذج منفصل.",
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "pydantic/pydantic-ai",
+      "stars": 21351,
+      "forks": 3246,
+      "openIssues": 1887,
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-11-23T15:28:51Z",
+      "measuredAt": "2026-11-23T15:22:56Z",
+      "readmeReviewed": true,
+      "summary": "إطار Python typed agents؛ uv add pydantic-ai؛ مزودون سحابيون ومحليون.",
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "astral-sh/uv",
+      "stars": 92646,
+      "forks": 3930,
+      "openIssues": 3097,
+      "license": "MIT OR Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-11-23T15:27:26Z",
+      "measuredAt": "2026-11-23T15:22:56Z",
+      "readmeReviewed": true,
+      "summary": "مدير Python سريع؛ Windows/macOS/Linux؛ لا API أو خدمة سحابية.",
+      "testStatus": "not_run"
+    }
+  ],
+  "newCandidates": [
+    {
+      "name": "Monty",
+      "repo": "pydantic/monty",
+      "url": "https://github.com/pydantic/monty",
+      "feedMatch": false,
+      "publicationStatus": "research_only_not_published",
+      "github": {
+        "stars": 8996,
+        "forks": 506,
+        "openIssues": 237,
+        "archived": false,
+        "license": "MIT",
+        "pushedAt": "2026-11-23T15:29:08Z",
+        "measuredAt": "2026-11-23T15:22:56Z"
+      },
+      "overview": "مفسر Python محدود مكتوب بـRust لتشغيل شيفرة AI في sandbox على مستوى اللغة. لا يوجد وصول ضمني للملفات أو البيئة أو الشبكة؛ الوصول الخارجي عبر host functions وmounts يحددها التطبيق. وثائق المشروع تعلن v1.0.0.",
+      "requirements": "Python 3.11+ لحزمة pydantic-monty، وsubset من Python 3.14 داخل sandbox. حزمة ~4.5MB مع worker binary، دون daemon/container/API key. MIT. الاستخدام المفتوح بلا رسوم ترخيص؛ موارد الجهاز لها تكلفة، وCommercial Support عبر gRPC مدفوع دون سعر عام منشور.",
+      "quickStart": "uv add pydantic-monty؛ import Monty؛ أنشئ pool ثم checkout لجلسة واستخدم session.feed_run(code, inputs=..., external_lookup=...). pin لمسار binary_path وتقييد callbacks عند شيفرة غير موثوقة.",
+      "alternatives": "Docker Python كامل وعزل OS لكنه أثقل؛ WASI/wasmtime وPyodide بدائل محلية؛ sandbox services بعيدة تزيد العزل وزمن الشبكة والتكلفة. benchmark latency في docs صادر عن المشروع وليس مستقلًا.",
+      "limitations": "عزل لغة لا VM/container/seccomp. callbacks تعمل بصلاحيات المضيف. worker subprocess لا يمنع كل أعطال الذاكرة. Python subset جزئي.",
+      "improvements": [
+        {
+          "title": "مصفوفة توافق شيفرات الوكلاء",
+          "problem": "قد يولد الوكيل صياغة أو مكتبة غير مدعومة.",
+          "approach": "عينات واقعية وفحص مبكر للميزات المدعومة مع رسائل خطأ مفهومة.",
+          "stack": "Python, pydantic-monty, pytest, JSON Schema",
+          "steps": [
+            "جمع عينات شيفرة.",
+            "تصنيف الميزات.",
+            "فحص العينات.",
+            "عرض سبب الرفض.",
+            "إضافة حالات regression."
+          ],
+          "metric": "دقة تصنيف الدعم ومعدل الفشل غير المتوقع.",
+          "difficulty": "متوسطة؛ تقدير",
+          "risks": "تغير subset وانحياز العينات.",
+          "sources": [
+            {
+              "title": "Monty limitations",
+              "url": "https://pydantic.dev/docs/monty/limitations/"
+            }
+          ]
+        }
+      ],
+      "spinoffs": [
+        {
+          "title": "مشغل محلي آمن لأمثلة Python",
+          "problem": "تشغيل شيفرة المتعلم دون فتح ملفات الجهاز أو الشبكة.",
+          "approach": "worker مستقل بمدخلات ووظائف allowlisted وحدود موارد.",
+          "stack": "Python, pydantic-monty, pytest",
+          "steps": [
+            "تعريف وظائف مسموحة.",
+            "تثبيت Monty وpin binary.",
+            "إنشاء pool وجلسة.",
+            "تحديد حدود الذاكرة والزمن.",
+            "تسجيل المخرجات.",
+            "اختبار الحدود."
+          ],
+          "metric": "نسبة التنفيذ ضمن الحدود وعدم استدعاء وظائف غير مصرح بها.",
+          "difficulty": "متوسطة إلى مرتفعة؛ تقدير",
+          "risks": "ليس عزل OS؛ callbacks قد تكشف صلاحيات المضيف.",
+          "sources": [
+            {
+              "title": "Python quickstart",
+              "url": "https://pydantic.dev/docs/monty/quickstart/python/"
+            },
+            {
+              "title": "Security model",
+              "url": "https://pydantic.dev/docs/monty/concepts/security/"
+            },
+            {
+              "title": "Resource limits",
+              "url": "https://pydantic.dev/docs/monty/concepts/resource-limits/"
+            }
+          ]
+        }
+      ],
+      "religious": [],
+      "testStatus": "not_run",
+      "sources": [
+        {
+          "title": "Repository README",
+          "url": "https://github.com/pydantic/monty"
+        },
+        {
+          "title": "MIT license",
+          "url": "https://github.com/pydantic/monty/blob/main/LICENSE"
+        },
+        {
+          "title": "Official docs",
+          "url": "https://pydantic.dev/docs/monty/"
+        },
+        {
+          "title": "Alternatives",
+          "url": "https://pydantic.dev/docs/monty/reference/alternatives/"
+        }
+      ]
+    },
+    {
+      "name": "Navier–Stokes Lean formalization",
+      "repo": "tristanbuckmaster/navier-stokes",
+      "url": "https://github.com/tristanbuckmaster/navier-stokes",
+      "feedMatch": false,
+      "publicationStatus": "research_only_not_publishable",
+      "github": {
+        "stars": 359,
+        "forks": 25,
+        "archived": false,
+        "license": null,
+        "pushedAt": "2026-11-20T13:33:18Z"
+      },
+      "overview": "ورقة عن blow-up محدود الزمن مع formalization بـLean 4.33.1 وMathlib. ملفات التحدي تصرح بالنظريات وSolution.lean يثبتها من Breakdown؛ لا يعني ذلك اكتمال كل عناصر التحقق العددي.",
+      "requirements": "Lean 4.33.1 وMathlib؛ نحو 2,270 ملفًا و600 ألف سطر. cd lean ثم lake exe cache get ثم lake build. البناء يحتاج وقتًا وذاكرة ولم يُنفذ.",
+      "quickStart": "قراءة README وlean/README وNOTICE، تجهيز Lean 4.33.1 وMathlib ثم أوامر cache/build. بناء Lean لا يعوض التحقق العددي الخارجي.",
+      "costs": "لا API؛ تكلفة موارد محلية. لا خدمة سحابية مطلوبة موثقة.",
+      "limitations": "لا ملف ترخيص ظاهر؛ الشهادة العددية وبرنامج interval arithmetic 128-bit غير موجودين؛ النسخة المعدلة في 20 نوفمبر لم تُبنَ. لا يُنشر كتحقق مكتمل.",
+      "testStatus": "not_run",
+      "sources": [
+        {
+          "title": "README",
+          "url": "https://github.com/tristanbuckmaster/navier-stokes"
+        },
+        {
+          "title": "Lean README",
+          "url": "https://github.com/tristanbuckmaster/navier-stokes/blob/main/lean/README.md"
+        },
+        {
+          "title": "NOTICE",
+          "url": "https://github.com/tristanbuckmaster/navier-stokes/blob/main/lean/NOTICE"
+        }
+      ]
+    }
+  ]
+}
