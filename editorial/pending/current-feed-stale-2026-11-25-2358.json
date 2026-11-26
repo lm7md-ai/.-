@@ -1,14 +1,20 @@
 {
   "schemaVersion": 1,
   "publicationStatus": "pending-not-importable-current-feed",
-  "reviewedAt": "2026-11-25T23:58:00+03:00",
-  "mainCommit": "ac5443cf99f9d9100f4c36ee653d4284dd9c0188",
-  "feedGeneratedAt": "2026-11-25T20:57:53+00:00",
+  "reviewedAt": "2026-11-26T11:47:21+03:00",
+  "mainCommit": "d7e86d183e92f10e5271be504351f277afc56090",
+  "feedGeneratedAt": "2026-11-26T03:32:33+00:00",
   "supersedesCandidate": "editorial/pending/current-feed-enrichment-2026-11-25-2342.json",
   "summary": {
-    "records": 7,
+    "records": 13,
     "confirmedExpired": 0,
-    "reason": "ID absent from latest feed; absence alone does not prove expiry"
+    "reason": "ID absent from latest feed; absence alone does not prove expiry",
+    "incomingOccurrencesOutsideFeed": 221,
+    "incomingUniqueIdsOutsideFeed": 212,
+    "feedMatchOccurrences": 21,
+    "idUrlMismatches": 0,
+    "invalidSchemaFiles": 1,
+    "invalidFileRecordsHeld": 6
   },
   "records": [
     {
@@ -126,6 +132,122 @@
         {
           "title": "GreyNoise — An Active Intrusion Campaign Against Check Point Security Management Servers",
           "url": "https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign"
+        }
+      ]
+    },
+    {
+      "id": "97dffa3b72860b1f67",
+      "url": "https://github.com/openssl/openssl/pull/33652",
+      "titleAr": "CVE-2026-121481: طلب إصلاح مفتوح لمشكلة في EVP_EncodeBlock",
+      "basis": "metadata",
+      "reviewedAt": "2026-11-20T18:13:13+03:00",
+      "classification": "not_in_current_feed",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-20-1813.json",
+      "reason": "لا يوجد زوج ID/URL مطابق في Feed الحالي أو Editorial. الملف الأصلي يستخدم schemaVersion بدل version، لذلك لا يُستورد. لا يُصنّف منقضيًا دون تاريخ نشر موثوق أو دليل مستقل.",
+      "sources": [
+        {
+          "title": "OpenSSL pull request #33652",
+          "url": "https://github.com/openssl/openssl/pull/33652"
+        },
+        {
+          "title": "NVD — CVE-2026-121481",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121481"
+        },
+        {
+          "title": "CVE record",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-121481"
+        }
+      ]
+    },
+    {
+      "id": "bda522de56a34a98c0",
+      "url": "https://git-aarvin.github.io/mei/",
+      "titleAr": "مؤشر مستقل يضع Gemini 4 Neon في صدارة اختبارات هندسة البرمجيات",
+      "basis": "article",
+      "reviewedAt": "2026-11-20T18:13:13+03:00",
+      "classification": "not_in_current_feed",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-20-1813.json",
+      "reason": "لا يوجد زوج ID/URL مطابق في Feed الحالي أو Editorial. الملف الأصلي يستخدم schemaVersion بدل version، لذلك لا يُستورد. لا يُصنّف منقضيًا دون تاريخ نشر موثوق أو دليل مستقل.",
+      "sources": [
+        {
+          "title": "Models Engineering Index — methodology and rankings",
+          "url": "https://git-aarvin.github.io/mei/"
+        }
+      ]
+    },
+    {
+      "id": "b1430f615687828286",
+      "url": "https://www.engadget.com/2322705/the-trump-administration-has-replaced-its-cybersecurity-chief/",
+      "titleAr": "تعيين مؤقت لقيادة الأمن السيبراني الأميركي بعد موجة انقطاعات تقنية",
+      "basis": "metadata",
+      "reviewedAt": "2026-11-20T18:13:13+03:00",
+      "classification": "not_in_current_feed",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-20-1813.json",
+      "reason": "لا يوجد زوج ID/URL مطابق في Feed الحالي أو Editorial. الملف الأصلي يستخدم schemaVersion بدل version، لذلك لا يُستورد. لا يُصنّف منقضيًا دون تاريخ نشر موثوق أو دليل مستقل.",
+      "sources": [
+        {
+          "title": "Engadget — White House cybersecurity leadership change",
+          "url": "https://www.engadget.com/2322705/the-trump-administration-has-replaced-its-cybersecurity-chief/"
+        },
+        {
+          "title": "Reuters — White House national cyber director change",
+          "url": "https://www.reuters.com/world/us/white-house-national-cyber-director-cairncross-leaving-his-post-axios-reports-2026-11-19/"
+        },
+        {
+          "title": "AP — White House names Kirsten Davies",
+          "url": "https://apnews.com/article/2f1f84f3ca5429d01ace67929c72128d"
+        }
+      ]
+    },
+    {
+      "id": "b6973fc351e5f01d48",
+      "url": "https://www.bbc.co.uk/news/articles/c6d94pzk9vleo?at_medium=RSS&at_campaign=rss",
+      "titleAr": "BBC تطرح سؤال استخدام الذكاء الاصطناعي في تقييم الجدارة الائتمانية",
+      "basis": "metadata",
+      "reviewedAt": "2026-11-20T18:13:13+03:00",
+      "classification": "not_in_current_feed",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-20-1813.json",
+      "reason": "لا يوجد زوج ID/URL مطابق في Feed الحالي أو Editorial. الملف الأصلي يستخدم schemaVersion بدل version، لذلك لا يُستورد. لا يُصنّف منقضيًا دون تاريخ نشر موثوق أو دليل مستقل.",
+      "sources": [
+        {
+          "title": "BBC — Should AI be judging our credit worthiness?",
+          "url": "https://www.bbc.co.uk/news/articles/c6d94pzk9vleo?at_medium=RSS&at_campaign=rss"
+        }
+      ]
+    },
+    {
+      "id": "c50a064b65c55ff5ed",
+      "url": "https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine",
+      "titleAr": "مقال رأي ينتقد اعتماد الشركات الصغيرة على مزادات الإعلانات الرقمية",
+      "basis": "article",
+      "reviewedAt": "2026-11-20T18:13:13+03:00",
+      "classification": "not_in_current_feed",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-20-1813.json",
+      "reason": "لا يوجد زوج ID/URL مطابق في Feed الحالي أو Editorial. الملف الأصلي يستخدم schemaVersion بدل version، لذلك لا يُستورد. لا يُصنّف منقضيًا دون تاريخ نشر موثوق أو دليل مستقل.",
+      "sources": [
+        {
+          "title": "Global Commerce Graph — The 98% Slot Machine",
+          "url": "https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine"
+        }
+      ]
+    },
+    {
+      "id": "f78d1ebaf9c5d49889",
+      "url": "https://aitnews.com/2026/11/20/asian-chip-stocks-ai-investment-selloff-november-2026/",
+      "titleAr": "أسهم شركات الرقائق الآسيوية تتراجع وسط إعادة تقييم رهانات الذكاء الاصطناعي",
+      "basis": "metadata",
+      "reviewedAt": "2026-11-20T18:13:13+03:00",
+      "classification": "not_in_current_feed",
+      "sourceFile": "editorial/incoming/nabdh-news-2026-11-20-1813.json",
+      "reason": "لا يوجد زوج ID/URL مطابق في Feed الحالي أو Editorial. الملف الأصلي يستخدم schemaVersion بدل version، لذلك لا يُستورد. لا يُصنّف منقضيًا دون تاريخ نشر موثوق أو دليل مستقل.",
+      "sources": [
+        {
+          "title": "البوابة العربية للأخبار التقنية — تراجع أسهم الرقائق الآسيوية",
+          "url": "https://aitnews.com/2026/11/20/asian-chip-stocks-ai-investment-selloff-november-2026/"
+        },
+        {
+          "title": "Investing.com — Asian markets sell off amid AI valuation reset (Reuters)",
+          "url": "https://sa.investing.com/news/stock-market-news/article-3448836"
         }
       ]
     }
