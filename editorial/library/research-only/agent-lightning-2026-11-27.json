@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "researchOnly": true,
+  "published": false,
+  "feedId": null,
+  "repository": "microsoft/agent-lightning",
+  "url": "https://github.com/microsoft/agent-lightning",
+  "capturedAt": "2026-11-27T10:12:05Z",
+  "classification": "active",
+  "archived": false,
+  "version": "1.0.3",
+  "license": {
+    "spdx": "MIT",
+    "verified": true,
+    "source": "https://github.com/microsoft/agent-lightning/blob/main/LICENSE"
+  },
+  "metrics": {
+    "stars": 19010,
+    "forks": 1731,
+    "openIssues": 186,
+    "pushedAt": "2026-11-26T06:47:45Z",
+    "updatedAt": "2026-11-27T14:27:20Z",
+    "capturedAt": "2026-11-27T15:12:27Z",
+    "note": "GitHub API snapshot; counts change over time.",
+    "readmeSha": "4af32c7768587ffbf0874962e0aa8b4755249677",
+    "licenseSha": "72dc60d84b692387206266939bc34656bcba1e15",
+    "pyprojectSha": "d1cd6f3695f3bfc140d5213390ed2000d5745f64"
+  },
+  "basis": "readme",
+  "overview": "Agent Lightning v1.0 إطار مفتوح المصدر لتدريب وكلاء الذكاء الاصطناعي باستخدام أدواتهم وبيئاتهم الفعلية، عبر Trainer وAPI Gateway وRollout Controller. يمرر Gateway طلبات النموذج ويسجل بيانات التدريب، بينما يشغّل Controller الوكيل محليًا أو كـKubernetes Job؛ ويستخدم Trainer تكامل verl وvLLM. المشروع يركز على RL وتدريب الوكلاء، وليس واجهة جاهزة لبناء وكيل إنتاجي.",
+  "requirements": "Python >=3.12 وuv. التوثيق يطلب NVIDIA CUDA 12.9 أو 13.0، ومكدس متوافقًا من verl وvLLM وPyTorch وFlashAttention. مسار Quick Start يذكر جهازًا واحدًا مع A100 GPU؛ ويحتاج تنزيل بيانات Calc-X وتبعيات المثال. local runner غير مدعوم على Windows الأصلي، ويمكن تشغيله عبر Linux أو WSL. يطلب التوثيق تسجيل دخول Weights & Biases لأن السجلات والـtrajectories تُرفع إليه افتراضيًا.",
+  "quickStart": "1) استنسخ https://github.com/microsoft/agent-lightning وافتح مجلد المشروع. 2) جهّز Linux/WSL وuv وCUDA 12.9 أو 13.0. 3) نفّذ uv sync. 4) فعّل البيئة ثم نفّذ bash scripts/setup_verl.sh 0.8.0 cu130. 5) نفّذ uv run wandb login. 6) نزّل ملفات Calc-X وضعها في examples/calc_x/data/. 7) ثبّت تبعيات المثال المذكورة في Quick Start. 8) شغّل examples/calc_x/run_local.sh. هذه خطوات من التوثيق ولم تُنفذ في هذه المراجعة.",
+  "costs": {
+    "license": "MIT؛ لا رسوم ترخيص",
+    "local": "تكلفة GPU والذاكرة والتخزين والكهرباء؛ Quick Start يذكر A100",
+    "cloud": "تكلفة GPU/عنقود والبيانات والتخزين وربما مزود النموذج وW&B؛ لا يوجد سعر خدمة مدارة ثابت معلن"
+  },
+  "localVsCloud": {
+    "local": "Linux/WSL مع CUDA وGPU متوافق؛ مسار local runner",
+    "cloud": "يمكن التوسع عبر Kubernetes Jobs؛ لا يقدم المستودع خدمة مدارة مجانية"
+  },
+  "alternatives": "verl إطار تدريب RL أوسع ويعمل backend أساسيًا في Agent Lightning؛ Hugging Face TRL مكتبة post-training تتضمن SFT وGRPO وDPO وReward Modeling؛ OpenRLHF إطار RLHF موزع قائم على Ray وvLLM. هذه بدائل جزئية أو مكونات مجاورة وليست واجهات متطابقة. أطر AutoGen وOpenAI Agents SDK وLangChain يمكن أن تكون harnesses يعمل معها Agent Lightning، لا بدائل تدريب مباشرة.",
+  "limitations": "المشروع تقني ومتطلباته عالية نسبيًا؛ لا يناسب تجربة أولى على هاتف أو CPU فقط. توافق verl وvLLM وTorch وCUDA حساس للإصدارات. Quick Start يعتمد على A100، ورفع traces إلى W&B افتراضيًا يستدعي مراجعة إعدادات الخصوصية. نتائج الأداء التي يعرضها المستودع من تجارب الناشر ولم أكررها. لم أشغّل المشروع.",
+  "testStatus": "not_run",
+  "testEvidence": [],
+  "improvements": [
+    {
+      "title": "سجل قابل لإعادة الإنتاج لكل rollout",
+      "problem": "يصعب تفسير اختلاف المكافأة عندما تتغير البيانات أو النموذج أو البيئة أو إعدادات GPU.",
+      "approach": "حفظ hashes للبيانات وإصدارات الحزم وseed وإعدادات reward وبيئة التشغيل مع كل trajectory، ثم توفير أمر لإعادة تشغيل عينة.",
+      "stack": [
+        "Python",
+        "uv",
+        "JSONL",
+        "pytest",
+        "Weights & Biases (اختياري)"
+      ],
+      "steps": [
+        "تعريف schema موحد للـrun metadata.",
+        "التقاط hashes وإصدارات الحزم والبيانات.",
+        "ربط metadata بكل rollout وtrajectory.",
+        "إضافة أمر لإعادة تشغيل عينة.",
+        "مقارنة reward والنتيجة ضمن tolerance معلن."
+      ],
+      "metric": "نسبة التجارب القابلة لإعادة الإنتاج ضمن tolerance محدد.",
+      "difficulty": "متوسطة (تقدير)",
+      "risks": [
+        "تسرب traces أو بيانات مستخدمين إلى سجلات التجربة.",
+        "زيادة حجم التخزين وكلفة الاحتفاظ."
+      ],
+      "sources": [
+        "https://github.com/microsoft/agent-lightning",
+        "https://microsoft.github.io/agent-lightning/stable/01-quick-start/",
+        "https://github.com/microsoft/agent-lightning/blob/main/pyproject.toml"
+      ]
+    },
+    {
+      "title": "اختبارات مقاومة استغلال المكافأة لوكلاء البرمجة",
+      "problem": "قد يحسن الوكيل reward الظاهر عبر التحايل على الاختبار أو الإفراط في التخصيص بدل حل المهمة.",
+      "approach": "فصل مهام التدريب عن holdout مخفي، واستخدام اختبارات مستقلة وفحص patch ومراجعة بشرية للحالات الحساسة.",
+      "stack": [
+        "Agent Lightning",
+        "Python",
+        "pytest",
+        "SWE-bench-style tasks"
+      ],
+      "steps": [
+        "اختيار مجموعة مهام تدريب مرخصة.",
+        "إنشاء holdout لا يدخل في حساب reward أثناء التدريب.",
+        "كتابة اختبارات مستقلة لكل مهمة.",
+        "تسجيل reward ومعدل نجاح الاختبارات منفصلين.",
+        "مراجعة الحالات التي يتحسن فيها reward دون نجاح المهمة."
+      ],
+      "metric": "معدل النجاح على holdout مستقل، لا متوسط reward وحده.",
+      "difficulty": "مرتفعة (تقدير)",
+      "risks": [
+        "تسرب الاختبارات إلى بيانات التدريب.",
+        "ارتفاع تكلفة GPU وعدد التجارب."
+      ],
+      "sources": [
+        "https://github.com/microsoft/agent-lightning",
+        "https://microsoft.github.io/agent-lightning/stable/"
+      ]
+    },
+    {
+      "title": "لوحة تكلفة لكل مهمة موثقة النجاح",
+      "problem": "عدد التوكنات أو reward لا يوضح تكلفة GPU وAPI لكل إنجاز صحيح.",
+      "approach": "ربط زمن GPU والتوكنات وعدد المحاولات بنتيجة اختبار مستقلة لكل task ID.",
+      "stack": [
+        "Python",
+        "pandas",
+        "SQLite",
+        "Prometheus"
+      ],
+      "steps": [
+        "تعريف task ID ثابت.",
+        "جمع زمن GPU واستهلاك الموارد لكل rollout.",
+        "تسجيل التوكنات والمحاولات ومزود النموذج.",
+        "ربط كل تجربة بنتيجة الاختبار المستقل.",
+        "حساب التكلفة لكل مهمة ناجحة ومقارنتها بالجودة."
+      ],
+      "metric": "تكلفة المهمة المقبولة باختبار مستقل.",
+      "difficulty": "متوسطة (تقدير)",
+      "risks": [
+        "نقص بيانات تكلفة مزود النموذج أو التخزين.",
+        "اختلاف أسعار السحابة والعتاد بين التشغيلات."
+      ],
+      "sources": [
+        "https://microsoft.github.io/agent-lightning/stable/",
+        "https://github.com/microsoft/agent-lightning/blob/main/pyproject.toml"
+      ]
+    }
+  ],
+  "spinoffs": [
+    {
+      "title": "مختبر عربي لتقييم وكلاء البرمجة للطلاب",
+      "problem": "صعوبة مقارنة وكلاء البرمجة على مهام عربية قابلة للتحقق وبشروط متساوية.",
+      "approach": "إنشاء مجموعة مهام صغيرة من مستودعات مرخصة مع متطلبات واختبارات واضحة، وتشغيل الوكلاء تحت الإعدادات نفسها.",
+      "stack": [
+        "Agent Lightning",
+        "Python",
+        "pytest",
+        "Git"
+      ],
+      "steps": [
+        "اختيار مستودعات ومهام مرخصة.",
+        "صياغة وصف عربي دقيق لكل مهمة.",
+        "كتابة اختبارات قابلة للتكرار.",
+        "تشغيل عدد محدود من التجارب.",
+        "نشر pass rate والزمن والتكلفة والقيود."
+      ],
+      "metric": "معدل النجاح وقابلية إعادة الإنتاج لكل مهمة.",
+      "difficulty": "متوسطة (تقدير)",
+      "risks": [
+        "تحيز مجموعة المهام للغة أو إطار معين.",
+        "كلفة GPU وتفاوت قدرات النماذج."
+      ],
+      "sources": [
+        "https://github.com/microsoft/agent-lightning",
+        "https://microsoft.github.io/agent-lightning/stable/01-quick-start/"
+      ]
+    },
+    {
+      "title": "مقارن موحد لأطر الوكلاء",
+      "problem": "اختلاف الأدوات والسياق يجعل مقارنة AutoGen وOpenAI Agents SDK وأطر أخرى غير عادلة.",
+      "approach": "بناء محولات إلى عقد تنفيذ موحد وتشغيل مجموعة مهام ثابتة مع مقاييس نجاح وزمن وتكلفة.",
+      "stack": [
+        "Python",
+        "Agent Lightning",
+        "pytest",
+        "SQLite"
+      ],
+      "steps": [
+        "تعريف عقد موحد للمدخلات والمخرجات والأدوات.",
+        "بناء محول مستقل لكل إطار.",
+        "تثبيت مجموعة المهام والبيئة.",
+        "تشغيل كل إطار على الإعدادات نفسها.",
+        "نشر النتائج مع إصدارات الحزم والقيود."
+      ],
+      "metric": "نجاح المهمة وتكلفتها وزمنها تحت شروط قابلة للمقارنة.",
+      "difficulty": "مرتفعة (تقدير)",
+      "risks": [
+        "عدم تكافؤ قدرات الأطر أو الأدوات.",
+        "تأثير الإعدادات الخاصة بكل إطار على عدالة المقارنة."
+      ],
+      "sources": [
+        "https://github.com/microsoft/agent-lightning",
+        "https://microsoft.github.io/agent-lightning/stable/"
+      ]
+    }
+  ],
+  "religious": [],
+  "sources": [
+    {
+      "title": "المستودع الرسمي وREADME",
+      "url": "https://github.com/microsoft/agent-lightning"
+    },
+    {
+      "title": "التوثيق الرسمي v1.0",
+      "url": "https://microsoft.github.io/agent-lightning/stable/"
+    },
+    {
+      "title": "دليل التثبيت",
+      "url": "https://microsoft.github.io/agent-lightning/stable/00-installation/"
+    },
+    {
+      "title": "Quick Start",
+      "url": "https://microsoft.github.io/agent-lightning/stable/01-quick-start/"
+    },
+    {
+      "title": "pyproject.toml والمتطلبات والإصدار",
+      "url": "https://github.com/microsoft/agent-lightning/blob/main/pyproject.toml"
+    },
+    {
+      "title": "MIT License",
+      "url": "https://github.com/microsoft/agent-lightning/blob/main/LICENSE"
+    },
+    {
+      "title": "GitHub API: الحالة والمؤشرات",
+      "url": "https://api.github.com/repos/microsoft/agent-lightning"
+    },
+    {
+      "title": "توثيق verl",
+      "url": "https://verl.readthedocs.io/en/latest/"
+    },
+    {
+      "title": "توثيق Hugging Face TRL",
+      "url": "https://huggingface.co/docs/trl/index"
+    },
+    {
+      "title": "توثيق OpenRLHF",
+      "url": "https://openrlhf.readthedocs.io/en/latest/"
+    }
+  ],
+  "recentUpstreamChanges": [
+    "README في 2026/11 أضاف مثال Score Centering مع GRPO وINT8 inference وINT4 Attention KV cache.",
+    "الوثائق الرسمية تؤكد CUDA 12.9 أو 13.0 وuv sync وsetup_verl.sh وتسجيل W&B الافتراضي لرفع logs وtrajectories.",
+    "Quick Start يحتاج جهازًا واحدًا ببطاقة A100؛ local runner غير مدعوم على Windows الأصلي ويمكن استخدام WSL/Linux."
+  ]
+}
