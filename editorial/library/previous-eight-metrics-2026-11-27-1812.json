@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "research-only-not-published-as-new-project-cards",
+  "measuredAt": "2026-11-27T15:12:27Z",
+  "metricSource": "GitHub REST metadata; README and LICENSE files fetched from each upstream default branch.",
+  "metricPrecision": "Stars/forks are cumulative counts, not growth rates; pushedAt is code-push time; updatedAt may include non-code activity.",
+  "summary": {
+    "previousProjectsReviewed": 8,
+    "activeNonArchived": 8,
+    "archived": 0,
+    "licensesVerified": 8,
+    "readmeUnchangedSincePreviousReview": 8,
+    "currentFeedProjects": 100,
+    "currentFeedProjectsEnriched": 100,
+    "curatedLibrary": {
+      "total": 31,
+      "active": 29,
+      "archived": 2,
+      "licensesVerified": 31,
+      "metricsCapturedAt": "2026-11-16T02:54:42+03:00"
+    },
+    "historicalCatalog": {
+      "total": 73,
+      "active": 71,
+      "archived": 2,
+      "licensesNeedingUpstreamVerification": 10,
+      "snapshotAt": "2026-11-14T02:47:48+03:00"
+    },
+    "publicResearch": {
+      "deepReviewedProjects": 3,
+      "ideasPerProject": 30,
+      "totalCuratedIdeas": 90,
+      "lastReviewed": "2026-10-24"
+    }
+  },
+  "projects": [
+    {
+      "name": "AI Engineering Hub",
+      "repo": "patchy631/ai-engineering-hub",
+      "archived": false,
+      "license": "MIT",
+      "licenseVerified": true,
+      "stars": 42163,
+      "forks": 6734,
+      "openIssues": 142,
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "updatedAt": "2026-11-27T13:21:58Z",
+      "readmeSha": "6c65ab12125814c5233f873c4c1af2765ff87d51",
+      "licenseSha": "84ee68d33c9b68bae6c139f591996f021a02b23a",
+      "activity": "quiet_but_unarchived"
+    },
+    {
+      "name": "Google Gen AI SDK",
+      "repo": "googleapis/python-genai",
+      "archived": false,
+      "license": "Apache-2.0",
+      "licenseVerified": true,
+      "stars": 4090,
+      "forks": 1072,
+      "openIssues": 356,
+      "pushedAt": "2026-11-27T01:13:54Z",
+      "updatedAt": "2026-11-27T02:33:41Z",
+      "readmeSha": "ec135323f87bfbb6b7be8754b3a31968f25bc9ae",
+      "licenseSha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "activity": "recent_commit"
+    },
+    {
+      "name": "Lasm",
+      "repo": "Millillion/lasm",
+      "archived": false,
+      "license": "MIT",
+      "licenseVerified": true,
+      "stars": 109,
+      "forks": 6,
+      "openIssues": 13,
+      "pushedAt": "2026-11-26T19:53:41Z",
+      "updatedAt": "2026-11-22T21:38:18Z",
+      "readmeSha": "d437b8cf0b36f43b05182bd1d3a9c720445d9b03",
+      "licenseSha": "46b25ff7d8953b8fc88d7ed6d37c6f1550a39193",
+      "activity": "recent_commit"
+    },
+    {
+      "name": "MarkItDown",
+      "repo": "microsoft/markitdown",
+      "archived": false,
+      "license": "MIT",
+      "licenseVerified": true,
+      "stars": 198716,
+      "forks": 15095,
+      "openIssues": 832,
+      "pushedAt": "2026-11-07T00:14:01Z",
+      "updatedAt": "2026-11-27T15:01:54Z",
+      "readmeSha": "af858038fd380b187e2928cfbb8b9802c4912d5b",
+      "licenseSha": "9e841e7a26e4eb057b24511e7b92d42b257a80e5",
+      "activity": "quiet_but_unarchived"
+    },
+    {
+      "name": "Minecraft Agent Harness",
+      "repo": "yc-software/minecraft-agent-harness",
+      "archived": false,
+      "license": "MIT",
+      "licenseVerified": true,
+      "stars": 238,
+      "forks": 29,
+      "openIssues": 1,
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "updatedAt": "2026-11-26T11:15:16Z",
+      "readmeSha": "50b5a20eeb3a6f8268d06d244d858c4464c81eba",
+      "licenseSha": "5efc79a61c6ce9c8b89f423f7b0d883ca9af43a9",
+      "activity": "quiet_but_unarchived"
+    },
+    {
+      "name": "OpenShell",
+      "repo": "ai-openshell/openshell",
+      "archived": false,
+      "license": "Apache-2.0",
+      "licenseVerified": true,
+      "stars": 21985,
+      "forks": 2159,
+      "openIssues": 799,
+      "pushedAt": "2026-11-27T14:59:18Z",
+      "updatedAt": "2026-11-27T14:39:48Z",
+      "readmeSha": "0752ddaf1385b78f39a08f8718268762d15db2d1",
+      "licenseSha": "f13d24c3fa482d61605d600e5ac1248799bd4107",
+      "activity": "recent_commit"
+    },
+    {
+      "name": "Pydantic AI",
+      "repo": "pydantic/pydantic-ai",
+      "archived": false,
+      "license": "MIT",
+      "licenseVerified": true,
+      "stars": 21427,
+      "forks": 3294,
+      "openIssues": 2177,
+      "pushedAt": "2026-11-27T15:09:13Z",
+      "updatedAt": "2026-11-27T13:39:46Z",
+      "readmeSha": "5e41c7b1bfa03fb4631a3274eb945cd8a28b6d99",
+      "licenseSha": "1bf1f55e6d1736b499ded961ec6b94bfebb17aec",
+      "activity": "recent_commit"
+    },
+    {
+      "name": "uv",
+      "repo": "astral-sh/uv",
+      "archived": false,
+      "license": "Apache-2.0 OR MIT",
+      "licenseVerified": true,
+      "stars": 92755,
+      "forks": 3956,
+      "openIssues": 3103,
+      "pushedAt": "2026-11-26T09:13:33Z",
+      "updatedAt": "2026-11-27T15:08:41Z",
+      "readmeSha": "66caaf9ccc62add8c63de8e71184c9b7677377ad",
+      "licenseFiles": {
+        "LICENSE-APACHE": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+        "LICENSE-MIT": "014835144877ea9c926d027ece3e1a26290cf481"
+      },
+      "activity": "recent_commit"
+    }
+  ],
+  "limitations": [
+    "ثلاثة مستودعات هادئة من حيث pushedAt رغم عدم أرشفتها.",
+    "الأرقام تراكمية ولا تمثل معدل نمو.",
+    "لم تُشغّل المشاريع أو تختبر المقترحات."
+  ]
+}
