@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-27T18:12:27+03:00",
+  "records": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "feedUrl": null,
+      "editorialUrl": null,
+      "seen": true,
+      "status": "seen_only_not_importable",
+      "canonicalRepository": "https://github.com/ai-openshell/openshell",
+      "note": "انتقل التطوير إلى المستودع الحالي؛ لم يُنشأ ID بديل."
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "feedUrl": null,
+      "editorialUrl": null,
+      "seen": true,
+      "status": "seen_only_not_importable",
+      "source": "https://www.canva.com/newsroom/news/canva-mcp-update/",
+      "note": "الإعلان الرسمي يؤكد إتاحة Canva MCP وCraft عبر MCP/API؛ لم يُنشأ ID بديل."
+    },
+    {
+      "name": "1Password for Agents / agent sign-in",
+      "id": "662e68277c6361dd4b",
+      "feedUrl": null,
+      "editorialUrl": null,
+      "seen": true,
+      "status": "seen_only_not_importable",
+      "sources": [
+        "https://support.1password.com/1password-for-agents/",
+        "https://support.1password.com/1password-for-agents-security/"
+      ],
+      "note": "الميزة اختيارية وتتطلب موافقة المستخدم؛ لم يُنشأ ID بديل."
+    }
+  ],
+  "distinction": "خبر اختراق 1Password الجديد cde11f207edff7e8df مختلف عن سجل agent sign-in."
+}
