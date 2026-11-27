@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "research-only-not-published",
+  "reviewedAt": "2026-11-27T00:12:23+03:00",
+  "mainCommit": "53ad38356aa1e95c904938ee130e67881c554ffe",
+  "summary": {
+    "checked": 3,
+    "exactIdsInFeed": 0,
+    "exactIdsInEditorial": 0,
+    "alternateIdsCreated": 0
+  },
+  "records": [
+    {
+      "id": "940ec4695c1e241c2f",
+      "name": "NVIDIA OpenShell",
+      "feedMatch": false,
+      "editorialMatch": false,
+      "status": "upstream-moved",
+      "canonicalRepository": "https://github.com/ai-openshell/openshell",
+      "license": "Apache-2.0",
+      "archived": false,
+      "lastPushedAt": "2026-11-26T19:27:45Z",
+      "readmeSha": "0752ddaf1385b78f39a08f8718268762d15db2d1",
+      "note": "المستودع القديم NVIDIA/OpenShell يعلن انتقال التطوير إلى ai-openshell/openshell ضمن CNCF؛ لا يُنشأ ID بديل ولا يُستورد دون زوج Feed مطابق.",
+      "sources": [
+        {
+          "title": "NVIDIA/OpenShell migration notice",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        },
+        {
+          "title": "Canonical OpenShell repository",
+          "url": "https://github.com/ai-openshell/openshell"
+        }
+      ]
+    },
+    {
+      "id": "317abcdd1b20728a7e",
+      "name": "Canva Craft",
+      "feedMatch": false,
+      "editorialMatch": false,
+      "status": "official-availability-verified",
+      "note": "أكدت Canva رسميًا أن MCP أصبح متاحًا عمومًا دون قائمة انتظار، وأن Canva Craft متاح عبر MCP وREST API. أرقام التسجيل والاستخدام الواردة في البيان أرقام Canva الذاتية وليست قياسًا مستقلًا. لا يُستورد السجل ما لم يظهر زوج ID/URL مطابق في Feed.",
+      "sources": [
+        {
+          "title": "Canva newsroom — MCP generally available and Craft via API/MCP",
+          "url": "https://www.canva.com/newsroom/news/canva-mcp-update/"
+        },
+        {
+          "title": "Canva AI Research — Craft API",
+          "url": "https://www.canva.com/ai-research/craft-api/"
+        }
+      ]
+    },
+    {
+      "id": "662e68277c6361dd4b",
+      "name": "1Password for Agents sign-in",
+      "feedMatch": false,
+      "editorialMatch": false,
+      "status": "official-support-documentation-verified",
+      "note": "الميزة opt-in؛ تتطلب حسابًا فرديًا أو عائليًا، تطبيق 1Password 8.12.42+، وLogin items في Personal أو Private vault، ولا تدعم Passkeys أو shared vaults أو عناصر تعتمد على مزود تسجيل خارجي. يوافق المستخدم على كل طلب جديد؛ لا يستطيع الوكيل الموافقة لنفسه، ويمكن إلغاء الربط. تعبئة البيانات تتم خارج رؤية الوكيل، لكن بعد تسجيل الدخول يصبح سلوك الوكيل داخل الموقع وحدود حماية الموقع مسؤولية منفصلة؛ ضمانات 1Password تغطي التخزين والموافقة والتسليم والتعبئة لا تصرف الوكيل أثناء الجلسة.",
+      "sources": [
+        {
+          "title": "1Password for Agents — official support",
+          "url": "https://support.1password.com/1password-for-agents/"
+        },
+        {
+          "title": "1Password for Agents security model",
+          "url": "https://support.1password.com/1password-for-agents-security/"
+        }
+      ],
+      "securityModel": "لا يحصل الوكيل أو مطوّر الوكيل على كلمة مرور حساب 1Password أو Secret Key؛ تُستخدم مفاتيح تكامل ومفتاح عميل مشفر، وتُفك العناصر الموافق عليها داخل confidential computing enclave ثم تُرسل إلى امتداد المتصفح بقناة مشفرة."
+    }
+  ]
+}

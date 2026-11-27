@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "research-only-not-published-as-project-cards",
+  "reviewedAt": "2026-11-26T12:14:38+03:00",
+  "metricsMeasuredAt": "2026-11-26T09:14:38Z",
+  "summary": {
+    "previousProjectsReviewed": 8,
+    "active": 8,
+    "archived": 0,
+    "licensesVerified": 8,
+    "recentPushSincePreviousReview": 5,
+    "quietButUnarchived": 3,
+    "newProjectCards": 0,
+    "currentFeedProjects": 100,
+    "alreadyEnrichedOnMain": 98,
+    "pendingProjectEnrichments": 2,
+    "libraryCuratedProjects": 31,
+    "libraryHistoricalProjects": 73,
+    "libraryCountsLastFullyReviewedAt": "2026-11-25T23:42:08+03:00",
+    "testStatus": "not_run"
+  },
+  "projects": [
+    {
+      "repo": "patchy631/ai-engineering-hub",
+      "name": "AI Engineering Hub",
+      "license": "MIT",
+      "archived": false,
+      "stars": 42144,
+      "forks": 6734,
+      "openIssues": 142,
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "readmeSha": "6c65ab12125814c5233f873c4c1af2765ff87d51",
+      "licenseSha": "84ee68d33c9b68bae6c139f591996f021a02b23a",
+      "activity": "quiet_but_unarchived",
+      "note": "README يصف مستودعًا تعليميًا يضم 93+ مشروعًا ومواد LLM/RAG/Agents؛ لا تشغيل للمشاريع.",
+      "testStatus": "not_run",
+      "sources": [
+        "https://github.com/patchy631/ai-engineering-hub",
+        "https://github.com/patchy631/ai-engineering-hub/blob/main/LICENSE"
+      ]
+    },
+    {
+      "repo": "googleapis/python-genai",
+      "name": "Google Gen AI SDK",
+      "license": "Apache-2.0",
+      "archived": false,
+      "stars": 4090,
+      "forks": 1070,
+      "openIssues": 346,
+      "pushedAt": "2026-11-25T00:24:36Z",
+      "version": "3.6.1",
+      "pythonRequirement": ">=3.11",
+      "readmeSha": "ec135323f87bfbb6b7be8754b3a31968f25bc9ae",
+      "licenseSha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "pyprojectSha": "69de91f34f6767ac6605e9a338a2de51eaed0ff0",
+      "activity": "recent_push",
+      "note": "README يحذر من تغييرات v3: Gemini Developer API الافتراضي v1 بدل v1beta، وhttpx2 عميل HTTP افتراضي؛ تثبيت النسخة أو ضبط الإصدار مهم لتجنب مفاجآت الترقية. التثبيت pip install google-genai؛ الاستخدام الفعلي يحتاج اعتمادًا لخدمة Gemini أو Google Cloud، وتكلفة الاستدلال من المزود.",
+      "testStatus": "not_run",
+      "sources": [
+        "https://github.com/googleapis/python-genai",
+        "https://github.com/googleapis/python-genai/blob/main/LICENSE",
+        "https://github.com/googleapis/python-genai/blob/main/pyproject.toml",
+        "https://googleapis.github.io/python-genai/"
+      ]
+    },
+    {
+      "repo": "Millillion/lasm",
+      "name": "Lasm",
+      "license": "MIT",
+      "archived": false,
+      "stars": 109,
+      "forks": 6,
+      "openIssues": 13,
+      "pushedAt": "2026-11-25T20:14:51Z",
+      "version": "0.11.0",
+      "nodeRequirement": ">=24",
+      "leanVersion": "4.35.0",
+      "readmeSha": "d437b8cf0b36f43b05182bd1d3a9c720445d9b03",
+      "licenseSha": "46b25ff7d8953b8fc88d7ed6d37c6f1550a39193",
+      "packageSha": "cd4513df9988a3492bc9b22bd5fe740b538803f9",
+      "activity": "recent_push",
+      "note": "يحوّل Lean 4 إلى WebAssembly؛ البدء الموثق npm create @lasm@latest my-app -- --template hono. تشغيل Node/Bun/Deno محليًا؛ أهداف edge/cloud اختيارية وتكلفتها من مزود الاستضافة. جدول README يصف مستويات CI متعددة، لكنها ليست اختبارات أجريناها نحن.",
+      "testStatus": "not_run",
+      "sources": [
+        "https://github.com/Millillion/lasm",
+        "https://github.com/Millillion/lasm/blob/main/LICENSE",
+        "https://github.com/Millillion/lasm/blob/main/package.json",
+        "https://github.com/Millillion/lasm/blob/main/docs/TESTING.md"
+      ]
+    },
+    {
+      "repo": "microsoft/markitdown",
+      "name": "MarkItDown",
+      "license": "MIT",
+      "archived": false,
+      "stars": 198532,
+      "forks": 15071,
+      "openIssues": 825,
+      "pushedAt": "2026-11-07T00:14:01Z",
+      "readmeSha": "af858038fd380b187e2928cfbb8b9802c4912d5b",
+      "licenseSha": "9e841e7a26e4eb057b24511e7b92d42b257a80e5",
+      "activity": "quiet_but_unarchived",
+      "note": "README يصف أداة Python لتحويل أنواع ملفات متعددة إلى Markdown؛ يحذر من أن التحويل يعمل بصلاحيات العملية الحالية، لذا يجب تضييق المدخلات غير الموثوقة. لم يُشغّل.",
+      "testStatus": "not_run",
+      "sources": [
+        "https://github.com/microsoft/markitdown",
+        "https://github.com/microsoft/markitdown/blob/main/LICENSE"
+      ]
+    },
+    {
+      "repo": "yc-software/minecraft-agent-harness",
+      "name": "Minecraft Agent Harness",
+      "license": "MIT",
+      "archived": false,
+      "stars": 237,
+      "forks": 29,
+      "openIssues": 1,
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "readmeSha": "50b5a20eeb3a6f8268d06d244d858c4464c81eba",
+      "licenseSha": "5efc79a61c6ce9c8b89f423f7b0d883ca9af43a9",
+      "activity": "quiet_but_unarchived",
+      "note": "README يحدد Node.js 22.19+ وMinecraft Java 1.21.6؛ لم يُشغّل ولم تُضف بطاقة جديدة.",
+      "testStatus": "not_run",
+      "sources": [
+        "https://github.com/yc-software/minecraft-agent-harness",
+        "https://github.com/yc-software/minecraft-agent-harness/blob/main/LICENSE"
+      ]
+    },
+    {
+      "repo": "ai-openshell/openshell",
+      "originalRepo": "NVIDIA/OpenShell",
+      "name": "NVIDIA OpenShell",
+      "preservedEditorialId": "940ec4695c1e241c2f",
+      "license": "Apache-2.0",
+      "archived": false,
+      "stars": 21952,
+      "forks": 2156,
+      "openIssues": 799,
+      "pushedAt": "2026-11-26T07:00:21Z",
+      "readmeSha": "0752ddaf1385b78f39a08f8718268762d15db2d1",
+      "licenseSha": "f13d24c3fa482d61605d600e5ac1248799bd4107",
+      "activity": "recent_push",
+      "note": "README الرسمي يصرح بانتقال التطوير إلى ai-openshell/openshell؛ متطلبات التشغيل Linux أو macOS Apple Silicon أو Windows عبر WSL2 التجريبي، مع Docker/Podman أو host virtualization. احتفظنا بمعرف السجل الأصلي ولم ننشئ alias.",
+      "testStatus": "not_run",
+      "sources": [
+        "https://github.com/ai-openshell/openshell",
+        "https://github.com/ai-openshell/openshell/blob/main/LICENSE",
+        "https://docs.nvidia.com/openshell/latest/about/installation",
+        "https://docs.nvidia.com/openshell/latest/about/support-matrix"
+      ]
+    },
+    {
+      "repo": "pydantic/pydantic-ai",
+      "name": "Pydantic AI",
+      "license": "MIT",
+      "archived": false,
+      "stars": 21400,
+      "forks": 3273,
+      "openIssues": 2030,
+      "pushedAt": "2026-11-26T09:04:14Z",
+      "pythonRequirement": ">=3.11",
+      "readmeSha": "5e41c7b1bfa03fb4631a3274eb945cd8a28b6d99",
+      "licenseSha": "1bf1f55e6d1736b499ded961ec6b94bfebb17aec",
+      "pyprojectSha": "98c87da4ceffd521af1b6aeb604aa89db19793a8",
+      "activity": "recent_push",
+      "note": "README الحالي يوسع النطاق إلى typed agents وvoice/image وdurable queues وmemory/guardrails/subagents وEvals/Graph؛ يتطلب اختيار مزود ونموذج، والتكلفة تتبع المزود. Python >=3.11؛ لم يُشغّل.",
+      "testStatus": "not_run",
+      "sources": [
+        "https://github.com/pydantic/pydantic-ai",
+        "https://github.com/pydantic/pydantic-ai/blob/main/LICENSE",
+        "https://github.com/pydantic/pydantic-ai/blob/main/pyproject.toml",
+        "https://pydantic.dev/docs/ai/"
+      ]
+    },
+    {
+      "repo": "astral-sh/uv",
+      "name": "uv",
+      "license": "MIT OR Apache-2.0",
+      "archived": false,
+      "stars": 92688,
+      "forks": 3938,
+      "openIssues": 3102,
+      "pushedAt": "2026-11-26T09:13:33Z",
+      "pythonRequirement": ">=3.8",
+      "readmeSha": "66caaf9ccc62add8c63de8e71184c9b7677377ad",
+      "licenseMitSha": "014835144877ea9c926d027ece3e1a26290cf481",
+      "licenseApacheSha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "pyprojectSha": "3ace23d4a6c4e4d920f0149c7226ac1a4d694f15",
+      "activity": "recent_push",
+      "note": "pyproject.toml يؤكد الترخيص المزدوج MIT OR Apache-2.0 وPython >=3.8؛ README يشرح إدارة المشاريع والبيئات والـ lockfile والـ scripts. CLI محلي بلا خدمة سحابية لازمة؛ التثبيت عبر installer أو pip/pipx.",
+      "testStatus": "not_run",
+      "sources": [
+        "https://github.com/astral-sh/uv",
+        "https://github.com/astral-sh/uv/blob/main/pyproject.toml",
+        "https://github.com/astral-sh/uv/blob/main/LICENSE-MIT",
+        "https://github.com/astral-sh/uv/blob/main/LICENSE-APACHE",
+        "https://docs.astral.sh/uv/"
+      ]
+    }
+  ],
+  "decision": "All eight projects remain unarchived and their licenses were checked in the current repository snapshots. Five have recent pushes since the 2026-11-19 review; three are quiet but unarchived. NVIDIA/OpenShell now points to ai-openshell/openshell while preserving the original Nabdh editorial ID. No new project card is recommended in this run: the current feed already contains 100 projects and two project enrichments are pending in the 24-entry candidate. This file is a research-only metrics and README/license review, not published content.",
+  "limitations": "GitHub stars/forks/open issues are cumulative snapshots, not quality measures. No project was installed or executed; all testStatus values are not_run. Library totals 31 curated and 73 historical are carried from the last complete audit, not recounted in this snapshot."
+}

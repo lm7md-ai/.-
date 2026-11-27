@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "quarantine-not-importable",
+  "reviewedAt": "2026-11-27T00:12:23+03:00",
+  "mainCommit": "53ad38356aa1e95c904938ee130e67881c554ffe",
+  "sourceFile": "editorial/incoming/nabdh-news-2026-11-20-1813.json",
+  "sourceEnvelope": {
+    "found": "schemaVersion",
+    "required": "version"
+  },
+  "summary": {
+    "sourceRecords": 7,
+    "feedExactMatches": 1,
+    "quarantined": 6,
+    "confirmedExpired": 0
+  },
+  "feedExactMatches": [
+    {
+      "id": "7bdcb7fa3841c84cc9",
+      "url": "https://www.engadget.com/2322656/openai-is-testing-dots-personal-agents-on-its-20-per-month-plus-tier/",
+      "titleAr": "OpenAI تختبر Dots مع عدد محدود من مشتركي Plus وتوسع Business Standard"
+    }
+  ],
+  "records": [
+    {
+      "id": "97dffa3b72860b1f67",
+      "url": "https://github.com/openssl/openssl/pull/33652",
+      "titleAr": "CVE-2026-121481: طلب إصلاح مفتوح لمشكلة في EVP_EncodeBlock",
+      "basis": "metadata",
+      "reviewedAt": "2026-11-20T18:13:13+03:00",
+      "seen": true,
+      "sources": [
+        {
+          "title": "OpenSSL pull request #33652",
+          "url": "https://github.com/openssl/openssl/pull/33652"
+        },
+        {
+          "title": "NVD — CVE-2026-121481",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121481"
+        },
+        {
+          "title": "CVE record",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-121481"
+        }
+      ],
+      "classification": "schema_and_feed_mismatch",
+      "reason": "غلاف الملف يستخدم schemaVersion بدل version، ولا يوجد زوج ID/URL مطابق في Feed الحالي أو Editorial."
+    },
+    {
+      "id": "bda522de56a34a98c0",
+      "url": "https://git-aarvin.github.io/mei/",
+      "titleAr": "مؤشر مستقل يضع Gemini 4 Neon في صدارة اختبارات هندسة البرمجيات",
+      "basis": "article",
+      "reviewedAt": "2026-11-20T18:13:13+03:00",
+      "seen": true,
+      "sources": [
+        {
+          "title": "Models Engineering Index — methodology and rankings",
+          "url": "https://git-aarvin.github.io/mei/"
+        }
+      ],
+      "classification": "schema_and_feed_mismatch",
+      "reason": "غلاف الملف يستخدم schemaVersion بدل version، ولا يوجد زوج ID/URL مطابق في Feed الحالي أو Editorial."
+    },
+    {
+      "id": "b1430f615687828286",
+      "url": "https://www.engadget.com/2322705/the-trump-administration-has-replaced-its-cybersecurity-chief/",
+      "titleAr": "تعيين مؤقت لقيادة الأمن السيبراني الأميركي بعد موجة انقطاعات تقنية",
+      "basis": "metadata",
+      "reviewedAt": "2026-11-20T18:13:13+03:00",
+      "seen": true,
+      "sources": [
+        {
+          "title": "Engadget — White House cybersecurity leadership change",
+          "url": "https://www.engadget.com/2322705/the-trump-administration-has-replaced-its-cybersecurity-chief/"
+        },
+        {
+          "title": "Reuters — White House national cyber director change",
+          "url": "https://www.reuters.com/world/us/white-house-national-cyber-director-cairncross-leaving-his-post-axios-reports-2026-11-19/"
+        },
+        {
+          "title": "AP — White House names Kirsten Davies",
+          "url": "https://apnews.com/article/2f1f84f3ca5429d01ace67929c72128d"
+        }
+      ],
+      "classification": "schema_and_feed_mismatch",
+      "reason": "غلاف الملف يستخدم schemaVersion بدل version، ولا يوجد زوج ID/URL مطابق في Feed الحالي أو Editorial."
+    },
+    {
+      "id": "b6973fc351e5f01d48",
+      "url": "https://www.bbc.co.uk/news/articles/c6d94pzk9vleo?at_medium=RSS&at_campaign=rss",
+      "titleAr": "BBC تطرح سؤال استخدام الذكاء الاصطناعي في تقييم الجدارة الائتمانية",
+      "basis": "metadata",
+      "reviewedAt": "2026-11-20T18:13:13+03:00",
+      "seen": true,
+      "sources": [
+        {
+          "title": "BBC — Should AI be judging our credit worthiness?",
+          "url": "https://www.bbc.co.uk/news/articles/c6d94pzk9vleo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "classification": "schema_and_feed_mismatch",
+      "reason": "غلاف الملف يستخدم schemaVersion بدل version، ولا يوجد زوج ID/URL مطابق في Feed الحالي أو Editorial."
+    },
+    {
+      "id": "c50a064b65c55ff5ed",
+      "url": "https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine",
+      "titleAr": "مقال رأي ينتقد اعتماد الشركات الصغيرة على مزادات الإعلانات الرقمية",
+      "basis": "article",
+      "reviewedAt": "2026-11-20T18:13:13+03:00",
+      "seen": true,
+      "sources": [
+        {
+          "title": "Global Commerce Graph — The 98% Slot Machine",
+          "url": "https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine"
+        }
+      ],
+      "classification": "schema_and_feed_mismatch",
+      "reason": "غلاف الملف يستخدم schemaVersion بدل version، ولا يوجد زوج ID/URL مطابق في Feed الحالي أو Editorial."
+    },
+    {
+      "id": "f78d1ebaf9c5d49889",
+      "url": "https://aitnews.com/2026/11/20/asian-chip-stocks-ai-investment-selloff-november-2026/",
+      "titleAr": "أسهم شركات الرقائق الآسيوية تتراجع وسط إعادة تقييم رهانات الذكاء الاصطناعي",
+      "basis": "metadata",
+      "reviewedAt": "2026-11-20T18:13:13+03:00",
+      "seen": true,
+      "sources": [
+        {
+          "title": "البوابة العربية للأخبار التقنية — تراجع أسهم الرقائق الآسيوية",
+          "url": "https://aitnews.com/2026/11/20/asian-chip-stocks-ai-investment-selloff-november-2026/"
+        },
+        {
+          "title": "Investing.com — Asian markets sell off amid AI valuation reset (Reuters)",
+          "url": "https://sa.investing.com/news/stock-market-news/article-3448836"
+        }
+      ],
+      "classification": "schema_and_feed_mismatch",
+      "reason": "غلاف الملف يستخدم schemaVersion بدل version، ولا يوجد زوج ID/URL مطابق في Feed الحالي أو Editorial."
+    }
+  ]
+}

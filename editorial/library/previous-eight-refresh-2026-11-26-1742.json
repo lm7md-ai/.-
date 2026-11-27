@@ -1,0 +1,193 @@
+{
+  "version": 1,
+  "kind": "previous-eight-projects-refresh",
+  "publicationStatus": "research-only-not-published",
+  "reviewedAt": "2026-11-26T14:42:32Z",
+  "sourceMainSha": "d7e86d183e92f10e5271be504351f277afc56090",
+  "summary": {
+    "previousProjectsReviewed": 8,
+    "active": 8,
+    "archived": 0,
+    "readmesVerified": 8,
+    "licensesVerified": 8,
+    "latestCommitReferencesCaptured": 8,
+    "newProjectCards": 0,
+    "metricsRefreshed": false,
+    "priorMetricsSnapshotAt": "2026-11-26T09:14:38Z",
+    "testStatus": "not_run",
+    "note": "README and license blob SHAs and latest commit references were refreshed; stars/forks and exact pushedAt timestamps were not remeasured in this run."
+  },
+  "projects": [
+    {
+      "repo": "patchy631/ai-engineering-hub",
+      "name": "AI Engineering Hub",
+      "archived": false,
+      "license": "MIT",
+      "readmeBlobSha": "6c65ab12125814c5233f873c4c1af2765ff87d51",
+      "licenseEvidence": [
+        {
+          "path": "LICENSE",
+          "blobSha": "84ee68d33c9b68bae6c139f591996f021a02b23a"
+        }
+      ],
+      "latestCommitSha": "042aeb5067384981eeba6a07fa882f436bb1660d",
+      "latestCommitMessage": "Add multi-agent omnigraph demo",
+      "repoUrl": "https://github.com/patchy631/ai-engineering-hub",
+      "readmeUrl": "https://github.com/patchy631/ai-engineering-hub/blob/main/README.md",
+      "licenseUrl": "https://github.com/patchy631/ai-engineering-hub/blob/main/LICENSE",
+      "commitUrl": "https://github.com/patchy631/ai-engineering-hub/commit/042aeb5067384981eeba6a07fa882f436bb1660d",
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "googleapis/python-genai",
+      "name": "Google Gen AI SDK",
+      "archived": false,
+      "license": "Apache-2.0",
+      "readmeBlobSha": "ec135323f87bfbb6b7be8754b3a31968f25bc9ae",
+      "licenseEvidence": [
+        {
+          "path": "LICENSE",
+          "blobSha": "d645695673349e3947e8e5ae42332d0ac3164cd7"
+        }
+      ],
+      "latestCommitSha": "36e297073202d937da00829aadbd85e42c32a571",
+      "latestCommitMessage": "chore: update Speakeasy OpenAPI generator to v2.965.1",
+      "repoUrl": "https://github.com/googleapis/python-genai",
+      "readmeUrl": "https://github.com/googleapis/python-genai/blob/main/README.md",
+      "licenseUrl": "https://github.com/googleapis/python-genai/blob/main/LICENSE",
+      "commitUrl": "https://github.com/googleapis/python-genai/commit/36e297073202d937da00829aadbd85e42c32a571",
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "Millillion/lasm",
+      "name": "Lasm",
+      "archived": false,
+      "license": "MIT",
+      "readmeBlobSha": "d437b8cf0b36f43b05182bd1d3a9c720445d9b03",
+      "licenseEvidence": [
+        {
+          "path": "LICENSE",
+          "blobSha": "46b25ff7d8953b8fc88d7ed6d37c6f1550a39193"
+        }
+      ],
+      "latestCommitSha": "22cfc10c203e3af29f885d00aaa408ff764cb9c7",
+      "latestCommitMessage": "Evidence page from CI (2026-11-25)",
+      "repoUrl": "https://github.com/Millillion/lasm",
+      "readmeUrl": "https://github.com/Millillion/lasm/blob/main/README.md",
+      "licenseUrl": "https://github.com/Millillion/lasm/blob/main/LICENSE",
+      "commitUrl": "https://github.com/Millillion/lasm/commit/22cfc10c203e3af29f885d00aaa408ff764cb9c7",
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "microsoft/markitdown",
+      "name": "MarkItDown",
+      "archived": false,
+      "license": "MIT",
+      "readmeBlobSha": "af858038fd380b187e2928cfbb8b9802c4912d5b",
+      "licenseEvidence": [
+        {
+          "path": "LICENSE",
+          "blobSha": "9e841e7a26e4eb057b24511e7b92d42b257a80e5"
+        }
+      ],
+      "latestCommitSha": "ed178952a6672abdfd35b5f9e76a80b6cefc086e",
+      "latestCommitMessage": "fix: match ExifTool directories case-insensitively on Windows (#2837)",
+      "repoUrl": "https://github.com/microsoft/markitdown",
+      "readmeUrl": "https://github.com/microsoft/markitdown/blob/main/README.md",
+      "licenseUrl": "https://github.com/microsoft/markitdown/blob/main/LICENSE",
+      "commitUrl": "https://github.com/microsoft/markitdown/commit/ed178952a6672abdfd35b5f9e76a80b6cefc086e",
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "yc-software/minecraft-agent-harness",
+      "name": "Minecraft Agent Harness",
+      "archived": false,
+      "license": "MIT",
+      "readmeBlobSha": "50b5a20eeb3a6f8268d06d244d858c4464c81eba",
+      "licenseEvidence": [
+        {
+          "path": "LICENSE",
+          "blobSha": "5efc79a61c6ce9c8b89f423f7b0d883ca9af43a9"
+        }
+      ],
+      "latestCommitSha": "775d558689f5e4eaa0f1d0d7a320035190b1fce6",
+      "latestCommitMessage": "Initial public release",
+      "repoUrl": "https://github.com/yc-software/minecraft-agent-harness",
+      "readmeUrl": "https://github.com/yc-software/minecraft-agent-harness/blob/main/README.md",
+      "licenseUrl": "https://github.com/yc-software/minecraft-agent-harness/blob/main/LICENSE",
+      "commitUrl": "https://github.com/yc-software/minecraft-agent-harness/commit/775d558689f5e4eaa0f1d0d7a320035190b1fce6",
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "ai-openshell/openshell",
+      "name": "NVIDIA OpenShell",
+      "archived": false,
+      "license": "Apache-2.0",
+      "readmeBlobSha": "0752ddaf1385b78f39a08f8718268762d15db2d1",
+      "licenseEvidence": [
+        {
+          "path": "LICENSE",
+          "blobSha": "f13d24c3fa482d61605d600e5ac1248799bd4107"
+        }
+      ],
+      "latestCommitSha": "daf45a5b6d9b62df739877e092a6a21fa178df40",
+      "latestCommitMessage": "ci(trivy): report dev image scans and stop prerelease uploads",
+      "repoUrl": "https://github.com/ai-openshell/openshell",
+      "readmeUrl": "https://github.com/ai-openshell/openshell/blob/main/README.md",
+      "licenseUrl": "https://github.com/ai-openshell/openshell/blob/main/LICENSE",
+      "commitUrl": "https://github.com/ai-openshell/openshell/commit/daf45a5b6d9b62df739877e092a6a21fa178df40",
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "pydantic/pydantic-ai",
+      "name": "Pydantic AI",
+      "archived": false,
+      "license": "MIT",
+      "readmeBlobSha": "5e41c7b1bfa03fb4631a3274eb945cd8a28b6d99",
+      "licenseEvidence": [
+        {
+          "path": "LICENSE",
+          "blobSha": "1bf1f55e6d1736b499ded961ec6b94bfebb17aec"
+        }
+      ],
+      "latestCommitSha": "e9b8a2f06fbefabcea4bb807257558cae8118246",
+      "latestCommitMessage": "Document branching AsyncHTTPX2TenacityTransport retries on error response bodies (#14661)",
+      "repoUrl": "https://github.com/pydantic/pydantic-ai",
+      "readmeUrl": "https://github.com/pydantic/pydantic-ai/blob/main/README.md",
+      "licenseUrl": "https://github.com/pydantic/pydantic-ai/blob/main/LICENSE",
+      "commitUrl": "https://github.com/pydantic/pydantic-ai/commit/e9b8a2f06fbefabcea4bb807257558cae8118246",
+      "testStatus": "not_run"
+    },
+    {
+      "repo": "astral-sh/uv",
+      "name": "uv",
+      "archived": false,
+      "license": "MIT OR Apache-2.0",
+      "readmeBlobSha": "66caaf9ccc62add8c63de8e71184c9b7677377ad",
+      "licenseEvidence": [
+        {
+          "path": "LICENSE-APACHE",
+          "blobSha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+        },
+        {
+          "path": "LICENSE-MIT",
+          "blobSha": "014835144877ea9c926d027ece3e1a26290cf481"
+        }
+      ],
+      "latestCommitSha": "9bf01bef71c76643290ca17635970076fab1bd0d",
+      "latestCommitMessage": "Add the Python 3.15 hardened Docker image (#23407)",
+      "repoUrl": "https://github.com/astral-sh/uv",
+      "readmeUrl": "https://github.com/astral-sh/uv/blob/main/README.md",
+      "licenseUrl": "https://github.com/astral-sh/uv/blob/main/LICENSE-APACHE",
+      "commitUrl": "https://github.com/astral-sh/uv/commit/9bf01bef71c76643290ca17635970076fab1bd0d",
+      "testStatus": "not_run"
+    }
+  ],
+  "notes": [
+    "All eight repositories were found in GitHub search as non-archived at review time.",
+    "README and license files were fetched from the repositories; blob SHAs are recorded above.",
+    "Latest commit references were captured, but the connector did not expose exact commit timestamps in this pass.",
+    "No project was executed; testStatus remains not_run.",
+    "Stars and forks were not remeasured; retain the prior metrics snapshot timestamp rather than implying current counts."
+  ]
+}
