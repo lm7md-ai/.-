@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-27T21:45:11+03:00",
+  "mainSha": "e6d031e01b12a083eb54dc5769b1c40bed2d175d",
+  "incomingTreeUnchangedSince": "176e7c9eb8da49232df93c64ef7289f2fc1a4888",
+  "files": 155,
+  "validEnvelopeFiles": 154,
+  "invalidEnvelopeFiles": [
+    "editorial/incoming/nabdh-news-2026-11-20-1813.json"
+  ],
+  "recordAppearances": 1630,
+  "importedExactIdUrlAppearances": 1403,
+  "seenOnlyOutsideFeedAndEditorial": 227,
+  "exactFeedMatchesNotImported": 0,
+  "idUrlMismatches": 0,
+  "missingUrls": 0,
+  "confirmedExpired": 0,
+  "recordsNeedingDataCorrection": 0,
+  "currentFeedDeltaSinceAudit": {
+    "added": 34,
+    "removed": 34,
+    "addedIdsFoundInIncoming": 0
+  },
+  "malformedFileDisposition": {
+    "path": "editorial/incoming/nabdh-news-2026-11-20-1813.json",
+    "problem": "يستخدم schemaVersion بدل version",
+    "recordCount": 7,
+    "alreadyImported": 1,
+    "quarantinedSeenOnly": 6
+  },
+  "pendingFiles": {
+    "waiting": "editorial/pending/waiting-2026-11-27-1812.json",
+    "waitingItems": 2,
+    "reason": "عنصر URL غير مطابق حرفيًا وعنصر غائب عن Feed؛ لم يُستورد أي منهما."
+  },
+  "priorQuarantine": {
+    "staleRecords": 5,
+    "quarantinedRecords": 6
+  },
+  "note": "الأعداد ظهورات عبر الملفات وليست معرفات فريدة. لم يُستنتج الانقضاء من الغياب؛ الحالات المؤكدة صفر."
+}
