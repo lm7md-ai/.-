@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "research-only-no-feed-or-editorial-import",
+  "checkedAt": "2026-11-27T06:20:59+03:00",
+  "records": [
+    {
+      "name": "NVIDIA OpenShell",
+      "id": "940ec4695c1e241c2f",
+      "feed": "absent",
+      "editorial": "absent",
+      "seen": "present",
+      "canonicalRepository": "https://github.com/ai-openshell/openshell",
+      "status": "old repository redirects/migrates to canonical active repository; no identity substitution or import",
+      "license": "Apache-2.0",
+      "sources": [
+        "https://github.com/NVIDIA/OpenShell",
+        "https://github.com/ai-openshell/openshell"
+      ]
+    },
+    {
+      "name": "Canva Craft",
+      "id": "317abcdd1b20728a7e",
+      "feed": "absent",
+      "editorial": "absent",
+      "seen": "present",
+      "status": "seen-only; no import because the exact original id/url is not in current feed",
+      "sources": [
+        "https://www.canva.com/newsroom/news/canva-mcp-update/",
+        "https://www.canva.com/help/canva-api/"
+      ],
+      "notes": "Canva's 2026-11-23 newsroom says Canva MCP is generally available and Canva Craft is available via MCP and API; reported usage figures are company-reported."
+    },
+    {
+      "name": "1Password for Agents",
+      "id": "662e68277c6361dd4b",
+      "feed": "absent",
+      "editorial": "absent",
+      "seen": "present",
+      "status": "seen-only; no import because the exact original id/url is not in current feed",
+      "sources": [
+        "https://support.1password.com/1password-for-agents/"
+      ],
+      "notes": "Opt-in; individual/family 1Password.com accounts; app 8.12.42+; Login items in Personal or Private vaults; passkeys, sign-in-provider Login items and shared vaults unsupported; user approval required and can last up to 30 days."
+    }
+  ]
+}
