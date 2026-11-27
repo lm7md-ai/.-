@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-27T18:12:27+03:00",
+  "mainSha": "176e7c9eb8da49232df93c64ef7289f2fc1a4888",
+  "files": 155,
+  "validEnvelopeFiles": 154,
+  "invalidEnvelopeFiles": [
+    {
+      "path": "editorial/incoming/nabdh-news-2026-11-20-1813.json",
+      "foundKeys": [
+        "schemaVersion",
+        "reviewedAt",
+        "items"
+      ],
+      "expected": "version=1",
+      "records": 7
+    }
+  ],
+  "recordAppearances": 1630,
+  "importedExactIdUrlAppearances": 1403,
+  "seenOnlyOutsideFeedAndEditorial": 227,
+  "exactFeedMatchesNotImported": 0,
+  "idUrlMismatches": 0,
+  "missingUrls": 0,
+  "confirmedExpired": 0,
+  "recordsNeedingDataCorrection": 0,
+  "malformedFileDisposition": {
+    "alreadyImported": 1,
+    "seenOnlyStale": 6
+  },
+  "note": "الأعداد appearances عبر الملفات وليست unique IDs. جميع 227 سجلًا غير مطابق كانت Seen-only؛ لا دليل على انتهاء صلاحيتها. لم تُعدّل ملفات incoming."
+}
