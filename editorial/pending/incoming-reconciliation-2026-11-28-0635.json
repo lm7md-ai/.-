@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-28T06:35:26+03:00",
+  "mainCommit": "50616266c3720d87c45ee69f43987c280284aa9f",
+  "dataSnapshot": {
+    "feed": {
+      "sha": "74f3b3c5d149d462a2004479fa37fb729d0eb28e",
+      "generatedAt": "2026-11-28T03:19:09+00:00",
+      "total": 800,
+      "news": 700,
+      "projects": 100,
+      "newItems": 41
+    },
+    "editorial": {
+      "sha": "3a1020de8d8fc6997f6d0d1029f207bae83dc4d4",
+      "entries": 1173
+    },
+    "seen": {
+      "sha": "23b818c854a7e08afed0a9e458a8fada4aeac3ae",
+      "ids": 7809
+    },
+    "status": {
+      "sha": "8ed4dbf76310a5d7435e9987fe29e68548675fcb",
+      "state": "partial",
+      "lastSuccessfulAt": "2026-11-28T03:19:09+00:00",
+      "collected": 342,
+      "sources": {
+        "ok": 24,
+        "empty": 1,
+        "error": 1
+      }
+    }
+  },
+  "incoming": {
+    "files": 155,
+    "jsonParsed": 155,
+    "validVersionEnvelopeFiles": 154,
+    "invalidEnvelopeFiles": 1,
+    "recordAppearances": 1630,
+    "exactImportedIdUrlAppearances": 1403,
+    "seenOnlyOutsideCurrentFeedAndEditorialAppearances": 227,
+    "exactCurrentFeedButNotImported": 0,
+    "feedIdUrlMismatches": 0,
+    "editorialIdUrlMismatches": 0,
+    "outsideFeedNotInSeen": 0,
+    "confirmedExpired": 0,
+    "baseFieldErrorsInValidEnvelopes": 0,
+    "batchAudit": [
+      {
+        "range": "1-15",
+        "appearances": 125,
+        "imported": 122,
+        "seenOnly": 3
+      },
+      {
+        "range": "16-30",
+        "appearances": 119,
+        "imported": 119,
+        "seenOnly": 0
+      },
+      {
+        "range": "31-45",
+        "appearances": 203,
+        "imported": 203,
+        "seenOnly": 0
+      },
+      {
+        "range": "46-60",
+        "appearances": 129,
+        "imported": 129,
+        "seenOnly": 0
+      },
+      {
+        "range": "61-75",
+        "appearances": 133,
+        "imported": 100,
+        "seenOnly": 33
+      },
+      {
+        "range": "76-90",
+        "appearances": 236,
+        "imported": 229,
+        "seenOnly": 7
+      },
+      {
+        "range": "91-105",
+        "appearances": 132,
+        "imported": 90,
+        "seenOnly": 42
+      },
+      {
+        "range": "106-120",
+        "appearances": 168,
+        "imported": 131,
+        "seenOnly": 37
+      },
+      {
+        "range": "121-135",
+        "appearances": 165,
+        "imported": 134,
+        "seenOnly": 31
+      },
+      {
+        "range": "136-150-valid",
+        "appearances": 191,
+        "imported": 127,
+        "seenOnly": 64
+      },
+      {
+        "range": "136-150-invalid-envelope",
+        "appearances": 7,
+        "imported": 1,
+        "seenOnly": 6
+      },
+      {
+        "range": "151-155",
+        "appearances": 22,
+        "imported": 18,
+        "seenOnly": 4
+      }
+    ],
+    "invalidFile": {
+      "path": "editorial/incoming/nabdh-news-2026-11-20-1813.json",
+      "issue": "The JSON parses, but the wrapper uses schemaVersion instead of the required version field.",
+      "items": 7,
+      "alreadyImportedExact": [
+        {
+          "id": "7bdcb7fa3841c84cc9",
+          "url": "https://www.engadget.com/2322656/openai-is-testing-dots-personal-agents-on-its-20-per-month-plus-tier/"
+        }
+      ],
+      "quarantinedSeenOnly": [
+        {
+          "id": "97dffa3b72860b1f67",
+          "url": "https://github.com/openssl/openssl/pull/33652"
+        },
+        {
+          "id": "bda522de56a34a98c0",
+          "url": "https://git-aarvin.github.io/mei/"
+        },
+        {
+          "id": "b1430f615687828286",
+          "url": "https://www.engadget.com/2322705/the-trump-administration-has-replaced-its-cybersecurity-chief/"
+        },
+        {
+          "id": "b6973fc351e5f01d48",
+          "url": "https://www.bbc.co.uk/news/articles/c6d94pzk9vleo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "id": "c50a064b65c55ff5ed",
+          "url": "https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine"
+        },
+        {
+          "id": "f78d1ebaf9c5d49889",
+          "url": "https://aitnews.com/2026/11/20/asian-chip-stocks-ai-investment-selloff-november-2026/"
+        }
+      ]
+    }
+  },
+  "method": {
+    "identity": "Exact string equality for id and url; no title-derived identity or URL normalization.",
+    "comparison": "Every record appearance in all 155 files was checked against current Feed, Editorial, and Seen.",
+    "waiting": "The 227 seen-only appearances remain in their original incoming files and are not eligible for import because their IDs are absent from current Feed. No expiry is inferred from absence.",
+    "validation": "JSON parsing, envelope checks, and base-field/HTTPS/timezone/basis structural checks were performed. The official CLI was not executable in this runtime; proposal subfields were not claimed as fully CLI-validated.",
+    "importCount": 0,
+    "noFeedOrSeenEdits": true
+  }
+}
