@@ -1,0 +1,237 @@
+{
+  "version": 1,
+  "items": {
+    "8a952e6dea4cd37582": {
+      "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
+      "titleAr": "Google تعرض DeepCrossAttention لتحسين وصلات Transformer",
+      "summaryAr": "تشرح Google Research بنية DeepCrossAttention (DCA)، التي تستخدم انتباهًا متقاطعًا قابلًا للتعلم لاختيار التمثيلات المارة بين طبقات Transformer بدل جمع المخرجات السابقة بصورة ثابتة. تقول Google إن الجودة قاربت خط الأساس بسرعة تصل إلى ثلاثة أضعاف في بعض الإعدادات؛ وفي تجارب C4 وLM1B وصلت إلى أداء Transformer القياسي بعدد خطوات أقل حتى خمس مرات، مع 30 طبقة بدل 42 للوصول إلى عتبة perplexity أقل من 14 في مقارنة LM1B.",
+      "whyItMatters": "قد يقلل توجيه المعلومات بين الطبقات كلفة التدريب، لكنه يضيف تصميمًا معماريًا يحتاج تقييمًا بحسب حجم النموذج والبيانات والعتاد. المهم فصل تحسن عدد الخطوات عن تحسن الزمن الفعلي.",
+      "audience": "باحثو التعلم العميق ومهندسو النماذج وفرق تدريب Transformers.",
+      "nextSteps": [
+        "اقرأ ورقة ICML 2025 المرتبطة بالشرح وقارنها بخطوط الأساس.",
+        "عند إعادة التجربة، ثبّت البيانات والعتاد وعدد المعاملات وسجّل الزمن والخطوات وperplexity."
+      ],
+      "limitations": "الأرقام نتائج Google المنشورة وليست قياسًا مستقلًا. نتائج حتى خمس مرات أقل خطوات لا تعني تلقائيًا زمنًا أقل بالمقدار نفسه، والتجارب المذكورة لا تثبت تحسنًا لكل نموذج أو مهمة.",
+      "reviewedAt": "2026-11-28T09:13:17+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Google Research — Supercharging transformer residual connections",
+          "url": "https://research.google/blog/supercharging-transformer-residual-connections/"
+        },
+        {
+          "title": "DeepCrossAttention — ICML 2025 OpenReview",
+          "url": "https://openreview.net/forum?id=j3JBfFnGYh"
+        }
+      ]
+    },
+    "3d9795e0b578488bd9": {
+      "url": "https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/",
+      "titleAr": "TIDAL تبدأ رفض الموسيقى المولّدة بالكامل بالذكاء الاصطناعي في 9 ديسمبر",
+      "summaryAr": "أعلنت TIDAL أنها ستبدأ في 9 ديسمبر رفض المقطوعات المولّدة بالكامل بالذكاء الاصطناعي وإزالتها. وتقول الشركة إن نحو 27 مليون مقطوعة، أي 6.3% من مكتبتها، صُنفت لديها على أنها مولّدة بالكامل، وإن 43% من الملفات الموزعة إليها خلال التسعين يومًا السابقة كانت كذلك. الأرقام منسوبة إلى TIDAL وليست إحصاءً مستقلًا للسوق.",
+      "whyItMatters": "سياسات التوزيع والإفصاح والحقوق ستصبح جزءًا أساسيًا من اقتصاد الموسيقى المولّدة، مع حاجة المنصات لتوضيح الفرق بين الإنتاج الآلي الكامل والعمل البشري الذي استعان بأدوات AI.",
+      "audience": "الموسيقيون والمنتجون وشركات التوزيع ومنصات البث ومطورو أدوات الصوت.",
+      "nextSteps": [
+        "راجع سياسة TIDAL قبل إرسال أعمال جديدة واحتفظ بوصف واضح لمساهمة البشر والأدوات.",
+        "راقب الاستثناءات وآلية الاعتراض بعد بدء التطبيق في 9 ديسمبر."
+      ],
+      "limitations": "القرار يخص TIDAL فقط. أرقام 27 مليون و43% منسوبة إلى الشركة ولم تُراجع مستقلًا، والمقال لا يحسم كل الحالات المختلطة أو المساعدة جزئيًا بالذكاء الاصطناعي.",
+      "reviewedAt": "2026-11-28T09:13:17+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "TIDAL — AI Music Is Banned",
+          "url": "https://tidal.com/magazine/article/ai-music-is-banned/1-99745"
+        },
+        {
+          "title": "Ars Technica — Tidal will ban fully AI-generated music on December 9",
+          "url": "https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/"
+        }
+      ]
+    },
+    "9ec527c91ae6c069df": {
+      "url": "https://aitnews.com/2026/11/27/%d8%a7%d8%ae%d8%aa%d8%b1%d8%a7%d9%82-%d9%85%d9%86%d8%b5%d8%a9-%d8%a7%d9%84%d9%82%d9%88%d8%a7%d8%aa-%d8%a7%d9%84%d8%ac%d9%88%d9%8a%d8%a9/",
+      "titleAr": "رويترز: تقرير عن اختراق منصة Cloud One التابعة للقوات الجوية الأمريكية",
+      "summaryAr": "ذكرت رويترز، نقلًا عن ثلاثة أشخاص مطلعين، أن اختراقًا اكتُشف في منصة Cloud One أثناء أعمال ترقية، وتسبب في تعطيل أجزاء من المنصة وتعليق بعض عمليات نقل التطبيقات إليها. لم تحدد رويترز الجهة المنفذة أو النطاق الكامل أو ما إذا كانت بيانات قد سُرقت، وقالت القوات الجوية إنها لا تعلق على الوضع الأمني لشبكات بعينها.",
+      "whyItMatters": "توضح الحادثة أن جمع التطبيقات في بيئة سحابية مشتركة قد يوسّع أثر اختراق طبقات الإدارة. الدروس المؤسسية هي فصل الصلاحيات والبيئات، ومراجعة التغييرات، واختبار الاستعادة، لا افتراض أن مزود السحابة يزيل المخاطر.",
+      "audience": "مهندسو السحابة ومسؤولو الأمن السيبراني وفرق موثوقية الأنظمة والقطاع العام.",
+      "nextSteps": [
+        "تابع التصريحات الرسمية ولا تعتبر نطاق الحادث أو تسرب البيانات محسومًا قبل نتائج التحقيق.",
+        "راجع فصل حسابات الإدارة عن أحمال العمل وسجلات الوصول وخطط الاستعادة."
+      ],
+      "limitations": "التقرير يعتمد على مصادر مجهلة ولم يصدر تأكيد تفصيلي علني. لا يحدد ثغرة أو هوية مهاجم أو إثباتًا لسرقة بيانات؛ لا تعرض الاحتمالات كحقائق.",
+      "reviewedAt": "2026-11-28T09:13:17+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Reuters — Hackers breach US Air Force flagship Cloud One computing platform",
+          "url": "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27/"
+        },
+        {
+          "title": "البوابة العربية للأخبار التقنية — تقرير Cloud One",
+          "url": "https://aitnews.com/2026/11/27/%d8%a7%d8%ae%d8%aa%d8%b1%d8%a7%d9%82-%d9%85%d9%86%d8%b5%d8%a9-%d8%a7%d9%84%d9%82%d9%88%d8%a7%d8%aa-%d8%a7%d9%84%d8%ac%d9%88%d9%8a%d8%a9/"
+        }
+      ]
+    },
+    "48fcfcf9c7da4d134a": {
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFB3anJhOGZaUnF6NWZSUldGMHFac29WNl8xY3Z4QmdscFpWcGZYZlNJZEtMZm1YdF9xWV9idTcycjc?oc=5",
+      "titleAr": "تخريج 49 من منسوبي وزارة الداخلية في ماجستير هندسة الذكاء الاصطناعي بجامعة كاوست",
+      "summaryAr": "أفادت وكالة الأنباء السعودية بتخريج 49 من منسوبي ومنسوبات وزارة الداخلية من الدفعة الثانية لبرنامج ماجستير هندسة الذكاء الاصطناعي في جامعة الملك عبدالله للعلوم والتقنية. وتربط الوكالة البرنامج بتطوير القدرات التقنية والبحثية لدى منسوبي الوزارة.",
+      "whyItMatters": "الخبر مؤشر على توسيع بناء القدرات المحلية في هندسة الذكاء الاصطناعي وربط الجامعات بالقطاع العام، لكنه لا يكفي وحده للحكم على جودة البرنامج أو أثر الخريجين المهني.",
+      "audience": "طلاب الذكاء الاصطناعي في السعودية والجامعات ومسؤولو التدريب الحكومي.",
+      "nextSteps": [
+        "راجع صفحة البرنامج والمقررات الرسمية في كاوست.",
+        "ابحث عن فرص تدريب أو مشاريع تخرج تربط النماذج والبيانات باحتياجات الجهات العامة."
+      ],
+      "limitations": "تعذر استخراج نص صفحة SPA كاملًا عبر المتصفح؛ استندت المراجعة إلى الملخص الرسمي المفهرس والعنوان والتاريخ. لا تتوفر هنا بيانات المنهج التفصيلي أو نسب التوظيف.",
+      "reviewedAt": "2026-11-28T09:13:17+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "وكالة الأنباء السعودية — تخريج 49 من برنامج ماجستير هندسة الذكاء الاصطناعي في كاوست",
+          "url": "https://spa.gov.sa/N2737896"
+        }
+      ]
+    },
+    "f58d8205037fbf68dc": {
+      "url": "https://news.google.com/rss/articles/CBMimAVBVV95cUxNLTlTTk1rYjBaT3NndDdLZWZKcHA4NjlMTTNJYWdKNGE3ZFpPWjFxM3pOTnBwN1p4QmdqSFgycEFuaE9hVGZyTzhtcXdTa0pWV01PNkhnZmF3d1JhMWZTQi1VbTlsaW55cXIxVFplSlZ3Z0x5S2xvVTRPc093dU94VlZvMXZPeTl6T0NYaUJDRXVTVHFOcFVabmlUQU9oVmRzQ19YVVpxY3lVbTlnZjBFVjNyY1ktd2FQNW9PSTlmLUkxVlRYNG1FX2I0eDhOalpZWEJ1VGIzX3EwaHBhT3Z3eDVTemN5Nzd6Tll2Tko5NGhUN1VHQ2VWbWhmN0FJbmRGbFUtNWZzZ1JfQ29NOUV3OUZOa2pxX0wxVlpJUFBveE1kakVfUzFDbTNybmdOZUM3ZDdOM2F5YW5fekJMdVRkdVBZZVcwUWZtX0pUT2N1bGtwU3l4aVMyc1Z2Snlmd05QRmpVMGFJMkZkVGlfdUVMbDlHc3BvWDFBdTlTdFEyb3g3NGdTQjFuSjhZbjFZSnBrdEM1eEVWdENMeDlGN1ZtTGZhcHRfelBUWkMxSVJHcGIwRFpPZ2NIdzd0ZGZrTmFUQTVvRlFXdDhDTC13S1RNVTlNX28yVm10amJzSm1YUVl1dmF2UXhiRjBoLS1xaV9CczNMc3JFWjU3RlVQUFRnNThRWFpLcjBjVGJDOTRBUHZJbTZZUEFheDB1MDRFWnAwN1R6UzZDbTVpY0s0OXRaejFtVC02Z1dMZmFsMmpoOF9kb1VGaEstc0JZbU1rSjV6dXgza3BHQTFHNG5BX3l6ODg5dkJaNkg5UlV4bjJUcXBJY0p1WUxZY1V5VmxyYVNOMTZEbHRWMWFs?oc=5",
+      "titleAr": "السعودية تؤكد المسؤولية البشرية والشفافية في استخدام الذكاء الاصطناعي أمام مجلس الأمن",
+      "summaryAr": "بحسب الملخص الرسمي لوكالة الأنباء السعودية، شددت المملكة في نقاش بمجلس الأمن على بقاء المسؤولية البشرية عند استخدام الذكاء الاصطناعي، وضرورة الشفافية بشأن قدرات الأنظمة وحدودها ومخاطرها، واتخاذ تدابير احترازية والتعاون الدولي.",
+      "whyItMatters": "توضح المداخلة أن حوكمة الذكاء الاصطناعي لا تقتصر على دقة النموذج؛ بل تشمل تحديد المسؤولية وشرح الحدود والمخاطر ومتى يلزم الإشراف البشري. ويمكن ترجمة هذه المبادئ إلى ضوابط مراجعة واعتماد داخل المؤسسات.",
+      "audience": "المهتمون بسياسات الذكاء الاصطناعي والقطاع العام والباحثون في الحوكمة التقنية.",
+      "nextSteps": [
+        "قارن المبادئ بإرشادات UNESCO وOECD والأطر المحلية قبل تحويلها إلى سياسة مؤسسية.",
+        "حوّل مبدأ المسؤولية البشرية إلى مالك قرار وسجل تدقيق وحدود استخدام ومسار تصعيد."
+      ],
+      "limitations": "تعذر استخراج نص صفحة SPA كاملًا عبر المتصفح؛ اعتمدت على الملخص الرسمي المفهرس. المداخلة السياسية ليست قرارًا ملزمًا أو معيارًا تقنيًا تفصيليًا.",
+      "reviewedAt": "2026-11-28T09:13:17+03:00",
+      "basis": "metadata",
+      "sources": [
+        {
+          "title": "وكالة الأنباء السعودية — المسؤولية البشرية في استخدام الذكاء الاصطناعي أمام مجلس الأمن",
+          "url": "https://www.spa.gov.sa/en/N2736773"
+        }
+      ]
+    },
+    "ae7f20a2195791351f": {
+      "url": "https://www.engadget.com/2329747/openai-countersues-apple-and-accuses-it-of-stealing-trade-secrets/",
+      "titleAr": "OpenAI ترفع دعاوى مضادة على Apple في نزاع أسرار تجارية وأجهزة الذكاء الاصطناعي",
+      "summaryAr": "ذكرت رويترز أن OpenAI قدمت دعاوى مضادة في محكمة اتحادية بكاليفورنيا، متهمة Apple بالحصول على معلومات سرية عن جهاز وخارطة منتجات مستقبلية وبالضغط على مورّدين. تنفي Apple هذه الاتهامات وتصف الدعوى بأنها محاولة لصرف الانتباه عن قضيتها السابقة. النزاع تقاضٍ متبادل وليس حكمًا قضائيًا.",
+      "whyItMatters": "المنافسة على أجهزة الذكاء الاصطناعي تمتد إلى المواهب وسلاسل التوريد وحقوق المعلومات السرية، لا إلى النماذج وحدها؛ وقد تؤثر في الشراكات والتوظيف وتوقيت المنتجات.",
+      "audience": "متابعو صناعة الذكاء الاصطناعي والأجهزة والفرق القانونية ورواد الأعمال.",
+      "nextSteps": [
+        "تابع مستندات المحكمة مع الفصل بين ادعاءات الطرفين والوقائع التي تقررها المحكمة.",
+        "راقب أثر النزاع في اتفاقات الموردين وسياسات انتقال الموظفين وحماية الأسرار التجارية."
+      ],
+      "limitations": "هذه ادعاءات متقابلة وليست حكمًا قضائيًا. تنفي Apple مزاعم OpenAI، ولا يمكن استنتاج سرقة مثبتة من رفع الدعوى وحده.",
+      "reviewedAt": "2026-11-28T09:13:17+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Reuters — OpenAI countersues Apple for stealing trade secrets",
+          "url": "https://www.reuters.com/technology/openai-countersues-apple-stealing-trade-secrets-ft-reports-2026-11-27/"
+        },
+        {
+          "title": "Engadget — OpenAI countersues Apple",
+          "url": "https://www.engadget.com/2329747/openai-countersues-apple-and-accuses-it-of-stealing-trade-secrets/"
+        }
+      ]
+    },
+    "a9650f8b47d36a96a4": {
+      "url": "https://www.engadget.com/2329851/la-school-district-blocks-google-ai-search-features/",
+      "titleAr": "مدارس لوس أنجلوس تعطل ملخصات الذكاء الاصطناعي في بحث Google على أجهزة الطلاب",
+      "summaryAr": "أفادت Associated Press بأن منطقة لوس أنجلوس التعليمية عطلت مؤقتًا ميزة AI Overview على أجهزة الطلاب المدرسية لضمان تجربة مناسبة وآمنة للعمر. وتبحث المنطقة ملاءمة استمرار اعتمادها على منتجات Google، بينما تقول Google إن البحث وميزات الذكاء الاصطناعي مترابطة في منتجها الحالي.",
+      "whyItMatters": "القرار يبرز التوتر بين دمج المساعدات التوليدية في أدوات التعلم وبين قدرة المدارس على ضبط ما يظهر للطلاب. ويضع موردي التقنية أمام مطلب منح المؤسسات تحكمًا دقيقًا في ميزات AI دون تعطيل الأدوات الأساسية.",
+      "audience": "المعلمون وأولياء الأمور ومسؤولو تقنية التعليم ومديرو الأنظمة المدرسية ومطورو EdTech.",
+      "nextSteps": [
+        "راجع سياسة استخدام الذكاء الاصطناعي في المؤسسة وحدد الميزات التي تحتاج تعطيلًا أو إشرافًا.",
+        "اطلب من الموردين إعدادات منفصلة للبحث والملخصات التوليدية وقيّم أثرها على التعلم."
+      ],
+      "limitations": "بحسب AP، التعطيل مؤقت ولم يصدر إعلان رسمي منفصل وقت التقرير. الحالة تخص منطقة تعليمية أمريكية ولا تعني حظرًا عامًا لمنتجات Google أو لكل المدارس.",
+      "reviewedAt": "2026-11-28T09:13:17+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Associated Press — Los Angeles schools block Google's AI features",
+          "url": "https://apnews.com/article/google-artificial-intelligence-schools-search-engine-lausd-762a613b11bd316384430112cc223ed1"
+        },
+        {
+          "title": "Engadget — LA school district blocks Google's AI search features",
+          "url": "https://www.engadget.com/2329851/la-school-district-blocks-google-ai-search-features/"
+        }
+      ]
+    },
+    "7d04e110d7f8056587": {
+      "url": "https://www.engadget.com/2329748/restricted-nvidia-chips-were-installed-at-a-chinese-data-center-linked-to-alice-huang/",
+      "titleAr": "تقرير عن ظهور خوادم NVIDIA Blackwell في منشأة بيانات بشنغهاي وسط قيود التصدير",
+      "summaryAr": "نقلت Engadget عن Bloomberg أن مستندات صينية مرتبطة بقروض أظهرت خادم GB300 NVL72 وخادم GB200 ضمن منشأة بيانات في شنغهاي. وتتبع التقرير رقمًا تسلسليًا لخادم GB300 إلى Gigabyte، لكن المشتري الأول ومسار وصول الجهاز غير واضحين. وقالت Bloomberg إنها لا تملك دليلًا على أن Megaspeed حوّلت الأجهزة مباشرة إلى الموقع، والشركة تنفي المخالفات.",
+      "whyItMatters": "تسلط القصة الضوء على أهمية تتبع منشأ عتاد الذكاء الاصطناعي والامتثال لضوابط التصدير في سوق الحوسبة المتقدمة. توثيق سلسلة التوريد والتحقق من التراخيص جزء من إدارة المخاطر.",
+      "audience": "فرق بنية الذكاء الاصطناعي ومشترو الخوادم ومتابعو أشباه الموصلات وسياسات التصدير.",
+      "nextSteps": [
+        "تابع التوضيحات الرسمية قبل نسبة مخالفة إلى شركة أو شخص.",
+        "راجع سجلات المنشأ والموزعين والتراخيص في عمليات الشراء."
+      ],
+      "limitations": "المادة تلخص تقرير Bloomberg ولا تثبت تحويلًا غير قانوني أو تحدد المشتري الأصلي. لم أتمكن من قراءة Bloomberg مباشرة بسبب تقييد الوصول؛ اعتمدت على تغطية Engadget التي تنقل عنه.",
+      "reviewedAt": "2026-11-28T09:13:17+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Engadget — Restricted NVIDIA chips at a Shanghai data center",
+          "url": "https://www.engadget.com/2329748/restricted-nvidia-chips-were-installed-at-a-chinese-data-center-linked-to-alice-huang/"
+        }
+      ]
+    },
+    "6e319c9cb5558aab86": {
+      "url": "https://www.engadget.com/2329256/backloggd-breach-november-2026-password-reset/",
+      "titleAr": "اختراق Backloggd كشف بيانات حسابات ويدفع الموقع لطلب تغيير كلمات المرور",
+      "summaryAr": "أفاد إشعار Backloggd الأمني المؤرخ 25 نوفمبر بأن شخصًا استغل خللًا للوصول إلى أدوات الإدارة وبيانات تشمل أسماء المستخدمين والبريد الإلكتروني وكلمات المرور المخزنة بصيغة bcrypt وعناوين IP لتسجيل الدخول. قالت المنصة إنها لا تخزن بيانات الدفع أو الهوية الحكومية، وإنها أوقفت الموقع مؤقتًا وأعادت ضبط الجلسات وطلبت تغيير كلمات المرور المعاد استخدامها.",
+      "whyItMatters": "حتى الخدمات الصغيرة تحتفظ ببيانات تعريفية حساسة، وقد يتيح الوصول إلى أدوات الإدارة معلومات تتجاوز ما يراه المستخدم في حسابه. توضح الحادثة أهمية تقليل صلاحيات الإدارة ومراجعة سجلاتها وعدم إعادة استخدام كلمات المرور.",
+      "audience": "مستخدمو Backloggd ومطورو الخدمات الصغيرة ومسؤولو الأنظمة والأمن.",
+      "nextSteps": [
+        "إذا كان لديك حساب، اتبع الإشعار الرسمي وغيّر كلمة المرور، خصوصًا إن أعدت استخدامها.",
+        "كمشغل خدمة، راجع حماية لوحة الإدارة وإبطال الجلسات وخطة إخطار المستخدمين."
+      ],
+      "limitations": "لم يذكر الإشعار عدد الحسابات المتأثرة أو السبب الجذري الكامل. كلمات المرور كانت hashes وليست نصوصًا صريحة؛ ولا تقول المنصة إن بيانات الدفع أو الهوية الحكومية تعرضت.",
+      "reviewedAt": "2026-11-28T09:13:17+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Backloggd — Security Notices: Data Breach (November 25, 2026)",
+          "url": "https://backloggd.com/security-notices/"
+        },
+        {
+          "title": "Engadget — Backloggd urges users to change their passwords",
+          "url": "https://www.engadget.com/2329256/backloggd-breach-november-2026-password-reset/"
+        }
+      ]
+    },
+    "aaa55aaf5989509238": {
+      "url": "https://simonwillison.net/2026/Nov/21/muru/",
+      "titleAr": "Muru: خادم Rust جديد لخدمة تطبيقات Python عبر WSGI وASGI",
+      "summaryAr": "سلّط Simon Willison الضوء على Muru، مشروع Graham Dumpleton الذي يبني خادمًا وحافة توجيه مكتوبة بـRust لتشغيل تطبيقات Python عبر WSGI وASGI. يشرح المستودع إصدارات متجاورة وتحويل مرور تدريجيًا وعمليات canary وrollback وتكامل MCP لوكلاء البرمجة. المشروع ما زال في مرحلة alpha وإصداراته 0.1.0 prerelease.",
+      "whyItMatters": "إذا نضج المشروع فقد يقدم مسارًا موحدًا من التطوير المحلي إلى الخادم والحاويات مع تقليل الحاجة إلى إعادة تشغيل التطبيق عند كل إصدار. لكنه مبكر ويحتاج تقييم التوافق والأداء والاستقرار قبل الإنتاج.",
+      "audience": "مطورو Python الخلفية وفرق DevOps ومستخدمو Flask وDjango وFastAPI وStarlette.",
+      "nextSteps": [
+        "جرّب quickstart الرسمي على تطبيق تجريبي محلي واختبر إصدارًا جديدًا ثم rollback.",
+        "قارن السلوك والموارد مع Gunicorn وUvicorn أو Granian على التطبيق والعتاد نفسيهما."
+      ],
+      "limitations": "المشروع في alpha والأوامر قابلة للتغيير. لم أشغله أو أقس أداءه؛ النجوم والتفرعات ليست دليل جودة. توثق الصفحات Linux للإنتاج وmacOS للتطوير.",
+      "reviewedAt": "2026-11-28T09:13:17+03:00",
+      "basis": "article",
+      "sources": [
+        {
+          "title": "Simon Willison — Muru",
+          "url": "https://simonwillison.net/2026/Nov/21/muru/"
+        },
+        {
+          "title": "Muru — GitHub README",
+          "url": "https://github.com/muruhq/muru/blob/develop/README.md"
+        },
+        {
+          "title": "Muru — Documentation",
+          "url": "https://docs.muruhq.dev/en/latest/"
+        }
+      ]
+    }
+  }
+}
