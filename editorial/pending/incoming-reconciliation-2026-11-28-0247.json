@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-28T02:47:23+03:00",
+  "mainSha": "81ad0c71941e1bf4e8593bc43718d6a0bf7f8ea3",
+  "feedSha": "1f87cc86c62808346cadc639b037f25bc64a5458",
+  "editorialSha": "3a1020de8d8fc6997f6d0d1029f207bae83dc4d4",
+  "incomingFiles": 155,
+  "validEnvelopeFiles": 154,
+  "invalidEnvelopeFiles": [
+    "editorial/incoming/nabdh-news-2026-11-20-1813.json"
+  ],
+  "recordAppearances": 1630,
+  "importedExactIdUrlAppearances": 1403,
+  "activeFeedExactAppearances": 147,
+  "exactFeedMatchesNotImported": 0,
+  "seenOnlyOutsideFeedEditorial": 193,
+  "notSeenOutsideFeedEditorial": 34,
+  "nonCurrentNotImportedAppearances": 227,
+  "idUrlMismatches": 0,
+  "missingUrls": 0,
+  "confirmedExpired": 0,
+  "entryDataErrors": 0,
+  "malformedFileDisposition": {
+    "path": "editorial/incoming/nabdh-news-2026-11-20-1813.json",
+    "problem": "schemaVersion موجود بدل version",
+    "recordCount": 7,
+    "alreadyImported": 1,
+    "quarantinedSeenOnly": 6
+  },
+  "pendingFiles": {
+    "waiting": "editorial/pending/waiting-2026-11-27-1812.json",
+    "waitingItems": 2,
+    "reason": "سجل ذو URL غير مطابق حرفيًا وسجل غائب عن Feed؛ لم يُستورد أي منهما."
+  },
+  "priorQuarantine": {
+    "staleRecords": 5,
+    "quarantinedRecords": 6
+  },
+  "note": "الأعداد ظهورات عبر الملفات وليست معرفات فريدة. 1,403 ظهورًا تطابق Editorial بالمعرف والرابط؛ منها 147 ظهورًا تطابق Feed الحالي أيضًا. لا توجد مطابقات Feed غير مستوردة. 193 ظهورًا خارج Feed وEditorial لكنها موجودة في Seen، و34 خارج Feed وEditorial وغير موجودة في Seen. لا يُستنتج الانقضاء من الغياب؛ الحالات المؤكدة صفر. لم تُعدّل ملفات incoming أو feed.json أو seen.json."
+}
