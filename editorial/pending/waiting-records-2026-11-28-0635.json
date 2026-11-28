@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "status": "waiting-not-imported",
+  "checkedAt": "2026-11-28T06:35:26+03:00",
+  "mainCommit": "50616266c3720d87c45ee69f43987c280284aa9f",
+  "waitingAppearances": 227,
+  "waitingRecordsAreOccurrencesNotUniqueIds": true,
+  "reason": "Exact ID/URL pairs are absent from current Feed and Editorial; every such occurrence is present in current Seen.",
+  "expiryConfirmed": 0,
+  "idUrlMismatch": 0,
+  "sourceFolder": "editorial/incoming/",
+  "sourceFiles": 155,
+  "identityPolicy": "Keep original IDs and URLs. Do not synthesize identities from titles or normalize URLs.",
+  "action": "Keep all 227 occurrences in their original incoming files. Reconsider only if the exact same ID and exact same URL reappear in a future Feed.",
+  "invalidEnvelopeQuarantine": {
+    "file": "nabdh-news-2026-11-20-1813.json",
+    "issue": "schemaVersion instead of version",
+    "waitingItems": 6,
+    "alreadyImportedItems": 1,
+    "waitingIds": [
+      "97dffa3b72860b1f67",
+      "bda522de56a34a98c0",
+      "b1430f615687828286",
+      "b6973fc351e5f01d48",
+      "c50a064b65c55ff5ed",
+      "f78d1ebaf9c5d49889"
+    ]
+  }
+}
