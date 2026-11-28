@@ -1,0 +1,40 @@
+{
+  "reviewedAt": "2026-11-28T09:42:27+03:00",
+  "incomingFilesLastAudited": 155,
+  "lastFullAuditAt": "2026-11-28T06:35:00+03:00",
+  "lastFullAuditAppearances": 1630,
+  "lastFullAuditImportedExact": 1403,
+  "lastFullAuditSeenOnly": 227,
+  "lastFullAuditCurrentFeedExactNotImported": 0,
+  "lastFullAuditMismatches": 0,
+  "lastFullAuditConfirmedExpired": 0,
+  "lastFullAuditInvalidEnvelopeFiles": [
+    "nabdh-news-2026-11-20-1813.json"
+  ],
+  "invalidEnvelopeRecordCount": 7,
+  "invalidEnvelopeAlreadyImported": 1,
+  "invalidEnvelopeWaiting": 6,
+  "currentIncomingFolderFileCount": 155,
+  "incomingFilesChangedSinceAudit": false,
+  "verificationNote": "The full pairwise ID/URL audit is preserved from 06:35; the incoming directory was unchanged in the subsequent PR merge and feed-refresh commits. The feed was refreshed at 2026-11-28T05:55:01Z, so this run rechecked the three named special IDs and all nine new candidate IDs against the current published artifact, but did not rerun the full 1,630-appearance comparison against the refreshed feed.",
+  "specialRecords": {
+    "940ec4695c1e241c2f": {
+      "name": "NVIDIA OpenShell",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    },
+    "317abcdd1b20728a7e": {
+      "name": "Canva Craft",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    },
+    "662e68277c6361dd4b": {
+      "name": "1Password agent sign-in",
+      "feed": false,
+      "editorial": false,
+      "seen": true
+    }
+  }
+}
