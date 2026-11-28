@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "measuredAt": "2026-11-28T03:35:00Z",
+  "measurementSource": "GitHub REST repository metadata plus current README and LICENSE files",
+  "summary": {
+    "projectsReviewed": 8,
+    "archived": 0,
+    "recentPush": 5,
+    "quietButUnarchived": 3,
+    "readmesUnchanged": 8,
+    "licenseFilesUnchanged": 9,
+    "currentFeedProjects": 100,
+    "enrichedProjects": 100,
+    "newProjectCards": 0
+  },
+  "projects": [
+    {
+      "name": "AI Engineering Hub",
+      "repo": "patchy631/ai-engineering-hub",
+      "archived": false,
+      "license": "MIT",
+      "stars": 42165,
+      "forks": 6737,
+      "openIssues": 142,
+      "pushedAt": "2026-11-01T04:39:16Z",
+      "updatedAt": "2026-11-28T03:25:26Z",
+      "activity": "quiet_but_unarchived",
+      "readmeSha": "6c65ab12125814c5233f873c4c1af2765ff87d51",
+      "licenseFiles": {
+        "LICENSE": "84ee68d33c9b68bae6c139f591996f021a02b23a"
+      },
+      "docs": "https://github.com/patchy631/ai-engineering-hub",
+      "quickStart": "Choose a documented project/tutorial; there is no single runtime or dependency set for the whole collection.",
+      "requirements": "Requirements vary by selected project; some examples may require model-provider credentials or local model hardware.",
+      "costs": "Repository itself is free under MIT; compute/API costs depend on the chosen example.",
+      "alternatives": [
+        "Hugging Face course",
+        "LangChain documentation"
+      ],
+      "sources": [
+        "https://github.com/patchy631/ai-engineering-hub",
+        "https://github.com/patchy631/ai-engineering-hub/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "Google Gen AI SDK",
+      "repo": "googleapis/python-genai",
+      "archived": false,
+      "license": "Apache-2.0",
+      "stars": 4091,
+      "forks": 1072,
+      "openIssues": 354,
+      "pushedAt": "2026-11-27T18:11:53Z",
+      "updatedAt": "2026-11-27T18:13:37Z",
+      "activity": "recent_push",
+      "readmeSha": "ec135323f87bfbb6b7be8754b3a31968f25bc9ae",
+      "licenseFiles": {
+        "LICENSE": "d645695673349e3947e8e5ae42332d0ac3164cd7"
+      },
+      "docs": "https://googleapis.github.io/python-genai/",
+      "quickStart": "Install google-genai, configure a Gemini Developer API key or Google Cloud credentials, then instantiate the documented client.",
+      "requirements": "Supported Python runtime plus provider authentication; API v3 defaults the Gemini Developer API to v1.",
+      "costs": "SDK is open source; model/API use may incur provider charges. It is not a local model runtime.",
+      "alternatives": [
+        "Direct Gemini REST API",
+        "Google Cloud Vertex AI SDK"
+      ],
+      "sources": [
+        "https://github.com/googleapis/python-genai",
+        "https://github.com/googleapis/python-genai/blob/main/LICENSE",
+        "https://googleapis.github.io/python-genai/"
+      ]
+    },
+    {
+      "name": "Lasm",
+      "repo": "Millillion/lasm",
+      "archived": false,
+      "license": "MIT",
+      "stars": 109,
+      "forks": 6,
+      "openIssues": 13,
+      "pushedAt": "2026-11-27T19:43:38Z",
+      "updatedAt": "2026-11-22T21:38:18Z",
+      "activity": "recent_push",
+      "readmeSha": "d437b8cf0b36f43b05182bd1d3a9c720445d9b03",
+      "licenseFiles": {
+        "LICENSE": "46b25ff7d8953b8fc88d7ed6d37c6f1550a39193"
+      },
+      "docs": "https://github.com/Millillion/lasm",
+      "quickStart": "Use npm create @lasm@latest my-app -- --template hono, then npm install and npm run dev.",
+      "requirements": "Lean 4 toolchain and Node.js/npm for the documented starter; runtime targets include Node, Bun, Deno, browser and several cloud platforms.",
+      "costs": "Local development is free; deploying to managed cloud targets depends on the chosen host and its pricing.",
+      "alternatives": [
+        "Lean 4 toolchain without Lasm",
+        "Other WebAssembly application toolchains"
+      ],
+      "sources": [
+        "https://github.com/Millillion/lasm",
+        "https://github.com/Millillion/lasm/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "MarkItDown",
+      "repo": "microsoft/markitdown",
+      "archived": false,
+      "license": "MIT",
+      "stars": 198770,
+      "forks": 15100,
+      "openIssues": 840,
+      "pushedAt": "2026-11-07T00:14:01Z",
+      "updatedAt": "2026-11-28T03:34:59Z",
+      "activity": "quiet_but_unarchived",
+      "readmeSha": "af858038fd380b187e2928cfbb8b9802c4912d5b",
+      "licenseFiles": {
+        "LICENSE": "9e841e7a26e4eb057b24511e7b92d42b257a80e5"
+      },
+      "docs": "https://github.com/microsoft/markitdown",
+      "quickStart": "Install the package and use the documented conversion entry point for a local file or stream.",
+      "requirements": "Python runtime; optional extras depend on the document types and conversion features needed.",
+      "costs": "Core conversion is local and does not require a paid model API; optional external services, if configured, have separate costs.",
+      "alternatives": [
+        "Pandoc",
+        "Unstructured"
+      ],
+      "securityNote": "The README warns that conversion runs with the current process privileges; use narrow conversion functions and sanitize untrusted inputs.",
+      "sources": [
+        "https://github.com/microsoft/markitdown",
+        "https://github.com/microsoft/markitdown/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "Minecraft Agent Harness",
+      "repo": "yc-software/minecraft-agent-harness",
+      "archived": false,
+      "license": "MIT",
+      "stars": 238,
+      "forks": 30,
+      "openIssues": 1,
+      "pushedAt": "2026-10-29T20:30:45Z",
+      "updatedAt": "2026-11-27T18:29:35Z",
+      "activity": "quiet_but_unarchived",
+      "readmeSha": "50b5a20eeb3a6f8268d06d244d858c4464c81eba",
+      "licenseFiles": {
+        "LICENSE": "5efc79a61c6ce9c8b89f423f7b0d883ca9af43a9"
+      },
+      "docs": "https://github.com/yc-software/minecraft-agent-harness/tree/main/docs",
+      "quickStart": "Follow the README quickstart and select a documented example after configuring the local game and model provider.",
+      "requirements": "Node.js 22.19+ and Minecraft Java 1.21.6; provider credentials may be required.",
+      "costs": "Local game/server costs depend on hardware; hosted model calls may incur API charges.",
+      "alternatives": [
+        "Mineflayer",
+        "Voyager research code"
+      ],
+      "sources": [
+        "https://github.com/yc-software/minecraft-agent-harness",
+        "https://github.com/yc-software/minecraft-agent-harness/blob/main/LICENSE",
+        "https://github.com/yc-software/minecraft-agent-harness/tree/main/docs"
+      ]
+    },
+    {
+      "name": "OpenShell",
+      "repo": "ai-openshell/openshell",
+      "archived": false,
+      "license": "Apache-2.0",
+      "stars": 21997,
+      "forks": 2160,
+      "openIssues": 803,
+      "pushedAt": "2026-11-27T18:23:52Z",
+      "updatedAt": "2026-11-28T03:33:16Z",
+      "activity": "recent_push",
+      "readmeSha": "0752ddaf1385b78f39a08f8718268762d15db2d1",
+      "licenseFiles": {
+        "LICENSE": "f13d24c3fa482d61605d600e5ac1248799bd4107"
+      },
+      "docs": "https://docs.nvidia.com/openshell/latest/index.html",
+      "quickStart": "Use the official OpenShell documentation and repository quickstart; verify runtime/backend requirements before deploying.",
+      "requirements": "CLI and a supported sandbox/runtime environment as specified by the current official docs; requirements depend on the selected backend.",
+      "costs": "Open-source code is free under Apache-2.0; infrastructure and any hosted model provider are separate costs.",
+      "alternatives": [
+        "Docker/Podman isolation",
+        "Other agent sandbox runtimes"
+      ],
+      "sources": [
+        "https://github.com/ai-openshell/openshell",
+        "https://github.com/ai-openshell/openshell/blob/main/LICENSE",
+        "https://docs.nvidia.com/openshell/latest/index.html"
+      ]
+    },
+    {
+      "name": "Pydantic AI",
+      "repo": "pydantic/pydantic-ai",
+      "archived": false,
+      "license": "MIT",
+      "stars": 21433,
+      "forks": 3302,
+      "openIssues": 2172,
+      "pushedAt": "2026-11-28T03:11:52Z",
+      "updatedAt": "2026-11-28T02:22:46Z",
+      "activity": "recent_push",
+      "readmeSha": "5e41c7b1bfa03fb4631a3274eb945cd8a28b6d99",
+      "licenseFiles": {
+        "LICENSE": "1bf1f55e6d1736b499ded961ec6b94bfebb17aec"
+      },
+      "docs": "https://pydantic.dev/docs/ai/",
+      "quickStart": "Install pydantic-ai, configure one supported model provider, then create an Agent using the documented API.",
+      "requirements": "Python runtime and credentials or endpoint configuration for the selected model provider.",
+      "costs": "Framework is local/open source; inference costs depend on hosted provider or local hardware.",
+      "alternatives": [
+        "LangGraph",
+        "AutoGen"
+      ],
+      "sources": [
+        "https://github.com/pydantic/pydantic-ai",
+        "https://github.com/pydantic/pydantic-ai/blob/main/LICENSE",
+        "https://pydantic.dev/docs/ai/"
+      ]
+    },
+    {
+      "name": "uv",
+      "repo": "astral-sh/uv",
+      "archived": false,
+      "license": "Apache-2.0 + MIT",
+      "stars": 92673,
+      "forks": 3968,
+      "openIssues": 3104,
+      "pushedAt": "2026-11-26T09:13:33Z",
+      "updatedAt": "2026-11-28T03:31:55Z",
+      "activity": "recent_push",
+      "readmeSha": "66caaf9ccc62add8c63de8e71184c9b7677377ad",
+      "licenseFiles": {
+        "LICENSE-APACHE": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+        "LICENSE-MIT": "014835144877ea9c926d027ece3e1a26290cf481"
+      },
+      "docs": "https://docs.astral.sh/uv/",
+      "quickStart": "Install uv, initialize a project, add dependencies, and run the project using the README/documentation workflow.",
+      "requirements": "Supported OS/architecture for the uv binary; no model provider is required.",
+      "costs": "Local package/project management; no cloud or model API cost is inherent.",
+      "alternatives": [
+        "pip + venv",
+        "Poetry",
+        "Conda"
+      ],
+      "sources": [
+        "https://github.com/astral-sh/uv",
+        "https://github.com/astral-sh/uv/blob/main/LICENSE-APACHE",
+        "https://github.com/astral-sh/uv/blob/main/LICENSE-MIT",
+        "https://docs.astral.sh/uv/"
+      ]
+    }
+  ],
+  "curatedLibrary": {
+    "total": 31,
+    "active": 29,
+    "archived": 2,
+    "metricsCapturedAt": "2026-11-16T02:54:42+03:00",
+    "licensesVerified": 31
+  },
+  "historicalCatalog": {
+    "total": 73,
+    "active": 71,
+    "archived": 2,
+    "snapshotAt": "2026-11-14T02:47:48+03:00",
+    "licensesNeedingUpstreamVerification": 10
+  },
+  "limitations": [
+    "Stars, forks, and open issues are cumulative snapshots, not growth rates or quality measures.",
+    "updatedAt may reflect issues or metadata; pushedAt is used for code-push recency.",
+    "No runtime tests were performed in this cycle.",
+    "The eight README and nine license blob SHAs match the previous review."
+  ]
+}
