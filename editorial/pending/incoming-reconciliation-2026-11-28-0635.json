@@ -44,7 +44,6 @@
     "editorialIdUrlMismatches": 0,
     "outsideFeedNotInSeen": 0,
     "confirmedExpired": 0,
-    "baseFieldErrorsInValidEnvelopes": 0,
     "batchAudit": [
       {
         "range": "1-15",
@@ -155,13 +154,14 @@
           "url": "https://aitnews.com/2026/11/20/asian-chip-stocks-ai-investment-selloff-november-2026/"
         }
       ]
-    }
+    },
+    "checkedRequiredFieldErrorsInValidEnvelopes": 0
   },
   "method": {
     "identity": "Exact string equality for id and url; no title-derived identity or URL normalization.",
     "comparison": "Every record appearance in all 155 files was checked against current Feed, Editorial, and Seen.",
     "waiting": "The 227 seen-only appearances remain in their original incoming files and are not eligible for import because their IDs are absent from current Feed. No expiry is inferred from absence.",
-    "validation": "JSON parsing, envelope checks, and base-field/HTTPS/timezone/basis structural checks were performed. The official CLI was not executable in this runtime; proposal subfields were not claimed as fully CLI-validated.",
+    "validation": "Partial structural scan only: all 155 files parsed as JSON; 154 wrappers passed version/items checks; for records in valid wrappers, checked original URL HTTPS syntax, required titleAr/summaryAr/whyItMatters presence, nonempty sources array, timezone-bearing reviewedAt, and allowed basis. Individual source-entry URLs/titles, optional fields, and proposal schemas were not fully checked. The official CLI was not executable in this runtime.",
     "importCount": 0,
     "noFeedOrSeenEdits": true
   }
